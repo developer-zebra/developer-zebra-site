@@ -88,11 +88,11 @@ This section of the OEMConfig documentation describes all supported Managed Conf
 Specify an ordered list of *Transaction Steps* that define the Actions or configurations that you wish to perform on a device as part of an overall *Transaction*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = steps 
+- Key = steps
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
 -----
@@ -103,11 +103,11 @@ Specify an ordered list of *Transaction Steps* that define the Actions or config
 Specify a single *Transaction Step* that defines one or more Actions or configurations that you wish to perform on a device at a specific point in an an overall *Transaction*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = step 
+- Key = step
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Explanation
@@ -122,11 +122,11 @@ Enter an optional *Explanation* that describes the purpose or intended behavior 
 Since a *Transaction* may include many *Transaction Steps* and each *Transaction Step* could include one or more configurations, describing the *Transaction Step* can be beneficial when later reviewing the *Transaction* and/or when editing a *Transaction*, and especially when reordering the *Transaction Steps* within the *Transaction*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = stepExplanation 
+- Key = stepExplanation
 
-- Type = string 
+- Type = string
 
 
 ### Error Mode
@@ -144,13 +144,13 @@ By default, execution will continue with the next *Transaction Step* once execut
 - If the value ***Stop*** is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = stepErrorMode 
+- Key = stepErrorMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table>
 
 
 <b><font size="6" color="black"> Managed Configuration Groups</font></b>
@@ -169,11 +169,11 @@ A *Step* can include one or more of the following *Managed Configuration Groups*
 Use this *Group* to configure the Analytics Client in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = analyticsStep 
+- Key = analyticsStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### State
@@ -191,16 +191,16 @@ The Analytics Client is turned on (enabled) by default on all devices:
 On some devices, the ability to turn off (disable) the Analytics Client may not be supported.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = analyticsState 
+- Key = analyticsState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -217,16 +217,16 @@ The Analytics Client is turned on (enabled) by default on all devices:
 - If the value ***On*** is selected, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = analyticsUserControlState 
+- Key = analyticsUserControlState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.2.
 
@@ -239,11 +239,11 @@ The Analytics Client is turned on (enabled) by default on all devices:
 This *Group* is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryStep 
+- Key = appgalleryStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### State
@@ -253,16 +253,16 @@ This *Group* is deprecated and will be discontinued in a subsequent version.
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryState 
+- Key = appgalleryState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -277,16 +277,16 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryPushNotifications 
+- Key = appgalleryPushNotifications
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -301,16 +301,16 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryCredentialType 
+- Key = appgalleryCredentialType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Custom&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Custom&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -325,14 +325,14 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryCredentialTypeCustomUserName 
+- Key = appgalleryCredentialTypeCustomUserName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -347,14 +347,14 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryCredentialTypeCustomPassword 
+- Key = appgalleryCredentialTypeCustomPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -369,14 +369,14 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = appgalleryCredentialTypeCustomOrganizationKey 
+- Key = appgalleryCredentialTypeCustomOrganizationKey
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -392,16 +392,46 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 Use this *Group* to configure the audio settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = audioStep 
+- Key = audioStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+### Replication Action
+
+
+
+Select the audio replication behavior of of a device.
+
+
+- If the value ***Replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
+
+
+- If the value ***Do not replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
+
+
+**Detail Information:**
+
+- Key = audioReplicationAction
+
+- Type = string
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Replicate headset audio on built-in speaker&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do not replicate headset audio on built-in speaker&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
+
+
+**Support Information:**
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.2.
 
 
 ### Mute/Vibrate
@@ -420,51 +450,21 @@ Select the mute and vibrate behavior of a device.
 - If the value ***Unmute without Vibrate*** is selected, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = audioStepMuteVibrate 
+- Key = audioStepMuteVibrate
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Mute without Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mute with Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unmute without Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Mute without Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mute with Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unmute without Vibrate&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
 
 - Supported from: MX 4.4.
-
-
-### Replication Action
-
-
-
-Select the audio replication behavior of of a device.
-
-
-- If the value ***Replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
-
-
-- If the value ***Do not replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
-
-
-**Detail Information:** 
-
-- Key = audioReplicationAction 
-
-- Type = string 
-
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Replicate headset audio on built-in speaker&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do not replicate headset audio on built-in speaker&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
-
-
-**Support Information:** 
-
-- NOT supported on Device(s): TC20 and TC25.
-
-
-- Supported from: MX 7.2.
 
 
 -----
@@ -478,14 +478,14 @@ Use this *Group* to configure whether and how *Automatic Triggering* will occur 
 Automatic triggering allows a Device User to initiate trigger-activated functions simply by bringing an object within proximity of the device sensor as opposed to requiring the Device User to manually initiate such functions.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = autoTriggerStep 
+- Key = autoTriggerStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -506,16 +506,16 @@ Select whether and how automatic triggering should occur on a device.
 - If the value ***Always On*** is selected, automatic triggering can always occur automatically , whether the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = autoTriggerState 
+- Key = autoTriggerState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Always On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Always On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -536,16 +536,16 @@ Select the range at which automatic triggering will detect the presence of an ob
 - If the value ***Far*** is selected, automatic triggering will occur when an object is brought within less near proximity to the device sensor. This may be desirable if the device is located in a stand or holder and hence it is less convenient to have to bring objects very close to the device sensor.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = autoTriggerRange 
+- Key = autoTriggerRange
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Near&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Far&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Near&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Far&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -560,16 +560,16 @@ Select the range at which automatic triggering will detect the presence of an ob
 
 Use this *Group* to configure which System applications can/cannot be used on a device.
 
-Blacklisting applies only to System applications, which are applications built into the device and are therefore always present. It has no effect on user applications, which are installed during staging or at some time after the device is put into service and DO NOT come preinstalled on the device. User apps are controlled using the Whitelist Configuration Group. 
+Blacklisting applies only to System applications, which are applications built into the device and are therefore always present. It has no effect on user applications, which are installed during staging or at some time after the device is put into service and DO NOT come preinstalled on the device. User apps are controlled using the Whitelist Configuration Group.
 
 >WARNING: It is important to understand that an app COULD use the Blacklist Configuration Group to blacklist itself. If an app is blacklisted, then it is prevented from running once the Blacklist Configuration is successfully applied, even if the app being blacklisted was the app that requested the blacklisting to be performed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = blacklistStep 
+- Key = blacklistStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Action
@@ -596,16 +596,16 @@ To prevent the use of a built-in System Application, you can disable it and ther
 - If the value ***Disallow*** is selected, you must also specify **Disallow System Package Name** to provide the *Android Package Name* that identifies the *Built-In System Application* to be disallowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = blacklistAction 
+- Key = blacklistAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;DisableApplication&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;EnableApplication&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;DisableApplication&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;EnableApplication&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -617,14 +617,14 @@ To prevent the use of a built-in System Application, you can disable it and ther
 Enter the *Android Package Name* that identifies a *Built-In System Application* to be allowed when the Action value ***Allow*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = blacklistActionAllowSystemPackageName 
+- Key = blacklistActionAllowSystemPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -636,14 +636,14 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 Enter the *Android Package Name* that identifies a *Built-In System Application* to be disallowed when the Action value ***Disallow*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = blacklistActionDisallowSystemPackageName 
+- Key = blacklistActionDisallowSystemPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -656,14 +656,14 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 Use this *Group* to configure Bluetooth settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothStep 
+- Key = bluetoothStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -682,16 +682,16 @@ Devices are NOT *Discoverable* via Bluetooth by default except when the Bluetoot
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothDiscoverability 
+- Key = bluetoothDiscoverability
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -711,16 +711,16 @@ devices will accept new Bluetooth Pairings by default.
 - If the value ***Allow*** is selected, the default behavior will be in effect and the device will accept new Bluetooth Pairings.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothNewPairings 
+- Key = bluetoothNewPairings
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -743,16 +743,16 @@ Devices will silently perform Bluetooth Pairings by default.
 Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless **Action** is used to configure specific silent pairing rules that define how silent pairing should occur.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothSilentPairingsState 
+- Key = bluetoothSilentPairingsState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -781,16 +781,16 @@ Since the list of rules is empty by default on devices, Bluetooth *Silent Pairin
 - If the value ***RemoveAllRules*** is selected, you do not need to specify any additional information.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothAction 
+- Key = bluetoothAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AddRule&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveRule&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveAllRules&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AddRule&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveRule&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveAllRules&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -805,14 +805,14 @@ Since the list of rules is empty by default on devices, Bluetooth *Silent Pairin
 Enter a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionAddRuleName 
+- Key = bluetoothActionAddRuleName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -830,14 +830,14 @@ Enter the *Device Class* for a new rule to be added to the list of rules that co
 When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Class*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionAddRuleDeviceClass 
+- Key = bluetoothActionAddRuleDeviceClass
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -855,14 +855,14 @@ Enter the *Device Upper Address Part* for a new rule to be added to the list of 
 When a *Device Upper Address Part* is selected for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Upper Address Part* in the upper part of their *Bluetooth Address*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionAddRuleUpperAddressPart 
+- Key = bluetoothActionAddRuleUpperAddressPart
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -882,14 +882,14 @@ Enter the name of an existing rule to be removed from the list of rules that con
 Any existing rule that has the specified name will be removed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionRemoveRuleName 
+- Key = bluetoothActionRemoveRuleName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -909,14 +909,14 @@ Enter the *Device Class* of an existing rule to be removed from the list of rule
 Any existing rule or rules that have the specified *Device Class* will be removed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionRemoveRuleDeviceClass 
+- Key = bluetoothActionRemoveRuleDeviceClass
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -928,19 +928,19 @@ Any existing rule or rules that have the specified *Device Class* will be remove
 
 
 
-Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**. 
+Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**.
 
 Any existing rule or rules that have the specified *Device Upper Address Part* will be removed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bluetoothActionRemoveRuleUpperAddressPart 
+- Key = bluetoothActionRemoveRuleUpperAddressPart
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -956,14 +956,14 @@ Any existing rule or rules that have the specified *Device Upper Address Part* w
 Use this *Group* to configure Bug Reporting on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportStep 
+- Key = bugreportStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -980,16 +980,16 @@ Select whether the Standard Android or Zebra Extended Bug Reporting should be us
 - If the value ***On*** is selected, Zebra Extended Bug Reporting. You may also need to specify additional configuration with the Group to configure the desired behavior and options of Zebra Extended Bug Reporting.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportBugReportProfile 
+- Key = bugreportBugReportProfile
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;old&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;new&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;old&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;new&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1006,16 +1006,16 @@ Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be 
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEnableIntent 
+- Key = bugreportEnableIntent
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1032,16 +1032,16 @@ Select whether the Zebra Extended Bug Reporting should be allowed to capture scr
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEnableScreenshot 
+- Key = bugreportEnableScreenshot
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1058,16 +1058,16 @@ Select whether Zebra Extended Bug Reporting should display an option to initiate
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, will add an option to the menu.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEnableBRInPwrMenu 
+- Key = bugreportEnableBRInPwrMenu
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1085,16 +1085,16 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of A
 - If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportANRErrAction 
+- Key = bugreportANRErrAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do not capture&nbsp;</small></i></b></td><td><small>&nbsp;NoCapture&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture bug report&nbsp;</small></i></b></td><td><small>&nbsp;CaptureBR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture logcat log&nbsp;</small></i></b></td><td><small>&nbsp;CaptureLogcat&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do not capture&nbsp;</small></i></b></td><td><small>&nbsp;NoCapture&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture bug report&nbsp;</small></i></b></td><td><small>&nbsp;CaptureBR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture logcat log&nbsp;</small></i></b></td><td><small>&nbsp;CaptureLogcat&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1112,16 +1112,16 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of U
 - If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportUnexpectedErrAction 
+- Key = bugreportUnexpectedErrAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do not capture&nbsp;</small></i></b></td><td><small>&nbsp;NoCapture&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture bug report&nbsp;</small></i></b></td><td><small>&nbsp;CaptureBR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture logcat log&nbsp;</small></i></b></td><td><small>&nbsp;CaptureLogcat&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do not capture&nbsp;</small></i></b></td><td><small>&nbsp;NoCapture&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture bug report&nbsp;</small></i></b></td><td><small>&nbsp;CaptureBR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Capture logcat log&nbsp;</small></i></b></td><td><small>&nbsp;CaptureLogcat&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1136,14 +1136,14 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of U
 Use this *Sub-group* to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportCloudDetails 
+- Key = bugreportCloudDetails
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1157,16 +1157,16 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of all generated Bug Reports to the Zebra Cloud Server.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportCloudEnable 
+- Key = bugreportCloudEnable
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1183,16 +1183,16 @@ Enter a timeout value, the expiration of which will cause the sending Bug Report
 - If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send to Cloud Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports to the Zebra Cloud Server when the timer expires, until the configuration is explicitly changed again.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportCloudTTL 
+- Key = bugreportCloudTTL
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1207,14 +1207,14 @@ Enter a timeout value, the expiration of which will cause the sending Bug Report
 Use this *Sub-group* to configure whether copies of generated Bug Reports will be stored in the Zebra device and, if so, where in the device they will be stored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportStorageDetails 
+- Key = bugreportStorageDetails
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1228,16 +1228,16 @@ Select whether Zebra Extended Bug Reporting should automatically store copies of
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will store copies of generated Bug Reports in the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportStorageEnable 
+- Key = bugreportStorageEnable
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1255,14 +1255,14 @@ Enter the path where Zebra Extended Bug Reporting should automatically store cop
 Note that either fixed or removable storage are supported, but the specified path must be valid at the time Bug Report is generated. If no path is specified, bug reports are stored in /storage/sdcard0/BugReports/, which will always be a valid path for storage of Bug Reports on all devices.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportBugReportFilePath 
+- Key = bugreportBugReportFilePath
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1279,16 +1279,16 @@ Enter a timeout value, the expiration of which will cause the storing of Bug Rep
 - If any other value is selected, at the time Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group **Store in Device Detail**, a timer will be started for the specified timeout value and when that timer expires, Zebra Extended Bug Reporting will cease storing Bug Reports in the device, until the configuration is explicitly changed again.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportStorageTTL 
+- Key = bugreportStorageTTL
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1303,14 +1303,14 @@ Enter a timeout value, the expiration of which will cause the storing of Bug Rep
 Use this *Sub-group* to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailDetails 
+- Key = bugreportEmailDetails
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1324,16 +1324,16 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 - If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of generated Bug Reports via email. You should also specify additional information to provide the details of the email to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailEnable 
+- Key = bugreportEmailEnable
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;False&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;True&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1351,14 +1351,14 @@ Enter the address or host name of the SMTP (email) Server via which emails will 
 Note that you must have access to an email account on the selected SMTP Server and you must specify additional configuration within the Group to configure Zebra Extended Bug Reporting to send emails via that SMTP Server. In addition, you must have access to a valid email account to use as the destination of the emails, which is NOT required to be on the same SMTP Server, and must specify details of the email address within the Group, to configure Zebra Extended Bug Reporting to send the emails to that destination.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailSMTPHost 
+- Key = bugreportEmailSMTPHost
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1373,14 +1373,14 @@ Note that you must have access to an email account on the selected SMTP Server a
 Enter the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports when **SMTP Host** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailSMTPPort 
+- Key = bugreportEmailSMTPPort
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1398,14 +1398,14 @@ Enter the ID of the email account that will be used as the source (from address)
 Note that you must have access to a valid email account on the configured SMTP (email) Server and must specify additional information in the Group, such as **Sender Password** to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailSendersID 
+- Key = bugreportEmailSendersID
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1420,14 +1420,14 @@ Note that you must have access to a valid email account on the configured SMTP (
 Enter the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State** and a valid SMTP (email) Server is specified via **SMTP Host** and a valid email address is specified via **Sender ID**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailSendersPassword 
+- Key = bugreportEmailSendersPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1442,14 +1442,14 @@ Enter the password of the email account that will be used as the source (from ad
 Enter the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailSendTo 
+- Key = bugreportEmailSendTo
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1466,16 +1466,16 @@ Enter a timeout value, the expiration of which will cause the sending of Bug Rep
 - If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports via email via the Group **Send Via Email Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports via email when the timer expires, until the configuration is explicitly changed again.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportEmailTTL 
+- Key = bugreportEmailTTL
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Expire&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Day&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Week&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 Weeks&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Month&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3 Months&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 Months&nbsp;</small></i></b></td><td><small>&nbsp;180&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 Year&nbsp;</small></i></b></td><td><small>&nbsp;365&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1490,14 +1490,14 @@ Enter a timeout value, the expiration of which will cause the sending of Bug Rep
 Use this *Sub-array* to customize the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElements 
+- Key = bugreportDialogElements
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1509,14 +1509,14 @@ Use this *Sub-array* to customize the dialog that will be presented to the Devic
 Use this *Sub-group* to define a single element of a dialog the Device User will use to provide Bug Report information.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElement 
+- Key = bugreportDialogElement
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1532,16 +1532,16 @@ Select the type of a single dialog element being included in the dialog that wil
 - If the value ***VoiceRecordButton*** is selected, a voice record button will be added to the dialog presented to the Device User. Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElementType 
+- Key = bugreportDialogElementType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;ErrorNameTextBox&nbsp;</small></i></b></td><td><small>&nbsp;AddErrorNameTextBox&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Label&nbsp;</small></i></b></td><td><small>&nbsp;AddLabel&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TextBox&nbsp;</small></i></b></td><td><small>&nbsp;AddTextBox&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VoiceRecordButton&nbsp;</small></i></b></td><td><small>&nbsp;AddVoiceRecordButton&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;ErrorNameTextBox&nbsp;</small></i></b></td><td><small>&nbsp;AddErrorNameTextBox&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Label&nbsp;</small></i></b></td><td><small>&nbsp;AddLabel&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TextBox&nbsp;</small></i></b></td><td><small>&nbsp;AddTextBox&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VoiceRecordButton&nbsp;</small></i></b></td><td><small>&nbsp;AddVoiceRecordButton&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1556,14 +1556,14 @@ Select the type of a single dialog element being included in the dialog that wil
 Enter the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified when the value ***ErrorNameTextBox*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElementTypeErrorNameTextBoxText 
+- Key = bugreportDialogElementTypeErrorNameTextBoxText
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1578,14 +1578,14 @@ Enter the text to be pre-populated into a text box that will be added to the dia
 Enter the text of a label that will be added to the dialog presented to the Device User when the value ***Label*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElementTypeLabelText 
+- Key = bugreportDialogElementTypeLabelText
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1600,14 +1600,14 @@ Enter the text of a label that will be added to the dialog presented to the Devi
 Enter the text that be pre-populated into a text box added to the dialog presented to the Device User into which generic text can be entered and should be specified when the value ***TextBox*** is selected for **Type**. The specified text should provide guidance to the Device User about the value they should enter and will be overwritted by the value entered into the text box.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogElementTypeTextBoxText 
+- Key = bugreportDialogElementTypeTextBoxText
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1622,14 +1622,14 @@ Enter the text that be pre-populated into a text box added to the dialog present
 Enter the amount of inactivity time (time in milliseconds with no Device User activity), after which the dialog presented to the Device User will automatically be dismissed, causing the Bug Report to be completed as if the Device User had explicitly clicked the *Submit Button*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = bugreportDialogTimeout 
+- Key = bugreportDialogTimeout
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1645,14 +1645,14 @@ Enter the amount of inactivity time (time in milliseconds with no Device User ac
 Use this *Group* to configure which camera(s) or other image capture devices can be used to take pictures on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = cameraStep 
+- Key = cameraStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1666,16 +1666,16 @@ Select whether the Rear Facing Camera, if present on a device, can be used to ta
 - If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = cameraUseOfBack 
+- Key = cameraUseOfBack
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1692,16 +1692,16 @@ Select whether the Front Facing (selfie) Camera, if present on a device, can be 
 - If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = cameraUseOfFront 
+- Key = cameraUseOfFront
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1718,16 +1718,16 @@ Select whether the Imager (special-purpose image capture device), if present on 
 - If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = cameraUseOfImager 
+- Key = cameraUseOfImager
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -1743,11 +1743,11 @@ Select whether the Imager (special-purpose image capture device), if present on 
 Use this *Group* to configure the operation and state of the clock on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockStep 
+- Key = clockStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Time Mode
@@ -1757,16 +1757,16 @@ Use this *Group* to configure the operation and state of the clock on a device.
 Select whether time and date configuration will be performed explicitly, through configuration, or automatically, by connecting to a Network Time Protocol (NTP) Server.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockTimeMode 
+- Key = clockTimeMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -1778,14 +1778,14 @@ Select whether time and date configuration will be performed explicitly, through
 Enter the date to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockManualDate 
+- Key = clockManualDate
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -1797,14 +1797,14 @@ Enter the date to be set on a device when the value ***Manual*** is selected for
 Enter the time to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockManualTime 
+- Key = clockManualTime
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -1816,14 +1816,14 @@ Enter the time to be set on a device when the value ***Manual*** is selected for
 Enter the address of the Network Time Protocol (NTP) Server to be used to perform automatic date and time configuration on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockAutoNtpServer 
+- Key = clockAutoNtpServer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -1835,16 +1835,16 @@ Enter the address of the Network Time Protocol (NTP) Server to be used to perfor
 Enter the interval at which automatic date and time configuration will be performed on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockAutoNtpSyncInterval 
+- Key = clockAutoNtpSyncInterval
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;30 minutes&nbsp;</small></i></b></td><td><small>&nbsp;00:30:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;60 minutes&nbsp;</small></i></b></td><td><small>&nbsp;00:60:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 hours&nbsp;</small></i></b></td><td><small>&nbsp;06:00:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24 hours&nbsp;</small></i></b></td><td><small>&nbsp;24:00:00&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;30 minutes&nbsp;</small></i></b></td><td><small>&nbsp;00:30:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;60 minutes&nbsp;</small></i></b></td><td><small>&nbsp;00:60:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6 hours&nbsp;</small></i></b></td><td><small>&nbsp;06:00:00&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24 hours&nbsp;</small></i></b></td><td><small>&nbsp;24:00:00&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -1856,16 +1856,16 @@ Enter the interval at which automatic date and time configuration will be perfor
 Select whether time zone configuration will be performed explicitly, using other configurations in the Group, or automatically, by connecting to a Network Identity and Time Zone (NITZ) source.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockTimeZoneMode 
+- Key = clockTimeZoneMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -1877,14 +1877,14 @@ Select whether time zone configuration will be performed explicitly, using other
 Enter the time zone to be set on a device when the value ***Manual*** is selected for **Time Zone Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockManualTimeZone 
+- Key = clockManualTimeZone
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -1896,16 +1896,16 @@ Enter the time zone to be set on a device when the value ***Manual*** is selecte
 Select whether the format in which time will be displayed on the device will be in ***12*** hour (AM/PM) or ***24*** hour (military) format.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = clockTimeFormat 
+- Key = clockTimeFormat
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.0.
 
@@ -1926,11 +1926,11 @@ The DHCP Client on the device sends a DHCP Request to a DHCP Server and receives
 DHCP Options are variable-length strings that are identified by DHCP Options Numbers that can be included in a DHCP Request or a DHCP Acknowledgment to convey information between a DHCP Client and a DHCP Server. From the point of view of the device where the DHCP Client is running, a DHCP Option can allow the DHCP Client to *Send* information to the DHCP Server or can allow the DHCP Client to *Request* the DHCP Server to return information to the DHCP Client.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpStep 
+- Key = dhcpStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Request Boot File Name (Option 67)
@@ -1940,16 +1940,16 @@ DHCP Options are variable-length strings that are identified by DHCP Options Num
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Boot File Name* and return it using *DHCP Option 67* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestBootFileName 
+- Key = dhcpRequestBootFileName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -1961,16 +1961,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Broadcast Address* and return it using *DHCP Option 28* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestBroadcastAddress 
+- Key = dhcpRequestBroadcastAddress
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -1982,16 +1982,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *NTP Server* and return it using *DHCP Option 42* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestNtpServer 
+- Key = dhcpRequestNtpServer
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2003,16 +2003,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *TFTP Server Address* and return it using *DHCP Option 66* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestTftpServerAddress 
+- Key = dhcpRequestTftpServerAddress
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2024,16 +2024,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Vendor Encapsulated Options* and return whatever is acquired using *DHCP Option 43* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestVendorEncapsulated 
+- Key = dhcpRequestVendorEncapsulated
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.5.
 
@@ -2045,16 +2045,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Domain Search List* and return it using *DHCP Option 119* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestDomainSearchList 
+- Key = dhcpRequestDomainSearchList
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2066,16 +2066,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *TFTP Server Name(s)* and return it using *DHCP Option 150* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestTftpServerNames 
+- Key = dhcpRequestTftpServerNames
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2087,16 +2087,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *First Vendor Specific Option* and return it using *DHCP Option 186* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestVendorSpecific1 
+- Key = dhcpRequestVendorSpecific1
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.5.
 
@@ -2108,16 +2108,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Second Vendor Specific Option* and return it using *DHCP Option 188* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestVendorSpecific2 
+- Key = dhcpRequestVendorSpecific2
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.5.
 
@@ -2129,16 +2129,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Select whether the DHCP Client on a device will request that the DHCP Server acquire the *Third Vendor Specific Option* and return it using *DHCP Option 230* along with the IP Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestVendorSpecific3 
+- Key = dhcpRequestVendorSpecific3
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2152,16 +2152,16 @@ Select whether the DHCP Client on a device will send a *Client Identifier* to th
 - If the value ***On*** is selected, you must also specify **Send Client Identifier State (Option 61)** to provide the value of the *Client Identifier* to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendClientIdentifierState 
+- Key = dhcpSendClientIdentifierState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2173,14 +2173,14 @@ Select whether the DHCP Client on a device will send a *Client Identifier* to th
 Enter the *Client Identifier* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Client Identifier State (Option 61)**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendClientIdentifierValue 
+- Key = dhcpSendClientIdentifierValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2194,16 +2194,16 @@ Select whether the DHCP Client on a device will send a *Host Name* to the DHCP S
 - If the value ***On*** is selected, you must also specify **Send Host Name Value (Option 12)** to provide the value of the *Host Name* to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendHostNameState 
+- Key = dhcpSendHostNameState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2215,14 +2215,14 @@ Select whether the DHCP Client on a device will send a *Host Name* to the DHCP S
 Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Host Name State (Option 12)**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendHostNameValue 
+- Key = dhcpSendHostNameValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2236,16 +2236,16 @@ Select whether the DHCP Client on a device will send a *User Class* to the DHCP 
 - If the value ***On*** is selected, you must also specify **Send User Class Value (Option 77)** to provide the value of the *User Class* to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendUserClassState 
+- Key = dhcpSendUserClassState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2257,14 +2257,14 @@ Select whether the DHCP Client on a device will send a *User Class* to the DHCP 
 Enter the *User Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 77* when requesting an IP Address when the value ***On*** is selected for **Send User Class State (Option 77)**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendUserClassValue 
+- Key = dhcpSendUserClassValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.4.
 
@@ -2278,16 +2278,16 @@ Select whether the DHCP Client on a device will send a *Vendor Class* to the DHC
 - If the value ***On*** is selected, you must also specify **Send Vendor Class Value (Option 60)** to provide the value of the *Vendor Class* to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendVendorClassState 
+- Key = dhcpSendVendorClassState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.5.
 
@@ -2299,14 +2299,14 @@ Select whether the DHCP Client on a device will send a *Vendor Class* to the DHC
 Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 60* when requesting an IP Address when the value ***On*** is selected for **Send Vendor Class State (Option 60)**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendVendorClassValue 
+- Key = dhcpSendVendorClassValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.5.
 
@@ -2320,16 +2320,16 @@ Select whether the DHCP Client on a device will send a *Fully Qualified Domain N
 - If the value ***On*** is selected, you must also specify **Send FQDN Value (Option 81)** and **Send FQDN Flag (Option 81)** to provide the value of the *FQDN value* and the associated flags to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendFqdnState 
+- Key = dhcpSendFqdnState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2341,14 +2341,14 @@ Select whether the DHCP Client on a device will send a *Fully Qualified Domain N
 Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)**. You must also specify **Send FQDN Flag (Option 81)** to provide the flags to be sent along with the *FQDN value*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendFqdnValue 
+- Key = dhcpSendFqdnValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2360,14 +2360,14 @@ Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Ser
 Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)** and when **Send FQDN Value (Option 81)** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendFqdnFlag 
+- Key = dhcpSendFqdnFlag
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -2379,14 +2379,14 @@ Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* t
 Enter the option number of a custom DHCP Option that the DHCP Client on a device should request from DHCP Server and return along with the IP Address when the value ***On*** is selected for **Request Custom Option State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestCustomOptionNumber 
+- Key = dhcpRequestCustomOptionNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -2400,16 +2400,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 - If the value ***On*** is selected, a custom DHCP Option will be requested and you must also specify **Request Custom Option Number** to provide the custom option number to be requested.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpRequestCustomOptionState 
+- Key = dhcpRequestCustomOptionState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -2421,14 +2421,14 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 Enter the option number of a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendCustomOptionNumber 
+- Key = dhcpSendCustomOptionNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -2442,16 +2442,16 @@ Select whether the DHCP Client on a device will request that the DHCP Server sen
 - If the value ***On*** is selected, a custom DHCP Option will be sent and you must also specify **Send Custom Option Number** to provide the custom option number to be sent and **Send Custom Option Value** to provide the custom option value to be sent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendCustomOptionState 
+- Key = dhcpSendCustomOptionState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -2463,14 +2463,14 @@ Select whether the DHCP Client on a device will request that the DHCP Server sen
 Enter the option value for a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State** and when **Send Custom Option Number** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dhcpSendCustomOptionValue 
+- Key = dhcpSendCustomOptionValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -2483,14 +2483,14 @@ Enter the option value for a custom DHCP Option that the DHCP Client on a device
 Use this *Group* to configure DataWedge settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dataWedgeStep 
+- Key = dataWedgeStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2505,14 +2505,14 @@ Use this *Group* to configure DataWedge settings on a device.
 Enter the device path and file name of a DataWedge Database file (full or partial) to replace or be merged to modify the current configuration of DataWedge.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dataWedgeDatabaseFile 
+- Key = dataWedgeDatabaseFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2527,16 +2527,16 @@ Enter the device path and file name of a DataWedge Database file (full or partia
 Select whether DataWedge Database Files deployed to the DataWedge autoimport folder on the device will automatically trigger importing of the file.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dataWedgeAutoImport 
+- Key = dataWedgeAutoImport
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2551,16 +2551,16 @@ Select whether DataWedge Database Files deployed to the DataWedge autoimport fol
 Select whether Device Users will be allowed to manually alter the configuration of DataWedge from the DataWedge configuration UI.API.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dataWedgeManualConfiguration 
+- Key = dataWedgeManualConfiguration
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2575,16 +2575,16 @@ Select whether Device Users will be allowed to manually alter the configuration 
 Select whether whether applications will be allowed to programmatically import DataWedge Configuration Files using the DataWedge Intent API.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = dataWedgeApiImport 
+- Key = dataWedgeApiImport
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2604,16 +2604,11 @@ Use this *Group* to perform Device Administration functions, such as:
 - Control which applications can override the global setting for background data
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminStep 
+- Key = devadminStep
 
-- Type = bundle 
-
-
-**Support Information:** 
-
-- Supported from: MX 9.2.
+- Type = bundle
 
 
 ### Action
@@ -2629,16 +2624,16 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 - If the value ***UnreserveUID*** is selected, you must also specify **Unreserve User ID Package Name** to identify the particular package to which the User ID is reserved.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminAction 
+- Key = devadminAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AllowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisallowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ReserveUID&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnreserveUID&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AllowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisallowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ReserveUID&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnreserveUID&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -2650,14 +2645,14 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 Enter the *Android Package Name* that identifies the application or service is to be allowed when the value ***AllowSubmitXml*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionAllowSubmitXmlPackageName 
+- Key = devadminActionAllowSubmitXmlPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -2669,14 +2664,14 @@ Enter the *Android Package Name* that identifies the application or service is t
 Enter the *Android Package Name* that identifies the application or service is to be disallowed when the value ***DisallowSubmitXml*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionDisallowSubmitXmlPackageName 
+- Key = devadminActionDisallowSubmitXmlPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -2688,14 +2683,14 @@ Enter the *Android Package Name* that identifies the application or service is t
 Enter an XML string to be submitted for processing by the .Zebra MX Management System, when the value ***SubmitXml*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionSubmitXml 
+- Key = devadminActionSubmitXml
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.1.
 
@@ -2707,14 +2702,14 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 Enter the *Android Package Name* of the application needing a reserved UID, when the value ***ReserveUID*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionReserveUIDPackageName 
+- Key = devadminActionReserveUIDPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -2727,14 +2722,14 @@ Enter the *Android Package Signature* of the application needing a reserved UID,
 The value entered must be the Base 64 encoded content of the DER format certificate used to sign the application. The DER-format certificate can be obtained from the application author or can be extracted from the APK file if necessary. Base 64 encoding must be performed to ensure that the value is suitable for transmission as a Managed Configuration.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionReserveUIDPackageSignature 
+- Key = devadminActionReserveUIDPackageSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -2746,14 +2741,14 @@ The value entered must be the Base 64 encoded content of the DER format certific
 Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value ***UnreserveUID*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = devadminActionUnreserveUIDPackageName 
+- Key = devadminActionUnreserveUIDPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -2766,14 +2761,14 @@ Enter the *Android Package Name* of the application whose user ID can be release
 Use this *Group* to configure Device Central behavior on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = deviceCentralStep 
+- Key = deviceCentralStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2794,16 +2789,16 @@ Select whether the Device User should be allowed to use the Device Central UI to
 - If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to control the Bluetooth power state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = deviceCentralBluetoothOnOffControl 
+- Key = deviceCentralBluetoothOnOffControl
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2820,16 +2815,16 @@ Select whether Device Central system should allow multiple pairings to the same 
 - If the value ***Multiple Pairings Per Device Class*** is selected, Device Central system will allow multiple pairings at a time for each Bluetooth Device Class (e.g. multiple headsets and/or multiple printers).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = deviceCentralBluetoothPairingControl 
+- Key = deviceCentralBluetoothPairingControl
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Single Pairing Per Device Class&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Multiple Pairings Per Device Class&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Single Pairing Per Device Class&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Multiple Pairings Per Device Class&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2846,16 +2841,16 @@ Select whether the Device User should be allowed to use the Device Central UI to
 - If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to initiate a Firmware Update.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = deviceCentralFirmwareUpdateButton 
+- Key = deviceCentralFirmwareUpdateButton
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2871,11 +2866,11 @@ Select whether the Device User should be allowed to use the Device Central UI to
 Use this *Group* to configure Display Screen settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayStep 
+- Key = displayStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Timeout
@@ -2888,16 +2883,16 @@ Enter the amount of inactivity, in seconds, after which the device will timeout 
 A given device may not support all available values. In the event that a selected value is not supported on a given device, the smallest larger value that is supported will be used or, if no larger value is supported, the largest smaller value that is supported will be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayTimeout 
+- Key = displayTimeout
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;15 seconds&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 seconds&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 minute&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 minutes&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 minutes&nbsp;</small></i></b></td><td><small>&nbsp;300&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10 minutes&nbsp;</small></i></b></td><td><small>&nbsp;600&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 minutes&nbsp;</small></i></b></td><td><small>&nbsp;1800&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;15 seconds&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 seconds&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 minute&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 minutes&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 minutes&nbsp;</small></i></b></td><td><small>&nbsp;300&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10 minutes&nbsp;</small></i></b></td><td><small>&nbsp;600&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 minutes&nbsp;</small></i></b></td><td><small>&nbsp;1800&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -2920,16 +2915,16 @@ At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle
 - **Debounce Delay** - to specify the time that will be used to debounce the signal specified via **Signal**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayBlankingMode 
+- Key = displayBlankingMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Blank&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blank When Triggered by Signal&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never Blank&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blank When Triggered by Signal&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2949,16 +2944,16 @@ When a Device User is operating a vehicle with a vehicle-mounted device, the dev
 - If the value ***On*** is selected, the Display will *Stay Awake* and hence the device will not time out and will not automatically turn the Display Screen off, so long as the device is connected to external power, even if the Display Screen timeout, configured via **Timeout** expires.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayStayAwake 
+- Key = displayStayAwake
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -2978,16 +2973,16 @@ Select the Signal that will be used to trigger automatic Display Blanking when t
 A common configuration to support *Display Blanking Mode* would be to connect the Request to Send (RTS) output signal of the selected Serial Port to the Clear To Send (CTS) input signal on the same serial port, via a switch, such as one activated by the vehicle accelerator. When the switch is activated, the output RTS output signal would be fed back into the CTS input signal and detected to trigger automatic Display Blanking.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayBlankingModeSignal 
+- Key = displayBlankingModeSignal
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Input 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Input 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Input 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Input 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3004,16 +2999,16 @@ Select the Polarity of the Signal that will be used to trigger automatic Display
 - If the value ***Blank screen when signal goes active (ON)*** is selected, , the automatic Display Blanking will occur when the specified signal is detected as going active (ON). This is the most common choice for the common configuration of connecting RTS and CTS via a switch.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayBlankingModeSignalPolarity 
+- Key = displayBlankingModeSignalPolarity
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Blank screen when signal goes inactive (OFF)&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blank screen when signal goes active (ON)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Blank screen when signal goes inactive (OFF)&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blank screen when signal goes active (ON)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3031,14 +3026,14 @@ Enter the Debounce Delay that will be used for the Signal that will be used to t
 The value specified should be in milliseconds and will be used as a delay following a change in signal state for changing the state of Display Blanking. This is useful to avoid spurious or repetitive changes in Display Blanking state as a result of bounce or chatter on the signal used to trigger automatic Display Blanking. The value specified should be in the range of 250 milliseconds (one quarter of a second) to 32767 milliseconds (more than 32 seconds), which should be adequate to handle most situations.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = displayBlankingModeSignalDebounceDelay 
+- Key = displayBlankingModeSignalDebounceDelay
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3053,16 +3048,16 @@ The value specified should be in milliseconds and will be used as a delay follow
 Select the system display size
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = setDisplaySize 
+- Key = setDisplaySize
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Small&nbsp;</small></i></b></td><td><small>&nbsp;SMALL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;DEFAULT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Large&nbsp;</small></i></b></td><td><small>&nbsp;LARGE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Larger&nbsp;</small></i></b></td><td><small>&nbsp;LARGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Largest&nbsp;</small></i></b></td><td><small>&nbsp;LARGEST&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Small&nbsp;</small></i></b></td><td><small>&nbsp;SMALL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;DEFAULT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Large&nbsp;</small></i></b></td><td><small>&nbsp;LARGE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Larger&nbsp;</small></i></b></td><td><small>&nbsp;LARGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Largest&nbsp;</small></i></b></td><td><small>&nbsp;LARGEST&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3077,80 +3072,19 @@ Select the system display size
 Select the system font size
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = setFontSize 
+- Key = setFontSize
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Small&nbsp;</small></i></b></td><td><small>&nbsp;0.85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;1.0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Large&nbsp;</small></i></b></td><td><small>&nbsp;1.15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Largest&nbsp;</small></i></b></td><td><small>&nbsp;1.3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Small&nbsp;</small></i></b></td><td><small>&nbsp;0.85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;1.0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Large&nbsp;</small></i></b></td><td><small>&nbsp;1.15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Largest&nbsp;</small></i></b></td><td><small>&nbsp;1.3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
-
-- Supported from: MX 9.2.
-
-
------
-## Enrollment
-
-
-
-Use this *Group* to specify an Enrolllment Action to be performed on a device.
-
-
-**Detail Information:** 
-
-- Key = enrollmentStep 
-
-- Type = bundle 
-
-
-**Support Information:** 
-
-- Supported from: MX 9.2.
-
-
-### Action
-
-
-
-Select an Action to specify an Enrollment Action to be performed:
-- If the value ***Claim Device*** is selected, you must also specify **Claim Device Token** to provide the *Device Claim Token* required to identify the Customer Account under which Ownership of the device will be Claimed.
-
-
-**Detail Information:** 
-
-- Key = enrollmentAction 
-
-- Type = string 
-
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Claim Device&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
-
-
-**Support Information:** 
-
-- Supported from: MX 9.2.
-
-
-### Claim Device Token
-
-
-
-Enter the *Device Claim Token* value obtained from Zebra for a *Zebra Customer Account* that can be used to Claim Ownership of a device for that Customer.
-
-
-**Detail Information:** 
-
-- Key = enrollmentActionClaimDeviceToken 
-
-- Type = string 
-
-
-**Support Information:** 
 
 - Supported from: MX 9.2.
 
@@ -3163,14 +3097,14 @@ Enter the *Device Claim Token* value obtained from Zebra for a *Zebra Customer A
 Use this *Group* to configure the Enterprise Keyboard in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbStep 
+- Key = ekbStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3184,16 +3118,16 @@ Select whether the Enterprise Keyboard on a device will have automatic capitaliz
 - If the value ***On*** is selected, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbAutoCaps 
+- Key = ekbAutoCaps
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3210,16 +3144,16 @@ Select whether the Enterprise Keyboard on a device will have automatic correctio
 - If the value ***On*** is selected, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbAutoCorrection 
+- Key = ekbAutoCorrection
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3236,16 +3170,16 @@ Select whether the Enterprise Keyboard on a device will have automatic blocking 
 - If the value ***On*** is selected, automatic offensive word blocking will be turned on (enabled).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbBlockOffensiveWords 
+- Key = ekbBlockOffensiveWords
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3262,16 +3196,16 @@ Select whether the Enterprise Keyboard on a device will have automatic sentence 
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbDoubleSpacePeriod 
+- Key = ekbDoubleSpacePeriod
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3288,16 +3222,16 @@ Select whether the Enterprise Keyboard on a device will show alternate character
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbFlickForAlternateChars 
+- Key = ekbFlickForAlternateChars
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3312,14 +3246,14 @@ Select whether the Enterprise Keyboard on a device will show alternate character
 Enter the length of time (in milliseconds) that a key within the Enterprise Keyboard on a device need to be held pressed to be detected as a long press.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbKeyLongPressDelay 
+- Key = ekbKeyLongPressDelay
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3336,16 +3270,16 @@ Select the navigation mode the Enterprise Keyboard on a device will use to provi
 - If the value ***Key-based (legacy)*** is selected, the Enterprise Keyboard will use the legacy user experience wherein keys can be used to select the desired keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbNavigationMode 
+- Key = ekbNavigationMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Tab-based (new)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Key-based (legacy)&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Tab-based (new)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Key-based (legacy)&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3362,16 +3296,16 @@ Select the numeric layout mode the Enterprise Keyboard on a device will use when
 - If the value ***Calculator Mode*** is selected, the Enterprise Keyboard will display a numeric keyboard in calculator mode (e.g. 789, 456, 123).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbNumericLayoutMode 
+- Key = ekbNumericLayoutMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Telephone Mode&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calculator Mode&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Telephone Mode&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calculator Mode&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3388,16 +3322,16 @@ Select whether the Enterprise Keyboard on a device will show the alphanumeric ta
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowAlphaNumericTab 
+- Key = ekbShowAlphaNumericTab
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3414,16 +3348,16 @@ Select whether the Enterprise Keyboard on a device will show the numeric tab to 
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowNumericTab 
+- Key = ekbShowNumericTab
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3440,16 +3374,16 @@ Select whether the Enterprise Keyboard on a device will show the scan tab to all
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowScanTab 
+- Key = ekbShowScanTab
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3466,16 +3400,16 @@ Select whether the Enterprise Keyboard on a device will show the symbol tab to a
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowSymbolTab 
+- Key = ekbShowSymbolTab
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3492,16 +3426,16 @@ Select whether the Enterprise Keyboard on a device will show a key to invoke voi
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowVoiceInputKey 
+- Key = ekbShowVoiceInputKey
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3522,16 +3456,16 @@ Select the preferred tab the Enterprise Keyboard on a device will select by defa
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbSelectPreferredTab 
+- Key = ekbSelectPreferredTab
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Numeric&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alphanumeric&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Symbol&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Numeric&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alphanumeric&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Symbol&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3548,16 +3482,16 @@ Select whether the Enterprise Keyboard on a device showing contact name suggesti
 - If the value ***On*** is selected, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowContactNamesSuggestions 
+- Key = ekbShowContactNamesSuggestions
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3574,16 +3508,16 @@ Select whether the Enterprise Keyboard on a device showing suggestions for corre
 - If the value ***On*** is selected, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbShowCorrectionSuggestions 
+- Key = ekbShowCorrectionSuggestions
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3600,16 +3534,16 @@ Select whether the Enterprise Keyboard on a device will have key popup on each k
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbPopupOnKeypress 
+- Key = ekbPopupOnKeypress
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3626,16 +3560,16 @@ Select whether the Enterprise Keyboard on a device will have sound on each keypr
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbSoundOnKeypress 
+- Key = ekbSoundOnKeypress
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3652,16 +3586,16 @@ Select the volume mode that will be used by the Enterprise Keyboard on a device 
 - If the value ***Specified Volume*** is selected, a specified volume will be used and you must also specify **Volume** to provide that volume.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbSoundOnKeypressVolumeMode 
+- Key = ekbSoundOnKeypressVolumeMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;System Default Volume&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Specified Volume&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;System Default Volume&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Specified Volume&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3676,14 +3610,14 @@ Select the volume mode that will be used by the Enterprise Keyboard on a device 
 Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress, when the value ***On*** is selected for **Sound on Keypress** and the value ***System Default Volume*** is selected for **Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbSoundOnKeypressVolume 
+- Key = ekbSoundOnKeypressVolume
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3700,16 +3634,16 @@ Select whether the Enterprise Keyboard on a device will have vibration on each k
 - If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbVibrateOnKeypress 
+- Key = ekbVibrateOnKeypress
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3726,16 +3660,16 @@ Enter the duration mode that will be used by the Enterprise Keyboard on a device
 - If the value ***Specified Duration*** is selected, a specified duration will be used and you must also specify **Duration** to provide that duration.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbVibrateOnKeypressDurationMode 
+- Key = ekbVibrateOnKeypressDurationMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;System Default Duration&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Specified Duration&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;System Default Duration&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Specified Duration&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3750,14 +3684,14 @@ Enter the duration mode that will be used by the Enterprise Keyboard on a device
 Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a device when a vibrate occurs on each keypress, when the value ***On*** is selected for **Vibrate on Keypress** and the value ***System Default Duration*** is selected for **Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbVibrateOnKeypressDuration 
+- Key = ekbVibrateOnKeypressDuration
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3778,14 +3712,14 @@ Possible values can be:
 - The value ***\\EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapAlphaP1 
+- Key = ekbRemapAlphaP1
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3811,14 +3745,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapNumericP1 
+- Key = ekbRemapNumericP1
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3844,14 +3778,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapNumericP2 
+- Key = ekbRemapNumericP2
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3877,14 +3811,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapNumericP3 
+- Key = ekbRemapNumericP3
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3910,14 +3844,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapNumericP4 
+- Key = ekbRemapNumericP4
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3943,14 +3877,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ekbRemapSymbolP1 
+- Key = ekbRemapSymbolP1
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3966,14 +3900,14 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 Use this *Group* to configure Enterprise NFC settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcStep 
+- Key = nfcStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -3985,16 +3919,16 @@ Use this *Group* to configure Enterprise NFC settings on a device.
 Use this *Sub-group* to reset all the Enterprise NFC settings to their factory default values on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcResetToDefaults 
+- Key = nfcResetToDefaults
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Reset&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Reset&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4015,16 +3949,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A 
 - If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type A Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcReadTypeATags 
+- Key = nfcReadTypeATags
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4045,16 +3979,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BT
 - If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type B Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcReadTypeBTags 
+- Key = nfcReadTypeBTags
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4075,16 +4009,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F 
 - If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type F Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcReadTypeFTags 
+- Key = nfcReadTypeFTags
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4105,16 +4039,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V 
 - If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type V Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcReadTypeVTags 
+- Key = nfcReadTypeVTags
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Read&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Read&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4135,16 +4069,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should attempt to use N
 - If the value ***Use*** is selected, Enterprise NFC will attempt to read NDEF formatted tags. This may decrease speed somewhat, compared to reading unformatted tags, but increases flexibility by allowing applications to receive tag data interpreted according to NDEF formatting rules.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcUseNDEF 
+- Key = nfcUseNDEF
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4168,16 +4102,16 @@ Use this *Sub-group* to configure the polling mode that the Enterprise NFC shoul
 - If the value ***Low Power*** is selected, Enterprise NFC will poll in a manner designed to minimize impact on battery life. This may increase the overall tag detection time, but will reduce battery drain.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcPollingMode 
+- Key = nfcPollingMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hybrid&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Standard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Low Power&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hybrid&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Standard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Low Power&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4194,16 +4128,16 @@ Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Sp
 - If the value ***Boost*** is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcCpuBoost 
+- Key = nfcCpuBoost
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Boost&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Boost&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Boost&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Boost&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4222,16 +4156,16 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 - If the value ***Any*** is selected, Enterprise NFC will communicate to Type A Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcTypeABaudRate 
+- Key = nfcTypeABaudRate
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;106 kbps&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;212 kbps&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;424 kbps&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Any&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;106 kbps&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;212 kbps&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;424 kbps&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Any&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4258,16 +4192,16 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 - If the value ***Any*** is selected, Enterprise NFC will communicate to Type B Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcTypeBBaudRate 
+- Key = nfcTypeBBaudRate
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;106 kbps&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;212 kbps&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;424 kbps&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Any&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;106 kbps&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;212 kbps&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;424 kbps&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Any&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4284,16 +4218,16 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to
 - If the value ***Use*** is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via **Card Emulation Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcPeerToPeerMode 
+- Key = nfcPeerToPeerMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4310,16 +4244,16 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Em
 - If the value ***Use*** is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via **Peer to Peer Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcCardEmulationMode 
+- Key = nfcCardEmulationMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Do Not Use&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Use&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4340,16 +4274,16 @@ Use this *Sub-group* to configure whether the Enterprise NFC should be allowed t
 - If the value ***Allow*** is selected, Enterprise NFC will allow NFC operations to be performed when the device is at the lock screen.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = nfcUseOnLockScreen 
+- Key = nfcUseOnLockScreen
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;false&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;true&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4365,14 +4299,14 @@ Use this *Sub-group* to configure whether the Enterprise NFC should be allowed t
 Use this *Group* to configure the operation of the Ethernet Adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetStep 
+- Key = ethernetStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4387,16 +4321,16 @@ Select the Power State of the Ethernet Adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetPower 
+- Key = ethernetPower
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4414,16 +4348,16 @@ Select whether Ethernet Power control by the Device User will be allowed or not.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetPowerControlByUser 
+- Key = ethernetPowerControlByUser
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4444,16 +4378,16 @@ When specifying that a Proxy Server is to be used, you should specify **Proxy Se
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetUseProxyServer 
+- Key = ethernetUseProxyServer
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Use a Proxy Server&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Use a Proxy Server&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Use a Proxy Server&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Use a Proxy Server&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4474,14 +4408,14 @@ While it is not mandatory, you should specify **Proxy Server**, **Port**, and **
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetProxyServer 
+- Key = ethernetProxyServer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4502,14 +4436,14 @@ You should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethe
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetProxyServerPort 
+- Key = ethernetProxyServerPort
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4530,14 +4464,14 @@ While it is not mandatory, you should specify **Proxy Server**, **Port**, and **
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetProxyServerBypassList 
+- Key = ethernetProxyServerBypassList
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4559,16 +4493,16 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetIpAddrType 
+- Key = ethernetIpAddrType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Dynamic (DHCP)&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Static (Manual)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Dynamic (DHCP)&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Static (Manual)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4588,14 +4522,14 @@ Enter the IP Address to be assigned to the Ethernet adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetIpAddress 
+- Key = ethernetIpAddress
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4615,14 +4549,14 @@ Enter the Gateway Address to be assigned to the Ethernet adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetGatewayAddress 
+- Key = ethernetGatewayAddress
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4642,14 +4576,14 @@ Enter the Network Mask to be assigned to the Ethernet adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetNetMask 
+- Key = ethernetNetMask
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4669,14 +4603,14 @@ Enter the Primary DNS Server Address to be assigned to the Ethernet adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetDNS1 
+- Key = ethernetDNS1
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4696,20 +4630,97 @@ Enter the Secondary DNS Server Address to be assigned to the Ethernet adapter.
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = ethernetDNS2 
+- Key = ethernetDNS2
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
 
 - Supported from: MX 6.2.
 
+
+-----
+## File Management
+
+
+
+Use this *Group* to perform File Management operations for a device.
+
+
+**Detail Information:**
+
+- Key = filesStep
+
+- Type = bundle
+
+
+**Support Information:**
+
+### Download File Source URI
+
+
+
+Enter the *Source URI* of a File on a Server to be Downloaded to the Device File System. You must also specify **Download Destination Path and File Name** to identify the Path and File Name in the *Device File System* to which the File will be stored once it has been Downloaded.
+
+
+**Detail Information:**
+
+- Key = filesDownloadSourceURI
+
+- Type = string
+
+
+**Support Information:**
+
+- Supported from: MX 4.3.
+
+
+### Download Destination Path and File Name
+
+
+
+Enter the Destination Path and File Name of a File to be Downloaded from a Server to the *Device File System* when **Download File Source URI** is specified.
+
+
+**Detail Information:**
+
+- Key = fileDownloadDestPathAndFileName
+
+- Type = string
+
+
+**Support Information:**
+
+- Supported from: MX 4.3.
+
+
+### Delete Path and File Name
+
+
+
+Enter the Path and optionally the File Name of a Folder or File to be Deleted from the *Device File System*.
+
+
+- To Delete a Folder, specify a value that ends in a forward slash (/) character and that specifies the full Path in the *Device File System* to the Folder to be Deleted.
+
+
+- To Delete a File, specify a value that ends with the File Name and Extension and that specifies the full Path in the *Device File System* to the File to be Deleted.
+
+
+**Detail Information:**
+
+- Key = fileDeletePathAndFileName
+
+- Type = string
+
+
+**Support Information:**
 
 -----
 ## Firmware Over The Air Configuration
@@ -4719,14 +4730,14 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Use this *Group* to configure how Firmware Over The Air (FOTA) operations are performed and and to explicitly initiate such operations on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaStep 
+- Key = fotaStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -4738,16 +4749,16 @@ Use this *Group* to configure how Firmware Over The Air (FOTA) operations are pe
 Select whether the Device User should be allowed to control the Mode of the LifeGuard Over The Air Client via the in-device Client UI.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaUserControlMode 
+- Key = fotaUserControlMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.1.
 
@@ -4761,16 +4772,16 @@ Select the mode used to perform Firmware Over The Air (FOTA) operations on a dev
 - If the Mode value ***Automatic*** is selected, Firmware Over The Air (FOTA) operations will be performed in *Automatic Mode* you do not need to specify any additional information.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaMode 
+- Key = fotaMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Automatic&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Manual&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Automatic&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.1.
 
@@ -4798,16 +4809,16 @@ Note that the Action value ***OS Upgrade*** can only be used to perform an Upgra
 Note that the Action value ***OS Downgrade*** can only be used to perform a Downgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do an Upgrade, the Upgrade will NOT occur.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaAction 
+- Key = fotaAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enterprise Reset&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Factory Reset&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Full Device Wipe&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Update&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Verify Manifest&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Upgrade&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Downgrade&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enterprise Reset&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Factory Reset&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Full Device Wipe&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Update&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Verify Manifest&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Upgrade&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OS Downgrade&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -4819,16 +4830,16 @@ Note that the Action value ***OS Downgrade*** can only be used to perform a Down
 Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, when the Action value ***Enterprise Reset*** is selected for **Mode Manual Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaActionEnterpriseResetSuwBypass 
+- Key = fotaActionEnterpriseResetSuwBypass
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Bypass&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Bypass&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Bypass&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Bypass&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -4840,16 +4851,16 @@ Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when perfo
 Select whether the automatic reboot that would normally be performed following the successful completion of an A/B Upgrade should be suppressed, when the Action value ***OS Upgrade*** is selected for **Mode Manual Action**. Note that if the automatic reboot is suppressed, the reboot will still be required to activate the new OS following the A/B Upgrade, and the later performance of that reboot, at a suitable time, will become the responsibility of the EMM choosing to suppress the automatic reboot.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaActionOsUpgradeSuppressReboot 
+- Key = fotaActionOsUpgradeSuppressReboot
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Suppress&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Suppress&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Suppress&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do NOT Suppress&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -4861,14 +4872,14 @@ Select whether the automatic reboot that would normally be performed following t
 Enter the path and file name of an OS Update or Patch image file, which must already exist at the specified location in the device file system, to be used to update a device when one of the Action values ***OS Update***, ***OS Upgrade***, or ***OS Downgrade*** is selected for **Mode Manual Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaActionOsUpdateFile 
+- Key = fotaActionOsUpdateFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -4880,14 +4891,14 @@ Enter the path and file name of an OS Update or Patch image file, which must alr
 Enter the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a device when the Action value ***Verify Manifest*** is selected for **Mode Manual Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = fotaActionVerifyManifestFile 
+- Key = fotaActionVerifyManifestFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -4900,14 +4911,14 @@ Enter the path and file name of a Manifest file, which must already exist at the
 Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gmsStep 
+- Key = gmsStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4926,16 +4937,16 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 - If the value ***Restricted - Fixed Minimal Set of GMS Features*** is selected, a limited (fixed) subset of Google Mobile Services (GMS), will be enabled for use. The subset will automatically be chosen to ensure that basic device functionality is not impaired, that all enabled Google Mobile Services operate usefully, and that no enabled Google Mobile Services send any data to Google.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gmsFeatureSet 
+- Key = gmsFeatureSet
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;All - Full Set of GMS Features&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Restricted - Fixed Minimal Set of GMS Features&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;All - Full Set of GMS Features&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Restricted - Fixed Minimal Set of GMS Features&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -4951,14 +4962,14 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 Use this *Group* to configure the operation of the General Packet Radio Service (GPRS) subsystem on a device by controlling the configurations of GPRS Access Point Name (APNs).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsStep 
+- Key = gprsStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.3.
 
@@ -4987,16 +4998,16 @@ Select an Action to manage the GPRS APNs on a device:
 - If the value ***RemoveAllApns*** is selected, all existing APNs will be removed and you do not need to specify any additional information.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsAction 
+- Key = gprsAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AddApn&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveApn&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveAllApns&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AddApn&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveApn&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoveAllApns&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.1.
 
@@ -5008,14 +5019,14 @@ Select an Action to manage the GPRS APNs on a device:
 Enter the name of an APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnName 
+- Key = gprsActionAddApnName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5029,16 +5040,16 @@ Select what happens when an APN already exists with the APN name being added whe
 - If the value ***Keep Existing*** is selected, if an APN with the name specified via **Add APN Name** already exists, it will NOT be replaced. The existing APN will be preserved and the new APN will NOT be added.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnReplaceIfExisting 
+- Key = gprsActionAddApnReplaceIfExisting
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Replace Existing&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keep Existing&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Replace Existing&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keep Existing&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5051,16 +5062,16 @@ Select whether a new APN being added should become the new default APN when the 
 - If the value ***No*** is selected, the new APN will not become the new default APN and whatever APN was previously the default will remain the default.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMakeDefault 
+- Key = gprsActionAddApnMakeDefault
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Yes&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;No&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Yes&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;No&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5077,14 +5088,14 @@ Enter a value that uniquely identifies an APN on the network when the value ***A
 APN Identifiers are allocated by cellular carriers to identify the networks that can be reached via various APNs. When acquiring a cellular data plan from a carrier, an APN Identifier will be provided, typically along with other information that qualifies or controls access to the network it identifies.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnAccessPoint 
+- Key = gprsActionAddApnAccessPoint
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5101,14 +5112,14 @@ Enter a user name that can be used to authenticate to an APN when the value ***A
 A network accessed via a given APN Identifier may or may not require authentication. If authentication is required, a user name is generally always required and a password MAY also be required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnUserName 
+- Key = gprsActionAddApnUserName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5123,14 +5134,14 @@ Enter a password that can be used to authenticate to an APN when the value ***Ad
 A network accessed via a given APN Identifier may or may not require authentication. If authentication is required, a user name is generally always required and a password MAY also be required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnPassword 
+- Key = gprsActionAddApnPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -5145,14 +5156,14 @@ Enter the port number of an HTTP proxy to use for all traffic over the network a
 If a Proxy is required, a Port is also generally always required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnPort 
+- Key = gprsActionAddApnPort
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5165,14 +5176,14 @@ Enter the address or name of an HTTP proxy to use for all traffic over the netwo
 - If a Proxy is required, a Port is also generally always required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnProxy 
+- Key = gprsActionAddApnProxy
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5185,14 +5196,14 @@ Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Ser
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMmsPort 
+- Key = gprsActionAddApnMmsPort
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5205,14 +5216,14 @@ Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMmsProxy 
+- Key = gprsActionAddApnMmsProxy
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5227,14 +5238,14 @@ Enter a WAP Gateway Server address that should be used for an APN when the value
 WAP Gateways are rarely, if ever, used on or supported by modern cellular carrier networks.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnServer 
+- Key = gprsActionAddApnServer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5246,14 +5257,14 @@ WAP Gateways are rarely, if ever, used on or supported by modern cellular carrie
 Enter the Multimedia Messaging Service Center (MMSC) address required to route MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMmsc 
+- Key = gprsActionAddApnMmsc
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5270,14 +5281,14 @@ Enter the Type of APN to be added when the value ***AddApn*** is selected for **
 The value to specify for Type should be obtained from the cellular carrier whose network is to be accessed via the APN.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnType 
+- Key = gprsActionAddApnType
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5294,14 +5305,14 @@ Enter the Mobile Country Code (MCC) of the APN to be added when the value ***Add
 The MCC generally match the SIM Card being used or the APN will not be usable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMcc 
+- Key = gprsActionAddApnMcc
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5316,14 +5327,14 @@ Enter the Mobile Network Code (MNC) of the APN to be added when the value ***Add
 The MNC generally match the SIM Card being used or the APN will not be usable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMnc 
+- Key = gprsActionAddApnMnc
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.1.
 
@@ -5338,16 +5349,16 @@ Select the Type of Authentication to be used for APN to be added when the value 
 - If the value ***CHAP*** is selected, the Challenge Handshake Authentication Protocol (CHAP) will be used to authenticate for the APN.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnAuthenticationType 
+- Key = gprsActionAddApnAuthenticationType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PAP&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHAP&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PAP&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHAP&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.3.
 
@@ -5364,16 +5375,16 @@ Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be a
 - If the value ***ICCID*** is selected, the MVNO will be specified via an GID (Integrated Circuit Card ID) value for the APN, which you must specify via **Add MVNO Match Data**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMvnoType 
+- Key = gprsActionAddApnMvnoType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPN&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;IMSI&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GID&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPN&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;IMSI&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GID&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.4.
 
@@ -5388,14 +5399,14 @@ Enter the MVNO (Mobile Virtual Network Operator) Match Data to be used for APN t
 The exact value to be specified depends on the MVNO Type specified. Consult your MVNO carrier for information on the MVNO Type and MVNO Match Data value to be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionAddApnMvnoMatchData 
+- Key = gprsActionAddApnMvnoMatchData
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.4.
 
@@ -5407,14 +5418,14 @@ The exact value to be specified depends on the MVNO Type specified. Consult your
 Enter the name of an APN to be removed when the value ***RemoveApn*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = gprsActionRemoveApnName 
+- Key = gprsActionRemoveApnName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.1.
 
@@ -5427,14 +5438,14 @@ Enter the name of an APN to be removed when the value ***RemoveApn*** is selecte
 Use this *Group* to configure General User Interface (UI) aspects of a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiStep 
+- Key = uiStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.1.
 
@@ -5453,16 +5464,16 @@ Select an Action to perform miscellaneous UI behavior on a device: - If the Acti
 Note: Since it is possible to turn GMS Applications on or off individually, using the values ***Turn On All GMS Applications*** and ***Turn Off All GMS Applications*** will guarantee only that all GMS Applications are On or Off immediately after the requested Action is completed. Subsequent Actions could result in any mixture of GMS Applications being turned On or Off. The behavior of the system or any GMS applications under such conditions is not guaranteed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiAction 
+- Key = uiAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Clear Clipboard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Recently Used Apps List&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Application Cache&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn On All GMS Applications&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Off All GMS Applications&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Application User Data&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Clear Clipboard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Recently Used Apps List&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Application Cache&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn On All GMS Applications&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Off All GMS Applications&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear Application User Data&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5477,14 +5488,14 @@ Note: Since it is possible to turn GMS Applications on or off individually, usin
 Enter the *Android Package Name* for which the cache should be cleared by a Clear Application Cache Action when the value ***Clear Application Cache*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiActionClearApplicationCachePackage 
+- Key = uiActionClearApplicationCachePackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5499,14 +5510,14 @@ Enter the *Android Package Name* for which the cache should be cleared by a Clea
 Enter the *Android Package Name* for which all user data should be cleared when performing a Clear Application User Data Action when the value ***Clear Application User Data*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiActionClearApplicationUserDataPackage 
+- Key = uiActionClearApplicationUserDataPackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5521,16 +5532,16 @@ Enter the *Android Package Name* for which all user data should be cleared when 
 Select whether the Device User will be presented with the option to control the state of Do Not Disturb Mode from the Menu presented when the power key is held down on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUserControlDoNotDisturbMode 
+- Key = uiUserControlDoNotDisturbMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5547,16 +5558,16 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 - If the value ***Hide*** is selected, an App Info Icon will NOT be shown on Long Press on Recent App Header
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiAppInfoOnLongPressRecentAppHeader 
+- Key = uiAppInfoOnLongPressRecentAppHeader
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5579,16 +5590,16 @@ Select whether the Device User prompted for corrections to potential mistakes ma
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiAutoCorrect 
+- Key = uiAutoCorrect
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5605,16 +5616,16 @@ Select whether the charging system be allowed to display the battery charging st
 - If the value ***Enable*** is selected, the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiBatteryChargingLED 
+- Key = uiBatteryChargingLED
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5631,16 +5642,16 @@ Select whether the Device User will automatically be presented with the Battery 
 - If the value ***Enable*** is selected, the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold, perhaps helping to avoid emergency shutdown and potential loss of data as a result.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiBatterySwapPopup 
+- Key = uiBatterySwapPopup
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5657,16 +5668,16 @@ Select whether the on-screen Navigation Bar will be displayed and hence whether 
 - If the value ***On*** is selected, the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiDisplayNavigationBar 
+- Key = uiDisplayNavigationBar
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -5678,14 +5689,14 @@ Select whether the on-screen Navigation Bar will be displayed and hence whether 
 Enter the *Android Package Name* of the default launcher application. This would typically be used when installing an new launcher (home screen) application as a replacement for the default Android launcher.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiLauncherPackageName 
+- Key = uiLauncherPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5708,16 +5719,16 @@ Values MUST specify a *Language*, and optionally a *Region*.
 - When both a *Language* and a *Region* are to be specified, the identifier will be the name of the *Region* followed by the name of the *Language*, separated by an underscore (e.g. CANADA_FRENCH).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiLocale 
+- Key = uiLocale
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;CANADA&nbsp;</small></i></b></td><td><small>&nbsp;en_CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CANADA_FRENCH&nbsp;</small></i></b></td><td><small>&nbsp;fr_CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINA&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRANCE&nbsp;</small></i></b></td><td><small>&nbsp;fr_FR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRENCH&nbsp;</small></i></b></td><td><small>&nbsp;fr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMAN&nbsp;</small></i></b></td><td><small>&nbsp;de&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMANY&nbsp;</small></i></b></td><td><small>&nbsp;de_DE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALIAN&nbsp;</small></i></b></td><td><small>&nbsp;it&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALY&nbsp;</small></i></b></td><td><small>&nbsp;it_IT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN&nbsp;</small></i></b></td><td><small>&nbsp;ja_JP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPANESE&nbsp;</small></i></b></td><td><small>&nbsp;ja&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KOREA&nbsp;</small></i></b></td><td><small>&nbsp;ko_KR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KOREAN&nbsp;</small></i></b></td><td><small>&nbsp;ko&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PRC&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SIMPLIFIED_CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TAIWAN&nbsp;</small></i></b></td><td><small>&nbsp;zh_TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TRADITIONAL_CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh_TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UK&nbsp;</small></i></b></td><td><small>&nbsp;en_GB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;US&nbsp;</small></i></b></td><td><small>&nbsp;en_US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPANISH&nbsp;</small></i></b></td><td><small>&nbsp;es_ES&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;US_SPANISH&nbsp;</small></i></b></td><td><small>&nbsp;es_US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BRAZIL_PORTUGUESE&nbsp;</small></i></b></td><td><small>&nbsp;pt_BR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PORTUGUESE&nbsp;</small></i></b></td><td><small>&nbsp;pt_PT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRALIA_ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en_AU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDIA_ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en_IN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWEDEN_SWEDISH&nbsp;</small></i></b></td><td><small>&nbsp;sv_SE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NORWAY_NORWEGIAN-BOKMAL&nbsp;</small></i></b></td><td><small>&nbsp;nb_NO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FINLAND_FINISH&nbsp;</small></i></b></td><td><small>&nbsp;fi_FI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DENMARK_DANISH&nbsp;</small></i></b></td><td><small>&nbsp;da_DK&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;CANADA&nbsp;</small></i></b></td><td><small>&nbsp;en_CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CANADA_FRENCH&nbsp;</small></i></b></td><td><small>&nbsp;fr_CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINA&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRANCE&nbsp;</small></i></b></td><td><small>&nbsp;fr_FR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRENCH&nbsp;</small></i></b></td><td><small>&nbsp;fr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMAN&nbsp;</small></i></b></td><td><small>&nbsp;de&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMANY&nbsp;</small></i></b></td><td><small>&nbsp;de_DE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALIAN&nbsp;</small></i></b></td><td><small>&nbsp;it&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALY&nbsp;</small></i></b></td><td><small>&nbsp;it_IT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN&nbsp;</small></i></b></td><td><small>&nbsp;ja_JP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPANESE&nbsp;</small></i></b></td><td><small>&nbsp;ja&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KOREA&nbsp;</small></i></b></td><td><small>&nbsp;ko_KR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KOREAN&nbsp;</small></i></b></td><td><small>&nbsp;ko&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PRC&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SIMPLIFIED_CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh_CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TAIWAN&nbsp;</small></i></b></td><td><small>&nbsp;zh_TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TRADITIONAL_CHINESE&nbsp;</small></i></b></td><td><small>&nbsp;zh_TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UK&nbsp;</small></i></b></td><td><small>&nbsp;en_GB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;US&nbsp;</small></i></b></td><td><small>&nbsp;en_US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPANISH&nbsp;</small></i></b></td><td><small>&nbsp;es_ES&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;US_SPANISH&nbsp;</small></i></b></td><td><small>&nbsp;es_US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BRAZIL_PORTUGUESE&nbsp;</small></i></b></td><td><small>&nbsp;pt_BR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PORTUGUESE&nbsp;</small></i></b></td><td><small>&nbsp;pt_PT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRALIA_ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en_AU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDIA_ENGLISH&nbsp;</small></i></b></td><td><small>&nbsp;en_IN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWEDEN_SWEDISH&nbsp;</small></i></b></td><td><small>&nbsp;sv_SE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NORWAY_NORWEGIAN-BOKMAL&nbsp;</small></i></b></td><td><small>&nbsp;nb_NO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FINLAND_FINISH&nbsp;</small></i></b></td><td><small>&nbsp;fi_FI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DENMARK_DANISH&nbsp;</small></i></b></td><td><small>&nbsp;da_DK&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -5731,16 +5742,16 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 - If the value ***Disallow*** is selected, a Long Press on the Home Key will NOT Launch the Google Assistant.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiLongPressHomeLaunchesGoogleAssistant 
+- Key = uiLongPressHomeLaunchesGoogleAssistant
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5757,16 +5768,16 @@ Select whether the Network Notification Popup will be presented to inform the De
 - If the value ***On*** is selected, the Network Notification Popup may be presented, and hence the Device User may be notified that their network may be monitored, if circumstances warrant such notification.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiNetworkNotificationPopup 
+- Key = uiNetworkNotificationPopup
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5783,16 +5794,16 @@ Select whether the *On Screen Power Button* feature will be turned ON or OFF. th
 - If the value ***Enable*** is selected, the *On Screen Power Button* feature will be turned ON and hence the on-screen power button WILL be displayed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiOnScreenPowerButton 
+- Key = uiOnScreenPowerButton
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5809,16 +5820,16 @@ Select whether the Device User is allowed to Pull Down the Notification Bar to i
 - If the value ***On*** is selected, the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiPullDownNotificationBar 
+- Key = uiPullDownNotificationBar
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5833,16 +5844,16 @@ Select whether the Device User is allowed to Pull Down the Notification Bar to i
 Select whether the Device User will be presented with the option to control the state of Airplane Mode from the Menu presented when the power key is held down on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiShowAirplaneModeInPwrKeyMenu 
+- Key = uiShowAirplaneModeInPwrKeyMenu
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5860,16 +5871,16 @@ Select whether a New Pairing Popup will be presented when an unpaired peripheral
 - This option does not prevent new pairings from being established based on configured Silent Pairing rules.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiPairingPopup 
+- Key = uiPairingPopup
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5886,16 +5897,16 @@ Select whether passwords should be shown (displayed) when entered on the device 
 - If the value ***On*** is selected, passwords will globally be shown (displayed) whenever they are being entered on the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiShowPasswords 
+- Key = uiShowPasswords
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5912,16 +5923,16 @@ Select whether the Virtual Keyboard will be shown when the Physical Keyboard is 
 - If the value ***On*** is selected, the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiShowVirtualKeyboard 
+- Key = uiShowVirtualKeyboard
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5938,16 +5949,16 @@ Select whether the Android Status Bar should be displayed.
 - If the value ***Show*** is selected, the Android Status Bar will be displayed, which also means that the Device User might be allowed to interact with notifications in the Notifications Panel.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uIStatusBar 
+- Key = uIStatusBar
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hide&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Show&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5962,16 +5973,16 @@ Select whether the Android Status Bar should be displayed.
 Select whether the Device User will be allowed to utilize the clipboard on a device to cut, copy, and paste text between applications.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUseOfClipboard 
+- Key = uiUseOfClipboard
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -5988,16 +5999,16 @@ Select whether the Date in the Notification Panel can be used to invoke the Cloc
 - If the value ***Disallow*** is selected, clicking the Date in the Notification Panel will NOT invoke the Clock Application.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiDateInNotificationAccessClock 
+- Key = uiDateInNotificationAccessClock
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6014,16 +6025,16 @@ Select whether the Device User will be allowed to utilize the Home Key on a devi
 - If the value ***On*** is selected, the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUseOfHomeKey 
+- Key = uiUseOfHomeKey
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6040,16 +6051,16 @@ Select whether the Device User is allowed to Use Magnification Gestures.
 - If the value ***On*** is selected, the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUseOfMagnificationGestures 
+- Key = uiUseOfMagnificationGestures
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.0.
 
@@ -6063,16 +6074,16 @@ Select whether the Device User is allowed to Use the Recent Apps Key to access r
 - If the value ***On*** is selected, the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUseOfRecentAppsKey 
+- Key = uiUseOfRecentAppsKey
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -6086,16 +6097,16 @@ Select whether Split Screen Mode is allowed to be used on the device.
 - If the value ***Allow*** is selected, the use of Split Screen Mode will be allowed on the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiSplitScreenMode 
+- Key = uiSplitScreenMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6112,16 +6123,16 @@ Select whether Primary Device User is allowed to invoke UI to manage Multi User,
 - If the value ***Allow*** is selected, the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUserControlMultiUser 
+- Key = uiUserControlMultiUser
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6145,16 +6156,16 @@ Not all devices support the ability to configure the Touch Panel mode and those 
 - An attempt to configure a Touch Panel mode on a device that does not support that mode will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiTouchMode 
+- Key = uiTouchMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stylus or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Stylus and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Glove or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Glove and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finger Only&nbsp;</small></i></b></td><td><small>&nbsp;Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stylus or Glove or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Stylus and Glove and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finger and Wet&nbsp;</small></i></b></td><td><small>&nbsp;Finger and Wet&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stylus or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Stylus and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Glove or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Glove and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finger Only&nbsp;</small></i></b></td><td><small>&nbsp;Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stylus or Glove or Finger&nbsp;</small></i></b></td><td><small>&nbsp;Stylus and Glove and Finger&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finger and Wet&nbsp;</small></i></b></td><td><small>&nbsp;Finger and Wet&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6173,14 +6184,14 @@ Select whether Touch Panel should be optimized for use with a Screen Protector. 
 Not all devices support the ability to configure the Touch Panel to account for the use or a screen Protector.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiTouchScreenProtector 
+- Key = uiTouchScreenProtector
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6197,16 +6208,16 @@ Select whether the *Large Key Indicator* feature, which allows a large on-screen
 - If the value ***Turn On*** is selected, the *Large Key Indicator* feature will be turned ON and hence the on-screen indicator WILL be displayed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiSetLKI 
+- Key = uiSetLKI
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.0.
 
@@ -6220,16 +6231,16 @@ Select whether the Device User will be allowed to turn the *Large Key Indicator*
 - If the value ***Disable*** is selected, the Device User will NOT be allowed to turn the *Large Key Indicator* feature ON or OFF.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = uiUserControlLKI 
+- Key = uiUserControlLKI
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.0.
 
@@ -6242,14 +6253,14 @@ Select whether the Device User will be allowed to turn the *Large Key Indicator*
 Use this *Group* to configure the network host name on the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = hostStep 
+- Key = hostStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6261,14 +6272,14 @@ Use this *Group* to configure the network host name on the device.
 Enter the name by which a device will be known on the network.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = hostDeviceName 
+- Key = hostDeviceName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6284,14 +6295,14 @@ Enter the name by which a device will be known on the network.
 Use this *Group* to configure how the keys on the physical keyboard (if any) of the device are mapped into key and other behaviors.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapStep 
+- Key = keymapStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6305,16 +6316,16 @@ Select an Action to affect the behaviors mapped to the keys on the physical keyb
 - If the value ***Reset All Mappings*** is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapAction 
+- Key = keymapAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Mapping&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset All Mappings&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Mapping&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset All Mappings&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6329,16 +6340,16 @@ Select an Action to affect the behaviors mapped to the keys on the physical keyb
 Enter a value that uniquely identifies a physical key on the physical keyboard of a device for which one or more behaviors are to be specified when the value ***Add Mapping*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapActionAddMappingKeyId 
+- Key = keymapActionAddMappingKeyId
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;0&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;A&nbsp;</small></i></b></td><td><small>&nbsp;A&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;B&nbsp;</small></i></b></td><td><small>&nbsp;B&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;C&nbsp;</small></i></b></td><td><small>&nbsp;C&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;D&nbsp;</small></i></b></td><td><small>&nbsp;D&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;E&nbsp;</small></i></b></td><td><small>&nbsp;E&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F&nbsp;</small></i></b></td><td><small>&nbsp;F&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;G&nbsp;</small></i></b></td><td><small>&nbsp;G&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;H&nbsp;</small></i></b></td><td><small>&nbsp;H&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;I&nbsp;</small></i></b></td><td><small>&nbsp;I&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;J&nbsp;</small></i></b></td><td><small>&nbsp;J&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;K&nbsp;</small></i></b></td><td><small>&nbsp;K&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;L&nbsp;</small></i></b></td><td><small>&nbsp;L&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;M&nbsp;</small></i></b></td><td><small>&nbsp;M&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;N&nbsp;</small></i></b></td><td><small>&nbsp;N&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;O&nbsp;</small></i></b></td><td><small>&nbsp;O&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P&nbsp;</small></i></b></td><td><small>&nbsp;P&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Q&nbsp;</small></i></b></td><td><small>&nbsp;Q&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;R&nbsp;</small></i></b></td><td><small>&nbsp;R&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;S&nbsp;</small></i></b></td><td><small>&nbsp;S&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;T&nbsp;</small></i></b></td><td><small>&nbsp;T&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U&nbsp;</small></i></b></td><td><small>&nbsp;U&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;V&nbsp;</small></i></b></td><td><small>&nbsp;V&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;W&nbsp;</small></i></b></td><td><small>&nbsp;W&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;X&nbsp;</small></i></b></td><td><small>&nbsp;X&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Y&nbsp;</small></i></b></td><td><small>&nbsp;Y&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Z&nbsp;</small></i></b></td><td><small>&nbsp;Z&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;. (Period)&nbsp;</small></i></b></td><td><small>&nbsp;DOT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;, (Comma)&nbsp;</small></i></b></td><td><small>&nbsp;COMMA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;* (Star)&nbsp;</small></i></b></td><td><small>&nbsp;STAR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;# (Pound)&nbsp;</small></i></b></td><td><small>&nbsp;POUND&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F1&nbsp;</small></i></b></td><td><small>&nbsp;F1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F2&nbsp;</small></i></b></td><td><small>&nbsp;F2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F3&nbsp;</small></i></b></td><td><small>&nbsp;F3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F4&nbsp;</small></i></b></td><td><small>&nbsp;F4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F5&nbsp;</small></i></b></td><td><small>&nbsp;F5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F6&nbsp;</small></i></b></td><td><small>&nbsp;F6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F7&nbsp;</small></i></b></td><td><small>&nbsp;F7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F8&nbsp;</small></i></b></td><td><small>&nbsp;F8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F9&nbsp;</small></i></b></td><td><small>&nbsp;F9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F10&nbsp;</small></i></b></td><td><small>&nbsp;F10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F11&nbsp;</small></i></b></td><td><small>&nbsp;F11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F12&nbsp;</small></i></b></td><td><small>&nbsp;F12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enter&nbsp;</small></i></b></td><td><small>&nbsp;ENTER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Up&nbsp;</small></i></b></td><td><small>&nbsp;UP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Down&nbsp;</small></i></b></td><td><small>&nbsp;DOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left&nbsp;</small></i></b></td><td><small>&nbsp;LEFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Escape&nbsp;</small></i></b></td><td><small>&nbsp;ESC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Backspace&nbsp;</small></i></b></td><td><small>&nbsp;BACKSPACE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Space&nbsp;</small></i></b></td><td><small>&nbsp;SPACE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return&nbsp;</small></i></b></td><td><small>&nbsp;RETURN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;CLR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Field Exit&nbsp;</small></i></b></td><td><small>&nbsp;FIELD_EXIT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alt&nbsp;</small></i></b></td><td><small>&nbsp;ALT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;CTRL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;SHIFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;BLUE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;ORANGE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Green Dot&nbsp;</small></i></b></td><td><small>&nbsp;GREEN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Red Dot&nbsp;</small></i></b></td><td><small>&nbsp;RED&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Up&nbsp;</small></i></b></td><td><small>&nbsp;VOLUMEUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Down&nbsp;</small></i></b></td><td><small>&nbsp;VOLUMEDOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;SCAN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grip Trigger&nbsp;</small></i></b></td><td><small>&nbsp;GRIP_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grip Trigger 2&nbsp;</small></i></b></td><td><small>&nbsp;GRIP_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L1&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER_1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L2&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R1&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER_1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R2&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Trigger&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Trigger&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Center Trigger&nbsp;</small></i></b></td><td><small>&nbsp;CENTER_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gun Trigger&nbsp;</small></i></b></td><td><small>&nbsp;GUN_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Headset Button&nbsp;</small></i></b></td><td><small>&nbsp;HEADSET_HOOK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Back&nbsp;</small></i></b></td><td><small>&nbsp;BACK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Home&nbsp;</small></i></b></td><td><small>&nbsp;HOME&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Menu&nbsp;</small></i></b></td><td><small>&nbsp;MENU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Recent&nbsp;</small></i></b></td><td><small>&nbsp;RECENT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search&nbsp;</small></i></b></td><td><small>&nbsp;SEARCH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Display Backlight&nbsp;</small></i></b></td><td><small>&nbsp;LAMP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Power&nbsp;</small></i></b></td><td><small>&nbsp;POWER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P1 Button&nbsp;</small></i></b></td><td><small>&nbsp;P1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P2 Button&nbsp;</small></i></b></td><td><small>&nbsp;P2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P3 Button&nbsp;</small></i></b></td><td><small>&nbsp;P3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P4 Button&nbsp;</small></i></b></td><td><small>&nbsp;P4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Rear Button&nbsp;</small></i></b></td><td><small>&nbsp;REAR_BUTTON&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left External Trigger&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_EXTERNAL_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right External Trigger&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_EXTERNAL_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch NAV_PAD&nbsp;</small></i></b></td><td><small>&nbsp;NAV_PAD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 1&nbsp;</small></i></b></td><td><small>&nbsp;M1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 2&nbsp;</small></i></b></td><td><small>&nbsp;M2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 3&nbsp;</small></i></b></td><td><small>&nbsp;M3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 4&nbsp;</small></i></b></td><td><small>&nbsp;M4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 5&nbsp;</small></i></b></td><td><small>&nbsp;M5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 6&nbsp;</small></i></b></td><td><small>&nbsp;M6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;BRIGHTNESSUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;BRIGHTNESSDOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;KEYBOARD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHTUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHTDOWN&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;0&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;A&nbsp;</small></i></b></td><td><small>&nbsp;A&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;B&nbsp;</small></i></b></td><td><small>&nbsp;B&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;C&nbsp;</small></i></b></td><td><small>&nbsp;C&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;D&nbsp;</small></i></b></td><td><small>&nbsp;D&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;E&nbsp;</small></i></b></td><td><small>&nbsp;E&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F&nbsp;</small></i></b></td><td><small>&nbsp;F&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;G&nbsp;</small></i></b></td><td><small>&nbsp;G&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;H&nbsp;</small></i></b></td><td><small>&nbsp;H&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;I&nbsp;</small></i></b></td><td><small>&nbsp;I&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;J&nbsp;</small></i></b></td><td><small>&nbsp;J&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;K&nbsp;</small></i></b></td><td><small>&nbsp;K&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;L&nbsp;</small></i></b></td><td><small>&nbsp;L&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;M&nbsp;</small></i></b></td><td><small>&nbsp;M&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;N&nbsp;</small></i></b></td><td><small>&nbsp;N&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;O&nbsp;</small></i></b></td><td><small>&nbsp;O&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P&nbsp;</small></i></b></td><td><small>&nbsp;P&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Q&nbsp;</small></i></b></td><td><small>&nbsp;Q&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;R&nbsp;</small></i></b></td><td><small>&nbsp;R&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;S&nbsp;</small></i></b></td><td><small>&nbsp;S&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;T&nbsp;</small></i></b></td><td><small>&nbsp;T&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U&nbsp;</small></i></b></td><td><small>&nbsp;U&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;V&nbsp;</small></i></b></td><td><small>&nbsp;V&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;W&nbsp;</small></i></b></td><td><small>&nbsp;W&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;X&nbsp;</small></i></b></td><td><small>&nbsp;X&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Y&nbsp;</small></i></b></td><td><small>&nbsp;Y&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Z&nbsp;</small></i></b></td><td><small>&nbsp;Z&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;. (Period)&nbsp;</small></i></b></td><td><small>&nbsp;DOT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;, (Comma)&nbsp;</small></i></b></td><td><small>&nbsp;COMMA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;* (Star)&nbsp;</small></i></b></td><td><small>&nbsp;STAR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;# (Pound)&nbsp;</small></i></b></td><td><small>&nbsp;POUND&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F1&nbsp;</small></i></b></td><td><small>&nbsp;F1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F2&nbsp;</small></i></b></td><td><small>&nbsp;F2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F3&nbsp;</small></i></b></td><td><small>&nbsp;F3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F4&nbsp;</small></i></b></td><td><small>&nbsp;F4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F5&nbsp;</small></i></b></td><td><small>&nbsp;F5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F6&nbsp;</small></i></b></td><td><small>&nbsp;F6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F7&nbsp;</small></i></b></td><td><small>&nbsp;F7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F8&nbsp;</small></i></b></td><td><small>&nbsp;F8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F9&nbsp;</small></i></b></td><td><small>&nbsp;F9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F10&nbsp;</small></i></b></td><td><small>&nbsp;F10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F11&nbsp;</small></i></b></td><td><small>&nbsp;F11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F12&nbsp;</small></i></b></td><td><small>&nbsp;F12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enter&nbsp;</small></i></b></td><td><small>&nbsp;ENTER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Up&nbsp;</small></i></b></td><td><small>&nbsp;UP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Down&nbsp;</small></i></b></td><td><small>&nbsp;DOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left&nbsp;</small></i></b></td><td><small>&nbsp;LEFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Escape&nbsp;</small></i></b></td><td><small>&nbsp;ESC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Backspace&nbsp;</small></i></b></td><td><small>&nbsp;BACKSPACE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Space&nbsp;</small></i></b></td><td><small>&nbsp;SPACE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return&nbsp;</small></i></b></td><td><small>&nbsp;RETURN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;CLR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Field Exit&nbsp;</small></i></b></td><td><small>&nbsp;FIELD_EXIT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alt&nbsp;</small></i></b></td><td><small>&nbsp;ALT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;CTRL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;SHIFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;BLUE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;ORANGE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Green Dot&nbsp;</small></i></b></td><td><small>&nbsp;GREEN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Red Dot&nbsp;</small></i></b></td><td><small>&nbsp;RED&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Up&nbsp;</small></i></b></td><td><small>&nbsp;VOLUMEUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Down&nbsp;</small></i></b></td><td><small>&nbsp;VOLUMEDOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;SCAN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grip Trigger&nbsp;</small></i></b></td><td><small>&nbsp;GRIP_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grip Trigger 2&nbsp;</small></i></b></td><td><small>&nbsp;GRIP_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L1&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER_1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L2&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R1&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER_1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R2&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER_2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Trigger&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Trigger&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Center Trigger&nbsp;</small></i></b></td><td><small>&nbsp;CENTER_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gun Trigger&nbsp;</small></i></b></td><td><small>&nbsp;GUN_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Headset Button&nbsp;</small></i></b></td><td><small>&nbsp;HEADSET_HOOK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Back&nbsp;</small></i></b></td><td><small>&nbsp;BACK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Home&nbsp;</small></i></b></td><td><small>&nbsp;HOME&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Menu&nbsp;</small></i></b></td><td><small>&nbsp;MENU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Recent&nbsp;</small></i></b></td><td><small>&nbsp;RECENT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search&nbsp;</small></i></b></td><td><small>&nbsp;SEARCH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Display Backlight&nbsp;</small></i></b></td><td><small>&nbsp;LAMP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Power&nbsp;</small></i></b></td><td><small>&nbsp;POWER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P1 Button&nbsp;</small></i></b></td><td><small>&nbsp;P1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P2 Button&nbsp;</small></i></b></td><td><small>&nbsp;P2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P3 Button&nbsp;</small></i></b></td><td><small>&nbsp;P3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P4 Button&nbsp;</small></i></b></td><td><small>&nbsp;P4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Rear Button&nbsp;</small></i></b></td><td><small>&nbsp;REAR_BUTTON&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left External Trigger&nbsp;</small></i></b></td><td><small>&nbsp;LEFT_EXTERNAL_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right External Trigger&nbsp;</small></i></b></td><td><small>&nbsp;RIGHT_EXTERNAL_TRIGGER&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch NAV_PAD&nbsp;</small></i></b></td><td><small>&nbsp;NAV_PAD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 1&nbsp;</small></i></b></td><td><small>&nbsp;M1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 2&nbsp;</small></i></b></td><td><small>&nbsp;M2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 3&nbsp;</small></i></b></td><td><small>&nbsp;M3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 4&nbsp;</small></i></b></td><td><small>&nbsp;M4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 5&nbsp;</small></i></b></td><td><small>&nbsp;M5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macro 6&nbsp;</small></i></b></td><td><small>&nbsp;M6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;BRIGHTNESSUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;BRIGHTNESSDOWN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;KEYBOARD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHTUP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard Backlight Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;KEYLIGHTDOWN&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6353,14 +6364,14 @@ Enter a value that uniquely identifies a physical key on the physical keyboard o
 Use this *Sub-array* to specify the set of behaviors to be performed for one or more keyboard states. for a specified physical key on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapActionAddMappingBehaviors 
+- Key = keymapActionAddMappingBehaviors
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6375,14 +6386,14 @@ Use this *Sub-array* to specify the set of behaviors to be performed for one or 
 Use this *Sub-group* to specify the behavior when a specified key is pressed in a specified state on the physical keyboard of a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehavior 
+- Key = keymapBehavior
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6415,16 +6426,16 @@ Note that due to variations in keyboard size and layout, not all keyboard states
 - If the value ***Control*** is selected, the Control Mapping table will be selected. The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTableName 
+- Key = keymapBehaviorTableName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Base&nbsp;</small></i></b></td><td><small>&nbsp;Base&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;Blue&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;Orange&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grey&nbsp;</small></i></b></td><td><small>&nbsp;Grey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;Shift&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;Control&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Base&nbsp;</small></i></b></td><td><small>&nbsp;Base&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;Blue&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;Orange&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grey&nbsp;</small></i></b></td><td><small>&nbsp;Grey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;Shift&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;Control&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6458,16 +6469,16 @@ Sending an Android Intent provides a very flexible way to specify the behavior t
 - If the value ***Reset To Default*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults. This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorType 
+- Key = keymapBehaviorType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Send Key Code&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Send Trigger&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Launch Application&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Send Intent&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Suppress Key&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset To Default&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Send Key Code&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Send Trigger&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Launch Application&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Send Intent&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Suppress Key&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset To Default&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6482,16 +6493,16 @@ Sending an Android Intent provides a very flexible way to specify the behavior t
 Select the key code that will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendKeyCode 
+- Key = keymapBehaviorTypeSendKeyCode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;0&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;+ (Plus)&nbsp;</small></i></b></td><td><small>&nbsp;81&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;- (Minus)&nbsp;</small></i></b></td><td><small>&nbsp;69&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;= (Equals)&nbsp;</small></i></b></td><td><small>&nbsp;70&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;( (Left Bracket)&nbsp;</small></i></b></td><td><small>&nbsp;71&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;) (Right Bracket)&nbsp;</small></i></b></td><td><small>&nbsp;72&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;` (Grave)&nbsp;</small></i></b></td><td><small>&nbsp;68&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;/ (Slash)&nbsp;</small></i></b></td><td><small>&nbsp;76&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;\\\\ (Backslash)&nbsp;</small></i></b></td><td><small>&nbsp;73&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;; (Semicolon)&nbsp;</small></i></b></td><td><small>&nbsp;74&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;' (Apostrophe)&nbsp;</small></i></b></td><td><small>&nbsp;75&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;, (Comma)&nbsp;</small></i></b></td><td><small>&nbsp;55&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;. (Period)&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;* (Star)&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;# (Pound)&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;@ (At)&nbsp;</small></i></b></td><td><small>&nbsp;77&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;A&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;B&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;C&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;D&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;E&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;G&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;H&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;I&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;J&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;K&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;L&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;M&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;N&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;O&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Q&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;R&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;S&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;T&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U&nbsp;</small></i></b></td><td><small>&nbsp;49&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;V&nbsp;</small></i></b></td><td><small>&nbsp;50&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;W&nbsp;</small></i></b></td><td><small>&nbsp;51&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;X&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Y&nbsp;</small></i></b></td><td><small>&nbsp;53&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Z&nbsp;</small></i></b></td><td><small>&nbsp;54&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enter&nbsp;</small></i></b></td><td><small>&nbsp;66&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Tab&nbsp;</small></i></b></td><td><small>&nbsp;61&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Space&nbsp;</small></i></b></td><td><small>&nbsp;62&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Escape&nbsp;</small></i></b></td><td><small>&nbsp;111&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete&nbsp;</small></i></b></td><td><small>&nbsp;67&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F1&nbsp;</small></i></b></td><td><small>&nbsp;131&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F2&nbsp;</small></i></b></td><td><small>&nbsp;132&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F3&nbsp;</small></i></b></td><td><small>&nbsp;133&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F4&nbsp;</small></i></b></td><td><small>&nbsp;134&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F5&nbsp;</small></i></b></td><td><small>&nbsp;135&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F6&nbsp;</small></i></b></td><td><small>&nbsp;136&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F7&nbsp;</small></i></b></td><td><small>&nbsp;137&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F8&nbsp;</small></i></b></td><td><small>&nbsp;138&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F9&nbsp;</small></i></b></td><td><small>&nbsp;139&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F10&nbsp;</small></i></b></td><td><small>&nbsp;140&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F11&nbsp;</small></i></b></td><td><small>&nbsp;141&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F12&nbsp;</small></i></b></td><td><small>&nbsp;142&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 0&nbsp;</small></i></b></td><td><small>&nbsp;144&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 1&nbsp;</small></i></b></td><td><small>&nbsp;145&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 2&nbsp;</small></i></b></td><td><small>&nbsp;146&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 3&nbsp;</small></i></b></td><td><small>&nbsp;147&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 4&nbsp;</small></i></b></td><td><small>&nbsp;148&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 5&nbsp;</small></i></b></td><td><small>&nbsp;149&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 6&nbsp;</small></i></b></td><td><small>&nbsp;150&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 7&nbsp;</small></i></b></td><td><small>&nbsp;151&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 8&nbsp;</small></i></b></td><td><small>&nbsp;152&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 9&nbsp;</small></i></b></td><td><small>&nbsp;153&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD / (NUMPAD Divide)&nbsp;</small></i></b></td><td><small>&nbsp;154&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD * (NUMPAD Multiply)&nbsp;</small></i></b></td><td><small>&nbsp;155&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD - (NUMPAD Subtract)&nbsp;</small></i></b></td><td><small>&nbsp;156&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD + (NUMPAD Add)&nbsp;</small></i></b></td><td><small>&nbsp;157&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD . (NUMPAD Period)&nbsp;</small></i></b></td><td><small>&nbsp;158&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD , (NUMPAD Comma)&nbsp;</small></i></b></td><td><small>&nbsp;159&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD Enter&nbsp;</small></i></b></td><td><small>&nbsp;160&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD = (NUMPAD Equals)&nbsp;</small></i></b></td><td><small>&nbsp;161&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD { (NUMPAD Left Parenthesis)&nbsp;</small></i></b></td><td><small>&nbsp;162&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD } (NUMPAD Right Parenthesis)&nbsp;</small></i></b></td><td><small>&nbsp;163&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Up&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Down&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Left&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Right&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Center&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Move Home&nbsp;</small></i></b></td><td><small>&nbsp;122&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Move End&nbsp;</small></i></b></td><td><small>&nbsp;123&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Up&nbsp;</small></i></b></td><td><small>&nbsp;92&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Down&nbsp;</small></i></b></td><td><small>&nbsp;93&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Insert&nbsp;</small></i></b></td><td><small>&nbsp;124&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Forward Delete&nbsp;</small></i></b></td><td><small>&nbsp;112&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lamp&nbsp;</small></i></b></td><td><small>&nbsp;10024&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do Nothing&nbsp;</small></i></b></td><td><small>&nbsp;10026&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;10027&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;10028&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grey&nbsp;</small></i></b></td><td><small>&nbsp;10029&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Diamond&nbsp;</small></i></b></td><td><small>&nbsp;10039&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alt&nbsp;</small></i></b></td><td><small>&nbsp;10030&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;10031&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;10032&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;10034&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch Calibrate&nbsp;</small></i></b></td><td><small>&nbsp;10035&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;10036&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search Key&nbsp;</small></i></b></td><td><small>&nbsp;10037&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;10038&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyLight&nbsp;</small></i></b></td><td><small>&nbsp;10025&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keylight Up&nbsp;</small></i></b></td><td><small>&nbsp;10040&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keylight Down&nbsp;</small></i></b></td><td><small>&nbsp;10041&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Shift&nbsp;</small></i></b></td><td><small>&nbsp;59&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Shift&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Alt&nbsp;</small></i></b></td><td><small>&nbsp;57&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Alt&nbsp;</small></i></b></td><td><small>&nbsp;58&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Control&nbsp;</small></i></b></td><td><small>&nbsp;113&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Control&nbsp;</small></i></b></td><td><small>&nbsp;114&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Meta Left&nbsp;</small></i></b></td><td><small>&nbsp;117&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Meta Right&nbsp;</small></i></b></td><td><small>&nbsp;118&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Caps Lock&nbsp;</small></i></b></td><td><small>&nbsp;115&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Num Lock&nbsp;</small></i></b></td><td><small>&nbsp;143&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scroll Lock&nbsp;</small></i></b></td><td><small>&nbsp;116&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SysRq&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Break&nbsp;</small></i></b></td><td><small>&nbsp;121&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Function&nbsp;</small></i></b></td><td><small>&nbsp;119&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Back&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Forward&nbsp;</small></i></b></td><td><small>&nbsp;125&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Home&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Menu&nbsp;</small></i></b></td><td><small>&nbsp;82&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Settings&nbsp;</small></i></b></td><td><small>&nbsp;176&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Application Switch&nbsp;</small></i></b></td><td><small>&nbsp;187&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calculator&nbsp;</small></i></b></td><td><small>&nbsp;210&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Explorer&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Envelope&nbsp;</small></i></b></td><td><small>&nbsp;65&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bookmark&nbsp;</small></i></b></td><td><small>&nbsp;174&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Music&nbsp;</small></i></b></td><td><small>&nbsp;209&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Call&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;End Call&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Microphone Mute&nbsp;</small></i></b></td><td><small>&nbsp;91&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Camera&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search&nbsp;</small></i></b></td><td><small>&nbsp;84&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Contacts&nbsp;</small></i></b></td><td><small>&nbsp;207&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calendar&nbsp;</small></i></b></td><td><small>&nbsp;208&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Up&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Down&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Mute&nbsp;</small></i></b></td><td><small>&nbsp;164&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;221&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;220&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Power&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sleep&nbsp;</small></i></b></td><td><small>&nbsp;223&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wakeup&nbsp;</small></i></b></td><td><small>&nbsp;224&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Headset&nbsp;</small></i></b></td><td><small>&nbsp;79&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Push-to-talk&nbsp;</small></i></b></td><td><small>&nbsp;228&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Camera Focus&nbsp;</small></i></b></td><td><small>&nbsp;80&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Play/Pause&nbsp;</small></i></b></td><td><small>&nbsp;85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Stop&nbsp;</small></i></b></td><td><small>&nbsp;86&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Next&nbsp;</small></i></b></td><td><small>&nbsp;87&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Previous&nbsp;</small></i></b></td><td><small>&nbsp;88&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Rewind&nbsp;</small></i></b></td><td><small>&nbsp;89&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Fast-Forward&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Play&nbsp;</small></i></b></td><td><small>&nbsp;126&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Pause&nbsp;</small></i></b></td><td><small>&nbsp;127&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Close&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Eject&nbsp;</small></i></b></td><td><small>&nbsp;129&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Record&nbsp;</small></i></b></td><td><small>&nbsp;130&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L1&nbsp;</small></i></b></td><td><small>&nbsp;102&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R1&nbsp;</small></i></b></td><td><small>&nbsp;103&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L2&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R2&nbsp;</small></i></b></td><td><small>&nbsp;105&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button A&nbsp;</small></i></b></td><td><small>&nbsp;96&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button B&nbsp;</small></i></b></td><td><small>&nbsp;97&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button C&nbsp;</small></i></b></td><td><small>&nbsp;98&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button X&nbsp;</small></i></b></td><td><small>&nbsp;99&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button Y&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button Z&nbsp;</small></i></b></td><td><small>&nbsp;101&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Thumb Button&nbsp;</small></i></b></td><td><small>&nbsp;106&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Thumb Button&nbsp;</small></i></b></td><td><small>&nbsp;107&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Start Button&nbsp;</small></i></b></td><td><small>&nbsp;108&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Select Button&nbsp;</small></i></b></td><td><small>&nbsp;109&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mode Button&nbsp;</small></i></b></td><td><small>&nbsp;110&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 1&nbsp;</small></i></b></td><td><small>&nbsp;188&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 2&nbsp;</small></i></b></td><td><small>&nbsp;189&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 3&nbsp;</small></i></b></td><td><small>&nbsp;190&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 4&nbsp;</small></i></b></td><td><small>&nbsp;191&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 5&nbsp;</small></i></b></td><td><small>&nbsp;192&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 6&nbsp;</small></i></b></td><td><small>&nbsp;193&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 7&nbsp;</small></i></b></td><td><small>&nbsp;194&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 8&nbsp;</small></i></b></td><td><small>&nbsp;195&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 9&nbsp;</small></i></b></td><td><small>&nbsp;196&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 10&nbsp;</small></i></b></td><td><small>&nbsp;197&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 11&nbsp;</small></i></b></td><td><small>&nbsp;198&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 12&nbsp;</small></i></b></td><td><small>&nbsp;199&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 13&nbsp;</small></i></b></td><td><small>&nbsp;200&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 14&nbsp;</small></i></b></td><td><small>&nbsp;201&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 15&nbsp;</small></i></b></td><td><small>&nbsp;202&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 16&nbsp;</small></i></b></td><td><small>&nbsp;203&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Zenkaku/Hankaku&nbsp;</small></i></b></td><td><small>&nbsp;211&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Eisu&nbsp;</small></i></b></td><td><small>&nbsp;212&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Muhenkan&nbsp;</small></i></b></td><td><small>&nbsp;213&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Henkan&nbsp;</small></i></b></td><td><small>&nbsp;214&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Katakana/Hiragana&nbsp;</small></i></b></td><td><small>&nbsp;215&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ro&nbsp;</small></i></b></td><td><small>&nbsp;217&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Yen&nbsp;</small></i></b></td><td><small>&nbsp;216&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kana&nbsp;</small></i></b></td><td><small>&nbsp;218&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;10034&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;0&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;+ (Plus)&nbsp;</small></i></b></td><td><small>&nbsp;81&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;- (Minus)&nbsp;</small></i></b></td><td><small>&nbsp;69&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;= (Equals)&nbsp;</small></i></b></td><td><small>&nbsp;70&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;( (Left Bracket)&nbsp;</small></i></b></td><td><small>&nbsp;71&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;) (Right Bracket)&nbsp;</small></i></b></td><td><small>&nbsp;72&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;` (Grave)&nbsp;</small></i></b></td><td><small>&nbsp;68&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;/ (Slash)&nbsp;</small></i></b></td><td><small>&nbsp;76&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;\\\\ (Backslash)&nbsp;</small></i></b></td><td><small>&nbsp;73&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;; (Semicolon)&nbsp;</small></i></b></td><td><small>&nbsp;74&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;' (Apostrophe)&nbsp;</small></i></b></td><td><small>&nbsp;75&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;, (Comma)&nbsp;</small></i></b></td><td><small>&nbsp;55&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;. (Period)&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;* (Star)&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;# (Pound)&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;@ (At)&nbsp;</small></i></b></td><td><small>&nbsp;77&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;A&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;B&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;C&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;D&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;E&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;G&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;H&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;I&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;J&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;K&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;L&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;M&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;N&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;O&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;P&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Q&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;R&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;S&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;T&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U&nbsp;</small></i></b></td><td><small>&nbsp;49&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;V&nbsp;</small></i></b></td><td><small>&nbsp;50&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;W&nbsp;</small></i></b></td><td><small>&nbsp;51&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;X&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Y&nbsp;</small></i></b></td><td><small>&nbsp;53&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Z&nbsp;</small></i></b></td><td><small>&nbsp;54&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enter&nbsp;</small></i></b></td><td><small>&nbsp;66&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Tab&nbsp;</small></i></b></td><td><small>&nbsp;61&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Space&nbsp;</small></i></b></td><td><small>&nbsp;62&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Escape&nbsp;</small></i></b></td><td><small>&nbsp;111&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete&nbsp;</small></i></b></td><td><small>&nbsp;67&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F1&nbsp;</small></i></b></td><td><small>&nbsp;131&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F2&nbsp;</small></i></b></td><td><small>&nbsp;132&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F3&nbsp;</small></i></b></td><td><small>&nbsp;133&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F4&nbsp;</small></i></b></td><td><small>&nbsp;134&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F5&nbsp;</small></i></b></td><td><small>&nbsp;135&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F6&nbsp;</small></i></b></td><td><small>&nbsp;136&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F7&nbsp;</small></i></b></td><td><small>&nbsp;137&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F8&nbsp;</small></i></b></td><td><small>&nbsp;138&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F9&nbsp;</small></i></b></td><td><small>&nbsp;139&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F10&nbsp;</small></i></b></td><td><small>&nbsp;140&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F11&nbsp;</small></i></b></td><td><small>&nbsp;141&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;F12&nbsp;</small></i></b></td><td><small>&nbsp;142&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 0&nbsp;</small></i></b></td><td><small>&nbsp;144&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 1&nbsp;</small></i></b></td><td><small>&nbsp;145&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 2&nbsp;</small></i></b></td><td><small>&nbsp;146&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 3&nbsp;</small></i></b></td><td><small>&nbsp;147&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 4&nbsp;</small></i></b></td><td><small>&nbsp;148&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 5&nbsp;</small></i></b></td><td><small>&nbsp;149&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 6&nbsp;</small></i></b></td><td><small>&nbsp;150&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 7&nbsp;</small></i></b></td><td><small>&nbsp;151&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 8&nbsp;</small></i></b></td><td><small>&nbsp;152&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD 9&nbsp;</small></i></b></td><td><small>&nbsp;153&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD / (NUMPAD Divide)&nbsp;</small></i></b></td><td><small>&nbsp;154&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD * (NUMPAD Multiply)&nbsp;</small></i></b></td><td><small>&nbsp;155&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD - (NUMPAD Subtract)&nbsp;</small></i></b></td><td><small>&nbsp;156&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD + (NUMPAD Add)&nbsp;</small></i></b></td><td><small>&nbsp;157&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD . (NUMPAD Period)&nbsp;</small></i></b></td><td><small>&nbsp;158&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD , (NUMPAD Comma)&nbsp;</small></i></b></td><td><small>&nbsp;159&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD Enter&nbsp;</small></i></b></td><td><small>&nbsp;160&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD = (NUMPAD Equals)&nbsp;</small></i></b></td><td><small>&nbsp;161&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD { (NUMPAD Left Parenthesis)&nbsp;</small></i></b></td><td><small>&nbsp;162&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NUMPAD } (NUMPAD Right Parenthesis)&nbsp;</small></i></b></td><td><small>&nbsp;163&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Up&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Down&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Left&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Right&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DPAD Center&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Move Home&nbsp;</small></i></b></td><td><small>&nbsp;122&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Move End&nbsp;</small></i></b></td><td><small>&nbsp;123&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Up&nbsp;</small></i></b></td><td><small>&nbsp;92&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Down&nbsp;</small></i></b></td><td><small>&nbsp;93&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Insert&nbsp;</small></i></b></td><td><small>&nbsp;124&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Forward Delete&nbsp;</small></i></b></td><td><small>&nbsp;112&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lamp&nbsp;</small></i></b></td><td><small>&nbsp;10024&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Do Nothing&nbsp;</small></i></b></td><td><small>&nbsp;10026&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Blue&nbsp;</small></i></b></td><td><small>&nbsp;10027&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Orange&nbsp;</small></i></b></td><td><small>&nbsp;10028&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Grey&nbsp;</small></i></b></td><td><small>&nbsp;10029&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Diamond&nbsp;</small></i></b></td><td><small>&nbsp;10039&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alt&nbsp;</small></i></b></td><td><small>&nbsp;10030&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Control&nbsp;</small></i></b></td><td><small>&nbsp;10031&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Shift&nbsp;</small></i></b></td><td><small>&nbsp;10032&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;10034&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch Calibrate&nbsp;</small></i></b></td><td><small>&nbsp;10035&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;10036&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search Key&nbsp;</small></i></b></td><td><small>&nbsp;10037&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;10038&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyLight&nbsp;</small></i></b></td><td><small>&nbsp;10025&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keylight Up&nbsp;</small></i></b></td><td><small>&nbsp;10040&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keylight Down&nbsp;</small></i></b></td><td><small>&nbsp;10041&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Shift&nbsp;</small></i></b></td><td><small>&nbsp;59&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Shift&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Alt&nbsp;</small></i></b></td><td><small>&nbsp;57&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Alt&nbsp;</small></i></b></td><td><small>&nbsp;58&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Control&nbsp;</small></i></b></td><td><small>&nbsp;113&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Control&nbsp;</small></i></b></td><td><small>&nbsp;114&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Meta Left&nbsp;</small></i></b></td><td><small>&nbsp;117&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Meta Right&nbsp;</small></i></b></td><td><small>&nbsp;118&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Caps Lock&nbsp;</small></i></b></td><td><small>&nbsp;115&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Num Lock&nbsp;</small></i></b></td><td><small>&nbsp;143&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scroll Lock&nbsp;</small></i></b></td><td><small>&nbsp;116&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SysRq&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Break&nbsp;</small></i></b></td><td><small>&nbsp;121&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Function&nbsp;</small></i></b></td><td><small>&nbsp;119&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Back&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Forward&nbsp;</small></i></b></td><td><small>&nbsp;125&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Home&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Menu&nbsp;</small></i></b></td><td><small>&nbsp;82&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Settings&nbsp;</small></i></b></td><td><small>&nbsp;176&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Application Switch&nbsp;</small></i></b></td><td><small>&nbsp;187&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calculator&nbsp;</small></i></b></td><td><small>&nbsp;210&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Explorer&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Envelope&nbsp;</small></i></b></td><td><small>&nbsp;65&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bookmark&nbsp;</small></i></b></td><td><small>&nbsp;174&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Music&nbsp;</small></i></b></td><td><small>&nbsp;209&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Call&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;End Call&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Microphone Mute&nbsp;</small></i></b></td><td><small>&nbsp;91&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Camera&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Search&nbsp;</small></i></b></td><td><small>&nbsp;84&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Contacts&nbsp;</small></i></b></td><td><small>&nbsp;207&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Calendar&nbsp;</small></i></b></td><td><small>&nbsp;208&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Up&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Down&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Volume Mute&nbsp;</small></i></b></td><td><small>&nbsp;164&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Up&nbsp;</small></i></b></td><td><small>&nbsp;221&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brightness Down&nbsp;</small></i></b></td><td><small>&nbsp;220&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Power&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sleep&nbsp;</small></i></b></td><td><small>&nbsp;223&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wakeup&nbsp;</small></i></b></td><td><small>&nbsp;224&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Headset&nbsp;</small></i></b></td><td><small>&nbsp;79&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Push-to-talk&nbsp;</small></i></b></td><td><small>&nbsp;228&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Camera Focus&nbsp;</small></i></b></td><td><small>&nbsp;80&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Play/Pause&nbsp;</small></i></b></td><td><small>&nbsp;85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Stop&nbsp;</small></i></b></td><td><small>&nbsp;86&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Next&nbsp;</small></i></b></td><td><small>&nbsp;87&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Previous&nbsp;</small></i></b></td><td><small>&nbsp;88&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Rewind&nbsp;</small></i></b></td><td><small>&nbsp;89&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Fast-Forward&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Play&nbsp;</small></i></b></td><td><small>&nbsp;126&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Pause&nbsp;</small></i></b></td><td><small>&nbsp;127&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Close&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Eject&nbsp;</small></i></b></td><td><small>&nbsp;129&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Media Record&nbsp;</small></i></b></td><td><small>&nbsp;130&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L1&nbsp;</small></i></b></td><td><small>&nbsp;102&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R1&nbsp;</small></i></b></td><td><small>&nbsp;103&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button L2&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button R2&nbsp;</small></i></b></td><td><small>&nbsp;105&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button A&nbsp;</small></i></b></td><td><small>&nbsp;96&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button B&nbsp;</small></i></b></td><td><small>&nbsp;97&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button C&nbsp;</small></i></b></td><td><small>&nbsp;98&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button X&nbsp;</small></i></b></td><td><small>&nbsp;99&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button Y&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Button Z&nbsp;</small></i></b></td><td><small>&nbsp;101&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Left Thumb Button&nbsp;</small></i></b></td><td><small>&nbsp;106&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Right Thumb Button&nbsp;</small></i></b></td><td><small>&nbsp;107&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Start Button&nbsp;</small></i></b></td><td><small>&nbsp;108&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Select Button&nbsp;</small></i></b></td><td><small>&nbsp;109&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mode Button&nbsp;</small></i></b></td><td><small>&nbsp;110&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 1&nbsp;</small></i></b></td><td><small>&nbsp;188&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 2&nbsp;</small></i></b></td><td><small>&nbsp;189&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 3&nbsp;</small></i></b></td><td><small>&nbsp;190&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 4&nbsp;</small></i></b></td><td><small>&nbsp;191&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 5&nbsp;</small></i></b></td><td><small>&nbsp;192&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 6&nbsp;</small></i></b></td><td><small>&nbsp;193&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 7&nbsp;</small></i></b></td><td><small>&nbsp;194&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 8&nbsp;</small></i></b></td><td><small>&nbsp;195&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 9&nbsp;</small></i></b></td><td><small>&nbsp;196&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 10&nbsp;</small></i></b></td><td><small>&nbsp;197&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 11&nbsp;</small></i></b></td><td><small>&nbsp;198&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 12&nbsp;</small></i></b></td><td><small>&nbsp;199&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 13&nbsp;</small></i></b></td><td><small>&nbsp;200&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 14&nbsp;</small></i></b></td><td><small>&nbsp;201&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 15&nbsp;</small></i></b></td><td><small>&nbsp;202&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Gamepad Button 16&nbsp;</small></i></b></td><td><small>&nbsp;203&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Zenkaku/Hankaku&nbsp;</small></i></b></td><td><small>&nbsp;211&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Eisu&nbsp;</small></i></b></td><td><small>&nbsp;212&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Muhenkan&nbsp;</small></i></b></td><td><small>&nbsp;213&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Henkan&nbsp;</small></i></b></td><td><small>&nbsp;214&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Katakana/Hiragana&nbsp;</small></i></b></td><td><small>&nbsp;215&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ro&nbsp;</small></i></b></td><td><small>&nbsp;217&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Yen&nbsp;</small></i></b></td><td><small>&nbsp;216&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kana&nbsp;</small></i></b></td><td><small>&nbsp;218&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;10034&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6509,16 +6520,16 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - If no value is specified, when the key code is sent, the Alt keyboard state will not be changed. This will cause the key to be interpreted as an Alt key or not based on the existing state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendKeyCodeAlt 
+- Key = keymapBehaviorTypeSendKeyCodeAlt
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6536,16 +6547,16 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - If no value is specified, when the key code is sent, the Ctrl keyboard state will not be changed. This will cause the key to be interpreted as an Ctrl key or not based on the existing state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendKeyCodeCtrl 
+- Key = keymapBehaviorTypeSendKeyCodeCtrl
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6563,16 +6574,16 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - If no value is specified, when the key code is sent, the Fn keyboard state will not be changed. This will cause the key to be interpreted as an Fn key or not based on the existing state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendKeyCodeFn 
+- Key = keymapBehaviorTypeSendKeyCodeFn
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6590,16 +6601,16 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - If no value is specified, when the key code is sent, the Shift keyboard state will not be changed. This will cause the key to be interpreted as an Shift key or not based on the existing state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendKeyCodeShift 
+- Key = keymapBehaviorTypeSendKeyCodeShift
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6617,16 +6628,16 @@ Select the trigger signal that will be sent as the behavior for a specified key 
 Eight trigger signals are defined, but not all may be supported on all devices. All devices generally support at least ***Trigger 1*** and generally default to using this trigger signal to activate the barcode scanner. Some devices may support additional trigger signals and some devices might be reconfigured to use ***Trigger 1*** for some purpose other than barcode scanning. To determine which trigger signals are supported on a given device, consult the documentation for that specific device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendTrigger 
+- Key = keymapBehaviorTypeSendTrigger
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Trigger 1&nbsp;</small></i></b></td><td><small>&nbsp;10016&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 2&nbsp;</small></i></b></td><td><small>&nbsp;10017&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 3&nbsp;</small></i></b></td><td><small>&nbsp;10018&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 4&nbsp;</small></i></b></td><td><small>&nbsp;10019&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 5&nbsp;</small></i></b></td><td><small>&nbsp;10020&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 6&nbsp;</small></i></b></td><td><small>&nbsp;10021&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 7&nbsp;</small></i></b></td><td><small>&nbsp;10022&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 8&nbsp;</small></i></b></td><td><small>&nbsp;10023&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Trigger 1&nbsp;</small></i></b></td><td><small>&nbsp;10016&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 2&nbsp;</small></i></b></td><td><small>&nbsp;10017&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 3&nbsp;</small></i></b></td><td><small>&nbsp;10018&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 4&nbsp;</small></i></b></td><td><small>&nbsp;10019&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 5&nbsp;</small></i></b></td><td><small>&nbsp;10020&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 6&nbsp;</small></i></b></td><td><small>&nbsp;10021&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 7&nbsp;</small></i></b></td><td><small>&nbsp;10022&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trigger 8&nbsp;</small></i></b></td><td><small>&nbsp;10023&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6646,16 +6657,16 @@ Select when an intent should be sent as the behavior for a remapped key.
 - If the value ***On Both Key Up and Down*** is selected, the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntent 
+- Key = keymapBehaviorTypeSendIntent
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On Key Down&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On Key Up&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On Both Key Up and Down&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;On Key Down&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On Key Up&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On Both Key Up and Down&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6675,16 +6686,16 @@ Depending on the application or service to be invoked, there is likely only one 
 - If the value ***Broadcast*** is selected, the Android Intent will be sent using the sendBroadcast() method. This method is suitable for invoking Services, which are components that implement background operations. If the behavior to be invoked does not involves interacting with the Device User, this method will most likely be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentType 
+- Key = keymapBehaviorTypeSendIntentType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;StartActivity&nbsp;</small></i></b></td><td><small>&nbsp;StartActivity&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Broadcast&nbsp;</small></i></b></td><td><small>&nbsp;Broadcast&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;StartActivity&nbsp;</small></i></b></td><td><small>&nbsp;StartActivity&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Broadcast&nbsp;</small></i></b></td><td><small>&nbsp;Broadcast&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6704,14 +6715,14 @@ Enter the action value of an Android Intent to be sent to invoke an application 
 An action value is NOT mandatory to specify for an Android Intent. But an action value is commonly used to identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports multiple functions, in which case the action value is commonly used to identify which function to perform when invoking that application or service. You will need to consult the documentation or developer of a given application or service to determine whether an action value is needed and, if so, which value will invoke the desired behavior.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentAction 
+- Key = keymapBehaviorTypeSendIntentAction
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6731,14 +6742,14 @@ Enter the category value of an Android Intent to be sent to invoke an applicatio
 A category value is NOT mandatory to specify for an Android Intent. But a category value is commonly used to help identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports many functions, in which case many action values may be used to identify those functions and it may be useful to categorize those functions. In some cases, the same action value might be supported in more than one category. You will need to consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value will invoke the desired behavior.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentCategory 
+- Key = keymapBehaviorTypeSendIntentCategory
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6758,14 +6769,14 @@ It is not mandatory to specify the *Android Package Name* when sending an Androi
 - When no *Android Package Name* is specified, the intent becomes an Implicit Intent and the intent may be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility and is often used when the intent being sent requires no sensitive data and when it may be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentPackageName 
+- Key = keymapBehaviorTypeSendIntentPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6780,14 +6791,14 @@ It is not mandatory to specify the *Android Package Name* when sending an Androi
 Enter the *Android Class* that identifies an *Android Component* within an application or service to invoke when the value ***Send Intent*** is selected for **Type** and when **Package Name** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentClass 
+- Key = keymapBehaviorTypeSendIntentClass
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6807,14 +6818,14 @@ Enter a Uniform Resource Identifier (URI) that identifies some data, in the form
 Whether the intended recipient of the intent expects a URI to be specified as part of the intent or not is up to that recipient and/or the definition of the intent that recipient is designed to consume.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentDataUri 
+- Key = keymapBehaviorTypeSendIntentDataUri
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6832,14 +6843,14 @@ Enter intent flags to be set for the intent to be sent.
 Intent flags control how the intent is handled by Android. Some intent flags are specific to the type of component that will be invoked by the Intent (e.g. activity vs service). Whether certain intent flags are needed to produce the desired result when the intended recipient of the intent is invoked is up to that recipient and/or the definition of the intent that recipient is designed to consume. Intent flags MUST be specified as a hexadecimal value with the appropriate bits set for any flag or flags desired. Consult the Android documentation to translate intent flag names, when needed, into their appropriate hexadecimal values.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentFlags 
+- Key = keymapBehaviorTypeSendIntentFlags
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6859,14 +6870,14 @@ Enter a Multipurpose Internet Mail Extensions (MIME) type to use when processing
 Normally the type would be inferred from the data itself. Setting a MIME type explicitly, disables automatic type detection and and forces handling according to the specified type.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentMimeType 
+- Key = keymapBehaviorTypeSendIntentMimeType
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6886,14 +6897,14 @@ Enter the name of a single extra named string value to be attached to the intent
 Android allows a collection of extra named values, of various types, to be attached to an intent. Exactly one value whose data type must be string can be specified. When a name is specified, you must also specify **Extra Value** to provide the corresponding value to be attached for the string extra.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentExtraName 
+- Key = keymapBehaviorTypeSendIntentExtraName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6908,14 +6919,14 @@ Android allows a collection of extra named values, of various types, to be attac
 Enter the value of the *String Extra* to be attached to the intent to be sent and whose name is specified via **Extra Name**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeSendIntentExtraValue 
+- Key = keymapBehaviorTypeSendIntentExtraValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6933,14 +6944,14 @@ Enter the *Friendly Name* of an application to be launched when the value ***Lau
 Note that the application *Friendly Name* is NOT the same as *Android Package Name*. The application *Friendly Name* is generally the name by which the application is identified in in-device UI, such as the application Launcher, the application's Title Bar, and the list of application names display in the Recent Application list and the AppInfo section of the Settings UI. To launch an application based on its *Android Package Name*, the value ***Send Intent*** should be selected for **Type** instead.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = keymapBehaviorTypeLaunchApplicationName 
+- Key = keymapBehaviorTypeLaunchApplicationName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6956,14 +6967,14 @@ Note that the application *Friendly Name* is NOT the same as *Android Package Na
 Use this *Group* to perform power-related actions and configure power-related settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerStep 
+- Key = powerStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -6982,16 +6993,16 @@ Select an Action to control the Power to the device.
 - If the value ***Reboot*** is selected, the device will perform an OS Reboot (i.e. simple Reset).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerAction 
+- Key = powerAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Sleep&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reboot&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Sleep&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reboot&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7006,14 +7017,14 @@ Select an Action to control the Power to the device.
 Enter the percentage of remaining battery capacity below which the battery will be deemed ready for decommissioning.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryThresholdPercentage 
+- Key = powerBatteryThresholdPercentage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7028,14 +7039,14 @@ Enter the percentage of remaining battery capacity below which the battery will 
 Enter the amount of battery usage (e.g. charge/discharge cycles, coulombs in/out, etc.) that can occur beefore the battery will be deemed ready for decommissioning.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryThresholdUsage 
+- Key = powerBatteryThresholdUsage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7053,14 +7064,14 @@ Enter the threshold battery level below which the battery is deemed to be critic
 - If a value from ***1*** through ***25*** will cause the critically low threshold will be set to the specified value.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryThresholdCriticalLow 
+- Key = powerBatteryThresholdCriticalLow
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7077,16 +7088,16 @@ Select an Action to control which applications are subject to battery optimizati
 - If the value ***Remove*** is selected, one or more applications will be made subject to battery optimizations and you must also specify **Remove Package Names** to provide the *Android Package Name(s)* of the application(s) to be exempted from battery optimizations.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryOptimizationAction 
+- Key = powerBatteryOptimizationAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add&nbsp;</small></i></b></td><td><small>&nbsp;Add&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove&nbsp;</small></i></b></td><td><small>&nbsp;Remove&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add&nbsp;</small></i></b></td><td><small>&nbsp;Add&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove&nbsp;</small></i></b></td><td><small>&nbsp;Remove&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7102,14 +7113,14 @@ Enter one or more *Android Package Name(s)* that identify application(s) that sh
 - If specified, multiple *Android Package Names* should be separated using commas.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryOptimizationActionAddPackageNames 
+- Key = powerBatteryOptimizationActionAddPackageNames
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7127,14 +7138,14 @@ Enter one or more *Android Package Name(s)* that identify application(s) that sh
 If specified, multiple *Android Package Names* should be separated using commas.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerBatteryOptimizationActionRemovePackageNames 
+- Key = powerBatteryOptimizationActionRemovePackageNames
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7158,16 +7169,16 @@ You must also specify **Port Select** to provide the Port for which Output Power
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerPortAction 
+- Key = powerPortAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn Output Power OFF&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Output Power ON&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn Output Power OFF&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn Output Power ON&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7187,16 +7198,16 @@ Select the Port that will be affected by an Action to control the Output Power o
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerPortSelect 
+- Key = powerPortSelect
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Serial Port 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Serial Port 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;USB Port 2&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Serial Port 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Serial Port 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;USB Port 2&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7215,16 +7226,16 @@ Select whether device power will be automatically controlled.
 - **Auto Power On** to specify whether/how device power will automatically be turned on.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerAutoPowerControl 
+- Key = powerAutoPowerControl
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7243,16 +7254,16 @@ Select whether and how device power will be automatically turned off as part of 
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerAutoPowerOff 
+- Key = powerAutoPowerOff
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;When Ignition is Turned Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;When Ignition is Turned Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7267,14 +7278,14 @@ Select whether and how device power will be automatically turned off as part of 
 Enter the timeout that will be in effect before device power is automatically turned off as part of automatic power control, when the value ***On*** is selected for **Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is selected for **Auto Power Off**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerAutoPowerOffTimeout 
+- Key = powerAutoPowerOffTimeout
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7293,16 +7304,16 @@ Select whether and how device power will be automatically turned on as part of a
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerAutoPowerOn 
+- Key = powerAutoPowerOn
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;When Ignition is Turned On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Never&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;When Ignition is Turned On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7325,16 +7336,16 @@ You must also specify **Heater Select** to identify the Heater to be affected.
 - **Off Threshold** to set the threshold temperature above which the Heater will automatically be turned off.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerHeaterAction 
+- Key = powerHeaterAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable Heater&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable Heater&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set ON/OFF Thresholds&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable Heater&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable Heater&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set ON/OFF Thresholds&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported on Operating System(s): Oreo and Pie.
 
@@ -7361,16 +7372,16 @@ Select the Heater to be affected by a specified Heater Action when **Heater Acti
 - If the value ***Scanner Window*** is selected, the Heater that warms the Scanner Window of the device will be selected.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerHeaterSelect 
+- Key = powerHeaterSelect
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Serial I/O&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;USB I/O&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Battery&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch Panel&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scanner Window&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Serial I/O&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;USB I/O&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Battery&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Touch Panel&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Keyboard&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scanner Window&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported on Operating System(s): Oreo and Pie.
 
@@ -7393,14 +7404,14 @@ Select the temperature above which a specified Heater should automatically turn 
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerHeaterActionOffThreshold 
+- Key = powerHeaterActionOffThreshold
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported on Operating System(s): Oreo and Pie.
 
@@ -7423,14 +7434,14 @@ Select the temperature below which a specified Heater should automatically turn 
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerHeaterActionOnThreshold 
+- Key = powerHeaterActionOnThreshold
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported on Operating System(s): Oreo and Pie.
 
@@ -7455,16 +7466,16 @@ Select whether Doze Mode will be globally used on the device.
 - If the value ***On*** is selected, the device will will enter Doze Mode for various applications based on the normal Android rules for Doze Mode.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = powerDozeModeState 
+- Key = powerDozeModeState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7480,14 +7491,14 @@ Select whether Doze Mode will be globally used on the device.
 Use this *Group* to configure the RFID module in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidStep 
+- Key = rfidStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7508,16 +7519,16 @@ It is critical that the *Country of Operation* be set at least once, since the R
 In most cases, the *Country of Operation* will be set once and never changed, unless the device is physically relocated to a different country.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidCountryOfOperation 
+- Key = rfidCountryOfOperation
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;ALBANIA&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ANDORRA&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ARGENTINA&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRALIA&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BANGLADESH&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BHUTAN&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BOLIVIA&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BOSNIA_HERZENGOVINA&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BRAZIL&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CANADA&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CAMBODIA&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHILE&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINA&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;COLOMBIA&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DOMINICAN_REPUBLIC&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ECUADOR&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EL_SALVADOR&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UNITED_KINGDOM&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GUATEMALA&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GUAM&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HONG_KONG&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDIA&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDONESIA&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN_1W_LBT&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN_250MW&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LAOS_EU&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LAOS_FCC&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACAU&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACEDONIA&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MALAYSIA&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MEXICO&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MONACO&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MOTENEGRO&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NEW_ZEALAND_FCC&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NEW_ZEALAND_EU&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PAKISTAN&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PANAMA&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PARAGUAY&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PERU&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PHILIPPINES&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PUERTO_RICO&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RUSSIA&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SAUDI_ARABIA&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SINGAPORE&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SOUTH_AFRICA&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SOUTH_KOREA&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SRI_LANKA&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TAIWAN&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;THAILAND&nbsp;</small></i></b></td><td><small>&nbsp;49&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TURKEY&nbsp;</small></i></b></td><td><small>&nbsp;50&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UAE&nbsp;</small></i></b></td><td><small>&nbsp;51&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UNITED_STATES&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;URUGUAY&nbsp;</small></i></b></td><td><small>&nbsp;53&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VENEZUELA&nbsp;</small></i></b></td><td><small>&nbsp;54&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VIETNAM&nbsp;</small></i></b></td><td><small>&nbsp;55&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VIRGINIA_ISLAND&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ETSI 302.208 compliant generic&nbsp;</small></i></b></td><td><small>&nbsp;57&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FCC Part-16 compliant generic&nbsp;</small></i></b></td><td><small>&nbsp;58&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ISRAEL&nbsp;</small></i></b></td><td><small>&nbsp;59&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ALGERIA&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ARMENIA&nbsp;</small></i></b></td><td><small>&nbsp;61&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRIA&nbsp;</small></i></b></td><td><small>&nbsp;62&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AZERBAIJAN&nbsp;</small></i></b></td><td><small>&nbsp;63&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BAHRAIN&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BELGIUM&nbsp;</small></i></b></td><td><small>&nbsp;65&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BULGARIA&nbsp;</small></i></b></td><td><small>&nbsp;66&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;COSTA_RICA&nbsp;</small></i></b></td><td><small>&nbsp;67&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CROATIA&nbsp;</small></i></b></td><td><small>&nbsp;68&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CYPRUS&nbsp;</small></i></b></td><td><small>&nbsp;69&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CZECH_REPUBLIC&nbsp;</small></i></b></td><td><small>&nbsp;70&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DENMARK&nbsp;</small></i></b></td><td><small>&nbsp;71&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EGYPT&nbsp;</small></i></b></td><td><small>&nbsp;72&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ESTONIA&nbsp;</small></i></b></td><td><small>&nbsp;73&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FINLAND&nbsp;</small></i></b></td><td><small>&nbsp;74&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRANCE&nbsp;</small></i></b></td><td><small>&nbsp;75&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GEORGIA&nbsp;</small></i></b></td><td><small>&nbsp;76&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMANY&nbsp;</small></i></b></td><td><small>&nbsp;77&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GREECE&nbsp;</small></i></b></td><td><small>&nbsp;78&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HUNGARY&nbsp;</small></i></b></td><td><small>&nbsp;79&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICELAND&nbsp;</small></i></b></td><td><small>&nbsp;80&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;IRELAND&nbsp;</small></i></b></td><td><small>&nbsp;81&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALY&nbsp;</small></i></b></td><td><small>&nbsp;82&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JORDAN&nbsp;</small></i></b></td><td><small>&nbsp;83&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KAZAKHSTAN&nbsp;</small></i></b></td><td><small>&nbsp;84&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KUWAIT&nbsp;</small></i></b></td><td><small>&nbsp;85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LATVIA&nbsp;</small></i></b></td><td><small>&nbsp;86&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LITHUANIA&nbsp;</small></i></b></td><td><small>&nbsp;87&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LUXEMBOURG&nbsp;</small></i></b></td><td><small>&nbsp;88&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MALTA&nbsp;</small></i></b></td><td><small>&nbsp;89&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NETHERLANDS&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NORWAY&nbsp;</small></i></b></td><td><small>&nbsp;91&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OMAN&nbsp;</small></i></b></td><td><small>&nbsp;92&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;POLAND&nbsp;</small></i></b></td><td><small>&nbsp;93&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PORTUGAL&nbsp;</small></i></b></td><td><small>&nbsp;94&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;QATAR&nbsp;</small></i></b></td><td><small>&nbsp;95&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ROMANIA&nbsp;</small></i></b></td><td><small>&nbsp;96&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SERBIA&nbsp;</small></i></b></td><td><small>&nbsp;97&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SLOVAKIA&nbsp;</small></i></b></td><td><small>&nbsp;98&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SLOVENIA&nbsp;</small></i></b></td><td><small>&nbsp;99&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPAIN&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWEDEN&nbsp;</small></i></b></td><td><small>&nbsp;101&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWITZERLAND&nbsp;</small></i></b></td><td><small>&nbsp;102&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TUNISIA&nbsp;</small></i></b></td><td><small>&nbsp;103&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UKRAINE&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;ALBANIA&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ANDORRA&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ARGENTINA&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRALIA&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BANGLADESH&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BHUTAN&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BOLIVIA&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BOSNIA_HERZENGOVINA&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BRAZIL&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CANADA&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CAMBODIA&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHILE&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHINA&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;COLOMBIA&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DOMINICAN_REPUBLIC&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ECUADOR&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EL_SALVADOR&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UNITED_KINGDOM&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GUATEMALA&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GUAM&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HONG_KONG&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDIA&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;INDONESIA&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN_1W_LBT&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JAPAN_250MW&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LAOS_EU&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LAOS_FCC&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACAU&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACEDONIA&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MALAYSIA&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MEXICO&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MONACO&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MOTENEGRO&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NEW_ZEALAND_FCC&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NEW_ZEALAND_EU&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PAKISTAN&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PANAMA&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PARAGUAY&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PERU&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PHILIPPINES&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PUERTO_RICO&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RUSSIA&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SAUDI_ARABIA&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SINGAPORE&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SOUTH_AFRICA&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SOUTH_KOREA&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SRI_LANKA&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TAIWAN&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;THAILAND&nbsp;</small></i></b></td><td><small>&nbsp;49&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TURKEY&nbsp;</small></i></b></td><td><small>&nbsp;50&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UAE&nbsp;</small></i></b></td><td><small>&nbsp;51&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UNITED_STATES&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;URUGUAY&nbsp;</small></i></b></td><td><small>&nbsp;53&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VENEZUELA&nbsp;</small></i></b></td><td><small>&nbsp;54&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VIETNAM&nbsp;</small></i></b></td><td><small>&nbsp;55&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VIRGINIA_ISLAND&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ETSI 302.208 compliant generic&nbsp;</small></i></b></td><td><small>&nbsp;57&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FCC Part-16 compliant generic&nbsp;</small></i></b></td><td><small>&nbsp;58&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ISRAEL&nbsp;</small></i></b></td><td><small>&nbsp;59&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ALGERIA&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ARMENIA&nbsp;</small></i></b></td><td><small>&nbsp;61&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AUSTRIA&nbsp;</small></i></b></td><td><small>&nbsp;62&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AZERBAIJAN&nbsp;</small></i></b></td><td><small>&nbsp;63&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BAHRAIN&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BELGIUM&nbsp;</small></i></b></td><td><small>&nbsp;65&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BULGARIA&nbsp;</small></i></b></td><td><small>&nbsp;66&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;COSTA_RICA&nbsp;</small></i></b></td><td><small>&nbsp;67&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CROATIA&nbsp;</small></i></b></td><td><small>&nbsp;68&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CYPRUS&nbsp;</small></i></b></td><td><small>&nbsp;69&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CZECH_REPUBLIC&nbsp;</small></i></b></td><td><small>&nbsp;70&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DENMARK&nbsp;</small></i></b></td><td><small>&nbsp;71&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EGYPT&nbsp;</small></i></b></td><td><small>&nbsp;72&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ESTONIA&nbsp;</small></i></b></td><td><small>&nbsp;73&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FINLAND&nbsp;</small></i></b></td><td><small>&nbsp;74&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FRANCE&nbsp;</small></i></b></td><td><small>&nbsp;75&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GEORGIA&nbsp;</small></i></b></td><td><small>&nbsp;76&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GERMANY&nbsp;</small></i></b></td><td><small>&nbsp;77&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GREECE&nbsp;</small></i></b></td><td><small>&nbsp;78&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HUNGARY&nbsp;</small></i></b></td><td><small>&nbsp;79&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICELAND&nbsp;</small></i></b></td><td><small>&nbsp;80&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;IRELAND&nbsp;</small></i></b></td><td><small>&nbsp;81&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ITALY&nbsp;</small></i></b></td><td><small>&nbsp;82&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;JORDAN&nbsp;</small></i></b></td><td><small>&nbsp;83&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KAZAKHSTAN&nbsp;</small></i></b></td><td><small>&nbsp;84&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KUWAIT&nbsp;</small></i></b></td><td><small>&nbsp;85&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LATVIA&nbsp;</small></i></b></td><td><small>&nbsp;86&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LITHUANIA&nbsp;</small></i></b></td><td><small>&nbsp;87&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LUXEMBOURG&nbsp;</small></i></b></td><td><small>&nbsp;88&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MALTA&nbsp;</small></i></b></td><td><small>&nbsp;89&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NETHERLANDS&nbsp;</small></i></b></td><td><small>&nbsp;90&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NORWAY&nbsp;</small></i></b></td><td><small>&nbsp;91&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OMAN&nbsp;</small></i></b></td><td><small>&nbsp;92&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;POLAND&nbsp;</small></i></b></td><td><small>&nbsp;93&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PORTUGAL&nbsp;</small></i></b></td><td><small>&nbsp;94&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;QATAR&nbsp;</small></i></b></td><td><small>&nbsp;95&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ROMANIA&nbsp;</small></i></b></td><td><small>&nbsp;96&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SERBIA&nbsp;</small></i></b></td><td><small>&nbsp;97&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SLOVAKIA&nbsp;</small></i></b></td><td><small>&nbsp;98&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SLOVENIA&nbsp;</small></i></b></td><td><small>&nbsp;99&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SPAIN&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWEDEN&nbsp;</small></i></b></td><td><small>&nbsp;101&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SWITZERLAND&nbsp;</small></i></b></td><td><small>&nbsp;102&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TUNISIA&nbsp;</small></i></b></td><td><small>&nbsp;103&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UKRAINE&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7539,14 +7550,14 @@ Enter the *Channel Mask* that determines which of the *Channels* that are allowe
 Consult the product documentation for the device being used to obtain the set of allowable *Channel Numbers*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidCountryOfOperationChannelMask 
+- Key = rfidCountryOfOperationChannelMask
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7561,16 +7572,16 @@ Consult the product documentation for the device being used to obtain the set of
 Select whether *Channel Hopping* will be performed among the *Channels* that are used by the RFID module.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidCountryOfOperationChannelHopping 
+- Key = rfidCountryOfOperationChannelHopping
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7590,16 +7601,16 @@ Select an Action to alter the behavior or configuration of the RFID module.
 - If the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected, the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidAction 
+- Key = rfidAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Update Firmware&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export Settings&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Radio&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Radio to Factory Defaults&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Update Firmware and Reset Radio to Factory Defaults&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Update Firmware&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export Settings&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Radio&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Radio to Factory Defaults&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Update Firmware and Reset Radio to Factory Defaults&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7614,14 +7625,14 @@ Select an Action to alter the behavior or configuration of the RFID module.
 Enter the path and file name of the file containing the firmware update to be applied when the value ***Update Firmware*** or the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidActionUpdateFirmwareFile 
+- Key = rfidActionUpdateFirmwareFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7641,14 +7652,14 @@ The *RFID Power Level* should be specified in tenths of dBm in the range of ***0
 For example, to specify an *RFID Power Level* of ***29.5 dBm***, specify a value of ***295***.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidTransmitPowerLevel 
+- Key = rfidTransmitPowerLevel
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7666,16 +7677,16 @@ Select which RFID tags should be operated upon by the RFID module during a *Quer
 - If the value ***Query applies to tags with SL asserted*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidQuerySelect 
+- Key = rfidQuerySelect
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Query applies to all tags&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Query applies to tags with SL de-asserted&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Query applies to tags with SL asserted&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Query applies to all tags&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Query applies to tags with SL de-asserted&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Query applies to tags with SL asserted&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7696,16 +7707,16 @@ Allowable values are ***SessionS0***, ***SessionS1***, ***SessionS2***, and ***S
 *Sessions* provide options for how to count tags. For more information on the use of *Sessions*, consult the device product documentation.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidQuerySession 
+- Key = rfidQuerySession
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;SessionS0&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;SessionS0&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SessionS3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7723,16 +7734,16 @@ Select how the A and B flags of RFID tags should be handled by the RFID module d
 - If the value ***AB Flip*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in either State A or State B and will Flip the State from A to B or B to A for the session.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = rfidQueryTarget 
+- Key = rfidQueryTarget
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Inventory Target Flag A&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Inventory Target Flag B&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AB Flip&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Inventory Target Flag A&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Inventory Target Flag B&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AB Flip&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7748,14 +7759,14 @@ Select how the A and B flags of RFID tags should be handled by the RFID module d
 Use this *Group* to manage a *Remote Scanner* that is connected to a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerStep 
+- Key = remotescannerStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7773,16 +7784,16 @@ Select an Action to control a *Remote Scanner* that isconnected to a device.
 - If the value ***Unpair Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be unpaired, terminating the pairing between the device and the *Remote Scanner* and preventing its re-connection without first repairing. You must also specify **Unpair Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerAction 
+- Key = remotescannerAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Apply Configuration Package(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Update Scanner Firmware&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disconnect Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unpair Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Apply Configuration Package(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Update Scanner Firmware&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reset Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Page Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disconnect Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unpair Scanner(RS6000 only)&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7797,14 +7808,14 @@ Select an Action to control a *Remote Scanner* that isconnected to a device.
 Enter the *Serial Number* that identifies a *Remote Scanner* to which configuration should be applied when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**. You must also specify **Config File** to provide the path and file name of the configuration file to be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionConfigSerialNumber 
+- Key = remotescannerActionConfigSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7819,14 +7830,14 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to which configurat
 Enter the path and file name of a configuration file, which must exist at the specified location in the device file system, from which configuration should be applied to the specified *Remote Scanner* when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionConfigFile 
+- Key = remotescannerActionConfigFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7841,14 +7852,14 @@ Enter the path and file name of a configuration file, which must exist at the sp
 Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmware update should be performed when the value ***Update Scanner Firmware*** is selected for **Action**. You must also specify **Update File** to provide the path and file name of the firmware file to be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionUpdateSerialNumber 
+- Key = remotescannerActionUpdateSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7863,14 +7874,14 @@ Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmwar
 Enter the path and file name of a firmware file, which must exist at the specified location in the device file system, from which firmware update should be performed to the specified *Remote Scanner* when the value ***Update Scanner Firmware*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionUpdateFile 
+- Key = remotescannerActionUpdateFile
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7885,14 +7896,14 @@ Enter the path and file name of a firmware file, which must exist at the specifi
 Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when the value ***Reset Scanner(RS6000 only)*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionResetSerialNumber 
+- Key = remotescannerActionResetSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7907,14 +7918,14 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when th
 Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when the value ***Page Scanner(RS6000 only)*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionPageSerialNumber 
+- Key = remotescannerActionPageSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7929,14 +7940,14 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when th
 Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected when the value ***Disconnect Scanner(RS6000 only)*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionDisconnectSerialNumber 
+- Key = remotescannerActionDisconnectSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7951,14 +7962,14 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected 
 Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when the value ***Unpair Scanner(RS6000 only)*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = remotescannerActionUnpairSerialNumber 
+- Key = remotescannerActionUnpairSerialNumber
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -7974,11 +7985,11 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when
 Use this *Group* to configure security-related settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityStep 
+- Key = securityStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Action
@@ -7993,16 +8004,16 @@ Select an Action to adjust various security features on a device.
 - If the value ***Wipe SD Card*** is selected, you do not need to specify any additional information.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityAction 
+- Key = securityAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Key&nbsp;</small></i></b></td><td><small>&nbsp;AddKey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove Key&nbsp;</small></i></b></td><td><small>&nbsp;RemoveKey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove All Keys&nbsp;</small></i></b></td><td><small>&nbsp;RemoveAllKeys&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Encrypt SD Card&nbsp;</small></i></b></td><td><small>&nbsp;EncryptSdCard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wipe SD Card&nbsp;</small></i></b></td><td><small>&nbsp;WipeSdCard&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Key&nbsp;</small></i></b></td><td><small>&nbsp;AddKey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove Key&nbsp;</small></i></b></td><td><small>&nbsp;RemoveKey&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove All Keys&nbsp;</small></i></b></td><td><small>&nbsp;RemoveAllKeys&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Encrypt SD Card&nbsp;</small></i></b></td><td><small>&nbsp;EncryptSdCard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wipe SD Card&nbsp;</small></i></b></td><td><small>&nbsp;WipeSdCard&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8022,14 +8033,14 @@ You must also specify **Add Key Value** to provide the value to be added for the
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityActionAddKeyName 
+- Key = securityActionAddKeyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8059,14 +8070,14 @@ A key value must be a string value containing exactly 64 hexadecimal characters 
 The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, best practice would be to randomly generate keys to maximize their effectiveness in protecting data.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityActionAddKeyValue 
+- Key = securityActionAddKeyValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8083,14 +8094,14 @@ Enter the name of a key to be removed when the Action value ***Remove Key*** is 
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityActionRemoveKeyName 
+- Key = securityActionRemoveKeyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8105,14 +8116,14 @@ Enter the name of a key to be removed when the Action value ***Remove Key*** is 
 Enter the name of a key to be used to encrypt the SD Card when the Action value ***Encrypt SD Card*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityEncryptSDCardKeyName 
+- Key = securityEncryptSDCardKeyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8129,16 +8140,16 @@ Select what happens when the Power Key on the device is used to turn the device 
 - If the value ***On*** is selected, turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked immediately when the device is turned off using the Power Key. In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set via **Screen Lock Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityPowerKeyInstantLock 
+- Key = securityPowerKeyInstantLock
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;Off&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;On&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;Off&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;On&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8158,16 +8169,16 @@ Select the type of lock that is used to protect the device from use by unauthori
 - If the value ***Pattern*** is selected, unlocking will require drawing a pattern on the screen using the touch panel and the device can only be unlocked by someone knowing the correct pattern.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityScreenLockType 
+- Key = securityScreenLockType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Swipe&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PIN&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Password&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Pattern&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;None&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Swipe&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PIN&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Password&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Pattern&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8184,16 +8195,16 @@ Select what happens when a device turns off as a result of a timeout.
 - If the device stays off for less than the time specified, the device will NOT be locked and hence no unlock will be required when the device is turned back on, even if a lock was configured using **Screen Lock Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = securityScreenLockTimeout 
+- Key = securityScreenLockTimeout
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Immediately after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;15 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 minute after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;300&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;600&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;1800&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Immediately after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;15 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 seconds after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;1 minute after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;300&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;600&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;30 minutes after Display Timeout&nbsp;</small></i></b></td><td><small>&nbsp;1800&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -8212,14 +8223,14 @@ Use this *Group* to configure which *Zebra Value-Add Services* are allowed to be
 - *Configuration Service Providers* (CSPs), typically used by special purpose applications, such as *Enterprise Mobility Manager* (EMM) Agents.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceAccessStep 
+- Key = serviceAccessStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8252,16 +8263,16 @@ Note that allowing *Bindings* to a *Zebra Value-Add Service* enables ALL applica
 Note that every *Zebra Value-Add Service* that exposes APIs will be identified by a unique *Service Identifier*, that identifies the Service when controlling access to that Service. Consult the documentation for a given *Zebra Value-Add Service* to determine its *Service Identifier* that you will need to identify that Service when controlling access to it.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceBindingAction 
+- Key = serviceBindingAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8276,14 +8287,14 @@ Note that every *Zebra Value-Add Service* that exposes APIs will be identified b
 Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceBindingActionAllowServiceIdentifer 
+- Key = serviceBindingActionAllowServiceIdentifer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8298,14 +8309,14 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be disallowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceBindingActionDisallowServiceIdentifer 
+- Key = serviceBindingActionDisallowServiceIdentifer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8332,16 +8343,16 @@ Note also that since a *Binding* to a Service is required to call any APIs expos
 - If the value ***Disallow*** is selected, a specifically identified application will be disallowed from calling APIs to a specifically identified Service. This is the default state for every *Zebra Value-Add Service* and for every potential calling application. You must also specify **Disallow Service Identifier** to identify the *Zebra Value-Add Service* to which API calls should be disallowed and you must also specify **Disallow Caller Package** and **Disallow Caller Signature** to identify the application to be disallowed from making API calls to the identified Service.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerAction 
+- Key = serviceCallerAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8356,14 +8367,14 @@ Note also that since a *Binding* to a Service is required to call any APIs expos
 Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionAllowServiceIdentifer 
+- Key = serviceCallerActionAllowServiceIdentifer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8378,14 +8389,14 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 Enter the *Android Package Name* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionAllowCallerPackage 
+- Key = serviceCallerActionAllowCallerPackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8403,14 +8414,14 @@ Enter the *Android Package Signature* of an application that should be allowed t
 Note that the use of a *Android Package Signature* is MANDATORY and ensures that the application being allowed to make API calls to the specified Service is genuine and has not been spoofed. This prevents anyone from creating an impostor application with the same *Android Package Name*, but signed differently and then trying to make calls to the APIs of the Service as if they were the genuine application.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionAllowCallerSignature 
+- Key = serviceCallerActionAllowCallerSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8425,14 +8436,14 @@ Note that the use of a *Android Package Signature* is MANDATORY and ensures that
 Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be disallowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionDisallowServiceIdentifer 
+- Key = serviceCallerActionDisallowServiceIdentifer
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8447,14 +8458,14 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 Enter the *Android Package Name* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionDisallowCallerPackage 
+- Key = serviceCallerActionDisallowCallerPackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8469,14 +8480,14 @@ Enter the *Android Package Name* of an application that should be disallowed fro
 Enter the *Android Package Signature* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to provide the *Android Package Signature* of a specified application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCallerActionDisallowCallerSignature 
+- Key = serviceCallerActionDisallowCallerSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8509,16 +8520,16 @@ To limit access to a CSP, the CSP must first be declared to be *Protected*. Once
 - If the value ***Unapprove*** is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of **Unapprove CSP Name** or **Custom** to identify the CSP for which access is to be *Unapproved*. You must also specify one of **Unapprove Caller Package** and **Unapprove Caller Signature** to identify the specific application that will be *Unapproved* from using the specified CSP.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspAction 
+- Key = serviceCspAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Protect&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unprotect&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Approve&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unapprove&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Protect&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unprotect&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Approve&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unapprove&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8535,14 +8546,14 @@ Select whether OemConfig should automatically be *Approved* to use the CSP being
 - If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** was not used with the value ***Approve*** to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionProtectAutoApprove 
+- Key = serviceCspActionProtectAutoApprove
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8560,16 +8571,16 @@ Select a standard CSP that will be declared as *Protected* when the value ***Pro
 All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionProtectCspName 
+- Key = serviceCspActionProtectCspName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8587,14 +8598,14 @@ Enter the name of a custom CSP that will be declared as *Protected* when the val
 Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Protect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionProtectCspNameCustom 
+- Key = serviceCspActionProtectCspNameCustom
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8618,14 +8629,14 @@ This is a convenience to eliminate the need to separately make OemConfig *Unappr
 - If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** were not used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnprotectAutoUnapprove 
+- Key = serviceCspActionUnprotectAutoUnapprove
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8643,16 +8654,16 @@ Select a standard CSP that will be declared as *Unprotected* when the value ***U
 All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnprotectCspName 
+- Key = serviceCspActionUnprotectCspName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8670,14 +8681,14 @@ Enter the name of a custom CSP that will be declared as *Unprotected* when the v
 Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unprotect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnprotectCspNameCustom 
+- Key = serviceCspActionUnprotectCspNameCustom
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8695,16 +8706,16 @@ Select a standard CSP that will be *Approved* for an application when the value 
 All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionApproveCspName 
+- Key = serviceCspActionApproveCspName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8722,14 +8733,14 @@ Enter the name of a custom CSP that will be *Approved* to use a CSP when the val
 Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Approve CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionApproveCspNameCustom 
+- Key = serviceCspActionApproveCspNameCustom
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8744,14 +8755,14 @@ Use when the CSP to be *Approved* for an application is not in the list of stand
 Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to identify the specific application that should be *Approved* to use the CSP.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionApproveCallerPackage 
+- Key = serviceCspActionApproveCallerPackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8766,14 +8777,14 @@ Enter the *Android Package Name* of an application that should be *Approved* to 
 Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionApproveCallerSignature 
+- Key = serviceCspActionApproveCallerSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8791,16 +8802,16 @@ Select a standard CSP that will be *Unapproved* for an application when the valu
 All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnapproveCspName 
+- Key = serviceCspActionUnapproveCspName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8818,14 +8829,14 @@ Enter the name of a custom CSP that will be *Unapproved* for an application when
 Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unapprove CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnapproveCspNameCustom 
+- Key = serviceCspActionUnapproveCspNameCustom
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8840,14 +8851,14 @@ Use when the CSP to be *Unapproved* for an application is not in the list of sta
 Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to identify the specific application that should be *Unapproved* from using the CSP.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnapproveCallerPackage 
+- Key = serviceCspActionUnapproveCallerPackage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8862,14 +8873,14 @@ Enter the *Android Package Name* of an application that should be *Unapproved* f
 Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = serviceCspActionUnapproveCallerSignature 
+- Key = serviceCspActionUnapproveCallerSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8885,14 +8896,14 @@ Enter the *Android Package Signature* of an application that should be *Unapprov
 Use this *Group* to configure the behavior of the Settings UI on a device, especially which features of the Settings UI will the Device User will be allowed to access.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsStep 
+- Key = settingsStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8910,16 +8921,16 @@ Select whether the Device User will be allowed to access the Android Quick Setti
 - If the value ***On*** is selected, attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserAccessToQuickSettings 
+- Key = settingsUserAccessToQuickSettings
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8936,16 +8947,16 @@ Select whether the Device User will be allowed to change the state of Airplane M
 - If the value ***On*** is selected, attempts by the Device User to change the state of Airplane Mode will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlOfAirplaneMode 
+- Key = settingsUserControlOfAirplaneMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8962,16 +8973,16 @@ Select whether the Device User will be allowed to configure which application no
 - If the value ***On*** is selected, attempts by the Device User to change the configuration of application notifications will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlAppNotifications 
+- Key = settingsUserControlAppNotifications
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -8988,16 +8999,16 @@ Select whether the Device User will be allowed to enter the AppInfo section of t
 - If the value ***On*** is selected, attempts by the Device User to enter the AppInfo section of the Settings will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlApps 
+- Key = settingsUserControlApps
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9014,16 +9025,16 @@ Select whether the Device User will be allowed to change the usage of Background
 - If the value ***On*** is selected, attempts by the Device User to change the usage of Background WWAN data will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlOfBackgroundData 
+- Key = settingsUserControlOfBackgroundData
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9040,16 +9051,16 @@ Select whether the Device User will be allowed to change the state of the Ethern
 - If the value ***On*** is selected, attempts by the Device User to change the state of Ethernet adapter will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlOfEthernet 
+- Key = settingsUserControlOfEthernet
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9066,16 +9077,16 @@ Select whether the Device User will be allowed to change whether pressing the Po
 - If the value ***On*** is selected, attempts by the Device User to change whether pressing the Power key causes the device to lock instantly will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlInstantLock 
+- Key = settingsUserControlInstantLock
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9092,16 +9103,16 @@ Select whether the Device User will be allowed to change the state of USB.
 - If the value ***On*** is selected, attempts by the Device User to change the state of USB will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlOfUsb 
+- Key = settingsUserControlOfUsb
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.2.
 
@@ -9115,16 +9126,16 @@ Select whether the Device User will be allowed to change whether applications ca
 - If the value ***On*** is selected, attempts by the Device User to change whether applications can be installed from Unknown Sources.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlUnknownSources 
+- Key = settingsUserControlUnknownSources
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9141,16 +9152,16 @@ Select whether the Device User will be allowed to change the configuration of th
 - If the value ***On*** is selected, attempts by the Device User to change the configuration of the WLAN adapter will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserControlWlan 
+- Key = settingsUserControlWlan
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9167,16 +9178,16 @@ Select whether the Device User will be allowed to perform an Enterprise Reset fr
 - If the value ***On*** is selected, attempts by the Device User to perform an Enterprise Reset from the Settings UI will be honored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUserInitiateEnterpriseReset 
+- Key = settingsUserInitiateEnterpriseReset
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9193,16 +9204,16 @@ Select whether the Device User will be allowed to invoke the Settings UI using a
 - If the value ***On*** is selected, the use of the icon to invoke the Settings UI will be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsShowQuickSettingsIcon 
+- Key = settingsShowQuickSettingsIcon
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9219,16 +9230,16 @@ Select whether the Full or Reduced version of the Settings UI will be used.
 - If the value ***On*** is selected, when the Device User launches the Settings UI, the Reduced version, with support for only a few settings, will be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUseReducedVersion 
+- Key = settingsUseReducedVersion
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -9242,16 +9253,16 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 - If the value ***On*** is selected, the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUseOfNotificationSettingsIcon 
+- Key = settingsUseOfNotificationSettingsIcon
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9268,16 +9279,16 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 - If the value ***On*** is selected, the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUseOfSlideOutDrawer 
+- Key = settingsUseOfSlideOutDrawer
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9294,16 +9305,16 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = settingsUseOfTetheringAndPortableHotspot 
+- Key = settingsUseOfTetheringAndPortableHotspot
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9319,14 +9330,14 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 Use this *Group* to configure which threats to a device will be monitored and which countermeasures will be taken when threats are detected.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatStep 
+- Key = threatStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9340,16 +9351,16 @@ Select an Action to configure whether a given threat will be monitored.
 - If the value ***Ignore*** is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify **Ignore Threat Type** to provide the threat that will be ignored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatAction 
+- Key = threatAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Detect&nbsp;</small></i></b></td><td><small>&nbsp;Detect&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ignore&nbsp;</small></i></b></td><td><small>&nbsp;Ignore&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Detect&nbsp;</small></i></b></td><td><small>&nbsp;Detect&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ignore&nbsp;</small></i></b></td><td><small>&nbsp;Ignore&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9369,16 +9380,16 @@ Select the type of threat that will be monitored when the value ***Detect*** is 
 - If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to monitor the device to see if it has been rooted. Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatActionDetectThreatType 
+- Key = threatActionDetectThreatType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Max Password Attempts&nbsp;</small></i></b></td><td><small>&nbsp;MaxPasswordAttempts&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MDM Client Removal&nbsp;</small></i></b></td><td><small>&nbsp;MDMClientRemoval&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Externally Detected&nbsp;</small></i></b></td><td><small>&nbsp;ExternallyDetected&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Exchange Active Sync Command&nbsp;</small></i></b></td><td><small>&nbsp;ExchangeActiveSyncCommand&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Device is Rooted&nbsp;</small></i></b></td><td><small>&nbsp;DeviceisRooted&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Max Password Attempts&nbsp;</small></i></b></td><td><small>&nbsp;MaxPasswordAttempts&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MDM Client Removal&nbsp;</small></i></b></td><td><small>&nbsp;MDMClientRemoval&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Externally Detected&nbsp;</small></i></b></td><td><small>&nbsp;ExternallyDetected&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Exchange Active Sync Command&nbsp;</small></i></b></td><td><small>&nbsp;ExchangeActiveSyncCommand&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Device is Rooted&nbsp;</small></i></b></td><td><small>&nbsp;DeviceisRooted&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9393,14 +9404,14 @@ Select the type of threat that will be monitored when the value ***Detect*** is 
 Use this *Sub-array* to specofy the set of countermeasures that should be applied to mitigate a detected threat.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatActionDetectCountermeasures 
+- Key = threatActionDetectCountermeasures
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9412,14 +9423,14 @@ Use this *Sub-array* to specofy the set of countermeasures that should be applie
 Use this *Sub-group* to specify a countermeasure to mitigate a detected threat.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasure 
+- Key = threatCountermeasure
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9437,16 +9448,16 @@ Select the type of a single countermeasure that will be performed to mitigate a 
 - If the value ***UnsolicitedAlert*** is selected, the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected. You must also specify **Unsolicited Alert Package Name**, **Unsolicited Alert Class**, and **Unsolicited Alert Message** to provide the information needed to deliver the alert.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasureType 
+- Key = threatCountermeasureType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;FormatSdcard&nbsp;</small></i></b></td><td><small>&nbsp;FormatSdcard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FactoryReset&nbsp;</small></i></b></td><td><small>&nbsp;FactoryReset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WipeSecureStorageKeys&nbsp;</small></i></b></td><td><small>&nbsp;WipeSecureStorageKeys&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LockDevice&nbsp;</small></i></b></td><td><small>&nbsp;LockDevice&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UninstallApplication&nbsp;</small></i></b></td><td><small>&nbsp;UninstallApplication&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnsolicitedAlert&nbsp;</small></i></b></td><td><small>&nbsp;UnsolicitedAlert&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;FormatSdcard&nbsp;</small></i></b></td><td><small>&nbsp;FormatSdcard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FactoryReset&nbsp;</small></i></b></td><td><small>&nbsp;FactoryReset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WipeSecureStorageKeys&nbsp;</small></i></b></td><td><small>&nbsp;WipeSecureStorageKeys&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LockDevice&nbsp;</small></i></b></td><td><small>&nbsp;LockDevice&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UninstallApplication&nbsp;</small></i></b></td><td><small>&nbsp;UninstallApplication&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnsolicitedAlert&nbsp;</small></i></b></td><td><small>&nbsp;UnsolicitedAlert&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9461,14 +9472,14 @@ Select the type of a single countermeasure that will be performed to mitigate a 
 Enter the *Android Package Name* of an application that will be uninstalled as a countermeasure to mitigate a threat when the value ***UninstallApplication*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasureUninstallPackageName 
+- Key = threatCountermeasureUninstallPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9483,14 +9494,14 @@ Enter the *Android Package Name* of an application that will be uninstalled as a
 Enter the *Android Package Name* of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasureUnsolicitedAlertPackageName 
+- Key = threatCountermeasureUnsolicitedAlertPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9505,14 +9516,14 @@ Enter the *Android Package Name* of an application that will be sent an unsolici
 Enter the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasureUnsolicitedAlertClass 
+- Key = threatCountermeasureUnsolicitedAlertClass
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9527,14 +9538,14 @@ Enter the Class Name of component within an application that will be sent an uns
 Enter the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatCountermeasureUnsolicitedAlertMessage 
+- Key = threatCountermeasureUnsolicitedAlertMessage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9549,14 +9560,14 @@ Enter the string text message that will be sent to a component of an application
 Enter the *Android Package Name* of the MDM Agent that will be monitored to detect a threat when the value ***MDM Client Removal*** is selected for **Detect Threat Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatMdmClientPackageName 
+- Key = threatMdmClientPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9576,16 +9587,16 @@ Select the type of threat that will NOT be monitored, and hence cannot be detect
 - If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatActionIgnoreThreatType 
+- Key = threatActionIgnoreThreatType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Max Password Attempts&nbsp;</small></i></b></td><td><small>&nbsp;MaxPasswordAttempts&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MDM Client Removal&nbsp;</small></i></b></td><td><small>&nbsp;MDMClientRemoval&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Externally Detected&nbsp;</small></i></b></td><td><small>&nbsp;ExternallyDetected&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Exchange Active Sync Command&nbsp;</small></i></b></td><td><small>&nbsp;ExchangeActiveSyncCommand&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Device is Rooted&nbsp;</small></i></b></td><td><small>&nbsp;DeviceisRooted&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Max Password Attempts&nbsp;</small></i></b></td><td><small>&nbsp;MaxPasswordAttempts&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MDM Client Removal&nbsp;</small></i></b></td><td><small>&nbsp;MDMClientRemoval&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Externally Detected&nbsp;</small></i></b></td><td><small>&nbsp;ExternallyDetected&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Exchange Active Sync Command&nbsp;</small></i></b></td><td><small>&nbsp;ExchangeActiveSyncCommand&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Device is Rooted&nbsp;</small></i></b></td><td><small>&nbsp;DeviceisRooted&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9602,16 +9613,16 @@ Select whether the Threat Management System should perform background polling to
 - If the value ***On*** is selected, the Threat Management System will perform background polling. This may reduce performance and degrade battery life somewhat, but will increase the ability to detect the Rooted Device threat and accelerate detection of that threat. You may also specify **Interval**, **Additional Folders**, and **List** to adjust the nature of the background polling, allowing trade-offs to be made in the balance pf thoroughness vs. the impact to performance and battery life. This value should generally be selected when detection of the ***Device is Rooted*** threat has been enabled, since it would have little value otherwise.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatPeriodicScan 
+- Key = threatPeriodicScan
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9630,14 +9641,14 @@ The interval is specified in seconds between polls.
 - Choosing a lower value can increase the aggressiveness of detection of rooted devices, which can reduce the time required to successfully detect that a device has been rooted, but can also reduce the impact of polling on performance and battery life. - Choose a higher value can reduce the aggressiveness of detection of rooted devices, which can increase the time required to successfully detect that a device has been rooted, but can also decrease the impact of polling on performance and battery life.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatPeriodicScanInterval 
+- Key = threatPeriodicScanInterval
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9659,16 +9670,16 @@ When background polling to detect device rooting is performed, the Threat Manage
 - If the value ***On*** is selected, the Threat Management System will scan the default folders plus additional folders. You must also specify **List** to identify the list of additional folders to be scanned.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatPeriodicScanAdditionalFolders 
+- Key = threatPeriodicScanAdditionalFolders
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9683,14 +9694,14 @@ When background polling to detect device rooting is performed, the Threat Manage
 Enter list of additional folders that will be polled when the value ***On*** is selected for **Periodic Scan** and the value ***On*** is selected for **Additional Folders**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatPeriodicScanAdditionalFoldersList 
+- Key = threatPeriodicScanAdditionalFoldersList
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9705,14 +9716,14 @@ Enter list of additional folders that will be polled when the value ***On*** is 
 Signal the detection of an externally detected threat. This would generally be relevant only if the ***Externally Detected*** was selected for **Detect Threat Type**, since any signaling of an externally detected threat would otherwise be ignored.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = threatSendExternallyDetectedMessage 
+- Key = threatSendExternallyDetectedMessage
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9728,14 +9739,14 @@ Signal the detection of an externally detected threat. This would generally be r
 Use this *Group* to configure the UI behavior of the Zebra Volume Control on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStep 
+- Key = volumeuiStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9758,16 +9769,16 @@ The *Zebra Volume Control* provides a configurable UI that allows the Device Use
 - If the value ***Set Factory Preset*** is selected, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiAction 
+- Key = volumeuiAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Profile&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove Profile&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set Current Profile&nbsp;</small></i></b></td><td><small>&nbsp;01&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Apply Current Profile&nbsp;</small></i></b></td><td><small>&nbsp;02&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set Factory Preset&nbsp;</small></i></b></td><td><small>&nbsp;03&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Add Profile&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Remove Profile&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set Current Profile&nbsp;</small></i></b></td><td><small>&nbsp;01&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Apply Current Profile&nbsp;</small></i></b></td><td><small>&nbsp;02&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Set Factory Preset&nbsp;</small></i></b></td><td><small>&nbsp;03&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9784,14 +9795,14 @@ Enter the name of a new *Audio UI Profile* to be added when the value ***Add Pro
 - If no *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will be added with that name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiActionAddProfileName 
+- Key = volumeuiActionAddProfileName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9806,14 +9817,14 @@ Enter the name of a new *Audio UI Profile* to be added when the value ***Add Pro
 Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiActionAddProfileStreams 
+- Key = volumeuiActionAddProfileStreams
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9825,14 +9836,14 @@ Use this *Sub-array* to specify the set of *Audio Streams* that will be included
 Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Stream**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStream 
+- Key = volumeuiStream
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9851,16 +9862,16 @@ Ypu must select the type of a single *Audio Stream* that will be included as par
 - If the value ***VVS*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStreamType 
+- Key = volumeuiStreamType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Music&nbsp;</small></i></b></td><td><small>&nbsp;Music&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ring&nbsp;</small></i></b></td><td><small>&nbsp;Ring&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Notification&nbsp;</small></i></b></td><td><small>&nbsp;Notification&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;System&nbsp;</small></i></b></td><td><small>&nbsp;System&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alarm&nbsp;</small></i></b></td><td><small>&nbsp;Alarm&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VoiceCall&nbsp;</small></i></b></td><td><small>&nbsp;VoiceCall&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VVS&nbsp;</small></i></b></td><td><small>&nbsp;VVS&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Music&nbsp;</small></i></b></td><td><small>&nbsp;Music&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ring&nbsp;</small></i></b></td><td><small>&nbsp;Ring&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Notification&nbsp;</small></i></b></td><td><small>&nbsp;Notification&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;System&nbsp;</small></i></b></td><td><small>&nbsp;System&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Alarm&nbsp;</small></i></b></td><td><small>&nbsp;Alarm&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VoiceCall&nbsp;</small></i></b></td><td><small>&nbsp;VoiceCall&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;VVS&nbsp;</small></i></b></td><td><small>&nbsp;VVS&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9881,14 +9892,14 @@ The text label might be changed for an *Audio Stream* because it is used for som
 If no text label is selected for an *Audio Stream*, the *Factory Preset* default text label will be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStreamLabel 
+- Key = volumeuiStreamLabel
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9912,14 +9923,14 @@ If an icon is specified, the value specified must be the full path and file name
 If no icon is selected for an *Audio Stream*, the *Factory Preset* default icon will be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStreamIcon 
+- Key = volumeuiStreamIcon
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9937,14 +9948,14 @@ Select whether a single *Audio Stream* will be visible to the Device User within
 If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra Volume Control* will not present ANY UI to the Device User to control the volume of that *Audio Stream*. The result is basically identical to not including the *Audio Stream* in the *Audio UI Profile*. This might be used when temporarily disabling an *Audio Stream* to avoid the need to remove and then add back in the entire definition of that *Audio Stream*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStreamVisible 
+- Key = volumeuiStreamVisible
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9959,14 +9970,14 @@ If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra V
 Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** and as part of an instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiStreamModes 
+- Key = volumeuiStreamModes
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -9981,14 +9992,14 @@ Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream
 For each *Audio Mode* defined for an *Audio Stream*, You must also specify **Type** to provide which *Audio Mode* will be defined. You must also specify **Minimum**, **Maximum**, and **Preset** to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiMode 
+- Key = volumeuiMode
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10011,14 +10022,14 @@ You must also specify **Maximum** and **Preset** to define the complete behavior
 The value specified must be less than or equal to the value entered for **Maximum** and less than or equal to the value entered for **Preset**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiModeMin 
+- Key = volumeuiModeMin
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10044,14 +10055,14 @@ You must also specify **Minimum** and **Preset** to define the complete behavior
 The value specified must be greater than or equal to the value entered for **Minimum** and greater than or equal to the value entered for **Preset**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiModeMax 
+- Key = volumeuiModeMax
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10077,14 +10088,14 @@ You must also specify **Minimum** and **Maximum** to define the complete behavio
 The value specified must be greater than or equal to the value entered for **Minimum** and less than or equal to the value entered for **Maximum**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiModePreset 
+- Key = volumeuiModePreset
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10105,16 +10116,16 @@ Select the type of behavior of the UI for a single *Audio Stream* in a single *A
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiModeType 
+- Key = volumeuiModeType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Speaker&nbsp;</small></i></b></td><td><small>&nbsp;Speaker&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Receiver&nbsp;</small></i></b></td><td><small>&nbsp;Receiver&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WiredHeadset&nbsp;</small></i></b></td><td><small>&nbsp;WiredHeadset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothHeadset&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothHeadset&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Speaker&nbsp;</small></i></b></td><td><small>&nbsp;Speaker&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Receiver&nbsp;</small></i></b></td><td><small>&nbsp;Receiver&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WiredHeadset&nbsp;</small></i></b></td><td><small>&nbsp;WiredHeadset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothHeadset&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothHeadset&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10129,14 +10140,14 @@ Select the type of behavior of the UI for a single *Audio Stream* in a single *A
 Enter the name of an existing *Audio UI Profile* to be removed when the value ***Remove Profile*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiActionRemoveProfileName 
+- Key = volumeuiActionRemoveProfileName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10151,14 +10162,14 @@ Enter the name of an existing *Audio UI Profile* to be removed when the value **
 Enter the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile*when the value ***Set Current Profile*** is selected for **Action**. You must also specify **Set Current Profile Adjust Volume** to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiActionSetCurrentProfileName 
+- Key = volumeuiActionSetCurrentProfileName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10173,16 +10184,16 @@ Enter the name of an existing *Audio UI Profile* to be made the current active *
 Select whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*when the value ***Set Current Profile*** is selected for **Action** and **Set Current Profile Name** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = volumeuiActionSetCurrentProfileAdjustVolume 
+- Key = volumeuiActionSetCurrentProfileAdjustVolume
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;Off&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;On&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;Off&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;On&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10198,14 +10209,14 @@ Select whether the current device *Volume Settings* will be adjusted to ensure t
 Use this *Group* to configure Wakeups on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wakeupStep 
+- Key = wakeupStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10217,16 +10228,16 @@ Use this *Group* to configure Wakeups on a device.
 Select the Method that will be used to implement and control device Wake-up. - Hardware - Use Hardware Signals for Wake-Up - Software - Use Software (Mappable Keycodes) for Wake-Up
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = selectwakeupsourceMethod 
+- Key = selectwakeupsourceMethod
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hardware&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Software&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hardware&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Software&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10247,16 +10258,16 @@ Select whether all controllable Wakeup Sources should be turned on or off.
 - If the value ***On*** is selected, all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wakeupSources 
+- Key = wakeupSources
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.0.
 
@@ -10266,21 +10277,21 @@ Select whether all controllable Wakeup Sources should be turned on or off.
 
 
 
-Use this *Group* to configure which user applications can be installed and run on a device. 
+Use this *Group* to configure which user applications can be installed and run on a device.
 
-Whitelisting applies only to user applications; it has no effect on System applications, which are applications built into the device and are therefore always present. User applications are those that DO NOT come preinstalled on the device, but are installed during staging or at some time after the device is put into service. System apps are controlled using the Blacklist Configuration Group. 
+Whitelisting applies only to user applications; it has no effect on System applications, which are applications built into the device and are therefore always present. User applications are those that DO NOT come preinstalled on the device, but are installed during staging or at some time after the device is put into service. System apps are controlled using the Blacklist Configuration Group.
 
 >WARNING: It is important to understand that if an app uses the Whitelist Configuration Group to enable whitelisting, then that app becomes subject to whitelisting. If the app does not add itself to the "whitelist," the app is prevented from running once the configuration is successfully applied.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistStep 
+- Key = whitelistStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10297,16 +10308,16 @@ Select the Whitelisting Mode, which determines how the applications that can be 
 Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing. If ***Package Name Only*** is used, any APK whose *Android Package Name* matches one of the allowed *Android Package Names* will be allowed to be installed and run. Since any APK can be assigned any *Android Package Name*, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If ***Package Name and Signature*** is used, the *Android Package Signature* of an application must match an allowed *Android Package Signature* in addition to the *Android Package Name* matching an allowed *Android Package Name*. Since a rogue APK cannot be signed with a given *Android Package Signature* without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistMode 
+- Key = whitelistMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Package Name Only&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Package Name and Signature&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Package Name Only&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Package Name and Signature&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10323,16 +10334,16 @@ Select an Action to alter the Whitelisting configuration of a device.
 - If the value ***Disallow*** is selected, a single application will be prevented from being installed and run. You must also specify **Disallow Package Name** to provide the *Android Package Name* of the application that will be disallowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistAction 
+- Key = whitelistAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;Add&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;Delete&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;Add&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;Delete&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10348,14 +10359,14 @@ Enter the *Android Package Name* of an application to be allowed when the value 
 - If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Allow Signature** to provide the *Android Package Signature* to be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistActionAddPackageName 
+- Key = whitelistActionAddPackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10370,14 +10381,14 @@ Enter the *Android Package Name* of an application to be allowed when the value 
 Enter the *Android Package Signature* of an application to be allowed when the value ***Allow*** is selected for **Action**, **Allow Package Name** is specified, and the value ***Package Name and Signature*** is selected for **Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistActionAddSignature 
+- Key = whitelistActionAddSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10392,14 +10403,14 @@ Enter the *Android Package Signature* of an application to be allowed when the v
 Enter the *Android Package Signature* of an application to be disallowed when the value ***Disallow*** is selected for **Action**, and when **Disallow Package Name** is specified, and when the value ***Package Name and Signature*** is selected for **Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistActionDeleteSignature 
+- Key = whitelistActionDeleteSignature
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10417,14 +10428,14 @@ Enter the *Android Package Name* of an application to be disallowed when the val
 If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Disallow Signature** to provide the *Android Package Signature* to be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistActionDeletePackageName 
+- Key = whitelistActionDeletePackageName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10445,16 +10456,16 @@ Select the Whitelisting State, which determines whether the set of applications 
 - If the value ***On*** is selected, Whitelisting will be used and you should specify additional configuration in the Group to configure how the set of applications will be controlled and which applications will be allowed to be installed and run.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = whitelistState 
+- Key = whitelistState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10470,14 +10481,14 @@ Select the Whitelisting State, which determines whether the set of applications 
 Use this *Group* to configure General Wireless settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wirelessStep 
+- Key = wirelessStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10497,16 +10508,16 @@ Use this *Sub-group* to configure which of multiple antennas should be used for 
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wirelessAntennaSelection 
+- Key = wirelessAntennaSelection
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Internal&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;External&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Internal&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;External&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10523,16 +10534,16 @@ Use this *Sub-group* to configure whether the GPS radio state should be On or Of
 - If the value ***On*** is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wirelessGpsPowerState 
+- Key = wirelessGpsPowerState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10549,14 +10560,14 @@ Use this *Group* to configure Global settings that affect the Wireless Local Are
 - This Group does NOT allow management of specific WLAN Profiles. To manage WLAN Profiles, consult the documentation for your specific EMM.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanStep 
+- Key = wlanStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -10574,16 +10585,16 @@ Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically w
 - If the value ***On*** is selected, automatic *Wake Up* will be turned ON, allowing the device to periodically scan for and detect the presence of a previously connected network and automatically wake up to connect to it.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAutoWakeup 
+- Key = wlanAutoWakeup
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10601,16 +10612,16 @@ Select the frequency *Bands* on which the WLAN subsystem will operate on a devic
 - If the value ***Auto*** is selected, the *Band* to be used will be determined automatically.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanBands 
+- Key = wlanBands
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;2.4GHz&nbsp;</small></i></b></td><td><small>&nbsp;2.4GHz&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5.0GHz&nbsp;</small></i></b></td><td><small>&nbsp;5.0GHz&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;Auto&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;2.4GHz&nbsp;</small></i></b></td><td><small>&nbsp;2.4GHz&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5.0GHz&nbsp;</small></i></b></td><td><small>&nbsp;5.0GHz&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Auto&nbsp;</small></i></b></td><td><small>&nbsp;Auto&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -10634,14 +10645,14 @@ The actual channel that can specified depends on the value selected for **Bands*
 Note that individual countries may apply their own regulations regarding the channels that are allowable. Therefore, depending on the value selected for **Country**, not all channel values that could be specified for a given band may be allowable.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanChannels 
+- Key = wlanChannels
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10658,16 +10669,16 @@ Select the *Country* in which the WLAN subsystem will operate on a device:
 - When any other value is selected, the specified *Country* will be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanCountry 
+- Key = wlanCountry
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Auto (Use 802.11d)&nbsp;</small></i></b></td><td><small>&nbsp;AUTO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Algeria&nbsp;</small></i></b></td><td><small>&nbsp;DZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Anguilla&nbsp;</small></i></b></td><td><small>&nbsp;AI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Argentina&nbsp;</small></i></b></td><td><small>&nbsp;AR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Australia&nbsp;</small></i></b></td><td><small>&nbsp;AU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Austria&nbsp;</small></i></b></td><td><small>&nbsp;AT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bahamas&nbsp;</small></i></b></td><td><small>&nbsp;BS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bahrain&nbsp;</small></i></b></td><td><small>&nbsp;BH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Barbados&nbsp;</small></i></b></td><td><small>&nbsp;BB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Belarus&nbsp;</small></i></b></td><td><small>&nbsp;BY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Belgium&nbsp;</small></i></b></td><td><small>&nbsp;BE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bermuda&nbsp;</small></i></b></td><td><small>&nbsp;BM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bolivia&nbsp;</small></i></b></td><td><small>&nbsp;BO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bonaire&nbsp;</small></i></b></td><td><small>&nbsp;BQ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bosnia and Herzegovina&nbsp;</small></i></b></td><td><small>&nbsp;BA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brazil&nbsp;</small></i></b></td><td><small>&nbsp;BR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bulgaria&nbsp;</small></i></b></td><td><small>&nbsp;BG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Canada&nbsp;</small></i></b></td><td><small>&nbsp;CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Cayman Islands&nbsp;</small></i></b></td><td><small>&nbsp;KY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Chile&nbsp;</small></i></b></td><td><small>&nbsp;CL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;China&nbsp;</small></i></b></td><td><small>&nbsp;CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Christmas Island&nbsp;</small></i></b></td><td><small>&nbsp;CX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Columbia&nbsp;</small></i></b></td><td><small>&nbsp;CO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Costa Rica&nbsp;</small></i></b></td><td><small>&nbsp;CR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Croatia&nbsp;</small></i></b></td><td><small>&nbsp;HR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Curacao&nbsp;</small></i></b></td><td><small>&nbsp;CW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Cyprus&nbsp;</small></i></b></td><td><small>&nbsp;CY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Czech Republic&nbsp;</small></i></b></td><td><small>&nbsp;CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Denmark&nbsp;</small></i></b></td><td><small>&nbsp;DK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Dominican Republic&nbsp;</small></i></b></td><td><small>&nbsp;DO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ecuador&nbsp;</small></i></b></td><td><small>&nbsp;EC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Egypt&nbsp;</small></i></b></td><td><small>&nbsp;EG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;El Salvador&nbsp;</small></i></b></td><td><small>&nbsp;SV&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Estonia&nbsp;</small></i></b></td><td><small>&nbsp;EE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Falkland Islands(Malvinas)&nbsp;</small></i></b></td><td><small>&nbsp;FK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finland&nbsp;</small></i></b></td><td><small>&nbsp;FI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;France&nbsp;</small></i></b></td><td><small>&nbsp;FR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;French Guiana&nbsp;</small></i></b></td><td><small>&nbsp;GF&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Germany&nbsp;</small></i></b></td><td><small>&nbsp;DE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Greece&nbsp;</small></i></b></td><td><small>&nbsp;GR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guadelope&nbsp;</small></i></b></td><td><small>&nbsp;GP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guam&nbsp;</small></i></b></td><td><small>&nbsp;GU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guatemala&nbsp;</small></i></b></td><td><small>&nbsp;GT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guyana&nbsp;</small></i></b></td><td><small>&nbsp;GY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Haiti&nbsp;</small></i></b></td><td><small>&nbsp;HT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Honduras&nbsp;</small></i></b></td><td><small>&nbsp;HN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HongKong&nbsp;</small></i></b></td><td><small>&nbsp;HK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Hungary&nbsp;</small></i></b></td><td><small>&nbsp;HU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Iceland&nbsp;</small></i></b></td><td><small>&nbsp;IS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;India&nbsp;</small></i></b></td><td><small>&nbsp;IN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Indonesia&nbsp;</small></i></b></td><td><small>&nbsp;ID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ireland&nbsp;</small></i></b></td><td><small>&nbsp;IE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Israel&nbsp;</small></i></b></td><td><small>&nbsp;IL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Italy&nbsp;</small></i></b></td><td><small>&nbsp;IT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Jamaica&nbsp;</small></i></b></td><td><small>&nbsp;JM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Japan&nbsp;</small></i></b></td><td><small>&nbsp;JP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Jordan&nbsp;</small></i></b></td><td><small>&nbsp;JO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kazakhstan&nbsp;</small></i></b></td><td><small>&nbsp;KZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kenya&nbsp;</small></i></b></td><td><small>&nbsp;KE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Korea Republic&nbsp;</small></i></b></td><td><small>&nbsp;KR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kuwait&nbsp;</small></i></b></td><td><small>&nbsp;KW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Latvia&nbsp;</small></i></b></td><td><small>&nbsp;LV&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lebanon&nbsp;</small></i></b></td><td><small>&nbsp;LB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Liechtenstein&nbsp;</small></i></b></td><td><small>&nbsp;LI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lithuania&nbsp;</small></i></b></td><td><small>&nbsp;LT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Luxembourg&nbsp;</small></i></b></td><td><small>&nbsp;LU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macedonia&nbsp;</small></i></b></td><td><small>&nbsp;MK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Malaysia&nbsp;</small></i></b></td><td><small>&nbsp;MY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Malta&nbsp;</small></i></b></td><td><small>&nbsp;MT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Martinique&nbsp;</small></i></b></td><td><small>&nbsp;MQ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mexico&nbsp;</small></i></b></td><td><small>&nbsp;MX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Montenegro&nbsp;</small></i></b></td><td><small>&nbsp;ME&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Morocco&nbsp;</small></i></b></td><td><small>&nbsp;MA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Netherlands&nbsp;</small></i></b></td><td><small>&nbsp;AN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Netherlands&nbsp;</small></i></b></td><td><small>&nbsp;NL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NewZeaLand&nbsp;</small></i></b></td><td><small>&nbsp;NZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Nicaragua&nbsp;</small></i></b></td><td><small>&nbsp;NI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Nigeria&nbsp;</small></i></b></td><td><small>&nbsp;NG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Niue&nbsp;</small></i></b></td><td><small>&nbsp;NU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Norfolk Islands&nbsp;</small></i></b></td><td><small>&nbsp;NF&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Northern Marina Islands&nbsp;</small></i></b></td><td><small>&nbsp;MP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Norway&nbsp;</small></i></b></td><td><small>&nbsp;NO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Oman&nbsp;</small></i></b></td><td><small>&nbsp;OM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Pakistan&nbsp;</small></i></b></td><td><small>&nbsp;PK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Panama&nbsp;</small></i></b></td><td><small>&nbsp;PA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Paraguay&nbsp;</small></i></b></td><td><small>&nbsp;PY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Peru&nbsp;</small></i></b></td><td><small>&nbsp;PE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Philippines&nbsp;</small></i></b></td><td><small>&nbsp;PH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Poland&nbsp;</small></i></b></td><td><small>&nbsp;PL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Portugal&nbsp;</small></i></b></td><td><small>&nbsp;PT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Puerto Rico&nbsp;</small></i></b></td><td><small>&nbsp;PR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Qatar&nbsp;</small></i></b></td><td><small>&nbsp;QA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Romania&nbsp;</small></i></b></td><td><small>&nbsp;RO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Russian Federation&nbsp;</small></i></b></td><td><small>&nbsp;RU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;St. Maarten&nbsp;</small></i></b></td><td><small>&nbsp;SX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Saudi Arabia&nbsp;</small></i></b></td><td><small>&nbsp;SA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Serbia&nbsp;</small></i></b></td><td><small>&nbsp;RS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Singapore&nbsp;</small></i></b></td><td><small>&nbsp;SG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slovakia&nbsp;</small></i></b></td><td><small>&nbsp;SK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slovenia&nbsp;</small></i></b></td><td><small>&nbsp;SI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;South Africa&nbsp;</small></i></b></td><td><small>&nbsp;ZA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Spain&nbsp;</small></i></b></td><td><small>&nbsp;ES&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sri Lanka&nbsp;</small></i></b></td><td><small>&nbsp;LK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sweden&nbsp;</small></i></b></td><td><small>&nbsp;SE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Switzerland&nbsp;</small></i></b></td><td><small>&nbsp;CH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Taiwan&nbsp;</small></i></b></td><td><small>&nbsp;TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Thailand&nbsp;</small></i></b></td><td><small>&nbsp;TH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trinidad and Tobago&nbsp;</small></i></b></td><td><small>&nbsp;TT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Tunisia&nbsp;</small></i></b></td><td><small>&nbsp;TN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turkey&nbsp;</small></i></b></td><td><small>&nbsp;TR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ukraine&nbsp;</small></i></b></td><td><small>&nbsp;UA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;United Arab Emirates&nbsp;</small></i></b></td><td><small>&nbsp;AE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;United Kingdom&nbsp;</small></i></b></td><td><small>&nbsp;GB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U.S.A.&nbsp;</small></i></b></td><td><small>&nbsp;US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Uruguay&nbsp;</small></i></b></td><td><small>&nbsp;UY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Venezuela&nbsp;</small></i></b></td><td><small>&nbsp;VE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Vietnam&nbsp;</small></i></b></td><td><small>&nbsp;VN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Virgin Islands(British)&nbsp;</small></i></b></td><td><small>&nbsp;VG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Virgin Islands(US)&nbsp;</small></i></b></td><td><small>&nbsp;VI&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Auto (Use 802.11d)&nbsp;</small></i></b></td><td><small>&nbsp;AUTO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Algeria&nbsp;</small></i></b></td><td><small>&nbsp;DZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Anguilla&nbsp;</small></i></b></td><td><small>&nbsp;AI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Argentina&nbsp;</small></i></b></td><td><small>&nbsp;AR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Australia&nbsp;</small></i></b></td><td><small>&nbsp;AU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Austria&nbsp;</small></i></b></td><td><small>&nbsp;AT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bahamas&nbsp;</small></i></b></td><td><small>&nbsp;BS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bahrain&nbsp;</small></i></b></td><td><small>&nbsp;BH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Barbados&nbsp;</small></i></b></td><td><small>&nbsp;BB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Belarus&nbsp;</small></i></b></td><td><small>&nbsp;BY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Belgium&nbsp;</small></i></b></td><td><small>&nbsp;BE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bermuda&nbsp;</small></i></b></td><td><small>&nbsp;BM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bolivia&nbsp;</small></i></b></td><td><small>&nbsp;BO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bonaire&nbsp;</small></i></b></td><td><small>&nbsp;BQ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bosnia and Herzegovina&nbsp;</small></i></b></td><td><small>&nbsp;BA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Brazil&nbsp;</small></i></b></td><td><small>&nbsp;BR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Bulgaria&nbsp;</small></i></b></td><td><small>&nbsp;BG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Canada&nbsp;</small></i></b></td><td><small>&nbsp;CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Cayman Islands&nbsp;</small></i></b></td><td><small>&nbsp;KY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Chile&nbsp;</small></i></b></td><td><small>&nbsp;CL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;China&nbsp;</small></i></b></td><td><small>&nbsp;CN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Christmas Island&nbsp;</small></i></b></td><td><small>&nbsp;CX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Columbia&nbsp;</small></i></b></td><td><small>&nbsp;CO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Costa Rica&nbsp;</small></i></b></td><td><small>&nbsp;CR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Croatia&nbsp;</small></i></b></td><td><small>&nbsp;HR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Curacao&nbsp;</small></i></b></td><td><small>&nbsp;CW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Cyprus&nbsp;</small></i></b></td><td><small>&nbsp;CY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Czech Republic&nbsp;</small></i></b></td><td><small>&nbsp;CA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Denmark&nbsp;</small></i></b></td><td><small>&nbsp;DK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Dominican Republic&nbsp;</small></i></b></td><td><small>&nbsp;DO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ecuador&nbsp;</small></i></b></td><td><small>&nbsp;EC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Egypt&nbsp;</small></i></b></td><td><small>&nbsp;EG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;El Salvador&nbsp;</small></i></b></td><td><small>&nbsp;SV&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Estonia&nbsp;</small></i></b></td><td><small>&nbsp;EE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Falkland Islands(Malvinas)&nbsp;</small></i></b></td><td><small>&nbsp;FK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Finland&nbsp;</small></i></b></td><td><small>&nbsp;FI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;France&nbsp;</small></i></b></td><td><small>&nbsp;FR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;French Guiana&nbsp;</small></i></b></td><td><small>&nbsp;GF&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Germany&nbsp;</small></i></b></td><td><small>&nbsp;DE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Greece&nbsp;</small></i></b></td><td><small>&nbsp;GR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guadelope&nbsp;</small></i></b></td><td><small>&nbsp;GP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guam&nbsp;</small></i></b></td><td><small>&nbsp;GU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guatemala&nbsp;</small></i></b></td><td><small>&nbsp;GT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Guyana&nbsp;</small></i></b></td><td><small>&nbsp;GY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Haiti&nbsp;</small></i></b></td><td><small>&nbsp;HT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Honduras&nbsp;</small></i></b></td><td><small>&nbsp;HN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HongKong&nbsp;</small></i></b></td><td><small>&nbsp;HK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Hungary&nbsp;</small></i></b></td><td><small>&nbsp;HU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Iceland&nbsp;</small></i></b></td><td><small>&nbsp;IS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;India&nbsp;</small></i></b></td><td><small>&nbsp;IN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Indonesia&nbsp;</small></i></b></td><td><small>&nbsp;ID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ireland&nbsp;</small></i></b></td><td><small>&nbsp;IE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Israel&nbsp;</small></i></b></td><td><small>&nbsp;IL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Italy&nbsp;</small></i></b></td><td><small>&nbsp;IT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Jamaica&nbsp;</small></i></b></td><td><small>&nbsp;JM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Japan&nbsp;</small></i></b></td><td><small>&nbsp;JP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Jordan&nbsp;</small></i></b></td><td><small>&nbsp;JO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kazakhstan&nbsp;</small></i></b></td><td><small>&nbsp;KZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kenya&nbsp;</small></i></b></td><td><small>&nbsp;KE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Korea Republic&nbsp;</small></i></b></td><td><small>&nbsp;KR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Kuwait&nbsp;</small></i></b></td><td><small>&nbsp;KW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Latvia&nbsp;</small></i></b></td><td><small>&nbsp;LV&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lebanon&nbsp;</small></i></b></td><td><small>&nbsp;LB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Liechtenstein&nbsp;</small></i></b></td><td><small>&nbsp;LI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Lithuania&nbsp;</small></i></b></td><td><small>&nbsp;LT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Luxembourg&nbsp;</small></i></b></td><td><small>&nbsp;LU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Macedonia&nbsp;</small></i></b></td><td><small>&nbsp;MK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Malaysia&nbsp;</small></i></b></td><td><small>&nbsp;MY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Malta&nbsp;</small></i></b></td><td><small>&nbsp;MT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Martinique&nbsp;</small></i></b></td><td><small>&nbsp;MQ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Mexico&nbsp;</small></i></b></td><td><small>&nbsp;MX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Montenegro&nbsp;</small></i></b></td><td><small>&nbsp;ME&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Morocco&nbsp;</small></i></b></td><td><small>&nbsp;MA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Netherlands&nbsp;</small></i></b></td><td><small>&nbsp;AN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Netherlands&nbsp;</small></i></b></td><td><small>&nbsp;NL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NewZeaLand&nbsp;</small></i></b></td><td><small>&nbsp;NZ&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Nicaragua&nbsp;</small></i></b></td><td><small>&nbsp;NI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Nigeria&nbsp;</small></i></b></td><td><small>&nbsp;NG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Niue&nbsp;</small></i></b></td><td><small>&nbsp;NU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Norfolk Islands&nbsp;</small></i></b></td><td><small>&nbsp;NF&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Northern Marina Islands&nbsp;</small></i></b></td><td><small>&nbsp;MP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Norway&nbsp;</small></i></b></td><td><small>&nbsp;NO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Oman&nbsp;</small></i></b></td><td><small>&nbsp;OM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Pakistan&nbsp;</small></i></b></td><td><small>&nbsp;PK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Panama&nbsp;</small></i></b></td><td><small>&nbsp;PA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Paraguay&nbsp;</small></i></b></td><td><small>&nbsp;PY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Peru&nbsp;</small></i></b></td><td><small>&nbsp;PE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Philippines&nbsp;</small></i></b></td><td><small>&nbsp;PH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Poland&nbsp;</small></i></b></td><td><small>&nbsp;PL&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Portugal&nbsp;</small></i></b></td><td><small>&nbsp;PT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Puerto Rico&nbsp;</small></i></b></td><td><small>&nbsp;PR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Qatar&nbsp;</small></i></b></td><td><small>&nbsp;QA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Romania&nbsp;</small></i></b></td><td><small>&nbsp;RO&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Russian Federation&nbsp;</small></i></b></td><td><small>&nbsp;RU&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;St. Maarten&nbsp;</small></i></b></td><td><small>&nbsp;SX&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Saudi Arabia&nbsp;</small></i></b></td><td><small>&nbsp;SA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Serbia&nbsp;</small></i></b></td><td><small>&nbsp;RS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Singapore&nbsp;</small></i></b></td><td><small>&nbsp;SG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slovakia&nbsp;</small></i></b></td><td><small>&nbsp;SK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slovenia&nbsp;</small></i></b></td><td><small>&nbsp;SI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;South Africa&nbsp;</small></i></b></td><td><small>&nbsp;ZA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Spain&nbsp;</small></i></b></td><td><small>&nbsp;ES&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sri Lanka&nbsp;</small></i></b></td><td><small>&nbsp;LK&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Sweden&nbsp;</small></i></b></td><td><small>&nbsp;SE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Switzerland&nbsp;</small></i></b></td><td><small>&nbsp;CH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Taiwan&nbsp;</small></i></b></td><td><small>&nbsp;TW&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Thailand&nbsp;</small></i></b></td><td><small>&nbsp;TH&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Trinidad and Tobago&nbsp;</small></i></b></td><td><small>&nbsp;TT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Tunisia&nbsp;</small></i></b></td><td><small>&nbsp;TN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turkey&nbsp;</small></i></b></td><td><small>&nbsp;TR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Ukraine&nbsp;</small></i></b></td><td><small>&nbsp;UA&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;United Arab Emirates&nbsp;</small></i></b></td><td><small>&nbsp;AE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;United Kingdom&nbsp;</small></i></b></td><td><small>&nbsp;GB&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;U.S.A.&nbsp;</small></i></b></td><td><small>&nbsp;US&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Uruguay&nbsp;</small></i></b></td><td><small>&nbsp;UY&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Venezuela&nbsp;</small></i></b></td><td><small>&nbsp;VE&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Vietnam&nbsp;</small></i></b></td><td><small>&nbsp;VN&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Virgin Islands(British)&nbsp;</small></i></b></td><td><small>&nbsp;VG&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Virgin Islands(US)&nbsp;</small></i></b></td><td><small>&nbsp;VI&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.1.
 
@@ -10685,16 +10696,16 @@ Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 - If the value ***On*** is selected, the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotState 
+- Key = wlanHotSpotState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -10712,16 +10723,16 @@ Select whether the *Verbose Logging* feature of the WLAN adapter should be turne
 - If the value ***On*** is selected, the *Verbose Logging* will be turned ON, allowing the device to log additional information for debugging or troubleshooting WLAN issues.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanVerboseLogging 
+- Key = wlanVerboseLogging
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10741,14 +10752,14 @@ Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the 
 All the settings is this group can be configured independently of the state of *Hotspot Mode*, thus allowing *Hotspot Mode* to be configured before it is turned ON and allowing the configuration of *Hotspot Mode* to be established and maintained across multiple changes to the state of *Hotspot Mode*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotOptions 
+- Key = wlanHotSpotOptions
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10760,14 +10771,14 @@ All the settings is this group can be configured independently of the state of *
 Enter the Service Set Identifier (SSID) that will identify the network supported in *Hotspot Mode* of the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotSSID 
+- Key = wlanHotSpotSSID
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10781,16 +10792,16 @@ Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will ope
 - If the value ***5GHz*** is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotBand 
+- Key = wlanHotSpotBand
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;2.4GHz&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5GHz&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;2.4GHz&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5GHz&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10802,16 +10813,16 @@ Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will ope
 Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device and should be specified when the value ***2.4GHz*** is selected for **Band**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpot24GHzChannel 
+- Key = wlanHotSpot24GHzChannel
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;13&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;7&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;8&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;10&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;13&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10823,16 +10834,16 @@ Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device when the value ***5GHz*** is selected for **Band**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotBand5GhzChannel 
+- Key = wlanHotSpotBand5GhzChannel
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;36&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;40&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;44&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;48&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;52&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;56&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;60&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;64&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;100&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;104&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;108&nbsp;</small></i></b></td><td><small>&nbsp;108&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;112&nbsp;</small></i></b></td><td><small>&nbsp;112&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;116&nbsp;</small></i></b></td><td><small>&nbsp;116&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;120&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;124&nbsp;</small></i></b></td><td><small>&nbsp;124&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;128&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;132&nbsp;</small></i></b></td><td><small>&nbsp;132&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;136&nbsp;</small></i></b></td><td><small>&nbsp;136&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;140&nbsp;</small></i></b></td><td><small>&nbsp;140&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;149&nbsp;</small></i></b></td><td><small>&nbsp;149&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;153&nbsp;</small></i></b></td><td><small>&nbsp;153&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;157&nbsp;</small></i></b></td><td><small>&nbsp;157&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;161&nbsp;</small></i></b></td><td><small>&nbsp;161&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;165&nbsp;</small></i></b></td><td><small>&nbsp;165&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;36&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;40&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;44&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;48&nbsp;</small></i></b></td><td><small>&nbsp;48&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;52&nbsp;</small></i></b></td><td><small>&nbsp;52&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;56&nbsp;</small></i></b></td><td><small>&nbsp;56&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;60&nbsp;</small></i></b></td><td><small>&nbsp;60&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;64&nbsp;</small></i></b></td><td><small>&nbsp;64&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;100&nbsp;</small></i></b></td><td><small>&nbsp;100&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;104&nbsp;</small></i></b></td><td><small>&nbsp;104&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;108&nbsp;</small></i></b></td><td><small>&nbsp;108&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;112&nbsp;</small></i></b></td><td><small>&nbsp;112&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;116&nbsp;</small></i></b></td><td><small>&nbsp;116&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;120&nbsp;</small></i></b></td><td><small>&nbsp;120&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;124&nbsp;</small></i></b></td><td><small>&nbsp;124&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;128&nbsp;</small></i></b></td><td><small>&nbsp;128&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;132&nbsp;</small></i></b></td><td><small>&nbsp;132&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;136&nbsp;</small></i></b></td><td><small>&nbsp;136&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;140&nbsp;</small></i></b></td><td><small>&nbsp;140&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;149&nbsp;</small></i></b></td><td><small>&nbsp;149&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;153&nbsp;</small></i></b></td><td><small>&nbsp;153&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;157&nbsp;</small></i></b></td><td><small>&nbsp;157&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;161&nbsp;</small></i></b></td><td><small>&nbsp;161&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;165&nbsp;</small></i></b></td><td><small>&nbsp;165&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10846,16 +10857,16 @@ Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN a
 - If the value ***WPA2/PSK*** is selected, the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*. You must also specify **Security Passphrase** to provide the PSK passphrase that will be used to secure the network.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotSecurityMode 
+- Key = wlanHotSpotSecurityMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Open&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WPA2/PSK&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Open&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WPA2/PSK&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10867,14 +10878,14 @@ Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN a
 Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a device, when the value ***WPA2/PSK*** is selected for **Security Mode**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanHotSpotSecurityPassphrase 
+- Key = wlanHotSpotSecurityPassphrase
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -10886,14 +10897,14 @@ Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network 
 Use this *Sub-group* to configure Omnitrail settings for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrail 
+- Key = wlanOmnitrail
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10905,16 +10916,16 @@ Use this *Sub-group* to configure Omnitrail settings for the WLAN adapter on a d
 Select whether the Omnitrail feature of the WLAN adapter is turned On or Off for a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailState 
+- Key = wlanOmnitrailState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10934,14 +10945,14 @@ Enter the interval at which the Omnitrail feature of the WLAN adapter should emi
 The value provided should be in milliseconds (ms) and should have a value in the range of 200 ms (0.2 seconds) to 5000 ms (5 seconds).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailInterval 
+- Key = wlanOmnitrailInterval
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10956,14 +10967,14 @@ The value provided should be in milliseconds (ms) and should have a value in the
 Use this *Sub-array* to specify the set of Omnitrail options to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailOptions 
+- Key = wlanOmnitrailOptions
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -10978,14 +10989,14 @@ Use this *Sub-array* to specify the set of Omnitrail options to be configured fo
 Use this *Sub-group* to specify a name and value for a single Omnitrail option to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailOptionPair 
+- Key = wlanOmnitrailOptionPair
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11000,16 +11011,16 @@ Use this *Sub-group* to specify a name and value for a single Omnitrail option t
 Select a standard name that identifies a single Omnitrail optOmnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the selected name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailOptionName 
+- Key = wlanOmnitrailOptionName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;OmniTrailChannel&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailChannel&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailSubtype&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailSubtype&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailPriority&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailPriority&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailFlag&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailFlag&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailType&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailType&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;OmniTrailChannel&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailChannel&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailSubtype&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailSubtype&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailPriority&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailPriority&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailFlag&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailFlag&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OmniTrailType&nbsp;</small></i></b></td><td><small>&nbsp;OmniTrailType&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11024,14 +11035,14 @@ Select a standard name that identifies a single Omnitrail optOmnitrail option to
 Enter a custom name that identifies a Omnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the specified name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailOptionCustomName 
+- Key = wlanOmnitrailOptionCustomName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11046,14 +11057,14 @@ Enter a custom name that identifies a Omnitrail option to be configured for the 
 Enter a value for a single Omnitrail option to be configured for the WLAN adapter on a device when **Name** or **Name Custom** are also specified to provide the name needed identity the Omnitrail option to be set.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailOptionValue 
+- Key = wlanOmnitrailOptionValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11073,16 +11084,16 @@ Select an omnittrail datarate standard to be used by the WLAN adapter on a devic
 
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailDatarateStandard 
+- Key = wlanOmnitrailDatarateStandard
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;abg&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11n&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11ac&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;abg&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11n&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11ac&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11148,16 +11159,16 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when **
 - MCS9_2
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanOmnitrailDatarate 
+- Key = wlanOmnitrailDatarate
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5.5&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;18&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;36&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;48&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;54&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS10&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS11&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS12&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS13&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS14&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS15&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0_1&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1_1&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2_1&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3_1&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4_1&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5_1&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6_1&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7_1&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8_1&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9_1&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0_2&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1_2&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2_2&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3_2&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4_2&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5_2&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6_2&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7_2&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8_2&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9_2&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;1&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;2&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;5.5&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;6&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;9&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;11&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;12&nbsp;</small></i></b></td><td><small>&nbsp;6&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;18&nbsp;</small></i></b></td><td><small>&nbsp;7&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;24&nbsp;</small></i></b></td><td><small>&nbsp;8&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;36&nbsp;</small></i></b></td><td><small>&nbsp;9&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;48&nbsp;</small></i></b></td><td><small>&nbsp;10&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;54&nbsp;</small></i></b></td><td><small>&nbsp;11&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0&nbsp;</small></i></b></td><td><small>&nbsp;12&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1&nbsp;</small></i></b></td><td><small>&nbsp;13&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2&nbsp;</small></i></b></td><td><small>&nbsp;14&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3&nbsp;</small></i></b></td><td><small>&nbsp;15&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4&nbsp;</small></i></b></td><td><small>&nbsp;16&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5&nbsp;</small></i></b></td><td><small>&nbsp;17&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6&nbsp;</small></i></b></td><td><small>&nbsp;18&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7&nbsp;</small></i></b></td><td><small>&nbsp;19&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8&nbsp;</small></i></b></td><td><small>&nbsp;20&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9&nbsp;</small></i></b></td><td><small>&nbsp;21&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS10&nbsp;</small></i></b></td><td><small>&nbsp;22&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS11&nbsp;</small></i></b></td><td><small>&nbsp;23&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS12&nbsp;</small></i></b></td><td><small>&nbsp;24&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS13&nbsp;</small></i></b></td><td><small>&nbsp;25&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS14&nbsp;</small></i></b></td><td><small>&nbsp;26&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS15&nbsp;</small></i></b></td><td><small>&nbsp;27&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0_1&nbsp;</small></i></b></td><td><small>&nbsp;28&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1_1&nbsp;</small></i></b></td><td><small>&nbsp;29&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2_1&nbsp;</small></i></b></td><td><small>&nbsp;30&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3_1&nbsp;</small></i></b></td><td><small>&nbsp;31&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4_1&nbsp;</small></i></b></td><td><small>&nbsp;32&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5_1&nbsp;</small></i></b></td><td><small>&nbsp;33&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6_1&nbsp;</small></i></b></td><td><small>&nbsp;34&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7_1&nbsp;</small></i></b></td><td><small>&nbsp;35&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8_1&nbsp;</small></i></b></td><td><small>&nbsp;36&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9_1&nbsp;</small></i></b></td><td><small>&nbsp;37&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS0_2&nbsp;</small></i></b></td><td><small>&nbsp;38&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS1_2&nbsp;</small></i></b></td><td><small>&nbsp;39&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS2_2&nbsp;</small></i></b></td><td><small>&nbsp;40&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS3_2&nbsp;</small></i></b></td><td><small>&nbsp;41&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS4_2&nbsp;</small></i></b></td><td><small>&nbsp;42&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS5_2&nbsp;</small></i></b></td><td><small>&nbsp;43&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS6_2&nbsp;</small></i></b></td><td><small>&nbsp;44&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS7_2&nbsp;</small></i></b></td><td><small>&nbsp;45&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS8_2&nbsp;</small></i></b></td><td><small>&nbsp;46&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MCS9_2&nbsp;</small></i></b></td><td><small>&nbsp;47&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11172,14 +11183,14 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when **
 Use this *Sub-array* to specify the set of advanced options to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAdvancedOptions 
+- Key = wlanAdvancedOptions
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11194,14 +11205,14 @@ Use this *Sub-array* to specify the set of advanced options to be configured for
 Use this *Sub-group* to specify a name and value for a single advanced option to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAdvancedOptionPair 
+- Key = wlanAdvancedOptionPair
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11216,16 +11227,16 @@ Use this *Sub-group* to specify a name and value for a single advanced option to
 Select a standard name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the selected name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAdvancedOptionName 
+- Key = wlanAdvancedOptionName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AutoTimeConfig&nbsp;</small></i></b></td><td><small>&nbsp;AutoTimeConfig&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HFSR&nbsp;</small></i></b></td><td><small>&nbsp;HFSR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CCKM&nbsp;</small></i></b></td><td><small>&nbsp;CCKM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FT&nbsp;</small></i></b></td><td><small>&nbsp;FT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FTRIC&nbsp;</small></i></b></td><td><small>&nbsp;FTRIC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OKC&nbsp;</small></i></b></td><td><small>&nbsp;OKC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PMKID&nbsp;</small></i></b></td><td><small>&nbsp;PMKID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PreAuth&nbsp;</small></i></b></td><td><small>&nbsp;PreAuth&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerSave&nbsp;</small></i></b></td><td><small>&nbsp;PowerSave&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WLANPowerSave&nbsp;</small></i></b></td><td><small>&nbsp;WLANPowerSave&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AdvancedLogging&nbsp;</small></i></b></td><td><small>&nbsp;AdvancedLogging&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FIPS&nbsp;</small></i></b></td><td><small>&nbsp;FIPS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnableRestrictedSettingsUI&nbsp;</small></i></b></td><td><small>&nbsp;EnableRestrictedSettingsUI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11K&nbsp;</small></i></b></td><td><small>&nbsp;802.11K&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11w&nbsp;</small></i></b></td><td><small>&nbsp;802.11w&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11ac&nbsp;</small></i></b></td><td><small>&nbsp;802.11ac&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11n&nbsp;</small></i></b></td><td><small>&nbsp;802.11n&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11v&nbsp;</small></i></b></td><td><small>&nbsp;802.11v&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BandPreference&nbsp;</small></i></b></td><td><small>&nbsp;BandPreference&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FTOverTheDS&nbsp;</small></i></b></td><td><small>&nbsp;FTOverTheDS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AggregatedFT&nbsp;</small></i></b></td><td><small>&nbsp;AggregatedFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanAssist&nbsp;</small></i></b></td><td><small>&nbsp;ScanAssist&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHD&nbsp;</small></i></b></td><td><small>&nbsp;CHD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubNetRoam&nbsp;</small></i></b></td><td><small>&nbsp;SubNetRoam&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WANCountry&nbsp;</small></i></b></td><td><small>&nbsp;WANCountry&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PasswordProtectEncryption&nbsp;</small></i></b></td><td><small>&nbsp;PasswordProtectEncryption&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACRandomization&nbsp;</small></i></b></td><td><small>&nbsp;MACRandomization&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CallAdmissionControl&nbsp;</small></i></b></td><td><small>&nbsp;CallAdmissionControl&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnableAmpdu&nbsp;</small></i></b></td><td><small>&nbsp;EnableAmpdu&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GratuitousARP&nbsp;</small></i></b></td><td><small>&nbsp;GratuitousARP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ChannelBondingMode2g&nbsp;</small></i></b></td><td><small>&nbsp;ChannelBondingMode2g&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WLANExtendedConfig&nbsp;</small></i></b></td><td><small>&nbsp;WLANExtendedConfig&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AutoTimeConfig&nbsp;</small></i></b></td><td><small>&nbsp;AutoTimeConfig&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HFSR&nbsp;</small></i></b></td><td><small>&nbsp;HFSR&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CCKM&nbsp;</small></i></b></td><td><small>&nbsp;CCKM&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FT&nbsp;</small></i></b></td><td><small>&nbsp;FT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FTRIC&nbsp;</small></i></b></td><td><small>&nbsp;FTRIC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;OKC&nbsp;</small></i></b></td><td><small>&nbsp;OKC&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PMKID&nbsp;</small></i></b></td><td><small>&nbsp;PMKID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PreAuth&nbsp;</small></i></b></td><td><small>&nbsp;PreAuth&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerSave&nbsp;</small></i></b></td><td><small>&nbsp;PowerSave&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WLANPowerSave&nbsp;</small></i></b></td><td><small>&nbsp;WLANPowerSave&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AdvancedLogging&nbsp;</small></i></b></td><td><small>&nbsp;AdvancedLogging&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FIPS&nbsp;</small></i></b></td><td><small>&nbsp;FIPS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnableRestrictedSettingsUI&nbsp;</small></i></b></td><td><small>&nbsp;EnableRestrictedSettingsUI&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11K&nbsp;</small></i></b></td><td><small>&nbsp;802.11K&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11w&nbsp;</small></i></b></td><td><small>&nbsp;802.11w&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11ac&nbsp;</small></i></b></td><td><small>&nbsp;802.11ac&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11n&nbsp;</small></i></b></td><td><small>&nbsp;802.11n&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;802.11v&nbsp;</small></i></b></td><td><small>&nbsp;802.11v&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BandPreference&nbsp;</small></i></b></td><td><small>&nbsp;BandPreference&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FTOverTheDS&nbsp;</small></i></b></td><td><small>&nbsp;FTOverTheDS&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AggregatedFT&nbsp;</small></i></b></td><td><small>&nbsp;AggregatedFT&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanAssist&nbsp;</small></i></b></td><td><small>&nbsp;ScanAssist&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CHD&nbsp;</small></i></b></td><td><small>&nbsp;CHD&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubNetRoam&nbsp;</small></i></b></td><td><small>&nbsp;SubNetRoam&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WANCountry&nbsp;</small></i></b></td><td><small>&nbsp;WANCountry&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PasswordProtectEncryption&nbsp;</small></i></b></td><td><small>&nbsp;PasswordProtectEncryption&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;MACRandomization&nbsp;</small></i></b></td><td><small>&nbsp;MACRandomization&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CallAdmissionControl&nbsp;</small></i></b></td><td><small>&nbsp;CallAdmissionControl&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnableAmpdu&nbsp;</small></i></b></td><td><small>&nbsp;EnableAmpdu&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GratuitousARP&nbsp;</small></i></b></td><td><small>&nbsp;GratuitousARP&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ChannelBondingMode2g&nbsp;</small></i></b></td><td><small>&nbsp;ChannelBondingMode2g&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WLANExtendedConfig&nbsp;</small></i></b></td><td><small>&nbsp;WLANExtendedConfig&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11240,14 +11251,14 @@ Select a standard name that identifies a single advanced option to be configured
 Enter a custom name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the specified name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAdvancedOptionCustomName 
+- Key = wlanAdvancedOptionCustomName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11262,14 +11273,14 @@ Enter a custom name that identifies a single advanced option to be configured fo
 Enter a value for a single advanced option to be configured for the WLAN adapter on a device and should be specified when **Name** or **Custom Name** are specified to provide the name of the advanced option.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanAdvancedOptionValue 
+- Key = wlanAdvancedOptionValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11284,14 +11295,14 @@ Enter a value for a single advanced option to be configured for the WLAN adapter
 Use this *Sub-group* to specify one or more *Diagnostic Options* to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanDiagnosticsOptions 
+- Key = wlanDiagnosticsOptions
 
-- Type = bundle_array 
+- Type = bundle_array
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11306,14 +11317,14 @@ Use this *Sub-group* to specify one or more *Diagnostic Options* to be configure
 Use this *Sub-group* to specify a name and value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanDiagnosticsOptionPair 
+- Key = wlanDiagnosticsOptionPair
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11328,16 +11339,16 @@ Use this *Sub-group* to specify a name and value for a single *Diagnostic Option
 Select a standard name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanDiagnosticsOptionName 
+- Key = wlanDiagnosticsOptionName
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;FusionAdvancedLogging&nbsp;</small></i></b></td><td><small>&nbsp;FusionAdvancedLogging&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;FusionAdvancedLogging&nbsp;</small></i></b></td><td><small>&nbsp;FusionAdvancedLogging&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11352,14 +11363,14 @@ Select a standard name that identifies a single *Diagnostic Option* to be config
 Enter a custom name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanDiagnosticsOptionCustomName 
+- Key = wlanDiagnosticsOptionCustomName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11374,14 +11385,14 @@ Enter a custom name that identifies a single *Diagnostic Option* to be configure
 Enter a value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Name** or **Name Custom** to provide the name that identifies the *Diagnostic Option* to be set.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanDiagnosticsOptionValue 
+- Key = wlanDiagnosticsOptionValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11402,16 +11413,16 @@ Select whether the Device User will be notified about, and allowed to connect to
 - If the value ***On*** is selected, the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wlanNetworkNotification 
+- Key = wlanNetworkNotification
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11427,11 +11438,11 @@ Select whether the Device User will be notified about, and allowed to connect to
 Use this *Group* to configure Wireless Wide Area Network (WWAN) settings on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanStep 
+- Key = wwanStep
 
-- Type = bundle 
+- Type = bundle
 
 
 ### Power
@@ -11444,16 +11455,16 @@ Select the Power State of the WWAN Adapter.
 A given device may or may not support a WWAN Adapter. An attempt to configure the WWAN Adapter on a device that does not have one will result in an error.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanPower 
+- Key = wwanPower
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -11467,16 +11478,16 @@ Select whether WWAN data can be used by applications that are in the *Background
 - If the value ***Allow*** is selected, the use of WWAN data by applications that are in the *Background* will be allowed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanBackgroundData 
+- Key = wwanBackgroundData
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 4.3.
 
@@ -11490,16 +11501,16 @@ Select the Power Srate of the WWAN adapter.
 - If the value ***On*** is selected, the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDataState 
+- Key = wwanDataState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11529,16 +11540,16 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 - If the value ***Slot 4*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 4.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSimCardSlot 
+- Key = wwanSimCardSlot
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Slot 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Slot 1&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 2&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 3&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Slot 4&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.2.
 
@@ -11553,16 +11564,16 @@ Select whether a limit should be imposed on the amount of WWAN data used, such a
 - If the value ***Disable*** is selected, no limit will be imposed on the amount of WWAN data that can be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDataLimitState 
+- Key = wwanDataLimitState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable and set default limit&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable and set custom limit&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Enable and set default limit&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Enable and set custom limit&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disable&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11580,14 +11591,14 @@ Enter a custom limit that should be imposed on the amount of WWAN data used, suc
 The custom limit should be an integer value specifying the maximum amount of WWAN data that can be used, in megabytes (MB).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDataLimitStateCustomLimit 
+- Key = wwanDataLimitStateCustomLimit
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11607,14 +11618,14 @@ Enter a threshold such that if the amount of WWAN data that has been used exceed
 The threshold should be an integer value specifying the threshold amount of WWAN data, in megabytes (MB).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDataWarningThreshold 
+- Key = wwanDataWarningThreshold
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 6.3.
 
@@ -11632,16 +11643,16 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. This can be used to allow the Device User to override configurations related to usage of background data that you have made.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanUserControlBackgroundData 
+- Key = wwanUserControlBackgroundData
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11662,16 +11673,16 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to allow the Device User to override configurations related to data limits that you have made.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanUserControlDataLimit 
+- Key = wwanUserControlDataLimit
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11688,16 +11699,16 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change the *Power State* of the WWAN adapter. This can be used to allow the Device User to override configurations related to the *Power State* of the WWAN adapter that you have made.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanUserControlPower 
+- Key = wwanUserControlPower
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11714,16 +11725,16 @@ Select whether a Device User is allowed to use the in-device Settings Menu to se
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to allow the Device User to override configurations related to the SIM slot selection that you have made.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanUserControlSimSocket 
+- Key = wwanUserControlSimSocket
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11740,16 +11751,16 @@ Select whether the WWAN adapter should be locked to a single Public Land Mobile 
 - If the value ***On*** is selected, the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to connect to that PLMN. You must also specify **Value** to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanPlmnLock 
+- Key = wwanPlmnLock
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -11764,14 +11775,14 @@ Enter the value that identifies the Public Land Mobile Network Lock (PLMN) to wh
 The value provided to identify a PLMN must specify both the Mobile Country Code (MCC) and the Mobile Network Code (MNC). Since all MCC values are three digits and MNC values can be 2 or 3 digits, the value provided must be of the format XXXYY or XXXYYY, where XXX is the three digit MCC value and YY or YYY is the 2 or 3 digit MNC value.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanPlmnLockValue 
+- Key = wwanPlmnLockValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -11785,16 +11796,16 @@ Select whether a Device User is allowed to control locking of the WWAN adapter t
 - If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to allow the Device User to override any configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that you have made.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanUserControlPlmnLock 
+- Key = wwanUserControlPlmnLock
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11815,16 +11826,16 @@ Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM D
 - If the value ***On*** is selected, the WWAN adapter will be configured to handle multiple SIM Card(s) in Dual SIM Dual Standby Mode, which means that two SIM Cards, if present, can be used at the same time, but only one SIM can be chosen for each carrier service. For example, one SIM might be used for voice calls and text messages while the other SIM might be used for data. This can be beneficial if the carriers associated with those SIMs have different performance, pricing, coverage, etc. for various carrier services.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDualSimDualStandby 
+- Key = wwanDualSimDualStandby
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -11839,14 +11850,14 @@ Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM D
 Use this *Sub-group* to configure Device Administrator (DA) Advanced Features as part of Wireless WAN configuration.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaAdvancedFeatures 
+- Key = wwanDaAdvancedFeatures
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11860,16 +11871,16 @@ Select the Lock Action to be performed.
 If the value ***Unlock*** is selected, you must also specify **Lock Type** to identify the type of prior Lock to be Unlocked and you must also specify **Lock Unlock Code** to provide the same *Unlock Code* provided when the Lock was performed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockAction 
+- Key = wwanDaLockAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11881,16 +11892,16 @@ If the value ***Unlock*** is selected, you must also specify **Lock Type** to id
 Select the Lock Type to be used for a Lock Action to be performed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionLockType 
+- Key = wwanDaLockActionLockType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Lock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Lock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11902,14 +11913,14 @@ Select the Lock Type to be used for a Lock Action to be performed.
 Enter a string value to use as the Unlock Code for a Lock Action. The same value will need to be provided to perform a subsequent Unlock Action.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionLockUnlockCode 
+- Key = wwanDaLockActionLockUnlockCode
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11921,14 +11932,14 @@ Enter a string value to use as the Unlock Code for a Lock Action. The same value
 Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maximum number of times a subsequent Unlock Action can be attempted unsuccessfully before disallowing Unlock.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionLockUnlockRetryCount 
+- Key = wwanDaLockActionLockUnlockRetryCount
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11940,14 +11951,14 @@ Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maxi
 Enter the Network List, as one or more MCC or MNC values, identifying the network(s) to which a device should be Locked. To provide multiple values, separate with commas (e.g. 1,310410,31012).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionLockNetworkList 
+- Key = wwanDaLockActionLockNetworkList
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11959,14 +11970,14 @@ Enter the Network List, as one or more MCC or MNC values, identifying the networ
 Enter the ICCID, also known as the SIM Card identifier, identifying the ICCID/SIM Card to which a device should be Locked.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionLockIccid 
+- Key = wwanDaLockActionLockIccid
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11978,16 +11989,16 @@ Enter the ICCID, also known as the SIM Card identifier, identifying the ICCID/SI
 Select the the Unlock Type to be used for a Unlock Action to be performed. This should match the Lock Type of the prior Lock Action to be reversed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionUnlockType 
+- Key = wwanDaLockActionUnlockType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Unlock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Unlock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Unlock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Unlock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -11999,14 +12010,14 @@ Select the the Unlock Type to be used for a Unlock Action to be performed. This 
 Enter a string value to use as the Unlock Code for an Unlock Action. This must be the same value previously specified for the Lock Action to be reversed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanDaLockActionUnlockUnlockCode 
+- Key = wwanDaLockActionUnlockUnlockCode
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12018,14 +12029,14 @@ Enter a string value to use as the Unlock Code for an Unlock Action. This must b
 Use this *Sub-group* to configure Mobile Network Operator (MNO) Advanced Features as part of Wireless WAN configuration.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoAdvancedFeatures 
+- Key = wwanMnoAdvancedFeatures
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12043,16 +12054,16 @@ Select the Lock Action to be performed.
 - If the value ***Unlock*** is selected, you must also specify **Unlock Unlock Code** to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockAction 
+- Key = wwanMnoLockAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12064,14 +12075,14 @@ Select the Lock Action to be performed.
 Enter the Activation ID that will grant the MNO the permission to perform a Lock Action. The Activation ID must be acquired by an MNO from Zebra and typically will be tied to a set of pre-defined device identities and will enable an MNO to Lock those devices but no others.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockActionLockActivationId 
+- Key = wwanMnoLockActionLockActivationId
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12083,14 +12094,14 @@ Enter the Activation ID that will grant the MNO the permission to perform a Lock
 Enter the Control Key that will later be used to create Unlock Codes for devices Locked using that Control Key. An MNO can later use a tool provided by Zebra to produce individual one-time-use Unlock Codes that can be used to Unlock individual devices that were previously Locked by that MNO using that Control Key.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockActionLockControlKey 
+- Key = wwanMnoLockActionLockControlKey
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12102,14 +12113,14 @@ Enter the Control Key that will later be used to create Unlock Codes for devices
 Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maximum number of times a subsequent Unlock Action can be attempted unsuccessfully before disallowing Unlock.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockActionLockUnlockRetryCount 
+- Key = wwanMnoLockActionLockUnlockRetryCount
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12121,14 +12132,14 @@ Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maxi
 Enter the Network List, as one or more MCC or MNC values, identifying the network(s) to which a device should be Locked. To provide multiple values, separate with commas (e.g. 1,310410,31012).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockActionLockNetworkList 
+- Key = wwanMnoLockActionLockNetworkList
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12140,14 +12151,14 @@ Enter the Network List, as one or more MCC or MNC values, identifying the networ
 Enter a string value to use as the Unlock Code for an Unlock Action. This must be a device-specific value provided by the MNO that originally performed the Lock Action to be reversed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanMnoLockActionUnlockUnlockCode 
+- Key = wwanMnoLockActionUnlockUnlockCode
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12159,14 +12170,14 @@ Enter a string value to use as the Unlock Code for an Unlock Action. This must b
 Use this *Sub-group* to configure Service Technician Advanced Features as part of Wireless WAN configuration.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSvcAdvancedFeatures 
+- Key = wwanSvcAdvancedFeatures
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12178,14 +12189,14 @@ Use this *Sub-group* to configure Service Technician Advanced Features as part o
 Enter the Activation ID that will grant the Service Technician the permission to perform a Service operation. The Activation ID must be acquired by a Service Technician from Zebra.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSvcActivationId 
+- Key = wwanSvcActivationId
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12197,14 +12208,14 @@ Enter the Activation ID that will grant the Service Technician the permission to
 Select whether the current MNO Lock Information will be Exported and stored to a file on the SD Card of the device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSvcExport 
+- Key = wwanSvcExport
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12216,14 +12227,14 @@ Select whether the current MNO Lock Information will be Exported and stored to a
 Select whether the current MNO Lock Information will be Wiped, thus forcing the device to return to an Unlocked state.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSvcWipe 
+- Key = wwanSvcWipe
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12235,14 +12246,14 @@ Select whether the current MNO Lock Information will be Wiped, thus forcing the 
 Select whether MNO Lock Information will be Imported from a file stored on the SD Card of the device and used to Lock a device based on information previously Exported from the same or a different device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wwanSvcImport 
+- Key = wwanSvcImport
 
-- Type = boolean 
+- Type = boolean
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 9.2.
 
@@ -12255,14 +12266,14 @@ Select whether MNO Lock Information will be Imported from a file stored on the S
 Use this *Group* to configure the Worry Free WiFi features in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiStep 
+- Key = wfWiFiStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12279,16 +12290,16 @@ Select the state of the Worry Free WiFi features in a device.
 - If the value ***On*** is selected, all Worry Free WiFi features will be turned on (enabled), but may or may not be usable, depending on other configuration performed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiState 
+- Key = wfWiFiState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12303,14 +12314,14 @@ Select the state of the Worry Free WiFi features in a device.
 Use this *Sub-group* to configure Global Settings that control Worry Free WiFi behavior in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiGlobalSettings 
+- Key = wfWiFiGlobalSettings
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12325,14 +12336,14 @@ Use this *Sub-group* to configure Global Settings that control Worry Free WiFi b
 Enter the Existing Password to enabling changing that Password.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiExistingPassword 
+- Key = wfWiFiExistingPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12347,14 +12358,14 @@ Enter the Existing Password to enabling changing that Password.
 Enter the Password Value required by the Device User to access the in-device UI for configuring Worry Free WiFi features in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPassword 
+- Key = wfWiFiPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12371,16 +12382,16 @@ Select whether a Temporary Password feature will be Allowed or Disallowed.
 - If the value ***Allow*** is selected, the Temporary Password feature WILL be Allowed and you must also specify **Worry Free WiFi Configuration - Global Settings Temporary Password Duration** and **Worry Free WiFi Configuration - Global Settings Temporary Password Duration** to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiTemporaryPasswordState 
+- Key = wfWiFiTemporaryPasswordState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12395,14 +12406,14 @@ Select whether a Temporary Password feature will be Allowed or Disallowed.
 Enter a duration in hours after which a Temporary Password expires and must be replaced with a new one.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiTemporaryPasswordDuration 
+- Key = wfWiFiTemporaryPasswordDuration
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12417,14 +12428,14 @@ Enter a duration in hours after which a Temporary Password expires and must be r
 Enter a Temporary Password that can be shared with a Device User to provide temporary and limited access to configure Worry Free WiFi to collect packets and encrypt those packets without having to share the full administrative password (which provides full access and never expires).
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiTemporaryPassword 
+- Key = wfWiFiTemporaryPassword
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12441,16 +12452,16 @@ Select whether the Device User can access in-device UI for configuring Worry Fre
 - If the value ***Allow*** is selected, the Device User will be allowed to access in-device UI for configuring Worry Free WiFi features, if they can enter the Password configured via **Password Value**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiDeviceUserControl 
+- Key = wfWiFiDeviceUserControl
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12468,16 +12479,16 @@ Select the *Analysis Type* that will be used by the Worry Free WiFi features in 
 - If the value ***Connection*** is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to establishing connections.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiAnalysisType 
+- Key = wfWiFiAnalysisType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Roam&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Voice&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Connection&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Roam&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Voice&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Connection&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12505,16 +12516,16 @@ Select an Action to perform Worry Free WiFi features in a device.
 - If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiAction 
+- Key = wfWiFiAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Start&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Start&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12531,16 +12542,16 @@ Select whether Server Analytics should be performed during an *Analysis Session*
 - If the value ***Turn On*** is selected, Server Analytics will be performed during the *Analysis Session* that is started.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartServerAnalytics 
+- Key = wfWiFiActionStartServerAnalytics
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Turn Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Turn On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12557,16 +12568,16 @@ Select the Activity Mode for an *Analysis Session* started for the Worry Free Wi
 - If the value ***Background*** is selected, Analysis will be performed as a background task during the *Analysis Session* that is started.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartActivityMode 
+- Key = wfWiFiActionStartActivityMode
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Foreground&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Background&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Foreground&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Background&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12584,14 +12595,14 @@ Enter the network that will be used for an *Analysis Session* started for the Wo
 Note that if an *Analysis Session* is started for a network other than the currently configured network, the currently connected network will be disconnected so the specified network can be connected for use by the *Analysis Session*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartAnalysisSSID 
+- Key = wfWiFiActionStartAnalysisSSID
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12611,14 +12622,14 @@ Enter the name of the *Analysis Session* to be started for the Worry Free WiFi f
 The name assigned to an *Analysis Session* can help to analyze exported data by identifying the *Analysis Session* during which the data was collected.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartSessionName 
+- Key = wfWiFiActionStartSessionName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12636,16 +12647,16 @@ Select the Logger Report Level for an *Analysis Session* started for the Worry F
 - If the value ***Error*** is selected, only data that is related to errors that are detected will be logged.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartLoggerReportLevel 
+- Key = wfWiFiActionStartLoggerReportLevel
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Info&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Warning&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Error&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Info&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Warning&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Error&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12662,16 +12673,16 @@ Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi f
 - If the value ***Data Ping*** is selected, Pings sent during the *Analysis Session* that is started will include data.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartPingType 
+- Key = wfWiFiActionStartPingType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;No Data&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Data Ping&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;No Data&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Data Ping&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12688,16 +12699,16 @@ Select the Type of Remote Gateway for an *Analysis Session* started for the Worr
 - If the value ***Custom*** is selected, a custom Remote Gateway will be used and you must also specify **Custom Server Address** to provide the desired custom Gateway Server Address.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartRemoteGatewayType 
+- Key = wfWiFiActionStartRemoteGatewayType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Custom&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Default&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Custom&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12712,14 +12723,14 @@ Select the Type of Remote Gateway for an *Analysis Session* started for the Worr
 Enter the Custom Remote Gateway Server Address for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action** and if the value ***Custom*** is selected for **Start Remote Gateway Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartRemoteGatewayTypeCustomServerAddress 
+- Key = wfWiFiActionStartRemoteGatewayTypeCustomServerAddress
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12737,16 +12748,16 @@ Select how SD Card Storage will be used for an *Analysis Session* started for th
 - If the value ***Delete old Sessions*** is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiActionStartSdCardStorage 
+- Key = wfWiFiActionStartSdCardStorage
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Only Live Data&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete old Ping and Packet Data&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete old Sessions&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Only Live Data&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete old Ping and Packet Data&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete old Sessions&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12761,14 +12772,14 @@ Select how SD Card Storage will be used for an *Analysis Session* started for th
 Use this *Sub-group* to configure Settings that control the operation of Packet Capture by the Worry Free WiFi feature in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCapture 
+- Key = wfWiFiPacketCapture
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12785,16 +12796,16 @@ Select whether Packet Capture will be performed by the Worry Free WiFi feature i
 - If the value ***On*** is selected, the Packet Capture will NOT be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCaptureState 
+- Key = wfWiFiPacketCaptureState
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12809,14 +12820,14 @@ Select whether Packet Capture will be performed by the Worry Free WiFi feature i
 Enter the file name of the file into which Packet Capture data will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCaptureStateOnFileName 
+- Key = wfWiFiPacketCaptureStateOnFileName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12831,14 +12842,14 @@ Enter the file name of the file into which Packet Capture data will be stored by
 Enter the maximum size of the file into which Packet Capture data (in megabytes) will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCaptureStateOnMaxFileSize 
+- Key = wfWiFiPacketCaptureStateOnMaxFileSize
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12853,14 +12864,14 @@ Enter the maximum size of the file into which Packet Capture data (in megabytes)
 Enter the maximum amount of Packet Capture data (in megabytes) that will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCaptureStateOnMaxStorageSize 
+- Key = wfWiFiPacketCaptureStateOnMaxStorageSize
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12877,16 +12888,16 @@ Select the *Package Capture Type* that will be control the type of Packets that 
 - If the value ***All*** is selected, Worry Free WiFi will capture ALL Packets, including Packets that might contain sensitive data.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiPacketCaptureType 
+- Key = wfWiFiPacketCaptureType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Management Only&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;All&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Management Only&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;All&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12901,14 +12912,14 @@ Select the *Package Capture Type* that will be control the type of Packets that 
 Use this *Sub-group* to configure Settings that control the operation of Coverage View by the Worry Free WiFi feature in a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageView 
+- Key = wfWiFiCoverageView
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12925,16 +12936,16 @@ Select the *Scan Feature Type* that will control the type of Scanning that will 
 - If the value ***Scan*** is selected, then Worry Free WiFi will perform more limited scanning.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiScanFeatureType 
+- Key = wfWiFiScanFeatureType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Coverage View&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Coverage View&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Scan&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12961,16 +12972,16 @@ Select an Action to perform for Coverage View.
 - If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewAction 
+- Key = wfWiFiCoverageViewAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Start&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Start&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clear&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Export&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -12985,14 +12996,14 @@ Select an Action to perform for Coverage View.
 Enter the SSID that identifies the network to be used for Coverage View.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewActionStartSsid 
+- Key = wfWiFiCoverageViewActionStartSsid
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -13007,14 +13018,14 @@ Enter the SSID that identifies the network to be used for Coverage View.
 Enter the *Scan Interval* to be used for Coverage View.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewActionStartScanInterval 
+- Key = wfWiFiCoverageViewActionStartScanInterval
 
-- Type = integer 
+- Type = integer
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -13031,16 +13042,16 @@ Select whether an Auto Reachability Test should be performed as part of Coverage
 - If the value ***On*** is selected, Worry Free WiFi will perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewActionStartAutoReachabilityTest 
+- Key = wfWiFiCoverageViewActionStartAutoReachabilityTest
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -13057,16 +13068,16 @@ Select whether Server Analytics should be performed by Worry Free WiFi as part o
 - If the value ***On*** is selected, Worry Free WiFi will perform Server Analytics as part of Coverage View.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewActionStartServerAnalytics 
+- Key = wfWiFiCoverageViewActionStartServerAnalytics
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -13081,14 +13092,14 @@ Select whether Server Analytics should be performed by Worry Free WiFi as part o
 Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverage View when the value ***Start*** is selected for **Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = wfWiFiCoverageViewActionStartSessionName 
+- Key = wfWiFiCoverageViewActionStartSessionName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - NOT supported on Device(s): TC20 and TC25.
 
@@ -13104,14 +13115,14 @@ Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverag
 Use this *Group* to manage Zebra-issued licenses on a device.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseStep 
+- Key = zebraLicenseStep
 
-- Type = bundle 
+- Type = bundle
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13128,16 +13139,16 @@ Select an Action to manage Zebra-issued licenses on a device.
 - If the value ***Delete Server*** is selected, a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted. You must also specify **Delete Server Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* to be deleted.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseAction 
+- Key = zebraLicenseAction
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Activate License&nbsp;</small></i></b></td><td><small>&nbsp;Activate&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return License&nbsp;</small></i></b></td><td><small>&nbsp;Return&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return All Licenses&nbsp;</small></i></b></td><td><small>&nbsp;Reset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Refresh License&nbsp;</small></i></b></td><td><small>&nbsp;Refresh&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete Server&nbsp;</small></i></b></td><td><small>&nbsp;DeleteLicenseSource&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Activate License&nbsp;</small></i></b></td><td><small>&nbsp;Activate&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return License&nbsp;</small></i></b></td><td><small>&nbsp;Return&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Return All Licenses&nbsp;</small></i></b></td><td><small>&nbsp;Reset&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Refresh License&nbsp;</small></i></b></td><td><small>&nbsp;Refresh&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Delete Server&nbsp;</small></i></b></td><td><small>&nbsp;DeleteLicenseSource&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13152,16 +13163,16 @@ Select the method that should be used to activate a Zebra-issued license a devic
 - If the value ***From Local File*** is selected, the license will be activated from a license file stored in the device file system and you must also specify **From Local File Path and Name** and **From Local File Source Server Class** to provide the license file and the class of Server from which the license file was acquired.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethod 
+- Key = zebraLicenseActionActivateLicenseMethod
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;From Server Standard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;From Server Custom&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;From Local File&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;From Server Standard&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;From Server Custom&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;From Local File&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13173,14 +13184,14 @@ Select the method that should be used to activate a Zebra-issued license a devic
 Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be activated on a device when the value ***Activate License*** is selected for **License Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromServerAidValue 
+- Key = zebraLicenseActionActivateLicenseMethodFromServerAidValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13194,16 +13205,16 @@ Select the Class of Standard Server via which a Zebra-issued license will be act
 - If the value ***Test Cloud Direct*** is selected, the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet. The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromServerStandardClass 
+- Key = zebraLicenseActionActivateLicenseMethodFromServerStandardClass
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13219,16 +13230,16 @@ Select the Class of Custom Server via which a Zebra-issued license will be activ
 - If the value ***Other*** is selected, the license will be activated by communicating to some other Server. You must also specify **From Server Custom URL** to provide the Server to be used.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomClass 
+- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomClass
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Proxy&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Proxy&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Local Direct&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Other&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Proxy&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Proxy&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Local Direct&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Other&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13240,14 +13251,14 @@ Select the Class of Custom Server via which a Zebra-issued license will be activ
 Enter the URL of a Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomUrl 
+- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomUrl
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13262,14 +13273,14 @@ Enter a *Friendly Name* for a Custom Server via which a Zebra-issued license wil
 A *Friendly Name* is kept for each Custom Server used to acquire licenses and is used when later operating on such licenses to identify the Custom Server via which a license was acquired and hence via which it must be refreshed, returned, etc. The *Friendly Name* is also used to identify a Custom Server to be deleted.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomFriendlyName 
+- Key = zebraLicenseActionActivateLicenseMethodFromServerCustomFriendlyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13281,14 +13292,14 @@ A *Friendly Name* is kept for each Custom Server used to acquire licenses and is
 Enter the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Local File*** is selected for **Activate License Method**. You must also specify **From Local File Source Server Class** to identify the class of Server from which the license file was acquired, which could impact how it is processed.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName 
+- Key = zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13300,16 +13311,16 @@ Enter the local path and file name of a license file in the device file system f
 Select the class of Server from which the license file to be activated was acquired when the value ***Activate License*** is selected for **License Action** and when the value ***From Local File*** is selected for **Activate License Method** and when **From Local File Path and Name** is specified.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass 
+- Key = zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13324,16 +13335,16 @@ Select the Type of Standard Server via which a Zebra-issued license was activate
 - If the value ***Server Friendly Name*** is selected, the license will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionReturnLicenseServerType 
+- Key = zebraLicenseActionReturnLicenseServerType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Server Friendly Name&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Server Friendly Name&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -13345,14 +13356,14 @@ Select the Type of Standard Server via which a Zebra-issued license was activate
 Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value ***Return License*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return License Server Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionReturnLicenseServerTypeFriendlyName 
+- Key = zebraLicenseActionReturnLicenseServerTypeFriendlyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -13364,14 +13375,14 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-
 Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be returned on a device when the value ***Return License*** is selected for **License Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionReturnLicenseAidValue 
+- Key = zebraLicenseActionReturnLicenseAidValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -13386,16 +13397,16 @@ Select the Type of Standard Server via which a set of Zebra-issued licenses was 
 - If the value ***Server Friendly Name*** is selected, the licenses will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionReturnAllLicensesServerType 
+- Key = zebraLicenseActionReturnAllLicensesServerType
 
-- Type = string 
+- Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Server Friendly Name&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table> 
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Production Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Test Cloud Direct&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Server Friendly Name&nbsp;</small></i></b></td><td><small>&nbsp;3&nbsp;</small></td></tr></table>
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -13407,14 +13418,14 @@ Select the Type of Standard Server via which a set of Zebra-issued licenses was 
 Enter the *Friendly Name* that identifies the *Custom Server* via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value ***Return All Licenses*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return All Licenses Server Type**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionReturnAllLicensesServerTypeFriendlyName 
+- Key = zebraLicenseActionReturnAllLicensesServerTypeFriendlyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.
 
@@ -13426,14 +13437,14 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a set of
 Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be refreshed on a device when the value ***Refresh License*** is selected for **License Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionRefreshLicenseAidValue 
+- Key = zebraLicenseActionRefreshLicenseAidValue
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 7.1.
 
@@ -13445,13 +13456,13 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, when the value ***Delete Server*** is selected for **License Action**.
 
 
-**Detail Information:** 
+**Detail Information:**
 
-- Key = zebraLicenseActionDeleteServerFriendlyName 
+- Key = zebraLicenseActionDeleteServerFriendlyName
 
-- Type = string 
+- Type = string
 
 
-**Support Information:** 
+**Support Information:**
 
 - Supported from: MX 8.1.

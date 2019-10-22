@@ -31,11 +31,11 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 -----
 
-### What's New in v9.2
+### What's New in v9.2.2.3
 
 **For Enrollment Configuration**, now supports configurable items defined in a plug-in CSP. 
 
-**Now supports forthcoming release of MX 9.2**, which adds the following features:  
+**Now supports MX 9.2**, which adds the following features:  
 * **Device Administration Configuration: Reserve and Unreserve UI**
 * **Display Configuration: Control display size and font size**
 * **Wireless WAN Configuration: Supports WWAN advanced features**
@@ -43,10 +43,11 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 * **Service Access Configuration: Control access by apps to specific CSPs**
 * **Worry Free WiFi Configuration: Supports Worry Free Wi-Fi password features**
 * **DataWedge Configuration: Supports restrictions**
+* **File Manager Configuration: Supports use of the hyphen (-) character in file names**. 
 
 `IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.2 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
-For a detailed list of configuration parameters, see [Managed Configurations](../mc). 
+For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section. 
 
 -----
 

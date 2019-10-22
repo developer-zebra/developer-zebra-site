@@ -11,12 +11,11 @@ Voice Input enables DataWedge to convert spoken entries into keystrokes as if th
 Voice Input options:
 * Begin voice capture with a defined start phrase or PTT button
 * Terminate voice capture with a phrase or timeout value
-* Send a TAB character when speaking the "send tab" command
-* Send an ENTER character when speaking the "send enter" command
 * Limit returned data to alpha or numeric characters
 * Play an audio prompt when waiting for a start phrase or data capture
 * Validate spoken data, edit acquired data as needed
 * Works offline
+* Set voice commands to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, Clear.
 
 >This feature is supported only on Zebra Android Nougat and Oreo GMS devices.
 
@@ -24,6 +23,7 @@ Watch the DevTalk presentation on DataWedge Voice Input:
 <div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 
 ## Version History
+* **DataWedge 7.5** - New voice commands to navigate within the foreground app or issue specific key presses.
 * **DataWedge 7.4** - Introduced voice capture activation by PTT (push-to-talk) button with new **Start option voice input** parameter for DataWedge Intent API.
 
 ##How it Works
@@ -58,9 +58,25 @@ Voice Input features are accessible from the DataWege profile.
 
 * **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _The default value is "0."_ 
 
-* **Tab command** - Sends a tab key when speaking the command "send tab". This command is supported only when the device is at the "waiting for start phrase" state. 
-
-* **Enter command** - Sends an enter key when speaking the command "send enter." This command is supported only when the device is at the "waiting for start phrase" state. 
+* **Voice commands** - Configure and set voice commands to navigate a foreground application. Commands are supported only when the device is in the "waiting for start phrase" state. 
+  * **Tab command** - Sends a tab key when speaking the specified phrase. 
+      * **Enabled** – Enable/disable the tab command.
+      * **Phrase** - Sets the command phrase to send a tab key. The default phrase is "send tab.” 
+  * **Enter command** - Sends an enter key when speaking the specified phrase.
+      * **Enabled** – Enable/disable the enter command.
+      * **Phrase** - Sets the command phrase to send an enter key. The default phrase is "send enter.
+  * **Move next command** - Move to the next input field when speaking the specified command. 
+      * **Enabled** – Enable/disable the move next command.
+      * **Phrase** - Sets the command phrase to move to the next input field. The default phrase is “move next.” 
+  * **Move previous command** - Move to the previous input field when speaking the specified phrase. 
+      * **Enabled** – Enable/disable move previous command 
+      * **Phrase** - Sets the command phrase to move to the previous input field. The default phrase is “move previous.” 
+  * **Escape command** - Send the escape (ESC) key when speaking the specified phrase. 
+      * **Enabled** – Enable/disable escape command 
+      * **Phrase** - Sets the command phrase to send an ESC key. The default phrase is "send escape.” 
+  * **Clear command** - Clear the current input field in focus when speaking the specified phrase. 
+      * **Enabled** – Enable/disable the clear command.
+      * **Phrase** - Sets the command phrase to clear the field. The default phrase is “clear.”      
 
 * **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. 
 Data type selections:
@@ -89,7 +105,7 @@ Data type selections:
 
 DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) to configure the following Voice Input parameters:
 
-<table class="facelift" style="width:60%" border="1" padding="5px">
+<table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef" align="center">
     <th>Param Name</th> 
     <th>Param Values</th> 
@@ -98,6 +114,10 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
   <tr>
     <td>voice_input_enabled</td>
     <td>true, false</td>
+  </tr>
+  <tr>
+    <td>voice_data_capture_start_option</td>
+    <td>0 - Start phrase (default)<br>1 - PTT button</td>
   </tr>
   <tr>
     <td>voice_data_capture_start_phrase</td>
@@ -112,16 +132,56 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
     <td>0-30 (in seconds)</td>
   </tr>
   <tr>
-    <td>voice_tab_command</td>
-    <td>true, false</td>
+    <td>voice_command_tab_enabled</td>
+    <td>true<br>false (default) </td>
   </tr>
   <tr>
-    <td>voice_enter_command</td>
-    <td>true, false</td>
+    <td>voice_command_tab_phrase </td>
+    <td>send tab (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_enter_enabled</td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_enter_phrase </td>
+    <td>send enter (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_move_next_enabled </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_move_next_phrase  </td>
+    <td>move next (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_move_previous_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_move_previous_phrase  </td>
+    <td>move previous (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_escape_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_escape_phrase  </td>
+    <td>send escape (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_clear_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_clear_phrase  </td>
+    <td>clear (default)</td>
   </tr>
   <tr>
     <td>voice_data_type</td>
-    <td>0 - Any, 1 - Alpha, 2 - Numeric</td>
+    <td>0 - Any<br>1 - Alpha<br>2 - Numeric</td>
   </tr>
   <tr>
     <td>voice_start_phrase_waiting_tone</td>
@@ -136,16 +196,8 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
     <td>true, false</td>
   </tr>
   <tr>
-    <td>voice_data_capture_waiting_tone</td>
-    <td>true, false</td>
-  </tr>
-  <tr>
     <td>voice_offline_speech</td>
     <td>true, false</td>
-  </tr>
-  <tr>
-    <td>voice_data_capture_start_option</td>
-    <td>START_PHRASE (default) <br>PTT_BUTTON</td>
   </tr>
 </table>
 

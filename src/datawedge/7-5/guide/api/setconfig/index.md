@@ -34,8 +34,8 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
 * **DataWedge 7.3.22 -** Added new RFID Input feature 
-* **DataWedge 7.5 -** New Enterprise Keyboard Configuration feature, added DPM support, increased the maximum number of barcodes supported by MultiBarcode.
-<!--* **DataWedge 7.5 -** Added new Enterprise Keyboard Configuration feature. -->
+* **DataWedge 7.5 -** New Enterprise Keyboard Configuration feature, added DPM support, increased the maximum number of barcodes supported by MultiBarcode, added new voice input parameters.
+Deprecated voice_enter_command and voice_tab_command voice input parameters.
 
 ### Function Prototype
 
@@ -1201,14 +1201,14 @@ Other Scanner Input Parameters:
 	</tr>
 	<tr>
 		<td>voice_data_capture_start_phrase</td>
-		<td>start (default value)</td>
+		<td>start (default)</td>
 	</tr>
 	<tr>
 		<td>voice_data_capture_end_phrase</td>
-		<td><i>[blank]</i> (default value)</td>
+		<td><i>[blank]</i> (default)</td>
 	</tr>
 	<tr>
-		<td>voice_enter_command</td>
+		<td>voice_enter_command<br><i>Deprecated starting with DataWedge 7.5 and replaced with voice_command_enter_enabled.</i></td>
 		<td>true<br>false</td>
 	</tr>
 	<tr>
@@ -1231,6 +1231,54 @@ Other Scanner Input Parameters:
 		<td>voice_offline_speech</td>
 		<td>true<br>false</td>
 	</tr>
+	<tr>
+    <td>voice_command_tab_enabled</td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_tab_phrase </td>
+    <td>send tab (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_enter_enabled</td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_enter_phrase </td>
+    <td>send enter (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_move_next_enabled </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_move_next_phrase  </td>
+    <td>move next (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_move_previous_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_move_previous_phrase  </td>
+    <td>move previous (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_escape_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_escape_phrase  </td>
+    <td>send escape (default)</td>
+  </tr>
+  <tr>
+    <td>voice_command_clear_enabled  </td>
+    <td>true<br>false (default) </td>
+  </tr>
+  <tr>
+    <td>voice_command_clear_phrase  </td>
+    <td>clear (default)</td>
+  </tr>
 </table>
 
 -----
@@ -1984,39 +2032,78 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 
 ###Set voice input configuration
 
-    Bundle bMain = new Bundle();
-    bMain.putString("PROFILE_NAME", "DWDemo");
-    bMain.putString("PROFILE_ENABLED", "true");
-    bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+    public void CreateProfile (View view) { 
+    ArrayList<Bundle> plugins = new ArrayList(); 
 
-    Bundle bConfig = new Bundle();
-    bConfig.putString("PLUGIN_NAME","VOICE");
-    bConfig.putString("RESET_CONFIG","false");
+    // Configure created profile to apply to this app 
+    Bundle profileConfig = new Bundle(); 
+    profileConfig.putString("PROFILE_NAME", EXTRA_PROFILENAME); 
+    profileConfig.putString("PROFILE_ENABLED", "true"); 
+    profileConfig.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");  // Create profile if it does not exist 
 
-    Bundle bParams = new Bundle();
-    bParams.putString("voice_input_enabled","true"); // Supported Values: true, false
-    bParams.putString("voice_data_capture_start_phrase","hi");
-    bParams.putString("voice_data_capture_end_phrase","end");
-    bParams.putString("voice_end_detection_timeout","3");
-    bParams.putString("voice_tab_command","true"); // Supported Values: true, false
-    bParams.putString("voice_enter_command","true"); // Supported Values: true, false
-    bParams.putString("voice_data_type","1");
-    bParams.putString("voice_start_phrase_waiting_tone","true"); // Supported Values: true, false
-    bParams.putString("voice_data_capture_waiting_tone","false"); // Supported Values: true, false
-    bParams.putString("voice_validation_window","true"); // Supported Values: true, false
-    bParams.putString("voice_offline_speech","true"); // Supported Values: true, false
+    // Associate profile with this app 
+    Bundle appConfig = new Bundle(); 
+    appConfig.putString("PACKAGE_NAME", getPackageName()); 
+    appConfig.putStringArray("ACTIVITY_LIST", new String[]{"*"}); 
+    profileConfig.putParcelableArray("APP_LIST", new Bundle[]{appConfig}); 
+     
+    // Configure intent output for captured data to be sent to this app 
+    Bundle intentConfig = new Bundle(); 
+    intentConfig.putString("PLUGIN_NAME", "INTENT"); 
+    intentConfig.putString("RESET_CONFIG", "true"); 
 
-    bConfig.putBundle("PARAM_LIST", bParams);
+    Bundle intentProps = new Bundle(); 
+    intentProps.putString("intent_output_enabled", "true"); 
+    intentProps.putString("intent_action", "com.zebra.datacapture1.ACTION"); 
+    intentProps.putString("intent_delivery", "2"); 
+    intentConfig.putBundle("PARAM_LIST", intentProps); 
+ 
+    plugins.add(intentConfig); 
 
-    bMain.putBundle("PLUGIN_CONFIG", bConfig); //true, false
+    // Add Voice Input Configuration 
+    Bundle voiceConfig = new Bundle(); 
+    voiceConfig.putString("PLUGIN_NAME", "VOICE"); 
+    voiceConfig.putString("RESET_CONFIG", "false"); 
+    Bundle bParams = new Bundle(); 
+    bParams.putString("voice_input_enabled", "true"); 
+    bParams.putString("voice_data_capture_start_phrase", "hello"); 
+    bParams.putString("voice_data_capture_end_phrase", ""); 
+    bParams.putString("voice_end_detection_timeout", "3"); 
+    bParams.putString("voice_data_type", "1"); 
+    bParams.putString("voice_start_phrase_waiting_tone", "true"); 
+    bParams.putString("voice_data_capture_waiting_tone", "true"); 
+    bParams.putString("voice_validation_window", "true"); 
+    bParams.putString("voice_offline_speech", "false"); 
+    bParams.putString("voice_data_capture_start_option", "0"); 
+    bParams.putString("voice_command_tab_enabled", "true"); 
+    bParams.putString("voice_command_tab_phrase", "tab"); 
+    bParams.putString("voice_command_enter", "true"); 
+    bParams.putString("voice_command_enter_phrase", "enter"); 
+    bParams.putString("voice_command_move_next_enabled", "true"); 
+    bParams.putString("voice_command_move_next_phrase", "next"); 
+    bParams.putString("voice_command_move_previous_enabled", "true"); 
+    bParams.putString("voice_command_move_previous_phrase", "previous"); 
+    bParams.putString("voice_command_escape_enabled", "true"); 
+    bParams.putString("voice_command_escape_phrase", "escape"); 
+    bParams.putString("voice_command_clear_enabled", "true"); 
+    bParams.putString("voice_command_clear_phrase", "empty"); 
+    voiceConfig.putBundle("PARAM_LIST", bParams); 
+     
+    // Add Voice Input plugin Configuration to the plugins list 
+    plugins.add(voiceConfig); 
 
-    Intent i = new Intent();
-    i.setAction("com.symbol.datawedge.api.ACTION");
-    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-		i.putExtra("SEND_RESULT","LAST_RESULT");
-		// i.putExtra("SEND_RESULT", "true");  // For versions prior to DataWedge 7.1
-    i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG");
-    this.sendBroadcast(i);
+    // Add plugins list to the bundle 
+    profileConfig.putParcelableArrayList("PLUGIN_CONFIG", plugins); 
+ 
+    // Broadcast the intent.  
+
+    Intent i = new Intent(); 
+    i.setAction("com.symbol.datawedge.api.ACTION"); 
+    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", profileConfig); 
+    i.putExtra("SEND_RESULT","LAST_RESULT");  
+    i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG"); 
+    this.sendBroadcast(i);  
+		} 
 
 ### Set BDF processing
 Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. [About BDF](../../process/bdf). [About ADF](../../process/adf). 

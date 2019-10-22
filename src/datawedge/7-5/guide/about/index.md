@@ -112,11 +112,13 @@ For more information about approved languages or to download a localized operati
 * New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
+* New **[Voice Input parameters](../input/voice)** to set voice commands to navigate within the foreground app or issue specific key presses.
+* Deprecated "voice_enter_command" (replaced by "voice_command_enter_enabled") and "voice_tab_command" (replaced by "voice_command_tab_enabled") [voice input parameters](../input/voice).
 
 -----
 ## Recent Version History
 
-## Added in DataWedge 7.4
+### Added in DataWedge 7.4
 * **DataWedge 7.5 and later versions only support Android Oreo (v8.0) and later.**
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/voice).
 * Added new **[DPM support](../input/barcode#readerparams)** for barcode reader and [SetConfig](../api/setconfig) API.

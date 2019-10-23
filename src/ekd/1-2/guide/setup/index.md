@@ -6,12 +6,11 @@ productversion: '1.2'
 ---
 
 ## Installation
-EKD is installed in the same was as any Windows application. 
+Enterprise Keyboard Designer is installed in the same was as any Windows application. 
 
-1. Download the “`EnterpriseKeyboardDesigner.exe`” onto the target Windows system. 
-2. Double-click `.exe` file to run the installer.
-3. Follow prompts presented by the installer. 
-
-**Enterprise Keyboard Designer launches automatically when installation completes successfully**.
+1. [Download Enterprise Keyboard Designer](../../download) installation file onto the target Windows system. 
+2. Double-click the “`EnterpriseKeyboardDesigner.exe`” file to run the installer.
+3. Follow prompts presented by the installer. <br>**Enterprise Keyboard Designer launches automatically when installation completes successfully**.
+4. Go to the [EKD Usage page](../usage) for step-by-step EKD usage instructions. 
 
 -----

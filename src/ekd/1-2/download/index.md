@@ -6,8 +6,17 @@ productversion: '1.2'
 ---
 
 ### How To Download
+Enterprise Keyboard Designer is a utility for Windows 7, 8 and 10 computers that's available for free from the Zebra Support Portal. 
 
-1. **[Visit the EKD download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**.
-2. **Scroll down to the desired EKD version** corresponding to the <u>Android version on the target device</u>.
-3. Download and install the package using the standard procedure for Windows application installation.
+#### To Download EKD: 
 
+1. **[Visit the EKD download page](https://www.zebra.com/ekd)**.
+2. **Locate and click on the "download" link**.
+3. Optionally download and read the Release Notes (PDF) file for support information. 
+4. Install the package using the standard Windows-app [installation process](../setup).
+
+<!-- 10/22/19- "vanity" link provided by support portal team to replace full URL
+
+https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard-designer.html 
+
+-->

@@ -151,9 +151,10 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-7. **Click "Save Grid Layout" button** to store settings. <br>
+7. **Click "Save Grid Layout" button** to store settings.<br> **`NOTE:` Once a grid is saved, its properties cannot be changed**.
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
-9. **Click "Save Project" to create a project file for deployment**.
+9. **Click "Save Layout" button** to store settings. 
+10. **Click "Save Project" to create a project file for deployment**.
 <br>
 
 #### Grid Usage Notes
@@ -267,10 +268,9 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 > **Note: Entries are case sensitive**. 
 
-#### Layout Naming and KeyAction 
+#### Usage Notes 	
 
-##### Usage Notes 	
-
+* **Switching layouts is supported on Enterprise Keyboard only**.
 * **Do NOT use the terms shown below as custom names**; they are reserved for default Enterprise Keyboard layouts: 
  * abc
  * 123
@@ -283,7 +283,6 @@ Button Actions supported by EKD include predefined command strings for generatin
  * switch-scan
  * customLayout
  * key-[any Content]
-* **Switching layouts is supported on Enterprise Keyboard only**.
 
 <!-- 10/21/19- removed per eng.
 * The following reserved names must not be used in modal input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
@@ -351,7 +350,7 @@ _Click image to enlarge, ESC to exit_.
 * **Haptic Feedback**
 * **Duration**
 
-**These properties can be assigned <u>only to individual keys</u>**: 
+**These properties CANNOT be assigned <u>to multi-selected keys</u>**: 
 
 * **Button action properties**: 
  * **Press Action**
@@ -365,8 +364,6 @@ _Click image to enlarge, ESC to exit_.
  * **Top**
  * **Width**
  * **Height** 
-
-
 
 #### Usage Notes
 * **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 

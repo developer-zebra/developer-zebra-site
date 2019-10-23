@@ -851,6 +851,10 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 **Illumination mode -**  Turns illumination on and off.
 
+**Illumination Brightness -** Adjusts the brightness for the scanning session. Integer values: 0 - 10.
+* **Low (0) -** Low intensity illumination during scanning session.
+* **High (10) -** Maximum intensity illumination during scanning session (default).
+
 **Aim Mode -** Turns aim pattern on and off.
 
 **Aim Type -** Permits selection of reader behavior when the trigger is pressed: 

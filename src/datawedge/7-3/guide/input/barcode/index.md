@@ -960,6 +960,10 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 **Illumination mode -**  Turns illumination on and off.
 
+**Illumination Brightness -** Adjusts the brightness for the scanning session. Integer values: 0 - 10.
+* **Low (0) -** Low intensity illumination during scanning session.
+* **High (10) -** Maximum intensity illumination during scanning session (default).
+
 **Inverse 1D Mode -** Permits option selection for inverse 1D barcode decoding: 
 
 * **Disabled -** Disables decoding of inverse 1D symbologies.

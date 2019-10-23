@@ -878,7 +878,7 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>illumination_brightness</td>
-	<td>Integer from 1–10</td>
+	<td>Integer from 0–10</td>
   </tr>
 
   <tr>

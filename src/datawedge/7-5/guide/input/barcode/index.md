@@ -969,8 +969,8 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 * **DPM Mode 1 -** Optimizes decoding performance for smaller DPM barcodes, typically found on electronics and medical instruments, especially on smooth surfaces. These barcodes tend to be laser etched or direct printed.
 * **DPM Mode 2 -** Optimizes decoding performance for larger DPM barcodes, typically found on industrial parts, especially on rough, grainy or visibly machined surface. These barcodes tend to be dot peen or laser etched.
 
-**Illumination Brightness -** Adjusts the brightness for the scanning session. Integer values: 1 - 10.
-* **Low (1) -** Low intensity illumination during scanning session.
+**Illumination Brightness -** Adjusts the brightness for the scanning session. Integer values: 0 - 10.
+* **Low (0) -** Low intensity illumination during scanning session.
 * **High (10) -** Maximum intensity illumination during scanning session (default).
 
 **Illumination mode -**  Turns illumination on and off.

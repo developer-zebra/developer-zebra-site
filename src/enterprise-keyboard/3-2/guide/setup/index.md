@@ -19,11 +19,11 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 * Manually at the device
 * Remotely:
     * Using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service 
-    * Through a company's own mobile device management (MDM) system (if supported by that system) 
+    * Through a company's own enterprise mobility management (EMM) system (if supported by that system) 
 
 -----
 
-## Multi-user Mode
+### About Multi-user Mode
 
 Enterprise Keyboard 2.0 (and higher) supports Primary and Secondary Users **on devices built with Zebra's SDM660 platform (including PS20, TC52, TC57, TC72 and TC77) running Android 8.x Oreo**. Primary Users can make changes to EKB settings and create Secondary Users on the device. Secondary Users cannot change EKB settings or create additional users. 
 

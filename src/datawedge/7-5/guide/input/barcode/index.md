@@ -239,30 +239,37 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MICR E13B</p></td>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 </tr>
+<tr>
+<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#ocra">OCR A</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#ocrb">OCR B</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
+<td align="left" valign="top"><p class="table">US Currency</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
-<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -805,6 +812,34 @@ Note: **Handling large image data -** Since the data size of a single image (whi
 
 ------
 
+### OCR A
+
+**OCR A Variant -** Font variants supported:
+* **Full ASCII -** !"#$()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ\^
+* **Reserved 1 -** $*+-./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+*	**Reserved 2 -** $*+-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+* **Banking -** -0123456789<>
+
+------
+
+### OCR B
+
+**OCR B Variant -** Font variants supported:
+* **Full ASCII -** !#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ^|Ñ
+*	**Banking -** #+-0123456789<>JNP|
+*	**Limited -** +,-./0123456789<>ACENPSTVX
+*	**ISBN 1 -** 10-Digit Book Numbers (-0123456789>BCEINPSXz)
+*	**ISBN 2 -** 10 or 13-Digit Book Numbers (-0123456789>BCEINPSXz)
+*	**Travel Document 1 -** Travel Document Version 1 (TD1) 3-Line ID Cards (-0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+* **Travel Document 2 -** Travel Document Version 2 (TD2) 2-Line ID Cards (-0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+*	**Travel Document 3 -** Travel Document 2 or 3-Line ID Cards Auto-Detect (!#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ^|Ñ)
+* **Passport -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZÑ
+*	**Visa Type A -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ
+*	**Visa Type B -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZÑ
+*	**ICAO Travel Documents -** This allows reading either TD1, TD2, Passport, Visa Type A, or Visa Type B without switching between these options. It automatically recognizes the travel document read.
+
+------
+
 ### UK Postal
 
 **Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox sends UK Postal data with a check digit.
@@ -1132,7 +1167,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
-## UDI Decoding
+## UDI Params
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
 
 **This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
@@ -1157,7 +1192,7 @@ _When UDI scanning mode is enabled (as above)_...
 
 -----
 
-## MultiBarcode Decoding
+## MultiBarcode Params
 MultiBarcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes per scan is reached. **Basic MultiBarcode** is enabled through **Scanning Modes** within **Reader Params**, per above.
 
 <table>
@@ -1189,6 +1224,55 @@ Basic MultiBarcode params:
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
 * **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
+
+-----
+
+## OCR Params
+Optical character recognition (OCR) decoding is not as secure as barcode. To decrease OCR misdecodes and speed OCR reading, set an accurate OCR template and character subset, and use a check digit. Enabling OCR can slow barcode decoding. Enabling more than one OCR font could also slow OCR decoding and impact OCR decoding accuracy.
+
+**Inverse OCR -** White or light words on a black or dark background. Select an option for decoding inverse OCR: 
+* **Regular Only -** Decode regular OCR (black on white) strings only. 
+* **Inverse Only -** Decode inverse OCR (white on black) strings only. 
+* **Auto-discriminate -** Decode both regular and inverse OCR strings.
+
+**OCR Check Digit Modulus -** Sets the OCR module check digit calculation. The check digit is the last digit (in the right most position) in an OCR string and improves the accuracy of the collected data. The check digit is the end product of a calculation made on the incoming data. For check digit calculation, for example Modulus 10, alpha and numeric characters are assigned numeric weights. The calculation is applied to the character weights and the resulting check digit is added to the end of the data. If the incoming data does not match the check digit, the data is considered corrupt. The selected check digit option does not take effect until you set OCR Check Digit Validation. <<Add more info from PRG>>
+
+**OCR Check Digit Multiplier -** Sets OCR check digit multipliers for the character positions. For check digit validation, each character in scanned data has an equivalent weight used in the check digit calculation <<Add more info from PRG>>
+
+**OCR Check Digit Validation -** Protects against scanning errors by applying a check digit validation scheme. Options:
+* **None -** 0 (default)
+* **Product Add Left to Right -** Each character in the scanned data is assigned a numeric value. Each digit representing a character in the scanned data is multiplied by its corresponding digit in the multiplier, and the sum of these products is computed. The check digit passes if this sum modulo Check Digit Modulus is zero. 
+* **Product Add Right to Left -** Each character in the scanned data is assigned a numeric value.
+The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products is computed. The check digit passes if this sum modulo Check Digit Modulus is zero. 
+* **Digit Add Left to Right -** Each character in the scanned data is assigned a numeric value.
+Each value representing a character in the scanned data is multiplied by its corresponding digit in the multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
+* **Digit Add Right to Left -** Each character in the scanned data is assigned a numeric value.
+The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
+* **Product Add Right to Left Simple Remainder -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products except for the check digit's product is computed. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product. 
+* **Digit Add Right to Left Simple Remainder -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products <i>except for the check digit's product</i> is then calculated. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product. 
+* **Health Industry - HIBCC43 -** The health industry module 43 check digit standard. The check digit is the modulus 43 sum of all the character values in a given message, and is printed as the last character in a given message.
+
+**OCR Lines -** Select the number of OCR lines to decode:
+* 1 Line
+*	2 Line
+*	3 Line
+
+**OCR Maximum Characters -** Select the maximum number of OCR characters (including spaces) per line to decode.
+
+**OCR Minimum Characters -** Select the minimum number of OCR characters (not including spaces) per line to decode.
+
+**OCR Orientation -** Select the orientation of an OCR string to be read. Setting an incorrect orientation can cause mis-decodes. Options: 
+* **0 degree -** to the imaging engine (default) 
+* **270 degree -** clockwise (or 90o counterclockwise) to the imaging engine 
+* **180 degree -** (upside down) to the imaging engine 
+* **90 degree -** clockwise to the imaging engine 
+* **Omnidirectional** 
+
+**OCR Quiet Zone -** Sets the field width of blank space to stop scanning during OCR reading. 
+
+**OCR Subset -** Defines a custom group of characters in place of a preset font variant. For example, if scanning only numbers and the letters A, B, and C, create a subset of just these characters to speed decoding. This applies a designated OCR Subset across all enabled OCR fonts. 
+
+**OCR Template -** Creates a template for precisely matching scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates scanning errors. The template expression is be formed by numbers and letters. 
 
 ------
 

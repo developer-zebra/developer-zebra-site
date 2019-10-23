@@ -869,7 +869,7 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>illumination_brightness</td>
-	<td>Integer from 1–10</td>
+	<td>Integer from 0–10</td>
   </tr>
 
   <tr>
@@ -1200,6 +1200,10 @@ Other Scanner Input Parameters:
 		<td>true<br>false</td>
 	</tr>
 	<tr>
+		<td>voice_data_capture_start_option</td>
+		<td>0 - Start phrase<br>1 - PTT button</td>
+	</tr>
+	<tr>
 		<td>voice_data_capture_start_phrase</td>
 		<td>start (default)</td>
 	</tr>
@@ -1208,8 +1212,8 @@ Other Scanner Input Parameters:
 		<td><i>[blank]</i> (default)</td>
 	</tr>
 	<tr>
-		<td>voice_enter_command<br><i>Deprecated starting with DataWedge 7.5 and replaced with voice_command_enter_enabled.</i></td>
-		<td>true<br>false</td>
+		<td>voice_end_detection_timeout</td>
+		<td>0-30 (in seconds)</td>
 	</tr>
 	<tr>
 		<td>voice_data_type</td>

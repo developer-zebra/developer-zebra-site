@@ -112,7 +112,7 @@ For more information about approved languages or to download a localized operati
 * New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
-* New **[Voice Input parameters](../input/voice)** to set voice commands to navigate within the foreground app or issue specific key presses.
+* New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.
 * Deprecated "voice_enter_command" (replaced by "voice_command_enter_enabled") and "voice_tab_command" (replaced by "voice_command_tab_enabled") [voice input parameters](../input/voice).
 
 -----

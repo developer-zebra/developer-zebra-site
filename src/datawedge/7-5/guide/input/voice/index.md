@@ -11,11 +11,11 @@ Voice Input enables DataWedge to convert spoken entries into keystrokes as if th
 Voice Input options:
 * Begin voice capture with a defined start phrase or PTT button
 * Terminate voice capture with a phrase or timeout value
+* Set voice commands to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, Clear.
 * Limit returned data to alpha or numeric characters
 * Play an audio prompt when waiting for a start phrase or data capture
 * Validate spoken data, edit acquired data as needed
 * Works offline
-* Set voice commands to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, Clear.
 
 >This feature is supported only on Zebra Android Nougat and Oreo GMS devices.
 
@@ -42,7 +42,14 @@ Watch a demo showcasing the **Send Enter** command for multiple field entries: <
 
 Voice Input features are accessible from the DataWege profile.
 
-![img](voice-input-settings.jpg) 
+<table>
+  <tr>
+    <td><img style="height:350px" src="voice-input-1.png"/></td>
+    <td>&nbsp; &nbsp; &nbsp;</td>
+    <td><img style="height:350px" src="voice-input-2.png"/></td>
+  </tr>
+</table>
+<i>Figure 1 & 2. Voice input settings</i>
 
 * **Enabled** - Enables voice input. 
 
@@ -58,25 +65,39 @@ Voice Input features are accessible from the DataWege profile.
 
 * **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _The default value is "0."_ 
 
-* **Voice commands** - Configure and set voice commands to navigate a foreground application. Commands are supported only when the device is in the "waiting for start phrase" state. 
-  * **Tab command** - Sends a tab key when speaking the specified phrase. 
-      * **Enabled** – Enable/disable the tab command.
-      * **Phrase** - Sets the command phrase to send a tab key. The default phrase is "send tab.” 
-  * **Enter command** - Sends an enter key when speaking the specified phrase.
-      * **Enabled** – Enable/disable the enter command.
-      * **Phrase** - Sets the command phrase to send an enter key. The default phrase is "send enter.
-  * **Move next command** - Move to the next input field when speaking the specified command. 
-      * **Enabled** – Enable/disable the move next command.
-      * **Phrase** - Sets the command phrase to move to the next input field. The default phrase is “move next.” 
-  * **Move previous command** - Move to the previous input field when speaking the specified phrase. 
-      * **Enabled** – Enable/disable move previous command 
-      * **Phrase** - Sets the command phrase to move to the previous input field. The default phrase is “move previous.” 
-  * **Escape command** - Send the escape (ESC) key when speaking the specified phrase. 
-      * **Enabled** – Enable/disable escape command 
-      * **Phrase** - Sets the command phrase to send an ESC key. The default phrase is "send escape.” 
-  * **Clear command** - Clear the current input field in focus when speaking the specified phrase. 
-      * **Enabled** – Enable/disable the clear command.
-      * **Phrase** - Sets the command phrase to clear the field. The default phrase is “clear.”      
+* **Voice commands** - Configure and set voice commands to navigate a foreground application. Commands are supported only when the device is in the "waiting for start phrase" or "press and hold PTT button to speak data" states. 
+<ul style="margin-left: 16px;">
+  <li><b>Tab command</b> - Sends a tab key event when speaking the specified phrase. </li>
+    <ul>
+      <li><b>Enabled</b> – Enable/disable the tab command.</li>
+      <li><b>Phrase</b> - Sets the command phrase to send a tab key. The default phrase is "send tab.” </li>
+    </ul>
+  <li><b>Enter command</b> - Sends an enter key event when speaking the specified phrase.</li>
+    <ul>
+      <li><b>Enabled</b> – Enable/disable the enter command.</li>
+      <li><b>Phrase</b> - Sets the command phrase to send an enter key. The default phrase is "send enter.</li>
+    </ul>
+  <li><b>Move next command</b> - Move to the next input field when speaking the specified phrase. </li>
+    <ul>
+      <li><b>Enabled</b> – Enable/disable the move next command.</li>
+      <li><b>Phrase</b> - Sets the command phrase to move to the next input field. The default phrase is “move next.”</li>
+    </ul>
+  <li><b>Move previous command</b> - Move to the previous input field when speaking the specified phrase. </li>
+    <ul>
+      <li><b>Enabled</b> - Enable/disable move previous command </li>
+      <li><b>Phrase</b> - Sets the command phrase to move to the previous input field. The default phrase is “move previous.” </li>
+    </ul>
+  <li><b>Escape command</b> - Send the escape (ESC) key when speaking the specified phrase. </li>
+    <ul>
+      <li><b>Enabled</b> – Enable/disable escape command </li>
+      <li><b>Phrase</b> - Sets the command phrase to send an ESC key. The default phrase is "send escape.” </li>
+    </ul>
+  <li><b>Clear command</b> - Clear the current input field in focus when speaking the specified phrase. </li>
+    <ul>
+      <li><b>Enabled</b> – Enable/disable the clear command.</li>
+      <li><b>Phrase</b> - Sets the command phrase to clear the field. The default phrase is “clear.” </li> 
+    </ul>
+</ul>
 
 * **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. 
 Data type selections:
@@ -110,7 +131,6 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
     <th>Param Name</th> 
     <th>Param Values</th> 
   </tr>
-
   <tr>
     <td>voice_input_enabled</td>
     <td>true, false</td>
@@ -121,11 +141,11 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
   </tr>
   <tr>
     <td>voice_data_capture_start_phrase</td>
-    <td>start (default value)</td>
+    <td>start (default)</td>
   </tr>
   <tr>
     <td>voice_data_capture_end_phrase</td>
-    <td>[blank] (default value)</td>
+    <td>[blank] (default)</td>
   </tr>
   <tr>
     <td>voice_end_detection_timeout</td>

@@ -7,9 +7,22 @@ productversion: '3.2'
 
 ## Overview
 
-Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
+Enterprise Keyboard (EKB) builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
 Enterprise Keyboard uses Android's Personal Dictionary feature for spelling corrections and shortcut substitutions, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
+
+### Enterprise Keyboard Designer
+
+EKB 3.2 (and higher) supports the use of custom key layouts made with [Enterprise Keyboard Designer](/ekd) (EKD), a free GUI tool for Windows offering control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 EKD layouts can be **displayed programmatically on a device using Android intents or DataWedge 7.4.44 (and higher)** when specific input situations arise. 
+
+<img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
+
+_Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, ESC to exit_.
+<br>
+
+> [Go to Enterprise Keyboard Designer](/ekd)
+
+-----
 
 ## Customizing Keyboard Settings
 

@@ -6,7 +6,7 @@ productversion: '3.2'
 ---
 
 ## Overview
-The setup process for Enterprise Keyboard varies by device, and activation is sometimes necessary to make it available to users. Zebra's keyboard also can be set as the default input method, if desired. This section of the guide covers installation (for EKB 3.2 and higher), manual activation and the steps required for setting it as the default input device. 
+The setup process for Enterprise Keyboard (EKB) varies by device, and activation is sometimes necessary to make it available to users. Zebra's keyboard also can be set as the default input method, if desired. This section of the guide covers installation (for EKB 3.2 and higher), manual activation and the steps required for setting it as the default input device. 
 
 For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings) of this guide. 
 

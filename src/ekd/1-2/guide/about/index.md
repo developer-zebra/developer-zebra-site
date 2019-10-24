@@ -7,7 +7,7 @@ productversion: '1.2'
 
 ## Overview
 
-Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized key layouts to enhance an application and enable efficient and accurate data entry. **Layouts created with EKD work on Zebra Android devices that use Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher)**, and can be displayed **programmatically using Android intents or through DataWedge 7.5 (and higher)** when specific input situations arise. Enterprise Keyboard offers many enhancements over the stock Android Keyboard, including tabbed layouts with "swipe-to-switch" functionality, programmable keys and a color scheme is designed to be visible in a variety of dark and light conditions. Learn more [about Enterprise Keyboard](/enterprise-keyboard)
+Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized key layouts to enhance an application and enable efficient and accurate data entry. **Layouts created with EKD work on Zebra Android devices that use Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher)**, and can be displayed **programmatically using Android intents or through DataWedge 7.4.44 (and higher)** when specific input situations arise. Enterprise Keyboard offers many enhancements over the stock Android Keyboard, including tabbed layouts with "swipe-to-switch" functionality, programmable keys and a color scheme is designed to be visible in a variety of dark and light conditions. Learn more [about Enterprise Keyboard](/enterprise-keyboard).
 
 >**NOTE**: This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 

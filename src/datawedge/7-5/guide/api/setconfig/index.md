@@ -584,6 +584,20 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
   </tr>
 
   <tr>
+	<td>decoder_micr_e13b</td>
+	<td>true<br>false (default)</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_us_currency</td>
+	<td>true<br>false (default)</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
 	<td>decoder_uspostnet</td>
 	<td>true<br>false</td>
 	<td>N/A</td>
@@ -630,6 +644,20 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 	<td>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3<br>4 - Security Level 4</td>
 	<td>N/A</td>
 	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_ocr_a</td>
+	<td>true<br>false (default)</td>
+	<td>ocr_a_variant</td>
+	<td>FULL_ASCII (0) (default)<br>RESERVED_1 (1)<br>RESERVED_2 (2)<br>BANKING(3)</td>
+  </tr>
+
+  <tr>
+	<td>decoder_ocr_b</td>
+	<td>true<br>false (default)</td>
+	<td>ocr_b_variant</td>
+	<td>FULL_ASCII(0)(default)<br>BANKING(1)<br>LIMITED(2)<br>ISBN_1(6)<br>ISBN_2(7)<br>TRAVEL_DOCUMENT_1(3)<br>TRAVEL_DOCUMENT_2(8)<br>TRAVEL_DOCUMENT_3(20)<br>PASSPORT(4)<br>VISA_TYPE_A(9)<br>VISA_TYPE_B(10)<br>ICAO_TRAVEL_DOCUMENT(11)</td>
   </tr>
 
   <tr>
@@ -719,7 +747,74 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 </table>
 
 <br>
-Other Scanner Input Parameters:
+###OCR Parameters
+For more information, see [Barcode Input](../../input/barcode#ocrparams).
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+  <td>ocr_orientation</td>
+	<td>DEGREE_0 (0) (default)<br>DEGREE_270 (1)<br>DEGREE_180 (2)<br>DEGREE_90 (3)<br>OMNIDIRECTIONAL (4)</td>
+  </tr>
+
+  <tr>
+  <td>ocr_lines</td>
+	<td>Set number of lines to scan during OCR reading:<br><br>LINE_1 (1) (default)<br>LINE_2 (2)<br>LINE_3 (3)</td>
+  </tr>
+
+  <tr>
+  <td>ocr_min_chars</td>
+	<td>Set minimum number of OCR characters (not including spaces) per line to decode during OCR reading. Integer value:<br><br>Low - 3 (default)<br>High - 100</td>
+  </tr>
+
+  <tr>
+  <td>ocr_max_chars</td>
+	<td>Set maximum number of OCR characters (not including spaces) per line to decode during OCR reading. Integer value:<br><br>Low - 3 (default)<br>High - 100</td>
+  </tr>
+
+  <tr>
+  <td>ocr_subset</td>
+	<td>Defines a custom group of characters in place of a preset font variant. Auto capitalize is true and no restrictions for valid characters.<br><br>Minimum length - 1<br>Maximum Length - 100</td>
+  </tr>
+
+  <tr>
+  <td>ocr_quiet_zone</td>
+	<td>Set field width of blank space to stop scanning during OCR reading. The default is 50, indicating a six character width quiet zone. Integer values:<br><br>Low - 20<br>High - 99 (Default - 50)</td>
+  </tr>
+
+  <tr>
+  <td>ocr_template</td>
+	<td>Creates a template for precisely matching scanned OCR characters to a desired input format, which helps eliminate scanning errors. The template expression is formed by numbers and letters. The default is 99999999 which accepts any character OCR string. Auto capitalize is true and no restrictions for valid characters.<br><br>Minimum length - 3<br>Maximum Length - 100 (Default - 99999999)<br><br>Example 1:<br>Template string: 99999<br>Only a numeric character is allowed in each position of '9'.<br>Valid data: 12987<br>Invalid data:123AB<br><br>Example 2:<br>Template string: AAA<br>Only an alpha character is allowed in each position of 'A'.<br>Valid data: WXY<br>Invalid data: 12F
+  </td>
+  </tr>
+
+  <tr>
+  <td>ocr_check_digit_modulus</td>
+	<td>Sets the Check Digit Modulus value for OCR Check Digit Calculation. Integer value:<br><br>Low - 1 (default)<br>High - 99</td>
+  </tr>
+
+  <tr>
+  <td>ocr_check_digit_multiplier</td>
+	<td>Sets OCR check digit multipliers for the character positions. Auto capitalize is true and no restrictions for valid characters:<br><br>Minimum length - 1<br>Maximum Length - 100 (Default - 121212121212)</td>
+  </tr>
+
+  <tr>
+  <td>ocr_check_digit_validation</td>
+	<td>None - 0 (default)<br>Product Add Left to Right - 3<br>Product Add Right to Left - 1<br>Digit Add Left to Right - 4<br>Digit Add Right to Left - 2<br>Product Add Right to Left Simple Remainder - 5<br>Digit Add Right to Left Simple Remainder - 6<br>Health Industry - HIBCC43 - 9</td>
+  </tr>
+
+  <tr>
+  <td>inverse_ocr</td>
+	<td>White or light words on black or dark background. This option is used to select normal, inverse or both OCR scanning.<br><br>REGULAR_ONLY (0) (default)<br>INVERSE_ONLY (1)<br>AUTO_DISCRIMINATE (2)</td>
+  </tr>
+
+</table>
+
+<br>
+###Other Scanner Input Parameters
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -1820,6 +1915,86 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 
 		this.sendBroadcast(i);
+
+### Set OCR parameters
+Create/update a profile with OCR parameters:
+
+	void createBarcodeScanProfileWithOCR() {
+
+			Bundle bMain = new Bundle();
+			bMain.putString("PROFILE_NAME", "OcrBarcodeApp");
+			bMain.putString("PROFILE_ENABLED", "true");
+			bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+			Bundle bConfig = new Bundle();
+			bConfig.putString("PLUGIN_NAME", "BARCODE");
+			bConfig.putString("RESET_CONFIG", "true");
+
+			Bundle bParams = new Bundle();
+			bParams.putString("scanner_selection", "auto");
+			bParams.putString("scanner_input_enabled", "true");
+
+			//Enable/Disable Decoders
+			bParams.putString("decoder_ocr_a", "true"); //Enable or Disable OCR-A font
+			bParams.putString("decoder_ocr_b", "true"); //Enable or Disable OCR-B font
+			bParams.putString("decoder_micr", "true"); //Enable or Disable OCR MICR E13B font
+			bParams.putString("decoder_us_currency", "true"); //Enable or Disable OCR US Currency font
+
+			//Ocr A and B Variants
+			bParams.putString("ocr_a_variant", "3"); //0 - FULL_ASCII, 1 - RESERVED_1, 2 - RESERVED_2,3 - BANKING
+			bParams.putString("ocr_b_variant", "6"); //0 - FULL_ASCII, 1 - BANKING, 2 - LIMITED, 6 - ISBN_1, 7 - ISBN_2, 3 - TRAVEL_DOCUMENT_1, 8 - TRAVEL_DOCUMENT_2, 20 - TRAVEL_DOCUMENT_3, 4 - PASSPORT, 9 - VISA_TYPE_A, 10 - VISA_TYPE_B, 11 - ICAO_TRAVEL_DOCUMENT
+
+			//Other OCR Params
+
+			//Specify the orientation of an OCR String to be read
+			bParams.putString("ocr_orientation", "1"); //Supported Values: 0 - DEGREE_0, 1 - DEGREE_270, 2 - DEGREE_180, 3 - DEGREE_90, 4 - OMNIDIRECTIONAL
+
+			//Select number of lines to scan during OCR reading
+			bParams.putString("ocr_lines", "2"); //Supported Values: 1 - LINE_1, 2 - LINE_2, 3 - LINE_3
+
+			//Select minimum number of OCR characters (not including spaces) per line to decode during OCR reading
+			bParams.putString("ocr_min_chars", "10"); //Supported Values: 3 to 100 in steps of 1
+
+			//Select maximum number of OCR characters (including spaces) per line to decode during OCR reading
+			bParams.putString("ocr_max_chars", "15"); //Supported Values: 3 to 100 in steps of 1
+
+			//OCR Subset defines a custom group of characters in place of a preset font variant
+			bParams.putString("ocr_subset", "!\"#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz\\^|"); //Minimum length - 1, Maximum Length - 100, Auto capitalize is true and no restrictions for valid characters
+
+			//Set field width of blank space to stop scanning during OCR reading
+			bParams.putString("ocr_quiet_zone", "60"); //Supported Values: 20 to 99 in steps of 1
+
+			//This option creates a template for precisely matching scanned OCR characters to a desired input format.
+			// Carefully constructing an OCR template eliminates scanning errors.
+			// The template expression will be formed by numbers and letters.
+			// The default is 99999999 which accepts any character OCR strings.
+			bParams.putString("ocr_template", "AAA");
+
+			//Sets the Check Digit Modulus value for OCR Check Digit Calculation
+			bParams.putString("ocr_check_digit_modulus", "10"); //Supported Values: 1 to 99 in steps of 1
+
+			//Sets OCR check digit multipliers for the character positions
+			bParams.putString("ocr_check_digit_multiplier", "121212121212"); //Minimum length - 1, Maximum Length - 100 (Default - 121212121212), Auto capitalize is true and no restrictions for valid characters
+
+			//Selects Check Digit Validation Scheme
+			bParams.putString("ocr_check_digit_validation", "3"); //Supported Values: 0 - None, 3 - Product Add Left to Right, 1 - Product Add Right to Left, 4 - Digit Add Left to Right, 2 - Digit Add Right to Left, 5 - Product Add Right to Left Simple Remainder, 6 - Digit Add Right to Left Simple Remainder, 9 - Health Industry - HIBCC43
+
+			//Inverse OCR is white or light words on black or dark background. This option is used to select normal, inverse or both OCR scanning
+			bParams.putString("inverse_ocr", "2"); //0 - REGULAR_ONLY, 1 - INVERSE_ONLY, 2 - AUTO_DISCRIMINATE
+
+			bConfig.putBundle("PARAM_LIST", bParams);
+			ArrayList<Bundle> bundlePluginConfig = new ArrayList<>();
+			bundlePluginConfig.add(bConfig);
+
+			bMain.putParcelableArrayList("PLUGIN_CONFIG", bundlePluginConfig);
+
+			Intent i = new Intent();
+			i.setAction(DATAWEDGE_API_ACTION);
+			i.putExtra("SEND_RESULT", "LAST_RESULT");
+			i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+
+			this.sendBroadcast(i);
+	}
+
 
 ### Set RFID input configuration
 

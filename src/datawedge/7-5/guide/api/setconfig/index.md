@@ -1278,6 +1278,10 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 		<td>simulscan_enable_timestamp</td>
 		<td>true<br>false</td>
 	</tr>
+	<tr>
+		<td>simulscan_get_images_via_files</td>
+		<td>true<br>false</td>
+	</tr>
 </table>
 
 -----

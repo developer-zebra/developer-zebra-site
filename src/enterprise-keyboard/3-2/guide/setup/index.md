@@ -10,7 +10,7 @@ The setup process for Enterprise Keyboard (EKB) varies by device, and activation
 
 For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings) of this guide. 
 
-Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
+Enterprise Keyboard 1.1 (and higher) can be installed, activated and configured: 
 
 * Manually at the device
 * Remotely:
@@ -19,57 +19,56 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 
 -----
 
-### About Multi-user Mode
+## Installing/Upgrading EKB 
+_Applies to all `.apk` versions of Enterprise Keyboard (incl. 1.4&ndash;1.6 and 3.2)_. 
 
-Enterprise Keyboard 2.0 (and higher) supports Primary and Secondary Users **on devices built on Zebra's SDM660 platform (including ET51, ET56, L10, MC93, PS20, TC52, TC57, TC72 and TC77) running Android 8.x Oreo** (and higher). Primary Users can make changes to EKB settings and create Secondary Users on the device. Secondary Users cannot change EKB settings or create additional users. 
+Some versions of EKB can be downloaded from the Zebra Support Portal and installed as a user app. **Devices running Android 7.x Nougat (or higher) with older versions of EKB can be upgraded to the latest EKB version using the latest** `.apk` **file**. [Visit the Support Portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) for specific EKB device and OS support information. Installation and upgrade instructions are below. 
 
-**To create a Secondary User**:<br>
-_(Android 8.x Oreo and higher)_
-
-1. Sign into a device as a Primary User. 
-2. **Open the Settings panel** on the device. 
-3. Tap **Users & accounts -> Users -> Add user -> Add a new user**. 
-4. Follow prompts to complete the process. 
-<br>
-
-<img alt="" style="height:300px" src="secondray_user_mode.png"/> 
-_EKB Settings are "greyed out" for Secondary Users_. 
-<br>
-
-**To switch users**
-
-1. **Open the Settings panel** on the device. 
-2. Tap **Users & accounts -> Users**. A list of device User names appears. 
-3. **Tap on the desired User name** to switch to that User. 
-
-> **Supported only on SDM660-platform devices running Android 8.x Oreo**. 
+> **Before beginning any installation...**
+> 1. **Go to the [EKB download page](../../download) and follow instructions** to get the correct file(s) for the target device(s). <br>
+> 2. **Ensure that target device(s) are able to connect** via USB to the host computer. [Get USB drivers](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html)<br>
+> 3. Note that **Enterprise Keyboard requires [activation](#manualactivation)** following installation. 
 
 -----
 
-## Install or Upgrade 
-_Applies only to Enterprise Keyboard 3.2 and higher_. 
-
-EKB 3.2 (and higher) is downloaded from the Zebra Support Portal and installed as a user app. **Devices running Android 7.x Nougat (or higher) with older versions of EKB can be upgraded to the latest version using the latest** `.apk` **file**. Instructions for upgrades and new installations follow below. 
-
-> Before beginning, go to the [EKB download page](../../download) and follow download instructions there. 
-
 #### To Upgrade EKB
-_Applies to devices running Android 7.x Nougat or higher with an older EKB already installed_.
+_Applies to devices with an older EKB already installed_.
 
-1. Connect the device to the host computer that contains the downloaded `Enterprisekeyboard.apk` file.  
-2. From a terminal window, run the following command: 
+##### To upgrade using adb:
+
+1. **Connect the device via USB to the host computer** that contains the downloaded `Enterprisekeyboard.x.x.x.x.apk` file (where "x.x.x.x" = EKB version number).  
+2. **Push the** `EnterpriseKeyboard-x.x.x.x.apk` **file to the root directory** of the device. 
+3. From a terminal window, **run the following command**: 
 
 		:::terminal
-		adb install –r Enterprisekeyboard.apk
+		adb install –r [exact EnterpriseKeyboard_file_name.apk]
 
-3. **Push the** `Enterprisekeyboard.apk` **file to the root directory** of the device.
-4. **Navigate to the file** using a file manager app on the device
-5. **Tap the file to install it**. 
+ _The "-r" option reinstalls an existing app and retains any existing user data_.
+4. **To verify installation**, see [Verify Installation](#verifyinstallation) below. 
 
+> **NOTE**: After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
 
-[How to connect with adb](https://techdocs.zebra.com/enterprise-browser/latest/guide/setup/#connections)
+####Also see:
 
-#### To Install EKB
+* **[Full adb documentation](https://developer.android.com/studio/command-line/adb)**
+* **[EKB device and OS support info](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
+* **[Get USB drivers for connecting Windows PCs to Zebra devices](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html)**
+
+-----
+
+##### Upgrade or Install using USB
+
+1. Connect the device to the host computer that contains the downloaded `Enterprisekeyboard.apk` file.  
+2. **Copy the** `Enterprisekeyboard.apk` **file to the root directory** of the device.
+3. **Navigate to the file** using a file manager app on the device. 
+4. **Tap the file to install it**. 
+5. To verify installation, see [Verify Installation](#verifyinstallation) below. 
+
+> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
+
+-----
+
+#### To Install EKB 3.2
 _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB installed_.
 
 1. **Connect the device to the host computer** that contains the downloaded `Enterprisekeyboard.apk` file.  
@@ -81,43 +80,41 @@ _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB inst
 3. **Push the** `Enterprisekeyboard.apk` **file to the root directory** of the device.
 4. **Navigate to the file** using a file manager app on the device
 5. **Tap the file** to complete the installation. 
+6. To verify installation, see [Verify Installation](#verifyinstallation) below. 
 
-#### Verify Installation
+> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
+
+-----
+
+## Uninstalling/Downgrading EKB
+
+####Notes:
+* **If EKB was installed as a user app on a device with no prior version**, removal is the same as for any standard Android app. 
+* **If EKB was installed as an upgrade on a device with EKB preinstalled**, removal reverts to the preinstalled version. 
+
+#### To uninstall using adb:
+1. **Connect the host computer to the device** that contains the Enterprise Keyboard to be uninstalled.   
+2. **From a terminal window**, run the following command: 
+
+		:::terminal
+		adb uninstall com.symbol.mxmf.csp.enterprisekeyboard
+3. To verify uninstallation, use the [Verify Installation](#verifyinstallation) instructions below to confirm that EKB was removed or downgraded to the preinstalled version.  
+
+#### To uninstall using Settings panel:
+1. **On the device that contains the Enterprise Keyboard to be uninstalled**:<br>
+ Go to **Settings -> Apps & Notification -> Enterprise Keyboard -> Disable** 
+2. Then go to **Settings -> Apps & Notification -> Enterprise Keyboard -> Uninstall**
+
+-----
+
+### Verify Installation
 
 ##### To verify that the installation/upgrade was successful: 
 
 1. Go to **Settings -> Apps & Notification -> Enterprise Keyboard**
-2. **Tap "App Info"** and verify that the version is "3.2.0.0" or higher.  
-3. 
+2. **Tap "App Info"** and verify that the version corresponds with the version installed.  
 
-only with EC30 device EKB will list under device launcher app list
-
-3.  with EC30 device EKB settings will only take effect from device settings "Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard"
-
- 
-UNINSTALLING 3.2
-
- Note: you will take back to older version of EKB if any version is bundled with device BSP
-
- 
-
-adb uninstall com.symbol.mxmf.csp.enterprisekeyboard
-Settings -> Apps & Notification -> Enterprise Keyboard -> Disable (After uninstall update click on Enable)
-  
-
- Note: If any older version is not bundled with device BSP or installed on device
-
- 
-
-adb uninstall com.symbol.mxmf.csp.enterprisekeyboard
-Settings -> Apps & Notification -> Enterprise Keyboard -> Uninstall
-  
-
-Note:
-
-On successful Uninstallation or downgrade from EKB v3.2 you will see older version of EKB which was bundled in device BSP version details you can check under App info “Settings -> Apps & Notification -> Enterprise Keyboard ->”
-On uninstall EKB 3.2, if any older version of EKB which is bundled with BSP now will show up in launcher app list
-
+> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
 
 -----
 
@@ -134,7 +131,7 @@ The section covers direct activation of Enterprise Keyboard on a single device. 
 
 If the Enterprise Keyboard does not appear, proceed to the steps below. 
 
-#####Activate Enterprise Keyboard: 
+#####To activate Enterprise Keyboard: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
@@ -233,3 +230,32 @@ Manual deactivation of Enterprise Keyboard is complete.
 
 ## Automated Deactivation
 Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/../../../../) or [StageNow](../../../../) tools using the [App Manager](/mx/appmgr) service. 
+
+-----
+
+### About Multi-user Mode
+
+Enterprise Keyboard 2.0 (and higher) supports Primary and Secondary Users **on devices built on Zebra's SDM660 platform (including ET51, ET56, L10, MC93, PS20, TC52, TC57, TC72 and TC77) running Android 8.x Oreo** (and higher). Primary Users can make changes to EKB settings and create Secondary Users on the device. Secondary Users cannot change EKB settings or create additional users. 
+
+**To create a Secondary User**:<br>
+_(Android 8.x Oreo and higher)_
+
+1. Sign into a device as a Primary User. 
+2. **Open the Settings panel** on the device. 
+3. Tap **Users & accounts -> Users -> Add user -> Add a new user**. 
+4. Follow prompts to complete the process. 
+<br>
+
+<img alt="" style="height:300px" src="secondray_user_mode.png"/> 
+_EKB Settings are "greyed out" for Secondary Users_. 
+<br>
+
+**To switch users**
+
+1. **Open the Settings panel** on the device. 
+2. Tap **Users & accounts -> Users**. A list of device User names appears. 
+3. **Tap on the desired User name** to switch to that User. 
+
+> **Supported only on SDM660-platform devices running Android 8.x Oreo**. 
+
+-----

@@ -100,6 +100,10 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
     <td>true, false</td>
   </tr>
   <tr>
+    <td>voice_data_capture_start_option</td>
+    <td>0 - Start phrase (default)<br>1 - PTT button</td>
+  </tr>
+  <tr>
     <td>voice_data_capture_start_phrase</td>
     <td>start (default value)</td>
   </tr>
@@ -133,10 +137,6 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
   </tr>
   <tr>
     <td>voice_validation_window</td>
-    <td>true, false</td>
-  </tr>
-  <tr>
-    <td>voice_data_capture_waiting_tone</td>
     <td>true, false</td>
   </tr>
   <tr>

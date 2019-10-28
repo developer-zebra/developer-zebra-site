@@ -9,7 +9,8 @@ productversion: '7.4'
 **Enterprise Keyboard Configuration** enables the use of an [Enterprise Keyboard](/enterprise-keyboard), whether standard (default) or custom layout, as the IME (input method editor) with an associated app in a DataWedge profile. This facilitates the use of different keyboard layouts without the need to modify an app, activating Enterprise Keyboard automatically as the on-screen keyboard for user input. A custom Enterprise Keyboard layout (`.encrypted` file) can be created and configured with [Enterprise Keyboard Designer](/ekd).
 
 **Requirements:**
-* Enterprise Keyboard v3.2 or higher is installed on the device. Zebra devices running Android 7.x Nougat and higher are pre-installed with v1.7 or higher. For Zebra devices running Android 6.x Marshmallow or older, v1.7 and higher will be automatically installed as part of any LifeGuard update.
+* DataWedge v7.4.44 or higher.
+* Enterprise Keyboard v3.2 or higher. Zebra devices with Android 7.x Nougat or higher are pre-installed with Enterprise Keyboard v1.7 or higher. For Zebra devices with Android 6.x Marshmallow or lower, Enterprise Keyboard v1.7 or higher is included with any LifeGuard update.
 * Enterprise Keyboard must be set as the default IME in Android Settings on the device. 
 * The Enterprise Keyboard layout definition file (`.encrypted`) is placed on the device in directory `/enterprise/device/settings/ekb/config`.
 

@@ -167,7 +167,7 @@ If the Enterprise Keyboard does not appear, proceed to the steps below.
 
 &#54;. <B>Tap the HOME key</b> to exit the Settings panel.  
 
-Enterprise Keyboard is now ready to use with default settings. 
+##### Enterprise Keyboard is now ready to use with default settings. 
 
 ------
 
@@ -239,7 +239,7 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 <img alt="" style="height:350px" src="panel_default.png"/>
 <br> 
 
-Manual deactivation of Enterprise Keyboard is complete. 
+##### Manual deactivation of Enterprise Keyboard is complete. 
 
 -----
 
@@ -262,7 +262,8 @@ _(Android 8.x Oreo and higher)_
 <br>
 
 <img alt="" style="height:300px" src="secondray_user_mode.png"/> 
-_EKB Settings are "greyed out" for Secondary Users_. 
+
+_EKB Settings are "greyed out" for Secondary Users. Click image to enlarge, ESC to exit_. 
 <br>
 
 **To switch users**

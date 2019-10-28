@@ -359,7 +359,8 @@ Enterprise Keyboard (1.2 and higher) supports programmatic access to the Input M
 * Include the line `android:privateImeOptions="scan"` in the &lt;EditText&gt; field of the `StaticLayout.xml` file as shown below: 
 
 <img alt="" style="height:350px" src="IME_code_placement.png"/>
-_The EditText parameter of the StaticLayout.xml file, in Android Studio. Click on the image to enlarge_.
+
+_The EditText parameter of the StaticLayout.xml file, in Android Studio. Click image to enlarge, ESC to exit_.
 <br>
 
 **To set the input method as dynamic**: 

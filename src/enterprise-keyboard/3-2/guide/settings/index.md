@@ -9,7 +9,7 @@ productversion: '3.2'
 
 Enterprise Keyboard (EKB) enhances and adds customization features onto the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. 
 
-#### Primary Enhancements: 
+#### Primary EKB Benefits: 
 * [Quick switching between languages](#languages)
 * [Barcode scanning](#preferences) directly from the keyboard for data collection 
 * [Programmable keys](#remappingkeys) for performing specific tasks 
@@ -17,22 +17,45 @@ Enterprise Keyboard (EKB) enhances and adds customization features onto the stoc
 * [Swipe-to-switch](#preferences) key layouts 
 * Populate Android's [Personal Dictionary](#personaldictionary) with custom terms and abbreviations
 
-Also see the [Customizing Keyboard Settings](#customizingkeyboardsettings) section for details. 
+Also see [Customizing Keyboard Settings](#customizingkeyboardsettings) section for details. 
 
 ### Custom Key Layouts
 
-EKB 3.2 (and higher) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 EKD layouts can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (and higher)** when specific input situations arise. 
+EKB 3.2 (and higher) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom layouts (see below) can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (or higher)** when specific input situations arise. 
 
 <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 
 _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, ESC to exit_.
 <br>
 
-> [Go to Enterprise Keyboard Designer](/ekd) docs to learn more.
+> To learn more, [go to the Enterprise Keyboard Designer Guide](/ekd).
 
 -----
 
 ## Customizing Keyboard Settings
+
+
+#### This Section Covers: 
+
+* Assignment of [keyboard languages](#languages)
+* Setting keyboard [preferences](#preferences)
+* [Text correction settings](#textcorrection)
+* Long key-press and other [advanced settings](#advancedsettings)
+* [Remapping programmable keys](#remappingkeys)
+
+
+#### Other Sections in This Guide:
+
+* [Using EKB with DataWedge](#datawedge)
+* [Changing key layouts programmatically](#dynamicinputmethod)
+* [Navigation using TAB keys](#tabkeynavigation)
+* [Scanner control](#scannercontrol)
+
+
+> **NOTE:** Screen contents and colors vary by Android version.   
+
+-----
+
 
 Enterprise Keyboard Settings are accessed through the Android Settings panel: 
 

@@ -136,48 +136,42 @@ Keyboard and key layout settings can be configured using EKB intent APIs or thro
 ### Requirements
 
 * EKB v3.2 installed on the target device(s) and set as the default input source
-* **A *<u>single</u>* EKD layout** (`.encrypted`) **file** in the following device folder: <br>
+* **A *<u>single</u>* EKD layout file** (i.e. `myProject.encrypted`) in the following device folder: <br>
  `/enterprise/device/settings/ekb/config/`
 
 > See the [Enterprise Keyboard Designer Guide](/ekd) for help creating a layout file. 
 
 -----
 
-### Use Case #1
+### Use Case Steps
 
-This case describes an Android app with two text input fields: one (editText1) requires one or more of the standard Enterprise Keyboard fixed (numeric, alpha-numeric, scan and symbol) layouts, the other (editText2) uses a custom layout made with EKD. The steps below describe the program logic for switching between two layouts as needed. 
+This case describes an Android app with two text input fields: one (`editText1`) requires one or more of the standard Enterprise Keyboard fixed (numeric, alpha-numeric, scan and symbol) layouts, the other (`editText2`) uses a custom layout made with EKD. The steps below describe the program logic for switching between two layouts as needed. 
+
 
 **Note**: To protect against a user not knowing the “CustomLayout” name, send an intent to get all available layout names in the layout file _before_ the calling the onFocus change listener.
 
-Perform the tasks below on changes to the `onFocus` property of edittext1 (1st edittext inputField) to show custom layout.
+Perform the tasks below on changes to the `onFocus` property of `edittext1` (1st edittext inputField) to show custom layout.
 
-1. When the editText1 gets focus, perform the tasks to display the EKB fixed layout:
- * Send `ENABLE` intent to Enterprise Keyboard 
- * Send `RESET` to the EKB layout
- * When the intent broadcast is received (through the `onReceive()` method), check the result type value. If the result type value is `DEFAULT_LAYOUT` then send an intent to `SHOW` the EKB layout.
-2. When focus changes to edittext2 from edittext1, use these tasks to show the custom layout:
- * Send an intent to set the custom layout
- * Disable the Enterprise Keyboard on Focus out of the input field
+**When the** `editText1` field gets focus, perform these tasks to display the EKB fixed layout:
 
-Note: Enterprise Keyboard must be enabled if the application goes in background. The user could reset the layout to show fixed layout outside the application.
+1. Send `ENABLE` intent to Enterprise Keyboard 
+2. Send `RESET` to the EKB layout
+3. When the intent broadcast is received (through the `onReceive()` method), check the result type value. If the result type value is `DEFAULT_LAYOUT` then send a `SHOW` intent to the EKB layout to display it.
 
+**When the focus changes to `edittext2` from `edittext1`, use these tasks to show the custom layout**:
 
-		:::Java
-		<insert command here>
+1. Send a `SET` intent to set the custom layout
+2. Send `ENABLE` "false" to disable the Enterprise Keyboard on focusOut of the input field
 
+**Note: Enterprise Keyboard must be enabled if the application goes to the background** to avoid a device user resetting the layout from outside the app.
 
-* Disable the Enterprise Keyboard on focus out of the input field.
-
-
-* Perform the below tasks when focus changes to edittext2 from exittext1 and show fixed layout. User should perform below tasks when the edittext2 input field gets focus.
-
-
-
+<!-- 
 -----
 
-### Use Case #2
+### Use Case 2
 
 There are two edit text input field in an android application where the user wants to associate first inputfield with one custom layout and second inputfield with another custom layout. They are switching between edittext inputfields in specific time interval. 
+
 Description: 
 Note: User must have two layouts created using EKD and the deliverable file (`.encrypted`) must be deployed inside device. 
 
@@ -188,7 +182,7 @@ Suppose, user has two edittext input field, edittext1 and edittext2 and the edit
 
 * Perform the below task on onFocus change of edittext2 (second inputField) to show the “functionLayout” custom layout.
 * When the edit text input field gets Focus, send an Intent to set the “functionLayout” custom layout.
-
+ -->
 -----
 
 ## Sample Code

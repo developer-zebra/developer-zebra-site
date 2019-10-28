@@ -15,7 +15,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** Added support for configurations: full profile, Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), Simulscan 
 * **DataWedge 7.3.22 -** Added support for new RFID Input feature.
-* **DataWedge 7.5 -** New Enterprise Keyboard Configuration feature
+* **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature
 
 ### Function Prototype
 

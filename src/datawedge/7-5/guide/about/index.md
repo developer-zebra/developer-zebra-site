@@ -109,7 +109,6 @@ For more information about approved languages or to download a localized operati
 
 -----
 ## New in DataWedge 7.5
-* New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.

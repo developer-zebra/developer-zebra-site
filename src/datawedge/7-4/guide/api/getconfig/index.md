@@ -15,7 +15,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** Added support for configurations: full profile, Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), Simulscan 
 * **DataWedge 7.3.22 -** Added support for new RFID Input feature.
-<!-- * **DataWedge 7.5 -** New Enterprise Keyboard Configuration feature-->
+* **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature
 
 ### Function Prototype
 
@@ -1025,7 +1025,6 @@ Error messages are logged for invalid actions and parameters.
 			}
 		}
 	};
-<!--  //moved to DW 7.5
 ### Get Enterprise Keyboard Configuration
 	public void getConfig(View view) { 
 	
@@ -1038,8 +1037,6 @@ Error messages are logged for invalid actions and parameters.
 		this.sendBroadcast(i); 
 	} 
 
-	
-
 	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { 
 		@Override 
 		public void onReceive(Context context, Intent intent) { 
@@ -1047,7 +1044,7 @@ Error messages are logged for invalid actions and parameters.
 			String strFinalResult = ""; 
 			if (action.equals("com.symbol.datawedge.api.RESULT_ACTION")) { 
 	
-				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { //Reading GET_CONFIG result 
+				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { // Reading GET_CONFIG result 
 	
 					Bundle resultGetConfig = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
 					Set<String> keys = resultGetConfig.keySet(); 
@@ -1061,8 +1058,8 @@ Error messages are logged for invalid actions and parameters.
 							Bundle ekbSettings = resultGetConfig.getBundle("EKB"); 
 							if (ekbSettings == null) { 
 								strFinalResult += "\nEKB Settings are not found for " + profileName; 
-							} else { 
-	
+							} 
+							else { 
 								strFinalResult += "\nEKB Settings"; 
 	
 								for (String ekbKey : ekbSettings.keySet()) { 
@@ -1077,7 +1074,8 @@ Error messages are logged for invalid actions and parameters.
 										else { 
 											strFinalResult+= "no layout defined, default will be used"; 
 										} 
-									} else { 
+									} 
+									else { 
 										strFinalResult += "\n\t\t" + ekbKey + ": " + ekbSettings.getString(ekbKey); 
 									} 
 								} 
@@ -1089,13 +1087,12 @@ Error messages are logged for invalid actions and parameters.
 							strFinalResult += "\nRESULT_CODE: " + resultGetConfig.getString("RESULT_CODE"); 
 						} 
 					} 
-	
 					Log.d("TAG", "#IntentApp#\n\nGet config info received\n" + strFinalResult); 
 				} 
 			} 
 		} 
 	}; 
--->
+
 ### Get configuration for multiple modules (full profile) in a single intent
 
 Support started with DataWedge 7.1.  Previous DataWedge versions required multiple intent calls to retrieve information from multiple modules (plugins, APP_LIST, and Data Capture Plus).

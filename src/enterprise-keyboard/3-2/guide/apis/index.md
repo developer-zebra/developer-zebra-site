@@ -7,7 +7,7 @@ productversion: '3.2'
 
 ## Overview
 
-Zebra Enterprise Keyboard APIs operate primarily through Android intents&ndash;specific commands that can be used by Android applications to control EKB and layouts made with the [Enterprise Keyboard Designer](/ekd), Zebra's GUI-based custom keyboard creator tool for Windows. This guide describes the functionality of the intents supported by EKB and their effects on EKD layouts.
+Zebra Enterprise Keyboard APIs operate primarily through Android intents&ndash;specific commands that can be used by Android applications to control EKB and layouts made with the [Enterprise Keyboard Designer](/ekd) (EKB Designer, or EKD), Zebra's Windows-based custom keyboard creator tool. This guide describes the functionality of the intents supported by EKB and their effects on EKD layouts.
 
 ### Requirements
 Using EKB APIs requires experience with Java programming, familiarity with Android intents and at least one custom layout file (i.e. `myLayout.encrypted`). It also requires knowledge of EKB usage, features and terminology. Learn more [about Enterprise Keyboard](http://techdocs.zebra.com/enterprise-keyboard).
@@ -18,12 +18,25 @@ Enterprise Keyboard APIs allow the following functions:
 * **ENABLE** (true/false) enables or disables the keyboard 
 * **GET** can return lists of: 
  * Available keyboard layouts
- * Current keyboard layout group and current layout name
+ * Current key layout group (file name) and the name of the current layout
 * **SET** switches to the specified keyboard layout
 * **SHOW** displays the specified layout on the device
 * **RESET** Resets EKB layouts and enables Enterprise Keyboard (if disabled)
 
 > * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+
+-----
+
+### `IMPORTANT - PLEASE READ`
+* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
+* **Layouts made with EKD must be called by an app using intents** to be displayed.
+* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
+* EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
+* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 
+* **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+* In this guide, the terms “button” and “key” are used interchangeably. 
+* **If an app contains logic to show the keyboard automatically** when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
+* Apps running in full screen mode display custom keyboard layouts with an extra margin from the bottom of the device screen.
 
 -----
 
@@ -52,19 +65,6 @@ When `FunctionKeyActivity` comes to the foreground, the app should `GET` the fol
 * `ResetActivity` uses a regular keyboard, so keyboard should be reset.
 
 > **Note**: Zebra provides a sample Android app that implements the functions described above.
-
------
-
-### `IMPORTANT - PLEASE READ`
-* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
-* **Layouts made with EKD must be called by an app using intents** to be displayed.
-* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
-* EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
-* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 
-* **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
-* In this guide, the terms “button” and “key” are used interchangeably. 
-* **If an app contains logic to show the keyboard automatically** when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
-* Apps running in full screen mode display custom keyboard layouts with an extra margin from the bottom of the device screen.
 
 -----
 
@@ -118,6 +118,76 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 	    String msg = mBundle.getString(“RESULT_MESSAGE”);
 	}
 
+
+-----
+
+## Example Use Cases
+
+This section explains how to switch layouts when focus of the input field changes. 
+
+Only one definition (.encrypted) file should be present in following folder path in device:
+  
+
+
+Keyboard and key layout settings can be configured using EKB intent APIs or through DataWedge. There are scenarios where user can switch between custom layouts and EKB's fixed layouts (i.e. numeric, alpha-numeric, scan and symbol layouts). 
+
+
+
+### Requirements
+
+* EKB v3.2 installed on the target device(s) and set as the default input source
+* **A *<u>single</u>* EKD layout** (`.encrypted`) **file** in the following device folder: <br>
+ `/enterprise/device/settings/ekb/config/`
+
+> See the [Enterprise Keyboard Designer Guide](/ekd) for help creating a layout file. 
+
+-----
+
+### Use Case #1
+
+This case describes an Android app with two text input fields: one (editText1) requires one or more of the standard Enterprise Keyboard fixed (numeric, alpha-numeric, scan and symbol) layouts, the other (editText2) uses a custom layout made with EKD. The steps below describe the program logic for switching between two layouts as needed. 
+
+**Note**: To protect against a user not knowing the “CustomLayout” name, send an intent to get all available layout names in the layout file _before_ the calling the onFocus change listener.
+
+Perform the tasks below on changes to the `onFocus` property of edittext1 (1st edittext inputField) to show custom layout.
+
+1. When the editText1 gets focus, perform the tasks to display the EKB fixed layout:
+ * Send `ENABLE` intent to Enterprise Keyboard 
+ * Send `RESET` to the EKB layout
+ * When the intent broadcast is received (through the `onReceive()` method), check the result type value. If the result type value is `DEFAULT_LAYOUT` then send an intent to `SHOW` the EKB layout.
+2. When focus changes to edittext2 from edittext1, use these tasks to show the custom layout:
+ * Send an intent to set the custom layout
+ * Disable the Enterprise Keyboard on Focus out of the input field
+
+Note: Enterprise Keyboard must be enabled if the application goes in background. The user could reset the layout to show fixed layout outside the application.
+
+
+		:::Java
+		<insert command here>
+
+
+* Disable the Enterprise Keyboard on focus out of the input field.
+
+
+* Perform the below tasks when focus changes to edittext2 from exittext1 and show fixed layout. User should perform below tasks when the edittext2 input field gets focus.
+
+
+
+-----
+
+### Use Case #2
+
+There are two edit text input field in an android application where the user wants to associate first inputfield with one custom layout and second inputfield with another custom layout. They are switching between edittext inputfields in specific time interval. 
+Description: 
+Note: User must have two layouts created using EKD and the deliverable file (`.encrypted`) must be deployed inside device. 
+
+Suppose, user has two edittext input field, edittext1 and edittext2 and the edittext1 should have associated a custom layout, “numericLayout” (Layout Name) and edittext2 should have associated with a custom layout, “functionLayout” (Layout Name). The below steps should be followed for handling the focus In/Out change of the edit text input file.
+* Perform the below task on onFocus change of edittext1 (first inputField) to show the “numericLayout” custom layout.
+* When the edit text input field gets Focus, send an Intent to set the “numericLayout” custom layout.
+
+
+* Perform the below task on onFocus change of edittext2 (second inputField) to show the “functionLayout” custom layout.
+* When the edit text input field gets Focus, send an Intent to set the “functionLayout” custom layout.
 
 -----
 

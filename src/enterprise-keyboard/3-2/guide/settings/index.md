@@ -136,7 +136,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 <b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
-<b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
+<b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. **Not supported on VC80x or VC83x devices**.
 
 <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
 
@@ -208,6 +208,7 @@ The Personal Dictionary can be used to store industry-specific terms and their a
 * When displayed, longer terms and phrases might be injected with an ellipsis (...) in the correction bar. 
 * Spelling corrections do not appear with all field types.  
 * For mass deployment, the Personal Dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
+* Personal Dictionary does not support display of contact names. 
 
 #####Add a term to the Personal Dictionary: 
 

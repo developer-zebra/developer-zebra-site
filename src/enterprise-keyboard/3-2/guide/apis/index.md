@@ -40,6 +40,20 @@ Enterprise Keyboard APIs allow the following functions:
 
 -----
 
+## App Window Resizing 
+
+It's typical for an Android app to adjust its window size when a general-purpose keyboard is displayed. Window resizing also takes place when EKD custom key layouts are used according to the following rules: 
+
+#### Behavior Notes
+
+* The width of the custom key layout is greater than or equal to 50 percent of device screen width.
+* The custom key layout is NOT positioned on top of the app's title bar or "Action" bar. 
+* In some cases, window resizing results in a blank portion of the screen. In these cases, try changing the background of the key layout. 
+* To disable windows resizing of the activity’s main window, define the following attribute in the app's activity manifest file: 
+ * `android:windowSoftInputMode=”adjustNothing”`
+
+----
+
 ### Using EKB APIs
 The following example describes a company with business requirements that call for an application with four GUI screens: 
 

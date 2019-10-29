@@ -61,14 +61,14 @@ _Applies to devices with an older EKB already installed_.
 3. From a terminal window, **run the following command**: 
 
 		:::terminal
-		adb install –r [exact EnterpriseKeyboard_file_name.apk]
+		adb install –r EnterpriseKeyboard_file_name.apk
 
  _The "-r" option **reinstalls** an existing app and retains any existing user data_.
 4. **See [Verify Installation](#verifyinstallation)** section below. 
 
 > **NOTE**: After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
 
-####Also see:
+### Also see
 
 * **[Full adb documentation](https://developer.android.com/studio/command-line/adb)**
 * **[EKB device and OS support info](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**

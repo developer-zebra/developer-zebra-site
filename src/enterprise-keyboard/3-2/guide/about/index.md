@@ -42,8 +42,9 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Added Features 
 
-* **Now can be sideloaded** onto any supported device.  
+* **Can be loaded as a user app** onto any supported device.  
 * **Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
+* **New [EKB API guide](../apis)** details the usage of custom key layouts. 
 * **Now supports devices running Android 9.2 Pie**.
 * **No longer supports devices running Android 6.x Marshmallow, 5.x Lollipop, 4.x KitKat**. 
 
@@ -59,31 +60,7 @@ Support added for the following Zebra devices:
  * **EC30**
  * **L10**
 
-
-<!-- my old delta list, not sure it's totally wrong
-* **Running Android 9.x Pie**: 
- * **PS20**  
- * **TC52**
- * **TC72**
-* **Running Android 8.x Oreo**: 
- * **CC600**
- * **CC6000**
- * **EC30**
- * **ET51**
- * **ET50**
- * **ET55**
- * **ET56**
- * **L10**
- * **MC33xx**
- * **MC93**
- * **TC83**
- * **VC83** 
-* **Running Android 7.x Nougat**: 
- * **ET51**
- * **ET56**
- * **MC33xx**
- -->
-See the complete [list of supported devices](../../download) on the Download page. 
+> **See all [devices supported by EKB](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
 
 -----
 

@@ -1173,7 +1173,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 	</tr>
 	<tr>
 		<td>rfid_antenna_transmit_power</td>
-		<td>5 to 30</td>
+		<td>Integer from 5 to 30</td>
 	</tr>
 	<tr>
 		<td>rfid_memory_bank</td>
@@ -1194,6 +1194,52 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 	<tr>
 		<td>rfid_trigger_mode</td>
 		<td>0 - Immediate (default)<br>1 - Continuous</td>
+	</tr>
+	<tr>
+		<td>rfid_tag_read_duration</td>
+		<td>Integer from 100 to 60000</td>
+	</tr>
+	<tr>
+		<td colspan=2 bgcolor="gray"><font color="white"><b>Pre-filter PARAM_LIST</b></font></td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_enable</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_tag_pattern</td>
+		<td>[blank]<br>[any string]</td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_target</td>
+		<td>Integer from 0 to 4</td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_memory_bank</td>
+		<td>Integer from 0 to 2</td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_offset</td>
+		<td>Integer from 0 to 1024</td>
+	</tr>
+	<tr>
+		<td>rfid_pre_filter_action</td>
+		<td>Integer from 0 to 7</td>
+	</tr>
+	<tr>
+		<td colspan=2 bgcolor="gray"><font color="white"><b>Post-filter PARAM_LIST</b></font></td>
+	</tr>
+	<tr>
+		<td>rfid_post_filter_enable</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_post_filter_no_of_tags_to_read</td>
+		<td>Integer from 0 to 1000</td>
+	</tr>
+	<tr>
+		<td>rfid_post_filter_rssi</td>
+		<td>Integer from -100 to 0</td>
 	</tr>
 </table>
 
@@ -2004,60 +2050,73 @@ Create/update a profile with OCR parameters:
 ### Set RFID input configuration
 
 	private void createProfile() { 
-	 
-	        // Create bundle for profile configuration 
-	        Bundle setConfigBundle = new Bundle(); 
-	        setConfigBundle.putString("PROFILE_NAME","SampleConfigApi"); 
-	        setConfigBundle.putString("PROFILE_ENABLED", "true"); 
-	        setConfigBundle.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST"); 
-	        setConfigBundle.putString("RESET_CONFIG", "false"); 
-	 
-	        // Associate profile with this app 
-	        Bundle appConfig = new Bundle(); 
-	        appConfig.putString("PACKAGE_NAME", getPackageName()); 
-	        appConfig.putStringArray("ACTIVITY_LIST", new String[]{"*"}); 
-	        setConfigBundle.putParcelableArray("APP_LIST", new Bundle[]{appConfig}); 
-	        setConfigBundle.remove("PLUGIN_CONFIG"); 
-	 
-	        // Set RFID configuration 
-	        Bundle rfidConfigParamList  = new Bundle(); 
-	        rfidConfigParamList.putString("rfid_input_enabled", "true"); 
-	        rfidConfigParamList.putString("rfid_beeper_enable", "true"); 
-	        rfidConfigParamList.putString("rfid_led_enable", "true"); 
-	        rfidConfigParamList.putString("rfid_antenna_transmit_power", "30"); 
-	        rfidConfigParamList.putString("rfid_memory_bank", "2"); 
-	        rfidConfigParamList.putString("rfid_session", "1"); 
-	        rfidConfigParamList.putString("rfid_trigger_mode", "1"); 
-	        rfidConfigParamList.putString("rfid_filter_duplicate_tags", "true"); 
-	        rfidConfigParamList.putString("rfid_hardware_trigger_enabled", "true"); 
-	        rfidConfigParamList.putString("rfid_tag_read_duration", "250"); 
-	        Bundle rfidConfigBundle = new Bundle(); 
-	        rfidConfigBundle.putString("PLUGIN_NAME", "RFID"); 
-	        rfidConfigBundle.putString("RESET_CONFIG", "true"); 
-	        rfidConfigBundle.putBundle("PARAM_LIST", rfidConfigParamList); 
-	 
-	        // Configure intent output for captured data to be sent to this app 
-	        Bundle intentConfig = new Bundle(); 
-	        intentConfig.putString("PLUGIN_NAME", "INTENT"); 
-	        intentConfig.putString("RESET_CONFIG", "true"); 
-	        Bundle intentProps = new Bundle(); 
-	        intentProps.putString("intent_output_enabled", "true"); 
-	        intentProps.putString("intent_action", "com.zebra.rfid.rwdemo.RWDEMO"); 
-	        intentProps.putString("intent_category", "android.intent.category.DEFAULT"); 
-	        intentProps.putString("intent_delivery", "0"); 
-	        intentConfig.putBundle("PARAM_LIST", intentProps); 
-	 
-	        // Add configurations into a collection 
-	        ArrayList<Parcelable> configBundles = new ArrayList<>(); 
-	        configBundles.add(rfidConfigBundle); 
-	        configBundles.add(intentConfig); 
-	        setConfigBundle.putParcelableArrayList("PLUGIN_CONFIG", configBundles); 
-	 
-	        // Broadcast the intent 
-	        Intent intent  = new Intent(); 
-	        intent.setAction("com.symbol.datawedge.api.ACTION"); 
-	        intent.putExtra("com.symbol.datawedge.api.SET_CONFIG", setConfigBundle); 
-	        sendBroadcast(intent);
+				// Create bundle for profile configuration
+        Bundle setConfigBundle = new Bundle();
+        setConfigBundle.putString("PROFILE_NAME","SampleConfigApi");
+        setConfigBundle.putString("PROFILE_ENABLED", "true");
+        setConfigBundle.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+        setConfigBundle.putString("RESET_CONFIG", "false");
+
+        // Associate profile with this app
+        Bundle appConfig = new Bundle();
+        appConfig.putString("PACKAGE_NAME", getPackageName());
+        appConfig.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+        setConfigBundle.putParcelableArray("APP_LIST", new Bundle[]{appConfig});
+        setConfigBundle.remove("PLUGIN_CONFIG");
+
+        // Set RFID configuration
+        Bundle rfidConfigParamList  = new Bundle();
+        rfidConfigParamList.putString("rfid_input_enabled", "true");
+        rfidConfigParamList.putString("rfid_beeper_enable", "true");
+        rfidConfigParamList.putString("rfid_led_enable", "true");
+        rfidConfigParamList.putString("rfid_antenna_transmit_power", "30");
+        rfidConfigParamList.putString("rfid_memory_bank", "2");
+        rfidConfigParamList.putString("rfid_session", "1");
+        rfidConfigParamList.putString("rfid_trigger_mode", "1");
+        rfidConfigParamList.putString("rfid_filter_duplicate_tags", "true");
+        rfidConfigParamList.putString("rfid_hardware_trigger_enabled", "true");
+        rfidConfigParamList.putString("rfid_tag_read_duration", "250");
+
+				// Pre-filter
+        rfidConfigParamList.putString("rfid_pre_filter_enable", "true");
+        rfidConfigParamList.putString("rfid_pre_filter_tag_pattern", "3EC");
+        rfidConfigParamList.putString("rfid_pre_filter_target", "2");
+        rfidConfigParamList.putString("rfid_pre_filter_memory_bank", "2");
+        rfidConfigParamList.putString("rfid_pre_filter_offset", "2");
+        rfidConfigParamList.putString("rfid_pre_filter_action", "2");
+
+				// Post-filter
+        rfidConfigParamList.putString("rfid_post_filter_enable", "true");
+        rfidConfigParamList.putString("rfid_post_filter_no_of_tags_to_read", "2");
+        rfidConfigParamList.putString("rfid_post_filter_rssi", "-54");
+
+				Bundle rfidConfigBundle = new Bundle();
+        rfidConfigBundle.putString("PLUGIN_NAME", "RFID");
+        rfidConfigBundle.putString("RESET_CONFIG", "true");
+        rfidConfigBundle.putBundle("PARAM_LIST", rfidConfigParamList);
+
+        // Configure intent output for captured data to be sent to this app
+        Bundle intentConfig = new Bundle();
+        intentConfig.putString("PLUGIN_NAME", "INTENT");
+        intentConfig.putString("RESET_CONFIG", "true");
+        Bundle intentProps = new Bundle();
+        intentProps.putString("intent_output_enabled", "true");
+        intentProps.putString("intent_action", "com.zebra.rfid.rwdemo.RWDEMO");
+        intentProps.putString("intent_category", "android.intent.category.DEFAULT");
+        intentProps.putString("intent_delivery", "0");
+        intentConfig.putBundle("PARAM_LIST", intentProps);
+
+				// Add configurations into a collection
+        ArrayList<Parcelable> configBundles = new ArrayList<>();
+        configBundles.add(rfidConfigBundle);
+        configBundles.add(intentConfig);
+        setConfigBundle.putParcelableArrayList("PLUGIN_CONFIG", configBundles);
+
+        // Broadcast the intent
+        Intent intent = new Intent();
+        intent.setAction("com.symbol.datawedge.api.ACTION");
+        intent.putExtra("com.symbol.datawedge.api.SET_CONFIG", setConfigBundle);
+        sendBroadcast(intent);
 	} 
 
 ### Set serial input configuration

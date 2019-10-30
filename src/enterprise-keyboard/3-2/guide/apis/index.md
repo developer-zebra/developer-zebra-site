@@ -15,13 +15,13 @@ Using EKB APIs requires experience with Java programming, familiarity with Andro
 ### About the APIs
 Enterprise Keyboard APIs allow the following functions: 
 
-* **ENABLE** (true/false) enables or disables the keyboard 
+* **ENABLE** (true/false) enables or disables the Enterprise Keyboard 
 * **GET** can return lists of: 
- * Available keyboard layouts
- * Current key layout group (file name) and the name of the current layout
-* **SET** switches to the specified keyboard layout
+ * Available key layouts made with EKD
+ * Current key layout group (file name) and the name of the current key layout
+* **SET** switches to the specified keyboard or key layout
 * **SHOW** displays the specified layout on the device
-* **RESET** Resets EKB layouts and enables Enterprise Keyboard (if disabled)
+* **RESET** Resets all key layouts and enables Enterprise Keyboard (if disabled)
 
 > * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
 
@@ -36,7 +36,7 @@ Enterprise Keyboard APIs allow the following functions:
 * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
 * In this guide, the terms “button” and “key” are used interchangeably. 
 * **If an app contains logic to show the keyboard automatically** when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
-* Apps running in full screen mode display custom keyboard layouts with an extra margin from the bottom of the device screen.
+* Apps running in full screen mode display custom key layouts with an extra margin from the bottom of the device screen.
 
 -----
 
@@ -46,16 +46,17 @@ It's typical for an Android app to adjust its window size when a general-purpose
 
 #### Behavior Notes
 
-* The width of the custom key layout is greater than or equal to 50 percent of device screen width.
-* The custom key layout is NOT positioned on top of the app's title bar or "Action" bar. 
-* In some cases, window resizing results in a blank portion of the screen. In these cases, try changing the background of the key layout. 
-* To disable windows resizing of the activity’s main window, define the following attribute in the app's activity manifest file: 
+* The application activity's main window is resized only if: 
+ * the width of the custom key layout is greater than or equal to 50 percent of device screen width.
+ * the custom key layout is NOT positioned on top of the app's title bar or "Action" bar. 
+* In some cases, window resizing results in a blank portion of the screen. To avoid this, try changing the background color of the key layout. 
+* To disable windows resizing of the activity’s main window, set the following attribute in the app's activity manifest file: 
  * `android:windowSoftInputMode=”adjustNothing”`
 
 ----
 
 ### Using EKB APIs
-The following example describes a company with business requirements that call for an application with four GUI screens: 
+The following example describes a company with business requirements that call for an application with four main activities and corresponding GUI screens: 
 
 * `FunctionKeyActivity`
 * `DisableActivity`
@@ -73,9 +74,9 @@ When `FunctionKeyActivity` comes to the foreground, the app should `GET` the fol
 * Current layout group name
 * Current layout name
 
-* `FunctionKeyActivity` should then set a function-key keyboard layout to show immediately when the app it comes in the foreground.
+* `FunctionKeyActivity` should then set a function-key layout to show immediately when the app it comes in the foreground.
 * `DisableActivity` does not use a keyboard, so keyboard should be disabled when this activity comes to the foreground. If the device user taps on an input area, a keyboard should not appear.
-* `MultiInputActivity` has two input areas. When the device user taps on the first input area, a qwerty keyboard layout appears. When the user taps on the second input area, the numeric keyboard layout appears.
+* `MultiInputActivity` has two input areas. When the device user taps on the first input area, a qwerty keyboard layout appears. When the user taps on the second input area, the numeric key layout appears.
 * `ResetActivity` uses a regular keyboard, so keyboard should be reset.
 
 <!-- 10/30/19- removed until the app location is known 
@@ -88,7 +89,7 @@ When `FunctionKeyActivity` comes to the foreground, the app should `GET` the fol
 App developers and administrators can use Android intents to determine programmatically which layouts are available in a device and to select and switch between layouts according to the input requirements of an application.
 
 ### Sending Intents
-The syntax defined in Enterprise Keyboard 2.0 permits multiple Enterprise Keyboard API calls as extras on a single intent action. The syntax is as follows:
+The syntax defined in Enterprise Keyboard 2.0 (and higher) permits multiple Enterprise Keyboard API calls as extras on a single intent action. The syntax is as follows:
 
 	:::java
 	Intent intent = new Intent();
@@ -138,7 +139,7 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 
 ## Layout Switching
 
-This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
+This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. **Note**: Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 
@@ -205,10 +206,10 @@ This case describes an Android app with two text input fields, both requiring cu
 Used to enable or disable the keyboard. 
 
 **Parameter values**:
-* **TRUE**: Keyboard enabled and shown whenever device user taps on an input field.
-* **FALSE**: Keyboard is disabled and does not show even after using SHOW API or tapping on an input area.
+* **TRUE**: Enterprise Keyboard enabled and shown whenever device user taps on an input field.
+* **FALSE**: Enterprise Keyboard is disabled and does not show even after using SHOW API or tapping on an input area.
 
-Once keyboard is enabled/disabled, requested application will receive a response intent having `RESULT_CODE` and `RESULT_MESSAGE`.
+Once Enterprise Keyboard is enabled/disabled, the requested application receives a response intent containing a `RESULT_CODE` and `RESULT_MESSAGE` extras.
 
 ##### Show keyboard:
 	:::java
@@ -242,9 +243,9 @@ Once keyboard is enabled/disabled, requested application will receive a response
 -----
 
 ### GET (available layouts)
-Returns a list of custom enterprise keyboard layouts currently available in the device.
+Returns a list of custom key layouts currently available in the device.
 
-##### Get available keyboard layouts:
+##### Get available key layouts:
 
 	:::java
 		Intent intent = new Intent();
@@ -254,7 +255,7 @@ Returns a list of custom enterprise keyboard layouts currently available in the 
 	String[] propertiesToRetrieve = {"AVAILABLE_LAYOUTS"};
 	intent.putExtra("PROPERTIES_TO_GET", propertiesToRetrieve);
 
-	// Intent sent back with status (via explicit broadcast)
+	// Intent is sent back with status (via explicit broadcast)
 	
 	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
 	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
@@ -289,9 +290,9 @@ Returns a list of custom enterprise keyboard layouts currently available in the 
 
 ### GET (current layout)
 
-This gets the current keyboard layout group and the current keyboard layout name. Returns the currently selected keyboard layout group and current keyboard layout name as set by Enterprise Keyboard.
+Returns the current key layout group and the current key layout name. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
 
-##### Get current keyboard layout group and layout name:
+##### Get current key layout group and layout name:
 	:::java
 		Intent intent = new Intent();
 	intent.setAction("com.symbol.ekb.api.ACTION_GET");
@@ -300,7 +301,7 @@ This gets the current keyboard layout group and the current keyboard layout name
 	String[] propertiesToRetrieve = {"CURRENT_LAYOUT_GROUP”,"CURRENT_LAYOUT_NAME"};
 	intent.putExtra("PROPERTIES_TO_GET", propertiesToRetrieve);
 
-	//  Intent which will be sent back with status (via explicit broadcast)
+	//  Intent is sent back with status (via explicit broadcast)
 	
 	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
 	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
@@ -323,13 +324,14 @@ This gets the current keyboard layout group and the current keyboard layout name
 	    }
 	}
 
+_____
 
-### SET (keyboard layout)
-Sets the custom layout in Enterprise Keyboard. While sending the intent to set the keyboard layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` params as extras.
+### SET (key layout)
+Sets the custom layout in Enterprise Keyboard. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` params as extras.
 
-Once keyboard layout is set in Enterprise Keyboard, requested application receives a response intent with `RESULT_CODE` and `RESULT_MESSAGE` extras.
+Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing  `RESULT_CODE` and `RESULT_MESSAGE` extras.
 
-##### Set keyboard layout:
+##### Set key layout:
 	:::java
 		Intent intent = new Intent();
 	intent.setAction("com.symbol.ekb.api.ACTION_UPDATE");
@@ -340,7 +342,7 @@ Once keyboard layout is set in Enterprise Keyboard, requested application receiv
 	intent.putExtra("CURRENT_LAYOUT_GROUP", layoutGroupName);
 	intent.putExtra("CURRENT_LAYOUT_NAME", layout);
 
-	// Intent which will be sent back with status (via explicit broadcast)
+	// Intent is sent back with status (via explicit broadcast)
 
 	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
 	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
@@ -362,14 +364,123 @@ Once keyboard layout is set in Enterprise Keyboard, requested application receiv
 -----
 
 ### SHOW
-Used to display the specified keyboard layout. 
+Used to show or hide the specified key layout. 
 
-> **NOTE**: If an app contains logic to show the keyboard automatically when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
-
+> **NOTE: An app can NOT hide the keyboard using the SHOW API** if the app contains logic to show the keyboard automatically when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file).
 
 **Parameter values**:
 
-`INFO TO COME FROM ENGINEERING`
+* **TRUE**: Keyboard is shown when activity is launched, even if the activity does not require input.
+
+* **FALSE**: Keyboard is not shown when activity is launched; shown only when the device user taps on an input field.
+
+Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing  `RESULT_CODE` and `RESULT_MESSAGE` extras.
+
+
+Once key layout is shown/hidden, requested application receives a response intent with RESULT_CODE and RESULT_MESSAGE.
+
+##### Sample code to show key layout:
+
+	:::java
+	Intent intent = new Intent();
+	intent.setAction("com.symbol.ekb.api.ACTION_UPDATE");
+	intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
+	intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+
+	// needToShow is a Boolean object; it can be true or false:
+
+	intent.putExtra("SHOW", needToShow); 
+
+	//  Intent is sent back with status (via explicit broadcast)
+
+	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
+	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
+	intent.putExtra("CALLBACK_RESPONSE", piResponse);
+	sendBroadcast(intent);
+
+##### Receive the result:
+
+	:::java
+	@Override
+	public void onReceive(Context context, Intent intent) {     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);
+		
+	}
+
+-----
+
+<!-- 10/30/19- Added to ticket on 10/22/19 by eng w/no instructions; used for SHOW params and code. Other APIs might contain duplicate info; waiting for clarification.
+
+### ENABLE
+
+Used to enable or disable the keyboard. This param has two states:
+
+TRUE: Keyboard is enabled but not shown unless the device user taps on an input area or SHOW API is called.
+FALSE: Keyboard is disabled and does not show even after using SHOW API or tapping on an input area.
+ 
+
+Once keyboard is enabled/disabled, requested application will receive a response intent having RESULT_CODE and RESULT_MESSAGE.
+
+Sample code to show keyboard:
+
+Intent intent = new Intent();
+intent.setAction("com.symbol.ekb.api.ACTION_UPDATE");
+
+intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
+intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+intent.putExtra("ENABLE", needToEnable); // needToEnable is a Boolean object so it can be
+
+                                     //either true or false.
+
+//  Intent which will be sent back with status (via explicit broadcast)
+Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
+PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
+intent.putExtra("CALLBACK_RESPONSE", piResponse);
+sendBroadcast(intent);
+
+ ** 
+
+Sample code to receive the result:
+
+@Override
+public void onReceive(Context context, Intent intent)
+
+{     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);    }
+
+-----
+ 
+# RESET
+
+Resets the Enterprise Keyboard layouts and enables the keyboard if it is disabled. After reset, user will be shown fixed layout Enterprise Keyboard.
+
+It has two states:
+# TRUE: Keyboard is reset.
+# FALSE: Keyboard is not reset.
+
+Requested application receives a response intent with RESULT_CODE and RESULT_MESSAGE.
+
+Sample code to show keyboard:
+
+Intent intent = new Intent();
+intent.setAction("com.symbol.ekb.api.ACTION_DO");
+
+intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
+intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+intent.putExtra("RESET_LAYOUT", needToReset);    // needToReset is a Boolean object so it
+
+                                             // can be either true or false.
+
+//Intent sent back with status (via explicit broadcast)
+Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
+PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
+intent.putExtra("CALLBACK_RESPONSE", piResponse);
+sendBroadcast(intent);
+
+Sample code to receive the result:
+
+@Override
+public void onReceive(Context context, Intent intent) {     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);    }
+
+-->
 
 <!-- 
 ##### Show keyboard:
@@ -405,14 +516,14 @@ Used to display the specified keyboard layout.
 -----
 
 ### RESET
-Resets the Enterprise Keyboard layouts and enables the keyboard if it is disabled. After reset, the fixed-layout Enterprise Keyboard is shown. 
+Resets the Enterprise Keyboard layouts and enables the Enterprise Keyboard (if disabled). After reset, the fixed-layout Enterprise Keyboard is shown when an input field gets focus. 
 
 **Parameter values**:
 
-* **TRUE**: Keyboard is reset.
-* **FALSE**: Keyboard is not reset.
+* **TRUE**: Keyboard is reset
+* **FALSE**: Keyboard is not reset
 
-Requested application receives a response intent with RESULT_CODE and RESULT_MESSAGE.
+The requested application receives a response intent containing RESULT_CODE and RESULT_MESSAGE extras.
 
 ##### Show keyboard:
 
@@ -421,8 +532,9 @@ Requested application receives a response intent with RESULT_CODE and RESULT_MES
 	intent.setAction("com.symbol.ekb.api.ACTION_DO");
 		intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
 	intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-	intent.putExtra("RESET_LAYOUT", needToReset);	// needToReset is a Boolean object so it
-							// can be either true or false.
+	intent.putExtra("RESET_LAYOUT", needToReset);
+
+							// needToReset is a Boolean object; can be either true or false:
 
 	//Intent sent back with status (via explicit broadcast)
 	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);

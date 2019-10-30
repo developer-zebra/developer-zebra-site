@@ -33,7 +33,7 @@ Data for custom key layout(s) is stored in the custom key-layout definition file
 ### Mass-deploy EKB/EKD files
 
 1. In StageNow or compatible EMM, **create an installation package containing EKB `.apk` and/or EKD layout definition file(s)**. <br>
- By default, EKD files are saved in the download directory of the current user of the host computer on which they were created: <br>
+ By default, EKD layout definition files are saved in the `\Downloads` directory of the host-computer user on the system on which they were created. For example: <br>
  `c:\Users\userName\Downloads\[LayoutProjectName.encrypted]`<br>
 2. **Deploy EKB to the the root directory** of the target device(s). 
 3. If included, **deploy layout definition file to**: <br>
@@ -42,15 +42,16 @@ Data for custom key layout(s) is stored in the custom key-layout definition file
 5. **Configure EKB as the default input source**.  
 6. **Restart the device**. 
 
-#### Upon restart, EKB is the default keyboard and custom key layouts are available for use. 
+#### Upon restart, EKB is the default keyboard and custom key layouts are available for use.
+
+#### See the [EKB API Guide](../apis) for layout usage info. 
 
 -----
 
 ### Also See
 
-* **[Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis)** | Switching key layouts programmatically
+* **[Enterprise Keyboard APIs](../apis)** | Switching key layouts programmatically
 * **[DataWedge Configuration](/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
-
 
 -----
 <!-- 

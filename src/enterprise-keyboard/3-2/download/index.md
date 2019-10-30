@@ -14,8 +14,9 @@ productversion: '3.2'
 3. **Select the desired EKB version(s)** for the target device(s).<br> 
 4. Download and install the package(s) using the standard procedure for OS updates or Android `.apk` files.
 
-**`IMPORTANT:`** <br>
+####`IMPORTANT:`
 * **Devices with preinstalled versions of EKB can be upgraded to the latest version <u>ONLY on devices running Android 7.x Nougat (or higher)</u>**. 
+* See [EKB Device Compatibility table](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) for upgrading EKB on devices running older Android versions. 
 * **All EKB versions *except* 1.4 through 3.2 (and higher) are installed as an OS update, *NOT* a user app**.  
 
 ### Remote Management

@@ -12,15 +12,16 @@ parm:
   type: string
 ---
 
-Used to specify the value of the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. The FQDN Flag value is passed as "x,x,x,x" to overcome a hostname prefixed with a special character.  
+Used to enter a value for the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. The FQDN Flag value is used to overcome issues related to a hostname prefixed with a special character. 
 
-**0100 = "E" –** When this bit is set, FQDN is binary-encoded (**recommended**). The DNS Server should have the capability to handle a binary-encoded FQDN value.
-
-**0001 = "S" -** Client will not perform Dynamic DNS update (**not recommended**). When this bit is cleared, the client indicates that it intends to maintain its own FQDN-to-IP mapping.
-
-**0010 = "O" –** DNS Server indication to client (do not set). 
+* **0001 = "S" -** Indicates whether the server should perform FQDN-to-address DNS updates. A "0" value indicates that the server **SHOULD NOT** perform updates (**recommended**).
+* **0010 = "O" –** Indicates whether the server has overridden the value stored in the "S" bit. **`NOTE:` Client must always set a "0" value here**. 
+* **0100 = "E" –** Indicates the encoding used on the Domain Name field. When this bit contains a "1" value, FQDN is binary-encoded (**recommended**). All DNS servers should have the capability to handle this encoding.
+* **1000 = "N" –** Indicates whether the SHOULD (value = 1) or SHOULD NOT (value = 0) perform any DNS updates. **The S bit must contain a "0" value if the N bit contains a "1" value**. 
 
 **Parm value input rules**: 
 
-* String of exactly 7 characters as "x,x,x,x" containing an FQDN flag value 
-* For example, "0,1,0,0" sends the recommended value of "E"
+* **String of exactly 7 characters** containing an FQDN flag value in the format "x,x,x,x" 
+* For example, the string "0,1,0,0" sends the Zebra-recommended values for this parameter
+
+See the [FQDN Flags Field](https://tools.ietf.org/html/rfc4702#section-2.1) on IETF.org for more information. 

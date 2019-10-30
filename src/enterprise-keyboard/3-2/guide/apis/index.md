@@ -42,15 +42,15 @@ Enterprise Keyboard APIs allow the following functions:
 
 ## App Window Resizing 
 
-It's typical for an Android app to adjust its window size when a general-purpose keyboard is displayed. Window resizing also takes place when EKD custom key layouts are used according to the following rules: 
+Android apps generally adjust window size when a general-purpose keyboard is displayed. Window resizing for EKD custom key layouts are subject to the rules below.   
 
-#### Behavior Notes
+#### EKD Window Resizing Behavior
 
-* The application activity's main window is resized only if: 
+* **The application activity's main <u>window is resized only if</u>**: 
  * the width of the custom key layout is greater than or equal to 50 percent of device screen width.
  * the custom key layout is NOT positioned on top of the app's title bar or "Action" bar. 
-* In some cases, window resizing results in a blank portion of the screen. To avoid this, try changing the background color of the key layout. 
-* To disable windows resizing of the activity’s main window, set the following attribute in the app's activity manifest file: 
+* **In some cases, window resizing results in a blank portion of the screen**. To avoid this, try changing the background color of the key layout. 
+* **To disable windows resizing of the activity’s main window**, set the following attribute in the app's activity manifest file: 
  * `android:windowSoftInputMode=”adjustNothing”`
 
 ----
@@ -200,10 +200,10 @@ This case describes an Android app with two text input fields, both requiring cu
 
 -----
 
-## Sample Code
+## API Parameters, Samples
 
 ### ENABLE
-Used to enable or disable the keyboard. 
+**Used to enable or disable the Enterprise Keyboard**. 
 
 **Parameter values**:
 * **TRUE**: Enterprise Keyboard enabled and shown whenever device user taps on an input field.
@@ -243,7 +243,7 @@ Once Enterprise Keyboard is enabled/disabled, the requested application receives
 -----
 
 ### GET (available layouts)
-Returns a list of custom key layouts currently available in the device.
+**Returns a list of custom key layouts** currently available in the device.
 
 ##### Get available key layouts:
 
@@ -290,7 +290,7 @@ Returns a list of custom key layouts currently available in the device.
 
 ### GET (current layout)
 
-Returns the current key layout group and the current key layout name. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
+**Returns the current key layout group and the current key layout name**. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
 
 ##### Get current key layout group and layout name:
 	:::java
@@ -327,7 +327,7 @@ Returns the current key layout group and the current key layout name. If Enterpr
 _____
 
 ### SET (key layout)
-Sets the custom layout in Enterprise Keyboard. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` params as extras.
+**Sets the custom layout in Enterprise Keyboard**. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` parameters as extras.
 
 Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing  `RESULT_CODE` and `RESULT_MESSAGE` extras.
 
@@ -364,7 +364,7 @@ Once key layout is set in Enterprise Keyboard, requested application receives a 
 -----
 
 ### SHOW
-Used to show or hide the specified key layout. 
+**Used to show or hide the specified key layout**. 
 
 > **NOTE: An app can NOT hide the keyboard using the SHOW API** if the app contains logic to show the keyboard automatically when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file).
 
@@ -403,7 +403,7 @@ Once key layout is shown/hidden, requested application receives a response inten
 	:::java
 	@Override
 	public void onReceive(Context context, Intent intent) {     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);
-		
+
 	}
 
 -----
@@ -481,42 +481,10 @@ Sample code to receive the result:
 public void onReceive(Context context, Intent intent) {     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);    }
 
 -->
-
-<!-- 
-##### Show keyboard:
-	:::java
-			Intent intent = new Intent();
-		intent.setAction("com.symbol.ekb.api.ACTION_UPDATE");
-			intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
-		intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-
-	// needToEnable is a Boolean object; it can be true or false:
-
-		intent.putExtra("ENABLE", needToEnable);	
-
-	//  Intent sent back with status (via explicit broadcast)
-
-	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
-	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
-	intent.putExtra("CALLBACK_RESPONSE", piResponse);
-	sendBroadcast(intent);
-	 
-
-##### Receive the result:
-	::java
-		@Override
-	public void onReceive(Context context, Intent intent) {
-	    Toast.makeText(context, "onReceived", Toast.LENGTH_SHORT).show();
-	    Bundle mBundle = intent.getExtras();
-	    String result = mBundle.getString("RESULT_CODE");
-	    String msg = mBundle.getString("RESULT_MESSAGE");    
-	}
- -->
-
 -----
 
 ### RESET
-Resets the Enterprise Keyboard layouts and enables the Enterprise Keyboard (if disabled). After reset, the fixed-layout Enterprise Keyboard is shown when an input field gets focus. 
+**Resets the Enterprise Keyboard layouts and enables the Enterprise Keyboard (if disabled)**. After reset, the fixed-layout Enterprise Keyboard is shown when an input field gets focus. 
 
 **Parameter values**:
 

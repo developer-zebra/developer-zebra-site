@@ -136,25 +136,24 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 
 -----
 
-## Example Use Cases
+## Layout Switching
 
-This section explains how to switch layouts using Android intents when focus of an input field changes. Layout switching also can be done through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
-
+This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 
-* **EKB v3.2 installed on the target device(s)**, activated and set as the default input source
+* **EKB v3.2 installed and activated on the target device(s)** and set as the default input source
 * **A *<u>single</u>* EKD layout file** (i.e. `myProject.encrypted`) in the following device folder: <br>
  `/enterprise/device/settings/ekb/config/`
-* **Layout file must contain ALL layouts** being used by apps on the device 
+* **Layout file must contain ALL layouts** being used by apps on the device
 
 > See the [Enterprise Keyboard Designer Guide](/ekd) for help creating a layout file. 
 
 -----
 
-### Switching Layouts, Case 1
+### Use Case 1
 
-This case describes an Android app with two text input fields: 
+This case describes an Android app with two text input fields. Substitute sample names whown below with those in the deployed [layout definition file](../deploy). 
 
 * `editText1` input field uses the standard Enterprise Keyboard fixed layout, which includes numeric, alpha-numeric, scan and symbol keyboards manually switchable by the user as needed.  
 * `editText2` input field uses a custom layout made with EKD that contains keys specifically designed for a particular type of input. 
@@ -177,7 +176,7 @@ This case describes an Android app with two text input fields:
 
 -----
 
-### Switching Layouts, Case 2
+### Use Case 2
 
 This case describes an Android app with two text input fields, both requiring custom layouts alternated within a specific time interval: 
 

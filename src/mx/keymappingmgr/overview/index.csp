@@ -63,6 +63,8 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 	* Do nothing
 * Reset all Key mappings to factory default values
 
+> `NOTE:` Remapping the Power key is NOT supported on any device.  
+
 Key Mapping is a capability offered on particular Zebra Android devices only. It allows keypress behavior to be defined for specific Key(s) or when a Key is in a given Key State. The Current Key State for a Key at any given time is determined by one or more Key State Modifiers that may have been applied as the result of presses of Modifier Keys. For example, a device with a Blue Key might set or clear the Blue-Key State Modifier in the Current Key State each time the Blue Key is pressed. Some Zebra devices support multiple Key State Modifiers to set the Current Key State; others do not.
 
 The Key Behavior desired for a particular keypress in a particular Key State is defined by a Key Mapping in the Key Mapping Table. There are Key Mapping Tables associated with specific Key State Modifiers that can be set within the Current Key State. A Key Mapping for a Key that is defined in a given Key Mapping Table will be used only when the Key is pressed while the Key Modifier associated with that Key Mapping Table is set in the Current Key State. For example, when a Key is pressed while the Blue Key State Modifier is set in the Current Key State, the Blue Key Mapping Table would be searched to find a Key Mapping for that keypress. 

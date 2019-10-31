@@ -115,7 +115,7 @@ parm:
       mx: "4.4"
       devicetype: A
       name: Control
-      description: The Control or "CRTL" modifier/meta key
+      description: The Control or "CTRL" modifier/meta key
     - code: SHIFT
       mx: "4.4"
       devicetype: A
@@ -346,7 +346,7 @@ parm:
       mx: "7.1"
       devicetype: A
       name: Brightness Up
-      description: Key on the Zebra VC80x that increase screen brightness
+      description: Key on the Zebra VC80x that increases screen brightness
     - code: BRIGHTNESSDOWN
       mx: "7.1"
       devicetype: A
@@ -356,17 +356,17 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Keyboard Backlight Brightness Up
-      description: The key that increases keyboard brightness
+      description: The key that increases keyboard backlight brightness
     - code: KEYLIGHTDOWN
       mx: "8.3"
       devicetype: A
       name: Keyboard Backlight Brightness Down
-      description: The key that reduces keyboard brightness
+      description: The key that reduces keyboard backlight brightness
     - code: ROTATE
       mx: "9.2"
       devicetype: A
       name: Rotate
-      description: The key that causes the screen to rotate
+      description: The key that causes the screen to change orientation
     - code: MINUS
       mx: "9.2"
       devicetype: A

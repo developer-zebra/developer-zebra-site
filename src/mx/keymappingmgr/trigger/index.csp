@@ -2,7 +2,7 @@
 csp: keymapmgr
 title:  Trigger
 type: parm
-order: 12
+order: 14
 mx: "4.4"
 devicetype: A
 parm:

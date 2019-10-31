@@ -370,7 +370,7 @@ parm:
     - code: MINUS
       mx: "9.2"
       devicetype: A
-      name: - (Minus)
+      name: Minus
       description: The key that inputs a minus sign or dash
 ---
 

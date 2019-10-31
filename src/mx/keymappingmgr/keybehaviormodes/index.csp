@@ -20,7 +20,7 @@ parm:
       devicetype: A
       name: Send trigger
       mx: "4.4"
-      description: This value will cause the Key Behavior for the specified Key in the Blue, Orange, Grey, Shift and Control Key State Mapping Table to be changed such that the Key will act as a one of the pre-defined Triggers and hence will cause whatever applications are registered for the selected Trigger to be notified.
+      description: This value will cause the Key Behavior for the specified Key in the Blue, Orange, Grey, Shift and Control Key State Mapping Table to be changed such that the Key will act as a one of the predefined Triggers and hence will cause whatever applications are registered for the selected Trigger to be notified.
     - code: 2
       devicetype: A
       name: Send key-code

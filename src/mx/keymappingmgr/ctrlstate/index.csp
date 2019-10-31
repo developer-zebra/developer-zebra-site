@@ -28,7 +28,7 @@ parm:
       description: This value will clear the Control Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Control.
 ---
 
-Controls the Control Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+Controls the Control (CTRL) Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
 
 **Note**: If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier will be sent to the Current Key State but it makes no change to the Key Mapping Table.
 

@@ -14,5 +14,6 @@ Use of Wi-Fi Advanced Options requires the following:
 * FT must be turned on to enable FTRIC (FT=1 and FTRIC =1)
 * OKC must be turned off (OKC =0 and PMKID =1) to use PMKID caching
 
-> **WARNING: Wi-Fi Advanced Options should be used only under the guidance of Zebra Support. Do not use these features unless told to do so by qualified personnel; altering advanced settings can result in undesirable behavior**.
+> **`IMPORTANT WARNINGS:`<br>Wi-Fi Advanced Options should be used only under the guidance of Zebra Support**. Do not use these features unless told to do so by qualified personnel; altering advanced settings can result in undesirable behavior.<br><br>**Zebra recommends using Advanced Options only on devices with MX 8.3 or higher**. Use with prior MX versions can result in unpredictable behavior. 
+
 

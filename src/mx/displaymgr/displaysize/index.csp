@@ -40,14 +40,14 @@ parm:
       name: Larger
       mx: "9.2"
       apilevel: "27"
-      description: Sets the size of UI elements at two steps larger than Android default size. 
+      description: Sets the size of UI elements at two steps larger than Android default size (tablets only). 
     - code: LARGEST
       devicetype: A
       name: Largest
       mx: "9.2"
       apilevel: "27"
-      description: Sets the size of UI elements at three steps larger than Android default size.
+      description: Sets the size of UI elements at three steps larger than Android default size (tablets only).
 ---
 
-Used to select the size of UI elements displayed on the device. **Note: The "LARGER" and "LARGEST" settings apply only to tablets**.  
+Used to select the size of UI elements displayed on the device. **NOTE: The "Larger" and "Largest" settings apply only to tablets**.  
 

@@ -63,11 +63,11 @@ parm:
       devicetype: A
       code: 70
       mx: "4.4"
-    - name: [ (Left Bracket)
+    - name: &#91; &#40Left Bracket&#41;
       devicetype: A
       code: 71
       mx: "9.2"
-    - name: ] (Right Bracket)
+    - name: &#93; &#40;Right Bracket&#41;
       devicetype: A
       code: 72
       mx: "9.2"
@@ -355,11 +355,11 @@ parm:
       devicetype: A
       code: 161
       mx: "4.4"
-    - name: ( (NUMPAD Left Parenthesis)
+    - name: &#40; &#40;NUMPAD Left Parenthesis&#41;
       devicetype: A
       code: 162
       mx: "4.4"
-    - name: ) (NUMPAD Right Parenthesis)
+    - name: &#41; &#40;NUMPAD Right Parenthesis&#41;
       devicetype: A
       code: 163
       mx: "4.4"
@@ -857,9 +857,9 @@ parm:
       mx: "4.4"
 ---
 
-Used to specify which Key Code is sent as the Key Behavior for the specified Key in any Key State Mapping Table. All parameters use the same values shown in the Base Key State Mapping Table.
+Used to enter a Key Code to be sent as the Key Behavior for the specified Key in any Key State Mapping Table. All parameters use the same values shown in the Base Key State Mapping Table.
 
->**Note:** All the parameters shown here allow control of the Key State(s) under which the Key Code will be sent. Parameters for controlling those settings are covered in the Advanced Sections. Attempts to specify a Key Behavior for a Key Mapping Table that is not supported on a given device will return an error in the Result XML. For the Key Mapping Tables supported on a specific device, query the KeyMappingMgr (see Queries, below) or refer to the device documentation. 
+>**Note:** All parameters shown here allow control of the Key State(s) under which the Key Code is sent. Parameters for controlling those settings are covered in the Advanced Sections. Attempts to specify a Key Behavior for a Key Mapping Table that is not supported on a given device returns an error in the Result XML. For the Key Mapping Tables supported on a specific device, query the KeyMappingMgr (see Queries, below) or refer to the device documentation. 
 
 **Parm names**:
 

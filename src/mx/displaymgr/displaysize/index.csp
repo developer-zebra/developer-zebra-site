@@ -49,5 +49,5 @@ parm:
       description: Sets the size of UI elements at three steps larger than Android default size.
 ---
 
-Used to select the size of UI elements displayed on the device. 
+Used to select the size of UI elements displayed on the device. **Note: The "LARGER" and "LARGEST" settings apply only to tablets**.  
 

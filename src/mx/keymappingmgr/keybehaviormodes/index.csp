@@ -1,6 +1,6 @@
 ---
 csp: keymapmgr
-title: Key Behavior in Blue, Orange, Grey, Shift and Control Modes
+title: Key Color Modes
 type: parm
 order: 6
 mx: "4.4"
@@ -48,4 +48,4 @@ parm:
       description: This value will cause the Key Behavior for the Key in the Blue, Orange, Grey, Shift and Control Key State Mapping Table to be changed such that the Default Key Behavior is restored.
 ---
 
-This parm is the same as the parm "Key behavior" except that instead of defining the Key Behavior for the Base Key State Mapping Table, it defines the Key Behavior for the Blue, Orange, Grey, Shift and Control Key State Mapping Table.
+This parameter is the same as "Key behavior" except that instead of defining the Key Behavior for the Base Key State Mapping Table, it defines the Key Behavior for the Blue, Orange, Grey, Shift and Control Key State Mapping Table.

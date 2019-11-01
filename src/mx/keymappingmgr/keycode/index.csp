@@ -63,11 +63,11 @@ parm:
       devicetype: A
       code: 70
       mx: "4.4"
-    - name: &#91; &#40Left Bracket&#41;
+    - name: Left "Open" Square Bracket
       devicetype: A
       code: 71
       mx: "9.2"
-    - name: &#93; &#40;Right Bracket&#41;
+    - name: Right "Close" Square Bracket
       devicetype: A
       code: 72
       mx: "9.2"
@@ -355,11 +355,11 @@ parm:
       devicetype: A
       code: 161
       mx: "4.4"
-    - name: &#40; &#40;NUMPAD Left Parenthesis&#41;
+    - name: NUMPAD Left Parenthesis
       devicetype: A
       code: 162
       mx: "4.4"
-    - name: &#41; &#40;NUMPAD Right Parenthesis&#41;
+    - name: NUMPAD Right Parenthesis
       devicetype: A
       code: 163
       mx: "4.4"
@@ -870,3 +870,4 @@ Used to enter a Key Code to be sent as the Key Behavior for the specified Key in
 * For Shift Key State Table: **ShiftKeyCode**
 * For Control Key State Table: **ControlKeyCode**
 * For Diamond Key State Table: **DiamondKeyCode**
+

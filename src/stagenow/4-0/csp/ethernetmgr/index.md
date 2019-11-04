@@ -12,6 +12,6 @@ mxversions:
     value: 5
 csp: ethernetmgr
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 

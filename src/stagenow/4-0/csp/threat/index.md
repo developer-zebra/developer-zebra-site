@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: threatmgr
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 
 

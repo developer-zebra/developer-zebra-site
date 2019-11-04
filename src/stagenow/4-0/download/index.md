@@ -2,7 +2,7 @@
 title: Download StageNow
 layout: guide.html
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 
 ### Download StageNow

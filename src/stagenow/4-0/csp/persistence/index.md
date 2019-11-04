@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: persistmgr
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 
 

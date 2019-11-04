@@ -2,7 +2,7 @@
 title: StageNow Troubleshooting
 layout: guide.html
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 
 This section covers common errors that can occur when using StageNow and offers advice on how to address them. 

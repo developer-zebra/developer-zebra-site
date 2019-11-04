@@ -53,7 +53,7 @@ menu:
     - icon: fa fa-search
       url: /stagenow/3-4/search
 product: StageNow
-productversion: '3.4'
+productversion: '4.0'
 ---
 
 

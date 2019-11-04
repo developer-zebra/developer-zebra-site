@@ -1,7 +1,7 @@
 ---
 title: Search
 layout: search.html
-index: /stagenow/3-4/index.json
+index: /stagenow/4-0/index.json
 product: StageNow
 productversion: '4.0'
 ---

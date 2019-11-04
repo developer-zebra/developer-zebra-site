@@ -7,9 +7,7 @@ productversion: '4.0'
 
 ## Overview
 
-**StageNow 4.0 introduces Trusted Staging**, which allows for the creation trusted profiles and trusted devices secured with certificates. Once a certificate is used to create a trusted device, that device can be staged only from barcodes created using the same security certificate. 
-
-See the [Trusted Staging Guide](../trustedstaging) for usage details. 
+> **StageNow 4.0 (and higher) supports Trusted Staging**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>See the [Trusted Staging Guide](../../trustedstaging) for usage details. 
 
 -----
 

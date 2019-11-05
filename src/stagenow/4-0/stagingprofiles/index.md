@@ -7,59 +7,70 @@ productversion: '4.0'
 
 ## Overview
 
-This section provides information for the staging administrator on creating and managing profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
+This section provides information for the staging administrator on creating and managing Profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
 
-### Welcome Tips
+> **StageNow 4.0 (and higher) supports Trusted Staging**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below for details. 
+
+<!-- ### Welcome Tips
 Several screens throughout the Workstation Tool offer helpful pop-up tips. Select the checkbox offered in order to dismiss the tip permanently. Select OK to dismiss the pop-up.
 
 ![img](../images/Review_withHelppopup.jpg)
 
+ -->
+
 -----
 
-## Creating a Staging Profile
-The staging administrator uses the provided StageNow Wizards to configure settings which define software configuration and installation for enterprise devices. When creating a profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
+## Create a Profile
+The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
 
 ![img](../images/banner.jpg)
 
-* [Config](../stagingprofiles?Configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
 
-* [Deployment](../stagingprofiles?Deployment) - This information includes settings that do not reside in StageNow barcodes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
+* [Deployment](../stagingprofiles/#deployment) - This information includes settings that do not reside in StageNow barcodes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
 
-* [Review](../stagingprofiles?Review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the profile, or return to any setting to update it.
+* [Review](../stagingprofiles/#review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the Profile, or return to any setting to update it.
 
-* [Publish](../stagingprofiles?Publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes, NFC tags, or Audio file) for the completed profile, as well as test, publish, and stage the profile.
+* [Publish](../stagingprofiles/#publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes, NFC tags, or Audio file) for the completed Profile, as well as test, publish, and stage the Profile.
 
 ### Profile States
-As you progress through the Wizard, the top right corner of the window reflects the state of the profile: 
+As you progress through the Wizard, the top right corner of the window reflects the state of the Profile: 
 
-![img](../images/profilestatus.jpg)
+<img alt="image" style="height:350px" src="../images/profilestatus.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
-* Incomplete - The profile is not yet complete.
+* Incomplete - The Profile is not yet complete.
 
-* Complete - All information required by the Wizard is included in the profile, but it is not yet tested to ensure the profile functions as intended.
+* Complete - All information required by the Wizard is included in the Profile, but it is not yet tested to ensure the Profile functions as intended.
 
-* Tested - The profile was tested to determine whether it is sufficiently operational for staging. It is not yet visible to the operator.
+* Tested - The Profile was tested to determine whether it is sufficiently operational for staging. It is not yet visible to the operator.
 
-* Published - The profile is visible to the operator.
+* Published - The Profile is visible to the operator.
 
-* Staged - The operator has acquired the profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
+* Staged - The operator has acquired the Profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
 
 ### Navigating the Wizard
 Following are tips for navigating through the Wizard.
 
 Click on the sections of the primary banner (e.g., StageNow Config, RD Config) to view that section. Note that you must complete each section in order before you can click ahead to the next section.
 
-![img](../images/banner.jpg)
 
+<img alt="image" style="height:350px" src="../images/banner.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 You can also use the Back button to return to the previous section and the Continue button to proceed to the next section.
 
-![img](../images/backcontinue.jpg)
-
+<img alt="image" style="height:350px" src="../images/backcontinue.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 Similarly, click on the oval buttons in the secondary banner to view that sub-section. You must also complete each sub-section before clicking ahead to the next one. 
 
-![img](../images/bubbles.jpg)
+<img alt="image" style="height:350px" src="../images/bubbles.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 The small round buttons adjacent to each oval button indicate the status of that section:
 
@@ -75,35 +86,46 @@ The small round buttons adjacent to each oval button indicate the status of that
 
 You can also use the arrows at the beginning and end of the secondary banner to scroll through these sub-sections. 
 
-![img](../images/arrow.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/arrow.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 
 When you select Yes for a secondary banner item, additional sub-sections are added to the banner. 
 
-![img](../images/subsection.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/subsection.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
+To edit the Profile name, click the pencil icon next to the name.
 
-To edit the profile name, click the pencil icon next to the name.
-
-![img](../images/RenameProfile.jpg)
-
+![img]()
+<img alt="image" style="height:350px" src="../images/RenameProfile.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 At any point, click the Home button to return to the Home screen. 
 
-![img](../images/homebutton.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/homebutton.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
-
-When populating a setting template window within a Wizard, to make the setting available for selection when creating other profiles, select the Save Setting for Re-use checkbox, and enter a name for the setting. See [Save for Reuse](../settingconfig?Save%20for%20Reuse) for more information.
+When populating a setting template window within a Wizard, to make the setting available for selection when creating other Profiles, select the Save Setting for Re-use checkbox, and enter a name for the setting. See [Save for Reuse](../settingconfig?Save%20for%20Reuse) for more information.
 
 -----
 
 ## Configure
-To create a profile, open the StageNow Workstation Tool and log in.
+To create a Profile, open the StageNow Workstation Tool and log in.
 
-Select Create New Profile, and then select the device MX version from the drop-down menu. The tool retains the current selection when configuring future profiles.
+Select Create New Profile, and then select the device MX version from the drop-down menu. The tool retains the current selection when configuring future Profiles.
 
-Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If your devices run multiple versions of MX, select the lowest common version. Select the checkbox on this window if you do not need to view it in future profile creations.
+Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If your devices run multiple versions of MX, select the lowest common version. Select the checkbox on this window if you do not need to view it in future Profile creations.
 
-![img](../images/WizardList_MXdropdown.png)
-
+![img]()
+<img alt="image" style="height:350px" src="../images/WizardList_MXdropdown.png"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 Select one of the following Wizards and select Create.
 
 * [Configure a Device](../Profiles/configdevice)
@@ -128,13 +150,16 @@ After completing the StageNow Config and RD Config sections of the Wizard, proce
 
 Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If selecting MX 6.X for the applicable Wizards, the first Wizard window displays a prompt for selecting one of the following options from the drop-down menu:
 
-* "The devices I wish to provision are currently not connected to a network. I will define a network with this profile that will be used for staging."
+* "The devices I wish to provision are currently not connected to a network. I will define a network with this Profile that will be used for staging."
 
 * "The devices I wish to provision are already connected to a network that will be used for staging." 
 
 * "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
 
-![img](../images/profiles/configdevice_wifi.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/profiles/configdevice_wifi.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 Select an option and proceed to the instructions for the selected Wizard.
 
@@ -142,84 +167,109 @@ Select an option and proceed to the instructions for the selected Wizard.
 * The second and third options above are supported only by Wizards that use the Deployment section of the tool.
 * StageNow 2.9 and higher supports plug-in CSPs, accessed by selecting CSP Library from the StageNow Home screen menu (below). 
 
-![img](../images/profiles/sn_210_csp_lib.png)
+![img]()
+<img alt="image" style="height:350px" src="../images/profiles/sn_210_csp_lib.png"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 -----
 
 ## Deployment
-Use the Deployment section of the Wizard to specify the subset of the settings that define what the profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
+Use the Deployment section of the Wizard to specify the subset of the settings that define what the Profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
 
 **Note**: This section is not available on some Wizards. 
 
 Wizards that include the Deployment section require that device(s) access the Deployment Server in order to acquire the information provided there. Specifically, the device and the server should be on the same network, or there should be routing from the device network that allows connection to the Deployment Server. 
 
-![img](../images/createprofile_deploy1.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/createprofile_deploy1.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 -----
 
 ## Review
 The Review section of the Wizard allows you to verify your selections.
 
-![img](../images/OSUpdate_Review.jpg)
+![img]()
+<img alt="image" style="height:350px" src="../images/OSUpdate_Review.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 1. Select Expand to view the StageNow configuration and RD configuration settings. This setting list offers the following fields:
     * Step - The section step where the Administrator added the setting.
     * Description - A user-defined "friendly" description of the setting.
-    * Last Updated - Last time the profile was updated.
+    * Last Updated - Last time the Profile was updated.
     * View - Click to view/modify the setting.
 
 2. Select Change to make any changes to the settings.
 
-3. Select the icon next to Profile Description to enter a description for the profile.
+3. Select the icon next to Profile Description to enter a description for the Profile.
 
-    ![img](../images/profiledescription.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/profiledescription.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+  <br>
 
 
 4. Enter the description and select Save.
 
-5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the profile barcode or NFC tag. See [StageNow Encryption](../gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
+5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the Profile barcode or NFC tag. See [StageNow Encryption](../gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
 
-6. Select Complete Profile to proceed to the Publish window. The profile status at the top right of the screen is now Complete.
+6. Select Complete Profile to proceed to the Publish window. The Profile status at the top right of the screen is now Complete.
 
 -----
 
 ## Publish
-The Publish section of the Wizard permits selection of a staging method, testing of the method for profile functionality, and making the profile available to the staging operator. This window lists the available profile delivery types, and displays dates and times when the profile was Last Tested, Published and Staged.
+The Publish section of the Wizard permits selection of a staging method, testing of the method for Profile functionality, and making the Profile available to the staging operator. This window lists the available Profile delivery types, and displays dates and times when the Profile was Last Tested, Published and Staged.
 
 -----
 
 ### Barcode Profile Staging
-To stage a barcode profile:
+To stage a barcode Profile:
 
 1. Select the Barcode tab: 
 
-    ![img](../images/sn210_publish.png)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/sn210_publish.png"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
-2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
+
+2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a Profile change.
 
 3. To stage devices from content stored on a server, check the "Host the Deployment Package Outside of StageNow FTP Server" and enter the server address and fully qualified file name (including path, see image above) of server-based content using the Source URI syntax. For more information and examples of this syntax, see the [Source URI](../csp/file/#source-uri) and [Examples](../csp/file/#examples) sections of the [File Manager guide](../csp/file). This feature supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials (Devices with MX 4.4+ support FTP only; **HTTP/HTTPS requires MX 7.0 or higher on device**; FTPS requires MX 7.1 or higher). 
 
 4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all barcode types.
 
-5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging barcode(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+5. Select Test to test the functionality of the Profile before publishing. This generates a PDF of test staging barcode(s). While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
 
-    ![img](../images/Publish_BarCodeTab_Test.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_Test.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
 6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of barcodes that were successfully tested, and publish the others when they are ready.
 
 7. Enter staging instructions for the operator.
 
-    ![img](../images/ConnectNetwork_Publish_Instructions.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/ConnectNetwork_Publish_Instructions.jpg"/>
+    _Click image to enlarge; ESC to cancel_. 
+    <br>
 
 8. Select "Publish Now" to continue.
 
-    ![img](../images/Publish_BarCodeTab_published.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_published.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
-9. To make the profile available for staging, select "Stage" to generate a PDF of staging barcode(s) that devices can scan for staging. See [Device Staging](../stageclient).
+9. To make the Profile available for staging, select "Stage" to generate a PDF of staging barcode(s) that devices can scan for staging. See [Device Staging](../stageclient).
 
-10. To export the profile for consumption by StageNow or an MDM, select the "Export For StageNow" or "Export For MDM" button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
+10. To export the Profile for consumption by StageNow or an MDM, select the "Export For StageNow" or "Export For MDM" button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
-**Select "Unpublish" to unpublish a profile** and remove operator access. 
+**Select "Unpublish" to unpublish a Profile** and remove operator access. 
 
 -----
 
@@ -232,21 +282,30 @@ To stage a barcode profile:
 * TC72
 * TC77
 
-**To stage an audio profile**:
+**To stage an audio Profile**:
 
 1. Select the Audio tab. If this is the first time using this feature, a tour provides help screens that specify technical and environmental requirements for audio staging. 
 
-    ![img](../images/Publish_AudioTab_Instructions.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_AudioTab_Instructions.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
 2. Progress through the instruction screens and select DONE to dismiss the tour.
 
-    ![img](../images/Publish_AudioTab.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_AudioTab.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
 3. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
 
-4. Select Test Audio to play the file in order to verify the functionality before publishing, or the Download icon to save the audio file before testing. While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+4. Select Test Audio to play the file in order to verify the functionality before publishing, or the Download icon to save the audio file before testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
 
-    ![img](../images/Publish_AudioTab_Test.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_AudioTab_Test.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+  <br>
 
 5. If the audio file functions properly, select Publish Profile to publish the audio file for operator use. 
 
@@ -254,23 +313,26 @@ To stage a barcode profile:
 
 7. To stage the clients using the audio file, select Play Audio, or Download to save the audio file for other administrators or operators to use. See [Device Staging](../stageclient).
 
-8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
+8. To export the Profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
-To unpublish a profile to remove operator access, select Unpublish.
+To unpublish a Profile to remove operator access, select Unpublish.
 
 -----
 
 ### NFC Profile Staging
-To stage an NFC profile:
+To stage an NFC Profile:
 
 1. Select the NFC tab. 
 
-    ![img](../images/Publish_NFCTab.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Publish_NFCTab.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
 2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
 
-3. Select Test to test the functionality of the profile before publishing. This saves the NFC tag as a .bin file for testing. While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+3. Select Test to test the functionality of the Profile before publishing. This saves the NFC tag as a .bin file for testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
 
 4. If the staging material functions properly, select Publish to publish the material for operator use. 
 
@@ -280,12 +342,12 @@ To stage an NFC profile:
 
 6. Select Publish Now.
 
-7. To make the profile available for staging, select Stage. This save the NFC tag as a .bin file that devices can read for staging. See [Device Staging](../stageclient).
+7. To make the Profile available for staging, select Stage. This save the NFC tag as a .bin file that devices can read for staging. See [Device Staging](../stageclient).
 
-8. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
+8. To export the Profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
-To unpublish a profile to remove operator access, select Unpublish.
+To unpublish a Profile to remove operator access, select Unpublish.
 
 -----
 
@@ -302,7 +364,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 ##### When the `.bin` file is found, the set-up wizard is skipped and staging begins. 
 
->**Note**: Staging profiles stored on an SD card take precedence over USB.
+>**Note**: Staging Profiles stored on an SD card take precedence over USB.
 
 **To <u>manually</u> stage a device from a file on the device**:
 
@@ -318,30 +380,40 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 **To create a new Profile by copying an existing one**:
 
-1. Select the Copy icon (shown below) next to the profile. ![img](../images/icon_copy.jpg)
+1. Select the Copy icon (shown below) next to the Profile. 
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/icon_copy.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
-2. Enter a new name for the profile, and select Save. 
+2. Enter a new name for the Profile, and select Save. 
 
-    ![img](../images/profile_copy_name.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/profile_copy_name.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
-3. A window indicates the profile was copied successfully. Select OK.
+3. A window indicates the Profile was copied successfully. Select OK.
 
-4. See the next section for instructions on editing the new profile.
+4. See the next section for instructions on editing the new Profile.
 
 -----
 
 ## Editing a Staging Profile
 
 >Note:  
->In-progress profiles created in StageNow 2.0 may not function after upgrading to the latest StageNow Tool.
+>In-progress Profiles created in StageNow 2.0 may not function after upgrading to the latest StageNow Tool.
 
-To edit a profile:
+To edit a Profile:
 
-1. Select the profile from the home screen. 
+1. Select the Profile from the home screen. 
 
 2. Use the navigation UI in the Wizard to locate the setting to update. See [Navigating the Wizard](../stagingprofiles?Navigating%20the%20Wizard).
 
-    ![img](../images/profile_edit_setting.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/profile_edit_setting.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
 3. Select Edit to enable the fields for updating.
 
@@ -356,21 +428,31 @@ To edit a profile:
 ## Exporting Staging Profiles
 
 >Note:  
->Incomplete profiles cannot be exported.
+>Incomplete Profiles cannot be exported.
 
-To export a single profile for StageNow or for an MDM:
+To export a single Profile for StageNow or for an MDM:
 
-1. Select the Export icon next to the profile. ![img](../images/icon_export.jpg)
+1. Select the Export icon next to the Profile. 
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/icon_export.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
-    ![img](../images/Export_choice.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Export_choice.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
 2. Select whether to export for an MDM or for within the StageNow tool.
 
-    ![img](../images/Export_hidden.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Export_hidden.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
 
-3. If you select Export For StageNow, to lock the profile so it cannot be changed and hide the details from other administrators, select the check box, and then select OK.
+3. If you select Export For StageNow, to lock the Profile so it cannot be changed and hide the details from other administrators, select the check box, and then select OK.
 
-4. Select a location for the profile and select Save. A window indicates that the profile was exported successfully.
+4. Select a location for the Profile and select Save. A window indicates that the Profile was exported successfully.
 
 5. Select OK.
 
@@ -379,25 +461,34 @@ Note: RD settings are not exported and so cannot be imported.
 ### Exporting All Profiles
 
 >Note:  
->Incomplete profiles are not exported.
+>Incomplete Profiles are not exported.
 
-To export all staging profiles:
+To export all staging Profiles:
 
 1. Select All Profiles.
 
-    ![img](../images/AllProfiles.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/AllProfiles.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+  <br>
 
 2. Select the Export Profile(s) button.
 
-    ![img](../images/Export_hidden.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Export_hidden.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
-3. To lock the profile so it cannot be changed and hide the details from other administrators, select the check box.
+3. To lock the Profile so it cannot be changed and hide the details from other administrators, select the check box.
 
 4. Select OK.
 
-    ![img](../images/Export_allzip.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/Export_allzip.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
-5. The default name for the zip file containing all profiles is MULTI_PROFILES.ZIP. Select a location for the profile and select Save. A window indicates that the profile was exported successfully.
+5. The default name for the zip file containing all Profiles is MULTI_PROFILES.ZIP. Select a location for the Profile and select Save. A window indicates that the Profile was exported successfully.
 
 6. Select OK.
 
@@ -405,32 +496,42 @@ To export all staging profiles:
 
 ## Importing a Staging Profile
 
-To import a profile:
+To import a Profile:
 
 1. **Click "All Profiles"** in the Home screen's left-hand pane:
 
-    ![img](../images/AllProfiles.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/AllProfiles.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
 2. **Click "Import Profile(s)"** button. A navigation dialog appears: 
 
-    ![img](../images/importprofile1.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/importprofile1.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
-3. **Navigate to the file to be imported** and **click "Import"** button. A dialog appears to indicate that the profile was imported successfully. <br>
+3. **Navigate to the file to be imported** and **click "Import"** button. A dialog appears to indicate that the Profile was imported successfully. <br>
 **Click OK**. 
 
-4. The imported profile appears in the profiles list. Profiles locked during export appear with a lock icon after import:
-
-![img](../images/Profile_withLock.jpg)
+4. The imported Profile appears in the Profiles list. Profiles locked during export appear with a lock icon after import:
+  ![img]()
+    <img alt="image" style="height:350px" src="../images/Profile_withLock.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
 > `IMPORTANT:` After importing a staging Profile, its settings counters are reset to zero (see image below).  
 
-![img](used_in_profiles.png)
-_Click image to enlarge; ESC to exit_.
+![img]()
+<img alt="image" style="height:350px" src="used_in_profiles.png"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 
 <!-- 2/26/19- removed lines below; obsolete. 
 
-Profiles created in StageNow 2.0 are imported as MX 4.3 profiles.
+Profiles created in StageNow 2.0 are imported as MX 4.3 Profiles.
 
 Note: RD settings are not exported and so cannot be imported.
 -->
@@ -438,19 +539,25 @@ Note: RD settings are not exported and so cannot be imported.
 
 ## Deleting a Staging Profile
 
-To delete a profile:
+To delete a Profile:
 
-1. Select the trash icon next to the profile. ![img](../images/icon_trash.jpg)
+1. Select the trash icon next to the Profile. 
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/icon_trash.jpg"/>
+<br>
 
-    ![img](../images/profile_delete.jpg)
+    ![img]()
+    <img alt="image" style="height:350px" src="../images/profile_delete.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+<br>
 
 2. Select OK to confirm the deletion.
 
-3. A window indicates that the profile was successfully deleted. Select OK.
+3. A window indicates that the Profile was successfully deleted. Select OK.
 
 -----
 
 ## Upgrading Profiles
 
-StageNow 2.3 and later allow the administrator to upgrade profiles created in any released or beta StageNow version to the latest version, i.e., StageNow 2.5.
+StageNow 2.3 and later allow the administrator to upgrade Profiles created in any released or beta StageNow version to the latest version, i.e., StageNow 2.5.
 

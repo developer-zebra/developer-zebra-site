@@ -13,20 +13,21 @@ productversion: '4.0'
 
 * StageNow 4.0 (or higher) installed
 * Zebra device(s) with MX 9.2 or higher
-* Self-signed security certificate
+* Self-signed security "Trusted Certificate" (`.pfx` file)
 
 #### Process Snapshot:
 
-1. Create a Trusted Certificate (`.pfx`) file 
+1. Create a Trusted Certificate `.pfx` file 
 2. Import the Trusted Certificate into StageNow
 3. Deploy the Trusted Certificate to device(s)<br> 
- This activates Trusted Staging on those devices<br>
- `NOTE:` Such devices no longer accept Untrusted Profiles
+ `NOTES:`<br>
+ • This activates Trusted Staging on target device(s)<br>
+ • Such device(s) no longer accept standard ("untrusted") Profiles
 4. Create Trusted Profile(s) for use on Trusted Device(s)
 
 -----
 
-#### To Use a Trusted Staging:
+#### To Create a Trusted Device:
 
 1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
  <img alt="image" style="height:350px" src="SN4_01.png"/>
@@ -36,7 +37,7 @@ productversion: '4.0'
  <img alt="image" style="height:350px" src="SN4_12.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. **Navigate to the** `.pfx.` **file being imported**:
+3. **Navigate to the** `.pfx` **file being imported**:
   <img alt="image" style="height:350px" src="SN4_03.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -46,7 +47,7 @@ productversion: '4.0'
 <br>
 5. **Create a staging profile that pushes the certificate to the device(s)** to become Trusted.
 
-#### For help with next steps, See the [Staging Profiles Guide](../stagingprofiles). 
+#### For help with next steps, See the [Staging Profiles Guide](../stagingprofiles/#createaprofile). 
 
 > `IMPORTANT:` Trusted Devices can be staged ONLY with Trusted Profiles. 
 

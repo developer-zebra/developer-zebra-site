@@ -11,7 +11,7 @@ productversion: '4.0'
 
 -----
 
-**The Manage Device Security Wizard** configures security options and policies for a device. Options for this profile are listed below. 
+**The Manage Device Security Wizard** configures security options and policies for a device. Options for this Profile are listed below. 
 
 **Security options**:
 
@@ -36,14 +36,14 @@ In addition, StageNow implements multiple layers of security in the barcode and 
 **Security included in staging media**: 
 
 * **Parm encryption -** All input text values considered sensitive (i.e. passwords) are encrypted using an asymmetric key algorithm.
-* **Profile encoding -** Upon creation of a profile, parm names are encoded, rendering them unreadable. 
-* **Profile encryption -** Optionally, an admin can elect to encrypt an entire staging profile using a shared (symmetric) key, which must be known before the barcode(s) or NFC tag(s) can be used.
+* **Profile encoding -** Upon creation of a Profile, parm names are encoded, rendering them unreadable. 
+* **Profile encryption -** Optionally, an admin can elect to encrypt an entire staging Profile using a shared (symmetric) key, which must be known before the barcode(s) or NFC tag(s) can be used.
 
 -----
 
 ## Create a Security Profile
 
-**To create a Manage Device Security profile**:
+**To create a Manage Device Security Profile**:
 
 1. Select Create New Profile.
 
@@ -51,13 +51,13 @@ In addition, StageNow implements multiple layers of security in the barcode and 
 
 3. Select the Manage Device Security Wizard, and select Create.
 
-    ![img](../../images/profiles/managesecurity_name.jpg)
+	<img alt="image" style="height:350px" src="../../images/profiles/managesecurity_name.jpg"/>
 
-4. Enter a name for the profile and select Start.
+4. Enter a name for the Profile and select Start.
 
-    ![img](../../images/profiles/managesecurity_whitelist.jpg)
+	<img alt="image" style="height:350px" src="../../images/profiles/managesecurity_whitelist.jpg"/>
 
-    Note: During profile creation, Profile Status is indicated in the upper-right corner of the window, (e.g., "Incomplete").
+    Note: During Profile creation, Profile Status is indicated in the upper-right corner of the window, (e.g., "Incomplete").
 
 5. Select whether to perform Application Whitelisting. If selecting Yes, see [Setting Types / AccessMgr](../../csp/access) for instructions. 
 
@@ -87,8 +87,7 @@ In addition, StageNow implements multiple layers of security in the barcode and 
 
 17. Select whether to encrypt the SD Card. If selecting Yes, select the method for providing the Encryption Key.
 
-   ![img](../../images/profiles/managesecurity_encryptSDcard.jpg)
-
+   	<img alt="image" style="height:350px" src="../../images/profiles/managesecurity_encryptSDcard.jpg"/>
 
     Then see [Setting Types / EncryptMgr](../../csp/encrypt) for instructions.
 

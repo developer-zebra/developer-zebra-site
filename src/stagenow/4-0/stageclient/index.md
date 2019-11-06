@@ -6,7 +6,7 @@ productversion: '4.0'
 ---
 
 ## Introduction
-This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag. This process configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). This guide is applicable **<u>after</u> one or more [Profiles](../Profiles) have been created**. 
+This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag. This process configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). This guide is applicable **<u>after</u> one or more [Profiles](../stagingprofiles) have been created**. 
 
 **NOTE**: Some older target devices come with the Rapid Deployment Client instead of StageNow. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
 

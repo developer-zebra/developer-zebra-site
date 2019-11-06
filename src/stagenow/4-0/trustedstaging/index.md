@@ -19,7 +19,7 @@ productversion: '4.0'
 
 1. Create a Trusted Certificate `.pfx` file 
 2. Import the Trusted Certificate into StageNow
-3. Deploy the Trusted Certificate to device(s)<br> 
+3. Deploy the Trusted Certificate to device(s) to make them Trusted Device(s)<br> 
  `NOTES:`<br>
  • This activates Trusted Staging on target device(s)<br>
  • Such device(s) no longer accept standard ("untrusted") Profiles
@@ -97,11 +97,11 @@ productversion: '4.0'
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 11. **<u>Use the device(s) to be made Trusted</u> to scan the barcodes and deploy the certificate**: 
-  <img alt="image" style="height:450px" src="SN4_deploy05.png"/>
+  <img alt="image" style="height:450px" src="SN4_deploy11.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-> `IMPORTANT:` All devices that scan these barcodes become "Trusted Devices" and can no longer be staged with standard "untrusted" staging Profiles. 
+> `IMPORTANT:` All devices that scan barcodes generated this way become "Trusted Devices" and can no longer be staged with standard "untrusted" staging Profiles; <u>they can be staged ONLY with Trusted Profiles created using the same certificate as was deployed to the device(s)</u>. 
 
 -----
 
@@ -109,29 +109,33 @@ productversion: '4.0'
 
 **Trusted Profiles are the same as standard ("untrusted") Profiles <u>with one important exception</u>**: The final step adds a "Trusted" designation and requires selection of a security certificate. 
 
-#### To Create a Trusted Profile
+#### To Create a Trusted Profile:
 
-1. **Zebra recommends naming Trusted Profiles** to make them easy to identify: 
+1. From the Home screen, **click the "Create new Profile" button**. Before selecting a Wizard, **be sure that MX 9.2 (or higher) is selected from the drop-down**: 
+  <img alt="image" style="height:450px" src="SN4_trustedProfile00.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+1. When naming, **Zebra recommends selecting names that make the Profile easy to identify later**: 
   <img alt="image" style="height:450px" src="SN4_trustedProfile01.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 2. In the final step of Profile creation, **select "Trusted" from the drop-down**: 
-  <img alt="image" style="height:450px" src="SN4_trustedProfile02.png"/>
+  <img alt="image" style="height:550px" src="SN4_trustedProfile02.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 3. **From the the drop-down of certificates previously imported, <u>select the certificate that matches the one deployed to target device(s)</u>**: 
-  <img alt="image" style="height:450px" src="SN4_trustedProfile03.png"/>
+  <img alt="image" style="height:550px" src="SN4_trustedProfile03.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-**Trusted Profiles are identified in the "All Profiles" list by a green lock icon** as in the image below: 
+**Trusted Profiles are identified in Profile lists by a green lock icon** as in the image below: 
   <img alt="image" style="height:450px" src="SN4_trustedProfile04.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-> `IMPORTANT:` Trusted Devices can be staged ONLY with a Trusted Profile that contains the same certificate as was deployed to those devices. 
+#### `IMPORTANT:` Trusted Devices can be staged ONLY with a Trusted Profile that contains the same certificate as was deployed to those devices. 
 
-#### See the [Staging Profiles Guide](../stagingprofiles/#createaprofile) for further details. 
+#### See the [Staging Profiles Guide](../stagingprofiles) for further details. 
 
 
 <!-- 

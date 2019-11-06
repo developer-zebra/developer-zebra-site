@@ -69,7 +69,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**Introduces Trusted Staging**, which allows for the creation of trusted profiles and trusted devices, which can be staged only from barcodes created using the same security certificate. See the [Trusted Staging Guide](../../trustedstaging) for usage details. **Applies only to devices with MX 9.2 and higher**. 
+**Introduces [Trusted Staging](../trustedstaging)**, which allows for the creation of trusted profiles and trusted devices, which can be staged only from barcodes created using the same security certificate. See the [Trusted Staging Guide](../trustedstaging) for usage details. **Applies only to devices with MX 9.2 and higher**. 
 
 **Now supports MX 9.2**: which adds the following features and enhancements: 
 * **Enhanced [Power Manager](../csp/power)** now allows an admin to: 

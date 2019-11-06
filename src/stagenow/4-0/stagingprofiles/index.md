@@ -9,7 +9,7 @@ productversion: '4.0'
 
 This section provides information for the staging administrator on creating and managing Profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
 
-> **StageNow 4.0 (and higher) supports Trusted Staging**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below for details. 
+> **StageNow 4.0 (and higher) supports [Trusted Staging](../trustedstaging)**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below and the [Trusted Staging Guide](../trustedstaging) for details. 
 
 <!-- ### Welcome Tips
 Several screens throughout the Workstation Tool offer helpful pop-up tips. Select the checkbox offered in order to dismiss the tip permanently. Select OK to dismiss the pop-up.
@@ -198,7 +198,7 @@ _Click image to enlarge; ESC to cancel_.
 2. Select Change to make any changes to the settings.
 
 3. Select the icon next to Profile Description to enter a description for the Profile.
-    <img alt="image" style="height:350px" src="../images/profiledescription.jpg"/>
+    <img alt="image" style="height:50px" src="../images/profiledescription.jpg"/>
     _Click image to enlarge; ESC to cancel_.
   <br>
 
@@ -220,7 +220,7 @@ The Publish section of the Wizard permits selection of a staging method, testing
 To stage a barcode Profile:
 
 1. Select the Barcode tab: 
-    <img alt="image" style="height:350px" src="../images/sn210_publish.png"/>
+    <img alt="image" style="height:450px" src="../images/sn210_publish.png"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
 
@@ -232,19 +232,19 @@ To stage a barcode Profile:
 4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all barcode types.
 
 5. Select Test to test the functionality of the Profile before publishing. This generates a PDF of test staging barcode(s). While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
-    <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_Test.jpg"/>
+    <img alt="image" style="height:400px" src="../images/Publish_BarCodeTab_Test.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
 
 6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of barcodes that were successfully tested, and publish the others when they are ready.
 
 7. Enter staging instructions for the operator.
-    <img alt="image" style="height:350px" src="../images/ConnectNetwork_Publish_Instructions.jpg"/>
+    <img alt="image" style="height:450px" src="../images/ConnectNetwork_Publish_Instructions.jpg"/>
     _Click image to enlarge; ESC to cancel_. 
     <br>
 
 8. Select "Publish Now" to continue.
-    <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_published.jpg"/>
+    <img alt="image" style="height:450px" src="../images/Publish_BarCodeTab_published.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 

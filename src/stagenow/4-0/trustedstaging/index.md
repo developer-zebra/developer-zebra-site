@@ -27,7 +27,10 @@ productversion: '4.0'
 
 -----
 
-#### To Create a Trusted Device:
+## Create a Trusted Device
+
+
+### I. Import Certificate
 
 1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
  <img alt="image" style="height:350px" src="SN4_01.png"/>
@@ -41,15 +44,94 @@ productversion: '4.0'
   <img alt="image" style="height:350px" src="SN4_03.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-4. **Confirm that the imported file appears** in the list of Trusted Certificates similar to the image below:   
-  <img alt="image" style="height:350px" src="SN4_04.png"/>
+4. **Confirm that the imported file appears** in the list of Trusted Certificates similar to the image below.<br>
+ **NOTE**: When imported, the `.pfx` file is encrypted and given a `.cer` file extension.
+   <img alt="image" style="height:350px" src="SN4_04.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. **Create a staging profile that pushes the certificate to the device(s)** to become Trusted.
+5. **Create a staging profile that pushes the certificate to the device(s)** to become Trusted (next section).
 
-#### For help with next steps, See the [Staging Profiles Guide](../stagingprofiles/#createaprofile). 
+-----
 
-> `IMPORTANT:` Trusted Devices can be staged ONLY with Trusted Profiles. 
+### II. Deploy Certificate to Device(s)
+
+1. From the Home screen, **click the Create new Profile button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy01.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+2. **Select "Xpert Mode" and the click "Create" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy02.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+3. **Enter a name** for the deployment profile and **click the "Start" button**:  
+  <img alt="image" style="height:450px" src="SN4_deploy03.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+4. **Click the plus (+) sign** on the "Batch" CSP line and **click the "Add" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy04.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+5. **Select "Turn On Trusted Mode"** from the drop-down:
+  <img alt="image" style="height:450px" src="SN4_deploy06.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+6. **Click the Navigation button** to bring up an "Open" dialog (shown in Step 7):
+  <img alt="image" style="height:450px" src="SN4_deploy07.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+7. **Navigate to and select the certificate file** (imported in Section I, Step 4) and **click the "Open" button**:<br>
+ **NOTE**: When imported, the `.pfx` file is encrypted and given a `.cer` file extension.
+  <img alt="image" style="height:450px" src="SN4_deploy08.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+8. Confirm that the `.cer` file appears and **click the "Continue" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy07a.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+9. **Select "Encrypted" from the drop-down** as shown and **click the "Complete Profiles" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy09.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+10. **Select the desired barcode type** for the staging client and **click the "Test" button** to generate barcodes: 
+  <img alt="image" style="height:450px" src="SN4_deploy10.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+11. **<u>Use the device(s) to be made Trusted</u> to scan the barcodes and deploy the certificate**: 
+  <img alt="image" style="height:450px" src="SN4_deploy05.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+> `IMPORTANT:` All devices that scan these barcodes become "Trusted Devices" and can no longer be staged with standard "untrusted" staging Profiles. 
+
+-----
+
+### III. Create Trusted Staging Profile
+
+**Trusted Profiles are the same as standard ("untrusted") Profiles <u>with one important exception</u>**: The final step adds a "Trusted" designation and requires selection of a security certificate. 
+
+#### To Create a Trusted Profile
+
+1. **Zebra recommends naming Trusted Profiles** to make them easy to identify: 
+  <img alt="image" style="height:450px" src="SN4_trustedProfile01.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+2. In the final step of Profile creation, **select "Trusted" from the drop-down**: 
+  <img alt="image" style="height:450px" src="SN4_trustedProfile02.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+3. **From the the drop-down of certificates previously imported, <u>select the certificate that matches the one deployed to target device(s)</u>**: 
+  <img alt="image" style="height:450px" src="SN4_trustedProfile03.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+**Trusted Profiles are identified in the "All Profiles" list by a green lock icon** as in the image below: 
+  <img alt="image" style="height:450px" src="SN4_trustedProfile04.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+> `IMPORTANT:` Trusted Devices can be staged ONLY with a Trusted Profile that contains the same certificate as was deployed to those devices. 
+
+#### See the [Staging Profiles Guide](../stagingprofiles/#createaprofile) for further details. 
 
 
 <!-- 

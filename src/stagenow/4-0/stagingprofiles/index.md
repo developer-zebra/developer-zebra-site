@@ -23,7 +23,9 @@ Several screens throughout the Workstation Tool offer helpful pop-up tips. Selec
 ## Create a Profile
 The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
 
-![img](../images/banner.jpg)
+<img alt="image" style="height:100px" src="../images/banner.jpg"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
 
 * [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
 
@@ -36,7 +38,7 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 ### Profile States
 As you progress through the Wizard, the top right corner of the window reflects the state of the Profile: 
 
-<img alt="image" style="height:350px" src="../images/profilestatus.jpg"/>
+<img alt="image" style="height:100px" src="../images/profilestatus.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
@@ -56,19 +58,19 @@ Following are tips for navigating through the Wizard.
 Click on the sections of the primary banner (e.g., StageNow Config, RD Config) to view that section. Note that you must complete each section in order before you can click ahead to the next section.
 
 
-<img alt="image" style="height:350px" src="../images/banner.jpg"/>
+<img alt="image" style="height:100px" src="../images/banner.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
 You can also use the Back button to return to the previous section and the Continue button to proceed to the next section.
 
-<img alt="image" style="height:350px" src="../images/backcontinue.jpg"/>
+<img alt="image" style="height:100px" src="../images/backcontinue.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
 Similarly, click on the oval buttons in the secondary banner to view that sub-section. You must also complete each sub-section before clicking ahead to the next one. 
 
-<img alt="image" style="height:350px" src="../images/bubbles.jpg"/>
+<img alt="image" style="height:100px" src="../images/bubbles.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
@@ -82,32 +84,28 @@ The small round buttons adjacent to each oval button indicate the status of that
 
   *  An orange icon with a pause indicates the section that is in process while you are viewing another section.
 
-  *  A greyed-out oval with no adjacent round button indicates a section not yet started.
+  *  A grayed-out oval with no adjacent round button indicates a section not yet started.
 
 You can also use the arrows at the beginning and end of the secondary banner to scroll through these sub-sections. 
 
-![img]()
-<img alt="image" style="height:350px" src="../images/arrow.jpg"/>
+<img alt="image" style="height:100px" src="../images/arrow.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
 
-When you select Yes for a secondary banner item, additional sub-sections are added to the banner. 
+When you select "Yes" for a secondary banner item, additional subsections are added to the banner. 
 
-![img]()
-<img alt="image" style="height:350px" src="../images/subsection.jpg"/>
+<img alt="image" style="height:100px" src="../images/subsection.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 To edit the Profile name, click the pencil icon next to the name.
 
-![img]()
-<img alt="image" style="height:350px" src="../images/RenameProfile.jpg"/>
+<img alt="image" style="height:100px" src="../images/RenameProfile.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 At any point, click the Home button to return to the Home screen. 
 
-![img]()
-<img alt="image" style="height:350px" src="../images/homebutton.jpg"/>
+<img alt="image" style="height:100px" src="../images/homebutton.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
@@ -122,7 +120,6 @@ Select Create New Profile, and then select the device MX version from the drop-d
 
 Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If your devices run multiple versions of MX, select the lowest common version. Select the checkbox on this window if you do not need to view it in future Profile creations.
 
-![img]()
 <img alt="image" style="height:350px" src="../images/WizardList_MXdropdown.png"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -156,7 +153,6 @@ Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi h
 
 * "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
 
-![img]()
 <img alt="image" style="height:350px" src="../images/profiles/configdevice_wifi.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -167,7 +163,6 @@ Select an option and proceed to the instructions for the selected Wizard.
 * The second and third options above are supported only by Wizards that use the Deployment section of the tool.
 * StageNow 2.9 and higher supports plug-in CSPs, accessed by selecting CSP Library from the StageNow Home screen menu (below). 
 
-![img]()
 <img alt="image" style="height:350px" src="../images/profiles/sn_210_csp_lib.png"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -181,7 +176,6 @@ Use the Deployment section of the Wizard to specify the subset of the settings t
 
 Wizards that include the Deployment section require that device(s) access the Deployment Server in order to acquire the information provided there. Specifically, the device and the server should be on the same network, or there should be routing from the device network that allows connection to the Deployment Server. 
 
-![img]()
 <img alt="image" style="height:350px" src="../images/createprofile_deploy1.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -191,7 +185,6 @@ _Click image to enlarge; ESC to cancel_.
 ## Review
 The Review section of the Wizard allows you to verify your selections.
 
-![img]()
 <img alt="image" style="height:350px" src="../images/OSUpdate_Review.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -205,8 +198,6 @@ _Click image to enlarge; ESC to cancel_.
 2. Select Change to make any changes to the settings.
 
 3. Select the icon next to Profile Description to enter a description for the Profile.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/profiledescription.jpg"/>
     _Click image to enlarge; ESC to cancel_.
   <br>
@@ -229,8 +220,6 @@ The Publish section of the Wizard permits selection of a staging method, testing
 To stage a barcode Profile:
 
 1. Select the Barcode tab: 
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/sn210_publish.png"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
@@ -243,8 +232,6 @@ To stage a barcode Profile:
 4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all barcode types.
 
 5. Select Test to test the functionality of the Profile before publishing. This generates a PDF of test staging barcode(s). While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_Test.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
@@ -252,15 +239,11 @@ To stage a barcode Profile:
 6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of barcodes that were successfully tested, and publish the others when they are ready.
 
 7. Enter staging instructions for the operator.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/ConnectNetwork_Publish_Instructions.jpg"/>
     _Click image to enlarge; ESC to cancel_. 
     <br>
 
 8. Select "Publish Now" to continue.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_BarCodeTab_published.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -285,15 +268,11 @@ To stage a barcode Profile:
 **To stage an audio Profile**:
 
 1. Select the Audio tab. If this is the first time using this feature, a tour provides help screens that specify technical and environmental requirements for audio staging. 
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_AudioTab_Instructions.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 
 2. Progress through the instruction screens and select DONE to dismiss the tour.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_AudioTab.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -301,8 +280,6 @@ To stage a barcode Profile:
 3. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
 
 4. Select Test Audio to play the file in order to verify the functionality before publishing, or the Download icon to save the audio file before testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_AudioTab_Test.jpg"/>
     _Click image to enlarge; ESC to cancel_.
   <br>
@@ -324,8 +301,6 @@ To unpublish a Profile to remove operator access, select Unpublish.
 To stage an NFC Profile:
 
 1. Select the NFC tab. 
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Publish_NFCTab.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -381,14 +356,11 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 **To create a new Profile by copying an existing one**:
 
 1. Select the Copy icon (shown below) next to the Profile. 
-    ![img]()
-    <img alt="image" style="height:350px" src="../images/icon_copy.jpg"/>
+    <img alt="image" style="height:50px" src="../images/icon_copy.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 
 2. Enter a new name for the Profile, and select Save. 
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/profile_copy_name.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -409,9 +381,7 @@ To edit a Profile:
 1. Select the Profile from the home screen. 
 
 2. Use the navigation UI in the Wizard to locate the setting to update. See [Navigating the Wizard](../stagingprofiles?Navigating%20the%20Wizard).
-
-    ![img]()
-    <img alt="image" style="height:350px" src="../images/profile_edit_setting.jpg"/>
+   <img alt="image" style="height:350px" src="../images/profile_edit_setting.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 
@@ -433,19 +403,14 @@ To edit a Profile:
 To export a single Profile for StageNow or for an MDM:
 
 1. Select the Export icon next to the Profile. 
-    ![img]()
-    <img alt="image" style="height:350px" src="../images/icon_export.jpg"/>
+    <img alt="image" style="height:50px" src="../images/icon_export.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Export_choice.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 
 2. Select whether to export for an MDM or for within the StageNow tool.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Export_hidden.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -466,15 +431,11 @@ Note: RD settings are not exported and so cannot be imported.
 To export all staging Profiles:
 
 1. Select All Profiles.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/AllProfiles.jpg"/>
     _Click image to enlarge; ESC to cancel_.
   <br>
 
 2. Select the Export Profile(s) button.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Export_hidden.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
@@ -482,8 +443,6 @@ To export all staging Profiles:
 3. To lock the Profile so it cannot be changed and hide the details from other administrators, select the check box.
 
 4. Select OK.
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/Export_allzip.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
@@ -499,15 +458,11 @@ To export all staging Profiles:
 To import a Profile:
 
 1. **Click "All Profiles"** in the Home screen's left-hand pane:
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/AllProfiles.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
 
 2. **Click "Import Profile(s)"** button. A navigation dialog appears: 
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/importprofile1.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
@@ -516,14 +471,12 @@ To import a Profile:
 **Click OK**. 
 
 4. The imported Profile appears in the Profiles list. Profiles locked during export appear with a lock icon after import:
-  ![img]()
-    <img alt="image" style="height:350px" src="../images/Profile_withLock.jpg"/>
+    <img alt="image" style="height:50px" src="../images/Profile_withLock.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>
 
 > `IMPORTANT:` After importing a staging Profile, its settings counters are reset to zero (see image below).  
 
-![img]()
 <img alt="image" style="height:350px" src="used_in_profiles.png"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -542,11 +495,8 @@ Note: RD settings are not exported and so cannot be imported.
 To delete a Profile:
 
 1. Select the trash icon next to the Profile. 
-    ![img]()
-    <img alt="image" style="height:350px" src="../images/icon_trash.jpg"/>
+    <img alt="image" style="height:50px" src="../images/icon_trash.jpg"/>
 <br>
-
-    ![img]()
     <img alt="image" style="height:350px" src="../images/profile_delete.jpg"/>
     _Click image to enlarge; ESC to cancel_.
 <br>

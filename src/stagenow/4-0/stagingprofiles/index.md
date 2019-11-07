@@ -42,15 +42,15 @@ As you progress through the Wizard, the top right corner of the window reflects 
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-* Incomplete - The Profile is not yet complete.
+* **Incomplete** - The Profile is not yet complete.
 
-* Complete - All information required by the Wizard is included in the Profile, but it is not yet tested to ensure the Profile functions as intended.
+* **Complete** - All information required by the Wizard is included in the Profile, but it is not yet tested to ensure the Profile functions as intended.
 
-* Tested - The Profile was tested to determine whether it is sufficiently operational for staging. It is not yet visible to the operator.
+* **Tested** - The Profile was tested to determine whether it is sufficiently operational for staging. It is not yet visible to the operator.
 
-* Published - The Profile is visible to the operator.
+* **Published** - The Profile is visible to the operator.
 
-* Staged - The operator has acquired the Profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
+* **Staged** - The operator has acquired the Profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
 
 ### Navigating the Wizard
 Following are tips for navigating through the Wizard.

@@ -6,9 +6,14 @@ productversion: '4.0'
 ---
 
 ## Introduction
-This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag. This process configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). This guide is applicable **<u>after</u> one or more [Profiles](../stagingprofiles) have been created**. 
 
-**NOTE**: Some older target devices come with the Rapid Deployment Client instead of StageNow. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
+**`IMPORTANT:`** This guide is applicable <u>after</u> one or more [Profiles](../stagingprofiles) have been created. 
+
+This guide describes how to use StageNow to select and process a StageNow barcode, audio file, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
+
+> Also see the [Trusted Staging Guide](../trustedstaging) for information about creating Trusted Devices and Trusted Profiles. 
+
+**NOTE**: Some older target devices come with the Rapid Deployment Client instead of the StageNow client app. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
 
 -----
 
@@ -26,7 +31,7 @@ This section describes how to use the StageNow desktop and client apps to select
 
 ## II. Select Staging Medium
 
-### Barcode, Audio or NFC Staging 
+### Barcode, Audio NFC or `.bin` Staging 
 This method of staging writes the configuration information from the selected profile into barcodes, audio files or NFC tags. Staging is initiated when the output is read (or heard) by the client device(s). 
 
 1. Select the desired medium (Barcode, Audio or NFC) tab:

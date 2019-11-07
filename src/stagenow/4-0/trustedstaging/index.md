@@ -71,7 +71,7 @@ productversion: '4.0'
   <img alt="image" style="height:450px" src="SN4_deploy04.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. **Select "Turn On Trusted Mode"** from the drop-down:
+5. **Select "Turn On Trusted Mode"** from the drop-down menu:
   <img alt="image" style="height:450px" src="SN4_deploy06.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -88,7 +88,7 @@ productversion: '4.0'
   <img alt="image" style="height:450px" src="SN4_deploy07a.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-9. **Select "Encrypted" from the drop-down** as shown and **click the "Complete Profiles" button**: 
+9. **Select "Encrypted" from the drop-down menu** as shown and **click the "Complete Profiles" button**: 
   <img alt="image" style="height:450px" src="SN4_deploy09.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -111,7 +111,7 @@ productversion: '4.0'
 
 #### To Create a Trusted Profile:
 
-1. From the Home screen, **click the "Create new Profile" button**. Before selecting a Wizard, **be sure that MX 9.2 (or higher) is selected from the drop-down**: 
+1. From the Home screen, **click the "Create new Profile" button**. Before selecting a Wizard, **be sure that MX 9.2 (or higher) is selected from the drop-down menu**: 
   <img alt="image" style="height:450px" src="SN4_trustedProfile00.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -119,16 +119,16 @@ productversion: '4.0'
   <img alt="image" style="height:450px" src="SN4_trustedProfile01.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. In the final step of Profile creation, **select "Trusted" from the drop-down**: 
+2. In the final step of Profile creation, **select "Trusted" from the drop-down menu**: 
   <img alt="image" style="height:550px" src="SN4_trustedProfile02.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. **From the the drop-down of certificates previously imported, <u>select the certificate that matches the one deployed to target device(s)</u>**: 
+3. **From the the drop-down menu of certificates previously imported, <u>select the certificate that matches the one deployed to target device(s)</u>**: 
   <img alt="image" style="height:550px" src="SN4_trustedProfile03.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-**Trusted Profiles are identified in Profile lists by a green lock icon** as in the image below: 
+**Trusted Profiles are identified in Profile lists by a green lock icon** as in the sample image below: 
   <img alt="image" style="height:450px" src="SN4_trustedProfile04.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>

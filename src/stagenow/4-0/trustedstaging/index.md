@@ -143,7 +143,7 @@ productversion: '4.0'
 
 ## Turn Off Trusted Mode
 
-If it becomes necessary to remove a device from Trusted Mode, simply create a Trusted Profile that turns off Trusted Mode using the Batch CSP. 
+If it becomes necessary to remove a device from Trusted Mode, simply create a Trusted Profile and select "Turn Off Trusted Mode" using the Batch CSP. Details are below. 
 
 #### To create a Trusted Profile turning off Trusted Mode: 
 

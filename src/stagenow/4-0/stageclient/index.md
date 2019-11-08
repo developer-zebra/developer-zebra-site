@@ -17,7 +17,9 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 -----
 
-## I. Select a Staging Profile
+## Stage a Device
+
+### I. Select a Staging Profile
 
 **To select a profile with which to stage the device**:
 
@@ -29,9 +31,9 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 -----
 
-## II. Select Staging Medium
+### II. Select Staging Medium
 
-### Barcode, Audio NFC or `.bin` Staging 
+#### Barcode, Audio, NFC or `.bin` Staging 
 This method of staging writes the configuration information from the selected profile into barcodes, audio files or NFC tags. Staging is initiated when the output is read (or heard) by the client device(s). 
 
 1. Select the desired medium (Barcode, Audio or NFC) tab:
@@ -47,7 +49,7 @@ This method of staging writes the configuration information from the selected pr
         <img alt="image" style="height:350px" src=""/>
     <img alt="image" style="height:350px" src="../images/operator3.jpg"/>
 
-### Selecting an Audio File for Staging
+#### Selecting an Audio File for Staging
 This method of staging writes the configuration information from the selected profile into an audio file. Play the audio file in the vicinity of the client devices in order to initiate staging on these devices. 
 
 1. Select the Audio tab. If this is the first time using this feature, a tour provides help screens that specify technical and environmental requirements for audio staging. 
@@ -68,7 +70,7 @@ Navigate to the folder in which to place the audio file and select Save.
 
 -----
 
-## III. Stage the Device(s)
+### III. Stage the Device(s)
 
 On the target device, tap on the StageNow icon to launch the StageNow Client.
 
@@ -208,22 +210,49 @@ For more information about creating `.bin` files, see the [Staging Profiles guid
 
 -----
 
-### Staging Wait Conditions
+### USB, SD Card Staging
+<!-- 11/8/19- this doc section is also on the /stagingprofiles page
+ -->
+StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.  
+
+**To <u>automatically</u> stage a device from a USB drive or SD card**:
+
+1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. **Create a folder called** `/Stagenow` on a USB drive or SD card.
+3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
+3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
+
+##### When the `.bin` file is found, the set-up wizard is skipped and staging begins. 
+
+>**Note**: Staging Profiles stored on an SD card take precedence over USB.
+
+**To <u>manually</u> stage a device from a file on the device**:
+
+1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. **Copy the** `.bin` **file(s)** to any location on the device. 
+3. **Launch the StageNow client** and tap the "Browse" button:
+<img alt="image" style="height:300px" src="sn_33_ui.png"/>
+4. **Navigate to and tap the** `.bin` **file** copied in Step 2 to begin staging. 
+
+-----
+
+
+## Staging Wait Conditions
 The following pop-up screens can appear during staging, indicating the device is performing an operation and that staging will complete when it is done.
 
-#### Initializing
+### Initializing
 
 Following a device reboot, Zebra components such as the MX Framework can require as much as two minutes to initialize and prepare for staging. If staging is initiated during this time, the StageNow Client indicates displays a pop-up similar to the image below: 
 
   <img alt="image" style="height:350px" src="../images/initializing_popup.png"/>
 
-#### Acquiring IP
+### Acquiring IP
 
 A delay can sometimes occur if staging requires an IP address, such as during "scan-and-dock," when the operator scans a barcode and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address and performs network operations such as downloading a file from the StageNow staging server. under such scenarios, a pop-up appears similar to the image below:
 
   <img alt="image" style="height:350px" src="../images/acquiring_ip_popup.png"/>
 
-#### Downloading
+### Downloading
 
 The pop-up shown below indicates that the client is processing a staging profile that contains a command to download content from a staging server. This often indicates an OS update package.
 
@@ -262,11 +291,11 @@ Select View Client Info to view software version information for the device.
 
   <img alt="image" style="height:350px" src="../images/viewclientinfo.jpg"/>
 
-Use this screen to determine whether your device has full or partial StageNow feature functionality.
+Use this screen to determine whether the device has full or partial StageNow feature functionality.
 
 * Full Functionality - the OSx Version is the same as the MXMF Version.
 
-* Partial Functionality - the OSx Version is less than the MXMF Version. See the Feature Compatibility section of the specific [Setting Types](../CSPreference) to determine if your device supports that feature.
+* Partial Functionality - the OSx Version is less than the MXMF Version. See the Feature Compatibility section of the specific [Setting Types](../CSPreference) to determine if the device supports that feature.
 
 * No Functionality - no OSx Version.
 

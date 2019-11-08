@@ -27,7 +27,7 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if Legacy Mode is turned on in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
 
 * [Deployment](../stagingprofiles/#deployment) - This information includes settings that do not reside in StageNow barcodes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
 
@@ -36,7 +36,7 @@ _Click image to enlarge; ESC to cancel_.
 * [Publish](../stagingprofiles/#publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes, NFC tags, or Audio file) for the completed Profile, as well as test, publish, and stage the Profile.
 
 ### Profile States
-As you progress through the Wizard, the top right corner of the window reflects the state of the Profile: 
+As progress is made through the Wizard, the top right corner of the window reflects the state of the Profile: 
 
 <img alt="image" style="height:100px" src="../images/profilestatus.jpg"/>
 _Click image to enlarge; ESC to cancel_.
@@ -55,20 +55,20 @@ _Click image to enlarge; ESC to cancel_.
 ### Navigating the Wizard
 Following are tips for navigating through the Wizard.
 
-Click on the sections of the primary banner (e.g., StageNow Config, RD Config) to view that section. Note that you must complete each section in order before you can click ahead to the next section.
+Click on the sections of the primary banner (e.g., StageNow Config, RD Config) to view that section. Note that section must be completed before clicking ahead to the next section.
 
 
 <img alt="image" style="height:100px" src="../images/banner.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-You can also use the Back button to return to the previous section and the Continue button to proceed to the next section.
+Use the "Back" button to return to the previous section and the "Continue" button to proceed to the next section.
 
 <img alt="image" style="height:100px" src="../images/backcontinue.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-Similarly, click on the oval buttons in the secondary banner to view that sub-section. You must also complete each sub-section before clicking ahead to the next one. 
+Similarly, click on the oval buttons in the secondary banner to view that sub-section. Each sub-section must be completed before clicking ahead to the next one. 
 
 <img alt="image" style="height:100px" src="../images/bubbles.jpg"/>
 _Click image to enlarge; ESC to cancel_.
@@ -76,24 +76,24 @@ _Click image to enlarge; ESC to cancel_.
 
 The small round buttons adjacent to each oval button indicate the status of that section:
 
-  *  A green check icon indicates that section is complete.
+  *  **A green check icon** indicates that section is complete.
 
-  *  A green eye icon indicates the section you are viewing.
+  *  **A green eye icon** indicates the section being viewed.
 
-  *  An orange icon with a pencil indicates the section that is in process.
+  *  **An orange icon** with a pencil indicates the section that is in process.
 
-  *  An orange icon with a pause indicates the section that is in process while you are viewing another section.
+  *  **An orange icon** with a pause indicates the section that is in process while viewing another section.
 
-  *  A grayed-out oval with no adjacent round button indicates a section not yet started.
+  *  **A grayed-out oval** with no adjacent round button indicates a section not yet started.
 
-You can also use the arrows at the beginning and end of the secondary banner to scroll through these sub-sections. 
+Use the arrows at the beginning and end of the secondary banner to scroll through these sub-sections. 
 
 <img alt="image" style="height:100px" src="../images/arrow.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
 
-When you select "Yes" for a secondary banner item, additional subsections are added to the banner. 
+When selecting "Yes" for a secondary banner item, additional subsections are added to the banner. 
 
 <img alt="image" style="height:100px" src="../images/subsection.jpg"/>
 _Click image to enlarge; ESC to cancel_.
@@ -118,7 +118,7 @@ To create a Profile, open the StageNow Workstation Tool and log in.
 
 Select Create New Profile, and then select the device MX version from the drop-down menu. The tool retains the current selection when configuring future Profiles.
 
-Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If your devices run multiple versions of MX, select the lowest common version. Select the checkbox on this window if you do not need to view it in future Profile creations.
+Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If target devices contain different versions of MX, select the lowest version. Select the checkbox on this window to suppress display in the future.
 
 <img alt="image" style="height:350px" src="../images/WizardList_MXdropdown.png"/>
 _Click image to enlarge; ESC to cancel_.
@@ -183,7 +183,7 @@ _Click image to enlarge; ESC to cancel_.
 -----
 
 ## Review
-The Review section of the Wizard allows you to verify your selections.
+The Review section of the Wizard allows selection verification.
 
 <img alt="image" style="height:350px" src="../images/OSUpdate_Review.jpg"/>
 _Click image to enlarge; ESC to cancel_.
@@ -327,7 +327,8 @@ To unpublish a Profile to remove operator access, select Unpublish.
 -----
 
 ### USB and SD Card Profile Staging
-
+<!-- 11/8/19- this doc section is also on the /stageclient page
+ -->
 StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.  
 
 **To <u>automatically</u> stage a device from a USB drive or SD card**:
@@ -415,7 +416,7 @@ To export a single Profile for StageNow or for an MDM:
     _Click image to enlarge; ESC to cancel_.
     <br>
 
-3. If you select Export For StageNow, to lock the Profile so it cannot be changed and hide the details from other administrators, select the check box, and then select OK.
+3. If selecting Export For StageNow, to lock the Profile so it cannot be changed and hide the details from other administrators, select the check box, and then select OK.
 
 4. Select a location for the Profile and select Save. A window indicates that the Profile was exported successfully.
 

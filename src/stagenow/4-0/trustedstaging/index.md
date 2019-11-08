@@ -180,7 +180,7 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-#### Device is removed from Trusted Mode and can be staged using ordinary staging Profiles. 
+**The device is now removed from Trusted Mode and can be staged using ordinary staging Profiles**. 
 
 -----
 

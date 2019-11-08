@@ -34,9 +34,6 @@ productversion: '4.0'
 
 > ***This process requires StageNow to be running in admin mode***. 
 
-#### Also see:
-[How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)
-
 1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
  <img alt="image" style="height:350px" src="SN4_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
@@ -55,6 +52,9 @@ productversion: '4.0'
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 5. **Create a staging profile that pushes the certificate to the device(s)** to become Trusted (next section).
+
+#### Also see 
+**[How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)**
 
 -----
 

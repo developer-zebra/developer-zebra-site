@@ -7,10 +7,9 @@ productversion: '4.0'
 
 ## Introduction
 
-> **`IMPORTANT:`** Use this guide <u>only <i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
-
 This guide describes how to use StageNow to select and process a StageNow barcode, audio file, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
 
+> **`IMPORTANT:`** Use this guide <u>only <i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
 > Also see the [Trusted Staging Guide](../trustedstaging) for information about creating Trusted Devices and Trusted Profiles. 
 
 **NOTE**: Some older target devices come with the Rapid Deployment Client instead of the StageNow client app. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
@@ -231,8 +230,10 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
 2. **Copy the** `.bin` **file(s)** to any location on the device. 
 3. **Launch the StageNow client** and tap the "Browse" button:
-<img alt="image" style="height:300px" src="sn_33_ui.png"/>
 4. **Navigate to and tap the** `.bin` **file** copied in Step 2 to begin staging. 
+<!-- 11/8/19- image file discovered to be missing
+<img alt="image" style="height:300px" src="sn_33_ui.png"/>
+-->
 
 -----
 

@@ -356,8 +356,10 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
 2. **Copy the** `.bin` **file(s)** to any location on the device. 
 3. **Launch the StageNow client** and tap the "Browse" button:
-<img alt="image" style="height:300px" src="sn_33_ui.png"/>
 4. **Navigate to and tap the** `.bin` **file** copied in Step 2 to begin staging. 
+<!-- 11/8/19- image file discovered to be missing
+<img alt="image" style="height:300px" src="sn_33_ui.png"/>
+-->
 
 -----
 

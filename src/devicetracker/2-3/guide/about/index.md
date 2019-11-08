@@ -11,7 +11,10 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 
 ## New in Device Tracker 2.3
 * New feature on the server to toggle BLE for device proximity tracking.
-* New BLE feature in app client for device proximity tracking.
+* New BLE proximity indicator to determine proximity of device based on BLE beacon transmissions.
+* Ability to delete "Never connected" devices.
+* New support for Self-Signed Certificates to help simplify deployment of product demos and trials.
+* Support for Google API 28 provides greater consistency of application user interfaces and icons when compared with other Zebra Mobility DNA software.
 
 ## Version History
 

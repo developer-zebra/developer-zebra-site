@@ -18,7 +18,11 @@ Before installing, ensure to prepare additional steps for system setup - consult
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
-<font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
+<!--
+<font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for production environments. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
+-->
+###Version History
+* **Device Tracker 2.3.1 -** New support for Self-Signed Certificates to help simplify deployment of product demos and trials.
 
 ##System Requirements
 This section provides the server and device requirements. Device Tracker supports a maximum of 500 devices per installation.
@@ -46,9 +50,12 @@ This section provides the server and device requirements. Device Tracker support
         * Web Portal: UI Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
+5. Certificate requirement:
+For product demos and trials, a Self-Signed Certficate is acceptable. Otherwise, <font color="red">an SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
 
-6. Hardware Requirements:
+6. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
+
+7. Hardware Requirements:
    * Minimum CPU cores: 16
      * Minimum memory (RAM): 64 GB
          * Minimum available hard drive space: 500 GB
@@ -72,7 +79,8 @@ Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
+2. **Server Certificate.** A Self-Signed Certficate can be used for for product demos and trials.
+Otherwise, ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
@@ -81,6 +89,9 @@ The following are the prerequisites required for the server: <br>
 <br>
 
 ###Server Certificate
+An SSL tool is required to generate the server certificate. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/). Instructions follow to generate an SSL certificate and self-signed certificate.<br>
+<!--Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>-->
+####SSL Certificate
 An SSL certificate is needed for secure connections. Domain level and wildcard certificates are acceptable. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
 * **Procure server certificate** (.p7b format) with public key 
 * **Generate complete SSL certificate** (.pfx format) with both public and private keys 
@@ -89,13 +100,12 @@ If the server certificate with public key already exists, skip to the second sec
 **Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format. Watch a video demonstration or follow the steps below:
 <video controls width="430" height="290"> <source src="../../../videos/ZDVC_ServerCert-Step1.mp4" type="video/mp4">
 </video>
-1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
-2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
-3. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
-4. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in Device Tracker. Run the command:  
+1. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
+2. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
+3. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in Device Tracker. Run the command:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out dtrkdemo.key 2048`<br>
 where "dtrkdemo.key" can be replaced with a custom file name.
-5. Create a CSR based on the new private key. Run the command:<br>
+4. Create a CSR based on the new private key. Run the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key dtrkdemo.key -new -out dtrkdemo.csr`<br>
 where "dtrkdemo.key" (same file name as in step 4) and "dtrkdemo.csr" (new file created) can be replaced with custom file names. 
 It prompts to enter the private key password (created in step 5). Enter in the required fields when prompted (the information entered must match that registered with the CA):
@@ -107,26 +117,8 @@ It prompts to enter the private key password (created in step 5). Enter in the r
    * **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
    * **Email Address** - Enter the contact email address.<br>
 When prompted for the challenge password, it is not required - _do not supply one_. 
-6. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
+5. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
-<!-- **Note:** Symantec certificates can only be used on web servers using the Common Name specified during enrollment. For example, a certificate for the domain "zebra.com" will receive a warning if accessing a site named "www.zebra.com" or "secure.zebra.com" since "www.zebra.com" and "secure.zebra.com" are different from "zebra.com." <br>
--->
-<!--
-E. Run the following command to generate a private key and CSR file: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req -newkey rsa:2048 -nodes -keyout zdvc_private_key.key -out zdvc_cert_sign_req.csr`<br>
- Where "zdvc_cert_sign_req.csr" and "zdvc_private_key.key" can be replaced with custom file names.<br> 
-F. Enter in the required fields when prompted:
-
-   * **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
-   * **State or Province** - Enter the full state or province name without abbreviation, for example: California.
-   * **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
-   * **Company** - Enter the company. If the company or department contains a special characteres such as "&" or "@" the symbol must be spelled out or omitted in order to enroll successfully. 
-   * **Organizational Unit** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
-   * **Common Name** - Enter the Host and Domain Name, following the same format as these examplese: "www.zebra.com" or "zebra.com". **Note:** Symantec certificates can only be used on web servers using the Common Name specified during enrollment. For example, a certificate for the domain "zebra.com" will receive a warning if accessing a site named "www.zebra.com" or "secure.zebra.com" since "www.zebra.com" and "secure.zebra.com" are different from "zebra.com." <br>
-
- G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._<br>
- H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed. <br>
- I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key). -->
 **Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format. Watch a video demonstration and follow the steps below:
 <video controls width="450" height="280"> <source src="../../../videos/ZDVC_ServerCert-Step2.mp4" type="video/mp4">
 </video>
@@ -138,21 +130,28 @@ where "ssl_certificate.p7b" is the certificate issued by the CA.
 where "dtrkdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1. When prompted, enter the passphrase (from step 4 in the previous section) and specify an export password. 
 3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard. When prompted for a password, enter the password set from the previous step.
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
-<!--
-A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
-B. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "zdvc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
-C. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`
-<br>
-D. At the command prompt, execute the following command:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey zdvc_private_key.key -out ssl_certificate.pfx -certfile IntermediateCA.cer`
-	<br>
-	Where "-certfile IntermediateCA.cer" is optional.
-<br>
-E. When prompted, enter the certificate password to export "ssl_certificate.pfx". This is the challenge password specified in step 2.G. above.<br>
-F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
-<br>
--->
+
+####Self-Signed Certificate
+A Self-Signed Certificate can be used for for product demos and trials.
+1. Generate a private key:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl genrsa -des3 -out dtrkdemo.key 2048`<br>
+where "dtrkdemo.key" is the name of the private key.
+2. When prompted, enter a pass phrase.
+3. Generate a CSR:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl req -new -key dtrkdemo.key -sha256 -out dtrkdemo.csr` <br>
+where "dtrkdemo.key" is the name of the private key from step 1 and "dtrkdemo.csr" is the name of the CSR.
+4. When prompted, enter the pass phrase set in step 2.
+5. When prompted, enter information in the fields requested, including the challenge password.
+6. Generate a self-signed certficate:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl x509 -req -days 365 -in dtrkdemo.csr -signkey dtrkdemo.key -sha256 -out dtrkdemo.crt`<br>
+where "dtrkdemo.crt" is the self-signed certficate.
+7. When prompted, enter the pass phrase set in step 2.
+8. Generate the .pfx certificate file:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -out dtrkdemo.pfx -inkey dtrkdemo.key -in dtrkdemo.crt`<br>
+where "dtrkdemo.pfx" is the certificate required to install on the server.
+9. When prompted, enter the pass phrase for the private key.
+10. Use self-signed certificate "dtrkdemo.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
+
 ###Server Installation
 ZDVC Server Installation steps for a new installation: <br>
 1. Double-click on the .EXE to launch the installer.
@@ -220,15 +219,34 @@ Where "8080" represents the specific backend server port number specified during
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
-1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
-3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
-4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
-A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
-C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
-D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
-E. Click the Scan button. A successful result returns green checks for each step:
+&nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
+&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
+* **If using Self-Signed Certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
+  * **For Chrome, Safari, or Internet Explorer:**<br>
+  &nbsp; &nbsp; &nbsp;A. Launch browser.<br>
+  &nbsp; &nbsp; &nbsp;B. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;C. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
+  &nbsp; &nbsp; &nbsp;D. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;E. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
+  * **For Edge:**<br>
+  &nbsp; &nbsp; &nbsp;A. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;B. Click “Continue to this website”. <br>
+  &nbsp; &nbsp; &nbsp;C. Click on “Certificate error” in the address bar, then click “View certificates."<br>
+  &nbsp; &nbsp; &nbsp;D. Click “Install Certificate”. <br>
+  &nbsp; &nbsp; &nbsp;E. Click “Place all certificates in the following store”, then click “Browse”. Do not rely on the pre-selected option to automatically select the certificate store since this will not work.<br>
+  &nbsp; &nbsp; &nbsp;F. In the dialog box, click “Trusted Root Certification Authorities”, then click “OK”. <br>
+  &nbsp; &nbsp; &nbsp;F. Click "Finish". <br>
+  &nbsp; &nbsp; &nbsp;G. A security warning is displayed. Click “Yes” to trust the certificate. <br>
+  &nbsp; &nbsp; &nbsp;H. Reload the page. <br>
+  &nbsp; &nbsp; &nbsp;I. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;J. Click "Advanced" and then click "Proceed..." <br><br>
+&nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.<br>
+&nbsp;4. **SSL certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+&nbsp; &nbsp; &nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
+&nbsp; &nbsp; &nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
+&nbsp; &nbsp; &nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
+&nbsp; &nbsp; &nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
+&nbsp; &nbsp; &nbsp;E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 9. SSLTools.com results_
 

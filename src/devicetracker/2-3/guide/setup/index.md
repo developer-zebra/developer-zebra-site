@@ -14,7 +14,8 @@ Solution components:
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
- * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
+ * **Install server certificate** - either an SSL Certificate procured by a signed Certificate Authority) for secure HTTPS communication, or a Self-Signed Certificate for demos and trials.
+ <font color="red">An SSL Certificate must be procured from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work for secure communication. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
@@ -50,8 +51,8 @@ This section provides the server and device requirements. Device Tracker support
         * Web Portal: UI Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Certificate requirement:
-For product demos and trials, a Self-Signed Certficate is acceptable. Otherwise, <font color="red">an SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
+5. Certificate requirement:<br>
+An SSL Certificate for secure communications, or a Self-Signed Certificate for product demos and trials.
 
 6. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
 
@@ -79,8 +80,7 @@ Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **Server Certificate.** A Self-Signed Certficate can be used for for product demos and trials.
-Otherwise, ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
+2. **Server Certificate.** An SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. Otherwise, a Self-Signed Certficate can be used for product demos and trials. See [Server Certificate](./#servercertificate) for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 

@@ -32,6 +32,8 @@ productversion: '4.0'
 
 ### I. Import Certificate
 
+***This process requires StageNow to be running in admin mode***. 
+
 1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
  <img alt="image" style="height:350px" src="SN4_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
@@ -137,16 +139,48 @@ productversion: '4.0'
 
 #### See the [Staging Profiles Guide](../stagingprofiles) for further details. 
 
+-----
 
-<!-- 
-  <img alt="image" style="height:250px" src="SN4_05.png"/>
+## Turn Off Trusted Mode
+
+If it becomes necessary to remove a device from Trusted Mode, simply create a Trusted Profile that turns off Trusted Mode using the Batch CSP. 
+
+#### To create a Trusted Profile turning off Trusted Mode: 
+
+1. From the Home screen, **click the Create new Profile button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy01.png"/>
   _Click image to enlarge; ESC to exit_.<br>
 <br>
-6. 
- ![img](SN4_10.png)<br>
-7. 
- ![img](SN4_11.png)<br>
- -->
+2. **Select "Xpert Mode" and the click "Create" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy02.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+3. **Enter a name** for the deployment profile and **click the "Start" button**:  
+  <img alt="image" style="height:450px" src="SN4_trustedModeOff01.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+4. **Click the plus (+) sign** on the "Batch" CSP line and **click the "Add" button**: 
+  <img alt="image" style="height:450px" src="SN4_deploy04.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+5. **Select "Turn Off Trusted Mode"** from the drop-down menu and **click the "Continue" button**:
+  <img alt="image" style="height:450px" src="SN4_trustedModeOff02.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+5. **Select "Trusted"** from the drop-down menu, <br> select the same certificate file used to put the device into Trusted Mode from its drop-down menu and <br>**click the "Complete Profiles" button**:
+  <img alt="image" style="height:450px" src="SN4_trustedModeOff04.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+6. **Select the desired barcode type** for the staging client and **click the "Test" button** to generate barcodes:
+  <img alt="image" style="height:450px" src="SN4_trustedModeOff05.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+11. **<u>Use the device(s) to be removed from Trusted Mode</u> to scan the barcodes**:
+  <img alt="image" style="height:450px" src="SN4_trustedModeOff06.png"/>
+  _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+#### Device is removed from Trusted Mode and can be staged using ordinary staging Profiles. 
 
 -----
 

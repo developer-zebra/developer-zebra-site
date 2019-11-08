@@ -33,8 +33,8 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 ### II. Select Staging Medium
 
-#### Barcode, Audio, NFC or `.bin` Staging 
-This method of staging writes the configuration information from the selected profile into barcodes, audio files or NFC tags. Staging is initiated when the output is read (or heard) by the client device(s). 
+#### Barcode, Audio, NFC or USB/SD Staging 
+This method of staging writes the configuration information from the selected profile into barcodes, audio files, NFC tags or USB/SD card storage. Staging is initiated when the output is read (or heard) by the client device(s). 
 
 1. Select the desired medium (Barcode, Audio or NFC) tab:
 

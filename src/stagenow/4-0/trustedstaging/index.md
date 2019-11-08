@@ -52,9 +52,9 @@ productversion: '4.0'
   _Click image to enlarge; ESC to exit_.<br>
 <br>
 5. **Create a staging profile that pushes the certificate to the device(s)** to become Trusted (next section).
+<br>
 
-#### Also see 
-**[How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)**
+#### Also see: [How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)
 
 -----
 

@@ -7,7 +7,7 @@ productversion: '4.0'
 
 ## Introduction
 
-**`IMPORTANT:`** This guide is applicable <u>after</u> one or more [Profiles](../stagingprofiles) have been created. 
+> **`IMPORTANT:`** Use this guide <u>only <i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
 
 This guide describes how to use StageNow to select and process a StageNow barcode, audio file, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
 

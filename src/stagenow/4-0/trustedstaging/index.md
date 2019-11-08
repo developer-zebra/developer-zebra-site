@@ -32,7 +32,10 @@ productversion: '4.0'
 
 ### I. Import Certificate
 
-***This process requires StageNow to be running in admin mode***. 
+> ***This process requires StageNow to be running in admin mode***. 
+
+#### Also see:
+[How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)
 
 1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
  <img alt="image" style="height:350px" src="SN4_01.png"/>

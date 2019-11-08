@@ -167,10 +167,10 @@ Select an option and proceed to the instructions for the selected Wizard.
    * `\Program Files (x86)\Symbol Technologies\Staging_Solution\SNCertFiles\`
 * **If the plug-in CSP was unzipped or delivered as separate files, use the following steps to create a `.zip` file**:
   * **Use PKzip or a compatible compression utility** to zip the CSP and its corresponding DSD file into a single `.zip` archive file.
-  * **Name the new file** "`[CSPname].zip`" (substituting "CSPname" for the real name, such as "RfidMgr").  
-  * **Copy the file to the folder shown above**. `NOTE:` **Do NOT drag-and-drop the file** as described on the CSP Library screen. 
-* On the CSP Library screen, **click "OR, CHOOSE FILE" button** and select the desired CSP's `.zip` file. 
-* **Follow the standard process for creating a staging profile** using parameters of the plug-in CSP. 
+  * **Name the new file** `[CSPname].zip` (substituting "[CSPname]" for the real name. Example: `RfidMgr.zip`).  
+  * **Copy the file to the folder shown above**. `NOTE:` **Do NOT drag the file** as described on the CSP Library screen. 
+* On the CSP Library screen, **click the "OR, CHOOSE FILE" button** and select the desired CSP's `.zip` file. 
+* The parameters of the plug-in CSP are now available using the standard process for creating a staging profile. 
 
 <img alt="image" style="height:350px" src="../images/profiles/sn_210_csp_lib.png"/>
 _Click image to enlarge; ESC to cancel_.

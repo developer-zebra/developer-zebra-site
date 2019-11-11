@@ -31,7 +31,12 @@ PowerPrecision Console consists of the following components:
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions. 
 
-## New in PPC 2.2.1
+## New in PPC 2.3.1
+* Extended [EOL Alert](../config) options on the portal to include **Snooze Expiration Time.** This sets the time in days after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
+
+
+## Recent Version History
+### New in PPC 2.2.1
 * Added method to start server background services to run at startup and without a logged-in user.
 * New device support for: 
   * Android P: TC52, TC72, PS20
@@ -41,8 +46,6 @@ The PPC client software registers the device with the on-premise PPC server and 
   * When opening PPC client app after initial install, permission needs to be granted to allow the device to register to the server.
   * A PPC Client and PPCClientMgr notification message is displayed in the device notifications drawer when the respective app is running.  
 
-
-## Recent Version History
 ### New in PPC 2.0
 * New Zebra DNA Visibility Console (ZDVC) server 2.0 support with updated server URL root path.
 * Support added for Server Auth Name and Password in:

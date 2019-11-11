@@ -37,13 +37,15 @@ These default thresholds correlate to the color-coded SOH as follows:
 
 * **EOL Alerts** - When enabled, sends an EOL alert notifying the user to prepare for battery decommissioning based on the time trigger options: Show Alert On Next Boot, Show Alert On Next Battery Swap, Show Alert At [specified time]. 
 <br>
-	**Max Snooze Count** – specify the maximum number of times to snooze until decommissioning is required
+	**• Max Snooze Count** – specify the maximum number of times to snooze until decommissioning is required
 <br>
-	**Show Alert On Next Boot** – display the EOL message upon next device boot
+	**• Snooze Expiration Time (Days)** - sets the expiration time for the battery EOL alert, after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
 <br>
-	**Show Alert On Next Battery Swap** – display the EOL message upon next battery swap
+	**• Show Alert On Next Boot** – display the EOL message upon next device boot
 <br>
-	**Show Alert At** – specify a daily time to display the EOL message  
+	**• Show Alert On Next Battery Swap** – display the EOL message upon next battery swap
+<br>
+	**• Show Alert At** – specify a daily time to display the EOL message  
 <br>
 
 ##Manage Users

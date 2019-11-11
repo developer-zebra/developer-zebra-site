@@ -10,6 +10,9 @@ This section discusses the operations available for an administrator, providing 
 
 As part of Zebra’s DNA Visibility Console, the server consists of multiple solution offerings. At the login screen, select “Device Tracker”, then sign in. To navigate to other solutions, click on the app menu icon at the top to the right of the "Device Tracker" title and select the desired app solution.
 
+## Version History
+* **Device Tracker 2.3.1 -** Delete "Never connected" devices in the web portal. 
+
 ## Using the Web Console
 
 Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices, along with information on tracking status, connection state, connected AP friendly name, device friendly name, charging status, remaining battery percentage, and more.
@@ -44,14 +47,15 @@ Notes:
 * When the checkbox in the table header is ticked on the dashboard, it selects all devices listed in the page. 
 * At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of devices displayed in the dashboard.
 * If a device is in the "Never Connected" state, no action can be taken upon it since it has not registered with the server.
-* If searching for devices based on "Connection State" then filtering by "Connected - Known AP", the .csv file includes both "Connected - Known AP" and "Connected - Unknown AP" data when exporting the results. The data can be further filtered within the .csv file.
+* If searching for devices based on "Connection State" then filtering by "Connected - Known AP", the .csv file includes both "Connected - Known AP" and "Connected - Unknown AP" data when exporting the results. The data can be further filtered within the CSV file.
 
 ##Device Action
 Action can be taken on any selected device(s) in the Active tab.  Once the device is selected from the dashboard, the Action menu is accessible with the following options:
-* **Set device: To be found** – Marks the target device to be found.  This initiates the tracking process. The next time the target device reports to the server, it identifies it is marked "To be found" - the length of time this takes is based on both the defined [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the Updated column on the admin dashboard). 
+* **Set device: 'To be found'** – Marks the target device to be found.  This initiates the tracking process. The next time the target device reports to the server, it identifies it is marked "To be found" - the length of time this takes is based on both the defined [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the Updated column on the admin dashboard). 
 Once the Device Tracker client detects this status change, it displays the marked device in the “Devices to be found” screen. A user can tap on the device listed then tap “Go” to begin searching for the marked device. 
-* **Set device to: Out of service** – Removes the device from the active device pool and places it into the **Out of Service** tab. This can be used when a device is undergoing repair or is deprecated and no longer in use so must be removed from the device pool. Note: This does not apply to devices that never connected to the server.
-* **Set device to: Active** - Changes the device back to the Active state. This option is available if a device is Found, Cannot be Found, or Out of Service.
+* **Set device to: 'Out of service'** – Removes the device from the active device pool and places it into the **Out of Service** tab. This can be used when a device is undergoing repair or is deprecated and no longer in use so must be removed from the device pool. Note: This does not apply to devices that never connected to the server.
+* **Set device to: 'Active'** - Changes the device back to the Active state. This option is available if a device is Found, Cannot be Found, or Out of Service.
+* **Delete 'Never connected' device** - Remove 'Never connected' devices from the web portal. This can include devices with invalid data uploaded from a device CSV file. 
 * **Manage Tags** – Refer to [Organize Devices](./#organizedevices) section below.  
 * **Clear Selections** – Unselects any selected devices in the dashboard.
 

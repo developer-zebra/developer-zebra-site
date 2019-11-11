@@ -251,9 +251,16 @@ Steps for ZDVC server setup after installation: <br>
 _Figure 9. SSLTools.com results_
 
 ###Stop Application Server
-To stop the application server, stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
+Procedure to stop the application server:
+1. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
 <img style="height:350px" src="zdvc_service_end.png"/>
 _Figure 10. End ZDVC service_
+2. Terminate the active processes that are running on specified ports by using one of the following methods:<br>
+&nbsp;&nbsp;&nbsp;A. Reboot the system.<br>
+&nbsp;&nbsp;&nbsp;B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID returned:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;netstat -aon | find /i "8080"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;taskkill /pid 1234 /f<br>
+where "8080" represents the backend server port number specified during install and "1234" represents the process ID returned from the first command. Repeat these steps for the Web UI port.
 
 <!--
 ###Post-Server Setup

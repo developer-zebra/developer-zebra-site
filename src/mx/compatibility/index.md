@@ -1,6 +1,7 @@
 ---
 title: Full MX Feature Matrix
 layout: csp-mx-support.html
+footer: hide
 mxversions:
   - text: MX 4.2
     value: 4.2

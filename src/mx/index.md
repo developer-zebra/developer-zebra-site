@@ -2,6 +2,7 @@
 title: Full MX Feature Matrix
 subtitle: See the [TC20/TC25 MX Feature Subset](/mx/tc2x)
 publish: false
+footer: hide
 menu:
   items:
     - title: About MX

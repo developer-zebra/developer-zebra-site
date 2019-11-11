@@ -63,7 +63,7 @@ _Keystroke Output options_
 ### UDI Data Output
 This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) selected in the above-referenced section. 
 
-**This feature is supported using the imager on [selected Zebra devices](../../input/barcode/#udidecoding) up to Android P (version 9.x) only**
+**Support for UDI barcodes, such as GS1, HIBCC and ICCBBA, is being deprecated. This feature is supported using the imager on [selected Zebra devices](../../input/barcode/#udidecoding) up to Android P (version 9.x) only**
 
 <!-- 2/8/18- removed pre-DW 6.7 panel 
 <img style="height:350px" src="../token_selection_highlighted.png"/>

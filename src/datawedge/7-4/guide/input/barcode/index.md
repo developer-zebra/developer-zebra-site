@@ -1050,7 +1050,7 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
-**Scanning Modes -** Used to select between Single (normal), UDI and Basic MultiBarcode modes. [UDI mode]()./#udidecoding) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode] acquires 2-10 barcodes with each scan as specified in the Basic MultiBarcode params panel. **Default=5**.
+**Scanning Modes -** Used to select between Single (normal), UDI and Basic MultiBarcode modes. [UDI mode](#udidecoding) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode] acquires 2-10 barcodes with each scan as specified in the Basic MultiBarcode params panel. **Default=5**.
 
 **Zoom -** Required for decoding DotCode barcodes. User needs to set Camera Zoom value to 2 on the following devices: MC33, TC51/TC56, TC70x/TC75x, VC80x, TC52/TC57, TC72/TC77, PS20. If Camera Zoom is set to any value other than 2 on these devices, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
@@ -1136,7 +1136,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 ## UDI Decoding
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
 
-**This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
+**Support for UDI barcodes, such as GS1, HIBCC and ICCBBA, is being deprecated. This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
 
 * **TC51**
 * **TC56**

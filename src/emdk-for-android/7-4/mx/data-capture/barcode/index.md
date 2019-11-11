@@ -466,7 +466,7 @@ Note: Performance is the same from Level 1 to Level 3.
 
 **Note**: The Unique Device Identification (UDI) system was established in 2007 by the U.S. Food and Drug Administration as a means to track medical devices. 
 
-> `IMPORTANT:` Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated. **UDI support will end when EMDK targets devices running Android 10 Q**.
+> **`IMPORTANT:`** Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated. **UDI support will end when EMDK targets devices running Android 10 Q**.
 
 ### Multi-barcode Notes
 

@@ -213,20 +213,22 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ppc/2-2/guide/about
+        url: /ppc/2-3/guide/about
       - title: Install & Setup
-        url: /ppc/2-2/guide/setup
+        url: /ppc/2-3/guide/setup
       - title: Admin View
-        url: /ppc/2-2/guide/admin
+        url: /ppc/2-3/guide/admin
       - title: Battery Management
-        url: /ppc/2-2/guide/mgmt
+        url: /ppc/2-3/guide/mgmt
       - title: EOL Management
-        url: /ppc/2-2/guide/eol
+        url: /ppc/2-3/guide/eol
       - title: Configuration
-        url: /ppc/2-2/guide/config
+        url: /ppc/2-3/guide/config
       - title: Troubleshooting & FAQ
-        url: /ppc/2-2/guide/troubleshooting
+        url: /ppc/2-3/guide/troubleshooting
     versions:
+      - url: /ppc/2-3/guide/about
+        label: '2.3'
       - url: /ppc/2-2/guide/about
         label: '2.2'
       - url: /ppc/2-0/guide/about

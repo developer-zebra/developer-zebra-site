@@ -2,7 +2,7 @@
 title: Install & Setup
 layout: guide.html
 product: Device Tracker
-productversion: '2.3'
+productversion: '2.3.1'
 ---
 ## Overview
 
@@ -191,7 +191,7 @@ _Figure 6. Installation - review settings_
 8. Installation complete. Click **Finish.**
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
-9. Perform one of the following to run the server:<br>
+9. For first time installations, reboot the server. Otherwise, perform one of the following to start the server:<br>
 A. Reboot the server. The ZDVC server services automatically start as scheduled tasks.<br>
 B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks to run the services. Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, right-click on the task and select **Run** from the menu.
 <img style="height:350px" src="zdvc_service_run.png"/>

@@ -2,14 +2,14 @@
 title: Configuration
 layout: guide.html
 product: Device Tracker
-productversion: '2.3'
+productversion: '2.3.1'
 ---
 
 ##Overview
 This section discusses configuration settings for Device Tracker on the server and client.
 
 **Version History**
-* **Device Tracker 2.3 -** New Bluetooth Low Energy (BLE) feature for device proximity tracking.
+* **Device Tracker 2.3.1 -** New Bluetooth Low Energy (BLE) feature for device proximity tracking.
 
 ##Server Configuration
 In the [Admin View](../admin) dashboard, click on the **Settings** tab to display the **Application Configuration** and **Device & Access Point Management** options. 

@@ -1170,7 +1170,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 ## UDI Params
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
 
-**Support for UDI barcodes, such as GS1, HIBCC and ICCBBA, is being deprecated. This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
+**Support for UDI barcodes, such as GS1, HIBCC and ICCBBA, is being terminated. This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
 
 * **TC51**
 * **TC56**

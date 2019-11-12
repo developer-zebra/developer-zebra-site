@@ -316,6 +316,11 @@ Steps for client installation on the device, which may be performed either manua
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
 3. If updating an existing client, reboot the device.
+4. Open Device Tracker client app.
+5. Allow the permissions when prompted.
+6. Once the app is opened on Android O or higher devices, a Device Tracker notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background. 
+<img style="height:350px" src="Notifications_dtrk.jpg"/>
+_Figure 11. Device Tracker client notification_ <br>
 
 ###Client Configuration
 Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
@@ -360,18 +365,18 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 11. Profile wizard_ <br>
+_Figure 12. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddAppMgr.JPG)
-_Figure 12. Add Setting_ <br>
+_Figure 13. Add Setting_ <br>
 6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
 ![img](SN_BattOpt.JPG)
-_Figure 13. Re-use saved setting_ <br>
+_Figure 14. Re-use saved setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 14. Generate StageNow barcode_ <br>
+_Figure 15. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -382,22 +387,22 @@ _Figure 14. Generate StageNow barcode_ <br>
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 15. Profile wizard_ <br>
+_Figure 16. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 16. Add Setting_ <br>
+_Figure 17. Add Setting_ <br>
 6. Enter the following information:
    * Action: select "StartService"
    * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
    * Package Name: enter "com.zebra.devicetracker"
 Click Continue.
 ![img](SN_IntentConfig.jpg)
-_Figure 17. Configure Setting_ <br>
+_Figure 18. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 18. Generate StageNow barcode_ <br>
+_Figure 19. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -414,33 +419,33 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 19. Import plugin into CSP Library_
+_Figure 20. Import plugin into CSP Library_
 4. Create a new setting:<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 20. Import into CSP Library_ <br>
+_Figure 21. Import into CSP Library_ <br>
 B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
-_Figure 21. Create New Setting_ <br>
+_Figure 22. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 ![img](SN_NewSetting.JPG)
-_Figure 22. New Setting created_ <br>
+_Figure 23. New Setting created_ <br>
 5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 23. Profile wizard_ <br>
+_Figure 24. Profile wizard_ <br>
 C. Enter the profile name. Click Start.<br>
 D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 24. Add Setting_ <br>
+_Figure 25. Add Setting_ <br>
 E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
 ![img](SN_ReUseSavedSetting.JPG)
-_Figure 25. Re-use saved setting_ <br>
+_Figure 26. Re-use saved setting_ <br>
 F. Click “Complete Profile." <br>
 G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 26. Generate StageNow barcode_ <br>
+_Figure 27. Generate StageNow barcode_ <br>
 H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
@@ -456,7 +461,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    * Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
 2. Select "Export option for EMM" from the top to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
-_Figure 27. Export for EMM_
+_Figure 28. Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
 <br>

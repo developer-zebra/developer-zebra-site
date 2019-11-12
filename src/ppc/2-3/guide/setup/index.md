@@ -327,6 +327,7 @@ Steps for manual configuration:
 Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br>
  B. Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
  C. Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
+ On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.<br><br>
 **For PPC v1.0:** <br>
  A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>

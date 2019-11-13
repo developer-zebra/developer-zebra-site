@@ -445,7 +445,7 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 -----
 
-## VI. Layout Switching
+## VI. Switch Layouts
 
 This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. For more information, see [Enterprise Keyboard APIs](/ekd/latest/guide/apis). 
 

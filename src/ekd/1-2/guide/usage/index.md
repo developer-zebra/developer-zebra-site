@@ -447,9 +447,10 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 ## VI. Switch Layouts
 
-This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. For more information, see [Enterprise Keyboard APIs](/ekd/latest/guide/apis). 
+This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. 
 
-> **Note**: Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
+> For programming guidance, see [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis). <br>
+> Layouts also can be controlled through DataWedge. See the [DataWedge EKB configuration guide](/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 

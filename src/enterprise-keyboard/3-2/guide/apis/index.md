@@ -48,7 +48,7 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
 
 * **The application activity's main <u>window is resized only if</u>**: 
  * the width of the custom key layout is greater than or equal to 50 percent of device screen width.
- * the custom key layout is NOT positioned on top of the app's title bar or "Action" bar. 
+ * the custom key layout is NOT positioned on top of the app's title bar or toolbar (formerly known as the "Action" bar. 
 * **In some cases, window resizing results in a blank portion of the screen**. To avoid this, try changing the background color of the key layout. 
 * **To disable windows resizing of the activity’s main window**, set the following attribute in the app's activity manifest file: 
  * `android:windowSoftInputMode=”adjustNothing”`
@@ -367,16 +367,13 @@ Once key layout is set in Enterprise Keyboard, requested application receives a 
 ### SHOW
 **Used to show or hide the specified key layout**. 
 
-> **NOTE: An app can NOT hide the keyboard using the SHOW API** if the app contains logic to show the keyboard automatically when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file).
+**`IMPORTANT:` An app CANNOT hide the keyboard using the SHOW API if the app contains logic to show the keyboard automatically when an activity comes to the foreground** (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file).
 
 **Parameter values**:
 
 * **TRUE**: Keyboard is shown when activity is launched, even if the activity does not require input.
 
 * **FALSE**: Keyboard is not shown when activity is launched; shown only when the device user taps on an input field.
-
-Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing  `RESULT_CODE` and `RESULT_MESSAGE` extras.
-
 
 Once key layout is shown/hidden, requested application receives a response intent with RESULT_CODE and RESULT_MESSAGE.
 
@@ -509,7 +506,7 @@ The requested application receives a response intent containing RESULT_CODE and 
 	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
 	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
 	intent.putExtra("CALLBACK_RESPONSE", piResponse);
-	sendBroadcast(intent);0
+	sendBroadcast(intent);
 
 ##### Receive the result:
 

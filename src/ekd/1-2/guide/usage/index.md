@@ -444,13 +444,14 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 * **[DataWedge Configuration](/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
 
 -----
-
+<!-- 11/13/19- moved here from EKB API guide, but then moved back. I think it belongs there contrary to eng.
+  
 ## VI. Switch Layouts
 
 This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. 
 
 > For programming guidance, see [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis). <br>
-> Layouts also can be controlled through DataWedge. See the [DataWedge EKB configuration guide](/datawedge/latest/guide/utilities/ekb/). 
+> For changing layouts through DataWedge, see the [DataWedge EKB configuration guide](/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 
@@ -510,7 +511,7 @@ This case describes an Android app with two text input fields, both requiring cu
 > **`IMPORTANT:` Enterprise Keyboard must be enabled if the application goes to the background** to avoid a device user resetting the layout from outside the app.
 
 -----
-
+ -->
 
 -----
 

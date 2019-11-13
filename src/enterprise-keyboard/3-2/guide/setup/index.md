@@ -135,7 +135,7 @@ _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB inst
 
 ## Verify Installation
 
-### To verify installation/upgrade success:
+### Verify installation/upgrade success
 
 1. Go to **Settings -> Apps & Notification -> Enterprise Keyboard**
 2. **Verify that the version corresponds with the version installed**.  
@@ -161,7 +161,7 @@ The section covers direct activation of Enterprise Keyboard on a single device. 
 
 If the Enterprise Keyboard does not appear, proceed to the steps below. 
 
-### Activate Enterprise Keyboard: 
+### Activate Enterprise Keyboard
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>

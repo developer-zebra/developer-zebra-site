@@ -27,8 +27,9 @@ EKB can be activated and configured:
 -----
 
 ## Install/Upgrade EKB 
+<!-- removed per eng. (idea was that these are the only downloadable versions) 
 _Applies only to user-app (`.apk`) versions of Enterprise Keyboard (incl. 1.4&ndash;1.6 and 3.2)_. 
-
+ -->
 Some versions of EKB can be downloaded from the [Zebra Support Portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) and installed as a user app. **Devices running Android 7.x Nougat (or higher) with older versions of EKB can be upgraded to the latest EKB version using the latest** `.apk` **file**. [Visit the Support Portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) for specific EKB device and OS support information. Installation and upgrade instructions are below. 
 
 > **Before beginning any installation...**
@@ -36,15 +37,9 @@ Some versions of EKB can be downloaded from the [Zebra Support Portal](https://w
 > 2. **Ensure that target device(s) are able to connect** via USB to the host computer. [Get USB drivers](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html)<br>
 > 3. Note that **Enterprise Keyboard requires [activation](#manualactivation)** following installation. 
 
------
+### Upgrade/install using USB
 
-#### To Upgrade EKB
-_Applies to devices with an older EKB already installed_.
-
-
-##### Upgrade or install using USB
-
-1. Connect the device to the host computer that contains the downloaded `Enterprisekeyboard.apk` file.  
+1. Connect the device via USB to the host computer that contains the downloaded `Enterprisekeyboard.apk` file.  
 2. **Copy the** `Enterprisekeyboard.apk` **file to the root directory** of the device.
 3. **Navigate to the file** using a file manager app on the device. 
 4. **Tap the file to install it**. 
@@ -54,16 +49,19 @@ _Applies to devices with an older EKB already installed_.
 
 -----
 
-##### Upgrade using adb:
+### Upgrade/install using adb
 
-1. **Connect the device via USB to the host computer** that contains the downloaded `Enterprisekeyboard.x.x.x.x.apk` file (where "x.x.x.x" = EKB version number).  
-2. **Push the** `EnterpriseKeyboard-x.x.x.x.apk` **file to the root directory** of the device. 
-3. From a terminal window, **run the following command**: 
+1. **Connect the device via USB to the host computer** that contains the downloaded `Enterprisekeyboard.x.x.x.x.apk` file (where "x.x.x.x" = EKB version number).
+2. **For devices with an older EKB already installed**, run the following command:
 
 		:::terminal
 		adb install –r EnterpriseKeyboard_file_name.apk
+_The "-r" option **reinstalls** an existing app and retains any existing user data_.
 
- _The "-r" option **reinstalls** an existing app and retains any existing user data_.
+2. **For devices with no prior version of EKB installed**, run the following command:<br>
+
+		:::terminal
+		adb install EnterpriseKeyboard_file_name.apk
 4. **See [Verify Installation](#verifyinstallation)** section below. 
 
 > **NOTE**: After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
@@ -75,6 +73,7 @@ _Applies to devices with an older EKB already installed_.
 * **[Get USB drivers for connecting Windows PCs to Zebra devices](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html)**
 
 -----
+<!-- 11/13/19- removed per eng. 
 
 #### To Install EKB 3.2
 _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB installed_.
@@ -93,6 +92,7 @@ _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB inst
 > **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
 
 -----
+ -->
 
 ## Uninstalling/Downgrading EKB
 
@@ -100,7 +100,8 @@ _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB inst
 * **If EKB was installed as a user app on a device with no prior version**, removal is the same as for any standard Android app. 
 * **If EKB was installed as an upgrade on a device with EKB preinstalled**, removal reverts to the preinstalled version. 
 
-#### To uninstall using adb:
+### Uninstall using adb
+
 1. **Connect the host computer to the device** that contains the Enterprise Keyboard to be uninstalled.   
 2. **From a terminal window**, run the following command: 
 
@@ -109,21 +110,41 @@ _Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB inst
 
 3. To verify uninstallation, use the [Verify Installation](#verifyinstallation) instructions below to confirm that EKB was removed or downgraded to the preinstalled version.  
 
-#### To uninstall using Settings panel:
+### Uninstall using the Settings panel
+
+#### If downgrading to a preinstalled version:
+
 1. **On the device that contains the Enterprise Keyboard to be uninstalled**:<br>
- Go to **Settings -> Apps & Notification -> Enterprise Keyboard -> Disable** 
-2. Then go to **Settings -> Apps & Notification -> Enterprise Keyboard -> Uninstall**
+ Go to **Settings -> Apps & Notification -> Enterprise Keyboard** 
+2. **Tap "Disable" then "Disable App" then "OK"** to confirm the downgrade.<br> 
+ When uninstallation completes, the older EKB version number is displayed.
+3. **Tap the "Enable" button to use the older EKB version**.
+4. To use a different keyboard see the [Manual Activation](#manualactivation) section.
+
+#### If removing EKB installed as a user app:
+
+1. **On the device that contains the Enterprise Keyboard to be uninstalled**:<br>
+ Go to **Settings -> Apps & Notification -> Enterprise Keyboard** 
+2. **Tap the "Uninstall"** button.
+3. When uninstallation completes, the standard Android keyboard becomes the default. <br>
+4. To verify, open "Apps & Notification" in the Settings panel and confirm that "Enterprise Keyboard" is not listed.
+
+> **NOTE: Settings panel labels such as "Apps & Notification" vary by Android version**. 
 
 -----
 
-### Verify Installation
+## Verify Installation
 
-##### To verify that the installation/upgrade was successful: 
+### To verify installation/upgrade success:
 
 1. Go to **Settings -> Apps & Notification -> Enterprise Keyboard**
-2. **Tap "App Info"** and verify that the version corresponds with the version installed.  
+2. **Verify that the version corresponds with the version installed**.  
 
 > **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
+
+### EC30 Notes
+* On successful installation or upgrade on an EC30 device, EKB is shown in the Launcher app list.
+* To activate EKB on an EC30: **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
 
 -----
 
@@ -140,7 +161,7 @@ The section covers direct activation of Enterprise Keyboard on a single device. 
 
 If the Enterprise Keyboard does not appear, proceed to the steps below. 
 
-#####To activate Enterprise Keyboard: 
+### Activate Enterprise Keyboard: 
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>
@@ -169,12 +190,14 @@ If the Enterprise Keyboard does not appear, proceed to the steps below.
 
 ##### Enterprise Keyboard is now ready to use with default settings. 
 
+> **EC30 Note**: To activate EKB on an EC30 device, go to:<br> **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
+
 ------
 
-### Change Settings
+## Enterprise Keyboard Settings
 Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
 
-#####Change Enterprise Keyboard settings:
+### Change EKB settings:
 
 &#49;. <b>Open the Settings panel</b> on the device:
 <img alt="" style="height:350px" src="home_screen.png"/>

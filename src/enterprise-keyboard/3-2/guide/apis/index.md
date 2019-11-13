@@ -54,6 +54,7 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
  * `android:windowSoftInputMode=”adjustNothing”`
 
 ----
+<!-- 11/13/19- removed per eng. b/c it applies to "EKB test app"
 
 ### Using EKB APIs
 The following example describes a company with business requirements that call for an application with four main activities and corresponding GUI screens: 
@@ -79,7 +80,7 @@ When `FunctionKeyActivity` comes to the foreground, the app should `GET` the fol
 * `MultiInputActivity` has two input areas. When the device user taps on the first input area, a qwerty keyboard layout appears. When the user taps on the second input area, the numeric key layout appears.
 * `ResetActivity` uses a regular keyboard, so keyboard should be reset.
 
-<!-- 10/30/19- removed until the app location is known 
+10/30/19- removed until the app location is known 
 > **Note**: Zebra provides a sample Android app that implements the functions described above.
  -->
 -----

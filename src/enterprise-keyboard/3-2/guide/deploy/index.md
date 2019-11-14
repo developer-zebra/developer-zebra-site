@@ -30,7 +30,7 @@ Data for custom key layout(s) is stored in the custom key-layout definition file
 * **Do NOT deploy empty key layout files**; they can cause Enterprise Keyboard to behave unpredictably.
 * **The "Switch-Scan" Press Action sometimes displays a layout *other* than the expected EKB "scan" layout**. 
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly until the selected layout is displayed. 
-* **EKB settings and functions such as spelling suggestion are inoperable** when custom layouts are used." 
+* **EKB settings and functions such as spelling suggestion are inoperable** when custom layouts are used.
 <!-- once confirmed by eng, copy last two above to usage notes on about page and elsewhere -->
 
 -----

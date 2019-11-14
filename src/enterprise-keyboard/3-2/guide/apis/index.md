@@ -46,11 +46,10 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
 
 #### EKD Window Resizing Behavior
 
-* **The application activity's main <u>window is resized only if</u>**: 
- * the width of the custom key layout is greater than or equal to 50 percent of device screen width.
- * the custom key layout is NOT positioned on top of the app's title bar or toolbar (formerly known as the "Action" bar. 
-* **In some cases, window resizing results in a blank portion of the screen**. To avoid this, try changing the background color of the key layout. 
-* **To disable windows resizing of the activity’s main window**, set the following attribute in the app's activity manifest file: 
+* **An application activity's main window is resized <u>only if the width of the custom key layout is greater than or equal to 50 percent of device's screen width</u>**.
+* An activity's main **window will NOT be resized if a custom key layout is positioned on top of the app's title bar or toolbar** (sometimes known as the "Action" bar). 
+* In some cases, window resizing results in a blank portion of the screen. 
+* **To disable windows resizing of an activity’s main window**, set the following attribute in the app's activity manifest file: 
  * `android:windowSoftInputMode=”adjustNothing”`
 
 ----
@@ -140,7 +139,9 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 
 ## Layout Switching
 
-This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. **Note**: Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
+This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. 
+
+> **Note**: Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 

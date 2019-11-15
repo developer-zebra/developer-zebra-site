@@ -56,6 +56,8 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 * **Apps on the device can access <u>only a single EKD project file</u>**, but as many as 20 layouts can be saved in that single project file and called independently through intents.  
 * EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **Enterprise Keyboard and Enterprise Browser**. 
 * Layout files can be imported into EKD and modified or supplemented with additional keys and/or layouts. 
+* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 * **The terms “button” and “key” are used interchangeably** in this guide.
 
 > **`NOTE:`** This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.

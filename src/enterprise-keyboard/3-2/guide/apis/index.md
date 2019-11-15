@@ -37,6 +37,8 @@ Enterprise Keyboard APIs allow the following functions:
 * In this guide, the terms “button” and “key” are used interchangeably. 
 * **If an app contains logic to show the keyboard automatically** when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
 * Apps running in full screen mode display custom key layouts with an extra margin from the bottom of the device screen.
+* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 
 -----
 

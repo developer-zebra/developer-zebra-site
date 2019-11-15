@@ -19,6 +19,8 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
 * Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
+* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 

@@ -230,6 +230,7 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b
 
 &#52;. <b>Tap the Uninstall button</b>:
 <img alt="" style="height:350px" src="ehs_uninstall.png"/>
+**`NOTE:`**: If the Uninstall button is grey, first [remove EHS as the default launcher](#changethedefaultlauncher). 
 <br>
 
 &#53;. <b>Click OK</b> to confirm:

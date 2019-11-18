@@ -10,7 +10,7 @@ Enterprise Keyboard Designer is a utility for Windows 7, 8 and 10 computers that
 
 #### To Download EKD: 
 
-1. **[Visit the EKD download page](https://www.zebra.com/ekd)**.
+1. **[Visit the EKD download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard-designer.html)**.
 2. **Locate and click on the "download" link**.
 3. **Optionally download and read the Release Notes** (.PDF) file for support information. 
 4. **Install the package** using the standard [installation process](../guide/setup) for Windows apps.

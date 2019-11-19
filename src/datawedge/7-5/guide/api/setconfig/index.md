@@ -1201,6 +1201,14 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 		<td>Integer from 100 to 60000</td>
 	</tr>
 	<tr>
+		<td>rfid_link_profile</td>
+		<td>Integer from 0 to 11<br><i>Integer range is subject to change based on the reader model.</i></td>
+	</tr>
+	<tr>
+		<td>rfid_dynamic_power_mode</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
 		<td colspan=2 bgcolor="gray"><font color="white"><b>Pre-filter PARAM_LIST</b></font></td>
 	</tr>
 	<tr>

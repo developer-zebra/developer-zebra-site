@@ -44,6 +44,33 @@ productversion: '7.5'
 * **Feedback –** configure audio or visual feedback from an RFID tag read. Options: 
   * **Beeper -** audio feedback
   * **LED -** visual feedback
+* **Link Profile –** select the profile to be used by the reader from the automatically populated options based on the connected reader. The populated range of values is subject to change based on the reader model. 
+* **Dynamic power –** enable/disable optimization of RFID reader power consumption.
+* **Pre filters:**
+  * **Enable pre filters -** enable/disable the tag pattern pre filter options based on standard RFID protocol.
+  * **Tag pattern -** specify the hexadecimal character pattern to compare for tag filtering. Pattern matching is based on the **Offset value.**  Maximum characters: 64 byte hexadecimal. 
+  * **Memory bank -** specify the memory bank on which the filter is to be applied. Supported values: User, TID, EPC.
+  * **Offset -** specify the offset from the start of the memory bank in bytes in which to apply the **Tag pattern** criteria. 
+  * **Action -** indicate whether matching tags assert or de-assert SL (Selected Flag), or set their inventoried flag to A or to B. Options:<br>
+        • INV A NOT INV B or ASRT_SL_NOT_DSRT_SL<br>
+        • INV A or ASRT SL<br>
+        • NOT INV B or NOT DSRT SL<br>
+        • INV A2BB2A NOT INV A or NEG SL NOT ASRT SL<br>
+        • INV B NOT INV A or DSRT SL NOT ASRT SL<br>
+        • INV B or DSRT SL<br>
+        • NOT INV A or NOT ASRT SL<br>
+        • NOT INV A2BB2A or NOT NEG SL<br>
+  * **Target -** indicate which flag shall be affected when pre filter is applied. Options: <br>
+        • SESSION S0<br>
+        • SESSION S1<br>
+        • SESSION S2<br>
+        • SESSION S3<br>
+        • SL FLAG<br>
+* **Post filters:**
+  * **Enable post filters -** enable/disable post filtering performed by DataWedge service.
+  * **Number of tags to read -** specify the maximum number of tags to display in a single inventory action. Integer range: 0 to 1000.
+  * **RSSI value -** display the overall trend of the RFID signal based on proximity. The closer the value is to 0, the closer in proximity the tag is located. Value range: -100 to 0. 
+
 
 <!--
 * **Session -** configure the read session based on EPC Gen 2 standard to optimize RFID read performance. The session defines the duration of time and conditions which an inventoried tag remains in either state A or B. State A is the state in which a tag has not been inventoried. State B is the state in which the tag has been inventoried. During the inventory process, presuming the default state is A, the reader switches the tag's state to B once the read is performed. Since tags in the B state have already been accounted for, the focus can be on tags in the A state. Supported values:
@@ -66,6 +93,7 @@ MC3300R consists of multiple triggers, all utilized for Barcode and SimulScan fe
 ## Data
 Important notes regarding RFID data reading:
 * By default, a newline character is added after each tag read. 
+* A data set returned in one read cycle may include one or more tags. 
 * If applicable, a data set from multiple data reads can be returned if multiple tags are read simultaneously. 
 * If receiving data via **Keystroke output**, it requires **Inter character delay** to be set to 50 ms. 
 

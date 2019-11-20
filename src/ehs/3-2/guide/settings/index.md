@@ -637,10 +637,10 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 
 Screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
-#####Notes:
-* **Zebra recommends leaving this setting blank** (default), which allows app- and system-control of screen orientation.
-* **The orientation set using this parameter applies ONLY to EHS screens**, such as the EHS Home screen, battery info screen and preferences screens. 
-* **Non-EHS apps and the Android "auto-rotate" setting can control screen orientation regardless of this parameter setting**.   
+#####Notes
+* **Zebra recommends leaving this setting blank** (default) if app- and system-control of screen orientation are desired.
+* **The orientation set using this parameter applies ONLY to EHS screens**, such as the EHS Home screen, info and preferences screens.
+* **Android orientation (auto-rotate/portrait/landscape) settings remain effective on non-EHS apps** regardless of this parameter setting.
 
 <img alt="" style="height:350px" src="orientation.png"/>
 

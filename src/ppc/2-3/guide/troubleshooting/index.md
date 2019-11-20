@@ -34,7 +34,8 @@ If the endpoint is not accessible, there is no communication between the server 
 Frequently Asked Questions:
 
 ###Can I use a self-signed certificate?
-An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
+For **PowerPrecision Console 2.2.1 or older,** an SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.<br>
+For **PowerPrecision Console 2.3.1 or newer,** support for self-signed certificates was added to help simplify deployment of product demos and trials. An SSL certificate is still required for secure communications.
 
 ###What are the login credentials required to use PowerPrecision Console?
 **Web portal:** To access the web portal, enter the server URL in the browser based on your [installation](../setup#serverinstallation), for example: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number. The default super administrator user name is **SAdmin**. The password is the **SuperAdmin and DB Password** entered during [server installation](../setup#serverinstallation). [Additional users can be added](../admin#manageusers) based on Admin, Manager, and User roles.

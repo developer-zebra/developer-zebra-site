@@ -40,7 +40,7 @@ If the endpoint is not accessible, there is no communication between the server 
 * **Incorrect server ports.** The ports specified during [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: /Program Files/Zebra Technologies/ZDVC/WebUI) and **application.properties** (from default folder: /Program Files/Zebra Technologies/ZDVC/BackendServer/config). 
 
 
-###Cannot import .csv file containing access point or device data
+###Cannot import .CSV file containing access point or device data
 Make sure to have write permissions to the ZDVC folder and subfolders.
 
 ###Server information is outdated
@@ -63,11 +63,13 @@ There could be a network delay in contacting the server. Wait for some time to e
 <br>
 ##FAQ
 Frequently Asked Questions:
-###How do I delete entries?
-Currently there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.
+###How do I delete device entries?
+For **Device Tracker 2.2.1 or older,** there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.<br>
+For **Device Tracker 2.3.1 or newer,** the ability to delete "Never connected" devices was added for the web portal. This allows devices that have been uploaded (via .CSV file) but never connected to the server to be deleted.
 
 ###Can I use a self-signed certificate?
-An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
+For **Device Tracker 2.2.1 or older,** an SSL certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for secure communication. Any self-signed certificate or one issued by a non third-party CA does not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.<br>
+For **Device Tracker 2.3.1 or newer,** support for self-signed certificates was added to help simplify deployment of product demos and trials. An SSL certificate is still required for secure communications.
 
 ###What are the login credentials required to use Device Tracker?
 **Web portal:** To access the web portal, enter the server URL in the browser based on your [installation](../setup#serverinstallation), for example: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number. The default super administrator user name is **SAdmin**. The password is the **SuperAdmin and DB Password** entered during [server installation](../setup#serverinstallation). [Additional users can be added](../admin#manageusers) based on Admin, Manager, and User roles.

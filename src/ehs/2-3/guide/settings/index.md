@@ -341,6 +341,11 @@ Specifies the color of the icon label text of applications displayed in User Mod
 #### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
+#####NOTES:
+* **Zebra recommends leaving this setting blank** (default) if app- and system-control of screen orientation are desired.
+* **The orientation set using this parameter applies ONLY to EHS screens**, such as the EHS Home screen, info and preferences screens.
+* **Android orientation (auto-rotate/portrait/landscape) settings remain effective on non-EHS apps** regardless of this parameter setting.
+
 <img alt="" style="height:250px" src="orientation.png"/>
 
 <b>Possible values</b>

@@ -91,7 +91,7 @@ From a computer connected to a target device that has EHS installed:
 ##### Exporting the Config File
 For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
 
-##### Notes
+#####NOTES:
 * A config file exported to a visible area of the device file system might remain invisible to the PC until after the device is rebooted. 
 * **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; removable storage devices do not appear when selecting an export destination folder.
 
@@ -216,7 +216,7 @@ Specifies the applications and/or browser links to be displayed to users while E
 
 When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will open the link using the default browser.
 
-<b>Notes</b>:
+#####NOTES:
 * Package names might vary from one Android version to another. 
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 * **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
@@ -391,7 +391,7 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 ### App Icon Size
 Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
 
-**Notes**: 
+#####NOTES:
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 * When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can change the app icon size**. 
 
@@ -471,7 +471,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
  * [network_host_name] - Wi-Fi host name
  * [serial_number] - Device serial number
 
-**NOTES**: 
+#####NOTES:
 * **If the IMEI number is specified** in a non-WWAN device, the default EHS title is displayed.
 * **To display the Bluetooth MAC address** as the title, Bluetooth must be enabled on the device ([how to enable Bluetooth](../features/#bluetoothuseraccess)). 
 * **If the MAC address is specified but unavailable**, the default EHS title is displayed.
@@ -485,7 +485,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
             </title>
     </preferences>
 
-**Notes**:
+#####NOTES:
 
 * **The &lt;title&gt; tags must contain either a static title or the &lt;value&gt; tags**; never both.
 * **If &lt;title&gt; tags are not present in the** `enterprisehomescreen.xml` **file** or if identifier data retrieval fails, the text “Enterprise Home Screen” is inserted. 
@@ -526,7 +526,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 * fully qualified local (on-device) path to a .bmp, .gif, .jpg, .png or .webp image file
 
-**Notes**: 
+#####NOTES:
 * **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
@@ -637,7 +637,7 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 
 Screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
-#####Notes
+#####NOTES:
 * **Zebra recommends leaving this setting blank** (default) if app- and system-control of screen orientation are desired.
 * **The orientation set using this parameter applies ONLY to EHS screens**, such as the EHS Home screen, info and preferences screens.
 * **Android orientation (auto-rotate/portrait/landscape) settings remain effective on non-EHS apps** regardless of this parameter setting.
@@ -725,7 +725,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 * fully qualified local (on-device) path to .bmp, .gif, .jpg, .png or .webp file
 
-**Notes**: 
+#####NOTES:
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 * **For Android Pie devices with EHS 3.2 or higher, folder access with the file browser UI is limited** to:
@@ -883,7 +883,7 @@ Controls whether the device camera is accessible from the Keyguard screen (also 
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
-**Notes**: 
+#####NOTES:
 * **To prevent use of the camera**, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen.  
 * **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
 * **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
@@ -964,8 +964,7 @@ Controls whether full or limited settings are available when the device is in Ad
 
     <system_settings_restricted>1</system_settings_restricted>
 
-**Notes and Warnings**: 
-
+#####NOTES:
 * **The System settings app must be explicitly enabled in advance** to make use of this setting. See the [Enable/Disable Apps](#enabledisableapps) feature for more information. 
 * **This does not block Settings features**, but only prevents their **_display_** in the Settings panel. **Android makes restricted settings available to the user in some situations**. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they can be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
 * **It is still possible to add shortcuts to restricted System-settings components** (i.e. apps) using a third-party shortcut creator. However, such shortcuts also are available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
@@ -1226,7 +1225,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 
 <img alt="" style="height:350px" src="disable_apps.png"/>
 
-<b>Notes</b>: 
+#####NOTES:
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
 * If one of these tags is present without the other, Settings and Search apps are disabled in User Mode.
@@ -1240,7 +1239,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 
 On GMS devices running Android 8.x Oreo and higher, Zebra implements a mode called [GMS Restricted](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
 
-<b>Notes</b>: 
+#####NOTES:
 
 * **While apps and services disabled through GMS Restricted mode also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel.
 * Attempts to enable or disable any of the effected apps&ndash;either through the EHS Preferences UI, the Privileged Settings UI or by pushing a config file&ndash;result in failures entered in the [EHS log](../features#ehslog).
@@ -1305,7 +1304,7 @@ Controls the time (in seconds) that a device remains in Admin Mode without activ
 
 * integer (in seconds) 
 
-Notes: 
+#####NOTES:
 * 15 is the minimum value; lower values are ignored
 * <b>60 seconds is the default if tag is left blank or is not present</b>
 * 0 or negative value disables the timeout function
@@ -1437,7 +1436,7 @@ The activity the shortcut links to, returned by the `ShortcutInfo.getPackage()` 
 Refer to the examples below to see this the context of the `enterprisehomescreen.xml` file. 
 
  -->
-Notes:
+#####NOTES:
 
 * **When shortcuts that link to local apps or websites are added using the method described above**, EHS adds a link tag to the config file as in the sample below:
 

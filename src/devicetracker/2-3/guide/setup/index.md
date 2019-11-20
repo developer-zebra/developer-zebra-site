@@ -14,8 +14,7 @@ Solution components:
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
- * **Install server certificate** - either an SSL Certificate procured by a signed Certificate Authority) for secure HTTPS communication, or a Self-Signed Certificate for demos and trials.
- <font color="red">An SSL Certificate must be procured from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work for secure communication. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
+ * **Install server certificate** - use either an SSL Certificate procured by a signed Certificate Authority (such as Verisign or Thawte) for secure HTTPS communication, or a self-signed certificate for demos and trials. The SSL certificate must contain the complete certificate chain, including intermediate certificates.
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
@@ -23,7 +22,7 @@ Before installing, ensure to prepare additional steps for system setup - consult
 <font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for production environments. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
 -->
 ###Version History
-* **Device Tracker 2.3.1 -** New support for Self-Signed Certificates to help simplify deployment of product demos and trials.
+* **Device Tracker 2.3.1 -** Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
 ##System Requirements
 This section provides the server and device requirements. Device Tracker supports a maximum of 500 devices per installation.
@@ -47,12 +46,11 @@ This section provides the server and device requirements. Device Tracker support
 
 4. Network Access Requirements (see **Server Setup** below):
    * If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are: 
-        * Backend Server: Data Port 8080 for Device Tracker client to register to the server and transmit device data 
-        * Web Portal: UI Port 8443 for accessing Device Tracker web portal  
+        * Backend Server: Data port 8080 for Device Tracker client to register to the server and transmit device data 
+        * Web Portal: UI port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Certificate requirement:<br>
-An SSL Certificate for secure communications, or a Self-Signed Certificate for product demos and trials.
+5. Certificate requirement: An SSL Certificate for secure communications, or a self-signed certificate for product demos and trials.
 
 6. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
 
@@ -80,7 +78,7 @@ Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **Server Certificate.** An SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. Otherwise, a Self-Signed Certficate can be used for product demos and trials. See [Server Certificate](./#servercertificate) for details.
+2. **Server Certificate.** An SSL certificate is required for secure communications or a self-signed certificate can be used for product demos and trials. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
@@ -89,8 +87,8 @@ The following are the prerequisites required for the server: <br>
 <br>
 
 ###Server Certificate
-An SSL tool is required to generate the server certificate. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/). Instructions follow to generate an SSL certificate and self-signed certificate.<br>
-<!--Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>-->
+An SSL tool is required to generate the server certificate. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source). Instructions follow to generate an SSL certificate or self-signed certificate.
+
 ####SSL Certificate
 An SSL certificate is needed for secure connections. Domain level and wildcard certificates are acceptable. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
 * **Procure server certificate** (.p7b format) with public key 
@@ -132,7 +130,7 @@ where "dtrkdemo.key" is the private key generated from step 4 in the previous se
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
 
 ####Self-Signed Certificate
-A Self-Signed Certificate can be used for for product demos and trials.
+A self-signed certificate can be used for for product demos and trials.
 1. Generate a private key:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl genrsa -des3 -out dtrkdemo.key 2048`<br>
 where "dtrkdemo.key" is the name of the private key.
@@ -221,7 +219,7 @@ Where "8080" represents the specific backend server port number specified during
 Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
 &nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
-* **If using Self-Signed Certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
+* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
   * **For Chrome, Safari, or Internet Explorer:**<br>
   &nbsp; &nbsp; &nbsp;A. Launch browser.<br>
   &nbsp; &nbsp; &nbsp;B. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
@@ -317,7 +315,7 @@ Steps for client installation on the device, which may be performed either manua
 2. Install DTRKClient.apk. 
 3. If updating an existing client, reboot the device.
 4. Open Device Tracker client app.
-5. Allow the permissions when prompted.
+5. Accept the permissions when prompted.
 6. Once the app is opened on Android O or higher devices, a Device Tracker notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background. 
 <img style="height:350px" src="Notifications_dtrk.jpg"/>
 _Figure 11. Device Tracker client notification_ <br>

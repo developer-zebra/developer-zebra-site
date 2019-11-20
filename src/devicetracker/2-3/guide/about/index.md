@@ -12,9 +12,9 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 ## New in Device Tracker 2.3.1
 * New feature on the server to toggle BLE for device proximity tracking.
 * New BLE proximity indicator to determine proximity of device based on BLE beacon transmissions.
-* Delete "Never connected" devices in the web portal. This can include invalid device data uploaded from a device CSV file.
-* New support for Self-Signed Certificates to help simplify deployment of product demos and trials.
-* Support for Google API 28 provides greater consistency of application user interfaces and icons when compared with other Zebra Mobility DNA software.
+* Ability to delete "Never connected" devices in the web portal that have been uploaded but never connected to the server. This option helps to remove devices uploaded to the console via .CSV file in error. 
+* Self-signed certificates are now supported to help simplify deployment of product demos and trials.
+* Enhanced Device Tracker mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.
 
 ## Version History
 
@@ -29,12 +29,12 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
     <td style="text-align:center" rowspan="2">2.3.1</td>
     <td style="text-align:center">Server</td>
     <td style="text-align:center">2.3.1</td>
-    <td style="text-align:left">• New feature to toggle BLE for device proximity tracking.<br>• Delete "Never connected" devices in the web portal. This can include devices with invaild data uploaded from a device CSV file.</td>
+    <td style="text-align:left">• New feature to toggle BLE for device proximity tracking.<br>• Ability to delete "Never connected" devices in the web portal that have been uploaded but never connected to the server. This option helps to remove devices uploaded to the console via .CSV file in error. <br>• Self-signed certificates are now supported to help simplify deployment of product demos and trials.</td>
   </tr>
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">2.3</td>
-    <td style="text-align:left">New BLE feature for device proximity tracking.</td>
+    <td style="text-align:left">• New BLE device proximity indicator to locate a misplaced device by leveraging BLE device-to-device beacon transmissions.<br>• Enhanced Device Tracker mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.</td>
   </tr>
    <tr>
     <td style="text-align:center" rowspan="2">2.2.1</td>

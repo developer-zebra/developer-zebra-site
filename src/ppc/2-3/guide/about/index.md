@@ -32,7 +32,8 @@ PowerPrecision Console consists of the following components:
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions. 
 
 ## New in PPC 2.3.1
-* Extended [EOL Alert](../config) options on the portal to include **Snooze Expiration Time.** This sets the time in days after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
+* Extended [EOL Alert](../config) options on the portal to include the ability to set an expiration time following a battery EOL, after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
+* Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
 
 ## Recent Version History

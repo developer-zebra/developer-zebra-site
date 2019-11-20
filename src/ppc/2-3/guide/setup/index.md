@@ -14,11 +14,12 @@ Solution components:
 * **PPC client** - reports battery and device information to server
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
- * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
+ * **Install server certificate** - use either an SSL Certificate procured by a signed Certificate Authority (such as Verisign or Thawte) for secure HTTPS communication, or a self-signed certificate for demos and trials. The SSL certificate must contain the complete certificate chain, including intermediate certificates.
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
-<font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
+###Version History
+* **PowerPrecision Console 2.3.1 -** Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
 ##System Requirements
 This section provides the server and device requirements. PPC supports a maximum of 10,000 devices and 20,000 batteries per installation based on the hardware requirements.
@@ -40,15 +41,17 @@ This section provides the server and device requirements. PPC supports a maximum
    * PostgreSQL 9.6.3-3 or higher
    * PowerPrecision Console software (server and client) 
 
-4. Network Access Requirements:
-   * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
-        * Backend Server: Data Port 8080 for PPC client to register and upload battery data 
-        * Web Portal: UI Port 8443 for accessing PPC web portal  
-   * If required, perform DNS setup to add server IP address to the DNS server. 
+4. Network Access Requirements (see **Server Setup** below):
+   * If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are: 
+        * Backend Server: Data port 8080 for PPC client to register and upload battery data
+        * Web Portal: UI port 8443 for accessing PPC web portal 
+   * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Internet Access Required: Internet access is needed to download npm package dependencies.
+5. Certificate requirement: An SSL Certificate for secure communications, or a self-signed certificate for product demos and trials.
 
-6. Hardware Requirements:
+6. Internet Access Required: Internet access is needed to download npm package dependencies.
+
+7. Hardware Requirements:
    * Minimum CPU cores: 16
      * Minimum memory (RAM): 64 GB
          * Minimum available hard drive space: 500 GB
@@ -63,9 +66,9 @@ For new installations, download ZDVC Server from [Zebra Support and Downloads](h
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
-1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping.
 
-2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
+2. **Server Certificate.** An SSL certificate is required for secure communications or a self-signed certificate can be used for product demos and trials. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
@@ -74,7 +77,10 @@ The following are the prerequisites required for the server: <br>
 <br>
 
 ###Server Certificate 
-An SSL certificate is needed for secure connections. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
+An SSL tool is required to generate the server certificate. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source). Instructions follow to generate an SSL certificate or self-signed certificate.
+
+####SSL Certificate
+An SSL certificate is needed for secure connections. Domain level and wildcard certificates are acceptable. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
 * **Procure server certificate** (.p7b format) with public key 
 * **Generate complete SSL certificate** (.pfx format) with both public and private keys 
 
@@ -82,13 +88,12 @@ If the server certificate with public key already exists, skip to the second sec
 **Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format. Watch a video demonstration or follow the steps below:
 <video controls width="430" height="290"> <source src="../../../videos/ZDVC_ServerCert-Step1.mp4" type="video/mp4">
 </video>
-1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
-2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
-3. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
-4. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in PPC. Run the command:  <br>
+1. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
+2. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
+3. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in PPC. Run the command:  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out ppcdemo.key 2048`<br>
 where "ppcdemo.key" can be replaced with a custom file name.
-5. Create a CSR based on the new private key. Run the command:<br>
+4. Create a CSR based on the new private key. Run the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key ppcdemo.key -new -out ppcdemo.csr`<br>
 where "ppcdemo.key" (same file name as in step 4) and "ppcdemo.csr" (new file created) can be replaced with custom file names. 
 It prompts to enter the private key password (created in step 5). Enter in the required fields when prompted (the information entered must match that registered with the CA):
@@ -100,7 +105,7 @@ It prompts to enter the private key password (created in step 5). Enter in the r
    * **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
    * **Email Address** - Enter the contact email address.<br>
 When prompted for the challenge password, it is not required - _do not supply one_. 
-6. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
+5. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
 **Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format. Watch a video demonstration or follow the steps below: 
 <video controls width="450" height="280"> <source src="../../../videos/ZDVC_ServerCert-Step2.mp4" type="video/mp4">
@@ -110,8 +115,8 @@ When prompted for the challenge password, it is not required - _do not supply on
 where "ssl_certificate.p7b" is the certificate issued by the CA.
 2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section): <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppcdemo.key -out ssl_certificate.pfx`<br>
-where "ppcdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1.
-3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard.
+where "ppcdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1. When prompted, enter the passphrase (from step 4 in the previous section) and specify an export password. 
+3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard. When prompted for a password, enter the password set from the previous step.
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for PPC server installation and setup in the sections that follow.
 
 <!--
@@ -152,6 +157,27 @@ E. When prompted, enter the certificate password to export "ssl_certificate.pfx"
 F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
 <br>
 -->
+
+####Self-Signed Certificate
+A self-signed certificate can be used for for product demos and trials.
+1. Generate a private key:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl genrsa -des3 -out ppcdemo.key 2048`<br>
+where "ppcdemo.key" is the name of the private key.
+2. When prompted, enter a pass phrase.
+3. Generate a CSR:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl req -new -key ppcdemo.key -sha256 -out ppcdemo.csr` <br>
+where "ppcdemo.key" is the name of the private key from step 1 and "ppcdemo.csr" is the name of the CSR.
+4. When prompted, enter the pass phrase set in step 2.
+5. When prompted, enter information in the fields requested, including the challenge password.
+6. Generate a self-signed certficate:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl x509 -req -days 365 -in ppcdemo.csr -signkey ppcdemo.key -sha256 -out ppcdemo.crt`<br>
+where "ppcdemo.crt" is the self-signed certficate.
+7. When prompted, enter the pass phrase set in step 2.
+8. Generate the .pfx certificate file:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -out ppcdemo.pfx -inkey ppcdemo.key -in ppcdemo.crt`<br>
+where "ppcdemo.pfx" is the certificate required to install on the server.
+9. When prompted, enter the pass phrase for the private key.
+10. Use self-signed certificate "ppcdemo.pfx" and the private key password for PPC server installation and setup in the sections that follow.
 
 ###Server Installation
 ZDVC Server Installation steps for a new installation: <br>
@@ -221,6 +247,37 @@ Where "8080" represents the specific backend server port number specified during
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
+&nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
+&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
+* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
+  * **For Chrome, Safari, or Internet Explorer:**<br>
+  &nbsp; &nbsp; &nbsp;A. Launch browser.<br>
+  &nbsp; &nbsp; &nbsp;B. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;C. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
+  &nbsp; &nbsp; &nbsp;D. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;E. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
+  * **For Edge:**<br>
+  &nbsp; &nbsp; &nbsp;A. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;B. Click “Continue to this website”. <br>
+  &nbsp; &nbsp; &nbsp;C. Click on “Certificate error” in the address bar, then click “View certificates."<br>
+  &nbsp; &nbsp; &nbsp;D. Click “Install Certificate”. <br>
+  &nbsp; &nbsp; &nbsp;E. Click “Place all certificates in the following store”, then click “Browse”. Do not rely on the pre-selected option to automatically select the certificate store since this will not work.<br>
+  &nbsp; &nbsp; &nbsp;F. In the dialog box, click “Trusted Root Certification Authorities”, then click “OK”. <br>
+  &nbsp; &nbsp; &nbsp;F. Click "Finish". <br>
+  &nbsp; &nbsp; &nbsp;G. A security warning is displayed. Click “Yes” to trust the certificate. <br>
+  &nbsp; &nbsp; &nbsp;H. Reload the page. <br>
+  &nbsp; &nbsp; &nbsp;I. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;J. Click "Advanced" and then click "Proceed..." <br><br>
+&nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.<br>
+&nbsp;4. **SSL certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+&nbsp; &nbsp; &nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
+&nbsp; &nbsp; &nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
+&nbsp; &nbsp; &nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
+&nbsp; &nbsp; &nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
+&nbsp; &nbsp; &nbsp;E. Click the Scan button. A successful result returns green checks for each step:
+![img](SSLTools.JPG)
+_Figure 9. SSLTools.com results_
+<!-- Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section. 
 2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
@@ -231,7 +288,7 @@ C. Click the Scan button. A successful result returns green checks for each step
 D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 9. SSLTools.com results_
+_Figure 9. SSLTools.com results_ -->
 
 ###Stop Application Server
 Procedure to stop the application server:
@@ -307,7 +364,7 @@ Steps for manual client installation:
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
 4. Installation is complete.
 5. Open PPC client app. 
-6. A message displays requesting for permission: "Allow PowerPrecision Console to make and manage phone calls?" Accept the permission to allow the device to register to the server with the device serial number. 
+6. Accept the permissions when prompted.
 7. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background. 
 <img style="height:350px" src="Notifications_PPC.png"/>
 _Figure 11. PPC client notification_ <br>

@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.3"
 osx: "4.3"
-end-osx: "8.0"
+osx-end: "8.0"
 devicetype: A
 info: The Power Off menu is not configurable on Nougat devices using this parameter. See Power Key Manager.  
 parm:
@@ -16,7 +16,7 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
-      end-osx: "8.0"
+      osx-end: "8.0"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the device; any previously selected setting is retained.
@@ -25,14 +25,14 @@ parm:
       name: Enable
       mx: "4.3"
       osx: "4.3"
-      end-osx: "8.0"
+      osx-end: "8.0"
       description: Allows the device user to determine whether "Airplane Mode" is accessible from the Android Settings and Quick Settings panels and the Power Off menu (on some devices).
     - code: 2
       devicetype: A
       name: Disable
       mx: "4.3"
       osx: "4.3"
-      end-osx: "8.0"
+      osx-end: "8.0"
       description: Prevents the device user from controlling whether "Airplane Mode" is accessible from the Android Settings and Quick Settings panels and the Power Off menu (on some devices).
 ---
 

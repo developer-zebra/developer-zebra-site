@@ -92,7 +92,7 @@
                                             {{/if}}
                                             {{#if this.osx-exclude}}
                                                 <li class="text-danger">NOT IN OSX: {{this.osx-exclude}}
-                                                    {{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
+                                                    {{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}} OR HIGHER{{/if}}
                                                 </li>
                                             {{/if}}
                                                 <li>MX: {{this.mx}}+ </li>
@@ -163,7 +163,7 @@
                                                         </p>
                                                     {{/if}}
                                                     {{#if this.osx-exclude}}
-                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}} 
+                                                        <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}} OR HIGHER{{/if}} 
                                                         </p>
                                                     {{/if}}
 

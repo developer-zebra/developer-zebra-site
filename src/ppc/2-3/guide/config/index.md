@@ -39,7 +39,7 @@ These default thresholds correlate to the color-coded SOH as follows:
 <br>
 	**• Max Snooze Count** – specify the maximum number of times to snooze until decommissioning is required
 <br>
-	**• Snooze Expiration Time (Days)** - sets the expiration time for the battery EOL alert, after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
+	**• Snooze Expiration Time (Days)** - sets the expiration time for the battery EOL alert, after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL. Minimum value: 1, maximum value: 90.
 <br>
 	**• Show Alert On Next Boot** – display the EOL message upon next device boot
 <br>

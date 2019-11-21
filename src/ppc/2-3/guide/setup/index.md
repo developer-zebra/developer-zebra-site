@@ -171,7 +171,7 @@ where "ppcdemo.key" is the name of the private key from step 1 and "ppcdemo.csr"
 5. When prompted, enter information in the fields requested, including the challenge password.
 6. Generate a self-signed certficate:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl x509 -req -days 365 -in ppcdemo.csr -signkey ppcdemo.key -sha256 -out ppcdemo.crt`<br>
-where "ppcdemo.crt" is the self-signed certficate.
+where "ppcdemo.crt" is the self-signed certficate to be used for the client app.
 7. When prompted, enter the pass phrase set in step 2.
 8. Generate the .pfx certificate file:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -out ppcdemo.pfx -inkey ppcdemo.key -in ppcdemo.crt`<br>
@@ -375,22 +375,23 @@ After client installation, configure the server address, port, server auth usern
 ####Manual Configuration
 Steps for manual configuration:
 1. Open PowerPrecision Console Client.
-2. If prompted, enable the “Apps that can draw over other apps” overlay permission. 
-3. Tap the hamburger menu at the top right, then tap Settings. 
-4. Enter in the settings based on the PPC version:<br><br>
-**For PPC v2.0 or higher:** <br>
- A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
+2. Grant all permissions requested by the app.
+3. **If using a self-signed certificate,** open the StageNow application and scan the barcode from file "EnabledSelfSigned_PPC.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the PPC client installation package.
+4. Tap the hamburger menu at the top right, then tap Settings. 
+5. Enter the settings:<br>
+&nbsp;&nbsp;&nbsp;A. Tap **Server URL**. Enter the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>
 Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br>
- B. Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
- C. Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
- On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.<br><br>
-**For PPC v1.0:** <br>
- A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
-<br>
- Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br><br>
-5. Tap **OK** to save the changes and return to the main screen.
-PPC Client registers with the server and uploads battery data.
+&nbsp;&nbsp;&nbsp;B. Tap **Server Auth UserName**. Enter the user name specified during server installation. <br>
+&nbsp;&nbsp;&nbsp;C. Tap **Server Auth Password**. Enter the password specified during server installation.<br>
+On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.<br>
+6. Tap **OK** to save the changes and return to the main screen. PPC Client registers with the server and uploads battery data.
+7. **If using a self-signed certificate,** proceed as follows:<br>
+&nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
+&nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
+<img style="height:350px" src="untrusted_cert_ppc.jpg"/>
+_Figure 12. Untrusted certificate message in client app_<br>
+&nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_PPC.pdf" (part of the PPC client installation package).
 
 ####Remote Configuration
 For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in `PPCClient\PluginCSP`. After PPC client and PPCClientMgr app installation, follow these steps to create StageNow profiles to remotely configure the client:
@@ -412,7 +413,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. Configure PPC settings.
 * When PPCClientMgr app is opened on Android O or higher devices, a notification message is displayed in the device notifications drawer. This indicates that PPCClientMgr is running in the background. 
 <img style="height:350px" src="Notifications_PPCClientMgr.png"/>
-_Figure 12. PPC client notification_ <br>
+_Figure 13. PPC client notification_ <br>
 
 **Steps to create StageNow profile to launch PPC client app (which starts PPCClientMgr.apk for remote configuration deployment),**  with the option of deployment through Enterprise Mobile Management (EMM):
 
@@ -420,11 +421,11 @@ _Figure 12. PPC client notification_ <br>
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 13. Profile wizard_ <br>
+_Figure 14. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 14. Add Setting_ <br>
+_Figure 15. Add Setting_ <br>
 6. Enter the following information:
    * **Action:** StartActivty
    * **Android Action Name:** android.intent.action.MAIN
@@ -432,11 +433,11 @@ _Figure 14. Add Setting_ <br>
    * **Class Name:** com.zebra.ppcclient.activity.MainActivity <br>
 Click Continue.
 ![img](SN_IntentStartActivityConfig.jpg)
-_Figure 15. Configure Setting_ <br>
+_Figure 16. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 16. Generate StageNow barcode_ <br>
+_Figure 17. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -455,20 +456,21 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 17. Import plugin into CSP Library_
+_Figure 18. Import plugin into CSP Library_
 5. Create a new setting.<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 18. Import into CSP Library_ <br>
-B. Depending on the PPC version: <br>
-**For PPC v2.0:** <br>
-For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install. Select the MX version for the device.<br>
+_Figure 19. Import into CSP Library_ <br>
+B. Select the MX version for the device and enter the following settings: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Setting Type:** select “com.zebra.ppcclientmgr"<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Name:** enter a name for the setting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server URL:** enter the server URL e.g. `hostname.company.com:8080/zdvc/ppcdata`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Allow edit settings:** select the desired option to determine whether or not to allow the end user to edit the setting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth UserName:** enter the "Server Auth Key" designated during server install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
 ![img](SN_CreateSettings2_0.jpg)
-_Figure 19. Create New Setting for PPC v2.0_ <br>
-**For PPC v1.0:** <br>
-For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `ppc.zebra.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
-![img](SN_CreateSettings.JPG)
-_Figure 20. Create New Setting for PPC v1.0_ <br>
+_Figure 20. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 6. Create profile.<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>

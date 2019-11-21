@@ -142,7 +142,7 @@ where "dtrkdemo.key" is the name of the private key from step 1 and "dtrkdemo.cs
 5. When prompted, enter information in the fields requested, including the challenge password.
 6. Generate a self-signed certficate:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl x509 -req -days 365 -in dtrkdemo.csr -signkey dtrkdemo.key -sha256 -out dtrkdemo.crt`<br>
-where "dtrkdemo.crt" is the self-signed certficate.
+where "dtrkdemo.crt" is the self-signed certficate to be used for the client app.
 7. When prompted, enter the pass phrase set in step 2.
 8. Generate the .pfx certificate file:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -out dtrkdemo.pfx -inkey dtrkdemo.key -in dtrkdemo.crt`<br>
@@ -311,8 +311,12 @@ Install Device Tracker client on the supported Zebra device to register the devi
 
 ###Client Installation
 Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
-1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files and folders.
-2. Install DTRKClient.apk. 
+1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DTRKClient.apk<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• com.zebra.devicetracker.dsd<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• EnableSelfSigned_DTRK.pdf<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DisableSelfSigned_DTRK.pdf<br>
+2. Copy and install DTRKClient.apk on the device. 
 3. If updating an existing client, reboot the device.
 4. Open Device Tracker client app.
 5. Accept the permissions when prompted.
@@ -327,16 +331,22 @@ Configure the client settings either manually or remotely. For information on us
 ####Manual Configuration
 Steps for manual client configuration after installation:
 1. Open Device Tracker client.
-2. Tap "Yes" to "Ignore battery optimizations". This is required for the client to remain connected to the server while running in the background.
-3. Tap the hamburger menu at the top right, then tap "Settings".  
-4. Enter in the following information:
-   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **hostname.company.com:8080/zdvc/dtrk**, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. The URL must not contain "https://" nor "http://".
+2. Grant all permissions requested by the app.
+3. **If using a self-signed certificate,** open the StageNow application and scan the barcode from file "EnabledSelfSigned_DTRK.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the Device Tracker client installation package.
+4. Tap the hamburger menu at the top right, then tap "Settings".  
+5. Enter in the following information:
+   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. The URL must not contain "https://" nor "http://".
    * **Server Auth Key** - UserName designated during server install
    * **Server Auth Password** - Password designated during server install
 <br>
-5. Tap the device back button to save the changes and return to the main screen.
+6. Tap the device back button to save the changes and return to the main screen.
 Device Tracker client registers with the server and loads "Devices to be found".
-<!--3. Tap "Allow" to "Allow Device Tracker to access this device's location". This is required to allow BLE (Bluetooth Low Energy) locationing. -->
+7. **If using a self-signed certificate,** proceed as follows:<br>
+&nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
+&nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
+<img style="height:350px" src="untrusted_cert.jpg"/>
+_Figure 12. Untrusted certificate message in client app_<br>
+&nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_DTRK.pdf" (part of the Device Tracker client installation package).
 
 ####Remote Configuration
 After client installation, follow these steps to create StageNow profiles to remotely configure the client:
@@ -363,18 +373,18 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 12. Profile wizard_ <br>
+_Figure 13. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddAppMgr.JPG)
-_Figure 13. Add Setting_ <br>
+_Figure 14. Add Setting_ <br>
 6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
 ![img](SN_BattOpt.JPG)
-_Figure 14. Re-use saved setting_ <br>
+_Figure 15. Re-use saved setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 15. Generate StageNow barcode_ <br>
+_Figure 16. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -385,22 +395,22 @@ _Figure 15. Generate StageNow barcode_ <br>
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 16. Profile wizard_ <br>
+_Figure 17. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 17. Add Setting_ <br>
+_Figure 18. Add Setting_ <br>
 6. Enter the following information:
    * Action: select "StartService"
    * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
    * Package Name: enter "com.zebra.devicetracker"
 Click Continue.
 ![img](SN_IntentConfig.jpg)
-_Figure 18. Configure Setting_ <br>
+_Figure 19. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 19. Generate StageNow barcode_ <br>
+_Figure 20. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -417,33 +427,43 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 20. Import plugin into CSP Library_
+_Figure 21. Import plugin into CSP Library_
 4. Create a new setting:<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 21. Import into CSP Library_ <br>
-B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
+_Figure 22. Import into CSP Library_ <br>
+B. Select the MX version for the device and enter the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Setting Type:** select “com.zebra.devicetracker"<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Name:** enter a name for the setting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server URL:** enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Allow edit settings:** select the desired option to determine whether or not to allow the end user to edit the setting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth UserName:** enter the "Server Auth Key" designated during server install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
+<!--
+Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
+-->
 ![img](SN_CreateSettings.JPG)
-_Figure 22. Create New Setting_ <br>
+_Figure 23. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 ![img](SN_NewSetting.JPG)
-_Figure 23. New Setting created_ <br>
+_Figure 24. New Setting created_ <br>
 5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 24. Profile wizard_ <br>
+_Figure 25. Profile wizard_ <br>
 C. Enter the profile name. Click Start.<br>
 D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 25. Add Setting_ <br>
+_Figure 26. Add Setting_ <br>
 E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
 ![img](SN_ReUseSavedSetting.JPG)
-_Figure 26. Re-use saved setting_ <br>
+_Figure 27. Re-use saved setting_ <br>
 F. Click “Complete Profile." <br>
 G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 27. Generate StageNow barcode_ <br>
+_Figure 28. Generate StageNow barcode_ <br>
 H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
@@ -459,7 +479,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    * Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
 2. Select "Export option for EMM" from the top to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
-_Figure 28. Export for EMM_
+_Figure 29. Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
 <br>

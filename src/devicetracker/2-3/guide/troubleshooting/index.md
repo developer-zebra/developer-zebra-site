@@ -64,8 +64,8 @@ There could be a network delay in contacting the server. Wait for some time to e
 ##FAQ
 Frequently Asked Questions:
 ###How do I delete device entries?
-For **Device Tracker 2.2.1 or older,** there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.<br>
-For **Device Tracker 2.3.1 or newer,** the ability to delete "Never connected" devices was added for the web portal. This allows devices that have been uploaded (via .CSV file) but never connected to the server to be deleted.
+For **Device Tracker 2.2.1 or older,** there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed on the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.<br>
+For **Device Tracker 2.3.1 or newer,** the ability to delete "Never connected" devices was added to the web portal. This allows devices that have been uploaded (via .CSV file) but never connected to the server to be deleted.
 
 ###Can I use a self-signed certificate?
 For **Device Tracker 2.2.1 or older,** an SSL certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for secure communication. Any self-signed certificate or one issued by a non third-party CA does not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.<br>

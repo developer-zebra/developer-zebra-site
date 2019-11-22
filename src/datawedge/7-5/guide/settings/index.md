@@ -53,7 +53,7 @@ From the DataWedge Settings panel, **tap Enable Logging** to enable or disable l
 
 ### Ignore Disabled Profiles
 
-This feature prevents an app using the [SwitchToProfile API](../api/switchtoprofile) from switching to a Profile that is disabled. This can use useful, for example, for preventing an activity intended to disable from switching to a Profile that keeps the scanner enabled. Attempts to switch to a disabled scanner are ignored; no switch takes place.  
+This feature prevents DataWedge from switching to a disabled profile when the app calls [SwitchToProfile API](../api/switchtoprofile). For example, this can be useful in cases where there is a profile that keeps the scanner enabled - if **Ignore Disabled Profiles** is enabled, it prevents an activity or app from switching to another profile that intends to disable the scanner. 
 
 > **To enable this feature, [Profile0](../overview/#profile0) must be disabled**. 
 

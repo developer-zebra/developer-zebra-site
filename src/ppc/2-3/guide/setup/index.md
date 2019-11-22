@@ -1,5 +1,5 @@
 ---
-title: PowerPrecision Console Install & Setup
+title: Install & Setup
 layout: guide.html
 product: PowerPrecision Console
 productversion: '2.3.1'
@@ -14,7 +14,9 @@ Solution components:
 * **PPC client** - reports battery and device information to server
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
- * **Install server certificate** - use either an SSL Certificate procured by a signed Certificate Authority (such as Verisign or Thawte) for secure HTTPS communication, or a self-signed certificate for demos and trials. The SSL certificate must contain the complete certificate chain, including intermediate certificates.
+ * **Install a server certificate** - Supported certificates:
+     * **SSL certificate** - use for secure HTTPS communications. The SSL certificate must be procured and signed from a trusted third-party Certificate Authority (CA), such as Verisign or Thawte, and must contain the complete certificate chain, including intermediate certificates.
+     * **Self-signed certificate** - use for demos and trials. A self-signed certificate is considered as untrusted - _use at your own risk._ 
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
@@ -47,14 +49,15 @@ This section provides the server and device requirements. PPC supports a maximum
         * Web Portal: UI port 8443 for accessing PPC web portal 
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Certificate requirement: An SSL Certificate for secure communications, or a self-signed certificate for product demos and trials.
+5. Certificate requirement: An SSL Certificate for secure communications or a self-signed certificate for product demos and trials.
 
 6. Internet Access Required: Internet access is needed to download npm package dependencies.
 
-7. Hardware Requirements:
-   * Minimum CPU cores: 16
-     * Minimum memory (RAM): 64 GB
-         * Minimum available hard drive space: 500 GB
+7. Hardware Requirements:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum CPU cores: 16<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum memory (RAM): 64 GB<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum available hard drive space: 500 GB<br>
+
 
 ###Device Requirements
 See [Device Requirements](../about/#devicerequirements).
@@ -159,7 +162,7 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 -->
 
 ####Self-Signed Certificate
-A self-signed certificate can be used for for product demos and trials.
+A self-signed certificate can be used for for product demos and trials. Procedure to generate a self-signed certificate:
 1. Generate a private key:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl genrsa -des3 -out ppcdemo.key 2048`<br>
 where "ppcdemo.key" is the name of the private key.
@@ -248,33 +251,34 @@ Where "8080" represents the specific backend server port number specified during
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
-&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
-* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
+&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+&nbsp; &nbsp; &nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console".<br>
+&nbsp; &nbsp; &nbsp;4. **Login.** Enter the login credentials. The default user name is "SAdmin". The password is the _super admin and database password_ entered during server installation. _If using an SSL certificate, proceed to step 5._
+* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps below to login depending on the browser:
   * **For Chrome, Safari, or Internet Explorer:**<br>
-  &nbsp; &nbsp; &nbsp;A. Launch browser.<br>
-  &nbsp; &nbsp; &nbsp;B. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
-  &nbsp; &nbsp; &nbsp;C. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
-  &nbsp; &nbsp; &nbsp;D. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
-  &nbsp; &nbsp; &nbsp;E. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
+  &nbsp; &nbsp; &nbsp;A. In the browser, enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password. This is the _Server Auth Key_ and _Server Auth Password_ set during server install.<br>
+  &nbsp; &nbsp; &nbsp;B. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
+  &nbsp; &nbsp; &nbsp;C. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;D. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
   * **For Edge:**<br>
-  &nbsp; &nbsp; &nbsp;A. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;A. In the browser, enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password. This is the _Server Auth Key_ and _Server Auth Password_ set during server install.<br>
   &nbsp; &nbsp; &nbsp;B. Click “Continue to this website”. <br>
   &nbsp; &nbsp; &nbsp;C. Click on “Certificate error” in the address bar, then click “View certificates."<br>
   &nbsp; &nbsp; &nbsp;D. Click “Install Certificate”. <br>
   &nbsp; &nbsp; &nbsp;E. Click “Place all certificates in the following store”, then click “Browse”. Do not rely on the pre-selected option to automatically select the certificate store since this will not work.<br>
   &nbsp; &nbsp; &nbsp;F. In the dialog box, click “Trusted Root Certification Authorities”, then click “OK”. <br>
-  &nbsp; &nbsp; &nbsp;F. Click "Finish". <br>
-  &nbsp; &nbsp; &nbsp;G. A security warning is displayed. Click “Yes” to trust the certificate. <br>
-  &nbsp; &nbsp; &nbsp;H. Reload the page. <br>
-  &nbsp; &nbsp; &nbsp;I. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
-  &nbsp; &nbsp; &nbsp;J. Click "Advanced" and then click "Proceed..." <br><br>
-&nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.<br>
-&nbsp;4. **SSL certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
-&nbsp; &nbsp; &nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-&nbsp; &nbsp; &nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
-&nbsp; &nbsp; &nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
-&nbsp; &nbsp; &nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
-&nbsp; &nbsp; &nbsp;E. Click the Scan button. A successful result returns green checks for each step:
+  &nbsp; &nbsp; &nbsp;G. Click "Finish". <br>
+  &nbsp; &nbsp; &nbsp;H. A security warning is displayed. Click “Yes” to trust the certificate. <br>
+  &nbsp; &nbsp; &nbsp;I. Reload the page. <br>
+  &nbsp; &nbsp; &nbsp;J. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;K. Click "Advanced" and then click "Proceed..." 
+  
+&nbsp; &nbsp; &nbsp;5. **SSL certificate validation.** For SSL certificates, an SSL Tool (such as [ssltools.com](http://ssltools.com/)) can be used to aid in diagnostics and validate the SSL certificate chain.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 9 below._ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 9. SSLTools.com results_
 <!-- Steps for ZDVC server setup after installation: <br>
@@ -366,7 +370,7 @@ Steps for manual client installation:
 5. Open PPC client app. 
 6. Accept the permissions when prompted.
 7. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background. 
-<img style="height:350px" src="Notifications_PPC.png"/>
+<img style="height:370px" src="Notifications_PPC.png"/>
 _Figure 11. PPC client notification_ <br>
 
 ###Client Configuration
@@ -375,21 +379,19 @@ After client installation, configure the server address, port, server auth usern
 ####Manual Configuration
 Steps for manual configuration:
 1. Open PowerPrecision Console Client.
-2. Grant all permissions requested by the app.
-3. **If using a self-signed certificate,** open the StageNow application and scan the barcode from file "EnabledSelfSigned_PPC.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the PPC client installation package.
-4. Tap the hamburger menu at the top right, then tap Settings. 
-5. Enter the settings:<br>
-&nbsp;&nbsp;&nbsp;A. Tap **Server URL**. Enter the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
-<br>
-Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br>
-&nbsp;&nbsp;&nbsp;B. Tap **Server Auth UserName**. Enter the user name specified during server installation. <br>
-&nbsp;&nbsp;&nbsp;C. Tap **Server Auth Password**. Enter the password specified during server installation.<br>
+2. Grant all permissions requested by the app. _If using an SSL certificate,_ proceed to step 4.
+3. **If using a self-signed certificate,** open the StageNow application. Scan the barcode from file "EnabledSelfSigned_PPC.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the PPC client installation package.
+4. Tap the hamburger menu at the top right, then tap "Settings". 
+5. Enter the following information:<br>
+   * ***Server URL** - URL with port number and PPC path specified, for example: `hostname.company.com:8080/zdvc/ppc`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://" nor "http://"._ <br>
+   * ***Server Auth UserName** - user name specified during server installation. <br>
+   * **Server Auth Password** - password specified during server installation.<br>
 On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.<br>
-6. Tap **OK** to save the changes and return to the main screen. PPC Client registers with the server and uploads battery data.
+6. Tap **OK** to save the changes and return to the main screen. PPC Client registers with the server and uploads battery data. _If using an SSL certificate,_ manual client configuration is complete.
 7. **If using a self-signed certificate,** proceed as follows:<br>
 &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
 &nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
-<img style="height:350px" src="untrusted_cert_ppc.jpg"/>
+<img style="height:370px" src="untrusted_cert_ppc.jpg"/>
 _Figure 12. Untrusted certificate message in client app_<br>
 &nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_PPC.pdf" (part of the PPC client installation package).
 
@@ -412,7 +414,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Install PPC client and PPCClientMgr app. Start the PPC client activity.<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. Configure PPC settings.
 * When PPCClientMgr app is opened on Android O or higher devices, a notification message is displayed in the device notifications drawer. This indicates that PPCClientMgr is running in the background. 
-<img style="height:350px" src="Notifications_PPCClientMgr.png"/>
+<img style="height:370px" src="Notifications_PPCClientMgr.png"/>
 _Figure 13. PPC client notification_ <br>
 
 **Steps to create StageNow profile to launch PPC client app (which starts PPCClientMgr.apk for remote configuration deployment),**  with the option of deployment through Enterprise Mobile Management (EMM):
@@ -469,7 +471,7 @@ B. Select the MX version for the device and enter the following settings: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth UserName:** enter the "Server Auth Key" designated during server install<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
-![img](SN_CreateSettings2_0.jpg)
+![img](SN_CreateSettings3_0.jpg)
 _Figure 20. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 6. Create profile.<br>

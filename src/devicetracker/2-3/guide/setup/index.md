@@ -14,7 +14,9 @@ Solution components:
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
- * **Install server certificate** - use either an SSL Certificate procured by a signed Certificate Authority (such as Verisign or Thawte) for secure HTTPS communication, or a self-signed certificate for demos and trials. The SSL certificate must contain the complete certificate chain, including intermediate certificates.
+ * **Install a server certificate** - Supported certificates:
+     * **SSL certificate** - use for secure HTTPS communications. The SSL certificate must be procured and signed from a trusted third-party Certificate Authority (CA), such as Verisign or Thawte, and must contain the complete certificate chain, including intermediate certificates.
+     * **Self-signed certificate** - use for demos and trials. A self-signed certificate is considered as untrusted - _use at your own risk._ 
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
@@ -50,15 +52,21 @@ This section provides the server and device requirements. Device Tracker support
         * Web Portal: UI port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Certificate requirement: An SSL Certificate for secure communications, or a self-signed certificate for product demos and trials.
+5. Certificate requirement: An SSL Certificate for secure communications or a self-signed certificate for product demos and trials.
 
 6. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
 
+7. Hardware Requirements:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum CPU cores: 16<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum memory (RAM): 64 GB<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum available hard drive space: 500 GB<br>
+
+<!-- 
 7. Hardware Requirements:
    * Minimum CPU cores: 16
      * Minimum memory (RAM): 64 GB
          * Minimum available hard drive space: 500 GB
-
+-->
 
 ###Device Requirements
 Requirements for Device Tracker client:
@@ -102,7 +110,7 @@ If the server certificate with public key already exists, skip to the second sec
 2. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
 3. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in Device Tracker. Run the command:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out dtrkdemo.key 2048`<br>
-where "dtrkdemo.key" can be replaced with a custom file name.
+where "dtrkdemo.key" can be replaced with a custom file name.<br>
 4. Create a CSR based on the new private key. Run the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key dtrkdemo.key -new -out dtrkdemo.csr`<br>
 where "dtrkdemo.key" (same file name as in step 4) and "dtrkdemo.csr" (new file created) can be replaced with custom file names. 
@@ -130,7 +138,7 @@ where "dtrkdemo.key" is the private key generated from step 4 in the previous se
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
 
 ####Self-Signed Certificate
-A self-signed certificate can be used for for product demos and trials.
+A self-signed certificate can be used for for product demos and trials. Procedure to generate a self-signed certificate:
 1. Generate a private key:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl genrsa -des3 -out dtrkdemo.key 2048`<br>
 where "dtrkdemo.key" is the name of the private key.
@@ -218,33 +226,34 @@ Where "8080" represents the specific backend server port number specified during
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
-&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
-* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps depending on the browser in use.
+&nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+&nbsp; &nbsp; &nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker".<br>
+&nbsp; &nbsp; &nbsp;4. **Login.** Enter the login credentials. The default user name is "SAdmin". The password is the _super admin and database password_ entered during server installation. _If using an SSL certificate, proceed to step 5._
+* **If using self-signed certificate for the first time,** permission needs to be granted. Follow the steps below to login depending on the browser:
   * **For Chrome, Safari, or Internet Explorer:**<br>
-  &nbsp; &nbsp; &nbsp;A. Launch browser.<br>
-  &nbsp; &nbsp; &nbsp;B. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
-  &nbsp; &nbsp; &nbsp;C. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
-  &nbsp; &nbsp; &nbsp;D. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
-  &nbsp; &nbsp; &nbsp;E. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
+  &nbsp; &nbsp; &nbsp;A. In the browser, enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password. This is the _Server Auth Key_ and _Server Auth Password_ set during server install.<br>
+  &nbsp; &nbsp; &nbsp;B. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Proceed...".<br>
+  &nbsp; &nbsp; &nbsp;C. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;D. A message appears indicating the connection is not private due to the lack of a secured certificate. Click "Advanced", then click "Proceed..."
   * **For Edge:**<br>
-  &nbsp; &nbsp; &nbsp;A. Enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password.  This is the Server Auth Key and Server Auth Password set during server install.<br>
+  &nbsp; &nbsp; &nbsp;A. In the browser, enter the backend URL: `https://hostname.company.com:8080`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. Enter the username and password. This is the _Server Auth Key_ and _Server Auth Password_ set during server install.
   &nbsp; &nbsp; &nbsp;B. Click “Continue to this website”. <br>
   &nbsp; &nbsp; &nbsp;C. Click on “Certificate error” in the address bar, then click “View certificates."<br>
   &nbsp; &nbsp; &nbsp;D. Click “Install Certificate”. <br>
   &nbsp; &nbsp; &nbsp;E. Click “Place all certificates in the following store”, then click “Browse”. Do not rely on the pre-selected option to automatically select the certificate store since this will not work.<br>
   &nbsp; &nbsp; &nbsp;F. In the dialog box, click “Trusted Root Certification Authorities”, then click “OK”. <br>
-  &nbsp; &nbsp; &nbsp;F. Click "Finish". <br>
-  &nbsp; &nbsp; &nbsp;G. A security warning is displayed. Click “Yes” to trust the certificate. <br>
-  &nbsp; &nbsp; &nbsp;H. Reload the page. <br>
-  &nbsp; &nbsp; &nbsp;I. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
-  &nbsp; &nbsp; &nbsp;J. Click "Advanced" and then click "Proceed..." <br><br>
-&nbsp;3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.<br>
-&nbsp;4. **SSL certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
-&nbsp; &nbsp; &nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-&nbsp; &nbsp; &nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
-&nbsp; &nbsp; &nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
-&nbsp; &nbsp; &nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
-&nbsp; &nbsp; &nbsp;E. Click the Scan button. A successful result returns green checks for each step:
+  &nbsp; &nbsp; &nbsp;G. Click "Finish". <br>
+  &nbsp; &nbsp; &nbsp;H. A security warning is displayed. Click “Yes” to trust the certificate. <br>
+  &nbsp; &nbsp; &nbsp;I. Reload the page. <br>
+  &nbsp; &nbsp; &nbsp;J. Enter the WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
+  &nbsp; &nbsp; &nbsp;K. Click "Advanced" and then click "Proceed..." 
+  
+&nbsp; &nbsp; &nbsp;5. **SSL certificate validation.** For SSL certificates, an SSL Tool (such as [ssltools.com](http://ssltools.com/)) can be used to aid in diagnostics and validate the SSL certificate chain.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 9 below._ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 9. SSLTools.com results_
 
@@ -321,7 +330,7 @@ Steps for client installation on the device, which may be performed either manua
 4. Open Device Tracker client app.
 5. Accept the permissions when prompted.
 6. Once the app is opened on Android O or higher devices, a Device Tracker notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background. 
-<img style="height:350px" src="Notifications_dtrk.jpg"/>
+<img style="height:400px" src="Notifications_dtrk.jpg"/>
 _Figure 11. Device Tracker client notification_ <br>
 
 ###Client Configuration
@@ -331,20 +340,19 @@ Configure the client settings either manually or remotely. For information on us
 ####Manual Configuration
 Steps for manual client configuration after installation:
 1. Open Device Tracker client.
-2. Grant all permissions requested by the app.
-3. **If using a self-signed certificate,** open the StageNow application and scan the barcode from file "EnabledSelfSigned_DTRK.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the Device Tracker client installation package.
+2. Grant all permissions requested by the app. _If using an SSL certificate,_ proceed to step 4.
+3. **If using a self-signed certificate,** open the StageNow application. Scan the barcode from file "EnabledSelfSigned_DTRK.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the Device Tracker client installation package.
 4. Tap the hamburger menu at the top right, then tap "Settings".  
 5. Enter in the following information:
    * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. The URL must not contain "https://" nor "http://".
-   * **Server Auth Key** - UserName designated during server install
-   * **Server Auth Password** - Password designated during server install
+   * **Server Auth Key** - user name designated during server install
+   * **Server Auth Password** - password designated during server install
 <br>
-6. Tap the device back button to save the changes and return to the main screen.
-Device Tracker client registers with the server and loads "Devices to be found".
+6. Tap the device back button to save the changes and return to the main screen. Device Tracker client registers with the server and loads "Devices to be found". _If using an SSL certificate,_ manual client configuration is complete.
 7. **If using a self-signed certificate,** proceed as follows:<br>
 &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
-&nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
-<img style="height:350px" src="untrusted_cert.jpg"/>
+&nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed in the app:
+<img style="height:400px" src="untrusted_cert.jpg"/>
 _Figure 12. Untrusted certificate message in client app_<br>
 &nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_DTRK.pdf" (part of the Device Tracker client installation package).
 

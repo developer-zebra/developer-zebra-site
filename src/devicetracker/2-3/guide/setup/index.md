@@ -409,10 +409,11 @@ _Figure 17. Profile wizard_ <br>
 ![img](SN_AddIntentSetting.jpg)
 _Figure 18. Add Setting_ <br>
 6. Enter the following information:
-   * Action: select "StartService"
-   * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
-   * Package Name: enter "com.zebra.devicetracker"
-Click Continue.
+   * **Action:** StartActivity
+   * **Android Action Name:** android.intent.action.MAIN
+   * **Package Name:** com.zebra.devicetracker
+   * **Class Name:** com.zebra.devicetracker.activity.MainActivity<br>
+Due to changes with Android O and above, use **StartActivity** action to start the Device Tracker service. Click Continue.
 ![img](SN_IntentConfig.jpg)
 _Figure 19. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
@@ -448,9 +449,6 @@ B. Select the MX version for the device and enter the following:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth UserName:** enter the "Server Auth Key" designated during server install<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
-<!--
-Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
--->
 ![img](SN_CreateSettings.JPG)
 _Figure 23. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.

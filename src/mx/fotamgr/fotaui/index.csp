@@ -8,7 +8,7 @@ apilevel: "23"
 devicetype: A,B
 parm:
   pivotal: No
-  name: LifeGuardOTAClientState
+  name: LifeGuardOTAUi
   type: list
   list:
     - code: 0

@@ -8,6 +8,7 @@ osx: "4.1"
 osx-end: "5.4"
 osx-exclude: "6.0"
 devicetype: A
+info: This feature is not supported on devices running Android 5.x Lollipop or higher.
 parm:
   presentif:  The "USB Module Usage" value is NOT "Disable" AND the "Access device storage from PC via USB" value is NEITHER "Enable" nor "Disable"  
   pivotal: No
@@ -40,4 +41,4 @@ parm:
       description: Disables access to device storage from a PC.
 ---
 
-Controls whether the use of USB Mass Storage (UMS) is allowed. When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, delete files, or even format an entire storage volume. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
+Controls access to the device as USB Mass Storage (UMS). When this mode is allowed, a PC can be connected to the device through a USB port that supports Peripheral mode or using an "on-the-go" (OTG) USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, delete files, or even format an entire storage volume. **Use of this mode could represent a security risk** since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.

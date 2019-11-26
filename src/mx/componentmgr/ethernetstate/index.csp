@@ -16,19 +16,19 @@ parm:
       osx: "4.4"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to whether the Ethernet Option is turned On or Off.
+      description: This value (or the absence of this parm from the XML) will cause no changes to Ethernet settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Turn on
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the Ethernet Option to be turned On, thus allowing the use of an Ethernet connection on the device.
+      description: Tturns on the Ethernet Option to be turned On, allowing the use of an Ethernet connection on the device.
     - code: 2
       devicetype: A
       name: Turn off
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the Ethernet Option to be turned Off, thus disallowing the use of an Ethernet connection on the device.
+      description: turns off Ethernet Option, disallowing the use of an Ethernet connection on the device.
 ---
 
-This parm allows you to change the state of the Ethernet Option to On or Off.
+Used to change the state of the Ethernet option.

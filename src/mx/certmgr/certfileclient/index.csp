@@ -16,6 +16,7 @@ used to specify the path and name of the file in the device file system that con
 
 If the Certificate Action is "Install certificate" AND the Certificate Method is "Reference certificate file" AND the Certificate Type is "CA Certificate (.PEM file)"
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String with a minimum size of 1 character and a maximum size of 255 characters

@@ -17,6 +17,7 @@ Used to specify the Mobile Country Code (MCC). Custom parameters are "pass-throu
 
 **Zebra recommends testing carrier-specified APN settings on a working device and SIM card before deployment**. 
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String from 0&ndash;255 characters

@@ -14,19 +14,17 @@ parm:
       mx: "4.4"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+      description: This value (or the absence of this parm from the XML) causes no change to DHCP Option settings; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the Broadcast Address to be requested by the DHCP Client in the DHCP Request.
+      description: Turns on the DHCP Option, causing the Broadcast Address to be requested by the DHCP Client in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent the Broadcast Address from being requested by the DHCP Client in the DHCP Request.
+      description: Turns off the DHCP Option, preventing the Broadcast Address from being requested by the DHCP Client in the DHCP Request.
 ---
+Controls whether a request for the Broadcast Address is sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server returns the Broadcast Address for the network to the device in the DHCP Acknowledgment. The Broadcast Address for a network is the IP Address for which all devices on that network are enabled to receive messages. A message sent to the Broadcast Address for a network can therefore be received by all devices on that network, rather than by a specific device.
 
-The Broadcast Address for a network is the IP Address for which all devices on that network are enabled to receive messages. A message sent to the Broadcast Address for a network can therefore be received by all devices on that network, rather than a specific device.
-
-This parm allows you to control whether a request for the Broadcast Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Broadcast Address for the network to the device in the DHCP Acknowledgment.

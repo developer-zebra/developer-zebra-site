@@ -17,6 +17,7 @@ Used to specify a User Name to authenticate on the APN being added. The value is
 
 >**Note:** If an empty (length of 0) value is specified, no User Name is used. This should generally be done only if the GPRS carrier indicates that authentication with a user name is not required for a given APN.
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String from 0&ndash;255 characters

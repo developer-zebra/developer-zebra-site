@@ -18,6 +18,7 @@ Used to specify provider-specific data based on the selected mobile virtual netw
 
 **Zebra recommends testing carrier-specified MVNO settings on a working device and SIM card before deployment into a production environment**. 
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String from 0&ndash;255 characters

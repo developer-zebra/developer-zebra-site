@@ -15,22 +15,22 @@ parm:
       mx: "4.4"
       devicetype: A
       name: Use existing state
-      description: This value (or the absence of this parm from the XML) will cause the Function Key State Modifier to be left unchanged, thus making it the same as when the Key was pressed.
+      description: This value (or the absence of this parm from the XML) causes the Function Key State Modifier to be left unchanged, thus making it the same as when the Key was pressed.
     - code: 1
       devicetype: A
       name: Force On
       mx: "4.4"
-      description: This value will set the Control Key State Modifier, thus forcing the Key Code sent to be interpreted as Function.
+      description: Sets the Control Key State Modifier, forcing the Key Code sent to be interpreted as Function.
     - code: 2
       devicetype: A
       name: Force Off
       mx: "4.4"
-      description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Function.
+      description: Clears the Shift Key State Modifier, forcing the Key Code sent to be interpreted as non-Function.
 ---
 
-These parms allow you to control the Function Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. 
+Used to control the Function Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. 
 
-**Note**: If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier will be sent to the Current Key State but it makes no change to the Key Mapping Table.
+**Note**: If an attempt is made to set a Key State Modifier that is not supported on a given device, **no error is returned in the Result XML** because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier will be sent to the Current Key State but it makes no change to the Key Mapping Table.
 
 **Parm names**:
 

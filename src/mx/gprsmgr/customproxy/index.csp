@@ -17,6 +17,7 @@ Used to specify a custom proxy. Custom parameters are "pass-through" fields; the
 
 **Zebra recommends testing carrier-specified APN settings on a working device and SIM card before deployment**. 
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String from 0&ndash;255 characters

@@ -18,6 +18,7 @@ Used to specify the name by which the Access Point Name (APN) will be known in t
 
 >**Note:** This parameter does not specify the Access Point Name on the network, only the name by which the APN will be known and referenced by the device. The network name of the APN is specified in the Access Point parameter.
 
-Parm value input rules: 
+**Input value rules**:
+ 
 
 * String from 0&ndash;255 characters

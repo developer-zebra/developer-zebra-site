@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter Package Name(s) to prevent from submitting XML. Entering an empty (length of zero) value (or the absence of this parm from the XML) will cause no package names to be disallowed from submitting XML.
+Used to enter Package Name(s) to prevent from submitting XML. Entering an empty (length of zero) value (or the absence of this parm from the XML) allows all packages to submit XML.
 
 **Parm value input rules**: 
 

@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the password of the email account from which to send bug reports. Must be the password corresponding to the address specified in the EmailSendersID parameter. 
+Used to enter the password of the email account from which to send bug reports. Must be the password corresponding to the address specified in the EmailSendersID parameter. 
 
 **Parm value input rules**: 
 

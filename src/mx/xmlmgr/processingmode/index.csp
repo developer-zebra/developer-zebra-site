@@ -32,4 +32,4 @@ parm:
       description: Indicates the location of a "Catch" point as described above.
 ---
 
-Used to specify the Processing Mode used by the MXMS to handle errors encountered while processing a Request XML document. See [Overview section](#overview) for more information. 
+Used to enter the Processing Mode used by the MXMS to handle errors encountered while processing a Request XML document. See [Overview section](#overview) for more information. 

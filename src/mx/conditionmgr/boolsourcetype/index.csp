@@ -17,4 +17,4 @@ parm:
       name: Pre-defined System Boolean Value
       description: A true/false value defined by the system.  
 ---
-Used to specify the Boolean source expected to deliver a true/false value. 
+Used to enter the Boolean source expected to deliver a true/false value. 

@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to manually specify the 39-character code provided by the Zebra licensing system for reclaiming a license from the device. Reclaimed licenses are returned to the organization for assignment elsewhere.   
+Used to manually enter the 39-character code provided by the Zebra licensing system for reclaiming a license from the device. Reclaimed licenses are returned to the organization for assignment elsewhere.   
 
 **Parm value input rules**: 
 

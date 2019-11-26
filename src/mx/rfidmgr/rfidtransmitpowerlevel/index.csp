@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the RF power level (in tenths of a dBm) for transmitting RFID tag contents. For example, enter "295" to specify 29.5 dBm. **Note: Changes to this setting might affect battery life**.
+Used to enter the RF power level (in tenths of a dBm) for transmitting RFID tag contents. For example, enter "295" to enter 29.5 dBm. **Note: Changes to this setting might affect battery life**.
 
 **Input value rules**: 
 

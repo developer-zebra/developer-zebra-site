@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the User Class value that will be sent by the DHCP Client to the DHCP Server in the DHCP Request.
+Used to enter the User Class value that will be sent by the DHCP Client to the DHCP Server in the DHCP Request.
 
 **Parm value input rules**: 
 

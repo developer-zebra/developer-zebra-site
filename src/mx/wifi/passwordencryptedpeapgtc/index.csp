@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify an unencrypted password for PEAP GTC Authentication or left blank if no password is required. This parameter supports Static and Dynamic PEAP-GTC Profiles. Static profiles require a pre-defined password specified when configuring the network. Dynamic profiles do not require a pre-defined password to be specified when configured; the password field can be left blank, thereby allowing the user to log in with no password when prompted. 
+Used to enter an unencrypted password for PEAP GTC Authentication or left blank if no password is required. This parameter supports Static and Dynamic PEAP-GTC Profiles. Static profiles require a pre-defined password specified when configuring the network. Dynamic profiles do not require a pre-defined password to be specified when configured; the password field can be left blank, thereby allowing the user to log in with no password when prompted. 
 
 **Parm value input rules**: 
 

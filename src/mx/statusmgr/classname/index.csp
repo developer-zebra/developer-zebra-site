@@ -11,7 +11,7 @@ parm:
   name: ClassName
 ---
 
-Used to specify the class name of the Android package about which to send the status notification.
+Used to enter the class name of the Android package about which to send the status notification.
 
 **Parm value input rules**: 
 

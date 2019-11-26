@@ -28,4 +28,4 @@ parm:
       description: Uses the default gateway set by the device system. 
 ---
 
-Used for checking the reachability of the connection. If selecting "User Provided Remote Server Address" (code 1), specify the address using the Remote Server Address parameter. 
+Used for checking the reachability of the connection. If selecting "User Provided Remote Server Address" (code 1), enter the address using the Remote Server Address parameter. 

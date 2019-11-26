@@ -11,7 +11,7 @@ parm:
   name: ConditionRepeatInterval
   type: integer
 ---
-Used to specify a period of time (in seconds) to delay between tests of a Condition. 
+Used to enter a period of time (in seconds) to delay between tests of a Condition. 
 
 **Parm value input rules**:
 

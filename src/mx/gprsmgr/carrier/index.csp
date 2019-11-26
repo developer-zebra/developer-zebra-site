@@ -31,4 +31,4 @@ parm:
       description: This value indicates that T-Mobile is the GPRS carrier and that the standard public APN used by T-Mobile should be used. NOTE: If a T-Mobile APN other than the standard T-Mobile public APN is desired, choose Option 0 ("Custom") and supply the values provided by the company for that APN.
 ---
 
-Used to specify whether the APN to be defined should be a standard pre-defined APN of a major GPRS carrier or if the APN should be configured by specifying custom information.
+Used to enter whether the APN to be defined should be a standard pre-defined APN of a major GPRS carrier or if the APN should be configured by entering custom information.

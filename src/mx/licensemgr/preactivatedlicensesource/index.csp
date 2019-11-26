@@ -23,4 +23,4 @@ parm:
       description: Indicates use of a preactivated license from the Zebra production cloud.
 ---
 
-Used to specify the source of the preactivated license file on the device.
+Used to enter the source of the preactivated license file on the device.

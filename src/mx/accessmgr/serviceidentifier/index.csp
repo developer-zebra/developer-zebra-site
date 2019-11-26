@@ -12,7 +12,7 @@ parm:
 mx: "8.3"
 ---
 
-Used to specify the service on which to perform a Service Access Action. 
+Used to enter the service on which to perform a Service Access Action. 
 
 
 **Parm value input rules**: 

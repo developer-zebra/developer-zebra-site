@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify an optional ID number for the status being requested. 
+Used to enter an optional ID number for the status being requested. 
 
 **Parm value input rules**: 
 

@@ -38,4 +38,4 @@ parm:
       description: Sets the device to contact the NTP server every 24 hours.
 ---
 
-Used to specify the interval at which a device will attempt to contact the specified NTP server to acquire the Date and Time when AutoTime is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date and Time from the carrier network**.
+Used to enter the interval at which a device will attempt to contact the specified NTP server to acquire the Date and Time when AutoTime is enabled. **For devices operating on a cellular network, AutoTime typically acquires the Date and Time from the carrier network**.

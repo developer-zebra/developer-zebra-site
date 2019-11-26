@@ -13,7 +13,7 @@ mx: "4.3"
 osx: "3.4"
 ---
 
-Used to specify package signatures to be deleted. 
+Used to enter package signatures to be deleted. 
 
 **Parm value input rules**: 
 

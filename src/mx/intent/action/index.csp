@@ -37,4 +37,4 @@ parm:
       description: Sends an Intent to enroll the Device Owner (specified using Package and Class parameters) for provisioning and device management. Useful for bypassing the Android Setup Wizard and GMS welcome screens; also works with non-GMS devices. 
 ---
 
-Used to specify the Action to be invoked in other application(s) by the Intent. 
+Used to enter the Action to be invoked in other application(s) by the Intent. 

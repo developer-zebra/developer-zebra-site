@@ -13,7 +13,7 @@ mx: "4.3"
 osx: "3.4"
 ---
 
-Used to specify Signature files to be added to the "whitelist." 
+Used to enter Signature files to be added to the "whitelist." 
 
 **Parm value input rules**: 
 

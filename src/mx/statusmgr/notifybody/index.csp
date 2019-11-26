@@ -11,7 +11,7 @@ parm:
   name: NotifyBody
 ---
 
-Used to specify text to send in the status notification.
+Used to enter text to send in the status notification.
 
 **Parm value input rules**: 
 

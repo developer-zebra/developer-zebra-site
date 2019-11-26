@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the Mount Path to be used for the Encrypted File System to be Created.
+Used to enter the Mount Path to be used for the Encrypted File System to be Created.
 
 **Parm value input rules**:  
 

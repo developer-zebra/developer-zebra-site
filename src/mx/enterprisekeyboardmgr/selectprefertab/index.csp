@@ -37,4 +37,4 @@ parm:
       description: Causes the scan tab to appear whenever EKB is invoked.
 ---
 
-Used to specify the tab to appear when EKB is invoked **for text input**. 
+Used to enter the tab to appear when EKB is invoked **for text input**. 

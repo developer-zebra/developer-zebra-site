@@ -17,4 +17,4 @@ parm:
       description: Specifies Android as the operating system of the target device. 
 ---
 
-Used to specify the operating system of the target device.
+Used to enter the operating system of the target device.

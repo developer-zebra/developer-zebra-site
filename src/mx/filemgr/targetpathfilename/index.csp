@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the destination path and file name on the device to which to copy the object of the File Action. 
+Used to enter the destination path and file name on the device to which to copy the object of the File Action. 
 
 **Parm value input rules**:
 

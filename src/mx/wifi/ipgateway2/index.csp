@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the IP address of an optional second default gateway for the device, through which packets to and from outside networks are routed. This parameter is required only if the device must have access to (or from) networks through a second network adapter. 
+Used to enter the IP address of an optional second default gateway for the device, through which packets to and from outside networks are routed. This parameter is required only if the device must have access to (or from) networks through a second network adapter. 
 
 **Parm value input rules**: 
 

@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the path and file name of the certificate file (with `.cer` extension) on the device when Trusted Mode is used.
+Used to enter the path and file name of the certificate file (with `.cer` extension) on the device when Trusted Mode is used.
 
 **Parm value input rules**: 
 

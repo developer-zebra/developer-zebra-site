@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the email address of the intended recipient of bug reports. 
+Used to enter the email address of the intended recipient of bug reports. 
 
 **Parm value input rules**: 
 

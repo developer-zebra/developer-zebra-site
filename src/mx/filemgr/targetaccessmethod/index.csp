@@ -18,4 +18,4 @@ parm:
       description: Specifies that the file is in the device file system.
 ---
 
-Used to specify whether the file will be present in the device file system or embedded within an XML file.
+Used to enter whether the file will be present in the device file system or embedded within an XML file.

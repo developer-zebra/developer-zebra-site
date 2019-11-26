@@ -11,7 +11,7 @@ parm:
   name: NotifyHeader
 ---
 
-Used to specify optional text to send as the header of the status notification.
+Used to enter optional text to send as the header of the status notification.
 
 **Parm value input rules**: 
 

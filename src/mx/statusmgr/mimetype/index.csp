@@ -11,7 +11,7 @@ parm:
   name: MimeType
 ---
 
-Used to specify an optional MIME type, which signals the format of a document. 
+Used to enter an optional MIME type, which signals the format of a document. 
 
 **Parm value input rules**: 
 

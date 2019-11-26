@@ -14,8 +14,8 @@ parm:
   type: string
 ---
 
-Used to specify the two-digit Port number for accessing the Proxy server through which network communications will pass. 
+Used to enter the two-digit Port number for accessing the Proxy server through which network communications will pass. 
 
 **Parm value input rules**: 
 
-* Integer specifying the two-digit Port number of the Proxy server being used
+* Integer entering the two-digit Port number of the Proxy server being used

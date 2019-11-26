@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the primary domain name server for the device. This parameter is required only if DNS name resolution is required for the device. 
+Used to enter the primary domain name server for the device. This parameter is required only if DNS name resolution is required for the device. 
 
 **Parm value input rules**: 
 

@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify Package Name(s) to add to the "whitelist," granting them the ability to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) adds no package names to the list.
+Used to enter Package Name(s) to add to the "whitelist," granting them the ability to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) adds no package names to the list.
 
 **Parm value input rules**: 
 

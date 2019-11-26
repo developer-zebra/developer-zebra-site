@@ -27,4 +27,4 @@ parm:
       description: Causes the notification status to be displayed. 
 ---
 
-Used to specify the action to take for status requests.
+Used to enter the action to take for status requests.

@@ -12,7 +12,7 @@ parm:
 mx: "9.2"
 ---
 
-Used to specify the signature file for app certification. 
+Used to enter the signature file for app certification. 
 
 **Parm value input rules**: 
 

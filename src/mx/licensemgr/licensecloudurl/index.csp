@@ -38,4 +38,4 @@ parm:
       description: Allows a custom URL for an on-premise license server or relay server to be specified.
 ---
 
-Used to specify the source for Zebra cloud-based licensing on the device. 
+Used to enter the source for Zebra cloud-based licensing on the device. 

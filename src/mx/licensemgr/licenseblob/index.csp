@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the Software License File, the contents of which are embeded in the XML. The contents are Base64-encoded, which increases content size by about 33 percent. The Software License encoded within the Request XML is extracted and applied to the device.
+Used to enter the Software License File, the contents of which are embeded in the XML. The contents are Base64-encoded, which increases content size by about 33 percent. The Software License encoded within the Request XML is extracted and applied to the device.
 
 **Parm value input rules**: 
 

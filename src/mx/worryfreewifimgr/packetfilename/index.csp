@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Used to specify the name of the file that contains packets captured on the device.  
+Used to enter the name of the file that contains packets captured on the device.  
 
 **Parm value input rules**: 
 

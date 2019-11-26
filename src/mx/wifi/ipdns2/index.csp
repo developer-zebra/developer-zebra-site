@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify a secondary domain name server for the device. This parameter is required only if an alternate DNS is required for the device. 
+Used to enter a secondary domain name server for the device. This parameter is required only if an alternate DNS is required for the device. 
 
 **Parm value input rules**: 
 

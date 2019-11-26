@@ -21,7 +21,7 @@ If WEP is not selected and Protect Key is false:
 * Parm name: HexKeyClear
 * Description: Provide the hex key (64 hex chars) used by network
 * **Parm value input rules**: 
-	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
+	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
 	
 If WEP is not selected and Protect Key is true:
 
@@ -29,7 +29,7 @@ If WEP is not selected and Protect Key is true:
 * Parm name: HexKeyEncrypted
 * Description: Provide the hex key (64 hex chars) used by network
 * **Parm value input rules**: 
-	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
+	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
 * Currently, this parm cannot be used effectively by an MDM.
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
@@ -38,7 +38,7 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 * Parm name: HexKeyWep40Clear
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * **Parm value input rules**: 
-	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 40 bit binary key value that can be used for either WEP encryption.
+	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 40 bit binary key value that can be used for either WEP encryption.
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 
@@ -46,7 +46,7 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 * Parm name: HexKeyWep40Encrypted
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * **Parm value input rules**: 
-	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 40 bit binary key value that can be used for either WEP encryption.
+	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 40 bit binary key value that can be used for either WEP encryption.
 * Currently, this parm cannot be used effectively by an MDM.
 	
 If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
@@ -55,7 +55,7 @@ If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 * Parm name: HexKeyWep104Clear
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * **Parm value input rules**: 
-	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 104 bit binary key value that can be used for either WEP encryption.
+	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 104 bit binary key value that can be used for either WEP encryption.
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 
@@ -63,5 +63,5 @@ If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 * Parm name: HexKeyWep104Encrypted
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * **Parm value input rules**: 
-	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 104 bit binary key value that can be used for either WEP encryption.
+	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively enter a 104 bit binary key value that can be used for either WEP encryption.
 * Currently, this parm cannot be used effectively by an MDM.

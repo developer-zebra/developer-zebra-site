@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify as many as four (4) OmniTrail Channels from the 2.4GHz and/or 5GHz bands to which to apply OmniTrail device-location services. 
+Used to enter as many as four (4) OmniTrail Channels from the 2.4GHz and/or 5GHz bands to which to apply OmniTrail device-location services. 
 
 **Parm value input rules**: 
 

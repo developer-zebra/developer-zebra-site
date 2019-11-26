@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter the Intent Flags to include in the Intent sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. Intent Flags specify information about how an Intent should be processed by the Android system and/or by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) causes no value for this attribute to be set in the Intent.
+Used to enter the Intent Flags to include in the Intent sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. Intent Flags enter information about how an Intent should be processed by the Android system and/or by the application to which the Intent is sent. Specifying an empty (length of zero) value (or the absence of this parm from the XML) causes no value for this attribute to be set in the Intent.
 
 **Parm names**:
 

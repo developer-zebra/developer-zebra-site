@@ -50,4 +50,4 @@ parm:
       description: Updates firmware, resets RFID radio and returns it to factory-default settings. Useful when applying a major firmware update that adds numerous configuration settings; ensures that RFID module is initially configured in a known-good state. 
 ---
 
-Used to specify an action to perform on the connected RFID peripheral. 
+Used to enter an action to perform on the connected RFID peripheral. 

@@ -28,4 +28,4 @@ parm:
       description: Indicates a source file with a .ZIP extension.
 ---
 
-Used to specify the type of file to be embedded. 
+Used to enter the type of file to be embedded. 

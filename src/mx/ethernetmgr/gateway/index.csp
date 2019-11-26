@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify the IP address of the default gateway for the Ethernet Cradle, through which packets to and from outside networks are routed. This parameter is required only if the device must have access to (or from) networks beyond its local subnet. 
+Used to enter the IP address of the default gateway for the Ethernet Cradle, through which packets to and from outside networks are routed. This parameter is required only if the device must have access to (or from) networks beyond its local subnet. 
 
 **Parm value input rules**: 
 

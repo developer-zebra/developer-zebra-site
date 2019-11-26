@@ -18,6 +18,6 @@ parm:
       description: Verifies that the SimulScan OCR/OMR Licensed Feature Name contained in the Software License File matches the Standard Licensed Feature Name of the SimulScan software component.
 ---
 
-Used to specify the Standard Licensed Feature Name against which to verify the Software License File.
+Used to enter the Standard Licensed Feature Name against which to verify the Software License File.
 
-**Note:** Currently, there exists a single defined Standard Licensed Feature Name, that of the SimulScan OCR/OMR feature. Selecting it avoids the need to enter the exact (custom) value of the Licensed Feature Name. To verify other features, use the "Verify Custom Name" and specify the Licensed Feature Name to match the Software License File being used.
+**Note:** Currently, there exists a single defined Standard Licensed Feature Name, that of the SimulScan OCR/OMR feature. Selecting it avoids the need to enter the exact (custom) value of the Licensed Feature Name. To verify other features, use the "Verify Custom Name" and enter the Licensed Feature Name to match the Software License File being used.

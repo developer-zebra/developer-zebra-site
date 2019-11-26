@@ -28,4 +28,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
 ---
 
-Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter is designed for use with Zebra TC8000, TC8300 and other TC8000-series devices**.
+Used to enter the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter is designed for use with Zebra TC8000, TC8300 and other TC8000-series devices**.

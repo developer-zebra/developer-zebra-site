@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify the IP address of the Ethernet Cradle. Must be an address that is unique to the network on which the cradle will operate.
+Used to enter the IP address of the Ethernet Cradle. Must be an address that is unique to the network on which the cradle will operate.
 
 **Parm value input rules**: 
 

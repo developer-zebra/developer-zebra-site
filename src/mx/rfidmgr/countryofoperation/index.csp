@@ -435,5 +435,5 @@ parm:
       mx: "8.1"
 ---
 
-Used to specify the country in which the RFID module will operate to ensure compliance with local regulatory requirements. 
+Used to enter the country in which the RFID module will operate to ensure compliance with local regulatory requirements. 
 

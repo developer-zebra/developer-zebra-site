@@ -12,7 +12,7 @@ parm:
 mx: "9.2"
 ---
 
-Used to specify the custom CSP name for a CSP Access Action when the CSP name is not shown on the CSP Names list. 
+Used to enter the custom CSP name for a CSP Access Action when the CSP name is not shown on the CSP Names list. 
 
 **Parm value input rules**: 
 

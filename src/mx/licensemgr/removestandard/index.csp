@@ -17,4 +17,4 @@ parm:
       description: Causes the Software License for the SimulScan Software Component to be removed from the device.
 ---
 
-Used to specify the desired Standard Licensed Feature Name that identifies the Software License to be removed from the device.
+Used to enter the desired Standard Licensed Feature Name that identifies the Software License to be removed from the device.

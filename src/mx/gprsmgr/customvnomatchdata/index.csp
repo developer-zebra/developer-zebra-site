@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify provider-specific data based on the selected mobile virtual network operator.
+Used to enter provider-specific data based on the selected mobile virtual network operator.
 
 **Zebra recommends testing carrier-specified MVNO settings on a working device and SIM card before deployment into a production environment**. 
 

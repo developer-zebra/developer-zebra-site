@@ -25,7 +25,7 @@ A CSP is a plug-in to the MXMF which can ship as part of the MXMF, be included i
 
 ### Document Type Definition (DTD)
 
-A DTD is a standards-based non-XML document that defines the syntax of a class of related XML documents. It is used to specify the elements that are allowed to appear within all XML documents that are used for a specific purpose. 
+A DTD is a standards-based non-XML document that defines the syntax of a class of related XML documents. It is used to enter the elements that are allowed to appear within all XML documents that are used for a specific purpose. 
 
 The following DTDs are used by the MXMF:
 

@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the number of days after which a change to the cloud storage setting reverts to its default setting (disabled). Provides a means of temporarily configuring settings for troubleshooting and other purposes. 
+Used to enter the number of days after which a change to the cloud storage setting reverts to its default setting (disabled). Provides a means of temporarily configuring settings for troubleshooting and other purposes. 
 
 **Parm value input rules**: 
 

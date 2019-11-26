@@ -13,7 +13,7 @@ mx: "4.1"
 osx: "1.0"
 ---
 
-Used to specify Package Names to be deleted from the "whitelist."
+Used to enter Package Names to be deleted from the "whitelist."
 
 **Parm value input rules**: 
 

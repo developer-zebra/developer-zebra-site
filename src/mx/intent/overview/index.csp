@@ -16,7 +16,7 @@ In Android, an Intent is an abstract description of an operation to be performed
 * **BroadcastIntent** notifies one or more listener applications about the occurrence of some event, such as an external power supply being connected.
 * **StartService** starts a Service, which can continue to run in the background even after the component that started it is destroyed.
 
-An Intent can be defined as a data structure that specifies an operation to be performed, and the data required to perform that operation. An Intent may consist of an action to specify the operation to be performed, data to be operated upon, and extra data items of various types to qualify the operation to be performed. Intents are defined by indicating how the Intent should be sent, specifying an Android action name, URI and MIME type of the primary data, and by attaching extra data items.
+An Intent can be defined as a data structure that specifies an operation to be performed, and the data required to perform that operation. An Intent may consist of an action to enter the operation to be performed, data to be operated upon, and extra data items of various types to qualify the operation to be performed. Intents are defined by indicating how the Intent should be sent, entering an Android action name, URI and MIME type of the primary data, and by attaching extra data items.
 
 >**Note:** The Intent feature is not designed to create and send highly complex Intents, especially those that require numerous extra data items or those with complex data types. If complex Intents are required, Zebra recommends creating and packaging them as a Java app, and launching that application using a simpler Intent.
 
@@ -26,13 +26,13 @@ An Intent can be defined as a data structure that specifies an operation to be p
 
 An Explicit Intent is directed to a specific application. It requests that application--and only that application--to perform the requested operation. An Explicit Intent can be sent using any of the available methods, but most commonly use the `startActivity` or `startService` methods to direct it to an Activity or Service within a specific application.
 
-If an Intent specifies a Package Name and Class Name, it is considered an Explicit Intent because it will be sent only to the specific application identified by the Package Name and Class Name. An Explicit Intent will fail if an application with the specified Package Name and Class Name is not installed. An Explicit Intent can, but is not required to, specify additional information to tell the receiving application how to perform the requested operation.
+If an Intent specifies a Package Name and Class Name, it is considered an Explicit Intent because it will be sent only to the specific application identified by the Package Name and Class Name. An Explicit Intent will fail if an application with the specified Package Name and Class Name is not installed. An Explicit Intent can, but is not required to, enter additional information to tell the receiving application how to perform the requested operation.
 
 #### Implicit Intents
 
-An Implicit Intent is a generic request to perform an operation that does not specify which application or applications should perform that operation. An Implicit Intent may be sent using any of the available methods, but is most commonly sent using broadcastIntent to request an unspecified number of registered receivers to perform an operation.
+An Implicit Intent is a generic request to perform an operation that does not enter which application or applications should perform that operation. An Implicit Intent may be sent using any of the available methods, but is most commonly sent using broadcastIntent to request an unspecified number of registered receivers to perform an operation.
 
-If an Intent does not specify a Package Name and Class Name, it is considered an Implicit Intent because it does not specify a specific application to which it will be sent. An Implicit Intent may fail if there are no suitable registered receiver(s). An Implicit Intent must specify at least some information to tell the receiving application(s) about the operation to perform and how to perform it.
+If an Intent does not enter a Package Name and Class Name, it is considered an Implicit Intent because it does not enter a specific application to which it will be sent. An Implicit Intent may fail if there are no suitable registered receiver(s). An Implicit Intent must enter at least some information to tell the receiving application(s) about the operation to perform and how to perform it.
 
 > **Important: Implicit Intents will no longer be supported by the Intent CSP beginning with Andriod 7.0 Nougat. <u>Use explicit Intents only on devices running Android N and higher</u>.  
 

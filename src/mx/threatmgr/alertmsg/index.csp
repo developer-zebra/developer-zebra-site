@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify a message to send to the application intended to receive the alert during a countermeasure procedure. The message is included as an **intent extra named** `AlertMessage`.
+Used to enter a message to send to the application intended to receive the alert during a countermeasure procedure. The message is included as an **intent extra named** `AlertMessage`.
 
 **Parm value input rules**:
 

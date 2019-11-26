@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify a license code to refresh on a device. This parameter works in conjunction with the RefreshID Zebra License Action, which causes the device to contact the licensing server to renew a device license following a license renewal purchase. 
+Used to enter a license code to refresh on a device. This parameter works in conjunction with the RefreshID Zebra License Action, which causes the device to contact the licensing server to renew a device license following a license renewal purchase. 
 
 **Parm value input rules**: 
 

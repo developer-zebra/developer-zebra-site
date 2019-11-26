@@ -272,4 +272,4 @@ parm:
       name: XmlMgr
       description: 
 ---
-Used to specify the CSP Name for the selected CSP Access Action.
+Used to enter the CSP Name for the selected CSP Access Action.

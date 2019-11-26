@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the path and file name for updating the scanner firmware.  
+Used to enter the path and file name for updating the scanner firmware.  
 
 **Parm value input rules**
 

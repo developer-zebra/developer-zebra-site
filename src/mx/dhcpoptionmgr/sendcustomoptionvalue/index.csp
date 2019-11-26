@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the Custom Option Value. 
+Used to enter the Custom Option Value. 
 
 **Parm value input rules**: 
 

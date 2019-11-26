@@ -26,4 +26,4 @@ parm:
       description: Causes the Preset volume levels specified for all audio streams in the new Audio Profile to be made the current volume levels for those audio streams. This option ensures that a specific set of volumes will be in effect after setting a new current Audio Profile. This should be used with caution since it could have a noticeable impact on current or future audio output.
 ---
 
-Used to specify whether the current volume levels of all audio streams affected by the Audio Profile should be set to the Preset volume levels of that Audio Profile.
+Used to enter whether the current volume levels of all audio streams affected by the Audio Profile should be set to the Preset volume levels of that Audio Profile.

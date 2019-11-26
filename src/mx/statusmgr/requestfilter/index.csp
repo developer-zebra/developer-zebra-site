@@ -21,4 +21,4 @@ parm:
       description: 
 ---
 
-Used to specify an optional filter for the status being requested. 
+Used to enter an optional filter for the status being requested. 

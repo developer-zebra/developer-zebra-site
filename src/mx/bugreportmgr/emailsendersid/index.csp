@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the email address from which to send bug reports. Must be the address corresponding to the password specified in the EmailSendersPassword parameter. **This would typically be a generic account created specifically for the purpose of sending these reports** so as to simplify mass deployment, administration and maintenance tasks. 
+Used to enter the email address from which to send bug reports. Must be the address corresponding to the password specified in the EmailSendersPassword parameter. **This would typically be a generic account created specifically for the purpose of sending these reports** so as to simplify mass deployment, administration and maintenance tasks. 
 
 **Parm value input rules**: 
 

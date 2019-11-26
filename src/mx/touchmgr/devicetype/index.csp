@@ -52,4 +52,4 @@ parm:
       description: Applies settings for EC30 devices.
 ---
 
-Used to specify the group, platform or type of Zebra devices on which to apply settings for touch-screen sensitivity.
+Used to enter the group, platform or type of Zebra devices on which to apply settings for touch-screen sensitivity.

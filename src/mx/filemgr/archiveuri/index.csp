@@ -13,7 +13,7 @@ parm:
   
 ---
 
-Used to specify the URI of the source archive/ZIP file.
+Used to enter the URI of the source archive/ZIP file.
 
 **Parm value input rules**:
 

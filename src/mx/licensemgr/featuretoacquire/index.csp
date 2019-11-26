@@ -14,7 +14,7 @@ parm:
 
 >**This parameter is not intended for user interaction**. 
 
-Used to programmatically specify the name of the feature to be enabled. 
+Used to programmatically enter the name of the feature to be enabled. 
 
 **Parm value input rules**: 
 

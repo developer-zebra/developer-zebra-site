@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify the subnet mask for the Ethernet Cradle, which defines the network subdivision on which the device will operate. 
+Used to enter the subnet mask for the Ethernet Cradle, which defines the network subdivision on which the device will operate. 
 
 **Parm value input rules**: 
 

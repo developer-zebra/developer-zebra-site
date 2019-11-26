@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify the name of the device-resident file that contains a firmware update for the device. **Update file must be stored in device file system**. 
+Used to enter the name of the device-resident file that contains a firmware update for the device. **Update file must be stored in device file system**. 
 
 ![img](../../../../../images/mx/RFID_firmware_update_status.png)
 _During the 4-5 minute firmware update, status is displayed in the Notification bar._

@@ -12,7 +12,7 @@ parm:
 mx: "8.3"
 ---
 
-Used to specify the signature file on the device that contains the app certificate. 
+Used to enter the signature file on the device that contains the app certificate. 
 
 **Parm value input rules**: 
 

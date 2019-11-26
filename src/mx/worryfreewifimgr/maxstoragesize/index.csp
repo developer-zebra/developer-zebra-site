@@ -12,7 +12,7 @@ parm:
   type: integer
 ---
 
-Used to specify the maximum device storage (in MB) to use for packet capture files. When the maximum is reached, previously saved capture files are deleted, beginning with the oldest.
+Used to enter the maximum device storage (in MB) to use for packet capture files. When the maximum is reached, previously saved capture files are deleted, beginning with the oldest.
 
 **Parm value input rules**: 
 

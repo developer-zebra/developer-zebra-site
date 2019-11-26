@@ -11,7 +11,7 @@ parm:
   name: ConditionWaitMessage
   type: string
 ---
-Used to specify the message to display while a Condition is pending. 
+Used to enter the message to display while a Condition is pending. 
 
 **Parm value input rules**:
 

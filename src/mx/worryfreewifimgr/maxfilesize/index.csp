@@ -12,7 +12,7 @@ parm:
   type: integer
 ---
 
-Used to specify the maximum file size (in MB) of the packet capture file. When the maximum file size is reached, the current file is saved and a new file is opened. This repeats until the Maximum Storage Size is reached. 
+Used to enter the maximum file size (in MB) of the packet capture file. When the maximum file size is reached, the current file is saved and a new file is opened. This repeats until the Maximum Storage Size is reached. 
 
 **Parm value input rules**: 
 

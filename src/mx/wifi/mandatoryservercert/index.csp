@@ -12,7 +12,7 @@ parm:
   type: string
 
 ---
-Used to specify the name of a mandatory certificate alias to be used to verify a server.
+Used to enter the name of a mandatory certificate alias to be used to verify a server.
 
 **Parm value input rules**: 
 

@@ -49,4 +49,4 @@ parm:
       osx: "3.5"
       description: Detects that root-level access has been given to one or more device users and/or apps on the device. 
 ---
-Used to specify the name of the Threat to detect. **Note: Zebra Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 
+Used to enter the name of the Threat to detect. **Note: Zebra Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 

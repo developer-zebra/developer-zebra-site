@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the service set identifier (SSID) of the network to analyze in the analysis session. **Note: If the specified SSID is different than the one currently in use, the device disconnects from its current network and connects to the specified network**. 
+Used to enter the service set identifier (SSID) of the network to analyze in the analysis session. **Note: If the specified SSID is different than the one currently in use, the device disconnects from its current network and connects to the specified network**. 
 
 **Parm value input rules**: 
 

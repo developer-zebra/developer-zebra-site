@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the name of the Audio Profile to Create, Modify or Delete. Speciied name **must match exactly** the name specified when setting the current Audio Profile using the CurrentProfileName parameter. 
+Used to enter the name of the Audio Profile to Create, Modify or Delete. Speciied name **must match exactly** the name specified when setting the current Audio Profile using the CurrentProfileName parameter. 
 
 >**Note:** This value cannot be "FactoryPreset" since this is a reserved name for the FactoryPreset Profile built into the device.
 

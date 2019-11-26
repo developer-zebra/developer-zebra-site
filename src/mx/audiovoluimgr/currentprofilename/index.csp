@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the name of an existing Audio Profile to be set as the new current Audio Profile. If the specified name does not match the name of a currently defined Audio Profile, an error will be returned in the Result XML document.
+Used to enter the name of an existing Audio Profile to be set as the new current Audio Profile. If the specified name does not match the name of a currently defined Audio Profile, an error will be returned in the Result XML document.
 
 **Parm value input rules**: 
 

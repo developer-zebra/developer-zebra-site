@@ -27,4 +27,4 @@ parm:
       description: Indicates the source file is embedded in XML.
 ---
 
-Used to specify the location of the source file to be copied or transferred.
+Used to enter the location of the source file to be copied or transferred.

@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the full path and name of the file containing words or multi-word terms to delete from the Personal Dictionary. 
+Used to enter the full path and name of the file containing words or multi-word terms to delete from the Personal Dictionary. 
 
 **Parm value input rules**:
 

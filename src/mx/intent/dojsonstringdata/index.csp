@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify JSON data as a string necessary to configure Device Owner enrollment. 
+Used to enter JSON data as a string necessary to configure Device Owner enrollment. 
 
 **Parm value input rules**: 
 

@@ -20,4 +20,4 @@ parm:
       description: This value indicates that the data for the Certificate to be Installed is contained with a file that exists in the device file system.
 ---
 
-This parm is used to specify the method to use to install the certificate.
+This parm is used to enter the method to use to install the certificate.

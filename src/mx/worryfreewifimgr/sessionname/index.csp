@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the session name for an exported analysis session.  
+Used to enter the session name for an exported analysis session.  
 
 **Parm value input rules**: 
 

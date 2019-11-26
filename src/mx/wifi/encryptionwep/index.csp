@@ -23,4 +23,4 @@ parm:
       description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.
 ---
 
-Used to specify the Wired Equialent Privacy (WEP) encryption type to enforce on the network for Wi-Fi log-ins.
+Used to enter the Wired Equialent Privacy (WEP) encryption type to enforce on the network for Wi-Fi log-ins.

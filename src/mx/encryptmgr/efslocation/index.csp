@@ -26,4 +26,4 @@ parm:
       description: This value indicates that the BSF for the EFS will be created on the Primary Storage Card of the device.
 ---
 
-Used to specify the storage location where the Backing Storage File should be stored for the Encrypted File System to be created.
+Used to enter the storage location where the Backing Storage File should be stored for the Encrypted File System to be created.

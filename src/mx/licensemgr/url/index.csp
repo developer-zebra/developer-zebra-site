@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the URL (and optional port number) of an on-premise server containing Zebra License Activation ID(s) or a relay server pointing to an external licensing server. This parameter is required only for devices that do not have access to networks outside the walls of an organization in which they are to be administered. 
+Used to enter the URL (and optional port number) of an on-premise server containing Zebra License Activation ID(s) or a relay server pointing to an external licensing server. This parameter is required only for devices that do not have access to networks outside the walls of an organization in which they are to be administered. 
 
 **Parm value input rules**: 
 

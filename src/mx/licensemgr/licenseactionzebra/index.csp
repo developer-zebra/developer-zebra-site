@@ -48,7 +48,7 @@ parm:
       description: Removes the specified license source from the device.  
 ---
 
-Used to select the Action to perform on an Activation ID (AID) on the device. **For Zebra-branded devices only**. For Symbol-branded devices, use the License Action parameter. To use Option 6, specify the 39-character Activation ID using the Activation ID Refresh parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 
+Used to select the Action to perform on an Activation ID (AID) on the device. **For Zebra-branded devices only**. For Symbol-branded devices, use the License Action parameter. To use Option 6, enter the 39-character Activation ID using the Activation ID Refresh parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 
 
 `IMPORTANT PREACTIVATED LICENSE RESTRICTIONS:`
 * **Preactivated Licenses are <u>valid only on the day they are generated</u>**. 

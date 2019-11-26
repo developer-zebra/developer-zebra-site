@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify a static IP address for the device. Must be an address that is unique to the network on which the device will operate.  
+Used to enter a static IP address for the device. Must be an address that is unique to the network on which the device will operate.  
 
 **Parm value input rules**: 
 

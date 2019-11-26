@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
+Used to enter the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
 
 **Note: HTTP/HTTPS requires MX 7.0 or higher; FTPS requires MX 7.1 or higher**. 
 

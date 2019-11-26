@@ -50,4 +50,4 @@ parm:
       description: Enables the Integrated Circuit Card Identifier to be specified. 
 ---
 
-Used to specify the type of mobile virtual network operator (MVNO) used by an APN. An MVNO is a wireless network service provider that does not own the infrastructure on which its services are provided. 
+Used to enter the type of mobile virtual network operator (MVNO) used by an APN. An MVNO is a wireless network service provider that does not own the infrastructure on which its services are provided. 

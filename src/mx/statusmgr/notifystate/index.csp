@@ -28,4 +28,4 @@ parm:
       description: Sends a notification when complete. 
 ---
 
-Used to specify the action to take for status requests.
+Used to enter the action to take for status requests.

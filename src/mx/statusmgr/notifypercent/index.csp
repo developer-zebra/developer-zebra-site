@@ -11,7 +11,7 @@ parm:
   name: NotifyPercent
 ---
 
-Used to specify an optional value to send in the status notification that indicates the "percentage complete" of the action.
+Used to enter an optional value to send in the status notification that indicates the "percentage complete" of the action.
 
 **Parm value input rules**: 
 

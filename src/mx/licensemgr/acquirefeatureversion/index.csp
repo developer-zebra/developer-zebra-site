@@ -14,7 +14,7 @@ parm:
 
 >**This parameter is not intended for user interaction**. 
 
-Used to programmatically specify the version number of the feature to be acquired using the Feature To Acquire parameter. 
+Used to programmatically enter the version number of the feature to be acquired using the Feature To Acquire parameter. 
 
 **Parm value input rules**: 
 

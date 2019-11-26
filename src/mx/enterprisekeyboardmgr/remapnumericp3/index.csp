@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Used to specify a character, UNICODE value or EMOJI selection panel for substitution with the default key on the Numeric Keypad Row 3, Column 1. **If this field is left blank, no change is made and any previously selected value is retained**.
+Used to enter a character, UNICODE value or EMOJI selection panel for substitution with the default key on the Numeric Keypad Row 3, Column 1. **If this field is left blank, no change is made and any previously selected value is retained**.
 
 **Notes**: 
 

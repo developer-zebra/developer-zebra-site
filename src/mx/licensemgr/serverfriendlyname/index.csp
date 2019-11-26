@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify a "friendly" name for the local licensing server as an aid to easy identification. 
+Used to enter a "friendly" name for the local licensing server as an aid to easy identification. 
 
 **Parm value input rules**: 
 

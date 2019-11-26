@@ -17,10 +17,10 @@ parm:
       description: A null value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
       devicetype: A
-      name: Specify duration
+      name: Enter duration
       mx: "6.0"
       description: Enables specification of the length of time (in ms) that a key must be held before being considered a long press.
 
 ---
 
-Controls whether to enter the length of time (in ms) a key must be held down before being considered a long-press (default = 300ms), or to leave the setting unchanged. When "Specify duration" is selected, the long-press delay is set using the "KeyLongPressDelay" parameter. 
+Controls whether to enter the length of time (in ms) a key must be held down before being considered a long-press (default = 300ms), or to leave the setting unchanged. When "Enter duration" is selected, the long-press delay is set using the "KeyLongPressDelay" parameter. 

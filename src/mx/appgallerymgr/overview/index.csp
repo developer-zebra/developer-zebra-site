@@ -15,7 +15,7 @@ AppGalleryMgr enables administrators to remotely configure the AppGallery client
 * Enable/disable the AppGallery client app on a device
 * Enable/disable client-app notifications
 * Limit client access to apps authorized by an organization
-* Specify a user name and password
+* Enter a user name and password
 * Set client app to use default credentials
 * Persist settings following an enterprise device reset
 

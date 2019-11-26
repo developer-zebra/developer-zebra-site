@@ -83,4 +83,4 @@ parm:
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Single Byte Integer. The value provided must therefore be a string representing a valid single-byte integer value between -2^7 and 2^7-1.
 ---
 
-Used to enter the data type of data to be attached to an Intent as an Extra Data Item. Intents allow as many as five extra data items to be attached and sent using the set prompts, parameter names and data types documented below. **Specify multiple Extra Types as ExtraType, Extra1Type, Extra2Type, Extra3Type and Extra4Type**.
+Used to enter the data type of data to be attached to an Intent as an Extra Data Item. Intents allow as many as five extra data items to be attached and sent using the set prompts, parameter names and data types documented below. **Enter multiple Extra Types as ExtraType, Extra1Type, Extra2Type, Extra3Type and Extra4Type**.

@@ -20,12 +20,12 @@ parm:
       mx: "4.4"
       devicetype: A
       name: Number Keys
-      description: Specify a number to select the corresponding numerical key. For example, enter the number "2" to select the "2" key.
+      description: Enter a number to select the corresponding numerical key. For example, enter the number "2" to select the "2" key.
     - code: A-Z
       mx: "4.4"
       devicetype: A
       name: Alpha Keys
-      description: Specify a letter of the alphabet to select the corresponding key. For example, enter the letter "A" to select the "A" key.
+      description: Enter a letter of the alphabet to select the corresponding key. For example, enter the letter "A" to select the "A" key.
     - code: DOT
       mx: "4.4"
       devicetype: A

@@ -19,4 +19,4 @@ The Remote Scanner Manager (RemoteScannerMgr) is used to monitor, configure and 
  * Initiate a device-location LED/sound sequence  
  * Disconnect the scanner
  * Unpair the scanner
-* Specify the serial number of a device on which to perform an action 
+* Enter the serial number of a device on which to perform an action 

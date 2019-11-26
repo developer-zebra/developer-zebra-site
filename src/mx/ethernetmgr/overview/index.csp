@@ -15,4 +15,4 @@ Ethernet Manager is used to administer settings for devices connected to a netwo
 * Manually set IP address settings for the cradle
 * Enable/Disable use of a Proxy
 * Set the Proxy Port and Proxy Host Name
-* Specify Host Name(s) and/or IP address(es) that bypass the Proxy
+* Enter Host Name(s) and/or IP address(es) that bypass the Proxy

@@ -13,13 +13,13 @@ parm:
     - code: 0
       mx: "6.0"
       devicetype: A
-      name: Specify locale
-      description: Enables a locale to be specified on which to perform Actions.
+      name: (uncheked)
+      description: Enables a locale to be selected on which to perform Actions.
     - code: 1
       mx: "6.0"      
       devicetype: A
-      name: Use current locale
-      description: Actions will be performed on the currently selected locale (default).
+      name: (checked)
+      description: Actions are performed on the currently selected locale (default).
 ---
 
-Used to determine the locale on which to perform an Action, such as adding or deleting a word or phrase from the Personal Dictionary. When checked (value=1), the currently selected locale is used. When unchecked (value=0), a locale can be specified.
+Used to determine the locale on which to perform an Action, such as adding or deleting a word or phrase from the Personal Dictionary. When checked (value=1), the currently selected locale is used. When unchecked (value=0), a locale can be selected.

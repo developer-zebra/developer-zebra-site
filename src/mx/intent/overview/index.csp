@@ -38,13 +38,13 @@ If an Intent does not enter a Package Name and Class Name, it is considered an I
 
 ### Main Functionality
 
-* Specify how the Intent will be sent:
+* Select how the Intent will be sent:
 	* StartActivity
 	* BroadcastIntent
 	* StartService
 * Enroll a Device Owner
-* Specify the Android Action name of the operation to be performed 
-* Specify the URI and MIME Type of the primary data
+* Enter the Android Action name of the operation to be performed 
+* Enter the URI and MIME Type of the primary data
 * Attach up to 5 extra data items, of the following data types:
 	* Standard Integer
 	* Character

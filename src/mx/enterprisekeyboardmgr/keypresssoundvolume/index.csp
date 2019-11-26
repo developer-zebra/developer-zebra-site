@@ -6,7 +6,7 @@ order: 9
 mx: "6.0"
 devicetype: A
 parm:
-  presentif: Keypress Sound Volume Mode is set to "Specify duration" 
+  presentif: Keypress Sound Volume Mode is set to "Enter duration" 
   pivotal: No
   name: KeypressSoundVolume
   type: string

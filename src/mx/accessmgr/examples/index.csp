@@ -18,7 +18,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Specify Applications to Allow and Disallow from Submitting XML
+### Select Applications to Allow and Disallow from Submitting XML
 
 	:::XML
 	<wap-provisioningdoc>

@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter a Class Name within the app identified by the specified Package Name, to which the intent will be sent. Specifying this parm classifies it as Explicit, and will result in a failure if no such Class exists within the specified app. The Package Name and Class Name parms should always be used together to enter a class within an app.
+Used to enter a Class Name within the app identified by the specified Package Name, to which the intent will be sent. Entering this parm classifies it as Explicit, and will result in a failure if no such Class exists within the specified app. The Package Name and Class Name parms should always be used together to enter a class within an app.
 
 **Parm value input rules**: 
 

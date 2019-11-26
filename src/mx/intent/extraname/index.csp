@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter the extra-data item name(s) to be attached for any extra data item(s) for which a data type other than "none" was specified. **Specify multiple Extra Names as ExtraName, Extra1Name, Extra2Name, Extra3Name and Extra4Name**.  
+Used to enter the extra-data item name(s) to be attached for any extra data item(s) for which a data type other than "none" was specified. **Enter multiple Extra Names as ExtraName, Extra1Name, Extra2Name, Extra3Name and Extra4Name**.  
 
 >**Note:** The Intent framework does not impose specific restrictions on names that can be specified for extra data items. However, Zebra recommends verifying exact Extra Names as expected by the Intent receiver to achieve the desired result.
 

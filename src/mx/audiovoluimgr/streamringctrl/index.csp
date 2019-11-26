@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Controls whether the ZVC allows the device user to view and modify the volume settings for the audio stream that is typically used for the typically used for the incoming call notification. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this audio stream's visibility. 
+Controls whether the ZVC allows the device user to view and modify the volume settings for the audio stream that is typically used for the typically used for the incoming call notification. Entering an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this audio stream's visibility. 
 
 **Parm value input rules**: 
 

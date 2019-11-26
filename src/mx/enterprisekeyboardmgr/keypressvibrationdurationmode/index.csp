@@ -17,7 +17,7 @@ parm:
       description: A null value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
       devicetype: A
-      name: Specify duration
+      name: Enter duration
       mx: "6.0"
       description: Enables a vibration duration (in ms) to be specified for each keypress.
     - code: 2

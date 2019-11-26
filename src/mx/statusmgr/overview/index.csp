@@ -11,10 +11,10 @@ The Status Manager (StatusMgr) offers a mechanism for setting notifications to b
 ### Main Functionality
 
 * Add, remove or replace a notification
-* Specify a header, footer and/or body for a notification
-* Specify the Android Action and/or Class about which to send a notification
-* Specify the MIME type relating to a notification
-* Specify a string to identify the source of a notification
+* Enter a header, footer and/or body for a notification
+* Enter the Android Action and/or Class about which to send a notification
+* Enter the MIME type relating to a notification
+* Enter a string to identify the source of a notification
 * Apply a filter and/or ID to narrow the display of notifications
 * Display a notification when: 
  * A process has completed

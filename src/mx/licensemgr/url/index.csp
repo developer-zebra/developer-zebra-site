@@ -7,7 +7,7 @@ mx: "7.1"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The License Source is "Specify a custom URL for Cloud Licensing Service" and License Choice is "Zebra"
+  presentif: The License Source is "Enter a custom URL for Cloud Licensing Service" and License Choice is "Zebra"
   name: URL
   type: string
 ---

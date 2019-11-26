@@ -6,7 +6,7 @@ order: 7
 mx: "6.0"
 devicetype: A
 parm:
-  presentif: Key Long-Press Delay Mode is set to "Specify duration" 
+  presentif: Key Long-Press Delay Mode is set to "Enter duration" 
   pivotal: No
   name: KeyLongPressDelay
   type: string

@@ -22,4 +22,4 @@ parm:
       description: The batch file is encoded as binary.
 ---
 
-Specify the type of file to be processed. 
+Enter the type of file to be processed. 

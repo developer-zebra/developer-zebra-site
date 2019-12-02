@@ -2,7 +2,7 @@
 title: Wipe a Device
 layout: guide.html
 product: StageNow
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 ##Overview 

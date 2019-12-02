@@ -2,7 +2,7 @@
 title: Network.WLAN.Android.FusionOptions
 layout: guide.html
 product: StageNow
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 ## About Network.WLAN.Android.FusionOptions

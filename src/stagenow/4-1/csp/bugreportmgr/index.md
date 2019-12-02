@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: bugreportmgr
 product: StageNow
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 

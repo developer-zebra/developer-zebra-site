@@ -49,7 +49,7 @@ content-items:
     text: 'Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles. In this mode, the administrator can use any settings and/or any Wizards offered in the StageNow tool, in any order.'
     url: /stagenow/4-0/Profiles/xpertmode
 product: StageNow
-productversion: '4.0'
+productversion: '4.1'
 ---
  
 

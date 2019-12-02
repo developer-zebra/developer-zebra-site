@@ -71,7 +71,7 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.0
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.1 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.1.
+> <u>**StageNow 3.1 has been validated only on devices running Android 6.x Marshmallow and newer**</u>.<br>Validation is no longer performed on devices running Android 5.x Lollipop or older.
 
 -----
 

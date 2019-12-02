@@ -6,7 +6,7 @@ productversion: '7.4'
 ---
 
 ## Overview
-On Symbol devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
+On Zebra devices, extra battery information is retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same as with consumer devices (see below). On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the following additional information is provided:
 
 * Backup Battery Voltage
 * Battery Manufacture Date
@@ -15,6 +15,10 @@ On Symbol devices like the MC40, extra battery information can be retrieved usin
 * Unique ID for Battery
 * Rated Capacity of the Battery
 * Charge Cycle count of the Battery 
+
+Also see the [Battery Intent API Reference](../../guide/reference/refbatteryintent/)
+
+-----
 
 ## Enabling the Receiver 
 
@@ -25,7 +29,7 @@ On Symbol devices like the MC40, extra battery information can be retrieved usin
 	registerReceiver(mIntent_Receiver,mIntentFilter);  
 
 ## Processing The Data
-In the below code we are getting the Symbol specific battery information provided by the [Battery Intent](/emdk-for-android/7-4/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
+The code below receives the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/7-4/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
 
 	:::java
 	public void onReceive(Context context, Intent intent) {      
@@ -44,6 +48,7 @@ In the below code we are getting the Symbol specific battery information provide
 
 ## Also See
 
+* [Battery Intent API Reference](../../guide/reference/refbatteryintent/)
 * [Data capture intent APIs](../datacapture)
 * [IrDA intent APIs](../battery)
 * [Native APIs](../../api)

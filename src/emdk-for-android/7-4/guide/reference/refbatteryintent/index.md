@@ -6,39 +6,18 @@ productversion: '7.4'
 ---
 
 ## Overview
-The purpose of this document is to describe the functionality of the Battery Intent API Interface. Its intended audience are Android developers. 
+The purpose of this document is to describe the functionality of the Battery Intent API Interface. It is intended for Android developers. 
  
 ## Requirements
 Knowledge of Android programming and familiarity with the Android intent mechanism are assumed. 
  
 * Android Versions:	
-	* 4.4 and later.
+ * 4.4 and later
 
- 
 ## Features
-On Symbol devices, extra battery information can be retrieved using the standard Android Battery Intent. Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information provided by power precision and power precision plus batteries:
 
-<table class="table table-striped">
-	<tr>
-		<th>Battery Type </th>
-		<th>Devices</th>
-	</tr>
-	<tr>
-		<td>Power Precision </td>
-		<td>MC40, MC92, TC20, TC25, TC55, TC75, TC70, MC67</td>
-	</tr>
-	<tr>
-		<td>Power Precision Plus </td>
-		<td>MC18, TC8000, WT6000, TC51, TC56, TC7X</td>
-	</tr>
-	<tr>
-		<td>Backup Battery</td>
-		<td>TC8000, MC92, MC40, MC67, WT6000</td>
-	</tr>
-</table>
+On Zebra devices, extra battery information is retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same as with consumer devices. On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the additional extra information is provided:
 
-
-6.7
 ##Battery Extras:
 <table class="table table-striped">
 	<tr>
@@ -63,7 +42,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>Part Number for Battery Prefix is ’21-” or “82-”.  Sample: 21-xxxxx-01 Rev. X</td>
+		<td>Part number for battery prefix is ’21-” or “82-” for example: 21-xxxxx-01 Rev. X</td>
 		<td>partnumber</td>
 		<td>String</td>
 		<td>Prefix-5 or 6 #s-suffix revision</td>
@@ -73,8 +52,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>Battery Serial Number 
-		This value shall match the value showing on the physical label of the battery.</td>
+		<td>Battery serial number; matches the value on the physical battery label</td>
 		<td>serialnumber</td>
 		<td>String</td>
 		<td>Alpha followed by 4 numbers </td>
@@ -94,7 +72,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>5</td>
-		<td>Rated Capacity of the Battery</td>
+		<td>Rated Capacity of the battery</td>
 		<td>ratedcapacity</td>
 		<td>Int</td>
 		<td>Units=mAh</td>
@@ -114,7 +92,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>7</td>
-		<td>Cumulative charge using Zebra charging equipment only </td>
+		<td>Cumulative charge using Zebra charging equipment only</td>
 		<td>base_cumulative_charge</td>
 		<td>Int</td>
 		<td>Units=mAh</td>
@@ -124,7 +102,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>8</td>
-		<td>No of charge cycles </td>
+		<td>Number of charge cycles</td>
 		<td>battery_usage_numb</td>
 		<td>Int</td>
 		<td> </td>
@@ -164,7 +142,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>12</td>
-		<td>Battery health indicator in percentage (0 to 100).</td>
+		<td>Battery health indicator in percentage (0 to 100)</td>
 		<td>health_percentage</td>
 		<td>Int</td>
 		<td>Units=%</td>
@@ -174,7 +152,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>13</td>
-		<td>Remaining time until the device becomes unusable under current discharge conditions. If the returned value is 65535, then time_to_empty is considered to be unknown</td> 
+		<td>Remaining time until the device becomes unusable under current discharge conditions. If the returned value is 65535, time_to_empty is unknown</td> 
 		<td>time_to_empty </td>
 		<td>Int</td>
 		<td>Units=mins</td>
@@ -184,7 +162,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>14</td>
-		<td>Time until battery is fully charged under present charging conditions. If the returned value is 65535, then time_to_empty is considered to be unknown</td>
+		<td>Time until battery is fully charged under present charging conditions. If the returned value is 65535,  time_to_empty is unknown</td>
 		<td>time_to_full</td>
 		<td>Int</td>
 		<td>Units=mins</td>

@@ -9,9 +9,9 @@ languages:
 
 ---
 
-StageNow 4.0 User Guide, Revision A; <!-- StageNow MN-003401; --> October,2019
+StageNow 4.1 User Guide, Revision A; <!-- StageNow MN-003401; --> October,2019
 
-#### Covers StageNow 4.0
+#### Covers StageNow 4.1
 
 ## Overview
 
@@ -48,8 +48,9 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v4.0
+## What's New in v4.1
 
+OLD OLD
 ### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
@@ -71,6 +72,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
+OLD OLD 
 **Introduces [Trusted Staging](../trustedstaging)**, which allows for the creation of trusted profiles and trusted devices, which can be staged only from barcodes created using the same security certificate. See the [Trusted Staging Guide](../trustedstaging) for usage details. **Applies only to devices with MX 9.2 and higher**. 
 
 **Now supports MX 9.2**: which adds the following features and enhancements: 
@@ -85,6 +87,37 @@ The following software must be installed on the staging workstation prior to usi
 -----
 
 ## Version History
+
+### Added in v4.0
+
+#### Device Support
+
+**StageNow v4.0 has been validated on devices with the following operating systems and MX versions**: 
+
+* Android 9.x Pie
+* Android 8.x Oreo
+* Android 7.x Nougat
+* MX 8.3
+* MX 8.2
+* MX 8.1
+* MX 8.0
+* MX 7.2
+* MX 7.1
+* MX 7.0
+
+#### New Features
+
+**Introduces [Trusted Staging](../trustedstaging)**, which allows for the creation of trusted profiles and trusted devices, which can be staged only from barcodes created using the same security certificate. See the [Trusted Staging Guide](../trustedstaging) for usage details. **Applies only to devices with MX 9.2 and higher**. 
+
+**Now supports MX 9.2**: which adds the following features and enhancements: 
+* **Enhanced [Power Manager](../csp/power)** now allows an admin to: 
+ * Control individual hardware wake up methods (buttons) 
+* **Enhanced [Display Manager](../csp/display)** now allows an admin to: 
+ * Set the size of fonts and app UI components 
+* **Enhanced [Access Manager](../csp/access)** now allows an admin to: 
+ * Provides greater device visibility and control while remote troubleshooting
+ * Prevents one application from stopping another without explicit permission 
+
 
 ### Added in v3.4
 

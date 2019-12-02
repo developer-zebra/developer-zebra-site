@@ -28,7 +28,7 @@ The StageNow Staging Solution includes the following components:
 
 ### Devices Supported
 
-**StageNow 4.0 supports all Zebra devices**. 
+**StageNow 4.1 supports all Zebra devices running Android 4.x KitKat or higher and MX 4.3 or later**. 
 
 For more information, see the [StageNow About page](../about).
 

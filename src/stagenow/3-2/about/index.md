@@ -52,7 +52,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ### Device Support 
 
-**StageNow v3.2 supports all Zebra devices with the following operating systems and extensions**: 
+> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
+
+**StageNow v3.2 has been validated on devices with the following operating systems and MX versions**: 
 
 * Android 8.x Oreo
 * Android 7.x Nougat
@@ -65,7 +67,7 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.0
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.2 supports only devices running Android 7.x Nougat and newer**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
+> <u>**StageNow 3.2 has been validated only on devices running Android 7.x Nougat and later**</u>.<br>Validation is no longer performed on devices running Android 6.x Marshmallow or older.
 
 -----
 

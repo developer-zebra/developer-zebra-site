@@ -17,7 +17,7 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 #### Also see: 
 
 * [Trusted Staging Guide](../trustedstaging) | Securing devices and the ability to configure them
-* [Dynamic Staging Guide](../dynamicstaging) | Injecting values from a file into configurations at staging  
+* [Dynamic Staging Guide](../dynamicstaging) | Injecting values from a file into device configurations at staging
 
 -----
 

@@ -79,7 +79,7 @@ _Dynamic Barcode Quantity_
 
 -----
 
-### Retrieve Simulscan Data using Intents
+### Simulscan-related Data
 <!--
 The SimulScan-related data added to an Intent bundle is retrieved using the following calls: 
 
@@ -89,7 +89,7 @@ The SimulScan-related data added to an Intent bundle is retrieved using the foll
 * `Bundle.getString()`
 * `Bundle.getByteArray()`  -->
 <!-- * `Intent.getSerializableExtra()` -->
-SimulScan data added to an Intent bundle is retrieved using the following intent keys:
+SimulScan-related data added to an Intent bundle is retrieved using the following intent keys:
 
 * **"com.symbol.datawedge.simulscan_template_name" -** Returns the name of the template used by SimulScan to capture the form.
 

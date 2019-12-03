@@ -9,10 +9,15 @@ productversion: '4.1'
 
 This guide describes how to use StageNow to select and process a StageNow barcode, audio file, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
 
-> **`IMPORTANT:`** Use this guide <u>only <i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
-> Also see the [Trusted Staging Guide](../trustedstaging) for information about creating Trusted Devices and Trusted Profiles. 
+> **`IMPORTANT:`** Use this guide only <u><i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
+
 
 **NOTE**: Some older target devices come with the Rapid Deployment Client instead of the StageNow client app. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
+
+#### Also see: 
+
+* [Trusted Staging Guide](../trustedstaging) | Securing devices and the ability to configure them
+* [Dynamic Staging Guide](../dynamicstaging) | Injecting values from a file into configurations at staging  
 
 -----
 

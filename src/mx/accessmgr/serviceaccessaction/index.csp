@@ -12,7 +12,7 @@ parm:
   list:
     - code: 0
       devicetype: A
-      name: Do nothing. 
+      name: Do nothing
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
       mx: "8.3"
     - code: 1

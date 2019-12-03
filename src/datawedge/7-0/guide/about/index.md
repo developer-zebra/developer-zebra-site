@@ -13,6 +13,8 @@ When programmatic control is required, [DataWedge APIs](../api) provide the abil
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
+>**Note**: The appearance of sample app screens displayed throughout this guide can vary by DataWedge version, Android version, and screen size.
+
 -----
 
 **Go to ["What's New" section](#newindatawedge70)**

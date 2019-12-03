@@ -79,19 +79,36 @@ _Dynamic Barcode Quantity_
 
 -----
 
-### SimulScan-related Data
-
+### Retrieve Simulscan Data using Intents
+<!--
 The SimulScan-related data added to an Intent bundle is retrieved using the following calls: 
 
 * `Intent.getStringtExtra()`
 * `Intent. getParcelableArrayListExtra()`
 * `Bundle.getInt()`
 * `Bundle.getString()`
-* `Bundle.getByteArray()`
+* `Bundle.getByteArray()`  -->
 <!-- * `Intent.getSerializableExtra()` -->
+SimulScan data added to an Intent bundle is retrieved using the following intent keys:
 
+* **"com.symbol.datawedge.simulscan_template_name" -** Returns the name of the template used by SimulScan to capture the form.
+
+* **"com.symbol.datawedge.simulscan_region_data" -** Returns an array of Bundles where each bundle contains data and information about a region and the form. This bundle may contain the following intent keys based on the use case:
+
+    * **"com.symbol.datawedge.simulscan_region_name" -** Returns the region name of the bundle object for reach region. Call `Bundle.getString()` to get the region name.
+    * **"com.symbol.datawedge.simulscan_region_id" -** Returns the region ID of the bundle object for each region. Region ID is an integer and is retrieved by calling `Bundle.getInt()`.
+    * **"com.symbol.datawedge.simulscan_region_string_data" -** Returns the string data of the region. String data comes with barcode, OCR and OMR data.
+    * **"com.symbol.datawedge.simulscan_region_binary_data" -** Returns the data of the region in the form of a byte array. Binary data is returned for picture regions and the form image. Both picture and form data are loaded in to a bitmap and displayed in the application.
+    * **"com.symbol.datawedge.simulscan_data_file_paths" -** Returns the file paths of the images if the simulscan_region_type is "picture". If **Images as Files** option is enabled, simulscan_data_file_paths key must be used to get the image data.
+    * **"com.symbol.datawedge.simulscan_region_type" -** Returns the region type of the bundle object for each region. Region type is a string and is retrieved by calling `Bundle.getString()`. Possible return values for the region type:
+        * **Barcode -** Region is a barcode.
+        * **OCR -** Region is an Optical Character Recognition (OCR) region (i.e name or address). 
+        * **OMR -** Region is an Optical Mark Recognition (OMR) region (i.e checkbox, radio button).
+        * **Picture -** Region is a picture; data is in JPEG format.
+        * **Form -** Form type to specify that the bundle contains a picture of the captured form. Form image is in the JPEG format.
+
+<!--
 The calls above can use the following String tags:
-
 * **String SIMULSCAN_TEMPLATE_NAME_TAG = "com.symbol.datawedge.simulscan_template_name"**; The name of the template used by SimulScan to capture the form.
 
 * **String SIMULSCAN_REGIONS_BUNDLE_TAG= "com.symbol.datawedge.simulscan_region_data"**; Return an array of Bundles where each bundle contains data and information about a region and the form.
@@ -116,7 +133,7 @@ Returns the data of the region in the form of byte array. Binary data comes only
 * **OMR -** Region is an Optical Mark Recognition (OMR) region (i.e checkbox, radio button).
 * **Picture -** Region is a picture; data is in JPEG format.
 * **Form -** Form type to specify that the bundle contains a picture of the captured form. Form image is in the JPEG format.
-
+-->
 **Important**: For some scanning applications, it might be preferable for decoded data to be sent directly to the current activity and not necessarily displayed. For such instances, **the activity must be designated as "singleTop" in its AndroidManifest.xml file**. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned copy. 
 
 For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).

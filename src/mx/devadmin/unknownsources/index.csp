@@ -6,6 +6,7 @@ order: 8
 mx: "4.3"
 apilevel: "3"
 devicetype: A,B
+info: Not supported on devices running Android 8.x Oreo or higher. 
 parm:
   pivotal: No
   name: UnknownSourcesStatus

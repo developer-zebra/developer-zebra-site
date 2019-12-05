@@ -12,6 +12,7 @@ productversion: '7.5'
 > **Important:** For instructions on initial setup, refer to "Setting Up the MC3300R" section from [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 
 ### Version History
+* **DataWedge 7.5 -** New parameters that include Link Profile, Dynamic Power, Pre filters, and Post filters.
 * **DataWedge 7.3.22 -** Feature introduced
 
 ## RFID Input

@@ -112,6 +112,8 @@ For more information about approved languages or to download a localized operati
 -----
 ## New in DataWedge 7.5
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
+* New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
+* New **[secure Remote Administration](../admin)** using CSP (Configuration Service Provider) for mass deployment.
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.
 * Deprecated "voice_enter_command" (replaced by "voice_command_enter_enabled") and "voice_tab_command" (replaced by "voice_command_tab_enabled") [voice input parameters](../input/voice).

@@ -106,7 +106,7 @@ Basic Usage Guide:
 The following information provides guidance and best practices for DataWedge application development.
 
 ###General
-* **Scanning performance optimization:** To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile. Check for status before changing status.  Notification methods -ie. Profile switch or enable/disable.  Should receive status change first before proceeding. 
+* **Scanning performance optimization:** To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile. 
 * **Profile configuration across multiple apps:**  DataWedge is a global service and any application on the device can interact with it to configure any profile.  Therefore, care should be taken if multiple applications are trying to modify the same set of profiles. 
 
 ###Data Capture 

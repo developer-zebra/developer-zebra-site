@@ -48,7 +48,7 @@ _Data Capture Plus shown in maximized mode_
 ### Button highest position 
 Sets a ceiling for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen. 
 
-### Bottom lowest position
+### Button lowest position
 Sets a floor for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.
 
 ### Drag Detect Time

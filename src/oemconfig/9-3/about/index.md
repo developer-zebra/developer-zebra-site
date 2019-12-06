@@ -40,7 +40,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ### New Features
 
-* **Supports MX 9.3**, adding the following nee features and enhancements: 
+* **Supports MX 9.3**, adding the following features and enhancements: 
  * Applications can now be configured to handle background data on a per-app basis
  * Bluetooth now allows rules to be enforced based on Bluetooth MAC address 
  * GMS Configurations can now activate limited set of GMS apps 

@@ -48,13 +48,13 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * Power Configurations can now control individual device wake-up sources such as buttons or keycodes
  * Audio Configurations now allow selection of whether the device plays a sound when a battery charger is connected
 
-See the [Managed Configurations page](../mc) for full descriptions. 
-
 <!-- 12/6/19- leaving out until it's clear what it means:
 OemConfig Schema should not specify default values for non-hidden fields
  -->
 
 `IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.3 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+
+For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section. 
 
 -----
 
@@ -75,8 +75,6 @@ OemConfig Schema should not specify default values for non-hidden fields
 * **File Manager Configuration: Supports use of the hyphen (-) character in file names**. 
 
 `IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.2 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
-
-For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section. 
 
 -----
 

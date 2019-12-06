@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Wake-Up Method
+title: Wake-up Method
 type: parm
 order: 50
 mx: "9.1"

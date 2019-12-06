@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Wake-Up Key Identifier
+title: Wake-up Key Identifier
 type: parm
 order: 53
 mx: "9.2"

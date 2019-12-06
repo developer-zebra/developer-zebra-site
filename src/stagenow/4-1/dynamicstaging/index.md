@@ -9,6 +9,39 @@ productversion: '4.1'
 
 **StageNow 4.1 (and higher) supports Dynamic Staging**, which allows some data-entry fields in a profile to be populated with values from a file. This permits the creation of 
 
+FROM POLARION:
+
+Background:
+
+Currently, StageNow supports Barcode and NFC Staging Modalities, but all Staging Profiles are inherently Static, which means that all values must be entered at the time the Staging Profile is created and remain fixed unless/until the Staging Profile is manually edited.
+If an Administrator wishes to produce multiple variations of a Staging Profile, he must manually create a copy of the Staging Profile and edit it with the required changes and must repeat that process for each variation required.
+This is error-prone and time-consuming and creates a mass of Staging Profiles to manage.
+There is a strong request from the field to be able to perform Staging using multiple variations of a single Staging Profile in a more efficient manner.
+
+Assumptions:
+
+This may be the first increment of a larger Dynamic Staging Feature set and hence should be defined and implemented as generically possible so that it can serve as the base for future expansion.
+Customers would prefer a simple and standard way to provide Data Sets to be used when generating variations for a Staging Profile (e.g. specify a .CSV file).
+Customers may desire a way to manage and organize multiple Data Sets for use with the same or different Staging Profiles (e.g. a library of imported .CSV files).
+Customers will likely need a way to organize and manage the multiple Barcode Sheets Sets or collections of NFC tag binaries generated via Dynamic Staging (e.g. name generated files based on variant values).
+Customers may desire a way to visually differentiate Static and Dynamic Staging Profiles.
+Customers may desire a way to visually differentiate Barcode Sheets Sets or NFC Instructions Sheets when generating variations for a Staging Profile.
+Customers may desire a way to customize the Staging Operator instructions produced on the Barcode Sheets or NFC Instruction Sheets when generating variations for a Staging Profile.
+
+Expectations:
+
+The Staging Administrator can optionally choose to include a Variable anywhere the wish within any text-entry field presented within a Staging Profile.
+Each Staging Profile can have as many or as few variables as the Staging Administrator wishes to use and can name variables any way he wishes.
+A single text-entry field could contain mixtures of static data and variables in any combination.
+Any Staging Profile containing at least one variable is a Dynamic Staging Profile and all other Staging Profiles are Static.
+When the Staging Administrator or Staging Operator generates using a Dynamic Staging Profile, he will be required to supply a Data Set providing at least one or more values for every variable.
+The Staging Administrator will be able to easily manage Dynamic Staging Profiles, Data Sets, and the Barcode Sheets, NFC Binary Files, Audio Files, etc. generated from them.
+
+
+-----
+
+OLD
+
 can protect devices with MX 9.2 and higher from unauthorized staging. Trusted devices are created from a security certificate. Once a certificate is used to create a trusted device, the device can be staged only from barcodes created using the same security certificate.
 
 #### Requirements: 

@@ -3,7 +3,7 @@ title: Search
 layout: search.html
 index: /oemconfig/9-2/index.json
 product: OEMConfig
-productversion: '9.2'
+productversion: '9.3'
 menu:
   items:
     - title: About

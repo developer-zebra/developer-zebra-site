@@ -33,6 +33,8 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ## What's New in v9.3
 
+Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the schema for OEMConfig 9.3 (and higher) includes default values ONLY for hidden restriction types; the Zebra schema no longer includes default values for non-hidden restriction types. 
+
 ### Device Support
 
 * **Supports all Zebra running Android 7.x Nougat, Android 8.x Oreo**.
@@ -47,10 +49,6 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * GPRS Configurations now support APN protocol roaming 
  * Power Configurations can now control individual device wake-up sources such as buttons or keycodes
  * Audio Configurations now allow selection of whether the device plays a sound when a battery charger is connected
-
-<!-- 12/6/19- leaving out until it's clear what it means:
-OemConfig Schema should not specify default values for non-hidden fields
- -->
 
 `IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.3 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 

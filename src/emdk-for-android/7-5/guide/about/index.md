@@ -69,45 +69,51 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 -----
 
-## New in v7.4 
+## New in v7.5
 
-####`OCTOBER 2019 UPDATE:` 
-**EMDK for Android 7.4.1 has been certified to support [Android Studio 3.5](https://developer.android.com/studio/)**; the EMDK plug-in must be updated to version 7.4.1 to work with Android Studio 3.5 (or higher).
+#### Not Publicly Released
 
-See the [EMDK Setup guide](../setup) for help updating the plug-in. 
-
-### Nougat Support Ends
-**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../../7-3/guide/about).   
-
-### FAQ Page
-EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
-
-### IrDA API
-**EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
-
-### SmartCradle API
-**EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
-
-### EC30 Programmer's Guide
-The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile computing device capable of executing TC-series apps out-of-the box. But its small screen might require app changes to ensure a pleasant user experience. The [EC30 Programmer's Guide](../ec30_programming) describes how. 
-
-### NFC Sample App
-**An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
+**EMDK for Android 7.5 was not released to the public**, but as an update to the EMDK device runtime. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below.
 
 ### New Features
-**Now supports MX 9.1**, which adds the following features and enhancements:
-* **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
- * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
-* **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to:
- * Erase all data created by an app specified in the Package parameter
-* **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to:
- * Select hardware signals as the device wake-up method
- * Select mappable keycodes as the device wake-up method 
 
-<!-- 8/23/19- removed per eng (admin only)
-* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
- * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
- -->
+**Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)** 
+
+**Now supports MX 9.2**, which adds the following features and enhancements:
+* **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
+* **Enhanced [Display Manager](../../mx/displaymgr)** now allows an admin to control device font and display size. 
+* **Enhanced [Access Manager](../../mx/accessmgr)** now allows an admin to: 
+ * Prevents one application from stopping another without explicit permission 
+ * Perform remote deice troubleshooting with enhanced visibility and control
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** now includes: 
+* Support for new Symbologies OcrA, OcrB, MICRE13B, USCurrency and Label type OCR: 
+ * enum `OcrAVariant` in `ScannerConfig` - Allows selection of OcrA font variants 
+ * enum `OcrBVariant` in `ScannerConfig` - Allows selection of OcrB font variants 
+ * `ocrAVariant` parameter in `ScannerConfig.DecoderParams.OcrA` to set OcrA font variant. Font variant sets a processing algorithm and default character subset for the given font. Selecting the most appropriate font variant optimizes performance and accuracy. 
+ * `ocrBVariant` parameter in `ScannerConfig.DecoderParams.OcrB` to set OcrB font variant. Selecting the most appropriate font variant optimizes performance and accuracy. 
+  * `OcrParams` class in ScannerConfig adds following parameters to configure decoding OCR barcodes: 
+inverseOcr - Changes the OCR behavior for white or light words on a black or dark background. 
+  * `ocrLines` – Allows selection of the number of OCR lines to decode. Supports OCR variants such as those for visas, TD1, and TD2 ID cards that automatically set the appropriate number of OCR lines. 
+  * `maxCharacters` – Allows selection of the maximum number of OCR characters (including spaces) per line to decode. Strings of OCR characters greater than the maximum are ignored. 
+  * `minCharacters` – Allows selection of the minimum number of OCR characters (not including spaces) per line to decode. Strings of OCR characters less than the minimum are ignored. 
+  * `quietZone` - Changes the quiet zone to be considered with OCR capture. 
+  * `template` - Changes the template to be used with OCR capture. Templates are used to precisely match scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates mis-decodes. 
+  * `orientation` - Specifies the orientation of an OCR string to be read 
+  * `subset` – Allows selection of a custom group of characters in place of a preset font variant 
+  * `checkDigitModulus` - Sets the check digit modulus value for OCR Check Digit Calculation 
+  * `checkDigitMultiplier` - Sets OCR check digit multipliers for the character positions. 
+  * `checkDigitValidation` - Allows selection of check digit validation scheme 
+* New `PresentationModeParams` class in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` to set presentation mode behavior: 
+ * `sensitivity` - Allows the user to set the value for sensitivity during the scanning session 
+ * enum `PresentationModeSensitivity` in ScannerConfig - Allows selection of values for sensitivity between LOW, MEDIUM and HIGH. 
+* New `BarcodeManager.DeviceIdentifier` enum for selection of newly supported RS5100 Bluetooth scanner 
+
+### Enhanced Notification Manager API  
+ * New `NotificationManager.DeviceIdentifier` enum allows selection of the RS5100 Bluetooth scanner 
+
 
 ### API Enhancements
 
@@ -126,6 +132,61 @@ The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile 
 -----
 
 ## Version History
+
+### New in v7.4
+
+#### `OCTOBER 2019 UPDATE:` 
+**EMDK for Android 7.4.1 has been certified to support [Android Studio 3.5](https://developer.android.com/studio/)**; the EMDK plug-in must be updated to version 7.4.1 to work with Android Studio 3.5 (or higher).
+
+See the [EMDK Setup guide](../setup) for help updating the plug-in. 
+
+#### Nougat Support Ends
+**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../../7-3/guide/about).   
+
+#### FAQ Page
+EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
+
+#### IrDA API
+**EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
+
+#### SmartCradle API
+**EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
+
+#### EC30 Programmer's Guide
+The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile computing device capable of executing TC-series apps out-of-the box. But its small screen might require app changes to ensure a pleasant user experience. The [EC30 Programmer's Guide](../ec30_programming) describes how. 
+
+#### NFC Sample App
+**An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
+
+#### New Features
+**Now supports MX 9.1**, which adds the following features and enhancements:
+* **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
+ * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
+* **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to:
+ * Erase all data created by an app specified in the Package parameter
+* **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to:
+ * Select hardware signals as the device wake-up method
+ * Select mappable keycodes as the device wake-up method 
+
+<!-- 8/23/19- removed per eng (admin only)
+* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
+ * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
+ -->
+
+#### API Enhancements
+
+**Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo and higher:
+* Added `enum` and reader parameters to support DPM mode, which allows selection of the DPM mode based on the type of barcode being scanned: 
+ * New ScannerConfig `enum` DpmModes: **DISABLED, MODE_1, MODE_2** 
+ * New reader parameter DpmMode in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the DPM mode
+* Added `enum` and reader parameters to support DPM illumination, providing illumination for DPM barcode reading: 
+ * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
+ * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
+
+#### Deprecations
+
+**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued with Android 10 Q.
+
 
 ### Added in 7.3
 

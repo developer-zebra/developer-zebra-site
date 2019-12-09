@@ -32,7 +32,7 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 >Note: Use of **Serial Read** functionality requires BSP 19.03 and LifeGuard 14 or later. To obtain this OS update patch, please visit the [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system.html). 
 
 ##Requirements
-* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](/emdk-for-android/7-4/guide/setup) for help. 
+* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](/emdk-for-android/7-5/guide/setup) for help. 
 * A supported Zebra Android device (see list above)
 * BSP 19.03 and LifeGuard 14 or later (see above for link)
 * TC7X SNAP-On DEX cable ( CBL-TC7X-DEX1-01 )
@@ -41,7 +41,7 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
-Before beginning, download, build and install the sample app. For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-4/guide/emdksamples_androidstudio). 
+Before beginning, download, build and install the sample app. For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-5/guide/emdksamples_androidstudio). 
 
 1. **Attach the DEX cable and launch the sample app**. The screen should look similar to the image below:  
     <img alt="image" style="height:400px" src="3.png"/>

@@ -29,7 +29,7 @@ Also see the [Battery Intent API Reference](../../guide/reference/refbatteryinte
 	registerReceiver(mIntent_Receiver,mIntentFilter);  
 
 ## Processing The Data
-The code below receives the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/7-4/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
+The code below receives the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/7-5/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
 
 	:::java
 	public void onReceive(Context context, Intent intent) {      
@@ -55,7 +55,7 @@ The code below receives the Zebra-specific battery information provided by the [
 
 <!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Downloading the Sample
-Download the source for this project in the [associated sample](/emdk-for-android/7-4/guide/sample/samplebatteryintent).
+Download the source for this project in the [associated sample](/emdk-for-android/7-5/guide/sample/samplebatteryintent).
 
  -->
 

@@ -140,7 +140,7 @@ Profile Manager enhances Android IDE with a GUI-based tool for generating all th
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
 
 ##Using the Profile Manager API
-Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/7-4/api/core). These profiles will NOT be applied on the device until it is processed using these APIs.
+Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/7-5/api/core). These profiles will NOT be applied on the device until it is processed using these APIs.
 
 ## Multiple Ways to Access
 In the ProfileManager API, you will see three methods for `processProfile`. Essentially the last parameter, `extraData`, is one of three types:
@@ -218,7 +218,7 @@ To modify a profile, you would:
 ## Usage Notes
 
 ## Getting Started with Tutorial
-This is an overview of how you can create and integrate Profiles using EMDK Profile Manager. Click [here](/emdk-for-android/7-4/tutorial/tutdatacaptureprofile) to get started with a detailed tutorial on Data Capture Profiles to understand better.  
+This is an overview of how you can create and integrate Profiles using EMDK Profile Manager. Click [here](/emdk-for-android/7-5/tutorial/tutdatacaptureprofile) to get started with a detailed tutorial on Data Capture Profiles to understand better.  
 
 ## Multiple Instance of Features
 There should only be one instance of the DataCapture feature. The EMDK Profile Manager will not allow you to add multiple DataCapture features, but may happen if you are manually editing the EMDKConfig.xml. Other profile features can have multiple instances and may be required in some cases. For example, you may need two 'Certificate Manager' features. The first one to initialize the certificate store and the second one to install a new certificate.

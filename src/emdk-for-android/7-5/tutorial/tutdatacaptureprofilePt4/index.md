@@ -9,15 +9,15 @@ productversion: '7.5'
 
 ## Developing an EMDK for Android Application Part 4
 
-This guide will walk you through adding broadcast intent support to the Android application you made using [Developing an EMDK for Android Application Part 3](/emdk-for-android/7-4/tutorial/tutdatacaptureprofilePt3).
+This guide will walk you through adding broadcast intent support to the Android application you made using [Developing an EMDK for Android Application Part 3](/emdk-for-android/7-5/tutorial/tutdatacaptureprofilePt3).
 
 ###Prerequisites
 
-* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/7-4/tutorial/tutdatacaptureprofile)
-* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/7-4/tutorial/tutdatacaptureprofilePt2)
-* Completion of [Developing an EMDK for Android Application Part 3](/emdk-for-android/7-4/tutorial/tutdatacaptureprofilePt3)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/7-5/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/7-5/tutorial/tutdatacaptureprofilePt2)
+* Completion of [Developing an EMDK for Android Application Part 3](/emdk-for-android/7-5/tutorial/tutdatacaptureprofilePt3)
  
-For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/7-4/guide/setup).
+For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/7-5/guide/setup).
 
 ##Using EMDK Wizard and EMDK for Android Broadcast Intents.
 

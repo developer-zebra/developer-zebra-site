@@ -17,7 +17,7 @@ This tutorial uses the ScanAndPair APIs to develop a basic application that scan
 
 ## Creating The Project
 
-Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/tutCreateProjectAndroidStudio) and **Enter "ScanAndPairTutorial" as the project name**.
+Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio) and **Enter "ScanAndPairTutorial" as the project name**.
 
 
 ## Enabling Android Permissions

@@ -36,7 +36,7 @@ This sample app shows how the Scan and Pair API is used to programmatically pair
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
-&#49;. Download, build and install the sample app. For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-4/guide/emdksamples_androidstudio). 
+&#49;. Download, build and install the sample app. For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-5/guide/emdksamples_androidstudio). 
 
 &#50;. When the application starts, it should look similar to the image below. **Confirm that the "Always Scan" and "Hard Trigger" check boxes are checked and that the "ScanData Type" is set to "MAC_ADDRESS**."
 

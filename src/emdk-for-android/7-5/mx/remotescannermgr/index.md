@@ -6,7 +6,7 @@ mxversions:
     value: 5
 csp: remotescannermgr
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 

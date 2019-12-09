@@ -2,7 +2,7 @@
 title: Sample App Set-up Guide
 layout: sample.html
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 ##Loading a Sample App

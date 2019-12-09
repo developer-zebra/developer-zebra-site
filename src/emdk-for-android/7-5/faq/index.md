@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 layout: guide.html
 product: EMDK for Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 ## About the FAQ 

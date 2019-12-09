@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: touchmgr
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 

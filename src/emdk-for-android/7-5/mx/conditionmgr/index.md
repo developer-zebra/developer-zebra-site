@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: conditionmgr
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 

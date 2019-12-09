@@ -2,7 +2,7 @@
 title: Configure a Device
 layout: guide.html
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 
 >**NOTICE**:  

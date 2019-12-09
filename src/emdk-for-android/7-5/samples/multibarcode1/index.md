@@ -30,7 +30,7 @@ screenshots:
   - MultiBarcode_scan.png
 layout: sample.html
 product: EMDK For Android
-productversion: '7.4'
+productversion: '7.5'
 ---
 ##Overview
 This sample demonstrates simultaneous scanning of multiple barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](../../mx/data-capture/barcode).  

@@ -16,9 +16,9 @@ There are two approaches to capture data:
 Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about NextGen SimulScan:</b> <br>Major SimulScan capabilities are being migrated to the internal scanning framework accessible through DataWedge and Android Intent APIs. These capabilities formerly available only through SimulScan will be accessible without licensing and supported on all Zebra devices with built-in imager and/or camera running Android 8.x Oreo and higher. Major SimulScan features being transitioned are:<br>
-&nbsp;&nbsp;&nbsp;<b>• <a href="../input/barcode#multibarcodeparams">MultiBarcode</a> -</b> Transition is partially complete for multiple options being transitioned. Options currently available are <b>Number of barcodes per scan</b> and <b>Instant Reporting.</b> Other options will be transitioned in early 2020.<br>
-&nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> Feature coming soon to capture travel document image.<br>
-&nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> Options to be transitioned later in 2020.<br>
+&nbsp;&nbsp;&nbsp;<b>• MultiBarcode -</b> Transition is partially complete. Options currently available are <b><a href="../input/barcode#multibarcodeparams">Number of barcodes per scan</a></b>, setting a fixed quantity of barcodes to scan with a maximum of 100, and <b><a href="../input/barcode#multibarcodeparams">Instant Reporting</a>.</b> Other MultiBarcode features will be transitioned in early 2020.<br>
+&nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> <a href="../input/barcode#ocra">OCR A</a> and <a href="../input/barcode#ocrb">OCR B</a> decoder support added since DataWedge 7.5.<br>
+&nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> <a href="../input/barcode#decodersignature">Decoder Signature</a> support added since DataWedge 7.3. Other Image Capture featres to be transitioned later in 2020.<br>
 See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more information.
 </div>
 
@@ -128,7 +128,7 @@ For more information about approved languages or to download a localized operati
 ### Added in DataWedge 7.5
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
-* New **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
+* Added support for **[OCR A](../input/barcode#ocra)** and **[OCR B](../input/barcode#ocrb)** decoders and corresopndingnNew **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
 * New **[secure Remote Administration](../admin)** using CSP (Configuration Service Provider) for mass deployment.
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.

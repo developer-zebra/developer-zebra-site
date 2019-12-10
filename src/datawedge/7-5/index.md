@@ -11,6 +11,8 @@ menu:
       url: /datawedge/7-5/guide/gettingstarted
     - title: Profiles
       url: /datawedge/7-5/guide/profiles
+    - title: NextGen Simulscan
+      url: /simulscan/1-1/guide/alert
     - title: DW Settings
       url: /datawedge/7-5/guide/settings
     - title: APIs

@@ -5,36 +5,45 @@ product: SimulScan
 productversion: '1.1'
 ---
 
-## Overview 
 
-The most important SimulScan capabilities, including multi-barcode scanning and OCR A/B travel documentation capture, are being migrated to the internal scanning framework that runs on all Zebra devices. Once complete, **capabilities formerly available only through SimulScan will be accessible without licensing through DataWedge and Android intent APIs and supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher**. 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>SimulScan Features Being Integrated</h4> <p><b>The most important SimulScan capabilities, including multi-barcode scanning and OCR A/B capture for travel documentation, are being migrated to the internal scanning framework that runs on all Zebra devices</b>. Once complete, capabilities formerly available only through SimulScan will be accessible through DataWedge and Android intent APIs. Therefore, Zebra strongly recommends that partners develop a migration plan to DataWedge for all applications that currently use SimulScan.</p><p><b>Key migration dates</b>:
+    </p><ul>
+        <li>Dec. 31, 2019 - Final day to buy SimulScan licenses</li>
+        <li>Dec. 31, 2020 - End of support for licensed SimulScan API features</li>
+        <li>Device end-of-life - End of support for non-licensed SimulScan API features</li>
+    </ul>
+</div>
 
-> **Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge for all applications that currently use SimulScan**.
+> **Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge** for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. Zebra strongly recommends that developers use the transitioned SimulScan APIs. Please refer to the Transition Roadmap (below) for the availability of the transitioned features and the relevant APIs. <br><br>
+> **Migrated features available now**: <br> 
+     • **[DataWedge Multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)**<br>
+     • **[EMDK for Android Multi-barcode sample app](/emdk-for-android/7-5/samples/multibarcode1/)**<br>
+     • **[EMDK for Android Document Capture sample app](/emdk-for-android/7-5/samples/simulscan/)**<br>
 
-### Alert Highlights
+### More Info:
+* All new SimulScan feature requests will be created in the Scanning Framework** accessible through DataWedge and intent APIs.
+* The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher.
+* The existing SimulScan APIs and the Template Builder app will no longer be available as of December 31, 2019 (Template Builder is not required for using transitioned SimulScan APIs).
+* A next-gen version of SimulScan will be part of the Zebra Mobility DNA.
 
-* **Key migration dates**:
- * **Dec. 31, 2019 -** Final day to buy SimulScan licenses
- * **Dec. 31, 2020 -** End of support for licensed SimulScan API features
- * **Device end-of-life -** End of support for non-licensed SimulScan API features
-* **All new SimulScan feature requests will be created in the Scanning Framework** accessible through DataWedge and intent APIs.
-* **The transitioned SimulScan features will be supported on all Zebra devices** with built-in Imager and/or camera running Android 8.x Oreo and higher. SimulScan currently supports only these devices: 
+#### Zebra SKUs effected by SimulScan end-of-life: 
+
+`SIMULSCAN_PERM` and `SIMULSCAN_MB_PERM` will reach end-of-life on Dec. 31, 2019, and all multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x products at no additional cost. 
+
+
+<!-- 12/10/19- removed, seemed misleading (as if only these devices were supported)
+
+SimulScan currently supports only these devices: 
  * MC33
  * TC51/TC51-HC/TC52/TC56/TC57
  * TC55 
  * TC70/TC72/TC75/TC77
  * TC70x/TC75x
  * TC8000 
-* **Some SimulScan features are already transitioned** and available for use (see Transition Roadmap below).
-* Zebra strongly recommends that developers use the transitioned SimulScan APIs. Please refer to the Transition Roadmap (below) for the availability of the transitioned features and the relevant APIs.
-* **The existing SimulScan APIs and the Template Builder will no longer be available as of December 31, 2019**. The Template Builder is not required for using transitioned SimulScan APIs.
-* SimulScan will continue to be part of the Zebra Mobility DNA.
 
-#### Zebra SKUs effected by SimulScan end-of-life: 
+ -->
 
-`SIMULSCAN_PERM` and `SIMULSCAN_MB_PERM` will reach end-of-life on Dec. 31, 2019, and all multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x products at no additional cost. 
-
------
+ -----
 
 ### Transition Roadmap
 <img style="height:800px" src="simulscan_feature_table.png"/>
@@ -56,7 +65,7 @@ A: Yes. Applications must be rewritten to use the SimulScan APIs available in Sc
 A: The DataWedge and intent API support are the recommended method of programmatically accessing transitioned SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
 
 **Q: What software do I need for using the transitioned SimulScan features to Scanning Framework?**<br>
-A: None. The Scanning Framework is preloaded on all Zebra devices. No additional software is needed.<br><br>
+A: None. The Scanning Framework is preloaded on all Zebra devices. No additional software is needed.<br>
 
 **Q: Which devices will the transitioned SimulScan features in Scanning Framework support?**<br>
 A: The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher. Some devices running Oreo and Pie might require application of the latest LifeGuard updates.

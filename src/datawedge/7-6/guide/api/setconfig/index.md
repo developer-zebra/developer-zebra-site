@@ -635,6 +635,13 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
   <tr>
 	<td>decoder_dutch_postal</td>
 	<td>true<br>false</td>
+	<td>dutch_postal_enable_dutch_postal_3S</td>
+	<td>true<br>false (default)</td>
+  </tr>
+
+  <tr>
+	<td>decoder_finnish_postal_4s</td>
+	<td>true<br>false (default)</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>

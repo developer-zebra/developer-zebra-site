@@ -152,6 +152,7 @@ Single mode reads and decodes a single barcode at a time, and is the most common
 * "LABEL-TYPE-JAPPOSTAL"
 * "LABEL-TYPE-AUSPOSTAL"
 * "LABEL-TYPE-DUTCHPOSTAL"
+* "LABEL-TYPE-FINNISHPOSTAL-4S"
 * "LABEL-TYPE-CANPOSTAL"
 * "LABEL-TYPE-CHINESE-2OF5"
 * "LABEL-TYPE-AZTEC"

@@ -25,47 +25,8 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 -----
 
 ### Supported Devices
-The devices listed below have been tested and validated for compatibility with this release. 
 
-#### Mobile devices
-
-* CC600 - Oreo
-* CC6000 - Oreo 
-* **EC30 - Oreo**
-* **ET51 Oreo**
-* **ET56 Oreo**
-* **L10 - Oreo**
-* MC33 - Oreo
-* MC9300 - Oreo
-* **PS20** - Oreo, **Pie**
-* TC20 - Oreo
-* TC25 - Oreo
-* TC51 - Oreo
-* **TC52** - Oreo, **Pie**
-* TC56 - Oreo
-* TC57 - Oreo
-* TC70x - Oreo
-* **TC72** - Oreo, **Pie**
-* TC75x - Oreo
-* TC77 - Oreo
-* TC8300 - Oreo
-* VC80x - Oreo
-* **VC8300 - Oreo**
-
-Devices and/or dessert flavors **shown in bold are newly added** in the current release. 
-
-#### Scanners and imagers
-
-* DS2278
-* DS3608
-* DS3678
-* DS8178
-* LI3608
-* LI3678
-* RS507
-* RS4000
-* RS5000
-* RS6000
+Device support tables are available at the [EMDK download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) on Zebra.com. 
 
 -----
 

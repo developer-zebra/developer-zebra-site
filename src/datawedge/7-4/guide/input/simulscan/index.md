@@ -62,9 +62,11 @@ _Dynamic Barcode Quantity_
 * Line feed 
 * Carriage return 
 
-**Log directory –** used to change the default folder path (`/storage/emulated/0/simulscan/logs`) for storing the SimulScan logs on the device. **Note**: SimulScan logging is enabled/disabled by the SimulScan template in use; logging is not controlled by DataWedge. 
+**Log directory –** Used to change the default folder path (`/storage/emulated/0/simulscan/logs`) for storing the SimulScan logs on the device. **Note**: SimulScan logging is enabled/disabled by the SimulScan template in use; logging is not controlled by DataWedge. 
 
 **Timestamp –** Enable/disable automatic insertion of a timestamp (`yyyy-MM-dd HH:mm:ss`) along with acquired data.
+
+**Images as Files -** When enabled (disabled by default), all image files are delivered as files. Zebra recommends to enable this option. It addresses "TransactionTooLargeException" with the following message which may occur if the application tries to retrieve large data, such as images, via Intents: “Can't deliver broadcast to [application name], Crashing it.”
 
 ### SimulScan Notes 
 
@@ -101,6 +103,8 @@ The calls above can use the following String tags:
 
 * **String SIMULSCAN_REGION_BINARY_DATA= "com.symbol.datawedge.simulscan_region_binary_data"**;
 Returns the data of the region in the form of byte array. Binary data comes only for picture regions and the form image. Both picture and form data are loaded in to a bitmap and display in the application.
+
+* **String DATA_FILE_PATHS = "com.symbol.datawedge.simulscan_data_file_paths"**; Returns the file paths of the images if the simulscan_region_type is "picture". If **Images as Files** option is enabled, simulscan_data_file_paths key must be used to get the image data.
 
 * **String SIMULSCAN_REGION_TYPE_TAG = "com.symbol.datawedge.simulscan_region_type"**; Returns the region type of the bundle object for reach region. Region type is a string and is retrieved by calling `Bundle.getString ()`. 
 

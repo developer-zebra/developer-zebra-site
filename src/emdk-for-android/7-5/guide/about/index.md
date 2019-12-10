@@ -26,7 +26,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ### Supported Devices
 
-Device support tables are available at the [EMDK download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) on Zebra.com. 
+Device support tables are on the [EMDK product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) at Zebra.com. 
 
 -----
 
@@ -34,7 +34,7 @@ Device support tables are available at the [EMDK download page](https://www.zebr
 
 #### Not Publicly Released
 
-**EMDK for Android 7.5 was not released to the public**, but as an update to the EMDK device runtime. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
+**EMDK for Android 7.5 was implemented as a device-runtime update**. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
 
 ### New Features
 
@@ -43,9 +43,9 @@ Device support tables are available at the [EMDK download page](https://www.zebr
 **Now supports MX 9.2**, which adds the following features and enhancements:
 * **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
 * **Enhanced [Display Manager](../../mx/displaymgr)** now allows an admin to control device font and display size. 
-* **Enhanced [Access Manager](../../mx/accessmgr)** now allows an admin to: 
- * Prevents one application from stopping another without explicit permission 
- * Perform remote deice troubleshooting with enhanced visibility and control
+* **Enhanced [Access Manager](../../mx/accessmgr)** can now: 
+ * Prevent one application from stopping another without explicit permission 
+ * Perform remote device troubleshooting with enhanced visibility and control
 
 ### API Enhancements
 
@@ -88,7 +88,7 @@ inverseOcr - Changes the OCR behavior for white or light words on a black or dar
 
 ### Deprecations
 
-**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued with Android 10 Q.
+**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
 
 -----
 

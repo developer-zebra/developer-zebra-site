@@ -34,7 +34,7 @@ Device support tables are available at the [EMDK download page](https://www.zebr
 
 #### Not Publicly Released
 
-**EMDK for Android 7.5 was not released to the public**, but as an update to the EMDK device runtime. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below.
+**EMDK for Android 7.5 was not released to the public**, but as an update to the EMDK device runtime. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
 
 ### New Features
 

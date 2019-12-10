@@ -120,6 +120,7 @@ For more information about approved languages or to download a localized operati
 ## New in DataWedge 7.6
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
+* **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
 
 -----
 ## Recent Version History

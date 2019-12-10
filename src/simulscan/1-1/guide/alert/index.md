@@ -14,21 +14,22 @@ productversion: '1.1'
     </ul>
 </div>
 
-> **Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge** for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. Zebra strongly recommends that developers use the transitioned SimulScan APIs. Please refer to the Transition Roadmap (below) for the availability of the transitioned features and the relevant APIs. <br><br>
+> Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. <br><br>
 > **Migrated features available now**: <br> 
      • **[DataWedge Multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)**<br>
-     • **[EMDK for Android Multi-barcode sample app](/emdk-for-android/7-5/samples/multibarcode1/)**<br>
-     • **[EMDK for Android Document Capture sample app](/emdk-for-android/7-5/samples/simulscan/)**<br>
+     • **[EMDK for Android multi-barcode (sample app)](/emdk-for-android/7-5/samples/multibarcode1/)**<br>
+     • **[EMDK for Android document capture (sample app)](/emdk-for-android/7-5/samples/simulscan/)**<br><br>
+     **Please refer to the [Transition Roadmap](#transitionroadmap) for availability of other transitioned features**. <br>
 
-### More Info:
-* All new SimulScan feature requests will be created in the Scanning Framework** accessible through DataWedge and intent APIs.
+### More Info
+* All new SimulScan feature requests will be created in the Scanning Framework accessible through DataWedge and intent APIs.
 * The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher.
 * The existing SimulScan APIs and the Template Builder app will no longer be available as of December 31, 2019 (Template Builder is not required for using transitioned SimulScan APIs).
 * A next-gen version of SimulScan will be part of the Zebra Mobility DNA.
-
-#### Zebra SKUs effected by SimulScan end-of-life: 
-
-`SIMULSCAN_PERM` and `SIMULSCAN_MB_PERM` will reach end-of-life on Dec. 31, 2019, and all multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x products at no additional cost. 
+* These Zebra SKUs reach end-of-life on Dec. 31, 2019: 
+ * `SIMULSCAN_PERM` 
+ * `SIMULSCAN_MB_PERM` 
+* All multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x devices at no additional cost
 
 
 <!-- 12/10/19- removed, seemed misleading (as if only these devices were supported)

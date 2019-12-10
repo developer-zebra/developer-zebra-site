@@ -15,6 +15,13 @@ There are two approaches to capture data:
 
 Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about NextGen SimulScan:</b> <br>Major SimulScan capabilities are being migrated to the internal scanning framework accessible through DataWedge and Android Intent APIs. These capabilities formerly available only through SimulScan will be accessible without licensing and supported on all Zebra devices with built-in imager and/or camera running Android 8.x Oreo and higher. Major SimulScan features being transitioned are:<br>
+&nbsp;&nbsp;&nbsp;<b>• <a href="../input/barcode#multibarcodeparams">MultiBarcode</a> -</b> Transition is partially complete for multiple options being transitioned. Options currently available are <b>Number of barcodes per scan</b> and <b>Instant Reporting.</b> Other options will be transitioned in early 2020.<br>
+&nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> Feature coming soon to capture travel document image.<br>
+&nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> Options to be transitioned later in 2020.<br>
+See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more information.
+</div>
+
 **[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
 
 Each Profile generally contains four elements: 

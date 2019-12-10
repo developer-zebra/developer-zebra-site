@@ -8,9 +8,9 @@ productversion: '1.1'
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>SimulScan Features Being Integrated</h4> <p><b>The most important SimulScan capabilities, including multi-barcode scanning and OCR A/B capture for travel documentation, are being migrated to the internal scanning framework that runs on all Zebra devices</b>. Once complete, capabilities formerly available only through SimulScan will be accessible through DataWedge and Android intent APIs. Therefore, Zebra strongly recommends that partners develop a migration plan to DataWedge for all applications that currently use SimulScan.</p><p><b>Key migration dates</b>:
     </p><ul>
-        <li>Dec. 31, 2019 - Final day to buy SimulScan licenses</li>
-        <li>Dec. 31, 2020 - End of support for licensed SimulScan API features</li>
-        <li>Device end-of-life - End of support for non-licensed SimulScan API features</li>
+        <li><b>Dec. 31, 2019</b> - Final day to buy SimulScan licenses</li>
+        <li><b>Dec. 31, 2020</b> - End of support for licensed SimulScan API features</li>
+        <li><b>Device end-of-life</b> - End of support for non-licensed SimulScan API features</li>
     </ul>
 </div>
 
@@ -62,7 +62,7 @@ A: Yes. Applications must be rewritten to use the SimulScan APIs available in Sc
 **Q: Do I need a license to use transitioned SimulScan features in Scanning Framework?**<br> 
  A: No. Licensing is not required for any of the SimulScan features being transitioned into the Scanning Framework and APIs. 
 
-**Q: Will the SimulScan transitioned APIs be supported only on DataWedge?** What about Enterprise Browser and EMDK?<br>
+**Q: Will the SimulScan transitioned APIs be supported only on DataWedge? What about Enterprise Browser and EMDK**?<br>
 A: The DataWedge and intent API support are the recommended method of programmatically accessing transitioned SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
 
 **Q: What software do I need for using the transitioned SimulScan features to Scanning Framework?**<br>

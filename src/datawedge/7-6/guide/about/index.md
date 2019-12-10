@@ -117,7 +117,14 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
-## New in DataWedge 7.5
+## New in DataWedge 7.6
+* Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
+* New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
+
+-----
+## Recent Version History
+
+### Added in DataWedge 7.5
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
 * New **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
@@ -125,9 +132,6 @@ For more information about approved languages or to download a localized operati
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.
 * Deprecated "voice_enter_command" (replaced by "voice_command_enter_enabled") and "voice_tab_command" (replaced by "voice_command_tab_enabled") [voice input parameters](../input/voice).
-
------
-## Recent Version History
 
 ### Added in DataWedge 7.4
 * **New [Enterprise Keyboard Configuration](../utilities/ekb) feature introduced in DataWedge 7.4.44.**

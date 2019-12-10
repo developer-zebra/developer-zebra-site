@@ -866,6 +866,11 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
   </tr>
 
   <tr>
+	<td>report_decoded_barcodes</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
 	<td>scanner_selection_by_identifier</td>
 	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table</td>
   </tr>

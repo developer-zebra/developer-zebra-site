@@ -16,10 +16,12 @@ productversion: '1.1'
 
 > Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. <br><br>
 > **Migrated features available now**: <br> 
-     • **[DataWedge Multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)**<br>
-     • **[EMDK for Android multi-barcode (sample app)](/emdk-for-android/7-5/samples/multibarcode1/)**<br>
-     • **[EMDK for Android document capture (sample app)](/emdk-for-android/7-5/samples/simulscan/)**<br><br>
-     **Please refer to the [Transition Roadmap](#transitionroadmap) for availability of other transitioned features**. <br>
+     • **[Multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 6.7+) <br>
+     • **[Signature (image) capture](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 7.3+) <br>
+     • **[OCR-A](/datawedge/7-5/guide/input/barcode#ocra)** and **[OCR-B](/datawedge/7-5/guide/input/barcode#ocrb)** decoding (DataWedge 7.5+)<br> 
+     • **[Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+ sample app)<br>
+     • **[Document capture](/emdk-for-android/7-5/samples/simulscan/)** (EMDK for Android 4.0+ sample app)<br><br>
+     **Please refer to the [Transition Roadmap](#transitionroadmap) for estimated availability of additional features**. <br>
 
 ### More Info
 * All new SimulScan feature requests will be created in the Scanning Framework accessible through DataWedge and intent APIs.

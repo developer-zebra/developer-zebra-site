@@ -26,7 +26,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ### Supported Devices
 
-Mobile-device support tables are on the [EMDK product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) at Zebra.com. 
+Mobile-device support tables are on the **[EMDK product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html)** at Zebra.com. 
 
 #### Scanners and imagers
 
@@ -39,16 +39,16 @@ Mobile-device support tables are on the [EMDK product page](https://www.zebra.co
 * RS507
 * RS4000
 * RS5000
-* **RS5100** `NEW`
+* **RS5100** `NEW in 7.5`
 * RS6000
 
 -----
 
 ## New in v7.5
 
-#### Not Publicly Released
+#### Availability Note
 
-**EMDK for Android 7.5 was implemented as a device-runtime update**. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
+**EMDK for Android 7.5 was implemented as a device-runtime update** and was not released to the public. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
 
 ### New Features
 

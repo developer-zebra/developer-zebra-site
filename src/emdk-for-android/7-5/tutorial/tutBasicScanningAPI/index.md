@@ -32,52 +32,66 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 
 1. Enable permissions for `com.symbol.emdk.permission.EMDK`:  
 
-        :::xml
-		<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		    package="com.example.basicscanningtotorial">
-		    <uses-permission android:name="com.symbol.emdk.permission.EMDK" />
-		    <application>
-				...
-		    </application>
+	        :::xml
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.symbol.basicscansample1">
+			<uses-permission android:name="com.symbol.emdk.permission.EMDK" />    
+			<application>
+			...    
+			</application>
 		</manifest>
 
 2. Enable the EMDK library in the application node:  
       
         :::xml
-        <uses-library android:name="com.symbol.emdk" />
+        <application>
+        	<uses-library android:name="com.symbol.emdk"/>    
+        	<activity>
+			...    
+			</activity>
+		</application>
 
 3. Add references to the libraries:  
 
         :::java
-        import com.symbol.emdk.EMDKManager;
+		import com.symbol.emdk.EMDKManager;
 		import com.symbol.emdk.EMDKManager.EMDKListener;
+		import com.symbol.emdk.EMDKResults;
+		import com.symbol.emdk.barcode.BarcodeManager;
 		import com.symbol.emdk.barcode.ScanDataCollection;
+		import com.symbol.emdk.barcode.ScanDataCollection.ScanData;
+		import com.symbol.emdk.barcode.Scanner;
 		import com.symbol.emdk.barcode.Scanner.DataListener;
 		import com.symbol.emdk.barcode.Scanner.StatusListener;
-		import com.symbol.emdk.barcode.StatusData;   
+		import com.symbol.emdk.barcode.Scanner.TriggerType;
+		import com.symbol.emdk.barcode.ScannerConfig;
+		import com.symbol.emdk.barcode.ScannerException;
+		import com.symbol.emdk.barcode.ScannerResults;
+		import com.symbol.emdk.barcode.StatusData;
+		import com.symbol.emdk.barcode.StatusData.ScannerStates;
 
-4. Extend the activity to implement `EMDKListener`, implement `StatusListener` for notifying client applications to notify scan events, and override its `onStatus` function.
+
+4. Extend the activity to implement `EMDKListener`, implement `StatusListener` for notifying client applications to notify scan events, and override its `onStatus` function. Implement `DataListener` for notifying client applications to notify data events and override its `onData` function.
     
         :::java
-        public class MainActivity extends Activity implements EMDKListener, StatusListener, DataListener{  
-            //some lines of code omitted for clarity
-            @Override  
-            public void onClosed() {  
-                   // TODO Auto-generated method stub  
-            }  
-            @Override  
-            public void onOpened(EMDKManager emdkManager) {  
-                   // TODO Auto-generated method stub  
-            }
-            @Override
-            public void onData(ScanDataCollection scanDataCollection) {
-                        // TODO Auto-generated method stub
-            }
-            @Override
-            public void onStatus(StatusData statusData) {
-                        // TODO Auto-generated method stub
-            }
-        }
+			public class MainActivity extends Activity implements EMDKListener, StatusListener, DataListener {
+				@Override
+				public void onOpened(EMDKManager emdkManager) {
+				// TODO Auto-generated method stub
+				}
+				@Override
+				public void onClosed() {
+				// TODO Auto-generated method stub
+				}
+				@Override
+				public void onStatus(StatusData statusData) {
+				// TODO Auto-generated method stub
+				}
+				@Override
+				public void onData(ScanDataCollection scanDataCollection) {
+				// TODO Auto-generated method stub
+				}
+			}
+
 
 5. Create some global variables to hold the instance objects of `EMDKManager`, `BarcodeManager` and `Scanner`. These variables are used throughout the code. This section also adds some UI elements starting with a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of the scanning operation and [EditText](http://developer.android.com/reference/android/widget/EditText.html) to populate scanned barcode data.
     

@@ -209,7 +209,7 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
 EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  Refer to the v7.2 TechDocs web page for more information.
  -->
 
-**Now supports MX 8.3**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+**Now supports MX 8.3**, which adds the following features and enhancements on devices running Android 7.x Nougat and Android Oreo 8.1 and newer:
 
 * **New [NFC Manager](../../mx/nfcmgr)** CSP adds these new capabilities:  
    * **Enable/Disable**: 
@@ -250,7 +250,6 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 * Added `ScannerConfig.ScanParams` scanner parameters:
  * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
  * `decodeScreenTranslucencyLevel` sets the percentage of translucency (from 20&ndash;50; in increments of 5) of the decode screen notification overlay.
-
 
 -----
 

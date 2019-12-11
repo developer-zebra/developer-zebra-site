@@ -54,6 +54,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 * DS2278
 * DS3608
 * DS3678
+* DS8178
 * **DS8178**
 * LI3608
 * LI3678
@@ -75,14 +76,14 @@ No new device support added in this version.
 
 ### New Features
  
-**Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+**Now supports MX 9.0**, which adds the following features and enhancements on devices running Android 7.x Nougat and Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../../mx/batterymgr)** now allows an admin to:
  * Specify a critically low battery threshold
 * **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
  * Control user access to the Large Key Indicator (MC93 device only)
  * Turn the Large Key Indicator on or off (MC93 device only)
 
-**Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+**Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android 7.x Nougat and Android Oreo 8.1 and newer:
 * **Enhanced [GPRS Manager](../../mx/gprsmgr)**  now allows an admin to:
  * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
  * Specify APN MVNO Match Data
@@ -110,7 +111,7 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
 
 ### API Enhancements
 
-**Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo:
+**Enhanced Barcode Manager API** adds the following features on devices running Android 7.x Nougat and Android 8.1 Oreo:
 * Support for GridMatrix Symbology and Label type:
  * ScannerConfig enum `GridMatrixInverse` describes Enable/Disable/Auto options for decoding GridMatrix barcodes with inverse reflectance.
  * ScannerConfig enum `GridMatrixMirror` describes Enable/Disable/Auto options for decoding mirrored GridMatrix barcodes.

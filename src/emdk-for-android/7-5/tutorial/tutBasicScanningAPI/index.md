@@ -427,13 +427,23 @@ This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) can be used to p
    
 2. Use DataWedge v1.7.12 or higher to test the `ProfileManager.processProfile()` for DataWedge profiles.
 
+### Edit the build.gradle
+
+Make the following required changes in the application's build.gradle file: 
+
+	>Note: 
+	>* Include the dependency for EMDK:
+
+			:::xml
+			compileOnly ’com.symbol:emdk:+’
+
 ### Content Backup
 
-Once the barcode is enabled, the `read` method is called on the scanner and the scanning API provides starts an asynchronous scan. The method does turn on the scanner, but puts the scanner in a state in which it can be turned ON either automatically or by pressing a hardware trigger as determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the scan data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call fails. Therefore, **Zebra recommends checking whether a read is pending by calling** `isReadPending()` before submitting a `read()`. A read() also can be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
+Once the barcode is enabled, the `read` method is called on the scanner and the scanning API starts an asynchronous scan. The method puts the scanner in a state in which it can be turned ON either automatically or by pressing a hardware trigger as determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the scan data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call fails. Therefore, **Zebra recommends checking whether a read is pending by calling** `isReadPending()` before submitting a `read()`. A `read()` also can be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
 
-> Note: The `read` method allows a single barcode scan only. If multiple scans are desired, the `read` method must be called multiple times.
+> Note: The `read` method allows only a single barcode scan. If multiple scans are desired, the `read` method must be called multiple times.
 
 -----
 
 ## What's Next
-After completing this basic tutorial, the next logical step might be to explore the [Barcode/Scanning APIs](/emdk-for-android/6-10/api) in depth, and use them to perform advanced scanning operations.
+After completing this basic tutorial, the next logical step might be to explore the [Barcode/Scanning APIs](../api) in depth, and use them to perform advanced scanning operations.

@@ -29,7 +29,7 @@ The following software is required to use EMDK for Android:
 
 ### Install EMDK Plug-ins
 
-The following instructions apply to Android Studio, which is required to use EMDK for Andriod and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
+The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
 
 **Note**: Mac OS and Windows dialog boxes might vary slightly. 
 
@@ -96,7 +96,7 @@ _Click to enlarge; ESC to exit_.<br>
 #### Windows 
 
 1. **Close Android Studio**, if open.
-2. From **Windows -> All Programs -> Symbol EMDK for Android, select "Uninstall."**  
+2. From **Windows -> All Programs -> Symbol EMDK for Android [vX.X], select "Uninstall."**  
 3. **Follow prompts** to complete the uninstallation.
 
 #### Mac OS
@@ -107,10 +107,10 @@ _Click to enlarge; ESC to exit_.<br>
 
 1. **Remove SDK add-ons**:
    * Navigate to the `/Users/[userName]/Library/Android/sdk/add-ons` directory.<br>
-   * Remove any `addon-symbol_emdk-symbol-XX` folders.<br>
+   * Remove all `addon-symbol_emdk-symbol-XX` folders, if present.<br>
 2. **Remove Wizard Core**:
    * Navigate to the `/Users/Shared` directory.
-   * **Remove the "Symbol EMDK for Android" folder**.
+   * **Remove the "Symbol EMDK for Android" folder**, if present.
 3. **Remove Wizard plug-in**:
    * **Open Applications** folder.
    * Locate and **right-click Android Studio** app.

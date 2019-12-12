@@ -49,8 +49,6 @@ After completing the steps in **Creating The Project**
 3. Now select **EMDK APIs, Android 23, rev XXX (API XX)** in from the **Compile Sdk Version drop-down box.
 4. Now click the **OK** button.
 
-**Your project is now ready to use the EMDK for Android APIs**
-
 ###  EMDK as a dependency in gradle.build
 
 See Step 4 in the [EMDK-A Setup guide](../../guide/setup) for instructions.

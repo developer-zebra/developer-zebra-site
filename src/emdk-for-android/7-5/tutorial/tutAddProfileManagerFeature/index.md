@@ -28,7 +28,7 @@ This tutorial helps you adding different features using Profile Manager to your 
 
 	![img](../../images/AddProfileManagerFeatureImage/profile_editor_4.3.jpg) 
 
-7. The Profile Manager wizard provides various features, one of them being Data Capture for capturing Barcode, MSR data in your application and many MX features (Ex. Wireless Manager, Clock Manager, Access Manager, Browser Manager, Encrypt Manager etc.) for configuring your Symbol device based on requirements.
+7. The Profile Manager wizard provides various features, one of them being Data Capture for capturing Barcode, MSR data in your application and many MX features (Ex. Wireless Manager, Clock Manager, Access Manager, Browser Manager, Encrypt Manager etc.) for configuring your Zebra device based on requirements.
 
 
 

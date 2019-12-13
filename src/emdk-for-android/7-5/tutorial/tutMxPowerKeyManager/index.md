@@ -11,12 +11,12 @@ This guide will walk you through creating an EMDK For Android application that w
 
 The PowerKey Manager feature allows your application to control which options appear on the power menu on the device. Out of different available power key parameters, we would control Airplane Mode in this tutorial.  
 
-So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using MX [Power Key Manager](../../mx/powerkeymgr) feature on your Symbol Android device. 
+So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using MX [Power Key Manager](../../mx/powerkeymgr) feature on your Zebra Android device. 
         
 
 ## Creating The Project
 
-> Note: 1. Provide "PowerKeyManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4.
+> Note: 1. Provide "PowerKeyManagerTutorial" as the project name for this tutorial. 2. This feature requires Zebra device with Android KitKat 4.4.
 
 Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio). 
 
@@ -422,7 +422,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxPowerKeyManagerTutorialImages/airplane_mode_reenable.jpg)
 
-    This is how Power Key Manager lets us configure Airplane Mode Power Key Menu Option on Symbol devices using Profile Wizard. 
+    This is how Power Key Manager lets us configure Airplane Mode Power Key Menu Option on Zebra devices using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -440,7 +440,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to disable Airplane Mode Power Key Option using Power Key Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "SD Card Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to disable Airplane Mode Power Key Option using Power Key Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "SD Card Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

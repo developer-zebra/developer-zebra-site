@@ -198,7 +198,7 @@ Please reference the Android Battery Manager [API](http://developer.android.com/
 
 ### Return Values
 
-In addition to the battery information Android returns by default, which can be found [here](http://developer.android.com/reference/android/os/BatteryManager.html), Symbol devices return the following additional parameters: 
+In addition to the battery information Android returns by default, which can be found [here](http://developer.android.com/reference/android/os/BatteryManager.html), Zebra devices return the following additional parameters: 
 
 * **bkvoltage**
 * **mfd** 

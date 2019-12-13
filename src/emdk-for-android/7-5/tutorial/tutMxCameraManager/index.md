@@ -7,14 +7,14 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Symbol devices using [Camera Manager](../../mx/cameramgr) feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Zebra devices using [Camera Manager](../../mx/cameramgr) feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  
 
-We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using MX [Camera Manager](../../mx/cameramgr) feature. 
+We will now create a tutorial to disable the use of all cameras and then enable them back on your Zebra Android device using MX [Camera Manager](../../mx/cameramgr) feature. 
         
 
 ## Creating The Project
 
-> Note: 1. Provide "CameraManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4. 
+> Note: 1. Provide "CameraManagerTutorial" as the project name for this tutorial. 2. This feature requires Zebra device with Android KitKat 4.4. 
 
 Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio).
  
@@ -43,7 +43,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
   
     ![img](../../images/MxCameraManagerTutorialImages/camera_profile_created.jpg)
 
-6. Click Finish and your Camera profile for configuring the use of all Cameras on Symbol devices is created.
+6. Click Finish and your Camera profile for configuring the use of all Cameras on Zebra devices is created.
 
     ![img](../../images/MxCameraManagerTutorialImages/camera_manager_profile_created.jpg) 
   
@@ -378,7 +378,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxCameraManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us disable the use of all cameras on Symbol device. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us disable the use of all cameras on Zebra device. Now let's run the application.
  
 ## Running the Application
 
@@ -400,7 +400,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	> Note: In case of errors, you will see a Failure status with respective error message in that dialog.
   
-3. We will see the status of Camera in Symbol device. So click on the Camera application and you would see that the Camera is disabled as we have disabled the Camera permission through Profile Wizard using Camera Manager feature of Mx.
+3. We will see the status of Camera in Zebra device. So click on the Camera application and you would see that the Camera is disabled as we have disabled the Camera permission through Profile Wizard using Camera Manager feature of Mx.
 
     ![img](../../images/MxCameraManagerTutorialImages/camera_disabled.png)
 
@@ -412,7 +412,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxCameraManagerTutorialImages/enable_camera_wizard.jpg)
 
-6. Click "Apply" and then "Finish". Close the Profile Wizard as you are done with the configurations that will enable back the use of Cameras on Symbol device.
+6. Click "Apply" and then "Finish". Close the Profile Wizard as you are done with the configurations that will enable back the use of Cameras on Zebra device.
 
 7. Run the application again. 
 
@@ -422,7 +422,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxCameraManagerTutorialImages/camera_enabled.png) 
 
-    This is how Camera Manager lets us Enable/Disable the use of Cameras on Symbol devices through Profile Manager Wizard using [Camera Manager](../../mx/cameramgr) feature of Mx. 
+    This is how Camera Manager lets us Enable/Disable the use of Cameras on Zebra devices through Profile Manager Wizard using [Camera Manager](../../mx/cameramgr) feature of Mx. 
 
 ##Important Programming Tips##
 
@@ -443,7 +443,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure the use of Cameras using Camera Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure the use of Cameras using Camera Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

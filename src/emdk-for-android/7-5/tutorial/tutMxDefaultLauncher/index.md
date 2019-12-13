@@ -13,7 +13,7 @@ The tutorial would enable user to set an application as default launcher using:
 
 **1.  EMDK Profile Manager wizard:** 
 
-Initially, we will configure EHS (Enterprise Home Screen) launcher application as the default launcher application using Profile Manager wizard. [Enterprise Home Screen (EHS)](https://developer.motorolasolutions.com/docs/DOC-1875) is a replacement application launcher, for Symbol Android devices, designed to allow only specified applications to be launched. So this launcher will replace the existing launcher application in the device.
+Initially, we will configure EHS (Enterprise Home Screen) launcher application as the default launcher application using Profile Manager wizard. [Enterprise Home Screen (EHS)](https://developer.motorolasolutions.com/docs/DOC-1875) is a replacement application launcher, for Zebra Android devices, designed to allow only specified applications to be launched. So this launcher will replace the existing launcher application in the device.
 
 **2. App Manager API:**
 
@@ -59,7 +59,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.  
   
-3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "App Manager" feature from the list and click "Right Arrow". Using this feature you can perform various operations in your apps on the Symbol Android device. These operations could be installing apps, uninstalling apps, upgrading apps and setting specific app as default launcher. We will be concentrating on Default Launcher feature in this tutorial.       
+3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "App Manager" feature from the list and click "Right Arrow". Using this feature you can perform various operations in your apps on the Zebra Android device. These operations could be installing apps, uninstalling apps, upgrading apps and setting specific app as default launcher. We will be concentrating on Default Launcher feature in this tutorial.       
  
 4. Click on the App Manager feature. The parameter list will be populated.  
   

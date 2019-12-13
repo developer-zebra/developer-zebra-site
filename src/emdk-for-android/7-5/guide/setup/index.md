@@ -96,7 +96,7 @@ _Click to enlarge; ESC to exit_.<br>
 #### Windows 
 
 1. **Close Android Studio**, if open.
-2. From **Windows -> All Programs -> Symbol EMDK for Android [vX.X], select "Uninstall."**  
+2. From **Windows -> All Programs -> EMDK for Android [vX.X], select "Uninstall."**  
 3. **Follow prompts** to complete the uninstallation.
 
 #### Mac OS
@@ -110,7 +110,7 @@ _Click to enlarge; ESC to exit_.<br>
    * Remove all `addon-symbol_emdk-symbol-XX` folders, if present.<br>
 2. **Remove Wizard Core**:
    * Navigate to the `/Users/Shared` directory.
-   * **Remove the "Symbol EMDK for Android" folder**, if present.
+   * **Remove the "EMDK for Android" folder**, if present.
 3. **Remove Wizard plug-in**:
    * **Open Applications** folder.
    * Locate and **right-click Android Studio** app.

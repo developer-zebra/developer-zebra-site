@@ -24,7 +24,7 @@ productversion: '7.5'
 ---
 
 ##Overview
-The EMDK for Android allows you to configure Wi-Fi of a Symbol device. 
+The EMDK for Android allows you to configure Wi-Fi of a Zebra device. 
 
 The available actions are:
   
@@ -39,7 +39,7 @@ The available actions are:
 
 > Note: In order to perform all Wi-Fi network operations, Wi-Fi should be enabled.  
 
-This sample application will allow you to perform all the above mentioned Wi-Fi actions on Symbol device.
+This sample application will allow you to perform all the above mentioned Wi-Fi actions on Zebra device.
 
 
 

@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Clipboard of your Symbol Android device using [UI Manager](../../mx/uimgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Clipboard of your Zebra Android device using [UI Manager](../../mx/uimgr) feature of Mx. 
 
-So now we will create a tutorial and configure the Clipboard (Enable/Disable and clear Clipboard) of your Symbol Android device using MX [UI Manager](../../mx/uimgr) feature. 
+So now we will create a tutorial and configure the Clipboard (Enable/Disable and clear Clipboard) of your Zebra Android device using MX [UI Manager](../../mx/uimgr) feature. 
         
 
 ## Creating The Project
@@ -32,7 +32,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     Provide some name in the "Name" field (Ex. MyUIManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    So as discussed, you can enable, disable or clear the clipboard of your Symbol device using UI Manager feature of Mx. We will enable and clear the clipboard so that when we run the application, there is nothing saved in clipboard. Click on Clipboard drop-down in the wizard and select the option "Enable". Check the "Clear Clipboard?" checkbox to enable clearing. 
+    So as discussed, you can enable, disable or clear the clipboard of your Zebra device using UI Manager feature of Mx. We will enable and clear the clipboard so that when we run the application, there is nothing saved in clipboard. Click on Clipboard drop-down in the wizard and select the option "Enable". Check the "Clear Clipboard?" checkbox to enable clearing. 
 
 	You can also see some additional sub-features under "UI Manager" such as Enabling/Disabling AutoCorrect, HomeKey, Bluetooth Pairing Popup, setting current locale, default input method etc which could be configured as well.    
 
@@ -374,7 +374,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxUIManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us enable the Clipboard first and then clear it of our Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us enable the Clipboard first and then clear it of our Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -405,7 +405,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxUIManagerTutorialImages/no_data.png)
 
-    This is how UI Manager lets us enable, disable and clear Clipboard of the Symbol Android device using Profile Wizard. 
+    This is how UI Manager lets us enable, disable and clear Clipboard of the Zebra Android device using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -423,7 +423,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Clipboard using Wireless Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Touch Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Clipboard using Wireless Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Touch Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

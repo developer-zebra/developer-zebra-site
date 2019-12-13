@@ -29,7 +29,7 @@ productversion: '7.5'
 
 	`cd /Users/<user>/Library/Android/sdk/platform-tools/`
 
-3. Connect a Symbol Android device and enter the following commands to restart the ADB and verify the list of attached devices.
+3. Connect a Zebra Android device and enter the following commands to restart the ADB and verify the list of attached devices.
 
 	`./adb kill-server`
 
@@ -92,7 +92,7 @@ Removes the EMDK OS Update application on successful update.
 **EMDK Device Runtime Installation Steps**
 
 1. Create `emdkosupdateconfig.xml` and push into `/enterprise/usr/` to modify the default behavior.
-2. Push the `EmdkOSUpdateApp_[version].apk` to a supported Symbol device.
+2. Push the `EmdkOSUpdateApp_[version].apk` to a supported Zebra device.
 3. Install EmdkOSUpdateApp application.
 4. Launch installed EmdkOSUpdateApp application.
 

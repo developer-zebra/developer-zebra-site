@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../../mx/touchmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Zebra Android device using [Touch Manager](../../mx/touchmgr) feature of Mx. 
 
-So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using MX [Touch Manager](../../mx/touchmgr) feature. 
+So now we will create a tutorial and configure the touch of your Zebra Android device by specifying touch mode using MX [Touch Manager](../../mx/touchmgr) feature. 
         
 
 
@@ -33,7 +33,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     Provide some name in the "Name" field (Ex. MyTouchManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    The drop-down "Touch Action" provides different modes that you can choose to set the Touch of your Symbol Android device. You can select "Stylus and Finger", "Glove and Finger" or keep the existing setting. We will select "Glove and Finger" option as the Touch Mode. 
+    The drop-down "Touch Action" provides different modes that you can choose to set the Touch of your Zebra Android device. You can select "Stylus and Finger", "Glove and Finger" or keep the existing setting. We will select "Glove and Finger" option as the Touch Mode. 
 
     > Note: So if we select "Glove and Finger" option, we will not be able to use stylus to interact with the device.     
 
@@ -375,7 +375,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxTouchManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us set the touch mode to "Glove and Finger" on our Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us set the touch mode to "Glove and Finger" on our Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -384,7 +384,7 @@ That's it!!! We are done with all the coding and configuration part that will le
     > Note:   
     > Make sure the device is in USB debug.
 
-    Before running the application, We will see the existing touch mode on the Symbol Android device. 
+    Before running the application, We will see the existing touch mode on the Zebra Android device. 
 
     Go to device's Settings -> Display -> Touch Mode.
 
@@ -404,7 +404,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxTouchManagerTutorialImages/touch_mode_changed.png)
 
-    This is how Touch Manager is used to set the Touch Mode of your Symbol Android device using Profile Wizard. 
+    This is how Touch Manager is used to set the Touch Mode of your Zebra Android device using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -422,7 +422,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Touch Mode using Touch Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Settings Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Touch Mode using Touch Manager on your Zebra Android devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Settings Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

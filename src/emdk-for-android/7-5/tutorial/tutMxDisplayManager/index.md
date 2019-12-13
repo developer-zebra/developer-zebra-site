@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../mx/displaymgr) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Zebra Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../mx/displaymgr) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Zebra device. 
 
-So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using MX [Display Manager](../../mx/displaymgr) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
+So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using MX [Display Manager](../../mx/displaymgr) feature on your Zebra Android device. It means the screen of your Zebra device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
         
 
 ## Creating The Project
@@ -41,7 +41,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
   
     ![img](../../images/MxDisplayManagerTutorialImages/display_profile_created.jpg)
 
-6. Click Finish and your Display profile for configuring screen off timeout interval of your Symbol Android device is created.
+6. Click Finish and your Display profile for configuring screen off timeout interval of your Zebra Android device is created.
 
     ![img](../../images/MxDisplayManagerTutorialImages/display_manager_profile_created.jpg) 
   
@@ -386,7 +386,7 @@ That's it!!! We are done with all the coding and configuration part that will le
     > Note:   
     > Make sure the device is in USB debug.
 
-    Before running the application, let's checkout the default Screen off Timeout Interval (Sleep Interval) of the Symbol device. 
+    Before running the application, let's checkout the default Screen off Timeout Interval (Sleep Interval) of the Zebra device. 
 
     Go to device's Settings -> Display and check "Sleep" Option
 
@@ -406,7 +406,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxDisplayManagerTutorialImages/default_sleep_changed.png)
 
-    This is how Display Manager allows us to set, Screen Off Timeout Interval (Sleep Interval) of Symbol devices using Profile Wizard. 
+    This is how Display Manager allows us to set, Screen Off Timeout Interval (Sleep Interval) of Zebra devices using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -424,7 +424,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Screen Off Timeout Interval of Symbol devices using Display Manager through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Power Key Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Screen Off Timeout Interval of Zebra devices using Display Manager through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Power Key Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

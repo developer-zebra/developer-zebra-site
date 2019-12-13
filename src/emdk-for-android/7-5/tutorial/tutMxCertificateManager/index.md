@@ -7,7 +7,7 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](../../mx/certmgr).
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Zebra device using [Certificate Manager](../../mx/certmgr).
 
 You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](../../mx/certmgr) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
 
@@ -32,7 +32,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxCertManagerTutorialImages/certificate_keystore.jpg)
 
-4. Now we have to add the feature to install our sample CA certificate on Symbol device. But, we need to make sure that before installing or uninstalling certificates, a keystore must exist. It means, we need to initialize Android Keystore on our Symbol device. When you initialize the Android keystore you create a new keystore replacing any previously existing one. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile. We will use Certificate Manager feature multiple times with the same profile in this tutorial. This Certificate Manager feature will be used to initialize Android Keystore.
+4. Now we have to add the feature to install our sample CA certificate on Zebra device. But, we need to make sure that before installing or uninstalling certificates, a keystore must exist. It means, we need to initialize Android Keystore on our Zebra device. When you initialize the Android keystore you create a new keystore replacing any previously existing one. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile. We will use Certificate Manager feature multiple times with the same profile in this tutorial. This Certificate Manager feature will be used to initialize Android Keystore.
 
 	Provide some name in the "Name" field (Ex. "MyKeystore"). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
@@ -44,13 +44,13 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	![img](../../images/MxCertManagerTutorialImages/keystore_password.jpg)
 
-7. As mentioned, we will add another Certificate Manager feature in the same profile to install our sample CA Certificate on Symbol device. Select the "Certificate Manager" feature from the list and click "Right Arrow". This Certificate Manager will be use to install CA Certificate on Symbol device.
+7. As mentioned, we will add another Certificate Manager feature in the same profile to install our sample CA Certificate on Zebra device. Select the "Certificate Manager" feature from the list and click "Right Arrow". This Certificate Manager will be use to install CA Certificate on Zebra device.
 
 	![img](../../images/MxCertManagerTutorialImages/certificate_feature.jpg)  
 
     Provide some name in the "Name" field (Ex. MyCertificateManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    So as discussed, you can install different types of certificates (.PEM, .PFX, .P12 etc. ) on your Symbol device using Certificate Manager. Here, we will install a sample CA certificate (.PEM file) that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network. 
+    So as discussed, you can install different types of certificates (.PEM, .PFX, .P12 etc. ) on your Zebra device using Certificate Manager. Here, we will install a sample CA certificate (.PEM file) that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network. 
 
     Execute following steps to proceed:
  
@@ -79,7 +79,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
   
     ![img](../../images/MxCertManagerTutorialImages/certificate_profile_created.jpg)
 
-	> Note: As you can see, we have added two Certificate Manager features in the same profile to Initialize Android Keystore and Install sample CA Certificate respectively on the Symbol device.
+	> Note: As you can see, we have added two Certificate Manager features in the same profile to Initialize Android Keystore and Install sample CA Certificate respectively on the Zebra device.
 
 9. Click Finish and your Certificate profile for initializing Android Keystore and installing CA Certificate is created.
 
@@ -414,7 +414,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxCertManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us install the sample CA certificate on Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us install the sample CA certificate on Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -436,7 +436,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
   
-4. Let us verify this by executing following steps on your Symbol device:
+4. Let us verify this by executing following steps on your Zebra device:
 
 	* Navigate to Settings -> Wi-Fi. 
 	* Press "+" button to add a Wi-Fi network.
@@ -461,7 +461,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxCertManagerTutorialImages/uninstall_certificate.jpg)
 
-6. This is how Certificate Manager lets us configure different types of certificate on the Symbol Android device using Profile Wizard. 
+6. This is how Certificate Manager lets us configure different types of certificate on the Zebra Android device using Profile Wizard. 
 
 -----
 
@@ -480,7 +480,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure various types of certificates using Certificate Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure various types of certificates using Certificate Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

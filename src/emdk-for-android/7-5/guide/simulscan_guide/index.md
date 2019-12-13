@@ -31,7 +31,7 @@ Customers can interactively capture documents and obtain meaningful data present
 
 - Setup the license on the device (**TC55 2.42 and later devices**)
 
-	- Go to Settings -> About phone -> Legal information -> Symbol licenses (this will only be available on a 2.42+ BSP device)
+	- Go to Settings -> About phone -> Legal information -> Zebra licenses (this will only be available on a 2.42+ BSP device)
 	- Click on the Android menu button -> Install license
 	- Navigate to the XML you copied
 	- Once this is complete, the License Information should be updated to reflect the fact that a license is installed
@@ -454,7 +454,7 @@ Use the region object's .getRegionType() method to first determine the region ty
 
 ###Important considerations
 
-Due to a known issue with the Symbol SimulScan framework version 1.8, the orientation of your application must be fixed preferably using the AndroidManifest.xml. Failing to do so may cause your application to hang if the orientation changes during a scan.
+Due to a known issue with the Zebra SimulScan framework version 1.8, the orientation of your application must be fixed preferably using the AndroidManifest.xml. Failing to do so may cause your application to hang if the orientation changes during a scan.
 
 
 ##SimulScan Default Templates

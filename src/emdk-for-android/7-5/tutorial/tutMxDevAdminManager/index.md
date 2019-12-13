@@ -7,11 +7,11 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Symbol Android device using [DevAdmin Manager](../../mx/devadmin) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on  whether to allow or not the installation of apps from unknown sources on your Zebra Android device using [DevAdmin Manager](../../mx/devadmin) feature of Mx.
 
 > Note: Your phone and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these apps. 
 
-So we will now create a tutorial to allow the installation of apps from unknown sources on Symbol devices using MX [DevAdmin Manager](../../mx/devadmin) feature.
+So we will now create a tutorial to allow the installation of apps from unknown sources on Zebra devices using MX [DevAdmin Manager](../../mx/devadmin) feature.
         
 
 ## Creating The Project
@@ -33,7 +33,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 4. Provide some name in the "Name" field (Ex. MyDevAdminManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-	DevAdmin Manager also provides other features that you can try out are setting the Screen-Lock Timeout Interval, after which the screen-lock would occur and configuring Device Administration on your Symbol device by providing package name and class name of Device Administrator.
+	DevAdmin Manager also provides other features that you can try out are setting the Screen-Lock Timeout Interval, after which the screen-lock would occur and configuring Device Administration on your Zebra device by providing package name and class name of Device Administrator.
 
     So as discussed, we will allow installation of apps from unknown sources using DevAdmin feature of MX through Profile Manager wizard. So click on "Install App from Unknown Sources" drop-down in the wizard and select the option "Turn on".    
 
@@ -380,7 +380,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxDevAdminManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us allow installation of apps from unknown sources on Symbol device. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us allow installation of apps from unknown sources on Zebra device. Now let's run the application.
  
 ## Running the Application
 
@@ -404,7 +404,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxDevAdminManagerTutorialImages/unknown_sources_on.png)
 
-    This is how DevAdmin Manager allows us to install applications from Unknown Sources on Symbol device using Profile Wizard. 
+    This is how DevAdmin Manager allows us to install applications from Unknown Sources on Zebra device using Profile Wizard. 
 
 -----
 
@@ -423,7 +423,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to allow installation of applications from unknown sources using DevAdmin Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to allow installation of applications from unknown sources using DevAdmin Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

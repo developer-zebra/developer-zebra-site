@@ -6,7 +6,7 @@ productversion: '7.5'
 ---
 
 ## Overview
-On Symbol devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
+On Zebra devices like the MC40, extra battery information can be retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html). Setting up to receive this information is the same as with consumer Android devices. However, the data that is returned to your application includes some extra information like:
 
 * Backup Battery Voltage
 * Battery Manufacture Date
@@ -25,7 +25,7 @@ On Symbol devices like the MC40, extra battery information can be retrieved usin
 	registerReceiver(mIntent_Receiver,mIntentFilter);  
 
 ## Processing The Data
-In the below code we are getting the Symbol specific battery information provided by the [Battery Intent](/emdk-for-android/7-5/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
+In the below code we are getting the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/7-5/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
 
 	:::java
 	public void onReceive(Context context, Intent intent) {      

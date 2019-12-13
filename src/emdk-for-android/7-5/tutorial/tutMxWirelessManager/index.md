@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring wireless configurations on your Symbol Android device (Ex. Configure device's Bluetooth) using [Wireless Manager](../../mx/wirelessmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring wireless configurations on your Zebra Android device (Ex. Configure device's Bluetooth) using [Wireless Manager](../../mx/wirelessmgr) feature of Mx. 
 
-So now we will create a tutorial and configure (Enable/Disable) the Bluetooth of your Symbol Android device using MX [Wireless Manager](../../mx/wirelessmgr) feature. 
+So now we will create a tutorial and configure (Enable/Disable) the Bluetooth of your Zebra Android device using MX [Wireless Manager](../../mx/wirelessmgr) feature. 
 
 ## Creating The Project
 
@@ -33,7 +33,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	You can see some additional sub-features under "Wireless Manager" such as turning ON/OFF NFC, GPS, WWAN etc.
 
-    So as discussed, you can configure Bluetooth of your Symbol Android device in Wireless Manager feature of Mx. So we will enable Bluetooth of the device by configuring Wireless Manager through wizard. So click on Bluetooth drop-down in the wizard and select the option "Enable".    
+    So as discussed, you can configure Bluetooth of your Zebra Android device in Wireless Manager feature of Mx. So we will enable Bluetooth of the device by configuring Wireless Manager through wizard. So click on Bluetooth drop-down in the wizard and select the option "Enable".    
 
     ![img](../../images/MxWirelessManagerTutorialImages/wireless_manager_details.jpg)
 
@@ -375,7 +375,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxWirelessManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us enable Bluetooth of Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us enable Bluetooth of Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -402,7 +402,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxWirelessManagerTutorialImages/bluetooth_on.png)
 
-    This is how Wireless Manager lets us enable Bluetooth of the Symbol Android device using Profile Wizard. 
+    This is how Wireless Manager lets us enable Bluetooth of the Zebra Android device using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -420,7 +420,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Bluetooth using Wireless Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "UI Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Bluetooth using Wireless Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "UI Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

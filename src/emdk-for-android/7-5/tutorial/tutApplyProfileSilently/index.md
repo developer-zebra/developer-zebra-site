@@ -12,7 +12,7 @@ This guide will walk you through creating an EMDK For Android application that w
 
 **Problem:**
 
-The MX features are used to perform device configurations through EMDK profiles as well as programmatically. When we are configuring any MX feature through EMDK Profile wizard we may not require User Interface. Moreover, the operation of applying EMDK profile configuration to device takes place on the UI main thread. Depending on the MX feature and complexity, it takes few seconds to apply configurations to the Symbol device. So the application's UI thread is blocked for these few seconds and user cannot interact with application's UI within that time period. Even if the user tries to interact with application's UI, the application does not respond showing "Application Not Responding" (ANR) message asking user to wait.
+The MX features are used to perform device configurations through EMDK profiles as well as programmatically. When we are configuring any MX feature through EMDK Profile wizard we may not require User Interface. Moreover, the operation of applying EMDK profile configuration to device takes place on the UI main thread. Depending on the MX feature and complexity, it takes few seconds to apply configurations to the Zebra device. So the application's UI thread is blocked for these few seconds and user cannot interact with application's UI within that time period. Even if the user tries to interact with application's UI, the application does not respond showing "Application Not Responding" (ANR) message asking user to wait.
 
 **Reason:**
 

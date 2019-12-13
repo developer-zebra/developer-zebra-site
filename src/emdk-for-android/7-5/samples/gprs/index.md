@@ -26,7 +26,7 @@ productversion: '7.5'
 ---
 
 ##Overview
-The EMDK for Android allows you to add or remove APNs to a Symbol device. 
+The EMDK for Android allows you to add or remove APNs to a Zebra device. 
 
 The available actions are:
   

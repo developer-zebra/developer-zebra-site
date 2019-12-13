@@ -9,7 +9,7 @@ productversion: '7.5'
 
 This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on creating Encrypted File System (EFS) for storing application data on the internal/external storage using [Encrypt Manager](../../mx/encryptmgr) feature of Mx. Encrypted File System (EFS) enables files to be transparently encrypted to protect confidential data from attackers with physical access to the device. On the other hand [Encrypt Manager](../../mx/encryptmgr) enables you, as a developer to set encryption policies on device through MX XML.   
 
-So now we will create a tutorial to install a new Encryption Key and use this key while creating Encrypted File System (EFS) on the external storage of your Symbol device using MX [Encrypt Manager](../../mx/encryptmgr) feature through Profile Wizard.
+So now we will create a tutorial to install a new Encryption Key and use this key while creating Encrypted File System (EFS) on the external storage of your Zebra device using MX [Encrypt Manager](../../mx/encryptmgr) feature through Profile Wizard.
         
 ###Prerequisites
 
@@ -18,7 +18,7 @@ So now we will create a tutorial to install a new Encryption Key and use this ke
 ## Creating The Project
 
 > Note: 1. Provide "EncryptManagerTutorial" as the project name for this tutorial. 
-> 2. This feature requires Symbol device with Android KitKat 4.4. 
+> 2. This feature requires Zebra device with Android KitKat 4.4. 
 
 Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio).
  
@@ -55,7 +55,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
   
     ![img](../../images/MxEncryptManagerTutorialImages/encrypt_profile_created.jpg)
 
-6. Click Finish and your Encrypt profile for creating an Encrypted File System (EFS) on the SD Card (External Storage) of Symbol device would be created.
+6. Click Finish and your Encrypt profile for creating an Encrypted File System (EFS) on the SD Card (External Storage) of Zebra device would be created.
 
     ![img](../../images/MxEncryptManagerTutorialImages/encrypt_manager_profile_created.jpg) 
   
@@ -390,7 +390,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxEncryptManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us create an encrypted file system (EFS) of 5MB with an encryption key on the SD Card (External Storage) of Symbol device using [Encrypt Manager](../../mx/encryptmgr) feature of Mx. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us create an encrypted file system (EFS) of 5MB with an encryption key on the SD Card (External Storage) of Zebra device using [Encrypt Manager](../../mx/encryptmgr) feature of Mx. Now let's run the application.
  
 ## Running the Application
 
@@ -420,7 +420,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 	![img](../../images/MxEncryptManagerTutorialImages/efs_created.png)
 
 
-    This is how you can create Encrypted File System (EFS) along with the installation of Encryption Key on the internal/external SD Card storage using [Encrypt Manager](../../mx/encryptmgr) feature on Symbol devices through Profile Wizard. 
+    This is how you can create Encrypted File System (EFS) along with the installation of Encryption Key on the internal/external SD Card storage using [Encrypt Manager](../../mx/encryptmgr) feature on Zebra devices through Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -438,7 +438,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to create Encrypted File System (EFS) on the internal/external storage of SD Card using [Encrypt Manager](../../mx/encryptmgr) on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Threat Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to create Encrypted File System (EFS) on the internal/external storage of SD Card using [Encrypt Manager](../../mx/encryptmgr) on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Threat Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

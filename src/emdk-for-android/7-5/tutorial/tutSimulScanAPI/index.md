@@ -99,7 +99,7 @@ If you are using features that require a license, please follow these steps:
 1. Request a trial license from Product Manager (Andrew.Knight@zebra.com).
 2. Copy the License.xml file received from the licensing server to a location on the sdcard.
 3. Upgrade the TC55 or TC75 software to the latest [2.46 and above for TC55, 0901 and above for TC75].
-4. Launch the Settings app -> About Phone –> Legal Information -> Symbol Licenses -> Install a
+4. Launch the Settings app -> About Phone –> Legal Information -> Zebra Licenses -> Install a
 license ? -> Yes -> point to the file on the sdcard.
 
 This will install the license . For mass deployment, end customers would need to use StageNow.
@@ -726,7 +726,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	![img](../../images/SimulScanTutorialImages/on_closed.jpg)  	       
       	
-	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Symbol device UI using [SimulScan APIs](/emdk-for-android/7-5/api/simulscan) introduced in EMDK V 3.1. Now let us run the application.
+	That's it!!! We are done with all the coding and configuration part that will let us scan the template stored in sdcard and display fields that we marked in the template, on Zebra device UI using [SimulScan APIs](/emdk-for-android/7-5/api/simulscan) introduced in EMDK V 3.1. Now let us run the application.
  
 ## Running the Application
 

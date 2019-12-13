@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring roaming state of your Symbol Android device (Ex. Turn ON/OFF state of Data Roaming) using [Cellular Manager](../../mx/cellularmgr) feature of MX. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring roaming state of your Zebra Android device (Ex. Turn ON/OFF state of Data Roaming) using [Cellular Manager](../../mx/cellularmgr) feature of MX. 
 
-So now we will create a tutorial to turn the state of Data Roaming ON using MX [Cellular Manager](../../mx/cellularmgr) feature on your Symbol Android device. 
+So now we will create a tutorial to turn the state of Data Roaming ON using MX [Cellular Manager](../../mx/cellularmgr) feature on your Zebra Android device. 
         
 
 ## Creating The Project
@@ -31,7 +31,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 4. Provide some name in the "Name" field (Ex. MyCellularManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-	Cellular Manager also allows you to configure (Turn ON/OFF) the state of Background Data on your Symbol devices.
+	Cellular Manager also allows you to configure (Turn ON/OFF) the state of Background Data on your Zebra devices.
 
 	> Note: If you turn "State of Background Data" ON, some of the apps and services won't work unless you're connected to Wi-Fi.
 
@@ -379,7 +379,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxCellularManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us turn ON the state of Data Roaming on Symbol device. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us turn ON the state of Data Roaming on Zebra device. Now let's run the application.
  
 ## Running the Application
 
@@ -388,7 +388,7 @@ That's it!!! We are done with all the coding and configuration part that will le
     > Note:   
     > Make sure the device is in USB debug.
 
-    Before running the application, We will make sure that Data Roaming of our Symbol device is turned OFF. 
+    Before running the application, We will make sure that Data Roaming of our Zebra device is turned OFF. 
 
     Go to device's Settings -> Mobile Networks and make sure that "Data Roaming" is unchecked.
 
@@ -406,7 +406,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxCellularManagerTutorialImages/data_roaming_on.png)
 
-    This is how Cellular Manager lets us turn ON/OFF Data Roaming of the Symbol devices using Profile Wizard. 
+    This is how Cellular Manager lets us turn ON/OFF Data Roaming of the Zebra devices using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -423,7 +423,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to set Roaming State using Cellular Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Display Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to set Roaming State using Cellular Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Display Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

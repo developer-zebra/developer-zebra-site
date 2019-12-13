@@ -813,7 +813,7 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-5/tut
 
 10. Now we need to use the `onOpened` method to get a reference to the [EMDKManager](/emdk-for-android/7-5/api/core/EMDKManager). The [EMDKListener](/emdk-for-android/7-5/api/core/EMDKManager-EMDKListener) interface will trigger this event when the EMDK is ready to be used. The [EMDKListener](/emdk-for-android/7-5/api/core/EMDKManager-EMDKListener) interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance of [Barcode Manager](/emdk-for-android/7-5/api/barcode/BarcodeManager) to enable scanning.
 
-    Once that is done, we need to get all the scanner devices that a Symbol Android device supports with the default one selected first using `enumerateScannerDevices()` that we will declare in the next step. We are not calling `initializeScanner()` and `setProfile` methods here as we have already called them in the device selection spinner listener.
+    Once that is done, we need to get all the scanner devices that a Zebra Android device supports with the default one selected first using `enumerateScannerDevices()` that we will declare in the next step. We are not calling `initializeScanner()` and `setProfile` methods here as we have already called them in the device selection spinner listener.
 
 	> Note: 
     > Rename the argument of `onOpened` method from `arg0` to `emdkManager` 
@@ -832,7 +832,7 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-5/tut
     
     ![img](../../images/AdvancedScanningTutorialImages/on_opened_method.jpg)
     	                        
-11. To get rid of error, we will create `enumerateScannerDevices` that will get all the scanner devices that a Symbol Android device supports with the default one selected first. It uses `getSupportedDevicesInfo` method on `barcodeManager` instance that returns a list of supported scanner devices for that particular Symbol device. We will then iterate through this list, get the friendly names of each scanner device and add them to our list with those names to show user in Device Spinner.
+11. To get rid of error, we will create `enumerateScannerDevices` that will get all the scanner devices that a Zebra Android device supports with the default one selected first. It uses `getSupportedDevicesInfo` method on `barcodeManager` instance that returns a list of supported scanner devices for that particular Zebra device. We will then iterate through this list, get the friendly names of each scanner device and add them to our list with those names to show user in Device Spinner.
 
 		:::java
 		// Go through and get the available scanner devices
@@ -1073,7 +1073,7 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-5/tut
 
     ![img](../../images/AdvancedScanningTutorialImages/on_closed_method.jpg)
 	
-That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/7-5/api) introduced in EMDK V 3.0. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us perform some advanced barcode scanning operations on our Zebra Android device using [Barcode/Scanning APIs](/emdk-for-android/7-5/api) introduced in EMDK V 3.0. Now let us run the application.
  
 ## Running the Application
 
@@ -1085,7 +1085,7 @@ That's it!!! We are done with all the coding part that will let us perform some 
 
     You can see a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html), which indicates that the Scanner has been enabled and you can start scanning by pressing hard scan button of the device.
   
-3. Now if you press and hold the Scan button on the UI, the status listener in the code starts working and current status of Scanner is displayed in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Scanning`. The "Scanner Device Type" Spinner shows Serial SSI Scanner as it is the default scanner for Symbol TC55 device. All the decoders are checked, which means current configuration scan supports all of these decoder types. But Scan Tone is `NONE`, which means there won't be any tone/sound while scanning a barcode.   
+3. Now if you press and hold the Scan button on the UI, the status listener in the code starts working and current status of Scanner is displayed in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Scanning`. The "Scanner Device Type" Spinner shows Serial SSI Scanner as it is the default scanner for Zebra TC55 device. All the decoders are checked, which means current configuration scan supports all of these decoder types. But Scan Tone is `NONE`, which means there won't be any tone/sound while scanning a barcode.   
 
     ![img](../../images/AdvancedScanningTutorialImages/status_scanning.png)
 
@@ -1111,7 +1111,7 @@ It will display a success toast when the changes are applied each time you chang
 
 	![img](../../images/AdvancedScanningTutorialImages/final_scan.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/7-5/api) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Symbol devices without using Profile Wizard. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/7-5/api) introduced in EMDK V 3.0 can be used to perform some of the Advanced Scanning operations using soft scan key through application on your Zebra devices without using Profile Wizard. 
 
 ##Important Programming Tips##
 

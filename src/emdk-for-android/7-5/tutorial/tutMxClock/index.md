@@ -12,7 +12,7 @@ This feature expects following attributes from user to set Clock on the symbol A
 
 * **Timezone:** - TimeZone in Android supported format
 * **Date:** - UTC Date to set on the device.
-* **Time:** - UTC Time to set on Symbol device.
+* **Time:** - UTC Time to set on Zebra device.
 * **AutoTime:** - Select this feature to use network provided time on the symbol device. 
 
 
@@ -29,11 +29,11 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.  
   
-3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Clock" feature from the list and click "Right Arrow". The parameter list will be populated. Using this feature you can configure the date and time of the Symbol device. 
+3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Clock" feature from the list and click "Right Arrow". The parameter list will be populated. Using this feature you can configure the date and time of the Zebra device. 
 
     ![img](../../images/MxClockTutorialImages/clock_feature_parameters.jpg)
   
-4. Enter the TimeZone, Date and Time you wish to enter. All the timings need to be in UTC. It means if you want to set the Timezone to PST, you will need to set the clock to GMT time and it will automatically change it to the local time for you. The AutoTime feature lets you use network provided time on the Symbol Android device. Keep it unchecked for this tutorial.
+4. Enter the TimeZone, Date and Time you wish to enter. All the timings need to be in UTC. It means if you want to set the Timezone to PST, you will need to set the clock to GMT time and it will automatically change it to the local time for you. The AutoTime feature lets you use network provided time on the Zebra Android device. Keep it unchecked for this tutorial.
 
     > Note: It means the time you enter always has to be in GMT.  
   

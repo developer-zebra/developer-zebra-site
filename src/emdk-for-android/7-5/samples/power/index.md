@@ -24,7 +24,7 @@ productversion: '7.5'
 ---
 
 ##Overview
-The EMDK for Android allows you to control the power state of a Symbol device. 
+The EMDK for Android allows you to control the power state of a Zebra device. 
 
 The available actions are:  
 - Do Nothing  

@@ -25,7 +25,7 @@ The tutorial will be designed to configure Wi-Fi settings with following feature
 * Remove an existing Network
    
 ###Prerequisites
-* Wi-Fi on your Symbol Android device must be enabled.
+* Wi-Fi on your Zebra Android device must be enabled.
 
 ## Creating The Project
 
@@ -522,7 +522,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 
 ## What's Next
-Now that you have learned how to configure your device's Wi-Fi settings as well as network profiles on your Symbol Android devices through applications using MX Wi-Fi feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Certificate Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure your device's Wi-Fi settings as well as network profiles on your Zebra Android devices through applications using MX Wi-Fi feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Certificate Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

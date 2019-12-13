@@ -7,7 +7,7 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Access Points of the mobile networks present in your Symbol Android device using [GPRS Manager](../../mx/gprsmgr) feature of Mx. [GPRS Manager](../../mx/gprsmgr) allows you to perform following operations on Access Points of your device's mobile network: 
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Access Points of the mobile networks present in your Zebra Android device using [GPRS Manager](../../mx/gprsmgr) feature of Mx. [GPRS Manager](../../mx/gprsmgr) allows you to perform following operations on Access Points of your device's mobile network: 
 
 **1. Add/Replace named APN:**
 
@@ -484,7 +484,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     You can now see that all the APN's have been successfully removed from the device's APN list.
 
-    This is how the GPRS manager lets us configure Access Points of the Symbol device.
+    This is how the GPRS manager lets us configure Access Points of the Zebra device.
 
 ##Important Programming Tips##
 
@@ -505,7 +505,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure the Access Points on your Symbol Android devices through applications, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Access Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure the Access Points on your Zebra Android devices through applications, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Access Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

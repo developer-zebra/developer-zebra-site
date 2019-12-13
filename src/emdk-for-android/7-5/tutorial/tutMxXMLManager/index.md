@@ -7,7 +7,7 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Symbol Android device using [XML Manager](../../mx/xml) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing the XML processing by specifying the XML processing mode to use on your Zebra Android device using [XML Manager](../../mx/xml) feature of Mx.
 
 The XML Manager supports following XML processing Modes:
 
@@ -16,7 +16,7 @@ The XML Manager supports following XML processing Modes:
 * Try until error, then Skip to Catch
 * Catch error, Execute remainder
 
-Let us create a tutorial and configure the XML processing mode on your Symbol Android device using MX [XML Manager](/emdk-for-android/7-5/mx/mx/xml) feature. 
+Let us create a tutorial and configure the XML processing mode on your Zebra Android device using MX [XML Manager](/emdk-for-android/7-5/mx/mx/xml) feature. 
         
 
 ## Creating The Project
@@ -38,7 +38,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     Provide some name in the "Name" field (Ex. MyXMLManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    The drop-down "XML Processing Mode" provides different modes of processing XML that you can choose for your Symbol Android device. Select the XML processing mode of your choice. Let us select the first XML processing mode "Execute all to end".         
+    The drop-down "XML Processing Mode" provides different modes of processing XML that you can choose for your Zebra Android device. Select the XML processing mode of your choice. Let us select the first XML processing mode "Execute all to end".         
 
     ![img](../../images/MxXMLManagerTutorialImages/xml_manager_details.jpg)
 
@@ -378,7 +378,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxXMLManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us configure XML processing mode on our Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us configure XML processing mode on our Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -399,7 +399,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
     ![img](../../images/MxXMLManagerTutorialImages/touch_mode_changed.png)
 
-    This is how XML Manager is used to specify XML processing mode on your Symbol Android device using Profile Wizard. 
+    This is how XML Manager is used to specify XML processing mode on your Zebra Android device using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -417,7 +417,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure XML Processing Mode using XML Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Wireless Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure XML Processing Mode using XML Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Wireless Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

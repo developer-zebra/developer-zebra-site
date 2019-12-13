@@ -7,14 +7,14 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](../../mx/browsermgr) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../../mx/browsermgr) through Profile Wizard.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Zebra Android device using [Browser Manager](../../mx/browsermgr) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../../mx/browsermgr) through Profile Wizard.
 
-So now we will create a tutorial using MX [Browser Manager](../../mx/browsermgr) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
+So now we will create a tutorial using MX [Browser Manager](../../mx/browsermgr) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Zebra Android device.
 
 
 ## Creating The Project
 
-> Note: 1. Provide "BrowserManagerTutorial" as the project name for this tutorial. 2. This feature requires Symbol device with Android KitKat 4.4.  
+> Note: 1. Provide "BrowserManagerTutorial" as the project name for this tutorial. 2. This feature requires Zebra device with Android KitKat 4.4.  
 
 Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio).
 
@@ -31,7 +31,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 4. Provide some name in the "Name" field (Ex. MyBrowserManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    So as discussed, we will set `youtube.com` as the `Default Home Page` for the browser of Symbol device. Provide URL of Youtube `http://www.youtube.com` in front of `Set Default Home Page` field.
+    So as discussed, we will set `youtube.com` as the `Default Home Page` for the browser of Zebra device. Provide URL of Youtube `http://www.youtube.com` in front of `Set Default Home Page` field.
 
 	We had also discussed about turning the "Save Form Data" feature OFF. By turning this feature OFF, the forms of your browser will no longer remember the data you type in them. Click on "Turn on/off Save Form Data" drop-down and select the option "Turn off".
 
@@ -374,7 +374,7 @@ When done, your AndroidManifest.xml should resemble the following:
 
 
 
-That's it!!! We are done with all the coding and configuration part that will let us set the browsers homepage and disable saving of form data on Symbol device. Now let's run the application.
+That's it!!! We are done with all the coding and configuration part that will let us set the browsers homepage and disable saving of form data on Zebra device. Now let's run the application.
 
 ## Running the Application
 

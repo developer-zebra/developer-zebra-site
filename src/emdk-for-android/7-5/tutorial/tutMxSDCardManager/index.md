@@ -9,7 +9,7 @@ productversion: '7.5'
 
 This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. This tutorial will focus on configuring SD Card by allowing you to Enable/Disable the use of it using [SD Card Manager](../../mx/sdcardmgr) feature of Mx. 
 
-So now we will create a tutorial to disable the use of external SD Card and then enable it back using MX [SD Card Manager](../../mx/sdcardmgr) feature through Profile Wizard on your Symbol device. 
+So now we will create a tutorial to disable the use of external SD Card and then enable it back using MX [SD Card Manager](../../mx/sdcardmgr) feature through Profile Wizard on your Zebra device. 
         
 ###Prerequisites
 * Make sure you have an external SD Card in the device
@@ -17,7 +17,7 @@ So now we will create a tutorial to disable the use of external SD Card and then
 ## Creating The Project
 
 > Note: 1. Provide "SDCardManagerTutorial" as the project name for this tutorial. 
-> 2. This feature requires Symbol device with Android KitKat 4.4. 
+> 2. This feature requires Zebra device with Android KitKat 4.4. 
 
 Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio). 
 
@@ -35,7 +35,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 4. Provide some name in the "Name" field (Ex. MySDCardManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    So as discussed, we will disable the use of SD Card in the Symbol device using SD Card Manager feature of MX through Profile Manager wizard. So click on "Enable or Disable use of SdCard" drop-down in the wizard and select the option "Disable".    
+    So as discussed, we will disable the use of SD Card in the Zebra device using SD Card Manager feature of MX through Profile Manager wizard. So click on "Enable or Disable use of SdCard" drop-down in the wizard and select the option "Disable".    
 
     ![img](../../images/MxSDCardManagerTutorialImages/sd_card_manager_details.jpg)
 
@@ -421,7 +421,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	![img](../../images/MxSDCardManagerTutorialImages/sd_card_enabled.png)
 
-    This is how you can Enable/Disable the use of SD Card using [SD Card Manager](../../mx/sdcardmgr) on Symbol devices using Profile Wizard. 
+    This is how you can Enable/Disable the use of SD Card using [SD Card Manager](../../mx/sdcardmgr) on Zebra devices using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -439,7 +439,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure the use of SD Card (Enable/Disable) using [SD Card Manager](../../mx/sdcardmgr) on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Encrypt Manager" feature of MX and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure the use of SD Card (Enable/Disable) using [SD Card Manager](../../mx/sdcardmgr) on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Encrypt Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

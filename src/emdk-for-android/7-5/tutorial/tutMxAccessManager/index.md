@@ -978,7 +978,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
     You can see that the application with package name "com.allinstalledapps" has been removed from the whitelist as there are only two application whereas we had added three application previously in the whitelist.
 
-8. In this way, you can configure and test various features of MX Access Manager on your Symbol device.      
+8. In this way, you can configure and test various features of MX Access Manager on your Zebra device.      
 
 ##Important Programming Tips##
 

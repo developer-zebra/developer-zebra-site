@@ -393,9 +393,9 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 * **Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports values from 0-60000, in steps of 100 (i.e. 0, 100, 200, 300...). 
 
-* **Same Symbol Timeout -** Suppress decoding the same symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000, in steps of 500 (i.e. 0, 500, 1000, 1500...). 
+* **Same Zebra Timeout -** Suppress decoding the same symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000, in steps of 500 (i.e. 0, 500, 1000, 1500...). 
 
-* **Different Symbol Timeout -** Suppress decoding an additional symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000 in steps of 500 (i.e. 0, 500, 1000, 1500...).
+* **Different Zebra Timeout -** Suppress decoding an additional symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000 in steps of 500 (i.e. 0, 500, 1000, 1500...).
 
 * **Illumination mode -** Enable/Disable illumination depending on ambient light conditions.
 
@@ -485,7 +485,7 @@ Allows the configuration of Code Id and decode feedback options.
 * **Code ID Type -** A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 	* Code ID Type None - No prefix (default).
 	* Code ID Type Aim - A standards based three character prefix.
-	* Code ID Type Symbol - A Symbol defined single character prefix.
+	* Code ID Type Symbol - A symbol defined single character prefix.
 
 **Note: Not all ringtones are fully supported as decode tones**. Ringtones of longer length may be truncated when used as a decode tone. Zebra recommends testing the selected tone(s) for desired operation before deployment.
 

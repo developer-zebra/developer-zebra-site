@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](../../mx/usbmgr) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Zebra Android device using [USB Manager](../../mx/usbmgr) feature of Mx.
  
-So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using MX [USB Manager](../../mx/usbmgr) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
+So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Zebra Android device using MX [USB Manager](../../mx/usbmgr) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
         
 
 ## Creating The Project
@@ -31,7 +31,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     Provide some name in the "Name" field (Ex. MyUSBManager). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 
-    You can see number of options for configuring different USB settings. Some of them are dependent on each other. We can configure every option in the profile editor window for USB Manager. As mentioned above we will configure the ADB mode (USB Debugging Mode) in this tutorial. Since we want to run our application on Symbol device, the ADB mode (USB Debugging Mode) is ON. So let us configure "USB ADB Usage" option. If you disable this option, you will not be able to run any Android application on the device as there will not be any communication between your machine and device. If you enable this option, the USB degugger will be turned ON and you can run your application on device again. So as of now we will keep "USB ADB Usage" option to "Do not change", which will keep the existing settings (In our case it is already ON). We will configure it programmatically by providing options (Enable/Disable) to the user on User Interface in coming steps.   
+    You can see number of options for configuring different USB settings. Some of them are dependent on each other. We can configure every option in the profile editor window for USB Manager. As mentioned above we will configure the ADB mode (USB Debugging Mode) in this tutorial. Since we want to run our application on Zebra device, the ADB mode (USB Debugging Mode) is ON. So let us configure "USB ADB Usage" option. If you disable this option, you will not be able to run any Android application on the device as there will not be any communication between your machine and device. If you enable this option, the USB degugger will be turned ON and you can run your application on device again. So as of now we will keep "USB ADB Usage" option to "Do not change", which will keep the existing settings (In our case it is already ON). We will configure it programmatically by providing options (Enable/Disable) to the user on User Interface in coming steps.   
 
     > Note: If this option is disabled through Profile Wizard, you cannot enable this option manually by going into settings unless performed Factory Reset on it. So configure this feature programmatically to enable and disable ADB USB Usage in your application.      
 
@@ -480,7 +480,7 @@ here is the remaining part:
 
     ![img](../../images/MxUSBManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us configure (Enable/Disable) the USB ADB Usage on Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us configure (Enable/Disable) the USB ADB Usage on Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -505,13 +505,13 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
 
-3. In other words, the USB debugging option on your Symbol device is turned OFF and you will not be able to run any Android application on this Symbol device. 
+3. In other words, the USB debugging option on your Zebra device is turned OFF and you will not be able to run any Android application on this Zebra device. 
 
     ![img](../../images/MxUSBManagerTutorialImages/adb_mode_off.png)
 
 	You can select the enable option and press "Set" button to turn USB ADB Usage ON.
 
-	This is how USB Manager is used to configure USB ADB Mode on your Symbol Android device using Profile Wizard. 
+	This is how USB Manager is used to configure USB ADB Mode on your Zebra Android device using Profile Wizard. 
     
 ##Important Programming Tips##
 
@@ -529,7 +529,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to Manage USB configurations using USB Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to Manage USB configurations using USB Manager on your Zebra devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

@@ -35,7 +35,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.  
   
-3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "App Manager" feature from the list and click "Right Arrow". Using this feature you can perform various operations in your apps on the Symbol Android device. These operations could be installing apps, uninstalling apps, upgrading apps etc. as mentioned in the beginning. 
+3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "App Manager" feature from the list and click "Right Arrow". Using this feature you can perform various operations in your apps on the Zebra Android device. These operations could be installing apps, uninstalling apps, upgrading apps etc. as mentioned in the beginning. 
  
     ![img](../../images/MxAppManagerTutorialImages/select_app_manager_feature.jpg)
   

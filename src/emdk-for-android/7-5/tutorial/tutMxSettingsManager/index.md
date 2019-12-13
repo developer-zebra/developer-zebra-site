@@ -7,9 +7,9 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Symbol device using [Settings Manager](../../mx/settingsmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on the ability to configure Enterprise Reset option in Settings UI on your Zebra device using [Settings Manager](../../mx/settingsmgr) feature of Mx. 
 
-So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Symbol Android device using MX [Settings Manager](../../mx/settingsmgr) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
+So now we will create a tutorial and disable the ability to invoke Enterprise Reset in Settings UI of your Zebra Android device using MX [Settings Manager](../../mx/settingsmgr) feature. A typical use case for this could be to prevent user by accidentally pressing "Enterprise Reset" option.  
         
 
 ## Creating The Project
@@ -373,7 +373,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
     ![img](../../images/MxSettingsManagerTutorialImages/on_destroy_method.jpg) 
 
-That's it!!! We are done with all the coding and configuration part that will let us **disable** Enterprise Reset in Settings UI on our Symbol Android device. Now let us run the application.
+That's it!!! We are done with all the coding and configuration part that will let us **disable** Enterprise Reset in Settings UI on our Zebra Android device. Now let us run the application.
  
 ## Running the Application
 
@@ -398,7 +398,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	You can see that the Enterprise Reset option is disabled from settings UI.
 
-This is how Settings Manager is used to configure Enterprise Reset option in Settings UI of your Symbol device using Profile Wizard. 
+This is how Settings Manager is used to configure Enterprise Reset option in Settings UI of your Zebra device using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -416,7 +416,7 @@ This is how Settings Manager is used to configure Enterprise Reset option in Set
 
 
 ## What's Next
-Now that you have learned how to configure Settings UI with Enterprise Reset option using Settings Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "USB Manager" MX feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Settings UI with Enterprise Reset option using Settings Manager on your Zebra Android devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "USB Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

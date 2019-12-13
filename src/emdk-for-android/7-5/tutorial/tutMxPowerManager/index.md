@@ -7,7 +7,7 @@ productversion: '7.5'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](../../mx/powermgr) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](../../mx/powermgr) API, which allows user to perform Power Management operations on Zebra Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
 
 **1. Sleep Mode:**
 
@@ -15,17 +15,17 @@ This feature allows device to enter the sleep mode in order to conserve power.
 
 **2. Device Reboot:**
 
-Device Reboot feature restarts the Symbol device from the app itself.
+Device Reboot feature restarts the Zebra device from the app itself.
 
 **3. OS Update:**  
 
-This Power Manager feature allows you to update the operating system of your Symbol Android device. The user needs to provide path of update package (zip file) that resides in the device's external SD Card. Based on the package (zip file), the user can perform following operations using OS Update feature:
+This Power Manager feature allows you to update the operating system of your Zebra Android device. The user needs to provide path of update package (zip file) that resides in the device's external SD Card. Based on the package (zip file), the user can perform following operations using OS Update feature:
 
    > Note: Copy the update package to external SD Card in order to make update OS work. If you copy update package to the internal SD card of the device, the OS Update feature won't work.  
 
 * **Enterprise Reset:** Resets the device data except MX Enterprise Packages.
 * **Factory Reset:** Resets the device data.
-* **Full Device Wipe:** Performs a full device wipe. Supported on Symbol devices with KitKat version. 
+* **Full Device Wipe:** Performs a full device wipe. Supported on Zebra devices with KitKat version. 
 * **OS Upgrade:** Upgrades/Downgrades device's Operating System.
  
 In this tutorial, We would be implementing all three features of Power Manager to understand how they work. 
@@ -33,7 +33,7 @@ In this tutorial, We would be implementing all three features of Power Manager t
 ###Prerequisites
 * Download the respective OS update/Factory Reset/Enterprise Reset package (zip file) from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) and copy that file to external SD card of the device.
 
-    > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
+    > Note: This above link provides the Update Packages of TC55 device only, which we have used in this tutorial. If you are using some other Zebra Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
 
 ## Creating The Project
 
@@ -48,7 +48,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.  
   
-3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Power Manager" feature from the list and click "Right Arrow". Using this feature you can perform various Power Management operations through your apps on the Symbol device. These operations include setting the device into sleep mode , rebooting the device and updating OS of the Symbol Android devices as explained earlier.
+3. Now, you can see all these MX features on the left hand side of the Profile Editor window. Select the "Power Manager" feature from the list and click "Right Arrow". Using this feature you can perform various Power Management operations through your apps on the Zebra device. These operations include setting the device into sleep mode , rebooting the device and updating OS of the Zebra Android devices as explained earlier.
 
 4. Click on the Power Manager feature. The parameter list will be populated.  
   
@@ -712,13 +712,13 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
   
 	![img](../../images/MxPowerManagerTutorialImages/sleep_mode_resumed.png)
 
-5. So now select second option (Reboot) and press the "Set" button. This should reboot your Symbol Android device.
+5. So now select second option (Reboot) and press the "Set" button. This should reboot your Zebra Android device.
  
 	![img](../../images/MxPowerManagerTutorialImages/reboot_mode.png)
 
 6. As the device was rebooted in the previous step, open the app again and select the third option (OS Update). Provide the path in the Edit Text to the external SD card where the OS Update Package is located. This package should be a zip file downloaded from [this link](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers/TC55) (Ex. /sdcard/T55N0JB0VRUEN17400.zip).
 
-    > Note: This above link provides the Update Packages of TC55 device only. If you are using some other Symbol Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
+    > Note: This above link provides the Update Packages of TC55 device only. If you are using some other Zebra Android device then download the respective update package from [here](https://portal.motorolasolutions.com/Support/US-EN/Mobile+Networks+RFID+and+BarCode+Scanners/Mobile+Computers/Handheld+Computers)
 
     This package could be an OS upgrade, Factory Reset or Enterprise Reset package as this feature allows you to perform all these operations. We will be using an update Package that has been downloaded from above link for TC55 device. 
 
@@ -751,7 +751,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 
 ## What's Next
-Now that you have learned how to configure and perform Power Management operations on your Symbol Android devices through applications using MX Power Manager feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Persist Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure and perform Power Management operations on your Zebra Android devices through applications using MX Power Manager feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Persist Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

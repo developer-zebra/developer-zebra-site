@@ -55,17 +55,17 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 4. Under key EMDK for Android look for the value UninstallString in the details pane on the right and identify the EMDK for Android installation path (i.e. the parent directory where uninstall.exe resides. See Fig.01 or Fig.02).
 
-5. Locate and delete the Symbol EMDK for Android folder, subfolders and files.
+5. Locate and delete the EMDK for Android folder, subfolders and files.
 
 
 ###2. Removing installed EMDK short cuts under Start Programs
 
 1. Locate and delete the following folder available at `C:\ProgramData\Microsoft\Windows\Start Menu\Programs`:
-* `Symbol EMDK for Android vX.X` where vX.X = Base version of the Installation.
+* `EMDK for Android vX.X` where vX.X = Base version of the Installation.
 	* Example: `v3.0` when you have installed `EMDK for Android v3.0`
 
 2. Also, locate and delete the following .lnk file available at `C:\ProgramData\Microsoft\Windows\Start Menu\Programs`:
-* `Symbol EMDK for Android vX.X.lnk` where vX.X = Base version of the Installation.
+* `EMDK for Android vX.X.lnk` where vX.X = Base version of the Installation.
 	* Example: `v4.0` when you have installed `EMDK for Android v4.0`
 
 ###3. Removing installed EMDK plug-in and add-on from Android Studio and Android SDK

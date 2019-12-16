@@ -37,7 +37,7 @@ Use of SmartCradle intent APIs requires experience with Java, with Android app d
 ### Also See
 
 * [EC30 Programmer's Guide](../../guide/ec30_programming)
-* [PS20 Product Page on Zebra.com](https://www.zebra.com/us/en/products/mobile-computers/handheld/ps20.html )
+* [PS20 Product Page on Zebra.com](https://www.zebra.com/us/en/products/mobile-computers/handheld/ps20.html)
 * [Detecting PS20 Device State (docked/undocked)](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/PS20-intents-to-detect-the-state-of-the-device.html)
 * [Data capture intent APIs](../datacapture)
 * [Battery intent APIs](../battery)
@@ -195,7 +195,7 @@ Actions are implemented as intent extras. See [sample code](#samplecode) for syn
 ## Also See
 
 * [EC30 Programmer's Guide](../../guide/ec30_programming)
-* [PS20 Product Page on Zebra.com](https://www.zebra.com/us/en/products/mobile-computers/handheld/ps20.html )
+* [PS20 Product Page on Zebra.com](https://www.zebra.com/us/en/products/mobile-computers/handheld/ps20.html)
 * [Detecting PS20 Device State (docked/undocked)](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/PS20-intents-to-detect-the-state-of-the-device.html)
 * [Data capture intent APIs](../datacapture)
 * [Battery intent APIs](../battery)

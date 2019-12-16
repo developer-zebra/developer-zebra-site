@@ -7,14 +7,18 @@ productversion: '7.5'
 
 ## Overview
 The purpose of this document is to describe the functionality of the Battery Intent API Interface. It is intended for Android developers. 
- 
-## Requirements
+
+### Requirements
 Knowledge of Android programming and familiarity with the Android intent mechanism are assumed. 
  
 * Android Versions:	
  * 4.4 and later
 
-## Features
+### Also See
+
+[Battery Intent APIs](../../intents/battery/)
+
+### Features
 
 On Zebra devices, extra battery information is retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same as with consumer devices. On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the additional extra information is provided:
 

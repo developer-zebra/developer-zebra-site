@@ -19,7 +19,7 @@ On Zebra devices, extra battery information is retrieved using the standard [And
 #### Also See 
 
 * **[ENGINEERING BLOG: How to Access Properties of Zebra Batteries](https://developer.zebra.com/blog/how-access-properties-zebra-power-precision-plus-batteries)**
-* **[Viewing Zebra Battery Extras (Sample App)](https://github.com/Zebra/Zebra_Battery_Extras)**
+* **[Viewing Zebra Battery Extras (sample app)](https://github.com/Zebra/Zebra_Battery_Extras)**
 * **[Battery Intent API Reference](../../guide/reference/refbatteryintent/)**
 
 -----

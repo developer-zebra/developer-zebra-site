@@ -430,7 +430,7 @@ The `ACTION_DO` and `ACTION_UPDATE` methods send a `RESULT_CODE` and a `RESULT_M
 
 -----
 
-## Set/Get Configurations
+## Set/Get Configuration
 
 Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol supports setting configurations** at this time. Use the intent extra `CONFIG` to set the baud rate. The parameter key, data type and supported values are shown in table below.
 
@@ -477,8 +477,8 @@ Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol sup
 
 #### Get configuration broadcast receiver: 
  
-		:::java
-		public class IrDABroadcastReceiver extends BroadcastReceiver {
+	:::java
+	public class IrDABroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -488,10 +488,9 @@ Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol sup
             if(bundleConfig != null) {
                 for (String key : bundleConfig.keySet()) {
                     config += "\n" + key + ": " + bundleConfig.getString(key);
-                }
-            }
-        }
-
+	                }
+	            }
+	        }
 	    }
 	}
 

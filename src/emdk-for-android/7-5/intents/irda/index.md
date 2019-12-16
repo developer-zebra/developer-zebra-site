@@ -433,13 +433,13 @@ The `ACTION_DO` and `ACTION_UPDATE` methods send a `RESULT_CODE` and a `RESULT_M
 
 ## Set/Get Configurations
 
-Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol supports setting configurations** at this time. Use the intent extra `CONFIG` to set the baud rate. The parameter key, data type and supported values are shown in table below.
+Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol supports setting configurations** at this time. Use the intent extra `CONFIG` to set the baud rate. The parameter key, data type and supported values are shown below.
 
-**Key**: BAUD_RATES
-**Data Type**: String
-**Supported values**: 1200, 2400, 9600, 19200, 38400, 57600, 115200
+* **Key**: BAUD_RATES
+* **Data Type**: String
+* **Supported values**: 1200, 2400, 9600, 19200, 38400, 57600, 115200
 
-`SET_CONFIGURATION_FAILED` - returned if an error occurred while setting a configuration. Unsupported values are ignored; and no error is returned.
+`SET_CONFIGURATION_FAILED` - returned if an error occurrs while setting a configuration. **Note**: Unsupported values are ignored (no error is returned).
 
 ### Sample Code 
 

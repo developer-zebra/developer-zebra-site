@@ -14,6 +14,7 @@ Zebra's IrDA implementation supports the following protocols:
 * IrLMP
 * IrLAP/LSAP
 * IrSIR
+* IrDA:RAW
 
 Zebra IrDA APIs operate through Android intents – specific commands that can be used by Android applications to control IrDA hardware on IrDA-equipped Zebra devices. This guide explains how to communicate wirelessly between IrDA devices using IrDA Intent APIs on Zebra mobile devices. 
 
@@ -423,6 +424,73 @@ The `ACTION_DO` and `ACTION_UPDATE` methods send a `RESULT_CODE` and a `RESULT_M
 	            status += "\nMessage: " + resultMessage;
 	        
 	        Log.d("TAG",status);
+
+	    }
+	}
+
+-----
+
+## Set/Get Configurations
+
+Used to set the configuration of the IrDA port. **Only the IrDA:RAW protocol supports setting configurations** at this time. Use the intent extra `CONFIG` to set the baud rate. The parameter key, data type and supported values are shown in table below.
+
+**Key**: BAUD_RATES
+**Data Type**: String
+**Supported values**: 1200, 2400, 9600, 19200, 38400, 57600, 115200
+
+`SET_CONFIGURATION_FAILED` - returned if an error occurred while setting a configuration. Unsupported values are ignored; and no error is returned.
+
+### Sample Code 
+
+#### Set configuration:
+
+		:::java
+		Intent intent = new Intent();
+		intent.setAction("com.symbol.irda.api.ACTION_UPDATE");
+
+		Bundle bundle = new Bundle();
+		bundle.putString("BAUD_RATES","2400");
+		intent.putExtra("CONFIG", bundle);
+
+		Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
+		responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+		responseIntent.putExtra("COMMAND", "SET_CONFIG");
+		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+		intent.putExtra("CALLBACK_RESPONSE", piResponse);
+		sendBroadcast(intent);
+
+#### Get configuration:
+
+		:::java
+		Intent intent = new Intent();
+		intent.setAction("com.symbol.irda.api.ACTION_GET");
+		String[] propertiesToRetrieve = {"CONFIG"};
+		intent.putExtra("PROPERTIES_TO_GET", propertiesToRetrieve);
+
+		Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
+		responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+		responseIntent.putExtra("COMMAND", "GET_CONFIGURATIONS");
+		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+		intent.putExtra("CALLBACK_RESPONSE", piResponse);
+		sendBroadcast(intent);
+
+
+#### Get configuration broadcast receiver: 
+ 
+		:::java
+		public class IrDABroadcastReceiver extends BroadcastReceiver {
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        String config = "";
+        if(intent.hasExtra("CONFIG")) {
+            Bundle bundleConfig = intent.getExtras().getBundle("CONFIG");
+            if(bundleConfig != null) {
+                for (String key : bundleConfig.keySet()) {
+                    config += "\n" + key + ": " + bundleConfig.getString(key);
+                }
+            }
+        }
 
 	    }
 	}

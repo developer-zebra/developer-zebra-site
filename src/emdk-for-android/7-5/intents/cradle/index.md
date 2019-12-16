@@ -32,6 +32,10 @@ Use of SmartCradle intent APIs requires experience with Java, with Android app d
 * EC30 2-slot Charge ShareCradle (model CRD-EC30-2SCHG1-01)
 * EC30 10-slot Charge ShareCradle (model CRD-EC30-10SC1-01)
 
+### Also See
+
+[PS20 Intent to Detect Device State (docked/undocked)](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/PS20-intents-to-detect-the-state-of-the-device.html) | PS20 running Android 8.x Oreo
+
 -----
 
 ## SmartCradle Intent Action
@@ -184,6 +188,7 @@ Actions are implemented as intent extras. See [sample code](#samplecode) for syn
 ## Also See
 
 * [EC30 Programmer's Guide](../../guide/ec30_programming)
+* [Detecting Device State (docked/undocked)](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/PS20-intents-to-detect-the-state-of-the-device.html)
 * [Data capture intent APIs](../datacapture)
 * [Battery intent APIs](../battery)
 * [Native APIs](../../api)

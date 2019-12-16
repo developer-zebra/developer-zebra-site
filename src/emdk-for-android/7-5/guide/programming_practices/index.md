@@ -211,4 +211,6 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
         }
 3. Rebuild the project by selecting **Make Project** from the **Build** menu.
 
-**Note**: A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses SDK versions 7.1 and newer.
+#### Notes: 
+* **A plus sign ("+") can be substituted for a major or minor version number** in the dependencies section. For example, declaring `com.symbol:emdk:7.1.+` uses SDK versions 7.1 and newer.
+* **The x's in the sample above MUST be replaced with [real version numbers](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.

@@ -6,7 +6,7 @@ productversion: '7.5'
 ---
 
 ## Overview
-On Zebra devices, extra battery information is retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same as with consumer devices (see below). On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the following additional information is provided:
+On Zebra devices, extra battery information is retrieved using the standard [Android Battery Intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same way as with consumer devices (see below). On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the following additional information can be retrieved:
 
 * Backup Battery Voltage
 * Battery Manufacture Date
@@ -16,7 +16,11 @@ On Zebra devices, extra battery information is retrieved using the standard [And
 * Rated Capacity of the Battery
 * Charge Cycle count of the Battery 
 
-Also see the [Battery Intent API Reference](../../guide/reference/refbatteryintent/)
+#### Also See 
+
+* **[ENGINEERING BLOG: How to Access Properties of Zebra Batteries](https://developer.zebra.com/blog/how-access-properties-zebra-power-precision-plus-batteries)**
+* **[Viewing Zebra Battery Extras (Sample App)](https://github.com/Zebra/Zebra_Battery_Extras)**
+* **[Battery Intent API Reference](../../guide/reference/refbatteryintent/)**
 
 -----
 

@@ -26,7 +26,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ### Supported Devices
 
-Mobile-device support tables are on the **[EMDK product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html)** at Zebra.com. 
+See the **[EMDK product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html)** at Zebra.com mobile-device support tables. 
 
 #### Scanners and imagers
 
@@ -52,6 +52,8 @@ Mobile-device support tables are on the **[EMDK product page](https://www.zebra.
 
 ### New Features
 
+**Barcode API now support OcrA, OcrB, MICRE13B and USCurrency Symbologies and the OCR label type (see below)**.
+
 **Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)** 
 
 **Now supports MX 9.2**, which adds the following features and enhancements:
@@ -64,7 +66,7 @@ Mobile-device support tables are on the **[EMDK product page](https://www.zebra.
 ### API Enhancements
 
 **Enhanced Barcode Manager API** now includes: 
-* Support for new Symbologies OcrA, OcrB, MICRE13B, USCurrency and Label type OCR: 
+* Support for OcrA, OcrB, MICRE13B, USCurrency Symbologies and the OCR label type: 
  * enum `OcrAVariant` in `ScannerConfig` - Allows selection of OcrA font variants 
  * enum `OcrBVariant` in `ScannerConfig` - Allows selection of OcrB font variants 
  * `ocrAVariant` parameter in `ScannerConfig.DecoderParams.OcrA` to set OcrA font variant. Font variant sets a processing algorithm and default character subset for the given font. Selecting the most appropriate font variant optimizes performance and accuracy. 

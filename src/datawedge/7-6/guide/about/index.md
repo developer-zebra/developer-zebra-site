@@ -128,7 +128,7 @@ For more information about approved languages or to download a localized operati
 ### Added in DataWedge 7.5
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
 * New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
-* Added support for **[OCR A](../input/barcode#ocra)** and **[OCR B](../input/barcode#ocrb)** decoders and corresopndingnNew **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
+* Added support for **[OCR A](../input/barcode#ocra)** and **[OCR B](../input/barcode#ocrb)** decoders and corresponding **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
 * New **[secure Remote Administration](../admin)** using CSP (Configuration Service Provider) for mass deployment.
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.

@@ -3,6 +3,12 @@ title: Migration Alert
 layout: guide.html
 product: SimulScan
 productversion: '1.1'
+menu:
+  title: SimulScan 1.1
+  img: /simulscan/simulscan_logo.png
+  items:
+    - title: Go to Legacy SimulScan docs
+      url: /simulscan/1-1/guide/about
 ---
 
 
@@ -16,12 +22,16 @@ productversion: '1.1'
 
 > Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. <br><br>
 > **Migrated features available now**: <br> 
-     • **[Multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 6.7+) <br>
+     • **Multi-barcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes is reached in a scanning session. Multi-barcode data capture is supported on devices with DataWedge 6.7 and higher.<br>
+        • **[Enable multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 6.7+) <br>
+        • **[Configure multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** <br>
      • **[Signature (image) capture](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 7.3+) <br>
      • **[OCR-A](/datawedge/7-5/guide/input/barcode#ocra)** and **[OCR-B](/datawedge/7-5/guide/input/barcode#ocrb)** decoding (DataWedge 7.5+)<br> 
      • **[Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+ sample app)<br>
      • **[Document capture](/emdk-for-android/7-5/samples/simulscan/)** (EMDK for Android 4.0+ sample app)<br><br>
      **Please refer to the [Transition Roadmap](#transitionroadmap) for estimated availability of additional features**. <br>
+
+
 
 ### More Info
 * All new SimulScan feature requests will be created in the Scanning Framework accessible through DataWedge and intent APIs.

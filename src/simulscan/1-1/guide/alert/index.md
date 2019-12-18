@@ -20,7 +20,7 @@ menu:
     </ul>
 </div>
 
-> Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use**. <br><br>
+> Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use today**. <br>
 
 #### Migrated features available now:
 * **Multi-barcode data acquisition** acquires multiple unique barcodes with a single scan and can deliver the data either immediately or after the specified number of barcodes is reached in the session. Multi-barcode data capture is **supported on devices with DataWedge 6.7 and higher**.

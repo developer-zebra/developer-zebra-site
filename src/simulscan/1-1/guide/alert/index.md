@@ -24,7 +24,7 @@ menu:
 
 #### Migrated features available now:
 * **Multi-barcode data acquisition** acquires multiple unique barcodes with a single scan and can deliver the data either immediately or after the specified number of barcodes is reached in the session. Multi-barcode data capture is **supported on devices with DataWedge 6.7 and higher**.
- * **[Enable multi-barcode input](/datawedge/7-5/guide/input/barcode/#readerparams)**
+ * **[Enable multi-barcode input](/datawedge/7-5/guide/input/barcode/#readerparams)** through **Reader Params -> Scanning Modes**
  * **[Configure multi-barcode input](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** for fixed-quantity and instant reporting
 * **Document Capture** includes image and signature (as an image) capture, acquisition of text as coded type through optical character recognition (OCR) and full-document capture using the device camera or imager. Document capture is **supported on devices as indicated below**.  
  * **[Enable signature/image capture](/datawedge/7-5/guide/input/barcode/#multibarcodeparams)** (DataWedge 7.3+)

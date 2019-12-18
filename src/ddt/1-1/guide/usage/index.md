@@ -1,5 +1,5 @@
 ---
-title: About Diagnostic Tool
+title: Using Diagnostic Tool
 layout: guide.html
 product: Diagnostic Tool
 productversion: '1.17'

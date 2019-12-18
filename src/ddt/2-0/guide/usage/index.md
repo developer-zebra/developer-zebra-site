@@ -1,12 +1,16 @@
 ---
-title: About Diagnostic Tool
+title: Using Diagnostic Tool
 layout: guide.html
 product: Diagnostic Tool
 productversion: '2.0'
 ---
 
 ## Overview
+Diagnostic Tool supports two modes of operation:
+1. **Admin mode -** The administrator can access the app settings and modify test configurations.
+2. **User mode -** The user is restricted to only run the tests; there is no access to the app settings nor test configurations. This is the default mode.
 
+## Launch the App
 Run Diagnostic Tool using one of the following methods: 
 1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
 2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using one of the following commands based on the Android version: <br>
@@ -50,10 +54,10 @@ For details on the subsystem test, tap on the respective subsystem in the screen
 
 All tests perform a comparison of the actual property status against the device operational specification based on criteria listed in section [Test Criteria](../criteria).  
 
-##Subsystem
+## Subsystem
 The properties tested in each subsystem are discussed in the following subsections.
 
-###Battery
+### Battery
 Accessible by tapping **Battery** in the Subsystems screen. The following information is retrieved at the time of test execution:  
 
 * Battery Level - percent of remaining battery life 
@@ -68,7 +72,7 @@ Accessible by tapping **Battery** in the Subsystems screen. The following inform
 
 These tests can be used to determine if the battery is over or under temperature, whether there is too much drain on the battery by the device, or whether it is time to replace the battery so corrective action can be made prior to battery failure. 
 
-###GPS
+### GPS
 Accessible by tapping **GPS** in the Subsystems screen. If GPS is supported on the device, the following information is retrieved at the time of test execution: 
 * GPS Provider – status of GPS: enabled, disabled, or not supported
 * Latitude  
@@ -81,7 +85,7 @@ Accessible by tapping **GPS** in the Subsystems screen. If GPS is supported on t
 
 Unlike the other tests which take a snapshot of the system, this test periodically receives information from the GPS radio and automatically updates the data. It can take several seconds of polling before the data becomes reliable and is eventually displayed. If the data has a green background but the Longitude and Latitude are both 0, then GPS is active but either there are no satellites in range or the system is still collecting data before it can be displayed.  
 
-###System
+### System
 Accessible by tapping **System** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * CPU Load (%)
 * Free Physical Memory (in MB) 
@@ -91,7 +95,7 @@ Accessible by tapping **System** in the Subsystems screen. The following informa
 
 These tests can be used to determine if the CPU or memory load is too high, whether there are too many processes running on the device, or whether storage on the device is reaching full capacity. 
 
-###WLAN 
+### WLAN 
 Accessible by tapping **WLAN** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * WLAN Enabled – state of WLAN radio: enabled or disabled 
 * WLAN Status – status of connection 
@@ -105,7 +109,7 @@ Accessible by tapping **WLAN** in the Subsystems screen. The following informati
 This information can be used to determine whether the WLAN is configured correctly or whether there is any device connectivity with the AP or network. 
 
 
-###WWAN 
+### WWAN 
 Accessible by tapping **WWAN** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * SIM State – presence of the SIM card and whether it is locked or unlocked 
 * WAN Type - type of carrier technology in use (e.g. GPRS, CDMA, EDGE, etc.)
@@ -117,7 +121,7 @@ Accessible by tapping **WWAN** in the Subsystems screen. The following informati
 This information can be used to determine whether the device WWAN is configured correctly. The test fails if  any of the following conditions are met: the power to the WAN radio is off, the ICCID (Integrated Circuit Card Identifier) cannot be read from the SIM card, the phone number cannot be read, the registration status cannot be found, the carrier cannot be found, or the signal strength is below 30%.  
 
 
-###Bluetooth 
+### Bluetooth 
 Accessible by tapping **Bluetooth** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * Enabled – Bluetooth radio is on or off.  
 * Status – paired or not paired 

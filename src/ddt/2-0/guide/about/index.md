@@ -18,6 +18,13 @@ Diagnostic Tool instantly tests and diagnoses the operability of the main device
 
 When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
 
+## New in Diagnostic Tool 2.0
+* Introduced **two modes of operation:** admin mode and user mode.
+* **Changes in supported subsystems for testing:** 
+  * Subystems added: Scanner, Bluetooth, and Touch Screen. 
+  * Subsystems removed: GPS, Systems
+* Added capability to **import or export configuration files.**
+* New **Settings** and **Configure Tests** app screens for administrators. 
 
 ## Supported Devices
 Diagnostic Tool is pre-installed on all supported Zebra devices. 

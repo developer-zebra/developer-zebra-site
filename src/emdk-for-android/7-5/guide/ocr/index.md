@@ -341,7 +341,7 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 
 <tr>
 <td>New Line (E)</td>
-<td>To create a template of multiple lines, add E between the template of each single line.</td>
+<td>To create a template of multiple lines, add an "E" between the template of each single line.</td>
 <td>999EAAAA</td>
 <td>321<br>BCAD</td>
 <td>XYZW<br>12</td>
@@ -349,7 +349,7 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 
 <tr>
 <td>String Extract (C)</td>
-<td>This operator combined with others defines a string of characters to extract from the scanned data. The string extract is structured as follows:<br><br>CbPe<br><br>Where:<br>&bull; C is the string extract operator<br>&bull; b is the string begin delimiter<br>&bull; P is the category (one or more numeric or alpha characters) describing the string representation<br>&bull; e is the string end delimiter<br><br>Values for b and e can be any character that can be scanned and are included in the output stream.</td>
+<td>This operator combined with others defines a string of characters to extract from the scanned data. The string extract is structured as follows:<br><br>CbPe<br><br>Where:<br>&bull; "C" is the string extract operator<br>&bull; "b" is the string begin delimiter<br>&bull; "P" is the category (one or more numeric or alpha characters) describing the string representation<br>&bull; "e" is the string end delimiter<br><br>Values for "b" and "e" can be any character that can be scanned and are included in the output stream.</td>
 <td>C&gt;A&gt;</td>
 <td>XQ3&gt;ABCDE&gt;<br>-&gt;ATRU&gt;123</td>
 <td>&gt;ABCDE&gt;<br>&gt;ATRU&gt;</td>
@@ -365,7 +365,7 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 
 <tr>
 <td>Skip Until (P1)</td>
-<td>This operator allows skipping over characters until a specific character type or a literal string is detected. It can be used in two ways:<br><br>P1ct<br><br>Where:<br>&bull; P1 is the "Skip Until" operator<br>&bull; "c" is the type of character that triggers the start of output<br>&bull; "t" is one or more template characters<br><br>P1&quot;s&quot;t<br><br>Where:<br>&bull; P1 is the "Skip Until" operator<br>&bull; &quot;s&quot; is one or more literal string characters that trigger the start of output<br>&bull; t is one or more template characters<br><br>The trigger character or literal string is included in output from a "Skip Until" operator, and the first character in the template should accommodate this trigger.</td>
+<td>This operator allows skipping over characters until a specific character type or a literal string is detected. It can be used in two ways:<br><br>P1ct<br><br>Where:<br>&bull; "P1" is the "Skip Until" operator<br>&bull; "c" is the type of character that triggers the start of output<br>&bull; "t" is one or more template characters<br><br>P1&quot;s&quot;t<br><br>Where:<br>&bull; P1 is the "Skip Until" operator<br>&bull; &quot;s&quot; is one or more literal string characters that trigger the start of output<br>&bull; t is one or more template characters<br><br>The trigger character or literal string is included in output from a "Skip Until" operator, and the first character in the template should accommodate this trigger.</td>
 <td>P1&quot;PN&quot;AA9999</td>
 <td>123PN9876<br>X-PN3592</td>
 <td>PN9876<br>PN3592</td>
@@ -373,7 +373,7 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 
 <tr>
 <td>Skip Until Not (P0)</td>
-<td>This operator allows skipping over characters until a specific character type or a literal string is not matched in the output stream. It can be used in two ways:<br><br>P0ct<br><br>Where:<br>&bull; P0 is the "Skip Until Not" operator<br>&bull; "c" is the type of character that triggers the start of output<br>&bull; "t" is one or more template characters<br><br>P0&quot;s&quot;t<br><br>Where:<br>&bull; P0 is the "Skip Until Not" operator<br>&bull; &quot;s&quot; is one or more literal string characters that trigger the start of output<br>&bull; "t" is one or more template characters<br><br>The trigger character or literal string is included in output from a "Skip Until Not" operator.</td>
+<td>This operator allows skipping over characters until a specific character type or a literal string is not matched in the output stream. It can be used in two ways:<br><br>P0ct<br><br>Where:<br>&bull; P0 is the "Skip Until Not" operator<br>&bull; "c" is the type of character that triggers the start of output<br>&bull; "t" is one or more template characters<br><br>P0&quot;s&quot;t<br><br>Where:<br>&bull; "P0" is the "Skip Until Not" operator<br>&bull; &quot;s&quot; is one or more literal string characters that trigger the start of output<br>&bull; "t" is one or more template characters<br><br>The trigger character or literal string is included in output from a "Skip Until Not" operator.</td>
 <td>P0A9999</td>
 <td>BPN3456<br>X-PN3592</td>
 <td>5341<br>No output</td>
@@ -400,6 +400,31 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 <td>This feature sets up multiple templates for OCR decoding. For each template in the multiple template string, use a capital letter "X" as a separator between the templates.<br><br>For example, setting the OCR Template as 99999XAAAAA decodes OCR strings of either "12345" or "ABCDE."</td>
 <td>Following are sample templates with descriptions of valid data for each definition. The Field Definition is followed by its description:<br><br>&quot;M&quot;99977&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">M</span><span>&nbsp;followed by three digits and two optional digits.<br>&quot;X&quot;997777&quot;X&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">X</span><span>&nbsp;followed by two digits, four optional digits, and an X.<br>9959775599 &nbsp;&nbsp;&nbsp;&nbsp; : Two digits followed by any character, a digit, two optional digits, any two characters, and two digits.<br>A55&quot;-&quot;999&quot;-&quot;99 &nbsp;&nbsp; : A letter followed by two characters, a dash, three digits, a dash, and two digits.<br>33A&quot;.&quot;99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Two alphanumeric characters followed by a letter, a period, and two digits.<br>999992991&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Five digits followed by an optional alpha, two digits, and an optional alphanumeric.<br>&quot;PN98&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Literal field -&nbsp;</td>
 </tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 
+### Multiple Templates
+The multiple templates feature sets up two or more templates for OCR decoding, with a capital letter "X" as the separator between strings in the template. For example, setting the OCR Template as "99999XAAAAA" decodes OCR strings of either "12345" or "ABCDE." Additional sample template strings are below with descriptions of data that would be valid for each template. 
+
+**"M99977"** injects a capital letter M followed by three required numerical characters and two optional numbers to be acquired.
+
+**"X997777X"** begins with a capital X followed by two required numbers, four optional numbers and another X.
+
+**"9959775599"** defines two numbers followed by any character, another required number, two optional numbers, any two alpha-numerical characters and two additional numbers.
+
+**"A55-999-99"** requires an alpha character followed by any two alpha-numeric characters, a dash, three numbers, a dash, and two more numbers.
+
+"33A.99" defines two alpha-numeric characters followed by a letter, a period and two numbers.
+
+"999992991" defines five numbers followed by an optional alpha-numeric character, two numbers and an optional alpha-numeric character.
+
+"PN98" is a Literal field. 
+
+-----

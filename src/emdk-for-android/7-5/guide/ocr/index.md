@@ -9,9 +9,9 @@ productversion: '7.5'
 Optical Character Recognition (OCR) is a feature that enables the conversion of text images into machine-encoded text. In EMDK 7.5 (and higher), the Barcode API can configure the device scanner to enables an app to capture various OCR font types as text. This functionality is modeled as decoder types (OCRA, OCRB, MICRE13B and USCurrency) exposed through the Barcode API. The captured OCR data can be retrieved from the data returned to the application from a scan event using the onData callback.
  
 ### Enable OCR
-Before an application can capture using OCR, the decoder that corresponds with the OCR font type (OCRA, OCRB, MICRE13B, USCurrency) must be enabled. Get an instance of a scanner object (see Barcode Scanning API Programmer's Guide for details). Once initialized, modify the scanner configuration as below:
+Before an application can capture using OCR, the decoder that corresponds with the OCR font type (OCRA, OCRB, MICRE13B, USCurrency) must be enabled. To do so, get an instance of a scanner object (see the [Barcode Scanning API Programmer's Guide](../barcode_scanning_guide) for details). **Note: For OCR-A and OCR-B, selecting the most appropriate font variant optimizes performance and accuracy**.
 
-Note: For OCRA and OCRB, selecting the most appropriate font variant optimizes performance and accuracy.
+**Once initialized, modify the scanner configuration as below**:
 
         :::java
         ScannerConfig config = scanner.getConfig();
@@ -20,8 +20,11 @@ Note: For OCRA and OCRB, selecting the most appropriate font variant optimizes p
         scanner.setConfig(config);
 
 
-Configure Parameters
-By default, the following values are configured for OCR parameters. Change the parameters based on specific requirements.
+### Configure Parameters
+
+Set the parameters based on specific app requirements. 
+
+**Default values for OCR parameters**:   
 
         :::java
         ScannerConfig config = scanner.getConfig();
@@ -38,157 +41,173 @@ By default, the following values are configured for OCR parameters. Change the p
         config.ocrParams.template = "99999999";
         scanner.setConfig(config);
 
+-----
 
-## Parameters in Detail
+## OCR Parameters
 
 ###Inverse OCR 
-White or light words on a black or dark background. Select an option for decoding inverse OCR:
-Regular Only - Decode regular OCR (black on white) strings only. (default)
-Inverse Only - Decode inverse OCR (white on black) strings only.
-Auto-discriminate - Decode both regular and inverse OCR strings.
 
+White or light words on a black or dark background. 
 
+#### Options for decoding
+* **Regular Only - Decode regular OCR (black on white) strings only (default)**
+* Inverse Only - Decode inverse OCR (white on black) strings only
+* Auto-discriminate - Decode regular and inverse OCR strings
 
-##OCR Check Digit Modulus 
-Sets the OCR module check digit calculation. The check digit is the last digit (in the right most position) in an OCR string and improves the accuracy of the collected data. The check digit is the end product of a calculation made on the incoming data. For check digit calculation, for example Modulus 10, alpha and numeric characters are assigned numeric weights. The calculation is applied to the character weights and the resulting check digit is added to the end of the data. If the incoming data does not match the check digit, the data is considered corrupt. The selected check digit option does not take effect until you set OCR Check Digit Validation.
-Low - 1 (default)
-High - 99
+###OCR Check Digit Modulus 
 
+Sets the OCR module check digit calculation. The check digit is the digit in the right-most position in an OCR string and helps improve the accuracy of the collected data. It is the end product of a calculation made on the incoming data. For check digit calculation, for example, Modulus 10 alpha and numeric characters are assigned numeric weights. The calculation is applied to the character weights and the resulting check digit is added to the end of the data. If the incoming data does not match the check digit, the data is considered corrupt. The selected check digit option does not take effect until the OCR Check Digit Validation is set.
 
+**Possible values**: 
 
-##OCR Check Digit Multiplier 
+* **Low - 1 (default)**
+* High - 99
+
+###OCR Check Digit Multiplier 
 Sets OCR check digit multipliers for the character positions. For check digit validation, each character in scanned data has an equivalent weight used in the check digit calculation.
-Minimum length - 1
-Maximum Length - 100 (Default - 121212121212)
+
+**Possible values**: 
+
+* Minimum length - 1
+* Maximum Length - 100 (Default - 121212121212)
 
 
-##OCR Check Digit Validation 
+###OCR Check Digit Validation 
 Protects against scanning errors by applying a check digit validation scheme. Options:
 
-* None - 0 (default)
+**Possible values**: 
+
+* **None - 0 (default)**
 * Product Add Left to Right - Each character in the scanned data is assigned a numeric value. Each digit representing a character in the scanned data is multiplied by its corresponding digit in the multiplier, and the sum of these products is computed. The check digit passes if this sum modulo Check Digit Modulus is zero.
 
 Example: Scanned data numeric value is 132456 (check digit is 6). Check digit multiplier string is 123456
 
-Digit                1       3       2       4       5       6
-Multiplier        1       2       3       4       5       6
-Product          1       6       6       16     25     36
-Product add  1+     6+     6+    16+   25+   36 = 90
+* Digits: 1 3 2 4 5 6
+* Multipliers:  1 2 3 4 5 6
+* Products: 1 6 6 16 25 36
+* Sum of products: 1+6+6+16+25+36 = 90
 
 If the Check Digit Modulus is 10, it passes because 90 is divisible by 10 (the remainder is zero).
-Product Add Right to Left - Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products is computed. The check digit passes if this sum modulo Check Digit Modulus is zero. Example: Scanned data numeric value is 132459 (check digit is 9). Check digit multiplier string is 123456.
 
-Digit                1       3       2       4       5       9
-Multiplier        6       5       4       3       2       1
-Product          6       15       8      12     10    9
-Product add  6+    15+    8+     12+   10+   9 = 60
+**Product Add Right to Left -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products is computed. The check digit passes if this sum modulo Check Digit Modulus is zero. Example: Scanned data numeric value is 132459 (check digit is 9). Check digit multiplier string is 123456.
+
+* Digits: 1 3 2 4 5 9
+* Multipliers:  6 5 4 3 2 1
+* Products: 6 15 8 12 10 9
+* Sum of products: 6+15+8+12+10+9 = 60
 
 If the Check Digit Modulus is 10, it passes because 60 is divisible by 10 (the remainder is 0).
-Digit Add Left to Right - Each character in the scanned data is assigned a numeric value. Each value representing a character in the scanned data is multiplied by its corresponding digit in the multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
+
+**Digit Add Left to Right -** Each character in the scanned data is assigned a numeric value. Each value representing a character in the scanned data is multiplied by its corresponding digit in the multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
 
 Example: Scanned data numeric value is 132456 (check digit is 6). Check digit multiplier string is 123456.
 
-Digit                1       3       2       4       5       6
-Multiplier        1       2       3       4       5       6
-Product          1       6       6       16     25     36
-Digit add       1+    6+    6+    1+6+   2+5+   3+6 = 36
+Digits: 1 3 2 4 5 6
+Multipliers:  1 2 3 4 5 6
+Products: 1 6 6 16 25  36
+* Sum of digits: 1+6+6+1+6+2+5+3+6 = 36
 
 If the Check Digit Modulus is 12, it passes because 36 is divisible by 12 (the remainder is 0).
-Digit Add Right to Left - Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
+
+**Digit Add Right to Left -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products is then calculated. The check digit passes if this sum modulo Check Digit Modulus is zero.
 
 Example: Scanned data numeric value is 132456 (check digit is 6). Check digit multiplier string is 123456.
 
-Digit                1       3       2       4       5       6
-Multiplier        6       5       4       3       2       1
-Product          6       15       8       12     10    6
-Digit add      6+    1+5+    8+   1+2+   1+0+   6 = 30
+Digits: 1 3 2 4 5 6
+Multipliers:  6 5 4 3 2 1
+Products: 6 15 8 12 10 6
+* Sum of digits: 6+1+5+8+1+2+1+0+6 = 30
 
 The Check Digit Modulus is 10. It passes because 30 is divisible by 10 (the remainder is 0).
-Product Add Right to Left Simple Remainder - Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products except for the check digit's product is computed. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product.
+
+**Product Add Right to Left Simple Remainder -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of these products except for the check digit's product is computed. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product.
 
 Example: Scanned data numeric value is 122456 (check digit is 6). Check digit multiplier string is 123456.
 
-Digit                1       2       2       4       5             6
-Multiplier        6       5       4       3       2             1
-Product          6       10      8       12     10          6
-Product add  6+    10+    8+     12+   10    = 46  6
+* Digits: 1 2 2 4 5 6
+* Multipliers  6 5 4 3 2 1
+* Products 6 10 8 12 10 6
+* Sum of products: 6+10+8+12+10 = 46
 
 The Check Digit Modulus is 10. It passes because 46 divided by 10 leaves a remainder of 6.
-Digit Add Right to Left Simple Remainder - Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products except for the check digit's product is then calculated. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product.
+
+**Digit Add Right to Left Simple Remainder -** Each character in the scanned data is assigned a numeric value. The check digit multiplier is reversed in order. Each value representing a character in the scanned data is multiplied by its corresponding digit in the reversed multiplier, resulting in a product for each character in the scanned data. The sum of each individual digit in all of the products except for the check digit's product is then calculated. The check digit passes if this sum modulo Check Digit Modulus is equal to the check digit's product.
 
 Example: Scanned data numeric value is 122459 (check digit is 6). Check digit multiplier string is 123456.
 
-Digit                1       2       2       4       5             9
-Multiplier        6       5       4       3       2             1
-Product           6       10       8     12     10          9
-Digit add      6+    1+0+    8+     1+2+   1+0+   = 19   9
+* Digits: 1 2 2 4 5 9
+* Multipliers:  6 5 4 3 2 1
+* Products:  6 10 8 12 10 9
+* Sum of digits:  6+1+0+8+1+2+1+0+= 19
 
 The Check Digit Modulus is 10. It passes because 19 divided by 10 leaves a remainder of 9.
-Health Industry - HIBCC43 - The health industry module 43 check digit standard. The check digit is the modulus 43 sum of all the character values in a given message and is printed as the last character in a given message.
+
+**Health Industry - HIBCC43 -** The health industry module 43 check digit standard. The check digit is the modulus 43 sum of all the character values in a given message and is printed as the last character in a given message.
 
 ###OCR Lines 
-Select the number of OCR lines to decode:
-1 Line (default)
-2 Lines
-3 Lines
+Used to select the number of OCR lines to decode. 
+
+* **1 Line (default)**
+* 2 Lines
+* 3 Lines
 
 ###OCR Maximum Characters 
 Select the maximum number of OCR characters (including spaces) per line to decode.
-Low - 3 
-High – 100 (default)
-OCR Minimum Characters 
+
+**Possible values**:
+
+* Low - 3 
+* **High – 100 (default)**
+
+###OCR Minimum Characters 
 Select the minimum number of OCR characters (not including spaces) per line to decode.
-Low - 3 (default)
-High - 100
+
+**Possible values**:
+
+* **Low - 3 (default)**
+* High - 100
 
 ###OCR Orientation 
 Select the orientation of an OCR string to be read. Setting an incorrect orientation can cause mis-decodes. Options:
-0 degree - to the imaging engine (default)
-270 degree - clockwise (or 90o counterclockwise) to the imaging engine
-180 degree - (upside down) to the imaging engine
-90 degree - clockwise to the imaging engine
-Omnidirectional
+
+**Possible values**:
+
+* **0 degrees - to the imaging engine (default)**
+* 270 degrees - clockwise (or 90 degrees counterclockwise) to the imaging engine
+* 180 degrees - (upside down) to the imaging engine
+* 90 degrees - clockwise to the imaging engine
+* Omni-directional
 
 ###OCR Quiet Zone 
 Sets the field width of blank space to stop scanning during OCR reading.
-Low - 20
-High - 99 (Default - 50)
+
+**Possible values**:
+
+* Low - 20
+* High - 99 
+* **Default = 50**
 
 ###OCR Subset 
 Defines a custom group of characters in place of a preset font variant. For example, if scanning only numbers and the letters A, B, and C, create a subset of just these characters to speed decoding. This applies a designated OCR Subset across all enabled OCR fonts.
-Minimum length - 1
-Maximum Length – 100 (Default - !"#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\^|)
+
+**Possible values**:
+
+* Minimum length - 1
+* Maximum Length – 100
+* **Default - !"#$%()&#42;+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\^|)**
 
 ###OCR Template  
 Creates a template for precisely matching scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates scanning errors. The template expression is formed by numbers and letters. The default is 99999999 which accepts any alphanumeric character OCR string. If there are less than 8 '9' characters, the '9' represents only digit values.
 
-Minimum length - 3
-Maximum Length - 100 (Default - 99999999)
+**Possible values**: 
 
+* Minimum length - 3
+* Maximum Length - 100 
+* **Default = 99999999**
+
+-----
 
 ## TABLE TITLE HERE << 
-
-
-    <tr>
-        <th>#</th>
-        <th>Data Definitions</th>
-        <th>Constant name</th>
-        <th>Data type </th>
-        <th>Format</th>
-        <th>Power Precision</th>
-        <th>Power Precision Plus</th>
-        <th>Backup Battery</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Battery Manufacture Date</td>
-        <td>mfd</td>
-        <td>String</td>
-        <td>yyyy-mm-dd</td>
-        <td>X</td>
-        <td>X</td>
-        <td> </td>
-    </tr>
 
 <table class="table table-striped">
 <tr>

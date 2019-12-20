@@ -6,26 +6,26 @@ productversion: '2.3.1'
 ---
 ## Overview
 
-This section covers troubleshooting steps as well as Frequently Asked Questions.
+This section covers troubleshooting steps and Frequently Asked Questions.
 
 
 ##Troubleshooting
-This section discusses common issues that can occur and possible solutions. Server log files can help identify any server errors or exceptions, located in default folder `\Program Files (x86)\Zebra Technologies\ZDVC\Backend Server\log`. 
+This section discusses common issues that can occur and possible solutions. Server log files, located in default folder `\Program Files (x86)\Zebra Technologies\ZDVC\Backend Server\log`, can help diagnose issues encountered. 
 
 ###Issues related to server certificate
 Possible issues or causes:
-* **Server certificate is not signed by an authorized Certificate Authority.** Self-signed certificates do not meet the Device Tracker server requirement. See [Server Requirements](../setup).
 * **Error "Unable to write 'random state'" occurs when generating the SSL certificate with OpenSSL.** The command prompt may need to be launched in "Run As Administrator" mode.
 * **"Warning: Can't open config file [folder_path]/openssl.cnf" occurs when generating the SSL certificate with OpenSSL.** An OpenSSL variable may need to be set in the Windows system with the following command:
 `set OPENSSL_CONF=c:\[folder_path]\openssl.cnf`<br>
 where [folder_path] is the path to the OpenSSL directory.
+* **Error related to passphrase or certificate password.** Verify the certificate password is entered correctly during installation. Perform the server installation again to enter the correct certificate password.
 
 ###Cannot start server
-It is possible the certificate password entered during ZDVC server installation does not match the actual certificate. Perform the server installation again to enter the correct certificate password.
+It is possible the certificate password entered during server installation does not match the actual certificate. Perform the server installation again to enter the correct certificate password.
 
 ###Cannot login or connect to server
 Possible causes:
-* **No communication between the server and web portal.** Verify there is communication between the server and web portal by checking whether an endpoint is accessible through the browser. This is accomplished by appending a single endpoint to the server URL. For example: `https://hostname.company.com:8081/zdvc/dtrk/admindevops/getDeviceStatisticsSummary`, where endpoint `/zdvc/dtrk/admindevops/getDeviceStatisticsSummary` is appended to server URL `https://hostname.company.com:8081`.<br>
+* **No communication between the server and web portal.** Verify there is communication between the server and web portal by checking whether an endpoint is accessible through the browser. This is accomplished by appending a single endpoint to the server URL. For example: `https://hostname.company.com:8080/zdvc/dtrk/admindevops/getDeviceStatisticsSummary`, where endpoint `/zdvc/dtrk/admindevops/getDeviceStatisticsSummary` is appended to server URL `https://hostname.company.com:8080`.<br>
 Sample result string:
 <br>
 <br>
@@ -37,19 +37,19 @@ Sample result string:
 <br>
 If the endpoint is not accessible, there is no communication between the server and web portal.  Verify that the server is running. It is possible that the certificate is invalid. 
 
-* **Incorrect server ports.** The ports specified during [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: /Program Files/Zebra Technologies/ZDVC/WebUI) and **application.properties** (from default folder: /Program Files/Zebra Technologies/ZDVC/BackendServer/config). 
+* **Incorrect server ports.** The ports specified during [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: `/Program Files/Zebra Technologies/ZDVC/WebUI`) and **application.properties** (from default folder: `/Program Files/Zebra Technologies/ZDVC/BackendServer/config`). 
 
 
 ###Cannot import .CSV file containing access point or device data
 Make sure to have write permissions to the ZDVC folder and subfolders.
 
 ###Server information is outdated
-Refresh the web server page if updated information is not seen in the server [Admin View](../admin).
+If updated information is not seen in the server [Admin View](../admin), refresh the web page in the browser.
 
 ###Device does not connect to server
 Possible causes:
-* Ensure the the **Server URL, Server Auth UserName** and **Server Auth Password** are entered correctly. The **Server URL** can be obtained from the **Settings** tab in the server [admin view](../admin) in the format: `hostname.company.com:8081/zdvc/dtrk`, where "hostname.company.com" and the port number "8081" is replaced with the appropriate information.
-* The server certificate is not trusted - it must be a valid SSL certificate issued by a Certificate Authority, a [server requirement](../setup) for Device Tracker. Follow steps for [Server certificate validation](../setup#serversetup).
+* Ensure the the **Server URL, Server Auth UserName** and **Server Auth Password** are entered correctly. The **Server URL** can be obtained from the **Settings** tab in the [admin view](../admin) in the format: `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com" and the port number "8080" is replaced with the appropriate information.
+* Network issues could be preventing communication from the device to the server. Verify network connectivity.
 
 ###Device does not play sound or there is a delay
 Possible causes:
@@ -64,12 +64,11 @@ There could be a network delay in contacting the server. Wait for some time to e
 ##FAQ
 Frequently Asked Questions:
 ###How do I delete device entries?
-For **Device Tracker 2.2.1 or older,** there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed on the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.<br>
-For **Device Tracker 2.3.1 or newer,** the ability to delete "Never connected" devices was added to the web portal. This allows devices that have been uploaded (via .CSV file) but never connected to the server to be deleted.
+The ability to delete "Never connected" devices in the web portal was added starting with Device Tracker 2.3.1. This allows devices that have been uploaded (via .CSV file) but never connected to the server to be deleted.
 
 ###Can I use a self-signed certificate?
-For **Device Tracker 2.2.1 or older,** an SSL certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for secure communication. Any self-signed certificate or one issued by a non third-party CA does not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.<br>
-For **Device Tracker 2.3.1 or newer,** support for self-signed certificates was added to help simplify deployment of product demos and trials. An SSL certificate is still required for secure communications.
+Starting with Device Tracker 2.3.1, support for self-signed certificates was added to help simplify deployment of product demos and trials. An SSL certificate is still required for secure communications.
+<br>
 
 ###What are the login credentials required to use Device Tracker?
 **Web portal:** To access the web portal, enter the server URL in the browser based on your [installation](../setup#serverinstallation), for example: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number. The default super administrator user name is **SAdmin**. The password is the **SuperAdmin and DB Password** entered during [server installation](../setup#serverinstallation). [Additional users can be added](../admin#manageusers) based on Admin, Manager, and User roles.

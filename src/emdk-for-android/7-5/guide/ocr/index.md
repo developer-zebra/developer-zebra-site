@@ -190,7 +190,7 @@ Sets the field width of blank space to stop scanning during OCR reading.
 * **Default = 50**
 
 ###OCR Subset 
-Defines a custom group of characters in place of a preset font variant. For example, if scanning only numbers and the letters A, B, and C, create a subset of just these characters to speed decoding. This applies a designated OCR Subset across all enabled OCR fonts.
+Defines a custom group of characters in place of a preset font variant. For example, if scanning only numerals and the letters A, B, and C, create a subset of just these characters to speed decoding. This applies a designated OCR Subset across all enabled OCR fonts.
 
 **Possible values**:
 
@@ -408,22 +408,24 @@ The template operators in the following table can assist in capturing, delimitin
 </tbody>
 </table>
 
-### Multiple Templates
-The multiple templates feature sets up two or more templates for OCR decoding, with a capital letter "X" as the separator between strings in the template. For example, setting the OCR Template as "99999XAAAAA" decodes OCR strings of either "12345" or "ABCDE." Additional sample template strings are below with descriptions of data that would be valid for each template. 
+-----
 
-**"M99977"** injects a capital letter M followed by three required numerical characters and two optional numbers to be acquired.
+## Multiple Templates
+The multiple templates feature sets up two or more templates for OCR decoding, with a capital letter "X" as the separator between strings in the template. For example, setting the OCR Template as "99999XAAAAA" decodes OCR strings of either "12345" or "ABCDE." Additional sample template strings are shown below with descriptions of data that would be valid for each template. 
 
-**"X997777X"** begins with a capital X followed by two required numbers, four optional numbers and another X.
+* **"M99977"-** injects a capital letter M followed by three required numerical characters (numerals) and two optional numerals to be acquired.
 
-**"9959775599"** defines two numbers followed by any character, another required number, two optional numbers, any two alpha-numerical characters and two additional numbers.
+* **"X997777X"-** begins with a capital X followed by two required numerals, four optional numerals and another X.
 
-**"A55-999-99"** requires an alpha character followed by any two alpha-numeric characters, a dash, three numbers, a dash, and two more numbers.
+* **"9959775599"-** defines two numerals followed by any character, another required numeral, two optional numerals, any two alpha-numerical characters and two additional numerals.
 
-"33A.99" defines two alpha-numeric characters followed by a letter, a period and two numbers.
+* **"A55-999-99"-** requires an alpha character followed by any two alpha-numeric characters, a dash, three numerals, a dash, and two more numerals.
 
-"999992991" defines five numbers followed by an optional alpha-numeric character, two numbers and an optional alpha-numeric character.
+* **"33A.99"-** defines two alpha-numeric characters followed by a letter a "dot" (period) and two required numerals.
 
-"PN98" is a Literal field. 
+* **"999992991"-** defines five numerals followed by an optional alpha-numeric character plus two numerals and an optional alpha-numeric character.
+
+* **"PN98"-** is a literal field. 
 
 -----
 

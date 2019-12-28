@@ -104,9 +104,9 @@ If the Check Digit Modulus is 10, it passes because 60 is divisible by 10 (the r
 
 Example: Scanned data numeric value is 132456 (check digit is 6). Check digit multiplier string is 123456.
 
-Digits: 1 3 2 4 5 6
-Multipliers:  1 2 3 4 5 6
-Products: 1 6 6 16 25  36
+* Digits: 1 3 2 4 5 6
+* Multipliers:  1 2 3 4 5 6
+* Products: 1 6 6 16 25  36
 * Sum of product digits: 1+6+6+1+6+2+5+3+6 = 36
 
 If the Check Digit Modulus is 12, it passes because 36 is divisible by 12 (the remainder is 0).
@@ -115,9 +115,9 @@ If the Check Digit Modulus is 12, it passes because 36 is divisible by 12 (the r
 
 Example: Scanned data numeric value is 132456 (check digit is 6). Check digit multiplier string is 123456.
 
-Digits: 1 3 2 4 5 6
-Multipliers:  6 5 4 3 2 1
-Products: 6 15 8 12 10 6
+* Digits: 1 3 2 4 5 6
+* Multipliers:  6 5 4 3 2 1
+* Products: 6 15 8 12 10 6
 * Sum of product digits: 6+1+5+8+1+2+1+0+6 = 30
 
 The Check Digit Modulus is 10. It passes because 30 is divisible by 10 (the remainder is 0).

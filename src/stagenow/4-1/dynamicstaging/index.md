@@ -52,12 +52,11 @@ Companies that maintain user data (locale, network settings, etc.) in databases 
 
 ## Create Variables On-the-fly
 
-If user databases are not maintained or being used, variable names can be created as the Dynamic Profile is being set up. Once the Profile is finished, **Zebra recommends using StageNow to generate a** `.csv` **template** file that contains all the newly created variables exactly as they appear in the profile. The administrator then has only to populate the file with the required data. 
+If user databases are not available or being used, variable names can be created at the same time as a Dynamic Profile. Once the Profile is finished, **Zebra recommends using StageNow to generate a** `.csv` **template** file, which contains all the newly created variables exactly as they appear in the profile. Then, the only remaining administrator steps are to populate the file with the required data and select the file when generating barcodes. 
 
 ### Notes
 * Each row in the `.csv` file represents one set of Dynamic Profile data.
-* Other stuff
-* More other stuffy McNotes stuffs
+* Barcode printouts are labeled to coincide with row numbers of the `.csv` file.
 
 
 WORKFLOW

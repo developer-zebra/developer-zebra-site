@@ -399,11 +399,6 @@ The template operators in the following table can assist in capturing, delimitin
 </tr>
 
 <tr>
-<td>Multiple Templates</td>
-<td>This feature sets up multiple templates for OCR decoding. For each template in the multiple template string, use a capital letter "X" as a separator between the templates.<br><br>For example, setting the OCR Template as 99999XAAAAA decodes OCR strings of either "12345" or "ABCDE."</td>
-<td>Following are sample templates with descriptions of valid data for each definition. The Field Definition is followed by its description:<br><br>&quot;M&quot;99977&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">M</span><span>&nbsp;followed by three digits and two optional digits.<br>&quot;X&quot;997777&quot;X&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">X</span><span>&nbsp;followed by two digits, four optional digits, and an X.<br>9959775599 &nbsp;&nbsp;&nbsp;&nbsp; : Two digits followed by any character, a digit, two optional digits, any two characters, and two digits.<br>A55&quot;-&quot;999&quot;-&quot;99 &nbsp;&nbsp; : A letter followed by two characters, a dash, three digits, a dash, and two digits.<br>33A&quot;.&quot;99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Two alphanumeric characters followed by a letter, a period, and two digits.<br>999992991&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Five digits followed by an optional alpha, two digits, and an optional alphanumeric.<br>&quot;PN98&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Literal field -&nbsp;</td>
-</tr>
-<tr>
 <td></td>
 <td></td>
 <td></td>
@@ -431,6 +426,14 @@ The multiple templates feature sets up two or more templates for OCR decoding, w
 "PN98" is a Literal field. 
 
 -----
+
+
+<!-- Below content was removed from last row of table to give it a section
+<tr>
+<td>Multiple Templates</td>
+<td>This feature sets up multiple templates for OCR decoding. For each template in the multiple template string, use a capital letter "X" as a separator between the templates.<br><br>For example, setting the OCR Template as 99999XAAAAA decodes OCR strings of either "12345" or "ABCDE."</td>
+<td>Following are sample templates with descriptions of valid data for each definition. The Field Definition is followed by its description:<br><br>&quot;M&quot;99977&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">M</span><span>&nbsp;followed by three digits and two optional digits.<br>&quot;X&quot;997777&quot;X&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</span><span class="c7">X</span><span>&nbsp;followed by two digits, four optional digits, and an X.<br>9959775599 &nbsp;&nbsp;&nbsp;&nbsp; : Two digits followed by any character, a digit, two optional digits, any two characters, and two digits.<br>A55&quot;-&quot;999&quot;-&quot;99 &nbsp;&nbsp; : A letter followed by two characters, a dash, three digits, a dash, and two digits.<br>33A&quot;.&quot;99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Two alphanumeric characters followed by a letter, a period, and two digits.<br>999992991&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Five digits followed by an optional alpha, two digits, and an optional alphanumeric.<br>&quot;PN98&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Literal field -&nbsp;</td>
+</tr> -->
 
 ## Also See
 

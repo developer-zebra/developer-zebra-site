@@ -40,6 +40,11 @@ content-items:
     url: /emdk-for-android/7-5/guide/notification-api
   - type: section
     level: 4
+    title: OCR Programmer's Guide
+    text: How to use the Barcode API to configure the device scanner to perform optical character recognition (OCR), which allows an app to capture various OCR font types as machine-encoded text. 
+    url: /emdk-for-android/7-5/guide/personalshopper
+  - type: section
+    level: 4
     title: PersonalShopper API Programmer's Guide
     text: The MC18 device provided by Zebra allows developers to easily create applications in the Personal Shopper category. This guide contains examples specific to using EMDK for Android with the MC18.
     url: /emdk-for-android/7-5/guide/personalshopper

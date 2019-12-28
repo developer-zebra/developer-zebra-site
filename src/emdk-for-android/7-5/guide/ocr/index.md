@@ -209,7 +209,10 @@ Creates a template for precisely matching scanned OCR characters to a desired in
 
 -----
 
-## OCR Template Parameters 
+## OCR Template Operators
+
+The template operators in the following table can assist in capturing, delimiting and formatting scanned OCR data. OCR template expressions are formed by numbers and letters arranged in a sequence. Refer to the **[Zebra DS36X8 Reference Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/barcode-scanners/ds36x8-prg-en.pdf) Chapter 15** for more information. 
+
 
 <table class="table table-striped">
 <tr>
@@ -428,3 +431,7 @@ The multiple templates feature sets up two or more templates for OCR decoding, w
 "PN98" is a Literal field. 
 
 -----
+
+## Also See
+
+**[Zebra DS36X8 Reference Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/barcode-scanners/ds36x8-prg-en.pdf)** | Chapter 15 covers OCR programming 

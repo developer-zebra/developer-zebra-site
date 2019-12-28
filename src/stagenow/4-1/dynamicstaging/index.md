@@ -7,7 +7,102 @@ productversion: '4.1'
 
 ## Overview
 
-**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows some data-entry fields in a profile to be populated with values from a file. This permits the creation of 
+**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows certain compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create a **single Profile that can configure devices differently** depending on variations of how and/or where the devices are to be used. 
+
+**Dynamic Staging simplifies staging based on...** 
+
+* Locale
+* Language 
+* Input method
+* Wi-Fi setting
+* User credentials  
+* Other customer variations
+
+### Requirements
+
+* StageNow 4.1 (or later) installed
+* Knowledge of which fields to populate dynamically and their corresponding variable names
+* A `.csv` file containing variable names and matching data for all dynamic fields&#42;
+
+&#42; The `.csv` file is required to *generate* the staging barcodes, but does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can populate with the required data. 
+
+### Usage Scenarios
+
+Zebra expects Dynamic Staging to be used in two primary ways: 
+
+* **Export Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
+
+* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases, variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. 
+
+Both is these usage scenarios are fully supported by StageNow and documented below. 
+
+-----
+
+## Export Database Variables
+
+Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. 
+
+
+### Notes
+* When a StageNow Profile is created for pre-existing variables, **the <u>variable names entered in the Profile must exactly match those of the database</u>**.
+* Other stuff
+* More other stuffy McNotes stuffs
+
+-----
+
+## Create Variables On-the-fly
+
+If user databases are not maintained or being used, variable names can be created as the Dynamic Profile is being set up. Once the Profile is finished, **Zebra recommends using StageNow to generate a** `.csv` **template** file that contains all the newly created variables exactly as they appear in the profile. The administrator then has only to populate the file with the required data. 
+
+### Notes
+* Each row in the `.csv` file represents one set of Dynamic Profile data.
+* Other stuff
+* More other stuffy McNotes stuffs
+
+
+WORKFLOW
+
+Use case- Allan: 
+
+In general, the concept is to produce a staging profile that does different things on different devices. 
+
+In its first iteration, dynamic parts are rendered static when barcodes or .bin files are created. 
+
+One staging profile produces multiple barcode sheets or .bin files. 
+
+Workflow: real-world example
+IP address
+
+many stores, in diff countries, diff languages, variables specify locales, input method 
+ROW- languages
+
+Wi-Fi ESSIDs, pass-phrases, user name, password (etc) locale, WPPSK (usually the same) 
+
+Probably one per store?
+
+STEPS 
+1. Decide to have a dynamic profile
+2. Determine what has to vary  in each profile
+3. Use the "Create a template" feature (Zebra-recommended) 
+4. Enter the required variables. it can be done as one master or separate CSVs for different stores.  
+
+ONE FILE
+all values, generate once
+but has extra barcode sheets that might not be needed every time
+
+One store, 10 department. on profile for each. 
+one row per store
+each profile references different subsets of the same file
+might not have been created from a template
+
+If customer has an access or SQL database with store info. 
+output selected sets as csv files
+might require referring to the file from within SN 
+
+WORKFLOW 1- without a database of variables
+
+WORKFLOW 2- with a database of variables
+
 
 FROM POLARION:
 

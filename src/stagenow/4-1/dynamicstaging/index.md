@@ -32,8 +32,10 @@ productversion: '4.1'
 
 There are many possible usage scenarios under which Dynamic Staging could help save staging time. Below are a few of the ways Zebra imagines using this feature. 
 
-**A mass retailer that configures devices at a central location** and deploys them to retail locations throughout the United States might maintain **one** `.csv` **file for each store**. Each store might contain a different number of departments, each with its own group of settings. For example, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department. Each row would contain a column for each of that department's variables, which might include those for `%dept_name%`, `%ssid%`, `%wifi_passphrase%`, `%default_scanner%`, `%app_1%`, `%app_2%` and `%app_3%`.
+#### The Mass Retailer
+**A mass retailer that configures devices at a central location** and deploys them to retail locations throughout the United States might maintain **one** `.csv` **file for each store**. Each store might contain a different number of departments, each with its own group of settings. For example, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department. Each column header is labeled for that department's variables, which might include those for `%dept_name%`, `%ssid%`, `%wifi_passphrase%`, `%default_scanner%`, `%app_1%`, `%app_2%` and `%app_3%`. 
 
+It's okay if some departments in that store have differing numbers of a given variable, as long as that store's `.csv` file contained enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `row_2-app_3` would be blank; it would not cause an error when generating barcodes in StageNow unless the Profile called that cell for a value. 
 
 
 * When configuring multiple devices, each with a different **static IP address or Wi-Fi access point**, etc. 

@@ -42,7 +42,7 @@ content-items:
     level: 4
     title: OCR Programmer's Guide
     text: How to use the Barcode API to configure the device scanner to perform optical character recognition (OCR), which allows an app to capture various OCR font types as machine-encoded text. 
-    url: /emdk-for-android/7-5/guide/personalshopper
+    url: /emdk-for-android/7-5/guide/ocr
   - type: section
     level: 4
     title: PersonalShopper API Programmer's Guide

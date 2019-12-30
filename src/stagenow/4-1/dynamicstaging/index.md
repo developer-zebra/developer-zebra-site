@@ -35,7 +35,7 @@ There are many possible usage scenarios under which Dynamic Staging could help s
 #### Retail Chain
 **A mass retailer that configures devices at a central location** and deploys them to retail locations throughout the United States might maintain **one** `.csv` **file for each store**. Each store might contain a different number of departments, each with its own group of settings. For example, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department. Each column header is labeled for that department's variables, which might include those for `%dept_name%`, `%ssid%`, `%wifi_passphrase%`, `%default_scanner%`, `%app_1%`, `%app_2%` and `%app_3%`. 
 
-It's okay if some departments in that store have differing numbers of a given variable, as long as that store's `.csv` file contained enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `row_2-%app_3%` would be blank, and should not cause an error when generating barcodes unless the Profile called that cell for a value. 
+If some departments in that store have differing numbers of a given variable, that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `2:%app_3%` would be blank; it would not cause an error when generating barcodes unless the Profile called cell `2:%app_3%` for a value. 
 
 
 
@@ -78,6 +78,52 @@ If user databases are not being used as the source for variable names, variables
 
 **This is the Zebra-recommended method of creating a** `.csv` **file**. 
 
+1. Data-entry fields accompanied by a percent icon (arrow, below) permit variables.  
+ <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+ <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_05.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_08.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+ <img alt="image" style="height:350px" src="SN41_dynamic_09.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_10.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_11.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_12.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_13.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+ <img alt="image" style="height:350px" src="SN41_dynamic14.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
 
 
 Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 

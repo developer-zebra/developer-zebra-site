@@ -32,15 +32,12 @@ productversion: '4.1'
 
 There are many possible usage scenarios under which Dynamic Staging could help save staging time. Below are a few of the ways Zebra imagines using this feature. 
 
-#### The Mass Retailer
+#### Retail Chain
 **A mass retailer that configures devices at a central location** and deploys them to retail locations throughout the United States might maintain **one** `.csv` **file for each store**. Each store might contain a different number of departments, each with its own group of settings. For example, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department. Each column header is labeled for that department's variables, which might include those for `%dept_name%`, `%ssid%`, `%wifi_passphrase%`, `%default_scanner%`, `%app_1%`, `%app_2%` and `%app_3%`. 
 
-It's okay if some departments in that store have differing numbers of a given variable, as long as that store's `.csv` file contained enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `row_2-app_3` would be blank; it would not cause an error when generating barcodes in StageNow unless the Profile called that cell for a value. 
+It's okay if some departments in that store have differing numbers of a given variable, as long as that store's `.csv` file contained enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `row_2-%app_3%` would be blank, and should not cause an error when generating barcodes unless the Profile called that cell for a value. 
 
 
-* When configuring multiple devices, each with a different **static IP address or Wi-Fi access point**, etc. 
-* When setting up devices for multiple locations (i.e. retail stores in different countries, locales, etc.), 
-* For variables specify locales, input method 
 
 ROW- languages
 
@@ -77,9 +74,21 @@ Companies that maintain user data (locale, network settings, etc.) in databases 
 
 ## Create Variables On-the-fly
 
-If user databases are not being used as the source for variable names, variables can be created at the same time as a Dynamic Profile. Once the Profile is finished, **Zebra recommends using StageNow to generate a** `.csv` **template** file, which contains all the newly created variables exactly as they appear in the Profile. Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 
+If user databases are not being used as the source for variable names, variables can be created at the same time as a Dynamic Profile is built. Once the Profile is finished, StageNow can create a `.csv` template file that contains all the newly created variables exactly as they appear in the Profile. 
+
+**This is the Zebra-recommended method of creating a** `.csv` **file**. 
 
 
+
+Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 
+
+Data-entry fields that support Dynamic Staging are indicated by a "percent sign" (%) icon similar to the image below.  
+
+Variables can be used alone in a field or in combination with static values and/or other variables. 
+
+For example, a valid string might read as follows: 
+
+`192.168.%octet3%.%octet4%` to specify two static octets (192 and 168 separated by a "dot") and two variables (%octet3% and %octet4%, also separated by a dot). 
 
 WORKFLOW
 

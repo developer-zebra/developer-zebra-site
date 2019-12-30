@@ -20,7 +20,7 @@ menu:
 ---
 
 
-TechDocs (techdocs.zebra.com) is the main documentation site for Zebra's development tools, and is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
+**TechDocs** (techdocs.zebra.com) is the main documentation site for Zebra's development tools and applications. It is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
 
 **The video (below) provides a brief guided tour explaining the screenshots that follow**.   
 
@@ -70,13 +70,18 @@ _Index of Enterprise Browser guides classifies available information for quick r
 
 * techdocs.zebra.com/appgallery
 * techdocs.zebra.com/datawedge
+* techdocs.zebra.com/ddt (Diagnostic Tool)
+* techdocs.zebra.com/devicecentral
+* techdocs.zebra.com/devicetracker
+* techdocs.zebra.com/dex-scanpair (DEX Scan & Pair)
 * techdocs.zebra.com/emdk-for-android
 * techdocs.zebra.com/emdk-for-xamarin
 * techdocs.zebra.com/enterprise-browser
 * techdocs.zebra.com/ehs (Enterprise Home Screen)
 * techdocs.zebra.com/enterprise-keyboard
-* techdocs.zebra.com/mx
 * techdocs.zebra.com/link-os
+* techdocs.zebra.com/mx
+* techdocs.zebra.com/ppc (PowerPrecision Console)
 * techdocs.zebra.com/simulscan
 * techdocs.zebra.com/stagenow
 
@@ -85,6 +90,8 @@ _Index of Enterprise Browser guides classifies available information for quick r
 ### SmartDocs 
 For Zebra’s Mobility DNA documentation (MX and OSX), SmartDocs allows a user to enter the MX, OSX and/or Android version(s) currently running on a device and see a list of the features and capabilities available on that device, helping to reduce development and troubleshooting time and eliminate guesswork. 
 
+If there is difficulty viewing SmartDocs on mobile devices, enable desktop mode in the browser. 
+
 ![img](smart_docs.png)
 _Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or a Full-Device Wipe_ 
 <br>
@@ -92,7 +99,8 @@ _Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or
 -----
 
 ### Integrated Google Search
-**TechDocs integrates with Google Search** to deliver results for any product (or the whole TechDocs site) ranked by relevance, enabling users to find the required information as quickly as possible.
+<!-- **TechDocs integrates with Google Search** to deliver results for any product (or the whole TechDocs site) ranked by relevance, enabling users to find the required information as quickly as possible. -->
+**TechDocs integrates with Google Search** to deliver results ranked by relevance, enabling users to find the required information as quickly as possible. A search conducted from the TechDocs home page returns results based on the whole TechDocs site.  A search conducted from a product page returns results based on the particular product.
 
 ![img](google_results.png)
 _Results of a search for "Barcode" from within DataWedge 6.3 docs_ 

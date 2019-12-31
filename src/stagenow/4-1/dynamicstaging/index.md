@@ -78,20 +78,23 @@ If user databases are not being used as the source for variable names, variables
 
 **This is the Zebra-recommended method of creating a** `.csv` **file**. 
 
-1. Data-entry fields accompanied by a percent icon (arrow, below) permit variables.  
+* Data-entry fields accompanied by a percent icon permit variables:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-
- <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
+* Static text (i.e. "GMT") and variables (i.e. %zone%) can be entered in any combination:  
  <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+* A warning appears until variables are entered using the correct syntax: 
+ <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+* Enter data for all fields, then click the "Continue" button:  
  <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+* To text Dynamic Profile, **select a barcode type and click the "Test" button**: 
  <img alt="image" style="height:350px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>

@@ -124,7 +124,7 @@ If user databases are not being used as the source for variable names, variables
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 
- <img alt="image" style="height:350px" src="SN41_dynamic14.png"/>
+ <img alt="image" style="height:350px" src="SN41_dynamic_14.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 

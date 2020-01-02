@@ -210,70 +210,66 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
-<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
-<td align="left" valign="top"><p class="table">Dutch Postal 3S</p></td>
-</tr>
-<tr>
+<td align="left" valign="top"><p class="table"><a href="#dutchpostal">Dutch Postal</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Finnish Postal 4S</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#gridmatrix">Grid Matrix</a></p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 <td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2 of 5</a></p></td>
-<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 <td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MAILMARK</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MAILMARK</p></td>
 <td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MICR E13B</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MICR E13B</p></td>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#ocra">OCR A</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#ocrb">OCR B</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#ocrb">OCR B</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
 <td align="left" valign="top"><p class="table">US Currency</p></td>
-<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
-<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -468,6 +464,11 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
  * **Disabled (0) -** To decode non-mirrored DotCode barcodes only.
  * **Enabled (1) -** To decode mirrored DotCode barcodes only.
  * **Auto (2) -** To decode both mirrored and non-mirrored DotCode barcodes (default).
+
+------
+### Dutch Postal
+
+**Dutch Postal 3S -** To enable/disable decoding of KIX 3S barcodes of type Dutch Postal.
 
 ------
 ### Interleaved 2 of 5
@@ -1088,7 +1089,7 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
-**Scanning Modes -** Used to select between Single (normal), UDI and Basic MultiBarcode modes. [UDI mode](#udiparams) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode] acquires 2-10 barcodes with each scan as specified in the Basic MultiBarcode params panel. **Default=5**.
+**Scanning Modes -** Used to select between Single (normal), UDI and Basic MultiBarcode modes. [UDI mode](#udiparams) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode](#multibarcodeparams) acquires 2-10 barcodes with each scan as specified in [Basic MultiBarcode params](#multibarcodeparams). **Default=5**.
 
 **Zoom -** Required for decoding DotCode barcodes. User needs to set Camera Zoom value to 2 on the following devices: MC33, TC51/TC56, TC70x/TC75x, VC80x, TC52/TC57, TC72/TC77, PS20. If Camera Zoom is set to any value other than 2 on these devices, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
@@ -1216,11 +1217,12 @@ MultiBarcode acquires multiple, unique barcodes in a single scan session and can
 <i>Access to Basic MultiBarcode params</i>
 
 Basic MultiBarcode params:
-* **Number of barcodes per scan -** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
+* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
 * **Instant Reporting -** Enables/Disables instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
 * **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
 	* If **Continuous Read** is also enabled, it does not work.
 	* If **Instant Reporting** is also enabled, **Instant Reporting** takes higher priority.
+
 
 **MultiBarcode Notes**
 

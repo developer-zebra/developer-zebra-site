@@ -36,6 +36,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.3.22 -** Added new RFID Input feature.
 * **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature.
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
+* **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
 
 ### Function Prototype
 
@@ -635,7 +636,7 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
   <tr>
 	<td>decoder_dutch_postal</td>
 	<td>true<br>false</td>
-	<td>dutch_postal_enable_dutch_postal_3S</td>
+	<td>decoder_dutch_postal_3S</td>
 	<td>true<br>false (default)</td>
   </tr>
 

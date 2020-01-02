@@ -37,14 +37,6 @@ There are many possible usage scenarios under which Dynamic Staging could help s
 
 If some departments in that store have differing numbers of a given variable, that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `2:%app_3%` would be blank; it would not cause an error when generating barcodes unless the Profile called cell `2:%app_3%` for a value. 
 
-
-
-ROW- languages
-
-Wi-Fi ESSIDs, pass-phrases, user name, password (etc) locale, WPPSK (usually the same) 
-
-Probably one per store?
-
 -----
 
 ### Variable Creation
@@ -53,61 +45,71 @@ Dynamic Staging variables are created in two primary ways:
 
 * **Export Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
 
-* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases, variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. 
+* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases, variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file**. 
 
-Both is these usage scenarios are fully supported by StageNow and documented below. 
+Both scenarios are fully supported by StageNow and documented in the [Using Dynamic Staging section](#usingdynamicstaging). 
 
-### Notes
+-----
+
+## Using Dynamic Staging
+
+The following directions explain the use of Dynamic Staging whether variables were exported from a database or created "on the fly." 
+
+### Variable Usage Rules
+* The <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed or errors might result. 
 * Variable names used in a StageNow Profile **must match exactly with those in the `.csv` file</u>**.
-* Each row in the `.csv` file represents one set of Dynamic Profile data.
+* Variables can be used alone in a field or in combination with static values and/or other variables. 
+* Each row in the `.csv` file represents one set of data for a Dynamic Profile.
 * Row numbers within the `.csv` file are used to label barcode printouts for identification purposes. 
+* Dynamic Staging supports **plain text files only**. 
+* **Each variable MUST be separated by a semi-colon** and each line must end with a semi-colon.  
+* Dynamic Variables are supported ONLY in fields for device settings and publish comments.
 
-
------
-
-## Export Database Variables
-
-Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. 
-
-
------
-
-## Create Variables On-the-fly
-
-If user databases are not being used as the source for variable names, variables can be created at the same time as a Dynamic Profile is built. Once the Profile is finished, StageNow can create a `.csv` template file that contains all the newly created variables exactly as they appear in the Profile. 
-
-**This is the Zebra-recommended method of creating a** `.csv` **file**. 
-
-* Data-entry fields accompanied by a percent icon permit variables:  
+1. Identify data-entry fields accompanied by a percent icon:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-* Static text (i.e. "GMT") and variables (i.e. %zone%) can be entered in any combination:  
+2. Enter static text (i.e. "GMT") and/or variables (i.e. %zone%) in any combination as desired:  
  <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-* A warning appears until variables are entered using the correct syntax: 
+ A warning appears until variables are entered using the correct syntax: <br>
  <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-* Enter data for all fields, then click the "Continue" button:  
+3. Enter variables and/or static data as desired for all fields and **click the "Continue" button**:  
  <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-* To text Dynamic Profile, **select a barcode type and click the "Test" button**: 
- <img alt="image" style="height:350px" src="SN41_dynamic_05.png"/>
+4. To test a Dynamic Profile, **select a barcode type and click the "Test" button**: <br>
+ <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
+5. A prompt appears to select **or create** the `.csv` file.<br>
+ **To select an <u>existing</u> `.csv` file Skip to Step 6**.<br>
+ **To create a** `.csv` **file "on the fly" from variables created in the profile**:<br>
+  a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
+  b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in step a.<br>  
+  c. **Enter data for all variables, save and close the file**. The image below shows an example `.csv` file:<br>
+  <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
  _Click image to enlarge; ESC to exit_.<br>
-<br>
+6. **Select the `.csv` file that contains variable data for the Dynamic Profile**: <br> 
  <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+ A barcode sheet similar to the image below is produced for each row of the `.csv` file; the profile name is appended with the row number on the printout.<br>
+ <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+7. **Repeat Steps 4 and 5** until all barcode sheets are generated as desired with no errors.  
+8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions. Combine variables and static text as desired. An example is shown below:  
+ <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+9. **Click "Publish Now" to complete the process.
  <img alt="image" style="height:350px" src="SN41_dynamic_08.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-
  <img alt="image" style="height:350px" src="SN41_dynamic_09.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -127,6 +129,7 @@ If user databases are not being used as the source for variable names, variables
  <img alt="image" style="height:350px" src="SN41_dynamic_14.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+
 
 
 Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 

@@ -17,12 +17,12 @@ Most of the functionality referenced in this guide is accessed through the DataW
 **To access DataWedge Settings**: 
 
 &#49;. From the Profiles screen, **tap the "hamburger" menu** and **select Settings** as highlighted below. The DataWedge Settings panel appears similar to the image in Step 2. 
-<img style="height:350px" src="datawedge_settings.png"/>
+<img style="height:350px" src="datawedge_settings.jpg"/>
 _Access the DataWedge Settings panel from the Profiles screen_. 
 <br>
 
 &#50;. **Tap the desired feature** to invoke it or change its state. 
-<img style="height:350px" src="68_datawedge_settings_panel.png"/> <!-- datawedge_settings_panel.png -->
+<img style="height:350px" src="datawedge_settings_panel.jpg"/> <!-- datawedge_settings_panel.png -->
 _The DataWedge Settings panel_
 <br>
 **Functions of the DataWedge Settings panel**: 
@@ -46,7 +46,7 @@ DataWedge provides the option of outputting system log messages for viewing thro
 **To Enable/Disable Logging**: 
 
 From the DataWedge Settings panel, **tap Enable Logging** to enable or disable logging as desired. 
-<img style="height:350px" src="datawedge_logging.png"/>
+<img style="height:350px" src="datawedge_logging.jpg"/>
 <br>
 
 -----
@@ -58,7 +58,7 @@ This feature prevents DataWedge from switching to a disabled profile when the ap
 > **To enable this feature, [Profile0](../overview/#profile0) must be disabled**. 
 
 From the DataWedge Settings panel, **tap Ignore disabled profiles** to enable or disable as desired:  
-<img style="height:350px" src="68_ignore_disabled_profiles.png"/>
+<img style="height:350px" src="ignore_disabled_profiles.jpg"/>
 <br>
 
 -----
@@ -70,11 +70,11 @@ DataWedge can prohibit certain apps from accessing its data capture services. Th
 **To Disable Data Capture for an app**: 
 
 From the DataWedge Settings panel, **tap Disabled app list**:  
-<img style="height:350px" src="datawedge_disabled_apps.png"/>
+<img style="height:350px" src="datawedge_disabled_apps.jpg"/>
 <br>
 
 A list appears showing all installed apps and packages, similar to the image below. **Tap one or more app(s) or activities to add to the disabled list**, scrolling as necessary.  
-<img style="height:350px" src="disabled_apps_list.png"/>
+<img style="height:350px" src="disabled_apps_list.jpg"/>
 <br>
 
 **Notes**:
@@ -95,11 +95,11 @@ A list appears showing all installed apps and packages, similar to the image bel
 &#49;. **Start DataWedge** and navigate to the Profiles list (if not shown by default).
 
 &#50;. Tap on the "hamburger" menu and **select -> Settings**:
-<img style="height:350px" src="datawedge_settings.png"/>
+<img style="height:350px" src="datawedge_settings.jpg"/>
 <br>
 
 &#51;. **Uncheck the "DataWedge enabled" checkbox**. Control of scanner hardware is returned to the system. 
-<img style="height:350px" src="datawedge_enable-disable.png"/>
+<img style="height:350px" src="datawedge_enable-disable.jpg"/>
 <br>
 
 To learn how to access DataWedge programmatically, see the [DataWedge APIs](../api). 
@@ -119,11 +119,11 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 
 &#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. <br>
 A screen appears similar to the one in Step 2. 
-<img style="height:350px" src="datawedge_export_config.png"/>
+<img style="height:350px" src="datawedge_export_config.jpg"/>
 <br>
 
 &#50;. If more than one storage device exists, **tap the desired storage device, then tap Export**. Only the storage device may be selected; the path will be inserted automatically.  
-<img style="height:350px" src="02_export_config.png"/>
+<img style="height:350px" src="export_config.jpg"/>
 <br>
 
 **Notes**: 
@@ -151,11 +151,11 @@ Once a DataWedge Profile is set up and configured as desired on a device, it can
 **To Export a Profile**: 
 
 &#49;. From the DataWedge Settings panel, **tap Export Profile** as highlighted below. A list of Profiles on the device appears similar to the image in Step 2.
-<img style="height:350px" src="datawedge_export_profile.png"/>
+<img style="height:350px" src="datawedge_export_profile.jpg"/>
 <br>
 
 &#50;. If more than one storage device exists, **tap the desired storage device, then the name of the Profile to be exported, then tap Export**. Only the storage device and Profile may be selected; the path will be inserted automatically.
-<img style="height:350px" src="04_export_profile.png"/>
+<img style="height:350px" src="export_profile.jpg"/>
 <br>
 
 The default path and filename of an exported Profile is:
@@ -181,11 +181,11 @@ DataWedge can accept settings created on another device and distributed througho
 **To Import a DataWedge Configuration file**:    
 
 &#49;. From the DataWedge Settings panel, **tap Import**. A screen appears similar to the one in Step 2, below. 
-<img style="height:350px" src="datawedge_import_config.png"/>
+<img style="height:350px" src="datawedge_import_config.jpg"/>
 <br>
 
 &#50;. **Navigate to the imported file** on device storage using the interface provided:  
-<img style="height:350px" src="01_import_config.png"/>
+<img style="height:350px" src="import_config.jpg"/>
 Imported settings take effect immediately and overwrite all prior settings.   
 <br>
 
@@ -210,11 +210,11 @@ This similarly applies if an app is listed in the [Disabled App List](../setting
 **To Import a DataWedge Profile**:  
 
 &#49;. From the DataWedge Settings panel, **tap Import Profile** as highlighted below. A screen appears similar to the one in Step 2. 
-<img style="height:350px" src="datawedge_import_profile.png"/>
+<img style="height:350px" src="datawedge_import_profile.jpg"/>
 <br>
 
 &#50;. **Navigate to the file being imported** from device storage using the interface provided: 
-<img style="height:350px" src="03_import_profile.png"/>
+<img style="height:350px" src="import_profile.jpg"/>
 **Warning**: If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one. 
 <br>
 
@@ -260,11 +260,11 @@ DataWedge has the ability to reset all user-configured settings, restoring them 
 **To Restore DataWedge to its factory-default settings**:
 
 &#49;. From the DataWedge Settings panel, **tap Restore** as highlighted below. A confirmation screen appears similar to the image in Step 2.
-<img style="height:350px" src="datawedge_restore.png"/>
+<img style="height:350px" src="datawedge_restore.jpg"/>
 <br>
 
 &#50;. **Tap Yes to Restore factory defaults** (tap No to cancel). 
-<img style="height:350px" src="05_restore_defaults.png"/>
+<img style="height:350px" src="restore_defaults.jpg"/>
 <br>
 
 -----
@@ -309,11 +309,11 @@ While DataWedge is running, it receives a system notification whenever a Config 
 
 DataWedge 6.6 (and higher) can report the results of the importation of device Profiles. These HTML reports display settings differences between the originating (source) database and the target (destination) device. This allows administrators to easily identify differences and make adjustments to compensate for disparities in hardware or software capabilities from one device to another. **Reports always use the destination device as the basis against which to compare incoming settings files**. 
 
-<img style="height:350px" src="DW_6.6_Settings_reporting.png"/>
+<img style="height:350px" src="settings_reporting.jpg"/>
 _Reporting added in DataWedge 6.6_. 
 <br>
 
-<img style="height:350px" src="DW_6.6_Reporting_settings.png"/>
+<img style="height:350px" src="reporting_settings.jpg"/>
 
 **Functions of the Reporting panel**:
 

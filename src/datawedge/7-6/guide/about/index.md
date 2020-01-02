@@ -119,8 +119,10 @@ For more information about approved languages or to download a localized operati
 -----
 ## New in DataWedge 7.6
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
+  * Set [Finnish Postal 4S](../api/setconfig/#scannerinputparameters) and [Dutch Postal 3S](../api/setconfig/#scannerinputparameters) with SetConfig API.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
 * **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
+* Improved look and feel of user interface. Refer to [Settings](../settings) and [DWDemo](../samples/dwdemo).
 
 -----
 ## Recent Version History
@@ -264,16 +266,16 @@ _Launcher icon for DataWedge 3.x_
 -->
 
 &#49;. On the device, locate and **tap the DataWedge icon** in the Launcher screen or App Drawer: 
-<img style="height:350px" src="02_datawedge_launcher.png"/>
+<img style="height:350px" src="datawedge_launcher_dw7.6.jpg"/>
 _Launcher icon for DataWedge 6.x_
 <br>
 
 &#50;. **Tap the "hamburger" menu**. The DataWedge menu appears: 
-<img style="height:350px" src="02_datawedge_settings_menu.png"/>
+<img style="height:350px" src="datawedge_settings_menu_dw7.6.jpg"/>
 <br>
 
 &#51;. **Tap About**. The "About DataWedge" screen appears. The DataWedge version number is highlighted in the image below. Notice that the Scanner Framework version also is shown.     
-<img style="height:350px" src="dw_6.7_about_screen.jpg"/>
+<img style="height:350px" src="dw_7.6_about_screen.jpg"/>
 _The "About DataWedge" box showing version numbers_ 
 <br>
 

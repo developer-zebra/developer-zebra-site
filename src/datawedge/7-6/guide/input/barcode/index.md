@@ -1204,12 +1204,12 @@ MultiBarcode acquires multiple, unique barcodes in a single scan session and can
 
  <tr>
   <td>
-  <img style="height:350px" src="multibarcode.png"/>
+  <img style="height:350px" src="multibarcode.jpg"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
   <td>
-  <img style="height:350px" src="multibarcode_params.png"/>
+  <img style="height:350px" src="multibarcode_params.jpg"/>
   </td>
  </tr>
 
@@ -1217,8 +1217,8 @@ MultiBarcode acquires multiple, unique barcodes in a single scan session and can
 <i>Access to Basic MultiBarcode params</i>
 
 Basic MultiBarcode params:
-* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
-* **Instant Reporting -** Enables/Disables instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
+* **Instant Reporting -** Enable/Disable instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
+* **Number of barcodes per scan-** Specify the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
 * **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
 	* If **Continuous Read** is also enabled, it does not work.
 	* If **Instant Reporting** is also enabled, **Instant Reporting** takes higher priority.

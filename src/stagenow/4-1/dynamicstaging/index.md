@@ -28,35 +28,34 @@ productversion: '4.1'
 
 -----
 
-### Usage Scenarios
-
-There are many possible usage scenarios under which Dynamic Staging could help save staging time. Below are a few of the ways Zebra imagines using this feature. 
-
-#### Retail Chain
-**A mass retailer that configures devices at a central location** and deploys them to retail locations throughout the United States might maintain **one** `.csv` **file for each store**. Each store might contain a different number of departments, each with its own group of settings. For example, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department. Each column header is labeled for that department's variables, which might include those for `%dept_name%`, `%ssid%`, `%wifi_passphrase%`, `%default_scanner%`, `%app_1%`, `%app_2%` and `%app_3%`. 
-
-If some departments in that store have differing numbers of a given variable, that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the department corresponding to "Row 2" of the `Store_1.csv` file used only two apps, the cell for `2:%app_3%` would be blank; it would not cause an error when generating barcodes unless the Profile called cell `2:%app_3%` for a value. 
-
------
-
 ### Variable Creation
 
 Dynamic Staging variables are created in two primary ways: 
 
 * **Export Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
 
-* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases, variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file**. 
+* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases (or that do not wish to use them for this purpose), variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file** because of the inherent accuracy of automatic output of variable names. 
 
-Both scenarios are fully supported by StageNow and documented in the [Using Dynamic Staging section](#usingdynamicstaging). 
+Both of these scenarios are fully supported by StageNow and documented in the [Using Dynamic Staging section](#usingdynamicstaging). 
+
+**There are many possible ways that Dynamic Staging could help save time**. For example, a company that configures devices at a central location and deploys them to branch locations throughout the United States might maintain **one** `.csv` **file for each store**, each of which might contain device data for that store's departments and requisite device settings. To illustrate, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department, each containing the settings for that department's variables. Variable names common to all departments might include these: 
+
+* `%dept_name%`
+* `%ssid%`
+* `%wifi_passphrase%`
+* `%default_scanner%`
+* `%app_1%`
+* `%app_2%`
+* `%app_3%`
+
+If some departments in a store have differing numbers of a given variable, that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the greatest number of apps used by any department was three, and `Dept_2` used only two, then the row for `Dept_2`'s data would contain names for only two apps; the cell for `Dept_2:%app_3%` would be blank and would not cause an error when generating barcodes unless the Profile called cell `Dept_2:%app_3%` for a value. 
 
 -----
 
 ## Using Dynamic Staging
 
-The following directions explain the use of Dynamic Staging whether variables were exported from a database or created "on the fly." 
-
 ### Variable Usage Rules
-* The <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed or errors might result. 
+* The <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed to avoid possible errors. 
 * Variable names used in a StageNow Profile **must match exactly with those in the `.csv` file</u>**.
 * Variables can be used alone in a field or in combination with static values and/or other variables. 
 * Each row in the `.csv` file represents one set of data for a Dynamic Profile.
@@ -65,11 +64,13 @@ The following directions explain the use of Dynamic Staging whether variables we
 * **Each variable MUST be separated by a semi-colon** and each line must end with a semi-colon.  
 * Dynamic Variables are supported ONLY in fields for device settings and publish comments.
 
+#### To Use Dynamic Staging:
+
 1. Identify data-entry fields accompanied by a percent icon:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. Enter static text (i.e. "GMT") and/or variables (i.e. %zone%) in any combination as desired:  
+2. Enter static text (i.e. "GMT") and/or variables (i.e. `%zone%`) in any combination as desired:  
  <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -77,7 +78,7 @@ The following directions explain the use of Dynamic Staging whether variables we
  <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. Enter variables and/or static data as desired for all fields and **click the "Continue" button**:  
+3. **Enter variables and/or static data** as desired for all fields and **click the "Continue" button**:  
  <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -85,19 +86,22 @@ The following directions explain the use of Dynamic Staging whether variables we
  <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. A prompt appears to select **or create** the `.csv` file.<br>
- **To select an <u>existing</u> `.csv` file Skip to Step 6**.<br>
- **To create a** `.csv` **file "on the fly" from variables created in the profile**:<br>
+5. A prompt appears to select **or create** the `.csv` file similar to the image below.<br>
+  **To select an <i><u>existing</u></i> `.csv` file skip to Step 6**.<br>
+  <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
+ **To create a** `.csv` **file "on the fly"** from variables created in the Profile:<br>
   a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
   b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in step a.<br>  
-  c. **Enter data for all variables, save and close the file**. The image below shows an example `.csv` file:<br>
+  c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
+  `IMPORTANT:` **All lines MUST end with a semi-colon**.<br> 
+  The image below shows a correctly formatted `.csv` file:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 6. **Select the `.csv` file that contains variable data for the Dynamic Profile**: <br> 
- <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
+ <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- A barcode sheet similar to the image below is produced for each row of the `.csv` file; the profile name is appended with the row number on the printout.<br>
+ A barcode sheet similar to the image below is produced for each row of the `.csv` file; the Profile name is appended with the row number on the printout for identification.<br>
  <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -106,10 +110,16 @@ The following directions explain the use of Dynamic Staging whether variables we
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-9. **Click "Publish Now" to complete the process.
+9. **Click "Publish Now"** to complete the process.
  <img alt="image" style="height:350px" src="SN41_dynamic_08.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+
+
+
+
+
+
  <img alt="image" style="height:350px" src="SN41_dynamic_09.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -125,7 +135,6 @@ The following directions explain the use of Dynamic Staging whether variables we
  <img alt="image" style="height:350px" src="SN41_dynamic_13.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-
  <img alt="image" style="height:350px" src="SN41_dynamic_14.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -231,56 +240,3 @@ OLD OLD
 4. Create Trusted Profile(s) for use on Trusted Device(s)
 
 -----
-
-## Create a Trusted Device
-
-
-### I. Import Certificate
-
-> ***This process requires StageNow to be running in admin mode***. 
-
-1. From the StageNow Home screen, **click the "Trusted Certificates" button**: 
- <img alt="image" style="height:350px" src="SN4_01.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-
-
-#### Also see: [How to create a self-signed certificate](https://techdocs.zebra.com/enterprise-browser/latest/guide/certificates/)
-
------
-
-### II. Deploy Certificate to Device(s)
-
-1. From the Home screen, **click the Create new Profile button**: 
-  <img alt="image" style="height:450px" src="SN4_deploy01.png"/>
-  _Click image to enlarge; ESC to exit_.<br>
-<br>
-
-
-> `IMPORTANT:` All devices that scan barcodes generated this way become "Trusted Devices" and can no longer be staged with standard "untrusted" staging Profiles; <u>they can be staged ONLY with Trusted Profiles created using the same certificate as was deployed to the device(s)</u>. 
-
------
-
-### III. Create Trusted Staging Profile
-
-**Trusted Profiles are the same as standard ("untrusted") Profiles <u>with one important exception</u>**: The final step adds a "Trusted" designation and requires selection of a security certificate. 
-
-#### To Create a Trusted Profile:
-
-1. From the Home screen, **click the "Create new Profile" button**. Before selecting a Wizard, **be sure that MX 9.2 (or higher) is selected from the drop-down menu**: 
-  <img alt="image" style="height:450px" src="SN4_trustedProfile00.png"/>
-  _Click image to enlarge; ESC to exit_.<br>
-<br>
-
-
-**Trusted Profiles are identified in Profile lists by a green lock icon** as in the sample image below: 
-  <img alt="image" style="height:450px" src="SN4_trustedProfile04.png"/>
-  _Click image to enlarge; ESC to exit_.<br>
-<br>
-
-#### `IMPORTANT:` Trusted Devices can be staged ONLY with a Trusted Profile that contains the same certificate as was deployed to those devices. 
-
-#### See the [Staging Profiles Guide](../stagingprofiles) for further details. 
-
------
-

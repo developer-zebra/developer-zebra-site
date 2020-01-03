@@ -4,6 +4,12 @@ img: datawedge_logo.png
 layout: list-mx.html
 menu:
   title: DataWedge
+  languages:
+    - lang: cn,
+      img: /images/flags/img-flag-china.png
+      urlFrom: datawedge
+      urlTo: datawedge-cn
+      label: CN - 普通话
   items:
     - title: About
       url: /datawedge/7-4/guide/about

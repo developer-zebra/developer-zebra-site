@@ -7,7 +7,7 @@ productversion: '4.1'
 
 ## Overview
 
-**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows certain compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create a **single Profile that can configure devices differently** depending on variations of how and/or where the devices are to be used. 
+**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows certain compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
 
 **Dynamic Staging simplifies staging based on...** 
 
@@ -22,23 +22,24 @@ productversion: '4.1'
 
 * StageNow 4.1 (or later) installed
 * Knowledge of which fields to populate dynamically and their corresponding variable names
-* A `.csv` file containing variable names and matching data for all dynamic fields&#42;
+* A `.csv` file containing variable names and matching data for all dynamic fields (can be created during staging setup)
 
+<!-- 
 <b><font size="1" color="grey">&#42;While a `.csv` file is required to *<u>generate</u>* staging barcodes, it does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can then populate with the required data.</font></b>
 
------
+ -->-----
 
 ### Variable Creation
 
 Dynamic Staging variables are created in two primary ways: 
 
-* **Export Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
+* **Exporting Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
 
-* **Generate Variables "On the Fly" -** For companies that DO NOT maintain user databases (or that do not wish to use them for this purpose), variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file** because of the inherent accuracy of automatic output of variable names. 
+* **Generating Variables "On the Fly" -** For companies that DO NOT maintain user databases (or that do not wish to use them for this purpose), variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file** because of the inherent accuracy of automatic output of variable names. 
 
 Both of these scenarios are fully supported by StageNow and documented in the [Using Dynamic Staging section](#usingdynamicstaging). 
 
-**There are many possible ways that Dynamic Staging could help save time**. For example, a company that configures devices at a central location and deploys them to branch locations throughout the United States might maintain **one** `.csv` **file for each store**, each of which might contain device data for that store's departments and requisite device settings. To illustrate, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 10 rows, one for each department, each containing the settings for that department's variables. Variable names common to all departments might include these: 
+**There are many possible ways that Dynamic Staging could help save time**. For example, a company that configures devices at a central location and deploys them to branch locations throughout the United States might maintain **one** `.csv` **file for each store**, each of which might contain device data for that store's departments and the requisite device settings. To illustrate, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 11 rows. The first row must contain the variable names. The next 10 rows are for the departments, and each contains the settings for that department's variables. Variable names common to all departments might include: 
 
 * `%dept_name%`
 * `%ssid%`
@@ -48,7 +49,9 @@ Both of these scenarios are fully supported by StageNow and documented in the [U
 * `%app_2%`
 * `%app_3%`
 
-If some departments in a store have differing numbers of a given variable, that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the greatest number of apps used by any department was three, and `Dept_2` used only two, then the row for `Dept_2`'s data would contain names for only two apps; the cell for `Dept_2:%app_3%` would be blank and would not cause an error when generating barcodes unless the Profile called cell `Dept_2:%app_3%` for a value. 
+<!-- 
+If some departments in a store have differing numbers of a given variable (for instance, apps in use), that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the greatest number of apps used by any department was three, and `Dept_2` used only two, the row for `Dept_2`'s data would contain names for only two apps; the cell for `Dept_2:%app_3%` would be blank. 
+-->
 
 -----
 
@@ -66,7 +69,7 @@ If some departments in a store have differing numbers of a given variable, that 
 
 #### To Use Dynamic Staging:
 
-1. Identify data-entry fields accompanied by a percent-sign icon:  
+1. **Identify data-entry fields accompanied by a percent-sign** icon:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -86,14 +89,14 @@ If some departments in a store have differing numbers of a given variable, that 
  <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. A prompt appears to select **or create** the `.csv` file similar to the image below.<br>
+5. A prompt appears for selecting (**or *creating***) the `.csv` file similar:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_07b.png"/>
   **To select an <i><u>existing</u></i> `.csv` file skip to Step 6**.<br>
  **To create a** `.csv` **file "on the fly"** from variables created in the Profile:<br>
-  a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
-  b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in Step a.<br>  
-  c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
-  `IMPORTANT:` **All lines MUST end with a semi-colon**.<br> 
+  &nbsp;&nbsp;&nbsp;&nbsp;a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in Step a.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
+  `IMPORTANT:` **Use semi-colons to separate variable names and data and to end all lines**.<br> 
   <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
   The image below shows a correctly formatted `.csv` file:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
@@ -102,13 +105,14 @@ If some departments in a store have differing numbers of a given variable, that 
  <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- **A barcode sheet is produced for each row of the** `.csv` **file** similar to the image below.<br> 
+ **On success, a barcode sheet is produced for each row of the** `.csv` **file** similar to the image below.<br> 
  **The Profile name is appended with the row number** on the printout for identification.<br>
  <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-7. **Repeat Steps 4 and 5** until all barcode sheets are generated as desired and complete with no errors.  
-8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions. Combine variables and static text as desired. An example is shown below.<br>
+7. **Repeat Steps 4&ndash;6** until all barcode sheets are generated as desired and complete with no errors.  
+8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br> 
+Combine variables and static text as desired. An example is shown below.<br>
 9. **Click "Publish Now"** to complete the process.
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
@@ -225,4 +229,3 @@ Any Staging Profile containing at least one variable is a Dynamic Staging Profil
 When the Staging Administrator or Staging Operator generates using a Dynamic Staging Profile, he will be required to supply a Data Set providing at least one or more values for every variable.
 The Staging Administrator will be able to easily manage Dynamic Staging Profiles, Data Sets, and the Barcode Sheets, NFC Binary Files, Audio Files, etc. generated from them.
  -->
------

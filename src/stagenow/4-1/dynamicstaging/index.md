@@ -24,7 +24,7 @@ productversion: '4.1'
 * Knowledge of which fields to populate dynamically and their corresponding variable names
 * A `.csv` file containing variable names and matching data for all dynamic fields&#42;
 
-&#42; The `.csv` file is required to *generate* the staging barcodes, but does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can populate with the required data. 
+&#42;<b><font size="2" color="black">A `.csv` file is required to *generate* the staging barcodes, but does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can populate with the required data.</font></b>
 
 -----
 
@@ -101,44 +101,50 @@ If some departments in a store have differing numbers of a given variable, that 
  <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- A barcode sheet similar to the image below is produced for each row of the `.csv` file; the Profile name is appended with the row number on the printout for identification.<br>
+ **A barcode sheet is produced for each row of the** `.csv` **file** similar to the image below.<br> 
+ **The Profile name is appended with the row number** on the printout for identification.<br>
  <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 7. **Repeat Steps 4 and 5** until all barcode sheets are generated as desired with no errors.  
-8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions. Combine variables and static text as desired. An example is shown below:  
+8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions. Combine variables and static text as desired. An example is shown below.<br>
+9. **Click "Publish Now"** to complete the process.
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-9. **Click "Publish Now"** to complete the process.
- <img alt="image" style="height:350px" src="SN41_dynamic_08.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
 
+## Troubleshooting
 
+Dynamic Staging errors occur when StageNow is unable to acquire data from a `.csv` file. 
 
+#### Typical causes: 
 
+* The `.csv` file is missing data for one or more variables
+* One or more variables were entered incorrectly in StageNow
+* The `.csv` file is not present on the host workstation
+* The `.csv` file is open or otherwise locked on the host workstation
 
+#### Error Handling:  
 
- <img alt="image" style="height:350px" src="SN41_dynamic_09.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
+1. If StageNow displays a "CSV Issues" message like the one below, **click "Save the log"** to generate a list of issues. 
  <img alt="image" style="height:350px" src="SN41_dynamic_10.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+2. **Name and save the file"** to the desired location: 
  <img alt="image" style="height:350px" src="SN41_dynamic_11.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+3. **Click the "Open a log file for viewing" button**, navigate to and open the new log file.<br>
+ A sample log file is shown below: 
  <img alt="image" style="height:350px" src="SN41_dynamic_12.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- <img alt="image" style="height:350px" src="SN41_dynamic_13.png"/>
+4. **Analyze the log (in a text editor), make corrections to the** `.csv` **file as needed. <br>
+ Then return to StageNow and click the "Start Over" button**:  
+ <img alt="image" style="height:350px" src="SN41_dynamic_10a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- <img alt="image" style="height:350px" src="SN41_dynamic_14.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-
+5. Return to Step 6 in the previous section and try Dynamic Staging again. 
 
 
 Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 
@@ -214,29 +220,5 @@ A single text-entry field could contain mixtures of static data and variables in
 Any Staging Profile containing at least one variable is a Dynamic Staging Profile and all other Staging Profiles are Static.
 When the Staging Administrator or Staging Operator generates using a Dynamic Staging Profile, he will be required to supply a Data Set providing at least one or more values for every variable.
 The Staging Administrator will be able to easily manage Dynamic Staging Profiles, Data Sets, and the Barcode Sheets, NFC Binary Files, Audio Files, etc. generated from them.
-
-
------
-
-OLD
-
-can protect devices with MX 9.2 and higher from unauthorized staging. Trusted devices are created from a security certificate. Once a certificate is used to create a trusted device, the device can be staged only from barcodes created using the same security certificate.
-
-#### Requirements: 
-
-* StageNow 4.1 (or higher) installed
-* `.csv` file containing variable names and values
-
-OLD OLD
-
-#### Process Snapshot:
-
-1. Create a Trusted Certificate `.pfx` file 
-2. Import the Trusted Certificate into StageNow
-3. Deploy the Trusted Certificate to device(s) to make them Trusted Device(s)<br> 
- `NOTES:`<br>
- • This activates Trusted Staging on target device(s)<br>
- • Such device(s) no longer accept standard ("untrusted") Profiles
-4. Create Trusted Profile(s) for use on Trusted Device(s)
 
 -----

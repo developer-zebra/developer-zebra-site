@@ -27,7 +27,9 @@ productversion: '4.1'
 <!-- 
 <b><font size="1" color="grey">&#42;While a `.csv` file is required to *<u>generate</u>* staging barcodes, it does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can then populate with the required data.</font></b>
 
- -->-----
+ -->
+
+-----
 
 ### Variable Creation
 
@@ -58,7 +60,7 @@ If some departments in a store have differing numbers of a given variable (for i
 ## Using Dynamic Staging
 
 ### Variable Usage Rules
-* The <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed to avoid possible errors. 
+* To avoid possible errors, the <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed. 
 * **Variable names** used in a StageNow Profile **must match exactly with those in the** `.csv` **file</u>**.
 * **Variables can be used alone or in combination with static values** and/or other variables. 
 * Each row in the `.csv` file represents one set of data for a Dynamic Profile.

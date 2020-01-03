@@ -24,7 +24,7 @@ productversion: '4.1'
 * Knowledge of which fields to populate dynamically and their corresponding variable names
 * A `.csv` file containing variable names and matching data for all dynamic fields&#42;
 
-&#42;<b><font size="2" color="black">A `.csv` file is required to *generate* the staging barcodes, but does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can populate with the required data.</font></b>
+<b><font size="1" color="grey">&#42;While a `.csv` file is required to *<u>generate</u>* staging barcodes, it does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can then populate with the required data.</font></b>
 
 -----
 
@@ -56,21 +56,21 @@ If some departments in a store have differing numbers of a given variable, that 
 
 ### Variable Usage Rules
 * The <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed to avoid possible errors. 
-* Variable names used in a StageNow Profile **must match exactly with those in the `.csv` file</u>**.
-* Variables can be used alone in a field or in combination with static values and/or other variables. 
+* **Variable names** used in a StageNow Profile **must match exactly with those in the** `.csv` **file</u>**.
+* **Variables can be used alone or in combination with static values** and/or other variables. 
 * Each row in the `.csv` file represents one set of data for a Dynamic Profile.
 * Row numbers within the `.csv` file are used to label barcode printouts for identification purposes. 
-* Dynamic Staging supports **plain text files only**. 
+* Dynamic Staging **supports plain text files only**. 
 * **Each variable MUST be separated by a semi-colon** and each line must end with a semi-colon.  
-* Dynamic Variables are supported ONLY in fields for device settings and publish comments.
+* Dynamic Variables are supported ONLY for device settings and Staging Operator instruction fields.
 
 #### To Use Dynamic Staging:
 
-1. Identify data-entry fields accompanied by a percent icon:  
+1. Identify data-entry fields accompanied by a percent-sign icon:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. Enter static text (i.e. "GMT") and/or variables (i.e. `%zone%`) in any combination as desired:  
+2. **Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  
  <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -78,7 +78,7 @@ If some departments in a store have differing numbers of a given variable, that 
  <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. **Enter variables and/or static data** as desired for all fields and **click the "Continue" button**:  
+3. **Enter remaining static text and/or variables** as desired for all fields and **click the "Continue" button**:  
  <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -87,17 +87,18 @@ If some departments in a store have differing numbers of a given variable, that 
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 5. A prompt appears to select **or create** the `.csv` file similar to the image below.<br>
+  <img alt="image" style="height:350px" src="SN41_dynamic_07b.png"/>
   **To select an <i><u>existing</u></i> `.csv` file skip to Step 6**.<br>
-  <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
  **To create a** `.csv` **file "on the fly"** from variables created in the Profile:<br>
   a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
-  b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in step a.<br>  
+  b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in Step a.<br>  
   c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
   `IMPORTANT:` **All lines MUST end with a semi-colon**.<br> 
+  <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
   The image below shows a correctly formatted `.csv` file:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
  _Click image to enlarge; ESC to exit_.<br>
-6. **Select the `.csv` file that contains variable data for the Dynamic Profile**: <br> 
+6. **Select the** `.csv` **file that contains variable data for the Dynamic Profile**: <br> 
  <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>

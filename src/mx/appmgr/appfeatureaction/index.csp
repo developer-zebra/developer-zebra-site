@@ -5,26 +5,26 @@ type: parm
 order: 23
 mx: "9.3"
 apilevel: "8.0"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: AppFeatureAction
   type: list
   list:
     - code: 0
-      devicetype: A
+      devicetype: A,B
       name: Do nothing
       description: This value (or the absence of this parm from the XML) causes no changes to device settings; any previously selected setting is retained.
       mx: "9.3"
       apilevel: "8.0"
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Turn On
       description: Enables the selected feature.
       mx: "9.3"
       apilevel: "8.0"
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Turn Off
       description: Disables the selected feature.
       mx: "9.3"

@@ -5,7 +5,7 @@ type: parm
 order: 20
 mx: "9.3"
 apilevel: "8.0"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Action is NOT "Do Nothing" 
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Background Data
       description: Allows the selected app to communicate using background data.
       mx: "9.3"

@@ -5,7 +5,7 @@ type: parm
 order: 25
 mx: "9.3"
 apilevel: "8.0"
-devicetype: A
+devicetype: A,B
 parm:
   presentif: The Action is NOT "Do Nothing" 
   pivotal: No

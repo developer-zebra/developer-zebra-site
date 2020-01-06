@@ -1,0 +1,20 @@
+---
+csp: bluetoothmgr
+title: Remote Device PIN
+type: parm
+order: 25
+mx: "9.3"
+apilevel: "28"
+devicetype: A
+parm:
+  pivotal: No
+  name: RemoteDevicePIN
+  type: string
+---
+
+Used to enter a PIN for the remote device. 
+
+<!--
+**Input value rules** nor min/max provided in DSD or MCs 
+* String from 1-255 characters containing Bluetooth device name. For example: "Zebra Printer_01" 
+-->

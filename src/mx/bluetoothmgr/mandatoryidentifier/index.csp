@@ -1,0 +1,30 @@
+---
+csp: bluetoothmgr
+title: Mandatory Identifier
+type: parm
+order: 20
+mx: "9.3"
+apilevel: "28"
+devicetype: A
+info: On devices running versions prior to Android 9 Pie, only the Bluetooth device name can be used. 
+parm:
+  presentif: Silent Pairing Action is "Add Remote Device Rule" OR "Remove Remote Device Rule"
+  pivotal: No
+  name: MandatoryIdentifier
+  type: list
+  list:
+    - code: 0
+      mx: "9.3"
+      apilevel: "28"
+      devicetype: A
+      name: Bluetooth MAC Address
+      description: Uses the Bluetooth MAC address as the device mandatory identifier.
+    - code: 1
+      devicetype: A
+      name: Bluetooth Device Name
+      mx: "9.3"
+      apilevel: "28"
+      description: Uses the Bluetooth device name as the device mandatory identifier.
+---
+
+Controls which Bluetooth parameter is used as the mandatory identifier for the device. 

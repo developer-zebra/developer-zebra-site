@@ -7,7 +7,7 @@ productversion: '4.1'
 
 ## Overview
 
-**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows certain compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
+**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
 
 **Dynamic Staging simplifies staging based on...** 
 

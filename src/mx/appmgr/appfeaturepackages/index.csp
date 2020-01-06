@@ -1,0 +1,21 @@
+---
+csp: appmgr
+title: App Feature Package Name(s)
+type: parm
+order: 25
+mx: "9.3"
+apilevel: "8.0"
+devicetype: A
+parm:
+  presentif: The Action is NOT "Do Nothing" 
+  pivotal: No
+  name: AppFeaturePackages
+  type: string
+---
+
+Used to enter the path and file name of the app package name(s) (separated by commas) on which to perform an App Feature Action.
+
+**Input value rules**: 
+
+* String of at least 1 character containing the full path and name of device-resident app package name
+* Separate multiple names using comma(s)

@@ -50,7 +50,6 @@ The following software must be installed on the staging workstation prior to usi
 
 ## What's New in v4.1
 
-OLD OLD
 ### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
@@ -72,17 +71,14 @@ OLD OLD
 
 ### New Features
 
-OLD OLD 
-**Introduces [Trusted Staging](../trustedstaging)**, which allows for the creation of trusted profiles and trusted devices, which can be staged only from barcodes created using the same security certificate. See the [Trusted Staging Guide](../trustedstaging) for usage details. **Applies only to devices with MX 9.2 and higher**. 
+**Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated, **allowing multiple staging materials to be created from a single Profile, each of which can configure one or more devices differently**. 
 
-**Now supports MX 9.2**: which adds the following features and enhancements: 
-* **Enhanced [Power Manager](../csp/power)** now allows an admin to: 
- * Control individual hardware wake up methods (buttons) 
-* **Enhanced [Display Manager](../csp/display)** now allows an admin to: 
- * Set the size of fonts and app UI components 
-* **Enhanced [Access Manager](../csp/access)** now allows an admin to: 
- * Provides greater device visibility and control while remote troubleshooting
- * Prevents one application from stopping another without explicit permission 
+**Now supports MX 9.3**: which adds the following features and enhancements: 
+* **Enhanced [File Manager](../csp/file)** now allows a Profile to: 
+ * Download a file from a redirected URL (i.e. Tiny URL) 
+ * Download files from multiple redirected URLs 
+* **Enhanced [Application Manager](../csp/app)** now allows an admin to: 
+ * Set background data/unrestricted data usage per application on the device  
 
 -----
 

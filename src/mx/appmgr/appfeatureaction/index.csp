@@ -1,0 +1,34 @@
+---
+csp: appmgr
+title: App Feature Action
+type: parm
+order: 23
+mx: "9.3"
+apilevel: "8.0"
+devicetype: A
+parm:
+  pivotal: No
+  name: AppFeatureAction
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: Do nothing
+      description: This value (or the absence of this parm from the XML) causes no changes to device settings; any previously selected setting is retained.
+      mx: "9.3"
+      apilevel: "8.0"
+    - code: 1
+      devicetype: A
+      name: Turn On
+      description: Enables the selected feature.
+      mx: "9.3"
+      apilevel: "8.0"
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      description: Disables the selected feature.
+      mx: "9.3"
+      apilevel: "8.0"
+---
+
+This is the On/Off switch for features selected in the App Feature parameter in the package selected in the App Feature Packages parameter. 

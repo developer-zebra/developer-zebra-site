@@ -23,7 +23,6 @@ parm:
       devicetype: A
       name: Bluetooth Device Name
       mx: "9.3"
-      apilevel: "28"
       description: Uses the Bluetooth device name as the device mandatory identifier.
 ---
 

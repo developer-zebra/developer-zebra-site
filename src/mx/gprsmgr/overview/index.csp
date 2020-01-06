@@ -27,6 +27,7 @@ The GPRS Manager (GprsMgr) administers Access Point Name (APN) settings for the 
  * Custom Port, Proxy, Server and Type
  * Authentication type (PAP, CHAP, both or none)
  * MVNO match data
+ * IPv4, IPv6 or IPv4/IPv6 "dual-stack" transport protocol
 
 ###About WWAN Communications
 Devices equipped with Wireless Wide Area Network (WWAN) or cellular data capabilities can support one or more of the following WWAN technology types:

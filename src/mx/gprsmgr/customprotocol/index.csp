@@ -1,0 +1,36 @@
+---
+csp: gprsmgr
+title: Custom Protocol
+type: parm
+order: 6
+mx: "9.3"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: Yes
+  name: CustomProtocol
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      name: Do not change
+      mx: "9.3"
+      description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: IPv4
+      mx: "9.3"
+      description: Selects IPv4 as the transport protocol.
+    - code: 2
+      devicetype: A,B
+      name: IPv6
+      mx: "9.3"
+      description: Selects IPv6 as the transport protocol.
+    - code: 3
+      devicetype: A,B
+      name: IPv4/IPv6
+      mx: "9.3"
+      description: Selects IPv4/IPv6 "dual-stack" as the transport protocol.
+---
+
+Used to enter a custom transport protocol for the selected APN, overriding the APN's default protocol.

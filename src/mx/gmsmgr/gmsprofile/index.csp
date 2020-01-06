@@ -26,7 +26,12 @@ parm:
       devicetype: A
       name: FMS
       mx: "9.0"
-      description: Enables the Firebase Cloud Messaging service on the device.
+      description: Enables the Firebase Cloud Messaging (FCM) service on the device.
+    - code: 4
+      devicetype: A
+      name: Chrome+Maps+FCM
+      mx: "9.0"
+      description: Enables Chrome, Maps and FCM service on the device.
 ---
 
 Controls the subset of GMS applications and services allowed to run on the device. 

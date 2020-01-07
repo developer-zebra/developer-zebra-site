@@ -112,19 +112,21 @@ If some departments in a store have differing numbers of a given variable (for i
  <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-7. **Repeat Steps 4&ndash;6** until all barcode sheets are generated as desired and complete with no errors.  
+7. **`If errors occur`** refer to the [Troubleshooting section](#troubleshooting) below for instructions.  
 8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br> 
 Combine variables and static text as desired. An example is shown below.<br>
-9. **Click "Publish Now"** to complete the process.
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+9. **Click "Publish Now"** to complete the process; distribute staging materials as normal. 
+
+#### Dynamic Staging is complete
 
 -----
 
 ## Troubleshooting
 
-Dynamic Staging errors occur when StageNow is unable to acquire data from a `.csv` file. 
+Dynamic Staging errors occur when StageNow is unable to acquire data from a `.csv` file for generating staging media. 
 
 #### Typical causes: 
 

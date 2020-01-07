@@ -9,13 +9,13 @@ languages:
 
 ---
 
-StageNow 4.1 User Guide, Revision A; <!-- StageNow MN-003401; --> October,2019
+StageNow 4.1 User Guide, Revision A; <!-- StageNow MN-003401; --> January, 2020
 
 #### Covers StageNow 4.1
 
 ## Overview
 
-This guide provides the staging administrator with instructions for using StageNow 3.2 to create XML-based profiles for staging devices.
+This guide provides the staging administrator with instructions for using StageNow to create XML-based profiles for configuring the settings of Zebra devices.
 
 ### Prerequisites
 The following software must be installed on the staging workstation prior to using StageNow:
@@ -75,10 +75,18 @@ The following software must be installed on the staging workstation prior to usi
 
 **Now supports MX 9.3**: which adds the following features and enhancements: 
 * **Enhanced [File Manager](../csp/file)** now allows a Profile to: 
- * Download a file from a redirected URL (i.e. Tiny URL) 
- * Download files from multiple redirected URLs 
+ * Download a file or files from a redirected URL (i.e. Tiny URL) 
+ * Download a file from multiple redirected URLs 
 * **Enhanced [Application Manager](../csp/app)** now allows an admin to: 
  * Set background data/unrestricted data usage per application on the device  
+* **Enhanced [Bluetooth Manager](../csp/bluetoothmgr)** now allows an admin to: 
+ * Perform silent pairing using the Bluetooth MAC address or PIN 
+ * Select a mandatory identifier by Bluetooth MAC or device name 
+* **Enhanced [GPRS Manager](../csp/gprs)** now allows an admin to: 
+ * Select the IP transport protocol used by an APN 
+ * Select from IPv4, IPv6 and the IPv4/IPv6 “dual-stack” protocol for APN use 
+* **Enhanced [Keymapping Manager](../csp/keymap)** now allows an admin to: 
+ * Select the Grey key and W1 and W2 buttons for reprogramming
 
 -----
 

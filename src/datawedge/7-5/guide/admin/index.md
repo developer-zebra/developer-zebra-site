@@ -6,7 +6,7 @@ productversion: '7.5'
 ---
 
 ## Overview
-**DataWedge Manager** CSP (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [EMDK Profile Manager](/emdk-for-android/latest/guide/profile-manager-guides) or [StageNow](/stagenow) to create profiles specific to configuring DataWedge. Features that can be configured include:
+**DataWedge Manager** CSP (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [StageNow](/stagenow) to create profiles specific to configuring DataWedge. Features that can be configured include:
 * Enable/Disable DataWedge UI
 * Enable/Disable configuration file import via intent API
 * Enable/Disable auto import of configuration file
@@ -15,7 +15,7 @@ productversion: '7.5'
 See [DataWedge Manager](/mx/datawedgemgr/) for more information.
 <br><br>
 **Version History**
-* **DataWedge 7.5 -** DataWedge Manager CSP support introduced, requires at minimum MX v9.2, EMDK v7.5, and StageNow v3.5.
+* **DataWedge 7.5 -** DataWedge Manager CSP support introduced, requires at minimum MX v9.2 and StageNow v3.5.
 <br>
 ##Enable/Disable DataWedge UI
 Controls whether the DataWedge user interface is accessible to the device user, determining the ability to change DataWedge configuration settings on the device. If disabled, DWDemo profile settings can still be modified for demonstration purposes. 

@@ -128,13 +128,14 @@ For more information about approved languages or to download a localized operati
 ## Recent Version History
 
 ### Added in DataWedge 7.5
-* Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode).**
+* Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode#multibarcodeparams).**
 * New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
 * Added support for **[OCR A](../input/barcode#ocra)** and **[OCR B](../input/barcode#ocrb)** decoders and corresponding **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
 * New **[secure Remote Administration](../admin)** using CSP (Configuration Service Provider) for mass deployment.
 * New **[Presentation Mode parameters](../input/barcode)** to adjust sensitivity levels.
 * New **[voice commands](../input/voice)** to navigate within the foreground app or issue specific key presses: TAB, ENTER, NEXT, PREVIOUS, ESC, CLEAR.
 * Deprecated "voice_enter_command" (replaced by "voice_command_enter_enabled") and "voice_tab_command" (replaced by "voice_command_tab_enabled") [voice input parameters](../input/voice).
+* New **[MICR E13B](../input/barcode#decoderselection)** and **[US Currency](../input/barcode#decoderselection)** decoder added.
 
 ### Added in DataWedge 7.4
 * **New [Enterprise Keyboard Configuration](../utilities/ekb) feature introduced in DataWedge 7.4.44.**

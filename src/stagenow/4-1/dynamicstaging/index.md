@@ -103,6 +103,7 @@ If some departments in a store have differing numbers of a given variable (for i
   The image below shows a correctly formatted `.csv` file:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
  _Click image to enlarge; ESC to exit_.<br>
+ <a name="step6"></a>
 6. **Select the** `.csv` **file that contains variable data for the Dynamic Profile**: <br> 
  <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
@@ -151,11 +152,11 @@ Dynamic Staging errors occur when StageNow is unable to acquire data from a `.cs
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 4. **Open the log in a text editor, make corrections to the** `.csv` **file as needed**. <br>
- Then **return to StageNow and click the "Start Over"** button**:  
+ Then **return to StageNow and click "Start Over"** button:  
  <img alt="image" style="height:350px" src="SN41_dynamic_10a.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. **Return to Step 6** in the previous section and try Dynamic Staging again. 
+5. **Return to <a href="#step6">Step 6</a>** in the previous section and try Dynamic Staging again. 
 
 -----
 <!-- 

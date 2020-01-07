@@ -1,6 +1,6 @@
 ---
 csp: gprsmgr
-title: Access Point
+title: Access Point Name
 type: parm
 order: 7
 mx: "4.1.1"

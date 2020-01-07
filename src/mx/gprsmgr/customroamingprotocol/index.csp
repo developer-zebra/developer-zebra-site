@@ -2,7 +2,7 @@
 csp: gprsmgr
 title: Custom Roaming Protocol
 type: parm
-order: 6
+order: 9
 mx: "9.3"
 devicetype: A,B
 info: WWAN-enabled devices only

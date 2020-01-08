@@ -1,5 +1,5 @@
 ---
-title: Installing EMM Connect
+title: About EMM Toolkit
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -7,28 +7,21 @@ productversion: '2.0'
 
 ## Overview
 
-EDIT EDIT: 
-The EMMTK (EMM Connect) Installation Guide provides instructions for installing and uninstalling the EMM Connect Staging Solution, and includes information on versions, compatibility, and system requirements.
+The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
 
-The Zebra Enterprise Mobility Management Toolkit (EMMTK) allows enterprise mobility management solution developers to adapt their EMM products to manage Zebra devices. This requires deployment of EMM Connect, a Windows-based tool that provides a conduit between EMM systems and target devices. This guide provides instructions for installing the tool on a company's existing Windows server or desktop system. 
+With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OEMConfig, a Google-sanctioned approach developed by Zebra that controls device settings through the Android Managed Configurations mechanism. [More about OEMConfig](../glossary/#oemconfig).
 
-### Requirements
-EMM Connect can be deployed on a Windows desktop or server system with the minimum system requirements listed below.  
+**The general Zebra staging process**:​
 
-#### Windows Desktop
-* Microsoft Windows Microsoft Windows 10 (64 bit) - Professional English
-* 1GB RAM (minimum)
-* 20 GB storage 
-* Java Runtime Environment (JRE) v1.8 or higher
+* **Create staging profiles** through the StageNow desktop client
+* **Generate barcodes** or other media that contains staging instructions​
+* **Read the staging instructions on the device** using a staging client
+* **Execute the staging instructions to**:​
+ * Configure the device for connection to a staging network​
+ * Download, install, configure and launch an EMM agent on the device​
+ * Perform persistence and/or other desired staging tasks
 
-#### Windows Server
-* Microsoft Windows Sever 2012 R2 (64 bit) - Professional English
-* 2 GB RAM (minimum)
-* 40 GB storage (minimum) 
-Java Runtime (JRE) (v1.8 or More)
-
-### More Info
-* **[EMM Staging Service APIs](../api)** | For adding Zebra-device staging capabilities to an EMM management console
+The primary method of integrating an EMM solution with Zebra's staging tools is through the [Staging Service APIs](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
 
 -----
 

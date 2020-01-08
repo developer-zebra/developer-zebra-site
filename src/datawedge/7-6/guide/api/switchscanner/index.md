@@ -59,13 +59,13 @@ The scanner identifier permits scanners to be identified by a friendly name rath
 DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
-* **NO_ACTIVE_PROFILE -** 
+* **NO_ACTIVE_PROFILE -** No Profile is active
 * **PARAMETER_INVALID -** Given scanner parameter is invalid
 * **PLUGIN_DISABLED -** Scanner plug-in is disabled
 * **PROFILE_DISABLED -** Profile is disabled
 * **SCANNER_ALREADY_ENABLED -** Scanner is disabled
 * **SCANNER_DISABLE_FAILED -** Scanner is disabled
-* **SCANNER_NOT_CONNECTED -**
+* **SCANNER_NOT_CONNECTED -** Scanner is not connected
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

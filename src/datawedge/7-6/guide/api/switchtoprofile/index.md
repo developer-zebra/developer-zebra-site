@@ -147,7 +147,7 @@ When activity A returns to the foreground, the app must use `SWITCH_TO_PROFILE` 
 ### Notes
 * Because DataWedge will automatically switch Profile when the activity is paused, Zebra recommends that this API function be called from the onResume method of the activity.
 * After switching to a Profile, this unassociated Profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
-* For backward compatibility, DataWedge’s automatic Profile switching is not affected by the above API commands. This why the commands work only with unassociated Profiles and apps.
+* For backward compatibility, DataWedge’s automatic Profile switching is not affected by the above API commands. This is why the commands work only with unassociated Profiles and apps.
 
 DataWedge auto Profile switching works as follows: 
 

@@ -48,15 +48,17 @@ Error messages are logged for invalid actions and parameters.
 		this.sendBroadcast(i);
 
 	//Receiving the result
-		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
 
 			@Override
 			public void onReceive(Context context, Intent intent){
 
 				Bundle extras = getIntent().getExtras();
-				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
+				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")) {
 					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
-
+				}
+			}
+		}
 
 	// Register/unregister broadcast receiver and filter results
 

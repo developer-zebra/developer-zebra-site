@@ -7,6 +7,8 @@ menu:
   items:
     - title: About
       url: /emmtk/2-0/guide/about
+    - title: Install
+      url: /emmtk/2-0/guide/install
     - title: FAQs
       url: /emmtk/2-0/guide/faq
     - title: Port

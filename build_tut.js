@@ -224,6 +224,12 @@ var sitebuild = Metalsmith(__dirname)
 
 	}))
 
+    //Zebra Data Services (ZDS) 2.0
+    .use(foldermenu({
+        folder: 'zds/2-0/',
+        automenu: true,
+        ascontent: true
+    }))
     //OemConfig 9.3
     .use(foldermenu({
         folder: 'oemconfig/9-3/',

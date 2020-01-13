@@ -36,7 +36,8 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 
 * **Output plugins –** specify how data is delivered:  
  * **[Keystroke](../output/keystroke) –** acquired data is sent to the associated application as a series of keystrokes into an editable field. It can be used to add scanning capabilities to an app without adding any code, furthermore it is also fully configurable via the DataWedge Intent API.  
- * **[Intent](../output/intent/) –** data acquired is programmatically sent to the associated foreground app/activity using the Android intent mechanism. This is useful when data simply needs to be sent to the app screen without allowing the user to edit it. Register for the DataWedge intent to receive the captured data. * **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments. 
+ * **[Intent](../output/intent/) –** data acquired is programmatically sent to the associated foreground app/activity using the Android intent mechanism. This is useful when data simply needs to be sent to the app screen without allowing the user to edit it. Register for the DataWedge intent to receive the captured data. 
+ * **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments. 
 
 * **Utilities -** optional profile configuration settings: 
  * **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen. 
@@ -102,7 +103,7 @@ Basic Usage Guide:
 * **Use different profiles based on application workflow:** For flexibility in using profiles that are not associated with another application, to switch profiles during runtime, and to overcome the restriction of associating an app activity with only one profile, use [Switch to Profile API](../api/switchtoprofile) to activate profiles that are not already associated with another app. This can be helpful to use different profiles within the same app activity, for example if an area of the activity requires PDF417 barcodes to be scanned and another area of the activity requires MSR card data to be read. When focus is on scanning PDF417 barcodes, use SWITCH_TO_PROFILE to activate the profile with the barcode configurations. Similarly, when focus is on reading the MSR data, use SWITCH_TO_PROFILE to activate the profile with the MSR configurations. Both profiles must not already have an app associated. 
 
  
-## Programming Considerations 
+## Best Practices 
 The following information provides guidance and best practices for DataWedge application development.
 
 ###General

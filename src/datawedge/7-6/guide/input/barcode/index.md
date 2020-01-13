@@ -29,7 +29,7 @@ Barcode Input is used to specify:
 
 ## Scanner Selection
 For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners is based on devices present in (or connected to) the unit being configured. 
-<img style="height:350px" src="../select_input.png"/>
+<img alt="" style="height:350px" src="scanner_selection.png"/>
 <br>
 
 The "Auto" option automatically determines the best scanning device from the list of available devices based on the rules below. 
@@ -95,7 +95,7 @@ This feature is intended to help reduce scanning workflow interruptions when a B
 
 For Bluetooth scanners, if the device was not previously paired, a pairing barcode is displayed prior to automatic connection. 
 
-<img style="height:350px" src="68_switch_on_event.png"/>
+<img style="height:350px" src="auto_switch_to_default_on_event.png"/>
 *"Auto switch to default on event" is available only when "Auto" is selected*. 
 <br>
 
@@ -137,18 +137,18 @@ Open a profile in DataWedge. The "Barcode input" section contains the option "Co
 <br>
 **Note:** The “Configure scanner settings” option is still accessible even when the selected scanner in “Scanner Selection” is disconnected. _In previous DataWedge versions prior to 6.8, all the scanner parameters (decoders, decoder params, etc.) are grayed-out and inaccessible._
 
-![img](config_scannersettings.png)
-_Figure 1. Profile settings_
+<img style="height:350px" src="configure_scanner_settings.png"/>
+_Profile settings_
 
 Tap "Configure scanner settings". A list of scanner configuration settings appears.
 
-![img](scanner_config.png)
-_Figure 2. Scanner configuration_
+<img style="height:350px" src="configure_scanner_settings_options.png"/>
+_Scanner configuration_
 
 Tap "Select scanner to set parameters".  **All Scanners** option is available to allow the scanner settings to apply to all scanners. 
 
-![img](select_scanner.png)
-_Figure 3. Global scanner configuration_
+<img style="height:350px" src="select_scanner.png"/>
+_Global scanner configuration_
 
 Select **All Scanners**. A confirmation message appears indicating that any setting changes moving forward will be applicable to all scanners as a common global configuration. **Any existing individual scanner setting will be replaced by this global setting.** The scanner does not need to be connected to the device in order to configure the settings in the global scanner configuration.   
 
@@ -286,7 +286,7 @@ cellspacing="0" cellpadding="4">
 
 **To enable or disable Decoders**: 
 
-&#49;. **From the Profile being edited, tap Decoders** as highlighted below.<br> 
+&#49;. **From the Profile being edited, tap Configure scanner settings then tap Decoders** as highlighted below.<br> 
 A list of Decoders appears similar to the image in Step 2.  
 <img style="height:350px" src="select_decoders.png"/>
 <br>
@@ -1105,22 +1105,22 @@ Provides options to make adjustments with the decoder character set. These optio
 * Auto Character Set Preferred Order 
 * Auto Character Set Failure Option 
 
-![img](charset_config.png)
+<img style="height:350px" src="charset_config.png"/>
 
 **Character Set Selection** - Converts the barcode data to the specified encoding type if different from the default encoding type, UTF-8. Other options are: Auto Character Set Selection, ISO-8859-1, Shift_JIS and GB18030.
 
-![img](charset_values.png)
+<img style="height:350px" src="charset_values.png"/>
 * **Auto Character Set Selection (Best Effort)** - Decodes data in the preference order of character sets specified in the "Auto Character Set Preferred Order" list. If the data cannot be decoded based on the character sets listed, "Auto Character Set Failure Option" takes into effect. _See description for each respective option for more details._
 
 **Auto Character Set Preferred Order** - If "Auto Character Set Selection (Best Effort)" is selected, data is decoded in the specified preference order of listed character sets of either UTF-8 or GB2312. This is useful in cases where data can be decoded from more than one character set. The first character set listed which can decode the data successfully is chosen to decode the data - any other character set located lower in the list is not considered, even if the data could be successfully decoded using that character set. If DataWedge cannot find a character set from the preferred list to decode the data successfully, the character set selected in "Auto Character Set Failure Option" is used to decode the data.
 
 Both the preferred character set list and its preference order is configurable. The order is rearranged by dragging the “hamburger-like” icon of the character set into the desired position. To delete a character set, long press on the item and the “Delete” option appears. To add a new character set, tap the “hamburger” menu at the top right corner - an option to add a character set, such as UTF-8 and GB2312, appears.
 
-![img](charset_set_order.png)
+<img style="height:350px" src="charset_set_order.png"/>
 
 **Auto Character Set Failure Option** - Used to decode data if the device cannot successfully decode based on the character sets listed in the "Auto Character Set Preferred Order" list. If “None” is selected, “Null” is returned as the data string.
 
-![img](charset_failure_option.png)
+<img style="height:350px" src="charset_failure_option.png"/>
 
 -----
 

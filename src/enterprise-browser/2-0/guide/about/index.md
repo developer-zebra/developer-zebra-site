@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](../about#mobile) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
+Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4RMP9wSL1nY?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx" frameborder="0" allowfullscreen></iframe>
 <br>
@@ -58,7 +58,7 @@ EB 2.0 is now supported for use with the following scanners when connected to Ze
 * **DS2278** support added for use with Android Nougat devices
 * **LI3678** support added for use with Android Nougat devices
 
-See all [supported Zebra devices](../about#mobile). 
+See all [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). 
 
 ### New Features
 
@@ -212,7 +212,7 @@ EB 1.8 is now supported for use with the following scanners when connected to th
  		* TC75X
  		* VC80X
 
-See all [supported Zebra devices](../about#mobile). 
+See all [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). 
 
 -----
 
@@ -352,7 +352,7 @@ EB 1.7 now supports the following **new devices** (shown in **bold**) and/or exi
  * TC51HC Marshmallow
  * TC8000 Lollipop
 
-[See all supported devices](#mobile)
+[See all supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)
 
 -----
 
@@ -457,7 +457,7 @@ EB 1.6 now supports the following new devices and/or existing devices running An
 * **TC75** with Android Marshmallow
 * **TC8000** with Android Lollipop
 
-[See all supported devices](#mobile)
+[See all supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)
 
 This release also adds a range of additional new features for all supported Android devices.
 
@@ -525,6 +525,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 -----
 
 ## Supported Devices
+
+#### Device support tables have been moved to the [EB download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) on the Zebra Support Portal. 
 
 ###Mobile
 <table cellspacing="0" cellpadding="0" class="table table-striped">

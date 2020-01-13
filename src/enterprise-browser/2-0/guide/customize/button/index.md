@@ -958,11 +958,11 @@ The following Button Actions are supported:
 
 ### buttonActionUp 
 
-Used to specify the action to be taken when a particular button is pressed and released(*similar to keyup event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
+Used to specify the action to be taken when a particular button is pressed and released (*similar to keyup event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
 
 **Notes**:
 
-* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) is NOT executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) are defined for that particular button.
 
 #### Example
 
@@ -987,7 +987,10 @@ The following Button Actions are supported:
 
 ### Adding Delay Between Actions
 
-Used for generating the delay between actions. After execution of the first action, if the second action need to be executed with a delay then providing the delay command in between two actions will be useful. This can be used in all four kind of button actions i.e. (buttonActionClick, buttonActionLongClick, buttonActionup and buttonActionDown). The command name is  ***delay*-value**.
+Used for generating a delay (in milliseconds) between actions. After execution of the first action, if the second action must be executed after a delay, providing the delay command between two actions can be useful. delay code can be applies for any type of button action ( i.e. buttonActionClick, buttonActionLongClick, buttonActionup, buttonActionDown). 
+
+**Delay command**: `delay-value`
+**Delay interval**: milliseconds
 
 #### Example
 
@@ -1006,7 +1009,7 @@ Used for generating the delay between actions. After execution of the first acti
 ### keyevent
 Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 
-**This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value, if associated.
+**This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript `onkeydown` events and outputs the value, if associated.
 
 #### Key Event Examples
 

@@ -2841,12 +2841,12 @@ Specifies a fully qualified path to the directory containing CA certificates in 
 * Local File path on the device
 -->
 ### VerifyPeerCertificate
-Controls whether server certificates will be verified against the internal certificates. **Enabled by default**. Useful for debugging, a value of 0 (disabled) is equivalent to automatically clicking ‘OK’ on a web browser’s dialog when requesting approval for an untrusted certificate. **Zebra strongly recommends that this feature be enabled for deployment**. 
+Controls whether server certificates are verified against internal certificate(s). **Enabled by default**. Useful for debugging, entering a value of 0 (disabled) is equivalent to automatically clicking "OK" on a web browser’s dialog when requesting approval for an untrusted certificate. **This attribute must be enabled to ensure maximum security in deployed devices**. Leaving peer certificates unverified poses an extreme security risk when navigating pages.
 
 **Possible Values**:
 
 * 0 - Disable peer certificate verification
-* 1 - Enable peer certificate verification
+* **1 - Enable peer certificate verification**
 
 #### Example
 	:::xml

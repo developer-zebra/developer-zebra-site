@@ -2612,7 +2612,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 	<BlockNetworkLoads="0"/>
 
 ### SaveFormData
-**Applies only to Android devices running KitKat  Lollipop, Marshmallow and Nougat; <u>not supported on Oreo</u>**. Controls whether an app will retain data entered by a user into forms, checkboxes and other input elements. **Disabled by default**. See also: [Cookies](#cookies). 
+**Applies only to Android devices running KitKat  Lollipop, Marshmallow and Nougat; <u>not supported on Oreo (or higher)</u>**. Controls whether an app will retain data entered by a user into forms, checkboxes and other input elements. **Disabled by default**. See also: [Cookies](#cookies). 
 
 * **0 - Do not save form data (default)**
 * 1 - Save form data

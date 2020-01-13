@@ -21,6 +21,10 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 > **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. Documentation relating to shortcuts remains visible for devices running earlier versions of Android. 
 
+#### `NOVEMBER 2019 UPDATE:`
+
+**The Database API is deprecated in EB 2.0 and is no longer being advanced**. Support for the Database API will end with the release of EB 2.5. 
+
 ### Device Support 
 
 EB 2.0 now supports the following mobile computing devices and operating systems: 

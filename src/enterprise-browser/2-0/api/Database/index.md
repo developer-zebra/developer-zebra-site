@@ -5,6 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
+> **The Database API is deprecated in EB 2.0 and is no longer being advanced**. 
 
 ## Overview
 Database is low-level API to access SQLite local database.

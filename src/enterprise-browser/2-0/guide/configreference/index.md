@@ -2332,7 +2332,7 @@ Controls whether JavaScript is enabled on the device. JavaScript is **enabled by
 
 ## Soft Input Panel (SIP)
 ### ResizeOnSIP
-**Applies only to Android and Windows Mobile**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. See also [WebViewLayout](#webviewlayout).
+**Applies only to full-screen apps on Android and Windows Mobile**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. See also [WebViewLayout](#webviewlayout).
 
 **Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view, and/or on Windows Mobile/CE to behave abnormally. To avoid this issue, Zebra recommends that the [AutoRotate](../configreference/#autorotate) parameter for screen orientation be disabled.  
 

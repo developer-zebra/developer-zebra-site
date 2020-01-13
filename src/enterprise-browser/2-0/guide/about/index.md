@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview
-Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
+Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](#supporteddevices) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4RMP9wSL1nY?list=PLce6-npz5dKcUY98npViY6QbuL3yhAXCx" frameborder="0" allowfullscreen></iframe>
 <br>
@@ -129,7 +129,7 @@ The following new methods, properties and/or callbacks were added to Android API
  * &lt;VerifyClientCertificate&gt;
  * &lt;DisplayZoomControls&gt;
 
-**New layouts for the [ButtonBarLayout API](../../api/re2x/buttonbar)**
+**New layouts for the [ButtonBarLayout API](../../api/re2x/ButtonBar)**
 
 ### New/Updated Features/Guides
 
@@ -528,6 +528,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 
 #### Device support tables have been moved to the [EB download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) on the Zebra Support Portal. 
 
+<!-- see note above. 
+
 ###Mobile
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
@@ -885,7 +887,8 @@ Android 8.0 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 Android 5.0 (Lollipop) <br>or Android 7.0 (Nougat)</td>
  </tr>
 </tbody>
-</table>
+</table> 
+-->
 
 -----
 <!-- 9/20/19- Printers removed per eng TUT-35220

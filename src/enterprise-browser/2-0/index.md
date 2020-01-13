@@ -13,7 +13,7 @@ menu:
   items:
     - title: About
       url: /enterprise-browser/2-0/guide/about
-    - title: Getting Started
+    - title: Start Here
       url: /enterprise-browser/2-0/guide/gettingstarted/
     - title: Tutorials
       url: /enterprise-browser/2-0/tutorial/
@@ -21,9 +21,9 @@ menu:
       url: /enterprise-browser/2-0/guide/samples
     - title: Guides
       url: /enterprise-browser/2-0/guide
-    - title: Licensing
+    - title: License
       url: /enterprise-browser/2-0/guide/licensing
-    - title: Migration
+    - title: Migrate
       url: /enterprise-browser/2-0/guide/migration
     - title: Config.xml
       url: /enterprise-browser/2-0/guide/configreference

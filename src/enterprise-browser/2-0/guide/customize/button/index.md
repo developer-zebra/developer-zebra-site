@@ -19,14 +19,16 @@ The number of buttons or keys and the appearance, layout, on-screen position, fu
 
 The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 50 ButtonBars (ButtonBar1 through ButtonBar50) and all definitions are maintained in the `button.xml` file. 
 
-The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
+The positional attributes, action, color, transparency and all other view-related parameters can be fully customized by specifying those values as key value pair in this xml file. The positional- and size- related attributes (left, top, height and width) should be defined as per target device screen resolution and current screen orientation. 
 
+#### NOTES
 
-The positional and size related attributes (left, top, height and width) should be defined as per target device screen resolution and current screen orientation. One may have to create different button.xml for different screen resolution device.  
+* Dedicated `button.xml` files might be necessary for targeting devices with varying screen resolutions. 
+* Zebra recommends disabling auto-rotate when using custom button bars.
+* If auto-rotate is required, the experience might be improved by creating separate `button.xml` files for portrait and landscape modes. 
+* Use care when assigning parameter values; passing invalid might cause unpredictable behavior.  
 
-In Enterprise Browser, it is always recommended to set auto-rotate to off for Enterprise web applications. However if someone wants to set auto-rotate to on, they should ensure to create different ButtonBars for Landscape and Portrait mode and apply them accordingly through the screen orientation event.  
-
-If user sets any invalid value for button parameters, ButtonBar may not show up and the behavior is undefined. User should pass valid values for all button/bar related parameters.  
+-----
 
 ### Sample Button.xml File
 
@@ -169,7 +171,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
 ## Nodes
 
 ### Buttonbargroup
-This is the head or parent node of the `button.xml` file; all tags should be contained with this node as shown in the example below. 
+Head or "parent" node of the `button.xml` file; all tags must be contained with this node as shown in the example below. 
 
 #### Example
 
@@ -193,10 +195,10 @@ This is the head or parent node of the `button.xml` file; all tags should be con
 
 -----
 
-### ButtonBarN
-Numbered ButtonBar1 through ButtonBar50, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
+### ButtonBar[N]
+Numbered ButtonBar1 through ButtonBar50. Contains all specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.), attributes of a particular numbered ButtonBar, and the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
-**Note**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button setting will take precedence.   
+**NOTE**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button's setting will take precedence.   
 
 #### Example
 
@@ -236,8 +238,7 @@ ButtonBar-specific parameters are used to specify attributes that apply to the e
 ### barColor
 Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB or #AARRGGBB. 
 
-**Notes**:
-
+#### Notes
 * Blue is the default if no color is specified.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color sometimes renders improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
@@ -258,8 +259,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
 
-**Notes**:
-
+#### Notes
 * Yellow is the default if no color is specified.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color sometimes renders improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
@@ -296,7 +296,7 @@ Used to specify ButtonBar transparency as a percentage from 0 (opaque) to 100 (f
 
 Used to specify the text color for a particular Button using hex format #RRGGBB or #AARRGGBB or standard color names in string format.
 
-**Notes**:
+#### Notes
 * White is the default if no color is specified.
 * The following standard color names are accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
 
@@ -347,8 +347,7 @@ Specifies the font size of the text for a particular button interpreted as "scal
 
 Used to specify the text color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
 
-**Notes**:
-
+#### Notes
 * Setting the text color for individual buttons is not supported.
 * If no color is specified
 * the default color is white.
@@ -382,7 +381,9 @@ Used to specify the style of the text of all buttons of that particular ButtonBa
 
 ### barFontSize
 
-Used to specify the default text size interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size will be chosen based on the device default. **Note**: Setting the font size for individual buttons is not supported.
+Used to specify the default text size interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size will be chosen based on the device default. 
+
+**NOTE**: Setting the font size for individual buttons is not supported.
 
 #### Example
 
@@ -529,7 +530,7 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 
 **The space occupied by each button is calculated as the number of available horizontal or vertical pixels (as determined by [barOrientation](#barorientation)) divided by the total number of ButtonN tags in the ButtonBarN node**. For example, if four buttons are created (as Button1 through Button4), a horizontally oriented ButtonBar will display four buttons of equal size across the screen.  
 
-**Note**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting will take precedence.   
+**NOTE**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting will take precedence.   
 
 #### Example
 
@@ -579,7 +580,7 @@ For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) y
 
 Used to specify the color of the button using HTML hexadecimal color values. Uses hex format #RRGGBB or #AARRGGBB OR standard color names in string format.
 
-**Notes**:
+#### Notes
 * If no color is specified, the default color is blue.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the buttonImage parameter.
@@ -622,8 +623,7 @@ Used to specify the color of the button using HTML hexadecimal color values. Use
 ### buttonColorPressed
 Used to specify the color of a button when that button is pressed. Accepts hex format #RRGGBB or #AARRGGBB or standard color names in string format.
 
-**Notes**:
-
+#### Notes
 * If no color is specified, the default color is yellow.
 * If an image is specified as a button background, buttonColorPressed setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button Color on button press can sometimes render improperly. In such cases, Zebra recommends using the buttonImagePressed parameter.
@@ -712,8 +712,7 @@ can accept  unless otherwise noted. Entering non-text characters (< > \ / " ') i
 
 If any special characters such as (< > \ / " ') need to be set as a [buttonText](#buttontext) then .
 
-**Notes**:
-
+#### Notes
 * **The buttonText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
 * **Non-text characters, if required, can be incorporated into an image and displayed using the [buttonImage](#buttonimage) parameter. 
 * **The buttonText tag will be ignored if a background image is specified**.
@@ -740,8 +739,7 @@ can accept  unless otherwise noted. Entering non-text characters (< > \ / " ') i
 
 If any special characters such as (< > \ / " ') need to be set as a [buttonSecondaryText](#buttonSecondaryText) then .
 
-**Notes**:
-
+#### Notes
 * **The buttonSecondaryText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
 
 #### Example
@@ -836,8 +834,7 @@ Used to specify the Haptic feedback property for the button. Set the value as tr
 
 Used to specify the vibrate duration of the particular button. By default, the duration value is set to 40 milliseconds. 
 
-**Notes**:
-
+#### Notes
 * The vibration will start if [buttonHapticfeedback](buttonhapticfeedback) is set to true.
 * The vibration will stop either if duration is completed or button is released.
 * Set any value in milliseconds in the range of 1 to 1000 milliseconds.
@@ -874,8 +871,7 @@ Used to specify the clickable property of the button. Button is clickable if and
 
 Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
 
-**Notes**:
-
+#### Notes
 * The parameter name has been changed from `buttonAction` to `buttonActionClick`. However the older tag name will also work.
 * `buttonActionClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
@@ -904,8 +900,7 @@ The following Button Actions are supported:
 
 Used to specify the action to be taken when a particular button is long pressed. Accepts predefined command strings only.
 
-**Notes**:
-
+#### Notes
 * `buttonActionLongClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
 #### Example
@@ -933,8 +928,7 @@ The following Button Actions are supported:
 
 Used to specify the action to be taken when a particular button is pressed(*similar to keydown event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
 
-**Notes**:
-
+#### Notes
 * [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
 #### Example
@@ -962,8 +956,7 @@ The following Button Actions are supported:
 
 Used to specify the action to be taken when a particular button is pressed and released (*similar to keyup event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
 
-**Notes**:
-
+#### Notes
 * [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) is NOT executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) are defined for that particular button.
 
 #### Example
@@ -1043,8 +1036,7 @@ A button can be used to invoke any JavaScript code block, including any of the [
 * **runscript -** indicates that a **button action** is associated with a JavaScript code block.
 * **scriptname -** specifies the name of the script (an .xml file) containing the desired JavaScript block. [More about this file](../script)
 
-**Notes**:
-
+#### Notes
 * If a **button action** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
 * See the [Custom JavaScript Guide](../script) for details on creating custom script .xml files.
 * See also the [&lt;customxmlfile&gt; tag](../../configreference/#customxmlfile) in the `Config.xml` reference to specify or change the name and/or location of the script .xml file.

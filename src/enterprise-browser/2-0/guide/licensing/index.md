@@ -5,18 +5,22 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
+>**`NOTICE`**: **Beginning with Enterprise Browser 2.0, the process for applying device licenses has changed. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.
+
 ## Overview 
-**Beginning with Enterprise Browser 2.0, the process for applying device licenses has changed. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. 
 
 Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available for 90-day trial and perpetual functionality. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased as explained below. 
 
 ### Requirements
-* **One or more license keys** (aka Activation IDs) purchased for EB 2.0 software
-* **Zebra device(s) with License Manager app** on device:
+***ALL THREE*** of the following are required to activate EB license(s):   
+
+1. **One or more license keys** (aka Activation IDs) purchased for EB 2.0 software
+2. **One or more Zebra device(s) with License Manager app** on device:
  * **Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)
- * **Windows Mobile/CE**: License Manager 1.0 or higher (included with EB installer)
-* **Internet connection** (for online activation) **OR**
-* **Linux or Windows server** (for off-line activation) 
+ * **Windows CE7**: License Manager 1.0 or higher (included with EB installer)
+3. **One of the following server connections**: 
+ * **An internet connection** for online activation **OR**
+ * **Linux or Windows server** (for off-line activation) 
 
 -----
 

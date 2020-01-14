@@ -19,14 +19,14 @@ The number of buttons or keys and the appearance, layout, on-screen position, fu
 
 The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 50 ButtonBars (ButtonBar1 through ButtonBar50) and all definitions are maintained in the `button.xml` file. 
 
-The positional attributes, action, color, transparency and all other view-related parameters can be fully customized by specifying those values as key value pair in this xml file. The positional- and size- related attributes (left, top, height and width) should be defined as per target device screen resolution and current screen orientation. 
+The positional attributes, action, color, transparency and all other view-related parameters can be fully customized by specifying those values as key value pair in this XML file. The positional- and size- related attributes (left, top, height and width) should be defined as per target device screen resolution and current screen orientation. 
 
-#### NOTES
+#### Notes
 
 * Dedicated `button.xml` files might be necessary for targeting devices with varying screen resolutions. 
 * Zebra recommends disabling auto-rotate when using custom button bars.
 * If auto-rotate is required, the experience might be improved by creating separate `button.xml` files for portrait and landscape modes. 
-* Use care when assigning parameter values; passing invalid might cause unpredictable behavior.  
+* Use care when assigning parameter values; passing invalid can cause unpredictable behavior.  
 
 -----
 
@@ -198,7 +198,7 @@ Head or "parent" node of the `button.xml` file; all tags must be contained with 
 ### ButtonBar[N]
 Numbered ButtonBar1 through ButtonBar50. Contains all specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.), attributes of a particular numbered ButtonBar, and the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
-**NOTE**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button's setting will take precedence.   
+**NOTE**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button's setting takes precedence.   
 
 #### Example
 
@@ -330,7 +330,7 @@ Used to specify the style of the text for a particular button. Allowed values ar
 
 ### buttonFontSize
 
-Specifies the font size of the text for a particular button interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size is chosen based on the device default.
+Used to specify the font size of the text for a particular button interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size is chosen based on the device default.
 
 #### Example
 
@@ -381,7 +381,7 @@ Used to specify the style of the text of all buttons of that particular ButtonBa
 
 ### barFontSize
 
-Used to specify the default text size interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size will be chosen based on the device default. 
+Used to specify the default text size interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size is chosen based on the device default. 
 
 **NOTE**: Setting the font size for individual buttons is not supported.
 
@@ -429,7 +429,7 @@ Used to specify ButtonBar transparency as a percentage from 0-100 (0=none; 100=f
 
 ### barOrientation
 
-Used to select the horizontal or vertical orientation of buttons on the ButtonBar. The horizontal setting will position the bar across the screen from left to right; vertical from top to bottom. If unspecified, horizontal orientation will be selected. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons will be calculated based on the &lt;barOrientation&gt; value (if any) and [Positional Attributes](#positionalattributes).
+Used to select the horizontal or vertical orientation of buttons on the ButtonBar. The horizontal setting will position the bar across the screen from left to right; vertical from top to bottom. If unspecified, horizontal orientation is selected. If button-specific positional attributes (left, top, height, width) are not set, the values for all individual buttons is calculated based on the &lt;barOrientation&gt; value (if any) and [Positional Attributes](#positionalattributes).
 
 #### Example
 
@@ -446,11 +446,11 @@ Used to select the horizontal or vertical orientation of buttons on the ButtonBa
 
 Used to specify the placement of the ButtonBar on the device screen. 
 
-> **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are unspecified, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; and with vertical orientation placed along the right edge of the screen and occupy the full screen height. 
+> **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are unspecified, a buttonBar with horizontal orientation is placed at the bottom of the screen and occupy the full screen width; and with vertical orientation placed along the right edge of the screen and occupy the full screen height. 
 
 ### Using Relative Co-ordinates For ButtonBar Positioning
 
-For positioning related tags you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+For positioning related tags, provide the value as either the absolute measure in pixels or use constants such as `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` is automatically substituted internally with that respective device screenheight and screenwidth. By using these constants, a single generic `button.xml` can be created for all similar devices. Only one mathematical operation should be used for this.
 
 #### Valid Examples
 
@@ -530,7 +530,7 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 
 **The space occupied by each button is calculated as the number of available horizontal or vertical pixels (as determined by [barOrientation](#barorientation)) divided by the total number of ButtonN tags in the ButtonBarN node**. For example, if four buttons are created (as Button1 through Button4), a horizontally oriented ButtonBar will display four buttons of equal size across the screen.  
 
-**NOTE**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting will take precedence.   
+**NOTE**: If an attribute defined in one or more [ButtonBar parameters](#buttonbarparameters) conflicts with one or more individual Button parameters, the individual Button setting takes precedence.   
 
 #### Example
 
@@ -564,7 +564,7 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 
 ## Relative Coordinates For Button-Specific Positioning
 
-For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) provide the value as either the absolute measure in pixels or constants such as `deviceheight` and `devicewidth` and perform the basic mathematical operations on them. The `deviceheight` and `devicewidth` are automatically substituted internally with the respective device screenheight and screenwidth. By using these constants, a single generic button.xml can be created for all similar devices. Only one mathematical operation should be used for this.
 
 #### Valid Examples
 
@@ -715,7 +715,7 @@ If any special characters such as (< > \ / " ') need to be set as a [buttonText]
 #### Notes
 * **The buttonText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
 * **Non-text characters, if required, can be incorporated into an image and displayed using the [buttonImage](#buttonimage) parameter. 
-* **The buttonText tag will be ignored if a background image is specified**.
+* **The buttonText tag is ignored if a background image is specified**.
 * Text size should be selected based on button size and the [barFontSize](#barfontsize) parameter value.
 * Over-sized text might not be fully visible.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) and [buttonImagePressed](#buttonimagepressed) parameters.

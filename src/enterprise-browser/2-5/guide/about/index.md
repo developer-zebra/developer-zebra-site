@@ -17,17 +17,192 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
-## News in v2.5
+## New in v2.5
 
 **The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
 
-
+**EB apps are no longer supported on devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
 ### Device Support
 
+#### Mobile Devices
+
+**Android 9.x Pie** newly supported devices: 
+
+* **PS20**
+* **TC52**
+* **TC72**
+
+**Android 8.x Oreo** newly supported devices: 
+
+* **EC30**
+* **ET51**
+* **ET56**
+* **L10**
+* **VC83**
+
+#### Scanners
+* **RS5100** connected to devices running Android 7.x Nougat and higher 
+* **SE4750DPW** connected to devices running Android 7.x Nougat and higher 
+* **SE4770** connected to MC33xx devices running Android 8.x Oreo and higher
+
+#### Accessories
+External Vibrator Cable (CBL-NGWT- HDVBAP-01) 
+
+#### No longer supported 
+Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat  
+
+Visit the [Zebra Support Portal's EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) for the full list of supported devices.
+
 ### New Features
 
+Multi-Session Support 
+
+Enterprise Browser supports multiple concurrent sessions with session-specific configurations: 
+
+Tab Approach 
+
+Shortcut approach  
+
+For more information, see the Multi-Session Page (Link To be updated) 
+
+ 
+
+Serial JavaScript API Support 
+
+Enterprise Browser support Serial API set for JS API exposed for: 
+
+Read 
+
+Write 
+
+Serial port configuration parameters  
+
+For more information, see the Serial JavaScript API Page (Link To be updated) 
+
+ 
+
+Enterprise Keyboard JavaScript Intent API Support 
+
+Enable/Disable Enterprise Keyboard on focus 
+
+Query keyboard layouts available on the device 
+
+Set keyboard layout for a specific context 
+
+Reset keyboard layout to default settings 
+
+For more information, see the Enterprise Keyboard JavaScript Intent APIs Page (Link To be updated) 
+
+ 
+
+Metatag Filtering Support 
+
+This feature can provide blacklisted and whitelisted metatags and metatag filtering and in the Config.xml file: 
+
+	<MetaTagFiltering>  
+
+	<MetatagFilteringEnabled> 
+
+	<WhiteListingMetatags> 
+
+	<BlackListingMetatags> 
+
+ 
+
+For more information, see the Metatag Filtering page. (Link To be updated) 
+
+ 
+
+Shortcut Creation Support  
+
+On Android 8.x Oreo and higher, supports shortcut creation through a new pinned shortcuts feature.  
+
+ 
+
+For more information, see the Shortcut Creation page. (Link To be updated) 
+
+ 
+
+Custom CSS Support 
+
+Used to modify default styles of EB applications. 
+
+	<customcssfile> 
+
+For more information, see the Custom CSS page. (Link To be updated) 
+
+ 
+
+KeyboardType Support  
+
+Used to set the keyboard type to be used in the application. The same ButtonBar layouts created for prior versions of?EB can be used through enterprisekeyboard. 
+
+ 
+
+For more information, see the Sap usage guide page. (Link To be updated) 
+
+ 
+
+ShowLicenseConfirmation Support  
+
+ShowLicenseConfirmation config tag is now supported on Android devices (formerly Windows-only). 
+
+ 
+
+For more information, see the ShowLicenseConfirmation page. (Link To be updated) 
+
+ 
+
+ESN Support  
+
+New ESN API allows retrieval of the electronic serial number of the device. 
+
+ 
+
+For more information, see the Configuration guide page. (Link To be updated) 
+
+ 
+
+Disable TTS and ASR during Navigation and delay in playing TTS support 
+
+Used to disable TTS and ASR functionality to delay capture of TTS using tags in Config.xml file:  
+
+	<disablettsduringnavigation> 
+
+	<disableasrduringnavigation> 
+
+	<delayfortts> 
+
+ 
+
 ### New/Enhanced APIs
+
+**The [Barcode API](../../api/barcode)** includes these enhancements: 
+* **New properties**:
+ * barcodeCount
+ * instantReporting 
+ * SceneDetectionQualifier  
+ * dotCode 
+ &nbsp;&nbsp; * dotCodeInverse 
+ &nbsp;&nbsp; * dotCodeMirror 
+ * gridmatrix 
+ &nbsp;&nbsp; * gridmatrixinverse 
+ &nbsp;&nbsp; * gridmatrixmirror 
+ * i2of5febraban 
+ * gs1qrcode 
+ * gs1datamatrix 
+ * decodeScreenNotification 
+ * decodeScreenNotificationTime 
+ * decodeScreenTranslucencyLevel 
+ * zoom 
+ * signatureImageBitsPerPixel 
+ * signatureImageFormat 
+ * illuminationBrightness 
+ * aimType 
+ &nbsp;&nbsp; * PRESENTATION  
+
+ 
 
 ## New/Updated Guides
 
@@ -548,418 +723,3 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 
 #### Device support tables have been moved to the [EB download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) on the Zebra Support Portal. 
 
-<!-- see note above. 
-
-###Mobile
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC3300, MC3300R</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br><br>Android 8.0 (Oreo)<br> (requires BSP 01-01-49 with LG patch 13)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC40</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br> (requires BSP 03-07-03 with patch 7)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC55</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC5574, MC5590</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-  <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC55X</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC55-HC Healthcare</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br> (requires BSP 03-20-01 with LG patch 4)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC92N0</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Windows Embedded Handheld 6.5<br><br>Android 4.4 KitKat<br> (requires BSP 03-13-1006 with LG patch 3)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC9300</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC9300</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
-  <td class="clsSyntaxCells clsOddRow">XT15</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>(requires BSP Omnii CE-12.2.44149 or higher)<br><br>Windows Embedded Handheld 6.5<br>(requires BSP WEH 8.2.44159 or higher)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>PS20</b></td>
-  <td class="clsSyntaxCells clsOddRow">PS20J, PS20J Plus/Base</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC20</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC20, TC20K, TC20 with <br>RFD2000 RFID Sled</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC25</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC25</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC51</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC52</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC52, TC52HC</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC57</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC57</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC56</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC56</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC70 GA1, TC70 GA2</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC70x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC72</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC72</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC75, TC75x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC75x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC77</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC77</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC8000</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>TC8300</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC8300</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-  <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
-  <td class="clsSyntaxCells clsOddRow">7528</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 <br>(requires BSP WAP4 CE-2.4 or higher)<br>Windows Embedded Handheld 6.5 <br>(requires BSP WAP4 WEH-3.0.1 or higher)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-</tbody>
-</table>
-
------
-
-###Vehicle
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
-  <td class="clsSyntaxCells clsOddRow">VH10</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>(requires BSP Omnii CE-12.2.44149 or higher)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>VC70</b></td>
-  <td class="clsSyntaxCells clsOddRow">VC70</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-<tr>
-  <td class="clsSyntaxCells clsOddRow"><b>VC80X</b></td>
-  <td class="clsSyntaxCells clsOddRow">VC80X</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Stock Android Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
- </tr>
-</tbody>
-</table>
-
------
-
-###Micro-Kiosk
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody>
- <tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
- </tr>
-  <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>CC600</b></td>
-  <td class="clsSyntaxCells clsOddRow">Customer Concierge (5-inch display)</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
-  <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>CC6000</b></td>
-  <td class="clsSyntaxCells clsOddRow">Customer Concierge (10-inch display)</td>
-  <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MK3100</b></td>
-  <td class="clsSyntaxCells clsOddRow">MK3100, MK3190</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
-</tbody>
-</table>
-
------
-
-###Wearable
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody>
- <tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>WT41N0</b></td>
-  <td class="clsSyntaxCells clsOddRow">WT41N0</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
-  <td class="clsSyntaxCells clsOddRow">WT6000</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 04-10-03 with LG patch 6)<br><br>Android 7.x (Nougat)<br>(requires BSP 12-29 with LG patch 3)</td>
-  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
- </tr>
- </tbody>
- </table>
-
-
-<h3>Ring Scanners</h3>
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody>
- <tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Device type</th>
-  <th class="clsSyntaxHeadings">Supported for use with:</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
-  <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">WT6000 Android 5.0 (Lollipop) or Android 7.0 (Nougat)</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>RS5000</b></td>
-  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">WT6000 Android 5.0 (Lollipop) or Android 7.0 (Nougat)</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
-  <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC75, TC8000 Android 5.0 (Lollipop)<br>TC51, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, <br>VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
-  <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC70 Android 4.4 (KitKat)<br>TC51, TC51HC, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, <br>VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)<br>See RS507 Support Notes below.</td>
- </tr>
-</tbody>
-</table>
-
-**RS507 Support Notes**: 
-
-* Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on such devices).
-
-* Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
-
------
-
-<h3>Handheld Scanners</h3>
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody>
- <tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Device type</th>
-  <th class="clsSyntaxHeadings">Supported for use with:</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>LI3678</b></td>
-  <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC52, TC51HC, TC56, TC57, TC72, TC77, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>DS2278</b></td>
-  <td class="clsSyntaxCells clsOddRow">Handheld Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51HC, TC56, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77
-Android 8.0 (Oreo)</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
- </tr>
-</tbody>
-</table>
-
------
-
-<h3>Misc. Accessories</h3>
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody>
- <tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Description</th>
-  <th class="clsSyntaxHeadings">Device type</th>
-  <th class="clsSyntaxHeadings">Support note(s)</th>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>Vibrator CBL-NGWT-HDVBAP-01</b></td>
-  <td class="clsSyntaxCells clsOddRow">Vibrating Cable</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 Android 5.0 (Lollipop) <br>or Android 7.0 (Nougat)</td>
- </tr>
-</tbody>
-</table> 
--->
-
------
-<!-- 9/20/19- Printers removed per eng TUT-35220
-###Printers
-
-The printers shown below have been tested for compatibility with USB printing from Enterprise Browser. Printing wirelessly from EB apps is supported on many other Zebra printer models. **NOTE**: Zebra's QL Plus and QLn series printers do not support USB printing.
-
-<table cellspacing="0" cellpadding="0" class="table table-striped">
- <tbody><tr>
-  <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">OS Compatibility</th>
-  <th class="text-centered">Interface(s)</th>
- </tr>
-<tr>
-<td class="clsSyntaxCells clsOddRow"><b>MZ</b></td>
-<td class="clsSyntaxCells clsOddRow">MZ 220, MZ 320</td>
-<td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
-<td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
-<tr>
-<td class="clsSyntaxCells clsOddRow"><b>iMZ</b></td>
-<td class="clsSyntaxCells clsOddRow">iMZ 220, iMZ 320</td>
-<td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
-<td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
-<tr>
-<td class="clsSyntaxCells clsOddRow"><b>RW</b></td>
-<td class="clsSyntaxCells clsOddRow">RW 220, RW 420, RW 420 Print Station</td>
-<td class="clsSyntaxCells usb comp">Android, Windows Mobile/CE</td>
-<td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
-<tr>
-<td class="clsSyntaxCells clsOddRow"><b>P4T</b></td>
-<td class="clsSyntaxCells clsOddRow">P4T, RP4T Passive RFID Printer</td>
-<td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
-<td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
-<tr>
-<td class="clsSyntaxCells clsOddRow"><b>ZD500R</b></td>
-<td class="clsSyntaxCells clsOddRow">ZD500R RFID Printer</td>
-<td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
-<td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
-</tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
-  <td class="clsSyntaxCells clsOddRow"></td>
- </tr>
-</tbody>
-</table>
- -->
------

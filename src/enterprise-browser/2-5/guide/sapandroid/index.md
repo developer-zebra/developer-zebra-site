@@ -73,7 +73,7 @@ Keyboard visibility and custom key layouts can be controlled through parameters 
     </KeyboardConfiguration>
 <br>
 
-#### Display the keyboard with F10 key <i><u>OR</i></u> when input field is focused:
+#### Display the keyboard by pressing the F10 key <i><u>OR</u></i> when focus comes to an input field:
     :::xml
     <KeyboardConfiguration>
     <KeyboardVisibility value="onDemand"/>

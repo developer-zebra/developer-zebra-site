@@ -3011,7 +3011,7 @@ Specifies which control-key combinations (copy, paste, etc.) should be enabled. 
 Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module followed by the tilde character ( ~ ) and the properties of the module to set as described in the EMML 1.1 specification. If the meta tag is present in both the configuration and a loaded page, the page takes priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
 
 ##### `IMPORTANT:` On TC83, MC93, CC600, CC6000 or PS20 devices:
-Maintain backward compatibility of scanner metatags by adding the following line to the `Config.xml` file on those devices: 
+Maintain backward compatibility of scanner meta tags by adding the following line to the `Config.xml` file on those devices: 
 
 	:::xml
 	<MetaTag value="Scanner~enumerate;enabled:SCN2"/>
@@ -3028,6 +3028,65 @@ Maintain backward compatibility of scanner metatags by adding the following line
 		<MetaTag value="QuitButton~visibility:visible;width:50;"/>
 	...
 	</DefaultMetaTags>
+
+-----
+
+## MetaTagFiltering
+**Applies only to Android**. Parent tag for all child parameter tags for meta tag filtering, which permits one or more meta tags or sets of meta tags to be allowed (using the "WhiteListing" tag) or blocked (using the "blackListing" tag) from use by an EB app. 
+
+### MetaTagFilteringEnabled
+**Applies only to Android**. Controls whether meta tag filtering is enabled. 
+
+**Possible Values**: 
+
+* 0 – Disabled
+* 1 – Enabled
+
+#### Example 
+	:::xml
+	<MetaTagFiltering>
+	    <MetaTagFilteringEnabled value="1"/>
+	</MetaTagFiltering>
+
+
+###WhiteListingMetaTags
+**Applies to only Android**. Allows the EB app to access one or more meta tags when MetatagFilteringEnabled tag is set to 1. If MetatagFiltering is enabled and this field is left blank, all the meta tags are allowed. Specifying one or more meta tags using this parameter causes all remaining meta tags to be blocked. 
+
+**Possible Values**: 
+
+* Only meta tag(s) and meta tag(s) with meta tag properties. If passing only meta tag(s), all meta tag properties are allowed. If passing meta tag(s) with properties, only the specified properties and value(s) are allowed.
+* Pass multiple values using the plus sign (+) as a separator. 
+
+
+#### Example
+
+			// Whitelist a quitButton meta tag with `Visibility:Visible;Width:50;` properties:
+	:::xml
+	<MetaTagFiltering>
+	    <WhiteListingMetaTags value="scanner~enumerate;enabled:SCN2;enumscannerevent:enumscanners(%s)+quitButton~Visibility:Visible;Width:50;"/>
+	</MetaTagFiltering>
+
+				// All other properties for this meta tag are blocked.
+
+
+###BlackListingMetaTags
+**Applies to only Android**. Blocks the EB app from access to one or more meta tags when MetatagFilteringEnabled tag is set to 1. If MetatagFiltering is enabled and this field is left blank, no meta tags are blocked. Specifying one or more meta tags using this parameter causes all remaining meta tags to be allowed. 
+
+**Possible Values**: 
+
+* Only meta tag(s) and meta tag(s) with meta tag properties. If passing only meta tag(s), all meta tag properties are blocked. If passing meta tag(s) with properties, only the specified properties and value(s) are blocked.
+* Pass multiple values using the plus sign (+) as a separator. 
+
+
+#### Example
+
+			// Blacklist a quitButton meta tag with `Visibility:Visible;Width:50;` properties:
+	:::xml
+	<MetaTagFiltering >
+    	<BlackListingMetaTags value=" scanner~enumerate;enabled:SCN2;enumscannerevent:enumscanners(%s)+quitButton~Visibility:Visible;Width:50;"/>
+	</MetaTagFiltering >
+
+				// All other properties for this meta tag are allowed.
 
 -----
 

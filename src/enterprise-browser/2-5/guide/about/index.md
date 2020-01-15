@@ -17,7 +17,25 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
-## New in v2.0
+## News in v2.5
+
+**The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
+
+
+
+### Device Support
+
+### New Features
+
+### New/Enhanced APIs
+
+## New/Updated Guides
+
+----- 
+
+## Version History
+
+### Added in v2.0
 
 > **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. Documentation relating to shortcuts remains visible for devices running earlier versions of Android. 
 
@@ -25,7 +43,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 **The Database API is deprecated in EB 2.0 and is no longer being advanced**. Support for the Database API will end with the release of EB 2.5. 
 
-### Device Support 
+#### Device Support 
 
 EB 2.0 now supports the following mobile computing devices and operating systems: 
 
@@ -55,7 +73,7 @@ Enterprise Browser 2.0.1 (and later) adds support for the following devices:
 * **CC600** 
 * **CC6000**
 
-### Scanner Support
+#### Scanner Support
 EB 2.0 is now supported for use with the following scanners when connected to Zebra devices and operating systems listed:
 
 **Handheld Scanner Support**
@@ -64,7 +82,7 @@ EB 2.0 is now supported for use with the following scanners when connected to Ze
 
 See all [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). 
 
-### New Features
+#### New Features
 
 * **Now supports [Hardware Key Remapping](../keycapture/#mappinghardwarekeys) -** to allow hardware keys of Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
 * Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** to simplify file-path coding.
@@ -97,7 +115,7 @@ See all [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/
  * **[&lt;asrlanguage&gt;](../configreference#asrlanguage) -** Used to set the language for speech recognition input.
 
 
-### New/Enhanced APIs
+#### New/Enhanced APIs
 
 The following new methods, properties and/or callbacks were added to Android APIs:
 
@@ -135,7 +153,7 @@ The following new methods, properties and/or callbacks were added to Android API
 
 **New layouts for the [ButtonBarLayout API](../../api/re2x/ButtonBar)**
 
-### New/Updated Features/Guides
+#### New/Updated Features/Guides
 
 * **An updated [Licensing Guide](../licensing)** describes the all-new processes for licensing EB apps on a device and across an organization. 
 * **New [Backward Compatibility Guide](../backward)** explains the minor adjustments required to avoid rendering issues and other problems when moving older apps to EB 2.0. 
@@ -184,8 +202,6 @@ For more information, see the ButtonBar Usage Guide.
  * Support for EB substitution variables to simplify file-path coding.
 
 -----
-
-## Version History
 
 ### Added in v1.8
 

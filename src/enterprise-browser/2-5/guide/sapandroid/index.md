@@ -43,9 +43,34 @@ Logic in the `/android_sap/Sapkeyboard.js` file reads the SAP keyboard config pa
 
 ## Configuration Parameters
 
-Enterprise Browser 2.0 (and higher) introduces configuration parameters that provide more control over the behavior of SAP apps.
-
 ### SAP Keyboard Parameters
+
+#### KeyboardType
+Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME for the app. 
+
+**Possible Values**:
+* **Buttonbar** enables the EB buttonbar layouts to input data. The desired layout file must be specified in the &lt;buttonxmlfile&gt; tag of the app's `Config.xml` file.
+
+        :::xml
+        <buttonxmlfile value="file://%INSTALLDIR%/android_sap/ EKBCustomLayouts.encrypted" />
+
+* **EnterpriseKeyBoard** enables the custom layouts made for Zebra's Enterprise Keyboard to input data. For this setting to work properly, the `*.encrypted` file containing layouts must be present in the `/enterprise/device/settings/ekb/config/` device folder.               
+* **Default** activates the default IME in the device for data input.
+
+#### Example
+
+    :::xml
+    < KeyboardType value="ButtonBar"/>
+      // OR
+    < KeyboardType value="EnterpriseKeyBoard"/>
+       // OR
+    < KeyboardType value="default"/>
+ 
+ 
+ 
+ 
+ 
+Enterprise Browser 2.0 introduced configuration parameters that provide more control over the behavior of SAP apps.
 
 Keyboard visibility and custom key layouts can be controlled through parameters in the `Config.xml` file. See the [Config.xml reference](../configreference) for details. 
 

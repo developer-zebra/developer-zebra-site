@@ -3054,7 +3054,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 
 **Possible Values**: 
 
-* Only meta tag(s) and meta tag(s) with meta tag properties. If passing only meta tag(s), all meta tag properties are allowed. If passing meta tag(s) with properties, only the specified properties and value(s) are allowed.
+* Meta tag(s) and meta tag(s) withproperties. If passing only meta tag(s), all meta tag properties are allowed. If passing meta tag(s) with properties, only the specified properties and/or value(s) are allowed.
 * Pass multiple values using the plus sign (+) as a separator. 
 
 
@@ -3066,7 +3066,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 	    <WhiteListingMetaTags value="scanner~enumerate;enabled:SCN2;enumscannerevent:enumscanners(%s)+quitButton~Visibility:Visible;Width:50;"/>
 	</MetaTagFiltering>
 
-				// All other properties for this meta tag are blocked.
+			// All other properties for this meta tag are blocked.
 
 
 ###BlackListingMetaTags
@@ -3074,7 +3074,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 
 **Possible Values**: 
 
-* Only meta tag(s) and meta tag(s) with meta tag properties. If passing only meta tag(s), all meta tag properties are blocked. If passing meta tag(s) with properties, only the specified properties and value(s) are blocked.
+* Meta tag(s) and meta tag(s) with properties. If passing only meta tag(s), all meta tag properties are blocked. If passing meta tag(s) with properties, only the specified properties and/or value(s) are blocked.
 * Pass multiple values using the plus sign (+) as a separator. 
 
 
@@ -3086,7 +3086,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
     	<BlackListingMetaTags value=" scanner~enumerate;enabled:SCN2;enumscannerevent:enumscanners(%s)+quitButton~Visibility:Visible;Width:50;"/>
 	</MetaTagFiltering >
 
-				// All other properties for this meta tag are allowed.
+			// All other properties for this meta tag are allowed.
 
 -----
 

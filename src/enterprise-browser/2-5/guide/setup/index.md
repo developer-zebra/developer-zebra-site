@@ -295,7 +295,7 @@ Enterprise Browser runtimes can be individually pushed to devices from Windows o
 
 Enterprise Browser also can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system. [See the Mass Deployment section](#massdeployment). 
 
-**NEW LICENSING PROCESS: Beginning with EB 2.0, licensing of Enterprise Browser has changed. Manual licensing requires use of the License Manager app on the device. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
+**NEW LICENSING PROCESS: Beginning with EB 2.0, licensing of Enterprise Browser has changed. Manual licensing requires use of the License Manager app on the device. <u>Upgrading to EB 2.x requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
 
 -----
 
@@ -352,7 +352,7 @@ Therefore, new versions of those settings files should be placed in the `/<inter
 The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by using the instructions below. 
 
 #### IMPORTANT NOTES
-* **Beginning with EB 2.0, licensing of Enterprise Browser has changed**. Mass deployment requires use of an MDM or Zebra StageNow tools and the [License Manager Setting Type](/stagenow/latest/csp/license). <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
+* **Beginning with EB 2.0, licensing of Enterprise Browser has changed**. Mass deployment requires use of an MDM or Zebra StageNow tools and the [License Manager Setting Type](/stagenow/latest/csp/license). <u>**Upgrading to EB 2.x requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
 * **Switching to or from "[GMS Restricted](/mx/appmgr/#mainfunctionality)" mode while an EB app is running can result in unpredictable behavior**. Use the `quit()` method of the [Application API](../../api/application/#quit) before switching into or out of this mode. 
 
 -----

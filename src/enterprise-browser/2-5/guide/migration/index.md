@@ -13,7 +13,7 @@ Enterprise Browser offers several options for migrating apps from different oper
 
 ### From EB 1.8 and Older
 
-Enterprise Browser 2.0 (and higher) for Android supports the HTML5 ViewPort metatag and changes the way licensing is implemented. Apps running on older versions of EB might render improperly or display unexpected client certificate requests when launched with EB 2.0.  
+Enterprise Browser 2.0 (and higher) for Android supports the HTML5 ViewPort metatag and changes the way licensing is implemented. Apps running on older versions of EB might render improperly or display unexpected client certificate requests when launched with EB 2.x.  
 
 The [Backward Compatibility Guide](../backward) explains the minor changes that might be required to solve these issues. 
 

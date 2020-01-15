@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview
-The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which is new in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and newer installed**.
+The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 (and higher) allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which was introduced in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and newer installed**.
 
 If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app is to decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
 
@@ -904,7 +904,7 @@ Controls the symbology for Canadian Postal barcodes. If an application is not ex
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
 ###characterSet
-Supported on EB 2.0 and newer. Used to select a character set for camera, imager or laser scanner types. **Requires EMDK 6.10 or newer on the device**.
+Supported on EB 2.0 (and higher). Used to select a character set for camera, imager or laser scanner types. **Requires EMDK 6.10 or newer on the device**.
 
 `characterSetSelection`
 

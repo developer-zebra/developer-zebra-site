@@ -23,7 +23,7 @@ Commercial deployment to devices requires an End-User License (**also known as a
 ### Requirements
 ***ALL THREE*** of the following are required to activate EB license(s):   
 
-1. **One or more license keys** (aka Activation IDs) purchased for EB 2.0 software
+1. **One or more license keys** (aka Activation IDs) purchased for EB 2.0 (or higher) software
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
  &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)<br>
  &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with EB installer)<br>
@@ -109,7 +109,7 @@ Successful license activation is indicated by a screen similar to the image belo
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-#### The Android device is now licensed to use Enterprise Browser 2.0. 
+#### The Android device is now licensed to use Enterprise Browser 2.x. 
 
 -----
 
@@ -218,7 +218,7 @@ Successful license activation is indicated by a screen similar to the image belo
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-#### The device is now licensed to use Enterprise Browser 2.0. 
+#### The device is now licensed to use Enterprise Browser 2.x. 
 
 -----
 
@@ -232,7 +232,7 @@ Mass-deployment of Enterprise Browser device licenses requires use of an Enterpr
 
 * Profiles for correctly configuring device clock and network settings
 * Software License key(s) (aka Activation IDs)
-* All necessary EB 2.0 application (binary) files
+* All necessary EB 2.x application (binary) files
 
 > **Zebra recommends testing any new Profile on a working device before general deployment**.
 
@@ -264,7 +264,7 @@ _Click image to enlarge_.
 7. **Complete Profile creation and scan the staging barcode**.
 8. **Confirm that the Profile successfully licensed the device**: <br>
  a. **Launch the License Manager app** on the device; activated license should be visible.<br>
- b. Alternatively, launch EB 2.0 on the device. The splash screen indicates licensing status. <br>
+ b. Alternatively, launch EB 2.x on the device. The splash screen indicates licensing status. <br>
  c. The quantity of available licenses visible on the licensing portal should decrease by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
 Also see [related guides](#relatedguides). 

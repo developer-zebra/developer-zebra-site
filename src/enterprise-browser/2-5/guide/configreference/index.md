@@ -1266,7 +1266,7 @@ Sets the Enterprise Browser app to display in full screen mode, hiding the OS fr
 	<FullScreen value="0"/>
 
 ### ShowLicenseConfirmation
-**Applies only to Windows Mobile/CE**. Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
+Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
 
 **Possible Values**:
 

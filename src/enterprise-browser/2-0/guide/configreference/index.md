@@ -10,6 +10,19 @@ Runtime configuration settings of Enterprise Browser apps are managed through th
 
 The default `Config.xml` file for Android devices is displayed below, followed by explanations of all tags and parameter settings for Android and Windows Mobile/CE. The EB `Config.xml` can be edited with an ordinary text editor or with the [Config Editor utility](../ConfigEditor) included with the installation of Enterprise Browser 1.3 and higher. 
 
+
+###`IMPORTANT:`
+>Some device EB settings parameters are executed through the [MX Framework](https://techdocs.zebra.com/mx/overview/), Zebra's device management layer. If an EB app containing such parameters is executed immediately after a device is booted, some or all of the instructions could fail if the MX Framework isn't ready in time to receive them. To prevent such failures, **<u>Zebra recommends waiting 20 seconds after a device starts up before launching any EB app</u>** that contains one or more of the configuration parameters listed below. 
+
+#### MX-based Config Parameters: 
+* [HideSystemBar](#hidesystembar)
+* [setHomeKeyDisable](#sethomekeysisable)
+* [setStatusBarDisable](#setStatusBarDisable)
+* [setBackKeyDisable](#setbackkeydisable)
+* [setVolumeButtonDisable](#setvolumebuttondisable)
+* [setRecentAppDisable](#setrecentappDisable)
+
+
 -----
 
 ### Config.xml Location

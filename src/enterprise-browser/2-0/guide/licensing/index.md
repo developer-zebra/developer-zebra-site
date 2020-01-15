@@ -5,22 +5,33 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
->**`NOTICE`**: **Beginning with Enterprise Browser 2.0, the process for applying device licenses has changed. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.
+## `IMPORTANT LICENSING CHANGES`
+> Beginning with Enterprise Browser 2.0, the license deployment process has changed:<br>
+• <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires that all licenses be converted to the new model**</u>.<br>
+• **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
+• **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.<br>
+• Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.<br>
+
+-----
 
 ## Overview 
 
-Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available for 90-day trial and perpetual functionality. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased as explained below. 
+Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available either for a 90-day trial period or for perpetual usage. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license(s) to individual devices or as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased, as explained below. 
+
+-----
 
 ### Requirements
 ***ALL THREE*** of the following are required to activate EB license(s):   
 
 1. **One or more license keys** (aka Activation IDs) purchased for EB 2.0 software
-2. **One or more Zebra device(s) with License Manager app** on device:
- * **Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)
- * **Windows CE7**: License Manager 1.0 or higher (included with EB installer)
-3. **One of the following server connections**: 
- * **An internet connection** for online activation **OR**
- * **Linux or Windows server** (for off-line activation) 
+2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
+ &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)<br>
+ &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with EB installer)<br>
+3. **One of the following server connections**:<br> 
+ &nbsp;&nbsp;&nbsp;**An internet connection** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
+ &nbsp;&nbsp;&nbsp;**Linux or Windows server** (for off-line activation of any supported device)<br>
+
+**NOTE**: Only Android and Windows CE7 devices support license deployment from a cloud-based server. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 
 -----
 

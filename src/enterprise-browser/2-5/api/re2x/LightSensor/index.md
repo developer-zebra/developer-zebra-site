@@ -1,6 +1,6 @@
 ---
 title: Lightsensor Module
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

@@ -11,6 +11,6 @@ automenu:
         - title: ITSmobile for Windows Mobile/CE 
           url: ../sapwin
 product: Enterprise Browser
-productversion: '2.0'
+productversion: '2.5'
 ---
 

@@ -30,7 +30,7 @@ automenu:
           url: ../i2of5ReportCheckDigit
         - title: I2of5verifyCheckDigit
           url: ../i2of5VerifyCheckDigit
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

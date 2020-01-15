@@ -1,6 +1,6 @@
 ---
 title: Device Lock-down With EHS
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
 ---

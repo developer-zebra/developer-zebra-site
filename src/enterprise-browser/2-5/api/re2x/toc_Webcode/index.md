@@ -20,7 +20,7 @@ automenu:
           url: ../webcode
         - title: WebcodeDecodeGtSubtype
           url: ../webcodeDecodeGtSubtype
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

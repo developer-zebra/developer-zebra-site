@@ -1,6 +1,6 @@
 ---
 title: upca_preamble Meta Tag
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

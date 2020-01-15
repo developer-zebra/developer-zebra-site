@@ -1,6 +1,6 @@
 ---
 title: Enterprise Browser APIs
-productversion: '2.0'
+productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
 ---

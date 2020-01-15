@@ -214,6 +214,9 @@ var sitebuild = Metalsmith(__dirname)
         .use(foldermenu({
         folder: 'enterprise-browser/2-0/'
     }))
+        .use(foldermenu({
+        folder: 'enterprise-browser/2-5/'
+    }))
      .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

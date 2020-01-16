@@ -137,9 +137,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	// This auto-generated tag is for diagnostics and logging purposes. 
 
 	<?xml version = "1.0"?>
-<!--
-EnterpriseBrowser_v0.30.10.18 Configuration file
--->
+
 	<Configuration>
 	   <EB_VERSION value="0.30.10.18"/>
 	   
@@ -3034,6 +3032,8 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 ## MetaTagFiltering
 **Applies only to Android**. Parent tag for all child parameter tags for meta tag filtering, which permits one or more meta tags or sets of meta tags to be allowed (using the "WhiteListing" tag) or blocked (using the "blackListing" tag) from use by an EB app. 
 
+> **When migrating EB apps from Windows Mobile to Android**, this feature can be used to block the application of meta tags or meta-tag properties not supported on Android devices. **Also addresses "scanner unavailable" issues** when scanning through multiple apps (i.e. EB and DataWedge) is desired. 
+
 ### MetaTagFilteringEnabled
 **Applies only to Android**. Controls whether meta tag filtering is enabled. 
 
@@ -3050,11 +3050,11 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 
 
 ###WhiteListingMetaTags
-**Applies to only Android**. Allows the EB app to access one or more meta tags when MetatagFilteringEnabled tag is set to 1. If MetatagFiltering is enabled and this field is left blank, all the meta tags are allowed. Specifying one or more meta tags using this parameter causes all remaining meta tags to be blocked. 
+**Applies to only Android**. Allows the EB app to access one or more meta tags when &lt;MetatagFilteringEnabled&gt; tag is set to 1. If &lt;MetatagFiltering&gt; is enabled and this field is left blank, all the meta tags are allowed. Specifying one or more meta tags using this parameter causes all remaining meta tags to be blocked. 
 
 **Possible Values**: 
 
-* Meta tag(s) and meta tag(s) withproperties. If passing only meta tag(s), all meta tag properties are allowed. If passing meta tag(s) with properties, only the specified properties and/or value(s) are allowed.
+* Meta tag(s) and meta tag(s) with properties. If passing only meta tag(s), all meta tag properties are allowed. If passing meta tag(s) with properties, only the specified properties and/or value(s) are allowed.
 * Pass multiple values using the plus sign (+) as a separator. 
 
 
@@ -3070,7 +3070,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 
 
 ###BlackListingMetaTags
-**Applies to only Android**. Blocks the EB app from access to one or more meta tags when MetatagFilteringEnabled tag is set to 1. If MetatagFiltering is enabled and this field is left blank, no meta tags are blocked. Specifying one or more meta tags using this parameter causes all remaining meta tags to be allowed. 
+**Applies to only Android**. Blocks the EB app from access to one or more meta tags when &lt;MetatagFilteringEnabled&gt; tag is set to 1. If &lt;MetatagFiltering&gt; is enabled and this field is left blank, no meta tags are blocked. Specifying one or more meta tags using this parameter causes all remaining meta tags to be allowed. 
 
 **Possible Values**: 
 

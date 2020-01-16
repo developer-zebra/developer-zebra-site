@@ -195,7 +195,7 @@ Head or "parent" node of the `button.xml` file; all tags must be contained with 
 
 -----
 
-### ButtonBar[N]
+### ButtonBarN
 Numbered ButtonBar1 through ButtonBar50. Contains all specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.), attributes of a particular numbered ButtonBar, and the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
 **NOTE**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button's setting takes precedence.   

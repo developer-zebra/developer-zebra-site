@@ -60,22 +60,17 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
 #### Example
 
     :::xml
-    < KeyboardType value="ButtonBar"/>
+    <KeyboardType value="ButtonBar"/>
       // OR
-    < KeyboardType value="EnterpriseKeyBoard"/>
+    <KeyboardType value="EnterpriseKeyBoard"/>
        // OR
-    < KeyboardType value="default"/>
+    <KeyboardType value="default"/>
  
- 
- 
- 
- 
-Enterprise Browser 2.0 introduced configuration parameters that provide more control over the behavior of SAP apps.
-
-Keyboard visibility and custom key layouts can be controlled through parameters in the `Config.xml` file. See the [Config.xml reference](../configreference) for details. 
+Enterprise Browser 2.0 (and higher) supports configuration parameters that provide more control over the behavior of SAP apps. Keyboard visibility and custom key layouts are controlled through parameters in the `Config.xml` file. For more information about using the file, see the [Config.xml reference](../configreference). 
 
 #### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>
+<br>
 
 #### To show keyboard on demand when an input field is in focus:
     :::xml
@@ -110,7 +105,7 @@ Keyboard visibility and custom key layouts can be controlled through parameters 
     </KeyboardConfiguration>
 <br>
 
-#### Make the page re-sizable on keyboard pop-up to avoid visibility concerns:
+#### Make the page re-sizable on keyboard pop-up to avoid visibility issues:
     :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>        
@@ -125,18 +120,17 @@ Keyboard visibility and custom key layouts can be controlled through parameters 
     </SIP>
 <br>
 
-##### Notes: 
-* **If the default SAP keyboard layout is preferred**, Zebra recommends using the "default" value for the `ButtonBarMaxHeight` parameter (as above). If a custom layout is to be used, the value should be specified (in pixels) to match the layout height.
-* **To disable the SAP custom keyboard on the MC93** device running Android 8.O Oreo, update the `sapconfigreader.js` file on the device as follows: 
+#### Notes 
+* **If the default SAP keyboard layout is preferred, Zebra recommends using the "default" value for the** `ButtonBarMaxHeight` **parameter** (as shown immediately above). If a custom layout is to be used, the value should be specified (in pixels) to match the layout height.
+* **For MC93 devices running Android 8.O Oreo**: disable the SAP custom keyboard (if desired) by updating the `sapconfigreader.js` file on the device as follows: 
 
         :::JavaScript
         // Replace line 66 in the "sapconfigreader.js" file with the JavaScript code below:
         //
         if(-1 != deviceModel.indexOf("mc92") || -1 != deviceModel.indexOf("mc33") || -1 != deviceModel.indexOf("mc67") || -1 != deviceModel.indexOf("tc20k") || -1 != deviceMo
 
-Location of the `sapconfigreader.js` on the device:
-
-* `\[InternalStorage]\Android\data\com.symbol.enterprisebrowser\android_sap`
+* The `sapconfigreader.js` file is in the following device directory:<br>
+ `\[InternalStorage]\Android\data\com.symbol.enterprisebrowser\android_sap`
 
 -----
 
@@ -219,6 +213,69 @@ EB 2.x provides configuration parameters for controlling the size of UI elements
       <MobileEditDisabledWidth value="20px"/> 
     </SapCustomization>
 <br>
+
+#### To customize style elements:
+Specify desired style changes using a custom CSS file as described in the [Custom CSS File section](#customcssfile) and enter the file path using the &lt;customcssfile&gt; tag in the `Config.xml` file. 
+
+    :::xml 
+    <SapCustomization> 
+        <customcssfile value="file://%INSTALLDIR%/android_sap/sapstyle.txt"/>
+    </SapCustomization>
+
+
+### Custom CSS File
+
+Apps made with Enterprise Browser 2.5 (and higher) for Android can use this feature to modify the styles of their SAP application.
+ 
+By default in android a sapstyle.txt file exists in the path (INSTALLDIR/ android_sap). It consists the style for SAP applications, which is same as mobile.css file. 
+Now to modify any elements style make changes for that particular Class in sapstyle.txt file and add this new tag in that class enabled:true; this particular tag acts as an identifier for modified style. Replace the new file with the old file. Now on loading any page if it is has any element of the modified class then the new style gets applied. 
+The path for Customcss can be mentioned in config file as below.
+
+    :::xml
+     <customcssfile value="file://%INSTALLDIR%/android_sap/sapstyle.txt"/>
+
+#### The CSS File
+The custom CSS text file (called `sapstyle.txt` by default) contains a CSS stylesheet for SAP apps. Depending on its usage, multiple style changes can be applied by this single file. 
+
+To specify and/or change the name and/or location of the `sapstyle.txt` file, see the &lt;customcssfile&gt; tag section of the [Config.xml reference](../configreference/#customcssfile).
+
+#### Sample Custom CSS File
+
+      :::JavaScript
+    // Sample "sapstyle.txt" file (snippet):
+        
+    /*----------------------------------*/
+    /* GENERAL PAGE                     */
+    /*----------------------------------*/
+
+    @import url("../ALV_GRID.CSS");
+     
+    .MobileUserArea, input {
+      font-family:arial;
+      font-size:100%;
+    }
+     
+    /* --- MOBILE BUTTON ---------------*/
+     
+    .MobileButton {
+      width:100%;
+      background-color:#A3C1E4;  /*--New style added for MobileButton class--*/
+      color:blue;       /*--New style added for MobileButton class--*/
+      enabled:true;       /*--Identifier for new style--*/
+      font-weight: 400;
+    }
+     
+    /* --- MOBILE SCREEN ---------------*/
+
+    .MobileScreen {
+      width:100%;
+      padding:0px;
+      margin:0px;
+      border:0px;
+    }
+     
+
+
 
 -----
 <!-- 

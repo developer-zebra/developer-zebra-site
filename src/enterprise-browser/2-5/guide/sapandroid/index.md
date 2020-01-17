@@ -250,44 +250,466 @@ Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a cust
 
 **The new style is applied the next time the page loads**. 
 
-#### Sample SAP CSS File
-The custom SAP CSS text file (default = `sapstyle.txt`) contains a CSS stylesheet specifically for SAP apps. Depending on usage, multiple style changes can be applied using this single file. To specify and/or change the name and/or location of the `sapstyle.txt` file, see the &lt;customcssfile&gt; tag section of the [Config.xml reference](../configreference/#customcssfile).
+### Sample SAP CSS File
+The section below shows the default CSS file for SAP apps found on the device in `%INSTALLDIR%/android_sap/style.txt` after EB  installation. To activate and any attribute, add the tag `enabled:true;` within the curly braces {}, modify parameters if desired, save and push the new file to the device. Changes are reflected the next time the effected page(s) are loaded. 
 
-#### Sample Custom CSS File
+To specify and/or change the name and/or location of the `sapstyle.txt` file, see the &lt;customcssfile&gt; tag section of the [Config.xml reference](../configreference/#customcssfile).
 
       :::JavaScript
-    // Sample "sapstyle.txt" file (snippet):
-        
-    /*----------------------------------*/
-    /* GENERAL PAGE                     */
-    /*----------------------------------*/
+      /*----------------------------------*/
+      /* GENERAL PAGE                     */
+      /*----------------------------------*/
+      @import url("../ALV_GRID.CSS");
 
-    @import url("../ALV_GRID.CSS");
-     
-    .MobileUserArea, input {
-      font-family:arial;
-      font-size:100%;
-    }
-     
-    /* --- MOBILE BUTTON ---------------*/
-     
-    .MobileButton {
-      width:100%;
-      background-color:#A3C1E4;  /*--New style added for MobileButton class--*/
-      color:blue;                /*--New style added for MobileButton class--*/
-      enabled:true;              /*--Identifier for new style--*/
-      font-weight: 400;
-    }
-     
-    /* --- MOBILE SCREEN ---------------*/
+      .MobileUserArea, input {
+        font-family:arial;
+        font-size:100%;
+      }
 
-    .MobileScreen {
-      width:100%;
-      padding:0px;
-      margin:0px;
-      border:0px;
-    }
-     
+      .MobileUserArea, textarea {
+        font-family:arial;
+        font-size:100%;
+      }
+
+      /* --- MOBILE BODY -----------------*/
+      .MobileBody {
+        margin: 0px;
+        padding: 0px;
+        border-width: 0px;
+        background-color:#F5F9FC;
+      }
+
+      /* --- MOBILE SCREEN ---------------*/
+      .MobileScreen {
+        width:100%;
+        padding:0px;
+        margin:0px;
+        border:0px;
+      }
+
+      /*----------------------------------*/
+      /* Main Areas of Mobile Screen      */
+      /*----------------------------------*/
+
+      /* --- CUA AREA --------------------*/
+      .MobileCuaArea {
+        width:100%;
+        background-color:#D9E5F2;
+        padding:0px;
+        margin:0px;
+        border-bottom-style:solid;
+        border-bottom-width:2px;
+        border-bottom-color:#B3C3CF;
+      }
+
+      /* --- USER AREA -------------------*/
+      .MobileUserArea {
+        table-layout:fixed;
+        width:100%;
+        overflow-x:auto;
+        overflow-y:auto;
+      }
+
+      /* ---------------------------------*/
+      /* CUA AREA ELEMENTS                */
+      /*----------------------------------*/
+
+      /* --- MESSAGE ---------------------*/
+      .MobileMessageScreen {
+        width:100%;
+        background-color:#F5F9FC;
+        padding:0px;
+        margin:0px;
+        border-style:solid;
+        border-color:#C40026;
+        border-top-width:0px;
+        border-left-width:0px;
+        border-right-width:0px;
+        border-bottom-width:2px;
+      }
+
+      .MobileMessageLine {
+      }
+
+      /* --- MESSAGE ---------------------*/
+      .MobileMessageLogo {
+        vertical-align:middle;
+        padding-left:3px;
+        padding-right:3px;
+      }
+
+      /* --- TITLE -----------------------*/
+      .MobileWindowTitle {
+        font-weight:bold;
+        font-size:1.0em;
+        padding-left:7px;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+
+      /* --- LOGO im Header --------------*/
+      .MobileHeaderLogo {
+        background-color:#D9E5F2;
+        vertical-align:middle;
+        height:16px;
+        border:0px;
+        padding-left:3px;
+      }
+
+      /* --- Include Frame ---------------*/
+      .MobileIncludeFrame {
+      }
+
+      /* --- Basic Row -------------------*/
+      .MobileRow {
+        white-space:nowrap;
+        vertical-align:middle;
+      }
+
+      /* ---------------------------------*/
+      /* DYNPRO ELEMENTE                  */
+      /*----------------------------------*/
+
+      /* --- SUBSCREENS ------------------*/
+      .MobileSubScreen {
+        table-layout:fixed;
+        width:100%;
+        padding:0px;
+        margin:0px;
+        border:0px;
+      }
+
+      /* --- STEPLOOPS -------------------*/
+      .MobileStepLoop {
+        table-layout:fixed;
+        width:100%;
+        padding:0px;
+        margin:0px;
+        border:0px;
+      }
+
+      /* --- FRAME -----------------------*/
+      .MobileFrame {
+        width:100%;
+        table-layout:fixed;
+        background-color:#D9E5F2;
+        padding:0px;
+        margin:0px;
+      }
+
+      .MobileFrameHeader {
+        width:100%;
+        background-color:#A3C1E4;
+        font-weight:bold;
+        padding:0px;
+        margin:0px;
+        border:0px;
+      }
+
+      .MobileFrameHidden {
+        width:100%;
+      }
+
+      /* --- ACTIVE BUTTON ---------------*/
+      .MobileButton {
+        width:100%;
+        font-weight: 400;
+      }
+
+      /* --- DISABLED BUTTON -------------*/
+      .MobileButtonDisabled {
+        width:100%;
+      }
+
+      /* --- EDIT FIELD ------------------*/
+      .MobileEdit {
+        width:100%;
+      }
+
+      .MobileEditMultiline {
+      }
+
+      .MobileEditMultilineDisabled {
+      }
+
+      .MobileEditMultilineHighlighted {
+        color:blue;
+      }
+
+      .MobileEditMultilineHighlightedDisabled {
+        color:blue;
+      }
+
+      .MobileEditMultilineRequired {
+        border-color:blue;
+      }
+
+      .MobileEditMultilineRequiredHighlighted {
+        border-color:blue;
+        color:blue;
+      }
+
+      .MobileEditDisabled {
+        width:100%;
+        border-style:solid;
+        border-color:#808080;
+        border-width:1px;
+        color:black;
+        background-color:#F5F9FC;
+      }
+
+      /* required */
+      .MobileEditRequired {
+        width:100%;
+        border-color:blue;
+      }
+
+      .MobileEditRequiredDisabled {
+        width:100%;
+        border-style:solid;
+        border-color:#808080;
+        border-width:1px;
+        background-color:#F5F9FC;
+      }
+
+      /* required + highlighted */
+      .MobileEditRequiredHighlighted {
+        width:100%;
+        border-color:blue;
+        color:blue;
+      }
+
+      .MobileEditRequiredHighlightedDisabled {
+        width:100%;
+        border-style:solid;
+        border-color:#808080;
+        border-width:1px;
+        color:blue;
+        background-color:#F5F9FC;
+      }
+
+      /* highlighlighted */
+      .MobileEditHighlighted {
+        width:100%;
+        color:blue;
+      }
+
+      .MobileEditHighlightedDisabled {
+        width:100%;
+        border-style:solid;
+        border-color:#808080;
+        border-width:1px;
+        color:blue;
+        background-color:#F5F9FC;
+      }
+
+      /* --- F4 BUTTON -------------------*/
+      .MobileF4Button {
+        width:1em;
+      }
+
+      .MobileF4ButtonDisabled {
+        width:1em;
+      }
+
+      /* --- SEARCHELP BUTTONS -----------*/
+      .MobileSearchhelpButton_Search {
+      }
+
+      .MobileSearchhelpButton_SearchDisabled {
+      }
+
+      .MobileSearchhelpButton_Cancel {
+      }
+
+      .MobileSearchhelpButton_Options {
+      }
+
+      .MobileSearchhelpButton_Selection {
+      }
+
+      .MobileSearchhelpButton_Sort {
+      }
+
+      .MobileSearchhelpButton {
+      }
+
+      /* --- SEARCHELP EDIT FIELD --------*/
+      .MobileSearchhelpEdit {
+      }
+
+      .MobileSearchHelpBody {
+      }
+
+      .MobileSearchHelpScreen {
+      }
+
+      .MobileSearchHelpUserArea {
+      }
+
+      .MobileSearchHelpSortingRow {
+        background-color: #f2e1af;
+      }
+
+      .MobileSearchHelpRow {
+      }
+
+      .MobileSearchHelpRow2 {
+        background-color: #D9E5F2;
+      }
+
+      .MobileSearchHelpFindResults {
+      }
+
+      .MobileSearchHelpMessageLine {
+        color: red; font-weight: bold;
+      }
+
+      /* --- F4 HELP FIELD ---------------*/
+      .MobileF4 {
+      }
+
+      .MobileF4Disabled {
+      }
+
+      /* required */
+      .MobileF4Required {
+        border-color: blue;
+      }
+
+      .MobileF4RequiredDisabled {
+        border-color: blue;
+      }
+
+      /* required + highlighted */
+      .MobileF4RequiredHighlighted {
+        border-color:blue;
+        color:blue;
+      }
+
+      .MobileF4RequiredHighlightedDisabled {
+        border-color:blue;
+        color:blue;
+      }
+
+      /* highlighlighted */
+      .MobileF4Highlighted {
+        color:blue;
+      }
+
+      .MobileF4HighlightedDisabled {
+        color:blue;
+      }
+
+      /* --- PASSWORD --------------------*/
+      .MobilePassword {
+        width:100%;
+      }
+
+      .MobilePasswordDisabled {
+        width:100%;
+      }
+
+      /* highlighted */
+      .MobilePasswordHighlighted {
+        width:100%;
+        color:blue;
+      }
+
+      .MobilePasswordHighlightedDisabled {
+        width:100%;
+        color:blue;
+      }
+
+      /* --- LABEL FIELD -----------------*/
+      .MobileLabel {
+        width:100%;
+        white-space:nowrap;
+      }
+
+      .MobileLabelHighlighted {
+        width:100%;
+        white-space:nowrap;
+        color:blue;
+      }
+
+      /* --- RADIOBOX --------------------*/
+      .MobileRadioButton {
+        vertical-align:middle;
+      }
+
+      .MobileRadioLabel {
+        white-space:nowrap;
+      }
+
+      /* --- CHECKBOX --------------------*/
+      .MobileCheck {
+      }
+
+      .MobileCheckLabel {
+        white-space:nowrap;
+      }
+
+      /* --- LISTBOX ---------------------*/
+      .MobileListboxRequiredHighlighted {
+        width:100%;
+        border-color:blue;
+        color:blue;
+      }
+
+      .MobileListboxRequiredHighlightedDisabled {
+        width:100%;
+        border-color:blue;
+        color:blue;
+      }
+
+      .MobileListboxRequired {
+        width:100%;
+        border-color:blue;
+      }
+
+      .MobileListboxRequiredDisabled {
+        width:100%;
+        border-color:blue;
+      }
+
+      .MobileListboxHighlighted {
+        width:100%;
+        color:blue;
+      }
+
+      .MobileListboxHighlightedDisabled {
+        width:100%;
+        color:blue;
+      }
+
+      .MobileListbox {
+        width:100%;
+      }
+
+      .MobileListboxDisabled {
+        width:100%;
+      }
+
+      /* ---------------------------------*/
+      /* SYSTEM MESSAGE / MAIL            */
+      /*----------------------------------*/
+      .MobileSysList {
+        width:90%;
+        table-layout:fixed;
+        background-color:#D9E5F2;
+        padding:0px;
+        margin:0px;
+        border:2px;
+        border-color:#B3C3CF;
+        border-style:solid;
+      }
+
+      .MobileSysListTitle {
+        width:100%;
+        background-color:#A3C1E4;
+        font-weight:bold;
+      } 
 
 
 

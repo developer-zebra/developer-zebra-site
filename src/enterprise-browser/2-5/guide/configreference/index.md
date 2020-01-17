@@ -19,7 +19,6 @@ The default `Config.xml` file for Android devices is displayed below, followed b
 * [setHomeKeyDisable](#sethomekeydisable)
 * [setStatusBarDisable](#setstatusbardisable)
 * [setBackKeyDisable](#setbackkeydisable)
-* [setVolumeButtonDisable](#setvolumebuttondisable)
 * [setRecentAppDisable](#setrecentappdisable)
 
 
@@ -782,8 +781,6 @@ For encrypted file created using the [ButtonBar](../buttonbar) tool:
 
 ### setVolumeButtonDisable
 **Applies to Android devices only.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the hardware controls for audio volume, which could otherwise silence the kiosk app. **Disabled by default** (volume control is active).
-
-> `IMPORTANT:` Zebra recommends waiting 20 seconds after a device starts up before launching an EB app containing this parameter. [Why?](#important)
 
 **Possible Values**:
 

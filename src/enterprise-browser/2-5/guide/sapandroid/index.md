@@ -235,8 +235,8 @@ Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a cust
 
 #### To modify a style using the custom CSS file:
 
-1. Change the elements for the style class as desired. 
-2. Add the `enabled:true` tag in the class as shown:<br>
+1. In the CSS file, **change the elements for the style class(es)** as desired. 
+2. **Add the** `enabled:true` **tag** in the class(es) to be activated as shown:<br>
 
         :::xml
         .MobileButton {
@@ -248,7 +248,7 @@ Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a cust
         }
 3. Save the changes and push the new file to the device, replacing the old file (if any).<br>
 
-The new style is applied the next time the page loads. 
+**The new style is applied the next time the page loads**. 
 
 #### Sample SAP CSS File
 The custom SAP CSS text file (default = `sapstyle.txt`) contains a CSS stylesheet specifically for SAP apps. Depending on usage, multiple style changes can be applied using this single file. To specify and/or change the name and/or location of the `sapstyle.txt` file, see the &lt;customcssfile&gt; tag section of the [Config.xml reference](../configreference/#customcssfile).

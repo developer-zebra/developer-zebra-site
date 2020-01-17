@@ -49,6 +49,14 @@ Learn more [about Enterprise Browser](../about).
 
 -----
 
+### From Windows Mobile/CE
+
+Enterprise Browser 2.5 (and higher) supports meta tag filtering, which can be used to block meta tags or meta-tag properties from being applied if they're not supported on Android devices. Meta tag filtering supports whitelisting (allowing) and blacklisting (blocking) of meta tags as well as individual meta tag properties and is configured in the `Config.xml` file. 
+
+Go to the [meta tag filtering section](../configreference/#metatagfiltering) of the `Config.xml` Reference. 
+
+-----
+
 Related guides: 
 
 * [Configuration Reference](../configreference)

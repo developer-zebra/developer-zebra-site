@@ -229,16 +229,30 @@ Specify desired style changes using a custom CSS file as described in the Custom
 
 ### Custom CSS File
 
-Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a custom CSS file to modify certain styles within an SAP app at runtime. This file, called `sapstyle.txt`, exists by default in:
+Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a custom CSS file to modify certain styles within an SAP app at runtime. By default, a file called `sapstyle.txt` is stored in the following device folder:
 
-* `%INSTALLDIR%/android_sap` on the device. <!-- and works with SAP apps in a way similar to that of the `mobile.css` file --> 
+* `%INSTALLDIR%/android_sap/` <!-- and works with SAP apps in a way similar to that of the `mobile.css` file --> 
 
+#### To modify a style using the custom CSS file:
 
-### `STILL IN PROGRESS:` 
+1. Change the elements for the style class as desired. 
+2. Add the `enabled:true` tag in the class as shown:<br>
+         /* --- MOBILE BUTTON ---------------*/
+         
+        .MobileButton {
+          width:100%;
+          background-color:#A3C1E4;  /*--New style added for MobileButton class--*/
+          color:blue;                /*--New style added for MobileButton class--*/
+          enabled:true;              /*--Identifier for new style--*/
+          font-weight: 400;
+        }
+         
+        /* --- MOBILE SCREEN ---------------*/
+3. Save the changes and push the new file to the device, replacing the old file (if any).<br>
 
-Now to modify any elements style make changes for that particular Class in `sapstyle.txt` file and add this new tag in that class enabled:true; this particular tag acts as an identifier for modified style. Replace the new file with the old file. Now on loading any page if it is has any element of the modified class then the new style gets applied. 
+The new style is applied the next time the page loads. 
 
-#### SAP CSS File
+#### Sample SAP CSS File
 The custom SAP CSS text file (default = `sapstyle.txt`) contains a CSS stylesheet specifically for SAP apps. Depending on usage, multiple style changes can be applied using this single file. To specify and/or change the name and/or location of the `sapstyle.txt` file, see the &lt;customcssfile&gt; tag section of the [Config.xml reference](../configreference/#customcssfile).
 
 #### Sample Custom CSS File

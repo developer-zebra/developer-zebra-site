@@ -3032,7 +3032,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 ## MetaTagFiltering
 **Applies only to Android**. Parent tag for all child parameter tags for meta tag filtering, which permits one or more meta tags or sets of meta tags to be allowed (using the "WhiteListing" tag) or blocked (using the "blackListing" tag) from use by an EB app. 
 
-> **When migrating EB apps from Windows Mobile to Android**, this feature can be used to block the application of meta tags or meta-tag properties not supported on Android devices. **Also addresses "scanner unavailable" issues** when scanning through multiple apps (i.e. EB and DataWedge) is desired. 
+> **When migrating EB apps from Windows Mobile to Android**, this feature can be used to block the application of meta tags or meta-tag properties not supported on Android devices. **Also addresses "scanner unavailable" issues** when scanning through multiple apps (i.e. EB and DataWedge). 
 
 ### MetaTagFilteringEnabled
 **Applies only to Android**. Controls whether meta tag filtering is enabled. 

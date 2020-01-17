@@ -26,7 +26,7 @@ The positional attributes, action, color, transparency and all other view-relate
 * Dedicated `button.xml` files might be necessary for targeting devices with varying screen resolutions. 
 * Zebra recommends disabling auto-rotate when using custom button bars.
 * If auto-rotate is required, the experience might be improved by creating separate `button.xml` files for portrait and landscape modes. 
-* Use care when assigning parameter values; passing invalid can cause unpredictable behavior.  
+* Use care when assigning parameter values; passing invalid values can cause unpredictable behavior.  
 
 -----
 

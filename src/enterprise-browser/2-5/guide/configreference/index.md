@@ -1869,7 +1869,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ### Custom CSS File
 
-**Applies to SAP apps on Android only**. Controls name and location of the custom CSS file, which can modify certain styles within an SAP app at runtime. For more information, including instructions for configuring the custom CSS file, see the [SAP ITSmobile for Android guide](../sapandroid/#customcssfile) 
+**Applies to SAP apps on Android only**. Controls name and location of the custom CSS file, which can modify certain styles within an SAP app at runtime. For more information, including instructions for configuring the custom CSS file, see the [SAP ITSmobile for Android guide](../sapandroid/#customcssfile).
 
 **Possible Values**:
 

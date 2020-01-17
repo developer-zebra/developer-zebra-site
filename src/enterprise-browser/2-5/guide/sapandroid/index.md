@@ -237,17 +237,15 @@ Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a cust
 
 1. Change the elements for the style class as desired. 
 2. Add the `enabled:true` tag in the class as shown:<br>
-         /* --- MOBILE BUTTON ---------------*/
-         
+
+        :::xml
         .MobileButton {
-          width:100%;
-          background-color:#A3C1E4;  /*--New style added for MobileButton class--*/
-          color:blue;                /*--New style added for MobileButton class--*/
-          enabled:true;              /*--Identifier for new style--*/
-          font-weight: 400;
+        width:100%;
+        background-color:#A3C1E4;  /*--New style added for MobileButton class--*/
+        color:blue;                /*--New style added for MobileButton class--*/
+        enabled:true;              /*--Identifier for new style--*/
+        font-weight: 400;
         }
-         
-        /* --- MOBILE SCREEN ---------------*/
 3. Save the changes and push the new file to the device, replacing the old file (if any).<br>
 
 The new style is applied the next time the page loads. 

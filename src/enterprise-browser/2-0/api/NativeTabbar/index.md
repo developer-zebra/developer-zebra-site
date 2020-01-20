@@ -52,7 +52,7 @@ Win32, Android </p></li><li>reload : <span class='text-info'>BOOLEAN</span><span
 Win32, Android </p></li><li>disabled : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Tab will be displayed as disabled. Platforms:
 Win32, Android </p></li><li>backgroundColor : <span class='text-info'>INTEGER</span><p> Background color for tab. Use when your application background color is not white for removing blink during switch tabs. Platforms:
 Win32, Android </p></li><li>useCurrentViewForTab : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Gives a smooth transfer to a newly opened tab from the current view into this Tab and make this Tab active. Only one Tab can have this parameter. Platforms:
-WM, CE, Win32 </p></li><li>perishable : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Sets whether this tab is allowed to be destroyed when a memory limit is reached (Windows Mobile) Platforms:
+WM, CE, Win32, Android </p></li><li>perishable : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Sets whether this tab is allowed to be destroyed when a memory limit is reached (Windows Mobile) Platforms:
 WM </p></li><li>createOnInit : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Create tab immediately when TabBar is created. Action also will be executed. If false, the tab will be created when it is switched to. Don't use this parameter on the devices with a small amount of RAM. Platforms:
 WM </p></li></ul></ul><li>tabBarProperties : <span class='text-info'>HASH</span><p>Properties of TabBar. </p></li><ul><li>backgroundColor : <span class='text-info'>INTEGER</span><p>Background color of the tabbar. Platforms:
 Win32, Android </p></li><li>hiddenTabs : <span class='text-info'>BOOLEAN</span><span class='label '> Default: true</span><p>Do not display Tabs with labels.Only hiddenTab=true is currently supported. Platforms:
@@ -133,7 +133,7 @@ Synchronous Return:
 
 
 ### removeTab(<span class="text-info">INTEGER</span> tabIndex)
-Removes the Tab by index. Method will remove the WebView for the specific tab, it will not remove the tab from the tab array, so all indexes will remain the same.You cannot delete the tab with useCurrentViewForTab flag. If the app switches to a previously removed tab, the tab is recreated.
+Removes the Tab by index. Method will remove the WebView for the specific tab, it will not remove the tab from the tab array, so all indexes will remain the same.You cannot delete the tab with useCurrentViewForTab flag. If you switch to previously removed tab, tab will be recreated.
 
 ####Parameters
 <ul><li>tabIndex : <span class='text-info'>INTEGER</span><p>The index for tab (index numbered from 0) to delete. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

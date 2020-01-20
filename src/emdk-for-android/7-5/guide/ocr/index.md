@@ -199,7 +199,7 @@ Defines a custom group of characters in place of a preset font variant. For exam
 * **Default = !"#$%()&#42;+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\^|)**
 
 ###OCR Template  
-Creates a template for precisely matching scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates scanning errors. The template expression is formed by numbers and letters. The default is 99999999 which accepts any alphanumeric character OCR string. If there are less than 8 '9' characters, the '9' represents only numerical values.
+Creates a template for precisely matching scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates scanning errors. The template expression is formed by numbers and letters. The default is 99999999 which accepts any numeric character OCR string. If there are less than 8 '9' characters, the '9' represents only numerical values.
 
 **Possible values**: 
 

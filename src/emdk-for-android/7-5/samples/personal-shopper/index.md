@@ -29,13 +29,13 @@ productversion: '7.5'
 ---
 
 ##Overview
-This sample application shows how the Personal Shopper APIs can be used to interact with the device cradle programmatically.
+This sample application shows how the Personal Shopper APIs can be used to interact programmatically with the device cradle.
 
 ##Requirements
 Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
+This guide walks through set-up of the EMDK samples in the IDE: 
 
 * [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
 

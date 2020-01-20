@@ -12,9 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter a PIN for the remote device. 
+Used to enter a PIN for the remote device. **Zebra recommends setting a PIN of at least digits** for optimum security.
 
-<!--
-**Input value rules** nor min/max provided in DSD or MCs 
-* String from 1-255 characters containing Bluetooth device name. For example: "Zebra Printer_01" 
--->
+**Input value rules** 
+* String from 1-16 numerals 

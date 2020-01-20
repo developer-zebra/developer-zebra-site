@@ -4,7 +4,7 @@ title: App Feature Action
 type: parm
 order: 23
 mx: "9.3"
-apilevel: "8.0"
+apilevel: "26"
 devicetype: A,B
 parm:
   pivotal: No
@@ -16,19 +16,19 @@ parm:
       name: Do nothing
       description: This value (or the absence of this parm from the XML) causes no changes to device settings; any previously selected setting is retained.
       mx: "9.3"
-      apilevel: "8.0"
+      apilevel: "26"
     - code: 1
       devicetype: A,B
       name: Turn On
       description: Enables the selected feature.
       mx: "9.3"
-      apilevel: "8.0"
+      apilevel: "26"
     - code: 2
       devicetype: A,B
       name: Turn Off
       description: Disables the selected feature.
       mx: "9.3"
-      apilevel: "8.0"
+      apilevel: "26"
 ---
 
 This is the On/Off switch for features selected in the App Feature parameter in the package selected in the App Feature Packages parameter. 

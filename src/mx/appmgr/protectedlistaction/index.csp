@@ -6,6 +6,7 @@ order: 10
 mx: "4.2"
 osx: "1.2"
 devicetype: A
+info: This feature is discontinued in MX 9.3 and higher. 
 parm:
   pivotal: Yes
   presentif: The Action is NOT "Battery Optimization" 

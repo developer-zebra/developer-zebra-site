@@ -39,18 +39,45 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 * RS507
 * RS4000
 * RS5000
-* **RS5100** `NEW in 7.5`
+* RS5100
 * RS6000
 
 -----
 
-## New in v7.5
+## New in v7.6
+
+### New Features
+
+**Now supports MX 9.3**, which adds the following features and enhancements:
+* **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
+* **Enhanced [Bluetooth Manager](../../mx/bluetoothmgr)** now allows silent pairing using a Bluetooth MAC address or PIN. 
+* **Enhanced [GPRS Manager](../../mx/gprsmgr)** APN parameters now support IPv4, IPv6 and the IPv4/IPv6 "dual-stack" protocol.  
+* **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports the "grey" key and W1 and W2 buttons.  
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** now includes support for: 
+* `FinnishPostal4S` Symbology and label type  
+* New `ScannerConfig.DecoderParams.DutchPostal` parameter supports: 
+ * `dutchPostal3S` with the ability to enable or disable decoding of Dutch Postal's "KIX 3S" barcodes
+* New `ScannerConfig.MultiBarcodeParams` parameter supports:  
+ * `reportDecodedBarcodes` with the ability to enable or disable reporting decoded barcode data in a single scan session regardless of the configured barcode count.
+
+### Deprecations
+
+**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
+
+-----
+
+## Version History
+
+### New in v7.5
 
 #### Availability Note
 
 **EMDK for Android 7.5 was implemented as a device-runtime update** and was not released to the public. Devices containing the EMDK-A 7.5 runtime (or higher) support the new features described below. 
 
-### New Features
+#### New Features
 
 **Barcode API now support OcrA, OcrB, MICRE13B and USCurrency Symbologies and the OCR label type (see below)**.
 
@@ -62,14 +89,13 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 * **Enhanced [Access Manager](../../mx/accessmgr)** can now: 
  * Prevent one application from stopping another without explicit permission 
  * Perform remote device troubleshooting with enhanced visibility and control
-* **Enhanced [Cellular Manager](../../mx/cellularmgr) now implements a: 
- * Subsidy lock
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** implements several new device locking mechanisms. 
 * **[Keymapping Manager] now supports: 
   * Intent extras 
   * "Rotate" and "minus" keys 
 
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API** now includes: 
 * Support for OcrA, OcrB, MICRE13B, USCurrency Symbologies and the OCR label type: 
@@ -97,13 +123,12 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 **Enhanced Notification Manager API now includes**: 
 * New `NotificationManager.DeviceIdentifier` enum allows selection of the RS5100 Bluetooth scanner 
 
-### Deprecations
+#### Deprecations
 
 **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
 
------
 
-## Version History
+-----
 
 ### New in v7.4
 

@@ -12,72 +12,72 @@ content-items:
     level: 4
     title: Barcode API Programmer's Guide
     text: The EMDK Barcode API provides applications with an ability to read the variety barcode labels using different scanner devices such as built-in imager/laser, built-in camera, Bluetooth ring scanners such as RS507 and RS600 and Pluggable ring scanner such as RS4000.
-    url: /emdk-for-android/7-5/guide/barcode_scanning_guide
+    url: /emdk-for-android/7-6/guide/barcode_scanning_guide
   - type: section
     level: 4
     title: Battery Intent API Programmer's Guide
     text: This guide describes the functionality of the Battery Intent API Interface.
-    url: /emdk-for-android/7-5/guide/reference/refbatteryintent
+    url: /emdk-for-android/7-6/guide/reference/refbatteryintent
   - type: section
     level: 4
     title: EC30 Programmer's Guide
     text: Application guidelines for the Zebra EC30 ultra-compact enterprise companion.
-    url: /emdk-for-android/7-5/guide/ec30_programming
+    url: /emdk-for-android/7-6/guide/ec30_programming
   - type: section
     level: 4
     title: General Programming Practices
     text: This guide contains various EMDK for Android programming tips.
-    url: /emdk-for-android/7-5/guide/programming_practices
+    url: /emdk-for-android/7-6/guide/programming_practices
   - type: section
     level: 4
     title: Multi-user Programming
     text: Includes code samples for properly programming an app to run on a device with multiple users.
-    url: /emdk-for-android/7-5/guide/multiuser
+    url: /emdk-for-android/7-6/guide/multiuser
   - type: section
     level: 4
     title: Notification API Programmer's Guide
     text: This guide provides an overview on design points to be considered during the development of an application that notifies users using Notification API in the business application workflow.
-    url: /emdk-for-android/7-5/guide/notification-api
+    url: /emdk-for-android/7-6/guide/notification-api
   - type: section
     level: 4
     title: OCR Programmer's Guide
     text: How to use the Barcode API to configure the device scanner to perform optical character recognition (OCR), which allows an app to capture various OCR font types as machine-encoded text. 
-    url: /emdk-for-android/7-5/guide/ocr
+    url: /emdk-for-android/7-6/guide/ocr
   - type: section
     level: 4
     title: PersonalShopper API Programmer's Guide
     text: The MC18 device provided by Zebra allows developers to easily create applications in the Personal Shopper category. This guide contains examples specific to using EMDK for Android with the MC18.
-    url: /emdk-for-android/7-5/guide/personalshopper
+    url: /emdk-for-android/7-6/guide/personalshopper
   - type: section
     level: 4
     title: Profile Manager Programmer's Guide
     text: This guide provides the overview on getting the profile manager instance, profile XML, applying profiles, interpreting result returned by the Profile Manager Methods and the response XML schema for the developer to understand and configure the device based their application specific requirements.
-    url: /emdk-for-android/7-5/guide/xmlresponseguide
+    url: /emdk-for-android/7-6/guide/xmlresponseguide
   - type: section
     level: 4
     title: SAM API Programmer's Guide
     text: Understand how to use the Secure Access Module APIs to perform secure NFC transactions.
-    url: /emdk-for-android/7-5/guide/samapiusage
+    url: /emdk-for-android/7-6/guide/samapiusage
   - type: section
     level: 4
     title: SerialComm Programmer's Guide
     text: How to communicate with devices connected to the serial and/or USB ports.
-    url: /emdk-for-android/7-5/guide/serialcomm
+    url: /emdk-for-android/7-6/guide/serialcomm
   - type: section
     level: 4
     title: Signature Capture Programmer's Guide
     text: Understand how to use the Barcode APIs to capture a written signature as an image.
-    url: /emdk-for-android/7-5/guide/signaturecapture
+    url: /emdk-for-android/7-6/guide/signaturecapture
   - type: section
     level: 4
     title: SimulScan API Programmer's Guide
     text: Understand how to use the SimulScan APIs to perform full document capture in your application. SimulScan involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.
-    url: /emdk-for-android/7-5/guide/simulscan_guide
+    url: /emdk-for-android/7-6/guide/simulscan_guide
   - type: section
     level: 4
     title: UDI Label Scanning Programmer's Guide
     text: The EMDK Barcode API exposes a (deprecated) UDI barcode scanning feature that provides applications with the ability to read UDI Labels from from three issuing agencies, GS1, HIBCC and ICCBBA.
-    url: /emdk-for-android/7-5/guide/udi_scanning_guide
+    url: /emdk-for-android/7-6/guide/udi_scanning_guide
 product: EMDK For Android
 productversion: '7.6'
 ---
@@ -86,6 +86,6 @@ productversion: '7.6'
     level: 4
     title: Secure NFC API Programmer's Guide
     text: This guide contains examples and best practices when using the Secure NFC APIs including MifareDesfire, MiFareSam, SamKey, etc.
-    url: /emdk-for-android/7-5/guide/securenfc
+    url: /emdk-for-android/7-6/guide/securenfc
 
 -->

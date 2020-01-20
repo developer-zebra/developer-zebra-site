@@ -18,7 +18,7 @@ productversion: '7.6'
 
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/7-5/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/7-5/mx/data-capture/keystroke) feature of EMDK Profiles.
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/7-6/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/7-6/mx/data-capture/keystroke) feature of EMDK Profiles.
 
 >**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
@@ -26,10 +26,10 @@ This guide will walk you through creating an EMDK For Android application that w
 
 > Note: Provide "EMDKSample" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/7-6/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/7-5/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
+1. Click [here](/emdk-for-android/7-6/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
 
 2. Provide "DataCaptureProfile" as the Profile Name for this tutorial.
 
@@ -268,7 +268,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-5/tutorial/
 4. The final step is to create a dependency on EMDK in your app's **build.gradle** file. **[Learn how](../../guide/programming_practices/#emdkasadependencyinbuildgradle).** 
 
 ## What's Next
-Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/7-5/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/7-5/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
+Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/7-6/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/7-6/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
 > **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead. 
 

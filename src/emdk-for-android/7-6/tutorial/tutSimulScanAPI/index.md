@@ -2,7 +2,7 @@
 title: Using SimulScan APIs to Capture Data
 layout: guide.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 ## Overview

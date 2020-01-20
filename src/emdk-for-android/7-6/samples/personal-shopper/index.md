@@ -25,7 +25,7 @@ screenshots:
   - 7.png
 layout: sample.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 ##Overview

@@ -2,7 +2,7 @@
 title: "SimulScan API programmer's guide"
 layout: guide.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 ##Introduction

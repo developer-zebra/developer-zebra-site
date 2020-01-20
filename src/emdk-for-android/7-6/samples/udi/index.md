@@ -28,7 +28,7 @@ screenshots:
   - 5.png
 layout: sample.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 > **`IMPORTANT:`** Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated. **UDI support will end when EMDK targets devices running Android 10 Q**.

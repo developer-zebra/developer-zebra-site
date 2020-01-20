@@ -2,7 +2,7 @@
 title: Data Capture Plus Profile Feature Reference
 layout: guide.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 ## Overview

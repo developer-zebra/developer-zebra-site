@@ -2,7 +2,7 @@
 title: Configure Wi-Fi settings and Network Profiles using MX Wi-Fi
 layout: guide.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 
 ## Overview

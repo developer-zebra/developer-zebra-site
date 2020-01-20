@@ -2,7 +2,7 @@
 title: Data Capture Intent API Reference
 layout: guide.html
 product: EMDK For Android
-productversion: '7.5'
+productversion: '7.6'
 ---
 ## Overview
 The purpose of this document is to describe the functionality of the Data Capture API. Its intended audience are Android developers. The Data Capture API is an application programming interface which provides a number of specific commands that another application can use to control certain aspects of data capture on Android devices.

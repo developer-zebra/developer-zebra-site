@@ -19,3 +19,4 @@ Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band
  * Mandatory Identifier
 * Create Silent Pairing Rules  
 * Use Bluetooth MAC address as a mandatory identifier
+* Set a PIN for a remote device

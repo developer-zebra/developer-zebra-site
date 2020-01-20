@@ -43,6 +43,7 @@ IrDA intent APIs can be used in applications that require control of IrDA commun
  * Get server name
  * Get driver version
  * Get connection idle time
+ * Get configuration
 <br>
 <br>
 
@@ -54,6 +55,7 @@ IrDA intent APIs can be used in applications that require control of IrDA commun
 * `com.symbol.irda.api.ACTION_UPDATE`:
  * Set server name
  * Set connection idle time
+ * Set configuration
 <br>
 
 ##### Usage information for each command follows in the sections below.

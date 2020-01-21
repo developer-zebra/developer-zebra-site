@@ -90,7 +90,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
  * Prevent one application from stopping another without explicit permission 
  * Perform remote device troubleshooting with enhanced visibility and control
 * **Enhanced [Cellular Manager](../../mx/cellularmgr)** implements several new device locking mechanisms. 
-* **[Keymapping Manager] now supports: 
+* **[Keymapping Manager]** now supports: 
   * Intent extras 
   * "Rotate" and "minus" keys 
 

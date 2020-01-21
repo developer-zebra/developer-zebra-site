@@ -54,7 +54,7 @@ The following software must be installed on the staging workstation prior to usi
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
 
-**StageNow v4.0 has been validated on devices with the following operating systems and MX versions**: 
+**StageNow v4.1 has been validated on devices with the following operating systems and MX versions**: 
 
 * Android 9.x Pie
 * Android 8.x Oreo
@@ -71,9 +71,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
+<u>**Introduces [Dynamic Staging](../dynamicstaging)**</u>, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
 
-**Now supports MX 9.3**: which adds the following features and enhancements: 
+<u>**Now supports MX 9.3**</u>: which adds the following features and enhancements: 
 * **Enhanced [File Manager](../csp/file)** now allows a Profile to: 
  * Download a file or files from a redirected URL (i.e. Tiny URL) 
  * Download a file from multiple redirected URLs 
@@ -88,7 +88,7 @@ The following software must be installed on the staging workstation prior to usi
 * **Enhanced [Keymapping Manager](../csp/keymap)** now allows an admin to: 
  * Select the Grey key and W1 and W2 buttons for reprogramming
 
-**Audio Staging has been removed**. StageNow 4.1 (and later) no longer supports staging devices using sound. Please use StageNow 4.0 (or older) if this feature is required. 
+<u>**Audio Staging has been removed</u>**. StageNow 4.1 (and later) no longer supports staging devices using sound. Please use StageNow 4.0 (or older) if audio staging is required. 
 
 -----
 

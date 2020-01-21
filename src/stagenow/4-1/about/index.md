@@ -71,7 +71,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated, **allowing multiple staging materials to be created from a single Profile, each of which can configure one or more devices differently**. 
+**Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
 
 **Now supports MX 9.3**: which adds the following features and enhancements: 
 * **Enhanced [File Manager](../csp/file)** now allows a Profile to: 
@@ -87,6 +87,8 @@ The following software must be installed on the staging workstation prior to usi
  * Select from IPv4, IPv6 and the IPv4/IPv6 “dual-stack” protocol for APN use 
 * **Enhanced [Keymapping Manager](../csp/keymap)** now allows an admin to: 
  * Select the Grey key and W1 and W2 buttons for reprogramming
+
+**Audio Staging has been removed**. StageNow 4.1 (and later) no longer supports staging devices using sound. Please use StageNow 4.0 (or older) if this feature is required. 
 
 -----
 

@@ -7,7 +7,7 @@ productversion: '4.1'
 
 ## Introduction
 
-This guide describes how to use StageNow to select and process a StageNow barcode, audio file, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
+This guide describes how to use StageNow to select and process a StageNow barcode, NFC tag or binary (`.bin`) file from a USB or SD card storage, which configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). 
 
 > **`IMPORTANT:`** Use this guide only <u><i>after</i></u> one or more [Profiles](../stagingprofiles) have been created. 
 
@@ -37,10 +37,10 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 ### II. Select Staging Medium
 
-#### Barcode, Audio, NFC or USB/SD Staging 
-This method of staging writes the configuration information from the selected profile into barcodes, audio files, NFC tags or USB/SD card storage. Staging is initiated when the output is read (or heard) by the client device(s). 
+#### Barcode, NFC or USB/SD Staging 
+This method of staging writes the configuration information from the selected profile into barcodes, NFC tags or USB/SD card storage. Staging is initiated when the output is read (or heard) by the client device(s). 
 
-1. Select the desired medium (Barcode, Audio or NFC) tab:
+1. Select the desired medium (Barcode or NFC) tab:
 
     <img alt="image" style="height:350px" src="../images/operator2.jpg"/>
 
@@ -54,6 +54,11 @@ This method of staging writes the configuration information from the selected pr
     <img alt="image" style="height:350px" src="../images/operator3.jpg"/>
 
 #### Selecting an Audio File for Staging
+
+> **AUDIO NOTE**: StageNow 4.1 (and higher) no longer supports audio staging. 
+
+<!-- 1/21/2020- audio staging removed from SN 4.1
+
 This method of staging writes the configuration information from the selected profile into an audio file. Play the audio file in the vicinity of the client devices in order to initiate staging on these devices. 
 
 1. Select the Audio tab. If this is the first time using this feature, a tour provides help screens that specify technical and environmental requirements for audio staging. 
@@ -73,6 +78,7 @@ If desired, select the Download icon to download the audio file to the host comp
 Navigate to the folder in which to place the audio file and select Save.
 
 -----
+-->
 
 ### III. Stage the Device(s)
 
@@ -107,7 +113,7 @@ To deploy the selected profile to the device through staging barcodes:
 
 -----
 
-### Audio Staging
+<!-- ### Audio Staging
 
 **NOTE: Audio staging is NOT supported on Zebra's SDM660-platform devices, which currently includes**:
 * PS20
@@ -140,7 +146,8 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
   <img alt="image" style="height:350px" src="../images/Client_Audio_Error.jpg"/>
 
------
+----- 
+-->
 
 ### NFC Staging
 
@@ -305,6 +312,8 @@ Use this screen to determine whether the device has full or partial StageNow fea
 
 * No Functionality - no OSx Version.
 
+<!-- 
+
 ### Audio Staging Help
 **NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
 * PS20
@@ -321,8 +330,9 @@ Select Dismiss on any screen to dismiss the help.
   <img alt="image" style="height:350px" src="../images/AudioHelp2.jpg"/>
 
   <img alt="image" style="height:350px" src="../images/AudioHelp3.jpg"/>
-
+ 
 -----
+-->
 
 ## Rapid Deployment Client
 

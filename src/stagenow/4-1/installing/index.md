@@ -19,9 +19,10 @@ The following are required to run the StageNow desktop tool:
 * StageNow installer. (See the [StageNow download page](../download)) 
 * Microsoft .NET Framework 4.5 (included with StageNow installer)
 * A PDF reader (for displaying and printing staging barcodes)
-* The Java Runtime Environment (for audio staging)
 * Wi-Fi access (for Wi-Fi Hotspot feature)
-
+<!-- 1/21/2020- Audio staging removed from SN 4.1 
+* The Java Runtime Environment (for audio staging)
+ -->
 -----
 
 ## Installing StageNow

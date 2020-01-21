@@ -27,13 +27,13 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if Legacy Mode is turned on in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or NFC tags.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if Legacy Mode is turned on in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
 
-* [Deployment](../stagingprofiles/#deployment) - This information includes settings that do not reside in StageNow barcodes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
+* [Deployment](../stagingprofiles/#deployment) - This information includes settings that do not reside in StageNow barcodes or NFC tags, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
 
 * [Review](../stagingprofiles/#review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the Profile, or return to any setting to update it.
 
-* [Publish](../stagingprofiles/#publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes, NFC tags, or Audio file) for the completed Profile, as well as test, publish, and stage the Profile.
+* [Publish](../stagingprofiles/#publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as test, publish, and stage the Profile.
 
 ### Profile States
 As progress is made through the Wizard, the top right corner of the window reflects the state of the Profile: 
@@ -50,7 +50,7 @@ _Click image to enlarge; ESC to cancel_.
 
 * **Published** - The Profile is visible to the operator.
 
-* **Staged** - The operator has acquired the Profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
+* **Staged** - The operator has acquired the Profile, i.e., generated barcodes and exported data to write to an NFC tag.
 
 ### Navigating the Wizard
 Following are tips for navigating through the Wizard.
@@ -265,7 +265,8 @@ To stage a barcode Profile:
 
 -----
 
-### Audio Profile Staging
+<!-- ### 
+ Profile Staging
 
 **NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
 * PS20
@@ -305,6 +306,7 @@ To stage a barcode Profile:
 To unpublish a Profile to remove operator access, select Unpublish.
 
 -----
+-->
 
 ### NFC Profile Staging
 To stage an NFC Profile:
@@ -403,7 +405,7 @@ To edit a Profile:
 
 5. Select Continue and proceed through the Wizard.
 
-6. In the Review section, select Complete Profile to move to the Publish section to generate updated barcodes, NFC tags, or audio files.
+6. In the Review section, select Complete Profile to move to the Publish section to generate updated barcodes or NFC tags.
 
 -----
 

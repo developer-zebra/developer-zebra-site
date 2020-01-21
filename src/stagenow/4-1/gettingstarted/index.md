@@ -14,7 +14,7 @@ Staging is the process where a device administrator or operator configures a dev
 An administrator can stage all devices within an enterprise, devices in a particular store or site, or on-site/per user.
 
 ## StageNow Staging Solution
-StageNow is Zebra's staging solution for Android devices. It allows simple profile creation and easy device deployment with a simple barcode scan, tag read or audio-file playback.
+StageNow is Zebra's staging solution for Android devices. It allows simple profile creation and easy device deployment with a simple barcode scan or tag read.
 
 The StageNow Staging Solution includes the following components:
 
@@ -22,7 +22,7 @@ The StageNow Staging Solution includes the following components:
 
     Note: The tool's built-in staging server is an FTP server to which devices download the staging content of the deployment section, files selected for download from the remote server, and RD staging files. Because multiple applications cannot use Port #21 (usually used by FTP servers) at the same time, administrators must ensure the Workstation Tool PC does not have another FTP server running in the background (or that it uses a different port). **The staging (FTP) server runs only when the tool is running**, and stops when the application closes. Therefore StageNow must be running when staging the device with profiles as described above.
 
-* The StageNow Client resides on the device and provides a user interface for the staging operator to initiate staging. The operator uses a staging method (i.e. prints and scans a barcode, plays an audio file, or reads an NFC tag) to deliver staging data to the device. 
+* The StageNow Client resides on the device and provides a user interface for the staging operator to initiate staging. The operator uses a staging method (i.e. prints and scans a barcode or reads an NFC tag) to deliver staging data to the device. 
 
 -----
 
@@ -56,7 +56,7 @@ Following are the staging methods available via StageNow. See [Device Staging](.
 
 * NFC Tag - The operator exports profile data and programs it into an NFC tag, then reads the tag with the device's NFC tag reader by bringing the tag within a certain proximity of the device, to deploy the profile to the device.
 
-* Audio File - The operator downloads an audio file containing profile data to the device, and plays the audio file to configure that device.
+> **AUDIO NOTE**: StageNow 4.1 (and higher) no longer supports audio staging. 
 
 ## Home Screen
 To open the tool, select the StageNow icon from the Start menu. 

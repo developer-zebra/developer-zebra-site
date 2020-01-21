@@ -1405,7 +1405,7 @@ ul.nostyle i {
 
 .not-available
 {
-    opacity:40;
+    opacity:.40;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 

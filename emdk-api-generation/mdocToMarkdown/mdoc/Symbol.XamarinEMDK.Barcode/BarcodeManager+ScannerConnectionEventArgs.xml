@@ -4,14 +4,17 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary></summary>
-    <remarks></remarks>
+    <summary>
+    </summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -20,16 +23,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.ScannerInfo" />
         <Parameter Name="p1" Type="Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
-        <param name="p1"></param>
-        <summary></summary>
-        <remarks></remarks>
+        <param name="p0">
+        </param>
+        <param name="p1">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="P0">
@@ -38,14 +46,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
-        <value></value>
-        <remarks></remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="P1">
@@ -54,14 +66,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
-        <value></value>
-        <remarks></remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

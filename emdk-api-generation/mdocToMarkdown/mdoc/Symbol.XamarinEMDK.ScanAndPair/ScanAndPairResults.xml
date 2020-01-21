@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Provides list of result codes for ScanAndPair class.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,16 +27,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference"></param>
-        <param name="transfer"></param>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothDeviceDiscoveryFailed">
@@ -43,6 +49,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -54,8 +61,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothNotEnabled">
@@ -64,6 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -75,8 +85,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothServiceDiscoveryFailed">
@@ -85,6 +97,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,8 +109,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceAlreadyPaired">
@@ -106,6 +121,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -117,8 +133,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceNotPaired">
@@ -127,6 +145,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,8 +157,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DevicePairingFailed">
@@ -148,6 +169,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,8 +181,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceUnpairingFailed">
@@ -169,6 +193,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,8 +205,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Failure">
@@ -190,6 +217,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -201,8 +229,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDescription">
@@ -211,6 +241,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -224,10 +255,13 @@
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
+        <param name="p0">
+        </param>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Inprogress">
@@ -236,6 +270,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -247,8 +282,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidBluetoothDeviceInfo">
@@ -257,6 +294,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -268,8 +306,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidConfig">
@@ -278,6 +318,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -289,8 +330,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidObject">
@@ -299,6 +342,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -310,8 +354,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidPairingPin">
@@ -320,6 +366,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -331,8 +378,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidScannedData">
@@ -341,6 +390,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -352,8 +402,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PairingTimedout">
@@ -362,6 +414,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -373,8 +426,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousCommandPending">
@@ -383,6 +438,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -394,8 +450,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerInitFailure">
@@ -404,6 +462,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -415,8 +474,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerInUse">
@@ -425,6 +486,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -436,8 +498,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerNotSupported">
@@ -446,6 +510,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,8 +522,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerReadFailed">
@@ -467,6 +534,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -478,8 +546,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerUnintFailed">
@@ -488,6 +558,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -499,8 +570,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -509,6 +582,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -520,8 +594,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -530,14 +606,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -546,14 +625,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -562,6 +644,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -575,10 +658,13 @@
         <Parameter Name="p0" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
+        <param name="p0">
+        </param>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -587,6 +673,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -599,8 +686,10 @@
       <Parameters />
       <Docs>
         <summary>Provides list of result codes for ScanAndPair class.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Provides information about the reader device.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Camera">
@@ -25,6 +27,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -36,8 +39,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Imager">
@@ -46,6 +51,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -57,8 +63,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -67,14 +75,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -83,14 +94,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Undefined">
@@ -99,6 +113,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,8 +125,10 @@
       </ReturnValue>
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -120,6 +137,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,10 +151,13 @@
         <Parameter Name="this_" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="this_"></param>
+        <param name="this_">
+        </param>
         <summary>Provides information about the reader device.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -145,6 +166,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,8 +179,10 @@
       <Parameters />
       <Docs>
         <summary>Provides information about the reader device.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

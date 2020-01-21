@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,6 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -34,7 +37,8 @@
       <Parameters />
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,16 +47,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference"></param>
-        <param name="transfer"></param>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br115200">
@@ -61,6 +69,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -73,7 +82,8 @@
       <MemberValue>115200</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br1200">
@@ -82,6 +92,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -94,7 +105,8 @@
       <MemberValue>1200</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br14400">
@@ -103,6 +115,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -115,7 +128,8 @@
       <MemberValue>14400</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br19200">
@@ -124,6 +138,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,7 +151,8 @@
       <MemberValue>19200</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br230400">
@@ -145,6 +161,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,7 +174,8 @@
       <MemberValue>230400</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br2400">
@@ -166,6 +184,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -178,7 +197,8 @@
       <MemberValue>2400</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br28800">
@@ -187,6 +207,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,7 +220,8 @@
       <MemberValue>28800</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br300">
@@ -208,6 +230,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -220,7 +243,8 @@
       <MemberValue>300</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br38400">
@@ -229,6 +253,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,7 +266,8 @@
       <MemberValue>38400</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br460800">
@@ -250,6 +276,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -262,7 +289,8 @@
       <MemberValue>460800</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br4800">
@@ -271,6 +299,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -283,7 +312,8 @@
       <MemberValue>4800</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br57600">
@@ -292,6 +322,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -304,7 +335,8 @@
       <MemberValue>57600</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br921600">
@@ -313,6 +345,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -325,7 +358,8 @@
       <MemberValue>921600</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Br9600">
@@ -334,6 +368,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -346,7 +381,8 @@
       <MemberValue>9600</MemberValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -355,14 +391,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -371,14 +410,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

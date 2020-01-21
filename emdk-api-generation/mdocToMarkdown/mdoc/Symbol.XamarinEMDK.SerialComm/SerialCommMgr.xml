@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Symbol.XamarinEMDK.EMDKBase</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,16 +27,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference"></param>
-        <param name="transfer"></param>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Config">
@@ -43,6 +49,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -57,8 +64,10 @@
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPortName">
@@ -67,6 +76,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -78,7 +88,8 @@
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -87,6 +98,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,7 +111,8 @@
       <Parameters />
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -108,6 +121,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,7 +134,8 @@
       <Parameters />
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSignalState">
@@ -129,6 +144,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -142,10 +158,13 @@
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
+        <param name="p0">
+        </param>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -154,6 +173,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,8 +185,10 @@
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PortInfo">
@@ -175,6 +197,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -186,8 +209,10 @@
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -196,6 +221,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -209,10 +235,13 @@
         <Parameter Name="p0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
+        <param name="p0">
+        </param>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSignalState">
@@ -221,6 +250,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -235,10 +265,13 @@
         <Parameter Name="p1" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
-        <param name="p1"></param>
+        <param name="p0">
+        </param>
+        <param name="p1">
+        </param>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -247,14 +280,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -263,14 +299,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -279,6 +318,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -293,11 +333,15 @@
         <Parameter Name="p1" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
-        <param name="p1"></param>
+        <param name="p0">
+        </param>
+        <param name="p1">
+        </param>
         <summary>Primary object to access the serial communication feature for communication with remote device via USB or Serial.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

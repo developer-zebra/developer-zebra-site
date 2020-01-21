@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,16 +27,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference"></param>
-        <param name="transfer"></param>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AlwaysScan">
@@ -43,6 +49,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -54,8 +61,10 @@
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothInfo">
@@ -64,6 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -75,8 +85,10 @@
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NotificationType">
@@ -85,6 +97,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -96,8 +109,10 @@
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetToDefaults">
@@ -106,6 +121,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,7 +134,8 @@
       <Parameters />
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScanInfo">
@@ -127,6 +144,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,8 +156,10 @@
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -148,14 +168,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -164,14 +187,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Symbol.XamarinEMDK.EMDKBase</BaseTypeName>
@@ -16,7 +17,8 @@
   </Attributes>
   <Docs>
     <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,16 +27,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference"></param>
-        <param name="transfer"></param>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
         <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSlot">
@@ -43,6 +49,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -54,8 +61,10 @@
       </ReturnValue>
       <Docs>
         <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnumerateSAMs">
@@ -64,6 +73,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -76,8 +86,10 @@
       <Parameters />
       <Docs>
         <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-        <returns></returns>
-        <remarks></remarks>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -86,14 +98,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -102,14 +117,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

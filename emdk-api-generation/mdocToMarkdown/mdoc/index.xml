@@ -1,21 +1,21 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="5.0.0.1">
+    <Assembly Name="Symbol.XamarinEMDK" Version="6.0.0.51">
       <Attributes>
         <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.barcode", Managed="Symbol.XamarinEMDK.Barcode")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.barcode", Managed="Symbol.XamarinEMDK.Barcode")</AttributeName>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.sam", Managed="Symbol.XamarinEMDK.Sam")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.notification", Managed="Symbol.XamarinEMDK.Notification")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.sam", Managed="Symbol.XamarinEMDK.Sam")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
@@ -36,16 +36,16 @@
           <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2015-2019 Zebra Technologies Corporation and/or its affiliates.")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2015-2019 Zebra Technologies Corporation and/or its affiliates. All rights reserved.")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("5.0.0.1")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("6.0.0.51")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("5.0.0.1")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("6.0.0.51")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -68,8 +68,10 @@
       </Attributes>
     </Assembly>
   </Assemblies>
-  <Remarks></Remarks>
-  <Copyright></Copyright>
+  <Remarks>
+  </Remarks>
+  <Copyright>
+  </Copyright>
   <Types>
     <Namespace Name="Symbol.XamarinEMDK">
       <Type Name="EMDKBase" Kind="Class" />
@@ -140,6 +142,7 @@
       <Type Name="ScannerConfig+DecoderParameters+DutchPostalDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Ean13Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Ean8Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+FinnishPostal4SDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+GridMatrixDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarExpDecoder" Kind="Class" />
@@ -153,11 +156,14 @@
       <Type Name="ScannerConfig+DecoderParameters+MailMarkDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Matrix2of5Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+MaxiCodeDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MICRE13B" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+MicroPdfDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+MicroQrDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+MsiDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+OcrA" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+OcrAParams" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+OcrB" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+OcrBParams" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Pdf417Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+QrCodeDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+SignatureDecoder" Kind="Class" />
@@ -170,6 +176,7 @@
       <Type Name="ScannerConfig+DecoderParameters+UpcEanParameters" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Us4StateDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Us4StateFicsDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+USCurrency" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+UsPlanetDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+UsPostNetDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DotCodeInverse" Kind="Class" />
@@ -190,7 +197,10 @@
       <Type Name="ScannerConfig+MultiBarcodeParameters" Kind="Class" />
       <Type Name="ScannerConfig+OcrAVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrBVariant" Kind="Class" />
+      <Type Name="ScannerConfig+OcrCheckDigitValidation" Kind="Class" />
       <Type Name="ScannerConfig+OcrLines" Kind="Class" />
+      <Type Name="ScannerConfig+OcrOrientation" Kind="Class" />
+      <Type Name="ScannerConfig+OcrParameters" Kind="Class" />
       <Type Name="ScannerConfig+OcrParams" Kind="Class" />
       <Type Name="ScannerConfig+OneDQuietZoneLevel" Kind="Class" />
       <Type Name="ScannerConfig+PairAfterScannerReboot" Kind="Class" />
@@ -199,11 +209,13 @@
       <Type Name="ScannerConfig+PoorQualityDecodeEffortLevel" Kind="Class" />
       <Type Name="ScannerConfig+PowerMode" Kind="Class" />
       <Type Name="ScannerConfig+Preamble" Kind="Class" />
+      <Type Name="ScannerConfig+PresentationModeSensitivity" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+CameraSpecifics" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+ContinuousRead" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+ImagerSpecifics" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+ImagerSpecifics+PresentationModeParams" Kind="Class" />
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+LaserSpecifics" Kind="Class" />
       <Type Name="ScannerConfig+ScanMode" Kind="Class" />
       <Type Name="ScannerConfig+ScanParameters" Kind="Class" />

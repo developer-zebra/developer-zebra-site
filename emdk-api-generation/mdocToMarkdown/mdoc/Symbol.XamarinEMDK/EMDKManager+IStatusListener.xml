@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
     <AssemblyVersion>5.0.0.1</AssemblyVersion>
+    <AssemblyVersion>6.0.0.51</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -19,8 +20,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
-    <remarks></remarks>
+    <summary>
+    </summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnStatus">
@@ -29,6 +32,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>5.0.0.1</AssemblyVersion>
+        <AssemblyVersion>6.0.0.51</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -43,10 +47,14 @@
         <Parameter Name="p1" Type="Symbol.XamarinEMDK.EMDKBase" />
       </Parameters>
       <Docs>
-        <param name="p0"></param>
-        <param name="p1"></param>
-        <summary></summary>
-        <remarks></remarks>
+        <param name="p0">
+        </param>
+        <param name="p1">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -248,6 +248,7 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
+/*
     //emdk for android 4.0
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',
@@ -987,6 +988,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/7-2/'
     }))
+
+*/
    //emdk for android 7.3
     .use(foldermenu({
         folder: 'emdk-for-android/7-3/api/',
@@ -1222,7 +1225,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/7-6/'
     }))
-
+/*
     //emdk for xamarin 1.0
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/api/',
@@ -1477,8 +1480,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-xamarin/3-0/'
     }))
-
-      //emdk-x 4.0
+*/
+      //emdk-x 4.0      
     .use(foldermenu({
         folder: 'emdk-for-xamarin/4-0/api/',
         automenu: true
@@ -1583,6 +1586,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'mx/',
         automenu: false
     }))
+/*
     .use(foldermenu({
         folder: 'simulscan/1-1/'
     }))
@@ -1625,6 +1629,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow-cn/3-1/'
     }))
+*/
+
     .use(foldermenu({
         folder: 'stagenow/3-2/'
     }))

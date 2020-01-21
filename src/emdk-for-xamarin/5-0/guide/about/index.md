@@ -26,25 +26,34 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 EMDK-X has been designed to work with all Zebra mobile computers running Android. The devices listed below have been tested and validated for compatibility with this release. 
 
-### Mobile devices
+#### Mobile devices
 
+* CC600 - Oreo
+* CC6000 - Oreo 
 * **EC30 - Oreo**
-* **ET51 - Oreo**
-* **ET56 - Oreo**
+* **ET51 Oreo**
+* **ET56 Oreo**
 * **L10 - Oreo**
 * MC33 - Oreo
-* PS20 - Oreo, **Pie**
-* TC51 - **Oreo**
-* TC52 - Oreo, **Pie**
-* TC56 - **Oreo**
+* MC9300 - Oreo
+* **PS20** - Oreo, **Pie**
+* TC20 - Oreo
+* TC25 - Oreo
+* TC51 - Oreo
+* **TC52** - Oreo, **Pie**
+* TC56 - Oreo
 * TC57 - Oreo
-* TC72 - Oreo, **Pie**
+* TC70x - Oreo
+* **TC72** - Oreo, **Pie**
+* TC75x - Oreo
 * TC77 - Oreo
+* TC8300 - Oreo
+* VC80x - Oreo
 * **VC8300 - Oreo**
 
 Devices and/or dessert flavors **shown in bold are newly added** in the current release. 
 
-### Scanners and imagers
+#### Scanners and imagers
 
 * DS2278
 * DS3608

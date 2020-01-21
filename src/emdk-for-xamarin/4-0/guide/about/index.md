@@ -28,28 +28,36 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 **Devices tested and validated**:
 
-### Mobile devices
 
+#### Mobile devices
+
+* **CC600 - Oreo**
+* **CC6000 - Oreo** 
 * MC33 - Nougat, Oreo
+* **MC9300 - Oreo**
 * PS20 - Oreo
-* TC20 - Nougat
-* TC25 - Nougat
-* TC51 - Marshmallow, Nougat
+* TC20 - Nougat, **Oreo**
+* TC25 - Nougat, **Oreo**
+* TC51 - Nougat, Oreo
 * TC52 - Oreo
-* TC56 - Marshmallow, Nougat
+* TC56 - Nougat, Oreo
 * TC57 - Oreo
-* TC70x - Marshmallow, Nougat
+* TC70x - Nougat, Oreo
 * TC72 - Oreo
-* TC75x  - Marshmallow, Nougat 
+* TC75x - Nougat, Oreo
 * TC77 - Oreo
-* VC80x  - Nougat
+* **TC8300 - Oreo**
+* VC80x - Nougat, Oreo
 * WT6000 - Nougat
 
-### Scanners and imagers
+**Bold text** indicates support added after initial release; device refresh might be required. 
+
+#### Scanners and imagers
 
 * DS2278
 * DS3608
 * DS3678
+* DS8178
 * **DS8178**
 * LI3608
 * LI3678

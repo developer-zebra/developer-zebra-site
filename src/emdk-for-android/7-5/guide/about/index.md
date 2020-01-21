@@ -64,7 +64,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
  * Perform remote device troubleshooting with enhanced visibility and control
 * **Enhanced [Cellular Manager](../../mx/cellularmgr) now implements a: 
  * Subsidy lock
-* **[Keymapping Manager] now supports: 
+* **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports: 
   * Intent extras 
   * "Rotate" and "minus" keys 
 

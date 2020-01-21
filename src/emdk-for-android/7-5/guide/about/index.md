@@ -62,7 +62,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 * **Enhanced [Access Manager](../../mx/accessmgr)** can now: 
  * Prevent one application from stopping another without explicit permission 
  * Perform remote device troubleshooting with enhanced visibility and control
-* **Enhanced [Cellular Manager](../../mx/cellularmgr) now implements a: 
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** now implements a: 
  * Subsidy lock
 * **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports: 
   * Intent extras 

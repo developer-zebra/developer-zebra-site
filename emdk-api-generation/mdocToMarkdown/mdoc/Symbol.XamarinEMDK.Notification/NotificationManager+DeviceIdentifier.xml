@@ -38,9 +38,9 @@
         <ReturnType>Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Defines specific notification devices of each type.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothImagerRs6000">

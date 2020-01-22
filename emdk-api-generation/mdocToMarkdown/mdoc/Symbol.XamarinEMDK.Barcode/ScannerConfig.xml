@@ -141,9 +141,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrParameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The OcrParams class provides access to OCR parameters that are available to configure.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReaderParams">

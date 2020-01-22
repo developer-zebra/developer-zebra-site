@@ -15,8 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>ImagerSpecific provides access to the imager specific parameters.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,9 +35,9 @@
         <Parameter Name="__self" Type="Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics+ImagerSpecifics" />
       </Parameters>
       <Docs>
-        <param name="__self">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="__self"></param>
+        <summary>ImagerSpecific provides access to the imager specific parameters.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,10 +52,10 @@
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">To be added.</param>
-        <param name="transfer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="javaReference"></param>
+        <param name="transfer"></param>
+        <summary></summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sensitivity">
@@ -74,9 +74,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+PresentationModeSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Controls the sensitivity of scene detection in presentation mode. Default value is HIGH.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -90,9 +90,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -106,9 +106,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

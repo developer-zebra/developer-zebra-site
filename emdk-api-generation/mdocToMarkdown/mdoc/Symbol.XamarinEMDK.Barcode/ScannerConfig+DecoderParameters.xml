@@ -486,9 +486,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+FinnishPostal4SDecoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The FinnishPostal4S class provides access to parameters that are available for the FinnishPostal4S decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridMatrix">
@@ -832,9 +832,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+MICRE13B</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The MICRE13B class provides access to parameters that are available for the MICRE13B decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="MicroPDF">
@@ -928,9 +928,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+OcrAParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The OcrA class provides access to parameters that are available for the OcrA decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="OcrB">
@@ -949,9 +949,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+OcrBParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The OcrB class provides access to parameters that are available for the OcrB decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pdf417">
@@ -1310,9 +1310,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+USCurrency</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The USCurrency class provides access to parameters that are available for the USCurrency decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsPlanet">

@@ -2,9 +2,10 @@
 title: ScannerConfig.OneDQuietZoneLevel
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OneDQuietZoneLevel[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **this_**  -
 
 ###Level0
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
 ###Level1
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
 ###Level2
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
 ###Level3
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel

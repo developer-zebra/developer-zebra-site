@@ -2,9 +2,10 @@
 title: ProfileManager.PROFILE_FLAG
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **this_**  -
 
 ###CheckCompatibility
 
+        
 
 **Type** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 ###Get
 
+        
 
 **Type** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 ###Reset
 
+        
 
 **Type** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG
 ###Set
 
+        
 
 **Type** - Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG

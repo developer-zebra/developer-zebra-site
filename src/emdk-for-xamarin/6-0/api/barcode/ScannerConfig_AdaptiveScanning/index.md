@@ -2,7 +2,7 @@
 title: ScannerConfig.AdaptiveScanning
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Enables or disables adaptive scanning.
 
@@ -18,6 +18,7 @@ Enables or disables adaptive scanning.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning
 

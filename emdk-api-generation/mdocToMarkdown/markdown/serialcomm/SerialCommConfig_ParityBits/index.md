@@ -2,7 +2,7 @@
 title: SerialCommConfig.ParityBits
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Specifies the parity bits for a SerialComm object.
 
@@ -18,6 +18,7 @@ Specifies the parity bits for a SerialComm object.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 

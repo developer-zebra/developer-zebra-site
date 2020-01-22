@@ -2,7 +2,7 @@
 title: SerialCommConfig.FlowControlModes
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Pre-defined constants to specify flow control.
 
@@ -18,6 +18,7 @@ Pre-defined constants to specify flow control.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlModes
 

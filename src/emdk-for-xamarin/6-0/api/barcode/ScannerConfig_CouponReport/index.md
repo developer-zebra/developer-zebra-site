@@ -2,7 +2,7 @@
 title: ScannerConfig.CouponReport
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Supported Coupon modes.
 
@@ -18,6 +18,7 @@ Supported Coupon modes.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 

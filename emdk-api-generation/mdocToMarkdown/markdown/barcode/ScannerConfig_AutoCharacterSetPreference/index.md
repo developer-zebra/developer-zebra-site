@@ -2,7 +2,7 @@
 title: ScannerConfig.AutoCharacterSetPreference
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Selection of character sets available for automatic decoding.
 
@@ -18,6 +18,7 @@ Selection of character sets available for automatic decoding.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference
 

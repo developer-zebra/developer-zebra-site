@@ -2,7 +2,7 @@
 title: ScannerConfig.GridMatrixInverse
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Values for inverse decoder parameter.
 
@@ -18,6 +18,7 @@ Values for inverse decoder parameter.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+GridMatrixInverse
 

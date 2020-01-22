@@ -2,9 +2,10 @@
 title: Scanner
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,6 +15,7 @@ productversion: '5.0'
 **public virtual void CancelRead ();**
 
 
+        
 
 **Parameters:**
 
@@ -24,6 +26,7 @@ productversion: '5.0'
 **public virtual void Disable ();**
 
 
+        
 
 **Parameters:**
 
@@ -34,6 +37,7 @@ productversion: '5.0'
 **public virtual void Enable ();**
 
 
+        
 
 **Parameters:**
 
@@ -44,6 +48,7 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Barcode.ScannerConfig GetConfig ();**
 
 
+        
 
 **Parameters:**
 
@@ -54,6 +59,7 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Barcode.InterfaceConfig GetInterfaceConfig ();**
 
 
+        
 
 **Parameters:**
 
@@ -64,6 +70,7 @@ productversion: '5.0'
 **public virtual void Read ();**
 
 
+        
 
 **Parameters:**
 
@@ -74,6 +81,7 @@ productversion: '5.0'
 **public virtual void Release ();**
 
 
+        
 
 **Parameters:**
 
@@ -84,10 +92,12 @@ productversion: '5.0'
 **public virtual void SetConfig (Symbol.XamarinEMDK.Barcode.ScannerConfig p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Barcode.ScannerConfig **p0**  - 
+        
 
 **Returns** - System.Void
 
@@ -96,10 +106,12 @@ Symbol.XamarinEMDK.Barcode.ScannerConfig **p0**  -
 **public virtual void SetInterfaceConfig (Symbol.XamarinEMDK.Barcode.InterfaceConfig interfaceConfig);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig**  - 
+        
 
 **Returns** - System.Void
 
@@ -107,18 +119,22 @@ Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig**  -
 
 ###IsEnabled
 
+        
 
 **Type** - System.Boolean
 ###IsReadPending
 
+        
 
 **Type** - System.Boolean
 ###ScannerInfo
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo
 ###TriggerType
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.Scanner+TriggerTypes
 ##Events
@@ -126,8 +142,10 @@ Symbol.XamarinEMDK.Barcode.InterfaceConfig **interfaceConfig**  -
 ###Data
 
 
+        
 
 ###Status
 
 
+        
 

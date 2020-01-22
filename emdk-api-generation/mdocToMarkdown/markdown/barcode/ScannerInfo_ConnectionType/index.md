@@ -2,9 +2,10 @@
 title: ScannerInfo.ConnectionType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,25 +39,31 @@ System.String **this_**  -
 
 ###BluetoothSsi
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 ###Internal
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 ###PluggableSsi
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 ###SerialSsi
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 ###Undefined
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType
 ###Usb
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType

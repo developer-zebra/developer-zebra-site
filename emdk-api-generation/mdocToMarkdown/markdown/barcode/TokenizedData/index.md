@@ -2,9 +2,10 @@
 title: TokenizedData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public virtual System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.TokenizedData.Token> GetTokensByKey (string p0);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.TokenizedData+Token>
 
@@ -25,5 +28,6 @@ System.String **p0**  -
 
 ###Tokens
 
+        
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.TokenizedData+Token>

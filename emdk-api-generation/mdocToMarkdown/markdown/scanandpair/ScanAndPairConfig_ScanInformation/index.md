@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.ScanInformation
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.
 

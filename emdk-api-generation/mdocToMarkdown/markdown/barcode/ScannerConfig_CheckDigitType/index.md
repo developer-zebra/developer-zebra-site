@@ -2,7 +2,7 @@
 title: ScannerConfig.CheckDigitType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Verify data integrity.
 
@@ -18,6 +18,7 @@ Verify data integrity.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType
 

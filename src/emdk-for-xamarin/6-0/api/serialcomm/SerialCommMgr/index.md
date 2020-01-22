@@ -2,7 +2,7 @@
 title: SerialCommMgr
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Primary object to access the serial communication feature for communication with remote device via USB or Serial.
 
@@ -38,6 +38,7 @@ Primary object to access the serial communication feature for communication with
 **Parameters:**
 
 Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal **p0**  - 
+        
 
 **Returns** - System.Boolean
 
@@ -50,6 +51,7 @@ Primary object to access the serial communication feature for communication with
 **Parameters:**
 
 System.Int32 **p0**  - 
+        
 
 **Returns** - System.Byte[]
 
@@ -62,8 +64,10 @@ Primary object to access the serial communication feature for communication with
 **Parameters:**
 
 Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal **p0**  - 
+        
 
 System.Boolean **p1**  - 
+        
 
 **Returns** - System.Void
 
@@ -76,8 +80,10 @@ Primary object to access the serial communication feature for communication with
 **Parameters:**
 
 System.Byte[] **p0**  - 
+        
 
 System.Int32 **p1**  - 
+        
 
 **Returns** - System.Int32
 

@@ -2,7 +2,7 @@
 title: SimulScanManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Primary object to access SimulScan features.
 
@@ -18,6 +18,7 @@ Primary object to access SimulScan features.
 **Parameters:**
 
 Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReader
 
@@ -30,6 +31,7 @@ Primary object to access SimulScan features.
 **Parameters:**
 
 Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReader
 

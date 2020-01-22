@@ -2,9 +2,10 @@
 title: ScannerConfig.VerifyCheckDigit
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+VerifyCheckDigit
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.VerifyCheckDigit[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,13 +39,16 @@ System.String **this_**  -
 
 ###No
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+VerifyCheckDigit
 ###One
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+VerifyCheckDigit
 ###Two
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+VerifyCheckDigit

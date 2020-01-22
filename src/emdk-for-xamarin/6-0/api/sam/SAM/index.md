@@ -2,7 +2,7 @@
 title: SAM
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 SAM class represents and provides access to the physical SAMs.
 
@@ -38,10 +38,13 @@ SAM class represents and provides access to the physical SAMs.
 **Parameters:**
 
 System.Byte[] **p0**  - 
+        
 
 System.Int16 **p1**  - 
+        
 
 System.Boolean **p2**  - 
+        
 
 **Returns** - System.Byte[]
 

@@ -2,7 +2,7 @@
 title: SerialCommException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Throws an SerialCommException on incorrect API use by client or other unexpected error.
 

@@ -2,7 +2,7 @@
 title: Scanner.TriggerTypes
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Lists supported trigger types.
 
@@ -18,6 +18,7 @@ Lists supported trigger types.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.Scanner+TriggerTypes
 

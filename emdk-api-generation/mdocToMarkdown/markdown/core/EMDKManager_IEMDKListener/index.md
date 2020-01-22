@@ -2,9 +2,10 @@
 title: EMDKManager.IEMDKListener
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 ##Methods
 ###OnClosed
@@ -12,6 +13,7 @@ productversion: '5.0'
 **public void OnClosed ();**
 
 
+        
 
 **Parameters:**
 
@@ -22,10 +24,12 @@ productversion: '5.0'
 **public void OnOpened (Symbol.XamarinEMDK.EMDKManager p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.EMDKManager **p0**  - 
+        
 
 **Returns** - System.Void
 

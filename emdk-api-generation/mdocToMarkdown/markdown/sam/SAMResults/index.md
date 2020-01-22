@@ -2,7 +2,7 @@
 title: SAMResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Defines all error codes that SAM API can return. 
 
@@ -18,6 +18,7 @@ Defines all error codes that SAM API can return.
 **Parameters:**
 
 Symbol.XamarinEMDK.Sam.SAMResults **p0**  - 
+        
 
 **Returns** - System.String
 
@@ -30,6 +31,7 @@ Defines all error codes that SAM API can return.
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Sam.SAMResults
 

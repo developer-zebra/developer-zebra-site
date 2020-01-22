@@ -2,7 +2,7 @@
 title: DiagnosticResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Defines all error codes returned by the diagnostic API. 
 
@@ -18,6 +18,7 @@ Defines all error codes returned by the diagnostic API.
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults
 

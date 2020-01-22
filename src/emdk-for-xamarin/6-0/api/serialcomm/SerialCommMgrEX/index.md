@@ -2,9 +2,10 @@
 title: SerialCommMgrEX
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.SerialComm.SerialCommMgr GetPort (Symbol.XamarinEMDK.SerialComm.SerialPortInfo p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.SerialComm.SerialPortInfo **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr
 
@@ -25,5 +28,6 @@ Symbol.XamarinEMDK.SerialComm.SerialPortInfo **p0**  -
 
 ###SupportedPorts
 
+        
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.SerialComm.SerialPortInfo>

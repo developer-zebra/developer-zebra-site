@@ -2,9 +2,10 @@
 title: VersionManager.VERSION_TYPE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.VersionManager.VERSION_TYPE[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,13 +39,16 @@ System.String **this_**  -
 
 ###Barcode
 
+        
 
 **Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 ###Emdk
 
+        
 
 **Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE
 ###Mx
 
+        
 
 **Type** - Symbol.XamarinEMDK.VersionManager+VERSION_TYPE

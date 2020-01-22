@@ -2,9 +2,10 @@
 title: NotificationManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Notification.NotificationDevice GetDevice (Symbol.XamarinEMDK.Notification.DeviceInfo p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Notification.DeviceInfo **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationDevice
 
@@ -26,10 +29,12 @@ Symbol.XamarinEMDK.Notification.DeviceInfo **p0**  -
 **public virtual Symbol.XamarinEMDK.Notification.NotificationDevice GetDevice (Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.NotificationDevice
 
@@ -37,5 +42,6 @@ Symbol.XamarinEMDK.Notification.NotificationManager.DeviceIdentifier **p0**  -
 
 ###SupportedDevicesInfo
 
+        
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Notification.DeviceInfo>

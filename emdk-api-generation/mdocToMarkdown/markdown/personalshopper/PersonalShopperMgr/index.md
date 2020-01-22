@@ -2,9 +2,10 @@
 title: PersonalShopperMgr
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -12,9 +13,11 @@ productversion: '5.0'
 
 ###Cradle
 
+        
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.Cradle
 ###Diagnostic
 
+        
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.Diagnostic

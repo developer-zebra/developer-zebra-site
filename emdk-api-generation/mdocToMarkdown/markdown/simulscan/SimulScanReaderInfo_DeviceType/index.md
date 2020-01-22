@@ -2,7 +2,7 @@
 title: SimulScanReaderInfo.DeviceType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Provides information about the reader device.
 
@@ -18,6 +18,7 @@ Provides information about the reader device.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 

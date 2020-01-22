@@ -2,9 +2,10 @@
 title: NotificationDevice
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,6 +15,7 @@ productversion: '5.0'
 **public virtual void CancelNotification ();**
 
 
+        
 
 **Parameters:**
 
@@ -24,6 +26,7 @@ productversion: '5.0'
 **public virtual void Disable ();**
 
 
+        
 
 **Parameters:**
 
@@ -34,6 +37,7 @@ productversion: '5.0'
 **public virtual void Enable ();**
 
 
+        
 
 **Parameters:**
 
@@ -44,10 +48,12 @@ productversion: '5.0'
 **public virtual void Notify (Symbol.XamarinEMDK.Notification.NotificationConfig p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Notification.NotificationConfig **p0**  - 
+        
 
 **Returns** - System.Void
 
@@ -56,6 +62,7 @@ Symbol.XamarinEMDK.Notification.NotificationConfig **p0**  -
 **public virtual void Release ();**
 
 
+        
 
 **Parameters:**
 
@@ -65,13 +72,16 @@ Symbol.XamarinEMDK.Notification.NotificationConfig **p0**  -
 
 ###DeviceInfo
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceInfo
 ###IsConnected
 
+        
 
 **Type** - System.Boolean
 ###IsEnabled
 
+        
 
 **Type** - System.Boolean

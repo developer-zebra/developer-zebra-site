@@ -2,9 +2,10 @@
 title: ScannerConfig.DecoderParameters+HanXinDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+BaseDecoder
 
@@ -12,5 +13,6 @@ productversion: '5.0'
 
 ###HanXinInverse
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse

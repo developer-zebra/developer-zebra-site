@@ -2,7 +2,7 @@
 title: BarcodeManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 This is the base class that all EMDK manager classes are derived from.
 
@@ -18,6 +18,7 @@ This is the base class that all EMDK manager classes are derived from.
 **Parameters:**
 
 Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.Scanner
 
@@ -30,6 +31,7 @@ This is the base class that all EMDK manager classes are derived from.
 **Parameters:**
 
 Symbol.XamarinEMDK.Barcode.ScannerInfo **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.Scanner
 

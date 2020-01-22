@@ -2,9 +2,10 @@
 title: ProfileManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -14,14 +15,18 @@ productversion: '5.0'
 **public static string CreateNameValuePair (string p0, string p1, string p2);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 System.String **p1**  - 
+        
 
 System.String **p2**  - 
+        
 
 **Returns** - System.String
 
@@ -30,14 +35,18 @@ System.String **p2**  -
 **public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfile (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, Org.W3c.Dom.IDocument p2);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG **p1**  - 
+        
 
 Org.W3c.Dom.IDocument **p2**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
 
@@ -46,14 +55,18 @@ Org.W3c.Dom.IDocument **p2**  -
 **public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfile (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, string[] p2);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG **p1**  - 
+        
 
 System.String[] **p2**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
 
@@ -62,14 +75,18 @@ System.String[] **p2**  -
 **public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, Org.W3c.Dom.IDocument p2);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG **p1**  - 
+        
 
 Org.W3c.Dom.IDocument **p2**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
 
@@ -78,14 +95,18 @@ Org.W3c.Dom.IDocument **p2**  -
 **public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, string[] p2);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG **p1**  - 
+        
 
 System.String[] **p2**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
 
@@ -93,6 +114,7 @@ System.String[] **p2**  -
 
 ###IsPreviousRequestPending
 
+        
 
 **Type** - System.Boolean
 ##Events
@@ -100,4 +122,5 @@ System.String[] **p2**  -
 ###Data
 
 
+        
 

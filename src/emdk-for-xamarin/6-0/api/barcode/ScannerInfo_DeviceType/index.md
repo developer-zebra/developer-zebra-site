@@ -2,9 +2,10 @@
 title: ScannerInfo.DeviceType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **this_**  -
 
 ###Camera
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Imager
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Laser
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType
 ###Undefined
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType

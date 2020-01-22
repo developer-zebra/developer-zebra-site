@@ -2,9 +2,10 @@
 title: NotificationConfig.LEDParams
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -15,22 +16,27 @@ productversion: '5.0'
 **public LEDParams ();**
 
 
+        
 
 ##Properties
 
 ###Color
 
+        
 
 **Type** - System.Int32
 ###OffTime
 
+        
 
 **Type** - System.Int32
 ###OnTime
 
+        
 
 **Type** - System.Int32
 ###RepeatCount
 
+        
 
 **Type** - System.Int32

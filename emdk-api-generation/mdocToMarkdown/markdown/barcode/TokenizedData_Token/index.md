@@ -2,9 +2,10 @@
 title: TokenizedData.Token
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,6 +15,7 @@ productversion: '5.0'
 **public virtual byte[] GetRawData ();**
 
 
+        
 
 **Parameters:**
 
@@ -23,17 +25,21 @@ productversion: '5.0'
 
 ###Data
 
+        
 
 **Type** - System.String
 ###DataType
 
+        
 
 **Type** - System.String
 ###Format
 
+        
 
 **Type** - System.String
 ###Key
 
+        
 
 **Type** - System.String

@@ -2,9 +2,10 @@
 title: NotificationConfig.BeepParams
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -15,10 +16,12 @@ productversion: '5.0'
 **public BeepParams ();**
 
 
+        
 
 ##Properties
 
 ###Pattern
 
+        
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Notification.NotificationConfig+Beeping>

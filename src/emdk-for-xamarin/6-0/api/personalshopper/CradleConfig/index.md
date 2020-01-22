@@ -2,9 +2,10 @@
 title: CradleConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public virtual int SetFastChargingState (bool p0);**
 
 
+        
 
 **Parameters:**
 
 System.Boolean **p0**  - 
+        
 
 **Returns** - System.Int32
 
@@ -26,10 +29,12 @@ System.Boolean **p0**  -
 **public virtual int SetLocation (Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation p0);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation **p0**  - 
+        
 
 **Returns** - System.Int32
 
@@ -37,9 +42,11 @@ Symbol.XamarinEMDK.PersonalShopper.CradleConfig.CradleLocation **p0**  -
 
 ###FastChargingState
 
+        
 
 **Type** - System.Boolean
 ###Location
 
+        
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.CradleConfig+CradleLocation

@@ -2,7 +2,7 @@
 title: SimulScanReader.StatusEventArgs
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Represents and provides access to the physical reader device.
 

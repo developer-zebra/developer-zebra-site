@@ -2,7 +2,7 @@
 title: EMDKManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.
 
@@ -18,8 +18,10 @@ The key class in Android EMDK, provides access to different classes for the supp
 **Parameters:**
 
 Android.Content.Context **p0**  - 
+        
 
 Symbol.XamarinEMDK.EMDKManager.IEMDKListener **p1**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults
 
@@ -32,6 +34,7 @@ The key class in Android EMDK, provides access to different classes for the supp
 **Parameters:**
 
 Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKBase
 
@@ -44,8 +47,10 @@ The key class in Android EMDK, provides access to different classes for the supp
 **Parameters:**
 
 Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0**  - 
+        
 
 Symbol.XamarinEMDK.EMDKManager.IStatusListener **p1**  - 
+        
 
 **Returns** - System.Void
 
@@ -68,6 +73,7 @@ The key class in Android EMDK, provides access to different classes for the supp
 **Parameters:**
 
 Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE **p0**  - 
+        
 
 **Returns** - System.Void
 

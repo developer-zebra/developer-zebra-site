@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.BluetoothInformation
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.
 

@@ -2,9 +2,10 @@
 title: ScannerConfig.ReaderParameters+ReaderSpecifics
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -15,18 +16,22 @@ productversion: '5.0'
 **public ReaderSpecifics (Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters __self);**
 
 
+        
 
 ##Properties
 
 ###CameraSpecific
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics+CameraSpecifics
 ###ImagerSpecific
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics+ImagerSpecifics
 ###LaserSpecific
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics+LaserSpecifics

@@ -2,7 +2,7 @@
 title: BarcodeManager.ConnectionState
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Indicates the connection states (connected, disconnected) of the scanning device.
 
@@ -18,6 +18,7 @@ Indicates the connection states (connected, disconnected) of the scanning device
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 

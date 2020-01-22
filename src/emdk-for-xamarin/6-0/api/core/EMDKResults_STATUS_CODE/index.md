@@ -2,7 +2,7 @@
 title: EMDKResults.STATUS_CODE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Defines all extended status codes returned by the library.
 
@@ -18,6 +18,7 @@ Defines all extended status codes returned by the library.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKResults+STATUS_CODE
 

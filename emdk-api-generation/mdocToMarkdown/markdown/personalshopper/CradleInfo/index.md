@@ -2,9 +2,10 @@
 title: CradleInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,21 +13,26 @@ productversion: '5.0'
 
 ###DateOfManufacture
 
+        
 
 **Type** - System.String
 ###FirmwareVersion
 
+        
 
 **Type** - System.String
 ###HardwareID
 
+        
 
 **Type** - System.String
 ###PartNumber
 
+        
 
 **Type** - System.String
 ###SerialNumber
 
+        
 
 **Type** - System.String

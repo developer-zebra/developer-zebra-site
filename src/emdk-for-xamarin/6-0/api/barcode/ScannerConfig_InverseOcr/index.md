@@ -2,22 +2,24 @@
 title: ScannerConfig.InverseOcr
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
 ##Methods
 ###ValueOf
 
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.InverseOcr ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.InverseOcr ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
-System.String **p0**  - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 
@@ -26,6 +28,7 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.InverseOcr[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,13 +38,16 @@ System.String **p0**  -
 
 ###AutoDiscriminate
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 ###InverseOnly
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 ###RegularOnly
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr

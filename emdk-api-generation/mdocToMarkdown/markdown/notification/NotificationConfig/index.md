@@ -2,9 +2,10 @@
 title: NotificationConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -15,18 +16,22 @@ productversion: '5.0'
 **public NotificationConfig ();**
 
 
+        
 
 ##Properties
 
 ###Beep
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationConfig+BeepParams
 ###Led
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationConfig+LEDParams
 ###Vibrate
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.NotificationConfig+VibrateParams

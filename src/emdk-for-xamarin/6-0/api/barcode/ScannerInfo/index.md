@@ -2,9 +2,10 @@
 title: ScannerInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,6 +15,7 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType GetConnectionType ();**
 
 
+        
 
 **Parameters:**
 
@@ -24,6 +26,7 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType GetDecoderType ();**
 
 
+        
 
 **Parameters:**
 
@@ -34,6 +37,7 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType GetDeviceType ();**
 
 
+        
 
 **Parameters:**
 
@@ -43,21 +47,26 @@ productversion: '5.0'
 
 ###DeviceIdentifier
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###FriendlyName
 
+        
 
 **Type** - System.String
 ###IsConnected
 
+        
 
 **Type** - System.Boolean
 ###IsDefaultScanner
 
+        
 
 **Type** - System.Boolean
 ###ModelNumber
 
+        
 
 **Type** - System.String

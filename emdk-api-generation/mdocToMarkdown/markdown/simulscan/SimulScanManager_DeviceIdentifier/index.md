@@ -2,7 +2,7 @@
 title: SimulScanManager.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Defines a scanner device identifier.
 
@@ -18,6 +18,7 @@ Defines a scanner device identifier.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier
 

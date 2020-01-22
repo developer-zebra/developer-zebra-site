@@ -2,9 +2,10 @@
 title: Cradle
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -14,6 +15,7 @@ productversion: '5.0'
 **public virtual void Disable ();**
 
 
+        
 
 **Parameters:**
 
@@ -24,6 +26,7 @@ productversion: '5.0'
 **public virtual void Enable ();**
 
 
+        
 
 **Parameters:**
 
@@ -34,12 +37,15 @@ productversion: '5.0'
 **public virtual Symbol.XamarinEMDK.PersonalShopper.CradleResults FlashLed (int p0, Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo p1);**
 
 
+        
 
 **Parameters:**
 
 System.Int32 **p0**  - 
+        
 
 Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo **p1**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.CradleResults
 
@@ -48,12 +54,15 @@ Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo **p1**  -
 **public virtual Symbol.XamarinEMDK.PersonalShopper.CradleResults Unlock (int p0, Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo p1);**
 
 
+        
 
 **Parameters:**
 
 System.Int32 **p0**  - 
+        
 
 Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo **p1**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.PersonalShopper.CradleResults
 
@@ -61,13 +70,16 @@ Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo **p1**  -
 
 ###Config
 
+        
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.CradleConfig
 ###CradleInfo
 
+        
 
 **Type** - Symbol.XamarinEMDK.PersonalShopper.CradleInfo
 ###IsEnabled
 
+        
 
 **Type** - System.Boolean

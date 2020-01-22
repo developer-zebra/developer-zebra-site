@@ -2,9 +2,10 @@
 title: StatusData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,9 +13,11 @@ productversion: '5.0'
 
 ###FriendlyName
 
+        
 
 **Type** - System.String
 ###State
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.StatusData+ScannerStates

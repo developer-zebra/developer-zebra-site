@@ -2,9 +2,10 @@
 title: StatusData.ScanAndPairStates
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.ScanAndPair.StatusData.ScanAndPairStates[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,29 +39,36 @@ System.String **this_**  -
 
 ###Discovering
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Error
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Paired
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Scanning
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Undefined
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Unpaired
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates
 ###Waiting
 
+        
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates

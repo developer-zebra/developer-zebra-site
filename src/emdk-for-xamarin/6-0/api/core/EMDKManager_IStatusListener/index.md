@@ -2,9 +2,10 @@
 title: EMDKManager.IStatusListener
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 ##Methods
 ###OnStatus
@@ -12,12 +13,15 @@ productversion: '5.0'
 **public void OnStatus (Symbol.XamarinEMDK.EMDKManager.StatusData p0, Symbol.XamarinEMDK.EMDKBase p1);**
 
 
+        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.EMDKManager.StatusData **p0**  - 
+        
 
 Symbol.XamarinEMDK.EMDKBase **p1**  - 
+        
 
 **Returns** - System.Void
 

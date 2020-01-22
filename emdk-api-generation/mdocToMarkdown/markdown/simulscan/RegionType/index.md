@@ -2,9 +2,10 @@
 title: RegionType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.SimulScan.RegionType ValueOf (string p0);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.RegionType
 
@@ -26,6 +29,7 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.SimulScan.RegionType[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,21 +39,26 @@ System.String **p0**  -
 
 ###Barcode
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType
 ###Ocr
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType
 ###Omr
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType
 ###Picture
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType
 ###Unknown
 
+        
 
 **Type** - Symbol.XamarinEMDK.SimulScan.RegionType

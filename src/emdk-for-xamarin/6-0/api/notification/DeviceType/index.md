@@ -2,9 +2,10 @@
 title: DeviceType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Notification.DeviceType ValueOf (string p0);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Notification.DeviceType
 
@@ -26,6 +29,7 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.Notification.DeviceType[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,13 +39,16 @@ System.String **p0**  -
 
 ###Imager
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 ###Undefined
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType
 ###Vibrator
 
+        
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceType

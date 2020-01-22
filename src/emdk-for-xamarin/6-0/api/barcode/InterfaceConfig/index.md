@@ -2,9 +2,10 @@
 title: InterfaceConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,9 +13,11 @@ productversion: '5.0'
 
 ###ConnectionEstablishTime
 
+        
 
 **Type** - System.Int32
 ###DisplayBluetoothAddressBarcode
 
+        
 
 **Type** - System.Boolean

@@ -2,7 +2,7 @@
 title: ScannerConfig.AutoCharacterSetFailureOption
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Failure option for auto character set selection.
 
@@ -18,6 +18,7 @@ Failure option for auto character set selection.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 

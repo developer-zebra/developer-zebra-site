@@ -2,7 +2,7 @@
 title: SAMType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Describes all possible SAM types.
 
@@ -18,6 +18,7 @@ Describes all possible SAM types.
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Sam.SAMType
 

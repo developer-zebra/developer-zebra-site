@@ -2,9 +2,10 @@
 title: ScannerConfig.ReaderParameters
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,5 +13,6 @@ productversion: '5.0'
 
 ###ReaderSpecific
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics

@@ -2,9 +2,10 @@
 title: ScannerConfig.UdiParameters
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,13 +13,16 @@ productversion: '5.0'
 
 ###EnableGS1
 
+        
 
 **Type** - System.Boolean
 ###EnableHIBCC
 
+        
 
 **Type** - System.Boolean
 ###EnableICCBBA
 
+        
 
 **Type** - System.Boolean

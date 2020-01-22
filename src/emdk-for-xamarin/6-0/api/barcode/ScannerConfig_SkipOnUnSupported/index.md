@@ -2,9 +2,10 @@
 title: ScannerConfig.SkipOnUnSupported
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **this_**  -
 
 ###All
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported
 ###None
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported
 ###UnsupportedParam
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported
 ###UnsupportedValue
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported

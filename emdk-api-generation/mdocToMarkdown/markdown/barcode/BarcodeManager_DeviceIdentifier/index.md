@@ -2,7 +2,7 @@
 title: BarcodeManager.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Defines specific scanner devices of each type.
 
@@ -18,6 +18,7 @@ Defines specific scanner devices of each type.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 
@@ -46,6 +47,10 @@ Defines specific scanner devices of each type.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###BluetoothImagerDs8178
+Defines specific scanner devices of each type.
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
+###BluetoothImagerRs5100
 Defines specific scanner devices of each type.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier

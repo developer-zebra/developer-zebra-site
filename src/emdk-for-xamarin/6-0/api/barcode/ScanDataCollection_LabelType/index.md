@@ -2,7 +2,7 @@
 title: ScanDataCollection.LabelType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 List of label types of the scanner data.
 
@@ -18,6 +18,7 @@ List of label types of the scanner data.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 
@@ -118,6 +119,10 @@ List of label types of the scanner data.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 ###Ean8
+List of label types of the scanner data.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
+###Finnishpostal4s
 List of label types of the scanner data.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType

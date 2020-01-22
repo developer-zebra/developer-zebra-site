@@ -2,22 +2,24 @@
 title: ScannerConfig.OcrLines
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
 ##Methods
 ###ValueOf
 
-**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrLines ValueOf (string p0);**
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrLines ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
-System.String **p0**  - 
+System.String **p0** 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrLines
 
@@ -26,6 +28,7 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrLines[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,13 +38,16 @@ System.String **p0**  -
 
 ###OneLine
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrLines
 ###ThreeLines
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrLines
 ###TwoLines
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrLines

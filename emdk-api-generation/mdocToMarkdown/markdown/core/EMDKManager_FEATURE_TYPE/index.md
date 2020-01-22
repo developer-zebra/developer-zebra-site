@@ -2,7 +2,7 @@
 title: EMDKManager.FEATURE_TYPE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 This lists all features exposed by EMDK.
 
@@ -18,6 +18,7 @@ This lists all features exposed by EMDK.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 

@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.ScanDataType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Provides the different types of barcode data to be scanned.
 
@@ -18,6 +18,7 @@ Provides the different types of barcode data to be scanned.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 

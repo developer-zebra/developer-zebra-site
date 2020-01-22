@@ -2,7 +2,7 @@
 title: SimulScanReader
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Represents and provides access to the physical reader device.
 
@@ -48,8 +48,10 @@ Represents and provides access to the physical reader device.
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 System.String **p1**  - 
+        
 
 **Returns** - System.Void
 

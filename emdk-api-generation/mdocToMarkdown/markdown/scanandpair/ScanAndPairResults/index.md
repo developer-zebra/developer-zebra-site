@@ -2,7 +2,7 @@
 title: ScanAndPairResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Provides list of result codes for ScanAndPair class.
 
@@ -18,6 +18,7 @@ Provides list of result codes for ScanAndPair class.
 **Parameters:**
 
 Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults **p0**  - 
+        
 
 **Returns** - System.String
 
@@ -30,6 +31,7 @@ Provides list of result codes for ScanAndPair class.
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults
 

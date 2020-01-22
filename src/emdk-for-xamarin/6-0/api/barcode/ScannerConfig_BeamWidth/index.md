@@ -2,7 +2,7 @@
 title: ScannerConfig.BeamWidth
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Controls the beam width of a laser scanner.
 
@@ -18,6 +18,7 @@ Controls the beam width of a laser scanner.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BeamWidth
 

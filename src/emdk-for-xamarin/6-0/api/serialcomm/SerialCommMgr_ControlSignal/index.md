@@ -2,7 +2,7 @@
 title: SerialCommMgr.ControlSignal
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Provides a list of control signals.
 
@@ -18,6 +18,7 @@ Provides a list of control signals.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 

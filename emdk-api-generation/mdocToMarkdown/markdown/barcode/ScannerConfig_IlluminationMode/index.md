@@ -2,7 +2,7 @@
 title: ScannerConfig.IlluminationMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Enable/disable illumination depending on ambient light conditions. Option available only when camera is selected for Barcode input.
 
@@ -18,6 +18,7 @@ Enable/disable illumination depending on ambient light conditions. Option availa
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+IlluminationMode
 

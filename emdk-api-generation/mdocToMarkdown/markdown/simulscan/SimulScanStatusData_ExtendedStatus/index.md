@@ -2,7 +2,7 @@
 title: SimulScanStatusData.ExtendedStatus
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Provides access to reader status.
 
@@ -18,6 +18,7 @@ Provides access to reader status.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 

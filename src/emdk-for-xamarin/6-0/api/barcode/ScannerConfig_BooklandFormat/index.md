@@ -2,7 +2,7 @@
 title: ScannerConfig.BooklandFormat
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 Lists the Bookland formats.
 
@@ -18,6 +18,7 @@ Lists the Bookland formats.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BooklandFormat
 

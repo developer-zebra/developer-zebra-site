@@ -2,9 +2,10 @@
 title: ScannerConfig.PowerMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 
@@ -26,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **this_**  -
 
 ###AlwaysOn
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###High
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Low
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Optimized
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode

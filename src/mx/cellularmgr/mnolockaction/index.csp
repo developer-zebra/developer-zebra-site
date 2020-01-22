@@ -24,4 +24,4 @@ parm:
       description: Unlocks the MNO. 
 ---
 
-Used to Lock and Unlock the Mobile Network Operator (MNO) on the device using a key code provided by the MNO.
+Used to Lock and Unlock the Mobile Network Operator (MNO) on the device using a key code provided by the MNO. This feature is sometimnes referred to as a "subsidy lock" because it's often associated with the provision of carrier-subsidized devices.

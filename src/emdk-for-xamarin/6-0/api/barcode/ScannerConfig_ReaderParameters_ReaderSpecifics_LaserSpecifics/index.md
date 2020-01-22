@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.LaserSpecifics
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 LaserSpecific class provides access to the laser scanner specific parameters.
 

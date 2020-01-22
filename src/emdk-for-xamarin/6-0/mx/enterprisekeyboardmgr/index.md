@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: enterprisekeyboardmgr
 product: EMDK for Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 

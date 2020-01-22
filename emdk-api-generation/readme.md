@@ -37,7 +37,7 @@
 <br>
 
    	:::term
-   	node generate_markdown.js -a 2.6.0.69 -p 2.6
+   	node generate_markdown.js -a 6.0.0.51 -p 6.0
    	// replace "2.6.0.69" with current assemblyversion and "2.6" with the major.minor version
 
 14. Markdown is output to `/mDocToMarkdown/markdown` folder

@@ -2,7 +2,7 @@
 title: "Notification API Programmer's Guide"
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ##Overview

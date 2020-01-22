@@ -15,7 +15,7 @@ content-items:
     url: /emdk-for-xamarin/5-0/guide/barcode_scanning_guide
 
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
            
 

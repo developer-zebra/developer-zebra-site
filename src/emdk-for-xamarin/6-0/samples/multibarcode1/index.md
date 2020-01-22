@@ -26,7 +26,7 @@ screenshots:
   - MultiBarcode_scan.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 ##Overview
 This sample demonstrates simultaneous scanning of multiple barcodes using capabilities in the Barcode/Scanning APIs. These APIs work independently of any [Data Capture profiles](../../mx/data-capture/barcode).  

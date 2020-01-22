@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.CompositeCDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The CompositeC class provides access to parameters that are available for the CompositeC decoder.
 

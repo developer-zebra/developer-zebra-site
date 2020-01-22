@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.I2of5Decoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The I2of5 class provides access to parameters that are available for the I2of5 decoder.
 

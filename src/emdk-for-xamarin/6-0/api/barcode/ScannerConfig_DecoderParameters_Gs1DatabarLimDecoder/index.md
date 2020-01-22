@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.Gs1DatabarLimDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The Gs1DatabarLim class provides access to parameters that are available for the GS1 Databar Lim decoder.
 

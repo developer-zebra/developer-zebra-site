@@ -19,7 +19,7 @@ content-items:
     text: Learn how to automatically generate the XML needed for configuring Zebra devices.
     url: /emdk-for-xamarin/5-0/guide/profile-manager
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
            
 <!-- 10/1/18- removed; obsolete

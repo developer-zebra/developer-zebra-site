@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.UsPostNetDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The UsPostNet class provides access to parameters that are available for the UsPostNet decoder.
 

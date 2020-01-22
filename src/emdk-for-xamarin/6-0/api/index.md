@@ -3,7 +3,7 @@ title: APIs
 description: null
 layout: list-apis.html
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 

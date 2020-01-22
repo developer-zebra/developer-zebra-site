@@ -2,7 +2,7 @@
 title: Configuring A Device
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 >`NOTICE:`  

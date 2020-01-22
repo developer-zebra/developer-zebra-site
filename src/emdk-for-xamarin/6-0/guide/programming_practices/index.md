@@ -2,7 +2,7 @@
 title: EMDK for Xamarin Programming Practices
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '5.0'
+productversion: '6.0'
 ---
 
 ##EMDK concurrency guidelines

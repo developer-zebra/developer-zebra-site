@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.D2of5Decoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '5.0' 
+productversion: '6.0' 
 ---
 The D2OF5 class provides access to parameters that are available for the D2OF5 decoder.
 

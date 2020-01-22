@@ -28,7 +28,7 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
 * Select SIM Slot 
 * Lock the device to:
  * A specific public land mobile network (PLMN)
- * A specific Mobile Network Operator
+ * A specific Mobile Network Operator (MNO; aka "subsidy lock")
  * An individual ICCID (SIM card)
  * Access only by a service technician
 * Set the number of unlock retries before service is required to unlock

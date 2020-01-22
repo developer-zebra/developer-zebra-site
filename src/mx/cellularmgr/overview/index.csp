@@ -12,28 +12,28 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
 
 ### Main Functionality
 
-* Enable/Disable (control Usage of):
+* **Enable/Disable** (control Usage of):
  * Data Roaming
  * Background Data
  * SIM Slot(s)
  * Change the public land mobile network (PLMN) 
  * Cellular Data
  * Cellular Data Limit
-* Turn On/Off (control State of): 
+* **Turn On/Off** (control State of): 
  * Data Roaming 
  * Background Data
  * Cellular Data
  * Cellular Data Limit
 * Enter a custom cellular data limit and warning threshold
 * Select SIM Slot 
-* Lock the device to:
- * A specific public land mobile network (PLMN)
- * A specific Mobile Network Operator (MNO; aka "subsidy lock")
- * An individual ICCID (SIM card)
- * Access only by a service technician
 * Set the number of unlock retries before service is required to unlock
 * Enter a list of acceptable Mobile Country Codes/Mobile Network Operator (MCC/MNO) 
 * Store and erase Lock and Unlock codes
 * Show/hide PLMN user interface controls
+* **Lock the device to**:
+ * A specific public land mobile network (PLMN)
+ * A specific Mobile Network Operator, sometimes referred to as a "subsidy lock"
+ * An individual ICCID (SIM card)
+ * Access only by a service technician
 
 -----

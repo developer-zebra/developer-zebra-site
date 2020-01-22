@@ -27,7 +27,7 @@
 5. Using the latest release notes as a reference, identify each **NEW API feature** and use the "Find in Folder" function (use your text editor to search the /mdoc folder) to confirm that each new API feature is there. 
 6. Check AssemblyFileVersion inside any mdoc API to confirm that it matches the EMDK-X major and minor version numbers. 
 7. Using the "Find in Folder" function, search /mdoc folder for "To be added" - this finds everything new/changed. 
-8. In each corresponding function in the EMDK-A JavaDocs, copy its description (from EMDK-A API) to the Summary field (replacing "To be added.") and remove other instances of "to be added" from nearby "value" and "remarks" fields. **NOTE**: When looking at JavaDocs - always click down into the details (do not take "first sentence" from top-level summary; it's not always the same). 
+8. `In each corresponding function in the EMDK-A JavaDocs, copy its description (from EMDK-A API) to the Summary field (replacing "To be added.") and remove other instances of "to be added" from nearby "value" and "remarks" fields.` **NOTE**: When looking at JavaDocs - always click down into the details and do ***NOT*** take "first sentence" from top-level summary; it's not always the same. 
 9. For members called "values" or "valuesof," just remove "to be added" from all places. 
 10. For hidden or protected members (with "protected" in <MemberSignature Language="C#" Value="protected...> just remove "to be added" from all its fields. 
 11. Double-check for missed instances of "to be added" in `/mdoc` folder; correct as needed. 

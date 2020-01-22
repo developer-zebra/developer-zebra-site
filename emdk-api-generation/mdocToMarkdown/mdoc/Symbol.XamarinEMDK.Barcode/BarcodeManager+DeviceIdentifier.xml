@@ -133,9 +133,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Defines specific scanner devices of each type.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothImagerRs6000">

@@ -70,9 +70,6 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## News in v6.0
 
-FIXXXXXXXXXX and COMBINNNNNNEEE
-
-FROM EMDK-A 7.6
 ### New Features
 
 **<u>Support for MX 9.3</u>** adds the following features and enhancements:
@@ -95,7 +92,7 @@ FROM EMDK-A 7.6
 
 ### API Enhancements
 
-**Enhanced Barcode Manager API** now includes support for: 
+**<u>Enhanced Barcode Manager API</u>** now includes support for: 
 * OcrA, OcrB, MICRE13B, USCurrency Symbologies and the OCR label type: 
  * enum `OcrAVariant` in `ScannerConfig` - Allows selection of OcrA font variants 
  * enum `OcrBVariant` in `ScannerConfig` - Allows selection of OcrB font variants 
@@ -118,7 +115,7 @@ FROM EMDK-A 7.6
  * enum `PresentationModeSensitivity` in ScannerConfig - Allows selection of values for sensitivity between LOW, MEDIUM and HIGH. 
 * New `BarcodeManager.DeviceIdentifier` enum for selection of newly supported RS5100 Bluetooth scanner 
 
-**Enhanced Notification Manager API now includes**: 
+**<u>Enhanced Notification Manager API</u> now includes**: 
 * New `NotificationManager.DeviceIdentifier` enum allows selection of the RS5100 Bluetooth scanner 
 * `FinnishPostal4S` Symbology and label type  
 * New `ScannerConfig.DecoderParams.DutchPostal` parameter supports: 
@@ -129,7 +126,7 @@ FROM EMDK-A 7.6
 **<u>Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)</u>** 
 
 ### Deprecations
-**<u>Support for Unique Device Identification (UDI) barcodes is deprecated</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
+**<u>Support is deprecated for Unique Device Identification (UDI) barcodes</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. **UDI decoding will be removed from the Barcode API** when EMDK begins targeting Android 10 Q devices.
 
 -----
 

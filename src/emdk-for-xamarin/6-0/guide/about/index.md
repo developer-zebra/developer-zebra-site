@@ -64,6 +64,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * RS507
 * RS4000
 * RS5000
+* **RS5100**
 * RS6000
 
 -----

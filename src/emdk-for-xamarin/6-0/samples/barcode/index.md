@@ -35,18 +35,18 @@ productversion: '6.0'
 https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/master/BarcodeSample1
 
 ##Overview
-The Barcode API's are used when you wish to handle all barcode scanning entirely in C# using [Barcode/Scanning APIs](/emdk-for-xamarin/5-0/api/). These API's work independently of any Data Capture profiles.  
+The Barcode API's are used when you wish to handle all barcode scanning entirely in C# using [Barcode/Scanning APIs](/emdk-for-xamarin/6-0/api/). These API's work independently of any Data Capture profiles.  
 
-The available actions in the [Barcode/Scanning API](/emdk-for-xamarin/5-0/api/barcode/) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-xamarin/6-0/api/barcode/) are:
   
 * Set Scanner Device  
-* Set [TriggerType](/emdk-for-xamarin/5-0/api/barcode/Scanner_TriggerTypes)
-* Set [Decoder Params](/emdk-for-xamarin/5-0/api/barcode/ScannerConfig_DecoderParameters)
-* Set [Reader Params](/emdk-for-xamarin/5-0/api/barcode/ScannerConfig_ReaderParameters)
-* Set [Scan Params](/emdk-for-xamarin/5-0/api/barcode/ScannerConfig_ScanParameters)
+* Set [TriggerType](/emdk-for-xamarin/6-0/api/barcode/Scanner_TriggerTypes)
+* Set [Decoder Params](/emdk-for-xamarin/6-0/api/barcode/ScannerConfig_DecoderParameters)
+* Set [Reader Params](/emdk-for-xamarin/6-0/api/barcode/ScannerConfig_ReaderParameters)
+* Set [Scan Params](/emdk-for-xamarin/6-0/api/barcode/ScannerConfig_ScanParameters)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-xamarin/5-0/api/barcode/ScannerConfig_DecoderParameters).
+This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-xamarin/6-0/api/barcode/ScannerConfig_DecoderParameters).
 
 
 ## Opening The Component Sample

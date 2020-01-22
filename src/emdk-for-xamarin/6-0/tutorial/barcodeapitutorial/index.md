@@ -20,12 +20,12 @@ This guide will walk you through creating an EMDK For Xamarin application that w
 ##Create a new project
 When creating a project for this tutorial use the project name **BasicScanningTutorial**
 
-Follow this [guide](/emdk-for-xamarin/5-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
+Follow this [guide](/emdk-for-xamarin/6-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
 
-Follow this [guide](/emdk-for-xamarin/5-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
+Follow this [guide](/emdk-for-xamarin/6-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
 
 ##Add Symbol EMDK Component
-Follow this [guide](/emdk-for-xamarin/5-0/guide/component/install) to add the needed component you your project.
+Follow this [guide](/emdk-for-xamarin/6-0/guide/component/install) to add the needed component you your project.
 
 
 

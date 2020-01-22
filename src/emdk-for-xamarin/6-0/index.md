@@ -7,7 +7,7 @@ insert:
   file: emdk-for-xamarin/6-0/guide/about/index.md
 layout: guide.html
 menu:
-  title: EMDK For Xamarin 5.0
+  title: EMDK For Xamarin 6.0
   img: /emdk-for-xamarin/images/logo.png
   items:
     - title: About

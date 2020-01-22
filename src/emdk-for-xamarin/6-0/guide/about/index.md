@@ -68,9 +68,76 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 -----
 
-## New in v5.0
+## News in v6.0
 
-### Device Support
+FIXXXXXXXXXX and COMBINNNNNNEEE
+
+FROM EMDK-A 7.6
+### New Features
+
+**<u>Support for MX 9.3</u>** adds the following features and enhancements:
+* **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
+* **Enhanced [Bluetooth Manager](../../mx/bluetoothmgr)** now allows silent pairing using a Bluetooth MAC address or PIN. 
+* **Enhanced [GPRS Manager](../../mx/gprsmgr)** APN parameters now support IPv4, IPv6 and the IPv4/IPv6 "dual-stack" protocol.  
+* **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports the "grey" key and W1 and W2 buttons.  
+
+**<u>Support for MX 9.2</u>** adds the following features and enhancements:
+* **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
+* **Enhanced [Display Manager](../../mx/displaymgr)** now allows an admin to control device font and display size. 
+* **Enhanced [Access Manager](../../mx/accessmgr)** can now: 
+ * Prevent one application from stopping another without explicit permission 
+ * Perform remote device troubleshooting with enhanced visibility and control
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** implements several new device locking mechanisms. 
+* **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports: 
+  * Intent extras 
+  * "Rotate" and "minus" keys 
+
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** now includes support for: 
+* OcrA, OcrB, MICRE13B, USCurrency Symbologies and the OCR label type: 
+ * enum `OcrAVariant` in `ScannerConfig` - Allows selection of OcrA font variants 
+ * enum `OcrBVariant` in `ScannerConfig` - Allows selection of OcrB font variants 
+ * `ocrAVariant` parameter in `ScannerConfig.DecoderParams.OcrA` to set OcrA font variant. Font variant sets a processing algorithm and default character subset for the given font. Selecting the most appropriate font variant optimizes performance and accuracy. 
+ * `ocrBVariant` parameter in `ScannerConfig.DecoderParams.OcrB` to set OcrB font variant. Selecting the most appropriate font variant optimizes performance and accuracy. 
+  * `OcrParams` class in ScannerConfig adds the following parameters to configure decoding OCR barcodes: 
+    * `inverseOcr` - Changes the OCR behavior for white or light words on a black or dark background. 
+    * `ocrLines` – Allows selection of the number of OCR lines to decode. Supports OCR variants such as those for visas, TD1, and TD2 ID cards that automatically set the appropriate number of OCR lines. 
+    * `maxCharacters` – Allows selection of the maximum number of OCR characters (including spaces) per line to decode. Strings of OCR characters greater than the maximum are ignored. 
+    * `minCharacters` – Allows selection of the minimum number of OCR characters (not including spaces) per line to decode. Strings of OCR characters less than the minimum are ignored. 
+    * `quietZone` - Changes the quiet zone to be considered with OCR capture. 
+    * `template` - Changes the template to be used with OCR capture. Templates are used to precisely match scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates mis-decodes. 
+    * `orientation` - Specifies the orientation of an OCR string to be read 
+    * `subset` – Allows selection of a custom group of characters in place of a preset font variant 
+    * `checkDigitModulus` - Sets the check digit modulus value for OCR Check Digit Calculation 
+    * `checkDigitMultiplier` - Sets OCR check digit multipliers for the character positions. 
+    * `checkDigitValidation` - Allows selection of check digit validation scheme 
+* New `PresentationModeParams` class in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` to set presentation mode behavior: 
+ * `sensitivity` - Allows the user to set the value for sensitivity during the scanning session 
+ * enum `PresentationModeSensitivity` in ScannerConfig - Allows selection of values for sensitivity between LOW, MEDIUM and HIGH. 
+* New `BarcodeManager.DeviceIdentifier` enum for selection of newly supported RS5100 Bluetooth scanner 
+
+**Enhanced Notification Manager API now includes**: 
+* New `NotificationManager.DeviceIdentifier` enum allows selection of the RS5100 Bluetooth scanner 
+* `FinnishPostal4S` Symbology and label type  
+* New `ScannerConfig.DecoderParams.DutchPostal` parameter supports: 
+ * `dutchPostal3S` with the ability to enable or disable decoding of Dutch Postal's "KIX 3S" barcodes
+* New `ScannerConfig.MultiBarcodeParams` parameter supports:  
+ * `reportDecodedBarcodes` with the ability to enable or disable reporting decoded barcode data in a single scan session regardless of the configured barcode count.
+
+**<u>Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)</u>** 
+
+### Deprecations
+**<u>Support for Unique Device Identification (UDI) barcodes is deprecated</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
+
+-----
+
+## Version History
+
+### Added in v5.0
+
+#### Device Support
 **Support <u>added</u> for Zebra devices running Android 8.x Oreo**:<br>
 * EC30 
 * ET51 
@@ -94,7 +161,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * VC80x
 * WT6000 
 
-### Software Support
+#### Software Support
 #### Support added: 
 * Microsoft Visual Studio 2019
 * Android 9.x Pie 
@@ -110,7 +177,7 @@ Support for Unique Device Identification (UDI) standard barcodes such as GS1, HI
 #### NFC Sample App
 **An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo and higher:
 * Added `enum` and reader parameters to support DPM mode, which allows selection of the DPM mode based on the type of barcode being scanned: 
@@ -120,7 +187,7 @@ Support for Unique Device Identification (UDI) standard barcodes such as GS1, HI
  * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
  * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
 
-### New Features
+#### New Features
 **Now supports MX 9.1**, which adds the following features and enhancements:
 * **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
  * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
@@ -135,8 +202,6 @@ Support for Unique Device Identification (UDI) standard barcodes such as GS1, HI
  * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
  -->
 -----
-
-## Version History
 
 ### Added in v4.0
  

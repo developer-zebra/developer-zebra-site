@@ -79,7 +79,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 #### New Features
 
-**Barcode API now support OcrA, OcrB, MICRE13B and USCurrency Symbologies and the OCR label type (see below)**.
+**Barcode API now supports OcrA, OcrB, MICRE13B and USCurrency Symbologies and the OCR label type (see below)**.
 
 **Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)** 
 

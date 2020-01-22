@@ -15,7 +15,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<bundle>");
 
 ## Parameters
 
@@ -23,7 +23,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
+**EXTRA VALUE** [Bundle]: "&lt;Plug-in&gt;"
 
 ## Return Values
 Returns a nested bundle with the Profile name, status and a Profile config bundle containing the param list as a bundle.  
@@ -59,7 +59,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 Error messages are logged for invalid actions and parameters.
 
 ## Example Code
-
+<!--
 	// SENDING THE INTENT
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
@@ -75,7 +75,7 @@ Error messages are logged for invalid actions and parameters.
 				Bundle extras = getIntent().getExtras();
 				if (intent.hasExtra("com.symbol.datawedge.api.GET_CONFIG")){
 					String[] profilesList = intent.getStringArrayExtra("com.symbol.datawedge.api.GET_CONFIG_RESULT")
-
+-->
 
 #### Code to query the config of plug-ins
 

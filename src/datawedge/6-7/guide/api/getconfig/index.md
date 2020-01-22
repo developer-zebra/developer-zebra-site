@@ -15,7 +15,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<bundle>");
 
 ## Parameters
 
@@ -23,7 +23,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
+**EXTRA VALUE** [Bundle]: "&lt;Plug-in&gt;"
 
 **SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6 and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
@@ -77,6 +77,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
+<!--
 ## Example Code
 
 	// SENDING THE INTENT
@@ -95,7 +96,7 @@ Error messages are logged for invalid actions and parameters.
 				if (intent.hasExtra("com.symbol.datawedge.api.GET_CONFIG")){
 					String[] profilesList = intent.getStringArrayExtra("com.symbol.datawedge.api.GET_CONFIG_RESULT")
 
-
+-->
 ### Get Plug-ins
 
 	// SENDING THE INTENT

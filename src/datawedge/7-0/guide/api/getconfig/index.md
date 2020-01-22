@@ -18,7 +18,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<bundle>");
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA_DATA** [string]: "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE** [bundle]: "&lt;PROFILE_NAME&gt;", "&lt;PLUGIN_CONFIG&gt;"
+**EXTRA VALUE** [bundle]: "&lt;PLUGIN_CONFIG&gt;"
 
 * `PLUGIN_CONFIG` [bundle] - 
  * `PLUGIN_NAME` [string] - single plug-in name (i.e. "barcode") or ArrayList of plugin names:

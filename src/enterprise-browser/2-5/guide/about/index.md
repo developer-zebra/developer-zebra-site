@@ -19,21 +19,21 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.5
 
-**The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
+**<u>The Database API is no longer supported</u> in EB 2.5**. Calls to this API will result in error. 
 
-**EB apps are no longer supported on devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
+**<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
 ### Device Support
 
 #### Mobile Devices
 
-**Android 9.x Pie** newly supported devices: 
+**<u>Android 9.x Pie</u>** newly supported devices: 
 
 * **PS20**
 * **TC52**
 * **TC72**
 
-**Android 8.x Oreo** newly supported devices: 
+**<u>Android 8.x Oreo</u>** newly supported devices: 
 
 * **EC30**
 * **ET51**
@@ -52,7 +52,7 @@ External Vibrator Cable (CBL-NGWT- HDVBAP-01)
 #### No longer supported 
 Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat  
 
-Visit the [Zebra Support Portal's EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) for the full list of supported devices.
+**<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
 
 ### New Features
 

@@ -99,19 +99,19 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
  * enum `OcrBVariant` in `ScannerConfig` - Allows selection of OcrB font variants 
  * `ocrAVariant` parameter in `ScannerConfig.DecoderParams.OcrA` to set OcrA font variant. Font variant sets a processing algorithm and default character subset for the given font. Selecting the most appropriate font variant optimizes performance and accuracy. 
  * `ocrBVariant` parameter in `ScannerConfig.DecoderParams.OcrB` to set OcrB font variant. Selecting the most appropriate font variant optimizes performance and accuracy. 
-  * `OcrParams` class in ScannerConfig adds the following parameters to configure decoding OCR barcodes: 
-    * `inverseOcr` - Changes the OCR behavior for white or light words on a black or dark background. 
-    * `ocrLines` – Allows selection of the number of OCR lines to decode. Supports OCR variants such as those for visas, TD1, and TD2 ID cards that automatically set the appropriate number of OCR lines. 
-    * `maxCharacters` – Allows selection of the maximum number of OCR characters (including spaces) per line to decode. Strings of OCR characters greater than the maximum are ignored. 
-    * `minCharacters` – Allows selection of the minimum number of OCR characters (not including spaces) per line to decode. Strings of OCR characters less than the minimum are ignored. 
-    * `quietZone` - Changes the quiet zone to be considered with OCR capture. 
-    * `template` - Changes the template to be used with OCR capture. Templates are used to precisely match scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates mis-decodes. 
-    * `orientation` - Specifies the orientation of an OCR string to be read 
-    * `subset` – Allows selection of a custom group of characters in place of a preset font variant 
-    * `checkDigitModulus` - Sets the check digit modulus value for OCR Check Digit Calculation 
-    * `checkDigitMultiplier` - Sets OCR check digit multipliers for the character positions. 
-    * `checkDigitValidation` - Allows selection of check digit validation scheme 
-* New `PresentationModeParams` class in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` to set presentation mode behavior: 
+  * `OcrParams` class in ScannerConfig adds the following parameters to configure decoding OCR barcodes: <br>
+    &nbsp;&nbsp;&nbsp; • `inverseOcr` - Changes the OCR behavior for white or light words on a black or dark background. <br>
+    &nbsp;&nbsp;&nbsp; • `ocrLines` – Allows selection of the number of OCR lines to decode. Supports OCR variants such as those for visas, TD1, and TD2 ID cards that automatically set the appropriate number of OCR lines.<br> 
+    &nbsp;&nbsp;&nbsp; • `maxCharacters` – Allows selection of the maximum number of OCR characters (including spaces) per line to decode. Strings of OCR characters greater than the maximum are ignored. <br>
+    &nbsp;&nbsp;&nbsp; • `minCharacters` – Allows selection of the minimum number of OCR characters (not including spaces) per line to decode. Strings of OCR characters less than the minimum are ignored. <br>
+    &nbsp;&nbsp;&nbsp; • `quietZone` - Changes the quiet zone to be considered with OCR capture. <br>
+    &nbsp;&nbsp;&nbsp; • `template` - Changes the template to be used with OCR capture. Templates are used to precisely match scanned OCR characters to a desired input format. Carefully constructing an OCR template eliminates mis-decodes.<br> 
+    &nbsp;&nbsp;&nbsp; • `orientation` - Specifies the orientation of an OCR string to be read.<br>
+    &nbsp;&nbsp;&nbsp; • `subset` – Allows selection of a custom group of characters in place of a preset font variant. <br> 
+    &nbsp;&nbsp;&nbsp; • `checkDigitModulus` - Sets the check digit modulus value for OCR Check Digit Calculation. <br>
+    &nbsp;&nbsp;&nbsp; • `checkDigitMultiplier` - Sets OCR check digit multipliers for the character positions. <br>
+    &nbsp;&nbsp;&nbsp; • `checkDigitValidation` - Allows selection of check digit validation scheme.<br> 
+* New `PresentationModeParameters` class in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` to set presentation mode behavior: 
  * `sensitivity` - Allows the user to set the value for sensitivity during the scanning session 
  * enum `PresentationModeSensitivity` in ScannerConfig - Allows selection of values for sensitivity between LOW, MEDIUM and HIGH. 
 * New `BarcodeManager.DeviceIdentifier` enum for selection of newly supported RS5100 Bluetooth scanner 

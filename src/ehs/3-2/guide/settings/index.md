@@ -951,7 +951,9 @@ Controls whether communication via USB is permitted between the device and a com
 ------
 
 ### System Settings Restricted
-Controls whether full or limited settings are available when the device is in Admin or User Mode. A setting of 1 (default) or if left unspecified limits user access to Display and Sound settings and the "About phone" panel. <b>A setting of 0 permits user access to all device settings</b>.
+Controls whether full or limited settings are available when the device is in Admin or User Mode. A setting of 1 (default) or if left unspecified limits user access to Display and Sound settings and the "About phone" panel. <b>A setting of 0 permits user access to all device settings</b>. 
+
+> **IMPORTANT**: See NOTES section below.  
 
 <img alt="" style="height:350px" src="settings_restricted_panels.png"/>
 
@@ -969,6 +971,9 @@ Controls whether full or limited settings are available when the device is in Ad
 * **This does not block Settings features**, but only prevents their **_display_** in the Settings panel. **Android makes restricted settings available to the user in some situations**. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they can be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
 * **It is still possible to add shortcuts to restricted System-settings components** (i.e. apps) using a third-party shortcut creator. However, such shortcuts also are available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
 * **Uninstalling EHS does not revert Restricted System Settings to its original state**. If required, this must be done manually before uninstalling EHS.
+* **Reduced system settings in the default EHS configuration might prevent some MX features from working as expected**. See the [Access Manager guide](/mx/accessmgr/#system-settings-access) System Settings Access section and the guides below for more information.
+ * [DevAdmin guide](/mx/devadmin/#screen-lock-type) - Set Screen Lock Type
+ * [UI Manager guide](/mx/uimgr/#two-finger-quick-settings-enabledisable) - Two-finger Quick Settings Enable/Disable
 
 ------
 

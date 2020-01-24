@@ -9,6 +9,10 @@ The NativeTabbar methods allow multiple instances of the webview to appear in se
 
 An application can employ either a Tabbar or a Toolbar, but should not attempt to do both simultaneously. An app can switch between tabs programatically, as shown in the [Nativetabbar Tutorial](../../tutorial/nativetabbar). 
 
+> **<u>The remove() method of this API is no longer supported</u>**.  
+
+-----
+
 ## Enabling the API
 
 There are two methods of enabling the NativeTabbar API:
@@ -108,7 +112,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.NativeTabbar.currentTabIndex()</code> 
 
-
+<!-- 1/24/2020- removed from EB 2.5, per eng. 
 ### remove()
 Removes all tabbar except the default tabbar whose index value is 0. Does nothing if there is no active tabbar other than tab 0.
 
@@ -130,7 +134,7 @@ Synchronous Return:
 
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.NativeTabbar.remove()</code> 
-
+-->
 
 ### removeTab(<span class="text-info">INTEGER</span> tabIndex)
 Removes the Tab by index. Method will remove the WebView for the specific tab, it will not remove the tab from the tab array, so all indexes will remain the same.You cannot delete the tab with useCurrentViewForTab flag.If you switch to previously removed tab, tab will be recreated.

@@ -21,8 +21,9 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 **<u>The Database API is no longer supported</u> in EB 2.5**. Calls to this API will result in error. 
 
-**<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
+**<u>The remove() method of the NativeTabbar API is no longer supported</u>**.  
 
+**<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 ### Device Support
 
 #### Mobile Devices

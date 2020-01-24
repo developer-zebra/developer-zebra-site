@@ -1302,7 +1302,7 @@ ul.nostyle i {
 .columns.waterfall li a{
     display:  block;
     padding: 0px 0px 0px 10px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 15px;
 }
 

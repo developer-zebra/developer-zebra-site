@@ -19,12 +19,13 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.5
 
-**<u>The Database API is no longer supported</u> in EB 2.5**. Calls to this API will result in error. 
+### End of Support
 
-**<u>The remove() method of the NativeTabbar API is no longer supported</u>**.  
+* **<u>The Database API is no longer supported</u> in EB 2.5**. Calls to this API will result in error. 
+* **<u>The** `remove()` **method of the NativeTabbar API is no longer supported</u>**.  
+* **<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
-**<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
-### Device Support
+            ### Device Support
 
 #### Mobile Devices
 
@@ -101,12 +102,10 @@ Metatag Filtering Support
 
 This feature can provide blacklisted and whitelisted metatags and metatag filtering and in the Config.xml file: 
 
+	:::xml
 	<MetaTagFiltering>  
-
 	<MetatagFilteringEnabled> 
-
 	<WhiteListingMetatags> 
-
 	<BlackListingMetatags> 
 
  
@@ -129,6 +128,7 @@ Custom CSS Support
 
 Used to modify default styles of EB applications. 
 
+	:::xml
 	<customcssfile> 
 
 For more information, see the Custom CSS page. (Link To be updated) 
@@ -169,10 +169,9 @@ Disable TTS and ASR during Navigation and delay in playing TTS support
 
 Used to disable TTS and ASR functionality to delay capture of TTS using tags in Config.xml file:  
 
+	:::xml
 	<disablettsduringnavigation> 
-
 	<disableasrduringnavigation> 
-
 	<delayfortts> 
 
  
@@ -184,12 +183,12 @@ Used to disable TTS and ASR functionality to delay capture of TTS using tags in 
  * barcodeCount
  * instantReporting 
  * SceneDetectionQualifier  
- * dotCode 
- &nbsp;&nbsp; * dotCodeInverse 
- &nbsp;&nbsp; * dotCodeMirror 
- * gridmatrix 
- &nbsp;&nbsp; * gridmatrixinverse 
- &nbsp;&nbsp; * gridmatrixmirror 
+ * dotCode<br> 
+ &nbsp;&nbsp; * dotCodeInverse <br>
+ &nbsp;&nbsp; * dotCodeMirror <br>
+ * gridmatrix <br>
+ &nbsp;&nbsp; * gridmatrixinverse <br>
+ &nbsp;&nbsp; * gridmatrixmirror <br>
  * i2of5febraban 
  * gs1qrcode 
  * gs1datamatrix 
@@ -200,12 +199,14 @@ Used to disable TTS and ASR functionality to delay capture of TTS using tags in 
  * signatureImageBitsPerPixel 
  * signatureImageFormat 
  * illuminationBrightness 
- * aimType 
- &nbsp;&nbsp; * PRESENTATION  
+ * aimType <br>
+ &nbsp;&nbsp; * PRESENTATION  <br>
 
  
 
 ## New/Updated Guides
+
+to come
 
 ----- 
 

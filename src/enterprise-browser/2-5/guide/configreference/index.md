@@ -959,7 +959,7 @@ Specifies the fully qualified path of an image to be displayed at app start-up. 
 	</FunctionKeyMapping> 
 
 ### StartPage
-Defines the start page of the Enterprise Browser application displayed at launch. A device-resident file is recommended to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. For URLs, accepts UTF-8 characters only. Case sensitive. 
+Defines the start page of the Enterprise Browser application displayed at launch. **Zebra recommends using a device-resident file** to avoid connectivity issues on startup. **StartPage entry must be a fully qualified local path using** `file://` **or URL using** `http://`. For URLs, accepts UTF-8 characters only. Case sensitive. 
 
 **Possible Values**:
 
@@ -967,9 +967,14 @@ Defines the start page of the Enterprise Browser application displayed at launch
 
 #### Example
 	:::xml
+	
+	// Start the app from a file on the device: 
+
 	<StartPage value="file:///index.html" name="Start Page"/>
 
 	<!-- OR -->
+
+	// Start the app from a file on a server:
 
 	<StartPage value="http://www.hostsite.com/my_app_menu.html" name="Menu"/>
 
@@ -3141,6 +3146,45 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 #### Example
 	:::xml
 	<NewTabVirtualMemLimit value="50"/>
+
+### usetabbar
+Controls whether the tabbar feature is used and the app (default = 0, (not used)) and whether the app reads the `tabbar.xml` file. 
+
+usetabbar tag - This value will be either 1 or 0. If this value is 1 then application will go ahead in reading the tabbarxml file given in path for creating tabs. If the value is 0 then it will not create tabs despite of tabbarxml file path is provided. Default value is 0.
+tabbarxmlpath tag - This tag value should be the file path of the XML file which will have information of tabs which are supposed to be created.
+
+
+**Possible Values**:
+
+* **0 - do not create tabbar (default)** 
+* 1 - create tabbar
+
+#### Example
+
+		:::xml
+		<General>
+			...
+		    <usetabbar value="1"/>
+		    <tabbarxmlpath value="file://%INSTALLDIR%/tabbar.xml"/>
+			...	    
+		</General>
+
+### tabbarxmlpath
+Specifies a path to the `tabbar.xml` file, which defines the tabs to be displayed in the tabbar. 
+
+**Possible Values**:
+
+* Full path and file name of the tabbar definition file on the device 
+
+#### Example
+		:::xml
+		<General>
+			...
+		    <usetabbar value="1"/>
+		    <tabbarxmlpath value="file://%INSTALLDIR%/tabbar.xml"/>
+			...	    
+		</General>
+
 
 -----
 

@@ -36,7 +36,7 @@ _Keystroke Output options_
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-**Key event options -** sends keystrokes as key events, sends certain key events as string, and controls key event delays. Options:
+**Key event options -** sends keystrokes as key events, sends certain key events as string, and controls key event delays. _Supported only on SDM660 products (including PS20, TS52, TC57, TC72, and TC77)._ Options:
 
 * **Key event delay -** set the delay (in ms) prior to the key event being sent
 * **Send Characters as Events -** set to send ASCII code 32 to 126 as key events

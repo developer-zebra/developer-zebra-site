@@ -2182,7 +2182,7 @@ Contains the password for accessing the Settings page when password function is 
 
 **Possible Values**:
 
-* Any 32-bit hexadecimal HTML color code value
+* Any 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/)
 
 Examples
 

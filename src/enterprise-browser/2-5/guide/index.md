@@ -30,6 +30,8 @@ automenu:
           url: buttonbar
         - title: Button Parameter Guide
           url: customize/button
+        - title: Creating Browser Tabs
+          url: tabbar
         - title: Custom JavaScript Guide
           url: customize/script
         - title: Custom On-screen Buttons/Keys

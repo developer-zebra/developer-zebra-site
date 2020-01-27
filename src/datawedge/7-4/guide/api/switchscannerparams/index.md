@@ -17,7 +17,7 @@ Used to pass one or more [barcode, scanner and/or reader parameters](../../input
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", "param_name", "value");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", <bundle>);
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"

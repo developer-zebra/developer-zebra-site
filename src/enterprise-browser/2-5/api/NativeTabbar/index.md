@@ -9,7 +9,8 @@ The NativeTabbar methods allow multiple instances of the webview to appear in se
 
 An application can employ either a Tabbar or a Toolbar, but should not attempt to do both simultaneously. An app can switch between tabs programatically, as shown in the [Nativetabbar Tutorial](../../tutorial/nativetabbar). 
 
-> **<u>The remove() method of this API is no longer supported</u>**.  
+#### `IMPORTANT:`
+#####<u>The remove() method is no longer supported in this API</u> (EB 2.5 and higher).
 
 -----
 

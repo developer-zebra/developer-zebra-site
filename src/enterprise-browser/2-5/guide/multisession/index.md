@@ -1,11 +1,18 @@
 ---
-title: Using the Tabbar
+title: Multi-session Guide
 productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those found on many desktop browsers, each with its own `Config.xml` file and potentially different sets of functions. Tabs are a convenient way to employ multiple apps or multiple feature sets with a simple and familiar way of switching between them. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files and with different set of configuration settings. This provides a convenient way to launch multiple apps and feature-sets with multiple easy ways of switching between them.
+
+The multi-session can be implemeted in two ways: 
+
+**Shortcut method**
+
+**Tab method**
+
 
 #### Tabbar Rules
 
@@ -33,50 +40,6 @@ Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node.
 #### backgroundColor
 * Controls the background color of the tab bar. If this tag is missing or unspecified, tab bar uses app's default color. 
 * Accpets 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-
------
-
-### Tab Attributes
-
-Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that node.
- 
-
-####action 
-* The start page to be loaded when the tab is brought to the foreground 
-* Accepts a URL or fully qualified path and file name of a device-resident HTML file
-
-####label
-* A title for the tab
-* Accepts a string of alphanumeric characters
-
-####disabled
-* Controls whether tab creation is blocked (**disabled by default**) 
-* *true* or ***false*** 
-
-####reload
-* Controls whether to refresh the URL or file specified in the Action parameter whenever the tab comes into focus (**disabled by default**) 
-* *true* or ***false*** 
-
-####config
-* Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
-* Accepts a fully qualified path and file name of the `Config.xml` file relevant to the Action  
-
-
-####icon
-* Used to specify the path (relative to the Enterprise Browser %INSTALL directiory) to local files on the device
-* Accepts a valid path in the device file system
-
-####backgroundColor
-* Controls the background color of the tab contents. If this tag is missing or unspecified, tab bar uses app's default color. 
-* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-
-**NOTE**: Use this option to remove "blinking" that sometimes occurs when switching tabs when the app's background color is not white.
-
-####selectedColor
-* Controls the color of the tab.  
-* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-
-**Android Note**: Color assignment works only when a selectedColor attribute is applied to every tab ***and*** a backgroundColor is assigned to the tab bar.
 
 -----
 

@@ -10,7 +10,7 @@ Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those fou
 #### Tab Bar Rules
 
 * **EB tabs must be defined in advance using the** `tabbar.xml` **file**. They cannot be created by the device user. 
-* The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. 
+* The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. [More info](../configreference/#tabbarxmlpath).
 * Tabs are created when the EB app launches. To deploy or change one or more tabs, push a new `tabbar.xml` file to the device and relaunch the app.  
 * The size of the device screen and its orientation effect tab display and the ease of switching between them. **Zebra recommends deploying no more than 10 browser tabs**. 
 
@@ -22,6 +22,8 @@ Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those fou
 
 Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. **There can be only ONE TabGroup**. 
 
+Default values are shown in **bold**. 
+
 #### placeTabsBottom
 * Controls whether tabs are shown at the bottom of the display; otherwise shown at the top (**default**) 
 * *true* or ***false***
@@ -32,8 +34,10 @@ Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. **
 
 #### backgroundColor
 * Controls the background color of the tab bar. If this tag is missing or unspecified, tab bar uses app's default color. 
-* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * **Default = 0** (black)
+
+**NOTE**: If the TabGroup node is missing, default values will be used. 
 
 -----
 
@@ -42,45 +46,45 @@ Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. **
 Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that node. 
 
 ####action 
-* **MANDATORY** tag specifying the start page to be loaded when the tab is brought to the foreground 
+* **MANDATORY**: Used to specify the start page to be loaded when the tab is brought to the foreground 
 * Accepts a URL or fully qualified path and file name of a device-resident HTML file
 * string
 
 ####label
-* **MANDATORY** tag used to specify a title displayed in the tab
+* **MANDATORY**: Used to specify a title displayed in the tab. Must include at least one character.
 * **Overridden if an icon is specified**
 * string
 
 ####disabled
-* Controls whether tab creation is blocked (**disabled by default**) 
+* **Optional**: Controls whether tab creation is blocked (**disabled by default**) 
 * boolean (*true* or ***false***) 
 
 ####reload
-* Controls whether to refresh the URL or file specified in the Action parameter whenever the tab comes into focus (**disabled by default**) 
+* **Optional**: Controls whether to refresh the URL (or file) specified in the Action parameter whenever the tab comes into focus (**disabled by default**) 
 * boolean (*true* or ***false***) 
 
 ####config
-* Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
+* **Optional**: Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
 * Accepts a fully qualified path and file name of the `Config.xml` file relevant to the Action  
 * If missing or blank, uses the parent app's `Config.xml` file
 * string
 
 ####icon
-* Used to specify the path (relative to the Enterprise Browser %INSTALL directory) to an icon (image) file on the device to display ***in place of*** the specified tab title
+* **Optional**: Used to specify the path (relative to the Enterprise Browser %INSTALL% directory) to an icon (image) file on the device to display ***in place of*** the specified tab title
 * Accepts a valid path and file name in the device file system
 * Supports `.bmp`, `.gif`, `.jpg`, `.png` file formats 
 * **Overrides title tag**
 * string
 
 ####backgroundColor
-* Controls the background color of the tab contents. If this tag is missing or unspecified, defaults to 0xFFFFFF (white). 
-* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* **Optional**: Controls the background color of the tab contents. If this tag is missing or unspecified, defaults to 0xFFFFFF (white). 
+* Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * **Default = 0xFFFFFF** (white)
 * hex value (accepts FFFFFF or 0xFFFFFF notation)
 
 ####selectedColor
-* Controls the color of the selected (active) tab
-* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* **Optional**: Controls the color of the selected (active) tab
+* Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * hex value (accepts FFFFFF or 0xFFFFFF notation)
 
 **Android Note**: Color assignment works only when a selectedColor attribute is applied to every tab ***and*** a backgroundColor is assigned to the tab bar.

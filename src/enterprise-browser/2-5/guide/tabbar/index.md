@@ -7,10 +7,12 @@ layout: guide.html
 ## Overview
 Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those found on many desktop browsers, each with its own `Config.xml` file and potentially different sets of functions. Tabs are a convenient way to employ multiple apps or multiple feature sets with a simple and familiar way of switching between them. 
 
+> **NOTE**: Similar functionality is available through the [NativeTabbar API](../../api/NativeTabbar). 
+
 #### Tab Bar Rules
 
 * **EB tabs must be defined in advance using the** `tabbar.xml` **file**. They cannot be created by the device user. 
-* The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. [More info](../configreference/#tabbarxmlpath).
+* The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. [More info](../configreference/#usetabbar).
 * Tabs are created when the EB app launches. To deploy or change one or more tabs, push a new `tabbar.xml` file to the device and relaunch the app.  
 * The size of the device screen and its orientation effect tab display and the ease of switching between them. **Zebra recommends deploying no more than 10 browser tabs**. 
 
@@ -20,9 +22,7 @@ Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those fou
 
 ### TabGroup Attributes
 
-Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. **There can be only ONE TabGroup**. 
-
-Default values are shown in **bold**. 
+Attributes under the &lt;TabGroup&gt; apply to all defined tabs. **There can be zero or one TabGroups**. If this node is missing, default values (shown in **bold**) are used. 
 
 #### placeTabsBottom
 * Controls whether tabs are shown at the bottom of the display; otherwise shown at the top (**default**) 
@@ -35,15 +35,13 @@ Default values are shown in **bold**.
 #### backgroundColor
 * Controls the background color of the tab bar. If this tag is missing or unspecified, tab bar uses app's default color. 
 * Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-* **Default = 0** (black)
-
-**NOTE**: If the TabGroup node is missing, default values will be used. 
+* **Default = 0x000000** (black)
 
 -----
 
 ### Tab Attributes
 
-Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that node. 
+Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that node. 
 
 ####action 
 * **MANDATORY**: Used to specify the start page to be loaded when the tab is brought to the foreground 
@@ -52,7 +50,7 @@ Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that no
 
 ####label
 * **MANDATORY**: Used to specify a title displayed in the tab. Must include at least one character.
-* **Overridden if an icon is specified**
+* **Overridden if an icon is specified** (but must still be present)
 * string
 
 ####disabled
@@ -123,7 +121,7 @@ The example `tabbar.xml` file below creates a tabgroup of two (2) tabs, both of 
 ### See Also
 
 * [Config.xml Reference](../configreference)
-* [Enterprise Browser APIs](../apioverview)
+* [Native Tabbar API](../../api/NativeTabbar)
 * [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
 * [DOM Injection guide](../dom)
 

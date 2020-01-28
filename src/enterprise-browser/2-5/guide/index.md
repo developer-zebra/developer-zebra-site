@@ -30,12 +30,12 @@ automenu:
           url: buttonbar
         - title: Button Parameter Guide
           url: customize/button
-        - title: Creating Browser Tabs
-          url: tabbar
         - title: Custom JavaScript Guide
           url: customize/script
         - title: Custom On-screen Buttons/Keys
           url: customize
+        - title: Multi-session EB Usage Guide
+          url: multisession
         - title: Page-based Actions Guide
           url: pageactions
         - title: Voice Input/Output Guide

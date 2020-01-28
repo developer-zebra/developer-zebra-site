@@ -3148,11 +3148,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 	<NewTabVirtualMemLimit value="50"/>
 
 ### usetabbar
-Controls whether the app reads the `tabbar.xml` file (using the path specified in the &lt;tabbarxmlfilepath&gt; tag) and uses it to build a tabbar (**disabled by default**). 
-
-usetabbar tag - This value will be either 1 or 0. If this value is 1 then application will go ahead in reading the tabbarxml file given in path for creating tabs. If the value is 0 then it will not create tabs despite of tabbarxml file path is provided. Default value is 0.
-tabbarxmlpath tag - This tag value should be the file path of the XML file which will have information of tabs which are supposed to be created.
-
+Controls whether the app reads the `tabbar.xml` file (using the path specified in the &lt;tabbarxmlfilepath&gt; tag, below) and uses it to build a tabbar (**disabled by default**). 
 
 **Possible Values**:
 
@@ -3170,7 +3166,7 @@ tabbarxmlpath tag - This tag value should be the file path of the XML file which
 		</General>
 
 ### tabbarxmlpath
-Specifies a path to the `tabbar.xml` file, which defines the tabs to be displayed in the tabbar. This tag is relevant only when the &lt;usetabbar&gt; tag contains a value of "1" (enabled). See the [Tabbar XML Guide](../tabbar) for more information. 
+Specifies a path to the `tabbar.xml` file, which defines the tabs to be displayed in the tabbar. This tag is relevant only when the &lt;usetabbar&gt; tag (above) contains a value of "1" (enabled). See the [Tabbar XML Guide](../tabbar) for more information. 
 
 **Possible Values**:
 

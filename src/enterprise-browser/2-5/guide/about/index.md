@@ -58,16 +58,9 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 ### New Features
 
-Multi-Session Support 
+Multi-session Support 
 
-Enterprise Browser supports multiple concurrent sessions with session-specific configurations: 
-
-Tab Approach 
-
-Shortcut approach  
-
-For more information, see the Multi-Session Page (Link To be updated) 
-
+Enterprise Browser now supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different sets of configuration settings. 
  
 
 Serial JavaScript API Support 

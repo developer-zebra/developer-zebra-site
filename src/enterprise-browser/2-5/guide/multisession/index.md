@@ -14,7 +14,11 @@ The multi-session can be implemeted in two ways:
 **Tab method**
 
 
-#### Tabbar Rules
+
+
+WRONG WRONG WRONG
+
+#### Tab Bar Rules
 
 * **EB tabs must be defined in advance using the** `tabbar.xml` **file**. They cannot be created by the device user. 
 * The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. 

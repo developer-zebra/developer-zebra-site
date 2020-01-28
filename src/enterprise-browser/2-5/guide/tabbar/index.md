@@ -1,5 +1,5 @@
 ---
-title: Using the Tabbar
+title: Using the Tab Bar
 productversion: '2.5'
 product: Enterprise Browser
 layout: guide.html
@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview
 Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those found on many desktop browsers, each with its own `Config.xml` file and potentially different sets of functions. Tabs are a convenient way to employ multiple apps or multiple feature sets with a simple and familiar way of switching between them. 
 
-#### Tabbar Rules
+#### Tab Bar Rules
 
 * **EB tabs must be defined in advance using the** `tabbar.xml` **file**. They cannot be created by the device user. 
 * The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. 
@@ -20,61 +20,68 @@ Enterprise Browser 2.5 (and higher) permits the use of tabs similar to those fou
 
 ### TabGroup Attributes
 
-Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. 
+Attributes under the &lt;TabGroup&gt; apply to all tabs defined in that node. **There can be only ONE TabGroup**. 
 
 #### placeTabsBottom
 * Controls whether tabs are shown at the bottom of the display; otherwise shown at the top (**default**) 
 * *true* or ***false***
 
 #### hiddenTabs
-* Controls whether tags are shown or hidden (**default**) 
+* Controls whether tags are hidden or shown (**default**) 
 * *true* or ***false*** 
 
 #### backgroundColor
 * Controls the background color of the tab bar. If this tag is missing or unspecified, tab bar uses app's default color. 
-* Accpets 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* **Default = 0** (black)
 
 -----
 
 ### Tab Attributes
 
-Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that node.
- 
+Attributes under the &lt;tab&gt; tag apply to only to the tab defined in that node. 
 
 ####action 
-* The start page to be loaded when the tab is brought to the foreground 
+* **MANDATORY** tag specifying the start page to be loaded when the tab is brought to the foreground 
 * Accepts a URL or fully qualified path and file name of a device-resident HTML file
+* string
 
 ####label
-* A title for the tab
-* Accepts a string of alphanumeric characters
+* **MANDATORY** tag used to specify a title displayed in the tab
+* **Overridden if an icon is specified**
+* string
 
 ####disabled
 * Controls whether tab creation is blocked (**disabled by default**) 
-* *true* or ***false*** 
+* boolean (*true* or ***false***) 
 
 ####reload
 * Controls whether to refresh the URL or file specified in the Action parameter whenever the tab comes into focus (**disabled by default**) 
-* *true* or ***false*** 
+* boolean (*true* or ***false***) 
 
 ####config
 * Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
 * Accepts a fully qualified path and file name of the `Config.xml` file relevant to the Action  
-
+* If missing or blank, uses the parent app's `Config.xml` file
+* string
 
 ####icon
-* Used to specify the path (relative to the Enterprise Browser %INSTALL directiory) to local files on the device
-* Accepts a valid path in the device file system
+* Used to specify the path (relative to the Enterprise Browser %INSTALL directory) to an icon (image) file on the device to display ***in place of*** the specified tab title
+* Accepts a valid path and file name in the device file system
+* Supports `.bmp`, `.gif`, `.jpg`, `.png` file formats 
+* **Overrides title tag**
+* string
 
 ####backgroundColor
-* Controls the background color of the tab contents. If this tag is missing or unspecified, tab bar uses app's default color. 
+* Controls the background color of the tab contents. If this tag is missing or unspecified, defaults to 0xFFFFFF (white). 
 * Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-
-**NOTE**: Use this option to remove "blinking" that sometimes occurs when switching tabs when the app's background color is not white.
+* **Default = 0xFFFFFF** (white)
+* hex value (accepts FFFFFF or 0xFFFFFF notation)
 
 ####selectedColor
-* Controls the color of the tab.  
+* Controls the color of the selected (active) tab
 * Accepts 32-bit hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
+* hex value (accepts FFFFFF or 0xFFFFFF notation)
 
 **Android Note**: Color assignment works only when a selectedColor attribute is applied to every tab ***and*** a backgroundColor is assigned to the tab bar.
 

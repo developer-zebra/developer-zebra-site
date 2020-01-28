@@ -58,11 +58,9 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 ### New Features
 
-Multi-session Support 
+* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using an XML file. Multi-session support allows EB to run multiple apps at the same time, each accessing different `Config.xml` files with different sets of configuration settings. 
 
-Enterprise Browser now supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different sets of configuration settings. 
- 
-
+<!-- 
 Serial JavaScript API Support 
 
 Enterprise Browser support Serial API set for JS API exposed for: 
@@ -166,11 +164,11 @@ Used to disable TTS and ASR functionality to delay capture of TTS using tags in 
 	<disablettsduringnavigation> 
 	<disableasrduringnavigation> 
 	<delayfortts> 
-
+ -->
  
 
 ### New/Enhanced APIs
-
+<!-- 
 **The [Barcode API](../../api/barcode)** includes these enhancements: 
 * **New properties**:
  * barcodeCount
@@ -194,12 +192,10 @@ Used to disable TTS and ASR functionality to delay capture of TTS using tags in 
  * illuminationBrightness 
  * aimType <br>
  &nbsp;&nbsp; * PRESENTATION  <br>
-
+ -->
  
 
 ## New/Updated Guides
-
-to come
 
 ----- 
 

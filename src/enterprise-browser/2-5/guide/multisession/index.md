@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different sets of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets and switch easily between them. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets and switch easily between them. 
 
 Multi-session capabilities can be invoked with Shortcuts or with Tab Bars, each with its own advantages and disadvantages. Both are explained below. 
 

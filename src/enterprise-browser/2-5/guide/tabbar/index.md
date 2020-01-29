@@ -122,7 +122,7 @@ The example `tabbar.xml` file below creates a tabgroup of two (2) tabs, both of 
 
 * [Config.xml Reference](../configreference)
 * [Native Tabbar API](../../api/NativeTabbar)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [DOM Injection guide](../dom)
 
 

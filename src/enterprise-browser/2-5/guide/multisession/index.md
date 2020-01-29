@@ -132,10 +132,10 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 * string
 
 ####icon
-* **Optional**: Used to specify the path (relative to the Enterprise Browser %INSTALL% directory) to an icon (image) file on the device to display ***in place of*** the specified tab title
+* **Optional**: Used to specify the path (relative to the Enterprise Browser %INSTALL% directory) to an icon (image) file on the device to display ***in place of*** the specified tab label
 * Accepts a valid path and file name in the device file system
 * Supports `.jpg` and `.png` file formats
-* **Overrides title tag**
+* **Overrides label tag**
 * string
 
 ####backgroundColor
@@ -149,7 +149,7 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 * Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * hex value (accepts FFFFFF or 0xFFFFFF notation)
 
-**Android Note**: Color assignment works only when a selectedColor attribute is applied to every tab ***and*** a backgroundColor is assigned to the tab bar.
+**Android Note**: Color assignment using the &lt;selectedColor&gt; attribute works only when applied to ***every tab <u>and</u>*** a &lt;backgroundColor&gt; is assigned in the tab bar.
 
 -----
 
@@ -186,7 +186,7 @@ The example `tabbar.xml` file below creates a tabgroup of two (2) tabs, both of 
 
 * [Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [DOM Injection guide](../dom)
 
 

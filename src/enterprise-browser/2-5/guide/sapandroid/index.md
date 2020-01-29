@@ -1004,7 +1004,7 @@ http://techdocs.zebra.com/enterprise-keyboard/1-8/download/
 
 * [Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [Migration Guides](../migration)
 * [DOM Injection guide](../dom)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)

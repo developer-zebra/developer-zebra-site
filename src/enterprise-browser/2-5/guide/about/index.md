@@ -56,11 +56,39 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 **<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
 
-### New Features
+### New Features/Guides
 
-* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using an XML file. Multi-session support allows EB to run multiple apps at the same time, each accessing different `Config.xml` files with different sets of configuration settings. 
+#### New for All Apps
+* **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
 
-<!-- 
+* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
+
+* **The [&lt;ShowLicenseConfirmation&gt; tag](../configreference/#showlicenseconfirmation) is now supported on Android** devices (formerly Windows Mobile/CE-only), which toggles display of the “Licensed to…” dialog at launch. 
+
+* **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
+
+<!-- waiting for inputs:
+<disablettsduringnavigation> 
+<disableasrduringnavigation> 
+<delayfortts> 
+
+* **Supports the ability to [disable Text-to-Speech during navigation](../configreference/#disablettsduringnavigation) on Android targets**, temporarily pausing the TTS engine until a desired page is reached.
+
+* **Supports the ability to [set a delay for Text-to-Speech](../configreference/#delayfortts) on Android targets**, after which the speech engine can continue processing speech.
+
+* **Supports the ability to [disable automatic speech recognition during navigation](../configreference/#disableasrduringnavigation) on Android targets with GMS**, temporarily pausing the ASR  engine until a desired page is reached.
+
+-->
+
+
+#### New for SAP Apps
+
+* **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
+
+* **Supports selection of a [Keyboard Type](../sapandroid/#configurationparameters)**, which can be used to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME to be used by an SAP app. 
+
+
+ <!-- 
 Serial JavaScript API Support 
 
 Enterprise Browser support Serial API set for JS API exposed for: 
@@ -87,63 +115,8 @@ Reset keyboard layout to default settings
 
 For more information, see the Enterprise Keyboard JavaScript Intent APIs Page (Link To be updated) 
 
- 
-
-Metatag Filtering Support 
-
-This feature can provide blacklisted and whitelisted metatags and metatag filtering and in the Config.xml file: 
-
-	:::xml
-	<MetaTagFiltering>  
-	<MetatagFilteringEnabled> 
-	<WhiteListingMetatags> 
-	<BlackListingMetatags> 
 
  
-
-For more information, see the Metatag Filtering page. (Link To be updated) 
-
- 
-
-Shortcut Creation Support  
-
-On Android 8.x Oreo and higher, supports shortcut creation through a new pinned shortcuts feature.  
-
- 
-
-For more information, see the Shortcut Creation page. (Link To be updated) 
-
- 
-
-Custom CSS Support 
-
-Used to modify default styles of EB applications. 
-
-	:::xml
-	<customcssfile> 
-
-For more information, see the Custom CSS page. (Link To be updated) 
-
- 
-
-KeyboardType Support  
-
-Used to set the keyboard type to be used in the application. The same ButtonBar layouts created for prior versions of?EB can be used through enterprisekeyboard. 
-
- 
-
-For more information, see the Sap usage guide page. (Link To be updated) 
-
- 
-
-ShowLicenseConfirmation Support  
-
-ShowLicenseConfirmation config tag is now supported on Android devices (formerly Windows-only). 
-
- 
-
-For more information, see the ShowLicenseConfirmation page. (Link To be updated) 
-
  
 
 ESN Support  
@@ -155,15 +128,6 @@ New ESN API allows retrieval of the electronic serial number of the device.
 For more information, see the Configuration guide page. (Link To be updated) 
 
  
-
-Disable TTS and ASR during Navigation and delay in playing TTS support 
-
-Used to disable TTS and ASR functionality to delay capture of TTS using tags in Config.xml file:  
-
-	:::xml
-	<disablettsduringnavigation> 
-	<disableasrduringnavigation> 
-	<delayfortts> 
  -->
  
 

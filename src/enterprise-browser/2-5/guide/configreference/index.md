@@ -504,6 +504,12 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 			< TTSEngine value=" com.example.custom.tts"/>
 		</TTS>
 
+<!-- 1/28/2020- need inputs
+### disablettsduringnavigation
+
+###delayfortts
+-->
+
 ### asrenabled
 **Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether Android Speech Recognition (ASR) features are enabled in the app. **Enabled by default**. A value of “1” enables ASR and activates the ASR parameters that follow below. 
 
@@ -598,6 +604,10 @@ from eng:
 			< asrlanguage value="en-US"/>
 		</ASR>
 
+<!-- 1/28/2020- need inputs
+### disableasrduringnavigation
+
+ -->
 -----
 
 ### ClientCertificate
@@ -3049,7 +3059,7 @@ Maintain backward compatibility of scanner meta tags by adding the following lin
 -----
 
 ## MetaTagFiltering
-**Applies only to Android**. Parent tag for all child parameter tags for meta tag filtering, which permits one or more meta tags or sets of meta tags to be allowed (using the "WhiteListing" tag) or blocked (using the "blackListing" tag) from use by an EB app. 
+**Applies only to Android**. Parent tag for all child parameter tags for meta tag filtering, which permits one or more meta tags or sets of meta tags to be allowed (using the "WhiteListing" tag) or blocked (using the "BlackListing" tag) from use by an EB app. 
 
 > **When migrating EB apps from Windows Mobile to Android**, this feature can be used to block the application of meta tags or meta-tag properties not supported on Android devices. **Also addresses "scanner unavailable" issues** when scanning through multiple apps (i.e. EB and DataWedge). 
 
@@ -3218,13 +3228,10 @@ Specifies a path to the `tabbar.xml` file, which defines the tabs to be displaye
  -->
 **Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. **Disabled by default**.  For more information, please refer to the [Shortcut Creator guide](../ShortcutCreator). 
 
-> **Devices running Android 8.x Oreo and later** support automatic creation of only "Pinned" Shortcuts, which require permission from the device user (as in the image below).<br> ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for user permission. 
+> **Devices running Android 8.x Oreo and later** support automatic creation of only "Pinned" Shortcuts, which require permission from the device user (see image below) each time the EB app is launched.<br> ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for user permission. 
 
 <img alt="img" style="height:250px" src="eb_25_pinned.png"/>
 <br>
-
-
-
 
 **Possible Values**:
 

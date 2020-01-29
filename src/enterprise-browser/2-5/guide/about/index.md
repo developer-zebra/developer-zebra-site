@@ -25,7 +25,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 * **<u>The** `remove()` **method of the NativeTabbar API is no longer supported</u>**.  
 * **<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
-* **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued with Android 10 Q. 
+* **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued when Android 10 Q support begins. 
 
 ### Device Support
 

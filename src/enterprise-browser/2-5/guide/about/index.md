@@ -25,7 +25,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 * **<u>The** `remove()` **method of the NativeTabbar API is no longer supported</u>**.  
 * **<u>Support ends</u> for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
-            ### Device Support
+### Device Support
 
 #### Mobile Devices
 
@@ -623,7 +623,7 @@ This release also adds a range of additional new features for all supported Andr
 
 ##### Ring Scanner Support
 
-* **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x devices running Android Marshmallow.
+* **RS6000 Ring Scanner** is now supported on TC75x devices running Android Marshmallow.
 
 #### Enterprise Browser Kiosk Mode
 

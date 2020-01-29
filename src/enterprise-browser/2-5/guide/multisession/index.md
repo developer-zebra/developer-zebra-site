@@ -44,12 +44,12 @@ Please see the [Shortcut Utility guide](../ShortcutCreator) For more information
 With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the device. These apps are always run as a group. 
 
 ##### ADVANTAGES 
-* An option exists to automatically update the page whenever it returns to focus.
+* An option exists to automatically refresh the contents of each tab whenever it returns to focus.
 * Tab colors and titles can be customized. 
 
 ##### DISADVANTAGES
 * Tabs must be defined and deployed to the device in advance. 
-* Apps must always be launched as a group of tabs. 
+* Apps cannot be launched individually; they must always be launched as a group. 
 * Only these config tags are supported in `Config.xml` files deployed through Tab Bars: 
  * FullScreen
  * PageZoom
@@ -154,7 +154,7 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 -----
 
 ### Example
-The example `tabbar.xml` file below creates a tabgroup of two (2) tabs, both of which are **NOT** hidden, do **NOT** appear at the bottom of the screen and do **NOT** use a custom background color.   
+The example `tabbar.xml` file below creates a group of two (2) tabs, both of which are **NOT** hidden, do **NOT** appear at the bottom of the screen and do **NOT** use a custom background color.  
 
 
 	:::xml

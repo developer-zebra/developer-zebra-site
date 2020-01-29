@@ -8,11 +8,11 @@ subhead: RhoElements 2.x API
 
 ## Overview
 
-A ButtonBar Layout is a collection of ButtonBars arranged in a single view. Layouts can be created using the ButtonBar Tool, a desktop utility for Windows. This API module is used to show/hide specified layouts created through the tool.
+A ButtonBar Layout is a collection of ButtonBars arranged in a single view. Layouts can be created using Zebra's [Enterprise Keyboard Designer (EKD)](/ekd), a desktop utility for Windows. This API module is used to show/hide specified layouts created through the tool.
 
 `IMPORTANT:` 
-* This API works only with layouts created with the [ButtonBar Tool](../../../../guide/buttonbar).
-* To control the size, position, actions and other button attributes, see the [ButtonBar Usage guide](../../../../guide/customize).
+* This API works only with layouts created with EKD.
+* To control the size, position, actions and other button attributes, see the [EKD Usage Guide](/ekd).
 
 <!-- 
 In the tool after you create a project, if you go to the menu you will be able to add new layouts, specifying names for individual layouts. The layout name given here should be used while enabling or disabling the Layout using this new plug-in. In the below doc wherever ‘LayoutName’ is mentioned it means the name given for the Layout while creating in tool.

@@ -5,22 +5,21 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets and switch easily between them. 
-
-Multi-session capabilities can be invoked with Shortcuts or with Tab Bars, each with its own advantages and disadvantages. Both are explained below. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets that can be toggled without re-launching EB. **Multi-session capabilities can be invoked in two ways**, each with benefits and drawbacks. 
 
 -----
 
 ### Shortcut Method
 
-The **Shortcut Method** involves creating two or more EB-app shortcuts that when launched, appear side-by-side in multiple webview instances or browser tabs. 
+The **Shortcut Method** involves creating two or more EB-app shortcuts that can be launched independently, and when run simultaneously appear side-by-side in multiple webview instances (browser tabs). 
 
 ##### ADVANTAGES 
-* Multiple apps can be deployed and launched in stand-alone mode, and combined into browser tabs only when needed.
-* Shortcut creation and deployment is simplfied by using Zebra's [Shortcut Utility](../ShortcutCreator), a Windows-based tool that supports devices running Android and Windows Mobile/CE.   
+* Apps can be deployed and launched individually, and are combined in browser tabs only when needed.
+* Creation and deployment of shortcuts is simplfied by Zebra's [Shortcut Utility](../ShortcutCreator), a Windows-based tool that supports Android and Windows Mobile/CE targets.
 
 ##### DISADVANTAGES
 * App-page content is persistent; it does not automatically update when the page is revisited.
+* Shortcuts deployed to Android 8.x Oreo and later (called "Pinned" Shortcuts) require permission from the device user at installation. ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for the device user to grant permission.
 * Only these config tags are supported in `Config.xml` files deployed through shortcuts: 
  * WebPageCapture
  * DebugButtonsEnabled

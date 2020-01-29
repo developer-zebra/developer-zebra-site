@@ -83,7 +83,7 @@ WM </p>
 <li>createOnInit : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Create tab immediately when TabBar is created. Action also will be executed. If false, the tab will be created when it is switched to. Don't use this parameter on the devices with a small amount of RAM. Platforms:
 WM </p>
 </li>
-<li>config : <span class='text-info'>STRING</span><p>This will have the file path of the config.xml to apply config properties at the time of tab creation for a particular tab. Platforms:
+<li>config : <span class='text-info'>STRING</span><p>Used to specify the path of the config.xml file containing properties to apply at the time of tab creation for a particular tab. Platforms:
 Android </p>
 </li>
 </ul>
@@ -91,14 +91,13 @@ Android </p>
 <li>tabBarProperties : <span class='text-info'>HASH</span><p>Properties of TabBar. </p></li><ul><li>backgroundColor : <span class='text-info'>INTEGER</span><p>Background color of the tabbar. Platforms:
 Win32, Android </p>
 </li>
-<li>hiddenTabs : <span class='text-info'>BOOLEAN</span><span class='label '> Default: true</span><p>Do not display Tabs with labels.Only hiddenTab=true is currently supported. Platforms:
+<li>hiddenTabs : <span class='text-info'>BOOLEAN</span><span class='label '> Default: true</span><p>Do not display Tabs with labels. Only hiddenTab=true is currently supported. Platforms:
 WM </p>
 </li>
 <li>createOnInit : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Create tabs immediately when TabBar is created. Action also will be executed. If false, then each tab will be created when first switch to the tab is executed. Don't use this parameter on the devices with a small amount of RAM. Platforms:
 WM </p>
 </li>
-<li>placeTabsBottom : <span class='text-info'>BOOLEAN</span><p>Place TabBar to bottom instead of default top - only for Android. Platforms:
-Android </p>
+<li>placeTabsBottom : <span class='text-info'>BOOLEAN</span><p>Place TabBar at bottom of screen (default = top). Platforms: Android </p>
 </li>
 </ul>
 <li>callback : <span class='text-info'>CallBackHandler</span>
@@ -124,7 +123,7 @@ WM </p><p><strong>Possible Values</strong> :</p> <dl  ><dt>onTabFocus</dt><dd>Fi
 
 **Callback method name must be “tabbar_callback” only**. Callbacks of any other name will return no data.
 
-Callback will be received in all visited tabs with following parameters:
+Callback will be received in all visited tabs with the following parameters:
 
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p>
 

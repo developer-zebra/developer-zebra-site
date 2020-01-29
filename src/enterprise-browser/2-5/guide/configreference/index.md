@@ -3218,7 +3218,7 @@ Specifies a path to the `tabbar.xml` file, which defines the tabs to be displaye
  -->
 **Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. **Disabled by default**.  For more information, please refer to the [Shortcut Creator guide](../ShortcutCreator). 
 
-> **Devices running Android 8.x Oreo and later** support automatic creation of only "Pinned" Shortcuts, which require permission from the device user (as in the image below). ***Helpful Hint***: Pinned Shortcuts mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) require no user confirmation for installation. 
+> **Devices running Android 8.x Oreo and later** support automatic creation of only "Pinned" Shortcuts, which require permission from the device user (as in the image below).<br> ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for user permission. 
 
 <img alt="img" style="height:250px" src="eb_25_pinned.png"/>
 <br>

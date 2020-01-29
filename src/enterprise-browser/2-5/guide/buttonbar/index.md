@@ -9,7 +9,7 @@ layout: guide.html
 
 **Enterprise Browser 2.5 (and later) for Android now works with Enterprise Keyboard Designer**, a desktop utility for Windows PCs that helps automate the process of creating custom button bars and key layouts for Enterprise Keyboard and Enterprise Browser apps. 
 
-Please refer to the [Enterprise Keyboard Designer usage guide](/ekd) for further information. 
+### Please refer to the [Enterprise Keyboard Designer usage guide](/ekd) for further information. 
 
 -----
 

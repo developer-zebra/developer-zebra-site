@@ -13,6 +13,7 @@ A ButtonBar Layout is a collection of ButtonBars arranged in a single view. Layo
 `IMPORTANT:` 
 * This API works only with layouts created with EKD.
 * To control the size, position, actions and other button attributes, see the [EKD Usage Guide](/ekd).
+* The ButtonBar Tool once used for this purpose has been discontinued. 
 
 <!-- 
 In the tool after you create a project, if you go to the menu you will be able to add new layouts, specifying names for individual layouts. The layout name given here should be used while enabling or disabling the Layout using this new plug-in. In the below doc wherever ‘LayoutName’ is mentioned it means the name given for the Layout while creating in tool.

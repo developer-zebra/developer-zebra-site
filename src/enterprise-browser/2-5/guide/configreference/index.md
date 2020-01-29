@@ -629,7 +629,9 @@ from eng:
 ### buttonxmlfile
 **Applies only to Android devices running KitKat and higher**. Specifies the location of an encrypted button information file created with the [Enterprise Keyboard Designer](/ekd) (EB 2.5 and higher only) or the `button.xml` file created manually (for EB 1.7 and higher). Either of these files contains configuration settings for the custom on-screen buttons on the device; the encrypted file can be read only by EB. 
 
-**Note: This tag is NOT included in the default** `Config.xml` **file and must be added manually** if custom button or key layouts are used in an app. When launched, Enterprise Browser reads the custom button file (if present) from the specified folder and employs the specified layouts. For more information, see the [Customize EB Functions guide](../customize) and [EKD user guide](/ekd).
+**Note: This tag is NOT included in the default** `Config.xml` **file and must be added manually** if custom button or key layouts are used in an app. When launched, Enterprise Browser reads the custom button file (if present) from the specified folder and employs the layouts defined in the file. 
+
+> For more information, see the [Customize EB Functions guide](../customize) and [Enterprise Keyboard Designer (EKD) user guide](/ekd).
 
 **Possible Values**:
 
@@ -650,7 +652,7 @@ For manually created `button.xml` file:
 		...
 	</Configuration>
 
-For encrypted file created using the [ButtonBar](../buttonbar) tool: 
+For encrypted file created using the EKD tool: 
 
 	:::xml
 	<Configuration>

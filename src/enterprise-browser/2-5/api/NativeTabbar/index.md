@@ -83,6 +83,9 @@ WM </p>
 <li>createOnInit : <span class='text-info'>BOOLEAN</span><span class='label '> Default: false</span><p>Create tab immediately when TabBar is created. Action also will be executed. If false, the tab will be created when it is switched to. Don't use this parameter on the devices with a small amount of RAM. Platforms:
 WM </p>
 </li>
+<li>config : <span class='text-info'>STRING</span><p>This will have the file path of the config.xml to apply config properties at the time of tab creation for a particular tab. Platforms:
+Android </p>
+</li>
 </ul>
 </ul>
 <li>tabBarProperties : <span class='text-info'>HASH</span><p>Properties of TabBar. </p></li><ul><li>backgroundColor : <span class='text-info'>INTEGER</span><p>Background color of the tabbar. Platforms:
@@ -116,6 +119,21 @@ WM </p>
 </li>
 <li>tabEvent : <span class='text-info'>STRING</span><p> Platforms:
 WM </p><p><strong>Possible Values</strong> :</p> <dl  ><dt>onTabFocus</dt><dd>Fires when a tab gains focus.</dd><dt>onTabNewError</dt><dd>Fires when a new tab cannot be created.</dd></dl></li></ul></ul>
+
+#### Callback for Android
+
+**Callback method name must be “tabbar_callback” only**. Callbacks of any other name will return no data.
+
+Callback will be received in all visited tabs with following parameters:
+
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p>
+
+<li>newTabIndex : <span class='text-info'>INTEGER</span><p>New tab index. Platforms:
+Android </p>
+</li>
+<li>prevtab_index : <span class='text-info'>INTEGER</span><p>Previous tab index. Platforms:
+Android </p>
+</li>
 
 ####Returns
 Synchronous Return:

@@ -98,7 +98,7 @@ Attributes under the &lt;TabGroup&gt; apply to all defined tabs. **There can be 
 * *true* or ***false*** 
 
 #### backgroundColor
-* Controls the background color of the tab bar. If this tag is missing or unspecified, tab bar uses app's default color. 
+* Controls the content background color of all tabs. If this tag is missing or unspecified, uses app default color. 
 * Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * **Default = 0x000000** (black)
 
@@ -114,7 +114,7 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 * string
 
 ####label
-* **MANDATORY**: Used to specify a title displayed in the tab. Must include at least one character.
+* **MANDATORY**: Used to specify a title displayed in the tab. **Must include at least one character**.
 * **Overridden if an icon is specified** (but must still be present)
 * string
 
@@ -135,12 +135,12 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 ####icon
 * **Optional**: Used to specify the path (relative to the Enterprise Browser %INSTALL% directory) to an icon (image) file on the device to display ***in place of*** the specified tab title
 * Accepts a valid path and file name in the device file system
-* Supports `.bmp`, `.gif`, `.jpg`, `.png` file formats 
+* Supports `.jpg` and `.png` file formats
 * **Overrides title tag**
 * string
 
 ####backgroundColor
-* **Optional**: Controls the background color of the tab contents. If this tag is missing or unspecified, defaults to 0xFFFFFF (white). 
+* **Optional**: Controls the content background color of the selected tab. If tag is missing or unspecified, uses 0xFFFFFF (white). 
 * Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
 * **Default = 0xFFFFFF** (white)
 * hex value (accepts FFFFFF or 0xFFFFFF notation)

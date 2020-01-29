@@ -71,14 +71,14 @@ With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the 
 
 Tabs are a convenient way to employ multiple apps or multiple feature sets with a simple and familiar way of switching between them. 
 
-> **NOTE**: Similar functionality is available through the [NativeTabbar API](../../api/NativeTabbar). 
-
 #### Tab Bar Rules
 
 * **EB tabs must be defined in advance using the** `tabbar.xml` **file**. They cannot be created by the device user. 
 * The `tabbar.xml` file resides on the device, and its path must be specified in the app's `Config.xml` file. [More info](../configreference/#usetabbar).
 * Tabs are created when the EB app launches. To deploy or change one or more tabs, push a new `tabbar.xml` file to the device and relaunch the app.  
 * The size of the device screen and its orientation effect tab display and the ease of switching between them. **Zebra recommends deploying no more than 10 browser tabs**. 
+
+> **NOTE**: Similar functionality is available through the [NativeTabbar API](../../api/NativeTabbar). 
 
 -----
 

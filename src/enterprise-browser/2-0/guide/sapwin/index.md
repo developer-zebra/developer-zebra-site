@@ -17,7 +17,7 @@ This guide provides instructions for modifying an EB app for Windows Mobile/CE t
 * [Enterprise Browser APIs](../apioverview)
 * [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [Migration Guides](../migration)
-* [DOM Injection guide](../DOMinjection)
+* [DOM Injection guide](../dominjectionwin)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 
 -----
@@ -183,7 +183,7 @@ For help handling these situations, please see the Enterprise Browser [Function 
 
 ## UI Rendering
 
-UI rendering varies depending on the rendering engine present in the device. Rendering also can be effected by web page layout and design, font selection and other factors. Many of the styles available today are not supported by the default IE rendering engine, and pages rendered on WM/CE devices using the IE engine will render differently than devices with the Zebra Webkit engine. When designing web pages for Enterprise Browser, **Zebra recommends adhering to [Responsive Web Design](https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/?hl=en) practices whenever possible**.
+UI rendering varies depending on the rendering engine present in the device. Rendering also can be effected by web page layout and design, font selection and other factors. Many of the styles available today are not supported by the default IE rendering engine, and pages rendered on WM/CE devices using the IE engine will render differently than devices with the Zebra Webkit engine. When designing web pages for Enterprise Browser, **Zebra recommends adhering to [Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp) practices whenever possible**.
 
 To simply the usage of applications running on Enterprise Browser, users can now configure hardware function keys to perform ZoomIn and ZoomOut operations without having to make changes to the application.
 
@@ -405,6 +405,6 @@ When finished, the UserAgent tag should look similar to the example below:
 * [Enterprise Browser APIs](../apioverview)
 * [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [PocketBrowser and RhoElements Migration Guides](../)
-* [DOM Injection guide](../DOMinjection)
+* [WIN/CE DOM Injection guide](../dominjectionwin)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 

@@ -11,7 +11,7 @@ This guide provides instructions for modifying an EB app for Android to work wit
 #### EB 2.x for SAP
 
 Enterprise Browser 2.0 (and higher) includes an installation package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
-a `Config.xml` file designed for organizations that are running SAP ITS mobile app(s) on Zebra Android devices. The standard `Config.xml` file also is included in the package, and can be activated using steps in the [config-switching section](#convertingsappackage) below. 
+a `Config.xml` file designed for organizations that are running SAP ITS mobile app(s) on Zebra Android devices. The standard `Config.xml` file also is included in the package, and can be activated using steps in the [config-switching section](#sapvsstandardebpackage) below. 
 
 When migrating SAP apps from Windows Mobile/CE to Android, the most common problems relate to page-fitting and the absence of hardware function keys. To address these issues, organizations often maintain separate applications for different device-screen sizes and build HTML-based buttons to replace the missing hardware keys. 
 

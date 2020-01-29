@@ -64,7 +64,7 @@ See the [Config.xml reference](../configreference/#pageactionxmlfile) for more i
 
 * [Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [DOM Injection guide](../dom)
 
 

@@ -15,7 +15,7 @@ This guide provides instructions for modifying an EB app for Windows Mobile/CE t
 
 * [Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [Migration Guides](../migration)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
@@ -403,7 +403,7 @@ When finished, the UserAgent tag should look similar to the example below:
 
 * [Enterprise Browser Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes)
 * [PocketBrowser and RhoElements Migration Guides](../)
 * [DOM Injection guide](../DOMinjection)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)

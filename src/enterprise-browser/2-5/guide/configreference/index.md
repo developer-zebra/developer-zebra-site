@@ -44,7 +44,7 @@ If a `Config.xml` must be retained after a cold boot, a persistent installation 
 
 * The `Config.xml` file is permanently stored in: `\Application\EnterpriseBrowser\Config\Config.xml` 
 * On cold boot the `Config.xml` is copied to: `\Program Files\EnterpriseBrowser\Config\Config.xml` 
-* This behavior can be modified by changing `\Application\EnterpriseBrowser.cpy` file
+* This behavior can be modified by changing `\Application\EnterpriseBrowser.cpy` 
 
 **Note: File and directory names of operating systems are case sensitive. Zebra therefore recommends that case values of files and directories entered in the `Config.xml` file are identical to the names of the files themselves**.
 
@@ -130,16 +130,19 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 -----
 
 	:::xml
-	// Enterprise Browser 2.0 configuration file for Android
+	// Enterprise Browser 2.5 configuration file for Android
 	// IMPORTANT: File differs for Windows Mobile/CE
 	// DO NOT REMOVE THE EB_VERSION TAG (below) or modify its contents. 
-	// This auto-generated tag is for diagnostics and logging purposes. 
+	// This auto-generated tag is for diagnostics and logging purposes.
+	// See "EB_VERSION tag" section above for usage details.   
 
 	<?xml version = "1.0"?>
-
+	<!--
+	EnterpriseBrowser_vEB_VERSION_INFO Configuration file
+	-->
 	<Configuration>
-	   <EB_VERSION value="0.30.10.18"/>
-	   
+	   <EB_VERSION value="EB_VERSION_INFO"/>
+	   HIDE_SYSTEM_BAR
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
 	  </DebugButtons>
@@ -157,17 +160,6 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  <DebugSetting>
 	    <DebugModeEnable value="0"/>
 	  </DebugSetting> 
-		
-	  <ExitPassword>
-	    <ExitPasswordEnabled value="0" />
-	    <ExitPasswordValue value="" />
-	  </ExitPassword>
-	  
-	  <Settings>
-	    <SettingsButtonEnabled value="0"/>
-	    <SettingsPageProtectionEnabled value="1"/>
-	    <SettingsPagePassword value="admin"/>
-	  </Settings>
 
 	  <Shortcut>
 	    <ShortcutCreationEnabled value="0"/>
@@ -212,14 +204,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	    <EnableZoom value="1"/>
 	    <DisplayZoomControls value="0"/>
 	  </Screen>
-	  
-	  <WebServer>  
-	    <Enabled VALUE="0"/>  
-	    <Port VALUE="8082"/>  
-	    <WebFolder VALUE=""/>  
-	    <Public VALUE="0"/>
-	  </WebServer>
-		
+	 
 	  <TTS>
 	    <TTSEnabled value="1"/>
 	    <WelcomeText value="Enterprise Browser is now voice enabled"/>
@@ -237,31 +222,19 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  <WakeLock>
 	    <WakeLockType value=""/>
 	  </WakeLock>
-	 
-	  <VoidConnection>
-	    <TrackConnection value="0"/>
-	    <HostURL value="192.168.1.1"/>
-	    <Message value="Establishing Connection..."/>
-	    <Timeout value="30000"/>
-	    <PollInterval value="5000"/>
-	  </VoidConnection>
-	   
+	 	  
 	  <DeviceKeys>
 	  </DeviceKeys>
 	  
 	  <Navigation>
 	    <NavTimeout value="45000"/>
-	  </Navigation>
+	  </Navigation>	 
 	 
 	  <TabInstance>
 	    <NewTabPhysicalMemLimit value="90"/>
 	    <NewTabVirtualMemLimit value="80"/>
 	  </TabInstance>
-	  
-	  <Engine>
-	    <EngineInUse value="AndroidStock"/>
-	  </Engine>
-	  
+
 	  <Applications>
 	    <Application>
 	      
@@ -284,7 +257,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		  
 	      <General>
 	        <Name value="Menu"/>
-	        <StartPage value="file://%INSTALLDIR%/menu.html" name="Menu"/>
+	        <StartPage value="file://%INSTALLDIR%/ANDROID_DEVICE_START_PAGE" name="Menu"/>
 	      </General>
 	      
 	      <Scanner>
@@ -296,14 +269,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 			<ClearApplicationCacheOnLaunch value="0"/>	
 	        <ClearApplicationCacheOnExit value="0"/>		
 	      </ApplicationCache>
-	      
-		  <Authentication>
-			<!--  Used for Digest Access Authentication and Basic Access Authentication -->
-			<!--  Global  -->
-			<Username VALUE=""/>
-			<Password VALUE=""/>
-		  </Authentication>
-	      
+
 	      <HTMLStyles>
 	        <JavascriptEnabled value="1"/>
 			<DatabaseEnabled value="1"/>
@@ -344,8 +310,8 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	        <UserAgent value="" />
 			<NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
 			<VerifyPeerCertificate value="1"/>
-			<VerifyClientCertificate value="0"/>
 	    	<Cookies value="1"/>		
+			<ThirdPartyCookies value="1"/>
 			<DeleteCookiesOnLaunch value="0"/>
 			<DeleteCookiesOnExit value="0"/>
 			<SaveFormData value="0"/>
@@ -362,24 +328,15 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 			<ViewPortWidth value=""/>
 			<ViewPortInitialScale value=""/>
 		  </ViewPort>
-	    
-		  <DeviceKeys>
-	        <EnableCtrlKey_A    value="1"/>
-	        <EnableCtrlKey_C    value="1"/>
-	        <EnableCtrlKey_V    value="1"/>
-	        <EnableCtrlKey_O    value="0"/>
-	        <EnableCtrlKey_P    value="0"/>
-	      </DeviceKeys>
 	  
 	      <DefaultMetaTags>
 	      </DefaultMetaTags>
+
 	      <CustomDOMElements value=""/>
 	    
 	    </Application>
-	</Applications>
+	  </Applications>
 	</Configuration>
-
-
 
 -----
 
@@ -514,7 +471,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::XML
 		<TTS>
-		<disableTtsDuringnavigation value="1"/>
+			<disableTtsDuringnavigation value="1"/>
 		</TTS>
 
 <!-- 
@@ -640,17 +597,6 @@ from eng:
 		<disableTtsDuringnavigation value="1"/>
 		</TTS>
 
-
-<!-- 1/28/2020- need inputs
-### disableasrduringnavigation
-
-<disableAsrDuringnavigation value="1"/>
-     Possible Values:
-        0 - The ASR will remain enabled during page navigation
-        1 - The ASR will be disabled during page navigation
-
-
- -->
 -----
 
 ### ClientCertificate

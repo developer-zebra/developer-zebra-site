@@ -135,7 +135,7 @@ The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be re
 * Clear cookies and/or the application cache
 * Enable voice input
 
-> **NOTE: Key mapping failures sometimes occur on Android devices that include a hardware keyboard**. In some cases it might be necessary to disable the standard Android keyboard as the default SIP and install (or activate) the Zebra Enterprise Keyboard as the default. See the [Enterprise Keyboard user guide](/enterprise-keyboard) for more information.
+> **NOTE: Key mapping failures sometimes occur on Android devices that include a hardware keyboard**. In some cases it might be necessary to disable the standard Android keyboard as the default SIP and install (and/or activate, if already installed) the Zebra Enterprise Keyboard as the default. See the [Enterprise Keyboard user guide](/enterprise-keyboard) for more information.
 
 <!-- removed per eng TUT-25446 
 ##### Hardware key remapping support:

@@ -128,7 +128,7 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 ####config
 * **Optional**: Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
 * Accepts a fully qualified path and file name of the `Config.xml` file relevant to the Action  
-* If missing or blank, uses the parent app's `Config.xml` file
+* If missing or blank, uses the parent app's `Config.xml` file and [tag limitations](#tabbarusage) apply
 * string
 
 ####icon

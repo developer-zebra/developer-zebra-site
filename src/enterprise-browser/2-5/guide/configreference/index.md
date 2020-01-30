@@ -423,7 +423,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSEnabled value = "1"/>
+			<TTSEnabled value = "1"/>
 		</TTS>
 
 ### TTSVolume
@@ -435,7 +435,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSVolume value="1.0"/>
+			<TTSVolume value="1.0"/>
 		</TTS>
 
 ### TTSPitch
@@ -447,7 +447,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSPitch value="1.0"/>
+			<TTSPitch value="1.0"/>
 		</TTS>
 
 ### TTSRate
@@ -460,7 +460,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSRate value="1.0"/>
+			<TTSRate value="1.0"/>
 		</TTS>
 
 ### TTSLanguage
@@ -473,7 +473,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSLanguage value="en_US"/>
+			<TTSLanguage value="en_US"/>
 		</TTS>
 
 
@@ -487,7 +487,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSEnginePreference value="THIRD_PARTY"/>
+			<TTSEnginePreference value="THIRD_PARTY"/>
 		</TTS>
  
 
@@ -501,13 +501,36 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<TTS>
-			< TTSEngine value=" com.example.custom.tts"/>
+			<TTSEngine value=" com.example.custom.tts"/>
 		</TTS>
 
-<!-- 1/28/2020- need inputs
-### disablettsduringnavigation
+### disableTtsDuringnavigation
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the text-to-speech engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **Enabled by default** (TTS is inactive). Works with the &lt;delayfortts&gt; parameter, below. 
 
+**Possible Values**:
+
+* 0 - TTS remains enabled during page navigation
+* **1 - TTS is disabled during page navigation (default)**
+
+		:::XML
+		<TTS>
+		<disableTtsDuringnavigation value="1"/>
+		</TTS>
+
+<!-- 
 ###delayfortts
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Used to set a delay (in milliseconds) before the text-to-speech engine is re-enabled after navigating pages. 
+
+**Possible Values**:
+
+* Integer from 0&ndash;100
+* **0 = no delay (default)**
+
+
+		:::XML
+		<TTS>
+		<delayfortts value="0"/>
+		</TTS>
 -->
 
 ### asrenabled
@@ -525,7 +548,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::xml
 		<ASR>
-			< asrenabled value="1"/>
+			<asrenabled value="1"/>
 		</ASR>
 
 ### asrpackagename, asrclassname
@@ -569,11 +592,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 		:::XML 
 		<ASR>
-			< audionotificationenabled value="1"/>
+			<audionotificationenabled value="1"/>
 		</ASR> 
 
 ### asrpartialmodeenabled
-**Applies only to devices running Android**. Controls whether the speech engine displays recognized words in real time or all at once when speaking ends. **Enabled by default**. 
+**Applies only to devices running Android**. Controls whether the Android Speech Recognition (ASR) speech engine displays recognized words in real time or all at once when speaking ends. **Enabled by default**. 
 
 <!-- 
 from eng: 
@@ -587,7 +610,7 @@ from eng:
 
 		:::XML 
 		<ASR>
-			< asrpartialmodeenabled value="1"/>
+			<asrpartialmodeenabled value="1"/>
 		</ASR>
 
 
@@ -601,11 +624,31 @@ from eng:
 
 		:::XML 
 		<ASR>
-			< asrlanguage value="en-US"/>
+			<asrlanguage value="en-US"/>
 		</ASR>
+
+### disableasrduringnavigation
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the Android Speech Recognition (ASR) engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **Enabled by default** (ASR is inactive).
+
+**Possible Values**:
+
+* 0 - ASR remains enabled during page navigation
+* **1 - ASR is disabled during page navigation (default)**
+
+		:::XML
+		<TTS>
+		<disableTtsDuringnavigation value="1"/>
+		</TTS>
+
 
 <!-- 1/28/2020- need inputs
 ### disableasrduringnavigation
+
+<disableAsrDuringnavigation value="1"/>
+     Possible Values:
+        0 - The ASR will remain enabled during page navigation
+        1 - The ASR will be disabled during page navigation
+
 
  -->
 -----

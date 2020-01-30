@@ -165,11 +165,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  </Shortcut>
 	  
 	  <CustomKioskMode>
-		<setHomeKeyDisable	value ="0"/>
-		<setStatusBarDisable 	value ="0"/>
-		<setBackKeyDisable 	value ="0"/> 
-		<setVolumeButtonDisable 	value ="0"/>
-		<setRecentAppDisable    value ="0"/>
+		<setHomeKeyDisable value ="0"/>
+		<setStatusBarDisable value ="0"/>
+		<setBackKeyDisable value ="0"/> 
+		<setVolumeButtonDisable value ="0"/>
+		<setRecentAppDisable value ="0"/>
 	  </CustomKioskMode>
 
 	  <IME>
@@ -196,7 +196,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  </Logger>
 	    
 	  <FileLocations>
-	    <RegEXFile  value="file://%INSTALLDIR%/RegEx.xml"/>
+	    <RegEXFile value="file://%INSTALLDIR%/RegEx.xml"/>
 	  </FileLocations>
 	      
 	  <Screen>
@@ -241,8 +241,8 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	      
 	      <HTTP_Proxy value=""/>
 	      <HTTPS_Proxy value=""/>
-	      <isWindowsKey  value="0"/>
-	      <usedwforscanning  value="0"/>
+	      <isWindowsKey value="0"/>
+	      <usedwforscanning value="0"/>
 	      <DisableHardwareAcceleration value="0"/>
 		  
 		  <BackgroundOnHomeKeyPressed>
@@ -251,9 +251,9 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		  </BackgroundOnHomeKeyPressed>
 		  
 	      <IntentReceiver>
-	        <EnableReceiver  value="0"/>
-	        <IntentAction  value=""/>
-	        <IntentCategory  value=""/>
+	        <EnableReceiver value="0"/>
+	        <IntentAction value=""/>
+	        <IntentCategory value=""/>
 	      </IntentReceiver>
 		  
 	      <General>
@@ -281,11 +281,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	      </HTMLStyles>
 	      
 	      <SIP>
-	        <ResizeOnSIP  value="1"/>
+	        <ResizeOnSIP value="1"/>
 	      </SIP>
 
 	      <System>
-	        <LowBatteryScan  value="0"/>
+	        <LowBatteryScan value="0"/>
 	      </System>
 
 	      <Sound>

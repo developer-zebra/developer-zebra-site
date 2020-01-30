@@ -594,9 +594,9 @@ from eng:
 * **1 - ASR is disabled during page navigation (default)**
 
 		:::XML
-		<TTS>
+		<ASR>
 		<disableTtsDuringnavigation value="1"/>
-		</TTS>
+		</ASR>
 
 -----
 

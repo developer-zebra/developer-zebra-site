@@ -137,12 +137,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	// See "EB_VERSION tag" section above for usage details.   
 
 	<?xml version = "1.0"?>
-	<!--
-	EnterpriseBrowser_vEB_VERSION_INFO Configuration file
-	-->
+
 	<Configuration>
 	   <EB_VERSION value="EB_VERSION_INFO"/>
 	   HIDE_SYSTEM_BAR
+
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
 	  </DebugButtons>
@@ -172,9 +171,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		<setVolumeButtonDisable 	value ="0"/>
 		<setRecentAppDisable    value ="0"/>
 	  </CustomKioskMode>
+
 	  <IME>
 		<DisableAllIME value ="0"/>
 	  </IME>
+
 	  <ZoomKey>
 	    <ZoomInKey value=""/> 
 	    <ZoomOutKey value=""/> 

@@ -69,6 +69,12 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 * **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
 
+* **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#DisableTtsDuringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
+
+* The new TTS disablement feature is configurable using the **new [&lt;DelayforTTS&gt; tag](../configreference/#delayfortts)**.
+
+* **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
+
 <!-- waiting for inputs:
 <disablettsduringnavigation> 
 <disableasrduringnavigation> 

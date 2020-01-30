@@ -25,8 +25,9 @@ On Android devices, the keycode values of certain keys are sometimes not returne
 
 The following facts apply generally to Android keycode mapping for Enterprise Browser: 
 
-* Keycode mapping **requires Enterprise Browser 1.4** or higher.
+* Keycode mapping **requires Enterprise Browser 1.4** or later.
 * Mapping **requires a KeyCapture API**. [Read more](../../api/keycapture). 
+* **[Enterprise Keyboard](enterprise-keyboard)) is required on some devices** that include a hardware keyboard.   
 * Keycode mappings are contained in the `keycodemapping.xml` file.
 * The `keycodemapping.xml` file is the same for all versions of the KeyCapture API.
 * The mapping file is read each time Enterprise Browser is launched.
@@ -117,6 +118,8 @@ For example:
 &#55;. Copy the modified `keycodemapping.xml` file to its original location on the device, replacing the template. 
 
 &#56;. Relaunch the Enterprise Browser app and check that its keycodes are mapped as specified.  
+
+> **NOTE**: If keymapping failures occur or when working with devices that include a hardware keyboard, it might be necessary to disable the standard Android keyboard and install (or activate) the Zebra Enterprise Keyboard. See the [Enterprise Keyboard user guide](/enterprise-keyboard) for more information.  
 
 -----
 

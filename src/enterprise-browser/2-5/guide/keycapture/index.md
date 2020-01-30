@@ -119,12 +119,10 @@ For example:
 
 &#56;. Relaunch the Enterprise Browser app and check that its keycodes are mapped as specified.  
 
-> **NOTE: Keymapping failures sometimes occur on Android devices that include a hardware keyboard**. In some cases it might be necessary to disable the standard Android keyboard as the default SIP and install (or activate) the Zebra Enterprise Keyboard as the default. See the [Enterprise Keyboard user guide](/enterprise-keyboard) for more information.
-
 -----
 
 ## Mapping Hardware Keys
-The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios: 
+The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for these and many other scenarios: 
 * Zoom in and out of app page(s)
 * Show/hide custom buttons or keyboard layouts
 * Show/hide the address bar
@@ -136,6 +134,8 @@ The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be re
 * Activate DataWedge and/or the scanner beam
 * Clear cookies and/or the application cache
 * Enable voice input
+
+> **NOTE: Key mapping failures sometimes occur on Android devices that include a hardware keyboard**. In some cases it might be necessary to disable the standard Android keyboard as the default SIP and install (or activate) the Zebra Enterprise Keyboard as the default. See the [Enterprise Keyboard user guide](/enterprise-keyboard) for more information.
 
 <!-- removed per eng TUT-25446 
 ##### Hardware key remapping support:

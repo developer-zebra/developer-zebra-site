@@ -62,82 +62,47 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 #### New for All Apps
 * **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
-
 * **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
-
 * **The [&lt;ShowLicenseConfirmation&gt; tag](../configreference/#showlicenseconfirmation) is now supported on Android** devices (formerly Windows Mobile/CE-only), which toggles display of the “Licensed to…” dialog at launch. 
-
 * **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
-
 * **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#disablettsduringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
-
 * The new TTS disablement feature is configurable using the **new [&lt;DelayforTTS&gt; tag](../configreference/#delayfortts)**.
-
 * **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
-
-### New/Enhanced APIs
-* **A new [SerialComm API](../../api/serialcomm)** extends Enterprise Browser to allow apps to communicate with serial devices for: 
- * Read operations
- * Write operations
- * Setting serial port parameters such as speed, parity, data bits, etc.  
-
-* **An updated [Barcode API](../../api/barcode)** adds the following new properties:
- * barcodeCount 
- * instantReporting 
- * SceneDetectionQualifier  
- * dotCode<br> 
- &nbsp;&nbsp;&nbsp; * dotCodeInverse<br> 
- &nbsp;&nbsp;&nbsp; * dotCodeMirror <br>
- * gridmatrix <br>
- &nbsp;&nbsp;&nbsp; * gridmatrixinverse<br> 
- &nbsp;&nbsp;&nbsp; * gridmatrixmirror <br>
- * i2of5febraban 
- * gs1qrcode 
- * gs1datamatrix 
- * decodeScreenNotification 
- * decodeScreenNotificationTime 
- * decodeScreenTranslucencyLevel 
- * zoom 
- * signatureImageBitsPerPixel 
- * signatureImageFormat 
- * illuminationBrightness 
- * aimType <br>
- &nbsp;&nbsp;&nbsp; * PRESENTATION<br>
 
 #### New for SAP Apps
 
 * **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
-
 * **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
 
-<!-- 
-**The [Barcode API](../../api/barcode)** includes these enhancements: 
-* **New properties**:
- * barcodeCount
- * instantReporting 
- * SceneDetectionQualifier  
- * dotCode<br> 
- &nbsp;&nbsp; * dotCodeInverse <br>
- &nbsp;&nbsp; * dotCodeMirror <br>
- * gridmatrix <br>
- &nbsp;&nbsp; * gridmatrixinverse <br>
- &nbsp;&nbsp; * gridmatrixmirror <br>
- * i2of5febraban 
- * gs1qrcode 
- * gs1datamatrix 
- * decodeScreenNotification 
- * decodeScreenNotificationTime 
- * decodeScreenTranslucencyLevel 
- * zoom 
- * signatureImageBitsPerPixel 
- * signatureImageFormat 
- * illuminationBrightness 
- * aimType <br>
- &nbsp;&nbsp; * PRESENTATION  <br>
- -->
- 
 
-## New/Updated Guides
+### New/Enhanced APIs
+**<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 
+* Read operations
+* Write operations
+* Setting serial port parameters such as speed, parity, data bits, etc.  
+
+**<u>An updated [Barcode API](../../api/barcode)</u>** adds the following new properties:
+* barcodeCount 
+* instantReporting 
+* SceneDetectionQualifier  
+* dotCode 
+ * dotCodeInverse 
+ * dotCodeMirror
+* gridmatrix
+ * gridmatrixinverse
+ * gridmatrixmirror
+* i2of5febraban 
+* gs1qrcode 
+* gs1datamatrix 
+* decodeScreenNotification 
+* decodeScreenNotificationTime 
+* decodeScreenTranslucencyLevel 
+* zoom 
+* signatureImageBitsPerPixel 
+* signatureImageFormat 
+* illuminationBrightness 
+* aimType
+ * PRESENTATION
 
 ----- 
 

@@ -75,6 +75,9 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 * **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
 
+* **A new [SerialComm API](../../api/serialcomm)** extends Enterprise Browser to allow apps to communicate with serial devices.
+
+
 <!-- waiting for inputs:
 <disablettsduringnavigation> 
 <disableasrduringnavigation> 

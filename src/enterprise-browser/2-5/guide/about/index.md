@@ -69,80 +69,47 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 
 * **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
 
-* **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#DisableTtsDuringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
+* **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#disablettsduringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
 
 * The new TTS disablement feature is configurable using the **new [&lt;DelayforTTS&gt; tag](../configreference/#delayfortts)**.
 
 * **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
 
-* **A new [SerialComm API](../../api/serialcomm)** extends Enterprise Browser to allow apps to communicate with serial devices.
+### New/Enhanced APIs
+* **A new [SerialComm API](../../api/serialcomm)** extends Enterprise Browser to allow apps to communicate with serial devices for: 
+ * Read operations
+ * Write operations
+ * Setting serial port parameters such as speed, parity, data bits, etc.  
 
-
-<!-- waiting for inputs:
-<disablettsduringnavigation> 
-<disableasrduringnavigation> 
-<delayfortts> 
-
-* **Supports the ability to [disable Text-to-Speech during navigation](../configreference/#disablettsduringnavigation) on Android targets**, temporarily pausing the TTS engine until a desired page is reached.
-
-* **Supports the ability to [set a delay for Text-to-Speech](../configreference/#delayfortts) on Android targets**, after which the speech engine can continue processing speech.
-
-* **Supports the ability to [disable automatic speech recognition during navigation](../configreference/#disableasrduringnavigation) on Android targets with GMS**, temporarily pausing the ASR  engine until a desired page is reached.
-
--->
-
+* **An updated [Barcode API](../../api/barcode)** adds the following new properties:
+ * barcodeCount 
+ * instantReporting 
+ * SceneDetectionQualifier  
+ * dotCode<br> 
+ &nbsp;&nbsp;&nbsp; * dotCodeInverse<br> 
+ &nbsp;&nbsp;&nbsp; * dotCodeMirror <br>
+ * gridmatrix <br>
+ &nbsp;&nbsp;&nbsp; * gridmatrixinverse<br> 
+ &nbsp;&nbsp;&nbsp; * gridmatrixmirror <br>
+ * i2of5febraban 
+ * gs1qrcode 
+ * gs1datamatrix 
+ * decodeScreenNotification 
+ * decodeScreenNotificationTime 
+ * decodeScreenTranslucencyLevel 
+ * zoom 
+ * signatureImageBitsPerPixel 
+ * signatureImageFormat 
+ * illuminationBrightness 
+ * aimType <br>
+ &nbsp;&nbsp;&nbsp; * PRESENTATION<br>
 
 #### New for SAP Apps
 
 * **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
 
-* **Supports selection of a [Keyboard Type](../sapandroid/#configurationparameters)**, which can be used to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME to be used by an SAP app. 
+* **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
 
-
- <!-- 
-Serial JavaScript API Support 
-
-Enterprise Browser support Serial API set for JS API exposed for: 
-
-Read 
-
-Write 
-
-Serial port configuration parameters  
-
-For more information, see the Serial JavaScript API Page (Link To be updated) 
-
- 
-
-Enterprise Keyboard JavaScript Intent API Support 
-
-Enable/Disable Enterprise Keyboard on focus 
-
-Query keyboard layouts available on the device 
-
-Set keyboard layout for a specific context 
-
-Reset keyboard layout to default settings 
-
-For more information, see the Enterprise Keyboard JavaScript Intent APIs Page (Link To be updated) 
-
-
- 
- 
-
-ESN Support  
-
-New ESN API allows retrieval of the electronic serial number of the device. 
-
- 
-
-For more information, see the Configuration guide page. (Link To be updated) 
-
- 
- -->
- 
-
-### New/Enhanced APIs
 <!-- 
 **The [Barcode API](../../api/barcode)** includes these enhancements: 
 * **New properties**:

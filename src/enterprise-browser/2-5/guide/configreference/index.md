@@ -585,16 +585,16 @@ from eng:
 		</ASR>
 
 ### disableasrduringnavigation
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the Android Speech Recognition (ASR) engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **Enabled by default** (ASR is inactive).
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the Android Speech Recognition (ASR) engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **ASR is enabled during navigation by default**. 
 
 **Possible Values**:
 
-* 0 - ASR remains enabled during page navigation
-* **1 - ASR is disabled during page navigation (default)**
+* **0 - ASR remains enabled during page navigation (default)**
+* 1 - ASR is disabled during page navigation 
 
 		:::XML
 		<ASR>
-		<disableTtsDuringnavigation value="1"/>
+		<disableasrduringnavigation value="1"/>
 		</ASR>
 
 -----

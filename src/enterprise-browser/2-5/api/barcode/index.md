@@ -1,5 +1,9 @@
-#Barcode
-
+---
+title: Barcode
+productversion: '2.5'
+product: Enterprise Browser
+layout: guide.html
+---
 
 ## Overview
 The Barcode Module provides access to control the faddunctionality of the device's scanner. Check the platform indicators in each property or method section. In general if you are developing for a device with only a camera, the number of symbologies available to you will be limited to just the most common ones, eg EAN13, UPCA etc and your scanning will be via the device camera. If your application is running on more traditional Symbol Technologies' hardware you will have much finer control over a more fully featured Scanner, often with a choice of scanner hardware on the device. In general if you wish to capture a single barcode in a 'one shot' use case, eg your App just wants to capture a single barcode to be submitted to a price comparison website then use Barcode.take(callback); if your application is expecting a number of barcodes to be received, common in enterprise scenarios for example a user in a warehouse then use Barcode.enable(callback). Only the foreground application is given access to the scanning hardware, when an application is sent to the background its state will be saved and it will automatically relinquish control of the scanner. When brought back to the foreground, an application previously using the barcode API will have its previous configuration reapplied automatically. A VC70 scanner will work only if connected in SSI Mode.

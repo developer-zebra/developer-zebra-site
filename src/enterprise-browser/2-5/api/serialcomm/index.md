@@ -1,13 +1,14 @@
-#SerialComm
-
+---
+title: SerialComm
+productversion: '2.5'
+product: Enterprise Browser
+layout: guide.html
+---
 
 ## Overview
 Serial Comm  extension apiThis is Serial Comm  of API. Implementation contain in extension.
 
-
 ##Methods
-
-
 
 ### disable()
 This method disables serial channel to communicate with the remote device..

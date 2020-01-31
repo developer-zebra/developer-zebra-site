@@ -462,26 +462,25 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 			<TTSEngine value=" com.example.custom.tts"/>
 		</TTS>
 
-### disableTtsDuringnavigation
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the text-to-speech engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **Enabled by default** (TTS is inactive). Works with the &lt;delayfortts&gt; parameter, below. 
+### disablettsduringnavigation
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the text-to-speech engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **TTS is enabled during navigation by default**. Works with the &lt;delayfortts&gt; parameter, below. 
 
 **Possible Values**:
 
-* 0 - TTS remains enabled during page navigation
-* **1 - TTS is disabled during page navigation (default)**
+* **0 - TTS remains enabled during page navigation (default)**
+* 1 - TTS is disabled during page navigation
 
 		:::XML
 		<TTS>
 			<disableTtsDuringnavigation value="1"/>
 		</TTS>
 
-<!-- 
 ###delayfortts
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Used to set a delay (in milliseconds) before the text-to-speech engine is re-enabled after navigating pages. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Used to set a delay (in milliseconds) between completion of speech recognition by the Android Speech Recognition engine and its hand-off to the text-to-speech engine to be spoken. **Default = 0 (no delay)**. 
 
 **Possible Values**:
 
-* Integer from 0&ndash;100
+* Integer (in milliseconds)
 * **0 = no delay (default)**
 
 
@@ -489,7 +488,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		<TTS>
 		<delayfortts value="0"/>
 		</TTS>
--->
+
 
 ### asrenabled
 **Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether Android Speech Recognition (ASR) features are enabled in the app. **Enabled by default**. A value of “1” enables ASR and activates the ASR parameters that follow below. 

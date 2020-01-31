@@ -6,12 +6,15 @@ layout: guide.html
 ---
 
 ## Overview
-Serial Comm  extension apiThis is Serial Comm  of API. Implementation contain in extension.
+The SerialComm API is an extension to facilitate serial communications using Enterprise Browser.
+
+### Version History
+* **Introduced in EB 2.5**
 
 ##Methods
 
 ### disable()
-This method disables serial channel to communicate with the remote device..
+Disables the serial channel, preventing communication with a remote device.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -37,7 +40,7 @@ Synchronous Return:
 
 
 ### enable()
-This method enables the channel for the application to communicate with the remote device via Serial.
+Enables a serial channel for the application to communicate with a remote device.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -63,7 +66,7 @@ Synchronous Return:
 
 
 ### enumerate()
- Get the list of supported ports on the device..
+Gets a list of supported ports on the device.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -82,12 +85,12 @@ Synchronous Return:
 
 ####Method Access:
 
-* Class Method: This method can only be accessed via the API class object. 
+* Class Method: This method can be accessed only using the API class object. 
 	* <code>EB.SerialComm.enumerate()</code> 
 
 
 ### getDefault()
-This method will return an object that represents the default instance of the API Class. For example Camera.getDefault will return a Camera object that represents the default camera.
+Returns an object that represents the default instance of the API class. For example, `Camera.getDefault` returns a Camera object that represents the default camera.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -111,7 +114,7 @@ Synchronous Return:
 
 
 ### read(<span class="text-info">STRING</span> readTimeOut)
-This method reads the available data and returns immediately. If no data is available, waits till the timeout occurs. Null will be returned if there is no data available..
+Reads the available data and returns it immediately. If no data is available, waits until a timeout occurs. Null is returned if no data is available.
 
 ####Parameters
 <ul><li>readTimeOut : <span class='text-info'>STRING</span><p>Wait for data until timeout. The timeout unit is milli seconds. A timeout of zero means the calling read will wait forever unless interrupted by disable or release. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -137,7 +140,7 @@ Synchronous Return:
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.SerialComm</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
+Allows setting of attributes of the default object instance by passing in an object of the same class.
 
 ####Parameters
 <ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.SerialComm</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -153,7 +156,7 @@ Synchronous Return:
 
 ####Method Access:
 
-* Class Method: This method can only be accessed via the API class object. 
+* Class Method: This method can be accessed only via the API class object. 
 	* <code>EB.SerialComm.setDefault(<span class="text-info">SELF_INSTANCE: EB.SerialComm</span> defaultInstance)</code> 
 
 
@@ -177,7 +180,7 @@ Synchronous Return:
 
 ####Method Access:
 
-* Instance Method: This method can be accessed via an instance object of this class: 
+* Instance Method: This method can be accessed only via an instance object of this class: 
 	* <code>myObject.write(<span class="text-info">STRING</span> data)</code>
 * Default Instance: This method can be accessed via the default instance object of this class. 
 	* <code>EB.SerialComm.write(<span class="text-info">STRING</span> data)</code> 
@@ -282,7 +285,7 @@ Specifies the number of data bits for each character.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the flow control to be used..
+Specifies the flow control to be used.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -328,12 +331,12 @@ Returns the friendly name associated with the Serial Port.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the number of stop bits to be used..
+Specifies the number of stop bits to be used.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.SerialComm.ONE - String: ONE One stop bit is used
+* Constant: EB.SerialComm.ONE - String: ONE One stop bit is used.
 * Constant: EB.SerialComm.ONE_AND_HALF - String: ONE_AND_HALF 1.5 stop bits are used.
 * Constant: EB.SerialComm.TWO - String: TWO two stop bits are used.
 ####Access
@@ -354,7 +357,8 @@ Specifies the number of stop bits to be used..
 
 
 ###Enable a Serial Comm  port and read/write data
-This example shows how to enable/disable  your  device as well as read and write data. Note that this example assumes that your ebapi-modules.js file is in the same folder as the HTML invoking it.
+This example shows how to enable/disable a device and to read and write data. Note that this example assumes that the `ebapi-modules.js` file is in the same folder as the HTML invoking it.
+
 <pre><code>:::javascript
 
 							 &lt;html&gt;

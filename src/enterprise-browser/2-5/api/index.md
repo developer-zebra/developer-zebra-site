@@ -68,6 +68,8 @@ automenu:
           url: screenorientation
         - title: Sensor
           url: sensor
+        - title: SerialComm
+          url: serialcomm
         - title: SettingsButton
           url: settingsButton
         - title: SignalIndicators

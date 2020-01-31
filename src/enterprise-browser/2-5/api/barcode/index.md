@@ -6,8 +6,50 @@ layout: guide.html
 ---
 
 ## Overview
+
+
+The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 (and higher) allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which was introduced in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and newer installed**.
+
+If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app is to decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
+
+Check the platform indicators in each property or method section. If developing for a device with only a camera; scanning is possible only through that camera and the number of available symbologies is limited to the most common ones, such as EAN13 and UPCA. 
+
+
+#### Other Notes 
+* **Only foreground apps have access to scanning hardware**. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
+* **The VC70 scanner** works only if connected in SSI mode.
+* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; please select one or the other.
+* **EMDK 6.8 (or later) is required** to take full advantage of multi-barcode capabilities in this API. 
+
+## Enabling the API
+There are two methods of enabling the Barcode API:
+
+* Include all 'ebapi' modules
+* Include only the required API modules
+
+For either of these methods, one or more files must be copied to the device from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that contains the Enterprise Browser installation.
+
+### Include all API modules
+To include all APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
+
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
+
+> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (`index.html`). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
+
+### Include only the required modules
+To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+
+    :::html
+    <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
+    <script type="text/javascript" charset="utf-8" src="eb.barcode.js"></script>
+
+> In the lines above, notice that `ebapi.js` is included first, followed by `eb.barcode.js`, which is the Barcode API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
+
+
+<!-- 1/31/2020- original overview (below) replaced with above copy of prior version. 
 The Barcode Module provides access to control the faddunctionality of the device's scanner. Check the platform indicators in each property or method section. In general if you are developing for a device with only a camera, the number of symbologies available to you will be limited to just the most common ones, eg EAN13, UPCA etc and your scanning will be via the device camera. If your application is running on more traditional Symbol Technologies' hardware you will have much finer control over a more fully featured Scanner, often with a choice of scanner hardware on the device. In general if you wish to capture a single barcode in a 'one shot' use case, eg your App just wants to capture a single barcode to be submitted to a price comparison website then use Barcode.take(callback); if your application is expecting a number of barcodes to be received, common in enterprise scenarios for example a user in a warehouse then use Barcode.enable(callback). Only the foreground application is given access to the scanning hardware, when an application is sent to the background its state will be saved and it will automatically relinquish control of the scanner. When brought back to the foreground, an application previously using the barcode API will have its previous configuration reapplied automatically. A VC70 scanner will work only if connected in SSI Mode.
-        
+       
 ## Enabling the API
 There are two methods of enabling the Barcode API:
 
@@ -35,14 +77,14 @@ To include single APIs, you must first include the `ebapi.js` in your HTML as we
 
 The ebapi.js file is necessary for all single API inclusions.
         
-
+-->
 
 ##Methods
 
 
 
 ### addConnectionListener()
-If you are using an RS507/RS6000/RS4000 barcode scanner you can add a connection listener to receive connected or disconnected callbacks through this method.
+**If using an RS507, RS6000, or RS4000 barcode scanner**, use this method to add a connection listener to receive connected or disconnected callbacks.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -98,7 +140,7 @@ Synchronous Return:
 Instruct the connected RS507 scanner to perform some action.
 
 ####Parameters
-<ul><li>command : <span class='text-info'>STRING</span><p>The action the RS507 scanner should perform, can be 'Disconnect' which disconnects the bluetooth RS507; 'unpair' which unpairs the RS507 from the device for association with another device; 'StartPaging' or 'StopPaging' which will cause the RS507 scanner to start or stop emitting a beep, to allow it to be located. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>command : <span class='text-info'>STRING</span><p>The action the RS507 scanner should perform, can be 'Disconnect' which disconnects the Bluetooth RS507; 'unpair' which unpairs the RS507 from the device for association with another device; 'StartPaging' or 'StopPaging' which will cause the RS507 scanner to start or stop emitting a beep, to allow it to be located. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Returns
 Synchronous Return:
@@ -145,7 +187,7 @@ Synchronous Return:
 
 
 ### enable(<span class="text-info">HASH</span> propertyMap)
-Enabling the scanner puts it in a state where it will respond to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner on the device can be enabled at any one time, to switch between the imager and camera scanners (for example) then first disable the currently enabled scanner. If you do not specify a callback to this method you will received the scanned data as keystrokes. Note that it is necessary to enable the scanner on WM/CE devices prior to being able to retrieve the state of properties.
+Enabling the scanner puts it in a state where it will respond to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner on the device can be enabled at any one time, to switch between the imager and camera scanners (for example), first disable the currently enabled scanner. If a callback is not specified to this method, the scanned data is received as keystrokes. Note that it is necessary to enable the scanner on WM/CE devices prior to being able to retrieve the state of properties.
 
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -174,7 +216,7 @@ Synchronous Return:
 
 
 ### enumerate()
-Used to gain access to all scanner objects present on the device. For consumer devices you will most likely only have a single scanner, your device's camera but Enterprise grade hardware may have two or more scanners attached.
+Used to gain access to all scanner objects present on the device. Consumer devices will most likely have only a single scanner the device's camera. Enterprise-grade hardware often employs two or more scanning devices.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -200,7 +242,7 @@ Synchronous Return:
 
 
 ### getAllProperties()
-This method will return all of object/value pairs for the propertyNames of the API class.
+This method will return all of object/value pairs for the property Names of the API class.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -388,7 +430,7 @@ Synchronous Return:
 
 
 ### registerBluetoothStatus()
-If you are using an RS507 barcode scanner you can register to receive connected or disconnected events through this method.
+If using an RS507 barcode scanner, use this method to register to receive connected or disconnected events.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -415,7 +457,7 @@ Synchronous Return:
 
 
 ### removeConnectionListener()
-If you are using an RS507/RS6000/RS4000 barcode scanner you can remove a connection listener to receive connected or disconnected callbacks through this method.
+If using an RS507, RS6000 or RS4000 barcode scanner, use this method to remove a connection listener to receive connected or disconnected callbacks.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -463,7 +505,7 @@ Synchronous Return:
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
+This method sets the attributes of the default object instance by passing in an object of the same class.
 
 ####Parameters
 <ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.Barcode</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

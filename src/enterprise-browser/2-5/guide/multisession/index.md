@@ -5,7 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets that can be toggled without re-launching EB. **Multi-session capabilities can be invoked in two ways**, each with benefits and drawbacks. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets that can be toggled without re-launching EB. 
+
+> Multi-session capabilities can be invoked in two ways, each with benefits and drawbacks. **The main drawback common to both is the limitation placed on supported features** (as configured by tags in the `Config.xml` file). 
 
 -----
 
@@ -19,8 +21,8 @@ The **Shortcut Method** involves creating two or more EB-app shortcuts that can 
 
 ##### DISADVANTAGES
 * App-page content is persistent; it does not automatically update when the page is revisited.
-* Shortcuts deployed to Android 8.x Oreo and later (called "Pinned" Shortcuts) require permission from the device user at installation. ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for the device user to grant permission.
-* Only these config tags are supported in `Config.xml` files deployed through shortcuts: 
+* Shortcuts deployed to Android 8.x Oreo and later (called "Pinned" Shortcuts) require permission from the device user at installation.<br> ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for the device user to grant permission.
+* **Feature support is limited to the following config tags**: 
  * WebPageCapture
  * DebugButtonsEnabled
  * WebFiltering
@@ -50,7 +52,7 @@ With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the 
 ##### DISADVANTAGES
 * Tabs must be defined and deployed to the device in advance. 
 * Apps cannot be launched individually; they must always be launched as a group. 
-* Only these config tags are supported in `Config.xml` files deployed through Tab Bars: 
+* **Feature support is limited to the following config tags**: 
  * FullScreen
  * PageZoom
  * EnableZoom
@@ -126,9 +128,9 @@ Attributes under each &lt;tab&gt; tag apply to only to the tab defined in that n
 * boolean (*true* or ***false***) 
 
 ####config
-* **Optional**: Used to specify the path of the `Config.xml` file containing properties to use when creating the tab 
+* **Optional**: Used to specify the path of the `Config.xml` file with settings to apply to the tab contents 
 * Accepts a fully qualified path and file name of the `Config.xml` file relevant to the Action  
-* If missing or blank, uses the parent app's `Config.xml` file and [tag limitations](#tabbarusage) apply
+* If missing or blank, uses the parent app's `Config.xml` file and **[tag limitations](#tabbarmethod) apply**
 * string
 
 ####icon

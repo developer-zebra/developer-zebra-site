@@ -553,7 +553,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		</ASR> 
 
 ### asrpartialmodeenabled
-**Applies only to devices running Android**. Controls whether the Android Speech Recognition (ASR) speech engine displays recognized words in real time or all at once when speaking ends. **Enabled by default**. 
+**Applies only to devices running Android**. Controls whether the Android Speech Recognition (ASR) speech engine displays recognized words as soon as recognized (default) or all at once when speaking ends. **Enabled by default**. 
 
 <!-- 
 from eng: 
@@ -562,8 +562,8 @@ from eng:
  -->
 **Possible values**:
 
-* 0 - Disabled 
-* **1 - Enabled (default)**
+* 0 - Disabled - recognized words not displayed until speaking ends
+* **1 - Enabled (default)** - words displayed when recognized
 
 		:::XML 
 		<ASR>

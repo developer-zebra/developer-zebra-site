@@ -7,12 +7,12 @@ content-items:
     level: 4
     title: Usage Guide
     text: A step-by-step guide to first-time usage and deployment. 
-    url: /ekd/1-2/guide/usage
+    url: /ekd/1-4/guide/usage
   - type: section
     level: 4
     title: API Guide
     text: How to call custom EKD layouts from apps using Android intents.  
-    url: /ekd/1-2/guide/apis
+    url: /ekd/1-4/guide/apis
 product: Enterprise Keyboard Designer
 productversion: '1.4'
 ---

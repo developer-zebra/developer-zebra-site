@@ -5,6 +5,8 @@ product: Enterprise Keyboard Designer
 productversion: '1.4'
 ---
 
+**[What's new in v1.4](#whatsnewin14)**
+
 ## Overview
 
 Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized key layouts to enhance an application and enable efficient and accurate data entry. **Layouts created with EKD work on Zebra Android devices that use Zebra's [Enterprise Keyboard (EKB)](/enterprise-keyboard) 3.2 (and higher)**, and can be displayed **programmatically using Android intents or through DataWedge 7.4.44 (and higher)** when specific input situations arise. Learn more [about Enterprise Keyboard](/enterprise-keyboard) and [configuring DataWedge for EKB](/datawedge/latest/guide/utilities/ekb/).
@@ -37,6 +39,17 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Enterprise Keyboard Designer 1.2 (or higher) installed [(how to download)](../../download)
 * One or more [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html) running Android 7.x Nougat or higher
 * To display layouts on a device, it must have Zebra Enterprise Keyboard 3.2 (or higher) installed and set as the default input source. Learn more [about Enterprise Keyboard](/enterprise-keyboard).
+
+-----
+
+## What's new in v1.4
+
+
+* **<u>[Pre-defined Responses]()</u>** allows a list of "canned" text messages to be entered in EKD and displayed in a drop-down on devices running Enterprise Keyboard to simplify, quicken and standardize responses to common questions or situations. **Requires EKB 2.4 or later**. 
+
+* **<u>[Set Default Layout]()</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
+
+* **<u>A new Home button</u>** simplifies project start-up and importing of saved projects.  
 
 -----
 

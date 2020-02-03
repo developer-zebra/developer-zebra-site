@@ -18,5 +18,5 @@ menu:
     - icon: fa fa-search
       url: /ekd/1-2/search
 product: Enterprise Keyboard Designer
-productversion: '1.2'
+productversion: '1.4'
 ---

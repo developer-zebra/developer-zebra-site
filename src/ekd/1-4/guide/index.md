@@ -14,7 +14,7 @@ content-items:
     text: How to call custom EKD layouts from apps using Android intents.  
     url: /ekd/1-2/guide/apis
 product: Enterprise Keyboard Designer
-productversion: '1.2'
+productversion: '1.4'
 ---
 
 

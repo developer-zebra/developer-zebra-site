@@ -5,7 +5,7 @@ product: Enterprise Keyboard Designer
 productversion: '1.4'
 ---
 
-**[What's new in v1.4](#whatsnewin14)**
+#### [What's new in v1.4](#prerequisites)
 
 ## Overview
 
@@ -42,8 +42,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 -----
 
-## What's new in v1.4
-
+## What's New in v1.4
 
 * **<u>[Pre-defined Responses]()</u>** allows a list of "canned" text messages to be entered in EKD and displayed in a drop-down on devices running Enterprise Keyboard to simplify, quicken and standardize responses to common questions or situations. **Requires EKB 2.4 or later**. 
 

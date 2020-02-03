@@ -242,7 +242,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 #### To assign a keyEvent value: 
 
 1. In the Action section of the Button Properties panel, **select the desired Action from the drop-down**: 
-<img alt="" style="height:150px" src="ekd_keyaction.png"/>
+<img alt="" style="height:250px" src="ekd_keyaction.png "/>
  _Click image to enlarge, ESC to exit_.
 <br>
 2. For keycodes (i.e. key in caps, Unicode, etc), a box pops up <u>similar</u> to the one below. <br>**Enter a single value corresponding to the type of Action selected**:  
@@ -252,8 +252,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 3. **Repeat Steps 1 and 2** until each button contains the desired Action.  
 4. **Click "Save Layout" button** to store settings. 
 5. **Click "Save Project" to create a project file for deployment**.
-
-* **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
+* **Pre-defined command strings -** Enter an Android keyEvent value in the pop-up:
  * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered 
  * **key -** Outputs the lower-case character corresponding to the keyValue entered
  * **UC -** Outputs the Unicode character corresponding to the Unicode value entered
@@ -286,20 +285,32 @@ Button Actions supported by EKD include predefined command strings for generatin
  * customLayout
  * key-[any Content]
 
-<!-- 10/21/19- removed per eng.
-* The following reserved names must not be used in modal input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
- * Scantrigger
- * deviceInfo
- * calculator
- * switch-abc
- * switch-123
- * switch-&#35;&#42;&#47;
- * switch-scan
- * customLayout
- * key-keyincaps
-* While the key action can be configured to execute a command, Enterprise Keyboard currently supports only the “Scantrigger” action command, which scans a barcode using DataWedge.
-* The Enterprise Browser ButtonBar API accepts several predefined commands as button Actions. Please see [Enterprise Browser documentation](/enterprise-browser) for more information. 
- -->
+
+#### To create Pre-defined Response(s): 
+
+1. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**: 
+<img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+2. **Enter a desired response** in the pop-up:
+ <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
+3. Click "Add" to store response and add another.
+4. Repeat Steps 2 and 3 until all responses are stored.
+5. Click "Save" to store all responses and exit pop-up.
+
+##### Pre-defined responses are stored and deployed with the layput.
+
+#### To edit or delete Pre-defined Response(s): 
+
+1. Open the key layout that contains the response list to be edited or deleted.
+2. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
+ <img alt="" style="height:250px" src="EKD-14_pre-defined_text_3.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+3. **To Delete**, click the "X" and skip to Step 5.
+4. **To Edit**, click the edit button and modify response(s) as desired.   
+5. Click Save to store changes and exdit pop-up. 
+
 -----
 
 ### Style Properties

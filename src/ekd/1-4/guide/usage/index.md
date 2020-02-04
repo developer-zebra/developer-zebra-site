@@ -328,19 +328,24 @@ Predefined responses appear in a list for easy selection, improving the speed an
 #### To edit or delete Predefined Response(s): 
 
 1. Open the key layout that contains the response list to be edited or deleted.
-2. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
+2. In the layout section, select the button that contains the response list to be edited.  
+3. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
  <img alt="" style="height:250px" src="EKD-14_pre-defined_text_3.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
-3. **To Delete**, click the "X" and skip to Step 5.
-4. **To Edit**, click the edit button and modify response(s) as desired.   
-5. Click Save to store changes and exit the pop-up. 
-6. **Click "Save Layout" button** to store settings. 
-7. **Click "Save Project" to create a project file for deployment**.
+ A pop-up appears with the previously saved list of responses.
+ <img alt="" style="height:250px" src="edit_predefined_message_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+4. **To Delete**, click the "X" and <u>skip to Step 8</u>.
+5. **To Edit**, click the edit button for the response to be edited:<br>
+ <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
+ _Click image to enlarge, ESC to exit_.
+6. Edit the response as desired.
+7. Repeat Steps 5 and 6 until all predefined responses appear as desired.  
+8. **Click Save to store changes and exit the pop-up**. 
+9. **Click "Save Layout" button** to store settings. 
+10. **Click "Save Project" to create a project file for deployment**.
 <br>
-
-edit_predefined_message_1.png
-edit_predefined_message_2.png
 
 -----
 

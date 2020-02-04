@@ -295,9 +295,11 @@ Button Actions supported by EKD include predefined command strings for generatin
 -----
 ### Predefined Responses
 
-Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. **This feature requires EKB 3.4 or later**. 
+Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. 
 
-##### Example Responses:
+##### This feature requires EKB 3.4 or later. 
+
+**Example Responses**:
 * "I'm in a meeting...please call back later"
 * "Unable to talk now...please send a text"
 * "Application busy...try again later"
@@ -315,6 +317,9 @@ Predefined responses appear in a list for easy selection, improving the speed an
 3. Click "Add" to store response and add another.
 4. Repeat Steps 2 and 3 until all responses are stored.
 5. Click "Save" to store all responses and exit pop-up.
+6. **Click "Save Layout" button** to store settings. 
+7. **Click "Save Project" to create a project file for deployment**.
+<br>
 
 ##### Predefined responses are stored and deployed with the layout.
 
@@ -330,6 +335,12 @@ Predefined responses appear in a list for easy selection, improving the speed an
 3. **To Delete**, click the "X" and skip to Step 5.
 4. **To Edit**, click the edit button and modify response(s) as desired.   
 5. Click Save to store changes and exit the pop-up. 
+6. **Click "Save Layout" button** to store settings. 
+7. **Click "Save Project" to create a project file for deployment**.
+<br>
+
+edit_predefined_message_1.png
+edit_predefined_message_2.png
 
 -----
 

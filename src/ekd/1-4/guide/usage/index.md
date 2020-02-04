@@ -11,6 +11,11 @@ created: 9/9/2019
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
+### New in EKD 1.4
+Enterprise Keyboard Designer 1.4 (and later) includes the ability to create predefined responses that appear in a list for easy selection, which further improves the speed and accuracy of responses when using Enterprise Keyboard (**requires EKB 3.4 or later**). 
+
+Learn how in the [Predefined Responses section](#predefinedresponses). 
+
 ### General Usage Notes
 
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
@@ -55,7 +60,7 @@ Before beginning a layout, please make note of the following:
 
 * All buttons should be placed within the bounds of the layout background. A layout must not be resized so that it hides any key or button.
 * When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
-* Button positions sometimes shift slightly when switching layouts. 
+* Button positions sometimes shift slightly when switching layouts during design. 
 
 ### Using Drag-and-drop
 
@@ -239,6 +244,8 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 **Perform keyEvent Action -** Used to generate a particular keyEvent or output a character. Enter the key and value in key-value format from among the standard [Android keyEvent values](https://developer.android.com/reference/android/view/keyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
 
+-----
+
 #### To assign a keyEvent value: 
 
 1. In the Action section of the Button Properties panel, **select the desired Action from the drop-down**: 
@@ -252,7 +259,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 3. **Repeat Steps 1 and 2** until each button contains the desired Action.  
 4. **Click "Save Layout" button** to store settings. 
 5. **Click "Save Project" to create a project file for deployment**.
-* **Pre-defined command strings -** Enter an Android keyEvent value in the pop-up:
+* **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
  * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered 
  * **key -** Outputs the lower-case character corresponding to the keyValue entered
  * **UC -** Outputs the Unicode character corresponding to the Unicode value entered
@@ -285,8 +292,19 @@ Button Actions supported by EKD include predefined command strings for generatin
  * customLayout
  * key-[any Content]
 
+-----
+### Predefined Responses
 
-#### To create Pre-defined Response(s): 
+Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. **This feature requires EKB 3.4 or later**. 
+
+##### Example Responses:
+* "I'm in a meeting...please call back later"
+* "Unable to talk now...please send a text"
+* "Application busy...try again later"
+* "Please refer to patient record"
+* "Item out of stock"
+
+#### To create predefined response(s): 
 
 1. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**: 
 <img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
@@ -298,9 +316,11 @@ Button Actions supported by EKD include predefined command strings for generatin
 4. Repeat Steps 2 and 3 until all responses are stored.
 5. Click "Save" to store all responses and exit pop-up.
 
-##### Pre-defined responses are stored and deployed with the layput.
+##### Predefined responses are stored and deployed with the layout.
 
-#### To edit or delete Pre-defined Response(s): 
+-----
+
+#### To edit or delete Predefined Response(s): 
 
 1. Open the key layout that contains the response list to be edited or deleted.
 2. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
@@ -309,7 +329,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 <br>
 3. **To Delete**, click the "X" and skip to Step 5.
 4. **To Edit**, click the edit button and modify response(s) as desired.   
-5. Click Save to store changes and exdit pop-up. 
+5. Click Save to store changes and exit the pop-up. 
 
 -----
 

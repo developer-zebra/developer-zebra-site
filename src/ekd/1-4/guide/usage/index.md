@@ -104,7 +104,7 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
 8. **Repeat Step 7** until the layout is configured as desired. 
-9. **Click "Save Layout" button** to store settings. 
+9. **Click "Save Layout" button** to store the project settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----
@@ -160,7 +160,7 @@ Before beginning a layout, please make note of the following:
  <br>
 7. **Click "Save Grid Layout" button** to store settings.<br> **`NOTE:` Once a grid is saved, its properties cannot be changed**.
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
-9. **Click "Save Layout" button** to store settings. 
+9. **Click "Save Layout" button** to store the project settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
 
@@ -257,7 +257,7 @@ Button Actions supported by EKD include predefined command strings for generatin
  _Click image to enlarge, ESC to exit_.
 <br>
 3. **Repeat Steps 1 and 2** until each button contains the desired Action.  
-4. **Click "Save Layout" button** to store settings. 
+4. **Click "Save Layout" button** to store the project settings. 
 5. **Click "Save Project" to create a project file for deployment**.
 * **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
  * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered 
@@ -269,7 +269,7 @@ Button Actions supported by EKD include predefined command strings for generatin
  * **Switch-Scan -** Switches to the “scanning button" layout
  * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout
  * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up)
- * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge/7-4/guide/utilities/ekb/) for more information. **Supported only with Press Action**
+ * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
@@ -295,9 +295,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 -----
 ### Predefined Responses
 
-Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. 
-
-##### This feature requires EKB 3.4 or later. 
+Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. Any key can contain a list of predefined responses that pops up when that key is pressed. Tapping on an item from the list enters that response into the focused field as if it had been typed in manually. 
 
 **Example Responses**:
 * "I'm in a meeting...please call back later"
@@ -306,19 +304,22 @@ Predefined responses appear in a list for easy selection, improving the speed an
 * "Please refer to patient record"
 * "Item out of stock"
 
+> **NOTE**: This feature requires Enterprise Keyboard 3.4 or later on the device. 
+
 #### To create predefined response(s): 
 
-1. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**: 
-<img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
+1. Create (or select) a button in the current layout.  
+2. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**: 
+<img alt="" style="height:150px" src="EKD-14_pre-defined_text_1.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
-2. **Enter a desired response** in the pop-up:
+3. **Enter a desired response** in the pop-up:
  <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
-3. Click "Add" to store response and add another.
-4. Repeat Steps 2 and 3 until all responses are stored.
-5. Click "Save" to store all responses and exit pop-up.
-6. **Click "Save Layout" button** to store settings. 
-7. **Click "Save Project" to create a project file for deployment**.
+4. Click "Add" to store response and add another.
+5. Repeat Steps 3 and 4 until all responses are stored.
+6. Click "Save" to store all responses and exit pop-up.
+7. **Click "Save Layout" button** to store the project settings. 
+8. **Click "Save Project" to create a project file for deployment**.
 <br>
 
 ##### Predefined responses are stored and deployed with the layout.
@@ -327,23 +328,24 @@ Predefined responses appear in a list for easy selection, improving the speed an
 
 #### To edit or delete Predefined Response(s): 
 
-1. Open the key layout that contains the response list to be edited or deleted.
-2. In the layout section, select the button that contains the response list to be edited.  
+1. **Open the key layout project that contains the response list(s)** to be modified.
+2. In the layout, **select the button that contains the response list(s)** to be edited.  
 3. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
- <img alt="" style="height:250px" src="EKD-14_pre-defined_text_3.png"/>
+ <img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
- A pop-up appears with the previously saved list of responses.
+ A pop-up appears with the list of responses currently stored with that button:
  <img alt="" style="height:250px" src="edit_predefined_message_1.png"/>
  _Click image to enlarge, ESC to exit_.
-4. **To Delete**, click the "X" and <u>skip to Step 8</u>.
+4. **To Delete a response**, click the "X" for the response(s). **<u>Then skip to Step 8</u>**.<br>
+ `WARNING:` Responses are deleted immediately. This action cannot be undone. 
 5. **To Edit**, click the edit button for the response to be edited:<br>
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
 6. Edit the response as desired.
-7. Repeat Steps 5 and 6 until all predefined responses appear as desired.  
+7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
-9. **Click "Save Layout" button** to store settings. 
+9. **Click "Save Layout" button** to store the new project settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
 
@@ -496,7 +498,7 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
   
 ## VI. Switch Layouts
 
-This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. 
+This section explains the program logic involved when switching layouts with Android intents when focus of an input field changes. 
 
 > For programming guidance, see [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis). <br>
 > For changing layouts through DataWedge, see the [DataWedge EKB configuration guide](/datawedge/latest/guide/utilities/ekb/). 
@@ -508,13 +510,11 @@ This section explains the program logic involved with switching layouts with And
  `/enterprise/device/settings/ekb/config/`
 * **Layout file must contain ALL layouts** being used by apps on the device
 
-> See the [Enterprise Keyboard Designer Guide](/ekd) for help creating a layout file. 
-
 -----
 
 ### Use Case 1
 
-This case describes an Android app with two text input fields. Substitute sample names shown below with those in the deployed [layout definition file](../deploy). 
+This case describes an Android app with two text input fields. Substitute sample names shown below with those in the deployed layout definition file (i.e. `myLayout.encrypted`). [More info](/enterprise-keyboard/latest/guide/deploy/). 
 
 * `editText1` input field uses the standard Enterprise Keyboard fixed layout, which includes numeric, alpha-numeric, scan and symbol keyboards manually switchable by the user as needed.  
 * `editText2` input field uses a custom layout made with EKD that contains keys specifically designed for a particular type of input. 
@@ -573,7 +573,7 @@ Layout projects can be saved and modified later for use on different devices, ad
 6. **Edit the layout as desired**.
 7. **To add a new layout to the project**, click the [+] icon on the EKD menu and follow steps in the [Create Layout(s)](#iicreatelayouts) section. 
 8. **Repeat Step 7** until the layout is configured as desired. 
-9. **Click "Save Layout" button** to store settings. 
+9. **Click "Save Layout" button** to store the new project settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----

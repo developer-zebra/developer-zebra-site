@@ -104,10 +104,13 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
 8. **Repeat Step 7** until the layout is configured as desired. 
-9. **Click "Save Layout" button** to store the project settings. 
+9. **Click "Save Layout" button** to store the project settings.<br>
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
- _Click image to enlarge, ESC to exit_.
 10. **Click "Save Project" to create a project file for deployment**.
+
+> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
+
 
 -----
 
@@ -162,9 +165,13 @@ Before beginning a layout, please make note of the following:
  <br>
 7. **Click "Save Grid Layout" button** to store settings.<br> **`NOTE:` Once a grid is saved, its properties cannot be changed**.
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
-9. **Click "Save Layout" button** to store the project settings. 
+9. **Click "Save Layout" button** to store the project settings.<br>
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
+
+> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
 
 #### Grid Usage Notes
 * Button and layout property settings are enabled only after saving the Grid layout.
@@ -320,11 +327,15 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
-7. **Click "Save Layout" button** to store the project settings. 
+7. **Click "Save Layout" button** to store the new project settings.<br>
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 8. **Click "Save Project" to create a project file for deployment**.
 <br>
 
 ##### Predefined responses are stored and deployed with the layout.
+
+> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 
@@ -347,9 +358,15 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 6. **Edit the response** as desired and **click Submit**.
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
-9. **Click "Save Layout" button** to store the new project settings. 
+9. **Click "Save Layout" button** to store the new project settings.<br>
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
+
+##### Predefined responses are stored and deployed with the layout.
+
+> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 

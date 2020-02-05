@@ -26,6 +26,8 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Layouts that combine function keys with buttons for scanning or other purposes
 * Key and button layouts with custom colors, images and levels of transparency
 * Layouts of custom size or shape (i.e. narrow, vertical, horizontal, etc.)
+* Customized responses that pop up in a list when a button is pressed 
+* Custom key layouts for Zebra Enterprise Browser (EB 2.5 or later only)
 
 #### DO NOT USE EKD:
 * To create a general-purpose device keyboard replacement
@@ -49,6 +51,8 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * **<u>[Set Default Layout]()</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
 
 * **<u>A new Home button</u>** simplifies project start-up and importing of saved projects.  
+
+* **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
 
 -----
 

@@ -14,7 +14,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 ### New in EKD 1.4
 Enterprise Keyboard Designer 1.4 (and later) includes the ability to create predefined responses that appear in a list for easy selection, which further improves the speed and accuracy of responses when using Enterprise Keyboard (**requires EKB 3.4 or later**). 
 
-Learn how in the [Predefined Responses section](#predefinedresponses). 
+Learn more in the [Predefined Responses section](#predefinedresponses). 
 
 ### General Usage Notes
 
@@ -295,7 +295,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 -----
 ### Predefined Responses
 
-Predefined responses appear in a list for easy selection, improving the speed and accuracy of responses when using Enterprise Keyboard. Any key can contain a list of predefined responses that pops up when that key is pressed. Tapping on an item from the list enters that response into the focused field as if it had been typed in manually. 
+Predefined responses can be added to any key and appear in a pop-up list for easy selection when that key is pressed, improving the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
 
 **Example Responses**:
 * "I'm in a meeting...please call back later"
@@ -304,18 +304,18 @@ Predefined responses appear in a list for easy selection, improving the speed an
 * "Please refer to patient record"
 * "Item out of stock"
 
-> **NOTE**: This feature requires Enterprise Keyboard 3.4 or later on the device. 
+> **NOTE: This feature requires Enterprise Keyboard 3.4 or later on the device**. 
 
 #### To create predefined response(s): 
 
-1. Create (or select) a button in the current layout.  
-2. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**: 
+1. **Create (or select) a button** in the current layout.  
+2. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**: 
 <img alt="" style="height:150px" src="EKD-14_pre-defined_text_1.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
 3. **Enter a desired response** in the pop-up:
  <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
-4. Click "Add" to store response and add another.
+4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
 7. **Click "Save Layout" button** to store the project settings. 
@@ -330,19 +330,19 @@ Predefined responses appear in a list for easy selection, improving the speed an
 
 1. **Open the key layout project that contains the response list(s)** to be modified.
 2. In the layout, **select the button that contains the response list(s)** to be edited.  
-3. In the Action section of the Button Properties panel, **select "Canned text" from the drop-down**:
+3. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**:
  <img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
  A pop-up appears with the list of responses currently stored with that button:
  <img alt="" style="height:250px" src="edit_predefined_message_1.png"/>
  _Click image to enlarge, ESC to exit_.
-4. **To Delete a response**, click the "X" for the response(s). **<u>Then skip to Step 8</u>**.<br>
+4. **To Delete response(s)**, click the "X" for the response(s). **<u>Then skip to Step 8</u>**.<br>
  `WARNING:` Responses are deleted immediately. This action cannot be undone. 
-5. **To Edit**, click the edit button for the response to be edited:<br>
+5. **To Edit, click the edit button** for the response to be edited:<br>
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
-6. Edit the response as desired.
+6. **Edit the response** as desired.
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings. 

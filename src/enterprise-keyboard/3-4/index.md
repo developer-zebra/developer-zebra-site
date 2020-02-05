@@ -22,5 +22,5 @@ menu:
     - icon: fa fa-search
       url: /enterprise-keyboard/3-2/search
 product: Enterprise Keyboard
-productversion: '3.2'
+productversion: '3.4'
 ---

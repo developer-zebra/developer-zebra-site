@@ -116,7 +116,7 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ### Preferences
 The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity.
 
-**NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default layout** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/1-4/guide/usage/#iicreatelayouts) for more information. 
+**NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default layout** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/latest/guide/usage/#iicreatelayouts) for more information. 
 
 **Default settings are shown here**:  
 
@@ -173,6 +173,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 * Enabling the Alphanumeric tab disables remapping of the Numeric P4 and Symbol P1 keys.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
 * Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
+* A custom key layout makde with Enterprise Keyboard Designer 1.4 (or later) can be selected as the default layout whenever an input field receives focus (**requires EKB 3.4 or later**). [More info](/ekd/latest/guide/usage/#iicreatelayouts).
 
 ------
 

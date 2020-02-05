@@ -114,9 +114,7 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ------
 
 ### Preferences
-The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity.
-
-**NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default layout** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/latest/guide/usage/#iicreatelayouts) for more information. 
+The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. **NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default layout** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/latest/guide/usage/#iicreatelayouts) for more information. 
 
 **Default settings are shown here**:  
 

@@ -34,33 +34,24 @@ This version of Enterprise Keyboard includes the following languages:
 * [Text correction features](../settings#textcorrection)
 * The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
 
-
 -----
 
-
-## New in v3.2
+## New in v3.4
 
 ### Added Features 
 
-* **Can be loaded as a user app** onto any supported device.  
-* **Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
-* **New [EKB API guide](../apis)** details the usage of custom key layouts. 
-* **Now supports devices running Android 9.2 Pie**.
-* **No longer supports devices running Android 6.x Marshmallow, 5.x Lollipop, 4.x KitKat**. 
+**Enterprise Keyboard can now display predefined responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). Selected responses are sent to the focused input field as if typed in manually. 
+
+**A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
+
+> For more information about EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
 
 ### Supported Devices
 
-Support added for the following Zebra devices: 
-
-* **Running Android 9.x Pie**: 
- * **PS20**  
- * **TC52**
- * **TC72**
-* **Running Android 8.x Oreo**: 
- * **EC30**
- * **L10**
+No devices were added to or removed from the supported device list for this release. 
 
 > **See all [devices supported by EKB](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
+
 
 -----
 
@@ -118,6 +109,30 @@ _Stock Android keyboard_:
 
 ## Version History
 
+### Added in v3.2
+
+#### New Features 
+
+* **Can be loaded as a user app** onto any supported device.  
+* **Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
+* **New [EKB API guide](../apis)** details the usage of custom key layouts. 
+* **Now supports devices running Android 9.2 Pie**.
+* **No longer supports devices running Android 6.x Marshmallow, 5.x Lollipop, 4.x KitKat**. 
+
+#### Supported Devices
+
+Support added for the following Zebra devices: 
+
+* **Running Android 9.x Pie**: 
+ * **PS20**  
+ * **TC52**
+ * **TC72**
+* **Running Android 8.x Oreo**: 
+ * **EC30**
+ * **L10**
+
+-----
+
 ### Added in v2.2
 
 #### New Features 
@@ -130,6 +145,8 @@ _Stock Android keyboard_:
 
 * **VC8300**
 
+-----
+
 ### Added in v2.1
 
 #### Supported Devices
@@ -140,6 +157,8 @@ _Stock Android keyboard_:
 * **CC610**
 * **MC93**
 * **TC8200**
+
+-----
 
 ### Added in v2.0
 
@@ -167,6 +186,8 @@ See all [supported Zebra devices](../../download).
 
 * **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
 * **[Multi-user Mode](../setup/#multiusermode) -** supports deployment of Primary and Secondary Users, the latter of which are blocked from making EKB settings changes on the device. **Supported only on SDM660-platform devices running Android 8.x Oreo**.
+
+-----
 
 ### Changes in v1.9
 

@@ -12,9 +12,16 @@ created: 9/9/2019
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
 ### New in EKD 1.4
-Enterprise Keyboard Designer 1.4 (and later) includes the ability to create predefined responses that appear in a list for easy selection, which further improves the speed and accuracy of responses when using Enterprise Keyboard (**requires EKB 3.4 or later**). 
 
-Learn more in the [Predefined Responses section](#predefinedresponses). 
+##### Enterprise Keyboard Designer 1.4 (and later) includes: 
+
+* **The ability to create predefined responses** that appear in a list for easy selection, which further improves the speed and accuracy of responses when using Enterprise Keyboard (**requires EKB 3.4 or later**). [Learn more](#predefinedresponses). 
+
+* **The ability to set a default custom layout** to be displayed whenever an input field receives focus. [Learn more](#iicreatelayouts).
+
+> **NOTE: Both of these new features require Enterprise Keyboard 3.4 or later on the device**. 
+
+-----
 
 ### General Usage Notes
 

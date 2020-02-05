@@ -70,7 +70,7 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 2. **Click the [+] icon to create a new layout**:
- <img alt="" style="height:350px" src="ekd_layout_names.png"/>
+ <img alt="" style="height:350px" src="EKD_14_set_default_layout_2.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -105,6 +105,8 @@ Before beginning a layout, please make note of the following:
  <br>
 8. **Repeat Step 7** until the layout is configured as desired. 
 9. **Click "Save Layout" button** to store the project settings. 
+ <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
+ _Click image to enlarge, ESC to exit_.
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----
@@ -119,7 +121,7 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 2. **Click the [+] icon to create a new layout**:
- <img alt="" style="height:350px" src="ekd_layout_names.png"/>
+ <img alt="" style="height:350px" src="EKD_14_set_default_layout_2.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -342,7 +344,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 5. **To Edit, click the edit button** for the response to be edited:<br>
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
-6. **Edit the response** as desired.
+6. **Edit the response** as desired and **click Submit**.
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings. 

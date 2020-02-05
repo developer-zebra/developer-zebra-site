@@ -38,13 +38,13 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v3.4
 
-### Added Features 
+### New Features 
 
 **Enterprise Keyboard can now display predefined responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). Selected responses are sent to the focused input field as if typed in manually. 
 
 **A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
 
-> For more information about EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
+> For more information about these new EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
 
 ### Supported Devices
 

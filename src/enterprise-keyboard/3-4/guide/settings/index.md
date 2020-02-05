@@ -114,7 +114,11 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ------
 
 ### Preferences
-The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. Default settings are shown here:  
+The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity.
+
+**NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default layout** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/1-4/guide/usage/#iicreatelayouts) for more information. 
+
+**Default settings are shown here**:  
 
 <img alt="" style="height:350px" src="ekb_prefs.png"/>
 <img alt="" style="height:91px" src="ekb1.6_prefs_crop.png"/>
@@ -173,7 +177,9 @@ The Preferences section controls keypress feedback, default layout and tab selec
 ------
 
 ### Text Correction
-Text Correction controls automatic corrections to typed text based the predefined parameters explained below. This functionality is provided by the Personal Dictionary, which also permits lists of custom or industry-specific terms and shortcuts (abbreviations) to be loaded into a device and presented as substitution suggestions along with those of the selected language(s).
+Text Correction controls automatic corrections to typed text based the predefined parameters explained below. This functionality is provided by the Personal Dictionary, which also permits lists of custom or industry-specific terms and shortcuts (abbreviations) to be loaded into a device and presented as substitution suggestions along with those of the selected language(s). 
+
+**NOTE**: Enterprise Keyboard 3.4 (and later) supports predefined response, which presents a list of textual phrases when a key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. See [Enterprise Keyboard Designer](http://zebra-stage.github.io/ekd/latest/guide/usage/#predefinedresponses) to learn more. 
 
 <img alt="" style="height:350px" src="pref_text_2.png"/>
 <br>

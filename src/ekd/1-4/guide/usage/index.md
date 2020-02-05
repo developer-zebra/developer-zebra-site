@@ -109,8 +109,7 @@ Before beginning a layout, please make note of the following:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 
-> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
-
+> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 
@@ -171,7 +170,7 @@ Before beginning a layout, please make note of the following:
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
 
-> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
+> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 #### Grid Usage Notes
 * Button and layout property settings are enabled only after saving the Grid layout.
@@ -335,7 +334,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 
 ##### Predefined responses are stored and deployed with the layout.
 
-> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
+> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 
@@ -366,7 +365,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 
 ##### Predefined responses are stored and deployed with the layout.
 
-> **NOTE: The default layout feature requires Enterprise Keyboard 3.4 or later on the device**. 
+> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 

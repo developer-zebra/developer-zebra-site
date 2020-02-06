@@ -25,7 +25,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 ### General Usage Notes
 
-* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
+* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can cause unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * The "Switch-Scan" Press Action (which is supposed to invoke the EKB "scan" layout) sometimes brings up a different layout. 
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
@@ -314,7 +314,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 A list of predefined responses can be assigned to any key and appears in a pop-up list when that key is pressed. This can help improve the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
 
-`IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. 
+`IMPORTANT:` **Use of the plus sign (+) in predefined responses can cause unpredictable behavior**. 
 
 **Example Responses**:
 * "I'm in a meeting...please call back later"
@@ -334,7 +334,7 @@ A list of predefined responses can be assigned to any key and appears in a pop-u
 <br>
 3. **Enter a desired response** in the pop-up:
  <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
- `IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. <br>
+ `IMPORTANT:` **Use of the plus sign (+) in predefined responses can cause unpredictable behavior**. <br>
 4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
@@ -367,7 +367,7 @@ A list of predefined responses can be assigned to any key and appears in a pop-u
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
 6. **Edit the response** as desired and **click Submit**.<br>
- `IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. 
+ `IMPORTANT:` **Use of the plus sign (+) in predefined responses can cause unpredictable behavior**. 
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings.<br>

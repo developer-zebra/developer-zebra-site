@@ -16,6 +16,8 @@ Enterprise Keyboard (EKB) enhances and adds customization features onto the stoc
 * [Finger-flicks](#preferences) for typing long-press characters
 * [Swipe-to-switch](#preferences) key layouts 
 * Populate Android's [Personal Dictionary](#personaldictionary) with custom terms and abbreviations
+* `NEW in v3.4:` Assign lists of [predefined text responses](#textcorrection) to keys
+* `NEW in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 
 Also see [Customizing Keyboard Settings](#customizingkeyboardsettings) section for details. 
 

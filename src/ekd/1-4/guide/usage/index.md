@@ -112,7 +112,7 @@ Before beginning a layout, please make note of the following:
  <br>
 8. **Repeat Step 7** until the layout is configured as desired. 
 9. **Click "Save Layout" button** to store the project settings.<br>
- **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 
@@ -172,7 +172,7 @@ Before beginning a layout, please make note of the following:
 7. **Click "Save Grid Layout" button** to store settings.<br> **`NOTE:` Once a grid is saved, its properties cannot be changed**.
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
 9. **Click "Save Layout" button** to store the project settings.<br>
- **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
@@ -334,7 +334,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
 7. **Click "Save Layout" button** to store the new project settings.<br>
- **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 8. **Click "Save Project" to create a project file for deployment**.
 <br>
@@ -365,7 +365,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings.<br>
- **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's radio button:
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 10. **Click "Save Project" to create a project file for deployment**.
 <br>

@@ -275,16 +275,17 @@ Button Actions supported by EKD include predefined command strings for generatin
 4. **Click "Save Layout" button** to store the project settings. 
 5. **Click "Save Project" to create a project file for deployment**.
 * **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
- * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered 
- * **key -** Outputs the lower-case character corresponding to the keyValue entered
- * **UC -** Outputs the Unicode character corresponding to the Unicode value entered
+ * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered.
+ * **key -** Outputs the lower-case character corresponding to the keyValue entered.
+ * **"Canned text" -** displays a list of [predefined responses](#predefinedresponses) (see below).
+ * **UC -** Outputs the Unicode character corresponding to the Unicode value entered.
 * **Actions to switch the layout -** Use the key-value pairs below to switch to a specific layout. 
- * **Switch-abc -** Switches to the Enterprise Keyboard standard alpha-numeric layout
- * **Switch-123 -** Switches to the fixed numeric layout
- * **Switch-Scan -** Switches to the “scanning button" layout
- * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout
- * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up)
- * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**
+ * **Switch-abc -** Switches to the Enterprise Keyboard standard alpha-numeric layout.
+ * **Switch-123 -** Switches to the fixed numeric layout.
+ * **Switch-Scan -** Switches to the “scanning button" layout.
+ * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout.
+ * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up).
+ * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**.
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
@@ -308,9 +309,12 @@ Button Actions supported by EKD include predefined command strings for generatin
  * key-[any Content]
 
 -----
+
 ### Predefined Responses
 
-Predefined responses can be added to any key and appear in a pop-up list for easy selection when that key is pressed, improving the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
+A list of predefined responses can be assigned to any key and appears in a pop-up list when that key is pressed. This can help improve the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
+
+`IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. 
 
 **Example Responses**:
 * "I'm in a meeting...please call back later"
@@ -330,6 +334,7 @@ Predefined responses can be added to any key and appear in a pop-up list for eas
 <br>
 3. **Enter a desired response** in the pop-up:
  <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
+ `IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. <br>
 4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.

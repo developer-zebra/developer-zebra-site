@@ -366,7 +366,8 @@ A list of predefined responses can be assigned to any key and appears in a pop-u
 5. **To Edit, click the edit button** for the response to be edited:<br>
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
-6. **Edit the response** as desired and **click Submit**.
+6. **Edit the response** as desired and **click Submit**.<br>
+ `IMPORTANT:` **Use of the plus sign (+) in predefined responses can result in unpredictable behavior**. 
 7. **Repeat Steps 5 and 6** until all predefined responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings.<br>

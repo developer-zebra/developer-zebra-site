@@ -396,7 +396,5 @@ It's important to note that **control of a device's barcode scanning hardware is
 
 ## Also See
 
-* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Section of this guide with further details 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-
-
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering

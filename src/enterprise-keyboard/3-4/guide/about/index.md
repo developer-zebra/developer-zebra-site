@@ -40,17 +40,20 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New Features 
 
-**Enterprise Keyboard can now display predefined responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). Selected responses are sent to the focused input field as if typed in manually. 
+* **Enterprise Keyboard can now display predefined responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). Selected responses are sent to the focused input field as if typed in manually. 
 
-**A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
+* **A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
 
 > For more information about these new EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
 
+### New Tutorials
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Layouts by Zebra engineering
+
 ### Supported Devices
 
-No devices were added to or removed from the supported device list for this release. 
-
-> **See all [devices supported by EKB](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
+No devices were added to or removed from the **[supported device list](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**. 
 
 
 -----

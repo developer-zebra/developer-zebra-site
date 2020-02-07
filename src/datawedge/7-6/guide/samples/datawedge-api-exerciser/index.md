@@ -23,7 +23,7 @@ screenshots:
 layout: sample.html
 product: DataWedge
 productversion: '7.6'
-date: 2018-11-07
+date: 2018-07-07
 ---
 
 ##Overview 

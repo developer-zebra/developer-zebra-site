@@ -54,6 +54,14 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 * **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
 
+
+### Also See
+
+#### New Tutorials
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Layouts by Zebra engineering
+
 -----
 
 ## Usage Snapshot
@@ -79,3 +87,4 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 > **`NOTE:`** This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 
 -----
+

@@ -25,6 +25,11 @@ Enterprise Keyboard APIs allow the following functions:
 
 > * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
 
+### Also See
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
+
 -----
 
 ### `IMPORTANT - PLEASE READ`

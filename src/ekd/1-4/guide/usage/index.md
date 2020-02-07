@@ -36,6 +36,12 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 
+### Also See
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
+
+
 -----
 
 ## I. Create Project
@@ -608,6 +614,12 @@ Layout projects can be saved and modified later for use on different devices, ad
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----
+
+## Also See
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
+
 
 <!-- 10/21/19- removed per eng. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 

@@ -7,7 +7,7 @@ productversion: '3.4'
 
 ## Overview
 
-Enterprise Keyboard (EKB) enhances and adds customization features onto the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. 
+Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock Android keyboard that provides a more effective means of inputting data into Zebra devices. 
 
 #### Primary EKB Benefits: 
 * [Quick switching between languages](#languages)
@@ -19,7 +19,11 @@ Enterprise Keyboard (EKB) enhances and adds customization features onto the stoc
 * `NEW in v3.4:` Assign lists of [predefined text responses](#textcorrection) to keys
 * `NEW in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 
-Also see [Customizing Keyboard Settings](#customizingkeyboardsettings) section for details. 
+#### Also See 
+
+* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Section of this guide with further details 
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+
 
 ### Custom Key Layouts
 
@@ -150,7 +154,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
  -->
 
 ##### On devices with MX 7.1 and higher only: 
-<b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
+<b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 
 <img alt="" style="height:350px" src="ekb1.6_prefs.png"/>
@@ -388,5 +392,11 @@ The Tab key is designed to move the cursor or UI focus from one text field or UI
 ## Scanner Control
 It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
 
+-----
+
+## Also See
+
+* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Section of this guide with further details 
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
 

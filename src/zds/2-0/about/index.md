@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /zds/2-0/about
-    - title: Set up
+    - title: Setup
       url: /zds/2-0/setup
     - title: FAQ
       url: /zds/2-0/faq
@@ -21,14 +21,12 @@ Zebra Data Service (ZDS) agent software is a continuous background service runni
 
 **Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
 
-* **ELIGIBILITY -** Devices must support ZDS Agent Software. Most Zebra Android devices with
-KitKat (or later) operating systems have ZDS Agent Software preinstalled. For a list of
-supported devices, please see page 19 of this guide.
-* **ENABLEMENT -** ZDS Agent Software must be enabled on the device. Eligible devices are
-shipped with the ZDS Agent enabled by default. See page 11 of this guide to determine
-whether ZDS Agent is running and enabled on your device(s).
-* **CONNECTIVITY -** The device(s) must be connected to the Internet.
-* **PERMISSION -** Your firewall must allow communication with Zebra’s server at [analytics.zebra.com](http://analytics.zebra.com) server port 443.
+* **ELIGIBILITY -** Device(s) must support ZDS agent software. Most Zebra Android devices with
+KitKat (or later) come with ZDS preinstalled. See all [supported devices](#devicesupport).
+* **ENABLEMENT -** ZDS agent software must be enabled on the device. Eligible devices are
+shipped with ZDS enabled by default. See the [Setup guide](../setup) for more info.
+* **CONNECTIVITY -** Device(s) must be connected to the internet.
+* **PERMISSION -** The organization's firewall must allow communication with the Zebra’s server at [analytics.zebra.com](http://analytics.zebra.com) using server port 443.
 
 **NOTE**: If Foresight reports appear blank or devices are missing from the reports, please confirm that ***ALL***
 of the above requirements are met.
@@ -47,6 +45,18 @@ of the above requirements are met.
 ## Version History
 
 ### Added in v1.0
+
+-----
+
+## Device Support
+
+ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
+
+<img alt="image" style="height:650px" src="zds_20_supported_devices.png"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
+
+
 
 -----
 

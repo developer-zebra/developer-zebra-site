@@ -283,6 +283,8 @@ products:
         url: /search
 menu:
   items:
+    - image: /new/new_icon.png 
+      url: /new
     - title: ABOUT TECHDOCS
       url: /about
     - title: I NEED TOOLS FOR...

@@ -83,26 +83,22 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        
-
-
                         {{#each this.menu.items}}
                         <li >
                             <a href="{{this.url}}">
                                 {{#if this.icon}}
                                     <i class="{{this.icon}}"></i>
                                 {{else}}
-                                    {{this.title}}
+                                    {{#if this.image}}
+                                        <img src="{{this.image}}" />   
+                                    {{else}}
+                                        {{this.title}}
+                                    {{/if}}
                                 {{/if}}
                             </a>
                         </li>
                         {{/each}}
-                        <!-- <li ><a href="/products">SDKs</a></li>
-                        <li ><a href="/samples">Samples</a></li>
-                        <li ><a href="/guides">Guides</a></li>
-                        <li ><a href="/tutorials">Tutorials</a></li>
-                        <li ><a href="/apis">APIs</a></li> -->
-                        <!-- <li><a href="#"><input type="text" class="st-default-search-input"></a></li> -->
+                        
                     </ul>
                 </div>
             </div><!--/.container-->

@@ -56,8 +56,6 @@ ZDS comes preinstalled on the following supported devices with the Android versi
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-
-
 -----
 
 ## See Also

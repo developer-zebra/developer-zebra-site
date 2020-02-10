@@ -18,8 +18,8 @@ menu:
 ###Q: What is the package name of the ZDS agent on the device?
 
 ####A: ZDS is implemented as two files:
-#### • `com.symbol.dataanalytics.apk` | Main analytics engine
-#### • `com.symbol.dataanalytics.dca.apk` | Data collection plug-in
+#### • `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
+#### • `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
 
 -----
 
@@ -38,9 +38,21 @@ menu:
 
 -----
 
+###Q: How much collected data is stored on the device each day?
+
+####A: ZDS stores a maximum of 70 KB on the device each day.
+
+-----
+
 ###Q: How much data is sent back during each upload?
 
-####A: ZDS sends a maximum of 70 KB with each upload.
+####A: ZDS sends a maximum of 2 MB of (compressed) data with each upload.
+
+-----
+
+###Q: After data is uploaded from a device, where can it be viewed? 
+
+####A: ZDS data can be viewed on the [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) server.  
 
 -----
 
@@ -68,11 +80,16 @@ menu:
 
 ###Q: How can the current ZDS parameters be changed? 
 
-####A: To change ZDS paramaters on a device, use the device to scan a barcode that contains the desired settings. 
+####A: The ZDS settings on a device can be changed in two ways; 
+#### Through the device UI (see [Setup section](../setup) for more info). 
+#### By scanning a barcode that contains changes to the Analytics Manager CSP. 
 
 -----
 
-###Q: Where does the ZDS device-settings barcode come from...can I generate it myself? 
+###Q: Where does the ZDS device-settings barcode come from? 
 
-####A: Yes, the barcode for changing ZDS settings on a device is generated using Zebra StageNow. 
+####A: The barcode for changing ZDS settings on a device is generated using Zebra StageNow. [Learn more](/stagenow). 
+
+-----
+
 

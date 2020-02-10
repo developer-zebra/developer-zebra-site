@@ -81,8 +81,8 @@ menu:
 ###Q: How can the current ZDS parameters be changed? 
 
 ####A: The ZDS settings on a device can be changed in two ways; 
-#### Through the device UI (see [Setup section](../setup) for more info). 
-#### By scanning a barcode that contains changes to the Analytics Manager CSP. 
+#### • Through the device UI (see [Setup section](../setup) for more info). 
+#### • By scanning a barcode that contains changes to the [Analytics Manager CSP](/mx/analyticsmgr). 
 
 -----
 

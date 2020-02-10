@@ -28,7 +28,7 @@ Zebra Data Service (ZDS) agent software is a continuous background service runni
 * Available RAM
 * Flash information and health 
 * Battery information and health
-* Data traffic statistics for 
+* **Data traffic statistics for**: 
  * Bluetooth
  * Cellular (if applicable)
  * Ethernet
@@ -40,7 +40,7 @@ Zebra Data Service (ZDS) agent software is a continuous background service runni
 * Scanner information and usage statistics
 * Reboots caused by the system or apps
 * Application Not Responding (ANR) events
-* Location data (as applicable) for: 
+* **Location data (as applicable) for**: 
  * Cellular 
  * GPS
  * WLAN
@@ -48,7 +48,7 @@ Zebra Data Service (ZDS) agent software is a continuous background service runni
 **Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
 
 * **ELIGIBILITY -** Device(s) must support ZDS agent software. Most Zebra Android devices with
-KitKat (or later) come with ZDS preinstalled. See all [supported devices](#devicesupport).
+KitKat (or later) come with ZDS preinstalled. See [all supported devices](#devicesupport).
 * **ENABLEMENT -** ZDS agent software must be enabled on the device. Eligible devices are
 shipped with ZDS enabled by default. See the [Setup guide](../setup) for more info.
 * **CONNECTIVITY -** Device(s) must be connected to the internet.

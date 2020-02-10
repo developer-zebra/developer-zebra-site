@@ -80,7 +80,7 @@ menu:
 
 ###Q: How can the current ZDS parameters be changed? 
 
-####A: The ZDS settings on a device can be changed in two ways; 
+####A: The ZDS settings on a device can be changed in two ways: 
 #### • Through the device UI (see [Setup section](../setup) for more info). 
 #### • By scanning a barcode that contains changes to the [Analytics Manager CSP](/mx/analyticsmgr). 
 
@@ -91,5 +91,25 @@ menu:
 ####A: The barcode for changing ZDS settings on a device is generated using Zebra StageNow. [Learn more](/stagenow). 
 
 -----
+
+###Q: What data is collected from the device? 
+
+Device Info & Device Utilization 
+BSP, LG patch & Security patch levels
+RAM available
+Flash info & health 
+Battery info & health
+Data Traffic statistics: Wi-Fi / Cellular / Bluetooth / Ethernet
+WLAN Connectivity Info
+WWAN Connectivity Info
+Apps Info and usage
+Additional Apps Info (Value-adds): MX STATS, SimulScan, EMDK, Data Wedge, EHS, StageNow
+Scanner Info and statistics
+Reboots – system and app caused
+ANR
+CPU, Memory usage (Planned)
+Optional - based on specific services
+Location: Cellular, GPS
+Location: WLAN, Bluetooth (Planned)
 
 

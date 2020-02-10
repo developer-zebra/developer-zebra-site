@@ -17,8 +17,9 @@ menu:
 
 ## Overview
 
-The Zebra Data Service (ZDS) agent software includes background services running continuously on Zebra Android devices to
-collect and upload device usage data. **Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
+Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
+
+**Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
 
 * **ELIGIBILITY -** Devices must support ZDS Agent Software. Most Zebra Android devices with
 KitKat (or later) operating systems have ZDS Agent Software preinstalled. For a list of

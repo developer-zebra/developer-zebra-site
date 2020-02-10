@@ -1,20 +1,18 @@
 ---
 title: Frequently Asked Questions
 layout: guide.html
-product: OEMConfig
+product: ZDS
 productversion: '9.3'
 menu:
   items:
     - title: About
-      url: /oemconfig/9-3/about
-    - title: Setup
-      url: /oemconfig/9-3/setup
-    - title: FAQs
-      url: /oemconfig/9-3/faq
-    - title: Managed Configurations
-      url: /oemconfig/9-3/mc
+      url: /zds/2-0/about
+    - title: Set up
+      url: /zds/2-0/setup
+    - title: FAQ
+      url: /zds/2-0/faq
     - icon: fa fa-search
-      url: /oemconfig/9-3/search
+      url: /zds/2-0/search
 ---
 
 ## Overview

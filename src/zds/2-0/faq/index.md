@@ -15,9 +15,9 @@ menu:
       url: /zds/2-0/search
 ---
 
-###Q: What is the package name of the ZDS agent?
+###Q: What is the package name of the ZDS agent on the device?
 
-####A: ZDS is implemented in two `.apk` files:
+####A: ZDS is implemented as two files:
 #### • `com.symbol.dataanalytics.apk` | Main analytics engine
 #### • `com.symbol.dataanalytics.dca.apk` | Data collection plug-in
 
@@ -40,19 +40,19 @@ menu:
 
 ###Q: How much data is sent back during each upload?
 
-####A: ZDS sends as much as 70 KB of data with each upload.
+####A: ZDS sends a maximum of 70 KB with each upload.
 
 -----
 
-###Q: What is the device footprint size of the ZDS Agent?
+###Q: What is the ZDS device footprint?
 
 ####A: ZDS requires about 2.2 MB of device storage.
 
 -----
 
-###Q: Do ZDS agent software components self-update?
+###Q: Does ZDS self-update?
 
-####A: Yes, ZDS updates itself and its plug-in about every 3-4 months.
+####A: Yes, ZDS updates its components every 3-4 months.
 
 -----
 
@@ -60,9 +60,9 @@ menu:
 
 ####A: Yes, ZDS allows changes to the following parameters: 
 
-#### • Data collection On/Off
-#### • Upload frequency
-#### • Data collection about some individual events
+#### • Data collection (On/Off)
+#### • Upload frequency (default = every 24 hrs.)
+#### • Data collection for certain individual events
 
 -----
 

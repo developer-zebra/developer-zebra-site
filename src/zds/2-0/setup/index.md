@@ -17,13 +17,27 @@ menu:
 
 ## Overview
 
-Zebra Data Service agent software comes preinstalled on all Zebra Android devices running KitKat and later except the earliest KitKat releases, which require manual installation. For devices without ZDS, contact the [Zebra Support Dept.](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html). 
+ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
 
+-----
+
+### Confirm Activation 
+
+**Zebra Data Service agent software is enabled by default** on all devices. To access the ZDS toggle switch, which turns the services on or off, follow the instructions below. 
+
+### Enable/Disable ZDS 
+
+**To access the ZDS toggle switch**: 
+
+1. In the Settings panel, locate and tap the Zebra settings button.<br> 
+This brings up the ZDS toggle switch: 
 <img alt="image" style="height:450px" src="zds_20_eula_ui.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
+2. Set the switch as desired. 
+3. Exit the panel. 
 
-
+> **NOTE**: The TC20/TC25 and some other "value-priced" devices do NOT allow ZDS to be turned off. 
 
 -----
 

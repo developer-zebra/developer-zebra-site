@@ -463,12 +463,12 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		</TTS>
 
 ### disablettsduringnavigation
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the text-to-speech engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **TTS is enabled during navigation by default**. Works with the &lt;delayfortts&gt; parameter, below. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the text-to-speech engine continues to speak page contents after the EB app has switched to a new page. **By default, TTS is enabled during navigation and speech continues when a page changes**. <!-- Works with the &lt;delayfortts&gt; parameter, below. 2/11/20- works independently, per eng. -->
 
 **Possible Values**:
 
-* **0 - TTS remains enabled during page navigation (default)**
-* 1 - TTS is disabled during page navigation
+* **0 - When navigating, TTS continues to speak the previous page, then speaks the next page (default)**
+* 1 - TTS stops speaking when the page changes and resumes on the new page
 
 		:::XML
 		<TTS>
@@ -476,11 +476,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 		</TTS>
 
 ###delayfortts
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Used to set a delay (in milliseconds) between completion of speech recognition by the Android Speech Recognition engine and its hand-off to the text-to-speech engine to be spoken. **Default = 0 (no delay)**. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Used to set a delay (in milliseconds) between completion of speech recognition by the Android Speech Recognition engine and its hand-off to the text-to-speech engine to be spoken. **Default = 0 (no delay)**. Setting a delay can be useful to ensure that the ASR engine is fully disabled before TTS begins speaking, which can cause undesired behavior.
 
 **Possible Values**:
 
-* Integer (in milliseconds)
+* Integer of any positive value (no max.)
 * **0 = no delay (default)**
 
 
@@ -585,7 +585,7 @@ from eng:
 		</ASR>
 
 ### disableasrduringnavigation
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the Android Speech Recognition (ASR) engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **ASR is enabled during navigation by default**. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether the Android Speech Recognition (ASR) engine remains enabled at all times or is temporarily disabled while EB switches or navigates pages. **ASR is enabled during navigation by default; speech recognition continues when page changes**. Also see [&lt;disablettsduringnavigation&gt; tag](#disablettsduringnavigation). 
 
 **Possible Values**:
 

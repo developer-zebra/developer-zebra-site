@@ -53,10 +53,9 @@ The base [EB installation](../setup) includes all necessary components to allow 
 #### Accessories
 External Vibrator Cable (CBL-NGWT- HDVBAP-01) 
 
-#### No longer supported 
-Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat  
-
 **<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
+
+-----
 
 ### New Features/Guides
 
@@ -74,6 +73,7 @@ Devices running Android 6.x Marshmallow, 5.x Lollipop and 4.x KitKat 
 * **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
 * **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
 
+-----
 
 ### New/Enhanced APIs
 **<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 

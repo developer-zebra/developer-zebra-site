@@ -24,27 +24,29 @@ _Zebra Data Services as they appear in Settings > Apps > on older (center) and n
 _Click image to enlarge; ESC to exit_. 
 <br>
 
+-----
+
 ### Data Collected
 
-* General device information
-* Device utilization data 
-* BSP, LifeGuard and security patch levels applied
+* General device information (model, serial number, etc.)
+* Device usage data 
+* OS image, LifeGuard and security patch levels applied
 * Available RAM
-* Flash information and health 
+* Device storage (flash) information and health 
 * Battery information and health
+* Wi-Fi (WLAN) connection events
+* Cellular (WWAN) connection events (if applicable)
 * **Data traffic statistics (as applicable) for**: 
  * Bluetooth
- * Cellular
+ * Cellular (WWAN)
  * Ethernet
- * Wi-Fi
-* WLAN connection events
-* WWAN connection events (if applicable)
+ * Wi-Fi (WLAN)
 * **Location data (as applicable) for**: 
  * Cellular 
  * GPS
- * WLAN
-* Information about system apps and their usage
-* Information about Zebra apps and their usage: 
+ * Wi-Fi (WLAN)
+* System app info and usage
+* Zebra app info and usage data, including for:  
  * DataWedge
  * Enterprise Home Screen
  * EMDK for Android 
@@ -60,14 +62,14 @@ _Click image to enlarge; ESC to exit_.
 
 ### Data Access
 
-**Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
+Data is collected and **participating Zebra customers and partners can access the collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
 
 * **ELIGIBILITY -** Device(s) must support ZDS agent software. Most Zebra Android devices with
-KitKat (or later) come with ZDS preinstalled. See [all supported devices](#devicesupport).
+KitKat (or later) come with ZDS preinstalled. See [all supported devices](#supporteddevices).
 * **ENABLEMENT -** ZDS agent software must be enabled on the device. Eligible devices are
 shipped with ZDS enabled by default. See the [Setup guide](../setup) for more info.
-* **CONNECTIVITY -** Device(s) must be connected to the internet.
-* **PERMISSION -** The organization's firewall must allow communication with the Zebra’s server at [analytics.zebra.com](http://analytics.zebra.com) using server port 443.
+* **CONNECTIVITY -** Device(s) must be connected to the internet at least once every 24 hours to allow data upload.
+* **PERMISSION -** The organization's firewall must allow communication with the Zebra data collection server at [analytics.zebra.com](http://analytics.zebra.com) using server port 443.
 
 **NOTE**: If Foresight reports appear blank or devices are missing from the reports, please confirm that ***ALL***
 of the above requirements are met.
@@ -89,7 +91,7 @@ of the above requirements are met.
 
 -----
  -->
-## Device Support
+## Supported Devices
 
 ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
 
@@ -102,6 +104,7 @@ _Click image to enlarge; ESC to exit_.
 ## See Also
 
 * **[FAQ](../faq)** | Frequently asked questions about ZDS
+* **[ZDS Setup Guide](../setup)** | How to check whether ZDS is enabled
 
 <!-- 
 menu:

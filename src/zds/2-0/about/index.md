@@ -19,31 +19,46 @@ menu:
 
 Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
 
+<img alt="image" style="height:350px" src="zds_files.png"/>
+_Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
+_Click image to enlarge; ESC to exit_. 
+<br>
 
-#### Data collected from device(s)
+### Data Collected
 
 * General device information
 * Device utilization data 
-* BSP, LifeGuard and security patch levels
+* BSP, LifeGuard and security patch levels applied
 * Available RAM
 * Flash information and health 
 * Battery information and health
-* **Data traffic statistics for**: 
+* **Data traffic statistics (as applicable) for**: 
  * Bluetooth
- * Cellular (if applicable)
+ * Cellular
  * Ethernet
  * Wi-Fi
-* WLAN connectivity
-* WWAN connectivity (if applicable)
-* Information about installed apps and their usage
-* Additional Apps Info (value-adds): MX STATS, SimulScan, EMDK, Data Wedge, EHS, StageNow
-* Scanner information and usage statistics
-* Reboots caused by the system or apps
-* Application Not Responding (ANR) events
+* WLAN connection events
+* WWAN connection events (if applicable)
 * **Location data (as applicable) for**: 
  * Cellular 
  * GPS
  * WLAN
+* Information about system apps and their usage
+* Information about Zebra apps and their usage: 
+ * DataWedge
+ * Enterprise Home Screen
+ * EMDK for Android 
+ * EMDK for Xamarin
+ * MX STATS
+ * SimulScan
+ * StageNow
+* Scanner information and usage statistics
+* Reboots triggered by the system or an app
+* Application Not Responding (ANR) events
+
+-----
+
+### Data Access
 
 **Participating Zebra customers and partners can access collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
 
@@ -58,7 +73,7 @@ shipped with ZDS enabled by default. See the [Setup guide](../setup) for more in
 of the above requirements are met.
 
 -----
-
+<!-- 
 ## What's New in v2.0
 
 
@@ -73,7 +88,7 @@ of the above requirements are met.
 ### Added in v1.0
 
 -----
-
+ -->
 ## Device Support
 
 ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.

@@ -94,22 +94,6 @@ menu:
 
 ###Q: What data is collected from the device? 
 
-Device Info & Device Utilization 
-BSP, LG patch & Security patch levels
-RAM available
-Flash info & health 
-Battery info & health
-Data Traffic statistics: Wi-Fi / Cellular / Bluetooth / Ethernet
-WLAN Connectivity Info
-WWAN Connectivity Info
-Apps Info and usage
-Additional Apps Info (Value-adds): MX STATS, SimulScan, EMDK, Data Wedge, EHS, StageNow
-Scanner Info and statistics
-Reboots – system and app caused
-ANR
-CPU, Memory usage (Planned)
-Optional - based on specific services
-Location: Cellular, GPS
-Location: WLAN, Bluetooth (Planned)
+####A: See the [About ZDS page](../about) for this information. 
 
 

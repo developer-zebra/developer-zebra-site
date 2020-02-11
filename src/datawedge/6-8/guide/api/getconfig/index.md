@@ -259,19 +259,16 @@ Error messages are logged for invalid actions and parameters.
 	// SENDING THE INTENT
 		Bundle bMain = new Bundle();
 		bMain.putString("PROFILE_NAME", "Profile0 (default)");
-		Bundle bConfig = new Bundle();
-		ArrayList<String> pluginName = new ArrayList<>();
-		pluginName.add("BARCODE");
-
-	// pluginName.add("INTENT"); to add more plugins
 		
-		bConfig.putStringArrayList("PLUGIN_NAME", pluginName);
+		Bundle bConfig = new Bundle();
+		bConfig.putString("PLUGIN_NAME", "BARCODE");
+		
 		bMain.putBundle("PLUGIN_CONFIG", bConfig);
-
+		
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
-		this.sendBroadcast(i);
+		this.sendBroadcast(i);	
 
 	// RECEIVING THE RESULT
 		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {

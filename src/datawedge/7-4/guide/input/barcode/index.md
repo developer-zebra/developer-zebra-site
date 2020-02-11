@@ -168,7 +168,9 @@ Parameters for individual Decoders are modified within a Profile. Each DataWedge
 
 DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles (indicated by an &#42;). **To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile**.
 
-**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters section](#decoderparameters). Others are linked to their corresponding parameter descriptions. 
+**Note**: 
+* Decoders lacking configurable parameters do not appear in the [Decoder Parameters section](#decoderparameters). Others are linked to their corresponding parameter descriptions.
+* Only "Australian Postal" or "Canadian Postal" should be selected as a decoder, not both. If both are simultaneously selected as decoders, only "Canadian Postal" barcodes are decoded. 
 <br>
 
 -----

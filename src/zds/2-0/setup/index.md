@@ -37,7 +37,7 @@ _Click image to enlarge; ESC to exit_.
 2. Set the switch as desired. 
 3. Exit the panel. 
 
-> **NOTE**: The TC20/TC25 and some other "value-priced" devices do NOT allow ZDS to be turned off. 
+> **NOTE**: Some devices, including the TC20 and TC25, **DO NOT allow ZDS to be turned off**. 
 
 -----
 

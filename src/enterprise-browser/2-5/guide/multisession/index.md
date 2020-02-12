@@ -5,33 +5,25 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB browser windows or tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB browser tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
 
-> Multi-session capabilities can be invoked in two ways, each with unique behaviors. <br> 
-**The main behaviors common to both:<br>
-* **Each supports a subset of feature tags** in the `Config.xml` file<br>
-* **If one EB process is terminated, all are terminated**
+> Multi-session capabilities can be invoked as tabs or shortcuts, and with its own behaviors. <br> 
+**The main behaviors common to both**:<br>
+* **Each supports a unique subset of feature tags** (in its `Config.xml` file)<br>
+* **If one EB tab or window is terminated, all are terminated**
 
 -----
 
-### Shortcut Method
-
-Single process
-(NOT kill one, kill all)
-each with unique behaviors
-
+## Shortcut Method
 
 The **Shortcut Method** involves creating two or more EB-app shortcuts that can be launched independently, and when run simultaneously appear side-by-side in multiple webview instances (browser tabs). 
 
-##### ADVANTAGES 
-* Apps can be deployed and launched individually, and are combined in browser tabs only when needed.
-* Creation and deployment of shortcuts is simplfied by Zebra's [Shortcut Utility](../ShortcutCreator), a Windows-based tool that supports Android and Windows Mobile/CE targets.
-
-BEHAVIORS! 
-
-##### DISADVANTAGES
-* App-page content is persistent; it does not automatically update when the page is revisited.
-* Shortcuts deployed to Android 8.x Oreo and later (called "Pinned" Shortcuts) require permission from the device user at installation.<br> ***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for the device user to grant permission.
+### Shortcut Behaviors
+* Apps can be deployed and launched individually, and are combined in browser tabs only when run simultaneously.
+* Creation and deployment of shortcuts is simplified by Zebra's [Shortcut Utility](../ShortcutCreator), a Windows-based tool that supports Android and Windows Mobile/CE targets.
+* App-page content is persistent; it does not automatically update when the page is revisited (unless a log-in timeout occurs).
+* Shortcuts deployed to Android 8.x Oreo and later (called "Pinned" Shortcuts) require permission from the device user at installation.<br> 
+***Helpful Hint***: Pinned Shortcuts can be mass-deployed using Zebra's [Enterprise Home Screen](/ehs) 3.2 (or later) with no need for the device user to grant permission.
 * **Feature support is limited to the following config tags**: 
  * WebPageCapture
  * DebugButtonsEnabled
@@ -46,22 +38,19 @@ BEHAVIORS!
  * NavigateToHomePage
  * IntentReceiver
  * JavascriptEnabled
+* **Quitting one EB shortcut quits all other running shortcuts**.  
 
 Please see the [Shortcut Utility guide](../ShortcutCreator) For more information about creation and deployment of shortcuts. 
 
 -----
 
-### Tab Bar Method
+## Tab Bar Method
 
-(kill one, kill all)
+With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the device. These apps are always run as a group and always quit as a group. 
 
-With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the device. These apps are always run as a group. 
-
-##### ADVANTAGES 
+### Tab Bar Behaviors 
 * An option exists to automatically refresh the contents of each tab whenever it returns to focus.
 * Tab colors and titles can be customized. 
-
-##### DISADVANTAGES
 * Tabs must be defined and deployed to the device in advance. 
 * Apps cannot be launched individually; they must always be launched as a group. 
 * **Feature support is limited to the following config tags**: 
@@ -78,6 +67,7 @@ With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the 
  * JavascriptEnabled
  * DatabaseEnabled
  * DomStorageEnabled
+* **Closing one EB tab quits all other active EB tabs**.  
 
 -----
 

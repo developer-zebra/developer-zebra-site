@@ -5,19 +5,29 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB apps at the same time, each accessing different `Config.xml` files with different groups of configuration settings. This provides a convenient way to deploy multiple apps and feature-sets that can be toggled without re-launching EB. 
+Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB browser windows or tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
 
-> Multi-session capabilities can be invoked in two ways, each with benefits and drawbacks. **The main drawback common to both is the limitation placed on supported features** (as configured by tags in the `Config.xml` file). 
+> Multi-session capabilities can be invoked in two ways, each with unique behaviors. <br> 
+**The main behaviors common to both:<br>
+* **Each supports a subset of feature tags** in the `Config.xml` file<br>
+* **If one EB process is terminated, all are terminated**
 
 -----
 
 ### Shortcut Method
+
+Single process
+(NOT kill one, kill all)
+each with unique behaviors
+
 
 The **Shortcut Method** involves creating two or more EB-app shortcuts that can be launched independently, and when run simultaneously appear side-by-side in multiple webview instances (browser tabs). 
 
 ##### ADVANTAGES 
 * Apps can be deployed and launched individually, and are combined in browser tabs only when needed.
 * Creation and deployment of shortcuts is simplfied by Zebra's [Shortcut Utility](../ShortcutCreator), a Windows-based tool that supports Android and Windows Mobile/CE targets.
+
+BEHAVIORS! 
 
 ##### DISADVANTAGES
 * App-page content is persistent; it does not automatically update when the page is revisited.
@@ -42,6 +52,8 @@ Please see the [Shortcut Utility guide](../ShortcutCreator) For more information
 -----
 
 ### Tab Bar Method
+
+(kill one, kill all)
 
 With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the device. These apps are always run as a group. 
 
@@ -88,7 +100,9 @@ Tabs are a convenient way to employ multiple apps or multiple feature sets with 
 
 ### TabGroup Attributes
 
-Attributes under the &lt;TabGroup&gt; apply to all defined tabs. **There can be zero or one TabGroups**. If this node is missing, default values (shown in **bold**) are used. 
+* **MANDATORY**: Encloses attributes to apply to all defined tabs. **There can be exactly one TabGroup**. 
+* If this node is missing, no tabs are created. 
+* If this node present but contains no tags, the tag defaults are used.  
 
 #### placeTabsBottom
 * Controls whether tabs are shown at the bottom of the display; otherwise shown at the top (**default**) 
@@ -101,8 +115,9 @@ Attributes under the &lt;TabGroup&gt; apply to all defined tabs. **There can be 
 #### backgroundColor
 * Controls the content background color of all tabs. If this tag is missing or unspecified, uses app default color. 
 * Accepts hexadecimal [HTML color codes](https://htmlcolorcodes.com/) 
-* **Default = 0x000000** (black)
+* **Default = 0x000000** (black) 
 
+<!-- 8 zeros = transparent  "Controls the content background color or transparency attribute" -->
 -----
 
 ### Tab Attributes
@@ -164,7 +179,7 @@ The example `tabbar.xml` file below creates a group of two (2) tabs, both of whi
 		<TabGroup>
 			<placeTabsBottom>false</placeTabsBottom>
 			<hiddenTabs>false</hiddenTabs>
-			<backgroundColor>false</backgroundColor>
+			<backgroundColor>0xFFFFFF</backgroundColor>
 				<Tab>
 					<action>https://www.zebra.com/us/en.html</action>
 					<label>Zebra Tech</label>

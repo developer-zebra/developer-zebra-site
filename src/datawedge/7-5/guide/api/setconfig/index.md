@@ -55,10 +55,10 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 The main `SET_CONFIG` bundle includes the following properties:
 
 * **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
-* **CONFIG_MODE** [String]: (Default=OVERWRITE) Applies to the Profile. Can be used in place of CREATE_PROFILE. Options:
- * **CREATE_IF_NOT_EXIST**: Creates the Profile if string in PROFILE_NAME is not present on device 
- * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
- * **UPDATE**: Updates only specified settings
+* **CONFIG_MODE** [String]: (Default=OVERWRITE) Applies to the Profile (from PROFILE_NAME). Can be used in place of CREATE_PROFILE. Options:
+ * **CREATE_IF_NOT_EXIST**: If the Profile does not exist, it creates the Profile and sets the parameters specified in the SET_CONFIG intent. If the profile exists, it updates the parameters specified in the SET_CONFIG intent, while other parameters remain unchanged. RESET_CONFIG flag can be used to reset the plug-in to its default values before applying the new values specified in the intent.
+ * **OVERWRITE**: If the Profile exists, all options are reset to the default, then the specified settings are applied.
+ * **UPDATE**: Updates only specified settings. The specified Profile must exist in DataWedge. RESET_CONFIG flag can be used to reset the plug-in to its default values before applying the new values specified in the intent.
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
 * **PLUGIN_CONFIG** [Bundle[ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
 * **APP_LIST** [Array]: An array of bundles to be associated with the Profile. Each APP_LIST bundle contains the following properties:
@@ -68,7 +68,7 @@ The main `SET_CONFIG` bundle includes the following properties:
 #### PLUGIN_CONFIG BUNDLE
 The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
-* **RESET_CONFIG** [String]: Optional - applies to an existing Profile. Values: 
+* **RESET_CONFIG** [String]: Optional - applies to an existing Profile with CONFIG_MODE **CREATE_IF_NOT_EXIST** or **UPDATE**. Values: 
  * **True (Default) –** Clear any existing configuration and create a new configuration with the specified parameter values  
  * **False –** Merge existing configuration with changes from the new configuration - update the existing values and add values not already in the configuration<br>
 * **PLUGIN_NAME** [String]: Name (case-sensitive) of the Plug-in to configure. See tables below for `PARAM_LIST` values. For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action:<br>

@@ -21,8 +21,6 @@ ZDS comes preinstalled on ***most*** [supported devices and Android versions](..
 
 To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
 
-
-
 ### Data Access
 
 Data is collected and **participating Zebra customers and partners can access the collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
@@ -39,14 +37,14 @@ of the above requirements are met.
 
 -----
 
-### Check ZDS Status 
+## Check ZDS Status 
 
 **Zebra Data Service agent software is enabled by default** on all devices on which it is preinstalled. There are two ways to confirm that it's present and running: 
 
 1. **View the ZDS toggle (On/Off) switch**
 2. **Display a list of all running apps and services**
 
-#### Access ZDS toggle switch 
+### Access ZDS toggle switch 
 
 1. In the Settings panel, locate and tap the "Zebra" button.<br> 
 This brings up the ZDS toggle switch: 

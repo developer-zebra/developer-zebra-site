@@ -17,9 +17,9 @@ menu:
 
 ## Overview
 
-ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#chackzdsstatus) below). **Opting to [bypass the Android Setup Wizard](https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass) also bypasses the EULA Setup Wzard**.
+ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#chackzdsstatus) below). To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
 
-To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
+> `IMPORTANT:` **[Bypassing the Android Setup Wizard](https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass) also bypasses the EULA Setup Wizard**.
 
 ### Data Access
 
@@ -39,10 +39,7 @@ of the above requirements are met.
 
 ## Check ZDS Status 
 
-**Zebra Data Service agent software is enabled by default** on all devices on which it is preinstalled. There are two ways to confirm that it's present and running: 
-
-1. **View the ZDS toggle (On/Off) switch**
-2. **Display a list of all running apps and services**
+**Zebra Data Service agent software is enabled by default** on all devices on which it is preinstalled. There are two ways to confirm that it's present and running: **1) View the ZDS toggle (On/Off) switch**, **2) Display a list of all running apps and services**. 
 
 ### Access ZDS toggle switch 
 
@@ -51,15 +48,15 @@ This brings up the ZDS info screen:
 <img alt="image" style="height:450px" src="zds_20_eula_ui.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-2. **Set the toggle switch as desired** ("On" is shown above, right).<br>
- **NOTE**: On some devices, including the TC20 and TC25, data collection cannot be disabled. 
-3. **Scroll down to see the last upload event** and a partial list of the data being collected: 
+2. **Set the toggle switch as desired** ("On" is shown at right, above).<br>
+ **NOTE**: Data collection cannot be disabled on some devices, including the TC20 and TC25. 
+3. If desired, **scroll down to see the last upload event** and a partial list of the data being collected: 
 <img alt="image" style="height:450px" src="zds_info_2.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-4. Exit the panel. 
+4. **Tap the left-pointing arrow** to exit the panel. 
 
-> **NOTE**: On some devices, including the TC20 and TC25, **<u>data collection cannot be disabled</u>**. 
+> **NOTE**: **<u>Data collection cannot be disabled on some devices</u>**, including the TC20 and TC25. 
 
 -----
 
@@ -67,7 +64,7 @@ _Click image to enlarge; ESC to exit_.
 
 1. In the Settings panel, locate and tap the "Apps" button.<br> 
  This displays a list of all apps and services on the device: 
- <img alt="image" style="height:350px" src="zds_files.png"/>
+ <img alt="image" style="height:350px" src="zds_20_files_old_new_2.png"/>
  _Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
  _Click image to enlarge; ESC to exit_. 
  <br>

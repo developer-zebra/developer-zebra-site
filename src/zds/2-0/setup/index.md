@@ -35,45 +35,39 @@ of the above requirements are met.
 
 -----
 
-### Confirm Activation 
+### Check ZDS Status 
 
 **Zebra Data Service agent software is enabled by default** on all devices on which it is preinstalled. There are two ways to confirm that it's present and running: 
 
-1. Display a list of all running apps and services
-2. View the ZDS toggle (On/Off) switch
+1. **View the ZDS toggle (On/Off) switch**
+2. **Display a list of all running apps and services**
 
-#### Access the ZDS toggle switch 
+#### Access ZDS toggle switch 
 
 1. In the Settings panel, locate and tap the "Zebra" button.<br> 
 This brings up the ZDS toggle switch: 
 <img alt="image" style="height:450px" src="zds_20_eula_ui.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-2. Set the switch as desired. 
-3. To see a list of the radio-related data being collected and when data was last uploaded, scroll down in the screen: 
+2. Set the switch as desired (On or Off).<br>
+ **NOTE**: On some devices, including the TC20 and TC25, data collection cannot be disabled. 
+3. To see a partial list of the data being collected and the last upload event, scroll down in the screen: 
 <img alt="image" style="height:450px" src="zds_info_2.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 4. Exit the panel. 
 
-> **NOTE**: On some devices, including the TC20 and TC25, **<u>ZDS cannot be turned off</u>**. 
+> **NOTE**: On some devices, including the TC20 and TC25, **<u>data collection cannot be disabled</u>**. 
 
 -----
 
 ### List all running services 
 
 1. In the Settings panel, locate and tap the "Apps" button.<br> 
-This brings up the ZDS toggle switch: 
-<img alt="image" style="height:350px" src="zds_files.png"/>
-_Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
-_Click image to enlarge; ESC to exit_. 
-<br>
+ This brings up the ZDS toggle switch: 
+ <img alt="image" style="height:350px" src="zds_files.png"/>
+ _Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
+ _Click image to enlarge; ESC to exit_. 
+ <br>
 2. Scroll to the list entries as shown above. 
-3. Tap on a service to see its status. 
-
-
-
-See what's being collected and when last sent: 
-
-
-
+3. Tap on a service to view its status. 

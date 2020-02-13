@@ -46,14 +46,14 @@ of the above requirements are met.
 
 ### Access ZDS toggle switch 
 
-1. In the Settings panel, locate and tap the "Zebra" button.<br> 
-This brings up the ZDS toggle switch: 
+1. In the Settings panel, **locate and tap the "Zebra" button**.<br> 
+This brings up the ZDS info screen: 
 <img alt="image" style="height:450px" src="zds_20_eula_ui.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-2. Set the switch as desired (On or Off).<br>
+2. **Set the toggle switch as desired** ("On" is shown above, right).<br>
  **NOTE**: On some devices, including the TC20 and TC25, data collection cannot be disabled. 
-3. To see a partial list of the data being collected and the last upload event, scroll down in the screen: 
+3. **Scroll down to see the last upload event** and a partial list of the data being collected: 
 <img alt="image" style="height:450px" src="zds_info_2.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>

@@ -94,6 +94,12 @@ menu:
 
 ###Q: What data is collected from the device? 
 
-####A: See the [About ZDS page](../about) for this information. 
+####A: See the [About ZDS page](../about/#datacollected) for a list of data collected. 
 
+
+-----
+
+###Q: What devices are supported? 
+
+####A: See the [About ZDS page](../about/#supporteddevices) for the supported device matrix. 
 

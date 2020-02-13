@@ -25,7 +25,7 @@ _Click image to enlarge; ESC to exit_.
 
 -----
 
-### Data Collected
+## Data Collected
 
 * General device information (model, serial number, etc.)
 * Device usage data 
@@ -56,22 +56,6 @@ _Click image to enlarge; ESC to exit_.
 * Scanner information and usage statistics
 * Reboots triggered by the system or an app
 * Application Not Responding (ANR) events
-
------
-
-### Data Access
-
-Data is collected and **participating Zebra customers and partners can access the collected data in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all desired Zebra Android devices**:
-
-* **ELIGIBILITY -** Device(s) must support ZDS agent software. Most Zebra Android devices with
-KitKat (or later) come with ZDS preinstalled. See [all supported devices](#supporteddevices).
-* **ENABLEMENT -** ZDS agent software must be enabled on the device. Eligible devices are
-shipped with ZDS enabled by default. See the [Setup guide](../setup) for more info.
-* **CONNECTIVITY -** Device(s) must be connected to the internet at least once every 24 hours to allow data upload.
-* **PERMISSION -** The organization's firewall must allow communication with the Zebra data collection server at [analytics.zebra.com](http://analytics.zebra.com) using server port 443.
-
-**NOTE**: If Foresight reports appear blank or devices are missing from the reports, please confirm that ***ALL***
-of the above requirements are met.
 
 -----
 <!-- 

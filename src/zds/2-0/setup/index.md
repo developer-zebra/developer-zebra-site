@@ -17,7 +17,11 @@ menu:
 
 ## Overview
 
-ZDS comes preinstalled on [supported devices and Android versions](../about/supporteddevices). Some devices running KitKat require ZDS to be installed manually. To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation.
+ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#chackzdsstatus) below). **Opting to [bypass the Android Setup Wizard](https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass) also bypasses the EULA Setup Wzard**.
+
+To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
+
+
 
 ### Data Access
 
@@ -64,7 +68,7 @@ _Click image to enlarge; ESC to exit_.
 ### List all running services 
 
 1. In the Settings panel, locate and tap the "Apps" button.<br> 
- This brings up the ZDS toggle switch: 
+ This displays a list of all apps and services on the device: 
  <img alt="image" style="height:350px" src="zds_files.png"/>
  _Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
  _Click image to enlarge; ESC to exit_. 

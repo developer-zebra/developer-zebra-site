@@ -40,7 +40,7 @@ products:
         url: /datawedge/7-6/guide/settings
       - title: APIs
         url: /datawedge/7-6/guide/api
-      - title: Demo App & Samples
+      - title: Samples
         url: /datawedge/7-6/guide/samples
     versions:
       - url: datawedge/7-6/guide/about

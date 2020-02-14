@@ -94,12 +94,10 @@ menu:
 
 ###Q: What data is collected from the device? 
 
-####A: See the [About ZDS page](../about/#datacollected) for a list of data collected. 
-
+####A: ZDS collects data about device hardware, app info and usage, network communications, location and many other parameters. See the About ZDS page for a complete [list of data collected ](../about/#datacollected). 
 
 -----
 
 ###Q: What devices are supported? 
 
-####A: See the [About ZDS page](../about/#supporteddevices) for the supported device matrix. 
-
+####A: Most Zebra devices support data collection. See the About ZDS page for the full list of [supported devices](../about/#supporteddevices). 

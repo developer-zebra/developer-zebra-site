@@ -17,7 +17,7 @@ menu:
 
 ## Overview
 
-ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#chackzdsstatus) below). To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
+ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/#supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#chackzdsstatus) below). To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
 
 > `IMPORTANT:` **[Bypassing the Android Setup Wizard](https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass) also bypasses the EULA Setup Wizard**.
 
@@ -26,7 +26,7 @@ ZDS comes preinstalled on ***most*** [supported devices and Android versions](..
 Data is collected and can be viewed by **participating Zebra customers and partners in the form of [Zebra Foresight](https://www.zebra.com/us/en/services/visibilityiq/foresight.html) reports if <u>ALL FOUR</u> of the following requirements are met on all relevant Zebra Android devices**:
 
 * **ELIGIBILITY -** Device(s) must support ZDS agent software. Most Zebra Android devices with
-KitKat (or later) come with ZDS preinstalled. See [all supported devices](#supporteddevices).
+KitKat (or later) come with ZDS preinstalled. See [all supported devices](../about/#supporteddevices).
 * **ENABLEMENT -** ZDS agent software must be enabled on the device. Eligible devices are
 shipped with ZDS enabled by default. See the [Setup guide](../setup) for more info.
 * **CONNECTIVITY -** Device(s) must be connected to the internet at least once every 24 hours to allow data upload.

@@ -1,6 +1,6 @@
 ---
 title: Zebra Data Services
-img: /images/products/stagenow.png
+img: /images/products/zds.png
 layout: redirect.html
 redirect_url: /zds/2-0/about
 ---

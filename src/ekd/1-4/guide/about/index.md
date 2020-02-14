@@ -51,6 +51,9 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
 
 * **<u>A new Home button</u>** simplifies project start-up and importing of saved projects.  
+<img alt="" style="height:450px" src="EKD_1.4_fullscreen.png"/>
+***Click image to enlarge, ESC to exit***. 
+<br>
 
 * **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
 

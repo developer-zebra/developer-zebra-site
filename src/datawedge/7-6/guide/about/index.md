@@ -124,6 +124,10 @@ For more information about approved languages or to download a localized operati
 * **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
 * Improved look and feel of user interface. Refer to [Settings](../settings) and [DWDemo](../samples/dwdemo).
 
+### Deprecations
+* **Support for Unique Device Identification (UDI) barcodes is deprecated.** GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the DataWedge API. UDI support will be removed from the DataWedge API beginning with Android 10 Q device support.
+* **Support for SimulScan API is deprecated.** SimulScan support will be removed from DataWedge beginning with Android 10 Q device support.
+
 -----
 ## Recent Version History
 

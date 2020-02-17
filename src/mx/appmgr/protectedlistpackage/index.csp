@@ -20,7 +20,7 @@ Used to enter the Package Name(s) of the application to add or remove from the P
 **Input value rules**: 
 
 * String from 1&ndash;255 characters containing one or more valid Package Names. For example: `com.mycompany.myPackage`
-* Use commas to seperate multiple names. For example: `com.mycompany.myPackage`,`com.mycompany.myOtherPackage`
+* Use commas to separate multiple names. For example: `com.mycompany.myPackage`,`com.mycompany.myOtherPackage`
 
 <!-- 
 2/17/20- Added info: below when Protected mode was removed from MX 9.3. PUT BACK when it returned in (9.3 rev.1). 

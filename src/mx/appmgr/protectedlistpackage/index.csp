@@ -6,7 +6,6 @@ order: 12
 mx: "4.2"
 osx: "1.2"
 devicetype: A,B
-info: This feature is discontinued in MX 9.3 and higher. 
 parm:
   presentif: The Protected List Action is "Add Application to Protected List" or "Remove Application from Protected List"
   pivotal: No
@@ -23,4 +22,7 @@ Used to enter the Package Name(s) of the application to add or remove from the P
 * String from 1-255 characters containing a valid Package Name. For example: `com.mycompany.mypackage`.
 * Use commas to seperate multiple names
 
-
+<!-- 
+2/17/20- Removed note below when Protected mode PUT BACK into CSP (9.3 rev.1): 
+info: This feature is discontinued in MX 9.3 and higher. 
+-->

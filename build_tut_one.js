@@ -236,6 +236,7 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
+/*
     //OemConfig 9.2
     .use(foldermenu({
         folder: 'oemconfig/9-2/',
@@ -248,6 +249,7 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
+
     //emdk for android 4.0
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',
@@ -456,7 +458,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/5-0/'
     }))
- 
+
+    
 
 //emdk for android 6.0
     .use(foldermenu({
@@ -1164,6 +1167,8 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-android/7-5/'
     }))
 
+*/
+
    //emdk for android 7.6
     .use(foldermenu({
         folder: 'emdk-for-android/7-6/api/',
@@ -1222,7 +1227,7 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/7-6/'
     }))
-
+/*
     //emdk for xamarin 1.0
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/api/',
@@ -1545,6 +1550,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-xamarin/5-0/'
     }))
+
+*/
       //emdk-x 6.0
     .use(foldermenu({
         folder: 'emdk-for-xamarin/6-0/api/',
@@ -1583,7 +1590,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'mx/',
         automenu: false
     }))
-
+/*
     .use(foldermenu({
         folder: 'simulscan/1-1/'
     }))
@@ -1639,6 +1646,8 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow/4-0/'
     }))
+
+*/
     .use(foldermenu({
         folder: 'stagenow/4-1/'
     }))
@@ -1646,6 +1655,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emmtk/2-0/'
     }))
 
+/*
     .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
@@ -1703,7 +1713,7 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-4/'
     }))
-
+*/
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

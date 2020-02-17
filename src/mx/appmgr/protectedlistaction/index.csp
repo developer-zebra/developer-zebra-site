@@ -43,7 +43,7 @@ Used to add or remove apps from the Protected List, which allows apps to be exem
 
 >**Note**: On some devices, protected apps remain on the Recent Apps list after it has been cleared using the "ClearRecentApps" Action. 
 
-Applications with Package Names on the Protected List are allowed to:
+An app with its Package Name on the Protected List is allowed to:
 * Launch when no device user is logged in
 * Remain running when a device user logs out
 * Maintain a single copy of data accessible by all users, even if Multi-User Data Separation is enabled

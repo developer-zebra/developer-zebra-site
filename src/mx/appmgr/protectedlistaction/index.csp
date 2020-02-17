@@ -8,7 +8,8 @@ osx: "1.2"
 devicetype: A
 parm:
   pivotal: Yes
-  presentif: The Action is NOT "Battery Optimization" 
+  presentif: The Action is  "Install" or "Uninstall" or "Upgrade" or "Upgrade" or "SetDefaultLauncher" or "EnableApplication" or "DisableApplication" or "ClearRecentApps" or "LaunchApplication"
+ 
   name: ProtectedListAction
   type: list
   list:
@@ -49,7 +50,8 @@ Applications with Package Names on the Protected List are allowed to:
 * Remain on the Recent Apps list after it has been cleared
 
 <!-- 
-2/17/20- Removed notebelow when Protected mode PUT BACK into CSP (9.3 rev.1): 
+2/17/20- Added info: below when Protected mode was removed from MX 9.3. PUT BACK when it returned in (9.3 rev.1). 
+
 info: This feature is discontinued in MX 9.3 and higher. 
 
 8/5/19- Zebra Multi-user mode is discontinued. Note removed to eliminate confusion with Android MU mode. 

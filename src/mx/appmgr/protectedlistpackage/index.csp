@@ -23,6 +23,7 @@ Used to enter the Package Name(s) of the application to add or remove from the P
 * Use commas to seperate multiple names
 
 <!-- 
-2/17/20- Removed note below when Protected mode PUT BACK into CSP (9.3 rev.1): 
+2/17/20- Added info: below when Protected mode was removed from MX 9.3. PUT BACK when it returned in (9.3 rev.1). 
+
 info: This feature is discontinued in MX 9.3 and higher. 
 -->

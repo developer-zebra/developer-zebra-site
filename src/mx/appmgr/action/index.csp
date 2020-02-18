@@ -119,7 +119,6 @@ parm:
 Used to enter the Action to perform on an application or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below). 
 
 **Notes**: 
-* **<u>On devices running Android 10 Q</u> (and later), the DisableGMSApps Action does *NOT* disable the Google Quick Search app** (`com.google.android.quicksearchbox`) as on prior Android versions. Use the DisableApplication Action instead.  
 * On some older devices, **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
 * **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
 * **EnableGMSApps and DisableGMSApps Actions are supported only on SDM660-platform devices, which includes (but is not limited to)**:
@@ -140,3 +139,7 @@ Used to enter the Action to perform on an application or app-related setting or 
 **`NOTE:` It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
 
  > **See [GMS Manager](/mx/gmsmgr) for more information about GMS Restricted**. 
+
+<!-- 2/18/20- Per TUT-38260, added note yesterday, eng. said to remove it today. 
+* **<u>On devices running Android 10 Q</u> (and later), the DisableGMSApps Action does *NOT* disable the Google Quick Search app** (`com.google.android.quicksearchbox`) as on prior Android versions. Use the DisableApplication Action instead.
+-->

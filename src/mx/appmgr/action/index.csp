@@ -140,6 +140,6 @@ Used to enter the Action to perform on an application or app-related setting or 
 
  > **See [GMS Manager](/mx/gmsmgr) for more information about GMS Restricted**. 
 
-<!-- 2/18/20- Per TUT-38260, added note yesterday, eng. said to remove it today. 
+<!-- 2/18/20- Per TUT-38260, added note yesterday, per eng. Removed it today, per eng. 
 * **<u>On devices running Android 10 Q</u> (and later), the DisableGMSApps Action does *NOT* disable the Google Quick Search app** (`com.google.android.quicksearchbox`) as on prior Android versions. Use the DisableApplication Action instead.
 -->

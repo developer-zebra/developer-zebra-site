@@ -23,7 +23,8 @@ This also renders inoperable secondary applications and services that rely on th
 * Location services
 * SafetyNet
 
-> **Zebra recommends testing devices thoroughly before deployment when using this feature**. 
+> **Zebra recommends testing devices thoroughly before deployment when using this feature**.<br><br>
+> **Learn more [about GMS Restricted mode](https://developer.zebra.com/blog/zebras-gms-restricted-mode) from Zebra engineering**.
 
 #### Important Notes
 * Based on GMS dependencies, apps and services other than those listed above also might fail when a device is in GMS Restricted mode. 

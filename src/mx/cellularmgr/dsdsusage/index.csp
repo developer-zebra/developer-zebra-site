@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Dual-SIM Dual Standby Enable/Disable 
 type: parm
-order: 8
+order: 48
 mx: "8.1"
 devicetype: A
 info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot running Android 8.x Oreo or Android 10. Settings changes require reboot.

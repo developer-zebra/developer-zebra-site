@@ -2,7 +2,7 @@
 csp: powermgr
 title: User Name
 type: parm
-order: 54
+order: 62
 mx: "10.0"
 devicetype: A
 parm:

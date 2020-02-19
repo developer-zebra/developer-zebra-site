@@ -2,7 +2,7 @@
 csp: powermgr
 title: Remote Zip File Name
 type: parm
-order: 54
+order: 55
 mx: "10.0"
 devicetype: A
 parm:

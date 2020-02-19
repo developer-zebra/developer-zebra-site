@@ -2,7 +2,7 @@
 csp: powermgr
 title: Custom Authorization Header
 type: parm
-order: 54
+order: 66
 mx: "10.0"
 devicetype: A
 parm:

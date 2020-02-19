@@ -2,7 +2,7 @@
 csp: powermgr
 title: Authorization Type
 type: parm
-order: 50
+order: 57
 mx: "10.0"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: powermgr
 title: Zebra Authentication Token
 type: parm
-order: 54
+order: 60
 mx: "10.0"
 devicetype: A
 parm:

@@ -1,0 +1,19 @@
+---
+csp: powermgr
+title: Zebra Authentication Token
+type: parm
+order: 54
+mx: "10.0"
+devicetype: A
+parm:
+  presentif: The Authorization Type is "Zebra Authentication Token"
+  pivotal: No
+  name: ZebraAuthToken
+  type: string
+---
+
+Used to enter the Zebra Authentication Token required to access a Remote Zip File from the Zebra Support Central portal. 
+
+**Parm value input rules**: 
+
+* Text string of at least one character

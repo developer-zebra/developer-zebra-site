@@ -1,0 +1,19 @@
+---
+csp: powermgr
+title: Custom Authorization Header
+type: parm
+order: 54
+mx: "10.0"
+devicetype: A
+parm:
+  presentif: The Authorization Type is "Custom Authorization Header"
+  pivotal: No
+  name: CustomAuthorizationHeader
+  type: string
+---
+
+Used to enter a Custom Authorization Header value as required to access the Remote Zip File. 
+
+**Parm value input rules**: 
+
+* Text string of at least one character

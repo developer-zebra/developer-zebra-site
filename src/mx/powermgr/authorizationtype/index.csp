@@ -6,6 +6,7 @@ order: 50
 mx: "10.0"
 devicetype: A
 parm:
+  presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"
   pivotal: Yes
   name: AuthorizationType
   type: list

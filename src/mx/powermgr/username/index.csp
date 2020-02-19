@@ -1,0 +1,19 @@
+---
+csp: powermgr
+title: User Name
+type: parm
+order: 54
+mx: "10.0"
+devicetype: A
+parm:
+  presentif: The Authorization Type is "Basic Authentication"
+  pivotal: No
+  name: UserName
+  type: string
+---
+
+Used to enter authentication credentials for accessing a Remote Zip File. 
+
+**Parm value input rules**: 
+
+* Text string of at least one character

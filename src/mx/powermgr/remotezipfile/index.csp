@@ -1,0 +1,20 @@
+---
+csp: powermgr
+title: Remote Zip File Name
+type: parm
+order: 54
+mx: "10.0"
+devicetype: A
+parm:
+  presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"
+  pivotal: No
+  name: RemoteZipFile
+  type: string
+---
+
+Used to enter the URL and file name of the Remote Zip File. 
+
+**Parm value input rules**: 
+
+* Text string from 1&ndash;255 characters
+* Supports only URLs with `http://` or `https://`

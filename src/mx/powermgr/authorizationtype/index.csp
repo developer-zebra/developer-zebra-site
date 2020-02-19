@@ -1,0 +1,36 @@
+---
+csp: powermgr
+title: Authorization Type
+type: parm
+order: 50
+mx: "10.0"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: AuthorizationType
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: No Authorization
+      description: 
+    - code: 1
+      devicetype: A
+      name: Zebra Authentication Token
+      mx: "10.0"
+      description:  
+    - code: 2
+      devicetype: A
+      name: Basic Authentication
+      mx: "10.0"
+      description: 
+    - code: 3
+      devicetype: A
+      name: Custom Authorization Header
+      mx: "10.0"
+      description:  
+---
+
+Used to select the Authorization Type required for making the server connection to acquire the remote Zip File.  
+

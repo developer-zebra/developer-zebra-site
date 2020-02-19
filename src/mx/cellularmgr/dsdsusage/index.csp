@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "8.1"
 devicetype: A
-info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot. Settings changes require reboot.
+info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot running Android 8.x Oreo or Android 10. Settings changes require reboot.
 parm:
   pivotal: No
   name: DsdsUsage

@@ -22,6 +22,9 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Wipe a device (erase all storage) 
 * Verify an OS update
 * Perform multiple updates in a single step
+* Upload/Download an OS Update from a streaming server
+* Download a zip file from a URL
+* Set the authentication type for   
 * Enable/disable: 
  * Doze Mode
  * Wake-up methods (hardware or software)

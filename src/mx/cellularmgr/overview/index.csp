@@ -19,6 +19,8 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Change the public land mobile network (PLMN) 
  * Cellular Data
  * Cellular Data Limit
+ * Dual-SIM, Dual Standby mode
+ * Automatic or manual SIM selection for voice, data, messaging
 * **Turn On/Off** (control State of): 
  * Data Roaming 
  * Background Data

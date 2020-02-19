@@ -14,23 +14,23 @@ parm:
       mx: "10.0"
       devicetype: A
       name: No Authorization
-      description: 
+      description: Selects no authorization for Upgrade/Downgrade Streaming server connection. 
     - code: 1
       devicetype: A
       name: Zebra Authentication Token
       mx: "10.0"
-      description:  
+      description: Selects Zebra Authentication Token for Upgrade/Downgrade Streaming server connection. 
     - code: 2
       devicetype: A
       name: Basic Authentication
       mx: "10.0"
-      description: 
+      description: Selects Basic Authentication for Upgrade/Downgrade Streaming server connection.
     - code: 3
       devicetype: A
       name: Custom Authorization Header
       mx: "10.0"
-      description:  
+      description: Selects Custom Authentication Header for Upgrade/Downgrade Streaming server connection. Requires a value to be entered in the CustomAuthorizationHeader parameter.  
 ---
 
-Used to select the Authorization Type required for making the server connection to acquire the remote Zip File.  
+Used to select the Authorization Type required for making the Upgrade/Downgrade Streaming server connection. 
 

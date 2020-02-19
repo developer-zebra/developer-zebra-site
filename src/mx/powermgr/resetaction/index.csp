@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 devicetype: A,B
-info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK
+info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android 4.x KitKat.
 parm:
   pivotal: Yes
   name: ResetAction
@@ -56,34 +56,35 @@ parm:
       description: Launches an OS upgrade or downgrade on devices using the specified OS Update Zip file. Restrictions apply to devices running Android 8.x Oreo and later. See Overview for more information.
     - code: 9
       devicetype: A,B
+      info: Supported only on devices running Android 8.x Oreo or later.
       name: Verify OS Update
       mx: "8.1"
       apilevel: "26"
-      description: Verifies the proper installation of an OS update on devices running Android 8.x Oreo and later. 
+      description: Verifies the proper installation of an OS update on devices running Android 8.x Oreo or later. 
     - code: 10
       devicetype: A,B
-      info: Supported only on devices running Android 8.x Oreo and later.
+      info: Supported only on devices running Android 8.x Oreo or later.
       name: OS Upgrade
       mx: "8.1"
       apilevel: "26"
       description: Launches an OS Upgrade on devices running Android 8.x Oreo and later. See Overview for more information.
     - code: 11
       devicetype: A,B
-      info: Supported only on devices running Android 8.x Oreo and later.
+      info: Supported only on devices running Android 8.x Oreo or later.
       name: OS Downgrade
       mx: "8.1"
       apilevel: "26"
-      description: Launches an OS Downgrade on devices running Android 8.x Oreo and later. See Overview for more information.
+      description: Launches an OS Downgrade. See Overview for more information.
     - code: 12
       devicetype: A,B
       name: OS Upgrade Streaming
       mx: "10.0"
-      description: Launches an OS Upgrade over the air. See Overview for more information.
+      description: Launches a full-package OS Upgrade via streaming server. See Overview for more information.
     - code: 13
       devicetype: A,B
       name: OS Downgrade Streaming
       mx: "10.0"
-      description: Launches an OS Downgrade over the air. See Overview for more information.
+      description: Launches a full-package OS Downgrade via streaming server. See Overview for more information.
 ---
 
 Used to invoke an OS- or power-related action on the device. 

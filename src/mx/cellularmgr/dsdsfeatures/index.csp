@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: DSDS Features (checkbox) 
+type: parm
+order: 49
+mx: "10.0"
+devicetype: A
+info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
+parm:
+  pivotal: No
+  name: DAAdvancedFeatures
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: (unchecked)
+      mx: "10.0"
+      description: Prevents configuration of DSDS features. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.0"
+      description: Allows configuration of DSDS features. 
+---
+
+Controls whether the device administrator (DA) has access to configuration of Dual-SIM Dual Standby features. 

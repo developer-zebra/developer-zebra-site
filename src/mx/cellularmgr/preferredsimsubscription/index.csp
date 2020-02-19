@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: DSDS SIM Subscription 
+type: parm
+order: 49
+mx: "10.0"
+devicetype: A
+info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
+parm:
+  pivotal: No
+  name: DsdsAutoService
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: SIM1
+      mx: "10.0"
+      description: Sets SIM1 as the preferred subscription. 
+    - code: 1
+      devicetype: A
+      name: SIM2
+      mx: "10.0"
+      description: Sets SIM2 as the preferred subscription.
+---
+
+Allows selection of a SIM card as the "preferred" subscription choice when using Auto Service Selection ***and*** both SIM Subscriptions are in service when a cellular service is initiated. 

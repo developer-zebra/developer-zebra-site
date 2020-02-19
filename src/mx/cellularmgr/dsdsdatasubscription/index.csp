@@ -1,0 +1,32 @@
+---
+csp: cellularmgr
+title: DSDS Data Subscription 
+type: parm
+order: 49
+mx: "10.0"
+devicetype: A
+info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
+parm:
+  presentif: DSDS Auto-service is set to "Disable"
+  pivotal: No
+  name: DSDSDataSubscription
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: Do not change
+      mx: "10.0"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A
+      name: SIM1
+      mx: "10.0"
+      description: Sets SIM1 as the preferred subscription for data service.
+    - code: 2
+      devicetype: A
+      name: SIM2
+      mx: "10.0"
+      description: Sets SIM2 as the preferred subscription for data service.
+---
+
+Allows selection of the SIM subscription to be used as "preferred" for cellular data usage when automatic SIM selection is NOT used. 

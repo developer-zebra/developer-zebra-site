@@ -1,0 +1,31 @@
+---
+csp: cellularmgr
+title: DSDS Auto-service 
+type: parm
+order: 49
+mx: "10.0"
+devicetype: A
+info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
+parm:
+  pivotal: No
+  name: DsdsAutoService
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: Do not change
+      mx: "10.0"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.0"
+      description: Enables the device to automatically select which SIM card to use for cellular service.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.0"
+      description: Prevents the device from automatically selecting which SIM card to use for cellular service.
+---
+
+Controls whether the device automatically selects which SIM card to use for cellular service based on preferences set in the Call, Data, Message and SIM Subscription parameters below. 

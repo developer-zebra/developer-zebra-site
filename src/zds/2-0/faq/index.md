@@ -17,7 +17,7 @@ menu:
 
 ###Q: What is the package name of the ZDS agent on the device?
 
-####A: ZDS is implemented as two files:
+####A: The current ZDS agent is implemented as two files:
 #### • `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
 #### • `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
 
@@ -32,6 +32,12 @@ menu:
 
 -----
 
+###Q: It's problematic to configure my firewall to communicate through a specific port if the far-end server operates on more than one IP address. Can Zebra confirm that the data collection server uses a single IP address?
+
+####A: Yes, the data collection server at analytics.zebra.com uses only `104.198.59.61` on server port 443.
+
+-----
+
 ###Q: How frequently does the ZDS Agent upload device data to the cloud?
 
 ####A: The default upload frequency is once every 24 hours.
@@ -40,7 +46,7 @@ menu:
 
 ###Q: When does the 24-hour period begin...is it the same for every device? 
 
-####A: The upload cycle for each device begins when the device is first powered up. This cannot be changed or configured to vary by device connection network or method. The first upload (and subsequent uploads) occur approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide. 
+####A: The upload cycle is different for each device; it begins when the device is first powered up. This cannot be changed or configured to vary by connection or network type. The first upload (and subsequent uploads) occur approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide. 
 
 -----
 
@@ -76,7 +82,7 @@ menu:
 
 ###Q: Can updates of the ZDS agent be disabled?
 
-####A: Not directly, but ZDS updates can be prevented by using an enterprise mobile management (EMM) system to lock device apps to a specific ZDS version. However, to ensure the highest levels of security, stablity, feature enhancement and bug fixes, <u>Zebra recommends keeping ZDS updates enabled</u>. 
+####A: Not directly, but ZDS updates can be prevented by using an enterprise mobile management (EMM) system to lock device apps to a specific ZDS version. However, <u>Zebra recommends keeping ZDS updates enabled</u> to ensure the highest levels of security, stablity, feature enhancement and bug fixes. 
 
 -----
 
@@ -87,6 +93,8 @@ menu:
 #### • Data collection (On/Off)
 #### • Upload frequency (default = every 24 hrs.)
 #### • Data collection for certain individual events
+
+#### Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information. 
 
 -----
 
@@ -106,11 +114,11 @@ menu:
 
 ###Q: What data is collected from the device? 
 
-####A: ZDS collects data about device hardware, app info and usage, network communications, location and many other parameters. See the About ZDS page for a complete [list of data collected ](../about/#datacollected). 
+####A: ZDS collects data about device hardware, app info and usage, network communications, location and many other parameters. See the About ZDS page for a complete [list of data collected](../about/#datacollected). 
 
 -----
 
-###Q: What devices are supported? 
+###Q: Which Zebra devices are supported? 
 
 ####A: Most Zebra devices support data collection. See the About ZDS page for the full list of [supported devices](../about/#supporteddevices). 
 
@@ -118,13 +126,6 @@ menu:
 
 ###Q: Why can't I see the EULA screen on my device? 
 
-####A: Some older versions of the ZDS agent did not display the end-user license agreement screen. To view the EULA, update ZDS to the latest version. See the About ZDS page for a complete [list of data collected ](../about/#datacollected). 
+####A: Some older versions of the ZDS agent did not display the end-user license agreement screen. To view the EULA, update ZDS to the latest version. Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information. 
 
 -----
-
-###Q: It's problematic to configure my firewall to communicate through a specific port if the far-end server operates on more than one IP address. Can Zebra confirm the data collection server at analytics.zebra.com uses a single IP address?
-
-####A: Yes, the data collection server at analytics.zebra.com uses only `104.198.59.61` on server port 443.
-
------
-

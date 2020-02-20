@@ -20,8 +20,7 @@ menu:
 **A: The current ZDS agent is implemented as two files**:
 
 * `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
-
-* `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
+* `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
 
 -----
 
@@ -30,7 +29,6 @@ menu:
 **A: ZDS uses the following server**:
 
 * Server address: `http://analytics.zebra.com`
-
 * Server Port: `443`
 
 -----

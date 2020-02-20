@@ -8,7 +8,7 @@ devicetype: A
 info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
 parm:
   pivotal: No
-  name: DsdsAutoService
+  name: PreferredSimSubscription
   type: list
   list:
     - code: 0

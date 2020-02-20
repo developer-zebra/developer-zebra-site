@@ -1,0 +1,22 @@
+---
+csp: cellularmgr
+title: Out-of-Service Counter
+type: parm
+order: 49
+mx: "10.0"
+apilevel: "26"
+devicetype: A
+info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
+parm:
+  presentif: DSDS Auto-service is set to "Enable"
+  pivotal: No
+  name: OutOfServiceTimer
+  type: string
+---
+
+Used to enter the maximum amount of time (in seconds) to wait during an "Out of Service" condition of the "Preferred" SIM before the device automatically switches to the alternate SIM. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters 
+

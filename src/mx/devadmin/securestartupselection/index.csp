@@ -4,6 +4,7 @@ title: Secure Startup Selection
 type: parm
 order: 15
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: Yes
@@ -13,18 +14,21 @@ parm:
     - code: 0
       devicetype: A
       mx: "10.0"
+      apilevel: "26"
       name: Do not change
       description: This value (or the absence of this parm from the XML) makes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       mx: "10.0"
+      apilevel: "26"
       name: Enable
       description: Allows the user to select "YES" when prompted to start the device in Secure mode. 
     - code: 2
       devicetype: A
       mx: "10.0"
+      apilevel: "26"
       name: Disable
-      description: Suppresses the prompt to start the device in Secure mode.
+      description: Disables "YES" button, preventing device user from selecting Secure Start-up.
 ---
 
-Controls whether the device user is allowed to start the device in Secure mode after the is password changed. 
+Controls whether the "YES" button is available for selection by device user to start the device in Secure mode after the password is changed on the device. 

@@ -28,6 +28,7 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Cellular Data Limit
 * Enter a custom cellular data limit and warning threshold
 * Select SIM Slot 
+* Enter a timeout value for inactive SIM subscription 
 * Set the number of unlock retries before service is required to unlock
 * Enter a list of acceptable Mobile Country Codes/Mobile Network Operator (MCC/MNO) 
 * Store and erase Lock and Unlock codes

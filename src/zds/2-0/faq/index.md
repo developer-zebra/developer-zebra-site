@@ -38,6 +38,12 @@ menu:
 
 -----
 
+###Q: When does the 24-hour period begin...is it the same for every device? 
+
+####A: The upload cycle for each device begins when the device is first powered up. This cannot be changed or configured to vary by device connection network or method. The first upload (and subsequent uploads) occur approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide. 
+
+-----
+
 ###Q: How much collected data is stored on the device each day?
 
 ####A: ZDS stores a maximum of 70 KB on the device each day.
@@ -65,6 +71,12 @@ menu:
 ###Q: Does ZDS self-update?
 
 ####A: Yes, ZDS updates its components every 3-4 months.
+
+-----
+
+###Q: Can updates of the ZDS agent be disabled?
+
+####A: Not directly, but ZDS updates can be prevented by using an enterprise mobile management (EMM) system to lock device apps to a specific ZDS version. However, to ensure the highest levels of security, stablity, feature enhancement and bug fixes, <u>Zebra recommends keeping ZDS updates enabled</u>. 
 
 -----
 
@@ -101,3 +113,18 @@ menu:
 ###Q: What devices are supported? 
 
 ####A: Most Zebra devices support data collection. See the About ZDS page for the full list of [supported devices](../about/#supporteddevices). 
+
+-----
+
+###Q: Why can't I see the EULA screen on my device? 
+
+####A: Some older versions of the ZDS agent did not display the end-user license agreement screen. To view the EULA, update ZDS to the latest version. See the About ZDS page for a complete [list of data collected ](../about/#datacollected). 
+
+-----
+
+###Q: It's problematic to configure my firewall to communicate through a specific port if the far-end server operates on more than one IP address. Can Zebra confirm the data collection server at analytics.zebra.com uses a single IP address?
+
+####A: Yes, the data collection server at analytics.zebra.com uses only `104.198.59.61` on server port 443.
+
+-----
+

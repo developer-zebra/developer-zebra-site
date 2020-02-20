@@ -27,7 +27,11 @@ _Click image to enlarge; ESC to exit_.
 
 ## Data Collected
 
-* General device information (model, serial number, etc.)
+* Device "Build Fingerprint" including:
+ * Device model number
+ * Android version
+ * Build ID
+* Device serial number
 * Device usage data 
 * OS image, LifeGuard and security patch levels applied
 * Available RAM

@@ -18,6 +18,7 @@ menu:
 ###Q: What is the package name of the ZDS agent on the device?
 
 **A: The current ZDS agent is implemented as two files**:
+
 * `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
 * `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
 
@@ -26,6 +27,7 @@ menu:
 ###Q: What is the server address and port number used by ZDS?
 
 **A: ZDS uses the following server**:
+
 * Server address: http://analytics.zebra.com
 * Server Port: 443
 
@@ -43,9 +45,9 @@ menu:
 
 -----
 
-###Q: When does the 24-hour period begin...is it the same for every device? 
+###Q: Is the 24-hour period the same for every device? 
 
-**A: The upload cycle is different for each device; it begins when the device is first powered up. This cannot be changed or configured to vary by connection or network type. The first upload (and subsequent uploads) occur approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide**. 
+**A: No, the upload cycle is different for each device. It begins when the device is first powered up and cannot be changed or configured to vary by connection or network type. The first upload occurs approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide**. 
 
 -----
 
@@ -90,10 +92,8 @@ menu:
 **A: Yes, ZDS allows changes to the following parameters**: 
 
 * Data collection (On/Off)
-* Upload frequency (default = every 24 hrs.)
+* Upload frequency (default = once every 24 hrs.)
 * Data collection for certain individual events
-
-**Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information**. 
 
 -----
 
@@ -102,6 +102,8 @@ menu:
 **A: The ZDS settings on a device can be changed in two ways**: 
 * Through the device UI (see [Setup section](../setup) for more info). 
 * By scanning a barcode that contains changes to the [Analytics Manager CSP](/mx/analyticsmgr). 
+
+**Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information about changing ZDS parameters**. 
 
 -----
 

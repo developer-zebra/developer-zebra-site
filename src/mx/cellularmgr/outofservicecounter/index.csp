@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the amount of time (in seconds) the device will wait during an "Out of Service" condition of the "Preferred" SIM subscription before automatically switching to the alternate SIM. 
+Used to enter the amount of time (in seconds) the device will wait during an "Out of Service" condition of the "preferred" SIM subscription before automatically switching to the alternate SIM. 
 
 **Parm value input rules**: 
 

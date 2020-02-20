@@ -31,7 +31,7 @@ menu:
 
 -----
 
-###Q: It's problematic to configure my firewall to communicate through a specific port if the far-end server operates on more than one IP address. Can Zebra confirm that the data collection server uses a single IP address?
+###Q: To simplify firewall setup, can Zebra confirm that the data collection server always uses a single IP address?
 
 **A: Yes, the data collection server at analytics.zebra.com uses only `104.198.59.61` on server port 443**.
 

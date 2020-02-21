@@ -1,0 +1,19 @@
+---
+csp: accessmgr
+title: Group Custom Details
+type: parm
+order: 6
+devicetype: A
+parm:
+  presentif: The Group Access Action is "Create"
+  pivotal: Yes
+  name: GroupCustomDetails
+  type: string
+mx: "10.0"
+---
+
+Used to enter the details for a custom Function Group. 
+
+**Parm value input rules**: 
+
+* String with a minimum of 1 character

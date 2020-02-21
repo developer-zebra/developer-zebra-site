@@ -1,0 +1,27 @@
+---
+csp: accessmgr
+title: Auto-unapprove Group (checkbox)
+type: parm
+order: 20
+mx: "10.0"
+devicetype: A
+parm:
+  presentif: The Group Access Action is "Unprotect"
+  pivotal: No
+  name: GroupAutoUnapprove
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: (unchecked)
+      description: Requires the app calling the Protect Action to be approved separately to access the specified Function Group on the device.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.0"
+      description: Automatically approves an app for access to a Function Group.
+---
+
+Controls whether the application package calling the Protect Action is automatically approved to access the CSP on which the Protect Action is being applied. 
+

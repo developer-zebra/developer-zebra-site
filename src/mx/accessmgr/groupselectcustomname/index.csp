@@ -1,0 +1,19 @@
+---
+csp: accessmgr
+title: Group Select Custom Name
+type: parm
+order: 6
+devicetype: A
+parm:
+  presentif: The Group Select is "Custom" AND Group Access Action is NOT "Do Nothing" or "Create" or "Delete"
+  pivotal: Yes
+  name: GroupSelectCustomName
+  type: string
+mx: "10.0"
+---
+
+Used to enter the name of a custom Function Group. 
+
+**Parm value input rules**: 
+
+* String with a minimum of 1 character

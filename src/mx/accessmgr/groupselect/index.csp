@@ -13,18 +13,16 @@ parm:
     - code: 1
       mx: "10.0"
       name: 'AccessMgr:CspAccessAction'
-      description: Allows access to a CSP Action.
+      description: 
     - code: 2
       mx: "10.0"
       devicetype: A
       name: 'AppMgr:Action={DisableApplication}'
-      description: Stops the specified application. 
+      description: 
     - code: 98
       mx: "10.0"
       devicetype: A
       name: Custom
-      description: Allows creation of a Custom Group.
+      description: 
 ---
 
-AccessMgr[colon]CspAccessAction
-AppMgr[colon]Action={DisableApplication}

@@ -8,13 +8,16 @@ devicetype: A
 parm:
   pivotal: Yes
   name: GroupSelect
+  type: list
+  list:
+    - code: 1
       mx: "10.0"
-      name: name for 1
+      name: 'AccessMgr:CspAccessAction'
       description: Allows access to a CSP Action.
     - code: 2
       mx: "10.0"
       devicetype: A
-      name: name for 2
+      name: 'AppMgr:Action={DisableApplication}'
       description: Stops the specified application. 
     - code: 98
       mx: "10.0"
@@ -22,3 +25,6 @@ parm:
       name: Custom
       description: Allows creation of a Custom Group.
 ---
+
+AccessMgr[colon]CspAccessAction
+AppMgr[colon]Action={DisableApplication}

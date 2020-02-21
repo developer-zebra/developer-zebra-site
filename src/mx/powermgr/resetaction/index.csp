@@ -76,14 +76,18 @@ parm:
       apilevel: "26"
       description: Launches an OS Downgrade. See Overview for more information.
     - code: 12
-      devicetype: A,B
+      devicetype: A
+      info: Requires Android 10 or later. 
       name: OS Upgrade Streaming
       mx: "10.0"
+      apilevel: "29"
       description: Launches a full-package OS Upgrade via streaming server. See Overview for more information.
     - code: 13
-      devicetype: A,B
+      devicetype: A
+      info: Requires Android 10 or later. 
       name: OS Downgrade Streaming
       mx: "10.0"
+      apilevel: "29"
       description: Launches a full-package OS Downgrade via streaming server. See Overview for more information.
 ---
 

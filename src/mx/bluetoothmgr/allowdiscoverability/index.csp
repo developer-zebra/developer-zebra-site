@@ -6,6 +6,7 @@ order: 2
 mx: "6.1"
 apilevel: "23"
 devicetype: A
+info: A license is required to use this feature on some devices. 
 parm:
   pivotal: No
   name: AllowDiscoverability

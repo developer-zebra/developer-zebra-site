@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: DSDS Auto-service 
+title: DSDS Automatic Selection
 type: parm
 order: 55
 mx: "10.0"
@@ -20,7 +20,7 @@ parm:
       devicetype: A
       name: Enable
       mx: "10.0"
-      description: Enables the device to automatically select which SIM card to use for cellular service.
+      description: Sets the device to automatically select which SIM card to use for cellular service.
     - code: 2
       devicetype: A
       name: Disable

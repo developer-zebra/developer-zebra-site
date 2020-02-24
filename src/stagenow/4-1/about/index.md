@@ -9,6 +9,8 @@ languages:
 
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 StageNow 4.1 User Guide, Revision A; <!-- StageNow MN-003401; --> January, 2020
 
 #### Covers StageNow 4.1

@@ -5,7 +5,7 @@ type: parm
 order: 6
 devicetype: A
 parm:
-  presentif: The Operation Mode is "Single User With Whitelist" *AND* Delete Packages is "Delete specified Packages(s)"
+  presentif: The Operation Mode is "Single User With Whitelist" AND Delete Packages is "Delete specified Packages(s)"
   pivotal: Yes
   name: DeletePackageNames
   type: string

@@ -7,7 +7,7 @@ mx: "4.2"
 osx: "4.1"
 devicetype: A
 parm:
-  presentif: The Operation Mode is "Single User With Whitelist" *AND* Add Packages and Allow to Submit XML is "Allow specified application(s)"
+  presentif: The Operation Mode is "Single User With Whitelist" AND Add Packages and Allow to Submit XML is "Allow specified application(s)"
   pivotal: No
   name: AddPackageNamesAllowXML
   type: string

@@ -22,5 +22,5 @@ Used to enter the CSP names and (optionally) the CSP parameter(s) to add to a Cu
 * Format: CSPname, CSPname:parmName, CSPname:CSPparm=parmValue
 
 **Example**: 
-BluetoothMgr,UiMgr:NotificationPullDown,SdCardMgr:SdCardUsage=0
+`BluetoothMgr`,`UiMgr:NotificationPullDown`,`SdCardMgr:SdCardUsage=0`
 

@@ -7,7 +7,7 @@ mx: "4.1"
 osx: "1.0"
 devicetype: A
 parm:
-  presentif: The Operation Mode is "Single User With Whitelist" *AND* Add Packages is "Add Specified Package(s)"
+  presentif: The Operation Mode is "Single User With Whitelist" AND Add Packages is "Add Specified Package(s)"
   pivotal: No
   name: AddPackageNames
   type: string

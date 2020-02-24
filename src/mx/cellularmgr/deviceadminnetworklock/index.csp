@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Device Admin Network Lock 
 type: parm
-order: 51
+order: 75
 mx: "9.2"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DSDS Call Subscription
 type: parm
-order: 49
+order: 65
 mx: "10.0"
 devicetype: A
 info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.

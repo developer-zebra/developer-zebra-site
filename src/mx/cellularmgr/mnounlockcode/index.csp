@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Unlock Code
 type: parm
-order: 73
+order: 98
 mx: "9.2"
 apilevel: "26"
 devicetype: A
@@ -13,8 +13,6 @@ parm:
   name: MNOUnlockCode
   type: string
 ---
-
-MNOUnlockCode
 
 Used to enter the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
 

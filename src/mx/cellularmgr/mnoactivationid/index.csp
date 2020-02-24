@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Activation ID
 type: parm
-order: 72
+order: 92
 mx: "9.2"
 apilevel: "26"
 devicetype: A

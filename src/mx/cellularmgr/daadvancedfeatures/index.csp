@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Advanced Features (checkbox) 
 type: parm
-order: 51
+order: 72
 mx: "9.2"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Export MNO Lock Info (checkbox) 
 type: parm
-order: 84
+order: 112
 mx: "9.2"
 apilevel: "26"
 devicetype: A

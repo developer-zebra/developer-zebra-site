@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MCC MNC List
 type: parm
-order: 56
+order: 85
 mx: "9.2"
 devicetype: A
 info: Supported on WWAN-enabled devices only.

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Retry Count
 type: parm
-order: 75
+order: 102
 mx: "9.2"
 apilevel: "26"
 devicetype: A

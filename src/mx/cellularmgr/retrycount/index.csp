@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Retry Count
 type: parm
-order: 52
+order: 78
 mx: "9.2"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Lock Action 
 type: parm
-order: 71
+order: 90
 mx: "9.2"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Out-of-Service Counter
 type: parm
-order: 49
+order: 60
 mx: "10.0"
 apilevel: "26"
 devicetype: A

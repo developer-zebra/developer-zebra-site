@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Advanced Features (checkbox) 
 type: parm
-order: 69
+order: 88
 mx: "9.2"
 apilevel: "26"
 devicetype: A

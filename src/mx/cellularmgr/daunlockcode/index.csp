@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Unlock Code
 type: parm
-order: 53
+order: 80
 mx: "9.2"
 apilevel: "26"
 devicetype: A

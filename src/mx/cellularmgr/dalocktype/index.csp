@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Lock Type 
 type: parm
-order: 51
+order: 70
 mx: "9.2"
 apilevel: "26"
 devicetype: A

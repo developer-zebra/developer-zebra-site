@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DSDS Message Subscription 
 type: parm
-order: 49
+order: 68
 mx: "10.0"
 devicetype: A
 info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
@@ -19,10 +19,15 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
     - code: 1
       devicetype: A
+      name: Ask Every Time
+      mx: "10.0"
+      description: Causes the device user to be prompted for SIM selection each time a text message is sent.
+    - code: 2
+      devicetype: A
       name: SIM1
       mx: "10.0"
       description: Sets SIM1 as the preferred subscription for messaging service.
-    - code: 2
+    - code: 3
       devicetype: A
       name: SIM2
       mx: "10.0"

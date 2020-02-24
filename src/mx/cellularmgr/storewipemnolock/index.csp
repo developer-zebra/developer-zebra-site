@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Lock Codes Store/Erase 
 type: parm
-order: 72
+order: 95
 mx: "9.2"
 devicetype: A
 info: Supported on WWAN-enabled devices only.

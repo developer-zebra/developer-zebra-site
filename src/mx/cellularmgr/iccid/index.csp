@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Enter ICCID
 type: parm
-order: 54
+order: 82
 mx: "9.2"
 apilevel: "26"
 devicetype: A

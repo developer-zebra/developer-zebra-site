@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Erase MNO Lock Info (checkbox) 
 type: parm
-order: 86
+order: 115
 mx: "9.2"
 apilevel: "26"
 devicetype: A

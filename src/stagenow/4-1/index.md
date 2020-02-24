@@ -46,6 +46,8 @@ menu:
       url: /stagenow/4-1/stageclient
     - title: Troubleshoot
       url: /stagenow/4-1/troubleshooting
+    - icon: fa fa-youtube-play
+      url: https://www.youtube.com/playlist?list=PLce6-npz5dKfmQcDERMFNiOeZrVAEJtXH    
     - icon: fa fa-download
       url: /stagenow/4-1/download    
     - icon: fa fa-graduation-cap

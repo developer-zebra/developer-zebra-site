@@ -5,6 +5,8 @@ product: StageNow
 productversion: '4.1'
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HIHqXYVwFQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 This section covers common errors that can occur when using StageNow and offers advice on how to address them. 
 
 -----

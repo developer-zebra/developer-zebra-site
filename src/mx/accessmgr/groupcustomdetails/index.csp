@@ -12,8 +12,14 @@ parm:
 mx: "10.0"
 ---
 
-Used to enter the descriptive details for a Custom Function Group. 
+Used to enter the CSP names and (optionally) the CSP parameter(s) to add to a Custom Function Group. Entering the CSP name alone adds all CSP functions to the Function Group. 
 
 **Parm value input rules**: 
 
 * String with a minimum of 1 character
+* Use commas to separate multiple CSP names and/or CSP parm(s)
+* Format: CSPname or CSPname:parmName
+
+**Example**: 
+BluetoothMgr,UiMgr:NotificationPullDown,SdCardMgr:SdCardUsage
+

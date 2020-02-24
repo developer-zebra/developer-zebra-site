@@ -3,7 +3,7 @@ csp: accessmgr
 title: Auto-approve Group (checkbox)
 type: parm
 order: 20
-mx: "9.2"
+mx: "10.0"
 apilevel: "26"
 devicetype: A
 parm:
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "9.2"
+      mx: "10.0"
       devicetype: A
       name: (unchecked)
       apilevel: "26"
@@ -21,7 +21,7 @@ parm:
     - code: 1
       devicetype: A
       name: (checked)
-      mx: "9.2"
+      mx: "10.0"
       apilevel: "26"
       description: Automatically approves the app for calling a Protected Function Group.
 ---

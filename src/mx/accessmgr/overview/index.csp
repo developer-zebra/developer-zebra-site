@@ -23,6 +23,9 @@ AccessMgr also provides the option to control whether the device user can access
 * **Turn On/Off**: 
  * App whitelisting
  * Verification of app signatures
+ * Auto-approve/unapprove app access Protected CSPs
+ * Auto-approve/unapprove app access Protected Function Groups
+* Create, delete, approve, unapprove, protect and unprotect custom Protected Function Groups
 * Manage the "whitelist" of applications that a device user can install and launch
 * Control which applications are allowed to submit XML
 * Select whether the device user can access Full or Reduced Settings

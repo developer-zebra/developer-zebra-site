@@ -10,6 +10,7 @@ parm:
   name: GroupCustomDetails
   type: string
 mx: "10.0"
+apilevel: "26"
 ---
 
 Used to enter the CSP names and (optionally) the CSP parameter(s) to add to a Custom Function Group. Entering the CSP name alone adds all CSP functions to the Function Group. 
@@ -18,8 +19,8 @@ Used to enter the CSP names and (optionally) the CSP parameter(s) to add to a Cu
 
 * String with a minimum of 1 character
 * Use commas to separate multiple CSP names and/or CSP parm(s)
-* Format: CSPname or CSPname:parmName
+* Format: CSPname, CSPname:parmName, CSPname:CSPparm=parmValue
 
 **Example**: 
-BluetoothMgr,UiMgr:NotificationPullDown,SdCardMgr:SdCardUsage
+BluetoothMgr,UiMgr:NotificationPullDown,SdCardMgr:SdCardUsage=0
 

@@ -10,9 +10,10 @@ parm:
   name: GroupPackageName
   type: string
 mx: "10.0"
+apilevel: "26"
 ---
 
-Used to enter the name of a custom Function Group. 
+Used to enter the Package Name of an application on which to perform the selected Group Access Action. 
 
 **Parm value input rules**: 
 

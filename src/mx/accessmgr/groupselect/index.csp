@@ -4,6 +4,7 @@ title: Group Select
 type: parm
 order: 2
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: Yes
@@ -12,18 +13,21 @@ parm:
   list:
     - code: 1
       mx: "10.0"
+      apilevel: "26"
       name: 'AccessMgr:CspAccessAction'
       description: 
     - code: 2
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: 'AppMgr:Action={DisableApplication}'
       description: 
     - code: 98
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Custom
       description: Allows selection of a Custom Group.
 ---
 
-Used to select the name of the Function Group for chosen Action. 
+Used to select the name of the Function Group for a chosen Action. 

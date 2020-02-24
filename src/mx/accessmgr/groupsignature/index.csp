@@ -10,6 +10,7 @@ parm:
   name: GroupSignature
   type: string
 mx: "10.0"
+apilevel: "26"
 ---
 
 Used to enter the signature of a Custom Function Group. 

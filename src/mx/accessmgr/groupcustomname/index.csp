@@ -10,9 +10,10 @@ parm:
   name: GroupCustomName
   type: string
 mx: "10.0"
+apilevel: "26"
 ---
 
-Used to enter the name of a Custom Function Group. 
+Used to enter the Name of the Custom Function Group being defined. 
 
 **Parm value input rules**: 
 

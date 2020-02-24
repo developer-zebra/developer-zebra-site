@@ -4,6 +4,7 @@ title: Group Access Action
 type: parm
 order: 2
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: Yes
@@ -12,45 +13,54 @@ parm:
   list:
     - code: 0
       mx: "10.0"
+      apilevel: "26"
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) causes no change; any prior settings are retained.
     - code: 1
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Create
       description: Creates a Custom Function Group.
     - code: 2
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Delete
       description: Deletes a Custom Function Group.
     - code: 3
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Protect
       description: Declares a Function Group as Protected.
     - code: 4
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Unprotect
       description: Declares a Function Group as Unprotected.
     - code: 5
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: VerifyProtected
       description: Verifies whether a Function Group is Protected.
     - code: 6
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: ApproveApplication
       description: Approves an Application to use a Function Group.
     - code: 7
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: UnapproveApplication
       description: Removes approval from an Application for using a Function Group.
     - code: 8
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: VerifyApproved
       description: Verifies that an Application is Approved to use a Function Group.

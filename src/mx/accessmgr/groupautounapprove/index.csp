@@ -4,6 +4,7 @@ title: Auto-unapprove Group (checkbox)
 type: parm
 order: 20
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 parm:
   presentif: The Group Access Action is "Unprotect"
@@ -13,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: (unchecked)
       description: Requires the app calling the Protect Action to be approved separately to access the specified Function Group on the device.
@@ -20,6 +22,7 @@ parm:
       devicetype: A
       name: (checked)
       mx: "10.0"
+      apilevel: "26"
       description: Automatically approves an app for access to a Function Group.
 ---
 

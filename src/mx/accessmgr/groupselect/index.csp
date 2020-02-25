@@ -30,4 +30,4 @@ parm:
       description: Allows selection of a Custom Group.
 ---
 
-Used to select the name of an existing Function Group for a chosen Action. 
+Used to select the name of an existing Function Group on which to perform the chosen Group Access Action. 

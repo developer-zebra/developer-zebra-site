@@ -6,6 +6,7 @@ order: 2
 mx: "8.1"
 apilevel: "23"
 devicetype: A,B
+info: Known as FOTA Manager (FotaMgr) in devices with MX versions prior to 9.0. See Overview.
 parm:
   pivotal: No
   name: LifeGuardOTAClientState

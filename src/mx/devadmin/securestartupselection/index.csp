@@ -4,6 +4,7 @@ title: Secure Start-up Selection
 type: parm
 order: 15
 mx: "10.0"
+osx: "6.2"
 apilevel: "26"
 devicetype: A
 parm:
@@ -14,18 +15,21 @@ parm:
     - code: 0
       devicetype: A
       mx: "10.0"
+      osx: "6.2"
       apilevel: "26"
       name: Do not change
       description: This value (or the absence of this parm from the XML) makes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       mx: "10.0"
+      osx: "6.2"
       apilevel: "26"
       name: Enable
       description: Allows the user to select "YES" when prompted to protect the device boot process. 
     - code: 2
       devicetype: A
       mx: "10.0"
+      osx: "6.2"
       apilevel: "26"
       name: Disable
       description: Disables "YES" button, preventing device user from electing to protect the device boot process.

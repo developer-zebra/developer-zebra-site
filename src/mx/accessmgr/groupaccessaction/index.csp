@@ -51,19 +51,19 @@ parm:
       apilevel: "26"
       devicetype: A
       name: ApproveApplication
-      description: Approves an Application to use a Function Group.
+      description: Approves an application to use a Function Group.
     - code: 7
       mx: "10.0"
       apilevel: "26"
       devicetype: A
       name: UnapproveApplication
-      description: Removes approval from an Application for using a Function Group.
+      description: Removes approval from an application for using a Function Group.
     - code: 8
       mx: "10.0"
       apilevel: "26"
       devicetype: A
       name: VerifyApproved
-      description: Verifies that an Application is Approved to use a Function Group.
+      description: Verifies that an application is Approved to use a Function Group.
 ---
 
 Used to select an Action to perform for creating new or designating existing Function Groups. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps. For example, a "Communications" Function Group might designate certain functions from CellularMgr, GprsMgr and Wi-Fi CSPs as sensitive and limit access to authorized apps only. 

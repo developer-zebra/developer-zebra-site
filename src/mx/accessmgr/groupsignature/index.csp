@@ -13,7 +13,7 @@ mx: "10.0"
 apilevel: "26"
 ---
 
-Used to enter the signature of a Custom Function Group. 
+Used to enter the signature of a Custom Function Group when approving or unapproving an app to access that group. 
 
 **Parm value input rules**: 
 

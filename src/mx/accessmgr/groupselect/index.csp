@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Group Select
 type: parm
-order: 55
+order: 45
 mx: "10.0"
 apilevel: "26"
 devicetype: A
@@ -30,4 +30,4 @@ parm:
       description: Allows selection of a Custom Group.
 ---
 
-Used to select the name of the Function Group for a chosen Action. 
+Used to select the name of an existing Function Group for a chosen Action. 

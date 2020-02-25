@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Group Select Custom Name
 type: parm
-order: 58
+order: 42
 devicetype: A
 parm:
   presentif: The Group Select is "Custom" AND Group Access Action is NOT "Do Nothing" or "Create" or "Delete"
@@ -13,7 +13,7 @@ mx: "10.0"
 apilevel: "26"
 ---
 
-Used to select the name of a Custom Function Group. 
+Used to enter the name of the Custom Function Group being created or deleted. 
 
 **Parm value input rules**: 
 

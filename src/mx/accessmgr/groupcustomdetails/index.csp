@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Group Custom Details
+title: Function Group Entries
 type: parm
-order: 48
+order: 58
 devicetype: A
 parm:
   presentif: The Group Access Action is "Create"

@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Auto-unapprove Group (checkbox)
 type: parm
-order: 45
+order: 52
 mx: "10.0"
 apilevel: "26"
 devicetype: A

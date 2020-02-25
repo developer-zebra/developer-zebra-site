@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Group Custom Name
+title: Function Group Name
 type: parm
-order: 50
+order: 55
 devicetype: A
 parm:
   presentif: The Group Access Action is "Create" or "Delete"

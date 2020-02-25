@@ -19,9 +19,6 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Change the public land mobile network (PLMN) 
  * Cellular Data
  * Cellular Data Limit
- * Dual-SIM, Dual Standby mode
- * Automatic or manual SIM selection for voice, data, messaging
-* Out-of-service counter for SIM auto-switch
 * **Turn On/Off** (control State of): 
  * Data Roaming 
  * Background Data
@@ -39,5 +36,10 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * A specific Mobile Network Operator, sometimes referred to as a "subsidy lock"
  * An individual ICCID (SIM card)
  * Access only by a service technician
+* **On multi-SIM L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10**: 
+ * Enable/disable Dual-SIM, Dual Standby mode
+ * Enable/disable additional dual-SIM features: 
+ * Automatic or manual SIM selection for voice, data, messaging
+ * Out-of-service counter for SIM auto-switch
 
 -----

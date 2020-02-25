@@ -7,7 +7,7 @@ order: 0
 ---
 The Lifeguard Over the Air Manager (formerly FOTA Manager or FotaMgr) controls the Firmware Over The Air (FOTA) Client on the device. This client allows administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is preconfigured to communicate with the Zebra update server. 
 
-> **`SUPPORT NOTE:` This CSP is supported only on 8956-platform devices running Android 7.x Nougat or later with Patch 19 or later**, and is known as FOTA Manager (FotaMgr) on devices with MX versions prior to 9.0.
+> **`SUPPORT NOTE:` This CSP is supported only on 8956-platform devices running Android 7.x Nougat or later with LifeGuard Updates 19 or later**. On devices with MX versions prior to 9.0, this CSP is displayed as FOTA Manager (FotaMgr).
 
 <!--
 2/25/20- per eng (TUT-35395), old note (below) changed to above.

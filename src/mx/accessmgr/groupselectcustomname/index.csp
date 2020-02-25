@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Group Select Custom Name
 type: parm
-order: 6
+order: 58
 devicetype: A
 parm:
   presentif: The Group Select is "Custom" AND Group Access Action is NOT "Do Nothing" or "Create" or "Delete"

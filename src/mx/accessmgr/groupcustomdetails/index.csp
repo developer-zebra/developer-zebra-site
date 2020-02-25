@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Group Custom Details
 type: parm
-order: 6
+order: 48
 devicetype: A
 parm:
   presentif: The Group Access Action is "Create"

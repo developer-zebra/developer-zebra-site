@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Group Package Name
+title: Application Package Name
 type: parm
 order: 48
 devicetype: A

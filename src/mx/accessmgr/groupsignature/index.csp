@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Group Signature
+title: Application Signature
 type: parm
 order: 60
 devicetype: A

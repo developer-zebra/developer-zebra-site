@@ -19,8 +19,8 @@ Used to enter the CSP names and (optionally) the CSP parameter(s) and parameter 
 
 * String with a minimum of 1 character
 * Use commas to separate multiple CSP names and/or CSP parm(s)/parm values
-* **Formats**: `CSPname`, `CSPname:parmName`, `CSPname:CSPparm=parmValue`
+* **Formats**: `CSPname`, `CSPname:parmName`, `CSPname:CSPparm={parmValue}`
 
 **Example**: 
-`BluetoothMgr`,`UiMgr:NotificationPullDown`,`SdCardMgr:SdCardUsage=0`
+`BluetoothMgr`,`UiMgr:NotificationPullDown`,`SdCardMgr:SdCardUsage={0}`
 

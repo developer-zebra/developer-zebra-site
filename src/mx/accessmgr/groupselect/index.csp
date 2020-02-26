@@ -32,6 +32,6 @@ parm:
 
 Used to select the name of an existing Function Group on which to perform the chosen Group Access Action. 
 
-* **Code 1: CSP Access Management built-in Function Group** includes Access Manager's `CspAccessAction` parameter, allowing all operations (i.e. protect, unprotect etc.) to be performed.
-* **Code 2: Stop Application built-in Function Group** includes the DisableApplication value of the Application Manager's Action parameter, and allows all operations (protect, unprotect ..etc) can be perform on this group.
-* **Custom Function Group** created using the `create` value of the Group Access Action parameter and the Function Group Details (aka Entries) parameter. 
+* **Code 1: CSP Access Management built-in Function Group** includes Access Manager's `CspAccessAction` parameter. **Allows all operations** (i.e. protect, unprotect etc.) to be performed.
+* **Code 2: Stop Application built-in Function Group** includes the DisableApplication value of the Application Manager's Action parameter. **Allows all operations** (i.e. protect, unprotect etc.) to be perform.
+* **Custom Function Group** created using the `create` value of the Group Access Action parameter and the Function Group Details (see "Function Group Entries") parameter. 

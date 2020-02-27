@@ -6,12 +6,10 @@ productversion: '2.3.1'
 ---
 ## Overview
 
-As part of Zebra DNA Visibility Console (ZDVC) starting with PowerPrecision Console (PPC) v2.0, PPC runs on a supported Windows-based server. PPC client runs on supported [Zebra devices](../about#devicerequirements). This section provides system requirements and instructions for install and setup for the solution.
+PowerPrecision Console (PPC) consists of the following two components:
 
-Solution components:
-* **ZDVC server** - consists of a suite of solutions including [Device Tracker](/devicetracker/latest/guide/about) and PPC. PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
-* **Web portal** - centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
-* **PPC client** - reports battery and device information to server
+* **Client** – PPC client app runs on [supported Zebra Android mobile devices](../about#devicerequirements). It collects and sends battery and device information to the server.
+* **Server** – PPC server became part of the Zebra DNA Visibility Console server solution starting with v2.0, a common server software for both [Device Tracker](/devicetracker/latest/guide/about) and PowerPrecision Console.  It provides a centralized dashboard that is accessible from a supported browser running on a kiosk, tablet, or PC.  The server collects and analyzes device battery data, monitors battery information, sends notifications and generates reports.
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
  * **Install a server certificate** - Supported certificates:

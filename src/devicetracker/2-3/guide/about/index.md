@@ -7,7 +7,9 @@ productversion: '2.3.1'
 
 ## Overview
 
-Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra DNA Visibility Console, it leverages existing WiFi network infrastructure and uses both Bluetooth Low Energy (BLE) and audio to aid in locating devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) it is connected to within the facility. BLE (Bluetooth Low Energy) beacons are transmitted from the misplaced device for real-time proximity sensing, determining its relative position compared to the misplaced device. Audio can be played on the misplaced device to further pinpoint its specific location. Device Tracker centralized management system continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
+Device Tracker is a centralized software solution that tracks and finds misplaced devices within a facility to help prevent inventory shrinkage. It leverages existing WiFi network infrastructure, Bluetooth Low Energy (BLE) and audio chirping to locate devices. Device Tracker continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
+
+When locating a device, Device Tracker identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility.  The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device.  Chirping audio can be played on the misplaced device to further determine its specific location. 
 
 ## New in Device Tracker 2.3.1
 * New feature on the server to toggle BLE for device proximity tracking.
@@ -77,7 +79,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 
 Device Tracker main features:
 *	General location information for all supported WiFi devices based on connected AP
-* Real-time device proximity tracking with BLE.
+* Real-time device proximity tracking with BLE
 *	Misplaced device prevention by monitoring low power and disconnection state
 *	Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers. 
  * Filter and sort data
@@ -92,10 +94,6 @@ Device Tracker main features:
 
 
 ##How it works
-Device Tracker consists of the following components:
-*	Client – Device app collects and sends device data to server.
-*	Server – Part of Zebra DNA Visibility Console, which also includes PowerPrecision Console. It collects and processes device data. 
-*	Web portal - Part of Zebra DNA Visibility Console, which provides a centralized dashboard for monitoring device presence, tracking, and battery status. 
 
 The Device Tracker client app registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located while connected to the AP. From the web portal, the Admin marks the misplaced device "To be found". On the associate’s device, the Device Tracker client displays a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. If BLE is enabled, a proximity meter appears indicating how close or far the user is to the misplaced device. <!--"Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device.--> Audio can be played on the target device to further locate it by sound. 
 

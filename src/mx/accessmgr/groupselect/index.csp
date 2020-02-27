@@ -15,13 +15,13 @@ parm:
       mx: "10.0"
       apilevel: "26"
       name: 'AccessMgr:CspAccessAction'
-      description: CSP Access Management built-in Function Group includes Access Manager's CspAccessAction parameter. Allows all Group Access Actions (i.e. protect, unprotect etc.) to be performed.
+      description: '"CSP Access Management" built-in Function Group includes Access Manager's CspAccessAction parameter. Allows all Group Access Actions (i.e. protect, unprotect etc.) to be performed.'
     - code: 2
       mx: "10.0"
       apilevel: "26"
       devicetype: A
       name: 'AppMgr:Action={DisableApplication}'
-      description: Stop Application built-in Function Group includes the `DisableApplication` value of the Application Manager's Action parameter. Allows all Group Access Actions (i.e. protect, unprotect etc.) to be performed.
+      description: '"Stop Application" built-in Function Group includes the "DisableApplication" value of the Application Manager's Action parameter. Allows all Group Access Actions (i.e. protect, unprotect etc.) to be performed.'
     - code: 98
       mx: "10.0"
       apilevel: "26"

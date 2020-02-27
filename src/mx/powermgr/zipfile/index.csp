@@ -29,6 +29,7 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 
 ### Update File Rules
 
+* The reset command (`reboot_recovery`) is **supported only on devices running Android 10**. Other devices must execute required reset(s) using a StageNow Profile. 
 * **Zebra recommends <u>matching case when entering file names</u>** to avoid case-sensitivity errors on some devices. 
 * **Required file(s) must be on the device before the Reset Action** is initiated.
 * The .upl file and all referenced .zip files must be **in the same device folder**. 

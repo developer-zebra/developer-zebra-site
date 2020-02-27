@@ -66,6 +66,6 @@ parm:
       description: Verifies that an application is Approved to use a Function Group.
 ---
 
-Used to select an Action to perform for creating new or designating existing Function Groups. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps. For example, a "Communications" Function Group might designate certain functions from CellularMgr, GprsMgr and Wi-Fi CSPs as sensitive and limit access to authorized apps only. 
+Used to select an Action to perform on new or existing Function Groups. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps. For example, a "Communications" Function Group might designate certain functions from CellularMgr, GprsMgr and Wi-Fi CSPs as sensitive and limit access to authorized apps only.
 
 **By default, all features are Unprotected and all apps are Authorized to access all functions**. Once a Function Group is created and set as Protected, all apps are prevented from accessing functions within that group ***except*** apps specifically Approved for access. 

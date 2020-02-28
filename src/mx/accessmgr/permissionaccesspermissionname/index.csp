@@ -15,7 +15,7 @@ parm:
       mx: "10.0"
       apilevel: "26"
       name: android.permission.ACCESS_NOTIFICATIONS
-      description: Grants permission to access app Notifications on the device.
+      description: Grants permission to access Notifications on the device.
     - code: 2
       mx: "10.0"
       apilevel: "26"
@@ -27,7 +27,7 @@ parm:
       apilevel: "26"
       devicetype: A
       name: android.permission.SYSTEM_ALERT_WINDOW
-      description: Grants permission to the System Alert Window, which allows one app to draw over another. 
+      description: Grants permission to use the System Alert Window, which allows one app to draw over another. 
     - code: 4
       mx: "10.0"
       apilevel: "26"
@@ -39,11 +39,7 @@ parm:
       apilevel: "26"
       devicetype: A
       name: android.permission.BATTERY_STATS
-      description: Grants permission to access battery statistics on the device.
+      description: Grants permission to access battery statistics for the device.
 ---
 
-OLD 
-
-Used to select an Action to perform on an app regarding access to a Function Group. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps. For example, a "Communications" Function Group might designate certain functions from CellularMgr, GprsMgr and Wi-Fi CSPs as sensitive and limit access to authorized apps only.
-
-**By default, all features are Unprotected and all apps are Authorized to access all functions**. Once a Function Group is created and set as Protected, all apps are prevented from accessing functions within that group ***except*** apps specifically Approved for access. 
+Used to select the name of a permission to grant to an app for the selected Permission Access Action. 

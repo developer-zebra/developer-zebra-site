@@ -1,0 +1,19 @@
+---
+csp: accessmgr
+title: Permission Access Signature
+type: parm
+order: 24
+devicetype: A
+parm:
+  presentif: The Permission Access Action is NOT "Do Nothing"
+  pivotal: Yes
+  name: PermissionAccessSignature
+  type: string
+mx: "10.0"
+---
+
+Used to enter the signature file for the app being acted upon by the selected Permission Access Action. 
+
+**Parm value input rules**: 
+
+* String with a minimum of 1 character

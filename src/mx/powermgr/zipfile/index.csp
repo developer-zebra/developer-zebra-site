@@ -14,9 +14,9 @@ parm:
   type: string
 ---
 
-Used to enter the path and filename of the file to be consumed when updating the device using a supported Action. The OS Update file must be the specific .zip file being applied, or a text file (with `.upl` extension) containing a list of patches (multiple .zip files) to be applied in the desired order from top to bottom as listed in the file. 
+Used to enter the path and filename of the file to be consumed when updating the device using a supported Action. The OS Update file must be the specific `.zip` file being applied, or a text file (with `.upl` extension) containing a list of patches (multiple `.zip` files) to be applied in the desired order from top to bottom as listed in the file. 
 
-For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101_G_00_02.zip` are to be applied in that order, the OS Update text file should be created as follows: 
+For example, if the `.zip` files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101_G_00_02.zip` are to be applied in that order, an OS Update text file should be created as follows: 
 
 	:::term
 	//Contents of the "osupdate.upl" text file:
@@ -29,17 +29,23 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 
 ### Update File Rules
 
-* **The reset command** (`reboot_recovery`) **is supported only on devices running Android 10**. Other devices must execute any required reset(s) from StageNow Profile(s). 
+<!-- 2/27/20- disputed reset-command syntax: 
+"reboot_recovery" (per thread)
+“command: FactoryReset” (per PM)
+“command: EnterpriseReset” (per PM)
+-->
+
+* **The reset command is supported for use within a `.upl` file <u>only on devices running Android 10</u>**. Other devices must execute all required reset(s) using Reset Actions in one or more StageNow Profile(s). 
 * **Zebra recommends <u>matching case when entering file names</u>** to avoid case-sensitivity errors on some devices. 
-* **Required file(s) must be on the device before the Reset Action** is initiated.
-* The `.upl` file and all referenced .zip files must be **in the same device folder**. 
+* **Required file(s) must be on the device before a Reset Action** is initiated.
+* The `.upl` file and all referenced `.zip` files must be **in the same device folder**. 
 * The folder used for storing file(s) must be a supported location according to the Android Location/Device Location Rules below. 
 * **Location rules and characteristics vary by device**. 
 * **The following devices <u>do not support</u> `.upl` files**:
  * **TC70 KitKat**
  * **TC75 KitKat**
 
-### Android Location Rules
+### Android File Location Rules
 
 * **Update file location must not be blocked** by [SdCardMgr](/mx/sdcardmgr) or any other means. 
 * **Removable media must be physically present**. Storage partitions implemented on a removable medium such as a Micro SD Card must be inserted in the device when the Reset Action is initiated. 
@@ -50,7 +56,7 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 
 **Note:** The path specified using this parameter would normally be the same as the path to which the file was written when it was transferred to the device. However, path names can sometimes appear to be different while ending at the same destination, and it's possible that some such paths will fail to initiate an OS Update when specified using this parameter. Therefore, **Zebra recommends using paths in the following table when entering the OS Update file to the PowerMgr**.
 
-### Device Location Rules
+### Device File Location Rules
 <div class="parm-table">
 <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 
@@ -486,4 +492,4 @@ However, support of such locations is subject to changes that are beyond Zebra's
 
 **Parm value input rules**: 
 
-* String from 1&ndash;255 characters containing full path and file name of OS Update .zip or `.upl` file 
+* String from 1&ndash;255 characters containing full path and file name of OS Update `.zip` or `.upl` file 

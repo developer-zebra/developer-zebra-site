@@ -13,9 +13,9 @@ parm:
   type: string
 ---
 
-Used to enter the name of the app package(s) on which to perform an App Feature Action. Separate multiple entered names using commas.  
+Used to enter the name of the app package(s) on which to perform an App Feature Action. Separate multiple names using commas.  
 
 **Input value rules**: 
 
 * String of at least 1 character containing the full path and name(s) of device-resident app package(s)
-* Separate multiple names using commas (i.e. packagename1,packagename2,packagename3)
+* Separate multiple names using commas (i.e. `packagename1`,`packagename2`,`packagename3`)

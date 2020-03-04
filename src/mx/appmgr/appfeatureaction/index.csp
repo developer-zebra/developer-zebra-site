@@ -31,4 +31,4 @@ parm:
       apilevel: "26"
 ---
 
-This is the On/Off switch for features selected in the App Feature parameter in the package selected in the App Feature Packages parameter. 
+This is the On/Off switch for features selected using the App Feature parameter or in the package selected using the App Feature Packages parameter. 

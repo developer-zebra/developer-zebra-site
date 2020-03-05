@@ -40,7 +40,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New Features 
 
-* **Enterprise Keyboard can now display predefined responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). Selected responses are sent to the focused input field as if typed in manually. 
+* **Enterprise Keyboard can now display "Canned text" responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). When selected, the "Canned text" response is sent to the focused input field as if typed in manually. 
 
 * **A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
 

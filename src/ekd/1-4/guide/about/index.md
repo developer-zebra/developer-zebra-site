@@ -46,7 +46,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 ## What's New in v1.4
 
-* **<u>[Predefined responses](../usage/#predefinedresponses)</u>** allows a list of text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
+* A new **"<u>[Canned text](../usage/#cannedtext)</u>"** feature allows a list of predefined text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard when the key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
 
 * **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
 

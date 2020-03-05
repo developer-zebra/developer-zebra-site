@@ -184,7 +184,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 ### Text Correction
 Text Correction controls automatic corrections to typed text based the predefined parameters explained below. This functionality is provided by the Personal Dictionary, which also permits lists of custom or industry-specific terms and shortcuts (abbreviations) to be loaded into a device and presented as substitution suggestions along with those of the selected language(s). 
 
-**NOTE**: Enterprise Keyboard 3.4 (and later) supports "Canned text," which presents a list of predefined textual phrases when a key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. See [Enterprise Keyboard Designer](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more. 
+**NOTE**: Enterprise Keyboard 3.4 (and later) supports "Canned text," which presents a list of predefined textual phrases when a key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. See the [Enterprise Keyboard Designer user guide](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more. 
 
 <img alt="" style="height:350px" src="pref_text_2.png"/>
 <br>

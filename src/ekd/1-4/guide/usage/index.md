@@ -316,7 +316,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 -----
 
-### "Canned text"
+### Canned text
 
 A list of "canned text" or predefined responses can be assigned to any key and appear in a pop-up list when that key is pressed. This can help improve the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
 

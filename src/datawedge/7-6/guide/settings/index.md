@@ -113,7 +113,7 @@ Once DataWedge is set up and configured as desired on a device, settings can be 
 -----
 
 ### Export a Config
-Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
+Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. This is particularly useful to export multiple profiles. 
 
 **To Export a DataWedge Config file**: 
 
@@ -174,7 +174,7 @@ If an external SD card is installed, an alternate path can be selected:
 
 ### Import a Config
 
-DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
+DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. This is particularly useful to import multiple profiles. 
 
 > **Importing a Config file overwrites all DataWedge settings and Profiles previously stored on the device**.
 
@@ -199,7 +199,7 @@ See [Cross-Device Import](#crossdeviceimport) for more information.
 
 Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. See [Export a Profile](#exportaprofile) for more information. 
 
-While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. 
+While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings from an individual profile that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. 
 
 **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
 

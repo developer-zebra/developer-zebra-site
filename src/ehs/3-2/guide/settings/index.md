@@ -284,10 +284,16 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
         <application label="" package="com.android.c*" exclude="com.android.camera2;com.android.contacts"/>
     </applications>
 
-**Wildcard rules**:
-
-* Individual apps and wildcard sets will appear in the User Mode Launcher in the same order as they are listed in the &lt;applications&gt; node. 
+#####Wildcard rules:
+* Individual apps and wildcard sets appear in the User Mode Launcher in the same order as listed in the &lt;applications&gt; node. 
 * Apps within each wildcard set are listed alphabetically by label relative to other apps in that set. 
+* When app and links are present in the &lt;applications&gt; node, links are displayed first, then apps, regardless of order entered in the node (see image, below). 
+<img alt="" style="height:350px" src="ehs_32_apps_links_list.png"/>
+_Apps and links alternated in the node (as shown above) are rendered as links, then apps_.<br>
+_Click image to enlarge; ESC to exit_. 
+<br> 
+
+##### Wildcard rules (cont'd):
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
 * If **bundle** and **icon** attributes are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 

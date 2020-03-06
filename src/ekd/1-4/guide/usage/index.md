@@ -283,7 +283,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 * **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
  * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered.
  * **key -** Outputs the lower-case character corresponding to the keyValue entered.
- * **"Canned text" -** Displays a list of [predefined responses](#cannedtext) (see below).
+ * **Canned text -** Displays a list of [predefined responses](#cannedtext) (see below).
  * **UC -** Outputs the Unicode character corresponding to the Unicode value entered.
 * **Actions to switch the layout -** Use the key-value pairs below to switch to a specific layout. 
  * **Switch-abc -** Switches to the Enterprise Keyboard standard alpha-numeric layout.
@@ -318,9 +318,9 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 ### Canned text
 
-A list of "canned text" or predefined responses can be assigned to any key and appear in a pop-up list when that key is pressed. This can help improve the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
+A list of Canned text or predefined responses can be assigned to any key and appear in a pop-up list when that key is pressed. This can help improve the speed and accuracy of responses when using Enterprise Keyboard. Tapping on a predefined response enters the text into the focused field as if it had been typed in manually. 
 
-`IMPORTANT:` **Use of the plus sign (+) in "Canned text" list items can cause unpredictable behavior**. 
+`IMPORTANT:` **Use of the plus sign (+) in Canned text list items can cause unpredictable behavior**. 
 
 **Example Responses**:
 * "I'm in a meeting...please call back later"
@@ -331,7 +331,7 @@ A list of "canned text" or predefined responses can be assigned to any key and a
 
 > **NOTE: This feature requires Enterprise Keyboard 3.4 or later on the device**. 
 
-#### To create "Canned text" response(s): 
+#### To create Canned text response(s): 
 
 1. **Create (or select) a button** in the current layout.  
 2. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**: 
@@ -340,7 +340,7 @@ A list of "canned text" or predefined responses can be assigned to any key and a
 <br>
 3. **Enter a desired response** in the pop-up:
  <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
- `IMPORTANT:` **Use of the plus sign (+) in "Canned text" list items can cause unpredictable behavior**. <br>
+ `IMPORTANT:` **Use of the plus sign (+) in Canned text list items can cause unpredictable behavior**. <br>
 4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
@@ -350,13 +350,13 @@ A list of "canned text" or predefined responses can be assigned to any key and a
 8. **Click "Save Project" to create a project file for deployment**.
 <br>
 
-##### "Canned text" responses are stored and deployed with the layout.
+##### Canned text responses are stored and deployed with the layout.
 
 > **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 
-#### To edit or delete "Canned text" Response(s): 
+#### To edit or delete Canned text Response(s): 
 
 1. **Open the key layout project that contains the response list(s)** to be modified.
 2. In the layout, **select the button that contains the response list(s)** to be edited.  
@@ -373,8 +373,8 @@ A list of "canned text" or predefined responses can be assigned to any key and a
  <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
  _Click image to enlarge, ESC to exit_.
 6. **Edit the response** as desired and **click Submit**.<br>
- `IMPORTANT:` **Use of the plus sign (+) in "Canned text" responses can cause unpredictable behavior**. 
-7. **Repeat Steps 5 and 6** until all "Canned text" responses appear as desired.  
+ `IMPORTANT:` **Use of the plus sign (+) in Canned text responses can cause unpredictable behavior**. 
+7. **Repeat Steps 5 and 6** until all Canned text responses appear as desired.  
 8. **Click Save to store changes and exit the pop-up**. 
 9. **Click "Save Layout" button** to store the new project settings.<br>
  **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
@@ -382,7 +382,7 @@ A list of "canned text" or predefined responses can be assigned to any key and a
 10. **Click "Save Project" to create a project file for deployment**.
 <br>
 
-##### "Canned text" responses are stored and deployed with the layout.
+##### Canned text responses are stored and deployed with the layout.
 
 > **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 

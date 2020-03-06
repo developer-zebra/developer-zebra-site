@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "8.1"
 devicetype: A
-info: Supported only on devices running Android 8.x Oreo and later.
+info: Supported only for full-OS package Upgrade/Downgrade Actions on SDM660-platform devices running Android 8.x Oreo or later.
 parm:
   presentif: The Reset Action is "OS Upgrade"
   pivotal: No
@@ -21,12 +21,12 @@ parm:
       devicetype: A
       name: True
       mx: "8.1"
-      description: Prevents the device from rebooting following an OS Upgrade Action.  
+      description: Prevents the device from rebooting following an OS Upgrade or Downgrade Action.  
     - code: 2
       devicetype: A
       name: False
       mx: "8.1"
-      description: Allows the device to reboot following an OS Upgrade Action.
+      description: Allows the device to reboot following an OS Upgrade or Downgrade Action.
 ---
 
-Controls whether the device reboots following an OS Upgrade or Downgrade Action on a device running Android 8.x Oreo or later. 
+Controls whether the device reboots following a full-OS package Upgrade or Downgrade on a SDM660 device running Android 8.x Oreo or later. **Not supported for differential or LifeGuard updates**.

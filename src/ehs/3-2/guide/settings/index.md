@@ -287,9 +287,9 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
 #####Wildcard rules:
 * Individual apps and wildcard sets appear in the User Mode Launcher in the same order as listed in the &lt;applications&gt; node. 
 * Apps within each wildcard set are listed alphabetically by label relative to other apps in that set. 
-* When app and links are present in the &lt;applications&gt; node, links are displayed first, then apps, regardless of order entered in the node (see image, below). 
+* **When app *and* links are present in the &lt;applications&gt; node**, links are displayed first, then apps, regardless of their order in the node (see image, below). 
 <img alt="" style="height:350px" src="ehs_32_apps_links_list.png"/>
-_Apps and links alternated in the node (as shown above) are rendered as links, then apps_.<br>
+_Links are displayed before apps regardless of their order in the node_.<br>
 _Click image to enlarge; ESC to exit_. 
 <br> 
 

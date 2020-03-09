@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: eSIM Features (checkbox) 
+type: parm
+order: 130
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: SvcAdvancedFeatures
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents the use of eSIM (embedded UICC) features. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.0"
+      description: Allows the use of eSIM (embedded UICC) features. 
+---
+
+Controls the use of eSIM (embedded UICC) features. The Universal Integrated Circuit Card (UICC) specification adds to existing SIM features the ability to store wireless-carrier plan and services information, global roaming, remote delivery of updates to apps and services, TCP/IP communications and processing and data storage capabilities. 

@@ -8,7 +8,7 @@ osx: "4.1"
 osx-end: "5.4"
 osx-exclude: "6.0"
 devicetype: A
-info: This feature is not supported on devices running Android 5.x Lollipop or higher.
+info: This feature is not supported on devices running Android 5.x Lollipop or later.
 parm:
   presentif:  The "USB Module Usage" value is NOT "Disable" AND the "Access device storage from PC via USB" value is NEITHER "Enable" nor "Disable"  
   pivotal: No

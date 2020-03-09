@@ -39,7 +39,7 @@ parm:
       apilevel: "26"
       devicetype: A
       name: Verify
-      description: Verify whether permission is granted to an app.
+      description: Verifies whether permission is granted to an app.
 ---
 
 Used to select an Action to perform on an app regarding access to a Function Group. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps. For example, a "Communications" Function Group might designate certain functions from CellularMgr, GprsMgr and Wi-Fi CSPs as sensitive and limit access to authorized apps only.

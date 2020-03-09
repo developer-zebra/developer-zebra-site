@@ -16,19 +16,19 @@ parm:
       osx: "1.3"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not the USB module can be used.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.
+      description: This value (or the absence of this parm from the XML) causes no change to settings on the device; any previous setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable 
       mx: "4.2"
       osx: "1.3"
-      description: This value will cause usage of the USB module to be allowed.  This value will also cause other parms to be presented to allow individual USB functions to be controlled.
+      description: Allows usage of the USB module.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.2"
       osx: "1.3"
-      description: This value will cause all usage of the USB module to be prevented.  This value will also prevent other parms from being presented since individual USB functions cannot be used if all usage of the USB module is being prevented.
+      description: Prevents usage of the USB module. 
 ---
 
-Controls whether the use of USB module will be allowed. Setting this parm would cause all of the USB features to be enabled or disabled.
+Controls whether the use of USB module is allowed. Setting this parm would cause all of the USB features to be enabled or disabled.

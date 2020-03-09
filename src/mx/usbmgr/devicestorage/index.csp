@@ -17,7 +17,7 @@ parm:
       osx: "4.1"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to settings on the device; any previous setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to settings on the device; any previous setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable 

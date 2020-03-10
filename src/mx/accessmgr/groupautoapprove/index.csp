@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Auto-approve Group (checkbox)
+title: Group Auto-approve (checkbox)
 type: parm
 order: 50
 mx: "10.0"

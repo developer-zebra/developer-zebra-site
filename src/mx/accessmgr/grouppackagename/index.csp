@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Application Package Name
+title: Group App Package Name
 type: parm
-order: 48
+order: 47
 devicetype: A
 parm:
   presentif: The Group Access Action is "ApproveApplication" or "UnapproveApplication" or "VerifyApproved"

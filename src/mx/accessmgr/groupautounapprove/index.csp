@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Auto-unapprove Group (checkbox)
+title: Group Auto-unapprove (checkbox)
 type: parm
 order: 52
 mx: "10.0"

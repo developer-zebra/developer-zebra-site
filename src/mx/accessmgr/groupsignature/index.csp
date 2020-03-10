@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Application Signature
+title: Group App Signature
 type: parm
-order: 60
+order: 48
 devicetype: A
 parm:
   presentif: The Group Access Action is "ApproveApplication" or "UnapproveApplication" or "VerifyApproved"

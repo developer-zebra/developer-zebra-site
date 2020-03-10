@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Permission Name
+title: Permission Feature Name
 type: parm
-order: 40
+order: 43
 mx: "10.0"
 apilevel: "26"
 devicetype: A

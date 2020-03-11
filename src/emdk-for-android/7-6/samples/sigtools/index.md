@@ -1,9 +1,9 @@
 ---
 publish: true
-title: Multi-barcode Scanning
-description: Shows how to scan multiple barcodes simultaneously.
+title: App Signature Tools
+description: Used to extract the signature file from an APK.
 downloads:
-  - title: Sample Projects
+  - title: SigTools.zip
     url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
@@ -32,7 +32,35 @@ layout: sample.html
 product: EMDK For Android
 productversion: '7.6'
 ---
-##Overview
+
+`WARNING:` This app offers an example of how to extract and generate a signature file from an app. <u>No support or warranty is expressed or implied</u>. **ZEBRA DOES NOT RECOMMEND USING THIS APP IN PRODUCTION ENVIRONMENTS**.  
+
+## Overview
+SigTools converts a certificate (either a direct DER-formated file or one extracted from an `.apk`) into
+a byte array. The output is formatted as a Java class or a string of bytes and is automatically copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA OUTFORM). 
+
+### SYNTAX
+    java -jar SigTools COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
+
+### DESCRIPTION
+#### Commands:
+
+**GETCERT -** Read the certificate
+
+**VERSION -** Get the version of this JAR
+
+#### Arguments:
+
+**INFORM -** (REQUIRED) Format of the input file: **'APK'** or **'DER'**
+
+**OUTFORM -** (REQUIRED) Format of the output: `BYTES` (a string representing the bytes in the certificate) or '`JAVA`' (a Java class)
+
+**IN -** (REQUIRED) A space-separated list of file names (**NOTE**: Surround with quotes if there is a space in the name) 
+
+**OUTFILE -** (Optional) The output file name if '`JAVA`' is used as the OUTFORM 
+
+
+OLD OLD OLD
 This sample demonstrates simultaneous scanning of multiple barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](../../mx/data-capture/barcode).  
 
 #### Notes

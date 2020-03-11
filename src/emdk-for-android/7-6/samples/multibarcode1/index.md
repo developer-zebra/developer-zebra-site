@@ -24,7 +24,7 @@ devices:
   - TC70x O,
   - TC72 O,
   - TC77 O
-image: 1.png
+image: MultiBarcode.png
 screenshots:
   - MultiBarcode.png
   - MultiBarcode_scan.png
@@ -32,6 +32,7 @@ layout: sample.html
 product: EMDK For Android
 productversion: '7.6'
 ---
+
 ##Overview
 This sample demonstrates simultaneous scanning of multiple barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](../../mx/data-capture/barcode).  
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 title: App Signature Tools
-description: Used to extract the signature file from an APK.
+description: Used to extract the signature file from an APK
 downloads:
   - title: SigTools_3.zip
     url: 'SigTools_3.zip'
@@ -45,24 +45,23 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
 * **This sample app illustrates a single use-case** for converting and/or extracting an app's signature file from the app for the purpose of developer validation and certification. 
 
 ##Requirements
-* A Linux, macOS or Windows PC with Java runtime environment installed  
+* A Linux, macOS or Windows host computer with Java runtime environment installed  
 * DER-formatted or `.apk` file(s) from which to extract the signature(s)
 
 ##Using Sample App
 
 1. **[Download the sample app](SigTools_3.zip)** and unzip it onto the host computer. 
-2. **Move the** `SigTools.jar` **file to a working folder with the** `.apk`** or DER file(s) it will operate on. 
+2. **Move the** `SigTools.jar` **file to a working folder with the** `.apk` or DER file(s) it will operate on. 
 3. **Open a command prompt** or terminal window on the host computer and navigate to the working folder. 
 4. Execute SigTools app, modifying the sample commands below as needed for files.
-5. Deploy the signature file (named `test.java` in the `.apk` example below) to devices as needed or paste the contents of the clipboard as needed. 
+5. Deploy the signature file (called `test.java` in the `.apk` example below) to devices as needed or paste the contents of the clipboard as needed. 
 
-> **`WARNING:`**: Sample apps are for demonstration purposes only and should not be used in production environments.
+> **`WARNING:`** Sample apps are for demonstration purposes only and should not be used in production environments.
 
 ### SAMPLE COMMANDS
     :::java
     // For APK files:
     java -jar SigTools_3.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java 
-    //
     // For DER files:
     java -jar SigTools_3.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt
 

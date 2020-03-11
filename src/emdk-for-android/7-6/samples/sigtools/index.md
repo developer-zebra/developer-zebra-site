@@ -66,20 +66,18 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
 
 ##Using Sample App
 
->**NOTE**: The appearance of sample app screens can vary by operating system and Java version. 
-
 1. **[Download the sample app](SigTools_3.zip)** and unzip it onto the host computer. 
-2. Place the SigTools.jar file in the same folder as the `.apk` it will be operating on. 
+2. Place the `SigTools_3.jar` file in the same folder as the `.apk` it will be operating on. 
 3. **Open a command prompt** or terminal window on the host computer and navigate to the same folder. 
 4. Execute SigTools app using a version of the sample commands below that coincides with the file that contains the signature.
+5. Deploy the signature file (named `test.java` in the `.apk` example below) to devices as needed. 
 
 > **`WARNING:`**: Sample apps are for demonstration purposes only and should not be used in production environments.
 
 ### SAMPLE COMMANDS
     :::java
-
-    // for an APK
-    java -jar SigTools.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk OUTFILE test.java 
-
-    // for a DER
-    java -jar SigTools.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE TEST.TXT
+    // For APK files:
+    java -jar SigTools_3.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java 
+    //
+    // For DER files:
+    java -jar SigTools_3.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt

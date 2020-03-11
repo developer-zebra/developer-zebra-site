@@ -21,10 +21,6 @@ devices:
   - TC70x O,
   - TC72 O,
   - TC77 O
-image: 1.png
-screenshots:
-  - MultiBarcode.png
-  - MultiBarcode_scan.png
 layout: sample.html
 product: EMDK For Android
 productversion: '7.6'
@@ -81,3 +77,4 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
     //
     // For DER files:
     java -jar SigTools_3.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt
+

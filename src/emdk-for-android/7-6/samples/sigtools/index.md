@@ -8,19 +8,19 @@ downloads:
 features:
   - Java APIs
 devices:
-  - All
+  - Supported on all Zebra Android devices
 layout: sample.html
 product: EMDK For Android
 productversion: '7.6'
 ---
 
-`WARNING:` **ZEBRA DOES NOT RECOMMEND USING THIS APP IN PRODUCTION ENVIRONMENTS**.<br>This app represents an *<u>example</u>* of how to extract and generate a signature file from an app. <br>**No Zebra support or warranty is expressed or implied**.  
-
 ## Overview
 SigTools converts a certificate (either a direct DER-formated file or one extracted from an `.apk`) into
 a byte array. The output is formatted as a Java class or a string of bytes and is automatically copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA OUTFORM). 
 
-### SYNTAX
+> **`WARNING:` ZEBRA DOES NOT RECOMMEND USING THIS APP IN PRODUCTION ENVIRONMENTS**.<br>This app is an *<u>example</u>* of how to extract and generate a signature file from an app. <br>**No Zebra support or warranty is expressed or implied**.  
+
+### SYNOPSYS
     java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
 
 ### DESCRIPTION

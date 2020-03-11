@@ -5,9 +5,6 @@ description: Used to extract the signature file from an APK.
 downloads:
   - title: SigTools_3.zip
     url: 'SigTools_3.zip'
-sources:
-  - title: SigTools_3.zip
-    url: 'SigTools_3.zip'
 features:
   - Profile Manager
   - Barcode
@@ -71,14 +68,10 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
 
 >**NOTE**: The appearance of sample app screens can vary by operating system and Java version. 
 
-**Before beginning, [download the sample app](SigTools_3.zip)** and make it visible on the host computer. 
-
-1. Unzip and **launch the sample app**. It should appear similar to the image below:
-  <img alt="image" style="height:400px" src="MultiBarcode.png"/>
-  
-2. **Select the desired scanner, point the device at a scan target that contains multiple barcodes and tap the Scan button**.<br>The status area should appear similar to the image below:  
-
-  <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
+1. **[Download the sample app](SigTools_3.zip)** and unzip it onto the host computer. 
+2. Place the SigTools.jar file in the same folder as the `.apk` it will be operating on. 
+3. **Open a command prompt** or terminal window on the host computer and navigate to the same folder. 
+4. Execute SigTools app using a version of the sample commands below that coincides with the file that contains the signature.
 
 > **`WARNING:`**: Sample apps are for demonstration purposes only and should not be used in production environments.
 

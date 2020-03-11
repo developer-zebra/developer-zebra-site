@@ -3,11 +3,11 @@ publish: true
 title: App Signature Tools
 description: Used to extract the signature file from an APK.
 downloads:
-  - title: SigTools.zip
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
+  - title: SigTools_3.zip
+    url: 'SigTools_3.zip'
 sources:
-  - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
+  - title: SigTools_3.zip
+    url: 'SigTools_3.zip'
 features:
   - Profile Manager
   - Barcode
@@ -71,9 +71,9 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
 
 >**NOTE**: The appearance of sample app screens can vary by operating system and Java version. 
 
-**Before beginning, download the sample app** and make it visible on the host computer. 
+**Before beginning, [download the sample app](SigTools_3.zip)** and make it visible on the host computer. 
 
-1. **Launch the sample app**. It should appear similar to the image below:
+1. Unzip and **launch the sample app**. It should appear similar to the image below:
   <img alt="image" style="height:400px" src="MultiBarcode.png"/>
   
 2. **Select the desired scanner, point the device at a scan target that contains multiple barcodes and tap the Scan button**.<br>The status area should appear similar to the image below:  
@@ -81,3 +81,12 @@ a byte array. The output is formatted as a Java class or a string of bytes and i
   <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
 
 > **`WARNING:`**: Sample apps are for demonstration purposes only and should not be used in production environments.
+
+### SAMPLE COMMANDS
+    :::java
+
+    // for an APK
+    java -jar SigTools.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk OUTFILE test.java 
+
+    // for a DER
+    java -jar SigTools.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE TEST.TXT

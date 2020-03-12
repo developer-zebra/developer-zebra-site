@@ -1,7 +1,7 @@
 ---
 publish: true
 title: App Signature Tools
-description: Used to extract the signature file from an APK
+description: Used to extract the signature file from APK or DER file(s)
 downloads:
   - title: SigTools_3.zip
     url: 'SigTools_3.zip'
@@ -15,10 +15,14 @@ productversion: '7.6'
 ---
 
 ## Overview
-SigTools converts a certificate (either a direct DER-formated file or one extracted from an `.apk`) into
-a byte array. The output is formatted as a Java class or a string of bytes and is automatically copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA OUTFORM). 
+SigTools is a command-line utility for converting a certificate into a byte array. Supported inputs are Android `.apk` app files or those formatted according to Distinguished Encoding Rules (DER), which generally contain an X.509 binary certificate used for secure websites. **Output is formatted as a Java class or a string of bytes** and is automatically copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA OUTFORM). 
 
-> **`WARNING:` ZEBRA DOES NOT RECOMMEND USING THIS APP IN PRODUCTION ENVIRONMENTS**.<br>This app is an *<u>example</u>* of how to extract and generate a signature file from an app. <br>**No Zebra support or warranty is expressed or implied**.  
+This utility can be used to create a signature file for securing apps using the Zebra [Access Manager](/mx/accessmgr) CSP. 
+
+####`WARNING:`
+**Zebra does not recommend using this utility for production environments**. This app is an *<u>example</u>* of how to extract and generate a signature file from an app. **No Zebra support or warranty is expressed or implied**.  
+
+-----
 
 ### SYNOPSYS
     java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]

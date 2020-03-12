@@ -19,6 +19,10 @@ SigTools is a command-line utility for converting a certificate into a byte arra
 
 This utility can be used to create a signature file for securing apps using the Zebra [Access Manager](/mx/accessmgr) CSP. 
 
+### Requirements
+* A Linux, macOS or Windows host computer with Java runtime environment installed  
+* DER-formatted or `.apk` file(s) from which to extract the signature(s)
+
 ####`WARNING:`
 **Zebra does not recommend using this utility for production environments**. This app is an *<u>example</u>* of how to extract and generate a signature file from an app. **No Zebra support or warranty is expressed or implied**.  
 
@@ -47,10 +51,6 @@ This utility can be used to create a signature file for securing apps using the 
 #### Notes
 
 * **This sample app illustrates a single use-case** for converting and/or extracting an app's signature file from the app for the purpose of developer validation and certification. 
-
-##Requirements
-* A Linux, macOS or Windows host computer with Java runtime environment installed  
-* DER-formatted or `.apk` file(s) from which to extract the signature(s)
 
 ##Using Sample App
 

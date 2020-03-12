@@ -10,13 +10,15 @@ The Access Manager (AccessMgr) enables an admin to configure a device to control
 
 A key feature of AccessMgr is the ability to enable and disable "whitelisting," a process that allows only those applications explicitly specified in a list to run. **Whitelisting is disabled by default** and imposes no restrictions. When whitelisting is turned on, various restrictions can be applied using AccessMgr. Applications ***NOT*** included in the "whitelist" are prevented from running. AccessMgr allows whitelist applications to be installed, launched and maintained, and can control which applications are allowed to submit XML for all CSPs, including AccessMgr itself.
 
-Whitelisting applies only to user applications; it has no effect on System applications, which are applications built into the device. To control aspects of System applications, see [AppMgr](/mx/appmgr).
+**Whitelisting applies only to user applications**; it has no effect on System applications, which come preinstalled on the device. To control aspects of System applications, see [AppMgr](/mx/appmgr). Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed. AccessMgr also provides the option to control whether the device user can access a full or reduced version of the Android Settings panel.
 
-Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed.
+>**`IMPORTANT:`** If an app uses AccessMgr to enable whitelisting, the app itself becomes subject to whitelisting and is prevented from running if it fails to add itself to the whitelist. Also, if such an app does not explicitly allow itself to submit XML, it would be unable to alter that configuration, once successfully applied. 
 
->**Note:** It is important to understand that if an app uses AccessMgr to enable whitelisting, the app itself becomes subject to whitelisting. If the app does not add itself to the "whitelist," the app is prevented from running. Also, if such an app does not explicitly allow itself to submit XML, it would be unable to alter that configuration once successfully applied.
+### Signature Files
 
-AccessMgr also provides the option to control whether the device user can access a full or reduced version of the Android Settings panel.
+Signature files can be used by Access Manager to provide added levels of application security, including control of approval for an app to run and permission to add the app (or one or more of its functions) to a [Function Group](#groupaccessaction).  
+
+To understand how to obtain an app signature, please see the [SigTools sample app](/emdk-for-android/latest/samples/sigtools).
 
 ### Main Functionality
 
@@ -25,18 +27,18 @@ AccessMgr also provides the option to control whether the device user can access
  * Verification of app signatures
  * Auto-approve/unapprove app access Protected CSPs
  * Auto-approve/unapprove app access Protected Function Groups
-* **Perform Protected Function Groups Actions*:
+* **Perform Protected Function Groups Actions**:
  * Create
  * Delete
  * Approve
  * Unapprove
  * Protect
  * Unprotect
-* Set Permission Access Actions: 
+* **Set Permission Access Actions**: 
  * Allow
  * Deny
  * Allow Device User to Choose
-* Allow Access to:
+* **Allow Access to**:
  * Notifications
  * App usage statistics 
  * System Alert Window 
@@ -52,6 +54,8 @@ AccessMgr also provides the option to control whether the device user can access
 * Create, delete, protect and verify Function Groups
 * Designate CSPs on a device as "Protected" from access by apps
 * Approve apps for accessing CSPs designated as Protected
+
+-----
 
 <!--
 OLD OLD OLD (above)

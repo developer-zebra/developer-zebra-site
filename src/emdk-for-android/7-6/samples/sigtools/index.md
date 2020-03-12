@@ -3,8 +3,8 @@ publish: true
 title: App Signature Tools
 description: Used to extract the signature file from APK or DER file(s)
 downloads:
-  - title: SigTools_3.zip
-    url: 'SigTools_3.zip'
+  - title: ZebraSigTools.zip
+    url: 'ZebraSigTools.zip'
 features:
   - Java APIs
 devices:
@@ -35,7 +35,7 @@ This utility can be used to create a signature file for securing apps using the 
 
 **GETCERT -** Read the certificate
 
-**VERSION -** Get the version of this JAR
+**VERSION -** Get the version of this JAR (requires no argument)
 
 ### Arguments
 
@@ -53,7 +53,7 @@ This utility can be used to create a signature file for securing apps using the 
 
 ### Using Sample App
 
-1. **[Download the sample app](SigTools_3.zip)** and unzip it onto the host computer. 
+1. **[Download the sample app](ZebraSigTools.zip)** and unzip it onto the host computer. 
 2. **Move the** `SigTools.jar` **file to a working folder with the** `.apk` or DER file(s) it will operate on. 
 3. **Open a command prompt** or terminal window on the host computer and navigate to the working folder. 
 4. Execute SigTools app, modifying the sample commands below as needed for files.
@@ -64,7 +64,7 @@ This utility can be used to create a signature file for securing apps using the 
 ### SAMPLE COMMANDS
     :::java
     // For APK files:
-    java -jar SigTools_3.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java 
+    java -jar SigTools.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java 
     // For DER files:
-    java -jar SigTools_3.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt
+    java -jar SigTools.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt
 

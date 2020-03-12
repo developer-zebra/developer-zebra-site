@@ -23,7 +23,7 @@ This utility can be used to create a signature file for securing apps using the 
 * A Linux, macOS or Windows host computer with Java runtime environment installed  
 * DER-formatted or `.apk` file(s) from which to extract the signature(s)
 
-####`WARNING:`
+####`DISCLAIMER:`
 **Zebra does not recommend using this utility for production environments**. This app is an *<u>example</u>* of how to extract and generate a signature file from an app. **No Zebra support or warranty is expressed or implied**.  
 
 -----
@@ -31,14 +31,13 @@ This utility can be used to create a signature file for securing apps using the 
 ### SYNOPSYS
     java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
 
-### DESCRIPTION
-#### Commands
+### Commands
 
 **GETCERT -** Read the certificate
 
 **VERSION -** Get the version of this JAR
 
-#### Arguments
+### Arguments
 
 **INFORM** (required) - Format of the input file: **'APK'** or **'DER'**
 
@@ -52,7 +51,7 @@ This utility can be used to create a signature file for securing apps using the 
 
 * **This sample app illustrates a single use-case** for converting and/or extracting an app's signature file from the app for the purpose of developer validation and certification. 
 
-##Using Sample App
+### Using Sample App
 
 1. **[Download the sample app](SigTools_3.zip)** and unzip it onto the host computer. 
 2. **Move the** `SigTools.jar` **file to a working folder with the** `.apk` or DER file(s) it will operate on. 

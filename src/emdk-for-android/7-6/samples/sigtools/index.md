@@ -15,7 +15,7 @@ productversion: '7.6'
 ---
 
 ## Overview
-SigTools is a command-line utility for converting a certificate into a byte array. Supported inputs are Android `.apk` app files or those formatted according to Distinguished Encoding Rules (DER), which generally contain an X.509 binary certificate used for secure websites. **Output is formatted as a Java class or a string of bytes** and is automatically copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA OUTFORM). 
+SigTools is a command-line utility for converting a certificate into a byte array. Supported inputs are Android `.apk` app files or those formatted according to Distinguished Encoding Rules (DER), which generally contain an X.509 binary certificate used for secure websites. **Output is formatted as a Java class, a string of bytes or a DER file** and also is copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA or DER OUTFORM). 
 
 This utility can be used to create a signature file for securing apps using the Zebra [Access Manager](/mx/accessmgr) CSP. 
 
@@ -29,7 +29,7 @@ This utility can be used to create a signature file for securing apps using the 
 -----
 
 ### SYNOPSYS
-    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
+    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA|DER] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
 
 ### Commands
 
@@ -39,9 +39,14 @@ This utility can be used to create a signature file for securing apps using the 
 
 ### Arguments
 
-**INFORM** (required) - Format of the input file: **'APK'** or **'DER'**
+**INFORM** (required) - Format of the input file: 
+* **'APK'**
+* **'DER'**
 
-**OUTFORM** (required) - Format of the output: **BYTES** (a string representing bytes in certificate) or **JAVA** (a Java class)
+**OUTFORM** (required) - Format of the output: 
+ * **BYTES -** a string representing bytes in certificate
+ * **JAVA -** a Java class
+ * **DER -** the certificate itself; most important if extracting from an `.apk` file
 
 **IN** (required) - A space-separated list of file names (**NOTE**: If name contains a space, surround name with quotes) 
 

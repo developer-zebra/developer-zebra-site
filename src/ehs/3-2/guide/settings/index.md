@@ -220,6 +220,15 @@ When specifying links, the package and activity parameters can be used to launch
 * Package names might vary from one Android version to another. 
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 * **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
+* **Applications and links appear in the User Mode Launcher** in the same order as listed in the &lt;applications&gt; node.
+* **When apps *<u>and</u>* links are present in the &lt;applications&gt; node**, links are displayed first, then apps, regardless of their order in the node (see image, below). 
+<img alt="" style="height:350px" src="ehs_32_apps_links_list.png"/>
+_Links are displayed before apps regardless of their order in the node_.<br>
+_Click image to enlarge; ESC to exit_. 
+<br> 
+
+##### Wildcard rules (cont'd):
+
 
 ------
 
@@ -287,13 +296,6 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
 #####Wildcard rules:
 * Individual apps and wildcard sets appear in the User Mode Launcher in the same order as listed in the &lt;applications&gt; node. 
 * Apps within each wildcard set are listed alphabetically by label relative to other apps in that set. 
-* **When app *and* links are present in the &lt;applications&gt; node**, links are displayed first, then apps, regardless of their order in the node (see image, below). 
-<img alt="" style="height:350px" src="ehs_32_apps_links_list.png"/>
-_Links are displayed before apps regardless of their order in the node_.<br>
-_Click image to enlarge; ESC to exit_. 
-<br> 
-
-##### Wildcard rules (cont'd):
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
 * If **bundle** and **icon** attributes are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 

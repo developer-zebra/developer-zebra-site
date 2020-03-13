@@ -16,7 +16,7 @@ A key feature of AccessMgr is the ability to enable and disable "whitelisting," 
 
 ### Signature Files
 
-Signature files can be used by Access Manager to provide added levels of application security, including control of approval for an app to run and permission to add the app (or one or more of its functions) to a [Function Group](#groupaccessaction).  
+Signature files can be used by Access Manager to provide added levels of application security, including control of approval for an app to run and permission to add the app (or one or more of its functions) to a [Function Group](#group-access-action).
 
 To understand how to obtain an app signature, please see the [SigTools sample app](/emdk-for-android/latest/samples/sigtools).
 

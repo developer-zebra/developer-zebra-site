@@ -227,9 +227,6 @@ _Links are displayed before apps regardless of their order in the node_.<br>
 _Click image to enlarge; ESC to exit_. 
 <br> 
 
-##### Wildcard rules (cont'd):
-
-
 ------
 
 #### Chinese Edition

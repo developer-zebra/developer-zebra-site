@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: eSIM Slot ID
 type: parm
-order: 5
+order: 165
 mx: "10.0"
 devicetype: A
 info: Supported only on WWAN-enabled devices with more than one SIM socket.

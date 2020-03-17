@@ -2,13 +2,13 @@
 csp: cellularmgr
 title: eSIM Features (checkbox) 
 type: parm
-order: 130
+order: 150
 mx: "10.0"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
   pivotal: No
-  name: SvcAdvancedFeatures
+  name: eSIMFeatures
   type: list
   list:
     - code: 0

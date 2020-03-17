@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: eSIM Profile
 type: parm
-order: 5
+order: 160
 mx: "10.0"
 devicetype: A
 info: Supported only on WWAN-enabled devices.

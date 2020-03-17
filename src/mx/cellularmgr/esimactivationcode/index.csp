@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: SM-DP+ Address
+title: eSIM Activation Code
 type: parm
 order: 177
 mx: "10.0"
@@ -10,7 +10,7 @@ info: Supported on WWAN-enabled SDM660-platform devices only.
 parm:
   presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code"
   pivotal: No
-  name: SmdpAddress
+  name: eSimActivationCode
   type: string
 ---
 

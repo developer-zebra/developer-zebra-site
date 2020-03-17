@@ -1,13 +1,13 @@
 ---
 csp: cellularmgr
-title: eSIM Profile
+title: eSIM Profile Action
 type: parm
-order: 160
+order: 165
 mx: "10.0"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
-  presentif: eSIM Features checkbox is "checked" AND Add Profile is "Activation Code"
+  presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code"
   pivotal: No
   name: eSimProfile
   type: list
@@ -39,4 +39,4 @@ parm:
       description: Changes the name of the selected profile.
 ---
 
-Used to select an action to perform on the selected profile. 
+Used to select an action to perform on the selected eSIM Profile. 

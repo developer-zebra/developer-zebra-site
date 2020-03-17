@@ -1,20 +1,20 @@
 ---
 csp: cellularmgr
-title: SM-DP+ Address
+title: Profile Nickname
 type: parm
-order: 177
+order: 168
 mx: "10.0"
 apilevel: "26"
 devicetype: A
 info: Supported on WWAN-enabled SDM660-platform devices only.
 parm:
-  presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code"
+  presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code" OR "Use SM-DP+ Address"
   pivotal: No
-  name: SmdpAddress
+  name: ProfileNickname
   type: string
 ---
 
-Used to enter the activation code for the eSIM in the device.  
+Used to enter a Nickname for an eSIM Profile in the device.  
 
 **Parm value input rules**: 
 

@@ -1,0 +1,41 @@
+---
+csp: cellularmgr
+title: eSIM Profile
+type: parm
+order: 5
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: eSimProfile
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable Profile
+      mx: "10.0"
+      description: Enables the selected profile.
+    - code: 2
+      devicetype: A
+      name: Disable Profile
+      mx: "10.0"
+      description: Disbles the selected profile.
+    - code: 3
+      devicetype: A
+      name: Delete Profile
+      mx: "10.0"
+      description: Deleted the selected profile.
+    - code: 4
+      devicetype: A
+      name: Change Nickname
+      mx: "10.0"
+      description: Changes the name of the selected profile.
+---
+
+Used to select an action to perform on the selected profile. 

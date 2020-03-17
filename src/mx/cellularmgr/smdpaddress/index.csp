@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: SM-DP+ Address
+type: parm
+order: 5
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: SmdpAddress
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Set SM-DP+ Address
+      mx: "10.0"
+      description: Enables the SM-DP+ address to be entered.
+---
+
+Used to enter the Subscription Manager Data Preparation address, or SM-DP+, which encrypts carrier credentials for SIM activation over the air.

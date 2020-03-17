@@ -1,0 +1,31 @@
+---
+csp: cellularmgr
+title: Add Profile
+type: parm
+order: 5
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: AddProfile
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Use Activation Code
+      mx: "10.0"
+      description: Enables the use of an activation code for adding a carrier eSIM profile.
+    - code: 2
+      devicetype: A
+      name: Use SM-DP+ Address
+      mx: "10.0"
+      description: Enables the use of an SM-DP+ address for adding a carrier eSIM profile.
+---
+
+Controls whether to add a carrier eSIM profile using an activation code or Subscription Manager Data Preparation address, or SM-DP+, which encrypts carrier credentials for SIM activation over the air.

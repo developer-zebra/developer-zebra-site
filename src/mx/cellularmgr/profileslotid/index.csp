@@ -1,0 +1,27 @@
+---
+csp: cellularmgr
+title: Profile Slot ID
+type: parm
+order: 5
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices with more than one SIM socket.
+parm:
+  presentif: Add Profile is "Activation Code"
+  pivotal: No
+  name: ProfileSlotId
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: SIM1
+      mx: "10.0"
+      description: Identifies SIM1 as the slot containing the eSIM profile. 
+    - code: 1
+      devicetype: A
+      name: SIM2
+      mx: "10.0"
+      description: Identifies SIM2 as the slot containing the eSIM profile. 
+---
+
+Used to select the slot that contains the eSIM profile to be activated. 

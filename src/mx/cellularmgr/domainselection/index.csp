@@ -1,0 +1,31 @@
+---
+csp: cellularmgr
+title: SIM Service Type
+type: parm
+order: 5
+mx: "10.0"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: SimServiceType
+  type: list
+  list:
+    - code: 0
+      mx: "10.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Voice + Data
+      mx: "10.0"
+      description: Enables the use of voice and data on the selected SIM.
+    - code: 2
+      devicetype: A
+      name: Data Only
+      mx: "10.0"
+      description: Prevents the device from making voice calls on the selected SIM.
+---
+
+Controls whether the device user can use the device for data and voice calls and only for data. 

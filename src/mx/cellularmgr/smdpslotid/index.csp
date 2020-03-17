@@ -7,7 +7,7 @@ mx: "10.0"
 devicetype: A
 info: Supported only on WWAN-enabled devices with more than one SIM socket.
 parm:
-  presentif: Add Profile is "Activation Code"
+  presentif: eSIM Features checkbox is "checked" AND Add Profile is "Activation Code"
   pivotal: No
   name: SmdpSlotId
   type: list

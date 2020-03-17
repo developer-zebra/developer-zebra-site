@@ -10,19 +10,6 @@ The Bluetooth Manager (BluetoothMgr) controls whether a device can pair with oth
 
 Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band that was originally intended as a replacement for serial communications cables. It has since been adopted as a standard for hands-free headsets, stereo audio, networking to PCs and connections for barcode scanners, medical equipment and other devices formerly using RS-232. 
 
-### Zebra Bluetooth Settings app
-
-Zebra devices running Android 8.x Oreo and later come with the Zebra Bluetooth Settings app preinstalled. When run on a device with Bluetooth enabled, this app scans discoverable devices in the vicinity and displays their Bluetooth name, MAC address, Upper Address Part (UAP) and Class of Device (CoD) information similar to the image shown below.  
-
-##### To expose Bluetooth info of nearby devices: 
-1. Set the relevant device(s) as discoverable.
-2. Open the Zebra Bluetooth Settings app on a device. 
-3. Tap the "refresh" icon to begin scan: 
- <img style="height:450px" src="../../../../../images/mx/zebra_bluetooth_settings_app.png"/>
- _ZBS is preinstalled on devices running Android 8.x Oreo and later_.<br>
- <br>
-4. Make note of device name, Bluetooth MAC address, CoD and/or UAP info as needed. 
-
 ### Main Functionality
 
 * Enable/Disable 
@@ -35,6 +22,19 @@ Zebra devices running Android 8.x Oreo and later come with the Zebra Bluetooth S
 * Create Silent Pairing Rules  
 * Use Bluetooth MAC address as a mandatory identifier
 * Set a PIN for a remote device
+
+### Zebra Bluetooth Settings app
+
+Zebra devices running Android 8.x Oreo and later come with the Zebra Bluetooth Settings app preinstalled. When run on a device with Bluetooth enabled, this app scans discoverable devices in the vicinity and displays their Bluetooth name, MAC address, Upper Address Part (UAP) and Class of Device (CoD) information similar to the image shown below.  
+
+##### To expose Bluetooth info of nearby devices: 
+1. Set the relevant device(s) as discoverable.
+2. Open the Zebra Bluetooth Settings app on a device. 
+3. Tap the "refresh" icon to begin scan: 
+ <img style="height:450px" src="../../../../../images/mx/zebra_bluetooth_settings_app.png"/>
+ _ZBS is preinstalled on devices running Android 8.x Oreo and later_.<br>
+ <br>
+4. Collect Bluetooth information as needed. 
 
 -----
 

@@ -6,7 +6,7 @@ order: 10
 mx: "7.0"
 apilevel: "24"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise Bundle Upgrade license. 
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise license. 
 parm:
   presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
   pivotal: No

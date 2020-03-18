@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter a Nickname for an eSIM Profile in the device.  
+Used to enter a friendly name for an eSIM Profile in the device.  
 
 **Parm value input rules**: 
 

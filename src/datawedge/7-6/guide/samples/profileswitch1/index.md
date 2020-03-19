@@ -22,7 +22,7 @@ date: 2018-08-08
 ---
 
 ##Overview
-This sample app demonstrates how to switch profiles dynamically based on the text field selected using [DataWedge Intent APIs](../../api).  The application registers a focus change listener for each of the text fields and sends a SWITCH_TO_PROFILE intent to DataWedge.  The UI is updated with the current profile in response to a GET_ACTIVE_PROFILE request, though this second step is optional and just provided so the application gives some feedback.  Dummy profiles are created as part of the onCreate() call using DataWedge API CREATE_PROFILE.
+This sample app demonstrates how to switch profiles dynamically based on the text field selected using [DataWedge Intent APIs](../../api).  The application registers a focus change listener for each of the text fields and sends a SWITCH_TO_PROFILE intent to DataWedge.  The UI is updated with the current profile in response to a successful result returned from SWITCH_TO_PROFILE. Dummy profiles are created as part of the onCreate() call using DataWedge API CREATE_PROFILE.
 
 Use Cases:
 
@@ -48,11 +48,6 @@ This Java sample app is based on a Kotlin sample app from a previous blog post <
   </tr>
 
   <tr>
-    <td><a href="../../api/getactiveprofile/">Get Active Profile</a></td>
-    <td>Retrieve the name of the profile currently in use by DataWedge</td>
-  </tr>
-
-  <tr>
     <td><a href="../../api/switchtoprofile/">Switch to Profile</a></td>
     <td>Switch to the specific profile; associate the app to the specific profile</td>
   </tr>
@@ -68,7 +63,7 @@ This Java sample app is based on a Kotlin sample app from a previous blog post <
 1. [Download](https://github.com/Zebra/samples-datawedge), build, and launch the sample app.
 <img style="height:350px" src="profileswitch1-1.png"/>
   
-2. Tap a text field, for example "Field 2." **Active Profile** displays _switch_profile2_, indicating the profile has been switched to profile2. 
+2. Tap a text field, for example "Field 2." The **Active Profile** field displays _switch_profile2_, indicating the profile has been switched to profile2. 
 <img style="height:350px" src="profileswitch1-2.png"/>
 
 

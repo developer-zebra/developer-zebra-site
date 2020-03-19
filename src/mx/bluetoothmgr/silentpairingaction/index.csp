@@ -41,13 +41,16 @@ parm:
 
 Used to administer the list of Silent Pairing Rules on the device. By default, Silent Pairing Rules are in place to allow some Zebra device models to pair without user confirmation (after pairing is initiated by the user). Note: Pairing rules for the default device list (below) matches by device name only. For improved security, **Zebra recommends that default rules be replaced with rules matching by device Name, Class of Device and Upper Address Part**.
 
+* DS2278
 * DS3578
 * DS3678
-* RS6000
-* RS507
-* HS3100
-* DX30
-* PAR-TMD
 * DS8178
+* DX30
+* HS3100
 * LI3678
-* DS2278
+* PAR-TMD
+* RS507
+* RS5100&#42; 
+* RS6000
+
+<i><font size="1" color="black">&#42;Silent pairing with the RS5100 is supported on SDM660-platform devices running Android 8.x Oreo (and later) and 8956-platform devices with the Android 7.x N (or later) LifeGuard patch.</font></i>

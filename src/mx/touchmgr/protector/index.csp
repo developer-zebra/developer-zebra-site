@@ -6,6 +6,7 @@ order: 30
 mx: "6.2"
 osx: "6.2"
 devicetype: A
+info: Depending on the device, some modes require purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: The selected Device Type supports a Screen Protector AND the Touch Action supports Protector mode
   pivotal: no

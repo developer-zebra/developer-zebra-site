@@ -6,7 +6,7 @@ order: 2
 mx: "6.1"
 apilevel: "23"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.. 
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
   name: AllowDiscoverability

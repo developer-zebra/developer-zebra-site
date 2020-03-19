@@ -6,7 +6,7 @@ order: 5
 mx: "5.1"
 apilevel: "22"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.. 
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
   name: AllowPairing

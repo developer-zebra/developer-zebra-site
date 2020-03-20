@@ -55,6 +55,24 @@ The version of DataWedge documented in this guide provides the following primary
 
 -----
 
+### Supported Devices
+
+Supported scanners and imagers:
+
+* DS2278
+* DS3608
+* DS3678
+* DS8178
+* LI3608
+* LI3678
+* RS507
+* RS4000
+* RS5000
+* RS5100
+* RS6000
+
+-----
+
 ### Multi-User Support
 
 DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. The supported Zebra devices are:

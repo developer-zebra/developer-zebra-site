@@ -54,6 +54,24 @@ The version of DataWedge documented in this guide provides the following primary
 
 -----
 
+### Supported Devices
+
+Supported scanners and imagers:
+
+* DS2278
+* DS3608
+* DS3678
+* DS8178
+* LI3608
+* LI3678
+* RS507
+* RS4000
+* RS5000
+* RS5100
+* RS6000
+
+-----
+
 ### Language Support
 
 DataWedge has been approved to run on device operating systems localized for the following languages:

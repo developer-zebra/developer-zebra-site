@@ -28,62 +28,7 @@ A: It is likely either a profile is not associated with your app or the profile 
 A: There are two methods to temporarily disable the barcode scanner in an app using the Scanner Input Plugin:
 1. **Enable / Disable** - can be called at any time
 2. **Suspend / Resume** - much quicker but can be called only when the scanner is in the `SCANNING` or `WAITING` state. The scanner state can be retrieved using [Get Scanner Status](../../api/getscannerstatue) or [Register for Notification](../../api/registerfornotification).  For more information visit our <a href="https://developer.zebra.com/blog/quickly-suspend-scanning-your-app-datawedge">blog on how to quickly suspend scanning in your app with DataWedge.</a>
-<!--
-## Q: How do I perform mass deployment of DataWedge settings and configurations? 
-Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. There are two files that can be exported:
-1. **Config** - contains settings specific to how .... ; file name: `datawedge.db`
-2. **Profile** - 
 
-
-Q: Does DW support NFC? 
-A: No, alternatively Android NFC API is available or SecureNFC from EMDK. 
-
-
-https://zebra.sharepoint.com/sites/darryncampbell 
-
-
-Q: How do I configure the scanner params? 
-
-Q: How can I determine which features are supported with the specific DataWedge version on my device? 
-The supported features 
-How to check for DW version. 
-
-Q: How can I test my scanning ap on an emulator? 
-
-https://developer.zebra.com/blog/test-your-zebra-scanning-application-emulator 
-
-It was Darryn's solution to a question (link below) that was posted on the portal yesterday:  
-
-https://developer.zebra.com/forum/24920  
-
- 
-Q: How do I interface with the device scanner using DataWedge? 
-
-https://developer.zebra.com/blog/interface-device-scanner-android-devices-through-datawedge 
-
-
-* **[DataWedge APIs](../api)** provide the ability to programmatically control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified to acquire data using Zebra devices without concern of the underlying hardware. 
-
-Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
-
-
-**[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
-
-Each Profile generally contains four elements: 
-* **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
-* **A Process Plug-in -** to specify how the acquired data should be manipulated 
-* **An Output Plug-in -** to control the passing of data to an application
-* **An associated application -** (or activity) with which to link DataWedge actions
-
-When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with little or no setup. 
- 
-**Important:** 
-* **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on **[disabling DataWedge](../settings/#disabledatawedge)**. 
-* **Delay in scanning after a device reboot**. DataWedge requires a brief period of time to initialize after device reboot due to waiting for a response to be received from the initialization of the scanning subsystem, causing scanning to be inactive from DataWedge during this time frame.
-
->**Note**: The appearance of sample app screens displayed throughout this guide can vary by DataWedge version, Android version, and screen size.
-
--->
 -----
 
 Related Guides: 

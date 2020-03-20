@@ -26,4 +26,6 @@ parm:
       description: Uses the Bluetooth device name as the device mandatory identifier.
 ---
 
-Controls which Bluetooth parameter is used as the mandatory identifier for the device. 
+Controls which Bluetooth parameter is used as the Mandatory Identifier for the device. 
+
+See the [Examples section](#examples) for samples of parameter usage. 

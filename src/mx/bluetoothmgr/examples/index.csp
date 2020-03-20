@@ -5,6 +5,41 @@ type: text
 order: 99
 ---
 
+### Mandtory Identifier with Bluetooth MAC address and PIN
+
+    :::XML
+    <wap-provisioningdoc>
+        <characteristic type="BluetoothMgr" version="10.0" >
+            <parm name="AllowPairing" value="1"/>
+            <parm name="AllowDiscoverability" value="1"/>
+            <parm name="AllowSilentPairing" value="1"/>
+            <parm name="SilentPairingAction" value="1"/>
+            <parm name="MandatoryIdentifier" value="0"/>
+        <characteristic type="SilentPairingDeviceDetails">
+            <parm name="RemoteDeviceMAC" value="12:AB:34:CD:56:EF"/>
+            <parm name="RemoteDevicePIN" value="12345"/>
+        </characteristic>
+        </characteristic>
+    </wap-provisioningdoc>
+
+### Mandtory Identifier with Bluetooth Name and PIN
+
+    :::XML
+    <wap-provisioningdoc>
+        <characteristic type="BluetoothMgr" version="10.0" >
+            <parm name="AllowPairing" value="1"/>
+            <parm name="AllowDiscoverability" value="1"/>
+            <parm name="AllowSilentPairing" value="1"/>
+            <parm name="SilentPairingAction" value="1"/>
+            <parm name="MandatoryIdentifier" value="1"/>
+        <characteristic type="SilentPairingDeviceDetails">
+            <parm name="SilentPairingName" value="ZQ320"/>
+            <parm name="RemoteDevicePIN" value="0000"/>
+        </characteristic>
+        </characteristic>
+    </wap-provisioningdoc>
+
+
 ### Allow New Pairing
 
 ####Input 

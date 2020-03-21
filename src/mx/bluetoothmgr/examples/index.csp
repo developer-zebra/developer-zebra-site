@@ -5,7 +5,9 @@ type: text
 order: 99
 ---
 
-### Mandtory Identifier with Bluetooth MAC address and PIN
+### Set Rule with Mandatory Identifier Bluetooth MAC
+
+Add a silent pairing rule with a PIN when the Mandatory Identifier is Bluetooth MAC address:
 
     :::XML
     <wap-provisioningdoc>
@@ -22,7 +24,9 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
-### Mandtory Identifier with Bluetooth Name and PIN
+### Set Rule with Mandatory Identifier Name
+
+Add a silent pairing rule with a PIN when the Mandatory Identifier is Name:
 
     :::XML
     <wap-provisioningdoc>
@@ -62,9 +66,9 @@ order: 99
     </wap-provisioningdoc>
 
 
-If the operation was successful, the Result XML (output) will be identical to the input XML. 
+If the operation was successful, the Result XML (output) will be identical to the input XML, as above. 
 
-### Disallow New Pairing
+### Prevent New Pairing
 
 ####Input
 
@@ -74,7 +78,6 @@ If the operation was successful, the Result XML (output) will be identical to th
             <parm name="AllowPairing" value="2"/>
         </characteristic>
     </wap-provisioningdoc>
-
 
 
 ####Output
@@ -87,9 +90,9 @@ If the operation was successful, the Result XML (output) will be identical to th
     </wap-provisioningdoc>
 
 
-If the operation was successful, the Result XML (output) will be identical to the input XML. 
+If the operation was successful, the Result XML (output) will be identical to the input XML, as above. 
 
-### Query the state of Silent Pairing on the device
+### Query Silent Pairing State
 
 ####Input
 
@@ -109,7 +112,7 @@ If the operation was successful, the Result XML (output) will be identical to th
         </characteristic>
     </wap-provisioningdoc>
 
-### Create a Silent Pairing Rule with Name, CoD and UAP
+### Set Silent Pairing Rule with Name, CoD, UAP
 
         :::xml
         <wap-provisioningdoc>
@@ -126,7 +129,7 @@ If the operation was successful, the Result XML (output) will be identical to th
             </characteristic>
         </wap-provisioningdoc>
 
-### Remove all devices from the Silent Pairing Rules list
+### Remove all devices from Silent Pairing Rules list
 
         :::xml
         <wap-provisioningdoc>
@@ -136,7 +139,7 @@ If the operation was successful, the Result XML (output) will be identical to th
         </wap-provisioningdoc>
 
 
-### Restore default rules to the Silent Pairing Rules list
+### Restore default rules to Silent Pairing Rules list
 
         :::xml
         <wap-provisioningdoc>

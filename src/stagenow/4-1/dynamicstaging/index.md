@@ -71,9 +71,9 @@ If some departments in a store have differing numbers of a given variable (for i
 * **If a percentage sign is to be part of the variable data**, <u>the percentage sign must first be declared as a variable</u>. See example below. 
 
 #### Using '%' as variable data
-StageNow accepts all characters (including the semi-colon) as entries in Dynamic Variable fields ***except*** the percent sign (%), which requires special handling to avoid errors. If a percent sign is to be used in an entry field (for example as an SSID name like `Store_01_SS%ID`), then the percent sign must first be declared as a variable. 
+StageNow accepts all characters (including the semi-colon) as entries in Dynamic Variable fields ***except*** the percent sign (%), which requires special handling to avoid a "Malformed variable" error. If a percent sign is to be used in an entry field (for example in an SSID name like `Store_01_SS%ID`), then the percent sign must first be declared as a variable. 
 
-**To include '%' in a data entry field**:
+**To include a percent sign (%) in a data entry field**:
 
 1. In the `.csv` file to be used, add a variable named "%percent%" with "%;" as its only value.   
 2. In the SSID field in StageNow, enter "Store_01_SS%percent%ID" as the value. 

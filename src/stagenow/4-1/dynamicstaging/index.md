@@ -9,6 +9,8 @@ productversion: '4.1'
 
 **StageNow 4.1 (and later) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
 
+> **NOTE**: The "Host the Deployment Package Outside of StageNow FTP Server" option is not available when using Dynamic Staging.
+
 **Dynamic Staging simplifies staging based on...** 
 
 * Locale
@@ -145,6 +147,8 @@ Dynamic Staging errors occur when StageNow is unable to acquire data from a `.cs
 * One or more variables were entered incorrectly in StageNow
 * The `.csv` file is not present on the host workstation
 * The `.csv` file is open or otherwise locked on the host workstation
+
+> **NOTE**: The "Host the Deployment Package Outside of StageNow FTP Server" option is not available when using Dynamic Staging.
 
 #### Error Diagnosis:  
 

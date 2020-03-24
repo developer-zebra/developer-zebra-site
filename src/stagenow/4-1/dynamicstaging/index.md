@@ -7,7 +7,7 @@ productversion: '4.1'
 
 ## Overview
 
-**StageNow 4.1 (and higher) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
+**StageNow 4.1 (and later) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
 
 **Dynamic Staging simplifies staging based on...** 
 
@@ -62,12 +62,22 @@ If some departments in a store have differing numbers of a given variable (for i
 ### Variable Usage Rules
 * To avoid possible errors, the <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed. 
 * **Variable names** used in a StageNow Profile **must match exactly with those in the** `.csv` **file</u>**.
-* **Variables can be used alone or in combination with static values** and/or other variables. 
+* **Variables can be used alone or in combination with static values** and/or other variables in the same field. 
 * Each row in the `.csv` file represents one set of data for a Dynamic Profile.
 * Row numbers within the `.csv` file are used to label barcode printouts for identification purposes. 
 * Dynamic Staging **supports plain text files only**. 
-* **Each variable MUST be separated by a semi-colon** and each line must end with a semi-colon.  
+* **Each variable MUST be separated by a semi-colon (;)** and each line must end with a semi-colon.
 * Dynamic Variables are supported ONLY for device settings and Staging Operator instruction fields.
+* **If a percentage sign is to be part of the variable data**, <u>the percentage sign must first be declared as a variable</u>. See example below. 
+
+#### Using '%' as variable data
+StageNow accepts all characters (including the semi-colon) as entries in Dynamic Variable fields ***except*** the percent sign (%), which requires special handling to avoid errors. If a percent sign is to be used in an entry field (for example as an SSID name like `Store_01_SS%ID`), then the percent sign must first be declared as a variable. 
+
+**To include '%' in a data entry field**:
+
+1. In the `.csv` file to be used, add a variable named "%percent%" with "%;" as its only value.   
+2. In the SSID field in StageNow, enter "Store_01_SS%percent%ID" as the value. 
+3. Generate the barcode(s) as desired. When the barcode is generated, StageNow will replace "%percent%" with the "%" character, as in the "Store_01_SS%ID" name above.  
 
 #### To Use Dynamic Staging:
 

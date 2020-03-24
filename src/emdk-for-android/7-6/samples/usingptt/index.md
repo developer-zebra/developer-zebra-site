@@ -38,7 +38,7 @@ In current versions of Android, only foreground apps are able to receive the eve
 
 Learn more [about KeyEvents](https://developer.android.com/reference/android/view/KeyEvent)
 
-Event objects are generated from the RKES using the following data:
+Event objects are generated from RKES using the following data:
 
 #### Key Code
 
@@ -47,25 +47,28 @@ Event objects are generated from the RKES using the following data:
 * **Time of event**
 * **Repeat count**
 
-The intent format applies to all the intents broadcast by the RKES. The following section briefly describes each intent broadcast by the RKES. 
+The intent format applies to all intents broadcast by RKES. The following section briefly describes each intent broadcast. 
 
 #### `com.symbol.button.L1`
 Broadcast when a KeyEvent corresponding to the key code `KEYCODE_BUTTON_L1` (102) occurs.<br> 
 **Reserved for scanning**.
-
+<br>
 #### `com.symbol.button.L2`
 Broadcast when a KeyEvent corresponding to the key code `KEYCODE_BUTTON_L2` (104) occurs.<br>
 **Used for Push-to-Talk**
-
+<br>
 #### `com.symbol.button.R1`
 Broadcast when a KeyEvent corresponding to the key code `KEYCODE_BUTTON_R1` (103) occurs. <br> **Reserved for scanning**.
-
+<br>
 #### `com.symbol.button.R2`
 Broadcast when a KeyEvent corresponding to the key `code KEYCODE_BUTTON_R2` (105) occurs.<br> 
 **Used for headset button during Push-to-Talk sessions**
+<br>
+
+-----
 
 ### Sample code
-The snippet below shows the broadcast receiver object. Full source code is provided in the project file download. 
+The snippet below shows the broadcast receiver object. Full source code is provided in the [project download file](usingptt). 
 
       :::Java
       //Broadcast Receiver object

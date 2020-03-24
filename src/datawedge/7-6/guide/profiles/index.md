@@ -4,6 +4,7 @@ description: DataWedge functionality is based on Profiles. Each Profile contains
 layout: list-apis.html
 product: DataWedge
 productversion: '7.6'
+image: ./datawedge_plugins.png
 automenu:
   items:
     - title: About Profiles

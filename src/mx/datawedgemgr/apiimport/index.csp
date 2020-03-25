@@ -4,7 +4,7 @@ title: Import via Intent Enable/Disable
 type: parm
 order: 5
 mx: "9.2"
-apilevel: "7.6"
+info: Supported only on devices with DataWedge 7.6 or later.
 devicetype: A
 parm:
   pivotal: No
@@ -13,19 +13,16 @@ parm:
   list:
     - code: 86
       mx: "9.2"
-      apilevel: "7.6"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      apilevel: "7.6"
       name: Enable
       mx: "9.2"
       description: Enables Configuration files to be imported programmatically through intents.
     - code: 2
       devicetype: A
-      apilevel: "7.6"
       name: Disable
       mx: "9.2"
       description: Disables intent-based Configuration file imports. 

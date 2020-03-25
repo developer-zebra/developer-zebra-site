@@ -1,34 +1,26 @@
 ---
 csp: datawedgemgr
-title: Device UI Enable/Disable
+title: SimulScan Template Action
 type: parm
-order: 2
-mx: "9.2"
-apilevel: "7.6"
+order: 10
+mx: "10.0"
+info: Supported on devices with DataWedge 7.6 or later.
 devicetype: A
 parm:
   pivotal: No
-  name: ManualConfiguration
+  name: NGSimulScanTemplates
   type: list
   list:
     - code: 86
-      mx: "9.2"
-      apilevel: "7.6"
+      mx: "10.0"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      name: Enable
-      mx: "9.2"
-      apilevel: "7.6"
-      description: Enables the DataWedge UI on the device.
-    - code: 2
-      devicetype: A
-      name: Disable
-      mx: "9.2"
-      apilevel: "7.6"
-      description: Disables the DataWedge UI on the device.
+      name: add
+      mx: "10.0"
+      description: Adds a template to the device, replacing one of the same name if it exists.
 ---
 
-Controls whether the device user has access to the DataWedge user interface and can change configuration settings on the device. 
+Controls whether the SimulScan template file entered in the NG SimulScan Templates parameter is imported to the device. **WARNING**: If a template is imported with a name matching a file already the device, the existing file is replaced.

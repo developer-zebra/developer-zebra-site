@@ -4,7 +4,7 @@ title: Device UI Enable/Disable
 type: parm
 order: 2
 mx: "9.2"
-apilevel: "7.6"
+info: Supported on devices with DataWedge 7.6 or later.
 devicetype: A
 parm:
   pivotal: No

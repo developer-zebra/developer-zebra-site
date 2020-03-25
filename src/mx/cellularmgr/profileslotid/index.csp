@@ -4,6 +4,7 @@ title: Profile Slot ID
 type: parm
 order: 180
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 info: Supported only on WWAN-enabled devices with more than one SIM socket.
 parm:
@@ -16,11 +17,13 @@ parm:
       devicetype: A
       name: SIM1
       mx: "10.0"
+      apilevel: "26"
       description: Identifies SIM1 as the slot containing the eSIM profile. 
     - code: 1
       devicetype: A
       name: SIM2
       mx: "10.0"
+      apilevel: "26"
       description: Identifies SIM2 as the slot containing the eSIM profile. 
 ---
 

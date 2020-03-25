@@ -4,6 +4,7 @@ title: SM-DP+ Address
 type: parm
 order: 170
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
@@ -14,6 +15,7 @@ parm:
   list:
     - code: 0
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
@@ -21,6 +23,7 @@ parm:
       devicetype: A
       name: Set SM-DP+ Address
       mx: "10.0"
+      apilevel: "26"
       description: Enables the SM-DP+ address to be entered.
 ---
 

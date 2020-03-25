@@ -4,6 +4,7 @@ title: eSIM Features (checkbox)
 type: parm
 order: 150
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
@@ -13,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: (unchecked)
       description: Prevents the use of eSIM (embedded UICC) features. 
@@ -20,7 +22,8 @@ parm:
       devicetype: A
       name: (checked)
       mx: "10.0"
+      apilevel: "26"
       description: Allows the use of eSIM (embedded UICC) features. 
 ---
 
-Controls the use of eSIM (embedded UICC) features. The Universal Integrated Circuit Card (UICC) specification adds to existing SIM features the ability to store wireless-carrier plan and services information, global roaming, remote delivery of updates to apps and services, TCP/IP communications and processing and data storage capabilities. 
+Controls the use of eSIM (embedded UICC) features. The Embedded Universal Integrated Circuit Card (eUICC) specification adds to existing SIM features the ability to store wireless-carrier plan and services information, global roaming, remote delivery of updates to apps and services, TCP/IP communications and processing and data storage capabilities. 

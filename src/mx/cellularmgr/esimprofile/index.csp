@@ -4,6 +4,7 @@ title: eSIM Profile Action
 type: parm
 order: 165
 mx: "10.0"
+apilevel: "26"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
@@ -14,6 +15,7 @@ parm:
   list:
     - code: 0
       mx: "10.0"
+      apilevel: "26"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
@@ -21,21 +23,25 @@ parm:
       devicetype: A
       name: Enable Profile
       mx: "10.0"
+      apilevel: "26"
       description: Enables the selected profile.
     - code: 2
       devicetype: A
       name: Disable Profile
       mx: "10.0"
+      apilevel: "26"
       description: Disbles the selected profile.
     - code: 3
       devicetype: A
       name: Delete Profile
       mx: "10.0"
+      apilevel: "26"
       description: Deleted the selected profile.
     - code: 4
       devicetype: A
       name: Change Nickname
       mx: "10.0"
+      apilevel: "26"
       description: Changes the name of the selected profile.
 ---
 

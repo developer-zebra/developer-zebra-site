@@ -68,7 +68,7 @@ Broadcast when a KeyEvent corresponding to the key `code KEYCODE_BUTTON_R2` (105
 -----
 
 ### Sample code
-The snippet below shows the broadcast receiver object. Full source code is provided in the [project download file](usingptt). 
+The snippet below shows the broadcast receiver object. Full source code is provided in the [project download file](../usingptt). 
 
       :::Java
       //Broadcast Receiver object

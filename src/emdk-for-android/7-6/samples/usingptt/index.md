@@ -18,8 +18,7 @@ productversion: '7.6'
 This sample app demonstrates how the Push-to-Talk button on a Zebra device can be detected by Push-to-Talk applications to allow PTT functions to operate without unlocking the device. 
 
 ### Requirements
-* A Zebra device running Android
-* EMDK for Android 7.6 installed
+* Zebra device with a PTT button running Android 6.x (Marshmallow) or later
 
 ####`DISCLAIMER:`
 **Zebra does not recommend using this utility for production environments**. This app is an *<u>example</u>* of how to detect PTT buttons while the Android screen is locked. **No Zebra support or warranty is expressed or implied**.  

@@ -20,7 +20,7 @@ Used to enter the name of a file on the device containing configuration settings
 
 DataWedge supports the importation of Config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices delivered through commercially available Enterprise Mobility Management (EMM) systems. 
 
-**Zebra recommends copying any configuration files to the** `/enterprise/device/settings/datawedge/autoimport` **folder *prior* to calling DataWedgeMgr** with the configuration file path. When DataWedge launches, it checks this folder and executes the following functions if files are present:
+**Zebra recommends copying any configuration files to the** `/enterprise/device/settings/datawedge/autoimport` **folder *prior* to calling DataWedgeMgr** with the configuration file and path. When DataWedge launches, it checks this folder and executes the following functions if files are present:
 
 1. Import the new file(s)
 2. Replace the existing Config file and like-named Profile(s), if any
@@ -28,7 +28,7 @@ DataWedge supports the importation of Config files (`datawedge.db`) and Profiles
 4. Put new settings immediately into effect
 
 ##### Important Notes:
-* For the best users experience, **Zebra strongly recommends that device users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
+* For the best user experience, **Zebra strongly recommends that device users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
 * **Zebra recommends applying explicit file permissions to all `.db` files** so that DataWedge file procedures are not impeded.
 
 <!-- 10/8/19- removed; this CSP requires Android 7.6 

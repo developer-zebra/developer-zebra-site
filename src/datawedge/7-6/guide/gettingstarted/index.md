@@ -7,17 +7,20 @@ productversion: '7.6'
 
 ## Overview
 
-DataWedge allows any application on Zebra devices to capture data from barcode, MSR, RFID and other input sources, to process the data and to output it as keystrokes, from intents, or over a network connection. DataWedge actions and settings can be controlled using DataWedge profiles from the UI (aka the “zero-code” approach) or controlled programmatically with intent-based APIs. When an application screen is displayed in the foreground, DataWedge automatically detects which profile the app or activity is associated to and applies the configuration from the profile. An overview of the two approaches:
+DataWedge allows any application on Zebra devices to capture data from barcode, MSR, RFID and other input sources, to process the data and to output it as keystrokes, from intents, or over a network connection. DataWedge actions and settings can be controlled using DataWedge profiles from the UI (aka the “zero-code” approach) or controlled programmatically. When an application screen is displayed in the foreground, DataWedge automatically detects which profile the app or activity is associated to and applies the configuration from the profile. There are 3 approaches to capture data:
 
-* **DataWedge “Zero-code”:** Profiles can be created through the DataWedge UI to control scanning behavior.  Once an app is associated to the profile and the output is set to Keystroke, data can be captured into any editable text field within the app. Options are available to define how the data is captured (input) and processed. A default profile, Profile0, can enable data capture into the text field of any application with the use of Keystroke output. 
-* **[DataWedge APIs](../api):** Provide developers the capability to query and modify DataWedge settings for data capture, data processing, and data output with Android intents, commonly used with general Android programming, without concern of the underlying hardware. DataWedge APIs are often used in preference to Zebra’s EMDK. Developing EMDK apps require a thorough knowledge of scanning APIs - designing and coding EMDK apps can be time consuming due to its higher level of difficulty. DataWedge offers a simpler interface, better API ease-of-use, and flexibility. DataWedge data may be retrieved from any application regardless of the underlying application technology (e.g. Java, Xamarin, Cordova). DataWedge and EMDK provide similar features and control over data capture. See [DataWedge vs EMDK Comparison table](/help/#datawedgevsemdkcomparison) for more information. 
+* **“Zero-code"** - No coding is required. Create [profiles](../profiles) through the DataWedge UI to control scanning behavior. Once an app/activity is associated to the profile and the output is set to Keystroke, data can be captured into any editable text field within the app. Options are available to define how the data is captured (input) and processed. A default profile, Profile0, enables data capture into the text field of any application. 
+* **Minimal code** - Basic method to retrieve data from generic Android intents with the use of a broadcast receiver without the need for finer control of scanning activity or data processing. Refer to [basic intent sample app](../samples/basicintent1).
+* **[DataWedge APIs](../api)** - Uses intents to control DataWedge settings and specify how the data is captured, processed, and delivered to the app without concern of the underlying hardware. 
+
+DataWedge APIs are often used in preference to Zebra’s EMDK. Developing EMDK apps require a thorough knowledge of scanning APIs - designing and coding EMDK apps can be time consuming due to its higher level of difficulty. DataWedge offers a simpler interface, better API ease-of-use, and flexibility. DataWedge data may be retrieved from any application regardless of the underlying application technology (e.g. Java, Xamarin, Cordova). DataWedge and EMDK provide similar features and control over data capture. See [DataWedge vs EMDK Comparison table](/help/#datawedgevsemdkcomparison) for more information.
 
 Control of barcode scanning hardware is exclusive. When DataWedge is active, Scanner and Barcode APIs of apps, such as an EMDK app, become inoperative. Likewise, when an app controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on disabling DataWedge. 
 
 
 ## DataWedge Features
 
-Each app that uses DataWedge can be associated with a [DataWedge profile](../profiles), which contains options that determine how the data is to be acquired (input), processed (data formatting), and delivered to the receiving app (output). These options are commonly referred to as plugins (e.g. barcode input plugin). DataWedge continually monitors the foreground application - when it detects a change to the foreground app, it activates the appropriate profile associated with the app (if one exists). If the app is not associated with any profile, _Profile0_ is the default generic profile that takes effect. A profile can be exported so the same DataWedge configurations can be deployed across multiple devices.  
+Each app that uses DataWedge is associated with a [DataWedge profile](../profiles), which contains options that determine how the data is to be acquired (input), processed (data formatting), and delivered to the receiving app (output). These options are referred to as plugins (e.g. barcode input plugin). DataWedge continually monitors the foreground application - when it detects a change to the foreground app, it activates the appropriate profile associated with the app (if one exists). If the app is not associated with any profile, _Profile0_ is the default generic profile that takes effect. A profile can be exported so the same DataWedge configurations can be deployed across multiple devices.  
 
 For example, "App A" might require a TAB to be sent after each dataset is passed from DataWedge, "App B" might require the ENTER key to be pressed instead. Through Profiles, DataWedge can be configured to process the same set of captured data according to the requirements of any number of individual applications. Alternatively, a single Profile can be created and associated with many applications, acquiring and processing data in the same way for all. 
 
@@ -40,8 +43,8 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
  * **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments. 
 
 * **Utilities -** optional profile configuration settings: 
- * **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen. 
- * **Enterprise Keyboard Designer –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, Keyboard Designer, to generate the Enterprise Keyboard layout.`Coming Soon`
+ * **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen.
+     * **[Enterprise Keyboard Designer](/ekd/latest/guide/about) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, Keyboard Designer, to generate the Enterprise Keyboard layout.
 
 **[DataWedge Settings](../settings) -** provide configurations to general, non-profile related DataWedge options. It includes actions such as ignore disabled profiles, disabled app list, import/export profile, and reporting. 
 
@@ -69,12 +72,14 @@ The app now uses DataWedge for barcode data acquisition. Test and adjust input, 
 
 ## DataWedge Programming
 
-DataWedge leverages a common application component used in Android programming called [Intents](../output/intent). The DataWedge service contains a broadcast receiver that listens for and responds to broadcast intents to determine what action to take based on the extras contained in that intent. There are two approaches in DataWedge programming:  
+DataWedge leverages [Intents](../output/intent), a common application component used in Android programming. The DataWedge service has a broadcast receiver that listens for and responds to broadcast intents to determine what action to take. There are 2 levels for coding: 
 
-* **Minimal coding –** basic method to retrieve data from intents without the need for finer control of scanning activity or data with the use of a broadcast receiver, another commonly used Android component. DataWedge Intent APIs are not applied. Refer to [basic intent sample app](../samples/basicintent1).
-* **[DataWedge Intent API](../api) -** provides the capability for developers to control DataWedge settings and how the data is captured, processed, and delivered to the app with the use of intents to specify which command to perform. Multiple API calls can be sent as extras using a single intent action. Refer to [barcode scanning sample app](../samples/barcode1). 
+* **Minimal coding –** retrieves data from generic Android intents with the use of a broadcast receiver. Requires barcode input and intent output to be enabled in the profile. Refer to [basic intent sample app](../samples/basicintent1).
+* **[DataWedge Intent API](../api) -** uses API intents to have finer control over DataWedge settings and how the data is captured, processed, and delivered to the app. Multiple API calls can be sent as extras using a single intent action. Refer to [barcode scanning sample app](../samples/barcode1). 
 
-The rest of this section covers DataWedge Intent API usage. An application accesses the DataWedge API by broadcasting an intent to query or modify a configuration. Changes can take place at runtime depending on the API used. The action and data of the intent specifies the DataWedge API function to perform.  Function prototype: 
+The rest of this section covers DataWedge Intent API usage.
+
+An application accesses the DataWedge API by sending an intent to query or modify a configuration. Changes can take place at runtime if supported by the API. The action and data of the intent specifies which DataWedge API function to perform. Function prototype: 
 
 	Intent i = new Intent(); 
 	i.setAction("com.symbol.datawedge.api.ACTION"); 

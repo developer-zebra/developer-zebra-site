@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: OS Update File
+title: OS Update 'Zip' File
 type: parm
 order: 3
 mx: "4.1"
@@ -46,6 +46,7 @@ For example, if the `.zip` files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-0101
  * **TC75 KitKat**
 
 #### Device Reset Commands
+Device "Reset" commands are supported for use within a `.upl` file **<u>only on devices running Android 10</u>** and only using the syntax below.  
 
 	:::term
 	// On devices running Android 10 (or later) the "osupdate.upl" text file can contain

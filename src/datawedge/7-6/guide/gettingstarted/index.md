@@ -42,7 +42,7 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
  * **[Intent](../output/intent/) –** data acquired is programmatically sent to the associated foreground app/activity using the Android intent mechanism. This is useful when data simply needs to be sent to the app screen without allowing the user to edit it. Register for the DataWedge intent to receive the captured data. 
  * **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments. 
 
-* **Utilities -** optional profile configuration settings: 
+* **Utilities -** optional tools to use: 
  * **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen.
      * **[Enterprise Keyboard Designer](/ekd/latest/guide/about) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, Keyboard Designer, to generate the Enterprise Keyboard layout.
 
@@ -70,16 +70,14 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 The app now uses DataWedge for barcode data acquisition. Test and adjust input, processing (data formatting) and output parameters as necessary.
 
 
-## DataWedge Programming
-
+## DataWedge API
+<!--
 DataWedge leverages [Intents](../output/intent), a common application component used in Android programming. The DataWedge service has a broadcast receiver that listens for and responds to broadcast intents to determine what action to take. There are 2 levels for coding: 
 
 * **Minimal coding –** retrieves data from generic Android intents with the use of a broadcast receiver. Requires barcode input and intent output to be enabled in the profile. Refer to [basic intent sample app](../samples/basicintent1).
 * **[DataWedge Intent API](../api) -** uses API intents to have finer control over DataWedge settings and how the data is captured, processed, and delivered to the app. Multiple API calls can be sent as extras using a single intent action. Refer to [barcode scanning sample app](../samples/barcode1). 
-
-The rest of this section covers DataWedge Intent API usage.
-
-An application accesses the DataWedge API by sending an intent to query or modify a configuration. Changes can take place at runtime if supported by the API. The action and data of the intent specifies which DataWedge API function to perform. Function prototype: 
+-->
+This section provides guidance on how to use [DataWedge Intent APIs](../api). An application accesses the DataWedge API by sending an intent to query or modify a configuration. Changes can take place at runtime if supported by the API. The action and data of the intent specifies which DataWedge API function to perform. Function prototype: 
 
 	Intent i = new Intent(); 
 	i.setAction("com.symbol.datawedge.api.ACTION"); 

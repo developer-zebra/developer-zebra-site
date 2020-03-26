@@ -35,7 +35,7 @@ For example, if the `.zip` files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-0101
 “command: EnterpriseReset” (per PM)
 -->
 
-* **The reset command is supported for use within a `.upl` file <u>only on devices running Android 10</u>**. Other devices must execute all required reset(s) using Reset Actions in one or more StageNow Profile(s). 
+* **Device "Reset" commands are supported for use within a `.upl` file <u>only on devices running Android 10</u>**. Other devices must execute all required reset(s) using Reset Actions in one or more StageNow Profile(s). See syntax, below. 
 * **Zebra recommends <u>matching case when entering file names</u>** to avoid case-sensitivity errors on some devices. 
 * **Required file(s) must be on the device before a Reset Action** is initiated.
 * The `.upl` file and all referenced `.zip` files must be **in the same device folder**. 
@@ -44,6 +44,18 @@ For example, if the `.zip` files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-0101
 * **The following devices <u>do not support</u> `.upl` files**:
  * **TC70 KitKat**
  * **TC75 KitKat**
+
+#### Device Reset Commands
+
+	:::term
+	// On devices running Android 10 (or later) the "osupdate.upl" text file can contain
+	// one or more Reset commands using the following syntax:
+
+	command:FactoryReset
+	command:EnterpriseReset
+
+	// See the Overview section for more information about resetting the device. 
+
 
 ### Android File Location Rules
 

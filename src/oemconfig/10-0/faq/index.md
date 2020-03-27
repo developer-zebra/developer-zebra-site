@@ -22,7 +22,7 @@ menu:
 Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
 
 #### IMPORTANT
-**The schema for OEMConfig 9.3 (and higher) includes default values ONLY for hidden restriction types**; it  no longer includes default values for non-hidden restriction types. This is in compliance with changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations). 
+**The schema for OEMConfig 9.3 (and later) includes default values ONLY for hidden restriction types**; it  no longer includes default values for non-hidden restriction types. This is in compliance with changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations). 
 
 <!-- 
 Also see the [Glossary of terms](../glossary).

@@ -2,7 +2,7 @@
 title: OEMConfig Setup
 layout: guide.html
 product: OEMConfig
-productversion: '9.3'
+productversion: '10.0'
 menu:
   items:
     - title: About

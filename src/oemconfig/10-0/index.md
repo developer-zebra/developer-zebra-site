@@ -16,5 +16,5 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/9-3/search
 product: OEMConfig
-productversion: '9.3'
+productversion: '10.0'
 ---

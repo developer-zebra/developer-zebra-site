@@ -25,7 +25,7 @@ Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band
 
 ### Zebra Bluetooth Settings app
 
-Zebra devices running Android 8.x Oreo and later come with the Zebra Bluetooth Settings app preinstalled. When run on a device with Bluetooth enabled, this app scans discoverable devices in the vicinity and displays their Bluetooth name, MAC address, Upper Address Part (UAP) and Class of Device (CoD) information similar to the image shown below.  
+Zebra devices running Android 8.x Oreo and later come with the Zebra Bluetooth Settings (ZBS) app preinstalled. When run on a device with Bluetooth enabled, this app scans discoverable devices in the vicinity and displays their Bluetooth name, MAC address, Upper Address Part (UAP) and Class of Device (CoD) information similar to the image shown below.  
 
 ##### To expose Bluetooth info of nearby devices: 
 1. Set the relevant device(s) as discoverable.

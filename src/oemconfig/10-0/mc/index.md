@@ -223,8 +223,7 @@ By default, execution will continue with the next *Transaction Step* once execut
 
 <table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table>
 
-
-
+-----
 
 <b><font size="6" color="black"> Managed Configuration Groups</font></b>
 

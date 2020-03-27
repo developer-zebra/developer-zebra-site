@@ -33,8 +33,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ## What's New in v10.0
 
-OLD OLD OLD
-Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the schema for OEMConfig 9.3 (and higher) includes default values ONLY for hidden restriction types; the Zebra schema no longer includes default values for non-hidden restriction types. 
+`IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig scemas starting with 9.3 include default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
 OLD OLD OLD
 ### Device Support
@@ -42,10 +41,12 @@ OLD OLD OLD
 * **Supports all Zebra running Android 7.x Nougat, Android 8.x Oreo**.
 * **Supports devices available as of Dec. 31, 2019 running Android 9.x Pie**.  
 
-OLD OLD OLD
 ### New Features
 
-* **Supports MX 9.3**, adding the following features and enhancements: 
+* **Supports MX 10.0**, adding the following features and enhancements: 
+
+OLD OLD OLD
+
  * Applications can now be configured to handle background data on a per-app basis
  * Bluetooth now allows rules to be enforced based on Bluetooth MAC address 
  * GMS Configurations can now activate limited set of GMS apps 
@@ -53,7 +54,7 @@ OLD OLD OLD
  * Power Configurations can now control individual device wake-up sources such as buttons or keycodes
  * Audio Configurations now allow selection of whether the device plays a sound when a battery charger is connected
 
-`IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.3 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+`IMPORTANT:` Features listed above are supported ONLY on devices with MX 10.0 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
 For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section. 
 
@@ -61,7 +62,7 @@ For a detailed list of configuration parameters, see the [Managed Configurations
 
 ## Version History
 
-### What's New in v9.3
+### Added in v9.3
 
 Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the schema for OEMConfig 9.3 (and higher) includes default values ONLY for hidden restriction types; the Zebra schema no longer includes default values for non-hidden restriction types. 
 

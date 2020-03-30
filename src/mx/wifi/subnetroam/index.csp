@@ -5,7 +5,8 @@ type: parm
 order: 82
 mx: "4.4"
 devicetype: A
-info: Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean.
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3.
+ RevB-based devices running Android Jelly Bean.
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

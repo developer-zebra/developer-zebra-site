@@ -5,6 +5,7 @@ type: parm
 order: 7
 mx: "8.1"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
   name: CallAdmissionControl

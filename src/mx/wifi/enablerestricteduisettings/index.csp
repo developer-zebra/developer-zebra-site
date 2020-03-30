@@ -5,6 +5,7 @@ type: parm
 order: 61
 mx: "4.2"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

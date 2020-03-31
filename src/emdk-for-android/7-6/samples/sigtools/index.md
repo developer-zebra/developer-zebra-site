@@ -29,7 +29,7 @@ The HEX or DER output forms of this utility can be used to create a signature fi
 -----
 
 ### SYNOPSYS
-    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [JAVA|DER] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
+    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [HEX|BASE64|JAVA|DER] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
 
 ### Commands
 
@@ -44,6 +44,8 @@ The HEX or DER output forms of this utility can be used to create a signature fi
 * **'DER'**
 
 **OUTFORM** (required) - Format of the output: 
+ * **HEX -** a string of hexadecimal digits representing the certificate
+ * **BASE64 -** a Base64-encoded string of characters representing the certificate
  * **JAVA -** a Java class
  * **DER -** the certificate itself; most important if extracting from an `.apk` file
 

@@ -15,9 +15,9 @@ productversion: '7.6'
 ---
 
 ## Overview
-SigTools is a command-line utility for converting a certificate into a byte array. Supported inputs are Android `.apk` app files or those formatted according to Distinguished Encoding Rules (DER), which generally contain an X.509 binary certificate used for secure websites. **Output is formatted as a Java class, a string of bytes or a DER file** and also is copied to the host-system clipboard. Optionally, the output can be written to a file (for JAVA or DER OUTFORM). 
+SigTools is a command-line utility for converting a certificate into a byte array. Supported inputs are Android `.apk` app files or those formatted according to Distinguished Encoding Rules (DER), which generally contain an X.509 binary certificate used for secure websites. **Output is formatted as a Java class, a hexadecimal string, a base64 encoded string or a DER file** and also is copied to the host-system clipboard. Optionally, the output can be written to a file. 
 
-This utility can be used to create a signature file for securing apps using the Zebra [Access Manager](/mx/accessmgr) CSP. 
+The HEX or DER output forms of this utility can be used to create a signature file for securing apps using the Zebra [Access Manager](/mx/accessmgr) CSP. 
 
 ### Requirements
 * A Linux, macOS or Windows host computer with Java runtime environment installed  
@@ -29,7 +29,7 @@ This utility can be used to create a signature file for securing apps using the 
 -----
 
 ### SYNOPSYS
-    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [BYTES|JAVA|DER] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
+    java -jar SigTools.jar COMMAND -INFORM [DER|APK] -OUTFORM [JAVA|DER] [-OUTFILE filename] -IN FILENAME [FILENAME]...[ARGUMENTS]
 
 ### Commands
 
@@ -44,13 +44,12 @@ This utility can be used to create a signature file for securing apps using the 
 * **'DER'**
 
 **OUTFORM** (required) - Format of the output: 
- * **BYTES -** a string representing bytes in certificate
  * **JAVA -** a Java class
  * **DER -** the certificate itself; most important if extracting from an `.apk` file
 
 **IN** (required) - A space-separated list of file names (**NOTE**: If name contains a space, surround name with quotes) 
 
-**OUTFILE** (optional) - The output file name if **JAVA** is used as the OUTFORM 
+**OUTFILE** (optional) - The output file name 
 
 #### Notes
 
@@ -68,8 +67,13 @@ This utility can be used to create a signature file for securing apps using the 
 
 ### SAMPLE COMMANDS
     :::java
-    // For APK files:
-    java -jar SigTools.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java 
-    // For DER files:
-    java -jar SigTools.jar GetCert -INFORM DER -OUTFORM BYTES -IN test.x509.pem -OUTFILE test.txt
+    // For APK files: Extract public signing certificate from an APK and create 
+    // a JAVA class with an initialized byte array:
+
+    Java -jar SigTools.jar GetCert -INFORM APK -OUTFORM JAVA -IN test.apk -OUTFILE test.java
+     
+
+    // Convert DER file to hexadecimal string:
+
+    Java -jar SigTools.jar GetCert -INFORM DER -OUTFORM HEX -IN test.x509.pem -OUTFILE test.hex
 

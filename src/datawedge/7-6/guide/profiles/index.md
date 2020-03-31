@@ -12,6 +12,9 @@ automenu:
           url: ../overview
         - title: Managing Profiles
           url: ../createprofile
+
+---
+<!--  // Commented out from section above
     - title: Input
       items:
         - title: Barcode
@@ -47,70 +50,79 @@ automenu:
           url: ../input/dcp
         - title: Enterprise Keyboard Configuration
           url: ../utilities/ekb
+-->
 
----
-
-<img src="./datawedge_plugins.png" />
+<img src="./dw_profile.png" />
 <br/>
-<b>Main options available for plugins:</b>
+<b>Main configurations for plugins:</b>
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th >Plugin</th>
     <th>Type</th>
-    <th>Main Options (not all-inclusive)</th>
+    <th>Main Configurations (not all-inclusive)</th>
   </tr>
 
   <tr>
     <td rowspan="5">Input</td>
-    <td>Barcode</td>
-	  <td>Select scanner: camera, 1D or 2D imager, Bluetooth scanner, etc.<br>Enable/disable hardware trigger<br>Select decoders<br>Decoder params (configure options for each decoder)<br>Reader params (configure options for the scanner selected)<br>Scan params (configure scanner specific decoding feedback)</td>
+    <td><a href="../input/barcode">Barcode</a></td>
+	  <td>Select scanner: camera, 1D or 2D imager, Bluetooth scanner, etc.<br>Enable/disable hardware trigger<br>Select decoders<br>Set decoder params (options for each decoder)<br>Set reader params (options for the scanner selected)<br>Set scan params (scanner specific decoding feedback)</td>
   </tr>
   
   <tr>
-    <td>Magnetic Stripe Reader</td>
+    <td><a href="../input/msr">Magnetic Stripe Reader (MSR)</a></td>
 	  <td>(Data output is acquired through intents, which DataWedge automatically parses and places into specific tags to be handled by the app)</td>
   </tr>
 
   <tr>
-    <td>RFID</td>
+    <td><a href="../input/rfid">Radio-frequency Identification (RFID)</a></td>
 	  <td>Enable/disable hardware trigger<br>Configure reader settings</td>
   </tr>
 
   <tr>
-    <td>Serial/USB</td>
-	  <td>Serial port configuration</td>
+    <td><a href="../input/serial">Serial/USB</a></td>
+	  <td>Set serial port configuration</td>
   </tr>
 
   <tr>
-    <td>Voice</td>
+    <td><a href="../input/voice">Voice</a></td>
 	  <td>Data capture start option: start phrase or PTT button<br>Specify data capture start phrase<br>Specify data capture end phrase<br>Set timeout for data capture<br>Configure voice commands<br>Configure data type returned: alpha, numeric, any<br>Offline speech recognition<br>Validation window (validate captured data allowing to edit if needed)</td>
   </tr>
 
   <tr>
     <td rowspan="2">Process</td>
-    <td>Basic Data Formatting</td>
+    <td><a href="../process/bdf">Basic Data Formatting (BDF)</a></td>
 	  <td>Add prefix<br>Add suffix<br>Send as hex<br>Append TAB key<br>Append ENTER key<br>Create custom rule with specific criteria and actions to process acquired data</td>
   </tr>
 
   <tr>
-    <td>Advanced Data Formatting</td>
+    <td><a href="../process/bdf">Advanced Data Formatting (ADF)</a></td>
 	  <td>Create custom rule with specific criteria and actions to process acquired data</td>
   </tr>
 
   <tr>
     <td rowspan="3">Output</td>
-    <td>Keystroke</td>
+    <td><a href="../output/keystroke">Keystroke</a></td>
 	  <td>Inject action key in place of the character: None, Tab, Line feed, Carriage return<br>Send keystrokes as key events<br>Send certain key events as a string<br>Set key event delay</td>
   </tr>
 
   <tr>
-    <td>Intent</td>
-	  <td>Intent action<br>Intent category<br>Intent delivery</td>
+    <td><a href="../output/intent">Intent</a></td>
+	  <td>Set intent action<br>Set intent category<br>Set intent delivery</td>
   </tr>
 
   <tr>
-    <td>Internet Protocol</td>
-	  <td>Enable/disable Remote Wedge<br>Set protocol: TCP or UDP<br>IP address<br>Port number</td>
+    <td><a href="../output/ip">Internet Protocol</a></td>
+	  <td>Enable/disable Remote Wedge<br>Set protocol: TCP or UDP<br>Set IP address<br>Set Port number</td>
   </tr>
 
+<tr>
+    <td rowspan="2">Utilities (Options)</td>
+    <td><a href="../input/dcp">Data Capture Plus (DCP)</a></td>
+	  <td>Set location of button to trigger scanning: left side, right side, either side<br>Set mode to launch DCP: floating button, button only, full-screen<br>Set highest/lowest button position<br>Set wait time to trigger scanner action after a screen tap</td>
+  </tr>
+
+  <tr>
+    <td><a href="../utilities/ekb">Enterprise Keyboard Configuration</a></td>
+	  <td>Select custom generated layout</td>
+  </tr>
 </table>

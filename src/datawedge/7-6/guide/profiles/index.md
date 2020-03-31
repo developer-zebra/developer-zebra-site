@@ -50,6 +50,9 @@ automenu:
 
 ---
 
+<img src="./datawedge_plugins.png" />
+<br/>
+<b>Main options available for plugins:</b>
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th >Plugin</th>
@@ -106,11 +109,8 @@ automenu:
   </tr>
 
   <tr>
-    <td>Intent Protocol</td>
+    <td>Internet Protocol</td>
 	  <td>Enable/disable Remote Wedge<br>Set protocol: TCP or UDP<br>IP address<br>Port number</td>
   </tr>
 
 </table>
-<br />
-<br />
-<img src="./datawedge_plugins.png" />

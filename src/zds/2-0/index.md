@@ -1,7 +1,7 @@
 ---
 title: Zebra Data Services
 layout: guide.html
-redirect_url: /zds/2-0/about
+redirect_url: /zds/about
 product: ZDS
 menu:
   title: Zebra Data Services 2.0
@@ -9,20 +9,20 @@ menu:
   versions:
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/2-0/about
+      default: /zds/about
       label: '2.0'
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/2-0/about
+      default: /zds/about
       label: '2.0'
   items:
     - title: About
-      url: /zds/2-0/about
+      url: /zds/about
     - title: Setup
-      url: /zds/2-0/setup
+      url: /zds/setup
     - title: FAQ
-      url: /zds/2-0/faq
+      url: /zds/faq
     - icon: fa fa-search
-      url: /zds/2-0/search
+      url: /zds/search
 ---
 

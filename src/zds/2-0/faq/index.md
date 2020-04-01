@@ -5,13 +5,13 @@ product: ZDS
 menu:
   items:
     - title: About
-      url: /zds/2-0/about
+      url: /zds/about
     - title: Setup
-      url: /zds/2-0/setup
+      url: /zds/setup
     - title: FAQ
-      url: /zds/2-0/faq
+      url: /zds/faq
     - icon: fa fa-search
-      url: /zds/2-0/search
+      url: /zds/search
 ---
 
 ###Q: What is the package name of the ZDS agent on the device?

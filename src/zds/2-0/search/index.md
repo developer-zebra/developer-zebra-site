@@ -1,18 +1,18 @@
 ---
 title: Search
 layout: search.html
-index: /zds/2-0/index.json
+index: /zds/index.json
 product: ZDS
 menu:
   items:
     - title: About
-      url: /zds/2-0/about
+      url: /zds/about
     - title: Setup
-      url: /zds/2-0/setup
+      url: /zds/setup
     - title: FAQ
-      url: /zds/2-0/faq
+      url: /zds/faq
     - icon: fa fa-search
-      url: /zds/2-0/search
+      url: /zds/search
 ------
 
 

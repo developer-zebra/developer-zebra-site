@@ -53,6 +53,8 @@ automenu:
 -->
 
 <img src="./dw_profile.png" />
+_<b>A DataWedge Profile and its contents.</b> When the associated app/activity is in the foreground, DataWedge loads the Profile and performs actions to acquire (input), format (process) and deliver (output) the data based on the Profile configurations. Data Capture Plus and Enterprise Keyboard Configuration are separate utilities that perform specific functions to the app/activity. Data Capture Plus enables areas of the screen to behave as a scan trigger. Enterprise Keyboard Configuration enables a custom generated keyboard layout to be displayed in the associated app/activity._
+<br/>
 <br/>
 <b>Main configurations for plugins:</b>
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">

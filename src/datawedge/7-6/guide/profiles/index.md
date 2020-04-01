@@ -1,6 +1,6 @@
 ---
 title: DataWedge Profiles
-description: DataWedge functionality is based on Profiles. Each Profile contains options, also known as plug-ins, for determining how the data is acquired (input), processed (data formatting) and delivered to the app (output). A single Profile can be associated with one or more activities or apps.  However, an activity or app can be associated only to a single Profile. In addition to the core functionality with Input, Processing, and Output, optional Profile specific configuration settings are categorized under Utilities, which can be associated with apps or controlled at runtime. Details about functionality and usage of each of the Input, Processing, Output and Utilities options can be found in the links below. By default, Profile0 is provided as a generic Profile that can take effect for foreground apps that have not yet been associated to any Profiles. This provides the ability to quickly acquire data prior to taking action on setting any configurations. For more information about how Profiles work, see the Architecture Overview page.
+description: DataWedge functionality is based on Profiles. Each Profile contains options, also known as plug-ins, for determining how the data is acquired (input), processed (data formatting) and delivered to the app (output). A single Profile can be associated with one or more activities or apps. However, an activity or app can be associated only to a single Profile. In addition to the core functionality with Input, Processing, and Output, optional Profile specific configuration settings are categorized under Utilities, which can be associated with apps or controlled at runtime. Details about functionality and usage of each of the Input, Processing, Output and Utilities options can be found in the links below. By default, Profile0 is provided as a generic Profile that can take effect for foreground apps that have not yet been associated to any Profiles. This provides the ability to quickly acquire data prior to taking action on setting any configurations. For more information about how Profiles work, see the Architecture Overview page.
 layout: list-apis.html
 product: DataWedge
 productversion: '7.6'
@@ -57,7 +57,7 @@ automenu:
 <b>Main configurations for plugins:</b>
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
-    <th >Plugin</th>
+    <th>Plugin</th>
     <th>Type</th>
     <th>Main Configurations (not all-inclusive)</th>
   </tr>
@@ -118,7 +118,7 @@ automenu:
 <tr>
     <td rowspan="2">Utilities (Options)</td>
     <td><a href="../input/dcp">Data Capture Plus (DCP)</a></td>
-	  <td>Set location of button to trigger scanning: left side, right side, either side<br>Set mode to launch DCP: floating button, button only, full-screen<br>Set highest/lowest button position<br>Set wait time to trigger scanner action after a screen tap</td>
+	  <td>Set location of button to trigger scanning: left side, right side, either side<br>Set mode to launch DCP: button only, full-screen only, button interchangeable to full screen<br>Set highest/lowest button position<br>Set wait time to trigger scanner action after a screen tap</td>
   </tr>
 
   <tr>

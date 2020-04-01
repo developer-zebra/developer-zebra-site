@@ -2,7 +2,6 @@
 title: Zebra Data Service Setup
 layout: guide.html
 product: ZDS
-productversion: '2.0'
 menu:
   items:
     - title: About

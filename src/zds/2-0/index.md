@@ -3,7 +3,6 @@ title: Zebra Data Services
 layout: guide.html
 redirect_url: /zds/2-0/about
 product: ZDS
-productversion: '2.0'
 menu:
   title: Zebra Data Services 2.0
   img: /zds/images/logo.png

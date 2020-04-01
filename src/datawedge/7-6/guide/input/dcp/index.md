@@ -33,16 +33,16 @@ _Data Capture Plus shown in minimized mode_
 <br>
 
 ### Start in
-Sets the mode that DCP will startup with. If configured to launch as a button, the DCP mode can be changed at runtime by dragging, but the launch state will not be changed in the Profile. 
+Sets the mode that DCP will startup with. **Button mode** is the only option that can interchange between button and full screen modes. It initiates as a floating button and can change to full screen by dragging the button to the bottom of the screen. Once in full screen, it can interchange back to a floating button by swiping down. The launch state is not changed in the Profile. In either **Button mode** or **Button-only** mode, the floating button can be dragged and placed anywhere on the side based on the **Docking option** selected. 
 
 **Start-in options**: 
 
-* Button mode (floating button)
+* Button mode
 * Full-screen mode
 * Button-only mode
 
 <img style="height:350px" src="../dcp_maximized.png"/>
-_Data Capture Plus shown in maximized mode_ 
+_Data Capture Plus shown in full-screen mode_ 
 <br>
 
 ### Button highest position 

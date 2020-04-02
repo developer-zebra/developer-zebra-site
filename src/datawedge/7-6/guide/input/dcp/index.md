@@ -8,7 +8,7 @@ productversion: '7.6'
 ## Overview
 Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of the device screen to be designated as scan triggers. By tapping on such a screen area, DataWedge will respond as it would to a scanner button-press or other hardware trigger. DCP is disabled by default. 
 
-The DataWedge profile configuration screen allows an app user to configure the appearance of DCP on the screen after a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired.
+The DataWedge profile configuration screen allows an app user to configure the appearance of DCP on the screen after a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired. [Barcode Input](../input/barcode) must be enabled.
 
 **Note: The DCP will not appear if the scanner is disabled in the active Profile**.
 

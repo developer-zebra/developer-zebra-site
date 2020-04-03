@@ -7,6 +7,7 @@ mx: "4.1"
 osx: "1.0,1.3"
 apilevel: "1"
 devicetype: A,B
+info: For Install and Upgrade Actions, apps must be targeted at Android API level 23 (or newer) to be silently granted runtime permission on devices running Android 10 or later.
 parm:
   pivotal: Yes
   name: Action

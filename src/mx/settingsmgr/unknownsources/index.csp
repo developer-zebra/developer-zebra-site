@@ -6,6 +6,7 @@ order: 4
 mx: "4.3"
 osx: "4.3"
 devicetype: A
+info: Support discontinued on devices running MX 9.0 or later. 
 parm:
   pivotal: No
   name: UnknownSources

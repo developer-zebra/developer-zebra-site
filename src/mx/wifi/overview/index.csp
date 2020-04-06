@@ -6,18 +6,24 @@ devicetype: A,B
 order: 0
 ---
 
-Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks. The Wi-Fi CSP also controls OmniTrail, a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device locationing. OmniTrail can locate a device to within about 5 feet (1.5 meters). **See below for OmniTrail requirements**. 
+Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
 
-### OmniTrail Requirements
-* **OmniTrail is supported only on the following devices**:
-	* **MC18**
-	* **MC40**
-	* **TC51**
-	* **TC56**
-	* **TC70x**
-	* **TC75x**
-* **Device must be running Android 5.0 Lollipop or later**
-* **Device must contain MX 6.3 or higher**
+> **`IMPORTANT:`** For some devices, the following Wi-Fi parameters and/or options require purchase of a Mobility DNA Enterprise License: 
+
+* 2.4GHzChannels
+* 5.0GHzChannels
+* 802.11K
+* 802.11w
+* 802.11v
+* AutoTimeConfig
+* BandPreference
+* CallAdmissionControl
+* CCKM_Config
+* EnableRestrictedSettingsUI
+* Hotspot24GHz
+* Hotspot5GHz
+* SubNetRoam
+* WMM-PS (PowerSave Option 4)
 
 ### Main Functionality
 
@@ -73,5 +79,20 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Encrypt Passwords in transit
 * Encrypt Passwords stored on the device 
 * Enforce/eliminate password requirement on PEAP GTC networks
+
+### OmniTrail
+
+The Wi-Fi CSP also controls OmniTrail, a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device locationing. OmniTrail can locate a device to within about 5 feet (1.5 meters). **See below for OmniTrail requirements**. 
+
+### OmniTrail Requirements
+* **OmniTrail is supported only on the following devices**:
+	* **MC18**
+	* **MC40**
+	* **TC51**
+	* **TC56**
+	* **TC70x**
+	* **TC75x**
+* **Device must be running Android 5.0 Lollipop or later**
+* **Device must contain MX 6.3 or higher**
 
 -----

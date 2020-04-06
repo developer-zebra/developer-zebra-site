@@ -5,6 +5,7 @@ type: parm
 order: 9
 mx: "4.2"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: The selected RF Band is "5.0GHz" or "Auto"
   pivotal: No

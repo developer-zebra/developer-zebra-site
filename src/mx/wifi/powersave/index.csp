@@ -29,6 +29,7 @@ parm:
       mx: "4.2"
     - code: 4
       devicetype: A,B
+      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
       name: WMM-PS
       mx: "4.4"
     - code: 5

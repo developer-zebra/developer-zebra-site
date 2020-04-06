@@ -5,6 +5,7 @@ type: parm
 order: 77
 mx: "6.3"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "5GHz" 
   pivotal: No

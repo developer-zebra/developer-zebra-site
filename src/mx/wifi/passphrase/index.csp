@@ -17,14 +17,14 @@ Controls whether the Key is encrypted. When the Key Type is Passphrase, then the
 
 If WEP is selected and Protect Key is false:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is "WEP" and Protect Key is false
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is "WEP" and Protect Key is false
 * Parm name: PassphraseWEPClear
 * **Parm value input rules**: 
 	* String from 4&ndash;32 characters
 
 If WEP is selected and Protect Key is true:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is "WEP" and Protect Key is true
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is "WEP" and Protect Key is true
 * Parm name: PassphraseWEPEncrypted
 * **Parm value input rules**: 
 	* String from 4&ndash;32 characters
@@ -32,14 +32,14 @@ If WEP is selected and Protect Key is true:
 	
 If WEP is not selected and Protect Key is false:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is not "WEP" and Protect Key is false
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is not "WEP" and Protect Key is false
 * Parm name: PassphraseWPAClear
 * **Parm value input rules**: 
 	* String from 8&ndash;63 characters
 
 If WEP is not selected and Protect Key is true:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is not "WEP" and Protect Key is true
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Passphrase" and the WPA Mode is not "WEP" and Protect Key is true
 * Parm name: PassphraseWPAEncrypted
 * **Parm value input rules**: 
 	* String from 8&ndash;63 characters

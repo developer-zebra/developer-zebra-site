@@ -7,7 +7,7 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and the Authentication is "PEAP-NONE"
+  presentif: The Network Action is "Add" and the Authentication is "PEAP-NONE"
   name: Identity
   type: string
 

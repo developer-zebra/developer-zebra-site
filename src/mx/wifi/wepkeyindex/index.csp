@@ -7,7 +7,7 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the WPA Mode is "WEP"
+  presentif: The Network Action is "Add" and the Security Mode is "Personal" and the WPA Mode is "WEP"
   name: WepKeyIndex
   type: list
   list:

@@ -7,7 +7,7 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal" or "Enterprise" and the WPA Mode is WPA
+  presentif: The Network Action is "Add" and the Security Mode is "Personal" or "Enterprise" and the WPA Mode is WPA
   name: EncryptionWPA
   type: list
   list:

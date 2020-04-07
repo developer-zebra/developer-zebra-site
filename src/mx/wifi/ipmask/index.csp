@@ -7,7 +7,7 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Network Action is "Add a New Network" and "Use DHCP" box is unchecked
+  presentif: The Network Action is "Add" and "Use DHCP" box is unchecked
   name: IpMask
   type: string
 ---

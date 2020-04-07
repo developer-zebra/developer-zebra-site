@@ -6,7 +6,7 @@ order: 30
 mx: "4.2"
 devicetype: A,B
 parm:
-  presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS" or "PEAP-MSCHAPV2" or "EAP-TTLS-MSCHAP" or "EAP-FAST-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
+  presentif: The Network Action is "Add" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS" or "PEAP-MSCHAPV2" or "EAP-TTLS-MSCHAP" or "EAP-FAST-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
   name: MandatoryServerCertificate 
   pivotal: No
   type: string

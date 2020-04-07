@@ -17,7 +17,7 @@ When Key Type is Hex Key, then a Key, which is expressed as a sequence of hexade
 
 If WEP is not selected and Protect Key is false:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is not "WEP" and Protect Key is false
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is not "WEP" and Protect Key is false
 * Parm name: HexKeyClear
 * Description: Provide the hex key (64 hex chars) used by network
 * **Parm value input rules**: 
@@ -25,7 +25,7 @@ If WEP is not selected and Protect Key is false:
 	
 If WEP is not selected and Protect Key is true:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is not "WEP" and Protect Key is true
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is not "WEP" and Protect Key is true
 * Parm name: HexKeyEncrypted
 * Description: Provide the hex key (64 hex chars) used by network
 * **Parm value input rules**: 
@@ -34,7 +34,7 @@ If WEP is not selected and Protect Key is true:
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-40" and Protect Key is false
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-40" and Protect Key is false
 * Parm name: HexKeyWep40Clear
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * **Parm value input rules**: 
@@ -42,7 +42,7 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-40" and Protect Key is true
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-40" and Protect Key is true
 * Parm name: HexKeyWep40Encrypted
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * **Parm value input rules**: 
@@ -51,7 +51,7 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 	
 If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-104" and Protect Key is false
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-104" and Protect Key is false
 * Parm name: HexKeyWep104Clear
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * **Parm value input rules**: 
@@ -59,7 +59,7 @@ If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 
-* Settable if: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-104" and Protect Key is true
+* Settable if: The Network Action is "Add" and the Security Mode is "Personal" and the Key Type is "Hex Key" and the WPA Mode is "WEP" and the Encryption Type is "WEP-104" and Protect Key is true
 * Parm name: HexKeyWep104Encrypted
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * **Parm value input rules**: 

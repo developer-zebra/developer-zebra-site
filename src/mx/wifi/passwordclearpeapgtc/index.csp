@@ -5,6 +5,7 @@ type: parm
 order: 8
 mx: "9.1"
 devicetype: A
+info: For some devices, the Dynamic GTC feature requires purchase of a Mobility DNA Enterprise. 
 parm:
   presentif: The selected Authentication Code is "PEAP GTC" and Protect Password box is "Checked"
   pivotal: No

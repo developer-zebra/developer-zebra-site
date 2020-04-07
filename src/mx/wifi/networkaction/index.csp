@@ -19,7 +19,7 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: Add
-      description: This value will add a new profile with the profile settings specified.
+      description: This value adds a new network profile with the settings specified in the relevant network profile parameters.
     - code: 2
       mx: "4.2"
       devicetype: A,B

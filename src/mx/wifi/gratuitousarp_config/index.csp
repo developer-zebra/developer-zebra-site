@@ -5,6 +5,7 @@ type: parm
 order: 72
 mx: "8.4"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. 
 parm:
   pivotal: No
   name: Gratuitous_ARP

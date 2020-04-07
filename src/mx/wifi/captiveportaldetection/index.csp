@@ -5,7 +5,7 @@ type: parm
 order: 101
 mx: "7.0"
 devicetype: A
-info: This parameter is not compatible with the MC18.
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. This parameter is not compatible with the MC18.
 parm:
   pivotal: No
   name: CaptivePortalDetection

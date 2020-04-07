@@ -5,6 +5,7 @@ type: parm
 order: 70
 mx: "6.3"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. 
 parm:
   pivotal: No
   name: UseHotspotOptions

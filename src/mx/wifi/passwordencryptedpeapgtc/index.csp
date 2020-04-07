@@ -8,7 +8,7 @@ devicetype: A
 parm:
   presentif: The selected Authentication Code is "PEAP GTC" and Protect Password box is "Unchecked"
   pivotal: No
-  name: PasswordEncryptedPEAPGTC
+  name: PasswordClearPEAPGTC
   type: string
 ---
 

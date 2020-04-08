@@ -29,8 +29,10 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 	* TC52
 	* TC56
 	* TC57
+	* **TC70**
 	* TC70x
 	* TC72
+	* **TC75**
 	* TC75x
 	* TC77
 	* TC8000
@@ -49,8 +51,6 @@ For key-mapping options on Android devices not listed above, please see the [Ent
 	* MC36	
 	* PS20
 	* TC55
-	* TC70
-	* TC75
 
 For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmodemgr) (not supported by EMDK). 
 

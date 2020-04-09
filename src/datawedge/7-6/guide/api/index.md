@@ -176,7 +176,6 @@ automenu:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setconfig">Set Config</a>** - Create, update or replace a Profile and its settings.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setdisabledapplist">Set Disabled App List</a>** - Add, remove or update an app/activity from the list which prevents the use of DataWedge.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setreportingoptions">Set Reporting Options</a>** - Configure reporting options from importing databases and Profiles.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchsimulscanparams">Switch Simulscan Params</a>** - Temporarily update the Simulscan settings in the active Profile at runtime.<br />
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:16px">Data Capture:</b><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./enabledatawedge">Enable/Disable DataWedge</a>** - Enable/disable DataWedge on the device.<br />
@@ -187,3 +186,4 @@ automenu:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./softscantrigger">Soft Scan Trigger</a>** - Start, stop of toggle a software scanning trigger. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchscanner">Switch Scanner</a>** - Switch to a specific scanner at runtime to enable an optimal scanning device for the app, requirement or situation. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchscannerparams">Switch Scanner Params</a>** - Temporarily update the settings of the active Profile during runtime by passing one or more barcode, scanner and/or reader parameters as intent extras.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchsimulscanparams">Switch Simulscan Params</a>** - Temporarily update the Simulscan settings in the active Profile at runtime.<br />

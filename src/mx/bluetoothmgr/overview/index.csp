@@ -10,6 +10,13 @@ The Bluetooth Manager (BluetoothMgr) controls whether a device can pair with oth
 
 Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band that was originally intended as a replacement for serial communications cables. It has since been adopted as a standard for hands-free headsets, stereo audio, networking to PCs and connections for barcode scanners, medical equipment and other devices formerly using RS-232. 
 
+**`IMPORTANT:`** For some devices, the following bluetooth Manager parameters might require purchase of a Mobility DNA Enterprise License: 
+
+* AllowDiscoverability
+* AllowPairing
+* AllowSilentPairing
+* SilentPairingAction
+
 ### Main Functionality
 
 * Enable/Disable 

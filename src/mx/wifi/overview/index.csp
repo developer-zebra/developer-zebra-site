@@ -8,20 +8,29 @@ order: 0
 
 Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
 
-> **`IMPORTANT:`** For some devices, the following Wi-Fi parameters and/or options require purchase of a Mobility DNA Enterprise License: 
+**`IMPORTANT:`** For some devices, the following Wi-Fi parameters and/or options might require purchase of a Mobility DNA Enterprise License: 
 
 * 2.4GHzChannels
 * 5.0GHzChannels
-* 802.11w
 * 802.11v
+* 802.11w
+* Authentication (LEAP option)
+* Authentication (EAP-FAST-GTC option)
 * AutoTimeConfig
 * BandPreference
 * CallAdmissionControl
+* CaptivePortalDetection
 * CCKM_Config
 * EnableRestrictedSettingsUI
+* Gratuitous_ARP
+* Hotspot
 * Hotspot24GHz
 * Hotspot5GHz
+* PasswordClearPEAPGTC
+* PasswordEncryptedPEAPGTC
+* PasswordProtectEncryption
 * SubNetRoam
+* UseHotspotOptions
 * WMM-PS (PowerSave Option 4)
 
 ### Main Functionality

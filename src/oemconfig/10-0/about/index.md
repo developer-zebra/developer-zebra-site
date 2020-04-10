@@ -33,11 +33,11 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ## What's New in v10.0
 
-`IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig scemas starting with 9.3 include default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
+`IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig schema for version 10.0 includes default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
 ### Device Support
 
-* **Supports all Zebra running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
+* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
 
 ### New Features
 
@@ -46,25 +46,11 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * Support for A/B streaming of OsUpdate Actions in fotaStep configuration.
  * Support for Permission Access Configuration for an application in permissionAccessStep configuration.
  * Support for CSP Function Group Action in serviceAccessStep configuration. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps.
- * Support for Dual Sim Dual Standby Feature in wwanStep configuration.
+ * Support for Dual-SIM Dual Standby Feature in wwanStep configuration, which automatically selects which SIM card to use for cellular service based on preferences set in the Call, Data, Message and SIM subscription parameters.
+* Now displays SUCCESS/FAILURE results of Managed Configuration Actions.
+* Logging information sent to Google feedback channel is also now stored in logcat for off-line access. 
 
-* Now displays SUCCESS/FAILURE results of Managed Configuration Actions 
-* Logging information stores in logcat basic details of log info sent to Google feedback channel
-* Supports MX 10.0, adding the following features and enhancements:
-
-IMPORTANT: The MX features listed above are supported ONLY on devices with MX 10.0 (or later). 
-
-
-OLD OLD OLD
-
- * Applications can now be configured to handle background data on a per-app basis
- * Bluetooth now allows rules to be enforced based on Bluetooth MAC address 
- * GMS Configurations can now activate limited set of GMS apps 
- * GPRS Configurations now support APN protocol roaming 
- * Power Configurations can now control individual device wake-up sources such as buttons or keycodes
- * Audio Configurations now allow selection of whether the device plays a sound when a battery charger is connected
-
-`IMPORTANT:` Features listed above are supported ONLY on devices with MX 10.0 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+`IMPORTANT:` The MX features listed above are supported ONLY on devices with MX 10.0 or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
 For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section. 
 
@@ -88,7 +74,7 @@ Due to changes in the [Google managed configuration specification](https://devel
  * Bluetooth now allows rules to be enforced based on Bluetooth MAC address 
  * GMS Configurations can now activate limited set of GMS apps 
  * GPRS Configurations now support APN protocol roaming 
- * Power Configurations can now control individual device wake-up sources such as buttons or keycodes
+ * Power Configurations can now control individual device wake-up sources such as buttons or keyCodes
  * Audio Configurations now allow selection of whether the device plays a sound when a battery charger is connected
 
 `IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.3 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)

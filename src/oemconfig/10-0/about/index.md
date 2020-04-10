@@ -35,15 +35,25 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 `IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig scemas starting with 9.3 include default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
-OLD OLD OLD
 ### Device Support
 
-* **Supports all Zebra running Android 7.x Nougat, Android 8.x Oreo**.
-* **Supports devices available as of Dec. 31, 2019 running Android 9.x Pie**.  
+* **Supports all Zebra running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
 
 ### New Features
 
 * **Supports MX 10.0**, adding the following features and enhancements: 
+ * Enable/Disable “YES” button available for selection by a device user on the "Secure Start-up" dialog box after changing the device lock-screen password, PIN or swipe pattern in devadminStep configuration. If "YES" is pressed, the same password, PIN or pattern that protects access to the Android Launcher app also would be applied to protect the device start-up process, preventing the device from booting if restarted.
+ * Support for A/B streaming of OsUpdate Actions in fotaStep configuration.
+ * Support for Permission Access Configuration for an application in permissionAccessStep configuration.
+ * Support for CSP Function Group Action in serviceAccessStep configuration. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps.
+ * Support for Dual Sim Dual Standby Feature in wwanStep configuration.
+
+* Now displays SUCCESS/FAILURE results of Managed Configuration Actions 
+* Logging information stores in logcat basic details of log info sent to Google feedback channel
+* Supports MX 10.0, adding the following features and enhancements:
+
+IMPORTANT: The MX features listed above are supported ONLY on devices with MX 10.0 (or later). 
+
 
 OLD OLD OLD
 

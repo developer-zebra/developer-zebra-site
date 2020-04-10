@@ -33,7 +33,7 @@ This also renders inoperable secondary applications and services that rely on th
 * The ability to add or manage users on a device is prevented by GMS Restricted; any existing Google accounts are disabled. 
 * **<u>GMS Manager is supported only on SDM660-platform devices</u>, which includes (but is not limited to)**:
  * ET51
- * ET55
+ * ET56
  * L10
  * MC93
  * PS20

@@ -17,8 +17,9 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
-## New in v2.5
+## New in v2.6
 
+OLD OLD OLD
 ### End of Support
 
 * **The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
@@ -107,6 +108,95 @@ External Vibrator Cable (CBL-NGWT- HDVBAP-01)
 ----- 
 
 ## Version History
+
+### Added in v2.5
+
+#### End of Support
+
+* **The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
+* **The** `remove()` **method of the NativeTabbar API is no longer supported**.  
+* **Support ends for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
+
+* **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued when Android 10 Q support begins. 
+
+#### Device Support
+
+##### Mobile Devices
+
+**<u>Android 9.x Pie</u>** newly supported devices: 
+
+* **PS20**
+* **TC52**
+* **TC72**
+
+**<u>Android 8.x Oreo</u>** newly supported devices: 
+
+* **EC30**
+* **ET51**
+* **ET56**
+* **L10**
+* **VC83**
+
+##### Scanners
+* **RS5100** connected to devices running Android 7.x Nougat and higher 
+* **SE4750DPW** connected to devices running Android 7.x Nougat and higher 
+* **SE4770** connected to MC33xx devices running Android 8.x Oreo and higher
+
+##### Accessories
+External Vibrator Cable (CBL-NGWT- HDVBAP-01) 
+
+**<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
+
+-----
+
+#### New Features/Guides
+
+##### New for All Apps
+* **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
+* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
+* **The [&lt;ShowLicenseConfirmation&gt; tag](../configreference/#showlicenseconfirmation) is now supported on Android** devices (formerly Windows Mobile/CE-only), which toggles display of the “Licensed to…” dialog at launch. 
+* **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
+* **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#disablettsduringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
+* The new TTS disablement feature is configurable using the **new [&lt;DelayforTTS&gt; tag](../configreference/#delayfortts)**.
+* **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
+
+##### New for SAP Apps
+
+* **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
+* **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
+
+-----
+
+#### New/Enhanced APIs
+**<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 
+* Read operations
+* Write operations
+* Setting serial port parameters such as speed, parity, data bits, etc.  
+
+**<u>An updated [Barcode API](../../api/barcode)</u>** adds the following new properties:
+* barcodeCount 
+* instantReporting 
+* SceneDetectionQualifier  
+* dotCode 
+ * dotCodeInverse 
+ * dotCodeMirror
+* gridmatrix
+ * gridmatrixinverse
+ * gridmatrixmirror
+* i2of5febraban 
+* gs1qrcode 
+* gs1datamatrix 
+* decodeScreenNotification 
+* decodeScreenNotificationTime 
+* decodeScreenTranslucencyLevel 
+* zoom 
+* signatureImageBitsPerPixel 
+* signatureImageFormat 
+* illuminationBrightness 
+* aimType
+ * PRESENTATION
+
+-----
 
 ### Added in v2.0
 

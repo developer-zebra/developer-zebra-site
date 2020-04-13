@@ -13,7 +13,7 @@ Enterprise Browser offers several options for migrating apps from different oper
 
 ### From EB 1.8 and Older
 
-Enterprise Browser 2.0 (and higher) for Android supports the HTML5 ViewPort metatag and changes the way licensing is implemented. Apps running on older versions of EB might render improperly or display unexpected client certificate requests when launched with EB 2.x.  
+Enterprise Browser 2.0 (and later) for Android supports the HTML5 ViewPort metatag and changes the way licensing is implemented. Apps running on older versions of EB might render improperly or display unexpected client certificate requests when launched with EB 2.x.  
 
 The [Backward Compatibility Guide](../backward) explains the minor changes that might be required to solve these issues. 
 
@@ -51,7 +51,7 @@ Learn more [about Enterprise Browser](../about).
 
 ### From Windows Mobile/CE
 
-Enterprise Browser 2.5 (and higher) supports meta tag filtering, which can be used to block meta tags or meta-tag properties from being applied if they're not supported on Android devices. Meta tag filtering supports whitelisting (allowing) and blacklisting (blocking) of meta tags as well as individual meta tag properties and is configured in the `Config.xml` file. 
+Enterprise Browser 2.5 (and later) supports meta tag filtering, which can be used to block meta tags or meta-tag properties from being applied if they're not supported on Android devices. Meta tag filtering supports whitelisting (allowing) and blacklisting (blocking) of meta tags as well as individual meta tag properties and is configured in the `Config.xml` file. 
 
 Go to the [meta tag filtering section](../configreference/#metatagfiltering) of the `Config.xml` Reference. 
 

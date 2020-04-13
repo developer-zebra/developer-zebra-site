@@ -7,11 +7,11 @@ layout: guide.html
 
 ## Overview
 
-Apps made with Enterprise Browser 1.7 (and higher) for Android can be accompanied by a series of custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
+Apps made with Enterprise Browser 1.7 (and later) for Android can be accompanied by a series of custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
 
 The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 50 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
 
-> **NOTE**: Enterprise Browser 2.5 (and higher) supports key layouts made with Zebra's [Enterprise Keyboard Designer (EKD)](/ekd), a Windows-based utility for easily creating custom key layouts using point-and-click. [Get the latest EB version](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). 
+> **NOTE**: Enterprise Browser 2.5 (and later) supports key layouts made with Zebra's [Enterprise Keyboard Designer (EKD)](/ekd), a Windows-based utility for easily creating custom key layouts using point-and-click. [Get the latest EB version](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). 
 
 -----
 

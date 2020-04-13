@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB browser tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
+Enterprise Browser 2.5 (and later) supports the ability to run multiple EB browser tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
 
 > Multi-session capabilities can be invoked as tabs or shortcuts, and with its own behaviors. <br> 
 **The main behaviors common to both**:<br>

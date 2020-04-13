@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview
 The NativeTabbar methods allow multiple instances of the webview to appear in separate tabs. On Android, the tabs are true Native Tabbar controls, giving the application a native look and feel. On Windows Mobile/CE there are no visible tabs. An application can employ either a Tabbar or a Toolbar, but should not attempt to do both simultaneously. An app can switch between tabs programatically, as shown in the [Nativetabbar Tutorial](../../tutorial/nativetabbar). 
 
-#### `IMPORTANT:` In EB 2.5 and higher, the `remove()` method is no longer available.
+#### `IMPORTANT:` In EB 2.5 and later, the `remove()` method is no longer available.
 
 -----
 

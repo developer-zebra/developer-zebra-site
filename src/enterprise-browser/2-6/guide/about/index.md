@@ -19,9 +19,13 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.6
 
+A new companion utility for Enterprise Browser simplifies app modifications when using DOM injection. [Enterprise Application Configurator](../eac) is a Windows-based GUI tool that easily maps Zebra-device input methods such as scanner and voice to any EB input field or button. 
+
+
 OLD OLD OLD
 ### End of Support
 
+OLD OLD OLD
 * **The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
 * **The** `remove()` **method of the NativeTabbar API is no longer supported**.  
 * **Support ends for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
@@ -32,6 +36,7 @@ OLD OLD OLD
 
 #### Mobile Devices
 
+OLD OLD OLD
 **<u>Android 9.x Pie</u>** newly supported devices: 
 
 * **PS20**
@@ -47,6 +52,8 @@ OLD OLD OLD
 * **VC83**
 
 #### Scanners
+
+OLD OLD OLD
 * **RS5100** connected to devices running Android 7.x Nougat and higher 
 * **SE4750DPW** connected to devices running Android 7.x Nougat and higher 
 * **SE4770** connected to MC33xx devices running Android 8.x Oreo and higher
@@ -60,6 +67,7 @@ External Vibrator Cable (CBL-NGWT- HDVBAP-01)
 
 ### New Features/Guides
 
+OLD OLD OLD
 #### New for All Apps
 * **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
 * **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
@@ -71,10 +79,13 @@ External Vibrator Cable (CBL-NGWT- HDVBAP-01)
 
 #### New for SAP Apps
 
+OLD OLD OLD
 * **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
 * **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
 
 -----
+
+OLD OLD OLD
 
 ### New/Enhanced APIs
 **<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 

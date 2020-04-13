@@ -1,6 +1,6 @@
 ---
 title: API Compatibility Matrix
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 layout: ebmatrix.html
 ---

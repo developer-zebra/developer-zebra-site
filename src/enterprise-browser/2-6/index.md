@@ -36,5 +36,5 @@ menu:
     - icon: fa fa-search
       url: /enterprise-browser/2-5/search
 product: Enterprise Browser
-productversion: '2.5'
+productversion: '2.6'
 ---

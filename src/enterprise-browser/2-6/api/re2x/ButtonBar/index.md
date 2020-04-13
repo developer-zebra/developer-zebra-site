@@ -120,6 +120,6 @@ automenu:
           url: buttonbar49
         - title: ButtonBar50
           url: buttonbar50		  
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 ---

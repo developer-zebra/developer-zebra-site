@@ -11,6 +11,6 @@ automenu:
         - title: DIM Injection for Windows 
           url: ../dominjectionwin
 product: Enterprise Browser
-productversion: '2.5'
+productversion: '2.6'
 ---
 

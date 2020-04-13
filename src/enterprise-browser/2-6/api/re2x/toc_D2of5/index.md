@@ -24,7 +24,7 @@ automenu:
           url: ../d2of5MinLength
         - title: D2of5redundancy
           url: ../d2of5Redundancy
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

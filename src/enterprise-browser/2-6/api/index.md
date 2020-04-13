@@ -311,5 +311,5 @@ automenu:
         - title: ZoomTextButton
           url: pb3x/zoomtextbutton
 product: Enterprise Browser
-productversion: '2.5'
+productversion: '2.6'
 ---

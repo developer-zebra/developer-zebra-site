@@ -1,6 +1,6 @@
 ---
 title: ButtonBar25 Module
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

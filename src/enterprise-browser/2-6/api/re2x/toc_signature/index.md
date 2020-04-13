@@ -24,7 +24,7 @@ automenu:
           url: ../signatureImageWidth
         - title: SignatureImageHeight
           url: ../signatureImageHeight
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

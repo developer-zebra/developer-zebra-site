@@ -1,6 +1,6 @@
 ---
 title: CeODAX.Select Method
-productversion: '2.5'
+productversion: '2.6'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

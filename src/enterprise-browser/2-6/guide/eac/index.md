@@ -7,9 +7,11 @@ layout: guide.html
 
 ## Overview
 
+
+### `SHORTEN:` 
 Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies the mapping of EB input fields or buttons with Zebra device hardware and value-adds such as scanners, printers, keyboards and voice I/O) through DOM injection. This Windows-based solution implements an easy-to-use GUI and does not require changes to EB application source code or access to a target’s application server. EAC is designed to help companies that use SAP ITS Mobile and similar solutions that limit access to server-side applications. 
 
-EAC runs within Google Chrome on the device (hosted by the AppConfigurationUtility.apk) and works in conjunction with the Windows desktop tool to modify EB apps at runtime. Once desired mappings are created and tested, EAC outputs the required config files for deployment to devices, where Enterprise Browser consumes the files and immediately enables the mapped functionalities.
+EAC runs within Google Chrome on the device (hosted by the `AppConfigurationUtility.apk`) and works in conjunction with the Windows desktop tool to modify EB apps at runtime. Once desired mappings are created and tested, EAC outputs the required config files for deployment to devices, where Enterprise Browser consumes the files and immediately enables the mapped functionalities.
 
 Enterprise Application Configurator supports input from scanner, keyboard and voice, and outputs to voice or printer with custom data formatting capabilities. Requires EB 2.6 or later. 
 

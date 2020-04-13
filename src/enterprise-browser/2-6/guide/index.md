@@ -19,8 +19,8 @@ automenu:
         - title: Config.xml Reference
           url: configreference
         - title: Enterprise App Configurator (for DOM Injection)
-          url: OndeviceConfig
-        - title: On-device Configuration0
+          url: eac
+        - title: On-device Configuration
           url: OndeviceConfig
         - title: Shortcut Creator Utility
           url: ShortcutCreator

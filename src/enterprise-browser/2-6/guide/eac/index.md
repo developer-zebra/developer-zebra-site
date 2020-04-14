@@ -26,12 +26,45 @@ Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&g
 
 ### Requirements
 
+* Computer running Windows 8 or Windows 10
+* Zebra device that supports Enterprise Browser<br>
+**<u>See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for supported devices.
+* EB 2.6 (or later) installed on device
+* Computer and device on the same IP subnet
+
+
+1.	AppConfigurationUtility.apk: This a screen streaming utility Service APK. First, we need to install it one the device. It handles all screen mirroring operation on desktop-web browser.
+2.	EnterpriseBrowser.apk: This APK supplements the above one. So, we need to install this also. Once installed EnterpriseBrowser.apk, we need to add below code in config.xml (located at /sdcard/Android/data/com.symbol.enterprisebrowser/) and relaunch.<br>
+
+		:::xml
+		<DOMInjectionUtility>				     
+			<appConfigEnabled value="1"/>
+		</DOMInjectionUtility>
+[screenshot]
+
+3.	Once both APKs are installed. Launch AppConfigurationUtility app  and allow the  screen Stream permission. Upon re-launch you will get the IP-address on notification bar. 
+4.	Now you need to hit the same IP on the desktop browser (NOTE: make sure device and desktop are connected with the same Wi-Fi network and EnterpriseBrowser application is in running mode).<br>
+***Note: Only Google Chrome browser is supported***.
+5.	Once everything above is done correctly you will be able to see below screen on your web browser upon hitting the mention IP with port number
+6.	Now you are ready to map zebra values adds by using this tool.
+7.	Select one of the options from the radio box (details are in next page) and start the training.
+8.	Later you can download the configuration file, after you are done with training.
+9.	This configuration file can be pushed on number of devices at the below location to be consumed it by EnterpriseBrowser. (/sdcard/Android/data/com.symbol.enterprisebrowser/).
+
+***Note: This file should not be renamed. It should be exactly `appconfiguration.txt`***.
+
+10.	In order to take this training effect, we need to push below modified tag (value=”2” means production) in config.xml (<appConfigEnabled value=”2”/>) and relaunch EnterpriseBrowser application.
+
+Note: `AppconfigurationUtility.apk` must be installed only on device, we are going to use for      training. Once training is completed and configuration file is generated. This must be uninstalled.
+
+`Add link to dom page`. 
+
 To use DOM injection, **ALL of the following must be true**:
 
 * The app being injected is running on Enterprise Browser 1.3 (or higher).
 * A `tags` file containing elements to be injected has been created and pushed to the target device.
 * The path to the `tags` file is specified in the app's `Config.xml` file (see [Step 2](#step2updateconfigxml)).
-* The target device is running Android with the stock webkit. 
+* The target device is running Android with the stock WebKit. 
 
 ### Supports injection of:
 
@@ -49,6 +82,13 @@ To use DOM injection, **ALL of the following must be true**:
 > **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
 -----
+
+DO WE NEED A STEP-BY-STEP? not sure
+
+list from input doc:
+
+
+
 
 ## Step 1 - Prepare 'Tags' File
 

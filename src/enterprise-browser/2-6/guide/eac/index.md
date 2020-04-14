@@ -26,27 +26,42 @@ Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&g
 
 ### Requirements
 
-* Computer running Windows 8 or Windows 10
+* Computer running MacOS, Windows 8 or Windows 10 with Google Chrome installed
 * Zebra device that supports Enterprise Browser<br>
-**<u>See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for supported devices.
+**<u>See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for supported devices
 * EB 2.6 (or later) installed on device
 * Computer and device on the same IP subnet
+* `AppConfigurationUtility.apk` screen streaming service ([download]())
 
 ### Installation
 
-1.	AppConfigurationUtility.apk: This a screen streaming utility Service APK. First, we need to install it one the device. It handles all screen mirroring operation on desktop-web browser.
-2.	EnterpriseBrowser.apk: This APK supplements the above one. So, we need to install this also. Once installed EnterpriseBrowser.apk, we need to add below code in config.xml (located at /sdcard/Android/data/com.symbol.enterprisebrowser/) and relaunch.<br>
+1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** when prompted to grant permission to capture the screen. 
+2. Add the node below code to the app's `Config.xml` file:<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
 			<appConfigEnabled value="1"/>
 		</DOMInjectionUtility>
-[screenshot]
+		...
+		<JSLibraries>
 
-3.	Once both APKs are installed. Launch AppConfigurationUtility app  and allow the  screen Stream permission. Upon re-launch you will get the IP-address on notification bar. 
-4.	Now you need to hit the same IP on the desktop browser (NOTE: make sure device and desktop are connected with the same Wi-Fi network and EnterpriseBrowser application is in running mode).<br>
-***Note: Only Google Chrome browser is supported***.
-5.	Once everything above is done correctly you will be able to see below screen on your web browser upon hitting the mention IP with port number
+3. Push the modified `Config.xml` file to the following location on the device:<br>
+  `/sdcard/Android/data/com.symbol.enterprisebrowser/` <br>
+4. Launch Enterprise Browser on the device. 
+5. Pull down the Notification bar on the device to obtain the IP address for the screen stream:<br>
+ <img alt="" style="height:350px" src="eb26-01.png"/>
+ _Click image to enlarge; ESC to exit_.
+ <br>
+6. On the computer running Chrome, enter the IP address and port number into a new browser window. After a moment, a splash page appears with a section similar to the image below prompting for the EB app type:<br>  
+ <img alt="" style="height:100px" src="eb26_09.png"/>
+ _Click image to enlarge; ESC to exit_.
+ <br>
+7. In a Chrome browser window, type the IP address and port number obtained in Step 6 into the address bar. **Note: Only Google Chrome is supported**.
+8. After a moment, a screen similar to the image below is shown: 
+ <img alt="" style="height:450px" src="eb26-02.png"/>
+ _Click image to enlarge; ESC to exit_.
+ <br>
+
 6.	Now you are ready to map zebra values adds by using this tool.
 7.	Select one of the options from the radio box (details are in next page) and start the training.
 8.	Later you can download the configuration file, after you are done with training.
@@ -90,24 +105,43 @@ list from input doc:
 
 ### Using the Tool
 
+This tool presents a two-panel display with the target app on the left and the available configuration actions on the right as in the image below. 
+
+<img alt="" style="height:219px" src="eb26-02.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+
 The basic work of this tool is, to enable zebra values adds like, scanner, printer, voice-input or voice-outputs in a webpage without doing the server-side modification in the page. This tool provides an interactive webpage to add those functionalities on any field on the page.
 
 As we want to achieve this without doing any modification to server-side. We will train elements of the pages using this tool. 
 
 So, to use this tool, we need to understand two major things
-●	For any webpage running on browser, either the 
-•	URL is unique (e.g. https://abc.com/contacts) or 
-•	URL is not unique but just session ids are getting appended on URLs (e.g. sap URLs).
-●	So, If URL is unique, we need to select the No training on the tool.
-●	If URL is not unique, we need to Yes(refer image on previous page)
 
-<img alt="" style="height:219px" src="eb26-01.png"/>
+* For any EB app running on browser, either the
+ * The URL is unique (e.g. https://abc.com/contacts) or 
+ * URL is not unique but just session ids are getting appended on URLs (e.g. sap URLs).
+
+If URL is unique, we need to select the No training on the tool.
+
+If URL is not unique, we need to Yes(refer image on previous page)
+
+Steps to run the tool:
+
+1.	Run the EnterpriseBrowser on the device and make sure inside Config.xml below code is enabled. If value is other than 1, it will not work.
+
+		:::xml
+		<appConfigEnabled value=”1”/>
+
+2.	Select appropriate configuration  type in the desktop tool.
+3.	Now you can see the live screen of the tool. Interaction will also be enabled now on the device screen area. But still it will not enable the configurations section on the right.
+4.	Next step is to focus on any input field or button , and now it will enable the tool to map that field with zebra capabilities.
+5.	Keep on mapping the field as per need and , when done, you can download the configuration file.(appconfiguration.txt) 
+
+<img alt="" style="height:219px" src="eb26_10.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-<img alt="" style="height:219px" src="eb26-02.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
 <img alt="" style="height:219px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>

@@ -52,20 +52,19 @@ Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&g
  <img alt="" style="height:350px" src="eb26-01.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-6. On the computer running Chrome, enter the IP address and port number into a new browser window. After a moment, a splash page appears with a section similar to the image below prompting for the EB app type:<br>  
+6. On the computer running Chrome, enter the IP address and port number into a new browser window.  **Note: Only Google Chrome is supported**. After a moment, a splash page appears with a section similar to the image below prompting for the EB app type:<br>  
  <img alt="" style="height:100px" src="eb26_09.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-7. In a Chrome browser window, type the IP address and port number obtained in Step 6 into the address bar. **Note: Only Google Chrome is supported**.
-8. After a moment, a screen similar to the image below is shown: 
+7. After a moment, a screen similar to the image below is shown: 
  <img alt="" style="height:450px" src="eb26-02.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
 
-6.	Now you are ready to map zebra values adds by using this tool.
-7.	Select one of the options from the radio box (details are in next page) and start the training.
-8.	Later you can download the configuration file, after you are done with training.
-9.	This configuration file can be pushed on number of devices at the below location to be consumed it by EnterpriseBrowser. (/sdcard/Android/data/com.symbol.enterprisebrowser/).
+8.	Now you are ready to map zebra values adds by using this tool.
+9.	Select one of the options from the radio box (details are in next page) and start the training.
+10.	Later you can download the configuration file, after you are done with training.
+11.	This configuration file can be pushed on number of devices at the below location to be consumed it by EnterpriseBrowser. (/sdcard/Android/data/com.symbol.enterprisebrowser/).
 
 ***Note: This file should not be renamed. It should be exactly `appconfiguration.txt`***.
 

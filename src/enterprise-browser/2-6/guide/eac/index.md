@@ -7,58 +7,45 @@ layout: guide.html
 
 ## Overview
 
+Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies [DOM injection](../dominjectionandroid), which can add capabilities to a running EB app without changing the source code. This tool can map EB fields or buttons to Zebra devices such as scanners, printers and keyboards and or can voice-enable fields for spoken input and/or output. 
 
-### `SHORTEN:` 
-Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies DOM injection implementation. 
-
-the mapping of EB input fields or buttons with Zebra device hardware and value-adds such as scanners, printers, keyboards and voice I/O) through DOM injection. This Windows-based solution implements an easy-to-use GUI and does not require changes to EB application source code or access to a target’s application server. EAC is designed to help companies that use SAP ITS Mobile and similar solutions that limit access to server-side applications. 
-
-EAC runs within Google Chrome on the device (hosted by the `AppConfigurationUtility.apk`) and works in conjunction with the Windows desktop tool to modify EB apps at runtime. Once desired mappings are created and tested, EAC outputs the required config files for deployment to devices, where Enterprise Browser consumes the files and immediately enables the mapped functionalities.
-
-Enterprise Application Configurator supports input from scanner, keyboard and voice, and outputs to voice or printer with custom data formatting capabilities. Requires EB 2.6 or later. 
-
-
-
-OLD OLD OLD (use some, add links for others)
-Apps running on Enterprise Browser 1.3 and higher support DOM injection, which inserts CSS, JavaScript and/or meta tags into a running app without modifying the underlying app. This permits features, capabilities and even the look and feel of part or all of any app to be modified or customized at runtime **<u>without changing the original source code</u>**. 
-
-This can be useful, for example, to inject EB JavaScript libraries or other business logic into an SAP ITSmobile or other app for which there's no way to edit the source. DOM injection occurs after the page is completely loaded, ensuring that page modifications are applied only after [the DOM](../../../1-8/guide/dominjection/#whatisthedom) is ready for them.
-
-Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&gt; tag](../configreference/#dominjection)** of the app's `Config.xml` file. No special licensing is required. 
+EAC is a browser-based solution that presents an easy-to-use GUI for creating DIM injection configuration files and does not require changes to the EB app's source code or access to a target’s application server. EAC is designed to help companies that use SAP ITSmobile and similar solutions easily modify legacy apps. 
 
 ### Requirements
 
-* Computer running MacOS, Windows 8 or Windows 10 with Google Chrome installed
+* Computer running Windows 8 or Windows 10 with Google Chrome installed
 * Zebra device that supports Enterprise Browser<br>
 **<u>See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for supported devices
 * EB 2.6 (or later) installed on device
 * Computer and device on the same IP subnet
-* `AppConfigurationUtility.apk` screen streaming service ([download]())
+* `AppConfigurationUtility.apk` screen streaming service `([download]()) LINK TO COME `
 
 ### Installation
 
-1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** when prompted to grant permission to capture the screen. 
-2. Add the node below code to the app's `Config.xml` file:<br>
+1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** to grant permission to capture the screen. 
+2. **Add the node below code to the app's** `Config.xml` **file** just before the &lt;Applications&gt; node:<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
 			<appConfigEnabled value="1"/>
 		</DOMInjectionUtility>
-		...
-		<JSLibraries>
 
-3. Push the modified `Config.xml` file to the following location on the device:<br>
+		<Applications>
+			<Application>
+			...
+
+3. **Push the modified** `Config.xml` **file to the device** in the following location:<br>
   `/sdcard/Android/data/com.symbol.enterprisebrowser/` <br>
-4. Launch Enterprise Browser on the device. 
-5. Pull down the Notification bar on the device to obtain the IP address for the screen stream:<br>
+4. **Launch Enterprise Browser** on the device. 
+5. **Pull down the Notification bar on the device** to obtain the IP address for the screen stream:<br>
  <img alt="" style="height:350px" src="eb26-01.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-6. On the computer running Chrome, enter the IP address and port number into a new browser window.  **Note: Only Google Chrome is supported**. After a moment, a splash page appears with a section similar to the image below prompting for the EB app type:<br>  
+6. **On the Windows computer running Chrome, enter the IP address and port number** obtained in Step 5 into a new browser window. **Note: Only Google Chrome is supported**. After a moment, a splash page appears with a section similar to the image below. **Enter the EB app type**:<br>  
  <img alt="" style="height:100px" src="eb26_09.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-7. After a moment, a screen similar to the image below is shown: 
+7. After a moment, the browser window displays the EB app and the configurator similar to the image below: 
  <img alt="" style="height:450px" src="eb26-02.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>

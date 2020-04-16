@@ -9,9 +9,11 @@ layout: guide.html
 
 Apps running on Enterprise Browser 1.3 and higher support DOM injection, which inserts CSS, JavaScript and/or meta tags into a running app without modifying the underlying app. This permits features, capabilities and even the look and feel of part or all of any app to be modified or customized at runtime **<u>without changing the original source code</u>**. 
 
-This can be useful, for example, to inject EB JavaScript libraries or other business logic into an SAP ITSmobile or other app for which there's no way to edit the source. DOM injection occurs after the page is completely loaded, ensuring that page modifications are applied only after [the DOM](../../../latest/guide/dominjectionandroid/#whatisthedom) is ready for them.
+This can be useful, for example, to inject EB JavaScript libraries or other business logic into an SAP ITSmobile or other app for which there's no way to edit the source. DOM injection occurs after the page is completely loaded, ensuring that page modifications are applied only after [the DOM](../dominjectionandroid/#whatisthedom) is ready for them.
 
 Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&gt; tag](../configreference/#dominjection)** of the app's `Config.xml` file. No special licensing is required. 
+
+> **NOTE**: Enterprise Browser 2.6 and later supports [Enterprise Application Configurator](../eac), an EB companion utility that simplifies DOM injection implementation.   
 
 ### Requirements
 
@@ -121,7 +123,7 @@ See [more code examples](#examples).
 
 The `pagecontent` tag is used for DOM injection into navigated pages only when a specific string or HTML element is present on the page. This allows the developer to set specific conditions under which an action is executed, for example to run a login script only on pages that contain a login prompt. 
 
-Attributes of DOM Injection tags: 
+Attributes of DOM injection tags: 
 
 **Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag is injected**. 
 

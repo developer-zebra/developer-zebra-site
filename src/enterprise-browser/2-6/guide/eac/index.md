@@ -48,7 +48,7 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
  _Click image to enlarge; ESC to exit_.
  <br>
 6. **In Chrome on the Windows computer, enter the IP address and port number** obtained in Step 5 into a new browser window.<br>
- **NOTE: EAC supports only Google Chrome**.<br> 
+ **NOTE: Supports only Google Chrome** running on Windows 8 or 10.<br> 
  After a moment, a splash page appears with a section similar to the image below. **Enter the EB app type**:<br>  
  <img alt="" style="height:100px" src="eb26_09.png"/>
  _Click image to enlarge; ESC to exit_.
@@ -60,6 +60,8 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 #### The tool is now ready to accept field mappings for the EB app.  
 
+>**IMPORTANT**: The `AppConfigurationUtility.apk` app must be uninstalled to run EB apps in a production environment on that device. 
+
 -----
 
 ## Step 2 - Map App to Functions 
@@ -68,7 +70,7 @@ DOM injection works by inserting CSS, JavaScript and/or meta tags into a running
 
 EAC is ready to use when its two-panel display appears in the workstation's browser similar to the image below. The process begins by clicking on a field in the left-hand app window and assigning it an input or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
 
-<img alt="" style="height:219px" src="eb26-02.png"/>
+<img alt="" style="height:450px" src="eb26-02.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
@@ -83,20 +85,114 @@ _Click image to enlarge; ESC to exit_.
  `IMPORTANT:` DO NOT RENAME THIS FILE. 
 5. Push the file to the following location on a different device:<br>
  `/sdcard/Android/data/com.symbol.enterprisebrowser/`
-6. Test the app and its new functions. 
-7. Repeat Steps 1&nsash;6 until the app performs as desired. 
+6. **Add the node below code to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
+
+		:::xml
+		<DOMInjectionUtility>				     
+			<appConfigEnabled value="2"/> 
+		</DOMInjectionUtility>
+
+		<Applications>
+			<Application>
+			...
+7. Test the app and its new functions. 
+8. Repeat Steps 1&ndash;7 until the app performs as desired. 
+
+>**IMPORTANT**: The `AppConfigurationUtility.apk` app must be uninstalled to run EB apps in a production environment on that device. 
 
 #### The app and DOM injection enhancements file are now ready for deployment.  
 
 -----
 
-## Step 3 - 
+## Step 3 - Set Inputs and Outputs
 
-9.	Select one of the options from the radio box (details are in next page) and start the training.
-10.	Later you can download the configuration file, after you are done with training.
-11.	This configuration file can be pushed on number of devices at the below location to be consumed it by EnterpriseBrowser. (/sdcard/Android/data/com.symbol.enterprisebrowser/).
+### Scanner
 
-***Note: This file should not be renamed. It should be exactly `appconfiguration.txt`***.
+This configuration allows to map scanner configuration to any input area. Which mean, if we map this configuration to any input field, scanner will be enabled automatically when that input field will be focused. Now upon scan, data will be fed in the field.
+
+Currently we are supporting basic configurations of scanner in the tool. Like, scanner type (camera or 2D imager), decoder types (code128, code 39 etc.) . We can find all such properties on tool upon selecting the scanner check box.  
+
+[scanner input screenshot]
+
+Note: in order to make it work. Make sure to have below configuration in EB `Config.xml`.
+
+	<usedwforscanning value="0"/>
+
+
+### Voice Input
+
+This configuration allows to map voice input configuration to any input area. Which mean, if we map this configuration to any input field, voice input will be enabled automatically when that input field will be focused. Now upon user utterance of word (user voice), data will be fed in the field.
+
+
+**Note**: Mapping any feature to input field will only work if input type =”text”, “password” .
+
+It will not work for 
+
+	<textarea />
+
+Currently we are supporting basic configurations of voice input in the tool. Like, continuous mode (if we want continuous input from user then check the box. If we uncheck this box, it will just take the first input from user and voice recognition will be stopped), and language. We can set language from list of supported language from android. e.g. “en_us”.
+
+[voice input screenshot]
+
+Note: in order to make it work. Make sure to have below configuration in EB config.xml.
+
+	<asrenabled value="1"/>
+
+### Voice Output 
+
+This configuration allows to map voice output configuration to any input area. Which mean, if we map this configuration to any input field, voice prompt will be heard automatically when that input field will be focused. For example, “Speak product number”.
+
+Currently we are supporting basic configurations of voice output in the tool. Like voice text, pitch of the utterance, volume, rate and language. We can set language from list of supported language from android. e.g. “en_us”.
+
+***Note: Make sure you are not using any double- inverted commas(“) or single inverted comma(‘)  in the voice text area.Pitch, volume and rate should be float value***.
+
+[voice output screen]
+
+Note: in order to make it work. Make sure to have below configuration in EB config.xml.
+
+	<ttsenabled value="1"/>
+
+### Data Formatting
+
+This configuration allows to map voice input formatting to any input area. Which mean, if we map this configuration to any input field, cursor will automatically auto enter or auto enter to next field, when that input field gets keystroke data. 
+
+***Note : This features will be observed only when keystroke input is fed in the input field. i.e. Auto Tab and Auto Enter only work when you map the input configuration (voice input,scanner) along with data formatting***.
+
+[data formatting input screen]
+
+### Keyboard
+
+This configuration allows to map specific keyboard to any input area. Which mean, if we map this configuration to any input field, those special kinds of keyboard will pop up to get input, when the input field will be focused. 
+
+For example, we can select function key layout for one field while numeric keyboard for other input. We can map it accordingly. We can even disable keyboard, if we toggle the enabled switch to disabled.
+
+Note: in order to make it work. Make sure that Enterprise keyboard from zebra is installed in the device and custom layouts are pushed in enterprise directory.
+So, *Layouts.zip file must be pushed in ‘/enterprise/device/settings/ekb/config/’ directory.(check more details on how to use custom layouts in EKB in EKD documentation)*.
+
+Once above thing is correctly done, we will get all layouts listed in the tool, and we can select the desired layout.
+
+[keyboard input screen]
+
+### Map a Printer                      
+We can also configure a button to print using zebra printers.  Above picture shows, how can we select a button and then add printer on it.
+***Note: Printer functionality should be mapped preferably with buttons. 
+***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen.
+
+[printer screen]
+
+This tool supports all kind of printers i.e. bluetooth, wifi and USB. In order to add Bluetooth, printer, we must select printerType as Bluetooth and need to add mac number of Bluetooth printer in IP/Mac field. IP address must be feeded, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
+***Note:  In order to select any button (and prevent the actual work of the button) to map printer, we need to double tap it***.
+
+      '^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
+
+***Note: Make sure you are not using any double- inverted commas(“) in the tool. For example your id must be with single inverted comma as shown above.
+We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement***.
+
+Note: If button is performing any other task, then while training we need to double click it to prevent its original action, so that we will be able to map printer functionalities on them.
+
+If button is navigating current page to some other page on its click, then in production environment the behavior of this functionality is unknown. Hence, we should prefer using buttons that does not navigates or changes its web page.
+
+
 
 10.	In order to take this training effect, we need to push below modified tag (value=”2” means production) in config.xml (`<appConfigEnabled value=”2”/>`) and relaunch EnterpriseBrowser application.
 

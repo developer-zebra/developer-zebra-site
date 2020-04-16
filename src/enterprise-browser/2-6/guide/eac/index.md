@@ -26,10 +26,10 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 ## Step 1 - Install and Set up
 
-##### To set up Enterprise Application Configurator: 
+#### To set up Enterprise Application Configurator: 
 
 1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** to grant permission to capture the screen. 
-2. **Add the node below code to the app's** `Config.xml` **file** just before the &lt;Applications&gt; node:<br>
+2. **Add the node below code to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
@@ -47,21 +47,24 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
  <img alt="" style="height:350px" src="eb26-01.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-6. **On the Windows computer running Chrome, enter the IP address and port number** obtained in Step 5 into a new browser window. **Note: Only Google Chrome is supported**. After a moment, a splash page appears with a section similar to the image below. **Enter the EB app type**:<br>  
+6. **In Chrome on the Windows computer, enter the IP address and port number** obtained in Step 5 into a new browser window.<br>
+ **NOTE: EAC supports only Google Chrome**.<br> 
+ After a moment, a splash page appears with a section similar to the image below. **Enter the EB app type**:<br>  
  <img alt="" style="height:100px" src="eb26_09.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-7. After a moment, the browser window displays the EB app and the configurator similar to the image below: 
+7. After a moment, the browser window displays the EB app and configuration options similar to the image below: 
  <img alt="" style="height:450px" src="eb26-02.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
 
-##### The tool is now ready to accept field mappings for the EB app.  
+#### The tool is now ready to accept field mappings for the EB app.  
 
 -----
 
-## II. Map App to Functions 
-DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving it in a file. Once that file is pushed to the target device, the desired functionality is available the next time the EB app is launched. 
+## Step 2 - Map App to Functions 
+
+DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving that code in a file. Once that file is pushed to the target device, the desired functionality is available next time the app is launched. 
 
 EAC is ready to use when its two-panel display appears in the workstation's browser similar to the image below. The process begins by clicking on a field in the left-hand app window and assigning it an input or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
 
@@ -69,8 +72,26 @@ EAC is ready to use when its two-panel display appears in the workstation's brow
 _Click image to enlarge; ESC to exit_.
 <br>
 
+#### To use Enterprise Application Configurator: 
 
-8.	Now you are ready to map zebra values adds by using this tool.
+1. In the EB application window, **click on a field or button to be modified**.<br>
+ Input and output options are now available to be selected.<br> 
+2. Select the desired input, output or processing function.<br>
+ Selections are saved automatically. 
+3. Repeat Steps 1 and 2 until all fields and/or buttons are "trained" as desired. 
+4. Click the "DOWNLOAD" button to save the settings to a deployment file called `appconfiguration.txt`.<br>
+ `IMPORTANT:` DO NOT RENAME THIS FILE. 
+5. Push the file to the following location on a different device:<br>
+ `/sdcard/Android/data/com.symbol.enterprisebrowser/`
+6. Test the app and its new functions. 
+7. Repeat Steps 1&nsash;6 until the app performs as desired. 
+
+#### The app and DOM injection enhancements file are now ready for deployment.  
+
+-----
+
+## Step 3 - 
+
 9.	Select one of the options from the radio box (details are in next page) and start the training.
 10.	Later you can download the configuration file, after you are done with training.
 11.	This configuration file can be pushed on number of devices at the below location to be consumed it by EnterpriseBrowser. (/sdcard/Android/data/com.symbol.enterprisebrowser/).
@@ -134,3 +155,63 @@ _Click image to enlarge; ESC to exit_.
 <img alt="" style="height:219px" src="eb26-08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+
+## Other EAC Settings
+
+Indicator configuration:
+
+	While using this tool, with configuration <appConfigEnabled value="1"/>, an indicator is shown on the screen in EnterpriseBrowser(Refer above pictures and observe left-top side of the phone screen in the tool). This is just and indicator to show, whether we are in training mode or not.
+	      This image can be further configured, like setting its left, top, height and width. We can even change image shown for this indicator.
+
+	As given in below snippet, indicator’s tag must be used with <appConfigEnabled value=”1”/> tag.  If we set appConfigEnabled tag’s value “2”, then EB will run on production mode and, indicator will not be shown irrespective of any values/configuration.
+
+	If <indicatorEnabled> – value=”1”: indicator will be shown
+	                                     value=”2”: indicator will not be shown
+
+	If <indicatorLeft> – value=”20”: indicator’s left coordinate will be set to given value (in px) 
+	                                     value=””: indicator’s left coordinate will be set to default
+
+	If <indicatorTop> – value=”20”:  indicator’s top coordinate will be set to given value (in px)
+	                                     value=””: indicator’s top coordinate will be set to default
+
+	If <indicatorHeight> – value=”50”: indicator’s height will be set to given value (in px)
+	                                     value=””: indicator’s height will be set to default
+
+	If <indicatorWidth> – value=”50”: indicator’s width will be set to given value (in px)
+	                                     value=””: indicator’s width will be set to default
+
+	 If <indicatorImage> – value=” %PATH%”: indicator’s image will be set from given path 
+                                     value=””: indicator’s image will be set to default
+
+    :::xml
+	 <DOMInjectionUtility>
+	   	<appConfigEnabled value="1"/>
+			<indicatorEnabled value="1"/>
+			<indicatorLeft value="300"/>
+			<indicatorTop value="200"/>
+			<indicatorHeight value="60"/>
+			<indicatorWidth value="90"/>
+	<indicatorImage value="file://%INSTALLDIR%/myimage.png"/>
+	 </DOMInjectionUtility> 
+
+
+
+TROUBLESHOOTING
+
+If value is other than 1, it will not work.
+
+	<appConfigEnabled value=”1”/>
+
+Important points to Note for the tool uses:
+
+1.	If Printer is mapped to any input field make sure to connect Bluetooth printer on advance to make it work in production.
+2.	Make sure that in EnterpriseBrowser’s Config.xml file below tag is enabled:
+                          <JSLibraries value="1"/>
+3.	for text area we are not support the tool
+4.	device screen should change as per device orientation
+5.	Downloaded file (.txt file) name should be renamed as "appconfiguration.txt"
+6.	“importing feature” is not there. suppose user set some configurations in on field then set some other configurations in other field again if user wants to change previous changes it won't be there.
+
+Note: If any custom layout which is mapped to input field is visible due to being focused, and Enterprisebrowser is sent to background. Later if EB is taken in foreground from recent app or from launcher. In this case, default layout will be visible. From second click onwards, mapping will work as it is.
+
+

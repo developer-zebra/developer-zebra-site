@@ -142,7 +142,7 @@ Note: in order to make it work. Make sure to have below configuration in EB conf
 
 	<asrenabled value="1"/>
 
-### Keyboard
+### Keyboard Input
 
 This configuration allows to map specific keyboard to any input area. Which mean, if we map this configuration to any input field, those special kinds of keyboard will pop up to get input, when the input field will be focused. 
 
@@ -183,7 +183,7 @@ This configuration allows to map voice input formatting to any input area. Which
 _Click image to enlarge; ESC to exit_.
 <br>
 
-### Map a Printer                      
+### Printer Output                      
 We can also configure a button to print using zebra printers.  Above picture shows, how can we select a button and then add printer on it.
 ***Note: Printer functionality should be mapped preferably with buttons. 
 ***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen.

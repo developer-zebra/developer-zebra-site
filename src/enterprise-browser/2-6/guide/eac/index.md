@@ -112,7 +112,7 @@ This configuration allows to map scanner configuration to any input area. Which 
 
 Currently we are supporting basic configurations of scanner in the tool. Like, scanner type (camera or 2D imager), decoder types (code128, code 39 etc.) . We can find all such properties on tool upon selecting the scanner check box.  
 
-<img alt="" style="height:219px" src="eb26-03.png"/>
+<img alt="" style="height:350px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
@@ -134,7 +134,7 @@ It will not work for
 
 Currently we are supporting basic configurations of voice input in the tool. Like, continuous mode (if we want continuous input from user then check the box. If we uncheck this box, it will just take the first input from user and voice recognition will be stopped), and language. We can set language from list of supported language from android. e.g. “en_us”.
 
-<img alt="" style="height:219px" src="eb26-04.png"/>
+<img alt="" style="height:150px" src="eb26-04.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 

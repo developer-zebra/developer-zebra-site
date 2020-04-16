@@ -20,9 +20,13 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 * Computer and device on the same IP subnet
 * `AppConfigurationUtility.apk` screen streaming service `([download]()) LINK TO COME `
 
+> **NOTE: EAC does not support apps that employ shortcuts or [multi-session tabs](../multisession)**.  
+
 ---
 
-## I. Install and Set up
+## Step 1 - Install and Set up
+
+##### To set up Enterprise Application Configurator: 
 
 1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** to grant permission to capture the screen. 
 2. **Add the node below code to the app's** `Config.xml` **file** just before the &lt;Applications&gt; node:<br>
@@ -56,8 +60,14 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 -----
 
-## Using EAC
+## II. Map App to Functions 
+DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving it in a file. Once that file is pushed to the target device, the desired functionality is available the next time the EB app is launched. 
 
+EAC is ready to use when its two-panel display appears in the workstation's browser similar to the image below. The process begins by clicking on a field in the left-hand app window and assigning it an input or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
+
+<img alt="" style="height:219px" src="eb26-02.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
 
 8.	Now you are ready to map zebra values adds by using this tool.
@@ -71,43 +81,9 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 Note: `AppconfigurationUtility.apk` must be installed only on device, we are going to use for      training. Once training is completed and configuration file is generated. This must be uninstalled.
 
-`Add link to dom page`. 
-
-To use DOM injection, **ALL of the following must be true**:
-
-* The app being injected is running on Enterprise Browser 1.3 (or higher).
-* A `tags` file containing elements to be injected has been created and pushed to the target device.
-* The path to the `tags` file is specified in the app's `Config.xml` file (see [Step 2](#step2updateconfigxml)).
-* The target device is running Android with the stock WebKit. 
-
-### Supports injection of:
-
-* JavaScript or CSS files stored locally on the device
-* JavaScript or CSS files stored on a server 
-* Meta tags described in the `tags` file (stored on the device)
-* Local files specified using absolute paths or [EB substitution variables](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
-
-### Supported injection conditions:
-
-* Injects into all navigated pages (using wildcard character)
-* Injects into all pages that contain a unique string or HTML element (using `pagecontent` attribute)
-* Injects only into specified pages (by URL; server-based pages only)
-
-> **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
-
------
-
-DO WE NEED A STEP-BY-STEP? not sure
-
-list from input doc:
 
 ### Using the Tool
 
-This tool presents a two-panel display with the target app on the left and the available configuration actions on the right as in the image below. 
-
-<img alt="" style="height:219px" src="eb26-02.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
 
 
 The basic work of this tool is, to enable zebra values adds like, scanner, printer, voice-input or voice-outputs in a webpage without doing the server-side modification in the page. This tool provides an interactive webpage to add those functionalities on any field on the page.

@@ -32,7 +32,7 @@ products:
     sections:
       - title: About
         url: /datawedge/7-6/guide/about
-      - title: Getting Started
+      - title: Get Started
         url: /datawedge/7-6/guide/gettingstarted
       - title: Profiles
         url: /datawedge/7-6/guide/profiles
@@ -42,6 +42,10 @@ products:
         url: /datawedge/7-6/guide/api
       - title: Samples
         url: /datawedge/7-6/guide/samples
+      - title: Remote Admin
+        url: /datawedge/7-6/guide/admin
+      - title: FAQ
+        url: /datawedge/7-6/guide/faq
     versions:
       - url: datawedge/7-6/guide/about
         label: '7.6' 

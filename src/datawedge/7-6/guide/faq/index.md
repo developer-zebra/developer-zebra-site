@@ -19,10 +19,10 @@ A: There are two intent-based interfaces into the scanner:
 See our blog post on [how to interface the scanner through DataWedge](https://developer.zebra.com/blog/interface-device-scanner-android-devices-through-datawedge).
 
 ## Q: Scanning works in DWDemo but not in my own app. What am I doing wrong?
-A: By default, the DWDemo profile is built-in to send scanned data via intent to the DWDemo app. A profile would need to be configured for your app to receive the scanned data. See [Managing Profiles](../createprofile/) on how to accomplish this.
+A: By default, the DWDemo profile is built-in to send scanned data via intent to the DWDemo app. A profile would need to be configured for your app to receive the scanned data. Make sure the profile is configured with the appropriate input (e.g. Barcode input) and output (e.g. Intent or Keystroke output). See [Managing Profiles](../createprofile/) on how to accomplish this.
 
 ## Q: I can scan barcodes but they are not sent to my app.  What am I doing wrong?
-A: It is likely either a profile is not associated with your app or the profile input/output is not configured properly. DataWedge is using the default profile (Profile0) to perform the scan, which allows the scan beam to appear. However, if improperly configured, it does not know how to output the data captured. Either [create a profile](../createprofile/) and associate it with your app or configure the default profile with the proper input/output to capture the scanned data.
+A: It is likely either a profile is not associated with your app or the profile input/output is not configured properly. DataWedge is using the default profile (Profile0) to perform the scan, which allows the scan beam to appear. However, if improperly configured, it does not know how to output the data captured. Either [create a profile](../createprofile/) and associate it with your app with the appropriate configurations or configure the default profile (Profile0) with the proper input/output to capture the scanned data.
 
 ## Q: How do I temporarily suspend scanning in my DataWedge app? 
 A: There are two methods to temporarily disable the barcode scanner in an app using the Scanner Input Plugin:
@@ -51,7 +51,7 @@ A: No, NFC is supported with [EMDK for Android](/emdk-for-android/latest/guide/s
 A: Zebra recommends testing apps on the actual hardware. When this is not possible, adb shell commands can be used to simulate data captured by DataWedge that is sent to the device when scanning barcodes. Refer to this related [blog post](https://developer.zebra.com/blog/test-your-zebra-scanning-application-emulator) for more details. 
 
 ## Q: Can DataWedge APIs control data capture in real-time?
-A: Yes, DataWedge APIs provide dynamic control over data capture whether via scanner, magnetic stripe reader, RFID, serial/USB port, SimulScan, or voice. 
+A: Yes, [DataWedge APIs](../api) provide dynamic control over data capture whether via scanner, magnetic stripe reader, RFID, serial/USB port, SimulScan, or voice. 
 
 
 -----

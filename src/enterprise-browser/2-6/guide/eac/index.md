@@ -106,13 +106,15 @@ _Click image to enlarge; ESC to exit_.
 
 ## Step 3 - Set Inputs and Outputs
 
-### Scanner
+### Scanner Input
 
 This configuration allows to map scanner configuration to any input area. Which mean, if we map this configuration to any input field, scanner will be enabled automatically when that input field will be focused. Now upon scan, data will be fed in the field.
 
 Currently we are supporting basic configurations of scanner in the tool. Like, scanner type (camera or 2D imager), decoder types (code128, code 39 etc.) . We can find all such properties on tool upon selecting the scanner check box.  
 
-[scanner input screenshot]
+<img alt="" style="height:219px" src="eb26-03.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
 Note: in order to make it work. Make sure to have below configuration in EB `Config.xml`.
 
@@ -132,33 +134,13 @@ It will not work for
 
 Currently we are supporting basic configurations of voice input in the tool. Like, continuous mode (if we want continuous input from user then check the box. If we uncheck this box, it will just take the first input from user and voice recognition will be stopped), and language. We can set language from list of supported language from android. e.g. “en_us”.
 
-[voice input screenshot]
+<img alt="" style="height:219px" src="eb26-04.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
 Note: in order to make it work. Make sure to have below configuration in EB config.xml.
 
 	<asrenabled value="1"/>
-
-### Voice Output 
-
-This configuration allows to map voice output configuration to any input area. Which mean, if we map this configuration to any input field, voice prompt will be heard automatically when that input field will be focused. For example, “Speak product number”.
-
-Currently we are supporting basic configurations of voice output in the tool. Like voice text, pitch of the utterance, volume, rate and language. We can set language from list of supported language from android. e.g. “en_us”.
-
-***Note: Make sure you are not using any double- inverted commas(“) or single inverted comma(‘)  in the voice text area.Pitch, volume and rate should be float value***.
-
-[voice output screen]
-
-Note: in order to make it work. Make sure to have below configuration in EB config.xml.
-
-	<ttsenabled value="1"/>
-
-### Data Formatting
-
-This configuration allows to map voice input formatting to any input area. Which mean, if we map this configuration to any input field, cursor will automatically auto enter or auto enter to next field, when that input field gets keystroke data. 
-
-***Note : This features will be observed only when keystroke input is fed in the input field. i.e. Auto Tab and Auto Enter only work when you map the input configuration (voice input,scanner) along with data formatting***.
-
-[data formatting input screen]
 
 ### Keyboard
 
@@ -171,14 +153,44 @@ So, *Layouts.zip file must be pushed in ‘/enterprise/device/settings/ekb/confi
 
 Once above thing is correctly done, we will get all layouts listed in the tool, and we can select the desired layout.
 
-[keyboard input screen]
+<img alt="" style="height:219px" src="eb26-07.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+### Voice Output 
+
+This configuration allows to map voice output configuration to any input area. Which mean, if we map this configuration to any input field, voice prompt will be heard automatically when that input field will be focused. For example, “Speak product number”.
+
+Currently we are supporting basic configurations of voice output in the tool. Like voice text, pitch of the utterance, volume, rate and language. We can set language from list of supported language from android. e.g. “en_us”.
+
+***Note: Make sure you are not using any double- inverted commas(“) or single inverted comma(‘)  in the voice text area.Pitch, volume and rate should be float value***.
+
+<img alt="" style="height:219px" src="eb26-05.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+Note: in order to make it work. Make sure to have below configuration in EB config.xml.
+
+	<ttsenabled value="1"/>
+
+### Data Formatting
+
+This configuration allows to map voice input formatting to any input area. Which mean, if we map this configuration to any input field, cursor will automatically auto enter or auto enter to next field, when that input field gets keystroke data. 
+
+***Note : This features will be observed only when keystroke input is fed in the input field. i.e. Auto Tab and Auto Enter only work when you map the input configuration (voice input,scanner) along with data formatting***.
+
+<img alt="" style="height:219px" src="eb26-06.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
 ### Map a Printer                      
 We can also configure a button to print using zebra printers.  Above picture shows, how can we select a button and then add printer on it.
 ***Note: Printer functionality should be mapped preferably with buttons. 
 ***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen.
 
-[printer screen]
+<img alt="" style="height:219px" src="eb26-08.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
 This tool supports all kind of printers i.e. bluetooth, wifi and USB. In order to add Bluetooth, printer, we must select printerType as Bluetooth and need to add mac number of Bluetooth printer in IP/Mac field. IP address must be feeded, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
 ***Note:  In order to select any button (and prevent the actual work of the button) to map printer, we need to double tap it***.
@@ -192,20 +204,7 @@ Note: If button is performing any other task, then while training we need to dou
 
 If button is navigating current page to some other page on its click, then in production environment the behavior of this functionality is unknown. Hence, we should prefer using buttons that does not navigates or changes its web page.
 
-
-
-10.	In order to take this training effect, we need to push below modified tag (value=”2” means production) in config.xml (`<appConfigEnabled value=”2”/>`) and relaunch EnterpriseBrowser application.
-
-Note: `AppconfigurationUtility.apk` must be installed only on device, we are going to use for      training. Once training is completed and configuration file is generated. This must be uninstalled.
-
-
-### Using the Tool
-
-
-
-The basic work of this tool is, to enable zebra values adds like, scanner, printer, voice-input or voice-outputs in a webpage without doing the server-side modification in the page. This tool provides an interactive webpage to add those functionalities on any field on the page.
-
-As we want to achieve this without doing any modification to server-side. We will train elements of the pages using this tool. 
+-----
 
 So, to use this tool, we need to understand two major things
 
@@ -229,30 +228,8 @@ Steps to run the tool:
 4.	Next step is to focus on any input field or button , and now it will enable the tool to map that field with zebra capabilities.
 5.	Keep on mapping the field as per need and , when done, you can download the configuration file.(appconfiguration.txt) 
 
-<img alt="" style="height:219px" src="eb26_10.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
 
-<img alt="" style="height:219px" src="eb26-03.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<img alt="" style="height:219px" src="eb26-04.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<img alt="" style="height:219px" src="eb26-05.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<img alt="" style="height:219px" src="eb26-06.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<img alt="" style="height:219px" src="eb26-07.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<img alt="" style="height:219px" src="eb26-08.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-## Other EAC Settings
+## Other Settings
 
 Indicator configuration:
 
@@ -294,6 +271,11 @@ Indicator configuration:
 
 TROUBLESHOOTING
 
+
+<img alt="" style="height:219px" src="eb26_10.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
 If value is other than 1, it will not work.
 
 	<appConfigEnabled value=”1”/>
@@ -309,5 +291,6 @@ Important points to Note for the tool uses:
 6.	“importing feature” is not there. suppose user set some configurations in on field then set some other configurations in other field again if user wants to change previous changes it won't be there.
 
 Note: If any custom layout which is mapped to input field is visible due to being focused, and Enterprisebrowser is sent to background. Later if EB is taken in foreground from recent app or from launcher. In this case, default layout will be visible. From second click onwards, mapping will work as it is.
+
 
 

@@ -10,7 +10,7 @@ sources:
     url: 'https://github.com/Zebra/samples-datawedge'
 devices:
   - All supported Zebra Android Marshmallow (v6.0) or above devices
-image: profileswitch1-1.png
+image: multiactivity-1.png
 screenshots:
   - multiactivity-1.png
   - multiactivity-2.png

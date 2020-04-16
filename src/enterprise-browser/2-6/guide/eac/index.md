@@ -20,7 +20,9 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 * Computer and device on the same IP subnet
 * `AppConfigurationUtility.apk` screen streaming service `([download]()) LINK TO COME `
 
-### Installation
+---
+
+## I. Install and Set up
 
 1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** to grant permission to capture the screen. 
 2. **Add the node below code to the app's** `Config.xml` **file** just before the &lt;Applications&gt; node:<br>
@@ -49,6 +51,14 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
  <img alt="" style="height:450px" src="eb26-02.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
+
+##### The tool is now ready to accept field mappings for the EB app.  
+
+-----
+
+## Using EAC
+
+
 
 8.	Now you are ready to map zebra values adds by using this tool.
 9.	Select one of the options from the radio box (details are in next page) and start the training.

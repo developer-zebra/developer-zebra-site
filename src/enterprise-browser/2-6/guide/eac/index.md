@@ -78,14 +78,14 @@ _Click image to enlarge; ESC to exit_.
 
 1. In the EB application window, **click on a field or button to be modified**.<br>
  Input and output options are now available to be selected.<br> 
-2. Select the desired input, output or processing function.<br>
+2. **Select the desired input, output or processing function(s)** to assign to the selected app element.<br>
  Selections are saved automatically. 
-3. Repeat Steps 1 and 2 until all fields and/or buttons are "trained" as desired. 
-4. Click the "DOWNLOAD" button to save the settings to a deployment file called `appconfiguration.txt`.<br>
+3. **Repeat Steps 1 and 2 until all elements are "trained"** as desired. 
+4. **Click the "DOWNLOAD" button** to save the settings to a deployment file called `appconfiguration.txt`.<br>
  `IMPORTANT:` DO NOT RENAME THIS FILE. 
-5. Push the file to the following location on a different device:<br>
+5. **Push the file to the following location** <u>on a different device</u>:<br>
  `/sdcard/Android/data/com.symbol.enterprisebrowser/`
-6. **Add the node below code to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
+6. **Add the code below to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
@@ -108,38 +108,43 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-This configuration allows to map scanner configuration to any input area. Which mean, if we map this configuration to any input field, scanner will be enabled automatically when that input field will be focused. Now upon scan, data will be fed in the field.
-
-Currently we are supporting basic configurations of scanner in the tool. Like, scanner type (camera or 2D imager), decoder types (code128, code 39 etc.) . We can find all such properties on tool upon selecting the scanner check box.  
+When the scanner is mapped to a field, it becomes active whenever that field is in focus and the field is populated with any data acquired by that scanner. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a small list of decoder types. 
 
 <img alt="" style="height:350px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-Note: in order to make it work. Make sure to have below configuration in EB `Config.xml`.
+#### Required `Config.xml` file setting
 
+Using a scanner requires the setting below in the EB app's `Config.xml` file: 
+
+	:::xml
 	<usedwforscanning value="0"/>
-
 
 ### Voice Input
 
-This configuration allows to map voice input configuration to any input area. Which mean, if we map this configuration to any input field, voice input will be enabled automatically when that input field will be focused. Now upon user utterance of word (user voice), data will be fed in the field.
+When voice input is mapped to a field, the app listens for spoken input, converts the input to text and populates the field with the converted data. 
 
+#### Parameters: 
+
+**Continuous mode -** Checking this box causes the speech engine to continue gathering spoken input after long gaps of silence. 
+
+**Language -** Enter the language code for use by the Google Speech-to-Text engine. This field accepts any of the specified [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
 
 **Note**: Mapping any feature to input field will only work if input type =”text”, “password” .
 
-It will not work for 
+It will not work for `<textarea />` (whatever that is)
 
-	<textarea />
-
-Currently we are supporting basic configurations of voice input in the tool. Like, continuous mode (if we want continuous input from user then check the box. If we uncheck this box, it will just take the first input from user and voice recognition will be stopped), and language. We can set language from list of supported language from android. e.g. “en_us”.
 
 <img alt="" style="height:150px" src="eb26-04.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-Note: in order to make it work. Make sure to have below configuration in EB config.xml.
+#### Required `Config.xml` file setting
 
+Using voice input requires the setting below in the EB app's `Config.xml` file: 
+
+	:::xml
 	<asrenabled value="1"/>
 
 ### Keyboard Input

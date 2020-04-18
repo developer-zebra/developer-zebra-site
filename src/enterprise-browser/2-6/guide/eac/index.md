@@ -213,6 +213,8 @@ This parameter allows special characters to be appended to acquired data, genera
 _Click image to enlarge; ESC to exit_.
 <br>
 
+-----
+
 ### Printer Output                      
 **Zebra recommends mapping printers only to buttons**. Printer mapping supports printers connected through Bluetooth (via Bluetooth MAC address), Wi-Fi (via IP address) and USB. Regardless of connection method, the printer MUST be connected to the device <u>***before***</u> a printer-mapped button is tapped by the device user. 
 

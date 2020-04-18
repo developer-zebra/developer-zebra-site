@@ -108,9 +108,7 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. 
-
-**Note**: Optionally use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters to automatically advance the cursor after the field is populated with acquired data. 
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data.
 
 #### Supported Parameters: 
 
@@ -133,7 +131,7 @@ Using a scanner requires the setting below in the [&lt;usedwforscanning&gt; tag]
 
 ### Voice Input
 
-When voice input is mapped to a field, the app listens for spoken input, converts the input to text and populates the field with the converted data. **Note**: Optionally use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters to automatically advance the cursor after the field is populated with acquired data. 
+**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the input to text and populates the field with the converted data. **Optionally, use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data. 
 
 #### Supported Parameters: 
 

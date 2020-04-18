@@ -118,7 +118,7 @@ _Click image to enlarge; ESC to exit_.
 
 > **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**. 
 
-<img alt="" style="height:350px" src="eb26-03.png"/>
+<img alt="" style="height:400px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
@@ -209,7 +209,7 @@ This parameter allows special characters to be appended to acquired data, genera
 
 **`NOTE:` This feature can be selected only when the field is mapped to Scanner Input or Voice Input**.
 
-<img alt="" style="height:219px" src="eb26-06.png"/>
+<img alt="" style="height:200px" src="eb26-06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 

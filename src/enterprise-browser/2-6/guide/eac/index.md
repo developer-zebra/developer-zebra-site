@@ -15,7 +15,7 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 * Computer running Windows 8 or Windows 10 with Google Chrome installed
 * Zebra device that supports Enterprise Browser<br>
-**<u>See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for supported devices
+**See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** for supported devices
 * EB 2.6 (or later) installed on device
 * Computer and device on the same IP subnet
 * `AppConfigurationUtility.apk` screen streaming service `([download]()) LINK TO COME `
@@ -108,11 +108,15 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-When the scanner is mapped to a field, it becomes active whenever that field is in focus. Data acquired by the scanner is populated into that field. **Select the desired scanner and decoders to use**. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. 
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. 
+
+**Note**: Optionally use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters to automatically advance the cursor after the field is populated with acquired data. 
 
 #### Supported Parameters: 
 
-**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**; it is not limited to those listed in the tool. 
+**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**; not limited to those listed in the tool. 
+
+**[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>At least one decoder must be selected to enable scanning</u>**. 
 
 > **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**. 
 
@@ -129,13 +133,13 @@ Using a scanner requires the setting below in the [&lt;usedwforscanning&gt; tag]
 
 ### Voice Input
 
-When voice input is mapped to a field, the app listens for spoken input, converts the input to text and populates the field with the converted data. 
+When voice input is mapped to a field, the app listens for spoken input, converts the input to text and populates the field with the converted data. **Note**: Optionally use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters to automatically advance the cursor after the field is populated with acquired data. 
 
 #### Supported Parameters: 
 
 **Continuous mode -** causes the speech engine to continue gathering spoken input after the device user has momentarily stopped speaking. 
 
-**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale).  
+**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [Locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale).  
 
 <!-- HUH? question sent. 
 **Note**: Mapping any feature to input field will only work if input type =”text”, “password” .
@@ -176,7 +180,7 @@ Mapping voice output to a field causes data in that field to be spoken aloud by 
 
 #### Supported Parameters: 
 
-**Voice text -** words input into this field are spoke to the device user when the field receives focus. For example, "This field speaks the result of scanning data" 
+**Voice text -** words input into this field are spoken to the device user when the field receives focus. For example, "This field speaks the result of scanning data." 
 
 **Pitch -** sets the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. **Float values only**.
 
@@ -199,9 +203,13 @@ Use of voice output requires the setting below in the [&lt;ttsenabled&gt; tag](.
 
 ### Data Formatting
 
-This configuration allows to map voice input formatting to any input area. Which mean, if we map this configuration to any input field, cursor will automatically auto enter or auto enter to next field, when that input field gets keystroke data. 
+This parameter allows special characters to be appended to acquired data, generally used for advancing the cursor or submitting data for further processing. For example, selecting "Auto Tab" causes the cursor to move to the next field after acquired data is populated into the current field. 
 
-***Note : This features will be observed only when keystroke input is fed in the input field. i.e. Auto Tab and Auto Enter only work when you map the input configuration (voice input,scanner) along with data formatting***.
+**Auto Enter -** inserts the ENTER character at the end of acquired data. 
+
+**Auto Tab -** inserts the TAB character at the end of acquired data. 
+
+**`WARNING:`** This feature works only when Scanner Input or Voice Input is selected for the field.
 
 <img alt="" style="height:219px" src="eb26-06.png"/>
 _Click image to enlarge; ESC to exit_.

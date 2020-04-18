@@ -108,7 +108,13 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-When the scanner is mapped to a field, it becomes active whenever that field is in focus and the field is populated with any data acquired by that scanner. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a small list of decoder types. 
+When the scanner is mapped to a field, it becomes active whenever that field is in focus. Data acquired by the scanner is populated into that field. **Select the desired scanner and decoders to use**. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. 
+
+#### Supported Parameters: 
+
+**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**; it is not limited to those listed in the tool. 
+
+> **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**. 
 
 <img alt="" style="height:350px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.

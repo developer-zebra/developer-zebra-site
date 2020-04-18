@@ -108,11 +108,11 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to append ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data.
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated.
 
 #### Supported Parameters: 
 
-**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**; not limited to those listed in the tool. 
+**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**. Not limited to those listed in the tool. 
 
 **[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>At least one decoder must be selected to enable scanning</u>**. 
 
@@ -131,7 +131,7 @@ Using a scanner requires the [&lt;usedwforscanning&gt; tag](../configreference/#
 
 ### Voice Input
 
-**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, use [Data Formatting Input](#dataformatting) to append ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data. 
+**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, use [Data Formatting Input](#dataformatting) to append the text with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
 #### Supported Parameters: 
 

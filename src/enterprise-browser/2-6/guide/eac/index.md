@@ -114,9 +114,9 @@ When the scanner is mapped to a field, it becomes active whenever that field is 
 _Click image to enlarge; ESC to exit_.
 <br>
 
-#### Required `Config.xml` file setting
+#### Required setting:
 
-Using a scanner requires the setting below in the EB app's `Config.xml` file: 
+Using a scanner requires the setting below in the [&lt;usedwforscanning&gt; tag](../configreference/#usedwforscanning) of the EB app's `Config.xml` file: 
 
 	:::xml
 	<usedwforscanning value="0"/>
@@ -125,57 +125,70 @@ Using a scanner requires the setting below in the EB app's `Config.xml` file:
 
 When voice input is mapped to a field, the app listens for spoken input, converts the input to text and populates the field with the converted data. 
 
-#### Parameters: 
+#### Supported Parameters: 
 
-**Continuous mode -** Checking this box causes the speech engine to continue gathering spoken input after long gaps of silence. 
+**Continuous mode -** causes the speech engine to continue gathering spoken input after the device user has momentarily stopped speaking. 
 
-**Language -** Enter the language code for use by the Google Speech-to-Text engine. This field accepts any of the specified [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
+**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale).  
 
+<!-- HUH? question sent. 
 **Note**: Mapping any feature to input field will only work if input type =”text”, “password” .
 
 It will not work for `<textarea />` (whatever that is)
-
+ -->
 
 <img alt="" style="height:150px" src="eb26-04.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-#### Required `Config.xml` file setting
+#### Required setting:
 
-Using voice input requires the setting below in the EB app's `Config.xml` file: 
+Using voice input requires the setting below in the [&lt;asrenabled&gt; tag](../configreference/#asrenabled) of the EB app's `Config.xml` file: 
 
 	:::xml
 	<asrenabled value="1"/>
 
 ### Keyboard Input
-
-This configuration allows to map specific keyboard to any input area. Which mean, if we map this configuration to any input field, those special kinds of keyboard will pop up to get input, when the input field will be focused. 
-
-For example, we can select function key layout for one field while numeric keyboard for other input. We can map it accordingly. We can even disable keyboard, if we toggle the enabled switch to disabled.
-
-Note: in order to make it work. Make sure that Enterprise keyboard from zebra is installed in the device and custom layouts are pushed in enterprise directory.
-So, *Layouts.zip file must be pushed in ‘/enterprise/device/settings/ekb/config/’ directory.(check more details on how to use custom layouts in EKB in EKD documentation)*.
-
-Once above thing is correctly done, we will get all layouts listed in the tool, and we can select the desired layout.
+Mapping a keyboard to a field invokes that keyboard when the field gains focus. Mappings can be for any keyboard, numerical or emoji keypad or layout available on the device, including custom key layouts created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause a keyboard to be hidden (disabled), if desired. 
 
 <img alt="" style="height:219px" src="eb26-07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
+#### Required setting:
+
+Use of the keyboard input setting requires the following: 
+
+* Zebra Enterprise Keyboard must be present on the device and set as the default input device
+* A `Layouts.zip` file must be in the `/enterprise/device/settings/ekb/config/` folder on the device
+
+-----
+
 ### Voice Output 
 
-This configuration allows to map voice output configuration to any input area. Which mean, if we map this configuration to any input field, voice prompt will be heard automatically when that input field will be focused. For example, “Speak product number”.
+Mapping voice output to a field causes data in that field to be spoken aloud by the device.  
 
-Currently we are supporting basic configurations of voice output in the tool. Like voice text, pitch of the utterance, volume, rate and language. We can set language from list of supported language from android. e.g. “en_us”.
+#### Supported Parameters: 
 
-***Note: Make sure you are not using any double- inverted commas(“) or single inverted comma(‘)  in the voice text area.Pitch, volume and rate should be float value***.
+**Voice text -** words input into this field are spoke to the device user when the field receives focus. For example, "This field speaks the result of scanning data" 
+
+**Pitch -** sets the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. **Float values only**.
+
+**Volume -** sets the volume level for text-to-speech output in a scalar range between 0.0 (off) and 1.0 (full). **Float values only**.
+
+**Rate -** sets the speed for synthesized speech output in a scalar range with a starting (default) value of 1.0 (normal speech rate). A value of 2.0 doubles speed, a value of 0.5 cuts the speed in half. **Float values only**.
+
+**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
 
 <img alt="" style="height:219px" src="eb26-05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-Note: in order to make it work. Make sure to have below configuration in EB config.xml.
+#### Required setting:
 
+Use of voice output requires the setting below in the [&lt;ttsenabled&gt; tag](../configreference/#ttsenabled) of the EB app's `Config.xml` file: 
+
+	:::xml
 	<ttsenabled value="1"/>
 
 ### Data Formatting

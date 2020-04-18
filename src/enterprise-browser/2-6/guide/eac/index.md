@@ -108,7 +108,7 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data.
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to append ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data.
 
 #### Supported Parameters: 
 
@@ -124,14 +124,14 @@ _Click image to enlarge; ESC to exit_.
 
 #### Required setting:
 
-Using a scanner requires the setting below in the [&lt;usedwforscanning&gt; tag](../configreference/#usedwforscanning) of the EB app's `Config.xml` file: 
+Using a scanner requires the [&lt;usedwforscanning&gt; tag](../configreference/#usedwforscanning) in the EB app's `Config.xml` file to be configured as follows: 
 
 	:::xml
 	<usedwforscanning value="0"/>
 
 ### Voice Input
 
-**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the input to text and populates the field with the converted data. **Optionally, use [Data Formatting Input](#dataformatting) to add ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data. 
+**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, use [Data Formatting Input](#dataformatting) to append ENTER or TAB characters** to automatically advance the cursor after the field is populated with acquired data. 
 
 #### Supported Parameters: 
 
@@ -151,13 +151,13 @@ _Click image to enlarge; ESC to exit_.
 
 #### Required setting:
 
-Using voice input requires the setting below in the [&lt;asrenabled&gt; tag](../configreference/#asrenabled) of the EB app's `Config.xml` file: 
+Using voice input requires the [&lt;asrenabled&gt; tag](../configreference/#asrenabled) in the EB app's `Config.xml` file to be configured as follows: 
 
 	:::xml
 	<asrenabled value="1"/>
 
 ### Keyboard Input
-Mapping a keyboard to a field invokes that keyboard when the field gains focus. Mappings can be for any keyboard, numerical or emoji keypad or layout available on the device, including custom key layouts created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause a keyboard to be hidden (disabled), if desired. 
+**Mapping a keyboard to a field** invokes that keyboard when the field gains focus. Mappings can be for any keyboard, numerical or emoji keypad or layout available on the device, including custom key layouts created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause a keyboard to be hidden (disabled), if desired. 
 
 <img alt="" style="height:219px" src="eb26-07.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -174,11 +174,11 @@ Use of the keyboard input setting requires the following:
 
 ### Voice Output 
 
-Mapping voice output to a field causes data in that field to be spoken aloud by the device.  
+**Mapping voice output to a field** causes data in that field to be spoken aloud by the device.  
 
 #### Supported Parameters: 
 
-**Voice text -** words input into this field are spoken to the device user when the field receives focus. For example, "This field speaks the result of scanning data." 
+**Voice text -** words input into this field are spoken to the device user when the field receives focus. For example, if a field were mapped to the scanner for input and to voice output, this prompt might read "This field speaks aloud any data acquired by the scanner." 
 
 **Pitch -** sets the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. **Float values only**.
 
@@ -194,7 +194,7 @@ _Click image to enlarge; ESC to exit_.
 
 #### Required setting:
 
-Use of voice output requires the setting below in the [&lt;ttsenabled&gt; tag](../configreference/#ttsenabled) of the EB app's `Config.xml` file: 
+Use of voice output requires the [&lt;ttsenabled&gt; tag](../configreference/#ttsenabled) in the EB app's `Config.xml` file to be configured as follows: 
 
 	:::xml
 	<ttsenabled value="1"/>
@@ -207,22 +207,22 @@ This parameter allows special characters to be appended to acquired data, genera
 
 **Auto Tab -** inserts the TAB character at the end of acquired data. 
 
-**`WARNING:`** This feature works only when Scanner Input or Voice Input is selected for the field.
+**`NOTE:` This feature can be selected only when the field is mapped to Scanner Input or Voice Input**.
 
 <img alt="" style="height:219px" src="eb26-06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
 ### Printer Output                      
-We can also configure a button to print using zebra printers.  Above picture shows, how can we select a button and then add printer on it.
-***Note: Printer functionality should be mapped preferably with buttons. 
-***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen.
+**Zebra recommends mapping printers only to buttons**. Printer mapping supports printers connected through Bluetooth (via Bluetooth MAC address), Wi-Fi (via IP address) and USB. Regardless of connection method, the printer MUST be connected to the device <u>***before***</u> a printer-mapped button is tapped by the device user. 
 
 <img alt="" style="height:219px" src="eb26-08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-This tool supports all kind of printers i.e. bluetooth, wifi and USB. In order to add Bluetooth, printer, we must select printerType as Bluetooth and need to add mac number of Bluetooth printer in IP/Mac field. IP address must be feeded, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
+## uNdEr ConTRuCtion
+
+IP address must be fed, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
 ***Note:  In order to select any button (and prevent the actual work of the button) to map printer, we need to double tap it***.
 
       '^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
@@ -298,9 +298,14 @@ Indicator configuration:
 	 </DOMInjectionUtility> 
 
 
+-----
 
-TROUBLESHOOTING
+## TROUBLESHOOTING
 
+-----
+***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen***.
+
+-----
 
 <img alt="" style="height:219px" src="eb26_10.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -309,6 +314,8 @@ _Click image to enlarge; ESC to exit_.
 If value is other than 1, it will not work.
 
 	<appConfigEnabled value=”1”/>
+
+-----
 
 Important points to Note for the tool uses:
 

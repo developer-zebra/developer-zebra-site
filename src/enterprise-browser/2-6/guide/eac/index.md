@@ -7,32 +7,33 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies [DOM injection](../dominjectionandroid), a process that can add capabilities to a running EB app without changing the source code. This tool maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards and can voice-enable fields for spoken input and/or output. 
+**Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser** that simplifies [DOM injection](../dominjectionandroid), a process that can add capabilities to a running EB app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards and can voice-enable fields for spoken input and/or output. 
 
-EAC is a browser-based solution that presents an easy-to-use GUI for creating DOM injection configuration files. It is designed to help companies that use SAP ITSmobile and similar solutions easily modify legacy apps without requiring special skills. **This guide assumes a working knowledge of Enterprise Browser and the process of editing and deploying the** `Config.xml` **files of EB apps**. 
+**DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app**, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving that code in a file. Once that file is pushed to the target device, the desired functionality is available next time the app is launched. 
+
+**This tool is a browser-based solution** with a point-and-click interface that creates DOM injection configuration files that are ready for deployment. It is designed to help companies that use SAP ITSmobile and similar solutions to easily modify legacy apps without requiring special skills. 
+
+**NOTE: This guide assumes a working knowledge of Enterprise Browser and the process of editing and deploying its** `Config.xml` **files**. 
 
 ### Requirements
 
-* Computer running Windows 8 or Windows 10 with Google Chrome
-* Zebra device that supports Enterprise Browser<br>
-**See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** for supported devices
-* EB 2.6 (or later) installed on a device
-* A second Zebra device with EB 2.6 installed (optional, for testing reconfigured apps)
-* App (and its `Config.xml` file) to be reconfigured, installed on device(s)
-* Computer and device(s) on the same IP subnet
-* `AppConfigurationUtility.apk` device mirroring service `DOWNLOAD LINK TO COME `
+* **Computer running Windows** 8 or Windows 10 with Google Chrome
+* **Zebra device that supports Enterprise Browser** See [supported device list](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)
+* **EB 2.6 (or later)** installed on a device
+* **Optional: A second Zebra device with EB 2.6 installed** (for easier testing of reconfigured apps)
+* **Computer and device(s) on the same IP subnet**
+* **App to be reconfigured** (and its `Config.xml` file), installed on device(s)
+* `AppConfigurationUtility.apk` device mirroring service ([Download it now](here)) `LINK TO COME`
 
 > **NOTE: This tool does not support apps that employ shortcuts or [multi-session tabs](../multisession)**.
 
 ---
 
-## Step 1 - Install and Set up
+## Part 1 - Install and Set up
 
 #### To set up Enterprise Application Configurator: 
 
-1. Push the `AppConfigurationUtility.apk` file to the device and launch it.<br>
- When prompted, **tap "START NOW"** to grant permission to capture the screen. 
-2. **Add the first three code lines below to the target EB app's** `Config.xml` **file**, just _<u>before</u>_ the &lt;Applications&gt; node (as shown):<br>
+1. **Add the first three code lines below to the target EB app's** `Config.xml` **file**, just _<u>before</u>_ the &lt;Applications&gt; node (as shown):<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
@@ -43,16 +44,19 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DO
 			<Application>
 			...
 
-3. **Push the modified** `Config.xml` **file to the device** in the following location:<br>
+2. **Push the modified** `Config.xml` **file to the device** in the following location:<br>
   `/sdcard/Android/data/com.symbol.enterprisebrowser/` <br>
-4. **Launch Enterprise Browser** on the device. 
-5. **Pull down the Notification bar on the device** to obtain the IP address for the screen stream:<br>
+3. Push the `AppConfigurationUtility.apk` file to the device and launch it.<br>
+ When prompted, **tap "START NOW"** to grant permission to capture the screen. 
+4. **Pull down the Notification bar on the device** and note the IP address used by Enterprise Application Configurator:<br>
  <img alt="" style="height:350px" src="eb26-01.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
-6. **In Chrome on the Windows computer, enter the IP address and port number** obtained in Step 5 into a new browser window.<br>
- **NOTE: Supports only Google Chrome** running on Windows 8 or 10.<br> 
- After a moment, a splash page appears with a section similar to the image below. **Enter the EB app type**:<br>  
+5. **Launch Enterprise Browser** on the device. 
+6. **In Chrome on the Windows computer, enter the IP address and port number** obtained in Step 4 into a new browser window or tab.<br>
+ **NOTE: This tool <u>supports only Google Chrome</u>** running on Windows 8 or 10.<br> 
+ After a moment, a splash page appears with a section similar to the image below.<br> 
+ **Enter the EB app type**:  
  <img alt="" style="height:100px" src="eb26_09.png"/>
  _Click image to enlarge; ESC to exit_.
  <br>
@@ -67,11 +71,11 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DO
 
 -----
 
-## Step 2 - Map App to Functions 
+## Part 2 - Map App to Functions 
 
-DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving that code in a file. Once that file is pushed to the target device, the desired functionality is available next time the app is launched. 
+**EAC is ready to use when its two-panel display appears** in the workstation's browser similar to the image below. If the Windows machine isn't displaying a screen as below, please repeat the procedures in [Part 1](#part1installandsetup), above. 
 
-EAC is ready to use when its two-panel display appears in the workstation's browser similar to the image below. The process begins by clicking on a field in the left-hand app window and assigning it an input or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
+**The process begins by clicking on a field in the left-hand app window** and assigning it an input and/or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
 
 <img alt="" style="height:450px" src="eb26-02.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -80,15 +84,16 @@ _Click image to enlarge; ESC to exit_.
 #### To use Enterprise Application Configurator: 
 
 1. In the EB application window, **click on a field or button to be modified**.<br>
- Input and output options are now available to be selected.<br> 
+ Input and output options are now available to be selected.
 2. **Select the desired input, output or processing function(s)** to assign to the selected app element.<br>
  Selections are saved automatically. 
-3. **Repeat Steps 1 and 2 until all elements are "trained"** as desired. 
+3. **Repeat Steps 1 and 2 until all elements are "trained"** as desired. <br>
+ See [Part 3](part3setinputsandoutputs) for configurable parameter details. 
 4. **Click the "DOWNLOAD" button** to save the settings to a deployment file called `appconfiguration.txt`.<br>
  `IMPORTANT:` DO NOT RENAME THIS FILE. 
 5. **Push the file to the following location** <u>on a different device</u>:<br>
  `/sdcard/Android/data/com.symbol.enterprisebrowser/`
-6. **Add the code below to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
+6.  **Add the first three code lines below to the target EB app's** `Config.xml` **file**, just _<u>before</u>_ the &lt;Applications&gt; node (as shown):<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
@@ -103,15 +108,17 @@ _Click image to enlarge; ESC to exit_.
 
 >**IMPORTANT**: The `AppConfigurationUtility.apk` app must be uninstalled to run EB apps in a production environment on that device. 
 
-#### The app and DOM injection enhancements file are now ready for deployment.  
+#### The DOM injection configuration file is now ready for deployment.  
+
+> `WARNING:` The DOM injection configuration file created by EAC is named `appconfiguration.txt`.<br>**The name of this file must not be changed.** 
 
 -----
 
-## Step 3 - Set Inputs and Outputs
+## Part 3 - Set Inputs and Outputs
 
 ### Scanner Input
 
-**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. At least one one decoder type muse be selected, and data acquired by the scanner is populated into that field. EAC **currently supports the camera scanner and 2D barcode imager** with basic configurations and a short list of popular decoder types. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated. 
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus, and data acquired by the scanner is populated into that field. At least one decoder type must be selected. **EAC currently supports the camera scanner and 2D barcode imager** with basic configurations and a short list of popular decoder types. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
 #### Supported Parameters: 
 
@@ -183,13 +190,13 @@ Use of the keyboard input setting requires the following:
 
 **Voice text -** words input into this field are spoken to the device user when the field receives focus. For example, if a field were mapped to the scanner for input and to voice output, this prompt might read "This field speaks aloud any data acquired by the scanner." 
 
-**Pitch -** sets the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. **Float values only**.
+**Pitch -** sets the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. **Accepts float values only**.
 
-**Volume -** sets the volume level for text-to-speech output in a scalar range between 0.0 (off) and 1.0 (full). **Float values only**.
+**Volume -** sets the volume level for text-to-speech output in a scalar range between 0.0 (off) and 1.0 (full). **Accepts float values only**.
 
-**Rate -** sets the speed for synthesized speech output in a scalar range with a starting (default) value of 1.0 (normal speech rate). A value of 2.0 doubles speed, a value of 0.5 cuts the speed in half. **Float values only**.
+**Rate -** sets the speed for synthesized speech output in a scalar range with a starting (default) value of 1.0 (normal speech rate). A value of 2.0 doubles speed, a value of 0.5 cuts the speed in half. **Accepts float values only**.
 
-**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
+**Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [Locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
 
 <img alt="" style="height:219px" src="eb26-05.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -204,7 +211,7 @@ Use of voice output requires the [&lt;ttsenabled&gt; tag](../configreference/#tt
 
 ### Data Formatting
 
-This parameter allows special characters to be appended to acquired data, generally used for advancing the cursor or submitting data for further processing. For example, selecting "Auto Tab" causes the cursor to move to the next field after acquired data is populated into the current field. 
+**This parameter allows special characters to be appended to acquired data**, generally used for advancing the cursor or submitting acquired data for further processing. For example, selecting "Auto Tab" causes the cursor to move to the next field after acquired data is populated into the current field. 
 
 **Auto Enter -** inserts the ENTER character at the end of acquired data. 
 
@@ -219,7 +226,7 @@ _Click image to enlarge; ESC to exit_.
 -----
 
 ### Printer Output                      
-**Zebra recommends mapping printers only to buttons**. Printer mapping supports printers connected through Bluetooth (via Bluetooth MAC address), Wi-Fi (via IP address) and USB. Regardless of connection method, the printer MUST be connected to the device <u>***before***</u> a printer-mapped button is tapped by the device user. 
+**Zebra recommends mapping printers only to buttons**. Printer mapping supports printers connected through Bluetooth (via Bluetooth MAC address), Wi-Fi (via IP address) and USB. Regardless of connection method, **the printer MUST be connected to the device <u>*before*</u> a printer-mapped button is tapped by the device user**. 
 
 <img alt="" style="height:219px" src="eb26-08.png"/>
 _Click image to enlarge; ESC to exit_.

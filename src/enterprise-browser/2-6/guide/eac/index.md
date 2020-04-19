@@ -237,15 +237,12 @@ _Click image to enlarge; ESC to exit_.
 
 **Printer -** drop-down for selecting Bluetooth, USB or Wi-Fi printer type. 
 
-**IP/MAC -** used to set the printer's IP address for Wi-Fi or Bluetooth MAC address.
+**IP/MAC -** used to set the printer's IP address for Wi-Fi or Bluetooth MAC address, as applicable.
 
-**Printer ZPL -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below:  
+**ZPL Script -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below:  
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
-
-**Script: -** displays the script as it will be sent to the printer based on the selected parameters and inputs in the fields above.  
-
 
 ## uNdEr ConTRuCtion
 

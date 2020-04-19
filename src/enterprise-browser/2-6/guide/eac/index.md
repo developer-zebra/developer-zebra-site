@@ -120,7 +120,7 @@ _Click image to enlarge; ESC to exit_.
 
 **Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus, and data acquired by the scanner is populated into that field. At least one decoder type must be selected. **EAC currently supports the camera scanner and 2D barcode imager** with basic configurations and a short list of popular decoder types. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
-#### Supported Parameters: 
+#### Parameters: 
 
 **All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**. Not limited to those listed in the tool. 
 
@@ -143,7 +143,7 @@ Using a scanner requires the [&lt;usedwforscanning&gt; tag](../configreference/#
 
 **When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the text with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
-#### Supported Parameters: 
+#### Parameters: 
 
 **Continuous mode -** causes the speech engine to continue gathering spoken input after the device user has momentarily stopped speaking. 
 
@@ -186,7 +186,7 @@ Use of the keyboard input setting requires the following:
 
 **Mapping voice output to a field** causes data in that field to be spoken aloud by the device.  
 
-#### Supported Parameters: 
+#### Parameters: 
 
 **Voice text -** words input into this field are spoken to the device user when the field receives focus. For example, if a field were mapped to the scanner for input and to voice output, this prompt might read "This field speaks aloud any data acquired by the scanner." 
 
@@ -232,12 +232,25 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 
+
+#### Parameters: 
+
+**Printer -** drop-down for selecting Bluetooth, USB or Wi-Fi printer type. 
+
+**IP/MAC -** used to set the printer's IP address for Wi-Fi or Bluetooth MAC address.
+
+**Printer ZPL -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below:  
+
+	:::xml
+	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
+
+**Script: -** displays the script as it will be sent to the printer based on the selected parameters and inputs in the fields above.  
+
+
 ## uNdEr ConTRuCtion
 
 IP address must be fed, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
 ***Note:  In order to select any button (and prevent the actual work of the button) to map printer, we need to double tap it***.
-
-      '^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
 
 ***Note: Make sure you are not using any double- inverted commas(“) in the tool. For example your id must be with single inverted comma as shown above.
 We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement***.

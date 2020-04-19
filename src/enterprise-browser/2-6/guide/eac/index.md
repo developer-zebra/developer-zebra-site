@@ -7,20 +7,22 @@ layout: guide.html
 
 ## Overview
 
-Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies [DOM injection](../dominjectionandroid), which can add capabilities to a running EB app without changing the source code. This tool can map EB fields or buttons to Zebra devices such as scanners, printers and keyboards and or can voice-enable fields for spoken input and/or output. 
+Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser that simplifies [DOM injection](../dominjectionandroid), a process that can add capabilities to a running EB app without changing the source code. This tool maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards and can voice-enable fields for spoken input and/or output. 
 
-EAC is a browser-based solution that presents an easy-to-use GUI for creating DIM injection configuration files and does not require changes to the EB app's source code or access to a target’s application server. EAC is designed to help companies that use SAP ITSmobile and similar solutions easily modify legacy apps. 
+EAC is a browser-based solution that presents an easy-to-use GUI for creating DOM injection configuration files. It is designed to help companies that use SAP ITSmobile and similar solutions easily modify legacy apps without requiring special skills. **This guide assumes a working knowledge of Enterprise Browser and the process of editing and deploying the** `Config.xml` **files of EB apps**. 
 
 ### Requirements
 
-* Computer running Windows 8 or Windows 10 with Google Chrome installed
+* Computer running Windows 8 or Windows 10 with Google Chrome
 * Zebra device that supports Enterprise Browser<br>
 **See [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** for supported devices
-* EB 2.6 (or later) installed on device
-* Computer and device on the same IP subnet
-* `AppConfigurationUtility.apk` screen streaming service `([download]()) LINK TO COME `
+* EB 2.6 (or later) installed on a device
+* A second Zebra device with EB 2.6 installed (optional, for testing reconfigured apps)
+* App (and its `Config.xml` file) to be reconfigured, installed on device(s)
+* Computer and device(s) on the same IP subnet
+* `AppConfigurationUtility.apk` device mirroring service `DOWNLOAD LINK TO COME `
 
-> **NOTE: EAC does not support apps that employ shortcuts or [multi-session tabs](../multisession)**.  
+> **NOTE: This tool does not support apps that employ shortcuts or [multi-session tabs](../multisession)**.
 
 ---
 
@@ -28,8 +30,9 @@ EAC is a browser-based solution that presents an easy-to-use GUI for creating DI
 
 #### To set up Enterprise Application Configurator: 
 
-1. Push the `AppConfigurationUtility.apk` file to the device, **launch and tap "START NOW"** to grant permission to capture the screen. 
-2. **Add the node below code to the target EB app's** `Config.xml` **file** just _<u>before</u>_ the &lt;Applications&gt; node:<br>
+1. Push the `AppConfigurationUtility.apk` file to the device and launch it.<br>
+ When prompted, **tap "START NOW"** to grant permission to capture the screen. 
+2. **Add the first three code lines below to the target EB app's** `Config.xml` **file**, just _<u>before</u>_ the &lt;Applications&gt; node (as shown):<br>
 
 		:::xml
 		<DOMInjectionUtility>				     
@@ -108,7 +111,7 @@ _Click image to enlarge; ESC to exit_.
 
 ### Scanner Input
 
-**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. Select at least one decoder type; data acquired by the scanner is populated into that field. EAC currently supports the camera scanner and 2D barcode imager with basic configurations and a short list of popular decoder types. **Optionally, use [Data Formatting Input](#dataformatting) to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated.
+**Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus. At least one one decoder type muse be selected, and data acquired by the scanner is populated into that field. EAC **currently supports the camera scanner and 2D barcode imager** with basic configurations and a short list of popular decoder types. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
 #### Supported Parameters: 
 
@@ -131,7 +134,7 @@ Using a scanner requires the [&lt;usedwforscanning&gt; tag](../configreference/#
 
 ### Voice Input
 
-**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, use [Data Formatting Input](#dataformatting) to append the text with ENTER or TAB characters** to automatically execute the action after the field is populated. 
+**When mapping voice input to a field**, the app listens for spoken input when the field gains focus, converts the spoken input to text, and populates the field with the text. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the text with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
 #### Supported Parameters: 
 

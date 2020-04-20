@@ -268,19 +268,6 @@ _Click image to enlarge; ESC to exit_.
 
 -----
 
-<!-- 
-So, to use this tool, we need to understand two major things
-
-* For any EB app running on browser, either the
- * The URL is unique (e.g. https://abc.com/contacts) or 
- * URL is not unique but just session ids are getting appended on URLs (e.g. sap URLs).
-
-If URL is unique, we need to select the No training on the tool.
-
-If URL is not unique, we need to Yes(refer image on previous page)
-
--->
-
 ## Indicator Settings
 
 When EAC is running in "training mode" on the device, an indicator is displayed in the EB application window (see below).
@@ -353,6 +340,18 @@ Important points to Note for the tool uses:
 6.	“importing feature” is not there. suppose user set some configurations in on field then set some other configurations in other field again if user wants to change previous changes it won't be there.
 
 Note: If any custom layout which is mapped to input field is visible due to being focused, and Enterprisebrowser is sent to background. Later if EB is taken in foreground from recent app or from launcher. In this case, default layout will be visible. From second click onwards, mapping will work as it is.
+
+So, to use this tool, we need to understand two major things
+
+* For any EB app running on browser, either the
+ * The URL is unique (e.g. https://abc.com/contacts) or 
+ * URL is not unique but just session ids are getting appended on URLs (e.g. sap URLs).
+
+If URL is unique, we need to select the No training on the tool.
+
+If URL is not unique, we need to Yes(refer image on previous page)
+
+-->
 
  -->
 

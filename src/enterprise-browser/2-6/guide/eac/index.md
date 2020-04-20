@@ -90,7 +90,7 @@ _Click image to enlarge; ESC to exit_.
 2. **Select the desired input, output or processing function(s)** to assign to the selected app element.<br>
  Selections are saved automatically. 
 3. **Repeat Steps 1 and 2 until all elements are "trained"** as desired. <br>
- See [Part 3](part3setinputsandoutputs) for configurable parameter details. 
+ **See [Part 3](#part3setinputsandoutputs)** for configurable parameter details. 
 4. **Click the "DOWNLOAD" button** to save the settings to a deployment file called `appconfiguration.txt`.<br>
  `IMPORTANT:` DO NOT RENAME THIS FILE. 
 5. **Push the file to the following location** <u>on a different device</u>:<br>
@@ -118,7 +118,7 @@ _Click image to enlarge; ESC to exit_.
 
 ## Part 3 - Set Inputs and Outputs
 
-As in Enterprise Browser, EAC input fields support all [HTML Input Tags](https://www.w3schools.com/tags/tag_input.asp) ***EXCEPT*** the &lt;textarea&gt; tag. 
+**Note**: As in Enterprise Browser, EAC input fields support all [HTML &lt;input&gt; Tags](https://www.w3schools.com/tags/tag_input.asp) ***EXCEPT*** the &lt;textarea&gt; tag. 
 
 ### Scanner Input
 

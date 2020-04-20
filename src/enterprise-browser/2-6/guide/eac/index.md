@@ -73,7 +73,9 @@ layout: guide.html
 
 ## Part 2 - Map App to Functions 
 
-**EAC is ready to use when its two-panel display appears** in the workstation's browser similar to the image below. If the Windows machine isn't displaying a screen as below, please repeat the procedures in [Part 1](#part1installandsetup), above. 
+**EAC is ready to use when its two-panel display appears** in the workstation's browser similar to the image below. If the Windows machine isn't displaying a screen similar to that seen below, please repeat the procedures in [Part 1](#part1installandsetup), above. 
+
+> **NOTE**: EAC input fields support all [HTML Input Tags](https://www.w3schools.com/tags/tag_input.asp) ***EXCEPT*** the &lt;textarea&gt; tag.
 
 **The process begins by clicking on a field in the left-hand app window** and assigning it an input and/or output function on the right. Selections are saved automatically. Clicking the "DOWNLOAD" stores all settings into the file for deployment to the device(s). 
 
@@ -115,6 +117,8 @@ _Click image to enlarge; ESC to exit_.
 -----
 
 ## Part 3 - Set Inputs and Outputs
+
+As in Enterprise Browser, EAC input fields support all [HTML Input Tags](https://www.w3schools.com/tags/tag_input.asp) ***EXCEPT*** the &lt;textarea&gt; tag. 
 
 ### Scanner Input
 
@@ -248,11 +252,11 @@ _Click image to enlarge; ESC to exit_.
 **ZPL Script -** used to enter Zebra Programming Language commands. An example script is shown below. 
 <br>
 
-##### Example ZPL Script
+##### Example ZPL Script:
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
-***The middle section of the sample ZPL script shown above gets the value from the text field dynamically***.
+***The middle section of the sample ZPL script shown above, gets the value from the text field dynamically***.
 
 <!-- ORIGINAL TEXT from INPUT DOC: 
 
@@ -263,8 +267,9 @@ We can observe that, script is a ZPL script (we can form our own. Above snippet 
  -->
 
 #####Printer Notes:
-* **If mapping a Wi-Fi printer**, an IP address must be specified.
-* **Double-tap a button to select it for editing**; single-tapping executes the button's function(s).   
+* **If mapping a Wi-Fi printer**, the printer's IP address **must** be specified.
+* **If mapping a Bluetooth printer**, the printer's Bluetooth MAC address **must** be specified.
+* **To add or edit a mapping for a button, <u>double-tap the button to select it</u>**; single-tapping executes the button's function(s).   
 * **Zebra recommends against mapping I/O functions to buttons used for navigation**; results are unpredictable. 
 * **Scripts must contain only single quotes** (‘) and adhere to all other ZPL guidelines. 
 * For complete information, refer to the **[ZPL Programming Guide (.pdf)](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf)**. 

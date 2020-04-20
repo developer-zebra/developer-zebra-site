@@ -122,11 +122,13 @@ _Click image to enlarge; ESC to exit_.
 
 #### Parameters: 
 
-**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**. Not limited to those listed in the tool. 
+**All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**. Not limited to those listed in the tool.<br>
+**Must be set to "Disabled" if using one or more individual decoders**.  
 
-**[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>At least one decoder must be selected to enable scanning</u>**. 
+**[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>If no decoder is selected, EAC will map the settings currently assigned to the default scanner on the device</u>**.<br> 
+**NOTE**: The "All Decoders" parameter must be set to "Disabled" to activate individual decoders. 
 
-> **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**. 
+> **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**.  
 
 <img alt="" style="height:400px" src="eb26-03.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -145,7 +147,7 @@ Using a scanner requires the [&lt;usedwforscanning&gt; tag](../configreference/#
 
 #### Parameters: 
 
-**Continuous mode -** causes the speech engine to continue gathering spoken input after the device user has momentarily stopped speaking. 
+**Continuous mode -** **When enabled**, the speech engine continues to gather spoken input as long as the field is in focus and displays words as soon as they are decoded. **When disabled**, output begins after spoken input stops. 
 
 **Language -** sets the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. This field accepts any of the predefined [Locale codes](https://techdocs.zebra.com/mx/uimgr/#set-current-locale).  
 
@@ -167,8 +169,12 @@ Using voice input requires the [&lt;asrenabled&gt; tag](../configreference/#asre
 	<asrenabled value="1"/>
 
 ### Keyboard Input
-**Mapping a keyboard to a field** invokes that keyboard when the field gains focus. Mappings can be for any keyboard, numerical or emoji keypad or layout available on the device, including custom key layouts created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause a keyboard to be hidden (disabled), if desired. 
+**Mapping a keyboard to a field** invokes a custom key layout when the field gains focus. Layouts available for selection include only those created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause such a key layout to be hidden (disabled), if desired. 
 
+
+<!-- 4/20/20- per eng- supports only custom layouts in the kb definition file. 
+Formerly read: Mappings can be for any keyboard, numerical or emoji keypad or layout available on the device, including custom key layouts created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause a keyboard to be hidden (disabled), if desired. 
+ -->
 <img alt="" style="height:219px" src="eb26-07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -177,8 +183,8 @@ _Click image to enlarge; ESC to exit_.
 
 Use of the keyboard input setting requires the following: 
 
-* Zebra Enterprise Keyboard must be present on the device and set as the default input device
-* A `Layouts.zip` file must be in the `/enterprise/device/settings/ekb/config/` folder on the device
+* Zebra Enterprise Keyboard must be present on the device and set as the default input device.
+* A valid `Layouts.zip` file must be present in the `/enterprise/device/settings/ekb/config/` folder on the device.
 
 -----
 
@@ -246,6 +252,15 @@ _Click image to enlarge; ESC to exit_.
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
+***The middle section of the sample ZPL script shown above gets the value from the text field dynamically***.
+
+<!-- ORIGINAL TEXT from INPUT DOC: 
+
+We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement.
+
+
+
+ -->
 
 #####Printer Notes:
 * **If mapping a Wi-Fi printer**, an IP address must be specified.
@@ -255,13 +270,6 @@ _Click image to enlarge; ESC to exit_.
 * For complete information, refer to the **[ZPL Programming Guide (.pdf)](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf)**. 
 
 -----
-
-***Note: Make sure you are not using any double- inverted commas(“) in the tool. For example your id must be with single inverted comma as shown above***.
-
-***We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement***.
-
-
-## uNdEr ConTRuCtion
 
 <!-- 
 So, to use this tool, we need to understand two major things
@@ -330,9 +338,11 @@ As with the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominje
 
 -----
 
+## `uNdEr ConsTRuCtion`
+
+
 ## TROUBLESHOOTING
 
------
 ***Note: Before using printer functionality in production, you must pair the printer with device first else, you may see continuous hourglass on the screen***.
 
 -----

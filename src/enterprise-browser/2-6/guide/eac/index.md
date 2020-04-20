@@ -297,7 +297,7 @@ As with the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominje
 * **indicatorLeft** 
  * horizontal position of left edge, in pixels
 * **indicatorTop** 
- * veritical position of top edge, in pixels
+ * vertical position of top edge, in pixels
 * **indicatorHeight** 
  * indicator height from top to bottom, in pixels
 * **indicatorWidth** 
@@ -322,7 +322,7 @@ As with the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominje
 			...
 
 -----
-
+<!-- 
 ## `uNdEr ConsTRuCtion`
 
 
@@ -354,5 +354,5 @@ Important points to Note for the tool uses:
 
 Note: If any custom layout which is mapped to input field is visible due to being focused, and Enterprisebrowser is sent to background. Later if EB is taken in foreground from recent app or from launcher. In this case, default layout will be visible. From second click onwards, mapping will work as it is.
 
-
+ -->
 

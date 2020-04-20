@@ -239,19 +239,20 @@ _Click image to enlarge; ESC to exit_.
 
 **IP/MAC -** used to set the printer's IP address for Wi-Fi a printer or MAC address for Bluetooth, as applicable.
 
-**ZPL Script -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below. 
+**ZPL Script -** used to enter Zebra Programming Language commands. An example script is shown below. 
+<br>
 
 ##### Example ZPL Script
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
 
-#####Notes
-* **Double-tap a button to select it for editing**; single-tapping executes the button's function(s).   
+#####Printer Notes:
 * **If mapping a Wi-Fi printer**, an IP address must be specified.
+* **Double-tap a button to select it for editing**; single-tapping executes the button's function(s).   
 * **Zebra recommends against mapping I/O functions to buttons used for navigation**; results are unpredictable. 
-* All scripts should contain only single quotes (‘) and adhere to all other ZPL guidelines. 
-* For complete information, refer to the [Zebra Programming Language guide](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf). 
+* **Scripts must contain only single quotes** (‘) and adhere to all other ZPL guidelines. 
+* For complete information, refer to the **[ZPL Programming Guide (.pdf)](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf)**. 
 
 -----
 
@@ -262,6 +263,7 @@ _Click image to enlarge; ESC to exit_.
 
 ## uNdEr ConTRuCtion
 
+<!-- 
 So, to use this tool, we need to understand two major things
 
 * For any EB app running on browser, either the
@@ -284,33 +286,17 @@ Steps to run the tool:
 4.	Next step is to focus on any input field or button , and now it will enable the tool to map that field with zebra capabilities.
 5.	Keep on mapping the field as per need and , when done, you can download the configuration file.(appconfiguration.txt) 
 
+ -->
 
-## Other Settings
+## Indicator Settings
 
-Indicator configuration:
+When EAC is running in "training mode" on the device, a circled arrow is shown (see below) to indicate proper function. This also indicates that the &lt;appConfigEnabled value=""/&gt; tag contains a value of 1. 
 
-	While using this tool, with configuration <appConfigEnabled value="1"/>, an indicator is shown on the screen in EnterpriseBrowser(Refer above pictures and observe left-top side of the phone screen in the tool). This is just and indicator to show, whether we are in training mode or not.
-	      This image can be further configured, like setting its left, top, height and width. We can even change image shown for this indicator.
+<img alt="" style="height:219px" src="eb26-2a.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
-	As given in below snippet, indicator’s tag must be used with <appConfigEnabled value=”1”/> tag.  If we set appConfigEnabled tag’s value “2”, then EB will run on production mode and, indicator will not be shown irrespective of any values/configuration.
-
-	If <indicatorEnabled> – value=”1”: indicator will be shown
-	                                     value=”2”: indicator will not be shown
-
-	If <indicatorLeft> – value=”20”: indicator’s left coordinate will be set to given value (in px) 
-	                                     value=””: indicator’s left coordinate will be set to default
-
-	If <indicatorTop> – value=”20”:  indicator’s top coordinate will be set to given value (in px)
-	                                     value=””: indicator’s top coordinate will be set to default
-
-	If <indicatorHeight> – value=”50”: indicator’s height will be set to given value (in px)
-	                                     value=””: indicator’s height will be set to default
-
-	If <indicatorWidth> – value=”50”: indicator’s width will be set to given value (in px)
-	                                     value=””: indicator’s width will be set to default
-
-	 If <indicatorImage> – value=” %PATH%”: indicator’s image will be set from given path 
-                                     value=””: indicator’s image will be set to default
+As with the  &lt;appConfigEnabled value=""/&gt; tag, settings for the size, position and appearance of this indicator are controlled in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. 
 
     :::xml
 	 <DOMInjectionUtility>
@@ -323,6 +309,30 @@ Indicator configuration:
 	<indicatorImage value="file://%INSTALLDIR%/myimage.png"/>
 	 </DOMInjectionUtility> 
 
+		<Applications>
+			<Application>
+			...
+
+* **appConfigEnabled** possible values:
+ * 1 - Indicator shown, position settings applied
+ * 2 - Indicator hidden, position settings ignored
+* **indicatorLeft** possible values:
+ * 
+
+				If <indicatorLeft> – value=”20”: indicator’s left coordinate will be set to given value (in px) 
+				                                     value=””: indicator’s left coordinate will be set to default
+
+				If <indicatorTop> – value=”20”:  indicator’s top coordinate will be set to given value (in px)
+				                                     value=””: indicator’s top coordinate will be set to default
+
+				If <indicatorHeight> – value=”50”: indicator’s height will be set to given value (in px)
+				                                     value=””: indicator’s height will be set to default
+
+				If <indicatorWidth> – value=”50”: indicator’s width will be set to given value (in px)
+				                                     value=””: indicator’s width will be set to default
+
+				 If <indicatorImage> – value=” %PATH%”: indicator’s image will be set from given path 
+			                                     value=””: indicator’s image will be set to default
 
 -----
 

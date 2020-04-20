@@ -279,19 +279,7 @@ If URL is unique, we need to select the No training on the tool.
 
 If URL is not unique, we need to Yes(refer image on previous page)
 
-Steps to run the tool:
-
-1.	Run the EnterpriseBrowser on the device and make sure inside Config.xml below code is enabled. If value is other than 1, it will not work.
-
-		:::xml
-		<appConfigEnabled value=”1”/>
-
-2.	Select appropriate configuration  type in the desktop tool.
-3.	Now you can see the live screen of the tool. Interaction will also be enabled now on the device screen area. But still it will not enable the configurations section on the right.
-4.	Next step is to focus on any input field or button , and now it will enable the tool to map that field with zebra capabilities.
-5.	Keep on mapping the field as per need and , when done, you can download the configuration file.(appconfiguration.txt) 
-
- -->
+-->
 
 ## Indicator Settings
 

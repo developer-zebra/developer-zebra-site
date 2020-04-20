@@ -237,26 +237,30 @@ _Click image to enlarge; ESC to exit_.
 
 **Printer -** drop-down for selecting Bluetooth, USB or Wi-Fi printer type. 
 
-**IP/MAC -** used to set the printer's IP address for Wi-Fi or Bluetooth MAC address, as applicable.
+**IP/MAC -** used to set the printer's IP address for Wi-Fi a printer or MAC address for Bluetooth, as applicable.
 
-**ZPL Script -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below:  
+**ZPL Script -** used to enter [Zebra Programming Language](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf) commands. An example is shown below. 
+
+##### Example ZPL Script
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
 
-## uNdEr ConTRuCtion
-
-IP address must be fed, in case of wifi printer. Then we can send a script variable in 3rd field. Script should be well formed and contains only single quotes(‘) as below.
-***Note:  In order to select any button (and prevent the actual work of the button) to map printer, we need to double tap it***.
-
-***Note: Make sure you are not using any double- inverted commas(“) in the tool. For example your id must be with single inverted comma as shown above.
-We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement***.
-
-Note: If button is performing any other task, then while training we need to double click it to prevent its original action, so that we will be able to map printer functionalities on them.
-
-If button is navigating current page to some other page on its click, then in production environment the behavior of this functionality is unknown. Hence, we should prefer using buttons that does not navigates or changes its web page.
+#####Notes
+* **Double-tap a button to select it for editing**; single-tapping executes the button's function(s).   
+* **If mapping a Wi-Fi printer**, an IP address must be specified.
+* **Zebra recommends against mapping I/O functions to buttons used for navigation**; results are unpredictable. 
+* All scripts should contain only single quotes (‘) and adhere to all other ZPL guidelines. 
+* For complete information, refer to the [Zebra Programming Language guide](https://www.zebra.com/content/dam/zebra/manuals/printers/common/programming/zpl-zbi2-pm-en.pdf). 
 
 -----
+
+***Note: Make sure you are not using any double- inverted commas(“) in the tool. For example your id must be with single inverted comma as shown above***.
+
+***We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement***.
+
+
+## uNdEr ConTRuCtion
 
 So, to use this tool, we need to understand two major things
 

@@ -256,15 +256,7 @@ _Click image to enlarge; ESC to exit_.
 
 	:::xml
 	'^XA^FO20,20^AD^FD'+document.getElementById('yourId').value+'^XZ'
-***The middle section of the sample ZPL script shown above, gets the value from the text field dynamically***.
-
-<!-- ORIGINAL TEXT from INPUT DOC: 
-
-We can observe that, script is a ZPL script (we can form our own. Above snippet is just an example). We can see that middle part of the script is a dynamically getting value from a text area. So, this should be handled as per requirement.
-
-
-
- -->
+***The middle section of the sample ZPL script shown above (document.getElementById('yourId')) gets the value from the text field dynamically***.
 
 #####Printer Notes:
 * **If mapping a Wi-Fi printer**, the printer's IP address **must** be specified.

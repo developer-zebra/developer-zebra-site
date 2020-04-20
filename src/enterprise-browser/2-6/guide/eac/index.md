@@ -296,7 +296,7 @@ When EAC is running in "training mode" on the device, an indicator is displayed 
 _Click image to enlarge; ESC to exit_.
 <br>
 
-As with the &lt;appConfigEnabled value=""/&gt; tag itself, settings for the EAC training-mode indicator are contained in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. Tags offer control of the size, position and image used by the indicator, as well as whether it's displayed at all. 
+As with the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominjection) itself, settings for the EAC training-mode indicator are contained in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. Tags offer control of the size, position and image used by the indicator, as well as whether it's displayed at all. 
 
 * **appConfigEnabled** - On or Off
  * 1 - Indicator shown, position settings applied

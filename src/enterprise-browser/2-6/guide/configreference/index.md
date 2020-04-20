@@ -2612,6 +2612,38 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 -----
 
 ## DOM injection
+
+### DOMInjectionUtilty
+
+**Applies only to Android devices with EB 2.6 or later**. Controls whether the device is in "training mode" for use with the [Enterprise Application Configurator](../eac) utility, a tool introduced with EB 2.6 that simplifies DOM injection implementation. 
+
+**Possible Values**:
+
+* **appConfigEnabled** - On or Off
+ * 1 - Indicator shown, position settings applied
+ * 2 - Indicator hidden, position settings ignored
+* **indicatorLeft** 
+ * horizontal position of left edge, in pixels
+* **indicatorTop** 
+ * veritical position of top edge, in pixels
+* **indicatorHeight** 
+ * indicator height from top to bottom, in pixels
+* **indicatorWidth** 
+ * indicator width from left edge to right edge, in pixels
+* **indicatorImage** 
+ * indicator image file path and name on device 
+
+#### Example
+	 <DOMInjectionUtility>
+	   	<appConfigEnabled value="1"/>
+			<indicatorEnabled value="1"/>
+			<indicatorLeft value="300"/>
+			<indicatorTop value="200"/>
+			<indicatorHeight value="60"/>
+			<indicatorWidth value="90"/>
+	<indicatorImage value="file://%INSTALLDIR%/myimage.png"/>
+	 </DOMInjectionUtility> 
+
 ### CustomDOMElements 
 **Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, see the [DOM Injection guides](../dom).  
 

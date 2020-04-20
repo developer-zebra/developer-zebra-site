@@ -290,14 +290,29 @@ Steps to run the tool:
 
 ## Indicator Settings
 
-When EAC is running in "training mode" on the device, a circled arrow is shown (see below) to indicate proper function. This also indicates that the &lt;appConfigEnabled value=""/&gt; tag contains a value of 1. 
+When EAC is running in "training mode" on the device, an indicator is displayed in the EB application window (see below).
 
-<img alt="" style="height:219px" src="eb26-2a.png"/>
+<img alt="" style="height:219px" src="eb26-02a.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-As with the  &lt;appConfigEnabled value=""/&gt; tag, settings for the size, position and appearance of this indicator are controlled in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. 
+As with the &lt;appConfigEnabled value=""/&gt; tag itself, settings for the EAC training-mode indicator are contained in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. Tags offer control of the size, position and image used by the indicator, as well as whether it's displayed at all. 
 
+* **appConfigEnabled** - On or Off
+ * 1 - Indicator shown, position settings applied
+ * 2 - Indicator hidden, position settings ignored
+* **indicatorLeft** 
+ * horizontal position of left edge, in pixels
+* **indicatorTop** 
+ * veritical position of top edge, in pixels
+* **indicatorHeight** 
+ * indicator height from top to bottom, in pixels
+* **indicatorWidth** 
+ * indicator width from left edge to right edge, in pixels
+* **indicatorImage** 
+ * indicator image file path and name on device 
+
+#### Example
     :::xml
 	 <DOMInjectionUtility>
 	   	<appConfigEnabled value="1"/>
@@ -312,27 +327,6 @@ As with the  &lt;appConfigEnabled value=""/&gt; tag, settings for the size, posi
 		<Applications>
 			<Application>
 			...
-
-* **appConfigEnabled** possible values:
- * 1 - Indicator shown, position settings applied
- * 2 - Indicator hidden, position settings ignored
-* **indicatorLeft** possible values:
- * 
-
-				If <indicatorLeft> – value=”20”: indicator’s left coordinate will be set to given value (in px) 
-				                                     value=””: indicator’s left coordinate will be set to default
-
-				If <indicatorTop> – value=”20”:  indicator’s top coordinate will be set to given value (in px)
-				                                     value=””: indicator’s top coordinate will be set to default
-
-				If <indicatorHeight> – value=”50”: indicator’s height will be set to given value (in px)
-				                                     value=””: indicator’s height will be set to default
-
-				If <indicatorWidth> – value=”50”: indicator’s width will be set to given value (in px)
-				                                     value=””: indicator’s width will be set to default
-
-				 If <indicatorImage> – value=” %PATH%”: indicator’s image will be set from given path 
-			                                     value=””: indicator’s image will be set to default
 
 -----
 

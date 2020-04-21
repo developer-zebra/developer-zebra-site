@@ -316,7 +316,7 @@ _Click image to enlarge; ESC to exit_.
 
 ## Also See
 
-**[DOM injection guide for Android](../dominjectionandroid)**
+**[DOM injection Guide for Android](../dominjectionandroid)**
 
 
 <!-- 

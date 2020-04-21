@@ -263,7 +263,7 @@ _Click image to enlarge_.
 	* **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
 	* **Enter the URL, friendly name, AID and quantity** 
 	* **Select Continue**.<br>
- `PERSISTENCE WARNING:` To remain on the device following an Enterprise Reset, license keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
+ `PERSISTENCE WARNING:` To set license keys to remain on the device following an Enterprise Reset, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
 7. **Complete Profile creation and scan the staging barcode**.
 8. **Confirm that the Profile successfully licensed the device**: <br>
  a. **Launch the License Manager app** on the device; activated license should be visible.<br>

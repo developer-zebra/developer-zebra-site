@@ -270,29 +270,31 @@ _Click image to enlarge; ESC to exit_.
 
 ## Indicator Settings
 
-When EAC is running in "training mode" on the device, an indicator is displayed in the EB application window (see below).
+When EAC is running in "training mode" on the device, an indicator is displayed in the EB application window (see below). The appearance and position of the indicator icon can be controlled by tags within the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominjection) of the app's `Config.xml` file. 
 
 <img alt="" style="height:219px" src="eb26-02a.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 
-As with the [&lt;appConfigEnabled value=""/&gt; tag](../configreference/#dominjection) itself, settings for the EAC training-mode indicator are contained in the &lt;DOMInjectionUtility&gt; node of the app's `Config.xml` file using the tags below. Tags offer control of the size, position and image used by the indicator, as well as whether it's displayed at all. 
+#### Parameters: 
 
-* **appConfigEnabled** - On or Off
- * 1 - Indicator shown, position settings applied
- * 2 - Indicator hidden, position settings ignored
-* **indicatorLeft** 
- * horizontal position of left edge, in pixels
-* **indicatorTop** 
- * vertical position of top edge, in pixels
-* **indicatorHeight** 
- * indicator height from top to bottom, in pixels
-* **indicatorWidth** 
- * indicator width from left edge to right edge, in pixels
-* **indicatorImage** 
- * indicator image file path and name on device 
+**appConfigEnabled -** controls whether the indicator is On or Off: 
+* 1 - Indicator shown, position settings applied
+* 2 - Indicator hidden, position settings ignored
 
-#### Example
+**indicatorLeft -** sets horizontal position of the left edge, (in pixels)
+
+**indicatorTop -** sets vertical position of the top edge (in pixels)
+
+**indicatorHeight -** sets indicator height from top to bottom (in pixels)
+
+**indicatorWidth -** sets indicator width from left edge to right edge (in pixels)
+
+**indicatorImage -** used to specify indicator image file path and name on device 
+
+
+#### Example: 
+
     :::xml
 	 <DOMInjectionUtility>
 	   	<appConfigEnabled value="1"/>
@@ -353,5 +355,4 @@ If URL is not unique, we need to Yes(refer image on previous page)
 
 -->
 
- -->
 

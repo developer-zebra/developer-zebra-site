@@ -92,8 +92,8 @@ _Click image to enlarge; ESC to exit_.
 3. **Repeat Steps 1 and 2 until all elements are "trained"** as desired. <br>
  **See [Part 3](#part3setinputsandoutputs)** for configurable parameter details. 
 4. **Click the "DOWNLOAD" button** to save the settings to a deployment file called `appconfiguration.txt`.<br>
- `IMPORTANT:` DO NOT RENAME THIS FILE. 
-5. **Push the file to the following location** <u>on a different device</u>:<br>
+ `IMPORTANT:` **DO NOT RENAME THIS FILE**. 
+5. **Push the file to the following location** <u>(optionally, on a different device)</u>:<br>
  `/sdcard/Android/data/com.symbol.enterprisebrowser/`
 6.  **Add the first three code lines below to the target EB app's** `Config.xml` **file**, just _<u>before</u>_ the &lt;Applications&gt; node (as shown):<br>
 
@@ -124,12 +124,14 @@ _Click image to enlarge; ESC to exit_.
 
 **Mapping a scanner to a field** causes the scanner to become active whenever that field is in focus, and data acquired by the scanner is populated into that field. At least one decoder type must be selected. **EAC currently supports the camera scanner and 2D barcode imager** with basic configurations and a short list of popular decoder types. **Optionally, [Data Formatting Input](#dataformatting) also can be used to append the acquired data with ENTER or TAB characters** to automatically execute the action after the field is populated. 
 
+**NOTE: If no scanner is selected, EAC maps to the scanner currently selected (or last used) by the device**. 
+
 #### Parameters: 
 
 **All Decoder -** **activates [all decoders](https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#decoderselection) supported by the device**. Not limited to those listed in the tool.<br>
 **Must be set to "Disabled" if using one or more individual decoders**.  
 
-**[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>If no decoder is selected, EAC will map the settings currently assigned to the default scanner on the device</u>**.<br> 
+**[Decoders] -** activates one or more individual decoders as required for scanning by the app. **<u>If no decoder is selected, EAC maps the settings currently assigned to the default scanner on the device</u>**.<br> 
 **NOTE**: The "All Decoders" parameter must be set to "Disabled" to activate individual decoders. 
 
 > **`WARNING:` For optimal scanning performance, Zebra recommends selecting only those decoders required by the app**.  
@@ -173,7 +175,7 @@ Using voice input requires the [&lt;asrenabled&gt; tag](../configreference/#asre
 	<asrenabled value="1"/>
 
 ### Keyboard Input
-**Mapping a keyboard to a field** invokes a custom key layout when the field gains focus. Layouts available for selection include only those created with Zebra's [Enterprise Keyboard Designer](/ekd) tool. The function also can be configured to cause such a key layout to be hidden (disabled), if desired. 
+**Mapping a keyboard to a field** invokes a custom key layout when the field gains focus. **Layouts available for selection include only those created with Zebra's [Enterprise Keyboard Designer](/ekd) tool**. The function also can be configured to cause a key layout to be hidden (disabled), if desired. 
 
 
 <!-- 4/20/20- per eng- supports only custom layouts in the kb definition file. 

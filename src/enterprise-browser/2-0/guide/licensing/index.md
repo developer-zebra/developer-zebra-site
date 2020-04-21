@@ -226,7 +226,9 @@ Successful license activation is indicated by a screen similar to the image belo
 
 Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
 
-**IMPORTANT**: The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later). They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
+##### `IMPORTANT NOTES:`
+* **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
+* **To set license keys to remain on the device following an Enterprise Reset**, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
 
 ### Prerequisites
 
@@ -260,7 +262,8 @@ _Click image to enlarge_.
  	**Best for fire-walled networks or those lacking internet access**:  
 	* **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
 	* **Enter the URL, friendly name, AID and quantity** 
-	* **Select Continue**.  
+	* **Select Continue**.<br>
+ `PERSISTENCE WARNING:` To remain on the device following an Enterprise Reset, license keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
 7. **Complete Profile creation and scan the staging barcode**.
 8. **Confirm that the Profile successfully licensed the device**: <br>
  a. **Launch the License Manager app** on the device; activated license should be visible.<br>

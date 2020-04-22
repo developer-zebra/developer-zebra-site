@@ -7,24 +7,31 @@ productversion: '2.0'
 
 ## Overview
 
-Diagnostic Tool instantly tests and diagnoses the operability of the main device systems  on Zebra mobile devices to determine system health and functionality. This application exercises device subsystems and reports the pass/fail status for the test properties. Where appropriate, Zebra Help Desk uses the tool for troubleshooting device issues, relying on the results to provide the most optimum steps to reach a resolution. Resolve simple issues and avoid unnecessary returns to the Zebra Repair Center with Diagnostic Tool, resulting to increased worker productivity and device uptime. The main device subsystems are:
+Diagnostic Tool instantly tests and diagnoses the hardware operability on Zebra mobile devices to determine system health and functionality. Where appropriate, Zebra Help Desk uses this tool for troubleshooting device issues, relying on the results to provide optimum steps to reach a resolution.  It is useful for quickly troubleshooting device issues, resulting to increased worker productivity, limited device downtime, and unnecessary returns to the Zebra Repair Center. 
 
-* **Battery** - Provides information regarding: battery level, voltage, state of charge, power soource, temperature, health percentage, backup battery voltage and manufacture date.
-* **GPS** – Provides information regarding: GPS status (enabled/disabled/not supported), latitude, longitude, altitude, bearing, speed and accuracy.
-* **System** - Provides information regarding CPU, memory, storage, and number of processes running.
-* **WLAN** – Provides information regarding: WLAN state (enable/disabled), connection status, ESSID, BSSID, MAC Address, signal strength and IP address.
-* **WAN** – Provides information regarding: SIM state, WAN type, signal strength, phone number and device ID.
-* **Bluetooth** – Provides information regarding: Bluetooth state (on/off), status (paired/unpaired), connectable/discoverable, Bluetooth address and name. <br><br>
+Hardware features tested:
+
+* **Scanner Test** – checks whether the scanner is operable
+* **Button Test** – checks the operation of push-to-talk, left or right scan trigger, volume up and volume down device buttons
+* **Touch Screen Test** – checks for operation of the device touch display
+* **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
+* **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, ping test results to specified address, radio power cycle result, signal strength, ESSID, IP address, BSSID, and speed
+* **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, model number, decommission status, voltage, current, and temperature
+* **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
+* **Audio Test** – checks for operation of the device microphone and speaker
 
 When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
+
+For more information on each test, refer to [Test Criteria](../criteria).
 
 ## New in Diagnostic Tool 2.0
 * Introduced **two modes of operation:** admin mode and user mode.
 * **Changes in supported subsystems for testing:** 
   * Subystems added: Scanner, Bluetooth, and Touch Screen. 
   * Subsystems removed: GPS, Systems
-* Added capability to **import or export configuration files.**
+* Added capability  to **import or export configuration files.**
 * New **Settings** and **Configure Tests** app screens for administrators. 
+* Added and removed device support.  See **Supported Devices** table below.
 
 ## Supported Devices
 Diagnostic Tool is pre-installed on all supported Zebra devices. 
@@ -40,6 +47,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
     <th style="text-align:center">Android 9.x <br>(Pie)</th>
   </tr>
+  <!--
   <tr>
     <td>CC600</td>
     <td></td>
@@ -90,6 +98,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
+  -->
   <tr>
     <td>MC18</td>
     <td></td>
@@ -111,15 +120,26 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
   </tr>
   <tr>
+    <td>MC32</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>MC33</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
+  <!--
   <tr>
     <td>MC40</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -129,7 +149,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td></td>
-  </tr>
+  </tr>-->
   <tr>
     <td>MC67</td>
     <td></td>
@@ -140,6 +160,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
   </tr>
+  <!--
   <tr>
     <td>MC92</td>
     <td></td>
@@ -169,40 +190,60 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
-  </tr>
+  </tr>-->
   <tr>
-    <td>TC20/TC25</td>
+    <td>TC20</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>TC51/TC56</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
   <tr>
-    <td>TC52/TC57</td>
-    <td></td>
+    <td>TC25</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC51</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC56</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC52</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC55</td>
-    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
@@ -211,8 +252,38 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
   </tr>
   <tr>
-    <td>TC70/TC75</td>
+    <td>TC57</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC70</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC70X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC75</td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -221,15 +292,16 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
   </tr>
   <tr>
-    <td>TC70X/TC75X</td>
+    <td>TC75X</td>
     <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
   </tr>
+  <!--
   <tr>
     <td>TC72/TC77</td>
     <td></td>
@@ -289,8 +361,22 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
-  </tr>
+  </tr>-->
 </table>
+
+## Important Notes
+1.	**On TC55, when performing the Scanner Test** the user must long press the scanner button for it to be detected.
+2. **If Diagnostic Tool v1.0 is already present on the device** and the user wants to install Diagnostic Tool v2.0 on the same device, there will be two applications with same name “Diagnostic Tool”. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using AppManager CSP for the device to run a single version of the app.
+3.	**If hard key buttons are remapped,** the Button test does not work as expected.
+4.	**Test failed and test timed-out** results to the same red hazard icon  <img src="hazard-icon.png" height="20">.
+5.	Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, **after exporting the .xml file, any changes in the UI no longer persist** until the .xml file is imported into the device.
+6.	Diagnostic Tool is **not supported in split screen mode.**
+7.	**On Android O and above,** WiFi extra info “essid” requires the location to be enabled in device settings due to Android restrictions. If the device location is not enabled, the value is returned as _unknown ssid_.
+8.	**Limitations due to low memory on the device:**<br />
+&nbsp;&nbsp;&nbsp;a. The user can run all tests except the Audio test since the audio file cannot be created.<br />
+&nbsp;&nbsp;&nbsp;b. The following files are created but are 0 kb in size: history.log, status.log, configuration.xml.
+
+Refer to the [Test Criteria](../criteria) section for more information.
 
 <br>
 <br>

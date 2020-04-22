@@ -12,7 +12,7 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 * Basic data formatting (i.e. append with keystrokes, a prefix, a suffix, etc.)
 * Advanced data formatting (rules-based data manipulation, action triggers, etc.)
 
-**The Basic Formatting Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes, which can be used to move the cursor to from one field of an app to another to facilitage a series of data acquisition tasks.  
+**The Basic Formatting Process Plug-in** allows DataWedge to add a prefix and/or a suffix to captured data before passing it to an Output Plug-in. It also permits the insertion of TAB and ENTER keystrokes, which can be used to move the cursor to from one field of an app to another to facilitate a series of data acquisition tasks.  
 
 If desired, BDF also can convert acquired data to hexidecimal notation. For example, if an acquired barcode data is 012345, this option could convert and send the hex equivalent data of 30**31**32**33**34**35**. 
 

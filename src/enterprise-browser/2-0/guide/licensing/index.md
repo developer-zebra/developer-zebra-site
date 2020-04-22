@@ -263,19 +263,26 @@ _Click image to enlarge_.
 	* **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
 	* **Enter the URL, friendly name, AID and quantity** 
 	* **Select Continue**.<br>
- `PERSISTENCE WARNING:` To set license keys to remain on the device following an Enterprise Reset, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
+ **c. To persist license key(s)** on the device following an Enterprise Reset:<br> 
+    * **Save key(s) to** `/enterprise/usr` folder on the device.
+    * **<u>In a single Profile</u>**:<br>
+      * **Activate key(s) using License Manager&#42;** (licensing method="reference a preactivated license file already on the mobile device")<br>
+      * **Preserve setting with [Persist Manager](/mx/persistmgr)**<br>
 7. **Complete Profile creation and scan the staging barcode**.
 8. **Confirm that the Profile successfully licensed the device**: <br>
  a. **Launch the License Manager app** on the device; activated license should be visible.<br>
  b. Alternatively, launch EB 2.0 on the device. The splash screen indicates licensing status. <br>
  c. The quantity of available licenses visible on the licensing portal should decrease by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
+
+&#42;License keys can be exported from the Zebra Licensing Portal by using the "Download Capability Response" option in the Device Action menu, which downloads a `.BIN` file containing the license for a specific device.
+
 Also see [related guides](#relatedguides). 
 
 -----
 
 ## License Transfer
-Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is accomplished by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
+Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is done by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 
 See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
 

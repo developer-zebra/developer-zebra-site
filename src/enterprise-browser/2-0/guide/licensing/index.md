@@ -262,11 +262,11 @@ _Click image to enlarge_.
  	**Best for fire-walled networks or those lacking internet access**:  
 	* **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
 	* **Enter the URL, friendly name, AID and quantity** 
-	* **Select Continue**.<br>
+	* **Select Continue**<br>
  **c. To persist license key(s)** on the device following an Enterprise Reset:<br> 
     * **Save key(s) to** `/enterprise/usr` folder on the device.
     * **<u>In a single Profile</u>**:<br>
-      * **Activate key(s) using License Manager&#42;** (licensing method="reference a preactivated license file already on the mobile device")<br>
+      * **Activate key(s) using License Manager †** (licensing method="reference a preactivated license file already on the mobile device")<br>
       * **Preserve setting with [Persist Manager](/mx/persistmgr)**<br>
 7. **Complete Profile creation and scan the staging barcode**.
 8. **Confirm that the Profile successfully licensed the device**: <br>
@@ -275,7 +275,7 @@ _Click image to enlarge_.
  c. The quantity of available licenses visible on the licensing portal should decrease by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
 
-&#42;License keys can be exported from the Zebra Licensing Portal by using the "Download Capability Response" option in the Device Action menu, which downloads a `.BIN` file containing the license for a specific device.
+**†** License keys can be exported from the Zebra Licensing Portal by using the "Download Capability Response" option in the Device Action menu, which downloads a `.BIN` file containing the license for a specific device.
 
 Also see [related guides](#relatedguides). 
 

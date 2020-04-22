@@ -256,24 +256,24 @@ _Click image to enlarge_.
  	**Zebra recommends this option for the best device visibility from the licensing portal**:<br>
 	* **Zebra license action**: Activate AID -> select "Use one of the Zebra Licensing cloud options"<br>
 	* **Cloud Source**: "Use the Zebra licensing Production Cloud" <br>
-	* Enter the AID and quantity. **Select "Continue"**.<br>
+	* Enter the AID and quantity. **Select "Continue"**<br>
 
  **b. For local (on-premise) licensing**:<br>
  	**Best for fire-walled networks or those lacking internet access**:  
 	* **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
 	* **Enter the URL, friendly name, AID and quantity** 
-	* **Select Continue**<br>
+	* **Select Continue** <br>
 7. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
- **a. Download(†) and save key(s) as `.BIN` file(s) to** `/enterprise/usr` folder on the device.<br>
- **b. <u>In a single Profile</u>**:<br>
+ **a. Download(†) and save key(s) as `.BIN` file(s) to** `/enterprise/usr` folder on the device<br>
+ **b. <u>From a single Profile</u>**:<br>
      * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device")<br>
      * **Preserve settings using [Persist Manager](/mx/persistmgr)**<br>
-8. **Complete Profile creation and scan the staging barcode**.
-9. **Confirm that the Profile successfully licensed the device**: <br>
- a. **Launch the License Manager app** on the device; activated license should be visible.<br>
- b. **Alternatively, launch EB 2.0 on the device** and view licensing status on splash screen. <br>
- c. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
+8. **Complete Profile creation and scan the staging barcode**
+9. **Confirm that the Profile successfully licensed the device**: <br>
+ a. **Launch the License Manager app** on the device; activated license should be visible<br>
+ b. **Alternatively, launch EB 2.0 on the device** and view licensing status on splash screen <br>
+ c. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there<br>
 
 **(†)** To download a License key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains a license for a specific device.
 

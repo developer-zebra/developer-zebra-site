@@ -17,7 +17,7 @@ layout: guide.html
 
 ### Requirements
 
-* **Computer running Windows** 8 or Windows 10 with Google Chrome
+* **Computer running Windows** 8 or Windows 10 with Google Chrome (81.0.4044.122 or later)
 * **Zebra device that supports Enterprise Browser** See [supported device list](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)
 * **EB 2.6 (or later)** installed on a device
 * **Optional: A second Zebra device with EB 2.6 installed** (for easier testing of reconfigured apps)

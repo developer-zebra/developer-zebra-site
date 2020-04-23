@@ -11,7 +11,7 @@ layout: guide.html
 
 **DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app**, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving that code in a file. Once that file is pushed to the target device, the desired functionality is available next time the app is launched. 
 
-**This tool is a browser-based solution** with a point-and-click interface that creates DOM injection configuration files that are ready for deployment. It is designed to help companies that use SAP ITSmobile and similar solutions to easily modify legacy apps without requiring special skills. 
+**This tool is a browser-based solution** with a point-and-click interface that creates DOM injection configuration files that are ready for deployment. It is designed to aid users of SAP ITSmobile and similar solutions to easily modify legacy apps without requiring special skills. 
 
 **NOTE: This guide assumes a working knowledge of Enterprise Browser and the process of editing and deploying its** `Config.xml` **files**. 
 
@@ -54,7 +54,7 @@ layout: guide.html
  <br>
 5. **Launch Enterprise Browser** on the device. 
 6. **In Chrome on the Windows computer, enter the IP address and port number** obtained in Step 4 into a new browser window or tab.<br>
- **NOTE: This tool <u>supports only Google Chrome</u>** running on Windows 8 or 10.<br> 
+ **NOTE: This tool <u>supports only Google Chrome</u>** running on Windows 8 or 10. **Computer and device must be on the same IP subnet**.<br> 
  After a moment, a splash page appears with a section similar to the image below.<br> 
  **Enter the EB app type**:  
  <img alt="" style="height:100px" src="eb26_09.png"/>
@@ -189,7 +189,7 @@ _Click image to enlarge; ESC to exit_.
 
 Use of the keyboard input setting requires the following: 
 
-* Zebra Enterprise Keyboard must be present on the device and set as the default input device.
+* Zebra Enterprise Keyboard 3.1.1.9 (or later) must be present on the device and set as the default keyboard.
 * A valid `Layouts.zip` file must be present in the `/enterprise/device/settings/ekb/config/` folder on the device.
 
 -----

@@ -19,7 +19,20 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.6
 
+### New Features/Guides 
+
 A new companion utility for Enterprise Browser simplifies app modifications when using DOM injection. [Enterprise Application Configurator](../eac) is a Windows-based GUI tool that easily maps Zebra-device input methods such as scanner and voice to any EB input field or button. 
+
+* **Updated Licensing Guide**: 
+ * New instructions for making license keys persist on a device 
+ * Links updated for new License Server Administrator guides for Linux and Windows 
+
+### New/Updated APIs
+
+[Barcode API](../)
+[Device API](../) updated with SendKey suport
+[Camera API](../) no longer supports FlashMode "On" setting
+
 
 
 OLD OLD OLD

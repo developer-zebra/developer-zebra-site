@@ -74,7 +74,7 @@ OLD OLD OLD
 #### Accessories
 External Vibrator Cable (CBL-NGWT- HDVBAP-01) 
 
-**<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
+**Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** for the full list of supported devices.
 
 -----
 

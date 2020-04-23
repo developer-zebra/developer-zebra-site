@@ -25,7 +25,7 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 Installing Enterprise Browser and building EB apps requires the following: 
 
 * A computer running Windows XP, 7, 8 or 10
-* One or more [supported Zebra devices](../about/#mobile) connected to the computer (as below) 
+* One or more [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) connected to the computer (as below) 
 * USB driver for targeting Zebra devices installed
 * Android Debug Bridge (if targeting Android devices)
 * Microsoft Mobile Device Center (if targeting Windows Mobile/CE devices)
@@ -47,6 +47,15 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 
 ### Windows Installation
 This section describes installation of the "Enterprise Browser for Android" deployment tool on a Windows PC. The installation process is similar for "Enterprise Browser for Windows," which is used to deploy EB to devices running Windows Mobile/CE. 
+
+#### Installation File Paths
+The EB installer writes to two folders on the development host system: 
+
+##### Executable files 
+* `C:\Program Files (x86)\Symbol Technologies Inc\Enterprise Browser for Android`
+
+##### JavaScript Libraries
+* `C:\EnterpriseBrowserForAndroid\JavaScriptFiles\EnterpriseBrowser`
 
 -----
 

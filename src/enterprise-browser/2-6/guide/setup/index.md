@@ -51,15 +51,15 @@ This section describes installation of the "Enterprise Browser for Android" depl
 #### Installation File Paths
 The EB installer writes to two folders on the development host system: 
 
-##### Executable files 
+##### Executable files: 
 * `C:\Program Files (x86)\Symbol Technologies Inc\Enterprise Browser for Android`
 
-##### JavaScript Libraries
+##### JavaScript libraries:
 * `C:\EnterpriseBrowserForAndroid\JavaScriptFiles\EnterpriseBrowser`
 
 -----
 
-**To install "Enterprise Browser for Android" on a Windows PC**:
+#### To install "Enterprise Browser for Android" on a Windows PC:
 
 **&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC** and save a copy of the Enterprise Browser `Config.xml` settings file (if desired) from the `/Android/data/com.symbol.enterprisebrowser` folder (on the device) to any other location. 
 
@@ -91,7 +91,7 @@ The Enterprise Browser deployment tool appears in a window similar to one of the
 <img alt="" style="height:350px" src="../../images/getting-started/setup/windows.png"/>
 <br>
 
-**Instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
+#### Instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below. 
 
 -----
 
@@ -308,7 +308,7 @@ Enterprise Browser also can be mass-deployed using Zebra [StageNow](../../../../
 
 -----
 
-**To manually push an EB app to a device**:
+#### To manually push an EB app to a device:
 
 **Locate the Enterprise Browser runtime files** on the installation host. This process varies from Windows and Mac OS X and hosts. Both are exaplained below. Note the separate folders for different target platforms.  
 
@@ -329,7 +329,7 @@ Open **Applications -> Enterprise Browser for [target platform]-> Runtimes**. Th
 
 -----
 
-#### The remaining steps apply to Android and Windows Mobile/CE platforms
+#### The remaining steps apply to Android and Windows Mobile/CE platforms:
 
 &#49;. After locating the desired runtime using the procedures above, **drag-copy the runtime** to the root directory of the device. 
 
@@ -366,7 +366,7 @@ The Enterprise Browser runtimes and configuration and licensing files can be dep
 
 -----
 
-**To mass-deploy Enterprise Browser**: 
+#### To mass-deploy Enterprise Browser: 
 
 **&#49;. Locate the Enterprise Browser runtime files** on the installation host: 
 

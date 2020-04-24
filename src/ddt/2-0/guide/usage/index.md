@@ -25,119 +25,104 @@ Run Diagnostic Tool using one of the following methods:
 
 
 ## User Interface
-The main screen displays the overall status of the device. 
-<img style="height:350px" src="mainscreen.png"/>
-Tap **Run Test** to initiate the test. Once the test is executed, the background color of the main screen changes based on the overall test result - green indicates the test passed and red indicates test failure. It is recommended for all tests to be performed while the device is in normal use, i.e. not docked in a cradle or connected via USB to a computer.  
-<br>
-Tap **Subsystem Tests** from the main screen to view the test results from the individual subsystems. 
+When launching the app for the first time, the main screen displays the tests available to run:
 
-<img style="height:350px" src="runtest.png"/>
-<br>
-The colored icons indicate test result status: 
-<br>
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="testpassed.png"/>Test executed and passed. Result meets specifications or feature is enabled/activated.  
+<img style="height:400px" src="mainscreen.png"/>
 
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:26px" src="testfailed.png"/>Test executed and did not pass. Review specification or further configuration may be required.  
+_Main screen_
+<br/>
+If tests have already been conducted, the test name is followed by the date when the last test was conducted.
+<br />
+<br />
+
+Tap **Run Tests** from the main screen to execute all the tests. Test execution is based on the tests selected in the **Configure Tests** screen. Once the test is initiated, the user is prompted to perform additional actions during test execution of the following: Scanner Test, Button Test, Touch Screen Test, and Audio Test.  It is recommended for all tests to be performed while the device is in normal use, i.e. not docked in a cradle or connected via USB to a computer. Once testing is complete, the results are displayed:
+<br />
+&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="testpassed.png"/><b>Pass -</b> Test executed and passed. Result passed test criteria.  
+
+&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="testfailed.png"/><b>Fail -</b>Test executed and did not meet the test criteria.  
  
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="testdisabled.png"/>Either the test is not supported on the device, the feature is disabled on the device (GPS, WAN, WLAN, etc), or the respective test is not configured to run on the device from app **Settings**. For example, some Zebra devices do not support WWAN or GPS - those tests would display with the gray icon. 
-<br><br>
+&nbsp;&nbsp;&nbsp;<img align="left" style="height:20px" src="testinfo.png"/><b>Information -</b>Data retrieved and displayed.
+<br /><br />
+Alternatively, individual tests can be performed by tapping on the individual test category and then tapping <b>Run Tests</b>.
 
-For details on the subsystem test, tap on the respective subsystem in the screen. Test properties are listed with results:  
-<br>
+### Scanner Test
+The user is prompted to scan a barcode. Results:
+* **Scanner Test –** displays barcode data
+* **Label Type –** displays barcode type or decoder scanned
 
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="subsystempass.png"/>Pass – test result meets the pass criteria <br>
+### Button Test
+The user is prompted to press the hard buttons on the device: scan trigger (left or right), push-to-talk, volume up, and volume down. Results:
+* **Button Test –** _test successful_, _test failed_, or _test timed-out_
 
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="subsystemfail.png"/>Fail – test result does not meet the pass criteria <br>
+### Touch Screen Test
+The user is prompted to touch each grid box on the screen
+* **Touch Screen Test –** _test successful_, _test failed_, or _test timed-out_
 
-&nbsp;&nbsp;&nbsp;<img align="left" style="height:25px" src="subsysteminfo.png"/>Informational – data retrieved and displayed 
-<br><br>
+### Bluetooth Tests
+Checks whether the Bluetooth radio is operable and returns Bluetooth related information.  Results:
+* **Name –** displays the Bluetooth name
+* **Radio Power Cycle –** _test successful_ or _test failed_. The state of the radio is preserved prior to this test.
+* **Functional/Non-functional –** _functional_ or _non-functional_
+* **Discoverable/Connectable -** _connectable_, _discoverable_, or _none_
 
-All tests perform a comparison of the actual property status against the device operational specification based on criteria listed in section [Test Criteria](../criteria).  
+### Wifi Tests
+Checks for operation of the WiFi radio and returns WiFi related information.  Results:
+* **MAC Address –** _valid_ or _invalid_
+* **Ping Tests –** displays _ping failed_ or the time (in ms or sec) it takes to ping the specified address if successful. Failure occurs if the WiFi is not connected to any network. The state of the radio is preserved prior to this test. If test is successful, the following values are displayed:
+     * **strength –** displays signal strength
+     * **essid –** displays ESSID
+     * **ip –** displays IP address
+     * **bssid –** _valid_ or _invalid_
+     * **speed –** displays connection speed
+* **Radio Power Cycle –** _test successful_ or _test failed_
 
-## Subsystem
-The properties tested in each subsystem are discussed in the following subsections.
+### Battery Tests
+Checks the battery status and returns battery related information.  Results:
+* **Part number –** displays the part number
+* **Serial number –** displays the serial number
+* **Model number –** displays the model number
+* **Decommission status –** displays the health of the battery as:
+     * **Normal –** the battery is in a normal state of health
+     * **Decommissioned –** the battery has reached the threshold designated, currently 400 charge cycles, indicating that the battery should be replaced with a new one soon.
+     * **Status unknown –** indicates a problem retrieving the battery health information
+* **Voltage –** displays the voltage
+* **Current –** displays the current
+* **Temperature –** displays the temperature
 
-### Battery
-Accessible by tapping **Battery** in the Subsystems screen. The following information is retrieved at the time of test execution:  
+### WWAN Tests
+Checks the operation of the WWAN radio and returns related WWAN information.  Results:
+* **Sim State –** Airplane mode must be disabled and mobile data must be enabled to pass.  Displays one of the following values:
+     * **Present –** sim card is present
+     * **Absent –** sim card is not present
+* **Voice State -** displays one of the following values:
+     * **Voice in service**
+     * **Voice out of service**
+     * **Voice Emergency only**
+     * **Voice power off**
+     * **Unknown voice**
+* **Data State –** displays one of the following values:
+     * **Data connected**
+     * **Data disconnected**
+     * **Data connecting**
+     * **Data suspended**
+     * **Unknown data**
+* **WAN Type –** displays the network type, such as: _LTE, 2G, 3G, 4G,_ or _Not Available_
+* **Signal Strength –** displays one of the following:
+     * **Not applicable -** SIM card absent
+     * **Unknown –** device could be in airplane mode
+     * **Signal strength -** in dBm
+* **Phone Number –** _valid_ or _invalid_, depending on whether or not the phone number is exposed by the service provider.
+* **Device ID –** _valid_ or _invalid_, depending on whether or not the device ID is exposed
 
-* Battery Level - percent of remaining battery life 
-* Battery Voltage 
-* Status – battery state of charge: full, charging or discharging 
-* Power Source – USB Power, AC Power or Battery Power 
-* Temperature - battery temperature 
-* Health Percentage – battery health percentage if battery type is PowerPrecision+, otherwise battery charge cycle is displayed 
-* Backup Battery Voltage 
-* Manufacture Date - manufacture date of battery 
-     
-
-These tests can be used to determine if the battery is over or under temperature, whether there is too much drain on the battery by the device, or whether it is time to replace the battery so corrective action can be made prior to battery failure. 
-
-### GPS
-Accessible by tapping **GPS** in the Subsystems screen. If GPS is supported on the device, the following information is retrieved at the time of test execution: 
-* GPS Provider – status of GPS: enabled, disabled, or not supported
-* Latitude  
-* Longitude  
-* Altitude - height above sea level 
-* Bearing – compass direction from current position  
-* Speed - distance travelled over a given interval of time
-* Accuracy - provides estimated horizontal accuracy of position, radially (in meters) 
-     
-
-Unlike the other tests which take a snapshot of the system, this test periodically receives information from the GPS radio and automatically updates the data. It can take several seconds of polling before the data becomes reliable and is eventually displayed. If the data has a green background but the Longitude and Latitude are both 0, then GPS is active but either there are no satellites in range or the system is still collecting data before it can be displayed.  
-
-### System
-Accessible by tapping **System** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* CPU Load (%)
-* Free Physical Memory (in MB) 
-* Free Storage (in MB) 
-* Process Count - number of processes currently running 
-     
-
-These tests can be used to determine if the CPU or memory load is too high, whether there are too many processes running on the device, or whether storage on the device is reaching full capacity. 
-
-### WLAN 
-Accessible by tapping **WLAN** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* WLAN Enabled – state of WLAN radio: enabled or disabled 
-* WLAN Status – status of connection 
-* ESSID 
-* BSSID 
-* MAC Address 
-* Signal – signal strength 
-* IP Address   
-     
-
-This information can be used to determine whether the WLAN is configured correctly or whether there is any device connectivity with the AP or network. 
-
-
-### WWAN 
-Accessible by tapping **WWAN** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* SIM State – presence of the SIM card and whether it is locked or unlocked 
-* WAN Type - type of carrier technology in use (e.g. GPRS, CDMA, EDGE, etc.)
-* Signal Strength 
-* Phone Number 
-* Device ID - MEID (Mobile Equipment Identifier)    
-     
-
-This information can be used to determine whether the device WWAN is configured correctly. The test fails if  any of the following conditions are met: the power to the WAN radio is off, the ICCID (Integrated Circuit Card Identifier) cannot be read from the SIM card, the phone number cannot be read, the registration status cannot be found, the carrier cannot be found, or the signal strength is below 30%.  
-
-
-### Bluetooth 
-Accessible by tapping **Bluetooth** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* Enabled – Bluetooth radio is on or off.  
-* Status – paired or not paired 
-* Address – Bluetooth MAC address 
-* Name – if defined, displays user defined name. Otherwise displays default device name.   
-* Connectable/Discoverable - 3 modes: 
-     * None: Both discoverable and connectable modes are disabled on the Bluetooth adapter.
-     * Connectable: Discoverable mode is disabled, connectable mode is enabled on the Bluetooth adapter.
-     * Connectable and discoverable: Both discoverable and connectable modes are enabled on the Bluetooth adapter.
-     
-
-This test can be used to determine the status of the Bluetooth radio on the device.
+### Audio Test
+Checks for operation of the device microphone and speaker.  Results:
+* **Audio Test –** _test successful_ or _test failed_
 
 <br>
 <br>
 <br>
+
+------
 
 ## See Also
 

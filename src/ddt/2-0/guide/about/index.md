@@ -20,18 +20,20 @@ Hardware features tested:
 * **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 * **Audio Test** – checks for operation of the device microphone and speaker
 
-When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
-
-For more information on each test, refer to [Test Criteria](../criteria).
+<br>
+<p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
+<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. 
+</p>
+<br>
 
 ## New in Diagnostic Tool 2.0
 * Introduced **two modes of operation:** admin mode and user mode.
-* **Changes in supported subsystems for testing:** 
-  * Subystems added: Scanner, Bluetooth, and Touch Screen. 
-  * Subsystems removed: GPS, Systems
-* Added capability  to **import or export configuration files.**
+* **Changes in supported tests:** 
+    * Tests added: Scanner, Bluetooth, and Touch Screen. 
+    * Tests removed: GPS, Systems
+* Added capability to **import or export configuration files.**
 * New **Settings** and **Configure Tests** app screens for administrators. 
-* Added and removed device support.  See **Supported Devices** table below.
+* Added and removed device support. See **Supported Devices** table below.
 
 ## Supported Devices
 Diagnostic Tool is pre-installed on all supported Zebra devices. 
@@ -364,22 +366,27 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   </tr>-->
 </table>
 
+<br>
+
 ## Important Notes
-1.	**On TC55, when performing the Scanner Test** the user must long press the scanner button for it to be detected.
+1. **On TC55, when performing the Scanner Test** the user must long press the scanner button for it to be detected.
 2. **If Diagnostic Tool v1.0 is already present on the device** and the user wants to install Diagnostic Tool v2.0 on the same device, there will be two applications with same name “Diagnostic Tool”. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using AppManager CSP for the device to run a single version of the app.
-3.	**If hard key buttons are remapped,** the Button test does not work as expected.
-4.	**Test failed and test timed-out** results to the same red hazard icon  <img src="hazard-icon.png" height="20">.
-5.	Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, **after exporting the .xml file, any changes in the UI no longer persist** until the .xml file is imported into the device.
-6.	Diagnostic Tool is **not supported in split screen mode.**
-7.	**On Android O and above,** WiFi extra info “essid” requires the location to be enabled in device settings due to Android restrictions. If the device location is not enabled, the value is returned as _unknown ssid_.
-8.	**Limitations due to low memory on the device:**<br />
+3. **If hard key buttons are remapped,** the Button test does not work as expected.
+4. **Test failed and test timed-out** results to the same red hazard icon: <img src="hazard-icon.png" style="height:20px">
+5. Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, **after exporting the .xml file, any changes in the UI no longer persist** until the .xml file is imported into the device.
+6. Diagnostic Tool is **not supported in split screen mode.**
+7. **On Android O and above,** WiFi extra info “essid” requires the location to be enabled in device settings due to Android restrictions. If the device location is not enabled, the value is returned as _unknown ssid_.
+8. When using **multiple Android user accounts on a single device,** Diagnostic Tool use and functionality only applies to the active primary user.
+9.	**Limitations due to low memory on the device:**<br />
 &nbsp;&nbsp;&nbsp;a. The user can run all tests except the Audio test since the audio file cannot be created.<br />
 &nbsp;&nbsp;&nbsp;b. The following files are created but are 0 kb in size: history.log, status.log, configuration.xml.
 
-Refer to the [Test Criteria](../criteria) section for more information.
+<br>
+<p>Refer to the <a href="../criteria">Test Criteria</a> section for more information. </p>
+<br>
+<br>
 
-<br>
-<br>
+------
 
 ## See Also
 

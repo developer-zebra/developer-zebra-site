@@ -105,22 +105,18 @@ Configuration parameters:
 * **Audio Test –** tests operation of the device microphone and speaker
      * **Test Timeout –** specifies the time in seconds to wait for user input
 
+
+
+<br>
+
 When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
 
-Refer to [Test Criteria](../criteria) section for more information.
-
-<!--
-## Configure Tests
-Enable/disable the subsystem tests to be conducted: Scanner, Button, Touch Screen, Bluetooth, Wifi, Battery, WWAN, Audio.
-
-
-## Report 
-A snapshot report of the last test executed is located on the device in file path `\SelfDiagnostics\SelfDiagnosticLogs.ini`. All information collected during the test is logged in this file. The time stamp is provided under section DiagnosticResults. Test properties are listed in the respective subsystem: System, Bluetooth, WLAN, GPS, WWAN, and Battery. 
--->
+<br />
+<p>Refer to <a href="../criteria">Test Criteria</a> section for more information.</p>
 
 <br>
-<br>
-<br>
+
+------
 
 ## See Also
 

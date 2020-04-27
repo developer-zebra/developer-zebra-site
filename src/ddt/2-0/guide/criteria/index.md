@@ -25,9 +25,9 @@ Diagnostic Tool tests for the operation of device hardware features based on spe
     <td style="text-align:left">Passes when a barcode is scanned successfully.</td>
   </tr>
   <tr>
-    <td style="text-align:center">Battery</td>
+    <td style="text-align:center">Button</td>
     <td style="text-align:center">Yes</td>
-    <td style="text-align:left">Button press:<br>&nbsp;&nbsp;- scan trigger (left or right)<br>&nbsp;&nbsp;- push-to-talk<br>&nbsp;&nbsp;- volume up<br>&nbsp;&nbsp;- volume down</td>
+    <td style="text-align:left">Button press:<br>&nbsp;&nbsp;- Scan trigger (left or right)<br>&nbsp;&nbsp;- Push-to-talk<br>&nbsp;&nbsp;- Volume up<br>&nbsp;&nbsp;- Volume down</td>
     <td style="text-align:left">Passes when the button press is detected for each of the buttons.</td>
   </tr>
   <tr>
@@ -39,25 +39,25 @@ Diagnostic Tool tests for the operation of device hardware features based on spe
   <tr>
     <td style="text-align:center">Bluetooth</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- name<br>&nbsp;&nbsp;- radio<br>&nbsp;&nbsp;power cycle<br>&nbsp;&nbsp;- functional/non-functional<br>&nbsp;&nbsp;- connectable/<br>discoverable</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Name<br>&nbsp;&nbsp;- Radio power cycle<br>&nbsp;&nbsp;- Functional/<br>Non-functional<br>&nbsp;&nbsp;- Connectable/<br>Discoverable</td>
     <td style="text-align:left">Passes if the Bluetooth radio can be power cycled and the information is returned successfully.</td>
   </tr>
   <tr>
     <td style="text-align:center">WLAN</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- <font color="red">MAC Address</font><br>&nbsp;&nbsp;- Ping Test<br>&nbsp;&nbsp;- Radio Power Cycle<br>&nbsp;&nbsp;- signal strength (i)<br>&nbsp;&nbsp;- ESSID (i)<br>&nbsp;&nbsp;- IP address (i)<br>&nbsp;&nbsp;- <font color="red">BSSID (i)</font><br>&nbsp;&nbsp;- speed (i)</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- <font color="red">MAC address</font><br>&nbsp;&nbsp;- Ping test<br>&nbsp;&nbsp;- Radio power cycle<br>&nbsp;&nbsp;- Signal strength (i)<br>&nbsp;&nbsp;- ESSID (i)<br>&nbsp;&nbsp;- IP address (i)<br>&nbsp;&nbsp;- <font color="red">BSSID (i)</font><br>&nbsp;&nbsp;- Speed (i)</td>
     <td style="text-align:left">Passes when the button press is detected for each of the buttons.</td>
   </tr>
   <tr>
     <td style="text-align:center">WAN</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Sim State<br>&nbsp;&nbsp;- Voice State<br>&nbsp;&nbsp;- Data State<br>&nbsp;&nbsp;- WAN type (i)<br>&nbsp;&nbsp;- Signal Strength (i)<br>&nbsp;&nbsp;- <font color="red">Phone Number (i)</font><br>&nbsp;&nbsp;- <font color="red">Device ID (i)</font></td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Sim state<br>&nbsp;&nbsp;- Voice state<br>&nbsp;&nbsp;- Data state<br>&nbsp;&nbsp;- WAN type (i)<br>&nbsp;&nbsp;- Signal strength (i)<br>&nbsp;&nbsp;- <font color="red">Phone number (i)</font><br>&nbsp;&nbsp;- <font color="red">Device ID (i)</font></td>
     <td style="text-align:left">Passes when the sim card is present. Passes automatically on non-WAN devices.</td>
   </tr>
   <tr>
     <td style="text-align:center">Battery</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- part number<br>&nbsp;&nbsp;- serial number<br>&nbsp;&nbsp;- model number<br>&nbsp;&nbsp;- decommission status<br>&nbsp;&nbsp;- voltage (i)<br>&nbsp;&nbsp;- current (i)<br>&nbsp;&nbsp;- temperature (i)</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Part number<br>&nbsp;&nbsp;- Serial number<br>&nbsp;&nbsp;- Model number<br>&nbsp;&nbsp;- Decommission status<br>&nbsp;&nbsp;- Voltage (i)<br>&nbsp;&nbsp;- Current (i)<br>&nbsp;&nbsp;- Temperature (i)</td>
     <td style="text-align:left">Passes if the decommission status is normal and the battery information is retrieved successfully.</td>
   </tr>
   <tr>

@@ -57,7 +57,7 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
 &#53;. From the computer with Enterprise Browser installed, copy the contents of `c:/EnterpriseBrowser/Feature-Demo` to the newly created `fd` folder.  
 
-	<img style="padding-left:40px;" src="http://i.imgur.com/Gk1rhab.png" width="600" height="480" border="10">
+  <img style="padding-left:40px;" src="http://i.imgur.com/Gk1rhab.png" width="600" height="480" border="10">
 
 &#54;. On the device, launch the Enterprise Browser app. A screen similar to the image below appears, showing all Feature-Demo capabilities.   
 

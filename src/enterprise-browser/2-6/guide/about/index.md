@@ -21,11 +21,8 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ### New Features/Guides 
 
-A new companion utility for Enterprise Browser simplifies app modifications when using DOM injection. [Enterprise Application Configurator](../eac) is a Windows-based GUI tool that easily maps Zebra-device input methods such as scanner and voice to any EB input field or button. 
-
-* **Updated Licensing Guide**: 
- * New instructions for making license keys persist on a device 
- * Links updated for new License Server Administrator guides for Linux and Windows 
+* **The all-new [Enterprise App Configurator](../eac) utility simplifies [DOM injection](../dominjectionandroid)** with a point-and-click interface and requires no coding or manual config-file creation. DOM injection adds capabilities to a running EB app without changing the source code. 
+* **Updated [Licensing Guide](../licensing)** now contains instructions for making license keys persist on a device and links to Zebra's newest License Server Administrator guides for Linux and Windows. 
 
 ### New/Updated APIs
 
@@ -78,12 +75,13 @@ External Vibrator Cable (CBL-NGWT- HDVBAP-01)
 
 -----
 
-### New Features/Guides
+### New/Updated Features/Guides
 
 OLD OLD OLD
-#### New for All Apps
+
 * **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
-* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
+
+
 * **The [&lt;ShowLicenseConfirmation&gt; tag](../configreference/#showlicenseconfirmation) is now supported on Android** devices (formerly Windows Mobile/CE-only), which toggles display of the “Licensed to…” dialog at launch. 
 * **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
 * **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#disablettsduringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 

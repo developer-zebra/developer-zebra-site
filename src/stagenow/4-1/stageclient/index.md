@@ -238,12 +238,9 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
 ##### `IMPORTANT NOTES:` 
-* **
 
-MX9.0 didnt had any security check, any file with extension as .bin would have skipped SUW 
-
-with MX9.1 a security check has been added for skipping SUW, so any profile created in 9.0 will not skip suw on MX 9.1 and above devices
-
+* **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
+* **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found. More about [skipping the Android SUW](../Profiles/wipedevice/#setupwizardmanualbypass).
 
 >**Note**: Staging Profiles stored on an SD card take precedence over USB.

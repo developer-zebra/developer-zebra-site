@@ -1,6 +1,6 @@
 ---
 csp: analyticsmgr
-title: Data Analytics Usage
+title: Allow Analytics Action Override
 type: parm
 order: 3
 mx: "7.2"

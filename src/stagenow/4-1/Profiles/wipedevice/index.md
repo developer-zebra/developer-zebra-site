@@ -65,7 +65,12 @@ Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u
 * **TC20/TC25 devices**:
  * **Android Nougat** with Full Image `04-14-30-0-NG-00-M1` or newer
 
-#### Notes 
+##### `IMPORTANT NOTES` 
+* **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
+* **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.
+
+##### Other Notes 
 * **Android Setup-wizard bypass applies only to GMS devices**; non-GMS devices do not employ the wizard.
 * **Scan-to-bypass functionality is present in all BSPs newer than those listed above**.
 * Go to **Settings > About phone > Build number** to display the BSP in a device.

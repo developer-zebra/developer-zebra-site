@@ -18,7 +18,7 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 * [Trusted Staging Guide](../trustedstaging) | Securing devices and the ability to configure them
 * [Dynamic Staging Guide](../dynamicstaging) | Injecting values from a file into device configurations at staging
-* [Bypassing the Android Setup Wizard](../Profiles/wipedevice/#setupwizardmanualbypass)
+* [Bypassing the Android Setup Wizard](../Profiles/wipedevice/#setupwizardmanualbypass) | Applies to devices with MX 9.0 or later
 
 <!-- 
 http://zebra-stage.github.io/stagenow/4-1/Profiles/wipedevice/#setupwizardmanualbypass
@@ -237,11 +237,11 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
-##### `IMPORTANT NOTES:` 
+##### `IMPORTANT NOTES` 
 
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
-* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found. More about [skipping the Android SUW](../Profiles/wipedevice/#setupwizardmanualbypass).
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found. More about [Setup Wizard bypass](../Profiles/wipedevice/#setupwizardmanualbypass).
 
 >**Note**: Staging Profiles stored on an SD card take precedence over USB.
 

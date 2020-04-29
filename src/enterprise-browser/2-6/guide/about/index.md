@@ -31,7 +31,6 @@ The base [EB installation](../setup) includes all necessary components to allow 
 [Camera API](../) no longer supports FlashMode "On" setting
 
 
-
 OLD OLD OLD
 ### End of Support
 

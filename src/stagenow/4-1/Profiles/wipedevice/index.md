@@ -11,9 +11,9 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Bypass Notes
 
-* **On devices with MX 7.1 or higher**, it is possible to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass). 
-
-* **On devices with Android M and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. [See below](#setupwizardmanualbypass) for details. 
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.
+* **On devices with MX 7.1 or higher**, it is possible to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset using the Power Manager CSP. More [about Power Manager's Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass) parameter. 
+* **On devices with Android M and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. [See Setup Wizard Manual Bypass](#setupwizardmanualbypass) section below for details. 
 
 -----
 

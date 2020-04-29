@@ -18,7 +18,11 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 
 * [Trusted Staging Guide](../trustedstaging) | Securing devices and the ability to configure them
 * [Dynamic Staging Guide](../dynamicstaging) | Injecting values from a file into device configurations at staging
+* [Bypassing the Android Setup Wizard](../Profiles/wipedevice/#setupwizardmanualbypass)
 
+<!-- 
+http://zebra-stage.github.io/stagenow/4-1/Profiles/wipedevice/#setupwizardmanualbypass
+ -->
 -----
 
 ## Stage a Device
@@ -224,7 +228,7 @@ For more information about creating `.bin` files, see the [Staging Profiles guid
 ### USB, SD Card Staging
 <!-- 11/8/19- this doc section is also on the /stagingprofiles page
  -->
-StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.  
+StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.
 
 **To <u>automatically</u> stage a device from a USB drive or SD card**:
 
@@ -233,7 +237,14 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
-##### `IMPORTANT:` Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard and begin staging when the `.bin` file is found. More about [skipping the Android SUW](../Profiles/wipedevice/#setupwizardmanualbypass).
+##### `IMPORTANT NOTES:` 
+* **
+
+MX9.0 didnt had any security check, any file with extension as .bin would have skipped SUW 
+
+with MX9.1 a security check has been added for skipping SUW, so any profile created in 9.0 will not skip suw on MX 9.1 and above devices
+
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found. More about [skipping the Android SUW](../Profiles/wipedevice/#setupwizardmanualbypass).
 
 >**Note**: Staging Profiles stored on an SD card take precedence over USB.
 

@@ -1,6 +1,6 @@
 ---
 csp: (86'd)
-title: Analytics Action (State)
+title: Data Analytics State
 type: parm
 order: 1
 mx: "4.3"

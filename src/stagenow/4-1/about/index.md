@@ -52,6 +52,14 @@ The following software must be installed on the staging workstation prior to usi
 
 ## What's New in v4.1
 
+####`APRIL 2020 UPDATE:` 
+**StageNow 4.1.1 can enable/disable [Dynamic Staging](../dynamicstaging)**, a feature introduced in StageNow 4.1. Disabled by default. 
+
+####Upgrades to StageNow 4.1.1 are possible only from: 
+* **StageNow 4.1.0** (replaced by v4.1.1 on the Zebra support portal) 
+* **StageNow 4.0.1**  
+* **StageNow 3.4.0** 
+
 ### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
@@ -73,9 +81,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-<u>**Introduces [Dynamic Staging](../dynamicstaging)**</u>, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
+**Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
 
-<u>**Now supports MX 9.3**</u>: which adds the following features and enhancements: 
+**Supports MX 9.3**: which adds the following features and enhancements: 
 * **Enhanced [File Manager](../csp/file)** now allows a Profile to: 
  * Download a file or files from a redirected URL (i.e. Tiny URL) 
  * Download a file from multiple redirected URLs 

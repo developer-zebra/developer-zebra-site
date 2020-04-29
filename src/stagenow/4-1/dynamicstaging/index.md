@@ -9,8 +9,6 @@ productversion: '4.1'
 
 **StageNow 4.1 (and later) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
 
-> **NOTE**: The "Host the Deployment Package Outside of StageNow FTP Server" option is not available when using Dynamic Staging.
-
 **Dynamic Staging simplifies staging based on...** 
 
 * Locale
@@ -19,6 +17,16 @@ productversion: '4.1'
 * Wi-Fi setting
 * User credentials  
 * Other customer variations
+
+####NOTES: 
+* **Only StageNow 4.1.1 (or later) can enable/disable Dynamic Staging**. Disabled by default; enable in Global Settings.
+* **Upgrades to StageNow 4.1.1 are possible only from**: 
+ * **StageNow 4.1.0** (replaced by v4.1.1 on the Zebra support portal) 
+ * **StageNow 4.0.1**  
+ * **StageNow 3.4.0** 
+* **The "Host the Deployment Package Outside of StageNow FTP Server" option is not available** when using Dynamic Staging.
+
+-----
 
 ### Requirements
 

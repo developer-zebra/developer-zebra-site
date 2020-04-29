@@ -54,6 +54,7 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the Android Setup wizard is partially completed, data entered prior to the bypass scan is applied**. 
 
+#### Bypass Limitations
 Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u>**: 
 
 * **TC51, TC56, TC70x and TC75x**:
@@ -65,12 +66,12 @@ Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u
 * **TC20/TC25 devices**:
  * **Android Nougat** with Full Image `04-14-30-0-NG-00-M1` or newer
 
-##### `IMPORTANT NOTES` 
+##### `IMPORTANT NOTES:` 
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.
 
-##### Other Notes 
+##### Other Notes: 
 * **Android Setup-wizard bypass applies only to GMS devices**; non-GMS devices do not employ the wizard.
 * **Scan-to-bypass functionality is present in all BSPs newer than those listed above**.
 * Go to **Settings > About phone > Build number** to display the BSP in a device.

@@ -13,16 +13,7 @@ Diagnostic Tool supports two modes of operation:
 ## Launch the App
 Run Diagnostic Tool using one of the following methods: 
 1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
-2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using one of the following commands based on the Android version: <br>
- a. For **Android Nougat 7.0 or earlier** use command: 
- `adb shell am broadcast -a “android.intent.SES.RunTests”`. 
- Results:
- <img style="height:70px" src="intent1.png"/>
- b. For **Android Oreo 8.0 or later** use command: 
- `adb shell am broadcast -a android.intent.SES.RunTests -p com.symbol.androiddiagnostics`. 
- Results:
- <img style="height:70px" src="intent2.png"/> 
-
+2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
 
 ## User Interface
 When launching the app for the first time, the main screen displays the tests available to run:
@@ -44,15 +35,22 @@ Tap **Run Tests** from the main screen to execute all the tests. Test execution 
 &nbsp;&nbsp;&nbsp;<img align="left" style="height:20px" src="testinfo.png"/><b>Information -</b>Data retrieved and displayed.
 <br /><br />
 Alternatively, individual tests can be performed by tapping on the individual test category and then tapping <b>Run Tests</b>.
+<br>
+
+**Test failed** and **test timed-out** result to the same red hazard icon.
 
 ### Scanner Test
 The user is prompted to scan a barcode. Results:
 * **Scanner Test –** displays barcode data
 * **Label Type –** displays barcode type or decoder scanned
+<br>
+<p><b>Note:</b> When performing the Scanner Test on TC55, the user must long press the scanner button for it to be detected.</p>
 
 ### Button Test
 The user is prompted to press the hard buttons on the device: scan trigger (left or right), push-to-talk, volume up, and volume down. Results:
 * **Button Test –** _test successful_, _test failed_, or _test timed-out_
+<br>
+<p><b>Note:</b> If hard key buttons are remapped, the Button test does not work as expected.</p>
 
 ### Touch Screen Test
 The user is prompted to touch each grid box on the screen
@@ -68,9 +66,9 @@ Checks whether the Bluetooth radio is operable and returns Bluetooth related inf
 ### Wifi Tests
 Checks for operation of the WiFi radio and returns WiFi related information.  Results:
 * **MAC Address –** _valid_ or _invalid_
-* **Ping Tests –** displays _ping failed_ or the time (in ms or sec) it takes to ping the specified address if successful. Failure occurs if the WiFi is not connected to any network. The state of the radio is preserved prior to this test. If test is successful, the following values are displayed:
+* **Network Test –** displays _connected_ or _not connected_<!-- _ping failed_ or the time (in ms or sec) it takes to ping the specified address if successful.--> Failure occurs if the WiFi is not connected to any network. The state of the radio is preserved prior to this test. If test is successful, the following values are displayed:
      * **strength –** displays signal strength
-     * **essid –** displays ESSID
+     * **essid –** displays ESSID; **On Android O and above,** the location is required to be enabled in device settings due to Android restrictions. If the device location is not enabled, the value is returned as _unknown ssid_.
      * **ip –** displays IP address
      * **bssid –** _valid_ or _invalid_
      * **speed –** displays connection speed
@@ -80,9 +78,9 @@ Checks for operation of the WiFi radio and returns WiFi related information.  Re
 Checks the battery status and returns battery related information.  Results:
 * **Part number –** displays the part number
 * **Serial number –** displays the serial number
-* **Model number –** displays the model number
+* **Manufacture date –** displays the battery date of manufacture
 * **Decommission status –** displays the health of the battery as:
-     * **Normal –** the battery is in a normal state of health
+     * **Good –** the battery is in a healthy state
      * **Decommissioned –** the battery has reached the threshold designated, currently 400 charge cycles, indicating that the battery should be replaced with a new one soon.
      * **Status unknown –** indicates a problem retrieving the battery health information
 * **Voltage –** displays the voltage
@@ -91,7 +89,7 @@ Checks the battery status and returns battery related information.  Results:
 
 ### WWAN Tests
 Checks the operation of the WWAN radio and returns related WWAN information.  Results:
-* **Sim State –** Airplane mode must be disabled and mobile data must be enabled to pass.  Displays one of the following values:
+* **Sim State –** Airplane mode must be disabled.  Displays one of the following values:
      * **Present –** sim card is present
      * **Absent –** sim card is not present
 * **Voice State -** displays one of the following values:
@@ -120,8 +118,7 @@ Checks for operation of the device microphone and speaker.  Results:
 
 <br>
 <br>
-<br>
-
+<!-- -->
 ------
 
 ## See Also

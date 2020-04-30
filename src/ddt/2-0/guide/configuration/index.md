@@ -8,18 +8,6 @@ productversion: '2.0'
 ## Overview
 This section discusses configuration settings and reporting options for Diagnostic Tool.
 
-<!--
-## Configuration Files
-Each subsystem test can be enabled/disabled by setting the corresponding flag in `/SelfDiagnostics/SelfDiagnosticSettings.txt` file on the device. Set to "0" to disable, "1" to enable. The format of selfdiagnosticsettings.txt follows:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;battery=1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bluetooth=1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gps=1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wwan=1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wlan=1  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system=1  
-<br>
--->
-
 ## Settings 
 The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:
 
@@ -65,7 +53,7 @@ Select the tests to be conducted and configure the test parameters. Access **Con
  <tr>
      <td><img style="height:400px" src="configure-1.png"/></td>
      <td>&nbsp;&nbsp;&nbsp;</td>
-     <td><img style="height:400px" src="configure-2.png"/></td>
+     <td><img style="height:400px" src="configure-2.jpg"/></td>
      <td>&nbsp;&nbsp;&nbsp;</td>
      <td><img style="height:400px" src="configure-3.png"/></td>
  </tr>
@@ -91,12 +79,12 @@ Configuration parameters:
 * **WiFi Tests –** tests operation of the WiFi radio and returns WiFi related information
      * **MAC address –** checks whether the MAC address is valid based on its format
      * **Ping Address –** specifies the domain name to perform the ping test
-     * **Ping Tests –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
+     * **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
      * **Radio Power Cycle –** checks for operability when turning the WiFi radio on/off
 * **Battery Tests –** checks the battery status and returns battery related information 
      * **Part Number –** returns the battery part number
      * **Serial Number –** returns the battery serial number
-     * **Model Number –** returns the battery model number
+     * **Manufacture Date –** returns the battery date of manufacture
      * **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
 * **WWAN Tests –** tests operation of the WWAN radio and returns related WWAN information
      * **Sim State –** checks whether the sim card is present
@@ -104,18 +92,11 @@ Configuration parameters:
      * **Data State –** checks the data state of the sim card
 * **Audio Test –** tests operation of the device microphone and speaker
      * **Test Timeout –** specifies the time in seconds to wait for user input
-
-
-
 <br>
+<p>When text values are modified, such as <b>Test Timeout</b> or <b>Ping Address</b>, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.</p>
 
-When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
-
-<br />
 <p>Refer to <a href="../criteria">Test Criteria</a> section for more information.</p>
-
-<br>
-
+<!-- -->
 ------
 
 ## See Also

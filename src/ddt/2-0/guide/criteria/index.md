@@ -45,8 +45,8 @@ Diagnostic Tool tests for the operation of device hardware features based on spe
   <tr>
     <td style="text-align:center">WLAN</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- <font color="red">MAC address</font><br>&nbsp;&nbsp;- Ping test<br>&nbsp;&nbsp;- Radio power cycle<br>&nbsp;&nbsp;- Signal strength (i)<br>&nbsp;&nbsp;- ESSID (i)<br>&nbsp;&nbsp;- IP address (i)<br>&nbsp;&nbsp;- <font color="red">BSSID (i)</font><br>&nbsp;&nbsp;- Speed (i)</td>
-    <td style="text-align:left">Passes when the button press is detected for each of the buttons.</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- <font color="red">MAC address</font><br>&nbsp;&nbsp;- Network test<br>&nbsp;&nbsp;- Radio power cycle<br>&nbsp;&nbsp;- Signal strength (i)<br>&nbsp;&nbsp;- ESSID (i)<br>&nbsp;&nbsp;- IP address (i)<br>&nbsp;&nbsp;- <font color="red">BSSID (i)</font><br>&nbsp;&nbsp;- Speed (i)</td>
+    <td style="text-align:left">Passes when the network test and radio power cycle test is successful. </td>
   </tr>
   <tr>
     <td style="text-align:center">WAN</td>
@@ -57,8 +57,8 @@ Diagnostic Tool tests for the operation of device hardware features based on spe
   <tr>
     <td style="text-align:center">Battery</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Part number<br>&nbsp;&nbsp;- Serial number<br>&nbsp;&nbsp;- Model number<br>&nbsp;&nbsp;- Decommission status<br>&nbsp;&nbsp;- Voltage (i)<br>&nbsp;&nbsp;- Current (i)<br>&nbsp;&nbsp;- Temperature (i)</td>
-    <td style="text-align:left">Passes if the decommission status is normal and the battery information is retrieved successfully.</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Part number<br>&nbsp;&nbsp;- Serial number<br>&nbsp;&nbsp;- Manufacture date<br>&nbsp;&nbsp;- Decommission status<br>&nbsp;&nbsp;- Voltage (i)<br>&nbsp;&nbsp;- Current (i)<br>&nbsp;&nbsp;- Temperature (i)</td>
+    <td style="text-align:left">Passes if the battery health is good and the battery information is retrieved successfully.</td>
   </tr>
   <tr>
     <td style="text-align:center">Audio</td>
@@ -77,7 +77,7 @@ Diagnostic Tool tests for the operation of device hardware features based on spe
 Refer to [Configure Tests](../configuration#configuretests) section for a description of each test.
 <br>
 <br>
-
+<!-- -->
 ------
 
 ## See Also

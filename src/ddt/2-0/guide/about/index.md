@@ -16,32 +16,28 @@ Hardware features tested:
 * **Touch Screen Test** – checks for operation of the device touch display
 * **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
 * **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, ping test results to specified address, radio power cycle result, signal strength, ESSID, IP address, BSSID, and speed
-* **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, model number, decommission status, voltage, current, and temperature
+* **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, and temperature
 * **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 * **Audio Test** – checks for operation of the device microphone and speaker
 
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
-<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. 
-</p>
-<br>
 
 ## New in Diagnostic Tool 2.0
-* Introduced **two modes of operation:** admin mode and user mode.
-* **Changes in supported tests:** 
-    * Tests added: Scanner, Bluetooth, and Touch Screen. 
-    * Tests removed: GPS, Systems
-* Added capability to **import or export configuration files.**
-* New **Settings** and **Configure Tests** app screens for administrators. 
+* Introduced 2 modes of operation: [admin mode and user mode](../usage).
+* Changes in supported tests:
+     * Tests added: Scanner, Button, Touch Screen, Battery, Audio
+     * Tests removed: GPS, System
+* Added capability to [import or export configuration files](../configuration).
+* New [Settings](../configuration) and [Configure Tests](../configuration) app screens for administrators. 
 * Added and removed device support. See **Supported Devices** table below.
 
 ## Supported Devices
-Diagnostic Tool is pre-installed on all supported Zebra devices. 
+<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Install the app on the following supported GMS devices, except for MC33 which only supports non-GMS: </p>
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
-    <th style="text-align:center">Android 4.1 - 4.3 <br>(Jelly Bean)</th>
     <th style="text-align:center">Android 4.4 <br>(KitKat)</th>
     <th style="text-align:center">Android 5.x <br>(Lollipop)</th>
     <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
@@ -103,7 +99,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   -->
   <tr>
     <td>MC18</td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -113,17 +108,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   </tr>
   <tr>
     <td>MC32</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>MC32</td>
-    <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -136,9 +120,8 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
   </tr>
   <!--
@@ -154,7 +137,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   </tr>-->
   <tr>
     <td>MC67</td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
@@ -198,7 +180,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -208,24 +189,12 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
   <tr>
     <td>TC51</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>TC56</td>
-    <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
@@ -239,13 +208,11 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
   <tr>
     <td>TC55</td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
@@ -254,8 +221,16 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
   </tr>
   <tr>
-    <td>TC57</td>
+    <td>TC56</td>
     <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC57</td>
     <td></td>
     <td></td>
     <td></td>
@@ -265,9 +240,8 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   </tr>
   <tr>
     <td>TC70</td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
     <td></td>
@@ -277,7 +251,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td>TC70X</td>
     <td></td>
     <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -285,7 +258,6 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
   </tr>
   <tr>
     <td>TC75</td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
@@ -297,9 +269,17 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td>TC75X</td>
     <td></td>
     <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC8000</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -368,24 +348,19 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
 
 <br>
 
+**Note:** 
+* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.0 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can either manually delete Diagnostic Tool v1.0 or disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
+* **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
+
 ## Important Notes
-1. **On TC55, when performing the Scanner Test** the user must long press the scanner button for it to be detected.
-2. **If Diagnostic Tool v1.0 is already present on the device** and the user wants to install Diagnostic Tool v2.0 on the same device, there will be two applications with same name “Diagnostic Tool”. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using AppManager CSP for the device to run a single version of the app.
-3. **If hard key buttons are remapped,** the Button test does not work as expected.
-4. **Test failed and test timed-out** results to the same red hazard icon: <img src="hazard-icon.png" style="height:20px">
-5. Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, **after exporting the .xml file, any changes in the UI no longer persist** until the .xml file is imported into the device.
-6. Diagnostic Tool is **not supported in split screen mode.**
-7. **On Android O and above,** WiFi extra info “essid” requires the location to be enabled in device settings due to Android restrictions. If the device location is not enabled, the value is returned as _unknown ssid_.
-8. When using **multiple Android user accounts on a single device,** Diagnostic Tool use and functionality only applies to the active primary user.
-9.	**Limitations due to low memory on the device:**<br />
-&nbsp;&nbsp;&nbsp;a. The user can run all tests except the Audio test since the audio file cannot be created.<br />
-&nbsp;&nbsp;&nbsp;b. The following files are created but are 0 kb in size: history.log, status.log, configuration.xml.
+1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
+2.	**Limitation due to low memory on the device -** Once the available device memory is less than 3 MB, a message appears indicating there is no space on the device and logging will no longer take place. Additionally the Audio Test cannot be executed.
+3. **Device orientation -** Diagnostic Tool is only supported in the default orientation of the device. It does not support switching between both portrait and landscape modes.
+4. **Split screen support -** On Android N and above, Diagnostic Tool does not support split screen mode.
 
 <br>
-<p>Refer to the <a href="../criteria">Test Criteria</a> section for more information. </p>
-<br>
-<br>
 
+<!-- -->
 ------
 
 ## See Also

@@ -91,6 +91,13 @@ StageNow accepts all characters (including the semi-colon) as entries in Dynamic
 
 #### To Use Dynamic Staging:
 
+##### Before beginning, enable Dynamic Staging in the Global Settings panel: 
+<img alt="image" style="height:350px" src="SN_411_dynamicStaging_on-off.png"/>
+_Click image to enlarge; ESC to exit_.<br>
+<br>
+
+##### Then open a Profile to which to add or enable dynamically staged fields:
+
 1. **Identify data-entry fields accompanied by a percent-sign** icon:  
  <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>

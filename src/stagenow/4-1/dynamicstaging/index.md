@@ -89,12 +89,13 @@ StageNow accepts all characters (including the semi-colon) as entries in Dynamic
 2. In the SSID field in StageNow, **enter "Store_01_SS%percent%ID"** as the value (for example). 
 3. **Generate the barcode(s) as desired**. When the barcode is generated, StageNow will replace "%percent%" with the "%" character, as in the "Store_01_SS%ID" name above.  
 
+-----
+
 #### To Use Dynamic Staging:
 
 ##### Before beginning, enable Dynamic Staging in the Global Settings panel: 
-<img alt="image" style="height:350px" src="SN_411_dynamicStaging_on-off.png"/>
+<img alt="image" style="height:400px" src="SN_411_dynamicStaging_on-off.png"/>
 _Click image to enlarge; ESC to exit_.<br>
-<br>
 
 ##### Next, open a Profile to which to add or enable dynamically staged fields and follow the steps below. 
 
@@ -118,14 +119,14 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. A prompt appears for selecting (**or *creating***) the `.csv` file similar:<br>
+5. A prompt appears for selecting (**or *creating***) the `.csv` file similar to the image below:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_07b.png"/>
   **To select an <i><u>existing</u></i> `.csv` file skip to Step 6**.<br>
  **To create a** `.csv` **file "on the fly"** from variables created in the Profile:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in Step a.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
-  `IMPORTANT:` **Use semi-colons to separate variable names and data and to end all lines**.<br> 
+  `IMPORTANT:` **Use semi-colons to separate variable names and data, and at the end of each line** (see Notepad image, below).<br> 
   <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
   The image below shows a correctly formatted `.csv` file:<br>
   <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>

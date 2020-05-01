@@ -28,7 +28,7 @@ The StageNow Staging Solution includes the following components:
 
 ### Devices Supported
 
-**StageNow 4.1 supports all Zebra devices running Android 4.x KitKat or higher and MX 4.3 or later**. 
+**StageNow 4.2 supports all Zebra devices running Android 4.x KitKat or higher and MX 4.3 or later**. 
 
 For more information, see the [StageNow About page](../about).
 
@@ -56,7 +56,7 @@ Following are the staging methods available via StageNow. See [Device Staging](.
 
 * NFC Tag - The operator exports profile data and programs it into an NFC tag, then reads the tag with the device's NFC tag reader by bringing the tag within a certain proximity of the device, to deploy the profile to the device.
 
-> **AUDIO NOTE**: StageNow 4.1 (and higher) no longer supports audio staging. 
+> **AUDIO NOTE**: StageNow 4.1 (and later) no longer supports audio staging. 
 
 ## Home Screen
 To open the tool, select the StageNow icon from the Start menu. 

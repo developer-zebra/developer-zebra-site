@@ -11,9 +11,9 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 4.1 User Guide, Revision A; <!-- StageNow MN-003401; --> January, 2020
+StageNow 4.2 User Guide, Revision A; <!-- StageNow MN-003401; --> May, 2020
 
-#### Covers StageNow 4.1
+#### Covers StageNow 4.2
 
 ## Overview
 
@@ -50,9 +50,47 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v4.1
+## What's New in v4.2
 
-####`APRIL 2020 UPDATE:` 
+`OLD OLD OLD`
+
+### Device Support 
+
+> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
+
+**StageNow v4.2 has been validated on devices with the following operating systems and MX versions**: 
+
+* **Android 10**
+* Android 9.x Pie
+* Android 8.x Oreo
+* Android 7.x Nougat
+* **MX 10.0**
+* MX 9.x
+* MX 8.x
+* MX 7.x
+
+-----
+
+### New Features
+
+`OLD OLD OLD` 
+
+**Introduces a [Zero Touch Wizard](../dynamicstaging)**, which automates configuration of network settings to enable a “factory-fresh” device to connect to the internet for access to Google Zero Touch servers. Zero Touch performs Device Owner EMM Enrollment with no user interaction.
+
+**Supports MX 10.0**: which adds the following major features and enhancements: 
+* **Enhanced [Power Manager](../csp/power)** now allows a Profile to: 
+ * OS Upgrade via streaming (full-package upgrade only using http or https; supported on Android 10 and later)
+ * OS Downgrade via streaming (full-package downgrade only using http or https; supported on Android 10 and later)
+* **Enhanced [Access Manager](../csp/access)** now allows an admin to: 
+ * Auto-grant permissions to an app to prevent permission "pop-up" to appear on device
+ * Designate a CSP as "Protected" from unauthorized use 
+ * Designate a Function Group (features of different CSPs) as "Protected" from unauthorized use
+
+-----
+
+## Version History
+
+###`APRIL 2020 UPDATE:` 
 **StageNow 4.1.1 can enable/disable [Dynamic Staging](../dynamicstaging)**, a feature introduced in StageNow 4.1. Disabled by default. 
 
 ####Upgrades to StageNow 4.1.1 are possible only from: 
@@ -60,7 +98,9 @@ The following software must be installed on the staging workstation prior to usi
 * **StageNow 4.0.1**  
 * **StageNow 3.4.0** 
 
-### Device Support 
+### Added in v4.1
+
+#### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
 
@@ -79,7 +119,7 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-### New Features
+#### New Features
 
 **Introduces [Dynamic Staging](../dynamicstaging)**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when barcodes (or `.bin` files) are generated. **This allows multiple staging materials to be created from a single Profile, allowing that single profile to configure various devices differently**. 
 
@@ -101,8 +141,6 @@ The following software must be installed on the staging workstation prior to usi
 <u>**Audio Staging has been removed</u>**. StageNow 4.1 (and later) no longer supports staging devices using sound. Please use StageNow 4.0 (or older) if audio staging is required. 
 
 -----
-
-## Version History
 
 ### Added in v4.0
 

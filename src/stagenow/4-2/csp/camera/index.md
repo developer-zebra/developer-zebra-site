@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: cameramgr
 product: StageNow
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 

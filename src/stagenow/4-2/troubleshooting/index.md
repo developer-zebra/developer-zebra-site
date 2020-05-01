@@ -2,7 +2,7 @@
 title: StageNow Troubleshooting
 layout: guide.html
 product: StageNow
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HIHqXYVwFQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

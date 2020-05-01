@@ -2,7 +2,7 @@
 title: Setting Types
 layout: guide.html
 product: StageNow
-productversion: '4.1'
+productversion: '4.2'
 ---
 
 This section describes the parameters and values available when creating settings. 

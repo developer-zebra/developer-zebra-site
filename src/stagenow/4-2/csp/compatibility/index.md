@@ -179,7 +179,7 @@ csps:
     url: /mx/xmlmgr
     csp: xmlmgr
 product: StageNow
-productversion: '4.1'
+productversion: '4.2'
 ---
            
 

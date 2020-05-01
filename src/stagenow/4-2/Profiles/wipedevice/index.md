@@ -64,7 +64,7 @@ Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u
  * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) or newer
 <br>
 * **TC20/TC25 devices**:
- * **Android Nougat** with Full Image `04-14-30-0-NG-00-M1` or newer
+ * **Android Nougat** with Full Image `0414-30-0-NG-00-M1` or newer
 
 ##### `IMPORTANT NOTES:` 
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 

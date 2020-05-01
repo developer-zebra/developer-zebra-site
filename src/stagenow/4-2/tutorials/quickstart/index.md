@@ -36,7 +36,7 @@ Following are the StageNow users:
 * The staging operator identifies the devices to stage and uses the Staging Tool to view and select the profiles that the administrator published. The operator then determines the staging materials to use to stage the devices (e.g., bar codes), performs the staging, and delivers the devices to the end users
 
 ### Staging Methods/Modalities
-Following are the staging methods available via StageNow. See Device Staging on page 4-1 for details:
+Following are the staging methods available via StageNow. See Device Staging on page 4 for details:
 * Bar Code Profile - The operator prints the bar code(s) containing profile information and scans with the device to configure that device.
 * NFC Tag - The operator exports profile data to an NFC tag, then reads the tag with the device within a certain proximity to deploy the profile to the device.
 

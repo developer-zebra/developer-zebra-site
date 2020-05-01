@@ -48,6 +48,11 @@ content-items:
     title: Xpert Mode
     text: 'Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles. In this mode, the administrator can use any settings and/or any Wizards offered in the StageNow tool, in any order.'
     url: /stagenow/4-2/Profiles/xpertmode
+  - type: section
+    level: 4
+    title: Zero Touch
+    text: "The Zero Touch Wizard automates configuration of a device's network settings to enable a 'factory-fresh' device to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction."
+    url: /stagenow/4-2/Profiles/zerotouch
 product: StageNow
 productversion: '4.2'
 ---

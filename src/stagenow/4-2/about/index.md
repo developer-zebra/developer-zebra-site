@@ -52,8 +52,6 @@ The following software must be installed on the staging workstation prior to usi
 
 ## What's New in v4.2
 
-`OLD OLD OLD`
-
 ### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
@@ -73,8 +71,6 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-`OLD OLD OLD` 
-
 **Introduces a [Zero Touch Wizard](../dynamicstaging)**, which automates configuration of network settings to enable a “factory-fresh” device to connect to the internet for access to Google Zero Touch servers. Zero Touch performs Device Owner EMM Enrollment with no user interaction.
 
 **Supports MX 10.0**: which adds the following major features and enhancements: 
@@ -84,7 +80,7 @@ The following software must be installed on the staging workstation prior to usi
 * **Enhanced [Access Manager](../csp/access)** now allows an admin to: 
  * Auto-grant permissions to an app to prevent permission "pop-up" to appear on device
  * Designate a CSP as "Protected" from unauthorized use 
- * Designate a Function Group (features of different CSPs) as "Protected" from unauthorized use
+ * Designate a Function Group (features selected from different CSPs) as "Protected" from unauthorized use
 
 -----
 

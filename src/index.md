@@ -242,19 +242,21 @@ products:
         url: /mx/mx-version-on-device
   - title: RxLogger
     description: A GUI-based tool for capturing log information from system and application events in a Zebra Android device.
-    url: /rxlogger/5-4/guide/about
+    url: /rxlogger/6-0/guide/about
     btn-text: Latest Guides
     image: /rxlogger/rxlogger_logo.png
     sections:
       - title: About
-        url: /rxlogger/5-4/guide/about
+        url: /rxlogger/6-0/guide/about
       - title: Settings
-        url: /rxlogger/5-4/guide/settings
+        url: /rxlogger/6-0/guide/settings
       - title: Modules
-        url: /rxlogger/5-4/guide/modules
+        url: /rxlogger/6-0/guide/modules
       - title: APIs
-        url: /rxlogger/5-4/api
+        url: /rxlogger/6-0/apis
     versions:
+      - url: /rxlogger/6-0/guide/about
+        label: '6.0'
       - url: /rxlogger/5-4/guide/about
         label: '5.4'
   - title: SimulScan

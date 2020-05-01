@@ -9,6 +9,8 @@ productversion: '5.4'
 
 RxLogger data collection modules control the logging of individual components of an Android system. Modules can be enabled or disabled and their parameters can be modified as needed. Of the 10 included modules, seven are enabled by default:
 
+<br><br>
+
 **Enabled by default**:
 * [ANR](#anrmodule)
 * [Kernel](#kernelmodule)
@@ -18,22 +20,27 @@ RxLogger data collection modules control the logging of individual components of
 * [Snapshot](#snapshotmodule)
 * [Tombstone](#tombstonemodule)
 
-**Disabled by default**: 
+<br>
+<p><b>Disabled by default</b>: </p>
+
 * [LTS](#ltsmodule)
 * [Qxdm](#qxdmmodule)
 * [Tcpdump](#tcpdumpmodule)
 
-**Tap the "About" button** for a list of active RxLogger modules: 
+<br>
+<p><b>Tap the "About" button</b> for a list of active RxLogger modules: 
 <img alt="" style="height:350px" src="rxlogger_about_screen.png"/>
 
-**Tap the Settings button** to edit module settings: 
-<img alt="" style="height:350px" src="rxlogger_running.png"/>
+<b>Tap the Settings button</b> to edit module settings: 
+<img alt="" style="height:350px" src="rxlogger_running.png"/></p>
 
-**See also**:
+<br>
+<p>See also:</p>
 
-* [How to edit and save module settings](../settings/#settingsgui)
-* [About the Settings file](../settings/#settingsfile)
+   * [How to edit and save module settings](../settings/#settingsgui)
+   * [About the Settings file](../settings/#settingsfile)
 
+<!-- -->
 -----
 
 ## ANR Module
@@ -3000,8 +3007,8 @@ Collects the Android native crash logs from the device, which contain stack trac
  </tr>
 </table>
 
+<!-- [^top](../modules) -->
 -----
-[^top](../modules)
 
 ## Related Links
 * [RxLogger Settings](../settings) - How to configure data collection module parameters

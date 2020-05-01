@@ -8,7 +8,7 @@ productversion: '5.4'
 ## Overview
 RxLogger settings are configured through the RxLogger user interface or by pushing a configuration file to the device. All settings are stored in a single `.json` file that can be exported and mass-deployed to devices across an enterprise. 
 
-###Settings Data Types 
+### Settings Data Types 
 
 * **Integer -** used to store numerical data such as the number of files to store. Allowable integers range from 0 - 2,147,483,647 (max int). For fields such as file size that do not allow a value of 0, a 1 is substituted at runtime. For integer fields, the UI accepts only numerical input.  
 
@@ -18,6 +18,7 @@ RxLogger settings are configured through the RxLogger user interface or by pushi
 
 * **List -** used to select one value from a list of pre-assigned values; represented in the UI as a group of radio buttons. 
 
+<!-- -->
 -----
 
 ### Settings GUI
@@ -40,6 +41,7 @@ RxLogger settings are configured through the RxLogger user interface or by pushi
 
 See the [Modules page](../modules) for settings information. 
 
+<!-- -->
 ----
 
 ### Settings File
@@ -62,6 +64,7 @@ When a new settings file is pushed to the device, RxLogger restarts all affected
 
 >**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI. 
 
+<!-- -->
 -----
 
 ## Related Links

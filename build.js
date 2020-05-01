@@ -948,6 +948,9 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'rxlogger/5-4/'
     }))
+        .use(foldermenu({
+        folder: 'rxlogger/6-0/'
+    }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

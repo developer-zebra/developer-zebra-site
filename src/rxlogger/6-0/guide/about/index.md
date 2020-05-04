@@ -9,6 +9,7 @@ productversion: '6.0'
 
 RxLogger is a software utility included with every Zebra device that provides centralized control of application and system logging, and can easily customize output metrics for targeted diagnostics purposes. At the core of RxLogger is `diagdaemon`, a Zebra-built logging service that collects data and event logs from the Android kernel, logcat and other system components, and stores them in a single location where they can be filtered and displayed. Through an easy-to-use GUI interface, RxLogger also can change the type and frequency of data collection and control how much data is stored on the device.
 
+> <b>Note:</b> The appearance of sample app screens displayed throughout this guide can vary by RxLogger version, Android version, and screen size.
 <!-- -->
 -----
 ## New in RxLogger 6.0

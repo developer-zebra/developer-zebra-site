@@ -5,7 +5,7 @@ type: parm
 order: 48
 mx: "8.1"
 devicetype: A
-info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot running Android 8.x Oreo or Android 10. For some devices, this feature requires purchase of a Mobility DNA Enterprise License. Changing this setting requires reboot.
+info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot running Android 8.x Oreo or Android 10. Changing this setting requires reboot.
 parm:
   pivotal: No
   name: DsdsUsage

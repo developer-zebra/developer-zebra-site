@@ -6,7 +6,7 @@ order: 165
 mx: "10.0"
 apilevel: "26"
 devicetype: A
-info: Supported on WWAN-enabled SDM660-platform devices only. For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: Supported on WWAN-enabled SDM660-platform devices only.
 parm:
   presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code"
   pivotal: No

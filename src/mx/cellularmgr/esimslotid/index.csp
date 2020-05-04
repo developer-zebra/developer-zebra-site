@@ -6,7 +6,7 @@ order: 160
 mx: "10.0"
 apilevel: "26"
 devicetype: A
-info: Supported only on WWAN-enabled devices with more than one SIM socket. For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: Supported only on WWAN-enabled devices with more than one SIM socket.
 parm:
   presentif: eSIM Features checkbox is "checked" AND Add Profile is "Use Activation Code"
   pivotal: No

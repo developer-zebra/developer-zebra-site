@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "6.2"
 devicetype: A,B
-info: Supported only on WWAN-enabled devices with more than one SIM socket. For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: Supported only on WWAN-enabled devices with more than one SIM socket.
 parm:
   pivotal: No
   name: SimSocketSelect

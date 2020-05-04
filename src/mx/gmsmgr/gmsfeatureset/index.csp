@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "8.3"
 devicetype: A
-info: Supported on SDM660-platform devices only. Zebra recommends performing a device "Reboot" following this action.
+info: Supported on SDM660-platform devices only. Zebra recommends a device Restart following this action.
 parm:
   pivotal: No
   name: GMSFeatureSet

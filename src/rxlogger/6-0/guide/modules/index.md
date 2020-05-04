@@ -23,8 +23,10 @@ RxLogger data collection modules control the logging of individual components of
 <br>
 <p><b>Disabled by default</b>: </p>
 
+* [BTSnooplog](#btsnooplogmodule)
 * [LTS](#ltsmodule)
 * [Qxdm](#qxdmmodule)
+* [Recovery](#recoverymodule)
 * [Tcpdump](#tcpdumpmodule)
 
 <br>
@@ -117,6 +119,100 @@ Controls collection of data from Android's "application not responding" (ANR) ev
   normal'>The storage path for ANR files</p>
   </td>
  </tr>
+</table>
+
+
+-----
+
+## BTSnooplog Module
+
+The BTSnooplog Module captures Bluetooth HCI (Host Controller Interface) snoop logs from the device, containing all Bluetooth transmissions made on the connected Bluetooth peripheral. Logs are stored in the folder `<RxLogger_Path>/btsnooplog/`.
+<br>
+**Note:** When a Bluetooth peripheral is paired and BTSnooplog module is enabled, expect Bluetooth to disconnect and re-connect to the peripheral as required for BTSnooplog to start capturing snoop logs. This also occurs when any changes are made to BTSnooplog configuration. 
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.65in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Name                                  </p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Type</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Default</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable Module</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables BTSnooplog module log collection</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Log path</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>String</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&lt;RxLogger_Path&gt;/btsnooplog/</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Select Trace Level</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>List</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>NONE - Index 0<br>ERROR<br>WARNING <i>(default)</i><br>API<br>EVENT<br>FULL<br>VERBOSE</p>
+  </td>
+ </tr> 
 </table>
 
 -----
@@ -1602,7 +1698,7 @@ The Long Term Storage (LTS) module gathers log files generated by other active m
 ## Qxdm Module
 
 The Qxdm Module captures Qualcomm Modem Logs from the device, which are read using a Qualcomm utility. This module also accepts a user-defined configuration file generated by Qualcomm tools and stored in the `<RxLogger_Path>/qxdm/cfg/Custom_filter.cfg` folder. 
-
+<br>
 **Warning**: Output from this module consumes all available storage space if the log size parameter is left unspecified. **Zebra recommends specifying a log size in accordance with available storage**.
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
@@ -1744,14 +1840,14 @@ The Qxdm Module captures Qualcomm Modem Logs from the device, which are read usi
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>234G – Index 0</p>
+  normal'>Default filter – Index 0</p>
   </td>
  </tr>
  <tr>
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Selects the log filter that Qxdm needs to process with</p>
+  normal'>Selects the log filter that Qxdm needs to process with (Custom Filter to be pushed)</p>
   </td>
  </tr>
  <tr>
@@ -1780,6 +1876,58 @@ The Qxdm Module captures Qualcomm Modem Logs from the device, which are read usi
   normal'>The file name if using a user-defined config file</p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'>&lt;RxLogger_Path&gt;/qxdm/cfg/Custom_filter.cfg</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=185 valign=top style='width:138.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Choose Logging Limit Type</p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>List</p>
+  </td>
+  <td width=192 valign=top style='width:143.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Default logging – Index 0</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Selects custom log option to specify the maximum number of log files to be generated</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=185 valign=top style='width:138.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Custom Logging</p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Integer</p>
+  </td>
+  <td width=192 valign=top style='width:143.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>3</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Number of log files to keep on a test set which must be specified by user. Default is 3.</p>
   </td>
  </tr>
 </table>
@@ -1912,6 +2060,59 @@ Captures the last kmsg from the device, writing it to persistent memory immediat
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'>The maximum number of ramoops log files to keep at any one time</p>
+  </td>
+ </tr>
+</table>
+
+-----
+
+## Recovery Module
+
+The Recovery Module captures recovery/OSupdate logs as well as rescue party logs from the device. Logs are stored in folder `<RxLogger_Path>/recovery`, e.g. `sdcard/RxLogger/recovery`. 
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.65in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Name </p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Type</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Default</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable Module</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables Recovery module log collection</p>
   </td>
  </tr>
 </table>

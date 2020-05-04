@@ -11,6 +11,16 @@ RxLogger is a software utility included with every Zebra device that provides ce
 
 <!-- -->
 -----
+## New in RxLogger 6.0
+* New option to [save logs to internal SD card](../settings/#settingsgui) even when an external SD card exists.
+* New capability for [Qxdm log filter](../modules/#qxdmmodule) to be user-defined.
+* New module support added: <br>
+&nbsp;&nbsp;&nbsp;• **[BTSnooplog Module](../modules/#btsnooplogmodule) -** captures Bluetooth HCI snoop logs from the device<br>
+&nbsp;&nbsp;&nbsp;• **[Recovery Module](../modules/#recoverymodule) -** captures recovery/OSupdate logsfrom the device<br>
+* [Change to storage path](../settings/#settingsfile) if external SD card does not exist.
+
+<!-- -->
+-----
 
 ## Screens and States
 

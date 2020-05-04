@@ -4,7 +4,7 @@ layout: guide.html
 product: StageNow
 productversion: '4.2'
 ---
-Use this Wizard to configure the network settings of a "factory fresh" device to enable connection through Ethernet or Wi-Fi, to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
+Use this Wizard to configure the network settings of a "factory fresh" device to enable connection through Ethernet, Wi-Fi or a non-public cellular APN, to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
 
 `OLD OLD OLD:`
 

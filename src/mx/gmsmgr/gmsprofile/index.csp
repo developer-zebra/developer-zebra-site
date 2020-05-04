@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "9.0"
 devicetype: A
-info: Supported on SDM660-platform devices only. 
+info: Supported on SDM660-platform devices only. Zebra recommends performing a device "Reboot" following this action.
 parm:
   pivotal: No
   presentif: GMS Feature Set is "GMS Profile"

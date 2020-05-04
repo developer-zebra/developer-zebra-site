@@ -46,7 +46,7 @@ parm:
       osx: "1.3"
     - code: 5
       devicetype: A,B
-      info: "Zebra recommends performing a 'Reboot' following this action."
+      info: Zebra recommends performing a device "Reboot" following this action.
       name: EnableApplication
       description: Enables the System app with the specified Package Name to be launched. If the Package Name does not exist on the device, an error is returned in the Result XML document.
       mx: "4.2"
@@ -83,7 +83,7 @@ parm:
       apilevel: "24"
     - code: 11
       devicetype: A
-      info: Supported on SDM660-platform devices only. Zebra recommends performing a "Reboot" following this action.
+      info: Supported on SDM660-platform devices only. Zebra recommends performing a device "Reboot" following this action.
       name: EnableGMSApps
       description: Enables all GMS applications and services on the device, reversing any prior Action(s) to disable them. Subsequent DisableApplication Actions are effective. 
       mx: "8.0"
@@ -140,7 +140,7 @@ Used to enter the Action to perform on an application or app-related setting or 
  * If apps were previously disabled using the "DisableGMSApps" App Manager Action, execute the "EnableGMSApps" App Manager Action. 
  * Perform the device upgrade with a package containing MX 8.3 or later.
  * Perform "Restricted" GMS Manager Action.
- * **Zebra recommends performing a "Reboot" following any Action that enables GMS restrictions**.
+ * **Zebra recommends performing a device "Reboot" following any Action that enables GMS restrictions**.
  * If desired, use Persist Manager to safeguard the XML on the device.<br>
 **`NOTE:` It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
 

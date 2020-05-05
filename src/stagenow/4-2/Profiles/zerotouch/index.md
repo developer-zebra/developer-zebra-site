@@ -44,7 +44,7 @@ sn42_ztw_00.png
  <img alt="image" style="height:350px" src="sn42_ztw_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. **Click "+ Expand"** to confirm settings, if desired.<br>
+5. **Click "+ Expand"** to review settings, if desired.<br>
  Then **click "Complete Profiles"** to continue: 
  <img alt="image" style="height:350px" src="sn42_ztw_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>

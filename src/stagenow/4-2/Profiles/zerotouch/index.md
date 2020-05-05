@@ -40,7 +40,7 @@ sn42_ztw_00.png
  <img alt="image" style="height:400px" src="sn42_ztw_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-4. **Select Persistence preference**:  
+4. **Select Persistence preference**, then **click Continue**:  
  <img alt="image" style="height:350px" src="sn42_ztw_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -54,5 +54,6 @@ sn42_ztw_00.png
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 7. **Test Profile** to confirm desired behavior. 
+8. **Select Export method** as needed.  
 
 #### The Profile is now ready for deployment. 

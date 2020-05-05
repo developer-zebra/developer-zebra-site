@@ -12,14 +12,6 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 * Zebra device running Android 10
 * EMM with Zero Touch support and credentials
 
-sn42_ztw_06.png
-sn42_ztw_05.png
-sn42_ztw_04.png
-sn42_ztw_03.png
-sn42_ztw_02.png
-sn42_ztw_01.png
-sn42_ztw_00.png
-
 -----
 
 ### Using Zero Touch Wizard

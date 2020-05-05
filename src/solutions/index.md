@@ -92,18 +92,20 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker/2-3/guide/about
+        url: /devicetracker/3-1/guide/about
       - title: Install & Setup
-        url: /devicetracker/2-3/guide/setup
+        url: /devicetracker/3-1/guide/setup
       - title: Admin View
-        url: /devicetracker/2-3/guide/admin
+        url: /devicetracker/3-1/guide/admin
       - title: Device Management
-        url: /devicetracker/2-3/guide/mgmt
+        url: /devicetracker/3-1/guide/mgmt
       - title: Configuration
-        url: /devicetracker/2-3/guide/config
+        url: /devicetracker/3-1/guide/config
       - title: Troubleshooting & FAQ
-        url: /devicetracker/2-3/guide/troubleshooting
+        url: /devicetracker/3-1/guide/troubleshooting
     versions:
+      - url: /devicetracker/3-1/guide/about
+        label: '3.1'  
       - url: /devicetracker/2-3/guide/about
         label: '2.3'
       - url: /devicetracker/2-2/guide/about

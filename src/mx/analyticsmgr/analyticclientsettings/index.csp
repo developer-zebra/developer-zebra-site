@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Analytics Action
 type: parm
-order: 3
+order: 2
 mx: "5.1"
 apilevel: "19"
 devicetype: A

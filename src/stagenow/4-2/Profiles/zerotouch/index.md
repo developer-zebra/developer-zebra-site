@@ -28,31 +28,31 @@ sn42_ztw_00.png
 
 1. From the StageNow Home screen, **click "Create new Profile"** to bring up the Wizards list.<br> 
  Then **select "Configure Zero Touch Network"** to start the Wizard:
- <img alt="image" style="height:350px" src="sn42_ztw_00.png"/>
+ <img alt="image" style="height:450px" src="sn42_ztw_00.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. **Select the network type** for connecting the device to the internet:<br>
- **NOTE**: Only one network type may be selected.  
+2. **Select the network type** for connecting the device to the internet.<br>
+ **NOTE**: Only one network type may be selected:  
  <img alt="image" style="height:350px" src="sn42_ztw_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 3. **Enter the settings** for configuring the device for internet connectivity:  
- <img alt="image" style="height:350px" src="sn42_ztw_03.png"/>
+ <img alt="image" style="height:400px" src="sn42_ztw_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 4. **Select Persistence preference**:  
  <img alt="image" style="height:350px" src="sn42_ztw_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. Click "+ Expand" to confirm settings, if desired.<br>
- Then **click "Complete Profiles"** to continue. 
+5. **Click "+ Expand"** to confirm settings, if desired.<br>
+ Then **click "Complete Profiles"** to continue: 
  <img alt="image" style="height:350px" src="sn42_ztw_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-6. Select deployment preferences. 
+6. **Select deployment preferences**: 
  <img alt="image" style="height:350px" src="sn42_ztw_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-7. Test Profile to confirm desired behavior. 
+7. **Test Profile** to confirm desired behavior. 
 
 #### The Profile is now ready for deployment. 

@@ -42,8 +42,8 @@ menu:
       url: /stagenow/4-2/settingconfig
     - title: Setting Types
       url: /stagenow/4-2/settingtypes
-    - title: Staging
-      url: /stagenow/4-2/stageclient
+    - title: Staging Guides
+      url: /stagenow/4-2/stagingguides
     - title: Troubleshoot
       url: /stagenow/4-2/troubleshooting
     - icon: fa fa-youtube-play

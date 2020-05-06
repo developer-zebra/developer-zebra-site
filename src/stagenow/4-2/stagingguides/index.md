@@ -22,7 +22,7 @@ content-items:
     level: 4
     title: Zero Touch
     text: The Zero Touch Wizard automates configuration of a device's network settings to enable a 'factory-fresh' device to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
-    url: /stagenow/4-1/Profiles/zerotouch
+    url: /stagenow/4-2/Profiles/zerotouch
 product: StageNow
 productversion: '4.2'
 ---

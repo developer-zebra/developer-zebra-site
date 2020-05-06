@@ -73,6 +73,8 @@ The following software must be installed on the staging workstation prior to usi
 
 **Introduces a [Zero Touch Wizard](../dynamicstaging)**, which automates configuration of network settings to enable a “factory-fresh” device to connect to the internet for access to Google Zero Touch servers. Zero Touch performs Device Owner EMM Enrollment with no user interaction.
 
+**A new [Staging Guides landing page](../stagingguides)** and menu tab helps admins find guides quickly.  
+
 **Supports MX 10.0**: which adds the following major features and enhancements: 
 * **Enhanced [Power Manager](../csp/power)** now allows a Profile to: 
  * OS Upgrade via streaming (full-package upgrade only using http or https; supported on Android 10 and later)

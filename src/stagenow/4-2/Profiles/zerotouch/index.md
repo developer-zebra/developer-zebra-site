@@ -41,11 +41,12 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
  <img alt="image" style="height:350px" src="sn42_ztw_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-6. **Select deployment preferences**: 
+6. **Select deployment preferences**, including barcode or USB/SD (`.bin` file) and barcode type as applicable): 
  <img alt="image" style="height:350px" src="sn42_ztw_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-7. **Test Profile** to confirm desired behavior. 
+7. **Test Profile** to confirm desired behavior.<br>
+ Then **click Publish** to make the Profile available to StageNow operators.  
 8. **Select Export method** as needed.  
 
 #### The Profile is now ready for deployment. 

@@ -26,11 +26,14 @@ Hardware features tested:
 ## New in Diagnostic Tool 2.0
 * Introduced 2 modes of operation: [admin mode and user mode](../usage).
 * Changes in supported tests:
-     * Tests added: Scanner, Button, Touch Screen, Battery, Audio
+     * Tests added: Scanner, Button, Touch Screen, Audio
      * Tests removed: GPS, System
 * Added capability to [import or export configuration files](../configuration).
 * New [Settings](../configuration) and [Configure Tests](../configuration) app screens for administrators. 
 * Added and removed device support. See **Supported Devices** table below.
+* Known Issues:
+     * On TC20 Android Nougat, when performing the Battery test the <i>Decommission status</i> may return incorrect information.
+     * On TC20 Android Oreo, when performing the Button test the scan trigger press fails.
 
 ## Supported Devices
 <p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Install the app on the following supported GMS devices, except for MC33 which only supports non-GMS: </p>
@@ -349,7 +352,7 @@ Hardware features tested:
 <br>
 
 **Note:** 
-* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.0 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can either manually delete Diagnostic Tool v1.0 or disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
+* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.0 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
 
 ## Important Notes

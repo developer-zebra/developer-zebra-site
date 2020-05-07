@@ -7,13 +7,15 @@ productversion: '2.0'
 
 ## Overview
 Diagnostic Tool supports two modes of operation:
-1. **Admin mode -** The administrator can access the app settings and modify test configurations.
-2. **User mode -** The user is restricted to only run the tests; there is no access to the app settings nor test configurations. This is the default mode.
+1. **Admin mode -** The administrator can access app settings, modify test configurations and run each individual test. This is the default mode.
+2. **User mode -** The user is restricted to only run tests; there is no access to app settings nor test configurations. To set user mode, disable <i>admin_mode</i> as referenced in the [Configuration](../configuration#configurationfile) section.
 
 ## Launch the App
 Run Diagnostic Tool using one of the following methods: 
 1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
-2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
+2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
+<br><br>
+Note: Sending the command multiple times continuously may result in unexpected behavior. It is best to wait a couple minutes for the command to complete before resending the next command.
 
 ## User Interface
 When launching the app for the first time, the main screen displays the tests available to run:
@@ -34,7 +36,7 @@ Tap **Run Tests** from the main screen to execute all the tests. Test execution 
  
 &nbsp;&nbsp;&nbsp;<img align="left" style="height:20px" src="testinfo.png"/><b>Information -</b>Data retrieved and displayed.
 <br /><br />
-Alternatively, individual tests can be performed by tapping on the individual test category and then tapping <b>Run Tests</b>.
+Alternatively, in admin mode individual tests can be performed by tapping on the individual test category and then tapping <b>Run Tests</b>.
 <br>
 
 **Test failed** and **test timed-out** result to the same red hazard icon.
@@ -82,7 +84,7 @@ Checks the battery status and returns battery related information.  Results:
 * **Decommission status –** displays the health of the battery as:
      * **Good –** the battery is in a healthy state
      * **Decommissioned –** the battery has reached the threshold designated, currently 400 charge cycles, indicating that the battery should be replaced with a new one soon.
-     * **Status unknown –** indicates a problem retrieving the battery health information
+     * **Unknown –** indicates a problem retrieving the battery health information
 * **Voltage –** displays the voltage
 * **Current –** displays the current
 * **Temperature –** displays the temperature

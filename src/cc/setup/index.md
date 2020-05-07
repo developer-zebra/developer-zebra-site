@@ -1,7 +1,7 @@
 ---
-title: Zebra Data Service Setup
+title: Common Criteria
 layout: guide.html
-product: ZDS
+product: Common Criteria
 menu:
   items:
     - title: About
@@ -16,6 +16,10 @@ menu:
 
 ## Overview
 
+Common Criteria blah blah blah
+
+
+<!-- 
 ZDS comes preinstalled on ***most*** [supported devices and Android versions](../about/#supporteddevices) (some devices running KitKat require ZDS to be installed manually). On factory-fresh devices (or immediately following a [Factory Reset](https://techdocs.zebra.com/mx/powermgr/#enterprisereset)), the Zebra Data Service (ZDA) End-user License Agreement (EULA) wizard appears after the Android Setup Wizard, and in most cases allows ZDS to be turned off (see [Check ZDS Status](#checkzdsstatus) below). To confirm installation and activation, use the instructions below. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for information about manual ZDS installation. 
 
 > `IMPORTANT:` **[Bypassing the Android Setup Wizard](https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass) also bypasses the EULA Setup Wizard**.
@@ -83,5 +87,5 @@ _Click image to enlarge; ESC to exit_.
  * **App details -** Display app origin.  
 
 ##### To exit panel, tap left-facing arrow. 
-
+ -->
 -----

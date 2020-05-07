@@ -1,7 +1,7 @@
 ---
-title: About Zebra Data Services
+title: About Common Criteria
 layout: guide.html
-product: ZDS
+product: Common Criteria
 menu:
   items:
     - title: About

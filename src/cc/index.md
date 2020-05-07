@@ -1,10 +1,10 @@
 ---
-title: Zebra Data Services
+title: Common Criteria
 img: /images/products/cc.png
 layout: redirect.html
 redirect_url: /cc/about
 menu:
-  title: Zebra Data Services 2.0
+  title: Common Criteria
   img: /cc/images/logo.png
   versions:
     - versionto: 2-0
@@ -26,4 +26,4 @@ menu:
       url: /cc/search
 ---
 
-### Redirecting to the latest ZDS documentation...
+### Redirecting to the latest Common Criteria documentation...

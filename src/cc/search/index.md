@@ -2,7 +2,7 @@
 title: Search
 layout: search.html
 index: /cc/index.json
-product: ZDS
+product: Common Criteria
 menu:
   items:
     - title: About

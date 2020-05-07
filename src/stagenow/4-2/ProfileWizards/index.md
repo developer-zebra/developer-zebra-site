@@ -1,6 +1,6 @@
 ---
 title: Profile Wizards
-description: Profiles provides information on the StageNow Wizards which allow the staging administrator to define software configuration and installation for enterprise devices. Wizards allows you to configure common tasks.
+description: Profiles store information for installing and configuring applications and settings of enterprise devices. Wizards simplify Profile creation with prompts for configuring common tasks.
 layout: list-content-items.html
 content-items:
   - type: section

@@ -5,53 +5,53 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Choosing a version
-    text: Select a version before starting a new wizard. The MX version will determine the functionality available to your profile setting.
+    title: Choose the MX Version
+    text: This Wizard aids in selection of the MX version, which determines the functionality and settings available for selection in the Profile.
     url: /stagenow/4-2/Profiles/choosingversion
   - type: section
     level: 4
     title: Configure a Device
-    text: Get your development environment setup
+    text: Use this Wizard to configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings. 
     url: /stagenow/4-2/Profiles/configdevice
   - type: section
     level: 4
     title: Connect Network
-    text: 'Use this Wizard to connect to a Wi-Fi, GPRS, or Ethernet network.'
+    text: Use this Wizard to connect to an Ethernet, GPRS or Wi-Fi network.
     url: /stagenow/4-2/Profiles/ConnectNetwork
   - type: section
     level: 4
     title: Enroll in an MDM
-    text: 'Use this Wizard to enroll a device for management by an MDM. This downloads, installs, configures, and launches an MDM agent. This Wizard also allows you to connect to a staging and/or production network and reboot the device.'
+    text: Use this Wizard to enroll a device for management by a Mobile Device Management system. This downloads, installs, configures and launches an MDM agent, allows connection to a staging and/or production network and can reboot the device.
     url: /stagenow/4-2/Profiles/enrollmdm
   - type: section
     level: 4
     title: Manage Applications
-    text: 'Use this Wizard to manage applications on a device. This downloads, installs, uninstalls and launches any applications. This Wizard also allows you to connect to a staging and/or production network, install licenses, configure simulScan, download data files, and reboot the device.'
+    text: Use this Wizard to manage applications on a device. This downloads, installs, uninstalls and launches any applications. This Wizard also allows connection to a staging and/or production network, installation of licenses, configuration of SimulScan, downloading of data files and rebooting the device.
     url: /stagenow/4-2/Profiles/manageapps
   - type: section
     level: 4
     title: Manage Device Security
-    text: 'Use this Wizard to configure security options and policies for a device. This can whitelist and blacklist applications, control screen time-outs, and enable or disable an SD card, camera, GPRS, Bluetooth, GPS, or USB.'
+    text: Use this Wizard to configure security options and policies on a device, including white- and blacklisting applications, controling screen time-outs and enabling/disabling the SD card, camera, GPRS, Bluetooth, GPS radios or the USB port.
     url: /stagenow/4-2/Profiles/managesecurity/
   - type: section
     level: 4
     title: Perform OS Update
-    text: Use this Wizard to perform an OS update on a device. This applies an update or a patch to the OS by downloading a zip file to the device or using an existing zip file on the device. This Wizard also allows you to connect to a network.
+    text: Use this Wizard to perform an OS update or OS patch on a device. This downloads and applies a zip file to the device or applies an zip file that exists on the device. This Wizard also allows connection to a network.
     url: /stagenow/4-2/Profiles/osupdate
   - type: section
     level: 4
     title: Wipe a Device
-    text: Use this Wizard to destroy device data using Enterprise or Factory Reset.
+    text: Use this Wizard to erase some device data using an Enterprise Reset or all data using Factory Reset.
     url: /stagenow/4-2/Profiles/wipedevice
   - type: section
     level: 4
     title: Xpert Mode
-    text: 'Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles. In this mode, the administrator can use any settings and/or any Wizards offered in the StageNow tool, in any order.'
+    text: Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types to build custom Profiles. In this mode, the administrator can use any settings and/or Wizards offered in the StageNow tool in any order.
     url: /stagenow/4-2/Profiles/xpertmode
   - type: section
     level: 4
     title: Zero Touch
-    text: "The Zero Touch Wizard automates configuration of a device's network settings to enable a 'factory-fresh' device to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction."
+    text: The Zero Touch Wizard automates configuration of a device's network settings to enable a "factory-fresh" device to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
     url: /stagenow/4-2/Profiles/zerotouch
 product: StageNow
 productversion: '4.2'

@@ -17,8 +17,11 @@ menu:
 ## Overview
 
 FIPS SKU of Supported Device (Andorid "O" or higher)
+
 Upgrade to A10 
+
 Load LG Patch (will contain additional functionality for CC Mode, if necessary)
+
 Load FDE to FBE Patch:
 *[Image location](https://zebra.sharepoint.com/:f:/r/sites/SDM660Q/Shared%20Documents/FBE/v2.0?csf=1&web=1&e=xT9ucI)
 * Branch: sdm660q-product-odm
@@ -28,30 +31,49 @@ Load FDE to FBE Patch:
  3. Reboot the device to recovery
  4. Install Release_FBE_recovery_package_enable_SDM660_Q.zip and reboot the device
  5. Check the encryption type. The value should be set to 'file' after conversion.
-_Encrypt Enterprise Partition_ 
-_Enterprise Partition Linux Folder Permissions_
+
+~~Encrypt Enterprise Partition~~ 
+
+~~Enterprise Partition Linux Folder Permissions~~
 F/R
-_Encrypt Enterprise Partition_ 
+
+~~Encrypt Enterprise Partition~~ 
 
 Configure using Mx
+
 Unmount SD Card
+
 StageNow in Trusted mode 
 
 Lock Down Mx
+
 Protect USBMgr
+
 Disable PersistMgr
+
 Disable SDCardMgr
-_Disable Batch CSP_
+
+~~Disable Batch CSP~~
+
 Protect  AccessMgr
+
 Configure Enrollment Network
+
 D/L, Install and Enroll DPC
+
 Lock Down Mx (Continued)
-_Disable AppMgr_
+
+~~Disable AppMgr~~
+
 Set DPM policies as per MDFPP requirements 
-_Block SD Card Access_
+
+~~Block SD Card Access~~
+
 Disable creating users 
+
 Enable Audit logging 
-_Enable FIPS on Boring SSL_
+
+~~Enable FIPS on Boring SSL~~
 
 
 <!-- Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 

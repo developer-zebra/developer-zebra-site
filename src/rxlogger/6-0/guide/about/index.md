@@ -14,11 +14,13 @@ RxLogger is a software utility included with every Zebra device that provides ce
 -----
 ## New in RxLogger 6.0
 * New option to [save logs to internal SD card](../settings/#settingsgui) even when an external SD card exists.
-* New capability for [Qxdm log filter](../modules/#qxdmmodule) to be user-defined.
+* For [Qxdm module](../modules/#qxdmmodule), added:<br>
+&nbsp;&nbsp;&nbsp;• New **default filter** option for the log filter<br>
+&nbsp;&nbsp;&nbsp;• New option to **Choose logging limit type** and specify the maximum number of log files for custom logs.
 * New module support added: <br>
 &nbsp;&nbsp;&nbsp;• **[BTSnooplog Module](../modules/#btsnooplogmodule) -** captures Bluetooth HCI snoop logs from the device<br>
 &nbsp;&nbsp;&nbsp;• **[Recovery Module](../modules/#recoverymodule) -** captures recovery/OSupdate logsfrom the device<br>
-* [Change to storage path](../settings/#settingsfile) if external SD card does not exist.
+* Change in [external storage path](../settings/#settingsfile).
 
 <!-- -->
 -----
@@ -30,17 +32,17 @@ The startup screen of RxLogger contains four simple buttons that change in appea
 ### Stopped 
 
 Initial state of RxLogger upon launch: 
-<img alt="" style="height:350px" src="rxlogger_stopped.png"/>
+<img alt="" style="height:350px" src="rxlogger_stopped.jpg"/>
 <br>
 
 ### Transitioning
 State immediately following a press of the Start or Stop buttons:
-<img alt="" style="height:350px" src="rxlogger_transitioning.png"/>
+<img alt="" style="height:350px" src="rxlogger_transitioning.jpg"/>
 <br>
 
 ### Running
 RxLogger is collecting data:
-<img alt="" style="height:350px" src="rxlogger_running.png"/>
+<img alt="" style="height:350px" src="rxlogger_running.jpg"/>
 <br>
 
 ### Unknown 

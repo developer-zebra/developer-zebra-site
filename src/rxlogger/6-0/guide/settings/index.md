@@ -26,15 +26,15 @@ RxLogger settings are configured through the RxLogger user interface or by pushi
 #### To configure general log settings through the GUI: 
 
 1. Tap the **Settings button** to display a list of configurable modules currently loaded by `diagdaemon`: 
-<img alt="" style="height:350px" src="rxlogger_running.png"/>
+<img alt="" style="height:350px" src="rxlogger_running.jpg"/>
 <br>
 2. Tap **RxLogger Settings** to display a list of general configurations.
 <img alt="" style="height:350px" src="rxlogger_settings.jpg"/>
 <br>
 3. Enable/disable the desired settings:<br>
-&nbsp;&nbsp;&nbsp;• **Enable notifications -** If enabled, RxLogger is seen in the notification bar when running. This is helpful to determine whether RxLogger is running in the background. By default, this option is _enabled_.<br>
-&nbsp;&nbsp;&nbsp;• **Enable debug logs -** If enabled, the debug logs from RxLogger and Diagdaemon are collected in the location specified in the [Settings File](#settingsfile) section. By default, this option is _disabled_.<br>
-&nbsp;&nbsp;&nbsp;• **Enable internal sdcard only -** If enabled, logs are saved to the internal SD card even when an external SD card is inserted into the device. By default, this option is _disabled_ and logs are saved to the external SD card if present. 
+&nbsp;&nbsp;&nbsp;• **Enable notifications -** If enabled, RxLogger icon is seen in the notification bar when running. This is helpful to determine whether RxLogger is running in the background. By default, this option is _enabled_.<br>
+&nbsp;&nbsp;&nbsp;• **Enable debug logs -** If enabled, the debug logs from RxLogger and Diagdaemon are collected in the location specified in the [Settings File](#settingsfile) section. <i>After enabling/disabling debug logs, tap the back button, tap <b>Save</b> and then reboot the device for the change to take into effect.</i> By default, this option is _disabled_.<br>
+&nbsp;&nbsp;&nbsp;• **Enable internal sdcard only -** If enabled, logs are saved to the internal SD card even when an external SD card is inserted into the device. By default, logs are saved tot he external SD card if present. 
 <br><br>
 
 <img alt="" style="height:350px" src="rxlogger_rxsettings.jpg"/>
@@ -43,7 +43,7 @@ RxLogger settings are configured through the RxLogger user interface or by pushi
 #### To configure module settings through the GUI: 
 
 1. Tap the **Settings** button to display a list of configurable modules currently loaded by `diagdaemon`: 
-<img alt="" style="height:350px" src="rxlogger_running.png"/>
+<img alt="" style="height:350px" src="rxlogger_running.jpg"/>
 <br>
 2. Tap the **module to be edited** to display a list of its parameters: 
 <img alt="" style="height:350px" src="rxlogger_settings.jpg"/>
@@ -63,12 +63,13 @@ See the [Modules page](../modules) for settings information.
 
 ### Settings File
 
-All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files using an enterprise mobile management (EMM) system. **Warning**: The RxLogger configuration file is human-readable, but should not be edited by hand as doing so can lead to unpredictable behavior. 
+All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files using an enterprise mobile management (EMM) system. <br>**Warning**: The RxLogger configuration file is human-readable, but should not be edited by hand as doing so can lead to unpredictable behavior. 
 
 * **File name -** `config.json`: <br>
         1. Zebra recommends using the same config.json file across devices with the same Android platform version. Use of the same file across multiple Android platform versions may lead to unexpected behavior. 
         2. A config.json file from a WWAN device cannot be used interchangeably on a WLAN device, and vice versa. WWAN related modules, such as qxdm, are not available on WLAN and can result to unexpected behavior.
 
+<!--
 * **Location -** `/<internal_storage>/RxLogger` 
 
 * **With external SD Card**: 
@@ -77,6 +78,12 @@ All RxLogger settings are stored in a file on the device, permitting remote conf
 * **With no external SD Card**: <br>
 &nbsp;&nbsp;&nbsp;• RxLogger v5.4: `/storage/sdcard0/RxLogger`<br>
 &nbsp;&nbsp;&nbsp;• RxLogger v6.0: `/sdcard/RxLogger`<br>
+-->
+* **Internal storage folder:**<br>
+&nbsp;&nbsp;&nbsp;• RxLogger v5.4: `/storage/sdcard0/RxLogger`<br>
+&nbsp;&nbsp;&nbsp;• RxLogger v6.0: `/sdcard/RxLogger`<br>
+* **External storage folder:**  `/storage/sdcard1/RxLogger`
+
 <p>When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately. </p>
 
 >**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI. 

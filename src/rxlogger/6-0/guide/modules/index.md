@@ -7,7 +7,7 @@ productversion: '6.0'
 
 ## Overview
 
-RxLogger data collection modules control the logging of individual components of an Android system. Modules can be enabled or disabled and their parameters can be modified as needed. Of the 10 included modules, seven are enabled by default:
+RxLogger data collection modules control the logging of individual components of an Android system. Modules can be enabled or disabled and their parameters can be modified as needed. Of the 12 included modules, seven are enabled by default:
 
 <br><br>
 
@@ -31,10 +31,10 @@ RxLogger data collection modules control the logging of individual components of
 
 <br>
 <p><b>Tap the "About" button</b> for a list of active RxLogger modules: 
-<img alt="" style="height:350px" src="rxlogger_about_screen.png"/>
+<img alt="" style="height:350px" src="rxlogger_about_screen.jpg"/>
 
 <b>Tap the Settings button</b> to edit module settings: 
-<img alt="" style="height:350px" src="rxlogger_running.png"/></p>
+<img alt="" style="height:350px" src="rxlogger_running.jpg"/></p>
 
 <br>
 <p>See also:</p>

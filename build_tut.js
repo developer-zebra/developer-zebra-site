@@ -224,6 +224,12 @@ var sitebuild = Metalsmith(__dirname)
 
 	}))
 
+    //Common Criteria (cc)
+    .use(foldermenu({
+        folder: 'cc',
+        automenu: true,
+        ascontent: true
+    }))
     //Zebra Data Services (ZDS) 2.0
     .use(foldermenu({
         folder: 'zds/2-0/',

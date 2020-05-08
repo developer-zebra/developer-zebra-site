@@ -14,9 +14,11 @@ menu:
       url: /cc/search
 ---
 
-###Q: What is the package name of the ZDS agent on the device?
+###Q: What is Common Criteria? 
 
-**A: The current ZDS agent is implemented as two files**:
+**A: Common Criteria is a set of requirements for securing a device**. 
+
+<!-- The current ZDS agent is implemented as two files**:
 
 * `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
 * `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
@@ -127,5 +129,6 @@ menu:
 ###Q: Why can't I see the EULA screen on my device? 
 
 **A: Some older versions of the ZDS agent did not display the end-user license agreement screen. To view the EULA, update ZDS to the latest version. Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information**. 
+-->
 
 -----

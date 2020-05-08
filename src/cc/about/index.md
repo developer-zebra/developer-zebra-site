@@ -16,7 +16,45 @@ menu:
 
 ## Overview
 
-Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
+FIPS SKU of Supported Device (Andorid "O" or higher)
+Upgrade to A10 
+Load LG Patch (will contain additional functionality for CC Mode, if necessary)
+Load FDE to FBE Patch:
+*[Image location](https://zebra.sharepoint.com/:f:/r/sites/SDM660Q/Shared%20Documents/FBE/v2.0?csf=1&web=1&e=xT9ucI)
+* Branch: sdm660q-product-odm
+* Steps to convert to FBE:
+ 1. Flash the device with image from above mentioned artifactory location.
+ 2. Reboot the device and check the encryption type(ro.crypt.type). The value should be set to 'block'
+ 3. Reboot the device to recovery
+ 4. Install Release_FBE_recovery_package_enable_SDM660_Q.zip and reboot the device
+ 5. Check the encryption type. The value should be set to 'file' after conversion.
+_Encrypt Enterprise Partition_ 
+_Enterprise Partition Linux Folder Permissions_
+F/R
+_Encrypt Enterprise Partition_ 
+
+Configure using Mx
+Unmount SD Card
+StageNow in Trusted mode 
+
+Lock Down Mx
+Protect USBMgr
+Disable PersistMgr
+Disable SDCardMgr
+_Disable Batch CSP_
+Protect  AccessMgr
+Configure Enrollment Network
+D/L, Install and Enroll DPC
+Lock Down Mx (Continued)
+_Disable AppMgr_
+Set DPM policies as per MDFPP requirements 
+_Block SD Card Access_
+Disable creating users 
+Enable Audit logging 
+_Enable FIPS on Boring SSL_
+
+
+<!-- Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
 
 <img alt="image" style="height:350px" src="VisibilityIQ_dashboard.png"/>
 _Click image to enlarge; ESC to exit_. 
@@ -59,7 +97,7 @@ _Click image to enlarge; ESC to exit_.
 * Scanner information and usage statistics
 * Reboots triggered by the system or an app
 * Application Not Responding (ANR) events
-
+ -->
 -----
 <!-- 
 ## What's New in v2.0

@@ -9,6 +9,8 @@ productversion: '4.2'
 
 **StageNow 4.0 (and higher) supports Trusted Staging**, which can protect devices with MX 9.2 and higher from unauthorized staging. Trusted devices are created from a security certificate. Once a certificate is used to create a trusted device, the device can be staged only from barcodes created using the same security certificate.
 
+> **`IMPORTANT:`** Access to Trusted Staging and Trusted Devices is possible only by Windows users with administrative privileges.
+
 #### Requirements: 
 
 * StageNow 4.0 (or higher) installed

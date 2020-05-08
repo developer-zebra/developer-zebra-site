@@ -32,12 +32,12 @@ Load FDE to FBE Patch:
  4. Install Release_FBE_recovery_package_enable_SDM660_Q.zip and reboot the device
  5. Check the encryption type. The value should be set to 'file' after conversion.
 
-~~Encrypt Enterprise Partition~~ 
+~Encrypt Enterprise Partition~ 
 
-~~Enterprise Partition Linux Folder Permissions~~
+~Enterprise Partition Linux Folder Permissions~
 F/R
 
-~~Encrypt Enterprise Partition~~ 
+~Encrypt Enterprise Partition~ 
 
 Configure using Mx
 
@@ -53,7 +53,7 @@ Disable PersistMgr
 
 Disable SDCardMgr
 
-~~Disable Batch CSP~~
+~Disable Batch CSP~
 
 Protect  AccessMgr
 
@@ -63,17 +63,17 @@ D/L, Install and Enroll DPC
 
 Lock Down Mx (Continued)
 
-~~Disable AppMgr~~
+~Disable AppMgr~
 
 Set DPM policies as per MDFPP requirements 
 
-~~Block SD Card Access~~
+~Block SD Card Access~
 
 Disable creating users 
 
 Enable Audit logging 
 
-~~Enable FIPS on Boring SSL~~
+~Enable FIPS on Boring SSL~
 
 
 <!-- Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 

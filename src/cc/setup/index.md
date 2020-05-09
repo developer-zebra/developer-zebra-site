@@ -16,7 +16,73 @@ menu:
 
 ## Overview
 
-Common Criteria blah blah blah
+The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf). 
+
+1. Upgrade the device to Android 10
+2. Apply the LG Patch for CC compliance
+3. Apply the "FDE to FBE" patch
+
+
+<!-- 
+FIPS SKU of Supported Device (Android "O" or higher)
+
+Upgrade to A10 
+
+Load LG Patch (will contain additional functionality for CC Mode, if necessary)
+
+Load FDE to FBE Patch:
+* **[FBE Package download page](https://zebra.sharepoint.com/:f:/r/sites/SDM660Q/Shared%20Documents/FBE/v2.0?csf=1&web=1&e=xT9ucI)**
+* Branch: sdm660q-product-odm
+* Steps to convert to FBE:
+ 1. Flash the device with image from above mentioned artifactory location.
+ 2. Reboot the device and check the encryption type(ro.crypt.type). The value should be set to 'block'
+ 3. Reboot the device to recovery
+ 4. Install Release_FBE_recovery_package_enable_SDM660_Q.zip and reboot the device
+ 5. Check the encryption type. The value should be set to 'file' after conversion.
+
+~Encrypt Enterprise Partition~ 
+
+~Enterprise Partition Linux Folder Permissions~
+F/R
+
+~Encrypt Enterprise Partition~ 
+
+Configure using Mx
+
+Unmount SD Card
+
+StageNow in Trusted mode 
+
+Lock Down Mx
+
+Protect USBMgr
+
+Disable PersistMgr
+
+Disable SDCardMgr
+
+~Disable Batch CSP~
+
+Protect  AccessMgr
+
+Configure Enrollment Network
+
+D/L, Install and Enroll DPC
+
+Lock Down Mx (Continued)
+
+~Disable AppMgr~
+
+Set DPM policies as per MDFPP requirements 
+
+~Block SD Card Access~
+
+Disable creating users 
+
+Enable Audit logging 
+
+~Enable FIPS on Boring SSL~
+-->
 
 
 <!-- 

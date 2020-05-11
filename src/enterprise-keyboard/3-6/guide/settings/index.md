@@ -16,8 +16,8 @@ Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock A
 * [Finger-flicks](#preferences) for typing long-press characters
 * [Swipe-to-switch](#preferences) key layouts 
 * Populate Android's [Personal Dictionary](#personaldictionary) with custom terms and abbreviations
-* `NEW in v3.4:` Assign lists of [predefined text responses](#textcorrection) to keys
-* `NEW in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
+* `ADDED in v3.4:` "Canned Text" feature allows assignment of lists of [predefined text responses](#textcorrection) to keys
+* `ADDED in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 
 #### Also See 
 

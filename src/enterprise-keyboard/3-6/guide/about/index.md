@@ -36,8 +36,9 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v3.4
+## New in v3.6
 
+OLD OLD OLD
 ### New Features 
 
 * **Enterprise Keyboard can now display Canned text responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). When selected from the list, the Canned response is sent to the focused input field as if typed in manually. See the [Enterprise Keyboard Designer user guide](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more.
@@ -111,6 +112,27 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v3.4
+
+#### New Features 
+
+* **Enterprise Keyboard can now display Canned text responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). When selected from the list, the Canned response is sent to the focused input field as if typed in manually. See the [Enterprise Keyboard Designer user guide](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more.
+
+* **A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
+
+> For more information about these new EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
+
+#### New Tutorials
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Layouts by Zebra engineering
+
+#### Supported Devices
+
+No devices were added to or removed from the **[supported device list](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**. 
+
+-----
 
 ### Added in v3.2
 

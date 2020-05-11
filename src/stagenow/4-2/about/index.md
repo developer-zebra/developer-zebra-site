@@ -44,7 +44,7 @@ The following software must be installed on the staging workstation prior to usi
 
 * [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
 
-* [Staging Guides (landing page)](../stagingguides) provides links to staging guides, each with information for the administrators and staging operators about the staging methods offered, and for creating Profiles to configure Zebra devices and deploying with staging media.
+* [Staging Guides (landing page)](../stagingguides) provides links to staging guides, each with information for the administrators and staging operators about staging methods offered, and for creating Profiles to configure Zebra devices and deploying with staging media.
 
 * [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
 
@@ -68,6 +68,7 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.x
 
 **Bold text** indicates recent addition
+
 -----
 
 ### New Features

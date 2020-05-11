@@ -73,7 +73,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, assists in creating a Profile for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard.  This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
+**Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, which assists in creating Profiles for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard. This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. 
+
+**Also new, settings entered in the Zero Touch Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
 
 **A new [Staging Guides landing page](../stagingguides)** and menu tab helps users locate guides quickly.  
 

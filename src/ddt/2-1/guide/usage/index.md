@@ -2,7 +2,7 @@
 title: Using Diagnostic Tool
 layout: guide.html
 product: Diagnostic Tool
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ## Overview

@@ -2,7 +2,7 @@
 title: About Diagnostic Tool
 layout: guide.html
 product: Diagnostic Tool
-productversion: '2.0'
+productversion: '2.1'
 ---
 
 ## Overview
@@ -15,7 +15,7 @@ Hardware features tested:
 * **Button Test** – checks the operation of push-to-talk, left or right scan trigger, volume up and volume down device buttons
 * **Touch Screen Test** – checks for operation of the device touch display
 * **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
-* **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, ping test results to specified address, radio power cycle result, signal strength, ESSID, IP address, BSSID, and speed
+* **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, radio power cycle result, signal strength, ESSID, IP address, BSSID, and speed
 * **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, and temperature
 * **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 * **Audio Test** – checks for operation of the device microphone and speaker
@@ -23,7 +23,7 @@ Hardware features tested:
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
-## New in Diagnostic Tool 2.0
+## New in Diagnostic Tool 2.1
 * Introduced 2 modes of operation: [admin mode and user mode](../usage).
 * Changes in supported tests:
      * Tests added: Scanner, Button, Touch Screen, Audio
@@ -36,7 +36,7 @@ Hardware features tested:
      * On TC20 Android Oreo, when performing the Button test the scan trigger press fails.
 
 ## Supported Devices
-<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Install the app on the following supported GMS devices, except for MC33 which only supports non-GMS: </p>
+<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Upon launching the app after installation, the user must grant all permissions to avoid any unexpected behavior. The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -352,7 +352,7 @@ Hardware features tested:
 <br>
 
 **Note:** 
-* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.0 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
+* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.1 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
 
 ## Important Notes

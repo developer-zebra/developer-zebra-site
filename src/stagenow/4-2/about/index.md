@@ -44,7 +44,7 @@ The following software must be installed on the staging workstation prior to usi
 
 * [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
 
-* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
+* [Staging Guides landing page](../stagingguides) provides links to staging guides with information for the staging operator about the staging methods offered for creting Profiles for configuring the target devices and deploying Profile media.
 
 * [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
 
@@ -67,13 +67,14 @@ The following software must be installed on the staging workstation prior to usi
 * MX 8.x
 * MX 7.x
 
+**Bold text** indicates recent addition
 -----
 
 ### New Features
 
-**Introduces a [Zero Touch Wizard](../dynamicstaging)**, which automates configuration of network settings to enable a “factory-fresh” device to connect to the internet for access to Google Zero Touch servers. Zero Touch performs Device Owner EMM Enrollment with no user interaction.
+**Introduces a [Zero Touch Wizard](../dynamicstaging)**, assists in creating a Profile for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard.  This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
 
-**A new [Staging Guides landing page](../stagingguides)** and menu tab helps admins find guides quickly.  
+**A new [Staging Guides landing page](../stagingguides)** and menu tab helps users locate guides quickly.  
 
 **Supports MX 10.0**: which adds the following major features and enhancements: 
 * **Enhanced [Power Manager](../csp/power)** now allows a Profile to: 

@@ -24,7 +24,7 @@ content-items:
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
 product: Enterprise Keyboard
-productversion: '3.4'
+productversion: '3.6'
 ---
 
 

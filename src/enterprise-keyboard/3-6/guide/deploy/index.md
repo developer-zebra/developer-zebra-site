@@ -2,7 +2,7 @@
 title: Enterprise Keyboard Deployment
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '3.4'
+productversion: '3.6'
 ---
 
 ## Overview

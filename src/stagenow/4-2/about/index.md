@@ -44,7 +44,7 @@ The following software must be installed on the staging workstation prior to usi
 
 * [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
 
-* [Staging Guides landing page](../stagingguides) provides links to staging guides with information for the staging operator about the staging methods offered for creting Profiles for configuring the target devices and deploying Profile media.
+* [Staging Guides (landing page)](../stagingguides) provides links to staging guides, each with information for the administrators and staging operators about the staging methods offered, and for creating Profiles to configure Zebra devices and deploying with staging media.
 
 * [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
 
@@ -72,7 +72,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**Introduces a [Zero Touch Wizard](../dynamicstaging)**, assists in creating a Profile for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard.  This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
+**Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, assists in creating a Profile for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard.  This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
 
 **A new [Staging Guides landing page](../stagingguides)** and menu tab helps users locate guides quickly.  
 

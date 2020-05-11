@@ -21,9 +21,19 @@ Enterprise Keyboard APIs allow the following functions:
  * Current key layout group (file name) and the name of the current key layout
 * **SET** switches to the specified keyboard or key layout
 * **SHOW** displays the specified layout on the device
-* **RESET** Resets all key layouts and enables Enterprise Keyboard (if disabled)
+* **RESET** behavior varies based on current key layout selection: 
+ * **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
+ * **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.  
 
-> * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+<!-- 
+When default custom layout is not set. Reset intent, resets to Enterprise keyboard layout and enables the Enterprise Keyboard [if disabled]. After reset, the fixed-layout Enterprise Keyboard is shown when an input field gets focus.
+
+When default custom layout is set. Reset intent, resets to Default custom layout. After reset, the default custom layout is shown when an input field gets focus.
+
+Resets all key layouts and enables Enterprise Keyboard (if disabled)
+-->
+
+> * **Zebra recommends resetting to the default input device whenever quitting an app that uses EKB**. 
 
 ### Also See
 

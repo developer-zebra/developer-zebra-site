@@ -46,7 +46,6 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 ## Customizing Keyboard Settings
 
-
 #### This Section Covers: 
 
 * Assignment of [keyboard languages](#languages)
@@ -55,8 +54,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Long key-press and other [advanced settings](#advanced)
 * [Remapping programmable keys](#remappingkeys)
 
-
-#### Other Sections in This Guide:
+#### Also See
 
 * [Using EKB with DataWedge](#datawedge)
 * [Changing key layouts programmatically](#dynamicinputmethod)
@@ -68,6 +66,16 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 -----
 
+### Usage Notes 
+
+* Enterprise Keyboard can be used only after the device is unlocked.
+* Tab focus and the displayed layout sometimes do not match.
+* After deleting any text, the alpha-numeric tab is displayed regardless of the default setting.
+* If pop-up on key-press option is disabled, but on key long press for secondary text pop-up can be seen.
+* Sometimes pop-up on key-press does not display a pop-up.
+* Sometimes Emoji key doesn't list the emoji character.
+* Shift key unlock do not work on single tap.
+* Enterprise-Keyboard Preference and Text-Correction settings do not work as expected in all type of input fields. Behavior vary based on type of input field.
 
 Enterprise Keyboard Settings are accessed through the Android Settings panel: 
 

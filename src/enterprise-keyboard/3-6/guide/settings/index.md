@@ -294,15 +294,15 @@ Tap on a setting to bring up a panel for adjusting that setting:
 <img alt="" style="height:150px" src="adv_popup.png"/>
 <br>-->
 
-<b>Keypress vibration duration</b> sets the length of time (from 0 to 100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
+<b>Keypress vibration duration</b> sets the length of time (from 0&ndash;100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
 <img alt="" style="height:150px" src="adv_vibrate.png"/>
 <br>
 
-<b>Keypress sound volume</b> controls the loudness (from 0 to 100) of the sound that coincides with a keypress (default = System setting). 
+<b>Keypress sound volume</b> controls the loudness (from 0&ndash;100) of the sound that coincides with a keypress (default = System setting). 
 <img alt="" style="height:150px" src="adv_sound.png"/>
 <br>
 
-<b>Key long press delay</b> sets the time (from 100 to 700ms) a key must be held down before being considered a long-press (default = 300ms).
+<b>Key long press delay</b> sets the time (from 100&ndash;700ms) a key must be held down before being considered a long-press (default = 300ms).
 <img alt="" style="height:150px" src="adv_longpress.png"/>
 <br>
 

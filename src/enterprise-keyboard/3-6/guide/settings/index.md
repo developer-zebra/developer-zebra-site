@@ -9,13 +9,16 @@ productversion: '3.6'
 
 Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock Android keyboard that provides a more effective means of inputting data into Zebra devices. 
 
-#### Primary EKB Benefits: 
+#### Primary EKB Benefits
 * [Quick switching between languages](#languages)
 * [Barcode scanning](#preferences) directly from the keyboard for data collection 
 * [Programmable keys](#remappingkeys) for performing specific tasks 
 * [Finger-flicks](#preferences) for typing long-press characters
 * [Swipe-to-switch](#preferences) key layouts 
 * Populate Android's [Personal Dictionary](#personaldictionary) with custom terms and abbreviations
+
+#### Change Log
+
 * `ADDED in v3.4:` "Canned Text" feature allows assignment of lists of [predefined text responses](#textcorrection) to keys
 * `ADDED in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 * `ADDED in v3.6:` Program a key to repeat any keyCode when long-pressed
@@ -26,6 +29,7 @@ Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock A
 * [Customizing Keyboard Settings](#customizingkeyboardsettings) | Section of this guide with further details 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
+-----
 
 ### Custom Key Layouts
 

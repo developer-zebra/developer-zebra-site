@@ -396,7 +396,7 @@ The Tab key is designed to move the cursor or UI focus from one text field or UI
 ------
 
 ## Scanner Control
-It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](http://techdocs.zebra.com/datawedge/latest/guide/setup/#disabledatawedge) in the [DataWedge User Guide](http://techdocs.zebra.com/datawedge). 
+It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](http://techdocs.zebra.com/datawedge/latest/guide/settings/#disabledatawedge) in the [DataWedge User Guide](http://techdocs.zebra.com/datawedge). 
 
 -----
 

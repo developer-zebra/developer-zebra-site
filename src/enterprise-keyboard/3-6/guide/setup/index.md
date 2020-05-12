@@ -198,7 +198,7 @@ See the [Customize section](../settings) for more information about Enterprise K
 ------
 
 ## Automated Activation
-Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow) tools and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/uimgr) service or an organization's own MDM system.  
+Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow) tools and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/ui) service or an organization's own MDM system.  
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 

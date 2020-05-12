@@ -13,7 +13,7 @@ Enterprise Keyboard (EKB) is a soft input device that's designed to provide the 
 Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
-* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service
+* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/ui) service
 * Remotely through a company's own enterprise mobility management (EMM) system (if supported by that system)
 
 -----

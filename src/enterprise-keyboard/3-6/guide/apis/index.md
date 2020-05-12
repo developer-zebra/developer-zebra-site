@@ -63,7 +63,10 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
 
 #### EKD Window Resizing Behavior
 
-* **An application activity's main window is resized** only if the **width of the custom key layout is <u>greater than or equal to 50 percent</u>** of device's screen width ***AND*** the the **layout transparency value is <u>less than 30</u>**. 
+* **An application activity's main window is resized only if the**:
+ * **Width of the <u>custom key layout</u> is <u>greater than or equal to 50 percent</u> of device's <u>screen width</u>**
+ <br> ***AND*** 
+ * **Layout <u>transparency</u> value is <u>less than 30</u>**. 
 * An activity's main **window will NOT be resized if a custom key layout is positioned on top of the app's title bar or toolbar** (sometimes known as the "Action" bar). 
 * In some cases, window resizing results in a blank portion of the screen. 
 * **To disable windows resizing of an activity’s main window**, set the following attribute in the app's activity manifest file: 
@@ -71,36 +74,6 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
 
 An application activity's main window is resized only if the width of the custom key layout is greater than or equal to 50 percent of device's screen width AND layout transparency value is less than 30.
 
-----
-<!-- 11/13/19- removed per eng. b/c it applies to "EKB test app"
-
-### Using EKB APIs
-The following example describes a company with business requirements that call for an application with four main activities and corresponding GUI screens: 
-
-* `FunctionKeyActivity`
-* `DisableActivity`
-* `MultiInputActivity`
-* `ResetActivity` 
-
-`FunctionKeyActivity` is the launcher activity of the application, and is the first activity in the following sequence of the activities:
-
-`FunctionKeyActivity` -> `DisableActivity` -> `MultiInputActivity` -> `ResetActivity`
-
-Each activity involves the following keyboard requirements:
-
-When `FunctionKeyActivity` comes to the foreground, the app should `GET` the following information:
-* Available layouts in the device
-* Current layout group name
-* Current layout name
-
-* `FunctionKeyActivity` should then set a function-key layout to show immediately when the app it comes in the foreground.
-* `DisableActivity` does not use a keyboard, so keyboard should be disabled when this activity comes to the foreground. If the device user taps on an input area, a keyboard should not appear.
-* `MultiInputActivity` has two input areas. When the device user taps on the first input area, a qwerty keyboard layout appears. When the user taps on the second input area, the numeric key layout appears.
-* `ResetActivity` uses a regular keyboard, so keyboard should be reset.
-
-10/30/19- removed until the app location is known 
-> **Note**: Zebra provides a sample Android app that implements the functions described above.
- -->
 -----
 
 ## Intents

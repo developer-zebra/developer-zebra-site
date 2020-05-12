@@ -15,7 +15,6 @@ Run Diagnostic Tool using one of the following methods:
 1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
 2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
 <br><br>
-Note: Sending the command multiple times continuously may result in unexpected behavior. It is best to wait a couple minutes for the command to complete before resending the next command.
 
 ## User Interface
 When launching the app for the first time, the main screen displays the tests available to run:

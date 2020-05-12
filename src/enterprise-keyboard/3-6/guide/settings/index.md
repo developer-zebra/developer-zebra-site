@@ -140,18 +140,21 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
 
-<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed (seen only on devices that support vibration). Duration configurable in [Advanced settings](#advanced). 
+<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed (seen only on devices that support vibration).<br>
+Duration configurable in [Advanced settings](#advanced). 
 
-<b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
+<b><u>Sound on keypress</u></b> plays a sound when a key is pressed.<br>
+Volume configurable in [Advanced settings](#advanced).
 
 <b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed (not applicable to keys 0&ndash;9 on the numeric layout). <!--A delay can be added in [Advanced settings](#advanced).-->
 
 <b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the device microphone (on GMS-enabled devices only).<br> 
 **NOTE**: Google Voice typing must be enabled to use this key (see **Language and input > On-screen keyboard** panel). 
 
-<b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+<b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data.<br>
+Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
-<b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. **Not supported on VC80x or VC83x devices**.
+<b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key.<br> **Not supported on VC80x or VC83x devices**.
 
 <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
 

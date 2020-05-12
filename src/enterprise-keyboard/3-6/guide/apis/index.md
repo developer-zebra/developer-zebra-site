@@ -500,7 +500,9 @@ public void onReceive(Context context, Intent intent) {     Toast._makeText_(
 -----
 
 ### RESET
-**Resets the Enterprise Keyboard layouts and enables the Enterprise Keyboard (if disabled)**. After reset, the fixed-layout Enterprise Keyboard is shown when an input field gets focus. 
+**Resets and enables the specified Enterprise Keyboard fixed or custom layout** based on current key layout selection: 
+* **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
+* **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.  
 
 **Parameter values**:
 

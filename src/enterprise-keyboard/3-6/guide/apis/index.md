@@ -64,15 +64,13 @@ Android apps generally adjust window size when a general-purpose keyboard is dis
 #### EKD Window Resizing Behavior
 
 * **An application activity's main window is resized only if the**:
- * **Width of the <u>custom key layout</u> is <u>greater than or equal to 50 percent</u> of device's <u>screen width</u>**
+ * **Width of the custom key layout is <u>greater than or equal to 50 percent</u> of device's <u>screen width</u>**
  <br> ***AND*** 
  * **Layout <u>transparency</u> value is <u>less than 30</u>**. 
 * An activity's main **window will NOT be resized if a custom key layout is positioned on top of the app's title bar or toolbar** (sometimes known as the "Action" bar). 
 * In some cases, window resizing results in a blank portion of the screen. 
 * **To disable windows resizing of an activity’s main window**, set the following attribute in the app's activity manifest file: 
  * `android:windowSoftInputMode=”adjustNothing”`
-
-An application activity's main window is resized only if the width of the custom key layout is greater than or equal to 50 percent of device's screen width AND layout transparency value is less than 30.
 
 -----
 
@@ -396,7 +394,7 @@ Once key layout is shown/hidden, requested application receives a response inten
 	public void onReceive(Context context, Intent intent) {     Toast._makeText_(context, *"onReceived"*, Toast.*_LENGTH_SHORT_*).show();     Bundle mBundle = intent.getExtras();     String result = mBundle.getString(*"RESULT_CODE"*);     String msg = mBundle.getString(*"RESULT_MESSAGE"*);
 
 	}
-
+ 
 -----
 
 ### RESET

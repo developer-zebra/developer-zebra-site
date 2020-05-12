@@ -140,8 +140,8 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
 
-<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed (seen only on devices that support vibration).<br>
-Duration configurable in [Advanced settings](#advanced). 
+<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed (option seen only on devices that support vibration).<br>
+Vibration duration configurable in [Advanced settings](#advanced). 
 
 <b><u>Sound on keypress</u></b> plays a sound when a key is pressed.<br>
 Volume configurable in [Advanced settings](#advanced).
@@ -157,13 +157,11 @@ Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to 
 <b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key.<br> **Not supported on VC80x or VC83x devices**.
 
 <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
-
 <!-- 
 <img alt="" style="height:350px" src="ekb1.6_nav.png"/>
 <br>
  -->
-<br>
-##### On devices with MX 7.1 and higher only: 
+##### Additional Preferences on devices with MX 7.1 and higher only: 
 <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 

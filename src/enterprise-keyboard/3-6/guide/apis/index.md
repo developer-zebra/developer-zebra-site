@@ -158,7 +158,7 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 
 This section explains the program logic involved with switching layouts with Android intents when focus of an input field changes. 
 
-> **Note**: Layouts also can be controlled through DataWedge. [Find out how](/datawedge/latest/guide/utilities/ekb/). 
+> **Note**: Layouts also can be controlled through DataWedge. [Find out how](http://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 

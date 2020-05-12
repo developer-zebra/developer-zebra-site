@@ -140,13 +140,14 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
 
-<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
+<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed (seen only on devices that support vibration). Duration configurable in [Advanced settings](#advanced). 
 
 <b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
-<b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
+<b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed (not applicable to keys 0&ndash;9 on the numeric layout). <!--A delay can be added in [Advanced settings](#advanced).-->
 
-<b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
+<b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the device microphone (on GMS-enabled devices only).<br> 
+**NOTE**: Google Voice typing must be enabled to use this key (see **Language and input > On-screen keyboard** panel). 
 
 <b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
@@ -158,7 +159,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 <img alt="" style="height:350px" src="ekb1.6_nav.png"/>
 <br>
  -->
-
+<br>
 ##### On devices with MX 7.1 and higher only: 
 <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
@@ -175,6 +176,9 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 **Tab Bar Notes**:
 
+<!-- Navigation mode set to Keys, voice input key and show correction suggestions are enabled, then tab bar will always be visible except for some input texts like numeric, email, sip, websites etc.,
+ -->
+* When Navigation mode is set to "Keys" and voice input key and show correction suggestions are enabled, the tab bar is always visible (does not auto-hide) except when inputting numeric, email, SIP, websites etc.
 * If either the tab bar or the suggestion bar are enabled, both will appear.
 * The tab bar will not appear if the Next Word Suggestions bar and the Voice Input Key are both disabled.
 * On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.

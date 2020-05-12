@@ -7,7 +7,7 @@ productversion: '3.6'
 
 ## Overview
 
-Enterprise Keyboard (EKB) versions available as an `.apk` file can be downloaded and deployed to compatible devices and configured on those devices using Zebra [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service or through a company's own enterprise mobility management (EMM) system (if supported by that system). **This guide covers the basic procedures for mass-deployment of the Enterprise Keyboard `apk` file and layouts made with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), Zebra's Windows-based tool for creating custom key layouts for EKB**. 
+Enterprise Keyboard (EKB) versions available as an `.apk` file can be downloaded and deployed to compatible devices and configured on those devices using Zebra [StageNow](../../../../stagenow) and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/uimgr) service or through a company's own enterprise mobility management (EMM) system (if supported by that system). **This guide covers the basic procedures for mass-deployment of the Enterprise Keyboard `apk` file and layouts made with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), Zebra's Windows-based tool for creating custom key layouts for EKB**. 
 
 > **Zebra strongly recommends testing apps, configuration files and deployment settings on a working device before general deployment**.
 
@@ -56,7 +56,7 @@ Data for custom key layout(s) is stored in the custom key-layout definition file
 ### Also See
 
 * **[Enterprise Keyboard APIs](../apis)** | Switching key layouts programmatically
-* **[DataWedge Configuration](/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
+* **[DataWedge Configuration](http://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
 
 -----
 <!-- 

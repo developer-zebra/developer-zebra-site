@@ -12,7 +12,7 @@ EKB can be activated and configured:
 
 * Manually at the device (covered here)
 * Remotely (covered elsewhere):
-    * Zebra's StageNow device configuration tool and the [UI Manager](/stagenow/latest/csp/ui/) and [Enterprise Keyboard Manager](/stagenow/latest/csp/enterprisekeyboard) services (requires MX 6.3 or higher on the device) 
+    * Zebra's StageNow device configuration tool and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/ui/) and [Enterprise Keyboard Manager](http://techdocs.zebra.com/stagenow/latest/csp/enterprisekeyboard) services (requires MX 6.3 or higher on the device) 
     * Through a company's own enterprise mobility management (EMM) system (if compatible; see that system's info) 
 
 #### This guide covers: 
@@ -73,26 +73,6 @@ _The "-r" option **reinstalls** an existing app and retains any existing user da
 * **[Get USB drivers for connecting Windows PCs to Zebra devices](https://www.zebra.com/us/en/support-downloads/software/drivers/android-usb-driver.html)**
 
 -----
-<!-- 11/13/19- removed per eng. 
-
-#### To Install EKB 3.2
-_Applies to devices running Android 7.x Nougat or higher <u>without</u> EKB installed_.
-
-1. **Connect the device to the host computer** that contains the downloaded `Enterprisekeyboard.apk` file.  
-2. **From a terminal window**, run the following command: 
-
-		:::terminal
-		adb install Enterprisekeyboard.apk
-
-3. **Push the** `Enterprisekeyboard.apk` **file to the root directory** of the device.
-4. **Navigate to the file** using a file manager app on the device
-5. **Tap the file** to complete the installation. 
-6. To verify installation, see [Verify Installation](#verifyinstallation) below. 
-
-> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
-
------
- -->
 
 ## Uninstalling/Downgrading EKB
 
@@ -218,7 +198,7 @@ See the [Customize section](../settings) for more information about Enterprise K
 ------
 
 ## Automated Activation
-Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system.  
+Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](/stagenow) tools and the [UI Manager](http://techdocs.zebra.com/stagenow/latest/csp/uimgr) service or an organization's own MDM system.  
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 
@@ -267,7 +247,7 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 -----
 
 ## Automated Deactivation
-Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/../../../../) or [StageNow](../../../../) tools using the [App Manager](/mx/appmgr) service. 
+Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/emdk) or [StageNow](/stagenow) tools using the [App Manager](http://techdocs.zebra.com/stagenow/latest/csp/app) service. 
 
 -----
 

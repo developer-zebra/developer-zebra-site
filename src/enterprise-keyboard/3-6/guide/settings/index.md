@@ -52,7 +52,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Assignment of [keyboard languages](#languages)
 * Setting keyboard [preferences](#preferences)
 * [Text correction settings](#textcorrection)
-* Long key-press and other [advanced settings](#advancedsettings)
+* Long key-press and other [advanced settings](#advanced)
 * [Remapping programmable keys](#remappingkeys)
 
 

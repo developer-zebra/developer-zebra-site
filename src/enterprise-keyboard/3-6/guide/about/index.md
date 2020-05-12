@@ -32,7 +32,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 #### Learn more about:
 * [Text correction features](../settings#textcorrection)
-* The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
+* The "Loadable" [Personal Dictionary](/mx/personaldictionarymgr)
 
 -----
 
@@ -46,7 +46,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 **NOTE**: New features in EKB 3.6 must be implemented using Enterprise Keyboard Designer 1.6 or later.  
 
-> For more information about new EKB 3.6 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
+> For more information about new EKB 3.6 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### Supported Devices
 
@@ -114,11 +114,11 @@ _Stock Android keyboard_:
 
 #### New Features 
 
-* **Enterprise Keyboard can now display Canned text responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). When selected from the list, the Canned response is sent to the focused input field as if typed in manually. See the [Enterprise Keyboard Designer user guide](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more.
+* **Enterprise Keyboard can now display Canned text responses** in a drop-down list as specified in Enterprise Keyboard Designer 1.4 (or later). When selected from the list, the Canned response is sent to the focused input field as if typed in manually. See the [Enterprise Keyboard Designer user guide](http://techdocs.zebra.com/ekd/latest/guide/usage/#cannedtext) to learn more.
 
 * **A keyboard layout created in Enterprise Keyboard Designer 1.4 (or later) can be set as the default layout** for the device, and to automatically appear whenever an input field receives focus.  
 
-> For more information about these new EKB 3.4 features, please refer to the [Enterprise Keyboard Designer usage guide](/ekd/latest/guide/usage). 
+> For more information about these new EKB 3.4 features, please refer to the [Enterprise Keyboard Designer user guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 #### New Tutorials
 

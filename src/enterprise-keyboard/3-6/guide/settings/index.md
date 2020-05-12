@@ -126,7 +126,7 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ------
 
 ### Preferences
-The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. **NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](/ekd/latest/guide/usage/#iicreatelayouts) for more information. 
+The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. **NOTE: Enterprise Keyboard Designer 1.4 (and later) allows a custom keyboard layout to be selected as the default** in the device, to appear whenever an input field receives focus (**requires EKB 3.4 or later**). See the [EKD User Guide](http://techdocs.zebra.com/ekd/latest/guide/usage/#iicreatelayouts) for more information. 
 
 **Default settings are shown here**:  
 
@@ -183,14 +183,14 @@ The Preferences section controls keypress feedback, default layout and tab selec
 * Enabling the Alphanumeric tab disables remapping of the Numeric P4 and Symbol P1 keys.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
 * Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
-* A custom key layout made with Enterprise Keyboard Designer 1.4 (or later) can be selected as the default whenever an input field receives focus (**requires EKB 3.4 or later**). [More info](/ekd/latest/guide/usage/#iicreatelayouts).
+* A custom key layout made with Enterprise Keyboard Designer 1.4 (or later) can be selected as the default whenever an input field receives focus (**requires EKB 3.4 or later**). [More info](http://techdocs.zebra.com/ekd/latest/guide/usage/#iicreatelayouts).
 
 ------
 
 ### Text Correction
 Text Correction controls automatic corrections to typed text based the predefined parameters explained below. This functionality is provided by the Personal Dictionary, which also permits lists of custom or industry-specific terms and shortcuts (abbreviations) to be loaded into a device and presented as substitution suggestions along with those of the selected language(s). 
 
-**NOTE**: Enterprise Keyboard 3.4 (and later) supports "Canned text," which presents a list of predefined textual phrases when a key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. See the [Enterprise Keyboard Designer user guide](http://zebra-stage.github.io/ekd/latest/guide/usage/#cannedtext) to learn more. 
+**NOTE**: Enterprise Keyboard 3.4 (and later) supports "Canned text," which presents a list of predefined textual phrases when a key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. See the [Enterprise Keyboard Designer user guide](http://techdocs.zebra.com/ekd/latest/guide/usage/#cannedtext) to learn more. 
 
 <img alt="" style="height:350px" src="pref_text_2.png"/>
 <br>
@@ -220,11 +220,11 @@ The Personal Dictionary can be used to store industry-specific terms and their a
 <b>Notes</b>:
 
 * Terms can be added to the Personal Dictionary one at a time or in bulk.
-* For bulk loading, see StageNow's [Personal Dictionary Manager](/stagenow/latest/csp/personaldictionary/). 
+* For bulk loading, see StageNow's [Personal Dictionary Manager](http://techdocs.zebra.com/stagenow/latest/csp/personaldictionary/). 
 * There is no set limit on the length of terms and phrases that can be entered into the Personal Dictionary.
 * When displayed, longer terms and phrases might be injected with an ellipsis (...) in the correction bar. 
 * Spelling corrections do not appear with all field types.  
-* For mass deployment, the Personal Dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
+* For mass deployment, the Personal Dictionary must be populated beforehand using Zebra's [StageNow](http://techdocs.zebra.com/stagenow) tool. 
 * Personal Dictionary does not support display of contact names. 
 
 #####Add a term to the Personal Dictionary: 
@@ -256,7 +256,7 @@ Press the spacebar to accept the highlighted word (which in this case is "Gerd")
 
 **Note**: To maximize screen space for apps, the spelling Correction Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when corrections are displayed.
 
-> For bulk loading, see [Personal Dictionary Manager](/stagenow/latest/csp/personaldictionary/). 
+> For bulk loading, see [Personal Dictionary Manager](http://techdocs.zebra.com/stagenow/latest/csp/personaldictionary/). 
 
 #####Edit or delete a term: 
 
@@ -340,7 +340,7 @@ _The Remapping panel showing current settings of remappable keys; tap to edit_.
 ------
 
 ## DataWedge
-The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](../../../../), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
+The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](http://techdocs.zebra.com/datawedge), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
@@ -363,7 +363,7 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 
 For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
 
-Also refer to the [DataWedge User Guide](../../../../) for complete documentation.
+Also refer to the [DataWedge User Guide](http://techdocs.zebra.com/datawedge) for complete documentation.
 
 ------
 
@@ -396,7 +396,7 @@ The Tab key is designed to move the cursor or UI focus from one text field or UI
 ------
 
 ## Scanner Control
-It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
+It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](http://techdocs.zebra.com/datawedge/latest/guide/setup/#disabledatawedge) in the [DataWedge User Guide](http://techdocs.zebra.com/datawedge). 
 
 -----
 

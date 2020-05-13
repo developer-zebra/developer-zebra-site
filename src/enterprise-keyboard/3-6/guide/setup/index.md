@@ -124,8 +124,7 @@ _The "-r" option **reinstalls** an existing app and retains any existing user da
 1. Go to **Settings -> Apps & Notification -> Enterprise Keyboard**
 2. **Verify that the version corresponds with the version installed**.  
 
-> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation).<br> 
- To activate, go to:<br> **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
+> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). To activate, go to:<br> **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
 
 <!-- 5/12/20- TUT40436 removed per eng. 
 * On successful installation or upgrade on an EC30 device, EKB is shown in the Launcher app list.

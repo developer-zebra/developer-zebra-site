@@ -45,7 +45,9 @@ Some versions of EKB can be downloaded from the [Zebra Support Portal](https://w
 4. **Tap the file to install it**. 
 5. **See [Verify Installation](#verifyinstallation)** section below. 
 
-> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
+#### NOTES 
+* After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
+* **Enterprise Keyboard (3.6.1.4 and later) does not appear in the Android launcher**.
 
 -----
 
@@ -64,7 +66,9 @@ _The "-r" option **reinstalls** an existing app and retains any existing user da
 		adb install EnterpriseKeyboard_file_name.apk
 4. **See [Verify Installation](#verifyinstallation)** section below. 
 
-> **NOTE**: After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
+#### NOTES 
+* After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
+* **Enterprise Keyboard (3.6.1.4 and later) does not appear in the Android launcher**.
 
 ### Also see
 

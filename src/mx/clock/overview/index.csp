@@ -15,10 +15,10 @@ Zebra Android devices track the current Date and Time using the Coordinated Univ
 ### Main Functionality
 
 * Set the current local Time
-* Set the current local Date
+* Set the current Date
 * Set the current UTC Time
 * Set the current UTC Date
-* Set the desired time Coordinate System to use
+* Set the time Coordinate System to use (local or UTC)
 * Set the Time Zone
 * Display 12-hour (a.m./p.m.) or 24-hour "military time" formats 
 * Set device to acquire Date, Time and Time Zone from a network (when possible)

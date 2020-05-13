@@ -1,6 +1,6 @@
 ---
 csp: clock
-title: Auto Time Zone Enable/Disable
+title: Auto Time Zone (checkbox)
 type: parm
 order: 16
 mx: "6.0"
@@ -13,13 +13,13 @@ parm:
   list:
     - code: false
       devicetype: A,B
-      name: False
+      name: (unchecked)
       mx: "6.0"
       osx: "1.3"
-      description: This value (or the absence of this parm from the XML) disables Auto Time Zone, preventing the device from automatically acquiring the Time Zone from the carrier network.
+      description: Disables Auto Time Zone, preventing the device from automatically acquiring the Time Zone from the carrier network.
     - code: true
       devicetype: A,B
-      name: True
+      name: (checked)
       mx: "6.0"
       osx: "1.3"
       description: Enables the device to automatically acquire the current Time Zone (if supported by the carrier network).

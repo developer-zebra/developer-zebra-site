@@ -34,6 +34,7 @@ Hardware features tested:
 * Known Issues:
      * On TC20 Android Nougat, when performing the Battery test the <i>Decommission status</i> may return incorrect information.
      * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
+     * When the app is already running (in the foreground or background) and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Diagnostic Tool to recover.
 
 ## Supported Devices
 <p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Upon launching the app after installation, the user must grant all permissions to avoid any unexpected behavior. The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>

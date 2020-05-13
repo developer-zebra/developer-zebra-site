@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "8"
 devicetype: A,B
 parm:
-  presentif: The "Auto Time" checkbox is unchecked
+  presentif: The Auto Time checkbox is "unchecked" AND "Coordinate System" is set to Local
   pivotal: No
   name: Date
   type: string

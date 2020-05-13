@@ -7,7 +7,7 @@ mx: "4.2"
 apilevel: "16"
 devicetype: A,B
 parm:
-  presentif: The "Auto Time" is checkbox is checked
+  presentif: The Auto Time checkbox is "checked"
   pivotal: No
   name: SyncInterval
   type: list

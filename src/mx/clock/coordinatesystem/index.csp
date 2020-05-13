@@ -6,6 +6,7 @@ order: 24
 mx: "10.0"
 devicetype: A,B
 parm:
+  presentif: The Auto Time checkbox is "unchecked" 
   pivotal: Yes
   name: CoordinateSystem
   type: list

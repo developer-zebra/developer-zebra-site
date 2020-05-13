@@ -6,7 +6,7 @@ order: 18
 mx: "4.1"
 devicetype: A,B
 parm:
-  presentif: The "Auto Time Zone" checkbox is unchecked
+  presentif: The Auto Time Zone checkbox is "unchecked"
   pivotal: No
   name: TimeZone
   type: string

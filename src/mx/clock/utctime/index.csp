@@ -6,7 +6,7 @@ order: 22
 mx: "10.0"
 devicetype: A,B
 parm:
-  presentif: The "Auto Time" checkbox is unchecked
+  presentif: The Auto Time checkbox is "unchecked" AND "Coordinate System" is set to Universal
   pivotal: No
   name: UTCTime
   type: string

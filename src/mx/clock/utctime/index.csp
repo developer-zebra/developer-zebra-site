@@ -4,7 +4,6 @@ title: Set UTC Time
 type: parm
 order: 22
 mx: "10.0"
-apilevel: "8"
 devicetype: A,B
 parm:
   presentif: The "Auto Time" checkbox is unchecked

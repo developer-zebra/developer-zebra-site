@@ -4,7 +4,6 @@ title: Set Time Zone
 type: parm
 order: 18
 mx: "4.1"
-apilevel: "1"
 devicetype: A,B
 parm:
   presentif: The "Auto Time Zone" checkbox is unchecked

@@ -4,7 +4,6 @@ title: Coordinate System
 type: parm
 order: 24
 mx: "10.0"
-osx: "1.3"
 devicetype: A,B
 parm:
   pivotal: Yes
@@ -15,13 +14,11 @@ parm:
       devicetype: A,B
       name: Local
       mx: "10.0"
-      osx: "1.3"
       description: Sets the device to accept local Time, adjusted for Time Zone.
     - code: 1
       devicetype: A,B
       name: Universal
       mx: "10.0"
-      osx: "1.3"
       description: Sets the device to accept Coordinated Universal Time (UTC), the absolute time at the Prime Meridian.
 ---
 

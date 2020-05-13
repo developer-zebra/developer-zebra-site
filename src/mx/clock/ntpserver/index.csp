@@ -7,7 +7,7 @@ mx: "4.2"
 apilevel: "19"
 devicetype: A,B
 parm:
-  presentif: Auto Time is "true"
+  presentif: The "Auto Time" is checkbox is checked
   pivotal: No
   name: NTPServer
   type: string

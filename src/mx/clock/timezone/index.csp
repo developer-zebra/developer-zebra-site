@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: Auto Time Zone is "false" 
+  presentif: The "Auto Time Zone" checkbox is unchecked
   pivotal: No
   name: TimeZone
   type: string

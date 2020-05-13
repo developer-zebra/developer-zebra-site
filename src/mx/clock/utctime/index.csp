@@ -7,7 +7,7 @@ mx: "10.0"
 apilevel: "8"
 devicetype: A,B
 parm:
-  presentif: Auto Time is "false"
+  presentif: The "Auto Time" checkbox is unchecked
   pivotal: No
   name: UTCTime
   type: string

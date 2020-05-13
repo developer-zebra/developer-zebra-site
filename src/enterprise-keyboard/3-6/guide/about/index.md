@@ -51,6 +51,7 @@ This version of Enterprise Keyboard includes the following languages:
 ### Supported Devices
 
 * **Beginning with v3.6, EKB no longer supports devices running Android 7.x Nougat**. 
+* **Android Multi-user mode is no longer supported**. [More info](../setup/#multiusermode). 
 
 Please see the **[supported device list](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)** for more information. 
 

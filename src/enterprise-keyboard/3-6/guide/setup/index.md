@@ -253,11 +253,13 @@ Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devi
 
 ## Multi-user Mode
 
-**Enterprise Keyboard 3.6 (and later) supports only Primary Users** on devices running Android 10. Secondary Users can access EKB only on devices with EKB 3.4 (and older). See EKB 3.4 [Multi-user Mode](/enterprise-keyboard/3-4/guide/setup/#multiusermode) section for details. 
+**Enterprise Keyboard 3.6 (and later) supports only Primary Users** on devices running Android 10. See EKB 3.4 [Multi-user Mode](/enterprise-keyboard/3-4/guide/setup/#multiusermode) section for additional support and usage details. 
 
 #### Multi-user Behavior
 
-* **Secondary User default is the Google Keyboard (Gboard)**, regardless of Primary User default. 
+* **For Secondary Users, the default input device is the Google Keyboard (Gboard)**, regardless of Primary User settings. 
 * **EKB does not appear in the Language and input panel of Secondary Users**, even if installed by that user. 
+* **Secondary Users can access EKB only on devices with EKB 3.4 (and older)**. 
+
 
 -----

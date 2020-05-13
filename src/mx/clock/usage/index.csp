@@ -2,7 +2,7 @@
 csp: clock
 title: LTC Calculation Examples 
 type: text
-order: 80
+order: 99
 ---
 
 **Date and Time values given to the Clock must be represented as UTC**. This ensures an accurate result when calculating the local date and time for the device based on offsets for Time Zone and Daylight Saving Time, if any. If local time is used as a starting point, the order in which the Date, Time, and Time Zone are set could effect the resulting values. The examples below explain how to make these calculations correctly. 

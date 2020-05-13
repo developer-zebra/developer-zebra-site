@@ -45,7 +45,7 @@ Some versions of EKB can be downloaded from the [Zebra Support Portal](https://w
 4. **Tap the file to install it**. 
 5. **See [Verify Installation](#verifyinstallation)** section below. 
 
-#### NOTES 
+#### Notes: 
 * After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
 * **Enterprise Keyboard (3.6.1.4 and later) does not appear in the Android launcher**.
 
@@ -66,7 +66,7 @@ _The "-r" option **reinstalls** an existing app and retains any existing user da
 		adb install EnterpriseKeyboard_file_name.apk
 4. **See [Verify Installation](#verifyinstallation)** section below. 
 
-#### NOTES 
+#### Notes: 
 * After installation, **Enterprise Keyboard requires [activation](#manualactivation)**. 
 * **Enterprise Keyboard (3.6.1.4 and later) does not appear in the Android launcher**.
 
@@ -124,11 +124,12 @@ _The "-r" option **reinstalls** an existing app and retains any existing user da
 1. Go to **Settings -> Apps & Notification -> Enterprise Keyboard**
 2. **Verify that the version corresponds with the version installed**.  
 
-> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation). 
+> **NOTE**: After installation, Enterprise Keyboard requires [activation](#manualactivation).<br> 
+ To activate, go to:<br> **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
 
-### EC30 Notes
+<!-- 5/12/20- TUT40436 removed per eng. 
 * On successful installation or upgrade on an EC30 device, EKB is shown in the Launcher app list.
-* To activate EKB on an EC30: **Settings -> System -> Languages & input -> Virtual Keyboard -> Enterprise Keyboard**.
+ -->
 
 -----
 
@@ -262,7 +263,7 @@ Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devi
 #### Multi-user Behavior
 
 * **For Secondary Users, the default input device is the Google Keyboard (Gboard)**, regardless of Primary User settings. 
-* **EKB does not appear in the Language and input panel of Secondary Users**, even if installed by that user. 
+* **EKB does not appear in the Languages & input panel of Secondary Users**, even if installed by that user. 
 * **Secondary Users can access EKB only on devices with EKB 3.4 (and older)**. 
 
 

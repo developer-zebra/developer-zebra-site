@@ -2,7 +2,7 @@
 title: Using Enterprise Keyboard Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.4'
+productversion: '1.6'
 author: Eddie Correia
 created: 9/9/2019
 ---

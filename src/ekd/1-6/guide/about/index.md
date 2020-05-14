@@ -2,7 +2,7 @@
 title: About Enterprise Keyboard Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.4'
+productversion: '1.6'
 ---
 
 #### [What's new in v1.4](#prerequisites)

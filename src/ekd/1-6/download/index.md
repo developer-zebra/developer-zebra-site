@@ -2,7 +2,7 @@
 title: Download EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.4'
+productversion: '1.6'
 ---
 
 ### How To Download

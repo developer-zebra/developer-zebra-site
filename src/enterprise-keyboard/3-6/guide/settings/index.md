@@ -169,7 +169,8 @@ Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to 
 <img alt="" style="height:350px" src="ekb1.6_nav.png"/>
 <br>
  -->
-##### Additional Preferences on devices with MX 7.1 and higher only: 
+##### Additional preferences:
+(_applies to devices with MX 7.1 and higher only_) 
 <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 

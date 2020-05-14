@@ -254,6 +254,7 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/emdk) or [StageNow](/stagenow) tools using the [App Manager](http://techdocs.zebra.com/stagenow/latest/csp/app) service. 
 
 -----
+<!-- 5/14/20- TUT-40376 "EKB never supported Multi-user." (eng.)
 
 ## Multi-user Mode
 
@@ -264,6 +265,6 @@ Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devi
 * **For Secondary Users, the default input device is the Google Keyboard (Gboard)**, regardless of Primary User settings. 
 * **EKB does not appear in the Languages & input panel of Secondary Users**, even if installed by that user. 
 * **Secondary Users can access EKB only on devices with EKB 3.4 (and older)**. 
-
+ -->
 
 -----

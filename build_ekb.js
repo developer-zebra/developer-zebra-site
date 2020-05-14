@@ -291,6 +291,9 @@ var sitebuild = Metalsmith(__dirname)
         .use(foldermenu({
         folder: 'ekd/1-4/'
     }))
+        .use(foldermenu({
+        folder: 'ekd/1-6/'
+    }))
 
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

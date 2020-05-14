@@ -5,7 +5,7 @@ product: Enterprise Keyboard Designer
 productversion: '1.6'
 ---
 
-#### [What's new in v1.4](#prerequisites)
+#### [What's new in v1.6](#WhatsNewinv16)
 
 ## Overview
 
@@ -44,26 +44,6 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 -----
 
-## What's New in v1.4
-
-* A new **<u>[Canned text](../usage/#cannedtext)</u>** feature allows a list of predefined text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard when the key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
-
-* **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
-
-* **<u>A new Home button</u>** simplifies project start-up and importing of saved projects:  
-<img alt="" style="height:450px" src="EKD_1.4_fullscreen.png"/>
-***Click image to enlarge, ESC to exit***. 
-<br>
-
-* **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
-
-### New Tutorials
-
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Layouts by Zebra engineering
-
------
-
 ## Usage Snapshot
 
 EKD features a simple drag-and-drop UI to allow quick creation of purpose-built key layouts configured for specific key actions that can be modified for different devices and screen resolutions. A device simulator helps ensure that what is seen in the tool is similar to the layouts being deployed.  
@@ -88,3 +68,54 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 
 -----
 
+## What's New in v1.6
+
+### New Features
+
+From RN:
+* **Undo feature** reverses each of the last 10 actions  
+* **Deploy button** automatically exports the current layout to a USB-connected device  
+* **Supports Repeating Keys action** to send multiple keycodes by long-pressing a key 
+* **Supports Macros** to combine multiple keycodes, presses or actions into a single action 
+
+* **New sample layout page** features predeveloped downloadable key layouts that can be customized based on the needs of an enterprise.  
+
+<!-- 
+OLD OLD OLD
+* A new **<u>[Canned text](../usage/#cannedtext)</u>** feature allows a list of predefined text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard when the key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
+
+* **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
+
+* **<u>A new Home button</u>** simplifies project start-up and importing of saved projects:  
+<img alt="" style="height:450px" src="EKD_1.4_fullscreen.png"/>
+***Click image to enlarge, ESC to exit***. 
+<br>
+
+* **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
+
+ -->
+-----
+
+## Version History
+
+### Added in v1.4
+
+#### New Features
+
+* A new **<u>[Canned text](../usage/#cannedtext)</u>** feature allows a list of predefined text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard when the key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
+
+* **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or higher**. 
+
+* **<u>A new Home button</u>** simplifies project start-up and importing of saved projects:  
+<img alt="" style="height:450px" src="EKD_1.4_fullscreen.png"/>
+***Click image to enlarge, ESC to exit***. 
+<br>
+
+* **EKD layouts can now be used with [Enterprise Browser 2.5](/enterprise-browser)** or later. 
+
+#### New Tutorials
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Layouts by Zebra engineering
+
+-----

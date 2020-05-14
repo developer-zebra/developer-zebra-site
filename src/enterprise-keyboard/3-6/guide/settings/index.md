@@ -69,13 +69,13 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 ### Usage Notes 
 
 * Enterprise Keyboard can be used only after the device is unlocked.
-* Tab focus and the displayed layout sometimes do not match.
-* After deleting any text, the alpha-numeric tab is displayed regardless of the default setting.
-* If pop-up on key-press option is disabled, but on key long press for secondary text pop-up can be seen.
-* Sometimes pop-up on key-press does not display a pop-up.
-* Sometimes Emoji key doesn't list the emoji character.
-* Shift key unlock do not work on single tap.
-* Enterprise-Keyboard Preference and Text-Correction settings do not work as expected in all type of input fields. Behavior vary based on type of input field.
+* The layout tab name shown is sometimes NOT that of the layout being displayed. 
+* After deleting any text, the alpha-numeric tab is displayed regardless of the default display setting.
+* Key pop-ups are displayed on long-press for secondary text, even if the pop-up option is disabled.
+* The Pop-up on Key-press option functions intermittently.
+* The emoji key does not always display the emoji character.
+* Unlocking the shift key requires a double-tap.
+* Behavior of text correction and other EKB preference settings can vary based on the input field type.
 
 Enterprise Keyboard Settings are accessed through the Android Settings panel: 
 
@@ -187,9 +187,9 @@ Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to 
 
 <!-- Navigation mode set to Keys, voice input key and show correction suggestions are enabled, then tab bar will always be visible except for some input texts like numeric, email, sip, websites etc.,
  -->
-* When Navigation mode is set to "Keys" and voice input key and show correction suggestions are enabled, the tab bar is always visible (does not auto-hide) except when inputting numeric, email, SIP, websites etc.
+* When Navigation mode is set to "Keys" and Voice Input Key and Show Correction Suggestions are enabled, the tab bar sometimes hides with some field-input types (numbers, email addresses, etc).
 * If either the tab bar or the suggestion bar are enabled, both will appear.
-* The tab bar will not appear if the Next Word Suggestions bar and the Voice Input Key are both disabled.
+* The tab bar will not appear if the Show Correction Suggestions bar and the Voice Input Key are both disabled.
 * On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
 * If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [More about Android input types](https://developer.android.com/reference/android/text/InputType.html).
 * Enabling the Symbol tab disables remapping of the Numeric P3 key.

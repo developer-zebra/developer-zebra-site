@@ -254,7 +254,7 @@ Enterprise Keyboard cannot be removed if it was included with the device operati
 Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/emdk) or [StageNow](/stagenow) tools using the [App Manager](http://techdocs.zebra.com/stagenow/latest/csp/app) service. 
 
 -----
-<!-- 5/14/20- TUT-40376 "EKB never supported Multi-user." (eng.)
+<!-- 5/14/20- TUT-40376 "EKB never supported Multi-user." (eng.) 
 
 ## Multi-user Mode
 

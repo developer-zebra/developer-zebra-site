@@ -2,7 +2,7 @@
 csp: clock
 title: Set Time Zone 
 type: parm
-order: 18
+order: 15
 mx: "4.1"
 devicetype: A,B
 parm:

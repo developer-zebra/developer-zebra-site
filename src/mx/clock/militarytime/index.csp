@@ -2,7 +2,7 @@
 csp: clock
 title: 24-Hour Time Enable/Disable
 type: parm
-order: 14
+order: 30
 mx: "6.0"
 devicetype: A,B
 parm:

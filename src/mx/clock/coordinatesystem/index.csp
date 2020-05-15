@@ -2,7 +2,7 @@
 csp: clock
 title: Coordinate System
 type: parm
-order: 24
+order: 10
 mx: "10.0"
 devicetype: A,B
 parm:

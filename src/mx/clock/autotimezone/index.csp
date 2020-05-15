@@ -2,7 +2,7 @@
 csp: clock
 title: Auto Time Zone (checkbox)
 type: parm
-order: 16
+order: 25
 mx: "6.0"
 osx: "1.3"
 devicetype: A,B

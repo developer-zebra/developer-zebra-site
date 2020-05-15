@@ -2,7 +2,7 @@
 csp: clock
 title: Set Date 
 type: parm
-order: 10
+order: 12
 mx: "4.1"
 apilevel: "8"
 devicetype: A,B

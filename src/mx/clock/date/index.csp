@@ -6,7 +6,7 @@ order: 10
 mx: "4.1"
 apilevel: "8"
 devicetype: A,B
-info: This parameter DOES NOT accept UTC values or perform adjustments based on time zone or Daylight Savings offsets. To enable such functionality, select "Universal" in the Coordinate System parameter and enter date and time using the UTCTime and UTCDate parameters.
+info: This parameter DOES NOT perform adjustments to UTC values based on time zone or Daylight Savings offsets. To enable such functionality, select "Universal" in the Coordinate System parameter and enter date and time using the UTCDate and UTCTime parameters.
 parm:
   presentif: The Auto Time checkbox is "unchecked" AND "Coordinate System" is set to Local
   pivotal: No
@@ -16,7 +16,7 @@ parm:
 
 Used to manually set the local Date on the device. Entering an empty value (or the absence of this parm from the XML) causes the previously configured Date to remain unchanged. 
 
-> **This parameter DOES NOT accept UTC values or perform adjustments based on time zone or Daylight Savings offsets. To enable such functionality, select "Universal" in the Coordinate System parameter and enter date and time using the UTCTime and UTCDate parameters**. 
+> This parameter **DOES NOT perform adjustments to UTC values** based on time zone or Daylight Savings offsets. To enable such functionality, select "Universal" in the Coordinate System parameter and enter date and time using the UTCDate and UTCTime parameters.**. 
 
 **Parm input rules**: 
 

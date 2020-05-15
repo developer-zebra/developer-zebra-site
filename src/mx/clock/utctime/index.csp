@@ -12,7 +12,9 @@ parm:
   type: string
 ---
 
-Used to set the Time on the device. **Date and Time values given to the Clock must be represented as UTC** (see Overview). Entering an empty value (or the absence of this parm from the XML) will retain any previously configured Time.
+Used to set the UTC Time for automatic calculation of the local time for the device. **Date and Time values given to the Clock using this parameter must be represented as UTC** (see Overview). Entering an empty value (or the absence of this parm from the XML) will retain any previously configured Time. 
+
+> For more information, **see the LTC Calculation Examples section** of this guide. 
 
 **Parm input rules**: 
 

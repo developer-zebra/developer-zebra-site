@@ -205,10 +205,6 @@ csps:
     url: /mx/settingsmgr
     csp: settingsmgr
   - type: section
-    title: Stats
-    url: /mx/stats
-    csp: stats
-  - type: section
     title: Status Manager
     url: /mx/statusmgr
     csp: statusmgr

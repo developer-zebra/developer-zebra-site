@@ -2,7 +2,7 @@
 csp: clock
 title: LTC Calculation Examples 
 type: text
-order: 99
+order: 80
 ---
 
 > **The examples in this section <u>apply only to UTCDate and UTCTime parameters</u>**, which accept values based on the Coordinated Universal Time (UTC) standard. 

@@ -2,7 +2,7 @@
 csp: clock
 title: Set UTC Time 
 type: parm
-order: 22
+order: 18
 mx: "10.0"
 devicetype: A,B
 parm:

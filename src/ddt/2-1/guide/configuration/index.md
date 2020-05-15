@@ -55,7 +55,7 @@ Select the tests to be conducted and configure the test parameters. Access **Con
      <td>&nbsp;&nbsp;&nbsp;</td>
      <td><img style="height:400px" src="configure-2.jpg"/></td>
      <td>&nbsp;&nbsp;&nbsp;</td>
-     <td><img style="height:400px" src="configure-3.png"/></td>
+     <td><img style="height:400px" src="configure-3.jpg"/></td>
  </tr>
 </table>
 

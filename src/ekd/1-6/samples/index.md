@@ -50,12 +50,10 @@ _"QwertyCaps"_<br>
 _"SpecialSymbols"_<br>
 <br>
 
-* **Orientation**: 
-* **Opacity**: 
-* **Devices**: TC72/77, TC51/56, TC52/57, TC75x/70x, TC8x, PS20, MC93, MC33
-* **File**: `Portrait_NonTransparent.encrypted` 
-
-
+* **Layout File**: `Portrait_NonTransparent.encrypted` 
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: MC33, MC93, PS20, TC51/TC56, TC52/TC57, TC72/TC77, TC75x/TC70x, TC8x
 
 [Download]()
 

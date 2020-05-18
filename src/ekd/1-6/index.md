@@ -11,6 +11,8 @@ menu:
       url: /ekd/1-6/guide/setup
     - title: Using EKD
       url: /ekd/1-6/guide/usage
+    - title: Samples
+      url: /ekd/1-6/samples
     - title: Go to EKB
       url: /enterprise-keyboard
     - icon: fa fa-download

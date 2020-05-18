@@ -34,24 +34,24 @@ Opaque (non-transparent) layouts designed for devices used mostly in vertical or
 
 Click image to enlarge, ESC to exit: 
 
+_"FunctionKeys"_
 <img alt="" style="height:150px" src="pnt_functionkeys.png"/>
-_"FunctionKeys"_<br>
 <br>
 
+_"Numeric"_
 <img alt="" style="height:150px" src="pnt_numeric.png"/>
-_"Numeric"_<br>
 <br>
 
+_"Qwerty"_
 <img alt="" style="height:150px" src="pnt_qwerty.png"/>
-_"Qwerty"_<br>
 <br>
 
+_"QwertyCaps"_
 <img alt="" style="height:150px" src="pnt_qwertyCaps.png"/>
-_"QwertyCaps"_<br>
 <br>
 
+_"SpecialSymbols"_
 <img alt="" style="height:150px" src="pnt_specialsymbols.png"/>
-_"SpecialSymbols"_<br>
 <br>
 
 * **Layout File**: `Portrait_NonTransparent.encrypted` 
@@ -59,57 +59,32 @@ _"SpecialSymbols"_<br>
 * **Opacity**: Non-transparent
 * **Devices**: MC33, MC93, PS20, TC51/TC56, TC52/TC57, TC72/TC77, TC75x/TC70x, TC8x
 
-[Download]()
-
-pt_specialsymbols.png
-pt_qwertyCaps.png
-pt_qwerty.png
-pt_numeric.png
-pt_functionkeys.png
-
-Lt_specialsymbols.png
-Lt_qwertyCaps.png
-Lt_qwerty.png
-Lt_numeric.png
-Lt_functionkeys.png
-Lnt_symbols.png
-Lnt_qwertyCaps.png
-Lnt_qwerty.png
-Lnt_Numbers.png
-Lnt_functional.png
-ec30s_symbols_split2.png
-ec30s_symbols_split1.png
-ec30s_qwerty_split2.png
-ec30s_qwerty_split1.png
-ec30s_numeric.png
-sap_Symbols.png
-sap_Qwerty.png
-sap_Numeric.png
-sap_FunctionalKeys.png
+**[Download]()** includes layout file and screenshots shown above. 
 
 -----
 
 Transparent layouts designed for the Zebra WT6000 and other devices used mostly in horizontal orientation. 
 
 Click image to enlarge, ESC to exit: 
+
+_"FunctionKeys"_
 <img alt="" style="height:150px" src="pt_functionkeys.png"/>
-_"FunctionKeys"_<br>
 <br>
 
+_"Numeric"_
 <img alt="" style="height:150px" src="pt_numeric.png"/>
-_"Numeric"_<br>
 <br>
 
+_"Qwerty"_
 <img alt="" style="height:150px" src="pt_qwerty.png"/>
-_"Qwerty"_<br>
 <br>
 
+_"QwertyCaps"_
 <img alt="" style="height:150px" src="pt_qwertyCaps.png"/>
-_"QwertyCaps"_<br>
 <br>
 
+_"SpecialSymbols"_
 <img alt="" style="height:150px" src="pt_specialsymbols.png"/>
-_"SpecialSymbols"_<br>
 <br>
 
 * **Layout File**: `Portrait_Transparent.encrypted`
@@ -122,26 +97,26 @@ _"SpecialSymbols"_<br>
 -----
 ### Landscape, Non-transparent
 
-Layouts designed for tablets and vehicle computers. 
+Layouts designed for tablets and vehicle computers. Click image to enlarge; ESC to exit: 
 
-<img alt="" style="height:150px" src="Lnt_functionkeys.png"/>
-_"FunctionKeys"_<br>
+_"FunctionKeys"_
+<img alt="" style="height:150px" src="Lnt_functional.png"/>
 <br>
 
-<img alt="" style="height:150px" src="Lnt_numeric.png"/>
-_"Numeric"_<br>
+_"Numeric"_
+<img alt="" style="height:150px" src="Lnt_Numbers.png"/>
 <br>
 
+_"Qwerty"_
 <img alt="" style="height:150px" src="Lnt_qwerty.png"/>
-_"Qwerty"_<br>
 <br>
 
+_"QwertyCaps"_
 <img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
-_"QwertyCaps"_<br>
 <br>
 
-<img alt="" style="height:150px" src="Lnt_specialsymbols.png"/>
-_"SpecialSymbols"_<br>
+_"SpecialSymbols"_
+<img alt="" style="height:150px" src="Lnt_symbols.png"/>
 <br>
 
 * **Layout File**: `LandScape_NonTransparent.encrypted` 
@@ -149,27 +124,39 @@ _"SpecialSymbols"_<br>
 * **Opacity**: 
 * **Devices**: L10, ET51/56, CC600/CC6000, VC80x/VC83x
 
-functional.png
-Numbers.png
-qwerty.png
-qwertyCaps.png
-symbols.png
-
 [Download]() includes layout file and screenshots shown above. 
 
 -----
 
 
-* **Layout File**: `LandScape_Transparent.encrypted` 
-* **Orientation**: 
-* **Opacity**: 
-* **Devices**: WT6000
+### For WT6000
 
-functional.png
-Numbers.png
-qwerty.png
-qwertyCaps.png
-symbols.png
+Landscape layout designed for Zebra WT6000 devices. Click image to enlarge; ESC to exit:
+
+_"FunctionKeys"_
+<img alt="" style="height:150px" src="Lnt_functionkeys.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="Lnt_numeric.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
+<br>
+
+_"QwertyCaps"_
+<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
+<br>
+
+_"SpecialSymbols"_
+<img alt="" style="height:150px" src="Lnt_specialsymbols.png"/>
+<br>
+
+* **Layout File**: `LandScape_Transparent.encrypted` 
+* **Orientation**: Landscape
+* **Opacity**: Transparent
+* **Devices**: WT6000
 
 [Download]() includes layout file and screenshots shown above. 
 
@@ -179,6 +166,26 @@ symbols.png
 
 Portrait layout designed for Zebra EC30 devices.
 
+_"Numeric"_
+<img alt="" style="height:150px" src="ec30s_numeric.png"/>
+<br>
+
+_"Qwerty Split1"_
+<img alt="" style="height:150px" src="ec30s_qwerty_split1.png"/>
+<br>
+
+_"Qwerty Split2"_
+<img alt="" style="height:150px" src="ec30s_qwerty_split2.png"/>
+<br>
+
+_"Symbols Split1"_
+<img alt="" style="height:150px" src="ec30s_symbols_split1.png"/>
+<br>
+
+_"Symbols Split2"_
+<img alt="" style="height:150px" src="ec30s_symbols_split2.png"/>
+<br>
+
 * **Layout File**: `Portrait_Transparent.encrypted` 
 * **Orientation**: 
 * **Opacity**: 
@@ -186,18 +193,30 @@ Portrait layout designed for Zebra EC30 devices.
 
 [Download]() includes layout file and screenshots shown above. 
 
-FunctionalKeys.png
-Numeric.png
-Qwerty.png
-Symbols.png
-
 -----
 
-numeric.png
-qwerty_split1.png
-qwerty_split2.png
-symbols_split1.png
-symbols_split2.png
+Portrait split-layouts designed for Zebra EC30 devices.
+
+
+_"Numeric"_
+<img alt="" style="height:150px" src="numeric.png"/>
+<br>
+
+_"Qwerty Split1"_
+<img alt="" style="height:150px" src="qwerty_split1.png"/>
+<br>
+
+_"Qwerty Split2"_
+<img alt="" style="height:150px" src="qwerty_split2.png"/>
+<br>
+
+_"Symbols Split1"_
+<img alt="" style="height:150px" src="symbols_split1.png"/>
+<br>
+
+_"Symbols Split2"_
+<img alt="" style="height:150px" src="symbols_split2.png"/>
+<br>
 
 * **Layout File**: `EC30_Split_Layouts.encrypted` 
 * **Orientation**: Portrait (split design)
@@ -210,40 +229,37 @@ symbols_split2.png
 
 -----
 
-### For WT6000
-
-Landscape layout designed for Zebra WT6000 devices.
-
-
-* **Orientation**: Landscape
-* **Opacity**: 
-* **Devices**: WT6000
-* **File**: `LandScape_Transparent.encrypted` 
-
-[Download]() includes layout file and screenshots shown above. 
-
- 
------
-
 ### SAP Package
 
-`EKBCustomLayouts.encrypted` 
-file its only applicable to EB SAP package should be used with 
+Layouts designed for use with the Enterprise Browser for SAP package. Click image to enlarge; ESC to exit:  
+
+_"Functional Keys"_
+<img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="sap_Numeric.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="sap_Qwerty.png"/>
+<br>
+
+_"Symbols Split1"_
+<img alt="" style="height:150px" src="sap_Symbols.png"/>
+<br>
+
 
 To use this layout, set the `Config.xml` file as follows: 
 
 	:::xml
 	<KeyboardType  value="enterprisekeyboard"/>
  
-FunctionalKeys.png
-Numeric.png
-Qwerty.png
-Symbols.png
 
+* **Layout File**: `EKBCustomLayouts.encrypted` 
 * **Orientation**: Landscape
 * **Opacity**: 
 * **Devices**: 
-* **File**:  
 
 [Download]() includes layout file and screenshots shown above. 
 

@@ -7,19 +7,17 @@ productversion: '3.6'
 
 ## Overview
 
-Enterprise Keyboard Designer (EKD) now offers pre-developed sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
+Enterprise Keyboard Designer (EKD) offers pre-developed sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
 
-<img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
+<!-- <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, ESC to exit_.
 <br>
+ -->
+#### Notes
 
-#### NOTES
-
-**Custom layouts can be used on devices with Enterprise Keyboard 3.2 or later installed and configured as the default input source**. 
-
-Based on device model, enable or disable system and status bar by importing encrypted file to Enterprise Keyboard Designer Tool
-
-Each download includes the `.encrypted` file for deployment to devices along with screenshots of the packaged layouts. 
+* **Custom layouts can be used on devices with Enterprise Keyboard 3.2 or later installed and configured as the default input source**. 
+* **Each download includes the** `.encrypted` **file for deployment** to devices along with screenshots of the packaged layouts. 
+* **To enable or disable the system and status bars on a device**, import the desired layout(s) into EKD, configure as desired and export and deploy the new file. 
 
 #### Also See 
 
@@ -28,11 +26,16 @@ Each download includes the `.encrypted` file for deployment to devices along wit
 
 -----
 
-### Portrait-mode Layouts
+### Portrait-mode Devices
 
-Opaque (non-transparent) layouts designed for devices used mostly in vertical orientation. 
+**Opaque (non-transparent) layouts designed for devices used mostly in vertical orientation**. 
 
-Click image to enlarge, ESC to exit: 
+* **Layout File**: `Portrait_NonTransparent.encrypted` 
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+
+##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:150px" src="pnt_functionkeys.png"/>
@@ -54,18 +57,16 @@ _"SpecialSymbols"_
 <img alt="" style="height:150px" src="pnt_specialsymbols.png"/>
 <br>
 
-* **Layout File**: `Portrait_NonTransparent.encrypted` 
-* **Orientation**: Portrait
-* **Opacity**: Non-transparent
-* **Devices**: MC33, MC93, PS20, TC51/TC56, TC52/TC57, TC72/TC77, TC75x/TC70x, TC8x
-
-**[Download]()** includes layout file and screenshots shown above. 
-
 -----
 
-Transparent layouts designed for the Zebra WT6000 and other devices used mostly in horizontal orientation. 
+**Transparent layouts designed for devices used mostly in vertical orientation**. 
 
-Click image to enlarge, ESC to exit: 
+* **Layout File**: `Portrait_Transparent.encrypted`
+* **Orientation**: 
+* **Opacity**: 
+* **Devices**: WT6000
+
+##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:150px" src="pt_functionkeys.png"/>
@@ -87,84 +88,88 @@ _"SpecialSymbols"_
 <img alt="" style="height:150px" src="pt_specialsymbols.png"/>
 <br>
 
-* **Layout File**: `Portrait_Transparent.encrypted`
-* **Orientation**: 
-* **Opacity**: 
-* **Devices**: WT6000
-
-[Download]() includes layout file and screenshots shown above. 
+[Download "Portrait_Layouts.zip"](Portrait_Layouts.zip) (includes two portrait layout files and all screenshots in this section) 
 
 -----
-### Landscape, Non-transparent
 
-Layouts designed for tablets and vehicle computers. Click image to enlarge; ESC to exit: 
+### Landscape-mode Devices
 
-_"FunctionKeys"_
-<img alt="" style="height:150px" src="Lnt_functional.png"/>
-<br>
-
-_"Numeric"_
-<img alt="" style="height:150px" src="Lnt_Numbers.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
-<br>
-
-_"QwertyCaps"_
-<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
-<br>
-
-_"SpecialSymbols"_
-<img alt="" style="height:150px" src="Lnt_symbols.png"/>
-<br>
+Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation. 
 
 * **Layout File**: `LandScape_NonTransparent.encrypted` 
 * **Orientation**: 
 * **Opacity**: 
-* **Devices**: L10, ET51/56, CC600/CC6000, VC80x/VC83x
+* **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
-[Download]() includes layout file and screenshots shown above. 
-
------
-
-
-### For WT6000
-
-Landscape layout designed for Zebra WT6000 devices. Click image to enlarge; ESC to exit:
+##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
-<img alt="" style="height:150px" src="Lnt_functionkeys.png"/>
+<img alt="" style="height:100px" src="Lnt_functional.png"/>
 <br>
 
 _"Numeric"_
-<img alt="" style="height:150px" src="Lnt_numeric.png"/>
+<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
 <br>
 
 _"Qwerty"_
-<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
+<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
 <br>
 
 _"QwertyCaps"_
-<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
+<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
 <br>
 
 _"SpecialSymbols"_
-<img alt="" style="height:150px" src="Lnt_specialsymbols.png"/>
+<img alt="" style="height:100px" src="Lnt_symbols.png"/>
 <br>
+
+-----
+
+Landscape layout designed for Zebra WT6000 devices. 
 
 * **Layout File**: `LandScape_Transparent.encrypted` 
 * **Orientation**: Landscape
-* **Opacity**: Transparent
+* **Opacity**: Non-transparent
 * **Devices**: WT6000
 
-[Download]() includes layout file and screenshots shown above. 
+##### Click image to enlarge, ESC to exit: 
+
+_"FunctionKeys"_
+<img alt="" style="height:100px" src="Lnt_functional.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
+<br>
+
+_"QwertyCaps"_
+<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
+<br>
+
+_"SpecialSymbols"_
+<img alt="" style="height:100px" src="Lnt_symbols.png"/>
+<br>
+
+[Download "Landscape_Layouts.zip"](Landscape_Layouts.zip) (includes two layout files and all screenshots shown in this section) 
 
 -----
 
 ### For EC30
 
-Portrait layout designed for Zebra EC30 devices.
+Portrait layout and split layouts designed for Zebra EC30 devices.
+
+* **Layout File**: `EC30_Split_Layouts.encrypted`  
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: EC30
+
+> **`NOTE:` These layouts **require Enterprise Keyboard 3.6.1.4** or later on the device.
+
+##### Click image to enlarge, ESC to exit: 
 
 _"Numeric"_
 <img alt="" style="height:150px" src="ec30s_numeric.png"/>
@@ -186,17 +191,121 @@ _"Symbols Split2"_
 <img alt="" style="height:150px" src="ec30s_symbols_split2.png"/>
 <br>
 
-* **Layout File**: `Portrait_Transparent.encrypted` 
-* **Orientation**: 
-* **Opacity**: 
-* **Devices**: EC30
-
-[Download]() includes layout file and screenshots shown above. 
+[Download "EC30_SplitLayout.zip"](EC30_SplitLayout.zip) (includes layout file and all screenshots shown below)
 
 -----
 
+### SAP Package
+
+Layouts designed for apps that use the Enterprise Browser for SAP package.  
+
+To use this layout in an EB app, set the app's `Config.xml` file as follows: 
+
+	:::xml
+	<KeyboardType  value="enterprisekeyboard"/>
+
+* **Layout File**: `EKBCustomLayouts.encrypted` 
+* **Orientation**: Landscape
+* **Opacity**: 
+* **Devices**: 
+
+##### Click image to enlarge, ESC to exit: 
+
+_"Functional Keys"_
+<img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="sap_Numeric.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="sap_Qwerty.png"/>
+<br>
+
+_"Symbols"_
+<img alt="" style="height:150px" src="sap_Symbols.png"/>
+<br>
+
+[Download "EB_SAP_apk_layouts.zip"](EB_SAP_apk_layouts.zip) (includes layout file and all screenshots shown below) 
+
+-----
+<!-- 
+## Customizing Keyboard Settings
+
+#### This Section Covers: 
+
+* Assignment of [keyboard languages](#languages)
+* Setting keyboard [preferences](#preferences)
+* [Text correction settings](#textcorrection)
+* Long key-press and other [advanced settings](#advanced)
+* [Remapping programmable keys](#remappingkeys)
+
+#### Also See
+
+* [Using EKB with DataWedge](#datawedge)
+* [Changing key layouts programmatically](#dynamicinputmethod)
+* [Navigation using TAB keys](#tabkeynavigation)
+* [Scanner control](#scannercontrol)
+
+
+> **NOTE:** Screen contents and colors vary by Android version.    
+-->
+
+## Also See
+
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
+
+
+<!-- 
+
+### For WT6000
+
+Landscape layout designed for Zebra WT6000 devices. 
+
+* **Layout File**: `LandScape_Transparent.encrypted` 
+* **Orientation**: Landscape
+* **Opacity**: Non-transparent
+* **Devices**: WT6000
+
+[Download]() includes layout file and screenshots shown below. 
+
+##### Click image to enlarge, ESC to exit: 
+
+_"FunctionKeys"_
+<img alt="" style="height:100px" src="Lnt_functional.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
+<br>
+
+_"QwertyCaps"_
+<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
+<br>
+
+_"SpecialSymbols"_
+<img alt="" style="height:100px" src="Lnt_symbols.png"/>
+<br>
+
+----- 
+
+
 Portrait split-layouts designed for Zebra EC30 devices.
 
+
+* **Layout File**: 
+* **Orientation**: Portrait (split design)
+* **Opacity**: 
+* **Device**: EC30 
+
+
+##### Click image to enlarge, ESC to exit: 
 
 _"Numeric"_
 <img alt="" style="height:150px" src="numeric.png"/>
@@ -218,91 +327,6 @@ _"Symbols Split2"_
 <img alt="" style="height:150px" src="symbols_split2.png"/>
 <br>
 
-* **Layout File**: `EC30_Split_Layouts.encrypted` 
-* **Orientation**: Portrait (split design)
-* **Opacity**: 
-* **Device**: EC30 
-
-[Download]() includes layout file and screenshots shown above. 
-
-> **`NOTE:` This layout **requires Enterprise Keyboard 3.6.1.4** or later on the device.
-
 -----
+-->
 
-### SAP Package
-
-Layouts designed for use with the Enterprise Browser for SAP package. Click image to enlarge; ESC to exit:  
-
-_"Functional Keys"_
-<img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
-<br>
-
-_"Numeric"_
-<img alt="" style="height:150px" src="sap_Numeric.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:150px" src="sap_Qwerty.png"/>
-<br>
-
-_"Symbols Split1"_
-<img alt="" style="height:150px" src="sap_Symbols.png"/>
-<br>
-
-
-To use this layout, set the `Config.xml` file as follows: 
-
-	:::xml
-	<KeyboardType  value="enterprisekeyboard"/>
- 
-
-* **Layout File**: `EKBCustomLayouts.encrypted` 
-* **Orientation**: Landscape
-* **Opacity**: 
-* **Devices**: 
-
-[Download]() includes layout file and screenshots shown above. 
-
------
-
-
------ 
-
-Important Note:
-
-Based on device model, enable or disable system and status bar by importing encrypted file to Enterprise Keyboard Designer Tool
-
-For EC30_Split_Layouts.encrypted  is supported in EKB client 3.6.1.4 and above .
-
-
-EKB 3.2 (and higher) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom layouts (see below) can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (or higher)** when specific input situations arise. 
-
-
------
-
-## Customizing Keyboard Settings
-
-#### This Section Covers: 
-
-* Assignment of [keyboard languages](#languages)
-* Setting keyboard [preferences](#preferences)
-* [Text correction settings](#textcorrection)
-* Long key-press and other [advanced settings](#advanced)
-* [Remapping programmable keys](#remappingkeys)
-
-#### Also See
-
-* [Using EKB with DataWedge](#datawedge)
-* [Changing key layouts programmatically](#dynamicinputmethod)
-* [Navigation using TAB keys](#tabkeynavigation)
-* [Scanner control](#scannercontrol)
-
-
-> **NOTE:** Screen contents and colors vary by Android version.   
-
------
-
-## Also See
-
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering

@@ -135,23 +135,23 @@ Landscape layout designed for Zebra WT6000 devices.
 ##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
-<img alt="" style="height:100px" src="Lnt_functional.png"/>
+<img alt="" style="height:100px" src="Lt_functionkeys.png"/>
 <br>
 
 _"Numeric"_
-<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
+<img alt="" style="height:100px" src="Lt_numeric.png"/>
 <br>
 
 _"Qwerty"_
-<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
+<img alt="" style="height:100px" src="Lt_qwerty.png"/>
 <br>
 
 _"QwertyCaps"_
-<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
+<img alt="" style="height:100px" src="Lt_qwertyCaps.png"/>
 <br>
 
 _"SpecialSymbols"_
-<img alt="" style="height:100px" src="Lnt_symbols.png"/>
+<img alt="" style="height:100px" src="Lt_specialsymbols.png"/>
 <br>
 
 [Download "Landscape_Layouts.zip"](Landscape_Layouts.zip) (includes two layout files and all screenshots shown in this section) 

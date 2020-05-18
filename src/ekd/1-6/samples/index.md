@@ -21,7 +21,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 #### Also See 
 
-* [Customizing Keyboard Settings](../guide/usage/#customizingkeyboardsettings) | Settings customization guide 
+* [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Settings customization guide 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
 -----

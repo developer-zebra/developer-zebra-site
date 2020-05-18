@@ -21,7 +21,7 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 #### Also See 
 
-* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Settings customization guide 
+* [Customizing Keyboard Settings](../guide/usage/#customizingkeyboardsettings) | Settings customization guide 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
 -----
@@ -104,23 +104,23 @@ Layouts designed for tablets, vehicle computers and other devices used mostly in
 ##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
-<img alt="" style="height:100px" src="Lnt_functional.png"/>
+<img alt="" style="height:150px" src="Lnt_functional.png"/>
 <br>
 
 _"Numeric"_
-<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
+<img alt="" style="height:150px" src="Lnt_Numbers.png"/>
 <br>
 
 _"Qwerty"_
-<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
+<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
 <br>
 
 _"QwertyCaps"_
-<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
+<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
 <br>
 
 _"SpecialSymbols"_
-<img alt="" style="height:100px" src="Lnt_symbols.png"/>
+<img alt="" style="height:150px" src="Lnt_symbols.png"/>
 <br>
 
 -----

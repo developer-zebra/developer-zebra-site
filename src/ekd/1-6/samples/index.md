@@ -7,7 +7,7 @@ productversion: '3.6'
 
 ## Overview
 
-Enterprise Keyboard Designer (EKD) offers pre-developed sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
+Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
 
 <!-- <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, ESC to exit_.
@@ -62,8 +62,8 @@ _"SpecialSymbols"_
 **Transparent layouts designed for devices used mostly in vertical orientation**. 
 
 * **Layout File**: `Portrait_Transparent.encrypted`
-* **Orientation**: 
-* **Opacity**: 
+* **Orientation**: Portrait
+* **Opacity**: Transparent
 * **Devices**: WT6000
 
 ##### Click image to enlarge, ESC to exit: 
@@ -97,8 +97,8 @@ _"SpecialSymbols"_
 Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation. 
 
 * **Layout File**: `LandScape_NonTransparent.encrypted` 
-* **Orientation**: 
-* **Opacity**: 
+* **Orientation**: Landscape
+* **Opacity**: Non-transparent
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
 ##### Click image to enlarge, ESC to exit: 
@@ -167,7 +167,7 @@ Portrait layout and split layouts designed for Zebra EC30 devices.
 * **Opacity**: Non-transparent
 * **Devices**: EC30
 
-> **`NOTE:` These layouts **require Enterprise Keyboard 3.6.1.4** or later on the device.
+> **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -206,8 +206,8 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 
 * **Layout File**: `EKBCustomLayouts.encrypted` 
 * **Orientation**: Landscape
-* **Opacity**: 
-* **Devices**: 
+* **Opacity**: Non-transparent
+* **Devices**: All devices supported by EB
 
 ##### Click image to enlarge, ESC to exit: 
 

@@ -1,7 +1,7 @@
 ---
-title: Enterprise Keyboard Customization
+title: Sample Layouts
 layout: guide.html
-product: Enterprise Keyboard
+product: Enterprise Keyboard Designer
 productversion: '3.6'
 ---
 
@@ -9,31 +9,16 @@ productversion: '3.6'
 
 Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock Android keyboard that provides a more effective means of inputting data into Zebra devices. 
 
-#### Primary EKB Benefits
-* [Quick switching between languages](#languages)
-* [Barcode scanning](#preferences) directly from the keyboard for data collection 
-* [Programmable keys](#remappingkeys) for performing specific tasks 
-* [Finger-flicks](#preferences) for typing long-press characters
-* [Swipe-to-switch](#preferences) key layouts 
-* Populate Android's [Personal Dictionary](#personaldictionary) with custom terms and abbreviations
-
-#### Change Log
-
-* `ADDED in v3.4:` "Canned Text" feature allows assignment of lists of [predefined text responses](#textcorrection) to keys
-* `ADDED in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
-* `ADDED in v3.6:` Program a key to repeat any keyCode when long-pressed
-* `ADDED in v3.6:` Combine multiple keyCodes, presses or Actions into a single key-press Action.
-
 #### Also See 
 
-* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Section of this guide with further details 
+* [Customizing Keyboard Settings](#customizingkeyboardsettings) | Settings customization guide 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
 -----
 
 ### Custom Key Layouts
 
-EKB 3.2 (and later) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom layouts (see below) can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (or later)** when specific input situations arise. 
+EKB 3.2 (and higher) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom layouts (see below) can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (or higher)** when specific input situations arise. 
 
 <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 
@@ -170,7 +155,7 @@ Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to 
 <br>
  -->
 ##### Additional preferences:
-(_applies to devices with MX 7.1 and later only_) 
+(_applies to devices with MX 7.1 and higher only_) 
 <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 
@@ -196,7 +181,7 @@ Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to 
 * Enabling the Symbol tab disables remapping of the Numeric P3 key.
 * Enabling the Alphanumeric tab disables remapping of the Numeric P4 and Symbol P1 keys.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
-* Navigation and Tab configuration features are supported only on devices with MX 7.1 and later.
+* Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
 * A custom key layout made with Enterprise Keyboard Designer 1.4 (or later) can be selected as the default whenever an input field receives focus (**requires EKB 3.4 or later**). [More info](http://techdocs.zebra.com/ekd/latest/guide/usage/#iicreatelayouts).
 
 ------
@@ -384,7 +369,7 @@ Also refer to the [DataWedge User Guide](http://techdocs.zebra.com/datawedge) fo
 ## Dynamic Input Method 
 **_This feature applies to native apps only_**. 
 
-Enterprise Keyboard (1.2 and later) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
+Enterprise Keyboard (1.2 and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
 
 **To set the input method as static**: 
 

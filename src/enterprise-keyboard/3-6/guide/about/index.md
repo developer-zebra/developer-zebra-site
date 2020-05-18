@@ -46,6 +46,8 @@ This version of Enterprise Keyboard includes the following languages:
 
 **NOTE**: New features in EKB 3.6 must be implemented using Enterprise Keyboard Designer 1.6 or later.  
 
+* Enterprise Keyboard Designer now provides **[predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)**, which can be downloaded and deployed immediately or customized to best suit the needs of an organization.
+
 > For more information about new EKB 3.6 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### Device Support

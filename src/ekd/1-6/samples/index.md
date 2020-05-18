@@ -88,7 +88,7 @@ _"SpecialSymbols"_
 <img alt="" style="height:150px" src="pt_specialsymbols.png"/>
 <br>
 
-[Download "Portrait_Layouts.zip"](Portrait_Layouts.zip) (includes two portrait layout files and all screenshots in this section) 
+[Download "Portrait_Layouts.zip"](Portrait_Layouts.zip) (includes two portrait layout files for deploying all key layouts in this section) 
 
 -----
 
@@ -154,7 +154,7 @@ _"SpecialSymbols"_
 <img alt="" style="height:100px" src="Lt_specialsymbols.png"/>
 <br>
 
-[Download "Landscape_Layouts.zip"](Landscape_Layouts.zip) (includes two layout files and all screenshots shown in this section) 
+[Download "Landscape_Layouts.zip"](Landscape_Layouts.zip) (includes two layout files for deploying all key layouts in this section) 
 
 -----
 
@@ -191,7 +191,7 @@ _"Symbols Split2"_
 <img alt="" style="height:150px" src="ec30s_symbols_split2.png"/>
 <br>
 
-[Download "EC30_SplitLayout.zip"](EC30_SplitLayout.zip) (includes layout file and all screenshots shown below)
+[Download "EC30_SplitLayout.zip"](EC30_SplitLayout.zip) (includes layout file for deploying all key layouts in this section)
 
 -----
 
@@ -227,7 +227,7 @@ _"Symbols"_
 <img alt="" style="height:150px" src="sap_Symbols.png"/>
 <br>
 
-[Download "EB_SAP_apk_layouts.zip"](EB_SAP_apk_layouts.zip) (includes layout file and all screenshots shown below) 
+[Download "EB_SAP_apk_layouts.zip"](EB_SAP_apk_layouts.zip) (includes layout file for deploying all key layouts in this section) 
 
 -----
 <!-- 

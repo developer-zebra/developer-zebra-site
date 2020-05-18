@@ -24,45 +24,57 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 -----
 
-### Vertical Layouts
+### Portrait-mode Layouts
 
-For portrait-mode devices. 
+Opaque (non-transparent) layouts designed for devices used mostly in vertical orientation. 
 
-<img alt="" style="height:350px" src="functionkeys.png"/>
-_Click image to enlarge, ESC to exit_.
+Click image to enlarge, ESC to exit: 
+
+<img alt="" style="height:150px" src="functionkeys.png"/>
+_"FunctionKeys"_<br>
 <br>
 
-<img alt="" style="height:350px" src="specialsymbols.png"/>
-_Click image to enlarge, ESC to exit_.
+<img alt="" style="height:150px" src="numeric.png"/>
+_"Numeric"_<br>
 <br>
 
-<img alt="" style="height:350px" src="qwertyCaps.png"/>
-_Click image to enlarge, ESC to exit_.
+<img alt="" style="height:150px" src="qwerty.png"/>
+_"Qwerty"_<br>
 <br>
 
-<img alt="" style="height:350px" src="qwerty.png"/>
-_Click image to enlarge, ESC to exit_.
+<img alt="" style="height:150px" src="qwertyCaps.png"/>
+_"QwertyCaps"_<br>
 <br>
 
-<img alt="" style="height:350px" src="numeric.png"/>
-_Click image to enlarge, ESC to exit_.
+<img alt="" style="height:150px" src="specialsymbols.png"/>
+_"SpecialSymbols"_<br>
 <br>
 
+* **Orientation**: 
+* **Opacity**: 
 * **Devices**: TC72/77, TC51/56, TC52/57, TC75x/70x, TC8x, PS20, MC93, MC33
-
 * **File**: `Portrait_NonTransparent.encrypted` 
+
+
 
 [Download]()
 
 -----
 
-`Portrait_Transparent.encrypted`
+Transparent layouts designed for the Zebra WT6000 and other devices used mostly in horizontal orientation. 
 
 functionkeys.png
 numeric.png
 qwerty.png
 qwertyCaps.png
 specialsymbols.png
+
+
+* **Orientation**: 
+* **Opacity**: 
+* **Devices**: WT6000
+* **File**: `Portrait_Transparent.encrypted`
+
 
 -----
 ### Horizontal Layouts
@@ -71,8 +83,10 @@ specialsymbols.png
 
 Layouts designed for tablets and vehicle computers. 
 
-* **Devices**: L10, ET51/56, CC600/CC6000, VC80x/VC83x
 
+* **Orientation**: 
+* **Opacity**: 
+* **Devices**: L10, ET51/56, CC600/CC6000, VC80x/VC83x
 * **File**: `LandScape_NonTransparent.encrypted` 
 
 functional.png
@@ -86,9 +100,10 @@ symbols.png
 -----
 
 
-* **Devices**: WT6000 only
-
-File: `LandScape_Transparent.encrypted` 
+* **Orientation**: 
+* **Opacity**: 
+* **Devices**: WT6000
+* **File**: `LandScape_Transparent.encrypted` 
 
 functional.png
 Numbers.png
@@ -103,9 +118,10 @@ symbols.png
 
 Portrait layout designed for Zebra EC30 devices.
 
-* Orientation: Portrait
-* Devices: EC30
-* File: `Portrait_Transparent.encrypted` 
+* **Orientation**: 
+* **Opacity**: 
+* **Devices**: EC30
+* **File**: `Portrait_Transparent.encrypted` 
 
 [Download]()
 
@@ -116,17 +132,18 @@ Symbols.png
 
 -----
 
-* Device: EC30 
-* Orientation: Portrait (split design)
-* File: `EC30_Split_Layouts.encrypted` 
-
-[Download]()
-
 numeric.png
 qwerty_split1.png
 qwerty_split2.png
 symbols_split1.png
 symbols_split2.png
+
+* **Orientation**: Portrait (split design)
+* **Opacity**: 
+* **Device**: EC30 
+* **File**: `EC30_Split_Layouts.encrypted` 
+
+[Download]()
 
 
 -----
@@ -135,11 +152,11 @@ symbols_split2.png
 
 Landscape layout designed for Zebra WT6000 devices.
 
-* Orientation: Landscape
 
-* Devices: WT6000
-
-* File: `LandScape_Transparent.encrypted` 
+* **Orientation**: Landscape
+* **Opacity**: 
+* **Devices**: WT6000
+* **File**: `LandScape_Transparent.encrypted` 
 
 [Download]()
 
@@ -160,6 +177,11 @@ FunctionalKeys.png
 Numeric.png
 Qwerty.png
 Symbols.png
+
+* **Orientation**: Landscape
+* **Opacity**: 
+* **Devices**: 
+* **File**:  
 
 -----
 

@@ -25,10 +25,10 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can cause unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
-* The "Switch-Scan" Press Action (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
-* When opening a layout using the "Switch-abc," "Switch-123," and "Switch-#&#42;/" actions, the layout tab name shown is sometimes NOT that of the layout being displayed.
+* **The "Switch-Scan" Press Action** (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
+* **When opening a layout using the "Switch-abc," "Switch-123," and "Switch-#&#42;/" actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
-* Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
+* **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.

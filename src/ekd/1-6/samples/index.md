@@ -13,7 +13,7 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 `IMPORTANT, PLEASE READ`
 * **Custom layouts require Enterprise Keyboard 3.2 or later installed on the device and configured as the default input source**. 
-* **Downloads include the** `.encrypted` **file for device deployment** with all layouts shown in the section. 
+* **Downloads include the** `.encrypted` **file for device deployment**; each file contains all layouts shown in its section. 
 * **For proper layout rendering, it might be necessary to enable or disable the system and status bars on a device**. This is done by importing the desired layout(s) into EKD, configuring as desired and exporting and deploying the new file. See the [Layout Properties section](../guide/usage/#ivsetlayoutproperties) of the Usage Guide for more information. 
 
 #### Also See 
@@ -204,7 +204,7 @@ _"Symbols Split2"_
 
 ### SAP Portrait, Non-transparent
 
-**Layouts designed for apps that use the Enterprise Browser for SAP package**. [About Enterprise Browser](https://techdocs.zebra.com/enterprise-browser/). 
+**Layouts designed for apps that use the Enterprise Browser for SAP package**. [About Enterprise Browser](/enterprise-browser/). 
 
 To use this layout in an EB app, set the app's `Config.xml` file as follows: 
 

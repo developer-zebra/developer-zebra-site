@@ -34,7 +34,9 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 * **Opacity**: Transparent
 * **Devices**: **EC30**, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
-* **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+* **[Download this layout file&#42;](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+
+&#42; *For devices other than the EC30, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -104,7 +106,9 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: **WT6000**, other horizontally oriented devices
 
-* **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
+* **[Download this layout file&#42;](Landscape_Transparent.encrypted) |** Contains all key layouts below 
+
+&#42; *For devices other than the EC30, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
 
 ##### Click image to enlarge, ESC to exit: 
 

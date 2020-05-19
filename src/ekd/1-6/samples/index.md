@@ -108,7 +108,7 @@ _"SpecialSymbols"_
 
 * **[Download this layout file&#42;](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
-&#42; *For devices other than the EC30, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
+&#42; *For devices other than the WT6000, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
 
 ##### Click image to enlarge, ESC to exit: 
 

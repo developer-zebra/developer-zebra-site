@@ -11,15 +11,13 @@ created: 9/9/2019
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
-### New in EKD 1.4
 
-##### Enterprise Keyboard Designer 1.4 (and later) includes: 
+### Change Log
 
-* **The ability to create "canned text,"** predefined responses that appear in a list for easy selection, which further improves the speed and accuracy of responses when using Enterprise Keyboard (**requires EKB 3.4 or later**). [Learn more](#cannedtext). 
-
-* **The ability to set a default custom layout** to be displayed whenever an input field receives focus. [Learn more](#iicreatelayouts).
-
-> **NOTE: Both of these new features require Enterprise Keyboard 3.4 or later on the device**. 
+* `ADDED in v1.4:` **The ability to create "canned text,"** predefined responses that appear in a list for easy selection (requires EKB 3.4 or later on device). [Learn more](#cannedtext). 
+* `ADDED in v1.4:` **The ability to set a default custom layout** to be displayed whenever an input field receives focus (requires EKB 3.4 or later on device). [Learn more](#iicreatelayouts).
+* `ADDED in v1.6:` **RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key. 
+* `ADDED in v1.6:` **Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press.
 
 -----
 
@@ -27,7 +25,8 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can cause unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
-* The "Switch-Scan" Press Action (which is supposed to invoke the EKB "scan" layout) sometimes brings up a different layout. 
+* The "Switch-Scan" Press Action (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
+* When opening a layout using the "Switch-abc," "Switch-123," and "Switch-#&#42;/" actions, the layout tab name shown is sometimes NOT that of the layout being displayed.
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
 * Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.

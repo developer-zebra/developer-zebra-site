@@ -40,7 +40,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New Features 
 
-* **A new [RepeatKeys](../) feature** causes a specified keyCode to be repeated on long-pressing the key. 
+* **A new [RepeatKeys](../) feature** causes a specified keyCode to be repeated when long-pressing the key. 
 
 * **A new Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 
 

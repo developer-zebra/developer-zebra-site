@@ -12,8 +12,8 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 #### Notes
 
 * **Custom layouts can be used on devices with Enterprise Keyboard 3.2 or later installed and configured as the default input source**. 
-* **Each download includes the** `.encrypted` **file for deployment** to devices along with screenshots of the packaged layouts. 
-* **To enable or disable the system and status bars on a device**, import the desired layout(s) into EKD, configure as desired and export and deploy the new file. 
+* **Each download includes the** `.encrypted` **file for device deployment**. It contains all layouts shown in the section. 
+* **For proper layout rendering, it might be necessary to enable or disable the system and status bars on a device**. This is done by importing the desired layout(s) into EKD, configuring as desired and exporting and deploy the new file. See the [Layout Properties section](../guide/usage/#ivsetlayoutproperties) of the Usage Guide for more information. 
 
 #### Also See 
 
@@ -30,7 +30,7 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 * **Layout File**: `Portrait_Transparent.encrypted`
 * **Orientation**: Portrait
 * **Opacity**: Transparent
-* **Devices**: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+* **Devices**: **EC30**, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
 * **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
 
@@ -135,7 +135,7 @@ _"SpecialSymbols"_
 * **Layout File**: `LandScape_Transparent.encrypted` 
 * **Orientation**: Landscape
 * **Opacity**: Non-transparent
-* **Devices**: WT6000, other horizontally oriented devices
+* **Devices**: **WT6000**, other horizontally oriented devices
 
 * **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
@@ -212,7 +212,7 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 * **Layout File**: `EKBCustomLayouts.encrypted` 
 * **Orientation**: Portrait
 * **Opacity**: Non-transparent
-* **Devices**: All devices supported by EB
+* **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
 
 * **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
 

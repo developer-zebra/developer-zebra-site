@@ -9,10 +9,6 @@ productversion: '3.6'
 
 Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
 
-<!-- <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
-_Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, ESC to exit_.
-<br>
- -->
 #### Notes
 
 * **Custom layouts can be used on devices with Enterprise Keyboard 3.2 or later installed and configured as the default input source**. 
@@ -21,43 +17,9 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 
 #### Also See 
 
+* [Deploying Layouts](../usage/#vdeploylayouts) | Instructions for pushing layout files to a device 
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Settings customization guide 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-
------
-
-### Portrait, Non-transparent
-
-**Opaque (non-transparent) layouts designed for devices used mostly in vertical orientation**. 
-
-* **Layout File**: `Portrait_NonTransparent.encrypted` 
-* **Orientation**: Portrait
-* **Opacity**: Non-transparent
-* **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
-
-* **[Download](Portrait_NonTransparent.encrypted)** layout file containing all key layouts below 
-
-##### Click image to enlarge, ESC to exit: 
-
-_"FunctionKeys"_
-<img alt="" style="height:150px" src="pnt_functionkeys.png"/>
-<br>
-
-_"Numeric"_
-<img alt="" style="height:150px" src="pnt_numeric.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:150px" src="pnt_qwerty.png"/>
-<br>
-
-_"QwertyCaps"_
-<img alt="" style="height:150px" src="pnt_qwertyCaps.png"/>
-<br>
-
-_"SpecialSymbols"_
-<img alt="" style="height:150px" src="pnt_specialsymbols.png"/>
-<br>
 
 -----
 
@@ -68,9 +30,9 @@ _"SpecialSymbols"_
 * **Layout File**: `Portrait_Transparent.encrypted`
 * **Orientation**: Portrait
 * **Opacity**: Transparent
-* **Devices**: EC30
+* **Devices**: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
-* **[Download](Portrait_Transparent.encrypted)** layout file containing all key layouts below 
+* **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -96,6 +58,41 @@ _"SpecialSymbols"_
 
 -----
 
+### Portrait, Non-transparent
+
+**Opaque (non-transparent) layouts designed for devices used mostly in vertical orientation**. 
+
+* **Layout File**: `Portrait_NonTransparent.encrypted` 
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+
+* **[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
+
+##### Click image to enlarge, ESC to exit: 
+
+_"FunctionKeys"_
+<img alt="" style="height:150px" src="pnt_functionkeys.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="pnt_numeric.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="pnt_qwerty.png"/>
+<br>
+
+_"QwertyCaps"_
+<img alt="" style="height:150px" src="pnt_qwertyCaps.png"/>
+<br>
+
+_"SpecialSymbols"_
+<img alt="" style="height:150px" src="pnt_specialsymbols.png"/>
+<br>
+
+-----
+
 ### Landscape, Transparent
 
 **Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation**. 
@@ -105,7 +102,7 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
-* **[Download](Landscape_NonTransparent.encrypted)** layout file containing all key layouts below 
+* **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -131,16 +128,16 @@ _"SpecialSymbols"_
 
 -----
 
-#### Landscape, Non-transparent
+### Landscape, Non-transparent
 
-Landscape layout designed for Zebra WT6000 devices with a see-through background. 
+**Landscape layouts with a see-through background designed for Zebra WT6000** and other devices used mostly in horizontal orientation. 
 
 * **Layout File**: `LandScape_Transparent.encrypted` 
 * **Orientation**: Landscape
 * **Opacity**: Non-transparent
-* **Devices**: WT6000
+* **Devices**: WT6000, other horizontally oriented devices
 
-* **[Download](Landscape_Transparent.encrypted)** layout file containing all key layouts below 
+* **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -168,14 +165,14 @@ _"SpecialSymbols"_
 
 ### EC30 Portrait, Non-transparent
 
-Portrait layout and split layouts designed for the small screen of the Zebra EC30 device.
+**Portrait layout and split-key layouts designed for the small screen of the Zebra EC30 device**.
 
 * **Layout File**: `EC30_Split_Layouts.encrypted`  
 * **Orientation**: Portrait
 * **Opacity**: Non-transparent
 * **Devices**: EC30
 
-* **[Download](EC30_Split_Layouts.encrypted)** layout file containing all key layouts below 
+* **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
 
@@ -217,7 +214,7 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 * **Opacity**: Non-transparent
 * **Devices**: All devices supported by EB
 
-* **[Download](SAPLayouts.encrypted)** layout file containing all key layouts below 
+* **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -238,103 +235,12 @@ _"Symbols"_
 <br>
 
 -----
-<!-- 
-## Customizing Keyboard Settings
-
-#### This Section Covers: 
-
-* Assignment of [keyboard languages](#languages)
-* Setting keyboard [preferences](#preferences)
-* [Text correction settings](#textcorrection)
-* Long key-press and other [advanced settings](#advanced)
-* [Remapping programmable keys](#remappingkeys)
-
-#### Also See
-
-* [Using EKB with DataWedge](#datawedge)
-* [Changing key layouts programmatically](#dynamicinputmethod)
-* [Navigation using TAB keys](#tabkeynavigation)
-* [Scanner control](#scannercontrol)
-
-
-> **NOTE:** Screen contents and colors vary by Android version.    
--->
 
 ## Also See
 
+* [Deploying Layouts](../usage/#vdeploylayouts) | Instructions for pushing layout files to a device 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 * [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
 
 
-<!-- 
-
-### For WT6000
-
-Landscape layout designed for Zebra WT6000 devices. 
-
-* **Layout File**: `LandScape_Transparent.encrypted` 
-* **Orientation**: Landscape
-* **Opacity**: Non-transparent
-* **Devices**: WT6000
-
-[Download]() includes layout file and screenshots shown below. 
-
-##### Click image to enlarge, ESC to exit: 
-
-_"FunctionKeys"_
-<img alt="" style="height:100px" src="Lnt_functional.png"/>
-<br>
-
-_"Numeric"_
-<img alt="" style="height:100px" src="Lnt_Numbers.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:100px" src="Lnt_qwerty.png"/>
-<br>
-
-_"QwertyCaps"_
-<img alt="" style="height:100px" src="Lnt_qwertyCaps.png"/>
-<br>
-
-_"SpecialSymbols"_
-<img alt="" style="height:100px" src="Lnt_symbols.png"/>
-<br>
-
------ 
-
-
-Portrait split-layouts designed for Zebra EC30 devices.
-
-
-* **Layout File**: 
-* **Orientation**: Portrait (split design)
-* **Opacity**: 
-* **Device**: EC30 
-
-
-##### Click image to enlarge, ESC to exit: 
-
-_"Numeric"_
-<img alt="" style="height:150px" src="numeric.png"/>
-<br>
-
-_"Qwerty Split1"_
-<img alt="" style="height:150px" src="qwerty_split1.png"/>
-<br>
-
-_"Qwerty Split2"_
-<img alt="" style="height:150px" src="qwerty_split2.png"/>
-<br>
-
-_"Symbols Split1"_
-<img alt="" style="height:150px" src="symbols_split1.png"/>
-<br>
-
-_"Symbols Split2"_
-<img alt="" style="height:150px" src="symbols_split2.png"/>
-<br>
-
------
--->
 

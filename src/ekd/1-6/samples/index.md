@@ -17,7 +17,7 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 #### Also See 
 
-* [Deploying Layouts](../usage/#vdeploylayouts) | Instructions for pushing layout files to a device 
+* [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device 
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Settings customization guide 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 
@@ -238,7 +238,7 @@ _"Symbols"_
 
 ## Also See
 
-* [Deploying Layouts](../usage/#vdeploylayouts) | Instructions for pushing layout files to a device 
+* [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
 * [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
 

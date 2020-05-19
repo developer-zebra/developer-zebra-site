@@ -20,7 +20,7 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 * [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Complete guide to setting button properties 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** in implementation, with sample code
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
 * [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
 
 -----
@@ -97,44 +97,9 @@ _"SpecialSymbols"_
 
 ### Landscape, Transparent
 
-**Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation**. 
-
-* **Layout File**: `LandScape_NonTransparent.encrypted` 
-* **Orientation**: Landscape
-* **Opacity**: Non-transparent
-* **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
-
-* **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
-
-##### Click image to enlarge, ESC to exit: 
-
-_"FunctionKeys"_
-<img alt="" style="height:150px" src="Lnt_functional.png"/>
-<br>
-
-_"Numeric"_
-<img alt="" style="height:150px" src="Lnt_Numbers.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
-<br>
-
-_"QwertyCaps"_
-<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
-<br>
-
-_"SpecialSymbols"_
-<img alt="" style="height:150px" src="Lnt_symbols.png"/>
-<br>
-
------
-
-### Landscape, Non-transparent
-
 **Landscape layouts with a see-through background designed for Zebra WT6000** and other devices used mostly in horizontal orientation. 
 
-* **Layout File**: `LandScape_Transparent.encrypted` 
+* **Layout File**: `Landscape_Transparent.encrypted` 
 * **Orientation**: Landscape
 * **Opacity**: Non-transparent
 * **Devices**: **WT6000**, other horizontally oriented devices
@@ -161,6 +126,41 @@ _"QwertyCaps"_
 
 _"SpecialSymbols"_
 <img alt="" style="height:100px" src="Lt_specialsymbols.png"/>
+<br>
+
+-----
+
+### Landscape, Non-transparent
+
+**Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation**. 
+
+* **Layout File**: `Landscape_NonTransparent.encrypted` 
+* **Orientation**: Landscape
+* **Opacity**: Non-transparent
+* **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
+
+* **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
+
+##### Click image to enlarge, ESC to exit: 
+
+_"FunctionKeys"_
+<img alt="" style="height:150px" src="Lnt_functional.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="Lnt_Numbers.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="Lnt_qwerty.png"/>
+<br>
+
+_"QwertyCaps"_
+<img alt="" style="height:150px" src="Lnt_qwertyCaps.png"/>
+<br>
+
+_"SpecialSymbols"_
+<img alt="" style="height:150px" src="Lnt_symbols.png"/>
 <br>
 
 -----
@@ -242,7 +242,7 @@ _"Symbols"_
 
 * [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Complete guide to setting button properties 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** in implementation, with sample code
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
 * [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
 
 

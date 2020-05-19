@@ -30,10 +30,23 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
-* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. See [DataWedge Notes](#datawedgenotes), below. 
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
+
+### DataWedge Notes
+The DataWedge service is included on every Zebra device and when enabled, allows any application on the device to acquire data from various input sources. The following rules apply with regard to DataWedge usage on the device. 
+
+* **DataWedge default layout settings always takes precedence over those set by EKD**.
+* **If DataWedge is enabled when a custom layout file deployed**, the Enterprise Keyboard fixed layout is shown when an input field gets focus; EKD default setting is ignored.
+* If DataWedge is subsequently disabled, the custom layout must be redeployed to override the DataWedge default setting and become the new default layout. 
+* DataWedge must be disabled when a custom layout file is deployed in order for that layout to become the default layout (and displayed when an input field gains focus).
+* If DataWedge is later enabled and has a different default layout
+
+- If default layout is custom layout, on ime change request from Gboard opens the custom layout as default.
+
+-----
 
 ### Also See
 

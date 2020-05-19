@@ -35,6 +35,8 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * **Opacity**: Non-transparent
 * **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
+* **[Download](Portrait_NonTransparent.encrypted)** layout file containing all portrait layouts below 
+
 ##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
@@ -64,7 +66,9 @@ _"SpecialSymbols"_
 * **Layout File**: `Portrait_Transparent.encrypted`
 * **Orientation**: Portrait
 * **Opacity**: Transparent
-* **Devices**: WT6000
+* **Devices**: EC30
+
+* **[Download](Portrait_Transparent.encrypted)** layout file containing all portrait layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -88,11 +92,9 @@ _"SpecialSymbols"_
 <img alt="" style="height:150px" src="pt_specialsymbols.png"/>
 <br>
 
-[Download "Portrait_Layouts.zip"](Portrait_Layouts.zip) (includes two portrait layout files for deploying all key layouts in this section) 
-
 -----
 
-### Landscape-mode Devices
+### Landscape, Transparent
 
 Layouts designed for tablets, vehicle computers and other devices used mostly in horizontal orientation. 
 
@@ -100,6 +102,8 @@ Layouts designed for tablets, vehicle computers and other devices used mostly in
 * **Orientation**: Landscape
 * **Opacity**: Non-transparent
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
+
+* **[Download](Landscape_NonTransparent.encrypted)** layout file containing all portrait layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -125,12 +129,16 @@ _"SpecialSymbols"_
 
 -----
 
-Landscape layout designed for Zebra WT6000 devices. 
+#### Landscape, Non-transparent
+
+Landscape layout designed for Zebra WT6000 devices with a see-through background. 
 
 * **Layout File**: `LandScape_Transparent.encrypted` 
 * **Orientation**: Landscape
 * **Opacity**: Non-transparent
 * **Devices**: WT6000
+
+* **[Download](Landscape_Transparent.encrypted)** layout file containing all portrait layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -154,18 +162,18 @@ _"SpecialSymbols"_
 <img alt="" style="height:100px" src="Lt_specialsymbols.png"/>
 <br>
 
-[Download "Landscape_Layouts.zip"](Landscape_Layouts.zip) (includes two layout files for deploying all key layouts in this section) 
-
 -----
 
-### For EC30
+### EC30, Non-transparent
 
-Portrait layout and split layouts designed for Zebra EC30 devices.
+Portrait layout and split layouts designed for the small screen of the Zebra EC30 device.
 
 * **Layout File**: `EC30_Split_Layouts.encrypted`  
 * **Orientation**: Portrait
 * **Opacity**: Non-transparent
 * **Devices**: EC30
+
+* **[Download](EC30_Split_Layouts.encrypted)** layout file containing all portrait layouts below 
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
 
@@ -191,11 +199,9 @@ _"Symbols Split2"_
 <img alt="" style="height:150px" src="ec30s_symbols_split2.png"/>
 <br>
 
-[Download "EC30_SplitLayout.zip"](EC30_SplitLayout.zip) (includes layout file for deploying all key layouts in this section)
-
 -----
 
-### SAP Package
+### SAP Portrait, Non-transparent
 
 Layouts designed for apps that use the Enterprise Browser for SAP package.  
 
@@ -205,9 +211,11 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 	<KeyboardType  value="enterprisekeyboard"/>
 
 * **Layout File**: `EKBCustomLayouts.encrypted` 
-* **Orientation**: Landscape
+* **Orientation**: Portrait
 * **Opacity**: Non-transparent
 * **Devices**: All devices supported by EB
+
+* **[Download](SAPLayouts.encrypted)** layout file containing all portrait layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -226,8 +234,6 @@ _"Qwerty"_
 _"Symbols"_
 <img alt="" style="height:150px" src="sap_Symbols.png"/>
 <br>
-
-[Download "EB_SAP_apk_layouts.zip"](EB_SAP_apk_layouts.zip) (includes layout file for deploying all key layouts in this section) 
 
 -----
 <!-- 

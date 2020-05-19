@@ -27,7 +27,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * **The "Switch-Scan" Press Action** (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
 * **When opening a layout using the "Switch-abc," "Switch-123," and "Switch-#&#42;/" actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
-* **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
+* **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
@@ -290,7 +290,7 @@ Button Actions supported by EKD include predefined command strings for generatin
  * **Switch-Scan -** Switches to the “scanning button" layout.
  * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout.
  * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up).
- * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**.
+ * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**.
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
@@ -526,9 +526,9 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 ### Also See
 
-* **[Enterprise Keyboard deployment guide](/enterprise-keyboard/latest/guide/deploy)** | Mass deployment of EKB and key layout files
-* **[Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis)** | Switching key layouts programmatically
-* **[DataWedge Configuration](/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
+* **[Enterprise Keyboard deployment guide](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/deploy)** | Mass deployment of EKB and key layout files
+* **[Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis)** | Switching key layouts programmatically
+* **[DataWedge Configuration](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/)** | Using key layouts with DataWedge 
 
 -----
   
@@ -536,8 +536,8 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 This section explains the program logic involved when switching layouts with Android intents when focus of an input field changes. 
 
-> For programming guidance, see [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis). <br>
-> For changing layouts through DataWedge, see the [DataWedge EKB configuration guide](/datawedge/latest/guide/utilities/ekb/). 
+> For programming guidance, see [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis). <br>
+> For changing layouts through DataWedge, see the [DataWedge EKB configuration guide](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/). 
 
 ### Requirements
 
@@ -550,7 +550,7 @@ This section explains the program logic involved when switching layouts with And
 
 ### Use Case 1
 
-This case describes an Android app with two text input fields. Substitute sample names shown below with those in the deployed layout definition file (i.e. `myLayout.encrypted`). [More info](/enterprise-keyboard/latest/guide/deploy/). 
+This case describes an Android app with two text input fields. Substitute sample names shown below with those in the deployed layout definition file (i.e. `myLayout.encrypted`). [More info](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/deploy/). 
 
 * `editText1` input field uses the standard Enterprise Keyboard fixed layout, which includes numeric, alpha-numeric, scan and symbol keyboards manually switchable by the user as needed.  
 * `editText2` input field uses a custom layout made with EKD that contains keys specifically designed for a particular type of input. 

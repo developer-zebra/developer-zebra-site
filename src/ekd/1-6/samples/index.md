@@ -204,7 +204,7 @@ _"Symbols Split2"_
 
 ### SAP Portrait, Non-transparent
 
-Layouts designed for apps that use the Enterprise Browser for SAP package.  
+**Layouts designed for apps that use the Enterprise Browser for SAP package**. [About Enterprise Browser](https://techdocs.zebra.com/enterprise-browser/). 
 
 To use this layout in an EB app, set the app's `Config.xml` file as follows: 
 

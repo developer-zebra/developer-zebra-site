@@ -82,7 +82,7 @@ Before beginning a layout, please make note of the following:
 
 ##### Usage Notes
 
-* **Press CRTL-Z to Undo the most recent action(s)** in reverse order. 
+* **Press CTRL-Z to Undo the most recent action(s)** in reverse order. 
 * **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  
 * **The Undo "stack" stores as many as 10 actions**, and works only within the active layout. 
 * **The Undo stack is cleared when**:

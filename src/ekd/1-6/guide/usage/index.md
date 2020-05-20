@@ -14,10 +14,10 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 ### Change Log
 
-* `ADDED in v1.4:` **The ability to create "canned text,"** predefined responses that appear in a list for easy selection (requires EKB 3.4 or later on device). [Learn more](#cannedtext). 
-* `ADDED in v1.4:` **The ability to set a default custom layout** to be displayed whenever an input field receives focus (requires EKB 3.4 or later on device). [Learn more](#iicreatelayouts).
-* `ADDED in v1.6:` **RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key. 
-* `ADDED in v1.6:` **Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press.
+* `ADDED in v1.4:` **The ability to create "canned text"** that appears in a list for easy selection (requires EKB 3.4 or later). [Learn more](#cannedtext). 
+* `ADDED in v1.4:` **The ability to set a default layout** to display on input field focus (requires EKB 3.4 or later). [Learn more](#iicreatelayouts).
+* `ADDED in v1.6:` **RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key (requires EKS 3.6 or later). 
+* `ADDED in v1.6:` **Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press (requires EKD 3.6 or later).
 
 -----
 
@@ -26,25 +26,23 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can cause unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * **The "Switch-Scan" Press Action** (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
-* **When opening a layout using the "Switch-abc," "Switch-123," and "Switch-#&#42;/" actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
+* **When opening a layout using the "Switch-abc," "Switch-123," "Switch-#&#42;/" and "Switch-Scan" Actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. See [DataWedge Notes](#datawedgenotes), below. 
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
-
-> **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
+* If default is a custom layout, **an IME change request from the Google keyboard sets the custom layout as the default**.
 
 ### DataWedge Notes
-The DataWedge service is included on every Zebra device and when enabled, allows any application on the device to acquire data from various input sources. The following rules apply with regard to DataWedge usage on the device. 
+The DataWedge service is included on every Zebra device and when enabled, allows any application on the device to acquire data from various input sources. The following rules apply when DataWedge is used. 
 
-* **DataWedge default layout settings always takes precedence over those set by EKD**.
-* **If DataWedge is enabled when a custom layout file deployed**, the Enterprise Keyboard fixed layout is shown when an input field gets focus; EKD default setting is ignored.
-* If DataWedge is subsequently disabled, the custom layout must be redeployed to override the DataWedge default setting and become the new default layout. 
-* DataWedge must be disabled when a custom layout file is deployed in order for that layout to become the default layout (and displayed when an input field gains focus).
-* If DataWedge is later enabled and has a different default layout
+* **DataWedge default layout settings always takes precedence over those set by EKD**. 
+* **If DataWedge is enabled at the time a custom layout file is deployed**, the EKD default setting is ignored and the Enterprise Keyboard fixed layout is shown when an input field gets focus. 
+* **If DataWedge is enabled *after* a custom layout had been set as the default**, the DataWedge setting is enabled. 
+* **If DataWedge is disabled *after* a custom layout file is deployed**, the custom file must be redeployed to become the new default layout. 
 
-- If default layout is custom layout, on ime change request from Gboard opens the custom layout as default.
+> **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 
 -----
 

@@ -75,10 +75,10 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 From RN:
 * **Undo feature** reverses each of the last 10 actions  
 * **Deploy button** automatically exports the current layout to a USB-connected device  
-* **Supports Repeating Keys action** to send multiple keycodes by long-pressing a key 
-* **Supports Macros** to combine multiple keycodes, presses or actions into a single action 
+* **Repeating Keys Action** sends multiple keycodes by long-pressing a key 
+* **Macros** combine multiple keycodes, presses or actions into a single action 
 
-* EKD now includes **[predeveloped sample layouts](../../samples/)** that can be downloaded and deployed immediately or customized to best suit the needs of an enterprise.
+* EKD now includes **[predeveloped sample layouts](../../samples/)** that can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
 
 <!-- 
 OLD OLD OLD

@@ -16,8 +16,10 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * `ADDED in v1.4:` **The ability to create "canned text"** that appears in a list for easy selection (requires EKB 3.4 or later). [Learn more](#cannedtext). 
 * `ADDED in v1.4:` **The ability to set a default layout** to display on input field focus (requires EKB 3.4 or later). [Learn more](#iicreatelayouts).
-* `ADDED in v1.6:` **RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key (requires EKS 3.6 or later). 
+* `ADDED in v1.6:` **RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key (requires EKD 3.6 or later). 
 * `ADDED in v1.6:` **Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press (requires EKD 3.6 or later).
+* `ADDED in v1.6:` Undo feature can reverse each of the last 10 actions.
+* `ADDED in v1.6:` Deployment feature exports the current layout definition file to a USB-connected device. 
 
 -----
 
@@ -30,7 +32,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
-* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. See [DataWedge Notes](#datawedgenotes), below. 
+* **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. See DataWedge Notes, below. 
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 * If a custom layout is the default, **an IME change request from the Google keyboard sets that custom layout as the default**.
 
@@ -39,8 +41,8 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 
 * **DataWedge default layout settings always takes precedence over those set by EKD**. 
 * **If DataWedge is enabled at the time a custom layout file is deployed**, the EKD default setting is ignored and the Enterprise Keyboard fixed layout is shown when an input field gets focus. 
-* **If DataWedge is enabled *after* a custom layout had been set as the default**, the DataWedge setting is enabled. 
-* **If DataWedge is *disabled* after a custom layout file is deployed**, <u>the custom file must be redeployed</u> to become the new default layout. 
+* **If DataWedge is enabled *after* a custom layout had been set as the default**, the DataWedge setting takes precedence (and is enabled). 
+* **If DataWedge is *disabled* after a custom layout file is deployed**, <u>the custom file must be redeployed</u> to use that custom file as the default layout. 
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 
@@ -80,6 +82,14 @@ Before beginning a layout, please make note of the following:
 
 ##### Usage Notes
 
+* **Press CRTL-Z to Undo the most recent action(s)** in reverse order. 
+* **The Undo "stack" stores as many as 10 actions**, and works only within the active layout. 
+* **The Undo stack is cleared when**:
+ * Switching layouts
+ * Creating a new layout
+ * Clearing the current layout
+ * Switching layout type (i.e. from Grid to Drag-and-Drop)
+* **Changes to Grid layout properties cannot be undone**.  
 * All buttons should be placed within the bounds of the layout background. A layout must not be resized so that it hides any key or button.
 * When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
 * Button positions sometimes shift slightly when switching layouts during design. 

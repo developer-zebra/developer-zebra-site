@@ -32,7 +32,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. See [DataWedge Notes](#datawedgenotes), below. 
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
-* If default is a custom layout, **an IME change request from the Google keyboard sets the custom layout as the default**.
+* If a custom layout is the default, **an IME change request from the Google keyboard sets that custom layout as the default**.
 
 ### DataWedge Notes
 The DataWedge service is included on every Zebra device and when enabled, allows any application on the device to acquire data from various input sources. The following rules apply when DataWedge is used. 
@@ -40,7 +40,7 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 * **DataWedge default layout settings always takes precedence over those set by EKD**. 
 * **If DataWedge is enabled at the time a custom layout file is deployed**, the EKD default setting is ignored and the Enterprise Keyboard fixed layout is shown when an input field gets focus. 
 * **If DataWedge is enabled *after* a custom layout had been set as the default**, the DataWedge setting is enabled. 
-* **If DataWedge is disabled *after* a custom layout file is deployed**, the custom file must be redeployed to become the new default layout. 
+* **If DataWedge is *disabled* after a custom layout file is deployed**, <u>the custom file must be redeployed</u> to become the new default layout. 
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 
@@ -48,9 +48,8 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 
 ### Also See
 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
-
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
 
 -----
 
@@ -627,26 +626,6 @@ Layout projects can be saved and modified later for use on different devices, ad
 
 ## Also See
 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | Implementation details and sample code by Zebra engineering
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | Working with EKD-made Custom Layouts by Zebra engineering
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
 
-
-<!-- 10/21/19- removed per eng. 
-* **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
-* **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
-* **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
-* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
-* When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
-* The following reserved names must not be used in modal input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
- * Scantrigger
- * deviceInfo
- * calculator
- * switch-abc
- * switch-123
- * switch-&#35;&#42;&#47;
- * switch-scan
- * customLayout
- * key-keyincaps
-
- -->
- -----

@@ -80,7 +80,7 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 
 Before beginning a layout, please make note of the following: 
 
-##### Usage Notes
+#### Usage Notes
 
 * **Press CTRL-Z to Undo the most recent action(s)** in reverse order. 
 * **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  

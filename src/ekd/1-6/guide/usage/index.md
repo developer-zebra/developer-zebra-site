@@ -83,6 +83,7 @@ Before beginning a layout, please make note of the following:
 ##### Usage Notes
 
 * **Press CRTL-Z to Undo the most recent action(s)** in reverse order. 
+* **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  
 * **The Undo "stack" stores as many as 10 actions**, and works only within the active layout. 
 * **The Undo stack is cleared when**:
  * Switching layouts
@@ -148,6 +149,8 @@ Before beginning a layout, please make note of the following:
 ### Using Grid Layout
 
 **The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized (and buttons relocated) as needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
+
+> `WARNING:` Changes to Grid Properties **CANNOT be undone** using CTRL-Z. 
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
  <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>

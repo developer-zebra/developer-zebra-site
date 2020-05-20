@@ -57,17 +57,19 @@ When combined, these two values are like a "channel" to which an app can listen 
 
 **Component Information** specifies the package names and signatures of the applications that are designated to receive intent data. This guarantees that the data is delivered only to the intended applications. 
 
-* When the package name is specified, DataWedge sends explicit intents only to the package name. Optionally, enabling the application signature check adds another level of security for intent delivery. DataWedge matches the signature of the application before sending out the intent. If the signature does not match, DataWedge does not send the intent. If the signature check is not enabled, DataWedge sends the explicit intent by mentioning the package name. 
+* When the package name is specified, DataWedge sends explicit intents only to the package name. Optionally, enabling the application signature check adds another level of security for intent delivery. DataWedge matches the signature of the application before sending out the intent. If the signature does not match, DataWedge does not send the intent. If the signature check is not enabled, DataWedge sends the explicit intent based on the package name. 
 
 * For example, if a package name is specified as 'com.zebra.app1' without the signature check, another app can be created with this same package name and disguised as the original - the original app can be uninstalled on the device and the new malicious app can be installed as the replacement. This results to the intent data being delivered to the malicious app. If instead, the signature check was enabled for the original app, even though the new app shares the same package name, the signature is different and therefore the intent data cannnot be delivered to the malicious app.
 
-The parameters of this feature can be configured through the UI or by using the [Set Config API](../../api/setconfig).
+The **Use content providers** option allow applications to leverage the DataWedge Content Provider to retrieve scanned data. It is recommended to enable this option when scanning large data such as images (for example with Signature Capture and NextGen SimulScan). 
+
+The parameters of these features can be configured through the UI or by using the [Set Config API](../../api/setconfig).
 
 >**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
 -----
 
-**To set a DataWedge Action/Category pair**: 
+**To configure DataWedge with Intent Output options**: 
 
 **&#49;. Locate the Intent Output section of the Profile** being configured.
 
@@ -114,6 +116,10 @@ The selected package name is listed with an indication whether the signature che
 <img style="height:350px" src="component_info_list.png"/>
 _Component Information list_
 <br>
+
+**&#53;. Enable Use Content Providers** from the Intent Output screen when scanning large data such as images (for example with Signature Capture and NextGen SimulScan).
+<img style="height:450px" src="content_provider.png"/>
+_Use Content Providers_
 
 -----
 

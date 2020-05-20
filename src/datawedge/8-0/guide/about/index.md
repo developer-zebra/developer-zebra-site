@@ -138,6 +138,7 @@ For more information about approved languages or to download a localized operati
 -----
 ## New in DataWedge 8.0
 * New secure Intent Output with [Component Information](../output/intent/#intentoutputsetup) and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
+* New option [Use content providers](../output/intent/#intentoutputsetup) in Intent Output to scan large data, such as images, and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
 
 -----
 ## Recent Version History

@@ -1857,6 +1857,10 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 			</table>
 		</td>
 	</tr>
+	<tr>
+		<td>intent_use_content_provider</td>
+		<td>true<br>false</td>
+	</tr>
 </table>
 
 -----

@@ -136,19 +136,22 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
-## New in DataWedge 7.6
+## New in DataWedge 8.0
+* New secure Intent Output with [Component Information](../output/intent/#intentoutputsetup) and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
+
+-----
+## Recent Version History
+
+### Added in DataWedge 7.6
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
   * Set [Finnish Postal 4S](../api/setconfig/#scannerinputparameters) and [Dutch Postal 3S](../api/setconfig/#scannerinputparameters) with SetConfig API.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
 * **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
 * Improved look and feel of user interface. Refer to [Settings](../settings) and [DWDemo](../samples/dwdemo).
 
-### Deprecations
+**Deprecations:**
 * **Support for Unique Device Identification (UDI) barcodes is deprecated.** GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the DataWedge API. UDI support will be removed from the DataWedge API beginning with Android 10 Q device support.
 * **Support for SimulScan API is deprecated.** SimulScan support will be removed from DataWedge beginning with Android 10 Q device support.
-
------
-## Recent Version History
 
 ### Added in DataWedge 7.5
 * Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode#multibarcodeparams).**

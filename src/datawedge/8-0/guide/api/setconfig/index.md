@@ -37,6 +37,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature.
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
 * **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
+* **DataWedge 8.0 -** New secure intent delivery with intent_component_info.
 
 ### Function Prototype
 
@@ -1795,7 +1796,7 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 
 > All parameters are case sensitive.
 
-<table class="facelift" style="width:70%" border="1" padding="5px">
+<table class="facelift" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Parameter</th>
     <th>Parameter Value</th>
@@ -1810,11 +1811,51 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 	</tr>
 	<tr>
 		<td>intent_category</td>
-		<td>[exact name of the category]]</td>
+		<td>[exact name of the category]</td>
 	</tr>
 	<tr>
 		<td>intent_delivery</td>
 		<td>0 - Start Activity<br>1 - Start Service<br>2 - Broadcast</td>
+	</tr>
+	<tr>
+		<td>intent_component_info<br>[bundle array]</td>
+		<td>[bundle]<br>
+			<table class="facelift" border="1" padding="5px">
+				<tr>
+					<td>PACKAGE_NAME</td>
+					<td>[String] Package name of the app to retrieve intent data<br>E.g.: com.symbol.app1</td>
+				</tr>
+				<tr>
+					<td>SIGNATURE</td>
+					<td>[String] SHA1 hash value that represents the application signature. Refer to the <a href="#getsha1ofapplicationsignature">example code</a> on how to retrieve SHA1 of application signature.<br>E.g.: 084421EAE1A65EEBCB68D4341FE3C2BB6BEC9A
+					</td>
+				</tr>
+			</table>
+			[bundle]<br>
+			<table class="facelift" border="1" padding="5px">
+				<tr>
+					<td>PACKAGE_NAME</td>
+					<td>[String] Package name of the app to retrieve intent data.<br>E.g. com.symbol.app1</td>
+				</tr>
+				<tr>
+					<td>SIGNATURE</td>
+					<td>[String] SHA1 hash value that represents the application signature. <br>E.g.: 084421EAE1A65EEBCB68D4341FE3C2BB6BEC9A
+					</td>
+				</tr>
+			</table>
+			[bundle]<br>
+			<table class="facelift" border="1" padding="5px">
+				<tr>
+					<td>PACKAGE_NAME</td>
+					<td>[String] Package name of the app to retrieve intent data.<br>E.g.: com.symbol.app1</td>
+				</tr>
+				<tr>
+					<td>SIGNATURE</td>
+					<td>[String] SHA1 hash value that represents the application signature. <br>E.g.: 084421EAE1A65EEBCB68D4341FE3C2BB6BEC9A
+					</td>
+				</tr>
+			</table>
+		</td>
 	</tr>
 </table>
 
@@ -2847,6 +2888,112 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 	    super.onDestroy();
 	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
 	}
+
+### Set Component Information for Intent Output
+
+	Bundle bMain = new Bundle();
+
+	ArrayList<Bundle> bundlePluginConfig = new ArrayList<>();
+
+	Bundle bConfigIntent = new Bundle();
+	Bundle bParamsIntent = new Bundle();
+	bParamsIntent.putString("intent_output_enabled", "true");
+	bParamsIntent.putString("intent_action", "com.zebra.myapplication"); 
+	bParamsIntent.putString("intent_category", "android.intent.category.DEFAULT");
+
+	ArrayList<Bundle> bundleComponentInfo = new ArrayList<Bundle>();
+
+	Bundle component0 = new Bundle();
+	component0.putString("PACKAGE_NAME","com.symbol.test");
+	component0.putString("SIGNATURE","E22084421EAE1A65EEBCB68D4341FE3C2BB6BEC9D");
+	bundleComponentInfo.add(component0);
+
+	Bundle component1 = new Bundle();
+	component1.putString("PACKAGE_NAME","com.symbol.testpackage");
+	component1.putString("SIGNATURE","E22084421EAE1A65EEBCB68D4341FE3C2BB6BEC9");
+	bundleComponentInfo.add(component1);
+
+	Bundle component2 = new Bundle();
+	component2.putString("PACKAGE_NAME","com.symbol.test");
+	component2.putString("SIGNATURE","E22084421EAE1A65EEBCB68D4341FE3C2BB6BEC9E");
+	bundleComponentInfo.add(component2);
+
+	bParamsIntent.putParcelableArrayList("intent_component_info", bundleComponentInfo);
+
+	bConfigIntent.putString("PLUGIN_NAME", "INTENT");
+	bConfigIntent.putString("RESET_CONFIG", "true");
+	bConfigIntent.putBundle("PARAM_LIST", bParamsIntent);
+
+	bundlePluginConfig.add(bConfigIntent);
+	bMain.putParcelableArrayList("PLUGIN_CONFIG", bundlePluginConfig);
+
+	bMain.putString("PROFILE_NAME", "Profile009");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	Intent iSetConfig = new Intent();
+
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "SET_INTENT_OUTPUT");
+
+	this.sendBroadcast(iSetConfig);
+
+### Get SHA1 of application signature 
+Retrieve SHA1 hash value of application signature from Component Information for Intent Output:
+
+	import android.content.Context;
+	import android.content.pm.PackageManager;
+	import android.content.pm.Signature;
+	import java.security.MessageDigest;
+	import java.security.NoSuchAlgorithmException;
+
+	public class SignatureCheck {
+
+		void main(Context context)
+		{
+			try {
+				Signature[] signatures = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES).signatures;
+				for (Signature sig : signatures) {
+					String sha1Signature = getSHA1(sig.toByteArray());
+				}
+			} 
+			
+			catch (PackageManager.NameNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+
+		public static String getSHA1(byte[] sig) 
+		{
+			MessageDigest digest = null;
+			try {
+				digest = MessageDigest.getInstance("SHA1");
+			} 
+			catch (NoSuchAlgorithmException e) {
+				e.printStackTrace();
+			}
+			digest.update(sig);
+			byte[] hashtext = digest.digest();
+			return bytesToHex(hashtext);
+		}
+
+		public static String bytesToHex(byte[] bytes) 
+		{
+			final char[] hexArray = {'0', '1', '2', '3', '4', '5', '6', '7', '8',
+					'9', 'A', 'B', 'C', 'D', 'E', 'F'};
+			char[] hexChars = new char[bytes.length * 2];
+			int v;
+			for (int j = 0; j < bytes.length; j++) {
+				v = bytes[j] & 0xFF;
+				hexChars[j * 2] = hexArray[v >>> 4];
+				hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+			}
+			return new String(hexChars);
+		}
+	}
+
 
 ### Set/Get result codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 

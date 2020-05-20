@@ -29,14 +29,14 @@ For example, if the manifest contains...
 and the Intent category would be:
 
 `android.intent.category.MAIN`
-
+<!--
 -----
 
 **SEE ALSO**:
 
 * **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
 * **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
-
+-->
 -----
 
 ### Outputting Raw Data
@@ -55,10 +55,15 @@ DataWedge invokes an intent though an **Intent action** in an **Intent category*
 
 When combined, these two values are like a "channel" to which an app can listen for intents that use the same combination, filtering out "noise" from other intents that use different value pairs. **Once these values are known, DataWedge Intent Output must be set to match**. 
 
+**Component Information** specifies the package names and signatures of the applications that are designated to receive intent data. This guarantees that the data is delivered only to the intended applications. 
+
+* When the package name is specified, DataWedge sends explicit intents only to the package name. Optionally, enabling the application signature check adds another level of security for intent delivery. DataWedge matches the signature of the application before sending out the intent. If the signature does not match, DataWedge does not send the intent. If the signature check is not enabled, DataWedge sends the explicit intent by mentioning the package name. 
+
+* For example, if a package name is specified as 'com.zebra.app1' without the signature check, another app can be created with this same package name and disguised as the original - the original app can be uninstalled on the device and the new malicious app can be installed as the replacement. This results to the intent data being delivered to the malicious app. If instead, the signature check was enabled for the original app, even though the new app shares the same package name, the signature is different and therefore the intent data cannnot be delivered to the malicious app.
+
+The parameters of this feature can be configured through the UI or by using the [Set Config API](../../api/setconfig).
+
 >**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
-
-
-> The parameters of this feature can be configured through the UI or by using the [Set Config API](../../api/setconfig).
 
 -----
 
@@ -67,27 +72,48 @@ When combined, these two values are like a "channel" to which an app can listen 
 **&#49;. Locate the Intent Output section of the Profile** being configured.
 
 **&#50;. Check "Enabled" box** to activate Intent Output:  
-<img style="height:350px" src="../intent_output 2.png"/>
+<img style="height:450px" src="intent_output.png"/>
 _Intent Output options for the "Launcher" Profile_
 <br>
 
 **&#51;. Specify action, category and delivery** as described below: 
 
-**Intent action -** specifies the action to handle the intent 
+&nbsp;&nbsp;&nbsp;&nbsp;**Intent action -** specifies the action to handle the intent <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Intent category -** specifies the category of intent to be handled <br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Intent delivery -** used to select one of four delivery methods for intent-based data:
+* **Send via startActivity -** startActivity() Android API is called to deliver data. 
+* **Send via startService -** startService() Android API is called to deliver data for devices prior to Android Oreo (v8.0). For Android Oreo and above devices, the option "Use startForegroundService on failure" is available within this setting to call startForegroundService() if the startService() call fails. With this single option, it provides support for devices both prior and later than Android Oreo. 
+* **Send via startForegroundService -** startForegroundService() Android API is called to deliver data. This option applies to Android Oreo (v8.0) and above.
+* **Broadcast Intent -** <i>**Receiver foreground flag**</i> `Intent.FLAG_RECEIVER_FOREGROUND` can be set giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
 
-**Intent category -** specifies the category of intent to be handled 
-
-**Intent delivery -** used to select one of four delivery methods for intent-based data:
-* **Send via startActivity** 
-* **Send via startService** 
-* **Send via startForegroundService**
-* **Broadcast Intent** 
-
+<!--
 **When Intent delivery is set to "Broadcast Intent"**, <i>**Receiver foreground flag**</i> `Intent.FLAG_RECEIVER_FOREGROUND` can be set giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
 
 **When Intent delivery is set to "Send via startForegroundService"**, startForegroundService() Android API is called to deliver data. This option applies to Android Oreo (v8.0) and above.
 
 **When Intent delivery is set to "Send via startService"**, startService() Android API is called to deliver data for devices prior to Android Oreo (v8.0). For Android Oreo and above devices, the option "Use startForegroundService on failure" is available within this setting to call startForegroundService() if the startService() call fails. With this single option, it provides support for devices both prior and later than Android Oreo. 
+-->
+**&#52;. Specify component information for secure intent delivery.** Tap on **Component Information.** 
+<img style="height:450px" src="component_info.png"/>
+_Component Information under Intent Output_
+<br>
+Tap the top right menu and select **New Component.**
+<img style="height:350px" src="new_component.png"/>
+_Add New Component_
+<br>
+Select the package name to receive intent data from the installed app list. 
+<img style="height:350px" src="select_app.png"/>
+_Select New Component_
+<br>
+
+When prompted, tap **OK** to enable the application signature check. Otherwise, tap **Cancel.** If multiple signatures are available for an app, a list will be displayed to pick one signature.
+<img style="height:350px" src="app_signature.png"/>
+_Application signature_
+<br>
+The selected package name is listed with an indication whether the signature check is enabled/disabled.
+<img style="height:350px" src="component_info_list.png"/>
+_Component Information list_
+<br>
 
 -----
 
@@ -437,14 +463,14 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 
 **Note**: In most cases there will be one byte array per decode. <!-- REMOVED 10/5/17 PER ENG. EMAIL 10/4/17 2:06 pm << For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index.
 --> 
-
+<!--
 -----
 
 **SEE ALSO**: 
 
 * **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
 * **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
-
+-->
 -----
 
 **Other DataWedge Output Options**:

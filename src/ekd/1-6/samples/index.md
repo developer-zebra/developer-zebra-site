@@ -210,7 +210,7 @@ _"Symbols Split2"_
 
 ### EB SAP Portrait, Non-transparent
 
-**Layouts designed for apps that use the Enterprise Browser package for the SAP ITSmobile solution**. [About Enterprise Browser](/enterprise-browser/). 
+**Layouts designed for apps that use the Enterprise Browser package for the SAP ITSmobile solution**. [Learn more about EB for ITSmobile](https://techdocs.zebra.com/enterprise-browser/latest/guide/sap/). 
 
 To use this layout in an EB app, set the app's `Config.xml` file as follows: 
 

@@ -2,7 +2,7 @@
 title: Barcode Input
 layout: guide.html
 product: DataWedge
-productversion: '8.0'
+productversion: '7.6'
 ---
 
 ## Overview
@@ -116,14 +116,79 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 
 ------
 
+## NextGen SimulScan Configuration
+
+**NextGen (NG) Simulscan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge. Currently not all legacy SimulScan features are available, but migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are now part of NextGen SimulScan:
+* Multibarcode
+* Anchor barcode document capture (only available on select devices)
+<br>
+<p>For Zebra Professional-tier devices, this feature requires a Mobility DNA Enterprise license. The following message is displayed when attempting to access this feature on a Zebra Professional-tier device without a valid license:</p>
+<img style="height:350px" src="license_required.png"/>
+_Profile settings_
+
+To access NextGen SimulScan Configurations:<br>
+1. In the DataWedge profile, tap **Configure NG SimulScan settings**.
+ <img style="height:350px" src="configure_ng_simulscan.png"/>
+_DataWedge profile displaying NG SimulScan_
+
+2. The **NG SimulScan configuration** screen appears with options similar to **Configure scanner settings**.
+ <img style="height:350px" src="ng_simulscan_configuration.png"/>
+_NextGen (NG) SimulScan configuration_
+
+Aside from **Scanning Modes** and **Basic MultiBarcode Params** as described below, the other options are common to those displayed under **Configure scanner settings**.
+
+### Scanning Modes
+
+**Scanning Modes** is used to select between Single (normal), [Basic MultiBarcode](#basicmultibarcodeparams) and SimulScan Modes.
+ <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
+_NextGen (NG) SimulScan - Scanning Modes_
+
+### Basic MultiBarcode Params
+MultiBarcode acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. 
+
+<table>
+
+ <tr>
+  <td>
+  <img style="height:350px" src="basic_multibarcode_params.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="multibarcode_params.jpg"/>
+  </td>
+ </tr>
+
+</table>
+<i>Access to Basic MultiBarcode params</i>
+
+Basic MultiBarcode params:
+* **Instant Reporting -** Enable/Disable instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
+* **Number of barcodes per scan-** Specify the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
+* **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
+	* If **Continuous Read** is also enabled, it does not work.
+	* If **Instant Reporting** is also enabled, **Instant Reporting** takes higher priority.
+
+
+**MultiBarcode Notes**
+
+* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
+* MultiBarcode supports a **maximum data size of 2000 bytes.** 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes specified in the Basic MultiBarcode params screen. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
+* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
+* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
+* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
+
+------
+
 ## Global Scanner Configuration 
 
-Global scanner configuration allows users to specify a generic scanner configuration applicable for all supported scanners. Rather than specifying multiple individual configurations for each separate scanner within a given DataWedge profile, the global configuration setting is provided to configure multiple scanners in a single profile.
+Global scanner configuration (All Scanners) allows users to specify a generic scanner configuration applicable for all supported scanners. Rather than specifying multiple individual configurations for each separate scanner within a given DataWedge profile, the global configuration setting is provided to configure multiple scanners in a single profile.
 
-Global scanner configuration displays all scanner parameters and values for each and every scanner even if not supported by a specific scanner.
-Since this list is all-inclusive, there is a possibility a particular parameter or value may not be supported on an individual scanner. In this case, an error is logged in logcat during scanning.  
+Global scanner configuration (All Scanners) displays all scanner parameters and values for each and every scanner even if not supported by a specific scanner. Since this list is all-inclusive, there is a possibility a particular parameter or value may not be supported on an individual scanner. In this case, an error is logged in logcat during scanning.  
 
-When global scanner configuration is enabled, access is still available to settings specific to individual scanners, such as the option “Keep enabled on suspend” (which specifically applies to Bluetooth and other peripheral scanners), even if the default scanner is selected as an internal scanner for “Scanner Selection” (_See Figure 1_). When applying configurations, if any of the global settings are not applicable to the specific scanner, those settings cannot apply and will be disregarded.  
+When global scanner configuration (All Scanners) is enabled, access is still available to settings specific to individual scanners, such as the option “Keep enabled on suspend” (which specifically applies to Bluetooth and other peripheral scanners), even if the default scanner is selected as an internal scanner for “Scanner Selection” (_See Figure 1_). When applying configurations, if any of the global settings are not applicable to the specific scanner, those settings cannot apply and will be disregarded.  
 
 When a global setting is configured and then an individual scanner is configured, both configuration options are saved. The configurations will be applied in the following order:
   1. The global configuration is applied.
@@ -145,7 +210,7 @@ Tap "Configure scanner settings". A list of scanner configuration settings appea
 <img style="height:350px" src="configure_scanner_settings_options.png"/>
 _Scanner configuration_
 
-Tap "Select scanner to set parameters".  **All Scanners** option is available to allow the scanner settings to apply to all scanners. 
+Tap "Select scanner to set parameters".  **All Scanners** option is available to enable global scanner configuration, allowing the scanner settings to apply to all scanners. 
 
 <img style="height:350px" src="select_scanner.png"/>
 _Global scanner configuration_
@@ -1196,45 +1261,6 @@ _When UDI scanning mode is enabled (as above)_...
 * **UDI decoding is supported only on the devices listed above**. 
 * **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
 * UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
-
------
-
-## MultiBarcode Params
-MultiBarcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes per scan is reached. **Basic MultiBarcode** is enabled through **Scanning Modes** within **Reader Params**, per above.
-
-<table>
-
- <tr>
-  <td>
-  <img style="height:350px" src="multibarcode.jpg"/>
-  </td>
-  <td> &nbsp; &nbsp; &nbsp; &nbsp;
-  </td>
-  <td>
-  <img style="height:350px" src="multibarcode_params.jpg"/>
-  </td>
- </tr>
-
-</table>
-<i>Access to Basic MultiBarcode params</i>
-
-Basic MultiBarcode params:
-* **Instant Reporting -** Enable/Disable instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
-* **Number of barcodes per scan-** Specify the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
-* **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
-	* If **Continuous Read** is also enabled, it does not work.
-	* If **Instant Reporting** is also enabled, **Instant Reporting** takes higher priority.
-
-
-**MultiBarcode Notes**
-
-* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
-* MultiBarcode supports a **maximum data size of 2000 bytes.** 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes specified in the Basic MultiBarcode params screen. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
-* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
-* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
-* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
-* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
 
 -----
 

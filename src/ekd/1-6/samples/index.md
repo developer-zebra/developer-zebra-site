@@ -20,8 +20,8 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 * [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Complete guide to setting button properties 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article** Custom layout implementation with sample code, by Zebra Engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article**: Working with EKD layouts, by Zebra Engineering
 
 -----
 
@@ -248,8 +248,8 @@ _"Symbols"_
 
 * [Deploying Layouts](../guide/usage/#vdeploylayouts) | Instructions for pushing layout files to a device
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Complete guide to setting button properties 
-* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article by Zebra Engineering** on implementing custom layouts, with sample code
-* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article by Zebra Engineering** on working with EKD-made layouts
+* [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article** Custom layout implementation with sample code, by Zebra Engineering
+* [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article**: Working with EKD layouts, by Zebra Engineering
 
 
 

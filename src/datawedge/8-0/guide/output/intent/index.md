@@ -61,9 +61,11 @@ When combined, these two values are like a "channel" to which an app can listen 
 
 * For example, if a package name is specified as 'com.zebra.app1' without the signature check, another app can be created with this same package name and disguised as the original - the original app can be uninstalled on the device and the new malicious app can be installed as the replacement. This results to the intent data being delivered to the malicious app. If instead, the signature check was enabled for the original app, even though the new app shares the same package name, the signature is different and therefore the intent data cannnot be delivered to the malicious app.
 
-**Use content providers** option allow applications to leverage DataWedge's content provider to retrieve scanned data from files larger than 500 KB, such as images, particularly with Signature Capture and NextGen SimulScan. A content provider is an Android app component that encapsulates data to share between apps.
+**Use content providers** option allows applications to leverage DataWedge's content provider to retrieve scanned data from files larger than 500 KB, such as images, primarily with Signature Capture and NextGen SimulScan. A content provider is an Android app component that encapsulates data to share between apps.
 
 The parameters of these features can be configured through the UI or by using the [Set Config API](../../api/setconfig).
+
+See [Use Content Provider Programmer's Guide](../../programmers-guides/content-provider) for more information.
 
 >**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
@@ -108,7 +110,7 @@ Select the package name to receive intent data from the installed app list.
 _Select New Component_
 <br>
 
-When prompted, tap **OK** to enable the application signature check. Otherwise, tap **Cancel.** If multiple signatures are available for an app, a list will be displayed to pick one signature.
+When prompted, tap **OK** to enable the application signature check, allowing DataWedge to retrieve the app signature via the .APK and use it for comparison. Otherwise, tap **Cancel.** If multiple signatures are available for an app, a list is be displayed for the user to select one signature.
 <img style="height:350px" src="app_signature.png"/>
 _Application signature_
 <br>

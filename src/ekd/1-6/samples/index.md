@@ -32,11 +32,11 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 * **Layout File**: `Portrait_Transparent.encrypted`
 * **Orientation**: Portrait
 * **Opacity**: Transparent
-* **Devices**: **EC30**, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+* **Devices**: EC30, all vertically oriented devices**&#42;**
 
-* **[Download this layout file&#42;](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+**&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information.
 
-&#42; *For devices other than the EC30, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
+* **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -103,12 +103,12 @@ _"SpecialSymbols"_
 
 * **Layout File**: `Landscape_Transparent.encrypted` 
 * **Orientation**: Landscape
-* **Opacity**: Non-transparent
-* **Devices**: **WT6000**, other horizontally oriented devices
+* **Opacity**: Transparent
+* **Devices**: WT6000, all horizontally oriented devices**&#42;**
 
-* **[Download this layout file&#42;](Landscape_Transparent.encrypted) |** Contains all key layouts below 
+**&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information. 
 
-&#42; *For devices other than the WT6000, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*. 
+* **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -178,9 +178,9 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: EC30
 
-* **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
-
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
+
+* **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -206,9 +206,9 @@ _"Symbols Split2"_
 
 -----
 
-### SAP Portrait, Non-transparent
+### EB SAP Portrait, Non-transparent
 
-**Layouts designed for apps that use the Enterprise Browser for SAP package**. [About Enterprise Browser](/enterprise-browser/). 
+**Layouts designed for apps that use the Enterprise Browser package for the SAP ITSmobile solution**. [About Enterprise Browser](/enterprise-browser/). 
 
 To use this layout in an EB app, set the app's `Config.xml` file as follows: 
 

@@ -25,6 +25,8 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 -----
 
+## Sample Key Layouts
+
 ### Portrait, Transparent
 
 **See-through layouts designed for devices used mostly in vertical orientation**. 
@@ -34,7 +36,7 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 * **Opacity**: Transparent
 * **Devices**: EC30, all vertically oriented devices**&#42;**
 
-**&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information.
+***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
 
 * **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
 
@@ -106,7 +108,7 @@ _"SpecialSymbols"_
 * **Opacity**: Transparent
 * **Devices**: WT6000, all horizontally oriented devices**&#42;**
 
-**&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information. 
+***&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
 
 * **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
@@ -169,7 +171,7 @@ _"SpecialSymbols"_
 
 -----
 
-### EC30 Portrait, Non-transparent
+### Split Portrait, Non-transparent
 
 **Portrait layout and split-key layouts designed for the small screen of the Zebra EC30 device**.
 

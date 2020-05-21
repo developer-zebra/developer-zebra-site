@@ -61,7 +61,7 @@ When combined, these two values are like a "channel" to which an app can listen 
 
 * For example, if a package name is specified as 'com.zebra.app1' without the signature check, another app can be created with this same package name and disguised as the original - the original app can be uninstalled on the device and the new malicious app can be installed as the replacement. This results to the intent data being delivered to the malicious app. If instead, the signature check was enabled for the original app, even though the new app shares the same package name, the signature is different and therefore the intent data cannnot be delivered to the malicious app.
 
-The **Use content providers** option allow applications to leverage the DataWedge Content Provider to retrieve scanned data. It is recommended to enable this option when scanning large data such as images (for example with Signature Capture and NextGen SimulScan). 
+**Use content providers** option allow applications to leverage DataWedge's content provider to retrieve scanned data from files larger than 500 KB, such as images, particularly with Signature Capture and NextGen SimulScan. A content provider is an Android app component that encapsulates data to share between apps.
 
 The parameters of these features can be configured through the UI or by using the [Set Config API](../../api/setconfig).
 

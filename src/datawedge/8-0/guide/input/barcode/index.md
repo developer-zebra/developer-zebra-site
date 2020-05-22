@@ -116,15 +116,32 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 
 ------
 
+## Configure Scanner Settings
+
+**Configure scanner settings** option is accessible through the DataWedge profile settings. It configures the scanner parameters specifying how the barcode is scanned, including the selected scanner (e.g. camera, 2D Imager, Bluetooth scanner, etc.), decoder, decoder parameters, reader params and scan params. Refer to the corresponding sections below for further information.
+<br>
+
+<img style="height:350px" src="configure_scanner_settings.png"/>
+_Profile settings_
+
+Tap **Configure scanner settings**. A list of scanner configuration settings appears.
+
+<img style="height:350px" src="configure_scanner_settings_options.png"/>
+_Scanner configuration_
+
+**Note:** The **Configure scanner settings** option is still accessible even when the selected scanner in **Scanner Selection** is disconnected. _In previous DataWedge versions prior to 6.8, all the scanner parameters (decoders, decoder params, etc.) are grayed-out and inaccessible._
+
+------
+
 ## NextGen SimulScan Configuration
 
-**NextGen (NG) Simulscan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge. Currently not all legacy SimulScan features are available, but migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are now part of NextGen SimulScan:
+**NextGen (NG) Simulscan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * Multibarcode
 * Anchor barcode document capture (only available on select devices)
 <br>
 <p>For Zebra Professional-tier devices, this feature requires a Mobility DNA Enterprise license. The following message is displayed when attempting to access this feature on a Zebra Professional-tier device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
-_Profile settings_
+_License required on Zebra Professional-tier devices_
 
 To access NextGen SimulScan Configurations:<br>
 1. In the DataWedge profile, tap **Configure NG SimulScan settings**.
@@ -135,16 +152,40 @@ _DataWedge profile displaying NG SimulScan_
  <img style="height:350px" src="ng_simulscan_configuration.png"/>
 _NextGen (NG) SimulScan configuration_
 
-Aside from **Scanning Modes** and **Basic MultiBarcode Params** as described below, the other options are common to those displayed under **Configure scanner settings**.
+Aside from **[Scanning Modes](#documentcapturetemplate)**, **[Document Capture Template](#documentcapturetemplate)** and **[Basic MultiBarcode Params](#basicmultibarcodeparams)**, the other options are common to those displayed under **Configure scanner settings**.
 
 ### Scanning Modes
 
-**Scanning Modes** is used to select between Single (normal), [Basic MultiBarcode](#basicmultibarcodeparams) and SimulScan Modes.
- <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
-_NextGen (NG) SimulScan - Scanning Modes_
+**Scanning Modes** is used to select the mode to scan barcodes: 
+* **Single -** normal mode to scan an individual barcode 
+* **[Basic MultiBarcode](#basicmultibarcodeparams) -** multiple barcodes read in a single scan 
+* **[SimulScan](#documentcapturetemplate) -** document capture based on a specified custom template
+
+<table>
+
+ <tr>
+  <td>
+  <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="scanning_modes_ngss.png"/>
+  </td>
+ </tr>
+
+</table>
+<i>NextGen (NG) SimulScan - Scanning Modes</i>
+
+### Document Capture Template
+
+**Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Tap on this option then select a template for the document being captured. It is mandatory to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+
+<img style="height:350px" src="document_capture_ngss.png"/>
+_SimulScan - Document Capture_
 
 ### Basic MultiBarcode Params
-MultiBarcode acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. 
+**MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. 
 
 <table>
 
@@ -160,9 +201,9 @@ MultiBarcode acquires multiple, unique barcodes in a single scan session and del
  </tr>
 
 </table>
-<i>Access to Basic MultiBarcode params</i>
+<i>Basic MultiBarcode params</i>
 
-Basic MultiBarcode params:
+Basic MultiBarcode params options:
 * **Instant Reporting -** Enable/Disable instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
 * **Number of barcodes per scan-** Specify the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
 * **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
@@ -170,7 +211,7 @@ Basic MultiBarcode params:
 	* If **Instant Reporting** is also enabled, **Instant Reporting** takes higher priority.
 
 
-**MultiBarcode Notes**
+**MultiBarcode Notes:**
 
 * **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
 * MultiBarcode supports a **maximum data size of 2000 bytes.** 

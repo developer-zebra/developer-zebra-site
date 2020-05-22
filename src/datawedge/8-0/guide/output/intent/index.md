@@ -69,8 +69,6 @@ See [Use Content Provider Programmer's Guide](../../programmers-guides/content-p
 
 >**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
------
-
 **To configure DataWedge with Intent Output options**: 
 
 **&#49;. Locate the Intent Output section of the Profile** being configured.

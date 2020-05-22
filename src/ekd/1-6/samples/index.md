@@ -9,7 +9,7 @@ productversion: '3.6'
 
 Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a variety of devices and uses to help enable quick deployment. Developed by Zebra engineers, sample layouts can be deployed immediately or customized to best suit the needs of an organization. 
 
-#### Notes
+#### Notes:
 
 `IMPORTANT, PLEASE READ`
 * **Custom layouts require Enterprise Keyboard 3.2 or later installed on the device and configured as the default input source**. 
@@ -36,9 +36,13 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 * **Opacity**: Transparent
 * **Devices**: EC30, all vertically oriented devices**&#42;**
 
-***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
+<i><font size="1" color="black"> &#42; <strong>When used on devices other than the EC30</strong>, this layout requires changes to system and status bar settings for proper rendering. See [Overview Notes](#overview) for more information.</font></i>
 
-* **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+
+<!-- 
+***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
+ -->
+**[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -73,7 +77,7 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
-* **[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
+**[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -108,9 +112,12 @@ _"SpecialSymbols"_
 * **Opacity**: Transparent
 * **Devices**: WT6000, all horizontally oriented devices**&#42;**
 
-***&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
+<i><font size="1" color="black"> &#42; <strong>When used on devices other than the WT6000</strong>, this layout requires changes to system and status bar settings for proper rendering. See [Overview Notes](#overview) for more information.</font></i>
 
-* **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
+<!-- 
+***&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
+ -->
+**[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -145,7 +152,7 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
-* **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
+**[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -182,7 +189,7 @@ _"SpecialSymbols"_
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
 
-* **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
+**[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -222,7 +229,7 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 * **Opacity**: Non-transparent
 * **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
 
-* **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
+**[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
 
 ##### Click image to enlarge, ESC to exit: 
 

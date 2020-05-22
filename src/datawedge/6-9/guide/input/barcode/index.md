@@ -77,7 +77,7 @@ DataWedge supports the following Zebra USB SSI scanners:
 ------
 ## Auto Switch to Default on Event
 
-This feature configures DataWedge to select an external scanner as the default scanning device immediately upon connection and revert to a built-in scanner when the external scanner is disconnected. External scanners include those connecting by Bluetooth, serial cable or snap-on module. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
+This feature configures DataWedge to select an external scanner as the default scanning device immediately upon connection and revert to a built-in scanner when the external scanner is disconnected. External scanners include those connecting by Bluetooth, serial cable or snap-on module. If enabled, SWITCH_SCANNER should not be used upon scanner connection/disconnection as it can cause unexpected behavior. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
 
 This feature is intended to help reduce scanning workflow interruptions when a Bluetooth scanner is introduced and/or it becomes disconnected by losing power or moving out of range. 
 

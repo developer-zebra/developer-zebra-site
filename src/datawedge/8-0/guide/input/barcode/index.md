@@ -118,7 +118,7 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 
 ## Configure Scanner Settings
 
-**Configure scanner settings** option is accessible through the DataWedge profile settings. It configures the scanner parameters specifying how the barcode is scanned, including the selected scanner (e.g. camera, 2D Imager, Bluetooth scanner, etc.), decoder, decoder parameters, reader params and scan params. Refer to the corresponding sections below for further information.
+**Configure scanner settings** option is accessible through the DataWedge profile settings. It configures the scanner parameters specifying how the barcode is scanned, including the selected scanner (e.g. camera, 2D Imager, Bluetooth scanner, etc.), decoder, decoder parameters, reader params and scan params. Refer to the corresponding sections below on each option for further information.
 <br>
 
 <img style="height:350px" src="configure_scanner_settings.png"/>
@@ -152,7 +152,7 @@ _DataWedge profile displaying NG SimulScan_
  <img style="height:350px" src="ng_simulscan_configuration.png"/>
 _NextGen (NG) SimulScan configuration_
 
-Aside from **[Scanning Modes](#documentcapturetemplate)**, **[Document Capture Template](#documentcapturetemplate)** and **[Basic MultiBarcode Params](#basicmultibarcodeparams)**, the other options are common to those displayed under **Configure scanner settings**.
+Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#documentcapturetemplate)** and **[Basic MultiBarcode Params](#basicmultibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
 
 ### Scanning Modes
 
@@ -179,7 +179,7 @@ Aside from **[Scanning Modes](#documentcapturetemplate)**, **[Document Capture T
 
 ### Document Capture Template
 
-**Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Tap on this option then select a template for the document being captured. It is mandatory to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+**Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Tap on this option then select a template for the document being captured. It is mandatory to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 
 <img style="height:350px" src="document_capture_ngss.png"/>
 _SimulScan - Document Capture_

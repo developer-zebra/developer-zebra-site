@@ -10,29 +10,35 @@ productversion: '8.0'
 * Enable/Disable DataWedge UI
 * Enable/Disable configuration file import via intent API
 * Enable/Disable auto import of configuration file
-* Import configuration file from specified path<br>
+* Import configuration file from specified path
+* Import NextGen SimulScan Templates
+<br>
 
 See [DataWedge Manager](/mx/datawedgemgr/) for more information.
 <br><br>
 **Version History**
 * **DataWedge 7.5 -** DataWedge Manager CSP support introduced, requires at minimum MX v9.2 and StageNow v3.5.
+* **DataWedge 8.0 -** Import NextGen SimulScan Templates
 <br>
-##Enable/Disable DataWedge UI
+
+## Enable/Disable DataWedge UI
 Controls whether the DataWedge user interface is accessible to the device user, determining the ability to change DataWedge configuration settings on the device. If disabled, DWDemo profile settings can still be modified for demonstration purposes. 
 
-##Enable/Disable configuration file import via intent API
+## Enable/Disable configuration file import via intent API
 Controls whether configuration files can be imported by apps via DataWedge [Import Config](../api/importconfig) intent API. 
 
-##Enable/Disable auto import of configuration file
+## Enable/Disable auto import of configuration file
 Controls whether DataWedge configuration files are [auto-imported](../settings#autoimport) when located in the `/enterprise/device/settings/datawedge/autoimport` folder on the device.
 
-##Import configuration file from specified path
+## Import configuration file from specified path
 Specifies the full path and file name to import the configuration file (`datawedge.db`) or profile (by default, `dwprofile_<profilename>.db`). Can be used instead of the default Auto-Import (`/enterprise/device/settings/datawedge/autoimport`) folder. The file name must adhere to the existing DataWedge file naming convention: 
 * Config file is always named `datawedge.db`
 * Profile naming convention: `dwprofile_<profilename>.db`<br>
 
+## Import NextGen SimulScan Templates
+Import customized NextGen SimulScan Templates for document capture. This populates the selection for the [Document Capture Template](../input/barcode/#documentcapturetemplate) for SimulScan scanning. Refer to [SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
-
+<br>
 See [Mass Deployment](../settings#massdeployment) for more information.
 
 -----

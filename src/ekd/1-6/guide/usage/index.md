@@ -536,8 +536,8 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 ##### Layout files can be deployed in one of two ways: 
 
-1. **Pushed manually** from the development host to a USB-connected device using [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb)** commands or the "Deploy" button 
-3. **Pushed en mass using StageNow** and (optionally) an Enterprise Mobile Management (EMM) system
+* **Pushed manually** from the development host to a USB-connected device **using the "Deploy" button** or [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) commands  
+* **Pushed en mass using StageNow** and (optionally) an Enterprise Mobile Management (EMM) system
 
 ### Manual Deployment
 

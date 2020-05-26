@@ -14,21 +14,8 @@ menu:
       url: /licensing/search
 ---
 
-## Overview
-
-Zebra uses Flexera for licensing. Here's the process: 
-
-1. first
-2. first second
-1. second
-2. second second
-1. third
-2. third second
-
------
-
 ## Overview 
-This guide explains the process of obtaining a Zebra Mobility DNA Enterprise license for commercial use and applying the license to individual devices and as part of a mass-deployment.
+This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use and applying the license to individual devices and as part of a mass-deployment.
 
 -----
 
@@ -170,12 +157,14 @@ Any of the Deployment License files described above can be mass-deployed using [
 
 -----
 
+## Also See
+
 **Related Guides**:
-* **[Enterprise Browser App Shortcuts](../ShortcutCreator/)-** The key to multi-app deployments 
-* **[Enterprise Browser Setup Guide](../setup/) -** Help with initial setup, connecting to devices and pushing files
-* **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html) -** Additional licensing info and sample screens
+* **[Enterprise Browser App Shortcuts](../ShortcutCreator/)** | The key to multi-app deployments 
+* **[Enterprise Browser Setup Guide](../setup/)** | Help with initial setup, connecting to devices and pushing files
+* **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html)** | Additional licensing info and sample screens
 
-
+-----
 
 <!-- 
 <img alt="image" style="height:450px" src="mdna_matrix.png"/>
@@ -251,8 +240,6 @@ ZDS comes preinstalled on the following supported devices with the Android versi
 _Click image to enlarge; ESC to exit_. 
 <br>
 
------
-
 ## See Also
 
 * **[FAQ](../faq)** | Frequently asked questions about ZDS
@@ -272,4 +259,6 @@ menu:
     - title: Managed Configurations
       url: /oemconfig/9-3/mc
     - icon: fa fa-search
-      url: /oemconfig/9-3/search -->
+      url: /oemconfig/9-3/search 
+
+-->

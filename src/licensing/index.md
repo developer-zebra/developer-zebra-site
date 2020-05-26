@@ -5,7 +5,7 @@ layout: redirect.html
 redirect_url: /licensing/about
 ---
 
-### Redirecting to the latest Licensing information...
+### Loading to the latest Zebra licensing information...
 
 <!--
   menu:

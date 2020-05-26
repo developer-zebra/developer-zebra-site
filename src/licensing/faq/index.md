@@ -14,9 +14,11 @@ menu:
       url: /licensing/search
 ---
 
-###Q: What is the package name of the ZDS agent on the device?
+###Q: What licensing service is used by Zebra?
 
-**A: The current ZDS agent is implemented as two files**:
+**A: Zebra uses Flexera for licensing**.
+
+<!-- 
 
 * `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
 * `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
@@ -129,3 +131,4 @@ menu:
 **A: Some older versions of the ZDS agent did not display the end-user license agreement screen. To view the EULA, update ZDS to the latest version. Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information**. 
 
 -----
+ -->

@@ -7,13 +7,13 @@ menu:
   items:
     - title: About
       url: /licensing/about
-    - title: Setup
+    - title: Process
       url: /licensing/process
     - title: FAQ
       url: /licensing/faq
     - icon: fa fa-search
       url: /licensing/search
-------
+---
 
 
 

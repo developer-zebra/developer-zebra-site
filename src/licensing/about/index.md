@@ -6,7 +6,7 @@ menu:
   items:
     - title: About
       url: /licensing/about
-    - title: Setup
+    - title: Process
       url: /licensing/process
     - title: FAQ
       url: /licensing/faq
@@ -103,7 +103,7 @@ menu:
   items:
     - title: About
       url: /oemconfig/9-3/about
-    - title: Setup
+    - title: Process
       url: /oemconfig/9-3/process
     - title: FAQs
       url: /oemconfig/9-3/faq

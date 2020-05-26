@@ -1,12 +1,12 @@
 ---
 title: Test Criteria
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '2.1'
 ---
 
 ## Overview
-Diagnostic Tool tests for the operation of device hardware features based on specific criteria, with the following results:
+Device Diagnostic Tool tests for the operation of device hardware features based on specific criteria, with the following results:
 * **Pass** - if the criteria is met
 * **Fail** - if the criteria is not met
 * **Information** - displays informational data (pass/fail is not applicable) 
@@ -82,7 +82,7 @@ Refer to [Configure Tests](../configuration#configuretests) section for a descri
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
 * [Configuration](../configuration)
 

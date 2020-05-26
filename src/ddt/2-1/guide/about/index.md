@@ -1,13 +1,13 @@
 ---
-title: About Diagnostic Tool
+title: About Device Diagnostic Tool
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '2.1'
 ---
 
 ## Overview
 
-Diagnostic Tool instantly tests and diagnoses the hardware operability on Zebra mobile devices to determine system health and functionality. Where appropriate, Zebra Help Desk uses this tool for troubleshooting device issues, relying on the results to provide optimum steps to reach a resolution.  It is useful for quickly troubleshooting device issues, resulting to increased worker productivity, limited device downtime, and unnecessary returns to the Zebra Repair Center. 
+Device Diagnostic Tool instantly tests and diagnoses the hardware operability on Zebra mobile devices to determine system health and functionality. Where appropriate, Zebra Help Desk uses this tool for troubleshooting device issues, relying on the results to provide optimum steps to reach a resolution.  It is useful for quickly troubleshooting device issues, resulting to increased worker productivity, limited device downtime, and unnecessary returns to the Zebra Repair Center. 
 
 Hardware features tested:
 
@@ -23,7 +23,7 @@ Hardware features tested:
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
-## New in Diagnostic Tool 2.1
+## New in Device Diagnostic Tool 2.1
 * Introduced 2 modes of operation: [admin mode and user mode](../usage).
 * Changes in supported tests:
      * Tests added: Scanner, Button, Touch Screen, Audio
@@ -32,12 +32,14 @@ Hardware features tested:
 * New [Settings](../configuration) and [Configure Tests](../configuration) app screens for administrators. 
 * Added and removed device support. See **Supported Devices** table below.
 * Known Issues:
-     * On TC20 Android Nougat, when performing the Battery test the <i>Decommission status</i> may return incorrect information.
+     * On TC20 and TC25 Android Nougat, when performing the Battery test the <i>Decommission status</i> may return incorrect information.
      * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
-     * When the app is already running (in the foreground or background) and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Diagnostic Tool to recover.
+     * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons. 
+     * On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device. 
+     * When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.
 
 ## Supported Devices
-<p>Download <b>Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Upon launching the app after installation, the user must grant all permissions to avoid any unexpected behavior. The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>
+<p>Download <b>Device Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Upon launching the app after installation, the user must grant all permissions to avoid any unexpected behavior. The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -353,14 +355,14 @@ Hardware features tested:
 <br>
 
 **Note:** 
-* **Multiple instances of app -** If Diagnostic Tool v1.0 is already present on the device and Diagnostic Tool v2.1 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
+* **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
 
 ## Important Notes
-1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
+1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Device Diagnostic Tool use and functionality only applies to the active primary user.
 2.	**Limitation due to low memory on the device -** Once the available device memory is less than 3 MB, a message appears indicating there is no space on the device and logging will no longer take place. Additionally the Audio Test cannot be executed.
-3. **Device orientation -** Diagnostic Tool is only supported in the default orientation of the device. It does not support switching between both portrait and landscape modes.
-4. **Split screen support -** On Android N and above, Diagnostic Tool does not support split screen mode.
+3. **Device orientation -** Device Diagnostic Tool is only supported in the default orientation of the device. It does not support switching between both portrait and landscape modes.
+4. **Split screen support -** On Android N and above, Device Diagnostic Tool does not support split screen mode.
 
 <br>
 

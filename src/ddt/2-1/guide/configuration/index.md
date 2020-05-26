@@ -1,12 +1,12 @@
 ---
 title: Configuration
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '2.1'
 ---
 
 ## Overview
-This section discusses configuration settings and reporting options for Diagnostic Tool.
+This section discusses configuration settings and reporting options for Device Diagnostic Tool.
 
 ## Settings 
 The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:
@@ -101,7 +101,7 @@ Configuration parameters:
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
 * [Test Criteria](../criteria)
 

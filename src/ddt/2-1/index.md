@@ -1,13 +1,13 @@
 ---
-title: Diagnostic Tool
+title: Device Diagnostic Tool
 img: ddt_logo.png
 layout: list-mx.html
 menu:
-  title: Diagnostic Tool
+  title: Device Diagnostic Tool
   items:
     - title: About
       url: /ddt/2-1/guide/about
-    - title: Using Diagnostic Tool
+    - title: Using Device Diagnostic Tool
       url: /ddt/2-1/guide/usage
     - title: Configuration
       url: /ddt/2-1/guide/configuration
@@ -15,6 +15,6 @@ menu:
       url: /ddt/2-1/guide/criteria
     - icon: fa fa-search
       url: /ddt/2-1/search
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '2.1'
 ---

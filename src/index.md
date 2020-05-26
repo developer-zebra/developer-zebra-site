@@ -317,7 +317,7 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: Diagnostic Tool
+  - title: Device Diagnostic Tool
     description: Instantly test and diagnose device system operability to determine system health.
     url: /ddt/2-1/guide/about
     btn-text: Latest Guides

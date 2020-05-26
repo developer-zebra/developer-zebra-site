@@ -1,22 +1,22 @@
 ---
-title: Using Diagnostic Tool
+title: Using Device Diagnostic Tool
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '2.1'
 ---
 
 ## Overview
-Diagnostic Tool supports two modes of operation:
+Device Diagnostic Tool supports two modes of operation:
 1. **Admin mode -** The administrator can access app settings, modify test configurations and run each individual test. This is the default mode.
 2. **User mode -** The user is restricted to only run tests; there is no access to app settings nor test configurations. To set user mode, disable <i>admin_mode</i> as referenced in the [Configuration](../configuration#configurationfile) section.
 <br> 
 
 ## Launch the App
-Run Diagnostic Tool using one of the following methods: 
-1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
-2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
+Run Device Diagnostic Tool using one of the following methods: 
+1. **Manually using the User Interface** - The user launches Device Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
+2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Device Diagnostic Tool in the background and generate a log using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
 <br>
-<p>Only one of the methods should be used to run Diagnostic Tool.  If both methods are used simultaneously, unexpected behavior can occur.</p>  
+<p>Only one of the methods should be used to run Device Diagnostic Tool.  If both methods are used simultaneously, unexpected behavior can occur.</p>  
 
 ## User Interface
 When launching the app for the first time, the main screen displays the tests available to run:
@@ -126,7 +126,7 @@ Checks for operation of the device microphone and speaker.  Results:
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Test Criteria](../criteria)
 * [Configuration](../configuration)
 

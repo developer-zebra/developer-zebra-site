@@ -1,18 +1,18 @@
 ---
 title: Search
 layout: search.html
-index: /zds/index.json
-product: ZDS
+index: /licensing/index.json
+product: Zebra Licensing
 menu:
   items:
     - title: About
-      url: /zds/about
+      url: /licensing/about
     - title: Setup
-      url: /zds/setup
+      url: /licensing/setup
     - title: FAQ
-      url: /zds/faq
+      url: /licensing/faq
     - icon: fa fa-search
-      url: /zds/search
+      url: /licensing/search
 ------
 
 

@@ -1,17 +1,17 @@
 ---
 title: About Zebra Data Services
 layout: guide.html
-product: ZDS
+product: Zebra Licensing
 menu:
   items:
     - title: About
-      url: /zds/about
+      url: /licensing/about
     - title: Setup
-      url: /zds/setup
+      url: /licensing/setup
     - title: FAQ
-      url: /zds/faq
+      url: /licensing/faq
     - icon: fa fa-search
-      url: /zds/search
+      url: /licensing/search
 ---
 
 ## Overview

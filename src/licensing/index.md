@@ -1,29 +1,29 @@
 ---
 title: Zebra Licensing
-img: /images/products/zds.png
+img: /images/products/licensing.png
 layout: redirect.html
 redirect_url: /licensing
 menu:
   title: Zebra Licensing
-  img: /zds/images/logo.png
+  img: /licensing/images/logo.png
   versions:
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/about
+      default: /licensing/about
       label: '2.0'
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/about
+      default: /licensing/about
       label: '2.0'
   items:
     - title: About
-      url: /zds/about
+      url: /licensing/about
     - title: Setup
-      url: /zds/setup
+      url: /licensing/setup
     - title: FAQ
-      url: /zds/faq
+      url: /licensing/faq
     - icon: fa fa-search
-      url: /zds/search
+      url: /licensing/search
 ---
 
 ### Redirecting to the latest ZDS documentation...

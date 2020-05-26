@@ -2,8 +2,13 @@
 title: Zebra Licensing
 img: /images/products/licensing.png
 layout: redirect.html
-redirect_url: /licensing
-menu:
+redirect_url: /licensing/about
+---
+
+### Redirecting to the latest Licensing information...
+
+<!--
+  menu:
   title: Zebra Licensing
   img: /licensing/images/logo.png
   versions:
@@ -24,6 +29,4 @@ menu:
       url: /licensing/faq
     - icon: fa fa-search
       url: /licensing/search
----
-
-### Redirecting to the latest ZDS documentation...
+-->

@@ -170,6 +170,14 @@ Handlebars.registerHelper("debug", function(optionalValue) {
   }
 });
 
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if (a == b) {
+        return opts.fn(this);
+    } else {
+        return opts.inverse(this);
+    }
+});
+
 var sitebuild = Metalsmith(__dirname)
     .clean(false)
     .concurrency(2000)
@@ -235,6 +243,9 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'devicetracker/2-3/'
+    }))
+    .use(foldermenu({
+        folder: 'devicetracker/3-1/'
     }))
     .use(foldermenu({
         folder: 'ppc/1-0/'

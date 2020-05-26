@@ -7,7 +7,7 @@ productversion: '2.3.1'
 
 ## Overview
 
-PowerPrecision Console (PPC) is a battery management solution that gives organizations using Zebra mobile computing devices a centralized view of the health, state of charge and performance statistics of device batteries in their organization. Starting with PPC v2.0, it is part of Zebra DNA Visibility Console (ZDVC), which consists of a suite of solutions including [Device Tracker](/devicetracker/latest/guide/about). Using data gathered and stored in Zebra's [PowerPrecision](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/accessories/Mobile%20Computer%20Accessories/Batteries/Power%20Precision%20Battery%20Solutions/white-paper/power-precision-batteries-white-paper-en-us.pdf) batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times.
+PowerPrecision Console (PPC) is a battery management solution that provides administrators a centralized view of statistical battery data from Zebra mobile device batteries, including battery health and charge level, to maximize workforce productivity. It continuously monitors battery health data analyzed in real time, giving administrators insight to determine when battery health could affect productivity as it reaches its EOL (end-of-life) and when the battery should be removed from service. Customized notifications can be triggered to alert device users of actions needed for battery swapping or decommissioning, ensuring optimized deployment of healthy batteries at all times. The centralized view of battery health is grouped into color-coded categories of "good health", "nearing EOL" and "in EOL", to identify and remove aging batteries from the battery pool prior to impacting workforce productivity.
 
 ##Main Features
 PowerPrecision Console main features:
@@ -24,10 +24,6 @@ PowerPrecision Console main features:
 * Capability for device staging with the use of an EMM such as Zebra's [StageNow](/stagenow/latest/about) with [Battery Manager CSP](/mx/batterymgr).
 
 ##How it works
-PowerPrecision Console consists of the following components:
-* Client – Device app collects and sends battery and device information to server.
-* Server – Part of Zebra DNA Visibility Console, which collects and analyzes device battery data.
-* Web portal - Part of Zebra DNA Visibility Console, which provides a centralized dashboard for monitoring battery status information, sends notifications and generates reports.
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions. 
 

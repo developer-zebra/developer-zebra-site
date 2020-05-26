@@ -6,12 +6,10 @@ productversion: '2.3.1'
 ---
 ## Overview
 
-As part of Zebra DNA Visibility Console (ZDVC) server, Device Tracker runs on a supported Windows-based server. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
+Device Tracker consists of the following two components:
 
-Solution components:
-* **ZDVC server** - ZDVC server includes Device Tracker and [PowerPrecision Console](/ppc/latest/guide/about). Device Tracker collects and processes device data for tracking misplaced devices.
-* **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, and battery status.
-* **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
+* **Client** – Device Tracker client app runs on [supported Zebra Android mobile devices](../about/#supporteddevices). It collects device information, sends presence updates to the server, and provides a remote chirping device finding feature. The client app can play the role of either the tracking device or the device being tracked.
+* **Server** –  Device Tracker server is part of the Zebra DNA Visibility Console server solution, a common server software for both Device Tracker and [PowerPrecision Console](/ppc/latest/guide/about). It provides a centralized dashboard that is accessible from a supported browser running on a kiosk, tablet, or PC.  The server collects and processes device data for tracking misplaced devices, including tracking status, connection status, and battery status.
 
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
  * **Install a server certificate** - Supported certificates:

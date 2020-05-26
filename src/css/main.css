@@ -1465,3 +1465,11 @@ display:none
 .facelift tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+.center-block
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}

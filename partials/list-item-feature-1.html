@@ -1,0 +1,31 @@
+<div class="col-sm-12">
+    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+
+        <!--<div class="">  -->
+          <div class="" style="padding-left: 15px;">
+            <div class="row center-block" style="padding: 20px; background-color:aliceblue; background-clip:content-box;">
+                <div class="col-sm-6"> 
+                    <br />
+                    <h4 class="media-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
+                    
+                    <p>{{ description }}</p>
+                    
+                    {{#each sections}}
+                      <a href="{{this.url}}"><span class="label label-primary">{{this.title}}</span></a>
+                    {{/each}}
+                </div>
+                <div class="col-sm-6">
+                    {{#if image}}
+                        <img src="{{image}}" />
+                    {{else if video}}
+                        <div><iframe width="430" height="308" src="{{video}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+                    {{/if}}
+                </div>
+            </div>
+          </div>
+<!--
+          </div>-->
+    </div>
+</div>
+
+

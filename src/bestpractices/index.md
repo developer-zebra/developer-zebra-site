@@ -10,7 +10,12 @@ content-items:
     url: kiosk_persistence_after_reset.pdf
   - type: section
     level: 4
-    title: Best Practices for Printing
+    title: Device Licensing
+    text: This section lists the apps and features included with Zebra Professional and Enterprise devices and describes the process of purchasing and applying a Mobile DNA Enterprise license to upgrade a Zebra Professional device for access to Enterprise-grade features.
+    url: http://techdocs.zebra.com/licensing
+  - type: section
+    level: 4
+    title: Printing Best Practices
     text: Explores common performance and stability mistakes made by developers and describes methods for avoiding them. Also covers practices for creating the best user experience for customers and how to get the most from Zebra value-added features. 
     url: http://techdocs.zebra.com/link-os/2-13/bestpractices/
 product: Best Practices

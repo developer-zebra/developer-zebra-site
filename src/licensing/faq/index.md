@@ -7,7 +7,7 @@ menu:
     - title: About
       url: /licensing/about
     - title: Setup
-      url: /licensing/setup
+      url: /licensing/process
     - title: FAQ
       url: /licensing/faq
     - icon: fa fa-search
@@ -48,7 +48,7 @@ menu:
 
 ###Q: Is the 24-hour period the same for every device? 
 
-**A: No, the upload cycle is different for each device. It begins when the device is first powered up and cannot be changed or configured to vary by connection or network type. The first upload occurs approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide**. 
+**A: No, the upload cycle is different for each device. It begins when the device is first powered up and cannot be changed or configured to vary by connection or network type. The first upload occurs approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../process/#checkzdsstatus) in the Setup guide**. 
 
 -----
 
@@ -101,7 +101,7 @@ menu:
 ###Q: How can the current ZDS parameters be changed? 
 
 **A: The ZDS settings on a device can be changed in two ways**: 
-* Through the device UI (see [Setup section](../setup) for more info). 
+* Through the device UI (see [Setup section](../process) for more info). 
 * By scanning a barcode that contains changes to the [Analytics Manager CSP](/mx/analyticsmgr). 
 
 **Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information about changing ZDS parameters**. 

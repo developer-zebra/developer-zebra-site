@@ -8,7 +8,7 @@ menu:
     - title: About
       url: /licensing/about
     - title: Setup
-      url: /licensing/setup
+      url: /licensing/process
     - title: FAQ
       url: /licensing/faq
     - icon: fa fa-search

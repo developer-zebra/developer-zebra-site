@@ -1,13 +1,13 @@
 ---
-title: About Diagnostic Tool
+title: About Device Diagnostic Tool
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '1.17'
 ---
 
 ## Overview
 
-Diagnostic Tool instantly tests and diagnoses the operability of the main device systems  on Zebra mobile devices to determine system health and functionality. This application exercises device subsystems and reports the pass/fail status for the test properties. Where appropriate, Zebra Help Desk uses the tool for troubleshooting device issues, relying on the results to provide the most optimum steps to reach a resolution. Resolve simple issues and avoid unnecessary returns to the Zebra Repair Center with Diagnostic Tool, resulting to increased worker productivity and device uptime. The main device subsystems are:
+Device Diagnostic Tool instantly tests and diagnoses the operability of the main device systems  on Zebra mobile devices to determine system health and functionality. This application exercises device subsystems and reports the pass/fail status for the test properties. Where appropriate, Zebra Help Desk uses the tool for troubleshooting device issues, relying on the results to provide the most optimum steps to reach a resolution. Resolve simple issues and avoid unnecessary returns to the Zebra Repair Center with Device Diagnostic Tool, resulting to increased worker productivity and device uptime. The main device subsystems are:
 
 * **Battery** - Provides information regarding: battery level, voltage, state of charge, power soource, temperature, health percentage, backup battery voltage and manufacture date.
 * **GPS** – Provides information regarding: GPS status (enabled/disabled/not supported), latitude, longitude, altitude, bearing, speed and accuracy.
@@ -16,11 +16,11 @@ Diagnostic Tool instantly tests and diagnoses the operability of the main device
 * **WAN** – Provides information regarding: SIM state, WAN type, signal strength, phone number and device ID.
 * **Bluetooth** – Provides information regarding: Bluetooth state (on/off), status (paired/unpaired), connectable/discoverable, Bluetooth address and name. <br><br>
 
-When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
+When using multiple Android user accounts on a single device, Device Diagnostic Tool use and functionality only applies to the active primary user.
 
 
 ## Supported Devices
-Diagnostic Tool is pre-installed on all supported Zebra devices. 
+Device Diagnostic Tool is pre-installed on all supported Zebra devices. 
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

@@ -1,12 +1,12 @@
 ---
 title: Configuration
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '1.17'
 ---
 
 ## Overview
-This section discusses configuration settings and reporting for Diagnostic Tool.
+This section discusses configuration settings and reporting for Device Diagnostic Tool.
 
 ##Configuration Files
 Each subsystem test can be enabled/disabled by setting the corresponding flag in `/SelfDiagnostics/SelfDiagnosticSettings.txt` file on the device. Set to "0" to disable, "1" to enable. The format of selfdiagnosticsettings.txt follows:  
@@ -30,7 +30,7 @@ A snapshot report of the last test executed is located on the device in file pat
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
 * [Test Criteria](../criteria)
 

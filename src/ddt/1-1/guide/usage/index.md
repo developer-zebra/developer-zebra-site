@@ -1,15 +1,15 @@
 ---
-title: Using Diagnostic Tool
+title: Using Device Diagnostic Tool
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '1.17'
 ---
 
 ## Overview
 
-Run Diagnostic Tool using one of the following methods: 
-1. **Manually using the User Interface** - The user launches Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
-2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using one of the following commands based on the Android version: <br>
+Run Device Diagnostic Tool using one of the following methods: 
+1. **Manually using the User Interface** - The user launches Device Diagnostic Tool and runs the tests manually. See [User Interface](#userinterface) section below. 
+2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Device Diagnostic Tool in the background and generate a log using intent `android.intent.SES.Runtests`. Generate log file `/sdcard/SelfDiagnostics/SelfDiagnosticLogs.ini` using one of the following commands based on the Android version: <br>
  a. For **Android Nougat 7.0 or earlier** use command: 
  `adb shell am broadcast -a “android.intent.SES.RunTests”`. 
  Results:
@@ -137,7 +137,7 @@ This test can be used to determine the status of the Bluetooth radio on the devi
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Test Criteria](../criteria)
 * [Configuration](../configuration)
 

@@ -1,12 +1,12 @@
 ---
 title: Test Criteria
 layout: guide.html
-product: Diagnostic Tool
+product: Device Diagnostic Tool
 productversion: '1.17'
 ---
 
 ## Overview
-Diagnostic Tool tests the properties based on the subsystems listed in the following table. If pass/fail criteria exists, the result is one of the following:
+Device Diagnostic Tool tests the properties based on the subsystems listed in the following table. If pass/fail criteria exists, the result is one of the following:
 * **Pass** - if the criteria is met
 * **Fail** - if the criteria is not met
 * **Info** - displays an informational message (pass/fail is not applicable) 
@@ -175,7 +175,7 @@ Diagnostic Tool tests the properties based on the subsystems listed in the follo
 
 ## See Also
 
-* [About Diagnostic Tool](../about)
+* [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
 * [Configuration](../configuration)
 

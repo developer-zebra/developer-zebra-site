@@ -24,8 +24,8 @@ License activation requires ***ALL THREE*** of the following:
 
 1. **One or more license keys** (aka Activation IDs) purchased for the target device(s) and/or app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
- &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)<br>
- &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with Zebra-app installers)<br>
+ &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
+ &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
 3. **Devices must be connected to one of the following**:<br> 
  &nbsp;&nbsp;&nbsp;**Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
  &nbsp;&nbsp;&nbsp;**A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
@@ -60,6 +60,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
   * Check the status of existing orders
   * Assign licenses to devices or deployments
   * View current license inventory and assignments
+  * Purchase and download license key `.bin` files with Activation IDs for [off-line licensing](#offlinelicensing) 
 <!-- https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do -->
 
 -----
@@ -84,11 +85,13 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 #### BEFORE BEGINNING
 * **Confirm that the clock is set correctly on the device to ensure proper application of license(s)**. 
 * **Create license-key barcodes (if desired) using any barcode generator tool**. License-key barcodes ease the activation process; they are not provided by Zebra. Keys also can be typed in manually. 
-* **Ensure device(s) are connected as required**. 
+* **Ensure devices are connected as required**. 
 <!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
  -->
 
 #####To activate a device license:  
+
+**Note**: The Zebra Enterprise Browser app is used as an example. 
 
 1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
@@ -97,7 +100,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 **Tap the floating action button**:
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
 <br>
-3. When the Activation screen appears: 
+3. When the "Activate License" screen appears: 
  1. **Enter or scan the license key (Activation ID)**: 
  <img alt="" style="height:350px" src="6b.png"/>
  <br>
@@ -109,21 +112,20 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 4. **Tap Activate**.  
 <img alt="" style="height:350px" src="6.png"/>
 <br>
+ Successful license activation is indicated by a screen similar to the image below: 
+ <img alt="" style="height:350px" src="7.png"/>
+ <br>
 
-Successful license activation is indicated by a screen similar to the image below: 
-<img alt="" style="height:350px" src="7.png"/>
-<br>
-
-#### The Android device is now licensed to use Enterprise Browser 2.x. 
+#### The Android device is now licensed to use the app. 
 
 -----
 
 ### Windows Mobile/CE Devices
-Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
+Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or later) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
 
-> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html); it's free. 
+> `IMPORTANT:` **Zebra recommends using StageNow (a free tool) to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 
 
-**To activate a license on a device running Windows Mobile/CE**: 
+#####To activate a license on a device running Windows Mobile/CE: 
 
 1. **Push the XML file** required for license activation to the device. 
 2. Locate and launch License Manager on the device. <br>
@@ -143,7 +145,7 @@ Current licenses on the device (if any) are shown along with a series of buttons
 <img alt="" style="height:250px" src="wmce_license03.png"/>
 **Details -** displays information about the selected licensing server.<br>
 **Delete -** removes a user-defined licensing server (none shown).<br> 
-5. **Using an EMM system, launch License Manager with command line arguments** similar to those shown. This example was tested using SOTI Mobi control. 
+5. **Using an EMM system, launch License Manager with command line arguments** similar to those shown below. This example was tested using SOTI Mobi control. 
 
         :::xml
         // for XML file in root directory of device: 
@@ -151,7 +153,6 @@ Current licenses on the device (if any) are shown along with a series of buttons
 
         // for XML file in a specific License Manager folder on device:  
         start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
-<br>
 
 6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
 
@@ -203,11 +204,18 @@ Launch the shortcut to execute the command line argument and see the result.xml 
 -----
 
 ## Off-line Licensing
-License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
+License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. **This option requires software installed on a company's own IP-based Linux or Windows server** in advance of license distribution to devices. 
 
 > **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
 
-**To License from a Local Server**: 
+#### BEFORE BEGINNING
+* **Install and configure Local License Server**
+* **Acquire `.bin` file containing licenses (Activation IDs) from Zebra License Server**
+* 
+
+#####To License from a Local Server: 
+
+**Note**: The Zebra Enterprise Browser app is used as an example. 
 
 1. **Tap Local Server** from the License Source drop-down.<br> 
 A screen appears as below.
@@ -215,15 +223,14 @@ A screen appears as below.
 <br>
 2. **Enter the server URL, provide a name and tap SUBMIT**.   
 3. **Enter or scan the license key for the device**. <br>
-Then **Tap Activate**. 
-<img alt="" style="height:350px" src="6a.png"/>
-<br>
+ Then **Tap Activate**. 
+ <img alt="" style="height:350px" src="6a.png"/>
+ <br>
+ **Successful license activation is indicated by a screen similar to the image below**: 
+ <img alt="" style="height:350px" src="7.png"/>
+ <br>
 
-Successful license activation is indicated by a screen similar to the image below: 
-<img alt="" style="height:350px" src="7.png"/>
-<br>
-
-#### The device is now licensed to use Enterprise Browser 2.x. 
+#### The device is now licensed to use the app. 
 
 -----
 
@@ -246,7 +253,7 @@ Mass-deployment of Enterprise Browser device licenses requires use of an Enterpr
 
 -----
 
-**To create the licensing portion of a StageNow Profile**:
+#####To create the licensing portion of a StageNow Profile:
 
 1. **Launch StageNow and select “Create new Profile"** from the left-hand pane. <br>
 The "Select a Wizard" dialog box appears.

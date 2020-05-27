@@ -121,9 +121,34 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 -----
 
 ### Windows Mobile/CE Devices
-Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or later) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
+Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. 
 
-> `IMPORTANT:` **Zebra recommends using StageNow (a free tool) to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 
+#### Requirements
+* **License Manager 1.0 (or later) on device**: 
+ * included with the Microsoft Installer (MSI) file (when installing from Windows)
+ * included as a `.CAB` file when installing from macOS
+* **StageNow for generating XML files** required for this process. StageNow is a free tool for Windows PCs [Download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html).
+
+#### Example
+The following XML file selects the cloud-based Zebra Licensing Server as the license source.  
+
+    :::xml
+    <wap-provisioningdoc>
+      <characteristic type="LicenseMgr" version="8.1" >
+        <parm name="LicenseChoice" value="zebra"/>
+      <characteristic type="LicenseZebra">
+        <parm name="LicenseActionZebra" value="activate"/>
+      <characteristic type="NewLicenseZebra">
+      <characteristic type="LicenseSourceURL">
+        <parm name="LicenseSource" value="Zebra Cloud"/>
+        <parm name="LicenseCloudURL" value="2"/>
+      </characteristic>
+        <parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+        <parm name="ActivationQuantity" value="1"/>
+      </characteristic>
+      </characteristic>
+      </characteristic>
+    </wap-provisioningdoc>
 
 #####To activate a license on a device running Windows Mobile/CE: 
 
@@ -156,26 +181,7 @@ Current licenses on the device (if any) are shown along with a series of buttons
 
 6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
 
-#### Example
-The following XML file selects the cloud-based Zebra Licensing Server as the license source.  
-
-    :::xml
-    <wap-provisioningdoc>
-      <characteristic type="LicenseMgr" version="8.1" >
-        <parm name="LicenseChoice" value="zebra"/>
-      <characteristic type="LicenseZebra">
-        <parm name="LicenseActionZebra" value="activate"/>
-      <characteristic type="NewLicenseZebra">
-      <characteristic type="LicenseSourceURL">
-        <parm name="LicenseSource" value="Zebra Cloud"/>
-        <parm name="LicenseCloudURL" value="2"/>
-      </characteristic>
-        <parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
-        <parm name="ActivationQuantity" value="1"/>
-      </characteristic>
-      </characteristic>
-      </characteristic>
-    </wap-provisioningdoc>
+#### The Windows Mobile/CE device is now licensed to use the app.
 
 <!-- 
 #### Activation Using Shortcuts

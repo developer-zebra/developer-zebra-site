@@ -15,14 +15,14 @@ menu:
 ---
 
 ## Overview 
-This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use and applying the license to individual devices and as part of a mass-deployment.
+This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use and applying the license manually to individual devices and mass-deploying them using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
 -----
 
 ### Requirements
-***ALL THREE*** of the following are required to activate EB license(s):   
+***ALL THREE*** of the following are required to activate license(s):   
 
-1. **One or more license keys** (aka Activation IDs) purchased for EB 2.0 (or higher) software
+1. **One or more license keys** (aka Activation IDs) purchased for the target device and desired app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
  &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)<br>
  &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with EB installer)<br>
@@ -30,7 +30,7 @@ This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](h
  &nbsp;&nbsp;&nbsp;**An internet connection** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
  &nbsp;&nbsp;&nbsp;**Linux or Windows server** (for off-line activation of any supported device)<br>
 
-**NOTE**: Only Android and Windows CE7 devices support license deployment from a cloud-based server. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
+**NOTE: Only Android and Windows CE7 devices support license deployment from a cloud-based server**. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 
 -----
 
@@ -152,23 +152,23 @@ Current licenses on the device (if any) are shown along with a series of buttons
 #### Example
 The following XML file selects the cloud-based Zebra Licensing Server as the license source.  
 
-  :::xml
-  <wap-provisioningdoc>
-    <characteristic type="LicenseMgr" version="8.1" >
-      <parm name="LicenseChoice" value="zebra"/>
-    <characteristic type="LicenseZebra">
-      <parm name="LicenseActionZebra" value="activate"/>
-    <characteristic type="NewLicenseZebra">
-    <characteristic type="LicenseSourceURL">
-      <parm name="LicenseSource" value="Zebra Cloud"/>
-      <parm name="LicenseCloudURL" value="2"/>
-    </characteristic>
-      <parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
-      <parm name="ActivationQuantity" value="1"/>
-    </characteristic>
-    </characteristic>
-    </characteristic>
-  </wap-provisioningdoc>
+    :::xml
+    <wap-provisioningdoc>
+      <characteristic type="LicenseMgr" version="8.1" >
+        <parm name="LicenseChoice" value="zebra"/>
+      <characteristic type="LicenseZebra">
+        <parm name="LicenseActionZebra" value="activate"/>
+      <characteristic type="NewLicenseZebra">
+      <characteristic type="LicenseSourceURL">
+        <parm name="LicenseSource" value="Zebra Cloud"/>
+        <parm name="LicenseCloudURL" value="2"/>
+      </characteristic>
+        <parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+        <parm name="ActivationQuantity" value="1"/>
+      </characteristic>
+      </characteristic>
+      </characteristic>
+    </wap-provisioningdoc>
 
 <!-- 
 #### Activation Using Shortcuts
@@ -223,7 +223,7 @@ Successful license activation is indicated by a screen similar to the image belo
 
 ## Mass Deployment 
 
-Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
+Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](https://techdocs.zebra.com/stagenow/latest/csp/license).
 
 ##### `IMPORTANT NOTES:`
 * **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
@@ -284,7 +284,7 @@ Also see [related guides](#relatedguides).
 ## License Transfer
 Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is done by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 
-See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
+See the [License Manager section](https://techdocs.zebra.com/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
 
 -----
 
@@ -303,7 +303,7 @@ The following notes are derived from frequently asked questions about device lic
 * **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
 * **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
- * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
+ * StageNow and the [License Mgr CSP](https://techdocs.zebra.com/stagenow/latest/csp/license)
  * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
 
 -----

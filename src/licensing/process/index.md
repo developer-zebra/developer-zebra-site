@@ -265,12 +265,13 @@ Mass-deployment of Enterprise Browser device licenses requires use of an Enterpr
 
 #####To create the licensing portion of a StageNow Profile:
 
-&#49;. **Launch StageNow and select “Create new Profile"** from the left-hand pane. <br>
+&#49;. **Launch StageNow and select “Create new Profile"** from the left-hand pane of the Home screen. <br>
 The "Select a Wizard" dialog box appears.<br>
 &#50;. **Select MX version** to match device(s), **click "Xpert Mode"** and **click "Create"** button.<br>
 &#51;. **Enter a Profile name and click "Start"** button.<br>
-&#52;. **Single-click LicenseMgr** (scroll down if necessary); then **click "Update"** button. <br>
-&#53;. **Under "License action type:" select “Perform Zebra license action.”** Additional options appear: 
+&#52;. **Single-click LicenseMgr** (scroll down if necessary to display it); then **click "Update"** button. <br>
+&#53;. **Under "License action type:" select “Perform Zebra license action.”**<br> 
+Additional options appear: 
 <img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
 _Click image to enlarge_.
 <br>

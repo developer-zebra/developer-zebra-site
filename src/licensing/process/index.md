@@ -15,53 +15,57 @@ menu:
 ---
 
 ## Overview 
-This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use and applying the license manually to individual devices and mass-deploying them using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
+This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use, applying the license manually to individual devices and mass-deploying licenses using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
 -----
 
 ### Requirements
-***ALL THREE*** of the following are required to activate license(s):   
+License activation requires ***ALL THREE*** of the following:   
 
-1. **One or more license keys** (aka Activation IDs) purchased for the target device and desired app(s) 
+1. **One or more license keys** (aka Activation IDs) purchased for the target device(s) and/or app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
  &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)<br>
- &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with EB installer)<br>
-3. **One of the following server connections**:<br> 
- &nbsp;&nbsp;&nbsp;**An internet connection** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
- &nbsp;&nbsp;&nbsp;**Linux or Windows server** (for off-line activation of any supported device)<br>
+ &nbsp;&nbsp;&nbsp;**Windows MobileCE**: License Manager 1.0 or higher (included with Zebra-app installers)<br>
+3. **Devices must be connected to one of the following**:<br> 
+ &nbsp;&nbsp;&nbsp;**Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
+ &nbsp;&nbsp;&nbsp;**A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
 
 **NOTE: Only Android and Windows CE7 devices support license deployment from a cloud-based server**. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 
 -----
 
 ## I. Contact a Reseller 
-The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
+Zebra licenses are obtained through Zebra resellers or in some cases directly from Zebra. This can be done in one of two ways: 
 
-**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
-
-**&#50;. Alternatively, select one of the following Zebra resources**: 
-
-* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
-* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
-* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
-* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
-* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
+* **[Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <br>
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***OR***
+<br>
+* **Select one of the following Zebra resources**: 
+ * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
+ * **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
+ * **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
+ * **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
+ * **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 
 -----
 
 ## II. Access Licensing System
-After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the licensing company's representative containing user credentials for accessing the Zebra Enterprise Software Licensing system (**also new starting with EB 2.0**). 
+After a licensing agreement is purchased from Zebra or a Zebra reseller and a customer representative is designated, **an email is sent to the representative containing user credentials** for accessing the Zebra Enterprise Software Licensing system. 
 
-* **Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to:** 
-  * Place an order for licenses
-  * See the status of existing orders
+##### After licensing credentials are received:
+* **Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**, register and log into the portal.<br>
+ **This allows the customer to:** 
+  * Place order(s) for licenses
+  * Check the status of existing orders
   * Assign licenses to devices or deployments
   * View current license inventory and assignments
 <!-- https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do -->
+
 -----
 
 ## III. Manually Assign License
-This section describes the process for activating a license on a single device running Android. To manually activate a license on a device running Windows Moblie/CE, see the [Windows Mobile/CE section](#windowsmobilecedevices). To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
+**This section describes the process for activating a license on a single device running Android**. To manually activate a license on a device running Windows Mobile/CE, see the [Windows Mobile/CE section](#windowsmobilecedevices) below. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 
 #### License Source Types
 * **Cloud-based server** (internet connection required)
@@ -78,11 +82,13 @@ This section describes the process for activating a license on a single device r
 * Test Cloud Through Proxy - **For Zebra internal use only**.
 
 #### BEFORE BEGINNING
-* **Confirm that the clock is set correctly on the device to ensure proper license-application behavior**. 
-* **License-key barcodes are not provided by Zebra**; they can be created by the licensee to ease the activation process. Keys also can be typed in manually. 
+* **Confirm that the clock is set correctly on the device to ensure proper application of license(s)**. 
+* **Create license-key barcodes (if desired) using any barcode generator tool**. License-key barcodes ease the activation process; they are not provided by Zebra. Keys also can be typed in manually. 
+* **Ensure device(s) are connected as required**. 
 <!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
  -->
-**To activate a device license**:  
+
+#####To activate a device license:  
 
 1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
@@ -92,12 +98,12 @@ This section describes the process for activating a license on a single device r
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
 <br>
 3. When the Activation screen appears: 
- 1. **Enter the license key (Activation ID)**: 
+ 1. **Enter or scan the license key (Activation ID)**: 
  <img alt="" style="height:350px" src="6b.png"/>
  <br>
- 2. **Tap "Select License Source"**and select desired options. 
+ 2. **Tap "Select License Source"** and select desired options. 
  3. **Tap SUBMIT** button.<br> 
- If prompted to set device clock, **Tap "Continue."** The "Activation" screen reappears: 
+ If prompted to set device clock, **Tap "Continue"** to invoke the "Activation" screen again: 
 <img alt="" style="height:350px" src="5.png"/>
 <br>
 4. **Tap Activate**.  
@@ -139,12 +145,12 @@ Current licenses on the device (if any) are shown along with a series of buttons
 **Delete -** removes a user-defined licensing server (none shown).<br> 
 5. **Using an EMM system, launch License Manager with command line arguments** similar to those shown. This example was tested using SOTI Mobi control. 
 
-    :::xml
-    // for XML file in root directory of device: 
-    start "\Program Files\LicenseManager\LicenseManager.exe" activate license.xml
+        :::xml
+        // for XML file in root directory of device: 
+        start "\Program Files\LicenseManager\LicenseManager.exe" activate license.xml
 
-    // for XML file in a specific License Manager folder on device:  
-    start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
+        // for XML file in a specific License Manager folder on device:  
+        start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
 <br>
 
 6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 

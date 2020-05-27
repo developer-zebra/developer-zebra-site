@@ -66,6 +66,8 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 -----
 
 ## III. Manually Assign License
+
+### Android Devices
 **This section describes the process for activating a license on a single device running Android**. To manually activate a license on a device running Windows Mobile/CE, see the [Windows Mobile/CE section](#windowsmobilecedevices) below. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 
 #### License Source Types
@@ -85,9 +87,11 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 #### BEFORE BEGINNING
 * **Confirm that the clock is set correctly on the device to ensure proper application of license(s)**. 
 * **Create license-key barcodes (if desired) using any barcode generator tool**. License-key barcodes ease the activation process; they are not provided by Zebra. Keys also can be typed in manually. 
-* **Ensure devices are connected as required**. 
+* **Ensure devices are connected to the required licensing server**. 
 <!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
  -->
+
+-----
 
 #####To activate a device license:  
 
@@ -121,16 +125,17 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 -----
 
 ### Windows Mobile/CE Devices
-Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. 
+Zebra provides the License Manager app as a download devices running Windows Mobile/CE apps to enable license activation on its devices running Windows Mobile/CE. 
 
 #### Requirements
-* **License Manager 1.0 (or later) on device**: 
- * included with the Microsoft Installer (MSI) file (when installing from Windows)
- * included as a `.CAB` file when installing from macOS
-* **StageNow for generating XML files** required for this process. StageNow is a free tool for Windows PCs [Download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html).
+* **License Manager 1.0 (or later) app on device** 
+* **[StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) for generating XML files** (free tool for Windows PCs)
 
-#### Example
-The following XML file selects the cloud-based Zebra Licensing Server as the license source.  
+-----
+
+#####To activate a license on a device running Windows Mobile/CE: 
+
+&#49;. Using StageNow and the License Manager CSP, **create a Profile that embeds the activation ID acquired from the License Server and export XML file**. The output will look similar to the example below:
 
     :::xml
     <wap-provisioningdoc>
@@ -149,11 +154,10 @@ The following XML file selects the cloud-based Zebra Licensing Server as the lic
       </characteristic>
       </characteristic>
     </wap-provisioningdoc>
+*The XML file above selects the cloud-based Zebra Licensing Server as the license source*.  
 
-#####To activate a license on a device running Windows Mobile/CE: 
-
-1. **Push the XML file** required for license activation to the device. 
-2. Locate and launch License Manager on the device. <br>
+&#50;. **Push the XML file** to the device. 
+&#51;. Locate and launch License Manager on the device. <br>
 Current licenses on the device (if any) are shown along with a series of buttons: 
 <img alt="" style="height:250px" src="wmce_license01.png"/>
 **Details -** displays information about selected license.<br>
@@ -162,15 +166,17 @@ Current licenses on the device (if any) are shown along with a series of buttons
 **Return -** relinquishes the selected license.<br> 
 **Add License -** begins the license activation process.<br>
 **Settings -** displays the License Manager Settings panel.<br>
-3. **Tap "Add License"** button. "About License Manager" screen appears.<br>
+<br>
+&#52;. **Tap "Add License"** button. "About License Manager" screen appears.<br>
 **Tap "License Source"** button.   
 <img alt="" style="height:250px" src="wmce_license02.png"/>
 <br>
-4. **Select "Production Cloud Direct"** from the server list. 
+&#53;. **Select "Production Cloud Direct"** from the server list. 
 <img alt="" style="height:250px" src="wmce_license03.png"/>
 **Details -** displays information about the selected licensing server.<br>
 **Delete -** removes a user-defined licensing server (none shown).<br> 
-5. **Using an EMM system, launch License Manager with command line arguments** similar to those shown below. This example was tested using SOTI Mobi control. 
+<br>
+&#54;. **Using an EMM system, launch License Manager with command line arguments** similar to those shown below. This example was tested using SOTI Mobi control. 
 
         :::xml
         // for XML file in root directory of device: 
@@ -178,8 +184,8 @@ Current licenses on the device (if any) are shown along with a series of buttons
 
         // for XML file in a specific License Manager folder on device:  
         start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
-
-6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
+<br>
+&#55;. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
 
 #### The Windows Mobile/CE device is now licensed to use the app.
 
@@ -217,7 +223,7 @@ License Manager provides a Local License Server option, enabling organizations t
 #### BEFORE BEGINNING
 * **Install and configure Local License Server**
 * **Acquire `.bin` file containing licenses (Activation IDs) from Zebra License Server**
-* 
+* **Ensure devices are connected to the local licensing server**. 
 
 #####To License from a Local Server: 
 
@@ -245,15 +251,13 @@ A screen appears as below.
 Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](https://techdocs.zebra.com/stagenow/latest/csp/license).
 
 ##### `IMPORTANT NOTES:`
-* **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
+* **The procedures described below include only those for deploying and activating licenses for Zebra apps and features on the device(s)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
 * **To set license keys to remain on the device following an Enterprise Reset**, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
-
 
 ### Prerequisites
 
 * Profiles for correctly configuring device clock and network settings
 * Software License key(s) (aka Activation IDs)
-* All necessary EB 2.x application (binary) files
 
 > **Zebra recommends testing any new Profile on a working device before general deployment**.
 
@@ -261,38 +265,36 @@ Mass-deployment of Enterprise Browser device licenses requires use of an Enterpr
 
 #####To create the licensing portion of a StageNow Profile:
 
-1. **Launch StageNow and select “Create new Profile"** from the left-hand pane. <br>
+&#49;. **Launch StageNow and select “Create new Profile"** from the left-hand pane. <br>
 The "Select a Wizard" dialog box appears.
-2. **Select MX version to match device**, click "Xpert Mode" and click the "Create" button.
-3. **Enter a Profile name and click "Start"** button.
-4. **Single-click LicenseMgr** (scroll down if necessary); then **click "Update"** button. 
-5. **Under "License action type:" select “Perform Zebra license action.”** Additional options appear: 
+&#50;. **Select MX version to match device**, click "Xpert Mode" and click the "Create" button.
+&#50;. **Enter a Profile name and click "Start"** button.
+&#50;. **Single-click LicenseMgr** (scroll down if necessary); then **click "Update"** button. 
+&#50;. **Under "License action type:" select “Perform Zebra license action.”** Additional options appear: 
 <img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
 _Click image to enlarge_.
 <br>
-6. **Set the parameters as required** to activate the license:<br>
- **a. For cloud-based licensing**: <br>
-  **Zebra recommends this option for the best device visibility from the licensing portal**:<br>
-  * **Zebra license action**: Activate AID -> select "Use one of the Zebra Licensing cloud options"<br>
-  * **Cloud Source**: "Use the Zebra licensing Production Cloud" <br>
-  * Enter the AID and quantity. **Select "Continue"**<br>
-
- **b. For local (on-premise) licensing**:<br>
-  **Best for fire-walled networks or those lacking internet access**:  
-  * **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
-  * **Enter the URL, friendly name, AID and quantity** 
-  * **Select Continue** <br>
-7. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
- **a. Download(†) and save key(s) as `.BIN` file(s) to** `/enterprise/usr` folder on the device<br>
- **b. <u>From a single Profile</u>**:<br>
-     * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device")<br>
-     * **Preserve settings using [Persist Manager](/mx/persistmgr)**<br>
-
-8. **Complete Profile creation and scan the staging barcode**
-9. **Confirm that the Profile successfully licensed the device**: <br>
- a. **Launch the License Manager app** on the device; activated license should be visible<br>
- b. **Alternatively, launch EB 2.0 on the device** and view licensing status on splash screen <br>
- c. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there<br>
+&#50;. **Set the parameters as required** to activate the license:<br>
+* **a. For cloud-based licensing**: <br>
+ * **Zebra recommends this option for the best device visibility from the licensing portal**:<br>
+ * **Zebra license action**: Activate AID -> select "Use one of the Zebra Licensing cloud options"<br>
+ * **Cloud Source**: "Use the Zebra licensing Production Cloud" <br>
+ * Enter the AID and quantity. **Select "Continue"**<br>
+* **b. For local (on-premise) licensing**:<br>
+ * **Best for fire-walled networks or those lacking internet access**:  
+ * **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
+ * **Enter the URL, friendly name, AID and quantity** 
+ * **Select Continue** <br>
+&#50;. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
+* **a. Download(†) and save key(s) as `.BIN` file(s) to** `/enterprise/usr` folder on the device<br>
+* **b. <u>From a single Profile</u>**:<br>
+ * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device")<br>
+ * **Preserve settings using [Persist Manager](/mx/persistmgr)**<br>
+&#50;. **Complete Profile creation and scan the staging barcode**
+&#50;. **Confirm that the Profile successfully licensed the device**: <br>
+ * a. **Launch the License Manager app** on the device; activated license should be visible<br>
+ * b. **Alternatively, launch EB 2.0 on the device** and view licensing status on splash screen <br>
+ * c. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there<br>
 
 **(†)** To download a License key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains a license for a specific device.
 

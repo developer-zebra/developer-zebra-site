@@ -17,7 +17,7 @@ menu:
 ## Overview 
 This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use, applying the license manually to individual devices and mass-deploying licenses using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
-> **Not yet ready to buy**? Try an [evaluation license](#evaluationlicense) first. 
+> **Not yet ready to buy**? [Request an evaluation license](#evaluationlicense). 
 
 -----
 

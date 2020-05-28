@@ -18,7 +18,7 @@ menu:
 
 Zebra uses Flexera. 
 
-<img alt="image" style="height:450px" src="mdna_matrix.png"/>
+<img alt="image" style="height:450px" src="mdna_pro_features.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 

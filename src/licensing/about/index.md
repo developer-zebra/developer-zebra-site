@@ -31,7 +31,7 @@ The table below shows features and software components included with Zebra Profe
 <table align-text="center" class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 -->
 
-<table class="facelift" style="width:100%" border="1" padding="5px">
+<table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>

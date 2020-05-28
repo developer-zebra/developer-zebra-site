@@ -44,40 +44,40 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td>Device Diagnostics</td>
+  <td><a href="/ddt">Device Diagnostics</a></td>
   <td>√</td>
   <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td>EMDK for Android<br> EMDK for Xamarin</td>
+  <td><a href="/emdk-for-android">EMDK for Android</a><br><a href="/emdk-for-xamarin">EMDK for Xamarin</a></td>
   <td>√</td>
   <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td>Enterprise Home Screen</td>
+  <td><a href="/ehs">Enterprise Home Screen</a></td>
   <td>√</td>
   <td>√</td>
   <td>N/A</td>  </tr>
 
   <tr>
-  <td>Mobility Extensions (MX)</td>
+  <td><a href="/mx">Mobility Extensions (MX)</a></td>
   <td>√</td>
   <td>√</td>
   <td>N/A</td>  </tr>
 
   <tr>
-  <td>StageNow</td>
+  <td><a href="/stagenow">StageNow</a></td>
   <td>√</td>
   <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td>Audio Volume UI Manager</td>
+  <td><a href="/mx/audiovoluimgr"></a>Audio Volume UI Manager</td>
   <td></td>
   <td>√</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>
@@ -91,24 +91,24 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td>Device Central</td>
+  <td><a href="/devicecentral">Device Central</a></td>
   <td></td>
   <td>√</td>
-  <td>Buy MDNA Enterprise license<br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
   </tr>
 
   <tr>
-  <td>Device Tracker</td>
+  <td><a href="/devicetracker">Device Tracker</a></td>
   <td></td>
   <td>√</td>
-  <td>Buy MDNA Enterprise license<br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
   </tr>
 
   <tr>
-  <td>Enterprise Keyboard 3.6+</td>
+  <td><a href="/ekb">Enterprise Keyboard 3.6+</a></td>
   <td></td>
   <td>√</td>
-  <td>Buy MDNA Enterprise license<br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
   </tr>
 
   <tr>
@@ -126,10 +126,10 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td>PowerPrecision Console</td>
+  <td><a href="/ppc">PowerPrecision Console</a></td>
   <td></td>
   <td>√</td>
-  <td>Buy MDNA Enterprise license<br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
   </tr>
 
   <tr>
@@ -147,7 +147,7 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td>Worry Free Wi-Fi<br>Analysis tools</td>
+  <td><a href="/mx/worryfreewifimgr">Worry Free Wi-Fi Analysis tools</a></td>
   <td></td>
   <td>√</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>

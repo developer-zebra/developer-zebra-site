@@ -17,6 +17,8 @@ menu:
 ## Overview 
 This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use, applying the license manually to individual devices and mass-deploying licenses using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
+> **Not yet ready to buy**? Try an [evaluation license](#evaluationlicense) first. 
+
 -----
 
 ### Requirements
@@ -35,13 +37,12 @@ License activation requires ***ALL THREE*** of the following:
 -----
 
 ## I. Contact a Reseller 
-Zebra licenses are obtained through Zebra resellers or in some cases directly from Zebra. This can be done in one of two ways: 
+Zebra licenses are obtained through Zebra resellers or in some cases directly from Zebra. **To begin, select an option**: 
 
 * **[Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <br>
-<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***OR***
 <br>
-* **Select one of the following Zebra resources**: 
+* **Choose one of the following Zebra resources**: 
  * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
  * **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
  * **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
@@ -125,7 +126,8 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller and a cu
 -----
 
 ### Windows Mobile/CE Devices
-Zebra provides the License Manager app as a download devices running Windows Mobile/CE apps to enable license activation on its devices running Windows Mobile/CE. 
+
+> **This section applies only to Enterprise Browser for Windows Mobile/CE**. Zebra packages the License Manager app for Windows Mobile/CE within the Enterprise Browser installer for Windows and as a `.CAB` file when installing from macOS.
 
 #### Requirements
 * **License Manager 1.0 (or later) app on device** 
@@ -222,7 +224,7 @@ License Manager provides a Local License Server option, enabling organizations t
 
 #### BEFORE BEGINNING
 * **Install and configure Local License Server**
-* **Acquire `.BIN` file containing licenses (Activation IDs) from Zebra License Server**
+* **Acquire a `.BIN` file containing licenses (Activation IDs) from Zebra License Server** for each 1000 devices to be licensed **`<< CONFIRMATION NEEDED on 1000-device max.`**
 * **Ensure devices are connected to the local licensing server**. 
 
 #####To License from a Local Server: 

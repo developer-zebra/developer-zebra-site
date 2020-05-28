@@ -16,11 +16,13 @@ menu:
 
 ## Overview
 
-Zebra uses Flexera. 
+**Zebra Professional series devices** provide partners with access to the core elements of Zebra's Mobility DNA software ecosystem of development and management tools for enterprise mobility deployments of all sizes. **Zebra Enterprise series devices** include Zebra’s Mobility DNA Enterprise catalogue of connectivity enhancements and tools, offering increased productivity, performance and security. Zebra allows partners the flexibility of selecting Enterprise-series device out of the gate, or upgrading from the Professional series as their organization grows. 
 
-<img alt="image" style="height:450px" src="mdna_matrix_2.png"/>
+<!-- <img alt="image" style="height:450px" src="mdna_matrix_2.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
+
+ -->
 
 -----
 
@@ -103,13 +105,14 @@ The table below shows features and software components included with Zebra Profe
   <td>√</td>
   <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download latest client app</a></td>
   </tr>
+
   <tr>
   <td><a href="/ekb">Enterprise Keyboard 3.6+</a></td>
   <td></td>
   <td>√</td>
   <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download latest client app</a></td>
   </tr>
-  
+
   <tr>
   <td>Over-the-air LifeGuard updates</td>
   <td></td>

@@ -35,8 +35,8 @@ The table below shows features and software components included with Zebra Profe
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
-    <th>Professional Series<br>TC21, TC25, TC22, TC26, etc.</th>
-    <th>Enterprise Series<br>TC51, TC56, TC52, TC57</th>
+    <th>Professional Series<br>TC21/TC25, TC22/TC26</th>
+    <th>Enterprise Series<br>TC51/TC56, TC52/TC57</th>
     <th>Actions(s) Required to Upgrade</th>
   </tr>
 
@@ -48,269 +48,114 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td>decoder_datamatrix</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>decoder_qrcode</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
+  <td>Device Diagnostics</td>
+  <td>√</td>
+  <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td rowspan="2">decoder_grid_matrix</td>
-  <td rowspan="2">true<br>false (default)</td>
-  <td>decoder_grid_matrix_inverse</td>
-  <td>Disabled (0) - default<br>Enabled (1)<br>Auto (2)</td>
-  </tr>
-
-  <tr>
-  <td>decoder_grid_matrix_mirror</td>
-  <td>Disabled (0) - default<br>Enabled (1)<br>Auto (2)</td>
-  </tr>
-
-  <tr>
-  <td>decoder_gs1_datamatrix</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
+  <td>EMDK for Android<br> EMDK for Xamarin</td>
+  <td>√</td>
+  <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td>decoder_gs1_qrcode</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
+  <td>Enterprise Home Screen</td>
+  <td>√</td>
+  <td>√</td>
+  <td>N/A</td>  </tr>
+
+  <tr>
+  <td>Mobility Extensions (MX)</td>
+  <td>√</td>
+  <td>√</td>
+  <td>N/A</td>  </tr>
+
+  <tr>
+  <td>StageNow</td>
+  <td>√</td>
+  <td>√</td>
   <td>N/A</td>
   </tr>
 
   <tr>
-  <td>decoder_pdf417</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Audio Volume UI Manager</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_pdf417</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Bluetooth Manager<br>advanced features</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_composite_ab</td>
-  <td>true<br>false</td>
-  <td>decoder_composite_ab_ucc_link_mode</td>
-  <td>0 - Link Flag Ignored<br>1 - Always Linked<br>2 - Auto Discriminate</td>
+  <td>Device Central</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license<br>Download latest app</td>
   </tr>
 
   <tr>
-  <td>decoder_composite_c</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Device Tracker</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license<br>Download latest app</td>
   </tr>
 
   <tr>
-  <td>decoder_microqr</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Enterprise Keyboard 3.6+</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license<br>Download latest app</td>
   </tr>
 
   <tr>
-  <td>decoder_aztec</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Over-the-air LifeGuard updates</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_maxicode</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Multi-barcode scanning</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_micropdf</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>PowerPrecision Console</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license<br>Download latest app</td>
   </tr>
 
   <tr>
-  <td>decoder_micr_e13b</td>
-  <td>true<br>false (default)</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Wi-Fi Fusion<br>Advanced features</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_us_currency</td>
-  <td>true<br>false (default)</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Wi-Fi Locationing</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
 
   <tr>
-  <td>decoder_uspostnet</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
+  <td>Worry Free Wi-Fi<br>Analysis tools</td>
+  <td></td>
+  <td>√</td>
+  <td>Buy MDNA Enterprise license</td>
   </tr>
-
-  <tr>
-  <td>decoder_usplanet</td>
-  <td>true<br>false</td>
-  <td>decoder_usplanet_report_check_digit</td>
-  <td>true<br>false</td>
-  </tr>
-
-  <tr>
-  <td>decoder_uk_postal</td>
-  <td>true<br>false</td>
-  <td>decoder_uk_postal_report_check_digit</td>
-  <td>true<br>false</td>
-  </tr>
-
-  <tr>
-  <td>decoder_japanese_postal</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>decoder_canadian_postal</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>decoder_dutch_postal</td>
-  <td>true<br>false</td>
-  <td>decoder_dutch_postal_3S</td>
-  <td>true<br>false (default)</td>
-  </tr>
-
-  <tr>
-  <td>decoder_finnish_postal_4s</td>
-  <td>true<br>false (default)</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>decoder_gs1_lim_security_level</td>
-  <td>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3<br>4 - Security Level 4</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>decoder_ocr_a</td>
-  <td>true<br>false (default)</td>
-  <td>ocr_a_variant</td>
-  <td>FULL_ASCII (0) (default)<br>RESERVED_1 (1)<br>RESERVED_2 (2)<br>BANKING(3)</td>
-  </tr>
-
-  <tr>
-  <td>decoder_ocr_b</td>
-  <td>true<br>false (default)</td>
-  <td>ocr_b_variant</td>
-  <td>FULL_ASCII(0)(default)<br>BANKING(1)<br>LIMITED(2)<br>ISBN_1(6)<br>ISBN_2(7)<br>TRAVEL_DOCUMENT_1(3)<br>TRAVEL_DOCUMENT_2(8)<br>TRAVEL_DOCUMENT_3(20)<br>PASSPORT(4)<br>VISA_TYPE_A(9)<br>VISA_TYPE_B(10)<br>ICAO_TRAVEL_DOCUMENT(11)</td>
-  </tr>
-
-  <tr>
-  <td>Upcean_security_level</td>
-  <td>0 - Level 0<br>1 - Level 1<br>2 - Level 2<br>3 - Level 3</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_supplemental2</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_supplemental5</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_supplemental_mode</td>
-  <td>0 - No Supplementals<br>1 - Supplemental Always<br>2 - Supplemental Auto<br>3 - Supplemental Smart<br>4 - Supplemental 378-379<br>5 - Supplemental 978-979<br>6 - Supplemental 414-419-434-439<br>7 - Supplemental 977</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_retry_count</td>
-  <td>Integer from 2 to 20</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_random_weight_check_digit</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_linear_decode</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_bookland</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_coupon</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_coupon_report</td>
-  <td>0 - Old Coupon Report Mode<br>1 - New Coupon Report Mode<br>2 - Both Coupon Report Modes</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_ean_zero_extend</td>
-  <td>true<br>false</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
-  <tr>
-  <td>upcean_bookland_format</td>
-  <td>0 - Format ISBN-10<br>1 - Format ISBN-13</td>
-  <td>N/A</td>
-  <td>N/A</td>
-  </tr>
-
 </table>
 <!-- 
 <br>

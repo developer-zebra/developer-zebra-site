@@ -1470,8 +1470,8 @@ display:none
 
 
 .faceliftCenter td, .faceliftCenter th {
-  padding: 5px
+  padding: 5px; text-align: center;
 }
  .faceliftCenter tr:nth-child(even) {
-  background-color: #f2f2f2; text-align: center;
+  background-color: #f2f2f2; 
 }

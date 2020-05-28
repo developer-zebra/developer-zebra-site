@@ -311,6 +311,12 @@ Also see [related guides](#relatedguides).
 
 -----
 
+## Evaluation License
+Zebra offers time-limited licenses to allow companies to evaluate how Zebra solutions perform in their environment. 
+
+
+-----
+
 ## License Transfer
 Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is done by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 

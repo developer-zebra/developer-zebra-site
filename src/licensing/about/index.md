@@ -22,9 +22,17 @@ Zebra uses Flexera.
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-## MDNA Professional and Enterprise 
+-----
+
+## MDNA Professional and MDNA Enterprise 
+The table below shows features and software components included with Zebra Professional series and Enterprise series devices and the actions required to acquire and apply a Mobility DNA license.  
+
+<!-- 
+<table align-text="center" class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
+-->
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
+<tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
     <th>Professional Series<br>TC21, TC25, TC22, TC26, etc.</th>
@@ -36,7 +44,7 @@ _Click image to enlarge; ESC to exit_.
   <td>DataWedge</td>
   <td>√</td>
   <td>√</td>
-  <td>None, included</td>
+  <td>N/A</td>
   </tr>
 
   <tr>
@@ -304,7 +312,7 @@ _Click image to enlarge; ESC to exit_.
   </tr>
 
 </table>
-
+<!-- 
 <br>
 ###OCR Parameters
 For more information, see [Barcode Input](../../input/barcode#ocrparams).
@@ -579,8 +587,12 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 
   <tr>
   <td>charset_name</td>
-  <!-- <td>ISO-8859-1 - ISO-8859-1<br>Shift_JIS - Shift_JIS<br>UTF-8 - UTF-8</td> //original -->
-  <td>AUTO<br>UTF-8<br>ISO-8859-1<br>Shift_JIS<br>GB18030</td>
+  
+<td>ISO-8859-1 - ISO-8859-1<br>Shift_JIS - Shift_JIS<br>UTF-8 - UTF-8</td> 
+//original 
+-->
+  
+  <!-- <td>AUTO<br>UTF-8<br>ISO-8859-1<br>Shift_JIS<br>GB18030</td>
   </tr>
 
   <tr>
@@ -693,8 +705,8 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
   <td>Optimize DPM barcode decoding performance based on the barcode size. Default value is 2. Values:<br><br>0 – Disabled<br>1 – Mode 1<br>2 – Mode 2<br><br><a href="../../input/barcode#readerparams">More info</a></td>
   </tr>
 
-</table>
-
+</table> 
+ -->
 -----
 
 ### [AudioVolUIMgr](/mx/audiovoluimgr) 

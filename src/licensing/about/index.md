@@ -101,16 +101,15 @@ The table below shows features and software components included with Zebra Profe
   <td><a href="/devicetracker">Device Tracker</a></td>
   <td></td>
   <td>√</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download latest client app</a></td>
   </tr>
-
   <tr>
   <td><a href="/ekb">Enterprise Keyboard 3.6+</a></td>
   <td></td>
   <td>√</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download latest client app</a></td>
   </tr>
-
+  
   <tr>
   <td>Over-the-air LifeGuard updates</td>
   <td></td>
@@ -129,7 +128,7 @@ The table below shows features and software components included with Zebra Profe
   <td><a href="/ppc">PowerPrecision Console</a></td>
   <td></td>
   <td>√</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Download latest client app</a></td>
   </tr>
 
   <tr>
@@ -147,7 +146,7 @@ The table below shows features and software components included with Zebra Profe
   </tr>
 
   <tr>
-  <td><a href="/mx/worryfreewifimgr">Worry Free Wi-Fi Analysis tools</a></td>
+  <td><a href="/mx/worryfreewifimgr">Worry Free Wi-Fi</a></td>
   <td></td>
   <td>√</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>

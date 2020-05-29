@@ -135,11 +135,13 @@ _Scanner configuration_
 
 ## NextGen SimulScan Configuration
 
-**NextGen (NG) Simulscan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
-* Multibarcode
-* Anchor barcode document capture (only available on select devices)
+**NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
+* **Multibarcode -** supported since DataWedge 8.0
+* **Document capture -** supported since DataWedge 8.0, only available on select devices and scanners
+* **Signature capture -** supported since DataWedge 7.3
+* **OCR A/B -** supported since DataWedge 7.5
 <br>
-<p>For Zebra Professional-tier devices, this feature requires a Mobility DNA Enterprise license. The following message is displayed when attempting to access this feature on a Zebra Professional-tier device without a valid license:</p>
+<p>For Zebra Professional-series devices, NextGen SimulScan requires a Mobility DNA Enterprise license. See <a href="/licensing/about">Zebra Licensing</a> for more information. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
 _License required on Zebra Professional-tier devices_
 
@@ -179,7 +181,9 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#
 
 ### Document Capture Template
 
-**Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Tap on this option then select a template for the document being captured. It is mandatory to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+**Document Capture** requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. **Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
+
+To configure, in the **NG SimulScan configuration** screen tap on **Document Capture Template** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 
 <img style="height:350px" src="document_capture_ngss.png"/>
 _SimulScan - Document Capture_
@@ -898,7 +902,7 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ### Decoder Signature
 
-Decoder Signature is a special barcode format that allows to capture an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example:
+Decoder Signature, also known as Signature Capture, is a special barcode format that allows to capture an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example:
 
 <img src="DecoderSignature-sample.jpg"/>
 <br>

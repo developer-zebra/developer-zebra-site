@@ -36,7 +36,7 @@ Specifies the full path and file name to import the configuration file (`datawed
 * Profile naming convention: `dwprofile_<profilename>.db`<br>
 
 ## Import NextGen SimulScan Templates
-Import customized NextGen SimulScan Templates for document capture. This populates the selection for the [Document Capture Template](../input/barcode/#documentcapturetemplate) for SimulScan scanning. Refer to [SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
+Import customized NextGen SimulScan Templates for document capture. This populates the selection for the [Document Capture Template](../input/barcode/#documentcapturetemplate) under the SimulScan scanning. Contact Zebra Support for assistance in creating the template. Refer to [SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
 <br>
 See [Mass Deployment](../settings#massdeployment) for more information.

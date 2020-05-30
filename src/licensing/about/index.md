@@ -27,14 +27,14 @@ _Click image to enlarge; ESC to exit_.
 -----
 
 ## MDNA Professional and MDNA Enterprise 
-The table below shows features and software components included with Zebra Professional series and Enterprise series devices and the actions required to add a product or feature to Professional devices.  
+Features and components included with Zebra Professional and Enterprise devices and the actions required to add a product or feature to a Professional device. 
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
-    <th>Professional Series<br>TC21/TC25, TC22/TC26</th>
-    <th>Enterprise Series<br>TC51/TC56, TC52/TC57, etc.</th>
+    <th>Professional Series</th>
+    <th>Enterprise Series</th>
     <th>Action(s) to add product/feature<br> to a Professional device</th>
   </tr>
 
@@ -176,7 +176,7 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability on
 **EMDK for Xamarin is an IDE extension** that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices using C# skills and tools. EMDK for Xamarin includes class libraries, sample applications and source code, and all associated documentation for building applications that take full advantage of the power of Zebra devices. **Also included is Profile Manager**, a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time. [Learn more](/emdk-for-xamarin). 
 
 ### Enterprise Home Screen
-**Enterprise Home Screen is a free replacement launcher for Zebra devices running Android** that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. [Learn more](/ehs).
+**Enterprise Home Screen is a free replacement launcher for Zebra devices running Android** that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed using an EMM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if desired. [Learn more](/ehs).
 
 ### StageNow
 **StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more](/stagenow).  
@@ -225,7 +225,7 @@ It allows analysis of issues in real-time background mode while the device is us
 
 [Learn more](/mx/audiovoluimgr)
 
-### [BluetoothMgr](/mx/bluetoothmgr)
+### BluetoothMgr
 * AllowDiscoverability
 * AllowPairing
 * AllowSilentPairing

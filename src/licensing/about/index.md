@@ -16,7 +16,9 @@ menu:
 
 ## Overview
 
-**Zebra Professional-series devices** provide partners with access to the core elements of Zebra's Mobility DNA software ecosystem of development and management tools for enterprise mobility deployments of all sizes. **Zebra Enterprise-series devices** include Zebra’s Mobility DNA Enterprise catalog of connectivity enhancements and tools, offering increased productivity, performance and security. Zebra allows partners the flexibility of selecting Enterprise-series device out of the gate, or upgrading from the Professional series as their organization grows. 
+**Zebra Professional-series devices provide the core elements** of Zebra's [Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) software of development and management tools for enterprise mobility deployments of all sizes. 
+
+**Zebra Enterprise-series devices include the full suite** of the MDNA catalog of connectivity enhancements and tools for increased levels of productivity, performance and security. Zebra allows partners the flexibility of selecting Enterprise-series devices out of the gate, or upgrading from the Professional series as their organization grows. 
 
 <!-- <img alt="image" style="height:450px" src="mdna_matrix_2.png"/>
 _Click image to enlarge; ESC to exit_. 

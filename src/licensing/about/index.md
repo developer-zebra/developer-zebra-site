@@ -35,7 +35,7 @@ The table below shows features and software components included with Zebra Profe
     <th>Product/Feature</th>
     <th>Professional Series<br>TC21/TC25, TC22/TC26</th>
     <th>Enterprise Series<br>TC51/TC56, TC52/TC57, etc.</th>
-    <th>Action to add product/feature to a Professional device</th>
+    <th>Action(s) to add product/feature<br> to a Professional device</th>
   </tr>
 
   <tr>
@@ -179,7 +179,7 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability on
 **Enterprise Home Screen is a free replacement launcher for Zebra devices running Android** that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. [Learn more](/ehs).
 
 ### StageNow
-**StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more](/stagenow).  
+**StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more](/stagenow).  
 
 ### Device Central
 **Device Central provides a centralized method for an organization to connect and monitor supported Bluetooth peripherals**. Using a simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities can include paging peripherals and updating firmware. Device Central is preinstalled on all supported Zebra devices. [Learn more](/devicecentral).
@@ -191,13 +191,13 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability on
 **Enterprise Keyboard (EKB) is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices**. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. [Learn more](enterprise-keyboard).
 
 ### Over-the-air LifeGuard updates 
-#### `DESCRIPTION NEEDED`
+#### `DESCRIPTION and WEB LINK NEEDED`
 
 ### Power Precision Console
 **PowerPrecision Console (PPC) is a battery management solution** that provides organizations using Zebra mobile computing devices with a centralized view of the health, state-of-charge and performance data of device batteries within an organization. Using data gathered and stored in Zebra's PowerPrecision batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times. [Learn more](/ppc).
 
 ### Wi-Fi Locationing
-#### `DESCRIPTION NEEDED`
+#### `DESCRIPTION and WEB LINK NEEDED`
 
 ### WorryFree Wi-Fi Analyzer
 WorryFree Wi-Fi Analyzer is a real-time Wi-Fi analysis and troubleshooting tool designed to example and help resolve Wi-Fi issues from a mobile device. It packages multiple troubleshooting capabilities:
@@ -210,7 +210,7 @@ Voice analysis and data log, including packet captures
 It allows analysis of issues in real-time background mode while the device is used for regular productivity purposes.
 
 #### Learn more:
-[Zebra Support page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html) | Device support, administrator guides
+[Zebra Support page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html) | Supported devices, administrator guides
 [Mobility Extensions (MX) page](/mx/worryfreewifimgr) | Remote management, feature control through StageNow
 
 -----
@@ -220,17 +220,17 @@ It allows analysis of issues in real-time background mode while the device is us
 
 ## Mobility Extension (MX) CSPs
 
-### [AudioVolUIMgr](/mx/audiovoluimgr)
-(click title above for full CSP details)
+### AudioVolUIMgr
 * All Zebra Volume Control parameters
+[Learn more](/mx/audiovoluimgr)
 
 ### [BluetoothMgr](/mx/bluetoothmgr)
-(click title above for full CSP details)
 
 * AllowDiscoverability
 * AllowPairing
 * AllowSilentPairing
 * SilentPairingAction
+* [Learn more](/mx/bluetoothmgr)
 
 ### [Wi-Fi](/mx/wifi) 
 (click title above for full CSP details)

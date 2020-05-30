@@ -210,8 +210,8 @@ Voice analysis and data log, including packet captures
 It allows analysis of issues in real-time background mode while the device is used for regular productivity purposes.
 
 #### Learn more:
-[Zebra Support page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html) | Supported devices, administrator guides
-[Mobility Extensions (MX) page](/mx/worryfreewifimgr) | Remote management, feature control through StageNow
+* [Zebra Support page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html) | Supported devices, administrator guides
+* [Mobility Extensions (MX) page](/mx/worryfreewifimgr) | Remote management, feature control through StageNow
 
 -----
 
@@ -222,19 +222,18 @@ It allows analysis of issues in real-time background mode while the device is us
 
 ### AudioVolUIMgr
 * All Zebra Volume Control parameters
+
 [Learn more](/mx/audiovoluimgr)
 
 ### [BluetoothMgr](/mx/bluetoothmgr)
-
 * AllowDiscoverability
 * AllowPairing
 * AllowSilentPairing
 * SilentPairingAction
-* [Learn more](/mx/bluetoothmgr)
 
-### [Wi-Fi](/mx/wifi) 
-(click title above for full CSP details)
+[Learn more](/mx/bluetoothmgr)
 
+### Wi-Fi 
 * 2.4GHzChannels
 * 5.0GHzChannels
 * 802.11v
@@ -258,9 +257,7 @@ It allows analysis of issues in real-time background mode while the device is us
 * UseHotspotOptions
 * WMM-PS (PowerSave Option 4)
 
-* All parameters
-
-
+[Learn more](/mx/wifi)
 
 
 <!-- 

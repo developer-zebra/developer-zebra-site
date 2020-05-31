@@ -232,7 +232,7 @@ The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can 
 [Learn more](/mx/audiovoluimgr)
 
 ### BluetoothMgr
-Bluetooth Manager controls whether a device can pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device can be "discoverable," which would enable other Bluetooth devices to initiate pairing requests with it.
+Bluetooth Manager controls the ability of a device to pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
 
 **Licensed parameters**: 
 * AllowDiscoverability

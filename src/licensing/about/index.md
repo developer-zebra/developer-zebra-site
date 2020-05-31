@@ -28,8 +28,8 @@ _Click image to enlarge; ESC to exit_.
 
 -----
 
-## MDNA Professional and MDNA Enterprise 
-Features and components included with Zebra Professional and Enterprise devices and the actions required to add a product or feature to a Professional device. 
+## MDNA Components and Features  
+The software and capabilities included with Zebra Professional and Enterprise devices and the actions required to add a product or feature to a Professional device. 
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
@@ -81,7 +81,7 @@ Features and components included with Zebra Professional and Enterprise devices 
   </tr>
 
   <tr>
-  <td><a href="/mx/audiovoluimgr"></a>Audio Volume UI Manager</td>
+  <td><a href="#audiovoluimgr"></a>Audio Volume UI Manager</td>
   <td></td>
   <td>&#10004;</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>
@@ -220,14 +220,21 @@ It allows analysis of issues in real-time background mode while the device is us
 <a name="advanced_features"></a>
 <br>
 
-## Mobility Extension (MX) CSPs
+## Licensed Mobility Extensions
+The term Mobility Extensions (MX) generally refers to the MX Management System (MXMS), a proprietary XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. MX is included on all Zebra devices running Android. Its functions are implemented as Configuration Service Providers (CSPs), each of which controls settings within an individual Android subsystem. The CSPs subject to licensing are shown below along with their restricted parameters, when applicable. 
 
 ### AudioVolUIMgr
-* All Zebra Volume Control parameters
+The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
+
+**Licensed parameters**: 
+* All parameters
 
 [Learn more](/mx/audiovoluimgr)
 
 ### BluetoothMgr
+Bluetooth Manager controls whether a device can pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device can be "discoverable," which would enable other Bluetooth devices to initiate pairing requests with it.
+
+**Licensed parameters**: 
 * AllowDiscoverability
 * AllowPairing
 * AllowSilentPairing
@@ -236,6 +243,9 @@ It allows analysis of issues in real-time background mode while the device is us
 [Learn more](/mx/bluetoothmgr)
 
 ### Wi-Fi 
+Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
+
+**Licensed parameters**: 
 * 2.4GHzChannels
 * 5.0GHzChannels
 * 802.11v

@@ -31,7 +31,9 @@ _Click image to enlarge; ESC to exit_.
 -----
 
 ## MDNA Components and Features  
-Here's what comes with Zebra Professional and Enterprise devices and the actions required to enhance a Professional device. **NOTE**: Purchasing ***one*** MDNA license delivers ***all*** MDNA features.   
+Here's what comes with Zebra Professional and Enterprise devices and the actions required to enhance a Professional device. 
+
+**NOTE: Purchasing *one* MDNA license delivers *all* MDNA features**.   
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>

@@ -81,7 +81,7 @@ The software and capabilities included with Zebra Professional and Enterprise de
   </tr>
 
   <tr>
-  <td><a href="#audiovoluimgr"></a>Audio Volume UI Manager</td>
+  <td><a href="#audiovoluimgr">Audio Volume UI Manager</a></td>
   <td></td>
   <td>&#10004;</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>
@@ -116,7 +116,7 @@ The software and capabilities included with Zebra Professional and Enterprise de
   </tr>
 
   <tr>
-  <td>Over-the-air LifeGuard updates</td>
+  <td>LifeGuard Over-the-air updates</td>
   <td></td>
   <td>&#10004;</td>
   <td><a href="../process">Buy MDNA Enterprise license</a></td>
@@ -192,7 +192,7 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability on
 ### Enterprise Keyboard
 **Enterprise Keyboard (EKB) is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices**. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. [Learn more](enterprise-keyboard).
 
-### Over-the-air LifeGuard updates 
+### LifeGuard Over-the-air updates 
 #### `DESCRIPTION and WEB LINK NEEDED`
 
 ### Power Precision Console

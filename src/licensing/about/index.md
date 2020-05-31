@@ -1,5 +1,5 @@
 ---
-title: About Zebra Licensing
+title: About Zebra MDNA Licensing
 layout: guide.html
 product: Zebra Licensing
 menu:
@@ -16,9 +16,11 @@ menu:
 
 ## Overview
 
-**Zebra Professional-series devices provide the core elements** of Zebra's [Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) software of development and management tools for enterprise mobility deployments of all sizes. 
+**Zebra's [Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** is a set of productivity, performance and security tools and features that enhance Zebra devices running Android. 
 
-**Zebra Enterprise-series devices include the full suite** of the MDNA catalog of connectivity enhancements and tools for increased levels of productivity, performance and security. Zebra allows partners the flexibility of selecting Enterprise-series devices out of the gate, or upgrading from the Professional series as their organization grows. 
+**Zebra Professional-series devices provide the core elements of MDNA**, equipping devices with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
+
+**Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security. With its two-tiered system, Zebra gives partners the flexibility of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows. 
 
 <!-- <img alt="image" style="height:450px" src="mdna_matrix_2.png"/>
 _Click image to enlarge; ESC to exit_. 
@@ -29,7 +31,7 @@ _Click image to enlarge; ESC to exit_.
 -----
 
 ## MDNA Components and Features  
-The software and capabilities included with Zebra Professional and Enterprise devices and the actions required to add a product or feature to a Professional device. 
+Here's what comes with Zebra Professional and Enterprise devices and the actions required to enhance a Professional device. **NOTE**: Purchasing ***one*** MDNA license delivers ***all*** MDNA features.   
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
@@ -84,86 +86,88 @@ The software and capabilities included with Zebra Professional and Enterprise de
   <td><a href="#audiovoluimgr">Audio Volume UI Manager</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td><a href="#advanced_features">Bluetooth Manager advanced features</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td><a href="#devicecentral">Device Central</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br>Download latest client app</td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a><br>Download latest client app</td>
   </tr>
 
   <tr>
   <td><a href="#devicetracker">Device Tracker</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download latest client app</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download latest client app</a></td>
   </tr>
 
   <tr>
   <td><a href="#enterprisekeyboard">Enterprise Keyboard 3.6+</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download latest client app</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download latest client app</a></td>
   </tr>
 
   <tr>
   <td>LifeGuard Over-the-air updates</td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td><a href="#datawedge">Multi-barcode scanning</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td><a href="#powerprecisionconsole">PowerPrecision Console</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Download latest client app</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Download latest client app</a></td>
   </tr>
 
   <tr>
   <td><a href="#advanced_features">Wi-Fi Fusion advanced features</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td>Wi-Fi Locationing</td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 
   <tr>
   <td><a href="#worryfreewifianalyzer">WorryFree Wi-Fi Analyzer</a></td>
   <td></td>
   <td>&#10004;</td>
-  <td><a href="../process">Buy MDNA Enterprise license</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   </tr>
 </table>
+
+&#42;*Purchasing <u>one MDNA device license delivers all MDNA features</u> to that device*.
 
 -----
 
 ## Software Components
 
 ### DataWedge
-DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) and manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app. [Learn more](/datawedge).
+DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) ***without coding***, and to manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app. [Learn more](/datawedge).
 
 #### Multi-barcode scanning
 **Multi-barcode options** currently available for licensing include [Number of barcodes per scan](https://techdocs.zebra.com//datawedge/latest/guide/input/barcode#basicmultibarcodeparams) which allows setting a fixed quantity of barcodes to scan; [Instant Reporting](https://techdocs.zebra.com//datawedge/latest/guide/input/barcode#basicmultibarcodeparams), which instantaneously reports unique barcodes within a scanning session; and [Report decoded barcodes](http://techdocs.zebra.com/datawedge/latest/guide/input/barcode#basicmultibarcodeparams) for reporting decoded barcodes in a single scan session. Multi-barcode features are enabled through the **Scanning Modes** option in [NextGen SimulScan configuration](http://techdocs.zebra.com/datawedge/latest/guide/input/barcode#scanningmodes).
@@ -227,9 +231,7 @@ The term Mobility Extensions (MX) generally refers to the MX Management System (
 The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
 
 **Licensed parameters**: 
-* All parameters
-
-[Learn more](/mx/audiovoluimgr)
+* All parameters<br>[Learn more](/mx/audiovoluimgr)
 
 ### BluetoothMgr
 Bluetooth Manager controls the ability of a device to pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
@@ -243,7 +245,7 @@ Bluetooth Manager controls the ability of a device to pair with other Bluetooth 
 [Learn more](/mx/bluetoothmgr)
 
 ### Wi-Fi 
-Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
+Wi-Fi Manager administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
 
 **Licensed parameters**: 
 * 2.4GHzChannels

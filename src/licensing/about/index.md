@@ -222,7 +222,6 @@ WorryFree Wi-Fi Analyzer is a Wi-Fi analysis and troubleshooting tool designed t
 [Learn more about WFW Analyzer](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html). 
 
 -----
-
 <a name="advanced_features"></a>
 <br>
 
@@ -235,7 +234,9 @@ The term Mobility Extensions (MX) generally refers to the MX Management System (
 The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
 
 **Licensed parameters**: 
-* All parameters<br>Learn more [about Audio Volume UI Manager](/mx/audiovoluimgr)
+* All parameters<br>
+
+[Learn more about Audio Volume UI Manager](/mx/audiovoluimgr)
 
 ### BluetoothMgr
 Bluetooth Manager controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. It also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
@@ -246,7 +247,7 @@ Bluetooth Manager controls the ability of a device to pair with headsets, printe
 * AllowSilentPairing
 * SilentPairingAction
 
-Learn more [about Bluetooth Manager](/mx/bluetoothmgr)
+[Learn more about Bluetooth Manager](/mx/bluetoothmgr)
 
 ### Wi-Fi
 Wi-Fi Manager administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
@@ -275,7 +276,7 @@ Wi-Fi Manager administers the wireless LAN settings and network profiles for a d
 * UseHotspotOptions
 * WMM-PS (PowerSave Option 4)
 
-Learn more [about Zebra Wi-Fi](/mx/wifi)
+[Learn more about Zebra Wi-Fi](/mx/wifi)
 
 -----
 

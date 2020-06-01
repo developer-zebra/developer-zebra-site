@@ -300,6 +300,14 @@ Wi-Fi Manager administers the wireless LAN settings and network profiles for a d
 
 [Learn more](/mx/wifi)
 
+-----
+
+## Also See
+
+* **[Frequently Asked Questions](../faq)** | Common licensing issues and how to resolve them 
+* **[Zebra StageNow](/stagenow)** | A free Windows app for remote-device staging, licensing and mass deployment 
+* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional user manuals, how-to videos and relevant links
+
 
 <!-- 
 FROM HERBERT EMAIL:

@@ -53,3 +53,9 @@ _Click image to enlarge; ESC to exit_.
 <br>
 
 -----
+
+## Also See
+
+* **[About Zebra Licensing](../faq)** | General overview of licensing and features covered 
+* **[Zebra StageNow](/stagenow)** | A free Windows app for remote-device staging, licensing and mass deployment 
+* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional user manuals, how-to videos and relevant links

@@ -238,14 +238,15 @@ License Manager activities are captured by [Zebra RXLogger](/rxlogger) and Andro
 
 -----
 
-## Related Guides
+## Also See
 
-* **[Frequently Asked Questions](../faq)** | Common issues and how to resolve them 
+* **[Frequently Asked Questions](../faq)** | Common licensing issues and how to resolve them 
 * **[Zebra StageNow](/stagenow)** | A free Windows app for remote-device staging, licensing and mass deployment 
-* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Guide to a free Android app for manually licensing devices
 * **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional user manuals, how-to videos and relevant links
-* **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html)** | Additional licensing info and sample screens
 
+<!-- 6/1/20- is this relevant anymore? 
+* **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html)** | Additional licensing info and sample screens
+ -->
 -----
 
 <!-- 

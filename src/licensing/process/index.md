@@ -220,14 +220,11 @@ Also see [related guides](#relatedguides).
 Zebra offers time-limited trial licenses to allow companies to evaluate the performance of Zebra solutions in their environment. 
 
 
-* **Customers, partners, and distributors**: 
- * Request an evaluation/trial license through your Zebra account manager
+**Customers, partners and distributors** Request trial licenses through a Zebra account manager
 
-* **Zebra account managers and sales engineers**:  
- * Submit requests using [SFDC forms](https://zebra.lightning.force.com/lightning/page/home)
+**Zebra account managers and sales engineers**: Submit requests using [SFDC forms](https://zebra.lightning.force.com/lightning/page/home)
 
-* **Zebra engineers and other Zebra employees and contractors**: 
- * Submit a request in the Zebra [ServiceNOW](https://zebra.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=a6a5c8a60f322700df9ce64be1050e35) portal
+**Zebra engineers and other Zebra employees and contractors**: Submit a request in the Zebra [ServiceNOW](https://zebra.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=a6a5c8a60f322700df9ce64be1050e35) portal
 
 -----
 

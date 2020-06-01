@@ -26,11 +26,11 @@ License activation requires ***ALL THREE*** of the following:
 
 1. **One or more license keys** (aka Activation IDs) purchased for the target device(s) and/or app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
- &nbsp;&nbsp;&nbsp;**Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
- &nbsp;&nbsp;&nbsp;**Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
+ &nbsp;&nbsp;&nbsp;&#10687; **Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
+ &nbsp;&nbsp;&nbsp;&#10687; **Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
 3. **Devices must be connected to one of the following**:<br> 
- &nbsp;&nbsp;&nbsp;**Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
- &nbsp;&nbsp;&nbsp;**A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
+ &nbsp;&nbsp;&nbsp;&#10687; **Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
+ &nbsp;&nbsp;&nbsp;&#10687; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
 
 -----
 
@@ -217,9 +217,17 @@ Also see [related guides](#relatedguides).
 -----
 
 ## Evaluation License
-Zebra offers time-limited licenses to allow companies to evaluate how Zebra solutions perform in their environment. 
+Zebra offers time-limited trial licenses to allow companies to evaluate the performance of Zebra solutions in their environment. 
 
-> **`Instructions to come`**. 
+
+* **Customers, partners, and distributors**: 
+ * Request an evaluation/trial license through your Zebra account manager
+
+* **Zebra account managers and sales engineers**:  
+ * Submit requests using [SFDC forms](https://zebra.lightning.force.com/lightning/page/home)
+
+* **Zebra engineers and other Zebra employees and contractors**: 
+ * Submit a request in the Zebra [ServiceNOW](https://zebra.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=a6a5c8a60f322700df9ce64be1050e35) portal
 
 -----
 

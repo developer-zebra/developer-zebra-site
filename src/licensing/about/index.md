@@ -252,7 +252,7 @@ WorryFree Wi-Fi Analyzer is a Wi-Fi analysis and troubleshooting tool designed t
 <br>
 
 ## Licensed Mobility Extensions
-The term Mobility Extensions (MX) generally refers to the MX Management System (MXMS), a proprietary XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. MX is included on all Zebra devices running Android. Its functions are implemented as Configuration Service Providers (CSPs), each of which controls settings within an individual Android subsystem. The CSPs subject to licensing are shown below along with their restricted parameters, when applicable. 
+The term Mobility Extensions (MX) generally refers to the MX Management System (MXMS), Zebra's proprietary XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. MX is included on all Zebra devices running Android. Its functions are implemented as Configuration Service Providers (CSP) apps that control settings within an individual Android subsystem. The CSPs subject to licensing are shown below along with their restricted parameters, when applicable. 
 
 ### AudioVolUIMgr
 The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
@@ -261,7 +261,7 @@ The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can 
 * All parameters<br>[Learn more](/mx/audiovoluimgr)
 
 ### BluetoothMgr
-Bluetooth Manager controls the ability of a device to pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
+Bluetooth Manager controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. It also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
 
 **Licensed parameters**: 
 * AllowDiscoverability

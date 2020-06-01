@@ -111,7 +111,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td>N/A</td>  </tr>
 
   <tr>
-  <td>LifeGuard Over-the-air updates</td>
+  <td><a href="#lifeguardovertheairupdates">LifeGuard Over-the-air updates</a></td>
   <td></td>
   <td>&#10004;</td>
   <td><a href="../process">MDNA Enterprise license*</a></td>
@@ -146,13 +146,6 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td>Wi-Fi Locationing</td>
-  <td></td>
-  <td>&#10004;</td>
-  <td><a href="../process">MDNA Enterprise license*</a></td>
-  </tr>
-
-  <tr>
   <td><a href="#worryfreewifianalyzer">WorryFree Wi-Fi Analyzer</a></td>
   <td></td>
   <td>&#10004;</td>
@@ -160,7 +153,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 </table>
 
-&#42;*Each <u>MDNA device license covers all MDNA features</u> for one device*.
+&#42;*Each <u>MDNA license covers all MDNA features</u> for one device*.
 
 -----
 

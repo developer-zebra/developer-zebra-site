@@ -29,7 +29,7 @@ License activation requires ***ALL THREE*** of the following:
  &nbsp;&nbsp;&nbsp;&#10687; **Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
  &nbsp;&nbsp;&nbsp;&#10687; **Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
 3. **Devices must be connected to one of the following**:<br> 
- &nbsp;&nbsp;&nbsp;&#10687; **Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
+ &nbsp;&nbsp;&nbsp;&#10687; **Zebra's internet-based license server** for online activation **OR**<br>
  &nbsp;&nbsp;&nbsp;&#10687; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
 
 -----

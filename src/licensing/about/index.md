@@ -18,9 +18,13 @@ menu:
 
 **Zebra's [Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** is a set of productivity, performance and security tools and features that enhance Zebra devices running Android. 
 
+**With its two-tiered system, Zebra gives partners the flexibility** of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows.
+
 **Zebra Professional-series devices provide the core elements of MDNA**, equipping devices with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
 
-**Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security. With its two-tiered system, Zebra gives partners the flexibility of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows. 
+**Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
+
+
 
 <!-- <img alt="image" style="height:450px" src="mdna_matrix_2.png"/>
 _Click image to enlarge; ESC to exit_. 
@@ -39,8 +43,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
-    <th>Included on<br>Professional Devices</th>
-    <th>Included on<br>Enterprise Devices</th>
+    <th>Included with<br>Professional Devices</th>
+    <th>Included with<br>Enterprise Devices</th>
     <th>Required to add feature<br> to Professional device</th>
   </tr>
 

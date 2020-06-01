@@ -234,7 +234,7 @@ See the [License Manager section](https://techdocs.zebra.com/stagenow/latest/csp
 
 ## Logging
 
-**On Android devices**, License Manager activities are captured in Android Debug Bridge (adb) and RXLogger log files. 
+License Manager activities are captured by [Zebra RXLogger](/rxlogger) and Android logcat. 
 
 -----
 

@@ -29,7 +29,7 @@ menu:
 
 ###Q: Does Zebra offer evaluation licenses? 
 
-**A: Yes. [Here's how](../process/#evaluationlicense)**.  
+**A: Yes. [See the Process page](../process/#evaluationlicense)** to learn how.  
 
 -----
 
@@ -45,7 +45,9 @@ menu:
 
 ###Q: I'm having trouble viewing the MX Feature table on a mobile device. Can that be improved? 
 
-**A: Yes. Try enabling the "Desktop site"** (or similar) option in the mobile browser: 
+**A: Yes. Try enabling the "Desktop site"** (or similar) option in the mobile browser. 
+
+Here's how it looks in Chrome for Android: 
 <img alt="image" style="height:450px" src="view desktop checkbox in chrome.jpg"/>
 _Click image to enlarge; ESC to exit_. 
 <br>

@@ -42,3 +42,12 @@ menu:
  * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
 
 -----
+
+###Q: I'm having trouble viewing the MX Feature table on a mobile device. Can that be improved? 
+
+**A: Yes. Try enabling the "Desktop site"** (or similar) option in the mobile browser: 
+<img alt="image" style="height:450px" src="view desktop checkbox in chrome.jpg"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
+
+-----

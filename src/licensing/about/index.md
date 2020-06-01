@@ -184,11 +184,6 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability of
 
 -----
 
-### StageNow
-**StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more about StageNow](/stagenow). 
-
------
-
 ### Device Central
 **Device Central provides a centralized method for an organization to connect and monitor supported Bluetooth peripherals**. Using a simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities can include paging peripherals and updating firmware. Device Central is preinstalled on all supported Zebra devices. [Learn more about Device Central](/devicecentral).
 
@@ -208,10 +203,16 @@ Device Diagnostic Tool instantly tests and diagnoses the hardware operability of
 The Lifeguard Over the Air Manager (formerly FOTA Manager) works with select EMM systems to control the Firmware Over The Air (FOTA) Client on the device. This client allows administrators to perform OS updates on some Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is preconfigured to communicate with the Zebra update server.
 
 [Learn more about LifeGuard OTA](/mx/fotamgr).
+
 -----
 
 ### Power Precision Console
 **PowerPrecision Console (PPC) is a battery management solution** that provides organizations using Zebra mobile computing devices with a centralized view of the health, state-of-charge and performance data of device batteries within an organization. Using data gathered and stored in Zebra's PowerPrecision batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times. [Learn more about PPC](/ppc).
+
+-----
+
+### StageNow
+**StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more about StageNow](/stagenow). 
 
 -----
 
@@ -227,6 +228,8 @@ WorryFree Wi-Fi Analyzer is a Wi-Fi analysis and troubleshooting tool designed t
 
 ## Licensed Mobility Extensions
 The term Mobility Extensions (MX) generally refers to the MX Management System (MXMS), Zebra's proprietary XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. MX is included on all Zebra devices running Android. Its functions are implemented as Configuration Service Providers (CSP) apps that control settings within an individual Android subsystem. The CSPs subject to licensing are shown below along with their restricted parameters, when applicable. 
+
+**Note**: Each MDNA license covers all MDNA features for one device
 
 ### AudioVolUIMgr
 The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 

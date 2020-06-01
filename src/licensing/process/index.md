@@ -32,8 +32,6 @@ License activation requires ***ALL THREE*** of the following:
  &nbsp;&nbsp;&nbsp;**Zebra's internet-based license server** for online activation (Android and/or CE7 <u>only</u>) **OR**<br>
  &nbsp;&nbsp;&nbsp;**A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
 
-**NOTE: Only Android and Windows CE7 devices support license deployment from a cloud-based server**. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
-
 -----
 
 ## I. Contact a Reseller 

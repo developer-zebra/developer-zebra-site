@@ -45,10 +45,12 @@ RxLogger is collecting data:
 <img alt="" style="height:350px" src="rxlogger_running.jpg"/>
 <br>
 
+<!--   Comment: Removed since does not exist in v6.0 [Jira BSPA-145258]
 ### Unknown 
 RxLogger has lost connection to the `diagdaemon`:
 <img alt="" style="height:350px" src="rxlogger_unknown.png"/>
 <br>
+-->
 
 ### Buttons 
 * **Start button -** starts the `diagdaemon` service and begins data collection.
@@ -59,6 +61,10 @@ RxLogger has lost connection to the `diagdaemon`:
 
 * **Settings button -** displays a panel for configuring RxLogger and `diagdaemon` settings.
 
+## Usage Notes
+
+* When the device is in Multi-User mode, only the primary user is supported.
+
 <!-- -->
 -----
 
@@ -66,4 +72,6 @@ RxLogger has lost connection to the `diagdaemon`:
 * [RxLogger Settings](../settings) - How to configure data collection module parameters
 * [RxLogger Modules](../modules) - Explains data collection module parameters and settings
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
+* [RxLogger Utility](../settings) - Log viewer to view logs in realtime
+
 

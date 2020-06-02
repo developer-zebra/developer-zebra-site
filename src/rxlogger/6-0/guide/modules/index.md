@@ -2068,7 +2068,7 @@ Captures the last kmsg from the device, writing it to persistent memory immediat
 
 ## Recovery Module
 
-The Recovery Module captures recovery/OSupdate logs as well as rescue party logs from the device. Logs are stored in folder `<RxLogger_Path>/recovery`, e.g. `sdcard/RxLogger/recovery`. 
+The Recovery Module captures recovery/OSupdate logs as well as Android's Rescue Party logs from the device. Rescue Party was introduced starting with Android 8.0, preventing devices from being stuck in reboot loops. If a bootloop is detected, Android sends out a "rescue party" to perform a series of actions in attempts to recover the device. As a last resort, Rescue Party reboots the device into recovery mode and prompts the user to perform a factory reset. Recovery logs are stored in folder `<RxLogger_Path>/recovery`, e.g. `sdcard/RxLogger/recovery`. 
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -3214,3 +3214,4 @@ Collects the Android native crash logs from the device, which contain stack trac
 ## Related Links
 * [RxLogger Settings](../settings) - How to configure data collection module parameters
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
+* [RxLogger Utility](../settings) - Log viewer to view logs in realtime

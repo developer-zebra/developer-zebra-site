@@ -26,11 +26,11 @@ License activation requires ***ALL THREE*** of the following:
 
 1. **One or more license keys** (aka Activation IDs) purchased for the target device(s) and/or app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
- &nbsp;&nbsp;&nbsp;&#10687; **Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
- &nbsp;&nbsp;&nbsp;&#10687; **Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
 3. **Devices must be connected to one of the following**:<br> 
- &nbsp;&nbsp;&nbsp;&#10687; **Zebra's internet-based license server** for online activation **OR**<br>
- &nbsp;&nbsp;&nbsp;&#10687; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **Zebra's internet-based license server** for online activation **OR**<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
 
 -----
 

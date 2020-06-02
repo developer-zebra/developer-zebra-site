@@ -37,8 +37,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
-    <th>Required to add<br>to <strong>Professional Devices</strong></th>
-    <th>Required to add<br>to <strong>Enterprise Devices</strong></th>
+    <th>To add to a<br><strong>Professional Device:</strong></th>
+    <th>To add to a<br><strong>Enterprise Device:</strong></th>
     <th><br>Notes</th>
   </tr>
 
@@ -57,10 +57,10 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#advanced_features">Bluetooth Manager advanced features</a></td>
-  <td></td>
-  <td>Included</td>
+  <td><a href="#advanced_features">Bluetooth Manager<br>advanced features</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
+  <td>Included</td>
+  <td></td>
   </tr>
 
 <tr>
@@ -79,7 +79,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#devicetracker">Device Tracker</a></td>
-  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">2. Install latest client app</a></td></td>
+  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">2. Install the latest client app</a></td></td>
   <td>Included</td>
   <td>
   </tr>
@@ -106,7 +106,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#enterprisekeyboard">Enterprise Keyboard 3.6+</a></td>
-  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">2. Install latest client app</a></td></td>
+  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">2. Install the latest client app</a></td></td>
   <td>Included</td>
   <td>
   </tr>
@@ -126,7 +126,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#datawedge">Multi-barcode scanning</a></td>
+  <td><a href="#datawedge">Multi-barcode scanning, image and document capture</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a> </td>
   <td>Included</td>
   <td>Added to DataWedge as 'NextGen SimulScan'</td>
@@ -134,7 +134,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#powerprecisionconsole">PowerPrecision Console</a></td>
-  <td><a href="../process">1. MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">2. Install latest client app</a></td>
+  <td><a href="../process">1. MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">2. Install the latest client app</a></td>
   <td>Included</td>
   <td></td>
   </tr>
@@ -157,14 +157,14 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#swipeassist">Swipe Assist</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/swipe-assist.html">Buy an à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/swipe-assist.html">Buy à la carte license</a></td>
-  <td>N/A</td>
+  <td></td>
   </tr>
 
   <tr>
   <td><a href="#advanced_features">Wi-Fi Fusion advanced features</a></td>
-  <td>a href="../process">Buy MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
-  <td><</td>
+  <td></td>
   </tr>
 
   <tr>
@@ -184,6 +184,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
 &#42;*Each <u>MDNA license covers all MDNA features</u> for one device*.
 † *MDNA Enterprise license required for advanced features*
+
 -----
 
 ## Software Components
@@ -295,6 +296,10 @@ Simple tool for creating a virtual data capture button on the screen of any Zebr
 
 ### Workforce Connect
 Provides access to enterprise data and apps, push-to-talk calls, PBX calls and secure messaging. 
+
+[Learn more about Workforce Connect](https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html)
+
+-----
 
 ### WorryFree Wi-Fi Analyzer
 Wi-Fi analysis and troubleshooting tool designed to examine Wi-Fi issues from a mobile device to help bring about a solution. Background tool performs real-time analysis of data and voice issues such as device coverage and roaming, end-to-end connectivity and RF networking. Also performs logging and packet capture.

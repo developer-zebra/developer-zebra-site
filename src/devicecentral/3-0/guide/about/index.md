@@ -20,14 +20,19 @@ Device Central features:
 * Paging to locate a paired and connected peripheral (applies to supported Bluetooth scanners)
 * Firmware update utility for supported peripherals (applies to supported Bluetooth scanners)
 
-<p><i>Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
+<p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
 ## New in Device Central 3.0
-* **Support added for Android 10**
-* **Install via Google Play or .APK -** On Android 10 or higher, Device Central is required to be installed from Google Play or Zebra support portal. Android 9 devices or lower are no longer supported.
-* **Mobility DNA Enterprise License Required –** For Zebra Professional-series devices, Device Central requires a Mobility DNA Enterprise License.  See [Zebra Licensing](/licensing/about) for more information. 
-* **Connection Management for any Bluetooth Peripheral -** Device Central now supports Pairing/Unpairing of any Bluetooth peripheral that follows the Bluetooth standards. Such devices are listed in the app with a standard Bluetooth icon. 
-* **Addressed issue pairing with printers and other accessories if authentication is set with user PIN entry.** Previously, only devices with a default PIN value of "0000" were supported. 
+* **Support added for Android 10 -** Device Central 3.0 is the first version supporting Android 10.
+* **Install via downloaded .APK -** On Android 10 or higher, Device Central is released via Zebra support portal. Android 9 devices or lower are no longer supported.
+* **Mobility DNA Enterprise License Required –** For Zebra Professional-series devices, Device Central requires a Mobility DNA Enterprise License.   
+* **Connection Management for any Bluetooth Peripheral -** Device Central now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, whereas previously a restricted list of peripheral devices were supported. 
+* **Fixed issue with inability to pair with printers and other accessories if authentication is set with user PIN entry.** Previously, only devices with a default PIN value of "0000" were supported. 
+* **Fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.**
+* Known Issues: 
+      * The serial number for HS3100 Bluetooth headset may report incorrectly.
+      * When connecting a device, it may take 10-15 seconds for the battery information to appear if the device is supported to provide battery information.
+
 
 ## Version History
 **New in Device Central 2.1:**
@@ -53,48 +58,7 @@ Device Central is approved for use with the following Zebra Android device:
 </table>
 
 <br>
-Device Central is approved for use with the following Bluetooth peripherals:
-
-<table class="facelift" style="width:60%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th>Device Category</th>
-    <th>Zebra Device Model</th>
-  </tr>
-  <tr>
-    <td rowspan="6">Bluetooth Scanner</td>
-    <td>DS2278 Handheld Scanner</td>
-  </tr>
-   <tr>
-    <td>DS3678 Handheld Scanner</td>
-  </tr>
- 
-  <tr>
-    <td>DS8178 Handheld Imager</td>
-  </tr>
-  <tr>
-    <td>LI3678 Handheld Scanner</td>
-  </tr>
-  <tr>
-    <td>RS507/RS507x Ring Scanner</td>
-  </tr>
-  <tr>
-    <td>RS6000 Bluetooth Ring Scanner</td>
-  </tr>
-  <tr>
-    <td>Bluetooth Headset</td>
-    <td>HS3100 Bluetooth Headset</td>
-  </tr>
-  <tr>
-    <td>Bluetooth Printer</td>
-    <td>Zebra Bluetooth Printers: QLN320, ZQ110</td>
-  </tr>
-  <!--
-  <tr>
-    <td>Bluetooth Mobile Payment Modules</td>
-    <td>Verifone Bluetooth Payment Terminals (for example e355)</td>
-  </tr>
-  -->
-</table>
+Device Central supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards.
 
 <br><br><br>
 

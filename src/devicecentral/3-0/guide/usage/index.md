@@ -6,10 +6,10 @@ productversion: '3.0'
 ---
 ## Overview
 
-This section describes how to use **Device Central**. **Device Central** works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
+This section describes how to use **Device Central**. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
 ### Version History
-* **Device Central 3.0:** Mobility DNA Enterprise License required for Zebra Professional-series devices, new connection management for any Bluetooth peripheral, and addressed issue pairing with printers and other accessories if authentication is set with user PIN entry.
+* **Device Central 3.0:** Mobility DNA Enterprise License required for Zebra Professional-series devices, now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, fixed issue pairing with printers and other accessories if authentication is set with user PIN entry, and fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.
 * **Device Central 2.1:** Use of hardware scan trigger to scan and pair. 
 
 ## Pair/Unpair a Peripheral
@@ -179,9 +179,14 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 	![img](BT_setting.jpg)
 <br>
 
-##Notes
-* **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central._
-* **Silent Pairing** may be enabled/disabled via [Bluetooth Manager CSP](/mx/bluetoothmgr), allowing the confirmation prompt to be bypassed during the pairing process.
+## Notes
+* When in **Android Multiple User mode,** Device Central only supports the Primary user.
+* **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central.
+* The **Device Central scanning profile in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
+* Only **Zebra Bluetooth scanners are listed in the notification drawer in Android when connected to the device**. All other peripheral devices are listed only in the Device Central main UI.
+* Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure:
+	* **Silent Pairing -** to allow the confirmation prompt to be bypassed during the pairing process.
+	* **Single Pairing -** to configure options when pairing a single device.
 <br><br><br>
 
 <!-- -->

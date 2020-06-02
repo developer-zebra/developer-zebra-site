@@ -43,6 +43,13 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
+  <td><a href="#advanced_features">All-Touch Terminal Emulation</a></td>
+  <td>À la carte</td>
+  <td>À la carte</td>
+  <td><a href="../process"></a></td>
+  </tr>
+
+  <tr>
   <td><a href="#advanced_features">Audio Volume UI Manager</a></td>
   <td></td>
   <td>&#10004;</td>
@@ -159,65 +166,92 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
 ## Software Components
 
+### All-Touch Terminal Emulation
+Converts legacy green-screen apps into Android apps that employ an all-touch, modern user experience for mobile devices. 
+
+[Learn more about ATTE](https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html)
+
+-----
+
 ### DataWedge
-DataWedge allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. Professional devices include all DataWedge features **<u>except multi-barcode scanning, document capture and image capture</u>**. [Learn more about DataWedge](/datawedge).
+Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. Professional devices include all DataWedge features **<u>except multi-barcode scanning, and image/document capture</u>**. 
+
+[Learn more about DataWedge](/datawedge).
 
 -----
 
 ### Device Diagnostics
-Device Diagnostic Tool instantly tests and diagnoses the hardware operability of a Zebra mobile device to determine system health and functionality. Where appropriate, Zebra Help Desk uses this tool for troubleshooting device issues, relying on the results to provide optimum steps for resolution. DDT is useful for quickly troubleshooting device issues, increasing worker productivity by reducing device downtime and unnecessary returns to the Zebra Repair Center. [Learn more about Device Diagnostics](/ddt).
+Instantly tests and diagnoses the hardware operability of a Zebra mobile device to determine system health and functionality. DDT is useful for quickly troubleshooting device issues and increasing worker productivity by reducing device downtime. 
+
+[Learn more about Device Diagnostics](/ddt).
 
 -----
 
 ### EMDK-A
-**EMDK for Android extends Android Studio for Mac OS and Windows** with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code, enabling developers to easily build apps that take full advantage of the power of Zebra devices. **Also included is Profile Manager**, a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time. [Learn more about EMDK-A](/emdk-for-android).
+**Extends Android Studio for Mac OS and Windows** with class libraries, sample apps and source code, enabling developers to easily build apps that take full advantage of the power of Zebra devices. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
+
+[Learn more about EMDK-A](/emdk-for-android).
 
 -----
 
 ### EMDK-X
-**EMDK for Xamarin is an IDE extension** that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices using C# skills and tools. EMDK for Xamarin includes class libraries, sample applications and source code, and all associated documentation for building applications that take full advantage of the power of Zebra devices. **Also included is Profile Manager**, a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time. [Learn more about EMDK-X](/emdk-for-xamarin). 
+**An IDE extension** that adds class libraries, sample applications and source code for creating apps for Zebra Android devices using C#. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
+
+[Learn more about EMDK-X](/emdk-for-xamarin). 
 
 -----
 
 ### Enterprise Home Screen
-**EHS is a free replacement launcher for Zebra devices running Android** that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed using an EMM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if desired. [Learn more about EHS](/ehs).
+**Replacement launcher for Zebra devices running Android** that provides a simple way to control access to apps and settings on a Zebra device using a GUI interface and no code. Easily limit usage to one or more specified applications, prevent changes to device settings and lock down the file system.
+
+[Learn more about EHS](/ehs).
 
 -----
 
 ### Device Central
-**Device Central provides a centralized method for an organization to connect and monitor supported Bluetooth peripherals**. Using a simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities can include paging peripherals and updating firmware. Device Central is preinstalled on all supported Zebra devices. [Learn more about Device Central](/devicecentral).
+**Centralized method for connecting and monitoring Bluetooth peripherals** using a simple user interface. Pair and unpair Bluetooth peripherals, monitor connection status, provide details on supported peripherals and update firmware. 
+
+[Learn more about Device Central](/devicecentral).
 
 -----
 
 ### Device Tracker
-**Device Tracker is a centralized solution for tracking and locating misplaced devices within a facility** to help improve worker productivity and prevent device inventory shrinkage. As part of [Zebra DNA Visibility Console](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html), Device Tracker leverages a company's existing Wi-Fi network infrastructure, adding Bluetooth Low Energy (BLE) signaling and audio alerts to aid in device location. [Learn more about Device Tracker](/devicetracker).
+**Centralized solution for tracking and locating misplaced devices within a facility** to help improve worker productivity and prevent device inventory shrinkage using a company's existing Wi-Fi network infrastructure, Bluetooth Low Energy (BLE) signaling and audio alerts. 
+
+[Learn more about Device Tracker](/devicetracker).
 
 -----
 
 ### Enterprise Keyboard
-**EKB is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices**. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. [Learn more about EKB](/enterprise-keyboard).
+**Flexible and efficient alternative to the stock Android keyboard** provides programmable keys, switches quickly between languages and custom key layouts, can scan barcode data directly into an application using any of the device's scanners. 
+
+[Learn more about EKB](/enterprise-keyboard).
 
 -----
 
 ### LifeGuard Over-the-air updates 
-The Lifeguard Over the Air Manager (formerly FOTA Manager) works with select EMM systems to control the Firmware Over The Air (FOTA) Client on the device. This client allows administrators to perform OS updates on some Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is preconfigured to communicate with the Zebra update server.
+Works with select EMM systems to control the Firmware Over The Air (FOTA) Client on the device for OS updates on some Zebra devices without a physical connection. 
 
 [Learn more about LifeGuard OTA](/mx/fotamgr).
 
 -----
 
 ### Power Precision Console
-**PowerPrecision Console (PPC) is a battery management solution** that provides organizations using Zebra mobile computing devices with a centralized view of the health, state-of-charge and performance data of device batteries within an organization. Using data gathered and stored in Zebra's PowerPrecision batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times. [Learn more about PPC](/ppc).
+**Battery management solution** provides a centralized view of the health, state-of-charge and performance data of device batteries within an organization using data stored in Zebra's PowerPrecision batteries. Continuously monitors battery health in real time and triggers customized notifications of actions needed to maintain productivity.  
+
+[Learn more about PPC](/ppc).
 
 -----
 
 ### StageNow
-**StageNow is Zebra's device-staging utility for configuring Zebra devices**. This free tool provides a point-and-click environment that allows administrators and staging operators to quickly set up and deploy devices by scanning, tapping an NFC tag or reading settings from in a file. StageNow integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. [Learn more about StageNow](/stagenow). 
+**Device-staging utility for configuring Zebra devices** provides a point-and-click environment for quickly setting up and deploying devices by scanning, tapping an NFC tag or reading settings from in a file. Integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. 
+
+[Learn more about StageNow](/stagenow). 
 
 -----
 
 ### WorryFree Wi-Fi Analyzer
-WorryFree Wi-Fi Analyzer is a Wi-Fi analysis and troubleshooting tool designed to examine Wi-Fi issues from a mobile device to help bring about a solution. This tool runs in the background during normal device operations and performs real-time analysis of issues for data and voice such as device coverage and roaming, end-to-end connectivity and RF networking. It also performs logging and packet capture.
+Wi-Fi analysis and troubleshooting tool designed to examine Wi-Fi issues from a mobile device to help bring about a solution. Background tool performs real-time analysis of data and voice issues such as device coverage and roaming, end-to-end connectivity and RF networking. Also performs logging and packet capture.
 
 [Learn more about WFW Analyzer](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html). 
 
@@ -226,20 +260,20 @@ WorryFree Wi-Fi Analyzer is a Wi-Fi analysis and troubleshooting tool designed t
 <br>
 
 ## Licensed Mobility Extensions
-The term Mobility Extensions (MX) generally refers to the MX Management System (MXMS), Zebra's proprietary XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. MX is included on all Zebra devices running Android. Its functions are implemented as Configuration Service Providers (CSP) apps that control settings within an individual Android subsystem. The CSPs subject to licensing are shown below along with their restricted parameters, when applicable. 
+The MX Management System (MXMS) is Zebra's proprietary XML-based communication framework for managing Zebra Android device settings and behavior. MX functions are implemented as Configuration Service Provider (CSP) apps for most Android subsystems and are subject to licensing as shown below. 
 
-**Note**: Each MDNA license covers all MDNA features for one device
+**Note: Each MDNA license covers all MDNA features for one device**.
 
 ### AudioVolUIMgr
-The Audio Volume UI Manager can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted from the device), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
+Can add, delete and replace Audio Profiles and select an Audio Profile to be in effect on the device. Allows administrators to modify the permanent "Factory Preset" Audio Profile and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
 
 **Licensed parameters**: 
-* All parameters<br>
+* All parameters
 
 [Learn more about Audio Volume UI Manager](/mx/audiovoluimgr)
 
 ### BluetoothMgr
-Bluetooth Manager controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. It also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
+Controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. Also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
 
 **Licensed parameters**: 
 * AllowDiscoverability
@@ -250,7 +284,7 @@ Bluetooth Manager controls the ability of a device to pair with headsets, printe
 [Learn more about Bluetooth Manager](/mx/bluetoothmgr)
 
 ### Wi-Fi
-Wi-Fi Manager administers the wireless LAN settings and network profiles for a device, including the settings required for connecting to networks.
+Administers the wireless LAN settings and network profiles for a device, including the saved settings required for connecting to various Wi-Fi networks.
 
 **Licensed parameters**: 
 * 2.4GHzChannels

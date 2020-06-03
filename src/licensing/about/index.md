@@ -64,7 +64,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents1.5">Device Diagnostics</a></td>
+  <td><a href="#softwarecomponents">Device Diagnostics</a></td>
   <td>Included</td>
   <td>Included</td>
   <td>Free with all Zebra devices</td>
@@ -169,7 +169,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwareconponents4">Zebra Volume Control</a></td>
+  <td><a href="#softwarecomponents4">Zebra Volume Control</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td>Controlled by MX using the Audio Volume UI Manager</td>

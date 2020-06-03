@@ -24,7 +24,7 @@ menu:
 
 **Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
 
-> `IMPORTANT:` When Multi-user Android is employed, **Mobile DNA features work only with Primary users**. 
+> `IMPORTANT:` When Multi-user Android is enabled on a device, **MX and Mobile DNA features work only with Primary users**. 
 
 -----
 
@@ -43,7 +43,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents">All-Touch Terminal Emulation</a></td>
+  <td><a href="#softwarecomponents1">All-Touch Terminal Emulation</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
   <td></td>
@@ -64,22 +64,22 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents">DataWedge (†)</a></td>
-  <td>Included †</td>
+  <td><a href="#softwarecomponents">DataWedge</a></td>
+  <td>Included</td>
   <td>Included</td>
   <td><a href="../process">MDNA Enterprise license required<br> for multi-barcode and image/document capture<br>(aka "NextGen SimulScan")</a></td>
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents">Device Diagnostics</a></td>
+  <td><a href="#softwarecomponents1.5">Device Diagnostics</a></td>
   <td>Included</td>
   <td>Included</td>
   <td>Free with all Zebra devices</td>
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents">Device Tracker</a></td>
-  <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Install the latest client app</a></td></td>
+  <td><a href="#softwarecomponents1.5">Device Tracker</a></td>
+  <td>Available 4Q 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Install the latest client app</a> --></td></td>
   <td>Available 4Q 2020</td>
   <td>
   </tr>
@@ -88,32 +88,32 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#emdkx">EMDK for Xamarin</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required<br> for multi-barcode and image/document capture</a></td>
+  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required<br> for multi-barcode and<br>image/document capture features</a></td>
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents2">Enterprise Browser</a></td>
+  <td><a href="#softwarecomponents2.1">Enterprise Browser</a></td>
   <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
   <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td><a href="#enterprisehomescreen">Enterprise Home Screen</a></td>
+  <td><a href="#softwarecomponents2.1">Enterprise Home Screen</a></td>
   <td>Included</td>
   <td>Included</td>
   <td>Free with all Zebra devices</td>
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents2">Enterprise Keyboard 3.9+</a></td>
+  <td><a href="#softwarecomponents2.5">Enterprise Keyboard 3.9+</a></td>
   <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Install the latest client app</a></td></td>
   <td>Included</td>
   <td>License required to use EKB with DataWedge</td>
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents2">LifeGuard Over-the-Air Updates</a></td>
+  <td><a href="#softwarecomponents2.5">LifeGuard Over-the-Air Updates</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td>Supports a select group of EMM systems</td>
@@ -134,10 +134,10 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents3">Push-to-Talk Express</a></td>
+  <td><a href="#softwarecomponents3">PTT Express</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-express.html">Also available for devices running Windows mobile OSes</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-express.html">Also available for devices running<br> Windows mobile operating systems</a></td>
   </tr>
  
   <tr>
@@ -147,15 +147,15 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="../process">How to apply a license</a></td>
   </tr>
 
- <tr>
-  <td><a href="#softwarecomponents4">StageNow</a></td>
+  <tr>
+  <td><a href="#softwarecomponents3.5">StageNow</a></td>
   <td>Included</td>
   <td>Included</td>
   <td>Free with all Zebra devices</td>
   </tr>
 
   <tr>
-  <td><a href="#advanced_features">Wi-Fi Fusion advanced features</a></td>
+  <td><a href="#advanced_features">Wi-Fi advanced features</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td></td>
@@ -175,9 +175,9 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td></td>
   </tr>
 </table>
+<a name="softwarecomponents1"></a>
 
 &#42;*Each <u>MDNA license covers all MDNA features</u> for one device*.
-(†) *MDNA Enterprise license required for advanced features*
 
 -----
 
@@ -196,7 +196,7 @@ Allows any application on a device to acquire data from the device scanner(s) an
 [Learn more about DataWedge](/datawedge)
 
 -----
-
+<a name="softwarecomponents1.5"></a>
 ### Device Central
 **Centralized method for connecting and monitoring Bluetooth peripherals** using a simple user interface. Pair and unpair Bluetooth peripherals, monitor connection status, provide details on supported peripherals and update firmware. 
 
@@ -218,14 +218,15 @@ Instantly tests and diagnoses the hardware operability of a Zebra mobile device 
 
 -----
 
-### EMDK-A
+### EMDK for Android
 **Extends Android Studio for Mac OS and Windows** with class libraries, sample apps and source code, enabling developers to easily build apps that take full advantage of the power of Zebra devices. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-A](/emdk-for-android)
 
 -----
 
-### EMDK-X
+### EMDK for Xamarin
+<a name="softwarecomponents2.1"></a>
 **An IDE extension** that adds class libraries, sample applications and source code for creating apps for Zebra Android devices using C#. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-X](/emdk-for-xamarin)
@@ -239,7 +240,7 @@ Mobile browser environment for quickly building HTML5-based apps for Android and
 [Learn more about EB](/enterprise-browser)
 
 -----
-
+<a name="softwarecomponents2.5"></a>
 ### Enterprise Home Screen
 **Replacement launcher for Zebra devices running Android** that provides a simple way to control access to apps and settings on a Zebra device using a GUI interface and no code. Easily limit usage to one or more specified applications, prevent changes to device settings and lock down the file system.
 
@@ -270,7 +271,7 @@ Mobile browser environment for quickly building HTML5-based apps for Android and
 
 ### PTT Express
 
-Enables Push-To-Talk communications between compatible devices over an existing Wi-Fi network, a cost-effective way to provide a basic voice connection to small groups of workers inside the four walls. 
+Enables push-to-talk communications between compatible devices over an existing Wi-Fi network, a cost-effective way to provide a basic voice connection to small groups of workers inside the four walls. 
 
 [Learn more about PTT Express](https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html)
 
@@ -279,6 +280,7 @@ Also available [for devices running Windows mobile](https://www.zebra.com/us/en/
 -----
 
 ###Smartdex
+<a name="softwarecomponents3.5"></a>
 Brings DEX communications to Zebra’s Android and Windows Mobile handheld computers. Works with DEX cables and the Bluetooth-enabled DX30 device. 
 
 [Learn more about Smartdex](https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html)

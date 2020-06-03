@@ -44,8 +44,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#alltouchterminalemulation">All-Touch Terminal Emulation</a></td>
-  <td><a href="../process">Buy à la carte license</a></td>
-  <td><a href="../process">Buy à la carte license</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
   <td></td>
   </tr>
 
@@ -64,7 +64,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#datawedge">DataWedge †</a></td>
+  <td><a href="#datawedge">DataWedge (†)</a></td>
   <td>Included †</td>
   <td>Included</td>
   <td><a href="../process">MDNA Enterprise license required<br> for multi-barcode and image/document capture (aka "NextGen SimulScan")</a></td>
@@ -79,7 +79,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#devicetracker">Device Tracker</a></td>
-  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">2. Install the latest client app</a></td></td>
+  <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Install the latest client app</a></td></td>
   <td>Available 4Q 2020</td>
   <td>
   </tr>
@@ -107,7 +107,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#enterprisekeyboard">Enterprise Keyboard 3.9+</a></td>
-  <td><a href="../process">1. Buy MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">2. Install the latest client app</a></td></td>
+  <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Install the latest client app</a></td></td>
   <td>Included</td>
   <td>License required to use EKB with DataWedge</td>
   </tr>
@@ -116,7 +116,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#lifeguardovertheairupdates">LifeGuard Over-the-Air Updates</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
-  <td></td>
+  <td>Supports a select group of EMM systems</td>
   </tr>
 
   <tr>
@@ -128,8 +128,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#powerprecisionconsole">PowerPrecision Console</a></td>
-  <td><a href="../process">1. MDNA Enterprise license*</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">2. Install the latest client app</a></td>
-  <td>Available 4Q 2020</td>
+  <td><!-- 1. <a href="../process">MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html"> Install the latest client app</a> -->Available 4Q 2020</td>
+  <td>Included</td>
   <td></td>
   </tr>
 
@@ -177,7 +177,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 </table>
 
 &#42;*Each <u>MDNA license covers all MDNA features</u> for one device*.
-† *MDNA Enterprise license required for advanced features*
+(†) *MDNA Enterprise license required for advanced features*
 
 -----
 

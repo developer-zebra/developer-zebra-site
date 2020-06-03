@@ -255,7 +255,7 @@ products:
       - title: APIs
         url: /rxlogger/6-0/apis
       - title: Utility
-      url: /rxlogger/6-0/guide/utility
+        url: /rxlogger/6-0/guide/utility
     versions:
       - url: /rxlogger/6-0/guide/about
         label: '6.0'

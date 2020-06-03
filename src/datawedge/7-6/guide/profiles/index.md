@@ -97,7 +97,7 @@ _<b>A DataWedge Profile and its contents.</b> When the associated app/activity i
   </tr>
 
   <tr>
-    <td><a href="../process/bdf">Advanced Data Formatting (ADF)</a></td>
+    <td><a href="../process/adf">Advanced Data Formatting (ADF)</a></td>
 	  <td>∙ Create custom rule with specific criteria and actions to process acquired data</td>
   </tr>
 

@@ -130,11 +130,11 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents3">PTT Express</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-express.html">Also available for devices running<br> Windows mobile operating systems</a></td>
+  <td>Also available for devices running<br> Windows mobile operating systems<br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-express.html">Learn more</a></td>
   </tr>
  
   <tr>
-  <td><a href="#softwarecomponents3">Smartdex</a></td>
+  <td><a href="#softwarecomponents3">SmartDEX</a></td>
   <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
   <td><a href="../process">How to apply a license</a></td>
@@ -280,11 +280,11 @@ Also available [for devices running Windows mobile](https://www.zebra.com/us/en/
 
 -----
 
-###Smartdex
+###SmartDEX
 <a name="softwarecomponents3.5"></a>
 Brings DEX communications to Zebra’s Android and Windows Mobile handheld computers. Works with DEX cables and the Bluetooth-enabled DX30 device. 
 
-[Learn more about Smartdex](https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html)
+[Learn more about SmartDEX](https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html)
 
 -----
 <a name="softwarecomponents4"></a>

@@ -170,23 +170,22 @@ The **My Device** tab displays information pertaining to the Android device whic
 ##Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
 
-* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset and printer. <br>
+* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, it allows only one device to be paired from each device category, such as scanner, headset and printer. <br>
 _For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
 _For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  
-* **Enable/Disable Firmware Update Option**: If enabled, this permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
-* **Enable/Disable Bluetooth On/Off Option**: If enabled, this prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
+* **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
+* **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <br>
 	![img](BT_setting.jpg)
 <br>
+
+* **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
 
 ## Notes
 * When in **Android Multiple User mode,** Device Central only supports the Primary user.
 * **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central.
 * The **Device Central scanning profile in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
 * Only **Zebra Bluetooth scanners are listed in the notification drawer in Android when connected to the device**. All other peripheral devices are listed only in the Device Central main UI.
-* Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure:
-	* **Silent Pairing -** to allow the confirmation prompt to be bypassed during the pairing process.
-	* **Single Pairing -** to configure options when pairing a single device.
 <br><br><br>
 
 <!-- -->

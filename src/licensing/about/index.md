@@ -50,13 +50,6 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#advanced_features">Audio Volume UI Manager</a></td>
-  <td>Included</td>
-  <td>Included</td>
-  <td></td>
-  </tr>
-
-  <tr>
   <td><a href="#advanced_features">Bluetooth Manager<br>advanced features</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
@@ -85,7 +78,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#emdkx">EMDK for Xamarin</a></td>
+  <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
   <td>Included</td>
   <td>Included</td>
   <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required<br> for multi-barcode and<br>image/document capture features</a></td>
@@ -174,6 +167,14 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td>Included</td>
   <td></td>
   </tr>
+
+  <tr>
+  <td><a href="#softwareconponents4">Zebra Volume Control</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
+  <td>Included</td>
+  <td>Controlled by MX using the Audio Volume UI Manager</td>
+  </tr>
+
 </table>
 <a name="softwarecomponents1"></a>
 
@@ -197,13 +198,13 @@ Allows any application on a device to acquire data from the device scanner(s) an
 
 -----
 <a name="softwarecomponents1.5"></a>
-### Device Central
+<!-- ### Device Central
 **Centralized method for connecting and monitoring Bluetooth peripherals** using a simple user interface. Pair and unpair Bluetooth peripherals, monitor connection status, provide details on supported peripherals and update firmware. 
 
 [Learn more about Device Central](/devicecentral)
 
 -----
-
+ -->
 ### Device Diagnostics
 Instantly tests and diagnoses the hardware operability of a Zebra mobile device to determine system health and functionality. DDT is useful for quickly troubleshooting device issues and increasing worker productivity by reducing device downtime. 
 
@@ -307,19 +308,17 @@ Wi-Fi analysis and troubleshooting tool designed to examine Wi-Fi issues from a 
 [Learn more about WFW Analyzer](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html). 
 
 -----
+
+### Zebra Volume Control
+Add, delete and replace Audio Profiles and select an Audio Profile as the device default. Can modify the permanent the "Factory Preset" Audio Profile and control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
+
+[Learn more about Zebra Volume Control](/mx/audiovoluimgr)
+
+-----
 <a name="advanced_features"></a>
-<br>
 
 ## Licensed Mobility Extensions
 The MX Management System (MXMS) is Zebra's proprietary XML-based communication framework for managing Zebra Android device settings and behavior. MX functions are implemented as Configuration Service Provider (CSP) apps for most Android subsystems and are subject to licensing as shown below. **Note: Each MDNA license covers all MDNA features for one device**.
-
-### AudioVolUIMgr
-Add, delete and replace Audio Profiles and select an Audio Profile as the device default. Can modify the permanent "Factory Preset" Audio Profile and control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
-
-**Licensed parameters**: 
-* All parameters
-
-[Learn more about Audio Volume UI Manager](/mx/audiovoluimgr)
 
 ### BluetoothMgr
 Controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. Also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.

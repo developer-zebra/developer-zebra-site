@@ -20,11 +20,11 @@ menu:
 
 **With its two-tiered system, Zebra gives partners the flexibility** of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows.
 
-**Zebra Professional-series devices provide the core elements of MDNA**, equipping devices with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
+**Zebra Professional-series devices provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
 
 **Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
 
-> `IMPORTANT:` When Multi-user Android is enabled on a device, **MX and Mobile DNA features work only with Primary users**. 
+> **`IMPORTANT:`<br>When Multi-user Android is enabled on a device**, MX and Mobile DNA features work only with Primary users. 
 
 -----
 
@@ -51,7 +51,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#advanced_features">Bluetooth Manager<br>advanced features</a></td>
-  <td><a href="../process">Buy an MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td></td>
   </tr>
@@ -72,7 +72,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#softwarecomponents1.5">Device Tracker</a></td>
-  <td>Available Q4 2020<!-- 1. <a href="../process">Buy an MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
+  <td>Available Q4 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
   <td>Available Q4 2020</td>
   <td>
   </tr>
@@ -81,7 +81,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required<br> for multi-barcode and<br>image/document capture features</a></td>
+  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required</a><br> for multi-barcode and<br>image/document capture features</td>
   </tr>
 
   <tr>
@@ -100,14 +100,14 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#softwarecomponents2.5">Enterprise Keyboard 3.9+</a></td>
-  <td>1. <a href="../process">Buy an MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download and install latest app</a></td></td>
+  <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download and install latest app</a></td></td>
   <td>Included</td>
   <td>License required to use EKB with DataWedge</td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2.5">LifeGuard Over-the-Air Updates</a></td>
-  <td><a href="../process">Buy an MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td>Supports a select group of EMM systems</td>
   </tr>
@@ -149,7 +149,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#advanced_features">Wi-Fi advanced features</a></td>
-  <td><a href="../process">Buy an MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td></td>
   </tr>
@@ -163,14 +163,14 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#softwarecomponents4">WorryFree Wi-Fi Analyzer</a></td>
-  <td><a href="../process">Buy an MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents4">Zebra Volume Control</a></td>
-  <td><a href="../process">Buy an MDNA Enterprise license*</a></td>
+  <td><a href="../process">Buy MDNA Enterprise license*</a></td>
   <td>Included</td>
   <td>Controlled by MX using the<br><a href="/mx/audiovoluimgr">Audio Volume UI Manager</a></td>
   </tr>
@@ -178,7 +178,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 </table>
 <a name="softwarecomponents1"></a>
 
-&#42;*Each <u>MDNA license covers all MDNA features</u> for one device*.
+&#42;*Each MDNA license covers all MDNA features for one device*.
 
 -----
 
@@ -367,9 +367,3 @@ Administers the wireless LAN settings and network profiles for a device, includi
 * **[Frequently Asked Questions](../faq)** | Common licensing issues and how to resolve them 
 * **[Zebra StageNow](/stagenow)** | A free Windows app for remote-device staging, licensing and mass deployment 
 * **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional user manuals, how-to videos and relevant links
-
-
-Buy an MDNA Enterprise license*
-Download and install latest app
-
-1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Install the latest client app</a></td></td>

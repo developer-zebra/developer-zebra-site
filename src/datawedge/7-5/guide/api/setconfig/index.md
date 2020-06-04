@@ -747,7 +747,34 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 </table>
 
 <br>
-###OCR Parameters
+
+### UDI Parameters
+
+For more information, see [Barcode Input](../../input/barcode#udiparams).
+
+<table class="facelift" style="width:60%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_gs1</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_hibcc</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_iccbba</td>
+	<td>true<br>false</td>
+  </tr>
+</table>
+
+### OCR Parameters
 For more information, see [Barcode Input](../../input/barcode#ocrparams).
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

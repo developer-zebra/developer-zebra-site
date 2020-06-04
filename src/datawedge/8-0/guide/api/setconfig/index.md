@@ -97,12 +97,13 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and values from the respective `PLUGIN_NAME` parameter tables below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle:
 
-* **BARCODE –** accepts values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+* **BARCODE –** accepts values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle. It is required to specify which scanner the configurations apply to either by using `scanner_selection` set to auto, `scanner_selection_by_identifier` or `configure_all_scanners`
  * `scanner_selection_by_identifier` [string]- accepts a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
  * `configure_all_scanners` [string]- true/false
  <br>
- If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
- If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
+ 
+ <p>If set to “true”, the parameter <font color="red"><i>scanner_selection_by_identifier</i></font> is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
+ If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.</p>
 
 * **MSR -** Accepts values from the [MSR Input Parameters](#msrinputparameters) table below.
 * **RFID -** Accepts values from the [RFID Input Parameters](#rfidinputparameters) table below.
@@ -756,7 +757,34 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 </table>
 
 <br>
-###OCR Parameters
+
+### UDI Parameters
+
+For more information, see [Barcode Input](../../input/barcode#udiparams).
+
+<table class="facelift" style="width:60%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_gs1</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_hibcc</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_iccbba</td>
+	<td>true<br>false</td>
+  </tr>
+</table>
+
+### OCR Parameters
 For more information, see [Barcode Input](../../input/barcode#ocrparams).
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

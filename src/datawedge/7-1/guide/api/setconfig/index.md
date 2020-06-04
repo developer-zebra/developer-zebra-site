@@ -871,7 +871,34 @@ Error messages are logged for invalid actions and parameters
 </table>
 
 <br>
-Other Scanner Input Parameters:
+
+### UDI Parameters
+
+For more information, see [Barcode Input](../../input/barcode#udiparams).
+
+<table class="facelift" style="width:60%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_gs1</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_hibcc</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
+   	<td>enable_udi_iccbba</td>
+	<td>true<br>false</td>
+  </tr>
+</table>
+
+### Other Scanner Input Parameters:
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

@@ -10,8 +10,9 @@ Every new Android version brings improvements to security, usability and perform
 
 * Those affecting only apps that update the target API level 
 * Those affecting all apps running on the new version
+<br>
 
-To help ease the migration to newer versions of Android, Google and Zebra the resources described in this guide. Links are provided to each. 
+To help ease the migration to newer versions of Android, Google and Zebra offer the the resources described in this guide. Links are provided to each.
 
 ## Upgrading Android
 

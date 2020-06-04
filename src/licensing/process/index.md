@@ -157,7 +157,10 @@ Mass-deployment of MDNA Enterprise licenses requires use of an Enterprise Mobili
 
 #### `IMPORTANT NOTES:`
 * **The procedures described below include only those for deploying and activating licenses for Zebra apps and features on the device(s)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
-* **To set license keys to remain on the device following an Enterprise Reset**, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
+* **To set license keys to remain on the device following an Enterprise Reset**: 
+ * All license activation steps must be stored <u>in a single Profile</u>, activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).   
+ * WLAN settings MUST be configured BEFORE license activation steps in the Profile. 
+ * Keys MUST be stored in the `/enterprise/usr` folder on the device. 
 
 ### Prerequisites
 

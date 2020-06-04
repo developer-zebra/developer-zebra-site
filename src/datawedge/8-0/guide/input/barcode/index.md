@@ -2,7 +2,7 @@
 title: Barcode Input
 layout: guide.html
 product: DataWedge
-productversion: '7.6'
+productversion: '8.0'
 ---
 
 ## Overview

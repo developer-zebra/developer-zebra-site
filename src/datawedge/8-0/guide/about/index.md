@@ -152,6 +152,7 @@ For more information about approved languages or to download a localized operati
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
 * **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
 * Improved look and feel of user interface. Refer to [Settings](../settings) and [DWDemo](../samples/dwdemo).
+* **Image Capture Mode** option from **Reader Params** is removed due to changes in the scanner framework.
 
 **Deprecations:**
 * **Support for Unique Device Identification (UDI) barcodes is deprecated.** GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the DataWedge API. UDI support will be removed from the DataWedge API beginning with Android 10 Q device support.

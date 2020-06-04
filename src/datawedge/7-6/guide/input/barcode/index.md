@@ -1025,6 +1025,7 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Auto -** Automatically detects and decodes positive and inverse 1D symbologies.
 
+<!--  // Removed per [TUT-41427]
 **Image Capture Mode -** Sets the barcode scanner to image capture mode: 
 
 * **None -** No image capturing.
@@ -1033,7 +1034,7 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Image Capture Only -** Only captures and image and no barcode data will be dispatched.
 
-_**Note:** Zebra does not recommend changing the Image Capture Mode parameter when DataWedge is used to scan barcodes; DataWedge does not process image data._
+_**Note:** Zebra does not recommend changing the Image Capture Mode parameter when DataWedge is used to scan barcodes; DataWedge does not process image data._-->
 
 **LCD Mode -** Used to Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only). **Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
 

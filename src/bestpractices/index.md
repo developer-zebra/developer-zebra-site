@@ -6,7 +6,7 @@ content-items:
   - type: section
     level: 4
     title: Android Version Migration
-    text: Contains an overview of the process of migrating from one Android version to another and links to version-specific migration details.
+    text: Contains an overview of the resources available for developers for migrating from one Android version to another, including links to version-specific changes and app-change requirements.
     url: migration
   - type: section
     level: 4

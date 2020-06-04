@@ -137,7 +137,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents3">SmartDEX</a></td>
   <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
   <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
-  <td><a href="../process">How to apply a license</a></td>
+  <td>Not supported on TC21<br><a href="../process">How to apply a license</a></td>
   </tr>
 
   <tr>

@@ -198,6 +198,7 @@ _Click image to enlarge_.
 &#55;. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
 * **a. Download(†) and save key(s) as `.BIN` file(s) to** `/enterprise/usr` folder on the device.<br>
 * **b. <u>From a single Profile</u>**:<br>
+ * **Configure WLAN settings** using Wi-Fi CSP.<br>
  * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device").<br>
  * **Preserve settings using [Persist Manager](/mx/persistmgr).**
 
@@ -205,8 +206,7 @@ _Click image to enlarge_.
 
 &#57;. **Confirm that the Profile successfully licensed the device**: <br>
  * a. **Launch the License Manager app** on the device; activated license should be visible.<br>
- * b. **Alternatively, launch EB 2.0 on the device** and view licensing status on splash screen. <br>
- * c. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there.<br>
+ * b. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
 **(†)** To download a License key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains license(s) for specific device(s).
 

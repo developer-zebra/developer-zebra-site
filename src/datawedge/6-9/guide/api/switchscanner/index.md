@@ -9,7 +9,7 @@ productversion: '6.9'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. 
+Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. If "Auto Switch to Default on Event" is enabled in Barcode Input, SWITCH_SCANNER should not be used upon scanner connection/disconnection as it can cause unexpected behavior.
 
 The `SWITCH_SCANNER_EX` extra (added in DataWedge 6.6) allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
 

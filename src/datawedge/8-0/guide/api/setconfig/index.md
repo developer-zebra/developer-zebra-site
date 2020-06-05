@@ -615,6 +615,13 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
   </tr>
 
   <tr>
+	<td>decoder_australian_postal</td>
+	<td>true<br>false</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
 	<td>decoder_uk_postal</td>
 	<td>true<br>false</td>
 	<td>decoder_uk_postal_report_check_digit</td>

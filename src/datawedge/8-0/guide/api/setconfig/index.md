@@ -765,6 +765,29 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
 <br>
 
+### NextGen SimulScan Parameters
+
+For more information, see [Barcode Input](../../input/barcode#scanningmodes).
+
+<table class="facelift" style="width:60%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+   	<td>scanning_mode</td>
+	<td>3 - MultiBarcode<br>5 - SimulScan</td>
+  </tr>
+
+  <tr>
+   	<td>doc_capture_template</td>
+	<td>[Name of the Document Capture template]</td>
+  </tr>
+
+</table>
+
+
 ### UDI Parameters
 
 For more information, see [Barcode Input](../../input/barcode#udiparams).
@@ -889,7 +912,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 
   <tr>
 	<td>scanning_mode</td>
-	<td>1 - Single<br>2 - UDI - supported on <a href="../../input/barcode/#readerparams">selected Zebra devices</a> up to Android P (version 9.x) only<br>3 - MultiBarcode</td>
+	<td>1 - Single<br>2 - UDI - supported on <a href="../../input/barcode/#readerparams">selected Zebra devices</a> up to Android P (version 9.x) only</td>
   </tr>
  
    <tr>

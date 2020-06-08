@@ -26,11 +26,11 @@ The base [EB installation](../setup) includes all necessary components to allow 
 * **Now automatically releases scanner resources when Android app for EB goes to the background**.
 * Improved integration with DataWedge for concurrent scanning
 * Barcode configuration now persists after onPause, onResume cycles
-* Now supports sendKey events in Device API
+* Device API now supports sendKey events
 
 ### New/Updated APIs
 
-**[Device API](../api/re2x/device) now supports sendKey events**.
+**[Device API](../../api/re2x/device) now supports sendKey events**.
 
 <!-- 
 [Camera API](../) no longer supports FlashMode "On" setting

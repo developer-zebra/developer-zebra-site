@@ -30,7 +30,8 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ### New/Updated APIs
 
-**[Device API](../) now supports sendKey events**.
+**[Device API](../api/re2x/device) now supports sendKey events**.
+
 <!-- 
 [Camera API](../) no longer supports FlashMode "On" setting
 [Barcode API](../)

@@ -20,10 +20,10 @@ This feature expects following attributes from user to set Clock on the symbol A
 
 > Note: Provide "EMDKMxClockTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/7-6/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/8-0/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding an Clock Profile
-1. Click [here](/emdk-for-android/7-6/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/8-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "MxClockProfile" as the Profile Name for this tutorial.
 
@@ -201,7 +201,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-6/tutorial/
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/7-6/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/8-0/api/core/EMDKResults) reference. If the profile is successfully processed, it retuns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

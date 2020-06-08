@@ -18,13 +18,13 @@ The following steps should be taken to determine what version of MX you should b
 ## Identifying Features Needed
 Each version of MX contains a set of services that include individual features. Review each version's reference documentation to identify what version of MX that feature is included in.
 
-* [Profile Features](/emdk-for-android/7-6/guide/profile-manager-guides)
+* [Profile Features](/emdk-for-android/8-0/guide/profile-manager-guides)
 
 ## Identify Device Compatibility
-A given feature in a specific version of MX may or may not be supported on specific devices. Once you have identified the version of MX you are looking to use, you can then consult the [device compatibility table](/emdk-for-android/7-6/mx/compatibility) to see if it is supported for your device.
+A given feature in a specific version of MX may or may not be supported on specific devices. Once you have identified the version of MX you are looking to use, you can then consult the [device compatibility table](/emdk-for-android/8-0/mx/compatibility) to see if it is supported for your device.
 
 ## Verify Your Target Device
-Once you have identified the version of MX you intend to support, you need to [check your device](/emdk-for-android/7-6/mx/version-on-device) to ensure it will be running with the required MX version.  
+Once you have identified the version of MX you intend to support, you need to [check your device](/emdk-for-android/8-0/mx/version-on-device) to ensure it will be running with the required MX version.  
 
 
 

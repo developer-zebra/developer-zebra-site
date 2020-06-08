@@ -23,6 +23,11 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 * **The all-new [Enterprise App Configurator](../eac) utility simplifies [DOM injection](../dominjectionandroid)** with a point-and-click interface and requires no coding or manual config-file creation. DOM injection adds capabilities to a running EB app without changing the source code. 
 * **Updated [Licensing Guide](../licensing)** now contains instructions for making license keys persist on a device and links to Zebra's newest License Server Administrator guides for Linux and Windows. 
+* **Now automatically releases scanner resources when Android app for EB goes to the background**.
+* Integration with DataWedge for concurrent scanning is improved
+* Barcode configuration now persists after onPause, onResume cycles
+* Now supports sendKey events in Device API
+
 
 ### New/Updated APIs
 
@@ -30,22 +35,48 @@ The base [EB installation](../setup) includes all necessary components to allow 
 [Device API](../) updated with SendKey suport
 [Camera API](../) no longer supports FlashMode "On" setting
 
-
-OLD OLD OLD
 ### End of Support
 
+* **No longer supports devices running Android 7.x Nougat** (except WT6000)
+
+### Device Support
+
+No new devices were added to the supported device list with this release. 
+
+**See the [full list of supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)**.
+
+-----
+
+### New/Updated Features/Guides
+
 OLD OLD OLD
+
+* **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**
+
+OLD OLD OLD
+
+### New/Enhanced APIs
+**<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 
+* Read operations
+
+----- 
+
+## Version History
+
+### New in v2.5
+
+#### End of Support
+
 * **The Database API is no longer supported in EB 2.5**. Calls to this API will result in error. 
 * **The** `remove()` **method of the NativeTabbar API is no longer supported**.  
 * **Support ends for devices running Android 6.x Marshmallow, 5.x Lollipop or 4.x KitKat**  
 
 * **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued when Android 10 Q support begins. 
 
-### Device Support
+#### Device Support
 
-#### Mobile Devices
+##### Mobile Devices
 
-OLD OLD OLD
 **<u>Android 9.x Pie</u>** newly supported devices: 
 
 * **PS20**
@@ -60,44 +91,37 @@ OLD OLD OLD
 * **L10**
 * **VC83**
 
-#### Scanners
-
-OLD OLD OLD
+##### Scanners
 * **RS5100** connected to devices running Android 7.x Nougat and higher 
 * **SE4750DPW** connected to devices running Android 7.x Nougat and higher 
 * **SE4770** connected to MC33xx devices running Android 8.x Oreo and higher
 
-#### Accessories
+##### Accessories
 External Vibrator Cable (CBL-NGWT- HDVBAP-01) 
 
-**Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** for the full list of supported devices.
+**<u>Visit the [Zebra Support Portal EB page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)</u>** for the full list of supported devices.
 
 -----
 
-### New/Updated Features/Guides
+#### New Features/Guides
 
-OLD OLD OLD
-
+##### New for All Apps
 * **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**. 
-
-
+* **A new [Multi-session Guide](../multisession)** describes the all-new process for deploying multiple EB apps as browser tabs using Pinned Shortcuts or an XML file. Multi-session support allows EB to run multiple apps at the same time, each with different `Config.xml` files and configuration settings. 
 * **The [&lt;ShowLicenseConfirmation&gt; tag](../configreference/#showlicenseconfirmation) is now supported on Android** devices (formerly Windows Mobile/CE-only), which toggles display of the “Licensed to…” dialog at launch. 
 * **Supports [meta tag filtering](../configreference/#metatagfiltering) on Android targets**, which permits one or more meta tags or sets of meta tag properties to be allowed ("WhiteListed") or blocked ("BlackListing" tag) from use by an EB app. This feature can be useful when **migrating EB apps from Windows Mobile to Android** by blocking meta tags or meta-tag properties not supported on Android devices.
 * **A new [&lt;DisableTTSduringNavigation&gt; tag](../configreference/#disablettsduringnavigation)** allows the text-to-speech engine to be temporarily disabled while EB switches or navigates pages. 
 * The new TTS disablement feature is configurable using the **new [&lt;DelayforTTS&gt; tag](../configreference/#delayfortts)**.
 * **A new [&lt;DisableASRduringNavigation&gt; tag](../configreference/#disableasrduringnavigation)** allows the Android Speech Recognition engine to be temporarily disabled while EB switches or navigates pages. 
 
-#### New for SAP Apps
+##### New for SAP Apps
 
-OLD OLD OLD
 * **Supports [custom CSS files](../sapandroid/#customcssfile) for SAP apps running on Android targets**, allowing modification of certain styles within the SAP app at runtime.
 * **Supports a [Keyboard Type parameter](../sapandroid/#configurationparameters)**, which allows SAP apps to select a keyboard, button bar, custom Enterprise Keyboard layout or default IME. 
 
 -----
 
-OLD OLD OLD
-
-### New/Enhanced APIs
+#### New/Enhanced APIs
 **<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 
 * Read operations
 * Write operations
@@ -128,7 +152,6 @@ OLD OLD OLD
 
 ----- 
 
-## Version History
 
 ### Added in v2.5
 

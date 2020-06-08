@@ -2,7 +2,7 @@
 title: "How to Check a Device's MX Version"
 layout: guide.html
 product: EMDK For Android
-productversion: '7.6'
+productversion: '8.0'
 ---
 
 ## Overview

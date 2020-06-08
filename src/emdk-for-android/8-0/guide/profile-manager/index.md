@@ -2,7 +2,7 @@
 title: Using Profile Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '7.6'
+productversion: '8.0'
 ---
 
 Profile Manager enhances Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.

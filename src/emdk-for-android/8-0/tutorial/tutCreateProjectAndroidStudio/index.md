@@ -2,7 +2,7 @@
 title: Create an Android Studio Project
 layout: guide.html
 product: EMDK For Android
-productversion: '7.6'
+productversion: '8.0'
 ---
 ## Overview
 

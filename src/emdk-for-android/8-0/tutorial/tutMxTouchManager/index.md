@@ -2,7 +2,7 @@
 title: Specify Touch Mode using MX Touch Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '7.6'
+productversion: '8.0'
 ---
 
 ## Overview

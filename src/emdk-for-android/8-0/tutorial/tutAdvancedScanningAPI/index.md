@@ -14,6 +14,8 @@ productversion: '8.0'
     <br>
     <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
 
+> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes have been removed from EMDK for Android 8.0 for devices running Android 10 and later. 
+
 ## Overview
 
 This guide walks through creation of an app using the [Barcode/Scanning APIs](/emdk-for-android/8-0/api) introduced in EMDK-A 3.0 to perform additional options along with scanning operations on Zebra Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/8-0/api/barcode/BarcodeManager), which is the primary object to access barcode scanning feature. 

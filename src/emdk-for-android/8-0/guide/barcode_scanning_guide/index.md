@@ -14,6 +14,8 @@ productversion: '8.0'
     <br>
     <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
 
+> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 for devices running Android 10 and later. 
+
 ## Overview
 
 The EMDK Barcode API provides applications with the ability to read numerous barcode label formats using a variety of built-in and pluggable cameras, imagers, lasers and scanners. For the full list, see [scanners supported by EMDK for Android](../about/#supporteddevices).

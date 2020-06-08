@@ -207,8 +207,13 @@ License Manager provides a Local License Server option, enabling organizations t
 * **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed
 * Ensure target devices are connected to the Local Licensing Server
 
-**To License from a Local Server**: 
+#### `IMPORTANT PERSISTENCE NOTES:` 
+* **To set license keys to remain on the device following an Enterprise Reset**:
+ * **All License Manager and Persist Manager steps MUST be stored in a <u>SINGLE PROFILE</u>**.
+ * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
+ * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.
 
+##### To License from a Local Server: 
 1. **Tap Local Server** from the License Source drop-down.<br> 
 A screen appears as below.
 <img alt="" style="height:350px" src="local_server.png"/>
@@ -219,13 +224,7 @@ Then **Tap Activate**.
 <img alt="" style="height:350px" src="6a.png"/>
 <br>
 
-#### `IMPORTANT PERSISTENCE NOTES:` 
-* **To set license keys to remain on the device following an Enterprise Reset**:
- * **All License Manager and Persist Manager steps MUST be stored in a <u>SINGLE PROFILE</u>**.
- * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
- * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.
-
-Successful license activation is indicated by a screen similar to the image below: 
+**Successful license activation is indicated by a screen similar to the image below**: 
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 

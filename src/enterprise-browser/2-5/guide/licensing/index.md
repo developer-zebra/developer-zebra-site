@@ -208,7 +208,7 @@ License Manager provides a Local License Server option, enabling organizations t
 * Ensure target devices are connected to the Local Licensing Server
 
 #### `IMPORTANT PERSISTENCE NOTES:` 
-* **To set license keys to remain on the device following an Enterprise Reset**:
+* **To use StageNow to persist license keys on the device following an Enterprise Reset**:
  * **All License Manager and Persist Manager steps MUST be stored in a <u>SINGLE PROFILE</u>**.
  * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
  * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.

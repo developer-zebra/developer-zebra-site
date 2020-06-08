@@ -24,40 +24,26 @@ The base [EB installation](../setup) includes all necessary components to allow 
 * **The all-new [Enterprise App Configurator](../eac) utility simplifies [DOM injection](../dominjectionandroid)** with a point-and-click interface and requires no coding or manual config-file creation. DOM injection adds capabilities to a running EB app without changing the source code. 
 * **Updated [Licensing Guide](../licensing)** now contains instructions for making license keys persist on a device and links to Zebra's newest License Server Administrator guides for Linux and Windows. 
 * **Now automatically releases scanner resources when Android app for EB goes to the background**.
-* Integration with DataWedge for concurrent scanning is improved
+* Improved integration with DataWedge for concurrent scanning
 * Barcode configuration now persists after onPause, onResume cycles
 * Now supports sendKey events in Device API
 
-
 ### New/Updated APIs
 
-[Barcode API](../)
-[Device API](../) updated with SendKey suport
+**[Device API](../) now supports sendKey events**.
+<!-- 
 [Camera API](../) no longer supports FlashMode "On" setting
-
+[Barcode API](../)
+ -->
 ### End of Support
 
 * **No longer supports devices running Android 7.x Nougat** (except WT6000)
 
 ### Device Support
 
-No new devices were added to the supported device list with this release. 
+No new devices were added with this release. 
 
 **See the [full list of supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)**.
-
------
-
-### New/Updated Features/Guides
-
-OLD OLD OLD
-
-* **Supports [Pinned Shortcuts](../configreference/#shortcutcreation) on Android 8.x Oreo and later**
-
-OLD OLD OLD
-
-### New/Enhanced APIs
-**<u>A new [SerialComm API](../../api/serialcomm)</u>** extends Enterprise Browser to allow apps to communicate with serial devices for: 
-* Read operations
 
 ----- 
 

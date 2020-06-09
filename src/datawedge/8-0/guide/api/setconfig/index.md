@@ -1007,7 +1007,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 
   <tr>
 	<td>aim_type</td>
-	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>4 - Presentation<br>5 - Continuous Read<br>6 - Press and Sustain</td>
+	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>4 - Presentation<br>5 - Continuous Read<br>6 - Press and Sustain<br>7 – Press and Continue</td>
   </tr>
 
   <tr>

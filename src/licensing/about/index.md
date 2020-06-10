@@ -64,6 +64,13 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   </tr>
 
   <tr>
+  <td><a href="#softwarecomponents">Device Central</a></td>
+  <td>Available Q3 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
+  <td>Included</td>
+  <td>Supported only on devices running Android 10.</td>
+  </tr>
+
+  <tr>
   <td><a href="#softwarecomponents">Device Diagnostics</a></td>
   <td>Included</td>
   <td>Included</td>
@@ -74,7 +81,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents1.5">Device Tracker</a></td>
   <td>Available Q4 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
   <td>Available Q4 2020</td>
-  <td>
+  <td></td>
   </tr>
 
   <tr>
@@ -198,13 +205,13 @@ Allows any application on a device to acquire data from the device scanner(s) an
 
 -----
 <a name="softwarecomponents1.5"></a>
-<!-- ### Device Central
-**Centralized method for connecting and monitoring Bluetooth peripherals** using a simple user interface. Pair and unpair Bluetooth peripherals, monitor connection status, provide details on supported peripherals and update firmware. 
+### Device Central
+**Centralized solution for connecting and monitoring Bluetooth peripherals** using a simple user interface. Pair and unpair Bluetooth peripherals, monitor connection status, provide details on supported peripherals and update firmware. 
 
 [Learn more about Device Central](/devicecentral)
 
 -----
- -->
+
 ### Device Diagnostics
 Instantly tests and diagnoses the hardware operability of a Zebra mobile device to determine system health and functionality. DDT is useful for quickly troubleshooting device issues and increasing worker productivity by reducing device downtime. 
 

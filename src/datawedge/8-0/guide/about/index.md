@@ -148,6 +148,7 @@ For more information about approved languages or to download a localized operati
 ## Recent Version History
 
 ### Added in DataWedge 7.6
+* **Support for Unique Device Identification (UDI) barcodes -** GS1, HIBCC and ICCBBA barcode support is not available in initial versions of Android 10 Q devices. UDI support for these barcodes will be added back in DataWedge beginning with Android 10 device updates in August 2020.
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
   * Set [Finnish Postal 4S](../api/setconfig/#scannerinputparameters) and [Dutch Postal 3S](../api/setconfig/#scannerinputparameters) with SetConfig API.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 
@@ -156,7 +157,6 @@ For more information about approved languages or to download a localized operati
 * **Image Capture Mode** option from **Reader Params** is removed due to changes in the scanner framework.
 
 **Deprecations:**
-* **Support for Unique Device Identification (UDI) barcodes is deprecated.** GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the DataWedge API. UDI support will be removed from the DataWedge API beginning with Android 10 Q device support.
 * **Support for SimulScan API is deprecated.** SimulScan support will be removed from DataWedge beginning with Android 10 Q device support.
 
 ### Added in DataWedge 7.5
@@ -174,7 +174,6 @@ For more information about approved languages or to download a localized operati
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/voice).
 * Added new **[DPM support](../input/barcode#readerparams)** for barcode reader and [SetConfig](../api/setconfig) API.
 * **Enterprise Keyboard** option visible in the DataWedge profile screen is an upcoming feature for future use. 
-* **Support for Unique Device Identification (UDI) barcodes, such as GS1, HIBCC and ICCBBA, is being deprecated** – UDI is supported on [selected Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
 
 ### Added in DataWedge 7.3
 * Added support for new **[Grid Matrix decoder](../input/barcode).**

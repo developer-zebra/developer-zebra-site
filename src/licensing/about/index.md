@@ -20,16 +20,15 @@ menu:
 
 **With its two-tiered system, Zebra gives partners the flexibility** of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows.
 
-**Zebra Professional-series devices provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
-
-**Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
+* **Zebra Professional-series devices provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
+* **Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
 
 > **`IMPORTANT:`<br>When Multi-user Android is enabled on a device**, MX and Mobile DNA features work only with Primary users. 
 
 -----
 
 ## MDNA Components and Features  
-Here's what comes with Zebra Professional and Enterprise devices and the actions required to enhance a Pro device. 
+The following table indicates which features are included with Zebra Professional and Enterprise devices and lists the action(s) required to enhance a Professional device with Enterprise Features or Products. 
 
 **NOTE: Each <u>MDNA license covers all MDNA features</u> for one device**.
 
@@ -37,8 +36,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 <tbody>
   <tr bgcolor="#dce8ef">
     <th>Product/Feature</th>
-    <th>To add to a<br>Professional Device:</th>
-    <th>To add to a<br>Enterprise Device:</th>
+    <th>To add product/feature to a<br>Professional device</th>
+    <th>To add product/feature to a<br>Enterprise device</th>
     <th><br>Notes</th>
   </tr>
 
@@ -58,9 +57,9 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#softwarecomponents">DataWedge</a></td>
+  <td>Included&#42;&#42;</td>
   <td>Included</td>
-  <td>Included</td>
-  <td><a href="../process">MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/document capture</td>
+  <td>&#42;&#42;<a href="../process">MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/document capture</td>
   </tr>
 
   <tr>
@@ -199,7 +198,9 @@ Converts legacy green-screen apps into Android apps with a modern, tap-only UI f
 -----
 
 ### DataWedge
-Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. **NOTE: Professional devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture** These features are displayed in DataWedge as "NextGen SimulScan." 
+Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. 
+
+&#42;&#42;**NOTE: Professional devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture**. In DataWedge, these features are referred to as "NextGen SimulScan." 
 
 [Learn more about DataWedge](/datawedge)
 

@@ -23,7 +23,7 @@ menu:
 * **Zebra Professional-series devices provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
 * **Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
 
-> **`IMPORTANT:`<br>When Multi-user Android is enabled on a device**, MX and Mobile DNA features work only with Primary users. 
+> **`IMPORTANT:`<br>When Multi-user Android is enabled on a device**, MX and Mobility DNA features work only with Primary users. 
 
 -----
 

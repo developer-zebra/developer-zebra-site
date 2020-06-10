@@ -66,8 +66,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
   <td>Available Q3 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
-  <td>Included</td>
-  <td>Supported only on devices running Android 10.</td>
+  <td>Available Q3 2020</td>
+  <td>Supported only on devices running Android 10 or later</td>
   </tr>
 
   <tr>

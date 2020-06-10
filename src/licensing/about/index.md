@@ -16,7 +16,7 @@ menu:
 
 ## Overview
 
-**[Zebra Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** is a set of productivity, performance and security tools and features that enhance Zebra devices running Android. 
+**[Zebra Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** is a set of tools and features for enhancing productivity, performance and security of Zebra devices running Android. 
 
 **With its two-tiered system, Zebra gives partners the flexibility** of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows.
 
@@ -88,7 +88,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license required</a><br> for multi-barcode and<br>image/document capture features</td>
+  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/document capture (planned for future; contact sales rep.)</td>
   </tr>
 
   <tr>
@@ -102,7 +102,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents2.1">Enterprise Home Screen</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices.</td>
+  <td>Free with all Zebra devices</td>
   </tr>
 
   <tr>

@@ -1,5 +1,5 @@
 ---
-title: Zebra Licensing Process
+title: Zebra MDNA Licensing Process
 layout: guide.html
 product: Zebra Licensing
 menu:
@@ -18,6 +18,7 @@ menu:
 This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use, applying the license manually to individual devices and mass-deploying licenses using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
 > **Not yet ready to buy**? [Request an evaluation license](#evaluationlicense). 
+> **Not sure which product or feature is needed**? [Request an evaluation license](../about/#mdnacomponentsandfeatures).
 
 -----
 

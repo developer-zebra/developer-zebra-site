@@ -60,7 +60,7 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents">DataWedge</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td><a href="../process">MDNA Enterprise license required</a><br> for multi-barcode and image/document capture<br>(displayed as "NextGen SimulScan")</td>
+  <td><a href="../process">MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/document capture</td>
   </tr>
 
   <tr>

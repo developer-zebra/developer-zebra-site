@@ -9,9 +9,9 @@ The Lifeguard Over the Air Manager (formerly FOTA Manager or FotaMgr) controls t
 
 ### `SUPPORT NOTES:` 
 
-* **This CSP is supported only on QC8956-platform devices running Android 7.x Nougat or later** with [LifeGuard Update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) 19 or later**.
+* **This CSP is supported only on QC8956-platform devices running Android 7.x Nougat or later** with [LifeGuard Update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) 19 or later.
 * On devices with MX versions prior to 9.0, this CSP is displayed as FOTA Manager (FotaMgr).
-* For some devices, this CSP **requires purchase of a Mobility DNA Enterprise License**. [Learn more](/licensing). 
+* **For some devices, this CSP requires purchase of a Mobility DNA Enterprise License**. [About MDNA licensing](/licensing). 
 
 <!--
 2/25/20- per eng (TUT-35395), old note (below) changed to above.

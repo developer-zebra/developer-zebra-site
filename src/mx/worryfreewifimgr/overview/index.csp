@@ -9,7 +9,7 @@ order: 0
 WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and diagnostics tools for Zebra devices. 
 
 #### `IMPORTANT:` 
-* For some devices, use of Worry-free Wi-Fi tools **requires purchase of a Mobility DNA Enterprise License**.
+* For some devices, use of Worry-free Wi-Fi tools **requires purchase of a Mobility DNA Enterprise License**. [About MDNA licensing](/licensing). 
 * **For StageNow users, Worry-free Wi-Fi is supported only on**: 
  * **StageNow 3.2 or later**
  * **MX 8.3 or later**

@@ -199,7 +199,7 @@ Converts legacy green-screen apps into Android apps with a modern, tap-only UI f
 -----
 
 ### DataWedge
-Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. Professional devices include all DataWedge features **<u>except multi-barcode scanning, and image/document capture</u>**. 
+Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. **NOTE: Professional devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture** These features are displayed in DataWedge as "NextGen SimulScan." 
 
 [Learn more about DataWedge](/datawedge)
 

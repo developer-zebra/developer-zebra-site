@@ -65,8 +65,8 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
 
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
-  <td>Available Q3 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
-  <td>Available Q3 2020</td>
+  <td>Available Q2 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
+  <td>Available Q2 2020</td>
   <td>Supported only on devices running Android 10 or later</td>
   </tr>
 
@@ -95,14 +95,14 @@ Here's what comes with Zebra Professional and Enterprise devices and the actions
   <td><a href="#softwarecomponents2.1">Enterprise Browser</a></td>
   <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
   <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
-  <td>Supported on devices running<br>Android and Windows Mobile/CE</td>
+  <td>Supported on devices running<br>Android and Windows Mobile/CE<br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html">See all supported devices</a></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2.1">Enterprise Home Screen</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices</td>
+  <td>Free with all Zebra devices.</td>
   </tr>
 
   <tr>

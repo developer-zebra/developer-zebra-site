@@ -1105,13 +1105,13 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Press and Release -** The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
 
-* **Press and Continue -** The scan beam starts when the trigger is pressed. A subsequent trigger hold or release keeps the decode session active until the beam timer expires or the next trigger press and release. This avoids early wear of the trigger button and minimizes the user effort to press and hold the hard trigger button during a decode session. 
-
 * **Presentation -** Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
 
 * **Continuous Read -** A press and hold of the scan trigger continuously scans barcodes. The same barcode can be scanned multiple times. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
+
+* **Press and Continue -** The scan beam starts when the trigger is pressed. A subsequent trigger hold or release keeps the decode session active until the beam timer expires or the next trigger press and release. This avoids early wear of the trigger button and minimizes the user effort to press and hold the hard trigger button during a decode session. 
 
 **DPM Illumination Control -** Controls illumination for DPM barcodes: 
 * **Direct Illumination -** Scanner uses only direct (white) illumination. Recommended for use with dot peen barcodes - tilt the part 30 degrees for optimal decoding.

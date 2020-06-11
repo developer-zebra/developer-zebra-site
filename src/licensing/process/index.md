@@ -161,19 +161,20 @@ A screen appears as below.
 
 #####License-file push option: 
 
-&#49;. Download(†) `.BIN` file(s) and push to the device. <br>
-&#50;. In StageNow, create a Profile that includes License Manager actions of "ActivateAID" and "Use preactivated license file option" similar to that seen in the image below.
-<br>Be sure to also include the file name and path in the relevant field (as shown): 
+**&#49;. Download(†) `.BIN` file(s) and push to the device**. <br>
+**&#50;. In StageNow, create a Profile that includes the License Manager actions** "ActivateAID" and "Use preactivated license file option" similar to that seen in the image below.<br>
+**Also include the file name and fully qualified path** in the relevant field (as shown):
 <img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
 *Click image to enlarge; ESC to exit.*
 <br>
-&#51;. **To persist license key(s)** on the device following an Enterprise Reset:
+**&#51;. To persist license key(s)** on the device following an Enterprise Reset:
 * **a. Push key `.BIN` file(s) to** `/enterprise/usr` folder on the device.
 * **b. <u>From a single Profile</u>**:
  * **Configure WLAN settings** using Wi-Fi CSP.
  * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device").
  * **Preserve settings using [Persist Manager](/mx/persistmgr).**<br>
-&#52;. **Deploy the Profile as usual** to activate license key on the device. For more StageNow details, see [Create StageNow Profile](#prerequisites) section below. 
+
+**&#52;. Deploy the Profile as usual** to activate license key on the device. For more StageNow details, see [Create StageNow Profile](#prerequisites) section below. 
 
 **(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one license key for a specific device serial number*.
 

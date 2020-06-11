@@ -49,7 +49,7 @@ If any of the following conditions occur in the middle of operation, the hardwar
 4. When pairing is successful, the peripheral is displayed in the list indicating that it is paired.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer device will have a red dot until the respective application is using these Bluetooth peripherals.
 	![img](pair_success.jpg)
 <br>
-####Scan to Pair (Display Barcode to Pair)
+#### Scan to Pair (Display Barcode to Pair)
 
 To pair by scanning the displayed barcode on the mobile computer.  This applies to peripherals that have scanning capability, such as Bluetooth handheld scanners (ie. DS3678) and ring scanners (ie. RS6000):
 1. Launch **Device Central** from the Apps menu.
@@ -64,7 +64,7 @@ To pair by scanning the displayed barcode on the mobile computer.  This applies 
 	![img](pair_success.jpg)
 <br>
 
-####Manually Pair
+#### Manually Pair
 
 To pair a peripheral manually if unable to pair via Bluetooth: 
 
@@ -77,13 +77,13 @@ To pair a peripheral manually if unable to pair via Bluetooth:
 	![img](mac_address.jpg)
 <br>
 
-###Paired Device List
+### Paired Device List
 
-Once pairing is complete, the peripheral is listed in the **Scan and Pair** tab. The paired peripherals are listed by device name, showing the connected state as indicated by the green (connected) or red (disconnected) dot. An **Unpair** button next to each peripheral allows the capability to unpair each device individually. The icons for each peripheral represent the type of device by category: scanner, headset and printer.  
+Once pairing is complete, the peripheral is listed in the **Scan and Pair** tab. The paired peripherals are listed by device name, showing the connected state as indicated by the green (connected) or red (disconnected) dot. An **Unpair** button next to each peripheral allows the capability to unpair each device individually. For identified devices, the icons for each peripheral represent the type of device by category, such as scanner, headset and printer. All other unidentified are displayed as generic Bluetooth icons. 
 	![img](paired_devices.jpg)
 <br>
 
-###Unpair a Peripheral
+### Unpair a Peripheral
 To unpair a Bluetooth peripheral:
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap the **Unpair** button for the desired peripheral to unpair.
@@ -96,15 +96,21 @@ To unpair a Bluetooth peripheral:
 	![img](unpaired.jpg)
 <br>
 
-##Notifications
+## Notifications
 
 Device Central displays a notification of the connected peripheral in the Notification bar. This notification displays information on the type of peripheral connected and the length of time for the connection. This information remains in the notification bar for the duration of the active connection. 
 <br>
 	![img](notification.jpg)
 <br>
 Tapping on the notification displays the Device Details for the corresponding peripheral.
+<br>
+For Android 10 or higher, Device Central displays a notification related to the running service.  
+<br>
+<img style="height:400px" src="notification_Android10.png"/>
+<br>
+Tapping on the notification opens the Device Central app.
 
-##Device Details
+## Device Details
 
 The **Device Details** screen of the peripheral is accessible from either one of the following:
 
@@ -114,76 +120,76 @@ The **Device Details** screen of the peripheral is accessible from either one of
 
 The device information listed may vary depending on device type and manufacturer. This information may include: device model, manufacturer, Bluetooth Mac address, serial number, battery information, etc. If supported, the details screen may provide buttons at the bottom to allow tasks to be performed, such as Update Firmware or Page an attached RS6000 Ring Scanner. The following displays a sample of a paired peripheral:
 <br>
-	![img](device_details_hs.jpg)
+<img style="height:400px" src="device_details_3.0.png"/>
 <br>
 
-###Page a Connected Peripheral
+### Page a Connected Peripheral
 To page a supported connected peripheral (such as RS6000 Bluetooth Ring Scanner):
 1. Launch **Device Central** from the Apps menu.  
 2. In the **Scan and Pair** tab, tap on the desired device to pair, in this case RS6000.  The **Device Details** screen appears.
-	![img](device_details_rs.jpg)
+<img style="height:400px" src="device_details_3.0.png"/>
 <br>
 3. Scroll down to the bottom and tap on the **Page** button.  
-	![img](page_btn.jpg)
+<img style="height:400px" src="firmware_btn_3.0.png"/>
 <br>
 4. Page will be heard on the RS6000 peripheral device until the trigger button is pressed.
 
-###Update Firmware
+### Update Firmware
 In order to update the firmware on a connected peripheral, the firmware .dat file must be placed in the Device Central file storage area on the device’s SD Card:  _/sdcard/Android/data/com.symbol.devicecentral/files/_
 
 To perform a firmware update on supported peripherals (such as RS6000):
 1. Launch **Device Central** from the Apps menu.  
 2. Open the **Device Details** screen of the desired device to perform the firmware update, in this case RS6000. For example, in the **Scan and Pair** tab tap on RS6000. The Device Details screen appears.
-	![img](device_details_rs.jpg)
+<img style="height:400px" src="device_details_3.0.png"/>
 <br>
 3. Scroll down to the bottom and tap on the **Firmware Update** button. 
-	![img](firmware_btn.jpg)
+<img style="height:400px" src="firmware_btn_3.0.png"/>
 <br>
 The Firmware Update screen appears.
-    ![img](firmware_update_screen.jpg)
+<img style="height:400px" src="firmware_update_3.0.png"/>
 <br>
 4. Tap on **Browse File**. Navigate to the file location and select the firmware update file.
-	![img](firmware_browse.jpg)
+<img style="height:400px" src="firmware_browse_3.0.png"/>
 <br>
 5. Tap **Update Firmware**. A confirmation popup appears. 
-	![img](firmware_popup.jpg)
+<img style="height:400px" src="firmware_popup_3.0.png"/>
 <br>
 6. Tap **Yes**. A warning message appears. The progress is seen through the notification bar.
-	![img](firmware_warning.jpg)
+<img style="height:400px" src="firmware_warning.jpg"/>
 <br>
-7. As indicated from the warning, once the update is complete the RS6000 will reboot.
+7. As indicated from the warning, once the update is complete the device will reboot.
 8. Verify if the update is successful by validating the firmware version in the Device Details screen after the peripheral reconnects.
 
-##Peripherals Summary List
+## Peripherals Summary List
 
 The **Peripherals** tab provides a list of the paired Bluetooth peripherals. The peripherals are listed by device name showing their connected state as indicated by the green dot (connected) or red dot (disconnected). If the peripheral is in the connected state, additional information is displayed for supported peripherals such as Zebra RS6000 Bluetooth Scanner and ZEbra HS3100 Bluetooth Headset.  This information includes battery status and the length of time the peripheral has been connected. Some connected peripherals may provide action buttons that allow the user to perform an action associated with a given peripheral. For example, the RS6000 allows a user to Page the connected scanner or update the firmware.  
 <br>
 	![img](peripherals_list.jpg)
 <br>
 
-##My Device
+## My Device
 The **My Device** tab displays information pertaining to the Android device which Device Central is running on and its battery.  This information includes: device model, device serial number, OS version, system build number, battery level, battyer part number, battery serial number, and battery manufactured date.
 <br>
 	![img](my_device.jpg)
 <br>
 
-##Configuration
+## Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
 
 * **Enable/Disable Single Pairing of the Same Device Class**: If enabled, it allows only one device to be paired from each device category, such as scanner, headset and printer. <br>
 _For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
-_For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  
+_For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  <br>
+**Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature will be deprecated from Device Central CSP in a future release. Instead, it will be configurable though [Bluetooth Manager CSP](/mx/bluetoothmgr).
 * **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <br>
+
 	![img](BT_setting.jpg)
-<br>
+ * **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
 
-* **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
-
-## Notes
+## Usage Notes
 * When in **Android Multiple User mode,** Device Central only supports the Primary user.
-* **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central.
+* **Silent Pairing** can be enabled/disabled via [Bluetooth Manager CSP](/mx/bluetoothmgr), allowing the confirmation prompt to be bypassed during the pairing process.
 * The **Device Central scanning profile in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
 * Only **Zebra Bluetooth scanners are listed in the notification drawer in Android when connected to the device**. All other peripheral devices are listed only in the Device Central main UI.
 <br><br><br>
@@ -195,3 +201,5 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 
 * [About Device Central](../about)
 * [Device Central Setup](../setup)
+* [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
+* [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices

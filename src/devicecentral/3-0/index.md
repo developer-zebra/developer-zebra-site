@@ -7,8 +7,6 @@ menu:
   items:
     - title: About
       url: /devicecentral/3-0/guide/about
-    - title: Setup
-      url: /devicecentral/3-0/guide/setup
     - title: Using Device Central
       url: /devicecentral/3-0/guide/usage
     - icon: fa fa-download

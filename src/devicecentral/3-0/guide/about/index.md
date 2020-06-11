@@ -9,8 +9,6 @@ productversion: '3.0'
 
 **Device Central** provides a centralized way for an organization to connect and monitor supported Bluetooth peripherals.  Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. 
 
-<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be installed through Google Play or downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. </p>
-
 Device Central features:
 
 * Simple scan and pair to a [supported Bluetooth peripheral](#supporteddevices)
@@ -20,15 +18,19 @@ Device Central features:
 * Paging to locate a paired and connected peripheral (applies to supported Bluetooth scanners)
 * Firmware update utility for supported peripherals (applies to supported Bluetooth scanners)
 
+> <b>Important Information:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Starting with Android 10, <b>Device Central is no longer built-in the device.</b> It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <b>Mobility DNA Enterprise License Required –</b> For some devices, Device Central requires a Mobility DNA Enterprise License. <a href="/licensing">About MDNA Licensing</a>    
+
 <p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
 ## New in Device Central 3.0
-* **Support added for Android 10 -** Device Central 3.0 is the first version supporting Android 10.
 * **Install via downloaded .APK -** On Android 10 or higher, Device Central is released via Zebra support portal. Android 9 devices or lower are no longer supported.
-* **Mobility DNA Enterprise License Required –** For Zebra Professional-series devices, Device Central requires a Mobility DNA Enterprise License.   
-* **Connection Management for any Bluetooth Peripheral -** Device Central now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, whereas previously a restricted list of peripheral devices were supported. 
+* **Mobility DNA enterprise license required –** For Zebra Professional-series devices, Device Central requires a Mobility DNA Enterprise License.   
+* **Connection management for any Bluetooth peripheral -** Device Central now supports Pairing/Unpairing of **all Bluetooth peripherals** that follow the Bluetooth standards, whereas previously a restricted list of peripheral devices were supported. 
 * **Fixed issue with inability to pair with printers and other accessories if authentication is set with user PIN entry.** Previously, only devices with a default PIN value of "0000" were supported. 
 * **Fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.**
+* Newly supported devices in this release: TC21 Android 10
 * Known Issues: 
       * The serial number for HS3100 Bluetooth headset may report incorrectly.
       * When connecting a device, it may take 10-15 seconds for the battery information to appear if the device is supported to provide battery information.
@@ -69,4 +71,6 @@ Device Central supports Pairing/Unpairing of all Bluetooth peripherals that foll
 
 * [Device Central Setup](../setup)
 * [Device Central Usage Guide](../usage)
+* [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
+* [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices
 

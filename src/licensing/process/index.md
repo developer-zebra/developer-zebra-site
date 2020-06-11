@@ -163,8 +163,7 @@ A screen appears as below.
 
 1. Download(†) `.BIN` file(s) and push to the device. 
 2. In StageNow, create a Profile that includes License Manager actions of "ActivateAID" and "Use preactivated license file option" similar to that seen in the image below.<br>Be sure to also include the file name and path in the relevant field (as shown). 
-<img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
-<br>
+<img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/><br>*Click image to enlarge; ESC to exit.*
 3. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
  * **a. Be sure to push key `.BIN` file(s) to** `/enterprise/usr` folder on the device.<br>
  * **b. <u>From a single Profile</u>**:<br>
@@ -173,9 +172,9 @@ A screen appears as below.
    * **Preserve settings using [Persist Manager](/mx/persistmgr).**
 4. Deploy the Profile as usual to activate license key on the device. 
 
-**(†)** To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains one license key for a specific device serial number.
+**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one license key for a specific device serial number*.
 
-For more information about using StageNow, see [Create StageNow Profile](#createstagenowprofilesection) section below. 
+#####For more information about using StageNow, see [Create StageNow Profile](#createstagenowprofile) section below. 
 
 #### The device is now licensed to use the app or feature(s). 
 

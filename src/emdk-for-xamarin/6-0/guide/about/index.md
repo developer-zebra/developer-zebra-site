@@ -69,7 +69,20 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 -----
 
-## News in v6.0
+## New in v6.0
+
+####`JUNE 2020 UPDATE:`
+
+**MultiDex support added in Visual Studio 2019**. 
+
+To activate MultiDex support in EMDK for Xamarin 6.0:  
+
+* Update the EMDK NuGet package to v6.0.0.58
+* Compile applications using Visual Studio 2019 with MultiDex option enabled  
+
+For help updating, see the [Nuget Setup Guide](../nuget)
+
+-----
 
 ### New Features
 

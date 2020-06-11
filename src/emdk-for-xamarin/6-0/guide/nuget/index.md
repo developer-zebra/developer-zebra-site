@@ -7,7 +7,7 @@ productversion: '6.0'
 
 Starting with version 3.0, EMDK for Xamarin development tools are installed from NuGet packages and updated using the NuGet package management system. The EMDK-X NuGet package adds to Microsoft Visual Studio the API libraries required for building Android applications with Xamarin. **The package must be added to any Android project before the APIs are available for use**. 
 
-> **Zebra recommends using EMDK-X with Visual Studio 2017**. 
+> **Zebra recommends using EMDK-X with Visual Studio 2017 (or later)**. 
 
 <!-- 
 In previous versions of EMDK for Xamarin, the EMDK APIs were distributed through a Xamarin component. In late 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it was phasing out support for Xamarin components and that all providers would be required to use NuGet packages.
@@ -18,6 +18,8 @@ In previous versions of EMDK for Xamarin, the EMDK APIs were distributed through
 * Visual Studio 2017 for Windows
 * Visual Studio 2019 for Windows `NEW`
 
+**Note**: Later versions might vary slightly.
+ 
 -----
 
 ### Prerequisites
@@ -36,7 +38,7 @@ The following software is required to use EMDK for Xamarin:
 * Java Development Kit (JDK) v7u75 or newer
 * **Visual Studio 2017 for Mac OS** (Xamarin Studio is no longer supported)
 
-**Attention Visual Studio 2015 users**: EMDK for Xamarin supports Visual Studio 2015 <u>only up to version 15.5</u>. Upgrading to any newer version results in failure. **Zebra recommends using Visual Studio 2017**. 
+**Attention Visual Studio 2015 users**: EMDK for Xamarin supports Visual Studio 2015 <u>only up to version 15.5</u>. Upgrading to any newer version results in failure. **Zebra recommends using Visual Studio 2017 (or later)**. 
 
 -----
 
@@ -44,9 +46,9 @@ The following software is required to use EMDK for Xamarin:
 
 #### Windows
 
-The following instructions apply to Visual Studio 2017. A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio](https://visualstudio.microsoft.com/downloads/) before proceeding. 
+The following instructions apply to Visual Studio 2017 (later versions might vary slightly). A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
-**To install the NuGet package in Visual Studio 2017 for Windows**: 
+**To install the NuGet package in Visual Studio for Windows**: 
  
 1. From within a project, right-click the project name and **select "Manage NuGet Packages..."** from the menu:
 	<img alt="image" style="height:276px" src="setup_01.png"/>
@@ -75,9 +77,9 @@ _Click to enlarge; ESC to exit_.
 
 #### Mac OS
 
-The following instructions apply to Visual Studio 2017, which must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
+The following instructions apply to Visual Studio 2017 (later versions might vary slightly), which must be installed to complete the steps below. If necessary, [install Visual Studio](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
-**To install the NuGet package in Visual Studio 2017 for Mac**:
+**To install the NuGet package in Visual Studio for Mac**:
 
 1. In the project, select **Project -> "Add NuGet Packages..."**
 	<img alt="image" style="height:273px" src="Mac_install_01.png"/>

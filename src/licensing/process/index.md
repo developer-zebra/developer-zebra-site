@@ -18,7 +18,7 @@ menu:
 This guide explains the process of obtaining a [Zebra Mobility DNA Enterprise](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html) license for commercial use, applying the license manually to individual devices and mass-deploying licenses using Zebra StageNow and an Enterprise Mobile Management (EMM) System.
 
 > **Not yet ready to buy**? [Request an evaluation license](#evaluationlicense). 
-> **Not sure which product or feature is needed**? [Request an evaluation license](../about/#mdnacomponentsandfeatures).
+> **Not sure which MDNA product or feature is needed**? [See the full list](../about/#mdnacomponentsandfeatures).
 
 -----
 
@@ -28,10 +28,10 @@ License activation requires ***ALL THREE*** of the following:
 1. **One or more license keys** (aka Activation IDs) purchased for the target device(s) and/or app(s) 
 2. **One or more supported Zebra device(s) with the correct License Manager app** installed:<br>
  &nbsp;&nbsp;&nbsp;&#8226; **Android**: License Manager 3.1.1 or later (pre-installed on supported devices)<br>
- &nbsp;&nbsp;&nbsp;&#8226; **Windows Mobile/CE**: License Manager 1.0 or later (included with Zebra-app installers)<br>
-3. **Devices must be connected to one of the following**:<br> 
- &nbsp;&nbsp;&nbsp;&#8226; **Zebra's internet-based license server** for online activation<br> **OR**<br>
- &nbsp;&nbsp;&nbsp;&#8226; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>
+3. **Device(s) must be connected to one of the following**:<br> 
+ &nbsp;&nbsp;&nbsp;&#8226; **Zebra's internet-based license server** for online activation<br> &nbsp;&nbsp;&nbsp;**OR**<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **A company's own Linux or Windows server** (for off-line activation of any supported device)<br>&nbsp;&nbsp;&nbsp;**OR**<br>
+ &nbsp;&nbsp;&nbsp;&#8226; **A Windows computer running the Zebra StageNow desktop tool** 
 
 -----
 
@@ -122,16 +122,23 @@ This section **applies only to manual license activation on a single device runn
 -----
 
 ## Off-line Licensing
-License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices that do not have access to the internet. **This option requires software installed on a company's own IP-based Linux or Windows server** in advance of license distribution to devices. 
+License Manager provides a Local License Server (LLS) option, enabling organizations to employ an on-premise server to distribute licenses to devices that do not have access to the internet. **This option requires software installed on a company's own IP-based Linux or Windows server** in advance of license distribution to devices. 
 
-> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
+> **For more information, including hardware requirements and setup instructions, download the appropriate LLS Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
+
+Alternatively, device licenses can be applied one-at-a-time from a Windows computer running Zebra StageNow. 
 
 ### BEFORE BEGINNING
-* **Install and configure Local License Server**
-* **Acquire a `.BIN` file containing licenses (Activation IDs) from Zebra License Server** for each 1000 devices to be licensed **`<< CONFIRMATION NEEDED on 1000-device max.`**
-* **Ensure devices are connected to the local licensing server**. 
+* **For LLS option**: 
+ * Install and configure Local License Server
+ * Import license keys acquired from the Zebra License Server
+* **For license-file push option**: 
+ * Acquire `.BIN` file(s) containing license(s) (Activation IDs) from the Zebra License Server**<!--  for each 1000 devices to be licensed **`<< CONFIRMATION NEEDED on 1000-device max.`** -->
+ * Ensure device(s) are connected to the LLS or a Windows computer running StageNow. 
 
-#####To License a Device from a Local Server: 
+-----
+
+#####Local License Server option: 
 
 **Note**: The Zebra Enterprise Browser app is used as an example. 
 
@@ -147,6 +154,28 @@ A screen appears as below.
  **Successful license activation is indicated by a screen similar to the image below**: 
  <img alt="" style="height:350px" src="7.png"/>
  <br>
+
+#### The device is now licensed to use the app or feature(s). 
+
+-----
+
+#####License-file push option: 
+
+1. Download(†) `.BIN` file(s) and push to the device. 
+2. In StageNow, create a Profile that includes License Manager actions of "ActivateAID" and "Use preactivated license file option" similar to that seen in the image below.<br>Be sure to also include the file name and path in the relevant field (as shown). 
+<img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
+<br>
+3. **To persist license key(s)** on the device following an Enterprise Reset:<br> 
+ * **a. Be sure to push key `.BIN` file(s) to** `/enterprise/usr` folder on the device.<br>
+ * **b. <u>From a single Profile</u>**:<br>
+   * **Configure WLAN settings** using Wi-Fi CSP.<br>
+   * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device").<br>
+   * **Preserve settings using [Persist Manager](/mx/persistmgr).**
+4. Deploy the Profile as usual to activate license key on the device. 
+
+**(†)** To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains one license key for a specific device serial number.
+
+For more information about using StageNow, see [Create StageNow Profile](#createstagenowprofilesection) section below. 
 
 #### The device is now licensed to use the app or feature(s). 
 
@@ -188,15 +217,20 @@ _Click image to enlarge_.
 <br>
 &#54;. **Set the parameters as required** to activate the license:<br>
 * **For cloud-based licensing**: <br>
- * **Zebra recommends this option for the best device visibility from the licensing portal**:<br>
+ **Zebra recommends this option for the best device visibility from the licensing portal**:<br>
  * **Zebra license action**: Activate AID -> select "Use one of the Zebra Licensing cloud options"<br>
  * **Cloud Source**: "Use the Zebra licensing Production Cloud." <br>
  * Enter the AID and quantity.<br> 
  * **Click "Continue" button**.<br>
-* **For local (on-premise) licensing**:<br>
- * **Best for fire-walled networks or those lacking internet access**:  
+* **For local (on-premise) licensing server**:<br>
+ **Best for fire-walled networks or those lacking internet access**:<br>  
  * **Zebra license action**: Activate AID -> select "Use a local license server option"<br>
  * **Enter the URL, friendly name, AID and quantity**.
+ * **Click "Continue" button**.<br>
+* **For local (on-premise) licensing with `.BIN` file**:<br>
+ **Best for small numbers of devices without a local server**:<br>  
+ * **Zebra license action**: Activate AID -> select "Use preactivated license file option"<br>
+ * **Enter the path and file name of the `.BIN` file on the device**.
  * **Click "Continue" button**.<br>
 
 &#55;. **To persist license key(s)** on the device following an Enterprise Reset:<br> 

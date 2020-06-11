@@ -69,9 +69,30 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 -----
 
-## News in v6.0
+## New in v7.0
 
-### New Features
+> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored via LifeGuard patch for Android 10 to be released in Q3 2020**. 
+
+-----
+
+## Version History
+
+### Added in v6.0
+
+####`JUNE 2020 UPDATE:`
+
+**MultiDex support added in Visual Studio 2019**. 
+
+**To activate MultiDex** support in EMDK for Xamarin 6.0:  
+
+* **Update** the EMDK NuGet **package to v6.0.0.58**
+* **Compile apps** using Visual Studio 2019 **with MultiDex option enabled**  
+
+**See the [EMDK-X Setup Guide](../nuget) for help updating**.
+
+-----
+
+#### New Features
 
 **<u>Support for MX 9.3</u>** adds the following features and enhancements:
 * **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
@@ -91,7 +112,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
   * "Rotate" and "minus" keys 
 
 
-### API Enhancements
+#### API Enhancements
 
 **<u>Enhanced Barcode Manager API</u>** now includes support for: 
 * OcrA, OcrB, MICRE13B, USCurrency Symbologies and the OCR label type: 
@@ -126,12 +147,9 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 **<u>Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)</u>** 
 
-### Deprecations
+#### Deprecations
 **<u>Support is deprecated for Unique Device Identification (UDI) barcodes</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. **UDI decoding will be removed from the Barcode API** when EMDK begins targeting Android 10 Q devices.
 
------
-
-## Version History
 
 ### Added in v5.0
 

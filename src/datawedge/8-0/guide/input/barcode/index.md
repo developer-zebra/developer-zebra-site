@@ -138,10 +138,10 @@ _Scanner configuration_
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * **Multibarcode -** supported since DataWedge 8.0
 * **Document capture -** supported since DataWedge 8.0, only available on select devices and scanners
+<!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
-* **OCR A/B -** supported since DataWedge 7.5
-<br>
-<p>For Zebra Professional-series devices, NextGen SimulScan requires a Mobility DNA Enterprise license. See <a href="/licensing/about">Zebra Licensing</a> for more information. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
+* **OCR A/B -** supported since DataWedge 7.5 -->
+<p>For some devices, NextGen SimulScan requires a Mobility DNA Enterprise license. <a href="/licensing">About MDNA Licensing</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
 _License required on Zebra Professional-tier devices_
 

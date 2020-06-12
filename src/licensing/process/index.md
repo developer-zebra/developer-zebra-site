@@ -138,7 +138,7 @@ Alternatively, device licenses can be applied one-at-a-time from a Windows compu
 
 -----
 
-#####Local License Server option: 
+### LLS Option
 
 **Note**: The Zebra Enterprise Browser app is used as an example. 
 
@@ -159,9 +159,11 @@ A screen appears as below.
 
 -----
 
-#####License-file push option: 
+### License-file Push Option
 
-**&#49;. Download(†) `.BIN` file(s) and push to the device**. <br>
+Please read all steps before beginning. 
+
+**&#49;. Download(†) `.BIN` file(s) from Zebra Licensing Portal and push to the corresponding device(s)**. <br>
 **&#50;. In StageNow, create a Profile that includes the License Manager actions** "ActivateAID" and "Use preactivated license file option" similar to that seen in the image below.<br>
 **Also include the file name and fully qualified path** in the relevant field (as shown):
 <img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
@@ -170,16 +172,14 @@ A screen appears as below.
 **&#51;. To persist license key(s)** on the device following an Enterprise Reset:
 * **a. Push key `.BIN` file(s) to** `/enterprise/usr` folder on the device.
 * **b. <u>From a single Profile</u>**:
- * **Configure WLAN settings** using Wi-Fi CSP.
  * **Activate key(s) using License Manager** (licensing method="reference a preactivated license file already on the mobile device").
- * **Preserve settings using [Persist Manager](/mx/persistmgr).**<br>
+ * **Add a [Persist Manager](/mx/persistmgr) step to persist this profile.**<br>
 
 **&#52;. Deploy the Profile as usual** to activate license key on the device. For more StageNow details, see [Create StageNow Profile](#prerequisites) section below. 
 
-**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one license key for a specific device serial number*.
-
 #### The device is now licensed to use the app or feature(s). 
 
+**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one license key for a specific device serial number*.
 
 -----
 

@@ -179,7 +179,7 @@ Please read all steps before beginning.
 
 #### The device is now licensed to use the app or feature(s). 
 
-**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one license key for a specific device serial number*.
+**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one or more license keys for a specific device serial number*.
 
 -----
 

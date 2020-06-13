@@ -2,7 +2,7 @@
 title: ScannerConfig.PresentationModeSensitivity
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Controls the sensitivity of scene detection in presentation mode. Default value is HIGH.
 

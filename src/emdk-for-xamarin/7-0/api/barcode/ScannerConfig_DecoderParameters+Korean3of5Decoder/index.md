@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+Korean3of5Decoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 
     

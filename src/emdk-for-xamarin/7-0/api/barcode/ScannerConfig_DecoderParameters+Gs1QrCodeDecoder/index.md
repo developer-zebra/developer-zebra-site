@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+Gs1QrCodeDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 
     

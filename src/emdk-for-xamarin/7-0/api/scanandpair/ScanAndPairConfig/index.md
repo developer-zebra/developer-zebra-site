@@ -2,7 +2,7 @@
 title: ScanAndPairConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.
 

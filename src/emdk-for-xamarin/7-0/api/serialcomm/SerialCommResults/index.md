@@ -2,7 +2,7 @@
 title: SerialCommResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Provides serial communication error codes and details.
 

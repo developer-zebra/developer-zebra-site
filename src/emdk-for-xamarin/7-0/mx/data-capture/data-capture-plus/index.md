@@ -2,7 +2,7 @@
 title: Data Capture Plus Profile Feature Reference
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '6.0'
+productversion: '7.0'
 ---
 
 ## Overview

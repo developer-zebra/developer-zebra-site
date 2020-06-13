@@ -2,7 +2,7 @@
 title: SerialCommMgr
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Primary object to access the serial communication feature for communication with remote device via USB or Serial.
 

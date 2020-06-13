@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.MailMarkDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The MailMark class provides access to parameters that are available for the MailMark decoder.
 

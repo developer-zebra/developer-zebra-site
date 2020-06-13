@@ -2,7 +2,7 @@
 title: SAMType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Describes all possible SAM types.
 

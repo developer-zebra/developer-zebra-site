@@ -2,7 +2,7 @@
 title: ScanDataCollection.ScanData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Provides a list of the different types of barcode data to be scanned.
 

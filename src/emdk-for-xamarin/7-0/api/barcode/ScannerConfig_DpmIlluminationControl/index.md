@@ -2,7 +2,7 @@
 title: ScannerConfig.DpmIlluminationControl
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Controls the illumination for DPM barcode reading. Default value is CYCLE.
 

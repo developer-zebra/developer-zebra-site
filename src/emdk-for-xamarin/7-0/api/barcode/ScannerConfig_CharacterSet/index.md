@@ -2,7 +2,7 @@
 title: ScannerConfig.CharacterSet
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 For selection of character set for decoding the barcode.
 

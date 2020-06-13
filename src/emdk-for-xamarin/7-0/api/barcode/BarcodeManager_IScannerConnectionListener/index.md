@@ -2,7 +2,7 @@
 title: BarcodeManager.IScannerConnectionListener
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '6.0'
+productversion: '7.0'
 ---
 An interface for notifying client applications when the external scanner is connected or disconnected to the mobile device.
 

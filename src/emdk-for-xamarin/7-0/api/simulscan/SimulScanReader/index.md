@@ -2,7 +2,7 @@
 title: SimulScanReader
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Represents and provides access to the physical reader device.
 

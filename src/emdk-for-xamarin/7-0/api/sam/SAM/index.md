@@ -2,7 +2,7 @@
 title: SAM
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 SAM class represents and provides access to the physical SAMs.
 

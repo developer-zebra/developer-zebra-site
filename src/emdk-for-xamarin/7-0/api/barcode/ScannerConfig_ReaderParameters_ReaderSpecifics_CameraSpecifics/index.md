@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.CameraSpecifics
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 CameraSpecific class provides access to the camera scanner specific parameters.
 

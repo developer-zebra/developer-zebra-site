@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.Matrix2of5Decoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The Matrix2of5 class provides access to parameters that are available for the Matrix2of5 decoder.
 

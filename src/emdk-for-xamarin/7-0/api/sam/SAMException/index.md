@@ -2,7 +2,7 @@
 title: SAMException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 SAM API throws SAMException on incorrect API use by client or other unexpected error.
 

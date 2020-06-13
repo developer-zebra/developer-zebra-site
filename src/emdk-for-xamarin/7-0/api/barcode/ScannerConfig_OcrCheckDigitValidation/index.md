@@ -2,7 +2,7 @@
 title: ScannerConfig.OcrCheckDigitValidation
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Selects Check Digit Validation Scheme.
 

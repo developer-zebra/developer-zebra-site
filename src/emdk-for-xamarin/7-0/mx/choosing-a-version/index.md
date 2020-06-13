@@ -2,7 +2,7 @@
 title: Choosing an MX Version
 layout: mx-filter.html
 product: EMDK For Xamarin
-productversion: '6.0'
+productversion: '7.0'
 ---
 
 ## Overview

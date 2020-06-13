@@ -2,7 +2,7 @@
 title: ScannerConfig.MultiBarcodeParams
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The MultiBarcodeParams class provides access to multi-barcode parameters that are available to configure.
 

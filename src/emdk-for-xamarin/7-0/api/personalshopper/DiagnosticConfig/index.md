@@ -2,7 +2,7 @@
 title: DiagnosticConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Configures averageCurrent and shopping tripInMinutes. Must be configured before calling the get diagnostics parameter data.
 

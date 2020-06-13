@@ -2,7 +2,7 @@
 title: BarcodeManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 This is the base class that all EMDK manager classes are derived from.
 

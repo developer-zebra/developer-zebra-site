@@ -2,7 +2,7 @@
 title: ScannerConfig.AimingPattern
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Describes the aiming pattern to be turned ON/OFF.
 

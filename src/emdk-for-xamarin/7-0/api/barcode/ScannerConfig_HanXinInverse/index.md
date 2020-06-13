@@ -2,7 +2,7 @@
 title: ScannerConfig.HanXinInverse
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 This parameter allows the user to select decoding on inverse HanXin barcodes.
 

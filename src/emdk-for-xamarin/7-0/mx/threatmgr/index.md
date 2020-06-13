@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: threatmgr
 product: EMDK For Xamarin
-productversion: '6.0'
+productversion: '7.0'
 ---
 
 

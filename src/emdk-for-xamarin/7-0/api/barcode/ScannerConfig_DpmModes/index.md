@@ -2,7 +2,7 @@
 title: ScannerConfig.DpmModes
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Select the DPM mode based on the type of barcode being scanned. Default value is MODE_2.
 

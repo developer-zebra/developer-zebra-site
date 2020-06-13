@@ -2,7 +2,7 @@
 title: Notification.BeepParams
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 This holds the information required for the beep pattern.
 

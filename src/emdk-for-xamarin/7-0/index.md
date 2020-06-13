@@ -2,7 +2,7 @@
 title: EMDK For Xamarin
 redirect_url: /emdk-for-xamarin/6-0/guide/about
 product: EMDK For Xamarin
-productversion: '6.0'
+productversion: '7.0'
 insert:
   file: emdk-for-xamarin/6-0/guide/about/index.md
 layout: guide.html

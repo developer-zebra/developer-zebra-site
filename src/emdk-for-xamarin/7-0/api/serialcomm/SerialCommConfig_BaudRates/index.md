@@ -2,7 +2,7 @@
 title: SerialCommConfig.BaudRates
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.
 

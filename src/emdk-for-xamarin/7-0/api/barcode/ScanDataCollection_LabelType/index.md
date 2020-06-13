@@ -2,7 +2,7 @@
 title: ScanDataCollection.LabelType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 List of label types of the scanner data.
 

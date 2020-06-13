@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.CodaBarDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The CodaBar class provides access to parameters that are available for the CodaBar decoder.
 

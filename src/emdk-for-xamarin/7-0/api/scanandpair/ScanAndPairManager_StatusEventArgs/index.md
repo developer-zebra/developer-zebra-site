@@ -2,7 +2,7 @@
 title: ScanAndPairManager.StatusEventArgs
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device and pair/unpair with the remote Bluetooth device.
 

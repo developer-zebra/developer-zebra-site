@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+USCurrency
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The USCurrency class provides access to parameters that are available for the USCurrency decoder.
 

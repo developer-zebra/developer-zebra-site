@@ -2,7 +2,7 @@
 title: SimulScanTemplateElement
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Represents elements nested directly under the tag in an XML template file.
 

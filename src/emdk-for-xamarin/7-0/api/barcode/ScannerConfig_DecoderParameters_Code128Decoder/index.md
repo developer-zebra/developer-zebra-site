@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.Code128Decoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 The Code128 class provides access to parameters that are available for the Code128 decoder.
 

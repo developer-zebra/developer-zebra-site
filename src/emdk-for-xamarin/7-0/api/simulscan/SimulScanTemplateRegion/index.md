@@ -2,7 +2,7 @@
 title: SimulScanTemplateRegion
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Represents a particular region in a Template.
 

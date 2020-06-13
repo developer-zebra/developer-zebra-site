@@ -2,7 +2,7 @@
 title: ScannerConfig.OcrOrientation
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '6.0' 
+productversion: '7.0' 
 ---
 Specify the orientation of an OCR String to be read.
 

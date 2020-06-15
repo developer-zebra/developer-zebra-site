@@ -17,40 +17,55 @@ Refer to [DX30 Quick Start Guide](https://www.zebra.com/us/en/support-downloads/
 
 ## Supported Devices
 
+Supported devices (GMS and non-GMS):
+
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
     <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+    <th style="text-align:center">Android 10 <br>(Q)</th>
   </tr>
   <tr>
     <td>ET56</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>L10</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>MC33</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC20/TC25</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC21</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC51</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -59,12 +74,14 @@ Refer to [DX30 Quick Start Guide](https://www.zebra.com/us/en/support-downloads/
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC57</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <!--
   <tr>
@@ -81,12 +98,14 @@ Refer to [DX30 Quick Start Guide](https://www.zebra.com/us/en/support-downloads/
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC77</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
 </table>
 

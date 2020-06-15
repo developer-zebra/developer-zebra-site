@@ -139,6 +139,7 @@ For more information about approved languages or to download a localized operati
 
 -----
 ## New in DataWedge 8.0
+* **Support for Unique Device Identification (UDI) barcodes** has been temporarily suspended for devices running Android 10 and later. UDI support will be restored via a LifeGuard patch for Android 10 to be released in Q3 2020.
 * New secure Intent Output with [Component Information](../output/intent/#intentoutputsetup) and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
 * New option to use [DataWedge content provider](../output/intent/#intentoutputsetup) in Intent Output to scan large data, such as images, with new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters) and [Use Content Provider Programmer's Guide](../programmers-guides/content-provider).
 * New [NextGen SimulScan Configuration](../input/barcode/#nextgensimulscanconfiguration) replacing legacy SimulScan features.
@@ -149,7 +150,6 @@ For more information about approved languages or to download a localized operati
 ## Recent Version History
 
 ### Added in DataWedge 7.6
-* **Support for Unique Device Identification (UDI) barcodes -** GS1, HIBCC and ICCBBA barcode support is not available in initial versions of Android 10 Q devices. UDI support for these barcodes will be added back in DataWedge beginning with Android 10 device updates in August 2020.
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
   * Set [Finnish Postal 4S](../api/setconfig/#scannerinputparameters) and [Dutch Postal 3S](../api/setconfig/#scannerinputparameters) with SetConfig API.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 

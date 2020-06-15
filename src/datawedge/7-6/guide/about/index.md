@@ -137,7 +137,6 @@ For more information about approved languages or to download a localized operati
 
 -----
 ## New in DataWedge 7.6
-* **Support for Unique Device Identification (UDI) barcodes -** GS1, HIBCC and ICCBBA barcode support is not available in initial versions of Android 10 Q devices. UDI support for these barcodes will be added back in DataWedge beginning with Android 10 device updates in August 2020.
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.
   * Set [Finnish Postal 4S](../api/setconfig/#scannerinputparameters) and [Dutch Postal 3S](../api/setconfig/#scannerinputparameters) with SetConfig API.
 * New [Report Decoded Barcodes](../input/barcode/#multibarcodeparams) option for MultiBarcode decoding. 

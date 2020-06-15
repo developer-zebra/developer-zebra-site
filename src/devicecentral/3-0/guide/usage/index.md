@@ -9,7 +9,7 @@ productversion: '3.0'
 This section describes how to use **Device Central**. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
 ### Version History
-* **Device Central 3.0:** Mobility DNA Enterprise License required for Zebra Professional-series devices, now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, fixed issue pairing with printers and other accessories if authentication is set with user PIN entry, and fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.
+* **Device Central 3.0:** Mobility DNA Enterprise License required for some devices, now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, fixed issue pairing with printers and other accessories if authentication is set with user PIN entry, and fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.
 * **Device Central 2.1:** Use of hardware scan trigger to scan and pair. 
 
 ## Pair/Unpair a Peripheral
@@ -34,34 +34,35 @@ Upon launching Device Central, a DataWedge profile named "DeviceCentral" is crea
 
 If any of the following conditions occur in the middle of operation, the hardware and software trigger will not be responsive in Device Central:
 * DataWedge is disabled 
-* "DeviceCentral" profile is disabled 
-* "DeviceCentral" profile is deleted 
+* "DeviceCentral" DataWedge profile is disabled 
+* "DeviceCentral" DataWedge profile is deleted 
 
 **Using Soft Trigger:**
 
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap **Scan barcode to pair** button.
-	![img](scan_barcode_btn.jpg)
+<img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
 <br>
 3. The scan beam is illuminated. Scan the Bluetooth MAC address barcode label on the desired peripheral to pair. Ensure that Bluetooth is enabled on the peripheral and is set to discoverable mode.  Refer to the peripheral user guide for instructions.
-	![img](scan_pair_discover.jpg)
 <br>
-4. When pairing is successful, the peripheral is displayed in the list indicating that it is paired.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer device will have a red dot until the respective application is using these Bluetooth peripherals.
-	![img](pair_success.jpg)
+4. When pairing is successful, the peripheral is displayed in the list indicating that it is paired. A green dot next to the listed device indicates that the device is connected and may be in use. Other peripherals such as a Bluetooth headset or printer device will have a red dot until the respective application is using these Bluetooth peripherals.
+<!--
+	![img](pair_success.jpg) -->
 <br>
+
 #### Scan to Pair (Display Barcode to Pair)
 
 To pair by scanning the displayed barcode on the mobile computer.  This applies to peripherals that have scanning capability, such as Bluetooth handheld scanners (ie. DS3678) and ring scanners (ie. RS6000):
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap **Display barcode to pair** button.
-	![img](display_barcode_pair_btn_screen.jpg)
+<img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
 <br>
 3. A barcode is displayed.
 	![img](display_barcode.jpg)
 <br>
 4. Using the peripheral, scan the displayed barcode.
 5. When the pairing is successful, the peripheral is displayed in the list with a green dot indicating that it is paired.
-	![img](pair_success.jpg)
+<!-- 	![img](pair_success.jpg) -->
 <br>
 
 #### Manually Pair
@@ -70,42 +71,40 @@ To pair a peripheral manually if unable to pair via Bluetooth:
 
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap the **MAC address** field.
-	![img](mac_address.jpg)
+<img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
 <br>
 3. Enter in the Bluetooth Mac address for the peripheral to pair to.
 4. When pairing is successful, the peripheral is displayed in the list.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer will have a red dot until the respective application is using these Bluetooth peripherals.
-	![img](mac_address.jpg)
+<!--
+	![img](mac_address.jpg) -->
 <br>
 
 ### Paired Device List
 
 Once pairing is complete, the peripheral is listed in the **Scan and Pair** tab. The paired peripherals are listed by device name, showing the connected state as indicated by the green (connected) or red (disconnected) dot. An **Unpair** button next to each peripheral allows the capability to unpair each device individually. For identified devices, the icons for each peripheral represent the type of device by category, such as scanner, headset and printer. All other unidentified are displayed as generic Bluetooth icons. 
-	![img](paired_devices.jpg)
+<img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
 <br>
 
 ### Unpair a Peripheral
 To unpair a Bluetooth peripheral:
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap the **Unpair** button for the desired peripheral to unpair.
-	![img](unpair_btn.jpg)
-<br>
+<img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
+
 3. A confirmation pop-up message appears.  Tap **OK**.
-	![img](unpair_popup.jpg)
-<br>
 4. Once unpaired, a message appears indicating the peripheral has been disconnected and the peripheral is removed from the list.
-	![img](unpaired.jpg)
+<img style="height:400px" src="unpair_3.0.png"/>
 <br>
 
 ## Notifications
 
 Device Central displays a notification of the connected peripheral in the Notification bar. This notification displays information on the type of peripheral connected and the length of time for the connection. This information remains in the notification bar for the duration of the active connection. 
 <br>
-	![img](notification.jpg)
+<img style="height:400px" src="notification_3.0.png"/>
 <br>
 Tapping on the notification displays the Device Details for the corresponding peripheral.
 <br>
 For Android 10 or higher, Device Central displays a notification related to the running service.  
-<br>
 <img style="height:400px" src="notification_Android10.png"/>
 <br>
 Tapping on the notification opens the Device Central app.
@@ -132,7 +131,7 @@ To page a supported connected peripheral (such as RS6000 Bluetooth Ring Scanner)
 3. Scroll down to the bottom and tap on the **Page** button.  
 <img style="height:400px" src="firmware_btn_3.0.png"/>
 <br>
-4. Page will be heard on the RS6000 peripheral device until the trigger button is pressed.
+4. A page will be heard on the RS6000 peripheral device until the trigger button is pressed.
 
 ### Update Firmware
 In order to update the firmware on a connected peripheral, the firmware .dat file must be placed in the Device Central file storage area on the device’s SD Card:  _/sdcard/Android/data/com.symbol.devicecentral/files/_
@@ -154,9 +153,8 @@ The Firmware Update screen appears.
 5. Tap **Update Firmware**. A confirmation popup appears. 
 <img style="height:400px" src="firmware_popup_3.0.png"/>
 <br>
+
 6. Tap **Yes**. A warning message appears. The progress is seen through the notification bar.
-<img style="height:400px" src="firmware_warning.jpg"/>
-<br>
 7. As indicated from the warning, once the update is complete the device will reboot.
 8. Verify if the update is successful by validating the firmware version in the Device Details screen after the peripheral reconnects.
 
@@ -190,7 +188,7 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 ## Usage Notes
 * When in **Android Multiple User mode,** Device Central only supports the Primary user.
 * **Silent Pairing** can be enabled/disabled via [Bluetooth Manager CSP](/mx/bluetoothmgr), allowing the confirmation prompt to be bypassed during the pairing process.
-* The **Device Central scanning profile in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
+* The **scanning profile named “DeviceCentral” in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
 * Only **Zebra Bluetooth scanners are listed in the notification drawer in Android when connected to the device**. All other peripheral devices are listed only in the Device Central main UI.
 <br><br><br>
 

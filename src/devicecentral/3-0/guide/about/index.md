@@ -26,14 +26,14 @@ Device Central features:
 
 ## New in Device Central 3.0
 * **Install via downloaded .APK -** On Android 10 or higher, Device Central is released via Zebra support portal. Android 9 devices or lower are no longer supported.
-* **Mobility DNA enterprise license required –** For Zebra Professional-series devices, Device Central requires a Mobility DNA Enterprise License.   
+* **Mobility DNA enterprise license required –** For some devices, Device Central requires purchase of a [Mobility DNA Enterprise License](/licensing).   
 * **Connection management for any Bluetooth peripheral -** Device Central now supports Pairing/Unpairing of **all Bluetooth peripherals** that follow the Bluetooth standards, whereas previously a restricted list of peripheral devices were supported. 
 * **Fixed issue with inability to pair with printers and other accessories if authentication is set with user PIN entry.** Previously, only devices with a default PIN value of "0000" were supported. 
 * **Fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.**
 * Newly supported devices in this release: TC21 Android 10
 * Known Issues: 
       * The serial number for HS3100 Bluetooth headset may report incorrectly.
-      * When connecting a device, it may take 10-15 seconds for the battery information to appear if the device is supported to provide battery information.
+      * When connecting a Bluetooth peripheral device that provides battery information, such as RS6000 scanner or HS3100 headset, it may take 10-15 seconds for the battery information to appear.
 
 
 ## Version History

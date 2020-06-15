@@ -9,7 +9,7 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 ### Requirements
 
 * **StageNow 4.2** or later
-* **Zebra device running Android 10** or later
+* **Zebra device running Android with MX 10** or later
 * **EMM with Zero Touch support** and credentials
 
 -----

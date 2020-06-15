@@ -6,6 +6,8 @@ menu:
   items:
     - title: About
       url: /licensing/about
+    - title: MDNA Features
+      url: /licensing/about/#mdnacomponentsandfeatures
     - title: Process
       url: /licensing/process
     - title: FAQ

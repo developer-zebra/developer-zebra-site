@@ -46,7 +46,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ## New in v8.0
 
-> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 for devices running Android 10 and later. **UDI support will be returned in a patch to be released in Q3 2020**. 
+> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored in these products via LifeGuard patch for Android 10 to be released in Q3 2020**.
 
 -----
 

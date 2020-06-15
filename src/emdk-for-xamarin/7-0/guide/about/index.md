@@ -71,7 +71,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## New in v7.0
 
-> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored via LifeGuard patch for Android 10 to be released in Q3 2020**. 
+> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored in these products via LifeGuard patch for Android 10 to be released in Q3 2020**.
 
 -----
 

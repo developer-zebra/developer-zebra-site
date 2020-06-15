@@ -37,10 +37,10 @@ The following table indicates which features are included with Zebra Professiona
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
   <tr bgcolor="#dce8ef">
-    <th>Product/Feature</th>
-    <th>To add product/feature to a<br>Professional device</th>
-    <th>To add product/feature to a<br>Enterprise device</th>
-    <th><br>Notes</th>
+    <th width="25%">Product/Feature</th>
+    <th width="25%">To add product/feature to a<br>Professional device</th>
+    <th width="25%">To add product/feature to a<br>Enterprise device</th>
+    <th width="25%"><br>Notes</th>
   </tr>
 
   <tr>

@@ -72,9 +72,7 @@ This section **applies only to manual license activation on a single device runn
 ### License Source Types
 * **Cloud-based server** (internet connection required)
 * **Local server** (on customer premises)
-<!-- available only under special circumstances
-* **Pre-activated** (binary file pushed to device) 
- -->
+* **Pre-activated** binary ("`.BIN`" file) pushed to device  
 
 ### Connectivity Options
 * **Production Cloud Direct -** License Manager maps automatically to web-based Zebra Licensing Server to activate licenses; no server configuration required.
@@ -135,8 +133,10 @@ Alternatively, device licenses can be applied one-at-a-time from a Windows compu
  * Install and configure Local License Server
  * Import license keys acquired from the Zebra License Server
 * **For license-file push option**: 
- * Acquire `.BIN` file(s) containing license(s) (Activation IDs) from the Zebra License Server**<!--  for each 1000 devices to be licensed **`<< CONFIRMATION NEEDED on 1000-device max.`** -->
+ * Acquire `.BIN` file(s) containing license(s) (Activation IDs) from the Zebra License Server (†).**<!--  for each 1000 devices to be licensed **`<< CONFIRMATION NEEDED on 1000-device max.`** -->
  * Ensure device(s) are connected to the LLS or a Windows computer running StageNow. 
+
+**(†)** *[Contact Zebra](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) sales or technical support for custom license-key quantities*.
 
 -----
 
@@ -181,7 +181,7 @@ Please read all steps before beginning.
 
 #### The device is now licensed to use the app or feature(s). 
 
-**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one or more license keys for a specific device serial number*.
+**(†)** *To download a license key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu in the portal. Each `.BIN` file contains one or more license keys for a specific device serial number. [Contact Zebra](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) sales or technical support for custom license-key quantities*.
 
 -----
 
@@ -250,7 +250,7 @@ _Click image to enlarge_.
  * a. **Launch the License Manager app** on the device; activated license should be visible.<br>
  * b. **Quantity of available licenses visible on the licensing portal should decrease** by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
-**(†)** To download a License key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains license(s) for specific device(s).
+**(†)** *To download a License key as a `.BIN` file from the Zebra Licensing Portal, select "Download Capability Response" from the Device Action menu. Each `.BIN` file contains license(s) for specific device(s). [Contact Zebra](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) sales or technical support for custom license-key quantities*.
 
 > **`CAUTION:` Zebra strongly recommends testing any new Profile on a working device before general deployment**.
 

@@ -2,11 +2,11 @@
 title: Contact Us
 layout: guide.html
 index: /index.json
-product: Feedback
+product: 
 productversion:
 menu:
   items:
-    - title: About Techdocs
+    - title: About Zebra Techdocs
       url: /about
     - title: I Need Tools For...
       url: /help
@@ -33,9 +33,10 @@ We strive to provide accurate and up-to-date information that's easy to find and
 * **"TechDocs Feedback"** in the email subject 
 
 > [Email to jvwc67@zebra.com](mailto:jvwc67@zebra.com?Subject=TechDocs%20Feedback)
-
-Sincerely, 
+<!-- -->
+Sincerely, <br>
 
 -TechDocs team
 
+<br><br>
 [Back to Main page](../)

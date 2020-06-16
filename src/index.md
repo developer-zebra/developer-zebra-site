@@ -271,7 +271,7 @@ products:
     btn-text: Latest Guides
     image: /images/logo_techdocs.png
     sections:
-      - title: About TechDocs
+      - title: About Zebra TechDocs
         url: /about
       - title: Tools Help
         url: /help
@@ -285,7 +285,7 @@ menu:
   items:
     - image: /new/new_icon.png 
       url: /new
-    - title: ABOUT TECHDOCS
+    - title: ABOUT ZEBRA TECHDOCS
       url: /about
     - title: I NEED TOOLS FOR...
       url: /help

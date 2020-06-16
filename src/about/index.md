@@ -1,11 +1,11 @@
 ---
-title: About Techdocs
+title: About Zebra Techdocs
 layout: guide.html
-product: About
+product: 
 productversion:
 menu:
   items:
-    - title: About Techdocs
+    - title: About Zebra Techdocs
       url: /about
     - title: I Need Tools For...
       url: /help
@@ -32,7 +32,10 @@ menu:
 **Below is the main TechDocs page**, reachable at [techdocs.zebra.com](http://techdocs.zebra.com/) or by clicking the Zebra icon from within any product. Each product has its own "tile" with the product name linking to the "About" page and buttons to the product's main sections. When multiple versions of a product are documented, a drop-down list on the right side of the tile (shown) links to docs for each of the available versions. 
 
 ![img](techdocs_tilepage.png)
-_Click on image to enlarge_
+
+<p><i>Click on image to enlarge</i></p>
+<br>
+<!-- -->
 
 -----
 
@@ -42,6 +45,7 @@ _Click on image to enlarge_
 ![img](product_page.png)
 _Click on image to enlarge_
 <br>
+<!-- -->
 
 -----
 
@@ -51,7 +55,7 @@ _Click on image to enlarge_
 ![img](getting_started.png)
 _An "on-ramp" for getting up to speed with Enterprise Browser_ 
 <br>
-
+<!-- -->
 -----
 
 ### Guides Page
@@ -60,7 +64,7 @@ _An "on-ramp" for getting up to speed with Enterprise Browser_
 ![img](guides.png)
 _Index of Enterprise Browser guides classifies available information for quick reference_ 
 <br>
-
+<!-- -->
 -----
 
 ### Redirection 
@@ -85,6 +89,8 @@ _Index of Enterprise Browser guides classifies available information for quick r
 * techdocs.zebra.com/simulscan
 * techdocs.zebra.com/stagenow
 
+<br>
+<!-- -->
 -----
 
 ### SmartDocs 
@@ -95,7 +101,7 @@ If there is difficulty viewing SmartDocs on mobile devices, enable desktop mode 
 ![img](smart_docs.png)
 _Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or a Full-Device Wipe_ 
 <br>
-
+<!-- -->
 -----
 
 ### Integrated Google Search
@@ -106,6 +112,7 @@ _Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or
 _Results of a search for "Barcode" from within DataWedge 6.3 docs_ 
 <br>
 
+<!-- -->
 -----
 
 ### Feedback

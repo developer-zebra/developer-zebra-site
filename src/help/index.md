@@ -4,7 +4,7 @@ title: I Need Tools For...
 layout: guide.html
 menu:
   items:
-    - title: About TechDocs
+    - title: About Zebra TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help
@@ -22,6 +22,7 @@ menu:
 
 Zebra Technologies provides devices for the enterprise to acquire, process and consume data from barcodes, magnetic stripe cards, RFID tags, smart cards, images, text and other technologies. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, Zebra offers a broad array of tools designed to suit the requirements and capabilities of most any organization. 
 
+<!-- -->
 -----
 
 ## Scanning
@@ -38,6 +39,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 ##### Go to [DataWedge docs](../datawedge) 
 ##### Need help deciding between DataWedge vs EMDK? See [DataWedge vs EMDK Comparison](#datawedgevsemdkcomparison)
 
+<!-- -->
 -----
 
 ### SimulScan
@@ -48,6 +50,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 
 ##### Go to [SimulScan docs](../simulscan)
 
+<!-- -->
 -----
 
 ### Enterprise Browser
@@ -58,6 +61,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 
 ##### Go to [Enterprise Browser docs](../enterprise-browser)
 
+<!-- -->
 -----
 
 ### EMDK
@@ -69,7 +73,7 @@ Organizations with access to Java and/or C# developers can use [EMDK for Android
 ##### Go to [EMDK for Android docs](../emdk-for-android)
 ##### Go to [EMDK for Xamarin docs](../emdk-for-xamarin)
 ##### Need help deciding between DataWedge vs EMDK? See [DataWedge vs EMDK Comparison](#datawedgevsemdkcomparison)
-
+<!-- -->
 -----
 
 ### DataWedge vs EMDK Comparison
@@ -188,7 +192,7 @@ It is common for developers to be faced with the decision to choose between Data
 
 </table>
 
-
+<!-- -->
 -----
 
 ## Printing
@@ -197,7 +201,7 @@ Zebra output solutions range from simple line printing with [Zebra's printers](h
 
 ##### [Printing from Enterprise Browser](http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/)
 ##### [LinkOS Code Samples](https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE) 
-
+<!-- -->
 -----
 
 ## Security
@@ -222,7 +226,7 @@ Zebra security ranges from simple, feature-based solutions to whole-device lock-
 When a device will be dedicated to a single task&mdash;an information kiosk, patient check-in system or price scanner, for example&mdash;Zebra's Enterprise Home Screen might be a good choice. Kiosk Mode opens one app in full-screen mode and prevents exiting when BACK and HOME keys are pressed.
 
 Learn more about [EHS Kiosk Mode](../ehs/2-6/guide/features/#kioskmode) 
-
+<!-- -->
 -----
 
 ## App Migration
@@ -240,6 +244,7 @@ When there's a need to move an existing app from one device platform to another&
 
 [Migrate a C# Windows Mobile/CE app](../emdk-for-xamarin)
 
+<!-- -->
 -----
 
 #### Feedback

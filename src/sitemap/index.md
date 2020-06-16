@@ -96,7 +96,7 @@ automenu:
           url: http://techdocs.zebra.com/enterprise-browser
 menu:
   items:
-    - title: About Techdocs
+    - title: About Zebra Techdocs
       url: /about
     - title: I Need Tools For...
       url: /help

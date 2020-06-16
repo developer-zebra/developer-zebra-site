@@ -260,9 +260,10 @@ Mobile browser environment for quickly building HTML5-based apps for Android and
 -----
 
 ### Enterprise Keyboard
-**Flexible and efficient alternative to the stock Android keyboard** provides programmable keys, switches quickly between languages and custom key layouts, can scan barcode data directly into an application using any of the device's scanners. 
+**Flexible and efficient alternative to the stock Android keyboard** provides programmable keys, switches quickly between languages and custom key layouts, can scan barcode data directly into an application using any of the device's scanners. Includes EKB Designer tool for making custom key layouts.  
 
 [Learn more about EKB](/enterprise-keyboard)
+[Learn more about EKB Designer](/ekd)
 
 -----
 <a name="softwarecomponents3"></a>

@@ -39,8 +39,8 @@ The following table indicates which features are included with Zebra Professiona
   <tr bgcolor="#dce8ef">
     <th width="25%">Product/Feature</th>
     <th width="25%">To add product/feature to a<br>Professional device</th>
-    <th width="25%">To add product/feature to a<br>Enterprise device</th>
-    <th width="25%"><br>Notes</th>
+    <th width="25%">To add product/feature to an<br>Enterprise device</th>
+    <th width="25%">Licensing<br>Notes</th>
   </tr>
 
   <tr>
@@ -61,7 +61,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents">DataWedge</a></td>
   <td>Included&#42;&#42;</td>
   <td>Included</td>
-  <td>&#42;&#42;<a href="../process">MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/document capture</td>
+  <td>&#42;&#42;<a href="../process"> MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/doc capture</td>
   </tr>
 
   <tr>
@@ -89,7 +89,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
   <td>Included</td>
   <td>Included</td>
-  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/document capture (planned for future; contact sales rep.)</td>
+  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture<br>(planned for future; contact sales rep.)</td>
   </tr>
 
   <tr>

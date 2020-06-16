@@ -79,10 +79,8 @@ All RxLogger settings are stored in a file on the device, permitting remote conf
 &nbsp;&nbsp;&nbsp;• RxLogger v5.4: `/storage/sdcard0/RxLogger`<br>
 &nbsp;&nbsp;&nbsp;• RxLogger v6.0: `/sdcard/RxLogger`<br>
 -->
-* **Internal storage folder:**<br>
-&nbsp;&nbsp;&nbsp;• RxLogger v5.4: `/storage/sdcard0/RxLogger`<br>
-&nbsp;&nbsp;&nbsp;• RxLogger v6.0: `/sdcard/RxLogger`<br>
-* **External storage folder:**  `/storage/sdcard1/RxLogger`
+* **Internal storage folder:** `/sdcard/RxLogger`<br>
+* **External storage folder:** `/storage/sdcard1/RxLogger`
 
 <p>When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately. </p>
 

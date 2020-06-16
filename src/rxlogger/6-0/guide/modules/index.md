@@ -315,7 +315,7 @@ The Kernel module captures `kmsg` data from the Android system and outputs it to
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>The base file name to save Kernel Logs with</p>
+  normal'>The base file name to save Kernel Logs</p>
   </td>
  </tr>
  <tr>
@@ -398,6 +398,88 @@ The Kernel module captures `kmsg` data from the Android system and outputs it to
   normal'>The maximum number of Kernel Log files to keep at any one time</p>
   </td>
  </tr>
+ <tr style='height:1.5pt'>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;
+  height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable System Timestamp in Kernel Log</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>true</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;
+  height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable or disable time stamp in kernel logs</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>System Timestamp Interval</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Integer</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>60</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The interval to add timestamp in kernel logs</p>
+  </td>
+ </tr>
+ <tr style='height:1.5pt'>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;
+  height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable Logcat Integration Override</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt;height:1.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+<tr style='height:1.0pt'>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt;background:#AEAAAA;
+  height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enable or disable logcat integration</p>
+  </td>
+ </tr>
 </table>
 
 -----
@@ -411,7 +493,7 @@ Captures data from Android's internal logging mechanism, sometimes known as logc
 * Radio
 * Main
 * Crash
-
+<br><br>
 Module options allow data from any or all enabled buffers to be stored in separate files or in a single combined file. Output is stored in a series of numbered text files (i.e. `Main0.txt`, `Main1.txt`, `Main2.txt`) with 0 being the newest.
 
 **Reference material**:
@@ -2121,8 +2203,7 @@ The Recovery Module captures recovery/OSupdate logs as well as Android's Rescue 
 
 ## Resource Module
 
-Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs collected metrics as a series of comma separated values stored in files with a `.csv` extension. 
-
+Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs collected metrics as a series of comma separated values stored in files with a `.csv` extension.
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -2329,7 +2410,59 @@ Captures device information and system statistics at specified intervals to dete
   <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Advanced CPU</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables the collection of CPU status</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'>Network</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;background:#AEAAAA;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;background:#AEAAAA;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>true</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables the collection of Network status</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Light</p>
   </td>
   <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2348,7 +2481,7 @@ Captures device information and system statistics at specified intervals to dete
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Enables or disables the collection of Network status</p>
+  normal'>Enables or disables the collection of ambient light level</p>
   </td>
  </tr>
  <tr>
@@ -2381,7 +2514,7 @@ Captures device information and system statistics at specified intervals to dete
   <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Light</p>
+  normal'>Heater</p>
   </td>
   <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2393,14 +2526,66 @@ Captures device information and system statistics at specified intervals to dete
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>true</p>
+  normal'>false</p>
   </td>
  </tr>
  <tr>
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Enables or disables the collection of ambient light level</p>
+  normal'>Enables or disables the collection of heater information</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Hide Non-Applicable data</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;background:#AEAAAA;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;background:#AEAAAA;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables the collection of Non-Applicable data based on device</p>
+  </td>
+ </tr>
+  <tr>
+  <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Hide Raw Data</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Boolean</p>
+  </td>
+  <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>false</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enables or disables the collection of raw data information</p>
   </td>
  </tr>
 </table>

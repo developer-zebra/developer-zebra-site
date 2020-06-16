@@ -2,7 +2,7 @@
 title: Search
 layout: search.html
 index: /licensing/index.json
-product: Zebra Licensing
+product: MDNA Licensing
 menu:
   items:
     - title: About
@@ -16,14 +16,3 @@ menu:
     - icon: fa fa-search
       url: /licensing/search
 ---
-
-
-
-
-
-
-
-
-
-
-

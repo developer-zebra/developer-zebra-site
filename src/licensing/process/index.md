@@ -1,7 +1,7 @@
 ---
 title: Zebra MDNA Licensing Process
 layout: guide.html
-product: Zebra Licensing
+product: MDNA Licensing
 menu:
   items:
     - title: About

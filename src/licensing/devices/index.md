@@ -1,7 +1,7 @@
 ---
 title: Zebra Devices 
 layout: guide.html
-product: Zebra Licensing
+product: MDNA Licensing
 menu:
   items:
     - title: About

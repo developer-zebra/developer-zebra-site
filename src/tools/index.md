@@ -3,7 +3,7 @@ publish: false
 layout: guide.html
 menu:
   items:
-    - title: About Zebra Techdocs
+    - title: About Zebra TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help

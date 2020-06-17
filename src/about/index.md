@@ -1,11 +1,11 @@
 ---
-title: About Zebra Techdocs
+title: About Zebra TechDocs
 layout: guide.html
 product: 
 productversion:
 menu:
   items:
-    - title: About Zebra Techdocs
+    - title: About Zebra TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help
@@ -20,7 +20,7 @@ menu:
 ---
 
 
-**TechDocs** (techdocs.zebra.com) is the main documentation site for Zebra's development tools and applications. It is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
+**Zebra TechDocs** (techdocs.zebra.com) is the main documentation site for Zebra's development tools and applications. It is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
 
 **The video (below) provides a brief guided tour explaining the screenshots that follow**.   
 

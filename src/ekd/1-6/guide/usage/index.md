@@ -311,34 +311,40 @@ Multiple events can be assigned to a single key-press using Macros. Any key can 
 
 ##### To Assign a Macro
 
-1.	In the Action section of the Button Properties panel, **select "Macros" from the drop-down:
- <img alt="" style="height:350px" src="ekd16_macros_1.png"/>
+1. Select a key to which to assign a keyCode. 
+2. In the Action section of the Button Properties panel, **select "Macros" from the Press Action drop-down**:
+ <img alt="" style="height:250px" src="ekd16_macros_1.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-2. In the input box (as seen below), **click the drop-down, to view and select multiple actions:
- <img alt="" style="height:350px" src="ekd16_macros_2.png"/>
+3. In the input box (as seen below), **click the drop-down**. <br>
+ A list of available key events appears.
+4. **Select an event (and value, when appropriate)** from the drop-down and click the "Add" button: 
+ <img alt="" style="height:200px" src="ekd16_macros_3.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-3.	Select an Action from the drop-down: 
- <img alt="" style="height:250px" src="ekd16_macros_3.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-4.	Select any actions from drop down and click on Add.
-Usage Note: Actions like Key in caps, Keys, UC, Delay and for Custom Layout an input box appears like below. Enter a valid value corresponding to the type of Action selected.
+5. **Repeat Step 4 until all desired events are added** to the Macro as desired. <br>
  <img alt="" style="height:250px" src="ekd16_macros_4.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-5.	Multiple actions can select and add to macros. Save the macros by clicking Save button.
+6. When finished, **click the "Save" button**:
  <img alt="" style="height:250px" src="ekd16_macros_5.png"/>
  _Click image to enlarge, ESC to exit_.
 
+##### The Macro is now assigned to the selected key 
+
+-----
+
 #### To Delete a Macro
-1.	Click on cross button present on each macro to remove from the existing Macros action sequence.
+
+1. **Click on the key containing the Macro to delete**.<br> 
+The list of the Macro's key events appears. 
+2. **Click the "X" for each key event** until all are removed from the sequence:
   <img alt="" style="height:250px" src="ekd16_macros_6.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-2.	Save the macros by clicking Save button.
+2. Click the "Save" button to finish.
 
+`WARNING:` The key now performs no function. 
 
 -----
 

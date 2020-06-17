@@ -24,6 +24,22 @@ Other key concepts include **Protection Profiles**, which package security requi
 
 -----
 
+### Prerequisites
+The following are required to bring a Zebra device into CC state: 
+
+* Windows computer with Zebra StageNow 4.2 (or later) installed [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
+* One or more devices support for Federal Information Processing Standard (FIPS) running Android 10 
+* FDE to FBE conversion package
+* others? 
+
+<!-- devices per input doc:
+- TC52, TC72 and MC93 A10 SDM660 FIPS devices
+- define FDE and FBE
+- 
+
+ -->
+
+
 <!-- Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
 
 <img alt="image" style="height:350px" src="VisibilityIQ_dashboard.png"/>

@@ -5,7 +5,7 @@ product: Enterprise Keyboard Designer
 productversion: '1.6'
 ---
 
-#### [What's new in v1.6](#WhatsNewinv16)
+#### [See what's new in v1.6](#whatsnewinv16)
 
 ## Overview
 
@@ -72,13 +72,13 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 
 ### New Features
 
-From RN:
 * **Undo feature** reverses each of the last 10 actions  
 * **Deploy button** automatically exports the current layout to a USB-connected device  
 * **Repeating Keys Action** sends multiple keycodes by long-pressing a key 
 * **Macros** combine multiple keycodes, presses or actions into a single action 
+* **New [predeveloped sample layouts](../../samples/)** can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
 
-* EKD now includes **[predeveloped sample layouts](../../samples/)** that can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
+
 
 <!-- 
 OLD OLD OLD

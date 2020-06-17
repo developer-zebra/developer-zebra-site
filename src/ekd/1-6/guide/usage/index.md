@@ -17,7 +17,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * `ADDED in v1.4:` **[Create "canned text"](#cannedtext)** to appear in a list for easy selection (requires EKB 3.4 or later). 
 * `ADDED in v1.4:` **[Set a default layout](#iicreatelayouts)** to display on input field focus (EKB 3.4+).
 * `ADDED in v1.6:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
-* `ADDED in v1.6:` **Macros feature** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
+* `ADDED in v1.6:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
 * `ADDED in v1.6:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
 * `ADDED in v1.6:` **[Deploy button](#vdeploylayouts)** exports the current layout file to a USB-connected device.  
 
@@ -288,6 +288,89 @@ Buttons can be positioned and resized within a layout by dragging manually, by u
 Button Actions supported by EKD include predefined command strings for generating keyEvent output and for switching the key layout currently displayed on the device. 
 
 **Perform keyEvent Action -** Used to generate a particular keyEvent or output a character. Enter the key and value in key-value format from among the standard [Android keyEvent values](https://developer.android.com/reference/android/view/keyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
+
+#### Macros
+
+Multiple events can be assigned to a single key-press using Macros. Any key can be configured to send any number of keyCodes, events or Actions as listed below. 
+
+**Supported Key-press Actions**:
+
+* PressAction
+* LongPressAction
+* ActionDown
+* ActionUp
+
+**Supported Events**:
+
+* Send keyEvent
+* Send uppercase or lowercase keyCode or Unicode character
+* Switch to a fixed or custom layout
+* Set a delay between Actions
+
+
+To Add Macros
+1.	In the Action section of the Button Properties panel, select the Macros Action from the drop-down.
+
+
+ekd16_macros_2.png
+ekd16_macros_3.png
+ekd16_macros_4.png
+ekd16_macros_5.png
+ekd16_macros_6.png
+
+image 1 
+ <img alt="" style="height:350px" src="ekd16_macros_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+2.	An input box pops up like below. Click on drop down, to view and select multiple actions.
+
+image 2
+
+ <img alt="" style="height:350px" src="ekd16_macros_2.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+3.	Below actions appears in drop down.
+* Key in Caps
+
+Key
+Delay
+UC
+Switch-abc
+Switch-123
+Switch-#&#42;/
+Switch-Scan
+CustomLayout
+ 
+ <img alt="" style="height:350px" src="ekd16_macros_3.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+4.	Select any actions from drop down and click on Add.
+Usage Note: Actions like Key in caps, Keys, UC, Delay and for Custom Layout an input box appears like below. Enter a valid value corresponding to the type of Action selected.
+
+image 4
+ <img alt="" style="height:350px" src="ekd16_macros_4.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+
+5.	Multiple actions can select and add to macros. Save the macros by clicking Save button.
+ 
+ <img alt="" style="height:350px" src="ekd16_macros_5.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+
+
+
+
+To Delete Macros
+1.	Click on cross button present on each macro to remove from the existing Macros action sequence.
+
+image 6
+
+  <img alt="" style="height:350px" src="ekd16_macros_6.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+2.	Save the macros by clicking Save button.
+
 
 -----
 

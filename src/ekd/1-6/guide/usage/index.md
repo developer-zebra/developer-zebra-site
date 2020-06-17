@@ -16,10 +16,10 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * `ADDED in v1.4:` **[Create "canned text"](#cannedtext)** to appear in a list for easy selection (requires EKB 3.4 or later). 
 * `ADDED in v1.4:` **[Set a default layout](#iicreatelayouts)** to display on input field focus (EKB 3.4+).
-* `ADDED in v1.6:` **RepeatKeys function** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
+* `ADDED in v1.6:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
 * `ADDED in v1.6:` **Macros feature** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
 * `ADDED in v1.6:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
-* `ADDED in v1.6:` **Deploy button** exports the current layout file to a USB-connected device. 
+* `ADDED in v1.6:` **[Deploy button](#vdeploylayouts)** exports the current layout file to a USB-connected device.  
 
 -----
 
@@ -29,6 +29,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * **The "Switch-Scan" Press Action** (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
 * **When opening a layout using the "Switch-abc," "Switch-123," "Switch-#&#42;/" and "Switch-Scan" Actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
+* Use of switch actions (Switch-abc, Switch-123, etc.) requires the respective tab(s) (Alpha, Numeric, etc.) to be enabled in [Enterprise Keyboard Preferences](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/settings/#preferences) on the target device(s).
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
@@ -296,7 +297,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 <img alt="" style="height:250px" src="ekd_keyaction.png "/>
  _Click image to enlarge, ESC to exit_.
 <br>
-2. For keycodes (i.e. key in caps, Unicode, etc), a box pops up <u>similar</u> to the one below. <br>**Enter a single value corresponding to the type of Action selected**:  
+2. For keyCodes (i.e. key in caps, Unicode, etc), a box pops up <u>similar</u> to the one below. <br>**Enter a single value corresponding to the type of Action selected**:  
 <img alt="" style="height:150px" src="ekd_keyaction_entry.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
@@ -376,6 +377,21 @@ A list of Canned text or predefined responses can be assigned to any key and app
 ##### Canned text responses are stored and deployed with the layout.
 
 > **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
+
+-----
+
+### Repeat Keys
+
+EKD 1.6 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.6 is required**. 
+
+<img alt="" style="height:150px" src="ekd16_repeat_key.png"/>
+_Click image to enlarge, ESC to exit_.
+
+* **repeatkeyincaps** continuously sends an uppercase letter corresponding to the key being long-pressed as long as the key is held down, regardless of whether the shift key was used.
+* **repeatkey** continuously sends a lowercase letter corresponding to the key being long-pressed as long as the key is held down.
+* **repeatuc** continuously sends the specified Unicode character when the key is long-pressed as long as the key is held down.
+
+> **Note**: These actions apply only to Long-Press Action properties.
 
 -----
 

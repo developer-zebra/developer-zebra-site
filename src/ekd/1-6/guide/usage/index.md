@@ -29,7 +29,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * **The "Switch-Scan" Press Action** (intended to invoke the EKB "scan" layout) sometimes brings up a different layout. 
 * **When opening a layout using the "Switch-abc," "Switch-123," "Switch-#&#42;/" and "Switch-Scan" Actions**, the layout tab name shown is sometimes NOT that of the layout being displayed.
-* Use of switch actions (Switch-abc, Switch-123, etc.) requires the respective tab(s) (Alpha, Numeric, etc.) to be enabled in [Enterprise Keyboard Preferences](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/settings/#preferences) on the target device(s).
+* **Use of switch actions (Switch-abc, Switch-123, etc.) requires the respective tab(s) (Alpha, Numeric, etc.) to be enabled** in [Enterprise Keyboard Preferences](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/settings/#preferences) on the target device(s).
 * **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis) for details.
 * **Deployed layouts sometimes look slightly different** than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.

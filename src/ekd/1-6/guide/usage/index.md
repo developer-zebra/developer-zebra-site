@@ -291,61 +291,6 @@ Button Actions supported by EKD include predefined command strings for generatin
 
 **Perform keyEvent Action -** Used to generate a particular keyEvent or output a character. Enter the key and value in key-value format from among the standard [Android keyEvent values](https://developer.android.com/reference/android/view/keyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
 
-#### Macros
-
-Multiple events can be assigned to a single key-press using Macros. Any key can be configured to send any number of keyCodes, events or Actions as listed below. 
-
-**Supported Key-press Actions**:
-
-* PressAction
-* LongPressAction
-* ActionDown
-* ActionUp
-
-**Supported Events**:
-
-* Send keyEvent
-* Send uppercase or lowercase keyCode or Unicode character
-* Switch to a fixed or custom layout
-* Set a delay between Actions
-
-##### To Assign a Macro
-
-1. Select a key to which to assign a keyCode. 
-2. In the Action section of the Button Properties panel, **select "Macros" from the Press Action drop-down**:
- <img alt="" style="height:250px" src="ekd16_macros_1.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-3. In the input box (as seen below), **click the drop-down**. <br>
- A list of available key events appears.
-4. **Select an event (and value, when appropriate)** from the drop-down and click the "Add" button: 
- <img alt="" style="height:200px" src="ekd16_macros_3.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-5. **Repeat Step 4 until all desired events are added** to the Macro as desired. <br>
- <img alt="" style="height:250px" src="ekd16_macros_4.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-6. When finished, **click the "Save" button**:
- <img alt="" style="height:250px" src="ekd16_macros_5.png"/>
- _Click image to enlarge, ESC to exit_.
-
-##### The Macro is now assigned to the selected key 
-
------
-
-#### To Delete a Macro
-
-1. **Click on the key containing the Macro to delete**.<br> 
-The list of the Macro's key events appears. 
-2. **Click the "X" for each key event** until all are removed from the sequence:
-  <img alt="" style="height:250px" src="ekd16_macros_6.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-2. Click the "Save" button to finish.
-
-`WARNING:` The key now performs no function. 
-
 -----
 
 #### To assign a keyEvent value: 
@@ -378,6 +323,69 @@ The list of the Macro's key events appears.
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
 
 > **Note: Entries are case sensitive**. 
+
+
+#### Macros
+
+Multiple events can be assigned to a single key-press using Macros. Any key can be configured to send any number of keyCodes, events or Actions as listed below. 
+
+**Supported Key-press Actions**:
+
+* PressAction
+* LongPressAction
+* ActionDown
+* ActionUp
+
+**Supported Events**:
+
+* Send keyEvent
+* Send uppercase or lowercase keyCode or Unicode character
+* Switch to a fixed or custom layout
+* Set a delay between Actions
+
+##### To Assign a Macro:
+
+1. Select a key to which to assign a Macro. 
+2. In the Action section of the Button Properties panel, **select "Macros" from the desired Press Action drop-down** (Press, LongPress, ActionDown or ActionUp):  
+ <img alt="" style="height:250px" src="ekd16_macros_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+3. In the input box that appears **click the drop-down**.<br>
+  A partial list of available key events is shown in Step 4.
+ <img alt="" style="height:250px" src="ekd16_macros_2.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+4. **Select an event (and enter a value as appropriate)** from the drop-down and click the "Add" button: 
+ <img alt="" style="height:200px" src="ekd16_macros_3.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+5. **Repeat Step 4 until all desired events are added** to the Macro as desired. <br>
+ <img alt="" style="height:250px" src="ekd16_macros_4.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+6. When finished, **click the "Save" button**:
+ <img alt="" style="height:250px" src="ekd16_macros_5.png"/>
+ _Click image to enlarge, ESC to exit_.
+
+#### The Macro is now assigned to the selected key 
+
+-----
+
+#### To Edit or Delete a Macro
+
+1. **Click on the key containing the Macro to edit or delete**.<br> 
+The list of the Macro's key events appears. 
+2. **Click the "X" for each key event** to be removed from the sequence:
+  <img alt="" style="height:250px" src="ekd16_macros_6.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+3. Add events as desired as in Steps 4 and 5 above.<br>
+ If deleting the Macro, remove all events. 
+4. Click the "Save" button to finish.
+
+`WARNING:` If all events are deleted from a Macro, the key will perform no function. 
+
+-----
 
 #### Usage Notes 	
 

@@ -1,5 +1,5 @@
 ---
-title: Sample Layouts
+title: Zebra EKB Sample Layouts
 layout: guide.html
 product: Enterprise Keyboard Designer
 productversion: '3.6'

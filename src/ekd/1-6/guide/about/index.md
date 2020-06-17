@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Keyboard Designer
+title: About Zebra EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
 productversion: '1.6'

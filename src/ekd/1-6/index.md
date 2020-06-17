@@ -1,5 +1,5 @@
 ---
-title: Enterprise Keyboard Designer
+title: Zebra EKB Designer
 img: ekd_logo.png
 layout: list-mx.html
 menu:

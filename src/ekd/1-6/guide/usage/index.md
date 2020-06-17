@@ -1,5 +1,5 @@
 ---
-title: Using Enterprise Keyboard Designer
+title: Using Zebra EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
 productversion: '1.6'
@@ -541,24 +541,25 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 -----
 
 ### Single Device Deployment
-Press the "Deploy" button (see below) to push the current layout to `/enterprise/device/settings/ekb/config` on the USB-connected device.
 
 #### Deploy button requirements:
 * **Development host**:
+ * <u>No more than one target device connected</u>
  * [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) installed and operable
- * <u>No more than one target device is connected</u>
 * **Target device**: 
  * Enterprise Keyboard 3.6 (or higher) installed and enabled as default input source
  * Connected to host via USB
 
-<img alt="" style="height:250px" src="ekd16_deploy_button.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
-
-If an older config file already exists, a message is displayed similar to the one shown below:  
-<img alt="" style="height:250px" src="ekd16_delete_warning.png"/>
- _Click image to enlarge, ESC to exit_.
- <br>
+1. **Press the "Deploy" button** (see below) to push the current layout to the USB-connected device.
+<br> Layout file is saved to `/enterprise/device/settings/ekb/config` on the device. 
+ <img alt="" style="height:250px" src="ekd16_deploy_button.png"/>
+  _Click image to enlarge, ESC to exit_.
+  <br>
+2. **If an older config file already exists**, a message like the image below is displayed. 
+<br>**Press "Yes" to proceed**, "No" to cancel. 
+ <img alt="" style="height:250px" src="ekd16_delete_warning.png"/>
+  _Click image to enlarge, ESC to exit_.
+  <br>
 
 **Custom key layouts are available on the device immediately upon deployment**. 
 

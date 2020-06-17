@@ -1,7 +1,7 @@
 ---
 title: EKD Setup
 layout: guide.html
-product: Enterprise Keyboard Designer
+product: Zebra EKB Designer Setup
 productversion: '1.6'
 ---
 

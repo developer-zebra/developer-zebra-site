@@ -44,6 +44,8 @@ products:
         url: /datawedge/8-0/guide/samples
       - title: Remote Admin
         url: /datawedge/8-0/guide/admin
+      - title: Licensing
+        url: /datawedge/8-0/guide/licensing
       - title: FAQ
         url: /datawedge/8-0/guide/faq
     versions:

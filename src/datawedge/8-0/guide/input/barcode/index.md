@@ -136,14 +136,16 @@ _Scanner configuration_
 ## NextGen SimulScan Configuration
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
-* **Multibarcode -** supported since DataWedge 8.0
+* **MultiBarcode -** supported since DataWedge 8.0
 * **Document capture -** supported since DataWedge 8.0, only available on select devices and scanners
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
-<p>For some devices, NextGen SimulScan requires a Mobility DNA Enterprise license. <a href="/licensing">About MDNA Licensing</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
+<p>For some devices, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
-_License required on Zebra Professional-tier devices_
+_License required on Zebra Professional devices_
+
+Also see the DataWedge [Licensing](../../licensing) section for more information.
 
 To access NextGen SimulScan Configurations:<br>
 1. In the DataWedge profile, tap **Configure NG SimulScan settings**.
@@ -1567,11 +1569,6 @@ OCR Templates and Options:
 
 ------
 
-**Other DataWedge Input Options**:
-
-* **[Mag-stripe Reader](../msr) -** credit/debit and identity cards
-* **[SimulScan](../simulscan) -** document capture and multibarcode scanning 
-
 **Related guides**:
 
 * [Advanced Data Formatting](../../process/adf)
@@ -1580,4 +1577,5 @@ OCR Templates and Options:
 * [Keystroke Output](../../output/keystroke)
 * [Profiles/Plug-ins](../../profiles)
 * [DataWedge APIs](../../api) 
+* [Licensing](../../licensing)
 

@@ -540,22 +540,27 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
 
 -----
 
-### Manual Push
+### Single Device Deployment
+Press the "Deploy" button (see below) to push the current layout to `/enterprise/device/settings/ekb/config` on the USB-connected device.
+
+#### Deploy button requirements:
+* **Development host**:
+ * [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) installed and operable
+ * <u>No more than one target device is connected</u>
+* **Target device**: 
+ * Enterprise Keyboard 3.6 (or higher) installed and enabled as default input source
+ * Connected to host via USB
 
 <img alt="" style="height:250px" src="ekd16_deploy_button.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 
-Fan Silva**<u>Deploy button requirements</u>:
-* **Development host**:
- * [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) is installed and operable
- * Current layout and project are saved
- * <u>No more than one target device is connected</u>
-* **Target device**: 
- * Enterprise Keyboard 3.4 (or higher) installed and enabled as default input source
- * Connected to host via USB
+If an older config file already exists, a message is displayed similar to the one shown below:  
+<img alt="" style="height:250px" src="ekd16_delete_warning.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
 
-**Custom key layouts are available on the device immediately upon file deployment**. 
+**Custom key layouts are available on the device immediately upon deployment**. 
 
 -----
 

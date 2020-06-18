@@ -327,8 +327,12 @@ If EHS is removed from the device and the Android Launcher is the only remaining
 ## Battery and Wi-Fi Quick View
 In addition to the separate panels for viewing Battery and Wi-Fi status provided in the menus of Admin- and User-Mode Launcher screens, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
 
-**Note: SSID and BSSID information do not appear in the "Wireless Info" or "Battery and Wi-Fi Quick View" screens** On devices running Oreo if Location services (Settings -> Security & Location -> Location) are turned off. 
+> **NOTE**: EHS 4.0 and later allows adminisrators to [control Wi-Fi information](../settings/wirelessinformation) display. 
 
+<!-- 6/28/20- removed from EHS 4.0 since it applies to Android 10 and later. 
+**Note: SSID and BSSID information do not appear in the "Wireless Info" or "Battery and Wi-Fi Quick View" screens** on devices running Oreo if Location services (Settings -> Security & Location -> Location) are turned off. 
+
+ -->
 
 **To view Battery and Wi-Fi status**: 
 

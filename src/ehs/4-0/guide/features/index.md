@@ -1,7 +1,7 @@
 ---
-title: EHS Special Features
+title: Zebra EHS Special Features
 layout: guide.html
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 

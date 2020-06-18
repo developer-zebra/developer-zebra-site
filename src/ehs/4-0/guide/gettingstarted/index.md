@@ -18,7 +18,7 @@ content-items:
     title: Special Features
     text: A guide to the advanced features of EHS including Kiosk Mode and device logging
     url: /ehs/4-0/guide/features
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
     

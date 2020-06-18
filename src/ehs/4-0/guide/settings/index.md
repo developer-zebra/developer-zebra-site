@@ -1,7 +1,7 @@
 ---
 title: EHS Advanced Settings
 layout: guide.html
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 

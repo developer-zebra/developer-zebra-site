@@ -30,7 +30,7 @@ menu:
       url: /ehs/4-0/download
     - icon: fa fa-search
       url: /ehs/4-0/search
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 

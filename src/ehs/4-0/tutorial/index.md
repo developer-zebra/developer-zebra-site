@@ -23,7 +23,7 @@ content-items:
     title: Item 4
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 

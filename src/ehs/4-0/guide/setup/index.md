@@ -1,7 +1,7 @@
 ---
 title: Enterprise Home Screen Setup
 layout: guide.html
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 

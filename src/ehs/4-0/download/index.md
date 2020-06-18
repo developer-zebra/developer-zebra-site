@@ -1,7 +1,7 @@
 ---
 title: Download Enterprise Home Screen
 layout: guide.html
-product: Enterprise Home Screen
+product: Zebra EHS
 productversion: '4.0'
 ---
 
@@ -11,7 +11,7 @@ After download, visit the [EHS Setup page](../guide/setup) for help.
 
 ### EHS 4.0 Compatibility Notes
 
-* **Now supports <u>ONLY</u> Zebra devices running Android 10**. 
+* **Now supports <u>ONLY</u> Zebra devices running Android 10** and later. 
 * **Support added for Zebra's new TC21** device.
 * **No longer supports devices running Android 8.x Oreo or Android 9.2 Pie**. 
 

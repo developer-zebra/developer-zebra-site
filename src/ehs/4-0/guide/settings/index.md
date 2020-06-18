@@ -1280,7 +1280,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
 Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. <b>Note: Package names might vary from one Android version to another</b>. 
 
 <img alt="" style="height:350px" src="ehs40_disable_apps_ui.png"/>
-_In the EHS 4.0 and later UI (r), apps can be selected by icon, display name or package name_.
+_In the EHS 4.0 and later UI (right), apps can be selected by icon, display name or package name_.
 
 #####NOTES:
 

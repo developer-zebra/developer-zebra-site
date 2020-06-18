@@ -7,17 +7,17 @@ content-items:
     level: 4
     title: Setup Guide
     text: A step-by-step guide to installation and proper configuration of Enterprise Home Screen on a device
-    url: /ehs/3-2/guide/setup
+    url: /ehs/4-0/guide/setup
   - type: section
     level: 4
     title: Advanced Settings
     text: How to control Enterprise Home Screen through its XML configuration file
-    url: /ehs/3-2/guide/settings
+    url: /ehs/4-0/guide/settings
   - type: section
     level: 4
     title: Special Features
     text: A guide to advanced features of EHS including Kiosk Mode and device logging
-    url: /ehs/3-2/guide/features
+    url: /ehs/4-0/guide/features
 product: Enterprise Home Screen
 productversion: '4.0'
 ---

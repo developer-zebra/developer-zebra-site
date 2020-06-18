@@ -218,7 +218,7 @@ When specifying links, the package and activity parameters can be used to launch
 
 #####NOTES:
 * Package names might vary from one Android version to another. 
-* **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+* **EHS 3.0 and later supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 * **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
 * **Applications and links appear in the User Mode Launcher** in the same order as listed in the &lt;applications&gt; node.
 * **When apps *<u>and</u>* links are present in the &lt;applications&gt; node**, links are displayed first, then apps, regardless of their order in the node (see image, below). 
@@ -373,8 +373,8 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 Stores the encrypted password for logging into Admin Mode (blank by default). <b><u>Do not populate this tag manually</u> in the config file or edit in any way</b>. The administrator password is stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
 ##### Important Password Encryption Notes: 
-* **EHS 2.8 (and higher) implements a more secure encryption method** than prior versions. 
-* **EHS 3.0 (and higher) is backward-compatible** with passwords stored in config files of older EHS versions.
+* **EHS 2.8 (and later) implements a more secure encryption method** than prior versions. 
+* **EHS 3.0 (and later) is backward-compatible** with passwords stored in config files of older EHS versions.
 * **After EHS 3.0 accesses a password from a prior version**, it stores that password in the config file using the new encryption method. 
 * **Once a config file is updated using the new encryption**, that file is no longer compatible with older EHS versions. 
 
@@ -397,7 +397,7 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
 
 #####NOTES:
-* **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+* **EHS 3.0 and later supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 * When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can change the app icon size**. 
 
 **To change the icon size through the UI**:
@@ -537,7 +537,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 * **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; files on removable storage are not accessible in this mode.
-* **For Android Pie devices with EHS 3.2 or higher, folder access with the file browser UI is limited** to:
+* **For Android Pie devices with EHS 3.2 or later, folder access with the file browser UI is limited** to:
   * internal storage
   * external storage (SD card)
   * /enterprise/usr
@@ -733,7 +733,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 #####NOTES:
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
-* **For Android Pie devices with EHS 3.2 or higher, folder access with the file browser UI is limited** to:
+* **For Android Pie devices with EHS 3.2 or later, folder access with the file browser UI is limited** to:
   * internal storage
   * external storage (SD card)
   * /enterprise/usr
@@ -828,7 +828,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 ### Pinned Shortcuts
 
-**Applies to Oreo (and higher) devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
+**Applies to Oreo (and later) devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
 
 <img alt="" style="height:350px" src="EHS_pinned_shortcuts.png"/>
 
@@ -863,7 +863,7 @@ Controls whether the device will automatically reboot when EHS is launched for t
 
 ### Airplane Option Disabled
 
-**This feature is obsolete, and has been removed from EHS 3.0 and higher**. 
+**This feature is obsolete, and has been removed from EHS 3.0 and later**. 
 
 Use [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
@@ -871,7 +871,7 @@ Use [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 ### Bypass Keyguard
 
-**This feature is obsolete, and has been removed from EHS 3.0 and higher**. 
+**This feature is obsolete, and has been removed from EHS 3.0 and later**. 
 
 Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools.  
 
@@ -983,7 +983,7 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Oreo and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Oreo (and higher) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Oreo and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Oreo (and later) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
@@ -1163,7 +1163,7 @@ _Appears in UI only on Oreo devices_.
 
 ### Pinned Shortcut Bypass Confirmation
 
-In versions prior to EHS 3.2, EHS displays a confirmation dialog whenever a pinned shortcut is created. Display of this confirmation is configurable in EHS 3.2 and higher, and can be bypassed to facilitate automation or creation of shortcuts by other apps. 
+In versions prior to EHS 3.2, EHS displays a confirmation dialog whenever a pinned shortcut is created. Display of this confirmation is configurable in EHS 3.2 and later, and can be bypassed to facilitate automation or creation of shortcuts by other apps. 
 
 <img alt="" style="height:350px" src="ehs32_pin_shortcut_config.png"/>
 <br>
@@ -1247,7 +1247,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 
 #### GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a mode called [GMS Restricted](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
+On GMS devices running Android 8.x Oreo and later, Zebra implements a mode called [GMS Restricted](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
 
 #####NOTES:
 

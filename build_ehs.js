@@ -908,6 +908,9 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'ehs/3-2/'
     }))
+    .use(foldermenu({
+        folder: 'ehs/4-0/'
+    }))
      .use(foldermenu({
         folder: 'ehs-cn/2-8/'
     }))
@@ -917,54 +920,59 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'ehs-cn/3-1/'
     }))
-    .use(foldermenu({
-        folder: 'datawedge/5-0/'
-    }))
-    .use(foldermenu({
-        folder: 'datawedge/6-0/'
-    }))
-   .use(foldermenu({
-        folder: 'datawedge/6-2/'
-    }))
-   .use(foldermenu({
-        folder: 'datawedge/6-3/'
-    }))
-   .use(foldermenu({
-        folder: 'datawedge/6-4/'
-    }))
-  .use(foldermenu({
-        folder: 'datawedge/6-5/'
-    }))
-    .use(foldermenu({
-        folder: 'enterprise-browser/1-4/'
-    }))
-        .use(foldermenu({
-        folder: 'enterprise-browser/1-5/'
-    }))
-    .use(foldermenu({
-        folder: 'enterprise-browser/1-6/'
-    }))
-    .use(foldermenu({
-        folder: 'enterprise-browser/1-7/'
-    }))
-        .use(foldermenu({
-        folder: 'enterprise-keyboard/1-0/'
-    }))
-       .use(foldermenu({
-        folder: 'enterprise-keyboard/1-1/'
-    }))
-       .use(foldermenu({
-        folder: 'enterprise-keyboard/1-2/'
-    }))
-       .use(foldermenu({
-        folder: 'enterprise-keyboard/1-3/'
-    }))
-       .use(foldermenu({
-        folder: 'enterprise-keyboard/1-4/'
-    }))
-       .use(foldermenu({
-        folder: 'enterprise-keyboard/1-5/'
-    }))
+
+// removed DW and EB from build. 
+    
+  //   .use(foldermenu({
+  //       folder: 'datawedge/5-0/'
+  //   }))
+  //   .use(foldermenu({
+  //       folder: 'datawedge/6-0/'
+  //   }))
+  //  .use(foldermenu({
+  //       folder: 'datawedge/6-2/'
+  //   }))
+  //  .use(foldermenu({
+  //       folder: 'datawedge/6-3/'
+  //   }))
+  //  .use(foldermenu({
+  //       folder: 'datawedge/6-4/'
+  //   }))
+  // .use(foldermenu({
+  //       folder: 'datawedge/6-5/'
+  //   }))
+  //   .use(foldermenu({
+  //       folder: 'enterprise-browser/1-4/'
+  //   }))
+  //       .use(foldermenu({
+  //       folder: 'enterprise-browser/1-5/'
+  //   }))
+  //   .use(foldermenu({
+  //       folder: 'enterprise-browser/1-6/'
+  //   }))
+  //   .use(foldermenu({
+  //       folder: 'enterprise-browser/1-7/'
+  //   }))
+  //       .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-0/'
+  //   }))
+  //      .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-1/'
+  //   }))
+  //      .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-2/'
+  //   }))
+  //      .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-3/'
+  //   }))
+  //      .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-4/'
+  //   }))
+  //      .use(foldermenu({
+  //       folder: 'enterprise-keyboard/1-5/'
+  //   }))
+  //
+
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

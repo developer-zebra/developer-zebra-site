@@ -40,3 +40,4 @@ Triggers a backup for files log currently in the RxLogger folder. Files are comp
 ## Related Links
 * [RxLogger Settings](../settings) - How to configure data collection module parameters
 * [RxLogger Modules](../modules) - Explains data collection module parameters and settings
+* [RxLogger Utility](../utility) - View RxLogger logs in realtime

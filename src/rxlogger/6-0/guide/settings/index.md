@@ -92,4 +92,4 @@ All RxLogger settings are stored in a file on the device, permitting remote conf
 ## Related Links
 * [RxLogger Modules](../modules) - Explains data collection module parameters and settings
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
-* [RxLogger Utility](../settings) - Log viewer to view logs in realtime
+* [RxLogger Utility](../utility) - View RxLogger logs in realtime

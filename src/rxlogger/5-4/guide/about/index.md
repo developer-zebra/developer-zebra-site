@@ -53,4 +53,5 @@ RxLogger has lost connection to the `diagdaemon`:
 * [RxLogger Settings](../settings) - How to configure data collection module parameters
 * [RxLogger Modules](../modules) - Explains data collection module parameters and settings
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
+* [RxLogger Utility](../utility) - View RxLogger logs in realtime
 

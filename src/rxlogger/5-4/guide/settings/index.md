@@ -70,3 +70,4 @@ When a new settings file is pushed to the device, RxLogger restarts all affected
 ## Related Links
 * [RxLogger Modules](../modules) - Explains data collection module parameters and settings
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
+* [RxLogger Utility](../utility) - View RxLogger logs in realtime

@@ -3399,4 +3399,4 @@ Collects the Android native crash logs from the device, which contain stack trac
 ## Related Links
 * [RxLogger Settings](../settings) - How to configure data collection module parameters
 * [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  
-* [RxLogger Utility](../settings) - Log viewer to view logs in realtime
+* [RxLogger Utility](../utility) - View RxLogger logs in realtime

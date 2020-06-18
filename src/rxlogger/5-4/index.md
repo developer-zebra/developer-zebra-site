@@ -13,6 +13,8 @@ menu:
       url: /rxlogger/5-4/guide/modules
     - title: APIs
       url: /rxlogger/5-4/guide/apis
+    - title: Utility
+      url: /rxlogger/5-4/guide/utility
     - icon: fa fa-search
       url: /rxlogger/5-4/search
 product: RxLogger

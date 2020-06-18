@@ -5,23 +5,19 @@ product: Enterprise Home Screen
 productversion: '4.0'
 ---
 
-### EHS 3.2 Compatibility Notes
+> Zebra EHS is now available exclusively from the [Google Play Store](https://play.google.com/). 
 
-* **Supports Oreo and Pie on [supported devices](../guide/about#supporteddevices) only**. 
-* **No longer supports devices running Android 7.x Nougat**. 
-* Download package includes a single .apk file: 
- * `EHS_xxxxxx.apk` - for all devices running Oreo and Pie **_including_ TC20/TC25**
+After download, visit the [EHS Setup page](../guide/setup) for help. 
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+### EHS 4.0 Compatibility Notes
 
-### Download EHS
-
-Visit the [Enterprise Home Screen download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) to select a version for download. 
-
-After download, proceed to the [EHS Setup page](../guide/setup). 
+* **Now supports <u>ONLY</u> Zebra devices running Android 10**. 
+* **Support added for Zebra's new TC21** device.
+* **No longer supports devices running Android 8.x Oreo or Android 9.2 Pie**. 
 
 ### Legacy Android Support
 
+* **For Oreo and Pie support**, see the [EHS 3.2 download page](/ehs/3-2/download).
 * **For Nougat support**, see the [EHS 3.1 download page](/ehs/3-1/download).
 * **For Marshmallow support**, see the [EHS 3.0 download page](/ehs/3-0/download).
 * **For Lollipop support**, see the [EHS 2.8 download page](/ehs/2-8/download). 

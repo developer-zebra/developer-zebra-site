@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Home Screen
+title: About Zebra Enterprise Home Screen
 layout: guide.html
 product: Enterprise Home Screen
 productversion: '4.0'
@@ -41,7 +41,8 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 -----
 
 ## Supported Devices
-Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
+
+#### Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
 
 <!-- <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>

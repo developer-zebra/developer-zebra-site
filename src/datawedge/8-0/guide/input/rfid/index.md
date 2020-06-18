@@ -12,6 +12,7 @@ productversion: '8.0'
 > **Important:** For instructions on initial setup, refer to "Setting Up the MC3300R" section from [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 
 ### Version History
+* **DataWedge 8.0 -** New Inventory State and Hardware Key options for Configure Reader Settings.
 * **DataWedge 7.5 -** New parameters that include Link Profile, Dynamic Power, Pre filters, and Post filters.
 * **DataWedge 7.3.22 -** Feature introduced
 
@@ -33,6 +34,14 @@ productversion: '8.0'
   * **Session 1 (default) -** based on _EPC UHF Gen2 Air Interface Protocol Standard Specification_
   * **Session 2 -** based on _EPC UHF Gen2 Air Interface Protocol Standard Specification_
   * **Session 3 -** based on _EPC UHF Gen2 Air Interface Protocol Standard Specification_
+* **Inventory state –** set the inventoried state/flag for tags, indicating whether a tag may respond to an RFID reader. Tags maintain a separate inventoried flag for each of the four sessions; each flag has symmetric A and B values. Within any given session, readers typically inventory tags from A to B followed by a re-inventory of tags from B back to A (or vice versa). Options:
+  * **State A**
+  * **State B**
+  * **AB Flip**
+* **Hardware key –** set the RFID trigger to perform RFID readings. Options:
+  * **Default –** use the key which the RFID key event is mapped to in _Key Programmer_ app as the RFID trigger. The RFID key event name varies by BSP (OS platform), e.g. SYMBOL_RFID. 
+  * **Gun trigger –** use the gun trigger as the RFID trigger.
+  * **Scan –** use the scan button as the RFID trigger.
 * **Memory bank –** configure the memory bank to read. The integrated circuit (IC) on some tags have different bit allocations between the memory banks to allow for more user memory or a longer EPC (electronic product code) number. Refer to the tag specifications to determine the memory bank type needed. Supported values: 
   * **None (default) -** no memory bank to read. 
   * **Reserved -** store the access and kill password of the tag, 32 bits each. The kill password permanently disables the tag. The access password is set to lock and unlock the write capabilities of the tag. Therefore this is writeable if a password is specified. Can typically be used if an application contains sensitive data. 

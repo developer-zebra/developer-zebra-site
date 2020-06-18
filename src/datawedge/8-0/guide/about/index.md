@@ -145,6 +145,7 @@ For more information about approved languages or to download a localized operati
 * New [NextGen SimulScan Configuration](../input/barcode/#nextgensimulscanconfiguration) replacing legacy SimulScan features.
 * Import [NextGen SimulScan Templates](../admin) for document capture.
 * New [Press and Continue](../input/barcode/#readerparams) Aim Type for Barcode Input and corresponding new [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
+* New [Inventory State](../input/rfid/#rfidinput) and [Hardware Key](../input/rfid/#rfidinput) RFID input options.
 
 -----
 ## Recent Version History

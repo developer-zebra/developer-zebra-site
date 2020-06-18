@@ -4,7 +4,7 @@ img: ehs-logo.png
 layout: redirect.html
 redirect_url: /ehs/4-0/guide/about
 menu:
-  title: Enterprise Home Screen 3.2
+  title: Zebra EHS 4.0
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,

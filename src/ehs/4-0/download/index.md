@@ -1,5 +1,5 @@
 ---
-title: Download Enterprise Home Screen
+title: Download Zebra EHS
 layout: guide.html
 product: Zebra EHS
 productversion: '4.0'

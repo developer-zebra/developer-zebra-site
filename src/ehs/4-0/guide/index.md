@@ -1,5 +1,5 @@
 ---
-title: Guides
+title: Zebra EHS Guides
 description: "Enterprise Home Screen replaces the default Android app launcher and home screen with a secure launcher that's easy to configure and lock down. The following guides provide all the information required to customize this powerful tool for the specific needs of any enterprise or department."
 layout: list-content-items.html
 content-items:

@@ -81,7 +81,7 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 
 Before beginning a layout, please make note of the following: 
 
-#### Usage Notes
+#### Layout Creation Usage Notes
 
 * **Press CTRL-Z to Undo the most recent operations(s)**. 
 * **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  
@@ -96,6 +96,8 @@ Before beginning a layout, please make note of the following:
 * All buttons should be placed within the bounds of the layout background. A layout must not be resized so that it hides any key or button.
 * When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
 * Button positions sometimes shift slightly when switching layouts during design. 
+
+> **IMPORTANT:** Layout-creation UI elements become available when applicable to the layout being created.
 
 ### Using Drag-and-drop
 
@@ -192,7 +194,7 @@ Before beginning a layout, please make note of the following:
  <li><b>Columns -</b> Number of columns in the layout, divided equally across the specified Width **(min = 1)**.</li> 
  <li><b>Margin -</b> Distance (in pixels) between Grid boxes, each of which stores one button **(min = 2; max = 10)**. </li></ul>
   **See [Zebra device specs](https://www.zebra.com/us/en/support-downloads/mobile-computers.html) for device resolution information**.<br>
-  **See [Grid Usage Notes](#gridusagenotes) for important restrictions**.<br>
+  **See Grid Usage Notes below for important restrictions**.<br>
   <br>
 6. **Double-click within each grid box to select it**. Then set its button properties: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
@@ -259,7 +261,7 @@ Buttons can be positioned and resized within a layout by dragging manually, by u
 * **TextStyle –** Specifies the style of the button label text for the selected button. Drop-down values: Normal, Bold, BoldItalic, Italic. 
 * **SecondaryText -** Specifies the secondary button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed  **(max = 2); <u>must be blank if an image is selected</u> as button background**.
 
-#### Usage Notes
+#### Text Properties Usage Notes
 
 * **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
 * **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually. 
@@ -286,7 +288,7 @@ Buttons can be positioned and resized within a layout by dragging manually, by u
 
 -----
 
-#### Button Actions
+### Button Actions
 Button Actions supported by EKD include predefined command strings for generating keyEvent output and for switching the key layout currently displayed on the device. 
 
 **Perform keyEvent Action -** Used to generate a particular keyEvent or output a character. Enter the key and value in key-value format from among the standard [Android keyEvent values](https://developer.android.com/reference/android/view/keyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
@@ -320,12 +322,13 @@ Button Actions supported by EKD include predefined command strings for generatin
  * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**.
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
-**See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
+**See [all Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
 
 > **Note: Entries are case sensitive**. 
 
+-----
 
-#### Macros
+### Macros
 
 Multiple events can be assigned to a single key-press using Macros. Any key can be configured to send any number of keyCodes, events or Actions as listed below. 
 
@@ -341,30 +344,34 @@ Multiple events can be assigned to a single key-press using Macros. Any key can 
 * Send keyEvent
 * Send uppercase or lowercase keyCode or Unicode character
 * Switch to a fixed or custom layout
-* Set a delay between Actions
+* Set a delay between Actions (required&#42;)
 
-##### To Assign a Macro:
+&#42;_A delay of at least 500ms is required between key events to ensure desired execution order_. 
+
+#### To Assign a Macro:
 
 1. Select a key to which to assign a Macro. 
 2. In the Action section of the Button Properties panel, **select "Macros" from the desired Press Action drop-down** (Press, LongPress, ActionDown or ActionUp):  
- <img alt="" style="height:250px" src="ekd16_macros_1.png"/>
+ <img alt="" style="height:200px" src="ekd16_macros_1.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 3. In the input box that appears **click the drop-down**.<br>
   A partial list of available key events is shown in Step 4.
- <img alt="" style="height:250px" src="ekd16_macros_2.png"/>
+ <img alt="" style="height:200px" src="ekd16_macros_2.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-4. **Select an event (and enter a value as appropriate)** from the drop-down and click the "Add" button: 
+4. From the drop-down, **select an event (and enter a value if applicable)**. <br>
+ Then **click the "Add" button**: 
  <img alt="" style="height:200px" src="ekd16_macros_3.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-5. **Repeat Step 4 until all desired events are added** to the Macro as desired. <br>
- <img alt="" style="height:250px" src="ekd16_macros_4.png"/>
+5. **Select "Delay" and enter a value of at least 500 (ms)** between each key event.  
+6. **Repeat Steps 4 and 5 until all desired events are added** to the Macro as desired. <br>
+ <img alt="" style="height:200px" src="ekd16_macros_4.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-6. When finished, **click the "Save" button**:
- <img alt="" style="height:250px" src="ekd16_macros_5.png"/>
+7. When finished, **click the "Save" button**:
+ <img alt="" style="height:200px" src="ekd16_macros_5.png"/>
  _Click image to enlarge, ESC to exit_.
 
 #### The Macro is now assigned to the selected key 
@@ -376,7 +383,7 @@ Multiple events can be assigned to a single key-press using Macros. Any key can 
 1. **Click on the key containing the Macro to edit or delete**.<br> 
 The list of the Macro's key events appears. 
 2. **Click the "X" for each key event** to be removed from the sequence:
-  <img alt="" style="height:250px" src="ekd16_macros_6.png"/>
+  <img alt="" style="height:200px" src="ekd16_macros_6.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 3. Add events as desired as in Steps 4 and 5 above.<br>
@@ -384,24 +391,6 @@ The list of the Macro's key events appears.
 4. Click the "Save" button to finish.
 
 `WARNING:` If all events are deleted from a Macro, the key will perform no function. 
-
------
-
-#### Usage Notes 	
-
-* **Switching layouts is supported on Enterprise Keyboard only**.
-* **Do NOT use the terms shown below as custom names**; they are reserved for default Enterprise Keyboard layouts: 
- * abc
- * 123
- * scan
- * &#35;&#42;&#47;
- * Scantrigger
- * switch-abc
- * switch-123
- * switch-&#35;&#42;&#47;
- * switch-scan
- * customLayout
- * key-[any Content]
 
 -----
 
@@ -424,22 +413,56 @@ A list of Canned text or predefined responses can be assigned to any key and app
 
 1. **Create (or select) a button** in the current layout.  
 2. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**: 
-<img alt="" style="height:150px" src="EKD-14_pre-defined_text_1.png"/>
+<img alt="" style="height:200px" src="EKD-14_pre-defined_text_1.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
 3. **Enter a desired response** in the pop-up:
- <img alt="" style="height:150px" src="EKD-14_pre-defined_text_2.png"/>
+ <img alt="" style="height:200px" src="EKD-14_pre-defined_text_2.png"/>
  `IMPORTANT:` **Use of the plus sign (+) in Canned text list items can cause unpredictable behavior**. <br>
 4. Click "Add" to store the response and add another.
 5. Repeat Steps 3 and 4 until all responses are stored.
 6. Click "Save" to store all responses and exit pop-up.
+<!-- 6/18/20 Steps 7 and 8 removed per eng. TUT-40406
 7. **Click "Save Layout" button** to store the new project settings.<br>
  **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
  <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
 8. **Click "Save Project" to create a project file for deployment**.
-<br>
+-->
 
-##### Canned text responses are stored and deployed with the layout.
+#### Canned text responses are stored and deployed with the layout.
+
+> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
+
+-----
+
+#### To edit or delete Canned text Response(s): 
+
+1. **Open the key layout project that contains the response list(s)** to be modified.
+2. In the layout, **select the button that contains the response list(s)** to be edited.  
+3. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**:
+ <img alt="" style="height:200px" src="EKD-14_pre-defined_text_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+ A pop-up appears with the list of responses currently stored with that button:
+ <img alt="" style="height:200px" src="edit_predefined_message_1.png"/>
+ _Click image to enlarge, ESC to exit_.
+4. **To Delete response(s)**, click the "X" for the response(s). **<u>Then skip to Step 8</u>**.<br>
+ `WARNING:` Responses are deleted immediately. **This action cannot be undone**. 
+5. **To Edit, click the edit button** for the response to be edited:<br>
+ <img alt="" style="height:200px" src="edit_predefined_message_2.png"/>
+ _Click image to enlarge, ESC to exit_.
+6. **Edit the response** as desired and **click Submit**.<br>
+ `IMPORTANT:` **Use of the plus sign (+) in Canned text responses can cause unpredictable behavior**. 
+7. **Repeat Steps 5 and 6** until all Canned text responses appear as desired.  
+8. **Click Save to store changes and exit the pop-up**. 
+<!--  6/18/20 Steps 9 and 10 removed per eng. TUT-40406
+9. **Click "Save Layout" button** to store the new project settings.<br>
+ **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
+ <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
+10. **Click "Save Project" to create a project file for deployment**.
+ -->
+
+#### Canned text responses are stored and deployed with the layout.
 
 > **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
@@ -449,46 +472,14 @@ A list of Canned text or predefined responses can be assigned to any key and app
 
 EKD 1.6 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.6 is required**. 
 
-<img alt="" style="height:150px" src="ekd16_repeat_key.png"/>
+<img alt="" style="height:200px" src="ekd16_repeat_key.png"/>
 _Click image to enlarge, ESC to exit_.
 
-* **repeatkeyincaps** continuously sends an uppercase letter corresponding to the key being long-pressed as long as the key is held down, regardless of whether the shift key was used.
-* **repeatkey** continuously sends a lowercase letter corresponding to the key being long-pressed as long as the key is held down.
-* **repeatuc** continuously sends the specified Unicode character when the key is long-pressed as long as the key is held down.
+* **Repeat keyinCaps** continuously sends an uppercase letter corresponding to the key being long-pressed as long as the key is held down, regardless of whether the shift key was used.
+* **Repeat key** continuously sends a lowercase letter corresponding to the key being long-pressed as long as the key is held down.
+* **Repeat UC** continuously sends the specified Unicode character when the key is long-pressed as long as the key is held down.
 
 > **Note**: These actions apply only to Long-Press Action properties.
-
------
-
-#### To edit or delete Canned text Response(s): 
-
-1. **Open the key layout project that contains the response list(s)** to be modified.
-2. In the layout, **select the button that contains the response list(s)** to be edited.  
-3. **In the Action section** of the Button Properties panel, **select "Canned text" from the drop-down**:
- <img alt="" style="height:250px" src="EKD-14_pre-defined_text_1.png"/>
- _Click image to enlarge, ESC to exit_.
-<br>
- A pop-up appears with the list of responses currently stored with that button:
- <img alt="" style="height:250px" src="edit_predefined_message_1.png"/>
- _Click image to enlarge, ESC to exit_.
-4. **To Delete response(s)**, click the "X" for the response(s). **<u>Then skip to Step 8</u>**.<br>
- `WARNING:` Responses are deleted immediately. **This action cannot be undone**. 
-5. **To Edit, click the edit button** for the response to be edited:<br>
- <img alt="" style="height:250px" src="edit_predefined_message_2.png"/>
- _Click image to enlarge, ESC to exit_.
-6. **Edit the response** as desired and **click Submit**.<br>
- `IMPORTANT:` **Use of the plus sign (+) in Canned text responses can cause unpredictable behavior**. 
-7. **Repeat Steps 5 and 6** until all Canned text responses appear as desired.  
-8. **Click Save to store changes and exit the pop-up**. 
-9. **Click "Save Layout" button** to store the new project settings.<br>
- **NOTE**: To set layout as the default (to appear whenever EKB is used), click on the layout's star icon:
- <img alt="" style="height:150px" src="EKD_14_set_default_layout.png"/>
-10. **Click "Save Project" to create a project file for deployment**.
-<br>
-
-##### Canned text responses are stored and deployed with the layout.
-
-> **NOTE: Setting the default layout from EKD requires Enterprise Keyboard 3.4 or later on the device**. 
 
 -----
 
@@ -503,10 +494,9 @@ Changes to these settings appear immediately in the device simulator unless othe
 * **Image -** Used to select an image to fill the space of the selected key. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 * **ImagePressed -** Used to select an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 
-#### Usage Notes
+#### Style Properties Usage Notes
 * **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
 * **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually. 
-
 
 -----
 
@@ -523,8 +513,8 @@ _Applies only to devices that support vibration_.
 ### Multi-key Selection
 Use the CTRL key on the host computer's keyboard to select multiple keys simultaneously. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s). Properties are described in their relevant sections above. 
 
-<img alt="" style="height:150px" src="ekd_selected_key.png"/>
-<img alt="" style="height:150px" src="ekd_multi-select.png"/>
+<img alt="" style="height:200px" src="ekd_selected_key.png"/>
+<img alt="" style="height:200px" src="ekd_multi-select.png"/>
 _Click image to enlarge, ESC to exit_.
 <br>
 
@@ -557,7 +547,7 @@ _Click image to enlarge, ESC to exit_.
  * **Width**
  * **Height** 
 
-#### Usage Notes
+#### Multi-key Usage Notes
 * **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
 * **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually.  
 * **Button layout (i.e. width, height, etc.) and action properties (Press, LongPress, etc.) <u>MUST NOT be changed using multi-key selection</u>**; behavior is unpredictable.
@@ -730,6 +720,24 @@ This case describes an Android app with two text input fields, both requiring cu
 **Note**: If the custom layout name is not known, send a `GET` intent <u>**_before_** the calling the onFocus change listener</u> to receive a list of all available layout names in the layout file. Then send the `SET` intent with the name of the desired layout. 
 
 > **`IMPORTANT:` Enterprise Keyboard must be enabled if the application goes to the background** to avoid a device user resetting the layout from outside the app.
+
+-----
+
+#### Layout Switching Usage Notes 	
+
+* **Switching layouts is supported on Zebra Enterprise Keyboard only**.
+* **Do NOT use the terms shown below as custom names**; they are reserved for default Enterprise Keyboard layouts: 
+ * abc
+ * 123
+ * scan
+ * &#35;&#42;&#47;
+ * Scantrigger
+ * switch-abc
+ * switch-123
+ * switch-&#35;&#42;&#47;
+ * switch-scan
+ * customLayout
+ * key-[any Content]
 
 -----
 

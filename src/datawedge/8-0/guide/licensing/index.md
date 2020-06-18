@@ -7,7 +7,7 @@ productversion: '8.0'
 
 ## Overview
 
-For **Zebra Professional-series devices, certain DataWedge features require the purchase of a [Mobility DNA (MDNA) Enterprise license](/licensing/#mdnacomponentsandfeatures).** The DataWedge features that require MDNA license include MultiBarcode and Document Capture as part of NextGen SimulScan. 
+For **Zebra Professional-series devices, certain DataWedge features require the purchase of a [Mobility DNA (MDNA) Enterprise license](/licensing/#mdnacomponentsandfeatures).** The DataWedge features that require MDNA license include MultiBarcode and Document Capture as part of NextGen SimulScan. This section discusses DataWedge behavior on licensed and unlicensed Zebra Professional devices.
 
 ## Licensed Devices
 
@@ -15,7 +15,7 @@ On Zebra Professional devices with MDNA license, applications with MultiBarcode 
 
 ## Unlicensed Devices
 
-On unlicensed Zebra Professional devices, applications with MultiBarcode or NextGen SimulScan enabled (using profile configuration or intent APIs) are only able to scan single barcodes. The use of SWITCH_SCANNER_PARAMS and SET_CONFIG APIs are affected. See the following subsections for more information.
+On unlicensed Zebra Professional devices, applications with MultiBarcode or NextGen SimulScan enabled (using profile configuration or intent APIs) can scan only single barcodes. The use of SWITCH_SCANNER_PARAMS and SET_CONFIG APIs are affected. See the following subsections for more information.
 
 Without a valid MDNA Enterprise license, **Configure NG SimulScan Configuration** cannot be accessed from DataWedge. Instead, the following alert is displayed:
 

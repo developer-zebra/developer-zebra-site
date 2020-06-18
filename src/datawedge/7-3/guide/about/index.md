@@ -17,8 +17,6 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-**Go to ["What's New" section](#newindatawedge71)**
-
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 #### Data Capture

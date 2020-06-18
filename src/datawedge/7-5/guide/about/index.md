@@ -48,8 +48,6 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-**Go to ["What's New" section](#newindatawedge71)**
-
 ### Main Functionality
 DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
 #### Data Capture

@@ -16,7 +16,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 * US English
 * Simplified Chinese
 
-**[What's New in EHS 3.2](#newinehs32)**
+**[What's New in EHS 4.0](#newinehs40)**
 
 ------
 
@@ -41,9 +41,9 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 -----
 
 ## Supported Devices
-This version of Enterprise Home Screen has been approved for use with the Zebra Android devices listed below.
+Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
 
-<table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
+<!-- <table class="MsoNormalTable" style="" id="table2" border="1" cellpadding="3" cellspacing="0">
 <tbody>
 
 <tr bgcolor="#ccffcc" >
@@ -280,28 +280,25 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tr>
 
 </tbody>
-</table>
+</table> 
+-->
 
 -----
 
-## New in EHS 3.2
+## New in EHS 4.0
 
-* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
-* **EHS 3.2 download package contains a single .apk file** compatible with all supported devices running Oreo and Pie. 
-* **Bypass user confirmation dialog when adding Pinned shortcuts** is a configurable option designed to aid automated shortcut creation by suppressing the dialog that appears when a shortcut is added. Disabled by default. 
-* **EHS can now launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
+* **Now supports <u>ONLY</u> Zebra devices running Android 10**. 
+* **Support added for Zebra's new TC21** device.
+* **User access to recent apps and wireless info can now be configured**. 
 
 -----
 
 ### End of Support
 
-* **Support for Android 7.x Nougat is dropped**. Use [EHS 3.1](/ehs/3-1/guide/about) if Nougat support is required. 
-
-* **Support for Install Shortcuts is dropped**. This feature was coupled with Android Nougat, and is no longer supported with the termination of Nougat support. As an alternative, **Zebra recommends the use of [Pinned Shortcuts](../settings/#pinnedshortcuts)**, which are supported in devices running Android Oreo and higher.
-
-* **Support ends for the following devices running Nougat**: MC33, TC20, TC25, TC51, TC56, TC70x, TC75x, VC80x, WT6000
+* **Support for Android 8.x Oreo and 9.x Pie are dropped**. Use [EHS 3.2](/ehs/3-2/guide/about) if Oreo or Pie support are required. 
 
 -----
+<!-- Oreo and Pie support removed
 
 ### Android Pie Notes
 ***Applies to devices running Android 9.x Pie and higher***.
@@ -323,22 +320,29 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * EHS **<u>CAN</u>** now launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later).
 
 ------
-
-<!-- 12/18/18- Marshmallow support ended with 3.0
-
-### Android Marshmallow Notes
-**_Applies to devices running Android 6.x Marshmallow only_**:
-
-* **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
-
-* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
-
-* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
-
------ 
+ 
 -->
 
 ## Version History
+
+### Added in EHS 3.2
+
+* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
+* **EHS 3.2 download package contains a single .apk file** compatible with all supported devices running Oreo and Pie. 
+* **Bypass user confirmation dialog when adding Pinned shortcuts** is a configurable option designed to aid automated shortcut creation by suppressing the dialog that appears when a shortcut is added. Disabled by default. 
+* **EHS can now launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
+
+-----
+
+#### End of Support
+
+* **Support for Android 7.x Nougat is dropped**. Use [EHS 3.1](/ehs/3-1/guide/about) if Nougat support is required. 
+
+* **Support for Install Shortcuts is dropped**. This feature was coupled with Android Nougat, and is no longer supported with the termination of Nougat support. As an alternative, **Zebra recommends the use of [Pinned Shortcuts](../settings/#pinnedshortcuts)**, which are supported in devices running Android Oreo and higher.
+
+* **Support ends for the following devices running Nougat**: MC33, TC20, TC25, TC51, TC56, TC70x, TC75x, VC80x, WT6000
+
+-----
 
 ### Added in EHS 3.1
 

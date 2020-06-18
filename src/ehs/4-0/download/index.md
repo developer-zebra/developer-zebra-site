@@ -2,7 +2,7 @@
 title: Download Enterprise Home Screen
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '3.2'
+productversion: '4.0'
 ---
 
 ### EHS 3.2 Compatibility Notes

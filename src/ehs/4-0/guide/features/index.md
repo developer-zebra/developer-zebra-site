@@ -2,7 +2,7 @@
 title: EHS Special Features
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '3.2'
+productversion: '4.0'
 ---
 
 ## Overview

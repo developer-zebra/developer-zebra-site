@@ -19,7 +19,7 @@ content-items:
     text: A guide to the advanced features of EHS including Kiosk Mode and device logging
     url: /ehs/3-2/guide/features
 product: Enterprise Home Screen
-productversion: '3.2'
+productversion: '4.0'
 ---
     
 

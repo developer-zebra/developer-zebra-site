@@ -58,7 +58,7 @@ To pair by scanning the displayed barcode on the mobile computer.  This applies 
 <img style="height:400px" src="scan_and_pair_tab_3.0.png"/>
 <br>
 3. A barcode is displayed.
-	![img](display_barcode.jpg)
+<img style="height:400px" src="barcode_pair_3.0.png"/>
 <br>
 4. Using the peripheral, scan the displayed barcode.
 5. When the pairing is successful, the peripheral is displayed in the list with a green dot indicating that it is paired.
@@ -100,7 +100,7 @@ To unpair a Bluetooth peripheral:
 
 Device Central displays a notification of the connected peripheral in the Notification bar. This notification displays information on the type of peripheral connected and the length of time for the connection. This information remains in the notification bar for the duration of the active connection. 
 <br>
-<img style="height:400px" src="notification_3.0.png"/>
+<img style="height:400px" src="notification_connected_3.0.png"/>
 <br>
 Tapping on the notification displays the Device Details for the corresponding peripheral.
 <br>
@@ -167,8 +167,7 @@ The **Peripherals** tab provides a list of the paired Bluetooth peripherals. The
 
 ## My Device
 The **My Device** tab displays information pertaining to the Android device which Device Central is running on and its battery.  This information includes: device model, device serial number, OS version, system build number, battery level, battyer part number, battery serial number, and battery manufactured date.
-<br>
-	![img](my_device.jpg)
+<img style="height:400px" src="my_device_3.0.png"/>
 <br>
 
 ## Configuration
@@ -180,10 +179,10 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 **Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature will be deprecated from Device Central CSP in a future release. Instead, it will be configurable though [Bluetooth Manager CSP](/mx/bluetoothmgr).
 * **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
+<img style="height:400px" src="BT_setting_3.0.png"/>
 <br>
 
-	![img](BT_setting.jpg)
- * **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
+* **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
 
 ## Usage Notes
 * When in **Android Multiple User mode,** Device Central only supports the Primary user.
@@ -198,6 +197,6 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 ## See Also
 
 * [About Device Central](../about)
-* [Device Central Setup](../setup)
+* [Install](../setup)
 * [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
 * [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices

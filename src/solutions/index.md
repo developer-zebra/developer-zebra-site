@@ -78,7 +78,7 @@ products:
     sections:
       - title: About
         url: /devicecentral/3-0/guide/about
-      - title: Setup
+      - title: Install
         url: /devicecentral/3-0/guide/usage
       - title: Using Device Central
         url: /devicecentral/3-0/guide/usage

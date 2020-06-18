@@ -9,11 +9,11 @@ productversion: '3.0'
 
 This section provides installation instructions for **Device Central**.
 
-<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be installed through Google Play or downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. </p>
+<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. </p>
 
 
 ## Manual Installation
-
+<!--
 <p>Installation from the Google Play Store:</p>
 1. Open the Google Play Store app.
 2. Search for Device Central. 
@@ -21,7 +21,7 @@ This section provides installation instructions for **Device Central**.
 4. Tap **Install**.  
 5. Follow the instructions to complete the installation.
 6. Open Device Central.
-
+-->
 <p>Installation from the Zebra support portal:</p>
 1. Download the .apk from [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software.html).
 2. Copy the .apk to the device.
@@ -37,5 +37,6 @@ This section provides installation instructions for **Device Central**.
 ## See Also
 
 * [About Device Central](../about)
-* [Device Central Usage Guide](../usage)
-
+* [Usage Guide](../usage)
+* [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
+* [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices

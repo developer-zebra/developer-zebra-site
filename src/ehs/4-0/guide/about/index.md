@@ -414,7 +414,7 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 
 -----
 
-### 2.8
+### EHS 2.8
 
 #### Device Support
 

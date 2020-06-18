@@ -985,10 +985,13 @@ Controls whether full or limited settings are available when the device is in Ad
 ### Recent Apps Button Disabled 
 **Applies only to devices running Android Oreo and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Oreo (and later) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
->This setting persists after EHS is removed.
+>**This setting persists** after EHS is removed.
 
 <img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
 _Recent apps button cannot be disabled on devices running Android M (shown)_.
+<br>
+
+<img alt="" style="height:450px" src="ehs40_recent_app_access.png"/>
 <br>
 
 <b>Possible values</b>:

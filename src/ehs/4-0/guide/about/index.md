@@ -291,19 +291,9 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 * **Now supports Zebra devices running Android 10** and later. 
 * **Support added for Zebra's new TC21** device.
 * **[Wireless device info](../settings/#wirelessinformation) is now hidden in User Mode by defaut**, and can be optionally shown.   
-* The ability for a User to see their **[Recently Launched Apps](../settings/recentappsaccess)** can now be configured. 
+* The ability for a User to see their **[Recently Launched Apps](../settings/#recentappsaccess)** can now be configured. 
 
 -----
-
-<!-- 6/19/20- eng says this input was incorrect. Oreo/Pie not dropped per TUT-38824 
-
-### End of Support
-
-* **Support for Android 8.x Oreo and 9.x Pie are dropped**. Use [EHS 3.2](/ehs/3-2/guide/about) if Oreo or Pie support are required. 
-
--->
------
-<!-- Oreo and Pie support removed
 
 ### Android Pie Notes
 ***Applies to devices running Android 9.x Pie and higher***.
@@ -313,7 +303,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 * In the file browser UI, **access is limited to the following folders**:
   * internal storage
   * external storage (SD card)
-  * /enterprise/usr
+  * `/enterprise/usr`
 
 -----
 
@@ -323,7 +313,8 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 * **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
 * **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
 * EHS **<u>CAN</u>** now launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later). 
--->
+
+-----
 
 ## Version History
 
@@ -498,12 +489,12 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 ### EHS 2.5
 
 #### Device Support:
-* [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
-* [TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers running Android Marshmallow 6.0.1 (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
-* [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html) running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
-* [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html) running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes))
-* [TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes)) 
-* The [MC67](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc67-mobile-computer-series.html) Mobile Computer Series running Android 4.4 KitKat (see [Android 4.4 Notes](#androidkitkatnotes)) 
+* [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop
+* [TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers running Android Marshmallow 6.0.1
+* [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html) running Android Lollipop 5.1.1 
+* [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html) running Android Lollipop 5.1.1
+* [TC70/TC75 Touch Computers](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) running Android Lollipop 5.1.1 
+* The [MC67](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc67-mobile-computer-series.html) Mobile Computer Series running Android 4.4 KitKat
 
 #### Update for June, 2017:
 
@@ -528,7 +519,7 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 
 ### EHS 2.4
 
-* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Notes](#androidlollipopandmarshmallownotes)) 
+* **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop.
 
 * **[Bundle Data Option](../settings#bundle) -** allows injection of app parameters, user data or other key-value pairs into an app on launch. 
 

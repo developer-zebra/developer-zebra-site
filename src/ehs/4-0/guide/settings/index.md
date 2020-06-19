@@ -1026,9 +1026,7 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Wireless Information
-**Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). 
-
-**Default value (information hidden) is used if a tag is left blank, absent from the config file or contains an invalid value**. It is necessary to add/edit these tags only if showing information is desired. 
+**Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). **Default value is used if a tag is left blank, absent from the config file or contains an invalid value**. It is necessary to add/edit these tags only if showing information is desired. 
 
 <img alt="" style="height:450px" src="ehs40_wirelessinfo_settings_panel.png"/>
 

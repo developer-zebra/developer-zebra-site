@@ -290,7 +290,8 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 * **Now supports Zebra devices running Android 10** and later. 
 * **Support added for Zebra's new TC21** device.
-* **User access to wireless info and their own recently launched apps can now be configured**. 
+* **[Wireless device info](../settings/#wirelessinformation) is now hidden in User Mode by defaut**, and can be optionally shown.   
+* The ability for a User to see their **[Recently Launched Apps](../settings/recentappsaccess)** can now be configured. 
 
 -----
 

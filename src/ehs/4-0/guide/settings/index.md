@@ -983,7 +983,7 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Recent Apps Access 
-**Applies only to devices running Android 10 and later**. Controls whether recently launched apps can be seen and potentially launched by Users. Applies to User Mode only. **Disabled by default**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android 10 and later**. Controls whether a User's recently launched apps can be seen by that User. Applies to User Mode only. **Disabled by default** (recent apps are not shown). Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 > `IMPORTANT:` Recent Apps Button feature must be ***ENABLED*** (option 0) to use this feature. 
 
@@ -1026,7 +1026,14 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Wireless Information
-**Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi settings is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode; all wireless settings are always shown. 
+**Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). 
+
+#### Optionally Display:
+* **IP address** currently assigned to the device
+* **MAC address** unique identifier of the device's network interface controller 
+* **SSID** Service Set Identifier wireless access point currently in use by device
+* **BSSID** Basic SSID is the MAC address of the current SSID
+* **Scan results** lists SSIDs found in most recent scan
 
 **Default value (information hidden) is used if a tag is left blank, absent from the config file or contains an invalid value**. It is necessary to add/edit these tags only if showing information is desired. 
 

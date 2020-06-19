@@ -288,16 +288,19 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 ## New in EHS 4.0
 
-* **Now supports <u>ONLY</u> Zebra devices running Android 10** and later. 
+* **Now supports Zebra devices running Android 10** and later. 
 * **Support added for Zebra's new TC21** device.
-* **User access to recent apps and wireless info can now be configured**. 
+* **User access to wireless info and their own recently launched apps can now be configured**. 
 
 -----
+
+<!-- 6/19/20- eng says this input was incorrect. Oreo/Pie not dropped per TUT-38824 
 
 ### End of Support
 
 * **Support for Android 8.x Oreo and 9.x Pie are dropped**. Use [EHS 3.2](/ehs/3-2/guide/about) if Oreo or Pie support are required. 
 
+-->
 -----
 <!-- Oreo and Pie support removed
 

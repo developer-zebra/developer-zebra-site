@@ -20,8 +20,6 @@ Barcode Input is used to specify:
 * USB synchronous serial interface (SSI) scanners 
 
 **Barcode Scanner Input** reads data from the integrated barcode scanner built into the device, or attached via cable or Bluetooth connection, or implemented as a snap-on module. DataWedge supports lasers, imagers and internal cameras. The raw barcode data that's acquired is processed or formatted as using the Basic and Advanced Data Formatting Processing options that are found near the Output options. 
-<!-- 	// TUT-42046 - Remove legacy SimulScan link
-**Note**: When SimulScan is used, DataWedge concatenates all captured text into a single string, and performs processing on the concatenated string. See the **[SimulScan section](../simulscan)** for details. -->
 
 > The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
 

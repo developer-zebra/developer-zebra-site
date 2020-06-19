@@ -37,7 +37,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature.
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
 * **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
-* **DataWedge 8.0 -** New secure intent delivery with intent_component_info.
+* **DataWedge 8.0 -** New secure intent delivery with intent_component_info, new unlicensed error code.
 
 ### Function Prototype
 
@@ -165,6 +165,7 @@ DataWedge returns the following error codes if the app includes the intent extra
 * **APP_ALREADY_ASSOCIATED -** An attempt was made to associate an app that was already associated with another Profile
 * **OPERATION_NOT_ALLOWED -** An attempt was made to rename or delete a protected Profile or to associate an app with Profile0
 * **RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME -** Rule name empty or undefined in `ADF_RULE` bundle
+* **UNLICENSED_FEATURE -** An attempt was made to call SetConfig or Switch Scanner Params API to change the scanning mode to MultiBarcode or NextGen SimulScan on an unlicensed [Zebra Professional-series device](../../licensing).
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

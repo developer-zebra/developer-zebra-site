@@ -1028,16 +1028,16 @@ Controls whether full or limited settings are available when the device is in Ad
 ### Wireless Information
 **Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). 
 
-#### Optionally Display:
-* **IP address** currently assigned to the device
-* **MAC address** unique identifier of the device's network interface controller 
-* **SSID** Service Set Identifier wireless access point currently in use by device
-* **BSSID** Basic SSID is the MAC address of the current SSID
-* **Scan results** lists SSIDs found in most recent scan
-
 **Default value (information hidden) is used if a tag is left blank, absent from the config file or contains an invalid value**. It is necessary to add/edit these tags only if showing information is desired. 
 
 <img alt="" style="height:450px" src="ehs40_wirelessinfo_settings_panel.png"/>
+
+#### Optionally Display:
+* **IP address -** currently assigned to the device
+* **MAC address -** unique identifier of the device's network interface controller 
+* **SSID -** Service Set Identifier is the name of wireless access point currently in use
+* **BSSID -** the MAC address of the current SSID
+* **Scan results -** list of SSIDs found in most recent scan
 
 <b>Possible values</b>:
 

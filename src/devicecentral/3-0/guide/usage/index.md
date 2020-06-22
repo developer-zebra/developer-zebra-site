@@ -161,8 +161,7 @@ The Firmware Update screen appears.
 ## Peripherals Summary List
 
 The **Peripherals** tab provides a list of the paired Bluetooth peripherals. The peripherals are listed by device name showing their connected state as indicated by the green dot (connected) or red dot (disconnected). If the peripheral is in the connected state, additional information is displayed for supported peripherals such as Zebra RS6000 Bluetooth Scanner and ZEbra HS3100 Bluetooth Headset.  This information includes battery status and the length of time the peripheral has been connected. Some connected peripherals may provide action buttons that allow the user to perform an action associated with a given peripheral. For example, the RS6000 allows a user to Page the connected scanner or update the firmware.  
-<br>
-	![img](peripherals_list.jpg)
+<img style="height:400px" src="peripheral_list_3.0.png"/>
 <br>
 
 ## My Device

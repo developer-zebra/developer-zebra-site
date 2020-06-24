@@ -276,7 +276,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'enterprise-keyboard/3-4/'
     }))
        .use(foldermenu({
-        folder: 'enterprise-keyboard/3-6/'
+        folder: 'enterprise-keyboard/3-9/'
     }))
 
 // Enterprise Keyboard Designer build section
@@ -292,7 +292,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ekd/1-4/'
     }))
         .use(foldermenu({
-        folder: 'ekd/1-6/'
+        folder: 'ekd/1-9/'
     }))
 
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))

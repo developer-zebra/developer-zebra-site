@@ -42,10 +42,13 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New Features 
 
-* **A new [RepeatKeys](../) feature** causes a specified keyCode to be repeated when long-pressing the key. 
+* **A new RepeatKeysfeature** causes a specified keyCode to be repeated when long-pressing the key. 
 * **A new Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 
 
 * **Enterprise Keyboard Designer now includes [predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)**, which can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
+
+>**NOTE: New features in EKB 3.9 must be implemented using Enterprise Keyboard Designer 1.9 or later**.
+> For more information about new EKB 3.9 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### MDNA Enterprise License 
 **Beginning with EKB 3.9, an MDNA Enterprise license is now required** to use Enterprise Keyboard on  Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing/process). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box. **Learn more [about MDNA licensing](/licensing)**. 
@@ -53,11 +56,6 @@ This version of Enterprise Keyboard includes the following languages:
 <img alt="" style="height:450px" src="mdna_license_prompt.png"/>
 _Click image to enlarge, ESC to exit_. 
 <br>
-
-**NOTE**: New features in EKB 3.9 must be implemented using Enterprise Keyboard Designer 1.9 or later. 
-* Enterprise Keyboard Designer 1.9 (and later) now provides **[predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)** that can be downloaded and deployed immediately or customized to best suit the needs of an organization.
-
-> For more information about new EKB 3.9 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### Device Support
 

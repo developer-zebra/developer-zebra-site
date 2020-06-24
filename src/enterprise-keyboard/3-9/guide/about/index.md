@@ -5,6 +5,8 @@ product: Enterprise Keyboard
 productversion: '3.9'
 ---
 
+#### [See what's new in EKB 3.9](#whatsnewinv39)
+
 ## Overview
 Enterprise Keyboard (EKB) is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. 
 
@@ -46,21 +48,20 @@ This version of Enterprise Keyboard includes the following languages:
 * **Enterprise Keyboard Designer now includes [predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)**, which can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
 
 ### MDNA Enterprise License 
-**Beginning with EKB 3.9, an MDNA Enterprise license is now required** to use Enterprise Keyboard on  Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box. **Learn more [about MDNA licensing](/licensing)**. 
+**Beginning with EKB 3.9, an MDNA Enterprise license is now required** to use Enterprise Keyboard on  Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing/process). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box. **Learn more [about MDNA licensing](/licensing)**. 
 
 <img alt="" style="height:450px" src="mdna_license_prompt.png"/>
 _Click image to enlarge, ESC to exit_. 
 <br>
 
-
 **NOTE**: New features in EKB 3.9 must be implemented using Enterprise Keyboard Designer 1.9 or later. 
-* Enterprise Keyboard Designer now provides **[predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)**, which can be downloaded and deployed immediately or customized to best suit the needs of an organization.
+* Enterprise Keyboard Designer 1.9 (and later) now provides **[predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)** that can be downloaded and deployed immediately or customized to best suit the needs of an organization.
 
 > For more information about new EKB 3.9 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### Device Support
 
-* **Beginning with v3.6, EKB no longer supports devices running Android 7.x Nougat**. 
+* **Beginning with v3.9, EKB no longer supports devices running Android 7.x Nougat**. 
 * **Android Multi-user mode is no longer supported**. [More info](../setup/#multiusermode). 
 
 Please see the **[supported device list](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)** for more information. 

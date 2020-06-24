@@ -16,10 +16,10 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * `ADDED in v1.4:` **[Create "canned text"](#cannedtext)** to appear in a list for easy selection (requires EKB 3.4 or later). 
 * `ADDED in v1.4:` **[Set a default layout](#iicreatelayouts)** to display on input field focus (EKB 3.4+).
-* `ADDED in v1.6:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
-* `ADDED in v1.6:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
-* `ADDED in v1.6:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
-* `ADDED in v1.6:` **[Deploy button](#vdeploylayouts)** exports the current layout file to a USB-connected device.  
+* `ADDED in v1.9:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
+* `ADDED in v1.9:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
+* `ADDED in v1.9:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
+* `ADDED in v1.9:` **[Deploy button](#vdeploylayouts)** exports the current layout file to a USB-connected device.  
 
 -----
 
@@ -470,7 +470,7 @@ A list of Canned text or predefined responses can be assigned to any key and app
 
 ### Repeat Keys
 
-EKD 1.6 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.6 is required**. 
+EKD 1.9 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.6 is required**. 
 
 <img alt="" style="height:200px" src="ekd16_repeat_key.png"/>
 _Click image to enlarge, ESC to exit_.

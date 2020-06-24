@@ -5,7 +5,7 @@ product: Enterprise Keyboard Designer
 productversion: '1.9'
 ---
 
-#### [See what's new in v1.6](#whatsnewinv16)
+#### [See what's new in v1.9](#whatsnewinv19)
 
 ## Overview
 
@@ -68,7 +68,7 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 
 -----
 
-## What's New in v1.6
+## What's New in v1.9
 
 ### New Features
 

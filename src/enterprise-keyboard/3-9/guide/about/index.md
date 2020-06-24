@@ -42,8 +42,8 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New Features 
 
-* **A new RepeatKeysfeature** causes a specified keyCode to be repeated when long-pressing the key. 
-* **A new Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 
+* **New RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key. 
+* **New Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 
 
 * **Enterprise Keyboard Designer now includes [predeveloped sample layouts](https://techdocs.zebra.com/ekd/latest/samples/)**, which can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
 

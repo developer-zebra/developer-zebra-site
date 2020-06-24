@@ -2,7 +2,7 @@
 title: Using Zebra EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.6'
+productversion: '1.9'
 author: Eddie Correia
 created: 9/9/2019
 ---

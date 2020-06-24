@@ -2,7 +2,7 @@
 title: EKD Setup
 layout: guide.html
 product: Zebra EKB Designer Setup
-productversion: '1.6'
+productversion: '1.9'
 ---
 
 ## Installation

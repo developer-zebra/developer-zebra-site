@@ -2,7 +2,7 @@
 title: About Zebra EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.6'
+productversion: '1.9'
 ---
 
 #### [See what's new in v1.6](#whatsnewinv16)

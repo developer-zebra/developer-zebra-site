@@ -2,7 +2,7 @@
 title: Download Zebra EKB Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.6'
+productversion: '1.9'
 ---
 
 ### How To Download

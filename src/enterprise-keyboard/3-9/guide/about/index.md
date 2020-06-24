@@ -5,7 +5,7 @@ product: Enterprise Keyboard
 productversion: '3.9'
 ---
 
-#### [See what's new in EKB 3.9](#whatsnewinv39)
+#### [See what's new in EKB 3.9](#newinv39)
 
 ## Overview
 Enterprise Keyboard (EKB) is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. 

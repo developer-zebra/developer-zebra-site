@@ -73,10 +73,10 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 ### New Features
 
 * **Undo feature** reverses each of the last 10 actions  
-* **Deploy button** automatically exports the current layout to a USB-connected device  
-* **Repeating Keys Action** sends multiple keycodes by long-pressing a key 
-* **Macros** combine multiple keycodes, presses or actions into a single action 
-* **New [predeveloped sample layouts](../../samples/)** can be downloaded and deployed immediately or customized to suit the needs of an enterprise.
+* **[Deploy button](../usage/#vdeploylayouts)** automatically exports the current layout to a USB-connected device  
+* **[RepeatKeys function](../usage/#repeatkeys)** sends multiple keycodes by long-pressing a key 
+* **[Macros feature](../usage/#actionproperties)** can combine multiple keycodes, presses or actions into a single key Action 
+* **New [predeveloped sample layouts](../../samples/)** can be downloaded and deployed immediately or customized to suit the needs of an enterprise
 
 ### MDNA Enterprise License 
 **Beginning with EKB 3.9, an MDNA Enterprise license is now required** to use Enterprise Keyboard on  Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing/process). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box. **Learn more [about MDNA licensing](/licensing)**. 

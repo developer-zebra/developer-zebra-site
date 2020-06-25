@@ -178,6 +178,42 @@ _"SpecialSymbols"_
 
 -----
 
+### SAP Portrait, Non-transparent
+
+**Layouts designed for apps that use the Enterprise Browser package for the SAP ITSmobile solution**. [Learn more about EB for ITSmobile](https://techdocs.zebra.com/enterprise-browser/latest/guide/sap/). 
+
+To use this layout in an EB app, set the app's `Config.xml` file as follows: 
+
+	:::xml
+	<KeyboardType  value="enterprisekeyboard"/>
+
+* **Layout File**: `EKBCustomLayouts.encrypted` 
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
+
+**[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
+
+##### Click image to enlarge, ESC to exit: 
+
+_"Functional Keys"_
+<img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
+<br>
+
+_"Numeric"_
+<img alt="" style="height:150px" src="sap_Numeric.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="sap_Qwerty.png"/>
+<br>
+
+_"Symbols"_
+<img alt="" style="height:150px" src="sap_Symbols.png"/>
+<br>
+
+-----
+
 ### Split Portrait, Non-transparent
 
 **Portrait layout and split-key layouts designed for the small screen of the Zebra EC30 device**.
@@ -215,38 +251,40 @@ _"Symbols Split2"_
 
 -----
 
-### EB SAP Portrait, Non-transparent
+Zoomed Portrait, Non-transparent
 
-**Layouts designed for apps that use the Enterprise Browser package for the SAP ITSmobile solution**. [Learn more about EB for ITSmobile](https://techdocs.zebra.com/enterprise-browser/latest/guide/sap/). 
+Opaque (non-transparent) layouts designed for devices used mostly in the vertical orientation.
 
-To use this layout in an EB app, set the app's `Config.xml` file as follows: 
+Layout File: Auto_Zoom_Y2020_Layouts.encrypted
+Orientation: Portrait
+Opacity: Non-transparent
+Devices: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x  [i.e all portrait devices including EC30]
+Note:
 
-	:::xml
-	<KeyboardType  value="enterprisekeyboard"/>
+Do not use this layout file name 'Auto_Zoom_Y2020_Layouts.encrypted' to any other layout while designing custom layouts from EKD tool.
 
-* **Layout File**: `EKBCustomLayouts.encrypted` 
-* **Orientation**: Portrait
-* **Opacity**: Non-transparent
-* **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
-
-**[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
+Auto_Zoom_Y2020_Layouts{{.encrypted }}file rename is not allowed.
 
 ##### Click image to enlarge, ESC to exit: 
 
-_"Functional Keys"_
-<img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
-<br>
-
 _"Numeric"_
-<img alt="" style="height:150px" src="sap_Numeric.png"/>
-<br>
-
-_"Qwerty"_
-<img alt="" style="height:150px" src="sap_Qwerty.png"/>
+<img alt="" style="height:150px" src="zoom_numeric.png"/>
 <br>
 
 _"Symbols"_
-<img alt="" style="height:150px" src="sap_Symbols.png"/>
+<img alt="" style="height:150px" src="zoom_symbols.png"/>
+<br>
+
+_"Symbols Zoomed"_
+<img alt="" style="height:150px" src="zoom_symbols_zoomedimage.png"/>
+<br>
+
+_"Qwerty"_
+<img alt="" style="height:150px" src="zoom_qwerty.png"/>
+<br>
+
+_"Qwerty Zoomed"_
+<img alt="" style="height:150px" src="zoom_qwerty_zoomedimaged.png"/>
 <br>
 
 -----

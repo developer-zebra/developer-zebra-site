@@ -2,7 +2,7 @@
 title: Zebra EKB Sample Layouts
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '3.6'
+productversion: '1.9'
 ---
 
 ## Overview
@@ -42,9 +42,8 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 ***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
  -->
 #### **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
-<br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:150px" src="pt_functionkeys.png"/>
@@ -78,9 +77,8 @@ _"SpecialSymbols"_
 * **Devices**: MC33, MC93, PS20, TC51, TC52, TC56, TC57, TC72, TC77,  TC70x, TC75x,TC8x
 
 #### **[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
-<br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:150px" src="pnt_functionkeys.png"/>
@@ -118,9 +116,9 @@ _"SpecialSymbols"_
 <!-- 
 ***&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
  -->
-#### **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below<br>
+#### **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:100px" src="Lt_functionkeys.png"/>
@@ -154,9 +152,8 @@ _"SpecialSymbols"_
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
 #### **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
-<br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
 <img alt="" style="height:150px" src="Lnt_functional.png"/>
@@ -195,9 +192,8 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 * **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
 
 #### **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
-<br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"Functional Keys"_
 <img alt="" style="height:150px" src="sap_FunctionalKeys.png"/>
@@ -227,12 +223,10 @@ _"Symbols"_
 * **Devices**: EC30<br>
 
 #### **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
-<br>
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
-<br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"Numeric"_
 <img alt="" style="height:150px" src="ec30s_numeric.png"/>
@@ -266,7 +260,6 @@ _"Symbols Split2"_
 * **Devices**: EC30, MC33, MC93, PS20, TC51, TC52, TC56, TC57, TC72, TC77, TC70x, TC75x, TC8x
 
 #### **[Download this layout file](Auto_Zoom_Y2020_Layouts.encrypted) |** Contains all key layouts below 
-<br>
 
 #### Notes: 
 * **These layouts require Enterprise Keyboard 3.9** or later on the device.
@@ -274,7 +267,7 @@ _"Symbols Split2"_
 
 <br>
 
-##### Click image to enlarge, ESC to exit: 
+##### Click an image to enlarge, ESC to exit: 
 
 _"Numeric"_
 <img alt="" style="height:150px" src="zoom_numeric.png"/>
@@ -304,6 +297,3 @@ _"Qwerty Zoomed"_
 * [Customizing Keyboard Settings](../guide/usage/#iiisetbuttonproperties) | Complete guide to setting button properties 
 * [Dynamically Switching Keyboards](https://developer.zebra.com/blog/dynamically-switching-keyboards-zebra-android-devices) | **Article**: Custom layout implementation with sample code, by Zebra engineering
 * [Exploring the Enterprise Keyboard API](https://developer.zebra.com/blog/exploring-enterprise-keyboard-api) | **Article**: Working with EKD layouts, by Zebra engineering
-
-
-

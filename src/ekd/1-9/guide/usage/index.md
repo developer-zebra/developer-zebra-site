@@ -16,8 +16,8 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * `ADDED in v1.4:` **[Create "canned text"](#cannedtext)** to appear in a list for easy selection (requires EKB 3.4 or later). 
 * `ADDED in v1.4:` **[Set a default layout](#iicreatelayouts)** to display on input field focus (EKB 3.4+).
-* `ADDED in v1.9:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.6+). 
-* `ADDED in v1.9:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.6+).
+* `ADDED in v1.9:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.9+). 
+* `ADDED in v1.9:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.9+).
 * `ADDED in v1.9:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
 * `ADDED in v1.9:` **[Deploy button](#vdeploylayouts)** exports the current layout file to a USB-connected device.  
 
@@ -470,7 +470,7 @@ A list of Canned text or predefined responses can be assigned to any key and app
 
 ### Repeat Keys
 
-EKD 1.9 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.6 is required**. 
+EKD 1.9 (and later) adds three Action Properties for repeatedly sending keyCodes when a key is long-pressed. **Enterprise Keyboard 3.9 or later is required**. 
 
 <img alt="" style="height:200px" src="ekd16_repeat_key.png"/>
 _Click image to enlarge, ESC to exit_.
@@ -618,7 +618,7 @@ The data for custom key layout(s) is stored in the custom key-layout definition 
  * <u>No more than one target device connected</u>
  * [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) installed and operable
 * **Target device**: 
- * Enterprise Keyboard 3.6 (or higher) installed and enabled as default input source
+ * Enterprise Keyboard 3.9 (or later) installed and enabled as default input source
  * Connected to host via USB
 
 1. **Press the "Deploy" button** (see below) to push the current layout to the USB-connected device.

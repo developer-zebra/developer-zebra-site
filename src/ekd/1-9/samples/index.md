@@ -38,7 +38,6 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 
 <i><font size="1" color="black"> &#42; <strong>When used on devices other than the EC30</strong>, this layout requires changes to system and status bar settings for proper rendering. See [Overview Notes](#overview) for more information.</font></i>
 
-
 <!-- 
 ***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
  -->
@@ -80,7 +79,6 @@ _"SpecialSymbols"_
 
 #### **[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
 <br>
-
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -158,7 +156,6 @@ _"SpecialSymbols"_
 #### **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
 <br>
 
-
 ##### Click image to enlarge, ESC to exit: 
 
 _"FunctionKeys"_
@@ -200,7 +197,6 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 #### **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
 <br>
 
-
 ##### Click image to enlarge, ESC to exit: 
 
 _"Functional Keys"_
@@ -232,7 +228,6 @@ _"Symbols"_
 
 #### **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
 <br>
-
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
 <br>
@@ -272,7 +267,6 @@ _"Symbols Split2"_
 
 #### **[Download this layout file](Auto_Zoom_Y2020_Layouts.encrypted) |** Contains all key layouts below 
 <br>
-
 
 #### Notes: 
 * **These layouts require Enterprise Keyboard 3.9** or later on the device.

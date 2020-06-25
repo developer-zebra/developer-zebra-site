@@ -42,7 +42,8 @@ Enterprise Keyboard Designer (EKD) offers predeveloped sample layouts for a vari
 <!-- 
 ***&#42;When used on devices other than the EC30**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
  -->
-**[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+#### **[Download this layout file](Portrait_Transparent.encrypted) |** Contains all key layouts below 
+<br>
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -75,9 +76,11 @@ _"SpecialSymbols"_
 * **Layout File**: `Portrait_NonTransparent.encrypted` 
 * **Orientation**: Portrait
 * **Opacity**: Non-transparent
-* **Devices**: MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+* **Devices**: MC33, MC93, PS20, TC51, TC52, TC56, TC57, TC72, TC77,  TC70x, TC75x,TC8x
 
-**[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
+#### **[Download this layout file](Portrait_NonTransparent.encrypted) |** Contains all key layouts below 
+<br>
+
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -117,7 +120,7 @@ _"SpecialSymbols"_
 <!-- 
 ***&#42;When used on devices other than the WT6000**, this layout requires changes to system and status bar settings for proper rendering. See [Notes](#overview) for more information*.
  -->
-**[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below 
+#### **[Download this layout file](Landscape_Transparent.encrypted) |** Contains all key layouts below<br>
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -152,7 +155,9 @@ _"SpecialSymbols"_
 * **Opacity**: Non-transparent
 * **Devices**: CC600, CC6000, ET51, ET56, L10, VC80x, VC83x
 
-**[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
+#### **[Download this layout file](Landscape_NonTransparent.encrypted) |** Contains all key layouts below 
+<br>
+
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -192,7 +197,9 @@ To use this layout in an EB app, set the app's `Config.xml` file as follows:
 * **Opacity**: Non-transparent
 * **Devices**: All [devices supported by Enterprise Browser](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) 
 
-**[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
+#### **[Download this layout file](SAPLayouts.encrypted) |** Contains all key layouts below 
+<br>
+
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -218,14 +225,17 @@ _"Symbols"_
 
 **Portrait layout and split-key layouts designed for the small screen of the Zebra EC30 device**.
 
-* **Layout File**: `EC30_Split_Layouts.encrypted`  
-* **Orientation**: Portrait
-* **Opacity**: Non-transparent
-* **Devices**: EC30
+* **Layout File**: `EC30_Split_Layouts.encrypted`  <br>
+* **Orientation**: Portrait<br>
+* **Opacity**: Non-transparent<br>
+* **Devices**: EC30<br>
+
+#### **[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
+<br>
+
 
 > **`NOTE:` These layouts require Enterprise Keyboard 3.6.1.4** or later on the device.
-
-**[Download this layout file](EC30_Split_Layouts.encrypted) |** Contains all key layouts below 
+<br>
 
 ##### Click image to enlarge, ESC to exit: 
 
@@ -251,22 +261,24 @@ _"Symbols Split2"_
 
 -----
 
-### Zoomed Portrait, Non-transparent
+### Zoom Portrait, Non-transparent
 
-When a qwerty or symbol key is tapped, the keys immediately surrounding it appear for selection?
+**Opaque (non-transparent) layouts designed for devices used mostly in the vertical orientation**. When a qwerty or symbol key is tapped, the keys immediately surrounding it appear, and can be alternatively selected by dragging. 
 
-Opaque (non-transparent) layouts designed for devices used mostly in the vertical orientation.
+* **Layout File**: `Auto_Zoom_Y2020_Layouts.encrypted`
+* **Orientation**: Portrait
+* **Opacity**: Non-transparent
+* **Devices**: EC30, MC33, MC93, PS20, TC51, TC52, TC56, TC57, TC72, TC77, TC70x, TC75x, TC8x
 
-**Layout File**: `Auto_Zoom_Y2020_Layouts.encrypted`
-**Orientation**: Portrait
-**Opacity**: Non-transparent
-**Devices**: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
+#### **[Download this layout file](Auto_Zoom_Y2020_Layouts.encrypted) |** Contains all key layouts below 
+<br>
 
-> **`NOTE:` This layout requires Enterprise Keyboard 3.9** or later on the device.
 
-**[Download this layout file](Auto_Zoom_Y2020_Layouts.encrypted) |** Contains all key layouts below 
+#### Notes: 
+* **These layouts require Enterprise Keyboard 3.9** or later on the device.
+* **The file name `Auto_Zoom_Y2020_Layouts.encrypted` is reserved**; it <u>must NOT be renamed nor used for any other custom layout</u>.
 
-`WARNING:` The file name `Auto_Zoom_Y2020_Layouts.encrypted` is reserved; it must NOT be renamed nor used for any other custom layout.
+<br>
 
 ##### Click image to enlarge, ESC to exit: 
 

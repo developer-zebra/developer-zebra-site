@@ -251,19 +251,22 @@ _"Symbols Split2"_
 
 -----
 
-Zoomed Portrait, Non-transparent
+### Zoomed Portrait, Non-transparent
+
+When a qwerty or symbol key is tapped, the keys immediately surrounding it appear for selection?
 
 Opaque (non-transparent) layouts designed for devices used mostly in the vertical orientation.
 
-Layout File: Auto_Zoom_Y2020_Layouts.encrypted
-Orientation: Portrait
-Opacity: Non-transparent
-Devices: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x  [i.e all portrait devices including EC30]
-Note:
+**Layout File**: `Auto_Zoom_Y2020_Layouts.encrypted`
+**Orientation**: Portrait
+**Opacity**: Non-transparent
+**Devices**: EC30, MC33, MC93, PS20, TC51, TC56, TC52, TC57, TC72, TC77, TC75x, TC70x, TC8x
 
-Do not use this layout file name 'Auto_Zoom_Y2020_Layouts.encrypted' to any other layout while designing custom layouts from EKD tool.
+> **`NOTE:` This layout requires Enterprise Keyboard 3.9** or later on the device.
 
-Auto_Zoom_Y2020_Layouts{{.encrypted }}file rename is not allowed.
+**[Download this layout file](Auto_Zoom_Y2020_Layouts.encrypted) |** Contains all key layouts below 
+
+`WARNING:` The file name `Auto_Zoom_Y2020_Layouts.encrypted` is reserved; it must NOT be renamed nor used for any other custom layout.
 
 ##### Click image to enlarge, ESC to exit: 
 

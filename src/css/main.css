@@ -1439,7 +1439,10 @@ nobr{
 display:none  
 }
 
-
 #main-menu .dropdown{
   display:none;
+}
+
+.navbar-brand img {
+  max-height: 42px !important;
 }

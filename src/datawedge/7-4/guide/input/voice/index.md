@@ -162,6 +162,7 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  
 * If the PTT (push-to-talk) button is released during voice capture, there can be a 1 to 2 second delay to display the captured data due to the speech engine continually listening at that moment.
 * When PTT Express is enabled and running, Voice Input should not be used simultaneously, otherwise it can lead to unexpected behavior.
+* When Voice Input is enabled in an active profile, streaming media is muted on the device.
 
 ------
 

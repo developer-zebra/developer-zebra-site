@@ -151,6 +151,7 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  
+* When Voice Input is enabled in an active profile, streaming media is muted on the device.
 
 ------
 

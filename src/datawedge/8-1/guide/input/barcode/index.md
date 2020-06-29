@@ -9,8 +9,6 @@ productversion: '8.1'
 
 Barcode Input options specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
 
-If using SimulScan, see [SimulScan Input profile guide](../simulscan). 
-
 Barcode Input is used to specify: 
 
 * Device cameras 

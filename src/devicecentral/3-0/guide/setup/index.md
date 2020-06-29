@@ -26,7 +26,7 @@ This section provides installation instructions for **Device Central**.
 1. Download the .apk from [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software.html).
 2. Copy the .apk to the device.
 3. Tap on the .apk to install.
-5. Follow the instructions to complete the installation.
+5. Follow the instructions when prompted to complete the installation.
 4. Open Device Central.
 
 <br><br><br>

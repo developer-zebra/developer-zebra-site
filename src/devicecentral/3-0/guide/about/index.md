@@ -34,6 +34,7 @@ Device Central features:
 * Known Issues: 
       * The serial number for HS3100 Bluetooth headset may report incorrectly.
       * When connecting a Bluetooth peripheral device that provides battery information, such as RS6000 scanner or HS3100 headset, it may take 10-15 seconds for the battery information to appear.
+      * Intermittently, a pop-up message "Failed to scan Bluetooth peripheral address. Please try again..." appears even though the BT peripheral MAC address barcode is scanned successfully.
 
 
 ## Version History

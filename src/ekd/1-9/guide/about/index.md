@@ -75,7 +75,7 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 * **Undo feature** reverses each of the last 10 actions  
 * **[Deploy button](../usage/#vdeploylayouts)** automatically exports the current layout to a USB-connected device  
 * **[RepeatKeys function](../usage/#repeatkeys)** sends multiple keycodes by long-pressing a key 
-* **[Macros feature](../usage/#actionproperties)** can combine multiple keycodes, presses or actions into a single key Action 
+* **[Macros feature](../usage/#macros)** can combine multiple keycodes, presses or actions into a single key Action 
 * **New [predeveloped sample layouts](../../samples/)** can be downloaded and deployed immediately or customized to suit the needs of an enterprise
 
 ### MDNA Enterprise License 

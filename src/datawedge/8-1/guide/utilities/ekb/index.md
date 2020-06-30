@@ -14,7 +14,7 @@ productversion: '8.1'
 * Enterprise Keyboard must be set as the default IME in Android Settings on the device. 
 * The Enterprise Keyboard layout definition file (`.encrypted`) is placed on the device in directory `/enterprise/device/settings/ekb/config`.
 
-> **Note:** Custom key layout configuration is not supported on TC21/TC26 devices. Support will be added in a future release.
+> **Note:** Enterprise Keyboard custom layouts are not supported on TC21/TC26 devices. Support will be added in a future release.
 
 <img style="height:350px" src="generic-ekb-layout.png"/>
 _Figure 1. Enterprise Keyboard - standard (default) layout_             

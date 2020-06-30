@@ -30,6 +30,7 @@ Data for custom key layout(s) is stored in the custom key-layout definition file
 * **Do NOT deploy empty key layout files**; they can cause Enterprise Keyboard to behave unpredictably.
 * **The "Switch-Scan" Press Action sometimes displays a layout *other* than the expected EKB "scan" layout**. 
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **On TC21/TC26 devices, DataWedge Profiles cannot be used to select or switch between custom layouts**. Zebra recommends using EKB intents instead.  
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 <!-- once confirmed by eng, copy last two above to usage notes on about page and elsewhere -->
 

@@ -356,6 +356,8 @@ _The Remapping panel showing current settings of remappable keys; tap to edit_.
 ## DataWedge
 The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](http://techdocs.zebra.com/datawedge), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
 
+> **NOTE: On TC21/TC26 devices, DataWedge Profiles cannot be used to select or switch between custom layouts**. Zebra recommends using EKB intents instead. 
+
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
 
@@ -410,7 +412,7 @@ The Tab key is designed to move the cursor or UI focus from one text field or UI
 ------
 
 ## Scanner Control
-It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](http://techdocs.zebra.com/datawedge/latest/guide/settings/#disabledatawedge) in the [DataWedge User Guide](http://techdocs.zebra.com/datawedge). 
+It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), neither DataWedge nor the Enterprise Keyboard scan tab will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](http://techdocs.zebra.com/datawedge/latest/guide/settings/#disabledatawedge) in the [DataWedge User Guide](http://techdocs.zebra.com/datawedge). 
 
 -----
 

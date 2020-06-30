@@ -53,6 +53,7 @@ Resets all key layouts and enables Enterprise Keyboard (if disabled)
 * **If an app contains logic to show the keyboard automatically** when an activity comes to the foreground (i.e. the activity has a declared flag of `android:windowSoftInputMode`=`stateVisible` in its `AndroidManifest.xml` file), **that app cannot hide the keyboard using the SHOW API**.
 * Apps running in full screen mode display custom key layouts with an extra margin from the bottom of the device screen.
 * **When using DataWedge to switch layouts**, the EKB fixed layout is sometimes shown briefly or until the focus changes again. 
+* **On TC21/TC26 devices, DataWedge Profiles cannot be used to select or switch between custom layouts**. Zebra recommends using EKB intents instead.  
 * **When custom layouts are displayed, <u>all EKB settings, preferences and functions are suspended</u>**.
 
 -----

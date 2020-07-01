@@ -110,7 +110,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents2.5">Enterprise Keyboard 3.9+</a></td>
   <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download and install latest app</a></td></td>
   <td>Included</td>
-  <td>License required to use EKB with DataWedge</td>
+  <td>License required to use EKB with <a href="#softwarecomponents">DataWedge</a> or <a href="#softwarecomponents2.1">Enterprise Browser</a></td>
   </tr>
 
   <tr>

@@ -20,7 +20,61 @@ The following is a generalized list of the steps required to bring a Zebra devic
 
 1. Upgrade the device to Android 10
 2. Apply the LG Patch for CC compliance
-3. Apply the "FDE to FBE" patch
+3. Migrate from full-disk to file-based encryption (using Zebra FDE-to-FBE patch)
+4. 
+
+### Prerequisites
+The following are required to bring a Zebra device into CC state: 
+
+* **One or more [supported devices](#supporteddevices) running Android 10** and with support for Federal Information Processing Standard (FIPS)
+* Windows computer with Zebra StageNow 4.2 (or later) installed [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
+* FDE to FBE conversion package
+* others? 
+
+-----
+
+### Supported Devices
+The following Zebra devices running Android 10 (kernel 4.4.205) have been brought to a CC-compliant state by Zebra engineers: 
+
+* MC9300 
+* TC52
+* TC57
+
+The following devices have equivalent hardware to those above and are expected to be capable of CC compliance: 
+
+* CC600
+* CC605
+* CC610
+* CC6000
+* EC30
+* EC30PR
+* EC300K
+* ET51
+* ET56
+* L10A
+* L10AW
+* MC3300x
+* MC3300xR
+* MC3300xC
+* PS20J
+* TC57X
+* TC72
+* TC77
+* TC8300
+* TC97
+* VC8300 
+
+
+-----
+
+<!-- devices per input doc:
+- TC52, TC72 and MC93 A10 SDM660 FIPS devices
+- define FDE and FBE
+- 
+
+ -->
+
+
 
 
 <!-- 

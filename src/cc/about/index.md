@@ -101,6 +101,7 @@ _Click image to enlarge; ESC to exit_.
 
 -----
  -->
+<!-- 
 ## Supported Devices
 
 Common Criteria is supported on Zebra devices built on the SDM660 platform running Android 10 or later. 
@@ -110,6 +111,7 @@ _Click image to enlarge; ESC to exit_.
 <br>
 
 -----
+ -->
 
 ## See Also
 

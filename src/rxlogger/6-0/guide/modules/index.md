@@ -48,6 +48,27 @@ RxLogger data collection modules control the logging of individual components of
 ## ANR Module
 Controls collection of data from Android's "application not responding" (ANR) events. Event data is copied directly from the Android system and saved in a file called `trace.txt` or some variant thereof. For example, the ANR event for a post-loaded app would be similar to `trace-<app_package_name>.txt`. 
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable collection of ANR files</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for ANR files</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/anr/</td>
+  </tr>
+</table>
+<!-- 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -120,7 +141,7 @@ Controls collection of data from Android's "application not responding" (ANR) ev
   </td>
  </tr>
 </table>
-
+-->
 
 -----
 
@@ -130,6 +151,34 @@ The BTSnooplog Module captures Bluetooth HCI (Host Controller Interface) snoop l
 <br>
 **Note:** When a Bluetooth peripheral is paired and BTSnooplog module is enabled, expect Bluetooth to disconnect and re-connect to the peripheral as required for BTSnooplog to start capturing snoop logs. This also occurs when any changes are made to BTSnooplog configuration. 
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable BTSnooplog module log collection</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for BTSnooplog files</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/btsnooplog/</td>
+  </tr>
+  <tr>
+  	<td>Select Trace Level</td>
+   <td>Determines the amount of information logged</td>
+   <td>List</td>
+	<td>NONE - Index 0<br>ERROR<br>WARNING (default)<br>API<br>EVENT<br>FULL<br>VERBOSE</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -214,6 +263,7 @@ The BTSnooplog Module captures Bluetooth HCI (Host Controller Interface) snoop l
   </td>
  </tr> 
 </table>
+-->
 
 -----
 
@@ -221,6 +271,70 @@ The BTSnooplog Module captures Bluetooth HCI (Host Controller Interface) snoop l
 
 The Kernel module captures `kmsg` data from the Android system and outputs it to a series of numbered files (i.e. `KLog0.txt`, `KLog1.txt`, `KLog2.txt`) with 0 being the newest. 
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable collection of kernel logs</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for kernel logs</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;</td>
+  </tr>
+  <tr>
+  	<td>Kernel Log filename</td>
+   <td>The base file name to save kernel logs</td>
+   <td>String</td>
+	<td>KLog</td>
+  </tr>
+  <tr>
+  	<td>Kernel Log File size (MB)</td>
+   <td>The size of each kernel log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>10</td>
+  </tr>
+  <tr>
+  	<td>Kernel Log Interval (sec)</td>
+   <td>The rate at which kernel logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Kernel Log file count</td>
+   <td>The maximum number of kernel log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Enable System Timestamp in Kernel Log</td>
+   <td>Enable or disable time stamp in kernel logs</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>System Timestamp Interval</td>
+   <td>The interval to add timestamp in kernel logs</td>
+   <td>Integer</td>
+	<td>60</td>
+  </tr>
+  <tr>
+  	<td>Enable Logcat Integration Override</td>
+   <td>Enable or disable logcat integration</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -481,6 +595,7 @@ The Kernel module captures `kmsg` data from the Android system and outputs it to
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -494,11 +609,278 @@ Captures data from Android's internal logging mechanism, sometimes known as logc
 * Main
 * Crash
 <br><br>
-Module options allow data from any or all enabled buffers to be stored in separate files or in a single combined file. Output is stored in a series of numbered text files (i.e. `Main0.txt`, `Main1.txt`, `Main2.txt`) with 0 being the newest.
+<p>Module options allow data from any or all enabled buffers to be stored in separate files or in a single combined file. Output is stored in a series of numbered text files (i.e. `Main0.txt`, `Main1.txt`, `Main2.txt`) with 0 being the newest.</p><br>
 
-**Reference material**:
-* [Android logging and filtering](http://developer.android.com/tools/debugging/debugging-log.html)
+**Reference material**: [Android logging and filtering](http://developer.android.com/tools/debugging/debugging-log.html)
 
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable collection of logcat logs</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for logcat logs</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;</td>
+  </tr>
+  <tr>
+  	<td>Enable main logcat</td>
+   <td>Enable or disable the collection of the main buffer</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Main log interval (sec)</td>
+   <td>The rate at which main buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Main log filename</td>
+   <td>The base file name to save main buffer logs</td>
+   <td>String</td>
+	<td>Main</td>
+  </tr>
+  <tr>
+  	<td>Main log file count</td>
+   <td>The maximum number of main buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Main log file size (MB)</td>
+   <td>The size of each main buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>Main log filter (sec)</td>
+   <td>Custom logcat filter to run on the main buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+  <tr>
+  	<td>Enable event logcat</td>
+   <td>Enable or disable the collection of the event buffer</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Event log interval (sec)</td>
+   <td>The rate at which event buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Event log filename</td>
+   <td>The base file name to save event buffer logs</td>
+   <td>String</td>
+	<td>Event</td>
+  </tr>
+  <tr>
+  	<td>Event log file count</td>
+   <td>The maximum number of event buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Event log file size (MB)</td>
+   <td>The size of each event buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>Event log filter (sec)</td>
+   <td>Custom logcat filter to run on the event buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+  <tr>
+  	<td>Enable radio logcat</td>
+   <td>Enable or disable the collection of the radio buffer</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Radio log interval (sec)</td>
+   <td>The rate at which radio buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Radio log filename</td>
+   <td>The base file name to save radio buffer logs with</td>
+   <td>String</td>
+	<td>Radio</td>
+  </tr>
+  <tr>
+  	<td>Radio log file count</td>
+   <td>The maximum number of radio buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Radio log file size (MB)</td>
+   <td>The size of each radio buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>Radio log filter (sec)</td>
+   <td>Custom logcat filter to run on the radio buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+  <tr>
+  	<td>Enable system logcat</td>
+   <td>Enable or disable the collection of the system buffer</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>System log interval (sec)</td>
+   <td>The rate at which system buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>System log filename</td>
+   <td>The base file name to save system buffer logs</td>
+   <td>String</td>
+	<td>System</td>
+  </tr>
+  <tr>
+  	<td>System log file count</td>
+   <td>The maximum number of system buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>System log file size (MB)</td>
+   <td>The size of each system buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>System log filter (sec)</td>
+   <td>Custom logcat filter to run on the system buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+  <tr>
+  	<td>Enable crash logcat</td>
+   <td>Enable or disable the collection of the crash buffer</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Crash log interval (sec)</td>
+   <td>The rate at which crash buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Crash log filename</td>
+   <td>The base file name to save crash buffer logs</td>
+   <td>String</td>
+	<td>Crash</td>
+  </tr>
+  <tr>
+  	<td>Crash log file count</td>
+   <td>The maximum number of crash buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Crash log file size (MB)</td>
+   <td>The size of each crash buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>Crash log filter (sec)</td>
+   <td>Custom logcat filter to run on the crash buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+  <tr>
+  	<td>Enable combined logcat</td>
+   <td>The maximum number of crash buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Enable main buffer</td>
+   <td>Enable or disable the addition of the main buffer into the combined locat file</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Enable event buffer</td>
+   <td>Enable or disable the addition of the event buffer into the combined locat file</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Enable radio buffer</td>
+   <td>Enable or disable the addition of the radio buffer into the combined locat file</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Enable system buffer</td>
+   <td>Enable or disable the addition of the system buffer into the combined locat file</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Enable crash buffer</td>
+   <td>Enable or disable the addition of the crash buffer into the combined locat file</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Combined log interval (sec)</td>
+   <td>The rate at which combined buffer logs will be dumped into the collecting file</td>
+   <td>Integer</td>
+	<td>30</td>
+  </tr>
+  <tr>
+  	<td>Combined log filename</td>
+   <td>The base file name to save combined buffer logs</td>
+   <td>String</td>
+	<td>Combined</td>
+  </tr>
+  <tr>
+  	<td>Combined log file count</td>
+   <td>The maximum number of crash buffer log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+    <tr>
+  	<td>Combined log file size (MB)</td>
+   <td>The size of each combined buffer log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>10</td>
+  </tr>
+    <tr>
+  	<td>Combined log filter (sec)</td>
+   <td>Custom logcat filter to run on the combined buffer</td>
+   <td>String</td>
+	<td></td>
+  </tr>
+</table>
+
+<!-- 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:47.05pt;border-collapse:collapse;border:none'>
  <tr>
@@ -1689,19 +2071,44 @@ Module options allow data from any or all enabled buffers to be stored in separa
   </td>
  </tr>
 </table>
+-->
 
 -----
 
 ## LTS Module
 
 The Long Term Storage (LTS) module gathers log files generated by other active modules and stores them together for device health and behavior analysis over a period of time. Module output files are compressed with gzip and stored in the specified path, which is appended as shown below. Multiple stores in a single hour (noted in military time) are numbered from 00-99. 
+<br>
 
 **Storage Path**:
 `/<device_model>/<BSP_build_number>/<device_serial_number>/<YYMMDD>/<HHxx>/`
+<br>
 
 **Example**: 
 `TC51/91-01-21-NN-00/16885225D0029/170621/2100/`
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable LTS collection</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for LTS files</td>
+   <td>String</td>
+	<td>&lt;SDcard&gt;/RxLoggerLTS/</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -1774,6 +2181,7 @@ The Long Term Storage (LTS) module gathers log files generated by other active m
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -1783,6 +2191,64 @@ The Qxdm Module captures Qualcomm Modem Logs from the device, which are read usi
 <br>
 **Warning**: Output from this module consumes all available storage space if the log size parameter is left unspecified. **Zebra recommends specifying a log size in accordance with available storage**.
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable Qxdm collection</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for Qxdm files</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/qxdm/logs/</td>
+  </tr>
+  <tr>
+  	<td>Qxdm Log Size (MB)</td>
+   <td>Specify the size of each individual Qxdm log file</td>
+   <td>Integer</td>
+	<td>100</td>
+  </tr>
+  <tr>
+  	<td>Qxdm test sets to keep</td>
+   <td>Number of test sets to keep (one test set is a start and stop)</td>
+   <td>Integer</td>
+	<td>3</td>
+  </tr>
+    <tr>
+  	<td>Choose Log Filter</td>
+   <td>Select the log filter that Qxdm needs to process (custom filter to be pushed)</td>
+   <td>List</td>
+	<td>Default filter – Index 0</td>
+  </tr>
+    <tr>
+  	<td>Path for User Defined Filter</td>
+   <td>The file name if using a user-defined config file &lt;RxLogger_Path&gt;/qxdm/cfg/Custom_filter.cfg</td>
+   <td>String</td>
+	<td>Custom_filter.cfg</td>
+  </tr>
+  <tr>
+  	<td>Choose Logging Limit Type</td>
+   <td>Select custom log option to specify the maximum number of log files to be generated</td>
+   <td>List</td>
+	<td>Default logging – Index 0</td>
+  </tr>
+  <tr>
+  	<td>Custom Logging</td>
+   <td>Number of log files to keep on a test set which must be specified by user</td>
+   <td>Integer</td>
+	<td>3</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -2013,7 +2479,7 @@ The Qxdm Module captures Qualcomm Modem Logs from the device, which are read usi
   </td>
  </tr>
 </table>
-
+-->
 
 -----
 
@@ -2021,6 +2487,40 @@ The Qxdm Module captures Qualcomm Modem Logs from the device, which are read usi
 
 Captures the last kmsg from the device, writing it to persistent memory immediately prior to a system crash. Ramoops outputs text files generated by the system at boot or after a kernel panic. These files contain raw kmsg data from the boot immediately prior to the crash. More [about Ramoops](https://www.kernel.org/doc/html/v4.12/admin-guide/ramoops.html). 
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable Ramoops collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for Ramoops files</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/ramoops/</td>
+  </tr>
+  <tr>
+  	<td>Base filename</td>
+   <td>The base file name of stored ramoops file</td>
+   <td>String</td>
+	<td>ramoops</td>
+  </tr>
+  <tr>
+  	<td>Ramoops file count</td>
+   <td>The maximum number of ramoops log files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -2145,6 +2645,7 @@ Captures the last kmsg from the device, writing it to persistent memory immediat
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -2152,6 +2653,22 @@ Captures the last kmsg from the device, writing it to persistent memory immediat
 
 The Recovery Module captures recovery/OSupdate logs as well as Android's Rescue Party logs from the device. Rescue Party was introduced starting with Android 8.0, preventing devices from being stuck in reboot loops. If a bootloop is detected, Android sends out a "rescue party" to perform a series of actions in attempts to recover the device. As a last resort, Rescue Party reboots the device into recovery mode and prompts the user to perform a factory reset. Recovery logs are stored in folder `<RxLogger_Path>/recovery`, e.g. `sdcard/RxLogger/recovery`. 
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable Recovery module log collection</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -2198,12 +2715,108 @@ The Recovery Module captures recovery/OSupdate logs as well as Android's Rescue 
   </td>
  </tr>
 </table>
+-->
 
 -----
 
 ## Resource Module
 
 Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs collected metrics as a series of comma separated values stored in files with a `.csv` extension.
+
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable Resource collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for Resource files</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;</td>
+  </tr>
+  <tr>
+  	<td>Resource log Interval (sec)</td>
+   <td>The rate at which Resource collects and logs information</td>
+   <td>Integer</td>
+	<td>60</td>
+  </tr>
+  <tr>
+  	<td>Resource Log file size (MB)</td>
+   <td>The size of each Resource Log file before rotating in megabytes</td>
+   <td>Integer</td>
+	<td>10</td>
+  </tr>
+  <tr>
+  	<td>Resource Log file count</td>
+   <td>The maximum number of Resource files to keep at any one time</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+  <tr>
+  	<td>Power</td>
+   <td>Enable or disable the collection of battery statistics</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>System Resource</td>
+   <td>Enable or disable the collection of System Resource information</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Advanced CPU</td>
+   <td>Enable or disable the collection of CPU status</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Network</td>
+   <td>Enable or disable the collection of Network status</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Light</td>
+   <td>Enable or disable the ambient light level</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Bluetooth</td>
+   <td>Enable or disable the collection of Bluetooth information</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Heater</td>
+   <td>Enable or disable the collection of heater information</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Hide Non-Applicable data</td>
+   <td>Enable or disable the collection of Non-Applicable data based on device</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Hide Raw Data</td>
+   <td>Enable or disable the collection of raw data information</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -2589,6 +3202,7 @@ Captures device information and system statistics at specified intervals to dete
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -2596,7 +3210,136 @@ Captures device information and system statistics at specified intervals to dete
 
 Captures device information and system statistics at each "moment in time" to determine the health and behavior of device resources over a specified period. Outputs a single text file containing collected metrics for selected parameters for each specified interval. Though similar to the Resource module in function, Snapshot captures more precise data, including threads and dumpsys details along with a device fingerprint header for each file. Snapshot creates one text file per data collection set containing with the output of all enabled data selections. 
 
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable Snapshot collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for Snapshot logs</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/snapshots/</td>
+  </tr>
+  <tr>
+  	<td>Log filename</td>
+   <td>The base file name of stored Snapshot file</td>
+   <td>String</td>
+	<td>snapshot</td>
+  </tr>
+  <tr>
+  	<td>Log Interval (sec)</td>
+   <td>The rate at which Snapshot will collect information and dump into its file</td>
+   <td>Integer</td>
+	<td>1800</td>
+  </tr>
+  <tr>
+  	<td>Snapshot file count</td>
+   <td>The maximum number of Snapshot files to keep at any one time</td>
+   <td>Integer</td>
+	<td>50</td>
+  </tr>
+  <tr>
+  	<td>Top</td>
+   <td>Enable or disable the running of the “top” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>CPU Info</td>
+   <td>Enable or disable the running of the “dumpsys cpuinfo” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Memory Info</td>
+   <td>Enable or disable the running of the “dumpsys meminfo -a” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Battery Info</td>
+   <td>Enable or disable the running of the “dumpsys batterystats” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Wake Locks</td>
+   <td>Enable or disable the collection of the sys/fs wake_lock information</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Time in State</td>
+   <td>Enable or disable the collection of the sys/fs cpufreq for each core</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Processes</td>
+   <td>Enable or disable the running of the “ps -p” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Threads</td>
+   <td>Enable or disable the running of the “ps -t -p -P” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Properties</td>
+   <td>Enable or disable the running of the “getprop” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Interfaces</td>
+   <td>Enable or disable the running of the “netcfg” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>IP Routing Table</td>
+   <td>Enable or disable the collection of the net route for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Connectivity</td>
+   <td>Enable or disable the running of the “dumpsys connectivity” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Wifi</td>
+   <td>Enable or disable the running of the “dumpsys wifi” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>File systems</td>
+   <td>Enable or disable the running of the “df” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Usage Stats</td>
+   <td>Enable or disable the running of the “dumpsys usagestats” command for data collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+</table>
 
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -3153,6 +3896,7 @@ Captures device information and system statistics at each "moment in time" to de
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -3160,7 +3904,46 @@ Captures device information and system statistics at each "moment in time" to de
 
 Captures packet data for all device network connections and outputs a binary file that can be read with Wireshark and other standards-based network analysis tools.
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable tcpdump collection</td>
+   <td>Boolean</td>
+	<td>false</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for tcpdump logs</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/tcpdump/</td>
+  </tr>
+  <tr>
+  	<td>Base filename</td>
+   <td>The base file name of stored tcpdump file</td>
+   <td>String</td>
+	<td>capture.pcap</td>
+  </tr>
+  <tr>
+  	<td>Tcpdump file size (MB)</td>
+   <td>The max file size used before rotating tcpdump files</td>
+   <td>Integer</td>
+	<td>5</td>
+  </tr>
+  <tr>
+  	<td>Tcpdump file count</td>
+   <td>The max number of tcpdump files to keep</td>
+   <td>Integer</td>
+	<td>2</td>
+  </tr>
+</table>
 
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -3311,6 +4094,7 @@ Captures packet data for all device network connections and outputs a binary fil
   </td>
  </tr>
 </table>
+-->
 
 -----
 
@@ -3320,6 +4104,28 @@ Collects the Android native crash logs from the device, which contain stack trac
 
 [More info](https://source.android.com/devices/tech/debug/#debuggerd)
 
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Name</th>
+	 <th>Description</th>
+    <th>Type</th>
+    <th>Default Value</th>
+  </tr>
+  <tr>
+  	<td>Enable Module</td>
+   <td>Enable or disable tombstone collection</td>
+   <td>Boolean</td>
+	<td>true</td>
+  </tr>
+  <tr>
+  	<td>Log path</td>
+   <td>The storage path for tombstone logs</td>
+   <td>String</td>
+	<td>&lt;RxLogger_Path&gt;/tombstone/</td>
+  </tr>
+</table>
+
+<!--
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
  <tr>
@@ -3392,7 +4198,7 @@ Collects the Android native crash logs from the device, which contain stack trac
   </td>
  </tr>
 </table>
-
+-->
 <!-- [^top](../modules) -->
 -----
 

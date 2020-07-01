@@ -10,6 +10,11 @@ content-items:
     url: migration
   - type: section
     level: 4
+    title: DataWedge Best Practices
+    text: Provides guidance and best practices for DataWedge application development, including performance optimization and various use cases for optimal user experience. 
+    url: http://techdocs.zebra.com/datawedge/latest/guide/gettingstarted/#bestpractices
+  - type: section
+    level: 4
     title: Kiosk Persistence After an Enterprise Reset
     text: Describes how to preserve settings following an Enterprise Reset on a persistence-enabled device that implements a secure Android launcher and/or its Kiosk Mode feature deployed using the Zebra StageNow administration tool or an enterprise mobile management (EMM) system such as those from SOTI or AirWatch (specific instructions provided). 
     url: kiosk_persistence_after_reset.pdf

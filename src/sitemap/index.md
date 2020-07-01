@@ -12,6 +12,14 @@ automenu:
           url: http://techdocs.zebra.com/cartscan
         - title: DataWedge
           url: http://techdocs.zebra.com/datawedge
+        - title: Device Central
+          url: http://techdocs.zebra.com/devicecentral
+        - title: Device Diagnostic Tool
+          url: http://techdocs.zebra.com/ddt
+        - title: Device Tracker
+          url: http://techdocs.zebra.com/devicetracker
+        - title: DEX Scan & Pair
+          url: http://techdocs.zebra.com/dex-scanpair
         - title: EMDK for Android
           url: http://techdocs.zebra.com/emdk-for-android
         - title: EMDK for Xamarin
@@ -22,14 +30,26 @@ automenu:
           url: http://techdocs.zebra.com/ehs
         - title: Enterprise Keyboard
           url: http://techdocs.zebra.com/enterprise-keyboard
+        - title: Enterprise Keyboard (EKB) Designer
+          url: http://techdocs.zebra.com/ekd
         - title: Link-OS SDKs
           url: http://techdocs.zebra.com/link-os/
         - title: Mobility Extensions (MX)
           url: http://techdocs.zebra.com/mx/
+        - title: OEMConfig
+          url: http://techdocs.zebra.com/oemconfig
+        - title: PowerPrecision Console
+          url: http://techdocs.zebra.com/ppc
+        - title: RFID
+          url: http://techdocs.zebra.com/dcs/rfid
+        - title: RxLogger
+          url: http://techdocs.zebra.com/rxlogger
         - title: SimulScan
           url: http://techdocs.zebra.com/simulscan
         - title: StageNow
           url: http://techdocs.zebra.com/stagenow/
+        - title: Zebra MDNA Licensing
+          url: http://techdocs.zebra.com/licensing
     - title: App/Device Security
       items:
         - title: Enterprise Home Screen
@@ -72,8 +92,16 @@ automenu:
       items:
         - title: CartScan
           url: http://techdocs.zebra.com/cartscan
+        - title: Device Central
+          url: http://techdocs.zebra.com/devicecentral
+        - title: Device Tracker
+          url: http://techdocs.zebra.com/devicetracker
+        - title: DEX Scan & Pair
+          url: http://techdocs.zebra.com/dex-scanpair
         - title: Enterprise Keyboard
           url: http://techdocs.zebra.com/enterprise-keyboard
+        - title: PowerPrecision Console
+          url: http://techdocs.zebra.com/ppc
         - title: SimulScan
           url: http://techdocs.zebra.com/simulscan    
     - title: Printing

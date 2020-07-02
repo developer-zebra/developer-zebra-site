@@ -16,7 +16,7 @@ menu:
 
 ## Overview
 
-The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. 
+The following is a generalized list of the requirements and procedures to bring a Zebra device into Common Criteria compliance. 
 
 **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
@@ -26,9 +26,9 @@ The following is a generalized list of the steps required to bring a Zebra devic
 The following are required to bring a Zebra device into CC state: 
 
 * **One or more [supported devices](#supporteddevices) running Android 10** and with support for Federal Information Processing Standard (FIPS)
-* Windows computer with Zebra StageNow 4.2 (or later) installed [go to download page](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
+* Windows computer with Zebra StageNow 4.2 (or later) installed [(Download now)](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 
 * LifeGuard patch for CC compliance 
-* FDE to FBE conversion package
+* FDE to FBE conversion patch
 
 -----
 

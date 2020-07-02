@@ -18,34 +18,7 @@ menu:
 
 The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. 
 
-> **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
-
-##### Before beginning, target device(s) must be running the latest Android 10 build. More [about LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
-
-**&#49;. Create a StageNow Profile to**:<br> 
-* **Apply the LifeGuard patch for CC compliance** 
-* **Apply the FDE-to-FBE patch** to migrate device from full-disk to file-based encryption
-
-**&#50;. Generate and scan barcodes** to execute Profiles and apply patches on device.<br>
-**&#51;. Create a second StageNow Profile** to set device according to CC specifications:<br> 
-* **Disable external storage**
-* **Enable Trusted Staging**
-* **Protect above settings from changes**
-* **Download and install Device Policy Controller** on device 
-* **Launch DPC app and enroll as Device Owner**
-
-**&#52;. Disable "add new user"** function in DPC app.<br>
-**&#53;. Additional device settings** for CC compliance: <br>
-* **Require lock screen**
-* **Disable "Smart Lock"**
-* **Disable debugging features**
-* **Disable "app installation from unknown sources"**
-* **Enable and route all network traffic through a VPN**
-* **Enable audit logging**
-
-#### Device is CC complaint when all steps above are completed successfully. 
-
-> **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
+**For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
 -----
 
@@ -90,6 +63,36 @@ The following devices have equivalent hardware to those above and are expected t
 * TC97
 * VC8300 
 
+-----
+
+#### Before beginning, target device(s) must be running the latest Android 10 build. More about [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+
+### Basic Procedure 
+
+**&#49;. Create a StageNow Profile to**:<br> 
+* **Apply the LifeGuard patch for CC compliance** 
+* **Apply the FDE-to-FBE patch** to migrate device from full-disk to file-based encryption
+
+**&#50;. Generate and scan barcodes** to execute Profiles and apply patches on device.<br>
+**&#51;. Create a second StageNow Profile** to set device according to CC specifications:<br> 
+* **Disable external storage**
+* **Enable Trusted Staging**
+* **Protect above settings from changes**
+* **Download and install Device Policy Controller** on device 
+* **Launch DPC app and enroll as Device Owner**
+
+**&#52;. Disable "add new user"** function in DPC app.<br>
+**&#53;. Additional device settings** for CC compliance: <br>
+* **Require lock screen**
+* **Disable "Smart Lock"**
+* **Disable debugging features**
+* **Disable "app installation from unknown sources"**
+* **Enable and route all network traffic through a VPN**
+* **Enable audit logging**
+
+#### Device is CC complaint when all steps above are completed successfully. 
+
+> **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
 -----
 

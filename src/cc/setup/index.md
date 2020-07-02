@@ -87,7 +87,7 @@ Target device(s) must be running the latest Android 10 build. More about [LifeGu
 * **Launch DPC app and enroll as Device Owner**
 
 **&#52;. Disable "add new user"** function in DPC app.<br>
-**&#53;. Additional device settings** for CC compliance: <br>
+**&#53;. Configure additional device settings**: <br>
 * **Require lock screen**
 * **Disable "Smart Lock"**
 * **Disable debugging features**

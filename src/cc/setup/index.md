@@ -18,25 +18,25 @@ menu:
 
 The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf)**. 
 
-0. Upgrade the device to Android 10 (if necessary)
-1. Create a StageNow profile to: 
- * Apply the LG Patch for CC compliance 
- * Apply the FDE-to-FBE patch to migrate device from full-disk to file-based encryption
-2. Generate and scan barcodes to execute Profiles and apply patches on device
-3. Create a second StageNow profile to set device according to CC specifications: 
- * Disable external storage
- * Enable Trusted Staging
- * Protect above settings from changes
- * Download and install Device Policy Controller on device 
- * Launch DPC app and enroll as Device Owner
-4. Disable "add new user" function in DPC app
-5. Additional device settings for CC compliance: 
- * Require lock screen
- * Disable "Smart Lock"
- * Disable debugging features
- * Disable "app installation from unknown sources"
- * Enable and route all network traffic through a VPN
- * Enable audit logging
+&#48; Upgrade the device to Android 10 (if necessary)
+&#49; Create a StageNow profile to: 
+* Apply the LG Patch for CC compliance 
+* Apply the FDE-to-FBE patch to migrate device from full-disk to file-based encryption
+&#50; Generate and scan barcodes to execute Profiles and apply patches on device
+&#51; Create a second StageNow profile to set device according to CC specifications: 
+* Disable external storage
+* Enable Trusted Staging
+* Protect above settings from changes
+* Download and install Device Policy Controller on device 
+* Launch DPC app and enroll as Device Owner
+&#52; Disable "add new user" function in DPC app
+&#53; Additional device settings for CC compliance: 
+* Require lock screen
+* Disable "Smart Lock"
+* Disable debugging features
+* Disable "app installation from unknown sources"
+* Enable and route all network traffic through a VPN
+* Enable audit logging
 
 ### Prerequisites
 The following are required to bring a Zebra device into CC state: 
@@ -224,3 +224,7 @@ _Click image to enlarge; ESC to exit_.
 ##### To exit panel, tap left-facing arrow. 
  -->
 -----
+
+* **[FAQ](../faq)** | Frequently asked questions about Common Criteria
+* **[Glossary](../about)** | Terms associated with Common Criteria specifications 
+* **[CC Setup Guide](../setup)** | Basic steps for bringing a device into CC compliance 

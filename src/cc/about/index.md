@@ -24,6 +24,8 @@ Other key concepts include **Protection Profiles**, which package security requi
 
 -----
 
+<!-- Prerequisites are shown on the setup page
+
 ### Prerequisites
 The following are required to bring a Zebra device into CC state: 
 
@@ -31,6 +33,7 @@ The following are required to bring a Zebra device into CC state:
 * **Windows computer with Zebra StageNow 4.2** (or later) installed [go to download page](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
 * LifeGuard patch for CC compliance
 * FDE to FBE conversion package
+ -->
 
 <!-- devices per input doc:
 - TC52, TC72 and MC93 A10 SDM660 FIPS devices
@@ -116,8 +119,8 @@ _Click image to enlarge; ESC to exit_.
 ## Also See
 
 * **[FAQ](../faq)** | Frequently asked questions about Common Criteria
+* **[Glossary](../about)** | Terms associated with Common Criteria specifications 
 * **[CC Setup Guide](../setup)** | Basic steps for bringing a device into CC compliance 
-* **[Glossary](../about)** | Common Criteria terminology 
 
 <!-- 
 menu:

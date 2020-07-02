@@ -69,7 +69,7 @@ The following devices have equivalent hardware to those above and are expected t
 
 #### Before Beginning
 
-target device(s) must be running the latest Android 10 build.<br><br> More about [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+Target device(s) must be running the latest Android 10 build. More about [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
 <br>
 
 ##### To bring a Zebra device into CC compliance:  

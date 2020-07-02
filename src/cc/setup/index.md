@@ -18,25 +18,27 @@ menu:
 
 The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf)**. 
 
-&#48; Upgrade the device to Android 10 (if necessary)
-&#49; Create a StageNow profile to: 
-* Apply the LG Patch for CC compliance 
-* Apply the FDE-to-FBE patch to migrate device from full-disk to file-based encryption
-&#50; Generate and scan barcodes to execute Profiles and apply patches on device
-&#51; Create a second StageNow profile to set device according to CC specifications: 
-* Disable external storage
-* Enable Trusted Staging
-* Protect above settings from changes
-* Download and install Device Policy Controller on device 
-* Launch DPC app and enroll as Device Owner
-&#52; Disable "add new user" function in DPC app
-&#53; Additional device settings for CC compliance: 
-* Require lock screen
-* Disable "Smart Lock"
-* Disable debugging features
-* Disable "app installation from unknown sources"
-* Enable and route all network traffic through a VPN
-* Enable audit logging
+&#48; **Upgrade the device to Android 10** (if necessary) <br>
+&#49; **Create a StageNow profile to**:<br> 
+* **Apply the LifeGuard patch for CC compliance** 
+* **Apply the FDE-to-FBE patch** to migrate device from full-disk to file-based encryption
+&#50; **Generate and scan barcodes** to execute Profiles and apply patches on device<br>
+&#51; **Create a second StageNow profile** to set device according to CC specifications:<br> 
+* **Disable external storage**
+* **Enable Trusted Staging**
+* **Protect above settings from changes**
+* **Download and install Device Policy Controller** on device 
+* **Launch DPC app and enroll as Device Owner**
+&#52; **Disable "add new user"** function in DPC app<br>
+&#53; **Additional device settings** for CC compliance: <br>
+* **Require lock screen**
+* **Disable "Smart Lock"**
+* **Disable debugging features**
+* **Disable "app installation from unknown sources"**
+* **Enable and route all network traffic through a VPN**
+* **Enable audit logging**
+
+-----
 
 ### Prerequisites
 The following are required to bring a Zebra device into CC state: 

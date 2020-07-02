@@ -28,6 +28,8 @@ Use of IrDA APIs requires experience with Java and Android app development, and 
 
 -----
 
+> **`IMPORTANT:`** To avoid synchronization errors when sending IrDA intent API calls, wait for feedback from each API call before sending the next intent. 
+
 ## IrDA Intent APIs
 
 IrDA intent APIs can be used in applications that require control of IrDA communication. Supported intent actions and commands are listed below. 

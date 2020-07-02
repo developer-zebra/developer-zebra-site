@@ -197,23 +197,12 @@ A visualization of the Resource data is available in graph form to easily view d
 
 ## Backup
 
-RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file. Another method to perform the backup is with **Backup Now** from the main screen of RxLogger, accessible from the top right menu. 
+RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file, which contains all the RxLogger logs stored on the device. 
 
-<table>
-  <tr>
-   <td>
-     <img style="height:350px" src="main_screen.jpg"/>
-   </td>
-   <td> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-   </td>
-   <td>
-     <img style="height:350px" src="toggle_chat_head.jpg"/>
-   </td>
-  </tr>
-</table>
-<i>Backup via RxUtility main screen (left) or RxLogger main screen (right)</i>
+<img style="height:350px" src="main_screen.jpg"/>
+<i>Backup via RxUtility main screen</i>
 <br>
-Note: The round save icon, or chat head, cannot be deleted with a long press. 
+Note: The round save icon, or chat head, cannot be deleted with a long press.  
 <!-- -->
 -----
 

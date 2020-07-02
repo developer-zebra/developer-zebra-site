@@ -4199,6 +4199,31 @@ Collects the Android native crash logs from the device, which contain stack trac
  </tr>
 </table>
 -->
+-----
+## Backup
+
+Create a backup of the RxLogger folder on-demand as a .zip file containing all the RxLogger logs. This is particularly useful to save logs on a device at a specific point in time after an issue occurs. Backup logs are saved on the device as a .zip file stored in `/sdcard/rxlogger/Backup-<date>-<HHMMSS>.zip`, with the date and timestamp as part of the file name. Backups are triggered by any of the following methods:
+
+* **RxLogger -** from the main screen, tap on the top right menu and select **BackupNow**.
+* **RxLogger Utility -** tap on the round save icon, or chat head (cannot be deleted with a long press).
+* **Android intent -** use the BackupNow broadcast intent: `com.symbol.rxlogger.intent.action.BACKUP_NOW`. 
+
+<table>
+  <tr>
+   <td>
+     <img style="height:350px" src="../utility/toggle_chat_head.jpg"/>
+   </td>
+   <td> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+   </td>
+   <td>
+     <img style="height:350px" src="../utility/main_screen.jpg"/>
+   </td>
+  </tr>
+</table>
+<i>Backup via RxLogger main screen (left) or RxUtility (right)</i>
+<br>
+<br>
+
 <!-- [^top](../modules) -->
 -----
 

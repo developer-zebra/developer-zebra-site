@@ -1,5 +1,5 @@
 ---
-title: Common Criteria
+title: Common Criteria Setup
 layout: guide.html
 product: Common Criteria
 menu:
@@ -18,7 +18,7 @@ menu:
 
 The following is a generalized list of the requirements and procedures to bring a Zebra device into Common Criteria compliance. 
 
-**For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
+**For detailed instructions, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
 -----
 

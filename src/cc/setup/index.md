@@ -67,7 +67,12 @@ The following devices have equivalent hardware to those above and are expected t
 
 ### Basic Procedure 
 
-#### `IMPORTANT:` Before beginning, target device(s) must be running the latest Android 10 build.<br> More about [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+#### Before Beginning
+
+target device(s) must be running the latest Android 10 build.<br><br> More about [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+<br>
+
+##### To bring a Zebra device into CC compliance:  
 
 **&#49;. Create a StageNow Profile to**:<br> 
 * **Apply the LifeGuard patch for CC compliance** 

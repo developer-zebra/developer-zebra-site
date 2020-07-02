@@ -16,20 +16,35 @@ menu:
 
 ## Overview
 
-The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf). 
+The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf)**. 
 
-1. Upgrade the device to Android 10
-2. Apply the LG Patch for CC compliance
-3. Migrate from full-disk to file-based encryption (using Zebra FDE-to-FBE patch)
-4. 
+0. Upgrade the device to Android 10 (if necessary)
+1. Create a StageNow profile to: 
+ * Apply the LG Patch for CC compliance 
+ * Apply the FDE-to-FBE patch to migrate device from full-disk to file-based encryption
+2. Generate and scan barcodes to execute Profiles and apply patches on device
+3. Create a second StageNow profile to set device according to CC specifications: 
+ * Disable external storage
+ * Enable Trusted Staging
+ * Protect above settings from changes
+ * Download and install Device Policy Controller on device 
+ * Launch DPC app and enroll as Device Owner
+4. Disable "add new user" function in DPC app
+5. Additional device settings for CC compliance: 
+ * Require lock screen
+ * Disable "Smart Lock"
+ * Disable debugging features
+ * Disable "app installation from unknown sources"
+ * Enable and route all network traffic through a VPN
+ * Enable audit logging
 
 ### Prerequisites
 The following are required to bring a Zebra device into CC state: 
 
 * **One or more [supported devices](#supporteddevices) running Android 10** and with support for Federal Information Processing Standard (FIPS)
-* Windows computer with Zebra StageNow 4.2 (or later) installed [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
+* Windows computer with Zebra StageNow 4.2 (or later) installed [go to download page](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) 
+* LifeGuard patch for CC compliance 
 * FDE to FBE conversion package
-* others? 
 
 -----
 

@@ -84,7 +84,7 @@ Snapshot submodules:
 
 ## Backup
 
-RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file. From the main RxLoggerUtility tap on **Backup**. 
+RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file, which contains all the RxLogger logs stored on the device. From the main RxLoggerUtility tap on **Backup**. 
 
 <img style="height:350px" src="backup.png"/>
 <i>Backup screen</i>

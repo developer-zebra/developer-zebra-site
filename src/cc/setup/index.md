@@ -18,9 +18,10 @@ menu:
 
 The following is a generalized list of the steps required to bring a Zebra device into Common Criteria compliance. 
 
-**For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf)**. 
+> **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
-**&#48;. Upgrade the device to Android 10** (if necessary). <br>
+##### Before beginning, target device(s) must be running the latest Android 10 build. More [about LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+
 **&#49;. Create a StageNow Profile to**:<br> 
 * **Apply the LifeGuard patch for CC compliance** 
 * **Apply the FDE-to-FBE patch** to migrate device from full-disk to file-based encryption
@@ -44,7 +45,7 @@ The following is a generalized list of the steps required to bring a Zebra devic
 
 #### Device is CC complaint when all steps above are completed successfully. 
 
-**For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation (`.pdf`)](agd.pdf)**. 
+> **For detailed procedures, please refer to the Zebra [Administrative Guidance Documentation](agd.pdf)** (`.pdf`). 
 
 -----
 
@@ -233,7 +234,6 @@ _Click image to enlarge; ESC to exit_.
 
 ##### To exit panel, tap left-facing arrow. 
  -->
------
 
 * **[FAQ](../faq)** | Frequently asked questions about Common Criteria
 * **[Glossary](../about)** | Terms associated with Common Criteria specifications 

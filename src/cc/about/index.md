@@ -1,5 +1,5 @@
 ---
-title: About Common Criteria
+title: Common Criteria Setup
 layout: guide.html
 product: Zebra CCITSE
 menu:

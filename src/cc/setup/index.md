@@ -25,10 +25,11 @@ The following is a generalized list of the requirements and procedures to bring 
 ### Prerequisites
 The following are required to bring a Zebra device into CC state: 
 
-* **One or more [supported devices](#supporteddevices) running Android 10** and with support for Federal Information Processing Standard (FIPS)
+* **One or more [supported devices](#supporteddevices) running Android 10** that support for Federal Information Processing Standard (FIPS)
 * Windows computer with Zebra StageNow 4.2 (or later) installed [(Download now)](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 
 * LifeGuard patch for CC compliance 
-* FDE to FBE conversion patch
+* FDE-to-FBE conversion patch
+* Device Policy Controller (DPC) app
 
 -----
 

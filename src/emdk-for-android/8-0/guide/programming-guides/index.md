@@ -30,6 +30,11 @@ content-items:
     url: /emdk-for-android/8-0/guide/programming_practices
   - type: section
     level: 4
+    title: MDNA Licensing Guide
+    text: Describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy.
+    url: /emdk-for-android/8-0/guide/licensing
+  - type: section
+    level: 4
     title: Multi-user Programming
     text: Includes code samples for properly programming an app to run on a device with multiple users.
     url: /emdk-for-android/8-0/guide/multiuser

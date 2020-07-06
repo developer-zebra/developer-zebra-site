@@ -52,6 +52,9 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 > **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored in these products via LifeGuard patch for Android 10 to be released in Q3 2020**.
 
+* **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on Zebra Professional-series devices. 
+* **A new [MDNA Licensing Guide](../licensing)** describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy. 
+
 -----
 
 ## Version History

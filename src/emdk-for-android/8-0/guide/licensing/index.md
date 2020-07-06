@@ -7,7 +7,7 @@ productversion: '8.0'
 
 ## Overview
 
-For Zebra Professional devices, the following EMDK features require the purchase of a Mobility DNA (MDNA) Enterprise license: 
+For Zebra Professional-series devices, the following EMDK features require the purchase of a Mobility DNA (MDNA) Enterprise license: 
 
 * Multi-barcode scanning
 * Image/document capture

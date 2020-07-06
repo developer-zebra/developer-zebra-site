@@ -12,7 +12,7 @@
 7. View the local version of the APIs and confirm the style and that new feature(s) are present (see release notes for new API features).
 8. Copy the local version to the staging-server repo (zebra-stage.github.io).
 9. View the staging-server copy to confirm and test as in Step 6.
-10. When all changes are validated, copy to production-server repo (zebra.github.io).
+10. When all changes are validated, copy to production-server repo (zebra-techdocs.github.io).
 
 -----
 

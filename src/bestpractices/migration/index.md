@@ -32,9 +32,10 @@ Since changes are cumulative, reading each of these in turn could offer a more c
 
 ### Developer Resources from Zebra
 
-For each new release of Android, Zebra publishes tailored guidance highlighting changes in the release of most interest to enterprise apps and use cases. The main points of each guidance article are bulleted below; links are provided to the comprehensive information in each.  
+For each new release of Android, Zebra publishes tailored guidance highlighting changes in the release of most interest to enterprise apps and use cases. The main points of each guidance article are bulleted below; links are provided to the comprehensive information in each. 
+<br>
 
-Android 10 (article coming soon):
+#### [Android 10](https://developer.zebra.com/blog/what%E2%80%99s-new-android-10-and-impact-zebra-developers):
 * Scoped storage
 * User control over background location
 * Permissions with legacy applications
@@ -46,8 +47,9 @@ Android 10 (article coming soon):
 * Settings panels
 * Move to AndroidX
 * Smart replies
+<br>
 
-[Android 9.x Pie](https://developer.zebra.com/blog/what%E2%80%99s-new-android-pie-and-impact-zebra-developers): 
+#### [Android 9.x Pie](https://developer.zebra.com/blog/what%E2%80%99s-new-android-pie-and-impact-zebra-developers): 
 * Standby buckets & adaptive battery
 * Restricted applications
 * Battery saver improvements
@@ -58,8 +60,9 @@ Android 10 (article coming soon):
 * Privacy & permissions
 * Restrictions on use of non-SDK interfaces
 * Changes to the Google Play Store
+<br>
 
-[Android 8.x Oreo](https://developer.zebra.com/blog/what%E2%80%99s-new-android-oreo-and-impact-zebra-developers):
+#### [Android 8.x Oreo](https://developer.zebra.com/blog/what%E2%80%99s-new-android-oreo-and-impact-zebra-developers):
 * Background service limitations
 * Limitations on receiving implicit broadcasts
 * Reduced update frequency of location APIs for background apps
@@ -67,15 +70,17 @@ Android 10 (article coming soon):
 * Pinning shortcuts & widgets
 * Companion device pairing
 * Changes to the Google Play Store
+<br>
 
-[Android 7.x Nougat](https://developer.zebra.com/blog/what%E2%80%99s-new-android-%E2%80%98n%E2%80%99-and-impact-zebra-developers):
+#### [Android 7.x Nougat](https://developer.zebra.com/blog/what%E2%80%99s-new-android-%E2%80%98n%E2%80%99-and-impact-zebra-developers):
 * Multi-window support
 * Notification enhancements
 * Doze Light / Doze on the go
 * Chrome update also updates the WebView
 * App shortcuts
+<br>
 
-[Android 6.x Marshmallow](https://developer.zebra.com/community/home/blog/2017/01/20/what-s-new-for-android-m-and-the-impact-on-zebra-developers):
+#### [Android 6.x Marshmallow](https://developer.zebra.com/community/home/blog/2017/01/20/what-s-new-for-android-m-and-the-impact-on-zebra-developers):
 * Runtime permissions
 * Doze mode & app standby
 * Copy / Paste & sharing features

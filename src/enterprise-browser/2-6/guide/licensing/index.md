@@ -228,11 +228,12 @@ Then **Tap Activate**.
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-**To License from a Local Server**: 
+<!-- OBVIOUSLY WRONG IMAGE
+**To License using preactivated license keys (`.BIN` file) pushed to device**: 
 
 1. **Tap Local Server** from the License Source drop-down.<br> 
 A screen appears as below.
-<img alt="" style="height:350px" src="local_server.png"/>
+<img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
 <br>
 2. **Enter the server URL, provide a name and tap SUBMIT**.   
 3. **Enter or scan the license key for the device**. <br>
@@ -244,7 +245,9 @@ Successful license activation is indicated by a screen similar to the image belo
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-#### The device is now licensed to use Enterprise Browser 2.x. 
+ -->
+
+ #### The device is now licensed to use Enterprise Browser 2.x. 
 
 -----
 

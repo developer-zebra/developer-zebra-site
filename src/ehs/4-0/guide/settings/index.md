@@ -1038,9 +1038,9 @@ Controls whether potentially sensitive information about the device's Wi-Fi conn
 #### Optionally Display:
 * **IP address -** currently assigned to the device
 * **MAC address -** unique identifier of the device's network interface controller 
-* **SSID -** Service Set Identifier is the name of wireless access point currently in use
-* **BSSID -** the MAC address of the current SSID
-* **Scan results -** list of SSIDs found in most recent scan
+* **SSID -** Service Set Identifier; the name of wireless access point currently in use
+* **BSSID -** the MAC address of the SSID currently in use
+* **Scan results -** list of SSIDs found in the most recent scan
 
 <b>Possible values</b>:
 

@@ -192,12 +192,11 @@ This section covers important interactions between EHS and Android features that
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
 * On devices running Android Oreo and later, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
 * **By default, EHS does not add apps or activities launched by the User to the Android Recent Apps list**, though such apps/activities could subsequently launch other apps/activities that would appear on the list and pose a security risk.
-* **EHS 4.0 introduces an option to allow (or block) User access to the list of apps recently launched by the User**. When allowed, EHS displays apps launched by User in the Recent Apps List. When blocked, all apps/activites are hidden from view by the User, even those launched by other apps/activities. 
+* To help minimize security risk, **EHS 4.0 introduces an option to allow (or block) User access to the list of apps recently launched by the User**. 
+ * When allowed, EHS displays apps launched by User in the Recent Apps List. 
+ * When blocked, all apps/activities are hidden from view by the User, even those launched by other apps/activities. 
 * Some devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
-* To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
-
-PROPOSED
-By default, EHS does not add apps or activities to the Android Recent Apps list (However, apps/activities launched from within EHS could subsequently launch other apps/activities that could appear on the Recent Apps list and pose a security risk). Starting from version 4.0, EHS introduces an option to allow or block access by EHS User to the list of apps recently launched by User. If allowed, EHS adds apps launched by User to the Recent Apps List.
+* To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app or tap the "Close all" button. 
 
 ### Other Unintended Access
 

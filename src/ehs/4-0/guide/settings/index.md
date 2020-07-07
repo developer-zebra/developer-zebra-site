@@ -983,9 +983,12 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Recent Apps Access 
-**Applies only to devices running Android 10 and later**. Controls whether a User's recently launched apps can be seen by that User. Applies to User Mode only. **Disabled by default** (recent apps are not shown). Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+Controls whether a User's recently launched apps can be seen by that User. Applies to User Mode only. **Disabled by default** (recent apps are not shown). Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
-> `IMPORTANT:` Recent Apps Button feature must be ***ENABLED*** (option 0) to use this feature. 
+`IMPORTANT NOTES:` 
+* **[Recent Apps Button](#recentappsbuttondisabled) feature must be** ***ENABLED*** (option 0) to use this feature. 
+* Enable this feature **<u>to preserve an application’s state</u> when returning it to the foreground**.   
+* If launched in Admin Mode, **Google's Quick Search and Play Store apps** (`com.google.android.googlequicksearchbox` and `com.android.vending`) **appear to users in the Recent Apps list unless manually cleared** by the admin. 
 
 <img alt="" style="height:450px" src="ehs40_recent_app_access.png"/>
 

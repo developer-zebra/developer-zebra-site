@@ -191,18 +191,13 @@ This section covers important interactions between EHS and Android features that
 
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
 * On Android Oreo and higher devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
-* EHS does not add apps or activities to the Android Recent Apps list. However, apps/activities launched from within EHS could subsequently launch other apps/activities that could appear on the Recent Apps list and pose a security risk.
+* **By default, EHS does not add apps or activities launched by the User to the Android Recent Apps list**, though such apps/activities could subsequently launch other apps/activities that would appear on the list and pose a security risk.
+* **EHS 4.0 introduces an option to allow (or block) User access to the list of apps recently launched by the User**. If allowed, EHS adds apps launched by User to the Recent Apps List.
 * Some devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
-<!-- 8/7/19- MX MU feature has been terminated; removed from docs
-
-### EHS and MX Multi-user
-
-* If using EHS with Zebra's MX Multi-user feature, it's important to enable the device Lock Screen. Failure to do so will prevent the MX multi-user login screen from being displayed. Use the [DevAdmin](/mx/devadmin) features of Zebra's StageNow or EMDK tools to configure this setting.
-* MX Multi-user has the ability to override EHS-imposed restrictions on access to System Settings. Users logged in as an MX Admin will have full access to System Settings at all times. MX non-admin users by default will have access only to Sound, Display and About screens. 
-
--->
+PROPOSED
+By default, EHS does not add apps or activities to the Android Recent Apps list (However, apps/activities launched from within EHS could subsequently launch other apps/activities that could appear on the Recent Apps list and pose a security risk). Starting from version 4.0, EHS introduces an option to allow or block access by EHS User to the list of apps recently launched by User. If allowed, EHS adds apps launched by User to the Recent Apps List.
 
 ### Other Unintended Access
 

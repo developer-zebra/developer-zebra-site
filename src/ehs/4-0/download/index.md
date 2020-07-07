@@ -16,7 +16,7 @@ productversion: '4.0'
 
 ### EHS 4.0 Compatibility Notes
 
-* **Now supports Zebra devices running Android 10** and later. 
+* **Supports Zebra devices running Android 10, 9.x Pie and 8.x Oreo**. 
 * **Support added for Zebra's new TC21** device.
 
 ### Legacy Android Support

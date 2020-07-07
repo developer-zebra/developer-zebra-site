@@ -56,6 +56,14 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 -----
 
+### Android 10 Notes
+
+* **When EHS is running in Google Multi-user mode**, app icons are sometimes not shown on secondary user’s Home screen while switching back and forth between primary and secondary users.
+* **The Auto-launch Apps feature might work improperly when a delay of longer than two (2) seconds is set** between apps configured to launch at startup.
+* **The Camera and Google Search apps are not visible in User mode after rebooting** the device with Android Multi-user mode enabled.
+
+-----
+
 ### Android Pie Notes
 ***Applies to devices running Android 9.x Pie and higher***.
 

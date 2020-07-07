@@ -197,7 +197,7 @@ A visualization of the Resource data is available in graph form to easily view d
 
 ## Backup
 
-RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file, which contains all the RxLogger logs stored on the device. 
+RxLogger Utility allows the user to generate a backup of the RxLogger folder on the device as a .zip file, which contains all the RxLogger logs stored on the device. To perform a backup, tap the round save icon and then tap **Yes** to confirm.<br>
 
 <img style="height:350px" src="main_screen.jpg"/>
 <i>Backup via RxUtility main screen</i>

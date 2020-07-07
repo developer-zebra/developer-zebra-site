@@ -2723,7 +2723,7 @@ The Recovery Module captures recovery/OSupdate logs as well as Android's Rescue 
 
 Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs collected metrics as a series of comma separated values stored in files with a `.csv` extension.
 
-<table class="facelift" style="width:80%" border="1" padding="5px">
+<table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Name</th>
 	 <th>Description</th>
@@ -2804,8 +2804,8 @@ Captures device information and system statistics at specified intervals to dete
   </tr>
   <tr>
   	<td>Hide Non-Applicable data</td>
-   <td>Enable or disable the collection of Non-Applicable data based on device</td>
-   <td>Boolean</td>
+    <td>Enable or disable the collection of data not applicable based on available device resources. For example, a WLAN only device will not log WAN data.</td>
+    <td>Boolean</td>
 	<td>false</td>
   </tr>
   <tr>

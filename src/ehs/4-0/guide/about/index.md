@@ -50,7 +50,9 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 * **Now supports Zebra devices running Android 10** and later. 
 * **Support added for Zebra's new TC21** device.
-* **To enhance device and network security, EHS by default now hides wireless device info** in User Mode. Optionally, an administrator can **[display device Wi-Fi settings](../settings/#wirelessinformation)**, if desired.  * The ability for a User to see their **[Recently Launched Apps](../settings/#recentappsaccess)** can now be configured. 
+* **To enhance device and network security, EHS by default now hides wireless device info** in User Mode. 
+* **Optionally, an administrator can [display device wireless settings](../settings/#wirelessinformation)**, if desired.
+* The ability for a User to see their **[Recently Launched Apps](../settings/#recentappsaccess)** can now be configured. 
 
 -----
 

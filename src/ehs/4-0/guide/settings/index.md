@@ -1029,7 +1029,9 @@ Controls whether a User's recently launched apps can be seen by that User. Appli
 ------
 
 ### Wireless Information
-**Applies only to devices running Android 10 and later**. Controls whether information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, all wireless information is hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). **Default value is used if a tag is left blank, absent from the config file or contains an invalid value**. It is necessary to add/edit these tags only if showing information is desired. 
+Controls whether potentially sensitive information about the device's Wi-Fi connection is displayed to the device User and if so, which setting(s) are shown. **By default, IP address, MAC address, SSID, BSSID and Scan Result are hidden in User Mode**. Does not effect Admin Mode (all wireless settings always shown). **Default value is used if a tag is left blank, absent from the config file or contains an invalid value**. 
+
+> **NOTE**: Add/edit these settings only if ***showing*** wireless information is desired. 
 
 <img alt="" style="height:450px" src="ehs40_wirelessinfo_settings_panel.png"/>
 

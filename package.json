@@ -29,7 +29,7 @@
     "metalsmith-tags": "^1.0.0",
     "metalsmith-templates": "^0.7.0",
     "multimatch": "^2.0.0",
-    "npm": "^3.3.10"
+    "npm": "^6.14.6"
   },
   "dependencies": {
     "front-matter": "^2.0.5",

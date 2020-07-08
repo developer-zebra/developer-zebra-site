@@ -40,6 +40,8 @@ automenu:
           url: multisession
         - title: Page-based Actions Guide
           url: pageactions
+        - title: Tab Bar Guide
+          url: tabbar
         - title: Voice Input/Output Guide
           url: voice
     - title: Application Usage

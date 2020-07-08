@@ -38,7 +38,7 @@ Tapping on a sample app (from a desktop browser) using one of the links below wi
 
 Demonstrates how EB Audio Speech Recognition (ASR) APIs can be used for conversion of Speech-to-Text, enabling developers to convert audio spoken into an app to text.
 
-[For Enterprise Browser](../../../ASR.html)
+[For Enterprise Browser](../../../samples/asr/ASR.html)
 
 -----
 
@@ -77,7 +77,7 @@ Demonstrates how to use the Camera or Imager API to take a picture.
 ### EKB Intent App
 Demonstrates how an EB intent API can be used to query for custom layouts in Enterprise Keyboard and change a custom layout's functionality.
 
-[For Enterprise Browser](../../../intent.html)
+[For Enterprise Browser](../../../samples/ekbintent/intent.html)
 
 -----
 
@@ -138,7 +138,7 @@ Demonstrates how to use the Signal or SignalIndicators API to retrieve the signa
 
 Demonstrates how to use the RFID API to retrieve RFID data and use it in an EB app.
 
-[For Enterprise Browser](../../../RFID.html)
+[For Enterprise Browser](../../../samples/rfid/RFID.html)
 
 -----
 
@@ -155,7 +155,7 @@ Demonstrates how to use the Signature or SignatureCapture API to capture, show, 
 ### Text to Speech App
 Demonstrates how Enterprise Browser's Text-to-Speech (TTS) API can be used to convert text to speech or audio in applications.
 
-[For Enterprise Browser](../../../TTS.html)
+[For Enterprise Browser](../../../samples/tts/TTS.html)
 
 -----
 

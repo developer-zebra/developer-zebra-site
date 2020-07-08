@@ -63,28 +63,18 @@ See the [Modules page](../modules) for settings information.
 
 ### Settings File
 
-All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files using an enterprise mobile management (EMM) system. <br>**Warning**: The RxLogger configuration file is human-readable, but should not be edited by hand as doing so can lead to unpredictable behavior. 
+All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of these files using an enterprise mobile management (EMM) system. When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately.
+<br>
 
 * **File name -** `config.json`: <br>
         1. Zebra recommends using the same config.json file across devices with the same Android platform version. Use of the same file across multiple Android platform versions may lead to unexpected behavior. 
         2. A config.json file from a WWAN device cannot be used interchangeably on a WLAN device, and vice versa. WWAN related modules, such as qxdm, are not available on WLAN and can result to unexpected behavior.
 
-<!--
-* **Location -** `/<internal_storage>/RxLogger` 
-
-* **With external SD Card**: 
-`/storage/sdcard1/RxLogger`
-
-* **With no external SD Card**: <br>
-&nbsp;&nbsp;&nbsp;• RxLogger v5.4: `/storage/sdcard0/RxLogger`<br>
-&nbsp;&nbsp;&nbsp;• RxLogger v6.0: `/sdcard/RxLogger`<br>
--->
 * **Internal storage folder:** `/sdcard/RxLogger`<br>
 * **External storage folder:** `/storage/sdcard1/RxLogger`
 
-<p>When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately. </p>
+>**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI, otherwise unexpected behavior can occur if modified manually. 
 
->**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI. 
 
 <!-- -->
 -----

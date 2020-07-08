@@ -20,7 +20,7 @@ RxLogger is a software utility included with every Zebra device that provides ce
 * New module support added: <br>
 &nbsp;&nbsp;&nbsp;• **[BTSnooplog Module](../modules/#btsnooplogmodule) -** captures Bluetooth HCI snoop logs from the device<br>
 &nbsp;&nbsp;&nbsp;• **[Recovery Module](../modules/#recoverymodule) -** captures recovery/OSupdate logsfrom the device<br>
-* Change in [external storage path](../settings/#settingsfile).
+* Change in [internal storage path](../settings/#settingsfile).
 
 <!-- -->
 -----

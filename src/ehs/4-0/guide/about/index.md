@@ -5,6 +5,8 @@ product: Zebra EHS
 productversion: '4.0'
 ---
 
+**[What's New in EHS 4.0](#newinehs40)**
+
 ## Overview
 Zebra Enterprise Home Screen is a free Android app from Zebra Technologies that provides a simple way for administrators to control access to apps and settings on a Zebra device without the need to write custom code. Using a simple touch interface, EHS easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system. It can be configured in seconds, and settings can be deployed via MDM. EHS settings are stored in a simple XML file that's easy to read and edit by hand, if necessary. 
 
@@ -15,8 +17,6 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 **Enterprise Home Screen supports the following languages**: 
 * US English
 * Simplified Chinese
-
-**[What's New in EHS 4.0](#newinehs40)**
 
 ------
 
@@ -57,15 +57,16 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 -----
 
 ### Android 10 Notes
+***Applies to devices running Android 10 and later***.
 
 * **When EHS is running in Google Multi-user mode**, app icons are sometimes not shown on secondary user’s Home screen while switching back and forth between primary and secondary users.
-* **The Auto-launch Apps feature might work improperly when a delay of longer than two (2) seconds is set** between apps configured to launch at startup.
+* **The Auto-launch Apps feature might work improperly if a delay of longer than two (2) seconds is set** between apps configured to launch at startup.
 * **The Camera and Google Search apps are not visible in User mode after rebooting** the device with Android Multi-user mode enabled.
 
 -----
 
 ### Android Pie Notes
-***Applies to devices running Android 9.x Pie and higher***.
+***Applies to devices running Android 9.x Pie and later***.
 
 * In Android multi-user mode, **Camera and Search apps are not locked for Secondary users** when locked by the Primary user or Administrator. 
 * When multi-user mode is employed **on devices running Android Pie, app icons sometimes do not appear on the Secondary user's Home screen** when repeatedly switching between Primary and Secondary users. This can be addressed by logging in as the primary user then logging in as the secondary user, or rebooting the device.
@@ -77,7 +78,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 -----
 
 ### Android Oreo Notes
-***Applies to devices running Android 8.x Oreo and higher***.
+***Applies to devices running Android 8.x Oreo and later***.
 
 * **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
 * **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.

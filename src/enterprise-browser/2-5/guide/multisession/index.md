@@ -5,9 +5,9 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
-Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB browser tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
+Enterprise Browser 2.5 (and later) supports the ability to run multiple EB browser tabs at the same time, each accessing different `Config.xml` files with different groups of configuration settings and functions. This provides a convenient way to deploy multiple feature-sets that can be toggled without re-launching EB. 
 
-> Multi-session capabilities can be invoked as tabs or shortcuts, and with its own behaviors. <br> 
+> Multi-session capabilities can be invoked as tabs or shortcuts, each with its own set of behaviors. <br> 
 **The main behaviors common to both**:<br>
 * **Each supports a unique subset of feature tags** (in its `Config.xml` file)<br>
 * **If one EB tab or window is terminated, all are terminated**
@@ -16,7 +16,7 @@ Enterprise Browser 2.5 (and higher) supports the ability to run multiple EB brow
 
 ## Shortcut Method
 
-The **Shortcut Method** involves creating two or more EB-app shortcuts that can be launched independently, and when run simultaneously appear side-by-side in multiple webview instances (browser tabs). 
+The **Shortcut method** involves creating two or more EB-app shortcuts that can be launched independently, and when run simultaneously appear side-by-side in multiple webview instances (browser tabs). 
 
 ### Shortcut Behaviors
 * Apps can be deployed and launched individually, and are combined in browser tabs only when run simultaneously.
@@ -51,7 +51,7 @@ With **the Tab Bar method**, tabs are pre-defined in a file and deployed to the 
 ### Tab Bar Behaviors 
 * An option exists to automatically refresh the contents of each tab whenever it returns to focus.
 * Tab colors and titles can be customized. 
-* Tabs must be defined and deployed to the device in advance. 
+* Tabs must be defined and deployed to the device all together. 
 * Apps cannot be launched individually; they must always be launched as a group. 
 * **Feature support is limited to the following config tags**: 
  * FullScreen

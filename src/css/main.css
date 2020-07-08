@@ -1433,7 +1433,6 @@ nobr{
 display:none  
 }
 
-
 #main-menu .dropdown{
   display:none;
 }
@@ -1450,4 +1449,8 @@ padding: 5px
 background-color: 
 #f2f2f2;
 
+}
+
+.navbar-brand img {
+  max-height: 42px !important;
 }

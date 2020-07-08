@@ -42,17 +42,16 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 ## Supported Devices
 
-#### Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
+#### EHS 4.0 now supports Android 10, 9.x Pie and 8.x Oreo. Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
 
 -----
 
 ## New in EHS 4.0
 
-* **Now supports Zebra devices running Android 10** and later. 
+* **Now supports Zebra devices running Android 10** as well as Android 9.x Pie and 8.x Oreo. 
 * **Support added for Zebra's new TC21** device.
-* **To enhance device and network security, EHS by default now hides wireless device info** in User Mode. 
-* **Optionally, an administrator can [display device wireless settings](../settings/#wirelessinformation)**, if desired.
-* The ability for a User to see their **[Recently Launched Apps](../settings/#recentappsaccess)** can now be configured. 
+* **To enhance device and network security, EHS by default now hides potentially sensitive wireless device info** in User Mode. Optionally, an administrator can **[display wireless settings](../settings/#wirelessinformation)**, if desired.
+* **[Recently Launched Apps](../settings/#recentappsaccess) can now be shown or hidden** from the User, as desired by an administrator. 
 
 -----
 

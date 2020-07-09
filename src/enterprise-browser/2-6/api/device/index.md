@@ -194,11 +194,14 @@ Sends UP and DOWN key events to the currently focused window/view and waits for 
 
 * **Callback**:
  * null
+
 * **Returns**:
  * Synchronous Return:
  * Void
+
 * Platforms:
  * Android
+
 * Method Access:
  * **Class Method**: This method can only be accessed via the API class object.
  * `device.sendKey(“29”);`

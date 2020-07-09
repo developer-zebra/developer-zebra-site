@@ -632,12 +632,13 @@ The image file path without file extension to store captured image in subsequent
 	* <code>EB.Camera.flashMode</code> 
 
 
-
 ####Platforms
 
 * Android 
 * Windows Mobile
 * Windows CE
+
+> `NOTE:` Flashmode ="on" property is not supported on devices running Android 10
 
 ###maxHeight
 

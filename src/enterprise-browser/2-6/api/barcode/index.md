@@ -8,7 +8,7 @@ layout: guide.html
 ## Overview
 
 
-The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 (and higher) allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which was introduced in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and newer installed**.
+The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 (and later) allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which was introduced in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and later installed**.
 
 If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app is to decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
 

@@ -34,6 +34,8 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 
 > In the lines above, notice that `ebapi.js` is included first, followed by `eb.device.js`, which is the Device API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
+-----
+
 ##Methods
 
 ### acquirePartialWakeLock()
@@ -57,6 +59,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.acquirePartialWakeLock()</code> 
 
+-----
 
 ### calibrate()
 Carries out the screen calibration routine.
@@ -83,6 +86,8 @@ Synchronous Return:
 	* <code>EB.Device.calibrate()</code> 
 
 
+-----
+
 ### idle()
 Puts the device into idle mode. In this mode, the screen display is turned off. Callback is triggered only for 'failed' status.
 
@@ -108,6 +113,8 @@ Synchronous Return:
 	* <code>EB.Device.idle()</code> 
 
 
+-----
+
 ### powerOff()
 Puts the device into power off mode. In this mode the device will draw no power. Only supported on SB1. Callback is triggered only for 'failed' status.
 
@@ -132,6 +139,8 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.powerOff()</code> 
 
+
+-----
 
 ### reboot(<span class="text-info">STRING</span> bootType)
 Reboots the terminal. On WM/CE, it reboots the terminal using either a Warm or Cold software boot (as specified). Note on CE6 devices a "ColdCAD" boot is required to replicate the Coldboot key sequence, e.g. 1+9+Power on an MC3000. Callback is triggered only for 'failed' status. Parameter **bootType** and **callback** is not supported on Android platform.
@@ -163,6 +172,8 @@ Synchronous Return:
 	   * <code>EB.Device.reboot()</code> 
 
 
+-----
+
 ### releasePartialWakeLock()
 This API is used for releasing the acquired partial wake lock in Android device. Note: On calling this method, the wakelocktype config tags will be affected.
 
@@ -183,29 +194,36 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.releasePartialWakeLock()</code> 
 
-### sendKey(keyCode)
+-----
 
+### sendKey(keyCode)
 Sends UP and DOWN key events to the currently focused window/view and waits for it to be processed. This method can be used to send single or multiple keyevents/key-combinations programmatically through JavaScript.
 
 #### Parameters
 
-**keycode**: STRING
-* Specifies the identifier of the key to be injected. This value is the operating system's identifier for the key, not the ASCII representation of the key (for example, the 'a' key on Android Mobile devices has a keycode of 29). This parameter needs to be passed as a string (for example '101').
+####Keycode
 
-**Callback**:
+* **STRING**
+
+* Specifies the identifier of the key to be injected. This value is the operating system's identifier for the key, not the ASCII representation of the key (for example, the 'a' key on Android Mobile devices has a keycode of 29). This parameter must be passed as a string (for example '101').
+
+####Callback
 * null
 
-**Returns**:
+####Returns
+
 * Synchronous Return:
 * Void
 
-**Platforms**:
+####Platforms
 * Android
 
-**Method Access**:
+####Method Access
 * **Class Method**: This method can only be accessed via the API class object.
  * `device.sendKey(“29”);`
 
+
+-----
 
 ### suspend()
 Puts the device into suspend mode. On suspend, the device goes to hibernation mode. Callback is triggered only for 'failed' status. In some devices, the suspend doesnot happen instead it puts the device into an idle state.
@@ -232,6 +250,8 @@ Synchronous Return:
 	* <code>EB.Device.suspend()</code> 
 
 
+-----
+
 ### wake()
 In WM/CE, wakes the device from idle state to active state. Callback is triggered only for 'failed' status. In Android, it will turn on the display, if it was off. The callback parameter is ignored in Android platform.
 
@@ -257,6 +277,8 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.wake()</code> 
 
+
+-----
 
 ##Remarks
 

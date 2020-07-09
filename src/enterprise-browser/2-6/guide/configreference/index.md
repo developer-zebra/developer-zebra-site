@@ -2057,7 +2057,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 **Possible Values**:
 
-* **0 - Gives scanner control to an EB app using the scanner/barcode API in the foreground and to DataWedge or other apps when app is in the background** (default).
+* **0 - Gives scanner control to an EB fireground app using the scanner/barcode API and to DataWedge or other apps when the EB app is in the background** (default).
 * 1 - Enables EB app to scan with DataWedge, which controls scanner regardless of whether app is in foreground or background.
 
 #### Example

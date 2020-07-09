@@ -87,26 +87,32 @@ This section describes the process for activating a license on a single device r
 
 1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 2. On launch, License Manager displays active licenses (if any).<br> 
 **Tap the floating action button**:
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
+ _Click image to enlarge; ESC to exit._
 <br>
 3. When the Activation screen appears: 
  1. **Enter the license key (Activation ID)**: 
  <img alt="" style="height:350px" src="6b.png"/>
+ _Click image to enlarge; ESC to exit._
  <br>
  2. **Tap "Select License Source"**and select desired options. 
  3. **Tap SUBMIT** button.<br> 
  If prompted to set device clock, **Tap "Continue."** The "Activation" screen reappears: 
 <img alt="" style="height:350px" src="5.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 4. **Tap Activate**.  
 <img alt="" style="height:350px" src="6.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 
 Successful license activation is indicated by a screen similar to the image below: 
 <img alt="" style="height:350px" src="7.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 
 #### The Android device is now licensed to use Enterprise Browser 2.x. 
@@ -124,6 +130,7 @@ Zebra provides License Manager apps for its devices running Android and Windows 
 2. Locate and launch License Manager on the device. <br>
 Current licenses on the device (if any) are shown along with a series of buttons: 
 <img alt="" style="height:250px" src="wmce_license01.png"/>
+_Click image to enlarge; ESC to exit._
 **Details -** displays information about selected license.<br>
 **Refresh -** contacts the licensing server to renew a device license following the purchase of a license renewal.<br>
 **Button functions**:<br>
@@ -133,9 +140,11 @@ Current licenses on the device (if any) are shown along with a series of buttons
 3. **Tap "Add License"** button. "About License Manager" screen appears.<br>
 **Tap "License Source"** button.   
 <img alt="" style="height:250px" src="wmce_license02.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 4. **Select "Production Cloud Direct"** from the server list. 
 <img alt="" style="height:250px" src="wmce_license03.png"/>
+_Click image to enlarge; ESC to exit._
 **Details -** displays information about the selected licensing server.<br>
 **Delete -** removes a user-defined licensing server (none shown).<br> 
 5. **Using an EMM system, launch License Manager with command line arguments** similar to those shown. This example was tested using SOTI Mobi control. 
@@ -203,9 +212,9 @@ License Manager provides a Local License Server option, enabling organizations t
 > **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
 
 ### BEFORE BEGINNING
-* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html)
-* **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed
-* Ensure target devices are connected to the Local Licensing Server
+* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html).
+* **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
+* Ensure target devices are connected to the Local Licensing Server.
 
 #### `IMPORTANT PERSISTENCE NOTES:` 
 * **To use StageNow to persist license keys on the device following an Enterprise Reset**:
@@ -213,41 +222,41 @@ License Manager provides a Local License Server option, enabling organizations t
  * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
  * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.
 
-##### To License from a Local Server: 
-1. **Tap Local Server** from the License Source drop-down.<br> 
-A screen appears as below.
+#### To License from a Local Server: 
+1. In the Licensing app, **select Local Server** from the License Source drop-down.<br> 
+A screen appears as below:
 <img alt="" style="height:350px" src="local_server.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 2. **Enter the server URL, provide a name and tap SUBMIT**.   
 3. **Enter or scan the license key for the device**. <br>
 Then **Tap Activate**. 
 <img alt="" style="height:350px" src="6a.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 
 **Successful license activation is indicated by a screen similar to the image below**: 
+ <img alt="" style="height:350px" src="7.png"/>
+ _Click image to enlarge; ESC to exit._
+<br>
+
+#### To License using Preactivated license keys: 
+
+1. Push preactivated license keys (as `.BIN` files) to device(s). 
+2. In the Licensing app, **select Preactivated** from the License Source drop-down.<br> 
+<img alt="" style="height:350px" src="15.png"/>
+_Click image to enlarge; ESC to exit._
+<br>
+2. **Navigate to the file on the device, select it and tap ACTIVATE**.   
+<img alt="" style="height:350px" src="11.png"/>
+_Click image to enlarge; ESC to exit._
+<br>
+3. Confirm successful license activation by a screen similar to the image below: 
 <img alt="" style="height:350px" src="7.png"/>
+_Click image to enlarge; ESC to exit._
 <br>
 
-<!-- OBVIOUSLY WRONG IMAGE
-**To License using preactivated license keys (`.BIN` file) pushed to device**: 
-
-1. **Tap Local Server** from the License Source drop-down.<br> 
-A screen appears as below.
-<img alt="" style="height:350px" src="off-line_licensing_selection.jpg"/>
-<br>
-2. **Enter the server URL, provide a name and tap SUBMIT**.   
-3. **Enter or scan the license key for the device**. <br>
-Then **Tap Activate**. 
-<img alt="" style="height:350px" src="6a.png"/>
-<br>
-
-Successful license activation is indicated by a screen similar to the image below: 
-<img alt="" style="height:350px" src="7.png"/>
-<br>
-
- -->
-
- #### The device is now licensed to use Enterprise Browser 2.x. 
+#### The device is now licensed to use Enterprise Browser 2.x. 
 
 -----
 
@@ -279,7 +288,7 @@ The "Select a Wizard" dialog box appears.
 4. **Single-click LicenseMgr** (scroll down if necessary); then **click "Update"** button. 
 5. **Under "License action type:" select “Perform Zebra license action.”** Additional options appear: 
 <img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
-_Click image to enlarge_.
+_Click image to enlarge; ESC to exit_.
 <br>
 6. **Set the parameters as required** to activate the license:<br>
  **a. For cloud-based licensing**: <br>

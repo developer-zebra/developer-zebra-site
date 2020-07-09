@@ -1,7 +1,7 @@
 ---
 title: Search
 layout: search.html
-index: /enterprise-browser/2-6/index.json
+index: /enterprise-browser/3-0/index.json
 product: Enterprise Browser
 productversion: '3.0'
 ---

@@ -124,7 +124,7 @@ Sample JavaScript:
      9. }
 
 
-Lines 2-6 set the on-screen location of the displayed image capture area. Line 6 sets a callback function that will be called after an image capture is triggered. Line 7 maps the hardware trigger on the device to a function used to execute the image capture. And line 8 calls the `enable()` function, which displays the image capture area. **DO NOT include the line numbers in your app**. 
+Lines 2&ndash;6 set the on-screen location of the displayed image capture area. Line 6 sets a callback function that will be called after an image capture is triggered. Line 7 maps the hardware trigger on the device to a function used to execute the image capture. And line 8 calls the `enable()` function, which displays the image capture area. **DO NOT include the line numbers in your app**. 
 
 ###STEP 5: Capture the image
 

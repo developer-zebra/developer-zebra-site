@@ -7,7 +7,7 @@ layout: guide.html
 
 ## Overview
 
-**Enterprise Application Configurator (EAC) is a companion utility for Enterprise Browser** that simplifies [DOM injection](../dominjectionandroid), a process that can add capabilities to a running EB app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards and can voice-enable fields for spoken input and/or output. 
+**Enterprise Application Configurator (EAC) is a Zebra utility that works with Enterprise Browser**. It simplifies [DOM injection](../dominjectionandroid), a process that can add capabilities to a running EB app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards and can voice-enable fields for spoken input and/or output. 
 
 **DOM injection works by inserting CSS, JavaScript and/or meta tags into a running app**, enhancing the app with the functionality contained within the inserted code. EAC converts the field and/or key mappings made through its GUI into the necessary CSS, JavaScript and/or meta tags to be inserted, saving that code in a file. Once that file is pushed to the target device, the desired functionality is available next time the app is launched. 
 
@@ -23,7 +23,7 @@ layout: guide.html
 * **Optional: A second Zebra device with EB 2.6 installed** (for easier testing of reconfigured apps)
 * **Computer and device(s) on the same IP subnet**
 * **App to be reconfigured** (and its `Config.xml` file), installed on device(s)
-* `AppConfigurationUtility.apk` device mirroring service ([Download it now](here)) `LINK TO COME`
+* `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` device mirroring service running on device. ([Download it now](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-application-configurator.html)).
 
 > **NOTE: This tool does not support apps that employ shortcuts or [multi-session tabs](../multisession)**.
 
@@ -46,7 +46,7 @@ layout: guide.html
 
 2. **Push the modified** `Config.xml` **file to the device** in the following location:<br>
   `/sdcard/Android/data/com.symbol.enterprisebrowser/` <br>
-3. Push the `AppConfigurationUtility.apk` file to the device and launch it.<br>
+3. Push the `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` file to the device and launch it.<br>
  When prompted, **tap "START NOW"** to grant permission to capture the screen. 
 4. **Pull down the Notification bar on the device** and note the IP address used by Enterprise Application Configurator:<br>
  <img alt="" style="height:350px" src="eb26-01.png"/>
@@ -67,7 +67,7 @@ layout: guide.html
 
 #### The tool is now ready to accept field mappings for the EB app.  
 
->**IMPORTANT**: The `AppConfigurationUtility.apk` app must be uninstalled to run EB apps in a production environment on that device. 
+>**IMPORTANT**: The `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` app must be uninstalled to run EB apps in a production environment on that device. 
 
 -----
 
@@ -108,7 +108,7 @@ _Click image to enlarge; ESC to exit_.
 7. Test the app and its new functions. 
 8. Repeat Steps 1&ndash;7 until the app performs as desired. 
 
->**IMPORTANT**: The `AppConfigurationUtility.apk` app must be uninstalled to run EB apps in a production environment on that device. 
+>**IMPORTANT**: The `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` app must be uninstalled to run EB apps in a production environment on that device. 
 
 #### The DOM injection configuration file is now ready for deployment.  
 

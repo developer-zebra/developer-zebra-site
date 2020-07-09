@@ -13,6 +13,11 @@ content-items:
     title: Use Content Provider Programmer's Guide
     text: This guide provides information on leveraging DataWedge's content provider to retrieve scanned data from large files.
     url: /datawedge/8-1/guide/programmers-guides/content-provider
+  - type: section
+    level: 4
+    title: Secure Access to DataWedge Intent APIs
+    text: Learn how to secure access to DataWedge Intent APIs to prevent unauthorized use of the APIs.
+    url: /datawedge/8-1/guide/programmers-guides/secure-intent-apis
 product: DataWedge
 productversion: '8.1'
 ---

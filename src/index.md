@@ -40,6 +40,8 @@ products:
         url: /datawedge/8-1/guide/settings
       - title: APIs
         url: /datawedge/8-1/guide/api
+      - title: Guides
+        url: /datawedge/8-1/guide/programmers-guides
       - title: Samples
         url: /datawedge/8-1/guide/samples
       - title: Remote Admin

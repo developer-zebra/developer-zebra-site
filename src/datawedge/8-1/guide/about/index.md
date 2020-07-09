@@ -136,7 +136,14 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
-## New in DataWedge 8.0
+## New in DataWedge 8.1
+
+* [Secure access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
+
+-----
+## Recent Version History
+
+### Added in DataWedge 8.0
 * **Support for Unique Device Identification (UDI) barcodes** has been temporarily suspended for devices running Android 10 and later. UDI support will be restored via a LifeGuard patch for Android 10 to be released in Q3 2020.
 * New secure Intent Output with [Component Information](../output/intent/#intentoutputsetup) and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
 * New option to use [DataWedge content provider](../output/intent/#intentoutputsetup) in Intent Output to scan large data, such as images, with new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters) and [Use Content Provider Programmer's Guide](../programmers-guides/content-provider).
@@ -144,9 +151,6 @@ For more information about approved languages or to download a localized operati
 * Import [NextGen SimulScan Templates](../admin) for document capture.
 * New [Press and Continue](../input/barcode/#readerparams) Aim Type for Barcode Input and corresponding new [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
 * New [Inventory State](../input/rfid/#rfidinput) and [Hardware Key](../input/rfid/#rfidinput) RFID input options.
-
------
-## Recent Version History
 
 ### Added in DataWedge 7.6
 * Added [Dutch Postal 3S](../input/barcode) and [Finnish Postal 4S](../input/barcode) decoder support.

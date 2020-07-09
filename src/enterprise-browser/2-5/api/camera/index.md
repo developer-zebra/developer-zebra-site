@@ -635,7 +635,7 @@ The image file path without file extension to store captured image in subsequent
 
 ####Platforms
 
-* Android
+* Android 
 * Windows Mobile
 * Windows CE
 

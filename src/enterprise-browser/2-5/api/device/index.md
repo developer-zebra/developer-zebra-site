@@ -183,7 +183,6 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.releasePartialWakeLock()</code> 
 
-
 ### suspend()
 Puts the device into suspend mode. On suspend, the device goes to hibernation mode. Callback is triggered only for 'failed' status. In some devices, the suspend doesnot happen instead it puts the device into an idle state.
 

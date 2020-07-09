@@ -183,6 +183,26 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Device.releasePartialWakeLock()</code> 
 
+### sendKey(keyCode)
+
+Sends UP and DOWN key events to the currently focused window/view and waits for it to be processed. This method can be used to send single or multiple keyevents/key-combinations programmatically through JavaScript.
+
+#### Parameters
+
+* **keycode**: STRING
+ * Specifies the identifier of the key to be injected. This value is the operating system's identifier for the key, not the ASCII representation of the key (for example, the 'a' key on Android Mobile devices has a keycode of 29). This parameter needs to be passed as a string (for example '101').
+
+* **Callback**:
+ * null
+* **Returns**:
+ * Synchronous Return:
+ * Void
+* Platforms:
+ * Android
+* Method Access:
+ * **Class Method**: This method can only be accessed via the API class object.
+ * `device.sendKey(“29”);`
+
 
 ### suspend()
 Puts the device into suspend mode. On suspend, the device goes to hibernation mode. Callback is triggered only for 'failed' status. In some devices, the suspend doesnot happen instead it puts the device into an idle state.

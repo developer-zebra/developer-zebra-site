@@ -5866,9 +5866,9 @@ Controls the preamble applied to the UPCA barcode.
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.UPCA_PREAMBLE_NONE - String: none Applies no preamble to the bar code.
-* Constant: EB.Barcode.UPCA_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the bar code.
-* Constant: EB.Barcode.UPCA_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the bar code.
+* Constant: EB.Barcode.UPCA_PREAMBLE_NONE - String: none Applies no preamble to the barcode.
+* Constant: EB.Barcode.UPCA_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the barcode.
+* Constant: EB.Barcode.UPCA_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the barcode.
 ####Access
 
 
@@ -5961,9 +5961,9 @@ Controls the preamble applied to the UPCE0 barcode.
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.UPCE0_PREAMBLE_NONE - String: none Applies no preamble to the bar code.
-* Constant: EB.Barcode.UPCE0_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the bar code.
-* Constant: EB.Barcode.UPCE0_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the bar code.
+* Constant: EB.Barcode.UPCE0_PREAMBLE_NONE - String: none Applies no preamble to the barcode.
+* Constant: EB.Barcode.UPCE0_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the barcode.
+* Constant: EB.Barcode.UPCE0_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the barcode.
 ####Access
 
 
@@ -6056,9 +6056,9 @@ Controls the preamble applied to the UPCE1 barcode.
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.UPCE1_PREAMBLE_NONE - String: none Applies no preamble to the bar code.
-* Constant: EB.Barcode.UPCE1_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the bar code.
-* Constant: EB.Barcode.UPCE1_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the bar code.
+* Constant: EB.Barcode.UPCE1_PREAMBLE_NONE - String: none Applies no preamble to the barcode.
+* Constant: EB.Barcode.UPCE1_PREAMBLE_SYSTEMCHAR - String: systemChar Applies system character preamble to the barcode.
+* Constant: EB.Barcode.UPCE1_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the barcode.
 ####Access
 
 
@@ -6523,7 +6523,7 @@ Due to platform limitations this API is not available on the following Zebra Tec
 
 
 
-###Enable barcode scanner and scan a bacrode
+###Enable barcode scanner and scan a barcode
 This example shows how to enable your device's barcode scanner and access the data gathered by the scanner. Note that this example assumes that your ebapi-modules.js file is in the same folder as the HTML invoking it. On symbol devices, data wedge needs to be disabled or the Enterprise Browser will not be able to claim any of the scanners.
 <pre><code>:::javascript
 &lt;head&gt;

@@ -862,7 +862,7 @@ When set to true, the barcode scanner will read all barcode types that the scann
 
 * Android
 * Windows Mobile
-* Windows CE(Scanners on Symbol Technologies' devices)
+* Windows CE (Scanners on Symbol Technologies' devices)
 
 -----
 
@@ -5711,7 +5711,7 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 
 * Android
 * Windows Mobile
-* Windows CE(All Scanners)
+* Windows CE (All Scanners)
 
 -----
 

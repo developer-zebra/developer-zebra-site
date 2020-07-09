@@ -1027,6 +1027,11 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
   </tr>
 
   <tr>
+	<td>trigger_wakeup_scan</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
 	<td>different_barcode_timeout</td>
 	<td>Integer from 0–5000</td>
   </tr>

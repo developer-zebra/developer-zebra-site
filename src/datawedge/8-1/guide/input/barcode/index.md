@@ -1193,6 +1193,8 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 **Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
+**Trigger Wakeup and Scan -** Used to trigger scanning when a device is in a suspended/screen-off state. User needs to set the scanner trigger button as a wakeup source. When a user presses the trigger button in a suspend/screen-off state, scanning starts when the user keeps the trigger pressed. 
+
 **Digimarc Decoding -** Used to enable/disable support for Digimarc, which encodes and invisibly integrates traditional barcode data onto product packaging. **Supported with internal imager and rear camera**. Enabled by default. [More about Digimarc](https://www.digimarc.com/). 
 
 

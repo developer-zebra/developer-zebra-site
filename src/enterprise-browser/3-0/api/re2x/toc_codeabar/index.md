@@ -28,7 +28,7 @@ automenu:
           url: ../CodabarNotisEditing
         - title: Redundancy
           url: ../CodabarRedundancy
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

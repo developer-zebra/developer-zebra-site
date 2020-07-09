@@ -1,6 +1,6 @@
 ---
 title: SAP ITSmobile for Android 
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 layout: guide.html
 ---

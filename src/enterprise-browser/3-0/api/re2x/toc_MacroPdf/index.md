@@ -24,7 +24,7 @@ automenu:
           url: ../macroPdfConvertToPdf417
         - title: MacroPdfExclusive
           url: ../macroPdfExclusive
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

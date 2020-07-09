@@ -1,6 +1,6 @@
 ---
 title: Registry Meta Tag
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

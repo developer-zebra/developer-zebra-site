@@ -20,7 +20,7 @@ automenu:
           url: ../ean8
         - title: Ean8convertToEan13
           url: ../ean8ConvertToEAN13
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

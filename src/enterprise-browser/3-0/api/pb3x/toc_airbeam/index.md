@@ -30,7 +30,7 @@ automenu:
           url: ../airbeam/testmode
         - title: UploadPackage
           url: ../airbeam/uploadpackage
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

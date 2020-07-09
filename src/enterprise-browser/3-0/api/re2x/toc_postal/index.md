@@ -40,7 +40,7 @@ automenu:
           url: ../uspostnet
         - title: USPostNetReportCheckDigit
           url: ../uspostnetreportCheckDigit
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

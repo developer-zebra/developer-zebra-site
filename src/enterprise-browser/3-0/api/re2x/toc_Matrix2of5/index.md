@@ -26,7 +26,7 @@ automenu:
           url: ../matrix2of5ReportCheckDigit
         - title: Matrix2of5verifyCheckDigit
           url: ../matrix2of5VerifyCheckDigit
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

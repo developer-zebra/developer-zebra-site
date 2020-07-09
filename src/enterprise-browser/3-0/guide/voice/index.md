@@ -1,6 +1,6 @@
 ---
 title: Voice Input/Output Guide
-productversion: '2.6'
+productversion: '3.0'
 product: Enterprise Browser
 layout: guide.html
 ---

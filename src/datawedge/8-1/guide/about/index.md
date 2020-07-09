@@ -136,10 +136,32 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
+## Usage Notes
+
+1. When the device is suspended, it takes a few milliseconds to release all the resources. DataWedge releases the resources once it receives the Screen Off notification. Until this notification is received, DataWedge continues to work according to the configurations set in the currently active profile.
+2. Selecting DataWedge as a keyboard from the device virtual keyboard settings does not display any graphical keyboard. DataWedge keyboard is for internal use of DataWedge only.
+3. After a device reboot, DataWedge starts after receiving the LOCKED_BOOT_COMPLETED intent. Calling DataWedge intent APIs before the LOCKED_BOOT_COMPLETED intent may cause unexpected behavior as DataWedge is still not started yet. Calling DataWedge intent APIs soon after receiving the LOCKED_BOOT_COMPLETED intent may also cause unexpected behavior as DataWedge may still be in the initialization process. It is recommended to wait for a few seconds after receiving the LOCKED_BOOT_COMPLETED intent before calling any DataWedge intent APIs. 
+4. When Data Capture Plus icon is displayed by DataWedge on top of another application, Android displays a silent notification in the notification area. Users can hide the Data Capture Plus icon by tapping on this notification and disabling the “Allow display over other apps” option. If a user decides to disable this option, even though Data Capture Plus is enabled in DataWedge, it does not display on the screen.
+<table>
+  <tr>
+   <td>
+     <img style="height:350px" src="displayover1.png"/>
+   </td> 
+   <td> &nbsp; &nbsp; &nbsp;
+   </td>
+   <td>
+     <img style="height:350px" src="displayover2.png"/>
+   </td>
+  </tr>
+</table>
+<i>DataWedge "display over" notification</i>
+
+-----
 ## New in DataWedge 8.1
 
 * [Secure access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
 * New [Trigger Wakeup and Scan](../input/barcode#readerparams) Reader Parameter to trigger scanning when device is in a suspended/screen-off state. New corresponding [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
+* Updated licensing screen.
 
 -----
 ## Recent Version History

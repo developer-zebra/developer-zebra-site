@@ -638,8 +638,6 @@ The image file path without file extension to store captured image in subsequent
 * Windows Mobile
 * Windows CE
 
-> `NOTE:` Flashmode ="on" property is not supported on devices running Android 10
-
 ###maxHeight
 
 ####Type

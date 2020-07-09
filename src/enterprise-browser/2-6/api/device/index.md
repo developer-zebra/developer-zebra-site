@@ -189,21 +189,21 @@ Sends UP and DOWN key events to the currently focused window/view and waits for 
 
 #### Parameters
 
-* **keycode**: STRING
- * Specifies the identifier of the key to be injected. This value is the operating system's identifier for the key, not the ASCII representation of the key (for example, the 'a' key on Android Mobile devices has a keycode of 29). This parameter needs to be passed as a string (for example '101').
+**keycode**: STRING
+* Specifies the identifier of the key to be injected. This value is the operating system's identifier for the key, not the ASCII representation of the key (for example, the 'a' key on Android Mobile devices has a keycode of 29). This parameter needs to be passed as a string (for example '101').
 
-* **Callback**:
- * null
+**Callback**:
+* null
 
-* **Returns**:
- * Synchronous Return:
- * Void
+**Returns**:
+* Synchronous Return:
+* Void
 
-* Platforms:
- * Android
+**Platforms**:
+* Android
 
-* Method Access:
- * **Class Method**: This method can only be accessed via the API class object.
+**Method Access**:
+* **Class Method**: This method can only be accessed via the API class object.
  * `device.sendKey(“29”);`
 
 

@@ -108,7 +108,7 @@ _Click image to enlarge; ESC to exit_.
 7. Test the app and its new functions. 
 8. Repeat Steps 1&ndash;7 until the app performs as desired. 
 
->**IMPORTANT**: The `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` app must be uninstalled to run EB apps in a production environment on that device. 
+>**IMPORTANT**: The `ENTERPRISE APPLICATION CONFIGURATOR-x.x.apk` **<u>app must be uninstalled</u>** to run EB apps in a production environment on that device. **DO NOT DEPLOY THIS FILE IN PRODUCTION ENVIRONMENTS**. 
 
 #### The DOM injection configuration file is now ready for deployment.  
 

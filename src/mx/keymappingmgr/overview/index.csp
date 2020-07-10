@@ -41,8 +41,8 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 	* **VC8300**
 	* WT6000
 * **Device must be running Android 4.4 KitKat or later**
-* **Device must contain MX 4.4 or higher**
-* **BOLD TYPE** indicates support recently added
+* **Device must contain MX 4.4 or later**
+* **BOLD TYPE** indicates most recent support added
 
 For key-mapping options on Android devices not listed above, please see the [Enterprise Keyboard User Guide](/enterprise-keyboard). 
 
@@ -64,7 +64,8 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 	* Do nothing
 * Reset all Key mappings to factory default values
 
-> `NOTE:` Remapping the Power key is **NOT** supported on any device.  
+> **`NOTE:` Remapping the Power key is **NOT** supported on any device**.
+  
 
 Key Mapping is a capability offered on particular Zebra Android devices only. It allows keypress behavior to be defined for specific Key(s) or when a Key is in a given Key State. The Current Key State for a Key at any given time is determined by one or more Key State Modifiers that may have been applied as the result of presses of Modifier Keys. For example, a device with a Blue Key might set or clear the Blue-Key State Modifier in the Current Key State each time the Blue Key is pressed. Some Zebra devices support multiple Key State Modifiers to set the Current Key State; others do not.
 

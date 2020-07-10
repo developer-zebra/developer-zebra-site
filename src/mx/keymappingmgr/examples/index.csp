@@ -9,7 +9,7 @@ order: 99
 
 The first feature of the following Request XML document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -38,7 +38,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -69,7 +69,7 @@ Output
 
 ###Reset Keys To Default
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -78,7 +78,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -91,7 +91,7 @@ Output
 
 ###Version Query
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -100,7 +100,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -111,7 +111,7 @@ Output
 
 ### Query the Available Keys
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -120,7 +120,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -183,9 +183,9 @@ Output
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Query the Available Tables
+### Query the Available Tables
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -194,7 +194,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -208,7 +208,7 @@ Output
 
 ### Query the Default Key Identifier
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -219,7 +219,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -245,7 +245,7 @@ Output
 
 ### Query the Changed Key Identifier
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -256,7 +256,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Error Output
+#### Error Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -267,7 +267,7 @@ Error Output
 
 ### Query the Current Key Identifier
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -278,7 +278,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -304,7 +304,7 @@ Output
 
 ### Query the Default Key Mappings
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -313,7 +313,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -1048,7 +1048,7 @@ Output
 
 ### Query Changed Key Mappings
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -1057,7 +1057,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Error Output
+#### Error Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -1068,7 +1068,7 @@ Error Output
 
 ### Query Current Key Mappings
 
-Input
+#### Input
 
 	:::XML
 	<wap-provisioningdoc>
@@ -1077,7 +1077,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+#### Output
 
 	:::XML
 	<wap-provisioningdoc>

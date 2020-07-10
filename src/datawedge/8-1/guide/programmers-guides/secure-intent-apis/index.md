@@ -30,10 +30,6 @@ The first step to secure access to DataWedge intent APIs is for the admin to whi
 * **Specify Caller Package Name**: &lt;enter app package name, e.g.: com.company.appname&gt;
 * **Caller Signature**: &lt;select signature file that contains the app certificate&gt;
 
-The following permission must be added to the manifest of the Android application so it can be granted access to the DataWedge content provider:
-
-		<uses-permission android:name="com.symbol.datawedge.permission.contentprovider" />
-
 
 ### 2. Restrict DataWedge Intent APIs
 
@@ -69,10 +65,10 @@ By default, all DataWedge APIs are in uncontrolled mode - any application can ac
 **Controlled –** This restricts API access. Only the admin can whitelist apps to access the APIs using AccessMgr CSP.
 
 [DataWedge APIs](../api) are categorized into 4 types:
-* **Configuration APIs -** APIs that retrieve configurations or take action on configurations
-* **Notification APIs -** APIs that generate a returned value
+* **Configuration APIs -** APIs related to actions taken on configurations
+* **Notification APIs -** APIs related to retrieving status for scanner, profile, or configuration
 * **Query API -** APIs that retrieve information or enumerate scanners
-* **Runtime APIs -** APIs that can function at runtime
+* **Runtime APIs -** APIs that can change functionality at runtime
 
 Administrators can designate which categories are protected using [DataWedgeMgr CSP](/mx/datawedgmgr). By default, all the API categories are in unprotected mode.
 

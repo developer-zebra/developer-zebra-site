@@ -6,6 +6,7 @@ order: 40
 mx: "10.0"
 apilevel: "26"
 devicetype: A
+info: This feature requires MX 10.0.5.1 or later (available in build 01-30-04.00-OG-U06 or later) on the device.
 parm:
   pivotal: Yes
   name: PermissionAccessAction

@@ -23,7 +23,7 @@ Details are provided in the sections that follow.
 
 ### 1. Whitelist Approved App 
 
-The first step to secure access to DataWedge intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or [EMDK profile Manager](/emdk-for-android/8-0/guide/profile-manager-guides/) to deploy the configuration to whitelist the app. Set the following parameters:
+The first step to secure access to DataWedge intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)) to deploy the configuration to whitelist the app. Set the following parameters:
 
 * **Service Access Action**: "Allow caller" 
 * **Service Identifier**: com.symbol.datawedge.api
@@ -107,7 +107,7 @@ The applications must use EMDK ProfileManager APIs to acquire a token from Acces
 
 To generate a token, use EMDK Profile Manager to create a profile:
 
-1.	Open [EMDK ProfileManager](/emdk-for-android/8-0/guide/profile-manager-guides).
+1.	Open EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)).
 2.	Create a new profile using MX 10.1 or above and provide a name, such as RequestToken.
 3.	In the “Available Features” list, select and add “Access Manager” as a feature.  
 4.	Access Manager is listed under “Selected Features”.

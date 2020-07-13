@@ -2827,27 +2827,27 @@ Used to set parameter inverse. The supported values are Enabled, Disabled and Au
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-This property allows the user to select decoding on mirrored Dotcode barcodes. It supports on Android with EMDK version 7.2 and above.
+
+Used to set the dotCodeMirror parameter. Supported values are Enabled, Disabled and Auto (default). Supported on Android devices with EMDK version 7.2 and later.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.DOTCODEMIRROR_AUTO - String: AUTO It allows decoding of both positive as well as mirror Dotcode symbologies.
-* Constant: EB.Barcode.DOTCODEMIRROR_DISABLED - String: DISABLED It disables decoding of mirror Dotcode symbologies.
-* Constant: EB.Barcode.DOTCODEMIRROR_ENABLED - String: ENABLED it enables decoding of only mirror Dotcode symbologies.
-####Access
+* Constant: EB.Barcode.DOTCODEMIRROR_AUTO - String: "auto" allows decoding of positive and mirror dotcode symbologies (default).
+* Constant: EB.Barcode.DOTCODEMIRROR_DISABLED - String: "disabled" turns off decoding of mirror dotcode symbologies.
+* Constant: EB.Barcode.DOTCODEMIRROR_ENABLED - String: "enabled" allows decoding of ***only*** mirror dotcode symbologies.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.dotCodeMirror</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.dotCodeMirror</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3112,20 +3112,18 @@ Returns the friendly name associated with the scanner.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for the GridMatrix decoder. It supports on Android with EMDK version 7.3 and above.
-####Access
+Provides access to parameters available for the gridmatrix decoder. Supported on Android with EMDK version 7.3 and later.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gridMatrix</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gridMatrix</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 

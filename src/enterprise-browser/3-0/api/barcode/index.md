@@ -3934,8 +3934,10 @@ Controls whether LCD Mode is enabled on the scanner. LCD Mode makes it easier to
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Describes the linear security level used during decoding. This determines the number of times a barcode must be read before it is decoded. If the successive reads of the barcode do not match, it will not be decoded.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3945,14 +3947,11 @@ Describes the linear security level used during decoding. This determines the nu
 * Constant: EB.Barcode.LONG_AND_SHORT - String: longAndShort Double redundancy for long barcodes, triple for short barcodes.
 * Constant: EB.Barcode.ALL_TWICE - String: allTwice Double redundancy for all barcodes.
 * Constant: EB.Barcode.ALL_THRICE - String: allThrice Triple redundancy for all barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.linearSecurityLevel</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.linearSecurityLevel</code> 
-
-
 
 ####Platforms
 
@@ -5735,16 +5734,14 @@ Qualifier for starting scene detection when presentation is selected as the `imT
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Enables or disables the symbology for Signature barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signature</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signature</code> 
-
-
 
 ####Platforms
 
@@ -5818,6 +5815,34 @@ Specifies the output width of the captured signature barcode. Signature barcodes
 
 * Windows Mobile
 * Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+
+-----
+
+###signatureImageBitsPerPixel
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Used to set the bits-per-pixel for decoding image. Supported on Android with EMDK version 7.3 and later.
+
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+
+* Constant: EB.Barcode.SIGNATUREIMAGEBITSPERPIXEL_BPP1 - String: "auto" sets bits-per-pixel value to BPP1.
+* Constant: EB.Barcode.SIGNATUREIMAGEBITSPERPIXEL_BPP4- String: "disabled" sets bits-per-pixel value to BPP4.
+* Constant: EB.Barcode.SIGNATUREIMAGEBITSPERPIXEL_BPP8- String: "enabled" sets bits-per-pixel value to BPP8.
+
+####Access
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageBitsPerPixel</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.signatureImageBitsPerPixel</code> 
+
+####Platforms
+* Windows Mobile
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 

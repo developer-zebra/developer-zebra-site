@@ -818,7 +818,7 @@ Describes the type of aiming to use. Supported on Android devices with EMDK vers
 <span class='text-info'>STRING</span> 
 
 ####Description
-Describes the aiming pattern to be turned ON or OFF. It supports on Android with EMDK version 6.6 and above.
+Describes the aiming pattern to be turned ON or OFF. It supports on Android with EMDK version 6.6 and later.
 
 ####Values
 
@@ -895,7 +895,7 @@ Enables or disables the symbology for Australian Postal barcodes. If your applic
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
- Describes the available Character Set Failure Option. This property allows you to set one type at a time. It supports on Android with EMDK version 6.10 and above.
+ Describes the available Character Set Failure Option. This property allows you to set one type at a time. It supports on Android with EMDK version 6.10 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -997,7 +997,7 @@ Enables or disables the symbology for Aztec barcodes. If your application does n
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Number of barcodes to decode. Count should be 2 to 10. Supported on Android with EMDK version 6.8 and later.
+Number of barcodes to decode. Count should be 2 to 10. Supported on Android devices with EMDK version 6.8 and later.
 
 ####Access
 
@@ -1118,7 +1118,7 @@ Enables or disables the symbology for Canadian Postal barcodes. If your applicat
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
- Describes the available Character Sets for this particula Scanner. This property allows you to set one type at a time. It supports on Android with EMDK version 6.10 and above.
+ Describes the available Character Sets for this particula Scanner. This property allows you to set one type at a time. It supports on Android with EMDK version 6.10 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -2051,7 +2051,7 @@ Sets the Code 93 Redundancy property, if set the barcode must be decoded twice b
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Allows the code type of a scanned barcode and select a code ID character to insert between the prefix and the decoded symbol. This is useful when the reader is decoding more than one code type. It supports on Android with EMDK version 6.6 and above.
+Allows the code type of a scanned barcode and select a code ID character to insert between the prefix and the decoded symbol. This is useful when the reader is decoding more than one code type. It supports on Android with EMDK version 6.6 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -2181,7 +2181,7 @@ Enables or disables the symbology for Composite C barcodes. If your application 
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection between the terminal and the scanner is severed to conserve power. The value should be in mutilple of 5. This is currently applicable to Bluetooth scanners only. For Android L and above the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal.It supports on Android with EMDK version 6.6 and above.
+Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection between the terminal and the scanner is severed to conserve power. The value should be in mutilple of 5. This is currently applicable to Bluetooth scanners only. For Android L and later the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal. It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -2469,7 +2469,7 @@ Enable and Disable Decode LED notification. When set to true, The Decode LED Not
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the Decode LED Notification Mode on the host device and remote scanner. This Barcode Property is only applicable for external scanner. It supports on Android with EMDK version 6.3 and above.
+Specifies the Decode LED Notification Mode on the host device and remote scanner. This Barcode Property is only applicable for external scanner. It supports on Android with EMDK version 6.3 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -2539,20 +2539,20 @@ When true, displays a screen overlay as a notification on a successful decode. S
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Sets the length of time (in milliseconds) to display the screen overlay upon successful decode. The value is specified in the range 0 to 1000 in milliseconds.
-####Access
+Used to specify length of time (in milliseconds) to display the screen overlay upon successful decode. Supported on Android devices with EMDK version 7.2 and later.
 
+Sets the length of time (in milliseconds) to display the screen overlay upon successful decode. The value is specified in the range 0 to 1000 in milliseconds.
+
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeScreenNotificationTime </code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeScreenNotificationTime </code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Symbol Technologies' scanners.)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2561,20 +2561,18 @@ Sets the length of time (in milliseconds) to display the screen overlay upon suc
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Sets the percentage of translucency of decode screen notification overlay. This value can be from 20 to 50 with a step of 5.
-####Access
+Sets the translucency percentage of the decode screen notification overlay from 20 to 50 with a step of 5. Supported on Android with EMDK version 7.2 and later.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeScreenTranslucencyLevel</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeScreenTranslucencyLevel</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Symbol Technologies' scanners.)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2582,16 +2580,14 @@ Sets the percentage of translucency of decode screen notification overlay. This 
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Path to a local wave file to be played when the scanner successfully decodes a barcode. The wave file must reside on the device. This will override the existing scanner beeper settings. 
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeSound</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeSound</code> 
-
-
 
 ####Platforms
 
@@ -2633,7 +2629,7 @@ The volume of the device beeper when a barcode is scanned. Volume specified usin
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-When the aimType:continuousRead property is applied this value defines the interval between which different barcodes can be scanned. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this setting to allow time for the operator to re-aim the device between successive scans. It supports on Android with EMDK version 6.3 and above.
+When the aimType:continuousRead property is applied this value defines the interval between which different barcodes can be scanned. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this setting to allow time for the operator to re-aim the device between successive scans. It supports on Android with EMDK version 6.3 and later.
 ####Access
 
 
@@ -2726,7 +2722,7 @@ Forces the scanner to disconnect from the terminal when it is 'disabled'. Since 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-It indicates to the scan driver to disconnect any existing connection between an external Bluetooth scanner and the terminal. When a BT scanner establishes connection to the terminal it will not automatically disconnect when the scanner is disabled by calling Scanner.disable(). If this parameter is set the scanning driver will force the scanner to disconnect. Please Note that If this parameter is set to true, it will not fire the DISCONNECTED state.It supports on Android with EMDK version 6.6 and above.
+It indicates to the scan driver to disconnect any existing connection between an external Bluetooth scanner and the terminal. When a BT scanner establishes connection to the terminal it will not automatically disconnect when the scanner is disabled by calling Scanner.disable(). If this parameter is set the scanning driver will force the scanner to disconnect. Please Note that If this parameter is set to true, it will not fire the DISCONNECTED state.It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -2771,7 +2767,7 @@ If set to true the bluetooth address will be displayed as a barcode on the scree
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-Provides access to parameters available for the dotCode decoder. Supported on Android with EMDK version 7.2 and later.
+Provides access to parameters available for the dotCode decoder. Supported on Android devices with EMDK version 7.2 and later.
 
 ####Access
 
@@ -2968,7 +2964,7 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -2990,7 +2986,7 @@ Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK vers
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -3012,7 +3008,7 @@ Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK ve
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enable or disable the ICCBBA decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+Enable or disable the ICCBBA decoding of UDI. It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -3108,7 +3104,7 @@ Returns the friendly name associated with the scanner.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Provides access to parameters available for the gridmatrix decoder. Supported on Android with EMDK version 7.3 and later.
+Provides access to parameters available for the gridmatrix decoder. Supported on Android devices with EMDK version 7.3 and later.
 
 ####Access
 
@@ -3185,7 +3181,7 @@ Used to set parameter mirror. Supported values are Enabled, Disabled and Auto (d
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-Provides access to parameters available for the Gs1Datamatrix decoder. Supported on Android with EMDK version 7.0 and later. 
+Provides access to parameters available for the Gs1Datamatrix decoder. Supported on Android devices with EMDK version 7.0 and later. 
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1Datamatrix</code>
@@ -3205,7 +3201,7 @@ Provides access to parameters available for the Gs1Datamatrix decoder. Supported
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the Security level addition of GS1 DataBar lim decoder. Increasing the level of security may result in reduced aggressiveness in scanning, so choose only that level of security necessary. It supports on Android with EMDK version 6.6 and above.
+Specifies the Security level addition of GS1 DataBar lim decoder. Increasing the level of security may result in reduced aggressiveness in scanning, so choose only that level of security necessary. It supports on Android with EMDK version 6.6 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3235,7 +3231,7 @@ Specifies the Security level addition of GS1 DataBar lim decoder. Increasing the
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Provides access to parameters available for the Gs1QrCode decoder. Supported on Android with EMDK version 7.0 and later. 
+Provides access to parameters available for the Gs1QrCode decoder. Supported on Android devices with EMDK version 7.0 and later. 
 
 ####Access
 
@@ -3327,7 +3323,7 @@ Enables or disables the symbology for GS1 Databar Limited barcodes. If your appl
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for the HanXin decoder. It supports on Android with EMDK version 6.6 and above.
+Enables or disables the symbology for the HanXin decoder. It supports on Android with EMDK version 6.6 and later.
 ####Access
 
 
@@ -3349,7 +3345,7 @@ Enables or disables the symbology for the HanXin decoder. It supports on Android
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-This property allows the user to select decoding on inverse HanXin barcodes. It supports on Android with EMDK version 6.6 and above.
+This property allows the user to select decoding on inverse HanXin barcodes. It supports on Android with EMDK version 6.6 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3944,7 +3940,7 @@ Describes the linear security level used during decoding. This determines the nu
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.REDUNDANCY_AND_LENGTH - String: redundancyAndLength Double redundancy based on redundancy flags and code length. Only applicable to laser scanners, not BlockBuster imager scanners. Not supported on Android with EMDK version 3.1 and above.
+* Constant: EB.Barcode.REDUNDANCY_AND_LENGTH - String: redundancyAndLength Double redundancy based on redundancy flags and code length. Only applicable to laser scanners, not BlockBuster imager scanners. Not supported on Android with EMDK version 3.1 and later.
 * Constant: EB.Barcode.SHORT_OR_CODABAR - String: shortOrCodabar Double redundancy if short barcode or Codabar.
 * Constant: EB.Barcode.LONG_AND_SHORT - String: longAndShort Double redundancy for long barcodes, triple for short barcodes.
 * Constant: EB.Barcode.ALL_TWICE - String: allTwice Double redundancy for all barcodes.
@@ -4588,7 +4584,7 @@ When true, the barcode check digit(s) will be reported for scanned MSI barcodes.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the effort at which the decoder will attempt to decode margin-less barcodes. It supports on Android with EMDK version 6.3 and above.
+Specifies the effort at which the decoder will attempt to decode margin-less barcodes. It supports on Android with EMDK version 6.3 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4618,7 +4614,7 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Enable and disable automatic reconnection after scanner reboot. Applicable to DS3678 Bluetooth scanner only. It supports on Android with EMDK version 6.6 and above.
+Enable and disable automatic reconnection after scanner reboot. Applicable to DS3678 Bluetooth scanner only. It supports on Android with EMDK version 6.6 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4670,7 +4666,7 @@ Enables or disables the symbology for PDF 417 barcodes. If your application does
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/center of the reticle part of the pattern. This feature is useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. It supports on Android with EMDK version 6.3 and above.
+Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/center of the reticle part of the pattern. This feature is useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. It supports on Android with EMDK version 6.3 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4750,7 +4746,7 @@ Allows poor quality 1D barcodes to be read When true, but this will adversely af
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-It provides enhancement modes for decoding barcodes of poor or degraded quality. It supports on Android with EMDK version 6.3 and above.
+It provides enhancement modes for decoding barcodes of poor or degraded quality. It supports on Android with EMDK version 6.3 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -5612,7 +5608,7 @@ Ring scanner serial number.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-When the aimType:continuousRead property is applied this value defines the interval between which the same barcode can be decoded twice. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this value to prevent accidental duplicate scans. It supports on Android with EMDK version 6.3 and above.
+When the aimType:continuousRead property is applied this value defines the interval between which the same barcode can be decoded twice. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this value to prevent accidental duplicate scans. It supports on Android with EMDK version 6.3 and later.
 ####Access
 
 
@@ -5635,7 +5631,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
- Describes the available scanning modes such as Single Barcode and UDI. This property allows you to set one type at a time. It supports on Android with EMDK version 6.6 and above.
+ Describes the available scanning modes such as Single Barcode and UDI. This property allows you to set one type at a time. It supports on Android with EMDK version 6.6 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -5830,7 +5826,7 @@ Specifies the output width of the captured signature barcode. Signature barcodes
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The duration must be less than the scanTimeout. It supports on Android with EMDK version 6.3 and above.
+Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The duration must be less than the scanTimeout. It supports on Android with EMDK version 6.3 and later.
 ####Access
 
 
@@ -6757,7 +6753,7 @@ When true, the barcode check digit(s) will be reported for scanned US Post Net b
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Configures the feedback given after a successful scan. This value is ignored if aimType is set to continuousRead and no feedback will be given. Not supported on Android with EMDK version 3.1 and above.
+Configures the feedback given after a successful scan. This value is ignored if aimType is set to continuousRead and no feedback will be given. Not supported on Android devices with EMDK version 3.1 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -6788,7 +6784,7 @@ Configures the feedback given after a successful scan. This value is ignored if 
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then the decoded barcode will remain on the screen for this duration, specified in milliseconds. Not supported on Android with EMDK version 3.1 and above.
+If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then the decoded barcode will remain on the screen for this duration, specified in milliseconds. Not supported on Android devices with EMDK version 3.1 and later.
 ####Access
 
 
@@ -6979,21 +6975,31 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
+Used to control zoom level for the device camera. **Supports only the camera scanner**. Supported value are 1 to 8 in steps of 1. **For decoding dotCode symbology, Zebra recommends a setting of 2**. Supported on Android devices with EMDK version 7.2 and later. 
+
 This parameter controls the zoom level for camera. Note: Supported value ranges from 1 to 8 in steps of 1. It is recommended to set Camera Zoom value to 2 for decoding DotCode symbology.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.zoom</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.zoom</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Symbol Technologies' scanners.)
+* Zebra devices only (scanners on Symbol-branded devices)
+
+
+Access
+•	Instance: This property can be accessed via an instance object of this class: myObject.zoom
+•	Default Instance: This property can be accessed via the default instance object of this class.
+o	EB.Barcode.zoom
+Platforms
+•	Android
+•	Zebra Devices Only (scanners on Symbol-branded devices)
+
 
 -----
 
@@ -7041,7 +7047,7 @@ it is necessary to disable the scanner and then re-enable it before another scan
 
 On Android platform, Enterprise Browser doesnot support Bluetooth Scanner on TC70 GA1 device. 
 
-On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and above.
+On Android platform, Enterprise Browser supports Bluetooth Scanner from Android Kitkat version and later.
                
 
 ###Viewfinder Position Parameters

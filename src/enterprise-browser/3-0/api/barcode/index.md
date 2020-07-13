@@ -5778,19 +5778,16 @@ Specifies the output height of the captured signature barcode. Signature barcode
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Specifies the output quality of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a value between 10 and 100 inclusive.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageQuality</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageQuality</code> 
 
-
-
 ####Platforms
-
 * Windows Mobile
 * Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
@@ -5800,19 +5797,16 @@ Specifies the output quality of the captured signature barcode. Signature barcod
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Specifies the output width of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageWidth</code> 
 
-
-
 ####Platforms
-
 * Windows Mobile
 * Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
@@ -5842,6 +5836,35 @@ Used to set the bits-per-pixel for decoding image. Supported on Android with EMD
 
 ####Platforms
 * Windows Mobile
+* Android
+* Zebra devices only (scanners on Symbol-branded devices)
+
+-----
+
+###signatureImageFormat
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Sets the image format for the decoding image. Supported on Android with EMDK version 7.3 and later.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+
+* Constant: EB.Barcode.SIGNATUREIMAGEFORMAT_BMP - String: "BMP" sets image format value to BMP.
+* Constant: EB.Barcode.SIGNATUREIMAGEFORMAT_JPEG- String: "JPEG" sets image format value to JPEG.
+* Constant: EB.Barcode.SIGNATUREIMAGEFORMAT_TIFF- String: "TIFF" sets image format value to TIFF.
+
+####Access
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageFormat</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.signatureImageFormat</code> 
+
+####Platforms
+* Windows Mobile
+* Android
 * Zebra devices only (scanners on Symbol-branded devices)
 
 -----

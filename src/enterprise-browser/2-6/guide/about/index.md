@@ -24,18 +24,15 @@ The base [EB installation](../setup) includes all necessary components to allow 
 * **The all-new [Enterprise App Configurator](../eac) utility simplifies [DOM injection](../dominjectionandroid)** with a point-and-click interface and requires no coding or manual config-file creation. DOM injection adds capabilities to a running EB app without changing the source code. 
 * **Updated [Licensing Guide](../licensing)** now contains instructions for making license keys persist on a device and links to Zebra's newest License Server Administrator guides for Linux and Windows. 
 * **Now automatically releases scanner resources when Android app for EB goes to the background**.
-* Improved integration with DataWedge for concurrent scanning
+* **[Changes in DataWedge tag behavior](../configref/#usedwforscanning)** in the `Config.xml` offer improved integration with DataWedge for concurrent scanning.
 * Barcode configuration now persists after onPause, onResume cycles
-* Device API now supports sendKey events
 
 ### New/Updated APIs
 
 **[Device API](../../api/re2x/device) now supports sendKey events**.
 
-<!-- 
-[Camera API](../) no longer supports FlashMode "On" setting
-[Barcode API](../)
- -->
+**NOTE**: The FlashMode "On" setting in the [Camera API](../../api/camera) is **NOT SUPPORTED** on devices running Android 10. 
+
 ### End of Support
 
 * **No longer supports devices running Android 7.x Nougat** (except WT6000)

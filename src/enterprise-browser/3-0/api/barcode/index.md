@@ -5857,16 +5857,11 @@ Maximum time in milliseconds that laser scanners will emit a beam or imager scan
 The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera scanners capture and process an image taken via the devices camera. Imager scanners rely on capturing and processing an image of the barcode via dedicated scanning hardware. Both camera and imager scanners are capable of decoding 1D and 2D barcodes. Laser scanners are only capable of decoding 1D barcodes and rely on a sweeping laser.
 
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.scannerType</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.scannerType</code> 
 
-
-
 ####Platforms
-
 * Android
 * Windows CE (all scanners)
 * Windows Mobile

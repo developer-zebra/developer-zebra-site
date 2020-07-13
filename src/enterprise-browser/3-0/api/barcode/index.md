@@ -3189,14 +3189,13 @@ Used to set parameter mirror. Supported values are Enabled, Disabled and Auto (d
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Enables or disables the symbology for GS1 Datamatrix barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+
 ####Access
 
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1Datamatrix</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1Datamatrix</code> 
-
-
 
 ####Platforms
 
@@ -3465,8 +3464,6 @@ When true, inserts special check characters in the transmitted data stream of In
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5febraban</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -3480,14 +3477,12 @@ When true, inserts special check characters in the transmitted data stream of In
 <span class='text-info'>INTEGER</span> 
 ####Description
 Specifies the maximum number of allowable characters in a I2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5maxLength</code> 
-
-
 
 ####Platforms
 

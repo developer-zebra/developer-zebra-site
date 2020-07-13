@@ -19,7 +19,7 @@ Device Central features:
 * Firmware update utility for supported peripherals (applies to supported Bluetooth scanners)
 
 > <b>Important Information:</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Starting with Android 10, <b>Device Central is no longer built-in the device.</b> It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Starting with Android 10, <b>Device Central is no longer built-in the device.</b> It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <b>Mobility DNA Enterprise License Required –</b> For Zebra Professional-series devices, Device Central requires a <a href="/licensing">Mobility DNA Enterprise License</a>.
 
 <p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
@@ -47,8 +47,8 @@ Device Central features:
 
 ## Supported Devices
 
-Device Central is approved for use with the following Zebra Android device:
-
+See the device compatibility table for Device Central on [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html).
+<!--
 <table class="facelift" style="width:25%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
@@ -59,8 +59,7 @@ Device Central is approved for use with the following Zebra Android device:
     <td style="text-align:center">&#x25cf;</td>
   </tr>
 </table>
-
-<br>
+-->
 Device Central supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards.
 
 <br><br><br>

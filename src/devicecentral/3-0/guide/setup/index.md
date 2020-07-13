@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: Install
 layout: guide.html
 product: Device Central
 productversion: '3.0'
@@ -9,7 +9,7 @@ productversion: '3.0'
 
 This section provides installation instructions for **Device Central**.
 
-<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra support portal</a>. </p>
+<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. </p>
 
 
 ## Manual Installation
@@ -23,7 +23,7 @@ This section provides installation instructions for **Device Central**.
 6. Open Device Central.
 -->
 <p>Installation from the Zebra support portal:</p>
-1. Download the .apk from [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software.html).
+1. Download the .apk from [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html).
 2. Copy the .apk to the device.
 3. Tap on the .apk to install.
 5. Follow the instructions when prompted to complete the installation.

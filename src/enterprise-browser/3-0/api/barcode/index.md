@@ -2512,7 +2512,7 @@ Maximum time in milliseconds that the Decode LED notification will glow a green 
 ####Platforms
 
 * Android
-* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol-branded  Bluetooth barcode scanners, model RS507)
 
 -----
 
@@ -2521,20 +2521,16 @@ Maximum time in milliseconds that the Decode LED notification will glow a green 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or Disables Displaying a screen overlay as a notification on a successful decode.
+When true, displays a screen overlay as a notification on a successful decode. Supported on Android devices with EMDK version 7.2 and later. 
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeScreenNotification</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeScreenNotification</code> 
 
-
-
 ####Platforms
-
 * Android
-* Zebra devices only (Symbol Technologies' scanners.)
+* Zebra devices only (not all scan engines support all symbologies/symbology properties)
 
 -----
 
@@ -3187,12 +3183,11 @@ Used to set parameter mirror. Supported values are Enabled, Disabled and Auto (d
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
-Enables or disables the symbology for GS1 Datamatrix barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Provides access to parameters available for the Gs1Datamatrix decoder. Supported on Android with EMDK version 7.0 and later. 
 
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1Datamatrix</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1Datamatrix</code> 
@@ -3200,7 +3195,8 @@ Enables or disables the symbology for GS1 Datamatrix barcodes. If your applicati
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (not all scanning engines support all symbologies or all symbology properties)
+
 
 -----
 
@@ -3239,20 +3235,18 @@ Specifies the Security level addition of GS1 DataBar lim decoder. Increasing the
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for GS1 QrCode barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
-####Access
+Provides access to parameters available for the Gs1QrCode decoder. Supported on Android with EMDK version 7.0 and later. 
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1QrCode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1QrCode</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (not all scanning engines support all symbologies or all symbology properties)
 
 -----
 

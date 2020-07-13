@@ -4698,8 +4698,6 @@ Allows the imager or camera to decode only the barcode that is directly under th
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.picklistEx</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -5725,22 +5723,23 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
- Used to Activate the Presentation mode of scanning based on a Scene Detection Qualifier. e.g. Proximity sensor input. If not set, default value SceneDetectionQualifier.NONE is used.
+Qualifier for starting scene detection when presentation is selected as the `imType`. Supported on Android devices with EMDK version 7.3 and later.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.SCENEDETECTIONQUALIFIER_NONE - String: NONE Scene detection starts immediately after scanner read submission. Default value is NONE.
-* Constant: EB.Barcode.SCENEDETECTIONQUALIFIER_PROXIMITY_SENSOR_INPUT - String: PROXIMITY_SENSOR_INPUT Scene detection is started upon the assertion received from proximity sensor.
-####Access
+* Constant: EB.Barcode.SCENEDETECTIONQUALIFIER_NONE - String: "none" Scene detection starts immediately after scanner read submission. Default value is NONE.
 
+* Constant: EB.Barcode.SCENEDETECTIONQUALIFIER_PROXIMITY_SENSOR_INPUT - String: " proximitysensorinput " Scene detection is started upon the assertion received from proximity sensor.
+
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.sceneDetectionQualifier</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.sceneDetectionQualifier</code> 
-
-
 
 ####Platforms
 

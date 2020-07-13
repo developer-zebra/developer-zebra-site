@@ -2773,21 +2773,22 @@ If set to true the bluetooth address will be displayed as a barcode on the scree
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
-####Description
-Enables or disables the symbology for the Dotcode decoder. It supports on Android with EMDK version 7.2 and above.
-####Access
 
+####Description
+Provides access to parameters available for the dotCode decoder. Supported on Android with EMDK version 7.2 and later.
+
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.dotCode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.dotCode</code> 
 
 
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
+
 
 -----
 

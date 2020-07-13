@@ -11,6 +11,12 @@ layout: guide.html
 • **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
 • **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.<br>
 • Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.<br>
+• **<u>Enterprise Browser 3.0 and later supports term-based licensing</u>** with one-, three- and five-year terms available for purchase.<br> 
+• 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal. <br>
+• **A 30-day evaluation term now comes preinstalled with every EB 3.0 download**.<br> 
+• **Perpetual licenses remain in effect**.<br> 
+• The Zebra PS20, which includes Enterprise Browser 2.x, requires purchase of a Mobility DNA Enterprise license to upgrade to Enterprise Browser 3.0. Existing 2.x installations and perpetual licenses will be honored. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.<br>
+
 
 -----
 

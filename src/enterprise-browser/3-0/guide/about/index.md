@@ -24,10 +24,10 @@ The base [EB installation](../setup) includes all necessary components to allow 
 ### New Features 
 
 #### Term-based Licensing
-* Enterprise Browser 3.0 and later now supports term-based licensing with one-, three- and five-year terms available for purchase. 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal. 
-* Perpetual licenses remain in effect. 
+* Enterprise Browser 3.0 and later now supports term-based licensing with one-, three- and five-year terms available for purchase.  
 * A 30-day evaluation term now comes preinstalled with every EB 3.0 download. 
-* The Zebra PS20, which includes Enterprise Browser 2.x, requires purchase of a Mobility DNA Enterprise license to upgrade to Enterprise Browser 3.0. Existing 2.x installations and perpetual licenses will be honored. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.
+* Perpetual licenses remain in effect. 
+* **The Zebra PS20**, which includes Enterprise Browser 2.x, requires purchase of a Mobility DNA Enterprise license to use Enterprise Browser 3.0. Existing 2.x perpetual licenses remain in effect. **To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied**.
 
 #### Common Criteria
 Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, Zebra mobile and touch computers are prevented from access certain features, including the ability to read from or write to external storage. [Learn more](/cc). 

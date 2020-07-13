@@ -3132,27 +3132,26 @@ Provides access to parameters available for the gridmatrix decoder. Supported on
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-This property allows the user to select decoding on inverse GridMatrix barcodes. It supports on Android with EMDK version 7.3 and above.
+Uses to set parameter inverse. Supported values are Enabled, Disabled and Auto (default). Supported on Android devices with EMDK version 7.3 and later.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.GRIDMATRIXINVERSE_AUTO - String: AUTO It allows decoding of both positive as well as inverse GridMatrix symbologies.
-* Constant: EB.Barcode.GRIDMATRIXINVERSE_DISABLED - String: DISABLED It disables decoding of inverse GridMatrix symbologies.
-* Constant: EB.Barcode.GRIDMATRIXINVERSE_ENABLED - String: ENABLED it enables decoding of only inverse GridMatrix symbologies.
-####Access
+* Constant: EB.Barcode.GRIDMATRIXINVERSE_AUTO - String: "auto" allows decoding of both positive and inverse GridMatrix symbologies.
+* Constant: EB.Barcode.GRIDMATRIXINVERSE_DISABLED - String: "disabled" turns off decoding of inverse GridMatrix symbologies.
+* Constant: EB.Barcode.GRIDMATRIXINVERSE_ENABLED - String: "enabled" allows decoding of ***only*** inverse GridMatrix symbologies.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gridMatrixInverse</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gridMatrixInverse</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3161,27 +3160,26 @@ This property allows the user to select decoding on inverse GridMatrix barcodes.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-This property allows the user to select decoding on mirrored GridMatrix barcodes. It supports on Android with EMDK version 7.3 and above.
+Used to set parameter mirror. Supported values are Enabled, Disabled and Auto (default). Supported on Android devices with EMDK version 7.3 and later.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.GRIDMATRIXMIRROR_AUTO - String: AUTO It allows decoding of both positive as well as mirror GridMatrix symbologies.
-* Constant: EB.Barcode.GRIDMATRIXMIRROR_DISABLED - String: DISABLED It disables decoding of mirror GridMatrix symbologies.
-* Constant: EB.Barcode.GRIDMATRIXMIRROR_ENABLED - String: ENABLED it enables decoding of only mirror GridMatrix symbologies.
-####Access
+* Constant: EB.Barcode.GRIDMATRIXMIRROR_AUTO - String: "auto" allows decoding of both positive and mirror GridMatrix symbologies.
+* Constant: EB.Barcode.GRIDMATRIXMIRROR_DISABLED - String: "disabled" turns off decoding of mirror GridMatrix symbologies.
+* Constant: EB.Barcode.GRIDMATRIXMIRROR_ENABLED - String: "enabled" allows decoding of ***only*** mirror GridMatrix symbologies.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gridMatrixMirror</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gridMatrixMirror</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 

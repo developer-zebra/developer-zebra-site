@@ -2797,27 +2797,28 @@ Provides access to parameters available for the dotCode decoder. Supported on An
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-This property allows the user to select decoding on inverse Dotcode barcodes. It supports on Android with EMDK version 7.2 and above.
+Used to set parameter inverse. The supported values are Enabled, Disabled and Auto (default). Supported on Android devices with EMDK version 7.2 and later.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.DOTCODEINVERSE_AUTO - String: AUTO It allows decoding of both positive as well as inverse Dotcode symbologies.
-* Constant: EB.Barcode.DOTCODEINVERSE_DISABLED - String: DISABLED It disables decoding of inverse Dotcode symbologies.
-* Constant: EB.Barcode.DOTCODEINVERSE_ENABLED - String: ENABLED it enables decoding of only inverse Dotcode symbologies.
-####Access
+* Constant: EB.Barcode.DOTCODEINVERSE_AUTO - String: "auto" allows decoding of positive and inverse dotcode symbologies.
 
+* Constant: EB.Barcode.DOTCODEINVERSE_DISABLED - String: "disabled" turns off decoding of inverse dotcode symbologies.
+
+* Constant: EB.Barcode.DOTCODEINVERSE_ENABLED - String: "enabled" allows decoding of ***only*** inverse dotcode symbologies.
+
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.dotCodeInverse</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.dotCodeInverse</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 

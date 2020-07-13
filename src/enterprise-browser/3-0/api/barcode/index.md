@@ -2561,7 +2561,7 @@ Sets the length of time (in milliseconds) to display the screen overlay upon suc
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Sets the translucency percentage of the decode screen notification overlay from 20 to 50 with a step of 5. Supported on Android with EMDK version 7.2 and later.
+Sets the translucency percentage of the decode screen notification overlay from 20 to 50 with a step of 5. Supported on Android devices with EMDK version 7.2 and later.
 
 ####Access
 
@@ -3940,7 +3940,7 @@ Describes the linear security level used during decoding. This determines the nu
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.REDUNDANCY_AND_LENGTH - String: redundancyAndLength Double redundancy based on redundancy flags and code length. Only applicable to laser scanners, not BlockBuster imager scanners. Not supported on Android with EMDK version 3.1 and later.
+* Constant: EB.Barcode.REDUNDANCY_AND_LENGTH - String: redundancyAndLength Double redundancy based on redundancy flags and code length. Only applicable to laser scanners, not BlockBuster imager scanners. Not Supported on Android devices with EMDK version 3.1 and later.
 * Constant: EB.Barcode.SHORT_OR_CODABAR - String: shortOrCodabar Double redundancy if short barcode or Codabar.
 * Constant: EB.Barcode.LONG_AND_SHORT - String: longAndShort Double redundancy for long barcodes, triple for short barcodes.
 * Constant: EB.Barcode.ALL_TWICE - String: allTwice Double redundancy for all barcodes.

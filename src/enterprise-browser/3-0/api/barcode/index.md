@@ -748,7 +748,7 @@ Enables or disables adaptive scanning. When set to true, the scan engine automat
 
 * Android
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 ###aimMode
 
@@ -776,7 +776,7 @@ Defines the aiming mode to use.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -810,7 +810,7 @@ Describes the type of aiming to use. Supported on Android devices with EMDK vers
 
 * Android
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###aimingPattern
 
@@ -838,7 +838,7 @@ Describes the aiming pattern to be turned ON or OFF. It supports on Android with
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -862,7 +862,7 @@ When set to true, the barcode scanner will read all barcode types that the scann
 
 * Android
 * Windows Mobile
-* Windows CE (Scanners on Symbol Technologies' devices)
+* Windows CE (scanners on Symbol-branded devices)
 
 -----
 
@@ -918,7 +918,7 @@ Enables or disables the symbology for Australian Postal barcodes. If your applic
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -942,7 +942,7 @@ When true, automatically appends the character code for 'enter' to the end of an
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -964,7 +964,7 @@ When true, automatically appends the tab character to the end of any barcodes sc
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -1034,7 +1034,7 @@ Specifies the format in which the barcode data is returned, binary data is retur
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Camera / Imager Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera / Imager scanners on Symbol-branded devices)
 
 -----
 
@@ -1063,7 +1063,7 @@ Specifies the width of the laser beam. All devices will support normal beam widt
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 -----
 
@@ -1085,7 +1085,7 @@ Enables or disables bidirectional redundancy.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 -----
 
@@ -1140,7 +1140,7 @@ Enables or disables the symbology for Canadian Postal barcodes. If your applicat
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2071,7 +2071,7 @@ Allows the code type of a scanned barcode and select a code ID character to inse
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2216,7 +2216,7 @@ Specifies the time, in seconds, that an external scanner will be allowed to rema
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth scanners on Symbol-branded devices)
 
 -----
 
@@ -2334,7 +2334,7 @@ Specifies the number of bytes allocated to receive the scanned barcode. This par
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2386,7 +2386,7 @@ Describes the type of Digital Bar Pulse (DBP) being produced by the scan engine.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 -----
 
@@ -2412,7 +2412,7 @@ The duration of the device beeper when a barcode is scanned, in milliseconds.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2438,7 +2438,7 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2602,7 +2602,7 @@ Path to a local wave file to be played when the scanner successfully decodes a b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2628,7 +2628,7 @@ The volume of the device beeper when a barcode is scanned. Volume specified usin
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2651,7 +2651,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 * Android
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2675,7 +2675,7 @@ Enables or disables the Digimarc decoding.
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2699,7 +2699,7 @@ By default if you have enabled the Scanner on a page, through either JavaScript 
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -2721,7 +2721,7 @@ Forces the scanner to disconnect from the terminal when it is 'disabled'. Since 
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth scanners on Symbol-branded devices)
 
 -----
 
@@ -2765,7 +2765,7 @@ If set to true the bluetooth address will be displayed as a barcode on the scree
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth scanners on Symbol-branded devices)
 
 -----
 
@@ -2867,7 +2867,7 @@ Allows Direct Part Marking (DPM) barcodes to be read When true, but may adversel
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices. The scanning engine must support DPM barcodes.)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices. The scanning engine must support DPM barcodes.)
 
 -----
 
@@ -2983,7 +2983,7 @@ Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK vers
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3005,7 +3005,7 @@ Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK ve
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3027,7 +3027,7 @@ Enable or disable the ICCBBA decoding of UDI. It supports on Android with EMDK v
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3049,7 +3049,7 @@ Configures the time (in seconds) allowed to pair with the external bluetooth sca
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth scanners on Symbol-branded devices)
 
 -----
 
@@ -3077,7 +3077,7 @@ Sets the focus mode in use.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -3101,7 +3101,7 @@ Returns the friendly name associated with the scanner.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3402,7 +3402,7 @@ Controls the haptic feedback on decode. This means that if this is set to true, 
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3643,7 +3643,7 @@ Specifies the illumination brightness level. Minimum value is 0 and maximum valu
 ####Platforms
 
 * Android
-* Zebra devices only (Imager Scanners on Symbol Technologies devices)
+* Zebra devices only (Imager scanners on Symbol-branded devices)
 
 -----
 
@@ -3674,7 +3674,7 @@ Selects the illumination mode to use.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies devices)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -3683,22 +3683,30 @@ Selects the illumination mode to use.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables/Disables instantaneous reporting of unique barcodes. Enabling this parameter will ignore the value of multiBarcodeParams.barcodeCount param and will report the scanned data to the user instantaneously, without waiting to end the scanning session.
+Enables/disables instantaneous reporting of unique barcodes. Enabling this parameter ignores the value of `multiBarcodeParams.barcodeCount` param and reports the scanned data to the user instantaneously, without waiting to end the scanning session. Supported on Android devices with EMDK version 7.4 and later.
+
 ####Params
 <p><strong>Default:</strong> false</p>
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.instantReporting</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.instantReporting</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
+
+Description
+
+•	Default Instance: This property can be accessed via the default instance object of this class.
+o	EB.Barcode.instantReporting
+Platforms
+•	Android
+•	Zebra Devices Only (scanners on Symbol-branded devices)
+
 
 -----
 
@@ -3722,7 +3730,7 @@ The frequency of the device beeper when a barcode is scanned but not successfull
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3744,7 +3752,7 @@ Path to a local wave file to be played when a barcode is scanned but not success
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3775,7 +3783,7 @@ Allows the user to select inverse 1D barcodes for decoding.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices. The scanning engine must support inverse barcodes)
+* Zebra devices only (scanners on Symbol-branded devices. The scanning engine must support inverse barcodes)
 
 -----
 
@@ -3821,7 +3829,7 @@ Enables or disables the Klasse Eins laser on time function.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 -----
 
@@ -3935,7 +3943,7 @@ Controls whether LCD Mode is enabled on the scanner. LCD Mode makes it easier to
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3968,7 +3976,7 @@ Describes the linear security level used during decoding. This determines the nu
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -3992,7 +4000,7 @@ Set to false to disable scanning when the battery is low / critical or set to tr
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -4695,7 +4703,7 @@ Allows the imager or camera to decode only the barcode that is directly under th
 ####Platforms
 
 * Android
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -4726,7 +4734,7 @@ Allows the imager to decode only the barcode that is directly under the cross-ha
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -4748,7 +4756,7 @@ Allows poor quality 1D barcodes to be read When true, but this will adversely af
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -4824,7 +4832,7 @@ Vertical rastering height to use, as a percentage, when rasterMode:openAlways is
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser scanners on Symbol-branded devices)
 
 -----
 
@@ -4854,7 +4862,7 @@ Describes the type of vertical rastering to use.
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5633,7 +5641,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 * Android
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5662,7 +5670,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5686,7 +5694,7 @@ Maximum time in milliseconds that laser scanners will emit a beam or imager scan
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5737,7 +5745,7 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 ####Platforms
 
 * Android
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5850,7 +5858,7 @@ Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The
 
 * Android
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5898,7 +5906,7 @@ Only applies to an enabled laser or imaging scanner. Disconnecting the trigger w
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 -----
 
@@ -5927,7 +5935,7 @@ List of supported trigger type..
 ####Platforms
 
 * Android
-* Zebra devices only (Imager Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager scanners on Symbol-branded devices)
 
 -----
 
@@ -6785,7 +6793,7 @@ Configures the feedback given after a successful scan. This value is ignored if 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6809,7 +6817,7 @@ If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6831,7 +6839,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6863,7 +6871,7 @@ Configures the mode of the scanner viewfinder window. This attribute is not supp
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6885,7 +6893,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6907,7 +6915,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 
@@ -6929,7 +6937,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera scanners on Symbol-branded devices)
 
 -----
 

@@ -785,7 +785,7 @@ Defines the aiming mode to use.
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Describes the type of aiming to use. It supports on Android with EMDK version 6.3 and above.
+Describes the type of aiming to use. Supported on Android devices with EMDK version 6.3 and later.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -793,12 +793,12 @@ Describes the type of aiming to use. It supports on Android with EMDK version 6.
 * Constant: EB.Barcode.AIMTYPE_TRIGGER - String: trigger Standard trigger mode. Holding the trigger will start a decoding session.
 * Constant: EB.Barcode.AIMTYPE_TIMED_HOLD - String: timedHold Aiming lasts for the time specified by 'timedAimDuration' before decoding. The opportunity to scan will last until the barcode is decoded or scanTimeout occurs.
 * Constant: EB.Barcode.AIMTYPE_TIMED_RELEASE - String: timedRelease Aiming lasts until trigger is released. If the timedAimDuration has expired when the trigger is released then a decode session is started until a barcode is decoded or for the remaining time equal to the scanTimeout value.
-* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: presentation Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. In order to use this mode the scanner must be initiated with a softscan using the Rho.Barcode.start() method and again after each decode. The device must be equipped with a sensor to detect movement to use presentation mode. MK31XX devices come with presentation mode pre-enabled in the scanner driver and the aimType cannot be modified for these devices. In ANdroid it is supported from EB version 2.1 and above.
+* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: Provided to support kiosk devices. The scanner illuminates when movement is detected in the range of the scanner. To use this mode, `SceneDetectionQualifier` property must be set to true. The device must be equipped with a sensor to detect movement. In devices that come with presentation mode pre-enabled in the scanner driver, the aimType cannot be modified.
 * Constant: EB.Barcode.AIMTYPE_PRESS_AND_RELEASE - String: pressAndRelease Scan will continue after the trigger is released until scanTimeout occurs.
 * Constant: EB.Barcode.AIMTYPE_PRESS_AND_SUSTAIN - String: pressAndSustain Scanner will continue to decode session until the beamTimer is expired, barcode is decoded or cancels the read. It avoids unexpected cancellations of a read by pressing the trigger button of the device. If the trigger button of the device is pressed while the beam is ON, it has no effect.
 * Constant: EB.Barcode.AIMTYPE_CONTINUOUS_READ - String: continuousRead Once the trigger is pulled barcodes will continue to be scanned as long as the trigger is held, enabling rapid scanning, to be used in conjunction with sameSymbolTimeout and differentSymbolTimeout. This value is ignored if viewfinderMode is set to 'dynamicReticle'
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.aimType</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -997,20 +997,18 @@ Enables or disables the symbology for Aztec barcodes. If your application does n
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-When the barcodeCount property is applied this value defines the interval between which no of barcodes can be scanned. The value is specified in integer with minimum value as 2 and maximum value as 10. It supports on Android with EMDK version 6.8 and above.
-####Access
+Number of barcodes to decode. Count should be 2 to 10. Supported on Android with EMDK version 6.8 and later.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.barcodeCount</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.barcodeCount</code> 
 
-
-
 ####Platforms
 
 * Android
-* Zebra Devices Only (Scanners on Symbol Technologies' devices)
+* Zebra Devices Only (scanners on Symbol Technologies' devices)
 
 ###barcodeDataFormat
 

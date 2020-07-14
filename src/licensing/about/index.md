@@ -68,7 +68,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents">Device Central</a></td>
   <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td></td>
   <td>Included †</td>
-  <td>† Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See all supported devices</a></td>
+  <td>† Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
   </tr>
 
   <tr>
@@ -187,6 +187,7 @@ The following table indicates which features are included with Zebra Professiona
 <a name="softwarecomponents1"></a>
 
 &#42;*Each MDNA license covers all MDNA features for one device*.
+†*Supported on devices with Android 10 or later*.
 
 -----
 

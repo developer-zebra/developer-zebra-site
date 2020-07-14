@@ -21,7 +21,7 @@ These instructions apply to direct installation (from a computer to a single dev
 
 ### EHS 3.2 Compatibility Notes
 
-* **Supports Oreo and Pie on [supported devices](../guide/about#supporteddevices) only**. 
+* **Supports Oreo and Pie on [supported devices](../about/#supporteddevices) only**. 
 * **No longer supports devices running Android 7.x Nougat**. 
 * Download package includes a single .apk file: 
  * `EHS_xxxxxx.apk` - for all devices running Oreo and Pie **_including_ TC20/TC25**

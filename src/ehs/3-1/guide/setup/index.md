@@ -26,7 +26,7 @@ The EHS 3.x download includes two separate .apk files:
 * `EHS_xxxxxx_A.apk` - for all Nougat devices **_except_ TC20/TC25**
 * `EHS_xxxxxx_B.apk` - for all Android Oreo devices and **TC20/TC25 Nougat devices**
 
-See the full list of [devices supported by EHS v3.1](../about#supporteddevices). 
+See the full list of [devices supported by EHS v3.1](../about/#supporteddevices). 
 
 > **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Note**: Prior configuration settings, if any, are re-applied automatically.
 

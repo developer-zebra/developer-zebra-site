@@ -8,6 +8,7 @@ layout: guide.html
 ## `Important Licensing Information`
 > **<u>Enterprise Browser 3.0 and later supports term-based licensing</u>** with one-, three- and five-year terms available for purchase.<br> 
 • 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal. <br>
+• A 90-day evaluation term can be acquired through the licensing system. 
 • **A 30-day evaluation term now comes preinstalled with every EB 3.0 download**.<br> 
 • **Perpetual licenses remain in effect**.<br> 
 • **The Zebra PS20 includes Enterprise Browser 2.x preinstalled, and existing 2.x perpetual licenses remain in effect. 
@@ -58,12 +59,35 @@ The first step in obtaining a license is to engage with Zebra or a Zebra reselle
 ## II. Access Licensing System
 After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the licensing company's representative containing user credentials for accessing the Zebra Enterprise Software Licensing system (**also new starting with EB 2.0**). 
 
-* **Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to:** 
-	* Place an order for licenses
-	* See the status of existing orders
-	* Assign licenses to devices or deployments
-	* View current license inventory and assignments
-<!-- https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do -->
+#### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to: 
+
+* Place an order for licenses
+* See the status of existing orders
+* Assign licenses to devices or deployments
+* View current license inventory and assignments
+
+#### Available License Types
+
+* Perpetual License (never expires)
+* Trail License (90-day evaluation period)
+* Term-based License:
+ * 5-year term
+ * 3-year term
+ * 1-year term
+
+**Note**: A 30-day evaluation license is included with every EB download. 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal.
+
+<!-- 
+https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do 
+-->
+
+#### About Perpetual Licenses
+
+* Upgrades to EB 3.x are provided at no charge for all EB 2.x perpetual licenses covered under an Active Zebra OneCare™ Software Maintenance Agreement.
+* The same Activation ID (License) can be used for EB 2.x or EB 3.x (a new EB 3.x`.apk` must be deployed to devices).
+* Customers not under maintenance can purchase a Zebra OneCare™ Software Maintenance Agreement for EB 2.x licenses and access EB 3.x software at no extra charge. 
+* Customers purchasing a Software Maintenance Agreement for their perpetual EB 2.x license get access to the EB 3.x perpetual license through the Zebra Software Library portal.
+
 -----
 
 ## III. Manually Assign License

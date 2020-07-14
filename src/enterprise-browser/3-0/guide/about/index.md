@@ -24,7 +24,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 ### New Features 
 
 #### Term-based Licensing
-* Enterprise Browser 3.0 and later now supports term-based licensing with one-, three- and five-year terms available for purchase.  
+* Enterprise Browser 3.0 and later now supports term-based licensing with one-, three- and five-year terms available for purchase. [More info](..//licensing/#iiaccesslicensingsystem).
 * A 30-day evaluation term now comes preinstalled with every EB 3.0 download. 
 * Perpetual licenses remain in effect. 
 * **The Zebra PS20**, which includes Enterprise Browser 2.x, requires purchase of a Mobility DNA Enterprise license to use Enterprise Browser 3.0. Existing 2.x perpetual licenses remain in effect. **To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied**.

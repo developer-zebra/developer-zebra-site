@@ -186,8 +186,8 @@ The following table indicates which features are included with Zebra Professiona
 </table>
 <a name="softwarecomponents1"></a>
 
-&#42;*Each MDNA license covers all MDNA features for one device*.
-†*Supported on devices with Android 10 or later*.
+&#42;*Each MDNA license covers all MDNA features for one device*.<br>
+† *Supported on devices with Android 10 or later*.
 
 -----
 
@@ -201,9 +201,9 @@ Converts legacy green-screen apps into Android apps with a modern, tap-only UI f
 -----
 
 ### DataWedge
-Allows any application on a device to acquire data from the device scanner(s) and other input sources ***without coding***, and to manipulate the data as needed based on simple options or complex rules. 
+Add scanning and data acquisition to any application on a device ***without coding***. Manipulate and deliver acquired data as needed for an enterprise based on simple options or complex rules. 
 
-&#42;&#42;**NOTE: Professional devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture**. In DataWedge, these features are referred to as "NextGen SimulScan." 
+&#42;&#42;**NOTE: Zebra Professional-series devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture**. In DataWedge, these features are referred to as "NextGen SimulScan." 
 
 [Learn more about DataWedge](/datawedge)
 
@@ -217,7 +217,7 @@ Allows any application on a device to acquire data from the device scanner(s) an
 -----
 
 ### Device Diagnostics
-Instantly tests and diagnoses the hardware operability of a Zebra mobile device to determine system health and functionality. DDT is useful for quickly troubleshooting device issues and increasing worker productivity by reducing device downtime. 
+**Instantly test and diagnose Zebra mobile-devices hardware** to determine proper functionality and system health. Useful for quickly troubleshooting device issues to reduce downtime and increase worker productivity. 
 
 [Learn more about Device Diagnostics](/ddt)
 
@@ -246,22 +246,21 @@ Instantly tests and diagnoses the hardware operability of a Zebra mobile device 
 -----
 
 ### Enterprise Browser
-
-Mobile browser environment for quickly building HTML5-based apps for Android and Windows Mobile/CE to scan barcodes, capture signatures, process payments, print and fill virtually any other enterprise use case. Supported on most Zebra mobile devices and peripherals.  
+Mobile browser environment for quickly building apps with HTML, CSS and JavaScript apps for Android and Windows Mobile/CE that can scan barcodes, capture signatures, process payments, print and fill virtually any other enterprise use case. Supported for use with most Zebra mobile devices, printers and peripherals.  
 
 [Learn more about EB](/enterprise-browser)
 
 -----
 <a name="softwarecomponents2.5"></a>
 ### Enterprise Home Screen
-**Replacement launcher for Zebra devices running Android** that provides a simple way to control access to apps and settings on a Zebra device using a GUI interface and no code. Easily limit usage to one or more specified applications, prevent changes to device settings and lock down the file system.
+**Replacement launcher for Zebra devices running Android** that provides a GUI-based and code-free method of controlling access to apps and settings on a Zebra device. Easily limits usage to one or more specified applications, prevents changes to device settings and locks down the file system.
 
 [Learn more about EHS](/ehs)
 
 -----
 
 ### Enterprise Keyboard
-**Flexible and efficient alternative to the stock Android keyboard** provides programmable keys, switches quickly between languages and custom key layouts, can scan barcode data directly into an application using any of the device's scanners. Includes EKB Designer tool for making custom key layouts.  
+**Flexible and efficient alternative to the stock Android keyboard** provides programmable keys, switches quickly between languages and custom key layouts, and can scan barcode data directly into an application using any of the device's scanners. Includes EKB Designer tool for creating fully customized key layouts.  
 
 [Learn more about EKB](/enterprise-keyboard)
 [Learn more about EKB Designer](/ekd)
@@ -269,22 +268,21 @@ Mobile browser environment for quickly building HTML5-based apps for Android and
 -----
 <a name="softwarecomponents3"></a>
 ### LifeGuard Over-the-Air Updates 
-**Delivery application works with a select set of Enterprise Mobility Management (EMM) systems** to deploy operating system updates wirelessly to Zebra mobile devices running Android. Also can retrieve device info including Android version, current base build and patch, and whether the device runs Google Mobile Services. 
+**Firmware delivery application works with a select set of Enterprise Mobility Management (EMM) systems** to deploy operating-system updates wirelessly to Zebra mobile devices running Android. Also retrieves device info, including Android version and current base build and patch, and can report whether the device is running Google Mobile Services. 
 
 [Learn more about LifeGuard OTA Updates](https://developer.zebra.com/apis/ota-update-delivery)
 
 -----
 
 ### Power Precision Console
-**Battery management solution** provides a centralized view of the health, state-of-charge and performance data of device batteries within an organization using data stored in Zebra's PowerPrecision batteries. Continuously monitors battery health in real time and triggers customized notifications of actions needed to maintain productivity.  
+**Battery management solution** provides a centralized view of the health, state-of-charge and performance data of device batteries within an organization using data stored in Zebra's PowerPrecision batteries. Continuously monitors battery health in real time and triggers customized notifications of actions needed to maintain worker productivity.  
 
 [Learn more about PPC](/ppc)
 
 -----
 
 ### PTT Express
-
-Enables push-to-talk communications between compatible devices over an existing Wi-Fi network, a cost-effective way to provide a basic voice connection to small groups of workers inside the four walls. 
+**Enables push-to-talk communications between compatible devices** over an existing Wi-Fi network. Provides a cost-effective way to enabling basic voice connections among small groups of workers inside the four walls of any enterprise. 
 
 [Learn more about PTT Express](https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html)
 
@@ -301,28 +299,28 @@ Brings DEX communications to Zebra’s Android and Windows Mobile handheld compu
 -----
 <a name="softwarecomponents4"></a>
 ### StageNow
-**Device-staging utility for configuring Zebra devices** provides a point-and-click environment for quickly setting up and deploying devices by scanning, tapping an NFC tag or reading settings from in a file. Integrates seamlessly with most Enterprise Mobility Management systems for easy mass deployment across an enterprise. 
+**Device-staging utility for configuring Zebra devices** provides a point-and-click environment for quickly setting up and deploying devices by scanning, tapping an NFC tag or reading settings from in a file. Integrates seamlessly with most Enterprise Mobility Management systems for seamless mass deployment of device settings across an enterprise. 
 
 [Learn more about StageNow](/stagenow)
 
 -----
 
 ### Workforce Connect
-Provides access to enterprise data and apps, push-to-talk calls, PBX calls and secure messaging. 
+**Provides access to enterprise data and apps, push-to-talk calls, PBX calls and secure messaging**. 
 
 [Learn more about Workforce Connect](https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html)
 
 -----
 
 ### WorryFree Wi-Fi Analyzer
-Wi-Fi analysis and troubleshooting tool designed to examine Wi-Fi issues from a mobile device to help bring about a solution. Background tool performs real-time analysis of data and voice issues such as device coverage and roaming, end-to-end connectivity and RF networking. Also performs logging and packet capture.
+**Wi-Fi analysis and troubleshooting tool examines Wi-Fi issues** from a mobile device to help bring about a solution. Background tool performs real-time analysis of data and voice issues such as device coverage and roaming, end-to-end connectivity and RF networking. Also performs logging and packet capture.
 
 [Learn more about WFW Analyzer](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/worryfree-wifi.html). 
 
 -----
 
 ### Zebra Volume Control
-Add, delete and replace Audio Profiles and select an Audio Profile as the device default. Can modify the permanent the "Factory Preset" Audio Profile and control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
+**Add, delete and replace Audio Profiles** and select an Audio Profile as the device default. Can modify the permanent the "Factory Preset" Audio Profile and control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles. 
 
 [Learn more about Zebra Volume Control](/mx/audiovoluimgr)
 
@@ -330,10 +328,12 @@ Add, delete and replace Audio Profiles and select an Audio Profile as the device
 <a name="advanced_features"></a>
 
 ## Licensed Mobility Extensions
-The MX Management System (MXMS) is Zebra's proprietary XML-based communication framework for managing Zebra Android device settings and behavior. MX functions are implemented as Configuration Service Provider (CSP) apps for most Android subsystems and are subject to licensing as shown below. **Note: Each MDNA license covers all MDNA features for one device**.
+The MX Management System (MXMS) is **Zebra's proprietary XML-based communication framework for managing Zebra Android device settings and behavior**. MX functions are implemented as Configuration Service Provider (CSP) apps for most Android subsystems and are subject to licensing as shown below. **Note: Each MDNA Enterprise license covers all MDNA features for one device**.
+
+[Learn more about MX](/mx/overview)
 
 ### BluetoothMgr
-Controls the ability of a device to pair with headsets, printers, computers and other Bluetooth devices that come into range. Also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
+**Controls the ability of a device to pair** with headsets, printers, computers and other Bluetooth devices that come into range. Also controls whether the device is "discoverable" by other Bluetooth devices for initiating pairing requests with it.
 
 **Licensed parameters**: 
 * AllowDiscoverability
@@ -344,7 +344,7 @@ Controls the ability of a device to pair with headsets, printers, computers and 
 [Learn more about Bluetooth Manager](/mx/bluetoothmgr)
 
 ### Wi-Fi
-Administers the wireless LAN settings and network profiles for a device, including the saved settings required for connecting to various Wi-Fi networks.
+**Administers the wireless LAN settings** and network profiles for a device, including the saved settings required for connecting to various Wi-Fi networks.
 
 **Licensed parameters**: 
 * 2.4GHzChannels

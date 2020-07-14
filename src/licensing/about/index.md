@@ -66,9 +66,9 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
-  <td>Available Q2 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
-  <td>Available Q2 2020</td>
-  <td>Supported only on devices running Android 10 or later</td>
+  <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td></td>
+  <td>Included †</td>
+  <td>† Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See all supported devices</a></td>
   </tr>
 
   <tr>

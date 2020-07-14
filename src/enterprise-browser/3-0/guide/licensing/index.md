@@ -61,32 +61,28 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 
 #### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to: 
 
-* Place an order for licenses
-* See the status of existing orders
-* Assign licenses to devices or deployments
-* View current license inventory and assignments
+* **Order licenses**
+* **Check status** of existing orders
+* **Assign licenses** to devices or deployments
+* **View inventory and assignments** of current licenses 
 
 #### Available License Types
 
-* Perpetual License (never expires)
-* Trail License (90-day evaluation period)
-* Term-based License:
- * 5-year term
- * 3-year term
- * 1-year term
+* **Perpetual License** (never expires)
+* **Trail License** (90-day evaluation period)
+* **Term-based License**:
+ * **5-year** term
+ * **3-year** term
+ * **1-year** term
 
-**Note**: A 30-day evaluation license is included with every EB download. 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal.
-
-<!-- 
-https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do 
--->
+**Note: A 30-day evaluation license is included with every EB download**. 30 days before the end of a term, an “unlicensed software” reminder prompt appears on devices every four hours. After expiration, the prompt appears every five minutes until renewal.
 
 #### About Perpetual Licenses
 
 * Upgrades to EB 3.x are provided at no charge for all EB 2.x perpetual licenses covered under an Active Zebra OneCare™ Software Maintenance Agreement.
-* The same Activation ID (License) can be used for EB 2.x or EB 3.x (a new EB 3.x`.apk` must be deployed to devices).
-* Customers not under maintenance can purchase a Zebra OneCare™ Software Maintenance Agreement for EB 2.x licenses and access EB 3.x software at no extra charge. 
-* Customers purchasing a Software Maintenance Agreement for their perpetual EB 2.x license get access to the EB 3.x perpetual license through the Zebra Software Library portal.
+* The same Activation ID (license key) can be used for EB 2.x or EB 3.x (For EB 3.0, a new `.apk` must be deployed).
+* Customers not under maintenance can purchase Zebra OneCare™ for their EB 2.x licenses and access EB 3.x software at no extra charge. 
+* Customers purchasing a maintenance agreement for their perpetual EB 2.x license get access to the EB 3.x perpetual license through the Zebra Software Library portal.
 
 -----
 

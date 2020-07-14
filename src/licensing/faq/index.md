@@ -31,7 +31,7 @@ menu:
 
 ###Q: Does Zebra offer evaluation licenses? 
 
-**A: Yes. [See the Process page](../process/#evaluationlicense)** to learn how.  
+**A: Yes. [See the Process page](../process/#evaluationlicense)** to learn how they're acquired and applied.  
 
 -----
 
@@ -56,7 +56,7 @@ _Click image to enlarge; ESC to exit_.
 
 -----
 
-## Also See
+### Also See
 
 * **[About Zebra Licensing](../faq)** | General overview of licensing and features covered 
 * **[Zebra StageNow](/stagenow)** | A free Windows app for remote-device staging, licensing and mass deployment 

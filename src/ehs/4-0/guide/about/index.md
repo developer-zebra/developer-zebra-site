@@ -36,30 +36,34 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent**. 
 
-Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) now! 
+Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) now. 
 
 -----
 
 ## New in EHS 4.0
 
 * **Now supports Zebra devices running Android 10** as well as Android 9.x Pie and 8.x Oreo. 
-* **Support added** for the following devices running Android 10:
- * MC33x
- * PS20
- * TC21
- * TC26
- * TC52
-* **To enhance device and network security, EHS by default now hides potentially sensitive wireless device info** in User Mode. Optionally, an administrator can **[display wireless settings](../settings/#wirelessinformation)**, if desired.
-* **[Recently Launched Apps](../settings/#recentappsaccess) can now be shown or hidden** from the User, as desired by an administrator. 
+* **To enhance device and network security, EHS by default now hides potentially sensitive wireless device info** in User Mode.<br>Optionally, an administrator can **[display wireless settings](../settings/#wirelessinformation)**, if desired.
+* **[Recently Launched Apps](../settings/#recentappsaccess) can now be shown or hidden** from the User as desired by an administrator. 
 
-Please visit the [Enterprise Home Screen page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) on the Zebra Support Portal for a list of supported Zebra Android devices.
+### Supported Devices
+
+**EHS 4.0 adds support for the following devices running Android 10**:
+
+* **MC33x**
+* **PS20**
+* **TC21**
+* **TC26**
+* **TC52**
+
+#### [See all supported devices](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) <i class="fa fa-external-link" aria-hidden="true"></i>
 
 -----
 
 ### Android 10 Notes
 ***Applies to devices running Android 10 and later***.
 
-* **When EHS is running in Google Multi-user mode**, app icons are sometimes not shown on secondary user’s Home screen while switching back and forth between primary and secondary users.
+* **When EHS is running in Google Multi-user mode**, app icons are sometimes not shown on secondary user’s Home screen while switching between primary and secondary users.
 * **The Auto-launch Apps feature might work improperly if a delay of longer than two (2) seconds is set** between apps configured to launch at startup.
 * **The Camera and Google Search apps are not visible in User mode after rebooting** the device with Android Multi-user mode enabled.
 

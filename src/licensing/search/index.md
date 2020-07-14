@@ -11,8 +11,6 @@ menu:
       url: /licensing/about/#mdnacomponentsandfeatures
     - title: Process
       url: /licensing/process
-    - title: FAQ
-      url: /licensing/faq
     - icon: fa fa-search
       url: /licensing/search
 ---

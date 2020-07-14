@@ -26,7 +26,7 @@ These instructions apply to direct installation (from a computer to a single dev
 * Download package includes a single .apk file: 
  * `EHS_xxxxxx.apk` - for all devices running Oreo and Pie **_including_ TC20/TC25**
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup/#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
 
 > **EHS 3.2 DOES NOT support Android 7.x Nougat**. 
 
@@ -327,12 +327,11 @@ If EHS is removed from the device and the Android Launcher is the only remaining
 ## Battery and Wi-Fi Quick View
 In addition to the separate panels for viewing Battery and Wi-Fi status provided in the menus of Admin- and User-Mode Launcher screens, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
 
-> **NOTE**: EHS 4.0 and later allows adminisrators to [control Wi-Fi information](../settings/wirelessinformation) display. 
+> **NOTE**: EHS 4.0 and later allows adminisrators to [control Wi-Fi information display](../settings/#wirelessinformation). 
 
 <!-- 6/28/20- removed from EHS 4.0 since it applies to Android 10 and later. 
 **Note: SSID and BSSID information do not appear in the "Wireless Info" or "Battery and Wi-Fi Quick View" screens** on devices running Oreo if Location services (Settings -> Security & Location -> Location) are turned off. 
-
- -->
+-->
 
 **To view Battery and Wi-Fi status**: 
 

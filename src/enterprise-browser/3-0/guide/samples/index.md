@@ -6,19 +6,18 @@ productversion: '3.0'
 ---
 ## Overview 
 
-Sample apps are intended to demonstrate basic functionality of common Enterprise Browser APIs and show how to integrate API code into an HTML page. Apps are fully functional only when launched using Enterprise Browser, but their layouts can be viewed from the desktop. 
+Sample apps are intended to demonstrate basic functionality of common Enterprise Browser APIs and show how to integrate API code into an HTML page. Use of the sample apps requires a basic understanding of Enterprise Browser and its `Config.xml` runtime configuration file. See the [Config Editor Utility guide](../ConfigEditor) for more information. To learn EB basics, see the [About page](../about). Also see the [EB Feature Demo](../featuredemo) app. 
 
-Use of the sample apps requires a basic understanding of Enterprise Browser and its `Config.xml` runtime configuration file. See the [Config Editor Utility guide](../ConfigEditor) for more information. To learn EB basics, see the [About page](../about). Also see the [EB Feature Demo](../featuredemo) app. 
+#### Notes
+* **The** `ebapi-modules.js` **file is required for Enterprise Browser 1.x APIs** to function on Android and Windows Mobile/CE devices. 
+* **APIs for EB 1.x are sometimes referred to as the "Common" APIs**.
+* **The** `elements.js` **file is required for Pocket Browser and RhoElements APIs** to function on Android devices. 
+* **The Adaptive Printer Driver (APD)** is supported on Android and Windows Mobile/CE devices.
+* **Printing an image requires a file called** `image.png` to be located on the device. 
+* **Printing images on a Windows Mobile/CE device** requires the sample code to be modified.
+* **See the [Accessing the Code section](#accessingthecode)** (below) for more information about placement of API module files. 
 
-**Notes**:
-
-- The Adaptive Printer Driver (APD) is supported on Android and Windows Mobile/CE devices.
-- Printing an image requires a file called `image.png` to be located on the device. 
-- Printing images on a Windows Mobile/CE device requires the sample code to be modified.
-- The `ebapi-modules.js` file is required for Enterprise Browser 1.x APIs to function on Android and Windows Mobile/CE devices. 
-- The `elements.js` file is required for Pocket Browser and RhoElements APIs to function on Android devices. 
-- See the [Accessing the Code section](#accessingthecode) (below) for more information about placement of API module files. 
-- APIs for EB 1.x are sometimes referred to as "Common" APIs.
+> `IMPORTANT:` **Apps are fully functional *only* when launched using Enterprise Browser**; their layouts can be viewed through this browser by clicking their nearby links. 
 
 -----
 

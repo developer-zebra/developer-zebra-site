@@ -5,22 +5,25 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-## Important Licensing Information
-> **<u>Enterprise Browser 3.0 and later supports term-based licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day Trial term also is available. A 30-day evaluation term comes preinstalled with every EB 3.0 download.<br> 
-• 30 days before the end of a term, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal. <br>
-• **Perpetual licenses remain in effect**.<br> 
-• **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**. <br>
-• **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.<br>
-• <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model**</u>.<br>
-• **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
-• **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.<br>
-• Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.<br>
-
------
-
 ## Overview 
 
 Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available for one-, three- and five-year terms, a 90-day trial period, or for perpetual usage. All license types permit an unlimited number of Enterprise Browser-based apps to run on each licensed device. This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license(s) to individual devices or as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased, as explained below. 
+
+-----
+
+### Important Licensing Information
+
+* **Enterprise Browser 3.0 and later supports term-based licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
+* **30 days before the end of a term**, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal.
+* **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
+* **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**.
+* **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.
+* **<u>Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model</u>**. <br>**Need help with license migration? See [License Migration FAQs](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/EB1-x-and-EB2-x-FAQ-transition-common-questions.html)**. <i class="fa fa-external-link" aria-hidden="true"></i>
+* **Only Android and Windows CE7 devices support cloud-based license deployment**.
+* **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
+* **Licensed apps running on EB 1.8** (and older) are unaffected; existing licenses remain valid.
+
+> Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.
 
 -----
 
@@ -38,29 +41,29 @@ Commercial deployment to devices requires an End-User License (**also known as a
 **NOTE**: Only Android and Windows CE7 devices support license deployment from a cloud-based server. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 
 #### Common Criteria
-Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, Zebra mobile and touch computers are prevented from access certain features, including the ability to read from or write to external storage. [Learn more](/cc). 
+Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, such **Zebra mobile and touch computers are blocked from use of external storage** and other features. [Learn more](/cc).
 
 -----
 
 ## I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
 
-**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
+**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)**<i class="fa fa-external-link" aria-hidden="true"></i> and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <i class="fa fa-external-link" aria-hidden="true"></i> 
 
 **&#50;. Alternatively, select one of the following Zebra resources**: 
 
-* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
-* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
-* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
-* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
-* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
+* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** form for submitting an inquiry via the web
+* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** explains the types of partners that engage with Zebra and some of their technologies and specialties
+* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** info for contacting Zebra's existing global partner network
+* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** broken down by global region
+* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** broken down by global region and country
 
 -----
 
 ## II. Access Licensing System
 After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the licensing company's representative containing user credentials for accessing the Zebra Enterprise Software Licensing system. 
 
-#### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to: 
+#### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i>, register and log into the portal to: 
 
 * **Order licenses**
 * **Check status** of existing orders
@@ -84,6 +87,9 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 * The same Activation ID (license key) can be used for EB 2.x or EB 3.x (For EB 3.0, a new `.apk` must be deployed).
 * Customers not under maintenance can purchase Zebra OneCare™ for their EB 2.x licenses and access EB 3.x software at no extra charge. 
 * Customers purchasing a maintenance agreement for their perpetual EB 2.x license get access to the EB 3.x perpetual license through the Zebra Software Library portal.
+
+#### Common Criteria
+Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, such **Zebra mobile and touch computers are blocked from use of external storage** and other features. [Learn more](/cc).
 
 -----
 
@@ -149,7 +155,7 @@ _Click image to enlarge; ESC to exit._
 ### Windows Mobile/CE Devices
 Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
 
-> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html); it's free. 
+> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) <i class="fa fa-external-link" aria-hidden="true"></i>, a free desktop tool for Windows. 
 
 #### To activate a license on a device running Windows Mobile/CE: 
 
@@ -236,10 +242,10 @@ Launch the shortcut to execute the command line argument and see the result.xml 
 ## Off-line Licensing
 License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
+> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** <i class="fa fa-external-link" aria-hidden="true"></i>. 
 
 ### BEFORE BEGINNING
-* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html).
+* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i>.
 * **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
 * Ensure target devices are connected to the Local Licensing Server.
 
@@ -290,7 +296,7 @@ _Click image to enlarge; ESC to exit._
 
 ## Mass Deployment 
 
-Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
+Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](https://techdocs.zebra.com/stagenow/latest/csp/license/).
 
 ##### `IMPORTANT NOTES:`
 * **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
@@ -351,7 +357,7 @@ Also see [related guides](#relatedguides).
 ## License Transfer
 Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is done by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 
-See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
+See the [License Manager section](https://techdocs.zebra.com/stagenow/latest/csp/license/) of Zebra's StageNow tool for details.
 
 -----
 
@@ -370,7 +376,7 @@ The following notes are derived from frequently asked questions about device lic
 * **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
 * **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
- * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
+ * StageNow and the [License Mgr CSP](https://techdocs.zebra.com/stagenow/latest/csp/license/)
  * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
 
 -----
@@ -378,8 +384,8 @@ The following notes are derived from frequently asked questions about device lic
 ## Related Guides
 
 * **[Zebra StageNow](/stagenow)** | A free Windows app for remote device-staging, licensing and mass deployment 
-* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Guide to a free Android app for manually licensing devices
-* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional user manuals, how-to videos and relevant links
+* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**<i class="fa fa-external-link" aria-hidden="true"></i> | Guide to a free Android app for manually licensing devices
+* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**<i class="fa fa-external-link" aria-hidden="true"></i> | Additional user manuals, how-to videos and relevant links
 * **[Enterprise Browser Setup Guide](../setup/)** | Help with initial setup, connecting to devices and pushing files
 
 -----

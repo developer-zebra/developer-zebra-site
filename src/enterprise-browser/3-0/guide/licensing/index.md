@@ -11,7 +11,7 @@ layout: guide.html
 • A 90-day evaluation term can be acquired through the licensing system. 
 • **A 30-day evaluation term now comes preinstalled with every EB 3.0 download**.<br> 
 • **Perpetual licenses remain in effect**.<br> 
-• **The Zebra PS20 includes Enterprise Browser 2.x preinstalled, and existing 2.x perpetual licenses remain in effect. 
+• **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**. 
 * **To use Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.<br>
 • <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model**</u>.<br>
 • **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
@@ -38,6 +38,9 @@ Commercial deployment to devices requires an End-User License (**also known as a
  &nbsp;&nbsp;&nbsp;**Linux or Windows server** (for off-line activation of any supported device)<br>
 
 **NOTE**: Only Android and Windows CE7 devices support license deployment from a cloud-based server. Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices must be licensed from an on-premise Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
+
+#### Common Criteria
+Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, Zebra mobile and touch computers are prevented from access certain features, including the ability to read from or write to external storage. [Learn more](/cc). 
 
 -----
 

@@ -11,8 +11,8 @@ layout: guide.html
 • A 90-day evaluation term can be acquired through the licensing system. 
 • **A 30-day evaluation term now comes preinstalled with every EB 3.0 download**.<br> 
 • **Perpetual licenses remain in effect**.<br> 
-• **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**. 
-* **To use Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.<br>
+• **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**. <br>
+• **Using Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.<br>
 • <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model**</u>.<br>
 • **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
 • **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.<br>

@@ -784,6 +784,7 @@ Defines the aiming mode to use.
 
 ###aimType
 
+
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description

@@ -58,7 +58,7 @@ Support for the following devices has been added:
 
 ### New/Updated APIs
 
-**[Device API](../../api/re2x/device) now supports sendKey events**.
+**[Device API](../../api/device/#sendkeykeycode) now supports sendKey events**.
 
 **NOTE**: The FlashMode "On" setting in the [Camera API](../../api/camera) is **NOT SUPPORTED** on devices running Android 10. 
 

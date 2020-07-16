@@ -13,17 +13,18 @@ Commercial deployment to devices requires an End-User License (**also known as a
 
 ### Important Licensing Information
 
-* **Enterprise Browser 3.0 and later supports term-based licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
-* **30 days before the end of a term**, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal.
+* **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
+* **30 days before the end of a non-evaluation term**, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal.
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
-* **The Zebra PS20** includes Enterprise Browser 2.x preinstalled, and existing **2.x perpetual licenses remain in effect**.
-* **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a Mobility DNA Enterprise license. To upgrade, EB 3.x must be downloaded and installed separately and a term license purchased and applied.
+* **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
+* **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license purchased and applied.
 * **<u>Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model</u>**. <br>**Need help with license migration? See [License Migration FAQs](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/EB1-x-and-EB2-x-FAQ-transition-common-questions.html)**. <i class="fa fa-external-link" aria-hidden="true"></i>
 * **Only Android and Windows CE7 devices support cloud-based license deployment**.
 * **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 * **Licensed apps running on EB 1.8** (and older) are unaffected; existing licenses remain valid.
 
 > Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.
+
 
 -----
 
@@ -48,7 +49,7 @@ Some Zebra devices are compatible with Common Criteria for IT Security Evaluatio
 ## I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
 
-**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)**<i class="fa fa-external-link" aria-hidden="true"></i> and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <i class="fa fa-external-link" aria-hidden="true"></i> 
+**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** <i class="fa fa-external-link" aria-hidden="true"></i> and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <i class="fa fa-external-link" aria-hidden="true"></i> 
 
 **&#50;. Alternatively, select one of the following Zebra resources**: 
 

@@ -9,11 +9,13 @@ productversion: '8.1'
 
 Previously, any application on the device could configure DataWedge parameters and receive information such as configurations and status notifications via DataWedge APIs. This led to a potential security risk where a malicious application can configure DataWedge profiles used by other applications and leverage it for its own advantage. For example, a malicious app could modify the destination URI of IP Output plugin to divert the data delivery to a different address.
 
-Now DataWedge provides an option for admins to secure access to DataWedge intent APIs, allowing only approved apps to configure DataWedge. DataWedge intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
+Now DataWedge provides an option for admins to secure access to DataWedge Intent APIs, allowing only approved apps to configure DataWedge. DataWedge Intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
+
+> MX version 10.1.1 or above is required on the device.
 
 ## Secure Access 
 
-The process to secure access to DataWedge intent APIs:
+Process to secure access to DataWedge intent APIs:
 1.	Whitelist approved app using [AccessMgr CSP](/mx/accessmgr) from MX.
 2.	Specify the intent API category to restrict intent API access via [DataWedgeMgr CSP](/mx/datawedgmgr) from MX.
 3.	Acquire the app token from AccessMgr using EMDK.
@@ -23,7 +25,7 @@ Details are provided in the sections that follow.
 
 ### 1. Whitelist Approved App 
 
-The first step to secure access to DataWedge intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)) to deploy the configuration to whitelist the app. Set the following parameters:
+The first step to secure access to DataWedge Intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)) to deploy the configuration to whitelist the app. Set the following parameters:
 
 * **Service Access Action**: "Allow caller" 
 * **Service Identifier**: com.symbol.datawedge.api
@@ -80,25 +82,27 @@ Administrators can designate which categories are protected using [DataWedgeMgr 
 
   <tr>
     <td>Configuration APIs</td>
-	<td>Get Config<br>Get Disabled app list<br>Get ignore disabled profiles<br>Get Profile list<br>Clone Profile<br>Create Profile<br>Delete Profile<br>Rename Profile<br>Set Ignore Disabled profiles<br>Set Disabled App list<br>Restore Config<br>Import Configuration<br>Export Configuration
+	<td>Get Config<br>Get Disabled App List<br>Get Ignore Disabled Profiles<br>Get Profile List<br>Clone Profile<br>Create Profile<br>Delete Profile<br>Rename Profile<br>Set Ignore Disabled Profiles<br>Set Disabled App list<br>Restore Config<br>Import Config
     </td>
   </tr>
 
   <tr>
     <td>Notification APIs</td>
-	<td>Profile Switching<br>Scanner Status<br>Configuration change<br></td>
+	<td>Profile Switching (from Register/Unregister for Notification)<br>Scanner Status (from Register/Unregister for Notification)<br>Configuration Change (from Register/Unregister for Notification)</td>
   </tr>
 
   <tr>
     <td>Query API</td>
-	<td>Enumerate Scanners<br>Get Active Profile<br>Get DataWedge Status<br>Get version info<br>Get Scanner Status</td>
+	<td>Enumerate Scanners<br>Get Active Profile<br>Get DataWedge Status<br>Get Version Info<br>Get Scanner Status<br>Get Profiles List<br>Get Ignore Disabled Profiles</td>
   </tr>
 
   <tr>
     <td>Runtime APIs</td>
-	<td>Enable/Disable DataWedge<br>Enable/Disable scanner<br>Switch Scanner Params<br>Switch SimulScan Params<br>Soft Scan Trigger<br>Soft RFID Trigger<br>Switch To Profile<br>Set Default Profile<br>Reset Default Profile<br>Switch Scanner</td>
+	<td>Enable/Disable DataWedge<br>Enable/Disable Scanner Input Plug-in<br>Switch Scanner Params<br>Switch SimulScan Params<br>Soft Scan Trigger<br>Soft RFID Trigger<br>Switch to Profile<br>Set Default Profile<br>Reset Default Profile<br>Switch Scanner<br>Set Reporting Options</td>
   </tr>
 </table>
+
+See [DataWedge APIs](../api).
 
 ### 3. Acquire a Token
 
@@ -399,14 +403,13 @@ Source code samples are provided for multiple APIs:
 
 ## Usage Notes
 
-* When DataWedge APIs are set as "Controlled" and when the device restarts, sending an Intent API to the "Controlled" group from a whitelisted application may return an error. Since MX framework did not complete initialization, allow some time to elapse after reboot before sending the intent to avoid this error. 
+* When DataWedge APIs are set as "Controlled" and when the device restarts, sending an intent API to the "Controlled" group from a whitelisted application may return an error. Since MX framework did not complete initialization, allow some time to elapse after reboot before sending the intent to avoid this error. 
 * The token expires in the following situations:
     * Device date or time is set prior to the timestamp on the token.
     * 24 Hours passed in the device clock after generating the token.
     * Automatic time updates caused the device time to go backward or move forward more than 24 hours.
-* If Runtime Intent APIs are placed into protected mode, the Scan button of Enterpise Keyboard does not work for versions below 3.9.x/4.0.
-* MX version 10.1.1 or above is required to be present on the device.
-
+* If intent APIs are placed in protected mode, existing Zebra apps that use DataWedge may not work as expected. E.g. If Runtime APIs are placed in protected mode, the scan button of the Enterprise Keyboard does not work on Enterprise Keyboard versions 4.0 or lower.
+* If DataWedge is blocked from accessing MX framework and DataWedge Intent APIs are in protected mode, all intent API calls to DataWedge fail. To use DataWedge Secure Intent APIs, do not to block DataWedge from accessing the MX framework.
 
 -----
 

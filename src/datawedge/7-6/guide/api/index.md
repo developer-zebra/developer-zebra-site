@@ -183,7 +183,8 @@ automenu:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./enumeratescanners">Enumerate Scanners</a>** - Generate an index of scanners available on the device.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./getscannerstatus">Get Scanner Status</a>** - Return the status of the scanner currently selected as the default.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./registerfornotification">Register/Unregister for Notification</a>** - Enable apps to register or unregister to receive notification of status changes related to configuration, scanner and profile switching.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./softscantrigger">Soft Scan Trigger</a>** - Start, stop of toggle a software scanning trigger. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./softscantrigger">Soft Scan Trigger</a>** - Start, stop or toggle a software scanning trigger. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./softrfidtrigger">Soft RFID Trigger</a>** - Start, stop or toggle a software RFID trigger. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchscanner">Switch Scanner</a>** - Switch to a specific scanner at runtime to enable an optimal scanning device for the app, requirement or situation. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchscannerparams">Switch Scanner Params</a>** - Temporarily update the settings of the active Profile during runtime by passing one or more barcode, scanner and/or reader parameters as intent extras.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchsimulscanparams">Switch Simulscan Params</a>** - Temporarily update the Simulscan settings in the active Profile at runtime.<br />

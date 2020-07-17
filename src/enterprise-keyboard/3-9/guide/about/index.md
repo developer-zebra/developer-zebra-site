@@ -59,7 +59,7 @@ _Click image to enlarge, ESC to exit_.
 
 ### Device Support
 
-* **Now supports Zenra devices running Android 10**
+* **Now supports Zebra devices running Android 10**
 * **Beginning with v3.9, EKB no longer supports devices running Android 7.x Nougat**. 
 * **Android Multi-user mode is no longer supported**. [More info](../setup/#multiusermode). 
 

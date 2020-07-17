@@ -23,9 +23,8 @@ Commercial deployment to devices requires an End-User License (**also known as a
 * **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 * **Licensed apps running on EB 1.8** (and older) are unaffected; existing licenses remain valid.
 
-> NOTE: The date formats in the License Manager app (MM/DD/YY) and EB user interface DD/MM/YY are different. 
-
-> Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.
+> Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.<br><br>
+> **NOTE: Date formats vary** between the **License Manager app (MM/DD/YY)** and **EB user interface (DD/MM/YYYY)**. 
 
 
 -----

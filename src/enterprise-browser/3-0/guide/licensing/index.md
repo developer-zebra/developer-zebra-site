@@ -14,7 +14,7 @@ Commercial deployment to devices requires an End-User License (**also known as a
 ### Important Licensing Information
 
 * **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
-* **30 days before the end of a non-evaluation term**, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal.
+* **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied.
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license purchased and applied.
@@ -22,6 +22,8 @@ Commercial deployment to devices requires an End-User License (**also known as a
 * **Only Android and Windows CE7 devices support cloud-based license deployment**.
 * **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 * **Licensed apps running on EB 1.8** (and older) are unaffected; existing licenses remain valid.
+
+> NOTE: The date formats in the License Manager app (MM/DD/YY) and EB user interface DD/MM/YY are different. 
 
 > Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.
 
@@ -80,7 +82,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
  * **3-year** term
  * **1-year** term
 
-**Note: 30 days before the end of a purchased term**, an “unlicensed software” reminder appears on devices every four hours. After expiration, the message appears every five minutes until renewal. A 30-day evaluation license is included with every EB download. 
+* **NOTE: An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied. A 30-day evaluation license is included with every EB download. 
 
 #### About Perpetual Licenses
 

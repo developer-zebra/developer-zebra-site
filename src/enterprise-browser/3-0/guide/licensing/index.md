@@ -246,7 +246,8 @@ License Manager provides a Local License Server option, enabling organizations t
 
 > **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** <i class="fa fa-external-link" aria-hidden="true"></i>. 
 
-### BEFORE BEGINNING
+### Before Beginning
+
 * **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i>.
 * **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
 * Ensure target devices are connected to the Local Licensing Server.
@@ -257,7 +258,8 @@ License Manager provides a Local License Server option, enabling organizations t
  * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
  * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.
 
-#### To License from a Local Server: 
+### From a Local Server 
+
 1. In the Licensing app, **select Local Server** from the License Source drop-down.<br> 
 A screen appears as below:
 <img alt="" style="height:350px" src="local_server.png"/>
@@ -276,7 +278,9 @@ _Click image to enlarge; ESC to exit._
  _Click image to enlarge; ESC to exit._
 <br>
 
-#### To License using Preactivated license keys: 
+-----
+
+### From Preactivated License Keys
 
 1. Push preactivated license keys (as `.BIN` files) to device(s). 
 2. In the Licensing app, **select Preactivated** from the License Source drop-down.<br> 

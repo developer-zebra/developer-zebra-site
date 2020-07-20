@@ -33,7 +33,12 @@ Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock A
 
 ### Custom Key Layouts
 
-EKB 3.2 (and later) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom layouts (see below) can be deployed to devices and **displayed programmatically using Android intents or DataWedge 7.4.44 (or later)** when specific input situations arise. 
+EKB 3.2 (and later) supports the use of custom key layouts created with [Enterprise Keyboard Designer](/ekd) (EKB Designer or EKD), a free GUI tool for Windows-based systems that provides control over fonts, images, key codes, layout transparency and many other layout properties. **As many as 20 custom layouts (see below) can be deployed to devices and displayed programmatically using Android intents or DataWedge** when specific input situations arise. 
+
+#### Support Notes
+
+* DataWedge 7.4.44 (or later) is required to use custom layouts.
+* **DataWedge configuration of custom key layouts is <u>not supported on TC21 and TC26</u>**. Please use [EKB intent APIs](../apis) to enable, set and show custom EKB layouts.
 
 <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 

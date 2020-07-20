@@ -38,7 +38,7 @@ EKB 3.2 (and later) supports the use of custom key layouts created with [Enterpr
 #### Support Notes
 
 * **DataWedge 7.4.44 (or later) is required** to use custom layouts.
-* **<u>On TC21 and TC26 devices</u> [EKB intent APIs](../apis) must be used** to enable, set and show custom EKB layouts. DataWedge is not supported for use with custom key layouts.
+* **<u>TC21 and TC26 devices</u>: DataWedge is not supported for use with custom key layouts.<br> Zebra recommends using [EKB intent APIs](../apis)** to enable, set and show custom EKB layouts on TC21 and TC26.
 
 <img alt="" style="height:350px" src="EDK_sample_layouts.png"/>
 

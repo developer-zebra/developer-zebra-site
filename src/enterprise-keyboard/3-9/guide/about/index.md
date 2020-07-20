@@ -51,7 +51,7 @@ This version of Enterprise Keyboard includes the following languages:
 > For more information about new EKB 3.9 features, please refer to the [Enterprise Keyboard Designer usage guide](http://techdocs.zebra.com/ekd/latest/guide/usage). 
 
 ### MDNA Enterprise License 
-**Beginning with EKB 3.9, an MDNA Enterprise license is required** to use Enterprise Keyboard on  Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing/process). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box, but is otherwise **fully functional**. 
+**Beginning with EKB 3.9, an MDNA Enterprise license is required** to use Enterprise Keyboard on Zebra Professional-series devices, including the TC21 and TC26. These devices arrive with a non-functional EKB “dummy” client, which must be replaced with the functional EKB v3.9 (or later) client after [purchasing a Zebra MDNA Enterprise license](/licensing/process). When unlicensed, EKB displays a “license required” prompt (see below) whenever app focus comes to a text input box, but is otherwise **fully functional**. 
 
 **Learn more [about MDNA licensing](/licensing)**.<!--  <i class="fa fa-external-link" aria-hidden="true"></i> -->
 

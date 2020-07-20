@@ -363,6 +363,11 @@ The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedg
 
 > **NOTE: On TC21/TC26 devices, DataWedge Profiles cannot be used to select or switch between custom layouts**. Zebra recommends using EKB intents instead. 
 
+#### Support Notes
+
+* **<u>TC21 and TC26 devices</u>: DataWedge is not supported for use with custom key layouts.<br> Zebra recommends using [EKB intent APIs](../apis)** to enable, set and show custom EKB layouts on TC21 and TC26.
+* Scanning from EKB is disabled if DataWedge APIs are protected. Learn more [about DataWedge Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/).
+
 <img alt="" style="height:350px" src="scan_tab.png"/>
 <br>
 

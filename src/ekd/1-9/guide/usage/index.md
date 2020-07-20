@@ -319,7 +319,7 @@ Button Actions supported by EKD include predefined command strings for generatin
  * **Switch-Scan -** Switches to the “scanning button" layout.
  * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout.
  * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up).
- * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/) for more information. **Supported only with Press Action**.
+ * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge EKB guide](https://techdocs.zebra.com/datawedge/latest/guide/utilities/ekb/). Disabled if [DataWedge APIs are protected](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/). **Supported only with Press Action**.
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See [all Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**

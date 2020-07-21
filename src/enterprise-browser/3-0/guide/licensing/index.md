@@ -13,8 +13,8 @@ Commercial deployment to devices requires an End-User License (**also known as a
 
 ### Important Licensing Information
 
-* **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
-* **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied.
+* **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day term comes preinstalled with every EB 3.0 download).
+* **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all terms. After expiration, the prompt appears every five minutes until an EB license is applied.
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license purchased and applied.
@@ -65,7 +65,7 @@ The first step in obtaining a license is to engage with Zebra or a Zebra reselle
 ## II. Access Licensing System
 After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the licensing company's representative containing user credentials for accessing the Zebra Enterprise Software Licensing system. 
 
-#### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i>, register and log into the portal to: 
+#### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to: 
 
 * **Order licenses**
 * **Check status** of existing orders
@@ -81,7 +81,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
  * **3-year** term
  * **1-year** term
 
-* **NOTE: An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied. A 30-day evaluation license is included with every EB download. 
+* **NOTE: An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all terms. After expiration, the prompt appears every five minutes until an EB license is applied. A 30-day term is included with every EB download. 
 
 #### About Perpetual Licenses
 
@@ -157,7 +157,7 @@ _Click image to enlarge; ESC to exit._
 ### Windows Mobile/CE Devices
 Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
 
-> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) <i class="fa fa-external-link" aria-hidden="true"></i>, a free desktop tool for Windows. 
+> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html), a free desktop tool for Windows. 
 
 #### To activate a license on a device running Windows Mobile/CE: 
 
@@ -244,11 +244,11 @@ Launch the shortcut to execute the command line argument and see the result.xml 
 ## Off-line Licensing
 License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** <i class="fa fa-external-link" aria-hidden="true"></i>. 
+> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
 
 ### Before Beginning
 
-* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i>.
+* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html) .
 * **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
 * Ensure target devices are connected to the Local Licensing Server.
 

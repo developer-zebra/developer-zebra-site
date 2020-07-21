@@ -18,12 +18,12 @@ Commercial deployment to devices requires an End-User License (**also known as a
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license purchased and applied.
-* **<u>Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model</u>**. <br>**Need help with license migration? See [License Migration FAQs](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/EB1-x-and-EB2-x-FAQ-transition-common-questions.html)**. <i class="fa fa-external-link" aria-hidden="true"></i>
+* **<u>Upgrading from EB 1.x to EB 2.0 (or higher) requires licenses on all devices to be converted to the new licensing model</u>**. <br>**Need help with license migration? See [License Migration FAQs](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/EB1-x-and-EB2-x-FAQ-transition-common-questions.html)**. 
 * **Only Android and Windows CE7 devices support cloud-based license deployment**.
 * **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
 * **Licensed apps running on EB 1.8** (and older) are unaffected; existing licenses remain valid.
 
-> Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) <i class="fa fa-external-link" aria-hidden="true"></i> for more information.<br><br>
+> Also see the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information.<br><br>
 > **NOTE: Date formats vary** between the **License Manager app (MM/DD/YY)** and **EB user interface (DD/MM/YYYY)**. 
 
 
@@ -50,15 +50,15 @@ Some Zebra devices are compatible with Common Criteria for IT Security Evaluatio
 ## I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
 
-**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** <i class="fa fa-external-link" aria-hidden="true"></i> and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. <i class="fa fa-external-link" aria-hidden="true"></i> 
+**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)**  and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
 
 **&#50;. Alternatively, select one of the following Zebra resources**: 
 
-* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** form for submitting an inquiry via the web
-* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** explains the types of partners that engage with Zebra and some of their technologies and specialties
-* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** info for contacting Zebra's existing global partner network
-* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** broken down by global region
-* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) <i class="fa fa-external-link" aria-hidden="true"></i> -** broken down by global region and country
+* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
+* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
+* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
+* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
+* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 
 -----
 
@@ -390,8 +390,8 @@ The following notes are derived from frequently asked questions about device lic
 ## Related Guides
 
 * **[Zebra StageNow](/stagenow)** | A free Windows app for remote device-staging, licensing and mass deployment 
-* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**<i class="fa fa-external-link" aria-hidden="true"></i> | Guide to a free Android app for manually licensing devices
-* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**<i class="fa fa-external-link" aria-hidden="true"></i> | Additional user manuals, how-to videos and relevant links
+* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Guide to a free Android app for manually licensing devices
+* **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**| Additional user manuals, how-to videos and relevant links
 * **[Enterprise Browser Setup Guide](../setup/)** | Help with initial setup, connecting to devices and pushing files
 
 -----

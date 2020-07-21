@@ -40,7 +40,7 @@ Support for the following devices has been added:
 * **Zebra devices running Android 10**
 * **Zebra PS20 running Android 9.x Pie and Android 10** 
 
-**See the [full list of supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)**. <i class="fa fa-external-link" aria-hidden="true"></i>
+**See the [full list of supported devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)**.
 
 ----- 
 

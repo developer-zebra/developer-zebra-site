@@ -7,6 +7,17 @@ productversion: '3.0'
 
 ## Download
 
+> **Zebra recommends using the latest release** whenever possible. 
+
+#### To Download Enterprise Browser:
+
+2 **Visit the [Zebra Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** and select the desired download(s). 
+
+1. Then **proceed to the [Enterprise Browser Setup page](/enterprise-browser/3-0/guide/setup)** for installation instructions. 
+
+
+<!-- 7/21/20- Licensing-portal download no longer applies.  
+
 **NOTICE**: <br> 
 **Enterprise Browser 2.0 (and later) is now available only through the [Zebra Licensing Server (portal)](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**.
 
@@ -33,3 +44,4 @@ _Click to enlarge_.
 <br>
 6. **Proceed to the [EB setup guide](../guide/setup)** to deploy Enterprise Browser to devices. 
 
+ -->

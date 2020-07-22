@@ -4,6 +4,7 @@ title: Query APIs
 type: parm
 order: 6
 mx: "10.1"
+presentif: The Controlling APIs checkbox is "checked"
 info: Supported only on devices with DataWedge 8.1 or later.
 devicetype: A
 parm:

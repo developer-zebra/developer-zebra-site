@@ -37,22 +37,29 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ### Device Support
 
-OLD OLD
-
-* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
+* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
 
 ### New Features
 
-OLD OLD
+**Supports MX 10.1**, adding the following features and enhancements: 
 
-* **Supports MX 10.1**, adding the following features and enhancements: 
- * **Enable/Disable “YES” button** available for selection by a device user on the "Secure Start-up" dialog box after changing the device lock-screen password, PIN or swipe pattern in devadminStep configuration. If "YES" is pressed, the same password, PIN or pattern that protects access to the Android Launcher app also would be applied to protect the device start-up process, preventing the device from booting if restarted.
- * **Support for A/B streaming** of OsUpdate Actions in fotaStep configuration.
- * **Support for Permission Access Configuration** for an application in permissionAccessStep configuration.
- * **Support for CSP Function Group Action** in serviceAccessStep configuration. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps.
- * **Support for Dual-SIM Dual Standby** feature in wwanStep configuration, which automatically selects which SIM card to use for cellular service based on preferences set in the Call, Data, Message and SIM subscription parameters.
-* **Now displays SUCCESS/FAILURE results** of Managed Configuration Actions.
-* **Logging information sent to Google feedback channel** is also now stored in logcat for off-line access. 
+* **Control device screen orientation**: 
+ * Auto-rotation (on or off)  
+* **Control battery settings**: 
+ * State of battery saver mode (on or off) 
+ * Set battery percentage to automatically turn on Battery Saver Mode 
+* **Redirect Zebra debug logs to server**: 
+ * Start, stop and configure RxLogger  
+ * Capture snapshot of data collected by RxLogger, store in a predefined location 
+ * Specify FTP/FTPs server URI to upload Rxlogger captured snapshot  
+* **Audit Logging**: 
+ * Enable secure logging via EMM or Device Policy Controller “TestDPC​” app 
+ * Configure OEMConfig blackList or serviceAction managed configuration​ 
+ * Perform secure logging for blackList or serviceAction managed configurations​ 
+ * Use EMM/TestDPC to retrieve security logs​ 
+* **SimulScan support in DataWedgeStep configuration** 
+* **Multi-language support in EKB Step configuration** 
+
 
 `IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.1** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 

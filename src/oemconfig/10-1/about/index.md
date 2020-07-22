@@ -44,21 +44,22 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 **Supports MX 10.1**, adding the following features and enhancements: 
 
 * **Control device screen orientation**: 
- * Auto-rotation (on or off)  
+ * Auto-rotation (on/off)  
 * **Control battery settings**: 
- * State of battery saver mode (on or off) 
+ * State of battery saver mode (on/off) 
  * Set battery percentage to automatically turn on Battery Saver Mode 
-* **Redirect Zebra debug logs to server**: 
+* **Control Zebra RxLogger debugging tool**: 
  * Start, stop and configure RxLogger  
  * Capture snapshot of data collected by RxLogger, store in a predefined location 
+ * Redirect RxLogger debug logs to server
  * Specify FTP/FTPs server URI to upload Rxlogger captured snapshot  
 * **Audit Logging**: 
  * Enable secure logging via EMM or Device Policy Controller “TestDPC​” app 
  * Configure OEMConfig blackList or serviceAction managed configuration​ 
  * Perform secure logging for blackList or serviceAction managed configurations​ 
  * Use EMM/TestDPC to retrieve security logs​ 
-* **SimulScan support in DataWedgeStep configuration** 
-* **Multi-language support in EKB Step configuration** 
+* **Supports SimulScan in DataWedgeStep configuration** 
+* **Support for multiple languages in EKB Step configuration** 
 
 
 `IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.1** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)

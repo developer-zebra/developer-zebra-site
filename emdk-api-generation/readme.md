@@ -7,7 +7,7 @@
 2. In the main pane, look for something similar to "tut_emdka_build" and open the latest.
 3. 9/25/18- THIS PROCESS IS SUBJECT TO CHANGE-- Download the latest `sdk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
 4. Open the .zip file and navigate to /addon-symbol_emdk-symbol-XX/docs/reference (where "XX" is the highest number if multiple choices exist).  -->
-5. Copy the `/reference` folder to your local <u>BUILD</u> FOLDER `/build/emdk-for-android/x-x/api/` folder (where x-x = the version number, i.e. 6-8). **DO NOT COPY TO `/src` folder!** 
+5. Copy the `/reference` folder to your local <u>BUILD</u> FOLDER `/build/emdk-for-android/x-x/api/` folder (where x-x = the version number, i.e. 6-8). **`DO NOT COPY TO `/src` folder!`** 
 6. Copy the `stylesheet.css` file from a prior version into the `/api/reference` folder, overwriting the existing `stylesheet.css` file copied from the zip. 
 7. View the local version of the APIs and confirm the style and that new feature(s) are present (see release notes for new API features).
 8. Copy the local version to the staging-server repo (zebra-stage.github.io).

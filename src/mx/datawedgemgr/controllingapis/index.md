@@ -1,0 +1,26 @@
+---
+csp: datawedgemgr
+title: Secure APIs (checkbox)
+type: parm
+order: 3
+mx: "10.1"
+devicetype: A
+parm:
+  presentif: The CSP Access Action is "Unprotect"
+  pivotal: No
+  name: ControllingAPIs
+  type: list
+  list:
+    - code: 0
+      mx: "10.1"
+      devicetype: A
+      name: (unchecked)
+      description: Allows all apps to access all DataWedge intent APIs. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.1"
+      description: Prevents unapproved apps from accessing DataWedge intent APIs. 
+---
+
+Controls whether DataWedge intent APIs are accessible by apps. Selecting this option limits API access by all apps or those included on the "whitelist" as configured in [AccessMgr](../../../../mx/accessmgr). 

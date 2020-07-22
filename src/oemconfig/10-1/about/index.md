@@ -52,7 +52,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * Start, stop and configure RxLogger  
  * Capture snapshot of data collected by RxLogger, store in a predefined location 
  * Redirect RxLogger debug logs to server
- * Specify FTP/FTPs server URI to upload Rxlogger captured snapshot  
+ * Specify FTP/FTPs server URI to upload captured RxLogger snapshot  
 * **Audit Logging**: 
  * Enable secure logging via EMM or Device Policy Controller “TestDPC​” app 
  * Configure OEMConfig blackList or serviceAction managed configuration​ 

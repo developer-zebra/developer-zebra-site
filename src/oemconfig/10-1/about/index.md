@@ -31,15 +31,46 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 -----
 
-## What's New in v10.0
+## What's New in v10.1
 
 `IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig schema for version 10.0 includes default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
 ### Device Support
 
+OLD OLD
+
 * **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
 
 ### New Features
+
+OLD OLD
+
+* **Supports MX 10.1**, adding the following features and enhancements: 
+ * **Enable/Disable “YES” button** available for selection by a device user on the "Secure Start-up" dialog box after changing the device lock-screen password, PIN or swipe pattern in devadminStep configuration. If "YES" is pressed, the same password, PIN or pattern that protects access to the Android Launcher app also would be applied to protect the device start-up process, preventing the device from booting if restarted.
+ * **Support for A/B streaming** of OsUpdate Actions in fotaStep configuration.
+ * **Support for Permission Access Configuration** for an application in permissionAccessStep configuration.
+ * **Support for CSP Function Group Action** in serviceAccessStep configuration. A Function Group is a set of functions that an administrator can designate as "sensitive" and worthy of protection from unauthorized use by apps.
+ * **Support for Dual-SIM Dual Standby** feature in wwanStep configuration, which automatically selects which SIM card to use for cellular service based on preferences set in the Call, Data, Message and SIM subscription parameters.
+* **Now displays SUCCESS/FAILURE results** of Managed Configuration Actions.
+* **Logging information sent to Google feedback channel** is also now stored in logcat for off-line access. 
+
+`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.1** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+
+**For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
+
+-----
+
+## Version History
+
+### Added in v10.0
+
+`IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig schema for version 10.0 includes default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
+
+#### Device Support
+
+* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.0**.
+
+#### New Features
 
 * **Supports MX 10.0**, adding the following features and enhancements: 
  * **Enable/Disable “YES” button** available for selection by a device user on the "Secure Start-up" dialog box after changing the device lock-screen password, PIN or swipe pattern in devadminStep configuration. If "YES" is pressed, the same password, PIN or pattern that protects access to the Android Launcher app also would be applied to protect the device start-up process, preventing the device from booting if restarted.
@@ -55,8 +86,6 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 **For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
 
 -----
-
-## Version History
 
 ### Added in v9.3
 

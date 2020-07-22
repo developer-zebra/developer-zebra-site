@@ -6,15 +6,15 @@ productversion: '10.1'
 menu:
   items:
     - title: About
-      url: /oemconfig/10-0/about
+      url: /oemconfig/10-1/about
     - title: Setup
-      url: /oemconfig/10-0/setup
+      url: /oemconfig/10-1/setup
     - title: FAQs
-      url: /oemconfig/10-0/faq
+      url: /oemconfig/10-1/faq
     - title: Managed Configurations
-      url: /oemconfig/10-0/mc
+      url: /oemconfig/10-1/mc
     - icon: fa fa-search
-      url: /oemconfig/10-0/search
+      url: /oemconfig/10-1/search
 ---
 <b><font size="6" color="black"> Terms in this Guide</font></b>
 

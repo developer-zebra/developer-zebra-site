@@ -17,5 +17,7 @@ The DataWedge Manager (DataWedgeMgr) enables control of the Zebra DataWedge data
  * Importing of configuration files through intents
  * Settings changes by the device user 
  * Importing of SimulScan templates
+ * Access to intent APIs by all or whitelisted apps
+ * Access to specific types of intent API (config, query, notification, runtime) 
 
 -----

@@ -2,7 +2,7 @@
 csp: datawedgemgr
 title: SimulScan Template Action
 type: parm
-order: 10
+order: 25
 mx: "10.0"
 info: Supported only on devices with DataWedge 8.0 or later.
 devicetype: A

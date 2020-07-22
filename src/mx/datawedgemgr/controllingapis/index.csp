@@ -4,6 +4,7 @@ title: Secure APIs (checkbox)
 type: parm
 order: 3
 mx: "10.1"
+info: Supported only on devices with DataWedge 8.1 or later.
 devicetype: A
 parm:
   presentif: The CSP Access Action is "Unprotect"
@@ -23,4 +24,4 @@ parm:
       description: Prevents unapproved apps from accessing DataWedge intent APIs. 
 ---
 
-Controls whether DataWedge intent APIs are accessible by apps. Selecting this option limits API access by all apps or those included on the "whitelist" as configured in [AccessMgr](../../../../mx/accessmgr). 
+Controls whether DataWedge intent APIs are accessible by apps. Selecting this option limits API access by all apps or those included in the device's "whitelist" as configured in [AccessMgr](../../../../mx/accessmgr).

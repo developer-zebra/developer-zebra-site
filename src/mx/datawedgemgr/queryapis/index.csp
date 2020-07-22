@@ -1,0 +1,31 @@
+---
+csp: datawedgemgr
+title: Query APIs
+type: parm
+order: 6
+mx: "10.1"
+info: Supported only on devices with DataWedge 8.1 or later.
+devicetype: A
+parm:
+  pivotal: No
+  name: QueryAPIs
+  type: list
+  list:
+    - code: 86
+      mx: "10.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Uncontrolled
+      mx: "10.1"
+      description: Allows use of 'query' APIs by all apps. 
+    - code: 0
+      devicetype: A
+      name: Controlled
+      mx: "10.1"
+      description: Allows use of 'query' APIs only by apps in the whitelist.   
+---
+
+Controls access to intent APIs relating to DataWedge queries on the device such as those for displaying scanner information and the DataWedge version. 

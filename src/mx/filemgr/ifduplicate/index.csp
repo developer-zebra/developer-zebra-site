@@ -1,0 +1,30 @@
+---
+csp: filemgr
+title: Duplicate File Handling
+type: parm
+order: 5
+mx: "10.1"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: IfDuplicate
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Replace the file in the destination
+      mx: "10.1"
+      description: Overwrites the duplicate file, replacing it with the file being moved.
+    - code: 2
+      devicetype: A
+      name: Skip the file and remove from the source
+      mx: "10.1"
+      description: Leaves the duplicate file unchanged and erases the source file. 
+    - code: 3
+      devicetype: A
+      name: Skip the file and keep it at the source
+      mx: "10.1"
+      description: Leaves the duplicate and the source files unchanged.
+---
+
+Used to control File Manager behavior when a duplicate file name is encountered at the destination.

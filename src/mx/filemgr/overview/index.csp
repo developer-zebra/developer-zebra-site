@@ -20,3 +20,5 @@ The File Manager (FileMgr) allows an application to manage files on the device. 
 * Download and process ".archive" files generated with StageNow using HTTP or HTTPs
 * Retry and/or resume operations after Wi-Fi or mobile network disconnects
 * Wait for a connection to be available before initiating a download
+* Control behavior if duplicate files are encountered when copying or moving
+* Select the sort order when multiple files being copied or moved 

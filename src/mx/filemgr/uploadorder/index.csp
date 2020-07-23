@@ -1,0 +1,31 @@
+---
+csp: filemgr
+title: Upload Order
+type: parm
+order: 5
+mx: "10.1"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: UploadOrder
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Newest files first
+      mx: "10.1"
+      description: Moves/copies files by date from newest to oldest. 
+    - code: 2
+      devicetype: A
+      name: Oldest files first
+      mx: "10.1"
+      description: Moves/copies files by date from oldest to newest. 
+    - code: 3
+      devicetype: A
+      name: Sorted by filename
+      mx: "10.1"
+      description: Moves/copies files in ascending alphabetical order (from A to Z).
+---
+
+Used to select the sort order when multiple files are copied or moved.
+

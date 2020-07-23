@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Add Package Signature(s)
 type: parm
-order: 10
+order: 35
 devicetype: A
 parm:
   presentif: The Application verification signing mode is "Do not verify app signature" or "Verify user app signature" AND Add Packages is "Add Specified Package(s)"

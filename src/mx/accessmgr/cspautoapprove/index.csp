@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Auto-approve CSP (checkbox)
 type: parm
-order: 20
+order: 105
 mx: "9.2"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Add Package Name(s) and Allow XML
 type: parm
-order: 12
+order: 75
 mx: "4.2"
 osx: "4.1"
 devicetype: A

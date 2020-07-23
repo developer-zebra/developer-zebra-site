@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Delete Package Name(s)
 type: parm
-order: 6
+order: 10
 devicetype: A
 parm:
   presentif: The Operation Mode is "Single User With Whitelist" AND Delete Packages is "Delete specified Packages(s)"

@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Add Package Signature(s) and Allow XML
 type: parm
-order: 13
+order: 80
 devicetype: A
 parm:
   presentif: The Operation Mode is "Single User With Whitelist" AND Add Packages and Allow to Submit XML is "Allow specified application(s)" AND Application Verification Signing Mode is "Do not verify app signature," "Verify user app signature," or "Verify all apps signature"

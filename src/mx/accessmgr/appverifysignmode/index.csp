@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Application Verification Signing Mode
 type: parm
-order: 4
+order: 30
 mx: "4.3"
 osx: "3.5"
 devicetype: A

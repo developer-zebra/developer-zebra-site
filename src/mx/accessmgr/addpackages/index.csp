@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Add Packages
 type: parm
-order: 8
+order: 20
 mx: "4.1"
 osx: "1.0"
 devicetype: A

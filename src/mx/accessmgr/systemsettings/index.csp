@@ -2,7 +2,7 @@
 csp: accessmgr
 title: System Settings Access
 type: parm
-order: 3
+order: 25
 mx: "4.1"
 osx: "3.5"
 devicetype: A,B

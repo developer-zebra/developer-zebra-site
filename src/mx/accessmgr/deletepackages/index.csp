@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: Delete Packages
+title: Delete Package Actions
 type: parm
-order: 5
+order: 40
 mx: "4.1"
 osx: "1.0"
 devicetype: A

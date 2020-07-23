@@ -2,7 +2,7 @@
 csp: accessmgr
 title: Delete Package Signature(s)
 type: parm
-order: 7
+order: 45
 devicetype: A
 parm:
   presentif: Delete Packages is "Delete specified Signature(s)" AND the Application Verification Signing Mode is "Do not verify app signature," "Verify user app signature," or "Verify all apps signature"

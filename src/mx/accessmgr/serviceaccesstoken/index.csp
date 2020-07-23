@@ -1,0 +1,19 @@
+---
+csp: accessmgr
+title: Service Access Token
+type: parm
+order: 6
+devicetype: A
+parm:
+  presentif: The Service Access Action is "Verify Caller Token"
+  pivotal: Yes
+  name: ServiceIdentifier
+  type: string
+mx: "10.1"
+---
+
+Used to enter the name of the caller token to be verified. 
+
+**Parm value input rules**: 
+
+* String with a minimum of 1 character

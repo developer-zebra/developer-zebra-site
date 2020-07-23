@@ -7,11 +7,15 @@ productversion: '8.1'
 
 ## Overview
 
-Previously, any application on the device could configure DataWedge parameters and receive information such as configurations and status notifications via DataWedge APIs. This led to a potential security risk where a malicious application can configure DataWedge profiles used by other applications and leverage it for its own advantage. For example, a malicious app could modify the destination URI of IP Output plugin to divert the data delivery to a different address.
+DataWedge provides an option for admins to secure access to DataWedge intent APIs, allowing only approved apps to configure DataWedge. DataWedge intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
 
-Now DataWedge provides an option for admins to secure access to DataWedge Intent APIs, allowing only approved apps to configure DataWedge. DataWedge Intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
+Previously, any application on the device could configure DataWedge parameters and receive information such as configurations and status notifications via DataWedge APIs. This led to a potential security risk where a malicious application can configure DataWedge profiles used by other applications and leverage it for its own advantage, for example a malicious app could modify the destination URI of IP Output plugin to divert data delivery to a different address.
 
 > MX version 10.1.1 or above is required on the device.
+
+Video demonstration about securing access to DataWedge intent APIs:
+<video controls="" width="430" height="290"> <source src="./dw-secure-intent.mp4" type="video/mp4"> </video>
+_Video about securing access to DataWedge intent APIs_
 
 ## Secure Access 
 

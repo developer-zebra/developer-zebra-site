@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: Out-of-Service Counter
+title: Out-of-Service Timer
 type: parm
 order: 60
 mx: "10.0"
@@ -11,13 +11,12 @@ parm:
   presentif: DSDS Auto-service is set to "Enable"
   pivotal: No
   name: OutOfServiceTimer
-  type: string
+  type: integer
 ---
 
 Used to enter the amount of time (in seconds) the device will wait during an "Out of Service" condition of the "preferred" SIM subscription before automatically switching to the alternate SIM. **Maximum = 3600 (1 hr.)**. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;255 characters 
 * Accepts positive integer values from 1&ndash;3600
 

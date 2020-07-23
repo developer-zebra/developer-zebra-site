@@ -20,15 +20,15 @@ parm:
       osx: "1.0"
       devicetype: A
       name: Single User without Whitelist
-      description: Turns off Whitelisting and all associated functionality.
+      description: Turns off whitelisting and all associated functionality.
     - code: 2
       mx: "4.1"
       osx: "1.0"
       devicetype: A
       name: Single User with Whitelist
-      description: Turns on Whitelisting and associated functionality.
+      description: Turns on whitelisting and associated functionality.
 ---
 
 This is the On/Off switch for Whitelisting, which restricts the apps that a device user can install and/or launch. **Whitelisting is Off by default**, imposing no restrictions. Whitelisting provides device security by preventing the installation and/or use of unauthorized apps, and by complicating the process of app deployment.
 
->**`IMPORTANT:` **Access manager controls *<u>access</u>* to apps; *it <u>does not install</u> or <u>uninstall</u>* apps**. Activating whitelist restrictions after an app is installed or removing an app from an existing whitelist blocks access to that app, it does not uninstall it. Such apps remain on the device and become accessible if whitelisting restrictions are removed.  
+>**`IMPORTANT:` **Access Manager controls *<u>access</u>* to apps; *it <u>does not install</u> or <u>uninstall</u>* apps**. Activating whitelist restrictions after an app is installed or removing an app from an existing whitelist blocks access to that app, it does not uninstall it. Such apps remain on the device and become accessible if whitelisting restrictions are removed.  

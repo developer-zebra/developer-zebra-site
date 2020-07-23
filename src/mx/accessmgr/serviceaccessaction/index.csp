@@ -45,6 +45,16 @@ parm:
       name: VerifyCaller
       description: Confirms that the specified app(s) is permitted to call a specified service.
       mx: "8.3"
+    - code: 7
+      devicetype: A
+      name: AquireToken
+      description: Acquires a token for permission to call a specified service.
+      mx: "10.1"
+    - code: 8
+      devicetype: A
+      name: VerifyCallerToken
+      description: Confirms that a token allows calls to a specified service.
+      mx: "10.1"
 ---
 
 Used to control which "installable" (non-System) applications can call controllable services running on the device. This allows an administrator to manage access to the services present in a device and the ability of apps to bind to and leverage callable services. This can be used, for example, to prevent access to services relating to sensitive functionality, or to prevent use of such services when they are not explicitly required for a particular usage scenario or app.

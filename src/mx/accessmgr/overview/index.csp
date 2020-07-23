@@ -12,7 +12,7 @@ A key feature of AccessMgr is the ability to enable and disable "whitelisting," 
 
 **Whitelisting applies only to user applications**; it has no effect on System applications, which come preinstalled on the device. To control aspects of System applications, see [AppMgr](/mx/appmgr). Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed. AccessMgr also provides the option to control whether the device user can access a full or reduced version of the Android Settings panel.
 
->**`IMPORTANT:`** If an app uses AccessMgr to enable whitelisting, the app itself becomes subject to whitelisting and is prevented from running if it fails to add itself to the whitelist. Also, if such an app does not explicitly allow itself to submit XML, it would be unable to alter that configuration, once successfully applied. 
+>**`IMPORTANT:`** If an app uses AccessMgr to enable whitelisting, the app itself becomes subject to whitelisting and is prevented from running if it fails to add itself to the whitelist. Also, if such an app does not explicitly allow itself to submit XML, it would be unable to alter that configuration, once successfully applied. <br><br> **Access manager controls *<u>access</u>* to apps; it does NOT *install* or *uninstall* apps**. Activating whitelist restrictions after an app is installed or removing an app from an existing whitelist blocks access to that app, it does not uninstall it. Such apps remain on the device and become accessible if whitelisting restrictions are removed.  
 
 ### Signature Files
 
@@ -54,6 +54,7 @@ To understand how to obtain an app signature, please see the [SigTools sample ap
 * Create, delete, protect and verify Function Groups
 * Designate CSPs on a device as "Protected" from access by apps
 * Approve apps for accessing CSPs designated as Protected
+* Acquire and verify a token for accessing a service
 
 -----
 

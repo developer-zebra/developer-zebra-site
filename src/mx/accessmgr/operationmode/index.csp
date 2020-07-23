@@ -31,4 +31,4 @@ parm:
 
 This is the On/Off switch for Whitelisting, which restricts the apps that a device user can install and/or launch. **Whitelisting is Off by default**, imposing no restrictions. Whitelisting provides device security by preventing the installation and/or use of unauthorized apps, and by complicating the process of app deployment.
 
->**`IMPORTANT:` **Access Manager controls *<u>access</u>* to apps; *it <u>does not install</u> or <u>uninstall</u>* apps**. Activating whitelist restrictions after an app is installed or removing an app from an existing whitelist blocks access to that app, it does not uninstall it. Such apps remain on the device and become accessible if whitelisting restrictions are removed.  
+>**`IMPORTANT:` Access Manager controls *<u>access</u>* to apps; it <u>does not install</u> or <u>uninstall</u>* apps**. Activating whitelist restrictions after an app is installed or removing an app from an existing whitelist blocks access to that app, it does not uninstall it. Such apps remain on the device and become accessible if whitelisting restrictions are removed.  

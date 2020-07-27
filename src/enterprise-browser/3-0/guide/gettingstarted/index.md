@@ -6,7 +6,7 @@ content-items:
   - type: section
     level: 4
     title: Download
-    text: Contains instructions and link for downloading Enterprise Browser.  
+    text: Instructions and link for downloading Enterprise Browser.  
     url: ../../download
   - type: section
     level: 4
@@ -16,12 +16,12 @@ content-items:
   - type: section
     level: 4
     title: Licensing
-    text: Obtaining the Enterprise Browser license required for each device being deployed.
+    text: How to obtain Enterprise Browser license(s) required for each device being deployed.
     url: ../licensing
   - type: section
     level: 4
     title: Using The APIs
-    text: Accessing device capabilities exposed through Enterprise Browser APIs. 
+    text: How to use JavaScript in your app to access device capabilities exposed through Enterprise Browser APIs. 
     url: ../apioverview
   - type: section
     level: 4
@@ -30,18 +30,18 @@ content-items:
     url: ../../tutorial/helloeb
   - type: section
     level: 4
-    title: Sample Apps
-    text: Fully functional apps demonstrate the most common APIs and can be modified as needed.
-    url: ../samples
-  - type: section
-    level: 4
     title: Feature Demo
     text: Showcases the key capabilities of Zebra devices available through Enterprise Browser.
     url: ../featuredemo
   - type: section
     level: 4
+    title: Sample Apps
+    text: A list of fully functional apps that demonstrate the most common APIs; they can be modified as needed for an organization.
+    url: ../samples
+  - type: section
+    level: 4
     title: Starting an Application
-    text: Explains Config.xml, which contains the Enterprise Browser runtime settings required for any EB app to run.
+    text: Explains the Config.xml file, which contains the Enterprise Browser runtime settings required for any EB app to run as desired.
     url: ../launching
   - type: section
     level: 4
@@ -51,7 +51,7 @@ content-items:
   - type: section
     level: 4
     title: Optimization
-    text: How to optimize the footprint and runtime performance of an Enterprise Browser app.  
+    text: Suggestions for optimizing the footprint and runtime performance of an Enterprise Browser app.  
     url: ../optimization
 product: Enterprise Browser
 productversion: '3.0'

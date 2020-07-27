@@ -13,8 +13,8 @@ Commercial deployment to devices requires an End-User License (**also known as a
 
 ### Important Licensing Information
 
-* **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day term comes preinstalled with every EB 3.0 download).
-* **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all terms. After expiration, the prompt appears every five minutes until an EB license is applied.
+* **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
+* **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied.
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license purchased and applied.
@@ -81,7 +81,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
  * **3-year** term
  * **1-year** term
 
-* **NOTE: An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all terms. After expiration, the prompt appears every five minutes until an EB license is applied. A 30-day term is included with every EB download. 
+* **NOTE: An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied. A 30-day term is included with every EB download. 
 
 #### About Perpetual Licenses
 

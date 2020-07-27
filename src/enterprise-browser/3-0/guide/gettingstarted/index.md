@@ -5,8 +5,13 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
+    title: Download
+    text: Brief instructions and link for downloading Enterprise Browser.  
+    url: ../../download
+  - type: section
+    level: 4
     title: Installation
-    text: Installing Enterprise Browser on a computer and Zebra device, and configure them for making apps.  
+    text: Detailed instructions for installing Enterprise Browser on a Mac or Windows computer and how to prep them for making apps.  
     url: ../setup
   - type: section
     level: 4

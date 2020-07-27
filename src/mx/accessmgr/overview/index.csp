@@ -54,7 +54,7 @@ To understand how to obtain an app signature, please see the [SigTools sample ap
 * Create, delete, protect and verify Function Groups
 * Designate CSPs on a device as "Protected" from access by apps
 * Approve apps for accessing CSPs designated as Protected
-* Acquire and verify a token for accessing a service
+* Acquire and verify a token for accessing a Protected service
 
 -----
 

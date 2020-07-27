@@ -24,7 +24,7 @@ parm:
       devicetype: A
       name: Skip the file and keep it at the source
       mx: "10.1"
-      description: Leaves the duplicate and the source files unchanged.
+      description: Leaves duplicate and source files unchanged.
 ---
 
 Used to control File Manager behavior when a duplicate file name is encountered at the destination.

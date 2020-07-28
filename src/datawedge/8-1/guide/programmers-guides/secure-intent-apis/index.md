@@ -14,8 +14,7 @@ Previously, any application on the device could configure DataWedge parameters a
 > MX version 10.1.1 or above is required on the device.
 
 Video demonstration about securing access to DataWedge intent APIs:
-<video controls="" width="430" height="290"> <source src="./dw-secure-intent.mp4" type="video/mp4"> </video>
-_Video about securing access to DataWedge intent APIs_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y7smCqmYB7E" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Secure Access 
 

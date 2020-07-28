@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-## `Important Licensing Information`
+### Important Licensing Information
 > **Beginning with Enterprise Browser 2.0**, the license deployment process has changed:<br>
 • <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires that all licenses be converted to the new model**</u>.<br>
 • **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
@@ -252,7 +252,7 @@ _Click image to enlarge; ESC to exit._
 
 ### From Preactivated License Keys
 
-`IMPORTANT RESTRICTIONS:`
+#### `IMPORTANT RESTRICTIONS:`
 * **Preactivated licenses are valid only on the day they are generated**.
 * If multiple preactivated licenses are generated, **they must be applied in the same order as generated**.
 * Preactivated licenses must be applied before all other license actions.
@@ -284,7 +284,7 @@ _Click image to enlarge; ESC to exit._
 
 Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
 
-##### `IMPORTANT NOTES:`
+#### `IMPORTANT NOTES:`
 * **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
 * **To set license keys to remain on the device following an Enterprise Reset**, keys MUST be stored in the `/enterprise/usr` folder on the device and <u>in a single Profile</u> activated using License Manager and preserved using [Persist Manager](/mx/persistmgr).
 

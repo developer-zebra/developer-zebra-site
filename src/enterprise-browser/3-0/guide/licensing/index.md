@@ -246,19 +246,19 @@ License Manager provides a Local License Server option, enabling organizations t
 
 > **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
 
-### Before Beginning
-
-* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html) .
-* **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
-* Ensure target devices are connected to the Local Licensing Server.
-
 #### `IMPORTANT PERSISTENCE NOTES:` 
 * **To use StageNow to persist license keys on the device following an Enterprise Reset**:
  * **All License Manager and Persist Manager steps MUST be stored in a <u>SINGLE PROFILE</u>**.
  * **WLAN settings MUST be configured BEFORE license activation steps** in the Profile.
  * **Keys MUST be stored in the** `/enterprise/usr` **folder** on the device.
 
-### From a Local Server 
+### From a Local Server
+
+#### Before Beginning
+
+* **Install and configure Local License Server** according to the [relevant admin guide](https://www.zebra.com/us/en/support-downloads/software-licensing.html).
+* **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
+* Ensure target devices are connected to the Local Licensing Server.
 
 1. In the Licensing app, **select Local Server** from the License Source drop-down.<br> 
 A screen appears as below:
@@ -282,6 +282,15 @@ _Click image to enlarge; ESC to exit._
 
 ### From Preactivated License Keys
 
+`IMPORTANT RESTRICTIONS:`
+* **Preactivated licenses are valid only on the day they are generated**.
+* If multiple preactivated licenses are generated, **they must be applied in the same order as generated**.
+* Preactivated licenses must be applied before all other license actions.
+* **If combining the application of Activation IDs and preactivated licenses** in the same configuration Profile, **preactivated licenses must be applied first**.
+
+#### Before Beginning
+* **Acquire a `.BIN` file containing licenses** (Activation IDs) from Zebra License Server for all devices to be licensed.
+
 1. Push preactivated license keys (as `.BIN` files) to device(s). 
 2. In the Licensing app, **select Preactivated** from the License Source drop-down.<br> 
 <img alt="" style="height:350px" src="15.png"/>
@@ -296,7 +305,7 @@ _Click image to enlarge; ESC to exit._
 _Click image to enlarge; ESC to exit._
 <br>
 
-#### The device is now licensed to use Enterprise Browser 2.x. 
+#### The device is now licensed to use Enterprise Browser. 
 
 -----
 

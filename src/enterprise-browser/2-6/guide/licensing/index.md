@@ -260,7 +260,7 @@ _Click image to enlarge; ESC to exit._
 -----
 ## Mass Deployment 
 
-Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
+Mass-deployment of Enterprise Browser device licenses requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](https://techdocs.zebra.com/stagenow/latest/csp/license).
 
 #### `IMPORTANT NOTES:`
 * **The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later)**. They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
@@ -321,7 +321,7 @@ Also see [related guides](#relatedguides).
 ## License Transfer
 Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is done by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 
-See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
+See the [License Manager section](https://techdocs.zebra.com/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
 
 -----
 
@@ -341,8 +341,8 @@ The following notes are derived from frequently asked questions about device lic
 * **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
 * **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
- * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
- * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
+ * Zebra StageNow and the [License Manager CSP](https://techdocs.zebra.com/stagenow/latest/csp/license/)
+ * Zebra [OEMConfig](/oemconfig)
 
 -----
 

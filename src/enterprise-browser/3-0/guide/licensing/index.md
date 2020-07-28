@@ -400,8 +400,8 @@ The following notes are derived from frequently asked questions about device lic
 * **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
 * **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
- * StageNow and the [License Mgr CSP](https://techdocs.zebra.com/stagenow/latest/csp/license/)
- * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
+ * Zebra StageNow and the [License Manager CSP](https://techdocs.zebra.com/stagenow/latest/csp/license/)
+ * Zebra [OEMConfig](/oemconfig)
 
 -----
 

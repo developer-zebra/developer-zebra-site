@@ -244,7 +244,7 @@ Launch the shortcut to execute the command line argument and see the result.xml 
 ## Off-line Licensing
 License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**.<br><br> Also see the [License Manager User Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/miscellaneous/license-manager-ug-en.pdf).
+> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**.<br><br> **Also see the [License Manager User Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/miscellaneous/license-manager-ug-en.pdf)**.
 
 
 #### `IMPORTANT PERSISTENCE NOTES:` 
@@ -392,7 +392,8 @@ See the [License Manager section](https://techdocs.zebra.com/stagenow/latest/csp
 
 -----
 
-## Notes
+## Notes and FAQ
+
 The following notes are derived from frequently asked questions about device licensing and apply to most licensing scenarios. 
 
 * **Licenses erased by a [Factory Reset](/mx/powermgr/#enterprisereset) can be reissued <u>to the same device(s) using the same StageNow Profile</u>** and the same License Source (i.e. cloud-based or local server). 
@@ -406,9 +407,7 @@ The following notes are derived from frequently asked questions about device lic
 
 ## Related Guides
 
-* **[Zebra StageNow](/stagenow)** | A free Windows app for remote device-staging, licensing and mass deployment 
-* **[Zebra License Manager User Guide for EMC devices](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Guide to a free Android app for manually licensing devices
+* **[Zebra StageNow](/stagenow)** | A free Windows app for remote device staging, licensing and mass deployment 
+* **[Zebra License Manager User Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/miscellaneous/license-manager-ug-en.pdf)** | Guide to a free Android app for manually licensing devices
 * **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**| Additional user manuals, how-to videos and relevant links
 * **[Enterprise Browser Setup Guide](../setup/)** | Help with initial setup, connecting to devices and pushing files
-
------

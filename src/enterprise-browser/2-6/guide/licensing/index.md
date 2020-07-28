@@ -12,7 +12,9 @@ Commercial deployment to devices requires an End-User License (**also known as a
 -----
 
 ### Important Licensing Information
-* **Beginning with Enterprise Browser 2.0**, the license deployment process has changed:
+
+**Beginning with Enterprise Browser 2.0, the license deployment process has changed**:
+
 * <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires that all licenses be converted to the new model**</u>.
 * **Only Android and Windows CE7 devices support cloud-based license deployment**.
 * **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.

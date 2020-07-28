@@ -244,7 +244,8 @@ Launch the shortcut to execute the command line argument and see the result.xml 
 ## Off-line Licensing
 License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**. 
+> **For more information, including hardware requirements and setup instructions, download the appropriate Local License Server Administration Guide from the [Zebra License Management support portal page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)**.<br><br> Also see the [License Manager User Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/miscellaneous/license-manager-ug-en.pdf).
+
 
 #### `IMPORTANT PERSISTENCE NOTES:` 
 * **To use StageNow to persist license keys on the device following an Enterprise Reset**:

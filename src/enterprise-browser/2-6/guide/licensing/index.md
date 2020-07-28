@@ -5,18 +5,18 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-### Important Licensing Information
-> **Beginning with Enterprise Browser 2.0**, the license deployment process has changed:<br>
-• <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires that all licenses be converted to the new model**</u>.<br>
-• **Only Android and Windows CE7 devices support cloud-based license deployment**.<br>
-• **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.<br>
-• Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.<br>
-
------
-
 ## Overview 
 
 Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available either for a 90-day trial period or for perpetual usage. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license(s) to individual devices or as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased, as explained below. 
+
+-----
+
+### Important Licensing Information
+* **Beginning with Enterprise Browser 2.0**, the license deployment process has changed:
+* <u>**Upgrading from EB 1.x to EB 2.0 (or higher) requires that all licenses be converted to the new model**</u>.
+* **Only Android and Windows CE7 devices support cloud-based license deployment**.
+* **Windows CE6, Windows Embedded Handheld 6.5 and Windows Mobile devices** can be licensed through a company's own Linux or Windows server or through use of a binary license file downloaded from the licensing portal.
+* Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.
 
 -----
 

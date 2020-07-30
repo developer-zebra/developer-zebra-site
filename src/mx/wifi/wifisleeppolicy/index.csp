@@ -19,17 +19,17 @@ parm:
     - code: 0
       mx: "4.2"
       devicetype: A,B
-      name: AlwaysOn
-      description: Causes the Wi-Fi radio to remain enabled when the device goes to sleep, providing running apps with uninterrupted access to Wi-Fi. NOTE- This is the permanent state of devices running Android 8.x Oreo. 
+      name: AlwaysOn (Never Sleep)
+      description: Causes the Wi-Fi radio to remain enabled when the device goes to sleep, providing running apps with uninterrupted access to Wi-Fi (NOTE- This is the permanent state of devices running Android 8.x Oreo). 
     - code: 1
       mx: "4.2"
       devicetype: A,B
-      name: PluggedIn
+      name: (Never Sleep When) PluggedIn
       description: Causes the Wi-Fi radio to remain enabled whenever the device is plugged in and not running on battery power regardless of sleep state, providing running apps with uninterrupted access to Wi-Fi. 
     - code: 2
       mx: "4.2"
       devicetype: A,B
-      name: NeverOn
+      name: NeverOn (Always Sleep)
       description: Causes the Wi-Fi radio to be disabled when the device enters sleep mode, dropping any existing Wi-Fi connections.
 ---
 

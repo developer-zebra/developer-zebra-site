@@ -397,7 +397,7 @@ parm:
     - code: MINUS
       mx: "9.2"
       devicetype: A
-      name: - Minus
+      name: &#45; Minus
       description: The key that inputs a minus sign or dash
     - code: PAUSE
       mx: "10.1"

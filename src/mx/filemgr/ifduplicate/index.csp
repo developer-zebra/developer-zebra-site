@@ -5,6 +5,7 @@ type: parm
 order: 5
 mx: "10.1"
 devicetype: A,B
+info: Supported only on devices running Android 8.x Oreo and Android 10.
 parm:
   pivotal: Yes
   name: IfDuplicate

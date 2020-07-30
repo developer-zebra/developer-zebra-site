@@ -3,8 +3,9 @@ csp: filemgr
 title: Delete After Upload (checkbox) 
 type: parm
 order: 7
-mx: "10.0"
+mx: "10.1"
 devicetype: A,B
+info: Supported only on devices running Android 8.x Oreo and Android 10.
 parm:
   pivotal: No
   name: DeleteAfterUpload

@@ -1,0 +1,19 @@
+---
+csp: filemgr
+title: Target File Name Pattern
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A,B
+parm:
+  presentif: File Action is "Upload file(s)" 
+  pivotal: No
+  name: TargetFileNamePattern
+  type: string
+---
+
+Used to (optionally) enter a pattern that can be used to generate file names for files to be uploaded to a remote system.  
+
+**Parm value input rules**:
+
+* String from 0&ndash;255 characters containing a file-naming pattern

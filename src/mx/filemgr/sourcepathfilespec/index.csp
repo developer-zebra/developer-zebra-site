@@ -1,0 +1,20 @@
+---
+csp: filemgr
+title: Source Path and File Spec
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A,B
+parm:
+  presentif: File Action is "Upload file(s)" 
+  pivotal: No
+  name: SourcePathAndFileSpec
+  type: string
+---
+
+Used to enter the path and name of an on-device file to be uploaded to a remote system.
+
+**Parm value input rules**:
+
+* String from 1&ndash;255 characters 
+* Supports wildcard (*) character for specifying file(s)

@@ -15,6 +15,11 @@ parm:
       name: Transfer/Copy File
       mx: "4.3"
       description: Copies a specified file to the device.
+    - code: 2
+      devicetype: A,B
+      name: Upload File(s)
+      mx: "4.3"
+      description: Uploads specified file(s) from the device to a remote system.
     - code: 4
       devicetype: A,B
       name: Delete File
@@ -27,4 +32,4 @@ parm:
       description: Copies an archive file to the device and extracts its contents.
 ---
 
-Used to enter the action to be performed on a file.
+Used to select an action to be performed on a file.

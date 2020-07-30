@@ -14,17 +14,17 @@ parm:
       devicetype: A
       name: Replace the file in the destination
       mx: "10.1"
-      description: Overwrites the duplicate file, replacing it with the file being moved.
+      description: Overwrites the duplicate file at the destination, replacing it with the file being copied or moved.
     - code: 2
       devicetype: A
       name: Skip the file and remove from the source
       mx: "10.1"
-      description: Leaves the duplicate file unchanged and erases the source file. 
+      description: Erases the source file and leaves the duplicate file at destination unchanged. 
     - code: 3
       devicetype: A
       name: Skip the file and keep it at the source
       mx: "10.1"
-      description: Leaves duplicate and source files unchanged.
+      description: Leaves source file and duplicate file at destination unchanged.
 ---
 
-Used to control File Manager behavior when a duplicate file name is encountered at the destination.
+Used to control File Manager behavior when moving or copying files and a duplicate file name exists at the destination.

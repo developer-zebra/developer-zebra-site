@@ -16,4 +16,4 @@ Used to enter the path and folder name into which the downloaded archive file sh
 
 **Parm value input rules**:
 
-* String from 1&ndash;255 containing the path and file name of the destination folder
+* String from 1&ndash;255 characters containing the path and file name of the destination folder

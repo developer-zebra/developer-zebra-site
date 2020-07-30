@@ -24,6 +24,7 @@ Hardware features tested:
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
 ## New in Device Diagnostic Tool 2.1
+* New devices supported, see supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
 * Introduced 2 modes of operation: [admin mode and user mode](../usage).
 * Changes in supported tests:
      * Tests added: Scanner, Button, Touch Screen, Audio
@@ -31,15 +32,22 @@ Hardware features tested:
 * Added capability to [import or export configuration files](../configuration).
 * New [Settings](../configuration) and [Configure Tests](../configuration) app screens for administrators. 
 * Added and removed device support. See **Supported Devices** table below.
+* Android 10 limitations due to security restrictions: 
+     * In the WWAN test details screen, "Device ID" is not visible.
+     * In the History.log file, "Device ID" and "Device Serial#" is not visible. 
 * Known Issues:
-     * On TC20 and TC25 Android Nougat, when performing the Battery test the <i>Decommission status</i> may return incorrect information.
      * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
-     * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons. 
+     * On TC20 and TC25 Android Nougat, when performing the Battery test the Decommission status may return incorrect information.
+     * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
      * On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device. 
      * When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.
+     * For devices that require AC Power to operate (no battery exists), such as CC605 and CC610, improper values may be displayed when a Battery test is performed.  
 
 ## Supported Devices
-<p>Download <b>Device Diagnostic Tool</b> from <a href="https://www.zebra.com/us/en/support-downloads/software.html">Zebra Support and Downloads</a>. Upon launching the app after installation, the user must grant all permissions to avoid any unexpected behavior. The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>
+See supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
+
+<!-- 
+The following table lists the supported GMS devices, except for MC33 which only supports non-GMS: </p>
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -51,58 +59,6 @@ Hardware features tested:
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
     <th style="text-align:center">Android 9.x <br>(Pie)</th>
   </tr>
-  <!--
-  <tr>
-    <td>CC600</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>EC30</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>PS20</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>ET50/ET55</td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>L10</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  -->
   <tr>
     <td>MC18</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -130,17 +86,6 @@ Hardware features tested:
     <td></td>
     <td></td>
   </tr>
-  <!--
-  <tr>
-    <td>MC40</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>-->
   <tr>
     <td>MC67</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -150,37 +95,7 @@ Hardware features tested:
     <td></td>
     <td></td>
   </tr>
-  <!--
-  <tr>
-    <td>MC92</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>MC93</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>PS20</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>-->
+ 
   <tr>
     <td>TC20</td>
     <td></td>
@@ -289,76 +204,13 @@ Hardware features tested:
     <td></td>
     <td></td>
   </tr>
-  <!--
-  <tr>
-    <td>TC72/TC77</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>
-    <td>TC80</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>TC8300</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>VC80</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>VC8300</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>WT6000</td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-  </tr>-->
 </table>
-
-<br>
-
-**Note:** 
+-->
+**Installation Notes:** 
 * **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
 
-## Important Notes
+## Important Usage Notes
 1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Device Diagnostic Tool use and functionality only applies to the active primary user.
 2.	**Limitation due to low memory on the device -** Once the available device memory is less than 3 MB, a message appears indicating there is no space on the device and logging will no longer take place. Additionally the Audio Test cannot be executed.
 3. **Device orientation -** Device Diagnostic Tool is only supported in the default orientation of the device. It does not support switching between both portrait and landscape modes.

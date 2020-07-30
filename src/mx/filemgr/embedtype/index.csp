@@ -20,12 +20,12 @@ parm:
       devicetype: A,B
       name: Android application package (.APK file)
       mx: "4.3"
-      description: Indicates a source file with an .APK extension
+      description: Indicates a source file with an .apk extension.
     - code: 3
       devicetype: A,B
       name: Android OS Update (.ZIP file)
       mx: "4.3"
-      description: Indicates a source file with a .ZIP extension.
+      description: Indicates a source file with a .zip extension.
 ---
 
 Used to enter the type of file to be embedded. 

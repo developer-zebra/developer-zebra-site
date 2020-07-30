@@ -19,7 +19,7 @@ parm:
       devicetype: A,B
       name: Upload File(s)
       mx: "10.1"
-      info: Supported only on devices running Android 8.x Oreo and Android 10.  
+      info: Supported only on devices running Android 8.x Oreo and Android 10 or later.  
       description: Uploads specified file(s) from the device to a remote system.
     - code: 4
       devicetype: A,B

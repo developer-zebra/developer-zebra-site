@@ -5,7 +5,7 @@ type: parm
 order: 45
 mx: "10.1"
 devicetype: A,B
-info: Supported only on devices running Android 8.x Oreo and Android 10.
+info: Supported only on devices running Android 8.x Oreo and Android 10 or later.
 parm:
   presentif: File Action is "Upload file(s)" 
   pivotal: No
@@ -22,4 +22,4 @@ Used to (optionally) enter a pattern to generate file names for files uploaded t
 * Default pattern is "SerialNo_FileName" 
 * If pattern not entered or invalid, default patttern is used
 
-**Example**: A specified pattern of "model-serial-date-time" results in the file name "TC57-47276473284264-30-07-2020-12:21:30-FileName"
+**Example**: A specified pattern of "model-serial-date-time" results in the file name "`TC57-47276473284264-30-07-2020-12:21:30-FileName`"

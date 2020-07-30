@@ -1,0 +1,25 @@
+---
+csp: filemgr
+title: Delete After Upload (checkbox) 
+type: parm
+order: 7
+mx: "10.0"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: DeleteAfterUpload
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: (unchecked)
+      mx: "10.1"
+      description: Does not delete source file after upload. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.1"
+      description: Deletes source file after upload. 
+---
+
+Controls whether source files are deleted after being uploaded.

@@ -22,5 +22,7 @@ The File Manager (FileMgr) allows an application to manage files on the device. 
 * Wait for a connection to be available before initiating a download
 * Control behavior if duplicate files are encountered when copying or moving
 * Select the sort order when multiple files being copied or moved 
+* Specify a naming pattern for uploaded files 
+* Delete file after uploading
 
 -----

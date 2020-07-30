@@ -2,7 +2,7 @@
 csp: filemgr
 title: OS Update Embedded Source
 type: parm
-order: 13
+order: 75
 mx: "4.3"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: filemgr
 title: Upload Order
 type: parm
-order: 5
+order: 25
 mx: "10.1"
 devicetype: A
 parm:

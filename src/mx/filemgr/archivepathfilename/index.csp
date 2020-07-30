@@ -2,7 +2,7 @@
 csp: filemgr
 title: Archive Target Path and Folder Name
 type: parm
-order: 14
+order: 80
 mx: "5.0"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: filemgr
 title: Embedded File Type
 type: parm
-order: 8
+order: 60
 mx: "4.3"
 devicetype: A,B
 parm:

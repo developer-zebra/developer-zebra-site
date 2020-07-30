@@ -2,7 +2,7 @@
 csp: filemgr
 title: Archive Source URI
 type: parm
-order: 15
+order: 85
 mx: "5.0"
 devicetype: A,B
 parm:

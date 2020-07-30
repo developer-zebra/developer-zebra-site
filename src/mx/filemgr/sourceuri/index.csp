@@ -2,7 +2,7 @@
 csp: filemgr
 title: Source URI
 type: parm
-order: 6
+order: 40
 mx: "4.3"
 devicetype: A,B
 info: HTTP/S requires MX 7.0+; FTPS requires MX 7.1+

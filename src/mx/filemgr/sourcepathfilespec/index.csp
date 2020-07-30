@@ -2,7 +2,7 @@
 csp: filemgr
 title: Source Path and File Spec
 type: parm
-order: 7
+order: 20
 mx: "10.1"
 devicetype: A,B
 info: Supported only on devices running Android 8.x Oreo and Android 10.

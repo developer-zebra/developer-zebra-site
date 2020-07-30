@@ -2,7 +2,7 @@
 csp: filemgr
 title: Target URI
 type: parm
-order: 4
+order: 5
 mx: "4.3"
 devicetype: A,B
 parm:

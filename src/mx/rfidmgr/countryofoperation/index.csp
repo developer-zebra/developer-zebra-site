@@ -433,6 +433,14 @@ parm:
       devicetype: A
       name: UKRAINE
       mx: "8.1"
+    - code: 106
+      devicetype: A
+      name: ANGUILLA
+      mx: "10.1"
+    - code: 107
+      devicetype: A
+      name: MOROCCO
+      mx: "10.1"
 ---
 
 Used to enter the country in which the RFID module will operate to ensure compliance with local regulatory requirements. 

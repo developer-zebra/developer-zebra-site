@@ -1,0 +1,26 @@
+---
+csp: rfidmgr
+title: Ukraine Region Power Mode
+type: parm
+order: 22
+mx: "10.1"
+devicetype: A
+info: Supported on Zebra MC333R and MC339R devices only.
+parm:
+  pivotal: No
+  name: UkraineRegionPowerMode
+  type: list
+  list:
+    - code: 0
+      mx: "10.1"
+      devicetype: A
+      name: Default
+      description: Enables license-free 100MW power mode. 
+    - code: 1
+      mx: "10.1"
+      devicetype: A
+      name: Enable
+      description: Enables licensed 2W power mode.  
+---
+
+Controls which region-specific Ukrainian power mode is used by the RFID module on the device. 

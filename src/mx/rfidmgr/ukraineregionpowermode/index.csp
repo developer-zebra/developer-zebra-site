@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Ukraine Region Power Mode
 type: parm
-order: 22
+order: 43
 mx: "10.1"
 devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.

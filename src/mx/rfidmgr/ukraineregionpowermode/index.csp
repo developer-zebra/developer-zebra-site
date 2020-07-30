@@ -7,6 +7,7 @@ mx: "10.1"
 devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.
 parm:
+  presentif: The Country of Operation is "Ukraine"
   pivotal: No
   name: UkraineRegionPowerMode
   type: list

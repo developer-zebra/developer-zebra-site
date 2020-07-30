@@ -122,12 +122,12 @@ parm:
       name: Shift
       description: The "SHIFT" modifier/meta key
     - code: FUNC
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Func
       description: The "Function" modifier/meta key
     - code: ALPHA
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Alpha
       description: The "Alpha" modifier/meta key
@@ -317,13 +317,13 @@ parm:
       name: Right External Trigger
       description: The trigger button on the right side of an external triggering device
     - code: BLUETOOTH_REMOTE_TRIGGER_1
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
       name: Bluetooth Remote Trigger 1
       description: The primary trigger button on a Bluetooth-connected barcode scanner
     - code: BLUETOOTH_REMOTE_TRIGGER_2
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
       name: Bluetooth Remote Trigger 2
@@ -390,37 +390,37 @@ parm:
       name: Rotate
       description: The key that causes the screen to change orientation
     - code: PLUS
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
-      name: + Plus
+      name: Plus
       description: The key that inputs a plus (+) sign
     - code: MINUS
       mx: "9.2"
       devicetype: A
-      name: &#45; Minus
-      description: The key that inputs a minus sign or dash
+      name: Minus
+      description: 'The key that inputs a minus (-) sign or hyphen'
     - code: PAUSE
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Pause
       description: The key that inputs a pause/break command
     - code: END
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: End
       description: The key that moves the cursor to the end of the current page
     - code: PAGEUP
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Page Up
       description: The key that moves the cursor up one page
     - code: PAGEDOWN
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Page Down
       description: The key that moves the cursor down one page
     - code: TAB
-      mx: "10.1"
+      mx: "9.2"
       devicetype: A
       name: Tab
       description: The key that inputs a tab character

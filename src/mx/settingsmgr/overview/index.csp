@@ -8,7 +8,9 @@ order: 0
 
 The Settings Manager (SettingsMgr) controls access to specific device capabilities in the Android System Settings panel. This allows administrators to prevent device users from changing settings that are sensitive in nature or could lead to undesired results. See [AccessMgr](../../.././mx/accessmgr) for other Settings panel feature restrictions. Use [AppMgr](../../../../mx/appmgr) to prevent access to the Settings panel entirely. 
 
-**Note: Settings Manager controls only _access_ to settings in the Android Settings panel; _it does not control the settings themselves_**. For example, if Wi-Fi is disabled on a device (through the [Wi-Fi Manager CSP](/mx/wifi)), using Settings Manager to disable access to Wi-Fi settings prevents a user from turning Wi-Fi on. Conversely, if Wi-Fi is _enabled_ on a device, using Settings Manager to block access to its settings prevents a user from turning it off or changing any of its configuration settings. 
+<!-- 7/30/20- The following graf was modified per eng (AH, GDR) -->
+#### Important Note
+**Settings Manager controls only _<u>access</u>_ to settings in the Android Settings panel; _it does not control or change the settings themselves_**. For example, if the state of Wi-Fi is "off" on a device (as set using the [Wi-Fi Manager CSP](/mx/wifi)), using Settings Manager to disable access to Wi-Fi settings prevents a user from changing the Wi-Fi state to "on" and potentially connecting the device to a network. <!-- DELETED (as superfluous) AFTER CLARIFYING ABOVE. Conversely, if the Wi-Fi is **_on_** on a device, using Settings Manager to block access to its settings prevents a user from changing the Wi-Fi state (turning it on or off) and from altering any Wi-Fi configuration settings.--> 
 
 ### Main Functionality
 

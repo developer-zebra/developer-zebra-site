@@ -15,7 +15,7 @@ parm:
       mx: "4.4"
       devicetype: A
       name: None
-      description: A null value (or the absence this parm from the XML) will result in no Key Mapping action; any previously selected setting will be retained.
+      description: A null value (or the absence this parm from the XML) will result in no Key Mapping action; any previously selected setting is retained.
     - code: 0-9
       mx: "4.4"
       devicetype: A
@@ -121,6 +121,16 @@ parm:
       devicetype: A
       name: Shift
       description: The "SHIFT" modifier/meta key
+    - code: FUNC
+      mx: "10.1"
+      devicetype: A
+      name: Func
+      description: The "Function" modifier/meta key
+    - code: ALPHA
+      mx: "10.1"
+      devicetype: A
+      name: Alpha
+      description: The "Alpha" modifier/meta key
     - code: BLUE
       mx: "4.4"
       devicetype: A
@@ -306,6 +316,18 @@ parm:
       devicetype: A
       name: Right External Trigger
       description: The trigger button on the right side of an external triggering device
+    - code: BLUETOOTH_REMOTE_TRIGGER_1
+      mx: "10.1"
+      devicetype: A
+      info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
+      name: Bluetooth Remote Trigger 1
+      description: The primary trigger button on a Bluetooth-connected barcode scanner
+    - code: BLUETOOTH_REMOTE_TRIGGER_2
+      mx: "10.1"
+      devicetype: A
+      info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
+      name: Bluetooth Remote Trigger 2
+      description: The secondary trigger button (if equipped) on a Bluetooth-connected barcode scanner
     - code: NAV_PAD
       mx: "6.2"
       devicetype: A
@@ -367,11 +389,41 @@ parm:
       devicetype: A
       name: Rotate
       description: The key that causes the screen to change orientation
+    - code: PLUS
+      mx: "10.1"
+      devicetype: A
+      name: + Plus
+      description: The key that inputs a plus (+) sign
     - code: MINUS
       mx: "9.2"
       devicetype: A
-      name: Minus
+      name: - Minus
       description: The key that inputs a minus sign or dash
+    - code: PAUSE
+      mx: "10.1"
+      devicetype: A
+      name: Pause
+      description: The key that inputs a pause/break command
+    - code: END
+      mx: "10.1"
+      devicetype: A
+      name: End
+      description: The key that moves the cursor to the end of the current page
+    - code: PAGEUP
+      mx: "10.1"
+      devicetype: A
+      name: Page Up
+      description: The key that moves the cursor up one page
+    - code: PAGEDOWN
+      mx: "10.1"
+      devicetype: A
+      name: Page Down
+      description: The key that moves the cursor down one page
+    - code: TAB
+      mx: "10.1"
+      devicetype: A
+      name: Tab
+      description: The key that inputs a tab character
 ---
 
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, enter the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.

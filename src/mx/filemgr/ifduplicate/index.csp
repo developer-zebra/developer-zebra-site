@@ -4,7 +4,7 @@ title: Duplicate File Handling
 type: parm
 order: 5
 mx: "10.1"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: Yes
   name: IfDuplicate

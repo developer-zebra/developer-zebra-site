@@ -1,0 +1,30 @@
+---
+csp: displaymgr
+title: Auto-rotate On/Off
+type: parm
+order: 5
+mx: "10.2"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: Autorotate
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Turn On
+      mx: "10.2"
+      description: Enables the screen to rotate automatically when device orientation changes.
+    - code: 2
+      devicetype: A,B
+      name: Turn Off
+      mx: "10.2"
+      description: Disables automatic screen rotation; the display remains in its current orientation regardless of device movement.
+---
+
+This is the On/Off switch for automatic screen rotation, which automatically reorients the display when the device orientation changes. 

@@ -1,0 +1,30 @@
+---
+csp: displaymgr
+title: Adaptive Brightness On/Off
+type: parm
+order: 5
+mx: "10.2"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: Adaptivebrightness
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Turn On
+      mx: "10.2"
+      description: Enables the device to automatically adapt screen brightness based on ambient light.
+    - code: 2
+      devicetype: A,B
+      name: Turn Off
+      mx: "10.2"
+      description: Prevents the device from automatically adapting screen brightness.
+---
+
+This is the On/Off switch for Adaptive Brightness on the device, which automatically controls screen brightness based on input from the ambient light sensor.

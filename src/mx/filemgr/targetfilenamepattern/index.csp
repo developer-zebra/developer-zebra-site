@@ -18,8 +18,8 @@ Used to (optionally) enter a pattern to generate file names for files uploaded t
 **Parm value input rules**:
 
 * String from 0&ndash;255 characters containing a file-naming pattern
-* Accepts contstant of model, serial number, date and time 
+* Accepts contstants of model, serial number, date and time 
 * Default pattern is "SerialNo_FileName" 
 * If pattern not entered or invalid, default patttern is used
 
-**Example**: A specified pattern of "model-serial-date-time" results in the file name "`TC57-47276473284264-30-07-2020-12:21:30-FileName`"
+**Example**: A specified pattern of "model-serial-date-time" results in the file name:<br> "`TC57-12345678901234-DD-MM-YYYY-HH:MM:SS-FileName`"

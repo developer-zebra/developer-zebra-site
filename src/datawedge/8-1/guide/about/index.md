@@ -108,8 +108,7 @@ Supported scanners and imagers:
 
 ### Multi-User Support
 
-DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. The supported Zebra devices are:
-* Android Oreo: TC52/TC57, TC72/TC77
+DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. 
 
 Features and functionality:
 * **If DataWedge is enabled, its functionality applies only for the active user** - Each user has a separate DataWedge process running. DataWedge usage and functionality only applies for the active user.
@@ -118,6 +117,7 @@ Features and functionality:
 * **Bluetooth scanner disconnects when switching between primary user and other users** - This applies to profiles which have a Bluetooth scanner enabled. If the primary user is active, when switching to a different user with an active profile that also enables a Bluetooth scanner, the Bluetooth scanner disconnects and does not automatically re-connect to the device. The non-primary user needs to press the reset button on the Zebra Bluetooth scanner to reconnect, even if it shows that the Bluetooth scanner is connected to the device. 
 * **No external SD card access** - If multiple Android user accounts exist, users cannot access the external SD card. This prevents the ability to export or import the Datawedge configuration database files from the SD card. 
 * **Limited folder access** - Each user profile has its own folder structure that is not accessible from a different user. Therefore, a user cannot access the exported DataWedge configuration database of another user, preventing the ability to import/export configurations across users.
+* **Warning after switching users following device reboot** - When switching from a primary user to a secondary user for the first time after reboot, after attempting to open DataWedge or DWDemo the message "DataWedge not ready" may display. There could be a delay since DataWedge does not start until the BOOT_COMPLETED intent is received. 
 
 -----
 

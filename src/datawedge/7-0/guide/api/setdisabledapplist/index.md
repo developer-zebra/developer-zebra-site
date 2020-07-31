@@ -107,7 +107,7 @@ The code below sends an intent to add apps to the Disabled Apps List in DataWedg
 	:::javascript
 	Bundle bMain = new Bundle();
 
-	bMain.putString("CONFIG_MODE ","UPDATE");
+	bMain.putString("CONFIG_MODE","UPDATE");
 
 	Bundle bundleApp1 = new Bundle();
 	bundleApp1.putString("PACKAGE_NAME","com.android.calculator2");

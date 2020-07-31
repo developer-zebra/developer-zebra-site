@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Stay Awake Enable/Disable
 type: parm
-order: 6
+order: 20
 mx: "7.2"
 apilevel: "17"
 devicetype: A

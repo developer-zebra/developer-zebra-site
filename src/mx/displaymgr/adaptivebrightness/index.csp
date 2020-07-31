@@ -2,9 +2,9 @@
 csp: displaymgr
 title: Adaptive Brightness On/Off
 type: parm
-order: 5
+order: 10
 mx: "10.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: Adaptivebrightness
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Turn On
       mx: "10.2"
       description: Enables the device to automatically adapt screen brightness based on ambient light.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Turn Off
       mx: "10.2"
       description: Prevents the device from automatically adapting screen brightness.

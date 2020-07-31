@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Set Screen Timeout Interval
 type: parm
-order: 7
+order: 45
 mx: "4.3"
 apilevel: "1"
 devicetype: A,B

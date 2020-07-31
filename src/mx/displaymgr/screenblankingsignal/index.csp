@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Set Screen Blanking Signal
 type: parm
-order: 15
+order: 35
 mx: "7.1"
 devicetype: A
 parm:

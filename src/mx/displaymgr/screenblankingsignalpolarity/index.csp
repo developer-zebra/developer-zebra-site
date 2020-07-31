@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Set Blanking Signal Polarity
 type: parm
-order: 20
+order: 40
 mx: "7.1"
 devicetype: A
 parm:

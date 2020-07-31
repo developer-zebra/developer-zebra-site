@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Display Size
 type: parm
-order: 40
+order: 25
 mx: "9.2"
 apilevel: "27"
 devicetype: A

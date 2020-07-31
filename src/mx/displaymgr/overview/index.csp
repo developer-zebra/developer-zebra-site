@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-The Display Manager (DisplayMgr) provides control of certain display screen features on the device.
+The Display Manager (DisplayMgr) provides control of certain display-screen features on the device.
 
 ### Main Functionality
 

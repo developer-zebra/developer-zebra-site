@@ -4,6 +4,7 @@ title: Brightness Level
 type: parm
 order: 15
 mx: "10.2"
+apilevel: "27"
 devicetype: A
 parm:
   pivotal: No

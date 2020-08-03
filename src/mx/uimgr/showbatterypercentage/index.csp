@@ -1,0 +1,30 @@
+---
+csp: uimgr
+title: Battery Percentage Show/Hide
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: ShowBatteryPercentage
+  type: list
+  list:
+    - code: 0
+      mx: "10.1"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Turn On 
+      mx: "10.1"
+      description: Causes battery-charge icon to be shown.
+    - code: 2
+      devicetype: A,B
+      name: Turn Off
+      mx: "10.1"
+      description: Causes battery-charge icon to be hidden.
+---
+
+Controls whether the battery-charge icon is displayed. When shown, the icon appears in the Android status bar at the top of the screen.

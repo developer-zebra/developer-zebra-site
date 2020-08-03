@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "10.1"
 info: Supported only on devices with DataWedge 8.1 or later.
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: ControllingAPIs
@@ -13,11 +13,11 @@ parm:
   list:
     - code: 0
       mx: "10.1"
-      devicetype: A
+      devicetype: A,B
       name: (unchecked)
       description: Allows all apps to access all DataWedge intent APIs. 
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: (checked)
       mx: "10.1"
       description: Prevents unapproved apps from accessing DataWedge intent APIs. 

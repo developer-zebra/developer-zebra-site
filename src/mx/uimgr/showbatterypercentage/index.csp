@@ -19,7 +19,7 @@ parm:
       devicetype: A,B
       name: Turn On 
       mx: "10.1"
-      description: Causes battery-charge icon to be displayed in the Status Bar.
+      description: Causes battery-charge percentage to be displayed in the Status Bar.
     - code: 2
       devicetype: A,B
       name: Turn Off

@@ -29,4 +29,4 @@ parm:
       description: Allows use of 'notification' APIs only by apps in the whitelist.   
 ---
 
-Controls access to intent APIs relating to DataWedge notification settings on the device such as those for displaying scanner status and Profile information. 
+Controls access to intent APIs relating to DataWedge notification settings on the device such as those for displaying scanner status and Profile information. **Learn more [about Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/)**.

@@ -19,12 +19,12 @@ parm:
       devicetype: A,B
       name: Turn On 
       mx: "10.1"
-      description: Causes battery-charge icon to be shown.
+      description: Causes battery-charge icon to be displayed in the Status Bar.
     - code: 2
       devicetype: A,B
       name: Turn Off
       mx: "10.1"
-      description: Causes battery-charge icon to be hidden.
+      description: Prevents the battery-charge percentage from being displayed in the Status Bar.
 ---
 
-Controls whether the battery-charge icon is displayed. When shown, the icon appears in the Android status bar at the top of the screen.
+Controls whether the current battery-charge percentage is displayed. When shown, the percentage appears in the Android Status Bar at the top of the screen.

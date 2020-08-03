@@ -13,7 +13,6 @@ parm:
 
 Used to enter the screen backlight brightness level (from 0-100) as a percentage of the maximum. Enter -1 to leave current device setting unchanged. **On devices running Android 9.x Pie and later**, which support setting brightness while Adaptive Brightness is On, input from the ambient light sensor causes this setting to change. To prevent automatic changes, set Adaptive Brightness to Off.
 
-
 **Parm value input rules**:
 
 * Accepts an integer from -1&ndash;100

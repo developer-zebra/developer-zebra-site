@@ -24,9 +24,12 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Perform multiple updates in a single step
 * Upload/Download an OS Update from a streaming server
 * Download a zip file from a URL
-* Set the authentication type for   
+* Set authorization type for Upgrade/Downgrade Streaming
+* Set Battery Saver Mode Automatic/Manual 
+* Set battery charge percentage threshold to activate Battery Saver Mode
 * Enable/disable: 
  * Doze Mode
+ * Battery Saver Mode
  * Wake-up methods (hardware or software)
  * Wake-up sources (device buttons)
  * Individual buttons to wake device  

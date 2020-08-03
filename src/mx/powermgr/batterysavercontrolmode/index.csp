@@ -31,6 +31,4 @@ parm:
       description: Disables Battery Saver Mode energy saving features on the device. 
 ---
 
-This is the On/Off switch for Battery Saver Mode energy saving features on the device.  
-
-Controls whether Battery Saver Mode is automatically turned on when charge percentage is low
+Controls whether Battery Saver Mode is automatically turned on when charge percentage reaches the charge level set in the Batteryu Saver Threshold parameter.   

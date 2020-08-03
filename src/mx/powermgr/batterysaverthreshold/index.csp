@@ -1,0 +1,21 @@
+---
+csp: powermgr
+title: Battery Saver Threshold
+type: parm
+order: 22
+mx: "10.0"
+devicetype: A,B
+parm:
+  presentif: The Battery Saver Control Mode is "Automatic"
+  pivotal: No
+  name: BatterySaverThreshold
+  type: string
+
+---
+
+Used to enter a percentage of battery charge below which Battery Saver Mode is automatically turned on **Note**: On devices running Android 8.x Oreo, value must be from 5&ndash;20. 
+
+**Parm value input rules**: 
+
+* Integer value from 5&ndash;75
+* Integer value from 5&ndash;20 on devices running Android Oreo 8.x 

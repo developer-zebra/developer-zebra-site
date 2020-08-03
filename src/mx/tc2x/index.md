@@ -38,7 +38,7 @@ csps:
     url: /mx/conditionmgr
     csp: conditionmgr
   - type: section
-    title: DataWedgeMgr
+    title: DataWedge Manager
     url: /mx/datawedgemgr
     csp: datawedgemgr
   - type: section
@@ -46,7 +46,7 @@ csps:
     url: /mx/devadmin
     csp: devadmin
   - type: section
-    title: DhcpOptionMgr
+    title: DHCP Option Manager
     url: /mx/dhcpoptionmgr
     csp: dhcpoptionmgr
   - type: section
@@ -106,7 +106,3 @@ csps:
     url: /mx/xmlmgr
     csp: xmlmgr
 ---
-           
-
-
-

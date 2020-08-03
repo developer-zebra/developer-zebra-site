@@ -2,7 +2,7 @@
 csp: powermgr
 title: Battery Saver Threshold
 type: parm
-order: 22
+order: 49
 mx: "10.0"
 devicetype: A,B
 parm:

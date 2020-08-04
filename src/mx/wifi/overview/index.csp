@@ -63,13 +63,13 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Hotspot mode (ET50, ET55 with Lollipop only)
 	* Hyper Fast Secure Roam (HF SR)
 	* MAC randomization
-	* Management Frame Protection Mode (802.?11w)
+	* Management Frame Protection Mode (802.11w)
 	* OKC (Opportunistic Key Caching)
 	* OmniTrail Device-Location Services and Options
 	* Password Protect Encryption
 	* PMKID Caching
 	* PreAuth
-	* Radio Resource Measurement (802.?11K)
+	* Radio Resource Measurement (802.11k)
 	* Restricted WLAN Settings UI
 	* ScanAssist
 	* Setting the Clock from an Access Point (AP)

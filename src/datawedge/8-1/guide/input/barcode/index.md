@@ -187,8 +187,7 @@ To configure, in the **NG SimulScan configuration** screen tap on **Document Cap
 _SimulScan - Document Capture_
 
 Video demonstration about document capture:
-<video controls="" width="430" height="290"> <source src="./dw-document-capture.mp4" type="video/mp4"> </video>
-_Video about document capture_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Basic MultiBarcode Params
 **MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. 

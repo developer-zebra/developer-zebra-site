@@ -955,6 +955,9 @@ var sitebuild = Metalsmith(__dirname)
         .use(foldermenu({
         folder: 'ddt/2-1/'
     }))
+        .use(foldermenu({
+        folder: 'ddt/2-2/'
+    }))
     
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

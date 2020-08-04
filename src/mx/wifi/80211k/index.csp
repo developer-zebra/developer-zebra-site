@@ -9,9 +9,32 @@ parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False
   name: 802.11K
-  type: string
+  type: list
+  list:
+    - code: 2
+      mx: "7.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "7.0"
+      devicetype: A
+      name: Enable 802.11k Lite
+      description: Enables only the Neighbor Report feature of the 802.11k wireless protocol. 
+    - code: 3
+      mx: "7.0"
+      devicetype: A
+      name: Enable 802.11k Full
+      info: 'WARNING: Fully enabling 802.11k protocols can adversely effect performance of roaming and voice communications on the device.' 
+      description: Enables all 802.11k wireless protocol features. 
+    - code: 0
+      mx: "7.0"
+      devicetype: A
+      name: Disable
+      description: Disables 802.11k wireless protocol on the device. 
 ---
-Used to enable/disable Radio Resource Management, which measures transmit power, data rates and other wireless characteristics in an effort to optimize communication efficiency. _**Not supported on TC70 QC GA1/GA2 running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_. 
+
+
+Used to select the 802.11k mode for Radio Resource Management, which measures transmit power, data rates and other wireless characteristics in an effort to optimize communication efficiency. _**Not supported on TC70 QC GA1/GA2 running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_. 
 
 **Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
-

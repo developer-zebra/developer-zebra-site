@@ -16,17 +16,24 @@ parm:
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.2"
+      mx: "10.2"
       devicetype: A
-      name: Enable
-      description: Enables Radio Resource Measurement (802.11k), which helps a device discover an access point with with optimal traffic distribution. 
+      name: Enable 802.11k Lite
+      description: Enables only the Neighbor Report feature of the 802.11k wireless protocol. 
+    - code: 3
+      mx: "10.2"
+      devicetype: A
+      name: Enable 802.11k Full
+      info: 'WARNING: Fully enabling 802.11k protocols can adversely effect performance of roaming and voice communications on the device.' 
+      description: Enables all 802.11k Radio Resource Measurement, which help a device discover an access point with with optimal traffic distribution. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables Radio Resource Management (802.11k); . 
+      description: Disables 802.11k Radio Resource Measurement on the device. 
 ---
 
 This is the On/Off switch for Radio Resource Management, a feature of the 802.11k specification that analyzes access point traffic and estimates the optimal connection for maximizing wireless communication throughput. When disabled (code=0), the device generally connects to the AP with the strongest signal.  
 
 **Important: Attempts to use this parameter on a device that doesn't support it returns a value of "0" or "99" (depending on the MX version) in the relevant section of the Result XML file**.
+

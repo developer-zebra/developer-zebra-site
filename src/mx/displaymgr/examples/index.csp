@@ -36,3 +36,42 @@ The sample below turns on the screen-blanking feature, selects serial port 1 on 
 		​</characteristic>
 	</wap-provisioningdoc>
 	
+### Setting font size to large (1.15)
+
+	<wap-provisioningdoc>
+		<characteristic type=”DisplayMgr”>
+			<parm name=”FontSize” value=”1.15” />
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Setting display size to large
+
+	<wap-provisioningdoc>
+		<characteristic type=”DisplayMgr”>
+			<parm name=”DisplaySize” value=”LARGE” />
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Turn on Auto Rotate Feature
+
+	<wap-provisioningdoc>
+		<characteristic type=”DisplayMgr”>
+			<parm name=”Autorotate” value=”1” />
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Turn on adaptive brightness
+
+	<wap-provisioningdoc>
+		<characteristic type=”DisplayMgr”>
+			<parm name=” Adaptivebrightness” value=”1” />
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Setting screen brightness level to 80 percent
+
+	<wap-provisioningdoc>
+		<characteristic type=”DisplayMgr”>
+			<parm name=” Brightnesslevel” value=”80” />
+		</characteristic>
+	</wap-provisioningdoc>

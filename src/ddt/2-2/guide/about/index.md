@@ -23,7 +23,19 @@ Hardware features tested:
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
-## New in Device Diagnostic Tool 2.1
+## New in Device Diagnostic Tool 2.2
+
+* New devices supported - see supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
+* Android 10 limitations due to security restrictions:
+     * In the WWAN test details screen, "Device ID" is not visible.
+     * In the History.log file, "Device ID" and "Device Serial#" is not visible.
+* Known issue - When a battery test is performed, improper values may be displayed on the following devices:
+     * Devices that require AC Power to operate (no battery exists), such as CC605 and CC610
+     * ET50 devices - the part number, serial number and manufactured date may display improperly
+
+## Version History
+
+### Device Diagnostic Tool 2.1
 * Introduced 2 modes of operation: [admin mode and user mode](../usage).
 * Changes in supported tests:
      * Tests added: Scanner, Button, Touch Screen, Audio
@@ -37,6 +49,7 @@ Hardware features tested:
      * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
      * On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device. 
      * When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.
+
 
 ## Supported Devices
 See supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).

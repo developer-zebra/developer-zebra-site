@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Management Frame Protection Mode (802.11w)
+title: 802.11w - Management Frame Protection Mode
 type: parm
 order: 63
 mx: "4.3"

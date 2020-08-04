@@ -1,0 +1,25 @@
+---
+csp: wifi
+title: Use FTM Options (checkbox) 
+type: parm
+order: 50
+mx: "10.2"
+devicetype: A,B
+parm:
+  pivotal: True
+  name: UseAdvancedOptions
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      devicetype: A,B
+      name: (checked)
+      description: Enables the use of Wi-Fi FTM Options on the device. 
+    - code: 0
+      mx: "10.2"
+      devicetype: A,B
+      name: (unchecked)
+      description: Disables the use of FTM Options on the device. 
+---
+
+Controls the use of Wi-Fi Fine Timing Measurement Options, which do this and that and are also used for the other thing. 

@@ -20,7 +20,7 @@ Video demonstration about securing access to DataWedge intent APIs:
 
 Process to secure access to DataWedge intent APIs:
 1.	Whitelist approved app using [AccessMgr CSP](/mx/accessmgr) from MX.
-2.	Specify the intent API category to restrict intent API access via [DataWedgeMgr CSP](/mx/datawedgmgr) from MX.
+2.	Specify the intent API category to restrict intent API access via [DataWedgeMgr CSP](/mx/datawedgemgr) from MX.
 3.	Acquire the app token from AccessMgr using EMDK.
 4.	Access the API by including the token in the DataWedge intent.
 
@@ -38,7 +38,7 @@ The first step to secure access to DataWedge Intent APIs is for the admin to whi
 
 ### 2. Restrict DataWedge Intent APIs
 
-By default, all DataWedge APIs are in uncontrolled mode - any application can access all DataWedge APIs. An admin can place a DataWedge API category into controlled/uncontrolled mode using DataWedgeMgr CSP via StageNow to restrict access to a particular API category. Refer to **Control Access to Intent APIs** in [DataWedgeMgr CSP](/mx/datawedgmgr).
+By default, all DataWedge APIs are in uncontrolled mode - any application can access all DataWedge APIs. An admin can place a DataWedge API category into controlled/uncontrolled mode using DataWedgeMgr CSP via StageNow to restrict access to a particular API category. Refer to **Control Access to Intent APIs** in [DataWedgeMgr CSP](/mx/datawedgemgr).
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -75,7 +75,7 @@ By default, all DataWedge APIs are in uncontrolled mode - any application can ac
 * **Query API -** APIs that retrieve information or enumerate scanners
 * **Runtime APIs -** APIs that can change functionality at runtime
 
-Administrators can designate which categories are protected using [DataWedgeMgr CSP](/mx/datawedgmgr). By default, all the API categories are in unprotected mode.
+Administrators can designate which categories are protected using [DataWedgeMgr CSP](/mx/datawedgemgr). By default, all the API categories are in unprotected mode.
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -420,5 +420,5 @@ Related Guides:
 * [DataWedge APIs](../../api) 
 * [EMDK ProfileManager](/emdk-for-android/8-0/guide/profile-manager-guides)
 * [AccessMgr CSP](/mx/accessmgr)
-* [DataWedgeMgr CSP](/mx/datawedgmgr)
+* [DataWedgeMgr CSP](/mx/datawedgemgr)
 * [DataWedge Get Started guide](../../gettingstarted)

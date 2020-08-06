@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Built-in Language Selection
 type: parm
-order: 40
+order: 41
 mx: "10.1"
 devicetype: A
 parm:

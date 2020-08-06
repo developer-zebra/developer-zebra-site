@@ -9,7 +9,7 @@ devicetype: A
 parm:
   presentif: The FTM AP Location is "0" 
   pivotal: No
-  name: FTMAP_Location
+  name: FTMDeployment_File
   type: string
 ---
 

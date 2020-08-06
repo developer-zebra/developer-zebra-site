@@ -24,6 +24,10 @@ Also see the [Enterprise Keyboard User Guide](../../../../enterprise-keyboard).
 * Display of Alphanumeric, Numeric, Scan and Symbol Tabs 
 * Display of Voice Input Key (microphone icon)
 * Use of "Flick" to input shift/long-press characters
+* Select languages: 
+ * Built into Android system
+ * Built into Enterprise Keyboard
+ * Custom
 
 #### Unique Features:
 * Direct scanning of barcodes 

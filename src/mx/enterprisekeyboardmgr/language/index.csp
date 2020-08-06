@@ -1,0 +1,61 @@
+---
+csp: enterprisekeyboardmgr
+title: Select Language
+type: parm
+order: 45
+mx: "10.1"
+devicetype: A
+parm:
+  presentif: Use System Language is set to "Enterprise Keyboard" and Language Action is "Enable" or "Disable"
+  pivotal: No
+  name: Language
+  type: list
+  list:
+    - code: English_US
+      mx: "10.1"
+      devicetype: A
+      name: English (US)
+      description: Selects English as used in the United States.
+    - code: English_UK
+      mx: "10.1"
+      devicetype: A
+      name: English (UK)
+      description: Selects English as used in the United Kingdom.
+    - code: Polish
+      mx: "10.1"
+      devicetype: A
+      name: Polish
+      description: Selects the Polish language as used in Poland.
+    - code: Slovak
+      mx: "10.1"
+      devicetype: A
+      name: Slovak
+      description: Selects Slovlak as used in Slovakia.
+    - code: Romanian
+      mx: "10.1"
+      devicetype: A
+      name: romanian
+      description: Selects Romanian as used in Romania.
+    - code: Czech
+      mx: "10.1"
+      devicetype: A
+      name: Czech
+      description: Selects Czech as used in the Czech Republic.
+    - code: Russian
+      mx: "10.1"
+      devicetype: A
+      name: Russian
+      description: Selects Russian as used in Russia.
+    - code: ALL
+      mx: "10.1"
+      devicetype: A
+      name: All Supported Languages
+      description: Selects English as used in the United States.
+    - code: CUSTOM
+      mx: "10.1"
+      devicetype: A
+      name: Custom Language
+      description: Allows a custom language provided by a third party to be used.
+---
+
+Used to select which language is used by Enterprise Keyboard on the device. 

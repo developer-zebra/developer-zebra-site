@@ -1,0 +1,19 @@
+---
+csp: enterprisekeyboardmgr
+title: Custom Language
+type: parm
+order: 48
+mx: "10.1"
+devicetype: A
+parm:
+  presentif: Use System Language is set to "Enterprise Keyboard" and Language Action is "Enable" or "Disable" and Language is "CUSTOM"
+  pivotal: No
+  name: LanguageCustom
+  type: string
+---
+
+Used to enter the name of a custom language to be used by Enterprise Keyboard. 
+
+**Parm input rules:**
+
+* A string of at least one character

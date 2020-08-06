@@ -1,0 +1,31 @@
+---
+csp: enterprisekeyboardmgr
+title: Language Action
+type: parm
+order: 43
+mx: "10.1"
+devicetype: A
+parm:
+  presentif: Use System Language is set to "Enterprise Keyboard"
+  pivotal: No
+  name: LanguageAction
+  type: list
+  list:
+    - code: 0
+      mx: "10.1"
+      devicetype: A
+      name: Do nothing
+      description: This value (or the absence of this parm from the XML) causes no change to Enterprise Keyboard settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.1"
+      description: Enables languages provided by Enterprise Keyboard to be used on the device.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.1"
+      description: Prevents languages provided by Enterprise Keyboard from being used on the device.
+---
+
+Used to select whether languages provided by Enterprise Keyboard are used on the device. 

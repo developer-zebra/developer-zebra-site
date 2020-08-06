@@ -1,6 +1,6 @@
 ---
 csp: enterprisekeyboardmgr
-title: System Language Selection
+title: Built-in Language Selection
 type: parm
 order: 40
 mx: "10.1"
@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Android System
       mx: "10.1"
-      description: Selects languages built into the Android system.
+      description: Allows for selection of languages built into the Android system.
     - code: 2
       devicetype: A
       name: Enterprise Keyboard
       mx: "10.1"
-      description: Selects languages built into Enterprise Keyboard.
+      description: Allows selection of languages built into Enterprise Keyboard.
 ---
 
 Used to select which built-in languages to use for Enterprise Keyboard: the languages that come with EKB or those provided by the Android system. 

@@ -50,12 +50,12 @@ parm:
       mx: "10.1"
       devicetype: A
       name: All Supported Languages
-      description: Selects English as used in the United States.
+      description: Allows selection of any language.
     - code: CUSTOM
       mx: "10.1"
       devicetype: A
       name: Custom Language
-      description: Allows a custom language provided by a third party to be used.
+      description: "Allows a custom language to be used. 
 ---
 
-Used to select which language is used by Enterprise Keyboard on the device. 
+Used to select which language is used by Enterprise Keyboard on the device. When using 'Custom Language' option, enter custom language name using the Custom Language parameter.  

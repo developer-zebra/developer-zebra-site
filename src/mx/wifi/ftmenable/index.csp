@@ -1,0 +1,28 @@
+---
+csp: wifi
+title: FTM Enable/Disable 
+type: parm
+order: 111
+mx: "10.2"
+apilevel: "29"
+devicetype: A
+parm:
+  pivotal: No
+  name: FTMEnable
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      apilevel: "29"
+      devicetype: A
+      name: Enable
+      description: Enables the use of FTM on the device. 
+    - code: 0
+      mx: "10.2"
+      apilevel: "29"
+      devicetype: A
+      name: Disable
+      description: Disables the use of FTM on the device.
+---
+
+This is the On/Off switch for Wi-Fi Fine Timing Measurement, which is used for indoor locationing of a device.

@@ -56,6 +56,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Configure Extended WLAN settings
 	* Fast Transition (FT)
 	* Fast Transition Resource Request (FTRIC)
+	* Fine Timing Measurement (for indoor locationing)
 	* FIPS Compliance
 	* FTOverTheDS
 	* Fusion Advanced Logging
@@ -64,6 +65,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Hyper Fast Secure Roam (HF SR)
 	* MAC randomization
 	* Management Frame Protection Mode (802.11w)
+	* Neighbor Roaming (802.11k "Lite")
 	* OKC (Opportunistic Key Caching)
 	* OmniTrail Device-Location Services and Options
 	* Password Protect Encryption
@@ -85,6 +87,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Set the RF Band
 * Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
+* Select FTM Standard or Enhanced Infrastructure settings
 * Connect to/Disconnect from a Wi-Fi network
 * Disable all existing Wi-Fi networks
 * Remove all existing Wi-Fi networks

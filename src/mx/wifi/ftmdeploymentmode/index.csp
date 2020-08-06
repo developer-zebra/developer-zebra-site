@@ -1,0 +1,29 @@
+---
+csp: wifi
+title: FTM Deployment Mode
+type: parm
+order: 112
+mx: "10.2"
+apilevel: "29"
+devicetype: A
+parm:
+  presentif: The FTM Enable parameter is set to "Enable" 
+  pivotal: No
+  name: FTMDeployment_Mode
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      apilevel: "29"
+      devicetype: A
+      name: Enable
+      description: Enables the use of Enhanced Infrastructure FTM on the device. 
+    - code: 0
+      mx: "10.2"
+      apilevel: "29"
+      devicetype: A
+      name: Disable
+      description: Enables the use of Standard FTM on the device.
+---
+
+Used to select Standard or Enhanced Infrastructure FTM specifications on the device. 

@@ -1,25 +1,28 @@
 ---
 csp: wifi
-title: Use FTM Options (checkbox) 
+title: 802.11mc Use FTM Options (checkbox) 
 type: parm
-order: 50
+order: 110
 mx: "10.2"
+apilevel: "29"
 devicetype: A,B
 parm:
   pivotal: True
-  name: UseAdvancedOptions
+  name: UseFTMOptions
   type: list
   list:
     - code: 1
       mx: "10.2"
+      apilevel: "29"
       devicetype: A,B
       name: (checked)
-      description: Enables the use of Wi-Fi FTM Options on the device. 
+      description: Enables the use of Wi-Fi FTM options on the device. 
     - code: 0
       mx: "10.2"
+      apilevel: "29"
       devicetype: A,B
       name: (unchecked)
-      description: Disables the use of FTM Options on the device. 
+      description: Disables the use of FTM options on the device. 
 ---
 
-Controls the use of Wi-Fi Fine Timing Measurement Options, which do this and that and are also used for the other thing. 
+Controls the use of Wi-Fi Fine Timing Measurement options, which can be used to determine the indoor location of a device using the "round-trip time" of neighboring access points. Accuracy is around 1&ndash;2 meters. 

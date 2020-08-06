@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Radio Resource Management (802.11k)
+title: 802.11k Options (checkbox)
 type: parm
 order: 62
 mx: "4.3"

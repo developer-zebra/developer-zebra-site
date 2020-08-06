@@ -1,0 +1,23 @@
+---
+csp: wifi
+title: FTM AP Location 
+type: parm
+order: 113
+mx: "10.2"
+apilevel: "29"
+devicetype: A
+parm:
+  presentif: The FTM Enable parameter is set to "Enable" 
+  pivotal: No
+  name: FTMAP_Location
+  type: integer
+---
+
+Used to enter the Fine Timing Measurement (FTM) AP Location Source. This option is for an LCI/LCR supplied by the AP or an XML file deployed to the device. 
+
+**LCI -** Location Configuration Information
+**LCR -** Location Civic Report
+
+**Parm value input rules**: 
+
+* Integer 

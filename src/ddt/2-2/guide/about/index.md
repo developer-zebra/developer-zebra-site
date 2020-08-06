@@ -29,7 +29,10 @@ Hardware features tested:
 * Android 10 limitations due to security restrictions:
      * In the WWAN test details screen, "Device ID" is not visible.
      * In the History.log file, "Device ID" and "Device Serial#" is not visible.
-* Known issue - When a battery test is performed, improper values may be displayed on the following devices:
+* Fixed Issues:
+     * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
+     * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
+* Known Issue - When a battery test is performed, improper values may be displayed on the following devices:
      * Devices that require AC Power to operate (no battery exists), such as CC605 and CC610
      * ET50 devices - the part number, serial number and manufactured date may display improperly
 

@@ -7,7 +7,7 @@ mx: "10.2"
 apilevel: "29"
 devicetype: A
 parm:
-  presentif: The FTM AP Location is "0" 
+  presentif: The FTM Enable parameter is set to "Enable" and the FTM AP Location is "0" 
   pivotal: No
   name: FTMDeployment_File
   type: string

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: 802.11mc Use FTM Options (checkbox) 
+title: Use FTM Options (checkbox) 
 type: parm
 order: 110
 mx: "10.2"

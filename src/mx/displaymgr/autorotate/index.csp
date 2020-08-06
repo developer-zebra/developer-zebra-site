@@ -3,7 +3,7 @@ csp: displaymgr
 title: Auto-rotate On/Off
 type: parm
 order: 5
-mx: "10.2"
+mx: "10.1"
 apilevel: "27"
 devicetype: A
 parm:
@@ -12,7 +12,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "10.2"
+      mx: "10.1"
       apilevel: "27"
       devicetype: A
       name: Do not change
@@ -20,13 +20,13 @@ parm:
     - code: 1
       devicetype: A
       name: Turn On
-      mx: "10.2"
+      mx: "10.1"
       apilevel: "27"
       description: Enables the screen to rotate automatically when device orientation changes.
     - code: 2
       devicetype: A
       name: Turn Off
-      mx: "10.2"
+      mx: "10.1"
       apilevel: "27"
       description: Disables automatic screen rotation; the display remains in its current orientation regardless of device movement.
 ---

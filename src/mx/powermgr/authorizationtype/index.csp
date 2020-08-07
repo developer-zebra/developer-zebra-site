@@ -4,7 +4,8 @@ title: Authorization Type
 type: parm
 order: 57
 mx: "10.1"
-devicetype: A
+apilevel: "27"
+devicetype: A,B
 parm:
   presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"
   pivotal: Yes
@@ -13,21 +14,21 @@ parm:
   list:
     - code: 0
       mx: "10.1"
-      devicetype: A
+      devicetype: A,B
       name: No Authorization
       description: Selects no authorization for Upgrade/Downgrade Streaming server connection. 
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Zebra Authentication Token
       mx: "10.1"
       description: Selects Zebra Authentication Token for Upgrade/Downgrade Streaming server connection. 
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Basic Authentication
       mx: "10.1"
       description: Selects Basic Authentication for Upgrade/Downgrade Streaming server connection.
     - code: 3
-      devicetype: A
+      devicetype: A,B
       name: Custom Authorization Header
       mx: "10.1"
       description: Selects Custom Authentication Header for Upgrade/Downgrade Streaming server connection. Requires a value to be entered in the CustomAuthorizationHeader parameter.  

@@ -4,7 +4,8 @@ title: Custom Authorization Header
 type: parm
 order: 66
 mx: "10.1"
-devicetype: A
+apilevel: "27"
+devicetype: A,B
 parm:
   presentif: The Authorization Type is "Custom Authorization Header"
   pivotal: No

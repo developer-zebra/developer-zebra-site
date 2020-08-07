@@ -4,6 +4,7 @@ title: Battery Saver Mode On/Off
 type: parm
 order: 48
 mx: "10.1"
+apilevel: "27"
 devicetype: A,B
 parm:
   pivotal: Yes

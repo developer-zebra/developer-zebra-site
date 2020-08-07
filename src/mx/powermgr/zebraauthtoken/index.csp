@@ -4,7 +4,8 @@ title: Zebra Authentication Token
 type: parm
 order: 60
 mx: "10.1"
-devicetype: A
+apilevel: "27"
+devicetype: A,B
 parm:
   presentif: The Authorization Type is "Zebra Authentication Token"
   pivotal: No

@@ -4,7 +4,8 @@ title: Password
 type: parm
 order: 64
 mx: "10.1"
-devicetype: A
+apilevel: "27"
+devicetype: A,B
 parm:
   presentif: The Authorization Type is "Basic Authentication"
   pivotal: No

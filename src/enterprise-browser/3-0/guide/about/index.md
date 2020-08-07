@@ -24,14 +24,16 @@ The base [EB installation](../setup) includes all necessary components to allow 
 ### New Features 
 
 #### Term-based Licensing
-* Enterprise Browser 3.0 and later now supports term-based (subscription) licensing with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download). [More info](..//licensing/#iiaccesslicensingsystem).  
+* Enterprise Browser 3.0 and later now supports term-based (subscription) licensing with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download). [More info](../licensing/#iiaccesslicensingsystem).  
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](../licensing/#iiaccesslicensingsystem).
 * **Perpetual and evaluation licenses currently in place for EB 2.x can be applied to EB 3.x** when installed.
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new EB license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license applied.
 
+<!-- 8/7/20- Removed until CC implementation
 #### Common Criteria
 Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, Zebra mobile and touch computers are prevented from access certain features, including the ability to read from or write to external storage. [Learn more](/cc). 
+-->
 
 ### Device Support
 

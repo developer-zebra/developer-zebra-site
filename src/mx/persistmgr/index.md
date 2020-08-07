@@ -1,6 +1,6 @@
 ---
-title: Persistence Manager
-description: "The PersistMgr administers the 'Request XML' documents persistent on a device."
+title: Persist Manager
+description: "The PersistMgr allows configuration settings to remain on a device so they can be reapplied following an Enterprise Reset and some other data-destructive events."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

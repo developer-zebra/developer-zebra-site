@@ -3,7 +3,7 @@ csp: powermgr
 title: Authorization Type
 type: parm
 order: 57
-mx: "10.0"
+mx: "10.1"
 devicetype: A
 parm:
   presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"
@@ -12,24 +12,24 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "10.0"
+      mx: "10.1"
       devicetype: A
       name: No Authorization
       description: Selects no authorization for Upgrade/Downgrade Streaming server connection. 
     - code: 1
       devicetype: A
       name: Zebra Authentication Token
-      mx: "10.0"
+      mx: "10.1"
       description: Selects Zebra Authentication Token for Upgrade/Downgrade Streaming server connection. 
     - code: 2
       devicetype: A
       name: Basic Authentication
-      mx: "10.0"
+      mx: "10.1"
       description: Selects Basic Authentication for Upgrade/Downgrade Streaming server connection.
     - code: 3
       devicetype: A
       name: Custom Authorization Header
-      mx: "10.0"
+      mx: "10.1"
       description: Selects Custom Authentication Header for Upgrade/Downgrade Streaming server connection. Requires a value to be entered in the CustomAuthorizationHeader parameter.  
 ---
 

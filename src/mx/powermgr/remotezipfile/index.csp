@@ -3,7 +3,7 @@ csp: powermgr
 title: Remote Zip File Name
 type: parm
 order: 55
-mx: "10.0"
+mx: "10.1"
 devicetype: A
 parm:
   presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"

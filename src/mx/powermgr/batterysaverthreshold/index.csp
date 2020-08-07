@@ -3,7 +3,7 @@ csp: powermgr
 title: Battery Saver Threshold
 type: parm
 order: 49
-mx: "10.0"
+mx: "10.1"
 devicetype: A,B
 parm:
   presentif: The Battery Saver Control Mode is "Automatic"

@@ -3,7 +3,7 @@ csp: powermgr
 title: Zebra Authentication Token
 type: parm
 order: 60
-mx: "10.0"
+mx: "10.1"
 devicetype: A
 parm:
   presentif: The Authorization Type is "Zebra Authentication Token"

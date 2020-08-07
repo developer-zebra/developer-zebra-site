@@ -3,7 +3,7 @@ csp: powermgr
 title: Battery Saver Mode On/Off
 type: parm
 order: 48
-mx: "10.0"
+mx: "10.1"
 devicetype: A,B
 parm:
   pivotal: Yes
@@ -11,19 +11,19 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "10.0"
+      mx: "10.1"
       devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no action to be performed on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Turn on
-      mx: "10.0"
+      mx: "10.1"
       description: Enables Battery Saver Mode energy saving features on the device. 
     - code: 2
       devicetype: A,B
       name: Turn off
-      mx: "10.0"
+      mx: "10.1"
       description: Disables Battery Saver Mode energy saving features on the device. 
 ---
 

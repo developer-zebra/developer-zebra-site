@@ -3,7 +3,7 @@ csp: powermgr
 title: Battery Saver Control Mode
 type: parm
 order: 49
-mx: "10.0"
+mx: "10.1"
 apilevel: "27"
 devicetype: A,B
 parm:
@@ -12,7 +12,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "10.0"
+      mx: "10.1"
       apilevel: "27"
       devicetype: A,B
       name: Do not change
@@ -20,13 +20,13 @@ parm:
     - code: 1
       devicetype: A,B
       name: Automatically
-      mx: "10.0"
+      mx: "10.1"
       apilevel: "27"
       description: Enables Battery Saver Mode energy saving features on the device. 
     - code: 2
       devicetype: A,B
       name: Manually
-      mx: "10.0"
+      mx: "10.1"
       apilevel: "27"
       description: Disables Battery Saver Mode energy saving features on the device. 
 ---

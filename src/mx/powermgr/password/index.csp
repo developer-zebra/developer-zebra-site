@@ -3,7 +3,7 @@ csp: powermgr
 title: Password
 type: parm
 order: 64
-mx: "10.0"
+mx: "10.1"
 devicetype: A
 parm:
   presentif: The Authorization Type is "Basic Authentication"

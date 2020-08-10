@@ -23,4 +23,4 @@ parm:
       description: Prevents unapproved apps from accessing DataWedge intent APIs. 
 ---
 
-Controls whether DataWedge intent APIs are accessible by apps. Selecting this option limits API access by all apps or those included in the device's "whitelist" as configured in [AccessMgr](../../../../mx/accessmgr). **Learn more [about Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/)**.
+Controls whether DataWedge intent APIs are accessible by apps. Selecting this option can either prevent API access by ***all*** apps or **permit access only by apps included in the device's "whitelist"** as configured in [AccessMgr](../../../../mx/accessmgr). **Learn more [about Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/)**.

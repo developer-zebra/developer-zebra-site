@@ -29,4 +29,4 @@ parm:
       description: Allows use of 'configuration' APIs only by apps in the whitelist.   
 ---
 
-Controls access to intent APIs relating to DataWedge device configuration settings such as `Get_Config` and `Set_Config`. See [Access Manager](/mx/accessmgr) for information about whitelisting. **Learn more [about Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/)**.
+Controls access to intent APIs relating to DataWedge device configuration settings such as the `Get_Config` and `Set_Config` APIs. See [Access Manager](/mx/accessmgr) for information about whitelisting. **Learn more [about Secure APIs](https://techdocs.zebra.com/datawedge/latest/guide/programmers-guides/secure-intent-apis/)**.

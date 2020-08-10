@@ -22,7 +22,7 @@ parm:
       name: Uncontrolled
       mx: "10.1"
       description: Allows use of 'notification' APIs by all apps. 
-    - code: 0
+    - code: 2
       devicetype: A,B
       name: Controlled
       mx: "10.1"

@@ -6,6 +6,7 @@ order: 49
 mx: "10.1"
 apilevel: "26"
 devicetype: A,B
+info: Supported only on devices running Android 8 and 10 or later.
 parm:
   pivotal: Yes
   name: BatterySaverControlMode

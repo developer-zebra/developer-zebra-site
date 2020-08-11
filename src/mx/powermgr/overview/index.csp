@@ -17,14 +17,15 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Suppress reboot following an OS upgrade or downgrade
 * Put a device into Sleep Mode
 * Perform an Enterprise Reset on a device
-* Bypass the setup wizard (GMS Welcome Screen)
+* Bypass the Android Setup Wizard (GMS Welcome Screen)
 * Perform a Factory Reset on a device
 * Wipe a device (erase all storage) 
 * Verify an OS update
 * Perform multiple updates in a single step
 * Upload/Download an OS Update from a streaming server
-* Download a zip file from a URL
-* Set authorization type for Upgrade/Downgrade Streaming
+* Set Authorization Type for Upgrade/Downgrade Streaming
+* Enter user name and password for server connections
+* Download a `.zip` file from a URL
 * Set Battery Saver Mode Automatic/Manual 
 * Set battery charge percentage threshold to activate Battery Saver Mode
 * Enable/disable: 

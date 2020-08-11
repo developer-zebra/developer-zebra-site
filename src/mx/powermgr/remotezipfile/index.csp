@@ -4,7 +4,7 @@ title: Remote Zip File Name
 type: parm
 order: 55
 mx: "10.1"
-apilevel: "27"
+apilevel: "26"
 devicetype: A,B
 parm:
   presentif: The Reset Action is "OS Upgrade Streaming" or "OS Downgrade Streaming"

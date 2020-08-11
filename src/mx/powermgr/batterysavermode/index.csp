@@ -2,7 +2,7 @@
 csp: powermgr
 title: Battery Saver Mode On/Off
 type: parm
-order: 48
+order: 49
 mx: "10.1"
 apilevel: "26"
 devicetype: A,B

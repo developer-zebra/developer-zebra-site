@@ -2,7 +2,7 @@
 csp: powermgr
 title: Doze Mode Enable/Disable
 type: parm
-order: 49
+order: 47
 mx: "7.2"
 osx: "7.3"
 devicetype: A,B

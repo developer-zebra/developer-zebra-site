@@ -15,7 +15,7 @@ This section discusses configuration settings for Device Tracker on the server a
 In the [Admin View](../admin) dashboard, click on the **Settings** tab to display the **Application Configuration** and **Device & Access Point Management** options. 
 
 ###Application Configuration
- <img style="height:500px" src="server_appconfig.jpg" />
+ <img style="height:500px" src="server_config.jpg" />
  _Figure 1. Application Configuration section from Settings tab_ 
 * **Server URL** - Server URL address used by the device to communicate with the server. This is entered into the Device Tracker client Settings screen.
 * **Low Power Alert Threshold %** - Defines the battery % threshold value. Devices below this threshold value are categorized in Low Battery state as seen in the dashboard. Minimum value: 10, maximum value: 95.

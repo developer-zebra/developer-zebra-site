@@ -16,7 +16,7 @@ parm:
       osx: "7.3"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to be performed on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Turn on

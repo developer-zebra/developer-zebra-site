@@ -150,7 +150,7 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents3.5">StageNow</a></td>
-  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download for Windows PCs</a><br>Device client preinstalled on all Zebra devices</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free admin tool for Windows PCs</a><br>Device client preinstalled on all Zebra devices</td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td> -->
   <td></td>
   </tr>
@@ -186,7 +186,7 @@ The following table indicates which features are included with Zebra Professiona
 </table>
 <a name="softwarecomponents1"></a>
 
-&#42;*Each MDNA license covers all MDNA features for one device*.<br>
+&#42; *One MDNA license covers all MDNA features for one device*.<br>
 † *Supported on devices with Android 10 or later*.
 
 -----

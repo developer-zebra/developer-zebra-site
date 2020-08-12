@@ -175,7 +175,7 @@ Some features may be controlled through [StageNow](/stagenow/latest/about), an E
 * **Enable/Disable Single Pairing of the Same Device Class**: If enabled, it allows only one device to be paired from each device category, such as scanner, headset and printer. <br>
 _For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
 _For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  <br>
-**Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature is deprecated from Device Central CSP. Starting from MX version 10.1, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.
+**Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature is deprecated from Device Central Manager CSP. Starting from MX version 10.1, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.
 * **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <img style="height:400px" src="BT_setting_3.0.png"/>
@@ -197,5 +197,5 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 
 * [About Device Central](../about)
 * [Install](../setup)
-* [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
+* [Device Central Manager CSP](/mx/devicecentralmgr) - configures Device Central settings
 * [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices

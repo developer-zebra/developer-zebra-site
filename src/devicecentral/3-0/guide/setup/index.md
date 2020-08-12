@@ -38,5 +38,5 @@ This section provides installation instructions for **Device Central**.
 
 * [About Device Central](../about)
 * [Usage Guide](../usage)
-* [Device Central CSP](/mx/devicecentralmgr) - configures Device Central settings
+* [Device Central Manager CSP](/mx/devicecentralmgr) - configures Device Central settings
 * [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices

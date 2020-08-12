@@ -45,71 +45,71 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents1">All-Touch Terminal Emulation</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td>
+<!--   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td> -->
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#advanced_features">Bluetooth Manager<br>advanced features</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
-  <td>Included</td>
+  <td>Included on device</td>
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents">DataWedge</a></td>
-  <td>Included&#42;&#42;</td>
-  <td>Included</td>
+  <td>Included on device&#42;&#42;</td>
+  <td>Included on device</td>
   <td>&#42;&#42;<a href="../process"> MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/doc capture</td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
   <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td></td>
-  <td>Included †</td>
+  <td>Included on device †</td>
   <td>† Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents">Device Diagnostics</a></td>
-  <td>Included</td>
-  <td>Included</td>
-  <td>Free with all Zebra devices</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html">Free download</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html">Free download</a></td> -->
+  <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents1.5">Device Tracker</a></td>
-  <td>Available Q4 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a> --></td></td>
-  <td>Available Q4 2020</td>
+  <td colspan="2">Available Q4 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a></td></td>
+  <td>Available Q4 2020</td>-->
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
-  <td>Included</td>
-  <td>Included</td>
-  <td>Free with all Zebra devices<br><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture<br>(planned for future; contact sales rep.)</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td> -->
+  <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture<br>(planned for future; contact sales rep.)</td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2.1">Enterprise Browser</a></td>
-  <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
-  <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
+  <td colspan="2"><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td>
+  <!-- <td><a href="https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/">Buy à la carte license</a></td> -->
   <td>Supported on devices running<br>Android and Windows Mobile/CE<br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html">See all supported devices</a></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2.1">Enterprise Home Screen</a></td>
-  <td>Included</td>
-  <td>Included</td>
-  <td>Free with all Zebra devices</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html">Free download</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html">Free download</a></td> -->
+  <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents2.5">Enterprise Keyboard 3.9+</a></td>
   <td>1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Download and install latest app</a></td></td>
-  <td>Included</td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html">Free download</a></td>
   <td>License required to use EKB with <a href="#softwarecomponents">DataWedge</a> or <a href="#softwarecomponents2.1">Enterprise Browser</a></td>
   </tr>
 
@@ -122,15 +122,15 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#advanced_features">Mobility Extensions (MX)</a></td>
-  <td>Included</td>
-  <td>Included</td>
+  <td colspan="2">Included on device</td>
+  <!-- <td>Included on device</td> -->
   <td>Free with all Zebra devices</td> 
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents3">PowerPrecision Console</a></td>
   <td><!-- 1. <a href="../process">MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html"> Download and install latest app</a> -->Available Q4 2020</td>
-  <td>Included</td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Free download</a></td>
   <td></td>
   </tr>
 
@@ -150,36 +150,36 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents3.5">StageNow</a></td>
-  <td>Included</td>
-  <td>Included</td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td>
   <td>Free with all Zebra devices</td>
   </tr>
 
   <tr>
   <td><a href="#advanced_features">Wi-Fi advanced features</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
-  <td>Included</td>
+  <td>Included on device</td>
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents4">Workforce Connect</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td> -->
   <td><a href="../process">How to apply a license</a></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents4">WorryFree Wi-Fi Analyzer</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
-  <td>Included</td>
+  <td>Included on device</td>
   <td></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents4">Zebra Volume Control</a></td>
   <td><a href="../process">Buy MDNA Enterprise license*</a></td>
-  <td>Included</td>
+  <td>Included on device</td>
   <td>Controlled by MX using the<br><a href="/mx/audiovoluimgr">Audio Volume UI Manager</a></td>
   </tr>
 

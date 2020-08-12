@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "8.1"
 devicetype: A
-info: This feature is deprecated in Device Central; it will be removed from a future version. Zebra recommends using Bluetooth Managerwith MX 10.1 or later to perform this function.
+info: This feature is deprecated in Device Central; it will be removed from a future version. Zebra recommends using Bluetooth Manager with MX 10.1 or later to perform this function.
 parm:
   pivotal: No
   name: BluetoothPairingControl

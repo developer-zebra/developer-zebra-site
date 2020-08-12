@@ -150,9 +150,9 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents3.5">StageNow</a></td>
-  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download for Windows PCs</a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download for Windows PCs</a><br>Device client preinstalled on all Zebra devices</td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td> -->
-  <td>Device client is preinstalled on all Zebra devices</td>
+  <td></td>
   </tr>
 
   <tr>

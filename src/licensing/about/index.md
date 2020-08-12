@@ -166,7 +166,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents4">Workforce Connect</a></td>
   <td colspan="2"><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td>
   <!-- <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/workforce-connect.html">Buy à la carte license</a></td> -->
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-pro.html">See Licensing and User Manuals</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-pro.html">See WFC User Manuals</a></td>
   </tr>
 
   <tr>

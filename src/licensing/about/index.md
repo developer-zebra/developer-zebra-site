@@ -136,23 +136,23 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents3">PTT Express</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/ptt-express.html">Buy à la carte license</a></td> -->
   <td>Also available for devices running<br> Windows mobile operating systems<br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/push-to-talk-express.html">Learn more</a></td>
   </tr>
  
   <tr>
   <td><a href="#softwarecomponents3">SmartDEX</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/smartdex.html">Buy à la carte license</a></td> -->
   <td>Not supported on TC21<br><a href="../process">How to apply a license</a></td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents3.5">StageNow</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td>
-  <td>Free with all Zebra devices</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download for Windows PCs</a></td>
+  <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td> -->
+  <td>Device client is preinstalled on all Zebra devices</td>
   </tr>
 
   <tr>

@@ -89,7 +89,7 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
   <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td> -->
-  <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture<br>(planned for future; contact sales rep.)</td>
+  <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture</td>
   </tr>
 
   <tr>
@@ -150,7 +150,7 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents3.5">StageNow</a></td>
-  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free admin tool for Windows PCs</a><br>Device client preinstalled on all Zebra devices</td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free admin tool download for Windows PCs</a><br>Device client preinstalled on all Zebra devices</td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html">Free download</a></td> -->
   <td></td>
   </tr>

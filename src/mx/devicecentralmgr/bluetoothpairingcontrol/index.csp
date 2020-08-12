@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "8.1"
 devicetype: A
-info: 'This feature is deprecated in Device Central; it will be removed from a future version. Zebra recommends using <a href="https://techdocs.zebra.com/mx/bluetoothmgr">Bluetooth Manager</a> with MX 10.1 or later to perform this function.'
+info: This feature is deprecated in Device Central; it will be removed from a future version. Zebra recommends using Bluetooth Managerwith MX 10.1 or later to perform this function.
 parm:
   pivotal: No
   name: BluetoothPairingControl
@@ -31,6 +31,7 @@ parm:
 Controls whether the device is permitted to pair with more than one Bluetooth device per device class (i.e. one headset and one printer). This parameter does not effect existing device pairings.
 
 **More information**: 
+* **[Zebra Bluetooth Manager](/mx/bluetoothmgr)**
 * **[Class of Device Calculator](http://www.ampedrftech.com/cod.htm)** 
 * **[Bluetooth.com Baseband specs](https://www.bluetooth.com/specifications/assigned-numbers/baseband)**
 

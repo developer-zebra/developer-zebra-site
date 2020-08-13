@@ -1,8 +1,8 @@
 ---
 csp: worryfreewifimgr
-title: Session Storage Duration
+title: Analysis Duration
 type: parm
-order: 7
+order: 9
 mx: "10.1"
 devicetype: A
 parm:

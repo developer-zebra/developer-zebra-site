@@ -17,4 +17,4 @@ Used to enter one or more filtering rules (using the format "protocol:port") to 
 **Parm value input rules**: 
 
 * String from 1&ndash;64 characters in the format "protocol:port"
-* Separate multiple entries with commas (i.e. “Protocol1:port1, Protocol2:port2, Protocol3:Port3”)
+* Separate multiple entries with commas (i.e. “protocol1:port1, protocol2:port2, protocol3:port3”)

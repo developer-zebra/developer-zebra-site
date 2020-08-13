@@ -150,7 +150,7 @@ Used to enable or disable the Enterprise Keyboard.
 
 #### Examples
 
-Enable EKB:
+#####Enable EKB:
 
         var bool = new Boolean(true);
         var data= {'ENABLE' : bool};
@@ -158,7 +158,7 @@ Enable EKB:
         EB.Intent.send(params, intentReceived);
 
 
-Disable EKB:
+#####Disable EKB:
 
         bool = new Boolean(false);
         var data= {'ENABLE' : bool};
@@ -166,13 +166,15 @@ Disable EKB:
         EB.Intent.send(params, intentReceived);
 
 
+-----
+
 ## GET (available layouts)
 
 Returns a list of custom key layouts currently available in the device.
 
 #### Example
 
-Get available key layouts:
+#####Get available key layouts:
 
     var propertiesToRetrieve = ["AVAILABLE_LAYOUTS"];
     var data= {'PROPERTIES_TO_GET' : propertiesToRetrieve};
@@ -189,7 +191,7 @@ Returns the current key layout group and the current key layout name. If Enterpr
 
 #### Example
 
-Get current key layout group and layout name:
+#####Get current key layout group and layout name:
 
     var propertiesToRetrieve = ["CURRENT_LAYOUT_GROUP","CURRENT_LAYOUT_NAME"];
     var data= {'PROPERTIES_TO_GET' : propertiesToRetrieve};
@@ -204,7 +206,7 @@ Sets the custom layout in Enterprise Keyboard. While sending the intent to set t
 
 #### Example
 
-Set a custom layout for use by the app:
+#####Set a custom layout for use by the app:
 
     var layoutGroupName = document.getElementById('selectlayoutgroup').value;
     var layout = document.getElementById('selectlayoutname').value ;
@@ -228,7 +230,7 @@ Used to show or hide the specified key layout.
 
 #### Examples
 
-Show the specified key layout:
+#####Show the specified key layout:
 
         var bool = new Boolean(true);
         var data= {'SHOW' : bool};
@@ -261,7 +263,7 @@ Resets and enables the specified Enterprise Keyboard fixed or custom layout base
 
 #### Example
 
-Reset and enable a custom key layout:
+#####Reset and enable a custom key layout:
 
         var bool = new Boolean(true);
         var data= {'RESET_LAYOUT' : bool};
@@ -274,39 +276,31 @@ Reset and enable a custom key layout:
 
 ###Registering Intent Receiver
 
-                    
 For an Android app to receive intent data, the Intent receiver must be registered in the app's `Config.xml` file. Please refer to the <a href="#guide-configreference#intent">Intent section of the EB Config Reference</a> for more information. 
-                    
-                
 
 -----
 
 ##Examples
 
 ###Sending Data Within an Intent
-This example shows how to send data within an intent. On Android, this is similar to  <a href="http://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String, java.lang.String\))">Intent.putExtra</a>. Data should contain a HASH of Extra-String/Value pairs. The 'Value' type of the 'Extra' can be a String, Integer, Boolean or Double. Notice the use of the full constant string 'android.intent.extra.TEXT' in place of <a href="http://developer.android.com/reference/android/content/Intent.html#EXTRA_TEXT">Intent.EXTRA_TEXT</a>.
+This example shows how to send data within an intent. On Android, this is similar to  <a href="http://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String, java.lang.String\))">Intent.putExtra</a>. Data should contain a HASH of Extra-String/Value pairs. The 'Value' type of the 'Extra' can be a String, Integer, Boolean or Double. Notice the use of the full constant string `android.intent.extra.TEXT` in place of <a href="http://developer.android.com/reference/android/content/Intent.html#EXTRA_TEXT">Intent.EXTRA_TEXT</a>.
+
 <pre><code>:::javascript
 
+    Android (Java)
 
-Android (Java)
+        intent.putExtra("intent.extra.string", 'Here is the text I am passing to the Intent');
+        intent.putExtra("intent.extra.integer", 12);
+        intent.putExtra("intent.extra.boolean", true);
+        intent.putExtra("intent.extra.double", 14.28);
 
-    intent.putExtra("intent.extra.string", 'Here is the text I am passing to the Intent');
-    intent.putExtra("intent.extra.integer", 12);
-    intent.putExtra("intent.extra.boolean", true);
-    intent.putExtra("intent.extra.double", 14.28);
+    JavaScript
 
-JavaScript
-
-    var data: { 'intent.extra.string' : "Here is the text I am passing to the Intent" ,
-                'intent.extra.integer' : 12 ,
-                'intent.extra.boolean' : true ,
-                'intent.extra.double' : parseFloat("10.55")}
-              };
-
-
-
-
-                                
+        var data: { 'intent.extra.string' : "Here is the text I am passing to the Intent" ,
+                    'intent.extra.integer' : 12 ,
+                    'intent.extra.boolean' : true ,
+                    'intent.extra.double' : parseFloat("10.55")}
+                  };
                             
 </code></pre>
 

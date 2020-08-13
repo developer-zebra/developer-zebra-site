@@ -31,33 +31,32 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Auto-reachability testing 
 * Enter old and new passwords for access to client UI, settings and data
 * **Select or configure**:
- * Voice or roaming data analysis 
+ * Analysis type: Connection, Voice or Roaming
  * Passive (background) or Active (foreground) analysis
  * SSID of network to analyze
  * URL of a remote server and alternate default gateway
- * Logging of only errors, warnings and errors, or all events
+ * Logging of errors only, warnings plus errors, or all events
  * Maximum size of capture file and device storage
  * Packet capture file name
  * Coverage session name
  * Coverage SSID
- * Analysis type
  * Scan interval
  * Temporary password duration
  * Length of time for analysis session
- * Length of time for analysis data storage on device
-* **Capture all packets or only Management packets**: 
- * Association request
- * Association response
- * Re-association request
- * Re-association response
- * Probe request
- * Probe response
- * Beacon
- * ATIM
+ * Length of time to store analysis data on device
+* **Capture all packets or only Management packets for**: 
+ * Association requests
+ * Association responses
+ * Re-association requests
+ * Re-association responses
+ * Probe requests
+ * Probe responses
+ * Beacons
+ * ATIMs
  * Disassociation
  * Authentication
  * De-authentication 
- * Action
- * Filter voice packets by protocol
+ * Actions
+* Filter voice packets by protocol
 
 -----

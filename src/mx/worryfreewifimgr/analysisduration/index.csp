@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Session Storage Duration
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Action is set to "Start" and Analysis Type is NOT "Connection" or "Do not change" and Activity Mode is "Do not change" or "Passive" 
+  name: AnalysisDuration
+  type: string
+---
+
+Used to enter the length of time (using format HH:MM:SS) to perform an analysis on the device before stopping. Enter 00:00:00 to run analysis continuously until stopped by the device user. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters in the time format HH:MM:SS

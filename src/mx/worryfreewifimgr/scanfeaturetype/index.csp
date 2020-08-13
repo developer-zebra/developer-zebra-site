@@ -7,7 +7,7 @@ mx: "9.1
 devicetype: A
 parm:
   pivotal: No
-  presentif: Use Coverage View checkbox is "checked" 
+  presentif: Use Coverage View checkbox is "checked" and Activate Code is NOT "Do not change"
   name: ScanFeatureType
   type: list
   list:
@@ -25,7 +25,7 @@ parm:
       mx: "9.1"
       devicetype: A
       name: Coverage View
-      description: Scans only the connected network profile (SSID) on the device. 
+      description: Scans only the profile of the currently connected network (SSID) on the device. 
 ---
 
-Used to select whether to scan all network profiles stored on the device or to scan only the currently connected network. 
+Used to select whether to scan all network profiles stored on the device or only that of the currently connected network. 

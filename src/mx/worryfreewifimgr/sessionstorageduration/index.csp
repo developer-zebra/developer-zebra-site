@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Session Storage Duration
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Action is set to "Start" and SD Card Storage is "Delete old Session Data" Analysis Type is NOT set to "Connection" or "Do not change" and Activity Mode is NOT "Do not change" 
+  name: SessionStorageDuration
+  type: string
+---
+
+Used to enter the length of time (using format HH:MM:SS) that session data is stored on device. Enter 00:00:00 to store data for infinite time. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters in the time format HH:MM:SS

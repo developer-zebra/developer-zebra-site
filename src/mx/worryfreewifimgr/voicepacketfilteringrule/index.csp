@@ -1,0 +1,20 @@
+---
+csp: worryfreewifimgr
+title: Voice Packet Filtering Rule
+type: parm
+order: 7
+mx: "10.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Action is set to "Start" and Analysis Type is "Voice" and Activity Mode is NOT "Do not change" or "Active" 
+  name: VoicePacketFilteringRule
+  type: string
+---
+
+Used to enter one or more filtering rules (using the format "protocol:port") to specify which voice protocols to analyze, excluding all others. **If no protocols are specified, all voice packets are analyzed by default**. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;64 characters in the format "protocol:port"
+* Separate multiple entries with commas (i.e. “Protocol1:port1, Protocol2:port2, Protocol3:Port3”)

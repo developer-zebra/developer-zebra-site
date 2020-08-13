@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to enter the length of time (using format HH:MM:SS) that session data is stored on device. Enter 00:00:00 to store data for infinite time. 
+Used to enter the length of time (HH:MM:SS) that session data is stored on device. Enter 00:00:00 to store data indefinitely. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters in the time format HH:MM:SS
+* String from 1&ndash;32 characters in the format HH:MM:SS

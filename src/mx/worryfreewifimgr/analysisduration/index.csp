@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to enter the length of time (using format HH:MM:SS) to perform an analysis on the device before stopping. Enter 00:00:00 to run analysis continuously until stopped by the device user. 
+Used to enter the length of time (HH:MM:SS) to perform an analysis on the device before stopping. Enter 00:00:00 to run continuously or until stopped by a device user. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters in the time format HH:MM:SS
+* String from 1&ndash;32 characters in the format HH:MM:SS

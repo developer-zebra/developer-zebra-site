@@ -20,7 +20,7 @@ parm:
       mx: "9.1"
       devicetype: A
       name: Connection
-      description: Analyzes voice communications on the device. 
+      description: Analyzes connection-related activities on the device. 
     - code: 1
       mx: "8.2"
       devicetype: A

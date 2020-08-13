@@ -7,7 +7,7 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Action is set to "Start" and Use Default Gateway is set to "User Provided Remote Server Address"
+  presentif: Action is set to "Start" and Use Default Gateway is set to "User Provided Remote Server Address" and Activity Mode is NOT "Do not change"
   name: RemoteServerAddress
   type: string
 ---

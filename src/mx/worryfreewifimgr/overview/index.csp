@@ -32,7 +32,7 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
 * Enter old and new passwords for access to client UI, settings and data
 * **Select or configure**:
  * Voice or roaming data analysis 
- * Background or foreground analysis
+ * Passive (background) or Active (foreground) analysis
  * SSID of network to analyze
  * URL of a remote server and alternate default gateway
  * Logging of only errors, warnings and errors, or all events

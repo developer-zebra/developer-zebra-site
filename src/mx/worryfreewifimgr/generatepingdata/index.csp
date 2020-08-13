@@ -7,8 +7,7 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Action is set to "Start" and Analysis Type is "Roam" 
- and Analysis Type is "roam" 
+  presentif: Action is set to "Start" and Analysis Type is "Roam" and Activity Mode is NOT "Passive" or "Do not change"
   name: GeneratePingData
   type: list
   list:

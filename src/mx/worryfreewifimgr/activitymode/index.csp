@@ -19,12 +19,12 @@ parm:
     - code: 1
       mx: "8.2"
       devicetype: A
-      name: Background Activity
+      name: Passive Analysis
       description: Performs analysis as a foreground task, visible to the device user. 
     - code: 0
       mx: "8.2"
       devicetype: A
-      name: Foreground Activity
+      name: Active Analysis
       description: Performs analysis as a background task, invisible to device user. 
 ---
 

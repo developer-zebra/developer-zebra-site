@@ -148,7 +148,7 @@ Used to enable or disable the Enterprise Keyboard.
 * **TRUE**: EKB enabled and shown whenever device user taps on an input field.
 * **FALSE**: EKB disabled and DOES NOT show even after using SHOW API or tapping on an input area.
 
-#### Examples
+### Examples
 
 #####Enable EKB:
 
@@ -172,7 +172,7 @@ Used to enable or disable the Enterprise Keyboard.
 
 Returns a list of custom key layouts currently available in the device.
 
-#### Example
+### Example
 
 #####Get available key layouts:
 
@@ -189,7 +189,7 @@ Returns a list of custom key layouts currently available in the device.
 
 Returns the current key layout group and the current key layout name. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
 
-#### Example
+### Example
 
 #####Get current key layout group and layout name:
 
@@ -204,7 +204,7 @@ Returns the current key layout group and the current key layout name. If Enterpr
 ## SET (key layout)
 Sets the custom layout in Enterprise Keyboard. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` parameters as extras. Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing `RESULT_CODE` and `RESULT_MESSAGE` extras.
 
-#### Example
+### Example
 
 #####Set a custom layout for use by the app:
 
@@ -228,7 +228,7 @@ Used to show or hide the specified key layout.
 * **TRUE**: Keyboard is shown when activity is launched, even if the activity does not require input.
 * **FALSE**: Keyboard is not shown when activity is launched; shown only when the device user taps on an input field.
 
-#### Examples
+### Examples
 
 #####Show the specified key layout:
 
@@ -261,7 +261,7 @@ Resets and enables the specified Enterprise Keyboard fixed or custom layout base
 * **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
 * **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.
 
-#### Example
+### Example
 
 #####Reset and enable a custom key layout:
 

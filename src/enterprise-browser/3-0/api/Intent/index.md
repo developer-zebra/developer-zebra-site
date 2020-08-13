@@ -286,7 +286,6 @@ For an Android app to receive intent data, the Intent receiver must be registere
 This example shows how to send data within an intent. On Android, this is similar to  <a href="http://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String, java.lang.String\))">Intent.putExtra</a>. Data should contain a HASH of Extra-String/Value pairs. The 'Value' type of the 'Extra' can be a String, Integer, Boolean or Double. Notice the use of the full constant string `android.intent.extra.TEXT` in place of <a href="http://developer.android.com/reference/android/content/Intent.html#EXTRA_TEXT">Intent.EXTRA_TEXT</a>.
 
 <pre><code>:::javascript
-
     Android (Java)
 
         intent.putExtra("intent.extra.string", 'Here is the text I am passing to the Intent');

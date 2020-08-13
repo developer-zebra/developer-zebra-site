@@ -239,7 +239,7 @@ Used to show or hide the specified key layout.
         
 
 
-Hide the specified key layout:
+#####Hide the specified key layout:
 
         var bool = new Boolean(false);
         var data= {'SHOW' : bool};
@@ -253,13 +253,13 @@ Hide the specified key layout:
 
 Resets and enables the specified Enterprise Keyboard fixed or custom layout based on current key layout selection. 
 
-#### Notes
-* **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
-* **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.
-
 #### Parameter values:
 * **TRUE**: Keyboard is reset
 * **FALSE**: Keyboard is not reset
+
+#### Notes
+* **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
+* **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.
 
 #### Example
 

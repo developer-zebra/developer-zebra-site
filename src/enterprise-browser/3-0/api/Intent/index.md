@@ -38,6 +38,8 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 > In the code lines above, notice that `ebapi.js` is included first, followed by `eb.intent.js`, which is the Intent API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
+-----
+
 ##Methods
 
 ### send(<span class="text-info">HASH</span> params)
@@ -86,6 +88,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Intent.send(<span class="text-info">HASH</span> params)</code> 
 
+-----
 
 ### startListening()
 Start listening for custom intents. 
@@ -111,6 +114,8 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Intent.startListening()</code> 
 
+
+-----
 
 ### stopListening()
 Stop listening for custom intents.
@@ -176,6 +181,8 @@ Get available key layouts:
     EB.Intent.send(params, availablelayouts);
 
 
+-----
+
 ## GET (current layout)
 
 Returns the current key layout group and the current key layout name. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
@@ -189,6 +196,8 @@ Get current key layout group and layout name:
     var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_GET", "", "", "", "", "", data);
     EB.Intent.send(params, currentlayout);
 
+
+-----
 
 ## SET (key layout)
 Sets the custom layout in Enterprise Keyboard. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` parameters as extras. Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing `RESULT_CODE` and `RESULT_MESSAGE` extras.
@@ -204,6 +213,8 @@ Set a custom layout for use by the app:
     var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
     EB.Intent.send(params, intentReceived);
 
+
+-----
 
 ## SHOW
 
@@ -233,6 +244,8 @@ Hide the specified key layout:
         var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
         EB.Intent.send(params, intentReceived);
 
+
+-----
 
 ## RESET
 

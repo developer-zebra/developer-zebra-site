@@ -17,8 +17,8 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
 * Enable/disable data collection by the Analytics Engine
 * Enable/disable ability of device user or app to change data collection setting
 
-###`WARING:`
-Changing the “DASettings” and “EnableDAEToggle” parameters can cause updates to the EULA UI. **Zebra strongly recommends adding a minimum delay of six (6) seconds when changing both of these parameters together in the same StageNow profile**. A delay can be implemented using [Condition Manager](/mx/conditionmgr). Examples of such an implementation can be found in these sample [StageNow profiles](AnalyticsMgr_sample_profiles.zip). 
+###`WARNING:`
+Changing the “DASettings” and “EnableDAEToggle” parameters can cause updates to the EULA user interface. **Zebra strongly recommends adding a minimum delay of six (6) seconds after changing both of these parameters together in the same StageNow profile**. A delay can be implemented using [Condition Manager](/mx/conditionmgr). Examples of such an implementation can be found in these [sample StageNow profiles](AnalyticsMgr_sample_profiles.zip) (`.zip` file download). 
 
 <!-- 8/26/19- removed per eng. 
 * Set data collection thresholds for individual metrics

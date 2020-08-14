@@ -6,6 +6,7 @@ order: 114
 mx: "10.2"
 apilevel: "29"
 devicetype: A
+info: Not supported on TC21, TC26, MX22x or MC27x devices.
 parm:
   presentif: The FTM Enable parameter is set to "Enable" and the FTM AP Location is "0" 
   pivotal: No

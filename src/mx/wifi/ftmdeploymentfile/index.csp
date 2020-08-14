@@ -16,9 +16,12 @@ parm:
 
 Used to enter the Fine Timing Measurement (FTM) AP Location Source. This option is for an LCI/LCR supplied by the AP or an XML file deployed to the device. 
 
-**LCI -** Location Configuration Information
-**LCR -** Location Civic Report
+**LCI -** Location Configuration Information includes latitude, longitude, and altitude of the AP providing the report. 
+
+**LCR -** Location Civic Report includes location reference, shape, map image sub-elements and other civic information of the AP providing the report.
+
+For more information, please refer to [IEEE.org](https://ieeexplore.ieee.org/abstract/document/9151400). 
 
 **Parm value input rules**: 
 
-* Integer 
+* String from 0&ndash;255 characters

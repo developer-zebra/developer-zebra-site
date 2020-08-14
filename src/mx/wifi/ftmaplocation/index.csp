@@ -10,7 +10,7 @@ info: Not supported on TC21, TC26, MX22x or MC27x devices.
 parm:
   presentif: The FTM Enable parameter is set to "Enable" 
   pivotal: No
-  name: FTMDeployment_Mode
+  name: FTMAP_Location
   type: list
   list:
     - code: 1
@@ -28,3 +28,9 @@ parm:
 ---
 
 Used to enter the Fine Timing Measurement (FTM) AP Location Source. Option 1 selects the Location Configuration Information (LCI) and/or Location Civic Report (LCR) supplied by the AP. With option 0, an XML file must be created in advance, deployed to the device and referenced using the FTM Deployment File parameter. 
+
+**LCI -** Location Configuration Information includes latitude, longitude, and altitude of the AP providing the report. 
+
+**LCR -** Location Civic Report includes location reference, shape, map image sub-elements and other civic information of the AP providing the report.
+
+For more information, please refer to [IEEE.org](https://ieeexplore.ieee.org/abstract/document/9151400). 

@@ -6,6 +6,7 @@ order: 4
 mx: "6.1"
 apilevel: "1"
 devicetype: A
+info: This feature is NOT supported on Android 9 (Pie) or later.
 parm:
   pivotal: No
   name: GPSLocationMode
@@ -37,9 +38,9 @@ parm:
       description: Determines location using only the GPS radio, which is subject to signal loss in some settings. 
 ---
 
-Permits selection of the GPS Location Mode for determining the device location, allowing for scanrios in which location accuracy can be sacrified in favor of longer battery life. This parm uses Android's three location modes: 
+Permits selection of the GPS Location Mode for determining the device location, allowing for scanrios in which location accuracy can be sacrified in favor of longer battery life. This parameter uses Android's three location modes: 
 
-* **High Accuracy** mode suppliments information from the built-in GPS receiver with Wi-Fi and cellular data to calculate the location with the highest degree of precision. **This option draws the most energy**.
-* **Battery saving** mode uses only Wi-Fi and cellular data to determine location, but doesn't work with Google Maps and similar apps. **This option draws the least energy**. 
+* **High Accuracy mode** suppliments information from the built-in GPS receiver with Wi-Fi and cellular data to calculate the location with the highest degree of precision. **This option draws the most energy**.
+* **Battery saving mode** uses only Wi-Fi and cellular data to determine location, but doesn't work with Google Maps and similar apps. **This option draws the least energy**. 
 
-* **Device only** mode uses only GPS data, but is subject to signal loss in some settings. 
+* **Device only mode** uses only GPS data, but is subject to signal loss in some settings. 

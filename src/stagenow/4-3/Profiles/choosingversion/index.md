@@ -2,7 +2,7 @@
 title: Profile Wizards
 layout: guide.html
 product: StageNow
-productversion: '4.2'
+productversion: '4.3'
 ---
 
 This window displays the Wizard templates available for profile creation. 

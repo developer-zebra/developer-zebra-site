@@ -11,7 +11,7 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 4.2 User Guide, Revision A; <!-- StageNow MN-003401; --> May, 2020
+StageNow 4.3 User Guide, Revision A; <!-- StageNow MN-003401; --> May, 2020
 
 #### Covers StageNow 4.3
 
@@ -60,17 +60,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-<!-- **Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, which assists in creating Profiles for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard. This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. 
+**Supports MX 10.1**, which adds the following major features and enhancements: 
 
-**Also new, settings entered in the Zero Touch Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
-
-**A new [Staging Guides landing page](../stagingguides)** and menu tab helps users locate guides quickly.  
- -->
-**Supports MX 10.1**: which adds the following major features and enhancements: 
-
-DisplayMgr new features:
-
-* **Enhanced [Display Manager](../csp/diplay)** now allows a Profile to:
+* **Enhanced [Display Manager](../csp/display)** now allows a Profile to:
  * Control device-screen orientation (automatic rotation on/off)
 * **Enhanced [Power Manager](../csp/power)** now allows a Profile to:
  * Control state of Battery Saver mode (on/off)
@@ -87,10 +79,11 @@ DisplayMgr new features:
  * Replace the destination file with source if duplicate name
  * Skip copying and remove file from the source
  * Skip copying and keep it at the source
-* **Adds support for Access Manager CSP of MX 9.4 for Permission Access Action** for legacy device support. This allows EMM admininstrators to: 
- * Automatically grant launch permission any application while preventing the permissions pop-up from appearing on the device. 
- * Designate an entire CSP as Protected
- * Designate a specific Function Group (of a CSP) as Protected
+
+**Adds support for [Access Manager](../csp/access) CSP of MX 9.4** for Permission Access Action for legacy device support. **This allows EMM administrators to**: 
+* Automatically grant launch permission any application while preventing the permissions pop-up from appearing on the device
+* Designate an entire CSP as Protected
+* Designate a specific Function Group (of a CSP) as Protected
 
 -----
 

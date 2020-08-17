@@ -13,7 +13,7 @@ languages:
 
 StageNow 4.2 User Guide, Revision A; <!-- StageNow MN-003401; --> May, 2020
 
-#### Covers StageNow 4.2
+#### Covers StageNow 4.3
 
 ## Overview
 
@@ -50,9 +50,55 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v4.2
+## What's New in v4.3
 
 ### Device Support 
+
+> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
+
+-----
+
+### New Features
+
+<!-- **Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, which assists in creating Profiles for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard. This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. 
+
+**Also new, settings entered in the Zero Touch Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
+
+**A new [Staging Guides landing page](../stagingguides)** and menu tab helps users locate guides quickly.  
+ -->
+**Supports MX 10.1**: which adds the following major features and enhancements: 
+
+DisplayMgr new features:
+
+* **Enhanced [Display Manager](../csp/diplay)** now allows a Profile to:
+ * Control device-screen orientation (automatic rotation on/off)
+* **Enhanced [Power Manager](../csp/power)** now allows a Profile to:
+ * Control state of Battery Saver mode (on/off)
+ * Control Battery Saver Control mode (automatic/manual)
+ * Set Battery percentage of charge to automatically turn Battery Saver Mode on
+* **Enhanced [UI Manager](../csp/ui)** now allows a Profile to:
+ * Control Battery Percentage display in status bar (show/hide)
+* **Enhanced [File Manager](../csp/file)** now allows a Profile to configure the following file upload actions:
+ * Enter a target URI
+ * Enter source path and file name
+ * Select the upload order (oldest or newest first, or alpha-sorted by file name)
+ * Delete source file(s) after uploading
+ * Name uploaded files using a naming pattern
+ * Replace the destination file with source if duplicate name
+ * Skip copying and remove file from the source
+ * Skip copying and keep it at the source
+* **Adds support for Access Manager CSP of MX 9.4 for Permission Access Action** for legacy device support. This allows EMM admininstrators to: 
+ * Automatically grant launch permission any application while preventing the permissions pop-up from appearing on the device. 
+ * Designate an entire CSP as Protected
+ * Designate a specific Function Group (of a CSP) as Protected
+
+-----
+
+## Version History
+
+### Added in v4.2
+
+#### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
 
@@ -71,7 +117,7 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-### New Features
+#### New Features
 
 **Introduces a [Zero Touch Wizard](../Profiles/zerotouch)**, which assists in creating Profiles for connecting a ”factory-fresh" device to the internet through the Android Setup Wizard. This allows the device to contact Google’s Zero-Touch servers for enrollment into the chosen Enterprise Mobile Management system with no user interaction. 
 
@@ -88,11 +134,8 @@ The following software must be installed on the staging workstation prior to usi
  * Designate a CSP as "Protected" from unauthorized use 
  * Designate a Function Group (features selected from different CSPs) as "Protected" from unauthorized use
 
------
 
-## Version History
-
-###`APRIL 2020 UPDATE:` 
+####`APRIL 2020 UPDATE:` 
 **StageNow 4.1.1 can enable/disable [Dynamic Staging](../dynamicstaging)**, a feature introduced in StageNow 4.1. Disabled by default. 
 
 ####Upgrades to StageNow 4.1.1 are possible only from: 

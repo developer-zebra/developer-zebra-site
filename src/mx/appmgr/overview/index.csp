@@ -14,16 +14,16 @@ When considering the capabilities of AppMgr, it is important to understand the d
 
 ### Main Functionality
 
-* Install, Uninstall and Upgrade User applications (with no device user involvement)
+* Install, Uninstall and Upgrade User apps (with no device user involvement)
 * Set an app to be launched by pressing the HOME key
-* Turn On/Off the ability of an application to Launch (Whitelisting and Blacklisting)
+* Turn On/Off the ability of an app to Launch (Whitelisting and Blacklisting)
 * Clear the Recent Application List
-* Clear an application's cache (which stores the app's temporary files) 
+* Clear an app's cache (which stores the app's temporary files) 
 * Add/remove apps from Battery Optimization exemption list (see below)
 * Enable all GMS apps
 * Disable all GMS apps that are safe to disable
 * Disable GMS apps in set groups
-* Enable/Disable access to application info
+* Enable/Disable access to app info
 * Reserve/Unreserve an Android unique ID (UID)
 * Enable/Disable individual app feature(s)
 * Enable/Disable background data individually by app
@@ -36,8 +36,29 @@ The evolving security practices employed by Android have changed the user experi
 
 ### Battery Optimization
 
-The App Manager allows one or more apps to be added to the Battery Optimization "exemption whitelist." While running, apps on this list prevent the device from entering Doze and App Standby power saving modes, thereby preserving their ability to continue functioning and/or providing services. Doze mode saves battery power by deferring background CPU and network activities when the device is idle. App Standby defers background network activity for apps with which the user has not recently interacted. By default, all non-system apps are subject to Doze and App Standby modes unless added to the whitelist. 
+The App Manager allows one or more apps to be added to the Battery Optimization "exemption whitelist." While running, apps on this list prevent the device from entering Doze and App Standby power saving modes, thereby preserving their ability to continue functioning and/or providing services. Doze mode conserves battery power by deferring background CPU and network activities when the device is idle. App Standby defers background network activity for apps with which the user has not recently interacted. By default, all non-system apps are subject to Doze and App Standby modes unless added to the whitelist. 
 
 For more information, refer to the [Android Developer site](https://developer.android.com/training/monitoring-device-state/doze-standby). 
+
+##Virtual Keyboards 
+Virtual keyboards (aka soft input panels) are enabled and disabled by referenceing their package name with the desired AppMgr Action. Some of the most common keyboards are listed below:  
+
+* **AI Type -**	`com.aitype.android.p`
+* **AnySoftKeyboard -**	`com.menny.android.anysoftkeyboard`
+* **AOSP -** `com.android.inputmethod.latin`
+* **Chrooma -**	`com.gamelounge.chroomakeyboard`
+* **Fancykey -** `com.pinssible.fancykey`
+* **Fleksy -** `com.syntellia.fleksy.keyboard`
+* **GBoard -** `com.google.android.inputmethod.latin`
+* **Ginger -** `com.gingersoftware.android.keyboard`
+* **GO -** `com.jb.emoji.gokeyboard&h`
+* **Grammarly Keyboard -** `com.grammarly.android.keyboard`
+* **Hacker’s keyboard -** `org.pocketworkstation.pckeyboard`
+* **Minuum -** `com.whirlscape.minuumfree`
+* **Multiline O Keyboard -** `kl.ime.oh`
+* **OpenBoard -** `org.dslul.openboard.inputmethod.latin`
+* **Simple Keyboard -**	`rkr.simplekeyboard.inputmethod`
+* **Swiftkey -** `com.touchtype.swiftkey`
+* **Vysor -** `com.koushikdutta.vysor`
 
 -----

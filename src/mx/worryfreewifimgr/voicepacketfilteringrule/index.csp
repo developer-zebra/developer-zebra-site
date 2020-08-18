@@ -17,4 +17,4 @@ Used to enter one or more filtering rules (TCP, UDP, SCTP, etc.) to specify whic
 **Parm value input rules**: 
 
 * String from 1&ndash;64 characters in the format "protocol:port"
-* Separate multiple entries with commas (i.e. “TCP:5060, RTP:1024, RTP:1025)
+* Separate multiple entries with commas (i.e. “TCP:5060, RTP:1024, RTP:1025")

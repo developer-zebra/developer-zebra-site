@@ -126,7 +126,7 @@ Used to enter the Action to perform on an app or app-related setting or action. 
 * **`IMPORTANT:` See [Overview section](#overview) regarding changes to Android 10 permissions**.
 * **Virtual keyboards (aka soft input panels) are enabled and disabled in the same way as apps**, by referenceing their package name with the desired AppMgr Action. Disabled keyboards do not appear for selection in the Android Settings panel. See the Overview section for a [list of virtual keyboards](#virtualkeyboards).
 * On some older devices, **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
-* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
+* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. See [Power Manager](/mx/powermgr/#suppress-reboot) for more information. 
 * **EnableGMSApps and DisableGMSApps Actions are supported only on SDM660-platform devices, which includes (but is not limited to)**:
  * ET51
  * ET55

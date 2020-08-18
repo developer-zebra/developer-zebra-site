@@ -51,7 +51,7 @@ Virtual keyboards (aka soft input panels) are enabled and disabled by referencei
 * **Fleksy -** `com.syntellia.fleksy.keyboard`
 * **GBoard -** `com.google.android.inputmethod.latin`
 * **Ginger -** `com.gingersoftware.android.keyboard`
-* **GO -** `com.jb.emoji.gokeyboard&h`
+* **GO -** `com.jb.emoji.gokeyboard`
 * **Grammarly Keyboard -** `com.grammarly.android.keyboard`
 * **Hacker’s keyboard -** `org.pocketworkstation.pckeyboard`
 * **Minuum -** `com.whirlscape.minuumfree`

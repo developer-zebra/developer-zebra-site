@@ -11,7 +11,7 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 4.3 User Guide, Revision A; <!-- StageNow MN-003401; --> May, 2020
+StageNow 4.3 User Guide, Revision A; <!-- StageNow MN-003401; --> August, 2020
 
 #### Covers StageNow 4.3
 
@@ -81,9 +81,9 @@ The following software must be installed on the staging workstation prior to usi
  * Skip copying and keep it at the source
 
 **Adds support for [Access Manager](../csp/access) CSP of MX 9.4** for Permission Access Action for legacy device support. **This allows EMM administrators to**: 
-* Automatically grant launch permission any application while preventing the permissions pop-up from appearing on the device
-* Designate an entire CSP as Protected
-* Designate a specific Function Group (of a CSP) as Protected
+* "Silently" grant permissions to any app without causing the permission pop-up to appear on the device
+* Designate an entire CSP as Protected from unauthorized use by apps
+* Designate a specific Function Group (of one or more CSPs) as Protected
 
 -----
 

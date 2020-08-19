@@ -7,7 +7,7 @@ productversion: '8.1'
 
 ## Overview
 
-Barcode Input options specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
+Barcode Input options specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders supported by DataWedge are explained below,  including commonly used decoders: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
 
 Barcode Input is used to specify: 
 

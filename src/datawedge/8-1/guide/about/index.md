@@ -54,7 +54,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 ### Main Functionality
 DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
 #### Data Capture
-* Scan and process all [major barcode decoders](../input/barcode/#decoderselection)
+* Scan and process all [major barcode decoders](../input/barcode/#decoderselection), including: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE
 * Use existing apps to [acquire barcodes](../input/barcode), images,  mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../gettingstarted)
 * Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)

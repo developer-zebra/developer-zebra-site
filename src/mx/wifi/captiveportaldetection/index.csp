@@ -28,4 +28,4 @@ parm:
       description: Disables the detection of a captive portal. 
 ---
 
-This is the On/Off switch for the detection of a Captive Portal, which requires user interaction to activate an open Wi-Fi connection. Captive portals are often used on public-access networks such as those at airports, hotels and coffee shops. **Disabling captive portal detection (code 0) effectively blocks a device from connecting to such networks**.  
+This is the On/Off switch for the detection of a Captive Portal, which requires user interaction to activate an open Wi-Fi connection. Captive portals are often used on public-access networks such as those at airports, hotels and coffee shops. **Disabling captive portal detection (option 0) effectively blocks a device from connecting to such networks**.  

@@ -32,9 +32,9 @@ parm:
       description: Turns Unknown Sources Off, preventing apps from being installed by the device user from sources other than Google Play.
 ---
 
-Controls whether apps can be installed (on devices with or without GMS) by the device user from sources other than Google Play. **Off by default** (code 2) on Zebra devices with GMS; On by default on non-GMS devices. 
+Controls whether apps can be installed (on devices with or without GMS) by the device user from sources other than Google Play. **Off by default** (option 2) on Zebra devices with GMS; On by default on non-GMS devices. 
 
-**IMPORTANT**: On non-GMS devices, disabling apps from Unknown Sources (code 2) **prevents only the <i>device user</i> from installing apps** on the device. It does NOT prevent apps from being installed through the App Manager or other programmatic means. 
+**IMPORTANT**: On non-GMS devices, disabling apps from Unknown Sources (option 2) **prevents only the <i>device user</i> from installing apps** on the device. It does NOT prevent apps from being installed through the App Manager or other programmatic means. 
 
 <!-- 12/3/19- condensed to above. 
 Android devices have a feature called the Unknown Sources Option that controls whether the device user is allowed to install applications (`.apk` files) that originate from sources other than the Google Play Store. The primary purpose for this feature is to block "side loading" of `.apk' files that pose risks since they did not go through Google's Play-Store vetting process.

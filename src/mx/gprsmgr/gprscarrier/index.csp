@@ -6,7 +6,7 @@ order: 3
 mx: "4.1.1"
 apilevel: "16"
 devicetype: A
-info: If an APN other than the carrier's standard public APN is desired, select "Custom" (code 0) and supply the values provided by the company for that APN.
+info: If an APN other than the carrier's standard public APN is desired, select "Custom" (option 0) and supply the values provided by the company for that APN.
 parm:
   pivotal: Yes
   name: GprsCarrier

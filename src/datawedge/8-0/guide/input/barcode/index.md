@@ -929,6 +929,8 @@ Note: **Handling large image data -** Since the data size of a single image (whi
 
 ### OCR A
 
+OCR A is typically used for financial documents.
+
 **OCR A Variant -** Font variants supported:
 * **Full ASCII -** !"#$()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ\^
 * **Reserved 1 -** $*+-./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -938,6 +940,8 @@ Note: **Handling large image data -** Since the data size of a single image (whi
 ------
 
 ### OCR B
+
+OCR B is typically used for government issued documents, such as financial and travel documents, like driver licenses and passports.
 
 **OCR B Variant -** Font variants supported:
 * **Full ASCII -** !#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ^|Ñ

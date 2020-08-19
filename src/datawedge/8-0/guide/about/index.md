@@ -55,7 +55,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
 #### Data Capture
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
-* Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
+* Use existing apps to [acquire barcodes](../input/barcode), images,  mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../gettingstarted)
 * Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
 * Use voice capture to acquire data with [Voice Input](../input/voice)

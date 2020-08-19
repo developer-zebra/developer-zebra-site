@@ -13,18 +13,18 @@ parm:
   name: FTMDeployment_Mode
   type: list
   list:
-    - code: 1
-      mx: "10.2"
-      apilevel: "29"
-      devicetype: A
-      name: Enable
-      description: Enables the use of Enhanced Infrastructure FTM on the device. 
     - code: 0
       mx: "10.2"
       apilevel: "29"
       devicetype: A
-      name: Disable
-      description: Enables the use of Standard FTM on the device.
+      name: Standard (FTM enabled)
+      description: Signifies the use of an access point with support for 802.11mc added as an enhancement. 
+    - code: 1
+      mx: "10.2"
+      apilevel: "29"
+      devicetype: A
+      name: Enhanced Infra (FTM-enabled)
+      description: Signifies the use of an access point with built-in support for 802.11mc.
 ---
 
-Used to select Standard or Enhanced Infrastructure FTM specifications on the device. 
+Used to select whether the Wi-Fi access point to be used by the device includes built-in support for 802.11mc (code = 0) or whether it was added as an enhancement. 

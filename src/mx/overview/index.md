@@ -42,10 +42,10 @@ A DSD is created and maintained by the author of a CSP and each CSP must have a 
 
 ### Mobility Extensions (MX)
 
-MX is the umbrella term used to refer collectively to the entire experience offered by Zebra Android devices. This means that MX represents all the value that a BSP offers over and above that provided by AOSP, including:
+MX is the umbrella term used to refer collectively to the experience and configuration capabilities offered by Zebra Android devices. MX represents all the value that a BSP offers over and above that provided by the Android operating system, including:
 
-* Changes and extensions to the Core Operating System (as implemented by OSX)
-* Value-Add Features (i.e. Multi-User, Whitelisting)
+* Changes and extensions to the Android OS (implemented by Zebra OSX)
+* Value-Add features such as key mapping and threat management
 * The MX Management Framework (MXMF)
 * Configuration Service Providers (CSPs)
 * Changes and extensions to standard applications (i.e. Settings UI, Browser, Email Client, etc.)
@@ -68,6 +68,20 @@ MXMS is a term used to refer to the MXMF and all CSPs that are registered with t
 MXMS can be thought of as "the MXMF and a collection of currently registered CSPs." Although applications submit XML to the MXMF, it is more accurate to describe the MXMS (not just the MXMF) as the entity through which applications set and/or query configuration settings.
 
 >**Note:** All components described above may or may not be present on a device. Specifically, MXMF and the CSPs may be absent. Therefore, some or all of the components required for the device might need to be installed before they could be configured.
+
+### Multi-user Capabilities
+
+**Zebra devices and MX support Android Multi-user capabilities** with the following provisions: 
+
+* **MX works <u>only</u> in the Primary user/profile** and <u>never</u> in a secondary user/profile. 
+* If Android Multi-user mode is enabled and a secondary user is created, **MX will fail if invoked in the secondary user**. 
+* Secondary users inherit settings applied using MX in the Primary user. If a Work Profile is created (by enrolling a Profile Owner), MX fails if invoked in the Work Profile but the Work Profile inherits settings applied using MX in the Primary user's profile. 
+
+### Operating System Extensions (OSX)
+
+OSX is the term used to refer to a Zebra-proprietary implementation of changes and extensions to the standard AOSP as included in a BSP. The version of OSX in a device is the primary way to determine which changes and extensions are present in the operating system of that device. **The root OSX version number always matches the root number of the Android version that it extends**. For example, Android 5.x would always be extended by OSX 5.x. As a general rule, the version of OSX in a device can be changed ONLY by loading a different BSP (containing a different version of OSX) into that device using the OS update process. 
+
+-----
 
 ## MX Architecture and Data Flow
 

@@ -149,6 +149,7 @@ For more information about approved languages or to download a localized operati
 * [Secure access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
 * New [Trigger Wakeup and Scan](../input/barcode#readerparams) Reader Parameter to trigger scanning when device is in a suspended/screen-off state. New corresponding [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
 * Updated licensing screen.
+* For DataWedge 8.1.45, new [Scanning Modes](../input/barcode/#configurescannersettings) option available in the Configure Scanner Settings section of Barcode Input.
 
 -----
 ## Recent Version History

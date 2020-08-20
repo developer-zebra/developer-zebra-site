@@ -778,7 +778,7 @@ For more information, see [Barcode Input](../../input/barcode#scanningmodes).
 
   <tr>
    	<td>scanning_mode</td>
-	<td>3 - MultiBarcode<br>5 - SimulScan</td>
+	<td>3 - MultiBarcode<br>5 - SimulScan, or Document Capture for DataWedge v8.1.45 or higher</td>
   </tr>
 
   <tr>

@@ -122,10 +122,34 @@ _Profile settings_
 
 Tap **Configure scanner settings**. A list of scanner configuration settings appears.
 
-<img style="height:350px" src="configure_scanner_settings_options.png"/>
+<img style="height:350px" src="scanner_configuration.png"/>
 _Scanner configuration_
 
 **Note:** The **Configure scanner settings** option is still accessible even when the selected scanner in **Scanner Selection** is disconnected. _In previous DataWedge versions prior to 6.8, all the scanner parameters (decoders, decoder params, etc.) are grayed-out and inaccessible._
+
+### Scanning Modes
+
+**Scanning Modes** is used to select the mode to scan barcodes starting with DataWedge 8.1.45: 
+* **Single -** normal mode to scan an individual barcode
+* **UDI -** scan Unique Device Identification (UDI) barcodes such as GS1, HIBCC and ICCBBA
+* **Disabled –** when a scanning mode, such as MultiBarcode or Document Capture, is selected in the **NG SimulScan Configuration** screen, scanning mode in this section is automatically disabled, preventing any other selection. 
+
+
+<table>
+
+ <tr>
+  <td>
+  <img style="height:350px" src="scanner_config_scanning_modes.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="scanning_modes_sc.png"/>
+  </td>
+ </tr>
+
+</table>
+<i>Scanner Configuration - Scanning Modes</i>
 
 ------
 
@@ -157,20 +181,26 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#
 ### Scanning Modes
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
-* **Single -** normal mode to scan an individual barcode 
-* **[Basic MultiBarcode](#basicmultibarcodeparams) -** multiple barcodes read in a single scan 
-* **[SimulScan](#documentcapturetemplate) -** document capture based on a specified custom template
+* **Single -** normal mode to scan an individual barcode; this does not exist starting with DataWedge 8.1.45.
+* **[Basic MultiBarcode](#basicmultibarcodeparams)** / **[MultiBarcode](#basicmultibarcodeparams) -** multiple barcodes read in a single scan.  In DataWedge 8.1.45 or higher, this option is displayed as **MultiBarcode.**
+* **[SimulScan](#documentcapturetemplate)** / **[Document Capture](#documentcapturetemplate) -** document capture based on a specified custom template.  In DataWedge 8.1.45 or higher, this option is displayed as **Document Capture.** 
+* **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 <table>
 
  <tr>
   <td>
-  <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
+    <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
   <td>
-  <img style="height:350px" src="scanning_modes_ngss.png"/>
+    <img style="height:350px" src="scanning_modes_ngss.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+    <img style="height:350px" src="scanning_modes_ngss_8.1.45.png"/>
   </td>
  </tr>
 

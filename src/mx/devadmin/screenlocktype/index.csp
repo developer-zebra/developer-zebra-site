@@ -52,5 +52,3 @@ parm:
 Controls whether a screen lock will be invoked when the device powers up or user inactivity exceeds the Screen-Lock Timeout Interval parameter, and which Android lock screen will be displayed. 
 
 **`NOTE FOR EHS ADMINS:`** Installation of [Zebra Enterprise Home Screen](/ehs) disables the Android Settings panel on devices by default, which causes any execution of this parameter to fail. To use this parameter on devices that will be running EHS, **Zebra recommends setting the ScreenLockType *<u>before</u>* EHS is installed on target device(s)**. To set the ScreenLockType on devices already running EHS, enable EHS [Privileged Settings](https://techdocs.zebra.com/ehs/latest/guide/features/#privilegedsettings) on those devices to temporarily activate the Settings app, set ScreenLockType as desired, then disable Privileged Mode to re-secure the device." 
-
-http://zebra-stage.github.io/ehs/4-0/guide/features/#privilegedsettings

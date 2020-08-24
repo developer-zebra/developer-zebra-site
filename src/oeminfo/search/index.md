@@ -10,7 +10,7 @@ menu:
       url: /oeminfo/about
     - title: Consume Data
       url: /oeminfo/consume
-    - title: Publish
+    - title: Publish Data
       url: /oeminfo/publish
     - title: FAQs
       url: /oeminfo/faq

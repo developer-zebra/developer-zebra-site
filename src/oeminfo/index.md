@@ -3,7 +3,7 @@ title: OEMConfig
 layout: redirect.html
 redirect_url: /oeminfo/9-0/about
 product: OEMConfig
-productversion: '9.0'
+productversion:
 ---
 
 ### Loading the latest OEMinfo docs...

@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 layout: guide.html
 product: OEMinfo
-productversion: '9.0'
+productversion:
 menu:
   items:
     - title: About

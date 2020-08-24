@@ -1,5 +1,5 @@
 ---
-title: Consuming Data with OEMinfo
+title: Consuming Data
 layout: guide.html
 product: OEMinfo
 productversion:

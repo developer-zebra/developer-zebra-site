@@ -19,9 +19,19 @@ menu:
 
 ## Overview
 
-Zebra OEMConfig is an administrative tool for configuring Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, the use of Managed Configurations is the only available method based on publicly available specifications developed by Google and the Android community. OEMConfig interfaces with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra Android devices. 
+Standards-based APIs through which apps can acquire information about Zebra device capabilities and settings.
 
-Over time, many of the capabilities once available only through proprietary mechanisms such as MX have been added by the Android development community. Starting as "Android for Work," these capabilities are now available as "Android Enterprise" APIs or Android Managed Configurations, both of which are based on publicly available specifications. Zebra is adopting both as part of the natural evolution of its device management system. 
+<!-- 
+Zebra OEMinfo includes a set of APIs for the OEM Info Content Provider Framework for data consumer applications. 
+
+
+
+This document covers the methodology for the Data Consumer Applications to read content from OEM Info Content Provider Framework.
+The document identifies the major components of the software architecture and details the interactions between those components. 
+1.3 Intended Audience
+This document is intended for technical audiences and software developers who are designing the above said Data Consumer Applications.
+Prior to ratification it is intended for reviewers of the proposed software architecture. After ratification, the document is intended as a technical reference for developers.
+
 
 ### Using OEMConfig
 
@@ -35,7 +45,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 * **[FAQ](../faq)** | Frequently asked questions about OEMConfig 
 * **[OEMConfig Managed Configurations](../mc)** | Descriptions of all configurable functions
-
+ -->
 <!-- 
 
 **Managed Configurations can**:

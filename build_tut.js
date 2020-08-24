@@ -236,9 +236,9 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
-    //OEMinfo 1.0
+    //OEMinfo (no folders)
     .use(foldermenu({
-        folder: 'oeminfo/1-0/',
+        folder: 'oeminfo/',
         automenu: true,
         ascontent: true
     }))

@@ -15,6 +15,6 @@ menu:
       url: /oeminfo/9-0/mc
     - icon: fa fa-search
       url: /oeminfo/9-0/search
-product: OEMConfig
+product: OEMinfo
 productversion: '9.1'
 ---

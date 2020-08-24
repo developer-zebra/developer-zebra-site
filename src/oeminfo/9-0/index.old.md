@@ -4,7 +4,7 @@ insert:
   file: oeminfo/9-0/about/index.md
 layout: guide.html
 redirect_url: /oeminfo/9-0/about
-product: OEMConfig
+product: OEMinfo
 productversion: '9.1'
 menu:
   items:

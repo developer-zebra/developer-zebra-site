@@ -7,12 +7,12 @@ menu:
   items:
     - title: About
       url: /oeminfo/about
-    - title: Setup
-      url: /oeminfo/setup
+    - title: Consume Data
+      url: /oeminfo/consume
+    - title: Publish
+      url: /oeminfo/publish
     - title: FAQs
       url: /oeminfo/faq
-    - title: Managed Configurations
-      url: /oeminfo/mc
     - icon: fa fa-search
       url: /oeminfo/search
 ---

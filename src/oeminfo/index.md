@@ -1,7 +1,7 @@
 ---
 title: OEMConfig
 layout: redirect.html
-redirect_url: /oeminfo/9-0/about
+redirect_url: /oeminfo/about
 product: OEMConfig
 productversion:
 ---

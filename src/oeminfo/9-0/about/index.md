@@ -2,7 +2,7 @@
 title: About OEMConfig
 layout: guide.html
 product: OEMinfo
-productversion: '9.1'
+productversion: '9.0'
 menu:
   items:
     - title: About

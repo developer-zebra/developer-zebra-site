@@ -5,7 +5,7 @@ insert:
 layout: guide.html
 redirect_url: /oeminfo/9-0/about
 product: OEMinfo
-productversion: '9.1'
+productversion: '9.0'
 menu:
   items:
     - title: About

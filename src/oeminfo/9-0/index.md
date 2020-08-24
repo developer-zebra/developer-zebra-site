@@ -6,15 +6,15 @@ menu:
   title: OEMConfig tab menus
   items:
     - title: About
-      url: /oeminfo/9-0/about
+      url: /oeminfo/about
     - title: Setup
-      url: /oeminfo/9-0/setup
+      url: /oeminfo/setup
     - title: FAQs
-      url: /oeminfo/9-0/faq
+      url: /oeminfo/faq
     - title: Managed Configurations
-      url: /oeminfo/9-0/mc
+      url: /oeminfo/mc
     - icon: fa fa-search
-      url: /oeminfo/9-0/search
+      url: /oeminfo/search
 product: OEMinfo
 productversion: '9.0'
 ---

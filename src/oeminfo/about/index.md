@@ -1,5 +1,5 @@
 ---
-title: About OEMConfig
+title: About Zebra OEMinfo
 layout: guide.html
 product: OEMinfo
 productversion:

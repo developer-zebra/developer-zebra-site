@@ -1,5 +1,5 @@
 ---
-title: OEMConfig Setup
+title: Consuming Data with OEMinfo
 layout: guide.html
 product: OEMinfo
 productversion:

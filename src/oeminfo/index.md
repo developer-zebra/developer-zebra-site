@@ -1,5 +1,5 @@
 ---
-title: OEMConfig
+title: OEMinfo
 layout: redirect.html
 redirect_url: /oeminfo/about
 product: OEMConfig

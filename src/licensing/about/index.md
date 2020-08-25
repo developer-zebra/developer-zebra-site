@@ -350,7 +350,6 @@ The MX Management System (MXMS) is **Zebra's proprietary XML-based communication
 * 2.4GHzChannels
 * 5.0GHzChannels
 * 802.11v
-* 802.11w
 * Authentication (LEAP option)
 * Authentication (EAP-FAST-GTC option)
 * AutoTimeConfig

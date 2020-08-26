@@ -6,6 +6,7 @@ order: 6
 mx: "4.3"
 osx: "3.5"
 devicetype: A
+info: Zebra recommends against use of the ExchangeActiveSyncCommand option. 
 parm:
   presentif: Shown when the Threat Action is "Turn On" or "Turn Off"
   pivotal: Yes
@@ -38,6 +39,7 @@ parm:
       description: A custom Threat defined by an intent that can be triggered from an application.
     - code: 4
       devicetype: A
+      info: Zebra recommends against the use of this option.
       name: ExchangeActiveSyncCommand 
       mx: "4.3"
       osx: "3.5"

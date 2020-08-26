@@ -19,7 +19,7 @@ menu:
 
 ## Overview
 
-Standards-based APIs through which apps can acquire information about Zebra device capabilities and settings.
+Zebra OEMinfo is a service included with Zebra devices that provides a set of standards-based APIs through which apps can acquire information about Zebra device capabilities and settings.
 
 <!-- 
 Zebra OEMinfo includes a set of APIs for the OEM Info Content Provider Framework for data consumer applications. 

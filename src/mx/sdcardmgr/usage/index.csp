@@ -33,4 +33,4 @@ parm:
 
 Used to control access to external device storage, which can include an SD card or USB-connected storage media. When Enabled (option 1), access to all external storage is completely blocked. 
 
-**Note:** Removable media can become inaccessible by means other than blockage by this CSP. For example, an unblocked Micro SD card will be inaccessible if physically removed from the device or if encrypted and the Named Key has been removed from the Key Storage Database (see [EncryptMgr](/mx/encryptmgr)). 
+**Note:** Removable media can become inaccessible by means other than blockage by this CSP. For example, an unblocked Micro SD card is inaccessible if physically removed from the device or if encrypted and the Named Key has been removed from the Key Storage Database (see [EncryptMgr](/mx/encryptmgr)). 

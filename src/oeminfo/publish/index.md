@@ -1,5 +1,5 @@
 ---
-title: Publishing Data
+title: Providing Data
 layout: guide.html
 product: OEMinfo
 productversion:
@@ -9,7 +9,7 @@ menu:
       url: /oeminfo/about
     - title: Consume Data
       url: /oeminfo/consume
-    - title: Publish Data
+    - title: Provide Data
       url: /oeminfo/publish
     - title: FAQs
       url: /oeminfo/faq
@@ -18,6 +18,15 @@ menu:
 ---
 
 ## Overview
+
+<img alt="image" style="height:350px" src="stagenow_access_mgr.png"/>
+_Click image to enlarge_. 
+<br>
+
+<img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
+_Click image to enlarge_. 
+<br>
+
 
 **ZDPI -** Zebra Data Provider Inferface
 

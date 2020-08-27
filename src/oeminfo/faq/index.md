@@ -9,7 +9,7 @@ menu:
       url: /oeminfo/about
     - title: Consume Data
       url: /oeminfo/consume
-    - title: Publish Data
+    - title: Provide Data
       url: /oeminfo/publish
     - title: FAQs
       url: /oeminfo/faq
@@ -19,6 +19,7 @@ menu:
 
 ## Overview
 
+Below are some common questions related to OEMinfo and its related components and use cases. 
 
 ### What does ZDPI stand for? 
 

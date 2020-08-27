@@ -9,7 +9,7 @@ menu:
       url: /oeminfo/about
     - title: Consume Data
       url: /oeminfo/consume
-    - title: Publish Data
+    - title: Provide Data
       url: /oeminfo/publish
     - title: FAQs
       url: /oeminfo/faq
@@ -19,8 +19,11 @@ menu:
 
 ## Overview
 
-**Data Consumers are apps that need to retrieve device information**. Examples of such Zebra apps include Zebra StageNow and OEMconfig, as well as Power Manager and other configuration service providers (CSPs) built into Zebra devices. Information for consumption is made available through **Data Provider apps**. Both types of apps&ndash;Consumers and Providers&ndash;use the Zebra Data Provider Interfaces (ZDPIs) included in the OEMinfo Content Provider Framework. 
+**Data Consumers are apps seeking to retrieve device information**. Examples of such apps from Zebra include StageNow and OEMconfig device configuration tools, as well as Power Manager and other built-in configuration service provider (CSP) modules that interface directly with Zebra's device-API layer. 
 
+Information for consumption is made available through **Data Provider apps**. Both app types&ndash;Consumers and Providers&ndash;use the [Zebra Data Provider Interfaces (ZDPIs)](../faq/whatdoeszdpistandfor) included in the [OEMinfo Content Provider Framework](../faq/oeminfocontentproviderframework). 
+
+-----
 
 ### Consuming Data
 

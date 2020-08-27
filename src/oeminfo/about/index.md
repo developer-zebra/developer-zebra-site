@@ -19,7 +19,14 @@ menu:
 
 ## Overview
 
-Zebra OEMinfo is a service included with Zebra devices that provides a set of standards-based APIs through which apps can acquire information about Zebra device capabilities and settings.
+Zebra OEMinfo is a service included with Zebra devices that provides a set of APIs based on public specifications through which apps can acquire information about Zebra device capabilities and settings.
+
+The mechanism provided by OEMinfo allows apps to acquire some or all of the information about a given Zebra device from a set of data published through OEMinfo. A data set can contain proprietary or non-proprietary information, and can be limited to “designated receivers” or open to all. 
+
+ and one place so that consumer application need not call many different APIs
+Zebra wants to allow access to certain information within the data set to be limited to selected
+The mechanism used to share the data could be suitable to become a Google-promoted standard.
+
 
 <!-- 
 Zebra OEMinfo includes a set of APIs for the OEM Info Content Provider Framework for data consumer applications. 
@@ -31,21 +38,16 @@ The document identifies the major components of the software architecture and de
 1.3 Intended Audience
 This document is intended for technical audiences and software developers who are designing the above said Data Consumer Applications.
 Prior to ratification it is intended for reviewers of the proposed software architecture. After ratification, the document is intended as a technical reference for developers.
-
-
-### Using OEMConfig
-
-OEMConfig provides a single interface for managing Zebra Android devices regardless of the underlying APIs required to get the job done. OEMConfig works through Android Enterprise APIs when possible, and through Managed Configurations when no Android Enterprise API is available. 
-
-OEMConfig and the Zebra schema are available from the Google Play Store and must be used together to configure Zebra Android devices. The Schema defines the functions available for configuration and provides the data necessary to present the corresponding data-driven UI for configuring those functions. This mechanism allows Zebra to make a new Schema available as soon as new features are available for use. 
+--> 
 
 -----
 
 ## See Also
 
-* **[FAQ](../faq)** | Frequently asked questions about OEMConfig 
-* **[OEMConfig Managed Configurations](../mc)** | Descriptions of all configurable functions
- -->
+* **[FAQ](../faq)** | Frequently asked questions about OEMinfo
+* **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)**
+**[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)**
+
 <!-- 
 
 **Managed Configurations can**:

@@ -26,7 +26,7 @@ Below are some common questions related to OEMinfo and its related components an
 **A: ZDPI stands for Zebra Data Provider Interface**, and is the mechanism through which device data is published and consumed using OEMinfo.
 
 
-#### More FAQs coming soon
+### More FAQs coming soon
 
 
 <!-- 

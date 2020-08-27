@@ -32,9 +32,12 @@ _Click image to enlarge_.
 
 2.2 OEM Info Content Provider
 Content provider framework on Android is a standard mechanism to centralize content in one place and have many applications access it as needed. It essentially behaves like a database where publisher applications can query it. 
+
 A Zebra value-add applications (Publisher) can insert data into this central repository and Consumer applications can retrieve this data from the provider. Both the data Publishers and the Consumers will follow the content provider client model to insert (put) and retrieve (get) data.
+
 Together, OEM Info Content Provider, Publisher and Consumer will offer a standard, reliable model to handle sharing of OEM Specific proprietary information on Zebra Devices.
 OEM Info Content Provider will be managing access to central data repository using a standard authority, for example: oem_info
+
 This model could become a recommendation to Google and promoted by Google for use by all OEMs.
  
 2.3 OEM Info Content Provider Architecture
@@ -43,10 +46,13 @@ The below diagram illustrates the HLD for the Zebra OEM Info Content Provider fr
 PIC: oeminfo content provider framework
 
 • OemInfo : OemInfo is the data provider. This framework also supports addition of more data providers in the future.
+
 • ZDPI : Service to transmit data from Zebra data publishers (OemInfo) to the data consumer applications. 
-o Access Verifier component verifies the permissions of the application requesting data.
-o Content Provider component provider implements the core framework which provides access to the Database.
+ o Access Verifier component verifies the permissions of the application requesting data.
+ o Content Provider component provider implements the core framework which provides access to the Database.
+
 • Access Manager CSP is an MX component which can provide a secure mechanism for verifying if a 3rd party applications has access to a ‘named’ service component (For e.g URI).
+
 • Zebra Applications: These applications are Zebra owned applications which need OemInfo data For eg: PowerMgr CSP, StageNow, FOTA, DT etc.
 
 2.4 Authorization Mechanism
@@ -62,10 +68,15 @@ Applications which fall into the following paradigms will be considered as Zebra
 2.4.2 3rd Party Consumer Applications
 
 3rd Party Applications should be provisioned by customer via. the Access Manager CSP. This can be achieved using StageNow. EMMs can also programmatically provision the Access Manager CSP using MX XMLs.
+
 Information needed for configuring Access Manager CSP from StageNow or MX XML.
+
 • Service Access Action : “Allow Caller to Call Service”
+
 • Service Identifier : ZDPI URI to access
+
 • Caller Package Name : Package Name of the 3rd Party Application
+
 • Caller Signature : App Certificate of the 3rd Party Application
 
 PIC - SN screenshot
@@ -75,24 +86,40 @@ PIC - SN screenshot
 ## DATA ZDPI URIs (put on its own page?) 
 
 3.1 Generic Content Provider Schema
+
 A schema URI schema has 3 parts “Authority”, “Package Name” and “API”.
 content://<Authority>/<Provider>/<API>
-• Authority: Content provider authority name
-• Provider : A unique name in the given authority. (eg. DeviceInfo, Battery)
-• API: Api name in the given package name (eg. model,manufcaturer)
-• For Example, to get the device serial the content URI would be
-content://oem_info/oem.zebra.secure/build_serial
-3.2 Device Serial Number URI
-• URI : "content://oem_info/oem.zebra.secure/build_serial"
-3.3 IMEI Number URI (Android 10 only)
-• URI : “content://oem_info/wan/imei”
-3.4 OS Update URI
-• URI : “content://oem_info/oem.zebra.osupdate/”
-• API :
-o “status” - Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
 
-o “detail” - Text representation of the status, contains detailed reason.
-o “ts” - Epoch time when the intent is received
+• Authority: Content provider authority name
+
+• Provider : A unique name in the given authority. (eg. DeviceInfo, Battery)
+
+• API: Api name in the given package name (eg. model,manufcaturer)
+
+• For Example, to get the device serial the content URI would be
+
+content://oem_info/oem.zebra.secure/build_serial
+
+3.2 Device Serial Number URI
+
+• URI : "content://oem_info/oem.zebra.secure/build_serial"
+
+3.3 IMEI Number URI (Android 10 only)
+
+• URI : “content://oem_info/wan/imei”
+
+3.4 OS Update URI
+
+• URI : “content://oem_info/oem.zebra.osupdate/”
+
+• API :
+
+ o “status” - Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
+
+ o “detail” - Text representation of the status, contains detailed reason.
+
+ o “ts” - Epoch time when the intent is received
+
 3.5 Other URI
 Please reach out to ZDS Team for any other URIs. Refer Appendix-1
 

@@ -19,7 +19,14 @@ menu:
 
 ## Overview
 
-FAQs coming soon
+
+### What does ZDPI stand for? 
+
+**A: ZDPI stands for Zebra Data Provider Interface**, and is the mechanism through which device data is published and consumed using OEMinfo.
+
+
+#### More FAQs coming soon
+
 
 <!-- 
 Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 

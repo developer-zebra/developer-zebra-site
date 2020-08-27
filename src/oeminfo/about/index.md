@@ -42,7 +42,7 @@ Prior to ratification it is intended for reviewers of the proposed software arch
 
 -----
 
-## See Also
+## Also See
 
 * **[FAQ](../faq)** | Frequently asked questions about OEMinfo
 * **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)**

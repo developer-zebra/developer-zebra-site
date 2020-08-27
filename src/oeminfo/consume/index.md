@@ -19,77 +19,192 @@ menu:
 
 ## Overview
 
+**Data Consumers are apps that need to retrieve device information**. Examples of such Zebra apps include Zebra StageNow and OEMconfig, as well as Power Manager and other configuration service providers (CSPs) built into Zebra devices. Information for consumption is made available through **Data Provider apps**. Both types of apps&ndash;Consumers and Providers&ndash;use the Zebra Data Provider Interfaces (ZDPIs) included in the OEMinfo Content Provider Framework. 
 
-<!-- 
-Zebra OEMConfig is an administrative tool for performing Actions and settings configurations on Zebra devices running Android. OEMConfig works with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra devices. 
 
-OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store before it can be used to perform Actions and configure settings. These activities are typically done using an Enterprise Mobility Management (EMM) or Unified Endpoint Management (UEM) system.
+### Consuming Data
 
-### System Requirements
+Retrieving data through OEMinfo is accomplished in the same way as querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). 
 
-* **Fully managed Zebra device(s)** running Android 7.x (Nougat) or higher
-* **MX 9.1 or higher*** on device(s) is recommended. [Which version is installed?](/mx/mx-version-on-device)
-* A [UEM or EMM](../faq/#qwhatsauem) system with support for [OEMConfig-compliant admin tools](../faq)
+4.1 Permissions to read OEMINFO content provider
+This step is mandatory to read any data from OemInfo content provider.
+Add the following read permissions the AndroidManifest.xml file.
 
-<i><font size="2" color="black"> &#42;OEMConfig runs on devices with **MX versions <u>older</u> than MX 9.1**, but attempting to access newer MX features not implemented in older MX versions will result in error(s).</font></i>
-<i><font size="2" color="black"> See the [MX Feature Matrix](/mx) for a complete list of features in each MX version.</font></i>
+    <uses-permission android:name=”com.zebra.provider.READ”>
 
-&#42;_The OEMConfig app runs on devices with **MX versions <u>older</u> than 9.1**. However, attempting to access newer MX features not implemented in older MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features in each MX version_. 
- -->
-<!-- ### Download and install
-The exact process for setting up an EMM console to use Zebra OEMConfig varies widely depending on the device management system in use. For EMMs compatible with the Google Play system, the generally required steps are listed below. 
+4.2 Pseudo-code for reading Serial Number
 
-##### EMM General Setup:
-* [Download OEMConfig app](https://play.google.com/store/apps/details?id=com.zebra.oemconfig.common&hl=en_US) from Google Play Store  
-* Point EMM console to Zebra schema to display data-driven UI for configuring Zebra devices
-* Create *Transaction(s)* using [Managed Configurations](../mc) described in schema
-* Push `OEMConfig.apk` to the Zebra device(s) to be configured
-* Push *Transaction(s)* to device(s) for consumption by OEMConfig tool
+4.2.1 Get the Authority, Provider Name and API
+The consumer application should have the details about the content provider which its wants to query. The information is the AUTHORITY, PROVIDER and the API.
 
-##### Using CloudDPC? 
-For EMMs that use the Android Management APIs and Google's CloudDPC device policy controller as their EMM agent, Google offers an option to define a JSON document that specifies a set of `.apk`s to be installed, Managed Configurations to be applied to those `.apk`s, and other non-application-oriented management operations. In such a case, some of the steps above would happen together in a way that might not be obvious to the administrator or console operator.
+String SERIAL_URI = "content://oem_info/oem.zebra.secure/build_serial"
 
-##### About The Schema
-Every `.apk` that supports Managed Configurations must provide a schema, which defines the Managed Configurations supported by that `.apk`. The Play Store provides server-to-server APIs that allow an EMM server to acquire the schema from the Play Store for the published `.apk`. There's more about schemas on the [FAQ page](../faq). -->
+4.2.2 Getting the Data 
+Querying the data from the OEM Info Content Provider can be done using the standard android cursor query methods. Sample code below illustrates the methods to query data.
 
-<!-- ##### Other EMMs; AOSP, GMS-restricted Devices
-1. Download OEMConfig from the [Zebra Support Portal](http://zebra.com/support); the Zebra schema and other required files are automatically included. 
-3. Push `OEMConfig.apk` to the Zebra device(s) to be configured.
-4. Point the EMM to the Zebra schema to display the Zebra data-driven UI for configuring Zebra devices. 
-5. Create *Transaction(s)* using the [Managed Configurations](../mc) described in the Zebra schema.
-6. Push *Transaction(s)* to device(s). 
- -->
------
-<!-- 
+// Prepare the URI
+public void getData() {
+    final Uri myUri = Uri.parse(SERIAL_URI);
+    new UpdateAsync().execute(myUri.toString());
+}
+
+// Always query for data in Async task or background thread
+class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+    private String myUri;
+
+    @Override
+    protected Cursor doInBackground(String... args) {
+        myUri = args[0];
+
+        // Query the content provider
+        ContentResolver cr = getContentResolver();
+        Cursor cursor = cr.query(Uri.parse(myUri),
+                            null, null, null, null);
+
+        // Read the cursor
+        cursor.moveToFirst();
+        String serialNumber = cursor.getString(0);
+        Log.i(TAG, "Device Serial Number is : ” + serialNumber);            
+        return cursor;
+    }
+}
+
+4.3 Pseudo-code for reading IMEI 
+4.3.1 Get the Authority, Provider Name and API
+The consumer application should have the details about the content provider which its wants to query. The information is the AUTHORITY, PROVIDER and the API.
+
+String IMEI_URI = “content://oem_info/wan/imei”
+
+4.3.2 Getting the Data 
+Querying the data from the OEM Info Content Provider can be done using the standard android cursor query methods. Sample code below illustrates the methods to query data.
+
+// Prepare the URI
+public void getData() {
+    final Uri myUri = Uri.parse(IMEI_URI);
+    new UpdateAsync().execute(myUri.toString());
+}
+
+// Always query for data in Async task or background thread
+class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+    private String myUri;
+
+    @Override
+    protected Cursor doInBackground(String... args) {
+        myUri = args[0];
+
+        // Query the content provider
+        ContentResolver cr = getContentResolver();
+        Cursor cursor = cr.query(Uri.parse(myUri),
+                            null, null, null, null);
+
+        // Read the cursor
+        cursor.moveToFirst();
+        String imeiNumber = cursor.getString(0);
+        Log.i(TAG, "Device IMEI is : ” + imeiNumber);            
+        return cursor;
+    }
+}
+
+4.4 Pseudo-code for reading OS Update
+4.4.1 Get the Authority, Provider Name and API
+The consumer application should have the details about the content provider which its wants to query. The information is the AUTHORITY, PROVIDER and the API.
+
+// OS UPDATE URI
+String OSU_URI = “content://oem_info/oem.zebra.osupdate”;
+// APIs
+String OSU_STATUS = “status”;
+String OSU_DETAIL = “detail”;
+String OSU_TS = “ts”;
+
+4.4.2 Getting the Data 
+Querying the data from the OEM Info Content Provider can be done using the standard android cursor query methods. Sample code below illustrates the methods to query data.
+
+// Prepare the URI
+public void getData() {
+    final Uri myUri = Uri.parse(OSU_URI);
+    new UpdateAsync().execute(myUri.toString());
+}
+
+
+
+// Always query for data in Async task or background thread
+class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+    private String myUri;
+
+    @Override
+    protected Cursor doInBackground(String... args) {
+        myUri = args[0];
+
+        // Query the content provider
+        ContentResolver cr = getContentResolver();
+        Cursor cursor = cr.query(Uri.parse(myUri),
+                            null, null, null, null);
+
+        // Read the cursor
+        While (cursor.moveToNext()) {
+            String status = cursor.getString(
+                               cursor.getColumnIndex(OSU_STATUS));
+         
+            String detail = cursor.getString(
+                               cursor.getColumnIndex(OSU_DETAIL));
+
+            String time = cursor.getString(
+                               cursor.getColumnIndex(OSU_TS));
+
+
+            Log.i(TAG, "STATUS : " + status + “, DETAIL : ” + detail
+ + “, TIME : ” + time);            
+        }
+        return cursor;
+    }
+}
+
+
+
+
+ 
+4.5 Register for Callback when URI data changes 
+Applications can receive callbacks for changes to the content using the standard android content observer methods. We recommend to use register callbacks for semi-static URI values.
+
+// Prepare the URI
+Uri myUri = Uri.Parse(MY_URI_STRING);
+
+// Register with content observer
+ContentResolver cr = getContentResolver();
+cr.registerContentObserver(myUri, true, 
+    new ContentObserver(new Handler(getMainLooper())) {
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            super.onChange(selfChange, uri);
+
+            // Content has changed
+            Log.d(TAG, "content has changed, uri = " + uri);
+            // Reading the data is like above example
+            getData();
+        }
+    });
+
+ 
+4.6 Limitations
+• By design and requirement, OemInfo reads system properties after device reboot (at BOOT_COMPLETE) only.
+o Other than OS Update events, OemInfo is not supporting reading system properties which can change at runtime.
+• Reading URI data at BOOT_COMPLETE.
+o After receiving boot complete event, OemInfo queries selected system properties and refreshes the content provider this will take a few seconds after boot.
+o If your application immediately queries OemInfo URIs at boot complete you may get the stale data,
+ This is not an issue for static values like Serial Number or IMEI.
+ Other values like OS Update status are dynamic and change when OemInfo receives the OS Update event/intent.
+Note: There is a minute delay before publishing OS Update results to ZDPI, this is only at boot-up time. The reason for this is that immediately reading system time at this instant gives Unix epoch time on value tier devices (like Hawkeye N & O).
+o It is recommended to register with a content observer on the URI to receive callback whenever there is new data available.
+• Reading URI at Data Wipe
+o After Enterprise Reset / Factory Reset, the OemInfo data is empty and takes more time populate the content provider database.
+o It is recommended to register with a content observer on the URI to receive callback whenever there is new data available.
+• Platform / SELinux Restrictions across desserts and devices
+o OemInfo is “System UID” and platform signed. OemInfo is subject to platform permissions and SELinux restrictions across desserts and devices.
+o OemInfo reads a prescribed set of System properties, these system properties available on some devices may not be available on others.
+o Some system properties may become restricted, removed (or added) after OSUpdates.
+• If there is a property of interest that is not supported or becomes unavailable, please reach out to ZDS Team.
+
+
 ## Also See
 
-* **[FAQ](../faq)** | Frequently asked questions about OEMConfig 
-* **[OEMConfig Managed Configurations](../mc)** | Descriptions of all configurable functions
- -->
-<!-- 
-
-**Managed Configurations can**:
-
-* Be defined and published by any application developer. 
-* Be used by an app to configure its own settings. 
-* Be used by an EMM agent **<u>to configure device settings</u>**. 
-* Be discovered and acted upon by an EMM agent or server.
-* Be used by an EMM Server through its EMM agent and a data-driven UI.
-
-
-**<u>The major advantage of the [AEDO+ZMC](../port/#unsigneddodaagentzmc) method is universality</u>; it allows a single agent to work with <u>any</u> Android device in the future**, regardless of brand. In the past, EMM vendors were required to develop and maintain multiple agents to support the proprietary management mechanisms required for each brand of device they chose to target. 
-
-<img alt="image" style="height:350px" src="../port/timeline.jpg"/>
-_Click image to enlarge_. 
-<br>
-
-> **IMPORTANT NOTES**: <br>
-* **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents**.
-* **Agents for Oreo (and later) must be <u>unsigned</u>**; Zebra devices running Android 8.x and later do not support signed agents.
-> * Porting options described in the EMMTK include features implemented in [MX 8.1 and MX 8.2](/mx) ([See function map](../functionmap)).
-> * **Support for MX ends with Android 9.x Pie**; devices running Android Pie must use [unsigned DO/DA+ZMC](../port/#unsigneddodaagentzmc) agents.
-
-MAYBE: 
-Since the release of Android Enterprise, capabilities once accessible only through MX can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions not configurable through an Android API can be handled using OEMConfig, which interfaces with MX through the Android Managed Configuration mechanism. 
-
--->

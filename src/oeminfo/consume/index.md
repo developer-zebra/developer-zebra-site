@@ -25,13 +25,13 @@ Information for consumption is made available through **Data Provider apps**. Bo
 
 -----
 
-### Consuming Data
+## Consuming OEMinfo Data
 
-The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). However, **before any app can retrieve data from an OEMinfo Content Provider, it must first receive permission** to do so. 
+The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). And like Android, OEMinfo employs content URIs to identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
-Like Android, OEMinfo employs content URIs to identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
+**However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. The following steps provide details and examples. 
 
-#### To acquire data using OEMinfo: 
+### Acquire Serial Number 
 
 1. **Add the following statement to the app's** `AndroidManifest.xml` file to acquire read permission from the OEMinfo Content Provider:
 
@@ -39,7 +39,7 @@ Like Android, OEMinfo employs content URIs to identify certain data available fr
 2. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
         String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`
-3. **Get the data** by parsing the string using Android cursor query methods:<br>
+3. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods:<br>
 
         :::java
         // Prepare the URI
@@ -69,28 +69,31 @@ Like Android, OEMinfo employs content URIs to identify certain data available fr
             }
             }
 
-4.3 Pseudo-code for reading IMEI 
-4.3.1 Get the Authority, Provider Name and API
-The consumer application should have the details about the content provider which its wants to query. The information is the AUTHORITY, PROVIDER and the API.
+The remaining steps repeat the above process for the device IMEI and OS update info. Skip the the [Callback section](#callbacks) to see sample code for setting an app to be notified of changes to OEMinfo data.
 
-    String IMEI_URI = “content://oem_info/wan/imei”
+-----
 
-4.3.2 Getting the Data 
-Querying the data from the OEM Info Content Provider can be done using the standard android cursor query methods. Sample code below illustrates the methods to query data.
+### Acquire IMEI
 
-    // Prepare the URI
-    public void getData() {
-        final Uri myUri = Uri.parse(IMEI_URI);
-        new UpdateAsync().execute(myUri.toString());
-    }
+4. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
-    // Always query for data in Async task or background thread
-    class UpdateAsync extends AsyncTask<String,Void,Cursor> {
-        private String myUri;
+        String IMEI_URI = “content://oem_info/wan/imei”
+5. **Get the data** (in this case the device IMEI number) by parsing the string using Android cursor query methods:<br>
 
-    @Override
-    protected Cursor doInBackground(String... args) {
-        myUri = args[0];
+        :::java
+        // Prepare the URI
+        public void getData() {
+            final Uri myUri = Uri.parse(IMEI_URI);
+            new UpdateAsync().execute(myUri.toString());
+        }
+
+        // Always query for data in Async task or background thread
+        class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+            private String myUri;
+
+        @Override
+        protected Cursor doInBackground(String... args) {
+            myUri = args[0];
 
         // Query the content provider
         ContentResolver cr = getContentResolver();
@@ -102,63 +105,69 @@ Querying the data from the OEM Info Content Provider can be done using the stand
         String imeiNumber = cursor.getString(0);
         Log.i(TAG, "Device IMEI is : ” + imeiNumber);            
         return cursor;
-      }
-    }
-
-4.4 Pseudo-code for reading OS Update
-4.4.1 Get the Authority, Provider Name and API
-The consumer application should have the details about the content provider which its wants to query. The information is the AUTHORITY, PROVIDER and the API.
-
-    // OS UPDATE URI
-    String OSU_URI = “content://oem_info/oem.zebra.osupdate”;
-    // APIs
-    String OSU_STATUS = “status”;
-    String OSU_DETAIL = “detail”;
-    String OSU_TS = “ts”;
-
-4.4.2 Getting the Data 
-Querying the data from the OEM Info Content Provider can be done using the standard android cursor query methods. Sample code below illustrates the methods to query data.
-
-    // Prepare the URI
-    public void getData() {
-        final Uri myUri = Uri.parse(OSU_URI);
-        new UpdateAsync().execute(myUri.toString());
-    }
-
-    // Always query for data in Async task or background thread
-    class UpdateAsync extends AsyncTask<String,Void,Cursor> {
-        private String myUri;
-
-    @Override
-    protected Cursor doInBackground(String... args) {
-        myUri = args[0];
-
-        // Query the content provider
-        ContentResolver cr = getContentResolver();
-        Cursor cursor = cr.query(Uri.parse(myUri),
-                            null, null, null, null);
-
-        // Read the cursor
-        While (cursor.moveToNext()) {
-            String status = cursor.getString(
-                               cursor.getColumnIndex(OSU_STATUS));
-         
-            String detail = cursor.getString(
-                               cursor.getColumnIndex(OSU_DETAIL));
-
-            String time = cursor.getString(
-                               cursor.getColumnIndex(OSU_TS));
-
-
-            Log.i(TAG, "STATUS : " + status + “, DETAIL : ” + detail
-     + “, TIME : ” + time);            
-            }
-            return cursor;
         }
-    }
- 
-4.5 Register for Callback when URI data changes 
-Applications can receive callbacks for changes to the content using the standard android content observer methods. We recommend to use register callbacks for semi-static URI values.
+        }
+
+-----
+
+### Acquire OS update info
+
+6. Get the AUTHORITY, PROVIDER and API using the following code:<br>
+
+        :::java
+        // OS UPDATE URI
+        String OSU_URI = “content://oem_info/oem.zebra.osupdate”;
+
+        // APIs
+        String OSU_STATUS = “status”;
+        String OSU_DETAIL = “detail”;
+        String OSU_TS = “ts”;
+
+7. **Get the data** (in this case the device OS update info) by parsing the string using Android cursor query methods:<br>
+
+            :::java
+            // Prepare the URI
+            public void getData() {
+                final Uri myUri = Uri.parse(OSU_URI);
+                new UpdateAsync().execute(myUri.toString());
+            }
+
+            // Always query for data in Async task or background thread
+            class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+                private String myUri;
+
+            @Override
+            protected Cursor doInBackground(String... args) {
+                myUri = args[0];
+
+                // Query the content provider
+                ContentResolver cr = getContentResolver();
+                Cursor cursor = cr.query(Uri.parse(myUri),
+                                    null, null, null, null);
+
+                // Read the cursor
+                While (cursor.moveToNext()) {
+                    String status = cursor.getString(
+                                    cursor.getColumnIndex(OSU_STATUS));
+                 
+                    String detail = cursor.getString(
+                                    cursor.getColumnIndex(OSU_DETAIL));
+
+                    String time = cursor.getString(
+                                    cursor.getColumnIndex(OSU_TS));
+
+                    Log.i(TAG, "STATUS : " + status + “, DETAIL : ” + detail
+                               + “, TIME : ” + time);            
+                            }
+                            return cursor;
+                        }
+                    }
+
+-----
+
+### Callbacks
+
+Use the following code to register an app to be notified when URI data changes. Apps also can receive callbacks for changes to the content using the standard Android content observer methods, but **Zebra recommends registering callbacks for semi-static URI values**.
 
     // Prepare the URI
     Uri myUri = Uri.Parse(MY_URI_STRING);
@@ -179,33 +188,21 @@ Applications can receive callbacks for changes to the content using the standard
         }
     });
 
- 
-4.6 Limitations
-• By design and requirement, OemInfo reads system properties after device reboot (at BOOT_COMPLETE) only.
-o Other than OS Update events, OemInfo is not supporting reading system properties which can change at runtime.
+-----
 
-• Reading URI data at `BOOT_COMPLETE`.
- o After receiving boot complete event, OemInfo queries selected system properties and refreshes the content provider this will take a few seconds after boot.
- o If your application immediately queries OemInfo URIs at boot complete you may get the stale data,
+### Limitations
 
-     This is not an issue for static values like Serial Number or IMEI.
+Data acquired through the OEMinfo Content Provider is subject to the following rules and limitations. 
 
-     Other values like OS Update status are dynamic and change when OemInfo receives the OS Update event/intent.
-
-Note: There is a minute delay before publishing OS Update results to ZDPI, this is only at boot-up time. The reason for this is that immediately reading system time at this instant gives Unix epoch time on value tier devices (like Hawkeye N & O).
- o It is recommended to register with a content observer on the URI to receive callback whenever there is new data available.
-
-• Reading URI at Data Wipe
- o After Enterprise Reset / Factory Reset, the OemInfo data is empty and takes more time populate the content provider database.
- o It is recommended to register with a content observer on the URI to receive callback whenever there is new data available.
-
-• Platform / SELinux Restrictions across desserts and devices
- o OemInfo is “System UID” and platform signed. OemInfo is subject to platform permissions and SELinux restrictions across desserts and devices.
- o OemInfo reads a prescribed set of System properties, these system properties available on some devices may not be available on others.
- o Some system properties may become restricted, removed (or added) after OSUpdates.
-
-• If there is a property of interest that is not supported or becomes unavailable, please reach out to ZDS Team.
-
+* With the exception of OS Update events, **OEMinfo does NOT support reading of system properties that can change at runtime**.
+* **OEMinfo reads system properties only after being signaled by the** `BOOT_COMPLETE` event.
+ * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but a delay of about one minute is typical before results of an OS Update are published to the ZDPI.
+ * If an app queries OEMinfo too soon after reboot, some URIs might return "stale" data, posing a potential issue for non-static values. 
+* When device data is wiped after an Enterprise Reset or Factory Reset or other erasure event, OEMinfo requires extra time populate the Content Provider database.
+* To avoid issues relating to stale or missing data due to re-population delays, **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available**.
+* OEMinfo is “System UID” and platform-signed, and is is therefore subject to platform permissions and SELinux restrictions across desserts and devices.
+* The same set of system properties might not be available all devices.
+* System properties might become restricted, removed or added after an OS update.
 
 ## Also See
 

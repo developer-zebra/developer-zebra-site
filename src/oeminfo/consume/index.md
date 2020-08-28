@@ -29,22 +29,17 @@ Information for consumption is made available through **Data Provider apps**. Bo
 
 The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). However, **before any app can retrieve data from an OEMinfo Content Provider, it must first receive permission** to do so. 
 
-#### To acquire read permission for OEMinfo content: 
+Like Android, OEMinfo employs content URIs to identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
-Add the following statement to the app's `AndroidManifest.xml` file:
+#### To acquire data using OEMinfo: 
+
+1. **Add the following statement to the app's** `AndroidManifest.xml` file to acquire read permission from the OEMinfo Content Provider:
 
         <uses-permission android:name=”com.zebra.provider.READ”>
+2. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
-Like Android, OEMinfo employs content URIs, which identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
-
-#### To Retrieve Data Using OEMinfo
- 
-1. The following pseudo code shows how to retrieve the device serial number:<br>
-  a. <br>
-  The consumer application should have details about AUTHORITY, PROVIDER and API of the content provider to be queried.<br>
-**String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`<br>
-  b. Get the data:<br> 
-  Querying the data from the OEMinfo Content Provider can be done using the standard Android cursor query methods: <br>
+        String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`
+3. **Get the data** by parsing the string using Android cursor query methods:<br>
 
         :::java
         // Prepare the URI
@@ -72,7 +67,7 @@ Like Android, OEMinfo employs content URIs, which identify certain data availabl
             Log.i(TAG, "Device Serial Number is : ” + serialNumber);            
             return cursor;
             }
-          }
+            }
 
 4.3 Pseudo-code for reading IMEI 
 4.3.1 Get the Authority, Provider Name and API

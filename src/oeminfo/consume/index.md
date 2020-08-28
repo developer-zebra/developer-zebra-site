@@ -29,12 +29,13 @@ Information for consumption is made available through **Data Provider apps**. Bo
 
 The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). However, **before any app can retrieve data from an OEMinfo Content Provider, it must first receive permission** to do so. 
 
-**REQUIRED**: To acquire permission to read data from any OEMinfo Content Provider, add the following statement to the app's `AndroidManifest.xml` file:
+#### To acquire read permission for OEMinfo content: 
+
+Add the following statement to the app's `AndroidManifest.xml` file:
 
         <uses-permission android:name=”com.zebra.provider.READ”>
 
-#### Content URIs
-Like Android, OEMinfo employs content URIs, which are URIs that identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
+Like Android, OEMinfo employs content URIs, which identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
 #### To Retrieve Data Using OEMinfo
  

@@ -43,7 +43,7 @@ The process of retrieving data through OEMinfo is the same as that of querying a
 1. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
         String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`
-2. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods:<br>
+2. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 
         :::java
         // Prepare the URI
@@ -73,7 +73,7 @@ The process of retrieving data through OEMinfo is the same as that of querying a
             }
             }
 
-The remaining steps repeat the above process for the device IMEI and OS update info. Skip the the [Callback section](#callbacks) to see sample code for setting an app to be notified of changes to OEMinfo data.
+The next two sections apply the above process for getting the device IMEI and OS update info. Skip the the [Callback section](#callbacks) to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
 
 -----
 
@@ -82,7 +82,7 @@ The remaining steps repeat the above process for the device IMEI and OS update i
 4. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
         String IMEI_URI = “content://oem_info/wan/imei”
-5. **Get the data** (in this case the device IMEI number) by parsing the string using Android cursor query methods:<br>
+5. **Get the data** (in this case the device IMEI number) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 
         :::java
         // Prepare the URI
@@ -116,7 +116,7 @@ The remaining steps repeat the above process for the device IMEI and OS update i
 
 ### Acquire OS update info
 
-6. Get the AUTHORITY, PROVIDER and API using the following code:<br>
+6. Get the AUTHORITY, PROVIDER and API using the following Java code:<br>
 
         :::java
         // OS UPDATE URI
@@ -127,7 +127,7 @@ The remaining steps repeat the above process for the device IMEI and OS update i
         String OSU_DETAIL = “detail”;
         String OSU_TS = “ts”;
 
-7. **Get the data** (in this case the device OS update info) by parsing the string using Android cursor query methods:<br>
+7. **Get the data** (in this case the device OS update info) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 
             :::java
             // Prepare the URI
@@ -171,7 +171,7 @@ The remaining steps repeat the above process for the device IMEI and OS update i
 
 ### Callbacks
 
-**Use the following code to register an app to be notified when URI data changes**. Apps also can receive callbacks for changes to the content using the standard Android content observer methods, but **Zebra recommends always registering callbacks for semi-static URI values**.
+**Use the following Java code to register an app to be notified when URI data changes**. Apps also can receive callbacks for changes to the content using the standard Android content observer methods, but **Zebra recommends always registering callbacks for semi-static URI values**.
 
     // Prepare the URI
     Uri myUri = Uri.Parse(MY_URI_STRING);

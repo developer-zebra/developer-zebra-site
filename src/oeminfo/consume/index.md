@@ -21,7 +21,7 @@ menu:
 
 **Data Consumers are apps seeking to retrieve device information**. Examples of such apps from Zebra include StageNow and OEMconfig device configuration tools, as well as Power Manager and other built-in configuration service provider (CSP) modules that interface directly with Zebra's device-API layer. 
 
-Information for consumption is made available through **Data Provider apps**. Both app types&ndash;Consumers and Providers&ndash;use the [Zebra Data Provider Interfaces (ZDPIs)](../faq/whatdoeszdpistandfor) included in the [OEMinfo Content Provider Framework](../faq/oeminfocontentproviderframework). 
+Information for consumption is made available through **Data Provider apps**. Both app types&ndash;Consumers and Providers&ndash;use the [Zebra Data Provider Interfaces (ZDPIs)](../faq/#whatdoeszdpistandfor) included in the [OEMinfo Content Provider Framework](../faq/#oeminfocontentproviderframework). 
 
 -----
 
@@ -203,9 +203,9 @@ The remaining steps repeat the above process for the device IMEI and OS update i
  * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but **a delay of about one minute is typical before results of an OS Update are published to the ZDPI**.
  * If an app queries OEMinfo too soon after reboot, **some URIs might return "stale" data**, posing a potential issue for non-static values. 
 * **OEMinfo requires extra time populate the Content Provider database** when device data is wiped after an Enterprise Reset, Factory Reset or other erasure event.
-  * To avoid issues relating to stale or missing data due to re-population delays, **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available**.
-* **OEMinfo is** “System UID” and platform-signed, and is therefore **subject to platform permissions and SELinux restrictions** across Android versions and devices.
- * The same set of **system properties might not be available all devices**.
+  * **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available** to avoid issues relating to stale or missing data due to re-population delays.
+* **OEMinfo is “System UID” and platform-signed**, and is therefore **subject to platform permissions and SELinux restrictions** across Android versions and devices.
+ * The same set of **system properties might not be readable on all devices**.
  * System properties might become restricted, removed or added after an OS update.
 
 -----

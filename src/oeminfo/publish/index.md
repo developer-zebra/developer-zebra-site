@@ -27,7 +27,7 @@ _Click image to enlarge_.
 _Click image to enlarge_. 
 <br>
 
-### `UNDER CONSTrUCTION`
+### `UNDeR CoNSTrUCTIOn`
 
 **ZDPI -** Zebra Data Provider Inferface
 

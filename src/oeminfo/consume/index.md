@@ -29,17 +29,21 @@ Information for consumption is made available through **Data Provider apps**. Bo
 
 The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers). And like Android, OEMinfo employs content URIs to identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
-**However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. The following steps provide details and examples. 
+**However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. This step must be performed only once for each app, but is required before the app can attempt any OEMinfo read operation. 
 
-### Acquire Serial Number 
+#### To acquire read permission: 
 
-1. **Add the following statement to the app's** `AndroidManifest.xml` file to acquire read permission from the OEMinfo Content Provider:
+**Add the following statement to the app's** `AndroidManifest.xml` file:
 
         <uses-permission android:name=”com.zebra.provider.READ”>
-2. Get the AUTHORITY, PROVIDER and API using the following command:<br>
+
+-----
+
+### Acquire Serial Number 
+1. Get the AUTHORITY, PROVIDER and API using the following command:<br>
 
         String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`
-3. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods:<br>
+2. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods:<br>
 
         :::java
         // Prepare the URI
@@ -167,7 +171,7 @@ The remaining steps repeat the above process for the device IMEI and OS update i
 
 ### Callbacks
 
-Use the following code to register an app to be notified when URI data changes. Apps also can receive callbacks for changes to the content using the standard Android content observer methods, but **Zebra recommends registering callbacks for semi-static URI values**.
+**Use the following code to register an app to be notified when URI data changes**. Apps also can receive callbacks for changes to the content using the standard Android content observer methods, but **Zebra recommends always registering callbacks for semi-static URI values**.
 
     // Prepare the URI
     Uri myUri = Uri.Parse(MY_URI_STRING);
@@ -192,21 +196,21 @@ Use the following code to register an app to be notified when URI data changes. 
 
 ### Limitations
 
-Data acquired through the OEMinfo Content Provider is subject to the following rules and limitations. 
+**Data acquired through the OEMinfo Content Provider is subject to the rules and limitations listed below**. 
 
 * With the exception of OS Update events, **OEMinfo does NOT support reading of system properties that can change at runtime**.
 * **OEMinfo reads system properties only after being signaled by the** `BOOT_COMPLETE` event.
- * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but a delay of about one minute is typical before results of an OS Update are published to the ZDPI.
- * If an app queries OEMinfo too soon after reboot, some URIs might return "stale" data, posing a potential issue for non-static values. 
-* When device data is wiped after an Enterprise Reset or Factory Reset or other erasure event, OEMinfo requires extra time populate the Content Provider database.
-* To avoid issues relating to stale or missing data due to re-population delays, **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available**.
-* OEMinfo is “System UID” and platform-signed, and is is therefore subject to platform permissions and SELinux restrictions across desserts and devices.
-* The same set of system properties might not be available all devices.
-* System properties might become restricted, removed or added after an OS update.
+ * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but **a delay of about one minute is typical before results of an OS Update are published to the ZDPI**.
+ * If an app queries OEMinfo too soon after reboot, **some URIs might return "stale" data**, posing a potential issue for non-static values. 
+* **OEMinfo requires extra time populate the Content Provider database** when device data is wiped after an Enterprise Reset, Factory Reset or other erasure event.
+  * To avoid issues relating to stale or missing data due to re-population delays, **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available**.
+* **OEMinfo is** “System UID” and platform-signed, and is therefore **subject to platform permissions and SELinux restrictions** across Android versions and devices.
+ * The same set of **system properties might not be available all devices**.
+ * System properties might become restricted, removed or added after an OS update.
 
 -----
 
 ## Also See
 
 * **[Android content provider docs](https://developer.android.com/guide/topics/providers/content-providers)**
-* **[Android cursor docs](https://developer.android.com/reference/android/database/Cursor)
+* **[Android cursor docs](https://developer.android.com/reference/android/database/Cursor)**

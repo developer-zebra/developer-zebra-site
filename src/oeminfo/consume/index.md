@@ -204,5 +204,9 @@ Data acquired through the OEMinfo Content Provider is subject to the following r
 * The same set of system properties might not be available all devices.
 * System properties might become restricted, removed or added after an OS update.
 
+-----
+
 ## Also See
 
+* **[Android content provider docs](https://developer.android.com/guide/topics/providers/content-providers)**
+* **[Android cursor docs](https://developer.android.com/reference/android/database/Cursor)

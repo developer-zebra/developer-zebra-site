@@ -59,18 +59,22 @@ The ZDPI uses Zebra [Access Manager](/mx/accessmgr) to grant or deny apps author
 
 When provisioning one or more of the app types listed above, authorization to access the ZDPI can be granted using StageNow and Access Manager, OEMconfig and the Service Access Configuration, or a company's own Enterprise Mobile Management system. 
 
+<img alt="image" style="height:350px" src="stagenow_access_mgr.png"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
+
 #### To grant access using Access Manager and StageNow:
-Configure the following actions based on the local environmental settings. 
+Configure the following actions based on the requirements. 
 
 1. **Service Access Action**: “Allow Caller to Call Service”
 2. **Service Identifier**: ZDPI URI to access (see [Data Consumption guide](../consume))
 3. **Caller Package Name**: Package Name of the third-party app
 4. **Caller Signature**: App certificate of the third-party app
 
-<img alt="image" style="height:350px" src="stagenow_access_mgr.png"/>
-_Click image to enlarge; ESC to exit_. 
-<br>
-
 -----
 
 ## Also See
+
+* **[FAQ](../faq)** | Frequently asked questions about OEMinfo
+* **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)**
+**[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)**

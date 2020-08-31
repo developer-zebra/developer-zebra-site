@@ -29,6 +29,9 @@ _Click image to enlarge_.
 
 ### `UNDeR CoNSTrUCTIOn`
 
+USE? 
+, which publish their data using the [Android content provider](https://developer.android.com/guide/topics/providers/content-providers) public specifications
+
 **ZDPI -** Zebra Data Provider Inferface
 
 2.2 OEM Info Content Provider

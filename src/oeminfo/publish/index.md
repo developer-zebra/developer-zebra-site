@@ -68,7 +68,7 @@ Configure the following actions based on the local environmental settings.
 4. **Caller Signature**: App certificate of the third-party app
 
 <img alt="image" style="height:350px" src="stagenow_access_mgr.png"/>
-_Click image to enlarge_. 
+_Click image to enlarge; ESC to exit_. 
 <br>
 
 -----

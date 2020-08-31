@@ -25,14 +25,9 @@ Below are some common questions related to OEMinfo and its related components an
 
 **A: ZDPI stands for Zebra Data Provider Interface**, and is the mechanism through which device data is published and consumed using OEMinfo.
 
-
-Static data
-Semi-static data
-
+-----
 
 ### More FAQs coming soon
-
-## DATA ZDPI URIs (put on its own page?) 
 
 ### What are the components of a URI? 
 
@@ -43,6 +38,14 @@ Semi-static data
 * **Authority**: Content provider authority name
 * **Provider**: A unique name in the given authority. (eg. DeviceInfo, Battery)
 * **API**: API name in the given package name (e.g. model, manufacturer)
+
+<!-- 
+
+FAQs on:
+Static data
+Semi-static data
+
+
 
 For Example, to get the device serial the content URI would be
 
@@ -69,7 +72,7 @@ For Example, to get the device serial the content URI would be
  o “ts” - Epoch time when the intent is received
 
 
-
+ -->
 <!-- 
 Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
 

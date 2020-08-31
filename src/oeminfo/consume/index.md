@@ -37,12 +37,13 @@ Information for consumption is made available through **[Data Provider apps](../
 
 **URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
 
-     content://<Authority>/<Provider>/<API>
+    :::xml
+    content://<Authority>/<Provider>/<API>
 
-     //For example: 
+     // For example: 
      content://oem_info/oem.zebra.secure/build_serial
 
-* **Authority**: "oem_info" is the content provider authority name
+* **Authority**: `oem_info` is the content provider authority name
 * **Provider**: `oem.zebra.secure` is the unique name within the given authority
 * **API**: `build_serial` is the API name within the given package name
 

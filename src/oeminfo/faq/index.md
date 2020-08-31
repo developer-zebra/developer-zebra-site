@@ -27,17 +27,21 @@ Below are some common questions related to OEMinfo and its related components an
 
 -----
 
-### More FAQs coming soon
-
 ### What are the components of a URI? 
 
-**URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
+**A: URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
 
 * `content://<Authority>/<Provider>/<API>`
 
 * **Authority**: Content provider authority name
 * **Provider**: A unique name in the given authority. (eg. DeviceInfo, Battery)
 * **API**: API name in the given package name (e.g. model, manufacturer)
+
+-----
+
+### More FAQs coming soon
+
+
 
 <!-- 
 

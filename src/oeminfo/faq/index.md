@@ -26,7 +26,48 @@ Below are some common questions related to OEMinfo and its related components an
 **A: ZDPI stands for Zebra Data Provider Interface**, and is the mechanism through which device data is published and consumed using OEMinfo.
 
 
+Static data
+Semi-static data
+
+
 ### More FAQs coming soon
+
+## DATA ZDPI URIs (put on its own page?) 
+
+### What are the components of a URI? 
+
+**URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
+
+* `content://<Authority>/<Provider>/<API>`
+
+* **Authority**: Content provider authority name
+* **Provider**: A unique name in the given authority. (eg. DeviceInfo, Battery)
+* **API**: API name in the given package name (e.g. model, manufacturer)
+
+For Example, to get the device serial the content URI would be
+
+`content://oem_info/oem.zebra.secure/build_serial`
+
+3.2 Device Serial Number URI
+
+• URI : `content://oem_info/oem.zebra.secure/build_serial`
+
+3.3 IMEI Number URI (Android 10 only)
+
+• URI : `content://oem_info/wan/imei`
+
+3.4 OS Update URI
+
+• URI : `content://oem_info/oem.zebra.osupdate/`
+
+• API :
+
+ o “status” - Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
+
+ o “detail” - Text representation of the status, contains detailed reason.
+
+ o “ts” - Epoch time when the intent is received
+
 
 
 <!-- 

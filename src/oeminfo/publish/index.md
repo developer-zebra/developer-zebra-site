@@ -19,18 +19,12 @@ menu:
 
 ## Overview
 
-### `UNDeR CoNSTrUCTIOn`
+The Zebra Data Provider Interface (ZDPI) is a mechanism through which device data is published and consumed by other apps. ZDPI is based on the [Android content provider framework](https://developer.android.com/guide/topics/providers/content-providers), a public specification that allows sets of device data to be made available to apps using queries similar to those of a database. 
 
-
-###`FIXXXXXXXXXXX` all below
-
-The Zebra Data Provider Inferface (ZDPI) is a mechanism through which device data is published and consumed using OEMinfo. It is based on the [Android content provider framework](https://developer.android.com/guide/topics/providers/content-providers), a public specification that allows sets of device data to be made available to apps using queries similar to those of a database. 
-
-A Zebra-branded Publisher app can insert data into this central repository for Consumer apps to retrieve. Publishers and Consumers follow the content-provider client model to insert (put) and retrieve (get) data.
-
-Together, OEMinfo Content Provider, Publisher and Consumer offer a reliable model to handle sharing of OEM-specific, proprietary or open information on Zebra devices.
-OEM Info Content Provider will be managing access to central data repository using a standard authority, for example: oem_info
+Content Provider apps can insert data into this central repository for Data Consumer apps to retrieve. Publishers and Consumers follow the content-provider client model to insert (put) and retrieve (get) data. Together, the OEMinfo Content Provider and Publisher and Consumers apps offer a reliable model to handle sharing of OEM-specific, proprietary, non-proprietary static and semi-static data on Zebra devices. The OEMinfo Content Provider manages access to the central repository using a standard authority.
  
+-----
+
 ### OEMinfo Architecture
 The diagram below illustrates the high-level design of the Zebra OEM Info Content Provider framework with data provider (OEMinfo) and data consumers (Zebra apps, third-party apps).
 
@@ -78,46 +72,5 @@ _Click image to enlarge_.
 <br>
 
 -----
-
-## DATA ZDPI URIs (put on its own page?) 
-
-3.1 Generic Content Provider Schema
-
-A schema URI schema has 3 parts “Authority”, “Package Name” and “API”.
-content://<Authority>/<Provider>/<API>
-
-• Authority: Content provider authority name
-
-• Provider : A unique name in the given authority. (eg. DeviceInfo, Battery)
-
-• API: Api name in the given package name (eg. model,manufcaturer)
-
-• For Example, to get the device serial the content URI would be
-
-content://oem_info/oem.zebra.secure/build_serial
-
-3.2 Device Serial Number URI
-
-• URI : "content://oem_info/oem.zebra.secure/build_serial"
-
-3.3 IMEI Number URI (Android 10 only)
-
-• URI : “content://oem_info/wan/imei”
-
-3.4 OS Update URI
-
-• URI : “content://oem_info/oem.zebra.osupdate/”
-
-• API :
-
- o “status” - Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
-
- o “detail” - Text representation of the status, contains detailed reason.
-
- o “ts” - Epoch time when the intent is received
-
-3.5 Other URI
-Please reach out to ZDS Team for any other URIs. Refer Appendix-1
-
 
 ## Also See

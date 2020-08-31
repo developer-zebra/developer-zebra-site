@@ -35,6 +35,17 @@ Information for consumption is made available through **[Data Provider apps](../
 
 **However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. This step must be performed only once for each app, but is required before the app can attempt any OEMinfo read operation. 
 
+**URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
+
+     content://<Authority>/<Provider>/<API>
+
+     //For example: 
+     content://oem_info/oem.zebra.secure/build_serial
+
+* **Authority**: "oem_info" is the content provider authority name
+* **Provider**: `oem.zebra.secure` is the unique name within the given authority
+* **API**: `build_serial` is the API name within the given package name
+
 #### To acquire read permission: 
 
 **Add the following statement to the app's** `AndroidManifest.xml` file:

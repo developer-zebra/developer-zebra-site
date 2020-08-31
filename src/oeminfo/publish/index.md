@@ -23,41 +23,33 @@ menu:
 _Click image to enlarge_. 
 <br>
 
-<img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
-_Click image to enlarge_. 
-<br>
-
 ### `UNDeR CoNSTrUCTIOn`
 
-USE? 
-, which publish their data using the [Android content provider](https://developer.android.com/guide/topics/providers/content-providers) public specifications
 
-**ZDPI -** Zebra Data Provider Inferface
+###`FIXXXXXXXXXXX` all below
 
-2.2 OEM Info Content Provider
-Content provider framework on Android is a standard mechanism to centralize content in one place and have many applications access it as needed. It essentially behaves like a database where publisher applications can query it. 
+The Zebra Data Provider Inferface (ZDPI) is a mechanism through which device data is published and consumed using OEMinfo. It is based on the [Android content provider framework](https://developer.android.com/guide/topics/providers/content-providers), a public specification that allows sets of device data to be made available to apps using queries similar to those of a database. 
 
-A Zebra value-add applications (Publisher) can insert data into this central repository and Consumer applications can retrieve this data from the provider. Both the data Publishers and the Consumers will follow the content provider client model to insert (put) and retrieve (get) data.
+A Zebra-branded Publisher app can insert data into this central repository for Consumer apps to retrieve. Publishers and Consumers follow the content-provider client model to insert (put) and retrieve (get) data.
 
-Together, OEM Info Content Provider, Publisher and Consumer will offer a standard, reliable model to handle sharing of OEM Specific proprietary information on Zebra Devices.
+Together, OEMinfo Content Provider, Publisher and Consumer offer a reliable model to handle sharing of OEM-specific, proprietary or open information on Zebra devices.
 OEM Info Content Provider will be managing access to central data repository using a standard authority, for example: oem_info
-
-This model could become a recommendation to Google and promoted by Google for use by all OEMs.
  
-2.3 OEM Info Content Provider Architecture
-The below diagram illustrates the HLD for the Zebra OEM Info Content Provider framework with Data Provider (OemInfo) and Data Consumers (3rd Party Applications, Zebra Applications).
+### OEMinfo Architecture
+The diagram below illustrates the high-level design of the Zebra OEM Info Content Provider framework with data provider (OEMinfo) and data consumers (Zebra apps, third-party apps).
 
-PIC: oeminfo content provider framework
+<img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
 
-• OemInfo : OemInfo is the data provider. This framework also supports addition of more data providers in the future.
+* **OEMinfo is the data provider**. Supports the addition of more data providers in the future.
+* **ZDPI service to transmit data from Zebra data publishers (OemInfo) to the data consumer applications. 
+ * Access Verifier component verifies the permissions of the application requesting data.
+ * Content Provider component provider implements the core framework which provides access to the Database.
+* **Access Manager provides a mechanism for securing  BLAH BLAH BLAH mechanism for verifying if a 3rd party applications has access to a ‘named’ service component (For e.g URI).
+* Zebra Applications: These applications are Zebra owned applications which need OemInfo data For eg: PowerMgr CSP, StageNow, FOTA, DT etc.
 
-• ZDPI : Service to transmit data from Zebra data publishers (OemInfo) to the data consumer applications. 
- o Access Verifier component verifies the permissions of the application requesting data.
- o Content Provider component provider implements the core framework which provides access to the Database.
-
-• Access Manager CSP is an MX component which can provide a secure mechanism for verifying if a 3rd party applications has access to a ‘named’ service component (For e.g URI).
-
-• Zebra Applications: These applications are Zebra owned applications which need OemInfo data For eg: PowerMgr CSP, StageNow, FOTA, DT etc.
+-----
 
 2.4 Authorization Mechanism
 The ZDPI consists of a whitelist mechanism to allow trusted applications to read data.

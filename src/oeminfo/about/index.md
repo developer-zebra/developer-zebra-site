@@ -22,7 +22,7 @@ menu:
 Zebra OEMinfo is a service included with Zebra devices running Android 10 (and later) that provides a set of APIs through which apps can publish information about a Zebra device's capabilities and settings and allow other apps can acquire that data through the same interfaces.
 
 <img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
-_Click image to enlarge_. 
+_Click image to enlarge; ESC to exit_. 
 <br>
 
 Using the [OEMinfo Content Provider Framework](../faq/oeminfocontentproviderframework), OEMinfo  allows apps to acquire some or all of the information about a given Zebra device though a single set of publicly defined specifications rather than having to use separate proprietry interfaces and methods. A data set can contain proprietary or non-proprietary information, and can be limited to “designated receivers” or open to all. 

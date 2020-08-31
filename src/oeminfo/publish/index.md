@@ -31,12 +31,14 @@ The diagram below illustrates the high-level design of the Zebra OEM Info Conten
 <img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-
+<!-- 
 * **OEMinfo is the data provider**
 * **ZDPI service publishes data** through Zebra data publisher apps to data consumer apps 
 * Zebra Access Manager grants/denies permission to consumer aoos for data access
 * Zebra-owned apps include Power Manager, StageNow, FOTA, Device Tracker
 * **Provider framework is extensible** without impacting consumer apps written for earlier versions.
+ 
+ -->
 
 -----
 

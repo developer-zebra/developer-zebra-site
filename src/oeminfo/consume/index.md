@@ -32,9 +32,18 @@ Information for consumption is made available through **[Data Provider apps](../
 
 ## Consuming OEMinfo Data
 
-**The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
+**The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. 
 
 **However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. This step must be performed only once for each app, but is required before the app can attempt any OEMinfo read operation. 
+
+#### To acquire read permission: 
+
+**Add the following statement to the app's** `AndroidManifest.xml` file:
+
+        <uses-permission android:name=”com.zebra.provider.READ”>
+
+### Content URIs
+Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
 **URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
 
@@ -47,12 +56,6 @@ Information for consumption is made available through **[Data Provider apps](../
 * **Authority**: `oem_info` is the content provider authority name
 * **Provider**: `oem.zebra.secure` is the unique name within the given authority
 * **API**: `build_serial` is the API name within the given package name
-
-#### To acquire read permission: 
-
-**Add the following statement to the app's** `AndroidManifest.xml` file:
-
-        <uses-permission android:name=”com.zebra.provider.READ”>
 
 -----
 
@@ -88,7 +91,7 @@ Configure the following actions based on the individual requirements.
 3. **Caller Package Name**: Package Name of the third-party app
 4. **Caller Signature**: App certificate of the third-party app
 
-**[How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx)** | Also known as a package signature 
+##### [Article: How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx) (also known as a package signature) 
 
 -----
 
@@ -273,10 +276,13 @@ Configure the following actions based on the individual requirements.
 
 ## Also See
 
-* **[Android Content Provider Basics](https://developer.android.com/guide/topics/providers/content-providers)** | An Intro to Content Providers
-* **[Android Cursor docs](https://developer.android.com/reference/android/database/Cursor)** | Interfacing with a result data set
+#### Android Developer Docs 
+* **[Android Content Provider Basics](https://developer.android.com/guide/topics/providers/content-providers)** | An Introduction
 * **[Creating a Content Provider](https://developer.android.com/guide/topics/providers/content-provider-creating)** | Why and how to share an app's data
+* **[Android Cursor docs](https://developer.android.com/reference/android/database/Cursor)** | How to interface with a result data set
 * **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
+
+##### Articles by Zebra Engineers
 * **[How to display serial and IMEI numbers on device](https://developer.zebra.com/blog/access-serial-number-and-imei-mobile-computers-running-android-10)** | Sample app, instructions, source code
-* **[How to save OEM identifiers to text file on device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app, source code
+* **[Save OEM identifiers to a text file on the device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app with source code
 

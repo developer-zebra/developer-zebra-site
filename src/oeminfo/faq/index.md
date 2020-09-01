@@ -27,15 +27,23 @@ Below are some common questions related to OEMinfo and its related components an
 
 -----
 
+### What is a URI as it relates to OEMinfo? 
+
+**A: URIs are the interface through which data is consumed**. See next question. 
+
+-----
+
 ### What are the components of a URI? 
 
 **A: URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
 
-* `content://<Authority>/<Provider>/<API>`
+`content://<Authority>/<Provider>/<API>`
 
-* **Authority**: The authority name of the Content Provider
-* **Package Name**: A unique name within the given authority that identifies the content (e.g. DeviceInfo, Battery)
-* **API**: API name in the given package name (e.g. model, manufacturer)
+**Authority** is the name of the Content Provider
+
+**Package Name** is a unique name within an authority that identifies the content type (e.g. DeviceInfo, Battery, etc.)
+
+**API** is the interface name within the package name (e.g. model, manufacturer)
 
 -----
 
@@ -87,7 +95,4 @@ For Example, to get the device serial the content URI would be
 <!-- 
 Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
 
-<!-- 
-Also see the [Glossary of terms](../glossary).
  -->
------

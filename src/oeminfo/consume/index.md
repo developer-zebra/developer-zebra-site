@@ -179,9 +179,14 @@ Configure the following actions based on the individual requirements.
         String OSU_URI = “content://oem_info/oem.zebra.osupdate”;
 
         // APIs
-        String OSU_STATUS = “status”;
+        String OSU_STATUS = “status”; 
+        // Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
+
         String OSU_DETAIL = “detail”;
+        // Text representation of the status contains detailed reason
+        
         String OSU_TS = “ts”;
+        // Returns an Epoch time stamp indicating when the intent is received
 
 7. **Get the data** (in this case the device OS update info) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 

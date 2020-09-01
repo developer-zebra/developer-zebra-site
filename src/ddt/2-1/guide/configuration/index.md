@@ -17,12 +17,12 @@ _Application settings_
 <br />
 
 * **File path:**
-     * **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceseftest/configuration.xml`
+     * **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
      * **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
 * **Status log -** editable text field for the file name of the status log. Contains information about the tests conducted with any associated parameters and configuration changes from the **Configure Tests** screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.  
 * **History log -** editable text field for the history log, containing information about the test results. Generated when performing a full test from the main screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
 * **Log File Max Size (MB) -** editable text field to specify the maximum file size for the log files.
-* **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceseftest/configuration.xml`.
+* **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
 * **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen.
 
 

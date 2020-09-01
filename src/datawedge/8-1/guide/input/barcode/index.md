@@ -134,6 +134,9 @@ _Scanner configuration_
 * **UDI -** scan Unique Device Identification (UDI) barcodes such as GS1, HIBCC and ICCBBA
 * **Disabled –** when a scanning mode, such as MultiBarcode or Document Capture, is selected in the **NG SimulScan Configuration** screen, scanning mode in this section is automatically disabled, preventing any other selection. 
 
+**Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
+* If **Single** or **UDI** is selected as the **Scanning Mode** within **Scanner Configuration,** then **Scanning Modes** is disabled within **NG SimulScan Configuration.**  
+* If **Document Capture** or **Multibarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
 
 <table>
 
@@ -185,6 +188,10 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#
 * **[Basic MultiBarcode](#basicmultibarcodeparams)** / **[MultiBarcode](#basicmultibarcodeparams) -** multiple barcodes read in a single scan.  In DataWedge 8.1.45 or higher, this option is displayed as **MultiBarcode.**
 * **[SimulScan](#documentcapturetemplate)** / **[Document Capture](#documentcapturetemplate) -** document capture based on a specified custom template.  In DataWedge 8.1.45 or higher, this option is displayed as **Document Capture.** 
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
+
+**Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
+* If **Single** or **UDI** is selected as the **Scanning Mode** within **Scanner Configuration,** then **Scanning Modes** is disabled within **NG SimulScan Configuration.**  
+* If **Document Capture** or **Multibarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
 
 <table>
 
@@ -1241,8 +1248,6 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
-**Scanning Modes -** Used to select between Single (normal), [UDI](#udiparams) and [Basic MultiBarcode](#multibarcodeparams) modes. <!--[UDI mode](#udiparams) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode](#multibarcodeparams) acquires 2-10 barcodes with each scan as specified in [Basic MultiBarcode params](#multibarcodeparams). **Default=5**.-->
-
 **Zoom -** Required for decoding DotCode barcodes. User needs to set Camera Zoom value to 2 on the following devices: MC33, TC51/TC56, TC70x/TC75x, VC80x, TC52/TC57, TC72/TC77, PS20. If Camera Zoom is set to any value other than 2 on these devices, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
 **Keep Pairing Info After Reboot -** Enable/disable automatic re-connection to the connected Bluetooth scanner after device reboot. Applies only to connected Bluetooth scanners.
@@ -1334,14 +1339,14 @@ The Universal Device Identifier (UDI) parameter acquires multiple barcodes simul
 * **TC70x**
 * **TC75x**
 
-**Tap Scanning Modes to enable UDI decoding**: 
+Tap **Scanning Modes** within **Scanner Configuration** to enable UDI decoding: 
 
-<img style="height:350px" src="scanning_modes.png"/>
+<img style="height:350px" src="scanning_modes_sc.png"/>
 _When UDI scanning mode is enabled (as above)_... 
 <img style="height:350px" src="udi_params.png"/>
 ..._the selected UDI input parameter(s) will be used_.  
 
-**UDI Decoding Notes** 
+**UDI Decoding Notes:** 
 
 * **UDI decoding is supported only on the devices listed above**. 
 * **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 

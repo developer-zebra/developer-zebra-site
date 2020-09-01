@@ -44,9 +44,8 @@ If the endpoint is not accessible, there is no communication between the server 
 
 * **Incorrect server ports.** Check if the proper port is in the listening state on the server. For example, from the command prompt enter:
 
-    netstat -aon | find /I “xxxx” 
-
-where "xxxx" is the designated backend server port (e.g. 8080) or web portal (UI) port (e.g. 8443). These same ports specified during  [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: `/Program Files/Zebra Technologies/ZDVC/WebUI`) and **application.properties** (from default folder: `/Program Files/Zebra Technologies/ZDVC/BackendServer/config`). 
+        netstat -aon | find /I “xxxx” 
+      where "xxxx" is the designated backend server port (e.g. 8080) or web portal (UI) port (e.g. 8443). These same ports specified during  [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: `/Program Files/Zebra Technologies/ZDVC/WebUI`) and **application.properties** (from default folder: `/Program Files/Zebra Technologies/ZDVC/BackendServer/config`). 
 <br>
 <br>
 

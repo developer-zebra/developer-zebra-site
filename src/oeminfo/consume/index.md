@@ -21,7 +21,8 @@ menu:
 
 **OEMinfo defines Data Consumers as apps seeking to retrieve information about the device on which they are running**. Examples of such Zebra-owned apps include StageNow and OEMconfig device configuration tools, as well as Power Manager and other built-in configuration service provider (CSP) modules, which interface directly with Zebra's device-API layer. 
 
-<img alt="image" style="height:350px" src="oeminfo_content_provider_framework.png"/>
+<img alt="image" style="height:350px" src="contentprovider_basics.png"/>
+<b><font size="2" color="black">Source: https://developer.android.com/guide/topics/providers/content-provider-basics.html</font></b><br>
 _Click image to enlarge; ESC to exit_. 
 <br>
 

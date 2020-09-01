@@ -77,6 +77,7 @@ Configure the following actions based on the requirements.
 
 ## Also See
 
+* **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)** | How Content Providers Work - Read this first 
+* **[Creating a Content Provider](https://developer.android.com/guide/topics/providers/content-provider-creating) | How and why to share an app's data
+**[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | How to notify an app of changes
 * **[FAQ](../faq)** | Frequently asked questions about OEMinfo
-* **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)**
-**[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)**

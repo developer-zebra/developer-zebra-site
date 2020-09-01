@@ -25,6 +25,13 @@ By offering this information for consumption, app developers have a single, simp
 
 The [OEMinfo Content Provider Framework](../faq/oeminfocontentproviderframework) allows apps to acquire some or all of the information about a given Zebra device though a single set of publicly defined specifications rather than having to use separate proprietary interfaces and methods. A data set can contain proprietary or non-proprietary information, and can be limited to “designated receivers” or open to all. 
 
+### Requirements
+
+Android version
+Device architecture? 
+
+
+-----
 
 ### Scope and Audience
 

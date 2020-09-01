@@ -270,8 +270,8 @@ Configure the following actions based on the individual requirements.
 
 * **[Android Content Provider Basics](https://developer.android.com/guide/topics/providers/content-providers)** | An Intro to Content Providers
 * **[Android Cursor docs](https://developer.android.com/reference/android/database/Cursor)** | Interfacing with a result data set
-* **[Creating a Content Provider](https://developer.android.com/guide/topics/providers/content-provider-creating) | Why and how to share an app's data
-**[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
+* **[Creating a Content Provider](https://developer.android.com/guide/topics/providers/content-provider-creating)** | Why and how to share an app's data
+* **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
 * **[How to display serial and IMEI numbers on device](https://developer.zebra.com/blog/access-serial-number-and-imei-mobile-computers-running-android-10)** | Sample app, instructions, source code
 * **[How to save OEM identifiers to text file on device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app, source code
 

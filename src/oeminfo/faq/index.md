@@ -41,11 +41,11 @@ Below are some common questions related to OEMinfo and its related components an
 
 ### What is static data?
 
-**A: Static data is data on a device that doesn't change, such as device serial number**.
+**A: Static data is data on a device that doesn't change, such as device model and serial number**.
 
 ### What is non-static data?
 
-**A: Non-static data is data on a device that changes rarely, such as the Android version, build ID, MX and OSX versions installed on the device**.
+**A: Non-static data is data on a device that changes rarely, such as the Android version, build ID, and MX/OSX versions installed on the device**.
 
 -----
 

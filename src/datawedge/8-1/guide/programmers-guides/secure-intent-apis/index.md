@@ -1,5 +1,5 @@
 ---
-title: Secure Access to DataWedge Intent APIs
+title: Control Access to DataWedge Intent APIs
 layout: guide.html
 product: DataWedge
 productversion: '8.1'
@@ -7,7 +7,7 @@ productversion: '8.1'
 
 ## Overview
 
-DataWedge provides an option for admins to secure access to DataWedge intent APIs, allowing only approved apps to configure DataWedge. DataWedge intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
+DataWedge provides an option for admins to control access to DataWedge intent APIs, allowing only approved apps to configure DataWedge. DataWedge intent APIs are categorized, allowing the administrator to grant DataWedge API access to specific apps based on category. By default, DataWedge accepts any intent API to avoid impact to existing applications.
 
 Previously, any application on the device could configure DataWedge parameters and receive information such as configurations and status notifications via DataWedge APIs. This led to a potential security risk where a malicious application can configure DataWedge profiles used by other applications and leverage it for its own advantage, for example a malicious app could modify the destination URI of IP Output plugin to divert data delivery to a different address.
 
@@ -16,9 +16,9 @@ Previously, any application on the device could configure DataWedge parameters a
 Video demonstration about securing access to DataWedge intent APIs:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y7smCqmYB7E" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Secure Access 
+## Control Access 
 
-Process to secure access to DataWedge intent APIs:
+Process to control access to DataWedge intent APIs:
 1.	Whitelist approved app using [AccessMgr CSP](/mx/accessmgr) from MX.
 2.	Specify the intent API category to restrict intent API access via [DataWedgeMgr CSP](/mx/datawedgemgr) from MX.
 3.	Acquire the app token from AccessMgr using EMDK.
@@ -28,7 +28,7 @@ Details are provided in the sections that follow.
 
 ### 1. Whitelist Approved App 
 
-The first step to secure access to DataWedge Intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)) to deploy the configuration to whitelist the app. Set the following parameters:
+The first step to control access to DataWedge Intent APIs is for the admin to whitelist the app using [AccessMgr CSP](/mx/accessmgr) from MX. Whitelisting allows only the apps specified on a list to run, restricting use of apps not on the approved whitelist. Use [StageNow](/stagenow) or EMDK Profile Manager ([Android](/emdk-for-android/latest/guide/profile-manager-guides/) or [Xamarin](/emdk-for-xamarin/latest/guide/profile-manager-guides/)) to deploy the configuration to whitelist the app. Set the following parameters:
 
 * **Service Access Action**: "Allow caller" 
 * **Service Identifier**: com.symbol.datawedge.api
@@ -85,7 +85,7 @@ Administrators can designate which categories are protected using [DataWedgeMgr 
 
   <tr>
     <td>Configuration APIs</td>
-	<td>Get Config<br>Get Disabled App List<br>Get Ignore Disabled Profiles<br>Get Profile List<br>Clone Profile<br>Create Profile<br>Delete Profile<br>Rename Profile<br>Set Ignore Disabled Profiles<br>Set Disabled App list<br>Restore Config<br>Import Config
+	<td>Get Config<br>Get Disabled App List<br>Get Ignore Disabled Profiles<br>Get Profile List<br>Clone Profile<br>Create Profile<br>Delete Profile<br>Rename Profile<br>Set Config<br>Set Ignore Disabled Profiles<br>Set Disabled App list<br>Restore Config<br>Import Config
     </td>
   </tr>
 

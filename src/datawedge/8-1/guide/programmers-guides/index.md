@@ -15,8 +15,8 @@ content-items:
     url: /datawedge/8-1/guide/programmers-guides/content-provider
   - type: section
     level: 4
-    title: Secure Access to DataWedge Intent APIs
-    text: Learn how to secure access to DataWedge Intent APIs to prevent unauthorized use of the APIs.
+    title: Control Access to DataWedge Intent APIs
+    text: Learn how to control access to DataWedge Intent APIs to prevent unauthorized use of the APIs.
     url: /datawedge/8-1/guide/programmers-guides/secure-intent-apis
 product: DataWedge
 productversion: '8.1'

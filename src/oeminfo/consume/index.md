@@ -32,7 +32,7 @@ Information for consumption is made available through **[Data Provider apps](../
 
 ## Consuming OEMinfo Data
 
-**The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. 
+**The process of retrieving data through OEMinfo is the same as that of querying an [Android Content Provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. 
 
 **However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. This step must be performed only once for each app, but is required before the app can attempt any OEMinfo read operation. 
 
@@ -45,14 +45,13 @@ Information for consumption is made available through **[Data Provider apps](../
 ### Content URIs
 Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
 
-In addition to the `content:` scheme, **URIs are broken into three parts**: “Authority," “Provider" and “API" as: `content://<Authority>/<Provider>/<API>`
+**URIs are broken into four (4) parts** as`<scheme:>//<Authority>/<Provider>/<API>`
 
-**For example**: 
-* `content://oem_info/oem.zebra.secure/build_serial`
-* **Where**: 
- * `oem_info` is the **authority name** of the content provider
- * `oem.zebra.secure` is the **content provider name** unique within a given authority
- * `build_serial` is the **API name** unique within a given package name
+**For example, the URI** `content://oem_info/oem.zebra.secure/build_serial` **can be broken down as follows**: 
+* `content:` is the **scheme**, which tells Android that this URI points to a Content Provider  
+* `oem_info` is the **authority name** of the Content Provider
+* `oem.zebra.secure` is the **Content Provider name** unique within a given authority
+* `build_serial` is the **API name** unique within a given package name
 
 -----
 
@@ -68,7 +67,7 @@ The ZDPI uses Zebra [Access Manager](/mx/accessmgr) to grant or deny apps author
 
 <!-- 
 **Note**: All such apps have package names that begin with “com.zebra”
- -->
+-->
 
 #### Authorization Required
 * Customer-developed apps and services
@@ -157,7 +156,7 @@ Configure the following actions based on the individual requirements.
         protected Cursor doInBackground(String... args) {
             myUri = args[0];
 
-        // Query the content provider
+        // Query the Content Provider
         ContentResolver cr = getContentResolver();
         Cursor cursor = cr.query(Uri.parse(myUri),
                             null, null, null, null);
@@ -207,7 +206,7 @@ Configure the following actions based on the individual requirements.
             protected Cursor doInBackground(String... args) {
                 myUri = args[0];
 
-                // Query the content provider
+                // Query the Content Provider
                 ContentResolver cr = getContentResolver();
                 Cursor cursor = cr.query(Uri.parse(myUri),
                                     null, null, null, null);

@@ -32,7 +32,7 @@ Information for consumption is made available through **[Data Provider apps](../
 
 ## Consuming OEMinfo Data
 
-**The process of retrieving data through OEMinfo is the same as that of querying an [Android Content Provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. 
+**The process of retrieving data through OEMinfo is the same as that of querying an [Android content provider](https://developer.android.com/guide/topics/providers/content-providers)**. And like Android, OEMinfo employs content URIs to identify certain data available from a provider. 
 
 **However, before an app can retrieve data from OEMinfo, it must first receive permission** to do so. This step must be performed only once for each app, but is required before the app can attempt any OEMinfo read operation. 
 
@@ -43,14 +43,14 @@ Information for consumption is made available through **[Data Provider apps](../
         <uses-permission android:name=”com.zebra.provider.READ”>
 
 ### Content URIs
-Each content URI includes the authority of the Content Provider represented as a symbolic name along with a path to a table. When calling a client method to access a Content Provider's table, the content URI for the table is passed as an argument.
+Each content URI includes the authority of the content provider represented as a symbolic name along with a path to a table. When calling a client method to access a content provider's table, the content URI for the table is passed as an argument.
 
 **URIs are broken into four (4) parts** as`<scheme:>//<Authority>/<Provider>/<API>`
 
 **For example, the URI** `content://oem_info/oem.zebra.secure/build_serial` **can be broken down as follows**: 
-* `content:` is the **scheme**, which tells Android that this URI points to a Content Provider  
-* `oem_info` is the **authority name** of the Content Provider
-* `oem.zebra.secure` is the **Content Provider name** unique within a given authority
+* `content:` is the **scheme**, which tells Android that the URI points to a content provider  
+* `oem_info` is the **authority name** of the content provider
+* `oem.zebra.secure` is the **content provider name** unique within a given authority
 * `build_serial` is the **API name** unique within a given package name
 
 -----
@@ -156,7 +156,7 @@ Configure the following actions based on the individual requirements.
         protected Cursor doInBackground(String... args) {
             myUri = args[0];
 
-        // Query the Content Provider
+        // Query the content provider
         ContentResolver cr = getContentResolver();
         Cursor cursor = cr.query(Uri.parse(myUri),
                             null, null, null, null);
@@ -206,7 +206,7 @@ Configure the following actions based on the individual requirements.
             protected Cursor doInBackground(String... args) {
                 myUri = args[0];
 
-                // Query the Content Provider
+                // Query the content provider
                 ContentResolver cr = getContentResolver();
                 Cursor cursor = cr.query(Uri.parse(myUri),
                                     null, null, null, null);
@@ -258,13 +258,13 @@ Configure the following actions based on the individual requirements.
 
 ### Limitations
 
-**Data acquired through the OEMinfo Content Provider is subject to the rules and limitations listed below**. 
+**Data acquired through the OEMinfo content provider is subject to the rules and limitations listed below**. 
 
 * With the exception of OS Update events, **OEMinfo does NOT read system properties that can change at runtime**.
 * **OEMinfo reads system properties only after being signaled by the** `BOOT_COMPLETE` event.
- * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but **a delay of about one minute is typical before results of an OS Update are published to the ZDPI**.
+ * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the content provider. This generally takes a few seconds, but **a delay of about one minute is typical before results of an OS Update are published to the ZDPI**.
  * If an app queries OEMinfo too soon after reboot, **some URIs might return "stale" data**, posing a potential issue for non-static values. 
-* **OEMinfo requires extra time populate the Content Provider database** when device data is wiped after an Enterprise Reset, Factory Reset or other erasure event.
+* **OEMinfo requires extra time populate the content provider database** when device data is wiped after an Enterprise Reset, Factory Reset or other erasure event.
   * **Zebra recommends registering apps with a content observer on the URI to receive a callback whenever new data is available** to avoid issues relating to stale or missing data due to re-population delays.
 * **OEMinfo is “System UID” and platform-signed**, and is therefore **subject to platform permissions and SELinux restrictions** across Android versions and devices.
  * The same set of **system properties might not be readable on all devices**.
@@ -276,7 +276,7 @@ Configure the following actions based on the individual requirements.
 
 #### Android Developer Docs 
 * **[Android Content Provider Basics](https://developer.android.com/guide/topics/providers/content-providers)** | An Introduction
-* **[Creating a Content Provider](https://developer.android.com/guide/topics/providers/content-provider-creating)** | Why and how to share an app's data
+* **[Creating a content provider](https://developer.android.com/guide/topics/providers/content-provider-creating)** | Why and how to share an app's data
 * **[Android Cursor docs](https://developer.android.com/reference/android/database/Cursor)** | How to interface with a result data set
 * **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
 

@@ -3,7 +3,7 @@ csp: clock
 title: Coordinate System
 type: parm
 order: 10
-mx: "10.0"
+mx: "10.2"
 devicetype: A,B
 parm:
   presentif: The Auto Time checkbox is "unchecked" 
@@ -14,12 +14,12 @@ parm:
     - code: 0
       devicetype: A,B
       name: Local
-      mx: "10.0"
+      mx: "10.2"
       description: Configures the device to accept local Time (relative to the device location), adjusted for Time Zone.
     - code: 1
       devicetype: A,B
       name: Universal
-      mx: "10.0"
+      mx: "10.2"
       description: Configures the device to accept Coordinated Universal Time (UTC), the absolute time at the Prime Meridian.  
 ---
 

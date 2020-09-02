@@ -3,7 +3,7 @@ csp: clock
 title: Set UTC Date 
 type: parm
 order: 16
-mx: "10.0"
+mx: "10.2"
 devicetype: A,B
 parm:
   presentif: The Auto Time checkbox is "unchecked" AND "Coordinate System" is set to Universal

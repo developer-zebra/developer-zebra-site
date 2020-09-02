@@ -262,7 +262,7 @@ Configure the following actions based on the individual requirements.
 
 **Data acquired through the OEMinfo Content Provider is subject to the rules and limitations listed below**. 
 
-* With the exception of OS Update events, **OEMinfo does NOT support reading of system properties that can change at runtime**.
+* With the exception of OS Update events, **OEMinfo does NOT read system properties that can change at runtime**.
 * **OEMinfo reads system properties only after being signaled by the** `BOOT_COMPLETE` event.
  * After receiving `BOOT_COMPLETE`, OEMinfo queries selected system properties and refreshes the Content Provider. This generally takes a few seconds, but **a delay of about one minute is typical before results of an OS Update are published to the ZDPI**.
  * If an app queries OEMinfo too soon after reboot, **some URIs might return "stale" data**, posing a potential issue for non-static values. 
@@ -282,7 +282,7 @@ Configure the following actions based on the individual requirements.
 * **[Android Cursor docs](https://developer.android.com/reference/android/database/Cursor)** | How to interface with a result data set
 * **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
 
-##### Articles by Zebra Engineers
+#### Articles by Zebra Engineers
 * **[How to display serial and IMEI numbers on device](https://developer.zebra.com/blog/access-serial-number-and-imei-mobile-computers-running-android-10)** | Sample app, instructions, source code
 * **[Save OEM identifiers to a text file on the device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app with source code
 

@@ -57,42 +57,16 @@ Below are some common questions related to OEMinfo and its related components an
 
 -----
 
-### More FAQs coming soon
+### Which Zebra devices support OEMinfo?
 
+**A: OEMinfo comes preinstalled on Zebra devices running Android 8.x Oreo and later. For other devices, OEMinfo can be installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).**  
 
+-----
 
-<!-- 
+### How can I determine whether OEMinfo is already installed on my device(s)?
 
-FAQs on:
+**A: OEMinfo appears in the Apps list of the Android Settings panel**.
 
+-----
 
-For Example, to get the device serial the content URI would be
-
-`content://oem_info/oem.zebra.secure/build_serial`
-
-3.2 Device Serial Number URI
-
-• URI : `content://oem_info/oem.zebra.secure/build_serial`
-
-3.3 IMEI Number URI (Android 10 only)
-
-• URI : `content://oem_info/wan/imei`
-
-3.4 OS Update URI
-
-• URI : `content://oem_info/oem.zebra.osupdate/`
-
-• API :
-
- o “status” - Returns SUCCESS, IN_PROGRESS, FAIL, WAITING_FOR_REBOOT, etc.
-
- o “detail” - Text representation of the status, contains detailed reason.
-
- o “ts” - Epoch time when the intent is received
-
-
- -->
-<!-- 
-Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
-
- -->
+### FAQs appear as they become known 

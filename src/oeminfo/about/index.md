@@ -19,21 +19,17 @@ menu:
 
 ## Overview
 
-Zebra OEMinfo is a service included with Zebra devices running Android 10 (and later) that provides a set of APIs through which Zebra and authorized application developers can publish information about a Zebra device's capabilities and settings and allow other apps to acquire that data through the same interfaces.
+**Zebra OEMinfo is a service included with Zebra devices that provides a set of APIs through which Zebra publishes information about a Zebra device's capabilities and settings and allows apps running on the device to acquire that data through publicly specified interfaces**.
 
-By offering this information for consumption, app developers have a simple, unified method of programmatically determining whether a feature or operation they wish their app to perform is likely to be successful. OEMinfo also can be used by apps as a "standard" mechanism for publishing data the app itself is collecting or creating. This can include inventory data, device location and other collected or changing data points. 
+By offering this information for consumption, app developers have a simple, unified method of programmatically determining whether a feature or operation they wish their app to perform is likely to be successful. OEMinfo also can be used by apps as a "standard" mechanism for publishing data the app itself is collecting or creating. This can include inventory data, device location and other collected or changing information. 
 
-The OEMinfo Content Provider Framework allows apps to acquire some or all of the information about a given Zebra device though a single set of publicly defined specifications rather than having to use separate proprietary interfaces and methods. A data set can contain proprietary or non-proprietary information, and can be limited to “designated receivers” or open to all. 
+The OEMinfo Content Provider Framework allows apps to acquire some or all of the information about a given Zebra device though a single set of specifications rather than having to use separate proprietary interfaces and methods. A data set can contain proprietary or non-proprietary information, and can be limited to “designated receivers” or open to all. 
 
-<!-- ### Requirements
+### Requirements
 
-Release to Oreo​
-
-Marshmallow, Nougat via LG (PI 3.18)​
-
-Follow-up releases to KK, L via LG
-
- -->
+Available on Zebra devices running...
+* **Android 8.x Oreo​ (or later)** - preinstalled
+* **Android 7.x Nougat or earlier** - as a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)
 
 -----
 

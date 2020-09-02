@@ -47,15 +47,13 @@ Each content URI includes the authority of the Content Provider represented as a
 
 **URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
 
-    :::xml
-    content://<Authority>/<Provider>/<API>
-
-     // For example: 
-     content://oem_info/oem.zebra.secure/build_serial
-
-* **Authority**: `oem_info` is the content provider authority name
-* **Provider**: `oem.zebra.secure` is the unique name within the given authority
-* **API**: `build_serial` is the API name within the given package name
+* `content://<Authority>/<Provider>/<API>`
+* **For example**: 
+ * `content://oem_info/oem.zebra.secure/build_serial`
+* **Where**: 
+ * `oem_info` is the content provider **authority name**
+ * `oem.zebra.secure` is the unique **content provider name** within the given authority
+ * `build_serial` is the **API name** within the given package name
 
 -----
 
@@ -284,5 +282,5 @@ Configure the following actions based on the individual requirements.
 
 #### Articles by Zebra Engineers
 * **[How to display serial and IMEI numbers on device](https://developer.zebra.com/blog/access-serial-number-and-imei-mobile-computers-running-android-10)** | Sample app, instructions, source code
-* **[Save OEM identifiers to a text file on the device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app with source code
+* **[Save OEM identifiers to a text file on the device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app, source code
 

@@ -7,6 +7,7 @@ productversion: '8.1'
 
 ## Overview
 **DataWedge Manager** CSP (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [StageNow](/stagenow) to create profiles specific to configuring DataWedge. Features that can be configured include:
+* Control access to intent APIs
 * Enable/Disable DataWedge UI
 * Enable/Disable configuration file import via intent API
 * Enable/Disable auto import of configuration file

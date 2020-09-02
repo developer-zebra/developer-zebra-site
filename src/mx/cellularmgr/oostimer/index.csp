@@ -3,14 +3,14 @@ csp: cellularmgr
 title: Out-of-Service Timer
 type: parm
 order: 60
-mx: "10.0"
+mx: "10.2"
 apilevel: "26"
 devicetype: A
 info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
 parm:
   presentif: DSDS Auto-service is set to "Enable"
   pivotal: No
-  name: OutOfServiceTimer
+  name: OOSTimer
   type: integer
 ---
 

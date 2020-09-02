@@ -1073,6 +1073,8 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 * **Code ID Type Symbol -** Inserts a Zebra-defined single-character prefix.
 
+**Connection Idle Time -** Specifies the length of time (in seconds) for a peripheral Bluetooth scanner to remain connected until transitioning to standby mode to conserve battery power.
+
 ------
 
 **Volume Type -** Permits selection of the volume setting to be used when playing the Decode Audio Feedback. Available options: 

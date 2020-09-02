@@ -1359,6 +1359,8 @@ _When UDI scanning mode is enabled (as above)_...
 ## OCR Params
 Optical character recognition (OCR) decoding is not as secure as barcode. To decrease OCR misdecodes and speed OCR reading, set an accurate OCR template and character subset, and use a check digit. Enabling OCR can slow barcode decoding. Enabling more than one OCR font could also slow OCR decoding and impact OCR decoding accuracy.
 
+**OCR is supported on all Zebra SDM660 platform devices with built-in imagers** (such as TC52, TC57, TC72, and TC77). OCR is not supported on camera-only devices, Bluetooth scanners, SE965-based devices, nor Zebra Scanner Expansion Back (ZBack).
+
 **Inverse OCR -** White or light words on a black or dark background. Select an option for decoding inverse OCR: 
 * **Regular Only -** Decode regular OCR (black on white) strings only. 
 * **Inverse Only -** Decode inverse OCR (white on black) strings only. 

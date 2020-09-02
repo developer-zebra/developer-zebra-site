@@ -1207,11 +1207,6 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 	<td>Optimize DPM barcode decoding performance based on the barcode size. Default value is 2. Values:<br><br>0 – Disabled<br>1 – Mode 1<br>2 – Mode 2<br><br><a href="../../input/barcode#readerparams">More info</a></td>
   </tr>
 
-  <tr>
-	<td>connection_idle_time</td>
-	<td>Integer from 0 - 1800<br><a href="../../input/barcode#scanparams">More info</a></td>
-  </tr>
-
 </table>
 
 -----

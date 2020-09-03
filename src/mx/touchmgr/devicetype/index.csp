@@ -51,6 +51,11 @@ parm:
       name: EC30
       mx: "9.1"
       description: Applies settings for EC30 devices.
+    - code: 8
+      devicetype: A
+      name: EC30
+      mx: "10.2"
+      description: Applies settings for L10 tablets.
 ---
 
 Used to enter the group, platform or type of Zebra devices on which to apply settings for touch-screen sensitivity.

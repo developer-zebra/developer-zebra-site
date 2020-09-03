@@ -17,11 +17,12 @@ menu:
       url: /oeminfo/search
 ---
 
-> **NOTE: Only Zebra apps are authorized to publish data through OEMinfo at this time**. 
 
 ## Overview
 
 The Zebra Data Provider Interface (ZDPI) is a mechanism through which device data is published by an app for consumption by other apps. ZDPI is based on the [Android content provider framework](https://developer.android.com/guide/topics/providers/content-providers), a public specification that allows sets of device data to be made available to apps using URI-based queries. 
+
+> **NOTE: Only Zebra apps are authorized to publish data through OEMinfo at this time**. 
 
 <!-- 
 Data publishers and consumers follow the content-provider client model to insert (put) and retrieve (get) data. Together, the OEMinfo Content Provider and Publisher and Consumers apps offer a reliable model to handle sharing of OEM-specific, proprietary, non-proprietary static and semi-static data on Zebra devices. The OEMinfo Content Provider manages access to the central repository using a standard authority.

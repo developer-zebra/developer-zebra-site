@@ -1,0 +1,36 @@
+---
+csp: touchmgr
+title: Touch Actions - L10 Tablet
+type: parm
+order: 10
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Device Type is set to "L10" 
+  pivotal: No
+  name: TouchActionL10
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the Touch Mode; any previously selected setting is retained. 
+    - code: 17
+      devicetype: A
+      name: Stylus and Finger 
+      mx: "10.2"
+      description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
+    - code: 18
+      devicetype: A
+      name: Glove and Finger
+      mx: "10.2"
+      description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
+    - code: 19
+      devicetype: A
+      name: Finger
+      mx: "10.2"
+      description: Adjusts touch-screen sensitivity for input with a bare finger.
+---
+
+Used to enter the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter is designed for use with Zebra L10 tablets**. 

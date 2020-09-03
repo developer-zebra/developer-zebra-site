@@ -38,7 +38,7 @@ parm:
       description: Applies settings for ET50 and ET55 devices.
     - code: 5
       devicetype: A
-      info: MX 10.2 is required to use this option for TC52x and TC57x devices. 
+      info: MX 10.2 or later is required to use this option for TC52x and TC57x devices. 
       name: SDM660
       mx: "9.1" 
       description: Applies settings for ET51, ET56, MC93, TC52, TC52x, TC57, TC57x, TC72 or TC77 devices.
@@ -49,7 +49,7 @@ parm:
       description: Applies settings for VC83 devices.
     - code: 7
       devicetype: A
-      info: MX 10.2 is required to use this option for TC21 or TC26 devices.
+      info: MX 10.2 or later is required to use this option for TC21 and TC26 devices.
       name: EC30
       mx: "9.1"
       description: Applies settings for EC30, TC21 and TC26 devices.

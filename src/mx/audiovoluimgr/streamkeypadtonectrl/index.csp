@@ -1,0 +1,21 @@
+---
+csp: audiovoluimgr
+title: Voice Call Control Parameters
+type: parm
+order: 46
+mx: "4.4"
+osx: "4.4"
+devicetype: A
+parm:
+  presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
+  pivotal: No
+  name: STREAM_VOICECALL_Ctrl
+  type: string
+---
+
+Controls whether the ZVC allows the device user to view and modify the volume settings for the audio stream that is typically used for phone calls. Entering an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this audio stream's visibility. 
+
+**Parm value input rules**: 
+
+* String from 0&ndash;255 characters
+* A value of "1" makes the stream visible; a "0" makes it invisible.

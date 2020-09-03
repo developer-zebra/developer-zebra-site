@@ -14,17 +14,17 @@ parm:
       mx: "5.0"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the Power Off Menu; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to the Power-off Menu; any previously selected setting will be retained.
     - code: 1
       devicetype: A
       name: Show Menu Option
       mx: "5.0"
-      description: Enables the Touch Panel to be controlled from the Power Off Menu (if the device supports this option).
+      description: Enables the Touch Panel to be controlled from the Power-off Menu (if the device supports this option).
     - code: 2
       devicetype: A
       name: Do not show Menu Option
       mx: "5.0"
-      description: Prevents the Touch Panel from being controlled from the Power Off Menu (if the device supports this option).
+      description: Prevents the Touch Panel from being controlled from the Power-off Menu (if the device supports this option).
 ---
 
-Controls whether the Touch Panel control is displayed in the Power Off Menu on devices that support this option.
+Controls whether the Touch Panel control is displayed in the Power-off Menu on devices that support this option.

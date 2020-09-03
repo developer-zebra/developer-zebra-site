@@ -1,0 +1,30 @@
+---
+csp: powerkeymgr
+title: Touch Panel Mode Show/Hide
+type: parm
+order: 3
+mx: "10.2"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: TouchPanelMode
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the Power-off Menu; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Show Menu Option
+      mx: "10.2"
+      description: Enables the Touch Panel Mode option to be controlled from the Power-off Menu (if the device supports this option).
+    - code: 2
+      devicetype: A
+      name: Do not show Menu Option
+      mx: "10.2"
+      description: Prevents the Touch Panel Mode option from being controlled from the Power-off Menu (if the device supports this option).
+---
+
+Controls whether the Touch Panel Mode option is displayed in the Power-off Menu on devices that support this option.

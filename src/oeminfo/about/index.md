@@ -1,7 +1,7 @@
 ---
 title: About Zebra OEMinfo
 layout: guide.html
-product: OEMinfo
+product: Zebra OEMinfo
 productversion:
 menu:
   items:

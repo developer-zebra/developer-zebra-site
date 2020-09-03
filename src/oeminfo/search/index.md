@@ -2,7 +2,7 @@
 title: Search
 layout: search.html
 index: /oeminfo/index.json
-product: OEMinfo
+product: Zebra OEMinfo
 productversion:
 menu:
   items:

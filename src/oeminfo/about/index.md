@@ -35,7 +35,7 @@ This guide describes major components of the OEMinfo Content Provider Framework,
 
 ### Requirements
 
-Available on Zebra devices running...
+**OEMinfo is available on Zebra devices running**...
 * **Android 8.x Oreo​ or later** (preinstalled)
 * **Android 7.x Nougat or earlier** (installed as a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html))
 
@@ -43,6 +43,10 @@ Available on Zebra devices running...
 
 ## Also See
 
-* **[Content Provider Basics](https://developer.android.com/guide/topics/providers/content-provider-basics.html)**
-* **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)**
-* **[FAQ](../faq)** | Frequently asked questions about OEMinfo
+#### Android Developer Docs 
+* **[Android Content Provider Basics](https://developer.android.com/guide/topics/providers/content-providers)** | An Introduction
+* **[Content Observer](https://developer.android.com/reference/android/database/ContentObserver.html)** | Get a callback when data changes
+
+#### Articles by Zebra Engineers
+* **[How to display serial and IMEI numbers on device](https://developer.zebra.com/blog/access-serial-number-and-imei-mobile-computers-running-android-10)** | Sample app, instructions, source code
+* **[Save OEM identifiers to a file on the device](https://github.com/ZebraDevs/OEMIdentifiers-Java-Sample)** | Sample app, source code

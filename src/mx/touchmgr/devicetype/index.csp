@@ -48,7 +48,7 @@ parm:
       mx: "9.1"
       description: Applies settings for VC83 devices.
     - code: 7
-      devicetype: A,B
+      devicetype: A
       info: MX 10.2 is required to use this option for TC21 or TC26 devices.
       name: EC30
       mx: "9.1"

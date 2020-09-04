@@ -35,15 +35,13 @@ Below are some common questions related to OEMinfo and its related components an
 
 ### What are the components of a URI? 
 
-**A: URIs are broken into three parts**: “Authority," “Package Name” and “API" as follows: 
+**A: **URIs are broken into four (4) parts** as`<scheme:>//<Authority>/<Provider name>/<API>`
 
-`content://<Authority>/<Provider>/<API>`
-
-**Authority** is the name of the Content Provider
-
-**Package Name** is a unique name within an authority that identifies the content type (e.g. DeviceInfo, Battery, etc.)
-
-**API** is the interface name within the package name (e.g. model, manufacturer)
+**For example, the URI** `content://oem_info/oem.zebra.secure/build_serial` **can be broken down as follows**: 
+* `content:` is the **scheme**, which tells Android that the URI points to a content provider  
+* `oem_info` is the **authority name** of the content provider
+* `oem.zebra.secure` is the **content provider name** unique within a given authority. Usually a package name.
+* `build_serial` is the **API name** unique within a given package name
 
 -----
 

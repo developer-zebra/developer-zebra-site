@@ -43,7 +43,7 @@ Information for consumption is made available through **[Data Provider apps](../
         <uses-permission android:name=”com.zebra.provider.READ”>
 
 ### Content URIs
-Each content URI includes the authority of the content provider represented as a symbolic name along with the package name of a Content Provider or path to the table containing its content. When calling a client method to access a content provider's table, the content URI is passed as an argument.
+Each content URI includes the authority of the content provider represented as a symbolic name along with the package name of a Content Provider or path to a table containing its content. When calling a client method to access a content provider or table, the content URI is passed as an argument.
 
 **URIs are broken into four (4) parts** as`<scheme:>//<Authority>/<Provider name>/<API>`
 

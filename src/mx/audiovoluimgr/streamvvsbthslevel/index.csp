@@ -2,7 +2,7 @@
 csp: audiovoluimgr
 title: Decode Beep Bluetooth Headset Levels
 type: parm
-order: 64
+order: 69
 mx: "4.4"
 osx: "4.4"
 devicetype: A

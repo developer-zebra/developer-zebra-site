@@ -179,13 +179,13 @@ _DataWedge profile displaying NG SimulScan_
  <img style="height:350px" src="ng_simulscan_configuration.png"/>
 _NextGen (NG) SimulScan configuration_
 
-Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#documentcapturetemplate)** and **[Basic MultiBarcode Params](#basicmultibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
+Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#documentcapturetemplate)** and **[MultiBarcode Params](#multibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
 
 ### Scanning Modes
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
 * **Single -** normal mode to scan an individual barcode; this does not exist starting with DataWedge 8.1.45.
-* **[Basic MultiBarcode](#basicmultibarcodeparams)** / **[MultiBarcode](#basicmultibarcodeparams) -** multiple barcodes read in a single scan.  In DataWedge 8.1.45 or higher, this option is displayed as **MultiBarcode.**
+* **[Basic MultiBarcode](#multibarcodeparams)** / **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan.  In DataWedge 8.1.45 or higher, this option is displayed as **MultiBarcode.**
 * **[SimulScan](#documentcapturetemplate)** / **[Document Capture](#documentcapturetemplate) -** document capture based on a specified custom template.  In DataWedge 8.1.45 or higher, this option is displayed as **Document Capture.** 
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
@@ -216,36 +216,36 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#
 
 ### Document Capture Template
 
-**Document Capture** requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. **Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
+**Document Capture** requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. **Document Capture Template** (in DataWedge v8.1 or earlier) or **Document Capture Selection** (in DataWedge 8.1.45 or later) specifies the template to be used for document capture with **SimulScan** or **Document Capture** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
 
-To configure, in the **NG SimulScan configuration** screen tap on **Document Capture Template** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+To configure, in the **NG SimulScan configuration** screen tap on **Document Capture Template** (in DataWedge v8.1 or earlier) or **Document Capture Selection** (in DataWedge 8.1.45 or later) and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 
-<img style="height:350px" src="document_capture_ngss.png"/>
-_SimulScan - Document Capture_
+<img style="height:350px" src="document_selection.png"/>
+_Document Capture template selection_
 
 Video demonstration about document capture:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Basic MultiBarcode Params
-**MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. 
+### MultiBarcode Params
+**MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
 
 <table>
 
  <tr>
   <td>
-  <img style="height:350px" src="basic_multibarcode_params.png"/>
+  <img style="height:350px" src="multibarcode.png"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
   <td>
-  <img style="height:350px" src="multibarcode_params.jpg"/>
+  <img style="height:350px" src="multibarcode_params.png"/>
   </td>
  </tr>
 
 </table>
-<i>Basic MultiBarcode params</i>
+<i>MultiBarcode params</i>
 
-Basic MultiBarcode params options:
+MultiBarcode params options:
 * **Instant Reporting -** Enable/Disable instantaneous reporting of unique barcodes within a scanning session (duplicates are ignored). If enabled, it ignores the value of **Number of barcodes per scan** and immediately reports the scanned data. If disabled _(default)_, the decoded data is returned as a single entity after reaching the specified **Number of barcodes per scan**.
 * **Number of barcodes per scan-** Specify the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
 * **Report Decoded Barcodes -** Enable/Disable reporting of decoded barcode data in a single scan session irrespective of the specified **Number of barcodes per scan**. Consider the following behavior when **Report Decoded Barcodes** is enabled:
@@ -257,7 +257,7 @@ Basic MultiBarcode params options:
 
 * **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
 * MultiBarcode supports a **maximum data size of 64 KB.** 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes specified in the Basic MultiBarcode params screen. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes specified in the MultiBarcode params screen. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 

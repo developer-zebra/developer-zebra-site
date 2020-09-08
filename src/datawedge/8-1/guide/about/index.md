@@ -17,11 +17,11 @@ There are 3 approaches to capture data:
 Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about NextGen SimulScan:</b> <br>Major SimulScan capabilities are being migrated to the internal scanning framework accessible through DataWedge and <b><a href="../api">DataWedge intent APIs.</a></b> These capabilities formerly available only through SimulScan will be accessible without licensing. They are supported on <a href="../input/barcode#bluetoothscanners">certain Bluetooth scanners</a> and all Zebra devices with built-in imager and/or camera running Android 8.x Oreo and higher. Major SimulScan features being transitioned are:<br>
-&nbsp;&nbsp;&nbsp;<b>• Multibarcode -</b> Options currently available are <b><a href="../input/barcode#basicmultibarcodeparams">Number of barcodes per scan</a></b> (setting a fixed quantity of barcodes to scan), <b><a href="../input/barcode#basicmultibarcodeparams">Instant Reporting</a></b> (instantaneously reporting unique barcodes within a scanning session) and <b><a href="../input/barcode#basicmultibarcodeparams">Report decoded barcodes</a></b> (reporting decoded barcodes in a single scan session). Multibarcode is enabled through the <b>Scanning Modes</b> option in <b><a href="../input/barcode#scanningmodes">NextGen SimulScan configuration</a></b>.<br>
+&nbsp;&nbsp;&nbsp;<b>• Multibarcode -</b> Options currently available are <b><a href="../input/barcode#multibarcodeparams">Number of barcodes per scan</a></b> (setting a fixed quantity of barcodes to scan), <b><a href="../input/barcode#multibarcodeparams">Instant Reporting</a></b> (instantaneously reporting unique barcodes within a scanning session) and <b><a href="../input/barcode#multibarcodeparams">Report decoded barcodes</a></b> (reporting decoded barcodes in a single scan session). Multibarcode is enabled through the <b>Scanning Modes</b> option in <b><a href="../input/barcode#scanningmodes">NextGen SimulScan configuration</a></b>.<br>
 <!--  // **TUT-40275 - OCR and Signature Capture not part of NGSS**
 &nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> <a href="../input/barcode#ocra">OCR A</a> and <a href="../input/barcode#ocrb">OCR B</a> decoder support added since DataWedge 7.5.<br>
 &nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> <a href="../input/barcode#decodersignature">Decoder Signature</a> (aka Signature Capture) support added since DataWedge 7.3. Other Image Capture features to be transitioned later in 2020.<br>-->
-&nbsp;&nbsp;&nbsp;<b>• Document Capture -</b> Scan a document based on a custom <a href="../input/barcode#documentcapturetemplate">document capture template</a>.<br>
+&nbsp;&nbsp;&nbsp;<b>• Document Capture -</b> Scan a document based on a custom <a href="../input/barcode#documentcapture">document capture template</a>.<br>
 See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more information.
 </div>
 
@@ -149,7 +149,12 @@ For more information about approved languages or to download a localized operati
 * [Control access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
 * New [Trigger Wakeup and Scan](../input/barcode#readerparams) Reader Parameter to trigger scanning when device is in a suspended/screen-off state. New corresponding [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
 * Updated licensing screen.
-* For DataWedge 8.1.45, new [Scanning Modes](../input/barcode/#configurescannersettings) option available in the Configure Scanner Settings section of Barcode Input.
+* For DataWedge 8.1.45:
+    * New [Scanning Modes](../input/barcode/#configurescannersettings) option available in the Configure Scanner Settings section of Barcode Input.
+    * Renamed SimulScan to [Document Capture](../input/barcode/#nextgensimulscanconfiguration).
+    * Renamed Basic MultiBarcode to [MultiBarcode](../input/barcode/#nextgensimulscanconfiguration).
+    * Renamed Document Capture Template to [Document Selection](../input/barcode/#documentcapture) in UI.
+    
 
 -----
 ## Recent Version History
@@ -173,7 +178,7 @@ For more information about approved languages or to download a localized operati
 * **Support for SimulScan API is deprecated -** SimulScan support will be removed from DataWedge beginning with Android 10 Q device support.
 
 ### Added in DataWedge 7.5
-* Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode#multibarcodeparams).**
+* Increased supported data size and maximum number of supported barcodes for **[MultiBarcode](../input/barcode/#multibarcodeparams).**
 * New **[RFID Input parameters](../input/rfid)** that include Link Profile, Dynamic Power, Pre filters, and Post filters.
 * Added support for **[OCR A](../input/barcode#ocra)**, **[OCR B](../input/barcode#ocrb)**, **[MICR E13B](../input/barcode#decoderselection)** and **[US Currency](../input/barcode#decoderselection)** decoders and corresponding **[OCR parameters](../input/barcode#ocrparams)** for optical character recognition decoding.
 * New **[secure Remote Administration](../admin)** using CSP (Configuration Service Provider) for mass deployment.

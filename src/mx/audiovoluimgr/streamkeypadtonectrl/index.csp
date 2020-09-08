@@ -1,19 +1,17 @@
 ---
 csp: audiovoluimgr
-title: Voice Call Control Parameters
+title: Keypad Tone Control Parameters
 type: parm
 order: 46
-mx: "4.4"
-osx: "4.4"
+mx: "10.2"
 devicetype: A
 parm:
-  presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No
-  name: STREAM_VOICECALL_Ctrl
+  name: STREAM_KEYPADTONE_Ctrl
   type: string
 ---
 
-Controls whether the ZVC allows the device user to view and modify the volume settings for the audio stream that is typically used for phone calls. Entering an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this audio stream's visibility. 
+Controls whether the ZVC allows the device user to view and modify the settings for the keypad tone typically used to indicate a key-press. Entering an empty (length of zero) value (or the absence of this parameter from the XML) causes no change to this setting. 
 
 **Parm value input rules**: 
 

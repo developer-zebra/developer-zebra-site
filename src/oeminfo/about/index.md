@@ -35,19 +35,10 @@ This guide describes major components of the OEMinfo Content Provider Framework,
 
 ### Requirements
 
+**OEMinfo is currently supported on Zebra devices running**...
 
-* **OEMinfo is preinstalled on Zebra devices running Android 10 or later**
-
-<!-- different docs required. removed for now until eng creates current oeminfo
-
-**OEMinfo is available on Zebra devices running**...
-
-* **Android 7.x Nougat or earlier** (installed as a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html))
-8 requires LG patch
-10 preinstalled
-
-8 patch tk from eng (today)
- -->
+* **Android 10.x or later** (OEMinfo is preinstalled)
+* **Android 8.x** (OEMinfo is installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)))
 
 -----
 

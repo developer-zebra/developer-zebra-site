@@ -11,9 +11,7 @@ parm:
   type: string
 ---
 
-Used to set the minimum, maximum, and preset volume levels for the audio stream used for keypad feedback when the device is in receiver mode. **Valid range for this stream is 1&ndash;4 (1=lowest; 4=max)**, with values separated by commas. The user cannot reduce or increase the volume outside of the set minimum/maximum range.
-
-Entering an empty (length of zero) value (or the absence of this parm from the XML) causes no change to the volume levels.
+Used to set the minimum, maximum, and preset volume levels for the audio stream used for keypad feedback when the device is in receiver mode. **Valid range for this stream is 1&ndash;4 (1=lowest; 4=max)**, with values separated by commas. The user cannot reduce or increase the volume outside of the set minimum/maximum range. Entering an empty (length of zero) value (or the absence of this parm from the XML) causes no change to the volume levels.
 
 **Parm value input rules**: 
 

@@ -2,7 +2,7 @@
 csp: audiovoluimgr
 title: Keypad Tone Label
 type: parm
-order: 44
+order: 60
 mx: "10.2"
 devicetype: A
 parm:

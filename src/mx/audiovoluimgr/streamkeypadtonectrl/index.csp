@@ -2,7 +2,7 @@
 csp: audiovoluimgr
 title: Keypad Tone Control Parameters
 type: parm
-order: 46
+order: 62
 mx: "10.2"
 devicetype: A
 parm:

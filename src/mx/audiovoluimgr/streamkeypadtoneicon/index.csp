@@ -2,7 +2,7 @@
 csp: audiovoluimgr
 title: Keypad Tone Icon
 type: parm
-order: 45
+order: 61
 mx: "10.2"
 devicetype: A
 parm:

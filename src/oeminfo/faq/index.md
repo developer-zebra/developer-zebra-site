@@ -57,7 +57,7 @@ Below are some common questions related to OEMinfo and its related components an
 
 ### Which Zebra devices support OEMinfo?
 
-**A: OEMinfo comes preinstalled on Zebra devices running Android 8.x Oreo and later. For other devices, OEMinfo can be installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).**  
+**A: OEMinfo comes preinstalled on Zebra devices running Android 10.x Oreo and later, and can be installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html))) on devices running Android 8.x Oreo**.  
 
 -----
 

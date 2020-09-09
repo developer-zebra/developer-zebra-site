@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Fast Transmission Enable/Disable
+title: Fast Transition Enable/Disable
 type: parm
 order: 67
 mx: "8.2"

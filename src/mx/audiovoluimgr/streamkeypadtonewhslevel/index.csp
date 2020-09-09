@@ -11,10 +11,10 @@ parm:
   type: string
 ---
 
-Used to set the minimum, maximum, and preset volume levels for the audio stream used for keypad feedback when the device is in wired headset mode. **Valid range for this stream is 1&ndash;4 (1=lowest; 4=max)**, with values separated by commas. The device user cannot reduce or increase the volume outside of the set minimum/maximum range. Entering an empty (length of zero) value (or the absence of this parm from the XML) causes no change to the volume levels.
+Used to set the minimum, maximum, and preset volume levels for the audio stream used for keypad feedback when the device is in wired headset mode. **Valid range for this stream is 0&ndash;4 (0=off; 4=max)**, with values separated by commas. The device user cannot reduce or increase the volume outside of the set minimum/maximum range. Entering an empty (length of zero) value (or the absence of this parm from the XML) causes no change to the volume levels.
 
 **Parm value input rules**: 
 
-* Positive integers from 1&ndash;4
+* Integers from 0&ndash;4
 * String with the minimum, maximum, and preset volumes in order, separated by commas. For example, "1,4,3" sets a minimum of 1, a maximum of 4 and a preset of 3.
 

@@ -2,7 +2,7 @@
 title: Admin View
 layout: guide.html
 product: Device Tracker
-productversion: '3.1'
+productversion: '3.0'
 ---
 
 ## Overview
@@ -11,7 +11,7 @@ This section discusses the operations available for an administrator, providing 
 As part of Zebra’s DNA Visibility Console, the server consists of multiple solution offerings. At the login screen, select “Device Tracker”, then sign in. To navigate to other solutions, click on the app menu icon at the top to the right of the "Device Tracker" title and select the desired app solution.
 
 ## Version History
-* **Device Tracker 2.3.1 -** Delete "Never connected" devices in the web portal. 
+* **Device Tracker 2.3.0 -** Delete "Never connected" devices in the web portal. 
 
 ## Using the Web Console
 

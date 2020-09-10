@@ -5,6 +5,9 @@ product: Device Tracker
 productversion: '2.3.1'
 ---
 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher significantly upgrades the software to a cloud based solution.<br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower is the on-premise version of the solution, to be replaced by Device Tracker 3.0 in the future..... 
+</div>
+
 ## Overview
 
 Device Tracker is a centralized software solution that tracks and finds misplaced devices within a facility to help prevent inventory shrinkage. It leverages existing WiFi network infrastructure, Bluetooth Low Energy (BLE) and audio chirping to locate devices. Device Tracker continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.

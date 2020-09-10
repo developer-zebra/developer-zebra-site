@@ -90,26 +90,24 @@ products:
       - url: /devicecentral/2-0/guide/about
         label: '2.0'
   - title: Device Tracker
-    description: A centralized solution to track, find, and prevent misplaced devices within a facility.
+    description: A centralized on-premise solution to track, find, and prevent misplaced devices within a facility.
     url: /devicetracker
     image: /images/products/devicetracker.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker/3-1/guide/about
+        url: /devicetracker/2-3/guide/about
       - title: Install & Setup
-        url: /devicetracker/3-1/guide/setup
+        url: /devicetracker/2-3/guide/setup
       - title: Admin View
-        url: /devicetracker/3-1/guide/admin
+        url: /devicetracker/2-3/guide/admin
       - title: Device Management
-        url: /devicetracker/3-1/guide/mgmt
+        url: /devicetracker/2-3/guide/mgmt
       - title: Configuration
-        url: /devicetracker/3-1/guide/config
+        url: /devicetracker/2-3/guide/config
       - title: Troubleshooting & FAQ
-        url: /devicetracker/3-1/guide/troubleshooting
+        url: /devicetracker/2-3/guide/troubleshooting
     versions:
-      - url: /devicetracker/3-1/guide/about
-        label: '3.1'  
       - url: /devicetracker/2-3/guide/about
         label: '2.3'
       - url: /devicetracker/2-2/guide/about
@@ -118,6 +116,27 @@ products:
         label: '2.1'
       - url: /devicetracker/1-0/guide/about
         label: '1.0'
+  - title: Device Tracker Cloud
+    description: A centralized cloud-based solution to track, find, and prevent misplaced devices within a facility.
+    url: /devicetrackercloud
+    image: /images/products/devicetracker.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /devicetrackercloud/3-0/guide/about
+      - title: Install & Setup
+        url: /devicetrackercloud/3-0/guide/setup
+      - title: Admin View
+        url: /devicetrackercloud/3-0/guide/admin
+      - title: Device Management
+        url: /devicetrackercloud/3-0/guide/mgmt
+      - title: Configuration
+        url: /devicetrackercloud/3-0/guide/config
+      - title: Troubleshooting & FAQ
+        url: /devicetrackercloud/3-0/guide/troubleshooting
+    versions:
+      - url: /devicetrackercloud/3-0/guide/about
+        label: '3.0'  
   - title: EMM Toolkit
     description: 'Documentation and best practices to help Enterprise Mobility Management solution providers tailor their systems for Zebra devices and software.'
     url: /emmtk/2-0/guide/about

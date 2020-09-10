@@ -19,6 +19,8 @@ products:
         url: ../devicecentral
       - title: Device Tracker
         url: ../devicetracker
+      - title: Device Tracker Cloud
+        url: ../devicetrackercloud
       - title: Enterprise Home Screen
         url: ../ehs
       - title: Enterprise Keyboard

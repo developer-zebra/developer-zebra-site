@@ -2,7 +2,7 @@
 title: Device Tracking
 layout: guide.html
 product: Device Tracker
-productversion: '3.1'
+productversion: '3.0'
 ---
 
 ## Overview

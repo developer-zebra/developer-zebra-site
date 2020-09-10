@@ -1,9 +1,12 @@
 ---
-title: About Device Tracker
+title: About Zebra Device Tracker
 layout: guide.html
-product: Device Tracker
-productversion: '3.1'
+product: Zebra Device Tracker
+productversion: '3.0'
 ---
+
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher significantly upgrades the software to a cloud based solution.<br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower is the on-premise version of the solution, to be replaced by Device Tracker 3.0 in the future..... 
+</div>
 
 ## Overview
 

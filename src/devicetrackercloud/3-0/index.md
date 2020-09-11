@@ -7,10 +7,10 @@ menu:
   items:
     - title: About
       url: /devicetrackercloud/3-0/guide/about
+    - title: User Roles
+      url: /devicetrackercloud/3-0/guide/roles
     - title: Install & Setup
       url: /devicetrackercloud/3-0/guide/setup
-    - title: Admin View
-      url: /devicetrackercloud/3-0/guide/admin
     - title: Device Tracking
       url: /devicetrackercloud/3-0/guide/mgmt
     - title: Configuration

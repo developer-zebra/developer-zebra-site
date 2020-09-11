@@ -36,7 +36,7 @@ features:
  - image-location: left
    title: MX 10.1 latest features
    description: MX 10.1 delivers powerful new features. Display Manager now controls automatic screen rotation; File Manager now offers more control over uploads, including sort order, file-naming patterns and deletion of source or target; Power Manager now controls battery saver mode; and UI Manager can display or hide battery-charge percentage.
-   url: #newinmx101
+   url: /mdna/#newinmx101
    button_text: Full List of What's New
    video: BzLDGvai0us
    video_type: youtube

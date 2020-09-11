@@ -2,7 +2,7 @@
 title: Mobility DNA
 subtitle: EXPERIENCE A NEW BREED OF MOBILITY
 image: image-hero.jpg
-copy: What’s inside the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA — the genetic code that gives our mobile computers distinct enterprise capabilities.Its unique software ecosystem transforms Android™, the world’s most popular consumer operating system, into an enterprise-ready force. Now, the pains common to other enterprise mobility platforms disappear — making application management simpler, integration problem-free and operations a powerhouse of productivity.
+copy: What’s in the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives Zebra mobile computers distinct enterprise capabilities. Its unique software ecosystem transforms Android--the world’s most popular consumer operating system--into an enterprise-ready force. Now the pains common to other enterprise mobility platforms disappear, making application management simpler, integration problem-free and operations a powerhouse of productivity.
 layout: whatsnew.html
 product: Mobility DNA
 productversion: 
@@ -11,16 +11,16 @@ features-heading: Latest Mobility DNA Features
 features:
  - image-location: right
    title: Mobility DNA Overview
-   description: Apps built for Zebra's Android mobile computing devices to help corporate end-users increase productivity in the workplace and improve efficiency of their workflows. Apps built for Zebra's Android mobile computing devices to help corporate end-users increase productivity in the workplace and improve efficiency of their workflows. Apps built for Zebra's Android mobile computing devices to help corporate end-users increase productivity in the workplace and improve efficiency of their workflows.
+   description: Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
    url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
    video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: html5
    video_thumb: video_thumb.jpg
    button_text: Learn More
  - image-location: left
-   title: DataWedge Wakeup & Scan
+   title: DataWedge Wake-up & Scan
    subtitle: New in Datawedge 8.1
-   description: With the new 'Wakeup and Scan" feature, barcodes will be instantly captured with the single press of the scan button. This eliminates the delays you would normally see when a device is in a power saving state, improving user productivity.
+   description: With the new "Wake-up and Scan" feature, barcodes are instantly captured with the single press of the scan button. This improves user productivity by eliminating delays normally seen when a device emerges from a power-saving state.
    url: /datawedge/8-1/guide/about/
    video: vkc-W4N6HP8
    video_type: youtube

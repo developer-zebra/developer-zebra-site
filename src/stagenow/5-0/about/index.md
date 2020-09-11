@@ -11,9 +11,9 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 4.3 User Guide, Revision A; <!-- StageNow MN-003401; --> August, 2020
+StageNow 5.0 User Guide, Revision A; <!-- StageNow MN-003401; --> August, 2020
 
-#### Covers StageNow 4.3
+#### Covers StageNow 5.0
 
 ## Overview
 
@@ -50,13 +50,15 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v4.3
+## What's New in v5.0
 
 ### Device Support 
 
-> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or higher**.
+> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or later**.
 
 -----
+
+OLD OLD OLD
 
 ### New Features
 
@@ -88,6 +90,43 @@ The following software must be installed on the staging workstation prior to usi
 -----
 
 ## Version History
+
+### Added in v4.3
+
+#### Device Support 
+
+> **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or later**.
+
+-----
+
+#### New Features
+
+**Supports MX 10.1**, which adds the following major features and enhancements: 
+
+* **Enhanced [Display Manager](../csp/display)** now allows a Profile to:
+ * Control device-screen orientation (automatic rotation on/off)
+* **Enhanced [Power Manager](../csp/power)** now allows a Profile to:
+ * Control state of Battery Saver mode (on/off)
+ * Control Battery Saver Control mode (automatic/manual)
+ * Set Battery percentage of charge to automatically turn Battery Saver Mode on
+* **Enhanced [UI Manager](../csp/ui)** now allows a Profile to:
+ * Control Battery Percentage display in status bar (show/hide)
+* **Enhanced [File Manager](../csp/file)** now allows a Profile to configure the following file upload actions:
+ * Enter a target URI
+ * Enter source path and file name
+ * Select the upload order (oldest or newest first, or alpha-sorted by file name)
+ * Delete source file(s) after uploading
+ * Name uploaded files using a naming pattern
+ * Replace the destination file with source if duplicate name
+ * Skip copying and remove file from the source
+ * Skip copying and keep it at the source
+
+**Adds support for [Access Manager](../csp/access) CSP of MX 9.4** for Permission Access Action for legacy device support. **This allows EMM administrators to**: 
+* "Silently" grant permissions to any app without causing the permission pop-up to appear on the device
+* Designate an entire CSP as Protected from unauthorized use by apps
+* Designate a specific Function Group (of one or more CSPs) as Protected
+
+-----
 
 ### Added in v4.2
 

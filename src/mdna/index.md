@@ -35,13 +35,14 @@ features:
    button_text: Learn More
  - image-location: left
    title: MX 10.1 latest features
-   description: MX 10.0 delivers access to silent app permissions for sensitive features, detailed battery info for users, and control over screen orientation changes by apps.
+   description: MX 10.1 delivers powerful new features in Display Manager, File Manager, Power Manager and UI Manager.
    url: /mx
-   button_text: Learn More
+   button_text: Full List of What's New
    video: BzLDGvai0us
    video_type: youtube
    
 ---
+
 <style>
 h2 a {
     font-size: 16px;
@@ -130,6 +131,8 @@ hr {
 }
 </style>
 
+-----
+
 ## New in DataWedge 8.x [(View More)](/datawedge/8-1/guide/about)
 
 * [Secure access to DataWedge Intent APIs](/datawedge/8-1/guide/programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
@@ -157,9 +160,10 @@ hr {
 * **The Zebra PS20** includes Enterprise Browser 2.x preinstalled with a license that never expires.  
 * **Upgrading to Enterprise Browser 3.0 on the PS20** requires purchase of a new EB license. To upgrade, EB 3.x must be downloaded and installed separately and an EB 2.x or 3.x license applied.
 
+<!-- 9/11/20- removed from EB per dir. 
 #### Common Criteria
 Some Zebra devices are compatible with Common Criteria for IT Security Evaluation, a standard for certifying the security of computing devices and systems. When in the so-called "CC state" of heightened security, Zebra mobile and touch computers are prevented from access certain features, including the ability to read from or write to external storage. [Learn more](/cc). 
-
+-->
 ### Device Support
 
 Support for the following devices has been added: 
@@ -280,4 +284,32 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
  * Auto-grant permissions to an app to prevent permission "pop-up" to appear on device
  * Designate a CSP as "Protected" from unauthorized use 
  * Designate a Function Group (features selected from different CSPs) as "Protected" from unauthorized use
+
+-----
+
+## New in MX 10.1
+
+**MX 10.1 adds the following major features and enhancements**: 
+
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows a Profile to:
+ * Control device-screen orientation (automatic rotation on/off)
+* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to configure the following file upload actions:
+ * Enter a target URI
+ * Enter source path and file name
+ * Select the upload order (oldest or newest first, or alpha-sorted by file name)
+ * Delete source file(s) after uploading
+ * Name uploaded files using a naming pattern
+ * Replace the destination file with source if duplicate name
+ * Skip copying and remove file from the source
+ * Skip copying and keep it at the source
+* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to:
+ * Control state of Battery Saver mode (on/off)
+ * Control Battery Saver Control mode (automatic/manual)
+ * Set Battery percentage of charge to automatically turn Battery Saver Mode on
+* **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
+ * Control Battery Percentage display in status bar (show/hide)
+
+#### See the [MX Feature Matrix](/mx) for more details. 
+
+-----
 

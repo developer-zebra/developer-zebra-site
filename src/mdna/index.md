@@ -35,8 +35,8 @@ features:
    button_text: Learn More
  - image-location: left
    title: MX 10.1 latest features
-   description: MX 10.1 delivers powerful new features in Display Manager, File Manager, Power Manager and UI Manager.
-   url: /mx
+   description: MX 10.1 delivers powerful new features. Display Manager now controls automatic screen rotation; File Manager now offers more control over uploads, including sort order, file-naming patterns and deletion of source or target; Power Manager now controls battery saver mode; and UI Manager can display or hide battery-charge percentage.
+   url: #newinmx101
    button_text: Full List of What's New
    video: BzLDGvai0us
    video_type: youtube
@@ -309,7 +309,7 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 * **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
  * Control Battery Percentage display in status bar (show/hide)
 
-#### See the [MX Feature Matrix](/mx) for more details. 
+#### See the [MX Feature Matrix](/mx) for complete details. 
 
 -----
 

@@ -12,48 +12,48 @@ menu:
       label: CN - 普通话
   versions:
     - versionto: 2-2
-      versionfrom: 4-3
+      versionfrom: 5-0
       default: /stagenow/2-2/about
       label: '2.2'
     - versionto: 2-3
-      versionfrom: 4-3
+      versionfrom: 5-0
       default: /stagenow/2-3/about
       label: '2.3'
     - versionto: 2-4
-      versionfrom: 4-3
+      versionfrom: 5-0
       default: /stagenow/2-4/about
       label: '2.4'
     - versionto: 2-5
-      versionfrom: 4-3
+      versionfrom: 5-0
       default: /stagenow/2-5/about
       label: '2.5'
   items:
     - title: About
-      url: /stagenow/4-3/about
+      url: /stagenow/5-0/about
     - title: Get Started
-      url: /stagenow/4-3/gettingstarted
+      url: /stagenow/5-0/gettingstarted
     - title: Install
-      url: /stagenow/4-3/installing
+      url: /stagenow/5-0/installing
     - title: Profiles
-      url: /stagenow/4-3/stagingprofiles
+      url: /stagenow/5-0/stagingprofiles
     - title: Wizards
-      url: /stagenow/4-3/ProfileWizards
+      url: /stagenow/5-0/ProfileWizards
     - title: Settings
-      url: /stagenow/4-3/settingconfig
+      url: /stagenow/5-0/settingconfig
     - title: Setting Types
-      url: /stagenow/4-3/settingtypes
+      url: /stagenow/5-0/settingtypes
     - title: Staging Guides
-      url: /stagenow/4-3/stagingguides
+      url: /stagenow/5-0/stagingguides
     - title: Troubleshoot
-      url: /stagenow/4-3/troubleshooting
+      url: /stagenow/5-0/troubleshooting
     - icon: fa fa-youtube-play
       url: https://www.youtube.com/playlist?list=PLce6-npz5dKfmQcDERMFNiOeZrVAEJtXH    
     - icon: fa fa-download
-      url: /stagenow/4-3/download    
+      url: /stagenow/5-0/download    
     - icon: fa fa-graduation-cap
       url: https://supportcommunity.zebra.com/s/global-search/stagenow?language=en_US
     - icon: fa fa-search
-      url: /stagenow/4-3/search
+      url: /stagenow/5-0/search
 product: StageNow
 productversion: '5.0'
 ---

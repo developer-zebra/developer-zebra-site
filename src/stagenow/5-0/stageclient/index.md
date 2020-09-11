@@ -21,7 +21,7 @@ This guide describes how to use StageNow to select and process a StageNow barcod
 * [Bypassing the Android Setup Wizard](../Profiles/wipedevice/#setupwizardmanualbypass) | Applies to devices with MX 9.0 or later
 
 <!-- 
-http://zebra-stage.github.io/stagenow/4-3/Profiles/wipedevice/#setupwizardmanualbypass
+http://zebra-stage.github.io/stagenow/5-0/Profiles/wipedevice/#setupwizardmanualbypass
  -->
 -----
 

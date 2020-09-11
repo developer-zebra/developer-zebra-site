@@ -1,0 +1,46 @@
+<!-- right start -->
+<div class="row p-b-40 ">
+    <div class="col-sm-12">
+        <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                <div class="row ">
+                    <div class="col-sm-7"> 
+                        <h4 class="featured-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
+                        {{#if subtitle}}
+                        <h6 class="featured-subheading"> <a href="{{this.url}}">{{ subtitle }}</a></h6>
+                        {{/if}}
+                        <p>{{ description }}</p>
+                        {{#if button_text}}
+                        <a href="{{this.url}}" class="btn btn-zebra">{{button_text}}</a>
+                        {{/if}}
+                    </div>
+                    <div class="col-sm-5">
+                        {{#if image}}
+                            <img src="{{image}}" class="img-responsive"/>
+                        {{else if video}}
+                            {{#if_eq video_type 'html5'}}
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video controls=""  name="media" poster="{{video_thumb}}">
+                                        <source src="{{video}}" type="video/mp4">
+                                    </video>
+                                </div>
+                            {{/if_eq}}
+                            {{#if_eq video_type 'iframe'}}
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="430" height="308" src="{{video}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            {{/if_eq}}
+                            {{#if_eq video_type 'youtube'}}
+                                <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{video}}?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </div>
+                            {{/if_eq}}
+                            
+                        
+                        {{/if}}
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>  
+<!-- right end -->  

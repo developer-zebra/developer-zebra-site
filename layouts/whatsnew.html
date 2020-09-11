@@ -1,0 +1,53 @@
+
+{{> header}}
+    <section id="blog" class="container" >
+        {{> hero-image }}
+        {{> padding-line }}
+        {{#if features-heading}}
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">{{features-heading}}</h2></div>
+            </div>
+        
+        {{/if}}
+
+    </section>
+    <section id="blog" class="container" >
+            
+        {{#each features}}
+            {{#if_eq image-location 'right'}}
+                {{> feature-right }}
+            {{else }}
+                {{> feature-left }}
+            {{/if_eq}}
+
+        {{/each}}
+
+
+    </section>
+    
+    <section id="mainContent" class="container">
+        <div  class="row">
+            <div class="col-sm-12">
+                <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                <!-- Start of guide -->
+                    <div class="service-box wow fadeInRight">
+                        <div class="">
+
+                            <p>{{{ contents }}}</p>
+                            
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>   
+
+    </section>
+ 
+        
+
+{{> modal}}
+{{> footer}}
+

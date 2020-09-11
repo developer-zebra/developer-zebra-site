@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: audiomgr
 product: StageNow
-productversion: '4.3'
+productversion: '5.0'
 ---
 
 

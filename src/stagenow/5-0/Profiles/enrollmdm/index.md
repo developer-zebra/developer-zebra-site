@@ -2,7 +2,7 @@
 title: Enroll in an MDM
 layout: guide.html
 product: StageNow
-productversion: '4.3'
+productversion: '5.0'
 ---
 Use this Wizard to enroll a device for management by an MDM.  This downloads, installs, configures, and launches an MDM agent.  This Wizard also allows you to connect to a staging and/or production network and reboot the device. 
 

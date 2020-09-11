@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: enterprisekeyboardmgr
 product: StageNow
-productversion: '4.3'
+productversion: '5.0'
 ---
 
 

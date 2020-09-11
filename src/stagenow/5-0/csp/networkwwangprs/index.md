@@ -2,7 +2,7 @@
 title: Network.WWAN.GPRS
 layout: guide.html
 product: StageNow
-productversion: '4.3'
+productversion: '5.0'
 ---
 
 ## About Network.WWAN.GPRS

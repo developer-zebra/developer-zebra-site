@@ -23,21 +23,28 @@ productversion: '5.0'
 
 -----
 
-##### Before beginning, get some LG images, yo: 
+## Create a Smart Profile
 
 
+##### Before beginning: 
 
-#### To Create a Smart Profile:
+Before creating a Smart Profile, select at least one LifeGuard device image from the "Browse LifeGuard Images" page: 
 
-1. From the StageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_00.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
-1. From the SyageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
+#### To create a Smart Profile:
+
+1. From the StageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
+<img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
+_Click image to enlarge; ESC to exit_.<br>
+
+2. **Click the cloud icon** of the desired image (as shown below) to begin the download: 
  <img alt="image" style="height:350px" src="sn50_smartprofile_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. **Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  
+
+3. When the**Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  
  <img alt="image" style="height:350px" src="sn50_smartprofile_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -84,6 +91,12 @@ Combine variables and static text as desired. An example is shown below.<br>
 9. **Click "Publish Now"** to complete the process; distribute staging materials as normal. 
 
 #### Dynamic Staging is complete
+
+#### Notes
+
+* Multiple simultaneous downloads are possible.
+* Leaving the download screen cancels all downloads.   
+
 
 -----
 

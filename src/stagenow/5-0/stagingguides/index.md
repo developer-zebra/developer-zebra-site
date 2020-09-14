@@ -20,6 +20,11 @@ content-items:
     url: /stagenow/5-0/dynamicstaging
   - type: section
     level: 4
+    title: Smart Profiles
+    text: Smart Profiles automatically calculate all required setting types (CSPs) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. 
+    url: /stagenow/5-0/smartprofile
+  - type: section
+    level: 4
     title: Zero Touch
     text: The Zero Touch Wizard automates configuration of a device's network settings to enable 'factory-fresh' or factory-reset devices to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
     url: /stagenow/5-0/Profiles/zerotouch

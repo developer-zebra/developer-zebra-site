@@ -11,12 +11,10 @@ menu:
       url: /devicetrackercloud/3-0/guide/roles
     - title: Install & Setup
       url: /devicetrackercloud/3-0/guide/setup
-    - title: Device Tracking
+    - title: Device Management
       url: /devicetrackercloud/3-0/guide/mgmt
-    - title: Configuration
-      url: /devicetrackercloud/3-0/guide/config
-    - title: Troubleshooting & FAQ
-      url: /devicetrackercloud/3-0/guide/troubleshooting
+    - title: Device Tracking
+      url: /devicetrackercloud/3-0/guide/use
     - icon: fa fa-search
       url: /devicetrackercloud/3-0/search
 product: Device Tracker

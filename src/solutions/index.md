@@ -130,10 +130,6 @@ products:
         url: /devicetrackercloud/3-0/guide/admin
       - title: Device Management
         url: /devicetrackercloud/3-0/guide/mgmt
-      - title: Configuration
-        url: /devicetrackercloud/3-0/guide/config
-      - title: Troubleshooting & FAQ
-        url: /devicetrackercloud/3-0/guide/troubleshooting
     versions:
       - url: /devicetrackercloud/3-0/guide/about
         label: '3.0'  

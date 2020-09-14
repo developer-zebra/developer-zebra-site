@@ -1,112 +1,211 @@
 ---
-title: Device Tracking
+title: Device Management
 layout: guide.html
-product: Device Tracker
+product: Zebra Device Tracker
 productversion: '3.0'
 ---
 
 ## Overview
-Monitoring device presence and prevention of misplaced devices is important for smooth operational productivity. This section covers the procedures to organize, track, locate, and prevent misplaced devices.
+Zebra Device Tracker is a role-based solution in which administrators and managers have additional features and functionality.
 
-**Version History**
-* **Device Tracker 2.3.1 -** New Bluetooth Low Energy (BLE) feature for device proximity tracking.
+## Administrator/Manager Login
+Administrators and Managers are required to login to view and perform actions.  
 
-## Locating Devices
-The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area where the target device is located. This general location is based on the Access Point (AP) where it last connected. The BLE proximity indicator can be used to identify how close or far the target device is in relation to the associate. To further pinpoint device location, a sound can be played by tapping the **Play Sound** button on the associate's device to locate the target device by audio sound. The volume level and sound duration are adjustable in the server [Settings](../config).
+To login as administrator or manager:  
+1.	Launch the Zebra Device Tracker app.
+2.	If the Check-out feature is enabled, scan a barcode to check-out the device.
+3.	Tap the options menu at the top right and select **Admin/Manager Login.**
+4.	Enter the administrator or manager login credentials.
+5.	Perform the required tasks.
+6.	Logout when complete.  Tap the Android back button or tap the options menu at the top right and select **Admin/Manager Logout.**
+<br>
+<!-- -->
+After logging in as administrator on the device, tap on the top right option menu and select one of the following:
 
-**Important**:
-* WiFi must be enabled on both devices.
-* For BLE proximity tracking, the [BLE](../config) option must be enabled on the server. 
-* When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back once based on the last tap to play audio.
-* During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to **Play Sound** may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
-* If the device is in **Do Not Disturb (DND)** mode, it prevents any sound from being emitted from the device and therefore **Play Sound** has no effect. For **Play Sound** to function while in **Do Not Disturb** mode, access must be enabled for Device Tracker in the Do Not Disturb access settings on the device. 
-* During a device search, if the device conducting the search is rebooted or its battery is depleted or removed/re-inserted, the target device being searched for remains in the "Being Found" state (as seen in the [admin dashboard](../admin)) rather than in the "To Be Found" state. This prevents the ability to re-initiate the search for the target device. To recover, the admin should take action to change the target device status to "Active" or "To Be Found."
-<!--
-* During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen by tapping the device back button. // Remove per SOLA-4230, issue no longer reproduceable-->
-
-<!--
-1. **Animated BLE proximity indicator** – Shows the proximity range of the target device in relation to the searching device. The animation and color changes reflect the proximity as the user moves closer or further away from the device being searched.
-Within proximity of about 1 meter, distance estimation ranges between 0.5 to 2 meters. Further distances will encounter more variation - at 20 meters or more the estimate may vary between 10 to 40 meters. --> 
-
-
-
-###Procedure to find a device
-The procedure to locate a device follows (based on user role):
-1. **Administrator marks the target device "To be found".** <br>
-<font color="orange">[Admin]</font> From the [dashboard](../admin) in the web portal, the administrator selects the device to find within the table and sets it to the “To be found” state: <br>
-       A. Tick the checkbox for the device row. <br>
-       B. Click on the Action menu and select “Set device: ‘To be found’”.  <br>
-       C. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found". <br>
-The next time the target device reports to the server, it identifies it is marked "To be found" with a notification message. The length of time this takes is based on the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
-2. **An associate is tasked to find the device.** <br>
-<font color="orange">[Admin]</font> The administrator assigns an associate to find the device, using the client app on their device as a locationing tool.
-3. **Start device search based on connected AP.** <br>
-<font color="blue">[Associate]</font> Open Device Tracker client on the associate's device. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP”, which identifies the last known AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. The target device displays a notification indicating the device is marked "To be found." <br>
-<font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
-4. **Walk towards the target device based on the BLE proximity meter, if [BLE is enabled](../config) on the server.**<br>
-The Bluetooth Low Energy proximity meter identifies the _overall trend_ on how far or how close the user is located to the target device. The closer the user is, the further the blue indicator bar expands to the right and the lower the numerical value on the meter as the indicator reaches “Close” or “0” value. _Proximity is determined based on the strength of the Bluetooth signal received from the target device. The accuracy of proximity may vary depending on multiple contributing factors, such as noise on the signal measurement, signal reflections and interference._ In the Proximity screen, the BLE signal detection status is displayed next to the Bluetooth icon with one of the following values:
-       <ul>
-       <li><b>Signal good –</b> Bluetooth beacons are detected and read from the target device; the estimated proximity is reflected in the meter indicator.</li>
-       <li><b>Finding Signal –</b> Bluetooth beacons are no longer detected from the target device after initial detection. The Bluetooth signal could be blocked or out of range.</li>
-       <li><b>No Signal –</b> Bluetooth beacons are not detected. Possible causes include problems with the Bluetooth radio on either device, the Bluetooth signal is blocked, or the device is out of Bluetooth range.</li>
-       </ul>
- <img style="height:350px" src="find_device_ble.png" />
- _Figure 1. Device Tracker client with BLE enabled_ 
-5. **Play sound to identify specific device location.** <br>
-<font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. <br>
-**Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. 
- <img style="height:350px" src="find_device_no_ble.png" />
- _Figure 2. Device Tracker client with BLE disabled_ 
-6. **Device found.** <br>
-<font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
-<font color="orange">[Admin]</font> On the dashboard, the device status changes from “Being found” to “Device has been found”. The admin can take action to set the device back to the “Active” state, placing it back into the active device pool: <br>
-       A. Select the device in the dashboard.<br>
-       B. In the Action menu, select "Set device to: Active". <br>
-       C. The device is moved out of the "Found" state into the "Active" state.
-
-<!--
-Perform device search with BLE and audio.
-<font color="blue">[Associate]</font> Once in the AP zone, walk towards a direction and stop every so often, 10 to 15 meters, pausing for about 30 seconds. The 3 circles with colored rings in the BLE indicator show the proximity between the device conducting the search and the target device:
-   * Red - outer ring indicating the user is "far" away from the target device
-   * Orange - middle ring indicating the user is "near" the target device
-   * Green - inner ring indicating the user is "close" in proximity to the target device <br><br>
-
- "Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device. As the associate physically approaches near the target device, the color-coded visual indicator can change in color from red to orange to green. As the associate moves further away from the target device, the visual indicator can change in color from green to orange to red. Repeat this step and change direction when necessary to move closer to the device. 
- 
- At any time during the search, tap **Play Sound** to play audio on the target device, further isolating the device location. Walk towards the sound to locate the device. This is particularly helpful when in the orange (near) and green (close) zones. 
-
-    ![img](finding_device.jpg)
-  _Figure 1. Device Tracker client screens while locating a device_ <br>
-
- > For optimal results, Zebra recommends to hold the device used for searching in the same position throughout the search activity. The device screen should be placed facing the user with no obstruction in the rear of the device. Changing device orientation during the search may negatively interfere with proximity perception. Moving at a slow pace during the search and standing still (at every 10 to 15 meters) every so often stabilizes the signals received, improving proximity measurements.
-
- <sup>[1]</sup> **Important Note**: Depending on when the device being searched last reported to the server, the specified [Reporting Frequency](../config/#applicationconfiguration) time needs to elapse before the sound can be played from the target device. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. _For example, if the admin marks Device A “To be found” and the following conditions exist:_ 
-* _Reporting Frequency is set to 5 minutes in the Settings tab_
-* _Device A reported to the server a few seconds ago (as seen in the **Updated** column on the admin dashboard)_<br>
-
-_In this scenario, approximately 5 minutes need to elapse (the next time the target device reports to the server) before the Device A identifies that it is marked as "To be found" and the associate can take action to find Device A. In this same scenario, if Device A reported to the server 4 minutes ago as seen from the dashboard, then 1 minute must elapse (time left to reach the 5 minute Reporting Frequency interval) before Device A identifies that it is marked "To be found" and the associate can take action to find Device A._
--->
-
-###Cannot find device
-
-If the device cannot be located, in step 4 above tap on "Cannot find" and proceed to tap "Yes" to the confirmation message. On the admin dashboard, the device status is changed from "Being found" to "Cannot find". 
-
-<!--
-##Track Device Presence
-The admin dashboard on the web portal monitors device tracking by providing information on: misplaced devices, devices that are being searched for, devices that have been found, and devices that cannot be found. For each device, the “Connected AP” friendly name provides a general location of where the device resides based on the AP the device is connected to. The connected AP is displayed both on the admin dashboard and Device Tracker client. 
--->
-##Prevent Misplaced Devices
-Prevent devices from being misplaced by monitoring the low battery state so action can be taken by the administrator to charge the device prior to battery loss. Configure the “Low Power Alert Threshold %” in the [Settings screen](../config) from the web portal to set the threshold value. When a device battery drops below this defined threshold, the device is listed in the Low Battery section in the admin dashboard. The admin can then initiate the device to be located by [marking the device "To be found"](./#locatingdevices).
-
-<!--
-##Device Tagging
-Tag devices for easier organization and tracking. Refer to [Organize Devices](../admin/#organizedevices) in the Admin View.
-
-##Friendly Names
-Use of friendly names for devices allows for easier device identification. The same holds true for access point friendly names to quickly identify the device location based on the access point it is connected to. See [Device & Access Point Management](../config/#device&accesspointmanagement) in the Configuration section.
--->
+* **Admin/Manager Logout –** logs out the administrator or manager.  
+* **Settings –** displays information and options: 
+      * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices.  See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
+      * **Device Friendly Name –** displays the friendly name assigned to the device.
+      * **Site Name –** displays the friendly name assigned to the site location.
 <br>
 
+## Reset Password
+Passwords can be reset through the web portal or the client app. 
+
+Steps to reset the password in the client app:
+
+1.	In the Admin/Manager Login screen, tap **Forgot your password.**
+2.	When prompted, enter your email address then click **Reset Password.**
+3.	A message appears indicating a password reset email is sent.  
+4.	Open the email and click on the link.
+5.	Enter in the new password in the password reset page.
+6.	The password is reset with the new password.
+<br>
+
+## Administration
+Administrators and managers have additional capability to view data:
+
+* **Site List –** administrator access only; lists the sites
+* **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
+* **Device List –** administrator and manager access; lists devices with capability to view device details<br>
+<!-- -->
+Administrator or manager login is required to access the data.
+<br>
+
+### Site List
+
+After administrator login, a site listing is visible for site selection:
+
+* **All Devices –** when selected, displays the dashboard of all devices (whether assigned or not assigned to a site) across all sites
+* **Unassigned Devices –** when selected, displays the dashboard of devices that are not assigned to a site.  
+* **Sites -** lists all the sites across the entire organization.  Select an individual site to display the dashboard for the particular site.
+
+<img style="height:350px" src="sitelist.png" />
+<i>Site list</i>
+<br>
+<!-- -->
+After manager login, the dashboard is visible.  
+
+### Dashboard
+The dashboard displays device categories base on device states, along with statistics for each category. For administrators, the dashboard can be displayed for any site selected in the site list, including All Devices (across all sites) or Unassigned Devices. For managers, the dashboard displays information based on the site their device is assigned to. If the manager device is not assigned to a particular site, the dashboard displays information based on all unassigned devices.
+
+Dashboard categories:
+
+* **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site.  <br>
+<!-- -->
+Device states:
+
+* **To Be Found –** filters devices designated To Be Found where action has not been taken to initiate the search for these devices.
+* **Being Found –** filters devices that are actively being searched.  Triggered when a user initiates a device search.
+* **Found –** filters devices that were successfully found after a search.  Triggered when a user indicates the device is found.
+* **Cannot Find –** filters devices that could not be found after a search was conducted. 
+* **Decommissioned –** filters devices that are designated as decommissioned.  These devices are not in the active device pool, the collection of devices with active server communication.
+<br><br>
+<!-- -->
+Device battery states:
+
+* **Low Battery –** filters devices that have reached the low power threshold of 15% remaining battery or lower, requiring attention to be charged prior to battery depletion.
+* **Charging –** filters devices that are powered on and in the charging state.
+* **Discharging –** filters devices that are powered on and discharging.
+<br><br>
+<!-- -->
+Device connection states:
+
+* **Never Connected –** filters devices that are registered but never connected to the server.
+* **Disconnected –** filters devices that have connected to the server but are no longer connected.
+
+<img style="height:350px" src="dashboard.png" />
+<i>Dashboard</i>
+<br>
+
+### Device List
+The device list displays all devices corresponding to the selected category in the dashboard. In the dashboard screen, select a category in the list to view the corresponding list of devices. The search result is limited to display 100 records. If this limit is exceeded, a message is displayed below the device list indicating that there are additional records and the search should be refined to avoid exceeding the limit.  <br>
+
+Each individual device is displayed as a “device card” that shows information pertaining to that particular device:
+
+* Device friendly name (if not available, the device model and serial number is displayed)
+* Device model and serial number
+* AP friendly name (if available) or BSSID. **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
+* Device state: 
+     * **In Service –** device is part of the active device pool and not in any of the other device states. A device may be In Service and 
+     * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+     * **Finding –** the device search is initiated by another user
+     * **Found –** the device is located after conducting the search
+     * **Cannot Find –** the device could not be found after the search was conducted
+     * **Decommissioned –** device is removed from the active device pool
+* Top right icon indicates device battery level or charging state.
+
+<img style="height:350px" src="dashboard.png" />
+<i>Device list from "All Devices"</i>
+<br>
+<!-- -->
+Tap and hold on any device card to display the available device actions: 
+
+* **View Details –** displays the Device Details screen, see below.
+* **Add a Note –** enter text to capture comments specific to the device that could be helpful in tracking. For example, when a device is decommissioned a note can be added as follows: “Battery does not charge, needs to be replaced”.
+* **Start Finding –** begins the device search process. Refer to Find a Device.
+* **Recommission –** places a device from the decommissioned state back to the **In Service** state as part of the active device pool.
+* **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
+<img style="height:350px" src="device-action-menu.png" />
+<i>Device action menu</i><!-- -->
+
+Tap on any device card to display the **Device Details** screen:
+
+* **Friendly name –** displays the assigned friendly device name as registered by the administrator
+* **Device Model –** displays the device model
+* **Serial Number –** displays the serial number of the device
+* **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
+* **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
+     * **High –** indicates the remaining battery is greater than 66%
+     * **Medium –** indicates the remaining battery is within the range 15% to 66%
+     * **Low –** indicates the remaining battery is less than or equal to 15%
+* **Battery Status:**
+     * **Charging –** the device is charging while plugged to a power source
+     * **Not Charging –** device is not plugged to a power source
+* **Device State:**
+     * **In Service –** device is part of the active device pool and not in any of the other device states
+     * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+     * **Finding –** the device search is initiated by another user
+     * **Found –** the device is located after conducting the search
+     * **Cannot Find –** the device could not be found after the search was conducted
+     * **Decommissioned –** device is removed from the active device pool
+* **Site Name –** displays the assigned friendly name for the site as registered by the administrator.  If no value assigned, it is blank.
+* **Display On –** displays “true” or “false”.  If true, it indicates the device display is on and the device may be in active use.  If false, it indicates the device display is off, indicating the device is not in active use.
+* **Connection State:** 
+     * **Never connected –** the device has never connected to the server
+     * **Connected –** the device is connected to the server
+     * **Disconnected –** the device previously connected to the server and is now disconnected
+* **Last Reported –** displays the time stamp of the last time the device reported to the server
+* **Note –** text entered by an administrator or manager capturing information specific to the device.     
+<table>
+  <tr>
+   <td>
+     <img style="height:350px" src="device-details-1.png"/>
+   </td> 
+   <td> &nbsp; &nbsp; &nbsp;
+   </td>
+   <td>
+     <img style="height:350px" src="device-details-2.png"/>
+   </td>
+  </tr>
+</table>
+<i>Device details information</i>
+<br>
+
+## Device/Site Search
+2 types of searches can be performed:
+1. Search by site
+2. Search by device
+
+### Search By Site
+A site search performs a partial search for the characters entered in the search field. The search results display matches that include the characters being searched for within the site name.<br>
+To perform a site search:
+<!-- -->
+1.	From the main site list, tap the search icon at the top.
+<img style="height:350px" src="site-search.png"/><i>Site list with search</i>
+
+2.	Enter the text to search in the field then tap the search icon in the virtual keyboard to start the search.
+<img style="height:350px" src="site-search-field.png"/><i>Site search field</i>
+
+3.	The search results are listed in the **Sites** section. The results include site names that contain the text entered. The search is not case sensitive.
+<br>
+<br>
+
+### Search by Device
+A device search returns a list of devices that match the keyword entered based on the criteria selected: device friendly name, device model, serial number, or AP friendly name.  The search result is limited to display 100 records. If this limit is exceeded, a message is displayed below the device list indicating that there are additional records and the search should be refined to avoid exceeding the limit.
+<br>
+To perform a device search:
+
+1.	Tap the search icon located in the lower right of the device list.  
+2.	Select the type of search to be conducted, whether based on the device friendly name, device model, serial number, or AP friendly name.  Enter the text to conduct a search.  The search is case-sensitive.  
+<img style="height:350px" src="device-search.png"/><i>Device search</i>
+
+3.	Tap Search.
+4.	The search results return matches that begin with the text entered in the search field corresponding with the type of search conducted.    
+
+
+<br><br>
+<!-- -->
 -----
 
 ## See Also

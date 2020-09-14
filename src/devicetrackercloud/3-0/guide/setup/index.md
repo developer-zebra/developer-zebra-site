@@ -6,7 +6,7 @@ productversion: '3.0'
 ---
 ## Overview
 
-This section discusses installation and configuration of Zebra Device Tracker. The client app (APK file) is supplied from Zebra services. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for Device Tracker software deployment to the mobile devices.  
+This section discusses installation and configuration of Zebra Device Tracker. The client app (APK file) and web portal URL are supplied by Zebra. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for Device Tracker software deployment to the mobile devices.  
 
 **Installation and configuration on the device:**
 
@@ -76,7 +76,7 @@ Administrators register site names, access points, and device information with f
   </tr>
   <tr>
     <td style="text-align:center">AssetName</td>
-    <td style="text-align:left">Name used by IT admin for drawings, labeling of hardware, etc. <i>(For future use only – does not have any impact whether or not it is in use.)<i></td>
+    <td style="text-align:left">Name used by IT admin for drawings, labeling of hardware, etc. <br><i>(For future use only – does not have any impact whether or not it is in use.)<i></td>
     <td style="text-align:left">Optional</td>
   </tr>
   <tr>
@@ -234,9 +234,9 @@ If enabled, Checkout appears as a category in the administrator and manager dash
 When Check-out is enabled, by default no prefix is defined allowing all barcodes to be accepted. The administrator can configure a prefix in the form of a character string, adding a restriction to accept only barcodes that begin with the specified prefix. If a barcode scanned does not contain the prefix, check-out is not successful.
 <br><br>
 When generating a barcode with the prefix, the specified prefix is followed by the username identifier. The following is a sample barcode containing prefix “NGDTRK-” and username “JohnDoe”: 
-<img style="height:100px" src="barcode-prefix.png"/>
+<img style="height:80px" src="barcode-prefix.png"/>
 _Sample barcode with prefix and username: "NGDTRK-JohnDoe"_
-<br>
+<br><br>
 To set the barcode prefix:
 1.	Enable Checkin/Checkout the web portal. This exposes the Prefix field in the Application Configuration screen.
 2.	Enter the desired text for the prefix. If all barcodes should be accepted with no prefix, keep the entry blank.

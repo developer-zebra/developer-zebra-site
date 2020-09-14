@@ -66,11 +66,12 @@ Supported Devices (including GMS and non-GMS versions):
 ## Network Requirements
 
 * The client application sends device status and events to the server over HTTPS.  Network port 443 must be enabled to reach the Google Cloud Firebase platform.
-* The following URL must be accessible: <br><br>
+* Zebra Device Tracker web portal URL, supplied by Zebra, is accessible.
+* The following URL is accessible: <br><br>
 
 &nbsp;&nbsp;&nbsp;`https://[ProjectID].firebaseio.com`
 <br><br>
-where [ProjectID] is supplied by Zebra services during onboarding.  
+where [ProjectID] is located in the server config.xml supplied by Zebra.  
 <br><br>
 <!-- -->
 -----

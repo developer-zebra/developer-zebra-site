@@ -58,34 +58,9 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-OLD OLD OLD
-
 ### New Features
 
-**Supports MX 10.1**, which adds the following major features and enhancements: 
-
-* **Enhanced [Display Manager](../csp/display)** now allows a Profile to:
- * Control device-screen orientation (automatic rotation on/off)
-* **Enhanced [Power Manager](../csp/power)** now allows a Profile to:
- * Control state of Battery Saver mode (on/off)
- * Control Battery Saver Control mode (automatic/manual)
- * Set Battery percentage of charge to automatically turn Battery Saver Mode on
-* **Enhanced [UI Manager](../csp/ui)** now allows a Profile to:
- * Control Battery Percentage display in status bar (show/hide)
-* **Enhanced [File Manager](../csp/file)** now allows a Profile to configure the following file upload actions:
- * Enter a target URI
- * Enter source path and file name
- * Select the upload order (oldest or newest first, or alpha-sorted by file name)
- * Delete source file(s) after uploading
- * Name uploaded files using a naming pattern
- * Replace the destination file with source if duplicate name
- * Skip copying and remove file from the source
- * Skip copying and keep it at the source
-
-**Adds support for [Access Manager](../csp/access) CSP of MX 9.4** for Permission Access Action for legacy device support. **This allows EMM administrators to**: 
-* "Silently" grant permissions to any app without causing the permission pop-up to appear on the device
-* Designate an entire CSP as Protected from unauthorized use by apps
-* Designate a specific Function Group (of one or more CSPs) as Protected
+**StageNow 5.0 introduces [Smart Profiles](../smartprofiles)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofiles). 
 
 -----
 

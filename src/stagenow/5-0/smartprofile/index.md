@@ -19,22 +19,20 @@ productversion: '5.0'
 
 * StageNow 5.0 (or later) installed
 * Target device(s) with MX 8.1 (or later)
-
-sn50_smartprofile_00.png
-sn50_smartprofile_01.png
+* [LifeGuard database](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) login credentials
 
 -----
 
 #### To Create a Smart Profile:
 
 ##### Before beginning, enable Dynamic Staging in the Global Settings panel: 
-<img alt="image" style="height:400px" src="SN_411_dynamicStaging_on-off.png"/>
+<img alt="image" style="height:400px" src="sn50_smartprofile_00.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
 ##### Next, open a Profile to which to add or enable dynamically staged fields and follow the steps below. 
 
 1. **Identify data-entry fields accompanied by a percent-sign** icon:  
- <img alt="image" style="height:350px" src="SN41_dynamic_01.png"/>
+ <img alt="image" style="height:350px" src="sn50_smartprofile_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 2. **Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  

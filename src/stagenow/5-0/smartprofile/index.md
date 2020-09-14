@@ -19,32 +19,34 @@ productversion: '5.0'
 
 * StageNow 5.0 (or later) installed
 * Target device(s) with MX 8.1 (or later)
-* [LifeGuard database](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) login credentials
+* Login credentials for an active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html) account 
 
 -----
 
+##### Before beginning, get some LG images, yo: 
+
+
+
 #### To Create a Smart Profile:
 
-##### Before beginning, enable Dynamic Staging in the Global Settings panel: 
+1. From the StageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_00.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
-##### Next, open a Profile to which to add or enable dynamically staged fields and follow the steps below. 
-
-1. **Identify data-entry fields accompanied by a percent-sign** icon:  
+1. From the SyageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
  <img alt="image" style="height:350px" src="sn50_smartprofile_01.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 2. **Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  
- <img alt="image" style="height:350px" src="SN41_dynamic_03.png"/>
+ <img alt="image" style="height:350px" src="sn50_smartprofile_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
  A warning appears until variables are entered using the correct syntax: <br>
- <img alt="image" style="height:350px" src="SN41_dynamic_02.png"/>
+ <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 3. **Enter remaining static text and/or variables** as desired for all fields and **click the "Continue" button**:  
- <img alt="image" style="height:350px" src="SN41_dynamic_04.png"/>
+ <img alt="image" style="height:350px" src="sn50_smartprofile_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 4. To test a Dynamic Profile, **select a barcode type and click the "Test" button**: <br>

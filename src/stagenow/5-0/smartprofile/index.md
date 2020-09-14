@@ -9,97 +9,23 @@ productversion: '5.0'
 
 **StageNow 5.0 (and later) supports Smart Profiles**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. 
 
-NOTE: If the target device is downgraded to MX 8.0 or earlier and the admin wishes later to upgrade, a profile must be created the "old way," but StageNow's integration with the LifeGuard build database removes the requirement to manually find the images. 
+> **Requires MX 8.1 or later on target device(s)**
 
-"Requires MX 8.1 or later on the device" message must be added to the "Perform OS Update" screen in StageNow. If the target device is runningMX 8.0 or earlier, please see [LINK TO /profiles/osupdate]. 
-
-> **NOTE: Smart Profiles requires MX 8.1 or later on target devices**. 
-
-**StageNow 4.1 (and later) supports Dynamic Staging**, which allows compatible data-entry fields in a StageNow Profile to be populated with values from a file when staging barcodes (or `.bin` files) are generated. This permits the Staging Administrator to create **many barcodes from a single Profile, each of which can configure devices differently** depending on variations of how and/or where the devices are to be used. Dynamic Staging also supports `.bin` files, which are used to stage devices from USB or SD card storage. 
-
-**Dynamic Staging simplifies staging based on...** 
-
-* Locale
-* Language
-* Input method
-* Wi-Fi setting
-* User credentials  
-* Other customer variations
-
-####NOTES: 
-* **Only StageNow 4.1.1 (or later) can enable/disable Dynamic Staging**. Disabled by default; enable in Global Settings.
-* **Upgrades to StageNow 4.1.1 are possible only from**: 
- * **StageNow 4.1.0** (replaced by v4.1.1 on the Zebra support portal) 
- * **StageNow 4.0.1**  
- * **StageNow 3.4.0** 
-* **The "Host the Deployment Package Outside of StageNow FTP Server" option is not available** when using Dynamic Staging.
+> **`IMPORTANT:`**. If a target device is downgraded to MX 8.0 or earlier and an upgrade is later required, the upgrade profile must be created using the previous "non-smart" methods. However, integration with the LifeGuard build database in StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for the upgrade operation(s). 
 
 -----
 
 ### Requirements
 
-* StageNow 4.1 (or later) installed
-* Knowledge of which fields to populate dynamically and their corresponding variable names
-* A `.csv` file containing variable names and matching data for all dynamic fields (can be created during staging setup)
+* StageNow 5.0 (or later) installed
+* Target device(s) with MX 8.1 (or later)
 
-<!-- 
-<b><font size="1" color="grey">&#42;While a `.csv` file is required to *<u>generate</u>* staging barcodes, it does not have to be present when setting up a Dynamic Profile. After a Profile with one or more dynamic fields is created, StageNow can generate a `.csv` template file that the administrator can then populate with the required data.</font></b>
-
- -->
+sn50_smartprofile_00.png
+sn50_smartprofile_01.png
 
 -----
 
-### Variable Creation
-
-Dynamic Staging variables are created in two primary ways: 
-
-* **Exporting Variables from a Database -** Companies that maintain user data (locale, network settings, etc.) in databases or spreadsheets can export the relevant data to a `.csv` file and use the file to generate staging Profiles accordingly. **When a StageNow Profile is created for pre-existing variables, the <u>variable names entered in the Profile must exactly match those of the database</u>**.
-
-* **Generating Variables "On the Fly" -** For companies that DO NOT maintain user databases (or that do not wish to use them for this purpose), variable names can be made up as the Dynamic Profile is being created. Once the Profile is finished, StageNow can generate a `.csv` template file that contains all the newly created variables that the administrator can then populate with the required data. **This is the Zebra-recommended method of creating a** `.csv` **file** because of the inherent accuracy of automatic output of variable names. 
-
-Both of these scenarios are fully supported by StageNow and documented in the [Using Dynamic Staging section](#usingdynamicstaging). 
-
-**There are many possible ways that Dynamic Staging could help save time**. For example, a company that configures devices at a central location and deploys them to branch locations throughout the United States might maintain **one** `.csv` **file for each store**, each of which might contain device data for that store's departments and the requisite device settings. To illustrate, if "Store 1" had 10 departments, the `Store_1.csv` file would contain 11 rows. The first row must contain the variable names. The next 10 rows are for the departments, and each contains the settings for that department's variables. Variable names common to all departments might include: 
-
-* `%dept_name%`
-* `%ssid%`
-* `%wifi_passphrase%`
-* `%default_scanner%`
-* `%app_1%`
-* `%app_2%`
-* `%app_3%`
-
-<!-- 
-If some departments in a store have differing numbers of a given variable (for instance, apps in use), that store's `.csv` file should contain enough columns for the store with the greatest number of that variable. For example, if the greatest number of apps used by any department was three, and `Dept_2` used only two, the row for `Dept_2`'s data would contain names for only two apps; the cell for `Dept_2:%app_3%` would be blank. 
--->
-
------
-
-## Using Dynamic Staging
-
-### Variable Usage Rules
-* To avoid possible errors, the <u>`.csv` file **must NOT be open**</u> when Dynamic Staging is performed. 
-* **Variable names** used in a StageNow Profile **must match exactly with those in the** `.csv` **file</u>**.
-* **Variables can be used alone or in combination with static values** and/or other variables in the same field. 
-* Each row in the `.csv` file represents one set of data for a Dynamic Profile.
-* Row numbers within the `.csv` file are used to label barcode printouts for identification purposes. 
-* Dynamic Staging **supports plain text files only**. 
-* **Each variable MUST be separated by a semi-colon (;)** and each line must end with a semi-colon.
-* Dynamic Variables are supported ONLY for device settings and Staging Operator instruction fields.
-* **If a percentage sign is to be part of the variable data**, <u>the percentage sign must first be declared as a variable</u>. See example below. 
-
-#### Using '%' as variable data
-StageNow accepts all characters (including the semi-colon) as entries in Dynamic Variable fields ***except*** the percent sign (%), which requires special handling to avoid a "Malformed variable" error. **To use a percent sign as data in an entry field** (for example in an SSID name like `Store_01_SS%ID`), **the percent sign must first be declared as a variable**. 
-
-**To include a percent sign (%) in a data entry field**:
-
-1. In the `.csv` file to be used, **add a variable named "%percent%" with "%;"** as its only value.   
-2. In the SSID field in StageNow, **enter "Store_01_SS%percent%ID"** as the value (for example). 
-3. **Generate the barcode(s) as desired**. When the barcode is generated, StageNow will replace "%percent%" with the "%" character, as in the "Store_01_SS%ID" name above.  
-
------
-
-#### To Use Dynamic Staging:
+#### To Create a Smart Profile:
 
 ##### Before beginning, enable Dynamic Staging in the Global Settings panel: 
 <img alt="image" style="height:400px" src="SN_411_dynamicStaging_on-off.png"/>

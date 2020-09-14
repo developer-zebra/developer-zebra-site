@@ -60,7 +60,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### New Features
 
-**StageNow 5.0 introduces [Smart Profiles](../smartprofiles)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofiles). 
+**StageNow 5.0 introduces [Smart Profiles](../smartprofile)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofile). 
 
 -----
 

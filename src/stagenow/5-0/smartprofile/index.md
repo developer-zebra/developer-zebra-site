@@ -11,7 +11,7 @@ productversion: '5.0'
 
 > **Requires MX 8.1 or later on target device(s)**
 
-> **`IMPORTANT:`**. If a target device is downgraded to MX 8.0 or earlier and an upgrade is later required, the upgrade profile must be created using the previous "non-smart" methods. However, integration with the LifeGuard build database in StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for the upgrade operation(s). 
+> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using the previous "non-smart" methods. However, integration with the LifeGuard build database in StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for such upgrade operation(s). 
 
 -----
 
@@ -25,12 +25,9 @@ productversion: '5.0'
 
 ## Create a Smart Profile
 
-
 ##### Before beginning: 
-
-Before creating a Smart Profile, select at least one LifeGuard device image from the "Browse LifeGuard Images" page: 
-
-<img alt="image" style="height:400px" src="sn50_smartprofile_00.png"/>
+Before creating a Smart Profile, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page: 
+<img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
 #### To create a Smart Profile:

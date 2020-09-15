@@ -29,7 +29,7 @@ productversion: '5.0'
 
 **Before creating a Smart Profile**, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page. **If LifeGuard images have already been selected, skip to Section II**.   
 
-#### To select a LifeGuard image:
+#### To select LifeGuard image(s):
 
 1. From the "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane. 
 2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> Log in with Zebra OneCare credentials, if prompted. 
@@ -46,7 +46,7 @@ _Click image to enlarge; ESC to exit_.<br>
 
 When creating a Smart Profile, StageNow examines the selected LifeGuard image, calculates all required Setting Types (CSPs) and creates all Profile steps necessary to deploy the image to the target device(s). 
 
-> **See Notes section below for important rules and restrictions**. 
+> **See [Notes section](#notes) below for important rules and restrictions**. 
 
 #### To create a Smart Profile:
 
@@ -66,7 +66,9 @@ _Click image to enlarge; ESC to exit_.<br>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 
+> Next steps here. 
 
+#### Whiz, bang... smart profile is made. 
 
 <!-- 
 
@@ -106,9 +108,7 @@ Combine variables and static text as desired. An example is shown below.<br>
 
 -->
 
-#### The Smart Profile is now complete
-
-#### Notes
+### Notes
 
 * Multiple simultaneous downloads are possible.
 * Leaving the download screen cancels all downloads.   
@@ -116,7 +116,7 @@ Combine variables and static text as desired. An example is shown below.<br>
 
 -----
 
-## Troubleshooting
+<!-- ## Troubleshooting
 
 Dynamic Staging errors occur when StageNow is unable to acquire data from a `.csv` file for generating staging media. 
 
@@ -151,79 +151,7 @@ Dynamic Staging errors occur when StageNow is unable to acquire data from a `.cs
 <br>
 5. **Return to <a href="#step6">Step 6</a>** in the previous section and try Dynamic Staging again. 
 
+-->
+
 -----
-<!-- 
-Then the administrator need only populate the file with the required data and select that `.csv` file when generating barcodes. 
 
-Data-entry fields that support Dynamic Staging are indicated by a "percent sign" (%) icon similar to the image below.  
-
-Variables can be used alone in a field or in combination with static values and/or other variables. 
-
-For example, a valid string might read as follows: 
-
-`192.168.%octet3%.%octet4%` to specify two static octets (192 and 168 separated by a "dot") and two variables (%octet3% and %octet4%, also separated by a dot). 
-
-WORKFLOW
-
-Use case- Allan: 
-
-In general, the concept is to produce a staging profile that does different things on different devices. 
-
-In its first iteration, dynamic parts are rendered static when barcodes or .bin files are created. 
-
-One staging profile produces multiple barcode sheets or .bin files. 
-
-
-
-STEPS 
-1. Decide to have a dynamic profile
-2. Determine what has to vary  in each profile
-3. Use the "Create a template" feature (Zebra-recommended) 
-4. Enter the required variables. it can be done as one master or separate CSVs for different stores.  
-
-ONE FILE
-all values, generate once
-but has extra barcode sheets that might not be needed every time
-
-One store, 10 department. one profile for each. 
-one row per store
-each profile references different subsets of the same file
-might not have been created from a template
-
-If customer has an access or SQL database with store info. 
-output selected sets as csv files
-might require referring to the file from within SN 
-
-WORKFLOW 1- without a database of variables
-
-WORKFLOW 2- with a database of variables
-
-
-FROM POLARION:
-
-Background:
-
-Currently, StageNow supports Barcode and NFC Staging Modalities, but all Staging Profiles are inherently Static, which means that all values must be entered at the time the Staging Profile is created and remain fixed unless/until the Staging Profile is manually edited.
-If an Administrator wishes to produce multiple variations of a Staging Profile, he must manually create a copy of the Staging Profile and edit it with the required changes and must repeat that process for each variation required.
-This is error-prone and time-consuming and creates a mass of Staging Profiles to manage.
-There is a strong request from the field to be able to perform Staging using multiple variations of a single Staging Profile in a more efficient manner.
-
-Assumptions:
-
-This may be the first increment of a larger Dynamic Staging Feature set and hence should be defined and implemented as generically possible so that it can serve as the base for future expansion.
-Customers would prefer a simple and standard way to provide Data Sets to be used when generating variations for a Staging Profile (e.g. specify a .CSV file).
-Customers may desire a way to manage and organize multiple Data Sets for use with the same or different Staging Profiles (e.g. a library of imported .CSV files).
-Customers will likely need a way to organize and manage the multiple Barcode Sheets Sets or collections of NFC tag binaries generated via Dynamic Staging (e.g. name generated files based on variant values).
-Customers may desire a way to visually differentiate Static and Dynamic Staging Profiles.
-Customers may desire a way to visually differentiate Barcode Sheets Sets or NFC Instructions Sheets when generating variations for a Staging Profile.
-Customers may desire a way to customize the Staging Operator instructions produced on the Barcode Sheets or NFC Instruction Sheets when generating variations for a Staging Profile.
-
-Expectations:
-
-The Staging Administrator can optionally choose to include a Variable anywhere the wish within any text-entry field presented within a Staging Profile.
-Each Staging Profile can have as many or as few variables as the Staging Administrator wishes to use and can name variables any way he wishes.
-A single text-entry field could contain mixtures of static data and variables in any combination.
-Any Staging Profile containing at least one variable is a Dynamic Staging Profile and all other Staging Profiles are Static.
-When the Staging Administrator or Staging Operator generates using a Dynamic Staging Profile, he will be required to supply a Data Set providing at least one or more values for every variable.
-The Staging Administrator will be able to easily manage Dynamic Staging Profiles, Data Sets, and the Barcode Sheets, NFC Binary Files, Audio Files, etc. generated from them.
- -->

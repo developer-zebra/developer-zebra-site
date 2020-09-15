@@ -7,7 +7,6 @@ productversion: '3.0'
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher significantly upgrades the software to a cloud based solution.<br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower is the on-premise version of the solution, to be replaced by Device Tracker 3.0 in the future..... 
 </div>
-<br>
 
 ## Overview
 
@@ -25,6 +24,7 @@ Main features:
 * Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval.
 * Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator (Geiger-counter-like mechanism) and play sound feature. 
 * Basic check-out/check-in feature to associate users to devices for accountability witih the scan of a barcode. (Optional)
+<br>
 
 ## Supported Devices
 
@@ -62,6 +62,7 @@ Supported Devices (including GMS and non-GMS versions):
 * Bluetooth must be enabled to find devices using the visual proximity indicator.  In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), then user intervention is required to turn on Bluetooth.
 * Wi-Fi must be enabled and connected to the network to communicate with the server.
 * Location must be enabled on all devices to find devices using the Bluetooth-based proximity indicator. 
+<br>
 
 ## Network Requirements
 

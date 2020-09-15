@@ -6,10 +6,10 @@ productversion: '3.0'
 ---
 
 ## Overview
-Zebra Device Tracker is a role-based solution in which administrators and managers have additional features and functionality.
+Zebra Device Tracker is a role-based solution in which administrators and managers possess additional features and functionality.
 
 ## Administrator/Manager Login
-Administrators and Managers are required to login to view and perform actions.  
+Administrators and managers are required to login to view and perform actions based on their respective role. Zebra Device Tracker supports a single session for each user login and does not support multiple login sessions. If an admin/manager logs in to multiple browser sessions or devices using the same user login, the login sessions are automatically terminated after a period of time. 
 
 To login as administrator or manager:  
 1.	Launch the Zebra Device Tracker app.

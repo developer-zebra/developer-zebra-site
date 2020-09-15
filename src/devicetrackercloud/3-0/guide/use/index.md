@@ -13,6 +13,7 @@ When a device is found, recommission the device to place it back into the active
 A note can be added at any time to capture comments specific to the device to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers. 
 
 Optionally, the Check-out feature can be enabled to associate users to devices fo accountability with the scan of a barcode.
+<br>
 
 ## Mark a Device "To Be Found"
 A device must be marked "To Be Found" before a device search can take place:
@@ -23,6 +24,7 @@ A device must be marked "To Be Found" before a device search can take place:
 
 2.	The status is changed to **To Be Found** and the device is now listed in the **To Be Found** category in the dashboard.
 3.	To proceed to find the device, continue to the next section [Find a Device](./#findadevice).
+<br>
 
 ## Find a Device
 The target device must be set **To Be Found** to proceed with the device search. A search is initiated from the **To Be Found** device list. For an associate, the **To Be Found** device list is displayed after starting the client app. For an administrator or manager, the **To Be Found** device list is accessible via the dashboard. 
@@ -44,6 +46,7 @@ Tap on the device card for the target device to open the <b>Device Details</b> s
 
 5.	Tap Play Sound on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6.	If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.**  The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
+<br>
 
 ## Decommission/Recommission Device
 After a device is found, it should be recommissioned to place the found device back to the active device pool. This changes the device status from **Found** to **In Service.** Alternatively, to account for only active devices, recommission or decommission a device to add or remove the device to/from the active device pool. This feature to decommission/recommission a device is available only to administrators or managers.
@@ -70,6 +73,7 @@ _Or,_<br>
 Tap the device card to display the **Device Details** screen. Tap on the top right menu and select **Recommission.**
 3.	The **Status** is changed to **In Service,** as seen in the **Device Details** screen.
 4.	Tap the **Note** section to enter or edit text indicating the reason why the device is recommissioned.
+<br>
 
 ## Add/Edit a Note
 Administrators and managers can add a note to capture comments specific to the device to help in device tracking or identifying device problems.  For example, a comment could be "device screen damaged".  
@@ -82,6 +86,7 @@ To add or edit a note:
 
 3.	After entering text for the note, tap the back button.
 4.	The note is saved and can be viewed in the **Device Details** screen.
+<br>
 
 ## Device Check-out
 [Device Check-out](../setup/#devicecheckout) is an optional feature that can be enabled by the administrator. If enabled, the user is required to scan their barcode at the start of their work shift to check-out the device, then logout at the end of their work shift to check-in the device. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. When a device is checked-out, the user is associated with the particular device until the user checks in the device. 
@@ -94,7 +99,10 @@ Perform a device check-out at the start of a work shift as follows:
 
 3.	Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-in to be successful.  
 4.	A message appears indicating the user is checked-out successfully. The app is placed in the background.
-5.	The user is now associated with the device.  
+5.	The user is now associated with the device.  <br>
+<!-- -->
+**Note:** If Check-out is enabled, after a device is rebooted the Check-out screen may take up to one minute to be displayed.
+<br><br>
 
 ### Check-In
 Choose one of the following options to Check-In a device:<br><br> 
@@ -116,6 +124,7 @@ Choose one of the following options to Check-In a device:<br><br>
 2.	The check-out screen appears prompting to scan a barcode.
 <br>
 
+<!-- -->
 **Option 4:**
 
 1.	Perform a battery swap.

@@ -149,8 +149,8 @@ To add/modify device data, import the device .CSV file:
 7.	The device data import is complete.  Results are displayed in the **Status** section at the bottom of the screen.  
 <br>
 
-### Import Delete Device Data
-To delete device data, import the delete device .CSV file containing the specific data to delete:
+### Delete Device Data
+To delete device data, import the device .CSV file containing the specific data to delete:
 1.	Copy the .CSV file from the PC to the device root `\Internal shared storage` folder. 
 2.	In the client app, login as the admin.  In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
 3.	Tap the top right options menu and select **Settings,** which is now visible.
@@ -158,6 +158,7 @@ To delete device data, import the delete device .CSV file containing the specifi
 5.	Under the section **Import Delete Device CSV File,** tap **Browse File.**  Browse and select the appropriate .CSV file.
 6.	Under the section **Import Delete Device CSV File,** tap **Upload CSV.**  
 7.	The specified device data is removed from the system.  Results are displayed in the **Status** section at the bottom of the screen.  
+8. Reboot the device for which the data is being deleted. After reboot, the device is listed in the **Unassigned Devices** category in the dashboard.
 <br>
 
 ## Web Portal
@@ -208,12 +209,12 @@ Steps to reset the password in the web portal:
 4.	Open the email and click on the link.
 5.	Enter in the new password.
 6.	The password is reset with the new password.
-<br>
+<br><br>
 
 
 ## Device Check-out
 
-Device Check-out is an _optional_ feature that maintains user accountability and traces device use. A unique barcode is required for each user to scan at the start of their work shift. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed.
+Device Check-out is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. 
 
 * **Check-out:** At the start of a work shift, the user checks-out the device by scanning their unique barcode. This associates the user with the device, as seen in the device card and device details screen.
 * **Check-in:** At the end of a work shift, the user checks-in the device by placing it on a powered cradle or logging out through the top-right menu from the main device screen. After check-in, the user is no longer associated with the device.  
@@ -224,8 +225,8 @@ The Check-out/Check-in feature displays an overlay on top of the screen to enfor
 
 ### Enable Check-out/Check-in
 To toggle check-out:
-1.	From the web console, tap Settings in the left menu.
-2.	Toggle Checkin/Checkout to enable the feature.
+1.	From the web portal, tap **Settings** in the left menu.
+2.	Toggle **Checkin/Checkout** to enable the feature.
 <br>
 If enabled, Checkout appears as a category in the administrator and manager dashboard.
 <br>
@@ -238,8 +239,9 @@ When generating a barcode with the prefix, the specified prefix is followed by t
 _Sample barcode with prefix and username: "NGDTRK-JohnDoe"_
 <br><br>
 To set the barcode prefix:
-1.	Enable Checkin/Checkout the web portal. This exposes the Prefix field in the Application Configuration screen.
-2.	Enter the desired text for the prefix. If all barcodes should be accepted with no prefix, keep the entry blank.
+
+1.	**Enable Checkin/Checkout the web portal.** This exposes the Prefix field in the Application Configuration screen.
+2.	**Enter the desired text for the prefix.** If all barcodes should be accepted with no prefix, keep the entry blank.
 <br>
 Only barcodes that begin with the specified prefix can initiate the checkout.
 <br>

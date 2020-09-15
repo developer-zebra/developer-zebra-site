@@ -23,36 +23,53 @@ productversion: '5.0'
 
 -----
 
-## Create a Smart Profile
+## Working with Smart Profiles
 
-##### Before beginning: 
-Before creating a Smart Profile, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page: 
+### I. Select LifeGuard Image(s)
+
+**Before creating a Smart Profile**, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page: 
+
+#### To select a LifeGuard image:
+
+1. From the "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane. 
+2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> Log in with Zebra OneCare credentials, if prompted. 
+3. If necessary, **check the required boxes to filter search results** to diplay images for desired target device(s). 
+4. **Click the "Show Results" button**. 
+5. **Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images. 
+
 <img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
+----- 
+
+### II. Create a Smart Profile
+
+As part of the Smart Profile process, StageNow examines the selected image, calculates all required Setting Types (CSPs) and creates the Profile steps necessary to deloy to the target device(s). **See Notes section below for important rules and restrictions**. 
+
 #### To create a Smart Profile:
 
-1. From the StageNow Home screen, **click "My LifeGuard Updates"** in the left-hand pane:  
+1. From the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 
 2. **Click the cloud icon** of the desired image (as shown below) to begin the download: 
- <img alt="image" style="height:350px" src="sn50_smartprofile_01.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-
-3. When the**Enter static text** (i.e. "GMT") **and/or variables** (i.e. `%zone%`) in any combination as desired:  
- <img alt="image" style="height:350px" src="sn50_smartprofile_02.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
- A warning appears until variables are entered using the correct syntax: <br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. **Enter remaining static text and/or variables** as desired for all fields and **click the "Continue" button**:  
+
+3. When the download finishes, **click the Plus (+) symbol** to create a new Smart Profile:  
  <img alt="image" style="height:350px" src="sn50_smartprofile_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+3. **Enter a name for the Smart Profile**:
+ <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
+ _Click image to enlarge; ESC to exit_.<br>
+<br>
+
+
+
+
+
 4. To test a Dynamic Profile, **select a barcode type and click the "Test" button**: <br>
  <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
  _Click image to enlarge; ESC to exit_.<br>

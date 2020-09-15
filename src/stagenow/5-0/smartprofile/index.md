@@ -53,6 +53,7 @@ When creating a Smart Profile, StageNow examines the selected LifeGuard image, c
 1. From the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
+<br>
 2. On the "My LifeGuard Updates" page, **click the cloud icon of the desired image** (as shown below) to begin a download.<br> Multiple images can be downloaded simultaneously, but **exiting the download screen cancels all remaining downloads**.
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>

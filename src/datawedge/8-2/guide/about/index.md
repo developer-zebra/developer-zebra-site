@@ -144,7 +144,13 @@ For more information about approved languages or to download a localized operati
 4. When Data Capture Plus icon is displayed by DataWedge on top of another application, Android displays a silent notification in the notification area. Users can hide the Data Capture Plus icon by tapping on this notification and disabling the “Allow display over other apps” option. If a user decides to disable this option, even though Data Capture Plus is enabled in DataWedge, it does not display on the screen.
 
 -----
-## New in DataWedge 8.1
+## New in DataWedge 8.2
+* Detect the presence of a handwritten signature with [signature presence detection](../input/barcode/#signaturepresencedetection). 
+
+-----
+## Recent Version History
+
+### Added in DataWedge 8.1
 
 * [Control access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
 * New [Trigger Wakeup and Scan](../input/barcode#readerparams) Reader Parameter to trigger scanning when device is in a suspended/screen-off state. New corresponding [SetConfig API parameter](../api/setconfig/#otherscannerinputparameters).
@@ -154,10 +160,6 @@ For more information about approved languages or to download a localized operati
     * Renamed SimulScan to [Document Capture](../input/barcode/#nextgensimulscanconfiguration).
     * Renamed Basic MultiBarcode to [MultiBarcode](../input/barcode/#nextgensimulscanconfiguration).
     * Renamed Document Capture Template to [Document Selection](../input/barcode/#documentcapture) in UI.
-    
-
------
-## Recent Version History
 
 ### Added in DataWedge 8.0
 * **Support for Unique Device Identification (UDI) barcodes** has been temporarily suspended for devices running Android 10 and later. UDI support will be restored via a LifeGuard patch for Android 10 to be released in Q3 2020.

@@ -67,6 +67,22 @@ When configured to use the content provider, DataWedge first sends the scan data
 
 An Intent extra contains a URI for the DataWedge content provider. The application must use the content provider URI to query the data into a `Cursor` object using the `ContentResolver`.
 
+### Parameters
+**Signature presence status -** when it is required to check for the presence of a handwritten signature during Document Capture, DataWedge exposes a signature presence status parameter through the existing Content Provider cursor. This returns whether a signature is present or absent, determines if the signature presence check is supported, or if the signature presence check was not requested.
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Paramter Value</th>
+  </tr>
+
+  <tr>
+    <td>field_signature_status</td>
+	<td>-2 – Signature presence check is not supported by the underlying scanner framework<br>
+-1 – Signature check is not requested<br>0 – Signature is not present<br>1 – Signature is present</td>
+  </tr>
+</table>
+
 ### NextGen SimulScan Sample Code
 The following sample code demonstrates how to process scan data with NextGen SimulScan:
 

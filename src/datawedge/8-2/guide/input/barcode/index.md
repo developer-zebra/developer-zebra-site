@@ -129,7 +129,7 @@ _Scanner configuration_
 
 ### Scanning Modes
 
-**Scanning Modes** is used to select the mode to scan barcodes starting with DataWedge 8.1.45: 
+**Scanning Modes** is used to select the mode to scan barcodes: 
 * **Single -** normal mode to scan an individual barcode
 * **UDI -** scan Unique Device Identification (UDI) barcodes such as GS1, HIBCC and ICCBBA
 * **Disabled –** when a scanning mode, such as MultiBarcode or Document Capture, is selected in the **NG SimulScan Configuration** screen, scanning mode in this section is automatically disabled, preventing any other selection. 
@@ -159,8 +159,8 @@ _Scanner configuration_
 ## NextGen SimulScan Configuration
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
-* **MultiBarcode -** supported since DataWedge 8.0
-* **Document Capture -** supported since DataWedge 8.0, only available on select devices and scanners
+* **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0
+* **[Document Capture](#documentselection) -** supported since DataWedge 8.0, only available on select devices and scanners
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
@@ -179,14 +179,13 @@ _DataWedge profile displaying NG SimulScan_
  <img style="height:350px" src="ng_simulscan_configuration.png"/>
 _NextGen (NG) SimulScan configuration_
 
-Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture](#documentcapture)** and **[MultiBarcode Params](#multibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
+Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documentselection)** and **[MultiBarcode Params](#multibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
 
 ### Scanning Modes
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
-* **Single -** normal mode to scan an individual barcode; this does not exist starting with DataWedge 8.1.45.
-* **[Basic MultiBarcode](#multibarcodeparams)** / **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan.  In DataWedge 8.1.45 or higher, this option is displayed as **MultiBarcode.**
-* **[SimulScan](#documentcapturetemplate)** / **[Document Capture](#documentcapturetemplate) -** document capture based on a specified custom template.  In DataWedge 8.1.45 or higher, this option is displayed as **Document Capture.** 
+* **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan.  
+* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified custom template.  
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -194,15 +193,9 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture](#documentc
 * If **Document Capture** or **Multibarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
 
 <table>
-
  <tr>
   <td>
     <img style="height:350px" src="ng_simulscan_scanning_modes.png"/>
-  </td>
-  <td> &nbsp; &nbsp; &nbsp; &nbsp;
-  </td>
-  <td>
-    <img style="height:350px" src="scanning_modes_ngss.png"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
@@ -214,30 +207,30 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture](#documentc
 </table>
 <i>NextGen (NG) SimulScan - Scanning Modes</i>
 
-### Document Capture
-Document Capture requires a custom template that designates the areas to capture as an image, such as signature, text fields, or the entire document. Contact Zebra to create a custom Document Capture template.
+### Document Selection
+**Document Selection** specifies the template to use for document capture, in which **Document Capture** is selected as the **Scanning Mode.** Document Capture requires a template that designates the areas to capture as an image, such as signature, text fields, or the entire document. Contact Zebra to create a custom Document Capture template.
 
-#### Document capture with anchor barcode
-Document Capture with anchor barcode captures fields within a document as images, such as addresses and signatures. The barcode determines the position of the fields being captured.
-
-requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. **Document Capture Template** (in DataWedge v8.1 or earlier) or **Document Capture Selection** (in DataWedge 8.1.45 or later) specifies the template to be used for document capture with **SimulScan** or **Document Capture** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
-
-To configure, in the **NG SimulScan configuration** screen tap on **Document Capture Template** (in DataWedge v8.1 or earlier) or **Document Capture Selection** (in DataWedge 8.1.45 or later) and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+To select the Document Capture template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_
 
-Video demonstration about document capture:
+Video demonstration of document capture with anchor barcode:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Whole Page Document Capture
-Whole Page Document Capture captures the entire document or form as an image upon scanning the barcode. This feature captures the whole page up to the outer border in the field of view.
-Border means black line at the four sides of the white page or white page without borderline placed on the black background where it finds contrast background. 
+#### Document Capture with Anchor Barcode
+Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
 
-The templates available are “WholePage-MandatoryBarcode” and “WholePage-OptionalBarcode”, if this feature is supported by the underlying scanner framework. The mandatory barcode template is used for forms that have at least one barcode. The optional barcode template is used for forms that may or may not have a barcode.
+#### Whole Page Document Capture
+Whole Page Document Capture captures the entire document or form as an image. The entire document can be captured with or without scanning a barcode. This feature captures the entire document up to the surrounding borders in the field of view. The document must have black borders surrounding all four sides or be bordered by a contrasting background. If this requirement is not met, the document cannot be captured.
+
+Two templates are available by default (if supported by the underlying scanner framework): “WholePage-MandatoryBarcode” and “WholePage-OptionalBarcode”. The mandatory barcode template is used for forms that have at least one barcode. The optional barcode template is used for forms that may or may not have a barcode.
+
+<img style="height:350px" src="wholepage-templates.png"/>
+_Document Capture whole page templates_
 
 #### Signature Presence Detection
-When scanning a document with **Document Capture,** DataWedge can detect the presence of a handwritten signature. This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. This setting is controlled through the Content Provider.  See the [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.
+When scanning a document with **Document Capture,** DataWedge can detect the presence of a handwritten signature. This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. This setting is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.
 
 
 ### MultiBarcode Params

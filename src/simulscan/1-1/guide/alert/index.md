@@ -73,20 +73,20 @@ SimulScan currently supports only these devices:
 **Q: How do I know which SimulScan features are being transitioned to the Scanning Framework?**<br>
 A: See the Transition Roadmap above for a list of features that are planned for transitioning. The table also includes features that are not being transitioned.
 
-**Q: Do I need rewrite my existing SimulScan application to use the transitioned APIs?** <br>
+**Q: Do I need to rewrite my existing SimulScan application to use the transitioned APIs?** <br>
 A: Yes. Applications must be rewritten to use the SimulScan APIs available in Scanning Framework. The intent APIs provided by DataWedge will make this transition quick and easy. 
 
 **Q: Do I need a license to use transitioned SimulScan features in Scanning Framework?**<br> 
- A: No. Licensing is not required for any of the SimulScan features being transitioned into the Scanning Framework and APIs. 
+ A: Maybe. Licensing is not required for any of the SimulScan features being transitioned into the Scanning Framework and APIs for Zebra Enterprise-series devices.  Professional-series devices require purchase of an MDNA Enterprise License to access some NextGen SimulScan features. [Learn more](/licensing). 
 
 **Q: Will the SimulScan transitioned APIs be supported only on DataWedge? What about Enterprise Browser and EMDK**?<br>
-A: The DataWedge and intent API support are the recommended method of programmatically accessing transitioned SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
+A: DataWedge and intent-API support are the recommended method of programmatically accessing transitioned SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
 
 **Q: What software do I need for using the transitioned SimulScan features to Scanning Framework?**<br>
 A: None. The Scanning Framework is preloaded on all Zebra devices. No additional software is needed.<br>
 
 **Q: Which devices will the transitioned SimulScan features in Scanning Framework support?**<br>
-A: The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher. Some devices running Oreo and Pie might require application of the latest LifeGuard updates.
+A: The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and later. Some devices running Oreo and Pie might require application of the latest [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
 
 **Q: I did not see some of the existing SimulScan features in the Transition Roadmap matrix. Will they ever be supported?**<br> 
 A: If an existing SimulScan feature is not listed in the Transition Matrix, currently there is no plan to support it. However, Zebra will consider supporting missing features on a case-by-case basis if a strong business case exists. Please contact your account manager to request support for missing features.
@@ -94,17 +94,17 @@ A: If an existing SimulScan feature is not listed in the Transition Matrix, curr
 **Q: Since the last date to buy licenses for existing SimulScan implementations is December 31, 2019, can I continue to purchase licenses until then?**<br>
 A: Yes, but Zebra strongly recommends using the SimulScan features transitioned to Scanning Framework for all new development. Consider moving to the Scanning Framework immediately if a feature is already transitioned. 
 
-**Q: What are the advantages of using the transitioned SimulScan features in the Scanning Framework over the existing stand-alone SimulScan?**<br>
-A: Transitioned SmulScan features in the Scanning Framework will support all Oreo and future devices with built-in camera and imagers. Current SimulScan features support only a handful of devices. Furthermore, SimulScan was not designed to accommodate new and complex features, nor to massively scale. The Scanning Framework was designed for scaling and can more quickly implement new scanning features.   Additionally, the transitioned SimulScan will not require a license. 
+**Q: Are there advantages to using the transitioned SimulScan features in the Scanning Framework over the existing stand-alone SimulScan?**<br>
+A: Yes. Transitioned SimulScan features in the Scanning Framework will support all Oreo-based and future devices with built-in camera and imagers. Current SimulScan features support only a handful of devices. Further, SimulScan was not designed to accommodate new and complex features, nor to massively scale. The Scanning Framework was designed for scaling and allows for faster implementation of new scanning features.   Additionally, the transitioned SimulScan will not require a license for most devices. 
 
 **Q: Some of the transitioned features in the Scanning Framework are in the roadmap but are not currently not available. How soon can I get a beta?** <br>
-A: Please contact your Zebra sales representative for information about accessing beta features.
+A: Please contact your Zebra sales representative for information about accessing early-release software.
 
 **Q: Will the SimulScan Template Builder work with the Transitioned SimulScan?**<br>
-A: No. The existing Template Builder tool will not work with the transitioned SimulScan and is not required to make use of the transitioned SimulScan features.
+A: No. The existing Template Builder tool will not work with NextGen SimulScan and is not required to make use of the transitioned SimulScan features.
 
-**Q: When will the SimulScan Template Builder become unavailable?**<br>
-A: Access to Template Builder will end on or around December 31, 2019. 
+**Q: Does the SimulScan Template Builder work with NextGen Simulscan?**<br>
+A: No. The Template Builder is no longer available and is not required for using Transitioned SimulScan APIs. 
 
 -----
 

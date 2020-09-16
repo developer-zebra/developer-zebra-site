@@ -301,7 +301,7 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
  * Name uploaded files using a naming pattern
  * Replace the destination file with source if duplicate name
  * Skip copying and remove file from the source
- * Skip copying and keep it at the source
+ * Skip copying and keep file at the source
 * **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to:
  * Control state of Battery Saver mode (on/off)
  * Control Battery Saver Control mode (automatic/manual)

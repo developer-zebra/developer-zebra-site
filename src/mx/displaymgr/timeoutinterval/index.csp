@@ -61,7 +61,7 @@ parm:
       description: Causes the display screen to timeout after 30 minutes of device-user inaction.
     - code: 65535
       devicetype: A,B
-      info: Zebra supports this option only on PS20 and VC83 devices. 
+      info: Zebra supports this option only on CC605/CC610, MC33, MC93 and PS20 devices. 
       name: Never
       mx: "9.2"
       apilevel: "1"

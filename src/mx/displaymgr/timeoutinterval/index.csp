@@ -64,7 +64,6 @@ parm:
       info: Zebra supports this option only on CC605/CC610, MC33, MC93 and PS20 devices. 
       name: Never
       mx: "9.2"
-      apilevel: "1"
       description: Keeps the display screen on at all times despite any period of device-user inaction.
 ---
 

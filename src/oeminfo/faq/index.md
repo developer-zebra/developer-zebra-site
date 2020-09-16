@@ -64,7 +64,3 @@ Below are some common questions related to OEMinfo and its related components an
 ### How can I determine whether OEMinfo is already installed on my device(s)?
 
 **A: OEMinfo appears in the Apps list of the Android Settings panel**.
-
------
-
-### FAQs appear as they become known 

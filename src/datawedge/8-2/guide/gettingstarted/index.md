@@ -136,6 +136,8 @@ The following example discusses the use of SWITCH_TO_PROFILE with SCANNER_INPUT_
 ## Sample Apps
 
 As of writing, the following [DataWedge sample applications](../samples) are available: 
+* [Getting Started with DataWedge on Zebra Devices](https://developer.zebra.com/blog/getting-started-datawedge-zebra-devices) - a guide to develop an application to capture barcode data
+* [Tutorial on how to receive scanned barcode data](../samples/tutorial-ReceiveScannedData/) - a walk-through on how to receive scanned barcode data through an Android intent
 * [Basic scanning app](../samples/basicintent1) – uses an Android intent without DataWedge intent APIs
 * [Scanning app](../samples/barcode1) - includes ability to perform the following using DataWedge intent APIs: 
  * Select decoders 
@@ -143,6 +145,8 @@ As of writing, the following [DataWedge sample applications](../samples) are ava
  * Register for scanner status notifications 
  * Receive barcode data 
  * Use a software scan trigger 
+* [MultiActivity](../samples/multiactivity1) - demonstrates how to scan across multiple activities using different profiles based on the app activity in the foreground
+* [Profile Switch](../samples/profileswitch1) - demonstrates how to switch profiles dynamically based on the text field in focus within the app
 * [Signature capture app](../samples/signaturecapture) – uses [Decoder Signature](../input/barcode/#decodersignature) to capture an area within a document, such as a signature, enclosed by a specific pattern and save this to an image 
  
 -------

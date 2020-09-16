@@ -11,7 +11,7 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 5.0 User Guide, Revision A; <!-- StageNow MN-003401; --> August, 2020
+StageNow 5.0 User Guide, Revision A; <!-- StageNow MN-003401; --> Sep., 2020
 
 #### Covers StageNow 5.0
 

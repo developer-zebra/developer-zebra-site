@@ -73,7 +73,7 @@ An Intent extra contains a URI for the DataWedge content provider. The applicati
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Parameter Name</th>
-    <th>Paramter Value</th>
+    <th>Parameter Value</th>
   </tr>
 
   <tr>

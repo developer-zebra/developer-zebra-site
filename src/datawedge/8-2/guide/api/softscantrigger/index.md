@@ -12,10 +12,19 @@ Used to start, stop or toggle a software scanning trigger.
 > **Functional only when Barcode Input is enabled in the active Profile**.
 
 ### Function Prototype
+For single scanner:
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER", "<parameter>");
+
+For multiple scanners, the SOFT_SCAN_TRIGGER intent must include extra "scanner_selection_by_identifier" indicating the scanner to be used:
+
+    Intent i = new Intent();
+    i.setAction("com.symbol.datawedge.api.ACTION");
+    i.putExtra("scanner_selection_by_identifier", "BLUETOOTH_RS6000");
+    i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER", "TOGGLE_SCANNING");
+    sendBroadcast(i);
 
 
 ### Parameters

@@ -7,7 +7,7 @@ productversion: '8.2'
 
 ## Overview
 
-Barcode Input options specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders supported by DataWedge are explained below,  including commonly used decoders: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
+Barcode Input options within the DataWedge profile specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders supported by DataWedge are explained below, including commonly used decoders: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
 
 Barcode Input is used to specify: 
 
@@ -24,17 +24,71 @@ Barcode Input is used to specify:
 -----
 
 ## Scanner Selection
-For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners is based on devices present in (or connected to) the unit being configured. 
-<img alt="" style="height:350px" src="scanner_selection.png"/>
-<br>
+In Barcode Input, the **Scanner selection** panel determines which scanning device to use for data capture. The list of available scanners is based on devices present in (or connected to) the unit being configured. 
 
-The "Auto" option automatically determines the best scanning device from the list of available devices based on the rules below. 
+<table>
+ <tr>
+  <td>
+  <img style="height:350px" src="barcode_input.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="scanner_selection.png"/>
+  </td>
+ </tr>
+</table>
+<i>Scanner Selection</i>
+
+"Auto" is the default scanner selection, automatically determining the best scanning device from the list of available devices based on the rules that follow. 
 
 **Auto Scanner Selection Rules**:
 * If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager is selected. 
 * If no Scan Module is installed, the camera is selected. 
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
+
+**Multiple scanners** can be added, providing the capability to use different scanners interchangeably without the need for manual configuration, such as when an internal scanner and an external Bluetooth scanner is required. Additionally, each scanner can be individually configured. To add a scanner, in the **Scanner Selection** screen tap the top right menu and select **Add new scanner.** A list of available scanners is displayed.
+
+<table>
+ <tr>
+  <td>
+    <img style="height:350px" src="scanner_selection_menu.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+    <img style="height:350px" src="add_scanner.png"/>
+  </td>
+ </tr>
+</table>
+<i>Add new scanner</i>
+
+Select the scanner to add from the list. The selected scanner is then added to the **Scanner Selection** list.
+<img style="height:350px" src="scanner_selected.png"/>
+<i>Selected scanner listed</i>
+
+Long pressing on the scanner category in the **Scanner Selection** screen displays a menu with options to **Configure triggers** or **Delete.** Tap on **Configure Triggers** to display a list of triggers to configure; the options vary depending on the device in use. 
+
+<table>
+ <tr>
+  <td>
+    <img style="height:350px" src="scanner_category_menu.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+    <img style="height:350px" src="select_trigger.png"/>
+  </td>
+ </tr>
+</table>
+<i>Add new scanner</i>
+
+If an external scanner and an internal scanner is selected (regardless of the order added), the internal scanner is given all the triggers by default. The user needs to select the triggers for the external scanner as required. Once a trigger or multiple triggers are assigned to the external scanner, those triggers are removed from the internal scanner. If an external scanner is removed from the scanner selection, the internal scanner is given all the triggers again. If an attempt is made to assign a trigger that is already assigned to a different scanner category, the following message is displayed: 
+
+<img style="height:350px" src="configure_triggers_warning.jpg"/>
+<i>Configure trigger warning</i>
+
 
 -----
 

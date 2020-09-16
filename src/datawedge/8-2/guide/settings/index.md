@@ -201,6 +201,8 @@ Importing a Profile enables settings created elsewhere to quickly be activated o
 
 While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings from an individual profile that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. 
 
+**Note: On a device with an older DataWedge version which does not support multiple scanners (v8.1 or lower), when importing a profile with multiple scanners configured it results to any one of the scanners being selected.** 
+
 **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
 
 **Duplicate Associated Apps when importing profiles**. If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication.

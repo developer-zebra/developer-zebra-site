@@ -38,6 +38,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
 * **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
 * **DataWedge 8.0 -** New secure intent delivery with intent_component_info, new unlicensed error code.
+* **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource.
 
 ### Function Prototype
 
@@ -933,7 +934,12 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 
   <tr>
 	<td>scanner_selection_by_identifier</td>
-	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table</td>
+	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table.<br>See <b>Notes</b> below this table for more information.</td>
+  </tr>
+
+  <tr>
+	<td>scanner_trigger_resource</td>
+	<td>LEFT<br>RIGHT<br>CENTER<br>GUN<br>PROXIMITY<br>KEY_MAPPER_SCAN<br>KEY_MAPPER_L1<br>KEY_MAPPER_R1<br>WIRED_LEFT<br>WIRED_RIGHT<br></td>
   </tr>
 
   <tr>
@@ -1208,6 +1214,15 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
   </tr>
 
 </table>
+
+**Notes related to `scanner_selection_by_identifier`:**
+* Sending "auto" as the scanner identifier within the multiple scanner bundle returns error code "PARAMETER_INVALID" with more detailed error code "AUTO_NOT_SUPPORTED_IN_MULTI_SCANNER_MODE".
+* Sending an unsupported trigger does not return any error code.
+* If the same trigger is assigned to a different scanner in a different scanner category, the scanner that is processed last gets the priority. Processing order of the plugins cannot be guaranteed.
+* Only one internal scanner can be added. If an attempt is made to add another internal scanner, the scanner that is processed last gets the priority. Processing order of the plugins cannot be guaranteed.
+* Although triggers can be set that are not supported by that device, only supported triggers are displayed in the UI.
+* When using multiple scanners, the parameter `scanner_selection_by_identifier` must be used with DataWedge APIs such as SWITCH_SCANNER_PARAMS, SOFT_SCAN_TRIGGER, etc. Otherwise error COMMAND_NOT_SUPPORTED is encountered.
+
 
 -----
 
@@ -3595,6 +3610,50 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	//SetConfig [End] 
 	
 	this.sendBroadcast(iSetConfig); 
+
+### Set Enterprise Keyboard Configuration
+Set and configure multiple scanner support. The scanner parameter list is extended to support multiple configurations by passing an ArrayList to it. With single scanner support, a Bundle data type is passed as the scanner parameter list.
+
+    Bundle bMain = new Bundle();
+    bMain.putString("PROFILE_NAME", "Profile009");
+    bMain.putString("PROFILE_ENABLED", "true");
+    bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+    
+    Bundle bConfig = new Bundle();
+    bConfig.putString("PLUGIN_NAME","BARCODE");
+    bConfig.putString("RESET_CONFIG","true");
+    bConfig.putString("SCANNER_INPUT_ENABLED","true");
+    
+    //LEFT, RIGHT, CENTER, GUN, PROXIMITY
+    //AUTO,INTERNAL_IMAGER,INTERNAL_LASER,INTERNAL_CAMERA,SERIAL_SSI,BLUETOOTH_SSI,BLUETOOTH_RS6000,BLUETOOTH_DS2278,BLUETOOTH_DS3678,PLUGABLE_SSI,PLUGABLE_SSI_RS5000,USB_SSI_DS3608
+    Bundle scanner1Params = new Bundle();
+    scanner1Params.putString("scanner_selection_by_identifier", "INTERNAL_IMAGER");
+    scanner1Params.putStringArray("scanner_trigger_resource", new String[]{"LEFT", "RIGHT"}); //Required triggers
+    scanner1Params.putString("decoder_code11", "true");
+    scanner1Params.putString("decoder_code39", "false");
+    scanner1Params.putString("picklist", "1");
+    
+    Bundle scanner2Params = new Bundle();
+    scanner2Params.putString("scanner_selection_by_identifier", "BLUETOOTH_RS6000");
+    scanner2Params.putStringArray("scanner_trigger_resource", new String[]{"CENTER"}); //Required triggers
+    scanner2Params.putString("decoder_code11", "true");
+    scanner2Params.putString("decoder_code128", "false");
+    scanner2Params.putString("picklist", "2");
+    
+    ArrayList<Bundle> scannerParamList = new ArrayList<>();
+    scannerParamList.add(scanner1Params);
+    scannerParamList.add(scanner2Params);
+    
+    bConfig.putParcelableArrayList("PARAM_LIST", scannerParamList);
+    
+    bMain.putBundle("PLUGIN_CONFIG", bConfig); //true, false
+    Intent i = new Intent();
+    i.setAction("com.symbol.datawedge.api.ACTION");
+    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+    i.putExtra("SEND_RESULT","LAST_RESULT");
+    i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG");
+    this.sendBroadcast(i);
+
 
 -----
 

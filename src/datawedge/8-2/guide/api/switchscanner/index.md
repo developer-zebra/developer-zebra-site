@@ -13,6 +13,8 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 
 The `SWITCH_SCANNER_EX` extra (added in DataWedge 6.6) allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
 
+>Note: SWITCH_SCANNER API is only supported for single scanners and is not supported with use of multiple scanners.
+
 ### Function Prototypes
 
 	Intent i = new Intent();
@@ -98,8 +100,6 @@ The code below shows how to pass an intent to change to scanner "3" from the cur
 	// send the intent
 		this.sendBroadcast(i); 
 
-### Notes
-(none)
 
 -----
 

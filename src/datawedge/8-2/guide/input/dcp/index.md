@@ -10,7 +10,9 @@ Data Capture Plus (formerly known as the "Data Capture Panel") enables areas of 
 
 The DataWedge profile configuration screen allows an app user to configure the appearance of DCP on the screen after a particular Profile is loaded. If the user checks the option to enable the DCP, the five parameters shown below appear on the preference screen and can be configured as desired. [Barcode Input](../input/barcode) must be enabled.
 
-**Note: The DCP will not appear if the scanner is disabled in the active Profile**.
+**Notes:**
+* The DCP does not appear if the scanner is disabled in the active Profile.
+* DCP button only works with one enabled scanner when the profile is configured with multiple scanners.
 
 <img style="height:350px" src="../dcp_settings.png"/>
 _Data Capture Plus options for setting scan triggers_ 

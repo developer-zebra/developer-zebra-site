@@ -23,6 +23,14 @@ DWDemo provides barcode scanning capabilities, demonstrating how data is acquire
 <img style="height:350px" src="dwdemo_launcher.jpg"/>
 <i>Figure 1: DWDemo in Apps screen</i>
 
+**Notes:**
+* When the scan beam is on, pressing the back button in DWDemo does not exit the application - instead, it stops scanning. Pressing the back button again exits the application.
+* When multiple scanners are configured in the profile:
+    * DWDemo button bar is hidden.
+    * After scanning, DWDemo displays the scanner used for scanning in addition to the data decoded.
+    * DWDemo soft trigger button triggers all scanners listed in the Scanner Selection.
+
+
 ##How It Works
 A DataWedge Profile called "DWDemo" is pre-configured in DataWedge and associated with the demo app. The DWDemo Profile must be enabled and can be modified as needed for testing or demo purposes. Once the demo Profile is enabled, tap the app's yellow Scan button or press the device hardware trigger to initiate a barcode scan.  Decoded data is displayed on the app screen. 
 

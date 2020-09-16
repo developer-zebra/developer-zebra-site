@@ -89,6 +89,8 @@ Configure the following actions based on the individual requirements.
 
 -----
 
+## Sample Code
+
 ### Acquire Serial Number 
 
 1. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>

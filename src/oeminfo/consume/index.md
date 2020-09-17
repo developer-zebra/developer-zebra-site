@@ -91,13 +91,13 @@ Configure the following actions based on the individual requirements.
 
 ## Sample Code
 
-Modify the code samples below to suit individual needs. 
+Modify the code samples below to suit individual needs. For more information or to request additional sample URIs, [contact the ZDS team](mailto:ZebraDataAnalytics@zebra.com). 
 
 ### Acquire Serial Number 
 
 1. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>
 
-        String SERIAL_URI** = `content://oem_info/oem.zebra.secure/build_serial`
+        String SERIAL_URI = "content://oem_info/oem.zebra.secure/build_serial";
 2. **Get the data** (in this case the device serial number) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 
 
@@ -139,7 +139,7 @@ Modify the code samples below to suit individual needs.
 
 4. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>
 
-        String IMEI_URI = “content://oem_info/wan/imei”
+        String IMEI_URI = “content://oem_info/wan/imei”;
 5. **Get the data** (in this case the device IMEI number) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
 
         :::java

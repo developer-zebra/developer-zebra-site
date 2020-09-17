@@ -87,7 +87,7 @@ Configure the following actions based on the individual requirements.
 
 
 #### Also See
-[Zebra engineering article: How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx) | AKA "Package signature" step-by-step guide 
+**[How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx)** | Zebra engineering article on the "package signature" 
 
 -----
 

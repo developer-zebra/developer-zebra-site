@@ -85,7 +85,7 @@ Configure the following actions based on the individual requirements.
 3. **Caller Package Name**: Package Name of the third-party app
 4. **Caller Signature**: App certificate of the third-party app
 
-##### [Article: How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx) (also known as a package signature) 
+##### [Zebra engineering article: How to generate a caller signature](https://developer.zebra.com/blog/generating-package-signature-use-mx) (aka "package signature") 
 
 -----
 

@@ -33,6 +33,7 @@ menu:
  * **[Configure OCR-B](/datawedge/7-5/guide/input/barcode#ocrb)** decoding (DataWedge 7.5+)
  * **[Sample app: Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+)
  * **[Sample app: Document capture](/emdk-for-android/7-5/samples/simulscan/)** (EMDK for Android 4.0+)
+ <!-- * **Signature presence checking** (DataWedge 8.2+ - coming soon) -->
 
 >**See the [Transition Roadmap](#transitionroadmap) for estimated availability of additional features**.
 
@@ -43,7 +44,7 @@ menu:
 * The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher.
 * The existing SimulScan APIs and the Template Builder app will no longer be available as of December 31, 2019 (Template Builder is not required for using transitioned SimulScan APIs).
 * A next-gen version of SimulScan will be part of the Zebra Mobility DNA.
-* These Zebra SKUs reach end-of-life on Dec. 31, 2019: 
+* These Zebra SKUs reached end-of-life on Dec. 31, 2019: 
  * `SIMULSCAN_PERM` 
  * `SIMULSCAN_MB_PERM` 
 * All multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x devices at no additional cost
@@ -90,9 +91,6 @@ A: The transitioned SimulScan features will be supported on all Zebra devices wi
 
 **Q: I did not see some of the existing SimulScan features in the Transition Roadmap matrix. Will they ever be supported?**<br> 
 A: If an existing SimulScan feature is not listed in the Transition Matrix, currently there is no plan to support it. However, Zebra will consider supporting missing features on a case-by-case basis if a strong business case exists. Please contact your account manager to request support for missing features.
-
-**Q: Since the last date to buy licenses for existing SimulScan implementations is December 31, 2019, can I continue to purchase licenses until then?**<br>
-A: Yes, but Zebra strongly recommends using the SimulScan features transitioned to Scanning Framework for all new development. Consider moving to the Scanning Framework immediately if a feature is already transitioned. 
 
 **Q: Are there advantages to using the transitioned SimulScan features in the Scanning Framework over the existing stand-alone SimulScan?**<br>
 A: Yes. Transitioned SimulScan features in the Scanning Framework will support all Oreo-based and future devices with built-in camera and imagers. Current SimulScan features support only a handful of devices. Further, SimulScan was not designed to accommodate new and complex features, nor to massively scale. The Scanning Framework was designed for scaling and allows for faster implementation of new scanning features.   Additionally, the transitioned SimulScan will not require a license for most devices. 

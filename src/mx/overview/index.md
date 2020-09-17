@@ -11,13 +11,15 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 ## Version History
 
+The following section lists the major features and enhancements added to the MX versions indicated. 
+
 ### Added in MX 10.1
 
 **MX 10.1 adds the following major features and enhancements**: 
 
-* **Enhanced [Display Manager](/mx/displaymgr)** now allows a Profile to:
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows an admin to:
  * Control device-screen orientation (automatic rotation on/off)
-* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to configure the following file upload actions:
+* **Enhanced [File Manager](/mx/filemgr)** now allows an admin to configure the following file upload actions:
  * Enter a target URI
  * Enter source path and file name
  * Select the upload order (oldest or newest first, or alpha-sorted by file name)
@@ -26,11 +28,11 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
  * Replace the destination file with source if duplicate name
  * Skip copying and remove file from the source
  * Skip copying and keep file at the source
-* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to:
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
  * Control state of Battery Saver mode (on/off)
  * Control Battery Saver Control mode (automatic/manual)
  * Set Battery percentage of charge to automatically turn Battery Saver Mode on
-* **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
+* **Enhanced [UI Manager](/mx/uimgr)** now allows an admin to:
  * Control Battery Percentage display in status bar (show/hide)
 
 -----
@@ -39,7 +41,7 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 **MX 10.0** adds the following major features and enhancements: 
 
-* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to: 
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to: 
  * OS Upgrade via streaming (full-package upgrade only using http or https; supported on Android 10 and later)
  * OS Downgrade via streaming (full-package downgrade only using http or https; supported on Android 10 and later)
 * **Enhanced [Access Manager](/mx/accessmgr)** now allows an admin to: 
@@ -51,7 +53,7 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 ### Added in MX 9.3
 
-* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to:
+* **Enhanced [File Manager](/mx/filemgr)** now allows an admin to:
  * Download a file or files from a redirected URL (i.e. Tiny URL)
  * Download a file from multiple redirected URLs
 * **Enhanced [App Manager](/mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
@@ -216,7 +218,9 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 * **New [DeviceCentral Manager](/mx/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
 * **New [Fota Manager](/mx/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
 
-#### See the [MX Feature Matrix](/mx) for complete feature details 
+<br>
+
+#### See the [MX Feature Matrix](/mx) for complete feature lists 
 
 -----
 

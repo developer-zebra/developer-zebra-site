@@ -302,14 +302,14 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
  * Replace the destination file with source if duplicate name
  * Skip copying and remove file from the source
  * Skip copying and keep file at the source
-* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to:
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
  * Control state of Battery Saver mode (on/off)
  * Control Battery Saver Control mode (automatic/manual)
  * Set Battery percentage of charge to automatically turn Battery Saver Mode on
 * **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
  * Control Battery Percentage display in status bar (show/hide)
 
-#### See the [MX Feature Matrix](/mx) for complete feature details
+#### See the [MX Feature Matrix](/mx) for complete feature lists
 
 #### See [MX version history](/mx/overview/#versionhistory)
 

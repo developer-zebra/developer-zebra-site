@@ -91,7 +91,9 @@ Configure the following actions based on the individual requirements.
 
 ## Sample Code
 
-Modify the code samples below to suit individual needs. For more information or to request additional sample URIs, [contact the ZDS team](mailto:ZebraDataAnalytics@zebra.com). 
+Modify the code samples below to suit individual needs. 
+
+**For more information** or to request additional sample URIs, [contact the Zebra Data Services team](mailto:ZebraDataAnalytics@zebra.com?subject=OEMinfo request). 
 
 ### Acquire Serial Number 
 

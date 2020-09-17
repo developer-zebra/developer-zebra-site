@@ -26,7 +26,7 @@ menu:
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-Information for consumption is made available through **[Data Provider apps](../publish)**. Both app types&ndash;Consumers and Providers&ndash;use the [Zebra Data Provider Interfaces (ZDPIs)](../faq/#whatdoeszdpistandfor) included in the [OEMinfo Content Provider Framework](../faq/#oeminfocontentproviderframework) to consume data and to publish data for consumption. 
+Information for consumption is made available through **[Data Provider apps](../publish)**. Both app types&ndash;Consumers and Providers&ndash;use the [Zebra Data Provider Interfaces (ZDPIs)](../faq/#whatdoeszdpistandfor) included in the **OEMinfo Content Provider Framework** to consume data and/or to publish data for consumption. 
 
 -----
 
@@ -48,10 +48,10 @@ Each content URI includes the authority of the content provider represented as a
 **URIs are broken into four (4) parts** as`<scheme:>//<Authority>/<Provider name>/<API>`
 
 **For example, the URI** `content://oem_info/oem.zebra.secure/build_serial` **can be broken down as follows**: 
-* `content:` is the **scheme**, which tells Android that the URI points to a content provider  
-* `oem_info` is the **authority name** of the content provider
+* `content:` is the **scheme**, which tells Android that the URI points to a content provider.  
+* `oem_info` is the **authority name** of the content provider.
 * `oem.zebra.secure` is the **content provider name** unique within a given authority. Usually a package name.
-* `build_serial` is the **API name** unique within a given package name
+* `build_serial` is the **API name** unique within a given package name.
 
 -----
 

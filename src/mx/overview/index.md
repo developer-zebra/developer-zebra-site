@@ -11,8 +11,6 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 ## Version History
 
-#### See the [MX Feature Matrix](/mx) for complete feature details. 
-
 ### Added in MX 10.1
 
 **MX 10.1 adds the following major features and enhancements**: 
@@ -53,7 +51,7 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 ### Added in MX 9.3
 
-* **Enhanced [File Manager](/mx/filemgr) now allows a Profile to:
+* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to:
  * Download a file or files from a redirected URL (i.e. Tiny URL)
  * Download a file from multiple redirected URLs
 * **Enhanced [App Manager](/mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
@@ -86,7 +84,7 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 * **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
  * Select hardware signals as the device wake-up method
  * Select mappable keycodes as the device wake-up method 
-* **Enhanced [GMS Manager](/mx/gmsmgr) now allows an admin to:
+* **Enhanced [GMS Manager](/mx/gmsmgr)** now allows an admin to:
  * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
 
 -----
@@ -117,7 +115,7 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 -----
 
-### New in MX 8.3
+### Added in MX 8.3
 
 * **New [NFC Manager](/mx/nfcmgr)** CSP adds these new capabilities:  
    * **Enable/Disable**: 
@@ -144,6 +142,81 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 * **Enhanced [Wi-Fi](/mx/wifi) CSP** adds this new feature:
  * Enable/Disable Wi-Fi verbose logging
 * **Enhanced [File Manager](/mx/filemgr)** can download and expand archive files by from a local PC or a server
+
+-----
+
+### Added in MX 8.2
+
+* **Enhanced [UI Manager](/mx/uimgr)** adds these new features: 
+ * Enable/disable long-press on HOME key
+ * Enable/disable date in Notification panel
+ * Enable/disable long press on Recent Apps header icon to control access to app info
+
+----
+
+### Added in MX 8.1
+
+* **Enhanced [Power Manager](/mx/powermgr)** adds these new actions:
+ * Specify an on-device file to verify an OS update
+ * Specify whether to suppress auto-reboot following an A/B upgrade
+* **Enhanced [Battery Manager](/mx/batterymgr)** adds these new actions:
+ * Enable/disable use of Battery Swap Mode UI
+ * Enable/disable “battery charging” LED
+* **Enhanced [Bug Report Manager](/mx/bugreportmgr)** adds a new action:
+ * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
+* **Enhanced [Cellular Manager](/mx/cellularmgr)** adds these new actions:
+ * Enable/disable user access to public land mobile network (PLMN) a device uses
+ * Specify the MCC/MNC network PLMN LockSet
+ * Show/hide PLMN lock UI
+ * Determine the status of PLMN lock UI
+ * Enable/disable Dual SIM Standby
+ * Get the status of DSDS
+* **Enhanced [DHCP Option Manager](/mx/dhcp)** adds these new actions:
+ * Enable/disable requests for a custom DHCP option from server
+ * Request or disable a specified DHCP Option
+ * Enable/disable sending of a custom DHCP Option to server
+ * Send or disable a specified DHCP Option
+ * Send a value with a specified custom DHCP Option
+* **Enhanced [License Manager](/mx/licensemgr)** adds these new actions:
+ * Specify an Activation ID to return a license from the device
+ * Specify server friendly name for returning one or all licenses and for deleting license source
+ * Select the license source type to be used to return one or all licenses
+* **Enhanced [Settings Manager](/mx/settingsmgr)** adds these new actions:
+ * Enable/disable the slide out drawer for accessing Android system settings
+* **Enhanced [UI Manager](/mx/uimgr)** adds these new actions: 
+ * Enable/disable Split Screen mode
+ * Enable/disable Do Not Disturb mode
+ * Enable/disable Multi-user mode
+* **Enhanced [Wi-Fi](/mx/wifi)** adds these new actions:
+ * Enable/disable MAC address randomization
+ * Enable/disable Call Admission Control
+ * Enable/disable user control of Hotspot state (active/inactive)
+
+ -----
+
+### Added in MX 8.0
+
+* **Enhanced [App Manager](/mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [License Manager](/mx/licensemgr)** adds these new actions: 
+ * Select a licensing file to be embedded in the XML
+ * Select a pre-activated license source 
+ * Query product-specific license information
+ * Specify product name to be queried
+ * Select the method used to supply the license .bin file
+* **Enhanced [Power Manager](/mx/powermgr)** adds a new action:
+ * Enable/disable PTT and scan buttons to wake the device from suspend mode 
+* **Enhanced [Settings Manager](/mx/settingsmgr)** adds a new action: 
+ * Enable/disable tethering and portable hotspot features
+* **Enhanced [UI Manager](/mx/uimgr)** adds these new actions:
+ * Enable/disable the Magnification Gesture
+ * Show/hide the Virtual KeyBoard while Physical Keyboard is active
+* **New [AutoTrigger Manager](/mx/autotriggermgr) CSP** is used to configure automatic scan-triggering, which initiates scanning when a scan target is brought within proximity of the device sensor. Currently supports the Zebra PS20 Personal Shopper device only.
+* **New [DeviceCentral Manager](/mx/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
+* **New [Fota Manager](/mx/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
+
+#### See the [MX Feature Matrix](/mx) for complete feature details 
 
 -----
 

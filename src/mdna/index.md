@@ -309,7 +309,9 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 * **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
  * Control Battery Percentage display in status bar (show/hide)
 
-#### See the [MX Feature Matrix](/mx) for feature details. 
+#### See the [MX Feature Matrix](/mx) for complete feature details
+
+#### See [MX version history](/mx/overview/#versionhistory)
 
 -----
 

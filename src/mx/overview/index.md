@@ -7,6 +7,146 @@ layout: guide.html
 
 The MX Management System (MXMS) is an XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. The XML documents used by the framework conform to the [Open Mobile Alliance specification for Client Provisioning](http://www.openmobilealliance.org/wp/) (OMA-CP) and the Microsoft [MSPROV DTD format](https://msdn.microsoft.com/en-us/library/bb737266.aspx) on which it's based ([read more](http://www.advancedinstaller.com/user-guide/wince-winmobile-xmlprov.html)). The framework affords developers and administrators an extensible, efficient, reliable and scalable means to configure and administer devices in their organization. MXMS exposes capabilities provided by the underlying CSPs on a device, which provide uniform access to privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files included with the MDM Toolkit. A DSD tool, loaded with the DSD files for a particular device or set of devices, can generate XML code that when sent to the MXMS running on the device, can change the devices' configuration and/or behavior.
 
+-----
+
+## Version History
+
+#### See the [MX Feature Matrix](/mx) for complete feature details. 
+
+### Added in MX 10.1
+
+**MX 10.1 adds the following major features and enhancements**: 
+
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows a Profile to:
+ * Control device-screen orientation (automatic rotation on/off)
+* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to configure the following file upload actions:
+ * Enter a target URI
+ * Enter source path and file name
+ * Select the upload order (oldest or newest first, or alpha-sorted by file name)
+ * Delete source file(s) after uploading
+ * Name uploaded files using a naming pattern
+ * Replace the destination file with source if duplicate name
+ * Skip copying and remove file from the source
+ * Skip copying and keep file at the source
+* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to:
+ * Control state of Battery Saver mode (on/off)
+ * Control Battery Saver Control mode (automatic/manual)
+ * Set Battery percentage of charge to automatically turn Battery Saver Mode on
+* **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
+ * Control Battery Percentage display in status bar (show/hide)
+
+-----
+
+### Added in MX 10.0
+
+**MX 10.0** adds the following major features and enhancements: 
+
+* **Enhanced [Power Manager](/mx/powermgr)** now allows a Profile to: 
+ * OS Upgrade via streaming (full-package upgrade only using http or https; supported on Android 10 and later)
+ * OS Downgrade via streaming (full-package downgrade only using http or https; supported on Android 10 and later)
+* **Enhanced [Access Manager](/mx/accessmgr)** now allows an admin to: 
+ * Auto-grant permissions to an app to prevent permission "pop-up" to appear on device
+ * Designate a CSP as "Protected" from unauthorized use 
+ * Designate a Function Group (features selected from different CSPs) as "Protected" from unauthorized use
+
+-----
+
+### Added in MX 9.3
+
+* **Enhanced [File Manager](/mx/filemgr) now allows a Profile to:
+ * Download a file or files from a redirected URL (i.e. Tiny URL)
+ * Download a file from multiple redirected URLs
+* **Enhanced [App Manager](/mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
+* **Enhanced [Bluetooth Manager](/mx/bluetoothmgr)** now allows silent pairing using a Bluetooth MAC address or PIN. 
+* **Enhanced [GPRS Manager](/mx/gprsmgr)** APN parameters now support IPv4, IPv6 and the IPv4/IPv6 "dual-stack" protocol.  
+* **Enhanced [KeyMapping Manager](/mx/keymappingmgr)** now supports the "grey" key and W1 and W2 buttons.  
+
+-----
+
+### Added in MX 9.2
+
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows an admin to control device font and display size. 
+* **Enhanced [Access Manager](/mx/accessmgr)** can now: 
+ * Prevent one application from stopping another without explicit permission 
+ * Perform remote device troubleshooting with enhanced visibility and control
+* **Enhanced [Cellular Manager](/mx/cellularmgr)** implements several new device locking mechanisms. 
+* **Enhanced [Keymapping Manager](/mx/keymappingmgr)** now supports: 
+  * Intent extras 
+  * "Rotate" and "minus" keys 
+
+-----
+
+### Added in MX 9.1
+
+* **Enhanced [UI Manager](/mx/uimgr)** now allows an admin to:
+ * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
+* **Enhanced [App Manager](/mx/appmgr)** now allows an admin to:
+ * Erase all data created by an app specified in the Package parameter
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
+ * Select hardware signals as the device wake-up method
+ * Select mappable keycodes as the device wake-up method 
+* **Enhanced [GMS Manager](/mx/gmsmgr) now allows an admin to:
+ * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
+
+-----
+
+### Added in MX 9.0
+
+* **Enhanced [Battery Manager](/mx/batterymgr)** now allows an admin to:
+ * Specify a critically low battery threshold
+* **Enhanced [UI Manager](/mx/uimgr)** now allows an admin to:
+ * Control user access to the Large Key Indicator (MC93 device only)
+ * Turn the Large Key Indicator on or off (MC93 device only)
+
+-----
+
+### Added in MX 8.4 
+
+* **Enhanced [GPRS Manager](/mx/gprsmgr)**  now allows an admin to:
+ * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
+ * Specify APN MVNO Match Data
+* **Enhanced [UI Manager](/mx/uimgr)**  now allows an admin to:
+ * Control user access to the On-Screen Power Button
+ * Control user access to the Status Bar
+* **Enhanced [Wi-Fi](/mx/wifi) CSP** can now enable/disable:
+  * Aggregated MAC Protocol Data Unit (AMPDU)
+  * Gratuitous ARP address resolution protocol
+  * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)
+  * Configuration of Extended WLAN settings
+
+-----
+
+### New in MX 8.3
+
+* **New [NFC Manager](/mx/nfcmgr)** CSP adds these new capabilities:  
+   * **Enable/Disable**: 
+    * NFC radio and its ability to communicate
+    * NFC Data Exchange Format
+    * Peer-to-Peer mode
+    * CPU boost mode
+    * Card Emulation mode
+    * NFC usage when the Android "lock screen" is displayed
+ * Select type A, B, F, or V tags for use
+ * Select communication speed for Types A and B cards (TC55)
+ * Select communication speed for ISO 14443-4 cards (TC75)
+ * Select the Polling mode to balance performance with battery usage
+ * Reset device to default NFC settings
+* **Enhanced [Access Manager](/mx/accessmgr)** adds these new features:
+ * Select the Action to perform for Access to Protected Services
+ * Specify a Service Identifier for a Service
+ * Specify Package Name of a Service Caller
+ * Specify a File name for the Signature of a Caller
+* **Enhanced [Cellular Manager](/mx/cellularmgr)** adds this new feature:
+ * Specify an APN authentication type
+* **Enhanced [KeyMapping Manager](/mx/keymappingmgr)** added this new feature:
+ * Select a key behavior for 'Diamond' mode
+* **Enhanced [Wi-Fi](/mx/wifi) CSP** adds this new feature:
+ * Enable/Disable Wi-Fi verbose logging
+* **Enhanced [File Manager](/mx/filemgr)** can download and expand archive files by from a local PC or a server
+
+-----
+
 ## Definition of Terms
 
 ### Android Open Source Project (AOSP)

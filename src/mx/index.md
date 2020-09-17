@@ -7,6 +7,8 @@ menu:
   items:
     - title: About MX
       url: /mx/overview
+    - title: New in MX
+      url: /mdna/#newinmx101
     - title: Feature Matrix
       url: /mx/compatibility
     - title: Choosing an MX Version

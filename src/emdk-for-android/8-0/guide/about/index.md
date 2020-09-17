@@ -97,13 +97,13 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 **Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)** 
 
 **Now supports MX 9.2**, which adds the following features and enhancements:
-* **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
-* **Enhanced [Display Manager](../../mx/displaymgr)** now allows an admin to control device font and display size. 
-* **Enhanced [Access Manager](../../mx/accessmgr)** can now: 
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to control individual hardware wake up methods (buttons, keycodes) 
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows an admin to control device font and display size. 
+* **Enhanced [Access Manager](/mx/accessmgr)** can now: 
  * Prevent one application from stopping another without explicit permission 
  * Perform remote device troubleshooting with enhanced visibility and control
-* **Enhanced [Cellular Manager](../../mx/cellularmgr)** implements several new device locking mechanisms. 
-* **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports: 
+* **Enhanced [Cellular Manager](/mx/cellularmgr)** implements several new device locking mechanisms. 
+* **Enhanced [Keymapping Manager](/mx/keymappingmgr)** now supports: 
   * Intent extras 
   * "Rotate" and "minus" keys 
 

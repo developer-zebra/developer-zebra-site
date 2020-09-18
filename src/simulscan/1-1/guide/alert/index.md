@@ -33,8 +33,8 @@ Zebra strongly recommends that partners develop a migration plan to DataWedge fo
  * **[Configure signature/image capture](/datawedge/7-5/guide/input/barcode/#decodersignature)** (DataWedge 7.3+)
  * **[Configure OCR-A](/datawedge/7-5/guide/input/barcode#ocra)** decoding (DataWedge 7.5+)
  * **[Configure OCR-B](/datawedge/7-5/guide/input/barcode#ocrb)** decoding (DataWedge 7.5+)
- * **[Document Capture with anchor barcode](/datawedge/8-0/guide/input/barcode/#documentcapturetemplate)** (DataWedge 8+)
- * **[Signature presence checking]()** (DataWedge 8.2+ - coming soon)
+ * **[Document capture with anchor barcode](/datawedge/8-0/guide/input/barcode/#documentcapturetemplate)** (DataWedge 8.0+)
+ * **Signature presence checking** (to be implemented in DataWedge 8.2+, coming soon)
 
 <!--  removed by eng.
 * **[Sample app: Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+)

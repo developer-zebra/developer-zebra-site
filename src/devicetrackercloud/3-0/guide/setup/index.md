@@ -1,12 +1,12 @@
 ---
 title: Install & Setup
 layout: guide.html
-product: Zebra Device Tracker
+product: Device Tracker
 productversion: '3.0'
 ---
 ## Overview
 
-This section discusses installation and configuration of Zebra Device Tracker. The client app (APK file) and web portal URL are supplied by Zebra. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for Device Tracker software deployment to the mobile devices.  
+This section discusses installation and configuration of Device Tracker. The client app (APK file) and web portal URL are supplied by Zebra. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for Device Tracker software deployment to the mobile devices.  
 
 **Installation and configuration on the device:**
 
@@ -50,7 +50,7 @@ The device must be connected to the network during deployment. Use one of the fo
      * Device Administrator mode – use MX to configure the app.
 
 
-When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Zebra Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Zebra Device Tracker is running in the background. 
+When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background. 
 <br><br>
 
 ## Site, Access Point and Device Data

@@ -1,18 +1,18 @@
 ---
 title: Device Management
 layout: guide.html
-product: Zebra Device Tracker
+product: Device Tracker
 productversion: '3.0'
 ---
 
 ## Overview
-Zebra Device Tracker is a role-based solution in which administrators and managers possess additional features and functionality.
+Device Tracker is a role-based solution in which administrators and managers possess additional features and functionality.
 
 ## Administrator/Manager Login
-Administrators and managers are required to login to view and perform actions based on their respective role. Zebra Device Tracker supports a single session for each user login and does not support multiple login sessions. If an admin/manager logs in to multiple browser sessions or devices using the same user login, the login sessions are automatically terminated after a period of time. 
+Administrators and managers are required to login to view and perform actions based on their respective role. Device Tracker supports a single session for each user login and does not support multiple login sessions. If an admin/manager logs in to multiple browser sessions or devices using the same user login, the login sessions are automatically terminated after a period of time. 
 
 To login as administrator or manager:  
-1.	Launch the Zebra Device Tracker app.
+1.	Launch the Device Tracker app.
 2.	If the Check-out feature is enabled, scan a barcode to check-out the device.
 3.	Tap the options menu at the top right and select **Admin/Manager Login.**
 4.	Enter the administrator or manager login credentials.
@@ -68,7 +68,9 @@ After manager login, the dashboard is visible.
 
 ### Dashboard
 The dashboard displays device categories base on device states, along with statistics for each category. For administrators, the dashboard can be displayed for any site selected in the site list, including All Devices (across all sites) or Unassigned Devices. For managers, the dashboard displays information based on the site their device is assigned to. If the manager device is not assigned to a particular site, the dashboard displays information based on all unassigned devices.
-
+<br><br>
+**Note:** In split-screen mode, when the dashboard is displayed in Device Tracker and the app is not in focus, the app displays a blank screen. When Device Tracker is back in focus, the dashboard is displayed as expected.
+<br><br>
 Dashboard categories:
 
 * **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site.  <br>

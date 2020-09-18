@@ -1,12 +1,12 @@
 ---
 title: User Roles
 layout: guide.html
-product: Zebra Device Tracker
+product: Device Tracker
 productversion: '3.0'
 ---
 
 ## Overview
-Zebra Device Tracker features and functionality depend on the role of the user logged in: Associate, Manager, or Administrator.
+Device Tracker features and functionality depend on the role of the user logged in: Associate, Manager, or Administrator.
 <br><br>
 
 ## Administrator Role

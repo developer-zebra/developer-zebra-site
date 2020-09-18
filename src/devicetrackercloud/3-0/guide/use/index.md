@@ -1,7 +1,7 @@
 ---
 title: Device Tracking
 layout: guide.html
-product: Zebra Device Tracker
+product: Device Tracker
 productversion: '3.0'
 ---
 

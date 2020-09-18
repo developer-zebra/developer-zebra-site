@@ -1,16 +1,16 @@
 ---
-title: About Zebra Device Tracker
+title: About Device Tracker
 layout: guide.html
-product: Zebra Device Tracker
+product: Device Tracker
 productversion: '3.0'
 ---
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher significantly upgrades the software to a cloud based solution.<br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower is the on-premise version of the solution, to be replaced by Device Tracker 3.0 in the future..... 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher contains significant changes transforming the software to a cloud-based solution. Therefore, <br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower, the on-premise version, cannot be upgraded to Device Tracker 3.0. 
 </div>
 
 ## Overview
 
-Zebra Device Tracker is a cloud-based scalable solution that easily tracks Zebra Android mobile devices, finds missing devices and helps prevent device inventory shrinkage. Misplaced or lost devices within a facility are tracked by leveraging existing Wi-Fi network infrastructure and utilizing Bluetooth technology and audio chirping to locate devices. When locating a device, Zebra Device Tracker identifies the general area where the device is located based on the Access Point (AP) it is connected to within the facility. The visual proximity indicator relies on Bluetooth beacon transmissions to determine the approximate location of the device. Audio can be played on the misplaced device to further pinpoint its location. 
+Device Tracker is a cloud-based scalable solution that easily tracks Zebra Android mobile devices, finds missing devices and helps prevent device inventory shrinkage. Misplaced or lost devices within a facility are tracked by leveraging existing Wi-Fi network infrastructure and utilizing Bluetooth technology and audio chirping to locate devices. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) it is connected to within the facility. The visual proximity indicator relies on Bluetooth beacon transmissions to determine the approximate location of the device. Audio can be played on the misplaced device to further pinpoint its location. 
 <br><br>
 Main features:
 <br>
@@ -67,7 +67,7 @@ Supported Devices (including GMS and non-GMS versions):
 ## Network Requirements
 
 * The client application sends device status and events to the server over HTTPS.  Network port 443 must be enabled to reach the Google Cloud Firebase platform.
-* Zebra Device Tracker web portal URL, supplied by Zebra, is accessible.
+* Device Tracker web portal URL, supplied by Zebra, is accessible.
 * The following URL is accessible: <br><br>
 
 &nbsp;&nbsp;&nbsp;`https://[ProjectID].firebaseio.com`

@@ -12,7 +12,9 @@ menu:
 ---
 
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>SimulScan Features Being Integrated</h4> <p><b>The most important SimulScan capabilities, including multi-barcode scanning and OCR A/B capture for travel documentation, are being migrated to the internal scanning framework that runs on all Zebra devices</b>. Once complete, capabilities formerly available only through SimulScan will be accessible through DataWedge and Android intent APIs. Therefore, Zebra strongly recommends that partners develop a migration plan to DataWedge for all applications that currently use SimulScan.</p><p><b>Key migration dates</b>:
+<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>SimulScan Features Being Integrated</h4> <p><b>The most important SimulScan capabilities, including document capture, multi-barcode scanning and OCR A/B capture for travel documentation, are being migrated to the internal scanning framework that runs on all Zebra devices</b>. Once complete, capabilities formerly available only through **<u>SimulScan will be known as NextGen SimulScan and be accessible through DataWedge and Android intent APIs</u>**. 
+
+Zebra strongly recommends that partners develop a migration plan to DataWedge for all applications that currently use SimulScan.</p><p><b>Key migration dates</b>:
     </p><ul>
         <li><b>Dec. 31, 2019</b> - Sale of SimulScan licenses ended</li>
         <li><b>Dec. 31, 2020</b> - Support for licensed SimulScan API features ends</li>
@@ -20,7 +22,7 @@ menu:
     </ul>
 </div>
 
-> Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using the transitioned SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use today**. <br>
+> Zebra strongly recommends that customers and partners develop a plan for migrating to DataWedge using NextGen SimulScan APIs for all applications that currently use SimulScan. **Some SimulScan features are already transitioned and available for use today**. <br>
 
 #### Migrated features available now:
 * **Multi-barcode data acquisition** acquires multiple unique barcodes with a single scan and can deliver the data either immediately or after the specified number of barcodes is reached in the session. Multi-barcode data capture is **supported on devices with DataWedge 6.7 and higher**.
@@ -31,9 +33,13 @@ menu:
  * **[Configure signature/image capture](/datawedge/7-5/guide/input/barcode/#decodersignature)** (DataWedge 7.3+)
  * **[Configure OCR-A](/datawedge/7-5/guide/input/barcode#ocra)** decoding (DataWedge 7.5+)
  * **[Configure OCR-B](/datawedge/7-5/guide/input/barcode#ocrb)** decoding (DataWedge 7.5+)
- * **[Sample app: Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+)
+ * **[Document Capture with anchor barcode](/datawedge/8-0/guide/input/barcode/#documentcapturetemplate)** (DataWedge 8+)
+ * **[Signature presence checking]()** (DataWedge 8.2+ - coming soon)
+
+<!--  removed by eng.
+* **[Sample app: Multi-barcode scanning](/emdk-for-android/7-5/samples/multibarcode1/)** (EMDK for Android 6.8+)
  * **[Sample app: Document capture](/emdk-for-android/7-5/samples/simulscan/)** (EMDK for Android 4.0+)
- <!-- * **Signature presence checking** (DataWedge 8.2+ - coming soon) -->
+ -->
 
 >**See the [Transition Roadmap](#transitionroadmap) for estimated availability of additional features**.
 
@@ -41,12 +47,9 @@ menu:
 
 ### More Info
 * All new SimulScan feature requests will be created in the Scanning Framework accessible through DataWedge and intent APIs.
-* The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher.
-* The existing SimulScan APIs and the Template Builder app will no longer be available as of December 31, 2019 (Template Builder is not required for using transitioned SimulScan APIs).
+* NextGen SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and higher.
+* Template Builder for NextGen SimulScan APIs will be available according to the schedule shown in the table below.
 * A next-gen version of SimulScan will be part of the Zebra Mobility DNA.
-* These Zebra SKUs reached end-of-life on Dec. 31, 2019: 
- * `SIMULSCAN_PERM` 
- * `SIMULSCAN_MB_PERM` 
 * All multi-barcode features will be included in TC5x, TC7x, TC8x and MC9x devices at no additional cost
 
 
@@ -77,32 +80,32 @@ A: See the Transition Roadmap above for a list of features that are planned for 
 **Q: Do I need to rewrite my existing SimulScan application to use the transitioned APIs?** <br>
 A: Yes. Applications must be rewritten to use the SimulScan APIs available in Scanning Framework. The intent APIs provided by DataWedge will make this transition quick and easy. 
 
-**Q: Do I need a license to use transitioned SimulScan features in Scanning Framework?**<br> 
+**Q: Do I need a license to use NextGen SimulScan features in Scanning Framework?**<br> 
  A: Maybe. Licensing is not required for any of the SimulScan features being transitioned into the Scanning Framework and APIs for Zebra Enterprise-series devices.  Professional-series devices require purchase of an MDNA Enterprise License to access some NextGen SimulScan features. [Learn more](/licensing). 
 
-**Q: Will the SimulScan transitioned APIs be supported only on DataWedge? What about Enterprise Browser and EMDK**?<br>
-A: DataWedge and intent-API support are the recommended method of programmatically accessing transitioned SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
+**Q: Will NextGen SimulScan APIs be supported only on DataWedge? What about Enterprise Browser and EMDK**?<br>
+A: DataWedge and intent-API support are the recommended method of programmatically accessing NextGen SimulScan features. Enterprise Browser provides features to access DataWedge. There are currently no plans to implement the transitioned features in EMDK APIs.
 
-**Q: What software do I need for using the transitioned SimulScan features to Scanning Framework?**<br>
+**Q: What software do I need for using NextGen SimulScan features to Scanning Framework?**<br>
 A: None. The Scanning Framework is preloaded on all Zebra devices. No additional software is needed.<br>
 
-**Q: Which devices will the transitioned SimulScan features in Scanning Framework support?**<br>
-A: The transitioned SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and later. Some devices running Oreo and Pie might require application of the latest [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
+**Q: Which devices will NextGen SimulScan features in Scanning Framework support?**<br>
+A: NextGen SimulScan features will be supported on all Zebra devices with built-in Imager and/or camera running Android 8.x Oreo and later. Some devices running Oreo and Pie might require application of the latest [LifeGuard updates](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html).
 
 **Q: I did not see some of the existing SimulScan features in the Transition Roadmap matrix. Will they ever be supported?**<br> 
 A: If an existing SimulScan feature is not listed in the Transition Matrix, currently there is no plan to support it. However, Zebra will consider supporting missing features on a case-by-case basis if a strong business case exists. Please contact your account manager to request support for missing features.
 
-**Q: Are there advantages to using the transitioned SimulScan features in the Scanning Framework over the existing stand-alone SimulScan?**<br>
-A: Yes. Transitioned SimulScan features in the Scanning Framework will support all Oreo-based and future devices with built-in camera and imagers. Current SimulScan features support only a handful of devices. Further, SimulScan was not designed to accommodate new and complex features, nor to massively scale. The Scanning Framework was designed for scaling and allows for faster implementation of new scanning features.   Additionally, the transitioned SimulScan will not require a license for most devices. 
+**Q: Are there advantages to using NextGen SimulScan features in the Scanning Framework over the existing stand-alone SimulScan?**<br>
+A: Yes. NextGen SimulScan features in the Scanning Framework will support all Oreo-based and future devices with built-in camera and imagers. Current SimulScan features support only a handful of devices. Further, SimulScan was not designed to accommodate new and complex features, nor to massively scale. The Scanning Framework was designed for scaling and allows for faster implementation of new scanning features.   Additionally, NextGen SimulScan will not require a license for most devices. 
 
 **Q: Some of the transitioned features in the Scanning Framework are in the roadmap but are not currently not available. How soon can I get a beta?** <br>
 A: Please contact your Zebra sales representative for information about accessing early-release software.
 
-**Q: Will the SimulScan Template Builder work with the Transitioned SimulScan?**<br>
-A: No. The existing Template Builder tool will not work with NextGen SimulScan and is not required to make use of the transitioned SimulScan features.
+**Q: Does the SimulScan Template Builder work with NextGen SimulScan?**<br>
+A: No. The existing Template Builder tool will not work with NextGen SimulScan. A new Template Build compatible with NextGen SimulScan will be available according to the schedule shown in the table above.
 
-**Q: Does the SimulScan Template Builder work with NextGen Simulscan?**<br>
-A: No. The Template Builder is no longer available and is not required for using Transitioned SimulScan APIs. 
+**Q: Does the SimulScan Template Builder work with NextGen SimulScan?**<br>
+A: No. The Template Builder is no longer available and is not required for using NextGen SimulScan APIs. 
 
 -----
 

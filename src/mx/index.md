@@ -8,7 +8,7 @@ menu:
     - title: About MX
       url: /mx/overview
     - title: New in MX
-      url: /mx/about/#versionhistory
+      url: /mx/overview/#versionhistory
     - title: Feature Matrix
       url: /mx/compatibility
     - title: Choosing an MX Version

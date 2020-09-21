@@ -18,7 +18,7 @@ For single scanner:
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER", "<parameter>");
 
-For multiple scanners, the SOFT_SCAN_TRIGGER intent must include extra "scanner_selection_by_identifier" indicating the scanner to be used:
+For [multi-scanner](../../input/barcode/#scannerselection) mode, the SOFT_SCAN_TRIGGER intent must include extra `scanner_selection_by_identifier` indicating the scanner to be used:
 
     Intent i = new Intent();
     i.setAction("com.symbol.datawedge.api.ACTION");
@@ -241,6 +241,17 @@ Command and configuration intent parameters determine whether to send result cod
 		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
 
 		};
+
+### Multi-scanner mode
+For [multi-scanner](../../input/barcode/#scannerselection) mode, the Soft Scan Trigger intent is required to include the specific scanner to be used with intent extra "scanner_selection_by_identifier".
+
+    Intent i = new Intent();
+    i.setAction("com.symbol.datawedge.api.ACTION");
+    i.putExtra("scanner_selection_by_identifier", "BLUETOOTH_RS6000");
+    i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER", "TOGGLE_SCANNING");
+    sendBroadcast(i);
+
+
 
 -----
 

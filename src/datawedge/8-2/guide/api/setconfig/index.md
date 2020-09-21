@@ -38,7 +38,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
 * **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
 * **DataWedge 8.0 -** New secure intent delivery with intent_component_info, new unlicensed error code.
-* **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource.
+* **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource, new multi-scanner support.
 
 ### Function Prototype
 
@@ -934,7 +934,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 
   <tr>
 	<td>scanner_selection_by_identifier</td>
-	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table.<br>See <b>Notes</b> below this table for more information.</td>
+	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table.<br>(*) See <b>Notes</b> below this table for more information.</td>
   </tr>
 
   <tr>
@@ -1214,9 +1214,11 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
   </tr>
 
 </table>
+<br>
 
-**Notes related to `scanner_selection_by_identifier`:**
-* Sending "auto" as the scanner identifier within the multiple scanner bundle returns error code "PARAMETER_INVALID" with more detailed error code "AUTO_NOT_SUPPORTED_IN_MULTI_SCANNER_MODE".
+<i>(*) Notes related to `scanner_selection_by_identifier`:</i>
+
+* Sending "auto" as the scanner identifier in the multiple scanner bundle returns error code "PARAMETER_INVALID" with more detailed error code "AUTO_NOT_SUPPORTED_IN_MULTI_SCANNER_MODE".
 * Sending an unsupported trigger does not return any error code.
 * If the same trigger is assigned to a different scanner in a different scanner category, the scanner that is processed last gets the priority. Processing order of the plugins cannot be guaranteed.
 * Only one internal scanner can be added. If an attempt is made to add another internal scanner, the scanner that is processed last gets the priority. Processing order of the plugins cannot be guaranteed.
@@ -3611,8 +3613,8 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	
 	this.sendBroadcast(iSetConfig); 
 
-### Set Enterprise Keyboard Configuration
-Set and configure multiple scanner support. The scanner parameter list is extended to support multiple configurations by passing an ArrayList to it. With single scanner support, a Bundle data type is passed as the scanner parameter list.
+### Set Multi-Scanner Mode
+Set and configure [multi-scanner](../../input/barcode/#scannerselection) mode. The scanner parameter list is extended to support multiple configurations by passing an ArrayList to it. With single scanner support, a Bundle data type is passed as the scanner parameter list.
 
     Bundle bMain = new Bundle();
     bMain.putString("PROFILE_NAME", "Profile009");

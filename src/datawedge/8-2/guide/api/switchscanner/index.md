@@ -13,7 +13,7 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 
 The `SWITCH_SCANNER_EX` extra (added in DataWedge 6.6) allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
 
->Note: SWITCH_SCANNER API is only supported for single scanners and is not supported with use of multiple scanners.
+>Note: SWITCH_SCANNER API is only supported with use of a single scanner and not supported  with multiple scanners.
 
 ### Function Prototypes
 

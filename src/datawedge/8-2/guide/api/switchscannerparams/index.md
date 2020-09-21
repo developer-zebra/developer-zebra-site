@@ -54,6 +54,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 ## Example Code
 
+### Switch scanner parameter in active profile
 The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
 		:::javascript
@@ -95,13 +96,28 @@ The code below passes an intent that switches a scanner parameter for the active
 		    }
 		}
 
-### Notes
+#### Notes
 
 **Pre-conditions and assumptions**:
 
 * DataWedge and the respective Profile must be enabled
 * Barcode scanning should be enabled in the active Profile
 * If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
+
+### Multi-scanner mode
+In [multi-scanner](../../input/barcode/#scannerselection) mode, it is required for Switch Scanner Params API to include the specific scanner to be used with intent extra `scanner_selection_by_identifier`.
+
+    Intent i = new Intent();
+    i.setAction("com.symbol.datawedge.api.ACTION");
+    i.setPackage("com.symbol.datawedge");
+    i.putExtra("scanner_selection_by_identifier", "BLUETOOTH_RS6000");
+    i.putExtra("SEND_RESULT","LAST_RESULT");
+    Bundle bScannerParams = new Bundle();
+    bScannerParams.putString("illumination_mode", "off");
+    i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", bScannerParams);
+    sendBroadcast(i);
+
+
 
 -----
 

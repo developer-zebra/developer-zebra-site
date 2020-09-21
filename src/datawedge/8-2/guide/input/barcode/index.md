@@ -40,15 +40,13 @@ In Barcode Input, the **Scanner selection** panel determines which scanning devi
 </table>
 <i>Scanner Selection</i>
 
-"Auto" is the default scanner selection, automatically determining the best scanning device from the list of available devices based on the rules that follow. 
-
-**Auto Scanner Selection Rules**:
+"Auto" is the default scanner selection, automatically determining the best scanning device from the list of available devices based on the following **Auto Scanner Selection Rules**:
 * If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager is selected. 
 * If no Scan Module is installed, the camera is selected. 
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-**Multiple scanners** can be added, providing the capability to use different scanners interchangeably without the need for manual configuration, such as when an internal scanner and an external Bluetooth scanner is required. Additionally, each scanner can be individually configured. To add a scanner, in the **Scanner Selection** screen tap the top right menu and select **Add new scanner.** A list of available scanners is displayed.
+**Multi-scanner** mode provides the capability to use more than one scanner interchangeably in the same DataWedge profile without the need for manual configuration, such as when an internal scanner and an external Bluetooth scanner is required. Additionally, each scanner can be individually configured within the same profile. To add a scanner, in the **Scanner Selection** screen tap the top right menu and select **Add new scanner.** A list of available scanners is displayed.
 
 <table>
  <tr>
@@ -67,6 +65,8 @@ In Barcode Input, the **Scanner selection** panel determines which scanning devi
 Select the scanner to add from the list. The selected scanner is then added to the **Scanner Selection** list.
 <img style="height:350px" src="scanner_selected.png"/>
 <i>Selected scanner listed</i>
+
+If **Scanner selection** is set to **Auto**, all scanners are removed from the list.
 
 Long pressing on the scanner category in the **Scanner Selection** screen displays a menu with options to **Configure triggers** or **Delete.** Tap on **Configure Triggers** to display a list of triggers to configure; the options vary depending on the device in use. 
 

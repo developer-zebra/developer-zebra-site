@@ -287,27 +287,39 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 
 -----
 
-## New in MX 10.1
+## New in MX 10.2
 
-**MX 10.1 adds the following major features and enhancements**: 
+**MX 10.2 adds the following major features and enhancements**: 
 
-* **Enhanced [Display Manager](/mx/displaymgr)** now allows a Profile to:
- * Control device-screen orientation (automatic rotation on/off)
-* **Enhanced [File Manager](/mx/filemgr)** now allows a Profile to configure the following file upload actions:
- * Enter a target URI
- * Enter source path and file name
- * Select the upload order (oldest or newest first, or alpha-sorted by file name)
- * Delete source file(s) after uploading
- * Name uploaded files using a naming pattern
- * Replace the destination file with source if duplicate name
- * Skip copying and remove file from the source
- * Skip copying and keep file at the source
-* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
- * Control state of Battery Saver mode (on/off)
- * Control Battery Saver Control mode (automatic/manual)
- * Set Battery percentage of charge to automatically turn Battery Saver Mode on
-* **Enhanced [UI Manager](/mx/uimgr)** now allows a Profile to:
- * Control Battery Percentage display in status bar (show/hide)
+* **New [Beacon Manager](/mx/beaconmgr) CSP: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+* **New [Access Manager](/mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](/mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](/mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](/mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Power Manager](/mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [Touch Manager](/mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](/mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](/mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
 
 #### See the [MX Feature Matrix](/mx) for complete feature lists
 

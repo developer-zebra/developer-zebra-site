@@ -299,7 +299,7 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
  * Configure single pairing of accessories 
  * Define trusted devices
  * Enhancements to silent pairing rules  
-* **New [Clock](clock) features**: 
+* **New [Clock](/mx/clock) features**: 
  * Enter date and time in local or Universal Coordinate format  
 * **New [Display Manager](/mx/displaymgr) features**: 
  * Control automatic screen rotation 

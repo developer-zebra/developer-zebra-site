@@ -13,6 +13,40 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 The following section lists the major features and enhancements added to the MX versions indicated. 
 
+### Added in MX 10.2
+
+**MX 10.2 adds the following major features and enhancements**: 
+
+* **New [Beacon Manager](/mx/beaconmgr) CSP: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+* **New [Access Manager](/mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](/mx/clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](/mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](/mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](/mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Power Manager](/mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [Touch Manager](/mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](/mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](/mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
+
 ### Added in MX 10.1
 
 **MX 10.1 adds the following major features and enhancements**: 

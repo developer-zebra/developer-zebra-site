@@ -36,7 +36,7 @@ features:
  - image-location: left
    title: MX 10.1 latest features
    description: MX 10.1 delivers powerful new features. Display Manager now controls automatic screen rotation; File Manager now offers more control over uploads, including sort order, file-naming patterns and deletion of source or target; Power Manager now controls battery saver mode; and UI Manager can display or hide battery-charge percentage.
-   url: /mdna/#newinmx101
+   url: /mdna/#newinmx102
    button_text: Full List of What's New
    video: BzLDGvai0us
    video_type: youtube
@@ -291,11 +291,11 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 
 **MX 10.2 adds the following major features and enhancements**: 
 
-* **New [Beacon Manager](/mx/beaconmgr) CSP: 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
  * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Access Manager](/mx/accessmgr) features**: 
  * Enter the Token received from a caller 
-* **New [Bluetooth Manager](/mx/bluetoothmgr) features: 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Configure single pairing of accessories 
  * Define trusted devices
  * Enhancements to silent pairing rules  

@@ -212,8 +212,5 @@ To perform a device search:
 
 ## See Also
 
-* [About Device Tracker](../about)
 * [Install & Setup](../setup)
-* [Admin View](../admin)
-* [Configuration](../config)
-* [Troubleshooting & FAQ](../troubleshooting)
+* [Device Tracking](../use) 

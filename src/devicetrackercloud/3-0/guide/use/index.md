@@ -138,8 +138,6 @@ Choose one of the following options to Check-In a device:<br><br>
 
 ## See Also
 
-* [Install](../setup)
-* [Usage Guide](../usage)
-* [Device Central Manager CSP](/mx/devicecentralmgr) - configures Device Central settings
-* [Bluetooth Manager CSP](/mx/bluetoothmgr) - controls whether a device can pair with other Bluetooth devices
+* [Install & Setup](../setup)
+* [Device Management](../mgmt)
 

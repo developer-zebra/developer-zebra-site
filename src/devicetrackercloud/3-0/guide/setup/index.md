@@ -252,8 +252,5 @@ Only barcodes that begin with the specified prefix can initiate the checkout.
 
 ## See Also
 
-* [About Device Tracker](../about)
-* [Admin View](../admin)
-* [Device Tracking](../mgmt)
-* [Configuration](../config)
-* [Troubleshooting & FAQ](../troubleshooting)
+* [Device Management](../mgmt)
+* [Device Tracking](../use) 

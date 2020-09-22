@@ -39,24 +39,23 @@ _Click image to enlarge; ESC to exit_.
 <img alt="image" style="height:400px" src="sn5_02.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-3. Click confirm to accept automatically generate access key to continue: 
+3. **Click "confirm"** to accept automatically generated access key to continue: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-4. If necessary, **check the required boxes to filter search results** and display images of desired target device(s). **Click the "Show Results" button**. 
+4. **Enter Zebra OneCare login credentials**: 
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-5. **Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images. 
+5. **Click "Allow"** to load the LifeGuard image database:
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-
-
-<img alt="image" style="height:400px" src="sn5_07.png"/>
+6. **Wait a few moments** for LifeGuard images to load:
+<img alt="image" style="height:200px" src="sn5_07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-
+7. When a screen similar to the image below appears **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -65,6 +64,7 @@ _Click image to enlarge; ESC to exit_.
 <img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 -->
+
 ----- 
 
 ### II. Create a Smart Profile
@@ -91,6 +91,12 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
+
+**Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images.
+
+If necessary, **check the required boxes to filter search results** and display images of desired target device(s). **Click the "Show Results" button**.
+
+
 
 5. **do this**. Then **do that**:
 <img alt="image" style="height:400px" src="sn5_09.png"/>

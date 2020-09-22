@@ -30,7 +30,7 @@ menu:
   items:
     - title: About
       url: /stagenow/5-0/about
-    - title: Get Started
+    - title: Start
       url: /stagenow/5-0/gettingstarted
     - title: Install
       url: /stagenow/5-0/installing
@@ -42,7 +42,7 @@ menu:
       url: /stagenow/5-0/settingconfig
     - title: Setting Types
       url: /stagenow/5-0/settingtypes
-    - title: Staging Guides
+    - title: Guides
       url: /stagenow/5-0/stagingguides
     - title: Troubleshoot
       url: /stagenow/5-0/troubleshooting

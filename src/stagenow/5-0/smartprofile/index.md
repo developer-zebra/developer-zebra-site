@@ -35,28 +35,24 @@ productversion: '5.0'
 <img alt="image" style="height:400px" src="sn5_01.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> Log in with Zebra OneCare credentials, if prompted. 
+2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> 
 <img alt="image" style="height:400px" src="sn5_02.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-3. If necessary, **check the required boxes to filter search results** and display images of desired target device(s). 
+3. Click confirm to accept automatically generate access key to continue: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-4. **Click the "Show Results" button**. 
-<img alt="image" style="height:400px" src="sn5_04.png"/>
+4. If necessary, **check the required boxes to filter search results** and display images of desired target device(s). **Click the "Show Results" button**. 
+<img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 5. **Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images. 
 
-<img alt="image" style="height:400px" src="sn5_05.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+
 
 <img alt="image" style="height:400px" src="sn5_07.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -65,35 +61,6 @@ _Click image to enlarge; ESC to exit_.
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
-
-<img alt="image" style="height:400px" src="sn5_09.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_10.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_11.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_12.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_13a.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_13b.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-<img alt="image" style="height:400px" src="sn5_14.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
 
 <!-- this is the montage image
 <img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
@@ -126,9 +93,42 @@ _Click image to enlarge; ESC to exit_.<br>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-> Next steps here. 
+5. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_09.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 
-#### Whiz, bang... smart profile is made. 
+6. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_10.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+7. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_11.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+8. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_12.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+9. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_13a.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+10. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_13b.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+11. **do this**. Then **do that**:
+<img alt="image" style="height:400px" src="sn5_14.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+#### Bang, zoom... smart profile is made. 
 
 <!-- 
 

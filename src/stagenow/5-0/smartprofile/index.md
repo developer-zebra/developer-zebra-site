@@ -48,7 +48,6 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 5. **Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images. 
-
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>

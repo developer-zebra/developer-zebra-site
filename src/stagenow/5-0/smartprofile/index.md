@@ -32,14 +32,73 @@ productversion: '5.0'
 #### To select LifeGuard image(s):
 
 1. From the "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane. 
+<img alt="image" style="height:400px" src="sn5_01.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> Log in with Zebra OneCare credentials, if prompted. 
+<img alt="image" style="height:400px" src="sn5_02.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 3. If necessary, **check the required boxes to filter search results** and display images of desired target device(s). 
+<img alt="image" style="height:400px" src="sn5_03.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 4. **Click the "Show Results" button**. 
+<img alt="image" style="height:400px" src="sn5_04.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
 5. **Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images. 
 
+<img alt="image" style="height:400px" src="sn5_05.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+
+<img alt="image" style="height:400px" src="sn5_06.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_07.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_08.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_09.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_10.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_11.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_12.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_13a.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_13b.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+<img alt="image" style="height:400px" src="sn5_14.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+
+
+<!-- this is the montage image
 <img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
 _Click image to enlarge; ESC to exit_.<br>
-
+-->
 ----- 
 
 ### II. Create a Smart Profile

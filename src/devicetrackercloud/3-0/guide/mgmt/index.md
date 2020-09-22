@@ -130,7 +130,7 @@ Tap and hold on any device card to display the available device actions:
 * **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
 <img style="height:350px" src="device-action-menu.png" />
 <i>Device action menu</i><!-- -->
-
+<br><br>
 Tap on any device card to display the **Device Details** screen:
 
 * **Friendly name –** displays the assigned friendly device name as registered by the administrator

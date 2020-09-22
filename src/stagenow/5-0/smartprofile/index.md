@@ -35,29 +35,36 @@ productversion: '5.0'
 <img alt="image" style="height:400px" src="sn5_01.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+<br>
 2. **Click the "Browse for LifeGuard Updates" button** at the top of the screen.<br> 
 <img alt="image" style="height:400px" src="sn5_02.png"/>
 _Click image to enlarge; ESC to exit_.
+<br>
 <br>
 3. **Click "confirm"** to accept automatically generated access key to continue: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+<br>
 4. **Enter Zebra OneCare login credentials**: 
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
+<br>
 <br>
 5. **Click "Allow"** to load the LifeGuard image database:
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+<br>
 6. **Wait a few moments** for LifeGuard images to load:
 <img alt="image" style="height:200px" src="sn5_07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
+<br>
 7. When a screen similar to the image below appears **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
+<br>
 <br>
 
 <!-- this is the montage image

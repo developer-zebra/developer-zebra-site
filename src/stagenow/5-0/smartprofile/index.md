@@ -121,20 +121,22 @@ _Click image to enlarge; ESC to exit_.<br>
 <img alt="image" style="height:400px" src="sn5_13ab.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-10. **Select the desired publishing medium and click the "Test" or Publish" button:<br>
- * **Barcode generates a barcode that executes the Smart Profile on any device that scans it**.<br> * **NFC or USB generates a `.bin` file that can be consumed by the StageNow app on devices**.
+10. **Select the desired publishing medium and click the "Test" or Publish" button**:<br>
+ * **"Barcode" generates one or more barcodes that executes the Smart Profile on any device that scans it**. 
+ * **"NFC/SD/USB" generates a** `.bin` **file to be consumed on devices by the StageNow app**.
 <img alt="image" style="height:400px" src="sn5_14.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
 
-#### Smart Profile creation is complete. Deploy published media to target devices as required. 
+#### Smart Profile creation is complete. After testing, deploy published staging media as required. 
 
 -----
 
 ### Notes
 
 * **Zebra strongly recommends testing ALL Profiles before deployment in production environments**.  
-* StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen <u> only while the screen is visible</u>. **Exiting the My LifeGuard Updates screen cancels all downloads in progress**.
+* StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen **<u>only while the screen is visible</u>**. 
+* **Exiting the My LifeGuard Updates screen cancels all downloads in progress**.
 
 -----
 

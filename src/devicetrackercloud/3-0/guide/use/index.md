@@ -37,7 +37,7 @@ To start the search process:
 <img style="height:350px" src="device-action-menu.png" /><i>Device action menu</i> <br>
 _Or,_<br>
 Tap on the device card for the target device to open the <b>Device Details</b> screen. Scroll down and tap <b>Start Finding.</b>
-<img style="height:350px" src="start-finding.jpg" /><i>Tap "Start Finding" in Device Details</i>    
+<img style="height:350px" src="start-finding.png" /><i>Tap "Start Finding" in Device Details</i>    
 
 2.	The device tracking screen appears. The device state is changed to **Being Found.**
 3.	Check the **Connected AP** on the tracking screen on the target device. Walk towards the known location of the AP.
@@ -82,7 +82,7 @@ To add or edit a note:
 
 1.	From the device list of any category accessed from the dashboard, tap and hold the device card and tap **Add a Note.** If a note already exists, the option is provided to **Edit a Note.**
 2.	The **Note** section appears in the **Device Details** screen prompting to enter in text.
-<img style="height:350px" src="note.jpg" /><i>Enter a note or comment</i>  
+<img style="height:350px" src="note.png" /><i>Enter a note or comment</i>  
 
 3.	After entering text for the note, tap the back button.
 4.	The note is saved and can be viewed in the **Device Details** screen.

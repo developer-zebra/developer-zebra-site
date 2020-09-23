@@ -16,19 +16,19 @@ This section discusses installation and configuration of Device Tracker. The cli
 4.	**Deploy server settings** to communicate with the cloud server.  
 
 
-Steps 1 to 3 can be accomplished by creating a StageNow installation profile and step 4 by creating a StageNow configuration profile. See the Appendix for step-by-step instructions on creating each profile.
+Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#createstagenowinstallationprofile) and step 4 by creating a [StageNow configuration profile](#createstagenowconfigurationprofile). 
 <br><br>
 
 **Configuration of the Device Tracker solution:**
 
-* **Create/Manage admin and manager logins –** Administrators use the web portal to: 
+* **[Create/Manage admin and manager logins](#webportal) –** Administrators use the web portal to: 
     * Add/Delete administrators
     * Add/Delete site managers
     * Reset passwords
-* **Configure access points -** Register access point location to identify which AP the device is connected to and aid in locating the device.
+* **[Configure access points](#siteaccesspointanddevicedata) -** Register access point location to identify which AP the device is connected to and aid in locating the device.
     * Assign friendly name to access point based on the AP physical location on site
     * Assign site location – to identify which site the AP belongs
-* **Configure devices -** Register device information to identify the devices. 
+* **[Configure devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices. 
     * Assign friendly name
     * Assign a site location 
 
@@ -36,18 +36,148 @@ Steps 1 to 3 can be accomplished by creating a StageNow installation profile and
 
 **Configure the Check-out feature _(optional)_:**
 
-* **Enable/Disable check-out –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning and end of their work shift to check-out and check-in their device.
-* **Add/Modify barcode prefix** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
+* **[Enable/Disable check-out](#devicecheckout) –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning and end of their work shift to check-out and check-in their device.
+* **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 * Generate user barcodes for check-out, if needed.
 <br>
 <br>
 
+## Create StageNow Profiles
+
+This section provides procedures to create StageNow Installation and Configuration profiles. StageNow version 4.2 or higher is required.  See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow](/stagenow/latest/about/) for the install file and more information.
+
+### Create StageNow Installation Profile
+
+Create a StageNow installation profile to perform the following:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. **Install the Device Tracker client APK file.**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. **Disable battery optimization** to permit the client app to continue running in the background even while the system is in doze mode while in long suspended state.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. _[Optional]_ If using the **Check-out feature** to enforce users to scan their unique barcode prior to accessing the device, automatically allow the overlay permission for device check-out without manual intervention. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. **Start the app.**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. **Add a delay** (minimum of 5 seconds) to allow time for the app to be ready to accept the configurations before implementing the StageNow configuration profile. <br>
+
+For part C, the client app certificate must be extracted.  Perform the steps in section **Extract Client App Certificate** below before proceeding.
+
+**To create a StageNow installation profile:**
+
+1.	Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
+2.	In the StageNow home screen, click **Create New Profile** from the left menu.
+3.	Ensure MX version 8.0 or higher is selected at the top drop-down selector. The MX version on the device should match this or higher. See [MX documentation](/mx/mx-version-on-device/) for instructions how to check the version. If automatically bypassing the overlay permission for Check-out, select MX 10.0 or higher.
+4.	Select **Xpert Mode** from the list and click **Create.**
+<img src="wizard-selection.jpg" /><i>Wizard selection</i>  
+
+5.	Enter the profile name. Click **Start.**
+6.	If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side. 
+7.	Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side. 
+8.	Repeat step 7 again. AppMgr is listed twice in the Config tab.
+9.	If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds AccessMgr to the Config tab on the right side.
+10.	Repeat step 7 again.  AppMgr is listed in the Config tab.
+11.	Scroll to find **ConditionMgr** and click the plus (+) sign next to it.  This adds ConditionMgr to the Config tab on the right side.
+<img src="config-added.jpg" /><i>List of config settings added</i>  
+
+12.	Click **Add.**
+13.	If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 14.<br>
+_StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **File Action:** Transfer/Copy File<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Access Method:** File in the device file system<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Path and File Name:** <enter file path><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source Access Method:** [select applicable method]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source File URI:** [enter information prompted]<br>
+Click **Continue.**
+14.	_StageNow Config 2_ – Install the client app. For the first **AppMgr,** select the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Install<br>
+Enter/select the desired options for the remaining fields.  Click **Continue.**
+15.	_StageNow Config 3_ – Battery Optimization. For the second **AppMgr,** enter/select the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Application for Battery Optimization<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Remove Application for Battery Optimization:** com.zebra.devicetrackercloud<br>
+Click **Continue.**
+16.	_StageNow Config 4_ – Grant overlay permission. For **AccessMgr,** enter the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Access Action:** Grant Permission to an Application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** System Alert Window<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.devicetrackercloud<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <b>Extract Client App Certificate</b> below)]<br>
+17.	_StageNow Config 5_ – Launch app. For the third AppMgr, enter/select the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Launch an application<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Name:** Device Tracker<br>
+Click **Continue.**
+18.	_StageNow Config 6_ – Add a delay for the app to be ready to accept configurations. In the **ConditionMgr** screen under the “Create New Setting” tab, enter/select the following: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Data Type:** Integer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Integer System Value:** Battery Level<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Integer Condition Test:** Equal-to a Constant Integer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Integer Constant Value:** 0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Condition Met Action:** Success<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Condition Not Met Action:** Retry<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Condition Repeat Count:** 5<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Condition Repeat Interval:** 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Condition Fail Message:** [enter message text]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Suppress the error message:** enable<br>
+This sets the condition such that if the battery level is not 0, it retries 5 times with an interval of 1 second for each retry.  The end result is a 5 second delay.
+19.	Click **Complete Profiles.** Profile creation is complete.
+<br><br>
+
+Perform **one** of the following steps based on the staging method. Ensure devices are connected to the network during the staging process:
+
+* **StageNow:** Generate the barcode.  Open StageNow on the device and scan the barcode to deploy the app.<br>
+* **EMM:** Click on **Export the XML for MDM.** Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app and grant all required permissions.
+<!-- 
+* Device Owner mode – use [OEMConfig](/oemconfig) to configure the app
+* Device Administrator mode – use [MX](/mx/overview/) to configure the app -->
+<br>
+
+#### Extract Client App Certificate
+
+This section is a pre-requisite to create the StageNow installation profile. Prior to automatically granting the screen overlay permission, the Device Tracker certificate must be extracted. Automatically granting the screen overlay permission avoids the screen overlay detected warning from appearing to the user. 
+
+Steps to extract the client app certificate:
+
+1.	Download SigTools.jar from [Zebra’s App Signature Tools](https://techdocs.zebra.com/emdk-for-android/latest/samples/sigtools/).
+2.	Follow the instructions provided from the link to extract the certificate from Device Tracker’s APK file using command:
+
+        java -jar SigTools.jar GetCert -INFORM APK -OUTFORM DER -IN [filename.apk] -OUTFILE [filename.crt]
+
+where _[filename.apk]_ is the full path and file name of the Device Tracker APK install file and _[filename.crt]_ is the designated certificate file name.  The file extensions should be preserved in both file names.
+3.	The certificate file is extracted as the CRT file. 
+The certificate file is needed to create the StageNow Installation Profile.
+<br><br>
+
+### Create StageNow Configuration Profile
+Create a StageNow configuration profile to apply server settings in the app client for it to communicate with the server. The server configuration XML file is required, supplied by Zebra.
+
+Steps to create a StageNow configuration profile:
+
+1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
+2. In the StageNow home screen, click **Create New Profile** from the left menu.
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device/) for instructions how to check the version. Select **Xpert Mode** from the list and click **Create.**
+<img src="wizard-selection.jpg" /><i>Wizard selection</i>  
+
+4. Enter the profile name. Click **Start.**
+5. Click **Add.** 
+6. Click **Start.**
+7. Find **Batch** and click the plus (+) sign next to it. This adds **Batch** to the Config tab on the right side.
+<img src="config-added-batch.jpg" /><i>List of config setting added</i>  
+
+8.	Click **Add.** In the Batch screen, select the following:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch Action:** Execute Batch<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch File Type:** XML File<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch File Access Method:** File embedded in XML<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **XML File Data:** [browse to the server configuration XML file supplied from Zebra services]<br>
+9.	Click **Continue.**
+10.	Click **Complete Profiles.**  
+<br>
+
+Perform **one** of the following based on the staging method.  Ensure devices are connected to the network during the staging process:
+
+* **StageNow:** Generate the barcode.  Open StageNow on the device and scan the barcode to deploy the app.
+* **EMM:** Click on **Export the XML for MDM.** Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app and grant all required permissions.
+<br>
+
+**Note:** If an enterprise reset is performed on the device, the server settings must be re-applied for communication with the server.
+
+
 ## Device Deployment
 The device must be connected to the network during deployment. Use one of the following methods based on the desired tool for device deployment:
 * **StageNow:** Open StageNow client on the device and scan the barcodes generated from the installation and configuration profiles. See Appendix. 
-* **EMM:** Export each StageNow XML file from the StageNow installation and configuration profiles (see Appendix). Do not edit the XML file - it can cause unexpected behavior.  Send the XML using one of the following methods based on the mode: 
-     * Device Owner mode – use OEMConfig to configure the app.
-     * Device Administrator mode – use MX to configure the app.
+* **EMM:** Export each StageNow XML file from the StageNow installation and configuration profiles (see Appendix). Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions.
 
 
 When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background. 
@@ -159,7 +289,7 @@ To delete device data, import the device .CSV file containing the specific data 
 6.	Under the section **Import Delete Device CSV File,** tap **Upload CSV.**  
 7.	The specified device data is removed from the system.  Results are displayed in the **Status** section at the bottom of the screen.  
 8. Reboot the device for which the data is being deleted. After reboot, the device is listed in the **Unassigned Devices** category in the dashboard.
-<br>
+<br><br>
 
 ## Web Portal
 The web portal provides administrators the capabilities to: 
@@ -246,6 +376,46 @@ To set the barcode prefix:
 Only barcodes that begin with the specified prefix can initiate the checkout.
 <br>
 <br>
+
+## Diagnostics
+For diagnostic purposes, logging can be enabled in Device Tracker to capture application and system information to Android logcat. [RxLogger](/rxlogger) is a built-in tool on Zebra Android devices that collects data and event logs from logcat and stores them in a single location. If issues are encountered, a Zebra representative may request for the log files to be collected and supplied.  <br<br>
+There are 2 methods to capture logging: StageNow or EMM.
+
+### StageNow
+To use StageNow to capture logging:
+1.	Open StageNow on the device. 
+2.	Scan the barcode to enable Device Tracker logging and start RxLogger log capture:
+<img style="height:150px" src="start-rxlogger.png"/>
+
+3.	Reproduce the issue.
+4.	Scan the barcode to disable Device Tracker logging and stop RxLogger log capture:
+<img style="height:150px" src="stop-rxlogger.png"/>
+<br>
+
+Logs are located in the RxLogger folder (default location: /sdcard/RxLogger).
+<br>
+
+### EMM
+To use EMM to capture logging, refer to the following XML content:
+
+* To enable logging:
+
+        <wap-provisioningdoc>
+        <characteristic version="1.0" type="com.zebra.devicetrackercloud">
+            <parm name="EnableLog" value="1" />
+        </characteristic>
+        </wap-provisioningdoc>
+
+* To disable logging:
+
+        <wap-provisioningdoc>
+        <characteristic version="1.0" type="com.zebra.devicetrackercloud">
+            <parm name="EnableLog" value="0" />
+        </characteristic>
+        </wap-provisioningdoc>
+
+Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
+<br><br>
 
 <!-- -->
 -----

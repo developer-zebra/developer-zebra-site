@@ -5,7 +5,7 @@ product: Device Tracker
 productversion: '3.0'
 ---
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher contains significant changes transforming the software to a cloud-based solution. It is not compatible with the previous version. Therefore, <a href="/devicetracker/2-3/guide/about">Device Tracker Basic 2.3.1</a> or lower (the on-premise version) cannot be upgraded to Device Tracker 3.0. <br><br>For access to Device Tracker 3.0, contact your local Zebra account manager.
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher contains significant changes transforming the software to a cloud-based solution. <a href="/devicetracker/2-3/guide/about">Device Tracker Basic 2.3.1</a> or lower (the on-premise version) cannot be upgraded to Device Tracker 3.0 since they are incompatible. <br><br>For access to Device Tracker 3.0, contact your local Zebra account manager.
 </div>
 
 ## Overview

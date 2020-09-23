@@ -61,7 +61,8 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-7. When a screen similar to the image below appears **[proceed to Section II](#iicreateasmartprofile)**. 
+7. On the "Browse for LifeGuard Updates" (shown below), **check the required boxes to filter search results** to display images of target device(s) as required.<br>**Then click the "Show Results" button** to display the filtered list.<br>Then **click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
+When the image list appears as desired, **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -82,15 +83,16 @@ When creating a Smart Profile, StageNow examines the selected LifeGuard image, c
 
 #### To create a Smart Profile:
 
-1. From the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen, **click "My LifeGuard Updates"** in the left-hand pane:  
+1. To bring up the "My LifeGuard Updates" page (if necessary), **click "My LifeGuard Updates"** in the left-hand pane of the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. On the "My LifeGuard Updates" page, **click the cloud icon of the desired image** (as shown below) to begin a download.<br> Multiple images can be downloaded simultaneously, but **exiting the download screen cancels all remaining downloads**.
+2. From the "My LifeGuard Updates" page, **click the cloud icon of the desired image** to begin a download. **To use a file already downloaded (indcated by a "check mark" in the image files column)**, skip to the next step.<br>
+`IMPORTANT:` Multiple images can be downloaded simultaneously, but **exiting the download screen cancels all current downloads**.
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. <u>When the download completes</u>, **click the Plus (+) symbol** to create a new Smart Profile:  
+3. <u>After a file has been downloaded</u>, **click the Plus (+) symbol** to create a new Smart Profile:  
  <img alt="image" style="height:350px" src="sn50_smartprofile_04.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -98,11 +100,6 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-
-**Click the icon in the "Add to My LifeGuard Updates" column** to select the desired images.
-
-If necessary, **check the required boxes to filter search results** and display images of desired target device(s). **Click the "Show Results" button**.
-
 
 
 5. **do this**. Then **do that**:

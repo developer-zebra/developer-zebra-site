@@ -32,9 +32,11 @@ Hardware features tested:
 * Fixed Issues:
      * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
      * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
-* Known Issue - When a battery test is performed, improper values may be displayed on the following devices:
-     * Devices that require AC Power to operate (no battery exists), such as CC605 and CC610
-     * ET50 devices - the part number, serial number and manufactured date may display improperly
+* Known Issues:
+     * On Android 10 WWAN devices, if a sim card is not inserted and a WWAN test is performed, improper values may be returned for Voice state.
+     * When a battery test is performed, improper values may be displayed on the following devices:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Devices that require AC Power to operate (no battery exists), such as CC605 and CC610<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• ET50 devices - the part number, serial number and manufactured date may display improperly
 
 ## Version History
 

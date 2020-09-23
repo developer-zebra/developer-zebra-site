@@ -61,7 +61,9 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-7. On the "Browse for LifeGuard Updates" (shown below), **check the required boxes to filter search results** to display images of target device(s) as required.<br>**Then click the "Show Results" button** to display the filtered list.<br>Then **click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
+7. **Check the required boxes to filter search results**.<br>
+**Click the "Show Results" button** to display the filtered list.<br>
+Then **click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
 When the image list appears as desired, **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -117,15 +119,15 @@ _Click image to enlarge; ESC to exit_.<br>
 <img alt="image" style="height:400px" src="sn5_12.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-9. **Select the desired options to test or publish** the Smart Profile:
-<img alt="image" style="height:400px" src="sn5_13ab.png"/>
+9. **Select the desired publishing medium and click the "Test" or Publish" button**:<br>
+ * **<u>Barcode</u>** generates one or more barcodes that execute the Smart Profile on any device that scans it. 
+ * **<u>NFC/SD/USB</u>** generates a `.bin` file to be consumed on devices by the StageNow app.<br>
+ [See more about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)<br>
+<img alt="image" style="height:400px" src="sn5_14.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-10. **Select the desired publishing medium and click the "Test" or Publish" button**:<br>
- * **<u>Barcode</u>** generates one or more barcodes that executes the Smart Profile on any device that scans it. 
- * **<u>NFC/SD/USB</u>** generates a `.bin` file to be consumed on devices by the StageNow app.
- More info [about publishing](../stageclient/#iiselectstagingmedium).
-<img alt="image" style="height:400px" src="sn5_14.png"/>
+10. **Select the desired options to test or publish the Smart Profile**:
+<img alt="image" style="height:400px" src="sn5_13ab.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
 

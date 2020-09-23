@@ -87,8 +87,9 @@ When creating a Smart Profile, StageNow examines the selected LifeGuard image, c
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. From the "My LifeGuard Updates" page, **click the cloud icon of the desired image** to begin a download. **To use a file already downloaded (indcated by a "check mark" in the image files column)**, skip to the next step.<br>
-`IMPORTANT:` Multiple images can be downloaded simultaneously, but **exiting the download screen cancels all current downloads**.
+2. From the "My LifeGuard Updates" page, **click the cloud icon(s) of the desired image(s)** to begin a download.<br> 
+**`IMPORTANT:` Multiple images can be downloaded simultaneously, but exiting the download screen cancels all current downloads**.<br>
+**NOTE**: To create a Smart Profile using a file already downloaded (indicated by a "check mark" in the image files column), skip to the next step.
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -100,127 +101,40 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-
-
-5. **do this**. Then **do that**:
+5. If a network is required, **click "Yes" to create network over which to download images to devices** and enter network settings on subsequent screens (not shown). 
 <img alt="image" style="height:400px" src="sn5_09.png"/>
-_Click image to enlarge; ESC to exit_.
+_Click image to enlarge; ESC to exit_.<br>
 <br>
-
-6. **do this**. Then **do that**:
+6. **Click "Continue" button** to confirm Build batch file download steps for automatic Profile:
 <img alt="image" style="height:400px" src="sn5_10.png"/>
-_Click image to enlarge; ESC to exit_.
+_Click image to enlarge; ESC to exit_.<br>
 <br>
-
-7. **do this**. Then **do that**:
+7. **Click "Continue" button** to confirm Build batch file execution steps for automatic Profile:
 <img alt="image" style="height:400px" src="sn5_11.png"/>
-_Click image to enlarge; ESC to exit_.
+_Click image to enlarge; ESC to exit_.<br>
 <br>
-
-8. **do this**. Then **do that**:
+8. On Review screen, **click "View" to see the steps created** (if desired). Then **click "Create Profile" button**:
 <img alt="image" style="height:400px" src="sn5_12.png"/>
-_Click image to enlarge; ESC to exit_.
+_Click image to enlarge; ESC to exit_.<br>
 <br>
-
-9. **do this**. Then **do that**:
-<img alt="image" style="height:400px" src="sn5_13a.png"/>
-_Click image to enlarge; ESC to exit_.
+9. **Select the desired options to test or publish** the Smart Profile:
+<img alt="image" style="height:400px" src="sn5_13ab.png"/>
+_Click image to enlarge; ESC to exit_.<br>
 <br>
-
-10. **do this**. Then **do that**:
-<img alt="image" style="height:400px" src="sn5_13b.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-
-11. **do this**. Then **do that**:
+10. **Select the desired publishing medium and click the "Test" or Publish" button:<br>
+ * **Barcode generates a barcode that executes the Smart Profile on any device that scans it**.<br> * **NFC or USB generates a `.bin` file that can be consumed by the StageNow app on devices**.
 <img alt="image" style="height:400px" src="sn5_14.png"/>
-_Click image to enlarge; ESC to exit_.
+_Click image to enlarge; ESC to exit_.<br>
 <br>
 
-#### Bang, zoom... smart profile is made. 
-
-<!-- 
-
-4. To test a Dynamic Profile, **select a barcode type and click the "Test" button**: <br>
- <img alt="image" style="height:450px" src="SN41_dynamic_05.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-5. A prompt appears for selecting (**or *creating***) the `.csv` file similar to the image below:<br>
-  <img alt="image" style="height:350px" src="SN41_dynamic_07b.png"/>
-  **To select an <i><u>existing</u></i> `.csv` file skip to Step 6**.<br>
- **To create a** `.csv` **file "on the fly"** from variables created in the Profile:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;a. **Click "Save a CSV Template"** in the dialog shown below, **name and save the file** as prompted.<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;b. In the same dialog (as below), **click "Open a CSV file for editing**, navigate to and open the file saved in Step a.<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;c. **Enter data for all variables (separated by semi-colons)**, save and close the file.<br> 
-  `IMPORTANT:` **Use semi-colons to separate variable names and data, and at the end of each line** (see Notepad image, below).<br> 
-  <img alt="image" style="height:350px" src="SN41_dynamic_07.png"/>
-  The image below shows a correctly formatted `.csv` file:<br>
-  <img alt="image" style="height:350px" src="SN41_dynamic_16.png"/>
- _Click image to enlarge; ESC to exit_.<br>
- <a name="step6"></a>
-6. **Select the** `.csv` **file that contains variable data for the Dynamic Profile**: <br> 
- <img alt="image" style="height:350px" src="SN41_dynamic_07a.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
- **On success, a barcode sheet is produced for each row of the** `.csv` **file** similar to the image below.<br> 
- **The Profile name is appended with the row number** on the printout for identification.<br>
- <img alt="image" style="height:350px" src="SN41_dynamic_15.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-7. **`If errors occur`** refer to the [Troubleshooting section](#troubleshooting) below for instructions.  
-8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br> 
-Combine variables and static text as desired. An example is shown below.<br>
- <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-9. **Click "Publish Now"** to complete the process; distribute staging materials as normal.  
-
--->
-
-### Notes
-
-* Multiple simultaneous downloads are possible.
-* Leaving the download screen cancels all downloads.   
-* more, yo
+#### Smart Profile creation is complete. Deploy published media to target devices as required. 
 
 -----
 
-<!-- ## Troubleshooting
+### Notes
 
-Dynamic Staging errors occur when StageNow is unable to acquire data from a `.csv` file for generating staging media. 
-
-#### Typical causes: 
-
-* The `.csv` file is missing data for one or more variables
-* One or more variables were entered incorrectly in StageNow
-* The `.csv` file is not present on the host workstation
-* The `.csv` file is open or otherwise locked on the host workstation
-
-> **NOTE**: The "Host the Deployment Package Outside of StageNow FTP Server" option is not available when using Dynamic Staging.
-
-#### Error Diagnosis:  
-
-1. If StageNow displays a "CSV Issues" message like the one below, **click "Save the log"** to generate a list of issues. 
- <img alt="image" style="height:350px" src="SN41_dynamic_10.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-2. **Name and save the file** in the desired location: 
- <img alt="image" style="height:350px" src="SN41_dynamic_11.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-3. **Click the "Open a log file for viewing" button**, navigate to and open the log file saved in the previous step.<br>
- A sample log file is shown below: 
- <img alt="image" style="height:350px" src="SN41_dynamic_12.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-4. **Open the log in a text editor, make corrections to the** `.csv` **file as needed**. <br>
- Then **return to StageNow and click "Start Over"** button:  
- <img alt="image" style="height:350px" src="SN41_dynamic_10a.png"/>
- _Click image to enlarge; ESC to exit_.<br>
-<br>
-5. **Return to <a href="#step6">Step 6</a>** in the previous section and try Dynamic Staging again. 
-
--->
+* **Zebra strongly recommends testing ALL Profiles before deployment in production environments**.  
+* StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen <u> only while the screen is visible</u>. **Exiting the My LifeGuard Updates screen cancels all downloads in progress**.
 
 -----
 

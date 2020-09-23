@@ -61,19 +61,15 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-7. **Check the required boxes to filter search results**.<br>
-**Click the "Show Results" button** to display the filtered list.<br>
-Then **click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
+7. To select the desired LifeGuard image(s) to work with:
+&nbsp;&nbsp;&nbsp;&nbsp;a. **Check the required boxes to filter search results**.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b. **Click the "Show Results" button** to display the filtered list.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c. **Click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
 When the image list appears as desired, **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-
-<!-- this is the montage image
-<img alt="image" style="height:400px" src="sn50_my_lg_browse.png"/>
-_Click image to enlarge; ESC to exit_.<br>
--->
 
 ----- 
 

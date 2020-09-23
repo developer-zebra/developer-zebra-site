@@ -133,7 +133,7 @@ _Click image to enlarge; ESC to exit_.<br>
 
 -----
 
-### Notes
+## Notes
 
 * **<u>Zebra strongly recommends testing ALL Profiles before deployment</u> in production environments**.  
 * StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen **<u>only while the screen is visible</u>**. 

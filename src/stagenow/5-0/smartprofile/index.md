@@ -27,7 +27,7 @@ productversion: '5.0'
 
 ### I. Select LifeGuard Image(s)
 
-**Before creating a Smart Profile**, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page. **If LifeGuard images have already been selected, skip to Section II**.   
+**Before creating a Smart Profile**, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page. **If LifeGuard images have already been selected, [skip to Section II](#iicreateasmartprofile)**.   
 
 #### To select LifeGuard image(s):
 
@@ -61,10 +61,10 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-7. To select the desired LifeGuard image(s) to work with:
+7. To select the desired LifeGuard image(s) to work with:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a. **Check the required boxes to filter search results**.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;b. **Click the "Show Results" button** to display the filtered list.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;c. **Click the "plus" icon to display image in "My LifeGuard Updates" list. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;c. **Click the "plus" icon** to display image in "My LifeGuard Updates" list. <br>
 When the image list appears as desired, **[proceed to Section II](#iicreateasmartprofile)**. 
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
@@ -77,17 +77,16 @@ _Click image to enlarge; ESC to exit_.
 
 When creating a Smart Profile, StageNow examines the selected LifeGuard image, calculates all required Setting Types (CSPs) and creates all Profile steps necessary to deploy the image to the target device(s). 
 
-> **See [Notes section](#notes) below for important rules and restrictions**. 
+> **See [Notes section](#notes) below for important information**. 
 
 #### To create a Smart Profile:
 
-1. To bring up the "My LifeGuard Updates" page (if necessary), **click "My LifeGuard Updates"** in the left-hand pane of the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen:  
+1. **Click "My LifeGuard Updates"** in the left-hand pane of the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. From the "My LifeGuard Updates" page, **click the cloud icon(s) of the desired image(s)** to begin a download.<br> 
-**`IMPORTANT:` Multiple images can be downloaded simultaneously, but exiting the download screen cancels all current downloads**.<br>
-**NOTE**: To create a Smart Profile using a file already downloaded (indicated by a "check mark" in the image files column), skip to the next step.
+2. **Click the cloud icon(s) of the desired image(s)** to begin download(s). **NOTE**: If the desired file is already downloaded (indicated by a "check mark" in the image files column), skip to the next step.<br>
+**`IMPORTANT:` Exiting the download screen cancels all current downloads**.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -99,7 +98,7 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. If a network is required, **click "Yes" to create network over which to download images to devices** and enter network settings on subsequent screens (not shown). 
+5. If a network is required, **click "Yes" to create network over which to download images to devices**.<br> Enter network settings on subsequent screens (not shown). 
 <img alt="image" style="height:400px" src="sn5_09.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -118,12 +117,11 @@ _Click image to enlarge; ESC to exit_.<br>
 9. **Select the desired publishing medium and click the "Test" or Publish" button**:<br>
  * **<u>Barcode</u>** generates one or more barcodes that execute the Smart Profile on any device that scans it. 
  * **<u>NFC/SD/USB</u>** generates a `.bin` file to be consumed on devices by the StageNow app.<br>
- [See more about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)<br>
+ [More about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)<br>
 <img alt="image" style="height:400px" src="sn5_14.png"/>
 _Click image to enlarge; ESC to exit_.<br>
-<br>
 10. **Select the desired options to test or publish the Smart Profile**:
-<img alt="image" style="height:400px" src="sn5_13ab.png"/>
+<img alt="image" style="height:600px" src="sn5_13ab.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
 

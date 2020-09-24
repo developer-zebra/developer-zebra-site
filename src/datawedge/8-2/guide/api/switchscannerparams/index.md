@@ -54,8 +54,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 ## Example Code
 
-### Switch scanner parameter in active profile
-The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
+For single scanner use, the code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
 		:::javascript
 	// create the intent and action
@@ -76,7 +75,6 @@ The code below passes an intent that switches a scanner parameter for the active
 		this.sendBroadcast(i);
 
 	// register the broadcast receiver (for result codes)
-		:::javascript
 		String command = intent.getStringExtra("COMMAND");
 		String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
 		String result = intent.getStringExtra("RESULT");
@@ -96,16 +94,8 @@ The code below passes an intent that switches a scanner parameter for the active
 		    }
 		}
 
-#### Notes
 
-**Pre-conditions and assumptions**:
-
-* DataWedge and the respective Profile must be enabled
-* Barcode scanning should be enabled in the active Profile
-* If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
-
-### Multi-scanner mode
-In [multi-scanner](../../input/barcode/#scannerselection) mode, it is required for Switch Scanner Params API to include the specific scanner to be used with intent extra `scanner_selection_by_identifier`.
+For [multiple scanners](../../input/barcode/#scannerselection), it is required for Switch Scanner Params API to include the specific scanner to be used with intent extra `scanner_selection_by_identifier`.
 
     Intent i = new Intent();
     i.setAction("com.symbol.datawedge.api.ACTION");
@@ -116,6 +106,15 @@ In [multi-scanner](../../input/barcode/#scannerselection) mode, it is required f
     bScannerParams.putString("illumination_mode", "off");
     i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", bScannerParams);
     sendBroadcast(i);
+
+#### Notes
+
+**Pre-conditions and assumptions**:
+
+* DataWedge and the respective Profile must be enabled
+* Barcode scanning should be enabled in the active Profile
+* If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
+
 
 
 

@@ -25,7 +25,7 @@ DWDemo provides barcode scanning capabilities, demonstrating how data is acquire
 
 **Notes:**
 * When the scan beam is on, pressing the back button in DWDemo does not exit the application - instead, it stops scanning. Pressing the back button again exits the application.
-* When [multi-scanner](../../input/barcode/#scannerselection) mode is configured in the DataWedge profile:
+* When [multiple scanners](../../input/barcode/#scannerselection) are configured in the DataWedge profile:
     * DWDemo button bar is hidden.
     * DWDemo displays the scanner used for scanning in addition to the data decoded.
     * DWDemo soft trigger button triggers all scanners listed in the **Scanner Selection.**

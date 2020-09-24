@@ -46,7 +46,7 @@ In Barcode Input, the **Scanner selection** panel determines which scanning devi
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-**Multi-scanner** mode provides the capability to use more than one scanner interchangeably in the same DataWedge profile without the need for manual configuration, such as when an internal scanner and an external Bluetooth scanner is required. Additionally, each scanner can be individually configured within the same profile. To add a scanner, in the **Scanner Selection** screen tap the top right menu and select **Add new scanner.** A list of available scanners is displayed.
+**Multiple scanner support** provides the capability to use more than one scanner interchangeably in the same DataWedge profile without the need for manual configuration, such as when an internal scanner and an external Bluetooth scanner is required. Additionally, each scanner can be individually configured within the same profile. To add a scanner, in the **Scanner Selection** screen tap the top right menu and select **Add new scanner.** A list of available scanners is displayed.
 
 <table>
  <tr>

@@ -25,7 +25,7 @@ Advanced Data Formatting features are implemented through Rules, Criteria and Ac
 #### Rules
 The containers for one or more processing Actions and the user-definable criteria that trigger Action(s). All DataWedge Output Plug-ins can contain one or more ADF rules for the processing of acquired data.
 
-**Note:** ADF rules do not support selection of the scanner used to scan data.
+**Note:** ADF rules do not support selection of the scanner used to scan data when [multiple scanners](../../input/barcode/#scannerselection) are configured.
 
 #### Criteria
 The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../decoders) can be selected or excluded. 

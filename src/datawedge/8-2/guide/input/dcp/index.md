@@ -12,7 +12,7 @@ The DataWedge profile configuration screen allows an app user to configure the a
 
 **Notes:**
 * The DCP does not appear if the scanner is disabled in the active Profile.
-* DCP button only works with one enabled scanner when the profile is configured in [multi-scanner mode](../barcode/#scannerselection).
+* DCP button only works with one enabled scanner when the profile is configured for [multiple scanners](../barcode/#scannerselection).
 
 <img style="height:350px" src="../dcp_settings.png"/>
 _Data Capture Plus options for setting scan triggers_ 

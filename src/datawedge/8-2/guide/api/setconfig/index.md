@@ -38,7 +38,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
 * **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
 * **DataWedge 8.0 -** New secure intent delivery with intent_component_info, new unlicensed error code.
-* **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource, new multi-scanner support.
+* **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource, new multiple scanner support.
 
 ### Function Prototype
 

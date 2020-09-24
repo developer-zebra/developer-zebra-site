@@ -34,7 +34,7 @@ When the user is ready to take action to perform the device search, the first st
 To start the search process:
 
 1.	Perform _one_ of the following in the **To Be Found** device list:<br>Tap and hold the device card for the target device. Select **Start Finding** from the device action menu.  
-<img style="height:350px" src="device-action-menu.png" /><i>Device action menu</i> <br>
+<img style="height:350px" src="find-device.png" /><i>Device action menu</i> <br>
 _Or,_<br>
 Tap on the device card for the target device to open the <b>Device Details</b> screen. Scroll down and tap <b>Start Finding.</b>
 <img style="height:350px" src="start-finding.png" /><i>Tap "Start Finding" in Device Details</i>    
@@ -97,7 +97,7 @@ Perform a device check-out at the start of a work shift as follows:
 2.	The check-out screen appears, prompting to scan a barcode. When in the check-out screen, the user is prevented access to the device until check-out is performed.
 <img style="height:350px" src="checkout.png" /><i>Device check-out</i>  
 
-3.	Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-in to be successful.  
+3.	Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-out to be successful.  
 4.	A message appears indicating the user is checked-out successfully. The app is placed in the background.
 5.	The user is now associated with the device.  <br>
 <!-- -->

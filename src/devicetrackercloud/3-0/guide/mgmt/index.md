@@ -109,7 +109,7 @@ Each individual device is displayed as a “device card” that shows informatio
 * Device model and serial number
 * AP friendly name (if available) or BSSID. **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
 * Device state: 
-     * **In Service –** device is part of the active device pool and not in any of the other device states. A device may be In Service and 
+     * **In Service –** device is part of the active device pool and not in any of the other device states
      * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
      * **Finding –** the device search is initiated by another user
      * **Found –** the device is located after conducting the search
@@ -130,7 +130,8 @@ Tap and hold on any device card to display the available device actions:
 * **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
 <img style="height:350px" src="device-action-menu.png" />
 <i>Device action menu</i><!-- -->
-<br><br>
+<br>
+
 Tap on any device card to display the **Device Details** screen:
 
 * **Friendly name –** displays the assigned friendly device name as registered by the administrator
@@ -199,7 +200,7 @@ A device search returns a list of devices that match the keyword entered based o
 To perform a device search:
 
 1.	Tap the search icon located in the lower right of the device list.  
-2.	Select the type of search to be conducted, whether based on the device friendly name, device model, serial number, or AP friendly name.  Enter the text to conduct a search.  The search is case-sensitive.  
+2.	Select the type of search to be conducted, whether based on the device friendly name, device model, serial number, AP friendly name or check-out (if check-out is enabled). Enter the text to conduct a search. The search is case-sensitive.  
 <img style="height:350px" src="device-search.png"/><i>Device search</i>
 
 3.	Tap Search.

@@ -80,7 +80,7 @@ For part C, the client app certificate must be extracted.  Perform the steps in 
 _StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **File Action:** Transfer/Copy File<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Access Method:** File in the device file system<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Path and File Name:** <enter file path><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Path and File Name:** [enter file path]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source Access Method:** [select applicable method]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source File URI:** [enter information prompted]<br>
 Click **Continue.**
@@ -151,18 +151,16 @@ Steps to create a StageNow configuration profile:
 <img src="wizard-selection.jpg" /><i>Wizard selection</i>  
 
 4. Enter the profile name. Click **Start.**
-5. Click **Add.** 
-6. Click **Start.**
-7. Find **Batch** and click the plus (+) sign next to it. This adds **Batch** to the Config tab on the right side.
+5. Find **Batch** and click the plus (+) sign next to it. This adds **Batch** to the Config tab on the right side.
 <img src="config-added-batch.jpg" /><i>List of config setting added</i>  
 
-8.	Click **Add.** In the Batch screen, select the following:<br>
+6.	Click **Add.** In the Batch screen, select the following:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch Action:** Execute Batch<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch File Type:** XML File<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Batch File Access Method:** File embedded in XML<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **XML File Data:** [browse to the server configuration XML file supplied from Zebra services]<br>
-9.	Click **Continue.**
-10.	Click **Complete Profiles.**  
+7.	Click **Continue.**
+8.	Click **Complete Profiles.**  
 <br>
 
 Perform **one** of the following based on the staging method.  Ensure devices are connected to the network during the staging process:
@@ -212,7 +210,7 @@ Administrators register site names, access points, and device information with f
   <tr>
     <td style="text-align:center">LocationFriendlyName</td>
     <td style="text-align:left">Access point location friendly name, useful to identify general device location</td>
-    <td style="text-align:left">Yes</td>
+    <td style="text-align:left">Optional</td>
   </tr>
 
   <tr>
@@ -238,12 +236,12 @@ Administrators register site names, access points, and device information with f
   </tr>
 </table>
 <br>
-The device data fields are required in the device .CSV file whether adding or deleting devices. In each .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. It is particularly important for the AP location friendly name to be easily understood for users to determine the location within the facility when finding a device.
+The device data fields are required in the device .CSV file whether adding or deleting devices. In each .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. It is particularly important for the AP location friendly name to be easily understood for users to determine the location within the facility when finding a device. Special characters, such as '.', '#', '$', '[', or ']', are not supported. 
 
 Sample AP .CSV file content:<br>
 
-        "SiteName","BSSID","AssetName","LocationFriendlyName"
-        "New York","14:a7:2b:24:cc:a5",,"First Floor Reception Area"
+        SiteName,BSSID,AssetName,LocationFriendlyName
+        New York,14:a7:2b:24:cc:a5,,First Floor Reception Area
 <br>
 Sample Device .CSV file content:<br>
 
@@ -261,7 +259,7 @@ To import site/AP data from the AP .CSV file:
 1.	Copy the .CSV file from the PC to the device root `\Internal shared storage` folder. 
 2.	In the client app, login as the admin.  In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.**  Enter the Administrator credentials and tap **Login.**
 3.	Tap the top right options menu and select **Settings,** which is now visible.  
-4.	Tap **Access Point/Site/Device Registration.**
+4.	Tap **Import Access Points/Sites/Devices.**
 5.	Under the section **Import Access Point CSV File,** tap **Browse File.**  Browse and select the appropriate .CSV file.
 6.	Under the section **Import Access Point CSV File,** tap **Upload CSV.**  
 7.	The AP data import is complete.  Results are displayed in the **Status** section at the bottom of the screen.  
@@ -273,18 +271,20 @@ To add/modify device data, import the device .CSV file:
 1.	Copy the CSV file from the PC to the device root `\Internal shared storage` folder. 
 2.	In the client app, login as the admin.  In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.**  Enter the Administrator credentials and tap **Login.**
 3.	Tap the top right options menu and select **Settings,** which is now visible.
-4.	Tap **Access Point/Site/Device Registration.**
+4.	Tap **Import Access Points/Sites/Devices.**
 5.	Under the section **Import Device CSV File,** tap **Browse File.**  Browse and select the appropriate .CSV file.
 6.	Under the section **Import Device CSV File,** tap **Upload CSV.**  
 7.	The device data import is complete.  Results are displayed in the **Status** section at the bottom of the screen.  
 <br>
+
+New devices imported are initially in the **Never Connected** state until the Device Tracker app is installed on the devices, configured and communicating with the server.
 
 ### Delete Device Data
 To delete device data, import the device .CSV file containing the specific data to delete:
 1.	Copy the .CSV file from the PC to the device root `\Internal shared storage` folder. 
 2.	In the client app, login as the admin.  In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
 3.	Tap the top right options menu and select **Settings,** which is now visible.
-4.	Tap **Access Point/Site/Device Registration.**
+4.	Tap **Import Access Points/Sites/Devices.**
 5.	Under the section **Import Delete Device CSV File,** tap **Browse File.**  Browse and select the appropriate .CSV file.
 6.	Under the section **Import Delete Device CSV File,** tap **Upload CSV.**  
 7.	The specified device data is removed from the system.  Results are displayed in the **Status** section at the bottom of the screen.  
@@ -295,7 +295,7 @@ To delete device data, import the device .CSV file containing the specific data 
 The web portal provides administrators the capabilities to: 
 * create and manage users
 * reset passwords
-* enable check-out/check-in
+* enable check-in/check-out
 
 In a browser, enter the URL shared by Zebra services to access the web portal. For first-time use, login with the super administrator (SuperAdmin) credentials provided by Zebra.
 <br>
@@ -344,25 +344,25 @@ Steps to reset the password in the web portal:
 
 ## Device Check-out
 
-Device Check-out is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. 
+Device check-out/check-in is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. 
 
 * **Check-out:** At the start of a work shift, the user checks-out the device by scanning their unique barcode. This associates the user with the device, as seen in the device card and device details screen.
 * **Check-in:** At the end of a work shift, the user checks-in the device by placing it on a powered cradle or logging out through the top-right menu from the main device screen. After check-in, the user is no longer associated with the device.  
 
 
-The Check-out/Check-in feature displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application.
+The check-out/check-in feature displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application.
 <br>
 
-### Enable Check-out/Check-in
+### Enable check-out/check-in
 To toggle check-out:
 1.	From the web portal, tap **Settings** in the left menu.
 2.	Toggle **Checkin/Checkout** to enable the feature.
 <br>
-If enabled, Checkout appears as a category in the administrator and manager dashboard.
+If enabled, Checkout appears as a device state in the administrator and manager dashboard listing the devices that are checked-out.
 <br>
 
 ### Set Check-out Barcode Prefix
-When Check-out is enabled, by default no prefix is defined allowing all barcodes to be accepted. The administrator can configure a prefix in the form of a character string, adding a restriction to accept only barcodes that begin with the specified prefix. If a barcode scanned does not contain the prefix, check-out is not successful.
+When check-out is enabled, by default no prefix is defined allowing all barcodes to be accepted. The administrator can configure a prefix in the form of a character string, adding a restriction to accept only barcodes that begin with the specified prefix. If a barcode scanned does not contain the prefix, check-out is not successful.
 <br><br>
 When generating a barcode with the prefix, the specified prefix is followed by the username identifier. The following is a sample barcode containing prefix “NGDTRK-” and username “JohnDoe”: 
 <img style="height:80px" src="barcode-prefix.png"/>

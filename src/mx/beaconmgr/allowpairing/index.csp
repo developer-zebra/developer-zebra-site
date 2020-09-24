@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Pairing Enable/Disable
 type: parm
 order: 5

@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Remote Device PIN
 type: parm
 order: 25

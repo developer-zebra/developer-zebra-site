@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Mandatory Identifier
 type: parm
 order: 20

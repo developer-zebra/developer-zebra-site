@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Silent Pairing Enable/Disable
 type: parm
 order: 7

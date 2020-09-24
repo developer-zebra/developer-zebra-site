@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Silent Pairing Class of Device
 type: parm
 order: 15

@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: beaconmgr
 title: Silent Pairing UAP
 type: parm
 order: 18

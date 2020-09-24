@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Discoverability Enable/Disable
 type: parm
 order: 2
-mx: "6.1"
+mx: "10.2"
 apilevel: "23"
 devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "6.1"
+      mx: "10.2"
       apilevel: "23"
       devicetype: A
       name: Do not change
@@ -21,13 +21,13 @@ parm:
     - code: 1
       devicetype: A
       name: Enable
-      mx: "6.1"
+      mx: "10.2"
       apilevel: "23"
       description: Enables the user to set the device as "discoverable" by other Bluetooth devices.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "6.1"
+      mx: "10.2"
       apilevel: "23"
       description: Prevents the user from setting the device as discoverable by other Bluetooth devices.
 ---

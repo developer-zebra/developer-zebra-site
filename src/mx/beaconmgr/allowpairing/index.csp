@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Pairing Enable/Disable
 type: parm
 order: 5
-mx: "5.1"
+mx: "10.2"
 apilevel: "22"
 devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "5.1"
+      mx: "10.2"
       apilevel: "22"
       devicetype: A
       name: Do not change
@@ -21,13 +21,13 @@ parm:
     - code: 1
       devicetype: A
       name: Enable
-      mx: "5.1"
+      mx: "10.2"
       apilevel: "22"
       description: Enables the device to pair with newly discovered Bluetooth devices.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "5.1"
+      mx: "10.2"
       apilevel: "22"
       description: Disables pairing with newly discovered Bluetooth devices.
 ---

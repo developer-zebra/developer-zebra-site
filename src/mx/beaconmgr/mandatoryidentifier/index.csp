@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Mandatory Identifier
 type: parm
 order: 20
-mx: "9.3"
+mx: "10.2"
 apilevel: "28"
 devicetype: A
 info: On devices running versions prior to Android 9 Pie, only the Bluetooth device name can be used. 
@@ -14,7 +14,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "9.3"
+      mx: "10.2"
       apilevel: "28"
       devicetype: A
       name: Bluetooth MAC Address
@@ -22,7 +22,7 @@ parm:
     - code: 1
       devicetype: A
       name: Bluetooth Device Name
-      mx: "9.3"
+      mx: "10.2"
       description: Uses the Bluetooth device name as the device mandatory identifier.
 ---
 

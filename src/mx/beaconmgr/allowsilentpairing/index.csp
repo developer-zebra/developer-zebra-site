@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Silent Pairing Enable/Disable
 type: parm
 order: 7
-mx: "7.0"
+mx: "10.2"
 apilevel: "24"
 devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       devicetype: A
       name: Do not change
@@ -21,13 +21,13 @@ parm:
     - code: 1
       devicetype: A
       name: Enable
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       description: Enables the device to pair with known devices without user confirmation.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       description: Disables silent pairing with Bluetooth devices; requires confirmation for pairing.
 ---

@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Remote Device MAC
 type: parm
 order: 22
-mx: "9.3"
+mx: "10.2"
 apilevel: "28"
 devicetype: A
 parm:

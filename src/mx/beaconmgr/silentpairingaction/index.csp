@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Silent Pairing Action
 type: parm
 order: 10
-mx: "7.0"
+mx: "10.2"
 apilevel: "24"
 devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
@@ -14,7 +14,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       devicetype: A
       name: Do not change
@@ -22,19 +22,19 @@ parm:
     - code: 1
       devicetype: A
       name: Add Remote Device Rule
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       description: Adds a rule to the list that applies to the remote device.
     - code: 2
       devicetype: A
       name: Remove Remote Device Rule
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       description: Removes the specified rule.
     - code: 3
       devicetype: A
       name: Remove all Remote Device Rules
-      mx: "7.0"
+      mx: "10.2"
       apilevel: "24"
       description: Clears the list of devices previously specified rules for Silent Pairing, including the default rules.
 ---

@@ -3,7 +3,7 @@ csp: beaconmgr
 title: Silent Pairing UAP
 type: parm
 order: 18
-mx: "7.0"
+mx: "10.2"
 apilevel: "24"
 devicetype: A
 parm:

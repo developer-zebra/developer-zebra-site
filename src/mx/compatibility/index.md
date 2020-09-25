@@ -53,6 +53,10 @@ csps:
     url: /mx/batterymgr
     csp: batterymgr
   - type: section
+    title: Beacon Manager
+    url: /mx/beaconmgr
+    csp: beaconmgr
+  - type: section
     title: Bluetooth Manager
     url: /mx/bluetoothmgr
     csp: bluetoothmgr

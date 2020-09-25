@@ -10,10 +10,10 @@ This section discusses installation and configuration of Device Tracker. The cli
 
 **Installation and configuration on the device:**
 
-1.	**Install client APK file.**    
+1.	**Install client APK file.** Ensure all permissions are granted.   
 2.	**Disable battery optimization,** to permit the client app to continue running in the background during doze mode (Android’s power-saving feature triggered when the device is in a prolonged suspended state).
 3.	**Allow overlay permission _(optional)_.**  If the Check-out feature is required to prevent users from accessing the device prior to scanning their unique user barcode, automatically allow the overlay permission for device check-out without manual intervention. See Check-out section for more information.
-4.	**Deploy server settings** to communicate with the cloud server.  
+4.	**Launch the app and deploy server settings** to communicate with the cloud server.  
 
 
 Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#createstagenowinstallationprofile) and step 4 by creating a [StageNow configuration profile](#createstagenowconfigurationprofile). 
@@ -44,7 +44,7 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 
 ## Create StageNow Profiles
 
-This section provides procedures to create StageNow Installation and Configuration profiles. StageNow version 4.2 or higher is required.  See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow](/stagenow/latest/about/) for the install file and more information.
+This section provides procedures to create StageNow Installation and Configuration profiles. StageNow version 4.2 or higher is required if automatically bypassing the overlay permission for Check-out.  See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow](/stagenow/latest/about/) for the install file and more information.
 
 ### Create StageNow Installation Profile
 
@@ -418,9 +418,4 @@ Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or 
 <br><br>
 
 <!-- -->
------
 
-## See Also
-
-* [Device Management](../mgmt)
-* [Device Tracking](../use) 

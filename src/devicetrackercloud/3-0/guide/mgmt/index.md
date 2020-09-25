@@ -17,7 +17,7 @@ To login as administrator or manager:
 3.	Tap the options menu at the top right and select **Admin/Manager Login.**
 4.	Enter the administrator or manager login credentials.
 5.	Perform the required tasks.
-6.	Logout when complete.  Tap the Android back button or tap the options menu at the top right and select **Admin/Manager Logout.**
+6.	Logout when complete. Tap the options menu at the top right and select **Admin/Manager Logout.**
 <br>
 <!-- -->
 After logging in as administrator on the device, tap on the top right option menu and select one of the following:
@@ -45,7 +45,7 @@ Steps to reset the password in the client app:
 ## Administration
 Administrators and managers have additional capability to view data:
 
-* **Site List –** administrator access only; lists the sites
+* **Site List –** administrator access only; lists the sites in the organization
 * **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
 * **Device List –** administrator and manager access; lists devices with capability to view device details<br>
 <!-- -->
@@ -59,23 +59,22 @@ After administrator login, a site listing is visible for site selection:
 * **All Devices –** when selected, displays the dashboard of all devices (whether assigned or not assigned to a site) across all sites
 * **Unassigned Devices –** when selected, displays the dashboard of devices that are not assigned to a site.  
 * **Sites -** lists all the sites across the entire organization.  Select an individual site to display the dashboard for the particular site.
+<br>
+<!-- -->
 
 <img style="height:350px" src="sitelist.png" />
 <i>Site list</i>
 <br>
 <!-- -->
-After manager login, the dashboard is visible.  
 
 ### Dashboard
-The dashboard displays device categories base on device states, along with statistics for each category. For administrators, the dashboard can be displayed for any site selected in the site list, including All Devices (across all sites) or Unassigned Devices. For managers, the dashboard displays information based on the site their device is assigned to. If the manager device is not assigned to a particular site, the dashboard displays information based on all unassigned devices.
-<br><br>
-**Note:** In split-screen mode, when the dashboard is displayed in Device Tracker and the app is not in focus, the app displays a blank screen. When Device Tracker is back in focus, the dashboard is displayed as expected.
+The dashboard is accessible to administrators and managers, displaying device categories based on device status, along with statistics for each category. For administrators, the dashboard can be displayed for any site selected in the site list, including All Devices (across all sites) or Unassigned Devices. For managers, the dashboard displays information based on the site their device is assigned to. If the manager device is not assigned to a particular site, the dashboard displays information based on all unassigned devices.
 <br><br>
 Dashboard categories:
 
 * **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site.  <br>
 <!-- -->
-Device states:
+Device status:
 
 * **To Be Found –** filters devices designated To Be Found where action has not been taken to initiate the search for these devices.
 * **Being Found –** filters devices that are actively being searched.  Triggered when a user initiates a device search.
@@ -95,10 +94,16 @@ Device connection states:
 
 * **Never Connected –** filters devices that are registered but never connected to the server.
 * **Disconnected –** filters devices that have connected to the server but are no longer connected.
+<br>
+<!-- -->
 
 <img style="height:350px" src="dashboard.png" />
 <i>Dashboard</i>
 <br>
+<!-- -->
+
+**Note:** In split-screen mode, when the dashboard is displayed in Device Tracker and the app is not in focus, the app displays a blank screen. When Device Tracker is back in focus, the dashboard is displayed as expected.
+<br><br>
 
 ### Device List
 The device list displays all devices corresponding to the selected category in the dashboard. In the dashboard screen, select a category in the list to view the corresponding list of devices. The search result is limited to display 100 records. If this limit is exceeded, a message is displayed below the device list indicating that there are additional records and the search should be refined to avoid exceeding the limit.  <br>
@@ -116,8 +121,10 @@ Each individual device is displayed as a “device card” that shows informatio
      * **Cannot Find –** the device could not be found after the search was conducted
      * **Decommissioned –** device is removed from the active device pool
 * Top right icon indicates device battery level or charging state.
+<br>
+<!-- -->
 
-<img style="height:350px" src="dashboard.png" />
+<img style="height:350px" src="devicelist.png" />
 <i>Device list from "All Devices"</i>
 <br>
 <!-- -->
@@ -125,12 +132,15 @@ Tap and hold on any device card to display the available device actions:
 
 * **View Details –** displays the Device Details screen, see below.
 * **Add a Note –** enter text to capture comments specific to the device that could be helpful in tracking. For example, when a device is decommissioned a note can be added as follows: “Battery does not charge, needs to be replaced”.
-* **Start Finding –** begins the device search process. Refer to Find a Device.
+* **Start Finding –** begins the device search process. Refer to [Find a Device](../use/#findadevice). This is visible only if the device is marked "To Be Found".
 * **Recommission –** places a device from the decommissioned state back to the **In Service** state as part of the active device pool.
 * **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
+<!-- -->
+
 <img style="height:350px" src="device-action-menu.png" />
 <i>Device action menu</i><!-- -->
-<br>
+<br><br>
+
 
 Tap on any device card to display the **Device Details** screen:
 
@@ -209,9 +219,3 @@ To perform a device search:
 
 <br><br>
 <!-- -->
------
-
-## See Also
-
-* [Install & Setup](../setup)
-* [Device Tracking](../use) 

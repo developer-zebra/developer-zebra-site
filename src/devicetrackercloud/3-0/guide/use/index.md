@@ -134,10 +134,5 @@ Choose one of the following options to Check-In a device:<br><br>
 
 <br><br>
 <!-- -->
------
 
-## See Also
-
-* [Install & Setup](../setup)
-* [Device Management](../mgmt)
 

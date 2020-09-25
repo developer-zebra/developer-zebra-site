@@ -19,6 +19,7 @@ Features and functions of administrators:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Create/Manage administrator and manager user logins<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Import Site and AP data with friendly name (via .CSV)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Import device data with friendly name and site assignment (via .CSV)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Delete device data (via .CSV)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Enable check-out/check-in feature to associate users to devices for accountability _(optional)_<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Configure prefix for check-out barcode _(optional)_<br>
 
@@ -66,12 +67,3 @@ Features and functions of associates:<br>
 <br>
 <br>
 <!-- -->
------
-
-## See Also
-
-* [About Device Tracker](../about)
-* [Install & Setup](../setup)
-* [Device Tracking](../mgmt)
-* [Configuration](../config)
-* [Troubleshooting & FAQ](../troubleshooting)

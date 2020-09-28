@@ -93,7 +93,7 @@ Device battery states:
 Device connection states:
 
 * **Never Connected –** filters devices that are registered but never connected to the server.
-* **Disconnected –** filters devices that have connected to the server but are no longer connected.
+* **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
 <br>
 <!-- -->
 
@@ -167,7 +167,7 @@ Tap on any device card to display the **Device Details** screen:
 * **Connection State:** 
      * **Never connected –** the device has never connected to the server
      * **Connected –** the device is connected to the server
-     * **Disconnected –** the device previously connected to the server and is now disconnected
+     * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
 * **Last Reported –** displays the time stamp of the last time the device reported to the server
 * **Note –** text entered by an administrator or manager capturing information specific to the device.     
 <table>

@@ -46,7 +46,9 @@ Tap on the device card for the target device to open the <b>Device Details</b> s
 
 5.	Tap Play Sound on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6.	If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.**  The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
-<br>
+<br><br>
+
+**Note:** A device is in the **Disconnected** state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.
 
 ## Decommission/Recommission Device
 After a device is found, it should be recommissioned to place the found device back to the active device pool. This changes the device status from **Found** to **In Service.** Alternatively, to account for only active devices, recommission or decommission a device to add or remove the device to/from the active device pool. This feature to decommission/recommission a device is available only to administrators or managers.

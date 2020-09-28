@@ -27,6 +27,7 @@ This feature is designed for offline device tracking. DUT will beacon the data c
 * Set a PIN for a remote device
 
 <!--
+
  <img style="height:450px" src="../../../../../images/mx/zebra_bluetooth_settings_app.png"/>
  _ZBS is preinstalled on devices running Android 8.x Oreo and later_.<br>
 

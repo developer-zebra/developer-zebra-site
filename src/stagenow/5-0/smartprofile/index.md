@@ -81,10 +81,9 @@ _Click image to enlarge; ESC to exit_.
 
 **Clear Selection** removes all selected filters.<br>
 
-**Download Now** reloads the available images from the LifeGuard database.<br>
+**Refresh** reloads the available build images from the LifeGuard database. **A "grayed-out" button indicates that StageNow already contains the latest build data**.<br>
 
-**Release notes** downloads the current release notes `.pdf` for off-line reference.<br>
-<br>
+**Release notes** downloads the current release notes `.pdf` for off-line reference for a build.<br>
 
 #### Proceed to Next Section
 
@@ -102,6 +101,20 @@ When creating a Smart Profile, StageNow examines the selected LifeGuard image, c
 1. **Click "My LifeGuard Updates"** in the left-hand pane of the StageNow "<i class="fa fa-home" aria-hidden="true"></i> Home" screen:  
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
+
+In Below screen
+
+1) on clicking of icon beside to "+" icon will take user to Lifeguard profiles where only profiles related to that build number will be shown.
+
+2) Also there is no mention about "LifeGuard Profiles" page anywhere in document.
+
+3) clicking on icon beside to delete button shall open build selection page which will show only those builds which are greater than the build selected as per the stored data.
+
+4) Document does not also talk about "View  Lifeguard Profiles".
+
+5) Also document should talk about  numbers of profile created ("0 profiles in image").
+
+
 <br>
 2. **Click the cloud icon(s) of the desired image(s)** to begin download(s). **NOTE**: If the desired file is already downloaded (indicated by a "check mark" in the image files column), skip to the next step.<br>
 **`IMPORTANT:` Exiting the download screen cancels all current downloads**.<br>
@@ -152,6 +165,17 @@ _Click image to enlarge; ESC to exit_.<br>
 * **<u>Zebra strongly recommends testing ALL Profiles before deployment</u> in production environments**.  
 * StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen **<u>only while the screen is visible</u>**. 
 * **Exiting the My LifeGuard Updates screen cancels all downloads in progress**.
+
+6) Please do mention the following points
+
+   a) user can download multiple images at one-shot.
+
+   b) while downloading if user traverse to another page then download will be stopped
+
+Note: if download is disturbed. Then to restart downloading the image again user has to quit stagenow and start stagenow again (due to windows limitation.)
+
+Use no VPN
+ 
 
 -----
 

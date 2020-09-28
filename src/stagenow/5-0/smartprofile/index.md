@@ -41,18 +41,19 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-3. **Click "confirm"** to accept automatically generated access key to continue: 
-<img alt="image" style="height:400px" src="sn5_03.png"/>
-_Click image to enlarge; ESC to exit_.
-<br>
-<br>
-4. **Enter Zebra OneCare login credentials**: 
+3. On the login screen, **enter Zebra OneCare login credentials** within 10 minutes.<br>
+**Note: If a timeout occurs**, click the "Try Again" button to return to the login screen:
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-5. **Click "Allow"** to load the LifeGuard image database:
+4. **Click "Allow"** to load the LifeGuard image database:
 <img alt="image" style="height:400px" src="sn5_06.png"/>
+_Click image to enlarge; ESC to exit_.
+<br>
+<br>
+5. To continue, **click "confirm"** to accept automatically generated access key: 
+<img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
@@ -110,7 +111,7 @@ _Click image to enlarge; ESC to exit_.<br>
 <img alt="image" style="height:400px" src="sn5_11.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-8. On Review screen, **click "View" to see the steps created** (if desired). Then **click "Create Profile" button**:
+8. On Review screen, **click "View" to see the steps created** (if desired). Then **click "Complete Profiles" button**:
 <img alt="image" style="height:400px" src="sn5_12.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>

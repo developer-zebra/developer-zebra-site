@@ -137,7 +137,8 @@ _Click image to enlarge; ESC to exit_.<br>
  [More about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)<br>
 <img alt="image" style="height:400px" src="sn5_14.png"/>
 _Click image to enlarge; ESC to exit_.<br>
-10. **Select the desired options to test or publish the Smart Profile**:
+
+&#49;&#48;. **Select the desired options to test or publish the Smart Profile**:
 <img alt="image" style="height:600px" src="sn5_13ab.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>

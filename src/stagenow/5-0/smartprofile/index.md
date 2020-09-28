@@ -152,17 +152,8 @@ _Click image to enlarge; ESC to exit_.<br>
 * **<u>Zebra strongly recommends testing ALL Profiles before deployment</u> in production environments**.  
 * StageNow supports multiple simultaneous downloads from the "My LifeGuard Updates" screen **<u>only while the screen is visible</u>**. 
 * **Exiting the My LifeGuard Updates screen cancels all downloads in progress**.
-
-6) Please do mention the following points
-
-   a) user can download multiple images at one-shot.
-
-   b) while downloading if user traverse to another page then download will be stopped
-
-Note: if download is disturbed. Then to restart downloading the image again user has to quit stagenow and start stagenow again (due to windows limitation.)
-
-Use no VPN
-
+* **To restart an interrupted download**, quit and relaunch StageNow. Then restart the download. 
+* **DO NOT use a VPN** when attaching to the LifeGuard Updates database; it could result in unpredictable behavior.  
 
 <!-- on "My LifeGuard Updates" screen
 

@@ -41,13 +41,13 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-3. On the login screen, **enter Zebra OneCare login credentials** within 10 minutes.<br>
-**Note: If a timeout occurs**, click the "Try Again" button to return to the login screen:
+3. On the login screen, **enter Zebra OneCare login credentials** within the allotted time.<br>
+**Note: If a timeout occurs, click the "Try Again" button** to return to the login screen:
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-4. **Click "Allow"** to load the LifeGuard image database:
+4. **Click "Allow"** to load the LifeGuard image database. 
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -57,7 +57,8 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-6. **Wait a few moments** for LifeGuard images to load:
+6. **Wait a few moments** for LifeGuard images to load.<br>
+**`IMPORTANT:` Do NOT cancel this operation** or data corruption could result. 
 <img alt="image" style="height:200px" src="sn5_07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -71,6 +72,22 @@ When the image list appears as desired, **[proceed to Section II](#iicreateasmar
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
+
+#### Functions of LifeGuard Updates Page
+
+**Revoke** logs out of the current OneCare account. Steps 3, 4 and 5 must be repeated to continue creating a Smart Profile. <br>
+
+**Search Build Number** allows for a specific build number to be loaded.<br> 
+
+**Clear Selection** removes all selected filters.<br>
+
+**Download Now** reloads the available images from the LifeGuard database.<br>
+
+**Release notes** downloads the current release notes `.pdf` for off-line reference.<br>
+<br>
+
+#### Proceed to Next Section
+
 
 ----- 
 

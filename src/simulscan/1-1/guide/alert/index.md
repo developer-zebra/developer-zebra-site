@@ -74,6 +74,7 @@ SimulScan currently supports only these devices:
 
 ### Frequently Asked Questions 
 
+
 **Q: How do I know which SimulScan features are being transitioned to the Scanning Framework?**<br>
 A: See the Transition Roadmap above for a list of features that are planned for transitioning. The table also includes features that are not being transitioned.
 

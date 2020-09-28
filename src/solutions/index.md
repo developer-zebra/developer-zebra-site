@@ -77,14 +77,16 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicecentral/3-0/guide/about
+        url: /devicecentral/3-1/guide/about
       - title: Install
-        url: /devicecentral/3-0/guide/usage
+        url: /devicecentral/3-1/guide/usage
       - title: Using Device Central
-        url: /devicecentral/3-0/guide/usage
+        url: /devicecentral/3-1/guide/usage
     versions:
+      - url: /devicecentral/3-1/guide/about
+        label: '3.1'
       - url: /devicecentral/3-0/guide/about
-        label: '2.1'
+        label: '3.0'
       - url: /devicecentral/2-1/guide/about
         label: '2.1'
       - url: /devicecentral/2-0/guide/about

@@ -6,25 +6,23 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal emitted by a misplaced device as an aid to locating it using a second device running Zebra Device Tracker.
-
-ENG: 
-This feature is designed for offline device tracking. DUT will beacon the data configured only when DUT is powered Off.
+Beacon Manager (BeaconMgr) controls the signal emitted by a misplaced device to help locate the device using a second device running Zebra Device Tracker software.
 
 -----
 
 ### Main Functionality
 
-* Enable/Disable 
- * Bluetooth Pairing 
- * Bluetooth Discoverability
- * Silent Pairing (no user confirmation)
- * Silent Pairing based on Class of Device (CoD)
- * Silent Pairing based on Upper Address Part (UAP)
- * Mandatory Identifier 
-* Create Silent Pairing Rules  
-* Use Bluetooth MAC address as a mandatory identifier
-* Set a PIN for a remote device
+* Turn On/Off: 
+ * Beacon emission when device is powered off 
+ * Beacon emission when device is in "Airplane mode"
+* Set the beacon emission power level  
+* Set the beacon emission interval
+* Set beacon parameters: 
+ * Beacon type
+ * iBeacon UUID
+ * Major ID
+ * Minor ID
+ * Custom beacon data
 
 <!--
 

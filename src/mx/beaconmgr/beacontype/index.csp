@@ -9,7 +9,7 @@ devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
-  name: AllowSilentPairing
+  name: BeaconType
   type: list
   list:
     - code: 0

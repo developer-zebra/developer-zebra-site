@@ -10,7 +10,7 @@ info: On devices running versions prior to Android 9 Pie, only the Bluetooth dev
 parm:
   presentif: Silent Pairing Action is "Add Remote Device Rule" OR "Remove Remote Device Rule"
   pivotal: No
-  name: MandatoryIdentifier
+  name: TxPowerLevel
   type: list
   list:
     - code: 0

@@ -10,7 +10,7 @@ info: For some devices, this feature requires purchase of a Mobility DNA Enterpr
 parm:
   presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
   pivotal: No
-  name: SilentPairingAction
+  name: TxInterval
   type: list
   list:
     - code: 0

@@ -1,6 +1,6 @@
 ---
 csp: beaconmgr
-title: Mandatory Identifier
+title: Transmit Power Level
 type: parm
 order: 20
 mx: "10.2"

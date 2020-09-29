@@ -1,6 +1,6 @@
 ---
 csp: beaconmgr
-title: Silent Pairing Enable/Disable
+title: Beacon Type
 type: parm
 order: 7
 mx: "10.2"

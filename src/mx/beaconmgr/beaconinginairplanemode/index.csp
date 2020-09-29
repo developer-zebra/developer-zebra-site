@@ -1,6 +1,6 @@
 ---
 csp: beaconmgr
-title: Pairing Enable/Disable
+title: Beaconing Airplane Mode Enable/Disable
 type: parm
 order: 5
 mx: "10.2"

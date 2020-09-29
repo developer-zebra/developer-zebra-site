@@ -1,6 +1,6 @@
 ---
 csp: beaconmgr
-title: Silent Pairing Action
+title: Transmit Interval
 type: parm
 order: 10
 mx: "10.2"

@@ -56,6 +56,10 @@ productversion: '8.2'
   * **LED -** visual feedback
 * **Link Profile –** select the profile to be used by the reader from the automatically populated options based on the connected reader. The populated range of values is subject to change based on the reader model. 
 * **Dynamic power –** enable/disable optimization of RFID reader power consumption.
+* **SL Flag –** Choose the selected flag for tags. Tags shall implement a selected flag, SL, which an RFID reader may assert or deassert using a **Select** command. Options:
+  * **Asserted**
+  * **Deasserted (De-asserted)**
+  * **All**
 * **Pre filters:**
   * **Enable pre filters -** enable/disable the tag pattern pre filter options based on standard RFID protocol.
   * **Tag pattern -** specify the hexadecimal character pattern to compare for tag filtering. Pattern matching is based on the **Offset value.**  Maximum characters: 64 byte hexadecimal. 

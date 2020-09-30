@@ -4,9 +4,7 @@ title: Beaconing Enable/Disable
 type: parm
 order: 2
 mx: "10.2"
-apilevel: "23"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
   name: Beaconing
@@ -14,22 +12,19 @@ parm:
   list:
     - code: 0
       mx: "10.2"
-      apilevel: "23"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to be discoverable by other Bluetooth devices; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      name: Enable
+      name: Turn ON
       mx: "10.2"
-      apilevel: "23"
-      description: Enables the user to set the device as "discoverable" by other Bluetooth devices.
+      description: 
     - code: 2
       devicetype: A
-      name: Disable
+      name: Turn OFF
       mx: "10.2"
-      apilevel: "23"
-      description: Prevents the user from setting the device as discoverable by other Bluetooth devices.
+      description: 
 ---
 
-Controls whether the device can be put into "discoverable" mode by the device user. When in this mode, the device can **_be discovered_** by other Bluetooth devices, which could then attempt to pair with it. This parameter has no effect on the device's own ability to discover other devices, to initiate pairing requests with them, or to reconnect with devices it had paired with previously. 
+Controls 

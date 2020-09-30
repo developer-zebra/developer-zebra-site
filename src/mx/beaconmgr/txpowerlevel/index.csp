@@ -6,26 +6,37 @@ order: 20
 mx: "10.2"
 apilevel: "28"
 devicetype: A
-info: On devices running versions prior to Android 9 Pie, only the Bluetooth device name can be used. 
 parm:
-  presentif: Silent Pairing Action is "Add Remote Device Rule" OR "Remove Remote Device Rule"
   pivotal: No
   name: TxPowerLevel
   type: list
   list:
-    - code: 0
+    - code: 1
       mx: "10.2"
       apilevel: "28"
       devicetype: A
-      name: Bluetooth MAC Address
-      description: Uses the Bluetooth MAC address as the device mandatory identifier.
-    - code: 1
+      name: High (1 dBm)
+      description: Sets the highest beacon transmission power level for maximum detection range. Uses the most device power.
+    - code: 2
       devicetype: A
-      name: Bluetooth Device Name
+      name: Medium (-7 dBm)
       mx: "10.2"
-      description: Uses the Bluetooth device name as the device mandatory identifier.
+      description: Sets a moderate beacon transmission power level, preserving power and reducing detection range slightly. 
+    - code: 3
+      devicetype: A
+      name: Low Power (-15 dBm)
+      mx: "10.2"
+      description: Sets a low beacon transmission power level, preserving power and reducing detection range.
+    - code: 4
+      devicetype: A
+      name: Ultra Low Power (-21 dBm)
+      mx: "10.2"
+      description: Sets a very low beacon transmission power level, preserving power while reducing detection range to a minimum.
+    - code: 5
+      devicetype: A
+      name: Custom (-127 dBm to 1 dBm)
+      mx: "10.2"
+      description: Allows a custom value to be entered using the CustomTxPowerLevel parameter.
 ---
 
-Controls which Bluetooth parameter is used as the Mandatory Identifier for the device. 
-
-See the [Examples section](#examples) for samples of parameter usage. 
+Used to enter the power level (in decibels per milliwatt, or dBm) for beacon transmission. Select a value that balances power consumption and transmission power to optimize device detection range. 

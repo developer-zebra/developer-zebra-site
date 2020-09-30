@@ -27,4 +27,4 @@ parm:
       description: 
 ---
 
-Controls 
+Controls whether a beacon is transmitted by a device **when the device is powered OFF**.  

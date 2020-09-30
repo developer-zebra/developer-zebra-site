@@ -4,7 +4,6 @@ title: Transmit Power Level
 type: parm
 order: 20
 mx: "10.2"
-apilevel: "28"
 devicetype: A
 parm:
   pivotal: No
@@ -13,7 +12,6 @@ parm:
   list:
     - code: 1
       mx: "10.2"
-      apilevel: "28"
       devicetype: A
       name: High (1 dBm)
       description: Sets the highest beacon transmission power level for maximum detection range. Uses the most device power.

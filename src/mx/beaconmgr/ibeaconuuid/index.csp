@@ -1,0 +1,18 @@
+---
+csp: 
+title: iBeacon UUID
+type: parm
+order: 7
+mx: "10.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Beacon Type is "1 (non-existent)" and Explicit Beacon UUID is "checked"
+  name: iBeaconUUID
+  type: string
+---
+
+Used to enter custom or proprietary iBeacon UUID, URL and other data for beacon transmission. 
+
+**Input value rules**:
+* String of exactly 32 hexadecimal characters

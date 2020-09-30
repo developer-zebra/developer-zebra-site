@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Turn ON
       mx: "10.2"
-      description: 
+      description: Enables beacon transmission when device is powered off. 
     - code: 2
       devicetype: A
       name: Turn OFF
       mx: "10.2"
-      description: 
+      description: Disables beacon transmission when device is powered off. 
 ---
 
 Controls whether a beacon is transmitted by a device **when the device is powered OFF**.  

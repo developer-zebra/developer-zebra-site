@@ -1,0 +1,19 @@
+---
+csp: beaconmgr
+title: AltBeacon UUID
+type: parm
+order: 22
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Beacon Type is "AltBeacon" and Explicit Beacon UUID is "checked"
+  pivotal: No
+  name: AltBeaconUUID
+  type: string
+---
+
+Used to enter a 32-character AltBeacon universally unique identifier (UUID) in hexadecimal format. The last 8 hex characters correspond to ID1 and ID2 of the identifier.  
+
+**Input value rules**:
+* String of exactly 32 hexadecimal characters
+

@@ -1,0 +1,25 @@
+---
+csp: beaconmgr
+title: Explicit Beacon UUID (checkbox)
+type: parm
+order: 7
+mx: "10.2"
+devicetype: A
+parm:
+  pivotal: No
+  name: BeaconType
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: (unchecked)
+      description: Disables entry of an explicit beacon UUID.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.2"
+      description: Enables entry of an explicit beacon UUID. 
+---
+
+Controls whether an explicit beacon UUID will be entered. If unchecked, a device-specific UUID is used. 

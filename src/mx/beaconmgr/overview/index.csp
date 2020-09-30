@@ -6,17 +6,19 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal emitted by a misplaced device to help locate the device using a second device running Zebra Device Tracker software.
+Beacon Manager (BeaconMgr) controls the signal transmitted by a misplaced device to help locate the device using Zebra Device Tracker software running on another device.
+
+The signal is transmitted by the Bluetooth radio of the lost device at an interval and power level set by the administrator. 
 
 -----
 
 ### Main Functionality
 
 * Turn On/Off: 
- * Beacon emission when device is powered off 
- * Beacon emission when device is in "Airplane mode"
-* Set the beacon emission power level  
-* Set the beacon emission interval
+ * Beacon transmission when device is powered off 
+ * Beacon transmission when device is in "Airplane mode"
+* Set the beacon transmission power level  
+* Set the beacon transmission interval
 * Set beacon parameters: 
  * Beacon type
  * iBeacon UUID
@@ -24,12 +26,10 @@ Beacon Manager (BeaconMgr) controls the signal emitted by a misplaced device to 
  * Minor ID
  * Custom beacon data
 
-<!--
+ <img style="height:450px" src="../../../../../images/mx/device_tracker_ui.png"/>
+ _The Zebra Device Tracker UI_.<br>
 
- <img style="height:450px" src="../../../../../images/mx/zebra_bluetooth_settings_app.png"/>
- _ZBS is preinstalled on devices running Android 8.x Oreo and later_.<br>
-
--->
+Zebra Device Tracker is preinstalled on most devices running Android 8.x Oreo and later. See the full [list of supported devices](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
 
 -----
 

@@ -7,7 +7,7 @@ mx: "10.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Beacon Type is "1 (non-existent)" and Explicit Beacon UUID is "checked"
+  presentif: Beacon Type is "iBeacon" and Explicit Beacon UUID is "checked"
   name: iBeaconUUID
   type: string
 ---

@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter a 32-character AltBeacon universally unique identifier (UUID) in hexadecimal format. The last 8 hex characters correspond to ID1 and ID2 of the identifier.  
+Used to enter a 32-character AltBeacon UUID in hexadecimal format. The last 8 hex characters correspond to ID1 and ID2 of the identifier.  
 
 **Input value rules**:
 * String of exactly 32 hexadecimal characters

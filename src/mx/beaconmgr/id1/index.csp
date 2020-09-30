@@ -1,0 +1,21 @@
+---
+csp: beaconmgr
+title: ID1
+type: parm
+order: 15
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Beacon Type is "AltBeacon"
+  pivotal: No
+  name: ID1
+  type: string
+---
+
+Used to enter the ID1 portion of the AltBeacon UUID. **Default value of `EBEB` is used if this parameter is missing or left blank. 
+
+**Input value rules**: 
+
+* String of exactly four (4) hexadecimal characters
+
+

@@ -17,7 +17,7 @@ This section discusses installation and configuration of Device Tracker. The cli
 
 
 Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#createstagenowinstallationprofile) and step 4 by creating a [StageNow configuration profile](#createstagenowconfigurationprofile). 
-<br><br>
+<br>
 
 **Configuration of the Device Tracker solution:**
 
@@ -31,7 +31,6 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 * **[Configure devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices. 
     * Assign friendly name
     * Assign a site location 
-
 <br>
 
 **Configure the Check-out feature _(optional)_:**
@@ -45,7 +44,7 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 ## Device Requirements
 
 * **Operating System:** 
-        * Android Oreo with GMS (non-restricted)
+    * Android Oreo with GMS (non-restricted)
 * **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), then user intervention is required to turn on Bluetooth.
 * **Wi-Fi** must be enabled and connected to the network to communicate with the server.
 * **Location Services** must be enabled on all devices to find devices using the Bluetooth-based proximity indicator. 
@@ -55,14 +54,13 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 
 * Refer to the document supplied by Zebra to ensure the required URLs are accessible:
     * URL for the web portal for administrator access
-    * URL for the mobile devices to access the cloud server:
+    * URL for the mobile devices to access the cloud server:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://[ProjectID].firebaseio.com`
 <br><br>
 where [ProjectID] is located in the server config.xml supplied.  
-<br><br>
 
 * The client application sends device status and events to the server over HTTPS. Network port 443 or the appopriate URL must permitted to reach the Google Cloud Firebase platform.
-
+<br><br>
 
 ## Create StageNow Profiles
 

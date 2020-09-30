@@ -5,7 +5,9 @@ product: Device Tracker
 productversion: '2.3.1'
 ---
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b> <br>Device Tracker 3.0 or higher significantly upgrades the software to a cloud based solution.<br> <a href="/devicetracker/2-3/guide/about">Device Tracker 2.3.1</a> or lower is the on-premise version of the solution, to be replaced by Device Tracker 3.0 in the future..... 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <b>Device Tracker 3.0</b> or higher is a cloud-based solution. For access, contact your local Zebra account manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="/devicetracker/2-3/guide/about">Device Tracker Basic 2.3.1</a> or lower is the on-premise version, which is incompatible with Device Tracker 3.0 and cannot be upgraded. Android 10 is the last Android platform supported on Device Tracker Basic 2.3.1.
 </div>
 
 ## Overview

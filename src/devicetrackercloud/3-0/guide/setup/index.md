@@ -42,6 +42,28 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 <br>
 <br>
 
+## Device Requirements
+
+* **Operating System:** 
+        * Android Oreo with GMS (non-restricted)
+* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), then user intervention is required to turn on Bluetooth.
+* **Wi-Fi** must be enabled and connected to the network to communicate with the server.
+* **Location Services** must be enabled on all devices to find devices using the Bluetooth-based proximity indicator. 
+<br><br>
+
+## Network Requirements
+
+* Refer to the document supplied by Zebra to ensure the required URLs are accessible:
+    * URL for the web portal for administrator access
+    * URL for the mobile devices to access the cloud server:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://[ProjectID].firebaseio.com`
+<br><br>
+where [ProjectID] is located in the server config.xml supplied.  
+<br><br>
+
+* The client application sends device status and events to the server over HTTPS. Network port 443 or the appopriate URL must permitted to reach the Google Cloud Firebase platform.
+
+
 ## Create StageNow Profiles
 
 This section provides procedures to create StageNow Installation and Configuration profiles. StageNow version 4.2 or higher is required if automatically bypassing the overlay permission for Check-out.  See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow](/stagenow/latest/about/) for the install file and more information.
@@ -303,7 +325,7 @@ In a browser, enter the URL shared by Zebra services to access the web portal. F
 ### Add User
 To add a user:
 
-1.	From the web console, tap **Manage Users** in the left menu.
+1.	From the web portal, tap **Manage Users** in the left menu.
 2.	Select the role of the new user: Admin or Manager
 3.	Enter the information prompted, including the email and password.
 4.	Tap **Add User.**
@@ -313,7 +335,7 @@ To add a user:
 ### Delete User
 To delete a user:
 
-1.	From the web console, tap **Manage Users** in the left menu.
+1.	From the web portal, tap **Manage Users** in the left menu.
 2.	From the list of users, locate the user to delete and click on the _delete icon_ next to the user.
 3.	Click **OK** in the confirmation message.
 <br>
@@ -323,7 +345,7 @@ User names can be searched by email address. The entire email address must be en
 
 To search for a user:
 
-1.	From the web console, tap **Manager Users** in the left menu.
+1.	From the web portal, tap **Manager Users** in the left menu.
 2.	Enter the email address to search for in the search field located below the **Add User** button from the top right of the page. Press the enter key.
 3.	The search results are displayed.
 <br>
@@ -333,7 +355,7 @@ The password can be reset through the web portal or the client app if the admini
 
 Steps to reset the password in the web portal:
 
-1.	From the web console login page, click **Forgot your password.**
+1.	From the web portal login page, click **Forgot your password.**
 2.	Enter your email address then click **Reset Password.**
 3.	A message appears indicating a password reset email is sent.  
 4.	Open the email and click on the link.

@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: AltBeacon ID1
 type: parm
-order: 15
+order: 30
 mx: "10.2"
 devicetype: A
 parm:

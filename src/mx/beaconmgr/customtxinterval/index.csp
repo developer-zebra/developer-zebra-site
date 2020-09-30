@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Custom Tranamit Interval
 type: parm
-order: 18
+order: 50
 mx: "10.2"
 devicetype: A
 parm:
@@ -12,7 +12,7 @@ parm:
   type: integer
 ---
 
-
+Used to enter the amount of time (in milliseconds) between each beacon transmission. Allowable range is 100 ms (10 transmissions per second) and 10240 (one transmission every 10 seconds). 
 
 **Input value rules**: 
 

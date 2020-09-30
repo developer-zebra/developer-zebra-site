@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Custom Transmit Power Level
 type: parm
-order: 12
+order: 45
 mx: "10.2"
 devicetype: A
 parm:
@@ -12,7 +12,9 @@ parm:
   type: integer
 ---
 
+Used to enter a power level (in decibels per milliwatt, or dBm) for beacon transmission.  
 
 **Input value rules**: 
 
 * An integer from -127&ndash;1 
+

@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Explicit Beacon UUID (checkbox)
 type: parm
-order: 7
+order: 25
 mx: "10.2"
 devicetype: A
 parm:

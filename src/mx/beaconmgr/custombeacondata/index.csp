@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Custom Beacon Data 
 type: parm
-order: 25
+order: 40
 mx: "10.2"
 devicetype: A
 parm:
@@ -14,5 +14,4 @@ parm:
 Used to enter custom or proprietary UUID, URL and other data for beacon transmission. Accepts as many as 56 hexadecimal characters; must follow Bluetooth SIG Advertising format.
 
 **Input value rules**:
-* String from 1-56 numerals in Bluetooth SIG Advertising format
-
+* String from 1&ndash;56 numerals in Bluetooth SIG Advertising format

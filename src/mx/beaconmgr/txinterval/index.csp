@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Transmit Interval
 type: parm
-order: 10
+order: 15
 mx: "10.2"
 devicetype: A
 parm:

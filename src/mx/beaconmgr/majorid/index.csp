@@ -2,7 +2,7 @@
 csp: 
 title: iBeacon Major ID
 type: parm
-order: 15
+order: 56
 mx: "10.2"
 devicetype: A
 parm:

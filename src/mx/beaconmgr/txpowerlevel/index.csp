@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Transmit Power Level
 type: parm
-order: 20
+order: 10
 mx: "10.2"
 devicetype: A
 parm:

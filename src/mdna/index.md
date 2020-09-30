@@ -18,28 +18,45 @@ features:
    video_thumb: video_thumb.jpg
    button_text: Learn More
  - image-location: left
-   title: DataWedge Wake-up & Scan
-   subtitle: New in Datawedge 8.1
-   description: With the new "Wake-up and Scan" feature, barcodes are instantly captured with the single press of the scan button. This improves user productivity by eliminating delays normally seen when a device emerges from a power-saving state.
-   url: /datawedge/8-1/guide/about/
-   video: vkc-W4N6HP8
+   title: Detect the presence of a signature
+   subtitle: New in Datawedge 
+   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
+   url: /datawedge/latest/guide/about/
+   video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
  - image-location: right
-   title: Disable Apps by Icon and App name
-   subtitle: New in Enterprise Home Screen
-   description: Admins will now find it easier and faster to disable applications using Enterprise Home Screen's new feature that allows them to select applications by their name or icon instead of having to select applications by their package name.
-   url: /ehs/4-0/guide/about/
-   video: c3iaTgk0708
+   title: Edge Detection Doc Capture
+   subtitle: New in Datawedge
+   description: Easily capture an entire form with DataWedge, without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   url: /datawedge/latest/guide/about/
+   video: DI8pxsTJdtI
    video_type: youtube
    button_text: Learn More
  - image-location: left
-   title: MX 10.1 latest features
-   description: MX 10.1 delivers powerful new features. Display Manager now controls automatic screen rotation; File Manager now offers more control over uploads, including sort order, file-naming patterns and deletion of source or target; Power Manager now controls battery saver mode; and UI Manager can display or hide battery-charge percentage.
-   url: /mdna/#newinmx102
-   button_text: Full List of What's New
-   video: BzLDGvai0us
+   title: Wake up and scan
+   subtitle: New in Datawedge
+   description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.  
+   url: /datawedge/latest/guide/about/
+   button_text: Learn More
+   video: bR_uJwpVZD0
    video_type: youtube
+ - image-location: right
+   title: Simplified Scanning Configuration
+   subtitle: New in Datawedge
+   description: Scanning mode configuration is now more simplified with DataWedge. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   url: /datawedge/latest/guide/about/
+   video: R-5BOXFZ2cw
+   video_type: youtube
+   button_text: Learn More
+ - image-location: left
+   title: Using multiple barcode scanners interchangeably
+   subtitle: New in Datawedge
+   description: Easily use scanners interchangeably with DataWedge, without the need for additional setup and configuration between each scanner use. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   url: /datawedge/latest/guide/about/
+   button_text: Learn More
+   video: QYDezVYFpN4
+   video_type: youtube   
    
 ---
 

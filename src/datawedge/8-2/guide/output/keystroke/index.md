@@ -25,7 +25,7 @@ Raw data is received as a byte stream using the `com.symbol.datawedge.decode_dat
 ## Keystroke Output Setup
 
 To enable Keystroke output for a Profile, place a check in the checkbox:
-<img style="height:350px" src="../keystroke-output_7.3.jpg"/>
+<img style="height:350px" src="keystroke_output.png"/>
 _Keystroke Output options_
 <br>
 
@@ -47,6 +47,13 @@ _Keystroke Output options_
 **Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 (to a max. of 1000) until errors cease. **Note: This parameter can negatively effect application performance**. 
 
 **Multi-byte character delay -** applies the Inter-character delay (described above) to multi-byte characters only. This parameter is intended to help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Available only when Inter-character delay is enabled. **Disabled by default**. 
+
+**DataWedge keyboard options -** used to display the DataWedge keyboard to dispatch data and controls how long it is displayed. Applies to Android 10 or higher, in which DataWedge uses its own keyboard to dispatch keystroke data. When a scan is performed, the default keyboard is switched to DataWedge keyboard to dispatch data. Once data dispatch is complete, the keyboard is switched back to the previous keyboard. By default, DataWedge keyboard does not have a graphical user interface. Zebra recommends to enable this option in the following situations:<br>
+&nbsp;&nbsp;&nbsp;-&nbsp; If a webpage or Android application is required to scroll automatically when scanning with ENTER/TAB key (from Basic Data Formatting settings).<br>
+&nbsp;&nbsp;&nbsp;-&nbsp; If it is required to prevent the default keyboard from appearing during a continuous scanning session.
+* **Display DataWedge keyboard -** enable/disable the visibility of DataWedge keyboard. DataWedge keyboard shows a graphical user interface when this option is turned on. 
+**Note:** Enabling/Disabling this option will not change the configurations in Android system Language and Input settings.
+* **Keyboard display timeout -** used to set the amount of time (in seconds) the keyboard should remain visible after a scan. Default value is 10 seconds. This timeout applies only when **Display DataWedge keyboard** is enabled. Users can tap on the keyboard UI if required to switch back to the previous keyboard before the timeout elapses. Setting the timeout value to 0 results to an infinite timeout. The keyboard does not switch to the previous keyboard unless the user taps on the DataWedge keyboard UI or there is a profile switch. 
 
 **Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application. This parameter is useful when sending data containing text as well as key events, where key events are sent asynchronously causing data to be delivered in the incorrect order. In this circumstance, it is recommended to add a key event delay to correct the order of data delivery.
 

@@ -1,0 +1,20 @@
+---
+csp: beaconmgr
+title: Custom Tranamit Interval
+type: parm
+order: 18
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Transmit Interval is "Custom"
+  pivotal: No
+  name: CustomTxInterval
+  type: integer
+---
+
+
+
+**Input value rules**: 
+
+* An integer from 100&ndash;10240 
+

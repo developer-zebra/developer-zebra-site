@@ -1,6 +1,6 @@
 ---
-csp: beaconmgr
-title: ID1
+csp: 
+title: iBeacon Major ID
 type: parm
 order: 15
 mx: "10.2"

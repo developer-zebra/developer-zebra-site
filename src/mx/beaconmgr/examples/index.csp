@@ -15,6 +15,7 @@ order: 99
 			<parm name="Beaconing" value="1"/>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Turn beaconing on in Airplane Mode
 
@@ -24,6 +25,7 @@ order: 99
 			<parm name=" BeaconingInAirplaneMode " value="1"/>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Configure default AltBeacon data
 
@@ -35,6 +37,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Configure explicit beacon data using AltBeacon
 
@@ -50,6 +53,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Configure explicit beacon data using custom beacon
 
@@ -62,7 +66,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
-
+<br>
 
 #### Configure transmit (tx) interval (low latency)
 
@@ -74,7 +78,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
-
+<br>
 
 #### Configure transmit (tx) interval (custom value of 2000 ms)
 
@@ -87,6 +91,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Configure transmit (tx) power level (high)
 
@@ -98,6 +103,7 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+<br>
 
 #### Configure transmit (tx) power level (custom)
 

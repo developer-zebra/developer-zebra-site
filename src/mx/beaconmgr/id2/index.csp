@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter the ID2 portion of the AltBeacon UUID. **Default value of `ECDD` is used if this parameter is missing or left blank. 
+Used to enter the ID2 portion of the AltBeacon UUID. **Default value of** `ECDD` **is used if this parameter is missing or left blank**. 
 
 The 20-byte AltBeacon data format contains 40 hexadecimal characters of information divided into the UUID (32 hexadecimal characters) plus ID1 (4 hexadecimal characters) and ID2 (4 hexadecimal characters). 
 

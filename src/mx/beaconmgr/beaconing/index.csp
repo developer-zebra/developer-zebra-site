@@ -13,7 +13,7 @@ parm:
   list:
     - code: 0
       mx: "10.2"
-apilevel: "29"
+      apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -21,13 +21,13 @@ apilevel: "29"
       devicetype: A
       name: Turn ON
       mx: "10.2"
-apilevel: "29"
+      apilevel: "29"
       description: Enables beacon transmission when device is powered off. 
     - code: 2
       devicetype: A
       name: Turn OFF
       mx: "10.2"
-apilevel: "29"
+      apilevel: "29"
       description: Disables beacon transmission when device is powered off. 
 ---
 

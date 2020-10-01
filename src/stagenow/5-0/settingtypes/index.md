@@ -42,6 +42,8 @@ automenu:
           url: /stagenow/5-0/csp/batch
         - title: Battery Manager
           url: /stagenow/5-0/csp/battery
+        - title: Beacon Manager
+          url: /stagenow/5-0/csp/beaconmgr
         - title: Clock
           url: /stagenow/5-0/csp/clock
         - title: Component Manager

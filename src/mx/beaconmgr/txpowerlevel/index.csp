@@ -22,19 +22,19 @@ parm:
       name: Medium (-7 dBm)
       mx: "10.2"
       apilevel: "29"
-      description: Sets a moderate beacon transmission power level, preserving power and reducing detection range slightly. 
+      description: Sets a moderate beacon transmission power level, conserving power and reducing detection range slightly. 
     - code: 3
       devicetype: A
       name: Low Power (-15 dBm)
       mx: "10.2"
       apilevel: "29"
-      description: Sets a low beacon transmission power level, preserving power and reducing detection range.
+      description: Sets a low beacon transmission power level, conserving power and reducing detection range.
     - code: 4
       devicetype: A
       name: Ultra Low Power (-21 dBm)
       mx: "10.2"
       apilevel: "29"
-      description: Sets a very low beacon transmission power level, preserving power while reducing detection range to a minimum.
+      description: Sets a very low beacon transmission power level, conserving power while reducing detection range to a minimum.
     - code: 5
       devicetype: A
       name: Custom (-127 dBm to 1 dBm)

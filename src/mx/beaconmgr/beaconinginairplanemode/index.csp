@@ -17,15 +17,15 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      name: Enable
+      name: Turn ON
       mx: "10.2"
       description: Enables beacon transmission when device is powered off when in Airplane Mode.
     - code: 2
       devicetype: A
-      name: Disable
+      name: Turn OFF
       mx: "10.2"
       description: Disables beacon transmission when device is powered off when in Airplane Mode.
 ---
 
-Controls whether a beacon is transmitted by a device in "Airplane Mode" and subsequently **powered OFF**. Airplane Mode typically disables Bluetooth, cellular and Wi-Fi radios on the device and can be controlled using [Settings Manager](/mx/settingsmgr). 
+Controls whether a beacon is transmitted by a device in "Airplane Mode" and subsequently **powered OFF**. Airplane Mode typically disables Bluetooth, cellular and Wi-Fi radios on the device. It can be controlled using [Settings Manager](/mx/settingsmgr). 
 

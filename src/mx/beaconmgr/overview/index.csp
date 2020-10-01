@@ -18,9 +18,8 @@ Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low 
 * **Set beacon parameters for**: 
  * Beacon type
  * AltBeacon universally unique identifier (UUID) 
- * iBeacon UUID
- * Major ID
- * Minor ID
+ * AltBeacon ID1
+ * AltBeacon ID2
  * Custom beacon data
 
 -----

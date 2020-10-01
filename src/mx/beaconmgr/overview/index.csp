@@ -30,6 +30,6 @@ Beacon Manager provides administrative control of beacon contents as well as the
 <img style="height:450px" src="../../../../../images/mx/device_tracker_ui.png"/>
  _The Zebra Device Tracker user interface_.<br>
 
-Device Tracker is preinstalled on most Zebra devices running Android 8.x Oreo and later; it is compatible with many others. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
+Device Tracker is preinstalled on most Zebra devices running Android 8.x Oreo and later and is compatible with many others. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
 
 -----

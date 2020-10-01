@@ -5,4 +5,109 @@ type: text
 order: 99
 ---
 
-#### There are no code examples at this time 
+### Configure beaconing
+
+#### Turn beaconing on
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<parm name="Beaconing" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Turn beaconing on in Airplane Mode
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<parm name=" BeaconingInAirplaneMode " value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Configure default AltBeacon data
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="BeaconType" value="2"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Configure explicit beacon data using AltBeacon
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="BeaconType" value="2"/>
+				<parm name="ExplicitBeaconUUID" value="1"/>
+				<parm name="AltBeaconUUID" value="123456789abcdef123456789abcdef12"/>
+				<parm name="ID1" value="AAAA"/>
+				<parm name="ID2" value="BBBB"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Configure explicit beacon data using custom beacon
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="BeaconType" value="3"/>
+				<parm name="CustomBeaconData" value="1aff004c0215d69cad1c04fca07052bcc0896b0f7764aaaabbbbc5"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+#### Configure transmit (tx) interval (low latency)
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="TxInterval" value="1"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+#### Configure transmit (tx) interval (custom value of 2000 ms)
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="TxInterval" value="4"/>
+				<parm name="CustomTxInterval" value="2000"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Configure transmit (tx) power level (high)
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="TxPowerLevel" value="1"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Configure transmit (tx) power level (custom)
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="BeaconMgr" version="10.2" >
+			<characteristic type="BeaconParameters">
+				<parm name="TxPowerLevel" value="5"/>
+				<parm name="CustomTxPowerLevel" value="-24"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+

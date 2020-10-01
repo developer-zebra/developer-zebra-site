@@ -4,6 +4,7 @@ title: Transmit Interval
 type: parm
 order: 15
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +13,7 @@ parm:
   list:
     - code: 0
       mx: "10.2"
+      apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no changes device settings; any previously selected setting is retained.
@@ -19,21 +21,25 @@ parm:
       devicetype: A
       name: Low Latency (100 ms)
       mx: "10.2"
+      apilevel: "29"
       description: Causes a beacon to be transmitted 10 times per second. This option uses the most device power.
     - code: 2
       devicetype: A
       name: Balanced (250 ms)
       mx: "10.2"
+      apilevel: "29"
       description: Causes a beacon to be transmitted four times per second.
     - code: 3
       devicetype: A
       name: Low Power (1000 ms)
       mx: "10.2"
+      apilevel: "29"
       description: Causes a beacon to be transmitted once per second.
     - code: 4
       devicetype: A
       name: Custom (100 ms to 10240 ms)
       mx: "10.2"
+      apilevel: "29"
       description: Allows a custom value to be entered using the CustomTxInterval parameter.
 ---
 

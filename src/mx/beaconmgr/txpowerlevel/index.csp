@@ -4,6 +4,7 @@ title: Transmit Power Level
 type: parm
 order: 10
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +13,7 @@ parm:
   list:
     - code: 1
       mx: "10.2"
+      apilevel: "29"
       devicetype: A
       name: High (1 dBm)
       description: Sets the highest beacon transmission power level for maximum detection range. Uses the most device power.
@@ -19,21 +21,25 @@ parm:
       devicetype: A
       name: Medium (-7 dBm)
       mx: "10.2"
+      apilevel: "29"
       description: Sets a moderate beacon transmission power level, preserving power and reducing detection range slightly. 
     - code: 3
       devicetype: A
       name: Low Power (-15 dBm)
       mx: "10.2"
+      apilevel: "29"
       description: Sets a low beacon transmission power level, preserving power and reducing detection range.
     - code: 4
       devicetype: A
       name: Ultra Low Power (-21 dBm)
       mx: "10.2"
+      apilevel: "29"
       description: Sets a very low beacon transmission power level, preserving power while reducing detection range to a minimum.
     - code: 5
       devicetype: A
       name: Custom (-127 dBm to 1 dBm)
       mx: "10.2"
+      apilevel: "29"
       description: Allows a custom value to be entered using the CustomTxPowerLevel parameter.
 ---
 

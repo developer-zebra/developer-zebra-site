@@ -4,6 +4,7 @@ title: AltBeacon UUID
 type: parm
 order: 25
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: Beacon Type is "AltBeacon" and Explicit Beacon UUID is "checked"

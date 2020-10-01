@@ -4,6 +4,7 @@ title: Explicit Beacon UUID (checkbox)
 type: parm
 order: 20
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +13,7 @@ parm:
   list:
     - code: 0
       mx: "10.2"
+      apilevel: "29"
       devicetype: A
       name: (unchecked)
       description: Disables entry of an explicit beacon UUID.
@@ -19,6 +21,7 @@ parm:
       devicetype: A
       name: (checked)
       mx: "10.2"
+      apilevel: "29"
       description: Enables entry of an explicit beacon UUID. 
 ---
 

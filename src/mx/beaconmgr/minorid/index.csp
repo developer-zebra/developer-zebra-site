@@ -4,6 +4,7 @@ title: iBeacon Minor ID
 type: parm
 order: 57
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: Beacon Type is "iBeacon" 

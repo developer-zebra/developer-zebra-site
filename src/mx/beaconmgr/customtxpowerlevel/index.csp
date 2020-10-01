@@ -4,6 +4,7 @@ title: Custom Transmit Power Level
 type: parm
 order: 45
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: Transmit Power Level is "Custom"

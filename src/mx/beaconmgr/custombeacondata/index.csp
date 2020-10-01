@@ -4,6 +4,7 @@ title: Custom Beacon Data
 type: parm
 order: 40
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No

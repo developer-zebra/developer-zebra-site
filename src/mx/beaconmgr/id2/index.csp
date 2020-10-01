@@ -4,6 +4,7 @@ title: AltBeacon ID2
 type: parm
 order: 35
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: Beacon Type is "AltBeacon"

@@ -4,6 +4,7 @@ title: Custom Tranamit Interval
 type: parm
 order: 50
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: Transmit Interval is "Custom"

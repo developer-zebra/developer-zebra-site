@@ -4,6 +4,7 @@ title: Beacon Type
 type: parm
 order: 7
 mx: "10.2"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +13,7 @@ parm:
   list:
     - code: 0
       mx: "10.2"
+apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change device settings; any previously selected setting is retained.
@@ -19,11 +21,13 @@ parm:
       devicetype: A
       name: AltBeacon
       mx: "10.2"
+apilevel: "29"
       description: Enables the AltBeacon open device proximity protocols. 
     - code: 3
       devicetype: A
       name: Custom
       mx: "10.2"
+apilevel: "29"
       description: Enables the custom proximity protocols specified in the CustomBeaconData parameter. 
 ---
 

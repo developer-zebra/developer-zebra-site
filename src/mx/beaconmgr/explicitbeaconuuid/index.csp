@@ -22,4 +22,4 @@ parm:
       description: Enables entry of an explicit beacon UUID. 
 ---
 
-Controls whether an explicit beacon UUID will be entered. If unchecked, a device-specific UUID is used. 
+Controls whether an explicit beacon UUID will be entered. If unchecked, a self-generated, device-specific UUID is used. 

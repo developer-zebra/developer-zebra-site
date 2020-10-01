@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: AltBeacon UUID
 type: parm
-order: 20
+order: 25
 mx: "10.2"
 devicetype: A
 parm:
@@ -12,7 +12,9 @@ parm:
   type: string
 ---
 
-Used to enter a 32-character AltBeacon UUID in hexadecimal format. The last 8 hex characters correspond to ID1 and ID2 of the identifier.  
+Used to enter a 32-character AltBeacon UUID in hexadecimal format. 
+
+The 20-byte AltBeacon data format contains 40 hexadecimal characters of information divided into the UUID (32 hexadecimal characters) plus ID1 (4 hexadecimal characters) and ID2 (4 hexadecimal characters). 
 
 **Input value rules**:
 * String of exactly 32 hexadecimal characters

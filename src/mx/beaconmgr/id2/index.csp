@@ -14,6 +14,8 @@ parm:
 
 Used to enter the ID2 portion of the AltBeacon UUID. **Default value of `ECDD` is used if this parameter is missing or left blank. 
 
+The 20-byte AltBeacon data format contains 40 hexadecimal characters of information divided into the UUID (32 hexadecimal characters) plus ID1 (4 hexadecimal characters) and ID2 (4 hexadecimal characters). 
+
 **Input value rules**: 
 
 * String of exactly four (4) hexadecimal characters

@@ -6,7 +6,9 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of a powered-off device to help locate the device using [Zebra Device Tracker](/devicetracker) software running on a second device. Beacon Manager allows administrative control of the interval and power level of the transmitted signal to help balance power consumption and detection range. **Beacons transmit non-connectible advertising packets**.  
+Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of a powered-off device to help locate the device using [Zebra Device Tracker](#zebradevicetracker) software running on a second device, which detects the non-connectible advertising packets sent by the device being tracked. 
+
+Beacon Manager provides administrative control of beacon contents as well as the interval and power level of the transmitted signal to help balance power consumption with detectable range. 
 
 ### Main Functionality
 
@@ -26,8 +28,8 @@ Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low 
 ### Zebra Device Tracker
 
 <img style="height:450px" src="../../../../../images/mx/device_tracker_ui.png"/>
- _The Zebra Device Tracker UI_.<br>
+ _The Zebra Device Tracker user interface_.<br>
 
-Device Tracker is preinstalled on most Zebra devices running Android 8.x Oreo and later and is compatible with some others. See [supported devices table](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices) for more information. 
+Device Tracker is preinstalled on most Zebra devices running Android 8.x Oreo and later; it is compatible with many others. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
 
 -----

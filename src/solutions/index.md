@@ -93,32 +93,32 @@ products:
         label: '2.0'
   - title: Device Tracker Basic
     description: A centralized on-premise solution to track, find, and prevent misplaced devices within a facility.
-    url: /devicetracker
+    url: /devicetrackerbasic
     image: /images/products/devicetracker.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker/2-3/guide/about
+        url: /devicetrackerbasic/2-3/guide/about
       - title: Install & Setup
-        url: /devicetracker/2-3/guide/setup
+        url: /devicetrackerbasic/2-3/guide/setup
       - title: Admin View
-        url: /devicetracker/2-3/guide/admin
+        url: /devicetrackerbasic/2-3/guide/admin
       - title: Device Management
-        url: /devicetracker/2-3/guide/mgmt
+        url: /devicetrackerbasic/2-3/guide/mgmt
       - title: Configuration
-        url: /devicetracker/2-3/guide/config
+        url: /devicetrackerbasic/2-3/guide/config
       - title: Troubleshooting & FAQ
-        url: /devicetracker/2-3/guide/troubleshooting
+        url: /devicetrackerbasic/2-3/guide/troubleshooting
     versions:
-      - url: /devicetracker/2-3/guide/about
+      - url: /devicetrackerbasic/2-3/guide/about
         label: '2.3'
-      - url: /devicetracker/2-2/guide/about
+      - url: /devicetrackerbasic/2-2/guide/about
         label: '2.2'
-      - url: /devicetracker/2-1/guide/about
+      - url: /devicetrackerbasic/2-1/guide/about
         label: '2.1'
-      - url: /devicetracker/1-0/guide/about
+      - url: /devicetrackerbasic/1-0/guide/about
         label: '1.0'
-  - title: Device Tracker
+  - title: Device Tracker 
     description: A centralized cloud-based solution to track, find, and prevent misplaced devices within a facility.
     url: /devicetrackercloud
     image: /images/products/devicetracker.png

@@ -1,7 +1,7 @@
 ---
-title: About Device Tracker
+title: About Device Tracker Basic
 layout: guide.html
-product: Device Tracker
+product: Device Tracker Basic
 productversion: '2.3.1'
 ---
 
@@ -15,16 +15,16 @@ productversion: '2.3.1'
 
 ## Overview
 
-Device Tracker is a centralized software solution that tracks and finds misplaced devices within a facility to help prevent inventory shrinkage. It leverages existing WiFi network infrastructure, Bluetooth Low Energy (BLE) and audio chirping to locate devices. Device Tracker continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
+Device Tracker Basic is a centralized software solution that tracks and finds misplaced devices within a facility to help prevent inventory shrinkage. It leverages existing WiFi network infrastructure, Bluetooth Low Energy (BLE) and audio chirping to locate devices. Device Tracker Basic Basic continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
 
-When locating a device, Device Tracker identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility.  The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device.  Chirping audio can be played on the misplaced device to further determine its specific location. 
+When locating a device, Device Tracker Basic identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility.  The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device.  Chirping audio can be played on the misplaced device to further determine its specific location. 
 
-## New in Device Tracker 2.3.1
+## New in Device Tracker Basic 2.3.1
 * New feature on the server to toggle BLE for device proximity tracking.
 * New BLE proximity indicator to determine proximity of device based on BLE beacon transmissions.
 * Ability to delete "Never connected" devices in the web portal that have been uploaded but never connected to the server. This option helps to remove devices uploaded to the console via .CSV file in error. 
 * Self-signed certificates are now supported to help simplify deployment of product demos and trials.
-* Enhanced Device Tracker mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.
+* Enhanced Device Tracker Basic mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.
 
 ## Version History
 
@@ -44,7 +44,7 @@ When locating a device, Device Tracker identifies the general area where the mis
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">2.3</td>
-    <td style="text-align:left">• New BLE device proximity indicator to locate a misplaced device by leveraging BLE device-to-device beacon transmissions.<br>• Enhanced Device Tracker mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.</td>
+    <td style="text-align:left">• New BLE device proximity indicator to locate a misplaced device by leveraging BLE device-to-device beacon transmissions.<br>• Enhanced Device Tracker Basic mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.</td>
   </tr>
    <tr>
     <td style="text-align:center" rowspan="2">2.2.1</td>
@@ -85,7 +85,7 @@ When locating a device, Device Tracker identifies the general area where the mis
 
 ##Main Features
 
-Device Tracker main features:
+Device Tracker Basic main features:
 *	General location information for all supported WiFi devices based on connected AP
 * Real-time device proximity tracking with BLE
 *	Misplaced device prevention by monitoring low power and disconnection state
@@ -95,7 +95,7 @@ Device Tracker main features:
  * Device tagging for easier organization, identification, and tracking
  * Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
 *	Find and retrieve misplaced devices with client app using audio sound
-*	Secure communications between the Device Tracker Client application and server
+*	Secure communications between the Device Tracker Basic Client application and server
 *	Friendly name assignment for APs and devices for ease of identification and tracking
 *	Report generation to export data 
 * Capability for device staging with the use of an EMM such as Zebra's [StageNow](/stagenow/latest/about) with [Battery Manager CSP](/mx/batterymgr).
@@ -103,7 +103,7 @@ Device Tracker main features:
 
 ##How it works
 
-The Device Tracker client app registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located while connected to the AP. From the web portal, the Admin marks the misplaced device "To be found". On the associate’s device, the Device Tracker client displays a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. If BLE is enabled, a proximity meter appears indicating how close or far the user is to the misplaced device. <!--"Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device.--> Audio can be played on the target device to further locate it by sound. 
+The Device Tracker Basic client app registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located while connected to the AP. From the web portal, the Admin marks the misplaced device "To be found". On the associate’s device, the Device Tracker Basic client displays a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. If BLE is enabled, a proximity meter appears indicating how close or far the user is to the misplaced device. <!--"Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device.--> Audio can be played on the target device to further locate it by sound. 
 
 The web portal provides a dashboard for administrators to monitor the status of all tracked devices, identifying any misplaced devices. The last known status is provided from devices so action can be taken to prevent lost or misplaced devices.
 

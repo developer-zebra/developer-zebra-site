@@ -66,7 +66,7 @@ Comparison of Device Tracker Basic and Device Tracker:
   </tr>
   <tr>
     <td>Common Features</td>
-    <td colspan="2">• Real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection state<br>• Centralized dashboard</td>
+    <td colspan="2">• Real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Centralized dashboard</td>
   </tr>
   <tr>
     <td>Device Check-out/<br>Check-in</td>

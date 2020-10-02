@@ -6,11 +6,11 @@ productversion: '2.3.1'
 ---
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="/devicetracker/2-3/guide/about"><b>Device Tracker 2.3.1</b></a> or lower, the <i>on-premise</i> solution, is now renamed to <b>Device Tracker Basic.</b> Android 10 device support, soon-to-be added, is the last Android platform supported. <br><br>
-<p style="color:black;"><u>Coming soon:</u></p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <a href="../alert"><b>Device Tracker</b></a> <i>next generation</i> is a cloud-based scalable solution being released towards the end of 2020. It will replace Device Tracker Basic. For access, contact your local Zebra account manager.<br>
+<b>Device Tracker 2.3.1</b> or lower, the <i>on-premise</i> version, is now renamed to <b>Device Tracker Basic.</b> Android 10 device support, soon-to-be added, is the last Android platform supported. Device Tracker Basic is <i>not</i> compatible with the upcoming Device Tracker release - <i><b>Device Tracker Basic</b> cannot be upgraded to <b>Device Tracker.</b></i> <br><br>
+<p style="color:black;"><b>Coming soon:</b></p>
+<a href="/devicetrackerbasic/transition"><b>Device Tracker</b></a> <i>next generation</i>, the <i>cloud-based</i> version, is being released towards the end of 2020. It is the replacement for <b>Device Tracker Basic.</b> For access, contact your local Zebra account manager.<br>
 
-<a href="../alert" class="btn btn-danger">Learn About Device Tracker</a>  <p></p>
+<a href="/devicetrackerbasic/transition" class="btn btn-danger">Learn About Device Tracker</a>  <p></p>
 </div>
 
 ## Overview

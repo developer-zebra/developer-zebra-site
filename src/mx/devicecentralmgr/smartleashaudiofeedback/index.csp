@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "10.2"
-      description: Activates Smart Leash audio feedback. 
+      description: Activates Smart Leash audio feedback on the device. 
     - code: 2
       devicetype: A
       name: Disable
       mx: "10.2"
-      description: Deactivates Smart Leash audio feedback. 
+      description: Deactivates Smart Leash audio feedback on the device. 
 ---
 
 Controls Smart Leash audio feedback, which plays a sound when the device user changes their work area and leaves a connected wireless peripheral behind.

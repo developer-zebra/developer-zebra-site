@@ -1,0 +1,30 @@
+---
+csp: devicecentralmgr
+title: Smart Leash Settings UI Show/Hide
+type: parm
+order: 2
+mx: "10.2"
+devicetype: A
+parm:
+  pivotal: No
+  name: SmartLeashSettingsUI
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.2"
+      description: Allows the device user to access Smart Leash settings. 
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.2"
+      description: Prevents the device user from accessing Smart Leash settings. 
+---
+
+Controls whether Smart Leash settings panel is accessible by the device user. 

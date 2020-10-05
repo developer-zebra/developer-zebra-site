@@ -1,0 +1,30 @@
+---
+csp: devicecentralmgr
+title: Smart Leash Audio Feedback Enable/Disable
+type: parm
+order: 2
+mx: "10.2"
+devicetype: A
+parm:
+  pivotal: No
+  name: SmartLeashAudioFeedback
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.2"
+      description: Activates Smart Leash audio feedback. 
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.2"
+      description: Deactivates Smart Leash audio feedback. 
+---
+
+Controls Smart Leash audio feedback, which plays a sound when the device user changes their work area and leaves a connected wireless peripheral behind.

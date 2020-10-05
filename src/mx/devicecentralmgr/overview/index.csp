@@ -10,9 +10,20 @@ The Device Central Manager (DeviceCentralMgr) allows configuration of settings o
 
 ### Main Functionality
 
-* Show/hide firmware update button
-* Show/hide Bluetooth On/Off button
+* **Enable/Disable display of:
+ * Firmware update button
+ * Bluetooth On/Off button
+ * Smart Leash settings panel
+* **Turn On/Off:
+ * Smart Leash audio feedback
+ * Smart Leash haptic feedback 
+* Configure Smart Leash: 
+ * Audio feedback sound
+ * Audio feedback volume
+ * Audio feedback repeat count
+ * Haptic feedback duration
 * Restrict Bluetooth pairing to a single device per device class  
+
 
 -----
 

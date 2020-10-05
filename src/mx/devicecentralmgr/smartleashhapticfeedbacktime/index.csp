@@ -6,13 +6,13 @@ order: 2
 mx: "10.2"
 devicetype: A
 parm:
-  presentif: Smart Leash Audio Feedback is set to "Enable"
+  presentif: Smart Leash Haptic Feedback is set to "Enable"
   pivotal: No
   name: SmartLeashHapticFeedbackTime
   type: integer
 ---
 
-Used to control the number of times audio feedback is played when a Smart Leash event is trggered. Entering "0" causes the audio feedback sound to be played one time only. 
+Controls the length of time (in ms) the device vibrates when a Smart Leash event is triggered. Supported range is 500 ms (half a second) to 1800000 ms (30 minutes).
 
 **Parm value input rules**: 
-* Ingeter from 0&ndash;100
+* Integer from 500&ndash;1800000

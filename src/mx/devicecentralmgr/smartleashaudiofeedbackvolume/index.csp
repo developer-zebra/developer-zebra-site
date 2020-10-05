@@ -1,6 +1,6 @@
 ---
 csp: devicecentralmgr
-title: Smart Leash Audio Feedback Repeat
+title: Smart Leash Audio Feedback Volume
 type: parm
 order: 2
 mx: "10.2"
@@ -8,11 +8,12 @@ devicetype: A
 parm:
   presentif: Smart Leash Audio Feedback is set to "Enable"
   pivotal: No
-  name: SmartLeashAudioFeedbackRepeatCount
+  name: SmartLeashAudioFeedbackVolume
   type: integer
 ---
 
-Used to control the number of times audio feedback is played when a Smart Leash event is trggered. Entering "0" causes the audio feedback sound to be played one time only. 
+Used to control the initial volume level (as a percentage of the device maximum from 1&ndash;100) of the audio feedback sound played when a Smart Leash event is triggered. 
 
 **Parm value input rules**: 
-* Ingeter from 0&ndash;100
+* Integer from 1&ndash;100
+

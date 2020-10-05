@@ -16,7 +16,6 @@ order: 99
     </wap-provisioningdoc>
 
 <br>
-<br>
 	
 #### Hide "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral app, allow pairing of one Bluetooth device per class:
 

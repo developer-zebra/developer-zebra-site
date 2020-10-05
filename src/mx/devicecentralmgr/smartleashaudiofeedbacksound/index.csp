@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to control the number of times audio feedback is played when a Smart Leash event is trggered. Entering "0" causes the audio feedback sound to be played one time only. 
+Used to enter the name of an existing ringtone or the path and file name to play when a Smart Leash event is triggered. Supports `.wav`, `.ogg`, `.mp3` and `.m4a` files. 
 
 **Parm value input rules**: 
-* Ingeter from 0&ndash;100
+* Name of device ringtone or name and path to a `.wav`, `.ogg`, `.mp3` and `.m4a` file on the device

@@ -12,7 +12,7 @@ parm:
   type: integer
 ---
 
-Used to control the number of times audio feedback is played when a Smart Leash event is trggered. Entering "0" causes the audio feedback sound to be played one time only. 
+Used to control the number of times the selected audio feedback ringtone or file is played when a Smart Leash event is triggered. Entering "0" causes the audio feedback sound to be played one time only. 
 
 **Parm value input rules**: 
-* Ingeter from 0&ndash;100
+* Integer from 0&ndash;100

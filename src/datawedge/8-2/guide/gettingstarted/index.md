@@ -136,7 +136,7 @@ The following example discusses the use of SWITCH_TO_PROFILE with SCANNER_INPUT_
 ## Sample Apps
 
 As of writing, the following [DataWedge sample applications](../samples) are available: 
-* [Getting Started with DataWedge on Zebra Devices](https://developer.zebra.com/blog/getting-started-datawedge-zebra-devices) - a guide to develop an application to capture barcode data
+* [Getting Started with DataWedge on Zebra Devices](https://developer.zebra.com/blog/getting-started-datawedge-zebra-devices) - a guide to develop an application to capture barcode data written in Java, Kotlin, and Xamarin
 * [Tutorial on how to receive scanned barcode data](../samples/tutorial-ReceiveScannedData/) - a walk-through on how to receive scanned barcode data through an Android intent
 * [Basic scanning app](../samples/basicintent1) – uses an Android intent without DataWedge intent APIs
 * [Scanning app](../samples/barcode1) - includes ability to perform the following using DataWedge intent APIs: 

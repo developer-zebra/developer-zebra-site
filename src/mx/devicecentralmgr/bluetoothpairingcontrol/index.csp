@@ -2,7 +2,7 @@
 csp: devicecentralmgr
 title: Bluetooth Pairing Control
 type: parm
-order: 4
+order: 10
 mx: "8.1"
 devicetype: A
 info: This feature is deprecated in Device Central; it will be removed from a future version. Zebra recommends using Bluetooth Manager with MX 10.1 or later to perform this function.

@@ -2,7 +2,7 @@
 csp: devicecentralmgr
 title: Firmware Update Button Show/Hide
 type: parm
-order: 2
+order: 15
 mx: "8.1"
 devicetype: A
 parm:

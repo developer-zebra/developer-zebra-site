@@ -2,7 +2,7 @@
 csp: devicecentralmgr
 title: Smart Leash Settings UI Show/Hide
 type: parm
-order: 2
+order: 20
 mx: "10.2"
 devicetype: A
 parm:

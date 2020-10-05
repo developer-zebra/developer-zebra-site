@@ -2,7 +2,7 @@
 csp: devicecentralmgr
 title: Smart Leash Audio Feedback Volume
 type: parm
-order: 2
+order: 40
 mx: "10.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: devicecentralmgr
 title: Examples
 type: text
-order: 99
+order: 999
 ---
 #### Show "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral app, allow pairing of multiple Bluetooth devices per class:
 

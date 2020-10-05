@@ -172,6 +172,7 @@ automenu:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./getdisabledapplist">Get Disabled App List</a>** - Return a list of apps and activities that are blocked from using DataWedge.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./getversioninfo">Get Version Info</a>** - Return the current version of DataWedge, SimulScan, and Scanner Framework/Decoder library installed on the device.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./importconfig">Import Config</a>** - Import a Profile and/or Config file, which can contain multiple Profiles.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./notify">Notify</a>** - Play notification sounds on connected Bluetooth scanners with RSM.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./restoreconfig">Restore Config</a></td>** - Reset all user-configured settings and restore DataWedge to the factory-default settings.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setconfig">Set Config</a>** - Create, update or replace a Profile and its settings.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setdisabledapplist">Set Disabled App List</a>** - Add, remove or update an app/activity from the list which prevents the use of DataWedge.<br />

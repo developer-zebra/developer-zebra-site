@@ -22,16 +22,16 @@ Device Central features:
 
 <p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
-## New in Device Central 3.1
-* New **Smart Leash** feature for Android 10 devices triggers alerts if a Bluetooth accessory moves out of range.
-* Device support re-instated for Android 8 Oreo devices.
-
-
-### Mobility DNA Enterprise License
+## Mobility DNA Enterprise License
 Beginning with Device Central 3.0, a **[Mobility DNA Enterprise license](/licensing) is now required** to use Device Central on Zebra Professional-series devices, including TC21 and TC26. When unlicensed, the app displays a “Mobility DNA Enterprise license required” prompt (see below) when a user attempts to open Device Central.  **Learn more about [purchasing an MDNA Enterprise license](/licensing/process).** 
 
 <img style="height:400px" src="device-central-licensing.png"/>
 _MDNA Enterprise license required prompt_
+
+## New in Device Central 3.1
+* New **[Smart Leash](../usage/#smartleash)** feature triggering alerts if a Bluetooth peripheral moves out of range and becomes disconnected, preventing loss of peripherals. This feature applies to Android 10 devices and higher. 
+* **Connection Management for any Bluetooth Peripheral -** Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards is now supported, whereas previously only a restricted list of peripheral devices were supported. This feature is now available on Android 8 as well as Android 10. 
+* **Device Central upgrade now supported on Android Oreo -** Previous versions of Device Central can now be upgraded on supported Android 8 Oreo devices by installing the .APK.
 
 ## Version History
 
@@ -46,7 +46,6 @@ _MDNA Enterprise license required prompt_
       * The serial number for HS3100 Bluetooth headset may report incorrectly.
       * When connecting a Bluetooth peripheral device that provides battery information, such as RS6000 scanner or HS3100 headset, it may take 10-15 seconds for the battery information to appear.
       * Intermittently, a pop-up message "Failed to scan Bluetooth peripheral address. Please try again..." appears even though the BT peripheral MAC address barcode is scanned successfully.
-
 
 ### New in Device Central 2.1
 * **Hardware scan trigger support** added in the main app screen for [Scan and Pair](../usage/#scanandpair), utilizing DataWedge profile. 

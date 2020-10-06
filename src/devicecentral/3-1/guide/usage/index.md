@@ -9,6 +9,7 @@ productversion: '3.1'
 This section describes how to use **Device Central**. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
 ### Version History
+* **Device Central 3.1:** New **Smart Leash** feature triggering notification alerts if a Bluetooth accessory moves out of range and becomes disconnected, preventing loss of accessories. This feature applies to Android 10 devices and higher. 
 * **Device Central 3.0:** Mobility DNA Enterprise License required for some devices, now supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards, fixed issue pairing with printers and other accessories if authentication is set with user PIN entry, and fixed issue with improper reporting of the connection state if multiple RS5100 devices are paired.
 * **Device Central 2.1:** Use of hardware scan trigger to scan and pair. 
 
@@ -169,6 +170,29 @@ The **My Device** tab displays information pertaining to the Android device whic
 <img style="height:400px" src="my_device_3.0.png"/>
 <br>
 
+## Smart Leash
+**Smart Leash** triggers alerts via audio feedback and/or haptic feedback in addition to a notification visible in the notification drawer if a Bluetooth accessory moves out of range and becomes disconnected. These alerts notify the user to take immediate action to prevent accessory loss. This feature applies to Android 10 devices and higher.
+
+To use Smart Leash:
+
+1.	Launch **Device Central** from the app menu.
+2.	Tap the top right hamburger menu, then tap on **Settings.**
+<img style="height:400px" src="settings_menu.png"/>
+
+3.	Toggle to enable **Smart Leash.** Optionally, toggle to enable other feedback and related options: 
+* **Audio Feedback:**
+    * **Notification Sound -** select the audio for the alert
+    * **Repeat Count -**  set the number of times (0-100) the audio feedback sound repeats after initial playback
+    * **Volume -** set the volume level percentage % (1-100) for the audio feedback sound
+* **Haptic Feedback:**
+    * **Duration -** set the time in milliseconds (500-1,800,000) equivalent to 0.5 seconds to 30 minutes for the haptic, or vibration, feedback to take place
+
+<img style="height:400px" src="settings.png"/>
+
+4. When the connected Bluetooth peripheral moves out of range and becomes disconnected from the device, by default a notification message appears in the notification drawer:
+<img style="height:400px" src="smartleash_notification.png"/>
+<br>
+
 ## Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [Device Central Manager CSP](/mx/devicecentralmgr). The Device Central application must be installed on the device before configuring with Device Central Manager CSP. The features that can be controlled include:
 
@@ -177,8 +201,8 @@ _For Bluetooth headsets, mobile payment modules and printers:_ If a device is al
 _For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  <br>
 **Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature is deprecated from Device Central Manager CSP. Starting from MX version 10.1, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.
 * **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
-* **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
-<img style="height:400px" src="BT_setting_3.0.png"/>
+* **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen, tap on the top right hamburger menu and select **Settings**:
+<img style="height:400px" src="settings_bt.png"/>
 <br>
 
 * **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.

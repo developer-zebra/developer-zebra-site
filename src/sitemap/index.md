@@ -8,6 +8,20 @@ automenu:
       items:
         - title: AppGallery
           url: https://developer.zebra.com/docs/DOC-3040
+        - title: Barcode Scanner SDK for Android
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-android/about/
+        - title: Barcode Scanner SDK for Chrome OS
+          url: https://techdocs.zebra.com/dcs/scanners/chromeos/about/ 
+        - title: Barcode Scanner SDK for Linux
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-linux/about/
+        - title: Barcode Scanner SDK for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-windows/about/
+        - title: Bioptic Color Camera SDK for Linux
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-linux/about/
+        - title: Bioptic Color Camera SDK for Python (Linux)
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-python/about/
+        - title: Bioptic Color Camera SDK for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-windows/about/
         - title: CartScan
           url: http://techdocs.zebra.com/cartscan
         - title: DataWedge
@@ -34,6 +48,8 @@ automenu:
           url: http://techdocs.zebra.com/ekd
         - title: Link-OS SDKs
           url: http://techdocs.zebra.com/link-os/
+        - title: Logging Agent for Windows and Linux
+          url: https://techdocs.zebra.com/dcs/scanners/logging-agent/about/
         - title: Mobility Extensions (MX)
           url: http://techdocs.zebra.com/mx/
         - title: OEMConfig
@@ -44,10 +60,18 @@ automenu:
           url: http://techdocs.zebra.com/dcs/rfid
         - title: RxLogger
           url: http://techdocs.zebra.com/rxlogger
+        - title: Scanner JPOS Driver for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/jpos-windows/about/
+        - title: Scanner OPOS Driver for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/opos-windows/about/
         - title: SimulScan
           url: http://techdocs.zebra.com/simulscan
         - title: StageNow
           url: http://techdocs.zebra.com/stagenow/
+        - title: Xamarin Wrapper for RFID SDK (Android and iOS)
+          url: https://techdocs.zebra.com/dcs/scanners/xamarin-rfid/about/
+        - title: Xamarin Wrapper for Scanner SDK (Android and iOS)
+          url: https://techdocs.zebra.com/dcs/scanners/xamarin-scanner/dev-guide/ 
         - title: Zebra MDNA Licensing
           url: http://techdocs.zebra.com/licensing
     - title: App/Device Security
@@ -122,6 +146,29 @@ automenu:
           url: http://techdocs.zebra.com/emdk-for-xamarin
         - title: Enterprise Browser
           url: http://techdocs.zebra.com/enterprise-browser
+    - title: Barcode Scanning Tools
+      items:
+        - title: Barcode Scanner SDK for Android
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-android/about/
+        - title: Barcode Scanner SDK for Chrome OS
+          url: https://techdocs.zebra.com/dcs/scanners/chromeos/about/ 
+        - title: Barcode Scanner SDK for Linux
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-linux/about/
+        - title: Barcode Scanner SDK for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/sdk-windows/about/
+        - title: Bioptic Color Camera SDK for Linux
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-linux/about/
+        - title: Bioptic Color Camera SDK for Python (Linux)
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-python/about/
+        - title: Bioptic Color Camera SDK for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/camera-sdk-windows/about/
+        - title: Logging Agent for Windows and Linux
+          url: https://techdocs.zebra.com/dcs/scanners/logging-agent/about/
+        - title: Scanner JPOS Driver for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/jpos-windows/about/
+        - title: Scanner OPOS Driver for Windows
+          url: https://techdocs.zebra.com/dcs/scanners/opos-windows/about/
+
 menu:
   items:
     - title: About Zebra TechDocs

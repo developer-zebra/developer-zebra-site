@@ -81,21 +81,16 @@ _Click image to enlarge; ESC to exit_.
 ## Supported Devices
 
 
-ENGINEERING SUGG NOTES
+#### ZDS Support Notes
 
-"ZDS is available on all android devices starting Android Kitkat . Active support is available for all android devices starting Android M"
+* **ZDS is compatible with all Zebra devices running Android 4.4** (Kit Kat) and later. 
+* **Zebra offers active ZDS support for devices running Android 6.x** (Marshmallow) and later. 
+* **ZDS comes preinstalled on most devices with the latest Android 7.x (and later) builds**. 
+* **Installation might be required** for some devices running Android 4.4 and 5.x (Lollipop).
 
-For Android Kitkat and Lolipop ZDS may or may not be running depending on state of the device. 
+Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
 
-Please reach out to support team for further analysis on those devices .
-
-ORIGINAL
-
-ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
-
-
-
-<!-- 10/6/20 matrix removed at request of engineering
+<!-- 10/6/20 matrix removed at request of engineering (TUT-44574)
 <img alt="image" style="height:650px" src="zds_20_supported_devices.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
@@ -105,7 +100,7 @@ _Click image to enlarge; ESC to exit_.
 ## See Also
 
 * **[FAQ](../faq)** | Frequently asked questions about ZDS
-* **[ZDS Setup Guide](../setup)** | How to check whether ZDS is enabled
+* **[ZDS Setup Guide](../setup)** | How to check whether ZDS is installed and/or enabled.
 * **[Visibility IQ info page](https://www.zebra.com/us/en/blog/posts/2019/zebra-operational-visibility-services-is-now-visibilityiq-foresight.html)** | Sign up for regular updates
 
 <!-- 

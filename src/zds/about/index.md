@@ -86,7 +86,7 @@ _Click image to enlarge; ESC to exit_.
 * **ZDS is compatible with all Zebra devices running Android 4.4** (Kit Kat) and later. 
 * **Zebra offers active ZDS support for devices running Android 6.x** (Marshmallow) and later. 
 * **ZDS comes preinstalled on most devices with the latest Android 7.x (and later) builds**. 
-* **Installation might be required** for some devices running Android 4.4 and 5.x (Lollipop).
+* **Installation might be required** for devices running Android 4.4, 5.x (Lollipop) and later versions.
 
 Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
 

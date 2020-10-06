@@ -80,12 +80,26 @@ _Click image to enlarge; ESC to exit_.
  -->
 ## Supported Devices
 
+
+ENGINEERING SUGG NOTES
+
+"ZDS is available on all android devices starting Android Kitkat . Active support is available for all android devices starting Android M"
+
+For Android Kitkat and Lolipop ZDS may or may not be running depending on state of the device. 
+
+Please reach out to support team for further analysis on those devices .
+
+ORIGINAL
+
 ZDS comes preinstalled on the following supported devices with the Android versions indicated. **Devices and/or Android versions not shown here are NOT compatible with ZDS**. Some devices running KitKat require ZDS to be installed manually. Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
 
+
+
+<!-- 10/6/20 matrix removed at request of engineering
 <img alt="image" style="height:650px" src="zds_20_supported_devices.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
-
+ -->
 -----
 
 ## See Also

@@ -75,24 +75,24 @@ _Click image to enlarge; ESC to exit_.
 
 #### Functions of LifeGuard Updates Page
 
-**Revoke** logs out of the current OneCare account. Steps 3, 4 and 5 must be repeated to continue creating a Smart Profile. <br>
+**<u>Revoke</u>** logs out of the current OneCare account. After pressing, repeat Steps 3, 4 and 5 to continue creating a Smart Profile. <br>
 
-**Search Build Number** allows for a specific build number to be loaded.<br> 
+**<u>Search Build Number</u>** allows for loading of a specific build number.<br> 
 
-**Clear Selection** removes all selected filters.<br>
+**<u>Clear Selection</u>** removes all selected filters.<br>
 
-**Refresh** reloads the available build images from the LifeGuard database. **A "grayed-out" button indicates that StageNow already contains the latest build data**.<br>
+**<u>Refresh</u>** reloads the available build images from the LifeGuard database. **A "grayed-out" button indicates that StageNow already contains the latest build data**.<br>
 
-**Release notes** downloads the current release notes `.pdf` for off-line reference for a build.<br>
+**<u>Release notes</u>** downloads the current release notes for a build (`.pdf` file) for off-line reference.<br>
 
-#### Proceed to Next Section
+#### When desired build files are downloaded, proceed to the next section.
 
 
 ----- 
 
 ### II. Create a Smart Profile
 
-When creating a Smart Profile, StageNow examines the selected LifeGuard image, calculates all required Setting Types (CSPs) and creates all Profile steps necessary to deploy the image to the target device(s). 
+When creating a Smart Profile, StageNow examines the selected LifeGuard image, calculates all required Setting Types (CSPs), and creates all Profile steps necessary to deploy the image to the target device(s). 
 
 > **See [Notes section](#notes) below for important information**. 
 

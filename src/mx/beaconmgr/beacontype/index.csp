@@ -32,3 +32,4 @@ parm:
 ---
 
 Controls the type of beacon transmitted for locating a lost device when it's powered off. **[AltBeacon](https://altbeacon.org/), an open specification for determiniing device proximity, is enabled by default**. If "Custom" is selected (option 3), specify custom proximity protocols using the CustomBeaconData parameter.
+ 

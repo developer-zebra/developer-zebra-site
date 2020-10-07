@@ -22,13 +22,13 @@ parm:
       name: Low Latency (100 ms)
       mx: "10.2"
       apilevel: "29"
-      description: Causes a beacon to be transmitted 10 times per second. This option uses the most device power.
+      description: Causes a beacon to be transmitted approx. 10 times per second. This option uses the most device power.
     - code: 2
       devicetype: A
       name: Balanced (250 ms)
       mx: "10.2"
       apilevel: "29"
-      description: Causes a beacon to be transmitted four times per second.
+      description: Causes a beacon to be transmitted approx. four times per second.
     - code: 3
       devicetype: A
       name: Low Power (1000 ms)

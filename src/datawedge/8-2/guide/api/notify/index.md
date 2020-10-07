@@ -71,7 +71,7 @@ Used to play notification sound(s) on connected Bluetooth scanners with RSM (rem
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below.
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below.
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
 * **DEVICE_NOT_SUPPORTED -** Device does not support notifications

@@ -17,10 +17,10 @@ The following section lists the major features and enhancements added to the MX 
 
 **MX 10.2 adds the following major features and enhancements**: 
 
-* **<u>New [Beacon Manager](/mx/beaconmgr) CSP</u>**: 
- * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Access Manager](/mx/accessmgr) features**: 
  * Enter the Token received from a caller 
+* **<u>New [Beacon Manager](/mx/beaconmgr) CSP</u>**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Configure single pairing of accessories 
  * Define trusted devices

@@ -19,7 +19,7 @@ The following section lists the major features and enhancements added to the MX 
 
 * **New [Access Manager](/mx/accessmgr) features**: 
  * Enter the Token received from a caller 
-* **<u>New [Beacon Manager](/mx/beaconmgr) CSP</u>**: 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
  * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Configure single pairing of accessories 

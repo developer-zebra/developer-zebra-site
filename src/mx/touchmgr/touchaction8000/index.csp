@@ -22,7 +22,6 @@ parm:
       mx: "9.1"
       description: Adjusts touch-screen sensitivity for input with a bare finger.
     - code: 2
-      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
       devicetype: A
       name: Stylus, Glove and Finger
       mx: "9.1"

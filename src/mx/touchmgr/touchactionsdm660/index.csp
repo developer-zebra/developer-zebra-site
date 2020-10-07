@@ -19,13 +19,11 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no change to the Touch Mode; any previously selected setting is retained. 
     - code: 10
       devicetype: A
-      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
       name: Stylus and Finger 
       mx: "9.1"
       description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
     - code: 11
       devicetype: A
-      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
       name: Glove and Finger
       mx: "9.1"
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.

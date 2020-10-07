@@ -55,7 +55,7 @@ parm:
       description: Applies settings for EC30, TC21 and TC26 devices.
     - code: 8
       devicetype: A
-      name: EC30
+      name: L10
       mx: "10.2"
       description: Applies settings for L10 tablets.
 ---

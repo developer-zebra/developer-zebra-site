@@ -13,7 +13,7 @@ menu:
     - icon: fa fa-search
       url: /zds/search
 ---
-
+<a id="system_config"></a>
 ## Overview
 
 Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
@@ -24,7 +24,7 @@ _Click image to enlarge; ESC to exit_.
 <br>
 
 -----
-
+<a id="clock_config"></a>
 ## Data Collected
 
 * Device "Build Fingerprint" including:
@@ -78,8 +78,34 @@ _Click image to enlarge; ESC to exit_.
 
 -----
  -->
-## Supported Devices
+## h2 Supported Devices
+### h3 Time Zone
+#### h4 Time Zone Mode
+<span class="breadcrumbs">
+<font size="2">
+&nbsp;&nbsp;
+<a href="#system_config">Font Size 2 System Configuration</a>
+&gt;
+<a href="#clock_config">Clock Configuration</a>
+</font>
+<br><br>
+</span>
 
+<span class="breadcrumbs">
+<font size="1">
+&nbsp;&nbsp;
+<a href="#system_config">Font Size 1 System Configuration</a>
+&gt;
+<a href="#clock_config">Clock Configuration</a>
+</font>
+<br><br>
+</span>
+
+
+<span class="breadcrumbs"> 
+<a href="../Admin.html">Admin</a> &gt;
+ <a href="User.html">Users</a> &gt;
+</span>
 
 #### ZDS Support Notes
 

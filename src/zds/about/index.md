@@ -78,34 +78,7 @@ _Click image to enlarge; ESC to exit_.
 
 -----
  -->
-## h2 Supported Devices
-### h3 Time Zone
-#### h4 Time Zone Mode
-<span class="breadcrumbs">
-<font size="2">
-&nbsp;&nbsp;
-<a href="#system_config">Font Size 2 System Configuration</a>
-&gt;
-<a href="#clock_config">Clock Configuration</a>
-</font>
-<br><br>
-</span>
-
-<span class="breadcrumbs">
-<font size="1">
-&nbsp;&nbsp;
-<a href="#system_config">Font Size 1 System Configuration</a>
-&gt;
-<a href="#clock_config">Clock Configuration</a>
-</font>
-<br><br>
-</span>
-
-
-<span class="breadcrumbs"> 
-<a href="../Admin.html">Admin</a> &gt;
- <a href="User.html">Users</a> &gt;
-</span>
+## Supported Devices
 
 #### ZDS Support Notes
 

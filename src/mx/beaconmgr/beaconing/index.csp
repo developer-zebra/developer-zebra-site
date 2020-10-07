@@ -31,4 +31,4 @@ parm:
       description: Disables beacon transmission when device is powered off. 
 ---
 
-Controls whether a beacon is transmitted by a device **when the device is powered OFF**.  
+Controls whether a beacon is transmitted by a device when the device is powered OFF. **Disabled by default**.

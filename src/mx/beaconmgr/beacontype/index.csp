@@ -22,13 +22,13 @@ parm:
       name: AltBeacon
       mx: "10.2"
       apilevel: "29"
-      description: Enables the AltBeacon open device proximity protocols. 
+      description: Enables the AltBeacon open device beacon specication (default). 
     - code: 3
       devicetype: A
       name: Custom
       mx: "10.2"
       apilevel: "29"
-      description: Enables the custom proximity protocols specified in the CustomBeaconData parameter. 
+      description: Enables the custom custom beacon specification as entered in the CustomBeaconData parameter. 
 ---
 
-Controls the type of beacon transmitted for locating a lost device when it's powered off. **[AltBeacon](https://altbeacon.org/), an open specification for determiniing device proximity, is used by default**. If "Custom" is selected (option 3), specify custom proximity protocols using the CustomBeaconData parameter. 
+Controls the type of beacon transmitted for locating a lost device when it's powered off. **[AltBeacon](https://altbeacon.org/), an open specification for determiniing device proximity, is enabled by default**. If "Custom" is selected (option 3), specify custom proximity protocols using the CustomBeaconData parameter.

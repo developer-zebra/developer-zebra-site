@@ -16,7 +16,7 @@ parm:
       apilevel: "29"
       devicetype: A
       name: High (1 dBm)
-      description: Sets the highest beacon transmission power level for maximum detection range. Uses the most device power.
+      description: Sets the highest beacon transmission power level for maximum detection range. Uses the most device power (default).
     - code: 2
       devicetype: A
       name: Medium (-7 dBm)
@@ -43,4 +43,4 @@ parm:
       description: Allows a custom value to be entered using the CustomTxPowerLevel parameter.
 ---
 
-Used to enter the power level (in decibels per milliwatt, or dBm) for beacon transmission. Select a value that balances power consumption and transmission power to optimize device detection range. 
+Used to enter the power level (in decibels per milliwatt, or dBm) for beacon transmission. Select a value that balances power consumption and transmission power to optimize device detection range. **Option 1 (1 dBm) is selected the default**. 

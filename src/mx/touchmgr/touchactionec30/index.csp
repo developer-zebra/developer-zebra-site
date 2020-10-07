@@ -18,14 +18,14 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no change to the Touch Mode; any previously selected setting is retained. 
     - code: 15
       devicetype: A
-      name: Stylus and Finger 
+      name: Glove and Finger 
       mx: "9.1"
-      description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
+      description: Adjusts touch-screen sensitivity for input with a gloved or bare finger.
     - code: 16
       devicetype: A
-      name: Glove and Finger
+      name: Finger Only
       mx: "9.1"
-      description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
+      description: Adjusts touch-screen sensitivity for input with a bare.
 ---
 
 Used to enter the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter is designed for use with the Zebra EC30 and other EC-series devices**. 

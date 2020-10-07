@@ -16,12 +16,12 @@ parm:
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device setings; any previously selected setting is retained. 
-    - code: 1
+    - code: 5
       devicetype: A
       name: Finger Only 
       mx: "9.1"
       description: Adjusts touch-screen sensitivity for input with a bare finger.
-    - code: 2
+    - code: 6
       devicetype: A
       name: Stylus, Glove and Finger
       mx: "9.1"

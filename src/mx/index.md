@@ -7,7 +7,7 @@ menu:
   items:
     - title: About MX
       url: /mx/overview
-    - title: New in MX
+    - title: ★ New in MX ★
       url: /mx/overview/#versionhistory
     - title: Feature Matrix
       url: /mx/compatibility

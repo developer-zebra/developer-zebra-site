@@ -89,6 +89,7 @@ If an external scanner and an internal scanner is selected (regardless of the or
 <img style="height:350px" src="configure_triggers_warning.jpg"/>
 <i>Configure trigger warning</i>
 
+**Note:** Use of multiple scanners with multiple Android user accounts may result to unexpected behavior.
 
 -----
 

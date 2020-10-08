@@ -118,6 +118,7 @@ Features and functionality:
 * **No external SD card access** - If multiple Android user accounts exist, users cannot access the external SD card. This prevents the ability to export or import the Datawedge configuration database files from the SD card. 
 * **Limited folder access** - Each user profile has its own folder structure that is not accessible from a different user. Therefore, a user cannot access the exported DataWedge configuration database of another user, preventing the ability to import/export configurations across users.
 * **"DataWedge not ready" message after switching users following device reboot** - When switching from a primary user to a secondary user for the first time after reboot, after attempting to open DataWedge or DWDemo the message "DataWedge not ready" may display. There could be a delay since DataWedge does not start until the BOOT_COMPLETED intent is received. 
+* **Multiple scanners** - Use of [multiple scanners](../input/barcode/#scannerselection) with multiple Android user accounts may result to unexpected behavior.
 
 -----
 
@@ -150,8 +151,9 @@ For more information about approved languages or to download a localized operati
     * [Notify](../api/notify) - play notification sound(s) on connected Bluetooth scanners with RSM (remote speaker microphone).
     * [Enumerate Triggers](../api/enumeratetriggers) - retrieve supported trigger list of a device.
 * New Document Capture features:
-    * Detect the presence of a handwritten signature with [signature presence detection](../input/barcode/#documentselection). 
+    * Detect the presence of a handwritten signature with [signature presence detection](../input/barcode/#documentselection). To detect this programmatically, see [Content Provider Programmer's Guide](../programmers-guides/content-provider).
     * Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselection)
+* New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 * Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
 
 

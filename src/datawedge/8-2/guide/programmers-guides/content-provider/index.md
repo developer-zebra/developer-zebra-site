@@ -7,7 +7,7 @@ productversion: '8.2'
 
 ## Overview
 
-**Use content providers** option allows applications to leverage DataWedge's content provider to retrieve scanned data from files larger than 500 KB, such as images, primarily with Signature Capture and NextGen SimulScan. A _content provider_ is an Android app component that encapsulates data to share between apps.
+**Use content providers** option allows applications to leverage DataWedge's content provider to retrieve scanned data from files larger than 500 KB, such as images, primarily with Decoder Signature and NextGen SimulScan. A _content provider_ is an Android app component that encapsulates data to share between apps.
 
 DataWedge's content provider only sends 768 KB (786,432 bytes) of raw data at once through Android's `ContentProvider` class object. If the scanned data exceeds this limit, the remaining data is sent in a subsequent `ContentProvider` object, whose URI is included in the first `ContentProvider`, with the same size limit. The URI is a string used to query a content provider to retrieve the data, containing the provider and path. This process in breaking down the `ContentProvider` into separate parts repeats until the actual file size is reached for the raw scanned data. The client application then needs to concatenate the raw data from all `ContentProviders` to reconstruct the final full raw data object in byte[] form.
 
@@ -68,18 +68,18 @@ When configured to use the content provider, DataWedge first sends the scan data
 An Intent extra contains a URI for the DataWedge content provider. The application must use the content provider URI to query the data into a `Cursor` object using the `ContentResolver`.
 
 ### Parameters
-**Signature presence status -** when it is required to check for the presence of a handwritten signature during Document Capture, DataWedge exposes a signature presence status parameter through the existing Content Provider cursor. This returns whether a signature is present or absent, determines if the signature presence check is supported, or if the signature presence check was not requested.
+**Signature presence status -** when it is required to check for the presence of a handwritten signature during Document Capture, DataWedge exposes a signature presence status parameter through the existing Content Provider cursor. This returns whether a signature is present or absent, determines if the signature presence status is supported, or if the signature presence status was not requested. Signature presence status should be requested when the Document Capture template is being created or edited.
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
-    <th>Parameter Name</th>
-    <th>Parameter Value</th>
+    <th>Cursor Column Name</th>
+    <th>Column Value</th>
   </tr>
 
   <tr>
     <td>field_signature_status</td>
-	<td>-2 – Signature presence check is not supported by the underlying scanner framework<br>
--1 – Signature check is not requested<br>0 – Signature is not present<br>1 – Signature is present</td>
+	<td>-2 – Signature presence status is not supported by the underlying scanner framework<br>
+-1 – Signature presence status is not requested<br>0 – Signature is not present<br>1 – Signature is present</td>
   </tr>
 </table>
 

@@ -31,7 +31,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 -----
 
-## What's New in v10.1
+## What's New in v10.2
 
 `IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig schema for version 10.0 includes default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
@@ -40,6 +40,57 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 * **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
 
 ### New Features
+
+**Supports MX 10.2**, adding the following features and enhancements: 
+
+* **New [Access Manager](/mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+<!-- 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+ -->
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](/mx/clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](/mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](/mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](/mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Power Manager](/mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [Touch Manager](/mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](/mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](/mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
+
+
+`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.2** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+
+**For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
+
+-----
+
+## Version History
+
+### Added in v10.1
+
+#### Device Support
+
+* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
+
+#### New Features
 
 **Supports MX 10.1**, adding the following features and enhancements: 
 
@@ -61,14 +112,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 * **Supports SimulScan in DataWedgeStep configuration** 
 * **Support for multiple languages in EKB Step configuration** 
 
-
-`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.1** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
-
-**For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
-
 -----
-
-## Version History
 
 ### Added in v10.0
 

@@ -251,6 +251,12 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
+    //OemConfig 10.2
+    .use(foldermenu({
+        folder: 'oemconfig/10-2/',
+        automenu: true,
+        ascontent: true
+    }))
    //OemConfig 10.1
     .use(foldermenu({
         folder: 'oemconfig/10-1/',

@@ -2,7 +2,7 @@
 title: Zebra Managed Configurations
 layout: guide.html
 product: OEMConfig
-productversion: '10.1'
+productversion: '10.2'
 menu:
   items:
     - title: About

@@ -45,10 +45,6 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 * **New [Access Manager](/mx/accessmgr) features**: 
  * Enter the Token received from a caller 
-<!-- 
-* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
- * Controls Bluetooth Low Energy beacon on mobile computers 
- -->
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Configure single pairing of accessories 
  * Define trusted devices
@@ -75,6 +71,10 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * Configure Fine Timing Measurement  
  * Control encryption options
 
+<!-- 10/2/20 not found in MCs 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+ -->
 
 `IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.2** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 

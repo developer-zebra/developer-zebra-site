@@ -53,6 +53,11 @@ Zebra devices offer the ability to designate a key as a "panic button" that when
 19. 
 20. 
 
+10/9/20- Captured during Alert Button demo call:  
+NOTE to ADMINS: To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
+
+
+
  -->
 
 -----

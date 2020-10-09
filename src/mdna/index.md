@@ -66,13 +66,13 @@ features:
    video_type: youtube
    button_text: Learn More  
  - image-location: left
-   title: Easily switch between touch modes using the power button on your Android device
-   subtitle: New in Mobility Extensions
-   description: Easily change how the touch screen behaves when switching between gloved, stylus, and finger usage. This feature can be controlled through Mobility Extensions (MX), Zebra’s platform that provides distinct enterprise capabilities to our mobile computers. 
-   url: /mx/overview/
+   title: "MX 10.1: What's New in Mobility Extensions"
+   subtitle: Major enhancements to Display, File, Touch and UI Managers 
+   description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and charge status display.  
+   url: #newinmx101
    button_text: Learn More
    video: kRHkg0JGj_Q
-   video_type: youtube    
+   video_type: youtube
  - image-location: right
    title: Simplified Scanning Configuration
    subtitle: New in Datawedge
@@ -347,10 +347,10 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 
 **MX 10.2 adds the following major features and enhancements**: 
 
-* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
- * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Access Manager](/mx/accessmgr) features**: 
  * Enter the Token received from a caller 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Configure single pairing of accessories 
  * Define trusted devices

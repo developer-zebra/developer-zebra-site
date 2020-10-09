@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Custom Transmit Interval
 type: parm
-order: 50
+order: 17
 mx: "10.2"
 apilevel: "29"
 devicetype: A

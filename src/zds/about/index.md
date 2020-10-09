@@ -27,7 +27,7 @@ _Click image to enlarge; ESC to exit_.
 <a id="clock_config"></a>
 ## Data Collected
 
-* Device "Build Fingerprint" including:
+* **Device "Build Fingerprint" including**:
  * Device model number
  * Android version
  * Build ID
@@ -49,7 +49,7 @@ _Click image to enlarge; ESC to exit_.
  * GPS
  * Wi-Fi (WLAN)
 * System app info and usage
-* Zebra app info and usage data, including for:  
+* **Zebra app info and usage data, including for**:  
  * DataWedge
  * Enterprise Home Screen
  * EMDK for Android 

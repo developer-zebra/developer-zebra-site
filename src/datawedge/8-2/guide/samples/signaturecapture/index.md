@@ -69,7 +69,7 @@ Available actions in this sample:
 
 4. Ensure the correct **Height** and **Width** is entered for the output image. If any changes are made, tap **Set Config** to update the new values in the profile.
 
-5. Press the trigger button to scan. The captured data and file path of the saved image is displayed.
+5. Press the trigger button to scan. The sample provided above in the Overview section can be used to scan. The captured data and file path of the saved image is displayed.
 <img style="height:350px" src="signaturecapture3.png"/>
 
   

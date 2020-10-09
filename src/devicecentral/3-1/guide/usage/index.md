@@ -173,6 +173,8 @@ The **My Device** tab displays information pertaining to the Android device whic
 ## Smart Leash
 **Smart Leash** triggers alerts via audio feedback and/or haptic feedback in addition to a notification visible in the notification drawer if a Bluetooth accessory moves out of range and becomes disconnected. These alerts notify the user to take immediate action to prevent accessory loss. This feature applies to Android 10 devices and higher.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pLuftOwcAFk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 To use Smart Leash:
 
 1.	Launch **Device Central** from the app menu.

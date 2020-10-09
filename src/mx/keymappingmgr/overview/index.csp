@@ -69,7 +69,7 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 
 ### Alert Button
 
-Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to performs a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or any other reason.
+Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or any other reason.
 
 **The Alert Button uses the following services**: 
 * **KeyMapping Manager** to assign a Key Code to a Key Identifier

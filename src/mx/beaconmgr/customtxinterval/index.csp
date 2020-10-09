@@ -1,6 +1,6 @@
 ---
 csp: beaconmgr
-title: Custom Tranamit Interval
+title: Custom Transmit Interval
 type: parm
 order: 50
 mx: "10.2"

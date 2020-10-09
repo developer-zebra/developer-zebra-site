@@ -196,15 +196,15 @@ To use Smart Leash:
 ## Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [Device Central Manager CSP](/mx/devicecentralmgr). The Device Central application must be installed on the device before configuring with Device Central Manager CSP. The features that can be controlled include:
 
-* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, it allows only one device to be paired from each device category, such as scanner, headset and printer. <br>
-_For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
-_For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  <br>
-**Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature is deprecated from Device Central Manager CSP. Starting from MX version 10.1, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.
+* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, it allows only one device to be paired from each device category, such as scanner, headset and printer. _This feature is deprecated from Device Central Manager CSP -_ starting with MX version 10.1, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.<br>
+    * _For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
+    * _For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  
 * **Enable/Disable Firmware Update Option**: If enabled, it permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
-* **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen, tap on the top right hamburger menu and select **Settings**:
+* **Enable/Disable Bluetooth On/Off Option**: If enabled, it prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is accessible from the **Settings** screen (in the main screen tap on the top right hamburger menu and select **Settings**): 
 <img style="height:400px" src="settings_bt.png"/>
 <br>
 
+* **Smart Leash Option**: Enable/disable **Smart Leash** and configure the Audio/Haptic feedback via [Device Central Manager CSP](/mx/devicecentralmgr). 
 * **Enable/Disable Silent Pairing Option**: If enabled and configured, it allows the confirmation prompt to be bypassed during the pairing process. Use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure this option.
 
 ## Usage Notes
@@ -212,6 +212,9 @@ _For Bluetooth scanners:_ If a device is already previously paired and another d
 * **Silent Pairing** can be enabled/disabled via [Bluetooth Manager CSP](/mx/bluetoothmgr), allowing the confirmation prompt to be bypassed during the pairing process.
 * The **scanning profile named “DeviceCentral” in DataWedge should not be removed or modified**, otherwise unexpected behavior may occur.
 * Only **Zebra Bluetooth scanners are listed in the notification drawer in Android when connected to the device**. All other peripheral devices are listed only in the Device Central main UI.
+* **To receive Smart Leash alerts:**
+    * Device Central must be installed and launched at least once on the device.
+    * Vibration must be supported on the device to receive haptic feedback.
 <br><br><br>
 
 <!-- -->

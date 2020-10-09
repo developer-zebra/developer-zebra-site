@@ -69,13 +69,14 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 
 ### Alert Button
 
-Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or any other reason.
+Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or to launch a custom app.
 
 **The Alert Button uses the following services**: 
 * **KeyMapping Manager** to assign a Key Code to a Key Identifier
 * **Intent** to assign a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is pressed and to execute the desired action
 * **Power Manager** to (optionally) assign the key as a wake-up source to ensure that the Alert Button operates from suspend mode. Zebra recommends this step is to ensure operation from all device states. 
 
+<!-- 
 
 KEYMAPPINGMGR
 Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 
@@ -101,7 +102,7 @@ AH>> See above explanation for when and why the failure occurs.
 
 AH>> When PowerMgr is used, relative to KeyMappingMgr and Intent, is not important so long as the appropriate Key Identifier is made a wakeup BEFORE the device suspends
 
-
+-->
 
 -----
 

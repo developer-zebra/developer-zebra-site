@@ -69,7 +69,7 @@ features:
    title: "MX 10.1: What's New in Mobility Extensions"
    subtitle: Major enhancements to Display, File, Touch and UI Managers 
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
-   url: #newinmx101
+   url: /mdna/#newinmx101
    button_text: Learn More
    video: kRHkg0JGj_Q
    video_type: youtube

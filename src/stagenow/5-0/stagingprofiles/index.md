@@ -54,10 +54,11 @@ Zebra devices offer the ability to designate a key as a "panic button" that when
 20. 
 
 10/9/20- Captured during Alert Button demo call:  
-NOTE to ADMINS: To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
 
-
-
+NOTES to ADMINS: 
+* To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
+* If the button alread does something else, you MUST remap that key to "None."
+* If device is awake, only a long-press is needed to trigger the alert. If in suspend, a short-press wakes it and a long-press triggers. 
  -->
 
 -----

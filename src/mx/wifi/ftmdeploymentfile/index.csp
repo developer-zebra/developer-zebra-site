@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the Fine Timing Measurement (FTM) AP Location Source. This option is for an LCI/LCR supplied by the AP or an XML file deployed to the device. 
+Used to enter the Fine Timing Measurement (FTM) AP Location Source. This option is for an LCI/LCR supplied by the AP in an XML file deployed to the device. 
 
 **Parm value input rules**: 
 

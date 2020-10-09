@@ -46,7 +46,7 @@ Zebra devices offer the ability to designate a key as a "panic button" that when
 12. scan barcode to configure device
 13. short-press, then long-press the key (sequence prevent accidental "false alarms")
 14. to assign the key as ALERT ONLY (and not also as scan trigger) assign key code "none" 
-15. intent reads only the base key code, it does NOT read any of the color key modifiers. to prevent the device from ignoring Alert keypresses...(what? )  
+15. intent reads only the base key code, it does NOT read any of the color-key modifiers. to prevent the device from ignoring Alert keypresses if the keyboard is in a different mode, map "none" to all COLORS. 
 16. 
 17. 
 18. 

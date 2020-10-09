@@ -68,7 +68,7 @@ features:
  - image-location: left
    title: "MX 10.1: What's New in Mobility Extensions"
    subtitle: Major enhancements to Display, File, Touch and UI Managers 
-   description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and charge status display.  
+   description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: #newinmx101
    button_text: Learn More
    video: kRHkg0JGj_Q
@@ -343,7 +343,33 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 
 -----
 
+## New in MX 10.1
+
+**MX 10.1 adds the following major features and enhancements**: 
+
+* **Enhanced [Display Manager](/mx/displaymgr)** now allows an admin to:
+ * Control device-screen orientation (automatic rotation on/off)
+* **Enhanced [File Manager](/mx/filemgr)** now allows an admin to configure the following file upload actions:
+ * Enter a target URI
+ * Enter source path and file name
+ * Select the upload order (oldest or newest first, or alpha-sorted by file name)
+ * Delete source file(s) after uploading
+ * Name uploaded files using a naming pattern
+ * Replace the destination file with source if duplicate name
+ * Skip copying and remove file from the source
+ * Skip copying and keep file at the source
+* **Enhanced [Power Manager](/mx/powermgr)** now allows an admin to:
+ * Control state of Battery Saver mode (on/off)
+ * Control Battery Saver Control mode (automatic/manual)
+ * Set Battery percentage of charge to automatically turn Battery Saver Mode on
+* **Enhanced [UI Manager](/mx/uimgr)** now allows an admin to:
+ * Control Battery Percentage display in status bar (show/hide)
+
+-----
+
 ## New in MX 10.2
+
+#### `COMING SOON!`
 
 **MX 10.2 adds the following major features and enhancements**: 
 

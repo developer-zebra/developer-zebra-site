@@ -18,6 +18,14 @@ features:
    video_thumb: video_thumb.jpg
    button_text: Learn More
  - image-location: left
+   title: Never lose a peripheral with Smart Leash on Device Central
+   subtitle: New in Device Central 
+   description: The new Smart Leash feature on Device Central notifies a user when a peripheral moves out of an area, ensuring that the peripheral is not left behind. Device Central centrally connects and monitors Bluetooth peripherals.  
+   url: /devicecentral/
+   video: o0VkYx0Y-fI
+   video_type: youtube
+   button_text: Learn More   
+ - image-location: right
    title: Detect the presence of a signature
    subtitle: New in Datawedge 
    description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
@@ -25,6 +33,14 @@ features:
    video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
+ - image-location: left
+   title: Zebra’s Smart Repository makes downloading and installing Lifeguard updates a breeze.
+   subtitle: New in Stage Now 
+   description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
+   url: /stagenow/4-3/about/
+   video: HeZvx6X53yI
+   video_type: youtube
+   button_text: Learn More      
  - image-location: right
    title: Edge Detection Doc Capture
    subtitle: New in Datawedge
@@ -42,6 +58,22 @@ features:
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: right
+   title: New term-based licensing for Enterprise Browser
+   subtitle: New in Enterprise Browser
+   description: Term-based licensing is now available on Enterprise Browser. Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build enterprise apps with features such as barcode scanning, signature capture, payment processing, and printing.
+   url: /enterprise-browser/3-0/guide/about/
+   video: IjNspS96BNg
+   video_type: youtube
+   button_text: Learn More  
+ - image-location: left
+   title: Easily switch between touch modes using the power button on your Android device
+   subtitle: New in Mobility Extensions
+   description: Easily change how the touch screen behaves when switching between gloved, stylus, and finger usage. This feature can be controlled through Mobility Extensions (MX), Zebra’s platform that provides distinct enterprise capabilities to our mobile computers. 
+   url: /mx/overview/
+   button_text: Learn More
+   video: kRHkg0JGj_Q
+   video_type: youtube    
+ - image-location: right
    title: Simplified Scanning Configuration
    subtitle: New in Datawedge
    description: Scanning mode configuration is now more simplified with DataWedge. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
@@ -57,7 +89,14 @@ features:
    button_text: Learn More
    video: QYDezVYFpN4
    video_type: youtube   
-   
+ - image-location: right
+   title: Track and find misplaced Zebra mobile devices with Device Tracker (now cloud-based)
+   subtitle: Coming Soon
+   description: Place the power to track and find your Zebra Android mobile devices in the palms of your hands with Device Tracker. Device Tracker is now a cloud-based solution that easily tracks Zebra Android mobile devices, finds missing devices, and helps prevent device inventory shrinkage. 
+   url: https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html
+   video: MzCWdLUhEPY
+   video_type: youtube
+   button_text: Coming Soon   
 ---
 
 <style>

@@ -26,7 +26,6 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Ping data 
  * User access to on-device client UI and password change
  * Call admission control
- * Server analytics coverage
  * Coverage view streaming
  * Auto-reachability testing 
 * Enter old and new passwords for access to client UI, settings and data

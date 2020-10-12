@@ -22,7 +22,7 @@ features:
    subtitle: New in Device Central 
    description: The new Smart Leash feature on Device Central notifies a user when a peripheral moves out of an area, ensuring that the peripheral is not left behind. Device Central centrally connects and monitors Bluetooth peripherals.  
    url: /devicecentral/
-   video: o0VkYx0Y-fI
+   video: pLuftOwcAFk
    video_type: youtube
    button_text: Learn More   
  - image-location: right

@@ -35,10 +35,10 @@ The following section lists the major features and enhancements added to the MX 
  * Support for additional key codes
 * **New [License Manager](/mx/licensemgr) features**: 
  * Supports URI-based license sources 
-* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
- * Set touch mode options 
 * **New [Power Manager](/mx/powermgr) features**: 
  * Enable/disable/configure battery saver options 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
 * **New [Touch Manager](/mx/touchmgr) features**: 
  * Support and control latest Zebra devices   
 * **New [UI Manager](/mx/uimgr) features**: 

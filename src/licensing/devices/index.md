@@ -35,65 +35,65 @@ menu:
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
   <tr bgcolor="#dce8ef">
-    <th>Device Series</th>
-    <th>Device Model</th>
+    <th>Professional Series</th>
+    <th>Enterprise Series</th>
     <th>Product Page</th>
     <th>Notes</th>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TC20</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
   <td></td>
+   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+ <td></td>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TC21</td>
+  <td></td>
   <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc21.html">TC21 software page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TC25</td>
+  <td></td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc25.html">TC25 product page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TC26</td>
-  <td>Available summer 2020</td>
+  <td></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc26.html">TC25 product page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Enterprise</td>
+  <td></td>
   <td>TC51</td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">TC51/TC56 product page</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc51.html">TC51 support page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Enterprise</td>
+  <td></td>
   <td>TC56</td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">TC51/TC56 product page</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc56.html">TC56 support page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TCxx</td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+  <td></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>Professional</td>
   <td>TCxx</td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+  <td></td>
   <td></td>
   </tr>
 

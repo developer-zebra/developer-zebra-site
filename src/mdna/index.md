@@ -27,7 +27,7 @@ features:
    button_text: Learn More   
  - image-location: right
    title: Detect the presence of a signature
-   subtitle: New in Datawedge 
+   subtitle: New in DataWedge 
    description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
    url: /datawedge/latest/guide/about/
    video: 4vS5Y2q9Vkg
@@ -43,7 +43,7 @@ features:
    button_text: Learn More      
  - image-location: right
    title: Edge Detection Doc Capture
-   subtitle: New in Datawedge
+   subtitle: New in DataWedge
    description: Easily capture an entire form with DataWedge, without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
@@ -51,7 +51,7 @@ features:
    button_text: Learn More
  - image-location: left
    title: Wake up and scan
-   subtitle: New in Datawedge
+   subtitle: New in DataWedge
    description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.  
    url: /datawedge/latest/guide/about/
    button_text: Learn More
@@ -74,22 +74,30 @@ features:
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: right
+   title: "MX 10.2: Coming Soon in Mobility Extensions"
+   subtitle: New Beacon Manager CSP plus enhancements to 11 others 
+   description: Beacon Manager allows administrators control the homing signal sent by a Zebra device when it's switched off. Plus enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
+   url: /mdna/#newinmx102
+   button_text: Coming Soon
+   video: 
+   video_type: youtube
+ - image-location: left
    title: Simplified Scanning Configuration
-   subtitle: New in Datawedge
+   subtitle: New in DataWedge
    description: Scanning mode configuration is now more simplified with DataWedge. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    video: R-5BOXFZ2cw
    video_type: youtube
    button_text: Learn More
- - image-location: left
+ - image-location: right
    title: Using multiple barcode scanners interchangeably
-   subtitle: New in Datawedge
+   subtitle: New in DataWedge
    description: Easily use scanners interchangeably with DataWedge, without the need for additional setup and configuration between each scanner use. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: QYDezVYFpN4
    video_type: youtube   
- - image-location: right
+ - image-location: left
    title: Track and find misplaced Zebra mobile devices with Device Tracker (now cloud-based)
    subtitle: Coming Soon
    description: Place the power to track and find your Zebra Android mobile devices in the palms of your hands with Device Tracker. Device Tracker is now a cloud-based solution that easily tracks Zebra Android mobile devices, finds missing devices, and helps prevent device inventory shrinkage. 
@@ -391,10 +399,10 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
  * Support for additional key codes
 * **New [License Manager](/mx/licensemgr) features**: 
  * Supports URI-based license sources 
-* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
- * Set touch mode options 
 * **New [Power Manager](/mx/powermgr) features**: 
  * Enable/disable/configure battery saver options 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
 * **New [Touch Manager](/mx/touchmgr) features**: 
  * Support and control latest Zebra devices   
 * **New [UI Manager](/mx/uimgr) features**: 

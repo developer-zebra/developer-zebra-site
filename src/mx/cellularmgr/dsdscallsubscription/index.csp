@@ -7,7 +7,7 @@ mx: "10.0"
 devicetype: A
 info: Supported only on L10, TC57 and TC77 devices running Android 8.x Oreo or Android 10.
 parm:
-  presentif: DSDS Auto-service is set to "Disable"
+  presentif: DSDS Features checkbox is "checked" and DSDS Auto-service is set to "Disable"
   pivotal: No
   name: DSDSCallSubscription
   type: list

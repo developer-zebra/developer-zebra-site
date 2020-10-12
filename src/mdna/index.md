@@ -79,7 +79,7 @@ features:
    description: Beacon Manager allows administrators control the homing signal sent by a Zebra device when it's switched off. Plus enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mdna/#newinmx102
    button_text: Coming Soon
-   video: 
+   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: youtube
  - image-location: left
    title: Simplified Scanning Configuration

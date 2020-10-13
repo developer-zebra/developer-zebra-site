@@ -69,12 +69,12 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 
 ### Alert Button
 
-Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or to launch a custom app.
+Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical equipment or launching any custom app.
 
 **The Alert Button uses the following services**: 
 * **KeyMapping Manager** to assign a Key Code to a Key Identifier
-* **Intent** to assign a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is pressed and to execute the desired action
-* **Power Manager** to (optionally) assign the key as a wake-up source to ensure that the Alert Button operates from suspend mode. Zebra recommends this step is to ensure operation from all device states. 
+* **Intent** to assign a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is pressed
+* **Power Manager** to (optionally) assign the key as a wake-up source to ensure that the Alert Button operates from suspend mode. **Zebra recommends this assignment is to ensure operation from all device states**. 
 
 <!-- 
 

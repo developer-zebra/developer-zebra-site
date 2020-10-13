@@ -65,84 +65,21 @@ menu:
   <tr>
   <td>TC26</td>
   <td></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc26.html">TC25 product page</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc26.html">TC26 product page</a></td>
   <td></td>
   </tr>
 
   <tr>
-  <td></td>
-  <td>TC51</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">TC51/TC56 product page</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc51.html">TC51 support page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td></td>
-  <td>TC56</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">TC51/TC56 product page</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc56.html">TC56 support page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+  <td>MC22</td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">Product page coming soon</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc51.html">Support page coming soon</a></td>
   <td></td>
   <td></td>
   </tr>
 
   <tr>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+  <td>MC27</td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">Product page coming soon</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc56.html">Support page coming soon</a></td>
   <td></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
-  <td></td>
-  </tr>
-
-  <tr>
-  <td>Professional</td>
-  <td>TCxx</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TCxx product page</a></td>
   <td></td>
   </tr>
 

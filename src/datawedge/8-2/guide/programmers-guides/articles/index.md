@@ -16,6 +16,7 @@ Articles and blogs may be posted on other sites that also serve as useful DataWe
 * [Scan with DataWedge Using Explicit Broadcast Intents](https://developer.zebra.com/blog/scan-datawedge-using-explicit-broadcast-intents) - explains the importance of using explicit intents and how to use it
 * [Quickly Suspend Scanning in Your App with DataWedge](https://developer.zebra.com/blog/quickly-suspend-scanning-your-app-datawedge) - demonstrates how to temporarily disable the barcode scanner
 * [Listening for KeyPress events with DataWedge](https://developer.zebra.com/blog/listening-keypress-events-datawedge) - discusses how to send data as key events so an application can listen for the keypress events and react accordingly
+* [DataWedge scanning in the background](https://developer.zebra.com/blog/datawedge-background-scanning-zebra-android-devices?sfid=&co=) - discusses how to scan barcodes when the app is in the background or the mobile device is in standby 
 * Other additional blogs and sample apps - refer to [Darryn's repository of blogs and sample apps](https://darryncampbell.co.uk/technology_index.html) for more useful information on application development.
 
 

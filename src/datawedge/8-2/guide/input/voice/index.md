@@ -54,11 +54,9 @@ Voice Input features are accessible from the DataWege profile.
 * **Enabled** - Enables voice input. 
 
 * **Data capture start option** - Select trigger option for voice capture.
-<ul style="margin-left: 16px;">
-  <li><b>Start phrase</b> - Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>.</li>
-  <li><b>PTT button</b> -  Sets PTT button to trigger voice capture. <i>Only supported on EC30, MC93, TC52/TC57, TC72/TC77, and TC8300 devices. For other devices, the PTT button may be mapped to an available button on the device.</i> </li>
-</ul>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Note: </b>The Google voice recognition engine included with Google App version 10.97.8.21 (and later) plays a notification tone every few seconds while voice input is enabled to indicate that it is waiting for input. This tone can be eliminated by using PTT instead of start phrase to trigger voice input.<br>
+    * **Start phrase -** Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>. 
+    * **PTT button -**  Sets PTT button to trigger voice capture. <i>Only supported on EC30, MC93, TC52/TC57, TC72/TC77, and TC8300 devices. For other devices, the PTT button may be mapped to an available button on the device.</i> <br>
+<b>Note: </b>If <b>Start phrase</b> is selected, the Google voice recognition engine included with Google App version 10.97.8.21 (and later) plays a notification tone every few seconds to indicate that it is waiting for input. This can be reduced by using <b>PTT button</b> instead of <b>start phrase</b> to limit the notification to be played only while the PTT button is pressed.<br>
 
 * **Data capture start phrase** - Specified phrase to start the data capture if **Start phrase** is selected as the **Data capture start option**. Numbers and special characters are not supported as part of the start phrase. _The default value is "start."_
 

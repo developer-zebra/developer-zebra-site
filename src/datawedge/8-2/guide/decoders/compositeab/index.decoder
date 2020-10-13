@@ -1,0 +1,40 @@
+---
+decoder: compositeab
+type: parm
+parm:
+  type: list
+  list: 
+    - name: UCC Link Mode
+      description: 
+      descriptionlist:
+        - value: • Link Flag ignored
+        - value: • Always Linked
+        - value: • Auto Discriminate
+      param: 
+      paramvalue: 
+    - name: MultiPacket Mode
+      description: 
+      descriptionlist:
+        - value: • Multi-Part, Single-Packet
+        - value: • Multi Independent Reads
+      param: 
+      paramvalue: 
+    - name: Use UPC Preamble Check Digit 
+      description: Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
+      param: 
+      paramvalue: 
+    - name: UCC Link Mode 
+      description: 
+      param: decoder_composite_ab_ucc_link_mode
+      paramvalue: 
+        list:
+            - value: 0 - Link Flag Ignored
+            - value: 1 - Always Linked
+            - value: 2 - Auto Discriminate
+---
+
+
+
+
+
+

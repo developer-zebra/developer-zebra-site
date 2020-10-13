@@ -1,0 +1,34 @@
+---
+decoder: upce1
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
+      param: decoder_upce1_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Preamble
+      description: Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble. Select the appropriate option to match the host system.
+      descriptionlist:
+            - value: • Preamble None - Transmit no preamble.
+            - value: • Preamble Sys Char - Transmit System Character only.
+            - value: • Preamble Country and Sys Char - Transmit System Character and Country Code ("0" for USA).
+      param: decoder_upce1_preamble
+      paramvalue: 
+        list:
+            - value: 0 - Preamble None
+            - value: 1 - Preamble Sys Char
+            - value: 2 - Preamble Country and Sys Char
+    - name: Convert UPCE1 To UPCA
+      description: Enable this to convert UPCE1 decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable this to transmit UPCE1 decoded data as UPCE1 data, without conversion.
+      param: decoder_upce1_convert_to_upca
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

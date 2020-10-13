@@ -1,0 +1,15 @@
+---
+decoder: usplanet
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: Transmit USPlanet data with or without the check digit. A check in the checkbox sends USPlanet data with a check digit.
+      param: decoder_usplanet_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

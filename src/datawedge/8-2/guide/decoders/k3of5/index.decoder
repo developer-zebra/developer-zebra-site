@@ -1,0 +1,25 @@
+---
+decoder: k3of5
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
+      param: 
+      paramvalue: 
+    - name: Length2
+      description: To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+      param: 
+      paramvalue: 
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: 
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+

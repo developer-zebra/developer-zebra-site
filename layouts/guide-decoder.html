@@ -1,0 +1,90 @@
+
+{{> header}}
+    <section id="blog" >
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 hidden-sm hidden-xs" id="sidebar">
+                    {{> menu}}
+
+                </div>                
+                <div class="col-sm-9 ">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>
+                                    {{#if subhead}}
+                                        {{ subhead }}
+                                    {{else}}
+                                        {{#if product}}
+                                            {{ product }}
+                                        {{/if}}
+                                        {{#if productversion}}
+                                            {{ productversion }}
+                                        {{/if}}
+                                        {{#if mxversion}}
+                                            MX: {{ mxversion}}
+                                        {{/if}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div id="mainContent" class="row">
+                        <div class="col-sm-12">
+                            <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <!-- Start of guide -->
+                                <div class="service-box wow fadeInRight">
+                                    <div class="">
+
+                                        <!-- Start CW-->
+                                        <h2>Decoder Table</h2>
+                                        <table class="table">
+                                            <tr>
+                                                <th>Decoder</th>>
+                                                <th>Decoder Param</th>>
+                                                <th>Param Description</th>>
+                                                <th>Intent API Key</th>>
+                                                <th>Intent Key Values</th>>
+                                            </tr> 
+                            
+                                            <tr>
+                                                <td>{{ decoder }}</td>
+                                                <td>{{ param }}</td>
+                                                <td>{{ description }}</td>
+                                                <td>{{ intentkey }}</td>
+                                                <td>{{ intentkeyvalue }}</td>
+                                            </tr>
+                                        {{#each parms}}
+                                            <tr>
+                                                <td></td>
+                                                <td>{{ this.name }}</td>
+                                                <td>{{ this.description }}</td>
+                                                <td>{{ this.intentkey }}</td>
+                                                <td>{{ this.intentvalue }}</td>
+                                            </tr>
+                                        {{/each}}
+
+                                        </table>
+                                        <!-- End CW-->
+
+                                        <p>{{{ contents }}}</p>
+ 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>    
+
+{{> modal}}
+{{> footer}}
+

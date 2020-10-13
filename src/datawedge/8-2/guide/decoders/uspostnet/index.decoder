@@ -1,0 +1,15 @@
+---
+decoder: uspostnet
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: Transmit USPostnet data with or without the check digit. A check in the checkbox sends USPostnet data with a check digit.
+      param: 
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

@@ -213,6 +213,10 @@ var sitebuild = Metalsmith(__dirname)
             sortBy: 'order'
         },
 
+        decoder: {
+            pattern: 'datawedge/**/*.decoder',
+        },
+
     }))
 
     .use(foldermenu({

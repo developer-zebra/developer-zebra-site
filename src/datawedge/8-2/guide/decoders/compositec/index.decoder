@@ -1,0 +1,20 @@
+---
+decoder: compositec
+type: parm
+parm:
+  type: list
+  list: 
+    - name: MultiPacket Mode
+      description: 
+      descriptionlist:
+        - value: • Multi-Part, Single-Packet
+        - value: • Multi Independent Reads
+      param: 
+      paramvalue: 
+---
+
+
+
+
+
+

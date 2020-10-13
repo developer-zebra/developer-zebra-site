@@ -1,0 +1,36 @@
+---
+decoder: dotcode
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Inverse
+      description: To specify the reflectance for decoding DotCode barcodes, set the option -
+      descriptionlist:
+            - value: • Disabled (0) - To decode DotCode barcodes with normal reflectance only.
+            - value: • Enabled (1) - To decode DotCode barcodes with inverse reflectance only.
+            - value: • Auto (2) - To decode both normal and inverse reflectance DotCode barcodes (default).
+      param: decoder_dotcode_inverse
+      paramvalue: 
+        list:
+            - value: Disabled (0)
+            - value: Enabled (1)
+            - value: Auto (2)
+    - name: Mirror
+      description: To specify whether mirrored DotCode barcodes are decoded, set an option -
+      descriptionlist:
+            - value: • Disabled (0) - To decode non-mirrored DotCode barcodes only.
+            - value: • Enabled (1) - To decode mirrored DotCode barcodes only.
+            - value: • Auto (2) - To decode both mirrored and non-mirrored DotCode barcodes (default).
+      param: decoder_dotcode_mirror
+      paramvalue: 
+        list:
+            - value: Disabled (0)
+            - value: Enabled (1)
+            - value: Auto (2)
+---
+
+
+
+
+

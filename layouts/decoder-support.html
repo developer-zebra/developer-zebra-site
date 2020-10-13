@@ -1,0 +1,119 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-2 fixed-column-left"  >
+                    <ul class="nav">
+                        {{#each this.decoders}}
+                            <li class="decoder-select" data-id="{{this.decoder}}"><a href="#{{this.decoder}}">{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>                
+                <div class="col-sm-10 fixed-column-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p>{{ subtitle }}</p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+
+                    {{#each this.decoders}}
+                    <div class="row">
+                        <div class="col-sm-12">
+                            
+                            <section id="{{this.decoder}}" class="decoder">
+                                <h2><font style="color:#2db2cc">{{this.title}}</font></h2>
+                                {{#if this.decoderexception }}
+                                {{else}}
+                                    <p><b>API Decoder Name:</b> <i>{{this.decoderparm}}</i> <br>
+                                    <b>API Decoder Values:</b> <i>{{this.decoderstate}}</i></p>
+                                {{/if}}
+                                <div class="">
+                                <!-- Start of content list -->
+                                    <div class="parm-table">
+                                        <table class="table">
+                                            {{#if this.decoderexception }}
+                                            {{else}}
+                                              {{#if this.parms}}
+                                              <tr>
+                                                <th class="col-sm-2"> Decoder Param </th>
+                                                <th class="col-sm-6"> Param Description </th>
+                                                <th class="col-sm-2"> Param Name </th>
+                                                <th class="col-sm-2"> Param Value </th>
+                                              </tr>  
+                                              {{/if}}
+                                            {{/if}}
+                                            {{#each ../collections.decoder}}
+                                                {{#is ../decoder this.decoder}}
+                                                    
+                                                    <p class="">{{{this.contents}}}</p>
+                                                    
+                                                    {{#is this.parm.type "list"}}
+                                                        {{#each this.parm.list}}
+                                                        <tr>
+                                                            <td>{{this.name}}</td>
+                                                            <td>{{this.description}}
+                                                                {{#if this.descriptionlist}}
+                                                                    <br>
+                                                                    {{#each this.descriptionlist}}
+                                                                        <br>{{this.value}}
+                                                                    {{/each}}
+                                                                {{/if}}
+                                                            </td>
+                                                            <td>{{this.param}}</td>
+                                                            {{#if this.paramvalue.list}}                                                                
+                                                                <td>
+                                                                    {{#each this.paramvalue.list}}
+                                                                        {{this.value}}<br>
+                                                                    {{/each}}
+                                                                </td>
+                                                            {{else}}
+                                                                <td>{{this.paramvalue}}</td>
+                                                            {{/if}}
+                                                           
+                                                        </tr>                                                                                     
+                                                        {{/each}}
+                                                    {{/is}}
+                                                  
+                                                {{/is}} 
+                                            {{/each}}  
+                                        </table>
+                                    </div>	
+                                </div><!--/.container-->
+                                
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                    {{/each}} <!-- decoder loop -->
+                    
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>   
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('ready');
+        $('.decoder-select').click(function(e) { 
+            console.log('click');
+             var decoder = $(this).attr("data-id");
+          /*   $(".decoder").hide(); */
+             $(".decoder-select").removeClass("active"); 
+             $("#"+decoder).show();
+             $(this).addClass("active");
+        }); 
+    });
+</script>
+<style>
+    footer { display:none}
+</style>
+
+{{> footer }}
+
+

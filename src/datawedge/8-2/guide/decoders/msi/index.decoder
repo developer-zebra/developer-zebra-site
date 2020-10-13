@@ -1,0 +1,50 @@
+---
+decoder: msi
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: To decode an MSI symbol with a specific length range, set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 4.
+      param: decoder_msi_length1
+      paramvalue: Integer from 0–55
+    - name: Length2
+      description: To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
+      param: decoder_msi_length2
+      paramvalue: Integer from 0–55
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: decoder_msi_redundancy
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Check Digit 
+      description: With MSI symbols, one check digit is required, and is always verified by the reader. The second check digit is optional.
+      param: decoder_msi_check_digit
+      paramvalue: 
+        list:
+            - value: 0 - 1 Check Digit
+            - value: 1 - 2 Check Digits
+    - name: Check Digit Scheme 
+      description: Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
+      param: decoder_msi_check_digit_scheme
+      paramvalue: 
+        list:
+            - value: Mod-11-10 - First check digit is MOD 11; the second check digit is MOD 10.
+            - value:
+            - value: Mod-10-10 - Both check digits are MOD 10.
+    - name: Report Check Digit
+      description: Transmit MSI data with or without the check digit. A check in this checkbox will send MSI data with a check digit.
+      param: decoder_msi_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+
+
+
+

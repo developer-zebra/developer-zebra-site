@@ -1432,6 +1432,15 @@ pre {
 .csp-select.active a{
   color:#fff
 }
+
+.decoder-select.active{
+    background-color: #45aed6;
+  
+  }
+.decoder-select.active a{
+    color:#fff
+  }
+
 .ToggleView{
 display:none;
 }
@@ -1464,3 +1473,13 @@ display:none
  .facelift tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+.table_scroll {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .table_width20 {
+    width: 20%
+  }

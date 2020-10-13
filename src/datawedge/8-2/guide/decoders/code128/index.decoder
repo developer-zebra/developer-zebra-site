@@ -1,0 +1,96 @@
+---
+decoder: code128
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: To decode a Code 128 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 4.
+      param: decoder_code128_length1
+      paramvalue: Integer from 0–55
+    - name: Length2
+      description: To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
+      param: decoder_code128_length2
+      paramvalue: Integer from 0–55
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: decoder_code128_redundancy
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: Enable EAN128
+      description: Set the EAN128 subtype. A check in the checkbox indicates that the option is enabled for this label type.
+      param: decoder_code128_enable_ean128
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: Enable ISBT128
+      description: Set the ISBT128 subtype. A check in the checkbox indicates that the option is enabled.
+      param: decoder_code128_enable_isbt128
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: Enable Plain Code128
+      description: Enables other (non-EAN or ISBT) Code 128 subtypes.
+      param: decoder_code128_enable_plain
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: ISBT128 Concat Mode
+      description: Select an option for concatenating pairs of ISBT code types -
+      descriptionlist:
+            - value: • Concat Mode Never - Do not concatenate pairs of ISBT codes encountered.
+            - value: • Concat Mode Always - There must be two ISBT codes in order to decode and perform concatenation. Does not decode single ISBT symbols.
+            - value: • Concat Mode Auto - Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
+      param: decoder_code128_isbt128_concat_mode
+      paramvalue: 
+        list:
+            - value: 0 - Concat Mode Never
+            - value: 1 - Concat Mode Always
+            - value: 2 - Concat Mode Auto
+    - name: Check ISBT Table
+      description: The ISBT specification includes a table that lists several types of ISBT barcodes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable "Check ISBT Table" to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated.
+      param: decoder_code128_check_isbt_table
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: Security Level
+      description: The scanner offers four levels of decode security for Code 128 barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application -
+      descriptionlist:
+            - value: • Security Level 0 - This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" barcodes.
+            - value: • Security Level 1 - This setting eliminates most decode failures.
+            - value: • Security Level 2 - Select this option if Security level 1 fails to eliminate decode failures.
+            - value: • Security Level 3 - If Security Level 2 is selected and decode failures still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out-of-spec barcodes. Selecting this security level significantly impairs the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
+      param: decoder_code128_security_level
+      paramvalue:
+        list:
+            - value: 0 - Security Level 0
+            - value: 1 - Security Level 1
+            - value: 2 - Security Level 2
+            - value: 3 - Security Level 3
+    - name: Enable Marginless Decode
+      description: 
+      param: decoder_code128_enable_marginless_decode
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+    - name: Ignore Fnc4
+      description: 
+      param: decoder_code128_ignore_fnc4
+      paramvalue:
+        list:
+            - value: true
+            - value: false
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+
+
+
+

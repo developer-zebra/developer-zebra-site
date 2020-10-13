@@ -1,0 +1,19 @@
+---
+decoder: dutchpostal
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Dutch Postal 3S
+      description: To enable/disable decoding of KIX 3S barcodes of type Dutch Postal.
+      param: decoder_dutch_postal_3S
+      paramvalue: 
+        list:
+            - value: true
+            - value: false (default)
+---
+
+
+
+
+

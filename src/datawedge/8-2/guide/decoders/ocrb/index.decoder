@@ -1,0 +1,27 @@
+---
+decoder: ocrb
+type: parm
+parm:
+  type: list
+  list: 
+    - name: OCR B Variant
+      description: Font variants supported.
+      param: ocr_b_variant
+      paramvalue: 
+        list:
+            - value: FULL_ASCII (0) (default)
+            - value: BANKING(1)
+            - value: LIMITED(2)
+            - value: ISBN_1(6)
+            - value: ISBN_2(7)
+            - value: TRAVEL_DOCUMENT_1(3)
+            - value: TRAVEL_DOCUMENT_2(8)
+            - value: TRAVEL_DOCUMENT_3(20)
+            - value: PASSPORT(4)
+            - value: VISA_TYPE_A(9)
+            - value: VISA_TYPE_B(10)
+            - value: ICAO_TRAVEL_DOCUMENT(11)
+---
+
+OCR B is typically used for government issued documents, such as financial and travel documents, like driver licenses and passports.
+

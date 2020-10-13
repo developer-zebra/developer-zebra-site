@@ -1,0 +1,15 @@
+---
+decoder: ukpostal
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: Missing
+      param: decoder_uk_postal_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

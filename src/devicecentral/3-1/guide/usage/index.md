@@ -217,6 +217,7 @@ Some features may be controlled through [StageNow](/stagenow/latest/about), an E
 * **To receive Smart Leash alerts:**
     * Device Central must be installed and launched at least once on the device.
     * Vibration must be supported on the device to receive haptic feedback.
+* If the **Smart Leash option is enabled and a Bluetooth peripheral is connected,** an additional 5-10% of battery can be consumed on the mobile computer regardless of how many peripherals are connected.
 <br><br><br>
 
 <!-- -->

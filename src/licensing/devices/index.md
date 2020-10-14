@@ -37,50 +37,70 @@ menu:
   <tr bgcolor="#dce8ef">
     <th>Professional Series</th>
     <th>Enterprise Series</th>
-    <th>Product Page</th>
+    <th>Links</th>
     <th>Notes</th>
   </tr>
 
   <tr>
   <td>TC20</td>
   <td></td>
-   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20 product page</a></td>
+   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">Product page</a></td>
  <td></td>
   </tr>
 
   <tr>
   <td>TC21</td>
   <td></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc21.html">TC21 software page</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc21.html">Software page</a></td>
   <td></td>
   </tr>
 
   <tr>
   <td>TC25</td>
   <td></td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc25.html">TC25 product page</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc25.html">Product page</a></td>
   <td></td>
   </tr>
 
   <tr>
   <td>TC26</td>
   <td></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc26.html">TC26 product page</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc26.html">Product page</a></td>
   <td></td>
   </tr>
 
   <tr>
   <td>MC22</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">Product page coming soon</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc51.html">Support page coming soon</a></td>
   <td></td>
   <td></td>
+  <td>Product page coming soon<br>Support page coming soon</td>
   </tr>
 
   <tr>
   <td>MC27</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">Product page coming soon</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc56.html">Support page coming soon</a></td>
+  <td>Product page coming soon<br>Support page coming soon</td>
+  <td></td>
+  </tr>
+
+  <tr>
   <td></td>
   <td></td>
+  <td>Product page coming soon<br>Support page coming soon</td>
+  <td></td>
+  </tr>
+
+  <tr>
+  <td></td>
+  <td>TC79</td>
+  <td>Product page coming soon<br>Support page coming soon</td>
+  <td></td>
+  </tr>
+
+  <tr>
+  <td></td>
+  <td>TC77</td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html">Product page</a><br><a href="https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc56.html">Support page</a></td>
+  <td>Runs Android 8.x Oreo, A10</td>
   </tr>
 
 </table>

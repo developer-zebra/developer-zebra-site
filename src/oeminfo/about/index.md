@@ -38,7 +38,12 @@ This guide describes major components of the OEMinfo Content Provider Framework,
 **OEMinfo is currently supported on Zebra devices running**...
 
 * **Android 10.x or later** (OEMinfo is preinstalled)
-* **Android 8.x** (OEMinfo is installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html))
+* **Android 8.x Oreo** (OEMinfo is installed with a [LifeGuard update](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html))
+* **Recommended updates for MSM8937-platform devices**:
+ * **TC20 8.x Oreo**: [LifeGuard Update U07 September 2020](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc20-operating-system.html)
+ * **TC25 8.x Oreo**: [LifeGuard Update U07 September 2020](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc25-operating-system.html)
+
+**Zebra recommends using OEMinfo 9.0.0.198** or later for best results.  
 
 -----
 

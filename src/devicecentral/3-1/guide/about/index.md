@@ -29,7 +29,7 @@ Beginning with Device Central 3.0, a **[Mobility DNA Enterprise license](/licens
 _MDNA Enterprise license required prompt_
 
 ## New in Device Central 3.1
-* New **[Smart Leash](../usage/#smartleash)** feature triggering alerts if a Bluetooth peripheral moves out of range and becomes disconnected, preventing loss of peripherals. This feature applies to Android 10 devices and higher. 
+* New **[Smart Leash](../usage/#smartleash)** feature triggering alerts if a Bluetooth peripheral moves out of range and becomes disconnected, preventing loss of peripherals. This feature only applies to Android 10 devices and higher, starting with Android 10 BSP version 10.12.13 Update 30.
 * **Connection Management for any Bluetooth Peripheral -** Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards is now supported, whereas previously only a restricted list of peripheral devices were supported. This feature is now available on Android 8 as well as Android 10. 
 * **Device Central upgrade now supported on Android Oreo -** Previous versions of Device Central can now be upgraded on supported Android 8 Oreo devices by installing the .APK.
 

@@ -33,7 +33,7 @@ This guide describes major components of the OEMinfo Content Provider Framework,
 
 -----
 
-### Requirements
+### Device Support
 
 **OEMinfo is currently supported on Zebra devices running**...
 

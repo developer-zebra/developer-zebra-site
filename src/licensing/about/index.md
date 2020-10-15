@@ -38,7 +38,7 @@ The following table indicates which features are included with Zebra Professiona
 <tbody>
   <tr bgcolor="#dce8ef">
     <th width="25%">Product/Feature</th>
-    <th width="25%">To add product/feature to a<br>Professional device (incl. TC21/TC26)</th>
+    <th width="25%">To add product/feature to a<br>Professional device (TC21, TC26)</th>
     <th width="25%">To add product/feature to an<br>Enterprise device</th>
     <th width="25%">Licensing<br>Notes</th>
   </tr>
@@ -79,8 +79,8 @@ The following table indicates which features are included with Zebra Professiona
   </tr>
 
   <tr>
-  <td><a href="#softwarecomponents1.5">Device Tracker</a></td>
-  <td colspan="2">Available Q4 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a></td></td>
+  <td><a href="#softwarecomponents1.5">Device Tracker On-prem</a></td>
+  <td colspan="2">Available Dec. 2020<!-- 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a></td></td>
   <td>Available Q4 2020</td>-->
   <td></td>
   </tr>
@@ -223,10 +223,10 @@ Add scanning and data acquisition to any application on a device ***without codi
 
 -----
 <a name="softwarecomponents2"></a>
-### Device Tracker
+### Device Tracker On-prem
 **Centralized solution for tracking and locating misplaced devices within a facility** to help improve worker productivity and prevent device inventory shrinkage using a company's existing Wi-Fi network infrastructure, Bluetooth Low Energy (BLE) signaling and audio alerts. 
 
-[Learn more about Device Tracker](/devicetracker)
+[Learn more about Device Tracker On-prem](/devicetracker)
 
 -----
 

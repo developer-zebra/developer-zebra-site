@@ -59,6 +59,34 @@ NOTES to ADMINS:
 * To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
 * If the button alread does something else, you MUST remap that key to "None."
 * If device is awake, only a long-press is needed to trigger the alert. If in suspend, a short-press wakes it and a long-press triggers. 
+
+KEYMAPPINGMGR
+Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 
+
+10/6/20 demo, Lincy said mapping to "None" is the preferred method.  
+
+AH>> KeyMappingMgr can assign multiple behaviors to a Key Identifier, up to one for each Keyboard State
+
+AH>> Intent CSP interfaces with KeyMappingMgr to find the Key Code that is assigned to the Key Identifier in the Base State
+
+AH>>     If no Key Code is assigned to that Key Identifier in Base State, then the Intent CSP will produce an ERROR
+
+AH>>     If a Key Code is assigned to that Key Identifier in Base State, then the Intent CSP will watch for that Key Code
+
+AH>>     If the Key Code is ONLY assigned to that Key Identifier in Base State, then if that Key Identifer is pressed in some other Keyboard State, then the Key Code will NOT be sent
+
+AH>>     If you want the Key Code to be sent in ALL Keyboard States, then the Key Identifier MUST be assigned to the Key Code in ALL Keyboard States
+
+ORDER IS IMPORTANT
+The intent CSP scans only for key codes, so if none (or a trigger) is assigned to a key, the intent will fail. That means that the key code MUST be assigned to the key BEFORE the intent is issued (or assigned to wait for a long-press, as implemented in intent for MX 10.2). If the PowerKey is used to assign key as a wake-up source, it should be done SECOND to ensure consistent behavior. 
+
+AH>> See above explanation for when and why the failure occurs.
+
+AH>> When PowerMgr is used, relative to KeyMappingMgr and Intent, is not important so long as the appropriate Key Identifier is made a wakeup BEFORE the device suspends
+
+-->
+
+
  -->
 
 -----

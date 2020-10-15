@@ -2,35 +2,35 @@
 title: Decoders 
 subtitle: Supported decoders for DataWedge with parameter name and values for use with SetConfig intent API. 
 product: DataWedge
-productversion: '8.1'
+productversion: '8.2'
 publish: false
 footer: hide
 menu:
     items:
     - title: About
-      url: /datawedge/8-1/guide/about
+      url: /datawedge/8-2/guide/about
     - title: Get Started
-      url: /datawedge/8-1/guide/gettingstarted
+      url: /datawedge/8-2/guide/gettingstarted
     - title: Profiles
-      url: /datawedge/8-1/guide/profiles
+      url: /datawedge/8-2/guide/profiles
     - title: Settings
-      url: /datawedge/8-1/guide/settings
+      url: /datawedge/8-2/guide/settings
     - title: APIs
-      url: /datawedge/8-1/guide/api
+      url: /datawedge/8-2/guide/api
     - title: Guides
-      url: /datawedge/8-1/guide/programmers-guides
+      url: /datawedge/8-2/guide/programmers-guides
     - title: Samples
-      url: /datawedge/8-1/guide/samples
+      url: /datawedge/8-2/guide/samples
     - title: Remote Admin
-      url: /datawedge/8-1/guide/admin
+      url: /datawedge/8-2/guide/admin
     - title: Licensing
-      url: /datawedge/8-1/guide/licensing
+      url: /datawedge/8-2/guide/licensing
     - title: FAQ
-      url: /datawedge/8-1/guide/faq
+      url: /datawedge/8-2/guide/faq
     - icon: fa fa-graduation-cap
       url: https://supportcommunity.zebra.com/s/global-search/datawedge?language=en_US
     - icon: fa fa-search
-      url: /datawedge/8-1/search
+      url: /datawedge/8-2/search
 layout: decoder-support.html
 decoders:
   - type: section

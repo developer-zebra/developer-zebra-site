@@ -164,7 +164,7 @@ _Scanner configuration_
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
-<p>For some devices, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
+<p>For <b>Zebra Professional-series devices,</b> such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
 _License required on Zebra Professional devices_
 

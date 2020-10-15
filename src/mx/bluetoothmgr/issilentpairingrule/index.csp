@@ -1,0 +1,26 @@
+---
+csp: bluetoothmgr
+title: Silent Pairing Rule (checkbox)
+type: parm
+order: 20
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Silent Pairing Action is set to "Enable"
+  pivotal: No
+  name: IsSilentPairingRule
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: (unchecked)
+      description: Sets the rule to require interaction with the device user when pairing with a Bluetooth peripheral.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with Bluetooth peripherals without device-user interaction.
+---
+
+Controls whether the rule initiates silent pairing, which allows a device to pair with a Bluetooth peripheral without the need for user interaction. 

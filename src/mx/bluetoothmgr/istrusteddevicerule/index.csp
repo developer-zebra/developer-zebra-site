@@ -1,0 +1,26 @@
+---
+csp: bluetoothmgr
+title: Trusted Device Rule (checkbox)
+type: parm
+order: 20
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Silent Pairing Action is set to "Enable"
+  pivotal: No
+  name: IsTrustedDeviceRule
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A
+      name: (unchecked)
+      description: Sets the rule to allow the device to pair with any Bluetooth peripheral regardless of its "trusted" status.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair ONLY with Bluetooth peripherals designated as "trusted" using the AllowPairing parameter.
+---
+
+Controls whether the rule allows a device to pair only with devices designated as "trusted" by the AllowPairing parameter. 

@@ -43,6 +43,7 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 
 ## Device Requirements
 
+Requirements for Device Tracker client:
 * **Operating System:** 
     * Android Oreo with GMS (non-restricted)
 * **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), then user intervention is required to turn on Bluetooth.
@@ -52,6 +53,7 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 
 ## Network Requirements
 
+Network requirements for communication between the device and cloud server:
 * Refer to the document supplied by Zebra to ensure the required URLs are accessible:
     * URL for the web portal for administrator access
     * URL for the mobile devices to access the cloud server:<br><br>
@@ -59,7 +61,7 @@ Steps 1 to 3 can be accomplished by creating a [StageNow installation profile](#
 <br><br>
 where [ProjectID] is located in the server config.xml supplied.  
 
-* The client application sends device status and events to the server over HTTPS. Network port 443 or the appopriate URL must permitted to reach the Google Cloud Firebase platform.
+* The client application sends device status and events to the server over HTTPS. Network port 443 or the appopriate URL must be permitted to reach the Google Cloud Firebase platform.
 <br><br>
 
 ## Create StageNow Profiles

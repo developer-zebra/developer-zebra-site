@@ -19,7 +19,7 @@ products:
         url: ../devicecentral
       - title: Device Tracker
         url: ../devicetrackercloud
-      - title: Device Tracker Basic
+      - title: Device Tracker On-Prem
         url: ../devicetrackerbasic
       - title: Enterprise Home Screen
         url: ../ehs

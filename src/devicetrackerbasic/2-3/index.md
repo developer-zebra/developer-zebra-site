@@ -1,9 +1,9 @@
 ---
-title: Device Tracker Basic
+title: Device Tracker On-Prem
 img: /images/products/devicetracker.png
 layout: list-mx.html
 menu:
-  title: Device Tracker Basic
+  title: Device Tracker On-Prem
   items:
     - title: About
       url: /devicetrackerbasic/2-3/guide/about
@@ -19,6 +19,6 @@ menu:
       url: /devicetrackerbasic/2-3/guide/troubleshooting
     - icon: fa fa-search
       url: /devicetrackerbasic/2-3/search
-product: Device Tracker Basic
-productversion: '2.3'
+product: Device Tracker On-Prem
+productversion: "2.3"
 ---

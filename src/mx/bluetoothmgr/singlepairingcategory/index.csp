@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Pairing Category
 type: parm
-order: 20
+order: 30
 mx: "10.2"
 devicetype: A
 parm:
@@ -35,7 +35,7 @@ parm:
       devicetype: A
       name: Dex
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a Bluetooth DEX peripheral.
+      description: Sets the rule to allow the device to pair with a Bluetooth DEX communication peripheral.
     - code: 6
       devicetype: A
       name: Custom_1

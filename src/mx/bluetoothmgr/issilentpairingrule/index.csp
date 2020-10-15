@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Silent Pairing Rule (checkbox)
 type: parm
-order: 20
+order: 35
 mx: "10.2"
 devicetype: A
 parm:

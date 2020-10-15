@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Single Pairing Rule (checkbox)
 type: parm
-order: 20
+order: 40
 mx: "10.2"
 devicetype: A
 parm:

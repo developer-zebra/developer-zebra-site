@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Trusted Device Rule (checkbox)
 type: parm
-order: 20
+order: 25
 mx: "10.2"
 devicetype: A
 parm:

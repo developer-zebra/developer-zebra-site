@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp:
 title: Silent Pairing Class of Device
 type: parm
 order: 15
@@ -24,3 +24,6 @@ Used to enter the Class of Device (CoD) of a Bluetooth device with which to allo
 For more information: 
 * **[CoD Calculator](http://www.ampedrftech.com/cod.htm)** 
 * **[Bluetooth.com Baseband specs](https://www.bluetooth.com/specifications/assigned-numbers/baseband)**
+
+<!-- 10/15/20- removed from view per eng. 
+-->

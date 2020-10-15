@@ -8,7 +8,6 @@ apilevel: "24"
 devicetype: A
 info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
-  presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
   pivotal: No
   name: SilentPairingAction
   type: list
@@ -18,10 +17,10 @@ parm:
       apilevel: "24"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to pair with discovered Bluetooth devices; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      name: Add Remote Device Rule
+      name: Add/Replace Remote Device Rule
       mx: "7.0"
       apilevel: "24"
       description: Adds a rule to the list that applies to the remote device.
@@ -39,7 +38,13 @@ parm:
       description: Clears the list of devices previously specified rules for Silent Pairing, including the default rules.
 ---
 
-Used to administer the list of Silent Pairing Rules on the device. By default, Silent Pairing Rules are in place to allow some Zebra device models to pair without user confirmation (after pairing is initiated by the user). Note: Default pairing rules for the devices listed below match by device Name only. For improved security, **<u>Zebra recommends that default rules be replaced</u> with rules matching by device Name, Class of Device, Upper Address Part and/or, if supported, remote Device PIN and/or Remote Device MAC**.
+Used to administer the list of Silent Pairing Rules on the device during the pairing process for the following features: 
+
+* Trusted Device List
+* Silent Pairing
+* Single Pairing
+
+By default, Silent Pairing Rules are in place to allow some Zebra device models to pair without user confirmation (after pairing is initiated by the user). Note: Default pairing rules for the devices listed below match by device Name only. For improved security, **<u>Zebra recommends that default rules be replaced</u> with rules matching by device Name, Upper Address Part and/or, if supported, Remote Device PIN and/or Remote Device MAC**.
 
 * DS2278
 * DS3578

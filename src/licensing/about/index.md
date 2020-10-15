@@ -38,7 +38,7 @@ The following table indicates which features are included with Zebra Professiona
 <tbody>
   <tr bgcolor="#dce8ef">
     <th width="25%">Product/Feature</th>
-    <th width="25%">To add product/feature to a<br>Professional device (TC21, TC26)</th>
+    <th width="25%">To add product/feature to a<br>Professional device<br>(TC21, TC26)</th>
     <th width="25%">To add product/feature to an<br>Enterprise device</th>
     <th width="25%">Licensing<br>Notes</th>
   </tr>

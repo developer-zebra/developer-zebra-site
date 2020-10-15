@@ -1,0 +1,67 @@
+---
+csp: bluetoothmgr
+title: Pairing Category
+type: parm
+order: 20
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: Is Single Pairing Rule is "checked" AND Silent Pairing Action is "Add/Replace Remote Device Rule"
+  pivotal: No
+  name: SinglePairingCategory
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      devicetype: A
+      name: Headset
+      description: Sets the rule to allow the device to pair with a Bluetooth headset.
+    - code: 2
+      devicetype: A
+      name: Scanner
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a Bluetooth scanner.
+    - code: 3
+      devicetype: A
+      name: Printer
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a Bluetooth printer.
+    - code: 4
+      devicetype: A
+      name: Payment
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a Bluetooth payment device.
+    - code: 5
+      devicetype: A
+      name: Dex
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a Bluetooth DEX peripheral.
+    - code: 6
+      devicetype: A
+      name: Custom_1
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+    - code: 7
+      devicetype: A
+      name: Custom_2
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+    - code: 8
+      devicetype: A
+      name: Custom_3
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+    - code: 9
+      devicetype: A
+      name: Custom_4
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+    - code: 10
+      devicetype: A
+      name: Custom_5
+      mx: "10.2"
+      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+---
+
+Used to select a category for a single pairing rule, allowing one Bluetooth peripheral of a particular type to pair with the device. 
+

@@ -7,7 +7,7 @@ mx: "7.0"
 apilevel: "24"
 devicetype: A
 parm:
-  presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
+  presentif: Mandatory Identifier is "Bluetooth Device Name" AND Silent Pairing Action is "Add/Replace Remote Device Rule" OR "Remove Remote Device Rule"
   pivotal: No
   name: SilentPairingUAP
   type: string

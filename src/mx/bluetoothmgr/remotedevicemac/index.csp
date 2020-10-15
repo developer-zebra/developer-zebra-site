@@ -7,7 +7,7 @@ mx: "9.3"
 apilevel: "28"
 devicetype: A
 parm:
-  presentif: Mandatory Identifier is "Bluetooth MAC Address"
+  presentif: Mandatory Identifier is "Bluetooth MAC Address" AND Silent Pairing Action is "Add/Replace Remote Device Rule" OR "Remove Remote Device Rule" 
   pivotal: No
   name: RemoteDeviceMAC
   type: string

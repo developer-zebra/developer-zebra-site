@@ -17,22 +17,22 @@ parm:
       mx: "8.1"
       osx: "8.5"
       devicetype: A
-      description: This value (or the absence of this parm from the XML) causes no change to the Do Not Disturb setting; any previously selected setting is retained. 
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
     - code: 1
       name: Enable 
       mx: "8.1"
       osx: "8.5"
       devicetype: A
-      description: Enables the device user to enter "Do Not Disturb" mode, potentially blocking app notifications and sounds.
+      description: Allows the device user to control the state of "Do Not Disturb" mode on the device, potentially stopping app notifications and sounds.
     - code: 2
       name: Disable
       mx: "8.1"
       osx: "8.5"
       devicetype: A
-      description: Disables "Do Not Disturb" mode on the device, preventing the device user from suppressing app notifications.
+      description: Prevents the device user from changing the state of "Do Not Disturb" mode on the device.
 ---
 
-This is the On/Off switch for "Do Not Disturb" mode, which suppresses notifications on the device. Disabling DND (option 2) prevents the device user from entering DND mode. 
+Controls whether the device user is permitted to change the state (On/Off) of "Do Not Disturb" mode on the device, which toggles app notification sounds and messages. When Enabled (option 1), the user can turn notifications on or off using the Notification pull-down or Android Settings panel. When Disabled, the user can view the DND state but cannot change it. **Note: This parameter does NOT change the state of DND mode, only the device user's ability to do so**. 
 
 **This feature is supported only on SDM660-platform devices, which includes (but is not limited to)**:
 * PS20

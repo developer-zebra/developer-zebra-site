@@ -63,7 +63,7 @@ Comparison of **Device Tracker On-Prem** and **Device Tracker** cloud-based:
   </tr>
   <tr>
     <td>Common Features</td>
-    <td colspan="2">• Real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Centralized dashboard</td>
+    <td colspan="2">• Simple real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Registration of sites, APs and devices with friendly names for ease of identification<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Centralized dashboard</td>
   </tr>
   <tr>
     <td>Device Check-out/<br>Check-in</td>

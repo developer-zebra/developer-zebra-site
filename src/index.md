@@ -18,9 +18,9 @@ products:
       - title: Device Central
         url: ../devicecentral
       - title: Device Tracker
-        url: ../devicetrackercloud
+        url: ../devicetracker
       - title: Device Tracker On-Prem
-        url: ../devicetrackerbasic
+        url: ../devicetracker-onprem
       - title: Enterprise Home Screen
         url: ../ehs
       - title: Enterprise Keyboard

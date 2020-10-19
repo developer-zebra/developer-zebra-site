@@ -239,22 +239,19 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'devicecentral/3-1/'
     }))
     .use(foldermenu({
-        folder: 'devicetrackerbasic/1-0/'
+        folder: 'devicetracker-onprem/1-0/'
     }))
     .use(foldermenu({
-        folder: 'devicetrackerbasic/2-1/'
+        folder: 'devicetracker-onprem/2-1/'
     }))
     .use(foldermenu({
-        folder: 'devicetrackerbasic/2-2/'
+        folder: 'devicetracker-onprem/2-2/'
     }))
     .use(foldermenu({
-        folder: 'devicetrackerbasic/2-3/'
+        folder: 'devicetracker-onprem/2-3/'
     }))
     .use(foldermenu({
-        folder: 'devicetrackerbasic/3-1/'
-    }))
-    .use(foldermenu({
-        folder: 'devicetrackercloud/3-0/'
+        folder: 'devicetracker/3-0/'
     }))
     .use(foldermenu({
         folder: 'ppc/1-0/'

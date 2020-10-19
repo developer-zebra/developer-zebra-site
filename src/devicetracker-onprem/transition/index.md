@@ -5,7 +5,7 @@ product: Device Tracker
 productversion: 
 ---
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Release of Device Tracker cloud-based is coming soon towards the end of 2020, replacing Device Tracker On-Prem.</b> For access, contact your local Zebra account manager.<br>
+<div class="alert alert-danger alert-dismissible fade in" role="alert">Release of <b>Device Tracker</b> cloud-based is coming soon towards the end of 2020, replacing <b>Device Tracker On-Prem.</b> For access, contact your local Zebra account manager.<br>
 </div>
 
 ## Overview
@@ -14,6 +14,8 @@ In large facilities, every missing device impacts workfoce productivity and retu
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MzCWdLUhEPY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Main Features
+
+Main features of **Device Tracker**:
 
 * Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple sites.
 * Support for central administrator, site manager, and site associate roles. 

@@ -30,13 +30,15 @@ Watch the DevTalk presentation on DataWedge Voice Input:
 
 Voice Input relies on DataWedge profiles for configuration. Ensure that the application to receive the voice captured data is associated to the profile. The Voice Input section in the profile provides the options that control the voice data capture. See _Main Features_ section below.
 
-Voice data capture is activated either by a pre-defined start phrase or by pressing the PTT button. When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops when the timeout value elapses after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
+Voice data capture is activated either by a pre-defined start phrase or by pressing the PTT button. When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 4_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 5_). Voice capture stops when the timeout value elapses after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
 
 Watch a demo on the basics of Voice Input with DWDemo app:<br> 
 <iframe width="300" height="613" src="https://www.useloom.com/embed/92684a9ded8e44eca2a08cd4472d1fa3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Watch a demo showcasing the **Send Enter** command for multiple field entries: <br>
 <div><iframe width="300" height="632" src="https://www.useloom.com/embed/e351721223ec4b3b96e0a383cd392fdf" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+**Note: When voice input is enabled, the Google voice engine included with Google App version 11.21.9.21 (and later) plays a notification tone every few seconds** to indicate that it is listening in the background. To minimize this tone, Zebra recommends creating a profile (separate from Profile0) and associating it with the required applications/activities to limit sound notifications to be heard only when the app is in the foreground.
 
 ##Main Features
 

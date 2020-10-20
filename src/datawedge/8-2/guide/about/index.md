@@ -153,7 +153,7 @@ For more information about approved languages or to download a localized operati
 ## New in DataWedge 8.2
 * [Multiple scanner support](../input/barcode/#scannerselection) added for different scanners to be used interchangeably without the need for manual configuration.
 * New DataWedge intent APIs:
-    * [Notify](../api/notify) - play notification sound(s) on connected Bluetooth scanners with RSM (remote speaker microphone).
+    * [Notify](../api/notify) - play notification sound(s) on connected Bluetooth scanners with RSM (Remote Scanner Management).
     * [Enumerate Triggers](../api/enumeratetriggers) - retrieve supported trigger list of a device.
 * New Document Capture features:
     * Detect the presence of a handwritten signature with [signature presence detection](../input/barcode/#documentselection). To detect this programmatically, see [Content Provider Programmer's Guide](../programmers-guides/content-provider).

@@ -7,7 +7,7 @@ productversion: '8.2'
 
 ## NOTIFY
 
-Used to play notification sound(s) on connected Bluetooth scanners with RSM (remote speaker microphone). Supported Bluetooth scanners: RS6000, RS5100 and DS3678.
+Used to play notification sound(s) on connected Bluetooth scanners with RSM (Remote Scanner Management). Supported Bluetooth scanners: RS6000, RS5100 and DS3678.
 
 ### Function Prototype
 

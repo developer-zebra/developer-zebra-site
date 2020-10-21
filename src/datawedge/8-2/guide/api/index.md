@@ -218,7 +218,7 @@ DataWedge APIs are categorized into 4 types:
 
 <b style="font-size:16px">Notification APIs:</b><br />
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./registerfornotification">Register/Unregister for Notification</a>** enables apps to register or unregister to receive notifications of status changes related to:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./registerfornotification">Register/Unregister for Notifications</a>** enables apps to register or unregister to receive notifications of status changes related to:<br />
 
 * Profile switching
 * Scanner status
@@ -241,7 +241,7 @@ DataWedge APIs are categorized into 4 types:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./enabledatawedge">Enable/Disable DataWedge</a>** - Enable/disable DataWedge on the device.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./scannerinputplugin">Enable/Disable Scanner Input Plug-in</a>** - Enable/Disable the Scanner Input Plug-in in use by the current active profile, which effectively disables scanning.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./enumeratetriggers">Enumerate Triggers</a>** - Retrieve supported trigger list of a device.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./notify">Notify</a>** - Play notification sounds on connected Bluetooth scanners with RSM.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./notify">Notify (Bluetooth Scanner Notifications)</a>** - Play notification sound(s) and/or display a colored LED after a scan from a connected Bluetooth scanner with RSM (Remote Scanner Management).<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./resetdefaultprofile">Reset Default Profile</a>** - Reset the default profile to Profile0, the built-in profile used with unassociated apps.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setdefaultprofile">Set Default Profile</a>** - Set the specified profile as the default profile.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./setreportingoptions">Set Reporting Options</a>** - Configure reporting options from importing databases and profiles.<br />

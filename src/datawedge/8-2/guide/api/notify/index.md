@@ -1,5 +1,5 @@
 ---
-title: Notify (Notification)
+title: Notify (Bluetooth Scanner Notifications)
 layout: guide.html
 product: DataWedge
 productversion: '8.2'
@@ -7,7 +7,22 @@ productversion: '8.2'
 
 ## NOTIFY
 
-Used to play notification sound(s) on connected Bluetooth scanners with RSM (Remote Scanner Management). Supported Bluetooth scanners: RS6000, RS5100 and DS3678.
+Used to play notification sound(s) and/or display a colored LED after a scan from a connected Bluetooth scanner with RSM (Remote Scanner Management). Multiple notifications can be played in succession. 
+
+Supported notifications:
+* green LED on/off
+* red LED on/off
+* short/long beep
+* fast/slow warble beep
+* high/low beep
+* low-high beep
+* high-low-high beep
+* low-high-low beep
+* high-high-low-low beep
+* multiple beeps in succession, from 1 to 5 times
+
+Supported Bluetooth scanners: RS6000, RS5100 and DS3678. 
+
 
 ### Function Prototype
 

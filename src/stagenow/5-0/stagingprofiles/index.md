@@ -28,37 +28,31 @@ Programming an Alert Button in the way recommended by Zebra requires use of all 
 The steps for creating an Alert Button are listed below, and **<u>must be executed in the order shown</u>** for proper operation. Detailed instructions for the steps are provided in the sections that follow. 
 
 **To create an Alert Button**:  
-1. Create a Profile.
-2. Select an MX version (MX 10.2 or later is required).
-3. Select the Xpert Mode Wizard.
-4. Enter a name for the Profile and click the "Start" button.
-5. Select PowerMgr CSP, click its (+) button.  
-6. Select intent CSP and click its (+) button. 
-7. Click the "Add" button to proceed. 
-8. In the PowerMgr Wake-Up Action section, select the "Turn on" option and click Continue. 
-9. In the Intent Mode section, select "Schedule sending of intent on key presses" option.
-10. In the Intent Key Identifier section, select the desired key to be designated as the Alert Button.
-11. In the Intent Android Action Name section, enter the desired action for the use case.<br>For example, `android.intent.action.CALL` summons the Android native dialer. 
-10. Enter data for any additional required fields for the desired use case. <br>For example, entering "tel:8885551212" in the Intent URI section would place a call to the number 888-555-1212. 
+1. **Create a Profile**.
+2. **Select an MX version** (MX 10.2 or later is required).
+3. **Select Xpert Mode** Wizard.
+4. **Enter a Profile name** and **click "Start"** button.
+5. **Select PowerMgr CSP** and click its (+) button.  
+6. **Select Intent CSP** and click its (+) button. 
+7. **Click "Add"** to proceed. 
+8. **In PowerMgr Wake-Up Action** section, **select "Turn on"** option and click Continue. 
+9. **In Intent Mode** section, **select "Schedule sending of intent on key presses"** option.
+10. **In Intent Key Identifier** section, **select the desired key** to be designated **as the Alert Button**. <br> `IMPORTANT:` See Alert Button Notes, below.  
+11. **In the Intent Android Action Name** section, **enter the desired action** for the use case.<br>For example, `android.intent.action.CALL` summons the Android native dialer. 
+10. **Enter data for any additional required fields** for the desired use case. <br>For example, entering "tel:8885551212" in the Intent URI section would place a call to the number 888-555-1212. 
 11. When finished entering data, **click Continue**.
-12. Generate a barcode (or `'bin` file for deploying via NFC tag or SD card).
-13. Scan the barcode (or deploy the `'bin` file) to configure the target device.
-14. When staging is complete, long-press the newly programmed key to test Alert Button functionality. 
+12. **Generate a barcode** (or `'bin` file for deploying via NFC tag or SD card).
+13. **Scan the barcode** (or deploy the `'bin` file) to configure the target device.
+14. When staging is complete, **<u>test Alert Button functionality</u>** by long-pressing the newly programmed key. 
 
 #### Alert Button Notes
 * **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 
-* **The intent function reads only the base key code** for a given key; it does NOT read any of the color key modifiers. To prevent the device from ignoring Alert key-presses if the keyboard is in a different mode, map "none" to all key modifier colors. 
 * **If device is not in suspend mode**, only a long-press is needed to trigger the alert. 
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
+* **The intent function reads only the base state of a given key identifier**;  it does NOT read any of the color-key modifiers. To prevent the device from ignoring Alert key-presses if the keyboard is NOT in the base state, map "none" to all keyboard states. To send desired key code in ALL keyboard states, assign the Key Identifier to the key code in ALL keyboard states. Learn more [about KeyMapping](/mx/keymappingmgr/)
 
 <!-- 
 
-10/9/20- Captured during Alert Button demo call:  
-
-NOTES to ADMINS: 
-* To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
-* If the button alread does something else, you MUST remap that key to "None."
-If in suspend, a short-press wakes it and a long-press triggers. 
 
 KEYMAPPINGMGR
 Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 

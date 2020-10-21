@@ -18,26 +18,32 @@ This section provides information for the staging administrator about creating a
 Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity.
 
 #### Alert Button Services
+Programming an Alert Button in the way recommended by Zebra requires use of all three CSPs shown below.   
+
 * **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier
 * **<u>Intent</u>** assigns a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is long-pressed
 * **<u>Power Manager</u>** (optionally) assigns the key as a wake-up source to ensure that the Alert Button operates from suspend mode.<br>**Zebra recommends setting the Alert Button as a wake-up source to ensure operation from all device states**. 
 
 #### Summary of Steps
-The steps for creating an Alert Button are listed below, and **must be executed in the order shown**. Instructions for each step are detailed in the sections that follow. 
+The steps for creating an Alert Button are listed below, and **<u>must be executed in the order shown</u>** for proper operation. Detailed instructions for the steps are provided in the sections that follow. 
 
 **To create an Alert Button**:  
 1. Create a Profile.
 2. Select an MX version (MX 10.2 or later is required).
-3. Select a wizard.
-4. Enter a name for the Profile and click ADD button.
-5. Select PowerMgr CSP and set the desired button as a wake-up source with the "Turn on" option. 
-6. Select intent CSP and select "Schedule sending of intent on key presses" option.
-7. Select the key to be designated as the Alert Button. 
-8. Select the Android Action Name or other desired action depending on the use case. For example, `android.intent.action.CALL` summons the Android native dialer. 
-10. Enter the for the Action. For example, "URI = 'tel:8885551212'" would place a call to the number 888-555-1212.
-11. Generate a barcode (or `'bin` file for deploying via NFC tag or SD card).
-12. Scan the barcode (or deploy the `'bin` file) to configure the target device.
-13. When staging is complete, long-press the newly programmed key to test Alert Button functionality. 
+3. Select the Xpert Mode Wizard.
+4. Enter a name for the Profile and click the "Start" button.
+5. Select PowerMgr CSP, click its (+) button.  
+6. Select intent CSP and click its (+) button. 
+7. Click the "Add" button to proceed. 
+8. In the PowerMgr Wake-Up Action section, select the "Turn on" option and click Continue. 
+9. In the Intent Mode section, select "Schedule sending of intent on key presses" option.
+10. In the Intent Key Identifier section, select the desired key to be designated as the Alert Button.
+11. In the Intent Android Action Name section, enter the desired action for the use case.<br>For example, `android.intent.action.CALL` summons the Android native dialer. 
+10. Enter data for any additional required fields for the desired use case. <br>For example, entering "tel:8885551212" in the Intent URI section would place a call to the number 888-555-1212. 
+11. When finished entering data, **click Continue**.
+12. Generate a barcode (or `'bin` file for deploying via NFC tag or SD card).
+13. Scan the barcode (or deploy the `'bin` file) to configure the target device.
+14. When staging is complete, long-press the newly programmed key to test Alert Button functionality. 
 
 #### Alert Button Notes
 * **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 

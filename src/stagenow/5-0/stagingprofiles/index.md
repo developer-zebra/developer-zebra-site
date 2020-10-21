@@ -46,10 +46,12 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 14. When staging is complete, **<u>test Alert Button functionality</u>** by long-pressing the newly programmed key. 
 
 #### Alert Button Notes
+* **The intent function reads only the base state of a given key identifier**;  it does NOT read any of the keyboard-modifier states (i.e. ALT, SHIFT, color, etc.). To prevent the device from ignoring Alert key-presses if the keyboard is NOT in the base state, map "none" to all keyboard states. 
+* **To send the desired key code in ALL keyboard states**, assign the desired Key Identifier to the key code in ALL keyboard states.<br>[More about KeyMapping](/mx/keymappingmgr/).
 * **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 
 * **If device is not in suspend mode**, only a long-press is needed to trigger the alert. 
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
-* **The intent function reads only the base state of a given key identifier**;  it does NOT read any of the color-key modifiers. To prevent the device from ignoring Alert key-presses if the keyboard is NOT in the base state, map "none" to all keyboard states. To send desired key code in ALL keyboard states, assign the Key Identifier to the key code in ALL keyboard states. Learn more [about KeyMapping](/mx/keymappingmgr/)
+
 
 <!-- 
 

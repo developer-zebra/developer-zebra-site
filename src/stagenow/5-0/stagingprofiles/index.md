@@ -7,58 +7,52 @@ productversion: '5.0'
 
 ## Overview
 
-This section provides information for the staging administrator on creating and managing Profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
+This section provides information for the staging administrator about creating and managing Profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
 
-> **StageNow 4.0 (and higher) supports [Trusted Staging](../trustedstaging)**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below and the [Trusted Staging Guide](../trustedstaging) for details. 
+> **StageNow 4.0 (and later) supports [Trusted Staging](../trustedstaging)**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below and the [Trusted Staging Guide](../trustedstaging) for details. 
 
-<!-- ### Welcome Tips
-Several screens throughout the Workstation Tool offer helpful pop-up tips. Select the checkbox offered in order to dismiss the tip permanently. Select OK to dismiss the pop-up.
-
-![img](../images/Review_withHelppopup.jpg)
-
- -->
-
-<!-- 
-
-steps: 
+-----
 
 ### Alert Button
 
-Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, alerting security, summoning medical assistance or any other reason.
+Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity.
 
-**The Alert Button uses the following services**: 
-* **KeyMapping Manager** to assign a Key Code to a Key Identifier
-* **Intent** to assign a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is pressed and to execute the desired action
-* **Power Manager** to (optionally) assign the key as a wake-up source to ensure that the Alert Button operates from suspend mode. Zebra recommends this step is to ensure operation from all device states. 
+#### Alert Button Services
+* **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier
+* **<u>Intent</u>** assigns a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is long-pressed
+* **<u>Power Manager</u>** (optionally) assigns the key as a wake-up source to ensure that the Alert Button operates from suspend mode.<br>**Zebra recommends setting the Alert Button as a wake-up source to ensure operation from all device states**. 
 
+#### Summary of Steps
+The steps for creating an Alert Button are listed below, and **must be executed in the order shown**. Instructions for each step are detailed in the sections that follow. 
 
-1. create profile
-2. select mx version
-3. select a wizard
-4. enter a name for profile and click ADD
-5. select PowerMgr and set as wake-up source and select iption "Turn on" 
-6. Intent "Schedule sending of itent on key presses"
-7. Select button (rear buton)
-8. Android Action Name (this depends on user and use case)
-9. android.intent.action.CALL (Android native dialer) 
-10. URI = "tel:8885551212"
-11. generate barcode
-12. scan barcode to configure device
-13. short-press, then long-press the key (sequence prevent accidental "false alarms")
-14. to assign the key as ALERT ONLY (and not also as scan trigger) assign key code "none" 
-15. intent reads only the base key code, it does NOT read any of the color-key modifiers. to prevent the device from ignoring Alert keypresses if the keyboard is in a different mode, map "none" to all COLORS. 
-16. 
-17. 
-18. 
-19. 
-20. 
+**To create an Alert Button**:  
+1. Create a Profile.
+2. Select an MX version (MX 10.2 or later is required).
+3. Select a wizard.
+4. Enter a name for the Profile and click ADD button.
+5. Select PowerMgr CSP and set the desired button as a wake-up source with the "Turn on" option. 
+6. Select intent CSP and select "Schedule sending of intent on key presses" option.
+7. Select the key to be designated as the Alert Button. 
+8. Select the Android Action Name or other desired action depending on the use case. For example, `android.intent.action.CALL` summons the Android native dialer. 
+10. Enter the for the Action. For example, "URI = 'tel:8885551212'" would place a call to the number 888-555-1212.
+11. Generate a barcode (or `'bin` file for deploying via NFC tag or SD card).
+12. Scan the barcode (or deploy the `'bin` file) to configure the target device.
+13. When staging is complete, long-press the newly programmed key to test Alert Button functionality. 
+
+#### Alert Button Notes
+* **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 
+* **The intent function reads only the base key code** for a given key; it does NOT read any of the color key modifiers. To prevent the device from ignoring Alert key-presses if the keyboard is in a different mode, map "none" to all key modifier colors. 
+* **If device is not in suspend mode**, only a long-press is needed to trigger the alert. 
+* **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
+
+<!-- 
 
 10/9/20- Captured during Alert Button demo call:  
 
 NOTES to ADMINS: 
 * To prevent changes to these settings, block user access to the Android Settings panel. (clarify with allan or praveen). 
 * If the button alread does something else, you MUST remap that key to "None."
-* If device is awake, only a long-press is needed to trigger the alert. If in suspend, a short-press wakes it and a long-press triggers. 
+If in suspend, a short-press wakes it and a long-press triggers. 
 
 KEYMAPPINGMGR
 Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 
@@ -85,9 +79,6 @@ AH>> See above explanation for when and why the failure occurs.
 AH>> When PowerMgr is used, relative to KeyMappingMgr and Intent, is not important so long as the appropriate Key Identifier is made a wakeup BEFORE the device suspends
 
 -->
-
-
- -->
 
 -----
 

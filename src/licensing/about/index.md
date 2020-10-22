@@ -1,5 +1,5 @@
 ---
-title: About Zebra MDNA Licensing
+title: About Zebra Mobility DNA
 layout: guide.html
 product: MDNA Licensing
 menu:
@@ -22,7 +22,7 @@ menu:
 
 **With its two-tiered system, Zebra gives partners the flexibility** of selecting full-featured Enterprise devices out of the gate, or reducing initial costs with the Professional series and upgrading as their organization grows.
 
-* **Zebra Professional-series devices provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
+* **Zebra <a href="#professional">Professional-series devices</a> provide the core elements of MDNA**, equipping devices such as the TC21 and TC26 with the most critical tools for app development and device management for enterprise mobility deployments of all sizes. 
 * **Zebra Enterprise-series devices include the full MDNA suite** of enhancements for increased levels of productivity, performance and security.  
 
 > **`IMPORTANT:`<br>When Multi-user Android is enabled on a device**, MX and Mobility DNA features work only with Primary users. 
@@ -30,7 +30,7 @@ menu:
 -----
 
 ## MDNA Components and Features  
-The following table indicates which features are included with Zebra Professional and Enterprise devices and lists the action(s) required to enhance a Professional device with Enterprise Features or Products. 
+The following table indicates which features are included with Zebra Professional and Enterprise devices and lists the action(s) required to enhance a Professional device with Enterprise features, products or tools. 
 
 **NOTE: Each <u>MDNA license covers all MDNA features</u> for one device**.
 
@@ -38,7 +38,7 @@ The following table indicates which features are included with Zebra Professiona
 <tbody>
   <tr bgcolor="#dce8ef">
     <th width="25%">Product/Feature</th>
-    <th width="25%">To add product/feature to a<br>Professional device<br>(TC21, TC26)</th>
+    <th width="25%">To add product/feature to a<br><a href="#professional">Professional device</a><br></th>
     <th width="25%">To add product/feature to an<br>Enterprise device</th>
     <th width="25%">Licensing<br>Notes</th>
   </tr>
@@ -184,10 +184,44 @@ The following table indicates which features are included with Zebra Professiona
   </tr>
 
 </table>
-<a name="softwarecomponents1"></a>
+<a name="professional"></a>
 
 &#42; *One MDNA license covers all MDNA features for one device*.<br>
 † *Supported on devices with Android 10 or later*.
+
+-----
+<!--   <td colspan="2">
+  <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td> -->
+
+## Zebra Professional-series Devices
+
+<table class="faceliftCenter" style="width:100%" border="1" padding="5px">
+<tbody>
+  <tr bgcolor="#dce8ef">
+    <th width="25%"></th>
+    <th width="25%">Field Mobility, Retail</th>
+    <th width="25%">Warehouse, Manufacturing</th>
+    <th width="25%">Healthcare</th>
+  </tr>
+
+  <tr>
+  <td>Wi-Fi only</td>
+  <td>TC21</td>
+  <td>MC22</td>
+  <td>TC21 HC</td>
+  </tr>
+
+  <tr>
+  <td>Wi-Fi, WWAN</td>
+  <td>TC26</td>
+  <td>MC27</td>
+  <td>TC26 HC</td>
+  </tr>
+
+</tbody>
+</table>
+
+<a name="softwarecomponents1"></a>
 
 -----
 
@@ -203,7 +237,7 @@ Converts legacy green-screen apps into Android apps with a modern, tap-only UI f
 ### DataWedge
 Add scanning and data acquisition to any application on a device ***without coding***. Manipulate and deliver acquired data as needed for an enterprise based on simple options or complex rules. 
 
-&#42;&#42;**NOTE: Zebra Professional-series devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture**. In DataWedge, these features are referred to as "NextGen SimulScan." 
+&#42;&#42; **NOTE: Zebra Professional-series devices include all DataWedge features *<u>except</u>* multi-barcode scanning and image/document capture**. In DataWedge, these features are referred to as "NextGen SimulScan." 
 
 [Learn more about DataWedge](/datawedge)
 

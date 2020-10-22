@@ -5,7 +5,7 @@ layout: redirect.html
 redirect_url: /licensing/about
 ---
 
-### Loading to the latest Zebra licensing information...
+### Loading the latest Zebra Mobility DNA information...
 
 <!--
   menu:

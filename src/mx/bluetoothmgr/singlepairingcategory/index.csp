@@ -40,27 +40,27 @@ parm:
       devicetype: A
       name: Custom_1
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+      description: Reserved for future or custom use.
     - code: 7
       devicetype: A
       name: Custom_2
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+      description: Reserved for future or custom use.
     - code: 8
       devicetype: A
       name: Custom_3
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+      description: Reserved for future or custom use.
     - code: 9
       devicetype: A
       name: Custom_4
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+      description: Reserved for future or custom use.
     - code: 10
       devicetype: A
       name: Custom_5
       mx: "10.2"
-      description: Sets the rule to allow the device to pair with a custom Bluetooth device.
+      description: Reserved for future or custom use.
 ---
 
 Used to select a category for a single pairing rule, allowing one Bluetooth peripheral of a particular type to pair with the device. 

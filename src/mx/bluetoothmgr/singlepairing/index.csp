@@ -1,0 +1,34 @@
+---
+csp: bluetoothmgr
+title: Single Pairing Enable/Disable
+type: parm
+order: 7
+mx: "10.2"
+apilevel: "27"
+devicetype: A
+parm:
+  pivotal: No
+  name: SinglePairing
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      apilevel: "27"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.2"
+      apilevel: "27"
+      description: Enables the device to pair only with a single peripheral of a certain category at a time.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.2"
+      apilevel: "27"
+      description: Disables pairing restrictions, allowing the device to pair with multiple peripherals of different types.
+---
+
+Controls whether the device is permitted to pair freely with other devices or if pairing is limited to a single peripheral type at a time. 

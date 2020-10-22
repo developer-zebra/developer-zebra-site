@@ -20,8 +20,8 @@ Zebra devices offer the ability to designate a key as a "panic button" that when
 #### Alert Button Services
 Programming an Alert Button in the way recommended by Zebra requires use of all three CSPs shown below.   
 
-* **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier
-* **<u>Intent</u>** assigns a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is long-pressed
+* **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier.
+* **<u>Intent</u>** assigns a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is long-pressed.
 * **<u>Power Manager</u>** (optionally) assigns the key as a wake-up source to ensure that the Alert Button operates from suspend mode.<br>**Zebra recommends setting the Alert Button as a wake-up source to ensure operation from all device states**. 
 
 #### Summary of Steps
@@ -39,7 +39,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 9. **In Intent Mode** section, **select "Schedule sending of intent on key presses"** option.
 10. **In Intent Key Identifier** section, **select the desired key** to be designated **as the Alert Button**. <br> `IMPORTANT:` See Alert Button Notes, below.  
 11. **In the Intent Android Action Name** section, **enter the desired action** for the use case.<br>For example, `android.intent.action.CALL` summons the Android native dialer. 
-10. **Enter data for any additional required fields** for the desired use case. <br>For example, entering "tel:8885551212" in the Intent URI section would place a call to the number 888-555-1212. 
+10. **Enter data for any additional required fields** for the desired use case. <br>For example, entering "tel:+18885551212" in the Intent URI section would place a call to the number 1-888-555-1212. 
 11. When finished entering data, **click Continue**.
 12. **Generate a barcode** (or `'bin` file for deploying via NFC tag or SD card).
 13. **Scan the barcode** (or deploy the `'bin` file) to configure the target device.
@@ -52,9 +52,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 * **If device is not in suspend mode**, only a long-press is needed to trigger the alert. 
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
 
-
 <!-- 
-
 
 KEYMAPPINGMGR
 Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 

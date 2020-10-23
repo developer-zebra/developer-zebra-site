@@ -62,6 +62,39 @@ The following software must be installed on the staging workstation prior to usi
 
 **StageNow 5.0 introduces [Smart Profiles](../smartprofile)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofile). 
 
+**Supports MX 10.2**, which adds the following major features and enhancements: 
+
+* **New [Access Manager](/mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](/mx/clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](/mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](/mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](/mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [Power Manager](/mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Touch Manager](/mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](/mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](/mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
+
+
 -----
 
 ## Version History

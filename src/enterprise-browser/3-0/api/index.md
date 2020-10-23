@@ -30,6 +30,8 @@ automenu:
           url: camera
         - title: CardReader
           url: cardreader
+        - title: Database
+          url: Database
         - title: Device
           url: device
         - title: Enterprise Keyboard

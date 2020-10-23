@@ -19,6 +19,22 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
+#### `OCTOBER, 2020 UPDATE:`
+
+##### Enterprise Browser 3.0.6.0 for Android devices
+
+**EB 3.0.6.0 is now able to apply and activate licenses** for itself and the MDNA bundle in a single step. 
+
+**The [Config Editor](../ConfigEditor) desktop utility now supports the use of spaces in a path name**. This can be helpful, for example, when the path name contains a Windows system variable (i.e. “%USERPROFILE%) that includes a space (i.e. “John Smith”).  
+
+#### New/Updated APIs
+
+* **The [Device API](../../api/device/)** can now enable and disable the Android Navigation Bar on the device, which contains the BACK, HOME and RECENT soft keys.
+* **The [WebView API](../../api/webview/)** can now enable and disable zoom, which allows the user to “pinch zoom” in and out of an image or web page using the two-finger gesture. 
+* **The [Database API](../../api/Database/) has been restored**. In response to customer requests, apps running on EB 3.0.6.0 (and later) can now access low-level APIs for an on-device SQLite database.  
+
+----
+
 ## New in v3.0
 
 ### New Features 

@@ -38,12 +38,7 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 > In the code lines above, notice that `ebapi.js` is included first, followed by `eb.eznfc.js`, which is the EzNFC API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
-        
-
-
 ##Methods
-
-
 
 ### disableRead()
 Disables NFC read of the application.

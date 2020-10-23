@@ -44,7 +44,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 13. **In KeyMappingMgr "Choose a Key to Modify"** section, **select the key designated as the Alert Button**. 
 14. **In KeyMappingMgr "Key behavior"** section, **select "Send key-code"**. The key-code drop-down appears. 
 15. **From the KeyMappingMgr key-code drop-down, select “none.”** 
-16. `IMPORTANT:` To ensure Alert-Button functionality in any keyboard state, map “none” to ***every*** key behavior (“Key behavior in Blue mode,” etc.). <br>When finished, **click "Continue"** button. 
+16. `IMPORTANT:` To ensure Alert-Button functionality in any keyboard state, map “none” to ***every*** key behavior (“Key behavior in Blue mode,” “Key behavior in Orange mode,” etc.). <br>When finished, **click "Continue"** button. 
 17. **In Intent "Mode"** section, **select "Schedule sending of intent on key presses"** option.
 18. **In Intent "Key Identifier"** section, **select the key** designated as the Alert Button.
 19. **In the Intent "Android Action Name"** section, **enter the desired action** for the use case.<br>

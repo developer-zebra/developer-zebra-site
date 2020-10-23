@@ -50,3 +50,6 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 8. **Select Export method** as needed.  
 
 #### The Profile is now ready for deployment. 
+
+> `IMPORTANT NOTE:` If a Zero Touch Profile is imported onto a different host workstation, it no longer functions for Zero Touch enrollment.
+

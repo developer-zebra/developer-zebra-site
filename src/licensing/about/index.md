@@ -61,14 +61,14 @@ The following table indicates which features are included with Zebra Professiona
   <td><a href="#softwarecomponents">DataWedge</a></td>
   <td>Included on device&#42;&#42;</td>
   <td>Included on device</td>
-  <td>&#42;&#42;<a href="../process"> MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/doc capture</td>
+  <td><a href="../process">MDNA Enterprise license</a> required for:<br> • Multi-barcode<br>• Image/doc capture</td>
   </tr>
 
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
   <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td></td>
   <td>Included on device †</td>
-  <td>† Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
+  <td>Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
   </tr>
 
   <tr>
@@ -187,6 +187,7 @@ The following table indicates which features are included with Zebra Professiona
 <a name="professional"></a>
 
 &#42; *One MDNA license covers all MDNA features for one device*.<br>
+&#42;&#42; *An MDNA Enterprise license is required for DataWedge to access multi-barcode and image/doc capture features*.<br>
 † *Supported on devices with Android 10 or later*.
 
 -----
@@ -208,14 +209,14 @@ The following table indicates which features are included with Zebra Professiona
   <td>Wi-Fi only</td>
   <td>TC21</td>
   <td>MC22</td>
-  <td>TC21 HC</td>
+  <td>Coming soon</td>
   </tr>
 
   <tr>
   <td>Wi-Fi, WWAN</td>
   <td>TC26</td>
   <td>MC27</td>
-  <td>TC26 HC</td>
+  <td>Coming soon</td>
   </tr>
 
 </tbody>

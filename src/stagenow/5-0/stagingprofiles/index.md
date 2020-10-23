@@ -33,23 +33,23 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 2. **Select MX version** (MX 10.2 or later is required).
 3. **Select Xpert Mode** Wizard.
 4. **Enter a Profile name** and **click "Start"** button.
-5. **Select PowerMgr CSP** and click its **(+)** button.
-6. Select **KeyMappingMgr CSP** and click its **(+)** button. 
-7. Select **Intent CSP** and click its (+) button.
+5. **Select PowerMgr CSP** and **click (+)** button.
+6. Select **KeyMappingMgr CSP** and **click (+)** button. 
+7. Select **Intent CSP** and **click (+)** button.
 8. **Click "Add"** to proceed.
 9. **In PowerMgr "Wake-Up Action"** section, **select "Turn on"** option and click Continue.
 10. `OPTIONAL:` **In PowerMgr "All Wake-up Sources"** section, **select "Turn on"** to activate global wake-up. **SKIP TO STEP 13**. 
 11. **In PowerMgr "All Wake-up Method"** section, **select “Use Software (Mappable keycodes) for Wake-up**.” 
-12. **In the “Choose a key to control”** section, **select the desired key** to be designated as the Alert Button from the drop-down.
-13. **In KeyMappingMgr "Choose a Key to Modify"** section, **select the key designated as the Alert Button** in the PowerMgr step from the drop-down. 
+12. **In the “Choose a key to control”** section, **select the desired key** to be designated as the Alert Button from the drop-down.<br> **Click "Continue"** button.
+13. **In KeyMappingMgr "Choose a Key to Modify"** section, **select the key designated as the Alert Button**. 
 14. **In KeyMappingMgr "Key behavior"** section, **select "Send key-code"**. The key-code drop-down appears. 
 15. **From the KeyMappingMgr key-code drop-down, select “none.”** 
-16. `IMPORTANT:` To ensure Alert-Button functionality in any keyboard state, map “none” to ***every*** key behavior (“Key behavior in Blue mode,” etc.). When finished, click Continue. 
+16. `IMPORTANT:` To ensure Alert-Button functionality in any keyboard state, map “none” to ***every*** key behavior (“Key behavior in Blue mode,” etc.). <br>When finished, **click "Continue"** button. 
 17. **In Intent "Mode"** section, **select "Schedule sending of intent on key presses"** option.
-18. **In Intent "Key Identifier"** section, **select the key** designated as the Alert Button in the PowerMgr step.
-19. **In the Intent "Android Action Name"** section, **enter the desired action** for the use case.
+18. **In Intent "Key Identifier"** section, **select the key** designated as the Alert Button.
+19. **In the Intent "Android Action Name"** section, **enter the desired action** for the use case.<br>
 For example, `android.intent.action.CALL` summons the Android native dialer.
-20. **Enter data for any additional required fields** for the desired use case.
+20. **Enter data for any additional required fields** for the desired use case.<br>
 For example, entering "`tel:+18885551212`" in the Intent "URI" section would place a call to the number 1-888-555-1212.
 21. When finished entering data, **click Continue**.
 22. **Generate a barcode** (or `.bin` file for deploying via NFC tag or SD card).

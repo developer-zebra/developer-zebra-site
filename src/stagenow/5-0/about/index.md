@@ -64,33 +64,33 @@ The following software must be installed on the staging workstation prior to usi
 
 **Supports MX 10.2**, which adds the following major features and enhancements: 
 
-* **New [Access Manager](/mx/accessmgr) features**: 
+* **New [Access Manager](../csp/access) features**: 
  * Enter the Token received from a caller 
-* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+* **New [Beacon Manager](../csp/beaconmgr) CSP**: 
  * Controls Bluetooth Low Energy beacon on mobile computers 
-* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
+* **New [Bluetooth Manager](../csp/bluetoothmgr) features**: 
  * Configure single pairing of accessories 
  * Define trusted devices
  * Enhancements to silent pairing rules  
-* **New [Clock](/mx/clock) features**: 
+* **New [Clock](../csp/clock) features**: 
  * Enter date and time in local or Universal Coordinate format  
-* **New [Display Manager](/mx/displaymgr) features**: 
+* **New [Display Manager](../csp/display) features**: 
  * Control automatic screen rotation 
  * Enable/disable adaptive brightness 
  * Set device brightness level  
-* **New [KeyMapping Manager](/mx/keymappingmgr) features**: 
+* **New [KeyMapping Manager](../csp/keymap) features**: 
  * Support for additional key codes
-* **New [License Manager](/mx/licensemgr) features**: 
+* **New [License Manager](../csp/license) features**: 
  * Supports URI-based license sources 
-* **New [Power Manager](/mx/powermgr) features**: 
+* **New [Power Manager](../csp/power) features**: 
  * Enable/disable/configure battery saver options 
-* **New [PowerKey Manager](/mx/powerkeymgr) features**: 
+* **New [PowerKey Manager](../csp/powerkey) features**: 
  * Set touch mode options 
-* **New [Touch Manager](/mx/touchmgr) features**: 
+* **New [Touch Manager](../csp/touch) features**: 
  * Support and control latest Zebra devices   
-* **New [UI Manager](/mx/uimgr) features**: 
+* **New [UI Manager](../csp/ui) features**: 
  * Show/hide percentage of battery charge on screen 
-* **New [Wi-fi](/mx/wifi) features**: 
+* **New [Wi-fi](../csp/wifi) features**: 
  * Configure Fine Timing Measurement  
  * Control encryption options
 

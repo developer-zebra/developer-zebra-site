@@ -1,0 +1,26 @@
+---
+csp: intent
+title: Keep Device Awake (checkbox)
+type: parm
+order: 5
+mx: "10.2"
+devicetype: A,B
+parm:
+  presentif: The Mode is "Schedule"
+  pivotal: Yes
+  name: KeepDeviceAwake
+  type: list
+  list:
+    - code: 0
+      mx: "10.2"
+      devicetype: A,B
+      name: (unchecked)
+      description: Allows device to enter suspend mode. 
+    - code: 1
+      mx: "10.2"
+      devicetype: A,B
+      name: (checked)
+      description: Prevents device from entering suspend mode.
+---
+
+Used to control whether the device is permitted to enter suspend mode, which reduces power consumption and preserves battery life. Keeping device awake can help prevent missed notifications and key-presses. 

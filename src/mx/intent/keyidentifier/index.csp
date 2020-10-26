@@ -1,0 +1,431 @@
+---
+csp: intent
+title: Key Identifier
+type: parm
+order: 3
+mx: "10.2"
+devicetype: A
+parm:
+  presentif: The Mode is "Schedule"
+  pivotal: Yes
+  type: list
+  name: KeyIdentifier
+  list:
+    - code: (null)
+      mx: "10.2"
+      devicetype: A
+      name: None
+      description: A null value (or the absence this parm from the XML) will result in no Key Mapping action; any previously selected setting is retained.
+    - code: 0-9
+      mx: "10.2"
+      devicetype: A
+      name: Number Keys
+      description: Enter a number to select the corresponding numerical key. For example, enter the number "2" to select the "2" key.
+    - code: A-Z
+      mx: "10.2"
+      devicetype: A
+      name: Alpha Keys
+      description: Enter a letter of the alphabet to select the corresponding key. For example, enter the letter "A" to select the "A" key.
+    - code: DOT
+      mx: "10.2"
+      devicetype: A
+      name: Period
+      description: The period or "dot" key
+    - code: COMMA
+      mx: "10.2"
+      devicetype: A
+      name: Comma
+      description: The comma key
+    - code: STAR
+      mx: "10.2"
+      devicetype: A
+      name: Star
+      description: The "Star" key (this is not the "asterisk" key)
+    - code: POUND
+      mx: "10.2"
+      devicetype: A
+      name: Pound
+      description: The Pound ("#") or number-sign key
+    - code: F1-F12
+      mx: "10.2"
+      devicetype: A
+      name: Function Keys
+      description: Use "F" plus the number of the desired function key. For example, enter "F10" to select the "F10" key.
+    - code: ENTER
+      mx: "10.2"
+      devicetype: A
+      name: Enter
+      description: The "Enter" key on the device (might be different than the "Return" key)
+    - code: UP
+      mx: "10.2"
+      devicetype: A
+      name: Up
+      description: The Up-arrow key
+    - code: DOWN
+      mx: "10.2"
+      devicetype: A
+      name: Down
+      description: The Down-arrow key
+    - code: LEFT
+      mx: "10.2"
+      devicetype: A
+      name: Left
+      description: The Left-arrow key
+    - code: RIGHT
+      mx: "10.2"
+      devicetype: A
+      name: Right
+      description: The Right-arrow key
+    - code: ESC
+      mx: "10.2"
+      devicetype: A
+      name: Escape
+      description: The Escape or "ESC" key
+    - code: BACKSPACE
+      mx: "10.2"
+      devicetype: A
+      name: Backspace
+      description: The Backspace or "BKSP" key
+    - code: SPACE
+      mx: "10.2"
+      devicetype: A
+      name: Space
+      description: The Space key or spacebar
+    - code: RETURN
+      mx: "10.2"
+      devicetype: A
+      name: Return
+      description: The "Return" key (might be different than the "Enter" key)
+    - code: CLR
+      mx: "10.2"
+      devicetype: A
+      name: Clear
+      description: The "Clear" key
+    - code: FIELD_EXIT
+      mx: "10.2"
+      devicetype: A
+      name: Field Exit
+      description: The "Field Exit" key
+    - code: ALT 
+      mx: "10.2"
+      devicetype: A
+      name: Alt
+      description: The "Alt" modifier/meta key
+    - code: CTRL
+      mx: "10.2"
+      devicetype: A
+      name: Control
+      description: The Control or "CTRL" modifier/meta key
+    - code: SHIFT
+      mx: "10.2"
+      devicetype: A
+      name: Shift
+      description: The "SHIFT" modifier/meta key
+    - code: FUNC
+      mx: "10.2"
+      devicetype: A
+      name: Func
+      description: The "Function" modifier/meta key
+    - code: ALPHA
+      mx: "10.2"
+      devicetype: A
+      name: Alpha
+      description: The "Alpha" modifier/meta key
+    - code: BLUE
+      mx: "10.2"
+      devicetype: A
+      name: Blue
+      description: The key that is colored completely blue (sometimes known as the "Function" key)
+    - code: ORANGE
+      mx: "10.2"
+      devicetype: A
+      name: Orange
+      description: The key that is colored completely orange (sometimes known as the "Alpha" key)
+    - code: DIAMOND
+      mx: "10.2"
+      devicetype: A
+      name: Diamond
+      description: The key marked with a "diamond" symbol
+    - code: GREEN
+      mx: "10.2"
+      devicetype: A
+      name: Green Dot
+      description: The key with a green dot on it
+    - code: RED
+      mx: "10.2"
+      devicetype: A
+      name: Red Dot
+      description: The key with a red dot on it
+    - code: VOLUMEUP
+      mx: "10.2"
+      devicetype: A
+      name: Volume Up
+      description: The key that increases the audio volume on the device
+    - code: VOLUMEDOWN
+      mx: "10.2"
+      devicetype: A
+      name: Volume Down
+      description: The key that decreases the audio volume on the device
+    - code: SCAN
+      mx: "10.2"
+      devicetype: A
+      name: Scan
+      description: The key or button that invokes the device scanner
+    - code: GRIP_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Grip Trigger
+      description: Usually the upper-most button on the hand grip
+    - code: GRIP_TRIGGER_2
+      mx: "10.2"
+      devicetype: A
+      name: Grip Trigger 2
+      description: The lower button on the hand grip when two grip buttons are present on the device
+    - code: LEFT_TRIGGER_1
+      mx: "10.2"
+      devicetype: A
+      name: Button L1
+      description: Usually the upper-most button on the left side of the device 
+    - code: LEFT_TRIGGER_2
+      mx: "10.2"
+      devicetype: A
+      name: Button L2
+      description: The lower button on the left side of the device when two buttons are present on the left side
+    - code: RIGHT_TRIGGER_1
+      mx: "10.2"
+      devicetype: A
+      name: Button R1
+      description: Usually the upper-most button on the right side of the device
+    - code: RIGHT_TRIGGER_2
+      mx: "10.2"
+      devicetype: A
+      name: Button R2
+      description: The lower button on the right side of the device when two buttons are present on the right side
+    - code: LEFT_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Left Trigger
+      description: The button on the left side of a Zebra MC33 device (if so equipped)
+    - code: RIGHT_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Right Trigger
+      description: The button on the right side of a Zebra MC33 device (if so equipped)
+    - code: CENTER_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Center Trigger
+      description: The button at the top of the keypad on a Zebra MC33 device (if so equipped)
+    - code: GUN_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Gun Trigger
+      description: The button on the front of the handle of a Zebra MC33 device (if so equipped)
+    - code: HEADSET_HOOK
+      mx: "10.2"
+      devicetype: A
+      name: Headset Button
+      description: The button that picks up/hangs up the headset
+    - code: BACK
+      mx: "10.2"
+      devicetype: A
+      name: Back
+      description: The "BACK" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
+    - code: HOME
+      mx: "10.2"
+      devicetype: A
+      name: Home
+      description: The "HOME" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
+    - code: MENU
+      mx: "10.2"
+      devicetype: A
+      name: Menu
+      description: The "MENU" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
+    - code: RECENT
+      mx: "10.2"
+      devicetype: A
+      name: Recent
+      description: The "Recent Apps" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
+    - code: SEARCH
+      mx: "10.2"
+      devicetype: A
+      name: Search
+      description: The "Search" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
+    - code: KEYLIGHT 
+      mx: "10.2"
+      devicetype: A
+      name: Keyboard Backlight
+      description: The keyboard backlight key or button on the device
+    - code: LAMP
+      mx: "10.2"
+      devicetype: A
+      name: Display Backlight
+      description: The display-screen backlight key or button on the device
+    - code: POWER
+      mx: "10.2"
+      devicetype: A
+      name: Power
+      description: The "Power" (on/off) key or button on the device
+    - code: P1
+      mx: "10.2"
+      devicetype: A
+      name: P1 Button
+      description: The button marked "P1"
+    - code: P2
+      mx: "10.2"
+      devicetype: A
+      name: P2 Button
+      description: The button marked "P2"
+    - code: P3
+      mx: "10.2"
+      devicetype: A
+      name: P3 Button
+      description: The button marked "P3"
+    - code: P4
+      mx: "10.2"
+      devicetype: A
+      name: P4 Button
+      description: The button marked "P4"
+    - code: P5
+      mx: "10.2"
+      devicetype: A
+      name: P5 Button
+      description: The button marked "P5"
+    - code: P6
+      mx: "10.2"
+      devicetype: A
+      name: P6 Button
+      description: The button marked "P6"
+    - code: REAR_BUTTON
+      mx: "10.2"
+      devicetype: A
+      name: Rear Button
+      description: The button on the rear of the device
+    - code: LEFT_EXTERNAL_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Left External Trigger
+      description: The trigger button on the left side of an external triggering device
+    - code: RIGHT_EXTERNAL_TRIGGER
+      mx: "10.2"
+      devicetype: A
+      name: Right External Trigger
+      description: The trigger button on the right side of an external triggering device
+    - code: BLUETOOTH_REMOTE_TRIGGER_1
+      mx: "10.2"
+      devicetype: A
+      info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
+      name: Bluetooth Remote Trigger 1
+      description: The primary trigger button on a Bluetooth-connected barcode scanner
+    - code: BLUETOOTH_REMOTE_TRIGGER_2
+      mx: "10.2"
+      devicetype: A
+      info: Supported only on RS5100 and RS6000 scanners when used with the WT6300.
+      name: Bluetooth Remote Trigger 2
+      description: The secondary trigger button (if equipped) on a Bluetooth-connected barcode scanner
+    - code: NAV_PAD
+      mx: "10.2"
+      devicetype: A
+      name: Touch NAV_PAD
+      description: The touch-sensitive navigation pad on a device
+      info: Known as the "Touch Button" on the TC8000.
+    - code: M1
+      mx: "10.2"
+      devicetype: A
+      name: Macro 1
+      description: The Zebra VC80x M1 key 
+    - code: M2
+      mx: "10.2"
+      devicetype: A
+      name: Macro 2
+      description: The Zebra VC80x M2 key
+    - code: M3
+      mx: "10.2"
+      devicetype: A
+      name: Macro 3
+      description: The Zebra VC80x M3 key
+    - code: M4
+      mx: "10.2"
+      devicetype: A
+      name: Macro 4
+      description: The Zebra VC80x M4 key
+    - code: M5
+      mx: "10.2"
+      devicetype: A
+      name: Macro 5
+      description: The Zebra VC80x M5 key
+    - code: M6
+      mx: "10.2"
+      devicetype: A
+      name: Macro 6
+      description: The Zebra VC80x M6 key
+    - code: BRIGHTNESSUP
+      mx: "10.2"
+      devicetype: A
+      name: Brightness Up
+      description: Key on the Zebra VC80x that increases screen brightness
+    - code: BRIGHTNESSDOWN
+      mx: "10.2"
+      devicetype: A
+      name: Brightness Down
+      description: Key on the Zebra VC80x that reduces screen brightness
+    - code: KEYLIGHTUP
+      mx: "10.2"
+      devicetype: A
+      name: Keyboard Backlight Brightness Up
+      description: The key that increases keyboard backlight brightness
+    - code: KEYLIGHTDOWN
+      mx: "10.2"
+      devicetype: A
+      name: Keyboard Backlight Brightness Down
+      description: The key that reduces keyboard backlight brightness
+    - code: ROTATE
+      mx: "10.2"
+      devicetype: A
+      name: Rotate
+      description: The key that causes the screen to change orientation
+    - code: PLUS
+      mx: "10.2"
+      devicetype: A
+      name: Plus
+      description: The key that inputs a plus (+) sign
+    - code: MINUS
+      mx: "10.2"
+      devicetype: A
+      name: Minus
+      description: 'The key that inputs a minus (-) sign or hyphen'
+    - code: PAUSE
+      mx: "10.2"
+      devicetype: A
+      name: Pause
+      description: The key that inputs a pause/break command
+    - code: END
+      mx: "10.2"
+      devicetype: A
+      name: End
+      description: The key that moves the cursor to the end of the current page
+    - code: PAGEUP
+      mx: "10.2"
+      devicetype: A
+      name: Page Up
+      description: The key that moves the cursor up one page
+    - code: PAGEDOWN
+      mx: "10.2"
+      devicetype: A
+      name: Page Down
+      description: The key that moves the cursor down one page
+    - code: TAB
+      mx: "10.2"
+      devicetype: A
+      name: Tab
+      description: The key that inputs a tab character
+---
+
+Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, enter the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.
+
+**Not all devices have Keys for every Key Identifier in the table**. Attempts to add an Override Mapping for a Key that is not present on a device will produce an error in the Result XML. For a list of supported Keys on a specific device, query the KeyMappingMgr for Key Identifiers (see Queries, below) or refer to the device documentation. For known deviations from these standards, **see the [Standards and Deviations section](#standardsanddeviations)** of the Overview at the top of this page. 

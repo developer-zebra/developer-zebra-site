@@ -1,0 +1,34 @@
+---
+csp: intent
+title: Mode
+type: parm
+order: 7
+mx: "10.2"
+apilevel: "1"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: Mode
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      apilevel: "1"
+      devicetype: A,B
+      name: Immediate
+      description: Sends the Intent immediately upon execution of the Profile in which it is contained.
+    - code: 2
+      mx: "10.2"
+      apilevel: "1"
+      devicetype: A,B
+      name: Schedule
+      description: Delays sending of the intent until an assigned key is pressed.
+    - code: 3
+      mx: "10.2"
+      apilevel: "1"
+      devicetype: A,B
+      name: Cancel
+      description: Cancels the intent and stops watching for the assigned key-press.
+---
+
+Used to control whether the Intent is sent immediately upon execution of a profile, delayed until an assigned key is pressed, or canceled. 

@@ -38,6 +38,16 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
+#### `OCTOBER, 2020 UPDATE:`
+
+##### Enterprise Keyboard 3.9.9.1 for Android devices
+
+**Now supports the Zebra WT6300 runnning Android 10** 
+
+**The shift key now behaves according to Android conventions**: single-tapping the shift key outputs the next key-press as upper-case and subsequent presses as lower case; double-tapping activates "caps lock,” and all characters that follow are output in upper-case. Single-tapping a caps-locked shift key releases the lock. 
+
+-----
+
 ## New in v3.9
 
 ### New Features 

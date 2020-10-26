@@ -40,9 +40,9 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v3.9
 
-#### `OCTOBER, 2020 UPDATE:`
+### `OCTOBER, 2020 UPDATE:`
 
-##### Enterprise Keyboard 3.9.9.1 for Android devices
+#### Enterprise Keyboard 3.9.9.1
 
 **Now supports the Zebra WT6300 runnning Android 10** 
 
@@ -50,7 +50,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-### New Features in v3.9
+### Features Introduced in EKB 3.9
 
 * **New RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key. 
 * **New Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 

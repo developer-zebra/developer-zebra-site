@@ -21,13 +21,12 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v3.0
 
-#### `OCTOBER, 2020 UPDATE:`
+### `OCTOBER, 2020 UPDATE`
 
-##### Enterprise Browser 3.0.6.0 for Android devices
+#### Enterprise Browser 3.0.6.0 for Android devices
 
-**EB 3.0.6.0 is now able to apply and activate licenses** for itself and the MDNA bundle in a single step. 
-
-**The [Config Editor](../ConfigEditor) desktop utility now supports the use of spaces in a path name**. This can be helpful, for example, when the path name contains a Windows system variable (i.e. “%USERPROFILE%) that includes a space (i.e. “John Smith”).  
+* **EB 3.0.6.0 can now apply and activate licenses** for itself and the MDNA bundle in a single step. 
+* **The [Config Editor](../ConfigEditor) desktop utility now supports the use of spaces in a path name**. This can be helpful, for example, when the path name contains a Windows system variable (i.e. “%USERPROFILE%) that includes a space (i.e. “John Smith”).  
 
 #### New/Updated APIs
 
@@ -37,7 +36,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ----
 
-### New Features in 3.0
+### Features Introduced in EB 3.0
 
 #### Term-based Licensing
 * Enterprise Browser 3.0 and later now supports term-based (subscription) licensing with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download). [More info](../licensing/#iiaccesslicensingsystem).  

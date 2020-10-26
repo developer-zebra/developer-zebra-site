@@ -19,6 +19,8 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
+## New in v3.0
+
 #### `OCTOBER, 2020 UPDATE:`
 
 ##### Enterprise Browser 3.0.6.0 for Android devices
@@ -35,9 +37,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ----
 
-## New in v3.0
-
-### New Features 
+### New Features in 3.0
 
 #### Term-based Licensing
 * Enterprise Browser 3.0 and later now supports term-based (subscription) licensing with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download). [More info](../licensing/#iiaccesslicensingsystem).  

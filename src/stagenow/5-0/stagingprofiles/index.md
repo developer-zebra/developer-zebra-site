@@ -38,7 +38,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 7. Select **Intent CSP** and **click (+)** button.
 8. **Click "Add"** to proceed.
 9. **In PowerMgr "Wake-Up Action"** section, **select "Turn on"** option and click Continue.
-10. `OPTIONAL:` **In PowerMgr "All Wake-up Sources"** section, **select "Turn on"** to activate global wake-up. **SKIP TO STEP 13**. 
+10. `OPTIONAL:` **In PowerMgr "All Wake-up Sources"** section, **select "Turn on"** to activate all wake-up keys to wake the device. <br>If opting for this configuration, **SKIP TO STEP 13**. 
 11. **In PowerMgr "All Wake-up Method"** section, **select “Use Software (Mappable keycodes) for Wake-up**.” 
 12. **In the “Choose a key to control”** section, **select the desired key** to be designated as the Alert Button from the drop-down.<br> **Click "Continue"** button.
 13. **In KeyMappingMgr "Choose a Key to Modify"** section, **select the key designated as the Alert Button**. 

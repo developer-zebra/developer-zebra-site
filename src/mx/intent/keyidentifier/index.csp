@@ -2,7 +2,7 @@
 csp: intent
 title: Key Identifier
 type: parm
-order: 3
+order: 8
 mx: "10.2"
 devicetype: A
 parm:

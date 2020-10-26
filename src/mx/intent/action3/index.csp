@@ -2,7 +2,7 @@
 csp: intent
 title: Alert Button Action
 type: parm
-order: 5
+order: 7
 mx: "10.2"
 devicetype: A,B
 parm:

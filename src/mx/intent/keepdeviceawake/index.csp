@@ -2,7 +2,7 @@
 csp: intent
 title: Keep Device Awake (checkbox)
 type: parm
-order: 5
+order: 9
 mx: "10.2"
 devicetype: A,B
 parm:
@@ -23,4 +23,4 @@ parm:
       description: Prevents device from entering suspend mode.
 ---
 
-Used to control whether the device is permitted to enter suspend mode, which reduces power consumption and preserves battery life. Keeping device awake can help prevent missed notifications and key-presses. 
+Used to control whether the device is permitted to enter suspend mode, which reduces power consumption and preserves battery life. Keeping device awake can help prevent missed notifications and/or key-presses. 

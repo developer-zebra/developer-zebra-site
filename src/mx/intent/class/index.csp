@@ -2,7 +2,7 @@
 csp: intent
 title: Class
 type: parm
-order: 12
+order: 5
 mx: "4.1"
 apilevel: "1"
 devicetype: A,B

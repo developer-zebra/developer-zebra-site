@@ -45,7 +45,7 @@ If an Intent does not enter a Package Name and Class Name, it is considered an I
 * Enroll a Device Owner
 * Enter the Android Action name of the operation to be performed 
 * Enter the URI and MIME Type of the primary data
-* Attach up to 5 extra data items, of the following data types:
+* Attach up to five (5) extra data items of the following data types:
 	* Standard Integer
 	* Character
 	* Character Sequence
@@ -56,3 +56,5 @@ If an Intent does not enter a Package Name and Class Name, it is considered an I
 	* Double Precision Floating Point
 	* String
 	* Single Byte Integer
+* Set Intent to listen and launch on a key-press 
+* Identify a key to launch an Intent

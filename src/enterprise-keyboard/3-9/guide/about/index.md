@@ -40,7 +40,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v3.9
 
-### `OCTOBER, 2020 UPDATE:`
+### `OCTOBER, 2020 UPDATE`
 
 #### Enterprise Keyboard 3.9.9.1
 

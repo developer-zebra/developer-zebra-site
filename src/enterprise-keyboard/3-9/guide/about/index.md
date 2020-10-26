@@ -38,6 +38,8 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
+## New in v3.9
+
 #### `OCTOBER, 2020 UPDATE:`
 
 ##### Enterprise Keyboard 3.9.9.1 for Android devices
@@ -48,9 +50,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v3.9
-
-### New Features 
+### New Features in v3.9
 
 * **New RepeatKeys feature** causes a specified keyCode to be repeated when long-pressing the key. 
 * **New Macros feature** can combine multiple keyCodes, presses or Actions into a single key-press Action. 

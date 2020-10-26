@@ -8,6 +8,7 @@ osx: "6.5"
 apilevel: "23"
 devicetype: A,B
 parm:
+  presentif: The Mode is NOT "Cancel" and Action is "Enroll Device Owner"
   pivotal: Yes
   name: DOJsonData
   type: list

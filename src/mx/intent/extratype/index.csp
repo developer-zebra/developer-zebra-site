@@ -8,6 +8,7 @@ apilevel: "1"
 devicetype: A,B
 parm:
   pivotal: Yes
+  presentif: The Mode is NOT "Cancel" and Action is NOT "Enroll Device Owner" and the Extra Type is NOT "none"
   name: ExtraType
   type: list
   list:

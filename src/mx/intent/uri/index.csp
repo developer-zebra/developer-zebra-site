@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Action is "StartActivity" or "StartService"
+  presentif: The Mode is NOT "Cancel" and the Action is "StartActivity" or "StartService"
   pivotal: No
   name: Uri
   type: string

@@ -8,7 +8,7 @@ apilevel: "23"
 order: 22
 devicetype: A,B
 parm:
-  presentif: The Action is "Enroll Device Owner" and DO JsonData is "JsonFile"
+  presentif: The Mode is NOT "Cancel" and Action is "Enroll Device Owner" and DO JsonData is "JsonFile"
   pivotal: No
   name: DOJsonFileData
   type: string

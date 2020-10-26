@@ -8,7 +8,7 @@ osx: "6.5"
 apilevel: "23"
 devicetype: A,B
 parm:
-  presentif: The Action code is "Enroll Device Owner" and DO JsonData is "JsonString"
+  presentif: The Mode is NOT "Cancel" and Action is "Enroll Device Owner" and DO JsonData is "JsonString"
   pivotal: No
   name: DOJsonStringData
   type: string

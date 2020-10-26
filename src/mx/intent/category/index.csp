@@ -7,7 +7,7 @@ apilevel: "23"
 order: 4
 devicetype: A,B
 parm:
-  presentif: The Action is NOT "Enroll Device Owner"
+  presentif: The Mode is NOT "Cancel" and Action is NOT "Enroll Device Owner"
   pivotal: No
   name: Category
   type: string

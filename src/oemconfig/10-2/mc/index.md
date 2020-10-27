@@ -32,6 +32,8 @@ Specify an ordered list of *Transaction Steps* that define the Actions or config
 - Type = bundle_array
 
 
+details2 = steps
+level3Items.size() = 1
 <a id="steps.step">
 
 ### Transaction Step
@@ -102,8 +104,8 @@ Since a *Transaction* may include multiple *Transaction Steps*, there may be cas
 
 
 By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying an *Error Mode* value:
-- If the value !!Continue!! is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
-- If the value !!Stop!! is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
+- If the value ***Continue*** is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
+- If the value ***Stop*** is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
 
 
 **Detail Information:**
@@ -156,8 +158,8 @@ Select whether the Analytics Client on a device is turned on (enabled) or turned
 
 
 The Analytics Client is turned on (enabled) by default on all devices:
-- If the value !!2!! is selected, the Analytics Client will be turned off (disabled), and hence it will not collect any machine data during the operation of the device and will not deliver any machine data regardless of whether connectivity is available.
-- If the value !!1!! is selected, the Analytics Client will be turned on (enabled), and hence it will automatically collect machine data during the operation of the device and deliver it, when connectivity is available, to the Zebra Analytics Cloud Server.
+- If the value ***Off*** is selected, the Analytics Client will be turned off (disabled), and hence it will not collect any machine data during the operation of the device and will not deliver any machine data regardless of whether connectivity is available.
+- If the value ***On*** is selected, the Analytics Client will be turned on (enabled), and hence it will automatically collect machine data during the operation of the device and deliver it, when connectivity is available, to the Zebra Analytics Cloud Server.
 
 
 On some devices, the ability to turn off (disable) the Analytics Client may not be supported.
@@ -195,8 +197,8 @@ Select whether the the Device User will be allowed to control whether the Analyt
 
 
 The Analytics Client is turned on (enabled) by default on all devices:
-- If the value !!2!! is selected, the Device User will not be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
-- If the value !!1!! is selected, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
+- If the value ***Off*** is selected, the Device User will not be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
+- If the value ***On*** is selected, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
 
 
 **Detail Information:**
@@ -466,10 +468,10 @@ Use this *Group* to configure the audio settings on a device.
 Select the audio replication behavior of of a device.
 
 
-- If the value !!1!! is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
+- If the value ***Replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
 
 
-- If the value !!2!! is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
+- If the value ***Do not replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
 
 
 **Detail Information:**
@@ -506,13 +508,13 @@ Select the audio replication behavior of of a device.
 Select the mute and vibrate behavior of a device.
 
 
-- If the value !!1!! is selected, the volume will be muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
+- If the value ***Mute without Vibrate*** is selected, the volume will be muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
 
 
-- If the value !!2!! is selected, the volume will be muted (made silent) and the device will vibrate, permitting tactile but NOT audible alerts.
+- If the value ***Mute with Vibrate*** is selected, the volume will be muted (made silent) and the device will vibrate, permitting tactile but NOT audible alerts.
 
 
-- If the value !!3!! is selected, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts.
+- If the value ***Unmute without Vibrate*** is selected, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts.
 
 
 **Detail Information:**
@@ -583,13 +585,13 @@ Automatic triggering allows a Device User to initiate trigger-activated function
 Select whether and how automatic triggering should occur on a device.
 
 
-- If the value !!0!! is selected, automatic triggering will never occur and the Device User will be required to manually initiate trigger-activated functions.
+- If the value ***Off*** is selected, automatic triggering will never occur and the Device User will be required to manually initiate trigger-activated functions.
 
 
-- If the value !!1!! is selected, automatic triggering may occur automatically if the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
+- If the value ***Auto On*** is selected, automatic triggering may occur automatically if the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
 
-- If the value !!2!! is selected, automatic triggering can always occur automatically , whether the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
+- If the value ***Always On*** is selected, automatic triggering can always occur automatically , whether the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
 
 **Detail Information:**
@@ -626,10 +628,10 @@ Select whether and how automatic triggering should occur on a device.
 Select the range at which automatic triggering will detect the presence of an object and initiate automatic triggering.
 
 
-- If the value !!0!! is selected, automatic triggering will occur only when an object is brought within near proximity to the device sensor. This may be desirable if the device is being worn in a holster and hence it is convenient to bring objects very close to the device sensor.
+- If the value ***Near*** is selected, automatic triggering will occur only when an object is brought within near proximity to the device sensor. This may be desirable if the device is being worn in a holster and hence it is convenient to bring objects very close to the device sensor.
 
 
-- If the value !!1!! is selected, automatic triggering will occur when an object is brought within less near proximity to the device sensor. This may be desirable if the device is located in a stand or holder and hence it is less convenient to have to bring objects very close to the device sensor.
+- If the value ***Far*** is selected, automatic triggering will occur when an object is brought within less near proximity to the device sensor. This may be desirable if the device is located in a stand or holder and hence it is less convenient to have to bring objects very close to the device sensor.
 
 
 **Detail Information:**
@@ -706,8 +708,8 @@ Since a built-in System Application is built-in, you cannot uninstall it from a 
 
 
 To prevent the use of a built-in System Application, you can disable it and thereby prevent its use, even though it remains installed.
-- If the value !!EnableApplication!! is selected, you must also specify %%steps.step.blacklistStep.blacklistActionAllowSystemPackageName%% to provide the *Android Package Name* that identifies the *Built-In System Application* to be allowed.
-- If the value !!DisableApplication!! is selected, you must also specify %%steps.step.blacklistStep.blacklistActionDisallowSystemPackageName%% to provide the *Android Package Name* that identifies the *Built-In System Application* to be disallowed.
+- If the value ***Allow*** is selected, you must also specify **Allow System Package Name** to provide the *Android Package Name* that identifies the *Built-In System Application* to be allowed.
+- If the value ***Disallow*** is selected, you must also specify **Disallow System Package Name** to provide the *Android Package Name* that identifies the *Built-In System Application* to be disallowed.
 
 
 **Detail Information:**
@@ -738,7 +740,7 @@ To prevent the use of a built-in System Application, you can disable it and ther
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies a *Built-In System Application* to be allowed when the Action value !!EnableApplication!! is selected for %%steps.step.blacklistStep.blacklistAction%%.
+Enter the *Android Package Name* that identifies a *Built-In System Application* to be allowed when the Action value ***Allow*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -767,7 +769,7 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies a *Built-In System Application* to be disallowed when the Action value !!DisableApplication!! is selected for %%steps.step.blacklistStep.blacklistAction%%.
+Enter the *Android Package Name* that identifies a *Built-In System Application* to be disallowed when the Action value ***Disallow*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -831,8 +833,8 @@ Select whether the device is *Discoverable* via Bluetooth.
 
 
 Devices are NOT *Discoverable* via Bluetooth by default except when the Bluetooth Pairing screen of the Settings UI is active.
-- If the value !!2!! is selected, the default behavior will be in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
-- If the value !!1!! is selected, the default behavior will be overridden and the device will be *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
+- If the value ***Off*** is selected, the default behavior will be in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
+- If the value ***On*** is selected, the default behavior will be overridden and the device will be *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
 
 
 
@@ -872,8 +874,8 @@ Select whether the device will accept new Bluetooth Pairings.
 
 
 devices will accept new Bluetooth Pairings by default.
-- If the value !!2!! is selected, the default behavior will be overridden and the device will not accept new Bluetooth Pairings.
-- If the value !!1!! is selected, the default behavior will be in effect and the device will accept new Bluetooth Pairings.
+- If the value ***Disallow*** is selected, the default behavior will be overridden and the device will not accept new Bluetooth Pairings.
+- If the value ***Allow*** is selected, the default behavior will be in effect and the device will accept new Bluetooth Pairings.
 
 
 **Detail Information:**
@@ -911,11 +913,11 @@ Select whether the device can silently perform Bluetooth pairings
 
 
 Devices will silently perform Bluetooth Pairings by default.
-- If the value !!1!! is selected, the default behavior will be overridden and the device can not silently perform Bluetooth Pairings.
-- If the value !!2!! is selected, the default behavior will be in effect and the device can silently perform Bluetooth Pairings.
+- If the value ***Disallow*** is selected, the default behavior will be overridden and the device can not silently perform Bluetooth Pairings.
+- If the value ***Allow*** is selected, the default behavior will be in effect and the device can silently perform Bluetooth Pairings.
 
 
-Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless %%steps.step.bluetoothStep.bluetoothAction%% is used to configure specific silent pairing rules that define how silent pairing should occur.
+Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless **Action** is used to configure specific silent pairing rules that define how silent pairing should occur.
 
 
 **Detail Information:**
@@ -956,14 +958,14 @@ Bluetooth *Silent Pairing* allows new Bluetooth Pairings to be automatically com
 
 
 Since the list of rules is empty by default on devices, Bluetooth *Silent Pairing* is disabled by default, hence all new Bluetooth Pairings will occur manually and thus will require Device User interaction to complete . Once one or more rules are added, new pairings to selected peripheral devices identified by these rules will be allowed to occur automatically while all new other new pairings will continue to occur manually.
-- If the value !!1!! is selected:
-    - You must also specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%%, to provide the name of the new rule to be added or %%steps.step.bluetoothStep.bluetoothActionAddRuleMACAddress%%, to provide the Bluetooth MAC Address of the new rule to be added.
-    - You must also specify %%steps.step.bluetoothStep.bluetoothActionAddRuleDeviceClass%% or %%steps.step.bluetoothStep.bluetoothActionAddRuleUpperAddressPart%% to provide the criteria that the new rule will use to determine which new Bluetooth Pairings will be allowed.
-- If the value !!2!! is selected, you must specify at least one of the following to provide the information that will be used to determine which rule or rules, which have matching information, will be removed:
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleName%%, to provide the name of the existing rule to be removed or %%steps.step.bluetoothStep.bluetoothActionRemoveRuleMACAddress%% to provide the Bluetooth MAC Address of the existing rule to be removed
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleDeviceClass%%
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleUpperAddressPart%%
-- If the value !!3!! is selected, you do not need to specify any additional information.
+- If the value ***AddRule*** is selected:
+    - You must also specify **Add Rule Name**, to provide the name of the new rule to be added or **Add Rule MAC Address**, to provide the Bluetooth MAC Address of the new rule to be added.
+    - You must also specify **Add Rule Device Class** or **Add Rule Device Upper Address Part** to provide the criteria that the new rule will use to determine which new Bluetooth Pairings will be allowed.
+- If the value ***RemoveRule*** is selected, you must specify at least one of the following to provide the information that will be used to determine which rule or rules, which have matching information, will be removed:
+    - **Remove Rule Name**, to provide the name of the existing rule to be removed or **Remove Rule MAC Address** to provide the Bluetooth MAC Address of the existing rule to be removed
+    - **Remove Rule Device Class**
+    - **Remove Rule Device Upper Address Part**
+- If the value ***RemoveAllRules*** is selected, you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -997,12 +999,12 @@ Since the list of rules is empty by default on devices, Bluetooth *Silent Pairin
 </span> <br><br>
 
 
-Enter a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 
 
-Note that you can specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%% or %%steps.step.bluetoothStep.bluetoothActionAddRuleMACAddress%%, but not both.
+Note that you can specify **Add Rule Name** or **Add Rule MAC Address**, but not both.
 
 
 **Detail Information:**
@@ -1034,7 +1036,7 @@ Note that you can specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%
 </span> <br><br>
 
 
-Enter the *Device Class* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Class* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Class*.
@@ -1069,7 +1071,7 @@ When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will a
 </span> <br><br>
 
 
-Enter the *Device Upper Address Part* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Upper Address Part* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 When a *Device Upper Address Part* is specified for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Upper Address Part* in the upper part of their *Bluetooth Address*.
@@ -1104,7 +1106,7 @@ When a *Device Upper Address Part* is specified for a rule, Bluetooth *Silent Pa
 </span> <br><br>
 
 
-Enter the name that identifies an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the name that identifies an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**.
 
 
 
@@ -1114,7 +1116,7 @@ Any existing rule that has the specified name will be removed.
 
 
 
-Note that you can specify %%steps.step.bluetoothStep.bluetoothActionRemoveRuleName%% or %%steps.step.bluetoothStep.bluetoothActionRemoveRuleMACAddress%%, but not both.
+Note that you can specify **Remove Rule Name** or **Remove Rule MAC Address**, but not both.
 
 
 **Detail Information:**
@@ -1146,7 +1148,7 @@ Note that you can specify %%steps.step.bluetoothStep.bluetoothActionRemoveRuleNa
 </span> <br><br>
 
 
-Enter the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%
+Enter the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**
 
 
 
@@ -1183,7 +1185,7 @@ Any existing rule or rules that have the specified *Device Class* will be remove
 </span> <br><br>
 
 
-Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**.
 
 Any existing rule or rules that have the specified *Device Upper Address Part* will be removed.
 
@@ -1249,8 +1251,8 @@ Use this *Sub-group* to configure Bug Reporting on a device.
 
 
 Select whether the Standard Android or Zebra Extended Bug Reporting should be used for generation of Bug Reports from a device.
-- If the value !!old!! is selected, Standard Android Bug Reporting will be used, with no Zebra Extensions or Enhancements.
-- If the value !!new!! is selected, Zebra Extended Bug Reporting. You may also need to specify additional configuration with the Group to configure the desired behavior and options of Zebra Extended Bug Reporting.
+- If the value ***Off*** is selected, Standard Android Bug Reporting will be used, with no Zebra Extensions or Enhancements.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting. You may also need to specify additional configuration with the Group to configure the desired behavior and options of Zebra Extended Bug Reporting.
 
 
 **Detail Information:**
@@ -1285,8 +1287,8 @@ Select whether the Standard Android or Zebra Extended Bug Reporting should be us
 
 
 Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be initiated by an application by sending a broadcast intent with an action value of *com.symbol.mxmf.intent.START_FOR_BUG_REPORT*. This is meaningful only when Zebra Extended Bug Reporting is enabled.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting, if enabled, will not initiate a Bug Report when the defined intent is received.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting, if enabled, will not initiate a Bug Report when the defined intent is received.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received.
 
 
 **Detail Information:**
@@ -1321,8 +1323,8 @@ Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be 
 
 
 Select whether the Zebra Extended Bug Reporting should be allowed to capture screenshots and attach them to Bug Reports.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting, if enabled, will not capture Bug Reports nor attach them to Bug Reports.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting, if enabled, will not capture Bug Reports nor attach them to Bug Reports.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports.
 
 
 **Detail Information:**
@@ -1357,8 +1359,8 @@ Select whether the Zebra Extended Bug Reporting should be allowed to capture scr
 
 
 Select whether Zebra Extended Bug Reporting should display an option to initiate a Bug Report in the menu which appears after long-pressing the power key on the device.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT add an option to the menu.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, will add an option to the menu.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT add an option to the menu.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, will add an option to the menu.
 
 
 **Detail Information:**
@@ -1393,9 +1395,9 @@ Select whether Zebra Extended Bug Reporting should display an option to initiate
 
 
 Select whether Zebra Extended Bug Reporting should watch for the occurrence of Application Not Responding (ANR) errors and take action when they are detected.
-- If the value !!NoCapture!! is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of ANR errors, and hence will take no action if they occur.
-- If the value !!CaptureBR!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Bug Report each time it detects that one has occurred.
-- If the value !!CaptureLogcat!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Logcat capture each time it detects that one has occurred.
+- If the value ***Do not capture*** is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of ANR errors, and hence will take no action if they occur.
+- If the value ***Capture bug report*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Bug Report each time it detects that one has occurred.
+- If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
 **Detail Information:**
@@ -1430,9 +1432,9 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of A
 
 
 Select whether Zebra Extended Bug Reporting should watch for the occurrence of Unexpected Application Errors (UAEs) and take action when they are detected.
-- If the value !!NoCapture!! is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of UAEs, and hence will take no action if they occur.
-- If the value !!CaptureBR!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Bug Report each time it detects that one has occurred.
-- If the value !!CaptureLogcat!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Logcat capture each time it detects that one has occurred.
+- If the value ***Do not capture*** is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of UAEs, and hence will take no action if they occur.
+- If the value ***Capture bug report*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Bug Report each time it detects that one has occurred.
+- If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
 **Detail Information:**
@@ -1500,8 +1502,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically send copies of generated Bug Reports to the Zebra Cloud Server.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports to the Zebra Cloud Server.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will send copies of all generated Bug Reports to the Zebra Cloud Server.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports to the Zebra Cloud Server.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of all generated Bug Reports to the Zebra Cloud Server.
 
 
 **Detail Information:**
@@ -1537,8 +1539,8 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 
 
 Enter a timeout value, the expiration of which will cause the sending Bug Reports to the Zebra Cloud Server to automatically cease.
-- If the value !!0!! is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportCloudDetails%%, Zebra Extended Bug Reporting will continue to send Bug Reports to the Zebra Cloud Server, until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportCloudDetails%%, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports to the Zebra Cloud Server when the timer expires, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send to Cloud Detail**, Zebra Extended Bug Reporting will continue to send Bug Reports to the Zebra Cloud Server, until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send to Cloud Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports to the Zebra Cloud Server when the timer expires, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -1606,8 +1608,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT store copies of generated Bug Reports in the device.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will store copies of generated Bug Reports in the device.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT store copies of generated Bug Reports in the device.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will store copies of generated Bug Reports in the device.
 
 
 **Detail Information:**
@@ -1642,7 +1644,7 @@ Select whether Zebra Extended Bug Reporting should automatically store copies of
 </span> <br><br>
 
 
-Enter the path where Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device when the value !!True@steps.step.bugreportStep.bugreportStorageDetails.bugreportStorageEnable!! is selected for %%steps.step.bugreportStep.bugreportStorageDetails.bugreportStorageEnable%%.
+Enter the path where Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device when the value ***On*** is selected for **State**.
 
 
 Note that either fixed or removable storage are supported, but the specified path must be valid at the time Bug Report is generated. If no path is specified, bug reports are stored in /storage/sdcard0/BugReports/, which will always be a valid path for storage of Bug Reports on all devices.
@@ -1679,8 +1681,8 @@ Note that either fixed or removable storage are supported, but the specified pat
 
 
 Enter a timeout value, the expiration of which will cause the storing of Bug Reports in the device to automatically cease.
-- If the value !!0!! is selected, and when Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group %%steps.step.bugreportStep.bugreportStorageDetails%%, Zebra Extended Bug Reporting will continue to store Bug Reports in the device until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group %%steps.step.bugreportStep.bugreportStorageDetails%%, a timer will be started for the specified timeout value and when that timer expires, Zebra Extended Bug Reporting will cease storing Bug Reports in the device, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and when Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group **Store in Device Detail**, Zebra Extended Bug Reporting will continue to store Bug Reports in the device until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group **Store in Device Detail**, a timer will be started for the specified timeout value and when that timer expires, Zebra Extended Bug Reporting will cease storing Bug Reports in the device, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -1748,8 +1750,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically send copies of generated Bug Reports via email.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports via email.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will send copies of generated Bug Reports via email. You should also specify additional information to provide the details of the email to be sent.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports via email.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of generated Bug Reports via email. You should also specify additional information to provide the details of the email to be sent.
 
 
 **Detail Information:**
@@ -1784,7 +1786,7 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 </span> <br><br>
 
 
-Enter the address or host name of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%%.
+Enter the address or host name of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State**.
 
 
 Note that you must have access to an email account on the selected SMTP Server and you must specify additional configuration within the Group to configure Zebra Extended Bug Reporting to send emails via that SMTP Server. In addition, you must have access to a valid email account to use as the destination of the emails, which is NOT required to be on the same SMTP Server, and must specify details of the email address within the Group, to configure Zebra Extended Bug Reporting to send the emails to that destination.
@@ -1820,7 +1822,7 @@ Note that you must have access to an email account on the selected SMTP Server a
 </span> <br><br>
 
 
-Enter the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports when %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%% is specified.
+Enter the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports when **SMTP Host** is specified.
 
 
 **Detail Information:**
@@ -1853,10 +1855,10 @@ Enter the TCP port number of the SMTP (email) Server via which emails will be se
 </span> <br><br>
 
 
-Enter the ID of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%% and when a valid SMTP (email) Server is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%%.
+Enter the ID of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State** and when a valid SMTP (email) Server is specified via **SMTP Host**.
 
 
-Note that you must have access to a valid email account on the configured SMTP (email) Server and must specify additional information in the Group, such as %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSendersPassword%% to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server.
+Note that you must have access to a valid email account on the configured SMTP (email) Server and must specify additional information in the Group, such as **Sender Password** to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server.
 
 
 **Detail Information:**
@@ -1889,7 +1891,7 @@ Note that you must have access to a valid email account on the configured SMTP (
 </span> <br><br>
 
 
-Enter the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%% and a valid SMTP (email) Server is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%% and a valid email address is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSendersID%%.
+Enter the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State** and a valid SMTP (email) Server is specified via **SMTP Host** and a valid email address is specified via **Sender ID**.
 
 
 **Detail Information:**
@@ -1922,7 +1924,7 @@ Enter the password of the email account that will be used as the source (from ad
 </span> <br><br>
 
 
-Enter the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%%.
+Enter the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -1956,8 +1958,8 @@ Enter the email address of the email account that will be used as the destinatio
 
 
 Enter a timeout value, the expiration of which will cause the sending of Bug Reports via email to automatically cease.
-- If the value !!0!! is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportEmailDetails%%, Zebra Extended Bug Reporting will continue to send Bug Reports via email, until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports via email via the Group %%steps.step.bugreportStep.bugreportEmailDetails%%, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports via email when the timer expires, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send Via Email Detail**, Zebra Extended Bug Reporting will continue to send Bug Reports via email, until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports via email via the Group **Send Via Email Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports via email when the timer expires, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -2059,10 +2061,10 @@ Use this *Sub-group* to define a single element of a dialog the Device User will
 
 
 Select the type of a single dialog element being included in the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
-- If the value !!AddErrorNameTextBox!! is selected, a text box will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeErrorNameTextBoxText%% to provide a text to be pre-populated into the text box.
-- If the value !!AddLabel!! is selected, a text label will be added to the dialog presented to the Device User. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeLabelText%% to provide the text to be populated into the label.
-- If the value !!AddTextBox!! is selected, a text box will be added to the dialog presented to the Device User in which generic text can be entered. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeTextBoxText%% to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
-- If the value !!AddVoiceRecordButton!! is selected, a voice record button will be added to the dialog presented to the Device User. Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.
+- If the value ***ErrorNameTextBox*** is selected, a text box will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered. You must also specify **Error Name Text Box Text** to provide a text to be pre-populated into the text box.
+- If the value ***Label*** is selected, a text label will be added to the dialog presented to the Device User. You must also specify **Label Text** to provide the text to be populated into the label.
+- If the value ***TextBox*** is selected, a text box will be added to the dialog presented to the Device User in which generic text can be entered. You must also specify **Text Box Text** to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
+- If the value ***VoiceRecordButton*** is selected, a voice record button will be added to the dialog presented to the Device User. Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.
 
 
 **Detail Information:**
@@ -2098,7 +2100,7 @@ Select the type of a single dialog element being included in the dialog that wil
 </span> <br><br>
 
 
-Enter the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified when the value !!AddErrorNameTextBox@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%.
+Enter the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified when the value ***ErrorNameTextBox*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -2132,7 +2134,7 @@ Enter the text to be pre-populated into a text box that will be added to the dia
 </span> <br><br>
 
 
-Enter the text of a label that will be added to the dialog presented to the Device User when the value !!AddLabel@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%.
+Enter the text of a label that will be added to the dialog presented to the Device User when the value ***Label*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -2166,7 +2168,7 @@ Enter the text of a label that will be added to the dialog presented to the Devi
 </span> <br><br>
 
 
-Enter the text that be pre-populated into a text box added to the dialog presented to the Device User into which generic text can be entered and should be specified when the value !!AddTextBox@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%. The specified text should provide guidance to the Device User about the value they should enter and will be overwritted by the value entered into the text box.
+Enter the text that be pre-populated into a text box added to the dialog presented to the Device User into which generic text can be entered and should be specified when the value ***TextBox*** is selected for **Type**. The specified text should provide guidance to the Device User about the value they should enter and will be overwritted by the value entered into the text box.
 
 
 **Detail Information:**
@@ -2262,8 +2264,8 @@ Use this *Sub-group* to configure which camera(s) or other image capture devices
 
 
 Select whether the Rear Facing Camera, if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
 
 
 **Detail Information:**
@@ -2298,8 +2300,8 @@ Select whether the Rear Facing Camera, if present on a device, can be used to ta
 
 
 Select whether the Front Facing (selfie) Camera, if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
 
 
 **Detail Information:**
@@ -2334,8 +2336,8 @@ Select whether the Front Facing (selfie) Camera, if present on a device, can be 
 
 
 Select whether the Imager (special-purpose image capture device), if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
 
 
 **Detail Information:**
@@ -2368,7 +2370,7 @@ Select whether the Imager (special-purpose image capture device), if present on 
 </span> <br><br>
 
 
-Use this *Group* to configure the operation and state of the clock on a device.
+Use this *Sub-group* to configure Time Mode, Manual Date, Manual Time, Auto NTP Server Address, Auto NTP Sync Interval, Time Zone Mode, Zone, and Time Format.
 
 
 **Detail Information:**
@@ -2423,7 +2425,7 @@ Select whether time and date configuration will be performed explicitly, through
 </span> <br><br>
 
 
-Enter the date to be set on a device when the value !!false@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the date to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -2452,7 +2454,7 @@ Enter the date to be set on a device when the value !!false@steps.step.clockStep
 </span> <br><br>
 
 
-Enter the time to be set on a device when the value !!false@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the time to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -2481,7 +2483,7 @@ Enter the time to be set on a device when the value !!false@steps.step.clockStep
 </span> <br><br>
 
 
-Enter the address of the Network Time Protocol (NTP) Server to be used to perform automatic date and time configuration on a device when the value !!true@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the address of the Network Time Protocol (NTP) Server to be used to perform automatic date and time configuration on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -2510,7 +2512,7 @@ Enter the address of the Network Time Protocol (NTP) Server to be used to perfor
 </span> <br><br>
 
 
-Enter the interval at which automatic date and time configuration will be performed on a device when the value !!true@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the interval at which automatic date and time configuration will be performed on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -2572,7 +2574,7 @@ Select whether time zone configuration will be performed explicitly, using other
 </span> <br><br>
 
 
-Enter the time zone to be set on a device when the value !!false@steps.step.clockStep.clockTimeZoneMode!! is selected for %%steps.step.clockStep.clockTimeZoneMode%%.
+Enter the time zone to be set on a device when the value ***Manual*** is selected for **Time Zone Mode**.
 
 
 **Detail Information:**
@@ -2601,7 +2603,7 @@ Enter the time zone to be set on a device when the value !!false@steps.step.cloc
 </span> <br><br>
 
 
-Select whether the format in which time will be displayed on the device will be in !!2!! hour (AM/PM) or !!1!! hour (military) format.
+Select whether the format in which time will be displayed on the device will be in ***12*** hour (AM/PM) or ***24*** hour (military) format.
 
 
 **Detail Information:**
@@ -2974,8 +2976,8 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 Select whether the DHCP Client on a device will send a *Client Identifier* to the DHCP Server using *DHCP Option 61* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendClientIdentifierState%% to provide the value of the *Client Identifier* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Client Identifier State (Option 61)** to provide the value of the *Client Identifier* to be sent.
 
 
 **Detail Information:**
@@ -3006,7 +3008,7 @@ Select whether the DHCP Client on a device will send a *Client Identifier* to th
 </span> <br><br>
 
 
-Enter the *Client Identifier* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendClientIdentifierState!! is selected for %%steps.step.dhcpStep.dhcpSendClientIdentifierState%%.
+Enter the *Client Identifier* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Client Identifier State (Option 61)**.
 
 
 **Detail Information:**
@@ -3036,8 +3038,8 @@ Enter the *Client Identifier* that the DHCP Client on a device will send to the 
 
 
 Select whether the DHCP Client on a device will send a *Host Name* to the DHCP Server using *DHCP Option 12* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendHostNameValue%% to provide the value of the *Host Name* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Host Name Value (Option 12)** to provide the value of the *Host Name* to be sent.
 
 
 **Detail Information:**
@@ -3068,7 +3070,7 @@ Select whether the DHCP Client on a device will send a *Host Name* to the DHCP S
 </span> <br><br>
 
 
-Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendHostNameState!! is selected for %%steps.step.dhcpStep.dhcpSendHostNameState%%.
+Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Host Name State (Option 12)**.
 
 
 **Detail Information:**
@@ -3098,8 +3100,8 @@ Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Ser
 
 
 Select whether the DHCP Client on a device will send a *User Class* to the DHCP Server using *DHCP Option 77* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendUserClassValue%% to provide the value of the *User Class* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send User Class Value (Option 77)** to provide the value of the *User Class* to be sent.
 
 
 **Detail Information:**
@@ -3130,7 +3132,7 @@ Select whether the DHCP Client on a device will send a *User Class* to the DHCP 
 </span> <br><br>
 
 
-Enter the *User Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 77* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendUserClassState!! is selected for %%steps.step.dhcpStep.dhcpSendUserClassState%%.
+Enter the *User Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 77* when requesting an IP Address when the value ***On*** is selected for **Send User Class State (Option 77)**.
 
 
 **Detail Information:**
@@ -3160,8 +3162,8 @@ Enter the *User Class* that the DHCP Client on a device will send to the DHCP Se
 
 
 Select whether the DHCP Client on a device will send a *Vendor Class* to the DHCP Server using *DHCP Option 60* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendVendorClassValue%% to provide the value of the *Vendor Class* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Vendor Class Value (Option 60)** to provide the value of the *Vendor Class* to be sent.
 
 
 **Detail Information:**
@@ -3192,7 +3194,7 @@ Select whether the DHCP Client on a device will send a *Vendor Class* to the DHC
 </span> <br><br>
 
 
-Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 60* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendVendorClassState!! is selected for %%steps.step.dhcpStep.dhcpSendVendorClassState%%.
+Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 60* when requesting an IP Address when the value ***On*** is selected for **Send Vendor Class State (Option 60)**.
 
 
 **Detail Information:**
@@ -3222,8 +3224,8 @@ Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP 
 
 
 Select whether the DHCP Client on a device will send a *Fully Qualified Domain Name (FQDN)* to the DHCP Server using *DHCP Option 81* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendFqdnValue%% and %%steps.step.dhcpStep.dhcpSendFqdnFlag%% to provide the value of the *FQDN value* and the associated flags to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send FQDN Value (Option 81)** and **Send FQDN Flag (Option 81)** to provide the value of the *FQDN value* and the associated flags to be sent.
 
 
 **Detail Information:**
@@ -3254,7 +3256,7 @@ Select whether the DHCP Client on a device will send a *Fully Qualified Domain N
 </span> <br><br>
 
 
-Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendFqdnState!! is selected for %%steps.step.dhcpStep.dhcpSendFqdnState%%. You must also specify %%steps.step.dhcpStep.dhcpSendFqdnFlag%% to provide the flags to be sent along with the *FQDN value*.
+Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)**. You must also specify **Send FQDN Flag (Option 81)** to provide the flags to be sent along with the *FQDN value*.
 
 
 **Detail Information:**
@@ -3283,7 +3285,7 @@ Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Ser
 </span> <br><br>
 
 
-Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendFqdnState!! is selected for %%steps.step.dhcpStep.dhcpSendFqdnState%% and when %%steps.step.dhcpStep.dhcpSendFqdnValue%% is specified.
+Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)** and when **Send FQDN Value (Option 81)** is specified.
 
 
 **Detail Information:**
@@ -3312,7 +3314,7 @@ Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* t
 </span> <br><br>
 
 
-Enter the option number of a custom DHCP Option that the DHCP Client on a device should request from DHCP Server and return along with the IP Address when the value !!1@steps.step.dhcpStep.dhcpRequestCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpRequestCustomOptionState%%.
+Enter the option number of a custom DHCP Option that the DHCP Client on a device should request from DHCP Server and return along with the IP Address when the value ***On*** is selected for **Request Custom Option State**.
 
 
 **Detail Information:**
@@ -3342,8 +3344,8 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 Select whether the DHCP Client on a device will request that the DHCP Server acquire a custom DHCP option and return it along with the IP Address.
-- If the value !!2!! is selected, no custom DHCP Option will be requested and you do not need to specify any additional information.
-- If the value !!1!! is selected, a custom DHCP Option will be requested and you must also specify %%steps.step.dhcpStep.dhcpRequestCustomOptionNumber%% to provide the custom option number to be requested.
+- If the value ***Off*** is selected, no custom DHCP Option will be requested and you do not need to specify any additional information.
+- If the value ***On*** is selected, a custom DHCP Option will be requested and you must also specify **Request Custom Option Number** to provide the custom option number to be requested.
 
 
 **Detail Information:**
@@ -3374,7 +3376,7 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 </span> <br><br>
 
 
-Enter the option number of a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpSendCustomOptionState%%.
+Enter the option number of a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State**.
 
 
 **Detail Information:**
@@ -3404,8 +3406,8 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 Select whether the DHCP Client on a device will request that the DHCP Server send a custom DHCP option when requesting an IP Address.
-- If the value !!2!! is selected, no custom DHCP Option will be sent you do not need to specify any additional information.
-- If the value !!1!! is selected, a custom DHCP Option will be sent and you must also specify %%steps.step.dhcpStep.dhcpSendCustomOptionNumber%% to provide the custom option number to be sent and %%steps.step.dhcpStep.dhcpSendCustomOptionValue%% to provide the custom option value to be sent.
+- If the value ***Off*** is selected, no custom DHCP Option will be sent you do not need to specify any additional information.
+- If the value ***On*** is selected, a custom DHCP Option will be sent and you must also specify **Send Custom Option Number** to provide the custom option number to be sent and **Send Custom Option Value** to provide the custom option value to be sent.
 
 
 **Detail Information:**
@@ -3436,7 +3438,7 @@ Select whether the DHCP Client on a device will request that the DHCP Server sen
 </span> <br><br>
 
 
-Enter the option value for a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpSendCustomOptionState%% and when %%steps.step.dhcpStep.dhcpSendCustomOptionNumber%% is specified.
+Enter the option value for a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State** and when **Send Custom Option Number** is specified.
 
 
 **Detail Information:**
@@ -3658,12 +3660,14 @@ Use this *Group* to perform Device Administration functions, such as:
 
 
 Select an Action to control access to or utilize the Zebra MX Management System on a device.
-- If the value !!AllowSubmitXml!! is selected, a single application or service is allowed to submit XML for processing by the Zebra MX Management System. You must also specify %%steps.step.devadminStep.devadminActionAllowSubmitXmlPackageName%% to provide the *Android Package Name* that identifies the application or service is to be allowed.
-- If the value !!DisallowSubmitXml!! is selected, a single application service is disallowed from submitting XML for processing by the Zebra MX Management System. You must also specify %%steps.step.devadminStep.devadminActionDisallowSubmitXmlPackageName%% to provide the *Android Package Name* that identifies the application or service is to be disallowed.
-- If the value !!SubmitXml!! is selected, you must also specify %%steps.step.devadminStep.devadminActionSubmitXml%% to provide the XML string that will be submitted for processing by the .Zebra MX Management System.
-- If the value !!ReserveUID!! is selected, you must also specify %%steps.step.devadminStep.devadminActionReserveUIDPackageName%% to identify the particular package to which the User ID is reserved.
-- You must also specify %%steps.step.devadminStep.devadminActionReserveUIDPackageSignature%% to assure that the package to which the User ID is reserved is the right one.
-- If the value !!UnreserveUID!! is selected, you must also specify %%steps.step.devadminStep.devadminActionUnreserveUIDPackageName%% to identify the particular package to which the User ID is reserved.
+- If the value ***Allow App To Submit Xml*** is selected, a single application or service is allowed to submit XML for processing by the Zebra MX Management System. You must also specify **Allow Submit XML Package Name** to provide the *Android Package Name* that identifies the application or service is to be allowed.
+- If the value ***Disallow App From Submitting Xml*** is selected, a single application service is disallowed from submitting XML for processing by the Zebra MX Management System. You must also specify **Disallow Submit XML Package Name** to provide the *Android Package Name* that identifies the application or service is to be disallowed.
+- If the value ***Submit Xml*** is selected, you must also specify **Submit XML** to provide the XML string that will be submitted for processing by the .Zebra MX Management System.
+- If the value ***Reserve UID for App*** is selected, you must also specify **Reserve User ID Package Name** to identify the particular package to which the User ID is reserved.
+- You must also specify **Reserve User ID Package Signature** to assure that the package to which the User ID is reserved is the right one.
+- If the value ***Unreserve UID for App*** is selected, you must also specify **Unreserve User ID Package Name** to identify the particular package to which the User ID is reserved.
+- If the value ***Allow App To Update*** is selected, you must also specify **Allow Package Update Package Name** to identify the particular package allowed to be updated. This is only necessary for applications that were previously disallowed using ***false***
+- If the value ***false*** is selected, you must also specify **Disallow Package Update Package Name** to identify the particular package to be prevented from being updated.
 
 
 **Detail Information:**
@@ -3672,7 +3676,7 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 
 - Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AllowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisallowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ReserveUID&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnreserveUID&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr></table>
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow App To Submit Xml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow App From Submitting Xml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Submit Xml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reserve UID for App&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unreserve UID for App&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow App To Update&nbsp;</small></i></b></td><td><small>&nbsp;AllowApplicationUpgrade&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow App From Update&nbsp;</small></i></b></td><td><small>&nbsp;DisallowApplicationUpgrade&nbsp;</small></td></tr></table>
 
 
 **Support Information:**
@@ -3694,7 +3698,7 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies the application or service is to be allowed when the value !!AllowSubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* that identifies the application or service is to be allowed when the value ***Allow App To Submit Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -3723,7 +3727,7 @@ Enter the *Android Package Name* that identifies the application or service is t
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies the application or service is to be disallowed when the value !!DisallowSubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* that identifies the application or service is to be disallowed when the value ***Disallow App From Submitting Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -3752,7 +3756,7 @@ Enter the *Android Package Name* that identifies the application or service is t
 </span> <br><br>
 
 
-Enter an XML string to be submitted for processing by the .Zebra MX Management System, when the value !!SubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter an XML string to be submitted for processing by the .Zebra MX Management System, when the value ***Submit Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -3776,7 +3780,7 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application needing a reserved UID, when the value !!ReserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* of the application needing a reserved UID, when the value ***Reserve UID for App*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -3805,7 +3809,7 @@ Enter the *Android Package Name* of the application needing a reserved UID, when
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of the application needing a reserved UID, when the value !!ReserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Signature* of the application needing a reserved UID, when the value ***Reserve UID for App*** is selected for **Action**.
 The value entered must be the Base 64 encoded content of the DER format certificate used to sign the application. The DER-format certificate can be obtained from the application author or can be extracted from the APK file if necessary. Base 64 encoding must be performed to ensure that the value is suitable for transmission as a Managed Configuration.
 
 
@@ -3835,7 +3839,7 @@ The value entered must be the Base 64 encoded content of the DER format certific
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value !!UnreserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value ***Unreserve UID for App*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -3863,7 +3867,7 @@ Enter the *Android Package Name* of the application whose user ID can be release
 </span> <br><br>
 
 
-Use this *Group* to configure Device Central behavior on a device.
+Use this *Sub-group* to configure Bluetooth On/Off Control, Bluetooth Pairing Control, and Firmware Update Button.
 
 
 **Detail Information:**
@@ -3898,10 +3902,10 @@ Use this *Group* to configure Device Central behavior on a device.
 Select whether the Device User should be allowed to use the Device Central UI to control Bluetooth Power.
 
 
-- If the value !!2!! is selected, Device Central will NOT provide UI that allows the Device User to control the Bluetooth power state.
+- If the value ***Disallow*** is selected, Device Central will NOT provide UI that allows the Device User to control the Bluetooth power state.
 
 
-- If the value !!1!! is selected, Device Central will provide UI that allows the Device User to control the Bluetooth power state.
+- If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to control the Bluetooth power state.
 
 
 **Detail Information:**
@@ -3936,8 +3940,9 @@ Select whether the Device User should be allowed to use the Device Central UI to
 
 
 Select whether Device Central system should allow multiple pairings to the same Device Class.
-- If the value !!1!! is selected, Device Central system will only allow one pairing at a time for each Bluetooth Device Class (e.g. one headset and one printer).
-- If the value !!2!! is selected, Device Central system will allow multiple pairings at a time for each Bluetooth Device Class (e.g. multiple headsets and/or multiple printers).
+This feature has been deprecated in Device Central. Look in the **Bluetooth Configuration**
+- If the value ***Single Pairing Per Device Class*** is selected, Device Central system will only allow one pairing at a time for each Bluetooth Device Class (e.g. one headset and one printer).
+- If the value ***Multiple Pairings Per Device Class*** is selected, Device Central system will allow multiple pairings at a time for each Bluetooth Device Class (e.g. multiple headsets and/or multiple printers).
 
 
 **Detail Information:**
@@ -3972,8 +3977,8 @@ Select whether Device Central system should allow multiple pairings to the same 
 
 
 Select whether the Device User should be allowed to use the Device Central UI to initiate a Firmware Update.
-- If the value !!2!! is selected, Device Central will NOT provide UI that allows the Device User to initiate a Firmware Update.
-- If the value !!1!! is selected, Device Central will provide UI that allows the Device User to initiate a Firmware Update.
+- If the value ***Disallow*** is selected, Device Central will NOT provide UI that allows the Device User to initiate a Firmware Update.
+- If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to initiate a Firmware Update.
 
 
 **Detail Information:**
@@ -4071,11 +4076,11 @@ When a Device User is operating a vehicle with a vehicle-mounted device, it is o
 
 
 At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle-mounted Android device.
-- If the value !!1!! is selected, *Display Blanking Mode* will be turned off and hence automatic Display Blanking will never occur.
-- If the value !!2!! is selected, *Display Blanking Mode* will be turned on and hence the Display will be automatically Blanked and you must also specify all of the following:
-- %%steps.step.displayStep.displayBlankingModeSignal%% - to specify the signal that will be used to activate automatic Display Blanking.
-- %%steps.step.displayStep.displayBlankingModeSignalPolarity%% - to specify the polarity of the signal specified via %%steps.step.displayStep.displayBlankingModeSignal%% that will be used to activate automatic Blanking.
-- %%steps.step.displayStep.displayBlankingModeSignalDebounceDelay%% - to specify the time that will be used to debounce the signal specified via %%steps.step.displayStep.displayBlankingModeSignal%%.
+- If the value ***Never Blank*** is selected, *Display Blanking Mode* will be turned off and hence automatic Display Blanking will never occur.
+- If the value ***Blank When Triggered by Signal*** is selected, *Display Blanking Mode* will be turned on and hence the Display will be automatically Blanked and you must also specify all of the following:
+- **Signal** - to specify the signal that will be used to activate automatic Display Blanking.
+- **Polarity** - to specify the polarity of the signal specified via **Signal** that will be used to activate automatic Blanking.
+- **Debounce Delay** - to specify the time that will be used to debounce the signal specified via **Signal**.
 
 
 **Detail Information:**
@@ -4112,9 +4117,9 @@ At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle
 Select whether the Display will *Stay Awake* (prevent automatic time out that turns the Display Screen off) when the device is connected to external power.
 
 
-When a Device User is operating a vehicle with a vehicle-mounted device, the device may be continuously receiving power from the vehicle power supply, rather than running off its own internal battery. The Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%%, which is generally used to increase battery life, may add little value in such situations. It may therefore be desirable to configure the device to *Stay Awake* and thus prevent it from timing out and turning the Display Screen off, so long as the device is connected to external power.
-- If the value !!2!! is selected, the Display will NOT *Stay Awake* and hence the device will time out and automatically turn the Display Screen off, when the Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%% expires, even if the device is connected to external power.
-- If the value !!1!! is selected, the Display will *Stay Awake* and hence the device will not time out and will not automatically turn the Display Screen off, so long as the device is connected to external power, even if the Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%% expires.
+When a Device User is operating a vehicle with a vehicle-mounted device, the device may be continuously receiving power from the vehicle power supply, rather than running off its own internal battery. The Display Screen timeout, configured via **Timeout**, which is generally used to increase battery life, may add little value in such situations. It may therefore be desirable to configure the device to *Stay Awake* and thus prevent it from timing out and turning the Display Screen off, so long as the device is connected to external power.
+- If the value ***Off*** is selected, the Display will NOT *Stay Awake* and hence the device will time out and automatically turn the Display Screen off, when the Display Screen timeout, configured via **Timeout** expires, even if the device is connected to external power.
+- If the value ***On*** is selected, the Display will *Stay Awake* and hence the device will not time out and will not automatically turn the Display Screen off, so long as the device is connected to external power, even if the Display Screen timeout, configured via **Timeout** expires.
 
 
 **Detail Information:**
@@ -4148,9 +4153,9 @@ When a Device User is operating a vehicle with a vehicle-mounted device, the dev
 </span> <br><br>
 
 
-Select the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
-- If the value !!1!! is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 1 will be used to trigger automatic Display Blanking.
-- If the value !!2!! is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 2 will be used to trigger automatic Display Blanking.
+Select the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
+- If the value ***Input 1*** is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 1 will be used to trigger automatic Display Blanking.
+- If the value ***Input 2*** is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 2 will be used to trigger automatic Display Blanking.
 
 
 A common configuration to support *Display Blanking Mode* would be to connect the Request to Send (RTS) output signal of the selected Serial Port to the Clear To Send (CTS) input signal on the same serial port, via a switch, such as one activated by the vehicle accelerator. When the switch is activated, the output RTS output signal would be fed back into the CTS input signal and detected to trigger automatic Display Blanking.
@@ -4187,9 +4192,9 @@ A common configuration to support *Display Blanking Mode* would be to connect th
 </span> <br><br>
 
 
-Select the Polarity of the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
-- If the value !!2!! is selected, the automatic Display Blanking will occur when the specified signal is detected as going inactive (OFF). This choice would be used in specialized configurations where the signal to be used to trigger automatic Display Blanking has reverse polarity.
-- If the value !!1!! is selected, , the automatic Display Blanking will occur when the specified signal is detected as going active (ON). This is the most common choice for the common configuration of connecting RTS and CTS via a switch.
+Select the Polarity of the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
+- If the value ***Blank screen when signal goes inactive (OFF)*** is selected, the automatic Display Blanking will occur when the specified signal is detected as going inactive (OFF). This choice would be used in specialized configurations where the signal to be used to trigger automatic Display Blanking has reverse polarity.
+- If the value ***Blank screen when signal goes active (ON)*** is selected, , the automatic Display Blanking will occur when the specified signal is detected as going active (ON). This is the most common choice for the common configuration of connecting RTS and CTS via a switch.
 
 
 **Detail Information:**
@@ -4223,7 +4228,7 @@ Select the Polarity of the Signal that will be used to trigger automatic Display
 </span> <br><br>
 
 
-Enter the Debounce Delay that will be used for the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
+Enter the Debounce Delay that will be used for the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
 
 
 The value specified should be in milliseconds and will be used as a delay following a change in signal state for changing the state of Display Blanking. This is useful to avoid spurious or repetitive changes in Display Blanking state as a result of bounce or chatter on the signal used to trigger automatic Display Blanking. The value specified should be in the range of 250 milliseconds (one quarter of a second) to 32767 milliseconds (more than 32 seconds), which should be adequate to handle most situations.
@@ -4358,8 +4363,8 @@ Use this *Sub-group* to configure the Enterprise Keyboard in a device.
 
 
 Select whether the Enterprise Keyboard on a device will have automatic capitalization turned on (enabled) or turned off (disabled) for the first letter of each sentence.
-- If the value !!2!! is selected, automatic capitalization will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, automatic capitalization will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4394,8 +4399,8 @@ Select whether the Enterprise Keyboard on a device will have automatic capitaliz
 
 
 Select whether the Enterprise Keyboard on a device will have automatic correction of misspelled words turned on (enabled) or turned off (disabled), wherein the space and punctuation keys initiate automatic correction of misspelled words.
-- If the value !!2!! is selected, automatic correction of misspelled words will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, automatic correction of misspelled words will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4430,8 +4435,8 @@ Select whether the Enterprise Keyboard on a device will have automatic correctio
 
 
 Select whether the Enterprise Keyboard on a device will have automatic blocking of offensive words turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, automatic offensive word blocking will be turned off (disabled).
-- If the value !!1!! is selected, automatic offensive word blocking will be turned on (enabled).
+- If the value ***Off*** is selected, automatic offensive word blocking will be turned off (disabled).
+- If the value ***On*** is selected, automatic offensive word blocking will be turned on (enabled).
 
 
 **Detail Information:**
@@ -4466,8 +4471,8 @@ Select whether the Enterprise Keyboard on a device will have automatic blocking 
 
 
 Select whether the Enterprise Keyboard on a device will have automatic sentence ending turned on (enabled) or turned off (disabled) wherein a double tap on the space key causes the entry of a period followed by two spaces.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4502,8 +4507,8 @@ Select whether the Enterprise Keyboard on a device will have automatic sentence 
 
 
 Select whether the Enterprise Keyboard on a device will show alternate characters when a flick gesture is performed.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4570,8 +4575,8 @@ Enter the length of time (in milliseconds) that a key within the Enterprise Keyb
 
 
 Select the navigation mode the Enterprise Keyboard on a device will use to provide its user experience.
-- If the value !!1!! is selected, the Enterprise Keyboard will use the new user experience wherein different tabs can be used to select the desired keyboard.
-- If the value !!2!! is selected, the Enterprise Keyboard will use the legacy user experience wherein keys can be used to select the desired keyboard.
+- If the value ***Tab-based (new)*** is selected, the Enterprise Keyboard will use the new user experience wherein different tabs can be used to select the desired keyboard.
+- If the value ***Key-based (legacy)*** is selected, the Enterprise Keyboard will use the legacy user experience wherein keys can be used to select the desired keyboard.
 
 
 **Detail Information:**
@@ -4606,8 +4611,8 @@ Select the navigation mode the Enterprise Keyboard on a device will use to provi
 
 
 Select the numeric layout mode the Enterprise Keyboard on a device will use when it determines that a numeric keyboard should be displayed.
-- If the value !!1!! is selected, the Enterprise Keyboard will display a numeric keyboard in telephone mode (e.g. 123, 456, 789).
-- If the value !!2!! is selected, the Enterprise Keyboard will display a numeric keyboard in calculator mode (e.g. 789, 456, 123).
+- If the value ***Telephone Mode*** is selected, the Enterprise Keyboard will display a numeric keyboard in telephone mode (e.g. 123, 456, 789).
+- If the value ***Calculator Mode*** is selected, the Enterprise Keyboard will display a numeric keyboard in calculator mode (e.g. 789, 456, 123).
 
 
 **Detail Information:**
@@ -4642,8 +4647,8 @@ Select the numeric layout mode the Enterprise Keyboard on a device will use when
 
 
 Select whether the Enterprise Keyboard on a device will show the alphanumeric tab to allow selection of the alphanumeric keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4678,8 +4683,8 @@ Select whether the Enterprise Keyboard on a device will show the alphanumeric ta
 
 
 Select whether the Enterprise Keyboard on a device will show the numeric tab to allow selection of the numeric keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4714,8 +4719,8 @@ Select whether the Enterprise Keyboard on a device will show the numeric tab to 
 
 
 Select whether the Enterprise Keyboard on a device will show the scan tab to allow control of barcode scanning.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4750,8 +4755,8 @@ Select whether the Enterprise Keyboard on a device will show the scan tab to all
 
 
 Select whether the Enterprise Keyboard on a device will show the symbol tab to allow selection of the special symbols keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4786,8 +4791,8 @@ Select whether the Enterprise Keyboard on a device will show the symbol tab to a
 
 
 Select whether the Enterprise Keyboard on a device will show a key to invoke voice input (if supported).
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4822,10 +4827,10 @@ Select whether the Enterprise Keyboard on a device will show a key to invoke voi
 
 
 Select the preferred tab the Enterprise Keyboard on a device will select by default when textual data is being entered.
-- If the value !!1!! is selected, the Enterprise Keyboard will select the Numeric tab by default when textual data is being entered.
-- If the value !!2!! is selected, the Enterprise Keyboard will show the Alphanumeric tab by default when textual data is being entered.
-- If the value !!3!! is selected, the Enterprise Keyboard will show the Symbol tab by default when textual data is being entered.
-- If the value !!4!! is selected, the Enterprise Keyboard will show the Scan tab by default when textual data is being entered.
+- If the value ***Numeric*** is selected, the Enterprise Keyboard will select the Numeric tab by default when textual data is being entered.
+- If the value ***Alphanumeric*** is selected, the Enterprise Keyboard will show the Alphanumeric tab by default when textual data is being entered.
+- If the value ***Symbol*** is selected, the Enterprise Keyboard will show the Symbol tab by default when textual data is being entered.
+- If the value ***Scan*** is selected, the Enterprise Keyboard will show the Scan tab by default when textual data is being entered.
 
 
 
@@ -4862,8 +4867,8 @@ Select the preferred tab the Enterprise Keyboard on a device will select by defa
 
 
 Select whether the Enterprise Keyboard on a device showing contact name suggestions while typing based on past actions will be turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, contact name suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, contact name suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4898,8 +4903,8 @@ Select whether the Enterprise Keyboard on a device showing contact name suggesti
 
 
 Select whether the Enterprise Keyboard on a device showing suggestions for corrections of misspelled words while typing will be turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, correction suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, correction suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4934,8 +4939,8 @@ Select whether the Enterprise Keyboard on a device showing suggestions for corre
 
 
 Select whether the Enterprise Keyboard on a device will have key popup on each keypress turned on (enabled) or turned off (disabled) wherein a visible indication that thekey was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -4970,8 +4975,8 @@ Select whether the Enterprise Keyboard on a device will have key popup on each k
 
 
 Select whether the Enterprise Keyboard on a device will have sound on each keypress turned on (enabled) or turned off (disabled) wherein an audible indication that the key was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -5006,8 +5011,8 @@ Select whether the Enterprise Keyboard on a device will have sound on each keypr
 
 
 Select the volume mode that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress.
-- If the value !!2!! is selected, the System Default Volume for keypress sounds will be used.
-- If the value !!1!! is selected, a specified volume will be used and you must also specify %%steps.step.ekbStep.ekbSoundOnKeypressVolume%% to provide that volume.
+- If the value ***System Default Volume*** is selected, the System Default Volume for keypress sounds will be used.
+- If the value ***Specified Volume*** is selected, a specified volume will be used and you must also specify **Volume** to provide that volume.
 
 
 **Detail Information:**
@@ -5041,7 +5046,7 @@ Select the volume mode that will be used by the Enterprise Keyboard on a device 
 </span> <br><br>
 
 
-Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress, when the value !!1@steps.step.ekbStep.ekbSoundOnKeypress!! is selected for %%steps.step.ekbStep.ekbSoundOnKeypress%% and the value !!2@steps.step.ekbStep.ekbSoundOnKeypressVolumeMode!! is selected for %%steps.step.ekbStep.ekbSoundOnKeypressVolumeMode%%.
+Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress, when the value ***On*** is selected for **Sound on Keypress** and the value ***System Default Volume*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -5074,8 +5079,8 @@ Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on
 
 
 Select whether the Enterprise Keyboard on a device will have vibration on each keypress turned on (enabled) or turned off (disabled) wherein a tactile indication that the key was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -5110,8 +5115,8 @@ Select whether the Enterprise Keyboard on a device will have vibration on each k
 
 
 Enter the duration mode that will be used by the Enterprise Keyboard on a device when vibrate occurs on each keypress.
-- If the value !!2!! is selected, the System Default Duration for keypress vibrate will be used.
-- If the value !!1!! is selected, a specified duration will be used and you must also specify %%steps.step.ekbStep.ekbVibrateOnKeypressDuration%% to provide that duration.
+- If the value ***System Default Duration*** is selected, the System Default Duration for keypress vibrate will be used.
+- If the value ***Specified Duration*** is selected, a specified duration will be used and you must also specify **Duration** to provide that duration.
 
 
 **Detail Information:**
@@ -5145,7 +5150,7 @@ Enter the duration mode that will be used by the Enterprise Keyboard on a device
 </span> <br><br>
 
 
-Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a device when a vibrate occurs on each keypress, when the value !!1@steps.step.ekbStep.ekbVibrateOnKeypress!! is selected for %%steps.step.ekbStep.ekbVibrateOnKeypress%% and the value !!2@steps.step.ekbStep.ekbVibrateOnKeypressDurationMode!! is selected for %%steps.step.ekbStep.ekbVibrateOnKeypressDurationMode%%.
+Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a device when a vibrate occurs on each keypress, when the value ***On*** is selected for **Vibrate on Keypress** and the value ***System Default Duration*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -5429,7 +5434,7 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 </span> <br><br>
 
 
-Use this *Group* to configure Enterprise NFC settings on a device.
+Use this *Sub-group* to configure Reset to Defaults, Type A Tags, Type B Tags, Type F Tags, Type V Tags, Use NFC Data Exchange Format (NDEF), Polling Mode, CPU Boost, Type A Tag Baud Rate, Type B Tag Baud Rate, Peer to Peer Mode, Card Emulation Mode, and Use on Lock Screen.
 
 
 **Detail Information:**
@@ -5461,7 +5466,7 @@ Use this *Group* to configure Enterprise NFC settings on a device.
 </span> <br><br>
 
 
-Use this *Sub-group* to reset all the Enterprise NFC settings to their factory default values on a device.
+Select whether the Enterprise NFC settings should all be reset to their default values.
 
 
 **Detail Information:**
@@ -5495,13 +5500,13 @@ Use this *Sub-group* to reset all the Enterprise NFC settings to their factory d
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A Tags.
+Select whether the Enterprise NFC should read NFC Type A Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type A Tags. This could increase the speed of reading other tag types in cases where Type A Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type A Tags. This could increase the speed of reading other tag types in cases where Type A Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type A Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type A Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -5535,13 +5540,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BTags.
+Select whether the Enterprise NFC should read NFC Type B Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type B Tags. This could increase the speed of reading other tag types in cases where Type B Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type B Tags. This could increase the speed of reading other tag types in cases where Type B Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type B Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type B Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -5575,13 +5580,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BT
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F Tags.
+Select whether the Enterprise NFC should read NFC Type F Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type F Tags. This could increase the speed of reading other tag types in cases where Type F Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type F Tags. This could increase the speed of reading other tag types in cases where Type F Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type F Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type F Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -5615,13 +5620,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V Tags.
+Select whether the Enterprise NFC should read NFC Type V Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type V Tags. This could increase the speed of reading other tag types in cases where Type V Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type V Tags. This could increase the speed of reading other tag types in cases where Type V Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type V Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type V Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -5655,13 +5660,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should attempt to use NFC Data Exchange Format (NDEF) when reading tags.
+Select whether the Enterprise NFC should use NFC Data Exchange Format (NDEF).
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt tp read NDEF formatted tags. This could increase the speed of reading non-NDEF tags by not spending unnecessary time trying to interpret tag data according to NDEF formatting rules.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT attempt tp read NDEF formatted tags. This could increase the speed of reading non-NDEF tags by not spending unnecessary time trying to interpret tag data according to NDEF formatting rules.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NDEF formatted tags. This may decrease speed somewhat, compared to reading unformatted tags, but increases flexibility by allowing applications to receive tag data interpreted according to NDEF formatting rules.
+- If the value ***Use*** is selected, Enterprise NFC will attempt to read NDEF formatted tags. This may decrease speed somewhat, compared to reading unformatted tags, but increases flexibility by allowing applications to receive tag data interpreted according to NDEF formatting rules.
 
 
 **Detail Information:**
@@ -5695,16 +5700,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should attempt to use N
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the polling mode that the Enterprise NFC should use.
+Select the Enterprise NFC Polling Mode that should be used.
 
 
-- If the value !!2!! is selected, Enterprise NFC will poll in a manner designed to strike a reasonable balance between polling speed and battery life.
+- If the value ***Hybrid*** is selected, Enterprise NFC will poll in a manner designed to strike a reasonable balance between polling speed and battery life.
 
 
-- If the value !!1!! is selected, then Enterprise NFC will poll in a manner designed to maximize polling speed. This may increase battery drain but will reduce tag detection time.
+- If the value ***Standard*** is selected, then Enterprise NFC will poll in a manner designed to maximize polling speed. This may increase battery drain but will reduce tag detection time.
 
 
-- If the value !!0!! is selected, Enterprise NFC will poll in a manner designed to minimize impact on battery life. This may increase the overall tag detection time, but will reduce battery drain.
+- If the value ***Low Power*** is selected, Enterprise NFC will poll in a manner designed to minimize impact on battery life. This may increase the overall tag detection time, but will reduce battery drain.
 
 
 **Detail Information:**
@@ -5738,9 +5743,9 @@ Use this *Sub-group* to configure the polling mode that the Enterprise NFC shoul
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
-- If the value !!false!! is selected, Enterprise NFC will leave the CPU Speed unmodified during NFC transactions.
-- If the value !!true!! is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
+Select whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
+- If the value ***Do Not Boost*** is selected, Enterprise NFC will leave the CPU Speed unmodified during NFC transactions.
+- If the value ***Boost*** is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
 
 
 **Detail Information:**
@@ -5774,11 +5779,11 @@ Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Sp
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type A Tags.
-- If the value !!1!! is selected, Enterprise NFC will always communicate to Type A Tags using a Baud Rate of 106 kbps.
-- If the value !!16!! is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
-- If the value !!32!! is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
-- If the value !!2!! is selected, Enterprise NFC will communicate to Type A Tags using any available (automatically selected) Baud Rate supported by the tag.
+Select the Baud Rate that Enterprise NFC should use for Type A Tags.
+- If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type A Tags using a Baud Rate of 106 kbps.
+- If the value ***212 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***424 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***Any*** is selected, Enterprise NFC will communicate to Type A Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
 **Detail Information:**
@@ -5812,19 +5817,19 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type B Tags.
+Select the Baud Rate that Enterprise NFC should use for Type B Tags.
 
 
-- If the value !!4!! is selected, Enterprise NFC will always communicate to Type B Tags using a Baud Rate of 106 kbps.
+- If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type B Tags using a Baud Rate of 106 kbps.
 
 
-- If the value !!64!! is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***212 kbps*** is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
 
 
-- If the value !!128!! is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***424 kbps*** is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
 
 
-- If the value !!2!! is selected, Enterprise NFC will communicate to Type B Tags using any available (automatically selected) Baud Rate supported by the tag.
+- If the value ***Any*** is selected, Enterprise NFC will communicate to Type B Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
 **Detail Information:**
@@ -5858,9 +5863,9 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to-Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
-- If the value !!false!! is selected, Enterprise NFC will NOT use *Peer-to-Peer Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Card Emulation Mode* by via %%steps.step.nfcStep.nfcCardEmulationMode%%.
-- If the value !!true!! is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via %%steps.step.nfcStep.nfcCardEmulationMode%%.
+Select whether the Enterprise NFC should use *Peer to Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Peer-to-Peer Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Card Emulation Mode* by via **Card Emulation Mode**.
+- If the value ***Use*** is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via **Card Emulation Mode**.
 
 
 **Detail Information:**
@@ -5894,9 +5899,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Emulation Mode*. This is generally used when an NFC enabled device wants to emulate a *Smart Card*.
-- If the value !!false!! is selected, Enterprise NFC will NOT use *Card Emulation Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Peer-to-Peer Mode* by via %%steps.step.nfcStep.nfcPeerToPeerMode%%.
-- If the value !!true!! is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via %%steps.step.nfcStep.nfcPeerToPeerMode%%.
+Select whether the Enterprise NFC should use Card Emulation Mode.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Card Emulation Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Peer-to-Peer Mode* by via **Peer to Peer Mode**.
+- If the value ***Use*** is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via **Peer to Peer Mode**.
 
 
 **Detail Information:**
@@ -5930,13 +5935,13 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Em
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should be allowed to be used from the Lock Screen on a device.
+Select whether the Enterprise NFC should be allowed to be used from the Lock Screen.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT allow NFC operations to be performed when the device is at the lock screen.
+- If the value ***Disallow*** is selected, Enterprise NFC will NOT allow NFC operations to be performed when the device is at the lock screen.
 
 
-- If the value !!true!! is selected, Enterprise NFC will allow NFC operations to be performed when the device is at the lock screen.
+- If the value ***Allow*** is selected, Enterprise NFC will allow NFC operations to be performed when the device is at the lock screen.
 
 
 **Detail Information:**
@@ -6078,7 +6083,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Select whether a Proxy Server should be used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-When specifying that a Proxy Server is to be used, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% together whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+When specifying that a Proxy Server is to be used, you should specify **Proxy Server**, **Port**, and **Bypass List** together whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -6118,7 +6123,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Proxy Server used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-While it is not mandatory, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+While it is not mandatory, you should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -6156,7 +6161,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Port that will be used to reach the Proxy Server to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-You should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+You should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -6194,7 +6199,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Proxy Server Bypass List which specifies addresses that should bypass the Proxy Server used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-While it is not mandatory, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+While it is not mandatory, you should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -6230,8 +6235,8 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 
 
 Select how an IP Address will be assigned to the Ethernet adapter.
-- If the value !!0!! is selected, an IP Address for the Ethernet adapter will be automatically acquired by the DHCP Client from the DHCP Server.
-- If the value !!1!! is selected, an IP Address for the Ethernet adapter will be assigned based on the values selected for %%steps.step.ethernetStep.ethernetIpAddress%%, %%steps.step.ethernetStep.ethernetGatewayAddress%%, %%steps.step.ethernetStep.ethernetNetMask%%, %%steps.step.ethernetStep.ethernetDNS1%%, and %%steps.step.ethernetStep.ethernetDNS2%%, which you must also specify to provide the required values.
+- If the value ***Dynamic (DHCP)*** is selected, an IP Address for the Ethernet adapter will be automatically acquired by the DHCP Client from the DHCP Server.
+- If the value ***Static (Manual)*** is selected, an IP Address for the Ethernet adapter will be assigned based on the values selected for **IP Address**, **Gateway Address**, **Network Mask**, **Primary DNS**, and **Secondary DNS**, which you must also specify to provide the required values.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -6483,7 +6488,7 @@ Use this *Sub-group* to perform File Management operations for a device.
 </span> <br><br>
 
 
-Enter the *Source URI* of a File on a Server to be Downloaded to the Device File System. You must also specify %%steps.step.filesStep.fileDownloadDestPathAndFileName%% to identify the Path and File Name in the *Device File System* to which the File will be stored once it has been Downloaded.
+Enter the *Source URI* of a File on a Server to be Downloaded to the Device File System. You must also specify **Download Destination Path and File Name** to identify the Path and File Name in the *Device File System* to which the File will be stored once it has been Downloaded.
 
 
 **Detail Information:**
@@ -6512,7 +6517,7 @@ Enter the *Source URI* of a File on a Server to be Downloaded to the Device File
 </span> <br><br>
 
 
-Enter the Destination Path and File Name of a File to be Downloaded from a Server to the *Device File System* when %%steps.step.filesStep.filesDownloadSourceURI%% is specified.
+Enter the Destination Path and File Name of a File to be Downloaded from a Server to the *Device File System* when **Download File Source URI** is specified.
 
 
 **Detail Information:**
@@ -6636,8 +6641,8 @@ Select whether the Device User should be allowed to control the Mode of the Life
 
 
 Select the mode used to perform Firmware Over The Air (FOTA) operations on a device.
-- If the Mode value !!2!! is selected, Firmware Over The Air (FOTA) operations will be performed in *Manual Mode* only when %%steps.step.fotaStep.fotaAction%% is specified and when one or more of the following are specified: %%steps.step.fotaStep.fotaActionEnterpriseResetSuwBypass%%, %%steps.step.fotaStep.fotaActionOsUpdateSuppressReboot%%, %%steps.step.fotaStep.fotaActionOsUpdateFile%%, %%steps.step.fotaStep.fotaActionVerifyManifestFile%%.
-- If the Mode value !!1!! is selected, Firmware Over The Air (FOTA) operations will be performed in *Automatic Mode* you do not need to specify any additional information.
+- If the Mode value ***Manual*** is selected, Firmware Over The Air (FOTA) operations will be performed in *Manual Mode* only when **Mode Manual Action** is specified and when one or more of the following are specified: **Enterprise Reset SUW Bypass**, **OS Upgrade Suppress Reboot**, **OS Update/Upgrade/Downgrade File**, **Verify Manifest File**.
+- If the Mode value ***Automatic*** is selected, Firmware Over The Air (FOTA) operations will be performed in *Automatic Mode* you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -6668,27 +6673,27 @@ Select the mode used to perform Firmware Over The Air (FOTA) operations on a dev
 </span> <br><br>
 
 
-Select an Action to perform in *Manual Mode* to explicitly perform a Firmware Over The Air (FOTA) operation on a device when the value !!2@steps.step.fotaStep.fotaMode!! is selected for %%steps.step.fotaStep.fotaMode%%.
-- If the value !!5!! is selected, you may also specify %%steps.step.fotaStep.fotaActionEnterpriseResetSuwBypass%% to control whether the Setup Wizard (SUW) will be bypassed on GMS devices following the Enterprise Reset.
-- If the value !!6!! is selected, you do not need to specify any additional information.
-- If the value !!7!! is selected, you do not need to specify any additional information.
-- If the value !!8!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
+Select an Action to perform in *Manual Mode* to explicitly perform a Firmware Over The Air (FOTA) operation on a device when the value ***Manual*** is selected for **Mode**.
+- If the value ***Enterprise Reset*** is selected, you may also specify **Enterprise Reset SUW Bypass** to control whether the Setup Wizard (SUW) will be bypassed on GMS devices following the Enterprise Reset.
+- If the value ***Factory Reset*** is selected, you do not need to specify any additional information.
+- If the value ***Full Device Wipe*** is selected, you do not need to specify any additional information.
+- If the value ***OS Update*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
 
 
-Note that the Action value !!8!! can be used to perform either an Upgrade or Downgrade operation on devices with Android versions < 8.0 but can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur on devices with Android versions >= 8.0.
-- If the value !!9!! is selected, you must also specify %%steps.step.fotaStep.fotaActionVerifyManifestFile%% to provide the path and file name of the Manifest file (which must already be in the device file system at the specified location with the specified name) to be used to perform the verification.
-- If the value !!10!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation. You may also specify %%steps.step.fotaStep.fotaActionOsUpdateSuppressReboot%% to control whether a reboot should automatically be performed following an A/B upgrade.
+Note that the Action value ***OS Update*** can be used to perform either an Upgrade or Downgrade operation on devices with Android versions < 8.0 but can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur on devices with Android versions >= 8.0.
+- If the value ***Verify Manifest*** is selected, you must also specify **Verify Manifest File** to provide the path and file name of the Manifest file (which must already be in the device file system at the specified location with the specified name) to be used to perform the verification.
+- If the value ***OS Upgrade*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation. You may also specify **OS Upgrade Suppress Reboot** to control whether a reboot should automatically be performed following an A/B upgrade.
 
 
-Note that the Action value !!10!! can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur.
-- If the value !!11!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
+Note that the Action value ***OS Upgrade*** can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur.
+- If the value ***OS Downgrade*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
 
 
-Note that the Action value !!11!! can only be used to perform a Downgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do an Upgrade, the Upgrade will NOT occur.
-- If the value !!12!! or !!13!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateStreamingFile%% to provide the URL of the image file to be used to perform the operation.
+Note that the Action value ***OS Downgrade*** can only be used to perform a Downgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do an Upgrade, the Upgrade will NOT occur.
+- If the value ***OS Upgrade Streaming*** or ***OS Downgrade Streaming*** is selected, you must also specify **OS Streaming File URL** to provide the URL of the image file to be used to perform the operation.
 
 
-Note that the Action value !!12!! or !!13!! can only be used to perform a streaming upgrade operation on devices with Android version >= 8.0
+Note that the Action value ***OS Upgrade Streaming*** or ***OS Downgrade Streaming*** can only be used to perform a streaming upgrade operation on devices with Android version >= 8.0
 
 
 **Detail Information:**
@@ -6719,7 +6724,7 @@ Note that the Action value !!12!! or !!13!! can only be used to perform a stream
 </span> <br><br>
 
 
-Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, when the Action value !!5@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, when the Action value ***Enterprise Reset*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -6750,7 +6755,7 @@ Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when perfo
 </span> <br><br>
 
 
-Select whether the automatic reboot that would normally be performed following the successful completion of an A/B Upgrade should be suppressed, when the Action value !!10@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%. Note that if the automatic reboot is suppressed, the reboot will still be required to activate the new OS following the A/B Upgrade, and the later performance of that reboot, at a suitable time, will become the responsibility of the EMM choosing to suppress the automatic reboot.
+Select whether the automatic reboot that would normally be performed following the successful completion of an A/B Upgrade should be suppressed, when the Action value ***OS Upgrade*** is selected for **Mode Manual Action**. Note that if the automatic reboot is suppressed, the reboot will still be required to activate the new OS following the A/B Upgrade, and the later performance of that reboot, at a suitable time, will become the responsibility of the EMM choosing to suppress the automatic reboot.
 
 
 **Detail Information:**
@@ -6781,7 +6786,7 @@ Select whether the automatic reboot that would normally be performed following t
 </span> <br><br>
 
 
-Enter the path and file name of an OS Update or Patch image file, which must already exist at the specified location in the device file system, to be used to update a device when one of the Action values !!8@steps.step.fotaStep.fotaAction!!, !!10@steps.step.fotaStep.fotaAction!!, or !!11@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Enter the path and file name of an OS Update or Patch image file, which must already exist at the specified location in the device file system, to be used to update a device when one of the Action values ***OS Update***, ***OS Upgrade***, or ***OS Downgrade*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -6810,7 +6815,7 @@ Enter the path and file name of an OS Update or Patch image file, which must alr
 </span> <br><br>
 
 
-Enter the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a device when the Action value !!9@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Enter the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a device when the Action value ***Verify Manifest*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -6871,11 +6876,11 @@ Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 
 
 Select the amount of functionality of Google Mobile Services (GMS) to enable.
-- If the value !!1!! is selected, the the entire set of Google Mobile Services (GMS), will be enabled for use. Note that if Google Mobile Services are allowed to be used, may collect and send data to Google.
+- If the value ***All - Full Set of GMS Features*** is selected, the the entire set of Google Mobile Services (GMS), will be enabled for use. Note that if Google Mobile Services are allowed to be used, may collect and send data to Google.
 
 
-- If the value !!2!! is selected, a limited (fixed) subset of Google Mobile Services (GMS), will be enabled for use. The subset will automatically be chosen to ensure that basic device functionality is not impaired, that all enabled Google Mobile Services operate usefully, and that no enabled Google Mobile Services send any data to Google.
-- If the value !!3!! is selected, a selected subset of Google Mobile Services (GMS) features will be enabled for use.
+- If the value ***Restricted - Fixed Minimal Set of GMS Features*** is selected, a limited (fixed) subset of Google Mobile Services (GMS), will be enabled for use. The subset will automatically be chosen to ensure that basic device functionality is not impaired, that all enabled Google Mobile Services operate usefully, and that no enabled Google Mobile Services send any data to Google.
+- If the value ***Profiled - Selected Subset of GMS Features*** is selected, a selected subset of Google Mobile Services (GMS) features will be enabled for use.
 
 
 **Detail Information:**
@@ -6910,7 +6915,7 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 
 
 Select the Google Mobile Services (GMS) profile to enable.
-- If the value !!1!! is selected, Chrome Browser will be enabled for use. - If the value !!2!! is selected, Google Maps will be enabled for use. - If the value !!3!! is selected, Firebase Cloud Messaging will be enabled for use. - If the value !!4!! is selected, Combination of Chrome, Maps and FCM will be enabled for use.
+- If the value ***Chrome Browser*** is selected, Chrome Browser will be enabled for use. - If the value ***Google Maps*** is selected, Google Maps will be enabled for use. - If the value ***Firebase Cloud Messaging*** is selected, Firebase Cloud Messaging will be enabled for use. - If the value ***Combination of Chrome and Maps and FCM*** is selected, Combination of Chrome, Maps and FCM will be enabled for use.
 
 
 **Detail Information:**
@@ -6973,23 +6978,23 @@ Use this *Group* to configure the operation of the General Packet Radio Service 
 
 
 Select an Action to manage the GPRS APNs on a device:
-- If the value !!1!! is selected, a new APN will be added, or an existing APN will be overwritten with a new APN. You must also specify %%steps.step.gprsStep.gprsActionAddApnName%% to provide the name of the new APN to be added or the name of the existing APN to be replaced. In addition, you must also specify some or all of the following to provide the APN definition:
-- %%steps.step.gprsStep.gprsActionAddApnReplaceIfExisting%%
-- %%steps.step.gprsStep.gprsActionAddApnMakeDefault%%
-- %%steps.step.gprsStep.gprsActionAddApnAccessPoint%%
-- %%steps.step.gprsStep.gprsActionAddApnUserName%%
-- %%steps.step.gprsStep.gprsActionAddApnPassword%%
-- %%steps.step.gprsStep.gprsActionAddApnPort%%
-- %%steps.step.gprsStep.gprsActionAddApnProxy%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsPort%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsProxy%%
-- %%steps.step.gprsStep.gprsActionAddApnServer%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsc%%
-- %%steps.step.gprsStep.gprsActionAddApnType%%
-- %%steps.step.gprsStep.gprsActionAddApnMcc%%
-- %%steps.step.gprsStep.gprsActionAddApnMnc%%
-- If the value !!2!! is selected, an existing APN will be removed. You must also specify %%steps.step.gprsStep.gprsActionRemoveApnName%% to provide the name of the APN to be removed.
-- If the value !!3!! is selected, all existing APNs will be removed and you do not need to specify any additional information.
+- If the value ***AddApn*** is selected, a new APN will be added, or an existing APN will be overwritten with a new APN. You must also specify **Add APN Name** to provide the name of the new APN to be added or the name of the existing APN to be replaced. In addition, you must also specify some or all of the following to provide the APN definition:
+- **Add APN Replace If Existing**
+- **Add APN Make Default**
+- **Add APN Access Point**
+- **Add APN User Name**
+- **Add APN Password**
+- **Add APN Port**
+- **Add APN Proxy**
+- **Add APN MMS Port**
+- **Add APN MMS Proxy**
+- **Add APN Server**
+- **Add APN MMSC**
+- **Add APN Type**
+- **Add APN MCC**
+- **Add APN MNC**
+- If the value ***RemoveApn*** is selected, an existing APN will be removed. You must also specify **Remove APN Name** to provide the name of the APN to be removed.
+- If the value ***RemoveAllApns*** is selected, all existing APNs will be removed and you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -7020,7 +7025,7 @@ Select an Action to manage the GPRS APNs on a device:
 </span> <br><br>
 
 
-Enter the name of an APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the name of an APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -7049,9 +7054,9 @@ Enter the name of an APN to be added when the value !!1@steps.step.gprsStep.gprs
 </span> <br><br>
 
 
-Select what happens when an APN already exists with the APN name being added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, if an APN with the name specified via %%steps.step.gprsStep.gprsActionAddApnName%% already exists, it will be replaced by the definition of the APN being added.
-- If the value !!0!! is selected, if an APN with the name specified via %%steps.step.gprsStep.gprsActionAddApnName%% already exists, it will NOT be replaced. The existing APN will be preserved and the new APN will NOT be added.
+Select what happens when an APN already exists with the APN name being added when the value ***AddApn*** is selected for **Action**.
+- If the value ***Replace Existing*** is selected, if an APN with the name specified via **Add APN Name** already exists, it will be replaced by the definition of the APN being added.
+- If the value ***Keep Existing*** is selected, if an APN with the name specified via **Add APN Name** already exists, it will NOT be replaced. The existing APN will be preserved and the new APN will NOT be added.
 
 
 **Detail Information:**
@@ -7082,8 +7087,8 @@ Select what happens when an APN already exists with the APN name being added whe
 </span> <br><br>
 
 
-Select whether a new APN being added should become the new default APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%. - If the value !!1!! is selected, the new APN being added will become the new default APN and will be preferred over other APNs when establishing a cellular data connection.
-- If the value !!0!! is selected, the new APN will not become the new default APN and whatever APN was previously the default will remain the default.
+Select whether a new APN being added should become the new default APN when the value ***AddApn*** is selected for **Action**. - If the value ***Yes*** is selected, the new APN being added will become the new default APN and will be preferred over other APNs when establishing a cellular data connection.
+- If the value ***No*** is selected, the new APN will not become the new default APN and whatever APN was previously the default will remain the default.
 
 
 **Detail Information:**
@@ -7114,7 +7119,7 @@ Select whether a new APN being added should become the new default APN when the 
 </span> <br><br>
 
 
-Enter a value that uniquely identifies an APN on the network when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a value that uniquely identifies an APN on the network when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -7148,7 +7153,7 @@ APN Identifiers are allocated by cellular carriers to identify the networks that
 </span> <br><br>
 
 
-Enter a user name that can be used to authenticate to an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a user name that can be used to authenticate to an APN when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -7182,7 +7187,7 @@ A network accessed via a given APN Identifier may or may not require authenticat
 </span> <br><br>
 
 
-Enter a password that can be used to authenticate to an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a password that can be used to authenticate to an APN when the value ***AddApn*** is selected for **Action**.
 
 
 A network accessed via a given APN Identifier may or may not require authentication. If authentication is required, a user name is generally always required and a password MAY also be required.
@@ -7214,7 +7219,7 @@ A network accessed via a given APN Identifier may or may not require authenticat
 </span> <br><br>
 
 
-Enter the port number of an HTTP proxy to use for all traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the port number of an HTTP proxy to use for all traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 
 
 If a Proxy is required, a Port is also generally always required.
@@ -7246,7 +7251,7 @@ If a Proxy is required, a Port is also generally always required.
 </span> <br><br>
 
 
-Enter the address or name of an HTTP proxy to use for all traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the address or name of an HTTP proxy to use for all traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If a Proxy is required, a Port is also generally always required.
 
 
@@ -7276,7 +7281,7 @@ Enter the address or name of an HTTP proxy to use for all traffic over the netwo
 </span> <br><br>
 
 
-Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
@@ -7306,7 +7311,7 @@ Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Ser
 </span> <br><br>
 
 
-Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
@@ -7336,7 +7341,7 @@ Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging
 </span> <br><br>
 
 
-Enter a WAP Gateway Server address that should be used for an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a WAP Gateway Server address that should be used for an APN when the value ***AddApn*** is selected for **Action**.
 
 
 WAP Gateways are rarely, if ever, used on or supported by modern cellular carrier networks.
@@ -7368,7 +7373,7 @@ WAP Gateways are rarely, if ever, used on or supported by modern cellular carrie
 </span> <br><br>
 
 
-Enter the Multimedia Messaging Service Center (MMSC) address required to route MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Multimedia Messaging Service Center (MMSC) address required to route MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -7397,7 +7402,7 @@ Enter the Multimedia Messaging Service Center (MMSC) address required to route M
 </span> <br><br>
 
 
-Enter the Type of APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Type of APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -7431,7 +7436,7 @@ The value to specify for Type should be obtained from the cellular carrier whose
 </span> <br><br>
 
 
-Enter the Mobile Country Code (MCC) of the APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Mobile Country Code (MCC) of the APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -7465,7 +7470,7 @@ The MCC generally match the SIM Card being used or the APN will not be usable.
 </span> <br><br>
 
 
-Enter the Mobile Network Code (MNC) of the APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Mobile Network Code (MNC) of the APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 The MNC generally match the SIM Card being used or the APN will not be usable.
@@ -7497,10 +7502,10 @@ The MNC generally match the SIM Card being used or the APN will not be usable.
 </span> <br><br>
 
 
-Select the Type of Authentication to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, No Authentication Protocol will be used to authenticate for the APN.
-- If the value !!2!! is selected, the Password Authentication Protocol (PAP) will be used to authenticate for the APN.
-- If the value !!3!! is selected, the Challenge Handshake Authentication Protocol (CHAP) will be used to authenticate for the APN.
+Select the Type of Authentication to be used for APN to be added when the value ***AddApn*** is selected for **Action**.
+- If the value ***None*** is selected, No Authentication Protocol will be used to authenticate for the APN.
+- If the value ***PAP*** is selected, the Password Authentication Protocol (PAP) will be used to authenticate for the APN.
+- If the value ***CHAP*** is selected, the Challenge Handshake Authentication Protocol (CHAP) will be used to authenticate for the APN.
 
 
 **Detail Information:**
@@ -7531,12 +7536,12 @@ Select the Type of Authentication to be used for APN to be added when the value 
 </span> <br><br>
 
 
-Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, No MVNO will be used to configured for the APN.
-- If the value !!2!! is selected, the MVNO will be specified via an SPN (Service Provider Name) value for the APN, which you must also specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!3!! is selected, the MVNO will be specified via an IMSI (International Mobile Subscriber Identity) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!4!! is selected, the MVNO will be specified via an GID (Group Identifier) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!5!! is selected, the MVNO will be specified via an GID (Integrated Circuit Card ID) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
+Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be added when the value ***AddApn*** is selected for **Action**.
+- If the value ***None*** is selected, No MVNO will be used to configured for the APN.
+- If the value ***SPN*** is selected, the MVNO will be specified via an SPN (Service Provider Name) value for the APN, which you must also specify via **Add MVNO Match Data**.
+- If the value ***IMSI*** is selected, the MVNO will be specified via an IMSI (International Mobile Subscriber Identity) value for the APN, which you must specify via **Add MVNO Match Data**.
+- If the value ***GID*** is selected, the MVNO will be specified via an GID (Group Identifier) value for the APN, which you must specify via **Add MVNO Match Data**.
+- If the value ***ICCID*** is selected, the MVNO will be specified via an GID (Integrated Circuit Card ID) value for the APN, which you must specify via **Add MVNO Match Data**.
 
 
 **Detail Information:**
@@ -7567,7 +7572,7 @@ Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be a
 </span> <br><br>
 
 
-Enter the MVNO (Mobile Virtual Network Operator) Match Data to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%% and if a value other than !!1@steps.step.gprsStep.gprsActionAddApnMvnoType!! is selected for %%steps.step.gprsStep.gprsActionAddApnMvnoType%%.
+Enter the MVNO (Mobile Virtual Network Operator) Match Data to be used for APN to be added when the value ***AddApn*** is selected for **Action** and if a value other than ***None*** is selected for **Add MVNO Type**.
 
 
 The exact value to be specified depends on the MVNO Type specified. Consult your MVNO carrier for information on the MVNO Type and MVNO Match Data value to be used.
@@ -7599,7 +7604,7 @@ The exact value to be specified depends on the MVNO Type specified. Consult your
 </span> <br><br>
 
 
-Enter the name of an APN to be removed when the value !!2@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the name of an APN to be removed when the value ***RemoveApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -7656,14 +7661,14 @@ Use this *Group* to configure General User Interface (UI) aspects of a device.
 </span> <br><br>
 
 
-Select an Action to perform miscellaneous UI behavior on a device: - If the Action value !!1!! is selected, any data currently in the clipboard of the device will be discarded, This will cause the data to no longer be available to paste.
-- If the Action value !!2!! is selected, the list of previously used (launched) applications will be cleared. This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
-- If the Action value !!3!! is selected, the cache of a specified application will be cleared. The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that you must also specify %%steps.step.uiStep.uiActionClearApplicationCachePackage%% to identify the application whose cache is to be cleared.
-- If the Action value !!4!! is selected, all GMS applications that are considered *Safe to Disable* will be enabled.
-- If the Action value !!5!! is selected, all GMS applications that are considered *Safe to Disable* will be disabled.
+Select an Action to perform miscellaneous UI behavior on a device: - If the Action value ***Clear Clipboard*** is selected, any data currently in the clipboard of the device will be discarded, This will cause the data to no longer be available to paste.
+- If the Action value ***Clear Recently Used Apps List*** is selected, the list of previously used (launched) applications will be cleared. This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
+- If the Action value ***Clear Application Cache*** is selected, the cache of a specified application will be cleared. The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that you must also specify **Clear Application Cache Package** to identify the application whose cache is to be cleared.
+- If the Action value ***Turn On All GMS Applications*** is selected, all GMS applications that are considered *Safe to Disable* will be enabled.
+- If the Action value ***Turn Off All GMS Applications*** is selected, all GMS applications that are considered *Safe to Disable* will be disabled.
 
 
-Note: Since it is possible to turn GMS Applications on or off individually, using the values !!4!! and !!5!! will guarantee only that all GMS Applications are On or Off immediately after the requested Action is completed. Subsequent Actions could result in any mixture of GMS Applications being turned On or Off. The behavior of the system or any GMS applications under such conditions is not guaranteed.
+Note: Since it is possible to turn GMS Applications on or off individually, using the values ***Turn On All GMS Applications*** and ***Turn Off All GMS Applications*** will guarantee only that all GMS Applications are On or Off immediately after the requested Action is completed. Subsequent Actions could result in any mixture of GMS Applications being turned On or Off. The behavior of the system or any GMS applications under such conditions is not guaranteed.
 
 
 **Detail Information:**
@@ -7697,7 +7702,7 @@ Note: Since it is possible to turn GMS Applications on or off individually, usin
 </span> <br><br>
 
 
-Enter the *Android Package Name* for which the cache should be cleared by a Clear Application Cache Action when the value !!3@steps.step.uiStep.uiAction!! is selected for %%steps.step.uiStep.uiAction%%.
+Enter the *Android Package Name* for which the cache should be cleared by a Clear Application Cache Action when the value ***Clear Application Cache*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -7729,7 +7734,7 @@ Enter the *Android Package Name* for which the cache should be cleared by a Clea
 </span> <br><br>
 
 
-Enter the *Android Package Name* for which all user data should be cleared when performing a Clear Application User Data Action when the value !!10@steps.step.uiStep.uiAction!! is selected for %%steps.step.uiStep.uiAction%%.
+Enter the *Android Package Name* for which all user data should be cleared when performing a Clear Application User Data Action when the value ***Clear Application User Data*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -7796,8 +7801,8 @@ Select whether the Device User will be presented with the option to control the 
 
 
 Select whether a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!1!! is selected, an App Info Icon will be shown on Long Press on Recent App Header
-- If the value !!2!! is selected, an App Info Icon will NOT be shown on Long Press on Recent App Header
+- If the value ***Show*** is selected, an App Info Icon will be shown on Long Press on Recent App Header
+- If the value ***Hide*** is selected, an App Info Icon will NOT be shown on Long Press on Recent App Header
 
 
 **Detail Information:**
@@ -7834,10 +7839,10 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 Select whether the Device User prompted for corrections to potential mistakes made during entry of data on a device.
 
 
-- If the value !!2!! is selected, the Device User will NOT be prompted to correct potential mistakes during data entry.
+- If the value ***Off*** is selected, the Device User will NOT be prompted to correct potential mistakes during data entry.
 
 
-- If the value !!1!! is selected, the Device User will be prompted to correct potential mistakes during data entry.
+- If the value ***On*** is selected, the Device User will be prompted to correct potential mistakes during data entry.
 
 
 
@@ -7874,8 +7879,8 @@ Select whether the Device User prompted for corrections to potential mistakes ma
 
 
 Select whether the charging system be allowed to display the battery charging state using the charging LED when a device is in operating mode.
-- If the value !!2!! is selected, the charging system will be prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
-- If the value !!1!! is selected, the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device.
+- If the value ***Disable*** is selected, the charging system will be prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
+- If the value ***Enable*** is selected, the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device.
 
 
 **Detail Information:**
@@ -7910,8 +7915,8 @@ Select whether the charging system be allowed to display the battery charging st
 
 
 Select whether the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
-- If the value !!2!! is selected, the Device User will NOT automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
-- If the value !!1!! is selected, the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold, perhaps helping to avoid emergency shutdown and potential loss of data as a result.
+- If the value ***Disable*** is selected, the Device User will NOT automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
+- If the value ***Enable*** is selected, the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold, perhaps helping to avoid emergency shutdown and potential loss of data as a result.
 
 
 **Detail Information:**
@@ -7946,8 +7951,8 @@ Select whether the Device User will automatically be presented with the Battery 
 
 
 Select whether the on-screen Navigation Bar will be displayed and hence whether it will take up screen real estate and can be used to navigate the device UI.
-- If the value !!2!! is selected, the on-screen Navigation Bar will NOT be displayed and hence whether it will NOT take up any screen real estate, and hence cannot be used to navigate the device UI.
-- If the value !!1!! is selected, the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI.
+- If the value ***Off*** is selected, the on-screen Navigation Bar will NOT be displayed and hence whether it will NOT take up any screen real estate, and hence cannot be used to navigate the device UI.
+- If the value ***On*** is selected, the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI.
 
 
 **Detail Information:**
@@ -8050,8 +8055,8 @@ Values MUST specify a *Language*, and optionally a *Region*.
 
 
 Select whether a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!1!! is selected, a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!2!! is selected, a Long Press on the Home Key will NOT Launch the Google Assistant.
+- If the value ***Allow*** is selected, a Long Press on the Home Key will Launch the Google Assistant.
+- If the value ***Disallow*** is selected, a Long Press on the Home Key will NOT Launch the Google Assistant.
 
 
 **Detail Information:**
@@ -8086,8 +8091,8 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 
 
 Select whether the Network Notification Popup will be presented to inform the Device User that their network may be monitored.
-- If the value !!2!! is selected, the Network Notification Popup will NOT be presented, and hence the Device User will NOT be notified that their network may be monitored, even if circumstances warrant such notification.
-- If the value !!1!! is selected, the Network Notification Popup may be presented, and hence the Device User may be notified that their network may be monitored, if circumstances warrant such notification.
+- If the value ***Off*** is selected, the Network Notification Popup will NOT be presented, and hence the Device User will NOT be notified that their network may be monitored, even if circumstances warrant such notification.
+- If the value ***On*** is selected, the Network Notification Popup may be presented, and hence the Device User may be notified that their network may be monitored, if circumstances warrant such notification.
 
 
 **Detail Information:**
@@ -8122,8 +8127,8 @@ Select whether the Network Notification Popup will be presented to inform the De
 
 
 Select whether the *On Screen Power Button* feature will be turned ON or OFF. the *On Screen Power Button* feature allows a button to be displayed which allows the Device User to turn the device off, similar to the operation of the physical power button (if any) and can be used to improve the user experience in cases where a physical power button is not present or is not convenient to use, such as when the Device User is wearing gloves.
-- If the value !!2!! is selected, the *On Screen Power Button* feature will be turned OFF and hence the on-screen power button will NOT be displayed.
-- If the value !!1!! is selected, the *On Screen Power Button* feature will be turned ON and hence the on-screen power button WILL be displayed.
+- If the value ***Disable*** is selected, the *On Screen Power Button* feature will be turned OFF and hence the on-screen power button will NOT be displayed.
+- If the value ***Enable*** is selected, the *On Screen Power Button* feature will be turned ON and hence the on-screen power button WILL be displayed.
 
 
 **Detail Information:**
@@ -8158,8 +8163,8 @@ Select whether the *On Screen Power Button* feature will be turned ON or OFF. th
 
 
 Select whether the Device User is allowed to Pull Down the Notification Bar to interact with notifications in the Notifications Panel.
-- If the value !!2!! is selected, the Device User will NOT be allowed to Pull Down the Notification Bar, and hence will not be allowed to interact with notifications in the Notifications Panel.
-- If the value !!1!! is selected, the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Off*** is selected, the Device User will NOT be allowed to Pull Down the Notification Bar, and hence will not be allowed to interact with notifications in the Notifications Panel.
+- If the value ***On*** is selected, the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel.
 
 
 **Detail Information:**
@@ -8265,8 +8270,8 @@ Select whether a New Pairing Popup will be presented when an unpaired peripheral
 
 
 Select whether passwords should be shown (displayed) when entered on the device or hidden (masked).
-- If the value !!2!! is selected, passwords will globally be hidden (masked) whenever they are being entered on the device.
-- If the value !!1!! is selected, passwords will globally be shown (displayed) whenever they are being entered on the device.
+- If the value ***Off*** is selected, passwords will globally be hidden (masked) whenever they are being entered on the device.
+- If the value ***On*** is selected, passwords will globally be shown (displayed) whenever they are being entered on the device.
 
 
 **Detail Information:**
@@ -8301,8 +8306,8 @@ Select whether passwords should be shown (displayed) when entered on the device 
 
 
 Select whether the Virtual Keyboard will be shown when the Physical Keyboard is Active.
-- If the value !!2!! is selected, the Virtual Keyboard will NOT be shown if the device has a Physical Keyboard that is Active. This can help avoid the annoyance and confusing of using up screen real-estate to display an on-screen keyboard when the Device User is using a Physical Keyboard to enter data.
-- If the value !!1!! is selected, the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
+- If the value ***Off*** is selected, the Virtual Keyboard will NOT be shown if the device has a Physical Keyboard that is Active. This can help avoid the annoyance and confusing of using up screen real-estate to display an on-screen keyboard when the Device User is using a Physical Keyboard to enter data.
+- If the value ***On*** is selected, the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
 
 
 **Detail Information:**
@@ -8337,8 +8342,8 @@ Select whether the Virtual Keyboard will be shown when the Physical Keyboard is 
 
 
 Select whether the Android Status Bar should be displayed.
-- If the value !!2!! is selected, the Android Status Bar will not be displayed, which also means that the Device User will not be allowed to interact with notifications in the Notifications Panel.
-- If the value !!1!! is selected, the Android Status Bar will be displayed, which also means that the Device User might be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Hide*** is selected, the Android Status Bar will not be displayed, which also means that the Device User will not be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Show*** is selected, the Android Status Bar will be displayed, which also means that the Device User might be allowed to interact with notifications in the Notifications Panel.
 
 
 **Detail Information:**
@@ -8407,8 +8412,8 @@ Select whether the Device User will be allowed to utilize the clipboard on a dev
 
 
 Select whether the Date in the Notification Panel can be used to invoke the Clock Application.
-- If the value !!1!! is selected, clicking the Date in the Notification Panel will invoke the Clock Application.
-- If the value !!2!! is selected, clicking the Date in the Notification Panel will NOT invoke the Clock Application.
+- If the value ***Allow*** is selected, clicking the Date in the Notification Panel will invoke the Clock Application.
+- If the value ***Disallow*** is selected, clicking the Date in the Notification Panel will NOT invoke the Clock Application.
 
 
 **Detail Information:**
@@ -8443,8 +8448,8 @@ Select whether the Date in the Notification Panel can be used to invoke the Cloc
 
 
 Select whether the Device User will be allowed to utilize the Home Key on a device to leave the current context and return to the Home/Launcher screen.
-- If the value !!2!! is selected, the Home key will be ignored and will cause no action if it is pressed.
-- If the value !!1!! is selected, the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed.
+- If the value ***Off*** is selected, the Home key will be ignored and will cause no action if it is pressed.
+- If the value ***On*** is selected, the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed.
 
 
 **Detail Information:**
@@ -8479,8 +8484,8 @@ Select whether the Device User will be allowed to utilize the Home Key on a devi
 
 
 Select whether the Device User is allowed to Use Magnification Gestures.
-- If the value !!2!! is selected, the Magnification Gestures will be ignored and no action will be taken if they are used by the Device User.
-- If the value !!1!! is selected, the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User.
+- If the value ***Off*** is selected, the Magnification Gestures will be ignored and no action will be taken if they are used by the Device User.
+- If the value ***On*** is selected, the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User.
 
 
 **Detail Information:**
@@ -8512,8 +8517,8 @@ Select whether the Device User is allowed to Use Magnification Gestures.
 
 
 Select whether the Device User is allowed to Use the Recent Apps Key to access recently launched applications.
-- If the value !!2!! is selected, the Recent Apps Key will be ignored, and hence the Device User will not be allowed to access recently launched applications.
-- If the value !!1!! is selected, the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications.
+- If the value ***Off*** is selected, the Recent Apps Key will be ignored, and hence the Device User will not be allowed to access recently launched applications.
+- If the value ***On*** is selected, the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications.
 
 
 **Detail Information:**
@@ -8545,8 +8550,8 @@ Select whether the Device User is allowed to Use the Recent Apps Key to access r
 
 
 Select whether Split Screen Mode is allowed to be used on the device.
-- If the value !!2!! is selected, the use of Split Screen Mode will be blocked on the device.
-- If the value !!1!! is selected, the use of Split Screen Mode will be allowed on the device.
+- If the value ***Disallow*** is selected, the use of Split Screen Mode will be blocked on the device.
+- If the value ***Allow*** is selected, the use of Split Screen Mode will be allowed on the device.
 
 
 **Detail Information:**
@@ -8581,8 +8586,8 @@ Select whether Split Screen Mode is allowed to be used on the device.
 
 
 Select whether Primary Device User is allowed to invoke UI to manage Multi User, including the ability to Create, Delete, and limit the actions of Secondary Users.
-- If the value !!2!! is selected, the Primary Device User will not be allowed to manage Secondary Users, even if the device supports multiple users.
-- If the value !!1!! is selected, the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users.
+- If the value ***Disallow*** is selected, the Primary Device User will not be allowed to manage Secondary Users, even if the device supports multiple users.
+- If the value ***Allow*** is selected, the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users.
 
 
 **Detail Information:**
@@ -8616,11 +8621,11 @@ Select whether Primary Device User is allowed to invoke UI to manage Multi User,
 </span> <br><br>
 
 
-Select the operational mode of the Touch Panel in selected devices: - If the value !!Stylus and Finger!! is selected, the Touch Panel will be configured to optimize use with a Stylus or an ungloved Finger.
-- If the value !!Glove and Finger!! is selected, the Touch Panel will be configured to optimize use with a Gloved finger or an ungloved Finger.
-- If the value !!Finger!! is selected, the Touch Panel will be configured to optimize an ungloved Finger.
-- If the value !!Stylus and Glove and Finger!! is selected, the Touch Panel will be configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
-- If the value !!Finger and Wet!! is selected, the Touch Panel will be configured to optimize use with a finger on a wet touch panel
+Select the operational mode of the Touch Panel in selected devices: - If the value ***Stylus or Finger*** is selected, the Touch Panel will be configured to optimize use with a Stylus or an ungloved Finger.
+- If the value ***Glove or Finger*** is selected, the Touch Panel will be configured to optimize use with a Gloved finger or an ungloved Finger.
+- If the value ***Finger Only*** is selected, the Touch Panel will be configured to optimize an ungloved Finger.
+- If the value ***Stylus or Glove or Finger*** is selected, the Touch Panel will be configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
+- If the value ***Finger and Wet*** is selected, the Touch Panel will be configured to optimize use with a finger on a wet touch panel
 
 
 Not all devices support the ability to configure the Touch Panel mode and those that do may not support every mode.
@@ -8696,8 +8701,8 @@ Not all devices support the ability to configure the Touch Panel to account for 
 
 
 Select whether the *Large Key Indicator* feature, which allows a large on-screen indicator to be displayed to indicate the state physical keypad on the device (if any) and which can assist the Device User in cases where multiple key sequences are required.
-- If the value !!2!! is selected, the *Large Key Indicator* feature will be turned OFF and hence the on-screen indicator will NOT be displayed.
-- If the value !!1!! is selected, the *Large Key Indicator* feature will be turned ON and hence the on-screen indicator WILL be displayed.
+- If the value ***Turn Off*** is selected, the *Large Key Indicator* feature will be turned OFF and hence the on-screen indicator will NOT be displayed.
+- If the value ***Turn On*** is selected, the *Large Key Indicator* feature will be turned ON and hence the on-screen indicator WILL be displayed.
 
 
 **Detail Information:**
@@ -8729,8 +8734,8 @@ Select whether the *Large Key Indicator* feature, which allows a large on-screen
 
 
 Select whether the Device User will be allowed to turn the *Large Key Indicator* feature ON or OFF.
-- If the value !!1!! is selected, the Device User WILL be allowed to turn the *Large Key Indicator* feature ON or OFF.
-- If the value !!2!! is selected, the Device User will NOT be allowed to turn the *Large Key Indicator* feature ON or OFF.
+- If the value ***Enable*** is selected, the Device User WILL be allowed to turn the *Large Key Indicator* feature ON or OFF.
+- If the value ***Disable*** is selected, the Device User will NOT be allowed to turn the *Large Key Indicator* feature ON or OFF.
 
 
 **Detail Information:**
@@ -8856,8 +8861,8 @@ Use this *Group* to configure how the keys on the physical keyboard (if any) of 
 
 
 Select an Action to affect the behaviors mapped to the keys on the physical keyboard (if any) of a device:
-- If the value !!1!! is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify %%steps.step.keymapStep.keymapActionAddMappingKeyId%% to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the *Sub-array* %%steps.step.keymapStep.keymapActionAddMappingBehaviors%% to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
-- If the value !!2!! is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
+- If the value ***Add Mapping*** is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify **Add Mapping Key ID** to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the *Sub-array* **Add Mapping Behaviors** to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
+- If the value ***Reset All Mappings*** is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
 
 
 **Detail Information:**
@@ -8891,7 +8896,7 @@ Select an Action to affect the behaviors mapped to the keys on the physical keyb
 </span> <br><br>
 
 
-Enter a value that uniquely identifies a physical key on the physical keyboard of a device for which one or more behaviors are to be specified when the value !!1@steps.step.keymapStep.keymapAction!! is selected for %%steps.step.keymapStep.keymapAction%%.
+Enter a value that uniquely identifies a physical key on the physical keyboard of a device for which one or more behaviors are to be specified when the value ***Add Mapping*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -8998,22 +9003,22 @@ Select the name of the table into which a specific behavior will be stored. Mapp
 Note that due to variations in keyboard size and layout, not all keyboard states may be supported on all devices or on all keyboard possible on any given device. Some or all of the following may values may be supported:
 
 
-- If the value !!Base!! is selected, the Base Mapping table will be selected. The Base Mapping table defines the behavior that will be performed for a physical key when it is pressed while no special keyboard state is active.
+- If the value ***Base*** is selected, the Base Mapping table will be selected. The Base Mapping table defines the behavior that will be performed for a physical key when it is pressed while no special keyboard state is active.
 
 
-- If the value !!Blue!! is selected, the Blue Mapping table will be selected. The Blue Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
+- If the value ***Blue*** is selected, the Blue Mapping table will be selected. The Blue Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
 
 
-- If the value !!Orange!! is selected, the Orange Mapping table will be selected. The Orange Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
+- If the value ***Orange*** is selected, the Orange Mapping table will be selected. The Orange Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
 
 
-- If the value !!Grey!! is selected, the Grey Mapping table will be selected. The Grey Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
+- If the value ***Grey*** is selected, the Grey Mapping table will be selected. The Grey Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
 
 
-- If the value !!Shift!! is selected, the Shift Mapping table will be selected. The Shift Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
+- If the value ***Shift*** is selected, the Shift Mapping table will be selected. The Shift Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
 
 
-- If the value !!Control!! is selected, the Control Mapping table will be selected. The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
+- If the value ***Control*** is selected, the Control Mapping table will be selected. The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
 
 
 **Detail Information:**
@@ -9050,25 +9055,25 @@ Note that due to variations in keyboard size and layout, not all keyboard states
 
 
 Select the type of behavior that will be performed when a specified key is pressed while the keyboard state associated with the specified Mapping table is active.The following may values are supported:
-- If the value !!2!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a specified key code. This performs *Classic Keyboard Remapping*, where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% to provide the key code that will be sent.
-- If the value !!1!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a trigger signal. Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendTrigger%% to select which trigger signal will be sent,
-- If the value !!4!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to launch an application. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeLaunchApplicationName%% to provide the *Friendly Name* of the application to be launched. Note that this is NOT the *Android Package Name*. To launch an application by its *Android Package Name*, the value !!3!! should be used.
-- If the value !!3!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent. You must also specify some or all of the following to define the Android Intent to be sent:
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentType%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentAction%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentCategory%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentPackageName%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentClass%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentDataUri%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentFlags%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentMimeType%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraName%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraValue%%
+- If the value ***Send Key Code*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a specified key code. This performs *Classic Keyboard Remapping*, where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard. You must also specify **Send Key Code** to provide the key code that will be sent.
+- If the value ***Send Trigger*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a trigger signal. Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. You must also specify **Send Trigger** to select which trigger signal will be sent,
+- If the value ***Launch Application*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to launch an application. You must also specify **Launch Application Name** to provide the *Friendly Name* of the application to be launched. Note that this is NOT the *Android Package Name*. To launch an application by its *Android Package Name*, the value ***Send Intent*** should be used.
+- If the value ***Send Intent*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent. You must also specify some or all of the following to define the Android Intent to be sent:
+- **Type**
+- **Action**
+- **Category**
+- **Package Name**
+- **Class**
+- **Data URI**
+- **Flags**
+- **MIME Type**
+- **Extra Name**
+- **Extra Value**
 
 
 Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service. As such, there are many options that control the nature of the intent that will be sent. It is generally recommended to fully understand the nature of the Android Intent to be sent before attempting to configure it as a key behavior. In many cases, the application or service to be invoked will define the nature of the intent is wishes to received and that definition can be used to drive the configuration.
-- If the value !!5!! is selected, NO behavior will be performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active. This provides a method to remap a key to do nothing.
-- If the value !!7!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults. This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state.
+- If the value ***Suppress Key*** is selected, NO behavior will be performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active. This provides a method to remap a key to do nothing.
+- If the value ***Reset To Default*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults. This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state.
 
 
 **Detail Information:**
@@ -9104,7 +9109,7 @@ Sending an Android Intent provides a very flexible way to specify the behavior t
 </span> <br><br>
 
 
-Select the key code that will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Select the key code that will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -9140,9 +9145,9 @@ Select the key code that will be sent as the behavior for a specified key a spec
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Alt keyboard state inactive. This will ensure that the key code is NOT interpreted as an Alt key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Alt keyboard state active. This will ensure that the key code is interpreted as an Alt key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Alt keyboard state inactive. This will ensure that the key code is NOT interpreted as an Alt key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Alt keyboard state active. This will ensure that the key code is interpreted as an Alt key.
 - If no value is specified, when the key code is sent, the Alt keyboard state will not be changed. This will cause the key to be interpreted as an Alt key or not based on the existing state.
 
 
@@ -9179,9 +9184,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Ctrl keyboard state inactive. This will ensure that the key code is NOT interpreted as an Ctrl key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Ctrl keyboard state active. This will ensure that the key code is interpreted as an Ctrl key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Ctrl keyboard state inactive. This will ensure that the key code is NOT interpreted as an Ctrl key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Ctrl keyboard state active. This will ensure that the key code is interpreted as an Ctrl key.
 - If no value is specified, when the key code is sent, the Ctrl keyboard state will not be changed. This will cause the key to be interpreted as an Ctrl key or not based on the existing state.
 
 
@@ -9218,9 +9223,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Fn keyboard state inactive. This will ensure that the key code is NOT interpreted as an Fn key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Fn keyboard state active. This will ensure that the key code is interpreted as an Fn key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Fn keyboard state inactive. This will ensure that the key code is NOT interpreted as an Fn key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Fn keyboard state active. This will ensure that the key code is interpreted as an Fn key.
 - If no value is specified, when the key code is sent, the Fn keyboard state will not be changed. This will cause the key to be interpreted as an Fn key or not based on the existing state.
 
 
@@ -9257,9 +9262,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Shift keyboard state inactive. This will ensure that the key code is NOT interpreted as an Shift key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Shift keyboard state active. This will ensure that the key code is interpreted as an Shift key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Shift keyboard state inactive. This will ensure that the key code is NOT interpreted as an Shift key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Shift keyboard state active. This will ensure that the key code is interpreted as an Shift key.
 - If no value is specified, when the key code is sent, the Shift keyboard state will not be changed. This will cause the key to be interpreted as an Shift key or not based on the existing state.
 
 
@@ -9296,10 +9301,10 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select the trigger signal that will be sent as the behavior for a specified key a specified state when the value !!1@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Select the trigger signal that will be sent as the behavior for a specified key a specified state when the value ***Send Trigger*** is selected for **Type**.
 
 
-Eight trigger signals are defined, but not all may be supported on all devices. All devices generally support at least !!10016!! and generally default to using this trigger signal to activate the barcode scanner. Some devices may support additional trigger signals and some devices might be reconfigured to use !!10016!! for some purpose other than barcode scanning. To determine which trigger signals are supported on a given device, consult the documentation for that specific device.
+Eight trigger signals are defined, but not all may be supported on all devices. All devices generally support at least ***Trigger 1*** and generally default to using this trigger signal to activate the barcode scanner. Some devices may support additional trigger signals and some devices might be reconfigured to use ***Trigger 1*** for some purpose other than barcode scanning. To determine which trigger signals are supported on a given device, consult the documentation for that specific device.
 
 
 **Detail Information:**
@@ -9338,9 +9343,9 @@ Eight trigger signals are defined, but not all may be supported on all devices. 
 Select when an intent should be sent as the behavior for a remapped key.
 
 
-- If the value !!1!! is selected, the intent will be sent immediately when the key is first detected as being pressed.
-- If the value !!2!! is selected, the intent will not be sent until the key is detected as being released after being being pressed.
-- If the value !!3!! is selected, the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
+- If the value ***On Key Down*** is selected, the intent will be sent immediately when the key is first detected as being pressed.
+- If the value ***On Key Up*** is selected, the intent will not be sent until the key is detected as being released after being being pressed.
+- If the value ***On Both Key Up and Down*** is selected, the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
 
 
 **Detail Information:**
@@ -9376,12 +9381,12 @@ Select when an intent should be sent as the behavior for a remapped key.
 </span> <br><br>
 
 
-Enter the method in which an Android Intent should be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the method in which an Android Intent should be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 Depending on the application or service to be invoked, there is likely only one method that can be used successfully to invoke a desired behavior in that application or service. You will need to consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value will invoke the desired behavior. The possible values are.
-- If the value !!StartActivity!! is selected, the Android Intent will be sent using the startActivity() method. This method is suitable for invoking Activities, which are components that perform user interactions. If the behavior to be invoked involves interacting with the Device User, this method will most likely be used.
-- If the value !!Broadcast!! is selected, the Android Intent will be sent using the sendBroadcast() method. This method is suitable for invoking Services, which are components that implement background operations. If the behavior to be invoked does not involves interacting with the Device User, this method will most likely be used.
+- If the value ***StartActivity*** is selected, the Android Intent will be sent using the startActivity() method. This method is suitable for invoking Activities, which are components that perform user interactions. If the behavior to be invoked involves interacting with the Device User, this method will most likely be used.
+- If the value ***Broadcast*** is selected, the Android Intent will be sent using the sendBroadcast() method. This method is suitable for invoking Services, which are components that implement background operations. If the behavior to be invoked does not involves interacting with the Device User, this method will most likely be used.
 
 
 **Detail Information:**
@@ -9417,7 +9422,7 @@ Depending on the application or service to be invoked, there is likely only one 
 </span> <br><br>
 
 
-Enter the action value of an Android Intent to be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the action value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 
@@ -9456,7 +9461,7 @@ An action value is NOT mandatory to specify for an Android Intent. But an action
 </span> <br><br>
 
 
-Enter the category value of an Android Intent to be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the category value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 
@@ -9495,11 +9500,11 @@ A category value is NOT mandatory to specify for an Android Intent. But a catego
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application or service to invoke when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the *Android Package Name* of the application or service to invoke when the value ***Send Intent*** is selected for **Type**.
 
 
 It is not mandatory to specify the *Android Package Name* when sending an Android Intent, but is is often advisable.
-- When an *Android Package Name* is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that *Android Package Name* and no other. This can increase security and is often used when the intent being sent requires any sensitive data. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentClass%% whenever an *Android Package Name* is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a *Android Package Name* and a Class within that Package.
+- When an *Android Package Name* is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that *Android Package Name* and no other. This can increase security and is often used when the intent being sent requires any sensitive data. You must also specify **Class** whenever an *Android Package Name* is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a *Android Package Name* and a Class within that Package.
 - When no *Android Package Name* is specified, the intent becomes an Implicit Intent and the intent may be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility and is often used when the intent being sent requires no sensitive data and when it may be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
 
 
@@ -9534,7 +9539,7 @@ It is not mandatory to specify the *Android Package Name* when sending an Androi
 </span> <br><br>
 
 
-Enter the *Android Class* that identifies an *Android Component* within an application or service to invoke when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentPackageName%% is specified.
+Enter the *Android Class* that identifies an *Android Component* within an application or service to invoke when the value ***Send Intent*** is selected for **Type** and when **Package Name** is specified.
 
 
 **Detail Information:**
@@ -9644,7 +9649,7 @@ Intent flags control how the intent is handled by Android. Some intent flags are
 </span> <br><br>
 
 
-Enter a Multipurpose Internet Mail Extensions (MIME) type to use when processing the intent data and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentDataUri%% is specified.
+Enter a Multipurpose Internet Mail Extensions (MIME) type to use when processing the intent data and when **Data URI** is specified.
 
 
 
@@ -9688,7 +9693,7 @@ Enter the name of a single extra named string value to be attached to the intent
 
 
 
-Android allows a collection of extra named values, of various types, to be attached to an intent. Exactly one value whose data type must be string can be specified. When a name is specified, you must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraValue%% to provide the corresponding value to be attached for the string extra.
+Android allows a collection of extra named values, of various types, to be attached to an intent. Exactly one value whose data type must be string can be specified. When a name is specified, you must also specify **Extra Value** to provide the corresponding value to be attached for the string extra.
 
 
 **Detail Information:**
@@ -9722,7 +9727,7 @@ Android allows a collection of extra named values, of various types, to be attac
 </span> <br><br>
 
 
-Enter the value of the *String Extra* to be attached to the intent to be sent and whose name is specified via %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraName%%.
+Enter the value of the *String Extra* to be attached to the intent to be sent and whose name is specified via **Extra Name**.
 
 
 **Detail Information:**
@@ -9756,10 +9761,10 @@ Enter the value of the *String Extra* to be attached to the intent to be sent an
 </span> <br><br>
 
 
-Enter the *Friendly Name* of an application to be launched when the value !!4@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the *Friendly Name* of an application to be launched when the value ***Launch Application*** is selected for **Type**.
 
 
-Note that the application *Friendly Name* is NOT the same as *Android Package Name*. The application *Friendly Name* is generally the name by which the application is identified in in-device UI, such as the application Launcher, the application's Title Bar, and the list of application names display in the Recent Application list and the AppInfo section of the Settings UI. To launch an application based on its *Android Package Name*, the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! should be selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% instead.
+Note that the application *Friendly Name* is NOT the same as *Android Package Name*. The application *Friendly Name* is generally the name by which the application is identified in in-device UI, such as the application Launcher, the application's Title Bar, and the list of application names display in the Recent Application list and the AppInfo section of the Settings UI. To launch an application based on its *Android Package Name*, the value ***Send Intent*** should be selected for **Type** instead.
 
 
 **Detail Information:**
@@ -9823,10 +9828,10 @@ Use this *Group* to perform power-related actions and configure power-related se
 
 
 Select an Action to control the Power to the device.
-- If the value !!1!! is selected, the device will go to Sleep (i.e. enter Suspend Mode).
+- If the value ***Sleep*** is selected, the device will go to Sleep (i.e. enter Suspend Mode).
 
 
-- If the value !!4!! is selected, the device will perform an OS Reboot (i.e. simple Reset).
+- If the value ***Reboot*** is selected, the device will perform an OS Reboot (i.e. simple Reset).
 
 
 **Detail Information:**
@@ -9960,8 +9965,8 @@ Enter the threshold battery level below which the battery is deemed to be critic
 
 
 Select an Action to control which applications are subject to battery optimization and which are exempt.
-- If the value !!Add!! is selected, one or more applications will be made subject to battery optimizations and you must also specify %%steps.step.powerStep.powerBatteryOptimizationActionAddPackageNames%% to provide the *Android Package Name(s)* of the application(s) to be made subject to battery optimizations.
-- If the value !!Remove!! is selected, one or more applications will be made subject to battery optimizations and you must also specify %%steps.step.powerStep.powerBatteryOptimizationActionRemovePackageNames%% to provide the *Android Package Name(s)* of the application(s) to be exempted from battery optimizations.
+- If the value ***Add*** is selected, one or more applications will be made subject to battery optimizations and you must also specify **Add Package Names** to provide the *Android Package Name(s)* of the application(s) to be made subject to battery optimizations.
+- If the value ***Remove*** is selected, one or more applications will be made subject to battery optimizations and you must also specify **Remove Package Names** to provide the *Android Package Name(s)* of the application(s) to be exempted from battery optimizations.
 
 
 **Detail Information:**
@@ -10064,13 +10069,13 @@ If specified, multiple *Android Package Names* should be separated using commas.
 
 
 Select an Action to control the Output Power various Ports on the device.
-- If the value !!2!! is selected, the Output Power for a specified Port will be turned off.
-- If the value !!1!! is selected, the Output Power for a specified Port will be turned on.
+- If the value ***Turn Output Power OFF*** is selected, the Output Power for a specified Port will be turned off.
+- If the value ***Turn Output Power ON*** is selected, the Output Power for a specified Port will be turned on.
 
 
 
 
-You must also specify %%steps.step.powerStep.powerPortSelect%% to provide the Port for which Output Power will be controlled.
+You must also specify **Port Select** to provide the Port for which Output Power will be controlled.
 
 
 
@@ -10106,10 +10111,10 @@ You must also specify %%steps.step.powerStep.powerPortSelect%% to provide the Po
 </span> <br><br>
 
 
-Select the Port that will be affected by an Action to control the Output Power on the device when %%steps.step.powerStep.powerPortAction%% is specified.
-- If the value !!1!! is selected, the Output Power will be turned on or off for the first device Serial Port.
-- If the value !!2!! is selected, the Output Power will be turned on or off for the second device Serial Port.
-- If the value !!3!! is selected, the Output Power will be turned on or off for the second device USB Port.
+Select the Port that will be affected by an Action to control the Output Power on the device when **Port Action** is specified.
+- If the value ***Serial Port 1*** is selected, the Output Power will be turned on or off for the first device Serial Port.
+- If the value ***Serial Port 2*** is selected, the Output Power will be turned on or off for the second device Serial Port.
+- If the value ***USB Port 2*** is selected, the Output Power will be turned on or off for the second device USB Port.
 
 
 
@@ -10146,10 +10151,10 @@ Select the Port that will be affected by an Action to control the Output Power o
 
 
 Select whether device power will be automatically controlled.
-- If the value !!0!! is selected, the device power will NOT be automatically controlled.
-- If the value !!1!! is selected, the device power will be automatically controlled and you should also specify one or more of the following:
-- %%steps.step.powerStep.powerAutoPowerOff%% to specify whether/how device power will automatically be turned off.
-- %%steps.step.powerStep.powerAutoPowerOn%% to specify whether/how device power will automatically be turned on.
+- If the value ***Off*** is selected, the device power will NOT be automatically controlled.
+- If the value ***On*** is selected, the device power will be automatically controlled and you should also specify one or more of the following:
+- **Auto Power Off** to specify whether/how device power will automatically be turned off.
+- **Auto Power On** to specify whether/how device power will automatically be turned on.
 
 
 **Detail Information:**
@@ -10183,9 +10188,9 @@ Select whether device power will be automatically controlled.
 </span> <br><br>
 
 
-Select whether and how device power will be automatically turned off as part of automatic power control when %%steps.step.powerStep.powerAutoPowerControl%% is specified.
-- If the value !!0!! is selected, the device power will NOT automatically turn off when the ignition turns off.
-- If the value !!1!! is selected, the device power will automatically turn off whenever the ignition turns off.
+Select whether and how device power will be automatically turned off as part of automatic power control when **Auto Power Control** is specified.
+- If the value ***Never*** is selected, the device power will NOT automatically turn off when the ignition turns off.
+- If the value ***When Ignition is Turned Off*** is selected, the device power will automatically turn off whenever the ignition turns off.
 
 
 
@@ -10221,7 +10226,7 @@ Select whether and how device power will be automatically turned off as part of 
 </span> <br><br>
 
 
-Enter the timeout that will be in effect before device power is automatically turned off as part of automatic power control, when the value !!1@steps.step.powerStep.powerAutoPowerControl!! is selected for %%steps.step.powerStep.powerAutoPowerControl%% is specified and the value !!1@steps.step.powerStep.powerAutoPowerOff!! is selected for %%steps.step.powerStep.powerAutoPowerOff%%.
+Enter the timeout that will be in effect before device power is automatically turned off as part of automatic power control, when the value ***On*** is selected for **Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is selected for **Auto Power Off**.
 
 
 **Detail Information:**
@@ -10253,9 +10258,9 @@ Enter the timeout that will be in effect before device power is automatically tu
 </span> <br><br>
 
 
-Select whether and how device power will be automatically turned on as part of automatic power control when %%steps.step.powerStep.powerAutoPowerControl%% is specified:
-- If the value !!0!! is selected, the device power will NOT automatically turn on when the ignition turns on.
-- If the value !!1!! is selected, the device power will automatically turn on whenever the ignition turns on.
+Select whether and how device power will be automatically turned on as part of automatic power control when **Auto Power Control** is specified:
+- If the value ***Never*** is selected, the device power will NOT automatically turn on when the ignition turns on.
+- If the value ***When Ignition is Turned On*** is selected, the device power will automatically turn on whenever the ignition turns on.
 
 
 
@@ -10294,12 +10299,12 @@ Select whether and how device power will be automatically turned on as part of a
 Select an Action to control device heaters.
 
 
-You must also specify %%steps.step.powerStep.powerHeaterSelect%% to identify the Heater to be affected.
-- If the value !!1!! is selected, the Heater will be be turned on and off as needed based on the configured ON/OFF thresholds.
-- If the value !!2!! is selected, the Heater will turned off and will stay off, regardless of the configured ON/OFF thresholds.
-- If the value !!3!! is selected, the ON/OFF thresholds that will be used when the Heater is Enabled will be configured. You must also specify all of the following:
-- %%steps.step.powerStep.powerHeaterActionOnThreshold%% to set the threshold temperature below which the Heater will automatically be turned on.
-- %%steps.step.powerStep.powerHeaterActionOffThreshold%% to set the threshold temperature above which the Heater will automatically be turned off.
+You must also specify **Heater Select** to identify the Heater to be affected.
+- If the value ***Enable Heater*** is selected, the Heater will be be turned on and off as needed based on the configured ON/OFF thresholds.
+- If the value ***Disable Heater*** is selected, the Heater will turned off and will stay off, regardless of the configured ON/OFF thresholds.
+- If the value ***Set ON/OFF Thresholds*** is selected, the ON/OFF thresholds that will be used when the Heater is Enabled will be configured. You must also specify all of the following:
+- **On Threshold** to set the threshold temperature below which the Heater will automatically be turned on.
+- **Off Threshold** to set the threshold temperature above which the Heater will automatically be turned off.
 
 
 **Detail Information:**
@@ -10342,13 +10347,13 @@ You must also specify %%steps.step.powerStep.powerHeaterSelect%% to identify the
 </span> <br><br>
 
 
-Select the Heater to be affected by a specified Heater Action when %%steps.step.powerStep.powerHeaterAction%% is specified:
-- If the value !!1!! is selected, the Heater that warms the Serial I/O Port of the device will be selected.
-- If the value !!2!! is selected, the Heater that warms the USB I/O Port of the device will be selected.
-- If the value !!3!! is selected, the Heater that warms the Battery of the device will be selected.
-- If the value !!4!! is selected, the Heater that warms the Touch Panel of the device will be selected.
-- If the value !!5!! is selected, the Heater that warms the Keyboard of the device will be selected.
-- If the value !!6!! is selected, the Heater that warms the Scanner Window of the device will be selected.
+Select the Heater to be affected by a specified Heater Action when **Heater Action** is specified:
+- If the value ***Serial I/O*** is selected, the Heater that warms the Serial I/O Port of the device will be selected.
+- If the value ***USB I/O*** is selected, the Heater that warms the USB I/O Port of the device will be selected.
+- If the value ***Battery*** is selected, the Heater that warms the Battery of the device will be selected.
+- If the value ***Touch Panel*** is selected, the Heater that warms the Touch Panel of the device will be selected.
+- If the value ***Keyboard*** is selected, the Heater that warms the Keyboard of the device will be selected.
+- If the value ***Scanner Window*** is selected, the Heater that warms the Scanner Window of the device will be selected.
 
 
 **Detail Information:**
@@ -10388,7 +10393,7 @@ Select the Heater to be affected by a specified Heater Action when %%steps.step.
 </span> <br><br>
 
 
-Select the temperature above which a specified Heater should automatically turn OFF, when the value below which the specified Heater should automatically turn on is selected for %%steps.step.powerStep.powerHeaterAction%%.
+Select the temperature above which a specified Heater should automatically turn OFF, when the value below which the specified Heater should automatically turn on is selected for **Heater Action**.
 
 
 
@@ -10428,7 +10433,7 @@ Select the temperature above which a specified Heater should automatically turn 
 </span> <br><br>
 
 
-Select the temperature below which a specified Heater should automatically turn ON, when the value below which the specified Heater should automatically turn on is selected for %%steps.step.powerStep.powerHeaterAction%%.
+Select the temperature below which a specified Heater should automatically turn ON, when the value below which the specified Heater should automatically turn on is selected for **Heater Action**.
 
 
 
@@ -10469,7 +10474,7 @@ Select the temperature below which a specified Heater should automatically turn 
 
 
 Select whether all Wake-Up Sources will be enabled or not
-- If the value !!2!! is selected, the device will not have all the wake-up sources enabled - If the value !!1!! is selected, the device will have all the wake-up sources enabled.
+- If the value ***Off*** is selected, the device will not have all the wake-up sources enabled - If the value ***On*** is selected, the device will have all the wake-up sources enabled.
 
 
 **Detail Information:**
@@ -10502,10 +10507,10 @@ Select whether all Wake-Up Sources will be enabled or not
 
 
 Select whether Doze Mode will be globally used on the device.
-- If the value !!2!! is selected, the device will never enter Doze Mode for any applications.
+- If the value ***Off*** is selected, the device will never enter Doze Mode for any applications.
 
 
-- If the value !!1!! is selected, the device will will enter Doze Mode for various applications based on the normal Android rules for Doze Mode.
+- If the value ***On*** is selected, the device will will enter Doze Mode for various applications based on the normal Android rules for Doze Mode.
 
 
 **Detail Information:**
@@ -10623,7 +10628,7 @@ Enter the Custom name of the key identifier of the Wake-Up Source to control
 
 
 Select whether to turn on or off the ability of a Wake-up Source to activate the display
-- If the value !!2!! is selected, the device will not have all the wake-up sources enabled - If the value !!1!! is selected, the device will have all the wake-up sources enabled.
+- If the value ***Off*** is selected, the device will not have all the wake-up sources enabled - If the value ***On*** is selected, the device will have all the wake-up sources enabled.
 
 
 **Detail Information:**
@@ -10656,7 +10661,7 @@ Select whether to turn on or off the ability of a Wake-up Source to activate the
 
 
 Select the Method that will be used to implement and control device Wake-up
-- If the value !!1!! is selected, the device will use hardware signals for wake-up - If the value !!2!! is selected, the device will use software (mappable keycodes) for wake-up.
+- If the value ***Use Hardware Signals for Wake-Up*** is selected, the device will use hardware signals for wake-up - If the value ***Use Software (Mappable Keycodes) for Wake-Up*** is selected, the device will use software (mappable keycodes) for wake-up.
 
 
 **Detail Information:**
@@ -10864,11 +10869,11 @@ Select the Ukraine Region specific power mode to be used by the RFID module.
 
 
 Select an Action to alter the behavior or configuration of the RFID module.
-- If the value !!1!! is selected, the firmware of the RFID module will be updated and you must also specify %%steps.step.rfidStep.rfidActionUpdateFirmwareFile%% to provide the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
-- If the value !!2!! is selected, the current configuration of the RFID module will be exported and stored in a file in the device file system. This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
-- If the value !!4!! is selected, the radio of the RFID module will be reset, without changing its settings. This could be used to recover from an error or other failure of the RFID module.
-- If the value !!5!! is selected, the configuration of the RFID module will be returned to its default out-of-box state and the radio will be reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
-- If the value !!6!! is selected, the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state.
+- If the value ***Update Firmware*** is selected, the firmware of the RFID module will be updated and you must also specify **Update Firmware File** to provide the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
+- If the value ***Export Settings*** is selected, the current configuration of the RFID module will be exported and stored in a file in the device file system. This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
+- If the value ***Reset Radio*** is selected, the radio of the RFID module will be reset, without changing its settings. This could be used to recover from an error or other failure of the RFID module.
+- If the value ***Reset Radio to Factory Defaults*** is selected, the configuration of the RFID module will be returned to its default out-of-box state and the radio will be reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
+- If the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected, the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state.
 
 
 **Detail Information:**
@@ -10902,7 +10907,7 @@ Select an Action to alter the behavior or configuration of the RFID module.
 </span> <br><br>
 
 
-Enter the path and file name of the file containing the firmware update to be applied when the value !!1@steps.step.rfidStep.rfidAction!! or the value !!6@steps.step.rfidStep.rfidAction!! is selected for %%steps.step.rfidStep.rfidAction%%.
+Enter the path and file name of the file containing the firmware update to be applied when the value ***Update Firmware*** or the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -10972,9 +10977,9 @@ For example, to specify an *RFID Power Level* of ***29.5 dBm***, specify a value
 
 
 Select which RFID tags should be operated upon by the RFID module during a *Query Operation*, based on the state of the SL flag.
-- If the value !!0!! is selected, when the RFID module performs a *Query Operation*, it will consider all RFID tags that are currently visible to the RFID module.
-- If the value !!2!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e tags for which the SL flag has NOT been set using the Select command).
-- If the value !!3!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
+- If the value ***Query applies to all tags*** is selected, when the RFID module performs a *Query Operation*, it will consider all RFID tags that are currently visible to the RFID module.
+- If the value ***Query applies to tags with SL de-asserted*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e tags for which the SL flag has NOT been set using the Select command).
+- If the value ***Query applies to tags with SL asserted*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
 
 
 **Detail Information:**
@@ -11011,7 +11016,7 @@ Select which RFID tags should be operated upon by the RFID module during a *Quer
 Enter which *Session* should be used by the RFID module to access RFID tags during a *Query Operation*.
 
 
-Allowable values are !!0!!, !!1!!, !!2!!, and !!3!!.
+Allowable values are ***SessionS0***, ***SessionS1***, ***SessionS2***, and ***SessionS3***.
 
 
 *Sessions* provide options for how to count tags. For more information on the use of *Sessions*, consult the device product documentation.
@@ -11049,9 +11054,9 @@ Allowable values are !!0!!, !!1!!, !!2!!, and !!3!!.
 
 
 Select how the A and B flags of RFID tags should be handled by the RFID module during a *Query Operation*.
-- If the value !!0!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State A.
-- If the value !!1!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State B.
-- If the value !!2!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in either State A or State B and will Flip the State from A to B or B to A for the session.
+- If the value ***Inventory Target Flag A*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State A.
+- If the value ***Inventory Target Flag B*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State B.
+- If the value ***AB Flip*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in either State A or State B and will Flip the State from A to B or B to A for the session.
 
 
 **Detail Information:**
@@ -11117,12 +11122,12 @@ Use this *Sub-group* to manage a *Remote Scanner* that is connected to a device.
 
 
 Select an Action to control a *Remote Scanner* that isconnected to a device.
-- If the value !!1!! is selected, a configuration file will be used to apply new configuration to a *Remote Scanner*. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be configured. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigFile%% to provide the path and file name of the configuration file to be applied.
-- If the value !!2!! is selected, a firmware file will be used to update the firmware of a *Remote Scanner*. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be updated. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateFile%% to provide the path and file name of the firmware file to be applied.
-- If the value !!3!! is selected, a *Remote Scanner* will be reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored. You must also specify %%steps.step.remotescannerStep.remotescannerActionResetSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be reset.
-- If the value !!4!! is selected, a *Remote Scanner* will be paged, allowing a misplaced *Remote Scanner* to be more easily located. You must also specify %%steps.step.remotescannerStep.remotescannerActionPageSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be paged.
-- If the value !!5!! is selected, a *Remote Scanner* will be disconnected, terminating the connection between the device and the *Remote Scanner* and preventing its subsequent use. You must also specify %%steps.step.remotescannerStep.remotescannerActionDisconnectSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
-- If the value !!6!! is selected, a *Remote Scanner* will be unpaired, terminating the pairing between the device and the *Remote Scanner* and preventing its re-connection without first repairing. You must also specify %%steps.step.remotescannerStep.remotescannerActionUnpairSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired.
+- If the value ***Apply Configuration Package(RS6000 only)*** is selected, a configuration file will be used to apply new configuration to a *Remote Scanner*. You must also specify **Config Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be configured. You must also specify **Config File** to provide the path and file name of the configuration file to be applied.
+- If the value ***Update Scanner Firmware*** is selected, a firmware file will be used to update the firmware of a *Remote Scanner*. You must also specify **Update Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be updated. You must also specify **Update File** to provide the path and file name of the firmware file to be applied.
+- If the value ***Reset Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored. You must also specify **Reset Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be reset.
+- If the value ***Page Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be paged, allowing a misplaced *Remote Scanner* to be more easily located. You must also specify **Page Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be paged.
+- If the value ***Disconnect Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be disconnected, terminating the connection between the device and the *Remote Scanner* and preventing its subsequent use. You must also specify **Disconnect Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
+- If the value ***Unpair Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be unpaired, terminating the pairing between the device and the *Remote Scanner* and preventing its re-connection without first repairing. You must also specify **Unpair Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired.
 
 
 **Detail Information:**
@@ -11156,7 +11161,7 @@ Select an Action to control a *Remote Scanner* that isconnected to a device.
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to which configuration should be applied when the value !!1@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigFile%% to provide the path and file name of the configuration file to be used.
+Enter the *Serial Number* that identifies a *Remote Scanner* to which configuration should be applied when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**. You must also specify **Config File** to provide the path and file name of the configuration file to be used.
 
 
 **Detail Information:**
@@ -11188,7 +11193,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to which configurat
 </span> <br><br>
 
 
-Enter the path and file name of a configuration file, which must exist at the specified location in the device file system, from which configuration should be applied to the specified *Remote Scanner* when the value !!1@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the path and file name of a configuration file, which must exist at the specified location in the device file system, from which configuration should be applied to the specified *Remote Scanner* when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11220,7 +11225,7 @@ Enter the path and file name of a configuration file, which must exist at the sp
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmware update should be performed when the value !!2@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateFile%% to provide the path and file name of the firmware file to be used.
+Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmware update should be performed when the value ***Update Scanner Firmware*** is selected for **Action**. You must also specify **Update File** to provide the path and file name of the firmware file to be used.
 
 
 **Detail Information:**
@@ -11252,7 +11257,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmwar
 </span> <br><br>
 
 
-Enter the path and file name of a firmware file, which must exist at the specified location in the device file system, from which firmware update should be performed to the specified *Remote Scanner* when the value !!2@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the path and file name of a firmware file, which must exist at the specified location in the device file system, from which firmware update should be performed to the specified *Remote Scanner* when the value ***Update Scanner Firmware*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11284,7 +11289,7 @@ Enter the path and file name of a firmware file, which must exist at the specifi
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when the value !!3@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when the value ***Reset Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11316,7 +11321,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when th
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when the value !!4@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when the value ***Page Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11348,7 +11353,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when th
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected when the value !!5@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected when the value ***Disconnect Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11380,7 +11385,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected 
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when the value !!6@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when the value ***Unpair Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11436,11 +11441,11 @@ Use this *Group* to configure security-related settings on a device.
 
 
 Select an Action to adjust various security features on a device.
-- If the value !!AddKey!! is selected, you must also specify %%steps.step.securityStep.securityActionAddKeyName%% to provide the name of the key to be added and you must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to provide the value of the key to be added.
-- If the value !!RemoveKey!! is selected, you must also specify %%steps.step.securityStep.securityActionRemoveKeyName%% to provide the name of the key to be removed.
-- If the value !!RemoveAllKeys!! is selected, you do not need to specify any additional information.
-- If the value !!EncryptSdCard!! is selected, you must also specify %%steps.step.securityStep.securityEncryptSDCardKeyName%% to provide the name of the key to be used to encrypt the SD Card.
-- If the value !!WipeSdCard!! is selected, you do not need to specify any additional information.
+- If the value ***Add Key*** is selected, you must also specify **Add Key Name** to provide the name of the key to be added and you must also specify **Add Key Value** to provide the value of the key to be added.
+- If the value ***Remove Key*** is selected, you must also specify **Remove Key Name** to provide the name of the key to be removed.
+- If the value ***Remove All Keys*** is selected, you do not need to specify any additional information.
+- If the value ***Encrypt SD Card*** is selected, you must also specify **Encrypt SD Card Key Name** to provide the name of the key to be used to encrypt the SD Card.
+- If the value ***Wipe SD Card*** is selected, you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -11474,10 +11479,10 @@ Select an Action to adjust various security features on a device.
 </span> <br><br>
 
 
-Enter the name of a key to be added when the Action value !!AddKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be added when the Action value ***Add Key*** is selected for **Action**.
 
 
-You must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to provide the value to be added for the specified key name.
+You must also specify **Add Key Value** to provide the value to be added for the specified key name.
 
 
 
@@ -11511,12 +11516,12 @@ You must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to p
 </span> <br><br>
 
 
-Enter the value of a key to be added when the Action value !!AddKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the value of a key to be added when the Action value ***Add Key*** is selected for **Action**.
 
 
 
 
-You must also specify %%steps.step.securityStep.securityActionAddKeyName%% to provide the key name for which this value should be added.
+You must also specify **Add Key Name** to provide the key name for which this value should be added.
 
 
 
@@ -11558,7 +11563,7 @@ The key value can be generated in any manner desired as long as it is a 256 bit 
 </span> <br><br>
 
 
-Enter the name of a key to be removed when the Action value !!RemoveKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be removed when the Action value ***Remove Key*** is selected for **Action**.
 
 
 
@@ -11592,7 +11597,7 @@ Enter the name of a key to be removed when the Action value !!RemoveKey@steps.st
 </span> <br><br>
 
 
-Enter the name of a key to be used to encrypt the SD Card when the Action value !!EncryptSdCard@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be used to encrypt the SD Card when the Action value ***Encrypt SD Card*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -11625,8 +11630,8 @@ Enter the name of a key to be used to encrypt the SD Card when the Action value 
 
 
 Select what happens when the Power Key on the device is used to turn the device off, especially whether the device will be locked, requiring it to be unlocked by entering a PIN or password, if one is specified.
-- If the value !!Off!! is selected, turning the device off using the Power Key will be handled the same as when the device times out and turns itself off automatically. In such a case, if device remains off for longer than value set via %%steps.step.securityStep.securityScreenLockTimeout%%, when it is turned back on, the device will be locked, requiring whatever unlock action is set via %%steps.step.securityStep.securityScreenLockType%%.
-- If the value !!On!! is selected, turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked immediately when the device is turned off using the Power Key. In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set via %%steps.step.securityStep.securityScreenLockType%%.
+- If the value ***Off*** is selected, turning the device off using the Power Key will be handled the same as when the device times out and turns itself off automatically. In such a case, if device remains off for longer than value set via **Screen Lock Timeout**, when it is turned back on, the device will be locked, requiring whatever unlock action is set via **Screen Lock Type**.
+- If the value ***On*** is selected, turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked immediately when the device is turned off using the Power Key. In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set via **Screen Lock Type**.
 
 
 **Detail Information:**
@@ -11661,11 +11666,11 @@ Select what happens when the Power Key on the device is used to turn the device 
 
 
 Select the type of lock that is used to protect the device from use by unauthorized persons.
-- If the value !!5!! is selected, no lock will be applied and the device can be used by anyone.
-- If the value !!1!! is selected, unlocking will require only a simple swipe and the device can be used by anyone.
-- If the value !!3!! is selected, unlocking will require entry of a PIN (personal identification number) and the device can only be unlocked by someone knowing the correct PIN value.
-- If the value !!4!! is selected, unlocking will require entry of a password and the device can only be unlocked by someone knowing the correct password value.
-- If the value !!2!! is selected, unlocking will require drawing a pattern on the screen using the touch panel and the device can only be unlocked by someone knowing the correct pattern.
+- If the value ***None*** is selected, no lock will be applied and the device can be used by anyone.
+- If the value ***Swipe*** is selected, unlocking will require only a simple swipe and the device can be used by anyone.
+- If the value ***PIN*** is selected, unlocking will require entry of a PIN (personal identification number) and the device can only be unlocked by someone knowing the correct PIN value.
+- If the value ***Password*** is selected, unlocking will require entry of a password and the device can only be unlocked by someone knowing the correct password value.
+- If the value ***Pattern*** is selected, unlocking will require drawing a pattern on the screen using the touch panel and the device can only be unlocked by someone knowing the correct pattern.
 
 
 **Detail Information:**
@@ -11700,8 +11705,8 @@ Select the type of lock that is used to protect the device from use by unauthori
 
 
 Select what happens when a device turns off as a result of a timeout.
-- If the device stays off for at least the time specified, the device will be locked and an unlock will be required when the device is turned back on, if any lock was configured using %%steps.step.securityStep.securityScreenLockType%%.
-- If the device stays off for less than the time specified, the device will NOT be locked and hence no unlock will be required when the device is turned back on, even if a lock was configured using %%steps.step.securityStep.securityScreenLockType%%.
+- If the device stays off for at least the time specified, the device will be locked and an unlock will be required when the device is turned back on, if any lock was configured using **Screen Lock Type**.
+- If the device stays off for less than the time specified, the device will NOT be locked and hence no unlock will be required when the device is turned back on, even if a lock was configured using **Screen Lock Type**.
 
 
 **Detail Information:**
@@ -11778,13 +11783,13 @@ To utilize *Zebra Value-Add Services* that expose APIs, an application must succ
 By default, all *Zebra Value-Add Services* that expose APIs are configured to reject all *Bindings*. This ensures that the APIs exposed by such a Service cannot be used at all, unless you explicitly choose to allow use of specific Services.
 
 
-Note that allowing *Bindings* to a *Zebra Value-Add Service* enables ALL applications to successfully initiate a *Binding* to that Service but does NOT enable ANY application to actually call the APIs exposed by that Service. To allow selected applications to call APIs on a Service for which *Bindings* are allowed, use %%steps.step.serviceAccessStep.serviceCallerAction%%.
+Note that allowing *Bindings* to a *Zebra Value-Add Service* enables ALL applications to successfully initiate a *Binding* to that Service but does NOT enable ANY application to actually call the APIs exposed by that Service. To allow selected applications to call APIs on a Service for which *Bindings* are allowed, use **Service Caller Action**.
 
 
-- If the value !!1!! is selected, *Bindings* to a specifically identified Service will be enabled, potentially allowing the APIs of that Service to be called. You must also specify %%steps.step.serviceAccessStep.serviceBindingActionAllowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which *Bindings* should be allowed.
+- If the value ***Allow*** is selected, *Bindings* to a specifically identified Service will be enabled, potentially allowing the APIs of that Service to be called. You must also specify **Allow Service Identifier** to identify the *Zebra Value-Add Service* to which *Bindings* should be allowed.
 
 
-- If the value !!2!! is selected, *Bindings* to a specifically identified Service will be disabled, preventing the APIs of that Service from being called. This is the default state for all *Zebra Value-Add Services* that provide APIs. You must also specify %%steps.step.serviceAccessStep.serviceBindingActionDisallowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which *Bindings* should be disallowed.
+- If the value ***Disallow*** is selected, *Bindings* to a specifically identified Service will be disabled, preventing the APIs of that Service from being called. This is the default state for all *Zebra Value-Add Services* that provide APIs. You must also specify **Disallow Service Identifier** to identify the *Zebra Value-Add Service* to which *Bindings* should be disallowed.
 
 
 Note that every *Zebra Value-Add Service* that exposes APIs will be identified by a unique *Service Identifier*, that identifies the Service when controlling access to that Service. Consult the documentation for a given *Zebra Value-Add Service* to determine its *Service Identifier* that you will need to identify that Service when controlling access to it.
@@ -11821,7 +11826,7 @@ Note that every *Zebra Value-Add Service* that exposes APIs will be identified b
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!1@steps.step.serviceAccessStep.serviceBindingAction!! is selected for %%steps.step.serviceAccessStep.serviceBindingAction%%, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be allowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be allowed.
 
 
 **Detail Information:**
@@ -11853,7 +11858,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!1
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!2@steps.step.serviceAccessStep.serviceBindingAction!! is selected for %%steps.step.serviceAccessStep.serviceBindingAction%%, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be disallowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be disallowed.
 
 
 **Detail Information:**
@@ -11891,13 +11896,13 @@ Select an Action to allow or disallow a specific application to call APIs expose
 Note that the default state for all *Zebra Value-Add Services* is for ALL applications to be disallowed from calling the APIs exposed by that Service. This ensures that no applications can call the potentially sensitive APIs exposed by a Service unless you explicitly choose to allow it.
 
 
-Note also that since a *Binding* to a Service is required to call any APIs exposed by that Service, *Bindings* to a *Zebra Value-Add Service* MUST be allowed in addition to allowing specific applications to call the Service. *Bindings* to a *Zebra Value-Add Service* can be allowed via %%steps.step.serviceAccessStep.serviceBindingAction%%.
+Note also that since a *Binding* to a Service is required to call any APIs exposed by that Service, *Bindings* to a *Zebra Value-Add Service* MUST be allowed in addition to allowing specific applications to call the Service. *Bindings* to a *Zebra Value-Add Service* can be allowed via **Service Binding Action**.
 
 
-- If the value !!4!! is selected, a specifically identified application will be allowed to call APIs to a specifically identified Service. You must also specify %%steps.step.serviceAccessStep.serviceCallerActionAllowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which API calls should be allowed and you must also specify %%steps.step.serviceAccessStep.serviceCallerActionAllowCallerPackage%% and %%steps.step.serviceAccessStep.serviceCallerActionAllowCallerSignature%% to identify the application to be allowed to make API calls to the identified Service.
+- If the value ***Allow*** is selected, a specifically identified application will be allowed to call APIs to a specifically identified Service. You must also specify **Allow Service Identifier** to identify the *Zebra Value-Add Service* to which API calls should be allowed and you must also specify **Allow Caller Package** and **Allow Caller Signature** to identify the application to be allowed to make API calls to the identified Service.
 
 
-- If the value !!5!! is selected, a specifically identified application will be disallowed from calling APIs to a specifically identified Service. This is the default state for every *Zebra Value-Add Service* and for every potential calling application. You must also specify %%steps.step.serviceAccessStep.serviceCallerActionDisallowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which API calls should be disallowed and you must also specify %%steps.step.serviceAccessStep.serviceCallerActionDisallowCallerPackage%% and %%steps.step.serviceAccessStep.serviceCallerActionDisallowCallerSignature%% to identify the application to be disallowed from making API calls to the identified Service.
+- If the value ***Disallow*** is selected, a specifically identified application will be disallowed from calling APIs to a specifically identified Service. This is the default state for every *Zebra Value-Add Service* and for every potential calling application. You must also specify **Disallow Service Identifier** to identify the *Zebra Value-Add Service* to which API calls should be disallowed and you must also specify **Disallow Caller Package** and **Disallow Caller Signature** to identify the application to be disallowed from making API calls to the identified Service.
 
 
 **Detail Information:**
@@ -11931,7 +11936,7 @@ Note also that since a *Binding* to a Service is required to call any APIs expos
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific *Zebra Value-Add Service* to which API calls should be allowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be allowed.
 
 
 **Detail Information:**
@@ -11963,7 +11968,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!4
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Name* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -11995,7 +12000,7 @@ Enter the *Android Package Name* of an application that should be allowed to cal
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to provide the *Android Package Signature* of a specified application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Signature* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to provide the *Android Package Signature* of a specified application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
 
 
 Note that the use of a *Android Package Signature* is MANDATORY and ensures that the application being allowed to make API calls to the specified Service is genuine and has not been spoofed. This prevents anyone from creating an impostor application with the same *Android Package Name*, but signed differently and then trying to make calls to the APIs of the Service as if they were the genuine application.
@@ -12030,7 +12035,7 @@ Note that the use of a *Android Package Signature* is MANDATORY and ensures that
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific *Zebra Value-Add Service* to which API calls should be disallowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be disallowed.
 
 
 **Detail Information:**
@@ -12062,7 +12067,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!5
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Name* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -12094,7 +12099,7 @@ Enter the *Android Package Name* of an application that should be disallowed fro
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to provide the *Android Package Signature* of a specified application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Signature* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to provide the *Android Package Signature* of a specified application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -12135,16 +12140,16 @@ Note that the default state for all CSPs is *Unprotected*. This means that ALL C
 To limit access to a CSP, the CSP must first be declared to be *Protected*. Once a CSP has been declared to be *Protected*, no applications will be allowed to use that CSP until they have been explicitly been *Approved* to use that CSP.
 
 
-- If the value !!1!! is selected, a specifically identified CSP will be declared to be *Protected* and hence will be limited to use by specifically *Approved* applications. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionProtectCspName%% or %%steps.step.serviceAccessStep.serviceCspActionProtectCspNameCustom%% to identify the CSP to be declared *Protected*. You may also specify %%steps.step.serviceAccessStep.serviceCspActionProtectAutoApprove%% to automatically make OemConfig *Approved* to use that CSP.
+- If the value ***Protect*** is selected, a specifically identified CSP will be declared to be *Protected* and hence will be limited to use by specifically *Approved* applications. You must also specify one of **Protect CSP Name** or **Custom** to identify the CSP to be declared *Protected*. You may also specify **Protect CSP Auto Approve** to automatically make OemConfig *Approved* to use that CSP.
 
 
-- If the value !!2!! is selected, a specifically identified CSP will be declared to be *Unprotected* and hence will no longer be limited to use by specifically *Approved* applications. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspName%% or %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspNameCustom%% to identify the CSP to be declared *Unprotected*. You may also specify %%steps.step.serviceAccessStep.serviceCspActionUnprotectAutoUnapprove%% to automatically make OemConfig *Unapproved* from using that CSP.
+- If the value ***Unprotect*** is selected, a specifically identified CSP will be declared to be *Unprotected* and hence will no longer be limited to use by specifically *Approved* applications. You must also specify one of **Unprotect CSP Name** or **Custom** to identify the CSP to be declared *Unprotected*. You may also specify **Unprotect CSP Auto Unapprove** to automatically make OemConfig *Unapproved* from using that CSP.
 
 
-- If the value !!4!! is selected, a specifically identified application will be *Approved* to use a specifically identified *Protected* CSP. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionApproveCspName%% or %%steps.step.serviceAccessStep.serviceCspActionApproveCspNameCustom%% to identify the CSP for which access is to be *Approved*. You must also specify %%steps.step.serviceAccessStep.serviceCspActionApproveCallerPackage%% and %%steps.step.serviceAccessStep.serviceCspActionApproveCallerSignature%% to identify the specific application that will be *Approved* to use the specified CSP.
+- If the value ***Approve*** is selected, a specifically identified application will be *Approved* to use a specifically identified *Protected* CSP. You must also specify one of **Approve CSP Name** or **Custom** to identify the CSP for which access is to be *Approved*. You must also specify **Approve Caller Package** and **Approve Caller Signature** to identify the specific application that will be *Approved* to use the specified CSP.
 
 
-- If the value !!5!! is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspName%% or %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspNameCustom%% to identify the CSP for which access is to be *Unapproved*. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnapproveCallerPackage%% and %%steps.step.serviceAccessStep.serviceCspActionUnapproveCallerSignature%% to identify the specific application that will be *Unapproved* from using the specified CSP.
+- If the value ***Unapprove*** is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of **Unapprove CSP Name** or **Custom** to identify the CSP for which access is to be *Unapproved*. You must also specify one of **Unapprove Caller Package** and **Unapprove Caller Signature** to identify the specific application that will be *Unapproved* from using the specified CSP.
 
 
 **Detail Information:**
@@ -12178,9 +12183,9 @@ To limit access to a CSP, the CSP must first be declared to be *Protected*. Once
 </span> <br><br>
 
 
-Select whether OemConfig should automatically be *Approved* to use the CSP being Declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%% to Declare a CSP as *Protected*. This is a convenience to eliminate the need to separately make OemConfig *Approved* to allow it to use a CSP that has been Declared as *Protected*.
-- If the value ***True*** is selected, the effect will be the same as if a %%steps.step.serviceAccessStep.serviceCspAction%% were with the value !!4@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Approved* to use that CSP. In most cases, it makes sense for OemConfig to be *Approved* to use any CSP that it used to declare to be *Protected*.
-- If the value ***False*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% was not used with the value !!4@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
+Select whether OemConfig should automatically be *Approved* to use the CSP being Declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action** to Declare a CSP as *Protected*. This is a convenience to eliminate the need to separately make OemConfig *Approved* to allow it to use a CSP that has been Declared as *Protected*.
+- If the value ***True*** is selected, the effect will be the same as if a **Use CSP Action** were with the value ***Approve*** to make OemConfig *Approved* to use that CSP. In most cases, it makes sense for OemConfig to be *Approved* to use any CSP that it used to declare to be *Protected*.
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** was not used with the value ***Approve*** to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
 
 
 **Detail Information:**
@@ -12214,10 +12219,10 @@ Select whether OemConfig should automatically be *Approved* to use the CSP being
 </span> <br><br>
 
 
-Select a standard CSP that will be declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionProtectCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -12251,10 +12256,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionProtectCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Protect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -12286,16 +12291,16 @@ Use when the CSP to be declared as *Protected* is not in the list of standard CS
 </span> <br><br>
 
 
-Select whether OemConfig should automatically be *Unapproved* from using the CSP being Declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%% to declare a CSP as *Unprotected*.
+Select whether OemConfig should automatically be *Unapproved* from using the CSP being Declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action** to declare a CSP as *Unprotected*.
 
 
 This is a convenience to eliminate the need to separately make OemConfig *Unapproved* to remove it from the list of applications that are *Approved* to use a CSP that it has been used to declare as *Unprotected*. Strictly speaking, this is not mandatory, since once a CSP has been declared as *Unprotected* the list of applications that are *Approved* to use that CSP is no longer relevant. But since the list of applications that are *Approved* to use a CSP is preserved across declaring a CSP as *Unprotected* and then later declaring that CSP as *Protected*, it is good practice to clean-up the list to avoid unexpected behavior in the future.
 
 
-- If the value ***True*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% were used with the value !!5@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Unapproved* to use that CSP. This will NOT result in OemConfig being unable to use the CSP since declaring the CSP as *Unprotected* explicitly allows ALL applications to use that CSP.
+- If the value ***True*** is selected, the effect will be the same as if **Use CSP Action** were used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This will NOT result in OemConfig being unable to use the CSP since declaring the CSP as *Unprotected* explicitly allows ALL applications to use that CSP.
 
 
-- If the value ***False*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% were not used with the value !!5@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** were not used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
 
 
 **Detail Information:**
@@ -12329,10 +12334,10 @@ This is a convenience to eliminate the need to separately make OemConfig *Unappr
 </span> <br><br>
 
 
-Select a standard CSP that will be declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -12366,10 +12371,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unprotect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -12401,10 +12406,10 @@ Use when the CSP to be declared as *Unprotected* is not in the list of standard 
 </span> <br><br>
 
 
-Select a standard CSP that will be *Approved* for an application when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be *Approved* for an application when the value ***Approve*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionApproveCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -12438,10 +12443,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionApproveCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Approve CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -12473,7 +12478,7 @@ Use when the CSP to be *Approved* for an application is not in the list of stand
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to identify the specific application that should be *Approved* to use the CSP.
+Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to identify the specific application that should be *Approved* to use the CSP.
 
 
 **Detail Information:**
@@ -12505,7 +12510,7 @@ Enter the *Android Package Name* of an application that should be *Approved* to 
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
+Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
 
 
 **Detail Information:**
@@ -12537,10 +12542,10 @@ Enter the *Android Package Signature* of an application that should be *Approved
 </span> <br><br>
 
 
-Select a standard CSP that will be *Unapproved* for an application when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -12574,10 +12579,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be *Unapproved* for an application when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unapprove CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -12609,7 +12614,7 @@ Use when the CSP to be *Unapproved* for an application is not in the list of sta
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to identify the specific application that should be *Unapproved* from using the CSP.
+Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to identify the specific application that should be *Unapproved* from using the CSP.
 
 
 **Detail Information:**
@@ -12641,7 +12646,7 @@ Enter the *Android Package Name* of an application that should be *Unapproved* f
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
+Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
 
 
 **Detail Information:**
@@ -12707,10 +12712,10 @@ Use this *Sub-group* to configure the behavior of the Settings UI on a device, e
 Select whether the Device User will be allowed to access the Android Quick Settings Panel UI.
 
 
-- If the value !!2!! is selected, any attempt by the Device User to enter the Quick Settings Panel will be ignored.
+- If the value ***Off*** is selected, any attempt by the Device User to enter the Quick Settings Panel will be ignored.
 
 
-- If the value !!1!! is selected, attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
+- If the value ***On*** is selected, attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
 
 
 **Detail Information:**
@@ -12745,8 +12750,8 @@ Select whether the Device User will be allowed to access the Android Quick Setti
 
 
 Select whether the Device User will be allowed to change the state of Airplane Mode.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of Airplane Mode will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of Airplane Mode will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of Airplane Mode will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of Airplane Mode will be honored.
 
 
 **Detail Information:**
@@ -12781,8 +12786,8 @@ Select whether the Device User will be allowed to change the state of Airplane M
 
 
 Select whether the Device User will be allowed to configure which application notifications will be generated.
-- If the value !!2!! is selected, any attempt by the Device User to change the configuration of application notifications will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the configuration of application notifications will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the configuration of application notifications will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the configuration of application notifications will be honored.
 
 
 **Detail Information:**
@@ -12817,8 +12822,8 @@ Select whether the Device User will be allowed to configure which application no
 
 
 Select whether the Device User will be allowed to enter the AppInfo section of the Settings UI where applications can be controlled.
-- If the value !!2!! is selected, any attempt by the Device User to enter the AppInfo section of the Settings UI will be ignored.
-- If the value !!1!! is selected, attempts by the Device User to enter the AppInfo section of the Settings will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to enter the AppInfo section of the Settings UI will be ignored.
+- If the value ***On*** is selected, attempts by the Device User to enter the AppInfo section of the Settings will be honored.
 
 
 **Detail Information:**
@@ -12853,8 +12858,8 @@ Select whether the Device User will be allowed to enter the AppInfo section of t
 
 
 Select whether the Device User will be allowed to change the usage of Background WWAN data.
-- If the value !!2!! is selected, any attempt by the Device User to change the usage of Background WWAN data will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the usage of Background WWAN data will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the usage of Background WWAN data will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the usage of Background WWAN data will be honored.
 
 
 **Detail Information:**
@@ -12889,8 +12894,8 @@ Select whether the Device User will be allowed to change the usage of Background
 
 
 Select whether the Device User will be allowed to change the state of the Ethernet adapter.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of Ethernet adapter will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of Ethernet adapter will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of Ethernet adapter will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of Ethernet adapter will be honored.
 
 
 **Detail Information:**
@@ -12925,8 +12930,8 @@ Select whether the Device User will be allowed to change the state of the Ethern
 
 
 Select whether the Device User will be allowed to change whether pressing the Power key causes the device to lock instantly.
-- If the value !!2!! is selected, any attempt by the Device User to change whether pressing the Power key causes the device to lock instantly will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change whether pressing the Power key causes the device to lock instantly will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change whether pressing the Power key causes the device to lock instantly will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change whether pressing the Power key causes the device to lock instantly will be honored.
 
 
 **Detail Information:**
@@ -12961,8 +12966,8 @@ Select whether the Device User will be allowed to change whether pressing the Po
 
 
 Select whether the Device User will be allowed to change the state of USB.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of USB will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of USB will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of USB will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of USB will be honored.
 
 
 **Detail Information:**
@@ -12994,8 +12999,8 @@ Select whether the Device User will be allowed to change the state of USB.
 
 
 Select whether the Device User will be allowed to change whether applications can be installed from Unknown Sources.
-- If the value !!2!! is selected, any attempt by the Device User to change whether applications can be installed from Unknown Sources.
-- If the value !!1!! is selected, attempts by the Device User to change whether applications can be installed from Unknown Sources.
+- If the value ***Off*** is selected, any attempt by the Device User to change whether applications can be installed from Unknown Sources.
+- If the value ***On*** is selected, attempts by the Device User to change whether applications can be installed from Unknown Sources.
 
 
 **Detail Information:**
@@ -13036,8 +13041,8 @@ Select whether the Device User will be allowed to change whether applications ca
 
 
 Select whether the Device User will be allowed to change the configuration of the WLAN adapter.
-- If the value !!2!! is selected, any attempt by the Device User to change the configuration of the WLAN adapter will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the configuration of the WLAN adapter will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the configuration of the WLAN adapter will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the configuration of the WLAN adapter will be honored.
 
 
 **Detail Information:**
@@ -13072,8 +13077,8 @@ Select whether the Device User will be allowed to change the configuration of th
 
 
 Select whether the Device User will be allowed to perform an Enterprise Reset from the Settings UI.
-- If the value !!2!! is selected, any attempt by the Device User to perform an Enterprise Reset from the Settings UI will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to perform an Enterprise Reset from the Settings UI will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to perform an Enterprise Reset from the Settings UI will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to perform an Enterprise Reset from the Settings UI will be honored.
 
 
 **Detail Information:**
@@ -13108,8 +13113,8 @@ Select whether the Device User will be allowed to perform an Enterprise Reset fr
 
 
 Select whether the Device User will be allowed to invoke the Settings UI using an icon on the Quick Settings Panel.
-- If the value !!2!! is selected, any attempt by the use of the icon to invoke the Settings UI will be blocked.
-- If the value !!1!! is selected, the use of the icon to invoke the Settings UI will be allowed.
+- If the value ***Off*** is selected, any attempt by the use of the icon to invoke the Settings UI will be blocked.
+- If the value ***On*** is selected, the use of the icon to invoke the Settings UI will be allowed.
 
 
 **Detail Information:**
@@ -13144,8 +13149,8 @@ Select whether the Device User will be allowed to invoke the Settings UI using a
 
 
 Select whether the Full or Reduced version of the Settings UI will be used.
-- If the value !!1!! is selected, when the Device User launches the Settings UI, the Full version,with support for all settings, will be used.
-- If the value !!2!! is selected, when the Device User launches the Settings UI, the Reduced version, with support for only a few settings, will be used.
+- If the value ***Off*** is selected, when the Device User launches the Settings UI, the Full version,with support for all settings, will be used.
+- If the value ***On*** is selected, when the Device User launches the Settings UI, the Reduced version, with support for only a few settings, will be used.
 
 
 **Detail Information:**
@@ -13177,8 +13182,8 @@ Select whether the Full or Reduced version of the Settings UI will be used.
 
 
 Select whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
+- If the value ***Off*** is selected, the Device User will be blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
+- If the value ***On*** is selected, the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
 
 
 **Detail Information:**
@@ -13213,8 +13218,8 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 
 
 Select whether the Device User is allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
-- If the value !!1!! is selected, the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI
+- If the value ***Off*** is selected, the Device User will be blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
+- If the value ***On*** is selected, the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI
 
 
 **Detail Information:**
@@ -13234,6 +13239,9 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 - Supported from: MX 8.1.
 
 
+- Support discontinued from: MX 9.0..
+
+
 <a id="steps.step.settingsStep.settingsUseOfTetheringAndPortableHotspot">
 
 ##### Use of Tethering and Portable Hotspot
@@ -13249,8 +13257,8 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 
 
 Select whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
 
 
 **Detail Information:**
@@ -13316,8 +13324,8 @@ Use this *Sub-group* to configure which threats to a device will be monitored an
 
 
 Select an Action to configure whether a given threat will be monitored.
-- If the value !!Detect!! is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify %%steps.step.threatStep.threatActionDetectThreatType%% to provide the threat that will be monitored. In addition, you must also specify the *Sub-array* %%steps.step.threatStep.threatActionDetectCountermeasures%% to provide the set of countermeasures that will be performed if the specified threat is detected.
-- If the value !!Ignore!! is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify %%steps.step.threatStep.threatActionIgnoreThreatType%% to provide the threat that will be ignored.
+- If the value ***Detect*** is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify **Detect Threat Type** to provide the threat that will be monitored. In addition, you must also specify the *Sub-array* **Detect Countermeasures** to provide the set of countermeasures that will be performed if the specified threat is detected.
+- If the value ***Ignore*** is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify **Ignore Threat Type** to provide the threat that will be ignored.
 
 
 **Detail Information:**
@@ -13351,12 +13359,12 @@ Select an Action to configure whether a given threat will be monitored.
 </span> <br><br>
 
 
-Select the type of threat that will be monitored when the value !!Detect@steps.step.threatStep.threatAction!! is selected for%%steps.step.threatStep.threatAction%%.
-- If the value !!MaxPasswordAttempts!! is selected, the Threat Management System will be configured to monitor password entry attempts and the threat will be considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
-- If the value !!MDMClientRemoval!! is selected, the Threat Management System will be configured to monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device. You must also specify %%steps.step.threatStep.threatMdmClientPackageName%% to provide the *Android Package Name* that will be monitored. While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of ANY application, if detection of the removal of an MDM Agent is not required.
-- If the value !!ExternallyDetected!! is selected, the Threat Management System will be configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System. The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
-- If the value !!ExchangeActiveSyncCommand!! is selected, the Threat Management System will be configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
-- If the value !!DeviceisRooted!! is selected, the Threat Management System will be configured to monitor the device to see if it has been rooted. Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device.
+Select the type of threat that will be monitored when the value ***Detect*** is selected for**Action**.
+- If the value ***Max Password Attempts*** is selected, the Threat Management System will be configured to monitor password entry attempts and the threat will be considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
+- If the value ***MDM Client Removal*** is selected, the Threat Management System will be configured to monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device. You must also specify **Action Detect Threat Type MDM Client Removal Package Name** to provide the *Android Package Name* that will be monitored. While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of ANY application, if detection of the removal of an MDM Agent is not required.
+- If the value ***Externally Detected*** is selected, the Threat Management System will be configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System. The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
+- If the value ***Exchange Active Sync Command*** is selected, the Threat Management System will be configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
+- If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to monitor the device to see if it has been rooted. Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device.
 
 
 **Detail Information:**
@@ -13458,12 +13466,12 @@ Use this *Sub-group* to specify a countermeasure to mitigate a detected threat.
 
 
 Select the type of a single countermeasure that will be performed to mitigate a detected threat.
-- If the value !!FormatSdcard!! is selected, the countermeasure to format the removable SD Card will be performed when the associated threat is detected.
-- If the value !!FactoryReset!! is selected, the countermeasure to Factory Reset the device will be performed when the associated threat is detected.
-- If the value !!WipeSecureStorageKeys!! is selected, the countermeasure to Wipe all encryption keys, deployed via the Group %%steps.step.securityStep%% will be performed when the associated threat is detected.
-- If the value !!LockDevice!! is selected, the countermeasure to lock the device, requiring it to be unlocked by the Device User, will be performed when the associated threat is detected.
-- If the value !!UninstallApplication!! is selected, the countermeasure to Uninstall an application will be performed when the associated threat is detected. You must also specify %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUninstallPackageName%% to provide the *Android Package Name* of the application that will be uninstalled.
-- If the value !!UnsolicitedAlert!! is selected, the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected. You must also specify %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertPackageName%%, %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertClass%%, and %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertMessage%% to provide the information needed to deliver the alert.
+- If the value ***FormatSdcard*** is selected, the countermeasure to format the removable SD Card will be performed when the associated threat is detected.
+- If the value ***FactoryReset*** is selected, the countermeasure to Factory Reset the device will be performed when the associated threat is detected.
+- If the value ***WipeSecureStorageKeys*** is selected, the countermeasure to Wipe all encryption keys, deployed via the Group **Security Configuration** will be performed when the associated threat is detected.
+- If the value ***LockDevice*** is selected, the countermeasure to lock the device, requiring it to be unlocked by the Device User, will be performed when the associated threat is detected.
+- If the value ***UninstallApplication*** is selected, the countermeasure to Uninstall an application will be performed when the associated threat is detected. You must also specify **Uninstall Package Name** to provide the *Android Package Name* of the application that will be uninstalled.
+- If the value ***UnsolicitedAlert*** is selected, the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected. You must also specify **Unsolicited Alert Package Name**, **Unsolicited Alert Class**, and **Unsolicited Alert Message** to provide the information needed to deliver the alert.
 
 
 **Detail Information:**
@@ -13499,7 +13507,7 @@ Select the type of a single countermeasure that will be performed to mitigate a 
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that will be uninstalled as a countermeasure to mitigate a threat when the value !!UninstallApplication@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the *Android Package Name* of an application that will be uninstalled as a countermeasure to mitigate a threat when the value ***UninstallApplication*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -13533,7 +13541,7 @@ Enter the *Android Package Name* of an application that will be uninstalled as a
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the *Android Package Name* of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -13567,7 +13575,7 @@ Enter the *Android Package Name* of an application that will be sent an unsolici
 </span> <br><br>
 
 
-Enter the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -13601,7 +13609,7 @@ Enter the Class Name of component within an application that will be sent an uns
 </span> <br><br>
 
 
-Enter the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -13633,7 +13641,7 @@ Enter the string text message that will be sent to a component of an application
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the MDM Agent that will be monitored to detect a threat when the value !!MDMClientRemoval@steps.step.threatStep.threatActionDetectThreatType!! is selected for %%steps.step.threatStep.threatActionDetectThreatType%%.
+Enter the *Android Package Name* of the MDM Agent that will be monitored to detect a threat when the value ***MDM Client Removal*** is selected for **Detect Threat Type**.
 
 
 **Detail Information:**
@@ -13665,12 +13673,12 @@ Enter the *Android Package Name* of the MDM Agent that will be monitored to dete
 </span> <br><br>
 
 
-Select the type of threat that will NOT be monitored, and hence cannot be detected, when the value !!Ignore@steps.step.threatStep.threatAction!! is selected for%%steps.step.threatStep.threatAction%%.
-- If the value !!MaxPasswordAttempts!! is selected, the Threat Management System will be configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
-- If the value !!MDMClientRemoval!! is selected, the Threat Management System will be configured to NOT monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client.
-- If the value !!ExternallyDetected!! is selected, the Threat Management System will be configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
-- If the value !!ExchangeActiveSyncCommand!! is selected, the Threat Management System will be configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
-- If the value !!DeviceisRooted!! is selected, the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected.
+Select the type of threat that will NOT be monitored, and hence cannot be detected, when the value ***Ignore*** is selected for**Action**.
+- If the value ***Max Password Attempts*** is selected, the Threat Management System will be configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
+- If the value ***MDM Client Removal*** is selected, the Threat Management System will be configured to NOT monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client.
+- If the value ***Externally Detected*** is selected, the Threat Management System will be configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
+- If the value ***Exchange Active Sync Command*** is selected, the Threat Management System will be configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
+- If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected.
 
 
 **Detail Information:**
@@ -13705,8 +13713,8 @@ Select the type of threat that will NOT be monitored, and hence cannot be detect
 
 
 Select whether the Threat Management System should perform background polling to increase the accuracy and timeliness of detection of Rooted Device threat.
-- If the value !!2!! is selected, the Threat Management System will NOT perform background polling. This may increase performance and improve battery life somewhat, but will reduce the ability to detect the Rooted Device threat and or result in a delay in detection of that threat.
-- If the value !!1!! is selected, the Threat Management System will perform background polling. This may reduce performance and degrade battery life somewhat, but will increase the ability to detect the Rooted Device threat and accelerate detection of that threat. You may also specify %%steps.step.threatStep.threatPeriodicScanInterval%%, %%steps.step.threatStep.threatPeriodicScanAdditionalFolders%%, and %%steps.step.threatStep.threatPeriodicScanAdditionalFoldersList%% to adjust the nature of the background polling, allowing trade-offs to be made in the balance pf thoroughness vs. the impact to performance and battery life. This value should generally be selected when detection of the !!DeviceisRooted@steps.step.threatStep.threatActionDetectThreatType!! threat has been enabled, since it would have little value otherwise.
+- If the value ***Off*** is selected, the Threat Management System will NOT perform background polling. This may increase performance and improve battery life somewhat, but will reduce the ability to detect the Rooted Device threat and or result in a delay in detection of that threat.
+- If the value ***On*** is selected, the Threat Management System will perform background polling. This may reduce performance and degrade battery life somewhat, but will increase the ability to detect the Rooted Device threat and accelerate detection of that threat. You may also specify **Interval**, **Additional Folders**, and **List** to adjust the nature of the background polling, allowing trade-offs to be made in the balance pf thoroughness vs. the impact to performance and battery life. This value should generally be selected when detection of the ***Device is Rooted*** threat has been enabled, since it would have little value otherwise.
 
 
 **Detail Information:**
@@ -13740,7 +13748,7 @@ Select whether the Threat Management System should perform background polling to
 </span> <br><br>
 
 
-Enter the interval between polls when the value !!1@steps.step.threatStep.threatPeriodicScan!! is selected for %%steps.step.threatStep.threatPeriodicScan%%.
+Enter the interval between polls when the value ***On*** is selected for **Periodic Scan**.
 
 
 The interval is specified in seconds between polls.
@@ -13776,14 +13784,14 @@ The interval is specified in seconds between polls.
 </span> <br><br>
 
 
-Select whether additional folders will be polled when the value !!1!! is selected for %%steps.step.threatStep.threatPeriodicScan%%.
+Select whether additional folders will be polled when the value ***On*** is selected for **Periodic Scan**.
 
 
 
 
 When background polling to detect device rooting is performed, the Threat Management System will always scan certain key folders that are considered common or likely locations where changes might occur that could signal that device has been rooted. In some cases, rooting might occur through changes made to other folders.
-- If the value !!2!! is selected, the Threat Management System will only scan the default folders.
-- If the value !!1!! is selected, the Threat Management System will scan the default folders plus additional folders. You must also specify %%steps.step.threatStep.threatPeriodicScanAdditionalFoldersList%% to identify the list of additional folders to be scanned.
+- If the value ***Off*** is selected, the Threat Management System will only scan the default folders.
+- If the value ***On*** is selected, the Threat Management System will scan the default folders plus additional folders. You must also specify **List** to identify the list of additional folders to be scanned.
 
 
 **Detail Information:**
@@ -13817,7 +13825,7 @@ When background polling to detect device rooting is performed, the Threat Manage
 </span> <br><br>
 
 
-Enter list of additional folders that will be polled when the value !!1@steps.step.threatStep.threatPeriodicScan!! is selected for %%steps.step.threatStep.threatPeriodicScan%% and the value !!1@steps.step.threatStep.threatPeriodicScanAdditionalFolders!! is selected for %%steps.step.threatStep.threatPeriodicScanAdditionalFolders%%.
+Enter list of additional folders that will be polled when the value ***On*** is selected for **Periodic Scan** and the value ***On*** is selected for **Additional Folders**.
 
 
 **Detail Information:**
@@ -13849,7 +13857,7 @@ Enter list of additional folders that will be polled when the value !!1@steps.st
 </span> <br><br>
 
 
-Signal the detection of an externally detected threat. This would generally be relevant only if the !!ExternallyDetected@steps.step.threatStep.threatActionDetectThreatType!! was selected for %%steps.step.threatStep.threatActionDetectThreatType%%, since any signaling of an externally detected threat would otherwise be ignored.
+Signal the detection of an externally detected threat. This would generally be relevant only if the ***Externally Detected*** was selected for **Detect Threat Type**, since any signaling of an externally detected threat would otherwise be ignored.
 
 
 **Detail Information:**
@@ -13916,11 +13924,11 @@ Select an Action to alter the UI behavior of the *Zebra Volume Control* on a dev
 
 
 The *Zebra Volume Control* provides a configurable UI that allows the Device Users to adjust the volume of one or more *Audio Streams* on a device. The UI behavior of the *Zebra Volume Control* is configured by defining one or more *Audio UI Profiles* and controlling which *Audio UI Profile* is active. Each *Audio UI Profile* defines which *Audio Streams* can be configured and adjusts the experience of the Device User when adjusting the volumes of those *Audio Streams*. The *Zebra Volume Control* also has a *Factory Preset Audio UI Profile* that can be used to return the behavior of the *Zebra Volume Control* to it default out-of-box state.
-- If the value !!1!! is selected, a new *Audio UI Profile* is added to the list of *Audio UI Profiles*. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileName%% and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%% to define the *Audio UI Profile* being added.
-- If the value !!2!! is selected, an existing *Audio UI Profile* is removed from the list of *Audio UI Profiles*. You must also specify %%steps.step.volumeuiStep.volumeuiActionRemoveProfileName%% to provide the name that identifies the *Audio UI Profile* to be removed.
-- If the value !!01!! is selected, an existing *Audio UI Profile* is set to be the active *Audio UI Profile*. You must also specify %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileName%% to provide the name that identifies the *Audio UI Profile* to be made the new active *Audio UI Profile*.
-- If the value !!02!! is selected, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*. If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* will be adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
-- If the value !!03!! is selected, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state.
+- If the value ***Add Profile*** is selected, a new *Audio UI Profile* is added to the list of *Audio UI Profiles*. You must also specify **Add Profile Name** and **Add Profile Streams** to define the *Audio UI Profile* being added.
+- If the value ***Remove Profile*** is selected, an existing *Audio UI Profile* is removed from the list of *Audio UI Profiles*. You must also specify **Remove Profile Name** to provide the name that identifies the *Audio UI Profile* to be removed.
+- If the value ***Set Current Profile*** is selected, an existing *Audio UI Profile* is set to be the active *Audio UI Profile*. You must also specify **Set Current Profile Name** to provide the name that identifies the *Audio UI Profile* to be made the new active *Audio UI Profile*.
+- If the value ***Apply Current Profile*** is selected, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*. If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* will be adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
+- If the value ***Set Factory Preset*** is selected, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state.
 
 
 **Detail Information:**
@@ -13954,7 +13962,7 @@ The *Zebra Volume Control* provides a configurable UI that allows the Device Use
 </span> <br><br>
 
 
-Enter the name of a new *Audio UI Profile* to be added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Enter the name of a new *Audio UI Profile* to be added when the value ***Add Profile*** is selected for **Action**.
 - If an *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will replace the existing *Audio UI Profile* with that name.
 - If no *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will be added with that name.
 
@@ -13988,7 +13996,7 @@ Enter the name of a new *Audio UI Profile* to be added when the value !!1@steps.
 </span> <br><br>
 
 
-Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -14021,7 +14029,7 @@ Use this *Sub-array* to specify the set of *Audio Streams* that will be included
 </span> <br><br>
 
 
-Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%%.
+Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Stream**.
 
 
 **Detail Information:**
@@ -14055,15 +14063,15 @@ Use this *Sub-group* to define a single *Audio Stream* that will be included as 
 </span> <br><br>
 
 
-You must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the *Sub-group* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamLabel%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamIcon%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamVisible%%, and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% to define the characteristics of the new *Audio Stream* of the specified type that will be added.
-- If the value !!Music!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
-- If the value !!Ring!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
-- If the value !!Notification!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
-- If the value !!System!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
-- If the value !!Alarm!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
-- If the value !!VoiceCall!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
-- If the value !!VVS!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS).
-- If the value !!KeypadTone!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for the keypad tone.
+You must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the *Sub-group* **Stream** within *Sub-array* **Add Profile Streams**. You must also specify **Label**, **Icon**, **Visible**, and **Modes** to define the characteristics of the new *Audio Stream* of the specified type that will be added.
+- If the value ***Music*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
+- If the value ***Ring*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
+- If the value ***Notification*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
+- If the value ***System*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
+- If the value ***Alarm*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
+- If the value ***VoiceCall*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
+- If the value ***VVS*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS).
+- If the value ***KeypadTone*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for the keypad tone.
 
 
 **Detail Information:**
@@ -14099,7 +14107,7 @@ You must select the type of a single *Audio Stream* that will be included as par
 </span> <br><br>
 
 
-Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The text label might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the text label to something more description of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -14139,7 +14147,7 @@ If no text label is selected for an *Audio Stream*, the *Factory Preset* default
 </span> <br><br>
 
 
-Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -14182,7 +14190,7 @@ If no icon is selected for an *Audio Stream*, the *Factory Preset* default icon 
 </span> <br><br>
 
 
-Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra Volume Control* will not present ANY UI to the Device User to control the volume of that *Audio Stream*. The result is basically identical to not including the *Audio Stream* in the *Audio UI Profile*. This might be used when temporarily disabling an *Audio Stream* to avoid the need to remove and then add back in the entire definition of that *Audio Stream*.
@@ -14219,7 +14227,7 @@ If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra V
 </span> <br><br>
 
 
-Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% and as part of an instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** and as part of an instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 **Detail Information:**
@@ -14254,10 +14262,10 @@ Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stre
 </span> <br><br>
 
 
-Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
-For each *Audio Mode* defined for an *Audio Stream*, You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeType%% to provide which *Audio Mode* will be defined. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%%, and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%% to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
+For each *Audio Mode* defined for an *Audio Stream*, You must also specify **Type** to provide which *Audio Mode* will be defined. You must also specify **Minimum**, **Maximum**, and **Preset** to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
 
 
 **Detail Information:**
@@ -14289,7 +14297,7 @@ For each *Audio Mode* defined for an *Audio Stream*, You must also specify %%ste
 </span> <br><br>
 
 
-Enter the name of an existing *Audio UI Profile* to be removed when the value !!2@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Enter the name of an existing *Audio UI Profile* to be removed when the value ***Remove Profile*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -14321,7 +14329,7 @@ Enter the name of an existing *Audio UI Profile* to be removed when the value !!
 </span> <br><br>
 
 
-Enter the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile* when the value !!01@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%. You must also specify %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileAdjustVolume%% to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*.
+Enter the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile* when the value ***Set Current Profile*** is selected for **Action**. You must also specify **Set Current Profile Adjust Volume** to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*.
 
 
 **Detail Information:**
@@ -14353,7 +14361,7 @@ Enter the name of an existing *Audio UI Profile* to be made the current active *
 </span> <br><br>
 
 
-Select whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*when the value !!01@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% and %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileName%% is specified.
+Select whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*when the value ***Set Current Profile*** is selected for **Action** and **Set Current Profile Name** is specified.
 
 
 **Detail Information:**
@@ -14455,10 +14463,10 @@ Select the Method that will be used to implement and control device Wake-up. - H
 Select whether all controllable Wakeup Sources should be turned on or off.
 
 
-- If the value !!2!! is selected, all wakeup sources that can be turned on or off will be turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
+- If the value ***Off*** is selected, all wakeup sources that can be turned on or off will be turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
 
 
-- If the value !!1!! is selected, all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
+- If the value ***On*** is selected, all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
 
 
 **Detail Information:**
@@ -14525,11 +14533,11 @@ Whitelisting applies only to user applications; it has no effect on System appli
 
 
 Select the Whitelisting Mode, which determines how the applications that can be installed and run on a device will be controlled.
-- If the value !!1!! is selected, when configuring which applications can be installed and run, only the *Android Package Name* will be used to identify the allowed applications.
-- If the value !!2!! is selected, when configuring which applications can be installed and run, both the *Android Package Name* and the Package Signature will be used to identify the allowed applications.
+- If the value ***Package Name Only*** is selected, when configuring which applications can be installed and run, only the *Android Package Name* will be used to identify the allowed applications.
+- If the value ***Package Name and Signature*** is selected, when configuring which applications can be installed and run, both the *Android Package Name* and the Package Signature will be used to identify the allowed applications.
 
 
-Using the value !!2!! provides significantly better security than using !!1!! since it provides much stronger protection against spoofing. If !!1!! is used, any APK whose *Android Package Name* matches one of the allowed *Android Package Names* will be allowed to be installed and run. Since any APK can be assigned any *Android Package Name*, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If !!2!! is used, the *Android Package Signature* of an application must match an allowed *Android Package Signature* in addition to the *Android Package Name* matching an allowed *Android Package Name*. Since a rogue APK cannot be signed with a given *Android Package Signature* without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
+Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing. If ***Package Name Only*** is used, any APK whose *Android Package Name* matches one of the allowed *Android Package Names* will be allowed to be installed and run. Since any APK can be assigned any *Android Package Name*, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If ***Package Name and Signature*** is used, the *Android Package Signature* of an application must match an allowed *Android Package Signature* in addition to the *Android Package Name* matching an allowed *Android Package Name*. Since a rogue APK cannot be signed with a given *Android Package Signature* without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
 
 
 **Detail Information:**
@@ -14564,8 +14572,8 @@ Using the value !!2!! provides significantly better security than using !!1!! si
 
 
 Select an Action to alter the Whitelisting configuration of a device.
-- If the value !!Add!! is selected, a single application will be allowed to be installed and run. You must also specify %%steps.step.whitelistStep.whitelistActionAddPackageName%% to provide the *Android Package Name* of the application that will be allowed. In addition, if the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionAddSignature%% to provide the *Android Package Signature* to be allowed.
-- If the value !!Delete!! is selected, a single application will be prevented from being installed and run. You must also specify %%steps.step.whitelistStep.whitelistActionDeletePackageName%% to provide the *Android Package Name* of the application that will be disallowed.
+- If the value ***Allow*** is selected, a single application will be allowed to be installed and run. You must also specify **Allow Package Name** to provide the *Android Package Name* of the application that will be allowed. In addition, if the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Allow Signature** to provide the *Android Package Signature* to be allowed.
+- If the value ***Disallow*** is selected, a single application will be prevented from being installed and run. You must also specify **Disallow Package Name** to provide the *Android Package Name* of the application that will be disallowed.
 
 
 **Detail Information:**
@@ -14599,8 +14607,8 @@ Select an Action to alter the Whitelisting configuration of a device.
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application to be allowed when the value !!Add@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%.
-- If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionAddSignature%% to provide the *Android Package Signature* to be allowed.
+Enter the *Android Package Name* of an application to be allowed when the value ***Allow*** is selected for **Action**.
+- If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Allow Signature** to provide the *Android Package Signature* to be allowed.
 
 
 **Detail Information:**
@@ -14632,7 +14640,7 @@ Enter the *Android Package Name* of an application to be allowed when the value 
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application to be allowed when the value !!Add@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%, %%steps.step.whitelistStep.whitelistActionAddPackageName%% is specified, and the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%.
+Enter the *Android Package Signature* of an application to be allowed when the value ***Allow*** is selected for **Action**, **Allow Package Name** is specified, and the value ***Package Name and Signature*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -14664,7 +14672,7 @@ Enter the *Android Package Signature* of an application to be allowed when the v
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application to be disallowed when the value !!Delete@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%, and when %%steps.step.whitelistStep.whitelistActionDeletePackageName%% is specified, and when the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%.
+Enter the *Android Package Signature* of an application to be disallowed when the value ***Disallow*** is selected for **Action**, and when **Disallow Package Name** is specified, and when the value ***Package Name and Signature*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -14696,10 +14704,10 @@ Enter the *Android Package Signature* of an application to be disallowed when th
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application to be disallowed when the value !!Delete@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%.
+Enter the *Android Package Name* of an application to be disallowed when the value ***Disallow*** is selected for **Action**.
 
 
-If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionDeleteSignature%% to provide the *Android Package Signature* to be allowed.
+If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Disallow Signature** to provide the *Android Package Signature* to be allowed.
 
 
 **Detail Information:**
@@ -14734,10 +14742,10 @@ If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%step
 Select the Whitelisting State, which determines whether the set of applications that can be installed and run on a device will be controlled.
 
 
-- If the value !!1!! is selected, Whitelisting will not be used and no restrictions will be placed on which applications can be installed and run.
+- If the value ***Off*** is selected, Whitelisting will not be used and no restrictions will be placed on which applications can be installed and run.
 
 
-- If the value !!2!! is selected, Whitelisting will be used and you should specify additional configuration in the Group to configure how the set of applications will be controlled and which applications will be allowed to be installed and run.
+- If the value ***On*** is selected, Whitelisting will be used and you should specify additional configuration in the Group to configure how the set of applications will be controlled and which applications will be allowed to be installed and run.
 
 
 **Detail Information:**
@@ -14805,10 +14813,10 @@ Use this *Sub-group* to configure General Wireless settings on a device.
 Use this *Sub-group* to configure which of multiple antennas should be used for wireless communications.
 
 
-- If the value !!1!! is selected, the internal built-in antenna will be used.
+- If the value ***Internal*** is selected, the internal built-in antenna will be used.
 
 
-- If the value !!2!! is selected, an externally connected antenna will be used.
+- If the value ***External*** is selected, an externally connected antenna will be used.
 
 
 
@@ -14845,8 +14853,8 @@ Use this *Sub-group* to configure which of multiple antennas should be used for 
 
 
 Use this *Sub-group* to configure whether the GPS radio state should be On or Off.
-- If the value !!2!! is selected, the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
-- If the value !!1!! is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
+- If the value ***Off*** is selected, the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
+- If the value ***On*** is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
 
 
 **Detail Information:**
@@ -14912,10 +14920,10 @@ Use this *Group* to configure Global settings that affect the Wireless Local Are
 Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically when the presence of a previously connected network is detected.
 
 
-- If the value !!0!! is selected, automatic *Wake Up* will be turned OFF, preventing the device from detecting the presence of a previously connected network and automatically waking up to connect to it.
+- If the value ***Off*** is selected, automatic *Wake Up* will be turned OFF, preventing the device from detecting the presence of a previously connected network and automatically waking up to connect to it.
 
 
-- If the value !!1!! is selected, automatic *Wake Up* will be turned ON, allowing the device to periodically scan for and detect the presence of a previously connected network and automatically wake up to connect to it.
+- If the value ***On*** is selected, automatic *Wake Up* will be turned ON, allowing the device to periodically scan for and detect the presence of a previously connected network and automatically wake up to connect to it.
 
 
 **Detail Information:**
@@ -14950,9 +14958,9 @@ Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically w
 
 
 Select the frequency *Bands* on which the WLAN subsystem will operate on a device:
-- If the value !!2.4GHz!! is selected, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) will be used.
-- If the value !!5.0GHz!! is selected, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) will be used.
-- If the value !!Auto!! is selected, the *Band* to be used will be determined automatically.
+- If the value ***2.4GHz*** is selected, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) will be used.
+- If the value ***5.0GHz*** is selected, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) will be used.
+- If the value ***Auto*** is selected, the *Band* to be used will be determined automatically.
 
 
 **Detail Information:**
@@ -14989,13 +14997,13 @@ Enter the channels over which the WLAN subsystem will operate on a device.
 The format of the value entered must be 64 characters or less and can specify one or more channels by separating values by commas and/or specifying ranges of values by separating the lower and upper range values with a dash (-). Some examples: - 1,2,3 - 3,6,7-9,11-13
 
 
-The actual channel that can specified depends on the value selected for %%steps.step.wlanStep.wlanBands%%.
-- If the value !!2.4GHz@steps.step.wlanStep.wlanBands!! is selected for %%steps.step.wlanStep.wlanBands%%, channels must be selected that are in the 2.4 Ghz band.
-- If the value !!5.0GHz@steps.step.wlanStep.wlanBands!! is selected for %%steps.step.wlanStep.wlanBands%%, channels must be selected that are in the 5.0 Ghz band.
-- If the value !!Auto@steps.step.wlanStep.wlanBands!! is selected %%steps.step.wlanStep.wlanBands%%, channels may be selected that are in either band.
+The actual channel that can specified depends on the value selected for **Bands**.
+- If the value ***2.4GHz*** is selected for **Bands**, channels must be selected that are in the 2.4 Ghz band.
+- If the value ***5.0GHz*** is selected for **Bands**, channels must be selected that are in the 5.0 Ghz band.
+- If the value ***Auto*** is selected **Bands**, channels may be selected that are in either band.
 
 
-Note that individual countries may apply their own regulations regarding the channels that are allowable. Therefore, depending on the value selected for %%steps.step.wlanStep.wlanCountry%%, not all channel values that could be specified for a given band may be allowable.
+Note that individual countries may apply their own regulations regarding the channels that are allowable. Therefore, depending on the value selected for **Country**, not all channel values that could be specified for a given band may be allowable.
 
 
 **Detail Information:**
@@ -15028,7 +15036,7 @@ Note that individual countries may apply their own regulations regarding the cha
 
 
 Select the *Country* in which the WLAN subsystem will operate on a device:
-- If the value !!AUTO!! is selected, the *Country* to be used will be determined automatically.
+- If the value ***Auto (Use 802.11d)*** is selected, the *Country* to be used will be determined automatically.
 - When any other value is selected, the specified *Country* will be used.
 
 
@@ -15063,10 +15071,10 @@ Select the *Country* in which the WLAN subsystem will operate on a device:
 Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 
 
-- If the value !!0!! is selected, the *Hotspot Mode* will be turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot. Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, turned OFF and back ON without having to reconfigure it.
+- If the value ***Off*** is selected, the *Hotspot Mode* will be turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot. Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, turned OFF and back ON without having to reconfigure it.
 
 
-- If the value !!1!! is selected, the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*.
+- If the value ***On*** is selected, the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*.
 
 
 **Detail Information:**
@@ -15100,10 +15108,10 @@ Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 Select whether the *Verbose Logging* feature of the WLAN adapter should be turned ON or OFF on a device.
 
 
-- If the value !!0!! is selected, the *Verbose Logging* will be turned OFF, preventing the device from logging additional information for debugging or troubleshooting WLAN issues.
+- If the value ***Off*** is selected, the *Verbose Logging* will be turned OFF, preventing the device from logging additional information for debugging or troubleshooting WLAN issues.
 
 
-- If the value !!1!! is selected, the *Verbose Logging* will be turned ON, allowing the device to log additional information for debugging or troubleshooting WLAN issues.
+- If the value ***On*** is selected, the *Verbose Logging* will be turned ON, allowing the device to log additional information for debugging or troubleshooting WLAN issues.
 
 
 **Detail Information:**
@@ -15137,7 +15145,7 @@ Select whether the *Verbose Logging* feature of the WLAN adapter should be turne
 </span> <br><br>
 
 
-Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via %%steps.step.wlanStep.wlanHotSpotState%%.
+Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via **Hotspot State**.
 
 
 
@@ -15203,8 +15211,8 @@ Enter the Service Set Identifier (SSID) that will identify the network supported
 
 
 Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will operate on a device.
-- If the value !!0!! is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
-- If the value !!1!! is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
+- If the value ***2.4GHz*** is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
+- If the value ***5GHz*** is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
 
 
 **Detail Information:**
@@ -15236,7 +15244,7 @@ Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will ope
 </span> <br><br>
 
 
-Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device and should be specified when the value !!0@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand%%.
+Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device and should be specified when the value ***2.4GHz*** is selected for **Band**.
 
 
 **Detail Information:**
@@ -15268,7 +15276,7 @@ Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 </span> <br><br>
 
 
-Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device when the value !!1@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand%%.
+Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device when the value ***5GHz*** is selected for **Band**.
 
 
 **Detail Information:**
@@ -15301,8 +15309,8 @@ Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 
 
 Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN adapter will operate on a device.
-- If the value !!0!! is selected, the WLAN adapter will apply no security for *Hotspot Mode*, thus providing no control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*.
-- If the value !!1!! is selected, the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*. You must also specify %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityPassphrase%% to provide the PSK passphrase that will be used to secure the network.
+- If the value ***Open*** is selected, the WLAN adapter will apply no security for *Hotspot Mode*, thus providing no control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*.
+- If the value ***WPA2/PSK*** is selected, the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*. You must also specify **Security Passphrase** to provide the PSK passphrase that will be used to secure the network.
 
 
 **Detail Information:**
@@ -15334,7 +15342,7 @@ Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN a
 </span> <br><br>
 
 
-Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a device, when the value !!1@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityMode!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityMode%%.
+Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a device, when the value ***WPA2/PSK*** is selected for **Security Mode**.
 
 
 **Detail Information:**
@@ -15538,7 +15546,7 @@ Use this *Sub-group* to specify a name and value for a single Omnitrail option t
 </span> <br><br>
 
 
-Select a standard name that identifies a single Omnitrail optOmnitrail option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionValue%% to provide the value to be set for the Omnitrail option identified by the selected name.
+Select a standard name that identifies a single Omnitrail optOmnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the selected name.
 
 
 **Detail Information:**
@@ -15575,7 +15583,7 @@ Select a standard name that identifies a single Omnitrail optOmnitrail option to
 </span> <br><br>
 
 
-Enter a custom name that identifies a Omnitrail option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionValue%% to provide the value to be set for the Omnitrail option identified by the specified name.
+Enter a custom name that identifies a Omnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the specified name.
 
 
 **Detail Information:**
@@ -15610,7 +15618,7 @@ Enter a custom name that identifies a Omnitrail option to be configured for the 
 </span> <br><br>
 
 
-Enter a value for a single Omnitrail option to be configured for the WLAN adapter on a device when %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionName%% or %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionCustomName%% are also specified to provide the name needed identity the Omnitrail option to be set.
+Enter a value for a single Omnitrail option to be configured for the WLAN adapter on a device when **Name** or **Name Custom** are also specified to provide the name needed identity the Omnitrail option to be set.
 
 
 **Detail Information:**
@@ -15643,10 +15651,10 @@ Enter a value for a single Omnitrail option to be configured for the WLAN adapte
 </span> <br><br>
 
 
-Select an omnittrail datarate standard to be used by the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarate%% to provide the actual datarate to be used.
-- If the value !!0!! is selected, the Omnitrail datarate standard will be set for 802.11a, 802.11b, and 802,11g.
-- If the value !!1!! is selected, the Omnitrail datarate standard will be set for 802.11n.
-- If the value !!2!! is selected, the Omnitrail datarate standard will be set for 802.11a and 802,11c.
+Select an omnittrail datarate standard to be used by the WLAN adapter on a device. You must also specify **Datarate** to provide the actual datarate to be used.
+- If the value ***abg*** is selected, the Omnitrail datarate standard will be set for 802.11a, 802.11b, and 802,11g.
+- If the value ***11n*** is selected, the Omnitrail datarate standard will be set for 802.11n.
+- If the value ***11ac*** is selected, the Omnitrail datarate standard will be set for 802.11a and 802,11c.
 
 
 
@@ -15683,8 +15691,8 @@ Select an omnittrail datarate standard to be used by the WLAN adapter on a devic
 </span> <br><br>
 
 
-Select an omnittrail datarate to be used by the WLAN adapter on a device when %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%% is also specified to identify the datarate standard.
-- If the value !!0@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+Select an omnittrail datarate to be used by the WLAN adapter on a device when **Standard** is also specified to identify the datarate standard.
+- If the value ***abg*** is selected for **Standard**, the following datarates can be selected.
 - 1
 - 2
 - 5.5
@@ -15697,7 +15705,7 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when %%
 - 36
 - 48
 - 54
-- If the value !!1@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+- If the value ***11n*** is selected for **Standard**, the following datarates can be selected.
 - MCS0
 - MCS1
 - MCS2
@@ -15714,7 +15722,7 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when %%
 - MCS13
 - MCS14
 - MCS15
-- If the value !!2@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+- If the value ***11ac*** is selected for **Standard**, the following datarates can be selected.
 - MCS0_1
 - MCS1_1
 - MCS2_1
@@ -15835,7 +15843,7 @@ Use this *Sub-group* to specify a name and value for a single advanced option to
 </span> <br><br>
 
 
-Select a standard name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionValue%% to provide the value to be set for the advanced option identified by the selected name.
+Select a standard name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the selected name.
 
 
 **Detail Information:**
@@ -15871,7 +15879,7 @@ Select a standard name that identifies a single advanced option to be configured
 </span> <br><br>
 
 
-Enter a custom name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionValue%% to provide the value to be set for the advanced option identified by the specified name.
+Enter a custom name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the specified name.
 
 
 **Detail Information:**
@@ -15905,7 +15913,7 @@ Enter a custom name that identifies a single advanced option to be configured fo
 </span> <br><br>
 
 
-Enter a value for a single advanced option to be configured for the WLAN adapter on a device and should be specified when %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionName%% or %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionCustomName%% are specified to provide the name of the advanced option.
+Enter a value for a single advanced option to be configured for the WLAN adapter on a device and should be specified when **Name** or **Custom Name** are specified to provide the name of the advanced option.
 
 
 **Detail Information:**
@@ -16004,7 +16012,7 @@ Use this *Sub-group* to specify a name and value for a single *Diagnostic Option
 </span> <br><br>
 
 
-Select a standard name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionValue%% to provide the value to be set for the *Diagnostic Option* identified by the specified name.
+Select a standard name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
 **Detail Information:**
@@ -16040,7 +16048,7 @@ Select a standard name that identifies a single *Diagnostic Option* to be config
 </span> <br><br>
 
 
-Enter a custom name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionValue%% to provide the value to be set for the *Diagnostic Option* identified by the specified name.
+Enter a custom name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
 **Detail Information:**
@@ -16074,7 +16082,7 @@ Enter a custom name that identifies a single *Diagnostic Option* to be configure
 </span> <br><br>
 
 
-Enter a value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionName%% or %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionCustomName%% to provide the name that identifies the *Diagnostic Option* to be set.
+Enter a value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Name** or **Name Custom** to provide the name that identifies the *Diagnostic Option* to be set.
 
 
 **Detail Information:**
@@ -16109,10 +16117,10 @@ Enter a value for a single *Diagnostic Option* to be configured for the WLAN ada
 Select whether the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
 
 
-- If the value !!2!! is selected, the Device User will NOT be notified about, nor allowed to connect to, new WLANs that are detected.
+- If the value ***Off*** is selected, the Device User will NOT be notified about, nor allowed to connect to, new WLANs that are detected.
 
 
-- If the value !!1!! is selected, the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
+- If the value ***On*** is selected, the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
 
 
 **Detail Information:**
@@ -16204,8 +16212,8 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 
 Select whether WWAN data can be used by applications that are in the *Background*.
-- If the value !!2!! is selected, the use of WWAN data by applications that are in the *Background* will be prevented.
-- If the value !!1!! is selected, the use of WWAN data by applications that are in the *Background* will be allowed.
+- If the value ***Disallow*** is selected, the use of WWAN data by applications that are in the *Background* will be prevented.
+- If the value ***Allow*** is selected, the use of WWAN data by applications that are in the *Background* will be allowed.
 
 
 **Detail Information:**
@@ -16237,8 +16245,8 @@ Select whether WWAN data can be used by applications that are in the *Background
 
 
 Select the Power Srate of the WWAN adapter.
-- If the value !!2!! is selected, the power to the WWAN adapter will be turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
-- If the value !!1!! is selected, the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
+- If the value ***Off*** is selected, the power to the WWAN adapter will be turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
+- If the value ***On*** is selected, the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
 
 
 **Detail Information:**
@@ -16278,16 +16286,16 @@ Select the SIM Card slot that will be used by the WWAN adapter.
 
 
 A given device may or may not support a WWAN Adapter. An attempt to configure the WWAN Adapter on a device that does not have one will result in an error. A given device may have a limited number of SIM Card slots. An attempt to configure the WWAN Adapter to use an unsupported SIM Card slot will result in an error. A given device may support a given SIM car slot, but that SIM car slot may not contain a SIM Card. An attempt to configure the WWAN Adapter to use a supported but unpopulated SIM Card slot will result in an error.
-- If the value !!1!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 1.
+- If the value ***Slot 1*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 1.
 
 
-- If the value !!2!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 2.
+- If the value ***Slot 2*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 2.
 
 
-- If the value !!3!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 3.
+- If the value ***Slot 3*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 3.
 
 
-- If the value !!4!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 4.
+- If the value ***Slot 4*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 4.
 
 
 **Detail Information:**
@@ -16319,9 +16327,9 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 
 Select whether a limit should be imposed on the amount of WWAN data used, such as to cap telecom expenses.
-- If the value !!1!! is selected, a default limit will be imposed on the amount of WWAN data that can be used.
-- If the value !!2!! is selected, a custom limit will be imposed on the amount of WWAN data that can be used and you must also specify %%steps.step.wwanStep.wwanDataLimitStateCustomLimit%% to provide the desired custom limit.
-- If the value !!3!! is selected, no limit will be imposed on the amount of WWAN data that can be used.
+- If the value ***Enable and set default limit*** is selected, a default limit will be imposed on the amount of WWAN data that can be used.
+- If the value ***Enable and set custom limit*** is selected, a custom limit will be imposed on the amount of WWAN data that can be used and you must also specify **Custom Limit** to provide the desired custom limit.
+- If the value ***Disable*** is selected, no limit will be imposed on the amount of WWAN data that can be used.
 
 
 **Detail Information:**
@@ -16355,7 +16363,7 @@ Select whether a limit should be imposed on the amount of WWAN data used, such a
 </span> <br><br>
 
 
-Enter a custom limit that should be imposed on the amount of WWAN data used, such as to cap telecom expenses, when the value !!2@steps.step.wwanStep.wwanDataLimitState!! is selected for %%steps.step.wwanStep.wwanDataLimitState%%.
+Enter a custom limit that should be imposed on the amount of WWAN data used, such as to cap telecom expenses, when the value ***Enable and set custom limit*** is selected for **Data Limit State**.
 
 
 The custom limit should be an integer value specifying the maximum amount of WWAN data that can be used, in megabytes (MB).
@@ -16427,10 +16435,10 @@ The threshold should be an integer value specifying the threshold amount of WWAN
 Select whether a Device User is allowed to use the in-device Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.
 
 
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. You can use this to ensure that configurations you have made related to usage of background data cannot be overridden by the Device User.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. You can use this to ensure that configurations you have made related to usage of background data cannot be overridden by the Device User.
 
 
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. This can be used to allow the Device User to override configurations related to usage of background data that you have made.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. This can be used to allow the Device User to override configurations related to usage of background data that you have made.
 
 
 **Detail Information:**
@@ -16467,10 +16475,10 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 Select whether a Device User is allowed to use the in-device Settings Menu to change limits on how much data can be communicated using the WWAN adapter.
 
 
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to ensure that configurations you have made related to to data limits cannot be overridden by the Device User.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to ensure that configurations you have made related to to data limits cannot be overridden by the Device User.
 
 
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to allow the Device User to override configurations related to data limits that you have made.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to allow the Device User to override configurations related to data limits that you have made.
 
 
 **Detail Information:**
@@ -16505,8 +16513,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 
 
 Select whether a Device User is allowed to use the in-device Settings Menu to change the *Power State* of the WWAN adapter.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change the *Power State* of the WWAN adapter. This can be used to ensure that the configurations related to the *Power State* of the WWAN adapter cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change the *Power State* of the WWAN adapter. This can be used to allow the Device User to override configurations related to the *Power State* of the WWAN adapter that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change the *Power State* of the WWAN adapter. This can be used to ensure that the configurations related to the *Power State* of the WWAN adapter cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change the *Power State* of the WWAN adapter. This can be used to allow the Device User to override configurations related to the *Power State* of the WWAN adapter that you have made.
 
 
 **Detail Information:**
@@ -16541,8 +16549,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 
 
 Select whether a Device User is allowed to use the in-device Settings Menu to select which SIM slot will be used by the WWAN adapter.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to ensure that configurations related to the SIM slot selection cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to allow the Device User to override configurations related to the SIM slot selection that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to ensure that configurations related to the SIM slot selection cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to allow the Device User to override configurations related to the SIM slot selection that you have made.
 
 
 **Detail Information:**
@@ -16577,8 +16585,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to se
 
 
 Select whether the WWAN adapter should be locked to a single Public Land Mobile Network Lock (PLMN).
-- If the value !!2!! is selected, the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and will be free to connect to any PLMN that is compatible with the SIM Card being used.
-- If the value !!1!! is selected, the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to connect to that PLMN. You must also specify %%steps.step.wwanStep.wwanPlmnLockValue%% to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
+- If the value ***Off*** is selected, the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and will be free to connect to any PLMN that is compatible with the SIM Card being used.
+- If the value ***On*** is selected, the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to connect to that PLMN. You must also specify **Value** to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
 
 
 **Detail Information:**
@@ -16609,7 +16617,7 @@ Select whether the WWAN adapter should be locked to a single Public Land Mobile 
 </span> <br><br>
 
 
-Enter the value that identifies the Public Land Mobile Network Lock (PLMN) to which the WWAN adapter should be locked when the value !!1@steps.step.wwanStep.wwanPlmnLock!! is selected for %%steps.step.wwanStep.wwanPlmnLock%%. to a single Public Land Mobile Network Lock (PLMN).
+Enter the value that identifies the Public Land Mobile Network Lock (PLMN) to which the WWAN adapter should be locked when the value ***On*** is selected for **Public Land Mobile Network Lock**. to a single Public Land Mobile Network Lock (PLMN).
 
 
 The value provided to identify a PLMN must specify both the Mobile Country Code (MCC) and the Mobile Network Code (MNC). Since all MCC values are three digits and MNC values can be 2 or 3 digits, the value provided must be of the format XXXYY or XXXYYY, where XXX is the three digit MCC value and YY or YYY is the 2 or 3 digit MNC value.
@@ -16642,8 +16650,8 @@ The value provided to identify a PLMN must specify both the Mobile Country Code 
 
 
 Select whether a Device User is allowed to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to ensure that configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to allow the Device User to override any configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to ensure that configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to allow the Device User to override any configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that you have made.
 
 
 **Detail Information:**
@@ -16680,10 +16688,10 @@ Select whether a Device User is allowed to control locking of the WWAN adapter t
 Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM Dual Standby (DSDS) Mode.
 
 
-- If the value !!2!! is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Single SIM Mode, which means that ONLY the Subscription for the currently selected SIM will be available for use. To use a different Subscription, a different SIM must be explicitly selected by specifying %%steps.step.wwanStep.wwanSimCardSlot%%.
+- If the value ***Off*** is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Single SIM Mode, which means that ONLY the Subscription for the currently selected SIM will be available for use. To use a different Subscription, a different SIM must be explicitly selected by specifying **SIM Card Slot**.
 
 
-- If the value !!1!! is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Dual SIM Dual Standby Mode, which means that two SIM Cards, if present, can be active at the same time. This can be beneficial if the Subscriptions for those SIMs have different performance, pricing, coverage, etc. The default behavior in Dual SIM Dual Standby Mode is for Incoming Voice Calls and Incoming Text Messages to be received using BOTH Subscriptions, Outgoing Voice Calls and Outgoing Text Messages to ask the Device User which Subscription to use, and Data Communications to use the Subscription for the primary SIM. You can also use the *Sub-group* %%steps.step.wwanStep.wwanDualSimDualStandbyFeatures%% to modify the default behavior of Dual SIM Dual Standby Mode.
+- If the value ***On*** is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Dual SIM Dual Standby Mode, which means that two SIM Cards, if present, can be active at the same time. This can be beneficial if the Subscriptions for those SIMs have different performance, pricing, coverage, etc. The default behavior in Dual SIM Dual Standby Mode is for Incoming Voice Calls and Incoming Text Messages to be received using BOTH Subscriptions, Outgoing Voice Calls and Outgoing Text Messages to ask the Device User which Subscription to use, and Data Communications to use the Subscription for the primary SIM. You can also use the *Sub-group* **DSDS Features** to modify the default behavior of Dual SIM Dual Standby Mode.
 
 
 **Detail Information:**
@@ -16748,8 +16756,8 @@ Use this *Sub-group* to configure Device Administrator (DA) Advanced Features as
 
 
 Select the Lock Action to be performed.
-- If the value !!1!! is selected, you must also specify %%wwanDaLockActionLockType%%, %%wwanDaLockActionLockUnlockCode%%, %%wwanDaLockActionLockUnlockRetryCount%%, and %%wwanDaLockActionLockNetworkList%% to provide the detail information required to perform the Lock. You must also specify %%wwanDaLockActionLockIccid%% if the value !!1@steps.step.wwanStep.wwanDaAdvancedFeatures.wwanDaLockActionLockType!! is selected for %%wwanDaLockActionLockType%%.
-If the value !!2!! is selected, you must also specify %%wwanDaLockActionLockType%% to identify the type of prior Lock to be Unlocked and you must also specify %%wwanDaLockActionLockUnlockCode%% to provide the same *Unlock Code* provided when the Lock was performed.
+- If the value ***Lock*** is selected, you must also specify **Lock Type**, **Lock Unlock Code**, **Lock Unlock Retry Count**, and **Lock Network List** to provide the detail information required to perform the Lock. You must also specify **Lock ICCID** if the value ***ICCID Lock*** is selected for **Lock Type**.
+If the value ***Unlock*** is selected, you must also specify **Lock Type** to identify the type of prior Lock to be Unlocked and you must also specify **Lock Unlock Code** to provide the same *Unlock Code* provided when the Lock was performed.
 
 
 **Detail Information:**
@@ -17027,10 +17035,10 @@ Use this *Sub-group* to configure Mobile Network Operator (MNO) Advanced Feature
 Select the Lock Action to be performed.
 
 
-- If the value !!1!! is selected, you must also specify %%wwanMnoLockActionLockActivationId%%, %%wwanMnoLockActionLockControlKey%%, %%wwanMnoLockActionLockNetworkList%%, and %%wwanMnoLockActionLockUnlockRetryCount%% to provide the detail information required to perform the Lock.
+- If the value ***Lock*** is selected, you must also specify **Lock Activation ID**, **Lock Control Key**, **Lock Network List**, and **Lock Unlock Retry Count** to provide the detail information required to perform the Lock.
 
 
-- If the value !!2!! is selected, you must also specify %%wwanMnoLockActionUnlockUnlockCode%% to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
+- If the value ***Unlock*** is selected, you must also specify **Unlock Unlock Code** to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
 
 
 **Detail Information:**
@@ -17392,8 +17400,8 @@ Use this *Group* to configure the Worry Free WiFi features in a device.
 
 
 Select the state of the Worry Free WiFi features in a device.
-- If the value !!0!! is selected, all Worry Free WiFi features will be turned off (disabled).
-- If the value !!1!! is selected, all Worry Free WiFi features will be turned on (enabled), but may or may not be usable, depending on other configuration performed.
+- If the value ***Off*** is selected, all Worry Free WiFi features will be turned off (disabled).
+- If the value ***On*** is selected, all Worry Free WiFi features will be turned on (enabled), but may or may not be usable, depending on other configuration performed.
 
 
 **Detail Information:**
@@ -17513,7 +17521,7 @@ Enter the Password Value required by the Device User to access the in-device UI 
 
 <a id="steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordState">
 
-###### Worry Free WiFi Configuration - Global Settings Temporary Password Allow
+###### Temporary Password Allow
 
 <span class="breadcrumbs">
 <font size="2">
@@ -17527,8 +17535,8 @@ Enter the Password Value required by the Device User to access the in-device UI 
 
 
 Select whether a Temporary Password feature will be Allowed or Disallowed.
-- If the value !!0!! is selected, the Temporary Password feature will NOT be Allowed and you do not need to specify any additional information.
-- If the value !!1!! is selected, the Temporary Password feature WILL be Allowed and you must also specify %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration%% and %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration%% to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
+- If the value ***Disallow*** is selected, the Temporary Password feature will NOT be Allowed and you do not need to specify any additional information.
+- If the value ***Allow*** is selected, the Temporary Password feature WILL be Allowed and you must also specify **Temporary Password Duration** and **Temporary Password Duration** to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
 
 
 **Detail Information:**
@@ -17550,7 +17558,7 @@ Select whether a Temporary Password feature will be Allowed or Disallowed.
 
 <a id="steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration">
 
-###### Worry Free WiFi Configuration - Global Settings Temporary Password Duration
+###### Temporary Password Duration
 
 <span class="breadcrumbs">
 <font size="2">
@@ -17630,8 +17638,8 @@ Enter a Temporary Password that can be shared with a Device User to provide temp
 
 
 Select whether the Device User can access in-device UI for configuring Worry Free WiFi features in a device.
-- If the value !!0!! is selected, the Device User will NOT be allowed to access in-device UI for configuring Worry Free WiFi features, even if they can enter the Password configured via %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiPassword%%.
-- If the value !!1!! is selected, the Device User will be allowed to access in-device UI for configuring Worry Free WiFi features, if they can enter the Password configured via %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiPassword%%.
+- If the value ***Disallow*** is selected, the Device User will NOT be allowed to access in-device UI for configuring Worry Free WiFi features, even if they can enter the Password configured via **Password Value**.
+- If the value ***Allow*** is selected, the Device User will be allowed to access in-device UI for configuring Worry Free WiFi features, if they can enter the Password configured via **Password Value**.
 
 
 **Detail Information:**
@@ -17666,9 +17674,9 @@ Select whether the Device User can access in-device UI for configuring Worry Fre
 
 
 Select the *Analysis Type* that will be used by the Worry Free WiFi features in a device.
-- If the value !!0!! is selected, Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to roaming.
-- If the value !!1!! is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to voice communications.
-- If the value !!2!! is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to establishing connections.
+- If the value ***Roam*** is selected, Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to roaming.
+- If the value ***Voice*** is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to voice communications.
+- If the value ***Connection*** is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to establishing connections.
 
 
 **Detail Information:**
@@ -17703,19 +17711,19 @@ Select the *Analysis Type* that will be used by the Worry Free WiFi features in 
 
 
 Select an Action to perform Worry Free WiFi features in a device.
-- If the value !!0!! is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to be specify some or all of the following:
-- %%steps.step.wfWiFiStep.wfWiFiActionStartServerAnalytics%% to specify whether Server Analytics should be performed for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartActivityMode%% to specify the Activity Mode for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartAnalysisSSID%% to specify the network for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartSessionName%% to specify the name for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartLoggerReportLevel%% to specify the Logger Report Level for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartPingType%% to specify the Ping Type for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType%% to specify the Remote Gateway Type for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayTypeCustomServerAddress%% to specify the Custom Server Address for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartSdCardStorage%% to specify how SD Card Storage will be used for the *Analysis Session*.
-- If the value !!1!! is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
-- If the value !!2!! is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
-- If the value !!3!! is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
+- If the value ***Start*** is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to be specify some or all of the following:
+- **Start Server Analytics** to specify whether Server Analytics should be performed for the *Analysis Session*.
+- **Start Analysis Mode** to specify the Activity Mode for the *Analysis Session*.
+- **Start Analysis SSID** to specify the network for the *Analysis Session*.
+- **Start Session Name** to specify the name for the *Analysis Session*.
+- **Start Logger Report Level** to specify the Logger Report Level for the *Analysis Session*.
+- **Start Ping Type** to specify the Ping Type for the *Analysis Session*.
+- **Start Remote Gateway Type** to specify the Remote Gateway Type for the *Analysis Session*.
+- **Custom Server Address** to specify the Custom Server Address for the *Analysis Session*.
+- **Start SD Card Storage** to specify how SD Card Storage will be used for the *Analysis Session*.
+- If the value ***Stop*** is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
+- If the value ***Clear*** is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
+- If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
 **Detail Information:**
@@ -17749,9 +17757,9 @@ Select an Action to perform Worry Free WiFi features in a device.
 </span> <br><br>
 
 
-Select whether Server Analytics should be performed during an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Server Analytics will NOT be performed during the *Analysis Session* that is started.
-- If the value !!1!! is selected, Server Analytics will be performed during the *Analysis Session* that is started.
+Select whether Server Analytics should be performed during an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Turn Off*** is selected, Server Analytics will NOT be performed during the *Analysis Session* that is started.
+- If the value ***Turn On*** is selected, Server Analytics will be performed during the *Analysis Session* that is started.
 
 
 **Detail Information:**
@@ -17785,9 +17793,9 @@ Select whether Server Analytics should be performed during an *Analysis Session*
 </span> <br><br>
 
 
-Select the Analysis Mode for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Active Analysis will be performed during the *Analysis Session* that is started.
-- If the value !!1!! is selected, Passive Analysis will be performed during the *Analysis Session* that is started.
+Select the Analysis Mode for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Active*** is selected, Active Analysis will be performed during the *Analysis Session* that is started.
+- If the value ***Passive*** is selected, Passive Analysis will be performed during the *Analysis Session* that is started.
 
 
 **Detail Information:**
@@ -17821,7 +17829,7 @@ Select the Analysis Mode for an *Analysis Session* started for the Worry Free Wi
 </span> <br><br>
 
 
-Enter the network that will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
+Enter the network that will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
 
 
 Note that if an *Analysis Session* is started for a network other than the currently configured network, the currently connected network will be disconnected so the specified network can be connected for use by the *Analysis Session*.
@@ -17856,7 +17864,7 @@ Note that if an *Analysis Session* is started for a network other than the curre
 </span> <br><br>
 
 
-Enter the name of the *Analysis Session* to be started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
+Enter the name of the *Analysis Session* to be started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
 
 
 
@@ -17893,10 +17901,10 @@ The name assigned to an *Analysis Session* can help to analyze exported data by 
 </span> <br><br>
 
 
-Select the Logger Report Level for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, all available data will be logged, including data that is informational as well as data related to warnings or errors that are detected.
-- If the value !!1!! is selected, only data that is related to warnings or errors that are detected will be logged.
-- If the value !!2!! is selected, only data that is related to errors that are detected will be logged.
+Select the Logger Report Level for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Info*** is selected, all available data will be logged, including data that is informational as well as data related to warnings or errors that are detected.
+- If the value ***Warning*** is selected, only data that is related to warnings or errors that are detected will be logged.
+- If the value ***Error*** is selected, only data that is related to errors that are detected will be logged.
 
 
 **Detail Information:**
@@ -17930,9 +17938,9 @@ Select the Logger Report Level for an *Analysis Session* started for the Worry F
 </span> <br><br>
 
 
-Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Pings sent during the *Analysis Session* that is started will include no data.
-- If the value !!1!! is selected, Pings sent during the *Analysis Session* that is started will include data.
+Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***No Data*** is selected, Pings sent during the *Analysis Session* that is started will include no data.
+- If the value ***Data Ping*** is selected, Pings sent during the *Analysis Session* that is started will include data.
 
 
 **Detail Information:**
@@ -17966,9 +17974,9 @@ Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi f
 </span> <br><br>
 
 
-Select the Type of Remote Gateway for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, the Default Remote Gateway will be used.
-- If the value !!1!! is selected, a custom Remote Gateway will be used and you must also specify %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayTypeCustomServerAddress%% to provide the desired custom Gateway Server Address.
+Select the Type of Remote Gateway for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Default*** is selected, the Default Remote Gateway will be used.
+- If the value ***Custom*** is selected, a custom Remote Gateway will be used and you must also specify **Custom Server Address** to provide the desired custom Gateway Server Address.
 
 
 **Detail Information:**
@@ -18002,7 +18010,7 @@ Select the Type of Remote Gateway for an *Analysis Session* started for the Worr
 </span> <br><br>
 
 
-Enter the Custom Remote Gateway Server Address for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%% and if the value !!1@steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType!! is selected for %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType%%.
+Enter the Custom Remote Gateway Server Address for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action** and if the value ***Custom*** is selected for **Start Remote Gateway Type**.
 
 
 **Detail Information:**
@@ -18034,10 +18042,10 @@ Enter the Custom Remote Gateway Server Address for an *Analysis Session* started
 </span> <br><br>
 
 
-Select how SD Card Storage will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
-- If the value !!1!! is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
-- *Deprecated:* If the value !!2!! is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
+Select how SD Card Storage will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Only Live Data*** is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
+- If the value ***Delete old Ping and Packet Data*** is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
+- *Deprecated:* If the value ***Delete Old Sessions(Deprecated)*** is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
 
 
 **Detail Information:**
@@ -18105,8 +18113,8 @@ Use this *Sub-group* to configure Settings that control the operation of Packet 
 
 
 Select whether Packet Capture will be performed by the Worry Free WiFi feature in a device.
-- If the value !!0!! is selected, the Packet Capture will NOT be performed. This can significantly decrease the load on the device and decrease battery drain, but will provide less data that can be used for troubleshooting.
-- If the value !!1!! is selected, the Packet Capture WILL be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting.
+- If the value ***Off*** is selected, the Packet Capture will NOT be performed. This can significantly decrease the load on the device and decrease battery drain, but will provide less data that can be used for troubleshooting.
+- If the value ***On*** is selected, the Packet Capture WILL be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting.
 
 
 **Detail Information:**
@@ -18141,7 +18149,7 @@ Select whether Packet Capture will be performed by the Worry Free WiFi feature i
 </span> <br><br>
 
 
-Enter the file name of the file into which Packet Capture data will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the file name of the file into which Packet Capture data will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -18174,7 +18182,7 @@ Enter the file name of the file into which Packet Capture data will be stored by
 </span> <br><br>
 
 
-Enter the maximum size of the file into which Packet Capture data (in megabytes) will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the maximum size of the file into which Packet Capture data (in megabytes) will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -18207,7 +18215,7 @@ Enter the maximum size of the file into which Packet Capture data (in megabytes)
 </span> <br><br>
 
 
-Enter the maximum amount of Packet Capture data (in megabytes) that will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the maximum amount of Packet Capture data (in megabytes) that will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -18240,9 +18248,9 @@ Enter the maximum amount of Packet Capture data (in megabytes) that will be stor
 </span> <br><br>
 
 
-Select the *Package Capture Type* that will be control the type of Packets that will be captured by the Worry Free WiFi features in a device when %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%% is used to enable Packet Capture.
-- If the value !!1!! is selected, Worry Free WiFi will only capture *Management Packets*.
-- If the value !!2!! is selected, Worry Free WiFi will capture ALL Packets, including Packets that might contain sensitive data.
+Select the *Package Capture Type* that will be control the type of Packets that will be captured by the Worry Free WiFi features in a device when **State** is used to enable Packet Capture.
+- If the value ***Management Only*** is selected, Worry Free WiFi will only capture *Management Packets*.
+- If the value ***All*** is selected, Worry Free WiFi will capture ALL Packets, including Packets that might contain sensitive data.
 
 
 **Detail Information:**
@@ -18310,8 +18318,8 @@ Use this *Sub-group* to configure Settings that control the operation of Coverag
 
 
 Select the *Scan Feature Type* that will control the type of Scanning that will be performed by Worry Free WiFi as part of *Coverage View* in a device.
-- If the value !!1!! is selected, Worry Free WiFi will perform full scanning as required to support *Coverage View*.
-- If the value !!2!! is selected, then Worry Free WiFi will perform more limited scanning.
+- If the value ***Coverage View*** is selected, Worry Free WiFi will perform full scanning as required to support *Coverage View*.
+- If the value ***Scan*** is selected, then Worry Free WiFi will perform more limited scanning.
 
 
 **Detail Information:**
@@ -18347,18 +18355,18 @@ Select the *Scan Feature Type* that will control the type of Scanning that will 
 
 
 Select an Action to perform for Coverage View.
-- If the value !!0!! is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to specify some or all of the following:
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartScanInterval%% to specify the Scan Interval to use for *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSsid%% to specify the SSID to use for *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartAutoReachabilityTest%% to specify whether an Auto Reachability Test should be performed as part of *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartAutoReachabilityTest%% to specify whether Server Analytics should be performed as part of *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSessionName%% to specify the Session Name to use for *Coverage View*.
+- If the value ***Start*** is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to specify some or all of the following:
+- **Start Scan Interval** to specify the Scan Interval to use for *Coverage View*.
+- **Start SSID** to specify the SSID to use for *Coverage View*.
+- **Start Auto Reachability Test** to specify whether an Auto Reachability Test should be performed as part of *Coverage View*.
+- **Start Auto Reachability Test** to specify whether Server Analytics should be performed as part of *Coverage View*.
+- **Start Session Name** to specify the Session Name to use for *Coverage View*.
 
 
-  - %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSessionName%% to specify whether SD Card Storage will be used for *Coverage View*.
-- If the value !!1!! is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
-- If the value !!2!! is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
-- If the value !!3!! is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
+  - **Start Session Name** to specify whether SD Card Storage will be used for *Coverage View*.
+- If the value ***Stop*** is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
+- If the value ***Clear*** is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
+- If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
 **Detail Information:**
@@ -18460,8 +18468,8 @@ Enter the *Scan Interval* to be used for Coverage View.
 
 
 Select whether an Auto Reachability Test should be performed as part of Coverage View.
-- If the value !!0!! is selected, then Worry Free WiFi will NOT perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
-- If the value !!1!! is selected, Worry Free WiFi will perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
+- If the value ***Off*** is selected, then Worry Free WiFi will NOT perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
+- If the value ***On*** is selected, Worry Free WiFi will perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
 
 
 **Detail Information:**
@@ -18496,9 +18504,9 @@ Select whether an Auto Reachability Test should be performed as part of Coverage
 </span> <br><br>
 
 
-Select whether Server Analytics should be performed by Worry Free WiFi as part of Coverage View when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
-- If the value !!0!! is selected, Worry Free WiFi will NOT perform Server Analytics as part of Coverage View.
-- If the value !!1!! is selected, Worry Free WiFi will perform Server Analytics as part of Coverage View.
+Select whether Server Analytics should be performed by Worry Free WiFi as part of Coverage View when the value ***Start*** is selected for **Action**.
+- If the value ***Off*** is selected, Worry Free WiFi will NOT perform Server Analytics as part of Coverage View.
+- If the value ***On*** is selected, Worry Free WiFi will perform Server Analytics as part of Coverage View.
 
 
 **Detail Information:**
@@ -18533,7 +18541,7 @@ Select whether Server Analytics should be performed by Worry Free WiFi as part o
 </span> <br><br>
 
 
-Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverage View when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
+Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverage View when the value ***Start*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -18566,10 +18574,10 @@ Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverag
 </span> <br><br>
 
 
-Select how SD Card Storage is used for an *Analysis Session* started as part of *Coverage View* for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
-- If the value !!0!! is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
-- If the value !!1!! is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
-- *Deprecated:* If the value !!2!! is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
+Select how SD Card Storage is used for an *Analysis Session* started as part of *Coverage View* for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Only Live Data*** is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
+- If the value ***Delete old Ping and Packet Data*** is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
+- *Deprecated:* If the value ***Delete old Sessions(Deprecated)*** is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
 
 
 **Detail Information:**
@@ -18632,11 +18640,11 @@ Use this *Group* to manage Zebra-issued licenses on a device.
 
 
 Select an Action to manage Zebra-issued licenses on a device.
-- If the value !!Activate!! is selected, a license will be activated, making it usable on the device. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerStandardClass%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomFriendlyName%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%%, and %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to define the license to be activated and how that license should be activated.
-- If the value !!Return!! is selected, a previously activated license will be returned, allowing it to be re-allocated for use on another device. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType%%, %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerTypeFriendlyName%%, and %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseAidValue%% to define the license to be returned and how that license should be returned.
-- If the value !!Reset!! is selected, all licenses previously activated from a given *License Server* will be returned, allowing them to be re-allocated for use on other devices. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType%% and %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerTypeFriendlyName%% to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
-- If the value !!Refresh!! is selected, a previously activated license will be refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionRefreshLicenseAidValue%% to provide the license to be refreshed.
-- If the value !!DeleteLicenseSource!! is selected, a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionDeleteServerFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* to be deleted.
+- If the value ***Activate License*** is selected, a license will be activated, making it usable on the device. You must also specify **Activate License Method**, **From Server AID Value**, **From Server Standard Class**, **From Server Custom Class**, **From Server Custom URL**, **From Server Custom Friendly Name**, **From Local File Path and Name**, and **From Local File Source Server Class** to define the license to be activated and how that license should be activated.
+- If the value ***Return License*** is selected, a previously activated license will be returned, allowing it to be re-allocated for use on another device. You must also specify **Return License Server Type**, **Friendly Name**, and **Return License AID Value** to define the license to be returned and how that license should be returned.
+- If the value ***Return All Licenses*** is selected, all licenses previously activated from a given *License Server* will be returned, allowing them to be re-allocated for use on other devices. You must also specify **Return All Licenses Server Type** and **Friendly Name** to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
+- If the value ***Refresh License*** is selected, a previously activated license will be refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc. You must also specify **Refresh License AID Value** to provide the license to be refreshed.
+- If the value ***Delete Server*** is selected, a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted. You must also specify **Delete Server Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* to be deleted.
 
 
 **Detail Information:**
@@ -18667,10 +18675,10 @@ Select an Action to manage Zebra-issued licenses on a device.
 </span> <br><br>
 
 
-Select the method that should be used to activate a Zebra-issued license a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the license will be activated from a Standard Server and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerStandardClass%% to provide the class of Standard Server via which the license will be activated and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%% to identify the license to be activated.
-- If the value !!2!! is chose, the license will be activated from a Custom Server and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%% to provide the class of Custom Server via which the license will be activated and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%% to identify the license to be activated. You may also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% depending on the value selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%%.
-- If the value !!3!! is selected, the license will be activated from a license file stored in the device file system and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%% and %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to provide the license file and the class of Server from which the license file was acquired.
+Select the method that should be used to activate a Zebra-issued license a device when the value ***Activate License*** is selected for **License Action**.
+- If the value ***From Server Standard*** is selected, the license will be activated from a Standard Server and you must also specify **From Server Standard Class** to provide the class of Standard Server via which the license will be activated and you must also specify **From Server AID Value** to identify the license to be activated.
+- If the value ***From Server Custom*** is chose, the license will be activated from a Custom Server and you must also specify **From Server Custom Class** to provide the class of Custom Server via which the license will be activated and you must also specify **From Server AID Value** to identify the license to be activated. You may also specify **From Server Custom URL** depending on the value selected for **From Server Custom Class**.
+- If the value ***From Local File*** is selected, the license will be activated from a license file stored in the device file system and you must also specify **From Local File Path and Name** and **From Local File Source Server Class** to provide the license file and the class of Server from which the license file was acquired.
 
 
 **Detail Information:**
@@ -18701,7 +18709,7 @@ Select the method that should be used to activate a Zebra-issued license a devic
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be activated on a device when the value ***Activate License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -18730,9 +18738,9 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Select the Class of Standard Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!1@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
-- If the value !!1!! is selected, the license will be activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet. The Production Server should be used when deploying licenses to devices for production use.
-- If the value !!2!! is selected, the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet. The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
+Select the Class of Standard Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Standard*** is selected for **Activate License Method**.
+- If the value ***Production Cloud Direct*** is selected, the license will be activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet. The Production Server should be used when deploying licenses to devices for production use.
+- If the value ***Test Cloud Direct*** is selected, the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet. The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
 
 
 **Detail Information:**
@@ -18763,11 +18771,11 @@ Select the Class of Standard Server via which a Zebra-issued license will be act
 </span> <br><br>
 
 
-Select the Class of Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
-- If the value !!1!! is selected, the license will be activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local Proxy Server* to be used.
-- If the value !!2!! is selected, the license will be activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local Proxy Server* to be used.
-- If the value !!3!! is selected, the license will be activated by communicating to a *Local License Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local License Server* to be used.
-- If the value !!4!! is selected, the license will be activated by communicating to some other Server. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the Server to be used.
+Select the Class of Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
+- If the value ***Production Cloud Proxy*** is selected, the license will be activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify **From Server Custom URL** to provide the *Local Proxy Server* to be used.
+- If the value ***Test Cloud Proxy*** is selected, the license will be activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify **From Server Custom URL** to provide the *Local Proxy Server* to be used.
+- If the value ***Local Direct*** is selected, the license will be activated by communicating to a *Local License Server*. You must also specify **From Server Custom URL** to provide the *Local License Server* to be used.
+- If the value ***Other*** is selected, the license will be activated by communicating to some other Server. You must also specify **From Server Custom URL** to provide the Server to be used.
 
 
 **Detail Information:**
@@ -18798,7 +18806,7 @@ Select the Class of Custom Server via which a Zebra-issued license will be activ
 </span> <br><br>
 
 
-Enter the URL of a Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
+Enter the URL of a Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
 
 
 **Detail Information:**
@@ -18827,7 +18835,7 @@ Enter the URL of a Custom Server via which a Zebra-issued license will be activa
 </span> <br><br>
 
 
-Enter a *Friendly Name* for a Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
+Enter a *Friendly Name* for a Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
 
 
 A *Friendly Name* is kept for each Custom Server used to acquire licenses and is used when later operating on such licenses to identify the Custom Server via which a license was acquired and hence via which it must be refreshed, returned, etc. The *Friendly Name* is also used to identify a Custom Server to be deleted.
@@ -18859,7 +18867,7 @@ A *Friendly Name* is kept for each Custom Server used to acquire licenses and is
 </span> <br><br>
 
 
-Enter the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to identify the class of Server from which the license file was acquired, which could impact how it is processed.
+Enter the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Local File*** is selected for **Activate License Method**. You must also specify **From Local File Source Server Class** to identify the class of Server from which the license file was acquired, which could impact how it is processed.
 
 
 **Detail Information:**
@@ -18888,7 +18896,7 @@ Enter the local path and file name of a license file in the device file system f
 </span> <br><br>
 
 
-Select the class of Server from which the license file to be activated was acquired when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and when the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%% and when %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%% is specified.
+Select the class of Server from which the license file to be activated was acquired when the value ***Activate License*** is selected for **License Action** and when the value ***From Local File*** is selected for **Activate License Method** and when **From Local File Path and Name** is specified.
 
 
 **Detail Information:**
@@ -18919,10 +18927,10 @@ Select the class of Server from which the license file to be activated was acqui
 </span> <br><br>
 
 
-Select the Type of Standard Server via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the license will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
-- If the value !!2!! is selected, the license will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
-- If the value !!3!! is selected, the license will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerTypeFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned.
+Select the Type of Standard Server via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value ***Return License*** is selected for **License Action**.
+- If the value ***Production Cloud Direct*** is selected, the license will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is selected, the license will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Server Friendly Name*** is selected, the license will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned.
 
 
 **Detail Information:**
@@ -18953,7 +18961,7 @@ Select the Type of Standard Server via which a Zebra-issued license was activate
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType!! was selected for %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType%%.
+Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value ***Return License*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return License Server Type**.
 
 
 **Detail Information:**
@@ -18982,7 +18990,7 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be returned on a device when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be returned on a device when the value ***Return License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -19011,10 +19019,10 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Select the Type of Standard Server via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value !!Reset@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the licenses will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
-- If the value !!2!! is selected, the licenses will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
-- If the value !!3!! is selected, the licenses will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerTypeFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.
+Select the Type of Standard Server via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value ***Return All Licenses*** is selected for **License Action**.
+- If the value ***Production Cloud Direct*** is selected, the licenses will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is selected, the licenses will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Server Friendly Name*** is selected, the licenses will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.
 
 
 **Detail Information:**
@@ -19045,7 +19053,7 @@ Select the Type of Standard Server via which a set of Zebra-issued licenses was 
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value !!Reset@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType!! was selected for %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType%%.
+Enter the *Friendly Name* that identifies the *Custom Server* via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value ***Return All Licenses*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return All Licenses Server Type**.
 
 
 **Detail Information:**
@@ -19074,7 +19082,7 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a set of
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be refreshed on a device when the value !!Refresh@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be refreshed on a device when the value ***Refresh License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -19103,7 +19111,7 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, when the value !!DeleteLicenseSource@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, when the value ***Delete Server*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -19159,6 +19167,8 @@ Use this *Sub-group* to configure the Analytics Client in a device.
 - Type = bundle
 
 
+details2 = steps.step.analyticsStep
+level3Items.size() = 2
 <a id="steps.step.analyticsStep.analyticsState">
 
 ### State
@@ -19177,8 +19187,8 @@ Select whether the Analytics Client on a device is turned on (enabled) or turned
 
 
 The Analytics Client is turned on (enabled) by default on all devices:
-- If the value !!2!! is selected, the Analytics Client will be turned off (disabled), and hence it will not collect any machine data during the operation of the device and will not deliver any machine data regardless of whether connectivity is available.
-- If the value !!1!! is selected, the Analytics Client will be turned on (enabled), and hence it will automatically collect machine data during the operation of the device and deliver it, when connectivity is available, to the Zebra Analytics Cloud Server.
+- If the value ***Off*** is selected, the Analytics Client will be turned off (disabled), and hence it will not collect any machine data during the operation of the device and will not deliver any machine data regardless of whether connectivity is available.
+- If the value ***On*** is selected, the Analytics Client will be turned on (enabled), and hence it will automatically collect machine data during the operation of the device and deliver it, when connectivity is available, to the Zebra Analytics Cloud Server.
 
 
 On some devices, the ability to turn off (disable) the Analytics Client may not be supported.
@@ -19216,8 +19226,8 @@ Select whether the the Device User will be allowed to control whether the Analyt
 
 
 The Analytics Client is turned on (enabled) by default on all devices:
-- If the value !!2!! is selected, the Device User will not be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
-- If the value !!1!! is selected, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
+- If the value ***Off*** is selected, the Device User will not be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
+- If the value ***On*** is selected, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
 
 
 **Detail Information:**
@@ -19263,6 +19273,8 @@ This *Group* is deprecated and will be discontinued in a subsequent version.
 
 **Support Information:**
 
+details2 = steps.step.appgalleryStep
+level3Items.size() = 6
 <a id="steps.step.appgalleryStep.appgalleryState">
 
 ### State
@@ -19478,6 +19490,8 @@ Use this *Group* to configure the audio settings on a device.
 - Supported from: MX 7.2.
 
 
+details2 = steps.step.audioStep
+level3Items.size() = 2
 <a id="steps.step.audioStep.audioReplicationAction">
 
 ### Replication Action
@@ -19495,10 +19509,10 @@ Use this *Group* to configure the audio settings on a device.
 Select the audio replication behavior of of a device.
 
 
-- If the value !!1!! is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
+- If the value ***Replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the Device User may walk away from a vehicle mounted device and leave his headset in the vehicle while performing some task nearby. If an audible alert is also routed to the built-in speaker, the Device User might still hear it.
 
 
-- If the value !!2!! is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
+- If the value ***Do not replicate headset audio on built-in speaker*** is selected, audio routed to the headset will also be routed to the built-in speaker. This might be desirable in a situation where the device is being used in an area where routing audio to the built-in speaker could be disruptive to others in the area.
 
 
 **Detail Information:**
@@ -19535,13 +19549,13 @@ Select the audio replication behavior of of a device.
 Select the mute and vibrate behavior of a device.
 
 
-- If the value !!1!! is selected, the volume will be muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
+- If the value ***Mute without Vibrate*** is selected, the volume will be muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
 
 
-- If the value !!2!! is selected, the volume will be muted (made silent) and the device will vibrate, permitting tactile but NOT audible alerts.
+- If the value ***Mute with Vibrate*** is selected, the volume will be muted (made silent) and the device will vibrate, permitting tactile but NOT audible alerts.
 
 
-- If the value !!3!! is selected, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts.
+- If the value ***Unmute without Vibrate*** is selected, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts.
 
 
 **Detail Information:**
@@ -19599,6 +19613,8 @@ Automatic triggering allows a Device User to initiate trigger-activated function
 - Supported from: MX 8.1.
 
 
+details2 = steps.step.autoTriggerStep
+level3Items.size() = 2
 <a id="steps.step.autoTriggerStep.autoTriggerState">
 
 ### State
@@ -19616,13 +19632,13 @@ Automatic triggering allows a Device User to initiate trigger-activated function
 Select whether and how automatic triggering should occur on a device.
 
 
-- If the value !!0!! is selected, automatic triggering will never occur and the Device User will be required to manually initiate trigger-activated functions.
+- If the value ***Off*** is selected, automatic triggering will never occur and the Device User will be required to manually initiate trigger-activated functions.
 
 
-- If the value !!1!! is selected, automatic triggering may occur automatically if the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
+- If the value ***Auto On*** is selected, automatic triggering may occur automatically if the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
 
-- If the value !!2!! is selected, automatic triggering can always occur automatically , whether the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
+- If the value ***Always On*** is selected, automatic triggering can always occur automatically , whether the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
 
 **Detail Information:**
@@ -19659,10 +19675,10 @@ Select whether and how automatic triggering should occur on a device.
 Select the range at which automatic triggering will detect the presence of an object and initiate automatic triggering.
 
 
-- If the value !!0!! is selected, automatic triggering will occur only when an object is brought within near proximity to the device sensor. This may be desirable if the device is being worn in a holster and hence it is convenient to bring objects very close to the device sensor.
+- If the value ***Near*** is selected, automatic triggering will occur only when an object is brought within near proximity to the device sensor. This may be desirable if the device is being worn in a holster and hence it is convenient to bring objects very close to the device sensor.
 
 
-- If the value !!1!! is selected, automatic triggering will occur when an object is brought within less near proximity to the device sensor. This may be desirable if the device is located in a stand or holder and hence it is less convenient to have to bring objects very close to the device sensor.
+- If the value ***Far*** is selected, automatic triggering will occur when an object is brought within less near proximity to the device sensor. This may be desirable if the device is located in a stand or holder and hence it is less convenient to have to bring objects very close to the device sensor.
 
 
 **Detail Information:**
@@ -19713,6 +19729,8 @@ Blacklisting applies only to System applications, which are applications built i
 - Type = bundle
 
 
+details2 = steps.step.blacklistStep
+level3Items.size() = 3
 <a id="steps.step.blacklistStep.blacklistAction">
 
 ### Action
@@ -19743,8 +19761,8 @@ Since a built-in System Application is built-in, you cannot uninstall it from a 
 
 
 To prevent the use of a built-in System Application, you can disable it and thereby prevent its use, even though it remains installed.
-- If the value !!EnableApplication!! is selected, you must also specify %%steps.step.blacklistStep.blacklistActionAllowSystemPackageName%% to provide the *Android Package Name* that identifies the *Built-In System Application* to be allowed.
-- If the value !!DisableApplication!! is selected, you must also specify %%steps.step.blacklistStep.blacklistActionDisallowSystemPackageName%% to provide the *Android Package Name* that identifies the *Built-In System Application* to be disallowed.
+- If the value ***Allow*** is selected, you must also specify **Allow System Package Name** to provide the *Android Package Name* that identifies the *Built-In System Application* to be allowed.
+- If the value ***Disallow*** is selected, you must also specify **Disallow System Package Name** to provide the *Android Package Name* that identifies the *Built-In System Application* to be disallowed.
 
 
 **Detail Information:**
@@ -19775,7 +19793,7 @@ To prevent the use of a built-in System Application, you can disable it and ther
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies a *Built-In System Application* to be allowed when the Action value !!EnableApplication!! is selected for %%steps.step.blacklistStep.blacklistAction%%.
+Enter the *Android Package Name* that identifies a *Built-In System Application* to be allowed when the Action value ***Allow*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -19804,7 +19822,7 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies a *Built-In System Application* to be disallowed when the Action value !!DisableApplication!! is selected for %%steps.step.blacklistStep.blacklistAction%%.
+Enter the *Android Package Name* that identifies a *Built-In System Application* to be disallowed when the Action value ***Disallow*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -19854,6 +19872,8 @@ Use this *Sub-group* to configure Bluetooth settings on a device.
 - Supported from: MX 5.1.
 
 
+details2 = steps.step.bluetoothStep
+level3Items.size() = 10
 <a id="steps.step.bluetoothStep.bluetoothDiscoverability">
 
 ### Discoverability
@@ -19872,8 +19892,8 @@ Select whether the device is *Discoverable* via Bluetooth.
 
 
 Devices are NOT *Discoverable* via Bluetooth by default except when the Bluetooth Pairing screen of the Settings UI is active.
-- If the value !!2!! is selected, the default behavior will be in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
-- If the value !!1!! is selected, the default behavior will be overridden and the device will be *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
+- If the value ***Off*** is selected, the default behavior will be in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
+- If the value ***On*** is selected, the default behavior will be overridden and the device will be *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
 
 
 
@@ -19913,8 +19933,8 @@ Select whether the device will accept new Bluetooth Pairings.
 
 
 devices will accept new Bluetooth Pairings by default.
-- If the value !!2!! is selected, the default behavior will be overridden and the device will not accept new Bluetooth Pairings.
-- If the value !!1!! is selected, the default behavior will be in effect and the device will accept new Bluetooth Pairings.
+- If the value ***Disallow*** is selected, the default behavior will be overridden and the device will not accept new Bluetooth Pairings.
+- If the value ***Allow*** is selected, the default behavior will be in effect and the device will accept new Bluetooth Pairings.
 
 
 **Detail Information:**
@@ -19952,11 +19972,11 @@ Select whether the device can silently perform Bluetooth pairings
 
 
 Devices will silently perform Bluetooth Pairings by default.
-- If the value !!1!! is selected, the default behavior will be overridden and the device can not silently perform Bluetooth Pairings.
-- If the value !!2!! is selected, the default behavior will be in effect and the device can silently perform Bluetooth Pairings.
+- If the value ***Disallow*** is selected, the default behavior will be overridden and the device can not silently perform Bluetooth Pairings.
+- If the value ***Allow*** is selected, the default behavior will be in effect and the device can silently perform Bluetooth Pairings.
 
 
-Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless %%steps.step.bluetoothStep.bluetoothAction%% is used to configure specific silent pairing rules that define how silent pairing should occur.
+Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless **Action** is used to configure specific silent pairing rules that define how silent pairing should occur.
 
 
 **Detail Information:**
@@ -19997,14 +20017,14 @@ Bluetooth *Silent Pairing* allows new Bluetooth Pairings to be automatically com
 
 
 Since the list of rules is empty by default on devices, Bluetooth *Silent Pairing* is disabled by default, hence all new Bluetooth Pairings will occur manually and thus will require Device User interaction to complete . Once one or more rules are added, new pairings to selected peripheral devices identified by these rules will be allowed to occur automatically while all new other new pairings will continue to occur manually.
-- If the value !!1!! is selected:
-    - You must also specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%%, to provide the name of the new rule to be added or %%steps.step.bluetoothStep.bluetoothActionAddRuleMACAddress%%, to provide the Bluetooth MAC Address of the new rule to be added.
-    - You must also specify %%steps.step.bluetoothStep.bluetoothActionAddRuleDeviceClass%% or %%steps.step.bluetoothStep.bluetoothActionAddRuleUpperAddressPart%% to provide the criteria that the new rule will use to determine which new Bluetooth Pairings will be allowed.
-- If the value !!2!! is selected, you must specify at least one of the following to provide the information that will be used to determine which rule or rules, which have matching information, will be removed:
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleName%%, to provide the name of the existing rule to be removed or %%steps.step.bluetoothStep.bluetoothActionRemoveRuleMACAddress%% to provide the Bluetooth MAC Address of the existing rule to be removed
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleDeviceClass%%
-    - %%steps.step.bluetoothStep.bluetoothActionRemoveRuleUpperAddressPart%%
-- If the value !!3!! is selected, you do not need to specify any additional information.
+- If the value ***AddRule*** is selected:
+    - You must also specify **Add Rule Name**, to provide the name of the new rule to be added or **Add Rule MAC Address**, to provide the Bluetooth MAC Address of the new rule to be added.
+    - You must also specify **Add Rule Device Class** or **Add Rule Device Upper Address Part** to provide the criteria that the new rule will use to determine which new Bluetooth Pairings will be allowed.
+- If the value ***RemoveRule*** is selected, you must specify at least one of the following to provide the information that will be used to determine which rule or rules, which have matching information, will be removed:
+    - **Remove Rule Name**, to provide the name of the existing rule to be removed or **Remove Rule MAC Address** to provide the Bluetooth MAC Address of the existing rule to be removed
+    - **Remove Rule Device Class**
+    - **Remove Rule Device Upper Address Part**
+- If the value ***RemoveAllRules*** is selected, you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -20038,12 +20058,12 @@ Since the list of rules is empty by default on devices, Bluetooth *Silent Pairin
 </span> <br><br>
 
 
-Enter a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 
 
-Note that you can specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%% or %%steps.step.bluetoothStep.bluetoothActionAddRuleMACAddress%%, but not both.
+Note that you can specify **Add Rule Name** or **Add Rule MAC Address**, but not both.
 
 
 **Detail Information:**
@@ -20075,7 +20095,7 @@ Note that you can specify %%steps.step.bluetoothStep.bluetoothActionAddRuleName%
 </span> <br><br>
 
 
-Enter the *Device Class* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Class* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Class*.
@@ -20110,7 +20130,7 @@ When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will a
 </span> <br><br>
 
 
-Enter the *Device Upper Address Part* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!1!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Upper Address Part* for a new rule to be added to the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***AddRule*** is selected for **Action**.
 
 
 When a *Device Upper Address Part* is specified for a rule, Bluetooth *Silent Pairing* will automatically complete new Bluetooth Pairings for Bluetooth devices that have the specified *Device Upper Address Part* in the upper part of their *Bluetooth Address*.
@@ -20145,7 +20165,7 @@ When a *Device Upper Address Part* is specified for a rule, Bluetooth *Silent Pa
 </span> <br><br>
 
 
-Enter the name that identifies an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the name that identifies an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**.
 
 
 
@@ -20155,7 +20175,7 @@ Any existing rule that has the specified name will be removed.
 
 
 
-Note that you can specify %%steps.step.bluetoothStep.bluetoothActionRemoveRuleName%% or %%steps.step.bluetoothStep.bluetoothActionRemoveRuleMACAddress%%, but not both.
+Note that you can specify **Remove Rule Name** or **Remove Rule MAC Address**, but not both.
 
 
 **Detail Information:**
@@ -20187,7 +20207,7 @@ Note that you can specify %%steps.step.bluetoothStep.bluetoothActionRemoveRuleNa
 </span> <br><br>
 
 
-Enter the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%
+Enter the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**
 
 
 
@@ -20224,7 +20244,7 @@ Any existing rule or rules that have the specified *Device Class* will be remove
 </span> <br><br>
 
 
-Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value !!2!! is selected for %%steps.step.bluetoothStep.bluetoothAction%%.
+Enter the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Silent Pairing* when the Action value ***RemoveRule*** is selected for **Action**.
 
 Any existing rule or rules that have the specified *Device Upper Address Part* will be removed.
 
@@ -20279,6 +20299,8 @@ Use this *Sub-group* to configure Bug Reporting on a device.
 - Supported from: MX 8.1.
 
 
+details2 = steps.step.bugreportStep
+level3Items.size() = 11
 <a id="steps.step.bugreportStep.bugreportBugReportProfile">
 
 ### Extensions State
@@ -20294,8 +20316,8 @@ Use this *Sub-group* to configure Bug Reporting on a device.
 
 
 Select whether the Standard Android or Zebra Extended Bug Reporting should be used for generation of Bug Reports from a device.
-- If the value !!old!! is selected, Standard Android Bug Reporting will be used, with no Zebra Extensions or Enhancements.
-- If the value !!new!! is selected, Zebra Extended Bug Reporting. You may also need to specify additional configuration with the Group to configure the desired behavior and options of Zebra Extended Bug Reporting.
+- If the value ***Off*** is selected, Standard Android Bug Reporting will be used, with no Zebra Extensions or Enhancements.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting. You may also need to specify additional configuration with the Group to configure the desired behavior and options of Zebra Extended Bug Reporting.
 
 
 **Detail Information:**
@@ -20330,8 +20352,8 @@ Select whether the Standard Android or Zebra Extended Bug Reporting should be us
 
 
 Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be initiated by an application by sending a broadcast intent with an action value of *com.symbol.mxmf.intent.START_FOR_BUG_REPORT*. This is meaningful only when Zebra Extended Bug Reporting is enabled.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting, if enabled, will not initiate a Bug Report when the defined intent is received.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting, if enabled, will not initiate a Bug Report when the defined intent is received.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received.
 
 
 **Detail Information:**
@@ -20366,8 +20388,8 @@ Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be 
 
 
 Select whether the Zebra Extended Bug Reporting should be allowed to capture screenshots and attach them to Bug Reports.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting, if enabled, will not capture Bug Reports nor attach them to Bug Reports.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting, if enabled, will not capture Bug Reports nor attach them to Bug Reports.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports.
 
 
 **Detail Information:**
@@ -20402,8 +20424,8 @@ Select whether the Zebra Extended Bug Reporting should be allowed to capture scr
 
 
 Select whether Zebra Extended Bug Reporting should display an option to initiate a Bug Report in the menu which appears after long-pressing the power key on the device.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT add an option to the menu.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, will add an option to the menu.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT add an option to the menu.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, will add an option to the menu.
 
 
 **Detail Information:**
@@ -20438,9 +20460,9 @@ Select whether Zebra Extended Bug Reporting should display an option to initiate
 
 
 Select whether Zebra Extended Bug Reporting should watch for the occurrence of Application Not Responding (ANR) errors and take action when they are detected.
-- If the value !!NoCapture!! is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of ANR errors, and hence will take no action if they occur.
-- If the value !!CaptureBR!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Bug Report each time it detects that one has occurred.
-- If the value !!CaptureLogcat!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Logcat capture each time it detects that one has occurred.
+- If the value ***Do not capture*** is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of ANR errors, and hence will take no action if they occur.
+- If the value ***Capture bug report*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Bug Report each time it detects that one has occurred.
+- If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of ANR errors, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
 **Detail Information:**
@@ -20475,9 +20497,9 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of A
 
 
 Select whether Zebra Extended Bug Reporting should watch for the occurrence of Unexpected Application Errors (UAEs) and take action when they are detected.
-- If the value !!NoCapture!! is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of UAEs, and hence will take no action if they occur.
-- If the value !!CaptureBR!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Bug Report each time it detects that one has occurred.
-- If the value !!CaptureLogcat!! is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Logcat capture each time it detects that one has occurred.
+- If the value ***Do not capture*** is selected, Zebra Extended Bug Reporting will NOT watch for the occurrence of UAEs, and hence will take no action if they occur.
+- If the value ***Capture bug report*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Bug Report each time it detects that one has occurred.
+- If the value ***Capture logcat log*** is selected, Zebra Extended Bug Reporting will watch for the occurrence of UAEs, and will automatically initiate a Logcat capture each time it detects that one has occurred.
 
 
 **Detail Information:**
@@ -20545,8 +20567,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically send copies of generated Bug Reports to the Zebra Cloud Server.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports to the Zebra Cloud Server.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will send copies of all generated Bug Reports to the Zebra Cloud Server.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports to the Zebra Cloud Server.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of all generated Bug Reports to the Zebra Cloud Server.
 
 
 **Detail Information:**
@@ -20582,8 +20604,8 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 
 
 Enter a timeout value, the expiration of which will cause the sending Bug Reports to the Zebra Cloud Server to automatically cease.
-- If the value !!0!! is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportCloudDetails%%, Zebra Extended Bug Reporting will continue to send Bug Reports to the Zebra Cloud Server, until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportCloudDetails%%, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports to the Zebra Cloud Server when the timer expires, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send to Cloud Detail**, Zebra Extended Bug Reporting will continue to send Bug Reports to the Zebra Cloud Server, until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send to Cloud Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports to the Zebra Cloud Server when the timer expires, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -20651,8 +20673,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT store copies of generated Bug Reports in the device.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will store copies of generated Bug Reports in the device.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT store copies of generated Bug Reports in the device.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will store copies of generated Bug Reports in the device.
 
 
 **Detail Information:**
@@ -20687,7 +20709,7 @@ Select whether Zebra Extended Bug Reporting should automatically store copies of
 </span> <br><br>
 
 
-Enter the path where Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device when the value !!True@steps.step.bugreportStep.bugreportStorageDetails.bugreportStorageEnable!! is selected for %%steps.step.bugreportStep.bugreportStorageDetails.bugreportStorageEnable%%.
+Enter the path where Zebra Extended Bug Reporting should automatically store copies of generated Bug Reports in the device when the value ***On*** is selected for **State**.
 
 
 Note that either fixed or removable storage are supported, but the specified path must be valid at the time Bug Report is generated. If no path is specified, bug reports are stored in /storage/sdcard0/BugReports/, which will always be a valid path for storage of Bug Reports on all devices.
@@ -20724,8 +20746,8 @@ Note that either fixed or removable storage are supported, but the specified pat
 
 
 Enter a timeout value, the expiration of which will cause the storing of Bug Reports in the device to automatically cease.
-- If the value !!0!! is selected, and when Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group %%steps.step.bugreportStep.bugreportStorageDetails%%, Zebra Extended Bug Reporting will continue to store Bug Reports in the device until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group %%steps.step.bugreportStep.bugreportStorageDetails%%, a timer will be started for the specified timeout value and when that timer expires, Zebra Extended Bug Reporting will cease storing Bug Reports in the device, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and when Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group **Store in Device Detail**, Zebra Extended Bug Reporting will continue to store Bug Reports in the device until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to store Bug Reports in the device via the Group **Store in Device Detail**, a timer will be started for the specified timeout value and when that timer expires, Zebra Extended Bug Reporting will cease storing Bug Reports in the device, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -20793,8 +20815,8 @@ Use this *Sub-group* to configure whether copies of generated Bug Reports will b
 
 
 Select whether Zebra Extended Bug Reporting should automatically send copies of generated Bug Reports via email.
-- If the value !!False!! is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports via email.
-- If the value !!True!! is selected, Zebra Extended Bug Reporting, if enabled, will send copies of generated Bug Reports via email. You should also specify additional information to provide the details of the email to be sent.
+- If the value ***Off*** is selected, Zebra Extended Bug Reporting will NOT send copies of generated Bug Reports via email.
+- If the value ***On*** is selected, Zebra Extended Bug Reporting, if enabled, will send copies of generated Bug Reports via email. You should also specify additional information to provide the details of the email to be sent.
 
 
 **Detail Information:**
@@ -20829,7 +20851,7 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 </span> <br><br>
 
 
-Enter the address or host name of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%%.
+Enter the address or host name of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State**.
 
 
 Note that you must have access to an email account on the selected SMTP Server and you must specify additional configuration within the Group to configure Zebra Extended Bug Reporting to send emails via that SMTP Server. In addition, you must have access to a valid email account to use as the destination of the emails, which is NOT required to be on the same SMTP Server, and must specify details of the email address within the Group, to configure Zebra Extended Bug Reporting to send the emails to that destination.
@@ -20865,7 +20887,7 @@ Note that you must have access to an email account on the selected SMTP Server a
 </span> <br><br>
 
 
-Enter the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports when %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%% is specified.
+Enter the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports when **SMTP Host** is specified.
 
 
 **Detail Information:**
@@ -20898,10 +20920,10 @@ Enter the TCP port number of the SMTP (email) Server via which emails will be se
 </span> <br><br>
 
 
-Enter the ID of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%% and when a valid SMTP (email) Server is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%%.
+Enter the ID of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State** and when a valid SMTP (email) Server is specified via **SMTP Host**.
 
 
-Note that you must have access to a valid email account on the configured SMTP (email) Server and must specify additional information in the Group, such as %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSendersPassword%% to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server.
+Note that you must have access to a valid email account on the configured SMTP (email) Server and must specify additional information in the Group, such as **Sender Password** to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server.
 
 
 **Detail Information:**
@@ -20934,7 +20956,7 @@ Note that you must have access to a valid email account on the configured SMTP (
 </span> <br><br>
 
 
-Enter the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%% and a valid SMTP (email) Server is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSMTPHost%% and a valid email address is specified via %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailSendersID%%.
+Enter the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State** and a valid SMTP (email) Server is specified via **SMTP Host** and a valid email address is specified via **Sender ID**.
 
 
 **Detail Information:**
@@ -20967,7 +20989,7 @@ Enter the password of the email account that will be used as the source (from ad
 </span> <br><br>
 
 
-Enter the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value !!True@steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable!! is selected for %%steps.step.bugreportStep.bugreportEmailDetails.bugreportEmailEnable%%.
+Enter the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -21001,8 +21023,8 @@ Enter the email address of the email account that will be used as the destinatio
 
 
 Enter a timeout value, the expiration of which will cause the sending of Bug Reports via email to automatically cease.
-- If the value !!0!! is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group %%steps.step.bugreportStep.bugreportEmailDetails%%, Zebra Extended Bug Reporting will continue to send Bug Reports via email, until the configuration is explicitly changed again.
-- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports via email via the Group %%steps.step.bugreportStep.bugreportEmailDetails%%, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports via email when the timer expires, until the configuration is explicitly changed again.
+- If the value ***Never Expire*** is selected, and Zebra Extended Bug Reporting is configured to send Bug Reports to the Zebra Cloud Server via the Group **Send Via Email Detail**, Zebra Extended Bug Reporting will continue to send Bug Reports via email, until the configuration is explicitly changed again.
+- If any other value is selected, at the time Zebra Extended Bug Reporting is configured to send Bug Reports via email via the Group **Send Via Email Detail**, Zebra Extended Bug Reporting will start a timer from the specified timeout value and will cease sending Bug Reports via email when the timer expires, until the configuration is explicitly changed again.
 
 
 **Detail Information:**
@@ -21104,10 +21126,10 @@ Use this *Sub-group* to define a single element of a dialog the Device User will
 
 
 Select the type of a single dialog element being included in the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
-- If the value !!AddErrorNameTextBox!! is selected, a text box will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeErrorNameTextBoxText%% to provide a text to be pre-populated into the text box.
-- If the value !!AddLabel!! is selected, a text label will be added to the dialog presented to the Device User. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeLabelText%% to provide the text to be populated into the label.
-- If the value !!AddTextBox!! is selected, a text box will be added to the dialog presented to the Device User in which generic text can be entered. You must also specify %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementTypeTextBoxText%% to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
-- If the value !!AddVoiceRecordButton!! is selected, a voice record button will be added to the dialog presented to the Device User. Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.
+- If the value ***ErrorNameTextBox*** is selected, a text box will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered. You must also specify **Error Name Text Box Text** to provide a text to be pre-populated into the text box.
+- If the value ***Label*** is selected, a text label will be added to the dialog presented to the Device User. You must also specify **Label Text** to provide the text to be populated into the label.
+- If the value ***TextBox*** is selected, a text box will be added to the dialog presented to the Device User in which generic text can be entered. You must also specify **Text Box Text** to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
+- If the value ***VoiceRecordButton*** is selected, a voice record button will be added to the dialog presented to the Device User. Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.
 
 
 **Detail Information:**
@@ -21143,7 +21165,7 @@ Select the type of a single dialog element being included in the dialog that wil
 </span> <br><br>
 
 
-Enter the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified when the value !!AddErrorNameTextBox@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%.
+Enter the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified when the value ***ErrorNameTextBox*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -21177,7 +21199,7 @@ Enter the text to be pre-populated into a text box that will be added to the dia
 </span> <br><br>
 
 
-Enter the text of a label that will be added to the dialog presented to the Device User when the value !!AddLabel@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%.
+Enter the text of a label that will be added to the dialog presented to the Device User when the value ***Label*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -21211,7 +21233,7 @@ Enter the text of a label that will be added to the dialog presented to the Devi
 </span> <br><br>
 
 
-Enter the text that be pre-populated into a text box added to the dialog presented to the Device User into which generic text can be entered and should be specified when the value !!AddTextBox@steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType!! is selected for %%steps.step.bugreportStep.bugreportDialogElements.bugreportDialogElement.bugreportDialogElementType%%. The specified text should provide guidance to the Device User about the value they should enter and will be overwritted by the value entered into the text box.
+Enter the text that be pre-populated into a text box added to the dialog presented to the Device User into which generic text can be entered and should be specified when the value ***TextBox*** is selected for **Type**. The specified text should provide guidance to the Device User about the value they should enter and will be overwritted by the value entered into the text box.
 
 
 **Detail Information:**
@@ -21296,6 +21318,8 @@ Use this *Sub-group* to configure which camera(s) or other image capture devices
 - Supported from: MX 4.3.
 
 
+details2 = steps.step.cameraStep
+level3Items.size() = 3
 <a id="steps.step.cameraStep.cameraUseOfBack">
 
 ### Use Of Back Camera
@@ -21311,8 +21335,8 @@ Use this *Sub-group* to configure which camera(s) or other image capture devices
 
 
 Select whether the Rear Facing Camera, if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
 
 
 **Detail Information:**
@@ -21347,8 +21371,8 @@ Select whether the Rear Facing Camera, if present on a device, can be used to ta
 
 
 Select whether the Front Facing (selfie) Camera, if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
 
 
 **Detail Information:**
@@ -21383,8 +21407,8 @@ Select whether the Front Facing (selfie) Camera, if present on a device, can be 
 
 
 Select whether the Imager (special-purpose image capture device), if present on a device, can be used to take pictures.
-- If the value !!2!! is selected, no applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
-- If the value !!1!! is selected, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
+- If the value ***Off*** is selected, no applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
+- If the value ***On*** is selected, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
 
 
 **Detail Information:**
@@ -21421,7 +21445,7 @@ Select whether the Imager (special-purpose image capture device), if present on 
 </span> <br><br>
 
 
-Use this *Group* to configure the operation and state of the clock on a device.
+Use this *Sub-group* to configure Time Mode, Manual Date, Manual Time, Auto NTP Server Address, Auto NTP Sync Interval, Time Zone Mode, Zone, and Time Format.
 
 
 **Detail Information:**
@@ -21431,6 +21455,8 @@ Use this *Group* to configure the operation and state of the clock on a device.
 - Type = bundle
 
 
+details2 = steps.step.clockStep
+level3Items.size() = 8
 <a id="steps.step.clockStep.clockTimeMode">
 
 ### Time Mode
@@ -21476,7 +21502,7 @@ Select whether time and date configuration will be performed explicitly, through
 </span> <br><br>
 
 
-Enter the date to be set on a device when the value !!false@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the date to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -21505,7 +21531,7 @@ Enter the date to be set on a device when the value !!false@steps.step.clockStep
 </span> <br><br>
 
 
-Enter the time to be set on a device when the value !!false@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the time to be set on a device when the value ***Manual*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -21534,7 +21560,7 @@ Enter the time to be set on a device when the value !!false@steps.step.clockStep
 </span> <br><br>
 
 
-Enter the address of the Network Time Protocol (NTP) Server to be used to perform automatic date and time configuration on a device when the value !!true@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the address of the Network Time Protocol (NTP) Server to be used to perform automatic date and time configuration on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -21563,7 +21589,7 @@ Enter the address of the Network Time Protocol (NTP) Server to be used to perfor
 </span> <br><br>
 
 
-Enter the interval at which automatic date and time configuration will be performed on a device when the value !!true@steps.step.clockStep.clockTimeMode!! is selected for %%steps.step.clockStep.clockTimeMode%%.
+Enter the interval at which automatic date and time configuration will be performed on a device when the value ***Auto*** is selected for **Time Mode**.
 
 
 **Detail Information:**
@@ -21625,7 +21651,7 @@ Select whether time zone configuration will be performed explicitly, using other
 </span> <br><br>
 
 
-Enter the time zone to be set on a device when the value !!false@steps.step.clockStep.clockTimeZoneMode!! is selected for %%steps.step.clockStep.clockTimeZoneMode%%.
+Enter the time zone to be set on a device when the value ***Manual*** is selected for **Time Zone Mode**.
 
 
 **Detail Information:**
@@ -21654,7 +21680,7 @@ Enter the time zone to be set on a device when the value !!false@steps.step.cloc
 </span> <br><br>
 
 
-Select whether the format in which time will be displayed on the device will be in !!2!! hour (AM/PM) or !!1!! hour (military) format.
+Select whether the format in which time will be displayed on the device will be in ***12*** hour (AM/PM) or ***24*** hour (military) format.
 
 
 **Detail Information:**
@@ -21706,6 +21732,8 @@ DHCP Options are variable-length strings that are identified by DHCP Options Num
 - Type = bundle
 
 
+details2 = steps.step.dhcpStep
+level3Items.size() = 26
 <a id="steps.step.dhcpStep.dhcpRequestBootFileName">
 
 ### Request Boot File Name (Option 67)
@@ -22031,8 +22059,8 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 Select whether the DHCP Client on a device will send a *Client Identifier* to the DHCP Server using *DHCP Option 61* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendClientIdentifierState%% to provide the value of the *Client Identifier* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Client Identifier State (Option 61)** to provide the value of the *Client Identifier* to be sent.
 
 
 **Detail Information:**
@@ -22063,7 +22091,7 @@ Select whether the DHCP Client on a device will send a *Client Identifier* to th
 </span> <br><br>
 
 
-Enter the *Client Identifier* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendClientIdentifierState!! is selected for %%steps.step.dhcpStep.dhcpSendClientIdentifierState%%.
+Enter the *Client Identifier* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Client Identifier State (Option 61)**.
 
 
 **Detail Information:**
@@ -22093,8 +22121,8 @@ Enter the *Client Identifier* that the DHCP Client on a device will send to the 
 
 
 Select whether the DHCP Client on a device will send a *Host Name* to the DHCP Server using *DHCP Option 12* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendHostNameValue%% to provide the value of the *Host Name* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Host Name Value (Option 12)** to provide the value of the *Host Name* to be sent.
 
 
 **Detail Information:**
@@ -22125,7 +22153,7 @@ Select whether the DHCP Client on a device will send a *Host Name* to the DHCP S
 </span> <br><br>
 
 
-Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendHostNameState!! is selected for %%steps.step.dhcpStep.dhcpSendHostNameState%%.
+Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 12* when requesting an IP Address when the value ***On*** is selected for **Send Host Name State (Option 12)**.
 
 
 **Detail Information:**
@@ -22155,8 +22183,8 @@ Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Ser
 
 
 Select whether the DHCP Client on a device will send a *User Class* to the DHCP Server using *DHCP Option 77* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendUserClassValue%% to provide the value of the *User Class* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send User Class Value (Option 77)** to provide the value of the *User Class* to be sent.
 
 
 **Detail Information:**
@@ -22187,7 +22215,7 @@ Select whether the DHCP Client on a device will send a *User Class* to the DHCP 
 </span> <br><br>
 
 
-Enter the *User Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 77* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendUserClassState!! is selected for %%steps.step.dhcpStep.dhcpSendUserClassState%%.
+Enter the *User Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 77* when requesting an IP Address when the value ***On*** is selected for **Send User Class State (Option 77)**.
 
 
 **Detail Information:**
@@ -22217,8 +22245,8 @@ Enter the *User Class* that the DHCP Client on a device will send to the DHCP Se
 
 
 Select whether the DHCP Client on a device will send a *Vendor Class* to the DHCP Server using *DHCP Option 60* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendVendorClassValue%% to provide the value of the *Vendor Class* to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send Vendor Class Value (Option 60)** to provide the value of the *Vendor Class* to be sent.
 
 
 **Detail Information:**
@@ -22249,7 +22277,7 @@ Select whether the DHCP Client on a device will send a *Vendor Class* to the DHC
 </span> <br><br>
 
 
-Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 60* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendVendorClassState!! is selected for %%steps.step.dhcpStep.dhcpSendVendorClassState%%.
+Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP Server using *DHCP Option 60* when requesting an IP Address when the value ***On*** is selected for **Send Vendor Class State (Option 60)**.
 
 
 **Detail Information:**
@@ -22279,8 +22307,8 @@ Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP 
 
 
 Select whether the DHCP Client on a device will send a *Fully Qualified Domain Name (FQDN)* to the DHCP Server using *DHCP Option 81* when requesting an IP Address.
-- If the value !!2!! is selected, you do not need to specify any additional information.
-- If the value !!1!! is selected, you must also specify %%steps.step.dhcpStep.dhcpSendFqdnValue%% and %%steps.step.dhcpStep.dhcpSendFqdnFlag%% to provide the value of the *FQDN value* and the associated flags to be sent.
+- If the value ***Off*** is selected, you do not need to specify any additional information.
+- If the value ***On*** is selected, you must also specify **Send FQDN Value (Option 81)** and **Send FQDN Flag (Option 81)** to provide the value of the *FQDN value* and the associated flags to be sent.
 
 
 **Detail Information:**
@@ -22311,7 +22339,7 @@ Select whether the DHCP Client on a device will send a *Fully Qualified Domain N
 </span> <br><br>
 
 
-Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendFqdnState!! is selected for %%steps.step.dhcpStep.dhcpSendFqdnState%%. You must also specify %%steps.step.dhcpStep.dhcpSendFqdnFlag%% to provide the flags to be sent along with the *FQDN value*.
+Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)**. You must also specify **Send FQDN Flag (Option 81)** to provide the flags to be sent along with the *FQDN value*.
 
 
 **Detail Information:**
@@ -22340,7 +22368,7 @@ Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Ser
 </span> <br><br>
 
 
-Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendFqdnState!! is selected for %%steps.step.dhcpStep.dhcpSendFqdnState%% and when %%steps.step.dhcpStep.dhcpSendFqdnValue%% is specified.
+Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address when the value ***On*** is selected for **Send FQDN State (Option 81)** and when **Send FQDN Value (Option 81)** is specified.
 
 
 **Detail Information:**
@@ -22369,7 +22397,7 @@ Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* t
 </span> <br><br>
 
 
-Enter the option number of a custom DHCP Option that the DHCP Client on a device should request from DHCP Server and return along with the IP Address when the value !!1@steps.step.dhcpStep.dhcpRequestCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpRequestCustomOptionState%%.
+Enter the option number of a custom DHCP Option that the DHCP Client on a device should request from DHCP Server and return along with the IP Address when the value ***On*** is selected for **Request Custom Option State**.
 
 
 **Detail Information:**
@@ -22399,8 +22427,8 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 Select whether the DHCP Client on a device will request that the DHCP Server acquire a custom DHCP option and return it along with the IP Address.
-- If the value !!2!! is selected, no custom DHCP Option will be requested and you do not need to specify any additional information.
-- If the value !!1!! is selected, a custom DHCP Option will be requested and you must also specify %%steps.step.dhcpStep.dhcpRequestCustomOptionNumber%% to provide the custom option number to be requested.
+- If the value ***Off*** is selected, no custom DHCP Option will be requested and you do not need to specify any additional information.
+- If the value ***On*** is selected, a custom DHCP Option will be requested and you must also specify **Request Custom Option Number** to provide the custom option number to be requested.
 
 
 **Detail Information:**
@@ -22431,7 +22459,7 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 </span> <br><br>
 
 
-Enter the option number of a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpSendCustomOptionState%%.
+Enter the option number of a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State**.
 
 
 **Detail Information:**
@@ -22461,8 +22489,8 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 Select whether the DHCP Client on a device will request that the DHCP Server send a custom DHCP option when requesting an IP Address.
-- If the value !!2!! is selected, no custom DHCP Option will be sent you do not need to specify any additional information.
-- If the value !!1!! is selected, a custom DHCP Option will be sent and you must also specify %%steps.step.dhcpStep.dhcpSendCustomOptionNumber%% to provide the custom option number to be sent and %%steps.step.dhcpStep.dhcpSendCustomOptionValue%% to provide the custom option value to be sent.
+- If the value ***Off*** is selected, no custom DHCP Option will be sent you do not need to specify any additional information.
+- If the value ***On*** is selected, a custom DHCP Option will be sent and you must also specify **Send Custom Option Number** to provide the custom option number to be sent and **Send Custom Option Value** to provide the custom option value to be sent.
 
 
 **Detail Information:**
@@ -22493,7 +22521,7 @@ Select whether the DHCP Client on a device will request that the DHCP Server sen
 </span> <br><br>
 
 
-Enter the option value for a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value !!1@steps.step.dhcpStep.dhcpSendCustomOptionState!! is selected for %%steps.step.dhcpStep.dhcpSendCustomOptionState%% and when %%steps.step.dhcpStep.dhcpSendCustomOptionNumber%% is specified.
+Enter the option value for a custom DHCP Option that the DHCP Client on a device should send when requesting an IP Address when the value ***On*** is selected for **Send Custom Option State** and when **Send Custom Option Number** is specified.
 
 
 **Detail Information:**
@@ -22543,6 +22571,8 @@ Use this *Group* to configure DataWedge settings on a device.
 - Supported from: MX 9.2.
 
 
+details2 = steps.step.dataWedgeStep
+level3Items.size() = 4
 <a id="steps.step.dataWedgeStep.dataWedgeDatabaseFile">
 
 ### Database File
@@ -22708,6 +22738,8 @@ Use this *Group* to perform Device Administration functions, such as:
 - Type = bundle
 
 
+details2 = steps.step.devadminStep
+level3Items.size() = 7
 <a id="steps.step.devadminStep.devadminAction">
 
 ### Action
@@ -22723,12 +22755,14 @@ Use this *Group* to perform Device Administration functions, such as:
 
 
 Select an Action to control access to or utilize the Zebra MX Management System on a device.
-- If the value !!AllowSubmitXml!! is selected, a single application or service is allowed to submit XML for processing by the Zebra MX Management System. You must also specify %%steps.step.devadminStep.devadminActionAllowSubmitXmlPackageName%% to provide the *Android Package Name* that identifies the application or service is to be allowed.
-- If the value !!DisallowSubmitXml!! is selected, a single application service is disallowed from submitting XML for processing by the Zebra MX Management System. You must also specify %%steps.step.devadminStep.devadminActionDisallowSubmitXmlPackageName%% to provide the *Android Package Name* that identifies the application or service is to be disallowed.
-- If the value !!SubmitXml!! is selected, you must also specify %%steps.step.devadminStep.devadminActionSubmitXml%% to provide the XML string that will be submitted for processing by the .Zebra MX Management System.
-- If the value !!ReserveUID!! is selected, you must also specify %%steps.step.devadminStep.devadminActionReserveUIDPackageName%% to identify the particular package to which the User ID is reserved.
-- You must also specify %%steps.step.devadminStep.devadminActionReserveUIDPackageSignature%% to assure that the package to which the User ID is reserved is the right one.
-- If the value !!UnreserveUID!! is selected, you must also specify %%steps.step.devadminStep.devadminActionUnreserveUIDPackageName%% to identify the particular package to which the User ID is reserved.
+- If the value ***Allow App To Submit Xml*** is selected, a single application or service is allowed to submit XML for processing by the Zebra MX Management System. You must also specify **Allow Submit XML Package Name** to provide the *Android Package Name* that identifies the application or service is to be allowed.
+- If the value ***Disallow App From Submitting Xml*** is selected, a single application service is disallowed from submitting XML for processing by the Zebra MX Management System. You must also specify **Disallow Submit XML Package Name** to provide the *Android Package Name* that identifies the application or service is to be disallowed.
+- If the value ***Submit Xml*** is selected, you must also specify **Submit XML** to provide the XML string that will be submitted for processing by the .Zebra MX Management System.
+- If the value ***Reserve UID for App*** is selected, you must also specify **Reserve User ID Package Name** to identify the particular package to which the User ID is reserved.
+- You must also specify **Reserve User ID Package Signature** to assure that the package to which the User ID is reserved is the right one.
+- If the value ***Unreserve UID for App*** is selected, you must also specify **Unreserve User ID Package Name** to identify the particular package to which the User ID is reserved.
+- If the value ***Allow App To Update*** is selected, you must also specify **Allow Package Update Package Name** to identify the particular package allowed to be updated. This is only necessary for applications that were previously disallowed using ***false***
+- If the value ***false*** is selected, you must also specify **Disallow Package Update Package Name** to identify the particular package to be prevented from being updated.
 
 
 **Detail Information:**
@@ -22737,7 +22771,7 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 
 - Type = string
 
-<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AllowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisallowSubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SubmitXml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ReserveUID&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UnreserveUID&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr></table>
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Allow App To Submit Xml&nbsp;</small></i></b></td><td><small>&nbsp;AllowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow App From Submitting Xml&nbsp;</small></i></b></td><td><small>&nbsp;DisallowSubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Submit Xml&nbsp;</small></i></b></td><td><small>&nbsp;SubmitXml&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Reserve UID for App&nbsp;</small></i></b></td><td><small>&nbsp;ReserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unreserve UID for App&nbsp;</small></i></b></td><td><small>&nbsp;UnreserveUID&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow App To Update&nbsp;</small></i></b></td><td><small>&nbsp;AllowApplicationUpgrade&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Disallow App From Update&nbsp;</small></i></b></td><td><small>&nbsp;DisallowApplicationUpgrade&nbsp;</small></td></tr></table>
 
 
 **Support Information:**
@@ -22759,7 +22793,7 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies the application or service is to be allowed when the value !!AllowSubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* that identifies the application or service is to be allowed when the value ***Allow App To Submit Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -22788,7 +22822,7 @@ Enter the *Android Package Name* that identifies the application or service is t
 </span> <br><br>
 
 
-Enter the *Android Package Name* that identifies the application or service is to be disallowed when the value !!DisallowSubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* that identifies the application or service is to be disallowed when the value ***Disallow App From Submitting Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -22817,7 +22851,7 @@ Enter the *Android Package Name* that identifies the application or service is t
 </span> <br><br>
 
 
-Enter an XML string to be submitted for processing by the .Zebra MX Management System, when the value !!SubmitXml@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter an XML string to be submitted for processing by the .Zebra MX Management System, when the value ***Submit Xml*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -22841,7 +22875,7 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application needing a reserved UID, when the value !!ReserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* of the application needing a reserved UID, when the value ***Reserve UID for App*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -22870,7 +22904,7 @@ Enter the *Android Package Name* of the application needing a reserved UID, when
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of the application needing a reserved UID, when the value !!ReserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Signature* of the application needing a reserved UID, when the value ***Reserve UID for App*** is selected for **Action**.
 The value entered must be the Base 64 encoded content of the DER format certificate used to sign the application. The DER-format certificate can be obtained from the application author or can be extracted from the APK file if necessary. Base 64 encoding must be performed to ensure that the value is suitable for transmission as a Managed Configuration.
 
 
@@ -22900,7 +22934,7 @@ The value entered must be the Base 64 encoded content of the DER format certific
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value !!UnreserveUID@steps.step.devadminStep.devadminAction!! is selected for %%steps.step.devadminStep.devadminAction%%.
+Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value ***Unreserve UID for App*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -22932,7 +22966,7 @@ Enter the *Android Package Name* of the application whose user ID can be release
 </span> <br><br>
 
 
-Use this *Group* to configure Device Central behavior on a device.
+Use this *Sub-group* to configure Bluetooth On/Off Control, Bluetooth Pairing Control, and Firmware Update Button.
 
 
 **Detail Information:**
@@ -22950,6 +22984,8 @@ Use this *Group* to configure Device Central behavior on a device.
 - Supported from: MX 8.1.
 
 
+details2 = steps.step.deviceCentralStep
+level3Items.size() = 3
 <a id="steps.step.deviceCentralStep.deviceCentralBluetoothOnOffControl">
 
 ### Bluetooth On/Off Control
@@ -22967,10 +23003,10 @@ Use this *Group* to configure Device Central behavior on a device.
 Select whether the Device User should be allowed to use the Device Central UI to control Bluetooth Power.
 
 
-- If the value !!2!! is selected, Device Central will NOT provide UI that allows the Device User to control the Bluetooth power state.
+- If the value ***Disallow*** is selected, Device Central will NOT provide UI that allows the Device User to control the Bluetooth power state.
 
 
-- If the value !!1!! is selected, Device Central will provide UI that allows the Device User to control the Bluetooth power state.
+- If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to control the Bluetooth power state.
 
 
 **Detail Information:**
@@ -23005,8 +23041,9 @@ Select whether the Device User should be allowed to use the Device Central UI to
 
 
 Select whether Device Central system should allow multiple pairings to the same Device Class.
-- If the value !!1!! is selected, Device Central system will only allow one pairing at a time for each Bluetooth Device Class (e.g. one headset and one printer).
-- If the value !!2!! is selected, Device Central system will allow multiple pairings at a time for each Bluetooth Device Class (e.g. multiple headsets and/or multiple printers).
+This feature has been deprecated in Device Central. Look in the **Bluetooth Configuration**
+- If the value ***Single Pairing Per Device Class*** is selected, Device Central system will only allow one pairing at a time for each Bluetooth Device Class (e.g. one headset and one printer).
+- If the value ***Multiple Pairings Per Device Class*** is selected, Device Central system will allow multiple pairings at a time for each Bluetooth Device Class (e.g. multiple headsets and/or multiple printers).
 
 
 **Detail Information:**
@@ -23041,8 +23078,8 @@ Select whether Device Central system should allow multiple pairings to the same 
 
 
 Select whether the Device User should be allowed to use the Device Central UI to initiate a Firmware Update.
-- If the value !!2!! is selected, Device Central will NOT provide UI that allows the Device User to initiate a Firmware Update.
-- If the value !!1!! is selected, Device Central will provide UI that allows the Device User to initiate a Firmware Update.
+- If the value ***Disallow*** is selected, Device Central will NOT provide UI that allows the Device User to initiate a Firmware Update.
+- If the value ***Allow*** is selected, Device Central will provide UI that allows the Device User to initiate a Firmware Update.
 
 
 **Detail Information:**
@@ -23089,6 +23126,8 @@ Use this *Group* to configure Display Screen settings on a device.
 - Type = bundle
 
 
+details2 = steps.step.displayStep
+level3Items.size() = 8
 <a id="steps.step.displayStep.displayTimeout">
 
 ### Timeout
@@ -23144,11 +23183,11 @@ When a Device User is operating a vehicle with a vehicle-mounted device, it is o
 
 
 At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle-mounted Android device.
-- If the value !!1!! is selected, *Display Blanking Mode* will be turned off and hence automatic Display Blanking will never occur.
-- If the value !!2!! is selected, *Display Blanking Mode* will be turned on and hence the Display will be automatically Blanked and you must also specify all of the following:
-- %%steps.step.displayStep.displayBlankingModeSignal%% - to specify the signal that will be used to activate automatic Display Blanking.
-- %%steps.step.displayStep.displayBlankingModeSignalPolarity%% - to specify the polarity of the signal specified via %%steps.step.displayStep.displayBlankingModeSignal%% that will be used to activate automatic Blanking.
-- %%steps.step.displayStep.displayBlankingModeSignalDebounceDelay%% - to specify the time that will be used to debounce the signal specified via %%steps.step.displayStep.displayBlankingModeSignal%%.
+- If the value ***Never Blank*** is selected, *Display Blanking Mode* will be turned off and hence automatic Display Blanking will never occur.
+- If the value ***Blank When Triggered by Signal*** is selected, *Display Blanking Mode* will be turned on and hence the Display will be automatically Blanked and you must also specify all of the following:
+- **Signal** - to specify the signal that will be used to activate automatic Display Blanking.
+- **Polarity** - to specify the polarity of the signal specified via **Signal** that will be used to activate automatic Blanking.
+- **Debounce Delay** - to specify the time that will be used to debounce the signal specified via **Signal**.
 
 
 **Detail Information:**
@@ -23185,9 +23224,9 @@ At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle
 Select whether the Display will *Stay Awake* (prevent automatic time out that turns the Display Screen off) when the device is connected to external power.
 
 
-When a Device User is operating a vehicle with a vehicle-mounted device, the device may be continuously receiving power from the vehicle power supply, rather than running off its own internal battery. The Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%%, which is generally used to increase battery life, may add little value in such situations. It may therefore be desirable to configure the device to *Stay Awake* and thus prevent it from timing out and turning the Display Screen off, so long as the device is connected to external power.
-- If the value !!2!! is selected, the Display will NOT *Stay Awake* and hence the device will time out and automatically turn the Display Screen off, when the Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%% expires, even if the device is connected to external power.
-- If the value !!1!! is selected, the Display will *Stay Awake* and hence the device will not time out and will not automatically turn the Display Screen off, so long as the device is connected to external power, even if the Display Screen timeout, configured via %%steps.step.displayStep.displayTimeout%% expires.
+When a Device User is operating a vehicle with a vehicle-mounted device, the device may be continuously receiving power from the vehicle power supply, rather than running off its own internal battery. The Display Screen timeout, configured via **Timeout**, which is generally used to increase battery life, may add little value in such situations. It may therefore be desirable to configure the device to *Stay Awake* and thus prevent it from timing out and turning the Display Screen off, so long as the device is connected to external power.
+- If the value ***Off*** is selected, the Display will NOT *Stay Awake* and hence the device will time out and automatically turn the Display Screen off, when the Display Screen timeout, configured via **Timeout** expires, even if the device is connected to external power.
+- If the value ***On*** is selected, the Display will *Stay Awake* and hence the device will not time out and will not automatically turn the Display Screen off, so long as the device is connected to external power, even if the Display Screen timeout, configured via **Timeout** expires.
 
 
 **Detail Information:**
@@ -23221,9 +23260,9 @@ When a Device User is operating a vehicle with a vehicle-mounted device, the dev
 </span> <br><br>
 
 
-Select the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
-- If the value !!1!! is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 1 will be used to trigger automatic Display Blanking.
-- If the value !!2!! is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 2 will be used to trigger automatic Display Blanking.
+Select the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
+- If the value ***Input 1*** is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 1 will be used to trigger automatic Display Blanking.
+- If the value ***Input 2*** is selected, on the Zebra VC80x vehicle-mounted Android device the Clear To Send (CTS) input signal on Serial Port 2 will be used to trigger automatic Display Blanking.
 
 
 A common configuration to support *Display Blanking Mode* would be to connect the Request to Send (RTS) output signal of the selected Serial Port to the Clear To Send (CTS) input signal on the same serial port, via a switch, such as one activated by the vehicle accelerator. When the switch is activated, the output RTS output signal would be fed back into the CTS input signal and detected to trigger automatic Display Blanking.
@@ -23260,9 +23299,9 @@ A common configuration to support *Display Blanking Mode* would be to connect th
 </span> <br><br>
 
 
-Select the Polarity of the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
-- If the value !!2!! is selected, the automatic Display Blanking will occur when the specified signal is detected as going inactive (OFF). This choice would be used in specialized configurations where the signal to be used to trigger automatic Display Blanking has reverse polarity.
-- If the value !!1!! is selected, , the automatic Display Blanking will occur when the specified signal is detected as going active (ON). This is the most common choice for the common configuration of connecting RTS and CTS via a switch.
+Select the Polarity of the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
+- If the value ***Blank screen when signal goes inactive (OFF)*** is selected, the automatic Display Blanking will occur when the specified signal is detected as going inactive (OFF). This choice would be used in specialized configurations where the signal to be used to trigger automatic Display Blanking has reverse polarity.
+- If the value ***Blank screen when signal goes active (ON)*** is selected, , the automatic Display Blanking will occur when the specified signal is detected as going active (ON). This is the most common choice for the common configuration of connecting RTS and CTS via a switch.
 
 
 **Detail Information:**
@@ -23296,7 +23335,7 @@ Select the Polarity of the Signal that will be used to trigger automatic Display
 </span> <br><br>
 
 
-Enter the Debounce Delay that will be used for the Signal that will be used to trigger automatic Display Blanking when the value !!2@steps.step.displayStep.displayBlankingMode!! is selected for %%steps.step.displayStep.displayBlankingMode%% to turn on *Display Blanking Mode*.
+Enter the Debounce Delay that will be used for the Signal that will be used to trigger automatic Display Blanking when the value ***Blank When Triggered by Signal*** is selected for **Blanking Mode** to turn on *Display Blanking Mode*.
 
 
 The value specified should be in milliseconds and will be used as a delay following a change in signal state for changing the state of Display Blanking. This is useful to avoid spurious or repetitive changes in Display Blanking state as a result of bounce or chatter on the signal used to trigger automatic Display Blanking. The value specified should be in the range of 250 milliseconds (one quarter of a second) to 32767 milliseconds (more than 32 seconds), which should be adequate to handle most situations.
@@ -23420,6 +23459,8 @@ Use this *Sub-group* to configure the Enterprise Keyboard in a device.
 - Supported from: MX 6.0.
 
 
+details2 = steps.step.ekbStep
+level3Items.size() = 29
 <a id="steps.step.ekbStep.ekbAutoCaps">
 
 ### Auto Capitalization
@@ -23435,8 +23476,8 @@ Use this *Sub-group* to configure the Enterprise Keyboard in a device.
 
 
 Select whether the Enterprise Keyboard on a device will have automatic capitalization turned on (enabled) or turned off (disabled) for the first letter of each sentence.
-- If the value !!2!! is selected, automatic capitalization will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, automatic capitalization will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23471,8 +23512,8 @@ Select whether the Enterprise Keyboard on a device will have automatic capitaliz
 
 
 Select whether the Enterprise Keyboard on a device will have automatic correction of misspelled words turned on (enabled) or turned off (disabled), wherein the space and punctuation keys initiate automatic correction of misspelled words.
-- If the value !!2!! is selected, automatic correction of misspelled words will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, automatic correction of misspelled words will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23507,8 +23548,8 @@ Select whether the Enterprise Keyboard on a device will have automatic correctio
 
 
 Select whether the Enterprise Keyboard on a device will have automatic blocking of offensive words turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, automatic offensive word blocking will be turned off (disabled).
-- If the value !!1!! is selected, automatic offensive word blocking will be turned on (enabled).
+- If the value ***Off*** is selected, automatic offensive word blocking will be turned off (disabled).
+- If the value ***On*** is selected, automatic offensive word blocking will be turned on (enabled).
 
 
 **Detail Information:**
@@ -23543,8 +23584,8 @@ Select whether the Enterprise Keyboard on a device will have automatic blocking 
 
 
 Select whether the Enterprise Keyboard on a device will have automatic sentence ending turned on (enabled) or turned off (disabled) wherein a double tap on the space key causes the entry of a period followed by two spaces.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23579,8 +23620,8 @@ Select whether the Enterprise Keyboard on a device will have automatic sentence 
 
 
 Select whether the Enterprise Keyboard on a device will show alternate characters when a flick gesture is performed.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23647,8 +23688,8 @@ Enter the length of time (in milliseconds) that a key within the Enterprise Keyb
 
 
 Select the navigation mode the Enterprise Keyboard on a device will use to provide its user experience.
-- If the value !!1!! is selected, the Enterprise Keyboard will use the new user experience wherein different tabs can be used to select the desired keyboard.
-- If the value !!2!! is selected, the Enterprise Keyboard will use the legacy user experience wherein keys can be used to select the desired keyboard.
+- If the value ***Tab-based (new)*** is selected, the Enterprise Keyboard will use the new user experience wherein different tabs can be used to select the desired keyboard.
+- If the value ***Key-based (legacy)*** is selected, the Enterprise Keyboard will use the legacy user experience wherein keys can be used to select the desired keyboard.
 
 
 **Detail Information:**
@@ -23683,8 +23724,8 @@ Select the navigation mode the Enterprise Keyboard on a device will use to provi
 
 
 Select the numeric layout mode the Enterprise Keyboard on a device will use when it determines that a numeric keyboard should be displayed.
-- If the value !!1!! is selected, the Enterprise Keyboard will display a numeric keyboard in telephone mode (e.g. 123, 456, 789).
-- If the value !!2!! is selected, the Enterprise Keyboard will display a numeric keyboard in calculator mode (e.g. 789, 456, 123).
+- If the value ***Telephone Mode*** is selected, the Enterprise Keyboard will display a numeric keyboard in telephone mode (e.g. 123, 456, 789).
+- If the value ***Calculator Mode*** is selected, the Enterprise Keyboard will display a numeric keyboard in calculator mode (e.g. 789, 456, 123).
 
 
 **Detail Information:**
@@ -23719,8 +23760,8 @@ Select the numeric layout mode the Enterprise Keyboard on a device will use when
 
 
 Select whether the Enterprise Keyboard on a device will show the alphanumeric tab to allow selection of the alphanumeric keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23755,8 +23796,8 @@ Select whether the Enterprise Keyboard on a device will show the alphanumeric ta
 
 
 Select whether the Enterprise Keyboard on a device will show the numeric tab to allow selection of the numeric keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23791,8 +23832,8 @@ Select whether the Enterprise Keyboard on a device will show the numeric tab to 
 
 
 Select whether the Enterprise Keyboard on a device will show the scan tab to allow control of barcode scanning.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23827,8 +23868,8 @@ Select whether the Enterprise Keyboard on a device will show the scan tab to all
 
 
 Select whether the Enterprise Keyboard on a device will show the symbol tab to allow selection of the special symbols keyboard.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23863,8 +23904,8 @@ Select whether the Enterprise Keyboard on a device will show the symbol tab to a
 
 
 Select whether the Enterprise Keyboard on a device will show a key to invoke voice input (if supported).
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23899,10 +23940,10 @@ Select whether the Enterprise Keyboard on a device will show a key to invoke voi
 
 
 Select the preferred tab the Enterprise Keyboard on a device will select by default when textual data is being entered.
-- If the value !!1!! is selected, the Enterprise Keyboard will select the Numeric tab by default when textual data is being entered.
-- If the value !!2!! is selected, the Enterprise Keyboard will show the Alphanumeric tab by default when textual data is being entered.
-- If the value !!3!! is selected, the Enterprise Keyboard will show the Symbol tab by default when textual data is being entered.
-- If the value !!4!! is selected, the Enterprise Keyboard will show the Scan tab by default when textual data is being entered.
+- If the value ***Numeric*** is selected, the Enterprise Keyboard will select the Numeric tab by default when textual data is being entered.
+- If the value ***Alphanumeric*** is selected, the Enterprise Keyboard will show the Alphanumeric tab by default when textual data is being entered.
+- If the value ***Symbol*** is selected, the Enterprise Keyboard will show the Symbol tab by default when textual data is being entered.
+- If the value ***Scan*** is selected, the Enterprise Keyboard will show the Scan tab by default when textual data is being entered.
 
 
 
@@ -23939,8 +23980,8 @@ Select the preferred tab the Enterprise Keyboard on a device will select by defa
 
 
 Select whether the Enterprise Keyboard on a device showing contact name suggestions while typing based on past actions will be turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, contact name suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, contact name suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -23975,8 +24016,8 @@ Select whether the Enterprise Keyboard on a device showing contact name suggesti
 
 
 Select whether the Enterprise Keyboard on a device showing suggestions for corrections of misspelled words while typing will be turned on (enabled) or turned off (disabled).
-- If the value !!2!! is selected, correction suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, correction suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -24011,8 +24052,8 @@ Select whether the Enterprise Keyboard on a device showing suggestions for corre
 
 
 Select whether the Enterprise Keyboard on a device will have key popup on each keypress turned on (enabled) or turned off (disabled) wherein a visible indication that thekey was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -24047,8 +24088,8 @@ Select whether the Enterprise Keyboard on a device will have key popup on each k
 
 
 Select whether the Enterprise Keyboard on a device will have sound on each keypress turned on (enabled) or turned off (disabled) wherein an audible indication that the key was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -24083,8 +24124,8 @@ Select whether the Enterprise Keyboard on a device will have sound on each keypr
 
 
 Select the volume mode that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress.
-- If the value !!2!! is selected, the System Default Volume for keypress sounds will be used.
-- If the value !!1!! is selected, a specified volume will be used and you must also specify %%steps.step.ekbStep.ekbSoundOnKeypressVolume%% to provide that volume.
+- If the value ***System Default Volume*** is selected, the System Default Volume for keypress sounds will be used.
+- If the value ***Specified Volume*** is selected, a specified volume will be used and you must also specify **Volume** to provide that volume.
 
 
 **Detail Information:**
@@ -24118,7 +24159,7 @@ Select the volume mode that will be used by the Enterprise Keyboard on a device 
 </span> <br><br>
 
 
-Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress, when the value !!1@steps.step.ekbStep.ekbSoundOnKeypress!! is selected for %%steps.step.ekbStep.ekbSoundOnKeypress%% and the value !!2@steps.step.ekbStep.ekbSoundOnKeypressVolumeMode!! is selected for %%steps.step.ekbStep.ekbSoundOnKeypressVolumeMode%%.
+Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a device when sound occurs on each keypress, when the value ***On*** is selected for **Sound on Keypress** and the value ***System Default Volume*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -24151,8 +24192,8 @@ Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on
 
 
 Select whether the Enterprise Keyboard on a device will have vibration on each keypress turned on (enabled) or turned off (disabled) wherein a tactile indication that the key was pressed occurs.
-- If the value !!2!! is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
-- If the value !!1!! is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- If the value ***Off*** is selected, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- If the value ***On*** is selected, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
 
 
 **Detail Information:**
@@ -24187,8 +24228,8 @@ Select whether the Enterprise Keyboard on a device will have vibration on each k
 
 
 Enter the duration mode that will be used by the Enterprise Keyboard on a device when vibrate occurs on each keypress.
-- If the value !!2!! is selected, the System Default Duration for keypress vibrate will be used.
-- If the value !!1!! is selected, a specified duration will be used and you must also specify %%steps.step.ekbStep.ekbVibrateOnKeypressDuration%% to provide that duration.
+- If the value ***System Default Duration*** is selected, the System Default Duration for keypress vibrate will be used.
+- If the value ***Specified Duration*** is selected, a specified duration will be used and you must also specify **Duration** to provide that duration.
 
 
 **Detail Information:**
@@ -24222,7 +24263,7 @@ Enter the duration mode that will be used by the Enterprise Keyboard on a device
 </span> <br><br>
 
 
-Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a device when a vibrate occurs on each keypress, when the value !!1@steps.step.ekbStep.ekbVibrateOnKeypress!! is selected for %%steps.step.ekbStep.ekbVibrateOnKeypress%% and the value !!2@steps.step.ekbStep.ekbVibrateOnKeypressDurationMode!! is selected for %%steps.step.ekbStep.ekbVibrateOnKeypressDurationMode%%.
+Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a device when a vibrate occurs on each keypress, when the value ***On*** is selected for **Vibrate on Keypress** and the value ***System Default Duration*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -24510,7 +24551,7 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 </span> <br><br>
 
 
-Use this *Group* to configure Enterprise NFC settings on a device.
+Use this *Sub-group* to configure Reset to Defaults, Type A Tags, Type B Tags, Type F Tags, Type V Tags, Use NFC Data Exchange Format (NDEF), Polling Mode, CPU Boost, Type A Tag Baud Rate, Type B Tag Baud Rate, Peer to Peer Mode, Card Emulation Mode, and Use on Lock Screen.
 
 
 **Detail Information:**
@@ -24528,6 +24569,8 @@ Use this *Group* to configure Enterprise NFC settings on a device.
 - Supported from: MX 8.3.
 
 
+details2 = steps.step.nfcStep
+level3Items.size() = 13
 <a id="steps.step.nfcStep.nfcResetToDefaults">
 
 ### Reset to Defaults
@@ -24542,7 +24585,7 @@ Use this *Group* to configure Enterprise NFC settings on a device.
 </span> <br><br>
 
 
-Use this *Sub-group* to reset all the Enterprise NFC settings to their factory default values on a device.
+Select whether the Enterprise NFC settings should all be reset to their default values.
 
 
 **Detail Information:**
@@ -24576,13 +24619,13 @@ Use this *Sub-group* to reset all the Enterprise NFC settings to their factory d
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A Tags.
+Select whether the Enterprise NFC should read NFC Type A Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type A Tags. This could increase the speed of reading other tag types in cases where Type A Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type A Tags. This could increase the speed of reading other tag types in cases where Type A Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type A Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type A Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -24616,13 +24659,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BTags.
+Select whether the Enterprise NFC should read NFC Type B Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type B Tags. This could increase the speed of reading other tag types in cases where Type B Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type B Tags. This could increase the speed of reading other tag types in cases where Type B Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type B Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type B Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -24656,13 +24699,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BT
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F Tags.
+Select whether the Enterprise NFC should read NFC Type F Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type F Tags. This could increase the speed of reading other tag types in cases where Type F Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type F Tags. This could increase the speed of reading other tag types in cases where Type F Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type F Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type F Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -24696,13 +24739,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V Tags.
+Select whether the Enterprise NFC should read NFC Type V Tags.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt to read NFC Type V Tags. This could increase the speed of reading other tag types in cases where Type V Tags are not used.
+- If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type V Tags. This could increase the speed of reading other tag types in cases where Type V Tags are not used.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NFC Type V Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
+- If the value ***Read*** is selected, Enterprise NFC will attempt to read NFC Type V Tags. This might decrease the speed of reading tags unless reading of other tag types is turned off.
 
 
 **Detail Information:**
@@ -24736,13 +24779,13 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V 
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether Enterprise NFC should attempt to use NFC Data Exchange Format (NDEF) when reading tags.
+Select whether the Enterprise NFC should use NFC Data Exchange Format (NDEF).
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT attempt tp read NDEF formatted tags. This could increase the speed of reading non-NDEF tags by not spending unnecessary time trying to interpret tag data according to NDEF formatting rules.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT attempt tp read NDEF formatted tags. This could increase the speed of reading non-NDEF tags by not spending unnecessary time trying to interpret tag data according to NDEF formatting rules.
 
 
-- If the value !!true!! is selected, Enterprise NFC will attempt to read NDEF formatted tags. This may decrease speed somewhat, compared to reading unformatted tags, but increases flexibility by allowing applications to receive tag data interpreted according to NDEF formatting rules.
+- If the value ***Use*** is selected, Enterprise NFC will attempt to read NDEF formatted tags. This may decrease speed somewhat, compared to reading unformatted tags, but increases flexibility by allowing applications to receive tag data interpreted according to NDEF formatting rules.
 
 
 **Detail Information:**
@@ -24776,16 +24819,16 @@ Use this *Sub-group* to configure whether Enterprise NFC should attempt to use N
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the polling mode that the Enterprise NFC should use.
+Select the Enterprise NFC Polling Mode that should be used.
 
 
-- If the value !!2!! is selected, Enterprise NFC will poll in a manner designed to strike a reasonable balance between polling speed and battery life.
+- If the value ***Hybrid*** is selected, Enterprise NFC will poll in a manner designed to strike a reasonable balance between polling speed and battery life.
 
 
-- If the value !!1!! is selected, then Enterprise NFC will poll in a manner designed to maximize polling speed. This may increase battery drain but will reduce tag detection time.
+- If the value ***Standard*** is selected, then Enterprise NFC will poll in a manner designed to maximize polling speed. This may increase battery drain but will reduce tag detection time.
 
 
-- If the value !!0!! is selected, Enterprise NFC will poll in a manner designed to minimize impact on battery life. This may increase the overall tag detection time, but will reduce battery drain.
+- If the value ***Low Power*** is selected, Enterprise NFC will poll in a manner designed to minimize impact on battery life. This may increase the overall tag detection time, but will reduce battery drain.
 
 
 **Detail Information:**
@@ -24819,9 +24862,9 @@ Use this *Sub-group* to configure the polling mode that the Enterprise NFC shoul
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
-- If the value !!false!! is selected, Enterprise NFC will leave the CPU Speed unmodified during NFC transactions.
-- If the value !!true!! is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
+Select whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
+- If the value ***Do Not Boost*** is selected, Enterprise NFC will leave the CPU Speed unmodified during NFC transactions.
+- If the value ***Boost*** is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
 
 
 **Detail Information:**
@@ -24855,11 +24898,11 @@ Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Sp
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type A Tags.
-- If the value !!1!! is selected, Enterprise NFC will always communicate to Type A Tags using a Baud Rate of 106 kbps.
-- If the value !!16!! is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
-- If the value !!32!! is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
-- If the value !!2!! is selected, Enterprise NFC will communicate to Type A Tags using any available (automatically selected) Baud Rate supported by the tag.
+Select the Baud Rate that Enterprise NFC should use for Type A Tags.
+- If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type A Tags using a Baud Rate of 106 kbps.
+- If the value ***212 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***424 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***Any*** is selected, Enterprise NFC will communicate to Type A Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
 **Detail Information:**
@@ -24893,19 +24936,19 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 </span> <br><br>
 
 
-Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type B Tags.
+Select the Baud Rate that Enterprise NFC should use for Type B Tags.
 
 
-- If the value !!4!! is selected, Enterprise NFC will always communicate to Type B Tags using a Baud Rate of 106 kbps.
+- If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type B Tags using a Baud Rate of 106 kbps.
 
 
-- If the value !!64!! is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***212 kbps*** is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
 
 
-- If the value !!128!! is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
+- If the value ***424 kbps*** is selected, Enterprise NFC will communicate to Type B Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
 
 
-- If the value !!2!! is selected, Enterprise NFC will communicate to Type B Tags using any available (automatically selected) Baud Rate supported by the tag.
+- If the value ***Any*** is selected, Enterprise NFC will communicate to Type B Tags using any available (automatically selected) Baud Rate supported by the tag.
 
 
 **Detail Information:**
@@ -24939,9 +24982,9 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to-Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
-- If the value !!false!! is selected, Enterprise NFC will NOT use *Peer-to-Peer Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Card Emulation Mode* by via %%steps.step.nfcStep.nfcCardEmulationMode%%.
-- If the value !!true!! is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via %%steps.step.nfcStep.nfcCardEmulationMode%%.
+Select whether the Enterprise NFC should use *Peer to Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Peer-to-Peer Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Card Emulation Mode* by via **Card Emulation Mode**.
+- If the value ***Use*** is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via **Card Emulation Mode**.
 
 
 **Detail Information:**
@@ -24975,9 +25018,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Emulation Mode*. This is generally used when an NFC enabled device wants to emulate a *Smart Card*.
-- If the value !!false!! is selected, Enterprise NFC will NOT use *Card Emulation Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Peer-to-Peer Mode* by via %%steps.step.nfcStep.nfcPeerToPeerMode%%.
-- If the value !!true!! is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via %%steps.step.nfcStep.nfcPeerToPeerMode%%.
+Select whether the Enterprise NFC should use Card Emulation Mode.
+- If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Card Emulation Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Peer-to-Peer Mode* by via **Peer to Peer Mode**.
+- If the value ***Use*** is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via **Peer to Peer Mode**.
 
 
 **Detail Information:**
@@ -25011,13 +25054,13 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Em
 </span> <br><br>
 
 
-Use this *Sub-group* to configure whether the Enterprise NFC should be allowed to be used from the Lock Screen on a device.
+Select whether the Enterprise NFC should be allowed to be used from the Lock Screen.
 
 
-- If the value !!false!! is selected, Enterprise NFC will NOT allow NFC operations to be performed when the device is at the lock screen.
+- If the value ***Disallow*** is selected, Enterprise NFC will NOT allow NFC operations to be performed when the device is at the lock screen.
 
 
-- If the value !!true!! is selected, Enterprise NFC will allow NFC operations to be performed when the device is at the lock screen.
+- If the value ***Allow*** is selected, Enterprise NFC will allow NFC operations to be performed when the device is at the lock screen.
 
 
 **Detail Information:**
@@ -25072,6 +25115,8 @@ Use this *Sub-group* to configure the operation of the Ethernet Adapter on a dev
 - Supported from: MX 6.2.
 
 
+details2 = steps.step.ethernetStep
+level3Items.size() = 12
 <a id="steps.step.ethernetStep.ethernetPower">
 
 ### Power
@@ -25163,7 +25208,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Select whether a Proxy Server should be used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-When specifying that a Proxy Server is to be used, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% together whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+When specifying that a Proxy Server is to be used, you should specify **Proxy Server**, **Port**, and **Bypass List** together whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -25203,7 +25248,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Proxy Server used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-While it is not mandatory, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+While it is not mandatory, you should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -25241,7 +25286,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Port that will be used to reach the Proxy Server to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-You should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+You should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -25279,7 +25324,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 Enter the Proxy Server Bypass List which specifies addresses that should bypass the Proxy Server used to access the Internet from the network accessed via the Ethernet Adapter.
 
 
-While it is not mandatory, you should specify %%steps.step.ethernetStep.ethernetProxyServer%%, %%steps.step.ethernetStep.ethernetProxyServerPort%%, and %%steps.step.ethernetStep.ethernetProxyServerBypassList%% whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+While it is not mandatory, you should specify **Proxy Server**, **Port**, and **Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -25315,8 +25360,8 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 
 
 Select how an IP Address will be assigned to the Ethernet adapter.
-- If the value !!0!! is selected, an IP Address for the Ethernet adapter will be automatically acquired by the DHCP Client from the DHCP Server.
-- If the value !!1!! is selected, an IP Address for the Ethernet adapter will be assigned based on the values selected for %%steps.step.ethernetStep.ethernetIpAddress%%, %%steps.step.ethernetStep.ethernetGatewayAddress%%, %%steps.step.ethernetStep.ethernetNetMask%%, %%steps.step.ethernetStep.ethernetDNS1%%, and %%steps.step.ethernetStep.ethernetDNS2%%, which you must also specify to provide the required values.
+- If the value ***Dynamic (DHCP)*** is selected, an IP Address for the Ethernet adapter will be automatically acquired by the DHCP Client from the DHCP Server.
+- If the value ***Static (Manual)*** is selected, an IP Address for the Ethernet adapter will be assigned based on the values selected for **IP Address**, **Gateway Address**, **Network Mask**, **Primary DNS**, and **Secondary DNS**, which you must also specify to provide the required values.
 
 
 A given device may or may not support an Ethernet Adapter. An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
@@ -25558,6 +25603,8 @@ Use this *Sub-group* to perform File Management operations for a device.
 - Supported from: MX 5.0.
 
 
+details2 = steps.step.filesStep
+level3Items.size() = 3
 <a id="steps.step.filesStep.filesDownloadSourceURI">
 
 ### Download File Source URI
@@ -25572,7 +25619,7 @@ Use this *Sub-group* to perform File Management operations for a device.
 </span> <br><br>
 
 
-Enter the *Source URI* of a File on a Server to be Downloaded to the Device File System. You must also specify %%steps.step.filesStep.fileDownloadDestPathAndFileName%% to identify the Path and File Name in the *Device File System* to which the File will be stored once it has been Downloaded.
+Enter the *Source URI* of a File on a Server to be Downloaded to the Device File System. You must also specify **Download Destination Path and File Name** to identify the Path and File Name in the *Device File System* to which the File will be stored once it has been Downloaded.
 
 
 **Detail Information:**
@@ -25601,7 +25648,7 @@ Enter the *Source URI* of a File on a Server to be Downloaded to the Device File
 </span> <br><br>
 
 
-Enter the Destination Path and File Name of a File to be Downloaded from a Server to the *Device File System* when %%steps.step.filesStep.filesDownloadSourceURI%% is specified.
+Enter the Destination Path and File Name of a File to be Downloaded from a Server to the *Device File System* when **Download File Source URI** is specified.
 
 
 **Detail Information:**
@@ -25683,6 +25730,8 @@ Use this *Group* to configure how Firmware Over The Air (FOTA) operations are pe
 - Supported from: MX 9.1.
 
 
+details2 = steps.step.fotaStep
+level3Items.size() = 7
 <a id="steps.step.fotaStep.fotaUserControlMode">
 
 ### Device User Control Mode
@@ -25729,8 +25778,8 @@ Select whether the Device User should be allowed to control the Mode of the Life
 
 
 Select the mode used to perform Firmware Over The Air (FOTA) operations on a device.
-- If the Mode value !!2!! is selected, Firmware Over The Air (FOTA) operations will be performed in *Manual Mode* only when %%steps.step.fotaStep.fotaAction%% is specified and when one or more of the following are specified: %%steps.step.fotaStep.fotaActionEnterpriseResetSuwBypass%%, %%steps.step.fotaStep.fotaActionOsUpdateSuppressReboot%%, %%steps.step.fotaStep.fotaActionOsUpdateFile%%, %%steps.step.fotaStep.fotaActionVerifyManifestFile%%.
-- If the Mode value !!1!! is selected, Firmware Over The Air (FOTA) operations will be performed in *Automatic Mode* you do not need to specify any additional information.
+- If the Mode value ***Manual*** is selected, Firmware Over The Air (FOTA) operations will be performed in *Manual Mode* only when **Mode Manual Action** is specified and when one or more of the following are specified: **Enterprise Reset SUW Bypass**, **OS Upgrade Suppress Reboot**, **OS Update/Upgrade/Downgrade File**, **Verify Manifest File**.
+- If the Mode value ***Automatic*** is selected, Firmware Over The Air (FOTA) operations will be performed in *Automatic Mode* you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -25761,27 +25810,27 @@ Select the mode used to perform Firmware Over The Air (FOTA) operations on a dev
 </span> <br><br>
 
 
-Select an Action to perform in *Manual Mode* to explicitly perform a Firmware Over The Air (FOTA) operation on a device when the value !!2@steps.step.fotaStep.fotaMode!! is selected for %%steps.step.fotaStep.fotaMode%%.
-- If the value !!5!! is selected, you may also specify %%steps.step.fotaStep.fotaActionEnterpriseResetSuwBypass%% to control whether the Setup Wizard (SUW) will be bypassed on GMS devices following the Enterprise Reset.
-- If the value !!6!! is selected, you do not need to specify any additional information.
-- If the value !!7!! is selected, you do not need to specify any additional information.
-- If the value !!8!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
+Select an Action to perform in *Manual Mode* to explicitly perform a Firmware Over The Air (FOTA) operation on a device when the value ***Manual*** is selected for **Mode**.
+- If the value ***Enterprise Reset*** is selected, you may also specify **Enterprise Reset SUW Bypass** to control whether the Setup Wizard (SUW) will be bypassed on GMS devices following the Enterprise Reset.
+- If the value ***Factory Reset*** is selected, you do not need to specify any additional information.
+- If the value ***Full Device Wipe*** is selected, you do not need to specify any additional information.
+- If the value ***OS Update*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
 
 
-Note that the Action value !!8!! can be used to perform either an Upgrade or Downgrade operation on devices with Android versions < 8.0 but can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur on devices with Android versions >= 8.0.
-- If the value !!9!! is selected, you must also specify %%steps.step.fotaStep.fotaActionVerifyManifestFile%% to provide the path and file name of the Manifest file (which must already be in the device file system at the specified location with the specified name) to be used to perform the verification.
-- If the value !!10!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation. You may also specify %%steps.step.fotaStep.fotaActionOsUpdateSuppressReboot%% to control whether a reboot should automatically be performed following an A/B upgrade.
+Note that the Action value ***OS Update*** can be used to perform either an Upgrade or Downgrade operation on devices with Android versions < 8.0 but can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur on devices with Android versions >= 8.0.
+- If the value ***Verify Manifest*** is selected, you must also specify **Verify Manifest File** to provide the path and file name of the Manifest file (which must already be in the device file system at the specified location with the specified name) to be used to perform the verification.
+- If the value ***OS Upgrade*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation. You may also specify **OS Upgrade Suppress Reboot** to control whether a reboot should automatically be performed following an A/B upgrade.
 
 
-Note that the Action value !!10!! can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur.
-- If the value !!11!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateFile%% to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
+Note that the Action value ***OS Upgrade*** can only be used to perform an Upgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do a Downgrade, the Downgrade will NOT occur.
+- If the value ***OS Downgrade*** is selected, you must also specify **OS Update/Upgrade/Downgrade File** to provide the path and file name of the image file (which must already be in the device file system at the specified location with the specified name) to be used to perform the operation.
 
 
-Note that the Action value !!11!! can only be used to perform a Downgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do an Upgrade, the Upgrade will NOT occur.
-- If the value !!12!! or !!13!! is selected, you must also specify %%steps.step.fotaStep.fotaActionOsUpdateStreamingFile%% to provide the URL of the image file to be used to perform the operation.
+Note that the Action value ***OS Downgrade*** can only be used to perform a Downgrade operation on devices with Android versions >= 8.0. Furthermore, if the provided ZIP file attempts to do an Upgrade, the Upgrade will NOT occur.
+- If the value ***OS Upgrade Streaming*** or ***OS Downgrade Streaming*** is selected, you must also specify **OS Streaming File URL** to provide the URL of the image file to be used to perform the operation.
 
 
-Note that the Action value !!12!! or !!13!! can only be used to perform a streaming upgrade operation on devices with Android version >= 8.0
+Note that the Action value ***OS Upgrade Streaming*** or ***OS Downgrade Streaming*** can only be used to perform a streaming upgrade operation on devices with Android version >= 8.0
 
 
 **Detail Information:**
@@ -25812,7 +25861,7 @@ Note that the Action value !!12!! or !!13!! can only be used to perform a stream
 </span> <br><br>
 
 
-Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, when the Action value !!5@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, when the Action value ***Enterprise Reset*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -25843,7 +25892,7 @@ Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when perfo
 </span> <br><br>
 
 
-Select whether the automatic reboot that would normally be performed following the successful completion of an A/B Upgrade should be suppressed, when the Action value !!10@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%. Note that if the automatic reboot is suppressed, the reboot will still be required to activate the new OS following the A/B Upgrade, and the later performance of that reboot, at a suitable time, will become the responsibility of the EMM choosing to suppress the automatic reboot.
+Select whether the automatic reboot that would normally be performed following the successful completion of an A/B Upgrade should be suppressed, when the Action value ***OS Upgrade*** is selected for **Mode Manual Action**. Note that if the automatic reboot is suppressed, the reboot will still be required to activate the new OS following the A/B Upgrade, and the later performance of that reboot, at a suitable time, will become the responsibility of the EMM choosing to suppress the automatic reboot.
 
 
 **Detail Information:**
@@ -25874,7 +25923,7 @@ Select whether the automatic reboot that would normally be performed following t
 </span> <br><br>
 
 
-Enter the path and file name of an OS Update or Patch image file, which must already exist at the specified location in the device file system, to be used to update a device when one of the Action values !!8@steps.step.fotaStep.fotaAction!!, !!10@steps.step.fotaStep.fotaAction!!, or !!11@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Enter the path and file name of an OS Update or Patch image file, which must already exist at the specified location in the device file system, to be used to update a device when one of the Action values ***OS Update***, ***OS Upgrade***, or ***OS Downgrade*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -25903,7 +25952,7 @@ Enter the path and file name of an OS Update or Patch image file, which must alr
 </span> <br><br>
 
 
-Enter the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a device when the Action value !!9@steps.step.fotaStep.fotaAction!! is selected for %%steps.step.fotaStep.fotaAction%%.
+Enter the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a device when the Action value ***Verify Manifest*** is selected for **Mode Manual Action**.
 
 
 **Detail Information:**
@@ -25953,6 +26002,8 @@ Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 - Supported from: MX 8.3.
 
 
+details2 = steps.step.gmsStep
+level3Items.size() = 2
 <a id="steps.step.gmsStep.gmsFeatureSet">
 
 ### GMS Feature Set
@@ -25968,11 +26019,11 @@ Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 
 
 Select the amount of functionality of Google Mobile Services (GMS) to enable.
-- If the value !!1!! is selected, the the entire set of Google Mobile Services (GMS), will be enabled for use. Note that if Google Mobile Services are allowed to be used, may collect and send data to Google.
+- If the value ***All - Full Set of GMS Features*** is selected, the the entire set of Google Mobile Services (GMS), will be enabled for use. Note that if Google Mobile Services are allowed to be used, may collect and send data to Google.
 
 
-- If the value !!2!! is selected, a limited (fixed) subset of Google Mobile Services (GMS), will be enabled for use. The subset will automatically be chosen to ensure that basic device functionality is not impaired, that all enabled Google Mobile Services operate usefully, and that no enabled Google Mobile Services send any data to Google.
-- If the value !!3!! is selected, a selected subset of Google Mobile Services (GMS) features will be enabled for use.
+- If the value ***Restricted - Fixed Minimal Set of GMS Features*** is selected, a limited (fixed) subset of Google Mobile Services (GMS), will be enabled for use. The subset will automatically be chosen to ensure that basic device functionality is not impaired, that all enabled Google Mobile Services operate usefully, and that no enabled Google Mobile Services send any data to Google.
+- If the value ***Profiled - Selected Subset of GMS Features*** is selected, a selected subset of Google Mobile Services (GMS) features will be enabled for use.
 
 
 **Detail Information:**
@@ -26007,7 +26058,7 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 
 
 Select the Google Mobile Services (GMS) profile to enable.
-- If the value !!1!! is selected, Chrome Browser will be enabled for use. - If the value !!2!! is selected, Google Maps will be enabled for use. - If the value !!3!! is selected, Firebase Cloud Messaging will be enabled for use. - If the value !!4!! is selected, Combination of Chrome, Maps and FCM will be enabled for use.
+- If the value ***Chrome Browser*** is selected, Chrome Browser will be enabled for use. - If the value ***Google Maps*** is selected, Google Maps will be enabled for use. - If the value ***Firebase Cloud Messaging*** is selected, Firebase Cloud Messaging will be enabled for use. - If the value ***Combination of Chrome and Maps and FCM*** is selected, Combination of Chrome, Maps and FCM will be enabled for use.
 
 
 **Detail Information:**
@@ -26059,6 +26110,8 @@ Use this *Group* to configure the operation of the General Packet Radio Service 
 - Supported from: MX 8.4.
 
 
+details2 = steps.step.gprsStep
+level3Items.size() = 20
 <a id="steps.step.gprsStep.gprsAction">
 
 ### Action
@@ -26074,23 +26127,23 @@ Use this *Group* to configure the operation of the General Packet Radio Service 
 
 
 Select an Action to manage the GPRS APNs on a device:
-- If the value !!1!! is selected, a new APN will be added, or an existing APN will be overwritten with a new APN. You must also specify %%steps.step.gprsStep.gprsActionAddApnName%% to provide the name of the new APN to be added or the name of the existing APN to be replaced. In addition, you must also specify some or all of the following to provide the APN definition:
-- %%steps.step.gprsStep.gprsActionAddApnReplaceIfExisting%%
-- %%steps.step.gprsStep.gprsActionAddApnMakeDefault%%
-- %%steps.step.gprsStep.gprsActionAddApnAccessPoint%%
-- %%steps.step.gprsStep.gprsActionAddApnUserName%%
-- %%steps.step.gprsStep.gprsActionAddApnPassword%%
-- %%steps.step.gprsStep.gprsActionAddApnPort%%
-- %%steps.step.gprsStep.gprsActionAddApnProxy%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsPort%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsProxy%%
-- %%steps.step.gprsStep.gprsActionAddApnServer%%
-- %%steps.step.gprsStep.gprsActionAddApnMmsc%%
-- %%steps.step.gprsStep.gprsActionAddApnType%%
-- %%steps.step.gprsStep.gprsActionAddApnMcc%%
-- %%steps.step.gprsStep.gprsActionAddApnMnc%%
-- If the value !!2!! is selected, an existing APN will be removed. You must also specify %%steps.step.gprsStep.gprsActionRemoveApnName%% to provide the name of the APN to be removed.
-- If the value !!3!! is selected, all existing APNs will be removed and you do not need to specify any additional information.
+- If the value ***AddApn*** is selected, a new APN will be added, or an existing APN will be overwritten with a new APN. You must also specify **Add APN Name** to provide the name of the new APN to be added or the name of the existing APN to be replaced. In addition, you must also specify some or all of the following to provide the APN definition:
+- **Add APN Replace If Existing**
+- **Add APN Make Default**
+- **Add APN Access Point**
+- **Add APN User Name**
+- **Add APN Password**
+- **Add APN Port**
+- **Add APN Proxy**
+- **Add APN MMS Port**
+- **Add APN MMS Proxy**
+- **Add APN Server**
+- **Add APN MMSC**
+- **Add APN Type**
+- **Add APN MCC**
+- **Add APN MNC**
+- If the value ***RemoveApn*** is selected, an existing APN will be removed. You must also specify **Remove APN Name** to provide the name of the APN to be removed.
+- If the value ***RemoveAllApns*** is selected, all existing APNs will be removed and you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -26121,7 +26174,7 @@ Select an Action to manage the GPRS APNs on a device:
 </span> <br><br>
 
 
-Enter the name of an APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the name of an APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -26150,9 +26203,9 @@ Enter the name of an APN to be added when the value !!1@steps.step.gprsStep.gprs
 </span> <br><br>
 
 
-Select what happens when an APN already exists with the APN name being added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, if an APN with the name specified via %%steps.step.gprsStep.gprsActionAddApnName%% already exists, it will be replaced by the definition of the APN being added.
-- If the value !!0!! is selected, if an APN with the name specified via %%steps.step.gprsStep.gprsActionAddApnName%% already exists, it will NOT be replaced. The existing APN will be preserved and the new APN will NOT be added.
+Select what happens when an APN already exists with the APN name being added when the value ***AddApn*** is selected for **Action**.
+- If the value ***Replace Existing*** is selected, if an APN with the name specified via **Add APN Name** already exists, it will be replaced by the definition of the APN being added.
+- If the value ***Keep Existing*** is selected, if an APN with the name specified via **Add APN Name** already exists, it will NOT be replaced. The existing APN will be preserved and the new APN will NOT be added.
 
 
 **Detail Information:**
@@ -26183,8 +26236,8 @@ Select what happens when an APN already exists with the APN name being added whe
 </span> <br><br>
 
 
-Select whether a new APN being added should become the new default APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%. - If the value !!1!! is selected, the new APN being added will become the new default APN and will be preferred over other APNs when establishing a cellular data connection.
-- If the value !!0!! is selected, the new APN will not become the new default APN and whatever APN was previously the default will remain the default.
+Select whether a new APN being added should become the new default APN when the value ***AddApn*** is selected for **Action**. - If the value ***Yes*** is selected, the new APN being added will become the new default APN and will be preferred over other APNs when establishing a cellular data connection.
+- If the value ***No*** is selected, the new APN will not become the new default APN and whatever APN was previously the default will remain the default.
 
 
 **Detail Information:**
@@ -26215,7 +26268,7 @@ Select whether a new APN being added should become the new default APN when the 
 </span> <br><br>
 
 
-Enter a value that uniquely identifies an APN on the network when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a value that uniquely identifies an APN on the network when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -26249,7 +26302,7 @@ APN Identifiers are allocated by cellular carriers to identify the networks that
 </span> <br><br>
 
 
-Enter a user name that can be used to authenticate to an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a user name that can be used to authenticate to an APN when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -26283,7 +26336,7 @@ A network accessed via a given APN Identifier may or may not require authenticat
 </span> <br><br>
 
 
-Enter a password that can be used to authenticate to an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a password that can be used to authenticate to an APN when the value ***AddApn*** is selected for **Action**.
 
 
 A network accessed via a given APN Identifier may or may not require authentication. If authentication is required, a user name is generally always required and a password MAY also be required.
@@ -26315,7 +26368,7 @@ A network accessed via a given APN Identifier may or may not require authenticat
 </span> <br><br>
 
 
-Enter the port number of an HTTP proxy to use for all traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the port number of an HTTP proxy to use for all traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 
 
 If a Proxy is required, a Port is also generally always required.
@@ -26347,7 +26400,7 @@ If a Proxy is required, a Port is also generally always required.
 </span> <br><br>
 
 
-Enter the address or name of an HTTP proxy to use for all traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the address or name of an HTTP proxy to use for all traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If a Proxy is required, a Port is also generally always required.
 
 
@@ -26377,7 +26430,7 @@ Enter the address or name of an HTTP proxy to use for all traffic over the netwo
 </span> <br><br>
 
 
-Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
@@ -26407,7 +26460,7 @@ Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Ser
 </span> <br><br>
 
 
-Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging Service) MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 - If an MMS Proxy is required, an MMS Port is also generally always required.
 
 
@@ -26437,7 +26490,7 @@ Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging
 </span> <br><br>
 
 
-Enter a WAP Gateway Server address that should be used for an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter a WAP Gateway Server address that should be used for an APN when the value ***AddApn*** is selected for **Action**.
 
 
 WAP Gateways are rarely, if ever, used on or supported by modern cellular carrier networks.
@@ -26469,7 +26522,7 @@ WAP Gateways are rarely, if ever, used on or supported by modern cellular carrie
 </span> <br><br>
 
 
-Enter the Multimedia Messaging Service Center (MMSC) address required to route MMS traffic over the network accessed via an APN when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Multimedia Messaging Service Center (MMSC) address required to route MMS traffic over the network accessed via an APN when the value ***AddApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -26498,7 +26551,7 @@ Enter the Multimedia Messaging Service Center (MMSC) address required to route M
 </span> <br><br>
 
 
-Enter the Type of APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Type of APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -26532,7 +26585,7 @@ The value to specify for Type should be obtained from the cellular carrier whose
 </span> <br><br>
 
 
-Enter the Mobile Country Code (MCC) of the APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Mobile Country Code (MCC) of the APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 
@@ -26566,7 +26619,7 @@ The MCC generally match the SIM Card being used or the APN will not be usable.
 </span> <br><br>
 
 
-Enter the Mobile Network Code (MNC) of the APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the Mobile Network Code (MNC) of the APN to be added when the value ***AddApn*** is selected for **Action**.
 
 
 The MNC generally match the SIM Card being used or the APN will not be usable.
@@ -26598,10 +26651,10 @@ The MNC generally match the SIM Card being used or the APN will not be usable.
 </span> <br><br>
 
 
-Select the Type of Authentication to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, No Authentication Protocol will be used to authenticate for the APN.
-- If the value !!2!! is selected, the Password Authentication Protocol (PAP) will be used to authenticate for the APN.
-- If the value !!3!! is selected, the Challenge Handshake Authentication Protocol (CHAP) will be used to authenticate for the APN.
+Select the Type of Authentication to be used for APN to be added when the value ***AddApn*** is selected for **Action**.
+- If the value ***None*** is selected, No Authentication Protocol will be used to authenticate for the APN.
+- If the value ***PAP*** is selected, the Password Authentication Protocol (PAP) will be used to authenticate for the APN.
+- If the value ***CHAP*** is selected, the Challenge Handshake Authentication Protocol (CHAP) will be used to authenticate for the APN.
 
 
 **Detail Information:**
@@ -26632,12 +26685,12 @@ Select the Type of Authentication to be used for APN to be added when the value 
 </span> <br><br>
 
 
-Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
-- If the value !!1!! is selected, No MVNO will be used to configured for the APN.
-- If the value !!2!! is selected, the MVNO will be specified via an SPN (Service Provider Name) value for the APN, which you must also specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!3!! is selected, the MVNO will be specified via an IMSI (International Mobile Subscriber Identity) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!4!! is selected, the MVNO will be specified via an GID (Group Identifier) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
-- If the value !!5!! is selected, the MVNO will be specified via an GID (Integrated Circuit Card ID) value for the APN, which you must specify via %%steps.step.gprsStep.gprsActionAddApnMvnoMatchData%%.
+Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be added when the value ***AddApn*** is selected for **Action**.
+- If the value ***None*** is selected, No MVNO will be used to configured for the APN.
+- If the value ***SPN*** is selected, the MVNO will be specified via an SPN (Service Provider Name) value for the APN, which you must also specify via **Add MVNO Match Data**.
+- If the value ***IMSI*** is selected, the MVNO will be specified via an IMSI (International Mobile Subscriber Identity) value for the APN, which you must specify via **Add MVNO Match Data**.
+- If the value ***GID*** is selected, the MVNO will be specified via an GID (Group Identifier) value for the APN, which you must specify via **Add MVNO Match Data**.
+- If the value ***ICCID*** is selected, the MVNO will be specified via an GID (Integrated Circuit Card ID) value for the APN, which you must specify via **Add MVNO Match Data**.
 
 
 **Detail Information:**
@@ -26668,7 +26721,7 @@ Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be a
 </span> <br><br>
 
 
-Enter the MVNO (Mobile Virtual Network Operator) Match Data to be used for APN to be added when the value !!1@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%% and if a value other than !!1@steps.step.gprsStep.gprsActionAddApnMvnoType!! is selected for %%steps.step.gprsStep.gprsActionAddApnMvnoType%%.
+Enter the MVNO (Mobile Virtual Network Operator) Match Data to be used for APN to be added when the value ***AddApn*** is selected for **Action** and if a value other than ***None*** is selected for **Add MVNO Type**.
 
 
 The exact value to be specified depends on the MVNO Type specified. Consult your MVNO carrier for information on the MVNO Type and MVNO Match Data value to be used.
@@ -26700,7 +26753,7 @@ The exact value to be specified depends on the MVNO Type specified. Consult your
 </span> <br><br>
 
 
-Enter the name of an APN to be removed when the value !!2@steps.step.gprsStep.gprsAction!! is selected for %%steps.step.gprsStep.gprsAction%%.
+Enter the name of an APN to be removed when the value ***RemoveApn*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -26747,6 +26800,8 @@ Use this *Group* to configure General User Interface (UI) aspects of a device.
 - Supported from: MX 9.1.
 
 
+details2 = steps.step.uiStep
+level3Items.size() = 31
 <a id="steps.step.uiStep.uiAction">
 
 ### Action
@@ -26761,14 +26816,14 @@ Use this *Group* to configure General User Interface (UI) aspects of a device.
 </span> <br><br>
 
 
-Select an Action to perform miscellaneous UI behavior on a device: - If the Action value !!1!! is selected, any data currently in the clipboard of the device will be discarded, This will cause the data to no longer be available to paste.
-- If the Action value !!2!! is selected, the list of previously used (launched) applications will be cleared. This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
-- If the Action value !!3!! is selected, the cache of a specified application will be cleared. The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that you must also specify %%steps.step.uiStep.uiActionClearApplicationCachePackage%% to identify the application whose cache is to be cleared.
-- If the Action value !!4!! is selected, all GMS applications that are considered *Safe to Disable* will be enabled.
-- If the Action value !!5!! is selected, all GMS applications that are considered *Safe to Disable* will be disabled.
+Select an Action to perform miscellaneous UI behavior on a device: - If the Action value ***Clear Clipboard*** is selected, any data currently in the clipboard of the device will be discarded, This will cause the data to no longer be available to paste.
+- If the Action value ***Clear Recently Used Apps List*** is selected, the list of previously used (launched) applications will be cleared. This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
+- If the Action value ***Clear Application Cache*** is selected, the cache of a specified application will be cleared. The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that you must also specify **Clear Application Cache Package** to identify the application whose cache is to be cleared.
+- If the Action value ***Turn On All GMS Applications*** is selected, all GMS applications that are considered *Safe to Disable* will be enabled.
+- If the Action value ***Turn Off All GMS Applications*** is selected, all GMS applications that are considered *Safe to Disable* will be disabled.
 
 
-Note: Since it is possible to turn GMS Applications on or off individually, using the values !!4!! and !!5!! will guarantee only that all GMS Applications are On or Off immediately after the requested Action is completed. Subsequent Actions could result in any mixture of GMS Applications being turned On or Off. The behavior of the system or any GMS applications under such conditions is not guaranteed.
+Note: Since it is possible to turn GMS Applications on or off individually, using the values ***Turn On All GMS Applications*** and ***Turn Off All GMS Applications*** will guarantee only that all GMS Applications are On or Off immediately after the requested Action is completed. Subsequent Actions could result in any mixture of GMS Applications being turned On or Off. The behavior of the system or any GMS applications under such conditions is not guaranteed.
 
 
 **Detail Information:**
@@ -26802,7 +26857,7 @@ Note: Since it is possible to turn GMS Applications on or off individually, usin
 </span> <br><br>
 
 
-Enter the *Android Package Name* for which the cache should be cleared by a Clear Application Cache Action when the value !!3@steps.step.uiStep.uiAction!! is selected for %%steps.step.uiStep.uiAction%%.
+Enter the *Android Package Name* for which the cache should be cleared by a Clear Application Cache Action when the value ***Clear Application Cache*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -26834,7 +26889,7 @@ Enter the *Android Package Name* for which the cache should be cleared by a Clea
 </span> <br><br>
 
 
-Enter the *Android Package Name* for which all user data should be cleared when performing a Clear Application User Data Action when the value !!10@steps.step.uiStep.uiAction!! is selected for %%steps.step.uiStep.uiAction%%.
+Enter the *Android Package Name* for which all user data should be cleared when performing a Clear Application User Data Action when the value ***Clear Application User Data*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -26901,8 +26956,8 @@ Select whether the Device User will be presented with the option to control the 
 
 
 Select whether a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!1!! is selected, an App Info Icon will be shown on Long Press on Recent App Header
-- If the value !!2!! is selected, an App Info Icon will NOT be shown on Long Press on Recent App Header
+- If the value ***Show*** is selected, an App Info Icon will be shown on Long Press on Recent App Header
+- If the value ***Hide*** is selected, an App Info Icon will NOT be shown on Long Press on Recent App Header
 
 
 **Detail Information:**
@@ -26939,10 +26994,10 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 Select whether the Device User prompted for corrections to potential mistakes made during entry of data on a device.
 
 
-- If the value !!2!! is selected, the Device User will NOT be prompted to correct potential mistakes during data entry.
+- If the value ***Off*** is selected, the Device User will NOT be prompted to correct potential mistakes during data entry.
 
 
-- If the value !!1!! is selected, the Device User will be prompted to correct potential mistakes during data entry.
+- If the value ***On*** is selected, the Device User will be prompted to correct potential mistakes during data entry.
 
 
 
@@ -26979,8 +27034,8 @@ Select whether the Device User prompted for corrections to potential mistakes ma
 
 
 Select whether the charging system be allowed to display the battery charging state using the charging LED when a device is in operating mode.
-- If the value !!2!! is selected, the charging system will be prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
-- If the value !!1!! is selected, the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device.
+- If the value ***Disable*** is selected, the charging system will be prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
+- If the value ***Enable*** is selected, the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device.
 
 
 **Detail Information:**
@@ -27015,8 +27070,8 @@ Select whether the charging system be allowed to display the battery charging st
 
 
 Select whether the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
-- If the value !!2!! is selected, the Device User will NOT automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
-- If the value !!1!! is selected, the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold, perhaps helping to avoid emergency shutdown and potential loss of data as a result.
+- If the value ***Disable*** is selected, the Device User will NOT automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold.
+- If the value ***Enable*** is selected, the Device User will automatically be presented with the Battery Swap UI when the device battery level drops below a fixed threshold, perhaps helping to avoid emergency shutdown and potential loss of data as a result.
 
 
 **Detail Information:**
@@ -27051,8 +27106,8 @@ Select whether the Device User will automatically be presented with the Battery 
 
 
 Select whether the on-screen Navigation Bar will be displayed and hence whether it will take up screen real estate and can be used to navigate the device UI.
-- If the value !!2!! is selected, the on-screen Navigation Bar will NOT be displayed and hence whether it will NOT take up any screen real estate, and hence cannot be used to navigate the device UI.
-- If the value !!1!! is selected, the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI.
+- If the value ***Off*** is selected, the on-screen Navigation Bar will NOT be displayed and hence whether it will NOT take up any screen real estate, and hence cannot be used to navigate the device UI.
+- If the value ***On*** is selected, the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI.
 
 
 **Detail Information:**
@@ -27155,8 +27210,8 @@ Values MUST specify a *Language*, and optionally a *Region*.
 
 
 Select whether a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!1!! is selected, a Long Press on the Home Key will Launch the Google Assistant.
-- If the value !!2!! is selected, a Long Press on the Home Key will NOT Launch the Google Assistant.
+- If the value ***Allow*** is selected, a Long Press on the Home Key will Launch the Google Assistant.
+- If the value ***Disallow*** is selected, a Long Press on the Home Key will NOT Launch the Google Assistant.
 
 
 **Detail Information:**
@@ -27191,8 +27246,8 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 
 
 Select whether the Network Notification Popup will be presented to inform the Device User that their network may be monitored.
-- If the value !!2!! is selected, the Network Notification Popup will NOT be presented, and hence the Device User will NOT be notified that their network may be monitored, even if circumstances warrant such notification.
-- If the value !!1!! is selected, the Network Notification Popup may be presented, and hence the Device User may be notified that their network may be monitored, if circumstances warrant such notification.
+- If the value ***Off*** is selected, the Network Notification Popup will NOT be presented, and hence the Device User will NOT be notified that their network may be monitored, even if circumstances warrant such notification.
+- If the value ***On*** is selected, the Network Notification Popup may be presented, and hence the Device User may be notified that their network may be monitored, if circumstances warrant such notification.
 
 
 **Detail Information:**
@@ -27227,8 +27282,8 @@ Select whether the Network Notification Popup will be presented to inform the De
 
 
 Select whether the *On Screen Power Button* feature will be turned ON or OFF. the *On Screen Power Button* feature allows a button to be displayed which allows the Device User to turn the device off, similar to the operation of the physical power button (if any) and can be used to improve the user experience in cases where a physical power button is not present or is not convenient to use, such as when the Device User is wearing gloves.
-- If the value !!2!! is selected, the *On Screen Power Button* feature will be turned OFF and hence the on-screen power button will NOT be displayed.
-- If the value !!1!! is selected, the *On Screen Power Button* feature will be turned ON and hence the on-screen power button WILL be displayed.
+- If the value ***Disable*** is selected, the *On Screen Power Button* feature will be turned OFF and hence the on-screen power button will NOT be displayed.
+- If the value ***Enable*** is selected, the *On Screen Power Button* feature will be turned ON and hence the on-screen power button WILL be displayed.
 
 
 **Detail Information:**
@@ -27263,8 +27318,8 @@ Select whether the *On Screen Power Button* feature will be turned ON or OFF. th
 
 
 Select whether the Device User is allowed to Pull Down the Notification Bar to interact with notifications in the Notifications Panel.
-- If the value !!2!! is selected, the Device User will NOT be allowed to Pull Down the Notification Bar, and hence will not be allowed to interact with notifications in the Notifications Panel.
-- If the value !!1!! is selected, the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Off*** is selected, the Device User will NOT be allowed to Pull Down the Notification Bar, and hence will not be allowed to interact with notifications in the Notifications Panel.
+- If the value ***On*** is selected, the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel.
 
 
 **Detail Information:**
@@ -27370,8 +27425,8 @@ Select whether a New Pairing Popup will be presented when an unpaired peripheral
 
 
 Select whether passwords should be shown (displayed) when entered on the device or hidden (masked).
-- If the value !!2!! is selected, passwords will globally be hidden (masked) whenever they are being entered on the device.
-- If the value !!1!! is selected, passwords will globally be shown (displayed) whenever they are being entered on the device.
+- If the value ***Off*** is selected, passwords will globally be hidden (masked) whenever they are being entered on the device.
+- If the value ***On*** is selected, passwords will globally be shown (displayed) whenever they are being entered on the device.
 
 
 **Detail Information:**
@@ -27406,8 +27461,8 @@ Select whether passwords should be shown (displayed) when entered on the device 
 
 
 Select whether the Virtual Keyboard will be shown when the Physical Keyboard is Active.
-- If the value !!2!! is selected, the Virtual Keyboard will NOT be shown if the device has a Physical Keyboard that is Active. This can help avoid the annoyance and confusing of using up screen real-estate to display an on-screen keyboard when the Device User is using a Physical Keyboard to enter data.
-- If the value !!1!! is selected, the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
+- If the value ***Off*** is selected, the Virtual Keyboard will NOT be shown if the device has a Physical Keyboard that is Active. This can help avoid the annoyance and confusing of using up screen real-estate to display an on-screen keyboard when the Device User is using a Physical Keyboard to enter data.
+- If the value ***On*** is selected, the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
 
 
 **Detail Information:**
@@ -27442,8 +27497,8 @@ Select whether the Virtual Keyboard will be shown when the Physical Keyboard is 
 
 
 Select whether the Android Status Bar should be displayed.
-- If the value !!2!! is selected, the Android Status Bar will not be displayed, which also means that the Device User will not be allowed to interact with notifications in the Notifications Panel.
-- If the value !!1!! is selected, the Android Status Bar will be displayed, which also means that the Device User might be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Hide*** is selected, the Android Status Bar will not be displayed, which also means that the Device User will not be allowed to interact with notifications in the Notifications Panel.
+- If the value ***Show*** is selected, the Android Status Bar will be displayed, which also means that the Device User might be allowed to interact with notifications in the Notifications Panel.
 
 
 **Detail Information:**
@@ -27512,8 +27567,8 @@ Select whether the Device User will be allowed to utilize the clipboard on a dev
 
 
 Select whether the Date in the Notification Panel can be used to invoke the Clock Application.
-- If the value !!1!! is selected, clicking the Date in the Notification Panel will invoke the Clock Application.
-- If the value !!2!! is selected, clicking the Date in the Notification Panel will NOT invoke the Clock Application.
+- If the value ***Allow*** is selected, clicking the Date in the Notification Panel will invoke the Clock Application.
+- If the value ***Disallow*** is selected, clicking the Date in the Notification Panel will NOT invoke the Clock Application.
 
 
 **Detail Information:**
@@ -27548,8 +27603,8 @@ Select whether the Date in the Notification Panel can be used to invoke the Cloc
 
 
 Select whether the Device User will be allowed to utilize the Home Key on a device to leave the current context and return to the Home/Launcher screen.
-- If the value !!2!! is selected, the Home key will be ignored and will cause no action if it is pressed.
-- If the value !!1!! is selected, the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed.
+- If the value ***Off*** is selected, the Home key will be ignored and will cause no action if it is pressed.
+- If the value ***On*** is selected, the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed.
 
 
 **Detail Information:**
@@ -27584,8 +27639,8 @@ Select whether the Device User will be allowed to utilize the Home Key on a devi
 
 
 Select whether the Device User is allowed to Use Magnification Gestures.
-- If the value !!2!! is selected, the Magnification Gestures will be ignored and no action will be taken if they are used by the Device User.
-- If the value !!1!! is selected, the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User.
+- If the value ***Off*** is selected, the Magnification Gestures will be ignored and no action will be taken if they are used by the Device User.
+- If the value ***On*** is selected, the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User.
 
 
 **Detail Information:**
@@ -27617,8 +27672,8 @@ Select whether the Device User is allowed to Use Magnification Gestures.
 
 
 Select whether the Device User is allowed to Use the Recent Apps Key to access recently launched applications.
-- If the value !!2!! is selected, the Recent Apps Key will be ignored, and hence the Device User will not be allowed to access recently launched applications.
-- If the value !!1!! is selected, the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications.
+- If the value ***Off*** is selected, the Recent Apps Key will be ignored, and hence the Device User will not be allowed to access recently launched applications.
+- If the value ***On*** is selected, the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications.
 
 
 **Detail Information:**
@@ -27650,8 +27705,8 @@ Select whether the Device User is allowed to Use the Recent Apps Key to access r
 
 
 Select whether Split Screen Mode is allowed to be used on the device.
-- If the value !!2!! is selected, the use of Split Screen Mode will be blocked on the device.
-- If the value !!1!! is selected, the use of Split Screen Mode will be allowed on the device.
+- If the value ***Disallow*** is selected, the use of Split Screen Mode will be blocked on the device.
+- If the value ***Allow*** is selected, the use of Split Screen Mode will be allowed on the device.
 
 
 **Detail Information:**
@@ -27686,8 +27741,8 @@ Select whether Split Screen Mode is allowed to be used on the device.
 
 
 Select whether Primary Device User is allowed to invoke UI to manage Multi User, including the ability to Create, Delete, and limit the actions of Secondary Users.
-- If the value !!2!! is selected, the Primary Device User will not be allowed to manage Secondary Users, even if the device supports multiple users.
-- If the value !!1!! is selected, the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users.
+- If the value ***Disallow*** is selected, the Primary Device User will not be allowed to manage Secondary Users, even if the device supports multiple users.
+- If the value ***Allow*** is selected, the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users.
 
 
 **Detail Information:**
@@ -27721,11 +27776,11 @@ Select whether Primary Device User is allowed to invoke UI to manage Multi User,
 </span> <br><br>
 
 
-Select the operational mode of the Touch Panel in selected devices: - If the value !!Stylus and Finger!! is selected, the Touch Panel will be configured to optimize use with a Stylus or an ungloved Finger.
-- If the value !!Glove and Finger!! is selected, the Touch Panel will be configured to optimize use with a Gloved finger or an ungloved Finger.
-- If the value !!Finger!! is selected, the Touch Panel will be configured to optimize an ungloved Finger.
-- If the value !!Stylus and Glove and Finger!! is selected, the Touch Panel will be configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
-- If the value !!Finger and Wet!! is selected, the Touch Panel will be configured to optimize use with a finger on a wet touch panel
+Select the operational mode of the Touch Panel in selected devices: - If the value ***Stylus or Finger*** is selected, the Touch Panel will be configured to optimize use with a Stylus or an ungloved Finger.
+- If the value ***Glove or Finger*** is selected, the Touch Panel will be configured to optimize use with a Gloved finger or an ungloved Finger.
+- If the value ***Finger Only*** is selected, the Touch Panel will be configured to optimize an ungloved Finger.
+- If the value ***Stylus or Glove or Finger*** is selected, the Touch Panel will be configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
+- If the value ***Finger and Wet*** is selected, the Touch Panel will be configured to optimize use with a finger on a wet touch panel
 
 
 Not all devices support the ability to configure the Touch Panel mode and those that do may not support every mode.
@@ -27801,8 +27856,8 @@ Not all devices support the ability to configure the Touch Panel to account for 
 
 
 Select whether the *Large Key Indicator* feature, which allows a large on-screen indicator to be displayed to indicate the state physical keypad on the device (if any) and which can assist the Device User in cases where multiple key sequences are required.
-- If the value !!2!! is selected, the *Large Key Indicator* feature will be turned OFF and hence the on-screen indicator will NOT be displayed.
-- If the value !!1!! is selected, the *Large Key Indicator* feature will be turned ON and hence the on-screen indicator WILL be displayed.
+- If the value ***Turn Off*** is selected, the *Large Key Indicator* feature will be turned OFF and hence the on-screen indicator will NOT be displayed.
+- If the value ***Turn On*** is selected, the *Large Key Indicator* feature will be turned ON and hence the on-screen indicator WILL be displayed.
 
 
 **Detail Information:**
@@ -27834,8 +27889,8 @@ Select whether the *Large Key Indicator* feature, which allows a large on-screen
 
 
 Select whether the Device User will be allowed to turn the *Large Key Indicator* feature ON or OFF.
-- If the value !!1!! is selected, the Device User WILL be allowed to turn the *Large Key Indicator* feature ON or OFF.
-- If the value !!2!! is selected, the Device User will NOT be allowed to turn the *Large Key Indicator* feature ON or OFF.
+- If the value ***Enable*** is selected, the Device User WILL be allowed to turn the *Large Key Indicator* feature ON or OFF.
+- If the value ***Disable*** is selected, the Device User will NOT be allowed to turn the *Large Key Indicator* feature ON or OFF.
 
 
 **Detail Information:**
@@ -27887,6 +27942,8 @@ Use this *Sub-group* to configure the network host name on the device.
 - Supported from: MX 5.1.
 
 
+details2 = steps.step.hostStep
+level3Items.size() = 1
 <a id="steps.step.hostStep.hostDeviceName">
 
 ### Device Name
@@ -27954,6 +28011,8 @@ Use this *Group* to configure how the keys on the physical keyboard (if any) of 
 - Supported from: MX 4.4.
 
 
+details2 = steps.step.keymapStep
+level3Items.size() = 3
 <a id="steps.step.keymapStep.keymapAction">
 
 ### Action
@@ -27969,8 +28028,8 @@ Use this *Group* to configure how the keys on the physical keyboard (if any) of 
 
 
 Select an Action to affect the behaviors mapped to the keys on the physical keyboard (if any) of a device:
-- If the value !!1!! is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify %%steps.step.keymapStep.keymapActionAddMappingKeyId%% to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the *Sub-array* %%steps.step.keymapStep.keymapActionAddMappingBehaviors%% to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
-- If the value !!2!! is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
+- If the value ***Add Mapping*** is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify **Add Mapping Key ID** to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the *Sub-array* **Add Mapping Behaviors** to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
+- If the value ***Reset All Mappings*** is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
 
 
 **Detail Information:**
@@ -28004,7 +28063,7 @@ Select an Action to affect the behaviors mapped to the keys on the physical keyb
 </span> <br><br>
 
 
-Enter a value that uniquely identifies a physical key on the physical keyboard of a device for which one or more behaviors are to be specified when the value !!1@steps.step.keymapStep.keymapAction!! is selected for %%steps.step.keymapStep.keymapAction%%.
+Enter a value that uniquely identifies a physical key on the physical keyboard of a device for which one or more behaviors are to be specified when the value ***Add Mapping*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -28111,22 +28170,22 @@ Select the name of the table into which a specific behavior will be stored. Mapp
 Note that due to variations in keyboard size and layout, not all keyboard states may be supported on all devices or on all keyboard possible on any given device. Some or all of the following may values may be supported:
 
 
-- If the value !!Base!! is selected, the Base Mapping table will be selected. The Base Mapping table defines the behavior that will be performed for a physical key when it is pressed while no special keyboard state is active.
+- If the value ***Base*** is selected, the Base Mapping table will be selected. The Base Mapping table defines the behavior that will be performed for a physical key when it is pressed while no special keyboard state is active.
 
 
-- If the value !!Blue!! is selected, the Blue Mapping table will be selected. The Blue Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
+- If the value ***Blue*** is selected, the Blue Mapping table will be selected. The Blue Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
 
 
-- If the value !!Orange!! is selected, the Orange Mapping table will be selected. The Orange Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
+- If the value ***Orange*** is selected, the Orange Mapping table will be selected. The Orange Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
 
 
-- If the value !!Grey!! is selected, the Grey Mapping table will be selected. The Grey Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
+- If the value ***Grey*** is selected, the Grey Mapping table will be selected. The Grey Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
 
 
-- If the value !!Shift!! is selected, the Shift Mapping table will be selected. The Shift Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
+- If the value ***Shift*** is selected, the Shift Mapping table will be selected. The Shift Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
 
 
-- If the value !!Control!! is selected, the Control Mapping table will be selected. The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
+- If the value ***Control*** is selected, the Control Mapping table will be selected. The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
 
 
 **Detail Information:**
@@ -28163,25 +28222,25 @@ Note that due to variations in keyboard size and layout, not all keyboard states
 
 
 Select the type of behavior that will be performed when a specified key is pressed while the keyboard state associated with the specified Mapping table is active.The following may values are supported:
-- If the value !!2!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a specified key code. This performs *Classic Keyboard Remapping*, where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% to provide the key code that will be sent.
-- If the value !!1!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a trigger signal. Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendTrigger%% to select which trigger signal will be sent,
-- If the value !!4!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to launch an application. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeLaunchApplicationName%% to provide the *Friendly Name* of the application to be launched. Note that this is NOT the *Android Package Name*. To launch an application by its *Android Package Name*, the value !!3!! should be used.
-- If the value !!3!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent. You must also specify some or all of the following to define the Android Intent to be sent:
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentType%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentAction%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentCategory%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentPackageName%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentClass%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentDataUri%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentFlags%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentMimeType%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraName%%
-- %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraValue%%
+- If the value ***Send Key Code*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a specified key code. This performs *Classic Keyboard Remapping*, where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard. You must also specify **Send Key Code** to provide the key code that will be sent.
+- If the value ***Send Trigger*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a trigger signal. Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. You must also specify **Send Trigger** to select which trigger signal will be sent,
+- If the value ***Launch Application*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to launch an application. You must also specify **Launch Application Name** to provide the *Friendly Name* of the application to be launched. Note that this is NOT the *Android Package Name*. To launch an application by its *Android Package Name*, the value ***Send Intent*** should be used.
+- If the value ***Send Intent*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent. You must also specify some or all of the following to define the Android Intent to be sent:
+- **Type**
+- **Action**
+- **Category**
+- **Package Name**
+- **Class**
+- **Data URI**
+- **Flags**
+- **MIME Type**
+- **Extra Name**
+- **Extra Value**
 
 
 Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service. As such, there are many options that control the nature of the intent that will be sent. It is generally recommended to fully understand the nature of the Android Intent to be sent before attempting to configure it as a key behavior. In many cases, the application or service to be invoked will define the nature of the intent is wishes to received and that definition can be used to drive the configuration.
-- If the value !!5!! is selected, NO behavior will be performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active. This provides a method to remap a key to do nothing.
-- If the value !!7!! is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults. This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state.
+- If the value ***Suppress Key*** is selected, NO behavior will be performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active. This provides a method to remap a key to do nothing.
+- If the value ***Reset To Default*** is selected, the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults. This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state.
 
 
 **Detail Information:**
@@ -28217,7 +28276,7 @@ Sending an Android Intent provides a very flexible way to specify the behavior t
 </span> <br><br>
 
 
-Select the key code that will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Select the key code that will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -28253,9 +28312,9 @@ Select the key code that will be sent as the behavior for a specified key a spec
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Alt keyboard state inactive. This will ensure that the key code is NOT interpreted as an Alt key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Alt keyboard state active. This will ensure that the key code is interpreted as an Alt key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Alt keyboard state inactive. This will ensure that the key code is NOT interpreted as an Alt key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Alt keyboard state active. This will ensure that the key code is interpreted as an Alt key.
 - If no value is specified, when the key code is sent, the Alt keyboard state will not be changed. This will cause the key to be interpreted as an Alt key or not based on the existing state.
 
 
@@ -28292,9 +28351,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Ctrl keyboard state inactive. This will ensure that the key code is NOT interpreted as an Ctrl key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Ctrl keyboard state active. This will ensure that the key code is interpreted as an Ctrl key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Ctrl keyboard state inactive. This will ensure that the key code is NOT interpreted as an Ctrl key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Ctrl keyboard state active. This will ensure that the key code is interpreted as an Ctrl key.
 - If no value is specified, when the key code is sent, the Ctrl keyboard state will not be changed. This will cause the key to be interpreted as an Ctrl key or not based on the existing state.
 
 
@@ -28331,9 +28390,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Fn keyboard state inactive. This will ensure that the key code is NOT interpreted as an Fn key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Fn keyboard state active. This will ensure that the key code is interpreted as an Fn key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Fn keyboard state inactive. This will ensure that the key code is NOT interpreted as an Fn key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Fn keyboard state active. This will ensure that the key code is interpreted as an Fn key.
 - If no value is specified, when the key code is sent, the Fn keyboard state will not be changed. This will cause the key to be interpreted as an Fn key or not based on the existing state.
 
 
@@ -28370,9 +28429,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select how a key code will be sent as the behavior for a specified key a specified state when the value !!2@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendKeyCode%% is specified.
-- If the value !!0!! is selected, when the key code is sent, it will be sent with the Shift keyboard state inactive. This will ensure that the key code is NOT interpreted as an Shift key.
-- If the value !!1!! is selected, when the key code is sent, it will be sent with the Shift keyboard state active. This will ensure that the key code is interpreted as an Shift key.
+Select how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is selected for **Type** and when **Send Key Code** is specified.
+- If the value ***Off*** is selected, when the key code is sent, it will be sent with the Shift keyboard state inactive. This will ensure that the key code is NOT interpreted as an Shift key.
+- If the value ***On*** is selected, when the key code is sent, it will be sent with the Shift keyboard state active. This will ensure that the key code is interpreted as an Shift key.
 - If no value is specified, when the key code is sent, the Shift keyboard state will not be changed. This will cause the key to be interpreted as an Shift key or not based on the existing state.
 
 
@@ -28409,10 +28468,10 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 </span> <br><br>
 
 
-Select the trigger signal that will be sent as the behavior for a specified key a specified state when the value !!1@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Select the trigger signal that will be sent as the behavior for a specified key a specified state when the value ***Send Trigger*** is selected for **Type**.
 
 
-Eight trigger signals are defined, but not all may be supported on all devices. All devices generally support at least !!10016!! and generally default to using this trigger signal to activate the barcode scanner. Some devices may support additional trigger signals and some devices might be reconfigured to use !!10016!! for some purpose other than barcode scanning. To determine which trigger signals are supported on a given device, consult the documentation for that specific device.
+Eight trigger signals are defined, but not all may be supported on all devices. All devices generally support at least ***Trigger 1*** and generally default to using this trigger signal to activate the barcode scanner. Some devices may support additional trigger signals and some devices might be reconfigured to use ***Trigger 1*** for some purpose other than barcode scanning. To determine which trigger signals are supported on a given device, consult the documentation for that specific device.
 
 
 **Detail Information:**
@@ -28451,9 +28510,9 @@ Eight trigger signals are defined, but not all may be supported on all devices. 
 Select when an intent should be sent as the behavior for a remapped key.
 
 
-- If the value !!1!! is selected, the intent will be sent immediately when the key is first detected as being pressed.
-- If the value !!2!! is selected, the intent will not be sent until the key is detected as being released after being being pressed.
-- If the value !!3!! is selected, the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
+- If the value ***On Key Down*** is selected, the intent will be sent immediately when the key is first detected as being pressed.
+- If the value ***On Key Up*** is selected, the intent will not be sent until the key is detected as being released after being being pressed.
+- If the value ***On Both Key Up and Down*** is selected, the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
 
 
 **Detail Information:**
@@ -28489,12 +28548,12 @@ Select when an intent should be sent as the behavior for a remapped key.
 </span> <br><br>
 
 
-Enter the method in which an Android Intent should be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the method in which an Android Intent should be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 Depending on the application or service to be invoked, there is likely only one method that can be used successfully to invoke a desired behavior in that application or service. You will need to consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value will invoke the desired behavior. The possible values are.
-- If the value !!StartActivity!! is selected, the Android Intent will be sent using the startActivity() method. This method is suitable for invoking Activities, which are components that perform user interactions. If the behavior to be invoked involves interacting with the Device User, this method will most likely be used.
-- If the value !!Broadcast!! is selected, the Android Intent will be sent using the sendBroadcast() method. This method is suitable for invoking Services, which are components that implement background operations. If the behavior to be invoked does not involves interacting with the Device User, this method will most likely be used.
+- If the value ***StartActivity*** is selected, the Android Intent will be sent using the startActivity() method. This method is suitable for invoking Activities, which are components that perform user interactions. If the behavior to be invoked involves interacting with the Device User, this method will most likely be used.
+- If the value ***Broadcast*** is selected, the Android Intent will be sent using the sendBroadcast() method. This method is suitable for invoking Services, which are components that implement background operations. If the behavior to be invoked does not involves interacting with the Device User, this method will most likely be used.
 
 
 **Detail Information:**
@@ -28530,7 +28589,7 @@ Depending on the application or service to be invoked, there is likely only one 
 </span> <br><br>
 
 
-Enter the action value of an Android Intent to be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the action value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 
@@ -28569,7 +28628,7 @@ An action value is NOT mandatory to specify for an Android Intent. But an action
 </span> <br><br>
 
 
-Enter the category value of an Android Intent to be sent to invoke an application or service when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the category value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is selected for **Type**.
 
 
 
@@ -28608,11 +28667,11 @@ A category value is NOT mandatory to specify for an Android Intent. But a catego
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the application or service to invoke when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the *Android Package Name* of the application or service to invoke when the value ***Send Intent*** is selected for **Type**.
 
 
 It is not mandatory to specify the *Android Package Name* when sending an Android Intent, but is is often advisable.
-- When an *Android Package Name* is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that *Android Package Name* and no other. This can increase security and is often used when the intent being sent requires any sensitive data. You must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentClass%% whenever an *Android Package Name* is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a *Android Package Name* and a Class within that Package.
+- When an *Android Package Name* is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that *Android Package Name* and no other. This can increase security and is often used when the intent being sent requires any sensitive data. You must also specify **Class** whenever an *Android Package Name* is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a *Android Package Name* and a Class within that Package.
 - When no *Android Package Name* is specified, the intent becomes an Implicit Intent and the intent may be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility and is often used when the intent being sent requires no sensitive data and when it may be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
 
 
@@ -28647,7 +28706,7 @@ It is not mandatory to specify the *Android Package Name* when sending an Androi
 </span> <br><br>
 
 
-Enter the *Android Class* that identifies an *Android Component* within an application or service to invoke when the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentPackageName%% is specified.
+Enter the *Android Class* that identifies an *Android Component* within an application or service to invoke when the value ***Send Intent*** is selected for **Type** and when **Package Name** is specified.
 
 
 **Detail Information:**
@@ -28757,7 +28816,7 @@ Intent flags control how the intent is handled by Android. Some intent flags are
 </span> <br><br>
 
 
-Enter a Multipurpose Internet Mail Extensions (MIME) type to use when processing the intent data and when %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentDataUri%% is specified.
+Enter a Multipurpose Internet Mail Extensions (MIME) type to use when processing the intent data and when **Data URI** is specified.
 
 
 
@@ -28801,7 +28860,7 @@ Enter the name of a single extra named string value to be attached to the intent
 
 
 
-Android allows a collection of extra named values, of various types, to be attached to an intent. Exactly one value whose data type must be string can be specified. When a name is specified, you must also specify %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraValue%% to provide the corresponding value to be attached for the string extra.
+Android allows a collection of extra named values, of various types, to be attached to an intent. Exactly one value whose data type must be string can be specified. When a name is specified, you must also specify **Extra Value** to provide the corresponding value to be attached for the string extra.
 
 
 **Detail Information:**
@@ -28835,7 +28894,7 @@ Android allows a collection of extra named values, of various types, to be attac
 </span> <br><br>
 
 
-Enter the value of the *String Extra* to be attached to the intent to be sent and whose name is specified via %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorTypeSendIntentExtraName%%.
+Enter the value of the *String Extra* to be attached to the intent to be sent and whose name is specified via **Extra Name**.
 
 
 **Detail Information:**
@@ -28869,10 +28928,10 @@ Enter the value of the *String Extra* to be attached to the intent to be sent an
 </span> <br><br>
 
 
-Enter the *Friendly Name* of an application to be launched when the value !!4@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! is selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%%.
+Enter the *Friendly Name* of an application to be launched when the value ***Launch Application*** is selected for **Type**.
 
 
-Note that the application *Friendly Name* is NOT the same as *Android Package Name*. The application *Friendly Name* is generally the name by which the application is identified in in-device UI, such as the application Launcher, the application's Title Bar, and the list of application names display in the Recent Application list and the AppInfo section of the Settings UI. To launch an application based on its *Android Package Name*, the value !!3@steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType!! should be selected for %%steps.step.keymapStep.keymapActionAddMappingBehaviors.keymapBehavior.keymapBehaviorType%% instead.
+Note that the application *Friendly Name* is NOT the same as *Android Package Name*. The application *Friendly Name* is generally the name by which the application is identified in in-device UI, such as the application Launcher, the application's Title Bar, and the list of application names display in the Recent Application list and the AppInfo section of the Settings UI. To launch an application based on its *Android Package Name*, the value ***Send Intent*** should be selected for **Type** instead.
 
 
 **Detail Information:**
@@ -28925,6 +28984,8 @@ Use this *Group* to perform power-related actions and configure power-related se
 - Supported from: MX 9.1.
 
 
+details2 = steps.step.powerStep
+level3Items.size() = 23
 <a id="steps.step.powerStep.powerAction">
 
 ### Power Action
@@ -28940,10 +29001,10 @@ Use this *Group* to perform power-related actions and configure power-related se
 
 
 Select an Action to control the Power to the device.
-- If the value !!1!! is selected, the device will go to Sleep (i.e. enter Suspend Mode).
+- If the value ***Sleep*** is selected, the device will go to Sleep (i.e. enter Suspend Mode).
 
 
-- If the value !!4!! is selected, the device will perform an OS Reboot (i.e. simple Reset).
+- If the value ***Reboot*** is selected, the device will perform an OS Reboot (i.e. simple Reset).
 
 
 **Detail Information:**
@@ -29077,8 +29138,8 @@ Enter the threshold battery level below which the battery is deemed to be critic
 
 
 Select an Action to control which applications are subject to battery optimization and which are exempt.
-- If the value !!Add!! is selected, one or more applications will be made subject to battery optimizations and you must also specify %%steps.step.powerStep.powerBatteryOptimizationActionAddPackageNames%% to provide the *Android Package Name(s)* of the application(s) to be made subject to battery optimizations.
-- If the value !!Remove!! is selected, one or more applications will be made subject to battery optimizations and you must also specify %%steps.step.powerStep.powerBatteryOptimizationActionRemovePackageNames%% to provide the *Android Package Name(s)* of the application(s) to be exempted from battery optimizations.
+- If the value ***Add*** is selected, one or more applications will be made subject to battery optimizations and you must also specify **Add Package Names** to provide the *Android Package Name(s)* of the application(s) to be made subject to battery optimizations.
+- If the value ***Remove*** is selected, one or more applications will be made subject to battery optimizations and you must also specify **Remove Package Names** to provide the *Android Package Name(s)* of the application(s) to be exempted from battery optimizations.
 
 
 **Detail Information:**
@@ -29181,13 +29242,13 @@ If specified, multiple *Android Package Names* should be separated using commas.
 
 
 Select an Action to control the Output Power various Ports on the device.
-- If the value !!2!! is selected, the Output Power for a specified Port will be turned off.
-- If the value !!1!! is selected, the Output Power for a specified Port will be turned on.
+- If the value ***Turn Output Power OFF*** is selected, the Output Power for a specified Port will be turned off.
+- If the value ***Turn Output Power ON*** is selected, the Output Power for a specified Port will be turned on.
 
 
 
 
-You must also specify %%steps.step.powerStep.powerPortSelect%% to provide the Port for which Output Power will be controlled.
+You must also specify **Port Select** to provide the Port for which Output Power will be controlled.
 
 
 
@@ -29223,10 +29284,10 @@ You must also specify %%steps.step.powerStep.powerPortSelect%% to provide the Po
 </span> <br><br>
 
 
-Select the Port that will be affected by an Action to control the Output Power on the device when %%steps.step.powerStep.powerPortAction%% is specified.
-- If the value !!1!! is selected, the Output Power will be turned on or off for the first device Serial Port.
-- If the value !!2!! is selected, the Output Power will be turned on or off for the second device Serial Port.
-- If the value !!3!! is selected, the Output Power will be turned on or off for the second device USB Port.
+Select the Port that will be affected by an Action to control the Output Power on the device when **Port Action** is specified.
+- If the value ***Serial Port 1*** is selected, the Output Power will be turned on or off for the first device Serial Port.
+- If the value ***Serial Port 2*** is selected, the Output Power will be turned on or off for the second device Serial Port.
+- If the value ***USB Port 2*** is selected, the Output Power will be turned on or off for the second device USB Port.
 
 
 
@@ -29263,10 +29324,10 @@ Select the Port that will be affected by an Action to control the Output Power o
 
 
 Select whether device power will be automatically controlled.
-- If the value !!0!! is selected, the device power will NOT be automatically controlled.
-- If the value !!1!! is selected, the device power will be automatically controlled and you should also specify one or more of the following:
-- %%steps.step.powerStep.powerAutoPowerOff%% to specify whether/how device power will automatically be turned off.
-- %%steps.step.powerStep.powerAutoPowerOn%% to specify whether/how device power will automatically be turned on.
+- If the value ***Off*** is selected, the device power will NOT be automatically controlled.
+- If the value ***On*** is selected, the device power will be automatically controlled and you should also specify one or more of the following:
+- **Auto Power Off** to specify whether/how device power will automatically be turned off.
+- **Auto Power On** to specify whether/how device power will automatically be turned on.
 
 
 **Detail Information:**
@@ -29300,9 +29361,9 @@ Select whether device power will be automatically controlled.
 </span> <br><br>
 
 
-Select whether and how device power will be automatically turned off as part of automatic power control when %%steps.step.powerStep.powerAutoPowerControl%% is specified.
-- If the value !!0!! is selected, the device power will NOT automatically turn off when the ignition turns off.
-- If the value !!1!! is selected, the device power will automatically turn off whenever the ignition turns off.
+Select whether and how device power will be automatically turned off as part of automatic power control when **Auto Power Control** is specified.
+- If the value ***Never*** is selected, the device power will NOT automatically turn off when the ignition turns off.
+- If the value ***When Ignition is Turned Off*** is selected, the device power will automatically turn off whenever the ignition turns off.
 
 
 
@@ -29338,7 +29399,7 @@ Select whether and how device power will be automatically turned off as part of 
 </span> <br><br>
 
 
-Enter the timeout that will be in effect before device power is automatically turned off as part of automatic power control, when the value !!1@steps.step.powerStep.powerAutoPowerControl!! is selected for %%steps.step.powerStep.powerAutoPowerControl%% is specified and the value !!1@steps.step.powerStep.powerAutoPowerOff!! is selected for %%steps.step.powerStep.powerAutoPowerOff%%.
+Enter the timeout that will be in effect before device power is automatically turned off as part of automatic power control, when the value ***On*** is selected for **Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is selected for **Auto Power Off**.
 
 
 **Detail Information:**
@@ -29370,9 +29431,9 @@ Enter the timeout that will be in effect before device power is automatically tu
 </span> <br><br>
 
 
-Select whether and how device power will be automatically turned on as part of automatic power control when %%steps.step.powerStep.powerAutoPowerControl%% is specified:
-- If the value !!0!! is selected, the device power will NOT automatically turn on when the ignition turns on.
-- If the value !!1!! is selected, the device power will automatically turn on whenever the ignition turns on.
+Select whether and how device power will be automatically turned on as part of automatic power control when **Auto Power Control** is specified:
+- If the value ***Never*** is selected, the device power will NOT automatically turn on when the ignition turns on.
+- If the value ***When Ignition is Turned On*** is selected, the device power will automatically turn on whenever the ignition turns on.
 
 
 
@@ -29411,12 +29472,12 @@ Select whether and how device power will be automatically turned on as part of a
 Select an Action to control device heaters.
 
 
-You must also specify %%steps.step.powerStep.powerHeaterSelect%% to identify the Heater to be affected.
-- If the value !!1!! is selected, the Heater will be be turned on and off as needed based on the configured ON/OFF thresholds.
-- If the value !!2!! is selected, the Heater will turned off and will stay off, regardless of the configured ON/OFF thresholds.
-- If the value !!3!! is selected, the ON/OFF thresholds that will be used when the Heater is Enabled will be configured. You must also specify all of the following:
-- %%steps.step.powerStep.powerHeaterActionOnThreshold%% to set the threshold temperature below which the Heater will automatically be turned on.
-- %%steps.step.powerStep.powerHeaterActionOffThreshold%% to set the threshold temperature above which the Heater will automatically be turned off.
+You must also specify **Heater Select** to identify the Heater to be affected.
+- If the value ***Enable Heater*** is selected, the Heater will be be turned on and off as needed based on the configured ON/OFF thresholds.
+- If the value ***Disable Heater*** is selected, the Heater will turned off and will stay off, regardless of the configured ON/OFF thresholds.
+- If the value ***Set ON/OFF Thresholds*** is selected, the ON/OFF thresholds that will be used when the Heater is Enabled will be configured. You must also specify all of the following:
+- **On Threshold** to set the threshold temperature below which the Heater will automatically be turned on.
+- **Off Threshold** to set the threshold temperature above which the Heater will automatically be turned off.
 
 
 **Detail Information:**
@@ -29459,13 +29520,13 @@ You must also specify %%steps.step.powerStep.powerHeaterSelect%% to identify the
 </span> <br><br>
 
 
-Select the Heater to be affected by a specified Heater Action when %%steps.step.powerStep.powerHeaterAction%% is specified:
-- If the value !!1!! is selected, the Heater that warms the Serial I/O Port of the device will be selected.
-- If the value !!2!! is selected, the Heater that warms the USB I/O Port of the device will be selected.
-- If the value !!3!! is selected, the Heater that warms the Battery of the device will be selected.
-- If the value !!4!! is selected, the Heater that warms the Touch Panel of the device will be selected.
-- If the value !!5!! is selected, the Heater that warms the Keyboard of the device will be selected.
-- If the value !!6!! is selected, the Heater that warms the Scanner Window of the device will be selected.
+Select the Heater to be affected by a specified Heater Action when **Heater Action** is specified:
+- If the value ***Serial I/O*** is selected, the Heater that warms the Serial I/O Port of the device will be selected.
+- If the value ***USB I/O*** is selected, the Heater that warms the USB I/O Port of the device will be selected.
+- If the value ***Battery*** is selected, the Heater that warms the Battery of the device will be selected.
+- If the value ***Touch Panel*** is selected, the Heater that warms the Touch Panel of the device will be selected.
+- If the value ***Keyboard*** is selected, the Heater that warms the Keyboard of the device will be selected.
+- If the value ***Scanner Window*** is selected, the Heater that warms the Scanner Window of the device will be selected.
 
 
 **Detail Information:**
@@ -29505,7 +29566,7 @@ Select the Heater to be affected by a specified Heater Action when %%steps.step.
 </span> <br><br>
 
 
-Select the temperature above which a specified Heater should automatically turn OFF, when the value below which the specified Heater should automatically turn on is selected for %%steps.step.powerStep.powerHeaterAction%%.
+Select the temperature above which a specified Heater should automatically turn OFF, when the value below which the specified Heater should automatically turn on is selected for **Heater Action**.
 
 
 
@@ -29545,7 +29606,7 @@ Select the temperature above which a specified Heater should automatically turn 
 </span> <br><br>
 
 
-Select the temperature below which a specified Heater should automatically turn ON, when the value below which the specified Heater should automatically turn on is selected for %%steps.step.powerStep.powerHeaterAction%%.
+Select the temperature below which a specified Heater should automatically turn ON, when the value below which the specified Heater should automatically turn on is selected for **Heater Action**.
 
 
 
@@ -29586,7 +29647,7 @@ Select the temperature below which a specified Heater should automatically turn 
 
 
 Select whether all Wake-Up Sources will be enabled or not
-- If the value !!2!! is selected, the device will not have all the wake-up sources enabled - If the value !!1!! is selected, the device will have all the wake-up sources enabled.
+- If the value ***Off*** is selected, the device will not have all the wake-up sources enabled - If the value ***On*** is selected, the device will have all the wake-up sources enabled.
 
 
 **Detail Information:**
@@ -29619,10 +29680,10 @@ Select whether all Wake-Up Sources will be enabled or not
 
 
 Select whether Doze Mode will be globally used on the device.
-- If the value !!2!! is selected, the device will never enter Doze Mode for any applications.
+- If the value ***Off*** is selected, the device will never enter Doze Mode for any applications.
 
 
-- If the value !!1!! is selected, the device will will enter Doze Mode for various applications based on the normal Android rules for Doze Mode.
+- If the value ***On*** is selected, the device will will enter Doze Mode for various applications based on the normal Android rules for Doze Mode.
 
 
 **Detail Information:**
@@ -29740,7 +29801,7 @@ Enter the Custom name of the key identifier of the Wake-Up Source to control
 
 
 Select whether to turn on or off the ability of a Wake-up Source to activate the display
-- If the value !!2!! is selected, the device will not have all the wake-up sources enabled - If the value !!1!! is selected, the device will have all the wake-up sources enabled.
+- If the value ***Off*** is selected, the device will not have all the wake-up sources enabled - If the value ***On*** is selected, the device will have all the wake-up sources enabled.
 
 
 **Detail Information:**
@@ -29773,7 +29834,7 @@ Select whether to turn on or off the ability of a Wake-up Source to activate the
 
 
 Select the Method that will be used to implement and control device Wake-up
-- If the value !!1!! is selected, the device will use hardware signals for wake-up - If the value !!2!! is selected, the device will use software (mappable keycodes) for wake-up.
+- If the value ***Use Hardware Signals for Wake-Up*** is selected, the device will use hardware signals for wake-up - If the value ***Use Software (Mappable Keycodes) for Wake-Up*** is selected, the device will use software (mappable keycodes) for wake-up.
 
 
 **Detail Information:**
@@ -29826,6 +29887,8 @@ Use this *Group* to configure the RFID module in a device.
 - Supported from: MX 8.1.
 
 
+details2 = steps.step.rfidStep
+level3Items.size() = 10
 <a id="steps.step.rfidStep.rfidCountryOfOperation">
 
 ### Country of Operation
@@ -29985,11 +30048,11 @@ Select the Ukraine Region specific power mode to be used by the RFID module.
 
 
 Select an Action to alter the behavior or configuration of the RFID module.
-- If the value !!1!! is selected, the firmware of the RFID module will be updated and you must also specify %%steps.step.rfidStep.rfidActionUpdateFirmwareFile%% to provide the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
-- If the value !!2!! is selected, the current configuration of the RFID module will be exported and stored in a file in the device file system. This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
-- If the value !!4!! is selected, the radio of the RFID module will be reset, without changing its settings. This could be used to recover from an error or other failure of the RFID module.
-- If the value !!5!! is selected, the configuration of the RFID module will be returned to its default out-of-box state and the radio will be reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
-- If the value !!6!! is selected, the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state.
+- If the value ***Update Firmware*** is selected, the firmware of the RFID module will be updated and you must also specify **Update Firmware File** to provide the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
+- If the value ***Export Settings*** is selected, the current configuration of the RFID module will be exported and stored in a file in the device file system. This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
+- If the value ***Reset Radio*** is selected, the radio of the RFID module will be reset, without changing its settings. This could be used to recover from an error or other failure of the RFID module.
+- If the value ***Reset Radio to Factory Defaults*** is selected, the configuration of the RFID module will be returned to its default out-of-box state and the radio will be reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
+- If the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected, the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state.
 
 
 **Detail Information:**
@@ -30023,7 +30086,7 @@ Select an Action to alter the behavior or configuration of the RFID module.
 </span> <br><br>
 
 
-Enter the path and file name of the file containing the firmware update to be applied when the value !!1@steps.step.rfidStep.rfidAction!! or the value !!6@steps.step.rfidStep.rfidAction!! is selected for %%steps.step.rfidStep.rfidAction%%.
+Enter the path and file name of the file containing the firmware update to be applied when the value ***Update Firmware*** or the value ***Update Firmware and Reset Radio to Factory Defaults*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30093,9 +30156,9 @@ For example, to specify an *RFID Power Level* of ***29.5 dBm***, specify a value
 
 
 Select which RFID tags should be operated upon by the RFID module during a *Query Operation*, based on the state of the SL flag.
-- If the value !!0!! is selected, when the RFID module performs a *Query Operation*, it will consider all RFID tags that are currently visible to the RFID module.
-- If the value !!2!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e tags for which the SL flag has NOT been set using the Select command).
-- If the value !!3!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
+- If the value ***Query applies to all tags*** is selected, when the RFID module performs a *Query Operation*, it will consider all RFID tags that are currently visible to the RFID module.
+- If the value ***Query applies to tags with SL de-asserted*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e tags for which the SL flag has NOT been set using the Select command).
+- If the value ***Query applies to tags with SL asserted*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
 
 
 **Detail Information:**
@@ -30132,7 +30195,7 @@ Select which RFID tags should be operated upon by the RFID module during a *Quer
 Enter which *Session* should be used by the RFID module to access RFID tags during a *Query Operation*.
 
 
-Allowable values are !!0!!, !!1!!, !!2!!, and !!3!!.
+Allowable values are ***SessionS0***, ***SessionS1***, ***SessionS2***, and ***SessionS3***.
 
 
 *Sessions* provide options for how to count tags. For more information on the use of *Sessions*, consult the device product documentation.
@@ -30170,9 +30233,9 @@ Allowable values are !!0!!, !!1!!, !!2!!, and !!3!!.
 
 
 Select how the A and B flags of RFID tags should be handled by the RFID module during a *Query Operation*.
-- If the value !!0!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State A.
-- If the value !!1!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State B.
-- If the value !!2!! is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in either State A or State B and will Flip the State from A to B or B to A for the session.
+- If the value ***Inventory Target Flag A*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State A.
+- If the value ***Inventory Target Flag B*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in State B.
+- If the value ***AB Flip*** is selected, when the RFID module performs a *Query Operation*, it will consider only those RFID tags that are currently visible to the RFID module AND that are in either State A or State B and will Flip the State from A to B or B to A for the session.
 
 
 **Detail Information:**
@@ -30227,6 +30290,8 @@ Use this *Sub-group* to manage a *Remote Scanner* that is connected to a device.
 - Supported from: MX 7.1.
 
 
+details2 = steps.step.remotescannerStep
+level3Items.size() = 9
 <a id="steps.step.remotescannerStep.remotescannerAction">
 
 ### Action
@@ -30242,12 +30307,12 @@ Use this *Sub-group* to manage a *Remote Scanner* that is connected to a device.
 
 
 Select an Action to control a *Remote Scanner* that isconnected to a device.
-- If the value !!1!! is selected, a configuration file will be used to apply new configuration to a *Remote Scanner*. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be configured. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigFile%% to provide the path and file name of the configuration file to be applied.
-- If the value !!2!! is selected, a firmware file will be used to update the firmware of a *Remote Scanner*. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be updated. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateFile%% to provide the path and file name of the firmware file to be applied.
-- If the value !!3!! is selected, a *Remote Scanner* will be reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored. You must also specify %%steps.step.remotescannerStep.remotescannerActionResetSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be reset.
-- If the value !!4!! is selected, a *Remote Scanner* will be paged, allowing a misplaced *Remote Scanner* to be more easily located. You must also specify %%steps.step.remotescannerStep.remotescannerActionPageSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be paged.
-- If the value !!5!! is selected, a *Remote Scanner* will be disconnected, terminating the connection between the device and the *Remote Scanner* and preventing its subsequent use. You must also specify %%steps.step.remotescannerStep.remotescannerActionDisconnectSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
-- If the value !!6!! is selected, a *Remote Scanner* will be unpaired, terminating the pairing between the device and the *Remote Scanner* and preventing its re-connection without first repairing. You must also specify %%steps.step.remotescannerStep.remotescannerActionUnpairSerialNumber%% to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired.
+- If the value ***Apply Configuration Package(RS6000 only)*** is selected, a configuration file will be used to apply new configuration to a *Remote Scanner*. You must also specify **Config Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be configured. You must also specify **Config File** to provide the path and file name of the configuration file to be applied.
+- If the value ***Update Scanner Firmware*** is selected, a firmware file will be used to update the firmware of a *Remote Scanner*. You must also specify **Update Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be updated. You must also specify **Update File** to provide the path and file name of the firmware file to be applied.
+- If the value ***Reset Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored. You must also specify **Reset Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be reset.
+- If the value ***Page Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be paged, allowing a misplaced *Remote Scanner* to be more easily located. You must also specify **Page Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be paged.
+- If the value ***Disconnect Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be disconnected, terminating the connection between the device and the *Remote Scanner* and preventing its subsequent use. You must also specify **Disconnect Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
+- If the value ***Unpair Scanner(RS6000 only)*** is selected, a *Remote Scanner* will be unpaired, terminating the pairing between the device and the *Remote Scanner* and preventing its re-connection without first repairing. You must also specify **Unpair Serial Number** to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired.
 
 
 **Detail Information:**
@@ -30281,7 +30346,7 @@ Select an Action to control a *Remote Scanner* that isconnected to a device.
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to which configuration should be applied when the value !!1@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%. You must also specify %%steps.step.remotescannerStep.remotescannerActionConfigFile%% to provide the path and file name of the configuration file to be used.
+Enter the *Serial Number* that identifies a *Remote Scanner* to which configuration should be applied when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**. You must also specify **Config File** to provide the path and file name of the configuration file to be used.
 
 
 **Detail Information:**
@@ -30313,7 +30378,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to which configurat
 </span> <br><br>
 
 
-Enter the path and file name of a configuration file, which must exist at the specified location in the device file system, from which configuration should be applied to the specified *Remote Scanner* when the value !!1@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the path and file name of a configuration file, which must exist at the specified location in the device file system, from which configuration should be applied to the specified *Remote Scanner* when the value ***Apply Configuration Package(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30345,7 +30410,7 @@ Enter the path and file name of a configuration file, which must exist at the sp
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmware update should be performed when the value !!2@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%. You must also specify %%steps.step.remotescannerStep.remotescannerActionUpdateFile%% to provide the path and file name of the firmware file to be used.
+Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmware update should be performed when the value ***Update Scanner Firmware*** is selected for **Action**. You must also specify **Update File** to provide the path and file name of the firmware file to be used.
 
 
 **Detail Information:**
@@ -30377,7 +30442,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmwar
 </span> <br><br>
 
 
-Enter the path and file name of a firmware file, which must exist at the specified location in the device file system, from which firmware update should be performed to the specified *Remote Scanner* when the value !!2@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the path and file name of a firmware file, which must exist at the specified location in the device file system, from which firmware update should be performed to the specified *Remote Scanner* when the value ***Update Scanner Firmware*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30409,7 +30474,7 @@ Enter the path and file name of a firmware file, which must exist at the specifi
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when the value !!3@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when the value ***Reset Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30441,7 +30506,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when th
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when the value !!4@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when the value ***Page Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30473,7 +30538,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when th
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected when the value !!5@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected when the value ***Disconnect Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30505,7 +30570,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected 
 </span> <br><br>
 
 
-Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when the value !!6@steps.step.remotescannerStep.remotescannerAction!! is selected for %%steps.step.remotescannerStep.remotescannerAction%%.
+Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when the value ***Unpair Scanner(RS6000 only)*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30550,6 +30615,8 @@ Use this *Group* to configure security-related settings on a device.
 - Type = bundle
 
 
+details2 = steps.step.securityStep
+level3Items.size() = 8
 <a id="steps.step.securityStep.securityAction">
 
 ### Action
@@ -30565,11 +30632,11 @@ Use this *Group* to configure security-related settings on a device.
 
 
 Select an Action to adjust various security features on a device.
-- If the value !!AddKey!! is selected, you must also specify %%steps.step.securityStep.securityActionAddKeyName%% to provide the name of the key to be added and you must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to provide the value of the key to be added.
-- If the value !!RemoveKey!! is selected, you must also specify %%steps.step.securityStep.securityActionRemoveKeyName%% to provide the name of the key to be removed.
-- If the value !!RemoveAllKeys!! is selected, you do not need to specify any additional information.
-- If the value !!EncryptSdCard!! is selected, you must also specify %%steps.step.securityStep.securityEncryptSDCardKeyName%% to provide the name of the key to be used to encrypt the SD Card.
-- If the value !!WipeSdCard!! is selected, you do not need to specify any additional information.
+- If the value ***Add Key*** is selected, you must also specify **Add Key Name** to provide the name of the key to be added and you must also specify **Add Key Value** to provide the value of the key to be added.
+- If the value ***Remove Key*** is selected, you must also specify **Remove Key Name** to provide the name of the key to be removed.
+- If the value ***Remove All Keys*** is selected, you do not need to specify any additional information.
+- If the value ***Encrypt SD Card*** is selected, you must also specify **Encrypt SD Card Key Name** to provide the name of the key to be used to encrypt the SD Card.
+- If the value ***Wipe SD Card*** is selected, you do not need to specify any additional information.
 
 
 **Detail Information:**
@@ -30603,10 +30670,10 @@ Select an Action to adjust various security features on a device.
 </span> <br><br>
 
 
-Enter the name of a key to be added when the Action value !!AddKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be added when the Action value ***Add Key*** is selected for **Action**.
 
 
-You must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to provide the value to be added for the specified key name.
+You must also specify **Add Key Value** to provide the value to be added for the specified key name.
 
 
 
@@ -30640,12 +30707,12 @@ You must also specify %%steps.step.securityStep.securityActionAddKeyValue%% to p
 </span> <br><br>
 
 
-Enter the value of a key to be added when the Action value !!AddKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the value of a key to be added when the Action value ***Add Key*** is selected for **Action**.
 
 
 
 
-You must also specify %%steps.step.securityStep.securityActionAddKeyName%% to provide the key name for which this value should be added.
+You must also specify **Add Key Name** to provide the key name for which this value should be added.
 
 
 
@@ -30687,7 +30754,7 @@ The key value can be generated in any manner desired as long as it is a 256 bit 
 </span> <br><br>
 
 
-Enter the name of a key to be removed when the Action value !!RemoveKey@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be removed when the Action value ***Remove Key*** is selected for **Action**.
 
 
 
@@ -30721,7 +30788,7 @@ Enter the name of a key to be removed when the Action value !!RemoveKey@steps.st
 </span> <br><br>
 
 
-Enter the name of a key to be used to encrypt the SD Card when the Action value !!EncryptSdCard@steps.step.securityStep.securityAction!! is selected for %%steps.step.securityStep.securityAction%%.
+Enter the name of a key to be used to encrypt the SD Card when the Action value ***Encrypt SD Card*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -30754,8 +30821,8 @@ Enter the name of a key to be used to encrypt the SD Card when the Action value 
 
 
 Select what happens when the Power Key on the device is used to turn the device off, especially whether the device will be locked, requiring it to be unlocked by entering a PIN or password, if one is specified.
-- If the value !!Off!! is selected, turning the device off using the Power Key will be handled the same as when the device times out and turns itself off automatically. In such a case, if device remains off for longer than value set via %%steps.step.securityStep.securityScreenLockTimeout%%, when it is turned back on, the device will be locked, requiring whatever unlock action is set via %%steps.step.securityStep.securityScreenLockType%%.
-- If the value !!On!! is selected, turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked immediately when the device is turned off using the Power Key. In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set via %%steps.step.securityStep.securityScreenLockType%%.
+- If the value ***Off*** is selected, turning the device off using the Power Key will be handled the same as when the device times out and turns itself off automatically. In such a case, if device remains off for longer than value set via **Screen Lock Timeout**, when it is turned back on, the device will be locked, requiring whatever unlock action is set via **Screen Lock Type**.
+- If the value ***On*** is selected, turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked immediately when the device is turned off using the Power Key. In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set via **Screen Lock Type**.
 
 
 **Detail Information:**
@@ -30790,11 +30857,11 @@ Select what happens when the Power Key on the device is used to turn the device 
 
 
 Select the type of lock that is used to protect the device from use by unauthorized persons.
-- If the value !!5!! is selected, no lock will be applied and the device can be used by anyone.
-- If the value !!1!! is selected, unlocking will require only a simple swipe and the device can be used by anyone.
-- If the value !!3!! is selected, unlocking will require entry of a PIN (personal identification number) and the device can only be unlocked by someone knowing the correct PIN value.
-- If the value !!4!! is selected, unlocking will require entry of a password and the device can only be unlocked by someone knowing the correct password value.
-- If the value !!2!! is selected, unlocking will require drawing a pattern on the screen using the touch panel and the device can only be unlocked by someone knowing the correct pattern.
+- If the value ***None*** is selected, no lock will be applied and the device can be used by anyone.
+- If the value ***Swipe*** is selected, unlocking will require only a simple swipe and the device can be used by anyone.
+- If the value ***PIN*** is selected, unlocking will require entry of a PIN (personal identification number) and the device can only be unlocked by someone knowing the correct PIN value.
+- If the value ***Password*** is selected, unlocking will require entry of a password and the device can only be unlocked by someone knowing the correct password value.
+- If the value ***Pattern*** is selected, unlocking will require drawing a pattern on the screen using the touch panel and the device can only be unlocked by someone knowing the correct pattern.
 
 
 **Detail Information:**
@@ -30829,8 +30896,8 @@ Select the type of lock that is used to protect the device from use by unauthori
 
 
 Select what happens when a device turns off as a result of a timeout.
-- If the device stays off for at least the time specified, the device will be locked and an unlock will be required when the device is turned back on, if any lock was configured using %%steps.step.securityStep.securityScreenLockType%%.
-- If the device stays off for less than the time specified, the device will NOT be locked and hence no unlock will be required when the device is turned back on, even if a lock was configured using %%steps.step.securityStep.securityScreenLockType%%.
+- If the device stays off for at least the time specified, the device will be locked and an unlock will be required when the device is turned back on, if any lock was configured using **Screen Lock Type**.
+- If the device stays off for less than the time specified, the device will NOT be locked and hence no unlock will be required when the device is turned back on, even if a lock was configured using **Screen Lock Type**.
 
 
 **Detail Information:**
@@ -30888,6 +30955,8 @@ Use this *Sub-group* to configure which *Zebra Value-Add Services* are allowed t
 - Supported from: MX 9.2.
 
 
+details2 = steps.step.serviceAccessStep
+level3Items.size() = 25
 <a id="steps.step.serviceAccessStep.serviceBindingAction">
 
 ### Service Binding Action
@@ -30911,13 +30980,13 @@ To utilize *Zebra Value-Add Services* that expose APIs, an application must succ
 By default, all *Zebra Value-Add Services* that expose APIs are configured to reject all *Bindings*. This ensures that the APIs exposed by such a Service cannot be used at all, unless you explicitly choose to allow use of specific Services.
 
 
-Note that allowing *Bindings* to a *Zebra Value-Add Service* enables ALL applications to successfully initiate a *Binding* to that Service but does NOT enable ANY application to actually call the APIs exposed by that Service. To allow selected applications to call APIs on a Service for which *Bindings* are allowed, use %%steps.step.serviceAccessStep.serviceCallerAction%%.
+Note that allowing *Bindings* to a *Zebra Value-Add Service* enables ALL applications to successfully initiate a *Binding* to that Service but does NOT enable ANY application to actually call the APIs exposed by that Service. To allow selected applications to call APIs on a Service for which *Bindings* are allowed, use **Service Caller Action**.
 
 
-- If the value !!1!! is selected, *Bindings* to a specifically identified Service will be enabled, potentially allowing the APIs of that Service to be called. You must also specify %%steps.step.serviceAccessStep.serviceBindingActionAllowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which *Bindings* should be allowed.
+- If the value ***Allow*** is selected, *Bindings* to a specifically identified Service will be enabled, potentially allowing the APIs of that Service to be called. You must also specify **Allow Service Identifier** to identify the *Zebra Value-Add Service* to which *Bindings* should be allowed.
 
 
-- If the value !!2!! is selected, *Bindings* to a specifically identified Service will be disabled, preventing the APIs of that Service from being called. This is the default state for all *Zebra Value-Add Services* that provide APIs. You must also specify %%steps.step.serviceAccessStep.serviceBindingActionDisallowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which *Bindings* should be disallowed.
+- If the value ***Disallow*** is selected, *Bindings* to a specifically identified Service will be disabled, preventing the APIs of that Service from being called. This is the default state for all *Zebra Value-Add Services* that provide APIs. You must also specify **Disallow Service Identifier** to identify the *Zebra Value-Add Service* to which *Bindings* should be disallowed.
 
 
 Note that every *Zebra Value-Add Service* that exposes APIs will be identified by a unique *Service Identifier*, that identifies the Service when controlling access to that Service. Consult the documentation for a given *Zebra Value-Add Service* to determine its *Service Identifier* that you will need to identify that Service when controlling access to it.
@@ -30954,7 +31023,7 @@ Note that every *Zebra Value-Add Service* that exposes APIs will be identified b
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!1@steps.step.serviceAccessStep.serviceBindingAction!! is selected for %%steps.step.serviceAccessStep.serviceBindingAction%%, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be allowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be allowed.
 
 
 **Detail Information:**
@@ -30986,7 +31055,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!1
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!2@steps.step.serviceAccessStep.serviceBindingAction!! is selected for %%steps.step.serviceAccessStep.serviceBindingAction%%, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be disallowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Binding Action**, to identify the specific *Zebra Value-Add Service* to which *Bindings* should be disallowed.
 
 
 **Detail Information:**
@@ -31024,13 +31093,13 @@ Select an Action to allow or disallow a specific application to call APIs expose
 Note that the default state for all *Zebra Value-Add Services* is for ALL applications to be disallowed from calling the APIs exposed by that Service. This ensures that no applications can call the potentially sensitive APIs exposed by a Service unless you explicitly choose to allow it.
 
 
-Note also that since a *Binding* to a Service is required to call any APIs exposed by that Service, *Bindings* to a *Zebra Value-Add Service* MUST be allowed in addition to allowing specific applications to call the Service. *Bindings* to a *Zebra Value-Add Service* can be allowed via %%steps.step.serviceAccessStep.serviceBindingAction%%.
+Note also that since a *Binding* to a Service is required to call any APIs exposed by that Service, *Bindings* to a *Zebra Value-Add Service* MUST be allowed in addition to allowing specific applications to call the Service. *Bindings* to a *Zebra Value-Add Service* can be allowed via **Service Binding Action**.
 
 
-- If the value !!4!! is selected, a specifically identified application will be allowed to call APIs to a specifically identified Service. You must also specify %%steps.step.serviceAccessStep.serviceCallerActionAllowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which API calls should be allowed and you must also specify %%steps.step.serviceAccessStep.serviceCallerActionAllowCallerPackage%% and %%steps.step.serviceAccessStep.serviceCallerActionAllowCallerSignature%% to identify the application to be allowed to make API calls to the identified Service.
+- If the value ***Allow*** is selected, a specifically identified application will be allowed to call APIs to a specifically identified Service. You must also specify **Allow Service Identifier** to identify the *Zebra Value-Add Service* to which API calls should be allowed and you must also specify **Allow Caller Package** and **Allow Caller Signature** to identify the application to be allowed to make API calls to the identified Service.
 
 
-- If the value !!5!! is selected, a specifically identified application will be disallowed from calling APIs to a specifically identified Service. This is the default state for every *Zebra Value-Add Service* and for every potential calling application. You must also specify %%steps.step.serviceAccessStep.serviceCallerActionDisallowServiceIdentifer%% to identify the *Zebra Value-Add Service* to which API calls should be disallowed and you must also specify %%steps.step.serviceAccessStep.serviceCallerActionDisallowCallerPackage%% and %%steps.step.serviceAccessStep.serviceCallerActionDisallowCallerSignature%% to identify the application to be disallowed from making API calls to the identified Service.
+- If the value ***Disallow*** is selected, a specifically identified application will be disallowed from calling APIs to a specifically identified Service. This is the default state for every *Zebra Value-Add Service* and for every potential calling application. You must also specify **Disallow Service Identifier** to identify the *Zebra Value-Add Service* to which API calls should be disallowed and you must also specify **Disallow Caller Package** and **Disallow Caller Signature** to identify the application to be disallowed from making API calls to the identified Service.
 
 
 **Detail Information:**
@@ -31064,7 +31133,7 @@ Note also that since a *Binding* to a Service is required to call any APIs expos
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific *Zebra Value-Add Service* to which API calls should be allowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be allowed.
 
 
 **Detail Information:**
@@ -31096,7 +31165,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!4
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Name* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to identify the specific application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -31128,7 +31197,7 @@ Enter the *Android Package Name* of an application that should be allowed to cal
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value !!4@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to provide the *Android Package Signature* of a specified application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Signature* of an application that should be allowed to call APIs exposed by a *Zebra Value-Add Service* when the value ***Allow*** is selected for **Service Caller Action**, to provide the *Android Package Signature* of a specified application that should be allowed to make calls to the Service identified by a specified *Service Identifier*.
 
 
 Note that the use of a *Android Package Signature* is MANDATORY and ensures that the application being allowed to make API calls to the specified Service is genuine and has not been spoofed. This prevents anyone from creating an impostor application with the same *Android Package Name*, but signed differently and then trying to make calls to the APIs of the Service as if they were the genuine application.
@@ -31163,7 +31232,7 @@ Note that the use of a *Android Package Signature* is MANDATORY and ensures that
 </span> <br><br>
 
 
-Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific *Zebra Value-Add Service* to which API calls should be disallowed.
+Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific *Zebra Value-Add Service* to which API calls should be disallowed.
 
 
 **Detail Information:**
@@ -31195,7 +31264,7 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value !!5
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to identify the specific application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Name* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to identify the specific application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -31227,7 +31296,7 @@ Enter the *Android Package Name* of an application that should be disallowed fro
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value !!5@steps.step.serviceAccessStep.serviceCallerAction!! is selected for %%steps.step.serviceAccessStep.serviceCallerAction%%, to provide the *Android Package Signature* of a specified application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
+Enter the *Android Package Signature* of an application that should be disallowed from calling APIs exposed by a *Zebra Value-Add Service* when the value ***Disallow*** is selected for **Service Caller Action**, to provide the *Android Package Signature* of a specified application that should be disallowed from making calls to the Service identified by a specified *Service Identifier*.
 
 
 **Detail Information:**
@@ -31268,16 +31337,16 @@ Note that the default state for all CSPs is *Unprotected*. This means that ALL C
 To limit access to a CSP, the CSP must first be declared to be *Protected*. Once a CSP has been declared to be *Protected*, no applications will be allowed to use that CSP until they have been explicitly been *Approved* to use that CSP.
 
 
-- If the value !!1!! is selected, a specifically identified CSP will be declared to be *Protected* and hence will be limited to use by specifically *Approved* applications. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionProtectCspName%% or %%steps.step.serviceAccessStep.serviceCspActionProtectCspNameCustom%% to identify the CSP to be declared *Protected*. You may also specify %%steps.step.serviceAccessStep.serviceCspActionProtectAutoApprove%% to automatically make OemConfig *Approved* to use that CSP.
+- If the value ***Protect*** is selected, a specifically identified CSP will be declared to be *Protected* and hence will be limited to use by specifically *Approved* applications. You must also specify one of **Protect CSP Name** or **Custom** to identify the CSP to be declared *Protected*. You may also specify **Protect CSP Auto Approve** to automatically make OemConfig *Approved* to use that CSP.
 
 
-- If the value !!2!! is selected, a specifically identified CSP will be declared to be *Unprotected* and hence will no longer be limited to use by specifically *Approved* applications. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspName%% or %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspNameCustom%% to identify the CSP to be declared *Unprotected*. You may also specify %%steps.step.serviceAccessStep.serviceCspActionUnprotectAutoUnapprove%% to automatically make OemConfig *Unapproved* from using that CSP.
+- If the value ***Unprotect*** is selected, a specifically identified CSP will be declared to be *Unprotected* and hence will no longer be limited to use by specifically *Approved* applications. You must also specify one of **Unprotect CSP Name** or **Custom** to identify the CSP to be declared *Unprotected*. You may also specify **Unprotect CSP Auto Unapprove** to automatically make OemConfig *Unapproved* from using that CSP.
 
 
-- If the value !!4!! is selected, a specifically identified application will be *Approved* to use a specifically identified *Protected* CSP. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionApproveCspName%% or %%steps.step.serviceAccessStep.serviceCspActionApproveCspNameCustom%% to identify the CSP for which access is to be *Approved*. You must also specify %%steps.step.serviceAccessStep.serviceCspActionApproveCallerPackage%% and %%steps.step.serviceAccessStep.serviceCspActionApproveCallerSignature%% to identify the specific application that will be *Approved* to use the specified CSP.
+- If the value ***Approve*** is selected, a specifically identified application will be *Approved* to use a specifically identified *Protected* CSP. You must also specify one of **Approve CSP Name** or **Custom** to identify the CSP for which access is to be *Approved*. You must also specify **Approve Caller Package** and **Approve Caller Signature** to identify the specific application that will be *Approved* to use the specified CSP.
 
 
-- If the value !!5!! is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspName%% or %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspNameCustom%% to identify the CSP for which access is to be *Unapproved*. You must also specify one of %%steps.step.serviceAccessStep.serviceCspActionUnapproveCallerPackage%% and %%steps.step.serviceAccessStep.serviceCspActionUnapproveCallerSignature%% to identify the specific application that will be *Unapproved* from using the specified CSP.
+- If the value ***Unapprove*** is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of **Unapprove CSP Name** or **Custom** to identify the CSP for which access is to be *Unapproved*. You must also specify one of **Unapprove Caller Package** and **Unapprove Caller Signature** to identify the specific application that will be *Unapproved* from using the specified CSP.
 
 
 **Detail Information:**
@@ -31311,9 +31380,9 @@ To limit access to a CSP, the CSP must first be declared to be *Protected*. Once
 </span> <br><br>
 
 
-Select whether OemConfig should automatically be *Approved* to use the CSP being Declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%% to Declare a CSP as *Protected*. This is a convenience to eliminate the need to separately make OemConfig *Approved* to allow it to use a CSP that has been Declared as *Protected*.
-- If the value ***True*** is selected, the effect will be the same as if a %%steps.step.serviceAccessStep.serviceCspAction%% were with the value !!4@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Approved* to use that CSP. In most cases, it makes sense for OemConfig to be *Approved* to use any CSP that it used to declare to be *Protected*.
-- If the value ***False*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% was not used with the value !!4@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
+Select whether OemConfig should automatically be *Approved* to use the CSP being Declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action** to Declare a CSP as *Protected*. This is a convenience to eliminate the need to separately make OemConfig *Approved* to allow it to use a CSP that has been Declared as *Protected*.
+- If the value ***True*** is selected, the effect will be the same as if a **Use CSP Action** were with the value ***Approve*** to make OemConfig *Approved* to use that CSP. In most cases, it makes sense for OemConfig to be *Approved* to use any CSP that it used to declare to be *Protected*.
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** was not used with the value ***Approve*** to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
 
 
 **Detail Information:**
@@ -31347,10 +31416,10 @@ Select whether OemConfig should automatically be *Approved* to use the CSP being
 </span> <br><br>
 
 
-Select a standard CSP that will be declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionProtectCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -31384,10 +31453,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be declared as *Protected* when the value !!1@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionProtectCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Protect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -31419,16 +31488,16 @@ Use when the CSP to be declared as *Protected* is not in the list of standard CS
 </span> <br><br>
 
 
-Select whether OemConfig should automatically be *Unapproved* from using the CSP being Declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%% to declare a CSP as *Unprotected*.
+Select whether OemConfig should automatically be *Unapproved* from using the CSP being Declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action** to declare a CSP as *Unprotected*.
 
 
 This is a convenience to eliminate the need to separately make OemConfig *Unapproved* to remove it from the list of applications that are *Approved* to use a CSP that it has been used to declare as *Unprotected*. Strictly speaking, this is not mandatory, since once a CSP has been declared as *Unprotected* the list of applications that are *Approved* to use that CSP is no longer relevant. But since the list of applications that are *Approved* to use a CSP is preserved across declaring a CSP as *Unprotected* and then later declaring that CSP as *Protected*, it is good practice to clean-up the list to avoid unexpected behavior in the future.
 
 
-- If the value ***True*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% were used with the value !!5@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Unapproved* to use that CSP. This will NOT result in OemConfig being unable to use the CSP since declaring the CSP as *Unprotected* explicitly allows ALL applications to use that CSP.
+- If the value ***True*** is selected, the effect will be the same as if **Use CSP Action** were used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This will NOT result in OemConfig being unable to use the CSP since declaring the CSP as *Unprotected* explicitly allows ALL applications to use that CSP.
 
 
-- If the value ***False*** is selected, the effect will be the same as if %%steps.step.serviceAccessStep.serviceCspAction%% were not used with the value !!5@steps.step.serviceAccessStep.serviceCspAction!! to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** were not used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
 
 
 **Detail Information:**
@@ -31462,10 +31531,10 @@ This is a convenience to eliminate the need to separately make OemConfig *Unappr
 </span> <br><br>
 
 
-Select a standard CSP that will be declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -31499,10 +31568,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be declared as *Unprotected* when the value !!2@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionUnprotectCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unprotect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -31534,10 +31603,10 @@ Use when the CSP to be declared as *Unprotected* is not in the list of standard 
 </span> <br><br>
 
 
-Select a standard CSP that will be *Approved* for an application when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be *Approved* for an application when the value ***Approve*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionApproveCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -31571,10 +31640,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionApproveCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Approve CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -31606,7 +31675,7 @@ Use when the CSP to be *Approved* for an application is not in the list of stand
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to identify the specific application that should be *Approved* to use the CSP.
+Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to identify the specific application that should be *Approved* to use the CSP.
 
 
 **Detail Information:**
@@ -31638,7 +31707,7 @@ Enter the *Android Package Name* of an application that should be *Approved* to 
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value !!4@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
+Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
 
 
 **Detail Information:**
@@ -31670,10 +31739,10 @@ Enter the *Android Package Signature* of an application that should be *Approved
 </span> <br><br>
 
 
-Select a standard CSP that will be *Unapproved* for an application when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Select a standard CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
 
 
-All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspNameCustom%% could alternately be used in cases where typing in the CSP name is preferable.
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
 
 
 **Detail Information:**
@@ -31707,10 +31776,10 @@ All standard CSP names are listed and can be picked from the list instead of hav
 </span> <br><br>
 
 
-Enter the name of a custom CSP that will be *Unapproved* for an application when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%.
+Enter the name of a custom CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
 
 
-Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use %%steps.step.serviceAccessStep.serviceCspActionUnapproveCspName%% instead, since picking a name from a list is less error-prone than typing the name.
+Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unapprove CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
 
 
 **Detail Information:**
@@ -31742,7 +31811,7 @@ Use when the CSP to be *Unapproved* for an application is not in the list of sta
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to identify the specific application that should be *Unapproved* from using the CSP.
+Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to identify the specific application that should be *Unapproved* from using the CSP.
 
 
 **Detail Information:**
@@ -31774,7 +31843,7 @@ Enter the *Android Package Name* of an application that should be *Unapproved* f
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value !!5@steps.step.serviceAccessStep.serviceCspAction!! is selected for %%steps.step.serviceAccessStep.serviceCspAction%%, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
+Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
 
 
 **Detail Information:**
@@ -31827,6 +31896,8 @@ Use this *Sub-group* to configure the behavior of the Settings UI on a device, e
 - Supported from: MX 4.3.
 
 
+details2 = steps.step.settingsStep
+level3Items.size() = 16
 <a id="steps.step.settingsStep.settingsUserAccessToQuickSettings">
 
 ### Allow Device User Access Quick Settings
@@ -31844,10 +31915,10 @@ Use this *Sub-group* to configure the behavior of the Settings UI on a device, e
 Select whether the Device User will be allowed to access the Android Quick Settings Panel UI.
 
 
-- If the value !!2!! is selected, any attempt by the Device User to enter the Quick Settings Panel will be ignored.
+- If the value ***Off*** is selected, any attempt by the Device User to enter the Quick Settings Panel will be ignored.
 
 
-- If the value !!1!! is selected, attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
+- If the value ***On*** is selected, attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
 
 
 **Detail Information:**
@@ -31882,8 +31953,8 @@ Select whether the Device User will be allowed to access the Android Quick Setti
 
 
 Select whether the Device User will be allowed to change the state of Airplane Mode.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of Airplane Mode will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of Airplane Mode will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of Airplane Mode will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of Airplane Mode will be honored.
 
 
 **Detail Information:**
@@ -31918,8 +31989,8 @@ Select whether the Device User will be allowed to change the state of Airplane M
 
 
 Select whether the Device User will be allowed to configure which application notifications will be generated.
-- If the value !!2!! is selected, any attempt by the Device User to change the configuration of application notifications will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the configuration of application notifications will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the configuration of application notifications will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the configuration of application notifications will be honored.
 
 
 **Detail Information:**
@@ -31954,8 +32025,8 @@ Select whether the Device User will be allowed to configure which application no
 
 
 Select whether the Device User will be allowed to enter the AppInfo section of the Settings UI where applications can be controlled.
-- If the value !!2!! is selected, any attempt by the Device User to enter the AppInfo section of the Settings UI will be ignored.
-- If the value !!1!! is selected, attempts by the Device User to enter the AppInfo section of the Settings will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to enter the AppInfo section of the Settings UI will be ignored.
+- If the value ***On*** is selected, attempts by the Device User to enter the AppInfo section of the Settings will be honored.
 
 
 **Detail Information:**
@@ -31990,8 +32061,8 @@ Select whether the Device User will be allowed to enter the AppInfo section of t
 
 
 Select whether the Device User will be allowed to change the usage of Background WWAN data.
-- If the value !!2!! is selected, any attempt by the Device User to change the usage of Background WWAN data will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the usage of Background WWAN data will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the usage of Background WWAN data will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the usage of Background WWAN data will be honored.
 
 
 **Detail Information:**
@@ -32026,8 +32097,8 @@ Select whether the Device User will be allowed to change the usage of Background
 
 
 Select whether the Device User will be allowed to change the state of the Ethernet adapter.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of Ethernet adapter will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of Ethernet adapter will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of Ethernet adapter will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of Ethernet adapter will be honored.
 
 
 **Detail Information:**
@@ -32062,8 +32133,8 @@ Select whether the Device User will be allowed to change the state of the Ethern
 
 
 Select whether the Device User will be allowed to change whether pressing the Power key causes the device to lock instantly.
-- If the value !!2!! is selected, any attempt by the Device User to change whether pressing the Power key causes the device to lock instantly will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change whether pressing the Power key causes the device to lock instantly will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change whether pressing the Power key causes the device to lock instantly will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change whether pressing the Power key causes the device to lock instantly will be honored.
 
 
 **Detail Information:**
@@ -32098,8 +32169,8 @@ Select whether the Device User will be allowed to change whether pressing the Po
 
 
 Select whether the Device User will be allowed to change the state of USB.
-- If the value !!2!! is selected, any attempt by the Device User to change the state of USB will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the state of USB will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the state of USB will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the state of USB will be honored.
 
 
 **Detail Information:**
@@ -32131,8 +32202,8 @@ Select whether the Device User will be allowed to change the state of USB.
 
 
 Select whether the Device User will be allowed to change whether applications can be installed from Unknown Sources.
-- If the value !!2!! is selected, any attempt by the Device User to change whether applications can be installed from Unknown Sources.
-- If the value !!1!! is selected, attempts by the Device User to change whether applications can be installed from Unknown Sources.
+- If the value ***Off*** is selected, any attempt by the Device User to change whether applications can be installed from Unknown Sources.
+- If the value ***On*** is selected, attempts by the Device User to change whether applications can be installed from Unknown Sources.
 
 
 **Detail Information:**
@@ -32173,8 +32244,8 @@ Select whether the Device User will be allowed to change whether applications ca
 
 
 Select whether the Device User will be allowed to change the configuration of the WLAN adapter.
-- If the value !!2!! is selected, any attempt by the Device User to change the configuration of the WLAN adapter will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to change the configuration of the WLAN adapter will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to change the configuration of the WLAN adapter will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to change the configuration of the WLAN adapter will be honored.
 
 
 **Detail Information:**
@@ -32209,8 +32280,8 @@ Select whether the Device User will be allowed to change the configuration of th
 
 
 Select whether the Device User will be allowed to perform an Enterprise Reset from the Settings UI.
-- If the value !!2!! is selected, any attempt by the Device User to perform an Enterprise Reset from the Settings UI will be blocked.
-- If the value !!1!! is selected, attempts by the Device User to perform an Enterprise Reset from the Settings UI will be honored.
+- If the value ***Off*** is selected, any attempt by the Device User to perform an Enterprise Reset from the Settings UI will be blocked.
+- If the value ***On*** is selected, attempts by the Device User to perform an Enterprise Reset from the Settings UI will be honored.
 
 
 **Detail Information:**
@@ -32245,8 +32316,8 @@ Select whether the Device User will be allowed to perform an Enterprise Reset fr
 
 
 Select whether the Device User will be allowed to invoke the Settings UI using an icon on the Quick Settings Panel.
-- If the value !!2!! is selected, any attempt by the use of the icon to invoke the Settings UI will be blocked.
-- If the value !!1!! is selected, the use of the icon to invoke the Settings UI will be allowed.
+- If the value ***Off*** is selected, any attempt by the use of the icon to invoke the Settings UI will be blocked.
+- If the value ***On*** is selected, the use of the icon to invoke the Settings UI will be allowed.
 
 
 **Detail Information:**
@@ -32281,8 +32352,8 @@ Select whether the Device User will be allowed to invoke the Settings UI using a
 
 
 Select whether the Full or Reduced version of the Settings UI will be used.
-- If the value !!1!! is selected, when the Device User launches the Settings UI, the Full version,with support for all settings, will be used.
-- If the value !!2!! is selected, when the Device User launches the Settings UI, the Reduced version, with support for only a few settings, will be used.
+- If the value ***Off*** is selected, when the Device User launches the Settings UI, the Full version,with support for all settings, will be used.
+- If the value ***On*** is selected, when the Device User launches the Settings UI, the Reduced version, with support for only a few settings, will be used.
 
 
 **Detail Information:**
@@ -32314,8 +32385,8 @@ Select whether the Full or Reduced version of the Settings UI will be used.
 
 
 Select whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
+- If the value ***Off*** is selected, the Device User will be blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
+- If the value ***On*** is selected, the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
 
 
 **Detail Information:**
@@ -32350,8 +32421,8 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 
 
 Select whether the Device User is allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
-- If the value !!1!! is selected, the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI
+- If the value ***Off*** is selected, the Device User will be blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
+- If the value ***On*** is selected, the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI
 
 
 **Detail Information:**
@@ -32371,6 +32442,9 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 - Supported from: MX 8.1.
 
 
+- Support discontinued from: MX 9.0..
+
+
 <a id="steps.step.settingsStep.settingsUseOfTetheringAndPortableHotspot">
 
 ### Use of Tethering and Portable Hotspot
@@ -32386,8 +32460,8 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 
 
 Select whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
 
 
 **Detail Information:**
@@ -32442,6 +32516,8 @@ Use this *Sub-group* to configure which threats to a device will be monitored an
 - Supported from: MX 4.3.
 
 
+details2 = steps.step.threatStep
+level3Items.size() = 10
 <a id="steps.step.threatStep.threatAction">
 
 ### Action
@@ -32457,8 +32533,8 @@ Use this *Sub-group* to configure which threats to a device will be monitored an
 
 
 Select an Action to configure whether a given threat will be monitored.
-- If the value !!Detect!! is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify %%steps.step.threatStep.threatActionDetectThreatType%% to provide the threat that will be monitored. In addition, you must also specify the *Sub-array* %%steps.step.threatStep.threatActionDetectCountermeasures%% to provide the set of countermeasures that will be performed if the specified threat is detected.
-- If the value !!Ignore!! is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify %%steps.step.threatStep.threatActionIgnoreThreatType%% to provide the threat that will be ignored.
+- If the value ***Detect*** is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify **Detect Threat Type** to provide the threat that will be monitored. In addition, you must also specify the *Sub-array* **Detect Countermeasures** to provide the set of countermeasures that will be performed if the specified threat is detected.
+- If the value ***Ignore*** is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify **Ignore Threat Type** to provide the threat that will be ignored.
 
 
 **Detail Information:**
@@ -32492,12 +32568,12 @@ Select an Action to configure whether a given threat will be monitored.
 </span> <br><br>
 
 
-Select the type of threat that will be monitored when the value !!Detect@steps.step.threatStep.threatAction!! is selected for%%steps.step.threatStep.threatAction%%.
-- If the value !!MaxPasswordAttempts!! is selected, the Threat Management System will be configured to monitor password entry attempts and the threat will be considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
-- If the value !!MDMClientRemoval!! is selected, the Threat Management System will be configured to monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device. You must also specify %%steps.step.threatStep.threatMdmClientPackageName%% to provide the *Android Package Name* that will be monitored. While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of ANY application, if detection of the removal of an MDM Agent is not required.
-- If the value !!ExternallyDetected!! is selected, the Threat Management System will be configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System. The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
-- If the value !!ExchangeActiveSyncCommand!! is selected, the Threat Management System will be configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
-- If the value !!DeviceisRooted!! is selected, the Threat Management System will be configured to monitor the device to see if it has been rooted. Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device.
+Select the type of threat that will be monitored when the value ***Detect*** is selected for**Action**.
+- If the value ***Max Password Attempts*** is selected, the Threat Management System will be configured to monitor password entry attempts and the threat will be considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
+- If the value ***MDM Client Removal*** is selected, the Threat Management System will be configured to monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device. You must also specify **Action Detect Threat Type MDM Client Removal Package Name** to provide the *Android Package Name* that will be monitored. While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of ANY application, if detection of the removal of an MDM Agent is not required.
+- If the value ***Externally Detected*** is selected, the Threat Management System will be configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System. The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
+- If the value ***Exchange Active Sync Command*** is selected, the Threat Management System will be configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
+- If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to monitor the device to see if it has been rooted. Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device.
 
 
 **Detail Information:**
@@ -32599,12 +32675,12 @@ Use this *Sub-group* to specify a countermeasure to mitigate a detected threat.
 
 
 Select the type of a single countermeasure that will be performed to mitigate a detected threat.
-- If the value !!FormatSdcard!! is selected, the countermeasure to format the removable SD Card will be performed when the associated threat is detected.
-- If the value !!FactoryReset!! is selected, the countermeasure to Factory Reset the device will be performed when the associated threat is detected.
-- If the value !!WipeSecureStorageKeys!! is selected, the countermeasure to Wipe all encryption keys, deployed via the Group %%steps.step.securityStep%% will be performed when the associated threat is detected.
-- If the value !!LockDevice!! is selected, the countermeasure to lock the device, requiring it to be unlocked by the Device User, will be performed when the associated threat is detected.
-- If the value !!UninstallApplication!! is selected, the countermeasure to Uninstall an application will be performed when the associated threat is detected. You must also specify %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUninstallPackageName%% to provide the *Android Package Name* of the application that will be uninstalled.
-- If the value !!UnsolicitedAlert!! is selected, the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected. You must also specify %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertPackageName%%, %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertClass%%, and %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureUnsolicitedAlertMessage%% to provide the information needed to deliver the alert.
+- If the value ***FormatSdcard*** is selected, the countermeasure to format the removable SD Card will be performed when the associated threat is detected.
+- If the value ***FactoryReset*** is selected, the countermeasure to Factory Reset the device will be performed when the associated threat is detected.
+- If the value ***WipeSecureStorageKeys*** is selected, the countermeasure to Wipe all encryption keys, deployed via the Group **Security Configuration** will be performed when the associated threat is detected.
+- If the value ***LockDevice*** is selected, the countermeasure to lock the device, requiring it to be unlocked by the Device User, will be performed when the associated threat is detected.
+- If the value ***UninstallApplication*** is selected, the countermeasure to Uninstall an application will be performed when the associated threat is detected. You must also specify **Uninstall Package Name** to provide the *Android Package Name* of the application that will be uninstalled.
+- If the value ***UnsolicitedAlert*** is selected, the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected. You must also specify **Unsolicited Alert Package Name**, **Unsolicited Alert Class**, and **Unsolicited Alert Message** to provide the information needed to deliver the alert.
 
 
 **Detail Information:**
@@ -32640,7 +32716,7 @@ Select the type of a single countermeasure that will be performed to mitigate a 
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that will be uninstalled as a countermeasure to mitigate a threat when the value !!UninstallApplication@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the *Android Package Name* of an application that will be uninstalled as a countermeasure to mitigate a threat when the value ***UninstallApplication*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -32674,7 +32750,7 @@ Enter the *Android Package Name* of an application that will be uninstalled as a
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the *Android Package Name* of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -32708,7 +32784,7 @@ Enter the *Android Package Name* of an application that will be sent an unsolici
 </span> <br><br>
 
 
-Enter the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -32742,7 +32818,7 @@ Enter the Class Name of component within an application that will be sent an uns
 </span> <br><br>
 
 
-Enter the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value !!UnsolicitedAlert@steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType!! is selected for %%steps.step.threatStep.threatActionDetectCountermeasures.threatCountermeasure.threatCountermeasureType%%.
+Enter the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is selected for **Type**.
 
 
 **Detail Information:**
@@ -32774,7 +32850,7 @@ Enter the string text message that will be sent to a component of an application
 </span> <br><br>
 
 
-Enter the *Android Package Name* of the MDM Agent that will be monitored to detect a threat when the value !!MDMClientRemoval@steps.step.threatStep.threatActionDetectThreatType!! is selected for %%steps.step.threatStep.threatActionDetectThreatType%%.
+Enter the *Android Package Name* of the MDM Agent that will be monitored to detect a threat when the value ***MDM Client Removal*** is selected for **Detect Threat Type**.
 
 
 **Detail Information:**
@@ -32806,12 +32882,12 @@ Enter the *Android Package Name* of the MDM Agent that will be monitored to dete
 </span> <br><br>
 
 
-Select the type of threat that will NOT be monitored, and hence cannot be detected, when the value !!Ignore@steps.step.threatStep.threatAction!! is selected for%%steps.step.threatStep.threatAction%%.
-- If the value !!MaxPasswordAttempts!! is selected, the Threat Management System will be configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
-- If the value !!MDMClientRemoval!! is selected, the Threat Management System will be configured to NOT monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client.
-- If the value !!ExternallyDetected!! is selected, the Threat Management System will be configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
-- If the value !!ExchangeActiveSyncCommand!! is selected, the Threat Management System will be configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
-- If the value !!DeviceisRooted!! is selected, the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected.
+Select the type of threat that will NOT be monitored, and hence cannot be detected, when the value ***Ignore*** is selected for**Action**.
+- If the value ***Max Password Attempts*** is selected, the Threat Management System will be configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
+- If the value ***MDM Client Removal*** is selected, the Threat Management System will be configured to NOT monitor the device and detect if a specific *Android Package Name* is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client.
+- If the value ***Externally Detected*** is selected, the Threat Management System will be configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
+- If the value ***Exchange Active Sync Command*** is selected, the Threat Management System will be configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
+- If the value ***Device is Rooted*** is selected, the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected.
 
 
 **Detail Information:**
@@ -32846,8 +32922,8 @@ Select the type of threat that will NOT be monitored, and hence cannot be detect
 
 
 Select whether the Threat Management System should perform background polling to increase the accuracy and timeliness of detection of Rooted Device threat.
-- If the value !!2!! is selected, the Threat Management System will NOT perform background polling. This may increase performance and improve battery life somewhat, but will reduce the ability to detect the Rooted Device threat and or result in a delay in detection of that threat.
-- If the value !!1!! is selected, the Threat Management System will perform background polling. This may reduce performance and degrade battery life somewhat, but will increase the ability to detect the Rooted Device threat and accelerate detection of that threat. You may also specify %%steps.step.threatStep.threatPeriodicScanInterval%%, %%steps.step.threatStep.threatPeriodicScanAdditionalFolders%%, and %%steps.step.threatStep.threatPeriodicScanAdditionalFoldersList%% to adjust the nature of the background polling, allowing trade-offs to be made in the balance pf thoroughness vs. the impact to performance and battery life. This value should generally be selected when detection of the !!DeviceisRooted@steps.step.threatStep.threatActionDetectThreatType!! threat has been enabled, since it would have little value otherwise.
+- If the value ***Off*** is selected, the Threat Management System will NOT perform background polling. This may increase performance and improve battery life somewhat, but will reduce the ability to detect the Rooted Device threat and or result in a delay in detection of that threat.
+- If the value ***On*** is selected, the Threat Management System will perform background polling. This may reduce performance and degrade battery life somewhat, but will increase the ability to detect the Rooted Device threat and accelerate detection of that threat. You may also specify **Interval**, **Additional Folders**, and **List** to adjust the nature of the background polling, allowing trade-offs to be made in the balance pf thoroughness vs. the impact to performance and battery life. This value should generally be selected when detection of the ***Device is Rooted*** threat has been enabled, since it would have little value otherwise.
 
 
 **Detail Information:**
@@ -32881,7 +32957,7 @@ Select whether the Threat Management System should perform background polling to
 </span> <br><br>
 
 
-Enter the interval between polls when the value !!1@steps.step.threatStep.threatPeriodicScan!! is selected for %%steps.step.threatStep.threatPeriodicScan%%.
+Enter the interval between polls when the value ***On*** is selected for **Periodic Scan**.
 
 
 The interval is specified in seconds between polls.
@@ -32917,14 +32993,14 @@ The interval is specified in seconds between polls.
 </span> <br><br>
 
 
-Select whether additional folders will be polled when the value !!1!! is selected for %%steps.step.threatStep.threatPeriodicScan%%.
+Select whether additional folders will be polled when the value ***On*** is selected for **Periodic Scan**.
 
 
 
 
 When background polling to detect device rooting is performed, the Threat Management System will always scan certain key folders that are considered common or likely locations where changes might occur that could signal that device has been rooted. In some cases, rooting might occur through changes made to other folders.
-- If the value !!2!! is selected, the Threat Management System will only scan the default folders.
-- If the value !!1!! is selected, the Threat Management System will scan the default folders plus additional folders. You must also specify %%steps.step.threatStep.threatPeriodicScanAdditionalFoldersList%% to identify the list of additional folders to be scanned.
+- If the value ***Off*** is selected, the Threat Management System will only scan the default folders.
+- If the value ***On*** is selected, the Threat Management System will scan the default folders plus additional folders. You must also specify **List** to identify the list of additional folders to be scanned.
 
 
 **Detail Information:**
@@ -32958,7 +33034,7 @@ When background polling to detect device rooting is performed, the Threat Manage
 </span> <br><br>
 
 
-Enter list of additional folders that will be polled when the value !!1@steps.step.threatStep.threatPeriodicScan!! is selected for %%steps.step.threatStep.threatPeriodicScan%% and the value !!1@steps.step.threatStep.threatPeriodicScanAdditionalFolders!! is selected for %%steps.step.threatStep.threatPeriodicScanAdditionalFolders%%.
+Enter list of additional folders that will be polled when the value ***On*** is selected for **Periodic Scan** and the value ***On*** is selected for **Additional Folders**.
 
 
 **Detail Information:**
@@ -32990,7 +33066,7 @@ Enter list of additional folders that will be polled when the value !!1@steps.st
 </span> <br><br>
 
 
-Signal the detection of an externally detected threat. This would generally be relevant only if the !!ExternallyDetected@steps.step.threatStep.threatActionDetectThreatType!! was selected for %%steps.step.threatStep.threatActionDetectThreatType%%, since any signaling of an externally detected threat would otherwise be ignored.
+Signal the detection of an externally detected threat. This would generally be relevant only if the ***Externally Detected*** was selected for **Detect Threat Type**, since any signaling of an externally detected threat would otherwise be ignored.
 
 
 **Detail Information:**
@@ -33043,6 +33119,8 @@ Use this *Group* to configure the UI behavior of the Zebra Volume Control on a d
 - Supported from: MX 4.4.
 
 
+details2 = steps.step.volumeuiStep
+level3Items.size() = 6
 <a id="steps.step.volumeuiStep.volumeuiAction">
 
 ### Action
@@ -33061,11 +33139,11 @@ Select an Action to alter the UI behavior of the *Zebra Volume Control* on a dev
 
 
 The *Zebra Volume Control* provides a configurable UI that allows the Device Users to adjust the volume of one or more *Audio Streams* on a device. The UI behavior of the *Zebra Volume Control* is configured by defining one or more *Audio UI Profiles* and controlling which *Audio UI Profile* is active. Each *Audio UI Profile* defines which *Audio Streams* can be configured and adjusts the experience of the Device User when adjusting the volumes of those *Audio Streams*. The *Zebra Volume Control* also has a *Factory Preset Audio UI Profile* that can be used to return the behavior of the *Zebra Volume Control* to it default out-of-box state.
-- If the value !!1!! is selected, a new *Audio UI Profile* is added to the list of *Audio UI Profiles*. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileName%% and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%% to define the *Audio UI Profile* being added.
-- If the value !!2!! is selected, an existing *Audio UI Profile* is removed from the list of *Audio UI Profiles*. You must also specify %%steps.step.volumeuiStep.volumeuiActionRemoveProfileName%% to provide the name that identifies the *Audio UI Profile* to be removed.
-- If the value !!01!! is selected, an existing *Audio UI Profile* is set to be the active *Audio UI Profile*. You must also specify %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileName%% to provide the name that identifies the *Audio UI Profile* to be made the new active *Audio UI Profile*.
-- If the value !!02!! is selected, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*. If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* will be adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
-- If the value !!03!! is selected, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state.
+- If the value ***Add Profile*** is selected, a new *Audio UI Profile* is added to the list of *Audio UI Profiles*. You must also specify **Add Profile Name** and **Add Profile Streams** to define the *Audio UI Profile* being added.
+- If the value ***Remove Profile*** is selected, an existing *Audio UI Profile* is removed from the list of *Audio UI Profiles*. You must also specify **Remove Profile Name** to provide the name that identifies the *Audio UI Profile* to be removed.
+- If the value ***Set Current Profile*** is selected, an existing *Audio UI Profile* is set to be the active *Audio UI Profile*. You must also specify **Set Current Profile Name** to provide the name that identifies the *Audio UI Profile* to be made the new active *Audio UI Profile*.
+- If the value ***Apply Current Profile*** is selected, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*. If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* will be adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
+- If the value ***Set Factory Preset*** is selected, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state.
 
 
 **Detail Information:**
@@ -33099,7 +33177,7 @@ The *Zebra Volume Control* provides a configurable UI that allows the Device Use
 </span> <br><br>
 
 
-Enter the name of a new *Audio UI Profile* to be added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Enter the name of a new *Audio UI Profile* to be added when the value ***Add Profile*** is selected for **Action**.
 - If an *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will replace the existing *Audio UI Profile* with that name.
 - If no *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will be added with that name.
 
@@ -33133,7 +33211,7 @@ Enter the name of a new *Audio UI Profile* to be added when the value !!1@steps.
 </span> <br><br>
 
 
-Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -33166,7 +33244,7 @@ Use this *Sub-array* to specify the set of *Audio Streams* that will be included
 </span> <br><br>
 
 
-Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%%.
+Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Stream**.
 
 
 **Detail Information:**
@@ -33200,15 +33278,15 @@ Use this *Sub-group* to define a single *Audio Stream* that will be included as 
 </span> <br><br>
 
 
-You must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the *Sub-group* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamLabel%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamIcon%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamVisible%%, and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% to define the characteristics of the new *Audio Stream* of the specified type that will be added.
-- If the value !!Music!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
-- If the value !!Ring!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
-- If the value !!Notification!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
-- If the value !!System!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
-- If the value !!Alarm!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
-- If the value !!VoiceCall!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
-- If the value !!VVS!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS).
-- If the value !!KeypadTone!! is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for the keypad tone.
+You must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the *Sub-group* **Stream** within *Sub-array* **Add Profile Streams**. You must also specify **Label**, **Icon**, **Visible**, and **Modes** to define the characteristics of the new *Audio Stream* of the specified type that will be added.
+- If the value ***Music*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
+- If the value ***Ring*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
+- If the value ***Notification*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
+- If the value ***System*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
+- If the value ***Alarm*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
+- If the value ***VoiceCall*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
+- If the value ***VVS*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS).
+- If the value ***KeypadTone*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for the keypad tone.
 
 
 **Detail Information:**
@@ -33244,7 +33322,7 @@ You must select the type of a single *Audio Stream* that will be included as par
 </span> <br><br>
 
 
-Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The text label might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the text label to something more description of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -33284,7 +33362,7 @@ If no text label is selected for an *Audio Stream*, the *Factory Preset* default
 </span> <br><br>
 
 
-Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -33327,7 +33405,7 @@ If no icon is selected for an *Audio Stream*, the *Factory Preset* default icon 
 </span> <br><br>
 
 
-Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra Volume Control* will not present ANY UI to the Device User to control the volume of that *Audio Stream*. The result is basically identical to not including the *Audio Stream* in the *Audio UI Profile*. This might be used when temporarily disabling an *Audio Stream* to avoid the need to remove and then add back in the entire definition of that *Audio Stream*.
@@ -33364,7 +33442,7 @@ If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra V
 </span> <br><br>
 
 
-Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% and as part of an instance of the group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** and as part of an instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 **Detail Information:**
@@ -33399,10 +33477,10 @@ Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stre
 </span> <br><br>
 
 
-Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
-For each *Audio Mode* defined for an *Audio Stream*, You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeType%% to provide which *Audio Mode* will be defined. You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%%, %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%%, and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%% to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
+For each *Audio Mode* defined for an *Audio Stream*, You must also specify **Type** to provide which *Audio Mode* will be defined. You must also specify **Minimum**, **Maximum**, and **Preset** to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
 
 
 **Detail Information:**
@@ -33438,7 +33516,7 @@ For each *Audio Mode* defined for an *Audio Stream*, You must also specify %%ste
 </span> <br><br>
 
 
-Enter the minimum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the minimum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -33446,10 +33524,10 @@ Enter the minimum volume level that the UI will allow the Device User to select 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
 
-You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%% and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%% to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
+You must also specify **Maximum** and **Preset** to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
 
 
-The value specified must be less than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%% and less than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%%.
+The value specified must be less than or equal to the value entered for **Maximum** and less than or equal to the value entered for **Preset**.
 
 
 **Detail Information:**
@@ -33485,7 +33563,7 @@ The value specified must be less than or equal to the value entered for %%steps.
 </span> <br><br>
 
 
-Enter the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -33493,10 +33571,10 @@ Enter the maximum volume level that the UI will allow the Device User to select 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
 
-You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%% and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%% to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
+You must also specify **Minimum** and **Preset** to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
 
 
-The value specified must be greater than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%% and greater than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModePreset%%.
+The value specified must be greater than or equal to the value entered for **Minimum** and greater than or equal to the value entered for **Preset**.
 
 
 **Detail Information:**
@@ -33532,7 +33610,7 @@ The value specified must be greater than or equal to the value entered for %%ste
 </span> <br><br>
 
 
-Enter the preset volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
+Enter the preset volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -33540,10 +33618,10 @@ Enter the preset volume level that the UI will allow the Device User to select f
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
 
-You must also specify %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%% and %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%% to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
+You must also specify **Minimum** and **Maximum** to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
 
 
-The value specified must be greater than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMin%% and less than or equal to the value entered for %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes.volumeuiMode.volumeuiModeMax%%.
+The value specified must be greater than or equal to the value entered for **Minimum** and less than or equal to the value entered for **Maximum**.
 
 
 **Detail Information:**
@@ -33579,11 +33657,11 @@ The value specified must be greater than or equal to the value entered for %%ste
 </span> <br><br>
 
 
-Select the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value !!1@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream.volumeuiStreamModes%% as an instance of the Group %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams.volumeuiStream%% within the *Sub-array* %%steps.step.volumeuiStep.volumeuiActionAddProfileStreams%%.
-- If the value !!Speaker!! is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
-- If the value !!Receiver!! is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
-- If the value !!WiredHeadset!! is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
-- If the value !!BluetoothHeadset!! is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wireless Bluetooth audio headset.
+Select the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
+- If the value ***Speaker*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
+- If the value ***Receiver*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
+- If the value ***WiredHeadset*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
+- If the value ***BluetoothHeadset*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wireless Bluetooth audio headset.
 
 
 
@@ -33619,7 +33697,7 @@ Select the type of behavior of the UI for a single *Audio Stream* in a single *A
 </span> <br><br>
 
 
-Enter the name of an existing *Audio UI Profile* to be removed when the value !!2@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%.
+Enter the name of an existing *Audio UI Profile* to be removed when the value ***Remove Profile*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -33651,7 +33729,7 @@ Enter the name of an existing *Audio UI Profile* to be removed when the value !!
 </span> <br><br>
 
 
-Enter the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile* when the value !!01@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%%. You must also specify %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileAdjustVolume%% to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*.
+Enter the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile* when the value ***Set Current Profile*** is selected for **Action**. You must also specify **Set Current Profile Adjust Volume** to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*.
 
 
 **Detail Information:**
@@ -33683,7 +33761,7 @@ Enter the name of an existing *Audio UI Profile* to be made the current active *
 </span> <br><br>
 
 
-Select whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*when the value !!01@steps.step.volumeuiStep.volumeuiAction!! is selected for %%steps.step.volumeuiStep.volumeuiAction%% and %%steps.step.volumeuiStep.volumeuiActionSetCurrentProfileName%% is specified.
+Select whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*when the value ***Set Current Profile*** is selected for **Action** and **Set Current Profile Name** is specified.
 
 
 **Detail Information:**
@@ -33738,6 +33816,8 @@ Use this *Sub-group* to configure Wakeups on a device.
 - Supported from: MX 9.2.
 
 
+details2 = steps.step.wakeupStep
+level3Items.size() = 2
 <a id="steps.step.wakeupStep.selectwakeupsourceMethod">
 
 ### Select Wakeup Source Method
@@ -33789,10 +33869,10 @@ Select the Method that will be used to implement and control device Wake-up. - H
 Select whether all controllable Wakeup Sources should be turned on or off.
 
 
-- If the value !!2!! is selected, all wakeup sources that can be turned on or off will be turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
+- If the value ***Off*** is selected, all wakeup sources that can be turned on or off will be turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
 
 
-- If the value !!1!! is selected, all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
+- If the value ***On*** is selected, all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
 
 
 **Detail Information:**
@@ -33848,6 +33928,8 @@ Whitelisting applies only to user applications; it has no effect on System appli
 - Supported from: MX 4.1.
 
 
+details2 = steps.step.whitelistStep
+level3Items.size() = 7
 <a id="steps.step.whitelistStep.whitelistMode">
 
 ### Mode
@@ -33863,11 +33945,11 @@ Whitelisting applies only to user applications; it has no effect on System appli
 
 
 Select the Whitelisting Mode, which determines how the applications that can be installed and run on a device will be controlled.
-- If the value !!1!! is selected, when configuring which applications can be installed and run, only the *Android Package Name* will be used to identify the allowed applications.
-- If the value !!2!! is selected, when configuring which applications can be installed and run, both the *Android Package Name* and the Package Signature will be used to identify the allowed applications.
+- If the value ***Package Name Only*** is selected, when configuring which applications can be installed and run, only the *Android Package Name* will be used to identify the allowed applications.
+- If the value ***Package Name and Signature*** is selected, when configuring which applications can be installed and run, both the *Android Package Name* and the Package Signature will be used to identify the allowed applications.
 
 
-Using the value !!2!! provides significantly better security than using !!1!! since it provides much stronger protection against spoofing. If !!1!! is used, any APK whose *Android Package Name* matches one of the allowed *Android Package Names* will be allowed to be installed and run. Since any APK can be assigned any *Android Package Name*, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If !!2!! is used, the *Android Package Signature* of an application must match an allowed *Android Package Signature* in addition to the *Android Package Name* matching an allowed *Android Package Name*. Since a rogue APK cannot be signed with a given *Android Package Signature* without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
+Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing. If ***Package Name Only*** is used, any APK whose *Android Package Name* matches one of the allowed *Android Package Names* will be allowed to be installed and run. Since any APK can be assigned any *Android Package Name*, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If ***Package Name and Signature*** is used, the *Android Package Signature* of an application must match an allowed *Android Package Signature* in addition to the *Android Package Name* matching an allowed *Android Package Name*. Since a rogue APK cannot be signed with a given *Android Package Signature* without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
 
 
 **Detail Information:**
@@ -33902,8 +33984,8 @@ Using the value !!2!! provides significantly better security than using !!1!! si
 
 
 Select an Action to alter the Whitelisting configuration of a device.
-- If the value !!Add!! is selected, a single application will be allowed to be installed and run. You must also specify %%steps.step.whitelistStep.whitelistActionAddPackageName%% to provide the *Android Package Name* of the application that will be allowed. In addition, if the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionAddSignature%% to provide the *Android Package Signature* to be allowed.
-- If the value !!Delete!! is selected, a single application will be prevented from being installed and run. You must also specify %%steps.step.whitelistStep.whitelistActionDeletePackageName%% to provide the *Android Package Name* of the application that will be disallowed.
+- If the value ***Allow*** is selected, a single application will be allowed to be installed and run. You must also specify **Allow Package Name** to provide the *Android Package Name* of the application that will be allowed. In addition, if the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Allow Signature** to provide the *Android Package Signature* to be allowed.
+- If the value ***Disallow*** is selected, a single application will be prevented from being installed and run. You must also specify **Disallow Package Name** to provide the *Android Package Name* of the application that will be disallowed.
 
 
 **Detail Information:**
@@ -33937,8 +34019,8 @@ Select an Action to alter the Whitelisting configuration of a device.
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application to be allowed when the value !!Add@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%.
-- If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionAddSignature%% to provide the *Android Package Signature* to be allowed.
+Enter the *Android Package Name* of an application to be allowed when the value ***Allow*** is selected for **Action**.
+- If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Allow Signature** to provide the *Android Package Signature* to be allowed.
 
 
 **Detail Information:**
@@ -33970,7 +34052,7 @@ Enter the *Android Package Name* of an application to be allowed when the value 
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application to be allowed when the value !!Add@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%, %%steps.step.whitelistStep.whitelistActionAddPackageName%% is specified, and the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%.
+Enter the *Android Package Signature* of an application to be allowed when the value ***Allow*** is selected for **Action**, **Allow Package Name** is specified, and the value ***Package Name and Signature*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -34002,7 +34084,7 @@ Enter the *Android Package Signature* of an application to be allowed when the v
 </span> <br><br>
 
 
-Enter the *Android Package Signature* of an application to be disallowed when the value !!Delete@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%, and when %%steps.step.whitelistStep.whitelistActionDeletePackageName%% is specified, and when the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%.
+Enter the *Android Package Signature* of an application to be disallowed when the value ***Disallow*** is selected for **Action**, and when **Disallow Package Name** is specified, and when the value ***Package Name and Signature*** is selected for **Mode**.
 
 
 **Detail Information:**
@@ -34034,10 +34116,10 @@ Enter the *Android Package Signature* of an application to be disallowed when th
 </span> <br><br>
 
 
-Enter the *Android Package Name* of an application to be disallowed when the value !!Delete@steps.step.whitelistStep.whitelistAction!! is selected for %%steps.step.whitelistStep.whitelistAction%%.
+Enter the *Android Package Name* of an application to be disallowed when the value ***Disallow*** is selected for **Action**.
 
 
-If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%steps.step.whitelistStep.whitelistMode%%, you must also specify %%steps.step.whitelistStep.whitelistActionDeleteSignature%% to provide the *Android Package Signature* to be allowed.
+If the value ***Package Name and Signature*** is selected for **Mode**, you must also specify **Disallow Signature** to provide the *Android Package Signature* to be allowed.
 
 
 **Detail Information:**
@@ -34072,10 +34154,10 @@ If the value !!2@steps.step.whitelistStep.whitelistMode!! is selected for %%step
 Select the Whitelisting State, which determines whether the set of applications that can be installed and run on a device will be controlled.
 
 
-- If the value !!1!! is selected, Whitelisting will not be used and no restrictions will be placed on which applications can be installed and run.
+- If the value ***Off*** is selected, Whitelisting will not be used and no restrictions will be placed on which applications can be installed and run.
 
 
-- If the value !!2!! is selected, Whitelisting will be used and you should specify additional configuration in the Group to configure how the set of applications will be controlled and which applications will be allowed to be installed and run.
+- If the value ***On*** is selected, Whitelisting will be used and you should specify additional configuration in the Group to configure how the set of applications will be controlled and which applications will be allowed to be installed and run.
 
 
 **Detail Information:**
@@ -34130,6 +34212,8 @@ Use this *Sub-group* to configure General Wireless settings on a device.
 - Supported from: MX 7.1.
 
 
+details2 = steps.step.wirelessStep
+level3Items.size() = 2
 <a id="steps.step.wirelessStep.wirelessAntennaSelection">
 
 ### Antenna Selection
@@ -34147,10 +34231,10 @@ Use this *Sub-group* to configure General Wireless settings on a device.
 Use this *Sub-group* to configure which of multiple antennas should be used for wireless communications.
 
 
-- If the value !!1!! is selected, the internal built-in antenna will be used.
+- If the value ***Internal*** is selected, the internal built-in antenna will be used.
 
 
-- If the value !!2!! is selected, an externally connected antenna will be used.
+- If the value ***External*** is selected, an externally connected antenna will be used.
 
 
 
@@ -34187,8 +34271,8 @@ Use this *Sub-group* to configure which of multiple antennas should be used for 
 
 
 Use this *Sub-group* to configure whether the GPS radio state should be On or Off.
-- If the value !!2!! is selected, the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
-- If the value !!1!! is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
+- If the value ***Off*** is selected, the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
+- If the value ***On*** is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
 
 
 **Detail Information:**
@@ -34241,6 +34325,8 @@ Use this *Group* to configure Global settings that affect the Wireless Local Are
 - Supported from: MX 8.4.
 
 
+details2 = steps.step.wlanStep
+level3Items.size() = 11
 <a id="steps.step.wlanStep.wlanAutoWakeup">
 
 ### Auto Wakeup
@@ -34258,10 +34344,10 @@ Use this *Group* to configure Global settings that affect the Wireless Local Are
 Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically when the presence of a previously connected network is detected.
 
 
-- If the value !!0!! is selected, automatic *Wake Up* will be turned OFF, preventing the device from detecting the presence of a previously connected network and automatically waking up to connect to it.
+- If the value ***Off*** is selected, automatic *Wake Up* will be turned OFF, preventing the device from detecting the presence of a previously connected network and automatically waking up to connect to it.
 
 
-- If the value !!1!! is selected, automatic *Wake Up* will be turned ON, allowing the device to periodically scan for and detect the presence of a previously connected network and automatically wake up to connect to it.
+- If the value ***On*** is selected, automatic *Wake Up* will be turned ON, allowing the device to periodically scan for and detect the presence of a previously connected network and automatically wake up to connect to it.
 
 
 **Detail Information:**
@@ -34296,9 +34382,9 @@ Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically w
 
 
 Select the frequency *Bands* on which the WLAN subsystem will operate on a device:
-- If the value !!2.4GHz!! is selected, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) will be used.
-- If the value !!5.0GHz!! is selected, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) will be used.
-- If the value !!Auto!! is selected, the *Band* to be used will be determined automatically.
+- If the value ***2.4GHz*** is selected, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) will be used.
+- If the value ***5.0GHz*** is selected, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) will be used.
+- If the value ***Auto*** is selected, the *Band* to be used will be determined automatically.
 
 
 **Detail Information:**
@@ -34335,13 +34421,13 @@ Enter the channels over which the WLAN subsystem will operate on a device.
 The format of the value entered must be 64 characters or less and can specify one or more channels by separating values by commas and/or specifying ranges of values by separating the lower and upper range values with a dash (-). Some examples: - 1,2,3 - 3,6,7-9,11-13
 
 
-The actual channel that can specified depends on the value selected for %%steps.step.wlanStep.wlanBands%%.
-- If the value !!2.4GHz@steps.step.wlanStep.wlanBands!! is selected for %%steps.step.wlanStep.wlanBands%%, channels must be selected that are in the 2.4 Ghz band.
-- If the value !!5.0GHz@steps.step.wlanStep.wlanBands!! is selected for %%steps.step.wlanStep.wlanBands%%, channels must be selected that are in the 5.0 Ghz band.
-- If the value !!Auto@steps.step.wlanStep.wlanBands!! is selected %%steps.step.wlanStep.wlanBands%%, channels may be selected that are in either band.
+The actual channel that can specified depends on the value selected for **Bands**.
+- If the value ***2.4GHz*** is selected for **Bands**, channels must be selected that are in the 2.4 Ghz band.
+- If the value ***5.0GHz*** is selected for **Bands**, channels must be selected that are in the 5.0 Ghz band.
+- If the value ***Auto*** is selected **Bands**, channels may be selected that are in either band.
 
 
-Note that individual countries may apply their own regulations regarding the channels that are allowable. Therefore, depending on the value selected for %%steps.step.wlanStep.wlanCountry%%, not all channel values that could be specified for a given band may be allowable.
+Note that individual countries may apply their own regulations regarding the channels that are allowable. Therefore, depending on the value selected for **Country**, not all channel values that could be specified for a given band may be allowable.
 
 
 **Detail Information:**
@@ -34374,7 +34460,7 @@ Note that individual countries may apply their own regulations regarding the cha
 
 
 Select the *Country* in which the WLAN subsystem will operate on a device:
-- If the value !!AUTO!! is selected, the *Country* to be used will be determined automatically.
+- If the value ***Auto (Use 802.11d)*** is selected, the *Country* to be used will be determined automatically.
 - When any other value is selected, the specified *Country* will be used.
 
 
@@ -34409,10 +34495,10 @@ Select the *Country* in which the WLAN subsystem will operate on a device:
 Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 
 
-- If the value !!0!! is selected, the *Hotspot Mode* will be turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot. Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, turned OFF and back ON without having to reconfigure it.
+- If the value ***Off*** is selected, the *Hotspot Mode* will be turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot. Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, turned OFF and back ON without having to reconfigure it.
 
 
-- If the value !!1!! is selected, the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*.
+- If the value ***On*** is selected, the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*.
 
 
 **Detail Information:**
@@ -34446,10 +34532,10 @@ Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 Select whether the *Verbose Logging* feature of the WLAN adapter should be turned ON or OFF on a device.
 
 
-- If the value !!0!! is selected, the *Verbose Logging* will be turned OFF, preventing the device from logging additional information for debugging or troubleshooting WLAN issues.
+- If the value ***Off*** is selected, the *Verbose Logging* will be turned OFF, preventing the device from logging additional information for debugging or troubleshooting WLAN issues.
 
 
-- If the value !!1!! is selected, the *Verbose Logging* will be turned ON, allowing the device to log additional information for debugging or troubleshooting WLAN issues.
+- If the value ***On*** is selected, the *Verbose Logging* will be turned ON, allowing the device to log additional information for debugging or troubleshooting WLAN issues.
 
 
 **Detail Information:**
@@ -34483,7 +34569,7 @@ Select whether the *Verbose Logging* feature of the WLAN adapter should be turne
 </span> <br><br>
 
 
-Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via %%steps.step.wlanStep.wlanHotSpotState%%.
+Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via **Hotspot State**.
 
 
 
@@ -34549,8 +34635,8 @@ Enter the Service Set Identifier (SSID) that will identify the network supported
 
 
 Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will operate on a device.
-- If the value !!0!! is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
-- If the value !!1!! is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
+- If the value ***2.4GHz*** is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
+- If the value ***5GHz*** is selected, the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the device via *Hotspot Mode*.
 
 
 **Detail Information:**
@@ -34582,7 +34668,7 @@ Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will ope
 </span> <br><br>
 
 
-Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device and should be specified when the value !!0@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand%%.
+Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device and should be specified when the value ***2.4GHz*** is selected for **Band**.
 
 
 **Detail Information:**
@@ -34614,7 +34700,7 @@ Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 </span> <br><br>
 
 
-Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device when the value !!1@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotBand%%.
+Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter will operate on a device when the value ***5GHz*** is selected for **Band**.
 
 
 **Detail Information:**
@@ -34647,8 +34733,8 @@ Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 
 
 Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN adapter will operate on a device.
-- If the value !!0!! is selected, the WLAN adapter will apply no security for *Hotspot Mode*, thus providing no control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*.
-- If the value !!1!! is selected, the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*. You must also specify %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityPassphrase%% to provide the PSK passphrase that will be used to secure the network.
+- If the value ***Open*** is selected, the WLAN adapter will apply no security for *Hotspot Mode*, thus providing no control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*.
+- If the value ***WPA2/PSK*** is selected, the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the device via *Hotspot Mode*. You must also specify **Security Passphrase** to provide the PSK passphrase that will be used to secure the network.
 
 
 **Detail Information:**
@@ -34680,7 +34766,7 @@ Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN a
 </span> <br><br>
 
 
-Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a device, when the value !!1@steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityMode!! is selected for %%steps.step.wlanStep.wlanHotSpotOptions.wlanHotSpotSecurityMode%%.
+Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a device, when the value ***WPA2/PSK*** is selected for **Security Mode**.
 
 
 **Detail Information:**
@@ -34884,7 +34970,7 @@ Use this *Sub-group* to specify a name and value for a single Omnitrail option t
 </span> <br><br>
 
 
-Select a standard name that identifies a single Omnitrail optOmnitrail option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionValue%% to provide the value to be set for the Omnitrail option identified by the selected name.
+Select a standard name that identifies a single Omnitrail optOmnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the selected name.
 
 
 **Detail Information:**
@@ -34921,7 +35007,7 @@ Select a standard name that identifies a single Omnitrail optOmnitrail option to
 </span> <br><br>
 
 
-Enter a custom name that identifies a Omnitrail option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionValue%% to provide the value to be set for the Omnitrail option identified by the specified name.
+Enter a custom name that identifies a Omnitrail option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the Omnitrail option identified by the specified name.
 
 
 **Detail Information:**
@@ -34956,7 +35042,7 @@ Enter a custom name that identifies a Omnitrail option to be configured for the 
 </span> <br><br>
 
 
-Enter a value for a single Omnitrail option to be configured for the WLAN adapter on a device when %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionName%% or %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailOptions.wlanOmnitrailOptionPair.wlanOmnitrailOptionCustomName%% are also specified to provide the name needed identity the Omnitrail option to be set.
+Enter a value for a single Omnitrail option to be configured for the WLAN adapter on a device when **Name** or **Name Custom** are also specified to provide the name needed identity the Omnitrail option to be set.
 
 
 **Detail Information:**
@@ -34989,10 +35075,10 @@ Enter a value for a single Omnitrail option to be configured for the WLAN adapte
 </span> <br><br>
 
 
-Select an omnittrail datarate standard to be used by the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarate%% to provide the actual datarate to be used.
-- If the value !!0!! is selected, the Omnitrail datarate standard will be set for 802.11a, 802.11b, and 802,11g.
-- If the value !!1!! is selected, the Omnitrail datarate standard will be set for 802.11n.
-- If the value !!2!! is selected, the Omnitrail datarate standard will be set for 802.11a and 802,11c.
+Select an omnittrail datarate standard to be used by the WLAN adapter on a device. You must also specify **Datarate** to provide the actual datarate to be used.
+- If the value ***abg*** is selected, the Omnitrail datarate standard will be set for 802.11a, 802.11b, and 802,11g.
+- If the value ***11n*** is selected, the Omnitrail datarate standard will be set for 802.11n.
+- If the value ***11ac*** is selected, the Omnitrail datarate standard will be set for 802.11a and 802,11c.
 
 
 
@@ -35029,8 +35115,8 @@ Select an omnittrail datarate standard to be used by the WLAN adapter on a devic
 </span> <br><br>
 
 
-Select an omnittrail datarate to be used by the WLAN adapter on a device when %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%% is also specified to identify the datarate standard.
-- If the value !!0@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+Select an omnittrail datarate to be used by the WLAN adapter on a device when **Standard** is also specified to identify the datarate standard.
+- If the value ***abg*** is selected for **Standard**, the following datarates can be selected.
 - 1
 - 2
 - 5.5
@@ -35043,7 +35129,7 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when %%
 - 36
 - 48
 - 54
-- If the value !!1@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+- If the value ***11n*** is selected for **Standard**, the following datarates can be selected.
 - MCS0
 - MCS1
 - MCS2
@@ -35060,7 +35146,7 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when %%
 - MCS13
 - MCS14
 - MCS15
-- If the value !!2@steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard!! is selected for %%steps.step.wlanStep.wlanOmnitrail.wlanOmnitrailDatarateStandard%%, the following datarates can be selected.
+- If the value ***11ac*** is selected for **Standard**, the following datarates can be selected.
 - MCS0_1
 - MCS1_1
 - MCS2_1
@@ -35181,7 +35267,7 @@ Use this *Sub-group* to specify a name and value for a single advanced option to
 </span> <br><br>
 
 
-Select a standard name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionValue%% to provide the value to be set for the advanced option identified by the selected name.
+Select a standard name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the selected name.
 
 
 **Detail Information:**
@@ -35217,7 +35303,7 @@ Select a standard name that identifies a single advanced option to be configured
 </span> <br><br>
 
 
-Enter a custom name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionValue%% to provide the value to be set for the advanced option identified by the specified name.
+Enter a custom name that identifies a single advanced option to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the advanced option identified by the specified name.
 
 
 **Detail Information:**
@@ -35251,7 +35337,7 @@ Enter a custom name that identifies a single advanced option to be configured fo
 </span> <br><br>
 
 
-Enter a value for a single advanced option to be configured for the WLAN adapter on a device and should be specified when %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionName%% or %%steps.step.wlanStep.wlanAdvancedOptions.wlanAdvancedOptionPair.wlanAdvancedOptionCustomName%% are specified to provide the name of the advanced option.
+Enter a value for a single advanced option to be configured for the WLAN adapter on a device and should be specified when **Name** or **Custom Name** are specified to provide the name of the advanced option.
 
 
 **Detail Information:**
@@ -35350,7 +35436,7 @@ Use this *Sub-group* to specify a name and value for a single *Diagnostic Option
 </span> <br><br>
 
 
-Select a standard name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionValue%% to provide the value to be set for the *Diagnostic Option* identified by the specified name.
+Select a standard name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
 **Detail Information:**
@@ -35386,7 +35472,7 @@ Select a standard name that identifies a single *Diagnostic Option* to be config
 </span> <br><br>
 
 
-Enter a custom name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionValue%% to provide the value to be set for the *Diagnostic Option* identified by the specified name.
+Enter a custom name that identifies a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Value** to provide the value to be set for the *Diagnostic Option* identified by the specified name.
 
 
 **Detail Information:**
@@ -35420,7 +35506,7 @@ Enter a custom name that identifies a single *Diagnostic Option* to be configure
 </span> <br><br>
 
 
-Enter a value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionName%% or %%steps.step.wlanStep.wlanDiagnosticsOptions.wlanDiagnosticsOptionPair.wlanDiagnosticsOptionCustomName%% to provide the name that identifies the *Diagnostic Option* to be set.
+Enter a value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device. You must also specify **Name** or **Name Custom** to provide the name that identifies the *Diagnostic Option* to be set.
 
 
 **Detail Information:**
@@ -35455,10 +35541,10 @@ Enter a value for a single *Diagnostic Option* to be configured for the WLAN ada
 Select whether the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
 
 
-- If the value !!2!! is selected, the Device User will NOT be notified about, nor allowed to connect to, new WLANs that are detected.
+- If the value ***Off*** is selected, the Device User will NOT be notified about, nor allowed to connect to, new WLANs that are detected.
 
 
-- If the value !!1!! is selected, the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
+- If the value ***On*** is selected, the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
 
 
 **Detail Information:**
@@ -35505,6 +35591,8 @@ Use this *Group* to configure Wireless Wide Area Network (WWAN) settings on a de
 - Type = bundle
 
 
+details2 = steps.step.wwanStep
+level3Items.size() = 18
 <a id="steps.step.wwanStep.wwanPower">
 
 ### Power
@@ -35554,8 +35642,8 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 
 Select whether WWAN data can be used by applications that are in the *Background*.
-- If the value !!2!! is selected, the use of WWAN data by applications that are in the *Background* will be prevented.
-- If the value !!1!! is selected, the use of WWAN data by applications that are in the *Background* will be allowed.
+- If the value ***Disallow*** is selected, the use of WWAN data by applications that are in the *Background* will be prevented.
+- If the value ***Allow*** is selected, the use of WWAN data by applications that are in the *Background* will be allowed.
 
 
 **Detail Information:**
@@ -35587,8 +35675,8 @@ Select whether WWAN data can be used by applications that are in the *Background
 
 
 Select the Power Srate of the WWAN adapter.
-- If the value !!2!! is selected, the power to the WWAN adapter will be turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
-- If the value !!1!! is selected, the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
+- If the value ***Off*** is selected, the power to the WWAN adapter will be turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
+- If the value ***On*** is selected, the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
 
 
 **Detail Information:**
@@ -35628,16 +35716,16 @@ Select the SIM Card slot that will be used by the WWAN adapter.
 
 
 A given device may or may not support a WWAN Adapter. An attempt to configure the WWAN Adapter on a device that does not have one will result in an error. A given device may have a limited number of SIM Card slots. An attempt to configure the WWAN Adapter to use an unsupported SIM Card slot will result in an error. A given device may support a given SIM car slot, but that SIM car slot may not contain a SIM Card. An attempt to configure the WWAN Adapter to use a supported but unpopulated SIM Card slot will result in an error.
-- If the value !!1!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 1.
+- If the value ***Slot 1*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 1.
 
 
-- If the value !!2!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 2.
+- If the value ***Slot 2*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 2.
 
 
-- If the value !!3!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 3.
+- If the value ***Slot 3*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 3.
 
 
-- If the value !!4!! is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 4.
+- If the value ***Slot 4*** is selected, the WWAN adapter will attempt to use the SIM Card slot designated as Slot 4.
 
 
 **Detail Information:**
@@ -35669,9 +35757,9 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 
 Select whether a limit should be imposed on the amount of WWAN data used, such as to cap telecom expenses.
-- If the value !!1!! is selected, a default limit will be imposed on the amount of WWAN data that can be used.
-- If the value !!2!! is selected, a custom limit will be imposed on the amount of WWAN data that can be used and you must also specify %%steps.step.wwanStep.wwanDataLimitStateCustomLimit%% to provide the desired custom limit.
-- If the value !!3!! is selected, no limit will be imposed on the amount of WWAN data that can be used.
+- If the value ***Enable and set default limit*** is selected, a default limit will be imposed on the amount of WWAN data that can be used.
+- If the value ***Enable and set custom limit*** is selected, a custom limit will be imposed on the amount of WWAN data that can be used and you must also specify **Custom Limit** to provide the desired custom limit.
+- If the value ***Disable*** is selected, no limit will be imposed on the amount of WWAN data that can be used.
 
 
 **Detail Information:**
@@ -35705,7 +35793,7 @@ Select whether a limit should be imposed on the amount of WWAN data used, such a
 </span> <br><br>
 
 
-Enter a custom limit that should be imposed on the amount of WWAN data used, such as to cap telecom expenses, when the value !!2@steps.step.wwanStep.wwanDataLimitState!! is selected for %%steps.step.wwanStep.wwanDataLimitState%%.
+Enter a custom limit that should be imposed on the amount of WWAN data used, such as to cap telecom expenses, when the value ***Enable and set custom limit*** is selected for **Data Limit State**.
 
 
 The custom limit should be an integer value specifying the maximum amount of WWAN data that can be used, in megabytes (MB).
@@ -35777,10 +35865,10 @@ The threshold should be an integer value specifying the threshold amount of WWAN
 Select whether a Device User is allowed to use the in-device Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.
 
 
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. You can use this to ensure that configurations you have made related to usage of background data cannot be overridden by the Device User.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. You can use this to ensure that configurations you have made related to usage of background data cannot be overridden by the Device User.
 
 
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. This can be used to allow the Device User to override configurations related to usage of background data that you have made.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change whether applications running in the background are allowed to communicate using the WWAN adapter. This can be used to allow the Device User to override configurations related to usage of background data that you have made.
 
 
 **Detail Information:**
@@ -35817,10 +35905,10 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 Select whether a Device User is allowed to use the in-device Settings Menu to change limits on how much data can be communicated using the WWAN adapter.
 
 
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to ensure that configurations you have made related to to data limits cannot be overridden by the Device User.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to ensure that configurations you have made related to to data limits cannot be overridden by the Device User.
 
 
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to allow the Device User to override configurations related to data limits that you have made.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change limits on how much data can be communicated using the WWAN adapter. This can be used to allow the Device User to override configurations related to data limits that you have made.
 
 
 **Detail Information:**
@@ -35855,8 +35943,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 
 
 Select whether a Device User is allowed to use the in-device Settings Menu to change the *Power State* of the WWAN adapter.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to change the *Power State* of the WWAN adapter. This can be used to ensure that the configurations related to the *Power State* of the WWAN adapter cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to change the *Power State* of the WWAN adapter. This can be used to allow the Device User to override configurations related to the *Power State* of the WWAN adapter that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to change the *Power State* of the WWAN adapter. This can be used to ensure that the configurations related to the *Power State* of the WWAN adapter cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to change the *Power State* of the WWAN adapter. This can be used to allow the Device User to override configurations related to the *Power State* of the WWAN adapter that you have made.
 
 
 **Detail Information:**
@@ -35891,8 +35979,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 
 
 Select whether a Device User is allowed to use the in-device Settings Menu to select which SIM slot will be used by the WWAN adapter.
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to ensure that configurations related to the SIM slot selection cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to allow the Device User to override configurations related to the SIM slot selection that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to ensure that configurations related to the SIM slot selection cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to select which SIM slot will be used by the WWAN adapter. This can be used to allow the Device User to override configurations related to the SIM slot selection that you have made.
 
 
 **Detail Information:**
@@ -35927,8 +36015,8 @@ Select whether a Device User is allowed to use the in-device Settings Menu to se
 
 
 Select whether the WWAN adapter should be locked to a single Public Land Mobile Network Lock (PLMN).
-- If the value !!2!! is selected, the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and will be free to connect to any PLMN that is compatible with the SIM Card being used.
-- If the value !!1!! is selected, the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to connect to that PLMN. You must also specify %%steps.step.wwanStep.wwanPlmnLockValue%% to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
+- If the value ***Off*** is selected, the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and will be free to connect to any PLMN that is compatible with the SIM Card being used.
+- If the value ***On*** is selected, the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to connect to that PLMN. You must also specify **Value** to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
 
 
 **Detail Information:**
@@ -35959,7 +36047,7 @@ Select whether the WWAN adapter should be locked to a single Public Land Mobile 
 </span> <br><br>
 
 
-Enter the value that identifies the Public Land Mobile Network Lock (PLMN) to which the WWAN adapter should be locked when the value !!1@steps.step.wwanStep.wwanPlmnLock!! is selected for %%steps.step.wwanStep.wwanPlmnLock%%. to a single Public Land Mobile Network Lock (PLMN).
+Enter the value that identifies the Public Land Mobile Network Lock (PLMN) to which the WWAN adapter should be locked when the value ***On*** is selected for **Public Land Mobile Network Lock**. to a single Public Land Mobile Network Lock (PLMN).
 
 
 The value provided to identify a PLMN must specify both the Mobile Country Code (MCC) and the Mobile Network Code (MNC). Since all MCC values are three digits and MNC values can be 2 or 3 digits, the value provided must be of the format XXXYY or XXXYYY, where XXX is the three digit MCC value and YY or YYY is the 2 or 3 digit MNC value.
@@ -35992,8 +36080,8 @@ The value provided to identify a PLMN must specify both the Mobile Country Code 
 
 
 Select whether a Device User is allowed to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).
-- If the value !!2!! is selected, the Device User will be blocked from using the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to ensure that configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
-- If the value !!1!! is selected, the Device User will be allowed to use the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to allow the Device User to override any configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that you have made.
+- If the value ***Disallow*** is selected, the Device User will be blocked from using the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to ensure that configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
+- If the value ***Allow*** is selected, the Device User will be allowed to use the Settings UI to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN). This can be used to allow the Device User to override any configurations related to locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that you have made.
 
 
 **Detail Information:**
@@ -36030,10 +36118,10 @@ Select whether a Device User is allowed to control locking of the WWAN adapter t
 Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM Dual Standby (DSDS) Mode.
 
 
-- If the value !!2!! is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Single SIM Mode, which means that ONLY the Subscription for the currently selected SIM will be available for use. To use a different Subscription, a different SIM must be explicitly selected by specifying %%steps.step.wwanStep.wwanSimCardSlot%%.
+- If the value ***Off*** is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Single SIM Mode, which means that ONLY the Subscription for the currently selected SIM will be available for use. To use a different Subscription, a different SIM must be explicitly selected by specifying **SIM Card Slot**.
 
 
-- If the value !!1!! is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Dual SIM Dual Standby Mode, which means that two SIM Cards, if present, can be active at the same time. This can be beneficial if the Subscriptions for those SIMs have different performance, pricing, coverage, etc. The default behavior in Dual SIM Dual Standby Mode is for Incoming Voice Calls and Incoming Text Messages to be received using BOTH Subscriptions, Outgoing Voice Calls and Outgoing Text Messages to ask the Device User which Subscription to use, and Data Communications to use the Subscription for the primary SIM. You can also use the *Sub-group* %%steps.step.wwanStep.wwanDualSimDualStandbyFeatures%% to modify the default behavior of Dual SIM Dual Standby Mode.
+- If the value ***On*** is selected, the WWAN adapter will be configured to handle multiple SIM Cards in Dual SIM Dual Standby Mode, which means that two SIM Cards, if present, can be active at the same time. This can be beneficial if the Subscriptions for those SIMs have different performance, pricing, coverage, etc. The default behavior in Dual SIM Dual Standby Mode is for Incoming Voice Calls and Incoming Text Messages to be received using BOTH Subscriptions, Outgoing Voice Calls and Outgoing Text Messages to ask the Device User which Subscription to use, and Data Communications to use the Subscription for the primary SIM. You can also use the *Sub-group* **DSDS Features** to modify the default behavior of Dual SIM Dual Standby Mode.
 
 
 **Detail Information:**
@@ -36098,8 +36186,8 @@ Use this *Sub-group* to configure Device Administrator (DA) Advanced Features as
 
 
 Select the Lock Action to be performed.
-- If the value !!1!! is selected, you must also specify %%wwanDaLockActionLockType%%, %%wwanDaLockActionLockUnlockCode%%, %%wwanDaLockActionLockUnlockRetryCount%%, and %%wwanDaLockActionLockNetworkList%% to provide the detail information required to perform the Lock. You must also specify %%wwanDaLockActionLockIccid%% if the value !!1@steps.step.wwanStep.wwanDaAdvancedFeatures.wwanDaLockActionLockType!! is selected for %%wwanDaLockActionLockType%%.
-If the value !!2!! is selected, you must also specify %%wwanDaLockActionLockType%% to identify the type of prior Lock to be Unlocked and you must also specify %%wwanDaLockActionLockUnlockCode%% to provide the same *Unlock Code* provided when the Lock was performed.
+- If the value ***Lock*** is selected, you must also specify **Lock Type**, **Lock Unlock Code**, **Lock Unlock Retry Count**, and **Lock Network List** to provide the detail information required to perform the Lock. You must also specify **Lock ICCID** if the value ***ICCID Lock*** is selected for **Lock Type**.
+If the value ***Unlock*** is selected, you must also specify **Lock Type** to identify the type of prior Lock to be Unlocked and you must also specify **Lock Unlock Code** to provide the same *Unlock Code* provided when the Lock was performed.
 
 
 **Detail Information:**
@@ -36377,10 +36465,10 @@ Use this *Sub-group* to configure Mobile Network Operator (MNO) Advanced Feature
 Select the Lock Action to be performed.
 
 
-- If the value !!1!! is selected, you must also specify %%wwanMnoLockActionLockActivationId%%, %%wwanMnoLockActionLockControlKey%%, %%wwanMnoLockActionLockNetworkList%%, and %%wwanMnoLockActionLockUnlockRetryCount%% to provide the detail information required to perform the Lock.
+- If the value ***Lock*** is selected, you must also specify **Lock Activation ID**, **Lock Control Key**, **Lock Network List**, and **Lock Unlock Retry Count** to provide the detail information required to perform the Lock.
 
 
-- If the value !!2!! is selected, you must also specify %%wwanMnoLockActionUnlockUnlockCode%% to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
+- If the value ***Unlock*** is selected, you must also specify **Unlock Unlock Code** to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
 
 
 **Detail Information:**
@@ -36731,6 +36819,8 @@ Use this *Group* to configure the Worry Free WiFi features in a device.
 - Supported from: MX 9.2.
 
 
+details2 = steps.step.wfWiFiStep
+level3Items.size() = 15
 <a id="steps.step.wfWiFiStep.wfWiFiState">
 
 ### State
@@ -36746,8 +36836,8 @@ Use this *Group* to configure the Worry Free WiFi features in a device.
 
 
 Select the state of the Worry Free WiFi features in a device.
-- If the value !!0!! is selected, all Worry Free WiFi features will be turned off (disabled).
-- If the value !!1!! is selected, all Worry Free WiFi features will be turned on (enabled), but may or may not be usable, depending on other configuration performed.
+- If the value ***Off*** is selected, all Worry Free WiFi features will be turned off (disabled).
+- If the value ***On*** is selected, all Worry Free WiFi features will be turned on (enabled), but may or may not be usable, depending on other configuration performed.
 
 
 **Detail Information:**
@@ -36867,7 +36957,7 @@ Enter the Password Value required by the Device User to access the in-device UI 
 
 <a id="steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordState">
 
-#### Worry Free WiFi Configuration - Global Settings Temporary Password Allow
+#### Temporary Password Allow
 
 <span class="breadcrumbs">
 <font size="2">
@@ -36881,8 +36971,8 @@ Enter the Password Value required by the Device User to access the in-device UI 
 
 
 Select whether a Temporary Password feature will be Allowed or Disallowed.
-- If the value !!0!! is selected, the Temporary Password feature will NOT be Allowed and you do not need to specify any additional information.
-- If the value !!1!! is selected, the Temporary Password feature WILL be Allowed and you must also specify %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration%% and %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration%% to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
+- If the value ***Disallow*** is selected, the Temporary Password feature will NOT be Allowed and you do not need to specify any additional information.
+- If the value ***Allow*** is selected, the Temporary Password feature WILL be Allowed and you must also specify **Temporary Password Duration** and **Temporary Password Duration** to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
 
 
 **Detail Information:**
@@ -36904,7 +36994,7 @@ Select whether a Temporary Password feature will be Allowed or Disallowed.
 
 <a id="steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiTemporaryPasswordDuration">
 
-#### Worry Free WiFi Configuration - Global Settings Temporary Password Duration
+#### Temporary Password Duration
 
 <span class="breadcrumbs">
 <font size="2">
@@ -36984,8 +37074,8 @@ Enter a Temporary Password that can be shared with a Device User to provide temp
 
 
 Select whether the Device User can access in-device UI for configuring Worry Free WiFi features in a device.
-- If the value !!0!! is selected, the Device User will NOT be allowed to access in-device UI for configuring Worry Free WiFi features, even if they can enter the Password configured via %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiPassword%%.
-- If the value !!1!! is selected, the Device User will be allowed to access in-device UI for configuring Worry Free WiFi features, if they can enter the Password configured via %%steps.step.wfWiFiStep.wfWiFiGlobalSettings.wfWiFiPassword%%.
+- If the value ***Disallow*** is selected, the Device User will NOT be allowed to access in-device UI for configuring Worry Free WiFi features, even if they can enter the Password configured via **Password Value**.
+- If the value ***Allow*** is selected, the Device User will be allowed to access in-device UI for configuring Worry Free WiFi features, if they can enter the Password configured via **Password Value**.
 
 
 **Detail Information:**
@@ -37020,9 +37110,9 @@ Select whether the Device User can access in-device UI for configuring Worry Fre
 
 
 Select the *Analysis Type* that will be used by the Worry Free WiFi features in a device.
-- If the value !!0!! is selected, Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to roaming.
-- If the value !!1!! is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to voice communications.
-- If the value !!2!! is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to establishing connections.
+- If the value ***Roam*** is selected, Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to roaming.
+- If the value ***Voice*** is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to voice communications.
+- If the value ***Connection*** is selected, then Worry Free WiFi will perform analysis designed to troubleshoot and optimize WiFi operations related to establishing connections.
 
 
 **Detail Information:**
@@ -37057,19 +37147,19 @@ Select the *Analysis Type* that will be used by the Worry Free WiFi features in 
 
 
 Select an Action to perform Worry Free WiFi features in a device.
-- If the value !!0!! is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to be specify some or all of the following:
-- %%steps.step.wfWiFiStep.wfWiFiActionStartServerAnalytics%% to specify whether Server Analytics should be performed for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartActivityMode%% to specify the Activity Mode for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartAnalysisSSID%% to specify the network for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartSessionName%% to specify the name for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartLoggerReportLevel%% to specify the Logger Report Level for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartPingType%% to specify the Ping Type for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType%% to specify the Remote Gateway Type for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayTypeCustomServerAddress%% to specify the Custom Server Address for the *Analysis Session*.
-- %%steps.step.wfWiFiStep.wfWiFiActionStartSdCardStorage%% to specify how SD Card Storage will be used for the *Analysis Session*.
-- If the value !!1!! is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
-- If the value !!2!! is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
-- If the value !!3!! is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
+- If the value ***Start*** is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to be specify some or all of the following:
+- **Start Server Analytics** to specify whether Server Analytics should be performed for the *Analysis Session*.
+- **Start Analysis Mode** to specify the Activity Mode for the *Analysis Session*.
+- **Start Analysis SSID** to specify the network for the *Analysis Session*.
+- **Start Session Name** to specify the name for the *Analysis Session*.
+- **Start Logger Report Level** to specify the Logger Report Level for the *Analysis Session*.
+- **Start Ping Type** to specify the Ping Type for the *Analysis Session*.
+- **Start Remote Gateway Type** to specify the Remote Gateway Type for the *Analysis Session*.
+- **Custom Server Address** to specify the Custom Server Address for the *Analysis Session*.
+- **Start SD Card Storage** to specify how SD Card Storage will be used for the *Analysis Session*.
+- If the value ***Stop*** is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
+- If the value ***Clear*** is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
+- If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
 **Detail Information:**
@@ -37103,9 +37193,9 @@ Select an Action to perform Worry Free WiFi features in a device.
 </span> <br><br>
 
 
-Select whether Server Analytics should be performed during an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Server Analytics will NOT be performed during the *Analysis Session* that is started.
-- If the value !!1!! is selected, Server Analytics will be performed during the *Analysis Session* that is started.
+Select whether Server Analytics should be performed during an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Turn Off*** is selected, Server Analytics will NOT be performed during the *Analysis Session* that is started.
+- If the value ***Turn On*** is selected, Server Analytics will be performed during the *Analysis Session* that is started.
 
 
 **Detail Information:**
@@ -37139,9 +37229,9 @@ Select whether Server Analytics should be performed during an *Analysis Session*
 </span> <br><br>
 
 
-Select the Analysis Mode for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Active Analysis will be performed during the *Analysis Session* that is started.
-- If the value !!1!! is selected, Passive Analysis will be performed during the *Analysis Session* that is started.
+Select the Analysis Mode for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Active*** is selected, Active Analysis will be performed during the *Analysis Session* that is started.
+- If the value ***Passive*** is selected, Passive Analysis will be performed during the *Analysis Session* that is started.
 
 
 **Detail Information:**
@@ -37175,7 +37265,7 @@ Select the Analysis Mode for an *Analysis Session* started for the Worry Free Wi
 </span> <br><br>
 
 
-Enter the network that will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
+Enter the network that will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
 
 
 Note that if an *Analysis Session* is started for a network other than the currently configured network, the currently connected network will be disconnected so the specified network can be connected for use by the *Analysis Session*.
@@ -37210,7 +37300,7 @@ Note that if an *Analysis Session* is started for a network other than the curre
 </span> <br><br>
 
 
-Enter the name of the *Analysis Session* to be started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
+Enter the name of the *Analysis Session* to be started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
 
 
 
@@ -37247,10 +37337,10 @@ The name assigned to an *Analysis Session* can help to analyze exported data by 
 </span> <br><br>
 
 
-Select the Logger Report Level for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, all available data will be logged, including data that is informational as well as data related to warnings or errors that are detected.
-- If the value !!1!! is selected, only data that is related to warnings or errors that are detected will be logged.
-- If the value !!2!! is selected, only data that is related to errors that are detected will be logged.
+Select the Logger Report Level for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Info*** is selected, all available data will be logged, including data that is informational as well as data related to warnings or errors that are detected.
+- If the value ***Warning*** is selected, only data that is related to warnings or errors that are detected will be logged.
+- If the value ***Error*** is selected, only data that is related to errors that are detected will be logged.
 
 
 **Detail Information:**
@@ -37284,9 +37374,9 @@ Select the Logger Report Level for an *Analysis Session* started for the Worry F
 </span> <br><br>
 
 
-Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, Pings sent during the *Analysis Session* that is started will include no data.
-- If the value !!1!! is selected, Pings sent during the *Analysis Session* that is started will include data.
+Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***No Data*** is selected, Pings sent during the *Analysis Session* that is started will include no data.
+- If the value ***Data Ping*** is selected, Pings sent during the *Analysis Session* that is started will include data.
 
 
 **Detail Information:**
@@ -37320,9 +37410,9 @@ Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi f
 </span> <br><br>
 
 
-Select the Type of Remote Gateway for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, the Default Remote Gateway will be used.
-- If the value !!1!! is selected, a custom Remote Gateway will be used and you must also specify %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayTypeCustomServerAddress%% to provide the desired custom Gateway Server Address.
+Select the Type of Remote Gateway for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Default*** is selected, the Default Remote Gateway will be used.
+- If the value ***Custom*** is selected, a custom Remote Gateway will be used and you must also specify **Custom Server Address** to provide the desired custom Gateway Server Address.
 
 
 **Detail Information:**
@@ -37356,7 +37446,7 @@ Select the Type of Remote Gateway for an *Analysis Session* started for the Worr
 </span> <br><br>
 
 
-Enter the Custom Remote Gateway Server Address for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%% and if the value !!1@steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType!! is selected for %%steps.step.wfWiFiStep.wfWiFiActionStartRemoteGatewayType%%.
+Enter the Custom Remote Gateway Server Address for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action** and if the value ***Custom*** is selected for **Start Remote Gateway Type**.
 
 
 **Detail Information:**
@@ -37388,10 +37478,10 @@ Enter the Custom Remote Gateway Server Address for an *Analysis Session* started
 </span> <br><br>
 
 
-Select how SD Card Storage will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiAction%%.
-- If the value !!0!! is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
-- If the value !!1!! is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
-- *Deprecated:* If the value !!2!! is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
+Select how SD Card Storage will be used for an *Analysis Session* started for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Only Live Data*** is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
+- If the value ***Delete old Ping and Packet Data*** is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
+- *Deprecated:* If the value ***Delete Old Sessions(Deprecated)*** is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
 
 
 **Detail Information:**
@@ -37459,8 +37549,8 @@ Use this *Sub-group* to configure Settings that control the operation of Packet 
 
 
 Select whether Packet Capture will be performed by the Worry Free WiFi feature in a device.
-- If the value !!0!! is selected, the Packet Capture will NOT be performed. This can significantly decrease the load on the device and decrease battery drain, but will provide less data that can be used for troubleshooting.
-- If the value !!1!! is selected, the Packet Capture WILL be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting.
+- If the value ***Off*** is selected, the Packet Capture will NOT be performed. This can significantly decrease the load on the device and decrease battery drain, but will provide less data that can be used for troubleshooting.
+- If the value ***On*** is selected, the Packet Capture WILL be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting.
 
 
 **Detail Information:**
@@ -37495,7 +37585,7 @@ Select whether Packet Capture will be performed by the Worry Free WiFi feature i
 </span> <br><br>
 
 
-Enter the file name of the file into which Packet Capture data will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the file name of the file into which Packet Capture data will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -37528,7 +37618,7 @@ Enter the file name of the file into which Packet Capture data will be stored by
 </span> <br><br>
 
 
-Enter the maximum size of the file into which Packet Capture data (in megabytes) will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the maximum size of the file into which Packet Capture data (in megabytes) will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -37561,7 +37651,7 @@ Enter the maximum size of the file into which Packet Capture data (in megabytes)
 </span> <br><br>
 
 
-Enter the maximum amount of Packet Capture data (in megabytes) that will be stored by the Worry Free WiFi feature in a device when the value !!1@steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState!! is selected for %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%%.
+Enter the maximum amount of Packet Capture data (in megabytes) that will be stored by the Worry Free WiFi feature in a device when the value ***On*** is selected for **State**.
 
 
 **Detail Information:**
@@ -37594,9 +37684,9 @@ Enter the maximum amount of Packet Capture data (in megabytes) that will be stor
 </span> <br><br>
 
 
-Select the *Package Capture Type* that will be control the type of Packets that will be captured by the Worry Free WiFi features in a device when %%steps.step.wfWiFiStep.wfWiFiPacketCapture.wfWiFiPacketCaptureState%% is used to enable Packet Capture.
-- If the value !!1!! is selected, Worry Free WiFi will only capture *Management Packets*.
-- If the value !!2!! is selected, Worry Free WiFi will capture ALL Packets, including Packets that might contain sensitive data.
+Select the *Package Capture Type* that will be control the type of Packets that will be captured by the Worry Free WiFi features in a device when **State** is used to enable Packet Capture.
+- If the value ***Management Only*** is selected, Worry Free WiFi will only capture *Management Packets*.
+- If the value ***All*** is selected, Worry Free WiFi will capture ALL Packets, including Packets that might contain sensitive data.
 
 
 **Detail Information:**
@@ -37664,8 +37754,8 @@ Use this *Sub-group* to configure Settings that control the operation of Coverag
 
 
 Select the *Scan Feature Type* that will control the type of Scanning that will be performed by Worry Free WiFi as part of *Coverage View* in a device.
-- If the value !!1!! is selected, Worry Free WiFi will perform full scanning as required to support *Coverage View*.
-- If the value !!2!! is selected, then Worry Free WiFi will perform more limited scanning.
+- If the value ***Coverage View*** is selected, Worry Free WiFi will perform full scanning as required to support *Coverage View*.
+- If the value ***Scan*** is selected, then Worry Free WiFi will perform more limited scanning.
 
 
 **Detail Information:**
@@ -37701,18 +37791,18 @@ Select the *Scan Feature Type* that will control the type of Scanning that will 
 
 
 Select an Action to perform for Coverage View.
-- If the value !!0!! is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to specify some or all of the following:
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartScanInterval%% to specify the Scan Interval to use for *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSsid%% to specify the SSID to use for *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartAutoReachabilityTest%% to specify whether an Auto Reachability Test should be performed as part of *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartAutoReachabilityTest%% to specify whether Server Analytics should be performed as part of *Coverage View*.
-- %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSessionName%% to specify the Session Name to use for *Coverage View*.
+- If the value ***Start*** is selected, a Worry Free WiFi *Analysis Session* will be started, terminating any Worry Free WiFi *Analysis Session* that was previously in progress. You may also need to specify some or all of the following:
+- **Start Scan Interval** to specify the Scan Interval to use for *Coverage View*.
+- **Start SSID** to specify the SSID to use for *Coverage View*.
+- **Start Auto Reachability Test** to specify whether an Auto Reachability Test should be performed as part of *Coverage View*.
+- **Start Auto Reachability Test** to specify whether Server Analytics should be performed as part of *Coverage View*.
+- **Start Session Name** to specify the Session Name to use for *Coverage View*.
 
 
-  - %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewActionStartSessionName%% to specify whether SD Card Storage will be used for *Coverage View*.
-- If the value !!1!! is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
-- If the value !!2!! is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
-- If the value !!3!! is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
+  - **Start Session Name** to specify whether SD Card Storage will be used for *Coverage View*.
+- If the value ***Stop*** is selected, any Worry Free WiFi *Analysis Session* that is in progress will be terminated.
+- If the value ***Clear*** is selected, any data accumulated from a Worry Free WiFi *Analysis Session* will be discarded.
+- If the value ***Export*** is selected, the current Worry Free WiFi configuration will be exported and stored in a file in the device file system.
 
 
 **Detail Information:**
@@ -37814,8 +37904,8 @@ Enter the *Scan Interval* to be used for Coverage View.
 
 
 Select whether an Auto Reachability Test should be performed as part of Coverage View.
-- If the value !!0!! is selected, then Worry Free WiFi will NOT perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
-- If the value !!1!! is selected, Worry Free WiFi will perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
+- If the value ***Off*** is selected, then Worry Free WiFi will NOT perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
+- If the value ***On*** is selected, Worry Free WiFi will perform an Auto Reachability Test as part of Coverage View each time a Roam occurs.
 
 
 **Detail Information:**
@@ -37850,9 +37940,9 @@ Select whether an Auto Reachability Test should be performed as part of Coverage
 </span> <br><br>
 
 
-Select whether Server Analytics should be performed by Worry Free WiFi as part of Coverage View when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
-- If the value !!0!! is selected, Worry Free WiFi will NOT perform Server Analytics as part of Coverage View.
-- If the value !!1!! is selected, Worry Free WiFi will perform Server Analytics as part of Coverage View.
+Select whether Server Analytics should be performed by Worry Free WiFi as part of Coverage View when the value ***Start*** is selected for **Action**.
+- If the value ***Off*** is selected, Worry Free WiFi will NOT perform Server Analytics as part of Coverage View.
+- If the value ***On*** is selected, Worry Free WiFi will perform Server Analytics as part of Coverage View.
 
 
 **Detail Information:**
@@ -37887,7 +37977,7 @@ Select whether Server Analytics should be performed by Worry Free WiFi as part o
 </span> <br><br>
 
 
-Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverage View when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
+Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverage View when the value ***Start*** is selected for **Action**.
 
 
 **Detail Information:**
@@ -37920,10 +38010,10 @@ Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverag
 </span> <br><br>
 
 
-Select how SD Card Storage is used for an *Analysis Session* started as part of *Coverage View* for the Worry Free WiFi feature when the value !!0@steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction!! is selected for %%steps.step.wfWiFiStep.wfWiFiCoverageView.wfWiFiCoverageViewAction%%.
-- If the value !!0!! is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
-- If the value !!1!! is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
-- *Deprecated:* If the value !!2!! is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
+Select how SD Card Storage is used for an *Analysis Session* started as part of *Coverage View* for the Worry Free WiFi feature when the value ***Start*** is selected for **Action**.
+- If the value ***Only Live Data*** is selected, only the most recent data from the new *Analysis Session* will be stored in the SD Card and will replace any prior *Analysis Session* data stored.
+- If the value ***Delete old Ping and Packet Data*** is selected, old Ping and Packet Data will be deleted and replaced by any new Ping and Packet Data for the new *Analysis Session*.
+- *Deprecated:* If the value ***Delete old Sessions(Deprecated)*** is selected, any data generated by any prior *Analysis Sessions* will be deleted and replace by the data from the new*Analysis Session*.
 
 
 **Detail Information:**
@@ -37975,6 +38065,8 @@ Use this *Group* to manage Zebra-issued licenses on a device.
 - Supported from: MX 8.1.
 
 
+details2 = steps.step.zebraLicenseStep
+level3Items.size() = 16
 <a id="steps.step.zebraLicenseStep.zebraLicenseAction">
 
 ### License Action
@@ -37990,11 +38082,11 @@ Use this *Group* to manage Zebra-issued licenses on a device.
 
 
 Select an Action to manage Zebra-issued licenses on a device.
-- If the value !!Activate!! is selected, a license will be activated, making it usable on the device. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerStandardClass%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomFriendlyName%%, %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%%, and %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to define the license to be activated and how that license should be activated.
-- If the value !!Return!! is selected, a previously activated license will be returned, allowing it to be re-allocated for use on another device. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType%%, %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerTypeFriendlyName%%, and %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseAidValue%% to define the license to be returned and how that license should be returned.
-- If the value !!Reset!! is selected, all licenses previously activated from a given *License Server* will be returned, allowing them to be re-allocated for use on other devices. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType%% and %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerTypeFriendlyName%% to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
-- If the value !!Refresh!! is selected, a previously activated license will be refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionRefreshLicenseAidValue%% to provide the license to be refreshed.
-- If the value !!DeleteLicenseSource!! is selected, a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionDeleteServerFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* to be deleted.
+- If the value ***Activate License*** is selected, a license will be activated, making it usable on the device. You must also specify **Activate License Method**, **From Server AID Value**, **From Server Standard Class**, **From Server Custom Class**, **From Server Custom URL**, **From Server Custom Friendly Name**, **From Local File Path and Name**, and **From Local File Source Server Class** to define the license to be activated and how that license should be activated.
+- If the value ***Return License*** is selected, a previously activated license will be returned, allowing it to be re-allocated for use on another device. You must also specify **Return License Server Type**, **Friendly Name**, and **Return License AID Value** to define the license to be returned and how that license should be returned.
+- If the value ***Return All Licenses*** is selected, all licenses previously activated from a given *License Server* will be returned, allowing them to be re-allocated for use on other devices. You must also specify **Return All Licenses Server Type** and **Friendly Name** to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
+- If the value ***Refresh License*** is selected, a previously activated license will be refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc. You must also specify **Refresh License AID Value** to provide the license to be refreshed.
+- If the value ***Delete Server*** is selected, a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted. You must also specify **Delete Server Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* to be deleted.
 
 
 **Detail Information:**
@@ -38025,10 +38117,10 @@ Select an Action to manage Zebra-issued licenses on a device.
 </span> <br><br>
 
 
-Select the method that should be used to activate a Zebra-issued license a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the license will be activated from a Standard Server and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerStandardClass%% to provide the class of Standard Server via which the license will be activated and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%% to identify the license to be activated.
-- If the value !!2!! is chose, the license will be activated from a Custom Server and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%% to provide the class of Custom Server via which the license will be activated and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerAidValue%% to identify the license to be activated. You may also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% depending on the value selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomClass%%.
-- If the value !!3!! is selected, the license will be activated from a license file stored in the device file system and you must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%% and %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to provide the license file and the class of Server from which the license file was acquired.
+Select the method that should be used to activate a Zebra-issued license a device when the value ***Activate License*** is selected for **License Action**.
+- If the value ***From Server Standard*** is selected, the license will be activated from a Standard Server and you must also specify **From Server Standard Class** to provide the class of Standard Server via which the license will be activated and you must also specify **From Server AID Value** to identify the license to be activated.
+- If the value ***From Server Custom*** is chose, the license will be activated from a Custom Server and you must also specify **From Server Custom Class** to provide the class of Custom Server via which the license will be activated and you must also specify **From Server AID Value** to identify the license to be activated. You may also specify **From Server Custom URL** depending on the value selected for **From Server Custom Class**.
+- If the value ***From Local File*** is selected, the license will be activated from a license file stored in the device file system and you must also specify **From Local File Path and Name** and **From Local File Source Server Class** to provide the license file and the class of Server from which the license file was acquired.
 
 
 **Detail Information:**
@@ -38059,7 +38151,7 @@ Select the method that should be used to activate a Zebra-issued license a devic
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be activated on a device when the value ***Activate License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -38088,9 +38180,9 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Select the Class of Standard Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!1@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
-- If the value !!1!! is selected, the license will be activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet. The Production Server should be used when deploying licenses to devices for production use.
-- If the value !!2!! is selected, the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet. The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
+Select the Class of Standard Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Standard*** is selected for **Activate License Method**.
+- If the value ***Production Cloud Direct*** is selected, the license will be activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet. The Production Server should be used when deploying licenses to devices for production use.
+- If the value ***Test Cloud Direct*** is selected, the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet. The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
 
 
 **Detail Information:**
@@ -38121,11 +38213,11 @@ Select the Class of Standard Server via which a Zebra-issued license will be act
 </span> <br><br>
 
 
-Select the Class of Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
-- If the value !!1!! is selected, the license will be activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local Proxy Server* to be used.
-- If the value !!2!! is selected, the license will be activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local Proxy Server* to be used.
-- If the value !!3!! is selected, the license will be activated by communicating to a *Local License Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the *Local License Server* to be used.
-- If the value !!4!! is selected, the license will be activated by communicating to some other Server. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromServerCustomUrl%% to provide the Server to be used.
+Select the Class of Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
+- If the value ***Production Cloud Proxy*** is selected, the license will be activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify **From Server Custom URL** to provide the *Local Proxy Server* to be used.
+- If the value ***Test Cloud Proxy*** is selected, the license will be activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*. You must also specify **From Server Custom URL** to provide the *Local Proxy Server* to be used.
+- If the value ***Local Direct*** is selected, the license will be activated by communicating to a *Local License Server*. You must also specify **From Server Custom URL** to provide the *Local License Server* to be used.
+- If the value ***Other*** is selected, the license will be activated by communicating to some other Server. You must also specify **From Server Custom URL** to provide the Server to be used.
 
 
 **Detail Information:**
@@ -38156,7 +38248,7 @@ Select the Class of Custom Server via which a Zebra-issued license will be activ
 </span> <br><br>
 
 
-Enter the URL of a Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
+Enter the URL of a Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
 
 
 **Detail Information:**
@@ -38185,7 +38277,7 @@ Enter the URL of a Custom Server via which a Zebra-issued license will be activa
 </span> <br><br>
 
 
-Enter a *Friendly Name* for a Custom Server via which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!2@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%.
+Enter a *Friendly Name* for a Custom Server via which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Server Custom*** is selected for **Activate License Method**.
 
 
 A *Friendly Name* is kept for each Custom Server used to acquire licenses and is used when later operating on such licenses to identify the Custom Server via which a license was acquired and hence via which it must be refreshed, returned, etc. The *Friendly Name* is also used to identify a Custom Server to be deleted.
@@ -38217,7 +38309,7 @@ A *Friendly Name* is kept for each Custom Server used to acquire licenses and is
 </span> <br><br>
 
 
-Enter the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a device when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%%. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFileSourceServerClass%% to identify the class of Server from which the license file was acquired, which could impact how it is processed.
+Enter the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a device when the value ***Activate License*** is selected for **License Action** and the value ***From Local File*** is selected for **Activate License Method**. You must also specify **From Local File Source Server Class** to identify the class of Server from which the license file was acquired, which could impact how it is processed.
 
 
 **Detail Information:**
@@ -38246,7 +38338,7 @@ Enter the local path and file name of a license file in the device file system f
 </span> <br><br>
 
 
-Select the class of Server from which the license file to be activated was acquired when the value !!Activate@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and when the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethod%% and when %%steps.step.zebraLicenseStep.zebraLicenseActionActivateLicenseMethodFromLocalFilePathAndName%% is specified.
+Select the class of Server from which the license file to be activated was acquired when the value ***Activate License*** is selected for **License Action** and when the value ***From Local File*** is selected for **Activate License Method** and when **From Local File Path and Name** is specified.
 
 
 **Detail Information:**
@@ -38277,10 +38369,10 @@ Select the class of Server from which the license file to be activated was acqui
 </span> <br><br>
 
 
-Select the Type of Standard Server via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the license will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
-- If the value !!2!! is selected, the license will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
-- If the value !!3!! is selected, the license will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerTypeFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned.
+Select the Type of Standard Server via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value ***Return License*** is selected for **License Action**.
+- If the value ***Production Cloud Direct*** is selected, the license will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is selected, the license will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Server Friendly Name*** is selected, the license will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned.
 
 
 **Detail Information:**
@@ -38311,7 +38403,7 @@ Select the Type of Standard Server via which a Zebra-issued license was activate
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType!! was selected for %%steps.step.zebraLicenseStep.zebraLicenseActionReturnLicenseServerType%%.
+Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-issued license was activated on a device and therefore via which it should be returned, when the value ***Return License*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return License Server Type**.
 
 
 **Detail Information:**
@@ -38340,7 +38432,7 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be returned on a device when the value !!Return@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be returned on a device when the value ***Return License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -38369,10 +38461,10 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Select the Type of Standard Server via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value !!Reset@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
-- If the value !!1!! is selected, the licenses will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
-- If the value !!2!! is selected, the licenses will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
-- If the value !!3!! is selected, the licenses will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerTypeFriendlyName%% to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.
+Select the Type of Standard Server via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value ***Return All Licenses*** is selected for **License Action**.
+- If the value ***Production Cloud Direct*** is selected, the licenses will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is selected, the licenses will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Server Friendly Name*** is selected, the licenses will be assumed to have been activated by by communicating to a *Custom Server*. You must also specify **Friendly Name** to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.
 
 
 **Detail Information:**
@@ -38403,7 +38495,7 @@ Select the Type of Standard Server via which a set of Zebra-issued licenses was 
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value !!Reset@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%% and the value !!3@steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType!! was selected for %%steps.step.zebraLicenseStep.zebraLicenseActionReturnAllLicensesServerType%%.
+Enter the *Friendly Name* that identifies the *Custom Server* via which a set of Zebra-issued licenses was activated on a device and therefore via which they should be returned, when the value ***Return All Licenses*** is selected for **License Action** and the value ***Server Friendly Name*** was selected for **Return All Licenses Server Type**.
 
 
 **Detail Information:**
@@ -38432,7 +38524,7 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a set of
 </span> <br><br>
 
 
-Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be refreshed on a device when the value !!Refresh@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the Activation Identifier (AID) that identifies a Zebra-issued license to be refreshed on a device when the value ***Refresh License*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -38461,7 +38553,7 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 </span> <br><br>
 
 
-Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, when the value !!DeleteLicenseSource@steps.step.zebraLicenseStep.zebraLicenseAction!! is selected for %%steps.step.zebraLicenseStep.zebraLicenseAction%%.
+Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, when the value ***Delete Server*** is selected for **License Action**.
 
 
 **Detail Information:**
@@ -38550,8 +38642,8 @@ Since a *Transaction* may include multiple *Transaction Steps*, there may be cas
 
 
 By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying an *Error Mode* value:
-- If the value !!Continue!! is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
-- If the value !!Stop!! is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
+- If the value ***Continue*** is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
+- If the value ***Stop*** is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
 
 
 **Detail Information:**

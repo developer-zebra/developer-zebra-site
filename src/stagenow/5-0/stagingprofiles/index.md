@@ -36,8 +36,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 5. **Select PowerMgr CSP** and **click (+)** button.
 6. Select **KeyMappingMgr CSP** and **click (+)** button. 
 7. Select **Intent CSP** and **click (+)** button.
-8. **Click "Add"** to proceed.<br>
-`COMPATIBILITY NOTE:` <br>Not all wake-up sources (buttons) are available on all devices. **For compatibility with the broadest array of devices, skip steps 9 and 10 (below) and proceed to Step 11**. 
+8. **Click "Add"** to proceed.<br> `COMPATIBILITY NOTE:` Not all wake-up sources (buttons) are available on all devices. **For compatibility with the broadest array of devices, skip steps 9 and 10 (below) and proceed to Step 11**. 
 9. **In PowerMgr "Wake-Up Action"** section, **select "Turn on"** option and click Continue.
 10. **In the “Choose a key to control”** section, **select the desired key** to be designated as the Alert Button from the drop-down. **Click "Continue"** button. <br> **SKIP TO STEP 12**.
 11. **In the "All Wake-up Sources" section, select "Turn on"** to activate wake-up keys on all available wake methods. 
@@ -46,12 +45,12 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 14. **In KeyMappingMgr "Key behavior"** section, **select "Send key-code"**. The key-code drop-down appears. 
 15. **From the KeyMappingMgr key-code drop-down, select “none.”** 
 16. `IMPORTANT:` To ensure Alert-Button functionality in any keyboard state, map “none” to ***every*** key behavior (“Key behavior in Blue mode,” “Key behavior in Orange mode,” etc.). <br>When finished, **click "Continue"** button. 
-17. **In Intent "Mode"** section, **select "Schedule sending of intent on key presses"** option.
+17. **In Intent "Mode"** section, **select "Schedule sending of intent on key presses"** option.<br> **Optional**: To prevent device from entering suspend mode, check the "Keep Device Awake" checkbox.
 18. **In Intent "Key Identifier"** section, **select the key** designated as the Alert Button.
 19. **In the Intent "Android Action Name"** section, **enter the desired action** for the use case.<br>
 For example, `android.intent.action.CALL` summons the Android native dialer.
 20. **Enter data for any additional required fields** for the desired use case.<br>
-For example, entering "`tel:+18885551212`" in the Intent "URI" section would place a call to the number 1-888-555-1212.
+For example, entering "`tel:+18885551212`" in the Intent "URI" field places a call to 1-888-555-1212.
 21. When finished entering data, **click Continue**.
 22. **Generate a barcode** (or `.bin` file for deploying via NFC tag or SD card).
 23. **Scan the barcode** (or deploy the `.bin` file) to configure the target device.
@@ -61,7 +60,7 @@ For example, entering "`tel:+18885551212`" in the Intent "URI" section would pla
 * **The intent function reads only the base state of a given key identifier**;  it does NOT read any of the keyboard-modifier states (i.e. ALT, SHIFT, color, etc.). To prevent the device from ignoring Alert key-presses if the keyboard is NOT in the base state, map "none" to all keyboard states. 
 * **To send the desired key code in ALL keyboard states**, assign the desired Key Identifier to the key code in ALL keyboard states.<br>[More about KeyMapping](/mx/keymappingmgr/).
 * **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 
-* **If device is not in suspend mode**, only a long-press is needed to trigger the alert. 
+* **To test Alert Button functionality**, short-press then long-press the designated button. 
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
 * **To prevent the device from entering suspend mode**, check the "Keep Device Awake" button in Intent Manager.  
 

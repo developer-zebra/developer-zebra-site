@@ -4,7 +4,6 @@ title: Mode
 type: parm
 order: 6
 mx: "10.2"
-apilevel: "1"
 devicetype: A
 parm:
   pivotal: Yes
@@ -13,19 +12,16 @@ parm:
   list:
     - code: 1
       mx: "10.2"
-      apilevel: "1"
       devicetype: A
       name: Immediate
       description: Sends the Intent immediately upon execution of the Profile in which it is contained.
     - code: 2
       mx: "10.2"
-      apilevel: "1"
       devicetype: A
       name: Schedule
       description: Delays sending of the intent until an assigned key is pressed.
     - code: 3
       mx: "10.2"
-      apilevel: "1"
       devicetype: A
       name: Cancel
       description: Cancels the intent and stops watching for the assigned key-press.

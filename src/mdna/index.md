@@ -82,11 +82,11 @@ features:
    video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: youtube
  - image-location: left
-   title: Simplified Scanning Configuration
+   title: Bluetooth Scanner Notifications
    subtitle: New in DataWedge
-   description: Scanning mode configuration is now more simplified with DataWedge. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   description: Light a colored LED or play audio beeps based on user actions or barcodes scanned from a connected Bluetooth scanner. Users can then easily and quickly react based on the audio or visual feedback controlled by the Bluetooth scanner notifications API from DataWedge. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
-   video: R-5BOXFZ2cw
+   video: l85vNZdrZxw
    video_type: youtube
    button_text: Learn More
  - image-location: right
@@ -101,10 +101,10 @@ features:
    title: Track and find misplaced Zebra mobile devices with Device Tracker (now cloud-based)
    subtitle: Coming Soon
    description: Place the power to track and find your Zebra Android mobile devices in the palms of your hands with Device Tracker. Device Tracker is now a cloud-based solution that easily tracks Zebra Android mobile devices, finds missing devices, and helps prevent device inventory shrinkage. 
-   url: https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html
+   url: /devicetracker/4-0/guide/about/
    video: MzCWdLUhEPY
    video_type: youtube
-   button_text: Coming Soon   
+   button_text: Learn More   
 ---
 
 <style>
@@ -197,8 +197,17 @@ hr {
 
 -----
 
-## New in DataWedge 8.x [(View More)](/datawedge/8-1/guide/about)
+## New in DataWedge 8.2 [(View More)](/datawedge/8-1/guide/about)
 
+* [Multiple scanner support](/datawedge/8-2/guide/input/barcode/#scannerselection) added for different scanners to be used interchangeably without the need for manual configuration.
+* New [Notify](/datawedge/8-2/guide/api/notify) intent API to play notification sound(s) on connected Bluetooth scanners with RSM (Remote Scanner Management).
+* New [Enumerate Triggers](/datawedge/8-2/guide/api/enumeratetriggers) intent API to retrieve supported trigger list of a device.
+* New Document Capture features:
+    * Detect the presence of a handwritten signature with [signature presence detection](/datawedge/8-2/guide/input/barcode/#documentselection). To detect this programmatically, see [Content Provider Programmer's Guide](/datawedge/8-2/guide/programmers-guides/content-provider).
+    * Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselection)
+* New [DataWedge keyboard options](/datawedge/8-2/guide/output/keystroke) in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
+* Use of unlicensed features is reported when [importing configurations](/datawedge/8-2/guide/licensing/#importingdatawedgeconfigurations).
+<!-- 
 * [Secure access to DataWedge Intent APIs](/datawedge/8-1/guide/programmers-guides/secure-intent-apis) to prevent unauthorized use of the APIs.
 * New [Trigger Wakeup and Scan](/datawedge/8-1/guide/input/barcode#readerparams) Reader Parameter to trigger scanning when device is in a suspended/screen-off state. New corresponding [SetConfig API parameter](/datawedge/8-1/guide/api/setconfig/#otherscannerinputparameters).
 * Updated licensing screen.
@@ -209,7 +218,7 @@ hr {
 * Import [NextGen SimulScan Templates](/datawedge/8-1/guide/admin) for document capture.
 * New [Press and Continue](/datawedge/8-1/guide/input/barcode/#readerparams) Aim Type for Barcode Input and corresponding new [SetConfig API parameter](/datawedge/8-1/guide/api/setconfig/#otherscannerinputparameters).
 * New [Inventory State](/datawedge/8-1/guide/input/rfid/#rfidinput) and [Hardware Key](/datawedge/8-1/guide/input/rfid/#rfidinput) RFID input options.
-
+-->
 
 -----
 

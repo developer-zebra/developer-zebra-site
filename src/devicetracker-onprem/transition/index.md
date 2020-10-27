@@ -51,7 +51,7 @@ Comparison of **Device Tracker On-Prem** and **Device Tracker** cloud-based:
   <tr>
     <td>Site support</td>
     <td>Single; multiple sites require individual server installation at each location</td>
-    <td>Multi-site; centralized in-the-cloud supporting multiple locations without any additional install required</td>
+    <td>Multi-site; centralized in-the-cloud supporting multiple locations up to 5,000 sites without any additional install required</td>
   </tr>
   <tr>
     <td>Server setup required</td>
@@ -61,7 +61,7 @@ Comparison of **Device Tracker On-Prem** and **Device Tracker** cloud-based:
   <tr>
     <td>Android platform support</td>
     <td>Select devices only up to Android 10 (soon-to-be supported)</td>
-    <td>Select devices from Android 10 or higher</td>
+    <td>Select Android Oreo and Android 10 devices upon release</td>
   </tr>
   <tr>
     <td>Common Features</td>

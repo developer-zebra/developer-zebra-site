@@ -4,7 +4,7 @@ title: Keep Device Awake (checkbox)
 type: parm
 order: 9
 mx: "10.2"
-devicetype: A,B
+devicetype: A
 parm:
   presentif: The Mode is "Schedule"
   pivotal: Yes
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 0
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Allows device to enter suspend mode. 
     - code: 1
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Prevents device from entering suspend mode.
 ---

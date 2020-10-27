@@ -4,7 +4,7 @@ title: Alert Button Action
 type: parm
 order: 7
 mx: "10.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: Yes
   name: Action3
@@ -12,17 +12,17 @@ parm:
   list:
     - code: 1
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: StartActivity
       description: Sends an Intent using startActivity to invoke an Activity within an application.
     - code: 2
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: StartService
       description: Sends an Intent using startService to initiate operation of a background Service within an application.
     - code: 3
       mx: "10.2"
-      devicetype: A,B
+      devicetype: A
       name: Broadcast
       description: Sends an Intent using 'broadcastIntent' to invoke registered broadcast receivers (listeners) within one or more applications.
 ---

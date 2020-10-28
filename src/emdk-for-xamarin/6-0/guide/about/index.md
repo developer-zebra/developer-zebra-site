@@ -86,7 +86,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ### `SEPTEMBER 2020 UPDATE`
 
-#### EMDK for Xamarin 7.0
+#### EMDK for Xamarin 6.0
 
 **Now supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 

@@ -1,0 +1,19 @@
+---
+csp: licensemgr
+title: Feature-based Source URL Friendly Name
+type: parm
+order: 10
+mx: "10.2"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: The License Action Zebra is "Activate Feature" or "Return Feature" or "Refresh Feature"
+  name: FeatureBasedLicenseSourceUrlFriendlyName
+  type: string
+---
+
+Used to enter a "friendly" name for the cloud-based or local licensing server as an aid to easy identification.
+
+**Parm value input rules**: 
+
+* String containing at least 1 character

@@ -269,12 +269,15 @@ To select the Document Capture template, in the **NG SimulScan configuration** s
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_
-
-Video demonstration of document capture with anchor barcode:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+<br><br>
 
 #### Document Capture with Anchor Barcode
 Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   <br>
+
+Video demonstration of document capture with anchor barcode:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+
 
 #### Whole Page Document Capture
 Whole Page Document Capture captures the entire document or form as an image. The entire document can be captured with or without scanning a barcode. This feature captures the entire document up to the surrounding borders in the field of view. The document must have black borders surrounding all four sides or be bordered by a contrasting background. If this requirement is not met, the document cannot be captured.
@@ -288,10 +291,17 @@ Two templates are available by default (if supported by the underlying scanner f
 <img style="height:350px" src="wholepage-templates.png"/>
 _Document Capture whole page templates_
 -->
+Video demonstration of whole page document capture:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DI8pxsTJdtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+
 
 #### Signature Presence Detection
-When scanning a document with **Document Capture,** DataWedge can detect the presence of a handwritten signature. This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. This setting is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.
-<br><br>
+When scanning a document with **Document Capture,** DataWedge can detect the presence of a handwritten signature. This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. This setting is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.<br>
+
+Video demonstration of signature presence detection:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4vS5Y2q9Vkg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 ### MultiBarcode Params
 **MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.

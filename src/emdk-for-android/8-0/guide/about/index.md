@@ -56,7 +56,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 #### EMDK for Android 8.0
 
-**Support for MX 10.2** adds the following major features and enhancements: 
+**Now supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 
  * Enter the Token received from a caller 
 * **New [Beacon Manager](../../mx/beaconmgr) CSP**: 

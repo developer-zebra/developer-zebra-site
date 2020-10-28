@@ -89,7 +89,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 #### EMDK for Xamarin 7.0
 
-**Support for MX 10.2** adds the following major features and enhancements: 
+**Now supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 
  * Enter the Token received from a caller 
 * **New [Beacon Manager](../../mx/beaconmgr) CSP**: 

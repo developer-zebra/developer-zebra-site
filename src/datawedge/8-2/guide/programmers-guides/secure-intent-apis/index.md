@@ -38,7 +38,10 @@ The first step to control access to DataWedge Intent APIs is for the admin to wh
 
 ### 2. Restrict DataWedge Intent APIs
 
-By default, all DataWedge APIs are in uncontrolled mode - any application can access all DataWedge APIs. An admin can place a DataWedge API category into controlled/uncontrolled mode using DataWedgeMgr CSP via StageNow to restrict access to a particular API category. Refer to **Control Access to Intent APIs** in [DataWedgeMgr CSP](/mx/datawedgemgr).
+By default, all DataWedge APIs are in uncontrolled mode - any application can access all DataWedge APIs. An admin can place a DataWedge API category into controlled/uncontrolled mode using DataWedgeMgr CSP via StageNow to restrict access to a particular API category. Refer to **Control Access to Intent APIs** in [DataWedgeMgr CSP](/mx/datawedgemgr).<br>
+**Note:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>•</b>&nbsp;  For DataWedge 8.1, DataWedge 8.1.61 or higher is required. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>•</b>&nbsp;  For DataWedge 8.2, DataWedge 8.2.62 or higher is required.
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

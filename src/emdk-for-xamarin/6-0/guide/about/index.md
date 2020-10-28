@@ -32,7 +32,7 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 EMDK-X has been designed to work with all Zebra mobile computers running Android. 
 
-Visit the Zebra.com Support Portal for a full list of [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html).
+**Visit the Zebra.com Support Portal for a full list of [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html)**.
 
 <!-- 10/28/20- supported device table is now maintained on zebra.com
 

@@ -6,6 +6,7 @@ order: 10
 mx: "10.2"
 apilevel: "27"
 devicetype: A
+info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
 parm:
   pivotal: No
   name: SinglePairing

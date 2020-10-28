@@ -33,3 +33,19 @@ parm:
 ---
 
 Controls whether the device will be permitted to pair with remote Bluetooth devices without requiring user confirmation. This feature is not the same as auto-pairing; it simply removes the confirmation step after device pairing has been initiated by the device user. The settings of this parameter do not effect existing device pairings.
+
+By default, Silent Pairing Rules are in place to allow some Zebra device models to pair without user confirmation (after pairing is initiated by the user). **Note**: Default pairing rules for the devices listed below match by device Name only. For improved security, **<u>Zebra recommends that default rules be replaced</u> with rules matching by device Name, Upper Address Part and/or, if supported, Remote Device PIN and/or Remote Device MAC**.
+
+* DS2278
+* DS3578
+* DS3678
+* DS8178
+* DX30
+* HS3100
+* LI3678
+* PAR-TMD
+* RS507
+* RS5100&#42; 
+* RS6000
+
+<i><font size="1" color="black">&#42;Silent pairing with the RS5100 is supported on SDM660-platform devices running Android 8.x Oreo (and later) and 8956-platform devices with the Android 7.x N (or later) LifeGuard patch.</font></i>

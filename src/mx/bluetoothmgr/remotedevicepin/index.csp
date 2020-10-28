@@ -1,8 +1,8 @@
 ---
 csp: bluetoothmgr
-title: Remote Device PIN
+title: Pairing PIN Code
 type: parm
-order: 21
+order: 40
 mx: "9.3"
 apilevel: "28"
 devicetype: A

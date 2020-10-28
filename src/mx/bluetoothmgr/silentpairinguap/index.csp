@@ -1,6 +1,6 @@
 ---
 csp: bluetoothmgr
-title: Silent Pairing UAP
+title: UAP of BT Address
 type: parm
 order: 18
 mx: "7.0"

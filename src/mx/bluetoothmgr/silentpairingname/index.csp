@@ -1,8 +1,8 @@
 ---
 csp: bluetoothmgr
-title: Silent Pairing Device Name
+title: Device Name
 type: parm
-order: 12
+order: 15
 mx: "7.0"
 apilevel: "24"
 devicetype: A

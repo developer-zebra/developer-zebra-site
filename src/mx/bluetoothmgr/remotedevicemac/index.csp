@@ -1,6 +1,6 @@
 ---
 csp: bluetoothmgr
-title: Remote Device MAC
+title: Bluetooth MAC Address
 type: parm
 order: 22
 mx: "9.3"

@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Pairing Category
 type: parm
-order: 30
+order: 50
 mx: "10.2"
 devicetype: A
 parm:

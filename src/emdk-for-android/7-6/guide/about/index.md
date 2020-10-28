@@ -46,7 +46,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ## New in v7.6
 
-### SEPTEMBER 2020 UPDATE
+### `SEPTEMBER 2020 UPDATE`
 
 #### EMDK for Android 7.6 
 

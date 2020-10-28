@@ -14,6 +14,12 @@ productversion: '7.0'
     <br>
     <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
 
+## `IMPORTANT`
+
+**EMDK for Android versions 6.0 and 7.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
+
+-----
+
 ## Overview
 
 EMDK for Xamarin is an IDE extension that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices using C# skills and tools. EMDK for Xamarin includes class libraries, sample applications and source code, and all associated documentation for building applications that take full advantage of the power of Zebra devices.
@@ -24,7 +30,12 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 ### Supported Devices
 
-EMDK-X has been designed to work with all Zebra mobile computers running Android. The devices listed below have been tested and validated for compatibility with this release. 
+EMDK-X has been designed to work with all Zebra mobile computers running Android. 
+
+Visit the Zebra.com Support Portal for a full list of [supported Zebra devices](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html).
+
+<!-- 10/28/20- supported device table is now maintained on zebra.com
+The devices listed below have been tested and validated for compatibility with this release. 
 
 #### Mobile devices
 
@@ -52,6 +63,7 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * **VC8300 - Oreo**
 
 Devices and/or dessert flavors **shown in bold are newly added** in the current release. 
+-->
 
 #### Scanners and imagers
 
@@ -73,13 +85,50 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 > **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been temporarily suspended in EMDK for Android 8.0 and EMDK for Xamarin 7.0 for devices running Android 10 and later. **UDI support will be restored in these products via LifeGuard patch for Android 10 to be released in Q3 2020**.
 
+### `SEPTEMBER 2020 UPDATE`
+
+#### EMDK for Xamarin 7.0
+
+**Support for MX 10.2** adds the following major features and enhancements: 
+* **New [Access Manager](../../mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+* **New [Beacon Manager](../../mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+* **New [Bluetooth Manager](../../mx/bluetoothmgr) features**: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](../../mx/clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](../../mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](../../mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](../../mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [Power Manager](../../mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [PowerKey Manager](../../mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Touch Manager](../../mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](../../mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](../../mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
+
+> `NOTE:` MX 10.2 support requires updating the EMDK Visual Studio extension to 6.0.0.70 (or later). 
+
 -----
 
 ## Version History
 
 ### Added in v6.0
 
-####`JUNE 2020 UPDATE:`
+###`JUNE 2020 UPDATE`
 
 **MultiDex support added in Visual Studio 2019**. 
 

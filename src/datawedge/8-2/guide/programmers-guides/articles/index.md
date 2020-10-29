@@ -17,6 +17,7 @@ Articles and blogs may be posted on other sites that also serve as useful DataWe
 * [Quickly Suspend Scanning in Your App with DataWedge](https://developer.zebra.com/blog/quickly-suspend-scanning-your-app-datawedge) - demonstrates how to temporarily disable the barcode scanner
 * [Listening for KeyPress events with DataWedge](https://developer.zebra.com/blog/listening-keypress-events-datawedge) - discusses how to send data as key events so an application can listen for the keypress events and react accordingly
 * [DataWedge scanning in the background](https://developer.zebra.com/blog/datawedge-background-scanning-zebra-android-devices?sfid=&co=) - discusses how to scan barcodes when the app is in the background or the mobile device is in standby 
+* [Giving context to speech with DataWedge and Voice Input](https://developer.zebra.com/blog/giving-context-speech-datawedge-and-voice-input?sfid=&co=) - discusses how to use DataWedge for voice recognition, convert it to text and capture the text in your app
 * Other additional blogs and sample apps - refer to [Darryn's repository of blogs and sample apps](https://darryncampbell.co.uk/technology_index.html) for more useful information on application development.
 
 

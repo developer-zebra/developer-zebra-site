@@ -148,6 +148,7 @@ For more information about approved languages or to download a localized operati
 2. Selecting DataWedge as a keyboard or IME (Input Method Editor) from the Virtual Keyboard settings on the device does not display any graphical keyboard. DataWedge keyboard is only for internal use of DataWedge. DataWedge should not be selected as the default IME, otherwise unexpected behavior can occur.
 3. After a device reboot, DataWedge starts after receiving the LOCKED_BOOT_COMPLETED intent. Calling DataWedge intent APIs before the LOCKED_BOOT_COMPLETED intent may cause unexpected behavior as DataWedge is still not started yet. Calling DataWedge intent APIs soon after receiving the LOCKED_BOOT_COMPLETED intent may also cause unexpected behavior as DataWedge may still be in the initialization process. It is recommended to wait for a few seconds after receiving the LOCKED_BOOT_COMPLETED intent before calling any DataWedge intent APIs. 
 4. When Data Capture Plus icon is displayed by DataWedge on top of another application, Android displays a silent notification in the notification area. Users can hide the Data Capture Plus icon by tapping on this notification and disabling the “Allow display over other apps” option. If a user decides to disable this option, even though Data Capture Plus is enabled in DataWedge, it does not display on the screen.
+5. On Android 10 devices, although the icons are visible, DataWedge and DWDemo are not supported with Android work profile.
 
 -----
 ## New in DataWedge 8.2

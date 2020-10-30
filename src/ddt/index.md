@@ -2,7 +2,7 @@
 title: Device Diagnostic Tool
 img: ddt_logo.png
 layout: redirect.html
-redirect_url: /ddt/2-2/guide/about
+redirect_url: /ddt/2-3/guide/about
 ---
 
 ### Loading the latest Device Diagnostic Tool documentation...

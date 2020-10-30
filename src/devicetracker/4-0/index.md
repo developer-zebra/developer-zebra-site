@@ -6,17 +6,17 @@ menu:
   title: Device Tracker
   items:
     - title: About
-      url: /devicetracker/3-0/guide/about
+      url: /devicetracker/4-0/guide/about
     - title: User Roles
-      url: /devicetracker/3-0/guide/roles
+      url: /devicetracker/4-0/guide/roles
     - title: Install & Setup
-      url: /devicetracker/3-0/guide/setup
+      url: /devicetracker/4-0/guide/setup
     - title: Device Management
-      url: /devicetracker/3-0/guide/mgmt
+      url: /devicetracker/4-0/guide/mgmt
     - title: Device Tracking
-      url: /devicetracker/3-0/guide/use
+      url: /devicetracker/4-0/guide/use
     - icon: fa fa-search
-      url: /devicetracker/3-0/search
+      url: /devicetracker/4-0/search
 product: Device Tracker
-productversion: "3.0"
+productversion: "4.0"
 ---

@@ -2,7 +2,7 @@
 title: Install & Setup
 layout: guide.html
 product: Device Tracker
-productversion: "3.0"
+productversion: "4.0"
 ---
 
 ## Overview

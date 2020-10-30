@@ -251,7 +251,7 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'devicetracker-onprem/2-3/'
     }))
     .use(foldermenu({
-        folder: 'devicetracker/3-0/'
+        folder: 'devicetracker/4-0/'
     }))
     .use(foldermenu({
         folder: 'ppc/1-0/'

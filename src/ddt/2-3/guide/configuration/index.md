@@ -18,9 +18,9 @@ The **Settings** screen provides the file path to import/export the configuratio
 _Application settings_
 <br />
 
-- **File path:**
-  - **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
-  - **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
+* **File path:** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>•</b> Configuration import path - specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>•</b> Log output and configuration export path - specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
 - **Status log -** editable text field for the file name of the status log. Contains information about the tests conducted with any associated parameters and configuration changes from the **Configure Tests** screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
 - **History log -** editable text field for the history log, containing information about the test results. Generated when performing a full test from the main screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
 - **Log File Max Size (MB) -** editable text field to specify the maximum file size for the log files.
@@ -30,8 +30,9 @@ _Application settings_
 ## Configuration File
 
 `Configuration.xml` can be modified manually using any text editor. The existing tag format must be maintained. Options are configurable through **Settings** or **Configure Tests** in the user interface, except for the options specified below:
-
 - **admin_mode –** If set to _true_, sets the app to admin mode allowing access to the app settings and test configurations. Default value = _true_.
+- **allow_individual_test_for_user -** If set to _true_, the non-admin user can run the tests individually instead of running all tests at once.
+- **allow_individual_log_for_user -** If set to _true_, the non-admin user can generate an individual result log file for each test instead of a single log file containing all test results.
 - **continue_testing_on_failure -** If set to _true_, the test automatically proceeds to the next section test until all tests are completed, even if the previous section test fails. Default value = _false_.
 - **show_extra_data -** If set to _true_, informational data is displayed in the test results page. Refer to Test Criteria section to see the affected informational data. Default value = _true_.
 - **debug –** If set to _true_, application logging is displayed in logcat for debugging purposes. Default value = _true_.
@@ -81,21 +82,21 @@ Configuration parameters:
   - **Radio Power Cycle –** checks for operability when turning the Bluetooth radio on/off
   - **Functional/Non-functional –** determines whether the Bluetooth radio can be enabled/disabled within a specified period of time. Returns functional if the Bluetooth radio is functional.
   - **Discoverable/Connectable –** checks if connectable or discoverable
-- **WiFi Tests –** tests operation of the WiFi radio and returns WiFi related information
+- **WiFi Test –** tests operation of the WiFi radio and returns WiFi related information
   - **MAC address –** checks whether the MAC address is valid based on its format
   - **Ping Address –** specifies the domain name to perform the ping test
   - **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
-  - **Radio Power Cycle –** checks for operability when turning the WiFi radio on/off
-- **Battery Tests –** checks the battery status and returns battery related information
+- **Battery Test –** checks the battery status and returns battery related information
   - **Part Number –** returns the battery part number
   - **Serial Number –** returns the battery serial number
   - **Manufacture Date –** returns the battery date of manufacture
   - **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
-- **WWAN Tests –** tests operation of the WWAN radio and returns related WWAN information
+- **WWAN Test –** tests operation of the WWAN radio and returns related WWAN information
   - **Sim State –** checks whether the sim card is present
   - **Voice State –** checks the voice state of the sim card
   - **Data State –** checks the data state of the sim card
-- **Audio Test –** tests operation of the device microphone and speaker \* **Test Timeout –** specifies the time in seconds to wait for user input
+- **Audio Test –** tests operation of the device microphone and speaker 
+- **Test Timeout –** specifies the time in seconds to wait for user input
 <br>
 <p>When text values are modified, such as <b>Test Timeout</b> or <b>Ping Address</b>, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.</p>
 

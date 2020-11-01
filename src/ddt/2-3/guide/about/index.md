@@ -15,15 +15,30 @@ Hardware features tested:
 - **Button Test** – checks the operation of push-to-talk, left or right scan trigger, volume up and volume down device buttons
 - **Touch Screen Test** – checks for operation of the device touch display
 - **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
-- **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, radio power cycle result, signal strength, ESSID, IP address, BSSID, and speed
-- **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, and temperature
+- **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, signal strength, ESSID, IP address, BSSID, and speed
+- **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, temperature, battery level and current capacity
 - **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 - **Audio Test** – checks for operation of the device microphone and speaker
 
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
-## New in Device Diagnostic Tool 2.2
+## New in Device Diagnostic Tool 2.3
+
+* New [Help](../usage/#userinterface) option available which links to the Device Diagnostic Tool support portal.
+* New data fields captured for the [Battery test](../usage/#batterytest): battery level and battery current capacity.
+* New features configurable through the configuration file:
+        * [perform tests individually](../configuration/#configurationfile) 
+        * [capture logs individually](../configuration/#configurationfile) for each test performed
+* Fixed issue: For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
+* [Enhancements:](../usage/#userinterface)
+        * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. When initiating the WLAN test, if the WiFi radio is not enabled the user is prompted to enable the radio.
+        * To display the ESSID from a WLAN test on Android O or higher, _Location_ is required to be enabled in device settings due to Android restrictions. If _Location_ is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
+
+
+## Version History
+
+### New in Device Diagnostic Tool 2.2
 
 - New devices supported - see supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
 - Android 10 limitations due to security restrictions:
@@ -37,8 +52,6 @@ Hardware features tested:
   _ When a battery test is performed, improper values may be displayed on the following devices:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Devices that require AC Power to operate (no battery exists), such as CC605 and CC610<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• ET50 devices - the part number, serial number and manufactured date may display improperly
-
-## Version History
 
 ### Device Diagnostic Tool 2.1
 

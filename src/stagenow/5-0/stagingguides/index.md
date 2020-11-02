@@ -5,33 +5,33 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
+    title: A Guide to Staging
+    text: Describes steps for configuring Zebra devices after a Profile has been created. 
+    url: /stagenow/5-0/stageclient/
+  - type: section
+    level: 4
     title: Alert Button
     text: How to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number. 
     url: /stagenow/5-0/stagingprofiles/#overview
   - type: section
     level: 4
     title: Dynamic Staging
-    text: This guide describes how to create many barcodes from a single staging Profile, each of which can configure devices differently depending on variations of how and/or where the devices are to be used.
+    text: From a single staging Profile, configure devices differently based on how and/or where the devices are to be deployed.
     url: /stagenow/5-0/dynamicstaging
   - type: section
     level: 4
-    title: General Staging Guide
-    text: This guide describes all the necessary steps for staging Zebra devices from start to finish. Start here to gain an understanding of the complete staging process. 
-    url: /stagenow/5-0/stageclient/
-  - type: section
-    level: 4
     title: Smart Profiles
-    text: Smart Profiles automatically calculate all required setting types (CSPs) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. 
+    text: Automates Profile creation for updating the OS on device(s) to any other version. 
     url: /stagenow/5-0/smartprofile
   - type: section
     level: 4
     title: Trusted Staging
-    text: This guide describes the process for creating "trusted devices," which uses security certificates to protect staged devices from unauthorized changes to device settings.  
+    text: How to create "trusted devices," which use security certificates to protect staged devices from unauthorized configuration changes.  
     url: /stagenow/5-0/trustedstaging
   - type: section
     level: 4
     title: Zero Touch
-    text: The Zero Touch Wizard automates configuration of a device's network settings to enable 'factory-fresh' or factory-reset devices to connect to the internet for access to Google Zero Touch servers, which perform Device Owner EMM Enrollment with no user interaction.
+    text: Automates configuration of a device's network settings to enable new or refreshed devices to access Google Zero Touch servers for Device-Owner EMM Enrollment with no user interaction.
     url: /stagenow/5-0/Profiles/zerotouch
 product: StageNow
 productversion: '5.0'

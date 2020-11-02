@@ -219,6 +219,7 @@ Some features may be controlled through [StageNow](/stagenow/latest/about), an E
     * Device Central must be installed and launched at least once on the device.
     * Vibration must be supported on the device to receive haptic feedback.
 * If the **Smart Leash option is enabled and a Bluetooth peripheral is connected,** an additional 5-10% of battery can be consumed on the mobile computer regardless of how many peripherals are connected.
+* When **DataWedge intent APIs are in [controlled mode](/datawedge/latest/guide/programmers-guides/secure-intent-apis)** restricting the use of APIs, scanning functionality in Device Central does not work as expected.
 <br><br><br>
 
 <!-- -->

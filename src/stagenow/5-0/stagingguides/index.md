@@ -5,14 +5,9 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: General Staging Guide
-    text: This guide describes all the necessary steps for staging Zebra devices from start to finish. Start here to gain an understanding of the complete staging process. 
-    url: /stagenow/5-0/stageclient/
-  - type: section
-    level: 4
-    title: Trusted Staging
-    text: This guide describes the process for creating "trusted devices," which uses security certificates to protect staged devices from unauthorized changes to device settings.  
-    url: /stagenow/5-0/trustedstaging
+    title: Alert Button
+    text: How to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number. 
+    url: /stagenow/5-0/stagingprofiles/#overview
   - type: section
     level: 4
     title: Dynamic Staging
@@ -20,9 +15,19 @@ content-items:
     url: /stagenow/5-0/dynamicstaging
   - type: section
     level: 4
+    title: General Staging Guide
+    text: This guide describes all the necessary steps for staging Zebra devices from start to finish. Start here to gain an understanding of the complete staging process. 
+    url: /stagenow/5-0/stageclient/
+  - type: section
+    level: 4
     title: Smart Profiles
     text: Smart Profiles automatically calculate all required setting types (CSPs) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. 
     url: /stagenow/5-0/smartprofile
+  - type: section
+    level: 4
+    title: Trusted Staging
+    text: This guide describes the process for creating "trusted devices," which uses security certificates to protect staged devices from unauthorized changes to device settings.  
+    url: /stagenow/5-0/trustedstaging
   - type: section
     level: 4
     title: Zero Touch

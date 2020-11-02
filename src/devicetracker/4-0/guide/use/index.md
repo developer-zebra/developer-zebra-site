@@ -49,9 +49,8 @@ To start the search process:
 
 5. Tap Play Sound on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6. If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.** The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
-   <br><br>
-
-**Note:** A device is in the **Disconnected** state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.
+<br>
+<p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.
 
 ## Decommission/Recommission Device
 
@@ -85,13 +84,13 @@ Steps to recommission a device:
 
 ## Add/Edit a Note
 
-Administrators and managers can add a note to capture comments specific to the device to help in device tracking or identifying device problems. For example, a comment could be "device screen damaged".
+Administrators and managers can add a note to capture comments specific to the device to help in device tracking or identifying device problems. For example, a comment could be "device screen damaged".<br><br>
 
 To add or edit a note:
 
 1. From the device list of any category accessed from the dashboard, tap and hold the device card and tap **Add a Note.** If a note already exists, the option is provided to **Edit a Note.**
 2. The **Note** section appears in the **Device Details** screen prompting to enter in text.
-   <img style="height:350px" src="note.png" /><i>Enter a note or comment</i>
+   <img style="height:350px" src="note.jpg" /><i>Enter a note or comment</i>
 
 3. After entering text for the note, tap the back button.
 4. The note is saved and can be viewed in the **Device Details** screen.
@@ -112,8 +111,8 @@ Perform a device check-out at the start of a work shift as follows:
 3. Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-out to be successful.
 4. A message appears indicating the user is checked-out successfully. The app is placed in the background.
 5. The user is now associated with the device. <br>
-   <!-- -->
-   **Note:** If Check-out is enabled, after a device is rebooted the Check-out screen may take up to one minute to be displayed.
+<!-- -->
+ **Note:** If Check-out is enabled, after a device is rebooted the Check-out screen may take up to one minute to be displayed.
    <br><br>
 
 ### Check-In
@@ -125,17 +124,21 @@ Choose one of the following options to Check-In a device:<br><br>
 1. Launch the app.
 2. Tap on the options menu from the top right and select Check-In Device.
 3. The user is checked-in. The check-out screen appears prompting to scan a barcode.
+<br><br>
+<!-- -->
 
 **Option 2:**
 
 1. Connect the device to power.
 2. The user is checked-in. The check-out screen appears prompting to scan a barcode.
+<br><br>
+<!-- -->
 
 **Option 3:**
 
 1. Reboot the device.
 2. The check-out screen appears prompting to scan a barcode.
-   <br>
+<br>
 
 <!-- -->
 
@@ -147,3 +150,11 @@ Choose one of the following options to Check-In a device:<br><br>
 <br><br>
 
 <!-- -->
+-----
+
+## See Also
+
+* [About Device Tracker](../about)
+* [User Roles](../roles)
+* [Install & Setup](../setup)
+* [Device Management](../mgmt)

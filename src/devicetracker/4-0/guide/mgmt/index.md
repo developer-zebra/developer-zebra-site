@@ -21,15 +21,16 @@ To login as administrator or manager:
 4. Enter the administrator or manager login credentials.
 5. Perform the required tasks.
 6. Logout when complete. Tap the options menu at the top right and select **Admin/Manager Logout.**
-   <br>
-   <!-- -->
-   After logging in as administrator on the device, tap on the top right option menu and select one of the following:
+
+<br>
+After logging in as administrator on the device, tap on the top right option menu and select one of the following:
 
 - **Admin/Manager Logout –** logs out the administrator or manager.
 - **Settings –** displays information and options:
-  _ **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
-  _ **Device Friendly Name –** displays the friendly name assigned to the device. \* **Site Name –** displays the friendly name assigned to the site location.
-  <br>
+        * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
+        * **Device Friendly Name –** displays the friendly name assigned to the device. 
+        * **Site Name –** displays the friendly name assigned to the site location.
+  <br><br>
 
 ## Reset Password
 
@@ -80,25 +81,22 @@ Dashboard categories:
 - **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site. <br>
   <!-- -->
 
-  Device status:
+Device status:
 
 - **To Be Found –** filters devices designated To Be Found where action has not been taken to initiate the search for these devices.
 - **Being Found –** filters devices that are actively being searched. Triggered when a user initiates a device search.
 - **Found –** filters devices that were successfully found after a search. Triggered when a user indicates the device is found.
 - **Cannot Find –** filters devices that could not be found after a search was conducted.
 - **Decommissioned –** filters devices that are designated as decommissioned. These devices are not in the active device pool, the collection of devices with active server communication.
-  <br><br>
-  <!-- -->
-
-  Device battery states:
+<br>
+<p>Device battery states:</p>
 
 - **Low Battery –** filters devices that have reached the low power threshold of 15% remaining battery or lower, requiring attention to be charged prior to battery depletion.
 - **Charging –** filters devices that are powered on and in the charging state.
 - **Discharging –** filters devices that are powered on and discharging.
-  <br><br>
-  <!-- -->
+<br>
 
-  Device connection states:
+Device connection states:
 
 - **Never Connected –** filters devices that are registered but never connected to the server.
 - **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
@@ -121,14 +119,14 @@ Each individual device is displayed as a “device card” that shows informatio
 
 - Device friendly name (if not available, the device model and serial number is displayed)
 - Device model and serial number
-- AP friendly name (if available) or BSSID. **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
-- Device state:
-  - **In Service –** device is part of the active device pool and not in any of the other device states
-  - **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
-  - **Finding –** the device search is initiated by another user
-  - **Found –** the device is located after conducting the search
-  - **Cannot Find –** the device could not be found after the search was conducted
-  - **Decommissioned –** device is removed from the active device pool
+- AP friendly name (if available) or BSSID - **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
+* Device state:
+        * **In Service –** device is part of the active device pool and not in any of the other device states
+        * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+        * **Finding –** the device search is initiated by another user
+        * **Found –** the device is located after conducting the search
+        * **Cannot Find –** the device could not be found after the search was conducted
+        * **Decommissioned –** device is removed from the active device pool
 - Top right icon indicates device battery level or charging state.
 <br>
 <!-- -->
@@ -152,32 +150,32 @@ Tap and hold on any device card to display the available device actions:
 
 Tap on any device card to display the **Device Details** screen:
 
-- **Friendly name –** displays the assigned friendly device name as registered by the administrator
-- **Device Model –** displays the device model
-- **Serial Number –** displays the serial number of the device
-- **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
-- **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
-  - **High –** indicates the remaining battery is greater than 66%
-  - **Medium –** indicates the remaining battery is within the range 15% to 66%
-  - **Low –** indicates the remaining battery is less than or equal to 15%
-- **Battery Status:**
-  - **Charging –** the device is charging while plugged to a power source
-  - **Not Charging –** device is not plugged to a power source
-- **Device State:**
-  - **In Service –** device is part of the active device pool and not in any of the other device states
-  - **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
-  - **Finding –** the device search is initiated by another user
-  - **Found –** the device is located after conducting the search
-  - **Cannot Find –** the device could not be found after the search was conducted
-  - **Decommissioned –** device is removed from the active device pool
-- **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
-- **Display On –** displays “true” or “false”. If true, it indicates the device display is on and the device may be in active use. If false, it indicates the device display is off, indicating the device is not in active use.
-- **Connection State:**
-  - **Never connected –** the device has never connected to the server
-  - **Connected –** the device is connected to the server
-  - **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
-- **Last Reported –** displays the time stamp of the last time the device reported to the server
-- **Note –** text entered by an administrator or manager capturing information specific to the device.
+* **Friendly name –** displays the assigned friendly device name as registered by the administrator
+* **Device Model –** displays the device model
+* **Serial Number –** displays the serial number of the device
+* **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
+* **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
+        * **High –** indicates the remaining battery is greater than 66%
+        * **Medium –** indicates the remaining battery is within the range 15% to 66%
+        * **Low –** indicates the remaining battery is less than or equal to 15%
+* **Battery Status:**
+        * **Charging –** the device is charging while plugged to a power source
+        * **Not Charging –** device is not plugged to a power source
+* **Device State:**
+        * **In Service –** device is part of the active device pool and not in any of the other device states
+        * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+        * **Finding –** the device search is initiated by another user
+        * **Found –** the device is located after conducting the search
+        * **Cannot Find –** the device could not be found after the search was conducted
+        * **Decommissioned –** device is removed from the active device pool
+* **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
+* **Display On –** displays “true” or “false”. If true, it indicates the device display is on and the device may be in active use. If false, it indicates the device display is off, indicating the device is not in active use.
+* **Connection State:**
+        * **Never connected –** the device has never connected to the server
+        * **Connected –** the device is connected to the server
+        * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
+* **Last Reported –** displays the time stamp of the last time the device reported to the server
+* **Note –** text entered by an administrator or manager capturing information specific to the device.
 <table>
   <tr>
    <td>
@@ -233,3 +231,11 @@ To perform a device search:
 <br><br>
 
 <!-- -->
+-----
+
+## See Also
+
+* [About Device Tracker](../about)
+* [User Roles](../roles)
+* [Install & Setup](../setup)
+* [Device Tracking](../use)

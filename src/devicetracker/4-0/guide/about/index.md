@@ -22,17 +22,18 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 **Main features:**
 <br>
 
-- Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple sites.
-- Support for central administrator, site manager, and site associate roles.
-  _ Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.
-  _ Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval. \* Web portal for centralized administration of system settings and admin and site manager login credentials.
-- Registration of:
-  _ Sites and access points with friendly names to easily identify device location.
-  _ Devices to assigned site with user friendly names for simple device identification.
-- Simple to deploy – install and configure the mobile application using StageNow and Enterprise Mobility Management tools.
-- Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator and play sound feature.
-- Check-out/Check-in feature to associate users to devices for accountability. (Optional)
-  <br><br>
+* Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple sites.
+* Support for central administrator, site manager, and site associate roles.
+        * Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.
+        * Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval. 
+        * Web portal for centralized administration of system settings and admin and site manager login credentials.
+* Registration of:
+        * Sites and access points with friendly names to easily identify device location.
+        * Devices to assigned site with user friendly names for simple device identification.
+* Simple to deploy – install and configure the mobile application using StageNow and Enterprise Mobility Management tools.
+* Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator and play sound feature.
+* Check-out/Check-in feature to associate users to devices for accountability. (Optional)
+<br><br>
 
 ## Supported Devices
 
@@ -42,22 +43,27 @@ Supported devices with GMS (Google Mobile Services):
   <tr bgcolor="#dce8ef">
     <th>Device</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+    <th style="text-align:center">Supported BSP</th>
   </tr>
   <tr>
     <td>EC50</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>  
   <tr>
     <td>TC51</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td>02-13-15.00-OG-U20-STD</td>
   </tr>
   <tr>
     <td>TC52</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td>01-23-18.00-OG-U09-STD</td>
   </tr>
   <tr>
     <td>TC72</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td>01-30-04-OG-00-U01-STD</td>
   </tr>
 </table>
 <br><br>
@@ -66,6 +72,7 @@ Supported devices with GMS (Google Mobile Services):
 
 ## See Also
 
-- [Install & Setup](../setup)
-- [Device Management](../mgmt)
-- [Device Tracking](../use)
+* [User Roles](../roles)
+* [Install & Setup](../setup)
+* [Device Management](../mgmt)
+* [Device Tracking](../use)

@@ -194,7 +194,7 @@ The following table indicates which features are included with Zebra Professiona
 <!--   <td colspan="2">
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td> -->
 
-## Zebra Professional-series Devices
+## Zebra Professional Series
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>
@@ -207,14 +207,14 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td>Wi-Fi only</td>
-  <td>TC21</td>
+  <td>TC21&#42;</td>
   <td>MC22</td>
   <td>Coming soon</td>
   </tr>
 
   <tr>
   <td>Wi-Fi, WWAN</td>
-  <td>TC26</td>
+  <td>TC26&#42;</td>
   <td>MC27</td>
   <td>Coming soon</td>
   </tr>
@@ -223,6 +223,8 @@ The following table indicates which features are included with Zebra Professiona
 </table>
 
 <a name="softwarecomponents1"></a>
+
+<font size="2" color="grey">&#42; *TC21 and TC26 device SKUs with a **3, 4, 7 or J** in the fourth position (i.e. TC21xx-x**<u>N</u>**xxxx) ship with an MDNA Enterprise license preinstalled*.</font><br>
 
 -----
 

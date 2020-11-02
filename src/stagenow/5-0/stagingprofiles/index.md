@@ -11,6 +11,7 @@ productversion: '5.0'
 
 #### Also See
 
+* **[Dynamic Profiles](../dynamicstaging)** | Create multiple config barcodes from a single Profile using imported data 
 * **[Smart Profiles](../smartprofile)** | Automatically generate Profiles for device OS updates
 * **[Trusted Staging](../trustedstaging)** | Protect devices from unauthorized configuration changes 
 

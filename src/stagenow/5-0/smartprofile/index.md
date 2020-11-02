@@ -7,7 +7,7 @@ productversion: '5.0'
 
 ## Overview
 
-**StageNow 5.0 (and later) supports Smart Profiles**, which automatically determine the necessary Profile steps for updating the OS on device(s). Through integration with the LifeGuard update database, StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for such upgrade operation(s).
+**StageNow 5.0 (and later) supports Smart Profiles**, which automatically determine the necessary Profile steps for updating the OS on one or more devices. StageNow also now integrates with the LifeGuard database of updates, which removes the need administrators to manually identify the OS and LifeGuard image(s) required for upgrade operation(s).
 
 > **Requires MX 8.1 or later on target device(s)**
 
@@ -43,17 +43,17 @@ _Click image to enlarge; ESC to exit_.
 <br>
 <br>
 3. On the login screen, **enter Zebra.com login credentials**.<br>
-**Note: If a timeout occurs, click the "Try Again" button** to return to the login screen:
+**Note: If a timeout occurs, click the "Try Again" button** (not shown) to return to the login screen:
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-4. **Click "Allow"** to load the LifeGuard update database. 
+4. **Click "Allow"** to load the LifeGuard update database: 
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-5. To continue, **click "confirm"**.<br> **Note**: Do **NOT** change the Activation code: 
+5. **Click "confirm"** to continue. **NOTE**: Do **NOT** change the Activation code: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
@@ -76,7 +76,7 @@ _Click image to enlarge; ESC to exit_.
 
 #### Functions of LifeGuard Updates Page
 
-**<u>Revoke button</u>** logs out of the current Zebra.com account. **To continue creating a Smart Profile after pressing**, repeat Steps 3, 4 and 5. <br>
+**<u>Revoke button</u>** logs out of the current Zebra.com account. **To continue creating a Smart Profile after pressing**, repeat Steps 3, 4 and 5 above. <br>
 
 **<u>Search Build Number</u>** allows for loading of a specific build version.<br> 
 
@@ -84,7 +84,7 @@ _Click image to enlarge; ESC to exit_.
 
 **<u>Refresh</u>** reloads the available build images from the LifeGuard database. **A "grayed-out" button indicates that StageNow already contains the latest build data**.<br>
 
-**<u>Release notes</u>** downloads the current release notes for a build (`.pdf` file) for off-line reference.<br>
+**<u>Release notes</u>** downloads that build's current release notes `.pdf` file for off-line reference.<br>
 
 #### When desired build files are downloaded, proceed to the next section.
 
@@ -116,7 +116,7 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. If a network is required, **click "Yes" to create network over which to download update(s) to the device(s)**.<br> Enter network settings on subsequent screens (not shown). 
+5. If a network is required, **click "Yes" to configure network settings over which to download update(s) to the device(s)**.<br> Enter network settings on subsequent screens (not shown).<br>To vary network settings by location, see [Dynamic Profiles](../dynamicstaging).   
 <img alt="image" style="height:400px" src="sn5_09.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>

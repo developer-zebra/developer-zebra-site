@@ -7,9 +7,12 @@ productversion: '5.0'
 
 ## Overview
 
-This section provides information for the staging administrator about creating and managing Profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
+**This section describes how to create, deploy and manage staging Profiles**, which are used to configure Zebra devices based on settings input by the staging administrator.
 
-> **StageNow 4.0 (and later) supports [Trusted Staging](../trustedstaging)**, which can protect devices with MX 9.2 and higher from unauthorized staging. <br>**Trusted Staging requires the use of Trusted Profiles**; see below and the [Trusted Staging Guide](../trustedstaging) for details. 
+#### Also See
+
+* **[Smart Profiles](../smartprofile)** | Automatically generate Profiles for device OS updates
+* **[Trusted Staging](../trustedstaging)** | Protect devices from unauthorized configuration changes 
 
 -----
 

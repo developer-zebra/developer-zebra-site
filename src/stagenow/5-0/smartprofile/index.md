@@ -7,25 +7,26 @@ productversion: '5.0'
 
 ## Overview
 
-**StageNow 5.0 (and later) supports Smart Profiles**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. 
+**StageNow 5.0 (and later) supports Smart Profiles**, which automatically determine the necessary Profile steps for updating the OS on device(s). Through integration with the LifeGuard update database, StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for such upgrade operation(s).
 
 > **Requires MX 8.1 or later on target device(s)**
 
-> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using the previous "non-smart" methods. However, integration with the LifeGuard build database in StageNow 5.0 removes the requirement to manually identify the OS and LifeGuard image(s) required for such upgrade operation(s). 
+> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#createaprofile). 
 
 -----
 
 ### Requirements
 
-* StageNow 5.0 (or later) installed
-* Target device(s) with MX 8.1 (or later)
-* Login credentials for an active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html) account 
+* **StageNow 5.0** (or later) installed
+* **MX 8.1** (or later) on target device(s)
+* **Login credentials** for Zebra.com
+* **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** account 
 
 -----
 
 ## Working with Smart Profiles
 
-### I. Select LifeGuard Image(s)
+### I. Select LifeGuard Updates(s)
 
 **Before creating a Smart Profile**, at least one LifeGuard device image must be selected from the "Browse LifeGuard Images" page. **If LifeGuard images have already been selected, [skip to Section II](#iicreateasmartprofile)**.   
 
@@ -41,29 +42,29 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-3. On the login screen, **enter Zebra OneCare login credentials** within the allotted time.<br>
+3. On the login screen, **enter Zebra.com login credentials**.<br>
 **Note: If a timeout occurs, click the "Try Again" button** to return to the login screen:
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-4. **Click "Allow"** to load the LifeGuard image database. 
+4. **Click "Allow"** to load the LifeGuard update database. 
 <img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-5. To continue, **click "confirm"** to accept automatically generated access key: 
+5. To continue, **click "confirm"**.<br> **Note**: Do **NOT** change the Activation code: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-6. **Wait a few moments** for LifeGuard images to load.<br>
+6. **Wait a few moments** for LifeGuard updates to load.<br>
 **`IMPORTANT:` Do NOT cancel this operation** or data corruption could result. 
 <img alt="image" style="height:200px" src="sn5_07.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-7. To select the desired LifeGuard image(s) to work with:<br>
+7. To select the desired LifeGuard updates(s) to work with:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a. **Check the required boxes to filter search results**.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;b. **Click the "Show Results" button** to display the filtered list.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;c. **Click the "plus" icon** to display image in "My LifeGuard Updates" list. <br>
@@ -75,9 +76,9 @@ _Click image to enlarge; ESC to exit_.
 
 #### Functions of LifeGuard Updates Page
 
-**<u>Revoke</u>** logs out of the current OneCare account. After pressing, repeat Steps 3, 4 and 5 to continue creating a Smart Profile. <br>
+**<u>Revoke button</u>** logs out of the current Zebra.com account. **To continue creating a Smart Profile after pressing**, repeat Steps 3, 4 and 5. <br>
 
-**<u>Search Build Number</u>** allows for loading of a specific build number.<br> 
+**<u>Search Build Number</u>** allows for loading of a specific build version.<br> 
 
 **<u>Clear Selection</u>** removes all selected filters.<br>
 
@@ -92,7 +93,7 @@ _Click image to enlarge; ESC to exit_.
 
 ### II. Create a Smart Profile
 
-When creating a Smart Profile, StageNow examines the selected LifeGuard image, calculates all required Setting Types (CSPs), and creates all Profile steps necessary to deploy the image to the target device(s). 
+When creating a Smart Profile, StageNow examines the selected LifeGuard update and calculates and creates all the Profile steps necessary to deploy the update to the target device(s). 
 
 > **See [Notes section](#notes) below for important information**. 
 
@@ -102,7 +103,7 @@ When creating a Smart Profile, StageNow examines the selected LifeGuard image, c
 <img alt="image" style="height:400px" src="sn50_smartprofile_02.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-2. **Click the cloud icon(s) of the desired image(s)** to begin download(s). **NOTE**: If the desired file is already downloaded (indicated by a "check mark" in the image files column), skip to the next step.<br>
+2. **Click the cloud icon(s) of the desired update(s)** to begin download(s). **NOTE**: If the desired file is already downloaded (indicated by a "check mark" in the image files column), skip to the next step.<br>
 **`IMPORTANT:` Exiting the download screen cancels all current downloads**.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
@@ -115,19 +116,19 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. If a network is required, **click "Yes" to create network over which to download images to devices**.<br> Enter network settings on subsequent screens (not shown). 
+5. If a network is required, **click "Yes" to create network over which to download update(s) to the device(s)**.<br> Enter network settings on subsequent screens (not shown). 
 <img alt="image" style="height:400px" src="sn5_09.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-6. **Click "Continue" button** to confirm Build batch file download steps for automatic Profile:
+6. **Click "Continue"** to create steps for ***downloading*** the build batch file:
 <img alt="image" style="height:400px" src="sn5_10.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-7. **Click "Continue" button** to confirm Build batch file execution steps for automatic Profile:
+7. **Click "Continue"** to create steps for ***executing*** the build batch file:
 <img alt="image" style="height:400px" src="sn5_11.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-8. On Review screen, **click "View" to see the steps created** (if desired). Then **click "Complete Profiles" button**:
+8. On Review screen, **click "View" to see the steps created above** (if desired).<br> **Click "Complete Profiles" to proceed**:
 <img alt="image" style="height:400px" src="sn5_12.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>

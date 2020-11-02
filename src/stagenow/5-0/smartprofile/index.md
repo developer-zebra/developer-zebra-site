@@ -9,18 +9,14 @@ productversion: '5.0'
 
 **StageNow 5.0 (and later) supports Smart Profiles**, which automatically determine the necessary Profile steps for updating the OS on one or more devices. StageNow also now integrates with the LifeGuard database of updates, which removes the need administrators to manually identify the OS and LifeGuard image(s) required for upgrade operation(s).
 
-> **Requires MX 8.1 or later on target device(s)**
-
-> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#createaprofile). 
-
------
-
 ### Requirements
 
-* **StageNow 5.0** (or later) installed
+* **StageNow 5.0** (or later) installed on Windows PC
 * **MX 8.1** (or later) on target device(s)
 * **Login credentials** for Zebra.com
 * **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** account 
+
+> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#createaprofile). 
 
 -----
 
@@ -116,7 +112,7 @@ _Click image to enlarge; ESC to exit_.<br>
  <img alt="image" style="height:350px" src="sn50_smartprofile_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-5. If a network is required, **click "Yes" to configure network settings over which to download update(s) to the device(s)**.<br> Enter network settings on subsequent screens (not shown).<br>To vary network settings by location, see [Dynamic Profiles](../dynamicstaging).   
+5. If a network is required, **click "Yes" to configure network settings over which to download update(s) to the device(s)**.<br> Enter network settings on subsequent screens (not shown).<br>**To vary network settings by location, see [Dynamic Staging](../dynamicstaging)**.   
 <img alt="image" style="height:400px" src="sn5_09.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
@@ -132,10 +128,10 @@ _Click image to enlarge; ESC to exit_.<br>
 <img alt="image" style="height:400px" src="sn5_12.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 <br>
-9. **Select the desired publishing medium and click the "Test" or Publish" button**:<br>
+9. **Select the desired publishing medium and click the "Test" or "Publish" button**:<br>
  * **<u>Barcode</u>** generates one or more barcodes that execute the Smart Profile on any device that scans it. 
  * **<u>NFC/SD/USB</u>** generates a `.bin` file to be consumed on devices by the StageNow app.<br>
- [More about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)<br>
+ <u>[More about publishing StageNow Profiles](../stageclient/#iiselectstagingmedium)</u><br>
 <img alt="image" style="height:400px" src="sn5_14.png"/>
 _Click image to enlarge; ESC to exit_.<br>
 

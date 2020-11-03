@@ -4,7 +4,7 @@ title: Set Time
 type: parm
 order: 14
 mx: "4.1"
-apilevel: "8"
+apilevel: "26"
 devicetype: A,B
 info: This parameter DOES NOT perform adjustments to UTC values based on time zone or Daylight Savings offsets. To enable such functionality, select "Universal" in the Coordinate System parameter and enter date and time using the UTCDate and UTCTime parameters.
 parm:

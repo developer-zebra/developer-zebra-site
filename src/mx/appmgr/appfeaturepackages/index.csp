@@ -4,7 +4,7 @@ title: App Feature Package Name(s)
 type: parm
 order: 25
 mx: "9.3"
-apilevel: "8.0"
+apilevel: "26"
 devicetype: A,B
 parm:
   presentif: The Action is NOT "Do Nothing" 

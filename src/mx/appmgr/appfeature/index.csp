@@ -4,7 +4,7 @@ title: App Feature
 type: parm
 order: 20
 mx: "9.3"
-apilevel: "8.0"
+apilevel: "26"
 devicetype: A,B
 parm:
   pivotal: No
@@ -17,7 +17,7 @@ parm:
       name: Background Data
       description: Allows the selected app to communicate using background data.
       mx: "9.3"
-      apilevel: "8.0"
+      apilevel: "26"
 ---
 
 Used to control access to certain (supported) features on a device. 

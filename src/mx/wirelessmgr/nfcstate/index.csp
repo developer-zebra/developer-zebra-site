@@ -4,7 +4,7 @@ title: NFC Radio On/Off
 type: parm
 order: 6
 mx: "4.3"
-apilevel: "10"
+apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
@@ -13,7 +13,7 @@ parm:
   list:
     - code: 0
       mx: "4.3"
-      apilevel: "10"
+      apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the NFC radio usage status; any previously selected setting will be retained.
@@ -21,13 +21,13 @@ parm:
       devicetype: A
       name: Turn On 
       mx: "4.3"
-      apilevel: "10"
+      apilevel: "29"
       description: Turns On the NFC radio, enabling usage and changes to its state.
     - code: 2
       devicetype: A
       name: Turn Off
       mx: "4.3"
-      apilevel: "10"
+      apilevel: "29"
       description: Turns Off the NFC radio, preventing all usage.
 ---
 

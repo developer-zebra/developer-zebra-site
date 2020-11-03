@@ -30,10 +30,10 @@ Hardware features tested:
 * New features configurable through the configuration file:
         * [perform tests individually](../configuration/#configurationfile) 
         * [capture logs individually](../configuration/#configurationfile) for each test performed
-* Fixed issue: For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
 * [Enhancements:](../usage/#userinterface)
         * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. When initiating the WLAN test, if the WiFi radio is not enabled the user is prompted to enable the radio.
         * To display the ESSID from a WLAN test on Android O or higher, _Location_ is required to be enabled in device settings due to Android restrictions. If _Location_ is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
+        * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
 
 
 ## Version History

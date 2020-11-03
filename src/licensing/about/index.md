@@ -194,7 +194,7 @@ The following table indicates which features are included with Zebra Professiona
 <!--   <td colspan="2">
   <td><a href="https://www.zebra.com/us/en/products/software/mobile-computers/all-touch-terminal-emulation.html">Buy à la carte license</a></td> -->
 
-## Zebra Professional Series
+## Zebra Professional Series Devices
 
 <table class="faceliftCenter" style="width:100%" border="1" padding="5px">
 <tbody>

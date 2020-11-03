@@ -10,10 +10,6 @@ csps:
     url: /mx/accessmgr
     csp: accessmgr
   - type: section
-    title: Analytics Manager
-    url: /mx/analyticsmgr
-    csp: analyticsmgr
-  - type: section
     title: App Manager
     url: /mx/appmgr
     csp: appmgr

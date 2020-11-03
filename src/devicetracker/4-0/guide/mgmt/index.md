@@ -22,11 +22,10 @@ To login as administrator or manager:
 5. Perform the required tasks.
 6. Logout when complete. Tap the options menu at the top right and select **Admin/Manager Logout.**
 
-<br>
-After logging in as administrator on the device, tap on the top right option menu and select one of the following:
+<p>After logging in as administrator on the device, tap on the top right option menu and select one of the following:</p>
 
-- **Admin/Manager Logout –** logs out the administrator or manager.
-- **Settings –** displays information and options:
+* **Admin/Manager Logout –** logs out the administrator or manager.
+* **Settings –** displays information and options:
         * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
         * **Device Friendly Name –** displays the friendly name assigned to the device. 
         * **Site Name –** displays the friendly name assigned to the site location.
@@ -35,7 +34,7 @@ After logging in as administrator on the device, tap on the top right option men
 ## Reset Password
 
 Passwords can be reset through the web portal or the client app.
-
+<br><br>
 Steps to reset the password in the client app:
 
 1. In the Admin/Manager Login screen, tap **Forgot your password.**
@@ -53,9 +52,9 @@ Administrators and managers have additional capability to view data:
 - **Site List –** administrator access only; lists the sites in the organization
 - **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
 - **Device List –** administrator and manager access; lists devices with capability to view device details<br>
-  <!-- -->
-  Administrator or manager login is required to access the data.
-  <br>
+<!-- -->
+Administrator or manager login is required to access the data.
+<br>
 
 ### Site List
 

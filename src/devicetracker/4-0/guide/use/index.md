@@ -58,8 +58,8 @@ After a device is found, it should be recommissioned to place the found device b
 
 ### Decommission a Device
 
-When a device is no longer in use or needs to be taken out of the active device pool, it can be set as “Decommissioned”. This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed.
-
+When a device is no longer in use or needs to be taken out of the active device pool, it can be set as **Decommissioned.** This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed. When a device is decommissioned, the license is automatically de-allocated from the device and placed into the license pool so it can be reallocated to another device. 
+<br><br>
 To decommission a device:
 
 1. Perform _one_ of the following procedures:<br>From the device list, tap and hold on the device card. Tap **Decommission** from the device action menu displayed. The **Device Details** screen appears.<br>
@@ -71,7 +71,8 @@ To decommission a device:
 
 ### Recommission a Device
 
-A device can be recommissioned after being found (in the **Found** state) or previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server.
+A device can be recommissioned after being found or previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server. When recommissioning a device, if a license is available it is automatically allocated to the device. If no license is available, the device remains in the decommissioned state, preventing the app from operating and the device from being found.
+<br><br>
 Steps to recommission a device:
 
 1. In the dashboard, scroll down and tap **Decommissioned** or **Found** to display the corresponding list of devices.
@@ -80,7 +81,7 @@ Steps to recommission a device:
    Tap the device card to display the **Device Details** screen. Tap on the top right menu and select **Recommission.**
 3. The **Status** is changed to **In Service,** as seen in the **Device Details** screen.
 4. Tap the **Note** section to enter or edit text indicating the reason why the device is recommissioned.
-   <br>
+<br><br>
 
 ## Add/Edit a Note
 
@@ -94,7 +95,7 @@ To add or edit a note:
 
 3. After entering text for the note, tap the back button.
 4. The note is saved and can be viewed in the **Device Details** screen.
-   <br>
+<br><b>
 
 ## Device Check-out
 
@@ -106,7 +107,7 @@ Perform a device check-out at the start of a work shift as follows:
 
 1. Remove the device from power to automatically display the check-out screen or launch the app on the device.
 2. The check-out screen appears, prompting to scan a barcode. When in the check-out screen, the user is prevented access to the device until check-out is performed.
-   <img style="height:350px" src="checkout.png" /><i>Device check-out</i>
+<img style="height:350px" src="checkout.png" /><i>Device check-out</i>
 
 3. Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-out to be successful.
 4. A message appears indicating the user is checked-out successfully. The app is placed in the background.
@@ -125,14 +126,12 @@ Choose one of the following options to Check-In a device:<br><br>
 2. Tap on the options menu from the top right and select Check-In Device.
 3. The user is checked-in. The check-out screen appears prompting to scan a barcode.
 <br><br>
-<!-- -->
 
 **Option 2:**
 
 1. Connect the device to power.
 2. The user is checked-in. The check-out screen appears prompting to scan a barcode.
 <br><br>
-<!-- -->
 
 **Option 3:**
 

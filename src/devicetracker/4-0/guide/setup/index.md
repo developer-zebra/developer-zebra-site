@@ -304,9 +304,10 @@ To add/modify device data, import the device .CSV file:
 7. The device data import is complete. Results are displayed in the **Status** section at the bottom of the screen.  
 <p>New devices imported are initially in the <b>Never Connected</b> state until the Device Tracker app is installed on the devices, configured and communicating with the server.</p>
 
-### Delete Device Data
+### Delete Device
 
-To delete device data, import the device .CSV file containing the specific data to delete:
+Deleting a device removes the device from Device Tracker and places it under **Unassigned Devces** in the device dashboard. When a device is deleted, the license is deallocated and returned to the license pool.<br><br>
+To delete a device, import the device .CSV file containing the specific data to delete:
 
 1. Copy the .CSV file from the PC to the device root `\Internal shared storage` folder.
 2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
@@ -373,6 +374,21 @@ Steps to reset the password in the web portal:
 5. Enter in the new password.
 6. The password is reset with the new password.
 <br><br>
+
+### View License Information
+
+The Device Tracker web portal provides information on licensing. Licensing is required for Device Tracker operation on the device. 
+<br>
+To view license information:
+
+1. From the web portal, tap **License Summary** in the left menu.
+2. The the following information is provided:
+        * Total licenses
+            * Total licenses available
+            * Total licenses consumed
+        * List of licenses purchased with corresponding quantity and expiration date
+        * **Refresh data** button to refresh license data on-demand. The license information is updated once each day.
+
 
 ## Device Check-out
 

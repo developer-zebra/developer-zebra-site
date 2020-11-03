@@ -60,7 +60,7 @@ Comparison of **Device Tracker On-Prem** and **Device Tracker** cloud-based:
   </tr>
   <tr>
     <td>Android platform support</td>
-    <td>Select devices only up to Android 10 (soon-to-be supported)</td>
+    <td>Select devices only up to Android Pie</td>
     <td>Select Android Oreo and Android 10 devices upon release</td>
   </tr>
   <tr>

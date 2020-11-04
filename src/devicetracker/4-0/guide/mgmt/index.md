@@ -29,13 +29,13 @@ To login as administrator or manager:
         * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
         * **Device Friendly Name –** displays the friendly name assigned to the device. 
         * **Site Name –** displays the friendly name assigned to the site location.
-  <br><br>
+<br>
 
 ## Reset Password
 
 Passwords can be reset through the web portal or the client app.
-<br><br>
-Steps to reset the password in the client app:
+
+<p>Steps to reset the password in the client app:</p>
 
 1. In the Admin/Manager Login screen, tap **Forgot your password.**
 2. When prompted, enter your email address then click **Reset Password.**
@@ -49,9 +49,9 @@ Steps to reset the password in the client app:
 
 Administrators and managers have additional capability to view data:
 
-- **Site List –** administrator access only; lists the sites in the organization
-- **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
-- **Device List –** administrator and manager access; lists devices with capability to view device details<br>
+* **Site List –** administrator access only; lists the sites in the organization
+* **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
+* **Device List –** administrator and manager access; lists devices with capability to view device details<br>
 <!-- -->
 Administrator or manager login is required to access the data.
 <br>
@@ -60,9 +60,9 @@ Administrator or manager login is required to access the data.
 
 After administrator login, a site listing is visible for site selection:
 
-- **All Devices –** when selected, displays the dashboard of all devices (whether assigned or not assigned to a site) across all sites
-- **Unassigned Devices –** when selected, displays the dashboard of devices that are not assigned to a site.
-- **Sites -** lists all the sites across the entire organization. Select an individual site to display the dashboard for the particular site.
+* **All Devices –** when selected, displays the dashboard of all devices (whether assigned or not assigned to a site) across all sites
+* **Unassigned Devices –** when selected, displays the dashboard of devices that are not assigned to a site.
+* **Sites -** lists all the sites across the entire organization. Select an individual site to display the dashboard for the particular site.
 <br>
 <!-- -->
 
@@ -74,31 +74,31 @@ After administrator login, a site listing is visible for site selection:
 ### Dashboard
 
 The dashboard is accessible to administrators and managers, displaying device categories based on device status, along with statistics for each category. For administrators, the dashboard can be displayed for any site selected in the site list, including All Devices (across all sites) or Unassigned Devices. For managers, the dashboard displays information based on the site their device is assigned to. If the manager device is not assigned to a particular site, the dashboard displays information based on all unassigned devices.
-<br><br>
-Dashboard categories:
 
-- **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site. <br>
+<p>Dashboard categories:</p>
+
+* **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site. <br>
   <!-- -->
 
 Device status:
 
-- **To Be Found –** filters devices designated To Be Found where action has not been taken to initiate the search for these devices.
-- **Being Found –** filters devices that are actively being searched. Triggered when a user initiates a device search.
-- **Found –** filters devices that were successfully found after a search. Triggered when a user indicates the device is found.
-- **Cannot Find –** filters devices that could not be found after a search was conducted.
-- **Decommissioned –** filters devices that are designated as decommissioned. These devices are not in the active device pool, the collection of devices with active server communication.
+* **To Be Found –** filters devices designated To Be Found where action has not been taken to initiate the search for these devices.
+* **Being Found –** filters devices that are actively being searched. Triggered when a user initiates a device search.
+* **Found –** filters devices that were successfully found after a search. Triggered when a user indicates the device is found.
+* **Cannot Find –** filters devices that could not be found after a search was conducted.
+* **Decommissioned –** filters devices that are designated as decommissioned. These devices are not in the active device pool, the collection of devices with active server communication.
 <br>
 <p>Device battery states:</p>
 
-- **Low Battery –** filters devices that have reached the low power threshold of 15% remaining battery or lower, requiring attention to be charged prior to battery depletion.
-- **Charging –** filters devices that are powered on and in the charging state.
-- **Discharging –** filters devices that are powered on and discharging.
+* **Low Battery –** filters devices that have reached the low power threshold of 15% remaining battery or lower, requiring attention to be charged prior to battery depletion.
+* **Charging –** filters devices that are powered on and in the charging state.
+* **Discharging –** filters devices that are powered on and discharging.
 <br>
 
-Device connection states:
+<p>Device connection states:</p>
 
-- **Never Connected –** filters devices that are registered but never connected to the server.
-- **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
+* **Never Connected –** filters devices that are registered but never connected to the server.
+* **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
 <br>
 <!-- -->
 
@@ -116,9 +116,9 @@ The device list displays all devices corresponding to the selected category in t
 
 Each individual device is displayed as a “device card” that shows information pertaining to that particular device:
 
-- Device friendly name (if not available, the device model and serial number is displayed)
-- Device model and serial number
-- AP friendly name (if available) or BSSID - **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
+* Device friendly name (if not available, the device model and serial number is displayed)
+* Device model and serial number
+* AP friendly name (if available) or BSSID - **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
 * Device state:
         * **In Service –** device is part of the active device pool and not in any of the other device states
         * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
@@ -136,11 +136,11 @@ Each individual device is displayed as a “device card” that shows informatio
 <!-- -->
 Tap and hold on any device card to display the available device actions:
 
-- **View Details –** displays the Device Details screen, see below.
-- **Add a Note –** enter text to capture comments specific to the device that could be helpful in tracking. For example, when a device is decommissioned a note can be added as follows: “Battery does not charge, needs to be replaced”.
-- **Start Finding –** begins the device search process. Refer to [Find a Device](../use/#findadevice). This is visible only if the device is marked "To Be Found".
-- **Recommission –** places a device from the decommissioned state back to the **In Service** state as part of the active device pool.
-- **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
+* **View Details –** displays the Device Details screen, see below.
+* **Add a Note –** enter text to capture comments specific to the device that could be helpful in tracking. For example, when a device is decommissioned a note can be added as follows: “Battery does not charge, needs to be replaced”.
+* **Start Finding –** begins the device search process. Refer to [Find a Device](../use/#findadevice). This is visible only if the device is marked "To Be Found".
+* **Recommission –** places a device from the decommissioned state back to the **In Service** state as part of the active device pool.
+* **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
 <!-- -->
 
 <img style="height:350px" src="device-action-menu.png" />

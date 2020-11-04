@@ -84,6 +84,9 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## New in v6.0
 
+
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
 ### `SEPTEMBER 2020 UPDATE`
 
 #### EMDK for Xamarin 6.0
@@ -189,9 +192,12 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 **<u>Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)</u>** 
 
+<!-- 1/4/20- removed per eng. 
+
 ### Deprecations
 **<u>Support is deprecated for Unique Device Identification (UDI) barcodes</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. **UDI decoding will be removed from the Barcode API** when EMDK begins targeting Android 10 Q devices.
-
+ -->
+ 
 -----
 
 ## Version History

@@ -121,10 +121,12 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 * New `ScannerConfig.MultiBarcodeParams` parameter supports:  
  * `reportDecodedBarcodes` with the ability to enable or disable reporting decoded barcode data in a single scan session regardless of the configured barcode count.
 
+<!-- 11/4/20- removed per eng.
+
 #### Deprecations
 
 **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
-
+ -->
 -----
 
 ### New in v7.5

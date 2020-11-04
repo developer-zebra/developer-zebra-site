@@ -16,7 +16,7 @@ productversion: '7.0'
 
 ## `IMPORTANT`
 
-**EMDK for Android versions 6.0 and 7.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
+**EMDK for Xamarin versions 6.0 and 7.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
 
 -----
 
@@ -24,7 +24,7 @@ productversion: '7.0'
 
 EMDK for Xamarin is an IDE extension that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices using C# skills and tools. EMDK for Xamarin includes class libraries, sample applications and source code, and all associated documentation for building applications that take full advantage of the power of Zebra devices.
 
-EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors, and reduce overall development time and effort.
+EMDK-X inserts the Zebra-exclusive Profile Manager technology within the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors, and reduce overall development time and effort.
 
 -----
 
@@ -82,8 +82,6 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 -----
 
 ## New in v7.0
-
-> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
 
 ### `SEPTEMBER 2020 UPDATE`
 
@@ -198,10 +196,11 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 **<u>Now supports the [Zebra RS5100 Ring Scanner](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/rs5100.html)</u>** 
 
+<!-- 11/4/20- removed per eng.
 #### Deprecations
 **<u>Support is deprecated for Unique Device Identification (UDI) barcodes</u>**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. **UDI decoding will be removed from the Barcode API** when EMDK begins targeting Android 10 Q devices.
 
-
+ -->
 ### Added in v5.0
 
 #### Device Support

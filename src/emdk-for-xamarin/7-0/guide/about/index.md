@@ -83,10 +83,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## New in v7.0
 
-
-### `UDI SUPPORT`
-
-> **Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**. <u>[LifeGuard patch BSP 10.12.13 (Update 17 or later)](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> required. 
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br><u>Requires [BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
 
 ### `SEPTEMBER 2020 UPDATE`
 

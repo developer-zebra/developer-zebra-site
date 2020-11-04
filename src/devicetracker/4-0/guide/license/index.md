@@ -58,7 +58,7 @@ Assigning licenses is seamless and integrated into the device registration proce
 
 ## License Transfer
 
-Device Tracker supports the transfer of licenses from one device to another by returning the active license to the license pool and reallocating it to a new device. The active license can be released from the device by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevicedata). After the device is decommissioned or deleted, a message appears indicating the device it not licensed. To license the new device, after it communicates with the Device Tracker server it is allocated with the newly released license. The new license allocation is reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. 
+Device Tracker supports the transfer of licenses from one device to another by returning the active license to the license pool and reallocating it to a new device. The active license can be released from the device by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice). After the device is decommissioned or deleted, a message appears indicating the device it not licensed. To license the new device, after it communicates with the Device Tracker server it is allocated with the newly released license. The new license allocation is reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. 
 
 ## License Renewal
 
@@ -69,13 +69,13 @@ Device Tracker supports the transfer of licenses from one device to another by r
 
 ## License Removal
 
-Device Tracker licenses can be removed by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevicedata) from Device Tracker. When a device is decommissioned or deleted, the license is automatically removed from the device, as reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. Device Tracker is no longer operational on the device until it is relicensed.  
+Device Tracker licenses can be removed by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice) from Device Tracker. When a device is decommissioned or deleted, the license is automatically removed from the device, as reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. Device Tracker is no longer operational on the device until it is relicensed.  
 
 ## Important Notes
 
 Important information pertaining to Device Tracker licensing:
 * The <a href="../setup/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
-* License allocation is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected). **Never Connected** devices are not licensed.
+* License allocation is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. **Never Connected** devices are not licensed.
 
 
 <!-- -->

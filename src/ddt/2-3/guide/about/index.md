@@ -30,7 +30,7 @@ Hardware features tested:
 * New features configurable through the configuration file:
         * [perform tests individually](../configuration/#configurationfile) 
         * [capture logs individually](../configuration/#configurationfile) for each test performed
-* Fixed an issue where DDT does not revert the device back to its original device orientation (landscape or portrait mode) after application exit. 
+* Fixed an issue where DDT does not revert the device back to its original device orientation, landscape or portrait mode, after application exit. 
 * [Enhancements:](../usage/#userinterface)
         * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. If the WiFi radio is not enabled when initiating the WLAN test, the user is prompted to enable the radio.
         * To display the ESSID from a WLAN test on Android O or higher, _Location_ service is required to be enabled on the device due to Android restrictions. If _Location_ service is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
@@ -244,8 +244,7 @@ The following table lists the supported GMS devices, except for MC33 which only 
 
 1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Device Diagnostic Tool use and functionality only applies to the active primary user.
 2. **Limitation due to low memory on the device -** Once the available device memory is less than 3 MB, a message appears indicating there is no space on the device and logging will no longer take place. Additionally the Audio Test cannot be executed.
-3. **Device orientation -** Device Diagnostic Tool is only supported in the default orientation of the device. It does not support switching between both portrait and landscape modes.
-4. **Split screen support -** On Android N and above, Device Diagnostic Tool does not support split screen mode.
+3. **Split screen support -** On Android N and above, Device Diagnostic Tool does not support split screen mode.
 
 <br>
 

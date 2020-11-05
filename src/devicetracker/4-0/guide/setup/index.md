@@ -82,9 +82,9 @@ Create a StageNow installation profile to perform the following:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. **Start the app.**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. **Add a delay** (minimum of 5 seconds) to allow time for the app to be ready to accept the configurations before implementing the StageNow configuration profile. <br><br>
 
-For part C, the client app certificate must be extracted. Perform the steps in section **Extract Client App Certificate** below before proceeding.<br><br>
+For part C, the client app certificate must be extracted. Perform the steps in section **Extract Client App Certificate** below before proceeding.
 
-**To create a StageNow installation profile:**
+<p>To create a StageNow installation profile:</p>
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
 2. In the StageNow home screen, click **Create New Profile** from the left menu.
@@ -151,8 +151,9 @@ For part C, the client app certificate must be extracted. Perform the steps in s
 
 #### Extract Client App Certificate
 
-This section is a pre-requisite to create the StageNow installation profile. Prior to automatically granting the screen overlay permission, the Device Tracker certificate must be extracted. Automatically granting the screen overlay permission avoids the screen overlay detected warning from appearing to the user.<br><br>
-Steps to extract the client app certificate:
+This section is a pre-requisite to create the StageNow installation profile. Prior to automatically granting the screen overlay permission, the Device Tracker certificate must be extracted. Automatically granting the screen overlay permission avoids the screen overlay detected warning from appearing to the user.
+
+<p>Steps to extract the client app certificate:</p>
 
 1.  Download SigTools.jar from [Zebra’s App Signature Tools](https://techdocs.zebra.com/emdk-for-android/latest/samples/sigtools/).
 2.  Follow the instructions provided from the link to extract the certificate from Device Tracker’s APK file using command:<br>
@@ -166,8 +167,9 @@ The certificate file is needed to create the StageNow Installation Profile.
 
 ### Create StageNow Configuration Profile
 
-Create a StageNow configuration profile to apply server settings in the app client for it to communicate with the server. The server configuration XML file is required, supplied by Zebra.<br><br>
-Steps to create a StageNow configuration profile:
+Create a StageNow configuration profile to apply server settings in the app client for it to communicate with the server. The server configuration XML file is required, supplied by Zebra.
+
+<p>Steps to create a StageNow configuration profile:</p>
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
 2. In the StageNow home screen, click **Create New Profile** from the left menu.
@@ -280,8 +282,8 @@ Sample Device .CSV file content:
 ### Import Site and AP Data
 
 When adding or modifying site and AP data, it is particularly important for the AP friendly name to be easily understood by users to aid in finding the location where the device is connected.  
-<br>
-To import site/AP data from the AP .CSV file:
+
+<p>To import site/AP data from the AP .CSV file:</p>
 
 1. Copy the .CSV file from the PC to the device root `\Internal shared storage` folder.
 2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
@@ -306,8 +308,9 @@ To add/modify device data, import the device .CSV file:
 
 ### Delete Device
 
-Deleting a device removes the device from Device Tracker and places it under **Unassigned Devces** in the device dashboard. When a device is deleted, the license is deallocated and returned to the license pool.<br><br>
-To delete a device, import the device .CSV file containing the specific data to delete:
+Deleting a device removes the device from Device Tracker and places it under **Unassigned Devces** in the device dashboard. When a device is deleted, the license is deallocated and returned to the license pool.
+
+<p>To delete a device, import the device .CSV file containing the specific data to delete:</p>
 
 1. Copy the .CSV file from the PC to the device root `\Internal shared storage` folder.
 2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
@@ -353,8 +356,8 @@ To delete a user:
 ### Search for User
 
 User names can be searched by email address. The entire email address must be entered. Action can be taken on the user after the search is performed, e.g. delete user.
-<br>
-To search for a user:
+
+<p>To search for a user:</p>
 
 1. From the web portal, tap **Manager Users** in the left menu.
 2. Enter the email address to search for in the search field located below the **Add User** button from the top right of the page. Press the enter key.
@@ -364,8 +367,8 @@ To search for a user:
 ### Reset Password
 
 The password can be reset through the web portal or the client app if the administrator or manager forgot the password.
-<br>
-Steps to reset the password in the web portal:
+
+<p>Steps to reset the password in the web portal:</p>
 
 1. From the web portal login page, click **Forgot your password.**
 2. Enter your email address then click **Reset Password.**
@@ -373,22 +376,21 @@ Steps to reset the password in the web portal:
 4. Open the email and click on the link.
 5. Enter in the new password.
 6. The password is reset with the new password.
-<br><br>
+<br>
 
 ### View License Information
 
-The Device Tracker web portal provides information on licensing. Licensing is required for Device Tracker operation on the device. 
-<br>
-To view license information:
+[Licenses](../license) are required for Device Tracker operation on devices. Licenses are combined into a single license pool regardless of expiration date. When a device registers to the Device Tracker server, if a license available, it is allocated to the device from the license pool. 
+<p>To view license information:</p>
 
 1. From the web portal, tap **License Summary** in the left menu.
-2. The the following information is provided:
-        * Total licenses
-            * Total licenses available
-            * Total licenses consumed
-        * List of licenses purchased with corresponding quantity and expiration date
+2. The following information is provided based on unexpired licenses:
+        * **Total licenses -** quantity of licenses that have been purchased
+            * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
+            * **Total licenses consumed -** quantity of licenses allocated to devices
+        * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
         * **Refresh data** button to refresh license data on-demand. The license information is updated once each day.
-
+        * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
 
 ## Device Check-out
 

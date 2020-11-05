@@ -74,11 +74,11 @@ features:
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: right
-   title: "MX 10.2: Coming Soon in Mobility Extensions"
+   title: "MX 10.2 Enhances 12 Mobility Extensions"
    subtitle: New Beacon Manager CSP plus enhancements to 11 others 
    description: Beacon Manager allows administrators control the homing signal sent by a Zebra device when it's switched off. Plus enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mdna/#newinmx102
-   button_text: Coming Soon
+   button_text: Learn More
    video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: youtube
  - image-location: left
@@ -119,6 +119,22 @@ features:
    description: EAC 1.0 is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards, and can voice-enable fields for spoken input and/or output. 
    url: /enterprise-browser/latest/guide/eac/
    video: 7aUm-IO9utM
+   video_type: youtube
+   button_text: Learn More 
+ - image-location: right
+   title: Feature-based Licensing Puts Admins in Control 
+   subtitle: License Manager in MX 10.2 allows per-feature implementation 
+   description: When licensing apps on Zebra devices, it's no longer an all or nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.    
+   url: /mx/licensemgr/
+   video: YLepzmANq2s
+   video_type: youtube
+   button_text: Learn More 
+ - image-location: left
+   title: Alert Button Can Save Time, Maybe Lives
+   subtitle: MX 10.2 lets administrators program a key to do just about anything 
+   description: Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
+   url: /stagenow/latest/stagingprofiles/
+   video: YpDATt5SU-o
    video_type: youtube
    button_text: Learn More 
 ---

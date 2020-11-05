@@ -107,7 +107,7 @@ features:
    button_text: Learn More 
  - image-location: right
    title: Select Which Apps to Update Without Blocking All 
-   subtitle: App Manager coming in MX 10.3 allows selective update prevention 
+   subtitle: App Manager in MX 10.3 puts admins in control of device-app updates 
    description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility let administrators decide which apps on a device can update and which should stay the same. 
    url: /mx/appmgr/
    video: t7J8e2rVcMM
@@ -115,8 +115,8 @@ features:
    button_text: Learn More 
  - image-location: left
    title: Zebra Utility Simplifies DOM Injection 
-   subtitle: GUI-based Tool for Enterprise Browser 2.6+ 
-   description: Enterprise Application Configurator (EAC) is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code.  
+   subtitle: GUI-based Enterprise Application Configurator EB 2.6+ 
+   description: EAC 1.0 is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code.  
    url: /enterprise-browser/latest/guide/eac/
    video: 7aUm-IO9utM
    video_type: youtube

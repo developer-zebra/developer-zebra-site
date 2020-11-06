@@ -237,7 +237,7 @@ The following table lists the supported GMS devices, except for MC33 which only 
 
 **Installation Notes:**
 
-* **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
+* **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 or higher is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
 
 ## Important Usage Notes

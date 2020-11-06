@@ -45,11 +45,12 @@ Supported devices with GMS (Google Mobile Services):
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
     <th style="text-align:center">Supported BSP</th>
   </tr>
+  <!--
   <tr>
     <td>EC50</td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
-  </tr>  
+  </tr>  -->
   <tr>
     <td>TC51</td>
     <td style="text-align:center">&#x25cf;</td>

@@ -108,7 +108,7 @@ Device status:
 <!-- -->
 
 **Note:** In split-screen mode, when the dashboard is displayed in Device Tracker and the app is not in focus, the app displays a blank screen. When Device Tracker is back in focus, the dashboard is displayed as expected.
-<br><br>
+<br>
 
 ### Device List
 
@@ -131,7 +131,7 @@ Each individual device is displayed as a “device card” that shows informatio
 <!-- -->
 
 <img style="height:350px" src="devicelist.png" />
-<i>Device list from "All Devices"</i>
+<i>Device list from <b>All Devices</b></i>
 <br>
 <!-- -->
 Tap and hold on any device card to display the available device actions:
@@ -211,8 +211,8 @@ To perform a site search:
    <img style="height:350px" src="site-search-field.png"/><i>Site search field</i>
 
 3. The search results are listed in the **Sites** section. The results include site names that contain the text entered. The search is not case sensitive.
-   <br>
-   <br>
+<br>
+
 
 ### Search by Device
 

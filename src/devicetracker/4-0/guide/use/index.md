@@ -18,7 +18,7 @@ Optionally, the Check-out feature can be enabled to associate users to devices f
 
 ## Mark a Device "To Be Found"
 
-A device must be marked "To Be Found" before a device search can take place:
+A device must be marked **To Be Found** before a device search can take place:
 
 1. From the device list, tap and hold the device card of the target device to find. Select **Set To Find.**
    <img style="height:350px" src="device-action-menu.png" />
@@ -26,21 +26,21 @@ A device must be marked "To Be Found" before a device search can take place:
 
 2. The status is changed to **To Be Found** and the device is now listed in the **To Be Found** category in the dashboard.
 3. To proceed to find the device, continue to the next section [Find a Device](./#findadevice).
-   <br>
+<br>
 
 ## Find a Device
 
 The target device must be set **To Be Found** to proceed with the device search. A search is initiated from the **To Be Found** device list. For an associate, the **To Be Found** device list is displayed after starting the client app. For an administrator or manager, the **To Be Found** device list is accessible via the dashboard.
 
 When the user is ready to take action to perform the device search, the first step is to use the seeking device to find the access point (AP) that the target device is connected to. This provides the general location of the target device. The user walks toward the AP, then uses the Bluetooth proximity indicator on the seeking device to identify how close or far the target device is located in relation to the seeking device. To further pinpoint the device location, a sound can be played by tapping the **Play Sound** button on the seeking device to locate the target device by audio sound.
-<br>
-To start the search process:
+
+<p>To start the search process:</p>
 
 1. Perform _one_ of the following in the **To Be Found** device list:<br>Tap and hold the device card for the target device. Select **Start Finding** from the device action menu.  
    <img style="height:350px" src="find-device.png" /><i>Device action menu</i> <br>
    _Or,_<br>
    Tap on the device card for the target device to open the <b>Device Details</b> screen. Scroll down and tap <b>Start Finding.</b>
-   <img style="height:350px" src="start-finding.png" /><i>Tap "Start Finding" in Device Details</i>
+   <img style="height:350px" src="start-finding.png" /><i>Tap <b>Start Finding</b> in Device Details</i>
 
 2. The device tracking screen appears. The device state is changed to **Being Found.**
 3. Check the **Connected AP** on the tracking screen on the target device. Walk towards the known location of the AP.
@@ -49,8 +49,8 @@ To start the search process:
 
 5. Tap Play Sound on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6. If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.** The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
-<br>
-<p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.
+
+<p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.</p>
 
 ## Decommission/Recommission Device
 
@@ -58,9 +58,9 @@ After a device is found, it should be recommissioned to place the found device b
 
 ### Decommission a Device
 
-When a device is no longer in use or needs to be taken out of the active device pool, it can be set as **Decommissioned.** This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed. When a device is decommissioned, the license is automatically de-allocated from the device and placed into the license pool so it can be reallocated to another device. 
-<br><br>
-To decommission a device:
+When a device is no longer in use or needs to be taken out of the active device pool, it can be set as **Decommissioned.** This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed. When a device is decommissioned, the license is automatically deallocated from the device and returned to the license pool so it can be reallocated to another device. 
+
+<p>To decommission a device:</p>
 
 1. Perform _one_ of the following procedures:<br>From the device list, tap and hold on the device card. Tap **Decommission** from the device action menu displayed. The **Device Details** screen appears.<br>
    _Or,_ <br>
@@ -71,9 +71,9 @@ To decommission a device:
 
 ### Recommission a Device
 
-A device can be recommissioned after being found or previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server. When recommissioning a device, if a license is available it is automatically allocated to the device. If no license is available, the device remains in the decommissioned state, preventing the app from operating and the device from being found.
-<br><br>
-Steps to recommission a device:
+A device can be recommissioned after being found or previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server. When recommissioning a device, if a license is available it is automatically allocated to the device. If no license is available, the device remains in the decommissioned state and a <a href="./#addeditanote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.
+
+<p>Steps to recommission a device:</p>
 
 1. In the dashboard, scroll down and tap **Decommissioned** or **Found** to display the corresponding list of devices.
 2. Perform _one_ of the following procedures:<br>Tap and hold the device card and select **Recommission.**<br>
@@ -85,9 +85,9 @@ Steps to recommission a device:
 
 ## Add/Edit a Note
 
-Administrators and managers can add a note to capture comments specific to the device to help in device tracking or identifying device problems. For example, a comment could be "device screen damaged".<br><br>
+Administrators and managers can add a note to capture comments specific to the device to help in device tracking or identifying device problems. For example, a comment could be "device screen damaged".
 
-To add or edit a note:
+<p>To add or edit a note:</p>
 
 1. From the device list of any category accessed from the dashboard, tap and hold the device card and tap **Add a Note.** If a note already exists, the option is provided to **Edit a Note.**
 2. The **Note** section appears in the **Device Details** screen prompting to enter in text.
@@ -113,8 +113,8 @@ Perform a device check-out at the start of a work shift as follows:
 4. A message appears indicating the user is checked-out successfully. The app is placed in the background.
 5. The user is now associated with the device. <br>
 <!-- -->
- **Note:** If Check-out is enabled, after a device is rebooted the Check-out screen may take up to one minute to be displayed.
-   <br><br>
+**Note:** If Check-out is enabled, after a device is rebooted the Check-out screen may take up to one minute to be displayed.
+<br><br>
 
 ### Check-In
 

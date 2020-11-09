@@ -87,7 +87,7 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
-  <td colspan="2"><b>FREE - </b><u><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free - Android setup instructions</a></u><br><b>FREE - </b><u><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Xamarin setup instructions</a></u></td>
+  <td colspan="2"><b>FREE - </b><u><a href="https://techdocs.zebra.com/emdk-for-android/latest/guide/setup/">See Android setup instructions</a></u><br><b>FREE - </b><u><a href="https://techdocs.zebra.com/emdk-for-xamarin/latest/guide/nuget/">See Xamarin setup instructions</a></u></td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td> -->
   <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode</td>
   </tr>
@@ -271,6 +271,7 @@ Add scanning and data acquisition to any application on a device ***without codi
 **Extends Android Studio for Mac OS and Windows** with class libraries, sample apps and source code, enabling developers to easily build apps that take full advantage of the power of Zebra devices. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-A](/emdk-for-android)
+<!-- product page: https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html -->
 
 -----
 
@@ -279,6 +280,7 @@ Add scanning and data acquisition to any application on a device ***without codi
 **An IDE extension** that adds class libraries, sample applications and source code for creating apps for Zebra Android devices using C#. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-X](/emdk-for-xamarin)
+<!-- product page: https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html -->
 
 -----
 

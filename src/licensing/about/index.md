@@ -87,7 +87,7 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
-  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free - see Android setup</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free - see Xamarin setup</a></td>
+  <td colspan="2"><b>FREE - </b><u><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free - Android setup instructions</a></u><br><b>FREE - </b><u><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Xamarin setup instructions</a></u></td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td> -->
   <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode</td>
   </tr>

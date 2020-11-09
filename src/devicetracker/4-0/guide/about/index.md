@@ -37,7 +37,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 ## Supported Devices
 
-Supported devices with GMS (Google Mobile Services):
+Supported devices require GMS (Google Mobile Services):
 
 <table class="facelift" align="center" style="width:50%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">

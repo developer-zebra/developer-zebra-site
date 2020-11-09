@@ -47,25 +47,40 @@ This section discusses installation and configuration of Device Tracker. The cli
 
 Requirements for Device Tracker client:
 
-* **Operating System:**
-        * Android Oreo with GMS (non-restricted)
-* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), then user intervention is required to turn on Bluetooth.
+* **Operating System:** Android Oreo with GMS
+* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), user intervention is required to turn on Bluetooth.
 * **WiFi** must be enabled and connected to the network to communicate with the server.
-* **Location Services** must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
-<br>
+* **Location** services must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
+
+<p>See <a href="../about/#supporteddevices">Supported Devices.</a></p>
 
 ### Network Requirements
 
-Network requirements for communication between the device and cloud server:
+Network requirements for communication between the device and Device Tracker cloud server:
 
-* Refer to the document supplied by Zebra to ensure the required URLs are accessible:
-        * URL for the web portal for administrator access
-        * URL for the mobile devices to access the cloud server:<br><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://[ProjectID].firebaseio.com`
-  <br><br>
-  where [ProjectID] is located in the server config.xml supplied.
+* Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
 
-* The client application sends device status and events to the server over HTTPS. Network port 443 or the appopriate URL must be permitted to reach the Google Cloud Firebase platform.
+* The following URLs must be allowed through the firewall or proxy:
+        * *.google.com
+        * *.googleapis.com
+        * http://connectivitycheck.gstatic.com (required by Google for Android to connect to a wireless network)
+        * https://[ProjectID].firebaseio.com <br>where <i>[ProjectID]</i> is located in the server config.xml supplied by Zebra.
+        * Device Tracker web portal URL supplied by Zebra
+<br>
+
+<p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
+
+* https://www.googleapis.com
+* https://firestore.googleapis.com
+* https://cloudfunctions.googleapis.com
+* https://firebaseinstallations.googleapis.com
+* https://android.googleapis.com
+* https://play.googleapis.com
+* https://update.googleapis.com
+* https://growth-pa.googleapis.com
+* https://www.google.com
+* https://android.clients.google.com
+
 <br><br>
 
 ## Create StageNow Profiles

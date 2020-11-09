@@ -124,7 +124,7 @@ features:
  - image-location: right
    title: Feature-based Licensing Puts Admins in Control 
    subtitle: License Manager in MX 10.2 allows per-feature implementation 
-   description: When licensing apps on Zebra devices, it's no longer an all or nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.    
+   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.    
    url: /mx/licensemgr/
    video: YLepzmANq2s
    video_type: youtube

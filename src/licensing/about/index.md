@@ -67,8 +67,8 @@ The following table indicates which features are included with Zebra Professiona
   <tr>
   <td><a href="#softwarecomponents">Device Central</a></td>
   <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td></td>
-  <td>Included on device †</td>
-  <td>Supported on devices with Android 10+<br><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">See supported devices</a></td>
   </tr>
 
   <tr>
@@ -87,9 +87,9 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents2">EMDK for Android</a><br><a href="#softwarecomponents2">EMDK for Xamarin</a></td>
-  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td>
+  <td colspan="2"><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free - see Android setup</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free - see Xamarin setup</a></td>
   <!-- <td><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html">Free download for Android</a><br><a href="https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html">Free download for Xamarin </a></td> -->
-  <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode<br>• Image/doc capture</td>
+  <td><a href="../process">MDNA Enterprise license</a> required for:<br>• Multi-barcode</td>
   </tr>
 
   <tr>

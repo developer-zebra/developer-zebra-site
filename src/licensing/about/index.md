@@ -271,8 +271,10 @@ Add scanning and data acquisition to any application on a device ***without codi
 **Extends Android Studio for Mac OS and Windows** with class libraries, sample apps and source code, enabling developers to easily build apps that take full advantage of the power of Zebra devices. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-A](/emdk-for-android)
-[Go to product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html)
 
+<!-- 
+[Go to product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html)
+ -->
 -----
 
 ### EMDK for Xamarin
@@ -280,8 +282,10 @@ Add scanning and data acquisition to any application on a device ***without codi
 **An IDE extension** that adds class libraries, sample applications and source code for creating apps for Zebra Android devices using C#. **Also includes the Profile Manager** GUI tool for generating XML code for configuring features and settings on Zebra devices. 
 
 [Learn more about EMDK-X](/emdk-for-xamarin)
-[Go to product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html)
 
+<!-- 
+[Go to product page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-xamarin.html)
+ -->
 -----
 
 ### Enterprise Browser

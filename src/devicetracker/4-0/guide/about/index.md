@@ -68,6 +68,48 @@ Supported devices require GMS (Google Mobile Services):
   </tr>
 </table>
 <br><br>
+
+## Requirements
+
+### Device Requirements
+
+Requirements for Device Tracker client:
+
+* **Operating System:** Android Oreo with GMS
+* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), user intervention is required to turn on Bluetooth.
+* **WiFi** must be enabled and connected to the network to communicate with the server.
+* **Location** services must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
+
+<p>See <a href="./#supporteddevices">Supported Devices.</a></p>
+
+### Network Requirements
+
+Network requirements for communication between the device client app and the cloud server:
+
+* Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
+
+* The following URLs must be allowed through the firewall or proxy:
+        * URLs accessed by device:
+            * *.google.com
+            * *.googleapis.com
+            * http://connectivitycheck.gstatic.com (required by Google for Android to connect to a wireless network)
+            * https://[ProjectID].firebaseio.com (URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
+        * URL accessed by the admin on a PC:
+            * Web portal URL - supplied by Zebra during the cloud setup process
+<br>
+
+<p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
+
+* https://www.googleapis.com
+* https://firestore.googleapis.com
+* https://cloudfunctions.googleapis.com
+* https://firebaseinstallations.googleapis.com
+* https://android.googleapis.com
+* https://play.googleapis.com
+* https://update.googleapis.com
+* https://growth-pa.googleapis.com
+* https://www.google.com
+* https://android.clients.google.com
 <!-- -->
 -----
 

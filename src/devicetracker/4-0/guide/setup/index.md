@@ -1,5 +1,5 @@
 ---
-title: Install & Setup
+title: Install / Configure
 layout: guide.html
 product: Device Tracker
 productversion: "4.0"
@@ -7,7 +7,7 @@ productversion: "4.0"
 
 ## Overview
 
-This section discusses installation and configuration of Device Tracker. The client app (APK file) and web portal URL are supplied by Zebra. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for Device Tracker software deployment to the mobile devices.<br><br>
+This section discusses installation and configuration of Device Tracker. The client app (APK file) can be downloaded from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html) and Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for deployment to the mobile devices. The web portal URL is supplied by Zebra during the cloud setup process, providing administrators the ability to manage users, view licenses and enable check-in/check-out. <br><br>
 
 **Installation and configuration on the device:**
 
@@ -43,43 +43,7 @@ This section discusses installation and configuration of Device Tracker. The cli
 
 ## Requirements
 
-### Device Requirements
-
-Requirements for Device Tracker client:
-
-* **Operating System:** Android Oreo with GMS
-* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), user intervention is required to turn on Bluetooth.
-* **WiFi** must be enabled and connected to the network to communicate with the server.
-* **Location** services must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
-
-<p>See <a href="../about/#supporteddevices">Supported Devices.</a></p>
-
-### Network Requirements
-
-Network requirements for communication between the device and Device Tracker cloud server:
-
-* Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
-
-* The following URLs must be allowed through the firewall or proxy:
-        * *.google.com
-        * *.googleapis.com
-        * http://connectivitycheck.gstatic.com (required by Google for Android to connect to a wireless network)
-        * https://[ProjectID].firebaseio.com <br>where <i>[ProjectID]</i> is located in the server config.xml supplied by Zebra.
-        * Device Tracker web portal URL supplied by Zebra
-<br>
-
-<p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
-
-* https://www.googleapis.com
-* https://firestore.googleapis.com
-* https://cloudfunctions.googleapis.com
-* https://firebaseinstallations.googleapis.com
-* https://android.googleapis.com
-* https://play.googleapis.com
-* https://update.googleapis.com
-* https://growth-pa.googleapis.com
-* https://www.google.com
-* https://android.clients.google.com
+See [Requirements](../about/#requirements).
 
 <br><br>
 

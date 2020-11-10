@@ -103,7 +103,7 @@ The undo function allows the keyboard designer to reverse as many as 10 of the m
 * Changes to **Grid layout properties** cannot be undone.
 * Actions performed on **multi-selected keys** cannot be undone.
 * ‘Undo’ can be used to clear an entire layout (after user confirmation). **This action cannot be undone**.
-
+ 
 ### Using Drag-and-drop
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  

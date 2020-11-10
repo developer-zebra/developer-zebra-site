@@ -24,7 +24,7 @@ Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock A
 * `ADDED in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 * `ADDED in v3.9:` Program a key to repeat any keyCode when long-pressed
 * `ADDED in v3.9:` Macros allow the combination of multiple keyCodes, presses or Actions into a single key-press Action.
-* `ADDED in v.3.9.9.1` Shift key now behaves according to Android conventions ([See Usage Notes](#usagenotes)) for details. 
+* `ADDED in v.3.9.9.1` Shift key now behaves according to Android conventions. [See Usage Notes](#usagenotes) for details. 
 
 #### Also See 
 
@@ -329,7 +329,7 @@ Tap on a setting to bring up a panel for adjusting that setting:
 ### Remapping Keys
 Enterprise Keyboard designates certain keys as user-programmable: one in the alphanumeric layout, four in the numerical layout and one in the symbol key layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the alphanumeric and symbol P1 keys mapped to the EMOJI panel. 
 
-**Learn more about [Key Remapping](/mx/keymappingmgr) on Zebra devices**. 
+**Learn more [about Key Remapping](/mx/keymappingmgr) on Zebra devices**. 
 
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 _One key can be remapped in the alphanumeric layout_.

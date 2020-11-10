@@ -24,7 +24,7 @@ Enterprise Keyboard (EKB) is an enhanced and customizable version of the stock A
 * `ADDED in v3.4:` Set a custom layout as the [default keyboard](#preferences) on the device
 * `ADDED in v3.9:` Program a key to repeat any keyCode when long-pressed
 * `ADDED in v3.9:` Macros allow the combination of multiple keyCodes, presses or Actions into a single key-press Action.
-* `ADDED in v.3.9.9.1` Shift key now behaves according to Android conventions ([more info](../about/#newinv39)). 
+* `ADDED in v.3.9.9.1` Shift key now behaves according to Android conventions ([See Usage Notes](#usagenotes)) for details. 
 
 #### Also See 
 
@@ -81,7 +81,8 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Key pop-ups are displayed on long-press for secondary text, even if the pop-up option is disabled.
 * The Pop-up on Key-press option functions intermittently.
 * The emoji key does not always display the emoji character.
-* Unlocking the shift key requires a double-tap.
+* On devices with an EKB version prior to 3.9.9.1, unlocking the shift key requires a double-tap. 
+* On devices with 3.9.9.1 and later, the shift key behaves according to Android conventions: single-tapping the shift key outputs the next key-press as upper-case and subsequent presses as lower case; double-tapping activates "caps lock,” and all characters that follow are output in upper-case. Single-tapping a caps-locked shift key releases the lock.
 * Behavior of text correction and other EKB preference settings can vary based on the input field type.
 
 Enterprise Keyboard Settings are accessed through the Android Settings panel: 

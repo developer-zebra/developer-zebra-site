@@ -79,11 +79,20 @@ The DataWedge service is included on every Zebra device and when enabled, allows
 
 ## II. Create Layout(s)
 
-Before beginning a layout, please make note of the following: 
+Before beginning a layout, please read the sections below.  
 
-#### Layout Creation Usage Notes
+### Layout Notes
 
-* **Press CTRL-Z to Undo the most recent operations(s)**. 
+* All buttons should be placed within the bounds of the layout background. **A layout must not be resized so that it hides any key or button**.
+* When switching from one layout to another during design, **a thin white line is sometimes visible** at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
+* **Button positions sometimes shift slightly** when switching layouts during design. 
+
+> **IMPORTANT:** Layout-creation UI elements become available when applicable to the layout being created.
+
+### Undo
+The undo function allows the keyboard designer to reverse as many as 10 of the most recent actions or commands. 
+
+* **Press CTRL-Z to undo the most recent operations(s)**. 
 * **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  
 * **The Undo "stack" stores as many as 10 actions**, and works only within the active layout. 
 * **The <u>Undo stack is cleared</u> when**:
@@ -92,12 +101,8 @@ Before beginning a layout, please make note of the following:
  * Clearing the current layout
  * Switching layout type (i.e. from Grid to Drag-and-Drop or vice-versa)
 * Changes to **Grid layout properties** cannot be undone.
-* Actions performed on **multi-selected keys** cannot be undone. 
-* All buttons should be placed within the bounds of the layout background. A layout must not be resized so that it hides any key or button.
-* When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
-* Button positions sometimes shift slightly when switching layouts during design. 
-
-> **IMPORTANT:** Layout-creation UI elements become available when applicable to the layout being created.
+* Actions performed on **multi-selected keys** cannot be undone.
+* ‘Undo’ can be used to clear an entire layout (after user confirmation). **This action cannot be undone**.
 
 ### Using Drag-and-drop
 

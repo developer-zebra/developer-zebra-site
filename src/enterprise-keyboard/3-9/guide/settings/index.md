@@ -81,8 +81,8 @@ _Sample layouts made with Enterprise Keyboard Designer. Click image to enlarge, 
 * Key pop-ups are displayed on long-press for secondary text, even if the pop-up option is disabled.
 * The Pop-up on Key-press option functions intermittently.
 * The emoji key does not always display the emoji character.
-* **On devices with an EKB version prior to 3.9.9.1**, unlocking the shift key requires a double-tap. 
-* **On devices with 3.9.9.1 and later, the shift key behaves according to Android conventions**; Single-tapping the shift key outputs the next key-press as upper-case and subsequent presses as lower case; double-tapping activates "caps lock,” and all characters that follow are output in upper-case. Single-tapping a caps-locked shift key releases the lock.
+* **On devices with an EKB version *prior* to 3.9.9.1**, double-tap the shift key to release caps-lock. 
+* **On devices with EKB 3.9.9.1 and later, the shift key behaves according to Android conventions**; Single-tapping the shift key outputs the next key-press as upper-case and subsequent presses as lower case; double-tapping activates "caps lock,” and all characters that follow are output in upper-case. Single-tapping a caps-locked shift key releases the lock.
 * Behavior of text correction and other EKB preference settings can vary based on the input field type.
 
 Enterprise Keyboard Settings are accessed through the Android Settings panel: 

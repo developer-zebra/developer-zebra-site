@@ -17,6 +17,7 @@ DataWedge APIs are often used in preference to Zebra’s EMDK. Developing EMDK a
 
 Control of barcode scanning hardware is exclusive. When DataWedge is active, Scanner and Barcode APIs of apps, such as an EMDK app, become inoperative. Likewise, when an app controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on disabling DataWedge. 
 
+-------
 
 ## DataWedge Features
 
@@ -69,6 +70,7 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 
 The app now uses DataWedge for barcode data acquisition. Test and adjust input, processing (data formatting) and output parameters as necessary.
 
+-------
 
 ## DataWedge API
 <!--
@@ -105,7 +107,8 @@ Basic Usage Guide:
 * **Retrieve profile list:** Retrieve all the DataWedge profiles using [Get Profiles List API](../api/getprofileslist). This is useful if an app needs to query the profile list to find a particular profile or if it needs to present a list to the user for a profile to be selected. In cases where an app creates a DataWedge profile upon app launch – a check can be included to determine if the profile exists by retrieving the profile list to improve performance and avoid unnecessary file input/output operations. 
 * **Use different profiles based on application workflow:** For flexibility in using profiles that are not associated with another application, to switch profiles during runtime, and to overcome the restriction of associating an app activity with only one profile, use [Switch to Profile API](../api/switchtoprofile) to activate profiles that are not already associated with another app. This can be helpful to use different profiles within the same app activity, for example if an area of the activity requires PDF417 barcodes to be scanned and another area of the activity requires MSR card data to be read. When focus is on scanning PDF417 barcodes, use SWITCH_TO_PROFILE to activate the profile with the barcode configurations. Similarly, when focus is on reading the MSR data, use SWITCH_TO_PROFILE to activate the profile with the MSR configurations. Both profiles must not already have an app associated. 
 
- 
+-------
+
 ## Best Practices 
 The following information provides guidance and best practices for DataWedge application development.
 
@@ -113,7 +116,7 @@ The following information provides guidance and best practices for DataWedge app
 * **Scanning performance optimization:** To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile. 
 * **Profile configuration across multiple apps:**  DataWedge is a global service and any application on the device can interact with it to configure any profile.  Therefore, care should be taken if multiple applications are trying to modify the same set of profiles. 
 
-###Data Capture 
+### Data Capture 
 * **Temporarily suspend or de-activate scanning in app:** Use Scanner Input Plugin API with SUSPEND_PLUGIN/RESUME_PLUGIN parameters.  
 * For situations that require **rapid changes between suspend/resume status,** use Scanner Input Plugin and register for SCANNER_STATUS notifications. When the scanner is activated (for example from a profile configuration or from RESUME_PLUGIN or ENABLE_PLUGIN intent API), SCANNER_STATUS broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place. For the app to suspend scanning, act only when in the SCANNING and WAITING states - when these states are broadcasted, use SUSPEND_PLUGIN parameter to remain in the suspended state and keep the scanner unusable. Once scanning is suspended, SCANNER_STATUS broadcasts the IDLE state. Use RESUME_PLUGIN to re-activate the scanner.  
 * **Capture data and photos in a single app:** It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
@@ -127,11 +130,12 @@ The following information provides guidance and best practices for DataWedge app
 * **Data dispatched too quickly:** If data is being dispatched too quickly for the application to accept, such as when using terminal emulation apps, this can be addressed by adding a delay between each character sent to the app with the use of `keystroke_character_delay` in [Set Config](../api/setconfig). Refer to Keystroke Output Parameters section and example code provided in section “Configure an inter-character delay”.  This parameter should be used with caution as it can negatively affect application performance. 
 * When using [DataWedge intent APIs](../api/overview) to **query DataWedge for information** (such as Get Active Profile), the app must register to receive the result with a filter that identifies the action and category of the result intent. 
 
-###Profiles 
+### Profiles 
 * **Existence of duplicate Associated Apps when importing profiles:** If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List. 
 * **Activity/app association with profiles:** A single profile can be associated with one or more activities or apps.  However, an activity or app can be associated with only one profile. If there is a requirement to associate an activity or app to more than one profile, this can be addressed with SWITCH_TO_PROFILE, which does not specify any associated apps. <br>
 The following example discusses the use of SWITCH_TO_PROFILE with SCANNER_INPUT_PLUGIN with two activities: Activity A launches and uses Switch to Profile API to switch to ProfileA, which SCANNER_INPUT_PLUGIN is enabled, then at some point it disables the scanner plug-in. Activity B is launched, associated with ProfileB. DataWedge switches to ProfileB. When activity A comes back to the foreground from the onResume method, activity A needs to use Switch to Profile to switch back to ProfileA, then use the same API intent again to disable the scanner plug-in, to return back to the state it was in. Reminder: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile. The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA - therefore activity A must switch back to ProfileA in its onResume method. Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the onResume method of the activity.
 
+-------
 
 ## Sample Apps
 

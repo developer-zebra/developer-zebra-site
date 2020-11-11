@@ -9,9 +9,13 @@ productversion: '8.2'
 
 For **Zebra Professional-series devices, certain DataWedge features require the purchase of a [Mobility DNA (MDNA) Enterprise license](/licensing/#mdnacomponentsandfeatures).** The DataWedge features that require MDNA license include MultiBarcode and Document Capture as part of NextGen SimulScan. This section discusses DataWedge behavior on licensed and unlicensed Zebra Professional devices.
 
+-----
+
 ## Licensed Devices
 
 On Zebra Professional devices with MDNA license, applications with MultiBarcode or NextGen SimulScan enabled do not encounter any issues. MultiBarcode and NextGen SimulScan features continue to work as expected.
+
+-----
 
 ## Unlicensed Devices
 
@@ -34,6 +38,8 @@ On unlicensed Zebra Professional devices, if the app uses SET_CONFIG API to chan
 
 Refer to [MDNA licensing](/licensing) for more information.
 
+-----
+
 ## Expired Licenses
 
 On a Zebra Professional device, if the MDNA Enterprise license is expired while using MultiBarcode or NextGen SimulScan, "scanning mode" automatically switches to "Single". DataWedge UI does not allow access to the NextGen SimulScan section and the "scanning mode" is set as “Single”.
@@ -42,6 +48,7 @@ Re-applying a valid MDNA Enterprise license re-stores the "scanning mode" back t
 
 Note: After the license is expired, if the "scanning mode" parameter is manually changed to “Single” or “UDI” in the profile configuration, re-applying a valid MDNA license does NOT restore the scanning mode back to the previous configuration of “MultiBarcode” or “SimulScan”.
 
+-----
 
 ## Importing DataWedge Configurations 
 

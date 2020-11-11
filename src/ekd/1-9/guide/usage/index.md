@@ -619,7 +619,7 @@ If a definition file contains more than one layout, any one of the layouts can b
 3. **Click the "Save Layout" button** to store settings.
 4. **Click "Save Project"** to create a project file for deployment.
 
-The selected layout will be the default on any device to which the file is deployed. 
+**The selected layout will be the default on any device to which the file is deployed**. 
 
 **To remove a layout as the default**: 
 1. From the main designer screen, **click the menu button in the upper-left corner**.<br> A list of available layouts is displayed. 
@@ -627,7 +627,7 @@ The selected layout will be the default on any device to which the file is deplo
 3. **Click the "Save Layout" button** to store settings.
 4. **Click "Save Project"** to create a project file for deployment.
 
-The new layout preference will be activated on any device to which the file is deployed. 
+**The new layout preference will be activated on any device to which the file is deployed**. 
 
 -----
 

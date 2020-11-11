@@ -329,7 +329,7 @@ Tap on a setting to bring up a panel for adjusting that setting:
 ### Remapping Keys
 Enterprise Keyboard designates certain keys as user-programmable: one in the alphanumeric layout, four in the numerical layout and one in the symbol key layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the alphanumeric and symbol P1 keys mapped to the EMOJI panel. 
 
-**Learn more [about Key Remapping](/mx/keymappingmgr) on Zebra devices**. 
+**Learn more [about Key Remapping](/mx/enterprisekeyboardmgr/#voice-input-key-enabledisable) on Zebra devices**. 
 
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 _One key can be remapped in the alphanumeric layout_.

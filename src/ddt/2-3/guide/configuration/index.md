@@ -9,6 +9,9 @@ productversion: "2.3"
 
 This section discusses configuration settings and reporting options for Device Diagnostic Tool.
 
+<!-- -->
+------
+
 ## Settings
 
 The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:
@@ -26,6 +29,9 @@ _Application settings_
 * **Log File Max Size (MB) -** editable text field to specify the maximum file size for the log files.
 * **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
 * **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen.
+
+<!-- -->
+------
 
 ## Configuration File
 
@@ -53,6 +59,9 @@ Sample settings content in configuration.xml:
   </settings>
  </code>
 </pre>
+
+<!-- -->
+------
 
 ## Configure Tests
 

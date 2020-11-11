@@ -23,6 +23,9 @@ Hardware features tested:
 <br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
+<!-- -->
+------
+
 ## New in Device Diagnostic Tool 2.3
 
 * New [Help](../usage/#userinterface) option available which links to the Device Diagnostic Tool support portal.
@@ -36,6 +39,8 @@ Hardware features tested:
         * To display the ESSID from a WLAN test on Android O or higher, _Location_ service is required to be enabled on the device due to Android restrictions. If _Location_ service is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
         * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
 
+<!-- -->
+------
 
 ## Version History
 
@@ -69,6 +74,9 @@ Hardware features tested:
      * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
      * On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device. 
      * When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.
+
+<!-- -->
+------
 
 ## Supported Devices
 
@@ -239,6 +247,9 @@ The following table lists the supported GMS devices, except for MC33 which only 
 
 * **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 or higher is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
 * **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
+
+<!-- -->
+------
 
 ## Important Usage Notes
 

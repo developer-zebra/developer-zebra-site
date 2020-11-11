@@ -13,6 +13,9 @@ Device Diagnostic Tool supports two modes of operation:
 2. **User mode -** The user is restricted to only run tests. There is no access to app settings, test configurations nor individual tests. To set user mode, disable <i>admin_mode</i> as referenced in the [Configuration](../configuration#configurationfile) section.
 <br>
 
+<!-- -->
+------
+
 ## Launch the App
 
 Run Device Diagnostic Tool using one of the following methods:
@@ -21,6 +24,9 @@ Run Device Diagnostic Tool using one of the following methods:
 2. **Remotely with an EMM (Enterprise Mobility Management) system** - Launch Device Diagnostic Tool in the background and generate a log using command: <br>`adb shell am broadcast -n "com.symbol.selfdiagnostics/com.symbol.selfdiagnostics.SESReceiver"`
 <br>
 <p>Only one of the methods should be used to run Device Diagnostic Tool, otherwise unexpected behavior can occur.</p>
+
+<!-- -->
+------
 
 ## User Interface
 

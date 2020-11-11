@@ -606,6 +606,21 @@ _EKD's "Save Project" button invokes a dialog showing the default save-to folder
 2. **Click “Yes”** to confirm the deletion of all layout elements in the current layout. 
 **`WARNING:` This action cannot be undone**. 
 
+### Set Default Layout
+
+If a definition file contains more than one layout, any one of the layouts can be set as the default, to be automatically invoked whenever the Enterprise Keyboard is displayed on the device. 
+
+**To Set the Default Custom Layout**:
+
+1. From the main designer screen, **click the menu button in the upper-left corner**.<br> A list of available layouts is displayed. 
+2. **Click the star icon** corresponding to the layout to be set as the default.
+3. **Click the "Save Layout" button** to store settings.
+4. **Click "Save Project"** to create a project file for deployment.
+
+**To remove a layout as the default**: 
+1. **Click the star icon** to deselect it. 
+2. **Click the "Save Layout" button** to store settings.
+
 -----
 
 ## V. Deploy Layout(s)

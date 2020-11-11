@@ -72,7 +72,7 @@ EKD features a simple drag-and-drop UI to allow quick creation of purpose-built 
 
 ### New Features
 
-* **[Undo feature](../usage/#iicreatelayouts)** reverses each of the last 10 actions  
+* **[Undo feature](../usage/#undo)** reverses each of the last 10 actions  
 * **[Deploy button](../usage/#vdeploylayouts)** automatically exports the custom key-layout definition file (an encrypted file) to a USB-connected device  
 * **[RepeatKeys function](../usage/#repeatkeys)** sends multiple keycodes by long-pressing a key 
 * **[Macros feature](../usage/#macros)** can combine multiple keycodes, presses or actions into a single key Action 

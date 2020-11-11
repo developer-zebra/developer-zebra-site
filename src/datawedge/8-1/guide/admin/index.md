@@ -16,12 +16,18 @@ productversion: '8.1'
 <br>
 
 See [DataWedge Manager](/mx/datawedgemgr/) for more information.
-<br><br>
-**Version History**
+<br>
+
+**Note:** When StageNow profiles are used to configure DataWedge Manager CSP, profiles created with MX v10.1 can result to a failure in some devices running DataWedge 8.1 and 8.2. Instead, select MX v10.0 when creating the StageNow profile. This is resolved with DataWedge v8.2.62 or higher. Until DataWedge is updated to v8.2.62, features specific to MX v10.1 may not be functional.
+
+### Version History
+
 * **DataWedge 8.1 -** New Control Access to Intent APIs
 * **DataWedge 8.0 -** New Import NextGen SimulScan Templates
 * **DataWedge 7.5 -** DataWedge Manager CSP support introduced, requires at minimum MX v9.2 and StageNow v3.5.
 <br>
+
+-----
 
 ## Control Access to Intent APIs
 Controls whether DataWedge APIs are accessible from all apps or only whitelisted apps. Affected DataWedge APIs are categorized to four groups: Configuration, Notification, Query, and Runtime. Refer to the [programmers guide](../programmers-guides/secure-intent-apis) for more details.<br>
@@ -47,19 +53,29 @@ Intent APIs related to DataWedge runtime configuration changes (e.g. Switch To P
 **Parm Name:** Runtime APIs<br>
 **Supported values:** 1 – Uncontrolled, 2 – Controlled, 86 – Unchanged.
 
+-----
+
 ## Enable/Disable DataWedge UI
 Controls whether the DataWedge user interface is accessible to the device user, determining the ability to change DataWedge configuration settings on the device. If disabled, DWDemo profile settings can still be modified for demonstration purposes. 
+
+-----
 
 ## Enable/Disable configuration file import via intent API
 Controls whether configuration files can be imported by apps via DataWedge [Import Config](../api/importconfig) intent API. 
 
+-----
+
 ## Enable/Disable auto import of configuration file
 Controls whether DataWedge configuration files are [auto-imported](../settings#autoimport) when located in the `/enterprise/device/settings/datawedge/autoimport` folder on the device.
+
+-----
 
 ## Import configuration file from specified path
 Specifies the full path and file name to import the configuration file (`datawedge.db`) or profile (by default, `dwprofile_<profilename>.db`). Can be used instead of the default Auto-Import (`/enterprise/device/settings/datawedge/autoimport`) folder. The file name must adhere to the existing DataWedge file naming convention: 
 * Config file is always named `datawedge.db`
 * Profile naming convention: `dwprofile_<profilename>.db`<br>
+
+-----
 
 ## Import NextGen SimulScan templates
 Import customized NextGen SimulScan Templates for document capture. This populates the selection for the [Document Capture Template](../input/barcode/#documentcapturetemplate) under the SimulScan scanning. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.

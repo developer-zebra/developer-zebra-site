@@ -90,7 +90,7 @@ Before beginning a layout, please read the sections below.
 > **IMPORTANT:** Layout-creation UI elements become available when applicable to the layout being created.
 
 ### Undo
-The undo function allows the keyboard designer to reverse as many as 10 of the most recent actions or commands. 
+The undo function allows the keyboard designer to reverse as many as 10 of the most recent actions or commands, subject to the limitations listed below. 
 
 * **Press CTRL-Z to undo the most recent operations(s)**. 
 * **There is no "Redo" function**; changes made using CTRL-Z must be reverted manually.  
@@ -102,7 +102,7 @@ The undo function allows the keyboard designer to reverse as many as 10 of the m
  * Switching layout type (i.e. from Grid to Drag-and-Drop or vice-versa)
 * Changes to **Grid layout properties** cannot be undone.
 * Actions performed on **multi-selected keys** cannot be undone.
-* ‘Undo’ can be used to clear an entire layout (after user confirmation). **This action cannot be undone**.
+* Undo can be used to clear an entire layout (after user confirmation). **This action cannot be undone**.
  
 ### Using Drag-and-drop
 
@@ -157,9 +157,11 @@ The undo function allows the keyboard designer to reverse as many as 10 of the m
 
 ### Using Grid Layout
 
-**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized (and buttons relocated) as needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
+**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized (and buttons relocated) as needed.
 
-> `WARNING:` Changes to Grid Properties **CANNOT be undone** using CTRL-Z. 
+>**`IMPORTANT:`** <br>
+* Checking the Grid Layout box clears any existing layout.<br>
+* Changes to Grid Properties **CANNOT be undone** using CTRL-Z. 
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
  <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>

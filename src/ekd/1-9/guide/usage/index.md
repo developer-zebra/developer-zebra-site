@@ -612,7 +612,9 @@ If a definition file contains more than one layout, any one of the layouts can b
 
 **To set the default layout**:
 
-1. From the main designer screen, **click the menu button in the upper-left corner**.<br> A list of available layouts is displayed. 
+1. From the main designer screen, **click the menu button in the upper-left corner**.<br> A list of available layouts is displayed:
+  <img alt="" style="height:250px" src="ekd_layout_list.png"/>
+  _The current default layout is indicated by a solid star icon_.
 2. **Click the star icon** corresponding to the layout to be set as the default.
 3. **Click the "Save Layout" button** to store settings.
 4. **Click "Save Project"** to create a project file for deployment.

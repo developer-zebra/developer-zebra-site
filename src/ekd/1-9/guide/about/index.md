@@ -111,7 +111,7 @@ OLD OLD OLD
 
 * A new **<u>[Canned text](../usage/#cannedtext)</u>** feature allows a list of predefined text messages to be assigned to a key in EKD and displayed in a drop-down list on devices running Enterprise Keyboard when the key is pressed. This can help simplify, quicken and standardize responses to common questions or situations. **Requires EKB 3.4 or later**. 
 
-* **<u>[Set Default Layout](../usage/#iicreatelayouts)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or later**. 
+* **<u>[Set Default Layout](../usage/#setdefaultlayout)</u>** now allows selection of a custom keyboard layout to be used as the default layout in the device, to appear whenever any input field receives focus. **Requires EKB 3.4 or later**. 
 
 * **<u>A new Home button</u>** simplifies project start-up and importing of saved projects:  
 <img alt="" style="height:450px" src="EKD_1.4_fullscreen.png"/>

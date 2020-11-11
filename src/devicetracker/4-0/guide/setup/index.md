@@ -49,7 +49,7 @@ See [Requirements](../about/#requirements).
 
 ## Create StageNow Profiles
 
-This section provides procedures to create StageNow Installation and Configuration profiles. StageNow version 4.2 or higher is required if automatically bypassing the overlay permission for Check-out. See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow](/stagenow/latest/about/) for the install file and more information.
+This section provides procedures to create 2 separate StageNow profiles for deployment:  installation and configuration. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for device deployment. StageNow version 4.2 or higher is required if automatically bypassing the overlay permission for the optional [Check-out](./#devicecheck-out) feature. See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) for the StageNow install file.
 
 ### Create StageNow Installation Profile
 
@@ -77,11 +77,11 @@ For part C, the client app certificate must be extracted. Perform the steps in s
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
 9. If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds AccessMgr to the Config tab on the right side.
 10. Repeat step 7 again. AppMgr is listed in the Config tab.
-11. Scroll to find **ConditionMgr** and click the plus (+) sign next to it. This adds ConditionMgr to the Config tab on the right side.
+11. _If using EMM for device deployment, skip this step and proceed to step 13._ Scroll to find **ConditionMgr** and click the plus (+) sign next to it. This adds ConditionMgr to the Config tab on the right side.
     <img src="config-added.jpg" /><i>List of config settings added</i>
 
 12. Click **Add.**
-13. If using StageNow to copy the install file to the device, proceed with this step. Otherwise, skip to step 14.<br>
+13. _If using StageNow to copy the install file to the device, proceed with this step. Otherwise, skip to step 14._<br>
     _StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **File Action:** Transfer/Copy File<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Access Method:** File in the device file system<br>
@@ -105,7 +105,8 @@ For part C, the client app certificate must be extracted. Perform the steps in s
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Launch an application<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Name:** Device Tracker<br>
     Click **Continue.**
-18. _StageNow Config 6_ – Add a delay for the app to be ready to accept configurations. In the **ConditionMgr** screen under the “Create New Setting” tab, enter/select the following: <br>
+18. _If using EMM for device deployment, skip this step and proceed to step 19._<br>
+_StageNow Config 6_ – Add a delay for the app to be ready to accept configurations. In the **ConditionMgr** screen under the “Create New Setting” tab, enter/select the following: <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Data Type:** Integer<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Integer System Value:** Battery Level<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Integer Condition Test:** Equal-to a Constant Integer<br>
@@ -176,10 +177,10 @@ Create a StageNow configuration profile to apply server settings in the app clie
 
 ## Device Deployment
 
-The device must be connected to the network during deployment. Use one of the following methods based on the desired tool for device deployment:
+The device must be connected to the network during deployment. After creating the StageNow profiles, use one of the following methods based on the desired tool for device deployment:
 
-* **StageNow:** Open StageNow client on the device and scan the barcodes generated from the installation and configuration profiles. See Appendix.
-* **EMM:** Export each StageNow XML file from the StageNow installation and configuration profiles (see Appendix). Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions.
+* **StageNow:** Open StageNow client on the device and scan the barcodes generated from the installation and configuration profiles. 
+* **EMM:** Export each StageNow XML file from the StageNow installation and configuration profiles. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions. The installation profile and configuration profile XML files must be used separately.
 <br>
 <p>When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background.</p>
 

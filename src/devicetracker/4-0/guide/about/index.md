@@ -41,9 +41,9 @@ Supported devices require GMS (Google Mobile Services):
 
 <table class="facelift" align="center" style="width:50%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
-    <th>Device</th>
+    <th style="text-align:center">Device</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
-    <th style="text-align:center">Supported BSP</th>
+    <th style="text-align:center">Android 10</th>
   </tr>
   <!--
   <tr>
@@ -52,19 +52,19 @@ Supported devices require GMS (Google Mobile Services):
     <td></td>
   </tr>  -->
   <tr>
-    <td>TC51</td>
+    <td style="text-align:center">TC51</td>
     <td style="text-align:center">&#x25cf;</td>
-    <td>02-13-15.00-OG-U20-STD</td>
+    <td></td>
   </tr>
   <tr>
-    <td>TC52</td>
+    <td style="text-align:center">TC52</td>
     <td style="text-align:center">&#x25cf;</td>
-    <td>01-23-18.00-OG-U09-STD</td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>TC72</td>
+    <td style="text-align:center">TC72</td>
     <td style="text-align:center">&#x25cf;</td>
-    <td>01-30-04-OG-00-U01-STD</td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
 </table>
 <br><br>

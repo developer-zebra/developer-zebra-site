@@ -288,7 +288,9 @@ To add/modify device data, import the device .CSV file:
 
 ### Delete Device
 
-Deleting a device removes the device from Device Tracker and places it under **Unassigned Devces** in the device dashboard. When a device is deleted, the license is deallocated and returned to the license pool.
+Deleting a device removes device data from the Device Tracker solution when there is a need to uninstall the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and returned to the license pool.
+
+<p><b>Prerequisite:</b> Prior to deleting a device, uninstall the Device Tracker application on the device.</p>
 
 <p>To delete a device, import the device .CSV file containing the specific data to delete:</p>
 

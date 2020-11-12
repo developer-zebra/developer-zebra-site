@@ -77,7 +77,8 @@ Device Tracker licenses can be removed by [decommissioning the device](../use/#d
 
 Important information pertaining to Device Tracker licensing:
 * The <a href="../setup/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
-* License allocation is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. **Never Connected** devices are not licensed.
+* License allocation and deallocation is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. 
+* [Never Connected](../mgmt/#dashboard) devices are not licensed.
 
 
 <!-- -->

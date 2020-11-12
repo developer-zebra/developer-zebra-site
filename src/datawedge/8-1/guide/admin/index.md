@@ -18,7 +18,7 @@ productversion: '8.1'
 See [DataWedge Manager](/mx/datawedgemgr/) for more information.
 <br>
 
-**Note:** When StageNow profiles are used to configure DataWedge Manager CSP, profiles created with MX v10.1 can result to a failure in some devices running DataWedge 8.1 and 8.2. Instead, select MX v10.0 when creating the StageNow profile. This is resolved with DataWedge v8.2.62 or higher. Until DataWedge is updated to v8.2.62, features specific to MX v10.1 may not be functional.
+**Note:** When StageNow profiles are used to configure DataWedge Manager CSP, profiles created with MX 10.1 can result to a failure in some devices running DataWedge 8.1 and 8.2. Instead, select MX 10.0 when creating the StageNow profile with DataWedge Manager CSP. This is resolved with DataWedge 8.2.62 or higher. Until DataWedge is updated to 8.2.62, features specific to DataWedge Manager CSP with MX 10.1 may not be functional.
 
 ### Version History
 

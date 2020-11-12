@@ -15,7 +15,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 ### Change Log
 
 * `ADDED in v1.4:` **[Create "canned text"](#cannedtext)** to appear in a list for easy selection (requires EKB 3.4 or later). 
-* `ADDED in v1.4:` **[Set a default layout](#iicreatelayouts)** to display on input field focus (EKB 3.4+).
+* `ADDED in v1.4:` **[Set a default layout](#setdefaultlayout)** to display on input field focus (EKB 3.4+).
 * `ADDED in v1.9:` **[RepeatKeys function](#repeatkeys)** causes a specified keyCode to be repeated when long-pressing the key (EKB 3.9+). 
 * `ADDED in v1.9:` **[Macros feature](#actionproperties)** combines multiple keyCodes, presses or Actions into a single key-press (EKB 3.9+).
 * `ADDED in v1.9:` **[Undo function (CTRL-Z)](#iicreatelayouts)** reverses up to 10 operations.
@@ -609,6 +609,8 @@ _EKD's "Save Project" button invokes a dialog showing the default save-to folder
 ### Set Default Layout
 
 If a definition file contains more than one layout, any one of the layouts can be set as the default, to be automatically invoked whenever the Enterprise Keyboard is displayed on the device. 
+
+**Also see important [DataWedge Notes](#datawedgenotes)** later in this document.
 
 **To set the default layout**:
 

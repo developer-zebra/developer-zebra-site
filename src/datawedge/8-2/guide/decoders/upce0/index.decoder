@@ -25,9 +25,10 @@ parm:
             - value: 2 - Preamble Country and Sys Char
     - name: Convert UPCE0 To UPCA   
       description: Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable to transmit UPCE0 decoded data as UPCE0 data, without conversion (default - disabled).
-      param: 
+      param: decoder_upce0_convert_to_upca
       paramvalue: 
         list:
-            - value: 
+            - value: true
+            - value: false
 ---
 

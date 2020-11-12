@@ -34,13 +34,13 @@ parm:
             - value: Integer from 5-100 in increments of 5
             - value: Default = 65
     - name: Bits per pixel 
-      description: Specify the color depth of the output image. This is not applicable to JPEG image formats. Possible values -
-      descriptionlist:
-            - value: • 0 - 1 BPP (2 levels)
-            - value: • 1 - 4 BPP (16 levels)
-            - value: • 2 - 8 BPP (256 levels)
-      param: 
+      description: Specify the color depth of the output image. This is not applicable to JPEG image formats.
+      param: decoder_signature_bpp
       paramvalue:
+        list:
+            - value: 0 - 1 BPP (2 levels)
+            - value: 1 - 4 BPP (16 levels)
+            - value: 2 - 8 BPP (256 levels)
 ---
 
 Decoder Signature, also known as Signature Capture, is a special barcode format that captures an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example:<br>

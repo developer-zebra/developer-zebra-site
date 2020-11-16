@@ -8,6 +8,8 @@ productversion: '5.0'
 ## Introduction
 This section provides information on the StageNow Android Staging Solution, including an explanation of staging, its purposes, and users. 
 
+> See [Installation Section](../installing) for help installing StageNow. 
+
 ## Staging
 Staging is the process where a device administrator or operator configures a device and/or deploys firmware or software to a device to prepare it for production use. This entails configuring, deploying, and managing systems and devices.
 

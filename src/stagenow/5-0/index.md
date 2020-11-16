@@ -30,10 +30,8 @@ menu:
   items:
     - title: About
       url: /stagenow/5-0/about
-    - title: Start
+    - title: Start-up
       url: /stagenow/5-0/gettingstarted
-    - title: Install
-      url: /stagenow/5-0/installing
     - title: Profiles
       url: /stagenow/5-0/stagingprofiles
     - title: Wizards
@@ -44,7 +42,7 @@ menu:
       url: /stagenow/5-0/settingtypes
     - title: Guides
       url: /stagenow/5-0/stagingguides
-    - title: Troubleshoot
+    - title: Help
       url: /stagenow/5-0/troubleshooting
     - icon: fa fa-youtube-play
       url: https://www.youtube.com/playlist?list=PLce6-npz5dKfmQcDERMFNiOeZrVAEJtXH    
@@ -58,15 +56,11 @@ product: StageNow
 productversion: '5.0'
 ---
 
+<!-- 11/16/20 - narrowing the tab menus so they don't cause wrapping
+  1. changed "Troubleshooting" tab to "Help"
+  2. removed the "Install" tab (and added a link to install in Start page 
 
+      - title: Install
+      url: /stagenow/5-0/installing
 
-
-
-
-
-
-
-
-
-
-
+ -->

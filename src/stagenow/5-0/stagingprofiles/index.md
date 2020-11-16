@@ -33,7 +33,7 @@ productversion: '5.0'
 
 Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity.
 
-### Alert Button Services
+### Required Services
 Programming an Alert Button in the way recommended by Zebra requires use of all three CSPs shown below.   
 
 * **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier.

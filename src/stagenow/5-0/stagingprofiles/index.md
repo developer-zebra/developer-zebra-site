@@ -68,50 +68,28 @@ For example, entering "`tel:+18885551212`" in the Intent "URI" field places a ca
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
 * **To prevent the device from entering suspend mode**, check the "Keep Device Awake" button in Intent Manager.  
 
-<!-- 
-
-KEYMAPPINGMGR
-Key codes "None" and "Do Nothing" are different. "None" assigns NO KEY CODE to a key and as such, Android gets nothing when this key is pressed. "Do Nothing" sends a code to Android to do nothing. THIS IS THE CODE DHANYA HAS BEEN WORKING WITH. 
-
-10/6/20 demo, Lincy said mapping to "None" is the preferred method.  
-
-AH>> KeyMappingMgr can assign multiple behaviors to a Key Identifier, up to one for each Keyboard State
-
-AH>> Intent CSP interfaces with KeyMappingMgr to find the Key Code that is assigned to the Key Identifier in the Base State
-
-AH>>     If no Key Code is assigned to that Key Identifier in Base State, then the Intent CSP will produce an ERROR
-
-AH>>     If a Key Code is assigned to that Key Identifier in Base State, then the Intent CSP will watch for that Key Code
-
-AH>>     If the Key Code is ONLY assigned to that Key Identifier in Base State, then if that Key Identifer is pressed in some other Keyboard State, then the Key Code will NOT be sent
-
-AH>>     If you want the Key Code to be sent in ALL Keyboard States, then the Key Identifier MUST be assigned to the Key Code in ALL Keyboard States
-
-ORDER IS IMPORTANT
-The intent CSP scans only for key codes, so if none (or a trigger) is assigned to a key, the intent will fail. That means that the key code MUST be assigned to the key BEFORE the intent is issued (or assigned to wait for a long-press, as implemented in intent for MX 10.2). If the PowerKey is used to assign key as a wake-up source, it should be done SECOND to ensure consistent behavior. 
-
-AH>> See above explanation for when and why the failure occurs.
-
-AH>> When PowerMgr is used, relative to KeyMappingMgr and Intent, is not important so long as the appropriate Key Identifier is made a wakeup BEFORE the device suspends
-
--->
-
 -----
 
-## Create a Profile
+## I. Create a Profile
 The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
 
 <img alt="image" style="height:100px" src="../images/banner.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
 
-* [Config](../stagingprofiles/#configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or NFC tags.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if Legacy Mode is turned on in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles/#iiconfigure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or binary (`.bin`) files for deployment through a USB port or NFC tag. The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
 
-* [Deployment](../stagingprofiles/#deployment) - This information includes settings that do not reside in StageNow barcodes or NFC tags, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
+> **NOTE: The Rapid Deployment (RD) Config section appears only if Legacy Mode is turned on in the [Settings](../gettingstarted/?settings#stagenowmenu) screen**. Setting information entered in the RD Config section is stored within RD barcodes.
 
-* [Review](../stagingprofiles/#review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the Profile, or return to any setting to update it.
+* [Deployment](../stagingprofiles/#deployment) includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
 
-* [Publish](../stagingprofiles/#publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as test, publish, and stage the Profile.
+> **NOTE**: The Deployment section does NOT appear in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
+
+* [Review](../stagingprofiles/#review) presents all settings information entered in the Config and Deployment sections in a single page for easy confirmation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
+
+* [Publish](../stagingprofiles/#publish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
+
+-----
 
 ### Profile States
 As progress is made through the Wizard, the top right corner of the window reflects the state of the Profile: 
@@ -191,7 +169,7 @@ When populating a setting template window within a Wizard, to make the setting a
 
 -----
 
-## Configure
+## II. Configure
 To create a Profile, open the StageNow Workstation Tool and log in.
 
 Select Create New Profile, and then select the device MX version from the drop-down menu. The tool retains the current selection when configuring future Profiles.

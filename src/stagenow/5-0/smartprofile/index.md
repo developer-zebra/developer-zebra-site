@@ -16,7 +16,7 @@ productversion: '5.0'
 * **Login credentials** for Zebra.com
 * **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** account 
 
-> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#createaprofile). 
+> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#icreateaprofile). 
 
 -----
 

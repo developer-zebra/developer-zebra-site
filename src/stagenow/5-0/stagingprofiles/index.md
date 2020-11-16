@@ -9,6 +9,18 @@ productversion: '5.0'
 
 **This section describes how to create, deploy and manage staging Profiles**, which are used to configure Zebra devices based on settings input by the staging administrator.
 
+### Staging Process
+
+* [Config](../stagingprofiles/#iiconfigure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or binary (`.bin`) files for deployment through a USB port or NFC tag. The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
+
+* [Deployment](../stagingprofiles/#iiideployment) includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
+
+> **NOTE**: The Deployment section does NOT appear in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
+
+* [Review](../stagingprofiles/#ivreview) presents all settings information entered in the Config and Deployment sections in a single page for easy confirmation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
+
+* [Publish](../stagingprofiles/#vpublish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
+
 #### Also See
 
 * **[Dynamic Profiles](../dynamicstaging)** | Create multiple config barcodes from a single Profile using imported data 
@@ -17,18 +29,20 @@ productversion: '5.0'
 
 -----
 
-### Alert Button
+## Alert Button
 
 Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity.
 
-#### Alert Button Services
+### Alert Button Services
 Programming an Alert Button in the way recommended by Zebra requires use of all three CSPs shown below.   
 
 * **<u>KeyMapping Manager</u>** assigns a Key Code to a Key Identifier.
 * **<u>Intent</u>** assigns a Key Identifier to an intent to be sent when the Key Code assigned to that Key Identifier is long-pressed.
 * **<u>Power Manager</u>** (optionally) assigns the key as a wake-up source to ensure that the Alert Button operates from suspend mode.<br>**Zebra recommends setting the Alert Button as a wake-up source to ensure operation from all device states**. 
 
-#### Summary of Steps
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WcVLvjBBDmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Summary of Steps
 The steps for creating an Alert Button are listed below, and **<u>must be executed in the order shown</u>** for proper operation. Detailed instructions for the steps are provided in the sections that follow. 
 
 **To create an Alert Button**:  
@@ -60,10 +74,10 @@ For example, entering "`tel:+18885551212`" in the Intent "URI" field places a ca
 23. **Scan the barcode** (or deploy the `.bin` file) to configure the target device.
 24. When staging is complete, **test Alert Button functionality** by short-pressing, then long-pressing the newly programmed key.
 
-#### Alert Button Notes
+### Alert Button Notes
 * **The intent function reads only the base state of a given key identifier**;  it does NOT read any of the keyboard-modifier states (i.e. ALT, SHIFT, color, etc.). To prevent the device from ignoring Alert key-presses if the keyboard is NOT in the base state, map "none" to all keyboard states. 
-* **To send the desired key code in ALL keyboard states**, assign the desired Key Identifier to the key code in ALL keyboard states.<br>[More about KeyMapping](/mx/keymappingmgr/).
-* **If the key had been previously assigned a function** (i.e. as a scan trigger), assign the "none" key code to remove the pre-existing function. This dedicates the key to the Alert Button function only. 
+* **To send the desired key code in ALL keyboard states**, assign the desired Key Identifier to the key code in ALL keyboard states. [More about KeyMapping](/mx/keymappingmgr/).
+* **If the key had been previously assigned a function** (i.e. as a scan trigger), assigning the "none" key code removes the pre-existing function. This dedicates the key to the Alert Button function only. 
 * **To test Alert Button functionality**, short-press then long-press the designated button. 
 * **To prevent changes to Alert Button settings**, block user access to the Android Settings panel. 
 * **To prevent the device from entering suspend mode**, check the "Keep Device Awake" button in Intent Manager.  
@@ -76,18 +90,7 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 <img alt="image" style="height:100px" src="../images/banner.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
-
-* [Config](../stagingprofiles/#iiconfigure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or binary (`.bin`) files for deployment through a USB port or NFC tag. The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
-
 > **NOTE: The Rapid Deployment (RD) Config section appears only if Legacy Mode is turned on in the [Settings](../gettingstarted/?settings#stagenowmenu) screen**. Setting information entered in the RD Config section is stored within RD barcodes.
-
-* [Deployment](../stagingprofiles/#deployment) includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
-
-> **NOTE**: The Deployment section does NOT appear in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
-
-* [Review](../stagingprofiles/#review) presents all settings information entered in the Config and Deployment sections in a single page for easy confirmation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
-
-* [Publish](../stagingprofiles/#publish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
 
 -----
 
@@ -234,7 +237,7 @@ _Click image to enlarge; ESC to cancel_.
 
 -----
 
-## Deployment
+## III. Deployment
 Use the Deployment section of the Wizard to specify the subset of the settings that define what the Profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
 
 **Note**: This section is not available on some Wizards. 
@@ -247,7 +250,7 @@ _Click image to enlarge; ESC to cancel_.
 
 -----
 
-## Review
+## IV. Review
 The Review section of the Wizard allows selection verification.
 
 <img alt="image" style="height:350px" src="../images/OSUpdate_Review.jpg"/>
@@ -276,7 +279,7 @@ _Click image to enlarge; ESC to cancel_.
 
 -----
 
-## Publish
+## V. Publish
 The Publish section of the Wizard permits selection of a staging method, testing of the method for Profile functionality, and making the Profile available to the staging operator. This window lists the available Profile delivery types, and displays dates and times when the Profile was Last Tested, Published and Staged.
 
 -----

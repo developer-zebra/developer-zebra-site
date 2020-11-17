@@ -9,6 +9,9 @@ productversion: "4.0"
 
 Device Tracker is a role-based solution in which administrators and managers possess additional features and functionality.
 
+<!-- -->
+-----
+
 ## Administrator/Manager Login
 
 Administrators and managers are required to login to view and perform actions based on their respective role. Device Tracker supports a single session for each user login and does not support multiple login sessions. If an admin/manager logs in to multiple browser sessions or devices using the same user login, the login sessions are automatically terminated after a period of time.
@@ -29,7 +32,9 @@ To login as administrator or manager:
         * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
         * **Device Friendly Name –** displays the friendly name assigned to the device. 
         * **Site Name –** displays the friendly name assigned to the site location.
-<br>
+
+<!-- -->
+-----
 
 ## Reset Password
 
@@ -43,7 +48,9 @@ Passwords can be reset through the web portal or the client app.
 4. Open the email and click on the link.
 5. Enter in the new password in the password reset page.
 6. The password is reset with the new password.
-   <br>
+
+<!-- -->
+-----
 
 ## Administration
 
@@ -119,7 +126,7 @@ Each individual device is displayed as a “device card” that shows informatio
 * Device friendly name (if not available, the device model and serial number is displayed)
 * Device model and serial number
 * AP friendly name (if available) or BSSID - **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
-* Device state:
+* Device status:
         * **In Service –** device is part of the active device pool and not in any of the other device states
         * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
         * **Finding –** the device search is initiated by another user
@@ -149,10 +156,29 @@ Tap and hold on any device card to display the available device actions:
 
 Tap on any device card to display the **Device Details** screen:
 
-* **Friendly name –** displays the assigned friendly device name as registered by the administrator
-* **Device Model –** displays the device model
-* **Serial Number –** displays the serial number of the device
+* **Device Status:**
+        * **In Service –** device is part of the active device pool and not in any of the other device states
+        * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+        * **Finding –** the device search is initiated by another user
+        * **Found –** the device is located after conducting the search
+        * **Cannot Find –** the device could not be found after the search was conducted
+        * **Decommissioned –** device is removed from the active device pool
+* **Friendly name –** the assigned friendly device name as registered by the administrator
+* **Device Model –** the model of the device
+* **Serial Number –** the serial number of the device
+* **License State:** 
+        * **Licensed -** device is allocated with a license
+        * **Unlicensed -** device is not allocated with a license and therefore the app will not operate on the device
+* **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
 * **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
+* **Last Reported –** displays the time stamp of the last time the device reported to the server
+* **Connection State:**
+        * **Never connected –** the device has never connected to the server
+        * **Connected –** the device is connected to the server
+        * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
+* **Secondary BLE:**
+        * **Available -** the device has a BLE beacon so a device search can be conducted when the device is offline or out of power
+        * **Not Available -** the device does not have a BLE beacon
 * **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
         * **High –** indicates the remaining battery is greater than 66%
         * **Medium –** indicates the remaining battery is within the range 15% to 66%
@@ -160,20 +186,8 @@ Tap on any device card to display the **Device Details** screen:
 * **Battery Status:**
         * **Charging –** the device is charging while plugged to a power source
         * **Not Charging –** device is not plugged to a power source
-* **Device State:**
-        * **In Service –** device is part of the active device pool and not in any of the other device states
-        * **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
-        * **Finding –** the device search is initiated by another user
-        * **Found –** the device is located after conducting the search
-        * **Cannot Find –** the device could not be found after the search was conducted
-        * **Decommissioned –** device is removed from the active device pool
-* **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
+
 * **Display On –** displays “true” or “false”. If true, it indicates the device display is on and the device may be in active use. If false, it indicates the device display is off, indicating the device is not in active use.
-* **Connection State:**
-        * **Never connected –** the device has never connected to the server
-        * **Connected –** the device is connected to the server
-        * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
-* **Last Reported –** displays the time stamp of the last time the device reported to the server
 * **Note –** text entered by an administrator or manager capturing information specific to the device.
 <table>
   <tr>
@@ -188,7 +202,9 @@ Tap on any device card to display the **Device Details** screen:
   </tr>
 </table>
 <i>Device details information</i>
-<br>
+
+<!-- -->
+-----
 
 ## Device/Site Search
 

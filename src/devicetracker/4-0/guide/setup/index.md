@@ -7,9 +7,9 @@ productversion: "4.0"
 
 ## Overview
 
-This section discusses installation and configuration of Device Tracker. The client app (APK file) can be downloaded from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html) and Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for deployment to the mobile devices. The web portal URL is supplied by Zebra during the cloud setup process, providing administrators the ability to manage users, view licenses and enable check-in/check-out. <br><br>
+This section discusses installation and configuration of Device Tracker. The client app (APK file) can be downloaded from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html) and Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for deployment to the mobile devices. The web portal URL is supplied by Zebra during the cloud setup process, providing administrators the ability to manage users, view licenses and enable check-in/check-out. 
 
-**Installation and configuration on the device:**
+<p><b>Installation and configuration on the device:</b></p>
 
 1. **Install client APK file.** Ensure all permissions are granted.
 2. **Disable battery optimization,** to permit the client app to continue running in the background during doze mode (Android’s power-saving feature triggered when the device is in a prolonged suspended state).
@@ -39,13 +39,16 @@ This section discusses installation and configuration of Device Tracker. The cli
 * **[Enable/Disable check-out](#devicecheckout) –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning and end of their work shift to check-out and check-in their device.
 * **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 * Generate user barcodes for check-out, if needed.
-<br><br>
+
+<!-- -->
+-----
 
 ## Requirements
 
 See [Requirements](../about/#requirements).
 
-<br><br>
+<!-- -->
+-----
 
 ## Create StageNow Profiles
 
@@ -175,6 +178,9 @@ Create a StageNow configuration profile to apply server settings in the app clie
 <br>
 <p><b>Note:</b> If an enterprise reset is performed on the device, the server settings must be re-applied for communication with the server.</p>
 
+<!-- -->
+-----
+
 ## Device Deployment
 
 The device must be connected to the network during deployment. After creating the StageNow profiles, use one of the following methods based on the desired tool for device deployment:
@@ -183,6 +189,9 @@ The device must be connected to the network during deployment. After creating th
 * **EMM:** Export each StageNow XML file from the StageNow installation and configuration profiles. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions. The installation profile and configuration profile XML files must be used separately.
 <br>
 <p>When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background.</p>
+
+<!-- -->
+-----
 
 ## Site, Access Point and Device Data
 
@@ -302,7 +311,9 @@ Deleting a device removes device data from the Device Tracker solution when ther
 6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
 7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
 8. Reboot the device for which the data is being deleted. After reboot, the device is listed in the **Unassigned Devices** category in the dashboard.
-<br><br>
+
+<!-- -->
+-----
 
 ## Web Portal
 
@@ -374,6 +385,9 @@ The password can be reset through the web portal or the client app if the admini
         * **Refresh data** button to refresh license data on-demand. The license information is updated once each day.
         * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
 
+<!-- -->
+-----
+
 ## Device Check-out
 
 Device check-out/check-in is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed.
@@ -405,8 +419,9 @@ To set the barcode prefix:
 2. **Enter the desired text for the prefix.** If all barcodes should be accepted with no prefix, keep the entry blank.
    <br>
    Only barcodes that begin with the specified prefix can initiate the checkout.
-   <br>
-   <br>
+
+<!-- -->
+-----
 
 ## Diagnostics
 

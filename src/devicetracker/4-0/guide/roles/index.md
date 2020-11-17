@@ -8,7 +8,9 @@ productversion: "4.0"
 ## Overview
 
 Device Tracker features and functionality depend on the role of the user logged in: Associate, Manager, or Administrator.
-<br><br>
+
+<!-- -->
+-----
 
 ## Administrator Role
 

@@ -2022,7 +2022,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 #### Example
 	:::xml
-	<HTTP_Proxy value="http://my.proxy.com:8080"/>
+	<HTTP_Proxy value="my.proxy.com:8080"/>
 
 ### HTTPS_Proxy
 **Applies to the Zebra Webkit engine on WM/CE devices and to the stock webkit on Android**. Specifies the URL and port number for the HTTPS proxy. Leave this field blank if no proxy is to be used. Supported on WM/CE only when Zebra Webkit is used. Not otherwise supported on WM/CE; use HTTP_Proxy instead.
@@ -2033,7 +2033,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 #### Example
 	:::xml
-	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
+	<HTTPS_Proxy value="my.proxy.com:8181"/>
 
 ### No_Proxy
 **Applies only to Windows Mobile/CE**. <!-- **Applies to the Zebra Webkit engine only**. 7/7/17- changed to WM/CE only, per eng.--> Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 

@@ -1294,12 +1294,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 ## UDI Params
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
 
-**Support for UDI barcodes, such as GS1, HIBCC and ICCBBA, is being terminated. This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
-
-* **TC51**
-* **TC56**
-* **TC70x**
-* **TC75x**
+**Support for UDI barcodes has been restored to Zebra devices running Android 10** with [BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) (or later).
 
 **Tap Scanning Modes to enable UDI decoding**: 
 

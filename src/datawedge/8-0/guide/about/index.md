@@ -141,7 +141,7 @@ For more information about approved languages or to download a localized operati
 
 -----
 ## New in DataWedge 8.0
-* **Support for Unique Device Identification (UDI) barcodes** has been temporarily suspended for devices running Android 10 and later. UDI support will be restored via a LifeGuard patch for Android 10 to be released in Q3 2020.
+* **Support for Unique Device Identification (UDI) barcodes** has been restored to Zebra devices running Android 10 with [BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html) (or later).
 * New secure Intent Output with [Component Information](../output/intent/#intentoutputsetup) and new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters).
 * New option to use [DataWedge content provider](../output/intent/#intentoutputsetup) in Intent Output to scan large data, such as images, with new corresponding [SetConfig API parameter](../api/setconfig/#intentoutputparameters) and [Use Content Provider Programmer's Guide](../programmers-guides/content-provider).
 * New [NextGen SimulScan Configuration](../input/barcode/#nextgensimulscanconfiguration) replacing legacy SimulScan features, license required for [Zebra Professional-series devices](../licensing).

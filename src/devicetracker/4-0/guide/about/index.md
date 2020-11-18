@@ -6,8 +6,8 @@ productversion: "4.0"
 ---
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker 4.0</b> is the cloud-based solution, which replaces Device Tracker On-Prem 2.3.1 or lower. For access, contact your local Zebra account manager.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem 2.3.1</a> or lower is the on-premise version, which is incompatible with Device Tracker 4.0 and cannot be upgraded. Android 10 is the last Android platform supported on Device Tracker Basic 2.3.1.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker 4.0</b> is the cloud-based solution, which replaces Device Tracker On-Prem 2.3.1 or lower. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem 2.3.1</a> or lower is the on-premise version, which is incompatible with Device Tracker 4.0 and cannot be upgraded. Android Pie is the last Android platform supported on Device Tracker On-Prem 2.3.1.
 </div>
 
 ## Overview
@@ -19,7 +19,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 <p><b>Main features:</b></p>
 
-* Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple locations up to 5,000 sites.
+* Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple locations up to 5K sites.
 * Support for central administrator, site manager, and site associate roles.
         * Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.
         * Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval. 

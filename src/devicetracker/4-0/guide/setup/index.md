@@ -195,7 +195,7 @@ The device must be connected to the network during deployment. After creating th
 
 ## Site, Access Point and Device Data
 
-Administrators register site names, access points, and device information with friendly names to aid in identifying, tracking and locating devices. Sample AP and device CSV files are supplied by Zebra for the administrator to populate with the appropriate data. Copy the populated CSV files to the mobile device for the data to be imported through the client app. Importing data either modifies or adds entries to the existing database. The data fields are:
+Administrators register site names, access points, and device information with friendly names to aid in identifying, tracking and locating devices. Sample AP and device CSV files are supplied by Zebra for the administrator to populate with the appropriate data. Copy the populated CSV files to the mobile device for the data to be imported through the client app. Importing data either modifies or adds entries to the existing database, unless deleting a device. The data fields are:
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -250,14 +250,14 @@ Administrators register site names, access points, and device information with f
 </table>
 <br>
 The device data fields are required in the device .CSV file whether adding or deleting devices. In each .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. It is particularly important for the AP location friendly name to be easily understood for users to determine the location within the facility when finding a device. Special characters, such as '.', '#', '$', '[', or ']', are not supported.<br><br>
-Sample AP .CSV file content:
+Sample Import AP .CSV file content:
 <pre class="prettify">
     <code>
         SiteName,BSSID,AssetName,LocationFriendlyName
         New York,14:a7:2b:24:cc:a5,,First Floor Reception Area
     </code>
 </pre>
-Sample Device .CSV file content:
+Sample Import Device .CSV file content:
 <pre class="prettify">
     <code>
         ModelNumber,SerialNumber,DeviceFriendlyName,SiteName
@@ -265,7 +265,14 @@ Sample Device .CSV file content:
         TC51,17009522509813,Inventory2,Los Angeles
     </code>
 </pre>
-
+Sample Delete Device .CSV file content:
+<pre class="prettify">
+    <code>
+        ModelNumber,SerialNumber
+        TC51,17009522509812
+        TC51,17009522509813
+    </code>
+</pre>
 <br>
 
 ### Import Site and AP Data
@@ -297,7 +304,7 @@ To add/modify device data, import the device .CSV file:
 
 ### Delete Device
 
-Deleting a device removes device data from the Device Tracker solution when there is a need to uninstall the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and returned to the license pool.
+Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool.
 
 <p><b>Prerequisite:</b> Prior to deleting a device, uninstall the Device Tracker application on the device.</p>
 

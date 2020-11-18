@@ -147,7 +147,7 @@ Since an OEMConfig schema (like any other MC) is just a file, it could also be o
 
 ###Q: Can OEMConfig control the Zebra RxLogger utility on the device? 
 
-**A: Yes, RxLogger can be controlled through Managed Configurations deployed in XML mode using the intent CSP** and the following commands: 
+**A: Yes, RxLogger can be controlled through Managed Configurations deployed in XML mode using the intent CSP** and the following APIs: 
 
 * **Start RX Logger -** `com.symbol.rxlogger.intent.action.ENABLE` Begins data collection for all enabled modules; the equivalent of tapping the Start button in the RxLogger device UI.
 * **Stop RX Logger -** `com.symbol.rxlogger.intent.action.DISABLE` Stops data collection for all modules; the equivalent of tapping the Stop button in the UI.

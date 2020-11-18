@@ -14,7 +14,7 @@ productversion: '5.0'
 * **StageNow 5.0** (or later) installed on Windows PC
 * **MX 8.1** (or later) on target device(s)
 * **Login credentials** for Zebra.com
-* **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** account 
+* **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** contract 
 
 > **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#icreateaprofile). 
 

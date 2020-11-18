@@ -149,13 +149,16 @@ Since an OEMConfig schema (like any other MC) is just a file, it could also be o
 
 **A: Yes, RxLogger can be controlled through Managed Configurations deployed in XML mode using the intent CSP** and the following commands: 
 
-* **Start RX Logger -** `com.symbol.rxlogger.intent.action.ENABLE`
-* **Stop RX Logger -** `com.symbol.rxlogger.intent.action.DISABLE`
-* **Set duration -** Configurable in the RxLogger settings file (see below).
-* **Configure RxLogger  -** Build a settings file (`config.json`) and push to the RxLogger folder on the device. [Learn more](/rxlogger/latest/guide/settings/#settingsfile). 
-* **Capture a snapshot -** `com.symbol.rxlogger.intent.action.BACKUP_NOW`
-  This parameter copies the file to a location specified and accessible only by an administrator.
+* **Start RX Logger -** `com.symbol.rxlogger.intent.action.ENABLE` Begins data collection for all enabled modules; the equivalent of tapping the Start button in the RxLogger device UI.
+* **Stop RX Logger -** `com.symbol.rxlogger.intent.action.DISABLE` Stops data collection for all modules; the equivalent of tapping the Stop button in the UI.
+* **Capture a log snapshot -** `com.symbol.rxlogger.intent.action.BACKUP_NOW` Triggers a backup for logs currently in the RxLogger folder. Files are compressed and named `Backup-<date>-<HHMMSS>.zip`.
 
+RxLogger also can be configured through a settings file (`config.json`) created separately and pushed to the RxLogger folder on the device. [Learn more](/rxlogger/latest/guide/settings/#settingsfile). 
+
+<!-- 
+* **Configure RxLogger  -** Build a settings file (`config.json`) and push to the RxLogger folder on the device. [Learn more](/rxlogger/latest/guide/settings/#settingsfile). 
+* **Set duration -** Configurable in the RxLogger settings file (see below).
+ -->
 #### Example
 
 ##### Enable RxLogger on the device

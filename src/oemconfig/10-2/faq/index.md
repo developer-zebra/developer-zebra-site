@@ -165,7 +165,7 @@ RxLogger also can be configured through a settings file (`config.json`) created 
     :::xml
     <characteristic version="8.3" type="Intent">
       <parm name="Action" value="Broadcast" />
-      <parm name="ActionName" value="<com.symbol.rxlogger.intent.action.ENABLE>" />
+      <parm name="ActionName" value="com.symbol.rxlogger.intent.action.ENABLE" />
     </characteristic>
 
 See [RxLogger docs](/rxlogger) for more information. 

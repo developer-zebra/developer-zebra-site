@@ -151,13 +151,13 @@ Since an OEMConfig schema (like any other MC) is just a file, it could also be o
 
 * **Start RX Logger -** `com.symbol.rxlogger.intent.action.ENABLE`
 * **Stop RX Logger -** `com.symbol.rxlogger.intent.action.DISABLE`
-* **Set duration -** This parameter is a configurable item to be included in the larger "configure RxLogger" feature (below)
-* **Configure RxLogger  -** Build a `config.json` file with configuration settings and push to the RxLogger folder on the device
+* **Set duration -** Configurable in the RxLogger settings file (see below).
+* **Configure RxLogger  -** Build a settings file (`config.json`) and push to the RxLogger folder on the device. [Learn more](/rxlogger/latest/guide/settings/#settingsfile). 
 * **Capture a snapshot -** `com.symbol.rxlogger.intent.action.BACKUP_NOW`
   This parameter copies the file to a location specified and accessible only by an administrator.
 
 #### Example
- b
+
 ##### Enable RxLogger on the device
     :::xml
     <characteristic version="8.3" type="Intent">

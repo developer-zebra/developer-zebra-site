@@ -24,7 +24,7 @@ parm:
     - code: 4
       mx: "4.2"
       devicetype: A,B
-      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+      info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
       name: LEAP
       description: This indicates that the network requires authentication using the Lightweight Extensible Authentication Protocol (LEAP) defined by Cisco. LEAP uses a modified version of MSCHAP without a secure tunnel and hence can be easily compromised. LEAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. Unlike standard EAP modes, LEAP does not support an optional certificate to help verify the identity of the authentication server.
     - code: 6

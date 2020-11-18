@@ -6,7 +6,7 @@ order: 10
 mx: "10.2"
 apilevel: "27"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
 parm:
   pivotal: No
   name: SinglePairing

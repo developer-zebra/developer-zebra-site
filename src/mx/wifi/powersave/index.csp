@@ -29,7 +29,7 @@ parm:
       mx: "4.2"
     - code: 4
       devicetype: A,B
-      info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+      info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
       name: WMM-PS
       mx: "4.4"
     - code: 5

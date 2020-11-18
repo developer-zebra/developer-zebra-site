@@ -5,7 +5,7 @@ type: parm
 order: 101
 mx: "7.0"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. This parameter is not compatible with the MC18.
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
 parm:
   pivotal: No
   name: CaptivePortalDetection

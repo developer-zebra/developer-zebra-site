@@ -5,7 +5,7 @@ type: parm
 order: 63
 mx: "4.3"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

@@ -5,7 +5,7 @@ type: parm
 order: 71
 mx: "6.3"
 devicetype: A,B
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License. Applies to WWAN-enabled devices only. 
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing. Applies to WWAN-enabled devices only. 
 parm:
   pivotal: No
   presentif: The "Use Hotspot Options" checkbox is checked

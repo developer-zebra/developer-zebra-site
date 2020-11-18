@@ -6,7 +6,7 @@ order: 12
 mx: "7.0"
 apilevel: "24"
 devicetype: A
-info: "Known as 'Silent Pairing Action' prior to MX 10.2. For some devices, this feature requires purchase of a Mobility DNA Enterprise License."
+info: "Known as 'Silent Pairing Action' prior to MX 10.2. For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing."
 parm:
   pivotal: No
   name: SilentPairingAction

@@ -6,7 +6,7 @@ order: 7
 mx: "7.0"
 apilevel: "24"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
 parm:
   pivotal: No
   name: AllowSilentPairing

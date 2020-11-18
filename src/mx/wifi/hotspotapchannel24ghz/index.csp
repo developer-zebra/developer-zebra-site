@@ -5,7 +5,7 @@ type: parm
 order: 76
 mx: "6.3"
 devicetype: A
-info: For some devices, this feature requires purchase of a Mobility DNA Enterprise License.
+info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "2.4GHz" 
   pivotal: No

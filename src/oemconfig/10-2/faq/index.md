@@ -19,7 +19,7 @@ menu:
 
 ## Overview
 
-Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
+Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations (MCs). To configure a feature for which no Android Enterprise API is available, MCs is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, MCs and the schemas that drive them. 
 
 #### IMPORTANT
 **The schema for OEMConfig 9.3 (and later) includes default values ONLY for hidden restriction types**; it  no longer includes default values for non-hidden restriction types. This is in compliance with changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations). 
@@ -43,13 +43,13 @@ Also see the [Glossary of terms](../glossary).
 
 ###Q: What are Managed Configurations?
 
-**A: Managed Configurations are a standard feature of Android Enterprise whereby any application that is installed on an Android device can choose to expose a set of name/value pairs that can be used to configure selected aspects of that application**. 
+**A: Managed Configurations (MCs) are a standard feature of Android Enterprise whereby any application that is installed on an Android device can choose to expose a set of name/value pairs that can be used to configure selected aspects of that application**. 
 
 -----
 
 ###Q: What is a Managed Configuration schema? 
 
-**A: A Managed Configuration schema is a means by which an application that chooses to expose Managed Configurations defines the set of Managed Configurations that it supports**. The Managed Configuration schema allows an entity, such as an Enterprise Mobility Management system (EMM) to: 
+**A: A Managed Configuration schema is a means by which an application that chooses to expose MCs defines the set of MCs that it supports**. The MC schema allows an entity, such as an Enterprise Mobility Management system (EMM) to: 
 
 1. Determine whether the application does or does not expose any Managed Configurations, so the EMM knows if any configuration of the application is possible. 
 2. Identify the set of Managed Configurations that are exposed by the application, so the EMM knows what configurations can be controlled for the application. 
@@ -59,7 +59,7 @@ Also see the [Glossary of terms](../glossary).
 
 ###Q: What is an OEMConfig schema? 
 
-**A: An OEMConfig schema is the Managed Configuration schema that defines the Managed Configurations exposed by an OEMConfig application** running on a device manufactured by the corresponding OEM. 
+**A: An OEMConfig schema is the Managed Configuration schema that defines the MCs exposed by an OEMConfig application** running on a device manufactured by the corresponding OEM. 
 
 -----
 
@@ -71,13 +71,13 @@ Also see the [Glossary of terms](../glossary).
 
 ###Q: Are OEMConfig schemas different from the Managed Configuration schemas of other applications? 
 
-**A: Yes and no**. Android Enterprise defines that Managed Configuration schemas built-into Android applications can be very flexible, but applications that are published to the Google Play Store are constrained to use only a very limited subset of the complexity allowed by Android Enterprise for Managed Configuration schemas. This was done to limit the complexity of Managed Configurations exposed by most applications to reduce the effort for EMMs to implement basic application configuration. With Google’s approval. OEMConfig applications provided by approved OEMs can get approval to upload OEMConfig applications to the Google Play Store that use more of the Managed Configuration schemas capabilities defined as part of Android Enterprise than are supported by other non-OEMConfig applications. Thus, OEMConfig schemas are generally richer and more sophisticated than the Managed Configuration schemas of other applications, even though both conform to the rules defined by Android Enterprise for Managed Configuration schemas. 
+**A: Yes and no**. Android Enterprise defines that Managed Configuration schemas built-into Android applications can be very flexible, but applications that are published to the Google Play Store are constrained to use only a very limited subset of the complexity allowed by Android Enterprise for MC schemas. This was done to limit the complexity of MCs exposed by most applications to reduce the effort for EMMs to implement basic application configuration. With Google’s approval. OEMConfig applications provided by approved OEMs can get approval to upload OEMConfig applications to the Google Play Store that use more of the MC schemas capabilities defined as part of Android Enterprise than are supported by other non-OEMConfig applications. Thus, OEMConfig schemas are generally richer and more sophisticated than the MC schemas of other applications, even though both conform to the rules defined by Android Enterprise for MC schemas. 
 
 -----
 
-###Q: Are OEMConfig Managed Configurations used for purposes other than for Managed Configurations exposed by other applications? 
+###Q: Are OEMConfig Managed Configurations used for purposes other than for MCs exposed by other applications? 
 
-**A: Yes**. In most cases, OEMConfig Managed Configurations are used to configure OEM-specific device-oriented settings rather than application-oriented settings. As such, configuration performed using OEMConfig Managed Configurations will often have a more global, cross-application impact, rather than a localized, application-local impact 
+**A: Yes**. In most cases, OEMConfig Managed Configurations are used to configure OEM-specific device-oriented settings rather than application-oriented settings. As such, configuration performed using OEMConfig MCs will often have a more global, cross-application impact, rather than a localized, application-local impact 
 
 -----
 
@@ -89,13 +89,13 @@ Also see the [Glossary of terms](../glossary).
 
 ###Q: Does an EMM need to handle OEMConfig schemas differently than the Managed Configuration schemas of other applications? 
 
-**A: Yes**. An EMM that wants to support OEMConfig must support the richer set of Managed Configuration schema elements that OEMConfig application can expose. If an EMM only supports the more restricted set allowed to be used by non-OEMConfig applications, that EMM will likely not be able to support configuration using OEMConfig applications from any OEM. 
+**A: Yes**. An EMM that wants to support OEMConfig must support the richer set of MC schema elements that OEMConfig application can expose. If an EMM only supports the more restricted set allowed to be used by non-OEMConfig applications, that EMM will likely not be able to support configuration using OEMConfig applications from any OEM. 
 
 -----
 
 ###Q: Must my EMM specifically support Zebra to use Zebra OEMConfig? 
 
-**A: Not really**. Among the major benefits of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports Managed Configurations and that supports the richer Managed Configuration schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig schema of any OEM, including Zebra, without having code specifically tailored to any OEM. 
+**A: Not really**. Among the major benefits of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports MCs and that supports the richer MCs schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig schema of any OEM, including Zebra, without having code specifically tailored to any OEM. 
 
 -----
 
@@ -107,11 +107,11 @@ Also see the [Glossary of terms](../glossary).
 
 ###Q: Where does an OEMConfig schema come from? 
 
-**A: Fundamentally, an OEMConfig schema, like any Managed Configuration schema for any application, is built into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the schema. APIs exist in the device to acquire the schema for any application that exposes Managed Configurations, hence an application (including an EMM Agent) could acquire an OEMConfig schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more schemas from every single managed device. 
+**A: Fundamentally, an OEMConfig schema, like any Managed Configuration schema for any application, is built into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the schema. APIs exist in the device to acquire the schema for any application that exposes MCs, hence an application (including an EMM Agent) could acquire an OEMConfig schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more schemas from every single managed device. 
 
 More commonly, an OEMConfig APK is published to the Google Play Store. The advantage of doing this is that an EMM Server can then make a server-to-server call to the Google Play Store, using the Google Play EMM API to acquire the schema for that OEMConfig APK. This is especially beneficial since the EMM can use logic identical to that used for non-OEMConfig schemas to access the OEMConfig schema for any OEMConfig application from any OEM, so long as it knows the Android Package Name of that OEMConfig application. 
 
-Since an OEMConfig schema (like any other Managed Configuration) is just a file, it could also be obtained in various other ways, such as downloading it from an OEM web site, an on-line repository, etc. Ultimately, it is the decision of a given EMM vendor which methods of schema acquisition make the most sense to provide based on the use cases of the users of that EMM. 
+Since an OEMConfig schema (like any other MC) is just a file, it could also be obtained in various other ways, such as downloading it from an OEM web site, an on-line repository, etc. Ultimately, it is the decision of a given EMM vendor which methods of schema acquisition make the most sense to provide based on the use cases of the users of that EMM. 
 
 -----
 
@@ -144,3 +144,25 @@ Since an OEMConfig schema (like any other Managed Configuration) is just a file,
 **A: A Unified Endpoint Management (UEM) system** combines mobile device management (MDM) and enterprise mobility management (EMM) systems into a single client-management tool that can manage laptops, desktops, phones, tablets and other mobile computing devices. 
 
 -----
+
+###Q: Can OEMConfig control the Zebra RxLogger utility on the device? 
+
+**A: Yes, RxLogger can be controlled through Managed Configurations deployed in XML mode using the intent CSP** and the following commands: 
+
+* **Start RX Logger -** `com.symbol.rxlogger.intent.action.ENABLE`
+* **Stop RX Logger -** `com.symbol.rxlogger.intent.action.DISABLE`
+* **Set duration -** This parameter is a configurable item to be included in the larger "configure RxLogger" feature (below)
+* **Configure RxLogger  -** Build a `config.json` file with configuration settings and push to the RxLogger folder on the device
+* **Capture a snapshot -** `com.symbol.rxlogger.intent.action.BACKUP_NOW`
+  This parameter copies the file to a location specified and accessible only by an administrator.
+
+#### Example
+ b
+##### Enable RxLogger on the device
+    :::xml
+    <characteristic version="8.3" type="Intent">
+      <parm name="Action" value="Broadcast" />
+      <parm name="ActionName" value="<com.symbol.rxlogger.intent.action.ENABLE>" />
+    </characteristic>
+
+See [RxLogger docs](/rxlogger) for more information. 

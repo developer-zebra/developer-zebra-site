@@ -36,7 +36,7 @@ This section discusses installation and configuration of Device Tracker. The cli
 
 <p><b>Configure the Check-out feature <i>(optional)</i>:</b></p>
 
-* **[Enable/Disable check-out](#devicecheckout) –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning and end of their work shift to check-out and check-in their device.
+* **[Enable/Disable check-out](#devicecheckout) –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning of their work shift to check-out their device. This associates the device to the particular user.
 * **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 * Generate user barcodes for check-out, if needed.
 
@@ -97,12 +97,12 @@ For part C, the client app certificate must be extracted. Perform the steps in s
     Enter/select the desired options for the remaining fields. Click **Continue.**
 15. _StageNow Config 3_ – Battery Optimization. For the second **AppMgr,** enter/select the following:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Application for Battery Optimization<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Remove Application for Battery Optimization:** com.zebra.devicetracker<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Remove Application for Battery Optimization:** com.zebra.devicetrackercloud<br>
     Click **Continue.**
 16. _StageNow Config 4_ – Grant overlay permission. For **AccessMgr,** enter the following:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Access Action:** Grant Permission to an Application<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** System Alert Window<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.devicetracker<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.devicetrackercloud<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <b>Extract Client App Certificate</b> below)]<br>
 17. _StageNow Config 5_ – Launch app. For the third AppMgr, enter/select the following:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Launch an application<br>
@@ -317,7 +317,6 @@ Deleting a device removes device data from the Device Tracker solution after uni
 5. Under the section **Import Delete Device CSV File,** tap **Browse File.** Browse and select the appropriate .CSV file.
 6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
 7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
-8. Reboot the device for which the data is being deleted. After reboot, the device is listed in the **Unassigned Devices** category in the dashboard.
 
 <!-- -->
 -----

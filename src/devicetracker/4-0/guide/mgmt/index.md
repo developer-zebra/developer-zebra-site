@@ -94,6 +94,7 @@ Device status:
 * **Found –** filters devices that were successfully found after a search. Triggered when a user indicates the device is found.
 * **Cannot Find –** filters devices that could not be found after a search was conducted.
 * **Decommissioned –** filters devices that are designated as decommissioned. These devices are not in the active device pool, the collection of devices with active server communication.
+* **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 <br>
 <p>Device battery states:</p>
 
@@ -133,6 +134,7 @@ Each individual device is displayed as a “device card” that shows informatio
         * **Found –** the device is located after conducting the search
         * **Cannot Find –** the device could not be found after the search was conducted
         * **Decommissioned –** device is removed from the active device pool
+        * **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 - Top right icon indicates device battery level or charging state.
 <br>
 <!-- -->
@@ -162,13 +164,14 @@ Tap on any device card to display the **Device Details** screen:
         * **Finding –** the device search is initiated by another user
         * **Found –** the device is located after conducting the search
         * **Cannot Find –** the device could not be found after the search was conducted
-        * **Decommissioned –** device is removed from the active device pool
+        * **Decommissioned –** the device is removed from the active device pool
+        * **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 * **Friendly name –** the assigned friendly device name as registered by the administrator
 * **Device Model –** the model of the device
 * **Serial Number –** the serial number of the device
 * **License State:** 
         * **Licensed -** device is allocated with a license
-        * **Unlicensed -** device is not allocated with a license and therefore the app will not operate on the device
+        * **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 * **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
 * **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
 * **Last Reported –** displays the time stamp of the last time the device reported to the server

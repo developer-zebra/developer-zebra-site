@@ -427,18 +427,19 @@ Gets the height of the HTML content.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
-####Description
-Enable WebView zoom to “pinch zoom” in and out of an image or web page using the two-finger gesture. Also can be configured using the 'EnableZoom' parameter in the `config.xml` file.
-####Params
-<p><strong>Default:</strong> true</p>
-####Access
 
+####Description
+Enables WebView to “pinch zoom” in and out of an image or web page using the two-finger gesture. Also can be configured using the 'EnableZoom' parameter in the `config.xml` file.
+
+####Access
+* Class: This property is accessed via the API class object:
 	* <code>EB.WebView.enableZoom=true;</code>
 	* <code>EB.WebView.enableZoom=false;</code>
 
+####Params
+<p><strong>Default:</strong> true</p>
+<p><strong>Disable:</strong> false</p>
 
-* Class: This property also can be accessed via the API class object.
-	* <code>EB.WebView.enableZoom</code>
 
 ####Platforms
 

@@ -5,7 +5,7 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-> **The Database API requires EB 3.0.6.1 (or later)**. 
+> **The Database API requires EB 3.0.6.0 (or later)**. 
 
 ## Overview
 Database is low-level API to access a local SQLite database.

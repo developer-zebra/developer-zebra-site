@@ -13,6 +13,7 @@ Commercial deployment to devices requires an End-User License (**also known as a
 
 ### Important Licensing Information
 
+* **Licenses for Enterprise Browser 3.0.6 (and later) and the MDNA bundle** can be activated using single Activation ID. 
 * **Enterprise Browser 3.0 and later supports term-based (subscription) licensing</u>** with one-, three- and five-year terms available for purchase. A 90-day trial term also is available (a 30-day evaluation term comes preinstalled with every EB 3.0 download).
 * **An “unlicensed software” reminder appears on devices every four hours** beginning one month before the end of all non-evaluation terms. After expiration, the prompt appears every five minutes until an EB license is applied.
 * **Perpetual licenses remain in effect**. Read more [about perpetual licenses](#iiaccesslicensingsystem).

@@ -64,7 +64,7 @@ The first step in obtaining a license is to engage with Zebra or a Zebra reselle
 -----
 
 ## II. Access Licensing System
-After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the licensing company's representative containing user credentials for accessing the Zebra Enterprise Software Licensing system. 
+After a licensing agreement is purchased from Zebra or a Zebra reseller, an email is sent to the license requester containing user credentials for accessing the Zebra Enterprise Software Licensing system. 
 
 #### Visit the [Zebra licensing support page](https://www.zebra.com/us/en/support-downloads/software-licensing.html), register and log into the portal to: 
 

@@ -107,8 +107,8 @@ where "ppcdemo.key" (same file name as in step 4) and "ppcdemo.csr" (new file cr
 * **Organizational Unit Name** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
 * **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
 * **Email Address** - Enter the contact email address.<br>
-<p>When prompted for the challenge password, it is not required - _do not supply one_. 
-5. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.</p>
+<p>When prompted for the challenge password, it is not required - <i>do not supply one.</i> </p>
+5. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
 **Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format. Watch a video demonstration or follow the steps below: 
 <video controls width="450" height="280"> <source src="../../../videos/ZDVC_ServerCert-Step2.mp4" type="video/mp4">
@@ -168,6 +168,7 @@ _Figure 4. Installation - server configuration_
     * Server auth key
     * Server auth password
 <br>
+
 **Important**: Use of the following special characters is not supported for the "Server auth key" and "Server auth password": <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>

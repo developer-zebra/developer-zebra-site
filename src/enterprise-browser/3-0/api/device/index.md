@@ -36,6 +36,30 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 
 -----
 
+##Properties
+
+###navigationBarVisibility
+
+####Type
+<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+
+####Description
+Controls display of the Android Navigation Bar (sometimes known as the System Bar) on the device, which contains the BACK, HOME and RECENT soft keys (**EB 3.0.6.0 and later**).
+
+####Access
+* Class: This property is accessed via the API class object:
+	* <code>EB.Device.navigationBarVisibility=true;</code>
+	* <code>EB.Device.navigationBarVisibility=false;</code>
+
+####Params
+<p><strong>Default:</strong> true</p>
+<p><strong>Disable:</strong> false</p>
+
+####Platforms
+
+* Android
+
+-----
 ##Methods
 
 ### acquirePartialWakeLock()

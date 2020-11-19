@@ -36,6 +36,8 @@ To include individual APIs, you must first include the `ebapi.js` in your HTML, 
 
 > In the code lines above, notice that `ebapi.js` is included first, followed by `eb.database.js`, which is the Database API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.        
 
+-----
+
 ##Methods
 
 ### <span class="label label-inverse"> Destructor</span> close()

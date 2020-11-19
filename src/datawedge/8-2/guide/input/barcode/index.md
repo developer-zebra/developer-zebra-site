@@ -214,8 +214,8 @@ _Scanner configuration_
 ## NextGen SimulScan Configuration
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
-* **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0
-* **[Document Capture](#documentselection) -** supported since DataWedge 8.0, only available on select devices and scanners
+* **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
+* **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. Contact Zebra to create a custom Document Capture template.
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->

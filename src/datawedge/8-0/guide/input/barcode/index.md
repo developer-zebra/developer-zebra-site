@@ -132,8 +132,8 @@ _Scanner configuration_
 ## NextGen SimulScan Configuration
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
-* **MultiBarcode -** supported since DataWedge 8.0
-* **Document capture -** supported since DataWedge 8.0, only available on select devices and scanners
+* **[MultiBarcode](#basicmultibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
+* **[Document Capture](#documentcapturetemplate) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. Contact Zebra to create a custom Document Capture template.
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
@@ -179,7 +179,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture Template](#
 
 ### Document Capture Template
 
-**Document Capture** requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. **Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
+**Document Capture** requires a custom template designed with an anchor barcode and designated with the areas to capture as an image, such as text fields in the document. Contact Zebra to create a custom Document Capture template. **Document Capture Template** specifies the template to be used for document capture with **SimulScan** scanning mode. Once properly configured, scan the anchor barcode to capture the area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   
 
 To configure, in the **NG SimulScan configuration** screen tap on **Document Capture Template** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 

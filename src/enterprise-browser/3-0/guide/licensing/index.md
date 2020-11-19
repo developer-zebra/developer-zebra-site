@@ -76,7 +76,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 #### Available License Types
 
 * **Perpetual License** (never expires)
-* **Trail License** (90-day evaluation period)
+* **Trial License** (90-day evaluation period)
 * **Term-based License**:
  * **5-year** term
  * **3-year** term

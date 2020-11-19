@@ -27,7 +27,7 @@ SAP ITSmobile applications can be configured to play a sound to indicate the suc
 
 ### SAP Keyboards
 
-EB 2.0 (and higher) includes SAP-specific keyboard layouts that leverage EB's custom [ButtonBar features](../customize). This helps to compensate for hardware keys missing from Android devices. **The SAP keyboard by default displays a numeric layout** whenever the focus of an app is on an input field. The default layout is easily changed by editing the `showKeyboard`/`hideKeyboard` JavaScript function in the `sapkeyboard.js` API.
+EB 2.0 (and later) includes SAP-specific keyboard layouts that leverage EB's custom [ButtonBar features](../customize). This helps to compensate for hardware keys missing from Android devices. **The SAP keyboard by default displays a numeric layout** whenever the focus of an app is on an input field. The default layout is easily changed by editing the `showKeyboard`/`hideKeyboard` JavaScript function in the `sapkeyboard.js` API.
 
 **A function key layout** allows SAP users to press function keys from the Software Input Panel (SIP) on demand, eliminating the need to modify the SAP application to include HTML buttons to emulate function keys. Each key on an EB keyboard can easily be configured to issue a keystroke or to run a script. For more information, see the [ButtonBar Parameter guide](../customize/button). 
 
@@ -66,7 +66,7 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
        // OR
     <KeyboardType value="default"/>
  
-Enterprise Browser 2.0 (and higher) supports configuration parameters that provide more control over the behavior of SAP apps. Keyboard visibility and custom key layouts are controlled through parameters in the `Config.xml` file. For more information about using the file, see the [Config.xml reference](../configreference). 
+Enterprise Browser 2.0 (and later) supports configuration parameters that provide more control over the behavior of SAP apps. Keyboard visibility and custom key layouts are controlled through parameters in the `Config.xml` file. For more information about using the file, see the [Config.xml reference](../configreference). 
 
 #### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>
@@ -136,7 +136,7 @@ Enterprise Browser 2.0 (and higher) supports configuration parameters that provi
 
 ### Page Fitting
 
-Like all pixel-based UI elements, SAP ITSmobile UI elements look smaller on high-resolution displays than on low-res ones. A page designed to fill the screen of a 640x480 display will occupy only a portion of a modern high-res display. To compensate, apps running on Enterprise Browser 2.0 (and higher) can use the ViewPort parameter, which reads device-specific display settings into the app at runtime. 
+Like all pixel-based UI elements, SAP ITSmobile UI elements look smaller on high-resolution displays than on low-res ones. A page designed to fill the screen of a 640x480 display will occupy only a portion of a modern high-res display. To compensate, apps running on Enterprise Browser 2.0 (and later) can use the ViewPort parameter, which reads device-specific display settings into the app at runtime. 
 
 ####Example
     :::xml
@@ -188,7 +188,9 @@ It's possible that some ITSmobile pages are wider than the viewport (visible are
 
 ### Customize Page UI Elements
 
-EB 2.x provides configuration parameters for controlling the size of UI elements on SAP pages. **These settings impact all pages**.
+EB 2.x (and later) provides configuration parameters for controlling the size of UI elements on SAP pages. 
+
+> **These settings impact all pages**.
 
 #### Increase button height: 
 
@@ -210,8 +212,9 @@ EB 2.x provides configuration parameters for controlling the size of UI elements
 
     :::xml
     <SapCustomization>     
-      <MobileEditDisabledWidth value="20px"/> 
+      <MobileEditDisabledWidth value="auto"/> 
     </SapCustomization>
+**NOTE**: The "auto" setting (default) automatically adjusts a read-only text field for the screen width of the device. 
 <br>
 
 #### To customize style elements:
@@ -229,7 +232,7 @@ Specify desired style changes using a custom CSS file as described in the Custom
 
 ### Custom CSS File
 
-Apps made with Enterprise Browser 2.5 (and higher) for Android can employ a custom CSS file to modify certain styles within an SAP app at runtime. By default, a file called `sapstyle.txt` is stored in the following device folder:
+Apps made with Enterprise Browser 2.5 (and later) for Android can employ a custom CSS file to modify certain styles within an SAP app at runtime. By default, a file called `sapstyle.txt` is stored in the following device folder:
 
 * `%INSTALLDIR%/android_sap/` <!-- and works with SAP apps in a way similar to that of the `mobile.css` file --> 
 
@@ -827,7 +830,7 @@ It's important to terminate the SAP session when quitting an Enterprise Browser 
 
 ## Locking Screen Orientation
 
-EB 2.0 (and higher) can lock an EB app to a specific screen orientation (portrait or landscape). The SAP package by default sets the parameter to "Auto," which locks the app in the "natural" orientation of device (landscape on CC5000, ET55, VC80 and WT6000; portrait on all others). **Screen "auto-rotation" is disabled when this parameter is used**. [More info](../configreference/#screenorientation). 
+EB 2.0 (and later) can lock an EB app to a specific screen orientation (portrait or landscape). The SAP package by default sets the parameter to "Auto," which locks the app in the "natural" orientation of device (landscape on CC5000, ET55, VC80 and WT6000; portrait on all others). **Screen "auto-rotation" is disabled when this parameter is used**. [More info](../configreference/#screenorientation). 
 
 #### Set screen orientation to "natural" for device:
     :::xml
@@ -839,7 +842,7 @@ EB 2.0 (and higher) can lock an EB app to a specific screen orientation (portrai
 
 ## KeyDown Actions
 
-EB 2.0 (and higher) allows hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. Hardware keys are remapped in the KeyActions section of the `KeyCodeMapping
+EB 2.0 (and later) allows hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. Hardware keys are remapped in the KeyActions section of the `KeyCodeMapping
 .xml` file. See the [Keycode Mapping Guide](../keycapture) for more information. 
 
 #### Press F8 key to quit the app:
@@ -890,7 +893,7 @@ Enterprise Browser allows the System bar (also known as the Navigation bar, whic
 
 ## Speech Recognition
 
-EB 2.0 (and higher) supports the injection of speech commands into legacy SAP applications using text-to-speech (TTS) technology, allowing apps to speak to app users. Apps also can accept speech inputs via automatic speech recognition (ASR) and execute certain commands on a page, all without modifying the underlying server application. By default, TTS and ASR are disabled in the SAP package. See the [Voice Guide](../voice) for details. 
+EB 2.0 (and later) supports the injection of speech commands into legacy SAP applications using text-to-speech (TTS) technology, allowing apps to speak to app users. Apps also can accept speech inputs via automatic speech recognition (ASR) and execute certain commands on a page, all without modifying the underlying server application. By default, TTS and ASR are disabled in the SAP package. See the [Voice Guide](../voice) for details. 
 
 -----
 

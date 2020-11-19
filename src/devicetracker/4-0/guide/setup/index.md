@@ -14,10 +14,11 @@ This section discusses installation and configuration of Device Tracker. The cli
 1. **Install client APK file.** Ensure all permissions are granted.
 2. **Disable battery optimization,** to permit the client app to continue running in the background during doze mode (Android’s power-saving feature triggered when the device is in a prolonged suspended state).
 3. **Allow overlay permission _(optional)_.** If the Check-out feature is required to prevent users from accessing the device prior to scanning their unique user barcode, automatically allow the overlay permission for device check-out without manual intervention. See Check-out section for more information.
-4. **Launch the app and deploy server settings** to communicate with the cloud server.
+4. **Launch the app.** 
+5. **Deploy server settings** to communicate with the cloud server.
 
 <br>
-<p>Steps 1 to 3 can be accomplished by creating a <a href="#createstagenowinstallationprofile">StageNow installation profile</a> and step 4 by creating a <a href="#createstagenowconfigurationprofile">StageNow configuration profile.</a></p>
+<p>Steps 1 to 4 can be accomplished by creating a <a href="#createstagenowinstallationprofile">StageNow installation profile</a> and step 5 by creating a <a href="#createstagenowconfigurationprofile">StageNow configuration profile.</a></p>
 
 <p><b>Configuration of the Device Tracker solution:</b><p>
 

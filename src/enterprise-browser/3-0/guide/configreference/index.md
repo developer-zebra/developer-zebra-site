@@ -1597,7 +1597,7 @@ Forces a particular screen orientation (portrait or landscape) when an EB app la
 #### Example
 
 	:::xml
-	<LockOrientationvalue = "LANDSCAPE"/>
+	<LockOrientation value = "LANDSCAPE"/>
 
 -----
 

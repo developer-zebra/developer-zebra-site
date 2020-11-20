@@ -133,10 +133,141 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.Intent.stopListening()</code> 
 
+-----
+
+## ENABLE
+
+Used to enable or disable the Enterprise Keyboard.
+
+#### Parameter values:
+* **TRUE**: EKB enabled and shown whenever device user taps on an input field.
+* **FALSE**: EKB disabled and DOES NOT show even after using SHOW API or tapping on an input area.
+
+### Examples
+
+#####Enable EKB:
+
+        var bool = new Boolean(true);
+        var data= {'ENABLE' : bool};
+        var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
+        EB.Intent.send(params, intentReceived);
+
+
+#####Disable EKB:
+
+        bool = new Boolean(false);
+        var data= {'ENABLE' : bool};
+        var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
+        EB.Intent.send(params, intentReceived);
+
+
+-----
+
+## GET (available layouts)
+
+Returns a list of custom key layouts currently available in the device.
+
+### Example
+
+#####Get available key layouts:
+
+    var propertiesToRetrieve = ["AVAILABLE_LAYOUTS"];
+    var data= {'PROPERTIES_TO_GET' : propertiesToRetrieve};
+    var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_GET", "", "", "", "", "", data);
+    document.getElementById('availablelayouts').style.visibility = 'visible';
+    EB.Intent.send(params, availablelayouts);
+
+
+-----
+
+## GET (current layout)
+
+Returns the current key layout group and the current key layout name. If Enterprise Keyboard is the current keyboard, returns the currently selected EKB layout.
+
+### Example
+
+#####Get current key layout group and layout name:
+
+    var propertiesToRetrieve = ["CURRENT_LAYOUT_GROUP","CURRENT_LAYOUT_NAME"];
+    var data= {'PROPERTIES_TO_GET' : propertiesToRetrieve};
+    var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_GET", "", "", "", "", "", data);
+    EB.Intent.send(params, currentlayout);
+
+
+-----
+
+## SET (key layout)
+Sets the custom layout in Enterprise Keyboard. While sending the intent to set the key layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` parameters as extras. Once key layout is set in Enterprise Keyboard, requested application receives a response intent containing `RESULT_CODE` and `RESULT_MESSAGE` extras.
+
+### Example
+
+#####Set a custom layout for use by the app:
+
+    var layoutGroupName = document.getElementById('selectlayoutgroup').value;
+    var layout = document.getElementById('selectlayoutname').value ;
+    var bool = new Boolean(false);
+    var data= {'CURRENT_LAYOUT_GROUP' : layoutGroupName, 'CURRENT_LAYOUT_NAME': layout};
+    var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
+    EB.Intent.send(params, intentReceived);
+
+
+-----
+
+## SHOW
+
+Used to show or hide the specified key layout.
+
+**`IMPORTANT:`** An app CANNOT hide the keyboard using the SHOW API if the app contains logic to show the keyboard automatically when an activity comes to the foreground
+
+#### Parameter values:
+* **TRUE**: Keyboard is shown when activity is launched, even if the activity does not require input.
+* **FALSE**: Keyboard is not shown when activity is launched; shown only when the device user taps on an input field.
+
+### Examples
+
+#####Show the specified key layout:
+
+        var bool = new Boolean(true);
+        var data= {'SHOW' : bool};
+        var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
+        EB.Intent.send(params, intentReceived);
+        
+
+
+#####Hide the specified key layout:
+
+        var bool = new Boolean(false);
+        var data= {'SHOW' : bool};
+        var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_UPDATE", "", "", "", "", "", data);
+        EB.Intent.send(params, intentReceived);
+
+
+-----
+
+## RESET
+
+Resets and enables the specified Enterprise Keyboard fixed or custom layout based on current key layout selection. 
+
+#### Parameter values:
+* **TRUE**: Keyboard is reset
+* **FALSE**: Keyboard is not reset
+
+#### Notes
+* **If a custom layout is selected as the default**, the custom layout is reset and displayed when an input field gains focus.
+* **If a custom key layout is NOT selected as the default**, the Enterprise Keyboard fixed layout is reset and enabled (if previously disabled). EKB is displayed when an input field gains focus.
+
+### Example
+
+#####Reset and enable a custom key layout:
+
+        var bool = new Boolean(true);
+        var data= {'RESET_LAYOUT' : bool};
+        var params = new parameters(EB.Intent.BROADCAST, "", "com.symbol.ekb.api.ACTION_DO", "", "", "", "", "", data);
+        EB.Intent.send(params, intentReceived);
+
+-----
 
 ##Remarks
-
-
 
 ###Registering Intent Receiver
 

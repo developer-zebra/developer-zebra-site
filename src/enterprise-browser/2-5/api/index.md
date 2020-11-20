@@ -28,8 +28,6 @@ automenu:
           url: bluetooth
         - title: Camera
           url: camera
-        - title: CardReader
-          url: cardreader
         - title: Device
           url: device
         - title: Enterprise Keyboard

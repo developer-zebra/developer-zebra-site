@@ -41,7 +41,7 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 ###navigationBarVisibility
 
 ####Type
-<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+<span class='text-info'>BOOLEAN</span> 
 
 ####Description
 Controls display of the Android Navigation Bar (sometimes known as the System Bar) on the device, which contains the BACK, HOME and RECENT soft keys. **Suported on EB 3.0.6.0 and later**.

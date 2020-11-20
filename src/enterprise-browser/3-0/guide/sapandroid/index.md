@@ -214,7 +214,7 @@ EB 2.x (and later) provides configuration parameters for controlling the size of
     <SapCustomization>     
       <MobileEditDisabledWidth value="auto"/> 
     </SapCustomization>
-**NOTE**: The "auto" setting (default) automatically adjusts a read-only text field for the screen width of the device. 
+**NOTE**: The "auto" setting (default) automatically adjusts a read-only text field for the screen width of the device. **This parameter also can accept a fixed-width value (i.e. 20px)**. 
 <br>
 
 #### To customize style elements:

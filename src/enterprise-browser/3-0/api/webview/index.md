@@ -426,7 +426,7 @@ Gets the height of the HTML content.
 ###enableZoom
 
 ####Type
-<span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+<span class='text-info'>BOOLEAN</span> 
 
 ####Description
 Enables WebView to “pinch zoom” in and out of an image or web page using the two-finger gesture. **Supported on EB 3.0.6.0 and later**. Also can be configured using the 'EnableZoom' parameter in the `config.xml` file.

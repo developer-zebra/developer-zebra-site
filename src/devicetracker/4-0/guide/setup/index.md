@@ -1,5 +1,5 @@
 ---
-title: Install / Configure
+title: Install & Administration
 layout: guide.html
 product: Device Tracker
 productversion: "4.0"
@@ -278,7 +278,7 @@ Sample Delete Device .CSV file content:
 
 ### Import Site and AP Data
 
-When adding or modifying site and AP data, it is particularly important for the AP friendly name to be easily understood by users to aid in finding the location where the device is connected.  
+Import site and AP data to register the information with the server. When adding or modifying site and AP data, it is particularly important for the AP friendly name to be easily understood by users to aid in finding the location where the device is connected. A maximum of 20,000 records can be imported at one time. 
 
 <p>To import site/AP data from the AP .CSV file:</p>
 
@@ -292,7 +292,9 @@ When adding or modifying site and AP data, it is particularly important for the 
 
 ### Import Device Data
 
-To add/modify device data, import the device .CSV file:
+Import device data to register the device information along with a friendly name to aid in device identification. A maximum of 20,000 rcords can be imported at one time.
+
+<p>To add/modify device data, import the device .CSV file:</p>
 
 1. Copy the CSV file from the PC to the device root `\Internal shared storage` folder.
 2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
@@ -305,7 +307,7 @@ To add/modify device data, import the device .CSV file:
 
 ### Delete Device
 
-Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool.
+Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool. A maximum of 5,000 records can be removed at one time.
 
 <p><b>Prerequisite:</b> Prior to deleting a device, uninstall the Device Tracker application on the device.</p>
 
@@ -389,7 +391,7 @@ The password can be reset through the web portal or the client app if the admini
             * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
             * **Total licenses consumed -** quantity of licenses allocated to devices
         * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
-        * **Refresh data** button to refresh license data on-demand. The license information is updated once each day.
+        * **Sync Licenses** button to refresh license data on-demand. The license information is updated once each day.
         * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
 
 <!-- -->

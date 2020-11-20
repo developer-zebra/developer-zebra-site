@@ -33,6 +33,64 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 <!-- -->
 -----
+## Device Tracker Comparison
+Comparison of **[Device Tracker On-Prem](/devicetracker-onprem/latest/guide/about)** and **Device Tracker** cloud-based:
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="text-align:center">Features</th>
+    <th style="text-align:center">Device Tracker<br>On-Prem</th>
+    <th style="text-align:center">Device Tracker</th>
+  </tr>
+  <tr>
+    <td style="text-align:left">Host platform</td>
+    <td style="text-align:left">On-premise server, requires manual install and setup</td>
+    <td style="text-align:left">Cloud-based solution managed by Zebra</td>
+  </tr>
+  <tr>
+    <td>Maximum Devices Supported</td>
+    <td>500</td>
+    <td>100,000</td>
+  </tr>
+  <tr>
+    <td>Site support</td>
+    <td>Single; multiple sites require individual server installation at each location</td>
+    <td>Multi-site; centralized in-the-cloud supporting multiple locations up to 5,000 sites without any additional install required</td>
+  </tr>
+  <tr>
+    <td>Server setup required</td>
+    <td>Yes, Windows server with required software and other system requirements</td>
+    <td>No, server is in the cloud and managed by Zebra</td>
+  </tr>
+  <tr>
+    <td>Android platform support</td>
+    <td>Select devices only up to Android Pie</td>
+    <td>Select Android Oreo and Android 10 devices upon release</td>
+  </tr>
+  <tr>
+    <td>Common Features</td>
+    <td colspan="2">• Simple real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Registration of sites, APs and devices with friendly names for ease of identification<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Role-based access to find and manage devices based on administrator, site manager and associate roles<br>• Centralized dashboard</td>
+  </tr>
+  <tr>
+    <td>Device Check-out/<br>Check-in</td>
+    <td>No</td>
+    <td>Yes, identifies device user</td>
+  </tr>
+  <tr>
+    <td>Dashboard</td>
+    <td>Server-based dashboard view</td>
+    <td>Device-based dashboard view</td>
+  </tr>
+  <tr>
+    <td>Cost</td>
+    <td>Free</td>
+    <td>Licensed subscription service</td>
+  </tr>
+</table>
+
+
+<!-- -->
+-----
 
 ## Supported Devices
 

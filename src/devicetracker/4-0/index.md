@@ -9,7 +9,7 @@ menu:
       url: /devicetracker/4-0/guide/about
     - title: User Roles
       url: /devicetracker/4-0/guide/roles
-    - title: Install / Configure
+    - title: Install & Administration
       url: /devicetracker/4-0/guide/setup
     - title: License
       url: /devicetracker/4-0/guide/license

@@ -11,19 +11,14 @@ productversion: '5.0'
 
 ### Profile Process
 
-* During the [Configure](../stagingprofiles/#iiconfigure) phase, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. Greater numbers of settings requires more barcodes or larger `bin` files.
+* During the [Configure](#iiconfigure) phase, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. 
+ * **NOTE: It's important to understand that the number of settings entered in the Config phase effects the number of barcodes or the size of `.bin` files required for the Profile**.
 
-* The [Deployment](../stagingprofiles/#iiideployment) phase is for selecting 
+* The [Deployment](#iiideployment) phase is for selecting settings that do not reside in StageNow barcodes or local `.bin` files, but instead are stored in a file on a StageNow deployment server. This can help reduce the number of barcodes (or the size of `.bin` files) required for staging. However, **a network connection is required during staging** to connect the client device to the server and point to the deployment file. This connection and file direction MUST be set up in the Config section.  
 
-`FIXXXXX
+* [Review](#ivreview) presents all settings information entered in the Config and Deployment sections in a single page for easy validation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
 
-
-includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
- * **NOTE: The Deployment section does NOT appear** in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
-
-* [Review](../stagingprofiles/#ivreview) presents all settings information entered in the Config and Deployment sections in a single page for easy confirmation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
-
-* [Publish](../stagingprofiles/#vpublish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
+* [Publish](#vpublish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
 
 #### Also See
 
@@ -89,11 +84,7 @@ For example, entering "`tel:+18885551212`" in the Intent "URI" field places a ca
 -----
 
 ## I. Create a Profile
-The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. 
-
-`WORK THIS IN:
-The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
-
+The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. **NOTE**: The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
 
 When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
 
@@ -145,15 +136,15 @@ _Click image to enlarge; ESC to cancel_.
 
 The small round buttons adjacent to each oval button indicate the status of that section:
 
-  *  **A green check icon** indicates that section is complete.
+  *  **Green check** indicates that section is complete.
 
-  *  **A green eye icon** indicates the section being viewed.
+  *  **Green eye** indicates the section being viewed.
 
-  *  **An orange icon** with a pencil indicates the section that is in process.
+  *  **Orange icon with a pencil** indicates the section that is in process.
 
-  *  **An orange icon** with a pause indicates the section that is in process while viewing another section.
+  *  **Orange icon with a pause symbol** indicates a section in progress while viewing another section.
 
-  *  **A grayed-out oval** with no adjacent round button indicates a section not yet started.
+  *  **Grayed-out oval** with no adjacent round button indicates a section not yet started.
 
 Use the arrows at the beginning and end of the secondary banner to scroll through these sub-sections. 
 
@@ -250,9 +241,9 @@ _Click image to enlarge; ESC to cancel_.
 ## III. Deployment
 Use the Deployment section of the Wizard to specify the subset of the settings that define what the Profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
 
-**Note**: This section is not available on some Wizards. 
+> **NOTE**:The Deployment section does NOT appear in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
 
-Wizards that include the Deployment section require that device(s) access the Deployment Server in order to acquire the information provided there. Specifically, the device and the server should be on the same network, or there should be routing from the device network that allows connection to the Deployment Server. 
+Wizards that include a Deployment section require that device(s) establish a network connection for accessing the Deployment Server to acquire the remainder of the staging instructions. 
 
 <img alt="image" style="height:350px" src="../images/createprofile_deploy1.jpg"/>
 _Click image to enlarge; ESC to cancel_.

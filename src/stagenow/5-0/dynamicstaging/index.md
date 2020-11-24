@@ -75,9 +75,10 @@ If some departments in a store have differing numbers of a given variable (for i
 * **Variables can be used alone or in combination with static values** and/or other variables in the same field. 
 * Each row in the `.csv` file represents one set of data for a Dynamic Profile.
 * Row numbers within the `.csv` file are used to label barcode printouts for identification purposes. 
-* Dynamic Staging **supports plain text files only**. 
+* Dynamic Staging **supports plain text files only** for input. 
 * **Each variable MUST be separated by a semi-colon (;)** and each line must end with a semi-colon.
 * Dynamic Variables are supported ONLY for device settings and Staging Operator instruction fields.
+* **The Staging Operator instruction field** accepts only ONE variable. 
 * **If a percentage sign is to be part of the variable data**, <u>the percentage sign must first be declared as a variable</u>. See example below. 
 
 #### Using '%' as variable data
@@ -143,7 +144,7 @@ _Click image to enlarge; ESC to exit_.<br>
 <br>
 7. **`If errors occur`** refer to the [Troubleshooting section](#troubleshooting) below for instructions.  
 8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br> 
-Combine variables and static text as desired. An example is shown below.<br>
+Combine a variable with and static text as desired. An example is shown below.<br> **NOTE**: This field accepts ONE variable only.<br> 
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>

@@ -41,7 +41,7 @@ features:
    video: HeZvx6X53yI
    video_type: youtube
    button_text: Learn More      
- - image-location: left
+ - image-location: right
    title: Wake up and scan
    subtitle: New in DataWedge
    description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.  
@@ -89,7 +89,7 @@ features:
    video: MzCWdLUhEPY
    video_type: youtube
    button_text: Learn More 
- - image-location: left
+ - image-location: right
    title: Zebra Utility Simplifies DOM Injection 
    subtitle: GUI-based Enterprise Application Configurator works with EB 2.6+ 
    description: EAC 1.0 is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards, and can voice-enable fields for spoken input and/or output. 
@@ -97,46 +97,46 @@ features:
    video: 7aUm-IO9utM
    video_type: youtube
    button_text: Learn More 
- - image-location: right
+ - image-location: left
    title: Feature-based Licensing Puts Admins in Control 
    subtitle: License Manager in MX 10.2 allows per-feature implementation 
-   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.    
+   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.
    url: /mx/licensemgr/
    video: YLepzmANq2s
    video_type: youtube
    button_text: Learn More 
 comingsoon-heading: Coming Soon
 comingsoon:
- - image-location: left
+ - image-location: right
    title: Edge Detection Doc Capture
    subtitle: Coming Soon to DataWedge
    description: Easily capture an entire form with DataWedge without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
- - image-location: right
+ - image-location: left
    title: New term-based licensing for Enterprise Browser
    subtitle: Coming Soon to Enterprise Browser
    description: Term-based licensing is now available on Enterprise Browser. Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build enterprise apps with features such as barcode scanning, signature capture, payment processing, and printing.
    url: /enterprise-browser/3-0/guide/about/
    video: IjNspS96BNg
    video_type: youtube
-   button_text: Learn More  
- - image-location: left
+ - image-location: right
    title: Alert Button Can Save Time, Maybe Lives
    subtitle: MX 10.2 will let administrators program a key to do just about anything 
    description: Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
    url: /stagenow/latest/stagingprofiles/
    video: YpDATt5SU-o
    video_type: youtube
-   button_text: Learn More 
- - image-location: right
+   button_text: How to Use
+ - image-location: left
    title: New Touch Mode Panel Quickly Adapts to Change
    subtitle: Zebra's new quick-access panel changes touch modes on the fly 
    description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, allowing users to quickly switch modes to adapt to changes in their computing environment. 
    url: /mx/touchmgr
    video: kRHkg0JGj_Q
    video_type: youtube
+   button_text: About TouchMgr 
  - image-location: right
    title: Select Which Apps to Update Without Blocking All 
    subtitle: App Manager in MX 10.3 puts admins in control of device-app updates 
@@ -144,7 +144,7 @@ comingsoon:
    url: /mx/appmgr/
    video: t7J8e2rVcMM
    video_type: youtube
-   button_text: Learn More 
+   button_text: About AppMgr 
 ---
 <!-- WHEN NO ITEMS ARE COMING SOON
   add "-none" to the lines as follows:

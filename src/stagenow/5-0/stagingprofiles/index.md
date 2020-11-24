@@ -11,14 +11,14 @@ productversion: '5.0'
 
 ### Profile Process
 
-* During the [Configure](#iiconfigure) phase, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. 
+* During **the [Configure](#iiconfigure) phase**, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. 
  * **NOTE: It's important to understand that the number of settings entered in the Config phase effects the number of barcodes or the size of `.bin` files required for the Profile**.
 
-* The [Deployment](#iiideployment) phase is for selecting settings that do not reside in StageNow barcodes or local `.bin` files, but instead are stored in a file on a StageNow deployment server. This can help reduce the number of barcodes (or the size of `.bin` files) required for staging. However, **a network connection is required during staging** to connect the client device to the server and point to the deployment file. This connection and file direction MUST be set up in the Config section.  
+* **The [Deployment](#iiideployment) phase** is for selecting settings that do not reside in StageNow barcodes or local `.bin` files, but instead are stored in a file on a StageNow deployment server. This can help reduce the number of barcodes (or the size of `.bin` files) required for staging. However, **a network connection is required during staging** to connect the client device to the server and point to the deployment file. This connection and file direction MUST be set up in the Config section.  
 
-* [Review](#ivreview) presents all settings information entered in the Config and Deployment sections in a single page for easy validation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
+* **The [Review](#ivreview) phase** presents all settings information entered in the Config and Deployment sections in a single page for easy validation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
 
-* [Publish](#vpublish) allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
+* **The [Publish](#vpublish) phase)** allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes or NFC tags) for the completed Profile, as well as to test, publish and stage the Profile.
 
 #### Also See
 

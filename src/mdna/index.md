@@ -41,14 +41,6 @@ features:
    video: HeZvx6X53yI
    video_type: youtube
    button_text: Learn More      
- - image-location: right
-   title: Edge Detection Doc Capture
-   subtitle: New in DataWedge
-   description: Easily capture an entire form with DataWedge, without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
-   url: /datawedge/latest/guide/about/
-   video: DI8pxsTJdtI
-   video_type: youtube
-   button_text: Learn More
  - image-location: left
    title: Wake up and scan
    subtitle: New in DataWedge
@@ -57,14 +49,6 @@ features:
    button_text: Learn More
    video: bR_uJwpVZD0
    video_type: youtube
- - image-location: right
-   title: New term-based licensing for Enterprise Browser
-   subtitle: New in Enterprise Browser
-   description: Term-based licensing is now available on Enterprise Browser. Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build enterprise apps with features such as barcode scanning, signature capture, payment processing, and printing.
-   url: /enterprise-browser/3-0/guide/about/
-   video: IjNspS96BNg
-   video_type: youtube
-   button_text: Learn More  
  - image-location: left
    title: "MX 10.1: What's New in Mobility Extensions"
    subtitle: Major enhancements to Display, File, Touch and UI Managers 
@@ -105,14 +89,6 @@ features:
    video: MzCWdLUhEPY
    video_type: youtube
    button_text: Learn More 
- - image-location: right
-   title: Select Which Apps to Update Without Blocking All 
-   subtitle: App Manager in MX 10.3 puts admins in control of device-app updates 
-   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility let administrators decide which apps on a device can update and which should stay the same until explicitly allowed to update. 
-   url: /mx/appmgr/
-   video: t7J8e2rVcMM
-   video_type: youtube
-   button_text: Learn More 
  - image-location: left
    title: Zebra Utility Simplifies DOM Injection 
    subtitle: GUI-based Enterprise Application Configurator works with EB 2.6+ 
@@ -129,30 +105,53 @@ features:
    video: YLepzmANq2s
    video_type: youtube
    button_text: Learn More 
+comingsoon-heading: Coming Soon
+comingsoon:
+ - image-location: left
+   title: Edge Detection Doc Capture
+   subtitle: Coming Soon to DataWedge
+   description: Easily capture an entire form with DataWedge without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   url: /datawedge/latest/guide/about/
+   video: DI8pxsTJdtI
+   video_type: youtube
+ - image-location: right
+   title: New term-based licensing for Enterprise Browser
+   subtitle: Coming Soon to Enterprise Browser
+   description: Term-based licensing is now available on Enterprise Browser. Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build enterprise apps with features such as barcode scanning, signature capture, payment processing, and printing.
+   url: /enterprise-browser/3-0/guide/about/
+   video: IjNspS96BNg
+   video_type: youtube
+   button_text: Learn More  
  - image-location: left
    title: Alert Button Can Save Time, Maybe Lives
-   subtitle: MX 10.2 lets administrators program a key to do just about anything 
+   subtitle: MX 10.2 will let administrators program a key to do just about anything 
    description: Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
    url: /stagenow/latest/stagingprofiles/
    video: YpDATt5SU-o
    video_type: youtube
    button_text: Learn More 
-comingsoon-heading: Coming Soon
-comingsoon:
  - image-location: right
-   title: Coming Soon
-   description: Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
-   url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
-   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
-   video_type: html5
-   video_thumb: video_thumb.jpg
-   button_text: Learn More
+   title: New Touch Mode Panel Quickly Adapts to Change
+   subtitle: Zebra's new quick-access panel changes touch modes on the fly 
+   description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, allowing users to quickly switch modes to adapt to changes in their computing environment. 
+   url: /mx/touchmgr
+   video: kRHkg0JGj_Q
+   video_type: youtube
+ - image-location: right
+   title: Select Which Apps to Update Without Blocking All 
+   subtitle: App Manager in MX 10.3 puts admins in control of device-app updates 
+   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility let administrators decide which apps on a device can update and which should stay the same until explicitly allowed to update. 
+   url: /mx/appmgr/
+   video: t7J8e2rVcMM
+   video_type: youtube
+   button_text: Learn More 
 ---
-<!-- 
+<!-- WHEN NO ITEMS ARE COMING SOON
+  add "-none" to the lines as follows:
   comingsoon-heading-none
   comingsoon-none
   
-  REMOVE LINE FOR NO BUTTON: 
+  For no "Learn More" BUTTON, remove this line: 
   button_text: Learn More
  -->
 

@@ -18,5 +18,5 @@ Used to enter the host name(s) and/or IP address(es) for direct access by a devi
 
 **Input rules**: 
 
-* String from 1&ndash;256 characters containing one or more host names and/or IP addresses separated by commas. <br>For example: "www.MyBypassProxy.com,192.168.1.100,our.internalServer" 
-* IP addresses CANNOT begin with a wildcard (*) character
+* String from 1&ndash;256 characters containing one or more host names and/or IP addresses separated by commas. <br>Example: "www.MyBypassProxy.com,192.168.1.100,our.internalServer" 
+* **IP addresses CANNOT begin with a wildcard (*) character**

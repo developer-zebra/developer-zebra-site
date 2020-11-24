@@ -79,14 +79,14 @@ Important information pertaining to Device Tracker licensing:
 * The <a href="../setup/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
 * **License allocation and deallocation** is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. 
 * [Never Connected](../mgmt/#dashboard) devices are not licensed.
-* Due to a **limitation of Google Firebase Realtime Database transactions,** it supports a maximum retry count of 25 per transaction. This should be taken into consideration when deploying a large quantity of devices that reach this limit. Based on this, _Zebra recommends to enroll a maximum of 5,000 devices within 5 minutes._ If any licenses are not allocated within this time frame, they can be allocated as follows:
-
-        * Automatic license allocation every 4 hours.
-        * Manual license allocation by the admin via **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen from the web portal.
+* Due to a **constraint from Google Firebase,** an attempt to activate licenses on more than 5,000 devices within a span of 5 minutes can result in a denial of licenses to devices. **Zebra strongly recommends limiting license activation to a maximum of 5,000 devices within 5 minutes.** To circumvent Google’s constraint:
+ 
+        * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
+        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen on the Device Tracker web portal.
 * When **allocating licenses to unlicensed devices,** license allocation is based on license availabilty and the enroll time with the server. Methods for license allocation:
 
-        * Automatic license allocation every 4 hours.
-        * Manual license allocation by the admin via **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen from the web portal.
+        * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
+        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen on the Device Tracker web portal.
 
 
 

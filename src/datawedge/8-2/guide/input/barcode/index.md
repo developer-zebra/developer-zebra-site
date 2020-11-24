@@ -1425,6 +1425,7 @@ _When UDI scanning mode is enabled (as above)_...
 * **UDI decoding is supported only on the devices listed above**. 
 * **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
 * UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
+* **Blood bags with barcodes that follow the ICCBBA standard** can be decoded with UDI.
 
 -----
 

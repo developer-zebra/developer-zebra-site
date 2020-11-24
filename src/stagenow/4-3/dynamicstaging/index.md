@@ -143,8 +143,8 @@ _Click image to enlarge; ESC to exit_.<br>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 7. **`If errors occur`** refer to the [Troubleshooting section](#troubleshooting) below for instructions.  
-8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br>**NOTE**: This field accepts ONE variable only.<br>
-Combine variables and static text as desired. An example is shown below.<br>
+8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br>
+Combine a variable and static text as desired. An example is shown below.<br>**NOTE**: This field **accepts *ONE* variable** only.<br>
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>

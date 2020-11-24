@@ -369,7 +369,10 @@ To unpublish a Profile to remove operator access, select Unpublish.
 -->
 
 ### NFC Profile Staging
-To stage an NFC Profile:
+
+> **`IMPORTANT:`** Data contained in the `.bin` files for NFC or USB/SD Card staging is limited to the equivalent of two (2) barcode PDF files. <br><br> If “file too long" (or similar) appears, move settings in the "Config" section of the Profile to the "Deployment" section until the barcodes generated for the Profile requires no more than two (2) PDFs. 
+
+**To stage an NFC Profile**:
 
 1. Select the NFC tab. 
     <img alt="image" style="height:350px" src="../images/Publish_NFCTab.jpg"/>
@@ -378,7 +381,7 @@ To stage an NFC Profile:
 
 2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
 
-3. Select Test to test the functionality of the Profile before publishing. This saves the NFC tag as a .bin file for testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
+3. Select Test to test the functionality of the Profile before publishing. This saves the NFC tag as a `.bin` file for testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
 
 4. If the staging material functions properly, select Publish to publish the material for operator use. 
 
@@ -388,12 +391,12 @@ To stage an NFC Profile:
 
 6. Select Publish Now.
 
-7. To make the Profile available for staging, select Stage. This save the NFC tag as a .bin file that devices can read for staging. See [Device Staging](../stageclient).
+7. To make the Profile available for staging, select Stage. This saves the NFC tag as a `.bin` file that devices can read for staging. See [Device Staging](../stageclient).
 
 8. To export the Profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 
-To unpublish a Profile to remove operator access, select Unpublish.
+To unpublish a Profile and remove operator access, select Unpublish.
 
 -----
 
@@ -413,7 +416,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
-* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found. About [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
 
 >**Note**: Staging Profiles stored on an SD card take precedence over USB.
 

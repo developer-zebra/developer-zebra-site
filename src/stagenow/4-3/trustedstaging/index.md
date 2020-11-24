@@ -15,11 +15,11 @@ productversion: '4.3'
 
 * StageNow 4.0 (or higher) installed
 * Zebra device(s) with MX 9.2 or higher
-* Self-signed security "Trusted Certificate" (`.pfx` file of 1024 bytes or less)
+* Self-signed security "Trusted Certificate" (`.pfx` file of exactly 1024 bytes)
 
 #### Process Snapshot:
 
-1. Create a Trusted Certificate `.pfx` file (1024 bytes or less)
+1. Create a Trusted Certificate `.pfx` file (**must be <u>exactly</u> 1024 bytes**)
 2. Import the Trusted Certificate into StageNow
 3. Deploy the Trusted Certificate to device(s) to make them Trusted Device(s)<br> 
  `NOTES:`<br>
@@ -44,7 +44,7 @@ productversion: '4.3'
  <img alt="image" style="height:350px" src="SN4_12.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
- `CAUTION:` **Certificate files must NOT be greater than 1024 bytes in size**. 
+ `CAUTION:` **Certificate files must be exactly 1024 bytes in size**. 
 3. **Navigate to the** `.pfx` **file being imported**:
   <img alt="image" style="height:350px" src="SN4_03.png"/>
   _Click image to enlarge; ESC to exit_.<br>

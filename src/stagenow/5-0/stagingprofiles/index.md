@@ -370,7 +370,7 @@ To unpublish a Profile to remove operator access, select Unpublish.
 
 ### NFC Profile Staging
 
-> **`IMPORTANT:`** Data contained in the `.bin` files for NFC or USB/SD Card staging is limited to the equivalent of two (2) barcode PDF files. <br><br> If “file too long" (or similar) appears, move settings in the "Config" section of the Profile to the "Deployment" section until the barcodes generated for the Profile requires no more than two (2) PDFs. 
+> **`IMPORTANT:`** Data contained in the `.bin` files for NFC or USB/SD Card staging is limited to the equivalent of two (2) barcode PDF files. <br><br> **If “file too long" (or similar) message appears** when generating the file, reduce the file size by moving settings in the "Config" section of the Profile to the "Deployment" section until the barcodes generated for the Profile requires no more than two (2) PDFs. 
 
 **To stage an NFC Profile**:
 

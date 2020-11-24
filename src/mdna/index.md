@@ -137,7 +137,24 @@ features:
    video: YpDATt5SU-o
    video_type: youtube
    button_text: Learn More 
+comingsoon-heading: Coming Soon
+comingsoon:
+ - image-location: right
+   title: Coming Soon
+   description: Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
+   url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
+   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
+   video_type: html5
+   video_thumb: video_thumb.jpg
+   button_text: Learn More
 ---
+<!-- 
+  comingsoon-heading-none
+  comingsoon-none
+  
+  REMOVE LINE FOR NO BUTTON: 
+  button_text: Learn More
+ -->
 
 <style>
 h2 a {

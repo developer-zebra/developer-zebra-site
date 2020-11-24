@@ -22,6 +22,24 @@
 
         {{/each}}
 
+        {{#if comingsoon-heading}}
+            <hr>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">{{comingsoon-heading}}</h2></div>
+            </div>
+        
+        {{/if}}
+
+
+        {{#each comingsoon}}
+            {{#if_eq image-location 'right'}}
+                {{> feature-right }}
+            {{else }}
+                {{> feature-left }}
+            {{/if_eq}}
+
+        {{/each}}
+
 
     </section>
     

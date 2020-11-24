@@ -7,15 +7,19 @@ productversion: '5.0'
 
 ## Overview
 
-**This section describes how to create, deploy and manage staging Profiles**, which are used to configure Zebra devices based on settings input by the staging administrator.
+**This section describes how to create, deploy and manage staging Profiles** from settings input by the staging administrator. The StageNow desktop tool converts Profiles into barcodes or binary files to be consumed by the StageNow client app for configuring Zebra devices. 
 
-### Staging Process
+### Profile Process
 
-* [Config](../stagingprofiles/#iiconfigure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes or binary (`.bin`) files for deployment through a USB port or NFC tag. The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
+* During the [Configure](../stagingprofiles/#iiconfigure) phase, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. Greater numbers of settings requires more barcodes or larger `bin` files.
 
-* [Deployment](../stagingprofiles/#iiideployment) includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
+* The [Deployment](../stagingprofiles/#iiideployment) phase is for selecting 
 
-> **NOTE**: The Deployment section does NOT appear in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
+`FIXXXXX
+
+
+includes settings that do not reside in StageNow barcodes or NFC tags. It is represented as a file on the StageNow deployment server and therefore **requires a network connection**. Reading the barcode or NFC tag created in the Config section connects the client device to the server and points to this file for deployment. 
+ * **NOTE: The Deployment section does NOT appear** in "Connect Network," "Manage Device Security" or "Wipe a Device" Wizards.
 
 * [Review](../stagingprofiles/#ivreview) presents all settings information entered in the Config and Deployment sections in a single page for easy confirmation. From here, the administrator can return to any setting to update it, add comments to the Profile and finish creating the Profile.
 
@@ -85,7 +89,13 @@ For example, entering "`tel:+18885551212`" in the Intent "URI" field places a ca
 -----
 
 ## I. Create a Profile
-The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
+The staging administrator uses the provided StageNow Wizards to configure settings that define software configuration and installation for enterprise devices. 
+
+`WORK THIS IN:
+The number of settings created in this section affects the number of barcodes and/or `.bin` files generated to configure device(s). 
+
+
+When creating a Profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
 
 <img alt="image" style="height:100px" src="../images/banner.jpg"/>
 _Click image to enlarge; ESC to cancel_.

@@ -78,6 +78,7 @@ If some departments in a store have differing numbers of a given variable (for i
 * Dynamic Staging **supports plain text files only**. 
 * **Each variable MUST be separated by a semi-colon (;)** and each line must end with a semi-colon.
 * Dynamic Variables are supported ONLY for device settings and Staging Operator instruction fields.
+* **The Staging Operator instruction field** accepts ONE variable only.
 * **If a percentage sign is to be part of the variable data**, <u>the percentage sign must first be declared as a variable</u>. See example below. 
 
 #### Using '%' as variable data
@@ -142,7 +143,7 @@ _Click image to enlarge; ESC to exit_.<br>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
 7. **`If errors occur`** refer to the [Troubleshooting section](#troubleshooting) below for instructions.  
-8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br> 
+8. When testing is completed, **click Publish**. A prompt appears for entering Staging Operator instructions.<br>**NOTE**: This field accepts ONE variable only.<br>
 Combine variables and static text as desired. An example is shown below.<br>
  <img alt="image" style="height:350px" src="SN41_dynamic_06.png"/>
  _Click image to enlarge; ESC to exit_.<br>

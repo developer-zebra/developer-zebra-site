@@ -226,7 +226,8 @@ The Publish section of the Wizard permits selection of a staging method, testing
 -----
 
 ### Barcode Profile Staging
-To stage a barcode Profile:
+
+**To stage a barcode Profile**:
 
 1. Select the Barcode tab: 
     <img alt="image" style="height:450px" src="../images/sn210_publish.png"/>
@@ -309,7 +310,10 @@ To unpublish a Profile to remove operator access, select Unpublish.
 -->
 
 ### NFC Profile Staging
-To stage an NFC Profile:
+
+> **`IMPORTANT:`** Data contained in the `.bin` files for NFC or USB/SD Card staging is limited to the equivalent of two (2) barcode PDF files. **If “file too long" (or similar) message appears** when generating the file, reduce the file size by moving settings in the "Config" section of the Profile to the "Deployment" section until the barcodes generated for the Profile requires no more than two (2) PDFs. 
+
+**To stage an NFC Profile**:
 
 1. Select the NFC tab. 
     <img alt="image" style="height:350px" src="../images/Publish_NFCTab.jpg"/>

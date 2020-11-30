@@ -146,23 +146,24 @@ Network requirements for communication between the device client app and the clo
 
 * The following URLs must be allowed through the firewall or proxy:
         * URLs accessed by device:
-            * *.google.com
-            * *.googleapis.com
-            * http://connectivitycheck.gstatic.com  <br>(required by Google for Android to connect to a wireless network)
-            * https://[ProjectID].firebaseio.com  <br>(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
+            * `*.google.com`
+            * `*.googleapis.com`
+            * `http://connectivitycheck.gstatic.com`  <br>(required by Google for Android to connect to a wireless network)
+            * `https://[ProjectID].firebaseio.com`  <br>(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
+            * `https://us-central1-[projectID].cloudfunctions.net`  <br>(required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
         * URL accessed by the admin on a PC:
             * Web portal URL - supplied by Zebra during the cloud setup process
 <br>
 
 <p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
 
-* https://www.googleapis.com
-* https://firestore.googleapis.com
-* https://cloudfunctions.googleapis.com
-* https://firebaseinstallations.googleapis.com
-* https://play.googleapis.com
-* https://www.google.com
-* https://us-central1-[projectID].cloudfunctions.net  <br>(where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
+* `https://www.googleapis.com`
+* `https://firestore.googleapis.com`
+* `https://cloudfunctions.googleapis.com`
+* `https://firebaseinstallations.googleapis.com`
+* `https://play.googleapis.com`
+* `https://www.google.com`
+
 <!-- * https://android.googleapis.com
 * https://update.googleapis.com
 * https://growth-pa.googleapis.com

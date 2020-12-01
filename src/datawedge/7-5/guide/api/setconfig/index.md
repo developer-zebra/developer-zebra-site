@@ -1863,7 +1863,7 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 		<td>Integer from 0–1000</td>
 	</tr>
 	<tr>
-		<td>keystroke_delay_control_char</td>
+		<td>keystroke_delay_control_chars</td>
 		<td>Integer from 0–1000</td>
 	</tr>
 	<tr>
@@ -2734,7 +2734,7 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 	    bParams.putString("keystroke_output_enabled","true");
 	    bParams.putString("keystroke_action_char","9"); // 0, 9 , 10, 13
 	    bParams.putString("keystroke_delay_extended_ascii","500");
-	    bParams.putString("keystroke_delay_control_char","800");
+	    bParams.putString("keystroke_delay_control_chars","800");
 	    bConfig.putBundle("PARAM_LIST", bParams);
 
 	    configBundle.putBundle("PLUGIN_CONFIG", bConfig);
@@ -2969,7 +2969,7 @@ Command and configuration intent parameters determine whether to send result cod
 	    Bundle bParams = new Bundle();
 	    bParams.putString("keystroke_output_enabled","true");
 	    if(ctrlCharacterDelayValue!=null){
-	        bParams.putString("keystroke_delay_control_char",ctrlCharacterDelayValue+"");
+	        bParams.putString("keystroke_delay_control_chars",ctrlCharacterDelayValue+"");
 	    }
 	    if(genericCharacterDelayValue !=null){
 	        bParams.putString("keystroke_character_delay", genericCharacterDelayValue +"");

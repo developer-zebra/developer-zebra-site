@@ -1504,7 +1504,7 @@ See [DCP Input](../../input/dcp).
 		<td>true<br>false</td>
 	</tr>
 	<tr>
-		<td>keystroke_action_character</td>
+		<td>keystroke_action_char</td>
 		<td>NONE - ASCII_NO_VALUE<br>TAB - ASCII_TAB_VALUE<br>LF - ASCII_LF_VALUE<br>CR - ASCII_CR_VALUE</td>
 	</tr>
 	<tr>
@@ -1512,7 +1512,7 @@ See [DCP Input](../../input/dcp).
 		<td>Integer from 0–1000</td>
 	</tr>
 	<tr>
-		<td>keystroke_delay_control_characters</td>
+		<td>keystroke_delay_control_chars</td>
 		<td>Integer from 0–1000</td>
 	</tr>
 	<tr>

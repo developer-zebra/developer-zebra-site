@@ -333,7 +333,12 @@ The web portal provides administrators the capabilities to:
 * view license information
 * enable check-in/check-out (optional)
 <br>
-<p>In a supported browser (Chrome, Edge, or Safari), enter the URL shared by Zebra to access the web portal. For first-time use, login with the super administrator (SuperAdmin) credentials provided by Zebra.</p>
+<p>In a supported browser, enter the URL shared by Zebra to access the web portal. For first-time use, login with the super administrator (SuperAdmin) credentials provided by Zebra.</p>
+
+Supported browsers:
+* Chrome
+* Edge
+* Safari (v14.0 and later)
 
 ### Add User
 

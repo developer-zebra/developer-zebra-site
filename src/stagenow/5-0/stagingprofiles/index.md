@@ -11,6 +11,8 @@ productversion: '5.0'
 
 ### Profile Process
 
+Device staging is broken into four parts, all of which center around a staging Profile created to contain device configuration settings entered by the administrator. 
+
 * During **the [Configure](#iiconfigure) phase**, device Settings Types (CSPs) are selected and information for each is entered into StageNow and stored in barcodes or binary (`.bin`) files to be consumed by the StageNow client app on the device. 
  * **NOTE: It's important to understand that the number of settings entered in the Config phase effects the number of barcodes or the size of `.bin` files required for the Profile**.
 

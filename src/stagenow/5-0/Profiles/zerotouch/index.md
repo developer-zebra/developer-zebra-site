@@ -4,7 +4,7 @@ layout: guide.html
 product: StageNow
 productversion: '5.0'
 ---
-Use this Wizard to configure the network settings of a "factory fresh" or factory-reset device to enable connection to the internet through Ethernet, Wi-Fi or a non-public cellular APN. This enables the device to access internet-based Google Zero Touch servers, which perform Device Owner Enrollment in an Enterprise Mobile Management (EMM) system, rendering the device manageable with no user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
+Use this Wizard to configure the network settings of a "factory fresh" or factory-reset device to enable connection to the internet through Ethernet, Wi-Fi or a non-public cellular APN. This enables the device to access internet-based Google Zero Touch servers, which perform Device Owner Enrollment in an Enterprise Mobile Management (EMM) system, rendering the device manageable with minimal user interaction. **Settings entered in this Wizard can be persisted on the device** following an Enterprise Reset, further automating subsequent enrollments. 
 
 ### Requirements
 

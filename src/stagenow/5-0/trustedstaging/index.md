@@ -205,15 +205,16 @@ This section describes how to generate a trusted certificate (`.pfx` file) for i
 
 ### I. Generate a private key  
 
+Before beginning, open a command-prompt window and navigate to the folder containing OpenSSL. 
+
 1. At a command prompt, enter the following command to instruct OpenSSL to generate an RSA Private Key:
 
-        :::XML
+        :::terminal
         genrsa -des3 -out server.key 1024 
 
-2. A prompt appears asking for a pass phrase. Enter any pass phrase and record it for later reference. 
+2. A prompt appears asking for a pass phrase. Create and **enter a pass phrase** (and record it for later reference). 
 
-
-c) The server.key is generated; this is required later in the procedure. ( type “start .” from the command prompt to go to default location where server.key is generated) 
+3. The server.key is generated; this is required later in the procedure. ( type “start .” from the command prompt to go to default location where server.key is generated) 
 
  and Certificate Signing Request (CSR)
 
@@ -228,12 +229,12 @@ The CSR is sent to a Certificate Authority, such as Verisign, that verifies the 
 
  The command to generate the CSR is as follows:
 
-    :::xml
-    req –new –key private_key_file_name.key -sha256 –out csr_file_name.csr
+        :::terminal
+        req –new –key private_key_file_name.key -sha256 –out csr_file_name.csr
 
 1. Enter the following command at the prompt:
 
-        :::xml
+        :::terminal
         req -new -key server.key -sha256  -out server.csr
 
 2. This command prompts for the following X.509 attributes of the certificate.
@@ -265,7 +266,7 @@ This example uses a self-signed certificate method by using the OpenSSL tool to 
  
 1. To generate a temporary certificate, which is good for 365 days, issue the following command:
 
-        :::xml
+        :::terminal
         x509 -req -days 365 -in server.csr -signkey server.key -sha256 -out server.crt
 
 Signature ok
@@ -289,10 +290,10 @@ Now you should have generated .key and .crt file handy. These two files are used
   
 Give following command in command prompt :
 
-pkcs12 -export -out filename.pfx -inkey filename.key -in filename.crt
+    :::terminal
+    pkcs12 -export -out filename.pfx -inkey filename.key -in filename.crt
 
-filename.pfx is the name of pfx certificate you want to generate, filename.key is the name of the .key file generated in earlier steps and filename.crt is the name of the .crt file generated in earlier steps 
+`filename.pfx` is the name of `.pfx` certificate you want to generate, `filename.key` is the name of the `.key` file generated in earlier steps and `filename.crt` is the name of the `.crt` file generated in earlier steps. 
 
- 
-Now our pfx certificate is generated and ready to be used in stagenow. 
+#### The certificate is ready to be used in StageNow. 
 

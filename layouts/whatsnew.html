@@ -7,24 +7,28 @@
         {{#if features-heading}}
             <div class="row">
                 <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">{{features-heading}}</h2></div>
+        <h3><a href="#coming">Jump to Coming Soon section</a></h3>
+
             </div>
         
         {{/if}}
 
     </section>
     <section id="blog" class="container" >
-            
+        
         {{#each features}}
             {{#if_eq image-location 'right'}}
-                {{> feature-right }}
+                {{> feature-right }} 
+                <hr>
             {{else }}
-                {{> feature-left }}
+                {{> feature-left }} 
+                <hr>
             {{/if_eq}}
 
         {{/each}}
 
         {{#if comingsoon-heading}}
-            <hr>
+        <a id="coming"></a>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">{{comingsoon-heading}}</h2></div>
             </div>
@@ -35,8 +39,10 @@
         {{#each comingsoon}}
             {{#if_eq image-location 'right'}}
                 {{> feature-right }}
+                <hr>
             {{else }}
                 {{> feature-left }}
+                <hr>
             {{/if_eq}}
 
         {{/each}}

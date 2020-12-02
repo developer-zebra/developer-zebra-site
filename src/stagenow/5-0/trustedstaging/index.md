@@ -194,6 +194,9 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 
 ## Create a Trusted Certificate
 
+### `UNDER CONSTRUCTION`
+
+
 This section describes how to generate a trusted certificate (`.pfx` file) for importing into StageNow to facilitate Trusted Staging. The importing process is described in the sections above. 
 
 ### Requirements
@@ -223,22 +226,28 @@ Before beginning, open a command-prompt window and navigate to the folder contai
 ### II. Generate a CSR
 
 After the private key is generated, you can generate a Certificate Signing Request.
-The CSR is sent to a Certificate Authority, such as Verisign, that verifies the identity of the requestor and issues a signed certificate.
- During the generation of the CSR, you are prompted for several pieces of information.       These are the X.509 attributes of the certificate.
- SHA-2 for Certificates has to be generated. 
+The CSR is sent to a Certificate Authority, such as Verisign, that verifies the identity of the requester and issues a signed certificate.
 
- The command to generate the CSR is as follows:
+During the generation of the CSR, you are prompted for several pieces of information.
+
+These are the X.509 attributes of the certificate.
+
+SHA-2 for Certificates has to be generated. 
+
+1. At the command prompt, enter the following command:
 
         :::terminal
         req –new –key private_key_file_name.key -sha256 –out csr_file_name.csr
 
-1. Enter the following command at the prompt:
+2. Enter the following command at the prompt:
 
         :::terminal
         req -new -key server.key -sha256  -out server.csr
 
-2. This command prompts for the following X.509 attributes of the certificate.
+3. This command prompts for the following X.509 attributes of the certificate.
+
 Enter appropriate information based on the environment; 
+
 You can leave all these options empty by clicking on enter button
 
 * Country Name (2 letter code) [GB]: For example: US or CA.

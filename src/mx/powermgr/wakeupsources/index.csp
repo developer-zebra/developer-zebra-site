@@ -6,7 +6,7 @@ order: 51
 mx: "8.0"
 osx: "7.7"
 devicetype: A,B
-info: Supported on SDM660-platform devices with MX 9.2 or later only. Otherwise supported only on TC20/TC25 devices.
+info: Supported on SDM660-platform devices with MX 9.2 or later only. Otherwise supported only on TC20/TC25 devices. Scan trigger not supported as wake-up source on ET51 tablet. 
 parm:
   pivotal: Yes
   name: WakeUpSources

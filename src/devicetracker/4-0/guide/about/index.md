@@ -169,6 +169,16 @@ Network requirements for communication between the device client app and the clo
 * https://growth-pa.googleapis.com
 * https://android.clients.google.com -->
 
+
+<!-- -->
+-----
+## Known Issues
+
+Known issues in Device Tracker 4.0:
+* After repeatedly launching the Device Tracker application over several weeks without rebooting the device, the app may become unresponsive. If this occurs, relaunch the application to continue operation. A fix will be provided in the next release.
+* When there are multiple pools of licenses with different expiration dates, an incorrect or negative license count is reported when the licenses expire.
+
+
 <!-- -->
 -----
 

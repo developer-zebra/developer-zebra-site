@@ -7,14 +7,14 @@ productversion: '5.0'
 
 ## Overview
 
-**StageNow 4.0 (and higher) supports Trusted Staging**, which can protect devices with MX 9.2 and higher from unauthorized staging. Trusted devices are created from a security certificate. Once a certificate is used to create a trusted device, the device can be staged only from barcodes created using the same security certificate.
+**StageNow 4.0 (and later) supports Trusted Staging**, which can protect devices with MX 9.2 and later from unauthorized staging. Trusted devices are created from a security certificate. Once a certificate is used to create a trusted device, the device can be staged only from barcodes created using the same security certificate.
 
 > **`IMPORTANT:`** Access to Trusted Staging and Trusted Devices is possible only by Windows users with administrative privileges.
 
 #### Requirements: 
 
-* StageNow 4.0 (or higher) installed
-* Zebra device(s) with MX 9.2 or higher
+* StageNow 4.0 (or later) installed
+* Zebra device(s) with MX 9.2 or later
 * Self-signed security "Trusted Certificate" (`.pfx` file of exactly 1024 bytes)
 
 #### Process Snapshot:
@@ -26,6 +26,8 @@ productversion: '5.0'
  • This activates Trusted Staging on target device(s)<br>
  • Such device(s) no longer accept standard ("untrusted") Profiles
 4. Create Trusted Profile(s) for use on Trusted Device(s)
+
+**How to [create a `.pfx` file](#createatrustedcertificate)**
 
 -----
 
@@ -189,4 +191,108 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 **The device is now removed from Trusted Mode and can be staged using ordinary staging Profiles**. 
 
 -----
+
+## Create a Trusted Certificate
+
+This section describes how to generate a trusted certificate (`.pfx` file) for importing into StageNow to facilitate Trusted Staging. The importing process is described in the sections above. 
+
+### Requirements
+* Computer running Windows 
+* The latest version of OpenSSL [Download OpenSSL](https://www.openssl.org/source/) 
+* Path to OpenSSL directory added to system environment variables
+
+-----
+
+### I. Generate a private key  
+
+1. At a command prompt, enter the following command to instruct OpenSSL to generate an RSA Private Key:
+
+        :::XML
+        genrsa -des3 -out server.key 1024 
+
+2. A prompt appears asking for a pass phrase. Enter any pass phrase and record it for later reference. 
+
+
+c) The server.key is generated; this is required later in the procedure. ( type “start .” from the command prompt to go to default location where server.key is generated) 
+
+ and Certificate Signing Request (CSR)
+
+-----
+
+### II. Generate a CSR
+
+After the private key is generated, you can generate a Certificate Signing Request.
+The CSR is sent to a Certificate Authority, such as Verisign, that verifies the identity of the requestor and issues a signed certificate.
+ During the generation of the CSR, you are prompted for several pieces of information.       These are the X.509 attributes of the certificate.
+ SHA-2 for Certificates has to be generated. 
+
+ The command to generate the CSR is as follows:
+
+    :::xml
+    req –new –key private_key_file_name.key -sha256 –out csr_file_name.csr
+
+1. Enter the following command at the prompt:
+
+        :::xml
+        req -new -key server.key -sha256  -out server.csr
+
+2. This command prompts for the following X.509 attributes of the certificate.
+Enter appropriate information based on the environment; 
+You can leave all these options empty by clicking on enter button
+
+* Country Name (2 letter code) [GB]: For example: US or CA.
+* State or Province Name (full name) [Berkshire]: For example: California
+* Locality Name (eg, city) [Newbury]: For example: Berkeley
+* Organization Name (eg, company) [My Company Ltd]: For example: BlueCoat
+* Organizational Unit Name (eg, section) []:For example: IT
+* Common Name (eg, your name or your server's hostname) []:For example: bluecoat.com
+* Email Address []:For example: martin.John@bluecoat.com
+
+Enter the following "extra" attributes to be sent with the certificate request:
+* A challenge password []:
+* An optional company name []:
+ 
+3. The server.csr is generated in the OpenSSL default and can be used to submit to a certificate authority (CA) for signing.
+
+-----
+
+### III. Generate a Self-Signed Certificate
+
+As mentioned above, you must send the CSR to Certificate Authority, such as Verisign, that verifies the identity of the requester and issues a signed certificate.
+Or you can use self-sign the CSR if you either do not plan to have your certificate signed by a CA or you want to just test it only while the CA is signing your certificate.
+
+This example uses a self-signed certificate method by using the OpenSSL tool to generate a temporary certificate that generates an error in the client browser to the effect that the signing certificate authority is unknown and not trusted.
+ 
+1. To generate a temporary certificate, which is good for 365 days, issue the following command:
+
+        :::xml
+        x509 -req -days 365 -in server.csr -signkey server.key -sha256 -out server.crt
+
+Signature ok
+
+subject=/C=US/ST=California/L=Berkeley/O=BlueCoat/OU=IT/CN=bluecoat.com/em
+
+ailAddress = martin.john@bluecoat.com
+
+Getting Private key
+
+Enter pass phrase for server.key:
+
+2. You must enter the pass phrase for the server.key that you entered in the step 1 above.
+3. The server.crt generates in your default location  and you need to use this CRT to convert it to PEM format, which can be readable by Reporter.
+
+-----
+
+### IV. Convert the CRT to PEM format
+
+Now you should have generated .key and .crt file handy. These two files are used to generate pfx certificate
+  
+Give following command in command prompt :
+
+pkcs12 -export -out filename.pfx -inkey filename.key -in filename.crt
+
+filename.pfx is the name of pfx certificate you want to generate, filename.key is the name of the .key file generated in earlier steps and filename.crt is the name of the .crt file generated in earlier steps 
+
+ 
+Now our pfx certificate is generated and ready to be used in stagenow. 
 

@@ -175,6 +175,7 @@ Network requirements for communication between the device client app and the clo
 ## Known Issues
 
 Known issues in Device Tracker 4.0:
+* When installing the application on a mobile device using an EMM, some EMMs do not grant all the required permissions for the application to run in the background to track the device. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM granting all permissions. Refer to the [Install guide](../setup)
 * After repeatedly launching the Device Tracker application over several weeks without rebooting the device, the app may become unresponsive. If this occurs, relaunch the application to continue operation. A fix will be provided in the next release.
 * When there are multiple pools of licenses with different expiration dates, an incorrect or negative license count is reported when the licenses expire.
 

@@ -195,7 +195,7 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 
 ## Create a Trusted Certificate
 
-This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create the certificate and Certificate Signing Request (CSR) for submission to a Certificate Authority for signing. **A familiarity with use of command-line tools is required**. Learn more about [OpenSSL CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html).
+This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create the certificate and Certificate Signing Request (CSR) for submission to a certificate authority for signing. **A familiarity with use of command-line tools is required**. Learn more about [OpenSSL CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html).
 
 > **Before beginning, please [download OpenSSL](https://www.openssl.org/source/)** and install it.
 
@@ -206,40 +206,46 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 **NOTE**: To prepare an *existing* private key for CA submission, skip to Step 4. 
 
 1. **Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
-2. Enter the following command to generate a private key:
+2. **Generate a private key** using the following command:
 
         :::terminal
         genrsa -des3 -out server.key 1024 
-<br>
+
   A prompt appears asking for a pass phrase. 
 
 3. Create and **enter a pass phrase** (and record it for later reference).<br>
   A file called `server.key` is created in the current directory. This will be used later. 
-4. Generate a CSR for submission to a CA: 
+4. **Generate a key and CSR for submission to a CA** using the following command: 
 
         :::terminal
         req –new –key private.key -sha256 –out CSR.csr
 
-5. Enter the following command at the prompt:
+5. Enter the following command to make a CSR for the server-side certificate:
 
         :::terminal
         req -new -key server.key -sha256  -out server.csr
-<br>
+        
  A prompt appears for the X.509 attributes of the certificate. <br> 
- Enter information based on the environment or leave blank by hitting the ENTER key<br>
+
+6. Enter information based on the environment or leave blank by hitting the ENTER key.<br>
 
 **The** `server.csr` **is generated** and can be submitted to a CA for signing.
 
 -----
 
-### III. Generate a Self-Signed Certificate
+### Self-Signed Certificate
 
-As mentioned above, you must send the CSR to Certificate Authority, such as Verisign, that verifies the identity of the requester and issues a signed certificate.
+A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. 
+
+
+As mentioned above, you must send the CSR to certificate authority, such as Verisign, that verifies the identity of the requester and issues a signed certificate.
 Or you can use self-sign the CSR if you either do not plan to have your certificate signed by a CA or you want to just test it only while the CA is signing your certificate.
 
 This example uses a self-signed certificate method by using the OpenSSL tool to generate a temporary certificate that generates an error in the client browser to the effect that the signing certificate authority is unknown and not trusted.
+
+#### To generate a self-signed certificate
  
-1. To generate a temporary certificate, which is good for 365 days, issue the following command:
+1. **Enter the following command** for a certificate good for one year: 
 
         :::terminal
         x509 -req -days 365 -in server.csr -signkey server.key -sha256 -out server.crt

@@ -195,13 +195,15 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 
 ## Create a Trusted Certificate
 
-This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create the certificate and Certificate Signing Request (CSR) for submission to a certificate authority for signing. **A familiarity with use of command-line tools is required**. Learn more about [OpenSSL CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html).
+This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create the certificate and Certificate Signing Request (CSR) for submission to a certificate authority for signing. 
 
-> **Before beginning, please [download OpenSSL](https://www.openssl.org/source/)** and install it.
+> **Before beginning, [download OpenSSL](https://www.openssl.org/source/)** and install it.
+
+**A familiarity with command-line tools is helpful for this section**. Learn more about [OpenSSL CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html).
 
 -----
 
-#### To generate a private key  
+#### To generate a trusted certificate:  
 
 **NOTE**: To prepare an *existing* private key for CA submission, skip to Step 4. 
 
@@ -224,7 +226,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
         :::terminal
         req -new -key server.key -sha256  -out server.csr
-        
+
  A prompt appears for the X.509 attributes of the certificate. <br> 
 
 6. Enter information based on the environment or leave blank by hitting the ENTER key.<br>
@@ -235,28 +237,14 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 ### Self-Signed Certificate
 
-A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. 
-
-
-As mentioned above, you must send the CSR to certificate authority, such as Verisign, that verifies the identity of the requester and issues a signed certificate.
-Or you can use self-sign the CSR if you either do not plan to have your certificate signed by a CA or you want to just test it only while the CA is signing your certificate.
-
-This example uses a self-signed certificate method by using the OpenSSL tool to generate a temporary certificate that generates an error in the client browser to the effect that the signing certificate authority is unknown and not trusted.
+A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates return "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
 
 #### To generate a self-signed certificate
- 
+
 1. **Enter the following command** for a certificate good for one year: 
 
         :::terminal
         x509 -req -days 365 -in server.csr -signkey server.key -sha256 -out server.crt
-
-Signature ok
-
-subject=/C=US/ST=California/L=Berkeley/O=BlueCoat/OU=IT/CN=bluecoat.com/em
-
-ailAddress = martin.john@bluecoat.com
-
-Getting Private key
 
 Enter pass phrase for server.key:
 

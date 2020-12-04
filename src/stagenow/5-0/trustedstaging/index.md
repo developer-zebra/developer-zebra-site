@@ -195,17 +195,21 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 
 ## Create a Trusted Certificate
 
-This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create the certificate and Certificate Signing Request (CSR) for submission to a certificate authority for signing. 
+This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create a private key and Certificate Signing Request (CSR) for submission to a certificate authority (CA) for signing. 
 
-> **Before beginning, [download OpenSSL](https://www.openssl.org/source/)** and install it.
+#### Requirements: 
+
+* **Computer running Windows** 
+* **[OpenSSL](https://www.openssl.org/source/) installed** 
 
 **A familiarity with command-line tools is helpful for this section**. Learn more about [OpenSSL CLI commands](https://www.sslshopper.com/article-most-common-openssl-commands.html).
 
 -----
 
-#### I. Generate a private key and CSR  
+> **Before beginning, [download OpenSSL](https://www.openssl.org/source/)** and install it.
 
-**NOTE: To prepare a CSR from an *<u>existing</u>* private key**, skip to Step 4. 
+### I. Generate a private key and CSR  
+**NOTE**: This section describes how to create and use a private key to generate a Certificate Signing Request (CSR). **To prepare a CSR from an *<u>existing</u>* private key**, <u>skip to Step 4</u>. 
 
 **&#49;. Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
 
@@ -215,7 +219,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
         genrsa -des3 -out myPrivate.key 1024 
 
 * This RSA key can be protected with 1024-bit (shown) or 2048-bit Triple DES encryption.
-* A prompt appears asking for a pass phrase. 
+* After Step 2, a pass-phrase prompt appears. 
 
 **&#51;. Create and enter a pass phrase** and <u>record it for later reference</u>.<br>
 
@@ -228,16 +232,18 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 * Several prompts appear for entering <u>optional</u> X.509 attributes of the certificate.<br> 
 
-**&#53;. Enter optional information based on the environment** or leave blank by hitting the ENTER key.<br>
+**&#53;. Enter optional information based on the environment** or leave blank by hitting the ENTER key after each prompt.<br>
 
-**The Certificate Signing Request** `myPrivate.csr` **is ready** to be submitted to a certificate authority. **Proceed to Section III when signed file is received**. 
+* A file called `myPrivate.csr` is created in the current directory. 
+
+**The Certificate Signing Request** `myPrivate.csr` **can be submitted** to a certificate authority. When the signed file is returned from the CA, **[proceed to Section III](#iiiconvertcrttoprm)**. 
 
 -----
 
-#### II. Generate a self-signed certificate
-**Perform steps in this section ONLY if a self-signed certificate is desired**. Such certificates can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates cause display of "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
+### II. Generate a self-signed certificate
+**Perform steps in this section ONLY if a self-signed certificate is desired. If using a certificate already signed by a certificate authority, <u>proceed to Section III</u>**. 
 
-> **To complete preparation of a certificate already signed by a certificate authority**, proceed to Section III. 
+Such certificates can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates cause display of "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
 
 **&#54;. Generate a temporary (one-year) certificate** using the following command: 
 
@@ -250,7 +256,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 -----
 
-#### III. Convert CRT to PEM
+### III. Convert CRT to PEM
 
 The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate to import into StageNow. 
   
@@ -260,4 +266,6 @@ The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate
     pkcs12 -export -out trustedCert.pfx -inkey myPrivate.key -in mySigned.crt
 
 **The certificate** `trustedCert.pfx` **is ready to be imported** into StageNow for use with Trusted Staging. 
+
+[back to top](/#)
 

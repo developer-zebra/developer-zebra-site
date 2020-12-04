@@ -203,66 +203,59 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 -----
 
-#### To generate a trusted certificate:  
+#### 1. Generate a trusted certificate  
 
-**NOTE**: To prepare an *existing* private key for CA submission, skip to Step 4. 
+**NOTE**: To prepare a CSR from an *existing* private key, skip to Step 4. 
 
-1. **Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
-2. **Generate a private key** using the following command:
+**&#49;. Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
 
-        :::terminal
-        genrsa -des3 -out server.key 1024 
-
-  A prompt appears asking for a pass phrase. 
-
-3. Create and **enter a pass phrase** (and record it for later reference).<br>
-  A file called `server.key` is created in the current directory. This will be used later. 
-4. **Generate a key and CSR for submission to a CA** using the following command: 
+**&#50;. Generate a private key** with the desired file name (i.e. `myPrivate.key`) using the following command:
 
         :::terminal
-        req –new –key private.key -sha256 –out CSR.csr
+        genrsa -des3 -out myPrivate.key 1024 
 
-5. Enter the following command to make a CSR for the server-side certificate:
+* This RSA key can be protected with 1024-bit (shown) or 2048-bit triple-DES encryption.
+* A prompt appears asking for a pass phrase. 
+
+**&#51;. Create and enter a pass phrase** and <u>record it for later reference</u>.<br>
+
+* A file called `myPrivate.key` is created in the current directory. 
+
+**&#52;. Generate a CSR file** from the `.key` file created in the previous step using the following command: 
 
         :::terminal
-        req -new -key server.key -sha256  -out server.csr
+        req –new –key myPrivate.key -sha256 –out myPrivate.csr
 
- A prompt appears for the X.509 attributes of the certificate. <br> 
+* Several prompts appear for entering optional X.509 attributes of the certificate.<br> 
 
-6. Enter information based on the environment or leave blank by hitting the ENTER key.<br>
+**&#53;. Enter information based on the environment** or leave blank by hitting the ENTER key.<br>
 
-**The** `server.csr` **is generated** and can be submitted to a CA for signing.
+**The Certificate Signing Request** `myPrivate.csr` **is ready** to be submitted to a certificate authority.
 
 -----
 
-### Self-Signed Certificate
+#### 2. Generate a self-signed certificate
+A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates cause display of "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
 
-A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates return "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
-
-#### To generate a self-signed certificate
-
-1. **Enter the following command** for a certificate good for one year: 
+**&#54;. Generate a one-year certificate** using the following command: 
 
         :::terminal
-        x509 -req -days 365 -in server.csr -signkey server.key -sha256 -out server.crt
+        x509 -req -days 365 -in server.csr -signkey myPrivate.key -sha256 -out mySigned.crt
 
-Enter pass phrase for server.key:
+**&#55;. When prompted, enter the pass phrase for** `myPrivate.key` created in the Step 3, above.
 
-2. You must enter the pass phrase for the server.key that you entered in the step 1 above.
-3. The server.crt generates in your default location  and you need to use this CRT to convert it to PEM format, which can be readable by Reporter.
+##### A file called `mySigned.crt` is generated in the current folder. Follow the steps in Part 3 to complete the process.
 
 -----
 
-### IV. Convert the CRT to PEM format
+#### 3. Convert CRT to PEM
 
-Now you should have generated .key and .crt file handy. These two files are used to generate pfx certificate
+The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate for import into StageNow. 
   
-Give following command in command prompt :
+**&#56;. At the command prompt, enter the following command**:
 
     :::terminal
-    pkcs12 -export -out filename.pfx -inkey filename.key -in filename.crt
+    pkcs12 -export -out trustedCert.pfx -inkey myPrivate.key -in mySigned.crt
 
-`filename.pfx` is the name of `.pfx` certificate you want to generate, `filename.key` is the name of the `.key` file generated in earlier steps and `filename.crt` is the name of the `.crt` file generated in earlier steps. 
-
-#### The certificate is ready to be used in StageNow. 
+#### The certificate `trustedCert.pfx` is ready to be imported into StageNow for use in Trusted Staging. 
 

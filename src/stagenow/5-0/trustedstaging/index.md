@@ -203,9 +203,9 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 -----
 
-#### 1. Generate a trusted certificate  
+#### I. Generate a private key and CSR  
 
-**NOTE**: To prepare a CSR from an *existing* private key, skip to Step 4. 
+**NOTE: To prepare a CSR from an *<u>existing</u>* private key**, skip to Step 4. 
 
 **&#49;. Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
 
@@ -214,7 +214,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
         :::terminal
         genrsa -des3 -out myPrivate.key 1024 
 
-* This RSA key can be protected with 1024-bit (shown) or 2048-bit triple-DES encryption.
+* This RSA key can be protected with 1024-bit (shown) or 2048-bit Triple DES encryption.
 * A prompt appears asking for a pass phrase. 
 
 **&#51;. Create and enter a pass phrase** and <u>record it for later reference</u>.<br>
@@ -226,36 +226,38 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
         :::terminal
         req –new –key myPrivate.key -sha256 –out myPrivate.csr
 
-* Several prompts appear for entering optional X.509 attributes of the certificate.<br> 
+* Several prompts appear for entering <u>optional</u> X.509 attributes of the certificate.<br> 
 
-**&#53;. Enter information based on the environment** or leave blank by hitting the ENTER key.<br>
+**&#53;. Enter optional information based on the environment** or leave blank by hitting the ENTER key.<br>
 
-**The Certificate Signing Request** `myPrivate.csr` **is ready** to be submitted to a certificate authority.
+**The Certificate Signing Request** `myPrivate.csr` **is ready** to be submitted to a certificate authority. **Proceed to Section III when signed file is received**. 
 
 -----
 
-#### 2. Generate a self-signed certificate
-A self-signed certificate can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates cause display of "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
+#### II. Generate a self-signed certificate
+**Perform steps in this section ONLY if a self-signed certificate is desired**. Such certificates can be used for testing and other internal purposes, or as an interim solution while waiting for signing from a certificate authority. Self-signed certificates cause display of "signing certificate authority is unknown and not trusted" or a similar message on browsers. Use the following steps to create a self-signed certificate using OpenSSL.
 
-**&#54;. Generate a one-year certificate** using the following command: 
+> **To complete preparation of a certificate already signed by a certificate authority**, proceed to Section III. 
+
+**&#54;. Generate a temporary (one-year) certificate** using the following command: 
 
         :::terminal
         x509 -req -days 365 -in server.csr -signkey myPrivate.key -sha256 -out mySigned.crt
 
 **&#55;. When prompted, enter the pass phrase for** `myPrivate.key` created in the Step 3, above.
 
-##### A file called `mySigned.crt` is generated in the current folder. Follow the steps in Part 3 to complete the process.
+**The** `mySigned.crt` **file is generated in the current folder**. Go to Section III to complete the process.
 
 -----
 
-#### 3. Convert CRT to PEM
+#### III. Convert CRT to PEM
 
-The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate for import into StageNow. 
+The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate to import into StageNow. 
   
 **&#56;. At the command prompt, enter the following command**:
 
     :::terminal
     pkcs12 -export -out trustedCert.pfx -inkey myPrivate.key -in mySigned.crt
 
-#### The certificate `trustedCert.pfx` is ready to be imported into StageNow for use in Trusted Staging. 
+**The certificate** `trustedCert.pfx` **is ready to be imported** into StageNow for use with Trusted Staging. 
 

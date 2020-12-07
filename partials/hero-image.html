@@ -1,7 +1,9 @@
 <section class="hero-image">
         <div class="row">
-            <div class="col-xs-12"><h2 class="text-center main-head">{{title}}</h2></div>
-            <div class="col-sm-5">
+            <div class="col-xs-12"><h2 class="text-center main-head">{{title}}</h2>
+        </div>
+        <div class="row">
+        <div class="col-sm-4">
                             {{#if image}}
                                 <img src="{{image}}" class="img-responsive"/>
                             {{else if video}}
@@ -26,7 +28,17 @@
                                 {{/if_eq}}
 
                             {{/if}}
+    <div class="col-sm-4 col-md-offset-2">
+        <h2 class="text-center section-head">{{subtitle}}</h2>
+    </div>
+        
+    <div class="col-sm-4 col-md-offset-2">
+        <p>{{copy}}</p>
+    </div>
+    </div>
+
                         </div>
+                    </div>
                         <!-- <div class="col-sm-7"> 
                             <h4 class="featured-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
                             {{#if subtitle}}
@@ -39,10 +51,7 @@
                             {{/if}}
                         </div> -->
 
-    <div class="col-md-7 col-md-offset-2"><h2 class="text-center section-head">{{subtitle}}</h2>
-    </div>
-    <div class="col-md-7 col-md-offset-2"><p>{{copy}}</p></div>
-    </div>
+    
 <!-- 
         <div class="row">
             <div class="col-xs-12"><img src="{{image}}" class="img-responsive"></div>

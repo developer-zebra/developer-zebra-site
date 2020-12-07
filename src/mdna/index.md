@@ -1,6 +1,6 @@
 ---
 title: Mobility DNA
-subtitle: EXPERIENCE A NEW BREED OF MOBILITY
+subtitle: Experience a New Breed of Mobility
 video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
 video_type: html5
 video_thumb: video_thumb.jpg
@@ -107,8 +107,6 @@ features:
    video: YLepzmANq2s
    video_type: youtube
    button_text: Learn More 
-comingsoon-heading: Coming Soon
-comingsoon:
  - image-location: right
    title: Edge Detection Doc Capture
    subtitle: Coming Soon to DataWedge
@@ -116,6 +114,8 @@ comingsoon:
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
+comingsoon-heading: Coming Soon
+comingsoon:
  - image-location: left
    title: New term-based licensing Puts Admins in Charge
    subtitle: Coming Soon to Enterprise Browser
@@ -233,7 +233,6 @@ hr {
   border-left: 0 solid transparent;
   position: absolute;
 }
-
 .stripe-heading{
   background: #e5e5e5;
   /* width: 100vw; */
@@ -243,6 +242,17 @@ hr {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+/*
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+*/
 </style>
 
 -----

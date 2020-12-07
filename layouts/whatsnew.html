@@ -3,7 +3,7 @@
     <section id="blog" class="container" >
         {{> hero-image }}
         {{> padding-line }}
-        <hr>
+    <hr style="width:50%">
         {{#if features-heading}}
             <div class="row">
                 <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">       
@@ -23,16 +23,17 @@
         
         {{#each features}}
             {{#if_eq image-location 'right'}}
+                <hr style="width:50%">
                 {{> feature-right }} 
-                <hr>
             {{else }}
+                <hr style="width:50%">
                 {{> feature-left }} 
-                <hr>
             {{/if_eq}}
 
         {{/each}}
 
         {{#if comingsoon-heading}}
+        <hr>
         <a id="coming"></a>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -45,15 +46,16 @@
 
         {{#each comingsoon}}
             {{#if_eq image-location 'right'}}
+                <hr style="width:50%">
                 {{> feature-right }}
-                <hr>
             {{else }}
+                <hr style="width:50%">
                 {{> feature-left }}
-                <hr>
             {{/if_eq}}
 
         {{/each}}
 
+<hr>
 
     </section>
     

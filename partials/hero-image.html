@@ -1,6 +1,6 @@
 <section class="hero-image">
         <div class="row">
-            <div class="col-xs-12"><h2 class="main-head">{{title}}</h2></div>
+            <div class="col-xs-12"><h2 class="text-center main-head">{{title}}</h2></div>
             <div class="col-sm-5">
                             {{#if image}}
                                 <img src="{{image}}" class="img-responsive"/>
@@ -27,7 +27,7 @@
 
                             {{/if}}
                         </div>
-                        <div class="col-sm-7"> 
+                        <!-- <div class="col-sm-7"> 
                             <h4 class="featured-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
                             {{#if subtitle}}
                             <h6 class="featured-subheading"> <a href="{{this.url}}">{{ subtitle }}</a></h6>
@@ -37,9 +37,13 @@
                             {{#if button_text}}
                             <a href="{{this.url}}" class="btn btn-zebra">{{button_text}}</a>
                             {{/if}}
-                        </div>
-        </div>
+                        </div> -->
 
+    <div class="col-md-7 col-md-offset-2"><h2 class="text-center section-head">{{subtitle}}</h2>
+    </div>
+    <div class="col-md-7 col-md-offset-2"><p>{{copy}}</p></div>
+    </div>
+<!-- 
         <div class="row">
             <div class="col-xs-12"><img src="{{image}}" class="img-responsive"></div>
             
@@ -50,5 +54,5 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2"><p>{{copy}}</p></div>
         </div>
-        
+ -->
 </section>    

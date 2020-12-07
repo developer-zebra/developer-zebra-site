@@ -195,7 +195,7 @@ If it becomes necessary to remove a device from Trusted Mode, simply create a Tr
 
 ## Create a Trusted Certificate
 
-This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create a private key and Certificate Signing Request (CSR) for submission to a certificate authority (CA) for signing. 
+This section describes how to generate a trusted certificate (`.pfx` file) for [importing into StageNow](#createatrusteddevice) to facilitate Trusted Staging. This processes uses [OpenSSL](https://www.openssl.org/docs/faq.html) and its command-line interface (CLI) to create a private key and certificate signing request (CSR) for submission to a certificate authority (CA) for signing. 
 
 #### Requirements: 
 
@@ -209,7 +209,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 > **Before beginning, [download OpenSSL](https://www.openssl.org/source/)** and install it.
 
 ### I. Generate a private key and CSR  
-**NOTE**: This section describes how to create and use a private key to generate a Certificate Signing Request (CSR). **To prepare a CSR from an *<u>existing</u>* private key**, <u>skip to Step 4</u>. 
+**NOTE**: This section describes how to create and use a private key to generate a certificate signing request (CSR). **To prepare a CSR from an *<u>existing</u>* private key**, <u>skip to Step 4</u>. 
 
 **&#49;. Open a command-prompt window** (`cmd.exe`) and navigate to the folder containing OpenSSL. 
 
@@ -236,7 +236,7 @@ This section describes how to generate a trusted certificate (`.pfx` file) for [
 
 * A file called `myPrivate.csr` is created in the current directory. 
 
-**The Certificate Signing Request** `myPrivate.csr` **can be submitted** to a certificate authority. When the signed file is returned from the CA, **[proceed to Section III](#iiiconvertcrttoprm)**. 
+**The certificate signing request** `myPrivate.csr` **can be submitted** to a certificate authority. When the signed file is returned from the CA, **[proceed to Section III](#iiiconvertcrttopem)**. 
 
 -----
 
@@ -267,5 +267,5 @@ The final steps use the `.key` and `.crt` files to generate a `.pfx` certificate
 
 **The certificate** `trustedCert.pfx` **is ready to be imported** into StageNow for use with Trusted Staging. 
 
-[back to top](/#)
+[back to top](#)
 

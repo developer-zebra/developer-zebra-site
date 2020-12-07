@@ -1,7 +1,9 @@
 ---
 title: Mobility DNA
 subtitle: EXPERIENCE A NEW BREED OF MOBILITY
-image: image-hero.jpg
+video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
+video_type: html5
+video_thumb: video_thumb.jpg
 copy: What’s in the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives Zebra mobile computers distinct enterprise capabilities. Zebra's unique software ecosystem transforms Android--the world’s most popular consumer operating system--into an enterprise-ready force. Now the pains common to other enterprise mobility platforms disappear, making application management simpler, integration problem-free and operations a powerhouse of productivity.
 layout: whatsnew.html
 product: Mobility DNA

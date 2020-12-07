@@ -131,9 +131,9 @@ Supported devices require GMS (Google Mobile Services):
 
 Requirements for Device Tracker client:
 
-* **Operating System:** Android Oreo with GMS
-* **Bluetooth** must be enabled to find devices using the visual proximity indicator. In some circumstances, if the client application cannot automatically enable Bluetooth (e.g. due to EMM control), user intervention is required to turn on Bluetooth.
-* **WiFi** must be enabled and connected to the network to communicate with the server.
+* **Operating System:** select Android Oreo and Android 10 GMS only devices.
+* **Bluetooth** must be enabled to find devices using the visual proximity indicator. Zebra provides a tool (StageNow) for EMMs to configure the device remotely to enable Bluetooth. 
+* **WiFi** must be enabled and connected to the network to communicate with the server. Zebra provides a tool (StageNow) for EMMs to configure the device remotely to enable WiFi. 
 * **Location** services must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
 
 <p>See <a href="./#supporteddevices">Supported Devices.</a></p>

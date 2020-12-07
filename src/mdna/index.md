@@ -1,19 +1,11 @@
 ---
-title: Mobility DNA
-subtitle: Experience a New Breed of Mobility
-video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
-video_type: html5
-video_thumb: video_thumb.jpg
-copy: What’s in the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives Zebra mobile computers distinct enterprise capabilities. Zebra's unique software ecosystem transforms Android--the world’s most popular consumer operating system--into an enterprise-ready force. Now the pains common to other enterprise mobility platforms disappear, making application management simpler, integration problem-free and operations a powerhouse of productivity.
 layout: whatsnew.html
 product: Mobility DNA
-productversion: 
-main-heading: More New Mobility DNA Features
-features-heading: Latest Mobility DNA Features
+features-heading: Mobility DNA - New Features Available Now
 features:
  - image-location: right
-   title: Mobility DNA Overview
-   description: Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
+   title: "MDNA Overview: A New Breed of Enterprise Mobility"
+   description: What’s in the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives Zebra mobile computers distinct enterprise capabilities. Zebra's unique software ecosystem transforms Android--the world’s most popular consumer operating system--into an enterprise-ready force. Now the pains common to other enterprise mobility platforms disappear, making application management simpler, integration problem-free and operations a powerhouse of productivity. Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
    url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
    video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: html5
@@ -109,12 +101,12 @@ features:
    button_text: Learn More 
  - image-location: right
    title: Edge Detection Doc Capture
-   subtitle: Coming Soon to DataWedge
+   subtitle: Available now with DataWedge 8.2 
    description: Easily capture an entire form with DataWedge without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
-comingsoon-heading: Coming Soon
+comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: left
    title: New term-based licensing Puts Admins in Charge
@@ -162,10 +154,10 @@ h2 a {
     font-size: 16px;
 }
 .team-member {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 hr {
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 .btn-zebra {
   background-color: #00a7ff;
@@ -204,7 +196,7 @@ hr {
   font-size: 28px;
   line-height: 1.5;
   letter-spacing: .025em;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-weight: 400;
 }
 
@@ -278,6 +270,27 @@ hr {
 * Import [NextGen SimulScan Templates](/datawedge/8-1/guide/admin) for document capture.
 * New [Press and Continue](/datawedge/8-1/guide/input/barcode/#readerparams) Aim Type for Barcode Input and corresponding new [SetConfig API parameter](/datawedge/8-1/guide/api/setconfig/#otherscannerinputparameters).
 * New [Inventory State](/datawedge/8-1/guide/input/rfid/#rfidinput) and [Hardware Key](/datawedge/8-1/guide/input/rfid/#rfidinput) RFID input options.
+
+12/7/20- removed as a new feature; content moved to top section:
+ - image-location: right
+   title: Mobility DNA Overview
+   description: Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
+   url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
+   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
+   video_type: html5
+   video_thumb: video_thumb.jpg
+   button_text: Learn More
+
+REMOVED TOP FRONT MATTER:
+title: Mobility DNA
+subtitle: Experience a New Breed of Mobility
+video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
+video_type: html5
+video_thumb: video_thumb.jpg
+copy: 
+productversion: 
+main-heading: More New Mobility DNA Features
+
 -->
 
 -----

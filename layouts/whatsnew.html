@@ -2,15 +2,14 @@
 {{> header}}
     <section id="blog" class="container" >
         {{> hero-image }}
-        {{> padding-line }}
-    <hr style="width:50%">
+        <!-- {{> padding-line }} -->
         {{#if features-heading}}
             <div class="row">
                 <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">       
                 
-                <h4><i><u><a href="#coming">Jump to 'Coming Soon' section</a></u></i></h4>
+                <h4><i><u><a href="#coming">See What's Coming Soon!</a></u></i></h4>
 
-                <h2>{{features-heading}}</h2>
+                <h1>{{features-heading}}</h1>
 
                 </div>
  
@@ -23,21 +22,20 @@
         
         {{#each features}}
             {{#if_eq image-location 'right'}}
-                <hr style="width:50%">
                 {{> feature-right }} 
-            {{else }}
                 <hr style="width:50%">
+            {{else }}
                 {{> feature-left }} 
+                <hr style="width:50%">
             {{/if_eq}}
 
         {{/each}}
-
-        {{#if comingsoon-heading}}
-        <hr>
+        {{> padding-line }}
         <a id="coming"></a>
+        {{#if comingsoon-heading}}
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                <h2 class="text-center section-head">{{comingsoon-heading}}</h2>
+                <h1 class="text-center section-head">{{comingsoon-heading}}</h1>
                 </div>
             </div>
         
@@ -46,16 +44,14 @@
 
         {{#each comingsoon}}
             {{#if_eq image-location 'right'}}
-                <hr style="width:50%">
                 {{> feature-right }}
-            {{else }}
                 <hr style="width:50%">
+            {{else }}
                 {{> feature-left }}
+                <hr style="width:50%">
             {{/if_eq}}
 
         {{/each}}
-
-<hr>
 
     </section>
     

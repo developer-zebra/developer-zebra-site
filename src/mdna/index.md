@@ -28,7 +28,7 @@ features:
    video_type: youtube
    button_text: Learn More
  - image-location: left
-   title: Smart Repository simplifies downloading and installing Lifeguard updates
+   title: Smart Repository Simplifies Download, Installation of Lifeguard Updates
    subtitle: New in Zebra Stage Now 5.0
    description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
    url: /stagenow/4-3/about/
@@ -44,7 +44,7 @@ features:
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: left
-   title: Major MX enhancements include Display, File, Touch and UI Managers 
+   title: Major MX Enhancements Include Display, File, Touch and UI Managers 
    subtitle: New in Zebra MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: /mdna/#newinmx101
@@ -68,15 +68,15 @@ features:
    video_type: youtube
    button_text: Learn More
  - image-location: right
-   title: Using multiple barcode scanners interchangeably
+   title: Datawedge Now Supports Multiple Scanners in a Session
    subtitle: New in Zebra DataWedge 8.2
-   description: DataWedge now allows device users to scan with multiple different scanners during a single scanning session, without the need stop and reconfigure the device to change scanner configurations.
+   description: DataWedge now allows device users to scan with multiple different barcode scanners during a single scanning session, without the need stop and reconfigure the device to change scanner configurations.
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: QYDezVYFpN4
    video_type: youtube   
  - image-location: left
-   title: Locate misplaced Zebra mobile devices with Device Tracker (now cloud-based)
+   title: Now Cloud-based, Device Tracker Helps Locate Misplaced Zebra Devices
    subtitle: New with Zebra Device Tracker 4.0
    description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Now cloud-based, Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
    url: /devicetracker/4-0/guide/about/
@@ -108,7 +108,7 @@ features:
    video_type: youtube
    button_text: Learn More 
  - image-location: left
-   title: New term-based licensing Puts Admins in Charge
+   title: New Term-based Licensing Puts Admins in Charge
    subtitle: New in Zebra Enterprise Browser 3.0.6
    description: Term-based licensing allows organizations to purchase Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets. One-, three- and five-year terms available, as is a 90-day trial term. Also new is a 30-day evaluation term, which comes preinstalled with every EB 3.0 download.
    url: /enterprise-browser/3-0/guide/about/

@@ -106,8 +106,6 @@ features:
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
-comingsoon-heading: MDNA Features Coming Soon
-comingsoon:
  - image-location: left
    title: New term-based licensing Puts Admins in Charge
    subtitle: Coming Soon to Enterprise Browser
@@ -123,9 +121,11 @@ comingsoon:
    video: YpDATt5SU-o
    video_type: youtube
    button_text: How to Use
+comingsoon-heading: MDNA Features Coming Soon
+comingsoon:
  - image-location: left
    title: New Touch Mode Panel Quickly Adapts to Change
-   subtitle: Coming soon in MX 10.3 
+   subtitle: Implemented in MX 10.3 - Device update available now 
    description: Long-pressing the power key on supported Zebra devices will soon provide quick access to Touch Mode settings, a new settings panel that allows users to switch touch modes and quickly adapt to changes in the computing environment. 
    url: /mx/touchmgr
    video: kRHkg0JGj_Q
@@ -133,7 +133,7 @@ comingsoon:
    button_text: About TouchMgr 
  - image-location: right
    title: Select Which Apps to Update Without Blocking All 
-   subtitle: Coming soon in MX 10.3 
+   subtitle: Implemented in MX 10.3 - Device update available now 
    description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility, part of MX, let administrators decide which apps on a device can update and which should stay the same until explicitly allowed to update. 
    url: /mx/appmgr/
    video: t7J8e2rVcMM

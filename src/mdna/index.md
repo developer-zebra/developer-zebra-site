@@ -22,7 +22,7 @@ features:
  - image-location: right
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
-   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge allows any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
+   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation.
    url: /datawedge/latest/guide/about/
    video: 4vS5Y2q9Vkg
    video_type: youtube
@@ -38,7 +38,7 @@ features:
  - image-location: right
    title: "DataWedge 'Wake Up and Scan' Makes Scanning Faster" 
    subtitle: New in Zebra DataWedge 8.1
-   description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. DataWedge allows any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.  
+   description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. 
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: bR_uJwpVZD0
@@ -70,7 +70,7 @@ features:
  - image-location: right
    title: Using multiple barcode scanners interchangeably
    subtitle: New in Zebra DataWedge 8.2
-   description: DataWedge now allows device users to scan with multiple different scanners during a single scanning session, without the need stop and reconfigure the device to change scanner configurations. DataWedge allows any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
+   description: DataWedge now allows device users to scan with multiple different scanners during a single scanning session, without the need stop and reconfigure the device to change scanner configurations.
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: QYDezVYFpN4
@@ -102,7 +102,7 @@ features:
  - image-location: right
    title: DataWedge Does Edge Detection, Full-document Capture
    subtitle: New in Zebra DataWedge 8.2 
-   description: DataWedge 8.2 now allows users to easily capture an entire form without the need for a barcode. DataWedge allows any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   description: DataWedge 8.2 now allows users to easily capture an entire form without the need for a barcode. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube

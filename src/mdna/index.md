@@ -12,16 +12,16 @@ features:
    video_thumb: video_thumb.jpg
    button_text: Learn More
  - image-location: left
-   title: Never lose a peripheral with Smart Leash
-   subtitle: New in Device Central 
-   description: The new Smart Leash feature on Device Central notifies a user when a peripheral moves out of an area, ensuring that the peripheral is not left behind. Device Central centrally connects and monitors Bluetooth peripherals.  
+   title: Device Central Smart Leash Keeps Peripherals Close at Hand
+   subtitle: New in Device Central 3.1
+   description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they're been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
    url: /devicecentral/
    video: pLuftOwcAFk
    video_type: youtube
    button_text: Learn More   
  - image-location: right
    title: Detect the Presence of a Signature
-   subtitle: New in DataWedge 
+   subtitle: New in DataWedge 8.2
    description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
    url: /datawedge/latest/guide/about/
    video: 4vS5Y2q9Vkg
@@ -29,39 +29,39 @@ features:
    button_text: Learn More
  - image-location: left
    title: Zebra’s Smart Repository makes downloading and installing Lifeguard updates a breeze.
-   subtitle: New in Stage Now 
+   subtitle: New in Stage Now 5.0
    description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
    url: /stagenow/4-3/about/
    video: HeZvx6X53yI
    video_type: youtube
    button_text: Learn More      
  - image-location: right
-   title: Wake up and scan
-   subtitle: New in DataWedge
+   title: "DataWedge 'Wake Up and Scan' Makes Scanning Faster" 
+   subtitle: New in DataWedge 8.1
    description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.  
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: left
-   title: "MX 10.1: What's New in Mobility Extensions"
-   subtitle: Major enhancements to Display, File, Touch and UI Managers 
+   title: Major MX enhancements include Display, File, Touch and UI Managers 
+   subtitle: New in MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: /mdna/#newinmx101
    button_text: Learn More
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: right
-   title: "MX 10.2 Enhances 12 Mobility Extensions"
-   subtitle: Adds the new Beacon Manager CSP, enhances 11 others 
-   description: Beacon Manager allows administrators control the homing signal sent by supported Zebra devices when they're switched off. Includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
+   title: New Beacon Manager CSP Aids Locationing; Updates 11 More Mobility Extensions
+   subtitle: New in MX 10.2
+   description: Beacon Manager allows administrators control the homing signal sent by supported Zebra devices when they're switched off. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mdna/#newinmx102
    button_text: Learn More
    video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
    video_type: youtube
  - image-location: left
    title: Bluetooth Scanner Notifications
-   subtitle: New in DataWedge
+   subtitle: New in DataWedge 8.2
    description: Light a colored LED or play audio beeps based on user actions or barcodes scanned from a connected Bluetooth scanner. Users can then easily and quickly react based on the audio or visual feedback controlled by the Bluetooth scanner notifications API from DataWedge. 
    url: /datawedge/latest/guide/about/
    video: l85vNZdrZxw
@@ -69,7 +69,7 @@ features:
    button_text: Learn More
  - image-location: right
    title: Using multiple barcode scanners interchangeably
-   subtitle: New in DataWedge
+   subtitle: New in DataWedge 8.2
    description: Easily use scanners interchangeably with DataWedge, without the need for additional setup and configuration between each scanner use. 
    url: /datawedge/latest/guide/about/
    button_text: Learn More
@@ -77,15 +77,15 @@ features:
    video_type: youtube   
  - image-location: left
    title: Locate misplaced Zebra mobile devices with Device Tracker (now cloud-based)
-   subtitle: New in Device Tracker
+   subtitle: New with Device Tracker 4.0
    description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Now cloud-based, Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
    url: /devicetracker/4-0/guide/about/
    video: MzCWdLUhEPY
    video_type: youtube
    button_text: Learn More 
  - image-location: right
-   title: Zebra Utility Simplifies DOM Injection 
-   subtitle: GUI-based Enterprise Application Configurator works with EB 2.6+ 
+   title: Zebra EAC 1.0 Utility Simplifies DOM Injection 
+   subtitle: Works with EB 2.6+ 
    description: EAC 1.0 is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards, and can voice-enable fields for spoken input and/or output. 
    url: /enterprise-browser/latest/guide/eac/
    video: 7aUm-IO9utM
@@ -93,29 +93,29 @@ features:
    button_text: Learn More 
  - image-location: left
    title: Feature-based Licensing Puts Admins in Control 
-   subtitle: License Manager in MX 10.2 allows per-feature implementation 
-   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. Now Zebra allows administrators to license specific features individually, putting costs and capabilities in their complete control.
+   subtitle: New in MX 10.2 
+   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devives now allow administrators to license specific features individually, bringing costs and device capabilities better into control.
    url: /mx/licensemgr/
    video: YLepzmANq2s
    video_type: youtube
-   button_text: Learn More 
+   button_text: About LicenseMgr 
  - image-location: right
-   title: Edge Detection Doc Capture
+   title: DataWedge Does Edge Detection, Full-document Capture
    subtitle: Available now with DataWedge 8.2 
-   description: Easily capture an entire form with DataWedge without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
+   description: DataWedge 8.2 now allows users to easily capture an entire form without the need for a barcode. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
  - image-location: left
    title: New term-based licensing Puts Admins in Charge
-   subtitle: Coming Soon to Enterprise Browser
-   description: Term-based licensing allows for purchase of Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets.
+   subtitle: Available now in Enterprise Browser 3.0.6
+   description: Term-based licensing allows organizations to purchase Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets. One-, three- and five-year terms available, as is a 90-day trial term. Also new is a 30-day evaluation term, which comes preinstalled with every EB 3.0 download.
    url: /enterprise-browser/3-0/guide/about/
    video: IjNspS96BNg
    video_type: youtube
  - image-location: right
    title: Alert Button Can Save Time, Maybe Lives
-   subtitle: Coming soon in MX 10.2, StageNow
+   subtitle: Implemented in MX 10.2, StageNow 5.0; Both available now
    description: Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
    url: /stagenow/latest/stagingprofiles/
    video: YpDATt5SU-o
@@ -125,7 +125,7 @@ comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: left
    title: New Touch Mode Panel Quickly Adapts to Change
-   subtitle: Implemented in MX 10.3 - Device update available now 
+   subtitle: Implemented in MX 10.3 - Device update available Jan. 2021  
    description: Long-pressing the power key on supported Zebra devices will soon provide quick access to Touch Mode settings, a new settings panel that allows users to switch touch modes and quickly adapt to changes in the computing environment. 
    url: /mx/touchmgr
    video: kRHkg0JGj_Q
@@ -133,7 +133,7 @@ comingsoon:
    button_text: About TouchMgr 
  - image-location: right
    title: Select Which Apps to Update Without Blocking All 
-   subtitle: Implemented in MX 10.3 - Device update available now 
+   subtitle: Implemented in MX 10.3 - Device update available Jan. 2021 
    description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility, part of MX, let administrators decide which apps on a device can update and which should stay the same until explicitly allowed to update. 
    url: /mx/appmgr/
    video: t7J8e2rVcMM
@@ -246,6 +246,8 @@ hr {
 }
 */
 </style>
+
+[back to top](#)
 
 -----
 
@@ -497,3 +499,4 @@ Please see the **[supported device list](https://www.zebra.com/us/en/support-dow
 
 -----
 
+[back to top](#)

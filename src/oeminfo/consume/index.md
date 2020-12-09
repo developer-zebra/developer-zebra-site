@@ -97,6 +97,8 @@ Modify the code samples below to suit individual needs. **For more information o
 
 ### Acquire Bluetooth MAC 
 
+> `IMPORTANT:` The Bluetooth radio must be enabled on the device to retrieve the Bluetooth MAC address using OEMinfo.
+
 1. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>
 
         String BT_MAC = "content://oem_info/oem.zebra.secure/bt_mac";

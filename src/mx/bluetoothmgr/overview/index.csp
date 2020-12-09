@@ -30,7 +30,7 @@ Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band
  * Silent Pairing (no user confirmation)
  * Single Pairing (with one specific device type at a time)
  * Mandatory Identifier 
- * Pair only with "trusted" devices
+ * Pairing only with "trusted" devices
 * Create remote pairing rules
 * Create pairing rules based on: 
  * Preset device categories 

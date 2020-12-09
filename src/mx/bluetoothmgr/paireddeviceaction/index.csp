@@ -19,7 +19,7 @@ parm:
       devicetype: A
       name: Clear All Paired Devices
       mx: "10.3"
-      description: Erases all information about Bluetooth peripherals stored on the device.
+      description: Erases all information on the device relating to Bluetooth peripherals previously paired with the device.
 ---
 
-Used to select an action to perform on information about Bluetooth peripherals stored on the device. 
+Used to select an action to perform relating to information on the device about Bluetooth peripherals previously paired with the device. 

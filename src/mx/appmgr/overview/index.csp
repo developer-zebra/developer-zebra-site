@@ -22,11 +22,12 @@ When considering the capabilities of AppMgr, it is important to understand the d
 * Add/remove apps from Battery Optimization exemption list (see below)
 * Enable all GMS apps
 * Disable all GMS apps that are safe to disable
-* Disable GMS apps in set groups
+* Disable GMS apps in predefined groups
 * Enable/Disable access to app info
 * Reserve/Unreserve an Android unique ID (UID)
 * Enable/Disable individual app feature(s)
 * Enable/Disable background data individually by app
+* Allow/Disallow individual apps to be upgraded
 
 > **GMS Restricted Mode**: In response to security concerns, Zebra has implemented GMS Restricted Mode, which allows administrators to disable some or all GMS apps deemed "safe to disable" without interfering with normal device operations. See [GMS Manager](/mx/gmsmgr) for more information. 
 

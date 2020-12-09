@@ -131,7 +131,7 @@ Modify the code samples below to suit individual needs. **For more information o
             }
         }
 
-**Skip the the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
+**Skip to the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
 
 -----
 
@@ -171,7 +171,7 @@ Modify the code samples below to suit individual needs. **For more information o
             }
         }
 
-**Skip the the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
+**Skip to the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
 
 -----
 

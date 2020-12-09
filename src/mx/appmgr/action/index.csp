@@ -16,7 +16,7 @@ parm:
     - code: 0
       devicetype: A,B
       name: Do nothing
-      description: This value (or the absence of this parm from the XML) will cause no change to applications on the device.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings.
       mx: "4.1"
     - code: 1
       devicetype: A,B
@@ -123,15 +123,17 @@ parm:
       name: AllowApplicationUpgrade
       description: Allows the selected app to receive upgrades.
       mx: "10.3"
-      osx: "10.3"
+      osx: "8.1"
       apilevel: "26"
+      info: Not supported on SDM660-platform devices. On devices running Android 10, this feature requires OSX 10.5 or later. 
     - code: 17
       devicetype: A
       name: DisallowApplicationUpgrade
       description: Prevents the selected app from receiving upgrades.
       mx: "10.3"
-      osx: "10.3"
+      osx: "8.1"
       apilevel: "26"
+      info: Not supported on SDM660-platform devices. On devices running Android 10, this feature requires OSX 10.5 or later.
 ---
 
 Used to enter the Action to perform on an app or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below).   

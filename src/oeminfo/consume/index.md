@@ -95,6 +95,46 @@ Configure the following actions based on the individual requirements.
 
 Modify the code samples below to suit individual needs. **For more information or to request additional sample URIs, [contact the Zebra Data Services team](mailto:ZebraDataAnalytics@zebra.com?subject=OEMinfo request)**. 
 
+### Acquire Bluetooth MAC 
+
+1. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>
+
+        String BT_MAC = "content://oem_info/oem.zebra.secure/bt_mac";
+2. **Get the data** (in this case the device's Bluetooth MAC address) by parsing the string using Android cursor query methods implemented in the following Java code:<br>
+
+
+        :::java
+        // Prepare the URI
+        public void getData() {
+            final Uri myUri = Uri.parse(BT_MAC);
+            new UpdateAsync().execute(myUri.toString());
+        }
+
+        // Always query for data in Async task or background thread
+        class UpdateAsync extends AsyncTask<String,Void,Cursor> {
+            private String myUri;
+
+        @Override
+        protected Cursor doInBackground(String... args) {
+            myUri = args[0];
+
+            // Query the content provider
+            ContentResolver cr = getContentResolver();
+            Cursor cursor = cr.query(Uri.parse(myUri),
+                            null, null, null, null);
+
+            // Read the cursor
+            cursor.moveToFirst();
+            String bluetoothMAC = cursor.getString(0);
+            Log.i(TAG, "The Bluetooth MAC is : ” + bluetoothMAC);            
+            return cursor;
+            }
+        }
+
+**Skip the the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
+
+-----
+
 ### Acquire Serial Number 
 
 1. **Get the AUTHORITY, PROVIDER and API** using the following command:<br>
@@ -130,8 +170,6 @@ Modify the code samples below to suit individual needs. **For more information o
             return cursor;
             }
         }
-
-**The next two sections apply the above process for getting the device IMEI and OS update info**. 
 
 **Skip the the [Callback section](#callbacks)** to see sample code for setting an app to be notified of changes to OEMinfo data. This Zebra-recommended practice can be helpful for monitoring non-static URIs.
 

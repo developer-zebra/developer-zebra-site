@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Mandatory Identifier
 type: parm
-order: 13
+order: 14
 mx: "9.3"
 apilevel: "27"
 devicetype: A

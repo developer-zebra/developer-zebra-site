@@ -4,7 +4,6 @@ title: Paired Device Actions
 type: parm
 order: 13
 mx: "10.3"
-apilevel: "27"
 devicetype: A
 parm:
   pivotal: No
@@ -13,15 +12,13 @@ parm:
   list:
     - code: 0
       mx: "10.3"
-      apilevel: "27"
       devicetype: A
       name: Do nothing
-      description: 
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Clear All Paired Devices
       mx: "10.3"
-      apilevel: "27"
       description: Erases all information about Bluetooth peripherals stored on the device.
 ---
 

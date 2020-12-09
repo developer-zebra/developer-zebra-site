@@ -3,7 +3,7 @@ csp: nfcmgr
 title: Reset To Defaults (checkbox)
 type: parm
 order: 2
-mx: "10.1"
+mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
@@ -11,15 +11,15 @@ parm:
   type: list
   list:
     - code: 1
-      mx: "10.1"
+      mx: "8.3"
       devicetype: A
       name: (checked)
       description: Resets all NFC settings to system-defined default values.
     - code: 0
       devicetype: A
       name: (unchecked)
-      mx: "10.1"
+      mx: "8.3"
       description: Leaves NFC settings unchanged.  
 ---
 
-Controls whether to reset all NFC settings to system-defined default values. This feature can be used to return a device with unknown settings to a known state. 
+Controls whether to reset all NFC settings to system-defined default values. This feature can be used to return a device with unknown NFC settings to a known state. 

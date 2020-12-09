@@ -1,0 +1,28 @@
+---
+csp: bluetoothmgr
+title: Paired Device Actions
+type: parm
+order: 13
+mx: "10.3"
+apilevel: "27"
+devicetype: A
+parm:
+  pivotal: No
+  name: PairedDeviceAction
+  type: list
+  list:
+    - code: 0
+      mx: "10.3"
+      apilevel: "27"
+      devicetype: A
+      name: Do nothing
+      description: 
+    - code: 1
+      devicetype: A
+      name: Clear All Paired Devices
+      mx: "10.3"
+      apilevel: "27"
+      description: Erases all information about Bluetooth peripherals stored on the device.
+---
+
+Used to select an action to perform on information about Bluetooth peripherals stored on the device. 

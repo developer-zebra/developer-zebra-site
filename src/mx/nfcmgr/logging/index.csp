@@ -2,10 +2,11 @@
 csp: nfcmgr
 title: Logging Enable/Disable
 type: parm
-order: 16
+order: 16 
 mx: "10.3"
 devicetype: A
 parm:
+  presentif: Enable NFC is NOT "Disable"
   pivotal: No
   name: Logging
   type: list
@@ -19,12 +20,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "10.3"
-      description: Turns on NFC event logging on the device.
+      description: Turns on logging of NFC events on the device.
     - code: 0
       devicetype: A
       name: Disable
       mx: "10.3"
-      description: Turns off NFC event logging on the device.
+      description: Turns off logging of NFC events on the device.
 ---
 
-This is the On/Off switch for NFC event logging on the device. 
+This is the On/Off switch for logging of NFC events on the device. 

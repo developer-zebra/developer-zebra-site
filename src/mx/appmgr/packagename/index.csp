@@ -8,7 +8,7 @@ osx: "1.0,1.3"
 apilevel: 1
 devicetype: A,B
 parm:
-  presentif: The Action is "Uninstall" or "Set as Default Launcher" or "Enable Application" or "Disable Application" or "Clear Application Cache" or "Remove Application User Data" or "Reserve UID" or "Unreserve UID"
+  presentif: The Action is "Uninstall" or "Set as Default Launcher" or "Enable Application" or "Disable Application" or "Clear Application Cache" or "Remove Application User Data" or "Reserve UID" or "Unreserve UID" or "Allow Application Upgrade" or "Disallow Application Upgrade"
   pivotal: No
   name: Package
   type: string

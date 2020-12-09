@@ -8,7 +8,6 @@ osx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Action is NOT "Battery Optimization" 
   name: AccessAppInfoAction
   type: list
   list:

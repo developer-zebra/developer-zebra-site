@@ -9,7 +9,7 @@ productversion: '3.1'
 
 This section provides installation instructions for **Device Central**.
 
-<p>Starting with Android 10, <b>Device Central</b> is no longer built-in the device. It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. </p>
+<p>Starting with Android 10, <b>Device Central</b> is no longer built into Zebra devices. It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. </p>
 
 
 ## Manual Installation

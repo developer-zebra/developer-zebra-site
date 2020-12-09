@@ -17,7 +17,7 @@ parm:
       apilevel: "24"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to pair with discovered Bluetooth devices; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable

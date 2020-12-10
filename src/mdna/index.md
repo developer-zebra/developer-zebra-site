@@ -1,16 +1,20 @@
 ---
+title: Mobility DNA
+subtitle: MDNA Overview - A New Breed of Enterprise Mobility
+video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original   
+video_type: html5
+video_thumb: video_thumb.jpg
+copy: What’s inside the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA — the genetic code that gives our mobile computers distinct enterprise capabilities.Its unique software ecosystem transforms Android™, the world’s most popular consumer operating system, into an enterprise-ready force. Now, the pains common to other enterprise mobility platforms disappear — making application management simpler, integration problem-free and operations a powerhouse of productivity.
+button_text: Learn More
+url-button: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
+button_text_additional: Coming Soon
+url_button_more: ./#coming
 layout: whatsnew.html
 product: Mobility DNA
-features-heading: Mobility DNA - New Features Available Now
+productversion: 
+main-heading: More New Mobility DNA Features
+features-heading: Latest Mobility DNA Features
 features:
- - image-location: right
-   title: "MDNA Overview: A New Breed of Enterprise Mobility"
-   description: What’s in the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives Zebra mobile computers distinct enterprise capabilities. Zebra's unique software ecosystem transforms Android--the world’s most popular consumer operating system--into an enterprise-ready force. Now the pains common to other enterprise mobility platforms disappear, making application management simpler, integration problem-free and operations a powerhouse of productivity. Apps built for Zebra's Android mobile computing devices are designed to allow corporate end-users to increase productivity in the workplace and improve efficiency of workflows.
-   url: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
-   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
-   video_type: html5
-   video_thumb: video_thumb.jpg
-   button_text: Learn More
  - image-location: left
    title: Device Central Smart Leash Keeps Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
@@ -22,14 +26,14 @@ features:
  - image-location: right
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
-   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation.
+   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
    url: /datawedge/latest/guide/about/
    video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
  - image-location: left
    title: Smart Repository Simplifies Download, Installation of Lifeguard Updates
-   subtitle: New in Zebra Stage Now 5.0
+   subtitle: New in Zebra StageNow 5.0
    description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
    url: /stagenow/4-3/about/
    video: HeZvx6X53yI
@@ -38,7 +42,7 @@ features:
  - image-location: right
    title: "DataWedge 'Wake Up and Scan' Makes Scanning Faster" 
    subtitle: New in Zebra DataWedge 8.1
-   description: With DataWedge, instantly capture barcodes with the press of the scan button, eliminating delays and improving productivity. 
+   description: Instantly capture barcodes with the press of the scan button when resuming operation after device suspend, eliminating delays and improving productivity. 
    url: /datawedge/latest/guide/about/
    button_text: Learn More
    video: bR_uJwpVZD0
@@ -102,7 +106,7 @@ features:
  - image-location: right
    title: DataWedge Does Edge Detection, Full-document Capture
    subtitle: New in Zebra DataWedge 8.2 
-   description: DataWedge 8.2 now allows users to easily capture an entire form without the need for a barcode. 
+   description: Easily capture an entire form without the need for a barcode by automatically detecting the edges of the form during document scans with DataWedge 8.2. 
    url: /datawedge/latest/guide/about/
    video: DI8pxsTJdtI
    video_type: youtube
@@ -150,7 +154,6 @@ comingsoon:
   For no "Learn More" BUTTON, remove this line: 
   button_text: Learn More
  -->
-
 <style>
 h2 a {
     font-size: 16px;
@@ -193,12 +196,16 @@ hr {
   padding: 0 0 10px;
 }
 
+#blog {
+    padding: 0px 0;
+}
+
 .section-head {
   color: #000;
   font-size: 28px;
   line-height: 1.5;
   letter-spacing: .025em;
-/*  text-transform: uppercase;*/
+/*  text-transform: uppercase; */
   font-weight: 400;
 }
 
@@ -227,6 +234,7 @@ hr {
   border-left: 0 solid transparent;
   position: absolute;
 }
+
 .stripe-heading{
   background: #e5e5e5;
   /* width: 100vw; */
@@ -236,6 +244,17 @@ hr {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
+#video-feature {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+
+div .align-center {
+    text-align: center;
+}
+
 /*
 hr { 
   display: block;
@@ -247,8 +266,7 @@ hr {
   border-width: 1px;
 }
 */
+
 </style>
 
 [back to top](#)
-
------

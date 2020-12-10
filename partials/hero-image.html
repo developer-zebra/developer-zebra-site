@@ -6,10 +6,43 @@
        <div class="row">
            <div class="col-xs-12"><img src="{{image}}" class="img-responsive"></div>
        </div>
+       
+       {{#if video }}
+       <div class="row align-center">
+                {{#if_eq video_type 'html5'}}
+                                <div> <!-- REMOVED the following to make embedded video size smaller: class="embed-responsive embed-responsive-16by9"-->
+                                    <video id="video-feature" controls=""  name="media" poster="{{video_thumb}}">
+                                        <source src="{{video}}" type="video/mp4">
+                                    </video>
+                                </div>
+                            {{/if_eq}}
+                            {{#if_eq video_type 'iframe'}}
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="430" height="308" src="{{video}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            {{/if_eq}}
+                            {{#if_eq video_type 'youtube'}}
+                                <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{video}}?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </div>
+                {{/if_eq}}
+       </div>
+       {{/if}}
+
        <div class="row">
            <div class="col-md-8 col-md-offset-2"><h2 class="text-center section-head">{{subtitle}}</h2></div>
        </div>
        <div class="row">
            <div class="col-md-8 col-md-offset-2"><p>{{copy}}</p></div>
        </div>
+
+       {{#if button_text}}
+       <div class="row align-center">
+                <a href="{{url-button}}" class="btn btn-zebra">{{button_text}}</a>
+                {{#if button_text_additional}}    
+                    <a href="{{url_button_more}}" class="btn btn-zebra">{{button_text_additional}}</a>
+                {{/if}}
+        </div>
+        {{/if}}
 </section>   

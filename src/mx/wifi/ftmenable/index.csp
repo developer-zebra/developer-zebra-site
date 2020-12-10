@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: 802.11mc FTM Enable/Disable 
+title: Zebra Location Service Enable/Disable 
 type: parm
 order: 111
 mx: "10.2"
@@ -17,13 +17,13 @@ parm:
       apilevel: "29"
       devicetype: A
       name: Enable
-      description: Enables the use of FTM on the device. 
+      description: Enables the use of the Zebra Location Service on the device. 
     - code: 0
       mx: "10.2"
       apilevel: "29"
       devicetype: A
       name: Disable
-      description: Disables the use of FTM on the device.
+      description: Disables the use of the Zebra Location Service on the device.
 ---
 
-This is the On/Off switch for Wi-Fi Fine Timing Measurement, which is used for indoor locationing of a device.
+This is the On/Off switch for Zebra Location Service, which tracks and reports device location.

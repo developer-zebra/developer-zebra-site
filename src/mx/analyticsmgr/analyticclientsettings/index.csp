@@ -1,6 +1,6 @@
 ---
-csp: analyticsmgr
-title: Analytics Action
+csp: 
+title: Analytics Client Settings
 type: parm
 order: 2
 mx: "5.1"
@@ -33,6 +33,11 @@ parm:
 
 This is the On/Off switch for the Zebra Data Analytics Engine, which allows the Data Collection Agent to collect data about events on the device and submit data to the Zebra Cloud for processing and analysis.
 
-<!-- 4/29/20
+<!-- 
+4/29/20
 Title changed from "Analytics Data Collection" per eng, SE.
+
+12/10/20
+Title changed from "Analytics Action" and removed from view in favor of AnalyticsAction parm, per eng.
+
 -->  

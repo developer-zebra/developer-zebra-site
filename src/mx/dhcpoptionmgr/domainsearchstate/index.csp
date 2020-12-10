@@ -19,15 +19,15 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the Domain Search list to be requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned on and hence will cause the Domain Search list to be requested by the DHCP Client in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent the Domain Search list from being requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the Domain Search list from being requested by the DHCP Client in the DHCP Request.
 ---
 
-Control whether a request for the Domain Search list will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Domain Search list for the network to the device in the DHCP Acknowledgment.
+Control whether a request for the Domain Search list will be sent by the DHCPv4 Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Domain Search list for the network to the device in the DHCP Acknowledgment.
 
 The Domain Name System (DNS) is a hierarchical distributed naming system that associates domain names to the IP Addresses. When seeking to resolve a name, one or more Domain Name Servers may need to be contacted, in a prioritized order until the name can be successfully resolved. The Domain Search list for a network is an ordered list of DNS server addresses that should be used to resolve names on that network.
 

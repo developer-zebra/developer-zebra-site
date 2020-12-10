@@ -19,15 +19,15 @@ parm:
       devicetype: A
       name: Enable
       mx: "6.3"
-      description: Enables the DHCP client to send an FQDN value and optional flag-field value.
+      description: Enables the DHCPv4 client to send an FQDN value and optional flag-field value.
     - code: 2
       devicetype: A
       name: Disable
       mx: "6.3"
-      description: Prevents the DHCP client from sending FQDN information.
+      description: Prevents the DHCPv4 client from sending FQDN information.
 ---
 
-Controls whether the DHCP client can send a fully qualified domain name (FQDN) value and optional flag to the DHCP server as a means of updating IP-address-to-FQDN mapping. 
+Controls whether the DHCPv4 client can send a fully qualified domain name (FQDN) value and optional flag to the DHCP server as a means of updating IP-address-to-FQDN mapping. 
 
 An FQDN is the complete domain name for a specific internet host computer, including its hostname and domain name. For example, the FQDN of Google's Gmail server "mail.google.com" includes the hostname "mail" and the domain name "google.com." The server's hostname distinguishes it from other servers in the Google.com domain, and its domain name sets Google's mail server apart from other public mail servers.
 

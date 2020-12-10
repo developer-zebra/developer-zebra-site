@@ -19,7 +19,7 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "6.3"
-      description: Enables vendor-specific DHCP Option 230 to be requested by the DHCP Client.
+      description: Enables vendor-specific DHCP Option 230 to be requested by the DHCPv4 Client.
     - code: 2
       devicetype: A,B
       name: Disable
@@ -27,4 +27,4 @@ parm:
       description: Prevents vendor-specific DHCP Option 230 from being requested.
 ---
 
-Controls whether the vendor-specific option 230 can be requested by the DHCP client. The potential returned value of this request is determined by the DHCP server vendor.
+Controls whether the vendor-specific option 230 can be requested by the DHCPv4 client. The potential returned value of this request is determined by the DHCP server vendor.

@@ -19,11 +19,11 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Name to be requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned on and hence will cause the TFTP Server Name to be requested by the DHCP Client in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Name from being requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the TFTP Server Name from being requested by the DHCP Client in the DHCP Request.
 ---
 >**NOTE:** This parameter is deprecated. **Use TFTPServerNameState instead**.

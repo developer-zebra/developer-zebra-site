@@ -19,13 +19,13 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the DHCP client to request a custom option number.
+      description: Enables the DHCPv4 client to request a custom option number.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents the DHCP client from requesting a custom option number.
+      description: Prevents the DHCPv4 client from requesting a custom option number.
 ---
 
-Controls whether the DHCP client can request a Custom Option Number. This parameter is designed to allow the DHCP client to support new vendor options without the need for an OS update.
+Controls whether the DHCPv4 client can request a Custom Option Number. This parameter is designed to allow the DHCP client to support new vendor options without the need for an OS update.
 

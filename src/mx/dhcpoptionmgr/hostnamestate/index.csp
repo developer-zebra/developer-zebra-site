@@ -14,17 +14,17 @@ parm:
       mx: "4.4"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the specified Host Name Option to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned on and hence will cause the specified Host Name Option to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent a Host Name from being to be sent by the DHCP Client to the DHCP Server.
+      description: This value will cause this DHCPv4 Option to be turned off and hence will prevent a Host Name from being to be sent by the DHCP Client to the DHCP Server.
 ---
 
-Controls whether a Host Name will be sent by the DHCP Client to the DHCP Server via the Host Name DHCP Option. The Host Name is generally used by a DHCP Server to identify a device on the network and/or to track the devices to which IP Addresses have been assigned.
+Controls whether a Host Name will be sent by the DHCPv4 Client to the DHCP Server via the Host Name DHCP Option. The Host Name is generally used by a DHCP Server to identify a device on the network and/or to track the devices to which IP Addresses have been assigned.

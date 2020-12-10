@@ -19,12 +19,12 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the specified User Class to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned on and hence will cause the specified User Class to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent a User Class from being to be sent by the DHCP Client to the DHCP Server.
+      description: This value will cause this DHCPv4 Option to be turned off and hence will prevent a User Class from being to be sent by the DHCP Client to the DHCP Server.
 ---
 
-Control whether a User Class will be sent by the DHCP Client to the DHCP Server via the User Class DHCP Option. The User Class is generally used by a DHCP Server to select the proper pool of IP Addresses from which to acquire the IP Address to assign to the device. It may also be used by the DHCP Server to determine which additional information should be returned to the device in the DHCP Acknowledgment.
+Control whether a User Class will be sent by the DHCPv4 Client to the DHCP Server via the User Class DHCP Option. The User Class is generally used by a DHCP Server to select the proper pool of IP Addresses from which to acquire the IP Address to assign to the device. It may also be used by the DHCP Server to determine which additional information should be returned to the device in the DHCP Acknowledgment.

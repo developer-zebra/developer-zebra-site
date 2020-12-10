@@ -1,10 +1,12 @@
 ---
 csp: bluetoothmgr
-title: Paired Device Actions
+title: Paired Device Action
 type: parm
-order: 13
+order: 55
 mx: "10.3"
+apilevel: "27"
 devicetype: A
+info: Not supported on devices running Android 9.x (Pie). 
 parm:
   pivotal: No
   name: PairedDeviceAction
@@ -12,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "10.3"
+      apilevel: "27"
       devicetype: A
       name: Do nothing
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -19,6 +22,7 @@ parm:
       devicetype: A
       name: Clear All Paired Devices
       mx: "10.3"
+      apilevel: "27"
       description: Erases all information on the device relating to Bluetooth peripherals previously paired with the device.
 ---
 

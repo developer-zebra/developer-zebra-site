@@ -7,6 +7,7 @@ mx: "9.3"
 apilevel: "28"
 devicetype: A
 parm:
+  presentif: Is Single Pairing Rule is "checked" AND Silent Pairing Action is "Add/Replace Remote Device Rule"
   pivotal: No
   name: RemoteDevicePIN
   type: string

@@ -14,7 +14,7 @@ parm:
       mx: "6.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously configured setting is retained.
     - code: 1
       devicetype: A
       name: Enable

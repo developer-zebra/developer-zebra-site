@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: TFTP Ser. Name (66)
 type: parm
-order: 26
+order: 28
 mx: "4.4"
 devicetype: A,B
 parm:
@@ -26,4 +26,4 @@ parm:
       mx: "4.4"
       description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the TFTP Server Name from being requested by the DHCP Client in the DHCP Request.
 ---
->**NOTE:** This parameter is deprecated. **Use TFTPServerNameState instead**.
+>**NOTE:** The TFTP**<u>Ser</u>**NameState parameter is deprecated. Zebra recommends using the TFTP**<u>Server</u>**NameState parameter (below).

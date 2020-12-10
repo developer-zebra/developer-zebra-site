@@ -1,8 +1,8 @@
 ---
 csp: dhcpoptionmgr
-title: TFTP Server Address Enable/Disable (150)
+title: TFTP Server Address (150) Enable/Disable
 type: parm
-order: 50
+order: 26
 mx: "4.4"
 devicetype: A,B
 parm:

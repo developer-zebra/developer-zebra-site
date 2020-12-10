@@ -1,8 +1,8 @@
 ---
 csp: dhcpoptionmgr
-title: TFTP Server Address Enable/Disable (150)
+title: TFTP Ser. Address (150)
 type: parm
-order: 50
+order: 25
 mx: "4.4"
 devicetype: A,B
 parm:
@@ -27,7 +27,7 @@ parm:
       description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.
 ---
 
->**NOTE:** This parameter is deprecated. **Use TFTPServerAddrState instead**.
+>**NOTE:** The TFTP**<u>Ser</u>**AddrState parameter is deprecated. Zebra recommends using the TFTP**<u>Server</u>**AddrState parameter (below).
 
 <!--
 Controls whether a request for a TFTP Server Address will be sent by the DHCPv4 Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.

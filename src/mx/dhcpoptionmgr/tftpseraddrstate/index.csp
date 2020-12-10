@@ -19,22 +19,17 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned on and hence will cause the TFTP Server Address to be requested by the DHCP Client in the DHCP Request.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
-      description: This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.
+      description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the TFTP Server Address from being requested by the DHCP Client in the DHCP Request.
 ---
 
 >**NOTE:** This parameter is deprecated. **Use TFTPServerAddrState instead**.
 
-help file:
-"@Deprecated - Select whether to request TFTP Server Address from DHCPv4 Server"
-
-
-old copy:
-Controls whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.
+Controls whether a request for a TFTP Server Address will be sent by the DHCPv4 Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.
 
 The TFTP Server Address DHCP Option (option 150) is a Cisco-proprietary version of the standard TFTP Server Name DHCP Option (Cisco Option Number 150).
 

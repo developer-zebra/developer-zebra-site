@@ -45,6 +45,10 @@ products:
     image: /images/products/the-light-bulb-349400_1280.png
     btn-text: Latest Docs
     sections:
+      - title: Android Version Migration
+        url: /bestpractices/migration
+      - title: DataWedge Best Practices
+        url: /datawedge/latest/guide/gettingstarted/#bestpractices
       - title: Kiosk Persistence After Reset
         url: /bestpractices/kiosk_persistence_after_reset.pdf
       - title: Persistence for EMMs

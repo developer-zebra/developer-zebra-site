@@ -220,7 +220,7 @@ The following section lists the major features and enhancements added to the MX 
  * Determine the status of PLMN lock UI
  * Enable/disable Dual SIM Standby
  * Get the status of DSDS
-* **Enhanced [DHCP Option Manager](/mx/dhcp)** adds these new actions:
+* **Enhanced [DHCP Option Manager](/mx/dhcpoptionmgr)** adds these new actions:
  * Enable/disable requests for a custom DHCP option from server
  * Request or disable a specified DHCP Option
  * Enable/disable sending of a custom DHCP Option to server

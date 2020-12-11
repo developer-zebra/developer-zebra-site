@@ -6,9 +6,8 @@ productversion: "2.3.1"
 ---
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
-<b>Device Tracker 2.3.1</b> or lower, the <i>on-premise</i> version released in 2019, is now renamed to <b>Device Tracker On-Prem.</b> Android Pie is the last Android platform supported. <b>Device Tracker On-Prem</b> is <i>not</i> compatible with the upcoming <b>Device Tracker</b> cloud-based release and cannot be upgraded. <br><br>
-<p style="color:black;"><b>Coming soon:</b></p>
-<a href="/devicetracker"><b>Device Tracker 4.0</b></a> <i>cloud-based</i>, the next generation version, is being released towards the end of 2020. It is the replacement for <b>Device Tracker On-Prem.</b> For access, contact your local Zebra account manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker"><b>Device Tracker</b></a> v4.0 is the cloud-based version, which replaces Device Tracker On-Prem v2.3.1 or lower. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker On-Prem </b> v2.3.1 or lower is the on-premise version, formerly known as Device Tracker. It is incompatible with Device Tracker v4.0 and cannot be upgraded. Android Pie is the last Android platform supported on Device Tracker On-Prem. </div>
 
 <a href="/devicetracker" class="btn btn-danger">Learn About Device Tracker</a> <p></p>
 

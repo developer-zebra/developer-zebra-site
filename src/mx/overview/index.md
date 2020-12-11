@@ -13,6 +13,19 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 The following section lists the major features and enhancements added to the MX versions indicated. 
 
+### Added in MX 10.3
+
+**MX 10.3 adds the following major features and enhancements**: 
+
+* **New [App Manager](/mx/appmgr) features**: 
+ * Allow/Disallow individual app upgrades 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
+ * Erase all data about paired peripherals on a device
+* **New [DHCP Option Manager](/mx/dhcpoptionmgr) features**: 
+ * Select between DHCPv4 and DHCPv6 clients on device
+* **New [NFC Manager](/mx/nfcmgr) features**: 
+ * Enable/Disable logging of NFC events on device
+
 ### Added in MX 10.2
 
 **MX 10.2 adds the following major features and enhancements**: 

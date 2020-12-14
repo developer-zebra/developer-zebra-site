@@ -7,7 +7,7 @@ productversion: "4.0"
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker</b> 4.0 is the cloud-based version, which replaces Device Tracker On-Prem 2.3.1 or lower. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem</a> 2.3.1 or lower is the on-premise version, which is incompatible with Device Tracker 4.0 and cannot be upgraded. Android Pie is the last Android platform supported on Device Tracker On-Prem.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem</a> 2.3.1 or lower is the on-premise version, which is incompatible with Device Tracker 4.0 and cannot be upgraded. 
 </div>
 
 ## Overview

@@ -31,7 +31,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 -----
 
-## What's New in v10.2
+## What's New in v10.3
 
 `IMPORTANT:` Due to changes in the [Google managed configuration specification](https://developer.android.com/work/managed-configurations), the Zebra OEMConfig schema for version 10.0 includes default values ***ONLY for hidden restriction types***; the Zebra schema no longer includes default values for non-hidden restriction types. 
 
@@ -40,6 +40,38 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 * **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
 
 ### New Features
+
+**Supports MX 10.3**, adding the following features and enhancements: 
+
+* **New [App Manager](/mx/appmgr) features**: 
+ * Allow/Disallow individual app upgrades 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
+ * Erase all data about paired peripherals on a device
+* **New [DHCP Option Manager](/mx/dhcpoptionmgr) features**: 
+ * Select between DHCPv4 and DHCPv6 clients on device
+* **New [NFC Manager](/mx/nfcmgr) features**: 
+ * Enable/Disable logging of NFC events on device
+
+<!-- 10/2/20 not found in MCs 
+* **New [Beacon Manager](/mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+ -->
+
+`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.2** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+
+**For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
+
+-----
+
+## Version History
+
+### Added in v10.2
+
+#### Device Support
+
+* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
+
+#### New Features
 
 **Supports MX 10.2**, adding the following features and enhancements: 
 
@@ -81,8 +113,6 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 **For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
 
 -----
-
-## Version History
 
 ### Added in v10.1
 

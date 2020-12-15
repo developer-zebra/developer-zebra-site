@@ -154,9 +154,9 @@ comingsoon:
    video_type: youtube
    button_text: About AppMgr 
  - image-location: left
-   title: MultiBarcode - Read Specific Barcodes with DataWedge 
-   subtitle: Coming soon in DataWedge 
-   description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the pattern are scanned; all others are ignored. 
+   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore All Others 
+   subtitle: Coming to DataWedge in early 2021 
+   description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
    url: /datawedge/
    video: 5Kr8h-Cke6k
    video_type: youtube

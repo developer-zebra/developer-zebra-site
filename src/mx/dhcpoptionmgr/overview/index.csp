@@ -14,8 +14,8 @@ DHCP Options are variable-length strings identified by DHCP Option Numbers that 
 
 ### Main Functionality
 
-* Select DHCPv4 or DHCPv6 client on device
-* Enable/Disable and set values of the following configurable DHCP options:
+* Enable DHCPv6 client on device (in addition to DHCPv4 client)
+* Enable/Disable and set values for the following configurable DHCPv4 options:
 
 <div class="dhcp-table">
  <table class="table">

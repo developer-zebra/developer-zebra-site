@@ -37,12 +37,13 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ### Device Support
 
-* **Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
+**Supports all Zebra devices running Android 7.x Nougat, Android 8.x Oreo and Android 10.1**.
 
 ### New Features
 
-**Supports MX 10.3**, adding the following features and enhancements: 
+**The [Managed Configurations guide](../mc)) now offers breadcrumbs** in each MC Group to help simplify navigation within the group.  
 
+**Supports MX 10.3**, adding the following features and enhancements: 
 * **New [App Manager](/mx/appmgr) features**: 
  * Allow/Disallow individual app upgrades 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 

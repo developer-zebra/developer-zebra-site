@@ -41,9 +41,9 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 
 ### New Features
 
-**The [Managed Configurations guide](../mc)) now offers breadcrumbs** in each MC Group to help simplify navigation within the group.  
+**<u>The [Managed Configurations guide](../mc) now offers breadcrumbs</u>** in each MC Group to help simplify navigation within the group.  
 
-**Supports MX 10.3**, adding the following features and enhancements: 
+**<u>Supports MX 10.3</u>**, adding the following features and enhancements: 
 * **New [App Manager](/mx/appmgr) features**: 
  * Allow/Disallow individual app upgrades 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
@@ -58,7 +58,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
  * Controls Bluetooth Low Energy beacon on mobile computers 
  -->
 
-`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.2** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+`IMPORTANT:` The MX features listed above are **supported ONLY on devices with MX 10.3** or later. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
 **For a detailed list of configuration parameters, see the [Managed Configurations](../mc) section**. 
 

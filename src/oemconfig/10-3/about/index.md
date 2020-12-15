@@ -44,16 +44,19 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 **<u>The [Managed Configurations guide](../mc) now offers breadcrumbs</u>** in each MC Group to help simplify navigation within the group.  
 
 **<u>Supports MX 10.3</u>**, adding the following features and enhancements: 
+* **New [NFC Manager](/mx/nfcmgr) features**: 
+ * Enable/Disable logging of NFC events on device
+
+<!-- 12/15/20- MX 10.3 features absent from OEMConfig 10.3:
 * **New [App Manager](/mx/appmgr) features**: 
  * Allow/Disallow individual app upgrades 
 * **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
  * Erase all data about paired peripherals on a device
 * **New [DHCP Option Manager](/mx/dhcpoptionmgr) features**: 
  * Select between DHCPv4 and DHCPv6 clients on device
-* **New [NFC Manager](/mx/nfcmgr) features**: 
- * Enable/Disable logging of NFC events on device
+ -->
 
-<!-- 10/2/20 not found in MCs 
+<!-- 10/2/20- MX 10.2 feature not in OEMConfig 10.3: 
 * **New [Beacon Manager](/mx/beaconmgr) CSP**: 
  * Controls Bluetooth Low Energy beacon on mobile computers 
  -->

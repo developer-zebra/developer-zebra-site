@@ -18,8 +18,8 @@ features:
  - image-location: left
    title: Device Central Smart Leash Keeps Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
-   description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they're been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
-   url: /devicecentral/
+   description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they've been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
+   url: /devicecentral
    video: pLuftOwcAFk
    video_type: youtube
    button_text: Learn More   
@@ -27,7 +27,7 @@ features:
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
    description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
-   url: /datawedge/latest/guide/about/
+   url: /datawedge
    video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
@@ -35,15 +35,15 @@ features:
    title: Smart Repository Simplifies Download, Installation of Lifeguard Updates
    subtitle: New in Zebra StageNow 5.0
    description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
-   url: /stagenow/4-3/about/
+   url: /stagenow
    video: HeZvx6X53yI
    video_type: youtube
    button_text: Learn More      
  - image-location: right
-   title: "DataWedge 'Wake Up and Scan' Makes Scanning Faster" 
+   title: "DataWedge 'Wake Up and Scan' Speeds Up Scanning" 
    subtitle: New in Zebra DataWedge 8.1
    description: Instantly capture barcodes with the press of the scan button when resuming operation after device suspend, eliminating delays and improving productivity. 
-   url: /datawedge/latest/guide/about/
+   url: /datawedge
    button_text: Learn More
    video: bR_uJwpVZD0
    video_type: youtube
@@ -58,24 +58,24 @@ features:
  - image-location: right
    title: New Beacon Manager CSP Aids Locationing; Updates to 11 Mobility Extensions
    subtitle: New in Zebra MX 10.2
-   description: Beacon Manager allows administrators control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
+   description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mx/overview/#addedinmx102
    button_text: Learn More
    video: TfFOGnNxAyA
    video_type: youtube
  - image-location: left
-   title: Bluetooth Scanner Notifications
+   title: Bluetooth Scanner Notifications Now Colorful, Audible
    subtitle: New in Zebra DataWedge 8.2
    description: Updates to the Bluetooth scanner notifications API in DataWedge 8.2 now allow apps to light a colored LED or play audio beeps based on user actions or barcodes scanned from a connected Bluetooth scanner. Device users can then easily and quickly react based on the audio or visual feedback. 
-   url: /datawedge/latest/guide/about/
+   url: /datawedge
    video: l85vNZdrZxw
    video_type: youtube
    button_text: Learn More
  - image-location: right
    title: Datawedge Now Supports Multiple Scanners in a Session
    subtitle: New in Zebra DataWedge 8.2
-   description: DataWedge now allows device users to scan with multiple different barcode scanners during a single scanning session, without the need stop and reconfigure the device to change scanner configurations.
-   url: /datawedge/latest/guide/about/
+   description: DataWedge now allows device users to scan with multiple different barcode scanners during a single scanning session, without the need to stop and reconfigure the device to change scanner configurations.
+   url: /datawedge
    button_text: Learn More
    video: QYDezVYFpN4
    video_type: youtube   
@@ -83,7 +83,7 @@ features:
    title: Now Cloud-based, Device Tracker Helps Locate Misplaced Zebra Devices
    subtitle: New with Zebra Device Tracker 4.0
    description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Now cloud-based, Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
-   url: /devicetracker/4-0/guide/about/
+   url: /devicetracker
    video: MzCWdLUhEPY
    video_type: youtube
    button_text: Learn More 
@@ -98,7 +98,7 @@ features:
  - image-location: left
    title: Feature-based Licensing Puts Admins in Control 
    subtitle: New in Zebra MX 10.2 
-   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devives now allow administrators to license specific features individually, bringing costs and device capabilities better into control.
+   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devices now allow administrators to license specific features individually, bringing costs and device capabilities into better control.
    url: /mx/licensemgr/
    video: YLepzmANq2s
    video_type: youtube
@@ -107,15 +107,15 @@ features:
    title: DataWedge Does Edge Detection, Full-document Capture
    subtitle: New in Zebra DataWedge 8.2 
    description: Easily capture an entire form without the need for a barcode by automatically detecting the edges of the form during document scans with DataWedge 8.2. 
-   url: /datawedge/latest/guide/about/
+   url: /datawedge
    video: DI8pxsTJdtI
    video_type: youtube
    button_text: Learn More 
  - image-location: left
    title: New Term-based Licensing Puts Admins in Charge
    subtitle: New in Zebra Enterprise Browser 3.0.6
-   description: Term-based licensing allows organizations to purchase Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets. One-, three- and five-year terms available, as is a 90-day trial term. Also new is a 30-day evaluation term, which comes preinstalled with every EB 3.0 download.
-   url: /enterprise-browser/3-0/guide/about/
+   description: Term-based licensing allows organizations to purchase Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets. One-, three- and five-year terms are available, as is a 90-day trial term. Also new is a 30-day evaluation term, which comes preinstalled with every EB 3.0 download.
+   url: /enterprise-browser
    video: IjNspS96BNg
    video_type: youtube
    button_text: Learn More 
@@ -154,7 +154,7 @@ comingsoon:
    video_type: youtube
    button_text: About AppMgr 
  - image-location: left
-   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore All Others 
+   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
    subtitle: Coming to DataWedge in early 2021 
    description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
    url: /datawedge/

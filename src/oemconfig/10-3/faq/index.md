@@ -99,9 +99,16 @@ Also see the [Glossary of terms](../glossary).
 
 -----
 
-###Q: Are there any features of Zebra OEMConfig that may require an EMM to provide special Zebra-specific customization for me to be able to utilize those features via that EMM? 
+###Q: Are there any features of Zebra OEMConfig that may require an EMM to provide special Zebra-specific customization to be able to utilize those features via that EMM? 
 
 **A: Yes and no**. There are some Zebra OEMConfig features that would require an EMM to enhance their solution to offer full support for those features. But those enhancements would not be Zebra-specific. If an EMM wishes to gain the full benefit of all Zebra OEMConfig features, they would need to enhance their solution in various ways. Whether a given EMM will elect to invest in providing such features depends on their own determination of the business value they offer. 
+
+
+-----
+
+###Q: Does OEMConfig mirror the features of Zebra's MX management framework? 
+
+**A: No**. For various reasons, features added to MX might NOT be added as OEMConfig managed configurations. This might be because the feature implements one or more "Actions" (forbidden by Google in MCs), is already implemented as a DPC function or it's useful only for device staging. 
 
 -----
 

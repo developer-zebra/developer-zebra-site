@@ -58,10 +58,10 @@ features:
  - image-location: right
    title: New Beacon Manager CSP Aids Locationing; Updates to 11 Mobility Extensions
    subtitle: New in Zebra MX 10.2
-   description: Beacon Manager allows administrators control the homing signal sent by supported Zebra devices when they're switched off. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
+   description: Beacon Manager allows administrators control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mx/overview/#addedinmx102
    button_text: Learn More
-   video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original
+   video: TfFOGnNxAyA
    video_type: youtube
  - image-location: left
    title: Bluetooth Scanner Notifications
@@ -127,6 +127,14 @@ features:
    video: YpDATt5SU-o
    video_type: youtube
    button_text: How to Use
+ - image-location: left
+   title: Pinch-to-Zoom, NavBar Now in Control 
+   subtitle: New in Zebra Enterprise Browser 3.0.6
+   description: Updates to APIs in Enterprise Browser 3.0.6 allow users to pinch-to-zoom web pages and images, and give developers control over the ability to show or hide the navigation bar, which contains the HOME, BACK and RECENT APPS buttons. The Database API also has been restored.  
+   url: /enterprise-browser/latest/guide/about/#newinv30
+   video: ngi_MPoBtRI
+   video_type: youtube
+   button_text: Learn More
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: left
@@ -145,8 +153,16 @@ comingsoon:
    video: t7J8e2rVcMM
    video_type: youtube
    button_text: About AppMgr 
+ - image-location: left
+   title: MultiBarcode - Read Specific Barcodes with DataWedge 
+   subtitle: Coming soon in DataWedge 
+   description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the pattern are scanned; all others are ignored. 
+   url: /datawedge/
+   video: 5Kr8h-Cke6k
+   video_type: youtube
+   button_text: About DataWedge 
 ---
-<!-- WHEN NO ITEMS ARE "COMING SOON"
+<!--  WHEN NO ITEMS ARE "COMING SOON"
   add "-none" to the lines as follows:
   comingsoon-heading-none
   comingsoon-none

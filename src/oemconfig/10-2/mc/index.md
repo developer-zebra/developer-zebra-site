@@ -16,6 +16,70 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/10-2/search
 ---
+<b><font size="6" color="black"> Terms in this Guide</font></b>
+
+
+
+ 
+
+
+
+## Concepts
+
+
+
+**Define -** Used when referring to the definition in the OEMConfig schema that determines what the administrator is *permitted* to do as opposed to what an admin might *elect* to do. For example, within a *Step*, an admin is *permitted* to include one of every defined *Managed Configuration Group* but in most cases would only *elect* to include only one or a few.
+
+
+**Include -** Used when referring to a decision by an administrator to *elect* to perform some Action or configuration as opposed to what the administrator is *permitted* to do, but may or may not *elect* to do. For example, an admin would be *permitted* to include one of everything, but likely would *elect* to include only one or a few.
+
+
+**Instance -** A SINGLE occurrence or use of something (such as a *Step*, MC, *Group*, *Sub-group*, or *Sub-array*). An Instance might refer to the inclusion of a *Step* in a *Transaction*; an MC or *Group* in a *Step*; an MC, *Sub-group*, or *Sub-array* in a *Group*; or a *Sub-group* as an element of a *Sub-array*.
+
+
+
+## Elements
+
+
+
+**Transaction -** An ordered list of *Steps*, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. *Steps* are executed in the exact order specified within the *Transaction*, but the order of execution within a *Step* is controlled by the system. The recommended means of controlling the order of execution, if required, is to use separate *Steps* within a *Transaction*.
+
+
+**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a *Step*, some MCs are defined directly (such as for entering an **Explanation** or selecting an **Error Mode**), but most are organized into *Managed Configuration Groups*. An instance of a *Step* can include no more than one instance of any MC or *Group* that is defined for a *Step*. Within a *Step*, all included MCs and *Groups*, and anything included within any *Groups*, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
+
+
+**Group -** See *Managed Configuration Group*.
+
+
+**Managed Configuration Group -** A collection of MCs, *Sub-groups*, or *Sub-arrays* that are defined to control some aspect of the device (such as **Analytics Configuration** or **Audio Configuration**). A *Group* can include no more than one instance of any MC, *Sub-group*, or *Sub-array* that is defined for that *Group*.
+
+
+**Sub-group -** A collection of MCs, *Sub-groups*, or *Sub-arrays* that are defined as *permitted* to control some sub-aspect of the device (such as **Send to Cloud Detail** in **Bug Reporting Configuration**). A *Sub-group* can include no more than one instance of any MC, *Sub-group*, or *Sub-array* defined for that *Sub-group*.
+
+
+**Sub-array -** An ordered list of instances of a SINGLE *Sub-group*, each of which can contain anything that is defined for that *Sub-group*. The only time the same MC, *Sub-group*, or *Sub-array* can be included more than once into the same *Step* is when it appears within different elements of a *Sub-array*. For example, the **Key Mapping Configuration** *Group* defines a *Sub-array* **Add Mapping Behaviors** that can be used to configure multiple behaviors for a single key in different modifier states (orange, green, blue, etc.). A single *Step* can include multiple instances of the MCs defined for the **Behaviors** *Sub-group*, by including them in different elements in the **Add Mapping Behaviors** *Sub-array*.
+
+
+
+### Type Styling
+
+
+
+- ***Bold Italic type*** indicates ***values*** of a Managed Configuration such as ***On*** or ***Enable***.
+- **Bold type** indicates the name of an MC, *Group*, *Sub-group*, or *Sub-array*, such as the **Audio Configuration** *Group* or the **State** Managed Configuration.
+- *Italic type* indicates *defined terms*, such as *Transaction* and *Step*.
+
+&emsp;&emsp;&emsp;NOTE: Defined terms are *Capitalized* to differentiate from italics used for *emphasis*.
+
+
+
+<b><font size="6" color="black"> Transaction Overview</font></b>
+
+
+
+This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of *Steps* for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. Before attempting to configure a *Transaction*, it's important to understand the concept of Managed Configuration *Groups*, *Sub-groups*, *Sub-arrays*. A *Transaction* can contain one or many of these elements, and can be nested multiple levels deep.
+
+
 <a id="steps">
 
 ## Transaction Steps

@@ -34,9 +34,9 @@ features:
  - image-location: left
    title: Smart Repository Simplifies Download, Installation of Lifeguard Updates
    subtitle: New in Zebra StageNow 5.0
-   description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices.  StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
+   description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices. StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
    url: /stagenow
-   video: HeZvx6X53yI
+   video: nPqciL_aDpc
    video_type: youtube
    button_text: Learn More      
  - image-location: right

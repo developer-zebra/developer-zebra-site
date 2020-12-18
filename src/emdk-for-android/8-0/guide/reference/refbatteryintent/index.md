@@ -6,13 +6,13 @@ productversion: '8.0'
 ---
 
 ## Overview
-The purpose of this document is to describe the functionality of the Battery intent API interface. It is intended for Android developers with familiarity with the Android intent mechanisms. 
+The purpose of this document is to describe the functionality of the Battery intent API interface. It is intended for Android developers familiar with the Android intent mechanisms. 
 
-**Applies to Android 4.4 KitKat and later**. 
+**Applies to devices running Android 4.4 KitKat and later**. 
  
 #### Also see [Battery Intent API guide](../../../intents/battery/)
 
-On Zebra devices, extra battery information is retrieved using the standard [Android Battery intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html) in the same was as with consumer devices. On devices equipped with Zebra Power Precision or Power Precision Plus batteries, the following extra information can be retrieved:
+On Zebra devices, extra battery information is retrieved using the standard [Android Battery intent](http://developer.android.com/training/monitoring-device-state/battery-monitoring.html), just as with consumer devices. The following extra information can be retrieved **on devices equipped with Zebra Power Precision or Power Precision Plus batteries**:
 
 ## Battery Extras
 <table class="table table-striped">

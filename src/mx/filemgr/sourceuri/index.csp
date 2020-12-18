@@ -5,7 +5,7 @@ type: parm
 order: 40
 mx: "4.3"
 devicetype: A,B
-info: HTTP/S requires MX 7.0+; FTPS requires MX 7.1+
+info: HTTP/S requires MX 7.0+; FTPS requires MX 7.1+. File Manager does NOT support anonymous FTP. 
 parm:
   presentif: File Action is Transfer/Copy and source is remote server
   pivotal: No
@@ -15,7 +15,7 @@ parm:
 
 Used to enter the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
 
-**Note: HTTP/HTTPS requires MX 7.0 or higher; FTPS requires MX 7.1 or higher**. 
+**`IMPORTANT:` File Manager does <u>NOT</u> support anonymous FTP**.
 
 **Parm value input rules**:
 

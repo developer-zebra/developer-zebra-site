@@ -49,6 +49,7 @@ order: 99
 	</wap-provisioningdoc>
 
 ### Download From FTPS With Explicit Connection
+**NOTE**: File Manager does <u>NOT</u> support anonymous FTP.
 
 	:::xml
 	<wap-provisioningdoc>
@@ -66,6 +67,7 @@ order: 99
 <!--2/11/19- above, changed "MSC_FileMgr_FTPS_TC02_1.apk" to "sample.apk"-->
 
 ### Download From FTPS With Implicit connection
+**NOTE**: File Manager does <u>NOT</u> support anonymous FTP.
 
 	:::XML
 	<wap-provisioningdoc>
@@ -84,6 +86,7 @@ order: 99
 
 
 ### Download From FTPS Through Open SSL server with Explicit Connection
+**NOTE**: File Manager does <u>NOT</u> support anonymous FTP.
 <!--validated by eng.-->
 	:::xml
 	<wap-provisioningdoc>
@@ -99,6 +102,7 @@ order: 99
 	</wap-provisioningdoc>
 
 ### Download From FTPS through Open SSL Server with Implicit connection
+**NOTE**: File Manager does <u>NOT</u> support anonymous FTP.
 
 <!-- older code-- not sure if it's ok now
 	:::xml

@@ -94,3 +94,21 @@ Try the following steps to resolve the issue:
  
    ![img](../images/TroubleWifi_StopHotspot.jpg)
 
+-----
+
+## Plug-in CSP Issues
+
+**Profiles created with [plug-in CSPs](../stagingprofiles/?Creating%20a%20Staging%20Profile#mxnotes) behave differently than those made with built-in CSPs**. The most important difference involves Profile importation and deletion. 
+
+<img alt="image" style="height:350px" src="../images/profiles/sn_210_csp_lib.png"/>
+_Click image to enlarge; ESC to cancel_.
+<br>
+
+#### Problem
+An error occurs when attempting to delete an `.apk` imported into the CSP library as a plug-in CSP.
+
+####Solution 
+
+1. Export all profiles to a location on the administrator host PC. 
+2. Delete the StageNow DB from the %APPDATA% directory on the PC. 
+3. Re-import the exported profiles.

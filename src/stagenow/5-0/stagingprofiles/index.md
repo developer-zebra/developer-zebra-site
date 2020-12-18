@@ -223,20 +223,24 @@ Select an option and proceed to the instructions for the selected Wizard.
 
 ### MX Notes
 * The second and third options above are supported only by Wizards that use the Deployment section of the tool.
-* **StageNow 2.9 and higher supports plug-in CSPs**, which deliver additional MX features not included with a given StageNow version. 
+* **StageNow 2.9 (and later) supports plug-in CSPs**, which deliver additional MX features not included with a given StageNow version. 
 * Plug-in CSPs are delivered as a `.zip` file. <u>DO NOT unzip</u>! 
 * Copy the `.zip` file to the following folder on the StageNow admin PC:
    * `\Program Files (x86)\Symbol Technologies\Staging_Solution\SNCertFiles\`
-* **If the plug-in CSP was unzipped or delivered as separate files, use the following steps to create a `.zip` file**:
+* **If the plug-in CSP was unzipped or delivered as separate files, use the following steps to (re)create a `.zip` file**:
   * **Use PKzip or a compatible compression utility** to zip the CSP and its corresponding DSD file into a single `.zip` archive file.
   * **Name the new file** `[CSPname].zip` (substituting "[CSPname]" for the real name. Example: `RfidMgr.zip`).  
   * **Copy the file to the folder shown above**. `NOTE:` **Do NOT drag the file** as described on the CSP Library screen. 
 * On the CSP Library screen, **click the "OR, CHOOSE FILE" button** and select the desired CSP's `.zip` file. 
 * The parameters of the plug-in CSP are now available using the standard process for creating a staging profile. 
+* **`In case of trouble with Profiles that use a plug-in CSP,` refer to the [Troubleshooting page](../troubleshooting)**.
 
 <img alt="image" style="height:350px" src="../images/profiles/sn_210_csp_lib.png"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
+
+
+
 
 -----
 

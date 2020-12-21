@@ -787,6 +787,10 @@ For more information, see [Barcode Input](../../input/barcode#scanningmodes).
 	<td>[Name of the Document Capture template]</td>
   </tr>
 
+  <tr>
+   	<td>common_barcode_dynamic_quantity</td>
+	<td>Integer from 1 to 100 (default 5)</td>
+  </tr>
 </table>
 
 

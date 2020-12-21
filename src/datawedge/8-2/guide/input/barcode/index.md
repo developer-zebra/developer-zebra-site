@@ -303,6 +303,53 @@ Video demonstration of signature presence detection:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4vS5Y2q9Vkg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
+#### Read Only Specific Barcodes
+
+Capture specific barcodes from a multibarcode form and ignore others based on barcode criteria defined in a custom NextGen SimulScan template. Scanning must be performed with **Document Capture** for this option. Contact your local Zebra sales representative for assistance in creating the template. The criteria to read specific barcodes is based on the following options selected during template creation:
+
+* **Barcode Type –** Specifies the barcode type or decoder as defined in the template.  
+* **Character Checking (Begins with) –** Specifies the specific character the barcode must begin with to decode, as defined in the template. Some common specifications:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**N -** (e.g.: NXXXXXX) for advice note number<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**P –** (e.g.: PXXXXXX) for part number<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**Q –** (e.g.: QXXXXXX) for quantity<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**V –** (e.g.: VXXXXXX) for vendor ID<br>
+* **Character Count -** Specifies the length of the barcode string to decode, as defined in the template. 
+* **Character Checking (Contains characters at a given location in the string) –** Specifies the character(s) at a given position in the decoded string which the barcode must contain, as defined the template. 
+* **Multiple Character Checking (Begins with) –** Specifies the acceptable characters for the barcode string to begin with, as specified in the template.  For example, if “A” and “B” is specified, then only barcodes that begin with “A” or “B” are decoded. 
+* **Variable Field Presence (Mandatory + Optional Barcode) –** applies to forms that contain a combination of mandatory and optional barcodes to decode, as specified in the template. If the mandatory barcode is not present, then the decode does not take place. If the mandatory barcode is present with an optional barcode, then both are decoded. If the mandatory barcode is present without an optional barcode, then the mandatory barcode is decoded. 
+
+Aside from **Character Checking** and **Multiple Character Checking,** any combination of these options can be used simultaneously. If more than one barcode is present that matches the given criteria, an alternative is **[Automatic Group Identification](./#automaticgroupidentification)**. 
+<br><br>
+
+#### Automatic Group Identification
+**Automatic Group Identification** decodes barcodes that have a common pattern, designating them into a unique group based on the criteria defined in the custom NextGen SimulScan template. Contact your local Zebra sales representative for assistance in creating the template. All of the following criteria must be met for this group of barcodes:
+* Same barcode symbology 
+* Same first 1-2 Characters of the barcode data
+* Same barcode data length
+
+When using this option, the quantity of barcodes must be specified by using **_one_** of the following methods:
+* **Quantity –** Based on the template, a separate barcode is present on the form or label specifying the quantity of barcodes to scan for each decode session. The decoded data from the quantity barcode must meet at least one of the following criteria:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Starts with "Q"  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Length is 1, 2, or 3 numeric digits<br>
+* **Quantity defined by user -** Set the quantity of barcodes to scan through the DataWedge UI with option **Group of common barcodes dynamic quantity** under **Template params** from **NG SimulScan configuration.** The value for this parameter takes into effect if user input quantity is selected when generating the template. _Value range: 1 to 100; default value: 5._
+
+<table>
+ <tr>
+  <td>
+  <img style="height:350px" src="NGSS_config.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="template_params.png"/>
+  </td>
+ </tr>
+</table>
+<i>Common barcode dynamic quantity</i>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Kr8h-Cke6k?rel=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<i>Video demonstration of Read Only Specific Barcodes and Automatic Group Identification features</i>
+
 ### MultiBarcode Params
 **MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
 

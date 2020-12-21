@@ -43,7 +43,7 @@ For each new release of Android, Zebra publishes tailored guidance highlighting 
 * Restrictions on non-SDK interfaces
 * Changes to the Google Play Store
 * Starting activities from the background
-* Access to device identifiers (link to OEMinfo)
+* [Access to device identifiers](https://developer.savanna.zebra.com/blog/device-identifiers-zebra-devices-running-android-10-%E2%80%93-complete-guide)
 * Settings panels
 * Move to AndroidX
 * Smart replies

@@ -36,6 +36,8 @@ products:
         url: /datawedge/8-2/guide/gettingstarted
       - title: Profiles
         url: /datawedge/8-2/guide/profiles
+      - title: Feature Matrix
+        url: /datawedge/8-2/guide/matrix
       - title: Settings
         url: /datawedge/8-2/guide/settings
       - title: APIs
@@ -44,10 +46,6 @@ products:
         url: /datawedge/8-2/guide/programmers-guides
       - title: Samples
         url: /datawedge/8-2/guide/samples
-      - title: Remote Admin
-        url: /datawedge/8-2/guide/admin
-      - title: Licensing
-        url: /datawedge/8-2/guide/licensing
       - title: FAQ
         url: /datawedge/8-2/guide/faq
     versions:

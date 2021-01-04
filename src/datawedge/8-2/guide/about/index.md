@@ -9,10 +9,11 @@ productversion: '8.2'
 
 DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) and manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app.
 
-There are 3 approaches to capture data:
-* **Zero-code** - eliminates the need for any programming or app modification by capturing and processing data with the use of [DataWedge profiles](../profiles) configured from the user interface.
-* **Minimal code** - basic method to retrieve data from intents (commonly used with general Android programming) with the use of a broadcast receiver without the need for finer control of scanning activity or data processing. Refer to [basic intent sample app](../samples/basicintent1).
-* **[DataWedge APIs](../api)** - programmatically control, modify and query the DataWedge configuration settings and operations through Android intents without concern of the underlying hardware. 
+There are 2 approaches to capture data:
+* **No-code** - eliminates the need for any programming or app modification by capturing and processing data with the use of [DataWedge profiles](../profiles) configured from the user interface.
+* **Application development** - develop data capture apps based on one of the following approaches:
+    * **Minimal code** - basic method to retrieve data from intents (commonly used with general Android programming) with the use of a broadcast receiver without the need for finer control of scanning activity or data processing. Refer to [basic intent sample app](../samples/basicintent1).
+    * **[DataWedge APIs](../api)** - programmatically control, modify and query the DataWedge configuration settings and operations through Android intents without concern of the underlying hardware. 
 
 Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
 

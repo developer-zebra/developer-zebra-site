@@ -15,7 +15,7 @@ content-items:
     url: /datawedge/8-2/guide/programmers-guides/articles
   - type: section
     level: 4
-    title: Use Content Provider Programmer's Guide
+    title: Content Provider Programmer's Guide
     text: This guide provides information on leveraging DataWedge's content provider to retrieve scanned data from large files.
     url: /datawedge/8-2/guide/programmers-guides/content-provider
   - type: section

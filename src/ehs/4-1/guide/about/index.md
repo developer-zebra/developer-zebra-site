@@ -40,7 +40,9 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 -----
 
-## New in EHS 4.0
+## New in EHS 4.1
+
+OLD OLD OLD
 
 * **Now supports Zebra devices running Android 10** as well as Android 9.x Pie and 8.x Oreo. 
 * **To enhance device and network security, EHS by default now hides potentially sensitive wireless device info** in User Mode.<br>Optionally, an administrator can **[display wireless settings](../settings/#wirelessinformation)**, if desired.
@@ -92,7 +94,25 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 ## Version History
 
-### EHS 3.2
+### Added in EHS 4.0
+
+* **Now supports Zebra devices running Android 10** as well as Android 9.x Pie and 8.x Oreo. 
+* **To enhance device and network security, EHS by default now hides potentially sensitive wireless device info** in User Mode.<br>Optionally, an administrator can **[display wireless settings](../settings/#wirelessinformation)**, if desired.
+* **[Recently Launched Apps](../settings/#recentappsaccess) can now be shown or hidden** from the User as desired by an administrator. 
+
+#### Supported Devices
+
+**EHS 4.0 adds support for the following devices running Android 10**:
+
+* **MC33x**
+* **PS20**
+* **TC21**
+* **TC26**
+* **TC52**
+
+-----
+
+### Added in EHS 3.2
 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
 * **EHS 3.2 download package contains a single .apk file** compatible with all supported devices running Oreo and Pie. 
@@ -111,7 +131,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 -----
 
-### EHS 3.1
+### Added in EHS 3.1
 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
 * **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts and to set the period of time (in minutes) the device must be locked before Lockout Recovery is possible. 
@@ -148,7 +168,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 * **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
-### EHS 3.0
+### Added in EHS 3.0
 
 * **Support added for devices running Android 8.1 Oreo**.
 * Supports **[Pinned Shortcuts](../settings/#pinnedshortcuts)** feature of Oreo similar to traditional shortcuts.    
@@ -183,7 +203,7 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 
 -----
 
-### EHS 2.8
+### Added in EHS 2.8
 
 #### Device Support
 
@@ -227,7 +247,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 -----
 
-### EHS 2.7
+### Added in EHS 2.7
 
 >**This version does not support Android KitKat**. 
 
@@ -254,13 +274,13 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 
 -----
 
-### EHS 2.6
+### Added in EHS 2.6
 
 * **Support for ET50/ET55** tablet computers running Marshmallow
 
 -----
 
-### EHS 2.5
+### Added in EHS 2.5
 
 #### Device Support:
 * [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop
@@ -291,7 +311,7 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 
 ------
 
-### EHS 2.4
+### Added in EHS 2.4
 
 * **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop.
 
@@ -319,6 +339,6 @@ _The User Mode screen with XXL icons_. -->
 
 ------
 
-### EHS 2.3
+### Added in EHS 2.3
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)

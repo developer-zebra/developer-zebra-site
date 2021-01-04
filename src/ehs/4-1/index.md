@@ -4,7 +4,7 @@ img: ehs-logo.png
 layout: redirect.html
 redirect_url: /ehs/4-1/guide/about
 menu:
-  title: Zebra EHS 4.0
+  title: Zebra EHS 4.1
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,

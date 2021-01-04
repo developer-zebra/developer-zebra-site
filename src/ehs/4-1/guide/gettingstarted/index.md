@@ -7,17 +7,17 @@ content-items:
     level: 4
     title: Setup Guide
     text: A step-by-step guide to installation and proper configuration of EHS on a device and a walk-through of its basic settings
-    url: /ehs/4-0/guide/setup
+    url: /ehs/4-1/guide/setup
   - type: section
     level: 4
     title: Advanced Settings
     text: How to control Enterprise Home Screen through its XML configuration file for centralized staging and mass deployment
-    url: /ehs/4-0/guide/settings
+    url: /ehs/4-1/guide/settings
   - type: section
     level: 4
     title: Special Features
     text: A guide to the advanced features of EHS including Kiosk Mode and device logging
-    url: /ehs/4-0/guide/features
+    url: /ehs/4-1/guide/features
 product: Zebra EHS
 productversion: '4.1'
 ---

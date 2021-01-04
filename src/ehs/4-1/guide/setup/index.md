@@ -199,7 +199,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 The capabilities of EMM systems vary. Please refer to the EMM documentation for specific information about how to configure these commands. 
 
-**Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
+**Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/latest/guide/about) or [StageNow](/stagenow/latest/about/) tools**. 
 
 -----
 
@@ -253,7 +253,7 @@ The steps above do not remove the `enterprisehomescreen.xml` configuration file 
 -----
 
 ### Automated Uninstallation
-These instructions apply to remote uninstallation using an organization's own EMM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+These instructions apply to remote uninstallation using an organization's own EMM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/latest/guide/about) or [StageNow](/stagenow/latest/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 >**`IMPORTANT`**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Display and Sound settings, and the "About phone" panel only), disabling apps and recent apps button and so on, DO NOT revert to their former state when EHS is uninstalled. <u>To restore a device to its former state, **all such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
 

@@ -909,6 +909,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/3-2/'
     }))
     .use(foldermenu({
+        folder: 'ehs/4-1/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/4-0/'
     }))
      .use(foldermenu({

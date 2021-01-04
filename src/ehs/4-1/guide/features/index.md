@@ -9,15 +9,15 @@ productversion: '4.1'
 
 This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party Enterprise Mobile Management (EMM) system (if supported by that EMM system). EHS simply puts the capabilities into a single tool.
+<b>Note</b>: Many of the device-securing capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party Enterprise Mobile Management (EMM) system (if supported by that EMM system). EHS simply puts the capabilities into a single tool.
 
-> **Note**: Secure Mode is discontinued in EHS 3.0 and higher. 
+> **Note**: Secure Mode is discontinued in EHS 3.0 and later. 
 
 -----
 
 ## Multi-user Mode
 
-EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode behaves as indicated below. 
+EHS 3.1 and later supports Multi-user Mode on devices running Android 8.x Oreo and later. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode behaves as indicated below. 
 
 **When multi-user mode is employed on devices running Android Pie**, app icons sometimes do not appear on the Secondary user's Home screen when repeatedly switching between Primary and Secondary users. This can be addressed by logging in as the primary user then logging in as the secondary user, or rebooting the device.
 
@@ -66,7 +66,7 @@ When switching to a Guest user on a device, Android displays a prompt asking to 
 
 ## GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. **Although these apps and services also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
+On GMS devices running Android 8.x Oreo and later, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. **Although these apps and services also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
 
 Attempts to enable any of the effected apps&ndash;either through the EHS Preferences UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the Privileged Settings UI also see a failure message on the screen.
 
@@ -122,7 +122,7 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 ## Privileged Settings
 
-In EHS 3.0 (and higher), certain features once automatically enabled when entering Admin Mode must now be enabled manually. EHS refers to these as Privileged Settings:
+In EHS 3.0 (and later), certain features once automatically enabled when entering Admin Mode must now be enabled manually. EHS refers to these as Privileged Settings:
 
 * USB debugging
 * The Android Settings panel app
@@ -177,10 +177,10 @@ EHS records all major activities, failures and security events in the `/enterpri
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
 <img alt="" style="height:450px" src="logging_disabled.png"/>
-_In EHS 2.7 and higher, logging can be enabled/disabled through the UI or config file._
+_In EHS 2.7 and later, logging can be enabled/disabled through the UI or config file._
 <br>
 
-**IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. Log files are no longer designated as "SECURED" or "UNSECURED" in log entries.  
+**IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and later. Log files are no longer designated as "SECURED" or "UNSECURED" in log entries.  
 
 ------
 

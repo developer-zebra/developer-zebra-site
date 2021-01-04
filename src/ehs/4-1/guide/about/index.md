@@ -2,7 +2,7 @@
 title: About Zebra EHS
 layout: guide.html
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 #### [What's New in EHS 4.0](#newinehs40)

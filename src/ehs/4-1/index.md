@@ -31,7 +31,7 @@ menu:
     - icon: fa fa-search
       url: /ehs/4-0/search
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 ### Redirecting to the latest Enterprise Home Screen docs...

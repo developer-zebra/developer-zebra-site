@@ -19,7 +19,7 @@ content-items:
     text: A guide to advanced features of EHS including Kiosk Mode and device logging
     url: /ehs/4-0/guide/features
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 

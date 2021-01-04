@@ -2,7 +2,7 @@
 title: Zebra EHS Advanced Settings
 layout: guide.html
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 ## Overview

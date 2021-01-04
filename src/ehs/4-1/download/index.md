@@ -2,7 +2,7 @@
 title: Download Zebra EHS
 layout: guide.html
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 <!-- 6/19/20- eng says this input was incorrect. Oreo/Pie not dropped per TUT-38824 

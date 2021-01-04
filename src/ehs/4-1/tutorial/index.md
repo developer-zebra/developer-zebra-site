@@ -24,7 +24,7 @@ content-items:
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
 product: Zebra EHS
-productversion: '4.0'
+productversion: '4.1'
 ---
 
 

@@ -30,7 +30,13 @@
                             {{/if}}
                         </div>
                         <div class="col-sm-7"> 
-                            <h4 class="featured-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
+                            
+                            {{#if anchor_id}}
+                                <a id="{{anchor_id}}"></a> 
+                            {{/if}}
+                                                        
+                            <h4 class="featured-heading"> <a href="{{this.url}}">{{ title }}</a></h4> 
+                            
                             {{#if subtitle}}
                             <h6 class="featured-subheading"> <a href="{{this.url}}">{{ subtitle }}</a></h6>
                             {{/if}}

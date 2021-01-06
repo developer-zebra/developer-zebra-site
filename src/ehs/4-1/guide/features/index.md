@@ -22,7 +22,11 @@ EHS 4.1 (and later) supports screen blanking, which can automatically place a bl
 ### Requirements
 * **Supported only on GMS devices** with the Google Play service
 * **GPS must be enabled** and functional on the device
-* **Device must grant screen-overlay permission to EHS**
+* **"Display over other apps" must be enabled for EHS on device** (see image below)
+
+<img alt="" style="height:200px" src="ehs41_screen_blanking_panel_00.png"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
 
 ### Notes
 * All touch input is blocked when overlay is displayed.

@@ -65,7 +65,6 @@ _Click image to enlarge; ESC to exit_.
 <br>
 
 #### Example
-
 	:::xml
 	<screen_blanking>     
 		<speed_threshold>10</speed_threshold>

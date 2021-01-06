@@ -42,7 +42,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 ## New in EHS 4.1
 
-* **New [Screen Blanking feature](../settings/#screenblanking)** disables touch input when the device is in motion, adding a measure of safety when EHS is used in vehicle applications. 
+* **New [Screen Blanking feature](../features/#screenblanking)** disables touch input when the device is in motion, adding a measure of safety when EHS is used in vehicle applications. 
 
 ### Supported Devices
 

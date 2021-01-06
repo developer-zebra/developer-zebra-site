@@ -17,7 +17,7 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Screen Blanking
 
-EHS 4.1 (and later) supports screen blanking, which can automatically blacken or place a translucent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen blanking is intended as a safety measure when EHS is used in vehicle applications. 
+EHS 4.1 (and later) supports screen blanking, which can automatically place a black or transparent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen blanking is intended as a safety measure when EHS is used in vehicle applications. 
 
 ### Requirements
 * **Supported only on GMS devices** with the Google Play service
@@ -37,63 +37,58 @@ EHS 4.1 (and later) supports screen blanking, which can automatically blacken or
 -----
 
 ### Enable Screen Blanking
+Screen blanking is enabled by a device administrator through the device user interface or a setting in the `enterprisehomescreen.xml` config file. For more information, see [Working with the Config File](../settings/#workingwiththeconfigfile). 
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_01.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-
+#### Example
 		:::xml
 		<screen_blanking>
 			<blanking_enabled>1</blanking_enabled>
 		</screen blanking>
 
 **Possible values**:
-* **0 - Disabled (default; No overlay shown; touch input allowed)**
-* 1 - Enabled (Overlay shown according to configured speed threshold)
+* **0 - Disabled (default; no overlay shown; touch input enabled)**
+* 1 - Enabled (touch input disabled according to configured speed threshold)
 
 ### Speed Threshold
+Used to set the vehicle speed (in miles per hour) at which screen blanking is enabled and touch input is disabled **(default = 10 MPH)**. **The minimum value is five (5) MPH**. If a value of less than five MPH is entered, the default value (10 MPH) is used.  
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_02.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-NOTES:
-•	5 is the minimum value, if lower values are entered default 10 MPH i.e. 10 miles per hour will be taken by this feature. The is no upper limit of speed threshold is capped. So, mathematically speed threshold range is 5 MPH to infinity.
-Example
+#### Example
 
 	:::xml
 	<screen_blanking>     
 		<speed_threshold>10</speed_threshold>
 	</screen blanking>
 
-
-FIXXXXX
 **Possible values**:
-* **10 - (default; 10 miles per hour)**
-* 5 to any value - (Overlay will be shown based on speed threshold)
+* 5 &ndash; ∞ - **(default = 10 MPH)**
 
 ### Blanking Mode
 
-Blanking modes has two options. They are Black screen and Transparent screen. 
+Used to select the screen blanking mode; both of which disable touch input. Option 1 overlays the screen with black; no data is visible. Option 2 places a transparent covering over the current app, allowing data (such as Google Maps) to be visible. 
+
+**NOTE: Mode changes take effect after the user visits the EHS Home Screen**.
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_03.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
-
-NOTES:
-After changing the mode user must go to EHS home screen for overlay window to get effect.
-Example
-
+#### Example
 	:::xml
 	<screen_blanking>      
 		<blanking_mode>1</blanking_mode>
 	</screen blanking>
 
 Possible values:
-* **1 - (default; black screen overlay shown)**
-* 2 (Transparent overlay shown)
+* **1 - (default; black screen)**
+* 2 (transparent screen)
 
 -----
 

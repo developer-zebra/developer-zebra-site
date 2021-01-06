@@ -24,7 +24,7 @@ EHS 4.1 (and later) supports screen blanking, which can automatically place a bl
 * **GPS must be enabled** and functional on the device
 * **"Display over other apps" must be enabled for EHS on device** (see image below)
 
-<img alt="" style="height:200px" src="ehs41_screen_blanking_panel_00.png"/>
+<img alt="" style="height:280px" src="ehs41_screen_blanking_panel_00.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 

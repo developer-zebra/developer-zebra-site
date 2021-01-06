@@ -14,7 +14,7 @@ menu:
       img: /images/flags/img-flag-germany.png
       urlFrom: ddt
       urlTo: ddt-de
-      label: DE - Deutsche
+      label: DE - Deutsch
     - lang: es,
       img: /images/flags/img-flag-spain.png
       urlFrom: ddt

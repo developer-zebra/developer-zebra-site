@@ -818,12 +818,15 @@ For encrypted file created using the EKD tool:
 	  </CustomKioskMode>
 
 ### DisableAllIME
-**Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device before enabling this parameter. 
+Controls the Enterprise Keyboard (IME) layout pop-up when an input field is focused in an Enterprise Browser app.
 
+<!-- 1/6/21- description changed to above per eng. [TUT-43505] 
+**Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device before enabling this parameter. 
+ -->
 **Possible values**:
 
-* **0 - Disabled (default; IMEs can be used)**
-* 1 - Enabled (IMEs cannot be used)
+* **0 - Disabled (default; Enterprise Keyboard (IME) layout will appear)**
+* 1 - Enabled (Enterprise Keyboard (IME) layout will not appear)
 
 ####Example
 	<Configuration>

@@ -825,8 +825,8 @@ Controls the Enterprise Keyboard (IME) layout pop-up when an input field is focu
  -->
 **Possible values**:
 
-* **0 - Disabled (default; Enterprise Keyboard (IME) layout will appear)**
-* 1 - Enabled (Enterprise Keyboard (IME) layout will not appear)
+* **0 - Disabled (default; EB key layout appears on input-field focus)**
+* 1 - Enabled (EB key layout does not appear on input-field focus)
 
 ####Example
 	<Configuration>

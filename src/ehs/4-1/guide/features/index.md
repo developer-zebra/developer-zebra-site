@@ -29,21 +29,21 @@ _Click image to enlarge; ESC to exit_.
 <br>
 
 ### Notes
-* All touch input is blocked when overlay is displayed.
-* Vehicle speed calculation is based on output from Google GPS location APIs.   
-* Incoming phone calls cannot be accepted when blanking is active.
-* The transparent overlay allows display of Maps or other apps but no user interaction.
-* **Blanking becomes inactive if**: 
- * Vehicle speed drops and remains below the configured speed threshold for 10 seconds.
- * GPS data is lost for a period of five (5) consecutive minutes. The service checks for a GPS signal every five (5) minutes; blanking is restored automatically when GPS service resumes.  
-* The screen blanking feature takes about 15 seconds to initialize following a device reboot. 
+* **All touch input is blocked** when overlay is displayed.
+* **Vehicle speed calculation is based on Google GPS** location API output.   
+* **Incoming phone calls cannot be accepted** when blanking is active.
+* **The transparent overlay allows display of Maps** or other apps but no user interaction.
+* **Blanking becomes inactive when**: 
+ * **Vehicle speed drops and remains below the configured speed threshold** for 10 seconds.
+ * **GPS data is lost for a period of five (5) minutes**. The service checks for a GPS signal every five (5) minutes; blanking is restored automatically when GPS service resumes.  
+* **The screen blanking feature takes about 15 seconds to initialize** following a device reboot. 
 
 -----
 
 ### Enable Screen Blanking
-Screen blanking is enabled by a device administrator through the device user interface or a setting in the `enterprisehomescreen.xml` config file. For more information, see [Working with the Config File](../settings/#workingwiththeconfigfile). 
+Screen blanking is enabled by a device administrator using the EHS Preferences panel on the device or through a setting in the `enterprisehomescreen.xml` config file. For more information about this file, see the [Working with the Config File](../settings/#workingwiththeconfigfile) section of the Advanced Settings guide. 
 
-<img alt="" style="height:350px" src="ehs41_screen_blanking_panel_01.png"/>
+<img alt="" style="height:350px" src="ehs41_screen_blanking_panel_01b.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
@@ -58,7 +58,7 @@ _Click image to enlarge; ESC to exit_.
 * 1 - Enabled (touch input disabled according to configured speed threshold)
 
 ### Speed Threshold
-Used to set the vehicle speed (in miles per hour) at which screen blanking is enabled and touch input is disabled **(default = 10 MPH)**. **The minimum value is five (5) MPH**. If a value of less than five MPH is entered, the default value (10 MPH) is used.  
+Used to set the vehicle speed (in miles per hour) at which screen blanking is enabled and touch input is disabled **(default = 10 MPH)**. **The minimum value is 5 MPH**. If a value of less than 5 is entered, the default value of 10 is used.  
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_02.png"/>
 _Click image to enlarge; ESC to exit_. 

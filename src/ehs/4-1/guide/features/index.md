@@ -17,38 +17,30 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Screen Blanking
 
-<img alt="" style="height:150px" src="ehs41_screen_blanking_panel_01.png"/>
-_Click image to enlarge; ESC to exit_. 
-<br>
-
-Usage of Screen Blanking
-1.	Touch input is blocked if overlay window comes up. So, driver will not be able to perform below actions.
-i.	Transparent blanking screen will not allow the driver to accept the re-routing options suggested by map application.
-ii.	The driver will not be able to accept phone calls.
-
-2.	If driver wants to see map in high speed, the transparent window feature should be chosen.
-Limitations:
-     1. The algorithm used to develop the functionality is dependent on accuracy of Google location api’s.
-     2. The overlay window will remain visible for 10 seconds if the speed comes down below the 
-          threshold and remains below.
-      3.Screen Blanking feature take 10 to 15 seconds to get ready after the device rebooted.
-         [Engineering team is ok to remove this statement from limitation section]
-     4. When GPS data are not available, but screen has an overlay window, a timer is scheduled after 
-          every 5 minutes to check the state of GPS. If no update is received from GPS for 5 minutes, the 
-          overlay window will be removed to unblock the user.
-
-
-Over screen shall be removed after 5 minutes irrespective of the speed when GPS data goes off.
-If GPS data comes back, then overlay screen will kick in based on speed and threshold.
-
-
-
+EHS 4.1 (and later) supports screen blanking, which can automatically blacken or place a translucent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen blanking is intended as a safety measure when EHS is used in vehicle applications. 
 
 ### Requirements
+* **Supported only on GMS devices** with the Google Play service
+* **GPS must be enabled** and functional on the device
+* **Device must grant screen-overlay permission to EHS**
 
-* Supported only on GMS devices with the Google Play service
-* GPS must be enabled and functional on the device
-* Device must grant screen-overlay permission to EHS
+### Notes
+* All touch input is blocked when overlay is displayed.
+* Vehicle speed calculation is based on output from Google GPS location APIs.   
+* Incoming phone calls cannot be accepted when blanking is active.
+* The transparent overlay allows display of Maps or other apps but no user interaction.
+* **Blanking becomes inactive if**: 
+ * Vehicle speed drops and remains below the configured speed threshold for 10 seconds.
+ * GPS data is lost for a period of five (5) consecutive minutes. The service checks for a GPS signal every five (5) minutes; blanking is restored automatically when GPS service resumes.  
+* The screen blanking feature takes about 15 seconds to initialize following a device reboot. 
+
+-----
+
+### Enable Screen Blanking
+
+<img alt="" style="height:350px" src="ehs41_screen_blanking_panel_01.png"/>
+_Click image to enlarge; ESC to exit_. 
+<br>
 
 
 		:::xml
@@ -57,12 +49,12 @@ If GPS data comes back, then overlay screen will kick in based on speed and thre
 		</screen blanking>
 
 **Possible values**:
-* **0 - Disabled (default; No overlay shown)**
-* 1 - Enabled (Overlay shown based on speed threshold)
+* **0 - Disabled (default; No overlay shown; touch input allowed)**
+* 1 - Enabled (Overlay shown according to configured speed threshold)
 
 ### Speed Threshold
 
-<img alt="" style="height:150px" src="ehs41_screen_blanking_panel_02.png"/>
+<img alt="" style="height:350px" src="ehs41_screen_blanking_panel_02.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
@@ -85,7 +77,7 @@ FIXXXXX
 
 Blanking modes has two options. They are Black screen and Transparent screen. 
 
-<img alt="" style="height:150px" src="ehs41_screen_blanking_panel_03.png"/>
+<img alt="" style="height:350px" src="ehs41_screen_blanking_panel_03.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 

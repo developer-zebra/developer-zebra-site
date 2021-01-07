@@ -775,10 +775,17 @@ To know more about PageAction based on page contents, please visit {eddy to add 
 
 ## Android Keyboard and DataWedge
 
+The SAP package disables keyboard input by default. Enterprise Browser supports disabling default SIP provided by Android platforms. Disable it by setting the `Config.xml` file attribute as below: 
+
+<!-- 1/6/21- description changed to above per eng. [TUT-43505]. 
+
+Formerly:
 The SAP package disables the Android keyboard by default, which also might prevent DataWedge from outputting acquired data as keystrokes. If DataWedge keystroke output is desired, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device instead.  
 
 Enterprise Browser supports disabling default SIP provided by Android platforms. Disable it by setting the `Config.xml` file attribute as below: 
 
+
+-->
     :::xml
     <IME>
       <DisableAllIME value ="1"/>
@@ -795,7 +802,6 @@ Enterprise Browser supports disabling default SIP provided by Android platforms.
       <ResizeOnButtonbar value="1"/>        
     </SIP>
 
-    :::xml
     <KeyboardConfiguration>
     <KeyboardVisibility value="onDemand"/>
       <ondemand>
@@ -804,7 +810,7 @@ Enterprise Browser supports disabling default SIP provided by Android platforms.
       </ondemand>   
     </KeyboardConfiguration>
 
-The first section of the `Config.xml` code above prevents the keyboard from automatically popping up when the focus moves to an input field and sets the page as "resizable" so it can adapt when a keyboard pops up. The second section causes the keyboard to appear when the F10 key is pressed (on certain devices). 
+The first section of the `Config.xml` code above prevents the keyboard from automatically popping up when the focus moves to an input field, and sets the page as "resizable" so it can adapt when a keyboard does appear. The second section causes the keyboard to appear when the F10 key is pressed (on certain devices). 
 
 **More information**: 
 * **[Config.xml Reference Guide](../configreference)**. 

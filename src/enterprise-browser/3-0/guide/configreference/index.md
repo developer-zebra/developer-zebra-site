@@ -818,15 +818,19 @@ For encrypted file created using the EKD tool:
 	  </CustomKioskMode>
 
 ### DisableAllIME
-Controls the Enterprise Keyboard (IME) layout pop-up when an input field is focused in an Enterprise Browser app.
+**This parameter is intended for use with Zebra Enterprise Keyboard (EKB) layouts only**. It controls the use of input method editors (IMEs) in the Enterprise Browser app. A setting of 0 invokes the default keyboard selected in the Android "On-screen keyboard" settings panel when an input field gains focus in an Enterprise Browser app. 
 
-<!-- 1/6/21- description changed to above per eng. [TUT-43505] 
+When this parameter contains a setting of 1 and EKB is selected as the default keyboard in the Android "On-screen keyboard" settings panel, the EKB layout will NOT appear when an input field gains focus. Behavior with non-Zebra keyboards is undefined. **This parameter can be useful for suppressing on-screen keyboard pop-ups when the device scanner is used for entering characters into a field**. 
+
+<!-- 1/6/21- description changed to above per eng. [TUT-43505]. 
+
+Formerly:
 **Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device before enabling this parameter. 
  -->
 **Possible values**:
 
-* **0 - Disabled (default; EB key layout appears on input-field focus)**
-* 1 - Enabled (EB key layout does not appear on input-field focus)
+* **0 - Disabled (default; EKB key layout appears on input-field focus)**
+* 1 - Enabled (EKB layout does NOT appear on focus; behavior with non-Zebra keyboards is undefined)
 
 ####Example
 	<Configuration>

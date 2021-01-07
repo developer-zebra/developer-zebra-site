@@ -818,9 +818,9 @@ For encrypted file created using the EKD tool:
 	  </CustomKioskMode>
 
 ### DisableAllIME
-**This parameter is intended for use with Zebra Enterprise Keyboard (EKB) layouts only**. It controls the use of input method editors (IMEs) in the Enterprise Browser app. A setting of 0 invokes the default keyboard selected in the Android "On-screen keyboard" settings panel when an input field gains focus in an Enterprise Browser app. 
+**This parameter is intended for use only with Zebra Enterprise Keyboard (EKB) layouts**. It controls the use of input method editors (IMEs) in the Enterprise Browser app. A setting of 0 invokes the default keyboard selected in the Android On-screen keyboard settings panel when an input field gains focus in an Enterprise Browser app. 
 
-When this parameter contains a setting of 1 and EKB is selected as the default keyboard in the Android "On-screen keyboard" settings panel, the EKB layout will NOT appear when an input field gains focus. Behavior with non-Zebra keyboards is undefined. **This parameter can be useful for suppressing on-screen keyboard pop-ups when the device scanner is used for entering characters into a field**. 
+When this parameter contains a setting of 1 and EKB layout is selected as the default in the Android settings panel, the EKB layout will NOT appear when an input field gains focus. Behavior with non-Zebra keyboards is undefined. **This parameter can be useful for suppressing on-screen keyboard pop-ups when the device scanner is used for entering characters into a field**. 
 
 <!-- 1/6/21- description changed to above per eng. [TUT-43505]. 
 
@@ -830,7 +830,7 @@ Formerly:
 **Possible values**:
 
 * **0 - Disabled (default; Android-default keyboard appears on input-field focus)**
-* 1 - Enabled (EKB layout does NOT appear on focus; behavior with non-Zebra keyboards undefined)
+* 1 - Enabled (EKB layout does NOT appear on focus; non-Zebra keyboard behavior  undefined)
 
 ####Example
 	<Configuration>

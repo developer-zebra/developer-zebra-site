@@ -775,7 +775,7 @@ To know more about PageAction based on page contents, please visit {eddy to add 
 
 ## Android Keyboard and DataWedge
 
-The SAP package disables keyboard input by default. Enterprise Browser supports disabling default SIP provided by Android platforms. Disable it by setting the `Config.xml` file attribute as below: 
+The SAP package disables keyboard input by default. Enterprise Browser supports disabling the Enterprise Keyboard layout selected as the default in the Android settings panel. Disable it by setting the `Config.xml` file parameter as shown below: 
 
 <!-- 1/6/21- description changed to above per eng. [TUT-43505]. 
 
@@ -810,7 +810,7 @@ Enterprise Browser supports disabling default SIP provided by Android platforms.
       </ondemand>   
     </KeyboardConfiguration>
 
-The first section of the `Config.xml` code above prevents the keyboard from automatically popping up when the focus moves to an input field, and sets the page as "resizable" so it can adapt when a keyboard does appear. The second section causes the keyboard to appear when the F10 key is pressed (on certain devices). 
+The first section of the `Config.xml` code above prevents the keyboard from automatically popping up when the focus moves to an input field, and sets the page as "resizable" so it can adapt if a keyboard does appear. The second section causes the keyboard to appear when the F10 key is pressed (on certain devices). 
 
 **More information**: 
 * **[Config.xml Reference Guide](../configreference)**. 

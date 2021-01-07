@@ -829,8 +829,8 @@ Formerly:
  -->
 **Possible values**:
 
-* **0 - Disabled (default; EKB key layout appears on input-field focus)**
-* 1 - Enabled (EKB layout does NOT appear on focus; behavior with non-Zebra keyboards is undefined)
+* **0 - Disabled (default; Android-default keyboard appears on input-field focus)**
+* 1 - Enabled (EKB layout does NOT appear on focus; behavior with non-Zebra keyboards undefined)
 
 ####Example
 	<Configuration>

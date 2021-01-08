@@ -54,8 +54,15 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
         :::xml
         <buttonxmlfile value="file://%INSTALLDIR%/android_sap/ EKBCustomLayouts.encrypted" />
 
-* **EnterpriseKeyBoard** enables the custom layouts made for Zebra's Enterprise Keyboard to input data. For this setting to work properly, the `*.encrypted` file containing layouts must be present in the `/enterprise/device/settings/ekb/config/` device folder.               
+* **EnterpriseKeyBoard** enables the custom layouts made for Zebra's Enterprise Keyboard to input data. For this setting to work properly, the `*.encrypted` file containing layouts must be present in the `/enterprise/device/settings/ekb/config/` device folder.
 * **Default** activates the default IME in the device for data input.
+
+As per your need please download sample Enterprise Keyboard encrypted layout file - Download Encrypted layout file (https://techdocs.zebra.com/ekd/1-9/samples/)
+
+Push encrypted file to below device path using below command
+adb push /filepath/filename.encrypted /enterprise/device/settings/ekb/config/
+
+Note: you can also create your own Enterprise Keyboard encrypted layout file using Enterprise Keyboard Designer tool (https://techdocs.zebra.com/ekd/1-9/guide/about/)
 
 #### Example
 

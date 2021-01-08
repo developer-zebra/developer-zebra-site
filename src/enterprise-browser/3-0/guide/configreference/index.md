@@ -818,19 +818,22 @@ For encrypted file created using the EKD tool:
 	  </CustomKioskMode>
 
 ### DisableAllIME
-**This parameter is intended for use only with Zebra Enterprise Keyboard (EKB) layouts**. It controls the use of input method editors (IMEs) in the Enterprise Browser app. A setting of 0 invokes the default keyboard selected in the Android On-screen keyboard settings panel when an input field gains focus in an Enterprise Browser app. 
-
-When this parameter contains a setting of 1 and an EKB layout is selected as the default in the Android On-screen keyboard settings panel, the EKB layout will NOT appear when an input field gains focus. Behavior with non-Zebra keyboards is undefined. **This parameter can be useful for suppressing on-screen keyboard pop-ups when the device scanner is used for entering characters into a field**. 
+**This parameter is intended for use only with Zebra Enterprise Keyboard (EKB) layouts**. It can be useful for suppressing an Enterprise Keyboard from appearing when the device scanner is used for entering characters into a field.
 
 <!-- 1/6/21- description changed to above per eng. [TUT-43505]. 
 
 Formerly:
 **Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device before enabling this parameter. 
+
+It controls the use of input method editors (IMEs) in the Enterprise Browser app. A setting of 0 invokes the default keyboard selected in the Android On-screen keyboard settings panel when an input field gains focus in an Enterprise Browser app. 
+
+When this parameter contains a setting of 1 and an EKB layout is selected as the default in the Android On-screen keyboard settings panel, the EKB layout will NOT appear when an input field gains focus. Behavior with non-Zebra keyboards is undefined.  
+
  -->
 **Possible values**:
 
-* **0 - Disabled (default; Android-default keyboard appears on input-field focus)**
-* 1 - Enabled (EKB layout does NOT appear on focus; non-Zebra keyboard behavior  undefined)
+* **0 - Default; Enterprise Keyboard appears on input-field focus**
+* 1 - Enterprise Keyboard does NOT appear on focus
 
 ####Example
 	<Configuration>
@@ -840,7 +843,6 @@ Formerly:
 	 </IME>
 	 ...
 	</Configuration>
-
 
 ### JSLibraries
 **Applies only to Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../dom/#whatisthedom) of every HTML page. **Disabled by default**. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 

@@ -70,6 +70,9 @@ Enterprise Browser 2.0 (and later) supports configuration parameters that provid
 
 #### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>
+**Notes**: 
+* When `KeyboardType` is set to "EnterpriseKeyboard," the selected EKB layout shows on every displayed EB page. The layout is hidden when the screen is touched.
+* When `KeyboardType` is set to "ButtonBar," the buttonbar layout is displayed until quitting Enterprise Browser.
 <br>
 
 #### To show keyboard on demand when an input field is in focus:

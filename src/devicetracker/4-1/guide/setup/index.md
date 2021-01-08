@@ -18,7 +18,7 @@ This section discusses installation and configuration of Device Tracker. The cli
 5. **Deploy server settings** to communicate with the cloud server.
 
 <br>
-<p>Steps 1 to 4 can be accomplished by creating a <a href="#createstagenowinstallationprofile">StageNow installation profile</a> and step 5 by creating a <a href="#createstagenowconfigurationprofile">StageNow configuration profile.</a></p>
+<p>Steps 1 to 4 can be accomplished by creating a <a href="#createinstallationprofile">StageNow installation profile</a> and step 5 by creating a <a href="#createconfigurationprofile">StageNow configuration profile.</a></p>
 
 <p><b>Configuration of the Device Tracker solution:</b><p>
 
@@ -55,7 +55,7 @@ See [Requirements](../about/#requirements).
 
 This section provides procedures to create 2 separate StageNow profiles for deployment:  installation and configuration. Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for device deployment. StageNow version 4.2 or higher is required if automatically bypassing the overlay permission for the optional [Check-out](./#devicecheck-out) feature. See [Zebra downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) for the StageNow install file.
 
-### Create StageNow Installation Profile
+### Create Installation Profile
 
 Create a StageNow installation profile to perform the following:<br>
 
@@ -80,9 +80,9 @@ For part C, the client app certificate must be extracted. Perform the steps in s
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
 9. If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds AccessMgr to the Config tab on the right side.
-10. Repeat step 7 again. AppMgr is listed in the Config tab.
+10. Scroll to **Intent** and click the plus (+) sign next to it. This adds Intent to the Config tab on the right side.
 11. _If using EMM for device deployment, skip this step and proceed to step 13._ Scroll to find **ConditionMgr** and click the plus (+) sign next to it. This adds ConditionMgr to the Config tab on the right side.
-    <img src="config-added.jpg" /><i>List of config settings added</i>
+    <img style="height:350px" src="config-added.png" /><i>List of config settings added</i>
 
 12. Click **Add.**
 13. _If using StageNow to copy the install file to the device, proceed with this step. Otherwise, skip to step 14._<br>
@@ -105,9 +105,11 @@ For part C, the client app certificate must be extracted. Perform the steps in s
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** System Alert Window<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.devicetrackercloud<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <b>Extract Client App Certificate</b> below)]<br>
-17. _StageNow Config 5_ – Launch app. For the third AppMgr, enter/select the following:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Launch an application<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Name:** Device Tracker<br>
+17. _StageNow Config 5_ – Launch NGDTCspService with an intent. For **Intent,** enter/select the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** StartService<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Android Action Name:** com.zebra.devicetrackercloud.csp.NGDTCspService<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Package Name:** com.zebra.devicetrackercloud<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Class Name:** com.zebra.devicetrackercloud.csp.NGDTCspService<br>
     Click **Continue.**
 18. _If using EMM for device deployment, skip this step and proceed to step 19._<br>
 _StageNow Config 6_ – Add a delay for the app to be ready to accept configurations. In the **ConditionMgr** screen under the “Create New Setting” tab, enter/select the following: <br>
@@ -149,7 +151,7 @@ where _[filename.apk]_ is the full path and file name of the Device Tracker APK 
 The certificate file is needed to create the StageNow Installation Profile.
 <br><br>
 
-### Create StageNow Configuration Profile
+### Create Configuration Profile
 
 Create a StageNow configuration profile to apply server settings in the app client for it to communicate with the server. The server configuration XML file is required, supplied by Zebra.
 

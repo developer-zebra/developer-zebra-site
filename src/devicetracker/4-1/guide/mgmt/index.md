@@ -179,9 +179,10 @@ Tap on any device card to display the **Device Details** screen:
         * **Never connected –** the device has never connected to the server
         * **Connected –** the device is connected to the server
         * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
-* **Secondary BLE:**
-        * **Available -** the device has a BLE beacon so a device search can be conducted when the device is offline or out of power
-        * **Not Available -** the device does not have a BLE beacon
+* **Secondary BLE:** For devices that have a secondary BLE, BLE beaconing can be enabled with [Beacon Manager CSP](/mx/beaconmgr) to locate the device even if the device is offline or loses power due to critically low battery or manual shutdown. See [Beacon Manager CSP](/mx/beaconmgr) documentation for recommended settings. When the device is offline or loses power, the secondary BLE continues to transmit beacons to aid in locating the device. In these circumstsances, the **[Play Sound](/use/#findadevice)** feature does not function.
+        * **Enabled -** the device has a secondary BLE and beaconing is enabled via [Beacon Manager CSP](/mx/beaconmgr)
+        * **Disabled -** the device has a secondary BLE and beaconing is disabled via [Beacon Manager CSP](/mx/beaconmgr)
+        * **Not Available -** the device does not have a secondary BLE
 * **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
         * **High –** indicates the remaining battery is greater than 66%
         * **Medium –** indicates the remaining battery is within the range 15% to 66%

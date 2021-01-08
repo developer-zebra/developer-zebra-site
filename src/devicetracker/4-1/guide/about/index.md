@@ -179,6 +179,15 @@ Known issues in Device Tracker 4.0:
 * After repeatedly launching the Device Tracker application over several weeks without rebooting the device, the app may become unresponsive. If this occurs, relaunch the application to continue operation. A fix will be provided in the next release.
 * When there are multiple pools of licenses with different expiration dates, an incorrect or negative license count is reported when the licenses expire.
 
+<!-- -->
+-----
+
+## What's New in 4.1
+
+* Now locate a device based on its [secondary BLE](../mgmt/#devicelist) beacons transmitted, even if the device is not powered on or is disconnected.
+* Added device support for EC50/EC55. See <a href="./#supporteddevices">Supported Devices.</a>
+* New Device Tracker service to start the app without user interaction.
+<!--* Scan barcode for user name and password, rather than manual entry. -->
 
 <!-- -->
 -----

@@ -73,7 +73,7 @@ When the user is ready to take action to perform the device search, the first st
 4. Using the BLE proximity meter, walk towards the target device. The BLE proximity meter identifies the overall trend on how far or how close the user is located in relation to the target device. The closer the target, the further the blue indicator bar expands to the right. As the seeking device approaches the target device, the numerical value on the meter decreases as it reaches “Close” or “0” value.
    <img style="height:350px" src="device-tracking.png" /><i>Tracking screen with proximity meter</i>
 
-5. Tap Play Sound on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
+5. Tap **Play Sound** on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6. If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.** The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
 
 <p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.</p>

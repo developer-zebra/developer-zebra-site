@@ -57,7 +57,7 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
 * **EnterpriseKeyBoard** enables the custom layouts made for Zebra's Enterprise Keyboard to input data. For this setting to work properly, the `*.encrypted` file containing layouts must be present in the `/enterprise/device/settings/ekb/config/` device folder.
 * **Default** activates the default IME in the device for data input.
 
-#### Examples
+#### Examples:
 
     :::xml
     <KeyboardType value="ButtonBar"/>
@@ -72,7 +72,8 @@ Enterprise Browser 2.0 (and later) supports configuration parameters that provid
 
 #### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>
-**Notes**: 
+
+####Notes: 
 * When `KeyboardType` is set to "EnterpriseKeyboard," the selected EKB layout shows on every displayed EB page. The layout is hidden when the screen is touched.
 * When `KeyboardType` is set to "ButtonBar," the buttonbar layout is displayed until quitting Enterprise Browser.
 <br>
@@ -129,7 +130,7 @@ Enterprise Browser 2.0 (and later) supports configuration parameters that provid
 * **[Sample Enterprise Keyboard layouts](https://techdocs.zebra.com/ekd/latest/samples/) can be downloaded** for a variety of devices and modified as needed for any application. 
 * **Custom layouts also can be created from scratch using Zebra [Enterprise Keyboard Designer](/ekd)**. 
 
-#### Notes 
+#### Notes:
 * **If the default SAP keyboard layout is preferred, Zebra recommends using the "default" value for the** `ButtonBarMaxHeight` **parameter** (as shown immediately above). If a custom layout is to be used, the value should be specified (in pixels) to match the layout height.
 * **For MC93 devices running Android 8.O Oreo**: disable the SAP custom keyboard (if desired) by updating the `sapconfigreader.js` file on the device as follows: 
 
@@ -147,7 +148,7 @@ Enterprise Browser 2.0 (and later) supports configuration parameters that provid
 
 Like all pixel-based UI elements, SAP ITSmobile UI elements look smaller on high-resolution displays than on low-res ones. A page designed to fill the screen of a 640x480 display will occupy only a portion of a modern high-res display. To compensate, apps running on Enterprise Browser 2.0 (and later) can use the ViewPort parameter, which reads device-specific display settings into the app at runtime. 
 
-####Example
+####Example:
     :::xml
     <ViewPort>
       <UseWideViewPort value="1"/>

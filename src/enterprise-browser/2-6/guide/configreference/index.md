@@ -818,12 +818,12 @@ For encrypted file created using the EKD tool:
 	  </CustomKioskMode>
 
 ### DisableAllIME
-**Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, [enable Enterprise Keyboard](/enterprise-keyboard/latest/guide/setup/#manualactivation) on the device before enabling this parameter. 
+**This parameter is intended for use only with Zebra Enterprise Keyboard (EKB) layouts**. It can be used for preventing an Enterprise Keyboard from appearing when the device scanner is used to populate a data-entry field.
 
 **Possible values**:
 
-* **0 - Disabled (default; IMEs can be used)**
-* 1 - Enabled (IMEs cannot be used)
+* **0 - Default; Enterprise Keyboard appears when an input field gains focus**
+* 1 - Enterprise Keyboard does NOT appear when an input field gains focus
 
 ####Example
 	<Configuration>

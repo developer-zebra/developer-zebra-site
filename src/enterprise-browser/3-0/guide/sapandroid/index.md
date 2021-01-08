@@ -57,7 +57,7 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
 * **EnterpriseKeyBoard** enables the custom layouts made for Zebra's Enterprise Keyboard to input data. For this setting to work properly, the `*.encrypted` file containing layouts must be present in the `/enterprise/device/settings/ekb/config/` device folder.
 * **Default** activates the default IME in the device for data input.
 
-#### Example
+#### Examples
 
     :::xml
     <KeyboardType value="ButtonBar"/>
@@ -66,7 +66,9 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
       // OR
     <KeyboardType value="default"/>
  
+### Keyboard Behavior
 Enterprise Browser 2.0 (and later) supports configuration parameters that provide more control over the behavior of SAP apps. Keyboard visibility and custom key layouts are controlled through parameters in the `Config.xml` file. For more information about using the file, see the [Config.xml reference](../configreference). 
+<br>
 
 #### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>

@@ -23,7 +23,7 @@ The following software is required to use EMDK for Android:
 * [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or later (**optional**)
 
 
-> **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and later.
+> **Note: Zebra recommends using OpenJDK**, which is bundled with Android Studio 2.2 and later.
 
 -----
 
@@ -38,12 +38,13 @@ The following instructions apply to Android Studio, which is required to use EMD
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **select "SDK Location"** (if not already selected).<br>
-   d. Confirm that **"Use embedded JDK (recommended)" is checked**.
+   d. Confirm a **valid "JDK location."** To use the OpenJDK (bundled with Android Studio), select "Embedded JDK."
 3. **Install the EMDK Profile Manager plug-in**:<br>
-   a. In **Android Studio -> Preferences.**<br>
+   a. In **File -> Settings.**<br>
    b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
-   c. **Enter "emdk" in the search box**:<br>
-    •  If no result appears, skip to Step d.<br>
+   c. **Enter "emdk" in the search box**.<br>
+   d. **Select "installed."<br>
+    •  If no result appears, skip to Step 3e.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
 _Click to enlarge; ESC to exit_.<br>
     •  If any version prior to 7.1 appears, **select it and click the "Uninstall" button**.<br>
@@ -52,20 +53,18 @@ _Click to enlarge; ESC to exit_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
     •  In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
-    •  Proceed to Step d.<br>
-   d. **Click "Browse repositories..."** button.<br>
-   <img alt="image" style="height:350px" src="browse_repos_01.png"/>
-_Click to enlarge; ESC to exit_.<br>
-   e. **Enter "emdk" in the search box**.<br>Then **click "Search in repositories"** as below:
+    •  Proceed to Step e.<br>
+   e. **Click "Marketplace."**<br>
+   f. **Enter "emdk" in the search box**.<br>Then **click "Search in repositories"** as below:
    <img alt="image" style="height:350px" src="install_plugin_01.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   f. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
+   g. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
    <img alt="image" style="height:350px" src="install_plugin_02.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   g. Click the **"Restart Android Studio"** button:<br>
+   h. Click the **"Restart Android Studio"** button:<br>
     <img alt="image" style="height:350px" src="install_plugin_03.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   h. **Click "Restart"** to confirm and restart Android Studio.<br> 
+   i. **Click "Restart"** to confirm and restart Android Studio.<br> 
    <img alt="image" style="height:100px" src="install_plugin_05.png"/>
 _Click to enlarge; ESC to exit_.<br>
 4. **Enable the EMDK SDK**:<br>
@@ -86,7 +85,8 @@ _Click to enlarge; ESC to exit_.<br>
 ##### EMDK APIs are now ready to use. 
 
 #### Notes 
-* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses SDK versions 7.1 and newer.
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
+* **See the [full list of EMDK versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----

@@ -21,15 +21,15 @@ To login as administrator or manager:
 1. Launch the Device Tracker app.
 2. If the Check-out feature is enabled, scan a barcode to check-out the device.
 3. Tap the options menu at the top right and select **Admin/Manager Login.**
-4. Enter the administrator or manager login credentials.
+4. Enter the administrator/manager login credentials or scan the barcodes for the username and password.
 5. Perform the required tasks.
 6. Logout when complete. Tap the options menu at the top right and select **Admin/Manager Logout.**
 
-<p>After logging in as administrator on the device, tap on the top right option menu and select one of the following:</p>
+<p>After logging in as <i>administrator</i> on the device, tap on the top right option menu and select one of the following:</p>
 
 * **Admin/Manager Logout –** logs out the administrator or manager.
 * **Settings –** displays information and options:
-        * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../setup/#siteaccesspointanddevicedata).
+        * **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../config/#siteaccesspointanddevicedata).
         * **Device Friendly Name –** displays the friendly name assigned to the device. 
         * **Site Name –** displays the friendly name assigned to the site location.
 
@@ -156,6 +156,8 @@ Tap and hold on any device card to display the available device actions:
 <i>Device action menu</i><!-- -->
 <br><br>
 
+#### Device Details
+
 Tap on any device card to display the **Device Details** screen:
 
 * **Device Status:**
@@ -179,9 +181,9 @@ Tap on any device card to display the **Device Details** screen:
         * **Never connected –** the device has never connected to the server
         * **Connected –** the device is connected to the server
         * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
-* **Secondary BLE:** For devices that have a secondary BLE, BLE beaconing can be enabled with [Beacon Manager CSP](/mx/beaconmgr) to locate the device even if the device is offline or loses power due to critically low battery or manual shutdown. See [Beacon Manager CSP](/mx/beaconmgr) documentation for recommended settings. When the device is offline or loses power, the secondary BLE continues to transmit beacons to aid in locating the device. In these circumstsances, the **[Play Sound](/use/#findadevice)** feature does not function.
-        * **Enabled -** the device has a secondary BLE and beaconing is enabled via [Beacon Manager CSP](/mx/beaconmgr)
-        * **Disabled -** the device has a secondary BLE and beaconing is disabled via [Beacon Manager CSP](/mx/beaconmgr)
+* **Secondary BLE:** identifies the state of the [secondary BLE](../config/#secondaryble):
+        * **Enabled -** the device has a secondary BLE and beaconing is enabled. When the device loses power, the secondary BLE continues to transmit beacons to aid in locating the device. 
+        * **Disabled -** the device has a secondary BLE and beaconing is disabled
         * **Not Available -** the device does not have a secondary BLE
 * **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
         * **High –** indicates the remaining battery is greater than 66%
@@ -212,7 +214,7 @@ Tap on any device card to display the **Device Details** screen:
 
 ## Device/Site Search
 
-2 types of searches can be performed:
+Two types of searches can be performed:
 
 1. Search by site
 2. Search by device
@@ -254,7 +256,7 @@ To perform a device search:
 
 ## See Also
 
-* [About Device Tracker](../about)
 * [User Roles](../roles)
-* [Install & Setup](../setup)
+* [Install](../setup)
+* [Configuration](../config)
 * [Device Tracking](../use)

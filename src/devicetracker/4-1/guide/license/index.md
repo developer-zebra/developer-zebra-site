@@ -45,7 +45,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 * **Order licenses**
 * **Check status** of existing orders
 
-<p>After licenses are processed, the license information <!--from the Zebra license portal--> is synchronized with the <a href="../setup/#webportal">Device Tracker web portal</a> every 24 hours. The administrator can perform a manual synchronization in the Device Tracker web portal to <a href="../setup/#viewlicenseinformation">refresh the license data</a> on-demand. The administrator monitors available licenses through the <a href="../setup/#webportal">Device Tracker web portal</a> to view licenses available, licenses consumed and total licenses. </p> 
+<p>After licenses are processed, the license information <!--from the Zebra license portal--> is synchronized with the <a href="../config/#webportal">Device Tracker web portal</a> every 24 hours. The administrator can perform a manual synchronization in the Device Tracker web portal to <a href="../config/#viewlicenseinformation">refresh the license data</a> on-demand. The administrator monitors available licenses through the <a href="../config/#webportal">Device Tracker web portal</a> to view licenses available, licenses consumed and total licenses. </p> 
 
 ## III. Automatic License Assignment
 
@@ -58,35 +58,35 @@ Assigning licenses is seamless and integrated into the device registration proce
 
 ## License Transfer
 
-Device Tracker supports the transfer of licenses from one device to another by returning the active license to the license pool and reallocating it to a new device. The active license can be released from the device by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice). After the device is decommissioned or deleted, a message appears indicating the device it not licensed. To license the new device, after it communicates with the Device Tracker server it is allocated with the newly released license. The new license allocation is reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. 
+Device Tracker supports the transfer of licenses from one device to another by returning the active license to the license pool and reallocating it to a new device. The active license can be released from the device by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice). After the device is decommissioned or deleted, a message appears indicating the device it not licensed. To license the new device, after it communicates with the Device Tracker server it is allocated with the newly released license. The new license allocation is reflected in the <a href="../config/#webportal">Device Tracker web portal</a>. 
 
 ## Automatic License Renewal
 
-After reaching the expiration date, the license is automatically deallocated from the device and a message is displayed on the device indicating the license has expired. If any licenses are available, the Device Tracker server automatically allocates a license to the device for continued, uninterrupted operation. The newly allocated license is reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. 
+After reaching the expiration date, the license is automatically deallocated from the device and a message is displayed on the device indicating the license has expired. If any licenses are available, the Device Tracker server automatically allocates a license to the device for continued, uninterrupted operation. The newly allocated license is reflected in the <a href="../config/#webportal">Device Tracker web portal</a>. 
 
 ## Recommission Devices
 
-<p>For devices being <a href="../use/#recommissionadevice">recommissioned</a> to place back into service as an active device, if a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device and the allocated license is reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. If a license is not available, the device remains in the decommissioned state and a <a  href="../use/#addeditanote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.</p>
+<p>For devices being <a href="../use/#recommissionadevice">recommissioned</a> to place back into service as an active device, if a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device and the allocated license is reflected in the <a href="../config/#webportal">Device Tracker web portal</a>. If a license is not available, the device remains in the decommissioned state and a <a  href="../use/#addeditanote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.</p>
 
 
 ## License Removal
 
-Device Tracker licenses can be removed by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice) from Device Tracker. When a device is decommissioned or deleted, the license is automatically removed from the device, as reflected in the <a href="../setup/#webportal">Device Tracker web portal</a>. Device Tracker is no longer operational on the device until it is relicensed.  
+Device Tracker licenses can be removed by [decommissioning the device](../use/#decommissionrecommissiondevice) or by [deleting the device](../setup/#deletedevice) from Device Tracker. When a device is decommissioned or deleted, the license is automatically removed from the device, as reflected in the <a href="../config/#webportal">Device Tracker web portal</a>. Device Tracker is no longer operational on the device until it is relicensed.  
 
 ## Important Notes
 
 Important information pertaining to Device Tracker licensing:
-* The <a href="../setup/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
+* The <a href="../config/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
 * **License allocation and deallocation** is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. 
 * [Never Connected](../mgmt/#dashboard) devices are not licensed.
 * Due to a **constraint from Google Firebase,** an attempt to activate licenses on more than 5,000 devices within a span of 5 minutes can result in a denial of licenses to devices. **Zebra strongly recommends limiting license activation to a maximum of 5,000 devices within 5 minutes.** To circumvent Google’s constraint:
  
         * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
-        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen on the Device Tracker web portal.
+        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
 * When **allocating licenses to unlicensed devices,** license allocation is based on license availabilty and the enroll time with the server. Methods for license allocation:
 
         * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
-        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../setup/#viewlicenseinformation) screen on the Device Tracker web portal.
+        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
 
 
 

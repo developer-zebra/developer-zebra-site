@@ -105,8 +105,12 @@ products:
         url: /devicetracker/4-1/guide/about
       - title: User Roles
         url: /devicetracker/4-1/guide/roles
-      - title: Install & Administration
+      - title: Install
         url: /devicetracker/4-1/guide/setup
+      - title: Configuration
+        url: /devicetracker/4-1/guide/config
+      - title: License
+        url: /devicetracker/4-1/guide/license
       - title: Device Management
         url: /devicetracker/4-1/guide/mgmt
       - title: Device Tracking

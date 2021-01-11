@@ -145,7 +145,7 @@ Administrators and managers can add a note to capture comments specific to the d
 
 ## Device Check-out
 
-[Device Check-out](../setup/#devicecheckout) is an optional feature that can be enabled by the administrator. If enabled, the user is required to scan their barcode at the start of their work shift to check-out the device, then logout at the end of their work shift to check-in the device. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. When a device is checked-out, the user is associated with the particular device until the user checks in the device.
+[Device Check-out](../config/#devicecheckout) is an optional feature that can be enabled by the administrator. If enabled, the user is required to scan their barcode at the start of their work shift to check-out the device, then logout at the end of their work shift to check-in the device. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. When a device is checked-out, the user is associated with the particular device until the user checks in the device.
 
 ### Check-out
 
@@ -155,7 +155,7 @@ Perform a device check-out at the start of a work shift as follows:
 2. The check-out screen appears, prompting to scan a barcode. When in the check-out screen, the user is prevented access to the device until check-out is performed.
 <img style="height:350px" src="checkout.png" /><i>Device check-out</i>
 
-3. Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../setup/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-out to be successful.
+3. Scan the barcode associated with the user by pressing the scan trigger or tapping on the barcode image on the screen. If the administrator has set a prefix string in the [barcode prefix option](../config/#enablecheckoutcheckin), the barcode must contain the prefix specified for check-out to be successful.
 4. A message appears indicating the user is checked-out successfully. The app is placed in the background.
 5. The user is now associated with the device. <br>
 <!-- -->
@@ -194,7 +194,8 @@ Choose one of the following options to Check-In a device:
 
 ## See Also
 
-* [About Device Tracker](../about)
 * [User Roles](../roles)
-* [Install & Setup](../setup)
+* [Install](../setup)
+* [Configuration](../config)
 * [Device Management](../mgmt)
+

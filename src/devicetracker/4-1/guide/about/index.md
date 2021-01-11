@@ -29,6 +29,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
         * Devices to assigned site with user friendly names for simple device identification.
 * Simple to deploy – install and configure the mobile application using StageNow and Enterprise Mobility Management tools.
 * Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator and play sound feature.
+* Locate a device even when it loses power, using secondary BLE beacons
 * Check-out/Check-in feature to associate users to devices for accountability. (Optional)
 
 <!-- -->
@@ -184,10 +185,10 @@ Known issues in Device Tracker 4.0:
 
 ## What's New in 4.1
 
-* Now locate a device based on its [secondary BLE](../mgmt/#devicelist) beacons transmitted, even if the device is not powered on or is disconnected.
+* Now locate a device based on its [secondary BLE](../config/#secondaryble) beacons transmitted, if the device is not powered on.
 * Added device support for EC50/EC55. See <a href="./#supporteddevices">Supported Devices.</a>
-* New Device Tracker service to start the app without user interaction.
-<!--* Scan barcode for user name and password, rather than manual entry. -->
+* New [Device Tracker service](../setup/#createinstallationprofile) to start the app without user interaction.
+* Administrator or manager can now scan a barcode for user name and password during login.
 
 <!-- -->
 -----
@@ -195,6 +196,8 @@ Known issues in Device Tracker 4.0:
 ## See Also
 
 * [User Roles](../roles)
-* [Install & Setup](../setup)
+* [Install](../setup)
+* [Configuration](../config)
+* [License](../license)
 * [Device Management](../mgmt)
 * [Device Tracking](../use)

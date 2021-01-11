@@ -19,12 +19,12 @@ Administrators track devices across multiple sites. The Administrator role encom
 Features and functions of administrators:
 
 - Configuration:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#webportal">Create/Manage administrator and manager user logins</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../setup/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#webportal">Create/Manage administrator and manager user logins</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
 
 - View:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#administration">Dashboard to view corporate-level data across all sites</a><br>
@@ -74,7 +74,7 @@ Features and functions of associates:<br>
 
 ## See Also
 
-* [About Device Tracker](../about)
-* [Install & Setup](../setup)
+* [Install](../setup)
+* [Configuration](../config)
 * [Device Management](../mgmt)
 * [Device Tracking](../use)

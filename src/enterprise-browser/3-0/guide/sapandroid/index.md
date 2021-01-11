@@ -68,7 +68,7 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
  
 #### Sample Layouts
 
-* **[Sample Enterprise Keyboard layouts](https://techdocs.zebra.com/ekd/latest/samples/) can be downloaded** for a variety of devices and modified as needed for any application. 
+* **[Sample Enterprise Keyboard layouts](https://techdocs.zebra.com/ekd/latest/samples/) can be downloaded** for a variety of devices and modified as needed for any application.  
 * **Custom layouts also can be created from scratch using Zebra [Enterprise Keyboard Designer](/ekd)**. 
 
 ### Keyboard Behavior

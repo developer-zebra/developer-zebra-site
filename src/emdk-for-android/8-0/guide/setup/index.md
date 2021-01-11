@@ -15,15 +15,15 @@ The following software is required to use EMDK for Android:
 #### Windows
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
 * [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK) 
-* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or higher (**optional**)
+* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or later (**optional**)
 
 #### Mac OS  
 * Mac OS X (aka macOS) 10.10.5 Yosemite or later
-* [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK)
-* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or higher (**optional**)
+* [Android Studio](https://developer.android.com/studio/) 2.2 or later (includes OpenJDK)
+* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or later (**optional**)
 
 
-> **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and higher.
+> **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and later.
 
 -----
 

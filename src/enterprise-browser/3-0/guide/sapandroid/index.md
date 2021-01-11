@@ -68,8 +68,9 @@ Enterprise Browser 2.5 introduced KeyboardType parameter, which can be used to s
  
 #### EKB Layouts
 
-* **[Sample Enterprise Keyboard layouts](https://techdocs.zebra.com/ekd/latest/samples/) can be downloaded** for a variety of devices and modified as needed for any application. [How to deploy](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/deploy/).  
-* **Custom layouts also can be created from scratch using Zebra [Enterprise Keyboard Designer](/ekd)**. 
+* **[Download sample EKB layouts](https://techdocs.zebra.com/ekd/latest/samples/)** for a variety of devices and modify as needed for any application.
+* **[Learn how to deploy](https://techdocs.zebra.com/enterprise-keyboard/latest/guide/deploy/)** existing EKB layout(s).  
+* **Create custom layouts from scratch using Zebra [Enterprise Keyboard Designer](/ekd)**. 
 
 ### Keyboard Behavior
 Enterprise Browser 2.0 (and later) supports configuration parameters that provide more control over the behavior of SAP apps. Keyboard visibility and custom key layouts are controlled through parameters in the `Config.xml` file. For more information about using the file, see the [Config.xml reference](../configreference). 

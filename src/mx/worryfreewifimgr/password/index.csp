@@ -5,6 +5,7 @@ type: parm
 order: 68
 mx: "8.2"
 devicetype: A
+info: Devices with MX 10.3 and later require a minimum password length of eight characters. 
 parm:
   pivotal: No
   presentif: Use Global Settings checkbox is "checked" 
@@ -16,5 +17,6 @@ Used to enter the password for access by the device user to WorryFree Wi-Fi conf
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters containing valid password characters 
+* **MX 10.3 and later**: String from 8&ndash;32 characters containing valid password characters 
+* **MX 10.2 and earlier**: String from 1&ndash;32 characters containing valid password characters
 

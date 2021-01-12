@@ -74,7 +74,7 @@ _Click to enlarge; ESC to exit_.<br>
 
         :::java
             dependencies {
-            compileOnly 'com.symbol:emdk:x.x.x'
+            compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
                 ...
             }
 5. **Rebuild the project** (Build -> Make Project). 

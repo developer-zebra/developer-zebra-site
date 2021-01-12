@@ -162,7 +162,7 @@ Create a StageNow server connectivity profile to apply server settings in the ap
 
 ### BLE Profile
 
-Create a StageNow profile to enable secondary BLE so the device can be located when powered off.
+Create a StageNow profile to enable secondary BLE so the device can be located when powered off. This applies to devices that have a secondary BLE.
 
 <p>To create the BLE profile:</p>
 

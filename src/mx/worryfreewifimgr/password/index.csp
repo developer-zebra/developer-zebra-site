@@ -17,6 +17,6 @@ Used to enter the password for access by the device user to WorryFree Wi-Fi conf
 
 **Parm value input rules**: 
 
-* **MX 10.3 and later**: String from 8&ndash;32 characters containing valid password characters 
-* **MX 10.2 and earlier**: String from 1&ndash;32 characters containing valid password characters
+* **MX 10.3 and later**: String from 8&ndash;32 containing valid password characters 
+* **MX 10.2 and earlier**: String from 1&ndash;32 containing valid password characters
 

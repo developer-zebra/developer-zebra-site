@@ -176,7 +176,7 @@ Network requirements for communication between the device client app and the clo
 ## Known Issues
 
 Known issues in Device Tracker 4.0:
-* When installing the application on a mobile device using an EMM, some EMMs do not grant all the required permissions for the application to run in the background to track the device. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM granting all permissions. Refer to the [Install guide](../setup)
+* When installing the application on a mobile device using an EMM, some EMMs do not grant all the required permissions for the application to run in the background to track the device. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM granting all permissions. Refer to the [Install & Setup guide](../setup)
 * After repeatedly launching the Device Tracker application over several weeks without rebooting the device, the app may become unresponsive. If this occurs, relaunch the application to continue operation. A fix will be provided in the next release.
 * When there are multiple pools of licenses with different expiration dates, an incorrect or negative license count is reported when the licenses expire.
 
@@ -187,7 +187,7 @@ Known issues in Device Tracker 4.0:
 
 * Now locate a device based on its [secondary BLE](../config/#secondaryble) beacons transmitted, if the device is not powered on.
 * Added device support for EC50/EC55. See <a href="./#supporteddevices">Supported Devices.</a>
-* New [Device Tracker service](../setup/#createinstallationprofile) to start the app without user interaction.
+* New [Device Tracker service](../setup/#installationprofile) to start the app without user interaction.
 * Administrator or manager can now scan a barcode for user name and password during login.
 
 <!-- -->

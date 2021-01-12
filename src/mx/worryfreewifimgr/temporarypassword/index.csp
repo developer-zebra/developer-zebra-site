@@ -5,7 +5,7 @@ type: parm
 order: 68
 mx: "9.2"
 devicetype: A
-info: NOT supported on TC20/TC25 devices. Devices with MX 10.3 and later require a minimum password length of eight characters. 
+info: NOT supported on TC20/TC25 devices. Devices with MX 10.3 and later require a minimum password length of eight (8) characters. 
 parm:
   pivotal: No
   presentif: Enable Temporary Password is set to "Enable" 

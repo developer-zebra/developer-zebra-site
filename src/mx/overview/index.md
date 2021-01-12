@@ -25,6 +25,9 @@ The following section lists the major features and enhancements added to the MX 
  * Select between DHCPv4 and DHCPv6 clients on device
 * **New [NFC Manager](/mx/nfcmgr) features**: 
  * Enable/Disable logging of NFC events on device
+* **New [WorryFree Wi-Fi Manager](/mx/worryfreewifimgr) features**: 
+ * Minimum password and temporary password length of eight (8) characters
+
 
 ### Added in MX 10.2
 

@@ -16,7 +16,7 @@ This section discusses installation and setup of Device Tracker. The client app 
 3. **Allow overlay permission _(optional)_.** If the [Device Check-out](../use/#devicecheckout) feature is required to prevent users from accessing the device prior to scanning their unique user barcode, automatically allow the overlay permission to avoid manual intervention during setup.
 4. **Launch the app** by starting the app service.
 5. **Deploy server settings** to communicate with the cloud server.
-6. **Enable secondary BLE** for the device to be located when powered off.
+6. **Enable secondary BLE** for the device to be located when powered off. This applies to devices with a secondary BLE.
 
 <br>
 <p>Execute steps 1 to 4 by creating a <a href="#installationprofile">StageNow installation profile</a>. <br>
@@ -162,7 +162,7 @@ Create a StageNow server connectivity profile to apply server settings in the ap
 
 ### BLE Profile
 
-Create a StageNow profile to enable secondary BLE so the device can be located when powered off. This applies to devices that have a secondary BLE.
+Create a StageNow profile to enable secondary BLE so the device can be located when powered off. This applies to devices with a secondary BLE.
 
 <p>To create the BLE profile:</p>
 

@@ -19,7 +19,7 @@ This section discusses configuration of Device Tracker:
 * **[Register devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices.
         * Assign friendly name
         * Assign a site location
-* **[Enable/Disable Secondary BLE Beacons](#secondaryble) -** Allow devices with  secondary BLE to be located when the device loses power.
+* **[Enable/Disable secondary BLE beacon](#secondaryble) -** Allow devices with a secondary BLE beacon to be located when the device loses power.
 <br>
 
 <p><b>Configure the Check-out feature <i>(optional)</i>:</b></p>
@@ -163,9 +163,9 @@ Deleting a device removes device data from the Device Tracker solution after uni
 
 ## Secondary BLE
 
-For devices that have a secondary BLE, Device Tracker can locate the device based on signals transmitted from the secondary BLE if the device loses power due to critically low battery or is manually powered off. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
+For devices with a secondary BLE beacon, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
 
-<p>See <a href="../setup/#bleprofile">BLE Profile</a> to enable secondary BLE beaconing.</p>
+<p>See <a href="../setup/#bleprofile">BLE Profile</a> to enable the secondary BLE beacon.</p>
 
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 

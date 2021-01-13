@@ -181,10 +181,10 @@ Tap on any device card to display the **Device Details** screen:
         * **Never connected –** the device has never connected to the server
         * **Connected –** the device is connected to the server
         * **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
-* **Secondary BLE:** identifies the state of the [secondary BLE](../config/#secondaryble):
-        * **Enabled -** the device has a secondary BLE and beaconing is enabled. When the device loses power, the secondary BLE continues to transmit beacons to aid in locating the device. 
-        * **Disabled -** the device has a secondary BLE and beaconing is disabled
-        * **Not Available -** the device does not have a secondary BLE
+* **Secondary BLE:** identifies the state of the [secondary BLE beacon](../config/#secondaryble):
+        * **Enabled -** the device has a secondary BLE beacon and beaconing is enabled. When the device loses power, the secondary BLE continues to transmit beacons to aid in locating the device. 
+        * **Disabled -** the device has a secondary BLE beacon and beaconing is disabled
+        * **Not Available -** the device does not have a secondary BLE beacon
 * **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
         * **High –** indicates the remaining battery is greater than 66%
         * **Medium –** indicates the remaining battery is within the range 15% to 66%

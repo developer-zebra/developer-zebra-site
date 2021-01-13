@@ -25,7 +25,7 @@ On Zebra devices like the MC40, extra battery information can be retrieved using
 	registerReceiver(mIntent_Receiver,mIntentFilter);  
 
 ## Processing The Data
-In the below code we are getting the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/8-0/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
+In the below code we are getting the Zebra-specific battery information provided by the [Battery Intent](/emdk-for-android/9-0/guide/reference/refbatteryintent) extras. Notice that some values are strings and other values are integers.
 
 	:::java
 	public void onReceive(Context context, Intent intent) {      
@@ -43,7 +43,7 @@ In the below code we are getting the Zebra-specific battery information provided
 
 <!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Downloading the Sample
-Download the source for this project in the [associated sample](/emdk-for-android/8-0/guide/sample/samplebatteryintent).
+Download the source for this project in the [associated sample](/emdk-for-android/9-0/guide/sample/samplebatteryintent).
 
  -->
 

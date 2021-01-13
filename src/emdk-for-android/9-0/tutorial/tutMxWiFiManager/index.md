@@ -31,10 +31,10 @@ The tutorial will be designed to configure Wi-Fi settings with following feature
 
 > Note: Provide "WiFiManagerTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/8-0/tutorial/tutCreateProjectAndroidStudio). 
+Start by creating a new Android Studio [project](/emdk-for-android/9-0/tutorial/tutCreateProjectAndroidStudio). 
 
 ## Adding The Wi-Fi Manager Profile Feature
-1. Click [here](/emdk-for-android/8-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/9-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "WiFiProfile" as the Profile Name for this tutorial.
 
@@ -232,7 +232,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/8-0/tutorial/
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/8-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/9-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

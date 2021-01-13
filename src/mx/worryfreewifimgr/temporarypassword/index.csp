@@ -20,3 +20,7 @@ Used to enter the Temporary Password, which grants the device user access to Wor
 * **MX 10.3 and later**: String from 8&ndash;32 containing valid password characters 
 * **MX 10.2 and earlier**: String from 1&ndash;32 containing valid password characters
 
+_StageNow Note: If a barcode is created with StageNow using 10.2 or older, a password with fewer than eight (8) characters will be permitted. However, an "invalid password" error will result if that barcode is scanned on a device with a version of the WorryFreeWifi CSP greater than 9.3.1. The version of `com.symbol.mxmf.csp.worryfreewifimgr` is visible on the device by enabling "Show System" in Settings -> Apps_. 
+
+
+to be created with MX version < 10.3 then password field will accept less than 8 characters. But when user scans the barcode if WorryFreeWiFi CSP version is > 9.3.1 then CSP throws error saying invalid password requirement.

@@ -84,7 +84,7 @@ content-items:
     text: The EMDK Barcode API exposes a (deprecated) UDI barcode scanning feature that provides applications with the ability to read UDI Labels from from three issuing agencies, GS1, HIBCC and ICCBBA.
     url: /emdk-for-android/8-0/guide/udi_scanning_guide
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 <!-- 3/19/19- removed per eng. Zebra recommends using Android NFC APIs and SAM APIs (if so equipped). 
   - type: section

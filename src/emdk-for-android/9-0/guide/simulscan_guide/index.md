@@ -2,7 +2,7 @@
 title: "SimulScan API programmer's guide"
 layout: guide.html
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 > **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 for devices running Android 10 and later. 

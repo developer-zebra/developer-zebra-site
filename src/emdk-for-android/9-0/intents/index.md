@@ -3,7 +3,7 @@ title: EMDK Intent APIs
 description: EMDK apps can communicate with peripheral hardware connected to the host device using Android intents.
 layout: list-apis.html
 product: 'EMDK for Android'
-productversion: '8.0'
+productversion: '9.0'
 automenu:
   items:
     - title: Android Intent APIs

@@ -35,7 +35,7 @@ contentlist:
         icon: msr.png
         url: msr
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-productversion: '8.0'
+productversion: '9.0'
 ---
 DataWedge is recommended for the customers:
 ØWho wants to scan or capture the data without any writing code

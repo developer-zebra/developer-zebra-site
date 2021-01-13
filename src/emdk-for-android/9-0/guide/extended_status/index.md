@@ -2,7 +2,7 @@
 title: Extended Status Information User Guide
 layout: guide.html
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 ##Introduction 

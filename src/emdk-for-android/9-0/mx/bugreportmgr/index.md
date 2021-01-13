@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: bugreportmgr
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 

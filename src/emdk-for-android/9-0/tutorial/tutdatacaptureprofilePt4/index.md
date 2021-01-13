@@ -2,7 +2,7 @@
 title: Using Broadcast Intent in DataCapture Profiles
 layout: guide.html
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 > **NOTE**: Data Capture is deprecated in EMDK-X 6.10 and later. Please refer to the [Basic Scanning Tutorial](../tutBasicScanningAPI) instead.  

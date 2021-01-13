@@ -2,7 +2,7 @@
 title: Set up on MacOS
 layout: guide.html
 product: EMDK For Android
-productversion: '8.0'
+productversion: '9.0'
 ---
 
 ##Removing previous EMDK installations

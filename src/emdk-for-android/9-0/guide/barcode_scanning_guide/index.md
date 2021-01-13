@@ -14,7 +14,7 @@ productversion: '9.0'
     <br>
     <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
 
-> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 for devices running Android 10 and later. 
+> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later). 
 
 ## Overview
 

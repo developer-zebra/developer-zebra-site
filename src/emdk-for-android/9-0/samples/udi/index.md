@@ -31,7 +31,7 @@ product: EMDK For Android
 productversion: '9.0'
 ---
 
-> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 for devices running Android 10 and later. 
+> **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later). 
 
 ##Overview
 This sample app demonstrates how to scan barcodes that use any of the three Unique Device Identification (UDI) standards: GS1, ICCBBA, and HIBCC.

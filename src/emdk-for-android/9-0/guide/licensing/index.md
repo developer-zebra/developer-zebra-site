@@ -22,7 +22,7 @@ For more information, please visit the [MDNA Enterprise licensing page](/licensi
 
 #### Licensed Scenario 
 
-Running an existing scanning app with multi-barcode capability enabled on a MDNA-licensed Zebra Professional device with EMDK 8.0 will perform as expected.
+Running an existing scanning app with multi-barcode capability enabled on a MDNA-licensed Zebra Professional device with EMDK 8.0 (and later) will perform as expected.
 
 #### Unlicensed Scenario 
 

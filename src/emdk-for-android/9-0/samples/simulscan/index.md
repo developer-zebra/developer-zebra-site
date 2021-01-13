@@ -33,7 +33,7 @@ product: EMDK For Android
 productversion: '9.0'
 ---
 
-> **`IMPORTANT:`** Support for SimulScan features has been removed from EMDK for Android 8.0 for devices running Android 10 and later. 
+> **`IMPORTANT:`** Support for SimulScan features has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later). 
 
 ##Overview
 This sample application will show how the Simulscan API's can be used to capture multiple types of data from forms, boxes and the like.

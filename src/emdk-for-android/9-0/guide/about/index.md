@@ -102,6 +102,55 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ## Version History
 
+### Added in v8.0
+
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
+#### `SEPTEMBER 2020 UPDATE`
+
+#### EMDK for Android 8.0
+
+**Now supports MX 10.2,** adding the following major features and enhancements: 
+* **New [Access Manager](../../mx/accessmgr) features**: 
+ * Enter the Token received from a caller 
+* **New [Beacon Manager](../../mx/beaconmgr) CSP**: 
+ * Controls Bluetooth Low Energy beacon on mobile computers 
+* **New [Bluetooth Manager](../../mx/bluetoothmgr) features**: 
+ * Configure single pairing of accessories 
+ * Define trusted devices
+ * Enhancements to silent pairing rules  
+* **New [Clock](../../mx/clock) features**: 
+ * Enter date and time in local or Universal Coordinate format  
+* **New [Display Manager](../../mx/displaymgr) features**: 
+ * Control automatic screen rotation 
+ * Enable/disable adaptive brightness 
+ * Set device brightness level  
+* **New [KeyMapping Manager](../../mx/keymappingmgr) features**: 
+ * Support for additional key codes
+* **New [License Manager](../../mx/licensemgr) features**: 
+ * Supports URI-based license sources 
+* **New [Power Manager](../../mx/powermgr) features**: 
+ * Enable/disable/configure battery saver options 
+* **New [PowerKey Manager](../../mx/powerkeymgr) features**: 
+ * Set touch mode options 
+* **New [Touch Manager](../../mx/touchmgr) features**: 
+ * Support and control latest Zebra devices   
+* **New [UI Manager](../../mx/uimgr) features**: 
+ * Show/hide percentage of battery charge on screen 
+* **New [Wi-fi](../../mx/wifi) features**: 
+ * Configure Fine Timing Measurement  
+ * Control encryption options
+
+> `NOTE:` MX 10.2 support requires updating the EMDK Android Studio plug-in to v7.6.1 (or later). 
+
+-----
+
+#### Features Introduced in EMDK-A 8.0
+
+* **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
+* **A new [MDNA Licensing Guide](../licensing)** describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy. 
+
+
 ### Added in v7.6
 
 #### New Features

@@ -7,6 +7,10 @@ productversion: '9.0'
 
 ##Overview
 
+MY WORDS FROM RN:
+Allows the setting of scanning parameters not yet implemented with the class hierarchy or those being added in future. ScannerConfig.setParameter() is used to set parameter configurations; ScannerConfig.getParameter() queries the settings. Visit TechDocs >>>link to pass-thru programmers guide with param info<<< for details.
+
+
 Extended scanner parameter configuration APIs - programmer guide
 
 Overview

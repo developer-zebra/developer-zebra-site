@@ -59,7 +59,7 @@ products:
         url: http://zebra-stage.github.io/link-os/latest/demos/
 menu:
   items:
-    - title: About Techdocs
+    - title: About TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help

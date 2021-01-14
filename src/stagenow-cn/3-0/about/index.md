@@ -76,7 +76,7 @@ The following software must be installed on the staging workstation prior to usi
 
 **Support for Chinese language**. The StageNow tool and device client now support localization for the Chinese language and Chinese version of Windows. 
 
-**Techdocs Chinese**. Techdocs, the technical documentation site for Zebra solutions, now offers a language selector for StageNow in the upper-right corner of the English-language screen. **Note**: The selector disappears after selecting the Chinese language. 
+**TechDocs Chinese**. TechDocs, the technical documentation site for Zebra solutions, now offers a language selector for StageNow in the upper-right corner of the English-language screen. **Note**: The selector disappears after selecting the Chinese language. 
 
 **Support for server-based device staging on devices with MX 4.4 and higher**.<br>
 **IMPORTANT**: Network transport protocols are subject to the following MX dependencies: 

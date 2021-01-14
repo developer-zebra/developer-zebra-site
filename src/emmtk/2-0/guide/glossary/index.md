@@ -15,7 +15,7 @@ Android Enterprise (formerly "Android for Work") is a set of APIs for configurin
 See Android Enterprise. 
 
 ### APK
-Abbreviation for Android Package, the file format used for packaging and distributing Android applications. When referring to the APK file extension, Techdocs usually presents the term as .apk or `.apk`.
+Abbreviation for Android Package, the file format used for packaging and distributing Android applications. When referring to the APK file extension, TechDocs usually presents the term as .apk or `.apk`.
 
 ### Bundle Array
 A series of Android bundles that determines the order to apply subsets of Managed Configurations. Allows full enforcement of order dependency when required.

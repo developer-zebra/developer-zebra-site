@@ -113,7 +113,7 @@ _Launcher icon for DataWedge 6.x_
 _The "About DataWedge" box showing version numbers_ 
 <br>
 
-&#52;. If the DataWedge version on the device is different than that of this guide, [return to the Techdocs tile page](../../../../) and select the appropriate version from the drop-down menu in the DataWedge tile.
+&#52;. If the DataWedge version on the device is different than that of this guide, [return to the TechDocs tile page](../../../../) and select the appropriate version from the drop-down menu in the DataWedge tile.
 
 It also might be helpful to visit the [Zebra support site](https://www.zebra.com/us/en/sitesearch.html?q=integrator%20guide) and download a device-specific Integrator Guide for reference. 
 

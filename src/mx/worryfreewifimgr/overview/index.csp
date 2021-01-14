@@ -28,6 +28,7 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Call admission control
  * Coverage view streaming
  * Auto-reachability testing 
+* Eight-character minimum password length (MX 10.3 and later)
 * Enter old and new passwords for access to client UI, settings and data
 * **Select or configure**:
  * Analysis type: Connection, Voice or Roaming

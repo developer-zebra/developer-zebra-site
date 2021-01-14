@@ -17,14 +17,17 @@ The following section lists the major features and enhancements added to the MX 
 
 **MX 10.3 adds the following major features and enhancements**: 
 
-* **New [App Manager](/mx/appmgr) features**: 
+* **New [App Manager](/mx/appmgr) feature**: 
  * Allow/Disallow individual app upgrades 
-* **New [Bluetooth Manager](/mx/bluetoothmgr) features**: 
- * Erase all data about paired peripherals on a device
-* **New [DHCP Option Manager](/mx/dhcpoptionmgr) features**: 
- * Select between DHCPv4 and DHCPv6 clients on device
-* **New [NFC Manager](/mx/nfcmgr) features**: 
+* **New [Bluetooth Manager](/mx/bluetoothmgr) feature**: 
+ * Erase all data about paired peripherals on device
+* **New [DHCP Option Manager](/mx/dhcpoptionmgr) feature**: 
+ * Select between DHCPv4 and DHCPv6 clients on device (or use both)
+* **New [NFC Manager](/mx/nfcmgr) feature**: 
  * Enable/Disable logging of NFC events on device
+* **New [WorryFree Wi-Fi Manager](/mx/worryfreewifimgr) feature**: 
+ * Minimum password and temporary password length increased to eight (8) characters
+
 
 ### Added in MX 10.2
 

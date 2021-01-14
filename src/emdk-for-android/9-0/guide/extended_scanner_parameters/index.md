@@ -28,8 +28,6 @@ New parameters not supported by existing class structure are listed in here >>> 
 -----
  -->
 
-Two APIs support configuration of extended scanner parameters. 
-
 #### String getParameter(String paramName)
 
 #####Description: 
@@ -55,48 +53,59 @@ Sets the given value to the specified parameter. Setting this parameter will not
 * **paramName**: name of the parameter 
 * **paramValue**: value to be set for the parameter
 
+-----
 
+## Example Code
+
+<!-- 
 Supported extended scanner parameter list
 Please refer this >>> link to a new page with latest params<<<  section of EMDK documentation for get all the extended scanner parameter configurations and supported values.
 
-How to use extended scanning parameter APIs
-This is in line with previous scanner configuration APIs. It needs to get the object of ScannerConfig to load the current settings before using extended scanning parameter APIs. 
-Following code segment shows how to set the value of parameter `remote_trigger_status` using extended API. 
-*parameter name should be referred from the supported param list*. 
+HUH? 
+This is in line with previous scanner configuration APIs. It needs to get the object of `ScannerConfig` to load the current settings before using extended scanning parameter APIs. 
+ -->
+
+The following code segment shows how to set the value of the `remote_trigger_status` parameter using extended scanner configuration APIs. 
 
     try{
-        // Get scanner config
+    // Get the current scanner configuration
         ScannerConfig config = scanner.getConfig();
 
     // Set a new parameter through extended APIs
-    if (config.isParamSupported("remote_trigger_status")) {
-        config.setParameter("remote_trigger_status", "0”);
+        if (config.isParamSupported("remote_trigger_status")) {
+            config.setParameter("remote_trigger_status", "0”);
     }
 
-    // Set older parameter through class structure
-    if (config.isParamSupported("config.decoderParams.code128.enabled")) {
-        config.decoderParams.Code128.enabled = true;
+    // Set older parameter through the class structure
+        if (config.isParamSupported("config.decoderParams.code128.enabled")) {
+            config.decoderParams.Code128.enabled = true;
     }
 
-    // Set scanner config
-    scanner.setConfig(config);
+    // Set the scanner configuration
+        scanner.setConfig(config);
 
 
-    // Read the parameter value to confirm if it is set or not
-    ScannerConfig config2 = scanner.getConfig();
-    String paramvalue = config2.getParameter("remote_trigger_status");
+    // Read the parameter value to confirm whether it was set
+        ScannerConfig config2 = scanner.getConfig();
+        String paramvalue = config2.getParameter("remote_trigger_status");
 
-    }catch (ScannerException e) {
-        // Error occurred and the error can be obtained by e.getResult()
+        }catch (ScannerException e) {
+    // An error occurred and the error can be obtained by e.getResult()
+
     }
 
-Note: The parameter value set using extended configurator APIs will overwrite parameter values set by basic EMDK APIs. It is not in the order it programmed.
+##### Notes: 
+* **Parameter names should match those from the supported param list**. 
+* **The parameter value set using extended scanner configuration APIs overwrite parameter values set by any basic EMDK API**, regardless of the order of programming.
+
+-----
 
 Access newly available scanners using device enumeration
 
 In addition to the scanner parameters, new scanners may not be available to select using device identifiers. So, if a new scanner is connected to device which is not listed with EMDK library, it can be accessed using the device enumeration APIs. Please refer sections “Barcode Scanning API Programmer's Guide” and “Basic Scanning with Barcode API” for how to enumerate available scanner list.
 
 Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received ScannerInfo objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
+
 
     List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
     Scanner scanner = null;

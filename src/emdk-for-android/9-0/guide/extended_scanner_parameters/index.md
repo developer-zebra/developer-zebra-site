@@ -103,7 +103,7 @@ The following code segment shows how to set the value of the `remote_trigger_sta
 
 -----
 
-### Newly Connected Scanner
+### Get Newly Connected Scanner
 
 Newly connected scanners are sometimes unavailable for selection using device identifiers, making acquisition of scanner parameters impossible. The following code segment shows how to access a newly available scanner using device enumeration. 
 

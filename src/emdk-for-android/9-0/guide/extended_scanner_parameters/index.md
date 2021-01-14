@@ -65,8 +65,11 @@ HUH?
 This is in line with previous scanner configuration APIs. It needs to get the object of `ScannerConfig` to load the current settings before using extended scanning parameter APIs. 
  -->
 
+### Set Remote Trigger Status
+
 The following code segment shows how to set the value of the `remote_trigger_status` parameter using extended scanner configuration APIs. 
 
+        :::java
         try{
         // Get the current scanner configuration
             ScannerConfig config = scanner.getConfig();
@@ -94,33 +97,33 @@ The following code segment shows how to set the value of the `remote_trigger_sta
 
         }
 
-##### Notes: 
+#### Notes: 
 * **Parameter names should match those from the supported param list**. 
 * **The parameter value set using extended scanner configuration APIs overwrite parameter values set by any basic EMDK API**, regardless of the order of programming.
 
 -----
 
-Access newly available scanners using device enumeration
+### Newly Connected Scanner
 
-In addition to the scanner parameters, new scanners may not be available to select using device identifiers. So, if a new scanner is connected to device which is not listed with EMDK library, it can be accessed using the device enumeration APIs. Please refer sections “Barcode Scanning API Programmer's Guide” and “Basic Scanning with Barcode API” for how to enumerate available scanner list.
+Newly connected scanners are sometimes unavailable for selection using device identifiers, making acquisition of scanner parameters impossible. The following code segment shows how to access a newly available scanner using device enumeration. 
 
-Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received ScannerInfo objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
+Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received `ScannerInfo` objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
 
+        :::java
+        List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
+        Scanner scanner = null;
 
-    List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
-    Scanner scanner = null;
-
-    Iterator<ScannerInfo> it = deviceList.iterator();
-    while(it.hasNext()) {
-        ScannerInfo scnInfo = it.next();
-        if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000){        
-            scanner = barcodeManager.getDevice(scnInfo);
-            break;
+        Iterator<ScannerInfo> it = deviceList.iterator();
+        while(it.hasNext()) {
+            ScannerInfo scnInfo = it.next();
+            if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000){        
+                scanner = barcodeManager.getDevice(scnInfo);
+                break;
+            }
         }
-    }
 
-Note: If the required scanner is not available under device identifier, you can filter by friendly name or class and type of scanner. It can pass the device index also to getDevice method to get the scanner alternatively.
 
-https://techdocs.zebra.com/emdk-for-android/8-0/guide/barcode_scanning_guide/
-https://techdocs.zebra.com/emdk-for-android/8-0/tutorial/tutBasicScanningAPI/
+#### Notes:
+* **If a scanner is connected to a device but does not appear when using an EMDK library**, it can be accessed using the device enumeration APIs. Refer to the [EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/) and [EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/) for help enumerating available scanners.
+* **If the required scanner is not available under device identifier**, try filtering by friendly name or class and scanner type. Alternatively, the device index also can be passed to the `getDevice` method to get the scanner.
 

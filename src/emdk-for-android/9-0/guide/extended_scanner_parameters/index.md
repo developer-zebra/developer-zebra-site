@@ -67,32 +67,32 @@ This is in line with previous scanner configuration APIs. It needs to get the ob
 
 The following code segment shows how to set the value of the `remote_trigger_status` parameter using extended scanner configuration APIs. 
 
-    try{
-    // Get the current scanner configuration
-        ScannerConfig config = scanner.getConfig();
+        try{
+        // Get the current scanner configuration
+            ScannerConfig config = scanner.getConfig();
 
-    // Set a new parameter through extended APIs
-        if (config.isParamSupported("remote_trigger_status")) {
-            config.setParameter("remote_trigger_status", "0”);
-    }
+        // Set a new parameter through extended APIs
+            if (config.isParamSupported("remote_trigger_status")) {
+                config.setParameter("remote_trigger_status", "0”);
+        }
 
-    // Set older parameter through the class structure
-        if (config.isParamSupported("config.decoderParams.code128.enabled")) {
-            config.decoderParams.Code128.enabled = true;
-    }
+        // Set older parameter through the class structure
+            if (config.isParamSupported("config.decoderParams.code128.enabled")) {
+                config.decoderParams.Code128.enabled = true;
+        }
 
-    // Set the scanner configuration
-        scanner.setConfig(config);
+        // Set the scanner configuration
+            scanner.setConfig(config);
 
 
-    // Read the parameter value to confirm whether it was set
-        ScannerConfig config2 = scanner.getConfig();
-        String paramvalue = config2.getParameter("remote_trigger_status");
+        // Read the parameter value to confirm whether it was set
+            ScannerConfig config2 = scanner.getConfig();
+            String paramvalue = config2.getParameter("remote_trigger_status");
 
-        }catch (ScannerException e) {
-    // An error occurred and the error can be obtained by e.getResult()
+            }catch (ScannerException e) {
+        // An error occurred and the error can be obtained by e.getResult()
 
-    }
+        }
 
 ##### Notes: 
 * **Parameter names should match those from the supported param list**. 

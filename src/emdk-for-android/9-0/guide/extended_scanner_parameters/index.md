@@ -19,38 +19,42 @@ productversion: '9.0'
 
 ### API Usage
 
-Extended scanner parameter configuration APIs are used for configuring and reading scanner parameters and values that are not supported through the [EMDK basic scanning APIs](../../apimenu). 
+<!-- BELOW BASICLY REPEATS ABOVE:  
+Extended scanner parameter configuration APIs are used for configuring and reading scanner parameters and values that are not supported through the [EMDK basic scanning APIs](../../apimenu). Developers currently can use the existing class structure and IntelliSense with a `ScannerConfig` object such as `config.scanParams.decodeHapticFeedback`, but are unable to use that method to read or set new scanning parameters that are now supported by extended scanner parameter configuration APIs. 
 
-Developers can use the existing class structure with IntelliSense with the `ScannerConfig` object (e.g. `config.scanParams.decodeHapticFeedback`).
+WHAT ARE THOSE PARAMERERS? 
+New parameters not supported by existing class structure are listed in here >>> `link to a new page with latest params`<<<. Developers need to refer those parameters and supported values from above document and pass the parameter information to extended APIs.
 
+-----
+ -->
 
+Two APIs support configuration of extended scanner parameters. 
 
-Using above basic method, it is unable to read and set the new scanning parameters witch are now supported by extended scanner parameter configuration APIs. Those new parameters unsupported by existing class structure, are listed in here >>> link to a new page with latest params<<<. 
+#### String getParameter(String paramName)
 
-Developers need to refer those parameters and supported values from above document and pass the parameter information to extended APIs.
+#####Description: 
+Gets the current value of the specified parameter which is available at the scanner. This method will not return the currently changed parameter value of ScannerConfig object until next getConfig() API call.
+
+#####Input parameters:
+paramName: name of the scanner parameter
+
+#####Return type: 
+String 
+
+#####Return value:
+Current value of the parameter (or exception if the parameter name is unsupported)
 
 -----
 
-Extended scanner parameter configuration APIs
-There are two APIs to support extended scanner parameter configuration.
+#### Void setParameter(String paramName, String paramValue)
 
-String getParameter(String paramName)
-
-Gets the current value of the specified parameter which is available at the scanner. This method will not return the currently changed parameter value of ScannerConfig object until next getConfig() API call.
-
-Input parameters:
-paramName: name of the scanner parameter
-
-Return type: String 
-Return value:  current value of the parameter or exception if the parameter name is unsupported. 
-
-Void setParameter(String paramName, String paramValue)
-
+#####Description: 
 Sets the given value to the specified parameter. Setting this parameter will not immediately update the existing parameter value of ScannerConfig object until next setConfig() call.
 
-Input parameters:
-    paramName: name of the parameter 
-    paramValue: value to be set for the parameter
+#####Input parameters:
+* **paramName**: name of the parameter 
+* **paramValue**: value to be set for the parameter
+
 
 Supported extended scanner parameter list
 Please refer this >>> link to a new page with latest params<<<  section of EMDK documentation for get all the extended scanner parameter configurations and supported values.

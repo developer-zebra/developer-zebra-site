@@ -50,7 +50,7 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 -----
 
-## New in v8.0
+## New in v9.0
 
 * New `ScannerConfig.setParameter()` and `ScannerConfig.getParameter()` pass-through APIs allow setting and retrieval of scanning parameters not yet implemented with the class hierarchy or those being added in future. 
 * An [Extended Scanner Parameter guide](../extended_scanner_parameters) explians the use of the new pass-through APIs. 

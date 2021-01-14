@@ -280,7 +280,7 @@ products:
         label: '2.2'
 menu:
   items:
-    - title: About Techdocs
+    - title: About TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help

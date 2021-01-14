@@ -7,20 +7,20 @@ productversion: '9.0'
 
 ##Overview
 
-MY WORDS FROM RN:
-Allows the setting of scanning parameters not yet implemented with the class hierarchy or those being added in future. ScannerConfig.setParameter() is used to set parameter configurations; ScannerConfig.getParameter() queries the settings. Visit TechDocs >>>link to pass-thru programmers guide with param info<<< for details.
+This guide explains the use of extended scanner parameters, which allow for the setting and retrieval of scanning parameters not yet implemented with the class hierarchy or of those being added in the future. 
 
+Introduced with EMDK for Android 9.0, `ScannerConfig.setParameter()` and `ScannerConfig.getParameter()` are pass-through APIs that (respectively) can be used to set and get scanner parameter configurations for use in scanning applications. 
 
-Extended scanner parameter configuration APIs - programmer guide
+This guide requires a basic knowledge of the use of EMDK-A scanning APIs. If necessary, please become familiar with the guides below before proceeding. 
+
+#### Related Guides:
+* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**
+* **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/)**
+
+-----
 
 Overview
 This guide provides user how to set extended scanning parameters which are not supported by existing EMDK ScannerConfig class structure. If any new scanning parameters which are not listed with basic set of EMDK APIs, user can use APIs explained below to set such parameters.
-
-Note: This guide is for the developers who are familiar about how to use basic scanning APIs of EMDK for apps. If you are not familiar, please refer following guide for understanding how to use basics of EMDK related to scanning.
-
-
-https://techdocs.zebra.com/emdk-for-android/8-0/tutorial/tutBasicScanningAPI/
-https://techdocs.zebra.com/emdk-for-android/8-0/guide/barcode_scanning_guide/
 
 
 Usage of extended scanner parameter configuration APIs

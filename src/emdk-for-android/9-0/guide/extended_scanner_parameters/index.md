@@ -11,7 +11,7 @@ productversion: '9.0'
 
 **This guide requires a basic knowledge of the use of EMDK-A scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
 
-#### Also See:
+### Also See:
 * **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**
 * **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/)**
 
@@ -109,7 +109,7 @@ The following code segment shows how to set the value of the `remote_trigger_sta
 
         }
 
-#### Notes: 
+### Notes: 
 * **Parameter names should match those from the supported param list**. 
 * **The parameter value set using extended scanner configuration APIs overwrite parameter values set by any basic EMDK API**, regardless of the order of programming.
 
@@ -135,7 +135,12 @@ Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one o
         }
 
 
-#### Notes:
+### Notes:
 * **If a scanner is connected to a device but does not appear when using an EMDK library**, it can be accessed using the device enumeration APIs. Refer to the [EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/) and [EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/) for help enumerating available scanners.
 * **If the required scanner is not available under device identifier**, try filtering by friendly name or class and scanner type. Alternatively, the device index also can be passed to the `getDevice` method to get the scanner.
 
+-----
+
+### Also See:
+* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**
+* **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/)**

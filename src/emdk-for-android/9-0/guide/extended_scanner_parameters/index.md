@@ -9,9 +9,7 @@ productversion: '9.0'
 
 **This guide explains the use of extended scanner parameters**, which allow for the setting and retrieval of scanning parameters not yet implemented within the EMDK class hierarchy or of those being added in the future. **Introduced with EMDK for Android 9.0**, `ScannerConfig.setParameter()` and `ScannerConfig.getParameter()` are pass-through APIs that (respectively) can be used to set and get scanner parameter configurations for use in scanning applications. If new scanning parameters arise and are not listed with a basic set of EMDK APIs, developers can use these APIs to set such parameters.
 
-**This guide requires a basic knowledge of the use of EMDK-A scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
-
-### Also See:
+**NOTE: This guide requires a basic knowledge of the use of EMDK-A scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
 * **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**
 * **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/)**
 
@@ -24,7 +22,7 @@ productversion: '9.0'
 * **Parameter**: remote_trigger_status
 * **Supported values**: 0 – Disable, 1 – Enable
 * **Description**: Notifies an app through the Android KeyEvents mechanism of remote trigger presses of a connected Bluetooth scanner as KeyUp and KeyDown events. **Scanner must be Enabled to receive the trigger press notifications**. 
-* **Device support**: WT6300 only
+* **Supported device(s)**: WT6300 only
 
 -----
 

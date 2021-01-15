@@ -17,14 +17,16 @@ productversion: '9.0'
 
 -----
 
-### API Usage
+## Supported Parameters
 
-Bypass APIs currently support the following parameters: 
+### Remote Trigger Status
 
 * **Parameter**: remote_trigger_status
 * **Supported values**: 0 – Disable, 1 – Enable
 * **Description**: Notifies an app through the Android KeyEvents mechanism of remote trigger presses of a connected Bluetooth scanner as KeyUp and KeyDown events. **Scanner must be Enabled to receive the trigger press notifications**. 
-* **Device support**: WT63 only
+* **Device support**: WT6300 only
+
+-----
 
 <!-- BELOW BASICLY REPEATS ABOVE:  
 
@@ -36,7 +38,9 @@ New parameters not supported by existing class structure are listed in here >>> 
 -----
  -->
 
-#### String getParameter(String paramName)
+## API Usage
+
+### String getParameter(String paramName)
 
 #####Description: 
 Gets the current value of the specified parameter which is available at the scanner. This method will not return the currently changed parameter value of ScannerConfig object until next getConfig() API call.
@@ -52,7 +56,7 @@ Current value of the parameter (or exception if the parameter name is unsupporte
 
 -----
 
-#### Void setParameter(String paramName, String paramValue)
+### Void setParameter(String paramName, String paramValue)
 
 #####Description: 
 Sets the given value to the specified parameter. Setting this parameter will not immediately update the existing parameter value of ScannerConfig object until next setConfig() call.
@@ -63,7 +67,7 @@ Sets the given value to the specified parameter. Setting this parameter will not
 
 -----
 
-## Example Code
+## Sample Code
 
 <!-- 
 Supported extended scanner parameter list

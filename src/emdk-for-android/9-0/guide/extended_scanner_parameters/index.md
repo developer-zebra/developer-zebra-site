@@ -11,7 +11,7 @@ productversion: '9.0'
 
 **This guide requires a basic knowledge of the use of EMDK-A scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
 
-#### Related Guides:
+#### Also See:
 * **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**
 * **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-android/latest/guide/barcode_scanning_guide/)**
 
@@ -19,7 +19,15 @@ productversion: '9.0'
 
 ### API Usage
 
+Bypass APIs currently support the following parameters: 
+
+* **Parameter**: remote_trigger_status
+* **Supported values**: 0 – Disable, 1 – Enable
+* **Description**: Notifies an app through the Android KeyEvents mechanism of remote trigger presses of a connected Bluetooth scanner as KeyUp and KeyDown events. **Scanner must be Enabled to receive the trigger press notifications**. 
+* **Device support**: WT63 only
+
 <!-- BELOW BASICLY REPEATS ABOVE:  
+
 Extended scanner parameter configuration APIs are used for configuring and reading scanner parameters and values that are not supported through the [EMDK basic scanning APIs](../../apimenu). Developers currently can use the existing class structure and IntelliSense with a `ScannerConfig` object such as `config.scanParams.decodeHapticFeedback`, but are unable to use that method to read or set new scanning parameters that are now supported by extended scanner parameter configuration APIs. 
 
 WHAT ARE THOSE PARAMERERS? 

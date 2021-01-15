@@ -20,9 +20,9 @@ productversion: '9.0'
 ### Remote Trigger Status
 
 * **Parameter**: remote_trigger_status
-* **Supported values**: 0 – Disable, 1 – Enable
 * **Description**: Notifies an app through the Android KeyEvents mechanism of remote trigger presses of a connected Bluetooth scanner as KeyUp and KeyDown events. **Scanner must be Enabled to receive the trigger press notifications**. 
-* **Supported device(s)**: WT6300 only
+* **Supported values**: 0 – Disable, 1 – Enable
+* **Supported device(s)**: WT6300
 
 -----
 
@@ -57,7 +57,7 @@ Current value of the parameter (or exception if the parameter name is unsupporte
 ### Void setParameter(String paramName, String paramValue)
 
 #####Description: 
-Sets the given value to the specified parameter. Setting this parameter will not immediately update the existing parameter value of ScannerConfig object until next setConfig() call.
+Sets the given value to the specified parameter. Setting this parameter updates the existing parameter value of `ScannerConfig` object at the next `setConfig()` call.
 
 #####Input parameters:
 * **paramName**: name of the parameter 

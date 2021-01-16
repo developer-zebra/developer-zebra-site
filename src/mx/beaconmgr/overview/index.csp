@@ -30,6 +30,27 @@ Beacon Manager provides administrative control of beacon contents as well as the
 <img style="height:450px" src="../../../../../images/mx/device_tracker_ui.png"/>
  _The Zebra Device Tracker user interface_.<br>
 
-Device Tracker is preinstalled on most Zebra devices running Android 8.x Oreo and later and is compatible with many other devices and Android versions. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
+Device Tracker is preinstalled on some Zebra devices running Android 8.x Oreo and is available as a download for other devices. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
+
+#### Recommended Settings
+
+Zebra recommends the following Beacon Manager settings for optimal performance when using Device Tracker: 
+
+* Beaconing: Turn ON
+* Beaconing in Airplane Mode: Turn ON
+* Beacon type: AltBeacon
+* Explicit Beacon UUID?: [unchecked]
+* AltBeacon ID1: EBEB
+* AltBeacon ID2: ECDD
+* Transmission (Tx) Power Level: High (1 dBm)
+* Transmission (Tx) Interval: Low Latency (100 ms)
+
+#### Airplane Mode Option
+
+When a device is placed in Airplane Mode, all device radios are shut off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the Beaconing Airplane Mode parameter comes into play. 
+
+**If "Turn On" is selected**, a beacon is emitted when the device is turned off until the device battery runs out or the device is powered on again. 
+
+**If "Turn Off" is selected, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device-power state. **`IMPORTANT:` This option renders Device Tracker inoperable whenever the device is in Airplane Mode, whether it is powered on or off**. 
 
 -----

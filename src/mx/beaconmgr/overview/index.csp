@@ -36,14 +36,14 @@ Device Tracker is preinstalled on some Zebra devices running Android 8.x Oreo an
 
 Zebra recommends the following Beacon Manager settings for optimal performance when using Device Tracker: 
 
-* Beaconing: **Turn ON**
-* Beaconing in Airplane Mode: **Turn ON**
-* Beacon type: **AltBeacon**
-* Explicit Beacon UUID?: **[unchecked]
-* AltBeacon ID1: **EBEB**
-* AltBeacon ID2: **ECDD**
-* Transmission (Tx) Power Level: **High (1 dBm)**
-* Transmission (Tx) Interval: **Low Latency (100 ms)**
+* **Beaconing**: Turn ON
+* **Beaconing in Airplane Mode**: Turn ON
+* **Beacon type**: AltBeacon
+* **Explicit Beacon UUID**: [unchecked]
+* **AltBeacon ID1**: EBEB
+* **AltBeacon ID2**: ECDD
+* **Transmission (Tx) Power Level**: High (1 dBm)
+* **Transmission (Tx) Interval**: Low Latency (100 ms)
 
 #### Airplane Mode Option
 

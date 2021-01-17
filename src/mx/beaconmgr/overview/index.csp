@@ -36,21 +36,21 @@ Device Tracker is preinstalled on some Zebra devices running Android 8.x Oreo an
 
 Zebra recommends the following Beacon Manager settings for optimal performance when using Device Tracker: 
 
-* Beaconing: Turn ON
-* Beaconing in Airplane Mode: Turn ON
-* Beacon type: AltBeacon
-* Explicit Beacon UUID?: [unchecked]
-* AltBeacon ID1: EBEB
-* AltBeacon ID2: ECDD
-* Transmission (Tx) Power Level: High (1 dBm)
-* Transmission (Tx) Interval: Low Latency (100 ms)
+* Beaconing: **Turn ON**
+* Beaconing in Airplane Mode: **Turn ON**
+* Beacon type: **AltBeacon**
+* Explicit Beacon UUID?: **[unchecked]
+* AltBeacon ID1: **EBEB**
+* AltBeacon ID2: **ECDD**
+* Transmission (Tx) Power Level: **High (1 dBm)**
+* Transmission (Tx) Interval: **Low Latency (100 ms)**
 
 #### Airplane Mode Option
 
-When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the Beaconing Airplane Mode parameter comes into play. 
+When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the Beaconing Airplane Mode parameter comes into play. Device behavior for this mode is as follows: 
 
-**If "Turn On" is selected**, a beacon is emitted when the device is turned off until the device battery runs out or the device is powered on again. 
+* **If "Turn On" is selected**, a beacon is emitted when the device is turned off until the device battery runs out or the device is powered on again. 
 
-**If "Turn Off" is selected, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device's power state. **`IMPORTANT:` If this option is selected, <u>Device Tracker is inoperable for that device when in Airplane Mode</u>, whether the device is powered on or off**. 
+* **If "Turn Off" is selected, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device's power state. **`IMPORTANT:` If this option is selected, <u>Device Tracker is inoperable for that device when in Airplane Mode</u>, whether the device is powered on or off**. 
 
 -----

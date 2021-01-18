@@ -8,7 +8,7 @@ apilevel: "29"
 devicetype: A
 parm:
   pivotal: No
-  name: BeaconType
+  name: ExplicitBeaconUUID
   type: list
   list:
     - code: 0

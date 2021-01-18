@@ -70,19 +70,19 @@ menu:
 
 ###Q: What is the size of the ZDS update download?
 
-**A: The size of ZDS can vary slightly, but its maximum download size is about 10MB&#42;. The system consists of the following components**: 
+**A: The size of ZDS can vary slightly, but its maximum download size is about 10MB&#42; in total. The system consists of the following components**: 
 
 * ZDS Client and Plug-in (two components; between 2.2MB and 4MB together)
 * Zebra Common Transport Layer (about 4MB)
 * Zebra Life Guard Enablement (LGE) Client (about 2MB)
 
-&#42;<i><b><font size="2" color="black">Not all components are upgraded with every update.</font></b></i>
+&#42;<i><b><font size="2" color="grey">Not all components are downloaded with every update.</font></b></i>
 
 -----
 
 ###Q: Does ZDS self-update?
 
-**A: Yes, Zebra updates at least one ZDS component every 3-4 months**.
+**A: Yes, Zebra updates one or more ZDS components every 3-4 months**.
 
 -----
 

@@ -111,7 +111,7 @@ menu:
 ###Q: How can the current ZDS parameters be changed? 
 
 **A: The ZDS settings on a device can be changed in two ways**: 
-* Through the device UI (see [Setup section](../setup) for more info). 
+* Through the device UI (see [Setup section](../setup)). 
 * By scanning a barcode that contains changes to the [Analytics Manager CSP](/mx/analyticsmgr). 
 
 **Contact [Zebra support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information about changing ZDS parameters**. 

@@ -21,6 +21,8 @@ The Zebra Data Service (ZDS) system is a set of background services running on a
 > **ZDS components are self-updating to ensure that devices contain the most up-to-date features and bug-fixes**. Learn more [about ZDS updates](../faq/#qwhatisthesizeofthezdsupdatedownload).
 
 ### Available Reports
+The image below shows some of the reports available for visualizing data collected from devices within an organization. 
+
 <img alt="image" style="height:350px" src="VisibilityIQ_dashboard.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>

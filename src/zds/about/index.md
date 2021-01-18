@@ -16,7 +16,9 @@ menu:
 <a id="system_config"></a>
 ## Overview
 
-Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS updates itself and the ZDS Plug-ins, and can accept configuration changes such as to the upload interval and data-collection events using a barcode scanned by the device. 
+Zebra Data Service (ZDS) agent software is a continuous background service running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS accepts configuration changes to the upload interval, data-collection events and other parameters through a barcode scanned by the device. Learn more about [changing ZDS parameters](../faq/#qcananyzdsparameterscanbechanged). 
+
+**ZDS components are self-updating to ensure that devices are running with the most up-to-date software, features and bug-fixes**. Learn more about [ZDS self-updates](../faq/#qcananyzdsparameterscanbechanged).
 
 **The image below shows reports available for representing data collected from devices**.
 <img alt="image" style="height:350px" src="VisibilityIQ_dashboard.png"/>

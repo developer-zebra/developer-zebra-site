@@ -68,21 +68,33 @@ menu:
 
 -----
 
-###Q: What is the ZDS device footprint?
+###Q: What is the size of the ZDS update download?
 
-**A: ZDS requires about 2.2 MB of device storage**.
+**A: The size of ZDS can vary slightly, but its maximum download size is about 10MB&#42;. The system consists of the following components**: 
+
+* ZDS Client and Plug-in (two components; between 2.2MB and 4MB together)
+* Zebra Common Transport Layer (about 4MB)
+* Zebra Life Guard Enablement (LGE) Client (about 2MB)
+
+&#42;<i><b><font size="2" color="black">Not all components are upgraded with every update.</font></b></i>
 
 -----
 
 ###Q: Does ZDS self-update?
 
-**A: Yes, ZDS updates its components every 3-4 months**.
+**A: Yes, Zebra updates at least one ZDS component every 3-4 months**.
+
+-----
+
+### Q: How often does ZDS check for available updates?
+
+**A: ZDS polls Zebra servers for updates once every 24 hours and every time the device reboots**.
 
 -----
 
 ###Q: Can updates of the ZDS agent be disabled?
 
-**A: Not directly, but ZDS updates can be prevented by using an enterprise mobile management (EMM) system to lock device apps to a specific ZDS version. However, <u>Zebra recommends keeping ZDS updates enabled</u> to ensure the highest levels of security, stablity, feature enhancement and bug fixes**. 
+**A: Not directly, but ZDS updates can be prevented by using an enterprise mobile management (EMM) system to lock device apps to a specific ZDS version. However, <u>Zebra recommends keeping ZDS updates enabled</u> to ensure the highest levels of security, stability, feature enhancement and bug fixes**. 
 
 -----
 

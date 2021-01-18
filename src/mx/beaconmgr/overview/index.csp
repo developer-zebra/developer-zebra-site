@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of a powered-off device to help locate the device using [Zebra Device Tracker](#zebradevicetracker) software running on a second device, which detects the non-connectible advertising packets sent by the device being tracked. 
+Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of a powered-off device to help locate the device using Zebra Device Tracker, a software utility running on a second device. See section below for more information.  
 
 Beacon Manager provides administrative control of beacon contents as well as the interval and power level of the transmitted signal to help balance power consumption with detectable range. 
 
@@ -27,10 +27,12 @@ Beacon Manager provides administrative control of beacon contents as well as the
 
 ### Zebra Device Tracker
 
+[Zebra Device Tracker](#zebradevicetracker) is a utility app for Android that detects the non-connectible advertising packets sent by the Bluetooth Low Energy (BLE) radio of devices being tracked. A device's BLE settings can be configured using Beacon Manager, a component of Zebra's mobility extensions (MX) framework for Android.    
+
 <img style="height:450px" src="../../../../../images/mx/device_tracker_ui.png"/>
  _The Zebra Device Tracker user interface_.<br>
 
-Device Tracker is preinstalled on some Zebra devices running Android 8.x Oreo and is available as a download for other devices. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
+Device Tracker is preinstalled on some Zebra devices running Android 8.x Oreo (or later) and is available as a download for other devices. Learn more [about Zebra Device Tracker](/devicetracker) including [supported devices and Android versions](https://techdocs.zebra.com/devicetracker/latest/guide/about/#supporteddevices). 
 
 #### Recommended Settings
 
@@ -39,7 +41,7 @@ Zebra recommends the following Beacon Manager settings for optimal performance w
 * **Beaconing**: Turn ON
 * **Beaconing in Airplane Mode**: Turn ON
 * **Beacon type**: AltBeacon
-* **Explicit Beacon UUID**: [unchecked]
+* **Explicit Beacon UUID (checkbox)**: Unchecked
 * **AltBeacon ID1**: EBEB
 * **AltBeacon ID2**: ECDD
 * **Transmission (Tx) Power Level**: High (1 dBm)
@@ -51,6 +53,6 @@ When a device is placed in Airplane Mode, all device radios are switched off, in
 
 * **If "Turn On" is selected**, a beacon is emitted when the device is turned off until the device battery runs out or the device is powered on again. 
 
-* **If "Turn Off" is selected**, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device's power state.<br>**`IMPORTANT:` If this option is selected, <u>Device Tracker will be unable to locate the device by its beacon</u>**. 
+* **If "Turn Off" is selected**, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device's power state.<br>**`IMPORTANT:` If this option is selected, <u>Device Tracker might be unable to locate the device by its beacon</u>**. 
 
 -----

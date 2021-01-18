@@ -16,7 +16,9 @@ productversion: '5.0'
 * **Login credentials** for Zebra.com
 * **An active [Zebra OneCare](https://www.zebra.com/us/en/services/zebra-onecare-support-services.html)** contract 
 
-> **`IMPORTANT:` If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#icreateaprofile). 
+> **`IMPORTANT:**`<br>
+* **StageNow displays Android 8.x, 10.x and newer versions only.<br>
+* **If a target device is downgraded to MX 8.0 or earlier** and an upgrade is later required, the upgrade Profile must be created using [manual staging methods](../stagingprofiles/#icreateaprofile).
 
 -----
 

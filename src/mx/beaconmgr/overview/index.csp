@@ -49,10 +49,10 @@ Zebra recommends the following Beacon Manager settings for optimal performance w
 
 #### Airplane Mode Option
 
-When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the Beaconing Airplane Mode parameter comes into play. Device behavior for this mode is as follows: 
+When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the **Beaconing in Airplane Mode** parameter comes into play. Device behavior for this mode is as follows: 
 
-* **If "Turn On" is selected**, a beacon is emitted when the device is turned off until the device battery runs out or the device is powered on again. 
+* **If "Turn On" is selected**, a beacon is emitted when the device is turned off while in Airplane Mode until the device battery runs out or the device is powered on again. 
 
-* **If "Turn Off" is selected**, no beacon is emitted when the device is turned off until Airplane Mode is turned off, regardless of device's power state.<br>**`IMPORTANT:` If this option is selected, <u>Device Tracker might be unable to locate the device by its beacon</u>**. 
+* **If "Turn Off" is selected**, no beacon is emitted when the device is turned off while in Airplane Mode.<br>**`IMPORTANT:` If this option is selected, <u>Device Tracker would be unable to locate the powered-off device by its beacon</u>**. 
 
 -----

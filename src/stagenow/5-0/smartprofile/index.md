@@ -67,7 +67,7 @@ _Click image to enlarge; ESC to exit_.
 &nbsp;&nbsp;&nbsp;&nbsp;b. **Click the "Show Results" button** to display the filtered list.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;c. **Click the "plus" icon** to display image in "My LifeGuard Updates" list. <br>
 When the image list appears as desired, **[proceed to Section II](#iicreateasmartprofile)**. <br>
-**NOTE: The Smart Profile feature displays Android 8.x, 10.x and newer versions only**.
+**`NOTE:` The Smart Profile feature displays Android 8.x, 10.x and newer versions only**.
 <img alt="image" style="height:400px" src="sn5_08.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>

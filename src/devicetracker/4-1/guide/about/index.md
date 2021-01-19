@@ -29,7 +29,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
         * Devices to assigned site with user friendly names for simple device identification.
 * Simple to deploy – install and configure the mobile application using StageNow and Enterprise Mobility Management tools.
 * Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator and play sound feature.
-* Locate a device even when that device is powered off if it has secondary BLE (Bluetooth low energy) beaconing capability.
+* Locate a device even when that device is powered off (for a limited time) if it has secondary BLE (Bluetooth low energy) beaconing capability.
 * Check-out/Check-in feature to associate users to devices for accountability. (Optional)
 
 
@@ -38,14 +38,14 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 ## New in Device Tracker 4.1
 
-* Locate a device even when that device is powered off if it has [secondary BLE beaconing](../config/#secondaryble) capability.
+* Locate a device even when that device is powered off (for a limited time) if it has [secondary BLE beaconing](../config/#secondaryble) capability.
 * New device support for EC50. See <a href="./#supporteddevices">Supported Devices.</a>
-* [Device Tracker service](../setup/#installationprofile) now available to start the app without user interaction during device deployment.
-* Administrator or manager can scan a barcode for user name and password during login.
+* [Device Tracker service](../setup/#installationprofile) now available to start the app without launching the user interface during device deployment. This allows uninterrupted device operation by the end user during deployment.
+* Administrator or manager can scan a barcode for user name and password during login, eliminating manual entry.
 * Resolved Issues:
         * After repeatedly launching Device Tracker over several weeks without rebooting the device, the app may become unresponsive. 
-        * When there are multiple pools of licenses with different expiration dates, an incorrect or negative license count is reported when the licenses expire.
-* Known Issue: When installing the application on a mobile device using an EMM, some EMMs do not grant all the required permissions for the application to run in the background to track the device. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM granting all permissions. Refer to the [Install & Setup guide](../setup)
+        * When there are multiple pools of licenses with different expiration dates, an incorrect license count is reported after the licenses expire.
+* Known Issue: When installing the application on a mobile device using an EMM, some EMMs may not have implemented the Zebra value-added features for seamless deployment. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM for seamless deployment. Refer to the [Install & Setup guide](../setup).
 
 <!-- -->
 -----

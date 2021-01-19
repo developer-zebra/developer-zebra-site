@@ -46,7 +46,7 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-4. **Click "confirm"** to continue. **NOTE**: Do **NOT** change the Activation code: 
+4. **Click "confirm"** to continue. **DO NOT CHANGE THE ACTIVATION CODE**: 
 <img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>

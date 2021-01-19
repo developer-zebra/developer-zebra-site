@@ -40,19 +40,19 @@ _Click image to enlarge; ESC to exit_.
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-3. On the login screen, **enter Zebra.com login credentials**.<br>
+3. **If the workstation is already logged into the LifeGuard update system, Skip to Step 7**.<br>A login screen similar to the image below appears. **Enter Zebra.com login credentials**.<br>
 **Note: If a timeout occurs, click the "Try Again" button** (not shown) to return to the login screen:
 <img alt="image" style="height:400px" src="sn5_05.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-4. **Click "Allow"** to load the LifeGuard update database: 
-<img alt="image" style="height:400px" src="sn5_06.png"/>
+4. **Click "confirm"** to continue. **DO NOT CHANGE THE ACTIVATION CODE**: 
+<img alt="image" style="height:400px" src="sn5_03.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>
-5. **Click "confirm"** to continue. **NOTE**: Do **NOT** change the Activation code: 
-<img alt="image" style="height:400px" src="sn5_03.png"/>
+5. **Click "Allow"** to load the LifeGuard update database: 
+<img alt="image" style="height:400px" src="sn5_06.png"/>
 _Click image to enlarge; ESC to exit_.
 <br>
 <br>

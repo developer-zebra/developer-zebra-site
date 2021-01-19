@@ -12,6 +12,7 @@ The DataWedge profile configuration screen allows an app user to configure the a
 
 **Notes:**
 * The DCP does not appear if the scanner is disabled in the active Profile.
+* On Android 10 or later, when the Settings app is launched the DCP icon is hidden. This is a known Android behavior due to the Settings app preventing any apps from drawing over it.
 * DCP button only works with one enabled scanner when the profile is configured for [multiple scanners](../barcode/#scannerselection).
 
 <img style="height:350px" src="../dcp_settings.png"/>

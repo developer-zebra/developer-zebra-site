@@ -11,9 +11,9 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 5.0 User Guide, Revision A; <!-- StageNow MN-003401; --> Sep., 2020
+StageNow 5.1 User Guide, Revision A; <!-- StageNow MN-003401; --> Jan., 2021
 
-#### Covers StageNow 5.0
+#### Covers StageNow 5.1
 
 ## Overview
 
@@ -50,15 +50,34 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v5.0
+## What's New in v5.1
 
-### Device Support 
+**Supports MX 10.3, which adds the following major features and enhancements**: 
+
+* **New [App Manager](../csp/app) feature**: 
+ * Allow/Disallow individual app upgrades 
+* **New [Bluetooth Manager](../csp/bluetoothmgr) feature**: 
+ * Erase all data about paired peripherals on device
+* **New [DHCP Option Manager](../csp/dhcp) feature**: 
+ * Select between DHCPv4 and DHCPv6 clients on device (or use both)
+* **New [NFC Manager](../csp/nfcmgr) feature**: 
+ * Enable/Disable logging of NFC events on device
+* **New [WorryFree Wi-Fi Manager](../csp/worryfreewifimgr) feature**: 
+ * Minimum password and temporary password length increased to eight (8) characters
+
+-----
+
+## Version History
+
+### Added in v5.0
+
+#### Device Support 
 
 > **StageNow supports all Zebra devices running Android 4.x KitKat and later with MX 4.3 or later**.
 
 -----
 
-### New Features
+#### New Features
 
 **StageNow 5.0 introduces [Smart Profiles](../smartprofile)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofile). 
 
@@ -94,10 +113,7 @@ The following software must be installed on the staging workstation prior to usi
  * Configure Fine Timing Measurement  
  * Control encryption options
 
-
 -----
-
-## Version History
 
 ### Added in v4.3
 

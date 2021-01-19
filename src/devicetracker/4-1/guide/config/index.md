@@ -163,7 +163,7 @@ Deleting a device removes device data from the Device Tracker solution after uni
 
 ## Secondary BLE
 
-For devices with a secondary BLE beacon, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
+For devices with secondary BLE beaconing capability, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off. Locationing is based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
 
 <p>See <a href="../setup/#bleprofile">BLE Profile</a> to enable the secondary BLE beacon.</p>
 

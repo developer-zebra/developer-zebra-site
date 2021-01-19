@@ -8,12 +8,12 @@ productversion: "4.1"
 ## Overview
 
 When initiating the process to find a device, the target device must first be set to the **To Be Found** state by the administrator or manager. The “seeking” device, or the device performing the search, is used to determine the distance the user is located in relation to the “target” device, or the device to be found. Location must be enabled on the seeking device to perform the device search.
-
-When a device is found, recommission the device to place it back into the active device pool. Alternatively, decommission the device if it needs to be removed from the active device pool.
+<p>
+When a device is found, recommission the device to place it back into the active device pool. Alternatively, decommission the device if it needs to be removed from the active device pool.</p>
 
 A note can be added at any time to capture comments specific to the device to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers.
-
-Optionally, the Check-out feature can be enabled to associate users to devices fo accountability with the scan of a barcode.
+<p>
+Optionally, the Check-out feature can be enabled to associate users to devices for accountability with the scan of a barcode.</p>
 
 <!-- -->
 -----
@@ -77,6 +77,14 @@ When the user is ready to take action to perform the device search, the first st
 6. If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.** The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
 
 <p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.</p>
+
+### Secondary BLE
+
+For devices with secondary BLE beaconing capability, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off. Locationing is based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
+
+<p>See <a href="../setup/#bleprofile">BLE Profile</a> to enable the secondary BLE beacon.</p>
+
+The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 
 <!-- -->
 -----

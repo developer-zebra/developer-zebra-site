@@ -28,7 +28,12 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
  <img alt="image" style="height:350px" src="sn42_ztw_02.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>
-3. **Enter the settings** for configuring the device for internet connectivity:  
+3. **Enter the settings** for configuring the device for LAN connectivity. <br>
+ **NOTE: On devices with MX 10.2 (or later)**, StageNow 5.0.2 (and later) offers the following additional network options for selection:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;• **RF band** (2.4GHz, 5.0GHz or Auto)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;• **Fine Timing Measurement** (FTM) (enable/disable)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;• **Network type** (PSK/PEAP)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;• **PEAP/MSCHAPV2 options** (if PEAP is the Network type)<br>
  <img alt="image" style="height:400px" src="sn42_ztw_03.png"/>
  _Click image to enlarge; ESC to exit_.<br>
 <br>

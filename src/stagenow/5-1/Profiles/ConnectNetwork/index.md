@@ -2,7 +2,7 @@
 title: Connect Network
 layout: guide.html
 product: StageNow
-productversion: '5.0'
+productversion: '5.1'
 ---
 Use this Wizard to connect to a Wi-Fi, GPRS, or Ethernet network. 
 

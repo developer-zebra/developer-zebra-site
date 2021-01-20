@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: encryptmgr
 product: StageNow
-productversion: '5.0'
+productversion: '5.1'
 ---
 
 

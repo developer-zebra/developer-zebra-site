@@ -2,7 +2,7 @@
 title: Profiles
 layout: guide.html
 product: StageNow
-productversion: '5.0'
+productversion: '5.1'
 ---
 
 ## Overview

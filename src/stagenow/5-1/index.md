@@ -53,7 +53,7 @@ menu:
     - icon: fa fa-search
       url: /stagenow/5-0/search
 product: StageNow
-productversion: '5.0'
+productversion: '5.1'
 ---
 
 <!-- 11/16/20 - narrowing the tab menus so they don't cause wrapping

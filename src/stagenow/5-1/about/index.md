@@ -69,6 +69,14 @@ The following software must be installed on the staging workstation prior to usi
 
 ## Version History
 
+### Added in v5.0.2
+
+StageNow 5.0.2 added the option of selecting the following network options for configuration during **Zero Touch set-up on devices with MX 10.2 (or later)**:
+* **RF band** (2.4GHz, 5.0GHz or Auto)
+* **Fine Timing Measurement** (FTM) (enable/disable)
+* **Network type** (PSK/PEAP)
+* **PEAP/MSCHAPV2 options** (if PEAP is the Network type)
+
 ### Added in v5.0
 
 #### Device Support 

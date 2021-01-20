@@ -108,6 +108,10 @@ Device status:
 * **Never Connected –** filters devices that are registered but never connected to the server.
 * **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
 <br>
+
+<p>If <a href="../config/#devicecheckout">Device Check-out</a> is enabled:</p>
+
+* **Checked Out –** filters devices that are checked-out by users after scanning their user barcode, associating the user to the device.
 <!-- -->
 
 <img style="height:350px" src="dashboard.png" />

@@ -75,8 +75,12 @@ When the user is ready to take action to perform the device search, the first st
 
 5. Tap **Play Sound** on the seeking device. The target device emits a chirping sound to help identify its location. Walk towards the sound. Continue this step until the device is found.
 6. If the target device is found, tap **Device found.** The device is then moved to the Found state. If the device is not found, **tap Cannot find.** The device is then moved to the **Cannot Find** state. The device is listed under the corresponding categories accessible from the dashboard.
+<br>
 
-<p><b>Note:</b> A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.</p>
+<p><b>Note:</b></p>
+
+* A device is in the <b>Disconnected</b> state if it does not communicate with the server for approximately 12 minutes. If a device search is performed and audio is attempted to play during this time frame, audio cannot be emitted from the target device.
+* If the device being found is powered off during a device search, while powering it on again proximity cannot be detected until the device completes the boot process. Since the secondary BLE is inoperative when the device is powered on, device locationing relies on the primary BLE beacon.
 
 ### Secondary BLE
 

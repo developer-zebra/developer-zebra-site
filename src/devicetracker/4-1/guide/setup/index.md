@@ -14,7 +14,7 @@ This section discusses installation and setup of Device Tracker. The client app 
 1. **Install client APK file** and ensure all permissions are granted.
 2. **Disable battery optimization** to permit the app to continue running in the background during doze mode (Android’s power-saving feature triggered when the device is in a prolonged suspended state).
 3. **Allow overlay permission _(optional)_.** If the [Device Check-out](../use/#devicecheckout) feature is required to prevent users from accessing the device prior to scanning their unique user barcode, automatically allow the overlay permission to avoid manual intervention during setup.
-4. **Launch the app** by starting the app service.
+4. **Launch the app** without user interaction by starting the app service. This allows uninterrupted device operation by the end user during deployment.
 5. **Deploy server settings** to communicate with the cloud server.
 6. **Enable secondary BLE beacon**, if supported by the device, for the device to be located when powered off. 
 

@@ -13,7 +13,7 @@ When a device is found, recommission the device to place it back into the active
 
 A note can be added at any time to capture comments specific to the device to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers.
 
-Optionally, the Check-out feature can be enabled to associate users to devices fo accountability with the scan of a barcode.
+Optionally, the Check-out feature can be enabled to associate users to devices for accountability with the scan of a barcode.
 
 <!-- -->
 -----

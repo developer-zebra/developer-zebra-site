@@ -40,7 +40,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 * Locate a device even when that device is powered off (for a limited time) if it has [secondary BLE beaconing](../config/#secondaryble) capability.
 * New device support for EC50. See <a href="./#supporteddevices">Supported Devices.</a>
-* [Device Tracker service](../setup/#installationprofile) now available to start the app without launching the user interface during device deployment. This allows uninterrupted device operation by the end user during deployment.
+* New [Device Tracker service](../setup/#installationprofile) for headless deployment to start the app without user interaction. This allows uninterrupted device operation by the end user during deployment.
 * Administrator or manager can scan a barcode for user name and password during login, eliminating manual entry.
 * Resolved Issues:
         * After repeatedly launching Device Tracker over several weeks without rebooting the device, the app may become unresponsive. 

@@ -11,7 +11,7 @@ Beacon Manager (BeaconMgr) controls the signal transmitted by the secondary Blue
 One solution that leverages beaconing technology is [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker), an Android utility that can help locate misplaced devices by honing in on their BLE beacons.
 
 ### Supported Devices
-* EC50
+* **EC50**
 
 ### Main Functionality
 

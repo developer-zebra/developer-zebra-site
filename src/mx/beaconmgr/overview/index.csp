@@ -6,11 +6,9 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of so-equipped devices when powered-off. This beacon can be detected by an app running on another device as a means to locate misplaced devices. 
+Beacon Manager (BeaconMgr) controls the signal transmitted by the Bluetooth Low Energy (BLE) radio of so-equipped devices when powered-off. This beacon can be detected by an app running on another device as a means to locate misplaced devices. One implementation of such a solution is [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker), an Android utility that detects the non-connectible BLE advertising packets of devices emitting a beacon. 
 
-One implementation of such a solution is [Device Tracker](https://techdocs.zebra.com/devicetracker), an Android utility that detects the non-connectible advertising BLE packets of devices being tracked. 
-
-Beacon Manager allows administrative control over beacon contents and settings such as transmission interval and power to help balance battery consumption with detectable range. 
+**Beacon Manager facilitates administrative control over beacon contents and settings** such as transmission interval and power to help balance battery consumption with detectable range. 
 
 ### Main Functionality
 

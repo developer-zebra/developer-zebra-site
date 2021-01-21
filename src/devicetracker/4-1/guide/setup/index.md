@@ -7,14 +7,14 @@ productversion: "4.1"
 
 ## Overview
 
-This section discusses installation and setup of Device Tracker. The client app (APK file) can be downloaded from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html). Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for deployment to the mobile devices. 
+This section discusses installation and setup of Device Tracker, including silent deployment. The client app (APK file) can be downloaded from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html). Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM can be used for deployment to the mobile devices. 
 
 <p><b>Installation and setup on the device:</b></p>
 
 1. **Install client APK file** and ensure all permissions are granted.
 2. **Disable battery optimization** to permit the app to continue running in the background during doze mode (Android’s power-saving feature triggered when the device is in a prolonged suspended state).
 3. **Allow overlay permission _(optional)_.** If the [Device Check-out](../use/#devicecheckout) feature is required to prevent users from accessing the device prior to scanning their unique user barcode, automatically allow the overlay permission to avoid manual intervention during setup.
-4. **Launch the app** without user interaction by starting the app service. This allows uninterrupted device operation by the end user during deployment.
+4. **Start the Device Tracker service** to accept the server settings. The Device Tracker service can be silently deployed to start without user intervention. 
 5. **Deploy server settings** to communicate with the cloud server.
 6. **Enable secondary BLE beacon**, if supported by the device, for the device to be located when powered off. 
 
@@ -90,7 +90,7 @@ For part C, the client app certificate must be extracted. Perform the steps in s
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** System Alert Window<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.devicetrackercloud<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <b>Extract Client App Certificate</b> below)]<br>
-17. _StageNow Config 5_ – Launch NGDTCspService with an intent. For **Intent,** enter/select the following:<br>
+17. _StageNow Config 5_ – Start Device Tracker service by sending an intent. For **Intent,** enter/select the following:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** StartService<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Android Action Name:** com.zebra.devicetrackercloud.csp.NGDTCspService<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Package Name:** com.zebra.devicetrackercloud<br>

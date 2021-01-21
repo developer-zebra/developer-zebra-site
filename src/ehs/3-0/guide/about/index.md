@@ -448,7 +448,7 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 #### New Features in EHS 2.5:
 * **Easier download and installation**. The EHS 2.5 download package now includes a single APK for installing on all supported Zebra devices; no more multi-APK installer. 
 
-* **Now links to [Techdocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
+* **Now links to [TechDocs](../../../../)**, Zebra's premier web site for user-facing documentation--now a standard component on every EHS installation.
 <br>
 
 [Download Enterprise Home Screen 2.5](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)

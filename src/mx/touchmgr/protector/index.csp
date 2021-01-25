@@ -17,7 +17,7 @@ parm:
       name: (unchecked)
       mx: "6.2"
       osx: "6.2"
-      description: Screen protector not present; sensitivity is not adjusted to compensate.
+      description: Screen protector not present; sensitivity is not adjusted to compensate. See NOTE above. 
     - code: true
       devicetype: A
       name: (checked)

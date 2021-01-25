@@ -1,12 +1,12 @@
 ---
 title: DataWedge APIs
-description: DataWedge APIs operate primarily through Android intents - specific commands that can be used by other applications to control data capture without the need to directly access the DataWedge UI.  
+description: 
 layout: list-apis.html
 product: 'DataWedge'
 productversion: '8.2'
 automenu:
   items:
-    - title: General Information
+    - title: Other Resources
       items:
         - title: Getting Started
           url: ../gettingstarted
@@ -20,7 +20,9 @@ automenu:
           url: https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges
         - title: DataWedge Intent Demo App 
           url: tutorials
-        - title: Controle Access to DataWedge Intent APIs
+        - title: Application Development Guide
+          url: ../programmers-guides/articles
+        - title: Control Access to DataWedge Intent APIs
           url: ../programmers-guides/secure-intent-apis
 
     
@@ -195,7 +197,11 @@ automenu:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchsimulscanparams">Switch Simulscan Params</a>** - Temporarily update the Simulscan settings in the active profile at runtime.<br />
 -->
-<br>
+DataWedge APIs operate primarily through Android intents, specific commands that can be used by other applications to control data capture without the need to directly access the DataWedge UI. DataWedge API use can be [controlled to only allow approved apps to configure DataWedge](../programmers-guides/secure-intent-apis). 
+
+<p>Refer to <a href="../programmers-guides/articles">DataWedge resources for application development</a> for guidance on use of common DataWedge APIs.
+</p>
+
 DataWedge APIs are categorized into 4 types:
 
 * **Configuration APIs -** related to actions taken on configurations
@@ -251,6 +257,5 @@ DataWedge APIs are categorized into 4 types:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchscannerparams">Switch Scanner Params</a>** - Temporarily update the settings of the active profile during runtime by passing one or more barcode, scanner and/or reader parameters as intent extras.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<a href="./switchtoprofile">Switch to Profile</a>** - Change the app association to the specified profile.
 <br><br>
-DataWedge API use can be controlled to only allow approved apps to configure DataWedge. See [Control Access to DataWedge Intent APIs](../programmers-guides/secure-intent-apis).
 
-<br>
+

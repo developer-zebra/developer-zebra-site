@@ -53,7 +53,7 @@ Note: After the license is expired, if the "scanning mode" parameter is manually
 ## Importing DataWedge Configurations 
 
 If a DataWedge profile with MultiBarcode or NextGen SimulScan enabled is imported from a Zebra Enterprise-series device to a Zebra Professional-series device without a valid MDNA Enterprise license, the following behavior occurs:
-* **"Scanning mode" is switched to "Single" barcode mode.** In DataWedge UI, "scanning mode" is set to “Single”, even if the imported profile was using “Multibarcode” or “SimulScan”. Applying a valid MDNA enterprise license automatically switches the "scanning mode" back to "MultiBarcode" or "NextGen SimulScan". DataWedge UI also reflects the same scanning mode used on the Zebra Enterprise device.
+* **"Scanning mode" is switched to "Single" barcode mode.** In DataWedge UI, "scanning mode" is set to “Single”, even if the imported profile was using “MultiBarcode” or “SimulScan”. Applying a valid MDNA enterprise license automatically switches the "scanning mode" back to "MultiBarcode" or "NextGen SimulScan". DataWedge UI also reflects the same scanning mode used on the Zebra Enterprise device.
 * **DataWedge v8.2 and higher detects use of features requiring licensing** and displays the unlicensed parameters in the import report. **DataWedge v8.1 and lower does not display an error message during the import process** if any profiles are using licensed features. 
 
 

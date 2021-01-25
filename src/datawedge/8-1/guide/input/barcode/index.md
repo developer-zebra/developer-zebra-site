@@ -136,7 +136,7 @@ _Scanner configuration_
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
 * If **Single** or **UDI** is selected as the **Scanning Mode** within **Scanner Configuration,** then **Scanning Modes** is disabled within **NG SimulScan Configuration.**  
-* If **Document Capture** or **Multibarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
+* If **Document Capture** or **MultiBarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
 
 <table>
 
@@ -191,7 +191,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Capture](#documentc
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
 * If **Single** or **UDI** is selected as the **Scanning Mode** within **Scanner Configuration,** then **Scanning Modes** is disabled within **NG SimulScan Configuration.**  
-* If **Document Capture** or **Multibarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
+* If **Document Capture** or **MultiBarcode** is selected for **Scanning Modes** within **NG SimulScan Configuration,** then **Scanning Modes** is disabled within **Scanner Configuration.**
 
 <table>
 

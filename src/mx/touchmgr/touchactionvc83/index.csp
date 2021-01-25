@@ -5,7 +5,6 @@ type: parm
 order: 18
 mx: "9.1"
 devicetype: A
-info: Some modes might require purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: Device Type is set to "VC83" 
   pivotal: No

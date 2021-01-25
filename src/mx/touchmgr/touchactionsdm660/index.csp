@@ -5,7 +5,6 @@ type: parm
 order: 14
 mx: "9.1"
 devicetype: A
-info: Depending on the device, some modes require purchase of a Mobility DNA Enterprise License.
 parm:
   presentif: Device Type is set to "SDM660" 
   pivotal: No

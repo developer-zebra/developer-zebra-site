@@ -28,4 +28,4 @@ parm:
 
 Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. **Checkbox is displayed <u>only if Screen Protector is supported</u> by the selected Device Type and by the selected Touch Action**. 
 
-**`ATTENTION EMDK, EMM AND STAGENOW USERS:`** A setting of "false" for this parameter could return an error in EMDK, StageNow and some enterprise mobile management systems on devices containing a `com.symbol.mxmf.csp.touchmgr` CSP version <u><i>prior to</i></u> 10.2.3. To configure a setting of "false" on such a device, simply skip this parameter. **To display the version number of any CSP on a device, enable "Show System" in Settings -> Apps**.
+**`IMPORTANT NOTE:` A setting of "false" for this parameter could return an error in EMDK, StageNow and some enterprise mobile management systems** on devices containing a `com.symbol.mxmf.csp.touchmgr` CSP version <u><i>prior to</i></u> 10.2.3. To configure a setting of "false" on such a device, simply skip this parameter. **To display the version number of any CSP on a device, enable "Show System" in Settings -> Apps**.

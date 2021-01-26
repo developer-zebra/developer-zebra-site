@@ -261,7 +261,7 @@ Add scanning and data acquisition to any application on a device ***without codi
 -----
 <a name="softwarecomponents2"></a>
 ### Device Tracker On-prem
-**Centralized on-premise solution for tracking and locating misplaced devices within a facility** to help improve worker productivity and prevent device inventory shrinkage using a company's existing Wi-Fi network infrastructure, Bluetooth Low Energy (BLE) signaling and audio alerts. Also available in a cloud edition. 
+**Centralized on-premise solution for tracking and locating misplaced devices within a facility** to help improve worker productivity and prevent device inventory shrinkage using a company's existing Wi-Fi network infrastructure, Bluetooth Low Energy (BLE) signaling and audio alerts. Formerly known as Device Tracker; on-premise versions ended with 2.3.1. Incompatible with (cloud-based) Device Tracker 4.x; cannot be upgraded.
 
 [Learn more about Device Tracker On-prem](/devicetracker-onprem)
 

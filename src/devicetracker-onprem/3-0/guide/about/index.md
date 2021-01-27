@@ -7,7 +7,7 @@ productversion: "3.0"
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker"><b>Device Tracker</b></a> 4.0 is the cloud-based version, which replaces Device Tracker On-Prem 2.3.1 or lower. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker On-Prem </b> 2.3.1 or lower is the on-premise version, formerly known as Device Tracker. It is incompatible with Device Tracker 4.0 and cannot be upgraded. </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker On-Prem </b> 2.3.1 or lower is the on-premise version, formerly known as Device Tracker. It is incompatible with Device Tracker 4.0 and cannot be upgraded to the cloud-based version. </div>
 
 <a href="/devicetracker" class="btn btn-danger">Learn About Device Tracker</a> <p></p>
 
@@ -19,13 +19,10 @@ Device Tracker On-Prem is a centralized software solution that tracks and finds 
 
 When locating a device, Device Tracker On-Prem identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility. The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device. Chirping audio can be played on the misplaced device to further determine its specific location.
 
-## New in Device Tracker On-Prem 2.3.1
+## New in Device Tracker On-Prem 3.0
 
-- New feature on the server to toggle BLE for device proximity tracking.
-- New BLE proximity indicator to determine proximity of device based on BLE beacon transmissions.
-- Ability to delete "Never connected" devices in the web portal that have been uploaded but never connected to the server. This option helps to remove devices uploaded to the console via .CSV file in error.
-- Self-signed certificates are now supported to help simplify deployment of product demos and trials.
-- Enhanced Device Tracker On-Prem mobile client with support for Google API 28, providing greater consistency of application user interfaces and icons.
+* New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>
+* <a href="/licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.
 
 ## Version History
 
@@ -35,6 +32,17 @@ When locating a device, Device Tracker On-Prem identifies the general area where
     <th style="text-align:center">Server/<br>Client</th>
     <th style="text-align:center">Version</th>
     <th style="text-align:center">New Features/Updates</th>
+  </tr>
+  <tr>
+    <td style="text-align:center" rowspan="2">3.0</td>
+    <td style="text-align:center">Server</td>
+    <td style="text-align:center">2.3.1</td>
+    <td style="text-align:left">No changes.</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">Client</td>
+    <td style="text-align:center">3.0</td>
+    <td style="text-align:left">• New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>• <a href="./licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.</td>
   </tr>
   <tr>
     <td style="text-align:center" rowspan="2">2.3.1</td>

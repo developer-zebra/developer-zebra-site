@@ -73,16 +73,16 @@ parm:
             - value: 1 - Security Level 1
             - value: 2 - Security Level 2
             - value: 3 - Security Level 3
-    - name: Enable Marginless Decode
-      description: 
-      param: decoder_code128_enable_marginless_decode
+    - name: Reduced Quiet Zone
+      description: Enable marginless decode
+      param: code128_enable_marginless_decode
       paramvalue:
         list:
             - value: true
             - value: false
     - name: Ignore Fnc4
-      description: 
-      param: decoder_code128_ignore_fnc4
+      description: When enabled and a Code 128 barcode has an embedded FNC4 character, it will be removed from the data and the following characters will not be changed. When the feature is disabled, the FNC4 character will not be transmitted but the following character will have 128 added to it.
+      param: code128_ignore_fnc4
       paramvalue:
         list:
             - value: true

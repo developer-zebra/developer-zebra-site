@@ -12,7 +12,7 @@ parm:
             - value: true
             - value: false
     - name: Preamble
-      description: Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble. Select the appropriate option to match the host system.
+      description: Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble. Select the appropriate option to match the host system
       descriptionlist:
             - value: • Preamble None - Transmit no preamble.
             - value: • Preamble Sys Char - Transmit System Character only.

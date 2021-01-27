@@ -26,15 +26,15 @@ parm:
         list:
             - value: true
             - value: false
-    - name: Convert to EAN13
+    - name: Convert ITF14 to EAN13
       description: Missing
-      param: decoder_i2of5_convert_to_ean13
+      param: decoder_itf14_convert_to_ean13
       paramvalue: 
         list:
             - value: true
             - value: false
-    - name: Enable Marginless Decode
-      description: Missing
+    - name: Reduced Quiet Zone
+      description: Enable marginless decode
       param: i20f5_enable_marginless_decode
       paramvalue: 
         list:
@@ -52,9 +52,8 @@ parm:
       param: decoder_i2of5_check_digit
       paramvalue: 
         list:
-            - value: 0 - No Check Digit
-            - value: 1 - USS Check Digit
-            - value: 2 - OPCC Check Digit
+            - value: true
+            - value: false
     - name: Security Level
       description: Missing
       param: decoder_i2of5_security_level

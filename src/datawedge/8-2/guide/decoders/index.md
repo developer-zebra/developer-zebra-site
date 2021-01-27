@@ -200,16 +200,6 @@ decoders:
     decoderstate: true, false 
     parms: true
   - type: section
-    title: MacroPDF
-    decoder: macropdf
-    decoderparm: 
-    decoderstate: true, false 
-  - type: section
-    title: MacroMicroPDF
-    decoder: macromicropdf
-    decoderparm: 
-    decoderstate: true, false 
-  - type: section
     title: Mailmark
     decoder: mailmark
     decoderparm: decoder_mailmark
@@ -231,7 +221,7 @@ decoders:
     decoderparm: decoder_micr_e13b
     decoderstate: true, false 
   - type: section
-    title: Micro PDF
+    title: MicroPDF
     decoder: micropdf
     decoderparm: decoder_micropdf
     decoderstate: true, false 
@@ -335,12 +325,6 @@ decoders:
     decoder: us4statefics
     decoderparm: decoder_us4state_fics
     decoderstate: true, false 
-  - type: section
-    title: Webcode
-    decoder: webcode
-    decoderparm: decoder_webcode
-    decoderstate: true, false 
-    parms: true
   - type: section
     title: Decode Lengths
     decoder: decodelengths

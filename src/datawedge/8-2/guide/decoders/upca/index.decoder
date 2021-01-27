@@ -5,14 +5,14 @@ parm:
   type: list
   list: 
     - name: Report Check Digit
-      description: Missing
+      description: The check digit is the last character of the symbol used to verify the integrity of the data. Enable/disable use of the check digit.
       param: decoder_upca_report_check_digit
       paramvalue: 
         list:
             - value: true
             - value: false
     - name: Preamble
-      description: Missing
+      description: Preamble characters are part of the UPC symbol consisting of Country Code and System Character. Choose one of three options for transmitting a UPCA preamble.
       param: decoder_upca_preamble
       paramvalue: 
         list:

@@ -27,18 +27,6 @@ parm:
             - value: 0 - No Check Digit
             - value: 1 - 1 Check Digit
             - value: 2 - 2 Check Digits
-    - name: No Check Digit
-      description: Do not verify check digit.
-      param: 
-      paramvalue: 
-    - name: One Check Digit
-      description: Barcode contains one check digit.
-      param: 
-      paramvalue: 
-    - name: Two Check Digits
-      description: Barcode contains two check digits.
-      param: 
-      paramvalue: 
     - name: Report Check Digit
       description: Transmit Code 11 data with or without the check digit. A check in the checkbox sends Code 11 data with a check digit.
       param: decoder_code11_report_check_digit

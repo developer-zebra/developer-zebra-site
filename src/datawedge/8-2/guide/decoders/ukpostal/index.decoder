@@ -5,7 +5,7 @@ parm:
   type: list
   list: 
     - name: Report Check Digit
-      description: Missing
+      description: Transmit UK Postal data with or without the check digit. Enabling this option sends UK Postal data with a check digit.
       param: decoder_uk_postal_report_check_digit
       paramvalue: 
         list:

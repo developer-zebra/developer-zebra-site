@@ -24,8 +24,9 @@ parm:
       param: decoder_code39_verify_check_digit
       paramvalue: 
         list:
-            - value: true
-            - value: false
+            - value: 0 - No check digit
+            - value: 1 - One check digit
+            - value: 2 - Two check digits
     - name: Report Check Digit
       description: Transmit Code 39 data with or without the check digit. A check in the checkbox will send Code 39 data with a check digit.
       param: decoder_code39_report_check_digit
@@ -54,9 +55,9 @@ parm:
         list:
             - value: true
             - value: false
-    - name: Enable Marginless Decode
-      description: 
-      param: decoder_code39_enable_marginless_decode
+    - name: Reduced Quiet Zone
+      description: Enable marginless decode
+      param: code39_enable_marginless_decode
       paramvalue: 
         list:
             - value: true

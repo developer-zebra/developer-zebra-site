@@ -7,7 +7,7 @@ productversion: "4.1"
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about Device Tracker:</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <b>Device Tracker</b> 4.0 or later is the cloud-based version, which replaces Device Tracker On-Prem 2.3.1 or earlier. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem</a> 2.3.1 or earlier is the on-premise version, which is incompatible with Device Tracker 4.0 or later and cannot be upgraded. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp; <a href="/devicetracker-onprem/2-3/guide/about">Device Tracker On-Prem</a> 2.3.1 or earlier is the on-premise version, which is incompatible with Device Tracker 4.0 or later and cannot be upgraded to the cloud-based version. 
 </div>
 
 ## Overview

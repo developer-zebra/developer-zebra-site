@@ -466,8 +466,9 @@ Note: Performance is the same from Level 1 to Level 3.
 
 **Note**: The Unique Device Identification (UDI) system was established in 2007 by the U.S. Food and Drug Administration as a means to track medical devices. 
 
+<!-- 1/29/21- note removed; UDI support restored. 
 > **`IMPORTANT:`** Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated. **UDI support will end when EMDK targets devices running Android 10 Q**.
-
+ -->
 ### Multi-barcode Notes
 
 **Picklist Behavior -** In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the crosshair to the specified number of barcodes to be scanned. Set this value (from 2-10) using the `BarcodeCount` parameter. **Data is returned only after the specified number of barcodes is read**. 

@@ -15,7 +15,7 @@ The EMDK Barcode API exposes a UDI barcode scanning feature that provides applic
 
 Before an application can scan UDI labels, scanMode must be set to UDI. First get an instance of a scanner object, refer to the Barcode Scanning API Programmer's Guide for instructions on how to initialize a scanner object. Once you have an initialized scanner object, you can then modify the scanner configuration.
 
->Note: UDI scanning is only available with Imager based scanners.
+>Note: UDI scanning is available only with imager-based scanners.
 
     :::java
     ScannerConfig config = scanner.getConfig();
@@ -61,7 +61,7 @@ Data read from a UDI labels contain embedded key/value pairs delimited by charac
 
 ###Raw UDI Data
 
-In some cases the Raw data( UDI data before being Tokenized) from a UDI label may be useful. The code snippet below demonstrates how to access the Raw UDI data from a ScanDataCollection.
+In some cases the Raw data (UDI data before being Tokenized) from a UDI label might be useful. The code snippet below demonstrates how to access the Raw UDI data from a ScanDataCollection.
 
 
     :::java

@@ -5,8 +5,7 @@ product: EMDK For Android
 productversion: '9.0'
 ---
 
-> **`IMPORTANT:`** Support for SimulScan features and Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later). 
-
+> **`IMPORTANT:`** Support for SimulScan features has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later).
 
 ##Introduction
 SimulScan is an end-to-end data capture solution for extracting critical data from documents. A differentiating data capture value-add, it involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.

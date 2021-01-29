@@ -21,7 +21,7 @@ menu:
   items:
     - title: About
       url: /emdk-for-android/9-0/guide/about
-    - title: Get Started
+    - title: Set up
       url: /emdk-for-android/9-0/guide/gettingstarted
     - title: Tutorials
       url: /emdk-for-android/9-0/tutorial/

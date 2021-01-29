@@ -31,7 +31,7 @@ The following software is required to use EMDK for Android:
 
 The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
 
-**Note**: Mac OS and Windows dialog boxes might vary slightly. 
+>**Note: Dialog boxes of macOS and Windows might vary slightly**. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Activate OpenJDK**:<br>

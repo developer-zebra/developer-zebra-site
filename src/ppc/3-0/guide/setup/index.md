@@ -20,9 +20,6 @@ Before installing, ensure to prepare additional steps for system setup - consult
 - **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
 - **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain
 
-###Version History
-
-- **PowerPrecision Console 2.3.1 -** Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
 ## System Requirements
 
@@ -31,26 +28,22 @@ This section provides the server and device requirements. PPC supports a maximum
 ### Server Requirements
 
 1. Windows Operating Systems supported:
-
    - Windows® Server 2012, 64-bit processor
    - Windows® Server 2016, 64-bit processor
 
 2. Browsers supported (connect over https):
-
    - Chrome Browser version 63 or higher
    - Internet Explorer 11
    - Microsoft Edge for Windows 10
    - Safari for Mac version 9 or higher
 
 3. Software Required (included in server installation):
-
    - Java runtime
    - Node.js version 6.11
    - PostgreSQL 9.6.3-3 or higher
    - PowerPrecision Console software (server and client)
 
 4. Network Access Requirements (see **Server Setup** below):
-
    - If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are:
      - Backend Server: Data port 8080 for PPC client to register and upload battery data
      - Web Portal: UI port 8443 for accessing PPC web portal
@@ -84,11 +77,10 @@ The following are the prerequisites required for the server: <br>
 2.  **Server Certificate.** An SSL certificate is required for secure communications or a self-signed certificate can be used for product demos and trials. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3.  **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator.
-
-        * Backend Server (data) Port: inbound (e.g. port 8080)
+    * Backend Server (data) Port: inbound (e.g. port 8080)
         * Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 
-    <br>
+<br>
 
 ### Server Certificate
 
@@ -113,18 +105,15 @@ If the server certificate with public key already exists, skip to the second sec
    where "ppcdemo.key" can be replaced with a custom file name.
 4. Create a CSR based on the new private key. Run the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key ppcdemo.key -new -out ppcdemo.csr`<br>
-where "ppcdemo.key" (same file name as in step 4) and "ppcdemo.csr" (new file created) can be replaced with custom file names.
-<p>It prompts to enter the private key password (created in step 5). Enter in the required fields when prompted (the information entered must match that registered with the CA):</p>
-
-
-- **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
-- **State or Province** - Enter the full state or province name without abbreviation, for example: California.
-- **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
-- **Organization Name** - Enter the company. If the company or department contains a special character such as "&" or "@", the symbol must be spelled out or omitted in order to enroll successfully.
-- **Organizational Unit Name** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
-- **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
-- **Email Address** - Enter the contact email address.<br>
-<p>When prompted for the challenge password, it is not required - <i>do not supply one.</i> </p>
+where "ppcdemo.key" (same file name as in step 3) and "ppcdemo.csr" (new file created) can be replaced with custom file names. It prompts to enter the private key password (created in step 3). Enter in the required fields when prompted (the information entered must match that registered with the CA):</p>
+    - **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
+    - **State or Province** - Enter the full state or province name without abbreviation, for example: California.
+    - **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
+    - **Organization Name** - Enter the company. If the company or department contains a special character such as "&" or "@", the symbol must be spelled out or omitted in order to enroll successfully.
+    - **Organizational Unit Name** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
+    - **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
+    - **Email Address** - Enter the contact email address.<br><br>
+When prompted for the challenge password, it is not required - <i>do not supply one.</i> 
 
 5. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
@@ -141,7 +130,7 @@ where "ppcdemo.key" (same file name as in step 4) and "ppcdemo.csr" (new file cr
 3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard. When prompted for a password, enter the password set from the previous step.
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for PPC server installation and setup in the sections that follow.
 
-####Self-Signed Certificate
+#### Self-Signed Certificate
 A self-signed certificate can be used for for product demos and trials. Procedure to generate a self-signed certificate:
 
 1. Generate a private key:<br>
@@ -170,25 +159,25 @@ ZDVC Server Installation steps for a new installation: <br>
 1. Double-click on the .EXE to launch the installer.
 2. At the initial window, click **Next.**
    ![img](ZDVC_Install_1.JPG)
-   _Figure 1. Installation - initial screen_
+   _Installation - initial screen_
 3. Accept the license agreement. Click **Next.**
    ![img](ZDVC_Install_2.JPG)
-   _Figure 2. Installation - EULA_
+   _Installation - EULA_
 4. Accept the default folder or browse to the destination folder. Click Next.
    ![img](ZDVC_Install_3.JPG)
-   _Figure 3. Installation - destination location_
-5. Enter in the server configurations, then click **Next:**
-   _ **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
-   _ **Server Certificate Path** - location of server certificate (.pfx file)
-   _ **Server Certificate Password** - password for server certificate
-   _ **UI port** - designated UI port, can default to 8443 \* **Backend Server Port** - designated server port, can default to 8080
+   _Installation - destination location_
+5. Enter in the server configurations, then click **Next:** <br>
+   * **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
+   * **Server Certificate Path** - location of server certificate (.pfx file)
+   * **Server Certificate Password** - password for server certificate
+   * **UI port** - designated UI port, can default to 8443 \* **Backend Server Port** - designated server port, can default to 8080
    ![img](ZDVC_Install_4.JPG)
-   _Figure 4. Installation - server configuration_
+   _Installation - server configuration_
 6. Set the server authentication and login credentials, then click **Next:**
-   _ Super admin and database password
-   _ Server auth key \* Server auth password
+   * Super admin and database password
+   * Server auth key 
+   * Server auth password
    <br>
-
 **Important**: Use of the following special characters is not supported for the "Server auth key" and "Server auth password": <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>
@@ -196,21 +185,21 @@ ZDVC Server Installation steps for a new installation: <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#39; (single quote) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 ![img](ZDVC_Install_5.JPG)
-_Figure 5. Installation - server authentication and credentials_
+_Installation - server authentication and credentials_
 
 7. Review settings. Click **Next.** Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
    ![img](ZDVC_Install_6.JPG)
-   _Figure 6. Installation - review settings_
+   _Installation - review settings_
 8. Installation complete. Click **Finish.**
    ![img](ZDVC_Install_7.JPG)
-   _Figure 7. Installation - complete_
+   _Installation - complete_
 9. For first time installations, reboot the server. Otherwise, perform one of the following to start the server:<br>
    A. Reboot the server. The ZDVC server services automatically start as scheduled tasks.<br>
    B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks to run the services. Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, right-click on the task and select **Run** from the menu.
    <img style="height:350px" src="zdvc_service_run.png"/>
-   _Figure 8. Run ZDVC service_
+   _Run ZDVC service_
 
-###Server Upgrade
+### Server Upgrade
 ZDVC Server can be upgraded from a previous existing ZDVC installation. Prior to upgrading, the ZDVC services must be stopped. Procedure to upgrade:
 
 1. Follow steps to [stop the application server.](./#stopapplicationserver)
@@ -225,11 +214,10 @@ To downgrade the server, uninstall the previous version, terminate the ZDVC serv
 1. Uninstall ZDVC server.
 2. Terminate the active processes running on specified ports by using one of the following methods:<br>
    A. Reboot the system.<br>
-   B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID:
-   <br>
+   B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID:<br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`netstat -aon | find /i "8080"`<br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`taskkill /pid 1234 /f`
-   <br>
+   <br> 
    Where "8080" represents the specific backend server port number specified during install and "1234" represents the process ID returned from the first command. Repeat these steps for the Web UI port.
 3. Run the installer for the older server version. Follow the prompts to complete installation.
 
@@ -263,18 +251,18 @@ Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;5. **SSL certificate validation.** For SSL certificates, an SSL Tool (such as [ssltools.com](http://ssltools.com/)) can be used to aid in diagnostics and validate the SSL certificate chain.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 9 below._ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See screen below._ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 9. SSLTools.com results_
+_SSLTools.com results_
 
-###Stop Application Server
+### Stop Application Server
 Procedure to stop the application server:
 
 1. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
    <img style="height:350px" src="zdvc_service_end.png"/>
-   _Figure 10. End ZDVC service_
+   _End ZDVC service_
 2. Terminate the active processes that are running on specified ports by using one of the following methods:<br>
    &nbsp;&nbsp;&nbsp;A. Reboot the system.<br>
    &nbsp;&nbsp;&nbsp;B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID returned:<br>
@@ -294,14 +282,15 @@ Steps for manual client installation:
 2. Install PowerPrecisionConsole.apk.
    - For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
    - For Android Oreo and Pie devices, install the .APK located in folder `PPCClient\Client\O_P`.
-3. When prompted, enable the “Apps that can draw over other apps” overlay permission.
-4. Installation is complete.
-5. Install PPCClientMgr.apk from folder `PluginCSP`.
-6. Open PPC client app.
-7. Accept the permissions when prompted.
-8. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background.
-   <img style="height:370px" src="Notifications_PPC.png"/>
-   _Figure 11. PPC client notification_ <br>
+3. When prompted, enable the "Usage access" permission.
+4. When prompted, enable the “Apps that can draw over other apps” overlay permission.
+5. Installation is complete.
+6. Install PPCClientMgr.apk from folder `PluginCSP`.
+7. Open PPC client app.
+8. Accept the permissions when prompted.
+9. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background.
+   <img style="height:370px" src="../about/ppc-notification.png"/>
+   _PPC client notification_ <br>
 
 ### Client Configuration
 
@@ -316,19 +305,20 @@ Steps for manual configuration:
 3. **If using a self-signed certificate,** open the StageNow application. Scan the barcode from file "EnabledSelfSigned_PPC.pdf" to enable self-signed certificates in the client app. The .PDF file is included as part of the PPC client installation package.
 4. Tap the hamburger menu at the top right, then tap "Settings".
 5. Enter the following information:<br>
-   _ **Server URL** - URL with port number and PPC path specified, for example: `hostname.company.com:8080/zdvc/ppc`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. *The URL must **not** contain "https://" nor "http://".* <br>
-   _ **Server Auth UserName** - user name specified during server installation. <br> \* **Server Auth Password** - password specified during server installation.<br>
-   On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.<br>
+   * **Server URL** - URL with port number and PPC path specified, for example: `hostname.company.com:8080/zdvc/ppc`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://" nor "http://"._
+   * **Server Auth UserName** - user name specified during server installation. 
+   * **Server Auth Password** - password specified during server installation.
+   On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.
 6. Tap **OK** to save the changes and return to the main screen. PPC Client registers with the server and uploads battery data. _If using an SSL certificate,_ manual client configuration is complete.
 7. **If using a self-signed certificate,** proceed as follows:<br>
-   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.ppcclient/files` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
+   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/storage/self/primary/Android/data/com.zebra.ppcclient/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
    &nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
    <img style="height:370px" src="untrusted_cert_ppc.jpg"/>
    _Figure 12. Untrusted certificate message in client app_<br>
    &nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_PPC.pdf" (part of the PPC client installation package).
 
-####Remote Configuration
-For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in `PPCClient\PluginCSP`. After PPC client and PPCClientMgr app installation, follow these steps to create StageNow profiles to remotely configure the client:
+#### Remote Configuration
+For remote configuration using StageNow or an EMM (with XML or Managed Config), follow these steps after client installation to create the following StageNow profiles:
 
 1. Start PPC client
 2. Configure PPC settings with CSP
@@ -345,23 +335,20 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 **Important Notes:**
 
 - Use of a StageNow profile which combines installation and configuration into a single profile is not supported. Two separate profiles need to be created:<br>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Install PPC client and PPCClientMgr app. Start the PPC client activity.<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Install PPC client. Start the PPC client activity.<br>
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. Configure PPC settings.
-- When PPCClientMgr app is opened on Android O or higher devices, a notification message is displayed in the device notifications drawer. This indicates that PPCClientMgr is running in the background.
-  <img style="height:370px" src="Notifications_PPCClientMgr.png"/>
-  _Figure 13. PPC client notification_ <br>
 
-**Steps to create StageNow profile to launch PPC client app (which starts PPCClientMgr.apk for remote configuration deployment),** with the option of deployment through Enterprise Mobile Management (EMM):
+**Steps to create StageNow profile to launch PPC client app,** with the option of deployment through Enterprise Mobile Management (EMM):
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
 2. In the StageNow home screen, click “Create New Profile” from the left menu. <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
    ![img](SN_CreateNewProfile.JPG)
-   _Figure 14. Profile wizard_ <br>
+   _Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
    ![img](SN_AddIntentSetting.jpg)
-   _Figure 15. Add Setting_ <br>
+   _Add Setting_ <br>
 6. Enter the following information:
    _ **Action:** StartActivty
    _ **Android Action Name:** android.intent.action.MAIN
@@ -369,11 +356,11 @@ When using StageNow or any EMM system for remote configuration, use of the follo
    _ **Class Name:** com.zebra.ppcclient.activity.MainActivity <br>
    Click Continue.
    ![img](SN_IntentStartActivityConfig.jpg)
-   _Figure 16. Configure Setting_ <br>
+   _Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test.
    ![img](SN_Publish.JPG)
-   _Figure 17. Generate StageNow barcode_ <br>
+   _Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -381,52 +368,52 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 
 **Steps for remote configuration with StageNow and CSP Plug-in**, with the option of deployment through Enterprise Mobile Management (EMM):
 
-1. Download PPC Client software from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files.
-2. Compress two files distributed as part of the PPC Client software into a single .zip file:
+1. Download PPC Client software from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files from the download:
+    * PPC_PluginCSP.zip
+    * PPCClient.apk
+    * DisableSelfSigned_PPC.pdf
+    * EnableSelfSigned_PPC.pdf
 
-   - com.zebra.ppcclientmgr.dsd
-   - PPCClientMgr.apk (PPC Client CSP Manager Plug-in)
-
-3. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
-4. Import the CSP Plugin Library. <br>
+2. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
+3. Import the CSP Plugin Library. <br>
    A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
-   B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br>
+   B. Upload the PPC_PluginCSP.zip file to the CSP Library by clicking “Choose File” then browsing to the PPC_PluginCSP.zip file, or by dragging and dropping the .zip file.<br>
    C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
-   ![img](SN_CSPLib.JPG)
-   _Figure 18. Import plugin into CSP Library_
-5. Create a new setting.<br>
+   ![img](SN_CSPLib.PNG)
+   _Import plugin into CSP Library_
+4. Create a new setting.<br>
    A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
    ![img](SN_Settings.JPG)
-   _Figure 19. Import into CSP Library_ <br>
+   _Import into CSP Library_ <br>
    B. Select the MX version for the device and enter the following settings: <br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Setting Type:** select “com.zebra.ppcclientmgr"<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Setting Type:** select “com.zebra.ppcclient"<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Name:** enter a name for the setting<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server URL:** enter the server URL e.g. `hostname.company.com:8080/zdvc/ppcdata`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. <br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Allow edit settings:** select the desired option to determine whether or not to allow the end user to edit the setting<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth UserName:** enter the "Server Auth Key" designated during server install<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
-   ![img](SN_CreateSettings3_0.jpg)
-   _Figure 20. Create New Setting_ <br>
+   ![img](SN_CreateSettings3_0.PNG)
+   _Create New Setting_ <br>
    C. Tap Save. The new setting is listed in the Settings screen.
-6. Create profile.<br>
+5. Create profile.<br>
    A. In the StageNow home screen, click “Create New Profile” from the left menu. <br>
    B. Make sure the proper MX version is selected.<br>
    C. Select “XpertMode." Click Create.<br>
    D. Enter the profile name. Click Start.<br>
-   E. In the Settings list, click the add (+) sign next to “com.zebra.ppcclientmgr”. This adds to the Config tab on the right side. Click on Add button.<br>
-   ![img](SN_Profile_AddSetting.JPG)
-   _Figure 21. Add CSP to profile_ <br>
+   E. In the Settings list, click the add (+) sign next to “com.zebra.ppcclient”. This adds to the Config tab on the right side. Click on Add button.<br>
+   <img style="" src="SN_Profile_AddSetting.PNG"/>
+   <i>Add CSP to profile</i> <br>
    F. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5 depending on the version of PPC:<br>
-   ![img](SN_Profile_SNConfig2_0.jpg)
-   _Figure 22. Re-use saved setting for PPC 2.0_ <br>
-   ![img](SN_Profile_SNConfig.JPG)
-   _Figure 23. Re-use saved setting for PPC 1.0_ <br>
+   <img style="" src="SN_Profile_SNConfig2_0.png"/>
+   <i>Re-use saved setting for PPC 2.0</i> <br>
+   <!--![img](SN_Profile_SNConfig.JPG)
+   _Re-use saved setting for PPC 1.0_ <br> -->
    G. Click Continue. <br>
    H. In the Review section, review the settings and make modifications if needed. Click “Complete Profile." <br>
    I. In the Publish section, select the desired barcode type.
    ![img](SN_Publish.JPG)
-   _Figure 24. Generate StageNow barcode_ <br>
+   _Generate StageNow barcode_ <br>
    J. Click Test. A window opens with the generated StageNow barcode in .pdf format.<br>
 7. For EMM Staging, continue to section "Steps for EMM Staging" below.
 8. Open the StageNow client on the device.
@@ -441,7 +428,7 @@ For more information refer to [StageNow download](https://www.zebra.com/us/en/su
 1. Follow the steps above for "Remote Configuration Deployment with StageNow and CSP Plugin" up to step 6.
 2. Select the "Export option for EMM" to export the .xml file. Save the .xml file.
    ![img](SN_ExportMDM.JPG)
-   _Figure 25. Export for EMM_
+   _Export for EMM_
 3. Push the .xml settings via EMM to the device for PPC Client configuration.
 
 <!--

@@ -45,7 +45,7 @@ The web portal provides a dashboard for administrators to monitor the status of 
 
 ## MDNA Enterprise License
 
-Beginning with Device Tracker On-Prem 3.0, a [Mobility DNA Enterprise license](/licensing) is now required to use Device Tracker On-Prem on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional Device Tracker On-Prem client pre-installed.
+Beginning with Device Tracker On-Prem 3.0, a [Mobility DNA Enterprise license](/licensing) is  required to use Device Tracker On-Prem on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional Device Tracker On-Prem client pre-installed.
 
 ### Unlicensed
 
@@ -62,7 +62,7 @@ If a device is being relicensed, Device Tracker On-Prem is fully functional prov
 
 ### License Expired
 
-After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required. See [device screen](./#unlicensed) above and Device Tracker On-Prem client is no longer functional. All communication is terminated to the Device Tracker Server. Device Tracker On-Prem client can no longer be configured by StageNow or any EMM. The Device Tracker On-Prem notification message indicating the service is running remains displayed in the device notification drawer:
+After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and Device Tracker On-Prem client is no longer functional. All communication is terminated to the Device Tracker Server. Device Tracker On-Prem client can no longer be configured by StageNow or any EMM. The Device Tracker On-Prem notification message indicating the service is running remains displayed in the device notification drawer:
 
 <img style="height:400px" src="dtrk-notification.png"/>
 _Device Tracker On-Prem service_

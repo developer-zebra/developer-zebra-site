@@ -28,21 +28,46 @@ PowerPrecision Console main features:
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions.
 
+## MDNA Enterprise License
+
+Beginning with PPC 3.0, a [Mobility DNA Enterprise license](/licensing) is required to use PowerPrecision Console on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional PPC client pre-installed.
+
+### Unlicensed
+
+When unlicensed, the app displays a “Mobility DNA Enterprise license required” prompt (shown below) when a user attempts to open PPC on a device. When the unlicensed PPC client is configured via StageNow or an EMM, a staging error occurs indicating a [Mobility DNA Enterprise license](/licensing) is required. **Learn more about [purchasing an MDNA Enterprise license](/licensing/process).**
+
+<img style="height:400px" src="license-required.png"/>
+_MDNA Enterprise license required_
+
+### Licensed
+
+After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [PPC 3.0 or higher]("https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html"). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
+
+If a device is being relicensed, PPC is fully functional provided all the [permissions are accepted and configuration] are implemented. See [Client Install & Setup](../setup/#clientinstallsetup).
+
+### License Expired
+
+After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and PPC client is no longer functional. All communication is terminated to the PPC Server. The PPC client can no longer be configured by StageNow or any EMM. The PPC notification message indicating the service is running remains displayed in the device notification drawer:
+
+<img style="height:400px" src="ppc-service.png"/>
+_PPC service_
+
 ## New in PPC 3.0
 
 * New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Zebra support portal</a><br>
 * <a href="/licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.
-
+* PPC 2.3.1 or earlier cannot be upgraded to 3.0. All prior versions must be uninstalled before installing [PPC 3.0](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
+* Removed requirement for PPCClientMgr.apk. The functionality is now included in the [PPC client APK](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html) file.
 
 ## Recent Version History
 
-### New in PPC 2.3.1
+### New in 2.3.1
 
 - Extended [EOL Alert](../config) options on the portal to include the ability to set an expiration time following a battery EOL, after which no further snooze options are allowed and users are prevented from using batteries that have reached EOL.
 - Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
 
-### New in PPC 2.2.1
+### New in 2.2.1
 
 - Added method to start server background services to run at startup and without a logged-in user.
 - New device support for:
@@ -53,7 +78,7 @@ The PPC client software registers the device with the on-premise PPC server and 
   - When opening PPC client app after initial install, permission needs to be granted to allow the device to register to the server.
   - A PPC Client and PPCClientMgr notification message is displayed in the device notifications drawer when the respective app is running.
 
-### New in PPC 2.0
+### New in 2.0
 
 - New Zebra DNA Visibility Console (ZDVC) server 2.0 support with updated server URL root path.
 - Support added for Server Auth Name and Password in:

@@ -11,12 +11,13 @@ Device Tracker On-Prem consists of the following two components:
 
 - **Client** – Device Tracker On-Prem client app runs on [supported Zebra Android mobile devices](../about/#supporteddevices). It collects device information, sends presence updates to the server, and provides a remote chirping device finding feature. The client app can play the role of either the tracking device or the device being tracked.
 - **Server** – Device Tracker On-Prem server is part of the Zebra DNA Visibility Console server solution, a common server software for both Device Tracker On-Prem and [PowerPrecision Console](/ppc/latest/guide/about). It provides a centralized dashboard that is accessible from a supported browser running on a kiosk, tablet, or PC. The server collects and processes device data for tracking misplaced devices, including tracking status, connection status, and battery status.
-
+<p>
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
+</p>
 
 - **Install a server certificate** - Supported certificates:
-  - **SSL certificate** - use for secure HTTPS communications. The SSL certificate must be procured and signed from a trusted third-party Certificate Authority (CA), such as Verisign or Thawte, and must contain the complete certificate chain, including intermediate certificates.
-  - **Self-signed certificate** - use for demos and trials. A self-signed certificate is considered as untrusted - _use at your own risk._
+    - **SSL certificate** - use for secure HTTPS communications. The SSL certificate must be procured and signed from a trusted third-party Certificate Authority (CA), such as Verisign or Thawte, and must contain the complete certificate chain, including intermediate certificates.
+    - **Self-signed certificate** - use for demos and trials. A self-signed certificate is considered as untrusted - _use at your own risk._
 - **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
 - **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain
 
@@ -24,40 +25,37 @@ Before installing, ensure to prepare additional steps for system setup - consult
 <font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte, for production environments. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
 -->
 
-###Version History
+### Version History
 
 - **Device Tracker On-Prem 2.3.1 -** Self-signed certificates are now supported to help simplify deployment of product demos and trials.
 
-##System Requirements
+## System Requirements
+
 This section provides the server and device requirements. Device Tracker On-Prem supports a maximum of 500 devices per installation.
 
-###Server Requirements
+### Server Requirements
 
 1. Windows Operating System supported:
-
-   - Windows Server 2012, 64-bit processor
-   - Windows Server 2016, 64-bit processor
+    - Windows Server 2012, 64-bit processor
+    - Windows Server 2016, 64-bit processor
 
 2. Browsers supported (connect over https):
-
-   - Google Chrome Browser version 66 and higher
-   - Microsoft Internet Explorer version 11 and higher
-   - Microsoft Edge for Windows 10
-   - Safari for Mac version 11 and higher
+    - Google Chrome Browser version 66 and higher
+    - Microsoft Internet Explorer version 11 and higher
+    - Microsoft Edge for Windows 10
+    - Safari for Mac version 11 and higher
 
 3. Software Required (included in server installation):
-
-   - Java runtime
-   - Node.js version 6.11
-   - PostgreSQL 9.6.3-3 and higher
-   - Device Tracker software (server and client)
+    - Java runtime
+    - Node.js version 6.11
+    - PostgreSQL 9.6.3-3 and higher
+    - Device Tracker software (server and client)
 
 4. Network Access Requirements (see **Server Setup** below):
-
-   - If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are:
-     - Backend Server: Data port 8080 for Device Tracker On-Prem client to register to the server and transmit device data
-     - Web Portal: UI port 8443 for accessing Device Tracker On-Prem web portal
-   - If required, perform **DNS setup** to add server IP address to the DNS server.
+    - If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are:
+        - Backend Server: Data port 8080 for Device Tracker On-Prem client to register to the server and transmit device data
+        - Web Portal: UI port 8443 for accessing Device Tracker On-Prem web portal
+    - If required, perform **DNS setup** to add server IP address to the DNS server.
 
 5. Certificate requirement: An SSL Certificate for secure communications or a self-signed certificate for product demos and trials.
 
@@ -75,7 +73,8 @@ This section provides the server and device requirements. Device Tracker On-Prem
          * Minimum available hard drive space: 500 GB
 -->
 
-###Device Requirements
+### Device Requirements
+
 Requirements for Device Tracker On-Prem client:
 
 - The ZDVC server is installed and running.
@@ -89,7 +88,8 @@ See [Supported Devices](../about#supporteddevices).
 ##Server Install & Setup
 Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
-###Server Prerequisites
+### Server Prerequisites
+
 The following are the prerequisites required for the server: <br>
 
 1.  **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping.
@@ -97,16 +97,17 @@ The following are the prerequisites required for the server: <br>
 2.  **Server Certificate.** An SSL certificate is required for secure communications or a self-signed certificate can be used for product demos and trials. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3.  **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator.
-
-        * Backend Server (data) Port: inbound (e.g. port 8080)
-        * Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
+    * Backend Server (data) Port: inbound (e.g. port 8080)
+    * Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 
     <br>
 
-###Server Certificate
+### Server Certificate
+
 An SSL tool is required to generate the server certificate. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source). Instructions follow to generate an SSL certificate or self-signed certificate.
 
-####SSL Certificate
+#### SSL Certificate
+
 An SSL certificate is needed for secure connections. Domain level and wildcard certificates are acceptable. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
 
 - **Procure server certificate** (.p7b format) with public key
@@ -149,7 +150,8 @@ If the server certificate with public key already exists, skip to the second sec
 3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard. When prompted for a password, enter the password set from the previous step.
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker On-Prem server installation and setup in the sections that follow.
 
-####Self-Signed Certificate
+#### Self-Signed Certificate
+
 A self-signed certificate can be used for for product demos and trials. Procedure to generate a self-signed certificate:
 
 1. Generate a private key:<br>
@@ -171,19 +173,20 @@ A self-signed certificate can be used for for product demos and trials. Procedur
 9. When prompted, enter the pass phrase for the private key.
 10. Use self-signed certificate "dtrkdemo.pfx" and the private key password for Device Tracker On-Prem server installation and setup in the sections that follow.
 
-###Server Installation
+### Server Installation
+
 ZDVC Server Installation steps for a new installation: <br>
 
 1. Double-click on the .EXE to launch the installer.
 2. At the initial window, click **Next.**
    ![img](DTRK_Install_1.JPG)
-   _Figure 1. Installation - initial screen_
+   _Installation - initial screen_
 3. Accept the license agreement. Click **Next.**
    ![img](DTRK_Install_2.JPG)
-   _Figure 2. Installation - EULA_
+   _Installation - EULA_
 4. Accept the default folder or browse to the destination folder. Click **Next.**
    ![img](DTRK_Install_3.JPG)
-   _Figure 3. Installation - destination location_
+   _Installation - destination location_
 5. Enter in the server configurations, then click **Next:**
    - **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
    - **Server Certificate Path** - location of server certificate (.pfx file)
@@ -191,7 +194,7 @@ ZDVC Server Installation steps for a new installation: <br>
    - **UI port** - designated UI port, can default to 8443
    - **Backend Server Port** - designated server port, can default to 8080
      ![img](DTRK_Install_4.JPG)
-     _Figure 4. Installation - server configuration_
+     _Installation - server configuration_
 6. Set the server authentication and login credentials, then click **Next:**
    - Super admin and database password
    - Server auth key
@@ -204,20 +207,21 @@ ZDVC Server Installation steps for a new installation: <br>
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#39; (single quote) <br>
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
      ![img](DTRK_Install_5.JPG)
-     _Figure 5. Installation - server authentication and credentials_
+     _Installation - server authentication and credentials_
 7. Review settings. Click **Next.** Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
    ![img](DTRK_Install_6.JPG)
-   _Figure 6. Installation - review settings_
+   _Installation - review settings_
 8. Installation complete. Click **Finish.**
    ![img](DTRK_Install_7.JPG)
-   _Figure 7. Installation - complete_
+   _Installation - complete_
 9. For first time installations, reboot the server. Otherwise, perform one of the following to start the server:<br>
    A. Reboot the server. The ZDVC server services automatically start as scheduled tasks.<br>
    B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks to run the services. Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, right-click on the task and select **Run** from the menu.
    <img style="height:350px" src="zdvc_service_run.png"/>
-   _Figure 8. Run ZDVC service_
+   _Run ZDVC service_
 
-###Server Upgrade
+### Server Upgrade
+
 ZDVC Server can be upgraded from a previous existing ZDVC installation. Prior to upgrading, the ZDVC services must be stopped. Procedure to upgrade:
 
 1. Follow steps to [stop the application server.](./#stopapplicationserver)
@@ -226,7 +230,8 @@ ZDVC Server can be upgraded from a previous existing ZDVC installation. Prior to
 4. At the initial window, click **Next** to proceed with the upgrade.
 5. Once installation completes, click **Finish.**
 
-###Server Downgrade
+### Server Downgrade
+
 To downgrade the server, uninstall the previous version, terminate the ZDVC server processes and install the older server version. Procedure to downgrade:
 
 1. Uninstall ZDVC server.
@@ -239,7 +244,8 @@ To downgrade the server, uninstall the previous version, terminate the ZDVC serv
    Where "8080" represents the specific backend server port number specified during install and "1234" represents the process ID returned from the first command. Repeat these steps for the Web UI port.
 3. Run the installer for the older server version. Follow the prompts to complete installation.
 
-###Server Setup
+### Server Setup
+
 Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.<br>
 &nbsp; &nbsp; &nbsp;2. **View the web portal.** Open a supported browser. Enter the default WebUI server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.<br>
@@ -268,18 +274,19 @@ Steps for ZDVC server setup after installation: <br>
 &nbsp; &nbsp; &nbsp;5. **SSL certificate validation.** For SSL certificates, an SSL Tool (such as [ssltools.com](http://ssltools.com/)) can be used to aid in diagnostics and validate the SSL certificate chain.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See Figure 9 below._ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Click the Scan button. A successful result returns green checks for each step. _See screen below._ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 9. SSLTools.com results_
+_SSLTools.com results_
 
-###Stop Application Server
+### Stop Application Server
+
 Procedure to stop the application server:
 
 1. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
    <img style="height:350px" src="zdvc_service_end.png"/>
-   _Figure 10. End ZDVC service_
+   _End ZDVC service_
 2. Terminate the active processes that are running on specified ports by using one of the following methods:<br>
    &nbsp;&nbsp;&nbsp;A. Reboot the system.<br>
    &nbsp;&nbsp;&nbsp;B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID returned:<br>
@@ -334,11 +341,15 @@ _Figure 23. Task Properties_
 This allows Device Tracker On-Prem to run each time the server restarts regardless of the user logged in.
 -->
 
-##Client Install & Setup
+## Client Install & Setup
+
 Install Device Tracker On-Prem client on the supported Zebra device to register the device and transmit data to the server. The device must be connected to the same network as the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system.
 
-###Client Installation
-Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
+### Client Installation
+
+Device Tracker On-Prem 2.3.1 or earlier cannot be upgraded to 3.0. Prior versions must be [uninstalled](./#clientuninstallation) before installing Device Tracker 3.0.
+
+<p>Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):</p>
 
 1. Download Device Tracker On-Prem client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DTRKClient.apk<br>
@@ -348,17 +359,25 @@ Steps for client installation on the device, which may be performed either manua
 2. Copy and install DTRKClient.apk on the device.
 3. If updating an existing client, reboot the device.
 4. Open Device Tracker On-Prem client app.
-5. Accept the permissions when prompted.
+5. Accept the permissions when prompted. For Android 10 or later, select “Allow all the time” for the Location permission:
+   <img style="height:370px" src="location-permission.png"/>
+   _Device Tracker On-Prem client notification_ <br>
 6. Once the app is opened on Android O or higher devices, a Device Tracker On-Prem notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that Device Tracker On-Prem is running in the background.
    <img style="height:400px" src="Notifications_dtrk.jpg"/>
-   _Figure 11. Device Tracker On-Prem client notification_ <br>
+   _Device Tracker On-Prem client notification_ <br>
 
-###Client Configuration
+### Client Uninstallation
+
+The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
+
+### Client Configuration
+
 Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 > WiFi sleep policy "Keep Wi-Fi on during sleep" must be set to "Always" on Android Marshmallow devices for Device Tracker On-Prem to work in Doze mode. By default it is set to "Never".
 
-####Manual Configuration
+#### Manual Configuration
+
 Steps for manual client configuration after installation:
 
 1. Open Device Tracker On-Prem client.
@@ -375,10 +394,11 @@ Steps for manual client configuration after installation:
    &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
    &nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed in the app:
    <img style="height:400px" src="untrusted_cert.jpg"/>
-   _Figure 12. Untrusted certificate message in client app_<br>
+   _Untrusted certificate message in client app_<br>
    &nbsp;&nbsp;&nbsp;C. To disable self-signed certificates in the app, scan the barcode from "DisableSelfSigned_DTRK.pdf" (part of the Device Tracker On-Prem client installation package).
 
-####Remote Configuration
+#### Remote Configuration
+
 After client installation, follow these steps to create StageNow profiles to remotely configure the client:
 
 1. Disable Battery Optimization
@@ -406,18 +426,18 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu. <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
    ![img](SN_CreateNewProfile.JPG)
-   _Figure 13. Profile wizard_ <br>
+   _Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
    ![img](SN_AddAppMgr.JPG)
-   _Figure 14. Add Setting_ <br>
+   _Add Setting_ <br>
 6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
    ![img](SN_BattOpt.JPG)
-   _Figure 15. Re-use saved setting_ <br>
+   _Re-use saved setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test.
    ![img](SN_Publish.JPG)
-   _Figure 16. Generate StageNow barcode_ <br>
+   _Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -429,11 +449,11 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu. <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
    ![img](SN_CreateNewProfile.JPG)
-   _Figure 17. Profile wizard_ <br>
+   _Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
    ![img](SN_AddIntentSetting.jpg)
-   _Figure 18. Add Setting_ <br>
+   _Add Setting_ <br>
 6. Enter the following information:
    - **Action:** StartActivity
    - **Android Action Name:** android.intent.action.MAIN
@@ -441,11 +461,11 @@ When using StageNow or any EMM system for remote configuration, use of the follo
    - **Class Name:** com.zebra.devicetracker.activity.MainActivity<br>
      Due to changes with Android O and above, use **StartActivity** action to start the Device Tracker On-Prem service. Click Continue.
      ![img](SN_IntentConfig.jpg)
-     _Figure 19. Configure Setting_ <br>
+     _Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test.
    ![img](SN_Publish.JPG)
-   _Figure 20. Generate StageNow barcode_ <br>
+   _Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -454,19 +474,22 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 **Steps for remote client configuration with StageNow and CSP Plug-in:**
 
 1. Download Device Tracker On-Prem client software DTRKClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). The .zip file includes the following:
-   - com.zebra.devicetracker.dsd
+   - DTRK_PluginCSP.zip
    - DTRKClient.apk
+   - DisableSelfSigned_DTRK.pdf
+   - EnableSelfSigned_DTRK.pdf
+   - DTRK_UNINSTALL_FOR_2.3.1.pdf
 2. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
 3. Import the CSP Plugin Library: <br>
    A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
-   B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br>
+   B. Upload the DTRK_PluginCSP.zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br>
    C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
    ![img](SN_CSPLib.JPG)
-   _Figure 21. Import plugin into CSP Library_
+   _Import plugin into CSP Library_
 4. Create a new setting:<br>
    A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
    ![img](SN_Settings.JPG)
-   _Figure 22. Import into CSP Library_ <br>
+   _Import into CSP Library_ <br>
    B. Select the MX version for the device and enter the following:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Setting Type:** select “com.zebra.devicetracker"<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Name:** enter a name for the setting<br>
@@ -476,26 +499,26 @@ When using StageNow or any EMM system for remote configuration, use of the follo
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Server Auth Password:** enter the "Server Auth Password" designated during server install<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**• Enable self-signed certificate:** enable/disable based on whether self-signed certificate is in use <br>
    ![img](SN_CreateSettings.JPG)
-   _Figure 23. Create New Setting_ <br>
+   _Create New Setting_ <br>
    C. Tap Save. The new setting is listed in the Settings screen.
    ![img](SN_NewSetting.JPG)
-   _Figure 24. New Setting created_ <br>
+   _New Setting created_ <br>
 5. Create profile:<br>
    A. In the StageNow home screen, click “Create New Profile” from the left menu. <br>
    B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
    ![img](SN_CreateNewProfile.JPG)
-   _Figure 25. Profile wizard_ <br>
+   _Profile wizard_ <br>
    C. Enter the profile name. Click Start.<br>
    D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
    ![img](SN_Profile_AddSetting.JPG)
-   _Figure 26. Add Setting_ <br>
+   _Add Setting_ <br>
    E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
    ![img](SN_ReUseSavedSetting.JPG)
-   _Figure 27. Re-use saved setting_ <br>
+   _Re-use saved setting_ <br>
    F. Click “Complete Profile." <br>
    G. In the Publish section, select the desired barcode type. Click Test.
    ![img](SN_Publish.JPG)
-   _Figure 28. Generate StageNow barcode_ <br>
+   _Generate StageNow barcode_ <br>
    H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
@@ -511,7 +534,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    - Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
 2. Select "Export option for EMM" from the top to export the .xml file. Save the .xml file.
    ![img](SN_ExportMDM.JPG)
-   _Figure 29. Export for EMM_
+   _Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
 ## <br>

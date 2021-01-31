@@ -19,10 +19,59 @@ Device Tracker On-Prem is a centralized software solution that tracks and finds 
 
 When locating a device, Device Tracker On-Prem identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility. The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device. Chirping audio can be played on the misplaced device to further determine its specific location.
 
-## New in Device Tracker On-Prem 3.0
+## Main Features
 
-* New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>
-* <a href="/licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.
+Device Tracker On-Prem main features:
+
+- General location information for all supported WiFi devices based on connected AP
+- Real-time device proximity tracking with BLE
+- Misplaced device prevention by monitoring low power and disconnection state
+- Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers.
+- Filter and sort data
+- Search by status, AP name, device name, device model, device serial number, battery state, and tags
+- Device tagging for easier organization, identification, and tracking
+- Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
+- Find and retrieve misplaced devices with client app using audio sound
+- Secure communications between the Device Tracker On-Prem Client application and server
+- Friendly name assignment for APs and devices for ease of identification and tracking
+- Report generation to export data
+- Capability for device staging with the use of an EMM such as Zebra's [StageNow](/stagenow/latest/about) with [Battery Manager CSP](/mx/batterymgr).
+
+## How it works
+
+The Device Tracker On-Prem client app registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located while connected to the AP. From the web portal, the Admin marks the misplaced device "To be found". On the associate’s device, the Device Tracker On-Prem client displays a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. If BLE is enabled, a proximity meter appears indicating how close or far the user is to the misplaced device. <!--"Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device.--> Audio can be played on the target device to further locate it by sound.
+
+The web portal provides a dashboard for administrators to monitor the status of all tracked devices, identifying any misplaced devices. The last known status is provided from devices so action can be taken to prevent lost or misplaced devices.
+
+## MDNA Enterprise License
+
+Beginning with Device Tracker On-Prem 3.0, a [Mobility DNA Enterprise license](/licensing) is now required to use Device Tracker On-Prem on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional Device Tracker On-Prem client pre-installed.
+
+### Unlicensed
+
+When unlicensed, the app displays a “Mobility DNA Enterprise license required” prompt (shown below) when a user attempts to open Device Tracker On-Prem on a device. When the unlicensed Device Tracker client is configured via StageNow or an EMM, a staging error occurs indicating a [Mobility DNA Enterprise license](/licensing) is required. **Learn more about [purchasing an MDNA Enterprise license](/licensing/process).**
+
+<img style="height:400px" src="license-required.png"/>
+_MDNA Enterprise license required_
+
+### Licensed
+
+After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [Device Tracker On-Prem version 3.0 or higher]("https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html"). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
+
+If a device is being relicensed, Device Tracker On-Prem is fully functional provided all the [permissions are accepted and configuration] are implemented. See [Client Install & Setup](../setup/#clientinstallsetup).
+
+### License Expired
+
+After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required. See [device screen](./#unlicensed) above and Device Tracker On-Prem client is no longer functional. All communication is terminated to the Device Tracker Server. Device Tracker On-Prem client can no longer be configured by StageNow or any EMM. The Device Tracker On-Prem notification message indicating the service is running remains displayed in the device notification drawer:
+
+<img style="height:400px" src="dtrk-notification.png"/>
+_Device Tracker On-Prem service_
+
+## New in 3.0
+
+- New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>
+- <a href="/licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.
+- Device Tracker On-Prem 2.3.1 or earlier cannot be upgraded to 3.0. All prior versions must be uninstalled before installing [Device Tracker 3.0](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html).
 
 ## Version History
 
@@ -92,87 +141,11 @@ When locating a device, Device Tracker On-Prem identifies the general area where
 
 <br>
 
-##Main Features
+## Supported Devices
 
-Device Tracker On-Prem main features:
+See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a>.
 
-- General location information for all supported WiFi devices based on connected AP
-- Real-time device proximity tracking with BLE
-- Misplaced device prevention by monitoring low power and disconnection state
-- Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers.
-- Filter and sort data
-- Search by status, AP name, device name, device model, device serial number, battery state, and tags
-- Device tagging for easier organization, identification, and tracking
-- Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
-- Find and retrieve misplaced devices with client app using audio sound
-- Secure communications between the Device Tracker On-Prem Client application and server
-- Friendly name assignment for APs and devices for ease of identification and tracking
-- Report generation to export data
-- Capability for device staging with the use of an EMM such as Zebra's [StageNow](/stagenow/latest/about) with [Battery Manager CSP](/mx/batterymgr).
-
-## Device Tracker Comparison
-
-Comparison of **Device Tracker On-Prem** and **[Device Tracker](/devicetracker/latest/guide/about)** cloud-based:
-
-<table class="facelift" style="width:100%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th style="text-align:center">Features</th>
-    <th style="text-align:center">Device Tracker<br>On-Prem</th>
-    <th style="text-align:center">Device Tracker</th>
-  </tr>
-  <tr>
-    <td style="text-align:left">Host platform</td>
-    <td style="text-align:left">On-premise server, requires manual install and setup</td>
-    <td style="text-align:left">Cloud-based solution managed by Zebra</td>
-  </tr>
-  <tr>
-    <td>Maximum Devices Supported</td>
-    <td>500</td>
-    <td>100,000</td>
-  </tr>
-  <tr>
-    <td>Site support</td>
-    <td>Single; multiple sites require individual server installation at each location</td>
-    <td>Multi-site; centralized in-the-cloud supporting multiple locations up to 5,000 sites without any additional install required</td>
-  </tr>
-  <tr>
-    <td>Server setup required</td>
-    <td>Yes, Windows server with required software and other system requirements</td>
-    <td>No, server is in the cloud and managed by Zebra</td>
-  </tr>
-  <tr>
-    <td>Android platform support</td>
-    <td>Select devices only up to Android Pie</td>
-    <td>Select Android Oreo and Android 10 devices upon release</td>
-  </tr>
-  <tr>
-    <td>Common Features</td>
-    <td colspan="2">• Simple real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Registration of sites, APs and devices with friendly names for ease of identification<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Role-based access to find and manage devices based on administrator, site manager and associate roles<br>• Centralized dashboard</td>
-  </tr>
-  <tr>
-    <td>Device Check-out/<br>Check-in</td>
-    <td>No</td>
-    <td>Yes, identifies device user</td>
-  </tr>
-  <tr>
-    <td>Dashboard</td>
-    <td>Server-based dashboard view</td>
-    <td>Device-based dashboard view</td>
-  </tr>
-  <tr>
-    <td>Cost</td>
-    <td>Free</td>
-    <td>Licensed subscription service</td>
-  </tr>
-</table>
-
-##How it works
-
-The Device Tracker On-Prem client app registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located while connected to the AP. From the web portal, the Admin marks the misplaced device "To be found". On the associate’s device, the Device Tracker On-Prem client displays a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. If BLE is enabled, a proximity meter appears indicating how close or far the user is to the misplaced device. <!--"Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device.--> Audio can be played on the target device to further locate it by sound.
-
-The web portal provides a dashboard for administrators to monitor the status of all tracked devices, identifying any misplaced devices. The last known status is provided from devices so action can be taken to prevent lost or misplaced devices.
-
-##Supported Devices
+<!--
 Supported Devices (including GMS and non-GMS versions):
 
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">
@@ -301,6 +274,63 @@ Supported Devices (including GMS and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
+  </tr>
+</table>
+-->
+
+## Device Tracker Comparison
+
+Comparison of **Device Tracker On-Prem** and **[Device Tracker](/devicetracker/latest/guide/about)** cloud-based:
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="text-align:center">Features</th>
+    <th style="text-align:center">Device Tracker<br>On-Prem</th>
+    <th style="text-align:center">Device Tracker</th>
+  </tr>
+  <tr>
+    <td style="text-align:left">Host platform</td>
+    <td style="text-align:left">On-Premise server, requires manual install and setup</td>
+    <td style="text-align:left">Cloud-based solution managed by Zebra</td>
+  </tr>
+  <tr>
+    <td>Maximum Devices Supported</td>
+    <td>500</td>
+    <td>100,000</td>
+  </tr>
+  <tr>
+    <td>Site support</td>
+    <td>Single; multiple sites require individual server installation at each location</td>
+    <td>Multi-site; centralized in-the-cloud supporting multiple locations up to 5,000 sites without any additional install required</td>
+  </tr>
+  <tr>
+    <td>Server setup required</td>
+    <td>Yes, Windows server with required software and other system requirements</td>
+    <td>No, server is in the cloud and managed by Zebra</td>
+  </tr>
+  <tr>
+    <td>Android platform support</td>
+    <td>Select devices only up to Android Pie</td>
+    <td>Select Android Oreo and Android 10 devices upon release</td>
+  </tr>
+  <tr>
+    <td>Common Features</td>
+    <td colspan="2">• Simple real-time device locationing with connected AP identification, Bluetooth-based visual proximity indicator and remote play sound feature<br>• Registration of sites, APs and devices with friendly names for ease of identification<br>• Misplaced and at-risk device prevention by monitoring low power and disconnection device states<br>• Role-based access to find and manage devices based on administrator, site manager and associate roles<br>• Centralized dashboard</td>
+  </tr>
+  <tr>
+    <td>Device Check-out/<br>Check-in</td>
+    <td>No</td>
+    <td>Yes, identifies device user</td>
+  </tr>
+  <tr>
+    <td>Dashboard</td>
+    <td>Server-based dashboard view</td>
+    <td>Device-based dashboard view</td>
+  </tr>
+  <tr>
+    <td>Cost</td>
+    <td>Free</td>
+    <td>Licensed subscription service</td>
   </tr>
 </table>
 

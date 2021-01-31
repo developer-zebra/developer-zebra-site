@@ -42,7 +42,7 @@ Comparison of Device Tracker On-Prem and Device Tracker:
   </tr>
   <tr>
     <td style="text-align:left">Host platform</td>
-    <td style="text-align:left">On-premise server, requires manual install and setup</td>
+    <td style="text-align:left">On-Premise server, requires manual install and setup</td>
     <td style="text-align:left">Cloud-based solution managed by Zebra</td>
   </tr>
   <tr>

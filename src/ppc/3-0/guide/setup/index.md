@@ -60,7 +60,12 @@ This section provides the server and device requirements. PPC supports a maximum
 
 ### Device Requirements
 
-See [Device Requirements](../about/#devicerequirements).
+1. Supported Devices: Refer to <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">PPC download site</a> for supported devices.
+
+2. Supported Battery Types: [Zebra PowerPrecision Plus](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html), [Zebra PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) (limited support and [additional setup required](../mgmt/#powerprecisionbatteries)) <br>
+   Refer to [PowerPrecision and Battery Management Fact Sheet](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/powerprecision/fact-sheets/data-capture-dna-power-precision-fact-sheet-en-us.pdf) for more information.
+3. Zebra Data Services agent is required to be running on the mobile computer. This agent collects battery health data from the device and sends it to the ZDVC server.
+4. The ZDVC server is installed and running.
 
 ## Server Install & Setup
 
@@ -104,7 +109,7 @@ If the server certificate with public key already exists, skip to the second sec
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out ppcdemo.key 2048`<br>
    where "ppcdemo.key" can be replaced with a custom file name.
 4. Create a CSR based on the new private key. Run the command:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key ppcdemo.key -new -out ppcdemo.csr`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req -key ppcdemo.key -new -out ppcdemo.csr`<br>
 where "ppcdemo.key" (same file name as in step 3) and "ppcdemo.csr" (new file created) can be replaced with custom file names. It prompts to enter the private key password (created in step 3). Enter in the required fields when prompted (the information entered must match that registered with the CA):</p>
     - **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
     - **State or Province** - Enter the full state or province name without abbreviation, for example: California.
@@ -272,25 +277,101 @@ Procedure to stop the application server:
 
 ## Client Install & Setup
 
-Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address must be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
+Install PPC client app to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address must be configured on the PPC client to communicate with the PPC Server. PPC client app installation and configuration can be performed either manually or remotely, with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system for device deployment.
 
 ### Client Installation
 
+_PPC client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be uninstalled before installing PPC 3.0. Installation can be performed using one of the following methods:
+* **Manual installation** - manually copy and install the client app to the device
+* **Remote installation** - use Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobile Management) tool to create a StageNow profile for device deployment
+
+#### Manual Installation
 Steps for manual client installation:
 
 1. Download PPC Client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk.
-   - For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
+<!--   - For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
    - For Android Oreo and Pie devices, install the .APK located in folder `PPCClient\Client\O_P`.
-3. When prompted, enable the "Usage access" permission.
+-->
+3. Open PowerPrecision Console app.
 4. When prompted, enable the “Apps that can draw over other apps” overlay permission.
-5. Installation is complete.
-6. Install PPCClientMgr.apk from folder `PluginCSP`.
-7. Open PPC client app.
-8. Accept the permissions when prompted.
-9. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background.
+5. When prompted, enable the "Usage access" permission for the Zebra Data Services agent to collect battery data.
+6. Accept the permissions when prompted. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background.
    <img style="height:370px" src="../about/ppc-notification.png"/>
    _PPC client notification_ <br>
+
+
+#### Remote Installation
+
+For remote installation, create a StageNow installation profile to install and setup the client app on the device using Zebra's [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) tool or an EMM for device deployment.
+
+<p>To create a StageNow installation profile:</p>
+
+1. Open StageNow on a host computer.
+2. In the StageNow home screen, click **Create New Profile** from the left menu.
+3. Ensure MX version 8.0 or higher is selected from the top drop-down selector. The MX version on the device should match this or higher. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. If automatically bypassing the overlay permission and usage access permission, select MX 10.0 or higher.
+4. Select **Xpert Mode** from the list and click **Create.**
+   <img alt="" style="height:450px" src="wizard-selection.jpg" /><i>Wizard selection</i>
+
+5. Enter the profile name. Click **Start.**
+6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
+7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
+8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
+   <img alt="" style="height:450px" src="install-profile.PNG" /><i>Config list</i>
+
+9. If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
+10. If automatically bypassing the usage access permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
+11. Click **Add.**
+12. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 13.<br>
+_StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **File Action:** Transfer/Copy File<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Access Method:** File in the device file system<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Path and File Name:** [enter file path]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source Access Method:** [select applicable method]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source File URI:** [enter information prompted]<br>
+    Click **Continue.**
+13. _StageNow Config 2_ – Install the client app. For the first **AppMgr,** select the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Install<br>
+    Enter/select the desired options for the remaining fields. Click **Continue.**
+14. _StageNow Config 3_ – Battery Optimization. For the second **AppMgr,** enter/select the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Application for Battery Optimization<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Remove Application for Battery Optimization:** com.zebra.ppcclient<br>
+    Click **Continue.**
+15. _StageNow Config 4_ - Grant overlay permission. For AccessMgr, enter the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Access Action:** Grant Permission to an Application<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** System Alert Window<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.ppcclient<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <a href="#extractclientappcertificate">Extract Client App Certificate</a> below)<br>
+    Click **Continue.**
+16. _StageNow Config 5_ - Grant usage access permission. For AccessMgr, enter the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Access Action:** Grant Permission to an Application<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Permission Name:** Package Usage Stats<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Package Name:** com.zebra.ppcclient<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Application Signature:** [path of certificate file extracted (see <a href="#extractclientappcertificate">Extract Client App Certificate</a> below)<br>
+    Click **Continue.**
+17. Click **Complete Profiles.** Profile creation is complete.
+
+**Device Deployment:**
+
+The device must be connected to the network during deployment. After creating the StageNow profile, use one of the following methods based on the desired tool for device deployment:
+
+* **StageNow:** Generate the barcode from the StageNow profile. Open StageNow client on the device and scan the barcode(s) generated from the installation, configuration and/or BLE profile. 
+* **EMM:** Export each StageNow XML file from the StageNow installation, connection and BLE profiles. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions. The installation profile and server connectivity profile XML files must be used separately.
+<br>
+
+#### Extract Client App Certificate
+
+The PPC certificate must be extracted as a pre-requisite to creating the StageNow installation profile in order to automatically grant the screen overlay and usage access permissions. This prevents the screen overlay detected and device usage access warnings from appearing to the end user.
+
+<p>Steps to extract the client app certificate:</p>
+
+1.  Download SigTools.jar from [Zebra’s App Signature Tools](https://techdocs.zebra.com/emdk-for-android/latest/samples/sigtools/).
+2.  Follow the instructions provided from the link to extract the certificate from Device Tracker’s APK file using command:
+<pre class="prettify">
+    java -jar SigTools.jar GetCert -INFORM APK -OUTFORM DER -IN [filename.apk] -OUTFILE [filename.crt]
+</pre>
+where _[filename.apk]_ is the full path and file name of the Device Tracker APK install file and _[filename.crt]_ is the designated certificate file name. The file extensions should be preserved in both file names. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. The certificate file is extracted as the CRT file, which is needed to create the StageNow Installation Profile.
+<br><br>
 
 ### Client Configuration
 

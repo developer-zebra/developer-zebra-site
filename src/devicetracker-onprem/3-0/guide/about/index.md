@@ -62,7 +62,7 @@ If a device is being relicensed, Device Tracker On-Prem is fully functional prov
 
 ### License Expired
 
-After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and Device Tracker On-Prem client is no longer functional. All communication is terminated to the Device Tracker Server. Device Tracker On-Prem client can no longer be configured by StageNow or any EMM. The Device Tracker On-Prem notification message indicating the service is running remains displayed in the device notification drawer:
+After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and Device Tracker On-Prem client no longer functions. All communication is terminated to the Device Tracker Server. Device Tracker On-Prem client can no longer be configured by StageNow or any EMM. The Device Tracker On-Prem notification message indicating the service is running remains displayed in the device notification drawer:
 
 <img style="height:400px" src="dtrk-notification.png"/>
 _Device Tracker On-Prem service_
@@ -91,7 +91,7 @@ _Device Tracker On-Prem service_
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">3.0</td>
-    <td style="text-align:left">• New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>• <a href="./licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.</td>
+    <td style="text-align:left">• New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a><br>• <a href="./licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.<br>• Device Tracker On-Prem 2.3.1 or earlier cannot be upgraded to 3.0. All prior versions must be uninstalled before installing Device Tracker 3.0.</td>
   </tr>
   <tr>
     <td style="text-align:center" rowspan="2">2.3.1</td>

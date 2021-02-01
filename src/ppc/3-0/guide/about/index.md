@@ -47,7 +47,7 @@ If a device is being relicensed, PPC is fully functional provided all the [permi
 
 ### License Expired
 
-After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and PPC client is no longer functional. All communication is terminated to the PPC Server. The PPC client can no longer be configured by StageNow or any EMM. The PPC notification message indicating the service is running remains displayed in the device notification drawer:
+After the [Mobility DNA Enterprise license](/licensing) expires on a Zebra Professional-series device, a message appears stating that a license is required (see [device screen](./#unlicensed) above) and PPC client no longer functions. All communication is terminated to the PPC Server. The PPC client can no longer be configured by StageNow or any EMM. The PPC notification message indicating the service is running remains displayed in the device notification drawer:
 
 <img style="height:400px" src="ppc-service.png"/>
 _PPC service_
@@ -57,7 +57,7 @@ _PPC service_
 * New device support for Android 10 devices. See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Zebra support portal</a><br>
 * <a href="/licensing/about">Mobility DNA Enterprise license</a> required for Zebra Professional-series devices.
 * PPC 2.3.1 or earlier cannot be upgraded to 3.0. All prior versions must be uninstalled before installing [PPC 3.0](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
-* Removed requirement for PPCClientMgr.apk. The functionality is now included in the [PPC client APK](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html) file.
+* Removed requirement for PPCClientMgr.apk. The functionality is now combined into the [PPC client app](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html) file.
 
 ## Recent Version History
 
@@ -85,12 +85,11 @@ _PPC service_
   - PPC Client
   - PPC Plug-in
 
-##Device Requirements
-This section provides the device requirements.
+## Supported Devices
 
-See [Install & Setup](../setup) for System Requirements.
+Refer to supported devices in the <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">Zebra PPC download page</a>.
 
-1. Supported Devices:
+<!-- 
 <table class="facelift" align="center" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
@@ -197,12 +196,8 @@ See [Install & Setup](../setup) for System Requirements.
     <td></td>
     <td></td>
   </tr>
-</table>
+</table>  -->
 
-2. Supported Battery Types: [Zebra PowerPrecision Plus](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html), [Zebra PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) (limited support and [additional setup required](../mgmt/#powerprecisionbatteries)) <br>
-   Refer to [PowerPrecision and Battery Management Fact Sheet](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/powerprecision/fact-sheets/data-capture-dna-power-precision-fact-sheet-en-us.pdf) for more information.
-3. Zebra Data Services agent is required to be running on the mobile computer. This agent collects battery health data from the device and sends it to the ZDVC server.
-4. The ZDVC server is installed and running.
 
 ## Important Notes
 

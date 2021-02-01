@@ -343,13 +343,16 @@ This allows Device Tracker On-Prem to run each time the server restarts regardle
 
 ## Client Install & Setup
 
-Install Device Tracker On-Prem client on the supported Zebra device to register the device and transmit data to the server. The device must be connected to the same network as the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system.
+Install Device Tracker On-Prem client app to register the device and transmit data to the server. The device must be connected to the same network as the server. Client app installation and configuration can be performed either manually or remotely, with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system for device deployment.
 
 ### Client Installation
 
-Device Tracker On-Prem 2.3.1 or earlier cannot be upgraded to 3.0. Prior versions must be [uninstalled](./#clientuninstallation) before installing Device Tracker 3.0.
+_Device Tracker On-Prem client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be [uninstalled](./#clientuninstallation) before installing Device Tracker 3.0. There are two methods for client app installation:
+* **Manual installation** - manually copy and install the client app to the device.
+* **Remote installation** - use Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobile Management) tool to create a StageNow profile for device deployment.
 
-<p>Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):</p>
+#### Manual Installation
+Steps for manual client installation:
 
 1. Download Device Tracker On-Prem client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DTRKClient.apk<br>
@@ -365,6 +368,51 @@ Device Tracker On-Prem 2.3.1 or earlier cannot be upgraded to 3.0. Prior version
 6. Once the app is opened on Android O or higher devices, a Device Tracker On-Prem notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that Device Tracker On-Prem is running in the background.
    <img style="height:400px" src="Notifications_dtrk.jpg"/>
    _Device Tracker On-Prem client notification_ <br>
+
+#### Remote Installation
+
+For remote installation, create a StageNow installation profile to install and setup the client app on the device using Zebra's [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) tool or an EMM for device deployment.
+
+<p>To create a StageNow installation profile:</p>
+
+1. Open StageNow on a host computer.
+2. In the StageNow home screen, click **Create New Profile** from the left menu.
+3. Ensure MX version 8.0 or higher is selected from the top drop-down selector. The MX version on the device should match this or higher. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. 
+4. Select **Xpert Mode** from the list and click **Create.**
+   <img alt="" src="wizard-selection.jpg" /><i>Wizard selection</i>
+
+5. Enter the profile name. Click **Start.**
+6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
+7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
+8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
+   <img alt="" style="height:450px" src="install-profile.PNG" /><i>Wizard selection</i>
+
+9. Click **Add.**
+10. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 11.<br>
+_StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **File Action:** Transfer/Copy File<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Access Method:** File in the device file system<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Target Path and File Name:** [enter file path]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source Access Method:** [select applicable method]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Source File URI:** [enter information prompted]<br>
+    Click **Continue.**
+11. _StageNow Config 2_ – Install the client app. For the first **AppMgr,** select the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Install<br>
+    Enter/select the desired options for the remaining fields. Click **Continue.**
+12. _StageNow Config 3_ – Battery Optimization. For the second **AppMgr,** enter/select the following:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Action:** Application for Battery Optimization<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Remove Application for Battery Optimization:** com.zebra.devicetracker<br>
+    
+13. Click **Complete Profiles.** Profile creation is complete.
+
+**Device Deployment:**
+
+The device must be connected to the network during deployment. After creating the StageNow profile, use one of the following methods based on the desired tool for device deployment:
+
+* **StageNow:** Generate the barcode from the StageNow profile. Open StageNow client on the device and scan the barcode(s) generated from the installation, configuration and/or BLE profile. 
+* **EMM:** Export each StageNow XML file from the StageNow installation, connection and BLE profiles. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview/) to configure the app and grant all required permissions. The installation profile and server connectivity profile XML files must be used separately.
+<br>
+
 
 ### Client Uninstallation
 

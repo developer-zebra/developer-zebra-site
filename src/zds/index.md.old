@@ -1,6 +1,6 @@
 ---
-title: Zebra Data Services
-description: Temporary landing page for Zebra Data Services (ZDS), the components that collect and transmit usage data from Zebra Android devices.
+title: Zebra Data Service
+description: Temporary landing page for the Zebra Data Service (ZDS), the components that collect and transmit usage data from Zebra Android devices.
 layout: list-content-items.html
 content-items:
   - type: section

@@ -1,5 +1,5 @@
 ---
-title: About Zebra Data Services
+title: About Zebra Data Service
 layout: guide.html
 product: ZDS
 menu:

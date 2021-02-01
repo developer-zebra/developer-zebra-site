@@ -1,10 +1,10 @@
 ---
-title: Zebra Data Services
+title: Zebra Data Service
 img: /images/products/zds.png
 layout: redirect.html
 redirect_url: /zds/about
 menu:
-  title: Zebra Data Services 2.0
+  title: Zebra Data Service 2.0
   img: /zds/images/logo.png
   versions:
     - versionto: 2-0

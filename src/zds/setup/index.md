@@ -64,7 +64,7 @@ _Click image to enlarge; ESC to exit_.
 1. In the Settings panel, **locate and tap the "Apps" button**.<br> 
  This displays a list of all apps and services on the device: 
  <img alt="image" style="height:350px" src="zds_20_files_old_new_2.png"/>
- _Zebra Data Services as they appear in Settings > Apps > on older (center) and newer devices_.<br> 
+ _Zebra Data Service as in Settings > Apps > on older (above, center) and newer devices_.<br> 
  _Click image to enlarge; ESC to exit_. 
  <br>
 2. **Scroll the list until the ZDS components are shown** (as shown above). 

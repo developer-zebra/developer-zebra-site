@@ -414,7 +414,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 **To <u>automatically</u> stage a device from a USB drive or SD card**:
 
 1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
-2. **Create a folder called** `/Stagenow` on a USB drive or SD card.
+2. **Create a folder called "Stagenow"** on a USB drive or SD card.
 3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 

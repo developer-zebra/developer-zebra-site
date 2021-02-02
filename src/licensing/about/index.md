@@ -81,7 +81,7 @@ The following table indicates which features are included with Zebra Professiona
   <tr>
   <td><a href="#softwarecomponents1.5">Device Tracker On-prem</a></td>
   <td colspan="2">1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html">Download and install latest app</a></td></td>
-  <td>Beginning with Device Tracker On-prem 3.0, an MDNA license is required for Pro-series devices.</td>
+  <td>Beginning with Device Tracker On-prem 3.0, an MDNA license is required for <a href="#professional">Pro-series devices</a>.</td>
   </tr>
 
   <tr>
@@ -185,7 +185,7 @@ The following table indicates which features are included with Zebra Professiona
 </table>
 <a name="professional"></a>
 
-&#42; *One MDNA license covers all MDNA features for one device*.<br>
+&#42; *One MDNA Enterprise license covers all MDNA features for one device*.<br>
 &#42;&#42; *An MDNA Enterprise license is required for DataWedge to access multi-barcode and image/doc capture features*.<br>
 † *Supported on devices with Android 10 or later*.
 
@@ -206,14 +206,14 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td>Wi-Fi only</td>
-  <td>TC21&#42;</td>
+  <td>TC21&#135;</td>
   <td>MC22</td>
   <td>Coming soon</td>
   </tr>
 
   <tr>
   <td>Wi-Fi, WWAN</td>
-  <td>TC26&#42;</td>
+  <td>TC26&#135;</td>
   <td>MC27</td>
   <td>Coming soon</td>
   </tr>
@@ -223,7 +223,7 @@ The following table indicates which features are included with Zebra Professiona
 
 <a name="softwarecomponents1"></a>
 
-<font size="2" color="grey">&#42; *TC21 and TC26 device SKUs with a **3, 4, 7 or J** in the fourth position (i.e. TC21xx-x**<u>N</u>**xxxx) ship with an MDNA Enterprise license preinstalled*.</font><br>
+<font size="2" color="grey">&#135; *TC21 and TC26 device SKUs with a **3, 4, 7 or J** in the fourth position (i.e. TC21xx-x**<u>N</u>**xxxx) ship with an MDNA Enterprise license preinstalled*.</font><br>
 
 -----
 

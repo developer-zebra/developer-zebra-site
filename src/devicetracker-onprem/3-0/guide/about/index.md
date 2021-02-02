@@ -45,7 +45,7 @@ The web portal provides a dashboard for administrators to monitor the status of 
 
 ## MDNA Enterprise License
 
-Beginning with Device Tracker On-Prem 3.0, a [Mobility DNA Enterprise license](/licensing) is  required to use Device Tracker On-Prem on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional Device Tracker On-Prem client pre-installed.
+Beginning with Device Tracker On-Prem 3.0, a [Mobility DNA Enterprise license](/licensing) is  required to use Device Tracker On-Prem on Zebra Professional-series devices, including TC21 and TC26. Out of the box, Zebra Professional-series devices have a non-functional Device Tracker On-Prem client pre-installed.
 
 ### Unlicensed
 
@@ -56,7 +56,7 @@ _MDNA Enterprise license required_
 
 ### Licensed
 
-After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [Device Tracker On-Prem version 3.0 or higher]("https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html"). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
+After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [Device Tracker On-Prem version 3.0 or higher](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
 
 If a device is being relicensed, Device Tracker On-Prem is fully functional provided all the [permissions are accepted and configuration] are implemented. See [Client Install & Setup](../setup/#clientinstallsetup).
 

@@ -279,9 +279,9 @@ Procedure to stop the application server:
 
 Install PPC client app to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address must be configured on the PPC client to communicate with the PPC Server. PPC client app installation and configuration can be performed either manually or remotely, with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system for device deployment.
 
-### Client Installation
+### Installation
 
-_PPC client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be uninstalled before installing PPC 3.0. Installation can be performed using one of the following methods:
+_PPC client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be [uninstalled](./#uninstallation) before installing PPC 3.0. Installation can be performed using one of the following methods:
 * **Manual installation** - manually copy and install the client app to the device
 * **Remote installation** - use Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobile Management) tool to create a StageNow profile for device deployment
 
@@ -317,7 +317,7 @@ For remote installation, create a StageNow installation profile to install and s
 6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
-   <img alt="" style="height:450px" src="install-profile.PNG" /><i>Config list</i>
+   <img alt="" style="height:450px" src="config-list.PNG" /><i>Config list</i>
 
 9. If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
 10. If automatically bypassing the usage access permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
@@ -366,14 +366,19 @@ The PPC certificate must be extracted as a pre-requisite to creating the StageNo
 <p>Steps to extract the client app certificate:</p>
 
 1.  Download SigTools.jar from [Zebra’s App Signature Tools](https://techdocs.zebra.com/emdk-for-android/latest/samples/sigtools/).
-2.  Follow the instructions provided from the link to extract the certificate from Device Tracker’s APK file using command:
+2.  Follow the instructions provided from the link to extract the certificate from PPC’s APK file using command:
 <pre class="prettify">
     java -jar SigTools.jar GetCert -INFORM APK -OUTFORM DER -IN [filename.apk] -OUTFILE [filename.crt]
 </pre>
-where _[filename.apk]_ is the full path and file name of the Device Tracker APK install file and _[filename.crt]_ is the designated certificate file name. The file extensions should be preserved in both file names. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. The certificate file is extracted as the CRT file, which is needed to create the StageNow Installation Profile.
+where _[filename.apk]_ is the full path and file name of the PPC APK install file and _[filename.crt]_ is the designated certificate file name. The file extensions should be preserved in both file names. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. The certificate file is extracted as the CRT file, which is needed to create the StageNow Installation Profile.
 <br><br>
 
-### Client Configuration
+
+### Uninstallation
+
+PPC client app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall PPC 2.3.1, scan the barcode in PPC_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
+
+### Configuration
 
 After client installation, configure the server address, port, server auth username (if applicable) and server auth password either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
@@ -392,7 +397,7 @@ Steps for manual configuration:
    On the EC30, if Enterprise Keyboard is used to enter the user name and password, the text entered is partially cut-off. To address this, disable the option [Show scan tab](/enterprise-keyboard/latest/guide/settings/#preferences) in the Enterprise Keyboard Preferences section.
 6. Tap **OK** to save the changes and return to the main screen. PPC Client registers with the server and uploads battery data. _If using an SSL certificate,_ manual client configuration is complete.
 7. **If using a self-signed certificate,** proceed as follows:<br>
-   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/storage/self/primary/Android/data/com.zebra.ppcclient/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
+   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/sdcard/Android/data/com.zebra.ppcclient/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
    &nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed on the app:
    <img style="height:370px" src="untrusted_cert_ppc.jpg"/>
    _Figure 12. Untrusted certificate message in client app_<br>
@@ -454,6 +459,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
     * PPCClient.apk
     * DisableSelfSigned_PPC.pdf
     * EnableSelfSigned_PPC.pdf
+    * PPC_UNINSTALL_FOR_2.3.1.pdf
 
 2. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
 3. Import the CSP Plugin Library. <br>

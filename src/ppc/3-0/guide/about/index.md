@@ -24,13 +24,13 @@ PowerPrecision Console main features:
 - Report generation to export data collected
 - Capability for device staging with the use of an EMM such as Zebra's [StageNow](/stagenow/latest/about) with [Battery Manager CSP](/mx/batterymgr).
 
-##How it works
+## How it works
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions.
 
 ## MDNA Enterprise License
 
-Beginning with PPC 3.0, a [Mobility DNA Enterprise license](/licensing) is required to use PowerPrecision Console on Zebra Professional-series devices, including TC21 and TC26. Out-of-the-box, Zebra Professional-series devices have a non-functional PPC client pre-installed.
+Beginning with PPC 3.0, a [Mobility DNA Enterprise license](/licensing) is required to use PowerPrecision Console on Zebra Professional-series devices, including TC21 and TC26. Out of the box, Zebra Professional-series devices have a non-functional PPC client pre-installed.
 
 ### Unlicensed
 
@@ -41,7 +41,7 @@ _MDNA Enterprise license required_
 
 ### Licensed
 
-After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [PPC 3.0 or higher]("https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html"). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
+After a Zebra Professional-series device is licensed with the [Mobility DNA Enterprise license](/licensing) for the first time, the non-functional app client must be uninstalled and replaced with [PPC 3.0 or higher](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). For full functionality, accept all permissions when prompted. See [Client Install & Setup](../setup/#clientinstallsetup).
 
 If a device is being relicensed, PPC is fully functional provided all the [permissions are accepted and configuration] are implemented. See [Client Install & Setup](../setup/#clientinstallsetup).
 

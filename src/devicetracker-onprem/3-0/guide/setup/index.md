@@ -124,7 +124,7 @@ If the server certificate with public key already exists, skip to the second sec
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out dtrkdemo.key 2048`<br>
    where "dtrkdemo.key" can be replaced with a custom file name.<br>
 4. Create a CSR based on the new private key. Run the command:<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key dtrkdemo.key -new -out dtrkdemo.csr`<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req -key dtrkdemo.key -new -out dtrkdemo.csr`<br>
    where "dtrkdemo.key" (same file name as in step 4) and "dtrkdemo.csr" (new file created) can be replaced with custom file names.
    It prompts to enter the private key password (created in step 5). Enter in the required fields when prompted (the information entered must match that registered with the CA):
    - **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
@@ -345,9 +345,9 @@ This allows Device Tracker On-Prem to run each time the server restarts regardle
 
 Install Device Tracker On-Prem client app to register the device and transmit data to the server. The device must be connected to the same network as the server. Client app installation and configuration can be performed either manually or remotely, with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system for device deployment.
 
-### Client Installation
+### Installation
 
-_Device Tracker On-Prem client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be [uninstalled](./#clientuninstallation) before installing Device Tracker 3.0. There are two methods for client app installation:
+_Device Tracker On-Prem client application 2.3.1 or earlier cannot be upgraded to 3.0._ Prior versions must be [uninstalled](./#uninstallation) before installing Device Tracker 3.0. There are two methods for client app installation:
 * **Manual installation** - manually copy and install the client app to the device.
 * **Remote installation** - use Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobile Management) tool to create a StageNow profile for device deployment.
 
@@ -385,7 +385,7 @@ For remote installation, create a StageNow installation profile to install and s
 6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
-   <img alt="" style="height:450px" src="install-profile.PNG" /><i>Wizard selection</i>
+   <img alt="" style="height:450px" src="config-list.PNG" /><i>Config list</i>
 
 9. Click **Add.**
 10. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 11.<br>
@@ -414,11 +414,11 @@ The device must be connected to the network during deployment. After creating th
 <br>
 
 
-### Client Uninstallation
+### Uninstallation
 
 The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
 
-### Client Configuration
+### Configuration
 
 Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
@@ -449,9 +449,9 @@ Steps for manual client configuration after installation:
 
 After client installation, follow these steps to create StageNow profiles to remotely configure the client:
 
-1. Disable Battery Optimization
-2. Start Device Tracker On-Prem Service
-3. Configure Device Tracker On-Prem settings with CSP
+<!-- 1. Disable Battery Optimization -->
+1. Start Device Tracker On-Prem Service
+2. Configure Device Tracker On-Prem settings with CSP
 <!-- 2. Reboot device (refer to [Power Manager](http://techdocs.zebra.com/stagenow/latest/csp/power/) in StageNow documentation) -->
 
 Detailed procedures for each follow in the sections below.
@@ -465,9 +465,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 
 > Use of a StageNow profile which combines installation and configuration into a single profile is not supported. Two separate profiles need to be created:
 
-1. Install Device Tracker On-Prem application and start the service.
-2. Configure Device Tracker On-Prem settings.
-
+<!-- 
 **Steps to create StageNow profile to automatically bypass the device Battery Optimization pop-up message:**
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC.
@@ -490,6 +488,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
 12. Scan the barcode generated to automatically bypass the Battery Optimization message.
+-->
 
 **Steps to create StageNow profile to start Device Tracker On-Prem service remotely:**
 

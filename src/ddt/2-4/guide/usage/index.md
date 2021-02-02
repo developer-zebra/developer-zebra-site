@@ -13,8 +13,6 @@ Device Diagnostic Tool supports two modes of operation:
 2. **User mode -** The user is restricted to only run tests. There is no access to app settings, test configurations nor individual tests. To set user mode, disable <i>admin_mode</i> as referenced in the [Configuration](../configuration#configurationfile) section.
    <br>
 
-## <!-- -->
-
 ## Launch the App
 
 Run Device Diagnostic Tool using one of the following methods:
@@ -24,9 +22,8 @@ Run Device Diagnostic Tool using one of the following methods:
 <br>
 <p>Only one of the methods should be used to run Device Diagnostic Tool, otherwise unexpected behavior can occur.</p>
 
-## <!-- -->
 
-## User Interface
+## Device Tests
 
 When launching the app for the first time, the main screen displays the tests available to run:
 
@@ -112,7 +109,10 @@ Checks the battery status and returns battery related information. Results:
 - **Part number –** displays the part number
 - **Serial number –** displays the serial number
 - **Manufacture date –** displays the battery date of manufacture
-- **Decommission status –** displays the health of the battery as: - **Good –** the battery is in a healthy state - **Decommissioned –** the battery has reached the threshold designated, currently 400 charge cycles, indicating that the battery should be replaced with a new one soon. - **Unknown –** indicates a problem retrieving the battery health information
+- **Decommission status –** displays the health of the battery as: 
+        - **Good –** the battery is in a healthy state 
+        - **Need to replace battery –** the charge cycle count of the battery has reached the [Battery Threshold](../configuration/#configuretests) value set, indicating that the battery should be replaced with a new one soon. 
+        - **Unknown –** indicates a problem retrieving the battery health information
 - **Voltage –** displays the voltage
 - **Current –** displays the current
 - **Temperature –** displays the temperature
@@ -125,22 +125,25 @@ Checks the battery status and returns battery related information. Results:
 Checks the operation of the WWAN radio and returns related WWAN information. Results:
 
 - **Sim State –** Airplane mode must be disabled. Displays one of the following values:
-  _ **Present –** sim card is present
-  _ **Absent –** sim card is not present
+        - **Present –** sim card is present
+        - **Absent –** sim card is not present
 - **Voice State -** displays one of the following values:
-  _ **Voice in service**
-  _ **Voice out of service**
-  _ **Voice Emergency only**
-  _ **Voice power off** \* **Unknown voice**
+        - **Voice in service**
+        - **Voice out of service**
+        - **Voice Emergency only**
+        - **Voice power off** 
+        - **Unknown voice**
 - **Data State –** displays one of the following values:
-  _ **Data connected**
-  _ **Data disconnected**
-  _ **Data connecting**
-  _ **Data suspended** \* **Unknown data**
+        - **Data connected**
+        - **Data disconnected**
+        - **Data connecting**
+        - **Data suspended** 
+        - **Unknown data**
 - **WAN Type –** displays the network type, such as: _LTE, 2G, 3G, 4G,_ or _Not Available_
 - **Signal Strength –** displays one of the following:
-  _ **Not applicable -** SIM card absent
-  _ **Unknown –** device could be in airplane mode \* **Signal strength -** in dBm
+        - **Not applicable -** SIM card absent
+        - **Unknown –** device could be in airplane mode 
+        - **Signal strength -** in dBm
 - **Phone Number –** _valid_ or _invalid_, depending on whether or not the phone number is exposed by the service provider.
 - **Device ID –** _valid_ or _invalid_, depending on whether or not the device ID is exposed
   <br><br>
@@ -151,6 +154,50 @@ Checks for operation of the device microphone and speaker. Results:
 
 - **Audio Test –** _test successful_ or _test failed_
 
+
+## Upload Logs
+
+The configuration file and log files and can be uploaded on demand from the device to an FTP server. The files uploaded include: test result logs, configuration.xml, history log, and status log. To access this feature, from the main app screen tap the options menu at the top right and select **Upload.**  
+
+Upload screen options:
+* **Protocol -** FTP (default value), only option available
+* **IP Address -** enter the IP address of the FTP server (required)
+* **UserName -** enter the user name to login (required)
+* **Delete File From Device -** if enabled, deletes all files (configuration and log files) from the device after the upload is complete.
+
+<p>If <a href="../configuration/#settings">Server Details</a> are entered in the Settings screen, these options are automatically populated and can be edited if necessary.</p>
+
+After entering the appropriate information, tap **Upload.** Enter the FTP password when prompted. If successful, the files are uploaded to the FTP server in a .zip file with the file format `DDTLOG_[TimeStamp(ddMMyyyyHHmmss)]_[device_identifier].zip`, where:
+
+* _[TimeStamp(ddMMyyyyHHmmss)]_ is the timestamp in 2 digit day, 2 digit month, 4 digit year, 2 digit hour, 2 digit minute and 2 digit seconds.
+* _[device_identifier]_ is the unique identifier for the device:
+        * UUID - for Android Oreo and earlier devices
+        * Serial number - for Android 10 and later devices
+
+
+## Schedule Jobs
+
+Device tests can be scheduled to perform at a specified time. Once a job is scheduled, it automatically repeats at the specified time on a weekly basis. The scheduled job can be deleted after completion to prevent it from repeating again. Only device tests that do not involve user interaction can be scheduled. When a scheduled job is complete, it is logged in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files/history.log`.
+
+<p>To schedule a job:</p>
+
+1. From the main app screen tap the options menu at the top right and select **Job Scheduler.** 
+2. In the Job Scheduler screen, tap "+" button to create a job.
+3. Select the time in hours/minutes to perform the job.
+4. Select the device test to perform.
+5. Select the day of the week for the test to be performed.
+6. Tap the save icon at the top right.  
+
+<p>To modify an existing scheduled job:</p>
+
+1. In the Job Scheduler screen, tap on a scheduled job listed.
+2. Make the necessary changes.
+3. Tap the save icon at the top right. 
+
+<p>To delete an existing scheduled job:</p>
+
+1. In the Job Scheduler screen, tap on a scheduled job listed.
+2. Tap the trash icon at the top right.
 <br>
 <br>
 <!-- -->

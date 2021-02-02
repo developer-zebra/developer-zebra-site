@@ -21,13 +21,17 @@ _Application settings_
 <br />
 
 - **File path:**
-  - **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
-  - **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
+        - **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
+        - **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
+- **Server Details:**
+        - **Protocol -** specifies the server protocol
+        - **IP Address -** specifies the IP address of the server
+        - **UserName -** specifies the user name to login to the server
 - **Status log -** editable text field for the file name of the status log. Contains information about the tests conducted with any associated parameters and configuration changes from the **Configure Tests** screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
 - **History log -** editable text field for the history log, containing information about the test results. Generated when performing a full test from the main screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
 - **Log File Max Size (MB) -** editable text field to specify the maximum file size for the log files.
 - **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
-- **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen.
+- **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen. Copy the file by using Android Debug Bridge (adb) or [StageNow](/stagenow) with [File Manager](/mx/filemgr).
 
 ## <!-- -->
 
@@ -83,30 +87,32 @@ Timeout values can be specified for tests that require user intervention. Once t
 Configuration parameters:
 
 - **Scanner Test –** checks whether the scanner is functioning
-  - **Test Timeout –** specifies the time in seconds to wait for user input
+        - **Test Timeout –** specifies the time in seconds to wait for user input
 - **Button Test –** checks for the operation of push-to-talk, left or right scan trigger, volume up and volume down hard buttons on the device.
-  - **Test Timeout –** specifies the time in seconds to wait for user input
+        - **Test Timeout –** specifies the time in seconds to wait for user input
 - **Touch Screen Test –** checks for operation of the device display screen
-  - **Test Timeout –** specifies the time in seconds to wait for user input
+        - **Test Timeout –** specifies the time in seconds to wait for user input
 - **Bluetooth Tests –** tests the Bluetooth radio and returns Bluetooth related information
-  - **Name –** returns the Bluetooth name
-  - **Radio Power Cycle –** checks for operability when turning the Bluetooth radio on/off
-  - **Functional/Non-functional –** determines whether the Bluetooth radio can be enabled/disabled within a specified period of time. Returns functional if the Bluetooth radio is functional.
-  - **Discoverable/Connectable –** checks if connectable or discoverable
+        - **Name –** returns the Bluetooth name
+        - **Radio Power Cycle –** checks for operability when turning the Bluetooth radio on/off
+        - **Functional/Non-functional –** determines whether the Bluetooth radio can be enabled/disabled within a specified period of time. Returns functional if the Bluetooth radio is functional.
+        - **Discoverable/Connectable –** checks if connectable or discoverable
 - **WiFi Test –** tests operation of the WiFi radio and returns WiFi related information
-  - **MAC address –** checks whether the MAC address is valid based on its format
-  - **Ping Address –** specifies the domain name to perform the ping test
-  - **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
+        - **MAC address –** checks whether the MAC address is valid based on its format
+        - **Ping Address –** specifies the domain name to perform the ping test
+        - **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
 - **Battery Test –** checks the battery status and returns battery related information
-  - **Part Number –** returns the battery part number
-  - **Serial Number –** returns the battery serial number
-  - **Manufacture Date –** returns the battery date of manufacture
-  - **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
+        - **Part Number –** returns the battery part number
+        - **Serial Number –** returns the battery serial number
+        - **Manufacture Date –** returns the battery date of manufacture
+        - **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
+        - **Battery Threshold Value -** sets the maximum charge cycle count of the battery to change the **Decommission Status**. If this value is less than the actual charge cycle count of the battery, **Decommission Status** is changed to "Need to replace battery." This only applies to [PowerPrecision+](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) batteries. The default value is 400.
 - **WWAN Test –** tests operation of the WWAN radio and returns related WWAN information
-  - **Sim State –** checks whether the sim card is present
-  - **Voice State –** checks the voice state of the sim card
-  - **Data State –** checks the data state of the sim card
-- **Audio Test –** tests operation of the device microphone and speaker \* **Test Timeout –** specifies the time in seconds to wait for user input
+        - **Sim State –** checks whether the sim card is present
+        - **Voice State –** checks the voice state of the sim card
+        - **Data State –** checks the data state of the sim card
+- **Audio Test –** tests operation of the device microphone and speaker 
+        * **Test Timeout –** specifies the time in seconds to wait for user input
 <br>
 <p>When text values are modified, such as <b>Test Timeout</b> or <b>Ping Address</b>, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.</p>
 

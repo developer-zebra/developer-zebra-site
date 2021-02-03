@@ -144,6 +144,10 @@ Select Change. A window indicates that the password was changed successfully.
 
 Select OK.
 
+> **NMOTE**: If the administrator password is forgotten, StageNow must be reinstalled. 
+
+-----
+
 ### Software Update
 If a new StageNow version or updated components are available and the StageNow tools is connected to a network, a message appears below the menu bar indicating this.
 

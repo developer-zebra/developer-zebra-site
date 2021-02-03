@@ -170,9 +170,9 @@ Upload screen options:
 After entering the appropriate information, tap **Upload.** Enter the FTP password when prompted. If successful, the files are uploaded to the FTP server in a .zip file with the file format `DDTLOG_[TimeStamp(ddMMyyyyHHmmss)]_[device_identifier].zip`, where:
 
 * _[TimeStamp(ddMMyyyyHHmmss)]_ is the timestamp in 2 digit day, 2 digit month, 4 digit year, 2 digit hour, 2 digit minute and 2 digit seconds.
-* _[device_identifier]_ is the unique identifier for the device:
-        * UUID - for Android Oreo and earlier devices
-        * Serial number - for Android 10 and later devices
+* _[device_identifier]_ is the unique identifier for the device, displaying one of the following depending on the Android platform:
+        * **UUID -** applies to Android 10 and later devices
+        * **Serial number -** applies to Android Oreo and earlier devices
 
 
 ## Schedule Jobs

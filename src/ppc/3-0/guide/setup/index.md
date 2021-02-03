@@ -317,10 +317,9 @@ For remote installation, create a StageNow installation profile to install and s
 6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
-   <img alt="" style="height:450px" src="config-list.PNG" /><i>Config list</i>
-
 9. If automatically bypassing the screen overlay permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
 10. If automatically bypassing the usage access permission, scroll to **AccessMgr** and click the plus (+) sign next to it. This adds **AccessMgr** to the Config tab on the right side.
+   <img alt="" style="height:450px" src="config-list.png" /><i>Config list</i>
 11. Click **Add.**
 12. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 13.<br>
 _StageNow Config 1_ - Copy the install file to the device with FileMgr. In the **FileMgr** screen under the **Create New Setting** tab, select and enter the desired options to install the APK, for example:<br>

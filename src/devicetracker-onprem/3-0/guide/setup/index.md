@@ -385,7 +385,7 @@ For remote installation, create a StageNow installation profile to install and s
 6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
-   <img alt="" style="height:450px" src="config-list.PNG" /><i>Config list</i>
+   <img alt="" style="height:450px" src="config-list.png" /><i>Config list</i>
 
 9. Click **Add.**
 10. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 11.<br>
@@ -439,7 +439,7 @@ Steps for manual client configuration after installation:
      <br>
 6. Tap the device back button to save the changes and return to the main screen. Device Tracker On-Prem client registers with the server and loads "Devices to be found". _If using an SSL certificate,_ manual client configuration is complete.
 7. **If using a self-signed certificate,** proceed as follows:<br>
-   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/Android/data/com.zebra.devicetracker/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
+   &nbsp;&nbsp;&nbsp;A. Copy the self-signed certificate .CRT file to folder `/sdcard/Android/data/com.zebra.devicetracker/files/cert` on the device to establish communication with the server. The .CRT certificate file was generated from step 6 above in the **Self-Signed Certificate** subsection under **Server Certificate**. <br>
    &nbsp;&nbsp;&nbsp;B. The message "Connected via untrusted certificate" is displayed in the app:
    <img style="height:400px" src="untrusted_cert.jpg"/>
    _Untrusted certificate message in client app_<br>

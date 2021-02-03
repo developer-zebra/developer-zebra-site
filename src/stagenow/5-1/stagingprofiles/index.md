@@ -423,14 +423,21 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
+* **Staging Profiles stored on an SD card take precedence over USB** (if both are present).
+* **If using a USB stick as the Source Access Method during Profile creation**: 
+ * **The USB-based storage path (mount point) is preceded by `/storage/usbotg/`**, as below: 
+ <img alt="image" style="height:350px" src="sn_usb_staging.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
+ * StageNow writes the name of the storage medium into the Profile. The same medium (**<u>with the name unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
+ * **All files needed for staging MUST be present** in external staging medium for successful device staging.
 
->**Note**: Staging Profiles stored on an SD card take precedence over USB.
 
 **To <u>manually</u> stage a device from a file on the device**:
 
 1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
 2. **Copy the** `.bin` **file(s)** to any location on the device. 
-3. **Launch the StageNow client** and tap the "Browse" button.w
+3. **Launch the StageNow client** and tap the "Browse" button.
 4. **Navigate to and tap the** `.bin` **file** copied in Step 2 to begin staging. 
 <!-- 11/8/19- image file discovered to be missing
 <img alt="image" style="height:300px" src="sn_33_ui.png"/>

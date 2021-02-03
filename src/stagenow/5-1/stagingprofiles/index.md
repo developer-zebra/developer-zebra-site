@@ -429,8 +429,8 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
  <img alt="image" style="height:350px" src="sn_usb_staging.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
- * StageNow writes the name of the storage medium into the Profile. The same medium (**<u>with the name unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
- * **All files needed for staging MUST be present** in external staging medium for successful device staging.
+ * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
+ * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
 
 
 **To <u>manually</u> stage a device from a file on the device**:

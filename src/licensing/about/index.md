@@ -206,16 +206,16 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td>Wi-Fi only</td>
-  <td>TC21&#135;</td>
-  <td>MC22</td>
-  <td>Coming soon</td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html">TC21 &#135;</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html">MC22</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/healthcare/tc21-hc-tc26-hc.html">TC21-HC</a></td>
   </tr>
 
   <tr>
   <td>Wi-Fi, WWAN</td>
-  <td>TC26&#135;</td>
-  <td>MC27</td>
-  <td>Coming soon</td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html">TC26 &#135;</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html">MC27</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/healthcare/tc21-hc-tc26-hc.html">TC26-HC</a></td>
   </tr>
 
 </tbody>
@@ -223,7 +223,7 @@ The following table indicates which features are included with Zebra Professiona
 
 <a name="softwarecomponents1"></a>
 
-<font size="2" color="grey">&#135; *TC21 and TC26 device SKUs with a **3, 4, 7 or J** in the fourth position (i.e. TC21xx-x**<u>N</u>**xxxx) ship with an MDNA Enterprise license preinstalled*.</font><br>
+<font size="2" color="grey"><b>&#135;</b> *TC21 and TC26 device SKUs with a **3, 4, 7 or J** in the fourth position (i.e. TC21xx-x**<u>N</u>**xxxx) ship with an MDNA Enterprise license preinstalled*.</font><br>
 
 -----
 

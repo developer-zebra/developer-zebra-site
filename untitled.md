@@ -1,91 +1,113 @@
-# About Device Diagnostic Tool - Zebra Technologies TechDocs
+# Configuration - Zebra Technologies TechDocs
 
  Device Diagnostic Tool 2.4
 
 ## Overview <a id="overview"></a>
 
-Device Diagnostic Tool instantly tests and diagnoses the hardware operability on Zebra mobile devices to determine system health and functionality. Where appropriate, Zebra Help Desk uses this tool for troubleshooting device issues, relying on the results to provide optimum steps to reach a resolution. It is useful for quickly troubleshooting device issues, resulting to increased worker productivity, limited device downtime, and unnecessary returns to the Zebra Repair Center. Hardware features tested:
+This section discusses configuration settings and reporting options for Device Diagnostic Tool.
 
-* **Scanner Test** – checks whether the scanner is operable
-* **Button Test** – checks the operation of push-to-talk, left or right scan trigger, volume up and volume down device buttons
-* **Touch Screen Test** – checks for operation of the device touch display
-* **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
-* **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, signal strength, ESSID, IP address, BSSID, and speed
-* **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, temperature, battery level and current capacity
-* **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
-* **Audio Test** – checks for operation of the device microphone and speaker 
+## 
 
-For more information on each test, refer to [Test Criteria.](../criteria)
+## Settings <a id="settings"></a>
 
-## New in 2.4 <a id="newin24"></a>
+The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:    
 
-* New feature to [upload logs](../usage/#uploadlogs) to FTP server.
-* New feature to [schedule jobs](../usage/#schedulejobs) for device tests.
-* New [battery threshold value](../configuration/#configuretests) to set the maximum charge cycle count of the battery that triggers "Need to replace battery" in the **Decommission Status.**
-* Fixed issue: On devices with large screens, such as tablets \(e.g. ET51/ET56, L10\) and vehicle mounted computers \(e.g. VC80x, VC8300\), both portrait and landscape modes are now supported.
 
-## Version History <a id="versionhistory"></a>
+![Application settings](.gitbook/assets/settings.png)
 
-### New in 2.3 <a id="newin23"></a>
+* **File path:**
+  * **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
+  * **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
+* **Server Details:**
+  * **Protocol -** specifies the server protocol
+  * **IP Address -** specifies the IP address of the server
+  * **UserName -** specifies the user name to login to the server
+* **Status log -** editable text field for the file name of the status log. Contains information about the tests conducted with any associated parameters and configuration changes from the **Configure Tests** screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
+* **History log -** editable text field for the history log, containing information about the test results. Generated when performing a full test from the main screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
+* **Log File Max Size \(MB\) -** editable text field to specify the maximum file size for the log files.
+* **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
+* **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen. Copy the file by using Android Debug Bridge \(adb\) or [StageNow](/stagenow) with [File Manager](/mx/filemgr).
 
-* New [Help](../usage/#userinterface) option available which links to the Device Diagnostic Tool support portal.
-* New data fields captured for [Battery test](../usage/#batterytest): battery level and battery current capacity.
-* New features configurable through the configuration file:
-  * [perform tests individually](../configuration/#configurationfile)
-  * [capture logs individually](../configuration/#configurationfile) for each test performed
-* Fixed an issue where DDT does not revert the device back to its original device orientation, landscape or portrait mode, after application exit.
-* [Enhancements:](../usage/#userinterface)
-  * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. If the WiFi radio is not enabled when initiating the WLAN test, the user is prompted to enable the radio.
-  * To display the ESSID from a WLAN test on Android O or higher, _Location_ service is required to be enabled on the device due to Android restrictions. If _Location_ service is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID."
-  * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
+## Configuration File <a id="configurationfile"></a>
 
-### New in 2.2 <a id="newin22"></a>
+`Configuration.xml` can be modified manually using any text editor. The existing tag format must be maintained. Options are configurable through **Settings** or **Configure Tests** in the user interface, except for the options specified below:
 
-* New devices supported - see supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
-* Android 10 limitations due to security restrictions:
-  * In the WWAN test details screen, "Device ID" is not visible.
-  * In the History.log file, "Device ID" and "Device Serial\#" is not visible.
-* Fixed Issues:
-  * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
-  * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
-* Known Issues:
-  * On Android 10 WWAN devices, if a sim card is not inserted and a WWAN test is performed, improper values may be returned for Voice state.
-  * When a battery test is performed, improper values may be displayed on the following devices:          • Devices that require AC Power to operate \(no battery exists\), such as CC605 and CC610          • ET50 devices - the part number, serial number and manufactured date may display improperly
+* **admin\_mode –** If set to _true_, sets the app to admin mode allowing access to the app settings and test configurations. Default value = _true_.
+* **allow\_individual\_test\_for\_user -** If set to _true_, the non-admin user can run the tests individually instead of running all tests at once.
+* **allow\_individual\_log\_for\_user -** If set to _true_, the non-admin user can generate an individual result log file for each test instead of a single log file containing all test results.
+* **continue\_testing\_on\_failure -** If set to _true_, the test automatically proceeds to the next section test until all tests are completed, even if the previous section test fails. Default value = _false_.
+* **show\_extra\_data -** If set to _true_, informational data is displayed in the test results page. Refer to Test Criteria section to see the affected informational data. Default value = _true_.
+* **debug –** If set to _true_, application logging is displayed in logcat for debugging purposes. Default value = _true_.
+* **close\_on\_result\_acknowledge -** If set to _true_, the application closes when all tests have passed. If any test fails, the app does not close. Default value = _false_.
 
-### New in 2.1 <a id="newin21"></a>
+   Sample settings content in configuration.xml:
 
-* Introduced 2 modes of operation: [admin mode and user mode](../usage).
-* Changes in supported tests:
-  * Tests added: Scanner, Button, Touch Screen, Audio
-  * Tests removed: GPS, System
-* Added capability to [import or export configuration files](../configuration).
-* New [Settings](../configuration) and [Configure Tests](../configuration) app screens for administrators.
-* Added and removed device support. See **Supported Devices** table below.
-* Known Issues:
-  * On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails.
-  * On TC20 and TC25 Android Nougat, when performing the Battery test the Decommission status may return incorrect information.
-  * On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons.
-  * On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device.
-  * When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.
+```text
 
-## Supported Devices <a id="supporteddevices"></a>
+ <settings>
+   <admin_mode>true</admin_mode>
+   <continue_testing_on_failure>true</continue_testing_on_failure>
+   <show_extra_data>true</show_extra_data>
+   <debug>true</debug>
+   <close_on_result_acknowledge>false</close_on_result_acknowledge>
+   <status_log_name>status.log</status_log_name>
+   <history_log_name>history.log</history_log_name>
+   <log_file_max_size_mb>25</log_file_max_size_mb>
+ </settings>
 
-See supported devices for **Device Diagnostic Tool** on [Zebra Downloads](https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html).
+```
 
-**Installation Notes:**
+## Configure Tests <a id="configuretests"></a>
 
-* **Multiple instances of app -** If Device Diagnostic Tool v1.0 is already present on the device and Device Diagnostic Tool v2.1 or higher is then installed on the same device, there will be 2 versions of the app that exist. To avoid this scenario, the administrator can disable Device Diagnostic Tool v1.0 using [AppManager CSP](/mx/appmgr) for the device to run a single version of the app.
-* **Setting persistence -** Upon initial app install, any setting changes made through the UI persist since configuration.xml does not exist. However, after exporting the .xml file, any changes in the UI no longer persist until the .xml file is imported into the device.
+Select the tests to be conducted and configure the test parameters. Access **Configure Tests** by tapping on the options menu at the top right of the main screen, then select **Configure Tests**:
 
-## Important Usage Notes <a id="importantusagenotes"></a>
+![](.gitbook/assets/configure-1.png)
 
-1. **Multiple Android user accounts -** When using multiple Android user accounts on a single device, Device Diagnostic Tool use and functionality only applies to the active primary user.
-2. **Limitation due to low memory on the device -** Once the available device memory is less than 3 MB, a message appears indicating there is no space on the device and logging will no longer take place. Additionally the Audio Test cannot be executed.
-3. **Split screen support -** On Android N and above, Device Diagnostic Tool does not support split screen mode. 
+![](.gitbook/assets/configure-2.png)
+
+![Configure Tests](.gitbook/assets/configure-3.jpg)
+
+\_\_
+
+ Timeout values can be specified for tests that require user intervention. Once the specified time elapses \(in seconds\), execution moves to the next test selected if configured in the configuration.xml file. Configuration parameters:
+
+* **Scanner Test –** checks whether the scanner is functioning
+  * **Test Timeout –** specifies the time in seconds to wait for user input
+* **Button Test –** checks for the operation of push-to-talk, left or right scan trigger, volume up and volume down hard buttons on the device.
+  * **Test Timeout –** specifies the time in seconds to wait for user input
+* **Touch Screen Test –** checks for operation of the device display screen
+  * **Test Timeout –** specifies the time in seconds to wait for user input
+* **Bluetooth Tests –** tests the Bluetooth radio and returns Bluetooth related information
+  * **Name –** returns the Bluetooth name
+  * **Radio Power Cycle –** checks for operability when turning the Bluetooth radio on/off
+  * **Functional/Non-functional –** determines whether the Bluetooth radio can be enabled/disabled within a specified period of time. Returns functional if the Bluetooth radio is functional.
+  * **Discoverable/Connectable –** checks if connectable or discoverable
+* **WiFi Test –** tests operation of the WiFi radio and returns WiFi related information
+  * **MAC address –** checks whether the MAC address is valid based on its format
+  * **Ping Address –** specifies the domain name to perform the ping test
+  * **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
+* **Battery Test –** checks the battery status and returns battery related information
+  * **Part Number –** returns the battery part number
+  * **Serial Number –** returns the battery serial number
+  * **Manufacture Date –** returns the battery date of manufacture
+  * **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
+  * **Battery Threshold Value -** sets the maximum charge cycle count of the battery to change the **Decommission Status**. If this value is less than the actual charge cycle count of the battery, **Decommission Status** is changed to "Need to replace battery." This applies only to [PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) batteries. The default value is 400.
+* **WWAN Test –** tests operation of the WWAN radio and returns related WWAN information
+  * **Sim State –** checks whether the sim card is present
+  * **Voice State –** checks the voice state of the sim card
+  * **Data State –** checks the data state of the sim card
+* **Audio Test –** tests operation of the device microphone and speaker
+  * **Test Timeout –** specifies the time in seconds to wait for user input 
+
+When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
+
+Refer to [Test Criteria](../criteria) section for more information.
+
+##  <a id="-3"></a>
 
 ## See Also <a id="seealso"></a>
 
+* [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
 * [Test Criteria](../criteria)
-* [Configuration](../configuration)
 

@@ -1,19 +1,28 @@
-# Configuration - Zebra Technologies TechDocs
+---
+title: Configuration
+layout: guide.html
+product: Device Diagnostic Tool
+productversion: '2.4'
+---
 
- Device Diagnostic Tool 2.4
+# Configuration
 
-## Overview <a id="overview"></a>
+## Overview
 
 This section discusses configuration settings and reporting options for Device Diagnostic Tool.
 
-## 
+## Settings
 
-## Settings <a id="settings"></a>
+The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:
 
-The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:    
+![](.gitbook/assets/configure-1.png)
+
+  
 
 
-![Application settings](.gitbook/assets/settings.png)
+![](.gitbook/assets/configure-2.png)
+
+![](.gitbook/assets/configure-3.jpg)
 
 * **File path:**
   * **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
@@ -28,7 +37,7 @@ The **Settings** screen provides the file path to import/export the configuratio
 * **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
 * **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen. Copy the file by using Android Debug Bridge \(adb\) or [StageNow](/stagenow) with [File Manager](/mx/filemgr).
 
-## Configuration File <a id="configurationfile"></a>
+## Configuration File
 
 `Configuration.xml` can be modified manually using any text editor. The existing tag format must be maintained. Options are configurable through **Settings** or **Configure Tests** in the user interface, except for the options specified below:
 
@@ -40,36 +49,37 @@ The **Settings** screen provides the file path to import/export the configuratio
 * **debug –** If set to _true_, application logging is displayed in logcat for debugging purposes. Default value = _true_.
 * **close\_on\_result\_acknowledge -** If set to _true_, the application closes when all tests have passed. If any test fails, the app does not close. Default value = _false_.
 
-   Sample settings content in configuration.xml:
+  Sample settings content in configuration.xml:
 
-```text
+  ```text
 
- <settings>
-   <admin_mode>true</admin_mode>
-   <continue_testing_on_failure>true</continue_testing_on_failure>
-   <show_extra_data>true</show_extra_data>
-   <debug>true</debug>
-   <close_on_result_acknowledge>false</close_on_result_acknowledge>
-   <status_log_name>status.log</status_log_name>
-   <history_log_name>history.log</history_log_name>
-   <log_file_max_size_mb>25</log_file_max_size_mb>
- </settings>
 
-```
 
-## Configure Tests <a id="configuretests"></a>
+    true
+    true
+    true
+    true
+    false
+    status.log
+    history.log
+    25
+
+
+  ```
+
+## Configure Tests
 
 Select the tests to be conducted and configure the test parameters. Access **Configure Tests** by tapping on the options menu at the top right of the main screen, then select **Configure Tests**:
 
-![](.gitbook/assets/configure-1.png)
+|  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- |
 
-![](.gitbook/assets/configure-2.png)
 
-![Configure Tests](.gitbook/assets/configure-3.jpg)
+_Configure Tests_   
+   
+ Timeout values can be specified for tests that require user intervention. Once the specified time elapses \(in seconds\), execution moves to the next test selected if configured in the configuration.xml file.
 
-\_\_
-
- Timeout values can be specified for tests that require user intervention. Once the specified time elapses \(in seconds\), execution moves to the next test selected if configured in the configuration.xml file. Configuration parameters:
+Configuration parameters:
 
 * **Scanner Test –** checks whether the scanner is functioning
   * **Test Timeout –** specifies the time in seconds to wait for user input
@@ -96,16 +106,14 @@ Select the tests to be conducted and configure the test parameters. Access **Con
   * **Sim State –** checks whether the sim card is present
   * **Voice State –** checks the voice state of the sim card
   * **Data State –** checks the data state of the sim card
-* **Audio Test –** tests operation of the device microphone and speaker
-  * **Test Timeout –** specifies the time in seconds to wait for user input 
+* **Audio Test –** tests operation of the device microphone and speaker 
+  * **Test Timeout –** specifies the time in seconds to wait for user input
 
-When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
+    When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
 
 Refer to [Test Criteria](../criteria) section for more information.
 
-##  <a id="-3"></a>
-
-## See Also <a id="seealso"></a>
+## See Also
 
 * [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)

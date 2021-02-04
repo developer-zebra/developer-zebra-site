@@ -1,113 +1,44 @@
-# Configuration - Zebra Technologies TechDocs
+---
+title: Test Criteria
+layout: guide.html
+product: Device Diagnostic Tool
+productversion: '2.4'
+---
 
- Device Diagnostic Tool 2.4
+# Criteria
 
-## Overview <a id="overview"></a>
+## Overview
 
-This section discusses configuration settings and reporting options for Device Diagnostic Tool.
+Device Diagnostic Tool tests for the operation of device hardware features based on specific criteria, with the following results:
 
-## 
+* **Pass** - if the criteria is met
+* **Fail** - if the criteria is not met
+* **Information** - displays informational data \(pass/fail is not applicable\)
 
-## Settings <a id="settings"></a>
+| Test | Requires User Intervention | Properties/Action | Pass/Fail Criteria |
+| :--- | :--- | :--- | :--- |
+| Scanner | Yes | Scan a barcode | Passes when a barcode is scanned successfully. |
+| Button | Yes | Button press:   - Scan trigger \(left or right\)   - Push-to-talk   - Volume up   - Volume down | Passes when the button press is detected for each of the buttons. |
+| Touch Screen | Yes | Touch grid | Passes when touch is detected within each grid box on the screen. |
+| Bluetooth | No | Information returned:   - Name   - Radio power cycle   - Functional/ Non-functional   - Connectable/ Discoverable | Passes if the Bluetooth radio can be power cycled and the information is returned successfully. |
+| WLAN | No | Information returned:   - MAC address   - Network test   - Signal strength \(i\)   - ESSID \(i\)   - IP address \(i\)   - BSSID \(i\)   - Speed \(i\) | Passes when the network test is successful. |
+| WWAN | No | Information returned:   - Sim state   - Voice state   - Data state   - WAN type \(i\)   - Signal strength \(i\)   - Phone number \(i\)   - Device ID \(i\) | Passes when the sim card is present. Passes automatically on non-WAN devices. |
+| Battery | No | Information returned:   - Part number   - Serial number   - Manufacture date   - Decommission status   - Voltage \(i\)   - Current \(i\)   - Temperature \(i\)   - Level \(i\)   - Current Capacity \(i\) | Passes if the battery health is good and the battery information is retrieved successfully. **Note:** Current Capacity only applies to PowerPrecision+ batteris. |
+| Audio | Yes | Record and play file | User manual intervention is required. The user manually records audio then listens to the recording. Test pass/fail is based on user discretion. Device speakers should be used for this test - use of headphones is not acceptable. This test should be conducted in an environment with minimal background noise for successful testing. Set the device to maximum volume during playback for best results. **Note:** This test cannot be performed if the device does not have a microphone, e.g. MC18. |
 
-The **Settings** screen provides the file path to import/export the configuration file and allows for configuration of the history and status log files. Access settings by tapping on the options menu at the top right of the main screen, then select **Settings**:  _Application settings_  
-
-
-* **File path:**
-  * **Configuration import path -** specifies the file path for the configuration file: `/enterprise/usr/deviceselftest/configuration.xml`
-  * **Log output and configuration export path -** specifies the folder path for the log files and exported configuration file: `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`
-* **Server Details:**
-  * **Protocol -** specifies the server protocol
-  * **IP Address -** specifies the IP address of the server
-  * **UserName -** specifies the user name to login to the server
-* **Status log -** editable text field for the file name of the status log. Contains information about the tests conducted with any associated parameters and configuration changes from the **Configure Tests** screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
-* **History log -** editable text field for the history log, containing information about the test results. Generated when performing a full test from the main screen. Located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`.
-* **Log File Max Size \(MB\) -** editable text field to specify the maximum file size for the log files.
-* **Import -** imports a configuration file located in the configuration import path `/enterprise/usr/deviceselftest/configuration.xml`.
-* **Export -** exports `configuration.xml` from configurations set in the **Configure Tests** screen located in `/storage/emulated/0/Android/data/com.symbol.selfdiagnostics/files`. Once exported, deploy the configuration to other devices by copying the .xml file to the import path `/enterprise/usr/deviceselftest` then tap the **Import** button in the **Settings** screen. Copy the file by using Android Debug Bridge \(adb\) or [StageNow](/stagenow) with [File Manager](/mx/filemgr).
-
-##  <a id="-1"></a>
-
-## Configuration File <a id="configurationfile"></a>
-
-`Configuration.xml` can be modified manually using any text editor. The existing tag format must be maintained. Options are configurable through **Settings** or **Configure Tests** in the user interface, except for the options specified below:
-
-* **admin\_mode –** If set to _true_, sets the app to admin mode allowing access to the app settings and test configurations. Default value = _true_.
-* **allow\_individual\_test\_for\_user -** If set to _true_, the non-admin user can run the tests individually instead of running all tests at once.
-* **allow\_individual\_log\_for\_user -** If set to _true_, the non-admin user can generate an individual result log file for each test instead of a single log file containing all test results.
-* **continue\_testing\_on\_failure -** If set to _true_, the test automatically proceeds to the next section test until all tests are completed, even if the previous section test fails. Default value = _false_.
-* **show\_extra\_data -** If set to _true_, informational data is displayed in the test results page. Refer to Test Criteria section to see the affected informational data. Default value = _true_.
-* **debug –** If set to _true_, application logging is displayed in logcat for debugging purposes. Default value = _true_.
-* **close\_on\_result\_acknowledge -** If set to _true_, the application closes when all tests have passed. If any test fails, the app does not close. Default value = _false_.
-
-   Sample settings content in configuration.xml:
-
-```text
-
- <settings>
-   <admin_mode>true</admin_mode>
-   <continue_testing_on_failure>true</continue_testing_on_failure>
-   <show_extra_data>true</show_extra_data>
-   <debug>true</debug>
-   <close_on_result_acknowledge>false</close_on_result_acknowledge>
-   <status_log_name>status.log</status_log_name>
-   <history_log_name>history.log</history_log_name>
-   <log_file_max_size_mb>25</log_file_max_size_mb>
- </settings>
-
-```
-
-##  <a id="-2"></a>
-
-## Configure Tests <a id="configuretests"></a>
-
-Select the tests to be conducted and configure the test parameters. Access **Configure Tests** by tapping on the options menu at the top right of the main screen, then select **Configure Tests**:
-
-|  |  |  |  |  |
-| :--- | :--- | :--- | :--- | :--- |
+Red colored text indicates sensitive information that is not displayed. Instead, “valid” or “invalid” is shown to indicate whether the information is detected in the proper format. “Valid” indicates the appropriate value was retrieved. “Invalid” indicates the value retrieved is null, empty, or does not match the expected MAC address pattern \(only applies to MAC address\).  
+  
+ **\(i\)** indicates informational data that is considered as extra data, which is displayed if **show\_extra\_data** is set to “true” in the `configuration.xml` file.   
+   
 
 
-_Configure Tests_
+Refer to [Configure Tests](../configuration#configuretests) section for a description of each test.   
+   
 
- Timeout values can be specified for tests that require user intervention. Once the specified time elapses \(in seconds\), execution moves to the next test selected if configured in the configuration.xml file. Configuration parameters:
 
-* **Scanner Test –** checks whether the scanner is functioning
-  * **Test Timeout –** specifies the time in seconds to wait for user input
-* **Button Test –** checks for the operation of push-to-talk, left or right scan trigger, volume up and volume down hard buttons on the device.
-  * **Test Timeout –** specifies the time in seconds to wait for user input
-* **Touch Screen Test –** checks for operation of the device display screen
-  * **Test Timeout –** specifies the time in seconds to wait for user input
-* **Bluetooth Tests –** tests the Bluetooth radio and returns Bluetooth related information
-  * **Name –** returns the Bluetooth name
-  * **Radio Power Cycle –** checks for operability when turning the Bluetooth radio on/off
-  * **Functional/Non-functional –** determines whether the Bluetooth radio can be enabled/disabled within a specified period of time. Returns functional if the Bluetooth radio is functional.
-  * **Discoverable/Connectable –** checks if connectable or discoverable
-* **WiFi Test –** tests operation of the WiFi radio and returns WiFi related information
-  * **MAC address –** checks whether the MAC address is valid based on its format
-  * **Ping Address –** specifies the domain name to perform the ping test
-  * **Network Test –** pings the web address specified in the Ping Address field via WiFi and returns the amount of time it takes to receive a response
-* **Battery Test –** checks the battery status and returns battery related information
-  * **Part Number –** returns the battery part number
-  * **Serial Number –** returns the battery serial number
-  * **Manufacture Date –** returns the battery date of manufacture
-  * **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned
-  * **Battery Threshold Value -** sets the maximum charge cycle count of the battery to change the **Decommission Status**. If this value is less than the actual charge cycle count of the battery, **Decommission Status** is changed to "Need to replace battery." This applies only to [PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) batteries. The default value is 400.
-* **WWAN Test –** tests operation of the WWAN radio and returns related WWAN information
-  * **Sim State –** checks whether the sim card is present
-  * **Voice State –** checks the voice state of the sim card
-  * **Data State –** checks the data state of the sim card
-* **Audio Test –** tests operation of the device microphone and speaker
-  * **Test Timeout –** specifies the time in seconds to wait for user input 
-
-When text values are modified, such as **Test Timeout** or **Ping Address**, these values take effect as long as the app is running. When the app is closed and relaunched, the values retrieved from the configuration file take into effect.
-
-Refer to [Test Criteria](../criteria) section for more information.
-
-##  <a id="-3"></a>
-
-## See Also <a id="seealso"></a>
+## See Also
 
 * [About Device Diagnostic Tool](../about)
 * [Usage Guide](../usage)
-* [Test Criteria](../criteria)
+* [Configuration](../configuration)
 

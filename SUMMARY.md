@@ -1,5 +1,7 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [Configuration - Zebra Technologies TechDocs](untitled.md)
+* [About](README.md)
+* [Configuration](untitled.md)
+* [Criteria](untitled-1.md)
+* [Use](untitled-2.md)
 

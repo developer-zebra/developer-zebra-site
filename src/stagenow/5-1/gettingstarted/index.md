@@ -144,7 +144,10 @@ Select Change. A window indicates that the password was changed successfully.
 
 Select OK.
 
-> **NMOTE**: If the administrator password is forgotten, StageNow must be reinstalled. 
+-----
+
+#### `KEEP YOUR PASSWORD SAFE!`
+Once set, the administrator password is the only means of accessing StageNow features and its saved Profiles and other stored data. If lost or forgotten, **<u>the password can be reset only by uninstalling and reinstalling StageNow</u>, which results in the loss of all stored data and settings**.
 
 -----
 

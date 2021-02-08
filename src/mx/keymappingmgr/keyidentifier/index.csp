@@ -76,6 +76,12 @@ parm:
       devicetype: A
       name: Right
       description: The Right-arrow key
+    - code: NAV_OK
+      mx: "10.4"
+      devicetype: A
+      name: NAV_OK
+      description: Button in center of four-way navigational arrow keys on some devices
+      info: Applies to MC20 devices only. 
     - code: ESC
       mx: "4.4"
       devicetype: A
@@ -131,6 +137,18 @@ parm:
       devicetype: A
       name: Alpha
       description: The "Alpha" modifier/meta key
+    - code: CL
+      mx: "10.4"
+      devicetype: A
+      name: CL
+      description: The key marked with "CL" on some devices
+      info: Applies to MC20 devices only. 
+    - code: FN
+      mx: "10.4"
+      devicetype: A
+      name: FN
+      description: The key marked with "FN" on some devices
+      info: Applies to MC20 devices only. 
     - code: BLUE
       mx: "4.4"
       devicetype: A

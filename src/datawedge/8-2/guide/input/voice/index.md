@@ -17,7 +17,7 @@ Voice Input options:
 * Validate spoken data, edit acquired data as needed
 * Works offline
 
->This feature is supported only on Zebra Android Nougat and Oreo GMS devices.
+>This feature is supported only on Zebra GMS devices with Android Nougat and later.
 
 Watch the DevTalk presentation on DataWedge Voice Input:
 <div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
@@ -226,7 +226,7 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
 Refer to DataWedge [Set Config API](../../api/setconfig).
 
 ##Limitations
-* Voice Input is validated only with English.
+* Voice Input is validated only with English. For use with other languages, the device must be connected to the internet.
 * Offline speech recognition provides lower accuracy levels.
 * In GMS Restricted mode with the use of [App Manager's DisableGMSApps action](/mx/appmgr/#action), Voice Input will not work since it relies on Google speech recognition. 
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 

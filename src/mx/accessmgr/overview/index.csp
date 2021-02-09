@@ -38,12 +38,13 @@ To understand how to obtain an app signature, please see the [SigTools sample ap
  * Allow
  * Deny
  * Allow Device User to Choose
-* **Allow Access to**:
+* **Control Device-user Access to**:
  * Notifications
  * App usage statistics 
  * System Alert Window 
  * App Ops Statistics
  * Battery Statistics
+ * USB/SD Card Storage Management
 * Manage the "whitelist" of applications that a device user can install and launch
 * Control which applications are allowed to submit XML
 * Select whether the device user can access Full or Reduced Settings

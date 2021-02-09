@@ -1,0 +1,34 @@
+---
+csp: usbmgr
+title: USB Module Usage
+type: parm
+order: 2
+mx: "4.2"
+osx: "1.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: UsbModuleUsage
+  type: list
+  list:
+    - code: 0
+      mx: "4.2"
+      osx: "1.3"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to settings on the device; any previous setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Enable 
+      mx: "4.2"
+      osx: "1.3"
+      description: Allows usage of the USB module.
+    - code: 2
+      devicetype: A,B
+      name: Disable
+      mx: "4.2"
+      osx: "1.3"
+      description: Prevents usage of the USB module. 
+---
+
+Controls whether the use of USB module is allowed. Setting this parm would cause all of the USB features to be enabled or disabled.

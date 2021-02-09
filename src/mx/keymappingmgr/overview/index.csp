@@ -16,6 +16,7 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 	* **ET56**
 	* **L10**
 	* MC18
+	* **MC20**
 	* MC33
 	* **MC330**
 	* MC40
@@ -28,10 +29,10 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 	* TC52
 	* TC56
 	* TC57
-	* **TC70**
+	* TC70
 	* TC70x
 	* TC72
-	* **TC75**
+	* TC75
 	* TC75x
 	* TC77
 	* TC8000

@@ -1273,7 +1273,7 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Presentation -** Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
 
-* **Continuous Read -** A press and hold of the scan trigger continuously scans barcodes. The same barcode can be scanned multiple times. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
+* **Continuous Read -** A press and hold of the scan trigger continuously scans barcodes. Scanning stops upon releasing the trigger or when the scanner beam times out. The same barcode can be scanned multiple times. If scanning with the use of intents, for example with the [soft scan trigger](../../api/softscantrigger/), START_SCANNING intent starts continuous scanning until STOP_SCANNING intent is received or until the scanner beam times out. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
 

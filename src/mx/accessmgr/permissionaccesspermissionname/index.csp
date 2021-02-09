@@ -42,7 +42,7 @@ parm:
       description: Grants permission to access battery statistics for the device.
     - code: 6
       mx: "10.4"
-      apilevel: "26"
+      apilevel: "30"
       devicetype: A
       name: android.permission.MANAGE_EXTERNAL_STORAGE
       description: Grants permission to manage USB and/or SD card storage media attached to the device.

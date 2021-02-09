@@ -9,11 +9,11 @@ order: 0
 The TouchMgr adjusts touch-screen sensitivity for different usage scenarios on devices that support sensitivity settings. Touch panel settings can compensate for input with a finger or stylus, when working with gloves or when a screen protector is present. 
 
 * **TouchMgr is supported on the following devices**:
-	* **EC30**
-	* **ET50, ET51, ET55, ET56**
+	* **EC30, EC50, EC55**
+	* **ET50, ET51, ET56**
 	* **L10**
-	* **MC33, MC3300x, MC93**
-	* **TC21, TC26, TC51, TC52, TC52x, TC55, TC56, TC57, TC57x**
+	* **MC20, MC2200, MC2700, MC33, MC33ax, MC3300x, MC93**
+	* **TC21, TC26, TC51, TC52, TC52ax, TC52x, TC55, TC56, TC57, TC57x**
 	* **TC70, TC70x, TC72, TC75, TC75x, TC77**
 	* **TC8000, TC8300**
 	* **VC83**

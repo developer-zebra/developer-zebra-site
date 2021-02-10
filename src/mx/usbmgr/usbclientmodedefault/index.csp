@@ -1,6 +1,6 @@
 ---
 csp: usbmgr
-title: USB client Mode Default
+title: USB Client Mode Default
 type: parm
 order: 2
 mx: "10.4"
@@ -22,25 +22,25 @@ parm:
       name: Charging only (no data transfer) 
       mx: "10.4"
       osx: "1.3"
-      description: Sets USB port to be used for battery charging only. 
+      description: Sets USB port for battery charging only. 
     - code: 8
       devicetype: A
       name: MIDI 
       mx: "10.4"
       osx: "1.3"
-      description: Sets the USB port to be used with Musical Instrument Digital Interface (MIDI) apps. 
+      description: Sets USB port for use with Musical Instrument Digital Interface (MIDI) apps. 
     - code: 16
       devicetype: A
       name: PTP
       mx: "10.4"
       osx: "1.3"
-      description: Sets the USB port to be used for Picture Transfer Protocol (PTP) apps on the device.
+      description: Sets USB port for use with Picture Transfer Protocol (PTP) apps.
     - code: 32
       devicetype: A
       name: USB tethering
       mx: "10.4"
       osx: "1.3"
-      description: Sets the USB port to be used for tethering the device for sharing its internet connection with the host PC.
+      description: Sets USB port for tethering the device for sharing its internet connection with the host PC.
 ---
 
 Used to select the default operating mode of the USB port each time the device establishes a client-mode USB connection with a host PC. 

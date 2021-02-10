@@ -1,6 +1,6 @@
 ---
 csp: wirelessmgr
-title: Bluetooth Turn On/Off
+title: Bluetooth On/Off
 type: parm
 order: 3
 mx: 4.3

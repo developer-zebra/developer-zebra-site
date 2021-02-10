@@ -1,0 +1,30 @@
+---
+csp: wirelessmgr
+title: Wi-Fi Scanning On/Off
+type: parm
+order: 7
+mx: "10.4"
+devicetype: A
+parm:
+  pivotal: No
+  name: WiFiScanningState
+  type: list
+  list:
+    - code: 0
+      mx: "10.4"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parameter from the XML) causes no change to this device setting; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn On 
+      mx: "10.4"
+      description: Turns On the ability to scan using Wi-Fi devices.
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      mx: "10.4"
+      description: Turns Off the ability to scan using Wi-Fi devices.
+---
+
+Controls the ability of the device to scan using connected Wi-Fi peripherals. 

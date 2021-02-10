@@ -12,18 +12,24 @@ The WirelessMgr also can control the GPS Location Mode to help preserve battery 
 
 It's important to distinguish between the terms "State" and "Usage." The State of a radio refers to whether that radio is turned on (and available for communication), or off (inactive). Usage determines whether that radio is enabled on the device. A radio's State can be controlled by the device user or administrator only if its Usage is Turned On (enabled). 
 
-Android devices often come with a variety of wireless communication interfaces. These include bidirectional interfaces such as Bluetooth, Wireless Wide Area Network (WWAN/cellular data), Near Field Communications (NFC) and the unidirectional (receive-only) Global Positioning System (GPS). Wireless radios that can transmit may significantly effect battery life if turned on unnecessarily. Some radios also might need to be turned off in certain situations, such as during air travel or when in hazardous environments.
+Android devices often come with a variety of wireless communication interfaces. These include bidirectional interfaces such as Bluetooth, Wireless Wide Area Network (WWAN/cellular data), Near Field Communications (NFC) and the unidirectional (receive-only) Global Positioning System (GPS). Wireless radios that can transmit may significantly effect battery life if turned on unnecessarily. Some radios also might need to be turned off in certain situations, such as during air travel or when in hazardous or secure environments.
 
 ### Main Functionality
 
-* Enable/Disable user access to device radios:
+* Enable/Disable user access to device radio state (turn on/off):
 	* Bluetooth
 	* Near Field Communication (NFC)
 	* Global Positioning System (GPS)
 	* Wireless Wide Area Network (WWAN/cellular data)
-* Control State of the Bluetooth radio 
+* Control the state (turn on/off):
+	* Bluetooth radio
+	* Bluetooth scanning
+	* Wi-Fi scanning
+	* Location service (devices running Android 8.x Oreo or later)
 * Select internal or external Bluetooth/Wi-Fi antenna
 * Select GPS Location Mode to control battery usage: 
 	* High accuracy
 	* Battery savings
 	* Device only
+
+-----

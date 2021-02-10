@@ -1,0 +1,31 @@
+---
+csp: wirelessmgr
+title: Location Service On/Off
+type: parm
+order: 7
+mx: "10.4"
+devicetype: A
+info: Supported only on devices running Android 8.x Oreo and later.
+parm:
+  pivotal: No
+  name: LocationState
+  type: list
+  list:
+    - code: 0
+      mx: "10.4"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parameter from the XML) causes no change to this device setting; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn On 
+      mx: "10.4"
+      description: Turns On the Location service on the device.
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      mx: "10.4"
+      description: Turns Off the Location service on the device.
+---
+
+Controls use of the Location service on devices running Android 8.x Oreo and later. 

@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: WWAN Radio On/Off
 type: parm
-order: 7
+order: 23
 mx: "4.3"
 osx: "4.3"
 devicetype: A

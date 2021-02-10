@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: GPS Location Mode
 type: parm
-order: 4
+order: 10
 mx: "6.1"
 apilevel: "1"
 devicetype: A

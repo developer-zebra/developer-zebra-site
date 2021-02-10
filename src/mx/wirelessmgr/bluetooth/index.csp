@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: Bluetooth Enable/Disable
 type: parm
-order: 2
+order: 3
 mx: "4.2"
 osx: "4.2"
 devicetype: A

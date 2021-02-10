@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: NFC Radio On/Off
 type: parm
-order: 6
+order: 18
 mx: "4.3"
 apilevel: "29"
 devicetype: A

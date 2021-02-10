@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: Location Service On/Off
 type: parm
-order: 7
+order: 15
 mx: "10.4"
 devicetype: A
 info: Supported only on devices running Android 8.x Oreo and later.

@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: Wi-Fi Scanning On/Off
 type: parm
-order: 7
+order: 20
 mx: "10.4"
 devicetype: A
 parm:

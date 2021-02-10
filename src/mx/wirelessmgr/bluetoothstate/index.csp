@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: Bluetooth On/Off
 type: parm
-order: 7
+order: 5
 mx: 4.3
 apilevel: 5
 devicetype: A

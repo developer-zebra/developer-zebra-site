@@ -2,7 +2,7 @@
 csp: wirelessmgr
 title: Bluetooth Scanning On/Off
 type: parm
-order: 5
+order: 7
 mx: "10.4"
 devicetype: A
 parm:

@@ -6,7 +6,7 @@ order: 10
 mx: "6.1"
 apilevel: "1"
 devicetype: A
-info: This feature is NOT supported on devices running Android 9 (Pie) or later.
+info: Supported only on devices running Android 7.x (Nougat) or earlier.
 parm:
   pivotal: No
   name: GPSLocationMode

@@ -485,7 +485,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#dutchpostal">Dutch Postal</a></p></td>
-<td align="left" valign="top"><p class="table"><!--<a href="#ean8">EAN-8</a><sup>*</sup>--></p></td>
+<td align="left" valign="top"><p class="table">EAN-8</a><sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>

@@ -321,7 +321,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#dutchpostal">Dutch Postal</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">EAN-8<sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
@@ -504,13 +504,13 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 * **Mod-10-10 -** Both check digits are MOD 10.
 
 **Report Check Digit -** Transmit MSI data with or without the check digit. A check in this checkbox will send MSI data with a check digit.
-
+<!--
 ------
 
 ### EAN8
 
 **Convert EAN8 To EAN13 -** Converts EAN8 data to EAN 13 format. A check in the checkbox enables this conversion.
-
+-->
 ------
 
 ### Codabar

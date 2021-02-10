@@ -450,13 +450,14 @@ A list of Decoders appears similar to the image in Step 2.
 
 **To edit Decoder parameters**:
 
-&#49;. **From the Profile being edited, tap Decoder params** as highlighted below.<br>
+&#49;. **From the Profile being edited, tap Decoders.**<br>
 A list of Decoders appears similar to the image in Step 2, below.
-<img style="height:350px" src="decoder_params.png"/>
+<img style="height:350px" src="decoders-selection.png"/>
 <br>
 
-&#50;. **From the Decoder list, tap a Decoder to edit its parameters**. 
-<img style="height:350px" src="edit_decoder_params.png"/>
+&#50;. **From the Decoder list, tap a decoder to edit its parameters.**<br>
+If a decoder has no parameters, a checkbox is displayed to enable/disable the decoder.
+<img style="height:350px" src="decoders.png"/>
 <br>
 
 -----

@@ -81,7 +81,6 @@ parm:
       devicetype: A
       name: NAV_OK
       description: Button in center of four-way navigational arrow keys on some devices
-      info: Applies to MC20 devices only. 
     - code: ESC
       mx: "4.4"
       devicetype: A
@@ -142,13 +141,11 @@ parm:
       devicetype: A
       name: CL
       description: The key marked with "CL" on some devices
-      info: Applies to MC20 devices only. 
     - code: FN
       mx: "10.4"
       devicetype: A
       name: FN
       description: The key marked with "FN" on some devices
-      info: Applies to MC20 devices only. 
     - code: BLUE
       mx: "4.4"
       devicetype: A
@@ -447,3 +444,7 @@ parm:
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, enter the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.
 
 **Not all devices have Keys for every Key Identifier in the table**. Attempts to add an Override Mapping for a Key that is not present on a device will produce an error in the Result XML. For a list of supported Keys on a specific device, query the KeyMappingMgr for Key Identifiers (see Queries, below) or refer to the device documentation. For known deviations from these standards, **see the [Standards and Deviations section](#standardsanddeviations)** of the Overview at the top of this page. 
+
+<!-- 2/10/21 removed from NAV_OK, CL, FN at req. of PDM
+info: Applies to MC20 devices only. -->
+

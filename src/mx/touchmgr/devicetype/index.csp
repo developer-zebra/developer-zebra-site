@@ -23,10 +23,10 @@ parm:
       description: Applies settings for MC33, MC3300x or MC33ax devices.
     - code: 2
       devicetype: A
-      info: MX 10.4 or later is required to use this option for MC20 devices. 
+      info: MX 10.4 or later is required to use this option for some devices. 
       name: 8000
       mx: "9.1"
-      description: Applies settings for TC8000, TC8300 or MC20 devices.
+      description: Applies settings for TC8000 or TC8300 devices.
     - code: 3
       devicetype: A
       name: 8956
@@ -62,3 +62,12 @@ parm:
 ---
 
 Used to enter the group, platform or type of Zebra devices on which to apply settings for touch-screen sensitivity.
+
+<!-- 2/10/21 removed below req. of PDM
+    - code: 2
+      devicetype: A
+      info: MX 10.4 or later is required to use this option for MC20 devices. 
+      name: 8000
+      mx: "9.1"
+      description: Applies settings for TC8000, TC8300 or MC20 devices.
+-->

@@ -4,6 +4,7 @@ title: USB Client Mode Default
 type: parm
 order: 2
 mx: "10.4"
+apilevel: "29"
 devicetype: A
 parm:
   presentif: USB All Access Device Storage Usage is NOT "Disable"
@@ -13,7 +14,7 @@ parm:
   list:
     - code: 86
       mx: "10.4"
-      osx: "1.3"
+      apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to settings on the device; any previous setting is retained.
@@ -21,25 +22,25 @@ parm:
       devicetype: A
       name: Charging only (no data transfer) 
       mx: "10.4"
-      osx: "1.3"
+      apilevel: "29"
       description: Sets USB port for battery charging only. 
     - code: 8
       devicetype: A
       name: MIDI 
       mx: "10.4"
-      osx: "1.3"
+      apilevel: "29"
       description: Sets USB port for use with Musical Instrument Digital Interface (MIDI) apps. 
     - code: 16
       devicetype: A
       name: PTP
       mx: "10.4"
-      osx: "1.3"
+      apilevel: "29"
       description: Sets USB port for use with Picture Transfer Protocol (PTP) apps.
     - code: 32
       devicetype: A
       name: USB tethering
       mx: "10.4"
-      osx: "1.3"
+      apilevel: "29"
       description: Sets USB port for tethering the device for sharing its internet connection with the host PC.
 ---
 

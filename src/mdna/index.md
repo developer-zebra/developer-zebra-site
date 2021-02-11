@@ -56,7 +56,7 @@ features:
    title: Major MX Enhancements Include Display, File, Touch and UI Managers 
    subtitle: New in Zebra MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
-   url: /mx/overview/#addedinmx101
+   url: /mx/overview/#versionhistory
    button_text: Learn More
    video: kRHkg0JGj_Q
    video_type: youtube
@@ -65,7 +65,7 @@ features:
    title: New Beacon Manager CSP Aids Locationing; Updates to 11 Mobility Extensions
    subtitle: New in Zebra MX 10.2
    description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
-   url: /mx/overview/#addedinmx102
+   url: /mx/overview/#versionhistory
    button_text: Learn More
    video: TfFOGnNxAyA
    video_type: youtube

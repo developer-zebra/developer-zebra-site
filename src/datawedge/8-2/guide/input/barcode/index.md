@@ -1171,7 +1171,7 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 **Convert DataBar to UPC EAN -** If enabled, converts DataBar barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. 
 
-**UPC Reduced Quiet Zone -** The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends. If enabled, it prevents the reader from scanning irrelevant UPC information in the quiet zone.
+**UPC Reduced Quiet Zone -** Enable/disable decoding UPC barcodes with reduced quiet zones, the area in front of and at the end of a barcode. Enabling this option increases the aggressiveness in decoding barcodes, resulting to increased decoding time and risk of misdecodes.   
 
 **Bookland -** When enabled, select a Bookland Format from the list below.  
 
@@ -1183,7 +1183,7 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 * **Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
 
-**Coupon -** Enables Coupon code decoding. To successfully decode any Coupon codes, all appropriate decoders must be enabled. 
+**Coupon -** Enable/Disable Coupon code decoding. To successfully decode any Coupon codes, all appropriate decoders must be enabled. 
 
 **Coupon Report Mode -** Traditional coupon symbols are composed of two barcodes: UPC/EAN and Code 128. A new coupon symbol is composed of a single Data Expanded barcode. The new format offers more options for purchase values (up to $999.999) and supports complex discount offers as a second purchase requirement. An interim coupon symbol also exists that contain both types of barcodes: UPC/EAN and Databar Expanded. This format accommodates both retailers that do not recognize or use the additional information included in the new coupon symbol, as well as those who can process new coupon symbols.
 * **Old Coupon Report Mode -** Scanning an old coupon symbol reports both UPC and Code 128. Scanning an interim coupon symbol reports UPC. Scanning a new coupon symbol reports nothing (no decode).
@@ -1206,9 +1206,9 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 * **Level 3 -** If the scanner is still fails to decode, select this security level. Be advised, selecting this option is an extreme measure against decode failures for severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
 
-**Supplemental2 -** A check in the checkbox enables this option.
+**Supplemental2 -** Enable/disable length 2 supplementals.
 
-**Supplemental5 -** A check in the checkbox enables this option.
+**Supplemental5 -** Enable/disable length 5 supplementals.
 
 **Supplemental Mode -** Select one of the following:
 

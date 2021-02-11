@@ -8,7 +8,9 @@ productversion: '8.2'
 ## Overview
 Keystroke Output collects the processed data and sends it to the associated application as a series of keystrokes, emulating the actions of a user pressing keys on the device. DataWedge supports TAB, ENTER and other special characters that might be required by an application to submit acquired data for further processing, to advance the cursor to another input field or for other reasons. Special characters are added to acquired data by using the Action key character (shown below) and in the [Basic Data Formatting](../../process/bdf) or [Advanced Data Formatting](../../process/bdf) Process functions. 
 
-> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
+The parameters of this feature can be configured using [Set Config API](../../api/setconfig).
+
+> For Android 10 and higher, the default keyboard disappears briefly during a scan and reappears after the data is delivered to the app. This is due to the introduction of [DataWedge keyboard](./#keystrokeoutputsetup), using its own input method service to dispatch data.
 
 -----
 
@@ -50,7 +52,8 @@ _Keystroke Output options_
 
 **DataWedge keyboard options -** used to display the DataWedge "keyboard" (a DataWedge icon that displaces the default keyboard) when dispatching keystroke data and set the time period for the duration the DataWedge keyboard is displayed. Applies to Android 10 or higher, in which the default keyboard disappears during a scan and reappears after the data is delivered to the app. By enabling this feature, when a scan is performed the default keyboard is displaced with the DataWedge keyboard when dispatching data. After data dispatch is complete and the timeout elapses, the keyboard is switched back to the default keyboard. Zebra recommends to enable this option in the following situations:<br>
 &nbsp;&nbsp;&nbsp;-&nbsp; When it is required to automatically move to the next text field with ENTER/TAB key after each scan (from Basic Data Formatting settings) in a webpage or Android application.<br>
-&nbsp;&nbsp;&nbsp;-&nbsp; When it is required to prevent the default keyboard from appearing during a continuous scan session.
+&nbsp;&nbsp;&nbsp;-&nbsp; When it is required to prevent the default keyboard from appearing during a continuous scan session.<br>
+DataWedge keyboard options:
 * **Display DataWedge keyboard -** enable/disable the visibility of DataWedge keyboard. DataWedge keyboard shows a graphical user interface when this option is turned on. 
 **Note:** Enabling/Disabling this option will not change the configurations in Android system Language and Input settings.
 * **Keyboard display timeout -** used to set the amount of time (in seconds) the keyboard should remain visible after a scan. Default value is 10 seconds. This timeout applies only when **Display DataWedge keyboard** is enabled. Users can tap on the keyboard UI if required to switch back to the previous keyboard before the timeout elapses. Setting the timeout value to 0 results to an infinite timeout. The keyboard does not switch to the previous keyboard unless the user taps on the DataWedge keyboard UI or there is a profile switch. 

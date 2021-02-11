@@ -13,6 +13,21 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 The following section lists the major features and enhancements added to the MX versions indicated. 
 
+### Added in MX 10.4
+
+**MX 10.4 adds the following major features and enhancements**: 
+
+* **[Access Manager](/mx/accessmgr) adds the ability to**: 
+ * Control device-user access to USB and/or SD card storage 
+* **[Key Mapping Manager](/mx/keymappingmgr) adds**: 
+ * Key identifiers for "OK" "CL" and "FN" keys found on some devices
+* **[Touch Manager](/mx/touchmgr) adds**: 
+ * Support for EC50, EC55, MC2200, MC2700, MC33ax, MC3300x, TC26, TC52ax, TC57x
+* **[USB Manager](/mx/usbmgr) adds**: 
+ * Control over default operating mode of the USB port when connecting with a host PC
+* **[Wireless Manager](/mx/wirelessmgr) adds**: 
+ * Control of the state of Bluetooth scanning, Wi-Fi scanning and Location services
+
 ### Added in MX 10.3
 
 **MX 10.3 adds the following major features and enhancements**: 

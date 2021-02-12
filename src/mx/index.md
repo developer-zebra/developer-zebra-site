@@ -11,8 +11,8 @@ menu:
       url: /mx/overview/#versionhistory
     - title: Feature Matrix
       url: /mx/compatibility
-    - title: Choosing an MX Version
-      url: /mx/choosing-a-version
+    - title: Mobile-display Problems?
+      url: /mx/mobile-display
     - title: Which MX/OSX is on my Device?
       url: /mx/mx-version-on-device
     - icon: fa fa-search

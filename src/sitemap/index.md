@@ -4,8 +4,14 @@ description:
 layout: list-apis.html
 automenu:
   items:
+    - title: About TechDocs
+      items:
+        - title: About TechDocs
+          url: http://techdocs.zebra.com/about
     - title: All Tools (A-Z)
       items:
+        - title: ActiveEdge
+          url: http://techdocs.zebra.com/activeedge
         - title: AppGallery
           url: https://developer.zebra.com/docs/DOC-3040
         - title: Barcode Scanner SDK for Android
@@ -26,10 +32,26 @@ automenu:
           url: http://techdocs.zebra.com/cartscan
         - title: DataWedge
           url: http://techdocs.zebra.com/datawedge
+        - title: DataWedge - Chinese
+          url: https://techdocs.zebra.com/datawedge-cn/7-4/guide/about/
         - title: Device Central
           url: http://techdocs.zebra.com/devicecentral
         - title: Device Diagnostic Tool
           url: http://techdocs.zebra.com/ddt
+        - title: Device Diagnostic Tool - Chinese
+          url: https://techdocs.zebra.com/ddt-cn/2-3/guide/about/
+        - title: Device Diagnostic Tool - French
+          url: https://techdocs.zebra.com/ddt-fr/2-3/guide/about/
+        - title: Device Diagnostic Tool - German
+          url: https://techdocs.zebra.com/ddt-de/2-3/guide/about/
+        - title: Device Diagnostic Tool - Italian
+          url: https://techdocs.zebra.com/ddt-it/2-3/guide/about/
+        - title: Device Diagnostic Tool - Japanese
+          url: https://techdocs.zebra.com/ddt-jp/2-3/guide/about/
+        - title: Device Diagnostic Tool - Portuguese
+          url: https://techdocs.zebra.com/ddt-pt/2-3/guide/about/
+        - title: Device Diagnostic Tool - Spanish
+          url: https://techdocs.zebra.com/ddt-es/2-3/guide/about/
         - title: Device Tracker
           url: http://techdocs.zebra.com/devicetracker
         - title: DEX Scan & Pair
@@ -44,6 +66,8 @@ automenu:
           url: http://techdocs.zebra.com/ehs
         - title: Enterprise Keyboard
           url: http://techdocs.zebra.com/enterprise-keyboard
+        - title: Enterprise Keyboard - Chinese
+          url: https://techdocs.zebra.com/enterprise-keyboard-cn/2-0/guide/about/
         - title: Enterprise Keyboard (EKB) Designer
           url: http://techdocs.zebra.com/ekd
         - title: Link-OS SDKs
@@ -54,6 +78,8 @@ automenu:
           url: http://techdocs.zebra.com/mx/
         - title: OEMConfig
           url: http://techdocs.zebra.com/oemconfig
+        - title: OEMInfo
+          url: http://techdocs.zebra.com/oeminfo
         - title: PowerPrecision Console
           url: http://techdocs.zebra.com/ppc
         - title: RFID
@@ -68,10 +94,14 @@ automenu:
           url: http://techdocs.zebra.com/simulscan
         - title: StageNow
           url: http://techdocs.zebra.com/stagenow/
+        - title: StageNow - Chinese
+          url: https://techdocs.zebra.com/stagenow-cn/3-0/about/
         - title: Xamarin Wrapper for RFID SDK (Android and iOS)
           url: https://techdocs.zebra.com/dcs/scanners/xamarin-rfid/about/
         - title: Xamarin Wrapper for Scanner SDK (Android and iOS)
           url: https://techdocs.zebra.com/dcs/scanners/xamarin-scanner/dev-guide/ 
+        - title: Zebra Data Service
+          url: http://techdocs.zebra.com/zds
         - title: Zebra MDNA Licensing
           url: http://techdocs.zebra.com/licensing
     - title: App/Device Security
@@ -81,7 +111,9 @@ automenu:
         - title: Enterprise Browser
           url: http://techdocs.zebra.com/enterprise-browser/1-7/guide/security
         - title: StageNow 
-          url: http://techdocs.zebra.com/stagenow/2-7/Profiles/managesecurity/
+          url: https://techdocs.zebra.com/stagenow/5-0/Profiles/managesecurity/
+        - title: StageNow - Chinese
+          url: https://techdocs.zebra.com/stagenow-cn/3-0/Profiles/managesecurity/
     - title: App Migration
       items:
         - title: From Pocket Browser 2.x/3x
@@ -102,6 +134,8 @@ automenu:
           url: http://techdocs.zebra.com/enterprise-browser/
         - title: Link-OS SDKs
           url: http://techdocs.zebra.com/link-os/
+        - title: OEMInfo
+          url: http://techdocs.zebra.com/oeminfo
     - title: Dev. Tools (cross platform)
       items:
         - title: EMDK for Xamarin
@@ -112,8 +146,12 @@ automenu:
       items:
         - title: StageNow
           url: http://techdocs.zebra.com/stagenow/
+        - title: StageNow - Chinese
+          url: https://techdocs.zebra.com/stagenow-cn/3-0/about/
     - title: Productivity Tools
       items:
+        - title: ActiveEdge
+          url: http://techdocs.zebra.com/activeedge
         - title: CartScan
           url: http://techdocs.zebra.com/cartscan
         - title: Device Central
@@ -124,6 +162,8 @@ automenu:
           url: http://techdocs.zebra.com/dex-scanpair
         - title: Enterprise Keyboard
           url: http://techdocs.zebra.com/enterprise-keyboard
+        - title: Enterprise Keyboard - Chinese
+          url: https://techdocs.zebra.com/enterprise-keyboard-cn/2-0/guide/about/
         - title: PowerPrecision Console
           url: http://techdocs.zebra.com/ppc
         - title: SimulScan
@@ -138,6 +178,8 @@ automenu:
       items:
         - title: DataWedge
           url: http://techdocs.zebra.com/datawedge
+        - title: DataWedge - Chinese
+          url: https://techdocs.zebra.com/datawedge-cn/7-4/guide/about/
         - title: SimulScan
           url: http://techdocs.zebra.com/simulscan
         - title: EMDK for Android
@@ -168,6 +210,11 @@ automenu:
           url: https://techdocs.zebra.com/dcs/scanners/jpos-windows/about/
         - title: Scanner OPOS Driver for Windows
           url: https://techdocs.zebra.com/dcs/scanners/opos-windows/about/
+    - title: Feedback
+      items:
+        - title: Contact Us
+          url: https://techdocs.zebra.com/contact
+
 
 menu:
   items:

@@ -5,6 +5,12 @@ product: EMDK For Android
 productversion: '9.0'
 ---
 
+#### For help, please refer to [installing Android Studio](https://developer.android.com/studio/install) from the development community. 
+
+
+#### Then go to [EMDK setup instuctions](../setup). 
+
+<!-- 
 ##Removing previous EMDK installations
 >Note: Before upgrading, previous versions of EMDK for Android should be removed.
 
@@ -156,3 +162,4 @@ To add the Zebra Vendor ID to ADB:
 
 
 
+ -->

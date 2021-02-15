@@ -5,6 +5,12 @@ product: EMDK For Android
 productversion: '9.0'
 ---
 
+#### For help, please refer to [installing Android Studio](https://developer.android.com/studio/install) from the development community. 
+
+
+#### Then go to [EMDK setup instuctions](../setup). 
+
+<!-- 
 ##Installing EMDK for Android 
 
 ### 1. Install Android Studio
@@ -110,3 +116,4 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 
 
 
+ -->

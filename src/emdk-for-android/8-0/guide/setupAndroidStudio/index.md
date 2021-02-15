@@ -5,6 +5,12 @@ product: EMDK For Android
 productversion: '8.0'
 ---
 
+#### For help, please refer to [installing Android Studio](https://developer.android.com/studio/install) from the development community. 
+
+
+#### Then go to [EMDK setup instuctions](../setup). 
+<!-- 
+
 ##Installing EMDK for Android 
 
 ### 1. Install Android Studio
@@ -98,7 +104,7 @@ In most cases running the uninstall program will cleanly remove EMDK For Android
 4. Right-click on the above key and then click Delete. Click Yes to the prompt `Are you sure you want to delete this key and all of its subkeys?`.
 
 
-
+ -->
 
 
 

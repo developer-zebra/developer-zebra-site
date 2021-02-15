@@ -5,10 +5,11 @@ product: EMDK For Android
 productversion: '8.0'
 ---
 
-#### For help, please refer to [installing Android Studio](https://developer.android.com/studio/install) docs from the development community. 
+#### For Android Studio help, please refer to [installing Android Studio](https://developer.android.com/studio/install) docs from the development community. 
 
+<br>
 
-#### Then go to [EMDK setup instuctions](../setup). 
+#### For EMDK help, see [EMDK setup instuctions](../setup). 
 
 <!-- 
 ##Removing previous EMDK installations

@@ -38,7 +38,8 @@ The following instructions apply to Android Studio, which is required to use EMD
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **select "Project"** (if not already selected).<br>
-   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one.<br>
+   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** (see image below) or add or download one.<br>
+   <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
    e. **Click "Apply"** and close the dialog.<br>
 3. **Install the EMDK Profile Manager plug-in**:<br>
    a. Go to **File -> Settings.**<br>

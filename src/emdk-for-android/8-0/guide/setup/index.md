@@ -37,8 +37,9 @@ The following instructions apply to Android Studio, which is required to use EMD
 2. **Activate OpenJDK**:<br>
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
-   c. In the left-hand pane **select "SDK Location"** (if not already selected).<br>
-   d. Confirm a **valid "JDK location."** To use the OpenJDK (bundled with Android Studio), select "Embedded JDK."
+   c. In the left-hand pane **select "Project"** (if not already selected).<br>
+   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one.<br>
+   e. **Click "Apply"** and close the dialog.<br>
 3. **Install the EMDK Profile Manager plug-in**:<br>
    a. Go to **File -> Settings.**<br>
    b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>

@@ -10,7 +10,7 @@ Keystroke Output collects the processed data and sends it to the associated appl
 
 The parameters of this feature can be configured using [Set Config API](../../api/setconfig).
 
-> For Android 10 and higher, the default keyboard disappears briefly during a scan and reappears after the data is delivered to the app. This is due to the introduction of [DataWedge keyboard](./#keystrokeoutputsetup), using its own input method service to dispatch data.
+> For Android 10 and higher, the default keyboard disappears briefly during a scan and reappears after the data is delivered to the app. This is due to DataWedge using its own InputMethodService to dispatch data. 
 
 -----
 

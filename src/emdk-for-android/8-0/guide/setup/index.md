@@ -34,13 +34,14 @@ The following instructions apply to Android Studio, which is required to use EMD
 **Note**: Mac OS and Windows dialog boxes might vary slightly. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
-2. **Activate OpenJDK**:<br>
+2. **Select a Project SDK**:<br>
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
-   c. In the left-hand pane **select "Project"** (if not already selected).<br>
-   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** (see image below) or add or download one.<br>
+   c. In the left-hand pane **under Project Settings, select "Project"** (if not already selected).<br>
+   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one, as in the image below:<br>
    <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
-   e. **Click "Apply"** and close the dialog.<br>
+   _Click to enlarge; ESC to exit_.<br>
+   e. **Click "Apply" and then "OK"** to close.<br>
 3. **Install the EMDK Profile Manager plug-in**:<br>
    a. Go to **File -> Settings.**<br>
    b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>

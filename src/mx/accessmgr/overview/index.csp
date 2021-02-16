@@ -45,6 +45,8 @@ To understand how to obtain an app signature, please see the [SigTools sample ap
  * App Ops Statistics
  * Battery Statistics
  * USB/SD Card Storage Management
+ * Grant storage permission to installed apps
+ * "Pre-grant" storage permission to apps yet to be installed
 * Manage the "whitelist" of applications that a device user can install and launch
 * Control which applications are allowed to submit XML
 * Select whether the device user can access Full or Reduced Settings

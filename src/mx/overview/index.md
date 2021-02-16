@@ -17,8 +17,9 @@ The following section lists the major features and enhancements added to the MX 
 
 **MX 10.4 adds the following major features and enhancements**: 
 
-* **[Access Manager](/mx/accessmgr) adds**: 
- * Control of device-user access to USB and/or SD card storage 
+* **[Access Manager](/mx/accessmgr) adds ability to**: 
+ * Grant installed apps access to USB and/or SD card storage
+ * "Pre-grant" USB/SD card storage permission to apps yet to be installed
 * **[Key Mapping Manager](/mx/keymappingmgr) adds**: 
  * Key identifiers for "OK" "CL" and "FN" keys found on some devices
 * **[Touch Manager](/mx/touchmgr) adds**: 

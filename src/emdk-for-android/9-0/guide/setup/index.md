@@ -20,9 +20,9 @@ The following software is required to use EMDK for Android:
 #### macOS  
 * macOS 10.10.5 Yosemite or later
 * [Android Studio](https://developer.android.com/studio/) 2.2 or later
-* A Java Development Kit (JDK)
+* A Java Development Kit (JDK)<br>
 
->**`IMPORTANT:`** It is the developer's responsibility to read and understand the licensing agreement for any selected sofware development kit.
+>**`IMPORTANT:`** Be sure to read and understand the licensing agreement for any selected JDK or SDK.
 
 -----
 
@@ -41,7 +41,8 @@ The following instructions apply to Android Studio, which is required to use EMD
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **under Project Settings, select "Project"** (if not already selected).<br>
-   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one, as in the image below:<br>
+   d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one, as in the image below.<br>
+   **NOTE:** The Android development community recommends OpenJDK.
    <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
    _Click to enlarge; ESC to exit_.<br>
    e. **Click "Apply" and then "OK"** to close.<br>

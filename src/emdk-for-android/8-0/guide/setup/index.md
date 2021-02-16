@@ -1,5 +1,5 @@
 ---
-title: EMDK Setup
+title: Zebra EMDK Setup
 layout: guide.html
 product: EMDK For Android
 productversion: '8.0'
@@ -7,23 +7,22 @@ productversion: '8.0'
 
 ## Overview
 
-**This document describes how to set up Mac OS and Windows computers to work with Zebra's EMDK for Android software development kit**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and serial ports. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
+**This document describes how to set up macOS and Windows computers running Android Studio to work with Zebra's EMDK for Android software development kit**. Android Studio enables Java developers to easily create powerful line-of-business apps for Android. EMDK extends Android Studio with tools to interface with and configure Zebra Android devices and their scanners, ports and other peripherals needed for data acquisition or other enterprise application requirements. 
 
 ### Prerequisites
 The following software is required to use EMDK for Android:
 
 #### Windows
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
-* [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK) 
-* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or later (**optional**)
+* [Android Studio](https://developer.android.com/studio/) 2.2 or later  
+* A Java Development Kit (JDK)
 
-#### Mac OS  
-* Mac OS X (aka macOS) 10.10.5 Yosemite or later
-* [Android Studio](https://developer.android.com/studio/) 2.2 or later (includes OpenJDK)
-* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or later (**optional**)
+#### macOS  
+* macOS 10.10.5 Yosemite or later
+* [Android Studio](https://developer.android.com/studio/) 2.2 or later
+* A Java Development Kit (JDK)
 
-
-> **Note: Zebra recommends using OpenJDK**, which is bundled with Android Studio 2.2 and later.
+>**`IMPORTANT:`** It is the developer's responsibility to read and understand the licensing agreement for any selected sofware development kit.
 
 -----
 
@@ -31,7 +30,11 @@ The following software is required to use EMDK for Android:
 
 The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
 
-**Note**: Mac OS and Windows dialog boxes might vary slightly. 
+> **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions vary slightly. 
+
+#### Set up EMDK for Android:
+
+**[Install Android Studio](https://developer.android.com/studio/)** before proceeding. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Select a Project SDK**:<br>
@@ -74,7 +77,6 @@ _Click to enlarge; ESC to exit_.<br>
 _Click to enlarge; ESC to exit_.<br>
    c. **Add the following line to the dependencies section**:<br>
 
-
         :::java
             dependencies {
             compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
@@ -82,9 +84,9 @@ _Click to enlarge; ESC to exit_.<br>
             }
 5. **Rebuild the project** (Build -> Make Project). 
 
-##### EMDK APIs are now ready to use. 
+#### EMDK APIs are now ready to use. 
 
-#### Notes 
+#### Notes: 
 * A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
 * **See the [full list of EMDK versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 

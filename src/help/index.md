@@ -39,7 +39,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 ##### Go to [DataWedge docs](../datawedge) 
 ##### Need help deciding between DataWedge vs EMDK? See [DataWedge vs EMDK Comparison](#datawedgevsemdkcomparison)
 
-<!-- -->
+<!-- 
 -----
 
 ### SimulScan
@@ -49,7 +49,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 [SimulScan](../simulscan) can optimize workflow by acquiring multiple points of data in a single step. It's included with [supported devices](../simulscan/1-1/guide/about/#supporteddevices) and is free for many scanning scenarios. SimulScan is well suited to organizations in which scanning is frequent and scanned forms have either one or more barcodes or contain multiple data types to acquire (such as barcodes, text and images). Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. **A per-device licensing requirement applies to some scenarios**. 
 
 ##### Go to [SimulScan docs](../simulscan)
-
+-->
 <!-- -->
 -----
 
@@ -92,8 +92,8 @@ It is common for developers to be faced with the decision to choose between Data
   
   <tr>
 	  <td><b>Ease of coding</b></td>
-	  <td>- <a href="http://techdocs.zebra.com/datawedge/latest/guide/profiles/">Using Profiles</a>: No coding required <br>- <a href="http://techdocs.zebra.com/datawedge/latest/guide/api/">Using Intents</a>: Minimal coding required. Common coding practices to receive input data from intents: barcode, serial/USB port, Simulscan, magnetic stripe reader, Data Capture Plus</td>
-	  <td><a href="http://techdocs.zebra.com/emdk-for-android/latest/guide/about/">API based</a> - major coding required. Entirely different code required to receive each input data: barcode, serial/USB port, Simulscan, magnetic stripe reader, Data Capture Plus</td>
+	  <td>- <a href="http://techdocs.zebra.com/datawedge/latest/guide/profiles/">Using Profiles</a>: No coding required <br>- <a href="http://techdocs.zebra.com/datawedge/latest/guide/api/">Using Intents</a>: Minimal coding required. Common coding practices to receive input data from intents: barcode, serial/USB port, magnetic stripe reader, Data Capture Plus</td>
+	  <td><a href="http://techdocs.zebra.com/emdk-for-android/latest/guide/about/">API based</a> - major coding required. Entirely different code required to receive each input data: barcode, serial/USB port, magnetic stripe reader, Data Capture Plus</td>
   </tr>
 
   <tr>

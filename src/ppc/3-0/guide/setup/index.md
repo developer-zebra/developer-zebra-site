@@ -66,6 +66,7 @@ This section provides the server and device requirements. PPC supports a maximum
    Refer to [PowerPrecision and Battery Management Fact Sheet](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/powerprecision/fact-sheets/data-capture-dna-power-precision-fact-sheet-en-us.pdf) for more information.
 3. Zebra Data Services agent is required to be running on the mobile computer. This agent collects battery health data from the device and sends it to the ZDVC server.
 4. The ZDVC server is installed and running.
+5. Device WiFi must be enabled and connected to the network to communicate with the server.
 
 ## Server Install & Setup
 

@@ -15,7 +15,7 @@ Hardware features tested:
 - **Button Test** – checks the operation of push-to-talk, left or right scan trigger, volume up and volume down device buttons
 - **Touch Screen Test** – checks for operation of the device touch display
 - **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
-- **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, signal strength, ESSID, IP address, BSSID, and speed
+- **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, signal strength, IP address, BSSID, and speed
 - **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, temperature, battery level and current capacity
 - **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 - **Audio Test** – checks for operation of the device microphone and speaker
@@ -30,6 +30,7 @@ Hardware features tested:
 * New feature to [schedule jobs](../usage/#schedulejobs) for device tests.
 * New [battery threshold value](../configuration/#configuretests) to set the maximum charge cycle count of the battery that triggers "Need to replace battery" in the **Decommission Status.**
 * Fixed issue: On devices with large screens, such as tablets (e.g. ET51/ET56, L10) and vehicle mounted computers (e.g. VC80x, VC8300), both portrait and landscape modes are now supported.
+* Due to a new policy in the Google Play Store, location can no longer be used in the background. This led to the removal of Location permission from Device Diagnostic Tool. As a result, ESSID can no longer be retrieved since it relies on the location service.
 
 ## Version History
 
@@ -43,7 +44,7 @@ Hardware features tested:
 * Fixed an issue where DDT does not revert the device back to its original device orientation, landscape or portrait mode, after application exit.
 * [Enhancements:](../usage/#userinterface)
         * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. If the WiFi radio is not enabled when initiating the WLAN test, the user is prompted to enable the radio.
-        * To display the ESSID from a WLAN test on Android O or higher, _Location_ service is required to be enabled on the device due to Android restrictions. If _Location_ service is not enabled, the user is prompted to enable it. If the test proceeds without _Location_ service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
+        * To display the ESSID from a WLAN test on Android O or higher, Location service is required to be enabled on the device due to Android restrictions. If Location service is not enabled, the user is prompted to enable it. If the test proceeds without Location service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
         * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
 
 ### New in 2.2

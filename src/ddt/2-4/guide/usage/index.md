@@ -96,11 +96,13 @@ Checks for operation of the WiFi radio and returns WiFi related information. Res
 - **MAC Address –** _valid_ or _invalid_
 - **Network Test –** displays _connected_ or _not connected_<!-- _ping failed_ or the time (in ms or sec) it takes to ping the specified address if successful.--> Failure occurs if the WiFi is not connected to any network. The state of the radio is preserved prior to this test. If test is successful, the following values are displayed:
   - **strength –** displays signal strength
-  - **essid –** displays ESSID. To display the ESSID **on Android O and above,** _Location_ is required to be enabled in device settings due to Android restrictions. If _Location_ is not enabled, the user is prompted to enable it. If the user proceeds to run the test without _Location_ enabled, _ESSID_ returns "Location not enabled."
   - **ip –** displays IP address
   - **bssid –** _valid_ or _invalid_
   - **speed –** displays connection speed
-    <br><br>
+  <!-- 
+  - **essid –** displays ESSID. To display the ESSID **on Android O and above,** _Location_ is required to be enabled in device settings due to Android restrictions. If _Location_ is not enabled, the user is prompted to enable it. If the user proceeds to run the test without _Location_ enabled, _ESSID_ returns "Location not enabled."
+  -->
+<br>
 
 ### Battery Test
 

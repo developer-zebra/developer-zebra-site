@@ -42,7 +42,7 @@ The following instructions apply to Android Studio, which is required to use EMD
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **under Project Settings, select "Project"** (if not already selected).<br>
    d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one, as in the image below.<br>
-   **NOTE:** The Android development community recommends OpenJDK.
+   **NOTE:** The [Android development community recommends](https://developer.android.com/studio/intro/studio-config#jdk) using the latest OpenJDK.<br>
    <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
    _Click to enlarge; ESC to exit_.<br>
    e. **Click "Apply" and then "OK"** to close.<br>

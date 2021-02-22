@@ -42,7 +42,7 @@ The following instructions apply to Android Studio, which is required to use EMD
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **under Project Settings, select "Project"** (if not already selected).<br>
    d. In the right-hand pane **under "Project SDK," select an SDK from the drop-down** or add or download one, as in the image below.<br>
-   **NOTE:** The Android development community recommends OpenJDK.
+   **NOTE:** The [Android development community recommends](https://developer.android.com/studio/intro/studio-config#jdk) using the latest OpenJDK.<br>
    <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
    _Click to enlarge; ESC to exit_.<br>
    e. **Click "Apply" and then "OK"** to close.<br>
@@ -50,7 +50,7 @@ The following instructions apply to Android Studio, which is required to use EMD
    a. Go to **File -> Settings.**<br>
    b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
    c. **Enter "emdk" in the search box**.<br>
-   d. **Select "installed.**"<br>
+   d. **Click the "installed" tab**.<br>
     •  If no result appears, skip to Step 3e.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
 _Click to enlarge; ESC to exit_.<br>
@@ -60,7 +60,7 @@ _Click to enlarge; ESC to exit_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
     •  In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
-   e. **Click "Marketplace."**<br>
+   e. **Click the "Marketplace" tab**.<br>
    f. **Enter "emdk" in the search box**.<br>
    g. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
    <img alt="image" style="height:350px" src="install_plugin_02.png"/>

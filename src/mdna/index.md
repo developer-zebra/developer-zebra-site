@@ -20,7 +20,7 @@ features:
    title: New Touch Mode Panel Quickly Adapts to Change
    subtitle: New in Zebra MX 10.3  
    description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, a new settings panel that allows users to switch touch-screen modes to quickly adapt to changes in the computing environment. 
-   url: /mx/powerkeymgr/#touch-panel-showhide
+   url: https://techdocs.zebra.com/mx/powerkeymgr/#touch-panel-showhide
    video: kRHkg0JGj_Q
    video_type: youtube
    button_text: Learn More
@@ -29,7 +29,7 @@ features:
    title: Select Which Apps to Update Without Allowing All 
    subtitle: New in Zebra MX 10.3 
    description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. Now, Zebra's App Manager utility lets administrators decide which apps on a device can update and which should stay the same until explicitly allowed to receive an upgrade. 
-   url: /mx/appmgr/#action
+   url: https://techdocs.zebra.com/mx/appmgr/#action
    video: t7J8e2rVcMM
    video_type: youtube
    button_text: See 'AllowApplicationUpgrade' Action 
@@ -38,7 +38,7 @@ features:
    title: Smart Leash Helps Keep Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
    description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they've been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
-   url: /devicecentral/latest/guide/usage/#smartleash
+   url: https://techdocs.zebra.com/devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
    button_text: Learn More   
@@ -47,7 +47,7 @@ features:
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
    description: DataWedge can now detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on a device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
-   url: /datawedge/latest/guide/input/barcode/#documentselection
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
@@ -56,7 +56,7 @@ features:
    title: Smart Profiles Simplify Download, Installation of Lifeguard Updates
    subtitle: New in Zebra StageNow 5.0
    description: With Smart Profiles, which integrates Zebra’s Smart Repository with Lifeguard update data, admins now can easily and quickly deploy updates that apply to any set of specific devices. StageNow is a free Windows tool that gives administrators an easy way to stage, set up and mass-deploy Zebra’s Android mobile computers.   
-   url: /stagenow/latest/smartprofile/
+   url: https://techdocs.zebra.com/stagenow/latest/smartprofile/
    video: nPqciL_aDpc
    video_type: youtube
    button_text: Learn More      

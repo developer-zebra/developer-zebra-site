@@ -16,11 +16,29 @@ main-heading: More New Mobility DNA Features
 features-heading: Latest Mobility DNA Features
 features:
  - image-location: left
+   anchor_id: touch-mode
+   title: New Touch Mode Panel Quickly Adapts to Change
+   subtitle: New in Zebra MX 10.3  
+   description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, a new settings panel that allows users to switch touch-screen modes to quickly adapt to changes in the computing environment. 
+   url: /mx/powerkeymgr/#touch-panel-showhide
+   video: kRHkg0JGj_Q
+   video_type: youtube
+   button_text: Learn More
+ - image-location: right
+   anchor_id: update-app
+   title: Select Which Apps to Update Without Allowing All 
+   subtitle: New in Zebra MX 10.3 
+   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. Now, Zebra's App Manager utility lets administrators decide which apps on a device can update and which should stay the same until explicitly allowed to receive an upgrade. 
+   url: /mx/appmgr/#action
+   video: t7J8e2rVcMM
+   video_type: youtube
+   button_text: See 'AllowApplicationUpgrade' Action 
+ - image-location: left
    anchor_id: smart-leash
-   title: Device Central Smart Leash Keeps Peripherals Close at Hand
+   title: Smart Leash Helps Keep Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
    description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they've been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
-   url: /devicecentral
+   url: /devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
    button_text: Learn More   
@@ -28,17 +46,17 @@ features:
    anchor_id: signature-presence
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
-   description: With DataWedge, detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on the device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
-   url: /datawedge
+   description: DataWedge can now detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on a device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
+   url: /datawedge/latest/guide/input/barcode/#documentselection
    video: 4vS5Y2q9Vkg
    video_type: youtube
    button_text: Learn More
  - image-location: left
    anchor_id: smart-repository
-   title: Smart Repository Simplifies Download, Installation of Lifeguard Updates
+   title: Smart Profiles Simplify Download, Installation of Lifeguard Updates
    subtitle: New in Zebra StageNow 5.0
-   description: With integration of Zebra’s Smart Repository of Lifeguard updates, admins can easily and quickly deploy updates applicable to their specific devices. StageNow is a tool that provides an easy way to stage, set up and mass deploy Zebra’s Android mobile computers.   
-   url: /stagenow
+   description: With Smart Profiles, which integrates Zebra’s Smart Repository with Lifeguard update data, admins now can easily and quickly deploy updates that apply to any set of specific devices. StageNow is a free Windows tool that gives administrators an easy way to stage, set up and mass-deploy Zebra’s Android mobile computers.   
+   url: /stagenow/latest/smartprofile/
    video: nPqciL_aDpc
    video_type: youtube
    button_text: Learn More      
@@ -152,24 +170,6 @@ features:
    button_text: Learn More
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
- - image-location: left
-   anchor_id: touch-mode
-   title: New Touch Mode Panel Quickly Adapts to Change
-   subtitle: Implemented in Zebra MX 10.3 - Device update available Jan. 2021  
-   description: Long-pressing the power key on supported Zebra devices will soon provide quick access to Touch Mode settings, a new settings panel that allows users to switch touch modes and quickly adapt to changes in the computing environment. 
-   url: /mx/touchmgr
-   video: kRHkg0JGj_Q
-   video_type: youtube
-   button_text: About TouchMgr 
- - image-location: right
-   anchor_id: update-app
-   title: Select Which Apps to Update Without Blocking All 
-   subtitle: Implemented in Zebra MX 10.3 - Device update available Jan. 2021 
-   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. New features coming in Zebra's App Manager utility, part of MX, let administrators decide which apps on a device can update and which should stay the same until explicitly allowed to update. 
-   url: /mx/appmgr/
-   video: t7J8e2rVcMM
-   video_type: youtube
-   button_text: About AppMgr 
  - image-location: left
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 

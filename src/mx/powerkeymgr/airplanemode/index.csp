@@ -5,7 +5,9 @@ type: parm
 order: 2
 mx: "4.3"
 osx: "4.3"
+osx-exclude: "8.0"
 devicetype: A
+info: Display of a disabled "Airplane Mode" control varies by device. On some devices the control is hidden, on others it's "grayed out," and on the MC18, MC33, MC40 and MC67 devices it appears normally but has no effect.
 parm:
   pivotal: Yes
   name: AirPlaneMode
@@ -14,6 +16,7 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
+      osx-exclude: "8.0"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to Power-off Menu settings; any previously selected setting is retained.
@@ -22,15 +25,17 @@ parm:
       name: Show Menu Option
       mx: "4.3"
       osx: "4.3"
+      osx-exclude: "8.0"
       description: Enables Airplane Mode to be controlled from the Power Off menu.
     - code: 2
       devicetype: A
       name: Do not show Menu Option
       mx: "4.3"
       osx: "4.3"
+      osx-exclude: "8.0"
       description: Prevents Airplane Mode from being controlled from the Power Off menu (see NOTE, above).
 ---
 
-Controls whether the Airplane Mode control is accessible from the Power Off menu. When a device enters Airplane Mode, its Bluetooth, cellular and Wi-Fi radios are disabled; Bluetooth and Wi-Fi radios can be turned back on if desired by the user. **NOTE: Display of a disabled "Airplane Mode" control varies by device. On some devices the control is hidden, on others it's "grayed out," and on the MC18, MC33, MC40 and MC67 devices it appears normally but has no effect**.
+Controls whether the Airplane Mode control is accessible from the Power Off menu. When a device enters Airplane Mode, its Bluetooth, cellular and Wi-Fi radios are disabled; Bluetooth and Wi-Fi radios can be turned back on if desired by the user.
 
 <!-- 1/20/2020 - MC33 added per TUT-36901-->

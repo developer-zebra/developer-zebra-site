@@ -32,7 +32,7 @@ features:
    url: https://techdocs.zebra.com/mx/appmgr/#action
    video: t7J8e2rVcMM
    video_type: youtube
-   button_text: See 'AllowApplicationUpgrade' Action 
+   button_text: Click, then scroll down to see Actions 16 and 17 
  - image-location: left
    anchor_id: smart-leash
    title: Smart Leash Helps Keep Peripherals Close at Hand
@@ -41,7 +41,7 @@ features:
    url: https://techdocs.zebra.com/devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
-   button_text: Learn More   
+   button_text: Learn more about this feature
  - image-location: right
    anchor_id: signature-presence
    title: Detect the Presence of a Signature
@@ -59,14 +59,14 @@ features:
    url: https://techdocs.zebra.com/stagenow/latest/smartprofile/
    video: nPqciL_aDpc
    video_type: youtube
-   button_text: Learn More      
+   button_text: Learn more about this feature      
  - image-location: right
    anchor_id: wakeup-scan
    title: "DataWedge 'Wake Up and Scan' Speeds Up Scanning" 
    subtitle: New in Zebra DataWedge 8.1
    description: Instantly capture barcodes with the press of the scan button when resuming operation after device suspend, eliminating delays and improving productivity. 
    url: /datawedge
-   button_text: Learn More
+   button_text: Learn more about this feature
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: left
@@ -75,7 +75,7 @@ features:
    subtitle: New in Zebra MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: /mx/overview/#versionhistory
-   button_text: Learn More
+   button_text: Learn more about this feature
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: right
@@ -84,7 +84,7 @@ features:
    subtitle: New in Zebra MX 10.2
    description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: /mx/overview/#versionhistory
-   button_text: Learn More
+   button_text: Learn more about this feature
    video: TfFOGnNxAyA
    video_type: youtube
  - image-location: left
@@ -95,25 +95,25 @@ features:
    url: /datawedge
    video: l85vNZdrZxw
    video_type: youtube
-   button_text: Learn More
+   button_text: Learn more about this feature
  - image-location: right
    anchor_id: multiple-scanner-support
    title: Datawedge Now Supports Multiple Scanners in a Session
    subtitle: New in Zebra DataWedge 8.2
    description: DataWedge now allows device users to scan with multiple different barcode scanners during a single scanning session, without the need to stop and reconfigure the device to change scanner configurations.
    url: /datawedge
-   button_text: Learn More
+   button_text: Learn more about this feature
    video: QYDezVYFpN4
    video_type: youtube   
  - image-location: left
    anchor_id: dtrk-ng
    title: Now Cloud-based, Device Tracker Helps Locate Misplaced Zebra Devices
    subtitle: New with Zebra Device Tracker 4.0
-   description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Now cloud-based, Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
+   description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
    url: /devicetracker
    video: MzCWdLUhEPY
    video_type: youtube
-   button_text: Learn More 
+   button_text: Learn more about Device Tracker 
  - image-location: right
    anchor_id: eac-utility
    title: Zebra EAC 1.0 Utility Simplifies DOM Injection 
@@ -122,7 +122,7 @@ features:
    url: /enterprise-browser/latest/guide/eac/
    video: 7aUm-IO9utM
    video_type: youtube
-   button_text: Learn More 
+   button_text: Learn more about this feature 
  - image-location: left
    anchor_id: smart-leash
    title: Feature-based Licensing Puts Admins in Control 
@@ -140,7 +140,7 @@ features:
    url: /datawedge
    video: DI8pxsTJdtI
    video_type: youtube
-   button_text: Learn More 
+   button_text: Learn more about this feature 
  - image-location: left
    anchor_id: term-based-license
    title: New Term-based Licensing Puts Admins in Charge
@@ -149,7 +149,7 @@ features:
    url: /enterprise-browser
    video: IjNspS96BNg
    video_type: youtube
-   button_text: Learn More 
+   button_text: Learn more about this feature 
  - image-location: right
    anchor_id: alert-button
    title: Alert Button Can Save Time, Maybe Lives
@@ -167,7 +167,7 @@ features:
    url: /enterprise-browser/latest/guide/about/#newinv30
    video: ngi_MPoBtRI
    video_type: youtube
-   button_text: Learn More
+   button_text: Learn more about this feature
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: left

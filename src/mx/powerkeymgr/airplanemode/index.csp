@@ -7,7 +7,7 @@ mx: "4.3"
 osx: "4.3"
 osx-exclude: "8.0"
 devicetype: A
-info: Display of a disabled "Airplane Mode" control varies by device. On some devices the control is hidden, on others it's "grayed out," and on the MC18, MC33, MC40 and MC67 devices it appears normally but has no effect.
+info: Not supported in devices running Android 8.x Oreo or later. Display of a disabled "Airplane Mode" control varies by device. On some devices the control is hidden, on others it's "grayed out," and on the MC18, MC33, MC40 and MC67 devices it appears normally but has no effect.
 parm:
   pivotal: Yes
   name: AirPlaneMode

@@ -62,30 +62,30 @@ features:
    button_text: Learn more about this feature      
  - image-location: right
    anchor_id: wakeup-scan
-   title: "DataWedge 'Wake Up and Scan' Speeds Up Scanning" 
+   title: "Trigger Wakeup and Scan" Reduces Workflow Delays 
    subtitle: New in Zebra DataWedge 8.1
-   description: Instantly capture barcodes with the press of the scan button when resuming operation after device suspend, eliminating delays and improving productivity. 
-   url: /datawedge
-   button_text: Learn more about this feature
+   description: DataWedge can now instantly capture barcodes with a press of the scan button when resuming operation after device suspend, eliminating delays in workflow and improving worker productivity. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#readerparams
+   button_text: Click for Reader Params, then scroll down to see this feature
    video: bR_uJwpVZD0
-   video_type: youtube
- - image-location: left
-   anchor_id: mx-enhancements
-   title: Major MX Enhancements Include Display, File, Touch and UI Managers 
-   subtitle: New in Zebra MX 10.1
-   description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
-   url: /mx/overview/#versionhistory
-   button_text: Learn more about this feature
-   video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: right
    anchor_id: beacon-manager
    title: New Beacon Manager CSP Aids Locationing; Updates to 11 Mobility Extensions
    subtitle: New in Zebra MX 10.2
    description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
-   url: /mx/overview/#versionhistory
-   button_text: Learn more about this feature
+   url: https://techdocs.zebra.com/mx/overview/#addedinmx102
+   button_text: See all of what's new in Zebra MX 10.2
    video: TfFOGnNxAyA
+   video_type: youtube
+ - image-location: left
+   anchor_id: mx-enhancements
+   title: Major MX Enhancements Include Display, File, Touch and UI Managers 
+   subtitle: New in Zebra MX 10.1
+   description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
+   url: https://techdocs.zebra.com/mx/overview/#versionhistory
+   button_text: See all new features in MX 10.1
+   video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: left
    anchor_id: btscanner-notifications

@@ -23,7 +23,7 @@ features:
    url: https://techdocs.zebra.com/mx/powerkeymgr/#touch-panel-showhide
    video: kRHkg0JGj_Q
    video_type: youtube
-   button_text: Learn More
+   button_text: Learn More About This Feature
  - image-location: right
    anchor_id: update-app
    title: Select Which Apps to Update Without Allowing All 
@@ -32,7 +32,7 @@ features:
    url: https://techdocs.zebra.com/mx/appmgr/#action
    video: t7J8e2rVcMM
    video_type: youtube
-   button_text: Click, then scroll down to see Actions 16 and 17 
+   button_text: Click, then scroll down to see Actions 16 & 17 
  - image-location: left
    anchor_id: smart-leash
    title: Smart Leash Helps Keep Peripherals Close at Hand
@@ -50,7 +50,7 @@ features:
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: 4vS5Y2q9Vkg
    video_type: youtube
-   button_text: Learn More
+   button_text: Learn more about this feature
  - image-location: left
    anchor_id: smart-repository
    title: Smart Profiles Simplify Download, Installation of Lifeguard Updates
@@ -62,14 +62,14 @@ features:
    button_text: Learn more about this feature      
  - image-location: right
    anchor_id: wakeup-scan
-   title: "Trigger Wakeup and Scan" Reduces Workflow Delays 
+   title: "'Trigger Wakeup and Scan' Feature Reduces Workflow Delays" 
    subtitle: New in Zebra DataWedge 8.1
    description: DataWedge can now instantly capture barcodes with a press of the scan button when resuming operation after device suspend, eliminating delays in workflow and improving worker productivity. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#readerparams
    button_text: Click for Reader Params, then scroll down to see this feature
    video: bR_uJwpVZD0
    video_type: youtube
- - image-location: right
+ - image-location: left
    anchor_id: beacon-manager
    title: New Beacon Manager CSP Aids Locationing; Updates to 11 Mobility Extensions
    subtitle: New in Zebra MX 10.2
@@ -78,7 +78,7 @@ features:
    button_text: See all of what's new in Zebra MX 10.2
    video: TfFOGnNxAyA
    video_type: youtube
- - image-location: left
+ - image-location: right
    anchor_id: mx-enhancements
    title: Major MX Enhancements Include Display, File, Touch and UI Managers 
    subtitle: New in Zebra MX 10.1
@@ -170,7 +170,7 @@ features:
    button_text: Learn more about this feature
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
- - image-location: left
+ - image-location: right
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
    subtitle: Coming to DataWedge in early 2021 

@@ -136,8 +136,8 @@ features:
    anchor_id: full-doc-capture
    title: DataWedge Does Edge Detection, Full-document Capture
    subtitle: New in Zebra DataWedge 8.2 
-   description: Easily capture an entire form without the need for a barcode by automatically detecting the edges of the form during document scans with DataWedge 8.2. 
-   url: /datawedge
+   description: DataWedge 8.2 now automatically detects the edges of a form during document scans, more easily capturing the entire form without the need for a barcode. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: DI8pxsTJdtI
    video_type: youtube
    button_text: Learn more about this feature 
@@ -146,19 +146,19 @@ features:
    title: New Term-based Licensing Puts Admins in Charge
    subtitle: New in Zebra Enterprise Browser 3.0.6
    description: Term-based licensing allows organizations to purchase Enterprise Browser licenses for a limited time period, giving administrators additional flexibility when planning projects and budgets. One-, three- and five-year terms are available, as is a 90-day trial term. Also new is a 30-day evaluation term, which comes preinstalled with every EB 3.0 download.
-   url: /enterprise-browser
+   url: https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/
    video: IjNspS96BNg
    video_type: youtube
-   button_text: Learn more about this feature 
+   button_text: Learn About Enterprise Browser Licensing 
  - image-location: right
    anchor_id: alert-button
    title: Alert Button Can Save Time, Maybe Lives
    subtitle: New in Zebra MX 10.2, StageNow 5.0; Both available now
-   description: Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
-   url: /stagenow/latest/stagingprofiles/
+   description: Zebra devices now offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical assistance or launching any custom Android app or activity. 
+   url: https://techdocs.zebra.com/stagenow/latest/stagingprofiles/#alertbutton
    video: YpDATt5SU-o
    video_type: youtube
-   button_text: How to Use
+   button_text: Learn how to use this feature
  - image-location: left
    anchor_id: eb-new
    title: Pinch-to-Zoom, NavBar Now in Control 

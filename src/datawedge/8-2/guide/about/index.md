@@ -162,6 +162,9 @@ For more information about approved languages or to download a localized operati
     * Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselection)
 * New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 * Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
+* The [DataWedge Reporting](../settings/#reporting) feature is being deprecated and will be discontinued in devices running Android 12. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
+    * **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
+    * **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle.
 <!--
 * Note: The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
     * Data capture start option - Start phrase

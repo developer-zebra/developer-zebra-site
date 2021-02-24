@@ -311,6 +311,10 @@ While DataWedge is running, it receives a system notification whenever a Config 
 
 DataWedge 6.6 (and higher) can report the results of the importation of device Profiles. These HTML reports display settings differences between the originating (source) database and the target (destination) device. This allows administrators to easily identify differences and make adjustments to compensate for disparities in hardware or software capabilities from one device to another. **Reports always use the destination device as the basis against which to compare incoming settings files**. 
 
+> This **Reporting** feature is being deprecated and will be discontinued in devices running Android 12. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦&nbsp; **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦&nbsp; **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle.
+
 <img style="height:350px" src="settings_reporting.jpg"/>
 _Reporting added in DataWedge 6.6_. 
 <br>

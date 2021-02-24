@@ -66,7 +66,7 @@ features:
    subtitle: New in Zebra DataWedge 8.1
    description: DataWedge can now instantly capture barcodes with a press of the scan button when resuming operation after device suspend, eliminating delays in workflow and improving worker productivity. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#readerparams
-   button_text: Click for Reader Params, then scroll down to see this feature
+   button_text: Learn mode about Reader Params including Trigger and Wakeup
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: left
@@ -75,7 +75,7 @@ features:
    subtitle: New in Zebra MX 10.2
    description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: https://techdocs.zebra.com/mx/overview/#addedinmx102
-   button_text: Learn what's new in Zebra MX 10.2
+   button_text: Learn more about Zebra MX 10.2
    video: TfFOGnNxAyA
    video_type: youtube
  - image-location: right
@@ -84,7 +84,7 @@ features:
    subtitle: New in Zebra MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: https://techdocs.zebra.com/mx/overview/#versionhistory
-   button_text: Learn what's new in Zebra MX 10.1
+   button_text: Learn more about Zebra MX 10.1
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: left
@@ -95,7 +95,7 @@ features:
    url: https://techdocs.zebra.com/datawedge/latest/guide/api/notify/
    video: l85vNZdrZxw
    video_type: youtube
-   button_text: See the Bluetooth Scanner Notifications API
+   button_text: Learn more about the Bluetooth Scanner Notifications API
  - image-location: right
    anchor_id: multiple-scanner-support
    title: Switch Scanners in a Session Without Reconfiguring DataWedge
@@ -149,7 +149,7 @@ features:
    url: https://techdocs.zebra.com/enterprise-browser/latest/guide/licensing/
    video: IjNspS96BNg
    video_type: youtube
-   button_text: Learn About Enterprise Browser Licensing 
+   button_text: Learn More About Enterprise Browser Licensing 
  - image-location: right
    anchor_id: alert-button
    title: Alert Button Can Save Time, Maybe Lives
@@ -158,7 +158,7 @@ features:
    url: https://techdocs.zebra.com/stagenow/latest/stagingprofiles/#alertbutton
    video: YpDATt5SU-o
    video_type: youtube
-   button_text: Learn how to use this feature
+   button_text: Learn more about the Alert Button
  - image-location: left
    anchor_id: eb-new
    title: Pinch-to-Zoom, NavBar Now in Control 
@@ -178,7 +178,7 @@ comingsoon:
    url: https://techdocs.zebra.com/mx/overview/#versionhistory
    video: HduN12nASNM
    video_type: youtube
-   button_text: Learn More about new features in MX 10.4 
+   button_text: Learn more about MX 10.4 
  - image-location: left
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 

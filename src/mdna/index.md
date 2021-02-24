@@ -173,9 +173,18 @@ comingsoon:
  - image-location: right
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
-   subtitle: Coming to DataWedge in early 2021 
+   subtitle: Coming Soon to Devices 
+   description: With Zebra's MX 10.4, device administrators will be able to grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
+   url: https://techdocs.zebra.com/mx/overview/#versionhistory
+   video: HduN12nASNM
+   video_type: youtube
+   button_text: See all new features in MX 10.4 
+ - image-location: left
+   anchor_id: specific-barcodes
+   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
+   subtitle: Coming to DataWedge in Early 2021 
    description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
-   url: /datawedge/
+   url: https://techdocs.zebra.com/datawedge
    video: 5Kr8h-Cke6k
    video_type: youtube
    button_text: About DataWedge 
@@ -187,6 +196,8 @@ comingsoon:
   
   For no "Learn More" BUTTON, remove this line: 
   button_text: Learn More
+ 
+MX 10.4 vid: https://youtu.be/HduN12nASNM
  -->
 <style>
 h2 a {

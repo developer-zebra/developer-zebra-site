@@ -5,7 +5,7 @@ video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/
 video_type: html5
 video_thumb: video_thumb.jpg
 copy: What’s inside the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA — the genetic code that gives our mobile computers distinct enterprise capabilities.Its unique software ecosystem transforms Android™, the world’s most popular consumer operating system, into an enterprise-ready force. Now, the pains common to other enterprise mobility platforms disappear — making application management simpler, integration problem-free and operations a powerhouse of productivity.
-button_text: Learn More
+button_text: Learn More About MDNA
 url-button: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
 button_text_additional: Coming Soon
 url_button_more: ./#coming
@@ -23,7 +23,7 @@ features:
    url: https://techdocs.zebra.com/mx/powerkeymgr/#touch-panel-showhide
    video: kRHkg0JGj_Q
    video_type: youtube
-   button_text: Learn More About This Feature
+   button_text: Learn More About The Touch Mode Panel
  - image-location: right
    anchor_id: update-app
    title: Select Which Apps to Update Without Allowing All 
@@ -41,7 +41,7 @@ features:
    url: https://techdocs.zebra.com/devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
-   button_text: Learn more about this feature
+   button_text: Learn more about Smart Leash
  - image-location: right
    anchor_id: signature-presence
    title: Detect the Presence of a Signature
@@ -50,7 +50,7 @@ features:
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: 4vS5Y2q9Vkg
    video_type: youtube
-   button_text: Learn more about this feature
+   button_text: Learn more about Signature Presence
  - image-location: left
    anchor_id: smart-repository
    title: Smart Profiles Simplify Download, Installation of Lifeguard Updates
@@ -59,7 +59,7 @@ features:
    url: https://techdocs.zebra.com/stagenow/latest/smartprofile/
    video: nPqciL_aDpc
    video_type: youtube
-   button_text: Learn more about this feature      
+   button_text: Learn more about Smart Profiles      
  - image-location: right
    anchor_id: wakeup-scan
    title: "'Trigger Wakeup and Scan' Feature Reduces Workflow Delays" 
@@ -75,7 +75,7 @@ features:
    subtitle: New in Zebra MX 10.2
    description: Beacon Manager allows administrators to control the homing signal sent by supported Zebra devices to aid with location. MX 10.2 also includes enhancements to Bluetooth, Clock, Display, KeyMapping License, Power, PowerKey, Touch, UI and WiFi CSPs.  
    url: https://techdocs.zebra.com/mx/overview/#addedinmx102
-   button_text: See all of what's new in Zebra MX 10.2
+   button_text: Learn what's new in Zebra MX 10.2
    video: TfFOGnNxAyA
    video_type: youtube
  - image-location: right
@@ -84,7 +84,7 @@ features:
    subtitle: New in Zebra MX 10.1
    description: Use the power button to switch between gloved, stylus or finger touch modes; select file order, naming conventions and deletion options when uploading files; control battery saver mode and display of battery-charge percentage; control screen rotation.  
    url: https://techdocs.zebra.com/mx/overview/#versionhistory
-   button_text: See all new features in MX 10.1
+   button_text: Learn what's new in Zebra MX 10.1
    video: kRHkg0JGj_Q
    video_type: youtube
  - image-location: left
@@ -102,7 +102,7 @@ features:
    subtitle: New in Zebra DataWedge 8.2
    description: DataWedge can now store multiple scanner configurations in a single scanning profile. This allows device users to switch between multiple scanners during a scanning session without the need to stop and reconfigure the device. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#scannerselection
-   button_text: Learn more about this feature
+   button_text: Learn more about Multi-scanner Support
    video: QYDezVYFpN4
    video_type: youtube   
  - image-location: left
@@ -127,20 +127,20 @@ features:
    anchor_id: smart-leash
    title: Feature-based Licensing Puts Admins in Control 
    subtitle: New in Zebra MX 10.2 
-   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devices now allow administrators to license specific features individually, bringing costs and device capabilities into better control.
+   description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devices now allow administrators to activate, return and refresh specific features, bringing costs and device capabilities into better control. 
    url: https://techdocs.zebra.com/mx/licensemgr/#zebra-license-action
    video: YLepzmANq2s
    video_type: youtube
-   button_text: Go to LicenseMgr, then scroll down to Options 8, 9 & 10  
+   button_text: Learn more about Zebra Licensing Actions   
  - image-location: right
    anchor_id: full-doc-capture
-   title: DataWedge Does Edge Detection, Full-document Capture
+   title: DataWedge Does Whole-document Capture Thanks to Edge Detection
    subtitle: New in Zebra DataWedge 8.2 
    description: DataWedge 8.2 now automatically detects the edges of a form during document scans, more easily capturing the entire form without the need for a barcode. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: DI8pxsTJdtI
    video_type: youtube
-   button_text: Learn more about this feature 
+   button_text: Learn more about Whole-page Document Capture
  - image-location: left
    anchor_id: term-based-license
    title: New Term-based Licensing Puts Admins in Charge
@@ -163,22 +163,22 @@ features:
    anchor_id: eb-new
    title: Pinch-to-Zoom, NavBar Now in Control 
    subtitle: New in Zebra Enterprise Browser 3.0.6
-   description: Updates to APIs in Enterprise Browser 3.0.6 allow users to pinch-to-zoom web pages and images, and give developers control over the ability to show or hide the navigation bar, which contains the HOME, BACK and RECENT APPS buttons. The Database API also has been restored.  
-   url: /enterprise-browser/latest/guide/about/#newinv30
+   description: Updates to APIs in Enterprise Browser 3.0.6 allow users to pinch-to-zoom web pages and images (WebView API), and give developers control over the ability to show or hide the navigation bar, which contains the HOME, BACK and RECENT APPS buttons (Device API). The Database API also has been restored.  
+   url: https://techdocs.zebra.com/enterprise-browser/latest/api/webview/#enablezoom
    video: ngi_MPoBtRI
    video_type: youtube
-   button_text: Learn more about this feature
+   button_text: Learn more about EB's WebView API
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: right
    anchor_id: specific-barcodes
    title: Pre-grant App Permissions; Control Location Services, Bluetooth, Wi-Fi Scanning  
-   subtitle: Coming Soon to Devices 
-   description: With Zebra's MX 10.4, device administrators will be able to grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
+   subtitle: Coming in Early 2021 With Zebra MX 10.4 
+   description: With MX 10.4, device administrators will be able to grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
    url: https://techdocs.zebra.com/mx/overview/#versionhistory
    video: HduN12nASNM
    video_type: youtube
-   button_text: See all new features in MX 10.4 
+   button_text: Learn More about new features in MX 10.4 
  - image-location: left
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
@@ -187,7 +187,7 @@ comingsoon:
    url: https://techdocs.zebra.com/datawedge
    video: 5Kr8h-Cke6k
    video_type: youtube
-   button_text: About DataWedge 
+   button_text: Learn More About DataWedge 
 ---
 <!--  WHEN NO ITEMS ARE "COMING SOON"
   add "-none" to the lines as follows:
@@ -323,3 +323,8 @@ hr {
 </style>
 
 [back to top](#)
+
+if th device loses Bluetooth connection with the peripheral such as when it moves out of range 
+
+if the Bluetooth connection is lost such as when they move out of range.  
+

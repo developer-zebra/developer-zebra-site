@@ -303,6 +303,7 @@ Video demonstration of signature presence detection:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4vS5Y2q9Vkg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
+<!--  
 #### Read Only Specific Barcodes
 
 Capture specific barcodes from a multibarcode form and ignore others based on barcode criteria defined in a custom NextGen SimulScan template. Scanning must be performed with **Document Capture** for this option. Contact your local Zebra sales representative for assistance in creating the template. The criteria to read specific barcodes is based on the following options selected during template creation:
@@ -350,6 +351,8 @@ When using this option, the quantity of barcodes must be specified by using **_o
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Kr8h-Cke6k?rel=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <i>Video demonstration of Read Only Specific Barcodes and Automatic Group Identification features</i>
 
+-->
+ 
 ### MultiBarcode Params
 **MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
 

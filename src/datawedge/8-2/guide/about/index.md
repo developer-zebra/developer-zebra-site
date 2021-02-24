@@ -162,10 +162,12 @@ For more information about approved languages or to download a localized operati
     * Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselection)
 * New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 * Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
+<!--
 * Note: The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
     * Data capture start option - Start phrase
     * Data capture start phrase
     * Data capture end phrase
+-->
 
 -----
 ## Recent Version History

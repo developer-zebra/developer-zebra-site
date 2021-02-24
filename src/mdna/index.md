@@ -4,7 +4,7 @@ subtitle: MDNA Overview - A New Breed of Enterprise Mobility
 video: https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/mobility-dna/videos/mobility-dna-video.mp4/_jcr_content/renditions/original   
 video_type: html5
 video_thumb: video_thumb.jpg
-copy: What’s inside the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA — the genetic code that gives our mobile computers distinct enterprise capabilities.Its unique software ecosystem transforms Android™, the world’s most popular consumer operating system, into an enterprise-ready force. Now, the pains common to other enterprise mobility platforms disappear — making application management simpler, integration problem-free and operations a powerhouse of productivity.
+copy: What’s inside the body of an enterprise mobile computer matters. That’s why Zebra engineered Mobility DNA, the genetic code that gives our mobile computers distinct enterprise capabilities. Its unique software ecosystem transforms Android™&ndash;the world’s most popular consumer operating system&ndash;into an enterprise-ready force. Now, the pains common to other enterprise mobility platforms disappear — making application management simpler, integration problem-free and operations a powerhouse of productivity.
 button_text: Learn More About MDNA
 url-button: https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html
 button_text_additional: Coming Soon
@@ -19,25 +19,25 @@ features:
    anchor_id: touch-mode
    title: New Touch Mode Panel Quickly Adapts to Change
    subtitle: New in Zebra MX 10.3  
-   description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, a new settings panel that allows users to switch touch-screen modes to quickly adapt to changes in the computing environment. 
+   description: Long-pressing the power key on supported Zebra devices now provides quick access to Touch Mode settings, a new settings panel that allows users to switch touch-screen modes to quickly adapt to changes in the computing environment. For example, if the user walks into a refrigerated room, the device after long-pressing can be configured for a gloved hand with a single tap.  
    url: https://techdocs.zebra.com/mx/powerkeymgr/#touch-panel-showhide
    video: kRHkg0JGj_Q
    video_type: youtube
-   button_text: Learn More About The Touch Mode Panel
+   button_text: Learn More About Touch-mode Panel Options
  - image-location: right
    anchor_id: update-app
    title: Select Which Apps to Update Without Allowing All 
    subtitle: New in Zebra MX 10.3 
-   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. Now, Zebra's App Manager utility lets administrators decide which apps on a device can update and which should stay the same until explicitly allowed to receive an upgrade. 
+   description: The ability for apps to self-update has helped bring mobile computing devices to the forefront of the productive enterprise. Now, Zebra's App Manager utility lets administrators decide which apps on a device can be updated and which should stay the same until explicitly allowed to receive an upgrade. 
    url: https://techdocs.zebra.com/mx/appmgr/#action
    video: t7J8e2rVcMM
    video_type: youtube
-   button_text: Click, then scroll down to see Actions 16 & 17 
+   button_text: Learn more about App Manager Actions 
  - image-location: left
    anchor_id: smart-leash
    title: Smart Leash Helps Keep Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
-   description: The new Smart Leash feature in Zebra's Device Central Bluetooth management app notifies the device user with sounds and/or vibrations when a peripheral they've been using loses connectivity with their device. If the user moves out of an area without the peripheral, for example, Smart Leash activates the selected notification(s), helping ensure that the peripheral is not lost or left behind.
+   description: The new Smart Leash feature in Zebra's Device Central Bluetooth management app notifies the device user with sound and/or vibration when a peripheral they've been using loses connectivity with their device. For example, if the user moves out of an area without the peripheral, Smart Leash activates the selected notification(s), helping to ensure that the peripheral isn't left behind.
    url: https://techdocs.zebra.com/devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
@@ -46,7 +46,7 @@ features:
    anchor_id: signature-presence
    title: Detect the Presence of a Signature
    subtitle: New in Zebra DataWedge 8.2
-   description: DataWedge can now detect the presence of a handwritten signature to automatically check for delivery confirmation. DataWedge provides the capability for any application on a device to acquire data from various input sources, manipulate data based on basic or custom rules, and output data to the app.
+   description: DataWedge can now detect the presence of a handwritten signature. This can be useful, for example, to programmatically check for confirmation of a delivery. DataWedge allows any application on a device to acquire data through the device's scanners or other peripherals, manipulate data based on basic or custom rules, and output the data to the app for consumption or further processing.
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselection
    video: 4vS5Y2q9Vkg
    video_type: youtube

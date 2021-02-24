@@ -172,7 +172,7 @@ comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
  - image-location: right
    anchor_id: specific-barcodes
-   title: Pre-grant Permission; Control Location Services, Bluetooth, Wi-Fi Scanning  
+   title: Pre-grant App Permissions; Control Location Services, Bluetooth, Wi-Fi Scanning  
    subtitle: Coming Soon to Devices 
    description: With Zebra's MX 10.4, device administrators will be able to grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
    url: https://techdocs.zebra.com/mx/overview/#versionhistory

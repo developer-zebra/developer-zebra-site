@@ -66,7 +66,7 @@ features:
    subtitle: New in Zebra DataWedge 8.1
    description: DataWedge can now instantly capture barcodes with a press of the scan button when resuming operation after device suspend, eliminating delays in workflow and improving worker productivity. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#readerparams
-   button_text: Learn mode about Reader Params including Trigger and Wakeup
+   button_text: Learn mode about Reader Params including Trigger Wakeup and Scan
    video: bR_uJwpVZD0
    video_type: youtube
  - image-location: left

@@ -7,7 +7,7 @@ productversion: '2.1'
 
 ## Overview
 
-Device Central provides a centralized way for an organization to connect and monitor supported Bluetooth peripherals.  Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. Device Central is pre-installed on all [supported Zebra devices](#supporteddevices).
+Zebra Device Central is an Android app that simplifies the pairing and unpairing of Bluetooth peripherals with Zebra devices and helps with Bluetooth device management. Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. Device Central is pre-installed on all [supported Zebra devices](#supporteddevices).
 
 Device Central features:
 
@@ -18,7 +18,6 @@ Device Central features:
 * Paging to locate a paired and connected peripheral (applies to supported Bluetooth scanners)
 * Firmware update utility for supported peripherals (applies to supported Bluetooth scanners)
 
-_Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers._
 
 ## New in Device Central 2.1
 * **Hardware scan trigger support** added in the main app screen for [Scan and Pair](../usage/#scanandpair), utilizing DataWedge profile. 
@@ -157,6 +156,8 @@ Device Central is approved for use with the following Bluetooth peripherals:
   </tr>
   -->
 </table>
+
+_Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers._
 
 <br>
 

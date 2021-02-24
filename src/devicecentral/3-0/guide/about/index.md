@@ -7,7 +7,7 @@ productversion: '3.0'
 
 ## Overview
 
-**Device Central** provides a centralized way for an organization to connect and monitor supported Bluetooth peripherals.  Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. 
+Zebra Device Central is an Android app that simplifies the pairing and unpairing of Bluetooth peripherals with Zebra devices and helps with Bluetooth device management. Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. 
 
 Device Central features:
 
@@ -20,7 +20,7 @@ Device Central features:
 
 > Starting with Android 10, <b>Device Central is no longer built-in the device.</b> It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. <br>
 
-<p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
+
 
 ## New in Device Central 3.0
 * **Important:** <br>The **Enable/Disable Single Pairing of the Same Device Class** feature is deprecated from Device Central Manager CSP. Starting from MX version 10.2, Zebra recommends to use [Bluetooth Manager CSP](/mx/bluetoothmgr) to configure the same functionality.
@@ -64,6 +64,8 @@ See the device compatibility table for Device Central on [Zebra support portal](
 </table>
 -->
 Device Central supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards.
+
+<p><i>Exception: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
 <br><br><br>
 

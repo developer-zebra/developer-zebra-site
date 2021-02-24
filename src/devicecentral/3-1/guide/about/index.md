@@ -7,7 +7,7 @@ productversion: '3.1'
 
 ## Overview
 
-**Device Central** provides a centralized way for an organization to connect and monitor supported Bluetooth peripherals.  Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. 
+Zebra Device Central is an Android app that simplifies the pairing and unpairing of Bluetooth peripherals with Zebra devices and helps with Bluetooth device management. Using the simple user interface, Device Central easily pairs and unpairs Bluetooth peripherals, monitors connection status, and provides details on supported peripherals. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. 
 
 Device Central features:
 
@@ -20,7 +20,6 @@ Device Central features:
 
 > Starting with Android 10, <b>Device Central is no longer built into Zebra devices.</b> It is required to be downloaded through the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Zebra support portal</a>. <br>
 
-<p><i>Note: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
 ## Mobility DNA Enterprise License
 Beginning with Device Central 3.0, a **[Mobility DNA Enterprise license](/licensing) is now required** to use Device Central on Zebra Professional-series devices, including TC21 and TC26. When unlicensed, the app displays a “Mobility DNA Enterprise license required” prompt (see below) when a user attempts to open Device Central.  **Learn more about [purchasing an MDNA Enterprise license](/licensing/process).** 
@@ -57,6 +56,7 @@ _MDNA Enterprise license required prompt_
 ## Supported Devices
 
 See the device compatibility table for Device Central on [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html).
+
 <!--
 <table class="facelift" style="width:25%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -69,7 +69,9 @@ See the device compatibility table for Device Central on [Zebra support portal](
   </tr>
 </table>
 -->
-Device Central supports Pairing/Unpairing of all Bluetooth peripherals that follow the Bluetooth standards.
+Device Central supports pairing/unpairing of all Bluetooth peripherals that follow the Bluetooth standards.
+
+<p><i>Exception: Unpairing a Bluetooth Scanner peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers.</i></p>
 
 <br><br><br>
 

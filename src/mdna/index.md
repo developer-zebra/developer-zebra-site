@@ -37,7 +37,7 @@ features:
    anchor_id: smart-leash
    title: Smart Leash Helps Keep Peripherals Close at Hand
    subtitle: New in Zebra Device Central 3.1
-   description: The new Smart Leash feature in Zebra's Device Central device management system notifies the device user when a peripheral they've been using moves out of an area, helping ensure that the peripheral is not lost or left behind. Device Central is a server-based enterprise monitoring and management system for tracking Bluetooth devices in an organization.
+   description: The new Smart Leash feature in Zebra's Device Central Bluetooth management app notifies the device user with sounds and/or vibrations when a peripheral they've been using loses connectivity with their device. If the user moves out of an area without the peripheral, for example, Smart Leash activates the selected notification(s), helping ensure that the peripheral is not lost or left behind.
    url: https://techdocs.zebra.com/devicecentral/latest/guide/usage/#smartleash
    video: pLuftOwcAFk
    video_type: youtube
@@ -323,8 +323,3 @@ hr {
 </style>
 
 [back to top](#)
-
-if th device loses Bluetooth connection with the peripheral such as when it moves out of range 
-
-if the Bluetooth connection is lost such as when they move out of range.  
-

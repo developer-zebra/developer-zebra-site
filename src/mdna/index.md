@@ -91,17 +91,17 @@ features:
    anchor_id: btscanner-notifications
    title: Bluetooth Scanner Notifications Now Colorful, Audible
    subtitle: New in Zebra DataWedge 8.2
-   description: Updates to the Bluetooth scanner notifications API in DataWedge 8.2 now allow apps to light a colored LED or play audio beeps based on user actions or barcodes scanned from a connected Bluetooth scanner. Device users can then easily and quickly react based on the audio or visual feedback. 
-   url: /datawedge
+   description: Updates to Notify, also known as the Bluetooth Scanner Notifications API in DataWedge 8.2, now allows apps to light a colored LED or play audio beeps based on user actions or barcodes scanned by a connected Bluetooth scanner. Such visual and audible cues allow device users to react to scanning actions more quickly and with greater proficiency. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/api/notify/
    video: l85vNZdrZxw
    video_type: youtube
-   button_text: Learn more about this feature
+   button_text: See the Bluetooth Scanner Notifications API
  - image-location: right
    anchor_id: multiple-scanner-support
-   title: Datawedge Now Supports Multiple Scanners in a Session
+   title: Switch Scanners in a Session Without Reconfiguring DataWedge
    subtitle: New in Zebra DataWedge 8.2
-   description: DataWedge now allows device users to scan with multiple different barcode scanners during a single scanning session, without the need to stop and reconfigure the device to change scanner configurations.
-   url: /datawedge
+   description: DataWedge can now store multiple scanner configurations in a single scanning profile. This allows device users to switch between multiple scanners during a scanning session without the need to stop and reconfigure the device. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#scannerselection
    button_text: Learn more about this feature
    video: QYDezVYFpN4
    video_type: youtube   
@@ -109,29 +109,29 @@ features:
    anchor_id: dtrk-ng
    title: Now Cloud-based, Device Tracker Helps Locate Misplaced Zebra Devices
    subtitle: New with Zebra Device Tracker 4.0
-   description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Device Tracker manages Zebra devices, finds missing devices and helps prevent device-inventory shrinkage. 
-   url: /devicetracker
+   description: Device Tracker simplifies the job of tracking Zebra Android mobile devices across an enterprise. Device Tracker manages Zebra devices, finds missing devices and helps prevent device inventory shrinkage. 
+   url: https://techdocs.zebra.com/devicetracker/latest/guide/about/
    video: MzCWdLUhEPY
    video_type: youtube
    button_text: Learn more about Device Tracker 
  - image-location: right
    anchor_id: eac-utility
-   title: Zebra EAC 1.0 Utility Simplifies DOM Injection 
+   title: Zebra EAC Utility Simplifies DOM Injection 
    subtitle: Works with Zebra Enterprise Browser 2.6+ 
-   description: EAC 1.0 is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards, and can voice-enable fields for spoken input and/or output. 
-   url: /enterprise-browser/latest/guide/eac/
+   description: Enterprise Application Configurator (EAC) is a Zebra utility that works with Enterprise Browser 2.6 and later to simplify DOM injection, which adds capabilities to a running app without changing the source code. EAC maps EB fields or buttons to Zebra devices such as scanners, printers and keyboards, and can voice-enable fields for spoken input and/or output. 
+   url: https://techdocs.zebra.com//enterprise-browser/latest/guide/eac/
    video: 7aUm-IO9utM
    video_type: youtube
-   button_text: Learn more about this feature 
+   button_text: Learn more about EAC 
  - image-location: left
    anchor_id: smart-leash
    title: Feature-based Licensing Puts Admins in Control 
    subtitle: New in Zebra MX 10.2 
    description: When licensing apps on Zebra devices, it's no longer an all-or-nothing proposition. With the release of License Manager in MX 10.2, Zebra devices now allow administrators to license specific features individually, bringing costs and device capabilities into better control.
-   url: /mx/licensemgr/
+   url: https://techdocs.zebra.com/mx/licensemgr/#zebra-license-action
    video: YLepzmANq2s
    video_type: youtube
-   button_text: About LicenseMgr 
+   button_text: Go to LicenseMgr, then scroll down to Options 8, 9 & 10  
  - image-location: right
    anchor_id: full-doc-capture
    title: DataWedge Does Edge Detection, Full-document Capture

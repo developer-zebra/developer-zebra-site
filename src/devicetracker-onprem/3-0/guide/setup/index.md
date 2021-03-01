@@ -416,7 +416,7 @@ The device must be connected to the network during deployment. After creating th
 
 ### Uninstallation
 
-The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html.
+The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html).
 
 ### Configuration
 

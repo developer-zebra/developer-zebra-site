@@ -8,37 +8,37 @@ menu:
     - lang: cn,
       img: /images/flags/img-flag-china.png
       urlFrom: ddt
-      urlTo: ddt-cn
+      urlTo: ddt/ddt-cn
       label: CN - 普通话
     - lang: de,
       img: /images/flags/img-flag-germany.png
       urlFrom: ddt
-      urlTo: ddt-de
+      urlTo: ddt/ddt-de
       label: DE - Deutsch
     - lang: es,
       img: /images/flags/img-flag-spain.png
       urlFrom: ddt
-      urlTo: ddt-es
+      urlTo: ddt/ddt-es
       label: ES - Español
     - lang: fr,
       img: /images/flags/img-flag-france.png
       urlFrom: ddt
-      urlTo: ddt-fr
+      urlTo: ddt/ddt-fr
       label: FR - Français
     - lang: it,
       img: /images/flags/img-flag-italy.png
       urlFrom: ddt
-      urlTo: ddt-it
+      urlTo: ddt/ddt-it
       label: IT - Italiano
     - lang: jp,
       img: /images/flags/img-flag-japan.png
       urlFrom: ddt
-      urlTo: ddt-jp
+      urlTo: ddt/ddt-jp
       label: JP - 日本語
     - lang: pt,
       img: /images/flags/img-flag-portugal.png
       urlFrom: ddt
-      urlTo: ddt-pt
+      urlTo: ddt/ddt-pt
       label: PT - Português
   items:
     - title: About

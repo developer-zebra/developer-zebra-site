@@ -2,7 +2,7 @@
 title: Troubleshooting & FAQ
 layout: guide.html
 product: Device Tracker On-Prem
-productversion: "2.1"
+productversion: "1.0"
 ---
 
 ## Overview

@@ -6,19 +6,19 @@ menu:
   title: Device Tracker On-Prem
   items:
     - title: About
-      url: /devicetracker/2-1/guide/about
+      url: /devicetracker-onprem/2-1/guide/about
     - title: Install & Setup
-      url: /devicetracker/2-1/guide/setup
+      url: /devicetracker-onprem/2-1/guide/setup
     - title: Admin View
-      url: /devicetracker/2-1/guide/admin
+      url: /devicetracker-onprem/2-1/guide/admin
     - title: Device Tracking
-      url: /devicetracker/2-1/guide/mgmt
+      url: /devicetracker-onprem/2-1/guide/mgmt
     - title: Configuration
-      url: /devicetracker/2-1/guide/config
+      url: /devicetracker-onprem/2-1/guide/config
     - title: Troubleshooting & FAQ
-      url: /devicetracker/2-1/guide/troubleshooting
+      url: /devicetracker-onprem/2-1/guide/troubleshooting
     - icon: fa fa-search
-      url: /devicetracker/2-1/search
+      url: /devicetracker-onprem/2-1/search
 product: Device Tracker On-Prem
 productversion: "2.1"
 ---

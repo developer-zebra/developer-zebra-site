@@ -26,11 +26,11 @@ Device Tracker On-Prem main features:
 - General location information for all supported WiFi devices based on connected AP
 - Real-time device proximity tracking with BLE
 - Misplaced device prevention by monitoring low power and disconnection state
-- Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers.
-- Filter and sort data
-- Search by status, AP name, device name, device model, device serial number, battery state, and tags
-- Device tagging for easier organization, identification, and tracking
-- Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
+- Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers. Other dashboard actions:
+    - Filter and sort data
+    - Search by status, AP name, device name, device model, device serial number, battery state, and tags
+    - Device tagging for easier organization, identification, and tracking
+    - Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
 - Find and retrieve misplaced devices with client app using audio sound
 - Secure communications between the Device Tracker On-Prem Client application and server
 - Friendly name assignment for APs and devices for ease of identification and tracking

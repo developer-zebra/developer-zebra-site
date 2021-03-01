@@ -86,7 +86,7 @@ Requirements for Device Tracker On-Prem client:
 See [Supported Devices](../about#supporteddevices).
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ### Server Prerequisites
 
@@ -354,7 +354,7 @@ _Device Tracker On-Prem client application 2.3.1 or earlier cannot be upgraded t
 #### Manual Installation
 Steps for manual client installation:
 
-1. Download Device Tracker On-Prem client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files:<br>
+1. Download Device Tracker On-Prem client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). Extract the files:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DTRKClient.apk<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• com.zebra.devicetracker.dsd<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• EnableSelfSigned_DTRK.pdf<br>
@@ -416,7 +416,7 @@ The device must be connected to the network during deployment. After creating th
 
 ### Uninstallation
 
-The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html).
+The Device Tracker On-Prem app can be uninstalled from the device either manually or by using StageNow. If using StageNow to uninstall Device Tracker On-Prem 2.3.1, scan the barcode in DTRK_UNINSTALL_FOR_2.3.1.pdf, provided with the download package from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html.
 
 ### Configuration
 
@@ -520,7 +520,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 
 **Steps for remote client configuration with StageNow and CSP Plug-in:**
 
-1. Download Device Tracker On-Prem client software DTRKClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). The .zip file includes the following:
+1. Download Device Tracker On-Prem client software DTRKClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). The .zip file includes the following:
    - DTRK_PluginCSP.zip
    - DTRKClient.apk
    - DisableSelfSigned_DTRK.pdf
@@ -584,7 +584,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    _Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
-## <br>
+---
 
 ## See Also
 

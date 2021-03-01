@@ -127,18 +127,20 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker-onprem/2-3/guide/about
+        url: /devicetracker-onprem/3-0/guide/about
       - title: Install & Setup
-        url: /devicetracker-onprem/2-3/guide/setup
+        url: /devicetracker-onprem/3-0/guide/setup
       - title: Admin View
-        url: /devicetracker-onprem/2-3/guide/admin
+        url: /devicetracker-onprem/3-0/guide/admin
       - title: Device Management
-        url: /devicetracker-onprem/2-3/guide/mgmt
+        url: /devicetracker-onprem/3-0/guide/mgmt
       - title: Configuration
-        url: /devicetracker-onprem/2-3/guide/config
+        url: /devicetracker-onprem/3-0/guide/config
       - title: Troubleshooting & FAQ
-        url: /devicetracker-onprem/2-3/guide/troubleshooting
+        url: /devicetracker-onprem/3-0/guide/troubleshooting
     versions:
+      - url: /devicetracker-onprem/3-0/guide/about
+        label: '3.0'
       - url: /devicetracker-onprem/2-3/guide/about
         label: '2.3'
       - url: /devicetracker-onprem/2-2/guide/about

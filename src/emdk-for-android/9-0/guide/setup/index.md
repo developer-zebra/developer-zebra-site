@@ -26,7 +26,7 @@ The following software is required to use EMDK for Android:
 
 -----
 
-### Install EMDK Plug-ins
+### Install EMDK for Android Plugin
 
 The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. 
 
@@ -56,7 +56,7 @@ _Click to enlarge; ESC to exit_.<br>
    e. **Click "Install**" button.<br>
    <img alt="image" style="height:350px" src="emdk_plugins_02.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   f. **Click "Apply" to activate the Plugin, then **Click "OK"** to close.<br>
+   f. **Click "Apply"** to activate the Plugin, then **Click "OK"** to close.<br>
 <img alt="image" style="height:350px" src="emdk_plugins_03.png"/>
 _Click to enlarge; ESC to exit_.<br>
 4. **Enable the EMDK SDK**:<br>

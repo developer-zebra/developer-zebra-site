@@ -215,7 +215,9 @@ _Scanner configuration_
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
-* **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. Contact your local Zebra sales representative for assistance to create a Document Capture template.
+* **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. 
+
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template.</span>
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
@@ -240,7 +242,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
 * **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required. 
-* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified template. Contact your local Zebra sales representative for assistance to create a Document Capture template. 
+* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template. </span>
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -263,7 +265,9 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 <i>NextGen (NG) SimulScan - Scanning Modes</i>
 
 ### Document Selection
-**Document Selection** specifies the template to use for document capture, in which **Document Capture** is selected as the **Scanning Mode.** Document Capture requires a template that designates the areas to capture as an image, such as signature, text fields, or the entire document. Contact Zebra to create a custom Document Capture template.
+**Document Selection** specifies the template to use for document capture, in which **Document Capture** is selected as the **Scanning Mode.** Document Capture requires a template that designates the areas to capture as an image, such as signature, text fields, or the entire document. 
+
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template.</span>
 
 To select the Document Capture template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
 

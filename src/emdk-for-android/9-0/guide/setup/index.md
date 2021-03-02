@@ -97,7 +97,7 @@ _Click to enlarge; ESC to exit_.<br>
 
 #### Notes:
 * A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
-* **See the [full list of EMDK versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.
+* **See the full list of [EMDK for Android Plugin versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----
@@ -114,7 +114,7 @@ _Click to enlarge; ESC to exit_.<br>
 
 **Note**: This process references folders that are hidden by default. To unhide, see section below. 
 
-**In the Mac OS Finder**:
+**In the macOS Finder**:
 
 1. **Remove SDK add-ons**:
    * Navigate to the `/Users/[userName]/Library/Android/sdk/add-ons` directory.<br>

@@ -7,7 +7,7 @@ productversion: '8.2'
 
 ## Overview
 
-DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) and manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app.
+Zebra DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) and manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app.
 
 There are 2 approaches to capture data:
 * **No-code** - eliminates the need for any programming or app modification by capturing and processing data with the use of [DataWedge profiles](../profiles) configured from the user interface.
@@ -27,7 +27,7 @@ Follow the [Get Started](../gettingstarted) guide, which discusses both approach
 <!--  // **TUT-40275 - OCR and Signature Capture not part of NGSS**
 &nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> <a href="../input/barcode#ocra">OCR A</a> and <a href="../input/barcode#ocrb">OCR B</a> decoder support added since DataWedge 7.5.<br>
 &nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> <a href="../input/barcode#decodersignature">Decoder Signature</a> (aka Signature Capture) support added since DataWedge 7.3. Other Image Capture features to be transitioned later in 2020.<br>-->
-&nbsp;&nbsp;&nbsp;<b>• Document Capture -</b> scan a document based on a custom <a href="../input/barcode#documentcapture">document capture template</a>.<br>
+&nbsp;&nbsp;&nbsp;<b>• Document Capture -</b> scan a document based on a <a href="../input/barcode#documentcapture">document capture template</a>. Contact your local Zebra sales representative for assistance to create a Document Capture template. <br>
 See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more information.
 </div>
 
@@ -165,12 +165,10 @@ For more information about approved languages or to download a localized operati
 * The [DataWedge Reporting](../settings/#reporting) feature is being deprecated and will be discontinued in devices running Android 12. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
     * **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
     * **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle.
-<!--
 * Note: The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
     * Data capture start option - Start phrase
     * Data capture start phrase
     * Data capture end phrase
--->
 
 -----
 ## Recent Version History

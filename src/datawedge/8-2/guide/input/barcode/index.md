@@ -215,7 +215,7 @@ _Scanner configuration_
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
-* **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. Contact Zebra to create a custom Document Capture template.
+* **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. Contact your local Zebra sales representative for assistance to create a Document Capture template.
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
@@ -239,8 +239,8 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 ### Scanning Modes
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
-* **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan.  
-* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified custom template.  
+* **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required. 
+* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified template. Contact your local Zebra sales representative for assistance to create a Document Capture template. 
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -353,6 +353,7 @@ When using this option, the quantity of barcodes must be specified by using **_o
 
 -->
  
+
 ### MultiBarcode Params
 **MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
 

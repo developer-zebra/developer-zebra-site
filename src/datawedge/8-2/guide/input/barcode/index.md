@@ -269,7 +269,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template.</span>
 
-To select the Document Capture template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[SimulScan template](/mx/datawedgemgr)** section of DataWedge Manager CSP on how to add a template to this selection. 
+To select the Document Capture template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)** from DataWedge Manager CSP on how to add a template to this selection. 
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_

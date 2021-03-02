@@ -79,7 +79,11 @@ Specifies the full path and file name to import the configuration file (`datawed
 ## Import NextGen SimulScan templates
 Import customized NextGen SimulScan Templates for document capture. This populates the selection for the [Document Capture Template](../input/barcode/#documentcapturetemplate) under the SimulScan scanning. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
-<p>See <a href="../settings#massdeployment">Mass Deployment</a> for more information.</p>
+Video on how to deploy a Document Capture template, or NextGen SimulScan template, to a device using StageNow:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<!-- <p>See <a href="../settings#massdeployment">Mass Deployment</a> for more information.</p>
+-->
 
 -----
 

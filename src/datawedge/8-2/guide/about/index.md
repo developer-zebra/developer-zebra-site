@@ -154,7 +154,7 @@ For more information about approved languages or to download a localized operati
     * **[Number of barcodes per scan](../input/barcode#multibarcodeparams) -** set a fixed quantity of barcodes to scan.
     * **[Instant Reporting](../input/barcode#multibarcodeparams) -** instantaneously report unique barcodes within a scanning session.
     * **[Report decoded barcodes](../input/barcode#multibarcodeparams) -** report decoded barcodes in a single scan session. 
-* **Document Capture -** scan a document based on a [document capture/NG SimulScan template](../input/barcode#documentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture template. 
+* **Document Capture -** scan a document based on a [Document Capture/NextGen SimulScan template](../input/barcode#documentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template. 
 
 See [Simulscan Migration Alert](/simulscan/1-1/guide/alert) for more information.
 

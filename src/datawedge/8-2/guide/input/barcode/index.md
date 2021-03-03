@@ -217,7 +217,7 @@ _Scanner configuration_
 * **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
 * **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. 
 
-> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template.</span>
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 <!-- [Removed per TUT-40275]
 * **Signature capture -** supported since DataWedge 7.3
 * **OCR A/B -** supported since DataWedge 7.5 -->
@@ -242,7 +242,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 **Scanning Modes** is used to select the mode to scan barcodes: 
 * **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required. 
-* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template. </span>
+* **[Document Capture](#documentselection) -** capture fields within a document or the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template. </span>
 * **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -267,13 +267,16 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 ### Document Selection
 **Document Selection** specifies the template to use for document capture, in which **Document Capture** is selected as the **Scanning Mode.** Document Capture requires a template that designates the areas to capture as an image, such as signature, text fields, or the entire document. 
 
-> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture template.</span>
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 
-To select the Document Capture template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)** from DataWedge Manager CSP on how to add a template to this selection. 
+To select the Document Capture/NextGen SimulScan template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. It is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)** from DataWedge Manager CSP on how to add a template to this selection. 
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_
 <br><br>
+
+Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 #### Document Capture with Anchor Barcode
 Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   <br>

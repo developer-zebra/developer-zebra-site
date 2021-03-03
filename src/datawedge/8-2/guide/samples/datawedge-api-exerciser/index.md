@@ -1,6 +1,6 @@
 ---
 publish: true
-title: DataWedge API Exerciser
+title: DataWedge API Exerciser in Java
 description: Shows how to exercise the various DataWedge Intent APIs.
 downloads:
   - title: Sample Projects

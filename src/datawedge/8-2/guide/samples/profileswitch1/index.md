@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Profile Switch
+title: Profile Switch in Java
 description: Demonstrates how to switch profiles based on the text field in focus.
 downloads:
   - title: Sample Projects

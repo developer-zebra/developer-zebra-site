@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Data Capture
+title: Data Capture in Java
 description: Shows how to receive scanned barcode data, configure DataWedge, register for scanner status notifications, and use the software scan trigger via DataWedge Intent APIs.
 downloads:
   - title: Sample Projects

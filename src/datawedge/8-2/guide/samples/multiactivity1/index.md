@@ -1,6 +1,6 @@
 ---
 publish: true
-title: MultiActivity
+title: MultiActivity in Java
 description: Demonstrates how to scan across multiple activities using different profiles based on the app activity in the foreground.
 downloads:
   - title: Sample Projects

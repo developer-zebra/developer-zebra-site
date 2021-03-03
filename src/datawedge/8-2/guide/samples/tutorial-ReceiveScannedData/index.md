@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Tutorial - How to receive scanned barcode data
+title: Tutorial - How to Receive Scanned Barcode Data in Java
 description: A walk-through on how to receive scanned barcode data through an Android intent. 
 downloads:
   - title: Sample Projects

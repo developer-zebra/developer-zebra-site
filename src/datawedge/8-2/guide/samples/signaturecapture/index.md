@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Signature Capture
+title: Signature Capture in Java
 description: Shows how to use Decoder Signature to capture an area within a document (such as a signature) enclosed by a specific pattern and save it as an image.  
 downloads:
   - title: Sample Projects

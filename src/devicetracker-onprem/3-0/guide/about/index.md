@@ -310,7 +310,7 @@ Comparison of **Device Tracker On-Prem** and **[Device Tracker](/devicetracker/l
   </tr>
   <tr>
     <td>Android platform support</td>
-    <td>Only supported on select devices up to Android Pie</td>
+    <td>Only supported on select devices up to Android 10</td>
     <td>Only supported on select Android Oreo and Android 10 devices</td>
   </tr>
   <tr>

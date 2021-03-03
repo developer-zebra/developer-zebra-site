@@ -21,12 +21,12 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 
 * Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple locations up to 5K sites.
 * Support for central administrator, site manager, and site associate roles.
-        * Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.
-        * Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval. 
-        * Web portal for centralized administration of system settings and admin and site manager login credentials.
+    * Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.
+    * Device dashboard for site manager to track devices at the site-level and mark a misplaced or at-risk (e.g. low battery) device for retrieval. 
+    * Web portal for centralized administration of system settings and admin and site manager login credentials.
 * Registration of:
-        * Sites and access points with friendly names to easily identify device location.
-        * Devices to assigned site with user friendly names for simple device identification.
+    * Sites and access points with friendly names to easily identify device location.
+    * Devices to assigned site with user friendly names for simple device identification.
 * Simple to deploy – install and configure the mobile application using StageNow and Enterprise Mobility Management tools.
 * Easily find a misplaced device with the connected AP location, the Bluetooth-based visual proximity indicator and play sound feature.
 * Check-out/Check-in feature to associate users to devices for accountability. (Optional)
@@ -64,7 +64,7 @@ Comparison of **[Device Tracker On-Prem](/devicetracker-onprem/latest/guide/abou
   </tr>
   <tr>
     <td>Android platform support</td>
-    <td>Only supported on select devices up to Android Pie</td>
+    <td>Only supported on select devices up to Android 10</td>
     <td>Only supported on select Android Oreo and Android 10 devices</td>
   </tr>
   <tr>
@@ -143,14 +143,16 @@ Network requirements for communication between the device client app and the clo
 * Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
 
 * The following URLs must be allowed through the firewall or proxy:
-        * URLs accessed by device:
-            * `*.google.com`
-            * `*.googleapis.com`
-            * `http://connectivitycheck.gstatic.com`  <br>(required by Google for Android to connect to a wireless network)
-            * `https://[ProjectID].firebaseio.com`  <br>(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
-            * `https://us-central1-[projectID].cloudfunctions.net`  <br>(required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
-        * URL accessed by the admin on a PC:
-            * Web portal URL - supplied by Zebra during the cloud setup process
+    * URLs accessed by device:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.google.com`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.googleapis.com`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`http://connectivitycheck.gstatic.com`  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required by Google for Android to connect to a wireless network)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://[ProjectID].firebaseio.com`  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://us-central1-[projectID].cloudfunctions.net`  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
+        * URL accessed by the admin on a PC:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;Web portal URL - supplied by Zebra during the cloud setup process
 <br>
 
 <p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>

@@ -15,7 +15,7 @@ productversion: "4.1"
 Device Tracker is a cloud-based scalable solution that easily tracks Zebra Android mobile devices, finds missing devices and helps prevent device inventory shrinkage. Misplaced or lost devices within a facility are tracked by leveraging existing Wi-Fi network infrastructure and utilizing Bluetooth technology and audio chirping to locate devices. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) it is connected to within the facility. The visual proximity indicator relies on Bluetooth beacon transmissions to determine the approximate location of the device. Audio can be played on the misplaced device to further pinpoint its location.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MzCWdLUhEPY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<i>Video: Track and find misplaced devices with Device Tracker</i>
+<i>Video: Overview of Device Tracker</i>
 
 <p><b>Main features:</b></p>
 
@@ -89,12 +89,10 @@ Supported devices require GMS (Google Mobile Services):
 
 Requirements for Device Tracker client:
 
-* **Operating System:** select Android Oreo and Android 10 GMS only devices.
+* **Operating System -** Only supported on select Android Oreo and Android 10 GMS devices. See [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html) for supported devices.
 * **Bluetooth** must be enabled to find devices using the visual proximity indicator. Zebra provides a tool (StageNow) for EMMs to configure the device remotely to enable Bluetooth. 
 * **WiFi** must be enabled and connected to the network to communicate with the server. Zebra provides a tool (StageNow) for EMMs to configure the device remotely to enable WiFi. 
 * **Location** services must be enabled on all devices to find devices using the Bluetooth-based proximity indicator.
-
-<p>See <a href="./#supporteddevices">Supported Devices.</a></p>
 
 ### Network Requirements
 
@@ -161,8 +159,8 @@ Comparison of **[Device Tracker On-Prem](/devicetracker-onprem/latest/guide/abou
   </tr>
   <tr>
     <td>Android platform support</td>
-    <td>Select devices only up to Android Pie</td>
-    <td>Select Android Oreo and Android 10 devices upon release</td>
+    <td>Only supported on select devices up to Android Pie</td>
+    <td>Only supported on select Android Oreo and Android 10 devices</td>
   </tr>
   <tr>
     <td>Common Features</td>

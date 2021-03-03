@@ -83,7 +83,7 @@ Requirements for Device Tracker On-Prem client:
 - The server URL, user name, and password is configured in the Device Tracker On-Prem client to communicate with the server.
 - Bluetooth radio is enabled on both devices for proximity tracking with BLE (Bluetooth Low Energy) beacons.
 
-See [Supported Devices](../about#supporteddevices).
+See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a>.
 
 ##Server Install & Setup
 Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
@@ -385,7 +385,7 @@ For remote installation, create a StageNow installation profile to install and s
 6. If using StageNow to copy the install file to the device, scroll down and click the plus (+) sign next to **FileMgr.** This adds FileMgr to the Config tab on the right side.
 7. Scroll to **AppMgr** and click the plus (+) sign next to it. This adds AppMgr to the Config tab on the right side.
 8. Repeat step 7 again. AppMgr is listed twice in the Config tab.
-   <img alt="" style="height:450px" src="config-list.png" /><i>Config list</i>
+   <img alt="" src="config-list.png" style="height:450px" /><i>Config list</i>
 
 9. Click **Add.**
 10. If using StageNow to copy the install file to the device, proceed with this step.  Otherwise, skip to step 11.<br>

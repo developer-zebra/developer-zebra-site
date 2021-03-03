@@ -56,12 +56,12 @@ Voice Input features are accessible from the DataWege profile.
 * **Enabled** - Enables voice input. 
 
 * **Data capture start option** - Select trigger option for voice capture.
-    * **Start phrase -** Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>. **_This feature is being deprecated and will be discontinued in a future release._**
+    * **Start phrase -** Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>. **_This feature is being deprecated and will be discontinued in a future release. As an alternative, Zebra recommends using the PTT button to trigger voice capture._**
     * **PTT button -**  Sets PTT button to trigger voice capture. <i>Only supported on EC30, MC93, TC52/TC57, TC72/TC77, and TC8300 devices. For other devices, the PTT button may be mapped to an available button on the device.</i> <br>
 
-* **Data capture start phrase** - Specified phrase to start the data capture if **Start phrase** is selected as the **Data capture start option**. Numbers and special characters are not supported as part of the start phrase. _The default value is "start."_ **_This feature is being deprecated and will be discontinued in a future release._**
+* **Data capture start phrase** - Specified phrase to start the data capture if **Start phrase** is selected as the **Data capture start option**. Numbers and special characters are not supported as part of the start phrase. _The default value is "start."_ **_This feature is being deprecated and will be discontinued in a future release. As an alternative, Zebra recommends using the PTT button to trigger voice capture._**
 
-* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. **_This feature is being deprecated and will be discontinued in a future release._**
+* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. **_This feature is being deprecated and will be discontinued in a future release. As an alternative, Zebra recommends using the PTT button to trigger voice capture._**
 
 * **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _The default value is "0."_ 
 

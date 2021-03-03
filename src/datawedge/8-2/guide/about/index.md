@@ -17,6 +17,7 @@ There are 2 approaches to capture data:
 
 Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
 
+<!-- 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about NextGen SimulScan:</b> <br>
 
 <a href="../input/barcode/#nextgensimulscanconfiguration">NextGen SimulScan</a> consists of major SimulScan capabilities migrated to the internal scanning framework accessible through DataWedge and <a href="../api">DataWedge intent APIs.</a> These capabilities are supported on <a href="../input/barcode#bluetoothscanners">certain Bluetooth scanners</a> and all Zebra devices with built-in imager and/or camera running Android 8.x Oreo and higher. For <b>Zebra Professional-series devices,</b> such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license.</a> NextGen SimulScan features (formerly part of SimulScan) are:<br>
@@ -24,12 +25,12 @@ Follow the [Get Started](../gettingstarted) guide, which discusses both approach
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>◦ <a href="../input/barcode#multibarcodeparams">Number of barcodes per scan</a> -</b> set a fixed quantity of barcodes to scan.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>◦ <a href="../input/barcode#multibarcodeparams">Instant Reporting</a> -</b> instantaneously report unique barcodes within a scanning session. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>◦ <a href="../input/barcode#multibarcodeparams">Report decoded barcodes</a> -</b> report decoded barcodes in a single scan session. <br>
-<!--  // **TUT-40275 - OCR and Signature Capture not part of NGSS**
-&nbsp;&nbsp;&nbsp;<b>• OCR A/B -</b> <a href="../input/barcode#ocra">OCR A</a> and <a href="../input/barcode#ocrb">OCR B</a> decoder support added since DataWedge 7.5.<br>
-&nbsp;&nbsp;&nbsp;<b>• Image Capture -</b> <a href="../input/barcode#decodersignature">Decoder Signature</a> (aka Signature Capture) support added since DataWedge 7.3. Other Image Capture features to be transitioned later in 2020.<br>-->
+
 &nbsp;&nbsp;&nbsp;<b>• Document Capture -</b> scan a document based on a <a href="../input/barcode#documentcapture">document capture template</a>. Contact your local Zebra sales representative for assistance to create a Document Capture template. <br>
 See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more information.
 </div>
+
+-->
 
 **[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
 
@@ -41,11 +42,11 @@ Each Profile generally contains four elements:
 
 When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with little or no setup. 
  
-**Important:** 
+**Note:** 
 * **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on **[disabling DataWedge](../settings/#disabledatawedge)**. 
 * **Delay in scanning after a device reboot**. DataWedge requires a brief period of time to initialize after device reboot due to waiting for a response to be received from the initialization of the scanning subsystem, causing scanning to be inactive from DataWedge during this time frame.
 
->**Note**: The appearance of sample app screens displayed throughout this guide can vary by DataWedge version, Android version, and screen size.
+> The appearance of sample app screens displayed throughout this guide can vary by DataWedge version, Android version, and screen size.
 
 <!--
 DataWedge provides “zero-code” barcode scanning and processing services for Zebra devices running Android with the use of profiles. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
@@ -143,6 +144,36 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
+## Important Information
+
+### NextGen SimulScan
+
+<a href="../input/barcode/#nextgensimulscanconfiguration">NextGen SimulScan</a> consists of major SimulScan capabilities migrated to the internal scanning framework accessible through DataWedge and <a href="../api">DataWedge intent APIs.</a> These capabilities are supported on <a href="../input/barcode#bluetoothscanners">certain Bluetooth scanners</a> and all Zebra devices with built-in imager and/or camera running Android 8.x Oreo and higher. For <b>Zebra Professional-series devices,</b> such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license.</a> NextGen SimulScan features (formerly part of SimulScan) are:<br>
+
+* **MultiBarcode -** acquire multiple, unique barcodes in a single scan session and deliver scanned data either immediately or after the specified number of barcodes per scan is reached. Options currently available:
+    * **[Number of barcodes per scan](../input/barcode#multibarcodeparams) -** set a fixed quantity of barcodes to scan.
+    * **[Instant Reporting](../input/barcode#multibarcodeparams) -** instantaneously report unique barcodes within a scanning session.
+    * **[Report decoded barcodes](../input/barcode#multibarcodeparams) -** report decoded barcodes in a single scan session. 
+* **Document Capture -** scan a document based on a [document capture/NG SimulScan template](../input/barcode#documentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture template. 
+
+See [Simulscan Migration Alert](/simulscan/1-1/guide/alert) for more information.
+
+### Voice Input Options Deprecated
+
+The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
+* Data capture start option - Start phrase
+* Data capture start phrase
+* Data capture end phrase
+
+As an alternative, Zebra recommends using the PTT button to trigger voice capture.
+
+### Reporting Deprecated
+
+DataWedge [Reporting](../settings/#reporting) is being deprecated and will be discontinued on devices running Android 12. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
+* **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
+* **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle. See [Get Supported Parameters](../api/getconfig/#getsupportedparameters) for sample code.
+
+-----
 ## Usage Notes
 
 1. When the device is suspended, it takes a few milliseconds to release all the resources. DataWedge releases the resources once it receives the Screen Off notification. Until this notification is received, DataWedge continues to function (e.g. scanning) for a short period of time despite the device being suspended. 
@@ -162,13 +193,7 @@ For more information about approved languages or to download a localized operati
     * Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselection)
 * New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 * Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
-* The [DataWedge Reporting](../settings/#reporting) feature is being deprecated and will be discontinued in devices running Android 12. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
-    * **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
-    * **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle.
-* Note: The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
-    * Data capture start option - Start phrase
-    * Data capture start phrase
-    * Data capture end phrase
+
 
 -----
 ## Recent Version History

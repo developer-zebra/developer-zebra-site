@@ -14,19 +14,17 @@ productversion: '8.2'
 * Enterprise Keyboard must be set as the default IME in Android Settings on the device. 
 * The Enterprise Keyboard layout definition file (`.encrypted`) is placed on the device in directory `/enterprise/device/settings/ekb/config`.
 
-> **Note:** Enterprise Keyboard custom layouts are not supported on TC21/TC26 devices. Support will be added in a future release.
-
 <img style="height:350px" src="generic-ekb-layout.png"/>
 _Figure 1. Enterprise Keyboard - standard (default) layout_             
 <br>
 Enterprise Keyboard Configuration is accessible from the DataWedge profile screen:
 <img style="height:425px" src="dw-ekb.jpg"/>
 <br>
+
 Enterprise Keyboard Configuration options include:
 * Enable/Disable Enterprise Keyboard
 * Select a layout for the keyboard
 
-<br>
 Enterprise Keyboard Configuration is disabled and cannot be configured if one of the following conditions exist:
 * Enterprise Keyboard is not the default IME in Android on the device.  
 * A `.encrypted` file is not found in `/enterprise/device/settings/ekb/config` directory. 

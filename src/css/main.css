@@ -175,6 +175,7 @@ ul.nostyle i {
   padding: 22px 15px 21px;
 }
 @media only screen and (min-width: 768px) {
+
   #main-menu{
     position:relative;
   }
@@ -196,7 +197,7 @@ ul.nostyle i {
   }
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
-  #main-menu.navbar-default .navbar-nav > li:hover > a {
+  #main-menu.navbar-default .navbar-nav > li.hover > a {
     background: transparent;
     padding-top: 37px;
     border-top: 3px solid #45aed6;

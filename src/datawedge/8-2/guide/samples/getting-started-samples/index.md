@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Getting Started with Java, Kotlin, and Xamarin
-description: Guides how to develop an application to capture data. 
+description: How-to guide to develop an application in Java, Kotlin, and Xamarin to capture data. 
 sources:
   - title: Github Repo
     url: 'https://github.com/darryncampbell/DataWedge-GettingStarted-Samples'
@@ -22,7 +22,7 @@ date: 2021-03-03
 ## Overview 
 To get started developing an application to capture barcode data on Zebra mobile computers using Zebra DataWedge, refer to [DataWedge Getting Started Samples](https://github.com/darryncampbell/DataWedge-GettingStarted-Samples). This guide demonstrates how to use DataWedge intents to capture data. The same sample app is given in Java, Kotlin, and Xamarin.
 
-> This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. The appearance of sample app screens can vary by sample app version, Android version, and screen size.
+> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
 
 ## APIs Used
 

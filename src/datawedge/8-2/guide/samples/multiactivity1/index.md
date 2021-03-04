@@ -32,7 +32,7 @@ Common use cases:
 
 This sample app is based on a previous blog post  <a href="https://developer.zebra.com/blog/using-datawedge-multiple-android-activities">Using DataWedge with Multiple Android Activities</a> 
 
->**Note**: This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. The appearance of sample app screens can vary by sample app version, Android version, and screen size.
+> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
 
 ##APIs Used
 

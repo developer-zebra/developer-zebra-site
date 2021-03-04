@@ -29,7 +29,7 @@ date: 2018-17-07
 ##Overview 
 The DataWedge API Sample App demonstrates the functionality for all major DataWedge Intent APIs up to version 6.8, the latest version at the time of creation. To utilize this sample application, a basic understanding of DataWedge is assumed.  For further information on DataWedge APIs as well as insight into this sample app, refer to [DataWedge APIs – Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) article by Zebra's engineer Darryn Campbell, from which this DataWedge API Sample originated from. 
 
->**Note**: This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. The appearance of sample app screens can vary by sample app version, Android version, and screen size.
+> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
 
 ##APIs Used
 ###APIs (6.x)

@@ -425,9 +425,9 @@ Error messages are logged for invalid actions and parameters.
 	    }
 	}
 
-### Get supported parameters
+### Get barcode parameters
 
-Retrieves the supported parameters of the device from the specified profile. Parameters are retrieved based on the plugin specified, in this example, barcode plugin. The parameter result returns "true" if supported by the device, otherwise "false" is returned.
+Retrieves the supported barcode parameters of the device from the specified profile. The parameter result returns "true" if supported by the device, otherwise "false" is returned.
 
     public void getScannerConfig()
     {

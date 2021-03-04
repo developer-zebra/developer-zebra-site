@@ -26,15 +26,15 @@ The following software is required to use EMDK for Android:
 
 -----
 
-### Install EMDK Plug-ins
+### Install EMDK-for-Android Plugin
 
-The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
+The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. 
+
+**[Install Android Studio](https://developer.android.com/studio/)** before proceeding. 
 
 > **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions vary slightly. 
 
 #### Set up EMDK for Android:
-
-**[Install Android Studio](https://developer.android.com/studio/)** before proceeding. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Select a Project SDK**:<br>
@@ -46,21 +46,45 @@ The following instructions apply to Android Studio, which is required to use EMD
    <img alt="image" style="height:350px" src="sdk_dropdown.png"/>
    _Click to enlarge; ESC to exit_.<br>
    e. **Click "Apply" and then "OK"** to close.<br>
-3. **Install the EMDK Profile Manager plug-in**:<br>
-   a. Go to **File -> Settings.**<br>
-   b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
-   c. **Enter "emdk" in the search box**.<br>
-   d. **Click the "installed" tab**.<br>
+3. **Install the EMDK for Android plug-in**:<br>
+   a. Go to **Android Studio -> Preferences.**<br>
+   b. In the left-hand pane, **select "Plugins"** to show Installed Plugins and the Plugin Marketplace:
+   <img alt="image" style="height:350px" src="emdk_plugins_01.png"/>
+_Click to enlarge; ESC to exit_.<br>
+   c. **Click "Marketplace"** (if necessary) to show available Plugins.<br>
+   d. **Enter "emdk" in the search box** and **hit ENTER**.<br>
+   e. **Click "Install**" button.<br>
+   <img alt="image" style="height:350px" src="emdk_plugins_02.png"/>
+_Click to enlarge; ESC to exit_.<br>
+   f. **Click "Apply"** to activate the Plugin, then **Click "OK"** to close.<br>
+<img alt="image" style="height:350px" src="emdk_plugins_03.png"/>
+_Click to enlarge; ESC to exit_.<br>
+4. **Enable the EMDK SDK**:<br>
+   a. **Go to the app module** in the Android project in which to to use EMDK.<br>
+   b. **Navigate to the** `build.gradle` **file**:<br>
+   <img alt="image" style="height:350px" src="gradle_01.png"/>
+_Click to enlarge; ESC to exit_.<br>
+   c. **Add the following line to the dependencies section**:<br>
+
+        :::java
+            dependencies {
+            compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
+                ...
+            }
+5. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
+ **NOTE**: Eliminate this step by checking the Preference box shown below:  
+   <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
+_Click to enlarge; ESC to exit_.<br>
+
+<!--     
+3/4/21- Replaced step 5 with above per DC: 5. **Rebuild the project** (Build -> Make Project). 
+
     •  If no result appears, skip to Step 3e.<br>
-   <img alt="image" style="height:350px" src="uninstall_02.png"/>
-_Click to enlarge; ESC to exit_.<br>
     •  If any version prior to 7.1 appears, **select it and click the "Uninstall" button**.<br>
-<img alt="image" style="height:350px" src="uninstall_03.png"/>
-_Click to enlarge; ESC to exit_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
     •  In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
-   e. **Click the "Marketplace" tab**.<br>
+   e. **Click "Marketplace."**<br>
    f. **Enter "emdk" in the search box**.<br>
    g. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
    <img alt="image" style="height:350px" src="install_plugin_02.png"/>
@@ -71,21 +95,10 @@ _Click to enlarge; ESC to exit_.<br>
    i. **Click "Restart"** to confirm and restart Android Studio.<br> 
    <img alt="image" style="height:100px" src="install_plugin_05.png"/>
 _Click to enlarge; ESC to exit_.<br>
-4. **Enable the EMDK SDK**:<br>
-   a. **Create or open an Android project**.<br>
-   b. **Navigate to the** `build.gradle` **file** in the app module:<br>
-   <img alt="image" style="height:350px" src="gradle_01.png"/>
-_Click to enlarge; ESC to exit_.<br>
-   c. **Add the following line to the dependencies section**:<br>
 
-        :::java
-            dependencies {
-            compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
-                ...
-            }
-5. **Rebuild the project** (Build -> Make Project). 
+ -->
 
-#### EMDK APIs are now ready to use. 
+##### EMDK APIs are now ready to use. 
 
 #### Notes: 
 * A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.

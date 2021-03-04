@@ -26,7 +26,7 @@ The following software is required to use EMDK for Android:
 
 -----
 
-### Install EMDK for Android Plugin
+### Install EMDK-for-Android Plugin
 
 The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. 
 
@@ -71,9 +71,14 @@ _Click to enlarge; ESC to exit_.<br>
             compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
                 ...
             }
-5. **Rebuild the project** (Build -> Make Project). 
+5. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
+ **NOTE**: Eliminate this step by checking the Preference box shown below:  
+   <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
+_Click to enlarge; ESC to exit_.<br>
 
 <!--     
+3/4/21- Replaced step 5 with above per DC: 5. **Rebuild the project** (Build -> Make Project). 
+
     •  If no result appears, skip to Step 3e.<br>
     •  If any version prior to 7.1 appears, **select it and click the "Uninstall" button**.<br>
     •  Click the **"Restart Android Studio"** button.<br>

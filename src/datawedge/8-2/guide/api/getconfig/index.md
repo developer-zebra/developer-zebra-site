@@ -427,7 +427,7 @@ Error messages are logged for invalid actions and parameters.
 
 ### Get barcode parameters
 
-Retrieves the supported barcode parameters of the device from the specified profile. The parameter result returns "true" if supported by the device, otherwise "false" is returned.
+Retrieves the supported barcode parameters of the device from the specified profile. Returns a list of supported barcode parameters with their current values. If a barcode parameter is not listed, that means it is not supported on the device.
 
     public void getScannerConfig()
     {
@@ -583,7 +583,6 @@ Sample output from code:
     	decoder_uk_postal: false
     	upcean_security_level: 1
     	code39_enable_marginless_decode: false
-    	ocr_subset: !"#$%()*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz\^|
     	barcode_trigger_mode: 1
     	decoder_uk_postal_report_check_digit: false
     	decoder_codabar_redundancy: true

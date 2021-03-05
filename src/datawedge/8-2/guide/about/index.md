@@ -171,7 +171,7 @@ As an alternative, Zebra recommends using the PTT button to trigger voice captur
 
 DataWedge [Reporting](../settings/#reporting) is being deprecated and will be discontinued on Zebra devices running Android 12, expected to be released in early 2022. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
 * **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
-* **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle. See [Get Supported Parameters](../api/getconfig/#getsupportedbarcodeparameters) for sample code.
+* **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle. See [Get Barcode Parameters](../api/getconfig/#getbarcodeparameters) for sample code.
 
 -----
 ## Usage Notes

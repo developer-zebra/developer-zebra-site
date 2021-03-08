@@ -53,7 +53,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
 2. Enter the path to an APK file that you have placed on your device.  /sdcard/Battery Sample Application.apk
   ![img](2_2.png)    
   >Note:  
-  >To place an APK file on the device connect the device to to you computer over USB as a "Medea Device" and copy an APK to your device.  
+  >To place an APK file on the device connect the device to to you computer over USB as a "Media Device" and copy an APK to your device.  
 3.  Click "Set" 
 4.  Check the status field.   
   ![img](2_3.png)  

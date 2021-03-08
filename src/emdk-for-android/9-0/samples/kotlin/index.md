@@ -3,8 +3,8 @@ publish: true
 title: Scanning with Kotlin
 description: Explains how use EMDK for Android to build a scanning app using Kotlin.
 downloads:
-  - title: Projects Description
-    url: 'https://developer.zebra.com/blog/kotlin-and-developing-kotlin-applications-zebra-devices'
+  - title: Project Description (.pdf)
+    url: 'Kotlin_sample_01.pdf'
 sources:
   - title: Github Repo
     url: 'https://github.com/darryncampbell/DataWedgeKotlin'
@@ -25,38 +25,6 @@ productversion: '9.0'
 
 ##Overview
 
-OLD OLDIE OLDER
+This sample demonstrates how to write a Kotlin application to consume Zebra’s EMDK for Android library. It's a proof of concept based on the [EMDK Barcode Sample 1​](../barcode/) (the important file is `MainActivity.kt​`).  This fork can be built with Android Studio 3.x and run on any Zebra mobile computer supported by EMDK 6.9.
 
-The EMDK for Android allows you to manage applications on the device. 
-
-The available actions are:  
-- Install an application
-- Uninstall an application
-- Upgrade an application  
-- Set an application as the default launcher 
-
-This sample application will allow you to install, upgrade, and uninstall an application. 
-
-
-
-##Requirements
-Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
-
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
-
-* [Android Studio](/emdk-for-android/9-0/guide/emdksamples_androidstudio)
-
->**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
-
-##Using This Sample
-1. When the application starts it should look like the following.  
-  ![img](2_1.png)  
-2. Enter the path to an APK file that you have placed on your device.  /sdcard/Battery Sample Application.apk
-  ![img](2_2.png)    
-  >Note:  
-  >To place an APK file on the device connect the device to to you computer over USB as a "Medea Device" and copy an APK to your device.  
-3.  Click "Set" 
-4.  Check the status field.   
-  ![img](2_3.png)  
-
+> See "Downloads" and "Sources" buttons above for more information. <br> See the Zebra Developer Portal for the original [Kotlin Project Description](https://developer.zebra.com/blog/kotlin-and-developing-kotlin-applications-zebra-devices)

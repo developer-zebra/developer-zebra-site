@@ -23,6 +23,20 @@ The following are required to run the StageNow desktop tool:
 <!-- 1/21/2020- Audio staging removed from SN 4.1 
 * The Java Runtime Environment (for audio staging)
  -->
+
+<!-- 
+> **Auto-update Note**: 
+
+We have faced an issue in auto-updating Stagenow tool to v3.4 or above. Stagenow team informed the rootcause as If we have previously installed SN tool v3.4 or 4.0 and then uninstall and then when we try to autoupdate, the process fails because of stagenow database containing trusted certificate column .
+
+This information has not been documented anywhere and we are facing few customer issues regarding this . Please can you document this issue under install colum of stagenow techdocs link
+
+ 
+
+
+-----
+ -->
+
 -----
 
 ## Installing StageNow

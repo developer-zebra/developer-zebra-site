@@ -29,4 +29,4 @@ This sample demonstrates how to write a Kotlin application to consume Zebra’s 
 
 > See "Downloads" and "Sources" buttons above for more information. <br> See the Zebra Developer Portal for the original [Kotlin Project Description](https://developer.zebra.com/blog/kotlin-and-developing-kotlin-applications-zebra-devices)
 
-*This sample app is for educational purposes only and is provided as-is with no promise of support. NOT INTENDED FOR PRODUCTION ENVIRONMENTS*.
+*This sample app is for educational purposes only and is provided as-is with no promise of support. <br> **NOT INTENDED FOR PRODUCTION ENVIRONMENTS***.  

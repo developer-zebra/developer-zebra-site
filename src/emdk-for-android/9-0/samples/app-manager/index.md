@@ -1,31 +1,29 @@
 ---
 publish: true
-title: Scanning with Kotlin
-description: Explains how use EMDK for Android to build a scanning app using Kotlin.
+title: App Manager
+description: Shows how to use EMDK for Android Profile APIs to manage App Manager profiles.
 downloads:
-  - title: Projects Description
-    url: 'https://developer.zebra.com/blog/kotlin-and-developing-kotlin-applications-zebra-devices'
+  - title: Sample Projects
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/darryncampbell/DataWedgeKotlin'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
 features:
-  - Kotlin
-  - Scanner API
+  - Profile Manager
+  - App Manager
 devices:
   - All supported devices
 image: 1.png
 screenshots:
-  - kotlin_sample_1.jpeg
-  - kotlin_sample_2.png
-  - kotlin_sample_3.png
+  - 1.png
+  - 2.png
+  - 3.png
 layout: sample.html
 product: EMDK For Android
 productversion: '9.0'
 ---
 
 ##Overview
-
-OLD OLDIE OLDER
 
 The EMDK for Android allows you to manage applications on the device. 
 

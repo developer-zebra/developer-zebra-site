@@ -35,7 +35,7 @@ Available actions in this sample:
 * Scan and display the captured data as an image. 
 * Save the image file to the device.
 
-> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
+> This sample application is intended only for educational purposes, demonstrating the use of DataWedge intent API(s). It is provided as-is without any guarantee.
 
 ##APIs Used
 

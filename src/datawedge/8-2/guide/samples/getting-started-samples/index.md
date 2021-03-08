@@ -22,7 +22,7 @@ date: 2021-03-03
 ## Overview 
 To get started developing an application to capture barcode data on Zebra mobile computers using Zebra DataWedge, refer to [DataWedge Getting Started Samples](https://github.com/darryncampbell/DataWedge-GettingStarted-Samples). This guide demonstrates how to use DataWedge intents to capture data. The same sample app is given in Java, Kotlin, and Xamarin.
 
-> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
+> This sample application is intended only for educational purposes, demonstrating the use of DataWedge intent API(s). It is provided as-is without any guarantee.
 
 ## APIs Used
 

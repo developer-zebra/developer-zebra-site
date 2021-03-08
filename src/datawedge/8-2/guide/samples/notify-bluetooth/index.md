@@ -23,7 +23,7 @@ date: 2021-01-01
 
 The [DataWedge Notify Sample](https://github.com/darryncampbell/DataWedge-Notify-Sample) demonstrates how to use the DataWedge [Notify API](../../api/notify) to communicate with the connected Bluetooth scanner to play a notification sound(s) and/or display a colored LED after a scan.
 
-> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
+> This sample application is intended only for educational purposes, demonstrating the use of DataWedge intent API(s). It is provided as-is without any guarantee.
 
 Video demonstrating how to use the DataWedge Notify sample app:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9lAqXa-aLeA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

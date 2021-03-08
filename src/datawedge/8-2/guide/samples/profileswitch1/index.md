@@ -32,7 +32,7 @@ Use Cases:
 
 This Java sample app is based on a Kotlin sample app from a previous blog post <a href="https://developer.zebra.com/blog/mimicking-field-level-profiles-datawedge-api">Mimicking Field-Level Profiles with the DataWedge API</a> 
 
-> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
+> This sample application is intended only for educational purposes, demonstrating the use of DataWedge intent API(s). It is provided as-is without any guarantee.
 
 ##APIs Used
 

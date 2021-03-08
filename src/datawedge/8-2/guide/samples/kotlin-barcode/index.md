@@ -24,7 +24,7 @@ With Kotlin gaining more popularity as the preferred programming language with d
 1. **First activity -** displays received scans and can invoke the scanner with a soft button.
 2. **Second activity -** configures the selected scanner and makes changes to the current scanner configuration with the DataWedge [SET_CONFIG](../../api/setconfig) API.
 
-> This sample application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. 
+> This sample application is intended only for educational purposes, demonstrating the use of DataWedge intent API(s). It is provided as-is without any guarantee.
 
 ## APIs Used
 

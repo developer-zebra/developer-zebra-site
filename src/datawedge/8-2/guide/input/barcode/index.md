@@ -276,7 +276,7 @@ _Document Capture template selection_
 <br><br>
 
 Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9XHE8udeq1k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9XHE8udeq1k" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Document Capture with Anchor Barcode
 Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   <br>

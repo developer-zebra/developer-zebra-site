@@ -89,9 +89,9 @@ features:
    video_type: youtube
  - image-location: left
    anchor_id: btscanner-notifications
-   title: Bluetooth Scanner Notifications Now Colorful, Audible
+   title: New Colorful, Audible Bluetooth Scanner Notifications
    subtitle: New in Zebra DataWedge 8.2
-   description: Updates to Notify, also known as the Bluetooth Scanner Notifications API in DataWedge 8.2, now allows apps to light a colored LED or play audio beeps based on user actions or barcodes scanned by a connected Bluetooth scanner. Such visual and audible cues allow device users to react to scanning actions more quickly and with greater proficiency. 
+   description: Updates to Notify API, also known as the Bluetooth Scanner Notifications API, now allows apps to light a colored LED or play audio beeps based on user actions or barcodes scanned by a connected Bluetooth scanner. Such visual and audible cues allow device users to react to scanning actions more quickly and with greater proficiency. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/api/notify/
    video: l85vNZdrZxw
    video_type: youtube
@@ -188,6 +188,15 @@ comingsoon:
    video: 5Kr8h-Cke6k
    video_type: youtube
    button_text: Learn More About DataWedge 
+ - image-location: right
+   anchor_id: ng-simulscan
+   title: NextGen SimulScan to Support Camera Input
+   subtitle: Coming to DataWedge in Mid-2021
+   description: With SimulScan features now embedded in DataWedge as NextGen SimulScan, Zebra engineers are adding the ability to use the device camera to scan barcodes and capture images with more clarity than was previously possible. Soon to be on par with the imager, the camera will capture full or partial forms and signatures and optionally decode one or more barcodes from captured forms. 
+   url: https://techdocs.zebra.com/datawedge
+   video: jHXfCap7Raw
+   video_type: youtube
+   button_text: Learn More About DataWedge
 ---
 <!--  WHEN NO ITEMS ARE "COMING SOON"
   add "-none" to the lines as follows:

@@ -91,7 +91,7 @@ features:
    anchor_id: btscanner-notifications
    title: New Colorful, Audible Bluetooth Scanner Notifications
    subtitle: New in Zebra DataWedge 8.2
-   description: Updates to Notify API, also known as the Bluetooth Scanner Notifications API, now allows apps to light a colored LED or play audio beeps based on user actions or barcodes scanned by a connected Bluetooth scanner. Such visual and audible cues allow device users to react to scanning actions more quickly and with greater proficiency. 
+   description: Updates to the Notify API, also known as the Bluetooth Scanner Notifications API, now allow apps to light a colored LED or play audio beeps based on user actions or barcodes scanned by a connected Bluetooth scanner. Such visual and audible cues allow device users to react to scanning actions more quickly and with greater proficiency. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/api/notify/
    video: l85vNZdrZxw
    video_type: youtube

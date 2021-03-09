@@ -16,11 +16,57 @@ DataWedge allows any application on Zebra devices to capture data from barcode, 
 
 DataWedge APIs are often used in preference to Zebra’s EMDK. Developing EMDK apps require a thorough knowledge of scanning APIs - designing and coding EMDK apps can be time consuming due to its higher level of difficulty. DataWedge offers a simpler interface, better API ease-of-use, and flexibility. DataWedge data may be retrieved from any application regardless of the underlying application technology (e.g. Java, Xamarin, Cordova). DataWedge and EMDK provide similar features and control over data capture. See [DataWedge vs EMDK Comparison table](/help/#datawedgevsemdkcomparison) for more information.
 
-Control of barcode scanning hardware is exclusive. When DataWedge is active, Scanner and Barcode APIs of apps, such as an EMDK app, become inoperative. Likewise, when an app controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on disabling DataWedge. 
+**Important: Control of barcode scanning hardware is exclusive.** When DataWedge is active, Scanner and Barcode APIs used in apps (such as an EMDK app), become inoperative. Likewise, when an app controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on **[disabling DataWedge](../settings/#disabledatawedge)**. 
+
+-----
+
+## Main Functionality
+DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
+#### Data Capture
+* Scan and process all [major barcode decoders](../input/barcode/#decoderselection), including: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE
+* Use existing apps to [acquire barcodes](../input/barcode), images,  mag-stripe and other data
+* Set DataWedge to [acquire scanned data for one or multiple apps](../gettingstarted)
+* Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
+* Use voice capture to acquire data with [Voice Input](../input/voice)
+* Use a [magnetic stripe reader (MSR)](../input/msr) to capture data
+* Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
+* Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
+* [Create Profiles](../overview) to implement DataWedge features for individual apps 
+* Configure DataWedge to [automatically scan with external Zebra peripherals](../input/barcode/#autoswitchtodefaultonevent): 
+	* [USB SSI scanners](../input/barcode/#usbssiscanners)
+	* [Bluetooth scanners](../input/barcode/#bluetoothscanners)
+	* [Serial scanners](../input/serial)
+
+#### Data Processing
+* [Enable/Disable decoding](../input/barcode/#decoderselection) of individual symbologies to improve speed
+* [Set parameters](../input/barcode) for individual barcodes, scanners and readers
+* Format output according to [simple](../process/bdf/) or [custom](../process/adf/) rules
+* Use [Plug-ins](../profiles) for data input, output and processing
+* [Create custom string handling](../process/adf/#settingcriteria) and other processing criteria
+
+#### Deployment
+* [Import and export settings](../settings) 
+* Remotely configure and [mass-deploy settings](../settings/#massdeployment) via MDM  
+* [Restore settings](../settings/#restoredefaults) to factory defaults
+* [Apply changes remotely](../settings/#autoimport) to update devices in the field 
+* [Generate reports](../settings/#reporting)
+
+**Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
 
 -------
 
 ## DataWedge Features
+
+**[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
+
+Each Profile generally contains four elements: 
+* **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
+* **A Process Plug-in -** to specify how the acquired data should be manipulated 
+* **An Output Plug-in -** to control the passing of data to an application
+* **An associated application -** (or activity) with which to link DataWedge actions
+
+<!-- When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with little or no setup. 
+-->
 
 Each app that uses DataWedge is associated with a [DataWedge profile](../profiles), which contains options that determine how the data is to be acquired (input), processed (data formatting), and delivered to the receiving app (output). These options are referred to as plugins (e.g. barcode input plugin). DataWedge continually monitors the foreground application - when it detects a change to the foreground app, it activates the appropriate profile associated with the app (if one exists). If the app is not associated with any profile, _Profile0_ is the default generic profile that takes effect. A profile can be exported so the same DataWedge configurations can be deployed across multiple devices.  
 
@@ -54,8 +100,10 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 
 **[Mass Deployment](../settings/#massdeployment) -** DataWedge profiles and settings can be deployed to multiple devices either manually or with an EMM (Enterprise Mobility Management) software. The exported config file or profile can be automatically imported when placed in the `/enterprise/device/settings/datawedge/autoimport` directory.  
 
-**[Create a Profile and Associate App with Profile](../createprofile) -** The basic steps for creating a Profile and associating an app with the profile on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. To enable DataWedge scanning services for an app:
+**[Create a Profile and Associate App with Profile](../createprofile) -** By associating an app with the profile, the app calls on DataWedge to acquire data. Data capture input, processing, and output can be controlled through the profile. 
 
+<!--  The basic steps for creating a Profile and associating an app with the profile on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. To enable DataWedge scanning services for an app:-->
+<!--
 1. **Install the app** that will use DataWedge for scanning. 
 2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
 3. Tap on the Profiles screen's "hamburger" menu and select **New profile**. 
@@ -70,74 +118,45 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 12. As needed, **confirm that Barcode Input and Keystroke Output are enabled**. <br>
 
 The app now uses DataWedge for barcode data acquisition. Test and adjust input, processing (data formatting) and output parameters as necessary.
-
--------
-
-## DataWedge API
-<!--
-DataWedge leverages [Intents](../output/intent), a common application component used in Android programming. The DataWedge service has a broadcast receiver that listens for and responds to broadcast intents to determine what action to take. There are 2 levels for coding: 
-
-* **Minimal coding –** retrieves data from generic Android intents with the use of a broadcast receiver. Requires barcode input and intent output to be enabled in the profile. Refer to [basic intent sample app](../samples/basicintent1).
-* **[DataWedge Intent API](../api) -** uses API intents to have finer control over DataWedge settings and how the data is captured, processed, and delivered to the app. Multiple API calls can be sent as extras using a single intent action. Refer to [barcode scanning sample app](../samples/barcode1). 
 -->
-This section provides guidance on how to use [DataWedge Intent APIs](../api). An application accesses the DataWedge API by sending an intent to query or modify a configuration. Changes can take place at runtime if supported by the API. The action and data of the intent specifies which DataWedge API function to perform. Function prototype: 
-
-	Intent i = new Intent(); 
-	i.setAction("com.symbol.datawedge.api.ACTION"); 
-	i.putExtra(EXTRA_DATA, "<parameter>"); 
-
-A query is made to the DataWedge API by sending a broadcast intent and a reply is received via broadcast intent.  
-
-Basic Usage Guide: 
-
-* **Create profile / update existing profile / configure multiple plugins with a single intent action:** Customize data capture with a DataWedge profile using [Set Config API](../api/setconfig) to create a profile, update a profile, or configure multiple plugins (input, processing, output, utilities) with a single intent. Sample use cases: 
- * Modify the active profile to only enable certain decoders within particular screens in your application workflow to improve scan performance. 
- * Update a profile based on user preferences when the application is running in the foreground. 
- * Use pre-configured profiles to capture data depending on the app running in the foreground. 
- * Modify scanner parameters to perform certain actions, such as emit a continuous scan beam with a single trigger press.  
-* **Enable/Disable data capture:** Enable/disable DataWedge scanner and foreground activity monitoring with [Enable DataWedge API](../api/enabledatawedge). This can be used to allow other application, such as Enterprise Browser, to use the device scanner exclusively.  
-* **Support multiple scanner types across different Zebra devices:** To retrieve the available scanner types on the device (such as internal imager, internal camera, connected Bluetooth, etc.), use [Enumerate Scanners API](../api/enumeratescanners). This is useful if the application is used across different Zebra devices that support different types of scanner hardware. 
-* **Initiate barcode scanning in the app UI:** Trigger barcode scanning with a button tap in the app by using [Soft Scan Trigger API](../api/softscantrigger). Refer to [barcode sample app](../samples/barcode1). 
-* **Check version information to ensure feature support:** Retrieve the DataWedge version on the device with [Get Version Info API](../api/getversioninfo). This can be used to identify whether the device supports a particular feature in use and take action by enabling/disabling the feature based on availability.  
-* **Modify barcode scanner parameters at runtime:** When barcode scanner parameters need to be modified dynamically at runtime but not persist within the profile, use [Switch Scanner Params API](../api/switchscannerparams). For example, an application can have a button to allow the user to set the trigger to continuous mode on demand without setting this in the profile as it is not desired to be set as the default behavior. This is a temporary update - once the “switch” happens, the setting is not persisted if the profile changes.  
-* **Enable/disable or temporarily suspend/resume barcode scanning during runtime:** Dynamically control the integrated barcode scanner (laser, imager, internal camera) to enable/disable the trigger in certain areas of the application workflow or suspend/resume scanning to temporarily activate/de-activate the scanner using [Scanner Input Plugin](../api/scannerinputplugin). Status change notifications include the active profile name, which permits an app to use the enable/disable scanner calls only when status changes affect a relevant profile. This can be useful to change the scanner state in quick succession, for example when there are multiple text fields and it is desired for scanning to suspend when a particular text field is in focus, use Scanner Input Plugin to suspend the scanner in that particular text field. 
-* **Monitor configuration, scanner, and profile switch changes:** Register/unregister to receive notifications for changes related to configuration, scanner and profile switches using [Register for Notification API](../api/registerfornotification). These changes can result from DataWedge API calls (such as Import Config, Switch to Profile, and Scanner Input Plugin) or DataWedge profile changes (such as profile Auto Import).   
-* **Import profile or configuration:** After a profile or configuration file, which can contain multiple profiles, has been exported and placed onto a device, the settings can be imported programmatically with [Import Config API](../api/importconfig) or [manually](../settings/#importaprofile).   
-* **Remove profile:** When a profile is no longer needed, it can be removed with [Delete Profile API](../api/deleteprofile). This can be useful if there is an app that utilizes a profile for a one-time task or a profile needs to be removed when exiting the app. 
-* **Duplicate an existing profile:** Create a copy of an existing profile with [Clone Profile API](../api/cloneprofile). This can be useful if an app requires multiple profiles with common configuration parameters yet each profile may vary with minor differences – after duplication the cloned profile can be passed to Set Config to set the differing configuration. 
-* **Retrieve profile list:** Retrieve all the DataWedge profiles using [Get Profiles List API](../api/getprofileslist). This is useful if an app needs to query the profile list to find a particular profile or if it needs to present a list to the user for a profile to be selected. In cases where an app creates a DataWedge profile upon app launch – a check can be included to determine if the profile exists by retrieving the profile list to improve performance and avoid unnecessary file input/output operations. 
-* **Use different profiles based on application workflow:** For flexibility in using profiles that are not associated with another application, to switch profiles during runtime, and to overcome the restriction of associating an app activity with only one profile, use [Switch to Profile API](../api/switchtoprofile) to activate profiles that are not already associated with another app. This can be helpful to use different profiles within the same app activity, for example if an area of the activity requires PDF417 barcodes to be scanned and another area of the activity requires MSR card data to be read. When focus is on scanning PDF417 barcodes, use SWITCH_TO_PROFILE to activate the profile with the barcode configurations. Similarly, when focus is on reading the MSR data, use SWITCH_TO_PROFILE to activate the profile with the MSR configurations. Both profiles must not already have an app associated. 
 
 -------
 
-## Best Practices 
-The following information provides guidance and best practices for DataWedge application development.
+## Usage Notes
 
-###General
-* **Scanning performance optimization:** To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile. 
-* **Profile configuration across multiple apps:**  DataWedge is a global service and any application on the device can interact with it to configure any profile.  Therefore, care should be taken if multiple applications are trying to modify the same set of profiles. 
+1. **When the device is suspended, it takes a few milliseconds to release all the resources.** DataWedge releases the resources once it receives the Screen Off notification. Until this notification is received, DataWedge continues to function (e.g. scanning) for a short period of time despite the device being suspended. 
+2. **Selecting DataWedge as a keyboard or IME (Input Method Editor) from the Virtual Keyboard settings on the device does not display any graphical keyboard.** DataWedge keyboard is only for internal use of DataWedge. DataWedge should not be selected as the default IME, otherwise unexpected behavior can occur.
+3. **After a device reboot, DataWedge starts after receiving the LOCKED_BOOT_COMPLETED intent.** Calling DataWedge intent APIs before the LOCKED_BOOT_COMPLETED intent may cause unexpected behavior as DataWedge is still not started yet. Calling DataWedge intent APIs soon after receiving the LOCKED_BOOT_COMPLETED intent may also cause unexpected behavior as DataWedge may still be in the initialization process. It is recommended to wait for a few seconds after receiving the LOCKED_BOOT_COMPLETED intent before calling any DataWedge intent APIs. 
+4. **Delay in scanning after a device reboot**. DataWedge requires a brief period of time to initialize after device reboot due to waiting for a response to be received from the initialization of the scanning subsystem, causing scanning to be inactive from DataWedge during this time frame.
+5. **When Data Capture Plus icon is displayed by DataWedge on top of another application,** Android displays a silent notification in the notification area. Users can hide the Data Capture Plus icon by tapping on this notification and disabling the “Allow display over other apps” option. If a user decides to disable this option, even though Data Capture Plus is enabled in DataWedge, it does not display on the screen.
+6. **On Android 10 devices, although the DataWedge icon is visible, DataWedge is not supported with Android work profile.**
 
-### Data Capture 
-* **Temporarily suspend or de-activate scanning in app:** Use Scanner Input Plugin API with SUSPEND_PLUGIN/RESUME_PLUGIN parameters.  
-* For situations that require **rapid changes between suspend/resume status,** use Scanner Input Plugin and register for SCANNER_STATUS notifications. When the scanner is activated (for example from a profile configuration or from RESUME_PLUGIN or ENABLE_PLUGIN intent API), SCANNER_STATUS broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place. For the app to suspend scanning, act only when in the SCANNING and WAITING states - when these states are broadcasted, use SUSPEND_PLUGIN parameter to remain in the suspended state and keep the scanner unusable. Once scanning is suspended, SCANNER_STATUS broadcasts the IDLE state. Use RESUME_PLUGIN to re-activate the scanner.  
-* **Capture data and photos in a single app:** It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
-	1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
-	2. Create a DataWedge Profile with the following settings: 
-	3. Associate the Profile with the picture-taking Activity 
-	4. Disable scanning in the Profile 
-	5. Use the standard Android-SDK APIs to control the camera 
-	6. When the app is used for scanning, the default DataWedge profile will come into effect. 
-	7. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app. 
-* **Data dispatched too quickly:** If data is being dispatched too quickly for the application to accept, such as when using terminal emulation apps, this can be addressed by adding a delay between each character sent to the app with the use of `keystroke_character_delay` in [Set Config](../api/setconfig). Refer to Keystroke Output Parameters section and example code provided in section “Configure an inter-character delay”.  This parameter should be used with caution as it can negatively affect application performance. 
-* When using [DataWedge intent APIs](../api/overview) to **query DataWedge for information** (such as Get Active Profile), the app must register to receive the result with a filter that identifies the action and category of the result intent. 
+-----
 
-### Profiles 
-* **Existence of duplicate Associated Apps when importing profiles:** If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List. 
-* **Activity/app association with profiles:** A single profile can be associated with one or more activities or apps.  However, an activity or app can be associated with only one profile. If there is a requirement to associate an activity or app to more than one profile, this can be addressed with SWITCH_TO_PROFILE, which does not specify any associated apps. <br>
-The following example discusses the use of SWITCH_TO_PROFILE with SCANNER_INPUT_PLUGIN with two activities: Activity A launches and uses Switch to Profile API to switch to ProfileA, which SCANNER_INPUT_PLUGIN is enabled, then at some point it disables the scanner plug-in. Activity B is launched, associated with ProfileB. DataWedge switches to ProfileB. When activity A comes back to the foreground from the onResume method, activity A needs to use Switch to Profile to switch back to ProfileA, then use the same API intent again to disable the scanner plug-in, to return back to the state it was in. Reminder: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile. The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA - therefore activity A must switch back to ProfileA in its onResume method. Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the onResume method of the activity.
+## Multi-User Support
+
+DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. 
+
+Features and functionality:
+* **If DataWedge is enabled, its functionality applies only for the active user** - Each user has a separate DataWedge process running. DataWedge usage and functionality only applies for the active user.
+* **Any DataWedge profile change takes into effect globally across all users** - A DataWedge configuration or profile change by a user (through DataWedge UI or profile import) applies to all users regardless of which user is logged in when the change is made. For example, if User A makes a change to a profile, User B sees the change in the same profile. The configuration file is stored in a location (by default /enterprise/device/settings/datawedge/config/datawedge.db) where the DataWedge process across all users utilize the same configuration file.
+* **Camera scanning functions only for the primary (admin) user** - Camera scanning is not available for secondary (non-primary) users. 
+* **Bluetooth scanner disconnects when switching between primary user and other users** - This applies to profiles which have a Bluetooth scanner enabled. If the primary user is active, when switching to a different user with an active profile that also enables a Bluetooth scanner, the Bluetooth scanner disconnects and does not automatically re-connect to the device. The non-primary user needs to press the reset button on the Zebra Bluetooth scanner to reconnect, even if it shows that the Bluetooth scanner is connected to the device. 
+* **No external SD card access** - If multiple Android user accounts exist, users cannot access the external SD card. This prevents the ability to export or import the Datawedge configuration database files from the SD card. 
+* **Limited folder access** - Each user profile has its own folder structure that is not accessible from a different user. Therefore, a user cannot access the exported DataWedge configuration database of another user, preventing the ability to import/export configurations across users.
+* **"DataWedge not ready" message after switching users following device reboot** - When switching from a primary user to a secondary user for the first time after reboot, after attempting to open DataWedge or DWDemo the message "DataWedge not ready" may display. There could be a delay since DataWedge does not start until the BOOT_COMPLETED intent is received. 
+* **Multiple scanners** - Use of [multiple scanners](../input/barcode/#scannerselection) with multiple Android user accounts may result to unexpected behavior.
+
+-----
+<!--
+## Best Practices
+
+See [Best Practices](../programmers-guides/dw-programming).
 
 -------
+-->
 
+<!-- 
 ## Sample Apps
 
 As of writing, the following [DataWedge sample applications](../samples) are available: 
@@ -155,6 +174,7 @@ As of writing, the following [DataWedge sample applications](../samples) are ava
 * [Signature capture app](../samples/signaturecapture) – uses [Decoder Signature](../input/barcode/#decodersignature) to capture an area within a document, such as a signature, enclosed by a specific pattern and save this to an image 
  
 -------
+-->
 
 Related information: 
 * [DataWedge Profiles](../profiles) - links and details for all DataWedge Plug-ins

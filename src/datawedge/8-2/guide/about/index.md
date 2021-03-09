@@ -15,7 +15,10 @@ There are 2 approaches to capture data:
     * **Minimal code** - basic method to retrieve data from intents (commonly used with general Android programming) with the use of a broadcast receiver without the need for finer control of scanning activity or data processing. Refer to [basic intent sample app](../samples/basicintent1).
     * **[DataWedge APIs](../api)** - programmatically control, modify and query the DataWedge configuration settings and operations through Android intents without concern of the underlying hardware. 
 
-Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
+Follow the [Get Started](../gettingstarted) guide, which discusses both approaches, DataWedge features and functionality, and includes a programmer's guide on common use cases and best practices.
+
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important:</b> Some DataWedge features are being deprecated, including Reporting and some Voice Input options. See <a href="#importantinformation">Important Information</a> section for more details.
+</div>
 
 <!-- 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important information about NextGen SimulScan:</b> <br>
@@ -32,20 +35,6 @@ See <a href="/simulscan/1-1/guide/alert">Simulscan Migration Alert</a> for more 
 
 -->
 
-**[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
-
-Each Profile generally contains four elements: 
-* **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
-* **A Process Plug-in -** to specify how the acquired data should be manipulated 
-* **An Output Plug-in -** to control the passing of data to an application
-* **An associated application -** (or activity) with which to link DataWedge actions
-
-When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with little or no setup. 
- 
-**Note:** 
-* **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on **[disabling DataWedge](../settings/#disabledatawedge)**. 
-* **Delay in scanning after a device reboot**. DataWedge requires a brief period of time to initialize after device reboot due to waiting for a response to be received from the initialization of the scanning subsystem, causing scanning to be inactive from DataWedge during this time frame.
-
 > The appearance of sample app screens displayed throughout this guide can vary by DataWedge version, Android version, and screen size.
 
 <!--
@@ -55,93 +44,6 @@ When programmatic control is required, [DataWedge APIs](../api) provide the abil
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 -->
-
------
-
-### Main Functionality
-DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
-#### Data Capture
-* Scan and process all [major barcode decoders](../input/barcode/#decoderselection), including: Code39, Code128, Datamatrix, DotCode, EAN13, OCR A, OCR B, PDF417, QRCode, UPCA, and UPCE
-* Use existing apps to [acquire barcodes](../input/barcode), images,  mag-stripe and other data
-* Set DataWedge to [acquire scanned data for one or multiple apps](../gettingstarted)
-* Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
-* Use voice capture to acquire data with [Voice Input](../input/voice)
-* Use a [magnetic stripe reader (MSR)](../input/msr) to capture data
-* Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
-* Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
-* [Create Profiles](../overview) to implement DataWedge features for individual apps 
-* Configure DataWedge to [automatically scan with external Zebra peripherals](../input/barcode/#autoswitchtodefaultonevent): 
-	* [USB SSI scanners](../input/barcode/#usbssiscanners)
-	* [Bluetooth scanners](../input/barcode/#bluetoothscanners)
-	* [Serial scanners](../input/serial)
-
-#### Data Processing
-* [Enable/Disable decoding](../input/barcode/#decoderselection) of individual symbologies to improve speed
-* [Set parameters](../input/barcode) for individual barcodes, scanners and readers
-* Format output according to [simple](../process/bdf/) or [custom](../process/adf/) rules
-* Use [Plug-ins](../profiles) for data input, output and processing
-* [Create custom string handling](../process/adf/#settingcriteria) and other processing criteria
-
-#### Deployment
-* [Import and export settings](../settings) 
-* Remotely configure and [mass-deploy settings](../settings/#massdeployment) via MDM  
-* [Restore settings](../settings/#restoredefaults) to factory defaults
-* [Apply changes remotely](../settings/#autoimport) to update devices in the field 
-* [Generate reports](../settings/#reporting)
-
-**Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
-
-> Ready to get started? Go to the [DataWedge Get Started guide](../gettingstarted).
-
------
-
-### Supported Devices
-
-Supported scanners and imagers:
-
-* DS2278
-* DS3608
-* DS3678
-* DS8178
-* LI3608
-* LI3678
-* RS507
-* RS4000
-* RS5000
-* RS5100
-* RS6000
-
------
-
-### Multi-User Support
-
-DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. 
-
-Features and functionality:
-* **If DataWedge is enabled, its functionality applies only for the active user** - Each user has a separate DataWedge process running. DataWedge usage and functionality only applies for the active user.
-* **Any DataWedge profile change takes into effect globally across all users** - A DataWedge configuration or profile change by a user (through DataWedge UI or profile import) applies to all users regardless of which user is logged in when the change is made. For example, if User A makes a change to a profile, User B sees the change in the same profile. The configuration file is stored in a location (by default /enterprise/device/settings/datawedge/config/datawedge.db) where the DataWedge process across all users utilize the same configuration file.
-* **Camera scanning functions only for the primary (admin) user** - Camera scanning is not available for secondary (non-primary) users. 
-* **Bluetooth scanner disconnects when switching between primary user and other users** - This applies to profiles which have a Bluetooth scanner enabled. If the primary user is active, when switching to a different user with an active profile that also enables a Bluetooth scanner, the Bluetooth scanner disconnects and does not automatically re-connect to the device. The non-primary user needs to press the reset button on the Zebra Bluetooth scanner to reconnect, even if it shows that the Bluetooth scanner is connected to the device. 
-* **No external SD card access** - If multiple Android user accounts exist, users cannot access the external SD card. This prevents the ability to export or import the Datawedge configuration database files from the SD card. 
-* **Limited folder access** - Each user profile has its own folder structure that is not accessible from a different user. Therefore, a user cannot access the exported DataWedge configuration database of another user, preventing the ability to import/export configurations across users.
-* **"DataWedge not ready" message after switching users following device reboot** - When switching from a primary user to a secondary user for the first time after reboot, after attempting to open DataWedge or DWDemo the message "DataWedge not ready" may display. There could be a delay since DataWedge does not start until the BOOT_COMPLETED intent is received. 
-* **Multiple scanners** - Use of [multiple scanners](../input/barcode/#scannerselection) with multiple Android user accounts may result to unexpected behavior.
-
------
-
-### Language Support
-
-DataWedge has been approved to run on device operating systems localized for the following languages:
-
-* English
-* French
-* German
-* Italian
-* Spanish
-* Simplified Chinese
-* Traditional Chinese
-
-For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
 ## Important Information
@@ -173,14 +75,40 @@ DataWedge [Reporting](../settings/#reporting) is being deprecated and will be di
 * **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
 * **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle. See [Get Barcode Parameters](../api/getconfig/#getbarcodeparameters) for sample code.
 
------
-## Usage Notes
 
-1. When the device is suspended, it takes a few milliseconds to release all the resources. DataWedge releases the resources once it receives the Screen Off notification. Until this notification is received, DataWedge continues to function (e.g. scanning) for a short period of time despite the device being suspended. 
-2. Selecting DataWedge as a keyboard or IME (Input Method Editor) from the Virtual Keyboard settings on the device does not display any graphical keyboard. DataWedge keyboard is only for internal use of DataWedge. DataWedge should not be selected as the default IME, otherwise unexpected behavior can occur.
-3. After a device reboot, DataWedge starts after receiving the LOCKED_BOOT_COMPLETED intent. Calling DataWedge intent APIs before the LOCKED_BOOT_COMPLETED intent may cause unexpected behavior as DataWedge is still not started yet. Calling DataWedge intent APIs soon after receiving the LOCKED_BOOT_COMPLETED intent may also cause unexpected behavior as DataWedge may still be in the initialization process. It is recommended to wait for a few seconds after receiving the LOCKED_BOOT_COMPLETED intent before calling any DataWedge intent APIs. 
-4. When Data Capture Plus icon is displayed by DataWedge on top of another application, Android displays a silent notification in the notification area. Users can hide the Data Capture Plus icon by tapping on this notification and disabling the “Allow display over other apps” option. If a user decides to disable this option, even though Data Capture Plus is enabled in DataWedge, it does not display on the screen.
-5. On Android 10 devices, although the DataWedge icon is visible, DataWedge is not supported with Android work profile.
+-----
+
+## Supported Devices
+
+Supported scanners and imagers:
+
+* DS2278
+* DS3608
+* DS3678
+* DS8178
+* LI3608
+* LI3678
+* RS507
+* RS4000
+* RS5000
+* RS5100
+* RS6000
+
+-----
+
+## Language Support
+
+DataWedge has been approved to run on device operating systems localized for the following languages:
+
+* English
+* French
+* German
+* Italian
+* Spanish
+* Simplified Chinese
+* Traditional Chinese
+
+For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
 ## New in DataWedge 8.2
@@ -196,7 +124,7 @@ DataWedge [Reporting](../settings/#reporting) is being deprecated and will be di
 
 
 -----
-## Recent Version History
+## Version History
 
 ### Added in DataWedge 8.1
 

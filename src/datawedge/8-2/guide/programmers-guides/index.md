@@ -5,12 +5,22 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: General Programming Practices
-    text: This guide contains various DataWedge Android programming tips and best practices.
-    url: /datawedge/8-2/guide/gettingstarted/#datawedgeapi
+    title: Get Started
+    text: This guide introduces how to use DataWedge and its features.
+    url: /datawedge/8-2/guide/gettingstarted
   - type: section
     level: 4
-    title: Application development articles and blog posts
+    title: Usage Notes and Behavior
+    text: This guide discusses DataWedge usage notes and behavior.
+    url: /datawedge/8-2/guide/programmers-guides/usage-notes  
+  - type: section
+    level: 4
+    title: General Programming Practices
+    text: This guide contains various DataWedge Android programming tips and best practices.
+    url: /datawedge/8-2/guide/programmers-guides/dw-programming
+  - type: section
+    level: 4
+    title: Developer Articles and Blog Posts
     text: This guide contains multiple DataWedge articles and blog posts related to application development.
     url: /datawedge/8-2/guide/programmers-guides/articles
   - type: section

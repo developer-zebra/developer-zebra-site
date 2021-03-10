@@ -15,9 +15,13 @@ There are 2 approaches to capture data:
     * **Minimal code** - basic method to retrieve data from intents (commonly used with general Android programming) with the use of a broadcast receiver without the need for finer control of scanning activity or data processing. Refer to [basic intent sample app](../samples/basicintent1).
     * **[DataWedge APIs](../api)** - programmatically control, modify and query the DataWedge configuration settings and operations through Android intents without concern of the underlying hardware. 
 
-Follow the [Get Started](../gettingstarted) guide, which discusses both approaches, DataWedge features and functionality, and includes a programmer's guide on common use cases and best practices.
+See the [Get Started](../gettingstarted) guide, which discusses both approaches, common use cases, and DataWedge features and functionality. 
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important:</b> Some DataWedge features are being deprecated, including Reporting and some Voice Input options. See <a href="#importantinformation">Important Information</a> section for more details.
+See the [Programmer's guide](../programmers-guides/dw-programming) on for guidance on use of the DataWedge intent APIs and best practices.
+
+See [Usage Notes and Behavior](../programmers-guides/usage-notes) for information on DataWedge use and behavior.
+
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important:</b> Some DataWedge features are being deprecated, including Reporting and some Voice Input options. See <a href="#importantinformation">Important Information</a> section below for more details.
 </div>
 
 <!-- 

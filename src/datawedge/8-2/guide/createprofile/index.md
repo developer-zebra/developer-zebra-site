@@ -66,7 +66,9 @@ Zebra recommends that Profile names be unique, contain alpha-numeric characters,
 
 &#57;. The app now appears in the Profile associations list as below. **Repeat Steps 6-9** until all desired apps and/or activities are associated. 
 <img style="height:350px" src="10_confirm_association.png"/>
-When finished adding associations, **Tap the BACK button** to return to the Profile screen. 
+&#58;. When finished adding associations, tap the back button to return to the Profile screen. <br>
+&#59;. Confirm that the "Profile enabled" checkbox is checked for the new profile created.<br>
+&#60;. If needed, check that Barcode Input and Keystroke Output are enabled.
 <br>
 <br>
 

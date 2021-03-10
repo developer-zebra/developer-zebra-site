@@ -7,8 +7,8 @@ menu:
   items:
     - title: About
       url: /datawedge/8-2/guide/about
-    - title: Get Started
-      url: /datawedge/8-2/guide/gettingstarted
+    - title: Guides
+      url: /datawedge/8-2/guide/programmers-guides
     - title: Profiles
       url: /datawedge/8-2/guide/profiles
     - title: Feature Matrix
@@ -17,8 +17,6 @@ menu:
       url: /datawedge/8-2/guide/settings
     - title: APIs
       url: /datawedge/8-2/guide/api
-    - title: Guides
-      url: /datawedge/8-2/guide/programmers-guides
     - title: Samples
       url: /datawedge/8-2/guide/samples
     - title: FAQ

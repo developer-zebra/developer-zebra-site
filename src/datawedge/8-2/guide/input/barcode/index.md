@@ -213,7 +213,7 @@ _Scanner configuration_
 
 ## NextGen SimulScan Configuration
 
-**NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
+**NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. It controls configuration for NG SimulScan, a data capture solution for retrieving data from documents, forms, and labels in the form of barcodes or multiple images from different regions of the medium. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
 * **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. 
 

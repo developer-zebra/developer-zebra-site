@@ -1,5 +1,5 @@
 ---
-title: Articles and Blogs
+title: Developer Articles and Blogs
 layout: guide.html
 product: DataWedge
 productversion: '8.2'
@@ -29,4 +29,4 @@ Articles and blogs may be posted on other sites that also serve as useful DataWe
 Related Guides: 
 
 * [DataWedge APIs](../../api) 
-* [DataWedge Get Started guide](../../gettingstarted)
+* [DataWedge Programmer's Guide](../../programmers-guides/dw-programming)

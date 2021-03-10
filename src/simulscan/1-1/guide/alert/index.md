@@ -103,10 +103,10 @@ A: Yes. NextGen SimulScan features in the Scanning Framework will support all Or
 A: Please contact your Zebra sales representative for information about accessing early-release software.
 
 **Q: Does the SimulScan Template Builder work with NextGen SimulScan?**<br>
-A: No. The existing Template Builder tool will not work with NextGen SimulScan. A new Template Build compatible with NextGen SimulScan will be available according to the schedule shown in the table above.
+A: A new version of [Template Builder for NextGen SimulScan](https://ng-simulscan.zebra.com/) is now available.
 
-**Q: Does the SimulScan Template Builder work with NextGen SimulScan?**<br>
-A: No. The Template Builder is no longer available and is not required for using NextGen SimulScan APIs.  
+**Q: Is Template Builder required to use NextGen SimulScan APIs?**<br>
+A: No. The Template Builder is not required for using NextGen SimulScan APIs.  
 
 -----
 

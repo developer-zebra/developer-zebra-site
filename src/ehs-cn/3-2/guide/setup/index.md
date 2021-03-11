@@ -1,7 +1,7 @@
 ---
 title: Enterprise Home Screen Setup
 product: Enterprise Home Screen
-productversion: '3.1'
+productversion: '3.2'
 layout: redirect.html
 redirect_url: /ehs-cn/2-8/guide/setup/
 

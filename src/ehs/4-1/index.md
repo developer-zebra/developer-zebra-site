@@ -8,10 +8,10 @@ menu:
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,
-      img: /images/flags/img-flag-china.png
+      img: /images/flags/img-flag-japan.png
       urlFrom: ehs
-      urlTo: ehs-cn
-      label: CN - 普通话
+      urlTo: ehs-jp
+      label: JP - 日本語
   versions:
     - versionto: 2-3
       versionfrom: 2-4

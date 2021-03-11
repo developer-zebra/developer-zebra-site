@@ -7,7 +7,7 @@ menu:
   title: Zebra EHS 4.0
   img: /ehs/ehs-logo.png
   languages:
-    - lang: cn,
+    - lang: jp,
       img: /images/flags/img-flag-japan.png
       urlFrom: ehs
       urlTo: /ehs/ehs-jp

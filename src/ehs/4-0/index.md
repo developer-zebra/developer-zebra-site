@@ -10,7 +10,7 @@ menu:
     - lang: jp,
       img: /images/flags/img-flag-japan.png
       urlFrom: ehs
-      urlTo: /ehs/ehs-jp
+      urlTo: ehs-jp
       label: JP - 日本語
   versions:
     - versionto: 2-3

@@ -8,7 +8,7 @@ Author URL: http://shapebootstrap.net
 /*************************
 *******Typography******
 **************************/
-body {
+body /*{
   height: 2000px;
   position: relative;
 }
@@ -96,8 +96,8 @@ body {
     clip: auto !important;
   }
 }
-
-/*OLD BODY STARTING POINT:*/
+*/
+/*BODY ORIGINAL STARTING POINT:*/
 /*body*/ {
 /*  padding-top: 100px;*/
   background: #fff;

@@ -106,7 +106,7 @@ A: Please contact your Zebra sales representative for information about accessin
 A: A new version of [Template Builder for NextGen SimulScan](https://ng-simulscan.zebra.com/) is now available.
 
 **Q: Will my credentials for the old Template Builder system work with the new one?**<br>
-A: No. All customers and partners must **[register to access NextGen Template Builder](https://signup.zebra.com/register.html?appId=SIMS)**. 
+A: Probably. Valid user credentials of all customers and partners were migrated to the new system and should be available for use. Others must **[register to access NextGen Template Builder](https://signup.zebra.com/register.html?appId=SIMS)**. 
 
 **Q: Is Template Builder required to use NextGen SimulScan APIs?**<br>
 A: No. The Template Builder is not required for using NextGen SimulScan APIs.  

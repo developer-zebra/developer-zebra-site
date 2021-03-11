@@ -330,7 +330,7 @@ jQuery(function($) {'use strict';
 	new WOW().init();
 	//smoothScroll
 	// 3/10/21 commented out
-	// smoothScroll.init();
+	smoothScroll.init();
 
 	// portfolio filter
 	$(window).load(function(){'use strict';
@@ -487,7 +487,7 @@ function bindTreeEvents(li) {
     });
 
 // 3/10/21 FLOATING "BACK TO TOP" BUTTON
-
+/*
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById('js-top');
 
@@ -529,6 +529,6 @@ scrollToTopButton.onclick = function(e) {
 }
 
 // 3/10/21- END OF ADDED SECTION 
-
+*/
 
 }

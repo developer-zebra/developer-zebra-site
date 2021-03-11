@@ -6,7 +6,7 @@ layout: redirect.html
 redirect_url: /ehs-cn/2-8/guide/settings/
 ---
 
-## 切换到EHS 2.8，最新的中文版...
+## 切换到 EHS 2.8，最新的中文版...
 
 
 

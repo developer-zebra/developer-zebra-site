@@ -2,7 +2,7 @@
 title: Enterprise Home Screen
 img: ehs-logo.png
 layout: redirect.html
-redirect_url: /ehs/4-1/guide/about
+redirect_url: /ehs/4-0/guide/about
 menu:
   title: Zebra EHS 4.1
   img: /ehs/ehs-logo.png
@@ -10,7 +10,7 @@ menu:
     - lang: cn,
       img: /images/flags/img-flag-japan.png
       urlFrom: ehs
-      urlTo: ehs/ehs-jp/4-0
+      urlTo: ehs/ehs-jp
       label: JP - 日本語
   versions:
     - versionto: 2-3

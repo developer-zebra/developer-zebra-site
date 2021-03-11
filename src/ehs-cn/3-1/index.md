@@ -2,36 +2,36 @@
 title: Enterprise Home Screen
 img: ehs-logo.png
 layout: redirect.html
-redirect_url: /ehs/4-1/guide/about
+redirect_url: /ehs/2-8/guide/about
 menu:
-  title: Zebra EHS 4.1
+  title: Enterprise Home Screen 3.0
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,
-      img: /images/flags/img-flag-japan.png
+      img: /images/flags/img-flag-china.png
       urlFrom: ehs
-      urlTo: ehs/ehs-jp/4-0
-      label: JP - 日本語
+      urlTo: ehs-cn
+      label: CN - 普通话
   versions:
     - versionto: 2-3
       versionfrom: 2-4
-      default: /ehs/4-1/guide/about
+      default: /ehs/3-0/guide/about
       label: '3.0'
   items:
     - title: About
-      url: /ehs/4-1/guide/about
+      url: /ehs/3-0/guide/about
     - title: Setup
-      url: /ehs/4-1/guide/setup
+      url: /ehs/3-0/guide/setup
     - title: Advanced Settings
-      url: /ehs/4-1/guide/settings
+      url: /ehs/3-0/guide/settings
     - title: Special Features
-      url: /ehs/4-1/guide/features
+      url: /ehs/3-0/guide/features
     - icon: fa fa-download
-      url: /ehs/4-1/download
+      url: /ehs/3-0/download
     - icon: fa fa-search
-      url: /ehs/4-1/search
-product: Zebra EHS
-productversion: '4.1'
+      url: /ehs/3-0/search
+product: Enterprise Home Screen
+productversion: '3.1'
 ---
 
 ### Redirecting to the latest Enterprise Home Screen docs...

@@ -8,28 +8,28 @@ menu:
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,
-      img: /images/flags/img-flag-china.png
+      img: /images/flags/img-flag-japan.png
       urlFrom: ehs
-      urlTo: ehs-cn
-      label: CN - 普通话
+      urlTo: /ehs/ehs-jp
+      label: JP - 日本語
   versions:
     - versionto: 2-3
       versionfrom: 2-4
-      default: /ehs/4-0/guide/about
-      label: '3.0'
+      default: /ehs/ehs-jp/4-0/guide/about
+      label: '4.0'
   items:
     - title: About
-      url: /ehs/4-0/guide/about
+      url: /ehs/ehs-jp/4-0/guide/about
     - title: Setup
-      url: /ehs/4-0/guide/setup
+      url: /ehs/ehs-jp/4-0/guide/setup
     - title: Advanced Settings
-      url: /ehs/4-0/guide/settings
+      url: /ehs/ehs-jp/4-0/guide/settings
     - title: Special Features
-      url: /ehs/4-0/guide/features
+      url: /ehs/ehs-jp/4-0/guide/features
     - icon: fa fa-download
-      url: /ehs/4-0/download
+      url: /ehs/ehs-jp/4-0/download
     - icon: fa fa-search
-      url: /ehs/4-0/search
+      url: /ehs/ehs-jp/4-0/search
 product: Zebra EHS
 productversion: '4.0'
 ---

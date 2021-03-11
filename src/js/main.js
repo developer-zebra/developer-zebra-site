@@ -329,7 +329,8 @@ jQuery(function($) {'use strict';
 	//Initiat WOW JS
 	new WOW().init();
 	//smoothScroll
-	smoothScroll.init();
+	// 3/10/21 commented out
+	// smoothScroll.init();
 
 	// portfolio filter
 	$(window).load(function(){'use strict';
@@ -485,17 +486,17 @@ function bindTreeEvents(li) {
         // recalcSidebar();
     });
 
-// 3/10/21- ADDED FOR FLOATING "BACK TO TOP" BUTTON:
+// 3/10/21 FLOATING "BACK TO TOP" BUTTON
 
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById('js-top');
 
-// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+// Show scroll-to-top button if scrolling beyond height of initial window
 const scrollFunc = () => {
   // Get the current scroll value
   let y = window.scrollY;
   
-  // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+  // If scroll value is greater than window height, add class to scroll-to-top button to show it
   if (y > 0) {
     scrollToTopButton.className = "top-link show";
   } else {
@@ -506,26 +507,28 @@ const scrollFunc = () => {
 window.addEventListener("scroll", scrollFunc);
 
 const scrollToTop = () => {
-  // Let's set a variable for the number of pixels we are from the top of the document.
+  // Set variable for number of pixels we are from the top of the document
   const c = document.documentElement.scrollTop || document.body.scrollTop;
   
-  // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+  // If that number is greater than 0, scroll back to 0, or to top of the document.
   // We'll also animate that scroll with requestAnimationFrame:
   // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
   if (c > 0) {
     window.requestAnimationFrame(scrollToTop);
-    // ScrollTo takes an x and a y coordinate.
-    // Increase the '10' value to get a smoother/slower scroll!
+    // ScrollTo takes x and y coordinates
+    // Increase the '10' value to get a smoother/slower scroll
     window.scrollTo(0, c - c / 10);
   }
 };
 
-// When the button is clicked, run our ScrolltoTop function above!
+// When the button is clicked, run the ScrolltoTop function above
 scrollToTopButton.onclick = function(e) {
-  e.preventDefault();
+  console.log("button clicked") 
+//  e.preventDefault();
   scrollToTop();
 }
 
 // 3/10/21- END OF ADDED SECTION 
+
 
 }

@@ -213,7 +213,7 @@ _Scanner configuration_
 
 ## NextGen SimulScan Configuration
 
-**NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. It controls configuration for NG SimulScan, a data capture solution for retrieving data from documents, forms, and labels in the form of barcodes or multiple images from different regions of the medium. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
+**NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. NG SimulScan is   a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 * **[MultiBarcode](#multibarcodeparams) -** supported since DataWedge 8.0. Unlike legacy SimulScan, a template is not required for MultiBarcode features and parameters.
 * **[Document Capture](#documentselection) -** supported since DataWedge 8.0 and only available on select devices and scanners. Document Capture requires a template. 
 
@@ -276,7 +276,7 @@ _Document Capture template selection_
 <br><br>
 
 Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wQCOIXA9RW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Document Capture with Anchor Barcode
 Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery.   <br>

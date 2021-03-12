@@ -401,7 +401,7 @@ Permits the size of application icons to be set to Small, Medium, Large, Extra L
 
 #####NOTES:
 * **EHS 3.0 and later supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
-* When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can change the app icon size**. 
+* When [Multi-user Mode](../features/#multiusermode) is enabled, **only the Primary user can change the app icon size**. 
 
 **To change the icon size through the UI**:
 

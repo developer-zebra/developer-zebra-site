@@ -10,7 +10,7 @@ menu:
     - lang: cn,
       img: /images/flags/img-flag-china.png
       urlFrom: ehs
-      urlTo: ehs-cn
+      urlTo: ehs/ehs-cn
       label: CN - 普通话
   versions:
     - versionto: 2-3

@@ -8,6 +8,11 @@ menu:
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,
+      img: /images/flags/img-flag-china.png
+      urlFrom: ehs
+      urlTo: ehs/ehs-cn
+      label: CN - 普通话
+    - lang: jp,
       img: /images/flags/img-flag-japan.png
       urlFrom: ehs
       urlTo: ehs/ehs-jp

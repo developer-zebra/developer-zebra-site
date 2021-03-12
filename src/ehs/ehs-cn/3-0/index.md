@@ -2,7 +2,7 @@
 title: Enterprise Home Screen
 img: ehs-logo.png
 layout: redirect.html
-redirect_url: /ehs/2-8/guide/about
+redirect_url: /ehs/ehs-cn/2-8/guide/about
 menu:
   title: Enterprise Home Screen 3.0
   img: /ehs/ehs-logo.png

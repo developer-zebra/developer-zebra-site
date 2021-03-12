@@ -3,7 +3,7 @@ title: Download Enterprise Home Screen
 product: Enterprise Home Screen
 productversion: '3.1'
 layout: redirect.html
-redirect_url: /ehs-cn/2-8/download/
+redirect_url: /ehs/ehs-cn/2-8/download/
 
 ---
 

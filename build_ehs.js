@@ -909,19 +909,37 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/3-2/'
     }))
     .use(foldermenu({
-        folder: 'ehs/4-1/'
-    }))
-    .use(foldermenu({
         folder: 'ehs/4-0/'
     }))
+    .use(foldermenu({
+        folder: 'ehs/4-1/'
+    }))
+/*  Don't let Chinese version get built-over
      .use(foldermenu({
-        folder: 'ehs-cn/2-8/'
+        folder: 'ehs/ehs-cn/2-8/'
+    }))
+*/
+    .use(foldermenu({
+        folder: 'ehs/ehs-cn/3-0/'
     }))
     .use(foldermenu({
-        folder: 'ehs-cn/3-0/'
+        folder: 'ehs/ehs-cn/3-1/'
     }))
     .use(foldermenu({
-        folder: 'ehs-cn/3-1/'
+        folder: 'ehs/ehs-cn/3-2/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/ehs-cn/4-0/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/ehs-cn/4-1/'
+    }))
+/*  Don't let Japanese version get built-over
+     .use(foldermenu({
+        folder: 'ehs/ehs-jp/4-0/'
+    }))
+*/    .use(foldermenu({
+        folder: 'ehs/ehs-jp/4-1/'
     }))
 
 // removed DW and EB from build. 

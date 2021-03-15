@@ -20,21 +20,21 @@ menu:
   versions:
     - versionto: 2-3
       versionfrom: 2-4
-      default: /ehs/ehs-jp/4-0/guide/about
+      default: /ehs/4-0/guide/about
       label: '4.0'
   items:
     - title: About
-      url: /ehs/ehs-jp/4-0/guide/about
+      url: /ehs/4-0/guide/about
     - title: Setup
-      url: /ehs/ehs-jp/4-0/guide/setup
+      url: /ehs/4-0/guide/setup
     - title: Advanced Settings
-      url: /ehs/ehs-jp/4-0/guide/settings
+      url: /ehs/4-0/guide/settings
     - title: Special Features
-      url: /ehs/ehs-jp/4-0/guide/features
+      url: /ehs/4-0/guide/features
     - icon: fa fa-download
-      url: /ehs/ehs-jp/4-0/download
+      url: /ehs/4-0/download
     - icon: fa fa-search
-      url: /ehs/ehs-jp/4-0/search
+      url: /ehs/4-0/search
 product: Zebra EHS
 productversion: '4.0'
 ---

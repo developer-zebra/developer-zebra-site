@@ -492,4 +492,43 @@ function bindTreeEvents(li) {
         // recalcSidebar();
     });
 
+// 3/18/21- Back-to-top button + revisions for MX Feature Matrix
+
+// Inject Back-to-top button into all HTML pages
+var html='<button id="back-to-top-btn" title="Go to top">Back to Top</button>';
+
+$("body").append(html);
+
+var buttonToTop = document.getElementById("back-to-top-btn");
+
+// Show button when user scolls past 450px
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    buttonToTop.style.display = "block";
+  } else {
+    buttonToTop.style.display = "none";
+  }
+}
+
+// Revisions to detect scrolling on MX Feature Matrix (div)
+$(".fixed-column-right").scroll(function() {
+console.log("Scrolling :"+$(this).scrollTop())
+if ($(this).scrollTop() >450) {
+console.log("Adding");
+$("#back-to-top-btn").css("display","block");
+} else {
+console.log("hiding")
+$("#back-to-top-btn").css("display","none");
+}
+});
+
+// Scroll to top of page on button click
+$("#back-to-top-btn").click(function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    $(".fixed-column-right").scrollTop(0);
+    });
+
 }

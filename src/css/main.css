@@ -1464,14 +1464,12 @@ display:none
   border: solid 1px rgba(0, 0, 0, 0.1);
   z-index: 110;
 }
-
 .facelift td, .facelift th {
   padding: 5px
 }
  .facelift tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 
 .faceliftCenter td, .faceliftCenter th {
   padding: 5px; text-align: center;
@@ -1480,6 +1478,41 @@ display:none
   background-color: #f2f2f2; 
 }
 
+/*
+Style elements for back-to-top button
+*/
+
+.table_scroll {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .table_width20 {
+    width: 20%
+  }
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+}
+#back-to-top-btn:hover {
+    background-color: #555;
+}
+
+/* 3/18/21 interfered with back-to-top button. logo resized instead
 .navbar-brand img {
   max-height: 42px !important;
 }
+*/

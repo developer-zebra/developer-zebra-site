@@ -173,6 +173,7 @@ ul.nostyle i {
 .navbar.navbar-default .navbar-brand {
   /*height: auto;*/
   padding: 22px 15px 21px;
+  max-height:42px;
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {

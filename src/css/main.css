@@ -1466,3 +1466,43 @@ display:none
 .facelift tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/* 3/18/21- Cathy's back-to-top button */
+
+#back-to-top-btn {
+
+    display: none;
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 30px;
+
+    z-index: 99;
+
+    font-size: 18px;
+
+    border: none;
+
+    outline: none;
+
+    background-color: gray;
+
+    color: white;
+
+    cursor: pointer;
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+}
+
+ 
+
+#back-to-top-btn:hover {
+
+    background-color: #555;
+
+}

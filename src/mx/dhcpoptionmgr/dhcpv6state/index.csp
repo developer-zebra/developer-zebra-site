@@ -23,9 +23,10 @@ parm:
       info: This setting requires the device to disconnect/reconnect to the WLAN before DHCPv6 becomes active.
       mx: "10.3"
       apilevel: "26"
-      description: Enables the DHCPv6 client on the device. SEE NOTE ABOVE. 
+      description: Enables the DHCPv6 client on the device. 
     - code: 2
       devicetype: A
+      info: This setting requires the device to disconnect/reconnect to the WLAN before an acquired IPv6 address is no longer active.
       name: Disable
       mx: "10.3"
       apilevel: "26"

@@ -129,11 +129,11 @@ Below is a summary of the steps for creating a Template. The process is explaine
 
 1. **Log in** to the [Template Builder web site](https://ng-simulscan.zebra.com).
 2. **Select the Document Type** required and **upload an image** of the Target Document to be scanned (.bmp, .jpg, .png or .pdf; 5MB max.).
-3. **Identify Fields** of the Document and the data types (barcodes, text, etc.) of each. **Configure settings** where appropriate.
+3. **Identify Fields** of the Document and the data types (barcode, image) of each. **Configure Field and Template settings** where appropriate.
 4. **Validate the Template** to verify the Fields and properties are set properly.
 5. **Save and download** the completed Template(s) to the local host computer. 
-6. **Copy Template(s) to the device** that will be performing the scans. 
-7. **Activate the Template** from within DataWedge. 
+6. **Copy or deploy Template(s) to the device** that will be performing the scans. 
+7. **Use the Template** from within DataWedge. 
 
 -----
 
@@ -170,10 +170,10 @@ To upload the image for the template:
     * **MP size:** 2 MP for MultiBarcode or 3 MP for Image Capture
     * For a .pdf, select page number from the drop-down (if necessary) <br>
 Confirm that the **AutoCrop** feature (enabled by default) has accurately identified the Document boundaries. If boundary adjustments are necessary, click **Disable AutoCrop** and set the blue bounding box so that it is just outside the borders of the Document. Click **OK** when done. This creates the "Form Region of Interest" for the Document.
-3. After saving the new Template, the uploaded image appears. **Create the Field Regions of Interest, also known as Fields** by using the mouse cursor crosshair to drag a box from the <u>upper-left corner to the lower-right corner</u> over each region of the Document that contains data to be acquired. Field restrictions:
+3. After saving the new Template, the uploaded image appears. **Create the Field Regions of Interest, also known as Fields,** by using the mouse cursor crosshair to drag a box from the <u>upper-left corner to the lower-right corner</u> over each region of the Document that contains data to be acquired. Field restrictions:
     * **Image Capture:** maximum of 3 Fields
     * **MultiBarcode:** maximum of 20 Fields
-4. When finished, [configure Field settings](#3configuresettings) as required. 
+        * **Auto Group Identification:** If one of the MultiBarcode Fields is set with **Auto Group Identification**, this restricts the maximum Fields to 10 for MultiBarcode. _Only 1 Field can be set with **Auto Group Identification**._ If more than 1 Field is set, an error will occur.
 
 **NOTE: Barcode Regions must <u>include only the bars and spaces</u>** - no surrounding characters should be included.
 
@@ -194,15 +194,15 @@ _Add a Field to the Template._
 
 ### 3. Configure Settings
 
-Provide (or confirm) the following required settings for each Field: 
- * A name for the field, if desired 
- * Field Information (identify form, mandatory, read value from Field)
- * Field Type (barcode, picture) 
-    * Field Settings - specific processing-mode settings (decoder type, decoder data options, image adjustments, etc.)
- 
-Available options are described in the following subsections and differ depending on the Document Type: **Image Capture** or **MultiBarcode**.
-
-After configuring the settings, select **File > Save Template** to save the changes. **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
+Configure the following settings:
+1. **Field Settings -** Provide (or confirm) the following required settings for each Field: 
+    * A name for the field, if desired 
+    * Field Information (identify form, mandatory, read value from Field)
+    * Field Type (barcode, picture) 
+        * Field Settings - specific processing-mode settings (decoder type, decoder data options, image adjustments, etc.)
+Available options are described in the following subsections and differ depending on the Document Type: [Image Capture](#imagecapturefieldsettings) or [MultiBarcode](#multibarcodefieldsettings).
+2. **Template Settings -** Select the appropriate [Template Settings](#templatesettings) based on the document type: Image Capture or MultiBarcode.  Any data related settings apply to all data from the Template. 
+3. After configuring the settings, select **File > Save Template** to save the changes. **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
 
 <!--
 ![img](image6c.png)
@@ -212,21 +212,22 @@ _Click image to enlarge_
 
 -----
 
-#### Image Capture Settings
+#### Image Capture Field Settings
 
 The Field Properties panel is visible in the far-left column, and presents the Properties of the selected Field. Image Capture is _restricted to a maximum of 3 Fields._ 
 <br>
 
 ##### Field Information
 
-* **Use Field to Identify Form -** designate the Field as an Anchor Element, a unique attribute of a Document to positively identify it and determine its orientation relative to the scanner (ie. whether it is upside down). Anchor Elements in a given Document remain in the same location and are fixed (do not change), such as a company logo or static text. Enabling this option aids in increasing the accuracy in reading the form in different conditions, e.g. lighting.
-    * **Also Read Value from Field -** sets the Template to acquire data from a Field that is designated as an Anchor Element (**Use Field to Identify Form** is checked). Enabled by default.
+* **Use Field to Identify Form -** designate the Field as an Anchor element, a unique attribute of a Document to positively identify it and determine its orientation relative to the scanner (ie. whether it is upside down). Anchor elements in a given Document remain in the same location and are fixed (do not change), such as a company logo or static text. Enabling this option aids in increasing the accuracy in reading the form in different conditions, e.g. lighting.
+    * **Also Read Value from Field -** sets the Template to acquire data from a Field that is designated as an Anchor element (**Use Field to Identify Form** is checked). Enabled by default.
 <br>
 
 ##### Field Type: Barcode (used to scan single or multiple barcodes)
 * **Field Settings:**
-    * **Barcode Type -** select the barcode symbology. Zebra recommends to select the appropriate symbology to filter out other symbologies and prevent them from being scanned, thus improving performance. If the symbology is not known, select ANY_BARCODE.
-    * **Enable Character Checking -** enable this to use the barcode data to aid in identification of the barcode with the following option(s):
+    * **Barcode Type -** select the barcode symbology. Zebra recommends to select the appropriate symbology to filter out other symbologies and prevent them from being scanned, thus improving performance. If the symbology is not known, select ANY_BARCODE. If a specific symbology is selected, the corresponding symbology options are displayed and the option **Barcode location is fixed** appears. 
+        * **Barcode location is fixed -** sets the barcode as an Anchor element to identify the form if the form does not contain a border. See [Template Settings](#templatesettings).
+    * **Enable Character Checking -** enable this to use the barcode data to aid in identification of the barcode with one or more of the following criteria:
         * **Starts With -** enter character(s) to filter barcodes that must begin with the specified character(s). Leave this field blank if not needed.
         * **Contains -** enter character(s) to accept barcodes that contain the specified character(s)
         * **String Length -** enter the number of characters the barcode data must contain.
@@ -253,7 +254,7 @@ The Field Properties panel is visible in the far-left column, and presents the P
 
 -----
 
-#### MultiBarcode Settings
+#### MultiBarcode Field Settings
 
 ##### Field Information
 
@@ -266,7 +267,7 @@ The Field Properties panel is visible in the far-left column, and presents the P
     * **Barcode -** a separate mandatory “Quantity Barcode”, specifying the quantity of barcodes to capture, must be present on the Document along with the data barcode. The Quantity Barcode must: 1) start with the letter "Q" or "q", and 2) barcode length must be 3 digits or less.
         * **Return quantity barcode data with results -** the quantity of barcodes is output along with the scanned barcode data
     * **User/System Defined -** a user can manually set the quantity through the DataWedge UI, or the quantity can be set using the DataWedge intent API ?? [add link to DW docs]
-* **Barcode Type -** select the barcode symbology. Zebra recommends to select the appropriate symbology to filter out other symbologies and prevent them from being scanned, thus improving performance. If the symbology is not known, select ANY_BARCODE.
+* **Barcode Type -** select the barcode symbology. Zebra recommends to select the appropriate symbology to filter out other symbologies and prevent them from being scanned, thus improving performance. If the symbology is not known, select ANY_BARCODE. If a specific symbology is selected, the corresponding symbology options are displayed.
 * **Enable Character Checking -** uses the barcode data to aid in identification of the barcode with the following option(s):
     * **Starts With -** checks for the specified character(s) starting with the first characters of the acquired barcode data. Leave this field blank if not needed.
     * **Contains -** Enter character(s) to accept barcodes that contain the specified character(s)
@@ -321,12 +322,12 @@ The Template Settings panel is used to configure settings such as form identifie
 
 * **Form Identifier -** determines how the form is identified, based on:
     * **Border -** detects if the form has an enclosed border; a border line is present, enclosing the contents of the form
-    * **Anchor Barcode -** detects for the presence of an Anchor Barcode, a barcode that is located in a fixed location across different types of the same form, but can contain different barcode data. Other Fields on the form at output as cropped images
-    
+    * **Anchor Barcode -** detects for the presence of an Anchor Barcode, a barcode that is located in a fixed location across different types of the same form, but can contain different barcode data. Other Fields on the form at output as cropped images.
+
 * **Output Entire Form -** output the entire form as an image, along with the extracted data. Enabling this option affects scanning performance.
     * **Output Form As Region -** the entire form is output as a region. ?? Use cases?  [May not be used by DW.  Wajra to check.]
     * **Normalize -** change the range of pixel intensity values to increase the contrast, e.g. in cases of poor contrast due to glare, prior to outputting the entire form
-    **Advanced Image Correction –** enable image correction to parse targets that are slightly curved or crumpled.
+    * **Advanced Image Correction –** enable image correction to parse targets that are slightly curved or crumpled.
 
 * **Reset all Settings -** reset all template settings to the default settings.
 <br><br>
@@ -334,8 +335,8 @@ The Template Settings panel is used to configure settings such as form identifie
 ##### MultiBarcode Template Settings
 
 * **Data Formatting:**
-    * **Prefix to Data -** enter alphanumeric character to prepend to data prior to output
-    * **Suffix to Data -** enter alphanumeric character to append to data prior to output
+    * **Prefix to Data -** enter alphanumeric character to prepend to each data captured prior to output
+    * **Suffix to Data -** enter alphanumeric character to append to each data captured prior to output
 
 * **Variable Field Presence Template Timeout -** applies to Variable Field barcodes that are considered as optional and not required to be present in the form (Mandatory Field is disabled). After all Mandatory Fields are scanned, Variable Fields are then scanned, for which more time is required to process whether or not these optional Fields are present. Select one of the following time-out levels (more appropriate name = Optional Field Detection Timeout??):
     <ul>
@@ -442,6 +443,14 @@ Once downloaded, the Template can be deployed to mobile computer devices.
     * [Document Capture](../input/barcode/#decoderselection), DataWedge's equivalent of Image Capture
     * [Import NextGen SimulScan Templates](../admin/#importnextgensimulscantemplates)
     * [NG SimulScan Template Action](/mx/datawedgemgr/#ng-simulscan-template-action)
+
+-----
+
+### 6. Configure DataWedge
+
+Camera or 2D Imager is selected under Scanner Selection in the DataWedge profile of the Template.
+
+NG SimulScan is configured properly in DataWedge.
 
 -----
 

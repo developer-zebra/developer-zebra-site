@@ -195,7 +195,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 &#54;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
 
-> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
+> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent**. 
 
 The capabilities of EMM systems vary. Please refer to the EMM documentation for specific information about how to configure these commands. 
 

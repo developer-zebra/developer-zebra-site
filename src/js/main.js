@@ -493,28 +493,41 @@ function bindTreeEvents(li) {
     });
 
 
-//Get the Back-to-top button
-var html='<button id="back-to-top-btn" title="Go to top">Back to Top</button>';
+    // Back-to-top button
 
-$("body").append(html);
+    // 3/18/21- Back-to-top button + revisions for MX Feature Matrix
+    // Inject back-to-top button into all HTML pages; then get it
+    var html='<button id="back-to-top-btn" title="Go to top">Back to Top</button>';
 
-var buttonToTop = document.getElementById("back-to-top-btn");
+    $("body").append(html);
 
-// When the user scrolls down from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    var buttonToTop = document.getElementById("back-to-top-btn");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-    buttonToTop.style.display = "block";
-  } else {
-    buttonToTop.style.display = "none";
-  }
-}
+    // Show button when user scrolls down past 450px from the top
+    window.onscroll = function() {scrollFunction()};
 
-// When the user clicks on the button, scroll to the top of the document
-$("#back-to-top-btn").click(function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    function scrollFunction() {
+        if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+            buttonToTop.style.display = "block";
+        } else {
+            buttonToTop.style.display = "none";
+        }
+    }
+
+    // Revisions to detect scrolling on MX Feature Matrix (div)
+    $(".fixed-column-right").scroll(function() {    
+        if ($(this).scrollTop() >450) {
+            $("#back-to-top-btn").css("display","block");
+        } 
+        else {
+            $("#back-to-top-btn").css("display","none");
+        }
     });
 
+    // Scroll to top of page on button click
+    $("#back-to-top-btn").click(function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        $(".fixed-column-right").scrollTop(0);
+        });
 }

@@ -18,27 +18,27 @@ products:
     versions:
       - url: /activeedge/2-5/guide/about
         label: '2.5'
-  - title: AppGallery
-    description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
-    url: https://developer.zebra.com/docs/DOC-3040
-    image: /images/products/AppGallery.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: https://developer.zebra.com/docs/DOC-3035
-      - title: Admin
-        url: https://developer.zebra.com/docs/DOC-4151
-      - title: AppGallery Mobile
-        url: https://developer.zebra.com/docs/DOC-3071
-      - title: Supported Devices
-        url: https://developer.zebra.com/docs/DOC-3853
-      - title: Help Index
-        url: https://developer.zebra.com/docs/DOC-3040
-      - title: Download
-        url: /appgallery/download
-    versions:
-      - url: https://developer.zebra.com/docs/DOC-3040
-        label: '3.0'
+ # - title: AppGallery
+ #   description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
+ #   url: https://developer.zebra.com/docs/DOC-3040
+ #   image: /images/products/AppGallery.png
+ #   btn-text: Latest Docs
+ #   sections:
+ #     - title: About
+ #       url: https://developer.zebra.com/docs/DOC-3035
+ #     - title: Admin
+ #       url: https://developer.zebra.com/docs/DOC-4151
+ #     - title: AppGallery Mobile
+ #       url: https://developer.zebra.com/docs/DOC-3071
+ #     - title: Supported Devices
+ #       url: https://developer.zebra.com/docs/DOC-3853
+ #     - title: Help Index
+ #       url: https://developer.zebra.com/docs/DOC-3040
+ #     - title: Download
+ #       url: /appgallery/download
+ #   versions:
+ #     - url: https://developer.zebra.com/docs/DOC-3040
+ #       label: '3.0'
   - title: Best Practices
     description: Documents and links to Zebra-recommended best practices for tackling common issues.
     url: /bestpractices

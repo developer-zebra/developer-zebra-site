@@ -70,7 +70,7 @@ _If "Done" was accidentally selected instead of "Open," launch "Enterprise Home 
 
 &#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
 
-> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
+> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent**. 
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 

@@ -7,7 +7,7 @@ productversion: "8.2"
 
 ## Overview
 
-Template Builder is a web-based tool for creating templates, which define the information captured by DataWedge's [Document Capture](../input/barcode/#documentselectiondocumentcapturedocumentcapture) feature (part of NextGen (NG) SimulScan) and determine how it will be processed and made available to DataWedge. [NG SimulScan](../input/barcode/#nextgensimulscanconfiguration) is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Templates are the key to controlling NG SimulScan data capture features and for processing the acquired data so it can be consumed by an application. Each template is associated with a target document (e.g. shipping receipt, part label) to capture and process as part of a workflow.
+Template Builder is a web-based tool for creating templates, which define the information acquired from the DataWedge feature [Document Capture](../input/barcode/#documentselectiondocumentcapturedocumentcapture) and determine how it will be processed and made available for consumption by applications. Document Capture, as part of [NextGen (NG) SimulScan](../input/barcode/#nextgensimulscanconfiguration), is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Templates are the key to controlling Document Capture features and for processing the acquired data so it can be consumed by an application. Each template is associated with a target document (e.g. shipping receipt, part label) to capture and process as part of a workflow.
 
 This guide provides step-by-step instructions for using the interface of Template Builder to [create Templates](#usingtemplatebuilder) and deploy them to devices.
 
@@ -29,7 +29,7 @@ Before attempting to create a Template, the following assets are required:
 * **Sample(s) of the Document(s)** (forms, labels, etc.) for which the Template(s) are being created
 * **Photos or image scans** of those same documents (for upload)
 * An **account on the [Template Builder web site](https://ng-simulscan.zebra.com)**
-* **Camera or 2D Imager is selected under [Scanner Selection](../input/barcode/#scannerselection) in the DataWedge profile** of the Template
+* **Camera or 2D Imager is selected under [Scanner Selection](../input/barcode/#scannerselection) in the DataWedge profile** for the Template
 * A familiarity with [Template concepts](#abouttemplates)
 
 ---
@@ -38,7 +38,7 @@ Before attempting to create a Template, the following assets are required:
 
 Most acquisition tasks involve capturing data from printed documents, forms or labels. These "target" documents often vary in size, shape and layout, and present a challenge for accurate data acquisition. Templates solve this problem by "teaching" NG SimulScan about the documents it will encounter, and defining how to scan and process data for each instance of that target document.
 
-<img style="height:550px" src="form-regions.png" />
+<img alt="" style="height:550px" src="form-regions.png" />
 
 _Sample document showing Form Region of Interest and Field Region(s) of Interest / Fields_
 
@@ -73,20 +73,11 @@ Field Types supported for Image Capture:
 * **Barcode -** scan single or multiple barcodes in the field of view
 * **Picture -** capture signature(s), photo(s), or entire document(s) as an image.
 
-<img style="height:450px" src="template.png"/>
+<img alt="" style="height:450px" src="template.png"/>
 _Example of an Image Capture-type document_.
 
 For example, a company that uses a fixed-format form such as the Postal/T&L example (shown above) would create an Image Capture template to identify the location of each field to be captured and the type of data to be processed from each identified field.
 <br>
-
-<!--
-**Notes**:
-
-* **Zebra recommends using the camera for Mixed Data-type** capture.
-* The camera is automatically selected when a Mixed Data-type Template is used.
-* Structured Templates are generally associated with Mixed Data-type mode.
-<br>
--->
 
 ### MultiBarcode
 
@@ -105,23 +96,9 @@ Field Type supported for MultiBarcode:
 
 * **Barcode -** scan single or multiple barcodes in the field of view
 
-<img style="height:350px" src="msi_reader.png"/>
+<img alt="" style="height:350px" src="msi_reader.png"/>
 _Example of a MultiBarcode form._
 <br>
-
-<!--
-<img style="height:250px" src="AIAG B-10 Label File P, Q, K, V, 4S.jpg"/>
-_Example of a Multi-Barcode form_.
--->
-
-<!--
-
-**Notes**:
-
-* **Zebra recommends using the 2D imager for capturing in Multi-barcode mode**.
-* The device imager is automatically selected for Barcode-only Templates.
-* All [Zebra devices that support SimulScan](../about/#supporteddevices) are equipped with 1D/2D imagers (except early TC70 models).
--->
 
 For example, a company that receives regular shipments accompanied with a label (like the one above) could create a MultiBarcode Template to map the part number and supplier number from the barcodes in the upper row, and the quantity-received information from the lower row to the corresponding fields of an application.
 
@@ -137,11 +114,12 @@ Below is a summary of the steps for creating a Template. The process is explaine
 
 1. **Log in** to the [Template Builder web site](https://ng-simulscan.zebra.com).
 2. **Select the Document Type** required and **upload an image** of the Target Document to be scanned (.bmp, .jpg, .png or .pdf; 5MB max.).
-3. **Identify Fields** of the Document and the data types (barcode, image) of each. **Configure Field and Template settings** where appropriate.
-4. **Validate the Template** to verify the Fields and properties are set properly.
-5. **Save and download** the completed Template(s) to the local host computer.
-6. **Copy or deploy Template(s) to the device** that will be performing the scans.
-7. **Use the Template** from within DataWedge.
+3. **Identify Fields** of the Document and the data types (barcode, image) of each. 
+4. **Configure Field and Template settings**.
+5. **Validate the Template** to verify the Fields and properties are set properly.
+6. **Save and download** the completed Template(s) to the local host computer.
+7. **Copy or deploy Template(s) to the device** that will be performing the scans.
+8. **Configure DataWedge** to setup the data so it can be consumed by the application. 
 
 ---
 
@@ -150,7 +128,7 @@ Below is a summary of the steps for creating a Template. The process is explaine
 Visit the **[Zebra NG SimulScan registration page](https://signup.zebra.com/register.html?appId=SIMS).** Follow prompts to create a free account and enter all requested information. Once an account is created, Zebra administrators will send login information to the registered address. Zebra recommends planning ahead; this process could take several days.
 
 In a browser, go to the **NG SimulScan Template Builder site: [ng-simulscan.zebra.com](https://ng-simulscan.zebra.com)**. Enter the login credentials. A screen appears similar to the image below:
-<img style="height:400px" src="login.png"/>
+<img alt="" style="height:400px" src="login.png"/>
 _Template Builder login screen_
 <br>
 
@@ -161,7 +139,7 @@ _Template Builder login screen_
 
 ---
 
-### 2. Upload Image for Template
+### 2. Upload Image for Template and Create Fields
 
 Prior to uploading the image for the template, make sure the image was taken with the document placed flat against a constrasting background with the camera perpendicular to the surface, and make sure the image was captured without any shape distortion.
 
@@ -177,16 +155,17 @@ To upload the image for the template:
     * **Max. file size:** 5MB
     * **MP size:** 2 MP for MultiBarcode or 3 MP for Image Capture
    For a .pdf, select page number from the drop-down (if necessary) <br>
-   Confirm that the **AutoCrop** feature (enabled by default) has accurately identified the Document boundaries. If boundary adjustments are necessary, click **Disable AutoCrop** and set the blue bounding box so that it is just outside the borders of the Document. Click **OK** when done. This creates the "Form Region of Interest" for the Document.
-3. After saving the new Template, the uploaded image appears. **Create the Field Regions of Interest, also known as Fields,** by using the mouse cursor crosshair to drag a box from the <u>upper-left corner to the lower-right corner</u> over each region of the Document that contains data to be acquired. Field restrictions:
+   Confirm that the **AutoCrop** feature (enabled by default) has accurately identified the Document boundaries. If boundary adjustments are necessary, click **Disable AutoCrop** and set the blue bounding box so that it is just outside the borders of the Document. 
+3. Click **OK** when done. The "Form Region of Interest" for the Document is created. After saving the new Template, the uploaded image appears. 
+4. **Create the Field Regions of Interest, also known as Fields,** by using the mouse cursor crosshair to drag a box from the <u>upper-left corner to the lower-right corner</u> over each region of the Document that contains data to be acquired. Field restrictions:
     * **Image Capture:** maximum of 3 Fields
     * **MultiBarcode:** maximum of 20 Fields
-        * **Auto Group Identification:** If one of the MultiBarcode Fields is set with **Auto Group Identification**, this restricts the maximum Fields to 10 for MultiBarcode. _Only 1 Field can be set with **Auto Group Identification**._ If more than 1 Field is set, an error will occur.
+        * **Auto Group Identification:** If one of the MultiBarcode Fields is set with **Auto Group Identification**, this restricts the maximum Fields to 10. _Only 1 Field can be set with **Auto Group Identification**._ If more than 1 Field is set, an error will occur.
 
 **NOTE: Barcode Regions must <u>include only the bars and spaces</u>** - no surrounding characters should be included.
 
-<img style="height:550px" src="create-template.png" />
-_Upload sample image and designate Fields._
+<img alt="" style="height:550px" src="create-template.png" />
+_Example uploading image and designating Fields for Image Capture._
 <br>
 
 **Alternative ways to create Fields**:
@@ -194,8 +173,8 @@ _Upload sample image and designate Fields._
 * From the menu, select **Edit > Create New Field**. Enter a name for the field and draw a box around the corresponding Region.
 * Right-click in the Fields panel and select **Create New Field**. Enter a name for the field and draw a box around the corresponding Region.
 
-<img style="height:350px" src="create-new-field.png" />
-_Add a Field to the Template._
+<img alt="" style="height:350px" src="create-new-field.png" />
+_Add a Field to the Template by right-clicking in the Fields panel._
 <br>
 
 ---
@@ -211,7 +190,7 @@ Configure the following settings:
    * Field Settings - specific processing-mode settings (decoder type, decoder data options, image adjustments, etc.)
    Available options are described in the following subsections and differ depending on the Document Type: [Image Capture](#imagecapturefieldsettings) or [MultiBarcode](#multibarcodefieldsettings).
 2. **Template Settings -** Select the appropriate [Template Settings](#templatesettings) based on the document type: Image Capture or MultiBarcode. Any data related settings apply to all data from the Template.
-3. After configuring the settings, select **File > Save Template** to save the changes. **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
+3. **Save the template** after configuring the settings, select **File > Save Template**. **Save work often!** Unsaved changes could be lost if the screen is dismissed or a session timeout is reached.
 
 <!--
 ![img](image6c.png)
@@ -228,7 +207,8 @@ The Field Properties panel is visible in the far-left column, and presents the P
 
 ##### Field Information
 
-* **Use Field to Identify Form -** designate the Field as an Anchor element, a unique attribute of a Document to positively identify it and determine its orientation relative to the scanner (ie. whether it is upside down). Anchor elements in a given Document remain in the same location and are fixed (do not change), such as a company logo or static text. Enabling this option aids in increasing the accuracy in reading the form in different conditions, e.g. lighting. \* **Also Read Value from Field -** sets the Template to acquire data from a Field that is designated as an Anchor element (**Use Field to Identify Form** is checked). Enabled by default.
+* **Use Field to Identify Form -** designate the Field as an Anchor element, a unique attribute of a Document to positively identify it and determine its orientation relative to the scanner (ie. whether it is upside down). Anchor elements in a given Document remain in the same location and are fixed (do not change), such as a company logo or static text. Enabling this option aids in increasing the accuracy in reading the form in different conditions, e.g. lighting. 
+    * **Also Read Value from Field -** sets the Template to acquire data from a Field that is designated as an Anchor element (**Use Field to Identify Form** is checked). Enabled by default.
   <br>
 
 ##### Field Type: Barcode (used to scan single or multiple barcodes)
@@ -246,6 +226,10 @@ The Field Properties panel is visible in the far-left column, and presents the P
         * **180° -** the barcode is upside down. 
         * **270° -** the barcode is rotated 270 degrees to the left (counterclockwise).
   <br>
+<img alt="" style="height:450px" src="fieldsettings-imagecapture-barcode.png" />
+_Image Capture Field Settings for Barcode._
+<br>
+
 
 ##### Field Type: Picture (used to capture signatures, photos, or entire documents as images)
 
@@ -261,10 +245,15 @@ The Field Properties panel is visible in the far-left column, and presents the P
     * **180° -** the barcode is upside down
     * **270° -** the barcode is rotated 270 degrees to the left (counterclockwise)
   <br>
+<img alt="" style="height:450px" src="fieldsettings-imagecapture-picture.png" />
+_Image Capture Field Settings for Picture._
+<br>
 
 ---
 
 #### MultiBarcode Field Settings
+
+MultiBarcode is _restricted to a maximum of 20 Fields._ If one of the MultiBarcode Fields is set with **Auto Group Identification**, this restricts the maximum Fields to 10. _Only 1 Field can be set with **Auto Group Identification**._ If more than 1 Field is set, an error will occur.
 
 ##### Field Information
 
@@ -276,64 +265,34 @@ The Field Properties panel is visible in the far-left column, and presents the P
 * **Auto Group Identification -** rather than defining the decode data options of the group (e.g. Starts With or Contains), NG SimulScan can automatically group (n) number of barcodes when a common pattern is detected, such as same decoder, same first 1 or 2 characters of data, and same string length. _Restricted to a maximum of 10 Fields per group._ The quantity (n) of the group of common barcodes is not fixed; the quantity will change but is dictated by one of the following quantity options:
     * **Barcode -** a separate mandatory “Quantity Barcode”, specifying the quantity of barcodes to capture, must be present on the Document along with the data barcode. The Quantity Barcode must: 1) start with the letter "Q" or "q", and 2) barcode length must be 3 digits or less.
     * **Return quantity barcode data with results -** the quantity of barcodes is output along with the scanned barcode data
-    * **User/System Defined -** set the quantity through the DataWedge UI or DataWedge intent API. ?? [add link to DW docs]
+    * **User/System Defined -** set the quantity through the DataWedge UI under [Template params](../input/barcode/#eautogroupidentification) or with DataWedge [SetConfig](../api/setconfig) intent API by setting common_barcode_dynamic_quantity to the desired quantity.
 * **Barcode Type -** select the barcode decoder. Zebra recommends to select the appropriate decoder to filter out other symbologies and prevent them from being scanned, thus improving performance. If the decoder is not known, select ANY_BARCODE. If a specific decoder is selected, the corresponding decoder options are displayed.
 * **Enable Character Checking -** uses the barcode data to aid in identification of the barcode with the following option(s):
     * **Starts With -** enter character(s) to check for barcodes that begin with the specified character(s) of the acquired barcode data. Leave blank if not needed.
     * **Contains -** Enter character(s) to accept barcodes that contain the specified character(s)
     * **String Length -** Enter the number of characters the barcode data must contain. Leave blank if not needed.
 
----
+<img alt="" style="height:450px" src="fieldsettings-multibarcode.png" />
+_MultiBarcode Field Settings._
+<br>
 
-<!--
-#### Barcode Options
-Some barcode options vary based on the decoder selected. For a complete list of options, see the [DataWedge Decoders guide](../../../../datawedge/6-0/guide/decoders/).
-
-#### Decode Data Options
-
-**Enable Character Checking -** enables the barcode data to assist in the identification or verification of the barcode data being decoded. When selected, the following options become available:
- * **Starts With...** checks for the specified character(s) starting with the first character (index 0) of the acquired barcode data.
- * **Contains -** checks for the specified character(s) in the acquired data starting at the index specified in the "at" field (index 0 = the first character).
- * **String Length -** the number of characters the barcode data must contain. Leave blank to leave length unspecified.
-
-**Field settings:**
-* **Barcode Type -** select the barcode decoder. Zebra recommends to select the decoder, if known, to filter out other symbologies and prevent them from being scanned.  If the decoder is not known, select ANY_BARCODE.
-* **Enable Character Checking -** Enable this to use the barcode data to aid in identification of the barcode with the following option(s):
-    * **Starts With -** Enter character(s) to filter barcodes that must begin with the specified character(s). Leave this field blank if not needed.
-    * **Contains -** Enter character(s)
-    * **String Length -** Enter the number of characters the barcode data must contain.
-
-**Barcode Orientation -**sets the orientation of the barcode relative to the scanner:
-
-* **0° -** the barcode is right-side up on the form.
-* **90° -** the barcode is rotated 90 degrees to the left (counterclockwise).
-* **180° -** the barcode is upside down.
-* **270° -** the barcode is rotated 270 degrees to the left (counterclockwise).
-
-Orientation must be consistent across the entire Document.
-
-_**Different or additional Field Property settings appear under certain conditions**_.
-
------
--->
+------
 
 #### Template Settings
 
 The Template Settings panel is used to configure settings such as form identifier, output, image correction and other settings that apply generally across the Template.
 
 **To access the Template Settings panel**:
-
 1. Log into the [Template Builder web site](https://ng-simulscan.zebra.com).
 2. Open the Template in need of settings adjustment.
 3. Click on **Template Settings** or from the top menu select **Edit > Template Settings.**
 4. Adjust settings as needed according to descriptions that follow depending on the Document Type of the Template.
-   <!-- ![img](image32.png) -->
-   <br>
+<br>
 
 ##### Image Capture Template Settings
 
 * **Form Identifier -** determines how the form is identified, based on the presence of:
-    * **Border -** detects if the form has an enclosed border; a border line is present, enclosing the contents of the form
+    * **Border -** detects if the form has an enclosed border; a border line is present, enclosing the contents of the form. The form must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
     * **Anchor Barcode -** detects for the presence of an Anchor Barcode, a barcode that is located in a fixed location across different types of the same form (yet can contain different data). Other Fields on the form (e.g. signature, address) are output as cropped images.
 
 * **Output Entire Form -** output the entire form as an image, along with the extracted data. Enabling this option affects scanning performance.
@@ -343,6 +302,10 @@ The Template Settings panel is used to configure settings such as form identifie
 
 * **Reset all Settings -** reset all template settings to the default settings.
   <br><br>
+
+<img alt="" style="height:450px" src="templatesettings-imagecapture.png" />
+_Template Settings for Image Capture._
+<br>
 
 ##### MultiBarcode Template Settings
 
@@ -357,13 +320,8 @@ The Template Settings panel is used to configure settings such as form identifie
     <li><b>High -</b> mount amount of time to scan for optional barcodes. For example, 20 barcodes or less are present on the form and the barcodes are located far from each other, requiring the device to be physically moved significantly while aiming to capture each barcode.</li>
     </ul>
 
-<!--
-![img](image6b.png)
-<br>
-
-![img](image6d.png)
-<br>
--->
+<img alt="" style="height:450px" src="templatesettings-multibarcode.png" />
+_Template Settings for MultiBarcode._
 
 ---
 
@@ -390,7 +348,7 @@ A Validation Summary is displayed with one of more of the following messages:
 * (√) = "Success!"
 * (X) = "Error!"
 
-<img style="250px" src="validation_success.png" />
+<img alt="" style="250px" src="validation_success.png" />
 _Validation Summary showing success._
 <br>
 
@@ -402,7 +360,7 @@ Following validation, test results can be reviewed by clicking on **View Preview
 
 The image below shows a validation preview. Clicking on any Field in the image area displays in the left-hand column the data that is parsed by that Field.
 
-![img](validation-preview.png)
+<img alt="" style="350px" src="validation-preview.png" />
 _Validation Preview of an Image Capture sample._
 
 <!-- ![img](validation_failure.png)
@@ -450,11 +408,10 @@ Once downloaded, the Template can be deployed to mobile computer devices.
 
 **Methods of Template Deployment**:
 
-* **Manually via USB** cable to the device using the Android Debug Bridge (ADB), copy the .XML file to `/enterprise/device/settings/datawedge/templates/`.
-* **Remotely using [StageNow](../../../../stagenow)** and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own mobile device management (MDM) system (if supported by that system)
+* **Manually via USB** cable to the device using the Android Debug Bridge (ADB), copy the .XML file to `/enterprise/device/settings/datawedge/templates/`.  ?? Is further action required or is the Template automatically imported to DataWedge?
+* **Remotely using [StageNow](../../../../stagenow)** and the [UI Manager](/mx/uimgr/) service.
+* Remotely through a company's own mobile device management (MDM) system (if supported by that system).
 * **[DataWedge Mgr CSP](/mx/datawedgemgr)** enables secure mass deployment of templates. Refer to:
-    * [Document Capture](../input/barcode/#decoderselection), DataWedge's equivalent of Image Capture
     * [Import NextGen SimulScan Templates](../admin/#importnextgensimulscantemplates)
     * [NG SimulScan Template Action](/mx/datawedgemgr/#ng-simulscan-template-action)
 
@@ -462,9 +419,15 @@ Once downloaded, the Template can be deployed to mobile computer devices.
 
 ### 6. Configure DataWedge
 
-Camera or 2D Imager is selected under Scanner Selection in the DataWedge profile of the Template.
-
-NG SimulScan is configured properly in DataWedge.
+Configure the DataWedge profile for the Template as follows:
+* Ensure Camera or 2D Imager is selected under [Scanner Selection](../input/barcode/#scannerselection).
+* [NextGen SimulScan Configuration](../input/barcode/#nextgensimulscanconfiguration) is configured properly.
+    * **[Document Selection](../input/barcode/#documentselectiondocumentcapture)** displays the desired Template file.
+    * **[Scanning Mode](../input/barcode/#scanningmodes)** is set to MultiBarcode or Document Capture, depending on the template in use.
+    * If known, select the appropriate **[Decoders](../input/barcode/#decoderselection)** and corresponding parameters to improve scanning performance.
+    * For MultiBarcode templates, set the desired **[MultiBarcode Params](../input/barcode/#multibarcodeparams)**.
+    * Set other parameters as needed, e.g. UPC/EAN params, Reader params, etc.
+The Template is ready to be used. 
 
 ---
 

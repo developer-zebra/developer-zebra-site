@@ -224,18 +224,17 @@ _Scanner configuration_
 
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. NG SimulScan is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 
-* **[MultiBarcode](#multibarcodeparams) -** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. Supported since DataWedge 8.0. _Unlike legacy SimulScan, a template is not required for this MultiBarcode feature, as opposed to the MultiBarcode subfeature that is part of Document Capture that does require a template._
-* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a template._
+* **[MultiBarcode](#multibarcodeparams) -** acquires multiple, unique barcodes from a form in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. Supported since DataWedge 8.0. _Unlike legacy SimulScan, a template is not required for this MultiBarcode feature, as opposed to the MultiBarcode subfeature that is part of Document Capture that does require a template._
+* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a [NextGen SimulScan/Document Capture template](../../templatebuilder)._
 
-  > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
-  <!-- [Removed per TUT-40275]
-- **Signature capture -** supported since DataWedge 7.3
-- **OCR A/B -** supported since DataWedge 7.5 -->
-<p>For <b>Zebra Professional-series devices,</b> such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
+<!--
+  > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> -->
+
+<p>For <a href="/licensing/about/#zebraprofessionalseriesdevices">Zebra Professional Series devices</a>, such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
 _License required on Zebra Professional devices_
 
-Also see the DataWedge [Licensing](../../licensing) section for more information.
+See DataWedge [Licensing](../../licensing) for more information.
 
 To access NextGen SimulScan Configurations:<br>
 
@@ -247,14 +246,14 @@ To access NextGen SimulScan Configurations:<br>
    <img style="height:350px" src="ng_simulscan_configuration.png"/>
    _NextGen (NG) SimulScan configuration_
 
-Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documentselectiondocumentcapture)** and **[MultiBarcode Params](#multibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each option for further information.
+Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documentselectiondocumentcapture)** and **[MultiBarcode Params](#multibarcodeparams)**, all other options are common to those displayed under **Configure scanner settings**. Refer to the corresponding sections below on each NG SimulScan Configuration option for further information.
 
 ### Scanning Modes
 
 **Scanning Modes** selects the mode to scan barcodes:
 
-- **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required.
-- **[Document Capture](#documentselectiondocumentcapture) -** capture fields within a document or capture the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template. </span>
+- **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required.<br>
+- <b><a href="#documentselectiondocumentcapture">Document Capture</a> -</b> capture fields within a document or capture the entire document as an image based on a specified template. 
 - **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -289,22 +288,23 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 See [Template Builder](../../templatebuilder) for instructions on how to create a Document Capture/NextGen SimulScan Template. After creating the Template, copy it to the device.
 
-To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured. For files larger than 500 KB, it is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. Refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)** from DataWedge Manager CSP on how to add a template to this selection.
+To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured (see screen capture below). After the NextGen SimulScan template is imported, the **Document Selection** is populated with the imported template name. For files larger than 500 KB, it is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**.
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_
-<br><br>
+<br>
 
 Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-**The following subsections highlight a few different types of Document Capture Template options, see [Template Builder](../../templatebuilder) for more information:**<br>
+<h4>The following subsections highlight a few different types of <a href="../../templatebuilder">Document Capture Template</a> options:</h4>
+<br>
 
 #### A) Anchor Barcode
 
-Document capture with anchor barcode captures fields within a document as images, such as an address or signature, based on the custom template with barcode that determines the position of the fields being captured. Once properly configured, scan the anchor barcode to capture the specific area as an image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery. <br>
+Document Capture with Anchor Barcode captures fields within a document as images, such as an address or signature, based on the barcode in the [NextGen SimulScan Template](../../templatebuilder) that determines the position of the fields being captured. Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. Once properly configured, scan the anchor barcode to capture the specific area as image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery. <br>
 
 Video demonstration of document capture with anchor barcode:
 
@@ -313,13 +313,15 @@ Video demonstration of document capture with anchor barcode:
 
 #### B) Whole Page Document Capture
 
-Whole Page Document Capture captures the entire document or form as an image. The entire document can be captured with or without scanning a barcode. This feature captures the entire document up to the surrounding borders in the field of view. The document must have black borders surrounding all four sides or be bordered by a contrasting background. If this requirement is not met, the document cannot be captured.
+Whole Page Document Capture acquires the entire document, or form, as an image based on the surrounding borders of the content designated in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
 
+<!--
 After the NextGen SimulScan template is imported for Document Capture, the **Document Selection** is populated with the imported template name. Based on the template request, the template is customized with one of the following options:
 
 * Mandatory barcode template - for forms that have at least one barcode
 * Optional barcode template - for forms that may or may not have a barcode
-  <br>
+  <br> 
+-->
   <!--
   Two templates are available by default (if supported by the underlying scanner framework): “WholePage-MandatoryBarcode” and “WholePage-OptionalBarcode”. The mandatory barcode template is used for forms that have at least one barcode. The optional barcode template is used for forms that may or may not have a barcode.
   <img style="height:350px" src="wholepage-templates.png"/>
@@ -331,7 +333,7 @@ After the NextGen SimulScan template is imported for Document Capture, the **Doc
 
 #### C) Signature Presence Detection
 
-When scanning a document with **Document Capture,** DataWedge can detect the presence of a handwritten signature. This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. This setting is controlled through the Content Provider. Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.<br>
+Detect the presence of a handwritten signature when scanning a document with Document Capture.  This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. The [NextGen SimulScan Template](../../templatebuilder) is required to designate the region on the form used to identify the location of the signature to detect its presence. Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. Signature presence detection is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.<br>
 
 Video demonstration of signature presence detection:
 
@@ -351,20 +353,19 @@ Capture specific barcode(s) from a form containing multiple barcodes and ignore 
    * **Contains -** enter character(s) to accept barcodes that contain the specified character(s) at the index position specified in the **at** field (index 0 = the first character).
     * **String Length -** enter the number of characters the barcode data must contain.
 * **Variable Field Presence Timeout–** applies to forms that contain a combination of mandatory and optional barcodes to decode, allowing more or less time to decode optional barcodes as needed.
-
-<br>
+<br><br>
 
 #### E) Auto Group Identification
-**Auto Group Identification** decodes barcodes that have a common pattern, designating them into a unique group based on the criteria defined in the Template. All of the following criteria must be met for this group of barcodes:
+**Auto Group Identification** decodes barcodes that have a common pattern on a form, designating them into a unique group based on the criteria defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type. All of the following criteria must be met for this group of barcodes:
 * Same barcode symbology
 * Same first 1-2 Characters of the barcode data
 * Same barcode data length
 
 When using this option, the quantity of barcodes must be specified by using **_one_** of the following methods:
-* **Barcode –** Based on the template, a separate barcode is present on the form or label specifying the quantity of barcodes to scan for each decode session. The decoded data from the quantity barcode must meet at least one of the following criteria:<br>
+* **Barcode –** A separate barcode is present on the form or label specifying the quantity of barcodes to scan for each decode session. The decoded data from the quantity barcode must meet the following criteria:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Starts with "Q" or "q"  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Length is 3 digits or less<br>
-* **User/System Defined -** Set the quantity of barcodes to scan (value range: 1 to 100; default value: 5) based on:
+* **User/System Defined -** Set the quantity of barcodes (value range: 1 to 100; default value: 5) to scan based on:
     * **DataWedge UI -** use option **Group of common barcodes dynamic quantity** under **Template params** from **NG SimulScan configuration**, as shown below. 
     * **DataWedge intent API -** use [SetConfig](../../api/setconfig/#nextgensimulscanparameters) to set common_barcode_dynamic_quantity to the desired quantity.
 
@@ -384,10 +385,11 @@ When using this option, the quantity of barcodes must be specified by using **_o
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Kr8h-Cke6k?rel=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <i>Video demonstration of Specify Barcode Criteria and Automatic Group Identification features</i>
+<br>
 
 ### MultiBarcode Params
 
-**MultiBarcode** acquires multiple, unique barcodes in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
+**MultiBarcode** (separate from MultiBarcode under Document Capture) acquires multiple, unique barcodes from a form in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. A template is not required. In DataWedge 8.1 and earlier, this section is displayed as **Basic MultiBarcode params**.
 
 <table>
 

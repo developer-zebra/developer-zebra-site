@@ -1,0 +1,47 @@
+---
+csp: wifi
+title: WPA Mode Enterprise
+type: parm
+order: 23
+mx: "10.2"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  presentif: The Network Action is "Add" and the Security Mode is "Enrerprise" or "Enterprise"
+  name: WPAModeEnterprise
+  type: list
+  list:
+    - code: 1
+      mx: "10.2"
+      devicetype: A,B
+      name: WPA
+      description: Enables Wi-Fi Protected Access (WPA) encryption mode on the device.
+    - code: 2
+      mx: "10.2"
+      devicetype: A,B
+      name: WPA2
+      description: Enables Wi-Fi Protected Access version 2 (WPA2) standard on the device.
+    - code: 3
+      mx: "10.2"
+      devicetype: A,B
+      name: WPA/WPA2
+      description: Enables Wi-Fi Protected Access (WPA) standard on the device. 
+    - code: 4
+      mx: "10.2"
+      devicetype: A,B
+      info: WEP is not supported with Enterprise Security Mode.
+      name: WEP
+      description: Enables Wired Equivalency Privacy (WEP) standard on the device.
+    - code: 5
+      mx: "10.2"
+      devicetype: A,B
+      name: WPA3
+      description: Enables Wi-Fi Protected Access version 3 (WPA3) standard on the device.
+    - code: 6
+      mx: "10.2"
+      devicetype: A,B
+      name: WPA3 192-bit
+      description: Enables 192-bit Wi-Fi Protected Access version 3 (WPA3) standard on the device.
+---
+
+Used to select the Wi-Fi security mode in use on the selected WLAN. When the selected Security Mode is "Personal" or "Enterprise," the WPA Mode must be selected to determine the key type to use. WPA performs encryption using the Temporal Key Integrity Protocol. A TKIP-compatible key must be specified. WPA2 supports encryption using TKIP (and is therefore backward-compatibile with WPA) and the more secure Advanced Encryption Standard (AES) algorithm. For key selection for this mode, enter either TKIP, AES or auto-select. 

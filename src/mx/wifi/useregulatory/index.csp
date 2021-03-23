@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Country Selection Auto/Manual 
+title: Country Selection Auto/Manual (checkbox) 
 type: parm
 order: 5
 mx: "4.2"
@@ -10,12 +10,12 @@ parm:
   name: UseRegulatory
   type: list
   list:
-    - code: 11
+    - code: checked
       mx: "4.2"
       devicetype: A,B
       name: UseRegulatory
       description: Permits manual country selection. 
-    - code: 12
+    - code: unchecked
       mx: "4.2"
       devicetype: A,B
       name: Country

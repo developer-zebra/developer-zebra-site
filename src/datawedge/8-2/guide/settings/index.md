@@ -460,21 +460,6 @@ _Sample user notice_
 
 -----
 
-## Programming Notes
-
-### Capture Data and Photos in One App
-It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind. 
-
-1. Add separate Activities in the app: one for barcode scanning and another for picture taking. 
-2. Create a DataWedge Profile with the following settings: 
-	* Associate the Profile with the picture-taking Activity
-	* Disable scanning in the Profile
-3. Use the standard Android-SDK APIs to control the camera
-4. When the app is used for scanning, the default DataWedge profile will come into effect. 
-5. For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
-
------
-
 ## Sample Import Code 
 The following sample Java code can be modified to suit individual needs. 
 

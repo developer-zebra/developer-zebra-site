@@ -14,12 +14,15 @@ parm:
   list:
     - code: 0
       devicetype: A
+      mx: "4.2"
       name:  Do not change
     - code: 1
       devicetype: A
+      mx: "4.2"
       name: Disable Restricted WLAN Settings UI
     - code: 2
       devicetype: A
+      mx: "4.2"
       name: Enable Restricted WLAN Settings UI
 ---
 Used to enable/disable read-only mode for Wi-Fi settings according to the values in the table below. _**Not supported on TC70 QC GA1/GA2 running Android KitKat**_.

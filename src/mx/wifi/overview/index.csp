@@ -86,7 +86,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Use/Do Not Use Network Notifications
 * Select Country automatically or manually 
 * Set the RF Band
-* Set Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
+* **DEPRECATED**: Set WLAN Power Savings Mode to: Always Active, WMM-PS, Null Data or PS-POLL
 * Set the band preference
 * Select FTM Standard or Enhanced Infrastructure settings
 * Connect to/Disconnect from a Wi-Fi network

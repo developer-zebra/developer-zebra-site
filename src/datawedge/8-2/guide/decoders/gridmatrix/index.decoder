@@ -5,7 +5,7 @@ parm:
   type: list
   list: 
     - name: Inverse
-      description: To specify the reflectance for decoding Grid Matrix barcodes, set one of the following options
+      description: To specify the reflectance for decoding Grid Matrix barcodes, set one of the following options -
       descriptionlist:
             - value: • Disabled (0) - To decode Grid Matrix barcodes with normal reflectance only (default).
             - value: • Enabled (1) - To decode Grid Matrix barcodes with inverse reflectance only.
@@ -17,7 +17,7 @@ parm:
             - value: Enabled (1)
             - value: Auto (2)
     - name: Mirror
-      description: To specify whether mirrored Grid Matrix barcodes are decoded, set one of the following options
+      description: To specify whether mirrored Grid Matrix barcodes are decoded, set one of the following options -
       descriptionlist:
             - value: • Disabled (0) - To decode non-mirrored Grid Matrix barcodes only (default).
             - value: • Enabled (1) - To decode mirrored Grid Matrix barcodes only.

@@ -99,7 +99,6 @@ decoders:
     decoder: compositec
     decoderparm: decoder_composite_c
     decoderstate: true, false
-    parms: true
   - type: section
     title: Datamatrix
     decoder: datamatrix
@@ -198,7 +197,6 @@ decoders:
     decoder: k3of5
     decoderparm: decoder_korean_3of5
     decoderstate: true, false 
-    parms: true
   - type: section
     title: Mailmark
     decoder: mailmark
@@ -225,7 +223,6 @@ decoders:
     decoder: micropdf
     decoderparm: decoder_micropdf
     decoderstate: true, false 
-    parms: true
   - type: section
     title: MicroQR
     decoder: microqr

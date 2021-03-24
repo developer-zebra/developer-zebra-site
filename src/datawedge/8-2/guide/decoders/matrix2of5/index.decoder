@@ -5,11 +5,11 @@ parm:
   type: list
   list: 
     - name: Length1
-      description: To decode an Matrix 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Matrix 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
+      description: Sets the lower limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 4.
       param: decoder_matrix_2of5_length1
       paramvalue: Integer from 0–55
     - name: Length2
-      description: To decode an Matrix 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Matrix 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
+      description: Sets the upper limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 12.
       param: decoder_matrix_2of5_length2
       paramvalue: Integer from 0–55
     - name: Redundancy
@@ -20,14 +20,14 @@ parm:
             - value: true
             - value: false
     - name: Report Check Digit
-      description: Transmit Matrix 2 of 5 data with or without the check digit.
+      description: When enabled, transmits Matrix 2 of 5 data with the check digit.
       param: decoder_matrix_2of5_report_check_digit
       paramvalue: 
         list:
             - value: true
             - value: false
     - name: Verify Check Digit
-      description: Enable this feature to check the integrity of all Matrix 2 of 5 symbols to verify that the data complies with a specified check digit algorithm.
+      description: Checks the integrity of all Matrix 2 of 5 barcodes to verify that the data complies with a specified check digit algorithm.
       param: decoder_matrix_2of5_verify_check_digit
       paramvalue: 
         list:

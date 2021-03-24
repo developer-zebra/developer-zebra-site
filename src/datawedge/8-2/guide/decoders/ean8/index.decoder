@@ -5,7 +5,7 @@ parm:
   type: list
   list: 
     - name: Convert EAN8 To EAN13
-      description: Converts EAN8 data to EAN 13 format. A check in the checkbox enables this conversion.
+      description: Converts EAN8 data to EAN 13 format. 
       param: decoder_ean8_convert_to_ean13
       paramvalue: 
         list:

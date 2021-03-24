@@ -5,11 +5,11 @@ parm:
   type: list
   list: 
     - name: Length1
-      description: To decode a Codabar symbol with a specific length range, set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 8.
+      description: Sets the lower limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 8 and 24 characters, set this value to 8.
       param: decoder_codabar_length1
       paramvalue: Integer from 0–55
     - name: Length2
-      description: To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
+      description: Sets the upper limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 8 and 24 characters, set this value to 24.
       param: decoder_codabar_length2
       paramvalue: Integer from 0–55
     - name: Redundancy
@@ -20,14 +20,14 @@ parm:
             - value: true
             - value: false
     - name: Clsi Editing
-      description: Enable this parameter to strip the start and stop characters and insert a space after the first, fifth, and tenth characters of a 14-character Codabar symbol. Enable this feature if the host system requires this data format.
+      description: Strips the start and stop characters and inserts a space after the first, fifth, and tenth characters of a 14-character Codabar barcode. Enable this feature if the host system requires this data format.
       param: decoder_codabar_clsi_editing
       paramvalue: 
         list:
             - value: true
             - value: false
     - name: Notis Editing
-      description: Enable this parameter to strip the start and stop characters from a decoded Codabar symbol. Enable this feature if the host system requires this data format.
+      description: Strips the start and stop characters from a decoded Codabar barcode. Enable this feature if the host system requires this data format.
       param: decoder_codabar_notis_editing
       paramvalue: 
         list:

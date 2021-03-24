@@ -34,7 +34,11 @@ parm:
             - value: Integer from 5-100 in increments of 5
             - value: Default = 65
     - name: Bits per pixel 
-      description: Specify the color depth of the output image. This is not applicable to JPEG image formats.
+      description: Used to select the number of significant bits per pixel (BPP) to use when capturing a signature -
+      descriptionlist:
+        - value: • 1 BPP - For a black and white image.
+        - value: • 4 BPP - Assigns 1 of 16 levels of grey to each pixel.
+        - value: • 8 BPP - Assigns 1 of 256 levels of grey to each pixel.
       param: decoder_signature_bpp
       paramvalue:
         list:

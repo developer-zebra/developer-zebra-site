@@ -5,7 +5,7 @@ type: parm
 order: 71
 mx: "6.3"
 devicetype: A,B
-info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing. Applies to WWAN-enabled devices only. 
+info: Applies to specific WWAN-enabled devices only. For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.  
 parm:
   pivotal: No
   presentif: The "Use Hotspot Options" checkbox is checked
@@ -29,8 +29,10 @@ parm:
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---
 
-This parameter applies the hotspot configuration on the device. When enabled, the device acts as an internet access point for nearby devices, sharing its cellular connection according to the settings configured using the hotspot parameters below. **Hotspot functionality is supported only on certain Zebra devices, including the ET55, TC56 and TC75x devices running Android 6.0 Marshmallow or higher**. 
+This is the On/Off switch for the Wi-Fi Hotspot feature on the device (if supported). When enabled, the device acts as an internet access point for nearby devices, sharing its cellular connection according to the settings configured using the hotspot parameters in the sections that follow. 
 
 <!-- 
+3/24/21- pending further info, note removed from bottom of graf: **Hotspot functionality is supported only on certain Zebra devices, including the ET55, TC56 and TC75x devices running Android 6.0 Marshmallow or later**. 
+
 8/21/18- supported-device change (ET50 removed, TC75x added, Android ver. changed from 5L to 6M) per eng. 
 --> 

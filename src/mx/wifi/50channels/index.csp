@@ -19,5 +19,5 @@ Used to designate channels in the 5GHz band for use by the device. While channel
 
 * String from 0&ndash;64 characters
  containing a set of valid channels
-* Multiple values must be separated by commas (i.e. "7,11,12,16...")
+* Multiple values must be separated by commas (i.e. "36,40,48...")
 * Also accepts ranges when specified with a hyphen (-) (i.e. "36-60")

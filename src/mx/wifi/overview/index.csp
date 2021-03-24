@@ -54,7 +54,6 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Call admission control
 	* Cisco Centralized Key Management (CCKM)
 	* Coverage Hole Detection
-	* Configure Extended WLAN settings
 	* Fast Transition (FT)
 	* Fast Transition Resource Request (FTRIC)
 	* Fine Timing Measurement (for indoor locationing)
@@ -62,7 +61,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* FTOverTheDS
 	* Fusion Advanced Logging
 	* Gratuitous ARP
-	* Hotspot mode (ET50, ET55 with Lollipop only)
+	* Hotspot mode
 	* Hyper Fast Secure Roam (HF SR)
 	* MAC randomization
 	* Management Frame Protection Mode (802.11w)
@@ -79,7 +78,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Sub-Net Roam
 	* Verbose Wi-Fi logging
 	* WANCountry
-* Set Hotspot (ET50, ET55 with Lollipop only):
+* Set Hotspot:
 	  * AP Channel, Band, SSID and Options
 	  * Security Modes, Passphrase and Passphrase Encryption
 * Set Wi-Fi to Sleep: Never, Always or Always When Plugged In

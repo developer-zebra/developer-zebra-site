@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: 
 title: WLAN Extended Enable/Disable
 type: parm
 order: 87
@@ -30,3 +30,5 @@ parm:
 This is the On/Off switch for WLAN extended settings on the device.
 
 **Important: Attempts to use this parameter on a device that doesn't support it returns a value of "0" or "99" (depending on the MX version) in the relevant section of the Result XML file**.
+
+<!-- 3/24/21 removed per eng. -->

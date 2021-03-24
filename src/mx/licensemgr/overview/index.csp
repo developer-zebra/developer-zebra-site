@@ -6,7 +6,7 @@ devicetype: A,B
 order: 0
 ---
 
-The License Manager (LicenseMgr) CSP administers the software licenses on a device, allowing an administrator or app running on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that to not require licensing are not effected by this CSP. 
+The License Manager (LicenseMgr) CSP administers the software licenses on a device, allowing an administrator or app running on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that do not require licensing are not effected by this CSP. 
 
 ### Main Functionality
 

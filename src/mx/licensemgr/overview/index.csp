@@ -10,21 +10,23 @@ The License Manager (LicenseMgr) CSP administers the software licenses on a devi
 
 ### Main Functionality
 
-##### Zebra Licensing
+#### Zebra Licensing
 
 * Perform licensing actions using Zebra or (legacy) Symbol methods
-* Activate / Return / Return All / Refresh Software License(s) 
-* Enter an Activation ID
+* Activate / Return / Return All / Refresh Software License(s) by Activation ID
+* Activate / Return / Refresh Licensed apps by feature name and version
 * Select license source:
  * Cloud
  * Cloud proxy
  * Local license server
  * Preactivated license
 * Remove license source
-* Enter URL and friendly name for on-premise license server
-* Enter URL and friendly name for cloud server via proxy
+* Enter URL and friendly name for on-premise license AID server
+* Enter URL and friendly name for cloud-based AID server via proxy
+* Enter URL and optional port number for an on-premise feature licensing server 
+* Enter URL and optional port number for a cloud-based feature licensing server 
 
-##### Symbol Licensing
+#### Symbol Licensing
 
 * Apply software license(s) on a device
 * Revoke software license(s) from a device

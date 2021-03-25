@@ -1,5 +1,5 @@
 ---
-csp: worryfreewifimgr
+csp: 
 title: Server Analytics Coverage Enable/Disable 
 type: parm
 order: 56
@@ -29,3 +29,5 @@ parm:
 ---
 
 Controls whether server analytics for Coverage View tests are performed for the analysis session on the device. **See Coverage View for more information**. 
+
+<!-- 3/25/21 - parm removed per eng; not yet implemented --> 

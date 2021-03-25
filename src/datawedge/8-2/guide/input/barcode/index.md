@@ -278,7 +278,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 ### Document Selection / Document Capture
 
-**Document Selection** specifies the template to use for Document Capture to retrieve data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. A Document Capture/NextGen SimulScan Template is required to process the acquired data so it can be consumed by an application. **Document Capture** must be selected as the **[Scanning Mode](#scanningmodes).** There are 2 types of Document Capture templates:
+**Document Selection** specifies the template to use for Document Capture to retrieve data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. A Document Capture/NextGen SimulScan Template is required to process the acquired data so it can be consumed by an application. **Document Capture** must be selected as the **[Scanning Mode](#scanningmodes-1).** There are 2 types of Document Capture templates:
 
 * **Image Capture -** acquires mixed types of data at once (barcodes, text, images, etc.) when the document to be scanned has a fixed layout - the location and type of data in each field remain consistent whenever the form is used, and only the data changes with each new instance of the form.
 * **MultiBarcode -** acquires data from forms that contain barcodes. This applies to cases where multiple barcodes are required to be captured simultaneously, or specific barcode(s) need to be read from a multitude of barcodes.
@@ -288,7 +288,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 See [Template Builder](../../templatebuilder) for instructions on how to create a Document Capture/NextGen SimulScan Template. After creating the Template, copy it to the device.
 
-To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Capture Selection** and select a template for the document to be captured (see screen capture below). After the NextGen SimulScan template is imported, the **Document Selection** is populated with the imported template name. For files larger than 500 KB, it is required to enable **[Use content providers](../../output/intent/#intentoutputsetup)** option in Intent Output to retrieve scanned data. To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**.
+To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Selection** and select a template for the document to be captured (see screen capture below). This selection is populated with the imported template after [template deployment](../../templatebuilder/#5deploytemplates). With **Document Capture**, it is _required to **[Use content providers](../../programmers-guides/content-provider/)**_ to retrieve scanned data. To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**.
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_

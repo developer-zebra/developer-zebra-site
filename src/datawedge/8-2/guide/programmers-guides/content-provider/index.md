@@ -1,5 +1,5 @@
 ---
-title: Use Content Provider
+title: Content Provider Programmer's Guide
 layout: guide.html
 product: DataWedge
 productversion: '8.2'
@@ -11,14 +11,22 @@ productversion: '8.2'
 
 DataWedge's content provider only sends 768 KB (786,432 bytes) of raw data at once through Android's `ContentProvider` class object. If the scanned data exceeds this limit, the remaining data is sent in a subsequent `ContentProvider` object, whose URI is included in the first `ContentProvider`, with the same size limit. The URI is a string used to query a content provider to retrieve the data, containing the provider and path. This process in breaking down the `ContentProvider` into separate parts repeats until the actual file size is reached for the raw scanned data. The client application then needs to concatenate the raw data from all `ContentProviders` to reconstruct the final full raw data object in byte[] form.
 
-## Android Manifest Changes
+## Content Provider
+
+Follow the steps in the following sections to acquire data using Content Provider.
+
+### 1. Change the Android Manifest
 
 The following permission must be added to the manifest of the Android application so it can be granted access to the DataWedge content provider:
 
 		<uses-permission android:name="com.symbol.datawedge.permission.contentprovider" />
 
 
-## Enable Content Provider via DataWedge UI
+### 2. Enable Content Provider 
+
+Choose one of the following options to enable Content Provider:
+
+#### 2a. Enable Content Provider via DataWedge UI
 
 To enable the content provider option via DataWedge UI, navigate to the **Intent Output** section of the DataWedge profile and enable Intent Output.
 
@@ -31,7 +39,7 @@ Then enable the option **Use content providers.**
 _Use Content Providers_
 
 
-## Enable Content Provider via DataWedge Intent API
+#### 2b. Enable Content Provider via DataWedge Intent API
 
 To enable the content provider option via DataWedge Intent API, use intent key **intent_use_content_provider** with supported value _true_ or _false_.
 
@@ -61,13 +69,13 @@ The following sample code demonstrates how to enable content provider for profil
 		this.sendBroadcast(iSetConfig);
 
 
-## Processing Intent Output with Content Provider
+### 3. Process Intent Output with Content Provider
 
 When configured to use the content provider, DataWedge first sends the scan data intent based on how it is configured in the Intent Output plugin.
 
 An Intent extra contains a URI for the DataWedge content provider. The application must use the content provider URI to query the data into a `Cursor` object using the `ContentResolver`.
 
-### Parameters
+#### Parameters
 **Signature presence status -** when it is required to check for the presence of a handwritten signature during Document Capture, DataWedge exposes a signature presence status parameter through the existing Content Provider cursor. This returns whether a signature is present or absent, determines if the signature presence status is supported, or if the signature presence status was not requested. Signature presence status should be requested when the Document Capture template is being created or edited.
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
@@ -83,7 +91,9 @@ An Intent extra contains a URI for the DataWedge content provider. The applicati
   </tr>
 </table>
 
-### NextGen SimulScan Sample Code
+## Sample Code
+
+### Process scan data with NextGen SimulScan
 The following sample code demonstrates how to process scan data with NextGen SimulScan:
 
 		public class MainActivity extends AppCompatActivity {
@@ -342,8 +352,8 @@ The following sample code demonstrates how to process scan data with NextGen Sim
 		}
 
 
-### SignatureCapture Sample Code
-The following sample code demonstrates how to process scan data with SignatureCapture:
+### Signature Capture Sample Code
+The following sample code demonstrates how to process scan data with Signature Capture:
 
 		public static final String BARCODE_IMAGE_FORMAT_TAG = "image_format";
 		public static final String BARCODE_SIGNATURE_TYPE_TAG = "signature_type";

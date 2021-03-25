@@ -404,16 +404,10 @@ For Border-based forms:
 
 After settings are configured and validated, select **File > Download Template** to download a copy to the local host. **Zebra recommends testing all Templates before deployment to devices** to ensure proper operation.
 
-Once downloaded, the Template can be deployed to mobile computer devices.
+Once downloaded, the Template can be deployed to mobile computer devices. [DataWedge Mgr CSP](/mx/datawedgemgr) generates the XML file to be used by [StageNow](../../../../stagenow) or an EMM (Enterprise Mobile Management) system to deploy to the devices. Refer to:
+* [Import NextGen SimulScan Templates](../admin/#importnextgensimulscantemplates)
+* [NG SimulScan Template Action](/mx/datawedgemgr/#ng-simulscan-template-action)
 
-**Methods of Template Deployment**:
-
-* **Manually via USB** cable to the device using the Android Debug Bridge (ADB), copy the .XML file to `/enterprise/device/settings/datawedge/templates/`.  ?? Is further action required or is the Template automatically imported to DataWedge?
-* **Remotely using [StageNow](../../../../stagenow)** and the [UI Manager](/mx/uimgr/) service.
-* Remotely through a company's own mobile device management (MDM) system (if supported by that system).
-* **[DataWedge Mgr CSP](/mx/datawedgemgr)** enables secure mass deployment of templates. Refer to:
-    * [Import NextGen SimulScan Templates](../admin/#importnextgensimulscantemplates)
-    * [NG SimulScan Template Action](/mx/datawedgemgr/#ng-simulscan-template-action)
 
 ---
 

@@ -16,7 +16,7 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 
 ### Using Zero Touch Wizard
 
-> `IMPORTANT:` **The Zero Touch Wizard does NOT prevent the Android Setup Wizard** from running on the device when first booted.  
+> `IMPORTANT:` **The Zero Touch Wizard does NOT prevent the Android Setup Wizard from running** on the device when first booted.  
 
 **NOTE**: To create a single Profile that can be used to stage multiple devices with different settings, [enable Dynamic Staging](../../dynamicstaging/#usingdynamicstaging).  
 
@@ -58,6 +58,6 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 
 #### The Profile is now ready for deployment. 
 
-> `IMPORTANT NOTES:`<br> • **The Zero Touch Wizard does NOT prevent the Android Setup Wizard** from running on the device when first booted. <br> • **A Zero Touch Profile no longer functions for Zero Touch enrollment** if saved and imported onto the same or a different host workstation. 
+> `IMPORTANT NOTES:`<br> • **The Zero Touch Wizard does NOT prevent the Android Setup Wizard from running** on the device when first booted. <br> • **A Zero Touch Profile no longer functions for Zero Touch enrollment** if saved and imported onto the same or a different host workstation. 
 
 

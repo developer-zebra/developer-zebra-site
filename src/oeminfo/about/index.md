@@ -29,7 +29,7 @@ OEMinfo also can be used by apps as a "standard" mechanism for publishing data t
 
 ### Scope and Audience
 
-This guide describes major components of the OEMinfo Content Provider Framework, and includes methods for configuring an app to consume content through OEMinfo APIs. It is intended for software developers, administrators and other technical users designing apps that could benefit by acquiring information about device capabilities about the Zebra device on which they are running.
+This guide describes major components of the OEMinfo Content Provider Framework, and includes methods for configuring an app to consume content through OEMinfo APIs. It is intended for software developers, administrators and other technical users designing apps that could benefit by acquiring information about device capabilities of the Zebra device on which they are running.
 
 -----
 
@@ -43,7 +43,7 @@ OEMinfo is supported on all Zebra devices running...
  * **TC20 8.x Oreo**: [LifeGuard Update 07 September 2020](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc20-operating-system.html)
  * **TC25 8.x Oreo**: [LifeGuard Update 07 September 2020](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc25-operating-system.html)
 
->>For best results, **Zebra recommends using OEMinfo 9.0.0.198 or later**. 
+>For best results, **Zebra recommends using `OEMinfo 9.0.0.282` or later**. 
 
 -----
 

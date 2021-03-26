@@ -16,7 +16,7 @@ productversion: '7.0'
 
 ## `IMPORTANT`
 
-**EMDK for Xamarin versions 6.0 and 7.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
+**EMDK for Xamarin versions 6.0 and 7.0 are functionally equivalent and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
 
 -----
 
@@ -85,7 +85,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ### `SEPTEMBER 2020 UPDATE`
 
-* **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
+* **A Mobility DNA Enterprise license is now required** to use0 multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
 
 #### EMDK for Xamarin 7.0
 
@@ -103,8 +103,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * **New [NFC Manager](../../mx/nfcmgr) feature**: 
  * Enable/Disable logging of NFC events on device
 
-
-**Now supports MX 10.2,** adding the following major features and enhancements: 
+**Supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 
  * Enter the Token received from a caller 
 * **New [Beacon Manager](../../mx/beaconmgr) CSP**: 

@@ -16,7 +16,7 @@ productversion: '9.0'
 
 ## `IMPORTANT`
 
-**EMDK for Android versions 7.6 and 8.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
+**EMDK for Android versions 7.6, 8.0 and 9.0 are functionally equivalent and interchangeable; any of these desktop versions can target any device version**. Zebra publishes identical documentation for these versions to help avoid confusion when it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
 
 -----
 

@@ -81,13 +81,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 -----
 
-## New in v7.0
-
-### `SEPTEMBER 2020 UPDATE`
-
-* **A Mobility DNA Enterprise license is now required** to use0 multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
-
-#### EMDK for Xamarin 7.0
+## New in EMDK for Xamarin 7.0
 
 **New** `ScannerConfig.setParameter()` **and** `ScannerConfig.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in future.
 
@@ -103,7 +97,19 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * **New [NFC Manager](../../mx/nfcmgr) feature**: 
  * Enable/Disable logging of NFC events on device
 
-**Supports MX 10.2,** adding the following major features and enhancements: 
+-----
+
+## Version History
+
+### Added in v6.0
+
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
+#### `SEPTEMBER 2020 UPDATE`
+
+#### EMDK for Xamarin 6.0
+
+**Now supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 
  * Enter the Token received from a caller 
 * **New [Beacon Manager](../../mx/beaconmgr) CSP**: 
@@ -136,13 +142,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 > `NOTE:` MX 10.2 support requires updating the EMDK Visual Studio extension to 6.0.0.70 (or later). 
 
------
-
-## Version History
-
-### Added in v6.0
-
-###`JUNE 2020 UPDATE`
+####`JUNE 2020 UPDATE`
 
 **MultiDex support added in Visual Studio 2019**. 
 
@@ -153,9 +153,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 **See the [EMDK-X Setup Guide](../nuget) for help updating**.
 
------
-
-#### New Features
+#### Also Added in EMDK-X 6.0
 
 **<u>Support for MX 9.3</u>** adds the following features and enhancements:
 * **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to control background data usage on a per-application basis. 
@@ -173,7 +171,6 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * **Enhanced [Keymapping Manager](../../mx/keymappingmgr)** now supports: 
   * Intent extras 
   * "Rotate" and "minus" keys 
-
 
 #### API Enhancements
 

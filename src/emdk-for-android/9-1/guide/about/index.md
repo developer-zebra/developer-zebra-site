@@ -72,11 +72,11 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ### Added in v8.0
 
-> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+* **Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+* **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
+* **A new [MDNA Licensing Guide](../licensing)** describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy. 
 
 #### `SEPTEMBER 2020 UPDATE`
-
-#### EMDK for Android 8.0
 
 **Now supports MX 10.2,** adding the following major features and enhancements: 
 * **New [Access Manager](../../mx/accessmgr) features**: 
@@ -112,12 +112,6 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 > `NOTE:` MX 10.2 support requires updating the EMDK Android Studio plug-in to v7.6.1 (or later). 
 
 -----
-
-#### Features Introduced in EMDK-A 8.0
-
-* **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
-* **A new [MDNA Licensing Guide](../licensing)** describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy. 
-
 
 ### Added in v7.6
 

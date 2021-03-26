@@ -50,10 +50,21 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 -----
 
-## New in v9.0
+## New in v9.1
 
-* New `ScannerConfig.setParameter()` and `ScannerConfig.getParameter()` pass-through APIs allow setting and retrieval of scanning parameters not yet implemented with the class hierarchy or those being added in future. 
-* An [Extended Scanner Parameter guide](../extended_scanner_parameters) explians the use of the new pass-through APIs. 
+**New** `ScannerConfig.setParameter()` **and** `ScannerConfig.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in future.
+
+**A new [Extended Scanner Parameter guide](../extended_scanner_parameters)** explians the use of the new pass-through APIs. 
+
+**Supports MX 10.3, adding the following major features and enhancements**:
+* **New [App Manager](../../mx/appmgr) feature**: 
+ * Allow/Disallow individual app upgrades 
+* **New [Bluetooth Manager](../../mx/bluetoothmgr) feature**: 
+ * Erase all data about paired peripherals on device
+* **New [DHCP Option Manager](../../mx/dhcpoptionmgr) feature**: 
+ * Select between DHCPv4 and DHCPv6 clients on device (or use both)
+* **New [NFC Manager](../../mx/nfcmgr) feature**: 
+ * Enable/Disable logging of NFC events on device
 
 -----
 

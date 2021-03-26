@@ -16,7 +16,7 @@ productversion: '7.0'
 
 ## `IMPORTANT`
 
-**EMDK for Xamarin versions 6.0 and 7.0 are functionally equivalent and interchangeable; either desktop version can target either device version**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
+**EMDK for Xamarin versions 6.0 and 7.0 are functionally equivalent and interchangeable; either desktop version can target either of these device versions**. Zebra publishes documentation for both versions to help avoid confusion since it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-X 6.0 or EMDK-X 7.0.
 
 -----
 

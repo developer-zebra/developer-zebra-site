@@ -16,7 +16,7 @@ productversion: '9.0'
 
 ## `IMPORTANT`
 
-**EMDK for Android versions 7.6, 8.0 and 9.0 are functionally equivalent and interchangeable; any of these desktop versions can target any device version**. Zebra publishes identical documentation for these versions to help avoid confusion when it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
+**EMDK for Android versions 7.6, 8.0 and 9.0 are functionally equivalent and interchangeable; any of these desktop versions can target any of these device versions**. Zebra publishes identical documentation for these versions to help avoid confusion when it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
 
 -----
 
@@ -50,21 +50,9 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 -----
 
-## New in v9.1
+## New in v9.0
 
-**New** `Scanner.setParameter()` **and** `Scanner.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in the future.
-
-**A new [Extended Scanner Parameter guide](../extended_scanner_parameters)** explians the use of the new pass-through APIs. 
-
-**Supports MX 10.3, adding the following major features and enhancements**:
-* **New [App Manager](../../mx/appmgr) feature**: 
- * Allow/Disallow individual app upgrades 
-* **New [Bluetooth Manager](../../mx/bluetoothmgr) feature**: 
- * Erase all data about paired peripherals on device
-* **New [DHCP Option Manager](../../mx/dhcpoptionmgr) feature**: 
- * Select between DHCPv4 and DHCPv6 clients on device (or use both)
-* **New [NFC Manager](../../mx/nfcmgr) feature**: 
- * Enable/Disable logging of NFC events on device
+**EMDK for Android versions 9.0 is functionally equivalent to and interchangeable with versions 7.6 and 8.0; any of these desktop versions can target any of these device versions**. Zebra publishes identical documentation for these versions to help avoid confusion when it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
 
 -----
 

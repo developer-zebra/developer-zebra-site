@@ -17,11 +17,11 @@ So now we will create a tutorial and configure the touch of your Zebra Android d
 
 > Note: Provide "MxTouchManagerTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/9-0/tutorial/tutCreateProjectAndroidStudio). 
+Start by creating a new Android Studio [project](/emdk-for-android/9-1/tutorial/tutCreateProjectAndroidStudio). 
 
 
 ## Adding The Touch Manager Profile Feature
-1. Click [here](/emdk-for-android/9-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/9-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "TouchManagerProfile" as the Profile Name for this tutorial.
 
@@ -199,7 +199,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/9-0/tutorial/
 
 		}
 
-    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/9-0/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
+    This `processProfile` method returns the result of applying a particular profile that we set using EMDK Profile Wizard in [EMDKResults](/emdk-for-android/9-1/api/core/EMDKResults) reference. If the profile is successfully processed, it returns the status as `CHECK_XML` and then we go on and parse the response to get further details whether the profile was applied successfully or not. Otherwise we display a Failure message in a [dialog](http://developer.android.com/reference/android/app/AlertDialog.html).
 
 	> Note: 1. There is a difference between processing a profile successfully and applying a profile successfully.
 

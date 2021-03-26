@@ -8,8 +8,8 @@ productversion: '9.1'
 ## Overview
 In order to get Barcode or MSR data in your application, you must create a profile that has both an Input feature and an Output feature:
 
-* [Barcode](/emdk-for-android/9-0/guide/profiles/profilebarcode) / [MSR](/emdk-for-android/9-0/guide/profiles/profilemsr) (Input)
-* [Keystroke](/emdk-for-android/9-0/guide/profiles/profilekeystroke),[Intent](/emdk-for-android/9-0/guide/profiles/profileintent),[IP](/emdk-for-android/9-0/guide/profiles/profileIP) (Output)
+* [Barcode](/emdk-for-android/9-1/guide/profiles/profilebarcode) / [MSR](/emdk-for-android/9-1/guide/profiles/profilemsr) (Input)
+* [Keystroke](/emdk-for-android/9-1/guide/profiles/profilekeystroke),[Intent](/emdk-for-android/9-1/guide/profiles/profileintent),[IP](/emdk-for-android/9-1/guide/profiles/profileIP) (Output)
 
 The `Barcode` feature in the Profile Manager is responsible for reading data from the device's integrated bar code scanner and supports different types of bar code readers including laser, imager and internal camera. It also contains detailed parameters for scanner behavior as well as individual barcode symbology parameters.
 
@@ -48,7 +48,7 @@ and the Intent category must be:
 ## EMDK Intent Output
 Allows configuration of the Intent Feature for the profile. The Intent Output Feature allows the captured data to be sent to an application in the form of an implicit Intent. Refer to the Android Developer web site for more information, http://developer.android.com.
 
-* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-0/guide/profile-manager) for more information.
+* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-1/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-1/guide/profile-manager) for more information.
 * Enabled - Enables or disables this feature. 
 * Intent action - Enter the Intent Action name (required). The Intent Filter action must match this.
 * Intent category - Enter the Intent Category name (required). The Intent Filter category must match this.

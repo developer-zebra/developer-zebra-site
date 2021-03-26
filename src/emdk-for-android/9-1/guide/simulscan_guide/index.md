@@ -43,7 +43,7 @@ Customers can interactively capture documents and obtain meaningful data present
 
 ###Initialize EMDK manager
 
-Follow the [“Basic Scanning Tutorial using Barcode API”](/emdk-for-android/9-0/tutorial/tutBasicScanningAPI) to
+Follow the [“Basic Scanning Tutorial using Barcode API”](/emdk-for-android/9-1/tutorial/tutBasicScanningAPI) to
 set up your project for the EMDK.
 
 >Note: It is recommended to release EMDKManager in onDestroy() and onClose() (Service disconnected unexpectedly)

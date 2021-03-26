@@ -1,9 +1,9 @@
 ---
 title: EMDK For Android
 insert:
-  file: emdk-for-android/9-0/guide/about/index.md
+  file: emdk-for-android/9-1/guide/about/index.md
 layout: guide.html
-redirect_url: /emdk-for-android/9-0/guide/about
+redirect_url: /emdk-for-android/9-1/guide/about
 product: EMDK For Android
 productversion: '9.1'
 menu:
@@ -20,24 +20,24 @@ menu:
       label: '4.0'
   items:
     - title: About
-      url: /emdk-for-android/9-0/guide/about
+      url: /emdk-for-android/9-1/guide/about
     - title: Set up
-      url: /emdk-for-android/9-0/guide/gettingstarted
+      url: /emdk-for-android/9-1/guide/gettingstarted
     - title: Tutorials
-      url: /emdk-for-android/9-0/tutorial/
+      url: /emdk-for-android/9-1/tutorial/
     - title: Samples
-      url: /emdk-for-android/9-0/samples
+      url: /emdk-for-android/9-1/samples
     - title: Guides
-      url: /emdk-for-android/9-0/guide/programming-guides
+      url: /emdk-for-android/9-1/guide/programming-guides
     - title: Profile Manager
-      url: /emdk-for-android/9-0/guide/profile-manager-guides
+      url: /emdk-for-android/9-1/guide/profile-manager-guides
     - title: FAQs
-      url: /emdk-for-android/9-0/faq
+      url: /emdk-for-android/9-1/faq
     - title: APIs
-      url: /emdk-for-android/9-0/apimenu
+      url: /emdk-for-android/9-1/apimenu
     - icon: fa fa-comments-o
       url: https://developer.zebra.com/forum/search?keys=&field_zebra_curated_tags_tid%5B%5D=184 
     - icon: fa fa-search
-      url: /emdk-for-android/9-0/search
+      url: /emdk-for-android/9-1/search
 ---
 

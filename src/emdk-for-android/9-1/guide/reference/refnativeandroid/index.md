@@ -9,10 +9,10 @@ productversion: '9.1'
 Zebra offers Android products built on the Android Open Source Platform (AOSP). Two variants are now being offered on the TC55 and planned for certain future products.
 
 ### "Standard Configuration"
-This version of the operating system incorporates Google Mobile Services. All standard Google APIs are available to use in your application. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/9-0/api) as well.
+This version of the operating system incorporates Google Mobile Services. All standard Google APIs are available to use in your application. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/9-1/api) as well.
 
 ### "Professional Configuration" 
-This version of the operating system does not incorporate Google Mobile Services. Standard Google APIs that doe not rely on the availability of GMS services will work on our devices. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/9-0/api) as well.
+This version of the operating system does not incorporate Google Mobile Services. Standard Google APIs that doe not rely on the availability of GMS services will work on our devices. Please consult [http://developer.android.com](http://developer.android.com) for details of using these APIs. Your application also has access to the [EMDK For Android APIs](/emdk-for-android/9-1/api) as well.
 
 ## About GMS
 Google offers a variety of applications and services collectively known as Google Mobile Services (GMS). There are also optional Android API extensions that allow applications to interface with those services. GMS is independent of Android and under a separate license from Google. GMS runs as an add-on above AOSP.

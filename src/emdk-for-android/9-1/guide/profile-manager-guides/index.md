@@ -7,107 +7,107 @@ automenu:
     - title: Getting Started
       items:
         - title: Using Profile Manager
-          url: /emdk-for-android/9-0/guide/profile-manager/
+          url: /emdk-for-android/9-1/guide/profile-manager/
         - title: MX Overview
-          url: /emdk-for-android/9-0/mx/overview
+          url: /emdk-for-android/9-1/mx/overview
         - title: Choosing a Version
-          url: /emdk-for-android/9-0/mx/choosing-a-version
+          url: /emdk-for-android/9-1/mx/choosing-a-version
         - title: Feature Compatibility
-          url: /emdk-for-android/9-0/mx/compatibility
+          url: /emdk-for-android/9-1/mx/compatibility
         - title: Getting Device MX Version
-          url: /emdk-for-android/9-0/mx/version-on-device
+          url: /emdk-for-android/9-1/mx/version-on-device
     - title: Application Management
       items:
         - title: App Manager
-          url: /emdk-for-android/9-0/mx/appmgr
+          url: /emdk-for-android/9-1/mx/appmgr
         - title: App Gallery Manager
-          url: /emdk-for-android/9-0/mx/appgallerymgr
+          url: /emdk-for-android/9-1/mx/appgallerymgr
         - title: Browser Manager
-          url: /emdk-for-android/9-0/mx/browsermgr
+          url: /emdk-for-android/9-1/mx/browsermgr
         - title: License Manager 
-          url: /emdk-for-android/9-0/mx/licensemgr/
+          url: /emdk-for-android/9-1/mx/licensemgr/
     - title: Device Configuration
       items:
         - title: Analytics Manager
-          url: /emdk-for-android/9-0/mx/analytics/
+          url: /emdk-for-android/9-1/mx/analytics/
         - title: Audio Volume UI Manager
-          url: /emdk-for-android/9-0/mx/audiomgr/
+          url: /emdk-for-android/9-1/mx/audiomgr/
         - title: Batch Manager
-          url: /emdk-for-android/9-0/mx/batchmgr/
+          url: /emdk-for-android/9-1/mx/batchmgr/
         - title: Battery Manager
-          url: /emdk-for-android/9-0/mx/batterymgr/
+          url: /emdk-for-android/9-1/mx/batterymgr/
         - title: Bug Report Manager
-          url: /emdk-for-android/9-0/mx/bugreportmgr/
+          url: /emdk-for-android/9-1/mx/bugreportmgr/
         - title: Clock
-          url: /emdk-for-android/9-0/mx/clock/
+          url: /emdk-for-android/9-1/mx/clock/
         - title: Component Manager
-          url: /emdk-for-android/9-0/mx/componentmgr/
+          url: /emdk-for-android/9-1/mx/componentmgr/
         - title: Condition Manager
-          url: /emdk-for-android/9-0/mx/conditionmgr/
+          url: /emdk-for-android/9-1/mx/conditionmgr/
         - title: Display Manager
-          url: /emdk-for-android/9-0/mx/displaymgr/
+          url: /emdk-for-android/9-1/mx/displaymgr/
         - title: Ethernet Manager
-          url: /emdk-for-android/9-0/mx/ethernetmgr/
+          url: /emdk-for-android/9-1/mx/ethernetmgr/
         - title: Personal Dictionary Manager
-          url: /emdk-for-android/9-0/mx/personaldictionarymgr/
+          url: /emdk-for-android/9-1/mx/personaldictionarymgr/
         - title: Power Manager
-          url: /emdk-for-android/9-0/mx/powermgr/
+          url: /emdk-for-android/9-1/mx/powermgr/
         - title: Touch Manager
-          url: /emdk-for-android/9-0/mx/touchmgr/
+          url: /emdk-for-android/9-1/mx/touchmgr/
         - title: Remote Scanner Manager
-          url: /emdk-for-android/9-0/mx/remotescannermgr/
+          url: /emdk-for-android/9-1/mx/remotescannermgr/
     - title: Core Framework
       items:
         - title: Persistence Manager
-          url: /emdk-for-android/9-0/mx/persistence
+          url: /emdk-for-android/9-1/mx/persistence
         - title: XML Manager
-          url: /emdk-for-android/9-0/mx/xml
+          url: /emdk-for-android/9-1/mx/xml
     - title: Security
       items:
         - title: Access Manager
-          url: /emdk-for-android/9-0/mx/accessmgr
+          url: /emdk-for-android/9-1/mx/accessmgr
         - title: Camera Manager
-          url: /emdk-for-android/9-0/mx/cameramgr
+          url: /emdk-for-android/9-1/mx/cameramgr
         - title: Cert Manager
-          url: /emdk-for-android/9-0/mx/certmgr
+          url: /emdk-for-android/9-1/mx/certmgr
         - title: DevAdmin
-          url: /emdk-for-android/9-0/mx/devadmin
+          url: /emdk-for-android/9-1/mx/devadmin
         - title: Encrypt Manager
-          url: /emdk-for-android/9-0/mx/encryptmgr
+          url: /emdk-for-android/9-1/mx/encryptmgr
         - title: SD Card Manager
-          url: /emdk-for-android/9-0/mx/sdcardmgr
+          url: /emdk-for-android/9-1/mx/sdcardmgr
         - title: Threat Manager
-          url: /emdk-for-android/9-0/mx/threatmgr
+          url: /emdk-for-android/9-1/mx/threatmgr
         - title: USB Manager
-          url: /emdk-for-android/9-0/mx/usbmgr
+          url: /emdk-for-android/9-1/mx/usbmgr
     - title: UI Settings
       items:
         - title: KeyMap Manager
-          url: /emdk-for-android/9-0/mx/keymappingmgr
+          url: /emdk-for-android/9-1/mx/keymappingmgr
         - title: PowerKey Manager
-          url: /emdk-for-android/9-0/mx/powerkeymgr
+          url: /emdk-for-android/9-1/mx/powerkeymgr
         - title: Settings Manager
-          url: /emdk-for-android/9-0/mx/settingsmgr
+          url: /emdk-for-android/9-1/mx/settingsmgr
         - title: UI Manager
-          url: /emdk-for-android/9-0/mx/uimgr
+          url: /emdk-for-android/9-1/mx/uimgr
     - title: Network
       items:
         - title: Bluetooth Manager
-          url: /emdk-for-android/9-0/mx/bluetoothmgr/
+          url: /emdk-for-android/9-1/mx/bluetoothmgr/
         - title: Cellular Manager
-          url: /emdk-for-android/9-0/mx/cellularmgr/
+          url: /emdk-for-android/9-1/mx/cellularmgr/
         - title: DHCP Option Manager
-          url: /emdk-for-android/9-0/mx/dhcp
+          url: /emdk-for-android/9-1/mx/dhcp
         - title: GPRS Manager
-          url: /emdk-for-android/9-0/mx/gprsmgr/
+          url: /emdk-for-android/9-1/mx/gprsmgr/
         - title: Hosts Manager
-          url: /emdk-for-android/9-0/mx/hostsmgr/
+          url: /emdk-for-android/9-1/mx/hostsmgr/
         - title: NFC Manager
-          url: /emdk-for-android/9-0/mx/nfcmgr/
+          url: /emdk-for-android/9-1/mx/nfcmgr/
         - title: WiFi Manager
-          url: /emdk-for-android/9-0/mx/wifi/
+          url: /emdk-for-android/9-1/mx/wifi/
         - title: Wireless Manager
-          url: /emdk-for-android/9-0/mx/wirelessmgr/
+          url: /emdk-for-android/9-1/mx/wirelessmgr/
 product: EMDK For Android
 productversion: '9.1'
 ---
@@ -122,19 +122,19 @@ All guides below were updated with a note to that effect.
     - title: Data Capture
       items:
         - title: Activity Selection
-          url: /emdk-for-android/9-0/mx/data-capture/activity
+          url: /emdk-for-android/9-1/mx/data-capture/activity
         - title: Barcode Input
-          url: /emdk-for-android/9-0/mx/data-capture/barcode
+          url: /emdk-for-android/9-1/mx/data-capture/barcode
         - title: Data Capture Plus
-          url: /emdk-for-android/9-0/mx/data-capture/data-capture-plus
+          url: /emdk-for-android/9-1/mx/data-capture/data-capture-plus
         - title: Int Output
-          url: /emdk-for-android/9-0/mx/data-capture/intent
+          url: /emdk-for-android/9-1/mx/data-capture/intent
         - title: IP Output
-          url: /emdk-for-android/9-0/mx/data-capture/IP
+          url: /emdk-for-android/9-1/mx/data-capture/IP
         - title: Keystroke Output
-          url: /emdk-for-android/9-0/mx/data-capture/keystroke
+          url: /emdk-for-android/9-1/mx/data-capture/keystroke
         - title: MSR Input
-          url: /emdk-for-android/9-0/mx/data-capture/msr
+          url: /emdk-for-android/9-1/mx/data-capture/msr
 
 
  -->

@@ -6,7 +6,7 @@ productversion: '9.1'
 ---
 
 ## Overview
-This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/9-0/api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/9-0/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/9-0/guide/profile-manager).
+This guide will walk you through creating an EMDK For Android application that will make use [Profile Config](/emdk-for-android/9-1/api/core/ProfileConfig) object to modify Profile Settings programmatically in order to get barcode data into your application using the [KeyStroke output](/emdk-for-android/9-1/mx/data-capture/keystroke) feature of [EMDK Profiles](/emdk-for-android/9-1/guide/profile-manager).
 
 >**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
@@ -14,10 +14,10 @@ This guide will walk you through creating an EMDK For Android application that w
 
 > Note: Provide "ModifyBarcodeProfileTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/9-0/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/9-1/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/9-0/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
+1. Click [here](/emdk-for-android/9-1/tutorial/tutAddProfileManagerFeature) to see how to add a specific feature to the Profile Manager.
 
 2. Provide "ModifyBarcodeProfile" as the Profile Name for this tutorial.
 

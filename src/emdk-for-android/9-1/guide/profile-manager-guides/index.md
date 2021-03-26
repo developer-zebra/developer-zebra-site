@@ -96,7 +96,7 @@ automenu:
           url: /emdk-for-android/9-0/mx/bluetoothmgr/
         - title: Cellular Manager
           url: /emdk-for-android/9-0/mx/cellularmgr/
-        - title: DHCP Options Manager
+        - title: DHCP Option Manager
           url: /emdk-for-android/9-0/mx/dhcp
         - title: GPRS Manager
           url: /emdk-for-android/9-0/mx/gprsmgr/

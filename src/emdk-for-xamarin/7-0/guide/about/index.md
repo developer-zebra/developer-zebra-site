@@ -83,7 +83,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## New in EMDK for Xamarin 7.0
 
-**New** `ScannerConfig.setParameter()` **and** `ScannerConfig.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in future.
+**New** `Scanner.setParameter()` **and** `Scanner.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in the future.
 
 **A new [Extended Scanner Parameter guide](../extended_scanner_parameters)** explians the use of the new pass-through APIs. 
 

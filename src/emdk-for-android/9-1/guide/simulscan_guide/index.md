@@ -2,7 +2,7 @@
 title: "SimulScan API programmer's guide"
 layout: guide.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 > **`IMPORTANT:`** Support for SimulScan features has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later).

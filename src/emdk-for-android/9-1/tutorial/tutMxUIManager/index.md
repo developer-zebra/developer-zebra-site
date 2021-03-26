@@ -2,7 +2,7 @@
 title: Configure Clipboard using MX UI Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 ## Overview

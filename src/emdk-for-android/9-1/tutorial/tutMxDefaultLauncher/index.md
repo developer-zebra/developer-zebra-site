@@ -2,7 +2,7 @@
 title: Set Default Launcher with App Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 ## Overview

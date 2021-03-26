@@ -5,7 +5,7 @@ insert:
 layout: guide.html
 redirect_url: /emdk-for-android/9-0/guide/about
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 menu:
   title: EMDK For Android 6.9
   img: /emdk-for-android/images/logo.png

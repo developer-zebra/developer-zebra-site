@@ -11,7 +11,7 @@ devices:
   - Supported on all Zebra Android devices
 layout: sample.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 ## Overview

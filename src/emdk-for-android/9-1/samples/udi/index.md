@@ -28,7 +28,7 @@ screenshots:
   - 5.png
 layout: sample.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 > **`IMPORTANT:`** Support for Unique Device Identifier (UDI) barcodes has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later). 

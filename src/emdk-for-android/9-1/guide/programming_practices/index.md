@@ -2,7 +2,7 @@
 title: EMDK for Android Programming Practices
 layout: guide.html
 product: EMDK For Android
-productversion: '9.0'
+productversion: '9.1'
 ---
 
 ##### Also see [Android Memory Considerations For Developers](https://developer.zebra.com/community/home/blog/2018/08/21/android-memory-considerations-for-developers), an article from Zebra software engineering that provides memory allocation and management advice.

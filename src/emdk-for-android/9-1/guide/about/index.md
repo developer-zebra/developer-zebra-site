@@ -70,6 +70,12 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ## Version History
 
+### New in v9.0
+
+**EMDK for Android versions 9.0 is functionally equivalent to and interchangeable with versions 7.6 and 8.0; any of these desktop versions can target any of these device versions**. Zebra publishes identical documentation for these versions to help avoid confusion when it's possible that identical EMDK software could be found with different version numbers on different devices. For example, devices built on Zebra's SDM660 platform can contain either EMDK-A 7.6 or EMDK-A 8.0.
+
+-----
+
 ### Added in v8.0
 
 * **Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 

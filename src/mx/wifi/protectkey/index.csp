@@ -8,7 +8,7 @@ devicetype: A,B
 parm:
   pivotal: Yes
   presentif: The Network Action is "Add" and the Security Mode is "Personal"
-  name: KeyType
+  name: ProtectKey
   type: string
 ---
 

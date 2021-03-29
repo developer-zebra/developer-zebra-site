@@ -4,6 +4,7 @@ title: Use DHCP (checkbox)
 type: list
 mx: "4.4"
 order: 41
+parm:
   presentif: The Network Action is "Add" 
   name: UseDHCP
   type: list

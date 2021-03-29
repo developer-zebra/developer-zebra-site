@@ -8,7 +8,7 @@ devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"
-  name: Hotspotband
+  name: HotspotBand
   type: list
   list:
     - code: 0

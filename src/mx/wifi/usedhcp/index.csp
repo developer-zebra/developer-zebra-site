@@ -1,9 +1,10 @@
 ---
 csp: wifi
 title: Use DHCP (checkbox)
-type: list
-mx: "4.4"
+type: parm
 order: 41
+mx: "4.4"
+devicetype: A,B
 parm:
   presentif: The Network Action is "Add" 
   name: UseDHCP
@@ -21,4 +22,4 @@ parm:
       description: Allows IP address settings to be configured manually. 
 ---
 
-Controls whether the device obtains its IP settings automatically using DHCP or manually by an administrator. When disabled (value=0), the device IP addresses those for the default gateway, subnet mask and at least one DNS server must be specified using the relevant parameters below. 
+Controls whether the device obtains its IP settings automatically using DHCP or manually by an administrator. When disabled (value=0), IP addresses for the default gateway, subnet mask and at least one DNS server must be specified using the relevant parameters below. 

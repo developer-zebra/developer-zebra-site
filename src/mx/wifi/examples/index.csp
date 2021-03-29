@@ -479,30 +479,5 @@ With a password:
 
 <br>
 
-#### Adding an Enterprise Network with WEP:
 
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="Wi-Fi" version="4.4" >
-			<parm name="UseRegulatory" value="0"/>
-			<parm name="UseDiagnosticOptions" value="0"/>
-			<parm name="UseAdvancedOptions" value="0"/>
-			<parm name="NetworkAction" value="Add"/>
-			<characteristic type="network-profile">
-				<parm name="SSID" value="Zebra"/>
-				<parm name="SecurityMode" value="2"/>
-				<parm name="WPAMode" value="4"/>
-				<parm name="Authentication" value="1"/>
-				<characteristic type="auth-details">
-					<characteristic type="encryption-details">
-						<parm name="EncryptionWEP" value="1"/>
-					</characteristic>
-					<parm name="OptionalServerCertificate" value="serverCertName"/>
-					<parm name="MandatoryClientCertificate" value="clientCertName"/>
-				</characteristic>
-				<parm name="UseDHCP" value="1"/>
-				<parm name="UseProxy" value="0"/>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
 

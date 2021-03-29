@@ -20,15 +20,16 @@ parm:
       mx: "6.1"
       devicetype: A,B
       name: Enable
-      description: Causes passwords stored on the device to be encrypted. 
+      description: Prevents Passwords stored on the device from being read by apps as clear text. 
     - code: 0
       mx: "6.1"
       devicetype: A,B
       name: Disable
-      description: Disables encryption for passwords stored on the device. 
+      description: Allows Passwords stored on the device to be read by apps as clear text.
 ---
-Controls whether the Wi-Fi Password stored on the device is encrypted, thereby preventing access to the clear-text Password on the device by any application or malicious exploit. 
 
->**Note**: Enabling this feature **prevents the Google Mobile Service (GMS) backup service from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device backup systems.
+Controls whether Wi-Fi Passwords stored on the device (which are always encrypted) can be read by apps as clear text. **Enable this parameter to prevent apps from reading stored Passwords as clear text**.
+
+>**Note**: Enabling this feature **prevents the Google Mobile Service (GMS) backup service from successfully restoring Wi-Fi settings to a device**, and might effect the operation other device-backup systems.
 
 The Password combines with an Identity to form an authentication credential for gaining access to a network. Authentication is required only when "Enterprise" is the selected Security Mode. All authentication types require a Password except EAP-TLS, which uses a client certificate. 

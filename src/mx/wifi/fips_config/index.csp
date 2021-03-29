@@ -5,7 +5,7 @@ type: parm
 order: 65
 mx: "8.2"
 devicetype: A
-info: Supported only on MPA3-platform devices. Not supported on TC70 QC GA1/GA2, TC75 GA or TC55 GA devices running Android KitKat. 
+info: Supported only on MPA3-platform devices. 
 parm:
   pivotal: No
   name: FIPS_Config
@@ -32,6 +32,6 @@ Used to enable/disable Federal Information Processing Standards (FIPS), a crypto
 
 **Important: Attempts to use this parameter on a device that doesn't support it returns a value of "0" or "99" (depending on the MX version) in the relevant section of the Result XML file**.
 
-<!-- 3/24/21- Supported only on MPA3-platform (legacy) devices, per eng. 
+<!-- 3/24/21- TUT-49471 Supported only on MPA3-platform (legacy) devices, per eng. 
 Removed from desc: Not supported on TC70 QC GA1/GA2, TC75 GA or TC55 GA devices running Android KitKat. 
 --> 

@@ -50,8 +50,8 @@ parm:
     - code: 11
       mx: "4.2"
       devicetype: A,B
-      name: WPA/WPA2
-      description: This indicates that the network requires authentication using the Wi-Fi Protected Access (WPA) protocol. WPA performs encryption using the Temporal Key Integrity Protocol, and a TKIP-compatible key must be specified. WPA2 supports encryption using TKIP (and is therefore backward-compatibile with WPA) and the more secure Advanced Encryption Standard (AES) algorithm.
+      name: EAP-FAST-MSCHAPV2
+      description: This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422).
     - code: 13
       mx: "4.2"
       devicetype: A,B

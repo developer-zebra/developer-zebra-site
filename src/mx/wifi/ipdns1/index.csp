@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Primary DNS
 type: parm
-order: 540
+order: 390
 mx: "4.2"
 devicetype: A,B
 parm:

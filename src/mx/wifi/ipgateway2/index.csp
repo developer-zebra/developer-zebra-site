@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Secondary Default Gateway
 type: parm
-order: 530
+order: 388
 mx: "4.2"
 devicetype: A,B
 parm:

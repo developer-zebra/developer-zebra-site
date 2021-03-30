@@ -28,17 +28,17 @@ Controls whether Wi-Fi hotspot settings can be configured on the device.
 #### Device Support
 **Hotspot functionality is supported only on the following Zebra devices running Android 6.x Marshmallow or later**: 
 
-* EC55
-* ET55
-* ET56
-* L10
-* MC2700&#42;
-* TC26&#42;
-* TC56
-* TC57
-* TC57X
-* TC75x
-* TC77
+* **EC55**
+* **ET55**
+* **ET56**
+* **L10**
+* **MC2700**&#42;
+* **TC26**&#42;
+* **TC56**
+* **TC57**
+* **TC57X**
+* **TC75x**
+* **TC77**
 
 _&#42;[MDNA Enterprise license required](/licensing)_
 

@@ -16,8 +16,7 @@ Used to designate channels in the 2.4GHz band for use by the device. While chann
 
 **Parm value input rules**: 
 
-* String from 0&ndash;64 characters
- containing a set of valid channels
+* String from 0&ndash;64 characters containing a set of valid channels
 * Multiple values must be separated by commas (i.e. "1,6,11,14")
 * Also accepts ranges when specified with a hyphen (-) (i.e. "1,7-10")
 

@@ -23,7 +23,24 @@ parm:
       description: Allows Wi-Fi hotspot settings to be configured.
 ---
 
-Controls whether Wi-Fi hotspot settings can be configured on the device. **Hotspot functionality is supported only on Zebra ET55, TC56 and TC75x devices running Android 6.x Marshmallow or higher**. 
+Controls whether Wi-Fi hotspot settings can be configured on the device.
+
+#### Device Support
+**Hotspot functionality is supported only on the following Zebra devices running Android 6.x Marshmallow or later**: 
+
+* EC55
+* ET55
+* ET56
+* L10
+* MC2700&#42;
+* TC26&#42;
+* TC56
+* TC57
+* TC57X
+* TC75x
+* TC77
+
+_&#42;[MDNA Enterprise license required](/licensing)_
 
 <!-- 
 8/21/18- supported-device change (ET50 removed; TC75x added, Android ver. changed from 5L to 6M) per eng. 

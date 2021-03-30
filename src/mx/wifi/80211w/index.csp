@@ -5,7 +5,7 @@ type: parm
 order: 63
 mx: "4.3"
 devicetype: A
-info: For Zebra Professional-series devices NOT running the Oct. 2020 system update, this feature requires purchase of a Mobility DNA Enterprise License.
+info: Early releases of Zebra Professional-series devices running Android 10 required purchase of a Mobility DNA Enterprise License to use this feature. The Oct. 2020 (or later) system update removes this requirement. 
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

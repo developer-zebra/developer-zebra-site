@@ -7,12 +7,12 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: The Network Action is any option other than "Do Nothing", "Disable All Existing Networks", or "Remove All Existing Networks"
+  presentif: The Network Action is NOT "Do Nothing" or "Disable All Existing Networks" or "Remove All Existing Networks"
   name: SSID
   type: string
 ---
 
-This is the SSID name of the network, which is the primary mechanism used to identify a Wi-Fi network and is used to identify the Wi-Fi network profile to be acted on. Therefore, any Network Action that is used to affect a single profile need to enter the SSID to select the desired profile.
+Used to enter the SSID name of the network on which to perform a Network Action. The SSID is the primary mechanism used to identify a Wi-Fi network and the Wi-Fi network profile to be acted upon.
 
 **Parm value input rules**: 
 

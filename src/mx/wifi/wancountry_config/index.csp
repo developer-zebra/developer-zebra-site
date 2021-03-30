@@ -2,7 +2,7 @@
 csp: wifi
 title: WAN Country Enable/Disable
 type: parm
-order: 85
+order: 245
 mx: "8.2"
 devicetype: A
 info: Supported on WAN-enabled devices only. Not supported on TC70 QC GA1/GA2 running Android KitKat, or MPA3 RevB- or RevC-based devices running Android Jelly Bean. 

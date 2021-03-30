@@ -2,7 +2,7 @@
 csp: wifi
 title: PreAuth Enable/Disable
 type: parm
-order: 80
+order: 135
 mx: "8.2"
 devicetype: A
 info: Not supported on TC70 QC GA1/GA2 or TC75 GA devices running Android KitKat. 

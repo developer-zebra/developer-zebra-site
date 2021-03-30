@@ -2,7 +2,7 @@
 csp: wifi
 title: PMKID Enable/Disable
 type: parm
-order: 78
+order: 125
 mx: "8.2"
 devicetype: A
 parm:

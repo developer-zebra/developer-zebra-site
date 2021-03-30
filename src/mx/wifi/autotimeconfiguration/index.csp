@@ -2,7 +2,7 @@
 csp: wifi
 title: Auto-time Enable/Disable
 type: parm
-order: 57
+order: 555
 mx: "8.2"
 devicetype: A
 parm:

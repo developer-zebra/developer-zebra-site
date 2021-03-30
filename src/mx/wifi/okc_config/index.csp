@@ -2,7 +2,7 @@
 csp: wifi
 title: OKC Enable/Disable
 type: parm
-order: 76
+order: 115
 mx: "8.2"
 devicetype: A,B
 parm:

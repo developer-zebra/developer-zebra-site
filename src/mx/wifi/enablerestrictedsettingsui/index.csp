@@ -2,7 +2,7 @@
 csp: wifi
 title: Enable Restricted Settings UI
 type: parm
-order: 61
+order: 165
 mx: "4.2"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

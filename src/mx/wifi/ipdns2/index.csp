@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Secondary DNS
 type: parm
-order: 45
+order: 545
 mx: "4.2"
 devicetype: A,B
 parm:

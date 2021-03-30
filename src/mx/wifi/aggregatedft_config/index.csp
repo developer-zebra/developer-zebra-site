@@ -2,7 +2,7 @@
 csp: wifi
 title: Aggregated FT Config Enable/Disable
 type: parm
-order: 55
+order: 205
 mx: "8.2"
 devicetype: A
 parm:

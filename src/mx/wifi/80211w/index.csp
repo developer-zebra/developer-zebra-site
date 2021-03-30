@@ -2,7 +2,7 @@
 csp: wifi
 title: 802.11w - Management Frame Protection Mode
 type: parm
-order: 63
+order: 180
 mx: "4.3"
 devicetype: A
 info: Early releases of Zebra Professional-series devices running Android 10 required purchase of a Mobility DNA Enterprise License to use this feature. The Oct. 2020 (or later) system update removes this requirement. 
@@ -16,23 +16,28 @@ parm:
       mx: "4.3"
       devicetype: A
       name: No MFP
+      description: Applies no Management Frame Protection. 
     - code: 1
       mx: "4.3"
       devicetype: A
       name: Capable
+      description: Allows MFP-capable and non-capable clients to join the network. 
     - code: 2
       mx: "4.3"
       devicetype: A
       name: Mandatory
+      description: Allows only MFP-capable clients to join the network.
     - code: 3
       mx: "4.3"
       devicetype: A
       name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 99
       mx: "6.2"
       devicetype: A
       name: Unsupported
+      description: 
 ---
-Used to enter the Management Frame Protection Mode from the values in the table below. _**Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_.
+Used to enter the Management Frame Protection mode from the values in the table below. _**Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_.
 
 **Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**. 

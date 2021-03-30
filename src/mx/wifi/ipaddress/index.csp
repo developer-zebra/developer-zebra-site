@@ -2,7 +2,7 @@
 csp: wifi
 title: Set IP Address
 type: parm
-order: 42
+order: 520
 mx: "4.2"
 devicetype: A,B
 parm:

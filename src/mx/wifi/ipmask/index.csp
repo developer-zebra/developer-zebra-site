@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Subnet Mask
 type: parm
-order: 44
+order: 535
 mx: "4.2"
 devicetype: A,B
 parm:

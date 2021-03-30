@@ -2,7 +2,7 @@
 csp: wifi
 title: Key Type 
 type: parm
-order: 36
+order: 345
 mx: "4.2"
 devicetype: A,B
 parm:

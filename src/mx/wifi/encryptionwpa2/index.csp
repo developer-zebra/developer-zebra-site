@@ -2,7 +2,7 @@
 csp: wifi
 title: WPA2 Encryption Type 
 type: parm
-order: 33
+order: 335
 mx: "4.2"
 devicetype: A,B
 parm:

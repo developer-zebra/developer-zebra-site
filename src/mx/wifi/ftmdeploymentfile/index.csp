@@ -2,7 +2,7 @@
 csp: wifi
 title: FTM Deployment File 
 type: parm
-order: 114
+order: 635
 mx: "10.2"
 apilevel: "29"
 devicetype: A

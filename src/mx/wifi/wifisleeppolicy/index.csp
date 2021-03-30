@@ -2,7 +2,7 @@
 csp: wifi
 title: Wi-Fi Sleep Policy 
 type: parm
-order: 3
+order: 15
 mx: "4.2"
 devicetype: A,B
 info: This parameter cannot be configured in devices running Android 8.x and higher; Oreo locks the Wi-Fi radio into the "AlwaysOn" setting.

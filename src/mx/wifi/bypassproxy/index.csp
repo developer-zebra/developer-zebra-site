@@ -2,7 +2,7 @@
 csp: wifi
 title: Bypass Proxy
 type: parm
-order: 48
+order: 405
 mx: "4.2"
 devicetype: A,B
 parm:

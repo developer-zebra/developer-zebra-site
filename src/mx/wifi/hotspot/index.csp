@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot Enable/Disable 
 type: parm
-order: 71
+order: 460
 mx: "6.3"
 devicetype: A,B
 info: Applies to specific WWAN-enabled devices only. For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.  

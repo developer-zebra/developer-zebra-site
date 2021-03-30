@@ -2,7 +2,7 @@
 csp: wifi
 title: Networks 'Available' Notification 
 type: parm
-order: 7
+order: 20
 mx: "4.2"
 devicetype: A,B
 parm:

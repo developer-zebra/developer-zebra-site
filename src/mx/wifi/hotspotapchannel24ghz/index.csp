@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Hotspot 2.4GHz Channel 
 type: parm
-order: 76
+order: 425
 mx: "6.3"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

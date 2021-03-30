@@ -2,7 +2,7 @@
 csp: wifi
 title: Advanced Logging (checkbox)
 type: parm
-order: 52
+order: 150
 mx: "4.2"
 devicetype: A,B
 parm:

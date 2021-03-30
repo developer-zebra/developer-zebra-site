@@ -2,7 +2,7 @@
 csp: wifi
 title: 802.11ac
 type: parm
-order: 7
+order: 260
 mx: "7.0"
 devicetype: A
 info: Enabling 802.11ac also enables the 802.11n protocol on the device.

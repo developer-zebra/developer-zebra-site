@@ -2,7 +2,7 @@
 csp: wifi
 title: Country 
 type: parm
-order: 6
+order: 40
 mx: "4.2"
 devicetype: A,B
 parm:

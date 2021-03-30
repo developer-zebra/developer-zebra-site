@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Subtype 
 type: parm
-order: 97
+order: 580
 mx: "6.3"
 devicetype: A
 parm:

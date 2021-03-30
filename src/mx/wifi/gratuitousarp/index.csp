@@ -2,7 +2,7 @@
 csp: wifi
 title: Gratuitous ARP Enable/Disable
 type: parm
-order: 72
+order: 290
 mx: "8.4"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

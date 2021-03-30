@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail "11ac" Data Rates 
 type: parm
-order: 93
+order: 605
 mx: "6.3"
 devicetype: A
 parm:

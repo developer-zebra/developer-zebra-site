@@ -2,7 +2,7 @@
 csp: wifi
 title: WPA Mode Enterprise
 type: parm
-order: 23
+order: 365
 mx: "10.2"
 devicetype: A,B
 parm:

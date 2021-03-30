@@ -2,7 +2,7 @@
 csp: wifi
 title: Zebra Location Service Enable/Disable 
 type: parm
-order: 111
+order: 625
 mx: "10.2"
 apilevel: "29"
 devicetype: A

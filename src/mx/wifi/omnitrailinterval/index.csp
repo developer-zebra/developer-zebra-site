@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Interval
 type: parm
-order: 101
+order: 575
 mx: "6.3"
 devicetype: A
 parm:

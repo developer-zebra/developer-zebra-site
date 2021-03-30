@@ -2,7 +2,7 @@
 csp: wifi
 title: Mandatory Server CA Cert Name 
 type: parm
-order: 30
+order: 380
 mx: "4.2"
 devicetype: A,B
 parm:

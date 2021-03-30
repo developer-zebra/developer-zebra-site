@@ -2,7 +2,7 @@
 csp: wifi
 title: FTRIC (checkbox)
 type: parm
-order: 70
+order: 100
 mx: "4.2"
 devicetype: A
 info: Not supported on TC70 QC GA1/GA2, TC75 GA or TC55 GA devices running Android KitKat. 

@@ -2,7 +2,7 @@
 csp: wifi
 title: WLAN Power Save Mode 
 type: parm
-order: 57
+order: 145
 mx: "4.3"
 devicetype: A
 info: This feature is deprecated. Zebra recommends avoiding the use of this feature; it will be removed from a future version. 

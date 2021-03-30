@@ -2,7 +2,7 @@
 csp: wifi
 title: Use Diagnostic Options (checkbox) 
 type: parm
-order: 10
+order: 50
 mx: "4.4"
 devicetype: A,B
 parm:

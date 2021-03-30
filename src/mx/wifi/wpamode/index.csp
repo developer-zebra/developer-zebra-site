@@ -2,7 +2,7 @@
 csp: wifi
 title: WPA Mode
 type: parm
-order: 23
+order: 320
 mx: "4.2"
 devicetype: A,B
 parm:

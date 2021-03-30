@@ -2,7 +2,7 @@
 csp: wifi
 title: Optional Client Certificate Name
 type: parm
-order: 31
+order: 500
 mx: "4.2"
 devicetype: A,B
 parm:

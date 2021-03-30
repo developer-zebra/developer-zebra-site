@@ -2,7 +2,7 @@
 csp: wifi
 title: Security Mode
 type: parm
-order: 22
+order: 315
 mx: "4.2"
 devicetype: A,B
 parm:

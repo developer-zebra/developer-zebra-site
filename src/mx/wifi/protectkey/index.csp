@@ -2,7 +2,7 @@
 csp: wifi
 title: Protect Key 
 type: parm
-order: 37
+order: 350
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: FIPS Enable/Disable
 type: parm
-order: 65
+order: 160
 mx: "8.2"
 devicetype: A
 info: Supported only on MPA3-platform devices. 

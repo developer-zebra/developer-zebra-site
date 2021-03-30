@@ -2,7 +2,7 @@
 csp: wifi
 title: Subnet Roam Enable/Disable
 type: parm
-order: 83
+order: 235
 mx: "8.2"
 devicetype: A
 info: Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean.

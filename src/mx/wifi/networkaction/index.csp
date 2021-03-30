@@ -2,7 +2,7 @@
 csp: wifi
 title: Network Action 
 type: parm
-order: 20
+order: 305
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: Target OS
 type: parm
-order: 1
+order: 5
 mx: "4.2"
 devicetype: A,B
 parm:

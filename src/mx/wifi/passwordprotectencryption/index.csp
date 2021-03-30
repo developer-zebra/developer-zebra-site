@@ -2,7 +2,7 @@
 csp: wifi
 title: Password Protect Encryption 
 type: parm
-order: 29
+order: 250
 mx: "6.1"
 devicetype: A,B
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

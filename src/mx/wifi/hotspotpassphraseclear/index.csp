@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot Passphrase Clear
 type: parm
-order: 81
+order: 450
 mx: "6.3"
 devicetype: A,B
 info: WWAN-enabled devices only 

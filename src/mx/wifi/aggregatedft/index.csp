@@ -2,7 +2,7 @@
 csp: wifi
 title: AggregatedFT (checkbox)
 type: parm
-order: 54
+order: 200
 mx: "4.3"
 devicetype: A
 parm:

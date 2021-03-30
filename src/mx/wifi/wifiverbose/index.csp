@@ -2,7 +2,7 @@
 csp: wifi
 title: Verbose Logging Enable/Disable
 type: parm
-order: 86
+order: 25
 mx: "8.2"
 devicetype: A
 parm:

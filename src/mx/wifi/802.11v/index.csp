@@ -2,7 +2,7 @@
 csp: wifi
 title: 802.11v
 type: parm
-order: 7
+order: 270
 mx: "7.1"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

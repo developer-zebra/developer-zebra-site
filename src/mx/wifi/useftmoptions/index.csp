@@ -2,7 +2,7 @@
 csp: wifi
 title: Use FTM Options (checkbox) 
 type: parm
-order: 110
+order: 620
 mx: "10.2"
 apilevel: "29"
 devicetype: A

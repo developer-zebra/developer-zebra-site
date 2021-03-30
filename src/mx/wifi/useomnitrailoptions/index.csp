@@ -2,7 +2,7 @@
 csp: wifi
 title: Use OmniTrail Options (checkbox)
 type: parm
-order: 84
+order: 560
 mx: "6.3"
 devicetype: A
 parm:

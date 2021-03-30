@@ -2,7 +2,7 @@
 csp: wifi
 title: Protect Hotspot Passphrases (checkbox)
 type: parm
-order: 82
+order: 445
 mx: "6.3"
 devicetype: A
 parm:

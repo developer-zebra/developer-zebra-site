@@ -2,7 +2,7 @@
 csp: wifi
 title: Captive Portal Detection
 type: parm
-order: 101
+order: 255
 mx: "7.0"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

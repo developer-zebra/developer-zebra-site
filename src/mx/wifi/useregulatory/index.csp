@@ -2,7 +2,7 @@
 csp: wifi
 title: Country Selection Auto/Manual (checkbox) 
 type: parm
-order: 5
+order: 35
 mx: "4.2"
 devicetype: A,B
 parm:

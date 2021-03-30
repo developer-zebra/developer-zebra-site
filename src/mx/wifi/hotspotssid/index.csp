@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot SSID
 type: parm
-order: 72
+order: 415
 mx: "6.3"
 devicetype: A,B
 info: WWAN-enabled devices only

@@ -2,7 +2,7 @@
 csp: wifi
 title: Optional Server CA Cert Name 
 type: parm
-order: 30
+order: 375
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Enable/Disable 
 type: parm
-order: 85
+order: 565
 mx: "6.3"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: Proxy PAC File URL
 type: parm
-order: 48
+order: 395
 mx: "5.0"
 devicetype: A,B
 parm:

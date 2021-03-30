@@ -2,7 +2,7 @@
 csp: wifi
 title: Use DHCP (checkbox)
 type: parm
-order: 41
+order: 385
 mx: "4.4"
 devicetype: A,B
 parm:

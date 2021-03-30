@@ -2,7 +2,7 @@
 csp: wifi
 title: OKC (checkbox)
 type: parm
-order: 75
+order: 110
 mx: "4.2"
 devicetype: A,B
 parm:

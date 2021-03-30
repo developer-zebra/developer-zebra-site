@@ -2,7 +2,7 @@
 csp: wifi
 title: PreAuth (checkbox)
 type: parm
-order: 79
+order: 130
 mx: "4.2"
 devicetype: A
 info: Not supported on TC70 QC GA1/GA2 or TC75 GA devices running Android KitKat. 

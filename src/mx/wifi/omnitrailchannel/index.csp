@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Channel
 type: parm
-order: 99
+order: 615
 mx: "6.3"
 devicetype: A
 parm:

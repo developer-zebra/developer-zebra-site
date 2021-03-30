@@ -2,7 +2,7 @@
 csp: wifi
 title: Subnet Roam (checkbox)
 type: parm
-order: 82
+order: 230
 mx: "4.4"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing. Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean.

@@ -2,7 +2,7 @@
 csp: wifi
 title: CHD Enable/Disable
 type: parm
-order: 62
+order: 225
 mx: "8.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: Set Hotspot 5GHz Channel 
 type: parm
-order: 77
+order: 430
 mx: "6.3"
 devicetype: A
 info: The 5GHz band is not supported on the Zebra ET56. For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

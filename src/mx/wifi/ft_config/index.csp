@@ -2,7 +2,7 @@
 csp: wifi
 title: Fast Transition Enable/Disable
 type: parm
-order: 67
+order: 95
 mx: "8.2"
 devicetype: A,B
 info: Not supported on TC70 QC GA1 devices running Android KitKat. 

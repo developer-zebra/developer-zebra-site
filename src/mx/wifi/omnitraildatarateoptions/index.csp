@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Data-Rate Options
 type: parm
-order: 90
+order: 595
 mx: "6.3"
 devicetype: A
 parm:

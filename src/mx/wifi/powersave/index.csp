@@ -2,7 +2,7 @@
 csp: wifi
 title: Power Save Mode 
 type: parm
-order: 56
+order: 140
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: WEP Encryption Type 
 type: parm
-order: 35
+order: 340
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: FTM AP Location 
 type: parm
-order: 113
+order: 630
 mx: "10.2"
 apilevel: "29"
 devicetype: A

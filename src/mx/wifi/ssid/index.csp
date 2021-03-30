@@ -2,7 +2,7 @@
 csp: wifi
 title: SSID 
 type: parm
-order: 21
+order: 310
 mx: "4.2"
 devicetype: A,B
 parm:

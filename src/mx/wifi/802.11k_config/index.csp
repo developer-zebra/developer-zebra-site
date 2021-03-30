@@ -2,7 +2,7 @@
 csp: wifi
 title: 802.11k Enable/Disable
 type: parm
-order: 51
+order: 175
 mx: "8.2"
 devicetype: A
 parm:

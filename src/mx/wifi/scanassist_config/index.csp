@@ -2,7 +2,7 @@
 csp: wifi
 title: ScanAssist Enable/Disable
 type: parm
-order: 81
+order: 215
 mx: "8.2"
 devicetype: A
 parm:

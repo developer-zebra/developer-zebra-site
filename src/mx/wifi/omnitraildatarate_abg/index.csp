@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail "abg" Data Rates 
 type: parm
-order: 92
+order: 600
 mx: "6.3"
 devicetype: A
 parm:

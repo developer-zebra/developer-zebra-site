@@ -2,7 +2,7 @@
 csp: wifi
 title: ScanAssist
 type: parm
-order: 66
+order: 210
 mx: "4.3"
 devicetype: A
 parm:

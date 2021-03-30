@@ -2,7 +2,7 @@
 csp: wifi
 title: Hotspot Security Mode 
 type: parm
-order: 80
+order: 435
 mx: "6.3"
 devicetype: A,B
 info: WWAN-enabled devices only

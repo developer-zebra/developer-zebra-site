@@ -2,7 +2,7 @@
 csp: 
 title: WLAN Extended Enable/Disable
 type: parm
-order: 87
+order: 300
 mx: "8.4"
 devicetype: A
 parm:

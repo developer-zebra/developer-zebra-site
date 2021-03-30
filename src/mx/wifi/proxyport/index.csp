@@ -2,7 +2,7 @@
 csp: wifi
 title: Proxy Port
 type: parm
-order: 49
+order: 400
 mx: "4.2"
 devicetype: A,B
 parm:

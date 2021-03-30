@@ -2,7 +2,7 @@
 csp: wifi
 title: RF Band Selection
 type: parm
-order: 7
+order: 45
 mx: "4.2"
 devicetype: A,B
 parm:

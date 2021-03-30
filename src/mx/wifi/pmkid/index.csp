@@ -2,7 +2,7 @@
 csp: wifi
 title: PMKID (checkbox)
 type: parm
-order: 77
+order: 120
 mx: "4.2"
 devicetype: A,B
 parm:

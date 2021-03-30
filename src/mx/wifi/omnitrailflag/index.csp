@@ -2,7 +2,7 @@
 csp: wifi
 title: OmniTrail Flag 
 type: parm
-order: 100
+order: 590
 mx: "6.3"
 devicetype: A
 parm:

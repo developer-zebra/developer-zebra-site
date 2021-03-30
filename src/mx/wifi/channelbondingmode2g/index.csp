@@ -2,7 +2,7 @@
 csp: wifi
 title: 2g Channel Bonding Enable/Disable
 type: parm
-order: 58
+order: 295
 mx: "8.2"
 devicetype: A
 parm:

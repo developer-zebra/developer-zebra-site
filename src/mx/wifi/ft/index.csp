@@ -2,7 +2,7 @@
 csp: wifi
 title: Fast Transition (checkbox)
 type: parm
-order: 66
+order: 90
 mx: "4.2"
 devicetype: A,B
 info: Not supported on TC70 QC GA1 devices running Android KitKat. 

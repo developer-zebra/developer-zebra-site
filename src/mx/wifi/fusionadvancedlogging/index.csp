@@ -2,7 +2,7 @@
 csp: wifi
 title: Fusion Advanced Logging (checkbox)
 type: parm
-order: 11
+order: 55
 mx: "4.4"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: FTRIC Enable/Disable
 type: parm
-order: 71
+order: 105
 mx: "8.2"
 devicetype: A
 parm:

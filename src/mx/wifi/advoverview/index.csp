@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: 
 title: Advanced Options
 type: text
 order: 49

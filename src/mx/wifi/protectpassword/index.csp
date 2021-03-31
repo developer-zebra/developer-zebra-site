@@ -2,7 +2,7 @@
 csp: wifi
 title: Protect Password (checkbox)
 type: parm
-order: 360
+order: 372
 mx: "4.2"
 devicetype: A,B
 parm:

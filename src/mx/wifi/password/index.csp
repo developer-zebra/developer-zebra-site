@@ -2,7 +2,7 @@
 csp: wifi
 title: Password
 type: parm
-order: 490
+order: 373
 mx: "4.2"
 devicetype: A,B
 parm:

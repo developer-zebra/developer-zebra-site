@@ -2,7 +2,7 @@
 csp: wifi
 title: Set 5.0GHz Channels 
 type: parm
-order: 480
+order: 47
 mx: "4.2"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

@@ -2,7 +2,7 @@
 csp: wifi
 title: Mandatory Client Certificate Name
 type: parm
-order: 505
+order: 382
 mx: "4.2"
 devicetype: A,B
 parm:

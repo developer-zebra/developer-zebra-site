@@ -2,7 +2,7 @@
 csp: wifi
 title: Advanced Logging Enable/Disable
 type: parm
-order: 53
+order: 153
 mx: "8.2"
 devicetype: A
 parm:

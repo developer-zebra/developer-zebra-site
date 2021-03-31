@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Set Hotspot 2.4GHz Channel 
+title: Set Hotspot 2.4GHz AP Channel 
 type: parm
 order: 425
 mx: "6.3"
@@ -68,5 +68,5 @@ parm:
       name: 11
       description: Selects channel 11 on the 2.4GHz band
 ---
-Used to set the Wi-Fi communication channel to be used by devices connecting to the device to its Wi-Fi hotspot on the 2.4GHz band. 
+Used to set the Wi-Fi communication channel to be used by devices connecting to the device as a Wi-Fi access point (AP) on the 2.4GHz band. 
 

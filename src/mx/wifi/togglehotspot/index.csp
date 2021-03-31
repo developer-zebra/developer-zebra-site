@@ -2,7 +2,7 @@
 csp: wifi
 title: Toggle Hotspot Enable/Disable 
 type: parm
-order: 440
+order: 445
 mx: "8.1"
 devicetype: A,B
 info: WWAN-enabled devices only 

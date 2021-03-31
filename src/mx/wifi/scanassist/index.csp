@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: ScanAssist
+title: ScanAssist 
 type: parm
 order: 210
 mx: "4.3"

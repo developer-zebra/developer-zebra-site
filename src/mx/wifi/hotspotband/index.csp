@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Hotspot RF Band 
+title: Hotspot AP Band 
 type: parm
 order: 420
 mx: "6.3"
@@ -23,4 +23,4 @@ parm:
       description: Enables the 5GHz band for hotspot communications.
 ---
 
-Used to enter which RF band(s) the device will use for 802.11 communications when configured as a Wi-Fi hotspot. This parameter is usually set automatically through negotiation with the Wi-Fi infrastructure. However, it might sometimes be desirable to limit Wi-Fi communications to certain bands, leaving other bands free for other purposes. 
+Used to enter which RF band(s) the device will use for 802.11 communications when configured as a Wi-Fi access point (AP). This parameter is usually set automatically through negotiation with the Wi-Fi infrastructure. However, it might sometimes be desirable to limit Wi-Fi communications to certain bands, leaving other bands free for other purposes. 

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: FTM AP Location 
+title: FTM AP Source Location 
 type: parm
 order: 627
 mx: "10.2"

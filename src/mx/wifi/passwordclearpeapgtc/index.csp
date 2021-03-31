@@ -9,7 +9,7 @@ info: For Zebra Professional-series devices, this feature requires purchase of a
 parm:
   presentif: The selected Authentication Code is "PEAP GTC" and Protect Password box is "Checked"
   pivotal: No
-  name: PasswordClearPEAPGTC
+  name: PasswordEncryptedPEAPGTC
   type: string
 ---
 

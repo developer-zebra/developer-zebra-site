@@ -2,7 +2,7 @@
 csp: wifi
 title: Hex Key 
 type: parm
-order: 510
+order: 407
 mx: "4.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: WEP Key Index 
 type: parm
-order: 515
+order: 408
 mx: "4.2"
 devicetype: A,B
 parm:

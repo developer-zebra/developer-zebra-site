@@ -2,7 +2,7 @@
 csp: wifi
 title: Authentication
 type: parm
-order: 485
+order: 406
 mx: "4.2"
 devicetype: A,B
 parm:

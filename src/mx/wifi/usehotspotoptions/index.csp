@@ -2,7 +2,7 @@
 csp: wifi
 title: Use Hotspot Options (checkbox)
 type: parm
-order: 410
+order: 411
 mx: "6.3"
 devicetype: A
 info: For Zebra Professional-series devices, this feature requires purchase of a Mobility DNA Enterprise License. See techdocs.zebra.com/licensing.

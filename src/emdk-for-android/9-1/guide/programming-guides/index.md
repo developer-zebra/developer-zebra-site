@@ -25,11 +25,6 @@ content-items:
     url: /emdk-for-android/9-1/guide/ec30_programming
   - type: section
     level: 4
-    title: Extended Scanner Parameters
-    text: A guide for setting and getting scanning parameters not yet implemented with the class hierarchy or those being added in future.
-    url: /emdk-for-android/9-1/guide/extended_scanner_parameters  
-  - type: section
-    level: 4
     title: General Programming Practices
     text: This guide contains various EMDK for Android programming tips.
     url: /emdk-for-android/9-1/guide/programming_practices
@@ -68,6 +63,11 @@ content-items:
     title: SAM API Programmer's Guide
     text: Understand how to use the Secure Access Module APIs to perform secure NFC transactions.
     url: /emdk-for-android/9-1/guide/samapiusage
+  - type: section
+    level: 4
+    title: Scanner Parameter Config API Guide
+    text: A guide for pass-through APIs that can be used to set and get scanner parameter configurations in scanning applications.
+    url: /emdk-for-android/9-1/guide/extended_scanner_parameters  
   - type: section
     level: 4
     title: SerialComm Programmer's Guide

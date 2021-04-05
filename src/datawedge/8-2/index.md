@@ -4,6 +4,13 @@ img: datawedge_logo.png
 layout: list-mx.html
 menu:
   title: DataWedge
+  img: datawedge_logo.png
+  languages:
+    - lang: jp,
+      img: /images/flags/img-flag-japan.png
+      urlFrom: datawedge
+      urlTo: datawedge/dw-jp
+      label: JP - 日本語
   items:
     - title: About
       url: /datawedge/8-2/guide/about

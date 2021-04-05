@@ -1229,6 +1229,81 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 <img style="height:350px" src="upc_params.png"/>
 <br>
 
+**Convert DataBar to UPC EAN -** This parameter only applies to GS1 DataBar Omnidirectional and GS1 DataBar Limited barcodes that are not decoded as part of a Composite barcode. Scan Enable Convert GS1 DataBar to UPC/EAN/JAN to strip the leading '010' from
+DataBar-14 and DataBar Limited symbols encoding a single zero as the first digit, and report the barcode as EAN-13. For barcodes beginning with between two and five zeros, this strips the leading '0100' and reports the barcode as UPC-A. The UPC-A Preamble option that transmits the system character and country code applies to converted barcodes. Note that neither the system character nor the check digit can be stripped.
+
+If enabled, converts DataBar barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
+
+**UPC Reduced Quiet Zone -** Enable/disable decoding UPC barcodes with reduced quiet zones, the area in front of and at the end of a barcode. Enabling this option increases the aggressiveness in decoding barcodes, resulting to increased decoding time and risk of misdecodes.
+
+**Bookland -** When enabled, select a Bookland Format from the list below.
+
+**Bookland Format -** When Bookland is enabled, permits selection of an option for Bookland data:
+
+- **Format ISBN-10 -** The scanner reports Bookland data starting with 978 in traditional 10-digit format with the special Bookland check digit for backward-compatibility. Data starting with 979 is not considered Bookland in this mode.
+
+- **Format ISBN-13 -** The scanner reports Bookland data (starting with either 978 or 979) as EAN-13 in 13-digit format to meet the 2007 ISBN-13 protocol.
+
+- **Convert GS1 To UPC EAN -** If this is set it converts GS1 barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled. A check in the checkbox indicates that the option is enabled.
+
+**Coupon -** Enable/Disable Coupon code decoding. To successfully decode any Coupon codes, all appropriate decoders must be enabled.
+
+**Coupon Report Mode -** Traditional coupon symbols are composed of two barcodes: UPC/EAN and Code 128. A new coupon symbol is composed of a single Data Expanded barcode. The new format offers more options for purchase values (up to $999.999) and supports complex discount offers as a second purchase requirement. An interim coupon symbol also exists that contain both types of barcodes: UPC/EAN and Databar Expanded. This format accommodates both retailers that do not recognize or use the additional information included in the new coupon symbol, as well as those who can process new coupon symbols.
+
+- **Old Coupon Report Mode -** Scanning an old coupon symbol reports both UPC and Code 128. Scanning an interim coupon symbol reports UPC. Scanning a new coupon symbol reports nothing (no decode).
+- **New Coupon Report Mode -** Scanning an old coupon symbol reports either UPC or Code 128. Scanning an interim coupon symbol or a new coupon symbol reports Databar Expanded.
+- **Both Coupon Report Modes -** Scanning an old coupon symbol reports both UPC and Code 128. Scanning an interim coupon symbol or a new coupon symbol reports Databar Expanded (default).
+
+**EAN Zero Extend -** If enabled, adds five leading zeros to decoded EAN-8 barcodes to make them compatible in length to EAN-13 barcodes.
+
+**Linear Decode -** Not in use. Deprecated.
+
+**Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20. Note that this flag is only considered if Supplemental Mode is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
+
+**Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application:
+
+- **Level 0 -** This setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN barcodes.
+
+- **Level 1 -** As barcode quality levels diminish, certain characters become prone to decode failures before others (i.e., 1, 2, 7, 8). If the scanner is decode failures poorly printed barcodes, and the decode failures are limited to these characters, select this security level.
+
+- **Level 2 -** If the scanner fails to decode poorly printed barcodes, and the decode failures are not limited to characters 1, 2, 7, and 8, select this security level.
+
+- **Level 3 -** If the scanner is still fails to decode, select this security level. Be advised, selecting this option is an extreme measure against decode failures for severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
+
+**Supplemental2 -** Enable/disable length 2 supplementals.
+
+**Supplemental5 -** Enable/disable length 5 supplementals.
+
+**Supplemental Mode -** Select one of the following:
+
+- **No Supplementals -** The scanner is presented with a UPC/EAN plus supplemental symbol, the scanner decodes UPC/EAN and ignores the supplemental characters.
+
+- **Supplemental Always -** The scanner decodes only UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
+
+- **Supplemental Auto -** The scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the barcode the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
+
+- **Supplemental Smart -** Enables smart supplementals. In this mode, the decoder returns the decoded value of the main block immediately unless it belongs to one of the following supplemental types: <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 378<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 379<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 977<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 978<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 979<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 414<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 419<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 434<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ 439<br>
+
+      If the barcode is preceded by one of the prefixes above, the image is searched more aggressively for a supplemental and attempts to scan it. If the supplemental scanning fails, only the main barcode is returned.
+
+- **Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN barcode not starting with 378 or 379. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
+
+- **Supplemental 978-979 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN barcode not starting with 978 or 979. Tries to scan the supplemental if present. If the supplemental scanning fails, only then the main barcode is returned.
+
+- **Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN barcode not starting with 414, 419, 434 or 439. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
+
+- **Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
+
+<!--
 **Convert DataBar to UPC EAN -** If enabled, converts DataBar barcodes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
 
 **UPC Reduced Quiet Zone -** Enable/disable decoding UPC barcodes with reduced quiet zones, the area in front of and at the end of a barcode. Enabling this option increases the aggressiveness in decoding barcodes, resulting to increased decoding time and risk of misdecodes.
@@ -1299,6 +1374,8 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 - **Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN barcode not starting with 414, 419, 434 or 439. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
 
 - **Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
+
+-->
 
 <!--
 **Random Check Digit -** Enables random weight check digit verification.

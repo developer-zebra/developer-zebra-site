@@ -27,6 +27,8 @@ This tutorial demonstrates how to use DataWedge to receive scanned barcode data 
 2. Create a profile and associate the app with the profile.
 3. Run the app and scan a barcode.
 
+> This sample application is only intended for educational purposes, demonstrating the use of DataWedge intent API(s). 
+
 This is the minimal code approach using a generic Android intent rather than DataWedge APIs.  To develop an app with finer control of DataWedge settings and data capture, refer to the [DataWedge API](../../api) guide and best practices in the [Get Started](../../gettingstarted) guide.
 
 

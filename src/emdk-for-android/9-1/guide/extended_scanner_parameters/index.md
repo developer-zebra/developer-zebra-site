@@ -9,7 +9,7 @@ productversion: '9.1'
 
 **This guide explains the use of scanner parameter configuration APIs**, interfaces introduced with EMDK-A 9.1 that allow for the setting and retrieval of scanning parameters using `Scanner.setParams()` and `Scanner.getParams()` methods. **Introduced with EMDK for Android 9.1**, these pass-through APIs can be used to set and get scanner parameter configurations in scanning applications. 
 
-> **Zebra strongly recommends using these APIs in favor of [ScannerConfig APIs](../../api), which are subject to possible deprecation**. Zebra will continue to enhance the supported parameter list below.
+> **Zebra strongly recommends using these APIs in favor of the [ScannerConfig class](../../api), which is deprecated and scheduled to be discontinued in 2022**. Zebra will continue to add to the parameters supported by the new APIs.
 
 **NOTE: This guide requires a basic knowledge of the use of EMDK-A scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
 * **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-android/latest/tutorial/tutBasicScanningAPI/)**

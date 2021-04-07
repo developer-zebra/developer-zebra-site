@@ -454,13 +454,20 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
             adb shell
             cd /storage/
 
+
+* **To avoid the requirement to retrieve and enter the unique USB storage number in the Stagenow profile**:
+ 1. Select USB as the media type in StageNow
+ 2. Mount the USB stick on the host PC. The workstation assigns a drive letter (usually "D:\") to the stick and copies the files from the host PC to the stick. 
+ 3. Finish creating the Profile and generate staging barcode(s) as usual. 
+ 4. When ready to stage a device, connect the USB stick to the target device and scan the barcode. The files are transferred from USB stick to the device as directed by the Profile. 
+
 -----
 
 ## Serverless Staging
 
 The staging profiles may have files that have to be downloaded from workstation to device which imposes dependency on the Stagenow FTP server. The files(.apk./.txt/.pfx./.bin etc) required for staging can be copied to USB/SDcard during the profile creation which then can be mounted to the device avoiding the dependency of the device to be able to connect to Stagenow FTP.
 
-Note: Pre-generated Staging profile `.bin` file also can be copied from a workstation to the required media source path using this method.
+Note: Pre-generated Staging profile `.bin` files also can be copied from a workstation to the required media source path using this method.
 
 1. Mount the sdcard/USB to the workstation.Then create Filemgr profile
 2. Select source access as File in the device file system

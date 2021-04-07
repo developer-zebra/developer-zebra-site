@@ -430,7 +430,19 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
  <img alt="image" style="height:350px" src="sn_usb_staging.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
- For SDM660-platform devices:
+ **For 8956-platform (and earlier) devices**:<br>
+ * The USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/`, 
+where `xxxx-xxxx` is an unique number assigned to each USB stick. To view this number, use the adb commands below after mounting the USB stick on a host PC:<br>
+
+        :::term
+        adb shell
+        cd /storage/
+
+ <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
+
+
  * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
  * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
 

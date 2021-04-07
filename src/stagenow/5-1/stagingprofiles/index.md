@@ -474,6 +474,11 @@ Note: Pre-generated Staging profile `.bin` files also can be copied from a works
 
 3. Once the Media type (USB/sd card)& mounted source is selected, click Ok in Local content source selector pop up
 
+<img alt="image" style="height:350px" src="sn_local_source_selector.png"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
+
+
 4. Source path gets auto-updated with Media type  identification number & Path as shown in the screen shot
 
 5. Once after Profile creation, Mount the media to the device.

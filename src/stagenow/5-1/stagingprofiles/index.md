@@ -418,34 +418,6 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
-#### `IMPORTANT NOTES:` 
-
-* **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
-* **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
-* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
-* A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
- * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
- * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
-
-* **If using a USB stick as the Source Access Method during Profile creation**:
-
-**For SDM660-platform devices**, the USB-based storage path (mount point) is preceded by `/storage/usbotg/`, as below: 
- <img alt="image" style="height:450px" src="sn_usb_staging.jpg"/>
-    _Click image to enlarge; ESC to cancel_.
-    <br> 
-
-**For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/`, where `xxxx-xxxx` is an unique number assigned to each USB stick, as below:<br>
-
- <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
-    _Click image to enlarge; ESC to cancel_.
-    <br>
-
-To view this unique number, mount the USB stick on a host PC and execute the following commands in a terminal window:
-
-            :::term
-            adb shell
-            cd /storage/
-
 **To <u>manually</u> stage a device from a file on the device**:
 
 1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
@@ -455,6 +427,55 @@ To view this unique number, mount the USB stick on a host PC and execute the fol
 <!-- 11/8/19- image file discovered to be missing
 <img alt="image" style="height:300px" src="sn_33_ui.png"/>
 -->
+
+#### Android SUW Bypass Notes
+* **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
+* **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
+* **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
+
+#### Staging from External Storage Notes
+* **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a host PC or server. 
+* **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
+* A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
+
+#### USB Staging Platform Notes
+* **If using a USB stick as the Source Access Method during Profile creation**:<br>
+ **For SDM660-platform devices**, the USB-based storage path (mount point) is preceded by `/storage/usbotg/`, as below: 
+ <img alt="image" style="height:450px" src="sn_usb_staging.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br> 
+ **For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/` as below, where `xxxx-xxxx` is an unique number assigned to each USB stick:<br>
+ <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
+    **To view this unique number**, mount the USB stick on the host PC and execute the following commands in a terminal window:<br>
+
+            :::term
+            adb shell
+            cd /storage/
+
+-----
+
+## Serverless Staging
+
+The staging profiles may have files that have to be downloaded from workstation to device which imposes dependency on the Stagenow FTP server. The files(.apk./.txt/.pfx./.bin etc) required for staging can be copied to USB/SDcard during the profile creation which then can be mounted to the device avoiding the dependency of the device to be able to connect to Stagenow FTP.
+
+Note: Pre-generated Staging profile `.bin` file also can be copied from a workstation to the required media source path using this method.
+
+1. Mount the sdcard/USB to the workstation.Then create Filemgr profile
+2. Select source access as File in the device file system
+
+3. Once the Media type (USB/sd card)& mounted source is selected, click Ok in Local content source selector pop up
+
+4. Source path gets auto-updated with Media type  identification number & Path as shown in the screen shot
+
+5. Once after Profile creation, Mount the media to the device.
+
+Below ways can be used:
+
+1. The barcode can be scanned to apply the staging contents.
+
+2. If staging Profile `.bin` file is selected from the above steps, GMS welcome screen is skipped and staging begins (`.bin` file is copied under stagenow folder during profile creation). 
 
 -----
 

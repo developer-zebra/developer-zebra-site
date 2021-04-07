@@ -418,34 +418,33 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
 3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
-##### `IMPORTANT NOTES:` 
+#### `IMPORTANT NOTES:` 
 
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
 * A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
-* **If using a USB stick as the Source Access Method during Profile creation**:<br>
- For SDM660-platform devices:
- * **The USB-based storage path (mount point) is preceded by `/storage/usbotg/`**, as below: 
- <img alt="image" style="height:350px" src="sn_usb_staging.jpg"/>
-    _Click image to enlarge; ESC to cancel_.
-    <br>
- **For 8956-platform (and earlier) devices**:<br>
- * The USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/`, 
-where `xxxx-xxxx` is an unique number assigned to each USB stick. To view this number, use the adb commands below after mounting the USB stick on a host PC:<br>
+ * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
+ * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
 
-        :::term
-        adb shell
-        cd /storage/
+* **If using a USB stick as the Source Access Method during Profile creation**:
+
+**For SDM660-platform devices**, the USB-based storage path (mount point) is preceded by `/storage/usbotg/`, as below: 
+ <img alt="image" style="height:450px" src="sn_usb_staging.jpg"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br> 
+
+**For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/`, where `xxxx-xxxx` is an unique number assigned to each USB stick, as below:<br>
 
  <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
 
+To view this unique number, mount the USB stick on a host PC and execute the following commands in a terminal window:
 
- * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
- * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
-
+            :::term
+            adb shell
+            cd /storage/
 
 **To <u>manually</u> stage a device from a file on the device**:
 

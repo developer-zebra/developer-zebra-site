@@ -72,7 +72,7 @@ By default, all DataWedge APIs are in uncontrolled mode - any application can ac
 **Uncontrolled –** All apps have access to APIs; this the default setting.<br>
 **Controlled –** This restricts API access. Only the admin can whitelist apps to access the APIs using AccessMgr CSP.
 
-[DataWedge APIs](../api) are categorized into 4 types:
+[DataWedge APIs](../../api) are categorized into 4 types:
 * **Configuration APIs -** APIs related to actions taken on configurations
 * **Notification APIs -** APIs related to retrieving status for scanner, profile, or configuration
 * **Query API -** APIs that retrieve information or enumerate scanners
@@ -108,7 +108,7 @@ Administrators can designate which categories are protected using [DataWedgeMgr 
   </tr>
 </table>
 
-See [DataWedge APIs](../api).
+See [DataWedge APIs](../../api).
 
 ### 3. Acquire a Token
 

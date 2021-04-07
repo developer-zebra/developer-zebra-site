@@ -423,12 +423,14 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 * **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
 * **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
-* **Staging Profiles stored on an SD card take precedence over USB** (if both are present).
-* **If using a USB stick as the Source Access Method during Profile creation**: 
+* A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
+* **If using a USB stick as the Source Access Method during Profile creation**:<br>
+ For SDM660-platform devices:
  * **The USB-based storage path (mount point) is preceded by `/storage/usbotg/`**, as below: 
  <img alt="image" style="height:350px" src="sn_usb_staging.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
+ For SDM660-platform devices:
  * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a PC host or server. 
  * **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
 

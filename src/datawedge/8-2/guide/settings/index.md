@@ -256,7 +256,7 @@ DataWedge makes it possible to covert Config files and Profiles that reside on (
 
 DataWedge has the ability to reset all user-configured settings, restoring them to their original factory defaults. **Caution: This action cannot be undone**. 
 
-> This feature also can be executed using the [Restore Config API](../../api/restoreconfig).
+> This feature also can be executed using the [Restore Config API](../api/restoreconfig).
 
 
 **To Restore DataWedge to its factory-default settings**:

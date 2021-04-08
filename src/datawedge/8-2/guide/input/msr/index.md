@@ -19,7 +19,7 @@ _The three modes of MSR card encoding, two of which include encryption_
 
 **<u>Enabling encryption on a device cannot be undone</u>**. Once a device has been configured to encrypt ISO/ABA data, it can never again be configured to output raw ISO/ABA data; switching between Original and Enhanced encryption modes is the only permitted change on such devices. <u>Encryption applies only to ISO/ABA data</u>; all other MSR-acquired data is output in unencrypted form using Non-ISO Mode. 
 
-To learn how to enable encryption and work with encrypted data, refer to the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). 
+To learn how to enable encryption and work with encrypted data, refer to the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). 
 
 #### Compatible Zebra Devices
 The following Zebra devices can use DataWedge to acquire (and optionally encrypt) MSR data: 
@@ -48,7 +48,7 @@ _MSR input enabled in the "DWDemo" Profile_
 
 **<u>DataWedge outputs MSR data only through intents</u>**. This is true whether acquired data is open or encrypted. It is therefore necessary for <!--Intent Output to be enabled and-->the receiving application to be capable of accepting and processing data from an intent bundle. To help simplify the use of MSR data for application developers, DataWedge automatically parses acquired data, formats it for specific uses, and places the modified data into specific tags. For example, the code for printing a receipt might make use of one of the "Masked Data (ASCII)" tags, which displays all but the last four digits of the credit card number as asterisks. 
 
-For modifying the acquired data, DataWedge offers only the formatting options shown in the sections below. Options for formatting data beyond those shown can be found in the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). **Custom data formatting is the sole responsibility of the developer**.
+For modifying the acquired data, DataWedge offers only the formatting options shown in the sections below. Options for formatting data beyond those shown can be found in the [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2). **Custom data formatting is the sole responsibility of the developer**.
 
 ### To get MSR data: 
 
@@ -244,6 +244,6 @@ Programmatically configure MSR and retrieve the configuration:
 
 * [DataWedge Profiles](../../profiles) - guides for all DataWedge input, processing and output options 
 * [DataWedge APIs](../../api) - usage specifications for all DataWedge-supported intents 
-* [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001-H%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2) - Tech specs of the [ID TECH](http://www.idtechproducts.com/) read head used in Zebra MSR devices 
+* [ID TECH SecureHead User Manual](https://atlassian.idtechproducts.com/confluence/download/attachments/30479625/80101505-001%20User%20manual%20SecureHead%20USB%20UART.pdf?api=v2) - Tech specs of the [ID TECH](http://www.idtechproducts.com/) read head used in Zebra MSR devices 
 * [ANSI x9.24-2016](http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.24-2-2016) - Encryption key (DUKPT) specifications
 

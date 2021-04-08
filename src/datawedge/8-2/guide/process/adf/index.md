@@ -28,7 +28,7 @@ The containers for one or more processing Actions and the user-definable criteri
 **Note:** ADF rules do not support selection of the scanner used to scan data when [multiple scanners](../../input/barcode/#scannerselection) are configured.
 
 #### Criteria
-The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../decoders) can be selected or excluded. 
+The triggers for taking a processing Action. Criteria can be set according to input type (i.e. only data from a barcode scanner), Symbology (i.e. only Code39 data), and a specified string within the data (at a specified position in the data string and/or of a specified length). Acquired data not matching all defined criteria will not trigger Action(s). Any or all of the [supported barcode types](../../input/barcode/#decoderselection) can be selected or excluded. 
 
 #### Actions 
 A set of procedures for analyzing, identifying and processing acquired data. 
@@ -87,7 +87,7 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 
 * **String length -**  An optional parameter that allows a specific length (in characters) to be present before action(s) will be invoked. For example, if scanning U.S. Social Security numbers, a String length of nine (9) might be used as a means of initial validation. 
 
-* **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which [specific decoders](../../decoders) can be further selected or excluded), or through SimulScan. 
+* **Source criteria -** An optional parameter that can invoke action(s) only when data is acquired by means of a barcode scanner (through which [specific decoders](../../input/barcode/#decoderselection) can be further selected or excluded), or through SimulScan. 
 <br>
 
 &#54;. **Tap the BACK button** to save and return to the Rule screen.

@@ -435,7 +435,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 #### Staging from External Storage Notes
 * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a host PC or server. 
-* **All files needed for staging MUST be present** in external staging medium for successful device staging by this means. [More info](#serverlessstaging) below. 
+* **All files needed for staging MUST be present** in external staging medium for successful device staging by this means. [More info below](#serverlessstaging). 
 * A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
 
 #### USB Staging Platform Notes
@@ -444,7 +444,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
  <img alt="image" style="height:450px" src="sn_usb_staging.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br> 
- **For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/` as below, where `xxxx-xxxx` is an unique number assigned to each USB stick:<br>
+ **For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/` as below, where `xxxx-xxxx` is an unique identification number assigned to each USB stick:<br>
  <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -455,37 +455,38 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
             cd /storage/
 
 
-* **To avoid the requirement to retrieve and enter the unique USB storage number in the Stagenow profile**:
- 1. Select USB as the media type in StageNow
- 2. Mount the USB stick on the host PC. The workstation assigns a drive letter (usually "D:\") to the stick and copies the files from the host PC to the stick. 
- 3. Finish creating the Profile and generate staging barcode(s) as usual. 
- 4. When ready to stage a device, connect the USB stick to the target device and scan the barcode. The files are transferred from USB stick to the device as directed by the Profile. 
+
+**To avoid the requirement to use a unique USB storage number**:
+ 1. **Select USB as the media type** in StageNow.
+ 2. **Mount the USB stick on the host PC**. The workstation assigns a drive letter (usually "D:\") to the stick and copies the files from the host PC to the stick. 
+ 3. **Finish creating the Profile** and generate staging barcode(s) as usual ([details below](#serverlessstaging)).
+ 4. When ready to stage a device, **connect the USB stick to the target device and scan the barcode**. The files are transferred from USB stick to the device as directed by the Profile. 
 
 -----
 
 ## Serverless Staging
 
-Files required for staging such as `.apk`s (Android apps), `.pfx` (security certificate) and the Profile itself (`.bin` file), can be copied to a USB or SD card storage medium during Profile creation, removing the need for the device to connect with an FTP server or PC host when it executes the staging Profile. 
+Files required for staging (`.apk`, `.pfx` `.bin`, etc.), can be copied to a USB or SD card storage medium during Profile creation and consumed by a device being staged, removing the need for the device to connect with an FTP server or PC host when it executes the staging Profile. 
 
+**To use external storage for staging**: 
 
 1. Mount the USB or SD card on the host workstation.
-2. Create FileMgr Profile
-3. Under "Target Source Access Method," select "File in the Sevice File System." 
-4. Under "Source Access Method," select Once the Media type (USB/sd card)& mounted source is selected, click Ok in Local content source selector pop up
-
+2. Add FileMgr to the Profile.
+3. Under "Target Source Access Method," **select "File in the Device File System**." 
+4. Under "Source Access Method," **select "File in the Device File System**." 
+6. The Local Content Source Selector appears (as below). Select source and **Click OK**.
 <img alt="image" style="height:350px" src="sn_local_source_selector.png"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
-
-4. Source path gets auto-updated with Media type  identification number & Path as shown in the screen shot
-
-5. Once after Profile creation, Mount the media to the device.
-
-Below ways can be used:
-
-1. The barcode can be scanned to apply the staging contents.
-
-2. If staging Profile `.bin` file is selected from the above steps, GMS welcome screen is skipped and staging begins (`.bin` file is copied under stagenow folder during profile creation). 
+7. **Confirm that the "Source Path and File Name" field has been populated correctly in the Profile,** including the unique identification number (if USB storage) similar to the example image: 
+<img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
+    _Click image to enlarge; ESC to cancel_.
+    <br>
+8. Complete the Profile and generate barcode(s).<br>
+**To stage the device**:<br> 
+9. Connect the media to the device and mount. Then:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan the barcode(s) to apply the staging Profile.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Open StageNow client on device and navigate to the `.bin` file on the device to begin staging.
 
 -----
 

@@ -90,9 +90,23 @@ Specifies the full path and file name to import the configuration file (`datawed
 
 ## Import NextGen SimulScan templates
 
-Import customized NextGen SimulScan Templates for document capture. This populates [Document Selection](../../input/barcode/#documentselectiondocumentcapturedocumentcapture) under NextGen SimulScan Configuration. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [NextGen SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
+Import NextGen SimulScan Templates for document capture by using [StageNow](/stagenow). After importing the template, it populates [Document Selection](../../input/barcode/#documentselectiondocumentcapturedocumentcapture) under NextGen SimulScan Configuration. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [NextGen SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
-Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
+Steps to deploy and import a Document Capture/NextGen SimulScan template to a device:
+1. Generate the template as an .XML file with [Template Builder](../templatebuilder).
+2. Copy the .XML file to the device (e.g. /sdcard).
+3. On a host system, open StageNow to create a profile.<br>
+  a. Click on **Create New Profile**.<br>
+  b. Select **MX 10.0** or higher and select **Xpert Mode**. Click **Create**.<br>
+  d. Enter a profile name. Click **Start**.<br>
+  e. Select **DataWedgeMgr** and click on **+**. DataWedgeMgr is added to the list on the right. Click **Add**. <br>
+  f. For **NextGen SimulScan template**, select **Add/Replace a template**. For **Template file**, enter the file path where the template is located (e.g. /sdcard/template.xml). Click **Continue**.<br>
+  g. Click **Complete Profile**.<br>
+4. Select the desired deployment method:
+    * **StageNow** - Generate the barcode. Open StageNow on the device and scan the barcode.
+    * **EMM** - Click on **Export for MDM** to export the .XML file to deploy via EMM.  
+
+Video demonstrating how to deploy and import a Document Capture/NextGen SimulScan template to a device using StageNow:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

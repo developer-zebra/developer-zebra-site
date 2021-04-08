@@ -37,11 +37,13 @@ These steps are explained in detail in the following subsections.
 
 Templates are an important component of Document Capture, identifying the data to be acquired and processed so it can be consumed by an application. Each template is associated with a target document, such as a shipping or manufacturing label. The template specifies the form region of interest (encompasses all data in the entire form) and the Field region of interest (specific regions, such as barcode, text, picture, etc.) of the data to be captured.
 
-See [Template Builder](../../templatebuilder/#usingtemplatebuilder) for instructions to generate the template.
+See [Template Builder](../../templatebuilder/#usingtemplatebuilder) for instructions to generate the template as an .XML file.
 
 ### 2. Deploy Template to Device
 
-After the template is created, deploy the template to the device so it can be used by DataWedge. Instructions for deployment are included in the [template creation procedure](../../templatebuilder/#5deploytemplates) within [Template Builder](../../templatebuilder).
+After the template is created, deploy the template to the device so it can be used by DataWedge. Use [StageNow](../../../../stagenow), which leverages [DataWedge Mgr CSP](/mx/datawedgemgr), to generate the barcode to scan and deploy the template to the device. Alternatively, an .XML file can be created through StageNow to deploy the template through an EMM (Enterprise Mobile Management) system.
+
+Refer to [Import NextGen SimulScan Templates](../../admin/#importnextgensimulscantemplates) for step-by-step instructions.
 
 ### 3. Create the DataWedge Profile
 
@@ -55,7 +57,7 @@ Configure the DataWedge profile for Document Capture as follows:
 
 ### 5. Use Content Provider
 
-Follow the [Content Provider Programmer's Guide](../../programmers-guides/content-provider/) to retrieve and process the acquired data so it can be output to the application.
+It is required to use DataWedge's content provider to acquire, process, and output the data from document capture. Within the DataWedge profile, enable **Use Content Providers** option under Intent Output. Follow the [Content Provider Programmer's Guide](../../programmers-guides/content-provider/) to retrieve and process the acquired data so it can be output to the application.
 
 <br>
 

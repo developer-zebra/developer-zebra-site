@@ -93,19 +93,4 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Encrypt Passwords stored on the device 
 * Enforce/eliminate password requirement on PEAP GTC networks
 
-### OmniTrail
-
-The Wi-Fi CSP also controls OmniTrail, a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device locationing. OmniTrail can locate a device to within about five (5) feet (1.5 meters). 
-
-#### OmniTrail Requirements
-* **OmniTrail is supported only on the following devices**:
-	* **MC18**
-	* **MC40**
-	* **TC51**
-	* **TC56**
-	* **TC70x**
-	* **TC75x**
-* **Device must be running Android 5.0 Lollipop or later**
-* **Device must contain MX 6.3 or later**
-
 -----

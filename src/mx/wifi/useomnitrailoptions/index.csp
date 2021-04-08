@@ -25,7 +25,7 @@ parm:
 Determines whether OmniTrail device location services are used and their options configurable. OmniTrail comprises a set of services available in some Zebra devices that enable highly accurate, secure and power-efficient device locationing. OmniTrail can locate a device to within about five (5) feet (1.5 meters). 
 
 #### Device Support
-OmniTrail functionality is supported only on the following **<u>Zebra devices with MX 6.3 or later</u>**: 
+OmniTrail is **<u>supported on the following Zebra devices with MX 6.3 or later</u>**: 
  
 * **ET50** Android 6.x Marshmallow
 * **ET55** Android 6.x Marshmallow

@@ -484,9 +484,9 @@ Files required for staging (`.apk`, `.pfx` `.bin`, etc.), can be copied to a USB
     <br>
 8. Complete the Profile and generate barcode(s).<br>
 **To stage the device**:<br> 
-9. Connect the media to the device and mount. Then:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan the barcode(s) to apply the staging Profile.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Open StageNow client on device and navigate to the `.bin` file on the device to begin staging.
+9. Connect the media to the device and mount. Then:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan the barcode(s) to apply the staging Profile.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Open StageNow client on device and navigate to the `.bin` file on the device to begin staging.<br>
 
 -----
 

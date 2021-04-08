@@ -56,7 +56,7 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <img style="height:350px" src="../adf_intent_output.png"/>
 <br>
 
-&#50;. **Tap the "hamburger" menu, select New rule** and enter a name for the rule. The new Rule appears with other Rules in the Output Plug-in screen similar to the image in Step 3, below.   
+&#50;. **Tap "Rules". Then tap the "hamburger" menu, select New rule** and enter a name for the rule. The new Rule appears with other Rules in the Output Plug-in screen similar to the image in Step 3, below.   
 <img style="height:350px" src="../Figure_14_Adv_DataFormattingScreen.png"/>
 <br>
 
@@ -73,7 +73,9 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <br>
 
 &#53;. From the Criteria screen, **enter the criteria that will activate the Rule** based on the options below.  
-<img style="height:350px" src="../adf_23_source_criteria.png"/>
+
+<img style="height:350px" src="../adf_17_criteria_list.png"/>
+<!-- <img style="height:350px" src="../adf_23_source_criteria.png"/> -->
 <br>
 
 **Action Criteria**:
@@ -91,7 +93,6 @@ These steps are all carried out within the Advanced Data Formatting Process Plug
 <br>
 
 &#54;. **Tap the BACK button** to save and return to the Rule screen.
-<img style="height:350px" src="../adf_17_criteria_list.png"/>
 <br>
 
 -----

@@ -435,7 +435,7 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 #### Staging from External Storage Notes
 * **StageNow writes the name and path of the storage medium into the Profile**. The same medium (**<u>with the name/path unchanged</u>**) can then be connected to the device and used as the source of staging data instead of a host PC or server. 
-* **All files needed for staging MUST be present** in external staging medium for successful device staging by this means.
+* **All files needed for staging MUST be present** in external staging medium for successful device staging by this means. [More info](#serverlessstaging) below. 
 * A Staging Profile stored on **SD card takes precedence over USB** (if both are present).
 
 #### USB Staging Platform Notes
@@ -465,19 +465,17 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 ## Serverless Staging
 
-The staging profiles may have files that have to be downloaded from workstation to device which imposes dependency on the Stagenow FTP server. The files(.apk./.txt/.pfx./.bin etc) required for staging can be copied to USB/SDcard during the profile creation which then can be mounted to the device avoiding the dependency of the device to be able to connect to Stagenow FTP.
+Files required for staging such as `.apk`s (Android apps), `.pfx` (security certificate) and the Profile itself (`.bin` file), can be copied to a USB or SD card storage medium during Profile creation, removing the need for the device to connect with an FTP server or PC host when it executes the staging Profile. 
 
-Note: Pre-generated Staging profile `.bin` files also can be copied from a workstation to the required media source path using this method.
 
-1. Mount the sdcard/USB to the workstation.Then create Filemgr profile
-2. Select source access as File in the device file system
-
-3. Once the Media type (USB/sd card)& mounted source is selected, click Ok in Local content source selector pop up
+1. Mount the USB or SD card on the host workstation.
+2. Create FileMgr Profile
+3. Under "Target Source Access Method," select "File in the Sevice File System." 
+4. Under "Source Access Method," select Once the Media type (USB/sd card)& mounted source is selected, click Ok in Local content source selector pop up
 
 <img alt="image" style="height:350px" src="sn_local_source_selector.png"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
-
 
 4. Source path gets auto-updated with Media type  identification number & Path as shown in the screen shot
 

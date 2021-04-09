@@ -11,7 +11,7 @@ Introduced in DataWedge 6.5.
 
 Used to add, remove or update an item on the Disabled App List, the list of apps and activities that are blocked from using DataWedge. Contains [nested bundles](../overview/#nestedbundles). This API also can be used by an app to prevent the app itself from using DataWedge. 
 
-If an app is listed in the Disabled App List and that same app is an [Associated App](../gettingstarted) in a profile being imported - the import does not take into effect and the app remains on the Disabled App List.
+If an app is listed in the Disabled App List and that same app is an [Associated App](../../gettingstarted) in a profile being imported - the import does not take into effect and the app remains on the Disabled App List.
 
 ### Function Prototype
 

@@ -122,7 +122,7 @@ Note that the extra keys were defined earlier in the strings.xml file.  This cod
 
 **Related guides**:
 
-* [The original tutorial](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/) by Zebra engineer Darryn Campbell 
+* [The original tutorial](https://medium.com/@darryncampbell_83863/getting-started-with-datawedge-on-zebra-devices-9af2cdd1110c/) by Zebra engineer Darryn Campbell 
 * [DataWedge Intent Output](../../output/intent/) guide for profile settings and details 
 * [DataWedge APIs](../../api) for intent-based functions
 

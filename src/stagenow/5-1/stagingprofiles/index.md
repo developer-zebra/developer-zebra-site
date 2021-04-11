@@ -440,11 +440,11 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 #### USB Staging Platform Notes
 * **If using a USB stick as the Source Access Method during Profile creation**:<br>
- **For SDM660-platform devices**, the USB-based storage path (mount point) is preceded by `/storage/usbotg/`, as below: 
+ **<u>For SDM660-platform devices</u>**, the USB-based storage path (mount point) is preceded by `/storage/usbotg/`, as below: 
  <img alt="image" style="height:450px" src="sn_usb_staging.jpg"/>
     _Click image to enlarge; ESC to cancel_.
     <br> 
- **For 8956-platform (and earlier) devices**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/` as below, where `xxxx-xxxx` is an unique identification number assigned to each USB stick:<br>
+ **<u>For 8956-platform (and earlier) devices</u>**, the USB-based storage path (mount point) is preceded by `/storage/xxxx-xxxx/` as below, where `xxxx-xxxx` is an unique identification number assigned to each USB stick:<br>
  <img alt="image" style="height:350px" src="sn_usb_mount_code.png"/>
     _Click image to enlarge; ESC to cancel_.
     <br>
@@ -458,9 +458,11 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 
 **To avoid the requirement to use a unique USB storage number**:
  1. **Select USB as the media type** in StageNow.
- 2. **Mount the USB stick on the host PC**. The workstation assigns a drive letter (usually "D:\") to the stick and copies the files from the host PC to the stick. 
+ 2. **Mount the USB stick on the host PC**.<br> 
+ The workstation assigns a drive letter (usually "D:\") to the stick and copies the files from the host PC to the stick. 
  3. **Finish creating the Profile** and generate staging barcode(s) as usual ([details below](#serverlessstaging)).
- 4. When ready to stage a device, **connect the USB stick to the target device and scan the barcode**. The files are transferred from USB stick to the device as directed by the Profile. 
+ 4. When ready to stage a device, **connect the USB stick to the target device and scan the barcode**.<br>
+ The files are transferred from USB stick to the device as directed by the Profile. 
 
 -----
 

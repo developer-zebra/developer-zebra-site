@@ -429,8 +429,8 @@ StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Stag
 -->
 
 #### Android SUW Bypass Notes
-* **On devices with MX 9.0**, any `.bin` file causes Setup Wizard bypass. 
-* **On devices with MX 9.1 and later**, a security check ensures that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
+* **On devices with MX 9.0**, processing any `.bin` file causes Setup Wizard bypass. 
+* **On devices with MX 9.1 and later**, processing includes a security check to ensure that bypass occurs only if the StageNow Profile was created using MX 9.1 or later. 
 * **Devices with MX 9.1 (or later) automatically skip the Android Set-up Wizard** and begin staging when a `.bin` file is found.<br>Learn more about [SUW bypass limitations](../Profiles/wipedevice/#setupwizardmanualbypass).
 
 #### Staging from External Storage Notes

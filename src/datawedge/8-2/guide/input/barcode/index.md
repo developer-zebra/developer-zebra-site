@@ -225,7 +225,7 @@ _Scanner configuration_
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. NG SimulScan is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 
 * **[MultiBarcode](#multibarcodeparams) -** acquires multiple, unique barcodes from a form in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. Supported since DataWedge 8.0. _Unlike legacy SimulScan, a template is not required for this MultiBarcode feature, as opposed to the MultiBarcode subfeature that is part of Document Capture that does require a template._
-* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a [NextGen SimulScan/Document Capture template](../../templatebuilder)._
+* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a [NextGen SimulScan template](../../templatebuilder), also known as [Document Capture template](../../templatebuilder)._
 
 <!--
   > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> -->
@@ -311,9 +311,9 @@ Video demonstration of document capture with anchor barcode:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br>
 
-#### B) Whole Page Document Capture
+#### B) Border Detection
 
-Whole Page Document Capture acquires the entire document, or form, as an image based on the surrounding borders of the content designated in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
+Border Detection acquires the entire document, or form, as an image based on the surrounding borders of the content defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
 
 <!--
 After the NextGen SimulScan template is imported for Document Capture, the **Document Selection** is populated with the imported template name. Based on the template request, the template is customized with one of the following options:
@@ -327,9 +327,11 @@ After the NextGen SimulScan template is imported for Document Capture, the **Doc
   <img style="height:350px" src="wholepage-templates.png"/>
   _Document Capture whole page templates_
   -->
-  Video demonstration of whole page document capture:
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DI8pxsTJdtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-  <br>
+Video demonstration of whole page document capture: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DI8pxsTJdtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+
 
 #### C) Signature Presence Detection
 
@@ -340,34 +342,34 @@ Video demonstration of signature presence detection:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4vS5Y2q9Vkg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-#### D) Specify Barcode Criteria
+#### D) Read Specific Barcode
 
-Capture specific barcode(s) from a form containing multiple barcodes and ignore others based on barcode criteria defined in a [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type. The criteria to read specific barcode(s) is based on the following options defined when creating the Template (any combination of these options can be used):
-* **Barcode Type –** Specifies the barcode type or decoder.
-* **Enable Character Checking -** enable this to use the barcode data to aid in identification of the barcode with one or more of the following criteria:
-    * **Starts With -** enter character(s) to check for barcodes that begin with the specified character(s) of the acquired barcode data. Some common specifications:<br>
+Read Specific Barcode decodes a particular barcode among a multitude of barcodes based on specific criteria defined in a [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type.  The criteria to capture the barcode is defined in the [NextGen SimulScan Template](../../templatebuilder). See [Template Builder](../../templatebuilder) for more information and instructions on how to create the template. The criteria to read specific barcodes is based on the following options selected during template creation. Any combination of these options can be used.  If more than one barcode is present that matches the given criteria, then the option **Automatic Group Identification**, described in the following section, can be used instead. 
+* **Barcode Type –** Specifies the barcode type or decoder as defined in the template.
+* **Character Checking (Begins with) –** Specifies the specific character the barcode must begin with in order to decode, as defined in the template. Some common specifications:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**N -** (e.g.: NXXXXXX) for advice note number<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**P –** (e.g.: PXXXXXX) for part number<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**Q –** (e.g.: QXXXXXX) for quantity<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**V –** (e.g.: VXXXXXX) for vendor ID<br>
-   * **Contains -** enter character(s) to accept barcodes that contain the specified character(s) at the index position specified in the **at** field (index 0 = the first character).
-    * **String Length -** enter the number of characters the barcode data must contain.
-* **Variable Field Presence Timeout–** applies to forms that contain a combination of mandatory and optional barcodes to decode, allowing more or less time to decode optional barcodes as needed.
+* **Character Checking (Contains characters at a given location in the string) –** Specifies the character(s) at a given position in the decoded string which the barcode must contain, as defined in the template. 
+* **Barcode Data Length –** Specifies the length of the barcode string to decode, as defined in the template. 
+* **Multiple Character Checking (Begins with) –** Specifies the acceptable characters for the barcode string to begin with, as specified in the template. For example, if “A” and “B” is specified, then only barcodes that begin with “A” or “B” are decoded. 
+* **Variable Field Presence (Mandatory + Optional Barcode) –** applies to forms that contain a combination of mandatory and optional barcodes to decode, as specified in the template. If the mandatory barcode is not present, then the decode does not take place. If the mandatory barcode is present with an optional barcode, then both are decoded. If the mandatory barcode is present without an optional barcode, then the mandatory barcode is decoded. 
 <br><br>
 
 #### E) Auto Group Identification
-**Auto Group Identification** decodes barcodes that have a common pattern on a form, designating them into a unique group based on the criteria defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type. All of the following criteria must be met for this group of barcodes:
+**Auto Group Identification** decodes barcodes from a document that share a common pattern, designating them into a unique group based on the criteria defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type. All of the following criteria must be met for this group of barcodes in order to decode:
 * Same barcode symbology
 * Same first 1-2 Characters of the barcode data
 * Same barcode data length
 
 When using this option, the quantity of barcodes must be specified by using **_one_** of the following methods:
-* **Barcode –** A separate barcode is present on the form or label specifying the quantity of barcodes to scan for each decode session. The decoded data from the quantity barcode must meet the following criteria:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Starts with "Q" or "q"  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Length is 3 digits or less<br>
+* **Barcode –** Based on the template, a separate barcode is present on the form or label specifying the quantity of barcodes to scan for each decode session. The decoded data from the Quantity barcode must meet at least one of the following criteria:<br>
+    * Starts with "Q" or "q"
+    * Length is 3 digits or less
 * **User/System Defined -** Set the quantity of barcodes (value range: 1 to 100; default value: 5) to scan based on:
     * **DataWedge UI -** use option **Group of common barcodes dynamic quantity** under **Template params** from **NG SimulScan configuration**, as shown below. 
-    * **DataWedge intent API -** use [SetConfig](../../api/setconfig/#nextgensimulscanparameters) to set common_barcode_dynamic_quantity to the desired quantity.
+    * **DataWedge intent API -** use [SetConfig](../../api/setconfig/#nextgensimulscanparameters) to set `common_barcode_dynamic_quantity` to the desired quantity.
 
 <table>
  <tr>
@@ -381,10 +383,12 @@ When using this option, the quantity of barcodes must be specified by using **_o
   </td>
  </tr>
 </table>
-<i>Set dynamic quantity for Auto Group Identification</i>
+<i>Set barcode quantity for Auto Group Identification</i>
+
+Video demonstration of Specify Barcode Criteria and Automatic Group Identification features:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Kr8h-Cke6k?rel=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<i>Video demonstration of Specify Barcode Criteria and Automatic Group Identification features</i>
+
 <br>
 
 ### MultiBarcode Params
@@ -465,7 +469,7 @@ Select **All Scanners**. A confirmation message appears indicating that any sett
 
 ###Using Intents
 
-Set the global scanner configuration by setting the value of parameter `configure_all_scanners` to "true" via [SET_CONFIG](../../../api/setconfig) intent API.
+Set the global scanner configuration by setting the value of parameter `configure_all_scanners` to "true" via [SET_CONFIG](../../api/setconfig) intent API.
 
 ---
 

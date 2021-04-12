@@ -7,7 +7,9 @@ productversion: "8.2"
 
 ## Overview
 
-Template Builder is a web-based tool for creating templates, which define the information acquired from the DataWedge feature [Document Capture](../input/barcode/#documentselectiondocumentcapturedocumentcapture) and determine how it will be processed and made available for consumption by applications. Document Capture, as part of [NextGen (NG) SimulScan](../input/barcode/#nextgensimulscanconfiguration), is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Templates are the key to controlling Document Capture features and for processing the acquired data so it can be consumed by an application. Each template is associated with a target document (e.g. shipping receipt, part label) to capture and process as part of a workflow.
+Template Builder is a web-based tool for creating templates, which define the information acquired from the DataWedge feature [Document Capture](../input/barcode/#documentselectiondocumentcapturedocumentcapture) and determine how the acquired data will be processed and made available for consumption by applications. When scanning a document with Document Capture, specific data from the document can be acquired based on the defined template.
+
+Document Capture, as part of [NextGen (NG) SimulScan](../input/barcode/#nextgensimulscanconfiguration), is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Templates are the key to controlling Document Capture features and for processing the acquired data so it can be consumed by an application. Each template is associated with a target document (e.g. shipping receipt, part label) to capture and process as part of a workflow.
 
 This guide provides step-by-step instructions for using the interface of Template Builder to [create Templates](#usingtemplatebuilder) and deploy them to devices.
 

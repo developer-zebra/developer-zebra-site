@@ -14,6 +14,15 @@ productversion: '8.2'
 _Note: Smartsheet features, including filtering, are not intended for use._
 <IFRAME WIDTH=1120 HEIGHT=700 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=0d83073f23f84ccbb82b9f43fed1a772"></IFRAME>
 
+## History
+
+### New in April 2021
+
+Added the following features to the matrix:
+* Document Capture:
+    * Read Specific Barcode
+    * Auto Group Identification
+
 ## How to retrieve version information
 
 **Retrieve device model:**

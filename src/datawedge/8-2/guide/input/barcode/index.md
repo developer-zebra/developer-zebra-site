@@ -311,9 +311,9 @@ Video demonstration of document capture with anchor barcode:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MnsS16CnbCY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br>
 
-#### B) Border Detection
+#### B) Whole Page
 
-Border Detection acquires the entire document, or form, as an image based on the surrounding borders of the content defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
+Whole Page Document Capture acquires the entire document, or form, as an image based on the surrounding borders of the content defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
 
 <!--
 After the NextGen SimulScan template is imported for Document Capture, the **Document Selection** is populated with the imported template name. Based on the template request, the template is customized with one of the following options:

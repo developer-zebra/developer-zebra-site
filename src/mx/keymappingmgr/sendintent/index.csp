@@ -205,11 +205,12 @@ Used to enter the Name of an Extra Data attribute for the Intent that will be se
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-##### `NOTE:` Devices with MX 9.2 or later can access four additional Extra Name-Value pairs:
-* **IntentStringExtra1Name, &nbsp;&nbsp; IntentStringExtra1Value**
-* **IntentStringExtra2Name, &nbsp;&nbsp; IntentStringExtra2Value**
-* **IntentStringExtra3Name, &nbsp;&nbsp; IntentStringExtra3Value**
-* **IntentStringExtra4Name, &nbsp;&nbsp; IntentStringExtra4Value**
+##### `NOTE:` Devices with MX 9.2 or later can access the four additional Extra Name-Value pairs shown below. Prepend the parm names(s) with the key name (i.e. "Base, Blue, Orange, etc.) to assign the Extra name and value to the desired key modifier(s):
+* **IntentStringExtra1Name, IntentStringExtra1Value**
+* **IntentStringExtra2Name, IntentStringExtra2Value**
+* **IntentStringExtra3Name, IntentStringExtra3Value**
+* **IntentStringExtra4Name, IntentStringExtra4Value**
+
 
 Pivotal parm? No
 
@@ -221,6 +222,8 @@ Pivotal parm? No
 * For Grey Key State Table: **GreyIntentStringExtraName**
 * For Shift Key State Table: **ShiftIntentStringExtraName**
 * For Control Key State Table: **ControlIntentStringExtraName**
+
+**`NOTE:` Devices with MX 9.2 or later can access four additional Extra Name-Value pairs**. See Extra parameter name section, above. 
 
 **Parm value input rules**: 
 

@@ -6,6 +6,11 @@ menu:
   title: DataWedge
   img: datawedge_logo.png
   languages:
+    - lang: cn,
+      img: /images/flags/img-flag-china.png
+      urlFrom: datawedge
+      urlTo: datawedge/dw-cn
+      label: CN - 普通话
     - lang: jp,
       img: /images/flags/img-flag-japan.png
       urlFrom: datawedge

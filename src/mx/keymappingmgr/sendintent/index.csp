@@ -36,17 +36,17 @@ These parms are used to enter the conditions under which an Intent will be sent 
 		<th>Description</th>
 	</tr>
   <tr>
-    <td>onKeyDown</td>
+    <td>On key down</td>
     <td>"1"</td>
 	<td>Sends the specified Intent when the Key transitions from unpressed to pressed.</td>
   </tr>
   <tr>
-    <td>onKeyUp</td>
+    <td>On key up</td>
     <td>"2"</td>
 	<td>Sends the specified Intent when the Key transitions from pressed to unpressed.</td>
   </tr>
   <tr>
-    <td>onKeyDown *and* onKeyUp</td>
+    <td>On both key down and up</td>
     <td>"3"</td>
 	<td>Sends the specified Intent both when the Key transitions from unpressed to pressed and from pressed to unpressed.</td>
   </tr>

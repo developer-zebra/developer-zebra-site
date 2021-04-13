@@ -205,7 +205,7 @@ Used to enter the Name of an Extra Data attribute for the Intent that will be se
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-**Devices with MX 9.2 or later can access four additional Extra value pairs:**
+##### `NOTE:` Devices with MX 9.2 or later can access four additional Extra Name-Value pairs:
 * **IntentStringExtra1Name, &nbsp;&nbsp; IntentStringExtra1Value**
 * **IntentStringExtra2Name, &nbsp;&nbsp; IntentStringExtra2Value**
 * **IntentStringExtra3Name, &nbsp;&nbsp; IntentStringExtra3Value**

@@ -205,6 +205,9 @@ Used to enter the Name of an Extra Data attribute for the Intent that will be se
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
+>**<u>Devices with MX 9.2 or later can access four additional Extras</u>** as IntentStringExtra1Name, IntentStringExtra2Name, IntentStringExtra3Name and IntentStringExtra4Name paired with their corresponding Values (IntentStringExtra1Value, etc.). 
+
+
 Pivotal parm? No
 
 **Parm names**:

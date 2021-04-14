@@ -203,9 +203,9 @@ Pivotal parm? No
 ####Extra parameter name
 Used to enter the Name of an Extra Data attribute for the Intent that will be sent as the Key Behavior for the specified Key in the specified Key State Mapping Table. An Extra Data attribute of an Intent generally provides auxiliary information that helps qualify the action that should be taken on the data by the application to which the Intent is sent. An Extra Data attribute must be specified using both an Extra Name and an Extra Value since both are required to add an Extra Data attribute to an Intent. Entering an empty (length of zero) value (or the absence of this parm from the XML) will cause no Extra Data attribute to be set in the Intent. The requirement for an Extra Data attribute for a given Intent depends on the Intent being sent and the requirements of the application(s) to which the Intent may be sent.
 
->Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
-
-**`NOTE:` Devices with MX 9.2 or later can access the four additional Extra name-value pairs shown below**. Prepend the parm names(s) with the key name (i.e. "Base, Blue, Orange, etc.) to assign the Extra name and value to the desired key modifier(s):
+>Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"<br>
+>**`NOTE:` Devices with MX 9.2 or later can access the four additional Extra name-value pairs shown below**.
+Prepend the parm names(s) and value(s) below with the key name (i.e. "Base, Blue, Orange, etc.) to assign the Extra name and value to the desired key modifier(s):
 * **IntentStringExtra1Name, IntentStringExtra1Value**
 * **IntentStringExtra2Name, IntentStringExtra2Value**
 * **IntentStringExtra3Name, IntentStringExtra3Value**

@@ -31,8 +31,8 @@ These parms are used to enter the conditions under which an Intent will be sent 
 <div class="parm-table">
  <table>
 	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
+		<th>Option</th>
+		<th>Value</th>
 		<th>Description</th>
 	</tr>
   <tr>
@@ -63,8 +63,8 @@ Pivotal parm? Yes
 <div class="parm-table">
  <table>
 	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
+		<th>Option</th>
+		<th>Value</th>
 		<th>Description</th>
 	</tr>
   <tr>

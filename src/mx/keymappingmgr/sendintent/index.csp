@@ -46,7 +46,7 @@ These parms are used to enter the conditions under which an Intent will be sent 
 	<td>Sends the specified Intent when the Key transitions from pressed to unpressed.</td>
   </tr>
   <tr>
-    <td>On both key down and up</td>
+    <td>On both key down and up&nbsp;</td>
     <td>"3"</td>
 	<td>Sends the specified Intent both when the Key transitions from unpressed to pressed and from pressed to unpressed.</td>
   </tr>
@@ -205,7 +205,7 @@ Used to enter the Name of an Extra Data attribute for the Intent that will be se
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-**`NOTE:` Devices with MX 9.2 or later can access the four additional Extra Name-Value pairs shown below**. Prepend the parm names(s) with the key name (i.e. "Base, Blue, Orange, etc.) to assign the Extra name and value to the desired key modifier(s):
+**`NOTE:` Devices with MX 9.2 or later can access the four additional Extra name-value pairs shown below**. Prepend the parm names(s) with the key name (i.e. "Base, Blue, Orange, etc.) to assign the Extra name and value to the desired key modifier(s):
 * **IntentStringExtra1Name, IntentStringExtra1Value**
 * **IntentStringExtra2Name, IntentStringExtra2Value**
 * **IntentStringExtra3Name, IntentStringExtra3Value**

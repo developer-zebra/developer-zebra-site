@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Permission Access Feature Name
+title: Permission Access Permission Name
 type: parm
 order: 150
 mx: "10.0"

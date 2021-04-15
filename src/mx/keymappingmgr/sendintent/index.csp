@@ -32,8 +32,8 @@ These parms are used to enter the conditions under which an Intent will be sent 
  <table>
 	<tr>
 		<th>Option</th>
-		<th>Value</th>
-		<th>Description</th>
+		<th>Value&nbsp;</th>
+		<th>&nbsp;Description</th>
 	</tr>
   <tr>
     <td>On key down</td>
@@ -64,16 +64,16 @@ Pivotal parm? Yes
  <table>
 	<tr>
 		<th>Option</th>
-		<th>Value</th>
-		<th>Description</th>
+		<th>Value&nbsp;</th>
+		<th>&nbsp;Description</th>
 	</tr>
   <tr>
-    <td>Start activity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>Start activity</td>
     <td>"1"</td>
 	<td>Sends the Intent using Start Activity. This should be used when launching an Activity within an application (for example to present a UI).</td>
   </tr>
   <tr>
-    <td>Broadcast</td>
+    <td>Broadcast&nbsp;</td>
     <td>"2"</td>
 	<td>Sends the Intent using Send Broadcast. This should be used when notifying one or more applications that register a suitable Broadcast Receiver, and that may invoke an Activity (for example to present a UI) or a Service (for example to perform a background process).</td>
   </tr>

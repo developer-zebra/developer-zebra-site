@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: Batch File Access
+title: Batch File Access Method
 type: parm
 order: 7
 mx: "4.3"

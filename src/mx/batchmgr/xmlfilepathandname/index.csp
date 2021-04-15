@@ -1,13 +1,13 @@
 ---
 csp: batchmgr
-title: XML File Name
+title: XML File Path and Name
 type: parm
 order: 12
 mx: "4.3"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: File Access method is file system
+  presentif: File Access Method is "File in Device File System"
   name: XmlFilePathAndName
   type: string
 ---

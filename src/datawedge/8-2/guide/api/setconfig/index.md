@@ -277,8 +277,8 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
   <tr>
 	<td>decoder_ean8</td>
 	<td>true<br>false</td>
-	<td>decoder_ean8_convert_to_ean13</td>
-	<td>true<br>false</td>
+	<td>N/A</td>
+	<td>N/A</td>
   </tr>
 
   <tr>

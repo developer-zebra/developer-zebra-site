@@ -133,7 +133,6 @@ decoders:
     decoder: ean8
     decoderparm: decoder_ean8
     decoderstate: true, false
-    parms: true
   - type: section
     title: EAN-13
     decoder: ean13

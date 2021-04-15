@@ -58,7 +58,7 @@ To create a setting for use in profiles:
 6. Select Save. This adds the setting to the Settings list.
 
 ### Save for Reuse
-After completing a Setting screen within a Profile Wizard, select the Save Setting for Re-use check box to make this setting available for subsequent profile creation in the same or other Wizards. Enter a Name for the setting. This is useful when creating multiple profiles that will use the same setting, e.g., if many profiles need to access the same network (Wi-Fi setting). This avoids unnecessary re-entry, as well as eliminates mistakes, and if the definition of the setting changes, the administrator can change it in one place instead of many.
+After completing a Setting screen within a Profile Wizard, select the "Save Setting for Re-use" check box to make this setting available for subsequent profile creation in the same or other Wizards. Enter a Name for the setting. This is useful when creating multiple profiles that will use the same setting, e.g., if many profiles need to access the same network (Wi-Fi setting). This avoids unnecessary re-entry, as well as eliminates mistakes, and if the definition of the setting changes, the administrator can change it in one place instead of many.
 
 ![img](../images/SaveforReuse.jpg)
 

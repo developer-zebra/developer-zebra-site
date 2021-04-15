@@ -32,7 +32,7 @@ The StageNow Staging Solution includes the following components:
 
 **This version of StageNow supports all Zebra devices running Android 4.x KitKat or higher and MX 4.3 or later**. 
 
-For more information, see the [StageNow About page](../about).
+For more information, see the [About StageNow page](../about).
 
 **Note: MX features supported on a given device depends on the versions of Android, MX and OSX installed on the device**. To determine the features available on a specific device, see the [MX Feature Matrix](/mx) and follow the instructions there. 
 
@@ -113,7 +113,7 @@ If more than one IP address is available and neither is selected, the Current IP
 Select the IP, then select Set as Current. This IP address is retained in future operations, including after re-launch and system reboot. 
 
 ### Wi-Fi Hotspot
-The StageNow tool allows a desktop computer equipped with a wireless network interface card to act as a Wi-Fi hotspot for staging devices. This allows staging without requiring an external Wi-Fi network and reduces the number barcodes to one with default security, or more than one with optional double security selected by the administrator.
+The StageNow tool allows a desktop computer equipped with a wireless network interface card to act as a Wi-Fi hotspot for staging devices. This allows staging without requiring an external Wi-Fi network and reduces the number of barcodes to one with default security, or more than one with optional double security selected by the administrator.
 It also eliminates the need for reprinting the barcodes even if there is a profile change.
 
 If the Wi-Fi hotspot is off, you can turn it on via the button on the heading bar.

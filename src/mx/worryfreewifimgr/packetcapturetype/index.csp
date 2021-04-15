@@ -7,7 +7,7 @@ mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Enable Packet Capture is set to "Enabled" 
+  presentif: Enable Packet Capture is set to "Enable" 
   name: PacketCaptureType
   type: list
   list:

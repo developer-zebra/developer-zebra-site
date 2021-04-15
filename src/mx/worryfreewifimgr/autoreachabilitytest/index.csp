@@ -28,4 +28,4 @@ parm:
       description: Deactivates the auto-reachability test on the device. 
 ---
 
-This is the On/Off switch for auto-reachability test functions on the device, which can identify potential issues realating to roaming and other connection events. 
+This is the On/Off switch for auto-reachability test functions on the device, which can identify potential issues relating to roaming and other connection events. 

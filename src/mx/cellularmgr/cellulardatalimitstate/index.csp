@@ -7,7 +7,7 @@ mx: "6.3"
 devicetype: A
 info: Supported on WWAN-enabled devices only.
 parm:
-  presentif: Cellular Data State is set to "Enable"
+  presentif: Cellular Data State is set to "Turn On"
   pivotal: No
   name: CellularDataLimitState
   type: list

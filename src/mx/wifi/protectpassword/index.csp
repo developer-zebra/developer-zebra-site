@@ -15,7 +15,7 @@ parm:
       mx: "4.2"
       devicetype: A
       name: (unchecked)
-      description: Passwords are stored in clear text on the device unless specifically encrypted using the Protect Password Encryption parameter. 
+      description: Passwords are stored in clear text on the device unless specifically encrypted using the Password Protect Encryption parameter. 
     - code: 1
       mx: "4.2"      
       devicetype: A

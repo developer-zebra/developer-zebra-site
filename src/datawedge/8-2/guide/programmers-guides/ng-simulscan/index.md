@@ -37,7 +37,9 @@ These steps are explained in detail in the following subsections.
 
 Templates are an important component of Document Capture, identifying the data to be acquired and processed so it can be consumed by an application. Each template is associated with a target document, such as a shipping or manufacturing label. The template specifies the form region of interest (encompasses all data in the entire form) and the Field region of interest (specific regions, such as barcode, text, picture, etc.) of the data to be captured.
 
-See [Template Builder](../../templatebuilder/#usingtemplatebuilder) for instructions to generate the template as an .XML file.
+**Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.**
+
+<!--See [Template Builder](../../templatebuilder/#usingtemplatebuilder) for instructions to generate the template as an .XML file. -->
 
 ### 2. Deploy Template to Device
 
@@ -66,7 +68,7 @@ It is required to use DataWedge's content provider to acquire, process, and outp
 Related Guides: 
 
 * [NextGen SimulScan](../../input/barcode/#nextgensimulscanconfiguration)
-* [Template Builder](../../templatebuilder)
-* [Use Content Provider](..././programmers-guides/content-provider/)
+* [Use Content Provider](../../programmers-guides/content-provider/)
 * [DataWedgeMgr CSP](/mx/datawedgemgr)
+<!-- * [Template Builder](../../templatebuilder) -->
 

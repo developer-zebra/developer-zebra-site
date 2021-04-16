@@ -227,8 +227,7 @@ _Scanner configuration_
 * **[MultiBarcode](#multibarcodeparams) -** acquires multiple, unique barcodes from a form in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. Supported since DataWedge 8.0. _Unlike legacy SimulScan, a template is not required for this MultiBarcode feature, as opposed to the MultiBarcode subfeature that is part of Document Capture that does require a template._
 * **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a [NextGen SimulScan template](../../templatebuilder), also known as [Document Capture template](../../templatebuilder)._
 
-<!--
-  > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> -->
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 
 <p>For <a href="/licensing/about/#zebraprofessionalseriesdevices">Zebra Professional Series devices</a>, such as TC21 and TC26, NextGen SimulScan requires a <a href="/licensing">Mobility DNA Enterprise license</a>. The following message is displayed when attempting to access this feature on a device without a valid license:</p>
 <img style="height:350px" src="license_required.png"/>
@@ -253,7 +252,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 **Scanning Modes** selects the mode to scan barcodes:
 
 - **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required.<br>
-- <b><a href="#documentselectiondocumentcapture">Document Capture</a> -</b> capture fields within a document or capture the entire document as an image based on a specified template. 
+- <b><a href="#documentselectiondocumentcapture">Document Capture</a> -</b> capture fields within a document or capture the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 - **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:
@@ -283,12 +282,12 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 * **Image Capture -** acquires mixed types of data at once (barcodes, text, images, etc.) when the document to be scanned has a fixed layout - the location and type of data in each field remain consistent whenever the form is used, and only the data changes with each new instance of the form.
 * **MultiBarcode -** acquires data from forms that contain barcodes. This applies to cases where multiple barcodes are required to be captured simultaneously, or specific barcode(s) need to be read from a multitude of barcodes.
 
+> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> 
+
 <!-- 
-> <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> -->
+See [Template Builder](../../templatebuilder) for instructions on how to create a Document Capture/NextGen SimulScan Template. After creating the Template, copy it to the device. -->
 
-See [Template Builder](../../templatebuilder) for instructions on how to create a Document Capture/NextGen SimulScan Template. After creating the Template, copy it to the device.
-
-To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Selection** and select a template for the document to be captured (see screen capture below). This selection is populated with the imported template after [template deployment](../../templatebuilder/#5deploytemplates). With **Document Capture**, it is _required to **[Use content providers](../../programmers-guides/content-provider/)**_ to retrieve scanned data. To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**.
+To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Selection** and select a template for the document to be captured (see screen capture below). This selection is populated after [importing the template](../../admin/#importnextgensimulscantemplates). With **Document Capture**, it is _required to **[Use content providers](../../programmers-guides/content-provider/)**_ to retrieve scanned data. <!-- To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**. -->
 
 <img style="height:350px" src="document_selection.png"/>
 _Document Capture template selection_
@@ -344,7 +343,7 @@ Video demonstration of signature presence detection:
 
 #### D) Read Specific Barcode
 
-Read Specific Barcode decodes a particular barcode among a multitude of barcodes based on specific criteria defined in a [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type.  The criteria to capture the barcode is defined in the [NextGen SimulScan Template](../../templatebuilder). See [Template Builder](../../templatebuilder) for more information and instructions on how to create the template. The criteria to read specific barcodes is based on the following options selected during template creation. Any combination of these options can be used.  If more than one barcode is present that matches the given criteria, then the option **Automatic Group Identification**, described in the following section, can be used instead. 
+Read Specific Barcode decodes a particular barcode among a multitude of barcodes based on specific criteria defined in a [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type.  The criteria to capture the barcode is defined in the [NextGen SimulScan Template](../../templatebuilder). <!--See [Template Builder](../../templatebuilder) for more information and instructions on how to create the template. -->The criteria to read specific barcodes is based on the following options selected during template creation. Any combination of these options can be used.  If more than one barcode is present that matches the given criteria, then the option **Automatic Group Identification**, described in the following section, can be used instead. 
 * **Barcode Type –** Specifies the barcode type or decoder as defined in the template.
 * **Character Checking (Begins with) –** Specifies the specific character the barcode must begin with in order to decode, as defined in the template. Some common specifications:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**N -** (e.g.: NXXXXXX) for advice note number<br>

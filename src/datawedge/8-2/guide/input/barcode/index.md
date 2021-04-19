@@ -791,6 +791,8 @@ _\* See **[Decode Lengths section](#decodelengths)**, below_
 - **Enabled (1) -** To decode mirrored DotCode barcodes only.
 - **Auto (2) -** To decode both mirrored and non-mirrored DotCode barcodes (default).
 
+**Erasures -** To increase the decoding speed of Dotcode barcodes. The higher the value, the faster it can decode with a higher risk of misdecodes. Value range is 4 to 20; default value is 10. 
+
 ---
 
 ### Dutch Postal

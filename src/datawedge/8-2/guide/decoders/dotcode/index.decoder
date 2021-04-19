@@ -28,6 +28,10 @@ parm:
             - value: Disabled (0)
             - value: Enabled (1)
             - value: Auto (2)
+    - name: Erasures
+      description: To increase the decoding speed of Dotcode barcodes. The higher the value, the faster it can decode with a higher risk of misdecodes.
+      param: decoder_dotcode_eccerasure
+      paramvalue: Integer from 4-20 
 ---
 
 

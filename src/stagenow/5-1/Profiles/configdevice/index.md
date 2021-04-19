@@ -22,7 +22,7 @@ To create a Configure Device profile:
 
     Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
 
-5. If you selected MX 6.0 from the MX version drop-down menu, see [MX Selection](../../stagingprofiles?MX%206.0%20Selection), and then proceed to Step 7.
+5. If you selected MX 6.0 from the MX version drop-down menu, see [MX Selection](../../stagingprofiles/#mxselection), and then proceed to Step 7.
 
 6. To choose to connect to this network using StageNow bar codes, select Yes, and then select Continue. Otherwise, select No to skip to the RD Config section (if available). Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../../gettingstarted?Settings) screen. See [Rapid Deployment (RD) Client](../../stageclient?Rapid%20Deployment%20Client) for more information.
 

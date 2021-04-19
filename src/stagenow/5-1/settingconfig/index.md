@@ -62,7 +62,6 @@ After completing a Setting screen within a Profile Wizard, select the "Save Sett
 
 ![img](../images/SaveforReuse.jpg)
 
-
 During subsequent profile creations, select the Re-Use Saved Setting tab to select the existing (saved) setting for that Setting Type.
 
 ![img](../images/ReuseSavedSetting.jpg)

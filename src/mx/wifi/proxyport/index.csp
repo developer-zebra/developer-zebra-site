@@ -12,6 +12,4 @@ parm:
   type: string
 ---
 
-Used to enter the Port number for reaching the Proxy Server to access the Internet.
-
-
+Used to enter the Port number for reaching a Proxy Server to access the Internet.

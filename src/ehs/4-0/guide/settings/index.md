@@ -579,7 +579,7 @@ Optionally designates the custom graphic specified using the [Title Bar Icon Fil
 
 ------
 
-### Icon Label Background
+### Icon Label Background Color
 Specifies the background color of the icon label text of apps and links displayed in Admin and User Modes. Default background is #00FFFFFF, which is transparent with an opacity value of 00 (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_bg.png"/>
@@ -666,7 +666,7 @@ Screen orientation can be changed through the Quick Settings panel only when EHS
     
 ------
 
-### Auto Launch Enable (apps)
+### Auto Launch Enabled (apps)
 Enables one or more apps to be automatically launched after EHS starts up. Works with optional &lt;auto_launch&gt; section. When enabled, apps specified in the &lt;auto_launch&gt; section are launched after a specified delay. <b>BACK and HOME keys can be used to exit the app</b>. See the [Optional Feature Tags section](#optionalfeaturetags) for more information. Disabled by default. See also: [Kiosk Mode](#kiosk). 
 
 <img alt="" style="height:350px" src="autolaunch.png"/>
@@ -686,7 +686,7 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 ------
 
-### Service Auto Launch Enable
+### Service Auto Launch Enabled
 Enables one or more services to be automatically launched after EHS starts up. Works with optional &lt;service_auto_launch&gt; section. When enabled, apps specified in the &lt;service_auto_launch&gt; section are launched after a delay, if specified. The Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI; Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. Disabled by default. 
 
 <img alt="" style="height:350px" src="2-4_service_auto-launch.png"/>
@@ -704,7 +704,7 @@ Enables one or more services to be automatically launched after EHS starts up. W
 
 ------
 
-### Foreground Service Auto Launch Enable
+### Foreground Service Auto Launch Enabled
 Enables one or more services to be automatically launched in the foreground after EHS starts up. Works with optional &lt;foreground_service_auto_launch&gt; section. When enabled, apps specified in the &lt;foreground_service_auto_launch&gt; section are launched after a delay, if specified. The Foreground Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI (Oreo devices only); Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. **Disabled by default**. 
 
 <img alt="" style="height:350px" src="EHS_foreground_service_launch.png"/>
@@ -749,7 +749,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 ------
 
-### Wallpaper Stretching
+### Wallpaper Stretching Enabled
 Used to enable/disable the background image for display in Admin and User Modes to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
 
 <img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
@@ -829,7 +829,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 -->
 
-### Pinned Shortcuts
+### Pin Shortcuts
 
 **Applies to Oreo (and later) devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
 
@@ -1336,7 +1336,7 @@ On GMS devices running Android 8.x Oreo and later, Zebra implements a mode calle
 
 ------
 
-### Admin Max Attempts
+### Max Admin Login Attempts
 The number of failed Admin-mode login attempts before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node (see "Example Failed Login Counter" below). If a successful login occurs before the maximum is reached, the counter is reset. 
 
 Once disabled, counter is reset by pushing a new `enterprisehomescreen.xml` file to the device with a greater "max attempts" value, or by using the [Lockout Recovery](#lockoutrecovery) feature, if enabled. If this tag is not present or contains no value, the default of 10 is used. Failed login attempts are added to the [EHS log](../features#ehslog).  

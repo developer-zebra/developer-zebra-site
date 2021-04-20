@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Heater Selection
+title: Heater Selection (VC-series devices)
 type: parm
 order: 21
 mx: "7.1"

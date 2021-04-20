@@ -5,6 +5,7 @@ type: parm
 order: 21
 mx: "7.1"
 devicetype: A
+info: Supported only on VC8x vehicle-mounted computers and some similarly equipped Zebra devices.
 parm:
   pivotal: Yes
   name: HeaterSelect
@@ -44,4 +45,4 @@ parm:
       description: Selects the scanner-window heater on the MC93 device.  
 ---
 
-Used to enter the device heater upon which to perform an action using the Heater Action parameter. Device heaters are used to compensate for external temperatures and humidity levels, to help maintain proper device operation, prevent screen and/or internal frost or condensation, and to keep the device battery at optimal temperature. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to enter the device heater upon which to perform an action using the Heater Action parameter. Device heaters are used to compensate for external temperatures and humidity levels, to help maintain proper device operation, prevent screen and/or internal frost or condensation, and to keep the device battery at optimal temperature. **This feature applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices**. 

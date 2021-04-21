@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Configure a Device
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

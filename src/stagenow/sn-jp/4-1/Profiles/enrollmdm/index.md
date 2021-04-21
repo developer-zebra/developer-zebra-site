@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Enroll in an MDM
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

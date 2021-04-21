@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Perform OS Update
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

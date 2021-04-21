@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Manage Apps
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

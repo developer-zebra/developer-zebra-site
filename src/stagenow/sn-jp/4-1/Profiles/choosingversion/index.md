@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Choose the MX Version
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

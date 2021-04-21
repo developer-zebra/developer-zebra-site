@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Manage Security
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

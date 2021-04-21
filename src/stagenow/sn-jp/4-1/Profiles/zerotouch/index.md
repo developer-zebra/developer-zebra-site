@@ -1,5 +1,5 @@
 ---
-title: EHS Advanced Settings
+title: Zero Touch
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

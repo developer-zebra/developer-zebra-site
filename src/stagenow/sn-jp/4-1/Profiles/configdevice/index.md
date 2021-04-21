@@ -3,7 +3,7 @@ title: EHS Advanced Settings
 product: StageNow
 productversion: '5.1'
 layout: redirect.html
-redirect_url: /stagenow/sn-jp/5-2//Profiles/configdevice/
+redirect_url: /stagenow/sn-jp/5-2/Profiles/configdevice/
 
 ---
 

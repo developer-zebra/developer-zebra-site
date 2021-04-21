@@ -8,7 +8,7 @@ menu:
     - lang: cn,
       img: /images/flags/img-flag-china.png
       urlFrom: stagenow
-      urlTo: stagenow-cn
+      urlTo: stagenow/sn-cn
       label: CN - 普通话
   versions:
     - versionto: 2-2

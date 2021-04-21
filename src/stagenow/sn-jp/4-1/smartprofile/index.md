@@ -1,9 +1,9 @@
 ---
-title: EHS Advanced Settings
+title: Smart Profiles
 product: StageNow
 productversion: '5.1'
 layout: redirect.html
-redirect_url: /stagenow/sn-jp/5-2/guide/settings/
+redirect_url: /stagenow/sn-jp/5-2/smartprofile
 
 ---
 

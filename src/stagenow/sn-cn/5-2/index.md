@@ -1,5 +1,5 @@
 ---
-title: StageNow 5.0
+title: StageNow 5.2
 layout: list-mx.html
 menu:
   title: StageNow 5.0

@@ -1,5 +1,5 @@
 ---
-title: StageNow 5.0
+title: StageNow 5.1
 product: StageNow
 productversion: '5.1'
 layout: redirect.html

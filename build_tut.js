@@ -1881,9 +1881,11 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow/3-0/'
     }))
+/*  4/21/21- removed to prevent over-build  
     .use(foldermenu({
         folder: 'stagenow-cn/3-0/'
-    }))
+    })) 
+*/
     .use(foldermenu({
         folder: 'stagenow/3-1/'
     }))
@@ -1926,9 +1928,12 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emmtk/2-0/'
     }))
+
+
     .use(foldermenu({
         folder: 'licensing/'
     }))
+
 
     .use(foldermenu({
         folder: 'ehs/2-3/'

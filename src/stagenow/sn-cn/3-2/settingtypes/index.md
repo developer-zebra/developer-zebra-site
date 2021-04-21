@@ -4,7 +4,7 @@ description: 'Settings provide information for the staging administrator about h
 product: StageNow
 productversion: '3.2'
 layout: redirect.html
-redirect_url: /stagenow-cn/3-0/settingtypes/
+redirect_url: /stagenow/sn-cn/3-0/settingtypes/
 ---
 
 ## 切换到StageNow 3.0，最新的中文版...

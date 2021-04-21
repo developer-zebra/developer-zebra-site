@@ -1,7 +1,7 @@
 ---
-title: StageNow 3.2
+title: StageNow 4.0
 product: StageNow
-productversion: '3.2'
+productversion: '4.0'
 layout: redirect.html
 redirect_url: /stagenow/sn-cn/3-0/about/
 ---

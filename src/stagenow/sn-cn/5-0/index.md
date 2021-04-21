@@ -1,8 +1,8 @@
 ---
-title: StageNow 3.2
+title: StageNow 5.0
 layout: list-mx.html
 menu:
-  title: StageNow 3.2
+  title: StageNow 5.0
   img: /images/products/stagenow.png
   languages:
     - lang: cn,
@@ -53,7 +53,7 @@ menu:
     - icon: fa fa-search
       url: /stagenow/3-1/search
 product: StageNow
-productversion: '3.2'
+productversion: '5.0'
 ---
 
 

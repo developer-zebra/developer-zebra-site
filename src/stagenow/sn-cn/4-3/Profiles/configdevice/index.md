@@ -1,7 +1,7 @@
 ---
 title: Configure a Device
 product: StageNow
-productversion: '3.2'
+productversion: '4.3'
 layout: redirect.html
 redirect_url: /stagenow/sn-cn/3-0/Profiles/configdevice/
 ---

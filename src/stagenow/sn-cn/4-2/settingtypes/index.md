@@ -2,7 +2,7 @@
 title: Setting Types
 description: 'Settings provide information for the staging administrator about how to configure and manage settings for use when creating profiles. Each Setting Type lists the parameters and functions available for configuring that particular group of settings.'
 product: StageNow
-productversion: '3.2'
+productversion: '4.2'
 layout: redirect.html
 redirect_url: /stagenow/sn-cn/3-0/settingtypes/
 ---

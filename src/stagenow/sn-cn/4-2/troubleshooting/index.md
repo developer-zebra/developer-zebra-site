@@ -1,7 +1,7 @@
 ---
 title: StageNow Troubleshooting
 product: StageNow
-productversion: '3.2'
+productversion: '4.2'
 layout: redirect.html
 redirect_url: /stagenow/sn-cn/3-0/troubleshooting/
 ---

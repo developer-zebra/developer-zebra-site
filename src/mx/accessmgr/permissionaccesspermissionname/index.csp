@@ -6,6 +6,7 @@ order: 150
 mx: "10.0"
 apilevel: "26"
 devicetype: A
+info: If MANAGE_EXTERNAL_STORAGE permission is changed for an app through the Android 11 UI on devices with MX 10.5, subsequent attempts to set the option remotely will fail until the target app is reinstalled.
 parm:
   pivotal: Yes
   name: PermissionAccessPermissionName
@@ -44,7 +45,7 @@ parm:
       mx: "10.4"
       apilevel: "30"
       devicetype: 
-      info: If this permission was changed through the device UI on devices running Android 11 and MX 10.5, subsequent attempts to set this option remotely will fail until the app is reinstalled. 
+      info: If this permission is changed for an app through the Android 11 UI on devices with MX 10.5, subsequent attempts to set this option remotely will fail until the target app is reinstalled. 
       name: android.permission.MANAGE_EXTERNAL_STORAGE
       description: Controls management of USB and/or SD card storage media attached to the device. Can be used to grant permission to installed apps or to "pre-grant" permission to apps yet to be installed.
 ---

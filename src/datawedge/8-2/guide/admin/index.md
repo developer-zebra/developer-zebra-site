@@ -90,7 +90,7 @@ Specifies the full path and file name to import the configuration file (`datawed
 
 ## Import NextGen SimulScan templates
 
-Import NextGen SimulScan Templates for document capture by using [StageNow](/stagenow). After importing the template, it populates [Document Selection](../../input/barcode/#documentselectiondocumentcapturedocumentcapture) under NextGen SimulScan Configuration. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [NextGen SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
+Import NextGen SimulScan Templates for document capture by using [StageNow](/stagenow). After importing the template, it populates [Document Selection](../input/barcode/#documentselectiondocumentcapture) under NextGen SimulScan Configuration. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [NextGen SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
 Steps to deploy and import a Document Capture/NextGen SimulScan template to a device:
 1. Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template. <!-- Generate the template as an .XML file with [Template Builder](../templatebuilder). -->
@@ -106,10 +106,11 @@ Steps to deploy and import a Document Capture/NextGen SimulScan template to a de
     * **StageNow** - Generate the barcode. Open StageNow on the device and scan the barcode.
     * **EMM** - Click on **Export for MDM** to export the .XML file to deploy via EMM.  
 
+<!-- 
 Video demonstrating how to deploy and import a Document Capture/NextGen SimulScan template to a device using StageNow:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+-->
 <!-- <p>See <a href="../settings#massdeployment">Mass Deployment</a> for more information.</p>
 -->
 

@@ -72,3 +72,4 @@ Related Guides:
 * [DataWedge APIs and sample code](../../api) 
 * [DataWedge developer articles and blog posts](../../programmers-guides/articles)
 * [DataWedge Usage Notes and Behavior](../../programmers-guides/usage-notes)
+* [DataWedge Sample apps](../../samples)

@@ -225,7 +225,9 @@ _Scanner configuration_
 **NextGen (NG) SimulScan Configuration** is configuration transferred from legacy SimulScan Input of DataWedge previously deprecated. NG SimulScan is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Not all legacy SimulScan features are available - migration of these features into NextGen SimulScan is a continuous effort. Currently, the following features are part of NextGen SimulScan:
 
 * **[MultiBarcode](#multibarcodeparams) -** acquires multiple, unique barcodes from a form in a single scan session and delivers the data either immediately or after the specified number of barcodes per scan is reached. Supported since DataWedge 8.0. _Unlike legacy SimulScan, a template is not required for this MultiBarcode feature, as opposed to the MultiBarcode subfeature that is part of Document Capture that does require a template._
-* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a [NextGen SimulScan template](../../templatebuilder), also known as [Document Capture template](../../templatebuilder)._
+* **[Document Capture](#documentselectiondocumentcapture) -** retrieves data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. Supported since DataWedge 8.0 and only available on select devices and scanners, see [Feature Matrix](../../matrix). _Document Capture, which includes MultiBarcode as a subfeature, requires a **NextGen SimulScan template**, also known as a **Document Capture template**._
+
+<!-- [NextGen SimulScan template](../../templatebuilder), also known as [Document Capture template](../../templatebuilder)._-->
 
 > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 
@@ -284,26 +286,30 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 
 > <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span> 
 
+See [Document Capture Programmer's Guide](../../programmers-guides/ng-simulscan) for instructions on how to retrive data from a form using Document Capture.
+
 <!-- 
 See [Template Builder](../../templatebuilder) for instructions on how to create a Document Capture/NextGen SimulScan Template. After creating the Template, copy it to the device. -->
 
 To select the Document Capture/NextGen SimulScan Template, in the **NG SimulScan configuration** screen tap on **Document Selection** and select a template for the document to be captured (see screen capture below). This selection is populated after [importing the template](../../admin/#importnextgensimulscantemplates). With **Document Capture**, it is _required to **[Use content providers](../../programmers-guides/content-provider/)**_ to retrieve scanned data. <!-- To add a template to the Document Selection using DataWedge Manager CSP for ease of deployment, refer to **[Import NextGen SimulScan Templates](../../admin)** and **[NG SimulScan template](/mx/datawedgemgr)**. -->
 
 <img style="height:350px" src="document_selection.png"/>
+
 _Document Capture template selection_
+
 <br>
-
-Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow:
-
+<!-- 
+Video on how to deploy a Document Capture/NextGen SimulScan template to a device using StageNow: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
+-->
 
-<h4>The following subsections highlight a few different types of <a href="../../templatebuilder">Document Capture Template</a> options:</h4>
+<h4>The following subsections highlight a few different types of Document Capture Template<!--<a href="../../templatebuilder">Document Capture Template</a>--> options based on the defined template:</h4>
 <br>
 
 #### A) Anchor Barcode
 
-Document Capture with Anchor Barcode captures fields within a document as images, such as an address or signature, based on the barcode in the [NextGen SimulScan Template](../../templatebuilder) that determines the position of the fields being captured. Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. Once properly configured, scan the anchor barcode to capture the specific area as image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery. <br>
+Document Capture with Anchor Barcode captures fields within a document as images, such as an address or signature, based on the barcode in the NextGen SimulScan Template<!--[NextGen SimulScan Template](../../templatebuilder)--> that determines the position of the fields being captured. Applies to Image Capture<!--[Image Capture](../../templatebuilder/#imagecapture)--> template type. Once properly configured, scan the anchor barcode to capture the specific area as image. Different fields in the document can be captured in separate images. This is useful in situations such as delivery operations, to capture the address and signature in delivery forms as separate images for proof of delivery. <br>
 
 Video demonstration of document capture with anchor barcode:
 
@@ -312,7 +318,7 @@ Video demonstration of document capture with anchor barcode:
 
 #### B) Whole Page
 
-Whole Page Document Capture acquires the entire document, or form, as an image based on the surrounding borders of the content defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
+Whole Page Document Capture acquires the entire document, or form, as an image based on the surrounding borders of the content defined in the NextGen SimulScan Template<!-- [NextGen SimulScan Template](../../templatebuilder)-->. Applies to Image Capture<!--[Image Capture](../../templatebuilder/#imagecapture)--> template type. The entire document can be captured with or without scanning a barcode. The document must have black borders surrounding all four sides or be bordered by a contrasting background, otherwise the document cannot be captured.
 
 <!--
 After the NextGen SimulScan template is imported for Document Capture, the **Document Selection** is populated with the imported template name. Based on the template request, the template is customized with one of the following options:
@@ -334,7 +340,7 @@ Video demonstration of whole page document capture:
 
 #### C) Signature Presence Detection
 
-Detect the presence of a handwritten signature when scanning a document with Document Capture.  This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. The [NextGen SimulScan Template](../../templatebuilder) is required to designate the region on the form used to identify the location of the signature to detect its presence. Applies to [Image Capture](../../templatebuilder/#imagecapture) template type. Signature presence detection is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.<br>
+Detect the presence of a handwritten signature when scanning a document with Document Capture.  This feature is useful particularly for delivery or courier services to automatically check if a signature is missing, rather than manually performing the check. The NextGen SimulScan Template<!--[NextGen SimulScan Template](../../templatebuilder)--> is required to designate the region on the form used to identify the location of the signature to detect its presence. Applies to Image Capture<!--[Image Capture](../../templatebuilder/#imagecapture)--> template type. Signature presence detection is controlled through the Content Provider. See [Content Provider programmer's guide](../../programmers-guides/content-provider/#parameters) for more information.<br>
 
 Video demonstration of signature presence detection:
 
@@ -343,7 +349,7 @@ Video demonstration of signature presence detection:
 
 #### D) Read Specific Barcode
 
-Read Specific Barcode decodes a particular barcode among a multitude of barcodes based on specific criteria defined in a [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type.  The criteria to capture the barcode is defined in the [NextGen SimulScan Template](../../templatebuilder). <!--See [Template Builder](../../templatebuilder) for more information and instructions on how to create the template. -->The criteria to read specific barcodes is based on the following options selected during template creation. Any combination of these options can be used.  If more than one barcode is present that matches the given criteria, then the option **Automatic Group Identification**, described in the following section, can be used instead. 
+Read Specific Barcode decodes a particular barcode among a multitude of barcodes based on specific criteria defined in a NextGen SimulScan Template<!--[NextGen SimulScan Template](../../templatebuilder)-->. Applies to MultiBarcode<!--[MultiBarcode](../../templatebuilder/#multibarcode)--> (as part of Document Capture) template type.  The criteria to capture the barcode is defined in the NextGen SimulScan Template.<!--[NextGen SimulScan Template](../../templatebuilder).--> <!--See [Template Builder](../../templatebuilder) for more information and instructions on how to create the template. -->The criteria to read specific barcodes is based on the following options selected during template creation. Any combination of these options can be used.  If more than one barcode is present that matches the given criteria, then the option **Auto Group Identification**, described in the following section, can be used instead. 
 * **Barcode Type –** Specifies the barcode type or decoder as defined in the template.
 * **Character Checking (Begins with) –** Specifies the specific character the barcode must begin with in order to decode, as defined in the template. Some common specifications:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;**N -** (e.g.: NXXXXXX) for advice note number<br>
@@ -357,7 +363,7 @@ Read Specific Barcode decodes a particular barcode among a multitude of barcodes
 <br><br>
 
 #### E) Auto Group Identification
-**Auto Group Identification** decodes barcodes from a document that share a common pattern, designating them into a unique group based on the criteria defined in the [NextGen SimulScan Template](../../templatebuilder). Applies to [MultiBarcode](../../templatebuilder/#multibarcode) (as part of Document Capture) template type. All of the following criteria must be met for this group of barcodes in order to decode:
+**Auto Group Identification** decodes barcodes from a document that share a common pattern, designating them into a unique group based on the criteria defined in the NextGen SimulScan Template<!--[NextGen SimulScan Template](../../templatebuilder)-->. Applies to MultiBarcode<!--[MultiBarcode](../../templatebuilder/#multibarcode)--> (as part of Document Capture) template type. All of the following criteria must be met for this group of barcodes in order to decode:
 * Same barcode symbology
 * Same first 1-2 Characters of the barcode data
 * Same barcode data length

@@ -7,15 +7,15 @@ productversion: '8.2'
 
 ## Overview
 
-[Document Capture](../../input/barcode/#documentselectiondocumentcapture), as part of [NextGen (NG) SimulScan](../../input/barcode/#nextgensimulscanconfiguration), is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. It relies on [templates](../../templatebuilder) to capture and process the data to be consumed by an application. 
+[Document Capture](../../input/barcode/#documentselectiondocumentcapture), as part of [NextGen (NG) SimulScan](../../input/barcode/#nextgensimulscanconfiguration), is a data capture solution for retrieving data from documents, forms, and labels by scanning barcodes or capturing partial or entire documents as images. It relies on <!--[templates](../../templatebuilder)-->templates to capture and process the data to be consumed by an application. 
 
 -----
 
 ## Requirements
 
-* A Zebra TC51/TC56, TC55, TC70/TC75, TC70x/TC75x, TC8000 device running Android ??
+* See supported devices for Document Capture in the [Feature Matrtix](../../matrix).
 * Camera or supported 2D imager
-* DataWedge v8.0.28 or higher configured to access [NG SimulScan](../input/barcode/#nextgensimulscanconfiguration)
+* DataWedge v8.0.28 or higher configured to access [NG SimulScan](../../input/barcode/#nextgensimulscanconfiguration)
 * Device with [Mobility DNA license](/licensing), required for NG SimulScan's Document Capture feature
 
 -----
@@ -43,7 +43,7 @@ Templates are an important component of Document Capture, identifying the data t
 
 ### 2. Deploy Template to Device
 
-After the template is created, deploy the template to the device so it can be used by DataWedge. Use [StageNow](../../../../stagenow), which leverages [DataWedge Mgr CSP](/mx/datawedgemgr), to generate the barcode to scan and deploy the template to the device. Alternatively, an .XML file can be created through StageNow to deploy the template through an EMM (Enterprise Mobile Management) system.
+After the template is created, deploy the template to the device so it can be used by DataWedge. Use [StageNow](/stagenow), which leverages [DataWedge Mgr CSP](/mx/datawedgemgr), to generate the barcode to scan and deploy the template to the device. Alternatively, an .XML file can be created through StageNow to deploy the template through an EMM (Enterprise Mobile Management) system.
 
 Refer to [Import NextGen SimulScan Templates](../../admin/#importnextgensimulscantemplates) for step-by-step instructions.
 

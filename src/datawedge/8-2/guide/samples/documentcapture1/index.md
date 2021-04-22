@@ -33,7 +33,6 @@ This sample performs the following:
     * Associate this sample application to the profile.
 3. When scanning, the address and signature fields from the document "AnchorBarcodeTemplate.pdf" are captured as separate images based on specifications in the "SignatureAndAddressSeparately.xml" template. The height and width of the image output is adjusted.
 4. Display the captured data (address and signature) as separate images. 
-5. Save the image files to the device.
 
 > This sample application is only intended for educational purposes, demonstrating the use of DataWedge intent API(s). 
 

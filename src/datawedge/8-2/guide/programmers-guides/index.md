@@ -25,6 +25,11 @@ content-items:
     url: /datawedge/8-2/guide/programmers-guides/articles
   - type: section
     level: 4
+    title: Document Capture Programmer's Guide
+    text: This guide provides information on how to use Document Capture to retrieve and process data from a scanned form based on a template.
+    url: /datawedge/8-2/guide/programmers-guides/ng-simulscan
+  - type: section
+    level: 4
     title: Content Provider Programmer's Guide
     text: This guide provides information on leveraging DataWedge's content provider to retrieve scanned data from large files.
     url: /datawedge/8-2/guide/programmers-guides/content-provider

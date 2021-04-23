@@ -10,15 +10,15 @@ productversion: "4.1"
 This section discusses configuration of Device Tracker:
 
 * **[Create/Manage admin and manager logins](#webportal) –** Administrators use the web portal to:
-        * Add/Delete administrators
-        * Add/Delete site managers
-        * Reset passwords
+    * Add/Delete administrators
+    * Add/Delete site managers
+    * Reset passwords
 * **[Register access points](#siteaccesspointanddevicedata) -** Register access point location to identify which AP the device is connected to and aid in locating the device.
-        * Assign friendly name to access point based on the AP physical location on site
-        * Assign site location – to identify which site the AP belongs
+    * Assign friendly name to access point based on the AP physical location on site
+    * Assign site location – to identify which site the AP belongs
 * **[Register devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices.
-        * Assign friendly name
-        * Assign a site location
+    * Assign friendly name
+    * Assign a site location
 * **[Enable/Disable secondary BLE beacon](#secondaryble) -** Allow devices with a secondary BLE beacon to be located when the device loses power.
 <br>
 
@@ -189,6 +189,10 @@ Supported browsers:
 * Edge
 * Safari (v14.0 and later)
 
+<img style="height:250px" src="web-portal.png"/>
+
+_Device Tracker web portal_
+
 ### Add User
 
 To add a user:
@@ -241,12 +245,16 @@ The password can be reset through the web portal or the client app if the admini
 
 1. From the web portal, tap **License Summary** in the left menu.
 2. The following information is provided based on unexpired licenses:
-        * **Total licenses -** quantity of licenses that have been purchased
-            * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
-            * **Total licenses consumed -** quantity of licenses allocated to devices
-        * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
-        * **Sync Licenses** button to refresh license data on-demand. The license information is updated once each day.
-        * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
+    * **Total licenses -** quantity of licenses that have been purchased
+        * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
+        * **Total licenses consumed -** quantity of licenses allocated to devices
+    * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
+    * **Sync Licenses** button to refresh license data on-demand and synchronize with the Zebra Enterprise Software Licensing system. The license information is updated once each day.
+    * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
+
+<img style="height:250px" src="license.png"/>
+
+_License Summary in Device Tracker web portal_
 
 <!-- -->
 -----
@@ -312,27 +320,24 @@ To use EMM to capture logging, refer to the following XML content:
 
 * To enable logging:
 
-<pre class="prettify">
-    <code>
+
         <wap-provisioningdoc>
-        <characteristic version="1.0" type="com.zebra.devicetracker">
-            <parm name="EnableLog" value="1" />
-        </characteristic>
+            <characteristic version="1.0" type="com.zebra.devicetracker">
+                <parm name="EnableLog" value="1" />
+            </characteristic>
         </wap-provisioningdoc>
-    </code>
-</pre>
+
 
 * To disable logging:
 
-<pre class="prettify">
-    <code>
+
         <wap-provisioningdoc>
-        <characteristic version="1.0" type="com.zebra.devicetracker">
-            <parm name="EnableLog" value="0" />
-        </characteristic>
+            <characteristic version="1.0" type="com.zebra.devicetracker">
+                <parm name="EnableLog" value="0" />
+            </characteristic>
         </wap-provisioningdoc>
-    </code>
-</pre>
+
+
 Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
 <br><br>
 

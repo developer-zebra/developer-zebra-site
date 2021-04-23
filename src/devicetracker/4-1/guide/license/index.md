@@ -9,17 +9,17 @@ productversion: "4.1"
 
 Device Tracker requires an end-user license issued by Zebra Technologies. Licensing with Device Tracker is a simple, seamless process integrated with the normal operation of Device Tracker without the need for additional user intervention. 
 
-<p>Device Tracker uses the floating license model, in which licenses are shared among devices from a combined license pool regardless of expiration date. If a license is available, the Device Tracker server allocates a license to the device. When a license is no longer needed, the license is released from the device and returned to the license pool to make available to other devices.</p>
+Device Tracker uses the floating license model, in which licenses are shared among devices from a combined license pool regardless of expiration date. If a license is available, the Device Tracker server allocates a license to the device. When a license is no longer needed, the license is released from the device and returned to the license pool to make available to other devices.
 
 Available license types:
 
 * **Trial license** (90-day evaluation period)
 * **Term-based license**:
-        * 1-year term
-        * 3-year term
-        * 5-year term
+    * 1-year term
+    * 3-year term
+    * 5-year term
 
-<p>This guide explains the process of obtaining a Device Tracker license(s) for commercial use, applying the license(s) to individual devices, monitoring licenses from the Device Tracker web portal and taking action on licenses.</p>
+This guide explains the process of obtaining a Device Tracker license(s) for commercial use, applying the license(s) to individual devices, monitoring licenses from the Device Tracker web portal and taking action on licenses.
 
 -----
 
@@ -30,11 +30,11 @@ The first step in obtaining a license is to engage with Zebra or a Zebra reselle
 1. [Visit Zebra's Device Tracker product page](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html) and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
 2. Alternatively, select one of the following Zebra resources:
 
-        * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
-        * **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
-        * **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** information for contacting Zebra's existing global partner network
-        * **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
-        * **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
+    * **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
+    * **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
+    * **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** information for contacting Zebra's existing global partner network
+    * **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
+    * **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
 <br>
 
 ## II. Access Licensing System
@@ -45,14 +45,18 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 * **Order licenses**
 * **Check status** of existing orders
 
-<p>After licenses are processed, the license information <!--from the Zebra license portal--> is synchronized with the <a href="../config/#webportal">Device Tracker web portal</a> every 24 hours. The administrator can perform a manual synchronization in the Device Tracker web portal to <a href="../config/#viewlicenseinformation">refresh the license data</a> on-demand. The administrator monitors available licenses through the <a href="../config/#webportal">Device Tracker web portal</a> to view licenses available, licenses consumed and total licenses. </p> 
+After licenses are processed, the license information <!--from the Zebra license portal--> is synchronized with the <a href="../config/#webportal">Device Tracker web portal</a> every 24 hours. The administrator can perform a manual synchronization in the Device Tracker web portal to <a href="../config/#viewlicenseinformation">refresh the license data</a> on-demand to synchronize with Zebra Enterprise Software Licensing system. The administrator monitors available licenses through the <a href="../config/#webportal">Device Tracker web portal</a> to view licenses available, licenses consumed and total licenses. 
+
+<img style="height:250px" src="license.png"/>
+
+_License Summary in Device Tracker web portal_
 
 ## III. Automatic License Assignment
 
 Assigning licenses is seamless and integrated into the device registration process with the Device Tracker server. Licenses are allocated to devices based on enrollment with the server on a first-come, first-served basis. 
 
-<p>As part of the device registration process, after a device is staged with the server configuration, it communicates with the Device Tracker server. If a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device. Otherwise, a message is displayed on the device indicating that a license is not available.
-</p>
+As part of the device registration process, after a device is staged with the server configuration, it communicates with the Device Tracker server. If a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device. Otherwise, a message is displayed on the device indicating that a license is not available.
+
 
 -----
 
@@ -76,17 +80,16 @@ Device Tracker licenses can be removed by [decommissioning the device](../use/#d
 ## Important Notes
 
 Important information pertaining to Device Tracker licensing:
+
 * The <a href="../config/#webportal">Device Tracker web portal</a> provides the total license count. The <a href="../mgmt/#dashboard">device dashboard</a> provides the total number of devices being tracked. The difference between these two totals result to the number of devices that have no license.
 * **License allocation and deallocation** is based on enrollment to the Device Tracker server, regardless of the <a href="../mgmt/#dashboard">connection state</a> (disconnected or connected) seen from the device dashboard. 
 * [Never Connected](../mgmt/#dashboard) devices are not licensed.
 * Due to a **constraint from Google Firebase,** an attempt to activate licenses on more than 5,000 devices within a span of 5 minutes can result in a denial of licenses to devices. **Zebra strongly recommends limiting license activation to a maximum of 5,000 devices within 5 minutes.** To circumvent Google’s constraint:
- 
-        * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
-        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
+    * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
+    * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
 * When **allocating licenses to unlicensed devices,** license allocation is based on license availabilty and the enroll time with the server. Methods for license allocation:
-
-        * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
-        * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
+    * Device Tracker automatically synchronizes once every 4 hours to allocate licenses to devices.
+    * Device Tracker administrators can manually trigger license synchronization by using the **Sync Licenses** button in the [License Summary](../config/#viewlicenseinformation) screen on the Device Tracker web portal.
 
 
 

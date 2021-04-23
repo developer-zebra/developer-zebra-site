@@ -27,13 +27,13 @@ menu:
 
 **A: ZDS uses the following servers**:
 
-* **ZDS Server 1**:
- * URL: `https://analytics.zebra.com`
- * Port: `443`
+**<u>ZDS Server 1</u>**:
+* URL: `https://analytics.zebra.com`
+* Port: `443`
 
-* **ZDS Server 2**:
- * URL: ` https://device-https.savannacore.zebra.com`
- * Port: `443`
+**<u>ZDS Server 2</u>**:
+* URL: ` https://device-https.savannacore.zebra.com`
+* Port: `443`
 
 -----
 

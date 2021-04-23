@@ -23,12 +23,17 @@ menu:
 
 -----
 
-###Q: What is the server address and port number used by ZDS?
+###Q: What are the server address(es) and port number(s) used by ZDS?
 
-**A: ZDS uses the following server**:
+**A: ZDS uses the following servers**:
 
-* Server address: `http://analytics.zebra.com`
-* Server Port: `443`
+* **ZDS Server 1**:
+ * URL: `https://analytics.zebra.com`
+ * Port: `443`
+
+* **ZDS Server 2**:
+ * URL: ` https://device-https.savannacore.zebra.com`
+ * Port: `443`
 
 -----
 

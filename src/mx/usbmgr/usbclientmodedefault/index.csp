@@ -29,7 +29,7 @@ parm:
       name: File Transfer 
       mx: "10.4"
       apilevel: "29"
-      description: Sets USB port for copying files between the mobile device and host PC. 
+      description: Sets USB port for copying files from the host PC to the mobile device. 
     - code: 8
       devicetype: A
       name: MIDI 
@@ -50,4 +50,4 @@ parm:
       description: Sets USB port for tethering the device for sharing its internet connection with the host PC.
 ---
 
-Used to select the default operating mode of the USB port each time the device establishes a client-mode USB connection with a host PC. 
+Used to select the default operating mode of the USB port each time the device establishes a client-mode USB connection with a host PC. **NOTE: File transfer mode (option 4) allows file movement ONLY from the host PC to the device; it does not allow files to be copied from the device to the PC**. 

@@ -121,20 +121,23 @@ parm:
     - code: 16
       devicetype: A
       name: AllowApplicationUpgrade
-      description: Allows the selected app to receive upgrades.
+      description: Allows the selected app to apply upgrades downloaded from the Google Play store.
       mx: "10.3"
       osx: "8.13"
       apilevel: "26"
-      info: Not supported on SDM660-platform devices running Android 8.x Oreo. On devices running Android 10, this feature requires OSX 10.4 or later. 
+      info: Not supported on SDM660-platform devices running Android 8.x Oreo.
     - code: 17
       devicetype: A
       name: DisallowApplicationUpgrade
-      description: Prevents the selected app from receiving upgrades.
+      description: Prevents the selected app from applying upgrades downloaded from the Google Play store.
       mx: "10.3"
       osx: "8.13"
       apilevel: "26"
-      info: Not supported on SDM660-platform devices running Android 8.x Oreo. On devices running Android 10, this feature requires OSX 10.4 or later.
+      info: Not supported on SDM660-platform devices running Android 8.x Oreo.
 ---
+<!-- 4/26/21- removed from 16, 17 pending eng. conf: 
+On devices running Android 10, this feature requires OSX 10.4 or later.
+-->
 
 Used to enter the Action to perform on an app or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below).   
 

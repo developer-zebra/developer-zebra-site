@@ -24,6 +24,12 @@ parm:
       mx: "10.4"
       apilevel: "29"
       description: Sets USB port for battery charging only. 
+    - code: 4
+      devicetype: A
+      name: File Transfer 
+      mx: "10.4"
+      apilevel: "29"
+      description: Sets USB port for copying files between the mobile device and host PC. 
     - code: 8
       devicetype: A
       name: MIDI 

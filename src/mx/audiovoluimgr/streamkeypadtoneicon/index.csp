@@ -5,6 +5,7 @@ type: parm
 order: 66
 mx: "10.2"
 devicetype: A
+info: This parameter is deprecated; it will no longer be available beginning with MX 11.0.
 parm:
   pivotal: No
   name: STREAM_KEYPADTONE_Icon

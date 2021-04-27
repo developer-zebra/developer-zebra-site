@@ -6,6 +6,7 @@ order: 32
 mx: "4.4"
 osx: "4.4"
 devicetype: A
+info: This parameter is deprecated; it will no longer be available beginning with MX 11.0.
 parm:
   presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No

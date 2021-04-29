@@ -1,0 +1,34 @@
+---
+csp: displaymgr
+title: Activity Resizability
+type: parm
+order: 10
+mx: "10.5"
+apilevel: "29"
+devicetype: A
+parm:
+  pivotal: No
+  name: ActivityResizability
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      apilevel: "29"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: All activities resizable
+      mx: "10.5"
+      apilevel: "29"
+      description: Allows all app activities to run in windows that can be resized and/or moved.
+    - code: 2
+      devicetype: A
+      name: Follow app manifest
+      mx: "10.5"
+      apilevel: "29"
+      description: Allows all app activities to run in resizable or fixed windows as prescribed in the app's manifest. 
+---
+
+Used to control whether app activities are forced to run in windows that can be resized and/or moved by the device user or should follow the app manifest.

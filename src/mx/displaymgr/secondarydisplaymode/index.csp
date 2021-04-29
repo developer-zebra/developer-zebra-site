@@ -1,0 +1,34 @@
+---
+csp: displaymgr
+title: Secondary Display Mode
+type: parm
+order: 10
+mx: "10.5"
+apilevel: "29"
+devicetype: A
+parm:
+  pivotal: No
+  name: SecondaryDisplayMode
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      apilevel: "29"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Present Independent Desktop
+      mx: "10.5"
+      apilevel: "29"
+      description: Enables apps to run in windows that can be resized and/or moved.
+    - code: 2
+      devicetype: A
+      name: Mirror Device Screen
+      mx: "10.5"
+      apilevel: "29"
+      description: Forces apps to run in windows that cannot be resized or moved. 
+---
+
+Used to control whether content displayed on an external monitor, when connected, mirrors the device or is independent of the device. 

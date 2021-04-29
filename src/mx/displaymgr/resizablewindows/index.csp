@@ -1,0 +1,34 @@
+---
+csp: displaymgr
+title: Resizable Windows On/Off
+type: parm
+order: 10
+mx: "10.5"
+apilevel: "29"
+devicetype: A
+parm:
+  pivotal: No
+  name: ResizableWindows
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      apilevel: "29"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn On
+      mx: "10.5"
+      apilevel: "29"
+      description: Runs apps in windows that can be resized and/or moved.
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      mx: "10.5"
+      apilevel: "29"
+      description: Runs apps in windows that cannot be resized or moved, regardless of settings in the app's manifest. 
+---
+
+This is the On/Off switch for Resizable Windows on the device, which controls whether applications run in windows that can be resized and/or moved by the device user. When turned off (option 2), apps launch in windows of fixed size and position, overriding settings in the app's manifest.

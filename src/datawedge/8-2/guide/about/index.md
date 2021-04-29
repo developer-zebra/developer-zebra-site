@@ -128,6 +128,7 @@ For more information about approved languages or to download a localized operati
 - New Document Capture features:
   - Detect the presence of a handwritten signature with [signature presence detection](../input/barcode/#documentselectiondocumentcapture). To detect this programmatically, see [Content Provider Programmer's Guide](../programmers-guides/content-provider).
   - Capture the entire document as an image with [whole page document capture](../input/barcode/#documentselectiondocumentcapture)
+  - [Document Capture](../input/barcode/#documentselectiondocumentcapture) via Camera scanner for better quality images. Support for this feature depends on the hardware and operating system version. Refer to the [Feature Matrix](../matrix) table for more information.
 - New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 - Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
 

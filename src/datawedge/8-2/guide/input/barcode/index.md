@@ -254,7 +254,7 @@ Aside from **[Scanning Modes](#scanningmodes)**, **[Document Selection](#documen
 **Scanning Modes** selects the mode to scan barcodes:
 
 - **[MultiBarcode](#multibarcodeparams) -** multiple barcodes read in a single scan. A template is not required.<br>
-- <b><a href="#documentselectiondocumentcapture">Document Capture</a> -</b> capture fields within a document or capture the entire document as an image based on a specified template. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
+- <b><a href="#documentselectiondocumentcapture">Document Capture</a> -</b> capture fields within a document or capture the entire document as an image based on a specified template. Support for this feature depends on the hardware and operating system version. Refer to the [Feature Matrix](../../matrix) table for more information. <span style="color:red">Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.</span>
 - **Disabled –** when a scanning mode, such as **Single** or **UDI,** is selected in the **Scanner Configuration** section, scanning mode is automatically disabled in **NG SimulScan Configuration,** preventing any other selection.
 
 **Scanning Modes** exists within both **Scanner Configuration** and **NG SimulScan Configuration** sections. The availability of **Scanning Modes** options is interdependent on the option selected within each section:

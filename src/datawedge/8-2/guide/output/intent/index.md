@@ -74,7 +74,7 @@ See [Use Content Provider Programmer's Guide](../../programmers-guides/content-p
 **&#49;. Locate the Intent Output section of the Profile** being configured.
 
 **&#50;. Check "Enabled" box** to activate Intent Output:  
-<img style="height:450px" src="intent_output.png"/>
+<img style="height:350px" src="intent_output.png"/>
 _Intent Output options for the "Launcher" Profile_
 <br>
 
@@ -96,7 +96,7 @@ _Intent Output options for the "Launcher" Profile_
 **When Intent delivery is set to "Send via startService"**, startService() Android API is called to deliver data for devices prior to Android Oreo (v8.0). For Android Oreo and above devices, the option "Use startForegroundService on failure" is available within this setting to call startForegroundService() if the startService() call fails. With this single option, it provides support for devices both prior and later than Android Oreo. 
 -->
 **&#52;. Specify component information for secure intent delivery.** Tap on **Component Information.** 
-<img style="height:450px" src="component_info.png"/>
+<img style="height:350px" src="component_info.png"/>
 _Component Information under Intent Output_
 <br>
 Tap the top right menu and select **New Component.**
@@ -118,7 +118,7 @@ _Component Information list_
 <br>
 
 **&#53;. Enable Use Content Providers** from the Intent Output screen when scanning large data such as images (for example with Signature Capture and NextGen SimulScan).
-<img style="height:450px" src="content_provider.png"/>
+<img style="height:350px" src="content_provider.png"/>
 _Use Content Providers_
 
 -----

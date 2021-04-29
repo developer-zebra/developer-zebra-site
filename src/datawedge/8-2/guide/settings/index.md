@@ -226,22 +226,37 @@ DataWedge Profile naming convention: `dwprofile_<profilename>.db`.
 
 ### Cross-device Import
 
-Profiles and Config files exported from a device with DataWedge 6.5 (or higher) can be imported to other devices running DataWedge 6.5 (or higher), even if the source and destination devices contain different scanning and/or imaging peripherals. To accommodate hardware differences, DataWedge 6.5 implements the following user-interface changes.
+Profiles and Config files exported from a device with DataWedge 6.5 (or higher) can be imported to other devices running DataWedge 6.5 (or higher), even if the source and destination devices contain different scanning and/or imaging peripherals. To accommodate hardware differences, DataWedge 6.5 (or higher) implements the following user-interface changes.
 <br>
 
-##### Peripheral Not Present, 'Auto' not selected
+##### Peripheral Not Present, 'Use auto' selected
+If the selected scanner in the original device is not supported in the destination device but "Use auto" is selected (as shown below), DataWedge applies the input settings (i.e. decoder parameters, etc.) as originally configured for the source scanning device to the automatically selected peripheral on the destination device. 
+
+<table>
+ <tr>
+  <td>
+  <img style="height:350px" src="barcode_input.png"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+    <td>
+  <img style="height:350px" src="scanner_selection_menu.jpeg"/>
+  </td>
+  <td> &nbsp; &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="scanner_selection.png"/>
+  </td>
+ </tr>
+</table>
+<i>"Use Auto" selected</i>
+<br>
+
+##### Peripheral Not Present, 'Use auto' not selected
 If a source Profile is configured for a scanner that's not supported by the destination device, a dialog similar to the image below will appear when selecting a scanner for the Profile. For example, the Zebra TC75 has a camera; the TC51 does not. If a Profile configured for a camera created on the TC75 was imported by the TC51, a message like the one below appears, prompting the user to select a peripheral for scanning. After selection, DataWedge applies the input settings (i.e. decoder parameters, etc.) as originally configured for the source scanning device to the manually selected peripheral on the destination device.
 
 <img style="height:350px" src="dw_65_scanner_selection.png"/>
-_Image shown if no Auto device (radio button) was selected_ 
-<br>
-<br>
-
-##### Peripheral Not Present, 'Auto' selected
-If the selected scanner in the original device is not supported in the destination device but the "Auto" checkbox and "Auto" radio button are selected (as shown below), DataWedge applies the input settings (i.e. decoder parameters, etc.) as originally configured for the source scanning device to the automatically selected peripheral on the destination device. 
-
-<img style="height:350px" src="dw_65_use_auto.png"/>
-_Image shown if an Auto device (radio button) was selected_ 
+_"Use auto" not selected_ 
 <br>
 <br>
 

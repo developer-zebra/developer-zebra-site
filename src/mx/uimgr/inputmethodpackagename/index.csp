@@ -2,7 +2,7 @@
 csp: uimgr
 title: Input Method Package Name
 type: parm
-order: 11
+order: 110
 mx: "4.3"
 apilevel: "16"
 devicetype: A,B

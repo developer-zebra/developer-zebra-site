@@ -12,6 +12,8 @@ PowerPrecision Console (PPC) consists of the following two components:
 - **Client** – PPC client app runs on [supported Zebra Android mobile devices](../about#devicerequirements). It collects and sends battery and device information to the server.
 - **Server** – PPC server became part of the Zebra DNA Visibility Console server solution starting with v2.0, a common server software for both [Device Tracker](/devicetracker/latest/guide/about) and PowerPrecision Console. It provides a centralized dashboard that is accessible from a supported browser running on a kiosk, tablet, or PC. The server collects and analyzes device battery data, monitors battery information, sends notifications and generates reports.
 
+> PowerPrecision Console operates on WiFi networks and does not support WWAN.
+
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
 
 - **Install a server certificate** - Supported certificates:
@@ -58,6 +60,8 @@ This section provides the server and device requirements. PPC supports a maximum
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum memory (RAM): 64 GB<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum available hard drive space: 500 GB<br>
 
+**Note:** Zebra does not recommend hosting the server in the cloud.
+
 ### Device Requirements
 
 1. Supported Devices: Refer to <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html">PPC download site</a> for supported devices.
@@ -72,7 +76,7 @@ This section provides the server and device requirements. PPC supports a maximum
 
 For existing PPC installations, uninstall PPC and ensure all PPC folders are removed. Then proceed to a new ZDVC Server installation.
 
-For new installations, download ZDVC Server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+For new installations, contact your Zebra sales representative for the server download.  Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ### Server Prerequisites
 

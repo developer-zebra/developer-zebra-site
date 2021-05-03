@@ -20,6 +20,8 @@ Device Tracker On-Prem is a centralized software solution that tracks and finds 
 
 When locating a device, Device Tracker On-Prem identifies the general area where the misplaced device is located based on the Access Point (AP) it is connected to within the facility. The BLE proximity indicator uses Bluetooth beacon transmissions to determine the approximate location of the misplaced device in comparison to the finding device. Chirping audio can be played on the misplaced device to further determine its specific location.
 
+> Device Tracker On-Prem operates on WiFi networks and does not support WWAN.
+
 ## Main Features
 
 Device Tracker On-Prem main features:

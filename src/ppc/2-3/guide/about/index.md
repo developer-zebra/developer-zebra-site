@@ -9,6 +9,8 @@ productversion: '2.3.1'
 
 PowerPrecision Console (PPC) is a battery management solution that provides administrators a centralized view of statistical battery data from Zebra mobile device batteries, including battery health and charge level, to maximize workforce productivity. It continuously monitors battery health data analyzed in real time, giving administrators insight to determine when battery health could affect productivity as it reaches its EOL (end-of-life) and when the battery should be removed from service. Customized notifications can be triggered to alert device users of actions needed for battery swapping or decommissioning, ensuring optimized deployment of healthy batteries at all times. The centralized view of battery health is grouped into color-coded categories of "good health", "nearing EOL" and "in EOL", to identify and remove aging batteries from the battery pool prior to impacting workforce productivity.
 
+> PowerPrecision Console operates on WiFi networks and does not support WWAN.
+
 ##Main Features
 PowerPrecision Console main features:
 * Centralized dashboard to easily view battery information tracking: state-of-health (SOH), state-of-charge (SOC), battery status, and other information from deployed Zebra mobile computer batteries 

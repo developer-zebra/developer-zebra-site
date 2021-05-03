@@ -12,6 +12,8 @@ Device Tracker On-Prem consists of the following two components:
 - **Client** – Device Tracker On-Prem client app runs on [supported Zebra Android mobile devices](../about/#supporteddevices). It collects device information, sends presence updates to the server, and provides a remote chirping device finding feature. The client app can play the role of either the tracking device or the device being tracked.
 - **Server** – Device Tracker On-Prem server is part of the Zebra DNA Visibility Console server solution, a common server software for both Device Tracker On-Prem and [PowerPrecision Console](/ppc/latest/guide/about). It provides a centralized dashboard that is accessible from a supported browser running on a kiosk, tablet, or PC. The server collects and processes device data for tracking misplaced devices, including tracking status, connection status, and battery status.
 
+> Device Tracker On-Prem operates on WiFi networks and does not support WWAN.
+
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
 
 - **Install a server certificate** - Supported certificates:
@@ -68,6 +70,8 @@ This section provides the server and device requirements. Device Tracker On-Prem
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum memory (RAM): 64 GB<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;Minimum available hard drive space: 500 GB<br>
 
+**Note:** Zebra does not recommend hosting the server in the cloud.
+
 <!--
 7. Hardware Requirements:
    * Minimum CPU cores: 16
@@ -87,7 +91,7 @@ Requirements for Device Tracker On-Prem client:
 See [Supported Devices](../about#supporteddevices).
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Contact your Zebra sales representative for the server download. Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
@@ -98,8 +102,8 @@ The following are the prerequisites required for the server: <br>
 
 3.  **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator.
 
-        * Backend Server (data) Port: inbound (e.g. port 8080)
-        * Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
+        Backend Server (data) Port: inbound (e.g. port 8080)
+        Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 
     <br>
 

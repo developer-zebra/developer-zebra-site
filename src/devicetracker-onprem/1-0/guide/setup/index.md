@@ -15,6 +15,8 @@ Solution components:
 - **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, and battery status.
 - **Device Tracker On-Prem client** - reports device presence status and information (such as remaining battery and charging status) to server
 
+> Device Tracker On-Prem operates on WiFi networks and does not support WWAN.
+
 Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
 
 - **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
@@ -60,6 +62,8 @@ This section provides the server and device requirements. Device Tracker On-Prem
    - Minimum CPU cores: 16
      - Minimum memory (RAM): 64 GB
        - Minimum available hard drive space: 500 GB
+
+**Note:** Zebra does not recommend hosting the server in the cloud.
 
 ###Device Requirements
 Requirements for Device Tracker On-Prem client:
@@ -126,7 +130,7 @@ Supported Devices (including GMS and non-GMS versions):
 </table>
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). Install ZDVC server on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Contact your Zebra sales representative for the server download. Install ZDVC server on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>

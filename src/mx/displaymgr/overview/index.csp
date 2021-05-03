@@ -12,6 +12,9 @@ The Display Manager (DisplayMgr) provides control of certain display-screen feat
 
 * Enable/disable: 
  * Screen blanking
+ * Secondary display
+ * Resizable and moveable app windows
+ * Resizable activity windows
  * Stay Awake mode 
  * Screen shot usage
  * Adaptive brightness

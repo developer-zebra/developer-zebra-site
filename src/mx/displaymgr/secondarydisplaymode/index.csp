@@ -22,13 +22,13 @@ parm:
       name: Present Independent Desktop
       mx: "10.5"
       apilevel: "29"
-      description: Enables apps to run in windows that can be resized and/or moved.
+      description: Content presented on an external monitor is independent of content on device.
     - code: 2
       devicetype: A
       name: Mirror Device Screen
       mx: "10.5"
       apilevel: "29"
-      description: Forces apps to run in windows that cannot be resized or moved. 
+      description: Content presented on an external monitor is the same as content on device. 
 ---
 
 Used to control whether content displayed on an external monitor, when connected, mirrors the device or is independent of the device. 

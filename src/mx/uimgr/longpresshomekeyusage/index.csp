@@ -2,7 +2,7 @@
 csp: uimgr
 title: Long-Press HOME Key Enable/Disable
 type: parm
-order: 6
+order: 30
 mx: "8.2"
 osx: "7.7"
 devicetype: A

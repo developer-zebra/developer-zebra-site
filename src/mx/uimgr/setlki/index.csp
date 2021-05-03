@@ -2,7 +2,7 @@
 csp: uimgr
 title: LKI Usage Enable/Disable
 type: parm
-order: 37
+order: 145
 mx: "9.0"
 osx: "8.1"
 devicetype: A,B

@@ -1,0 +1,19 @@
+---
+csp: uimgr
+title: External Keyboard Layout
+type: parm
+order: 17
+mx: "10.5"
+devicetype: A
+parm:
+  presentif: External Keyboard Action is "Add/Replace Keyboard Layout Mapping"
+  pivotal: No
+  name: ExternalKeyboardLayout
+  type: string
+---
+
+Used to enter a keyboard layout name upon which to perform an Action. 
+
+**Parm value input rules**: 
+
+* String of at least one alphanumeric character

@@ -2,7 +2,7 @@
 csp: uimgr
 title: Status Bar Enable/Disable
 type: parm
-order: 40
+order: 155
 mx: "8.4"
 osx: "8.1"
 apilevel: "27"

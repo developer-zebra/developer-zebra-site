@@ -2,7 +2,7 @@
 csp: uimgr
 title: Clipboard
 type: parm
-order: 2
+order: 5
 mx: "4.2"
 osx: "4.2"
 devicetype: A

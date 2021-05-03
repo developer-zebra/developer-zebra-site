@@ -2,7 +2,7 @@
 csp: uimgr
 title: Navigation Bar Enable/Disable
 type: parm
-order: 20
+order: 120
 mx: "7.1"
 osx: "6.2"
 devicetype: A,B

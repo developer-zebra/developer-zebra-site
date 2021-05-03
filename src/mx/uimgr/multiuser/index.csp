@@ -2,7 +2,7 @@
 csp: uimgr
 title: Multi-user Enable/Disable
 type: parm
-order: 7
+order: 45
 mx: "8.1"
 osx: "8.5"
 devicetype: A

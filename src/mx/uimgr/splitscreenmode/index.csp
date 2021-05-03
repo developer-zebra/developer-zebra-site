@@ -2,7 +2,7 @@
 csp: uimgr
 title: Split Screen Enable/Disable
 type: parm
-order: 7
+order: 60
 mx: "8.1"
 osx: "7.7"
 devicetype: A,B

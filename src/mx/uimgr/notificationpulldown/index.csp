@@ -2,7 +2,7 @@
 csp: uimgr
 title: Notification Pulldown Enable/Disable
 type: parm
-order: 15
+order: 110
 mx: "5.1"
 osx: "5.1"
 apilevel: "16"

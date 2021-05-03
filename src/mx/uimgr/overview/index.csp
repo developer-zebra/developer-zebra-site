@@ -14,12 +14,12 @@ Android devices contain a variety of System applications that access UI elements
 
 ### Main Functionality
 
-* Enable/Disable the following:
+* **Enable/Disable**:
   * Quick Settings controls for user access to Wi-Fi, Bluetooth and other settings
-  * Clipboard function, which allows a device user to copy and paste information between applications
-  * The AutoCorrect function, which stores commonly entered words and allows them to be entered instead of similar words that were mistyped
-  * The Home Key function, which exits current application and presents the Home Screen application
-  * The Bluetooth Paring pop-up feature, which requests device-user involvement even if an application has supplied all required pairing information
+  * Clipboard 
+  * AutoCorrect function
+  * HOME Key function
+  * The Bluetooth Paring pop-up
   * "The network may be monitored..." message
   * "Recent Apps" button
   * Navigation Bar
@@ -36,4 +36,4 @@ Android devices contain a variety of System applications that access UI elements
   * Set the Current Locale for a desired language and region
   * Set the Default Input Method to enhance entry of localized data
 * Clear the Clipboard, which discards any prior data that might have been copied
-
+* Add, Replace, Remove and Remove All external keyboards and keyboard mappings

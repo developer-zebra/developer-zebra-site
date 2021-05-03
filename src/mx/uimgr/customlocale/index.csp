@@ -2,7 +2,7 @@
 csp: uimgr
 title: Set a Custom Locale
 type: parm
-order: 8
+order: 80
 mx: "5.1"
 devicetype: A,B
 parm:

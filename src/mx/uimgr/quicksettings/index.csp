@@ -2,7 +2,7 @@
 csp: uimgr
 title: Two-Finger Quick Settings Enable/Disable
 type: parm
-order: 16
+order: 115
 mx: "5.2"
 osx: "5.2"
 apilevel: "16"

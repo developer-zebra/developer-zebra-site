@@ -1,34 +1,38 @@
 ---
 csp: uimgr
-title: Clipboard
+title: External Keyboard Action
 type: parm
-order: 2
-mx: "4.2"
-osx: "4.2"
+order: 10
+mx: "10.5"
 devicetype: A
 parm:
   pivotal: No
-  name: ClipBoardUsage
+  name: ExternalKeyboard
   type: list
   list:
     - code: 0
-      mx: "4.2"
-      osx: "4.2"
+      mx: "10.5"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes as to whether the Clipboard function can be used; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) causes no changes device settings; any previously selected setting is retained. 
     - code: 1
       devicetype: A
-      name: Enable 
-      mx: "4.2"
-      osx: "4.2"
-      description: Enables the Clipboard function to be used.
+      name: Add/Replace Keyboard Layout Mapping 
+      mx: "10.5"
+      description: Adds a keyboard layout to the device or replaces one of the same name.   
     - code: 2
       devicetype: A
-      name: Disable
-      mx: "4.2"
-      osx: "4.2"
-      description: Disables use of the Clipboard function. Note- This will prevent the user from using the copy and paste functions for moving data to and from the clipboard. Attempting to use a disabled clipboard will result in an Android Toast message stating that the clipboard is disabled.
+      name: Remove Keyboard Layout Mapping
+      mx: "10.5"
+      description: Removes a keyboard layout from the device.
+    - code: 3
+      devicetype: A
+      name: Remove All Keyboard Layout Mappings
+      mx: "10.5"
+      description: Removes all keyboard layouts from the device.
 ---
 
-Controls whether the Clipboard function can be used, potentially enabling a device user to move data from one app to another.
+`EXPERIMENTAL FEATURE` 
+
+Used to select an Action to perform on the keyboard layout specified in the External Keyboard Name parameter.
+

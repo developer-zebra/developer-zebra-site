@@ -2,7 +2,7 @@
 csp: uimgr
 title: Date Launches Clock App Enable/Disable
 type: parm
-order: 7
+order: 35
 mx: "8.2"
 osx: "7.7"
 devicetype: A

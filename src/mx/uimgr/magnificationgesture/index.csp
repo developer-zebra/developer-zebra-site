@@ -2,7 +2,7 @@
 csp: uimgr
 title: Magnification Gesture
 type: parm
-order: 30
+order: 130
 mx: "8.0"
 apilevel: "24"
 devicetype: A,B

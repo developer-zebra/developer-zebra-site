@@ -2,7 +2,7 @@
 csp: uimgr
 title: App Info Icon Enable/Disable
 type: parm
-order: 7
+order: 75
 mx: "8.2"
 osx: "7.7"
 devicetype: A

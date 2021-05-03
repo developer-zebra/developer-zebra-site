@@ -2,7 +2,7 @@
 csp: uimgr
 title: AutoCorrect Usage Enable/Disable
 type: parm
-order: 4
+order: 20
 mx: "4.3"
 apilevel: "1"
 devicetype: A

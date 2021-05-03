@@ -2,7 +2,7 @@
 csp: uimgr
 title: Gear Icon Show/Hide
 type: parm
-order: 14
+order: 105
 mx: "5.1"
 osx: "5.1"
 apilevel: "16"

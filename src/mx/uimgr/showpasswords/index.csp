@@ -2,7 +2,7 @@
 csp: uimgr
 title: Password Characters Show/Hide
 type: parm
-order: 32
+order: 135
 mx: "9.1"
 apilevel: "26"
 devicetype: A,B

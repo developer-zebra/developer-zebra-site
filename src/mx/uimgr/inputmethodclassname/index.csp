@@ -2,7 +2,7 @@
 csp: uimgr
 title: Input Method Class Name
 type: parm
-order: 12
+order: 95
 mx: "4.3"
 apilevel: "16"
 devicetype: A,B

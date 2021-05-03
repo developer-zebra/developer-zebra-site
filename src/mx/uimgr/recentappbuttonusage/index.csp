@@ -2,7 +2,7 @@
 csp: uimgr
 title: Recent App Button Enable/Disable
 type: parm
-order: 25
+order: 125
 mx: "7.1"
 osx: "7.2"
 devicetype: A,B

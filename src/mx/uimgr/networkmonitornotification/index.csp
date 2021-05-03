@@ -2,7 +2,7 @@
 csp: uimgr
 title: Network 'Monitored' Message Enable/Disable
 type: parm
-order: 7
+order: 40
 mx: "6.1"
 osx: "6.0"
 devicetype: A,B

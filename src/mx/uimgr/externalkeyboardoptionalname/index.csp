@@ -1,0 +1,19 @@
+---
+csp: uimgr
+title: External Optional Keyboard Name
+type: parm
+order: 15
+mx: "10.5"
+devicetype: A
+parm:
+  presentif: External Keyboard Action is "Remove Keyboard Layout Mapping"
+  pivotal: No
+  name: ExternalOptionalKeyboardName
+  type: string
+---
+
+Used to enter a keyboard layout name to remove from the device. 
+
+**Parm value input rules**: 
+
+* String of at least one alphanumeric character

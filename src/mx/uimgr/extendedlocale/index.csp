@@ -2,7 +2,7 @@
 csp: uimgr
 title: Set an Extended Locale
 type: parm
-order: 9
+order: 85
 mx: "4.3"
 apilevel: "16"
 devicetype: A,B

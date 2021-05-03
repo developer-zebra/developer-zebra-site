@@ -2,7 +2,7 @@
 csp: uimgr
 title: Do Not Disturb Enable/Disable
 type: parm
-order: 7
+order: 65
 mx: "8.1"
 osx: "8.5"
 devicetype: A

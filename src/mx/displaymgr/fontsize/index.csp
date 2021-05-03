@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Font Size
 type: parm
-order: 30
+order: 34
 mx: "9.2"
 apilevel: "17"
 devicetype: A

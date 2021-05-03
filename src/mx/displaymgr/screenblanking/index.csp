@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Screen Blanking Enable/Disable
 type: parm
-order: 10
+order: 45
 mx: "7.1"
 devicetype: A
 parm:

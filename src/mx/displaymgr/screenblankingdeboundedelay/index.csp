@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Set Blanking Debounce Delay
 type: parm
-order: 30
+order: 46
 mx: "7.1"
 devicetype: A
 parm:

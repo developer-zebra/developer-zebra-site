@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Screen Shot Enable/Disable
 type: parm
-order: 50
+order: 40
 mx: "5.0"
 osx-specific-list: "3.6,4.5"
 osx-exclude: "4.0"

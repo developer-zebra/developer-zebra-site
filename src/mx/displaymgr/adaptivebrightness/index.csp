@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Adaptive Brightness On/Off
 type: parm
-order: 10
+order: 30
 mx: "10.2"
 apilevel: "27"
 devicetype: A

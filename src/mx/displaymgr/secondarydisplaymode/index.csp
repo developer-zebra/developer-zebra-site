@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Secondary Display Mode
 type: parm
-order: 10
+order: 20
 mx: "10.5"
 apilevel: "29"
 devicetype: A

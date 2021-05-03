@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Activity Resizability
 type: parm
-order: 10
+order: 25
 mx: "10.5"
 apilevel: "29"
 devicetype: A

@@ -1,0 +1,34 @@
+---
+csp: uimgr
+title: Clipboard
+type: parm
+order: 2
+mx: "4.2"
+osx: "4.2"
+devicetype: A
+parm:
+  pivotal: No
+  name: ClipBoardUsage
+  type: list
+  list:
+    - code: 0
+      mx: "4.2"
+      osx: "4.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no changes as to whether the Clipboard function can be used; any previously selected setting will be retained. 
+    - code: 1
+      devicetype: A
+      name: Enable 
+      mx: "4.2"
+      osx: "4.2"
+      description: Enables the Clipboard function to be used.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "4.2"
+      osx: "4.2"
+      description: Disables use of the Clipboard function. Note- This will prevent the user from using the copy and paste functions for moving data to and from the clipboard. Attempting to use a disabled clipboard will result in an Android Toast message stating that the clipboard is disabled.
+---
+
+Controls whether the Clipboard function can be used, potentially enabling a device user to move data from one app to another.

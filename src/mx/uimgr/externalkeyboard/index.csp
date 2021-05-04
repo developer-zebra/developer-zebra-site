@@ -4,7 +4,9 @@ title: External Keyboard Action
 type: parm
 order: 10
 mx: "10.5"
+apilevel: "30"
 devicetype: A
+info: This is an experimental feature and is NOT covered by Zebra Technical Support. 
 parm:
   pivotal: No
   name: ExternalKeyboard
@@ -12,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "10.5"
+      apilevel: "30"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no changes device settings; any previously selected setting is retained. 
@@ -19,20 +22,21 @@ parm:
       devicetype: A
       name: Add/Replace Keyboard Layout Mapping 
       mx: "10.5"
+      apilevel: "30"
       description: Adds a keyboard layout to the device or replaces one of the same name.   
     - code: 2
       devicetype: A
       name: Remove Keyboard Layout Mapping
       mx: "10.5"
+      apilevel: "30"
       description: Removes a keyboard layout from the device.
     - code: 3
       devicetype: A
       name: Remove All Keyboard Layout Mappings
       mx: "10.5"
+      apilevel: "30"
       description: Removes all keyboard layouts from the device.
 ---
 
-`EXPERIMENTAL FEATURE` 
-
-Used to select an Action to perform on the keyboard layout specified in the External Keyboard Name parameter.
+Used to select an Action to perform on the keyboard layout specified in the External Keyboard Name or External Optional Keyboard Name parameter.
 

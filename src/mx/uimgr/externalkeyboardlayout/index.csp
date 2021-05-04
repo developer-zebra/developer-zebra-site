@@ -1,9 +1,10 @@
 ---
 csp: uimgr
-title: External Keyboard Layout
+title: External Keyboard Language
 type: parm
 order: 17
 mx: "10.5"
+apilevel: "30"
 devicetype: A
 parm:
   presentif: External Keyboard Action is "Add/Replace Keyboard Layout Mapping"
@@ -12,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter a keyboard layout name upon which to perform an Action. 
+Used to enter the name of an external keyboard to which to apply language configuration settings. **Note: External keyboard MUST be connected when applying this parameter**. 
 
 **Parm value input rules**: 
 

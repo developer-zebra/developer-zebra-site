@@ -4,6 +4,7 @@ title: External Keyboard Name
 type: parm
 order: 12
 mx: "10.5"
+apilevel: "30"
 devicetype: A
 parm:
   presentif: External Keyboard Action is "Add/Replace Keyboard Layout Mapping"
@@ -12,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter a keyboard name upon which to perform an Action. 
+Used to enter a keyboard name to add or replace a keyboard layout on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added**.
 
 **Parm value input rules**: 
 

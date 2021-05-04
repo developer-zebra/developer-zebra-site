@@ -6,6 +6,7 @@ order: 17
 mx: "10.5"
 apilevel: "30"
 devicetype: A
+info: External keyboard MUST be connected when applying this parameter.
 parm:
   presentif: External Keyboard Action is "Add/Replace Keyboard Layout Mapping"
   pivotal: No

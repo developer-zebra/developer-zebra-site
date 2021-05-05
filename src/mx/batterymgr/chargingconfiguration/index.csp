@@ -1,0 +1,31 @@
+---
+csp: batterymgr
+title: Charging Mode
+type: parm
+order: 6
+mx: "10.4"
+devicetype: A
+info: Supported only on the Zebra MC20 and similar devices running Android 11 or later.
+parm:
+  pivotal: No
+  name: ChargingConfiguration
+  type: list
+  list:
+    - code: 0
+      mx: "10.4"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Long Run Time Mode
+      mx: "10.4"
+      description: Charges the battery to maximize runtime on battery power. 
+    - code: 2
+      devicetype: A
+      name: Extended Cycle Life Mode
+      mx: "10.4"
+      description: Charges the battery to maximize the usable lifetime of the battery. 
+---
+
+Controls whether the battery is charged in Long Run-time mode or Extended-cycle Life mode. 

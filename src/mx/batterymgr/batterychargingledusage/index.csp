@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "8.1"
 devicetype: A
-info: Supported on the PS20 device only.
+info: Supported only on the Zebra PS20 device.
 parm:
   pivotal: No
   name: BatteryChargingLEDUsage

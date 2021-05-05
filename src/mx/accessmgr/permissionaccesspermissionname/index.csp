@@ -4,9 +4,9 @@ title: Permission Access Permission Name
 type: parm
 order: 150
 mx: "10.0"
-apilevel: "26"
+apilevel: "30"
 devicetype: A
-info: If MANAGE_EXTERNAL_STORAGE permission is changed for an app through the Android 11 UI on devices with MX 10.5, subsequent attempts to set the option remotely will fail until the target app is reinstalled.
+info: Can be used to grant or deny permission to installed apps or to "pre-grant" or "pre-deny" permission for apps yet to be installed.
 parm:
   pivotal: Yes
   name: PermissionAccessPermissionName
@@ -14,30 +14,30 @@ parm:
   list:
     - code: 1
       mx: "10.0"
-      apilevel: "26"
+      apilevel: "30"
       name: android.permission.ACCESS_NOTIFICATIONS
       description: Controls permission to access Notifications on the device.
     - code: 2
       mx: "10.0"
-      apilevel: "26"
+      apilevel: "30"
       devicetype: A
       name: android.permission.PACKAGE_USAGE_STATS
       description: Controls permission to access app usage statistics for the device.
     - code: 3
       mx: "10.0"
-      apilevel: "26"
+      apilevel: "30"
       devicetype: A
       name: android.permission.SYSTEM_ALERT_WINDOW
-      description: Controls permission to use the System Alert Window, which allows one app to draw over another. 
+      description: Controls permission to use the System Alert Window, which allows one app to draw its window(s) over another. 
     - code: 4
       mx: "10.0"
-      apilevel: "26"
+      apilevel: "30"
       devicetype: A
       name: android.permission.GET_APP_OPS_STATS
       description: Controls permission to access app operations statistics, used to determine the resources being used by apps on the device. 
     - code: 5
       mx: "10.0"
-      apilevel: "26"
+      apilevel: "30"
       devicetype: A
       name: android.permission.BATTERY_STATS
       description: Controls permission to access battery statistics for the device.
@@ -45,10 +45,9 @@ parm:
       mx: "10.4"
       apilevel: "30"
       devicetype: 
-      info: If this permission is changed for an app through the Android 11 UI on devices with MX 10.5, subsequent attempts to set this option remotely will fail until the target app is reinstalled. 
+      info: If this permission is changed for an app through the device UI on devices with MX 10.5, subsequent attempts to set this option remotely will fail until the target app is reinstalled. 
       name: android.permission.MANAGE_EXTERNAL_STORAGE
-      description: Controls management of USB and/or SD card storage media attached to the device. Can be used to grant permission to installed apps or to "pre-grant" permission to apps yet to be installed.
+      description: Controls management of USB and/or SD card storage media attached to the device.
 ---
 
 Used to select the subsystem on the device to which to apply the permission being assigned to an app by the Permission Access Action parameter. 
-

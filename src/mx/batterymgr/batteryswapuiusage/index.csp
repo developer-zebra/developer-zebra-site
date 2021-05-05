@@ -2,7 +2,7 @@
 csp: batterymgr
 title: Battery Swap UI Enable/Disable
 type: parm
-order: 7
+order: 10
 mx: "8.1"
 devicetype: A
 parm:

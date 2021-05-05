@@ -2,7 +2,7 @@
 csp: batterymgr
 title: Charging Mode
 type: parm
-order: 6
+order: 20
 mx: "10.4"
 apilevel: "30"
 devicetype: A

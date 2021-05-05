@@ -6,7 +6,7 @@ order: 150
 mx: "10.0"
 apilevel: "30"
 devicetype: A
-info: Can be used to grant or deny permission to installed apps or to "pre-grant" or "pre-deny" permission for apps yet to be installed.
+info: This parameter can be used to grant or deny permission to installed apps or to "pre-grant" or "pre-deny" permission for apps yet to be installed.
 parm:
   pivotal: Yes
   name: PermissionAccessPermissionName

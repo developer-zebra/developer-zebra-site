@@ -2,28 +2,28 @@
 title: Zebra Data Service
 img: /images/products/zds.png
 layout: redirect.html
-redirect_url: /zds/about
+redirect_url: /zwc/about
 menu:
   title: Zebra Data Service 2.0
-  img: /zds/images/logo.png
+  img: /zwc/images/logo.png
   versions:
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/about
+      default: /zwc/about
       label: '2.0'
     - versionto: 2-0
       versionfrom: 2-0
-      default: /zds/about
+      default: /zwc/about
       label: '2.0'
   items:
     - title: About
-      url: /zds/about
+      url: /zwc/about
     - title: Setup
-      url: /zds/setup
+      url: /zwc/setup
     - title: FAQ
-      url: /zds/faq
+      url: /zwc/faq
     - icon: fa fa-search
-      url: /zds/search
+      url: /zwc/search
 ---
 
 ### Redirecting to the latest ZDS documentation...

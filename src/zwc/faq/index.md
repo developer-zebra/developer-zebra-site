@@ -5,13 +5,13 @@ product: ZWC
 menu:
   items:
     - title: About
-      url: /zds/about
+      url: /zwc/about
     - title: Setup
-      url: /zds/setup
+      url: /zwc/setup
     - title: FAQ
-      url: /zds/faq
+      url: /zwc/faq
     - icon: fa fa-search
-      url: /zds/search
+      url: /zwc/search
 ---
 
 ###Q: What is the package name of the ZDS agent on the device?

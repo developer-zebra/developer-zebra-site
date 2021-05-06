@@ -29,23 +29,23 @@ menu:
 
 **A: ZDS uses the following servers**:
 
-**<u>ZDS Server 1</u>**:
+**<u>ZDS Server #1</u>**:
 * URL: `https://analytics.zebra.com`
 * Port: `443`
 
-**<u>ZDS Server 2</u>**:
+**<u>ZDS Server #2</u>**:
 * URL: ` https://device-https.savannacore.zebra.com`
 * Port: `443`
 
 **NOTES**
-* On devices running Android 10 and later and the CommonTransportLayer (v2.x) app, **ZDS by default attempts to connect first with Server 2**, then Server 1. 
-* **Access to Server 2 requires a valid security certificate**, which is built into the CommonTransportLayer app. The server is not intended to be reached through a browser.
+* **ZDS by default attempts to connect first with Server 2** on devices running Android 10 and later and the CommonTransportLayer (v2.x) app. Server 1 is otherwise used. 
+* **Access to Server 2 requires a valid security certificate**, which is built into the CommonTransportLayer app. The server is not generally reachable through a browser.
 
 -----
 
-###Q: To simplify firewall setup, can Zebra provide the IP address of the data collection server?
+###Q: Can Zebra provide the ZDS server's IP address to help facilitate firewall setup?
 
-**A: Yes, the IP address of Zebra's primary data collection server is**: 
+**A: Yes, the IP address of Zebra's primary data collection server (#2) is**: 
 
 * `34.68.84.87` 
 * Port 443

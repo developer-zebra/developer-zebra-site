@@ -1,7 +1,7 @@
 ---
 title: Zebra Data Service Setup
 layout: guide.html
-product: ZDS
+product: ZWC
 menu:
   items:
     - title: About

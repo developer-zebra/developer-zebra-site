@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 layout: guide.html
-product: ZDS
+product: ZWC
 menu:
   items:
     - title: About

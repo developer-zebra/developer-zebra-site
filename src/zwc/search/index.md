@@ -2,7 +2,7 @@
 title: Search
 layout: search.html
 index: /zds/index.json
-product: ZDS
+product: ZWC
 menu:
   items:
     - title: About

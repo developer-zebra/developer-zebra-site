@@ -90,7 +90,7 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 **&#49;. Tap "Data formatting and ordering" to specify a separator character** to be inserted between the data from each barcode. 
 <img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
 <br>
-**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>This adds a separator in between each barcode and appends a separator after the last barcode. To remove the extra separator after the last barcode, use the "Remove characters" action from [Advanced Data Formatting](../../process/adf/#supportedadfactions) rules.<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
 <img style="height:350px" src="../dw_6.7_data_separating.png"/>
 
 -----

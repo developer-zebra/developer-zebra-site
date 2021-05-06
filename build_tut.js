@@ -238,9 +238,15 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
-    //Zebra Data Services (ZDS) 2.0
+    //Zebra Data Service (ZDS) 2.0
     .use(foldermenu({
         folder: 'zds/2-0/',
+        automenu: true,
+        ascontent: true
+    }))
+    //Zebra Workstation Connect (ZWC)
+    .use(foldermenu({
+        folder: 'zwc/',
         automenu: true,
         ascontent: true
     }))

@@ -31,10 +31,12 @@ menu:
 
 **<u>ZDS Server #1</u>**:
 * URL: `https://analytics.zebra.com`
+* IP Address: `104.198.59.61`
 * Port: `443`
 
 **<u>ZDS Server #2</u>**:
 * URL: ` https://device-https.savannacore.zebra.com`
+* IP Address: `34.68.84.87`
 * Port: `443`
 
 **NOTES**
@@ -43,6 +45,8 @@ menu:
 
 -----
 
+<!-- 5/6/21- changed but not published. To undo, also remove IP addresses from above. 
+	
 ###Q: Can Zebra provide the ZDS server's IP address to help facilitate firewall setup?
 
 **A: Yes, the IP address of Zebra's primary data collection server (#2) is**: 
@@ -50,9 +54,9 @@ menu:
 * `34.68.84.87` 
 * Port 443
 
------
-
-###Q: How frequently does the ZDS Agent upload device data to the cloud?
+----- 
+-->
+###Q: How frequently does the ZDS Agent upload device data to the server?
 
 **A: The default upload frequency is once every 24 hours**.
 

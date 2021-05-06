@@ -14,12 +14,14 @@ menu:
       url: /zds/search
 ---
 
-###Q: What is the package name of the ZDS agent on the device?
+###Q: What is the application name of the ZDS agent on the device?
 
 **A: The current ZDS agent is implemented as two files**:
 
-* `com.symbol.dataanalytics.apk` | Main analytics engine (2 MB)
-* `com.symbol.dataanalytics.dca.apk` | Data collection plug-in (0.2 MB)
+* **Zebra Data Service** | Main analytics engine (2 MB)
+* **Zebra Data Service Plugin** | Data collection plug-in (0.2 MB)
+
+**`IMPORTANT:` Both components must be running for proper data-collection operations**.
 
 -----
 
@@ -35,11 +37,18 @@ menu:
 * URL: ` https://device-https.savannacore.zebra.com`
 * Port: `443`
 
+**NOTES**
+* On devices running Android 10 and later and the CommonTransportLayer (v2.x) app, **ZDS by default attempts to connect first with Server 2**, then Server 1. 
+* **Access to Server 2 requires a valid security certificate**, which is built into the CommonTransportLayer app. The server is not intended to be reached through a browser.
+
 -----
 
-###Q: To simplify firewall setup, can Zebra confirm that the data collection server always uses a single IP address?
+###Q: To simplify firewall setup, can Zebra provide the IP address of the data collection server?
 
-**A: Yes, the data collection server at analytics.zebra.com uses only `104.198.59.61` on server port 443**.
+**A: Yes, the IP address of Zebra's primary data collection server is**: 
+
+* `34.68.84.87` 
+* Port 443
 
 -----
 

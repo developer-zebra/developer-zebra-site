@@ -1,5 +1,5 @@
 ---
-title: About Zebra Data Service
+title: About Zebra Workstation Connect
 layout: guide.html
 product: ZWC
 menu:

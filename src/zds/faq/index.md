@@ -38,8 +38,8 @@ menu:
 * Port: `443`
 
 **NOTES**
-* **ZDS by default attempts to connect first with Server 2** on devices running Android 10 and later and the CommonTransportLayer (v2.x) app. Server 1 is otherwise used. 
-* **Access to Server 2 requires a valid security certificate**, which is built into the CommonTransportLayer app. The server is not generally reachable through a browser.
+* **ZDS by default attempts to connect first with Server 2** on devices running Android 10 (or later) and Zebra Common Transport Layer 2.x (or later). Server 1 is otherwise used. 
+* **Access to Server 2 requires a valid security certificate**, which is built into the Common Transport Layer app. The server is not generally reachable through a browser.
 
 -----
 

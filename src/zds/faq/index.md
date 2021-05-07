@@ -27,20 +27,18 @@ menu:
 
 ###Q: What are the server address(es) and port number(s) used by ZDS?
 
-**A: ZDS uses the following servers**:
+**A: ZDS uses the servers shown below**. `IMPORTANT:` Devices running Android 10 and later require connectivity with <u>both</u> servers:
 
 **<u>ZDS Server #1</u>**:
 * **URL**: `https://analytics.zebra.com`
 * **IP Address**: `104.198.59.61`
 * **Port**: `443`
 
-**<u>ZDS Server #2&#42;</u>**:
+**<u>ZDS Server #2</u>**:
 * **URL**: ` https://device-https.savannacore.zebra.com`
 * **IP Address**: `34.68.84.87`
-* **Port**: `443`
-&#42; This server uses Certificate-based Mutual Authentication
-
-> **NOTE: Devices running Android 10 and later require connectivity with <u>both</u> servers**.
+* **Port**: `443`<br>
+_This server uses Certificate-based Mutual Authentication_.
 
 -----
 
@@ -64,9 +62,9 @@ menu:
 
 -----
 
-###Q: Is the 24-hour period the same for every device? 
+###Q: Is the time of the upload the same for every device? 
 
-**A: No, the upload cycle is different for each device. It begins when the device is first powered up and cannot be changed or configured to vary by connection or network type. The first upload occurs approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide**. 
+**A: No, the upload time is different for each device. It begins when the device is first powered up and cannot be changed or configured to vary by connection or network type. The first upload occurs approximately 24 hours after first boot. Upload times are designed to vary randomly by three minutes (plus or minus) to help spread inbound server traffic throuhgout the period. To view the latest upload time for a device, see [Check ZDS Status](../setup/#checkzdsstatus) in the Setup guide**. 
 
 -----
 

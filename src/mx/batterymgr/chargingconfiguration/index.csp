@@ -22,14 +22,14 @@ parm:
       name: Standard
       mx: "10.4"
       apilevel: "30"
-      description: Fully charges the battery with full voltage (4.2v) to maximize runtime on battery power. 
+      description: Fully charges the battery with full voltage to maximize runtime on battery power. 
     - code: 2
       devicetype: A
-      info: Supported only on the Zebra MC20 and similar devices running Android 11 or later.
+      info: Supported only on Zebra MC20 and Sharp RZ-H721 devices running Android 11 or later.
       name: Custom
       mx: "10.4"
       apilevel: "30"
-      description: Charges the battery with reduced voltage (4.1v) to less than its full capacity to maximize the usable lifetime of the battery. 
+      description: Charges the battery with reduced voltage to less than its full capacity to maximize the usable lifetime of the battery. 
 ---
 
-Controls whether the battery is charged in Standard (**default**) or Custom mode. Standard mode uses full voltage and charges the battery to its full capacity. This is the current method for most Zebra device chargers and is designed to maximize device runtime while on battery power. Custom mode charges at a slightly reduced voltage to less than the battery's full capacity, which helps extend the usable life of the battery over time. 
+Controls whether the battery is charged in Standard or Custom mode. Standard mode uses full voltage and charges the battery to its full capacity to maximize device runtime while on battery power. **This is the current method for most Zebra device chargers** and the default setting for this parameter. On devices that support it, Custom mode charges at a slightly reduced voltage to less than the battery's full capacity, which helps extend the usable life of the battery over time. **Custom mode is supported only on Zebra MC20 and Sharp RZ-H721 devices running Android 11 or later**.

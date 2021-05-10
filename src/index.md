@@ -319,19 +319,21 @@ products:
         label: '2.2'
   - title: Device Diagnostic Tool
     description: Instantly test and diagnose device system operability to determine system health.
-    url: /ddt/2-4/guide/about
+    url: /ddt/2-5/guide/about
     btn-text: Latest Guides
     image: /ddt/ddt_logo.png
     sections:
       - title: About
-        url: /ddt/2-4/guide/about
+        url: /ddt/2-5/guide/about
       - title: Usage
-        url: /ddt/2-4/guide/usage
+        url: /ddt/2-5/guide/usage
       - title: Configuration
-        url: /ddt/2-4/guide/configuration
+        url: /ddt/2-5/guide/configuration
       - title: Test Criteria
-        url: /ddt/2-4/guide/criteria
+        url: /ddt/2-5/guide/criteria
     versions:
+      - url: /ddt/2-5/guide/about
+        label: '2.5'
       - url: /ddt/2-4/guide/about
         label: '2.4'
       - url: /ddt/2-3/guide/about

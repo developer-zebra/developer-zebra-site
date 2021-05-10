@@ -14,6 +14,8 @@ automenu:
           url: /stagenow/5-1/csp/browser
         - title: Bug Report Manager
           url: /stagenow/5-1/csp/bugreportmgr
+        - title: DataWedge Manager
+          url: /stagenow/5-1/csp/datawedgemgr
         - title: File Manager
           url: /stagenow/5-1/csp/file
         - title: Intent

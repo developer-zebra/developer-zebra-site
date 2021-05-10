@@ -6,6 +6,7 @@ order: 48
 mx: "7.1"
 devicetype: A
 parm:
+  presentif: Screen Blanking is set to "When Triggered by Signal"
   pivotal: No
   name: ScreenBlankingSignalPolarity
   type: list

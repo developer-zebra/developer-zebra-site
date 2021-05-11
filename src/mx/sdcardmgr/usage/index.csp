@@ -1,11 +1,12 @@
 ---
 csp: sdcardmgr
-title: SD Card Block/Unblock
+title: SD Card, USB Usage
 type: parm
 order: 2
 mx: "4.3"
 osx: "4.3"
 devicetype: A
+info: This parameter acts on external storage by default. If external storage is not supported by the device, primary storage is the target.
 parm:
   pivotal: No
   name: SdCardUsage
@@ -16,13 +17,13 @@ parm:
       osx: "4.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to Storage Card usage on a device; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "4.3"
       osx: "4.3"
-      description: Allows access to all storage on the device.
+      description: Allows access to and usage of all storage on the device.
     - code: 2
       devicetype: A
       name: Disable
@@ -31,6 +32,6 @@ parm:
       description: Blocks access to all storage on the device.
 ---
 
-Used to control access to external storage on the device, which can include removeable SD cards and USB-connected storage media. When Enabled (option 1), access to all external storage is completely blocked. 
+Used to control access to external storage on the device, which can include removable SD cards and USB-connected storage media. When Disabled (option 1), access to all external storage is completely blocked. 
 
 **Note:** Removable media can become inaccessible by means other than blockage by this CSP. For example, an unblocked Micro SD card is inaccessible if physically removed from the device or if encrypted and the Named Key has been removed from the Key Storage Database (see [EncryptMgr](/mx/encryptmgr)). 

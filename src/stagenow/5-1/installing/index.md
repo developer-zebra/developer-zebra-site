@@ -20,6 +20,9 @@ The following are required to run the StageNow desktop tool:
 * Microsoft .NET Framework 4.5 (included with StageNow installer)
 * A PDF reader (for displaying and printing staging barcodes)
 * Wi-Fi access (for Wi-Fi Hotspot feature)
+
+> **NOTE: Windows 10 does NOT support Wi-Fi Hotspot staging**. 
+
 <!-- 1/21/2020- Audio staging removed from SN 4.1 
 * The Java Runtime Environment (for audio staging)
  -->

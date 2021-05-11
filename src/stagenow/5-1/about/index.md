@@ -28,6 +28,8 @@ The following software must be installed on the staging workstation prior to usi
  * Google Chrome 35 or higher 
  * Internet Explorer 9 or higher
 
+> **NOTE: Windows 10 does NOT support Wi-Fi Hotspot staging**. 
+
 -----
 
 ### Sections of This Guide

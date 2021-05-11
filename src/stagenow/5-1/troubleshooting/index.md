@@ -28,6 +28,8 @@ This section covers common errors that can occur when using StageNow and offers 
 
 ## Wi-Fi Hotspot 
 
+> **NOTE: Wi-Fi Hotspot staging is NOT supported on systems running Windows 10**. 
+
 ![img](../images/TroubleWifi_Error.jpg)
 
 ####Problem

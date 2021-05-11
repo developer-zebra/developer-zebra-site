@@ -9,7 +9,7 @@ order: 99
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="SdCardMgr" version="4.3" >
-			<parm name="SdCardUsage" value="1"/>
+			<parm name="SdCardUsage" value="2"/>
 		</characteristic>
 	</wap-provisioningdoc>
 
@@ -31,7 +31,7 @@ order: 99
     :::XML
     <wap-provisioningdoc>
         <characteristic type="SdCardMgr" version="4.3" >
-            <parm name="SdCardUsage" value="1"/>
+            <parm name="SdCardUsage" value="2"/>
         </characteristic>
     </wap-provisioningdoc>
 

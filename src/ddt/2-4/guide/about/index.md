@@ -20,9 +20,9 @@ Hardware features tested:
 - **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 - **Audio Test** – checks for operation of the device microphone and speaker
 
-<br>
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
+<p>Download DDT from the <a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-diagnostic-tool.html">Zebra Support Portal</a>.</p>
 
 ## New in 2.4
 
@@ -39,13 +39,13 @@ Hardware features tested:
 * New [Help](../usage/#userinterface) option available which links to the Device Diagnostic Tool support portal.
 * New data fields captured for [Battery test](../usage/#batterytest): battery level and battery current capacity.
 * New features configurable through the configuration file:
-        * [perform tests individually](../configuration/#configurationfile)
-        * [capture logs individually](../configuration/#configurationfile) for each test performed
+    * [perform tests individually](../configuration/#configurationfile)
+    * [capture logs individually](../configuration/#configurationfile) for each test performed
 * Fixed an issue where DDT does not revert the device back to its original device orientation, landscape or portrait mode, after application exit.
 * [Enhancements:](../usage/#userinterface)
-        * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. If the WiFi radio is not enabled when initiating the WLAN test, the user is prompted to enable the radio.
-        * To display the ESSID from a WLAN test on Android O or higher, Location service is required to be enabled on the device due to Android restrictions. If Location service is not enabled, the user is prompted to enable it. If the test proceeds without Location service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
-        * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
+    * For the WLAN test, the radio power cycle is replaced by a check to determine if the WiFi radio is enabled. If the WiFi radio is not enabled when initiating the WLAN test, the user is prompted to enable the radio.
+    * To display the ESSID from a WLAN test on Android O or higher, Location service is required to be enabled on the device due to Android restrictions. If Location service is not enabled, the user is prompted to enable it. If the test proceeds without Location service enabled, _ESSID_ returns "Location not enabled" instead of "Unknown SSID." 
+    * For the WWAN test, if a sim card is not present in the device, the test no longer fails and now shows _Absent_ for the _Sim State_ along with the appropriate status for the rest of the WWAN parameters.
 
 ### New in 2.2
 

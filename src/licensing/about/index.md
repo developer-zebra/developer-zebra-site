@@ -81,8 +81,8 @@ The following table indicates which features are included with Zebra Professiona
   <tr>
   <td><a href="#softwarecomponents1.5">Device Tracker On-prem</a></td>
   <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Download and install latest app</a></td></td>
-  <td>Download and install latest app</a></td>
-  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">See supported devices</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/utilities/device-central.html">Download and install latest app</a></td>
+  <td><b>Limited Pro-series device support</b><br><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">See supported devices</a></td>
   </tr>
 
   <tr>
@@ -205,9 +205,9 @@ The following table indicates which features are included with Zebra Professiona
     <th width="25%">Healthcare</th>
   </tr>
 
-  <tr>
+ <tr>
   <td>Wi-Fi only</td>
-  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html">TC21 &#135;</a></td>
+  <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc20.html">TC20, </a><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html">TC21 &#135;</a></td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html">MC22</a></td>
   <td><a href="https://www.zebra.com/us/en/products/mobile-computers/healthcare/tc21-hc-tc26-hc.html">TC21-HC</a></td>
   </tr>

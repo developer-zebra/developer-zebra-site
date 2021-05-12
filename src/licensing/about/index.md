@@ -80,8 +80,9 @@ The following table indicates which features are included with Zebra Professiona
 
   <tr>
   <td><a href="#softwarecomponents1.5">Device Tracker On-prem</a></td>
-  <td colspan="2">1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Download and install latest app</a></td></td>
-  <td>Beginning with Device Tracker On-prem 3.0, an MDNA license is required for <a href="#professional">Pro-series devices</a>.</td>
+  <td> 1. <a href="../process">Buy MDNA Enterprise license*</a><br>2. <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Download and install latest app</a></td></td>
+  <td>Download and install latest app</a></td>
+  <td><a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">See supported devices</a></td>
   </tr>
 
   <tr>

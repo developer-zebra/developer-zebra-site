@@ -13,109 +13,37 @@ menu:
     - icon: fa fa-search
       url: /zwc/search
 ---
-<a id="system_config"></a>
+
 ## Overview
 
-The Zebra Data Service (ZDS) system is a set of background services running on all supported Zebra devices and is responsible for collecting and uploading analytics data coming from ZDS plug-ins and Zebra-authorized third-party apps. Data is uploaded to the Zebra analytics database every 24 hours by default with transport secured with HTTPS. ZDS accepts configuration changes to the upload interval, data-collection events and other parameters through a barcode scanned by the device. Learn more about [changing ZDS parameters](../faq/#qcananyzdsparameterscanbechanged). 
+FIXXXXXXXXXXXXX
 
-> **ZDS components are self-updating to ensure that devices contain the most up-to-date features and bug-fixes**. Learn more [about ZDS updates](../faq/#qwhatisthesizeofthezdsupdatedownload).
+Zebra Workstation Connect is a hardware and software solution for Zebra devices running Android that allows a mobile device to provide a desktop-like experience. The solution centers on the ZWC dock, which provides four USB 3.0 ports for connections to keyboard and mouse, plus gigabit Ethernet and for a full-sized monitor via HDMI. 
 
-### Available Reports
-The image below shows some of the reports available for visualizing data collected from devices within an organization. 
+ZWC leverages Android Desktop Mode to present the user with a “desktop-like” interface when connecting a mobile device to an external monitor via a workstation cradle. This guide describes the necessary steps to enable Desktop Mode and the features included.  
+
+Default Mirror Mode: 
+
+After installing the RC1 Android OS (11-11-03.00-RG-U00-PRD-HEL-04), the device will use “Mirror Mode” as default when the device is docked in a workstation cradle and connected to a HDMI monitor; if “Mirror Mode” is the required view mode for this set-up, no further actions are required. To evaluate “Desktop Mode”, follow the steps on the section below.  
+
+OemConfig support isn’t so much “for ZWC” as for the system environment in which ZWC runs.  In order for ZWC to run, it must be deployed to the device.  ZWC has its own managed configurations that can be used to configure its behavior, but that behavior will only occur when the device docks and the secondary display is created for which ZWC is the secondary launcher.  Before that can ever happen, OemConfig must be used to change the device from mirror mode to desktop mode.  Further, there may be other system level configurations that OemConfig might be used to set, such as USB external storage, keyboard layouts, etc.  OemConfig doesn’t configure ZWC, but it CAN be used to configure things that effect the system environment and hence will have an impact on ZWC when it runs.  Since getting a new version of OemConfig that has these features into the Play Store is problematic for Beta, and since those things can be done via StageNow (which configuring ZWC cannot), we have decided to focus on getting ZWC into the Play Store and accessible to EMMs and defer dealing with OemConfig until later.
+
 
 <img alt="image" style="height:350px" src="VisibilityIQ_dashboard.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
 
 -----
-<a id="clock_config"></a>
-### Data Collected
 
-* **Device "Build Fingerprint" including**:
- * Device model number
- * Android version
- * Build ID
-* Device serial number
-* Device usage data 
-* OS image, LifeGuard and security patch levels applied
-* Available RAM
-* Device storage (flash) information and health 
-* Battery information and health
-* Wi-Fi (WLAN) connection events
-* Cellular (WWAN) connection events (if applicable)
-* **Data traffic statistics (as applicable) for**: 
- * Bluetooth
- * Cellular (WWAN)
- * Ethernet
- * Wi-Fi (WLAN)
-* **Location data (as applicable) for**: 
- * Cellular 
- * GPS
- * Wi-Fi (WLAN)
-* System app info and usage
-* **Zebra app info and usage data, including for**:  
- * DataWedge
- * Enterprise Home Screen
- * EMDK for Android 
- * EMDK for Xamarin
- * MX STATS
- * SimulScan
- * StageNow
-* Scanner information and usage statistics
-* Reboots triggered by the system or an app
-* Application Not Responding (ANR) events
-
------
-<!-- 
-## What's New in v2.0
-
-
-### Device Support
-
-### New Features
-
------
-
-## Version History
-
-### Added in v1.0
-
------
- -->
 ## Supported Devices
 
-#### ZDS Support Notes
+#### Support Notes
 
-* **ZDS is compatible with all Zebra devices running Android 4.4** (Kit Kat) and later. 
-* **Zebra offers active ZDS support for devices running Android 6.x** (Marshmallow) and later. 
-* **ZDS comes preinstalled on most devices with the latest Android 7.x (and later) builds**. 
-* **Installation might be required** for devices running Android 4.4, Android 5.x (Lollipop) and later Android versions.
-
-Contact [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html) for more information.
-
-<!-- 10/6/20 matrix removed at request of engineering (TUT-44574)
-<img alt="image" style="height:650px" src="zds_20_supported_devices.png"/>
-_Click image to enlarge; ESC to exit_. 
-<br>
- -->
 -----
 
-## See Also
+## Also See
 
 * **[FAQ](../faq)** | Frequently asked questions about ZDS
 * **[ZDS Setup Guide](../setup)** | How to check whether ZDS is installed and/or enabled.
 * **[Visibility IQ info page](https://www.zebra.com/us/en/blog/posts/2019/zebra-operational-visibility-services-is-now-visibilityiq-foresight.html)** | Sign up for regular updates
 
-<!-- 
-menu:
-  items:
-    - title: About
-      url: /oemconfig/9-3/about
-    - title: Setup
-      url: /oemconfig/9-3/setup
-    - title: FAQs
-      url: /oemconfig/9-3/faq
-    - title: Managed Configurations
-      url: /oemconfig/9-3/mc
-    - icon: fa fa-search
-      url: /oemconfig/9-3/search -->

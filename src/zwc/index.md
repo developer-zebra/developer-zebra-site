@@ -1,10 +1,10 @@
 ---
-title: Zebra Data Service
-img: /images/products/zds.png
+title: Zebra Workstation Connect 
+img: /images/products/zwc.png
 layout: redirect.html
 redirect_url: /zwc/about
 menu:
-  title: Zebra Data Service 2.0
+  title: Zebra Workstation Connect 1.0
   img: /zwc/images/logo.png
   versions:
     - versionto: 2-0
@@ -18,7 +18,7 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Setup
+    - title: Setup & Usage
       url: /zwc/setup
     - title: FAQ
       url: /zwc/faq

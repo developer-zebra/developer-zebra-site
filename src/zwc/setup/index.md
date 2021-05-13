@@ -29,7 +29,24 @@ At the heart of the ZWC solution is the Zebra Workstation Connect app, which run
 
 Upon first installation, the device is forced into landscape mode and its content is mirrored on the external monitor by default. 
 
-blah blah blah
-
+Install ZWC and perform REQUIRED REBOOT 
 
 -----
+
+How to enable Desktop Mode: 
+
+Enable developer options by clicking on Settings -> About phone ->  
+
+Build number 5 times 
+
+Enable the three options showed on the image on the right, required for Desktop Mode on the menu:  
+
+Settings -> System -> Advanced -> Developer options ->  
+
+
+ 
+
+Perform a device reboot prior docking device in the workstation cradle 
+
+Once device is rebooted, when docked in the workstation cradle and connected to HDMI monitor, the screen of the mobile device will show the home screen and allow user to launch and run applications on the mobile device, at the same time, the external monitor will show the homes screen of Desktop Mode as presented on the images below. 
+

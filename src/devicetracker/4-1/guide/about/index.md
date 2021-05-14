@@ -101,27 +101,29 @@ Network requirements for communication between the device client app and the clo
 
 * Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
 
-* The following URLs must be allowed through the firewall or proxy:
-    * URLs accessed by device:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.google.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.googleapis.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`http://connectivitycheck.gstatic.com`  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required by Google for Android to connect to a wireless network)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://[ProjectID].firebaseio.com`  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://us-central1-[projectID].cloudfunctions.net`  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
-        * URL accessed by the admin on a PC:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;Web portal URL - supplied by Zebra during the cloud setup process
+* The following hostnames must be allowed through the firewall or proxy. <br>
+
+    Hostnames accessed by device:
+
+    * `*.google.com`
+    * `*.googleapis.com`
+    * `connectivitycheck.gstatic.com` (required by Google for Android to connect to a wireless network)
+    * Hostnames related to the new project - supplied by Zebra during the cloud setup process.
+    <br>
+
+    Hostname accessed by the admin on a PC: 
+    * Web portal URL - supplied by Zebra during the cloud setup process
 <br>
 
-<p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
+<p>If the firewall or proxy does not support wildcards, add the following hostnames to the allow list:</p>
 
-* `https://www.googleapis.com`
-* `https://firestore.googleapis.com`
-* `https://cloudfunctions.googleapis.com`
-* `https://firebaseinstallations.googleapis.com`
-* `https://play.googleapis.com`
-* `https://www.google.com`
+* `www.googleapis.com`
+* `firestore.googleapis.com`
+* `cloudfunctions.googleapis.com`
+* `firebaseinstallations.googleapis.com`
+* `play.googleapis.com`
+* `www.google.com`
+* `*.firebaseio.com` 
 
 <!-- * https://android.googleapis.com
 * https://update.googleapis.com

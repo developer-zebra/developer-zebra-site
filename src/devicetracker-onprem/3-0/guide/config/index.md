@@ -24,8 +24,8 @@ _Figure 1. Application Configuration section from Settings tab_
 - **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker On-Prem client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker On-Prem client. If the device does not respond within the defined time frame, it is considered to be in the disconnected state. <!-- This value should be set lower than the **Disconnect Threshold Time**. -->Minimum value: 5, maximum value: 60.
 
 - **Chirping**:
-- **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 15, maximum value: 100.
-- **Duration** - Amount of time in seconds for the chirping to sound on the device being located. Minimum value: 1, maximum value: 30.
+    - **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 15, maximum value: 100.
+    - **Duration** - Amount of time in seconds for the chirping to sound on the device being located. Minimum value: 1, maximum value: 30.
 
 - **Bluetooth Low Energy** - Enable/disable BLE for proximity tracking. If enabled, displays a BLE proximity indicator in the client app identifying how close or far the tracking device is in reference to the target device being tracked. Proximity is based on Bluetooth beacons detected from the tracking device received from the misplaced device. If disabled, no BLE proximity indicator is displayed on the client device; therefore, the user must rely on audio for device tracking. If a device is in the process of being tracked and BLE is toggled, a notification message appears on the tracking device displaying the BLE status change and the screen refreshes accordingly in displaying the proximity indicator.
 
@@ -36,14 +36,20 @@ _Figure 1. Application Configuration section from Settings tab_
 <img style="height:150px" src="server_uploadcsv.jpg" />
 _Figure 2. Device & Access Point Management section from Settings tab_
 
-- **Data Imports** - Import pre-defined Access Point (AP) and device friendly names to aid in locating and identifying devices using .CSV files. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Importing data either modifies or adds entries to the existing database. Steps for data import for both access points and devices: 1. Download the supplied template by clicking on “Download Sample” next to the appropriate category. 2. Open the .csv file. Fill in the necessary information and save changes.  
-   3. Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 4. Check the status in Data Upload History. If successful, the data is uploaded.
-  Make sure to have write permissions to the ZDVC folder and subfolders.
-  <br>
-  <br>
-  **Important**:
-  _ Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file.
-  _ When uploading a .csv file using Microsoft Internet Explorer, a "Wrong File Format" error message may appear indicating that only .csv files are accepted. Continue with selecting the file to successfully upload the Device or AP information.
+- **Data Imports** - Import pre-defined Access Point (AP) and device friendly names to aid in locating and identifying devices using .CSV files. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Importing data either modifies or adds entries to the existing database. 
+
+    Steps for data import for both access points and devices: 
+    1. Download the supplied template by clicking on “Download Sample” next to the appropriate category. 
+    2. Open the .csv file. Fill in the necessary information and save changes.  
+    3. Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 
+    4. Check the status in Data Upload History. If successful, the data is uploaded. Make sure to have write permissions to the ZDVC folder and subfolders.
+<br>
+
+    **Important**:
+    * Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file.
+    * The .csv file cannot be UTF-8 encoded, otherwise an error can occur; it can be saved in any other format.
+    * When uploading a .csv file using Microsoft Internet Explorer, a "Wrong File Format" error message may appear indicating that only .csv files are accepted. Continue with selecting the file to successfully upload the Device or AP information.
+
 
 - **Data Upload History** - Displays the status of the last 10 records of the Access Point and device upload history. The data is created in the database if it does not previously exist. If the data previously exists, it is updated in the database. For the device .csv, the device model and serial number combined provide the device uniqueness.
 

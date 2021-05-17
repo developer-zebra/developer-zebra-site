@@ -331,6 +331,8 @@ products:
         url: /ddt/2-5/guide/configuration
       - title: Test Criteria
         url: /ddt/2-5/guide/criteria
+      - title: Managed Config
+        url: /ddt/2-5/guide/managed-config
     versions:
       - url: /ddt/2-5/guide/about
         label: '2.5'

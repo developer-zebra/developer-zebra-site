@@ -5,7 +5,7 @@ type: parm
 order: 22
 mx: "7.1"
 devicetype: A
-info: Supported on VC80x, VC8300 and similarly equipped devices only. 
+info: Applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices. 
 parm:
   presentif: The Heater Action is "Set ON/OFF Thresholds"
   pivotal: No
@@ -14,7 +14,7 @@ parm:
 
 ---
 
-Used to enter the temperature (in degrees Celsius) at which the device heater should turn on. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to enter the temperature (in degrees Celsius) at which the device heater should turn on. 
 
 **Parm value input rules**: 
 

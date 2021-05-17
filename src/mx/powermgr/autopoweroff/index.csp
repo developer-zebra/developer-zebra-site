@@ -5,6 +5,7 @@ type: parm
 order: 35
 mx: "7.1"
 devicetype: A
+info: Applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices. 
 parm:
   presentif: The Auto-Power Control is "Checked"
   pivotal: No
@@ -23,4 +24,4 @@ parm:
       description: Powers down device when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned off. 
 ---
 
-Used to control whether the device will power down when vehicle-mounted computer and similarly equipped Zebra devices when ignition is turned off. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to control whether the device will power down when vehicle-mounted computer and similarly equipped Zebra devices when ignition is turned off.

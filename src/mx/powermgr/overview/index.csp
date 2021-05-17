@@ -6,7 +6,7 @@ devicetype: A,B
 order: 0
 ---
 
-The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device. These include rebooting or performing an OS update, resetting the device to a factory-fresh state or putting the device into Sleep mode. On some devices, such as the VC80x vehicle-mounted computer and similarly equipped Zebra devices, PowerMgr also can control device heaters and perform actions based on ignition status of vehicle-mounted computers and similarly equipped Zebra devices. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
+The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device. These include rebooting or performing an OS update, resetting the device to a factory-fresh state or putting the device into Sleep mode. On some devices, such as the VC8x vehicle-mounted computer and similarly equipped Zebra devices, PowerMgr also can control device heaters and perform actions based on ignition status of vehicle-mounted computers and similarly equipped Zebra devices. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
 
 **It's important to note that PowerMgr actions such as Reboot and Reset, once executed, prevent the execution of subsequent actions submitted by the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](/mx/conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
 
@@ -36,7 +36,7 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
  * Individual buttons to wake device  
  * Keyboard heater on VC8300 devices
  * Scanner-window heater on MC93 devices. 
-* **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
+* **On the VC8x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports
  * Set temperature thresholds (in degrees Celsius) for turning heaters on and off

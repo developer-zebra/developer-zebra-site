@@ -5,6 +5,7 @@ type: parm
 order: 10
 mx: "7.1"
 devicetype: A
+info: Applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices. 
 parm:
   pivotal: Yes
   name: PortAction
@@ -27,4 +28,4 @@ parm:
       description: Removes power from the selected port. 
 ---
 
-Used to enter an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to enter an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion.

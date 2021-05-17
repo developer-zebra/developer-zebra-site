@@ -5,6 +5,7 @@ type: parm
 order: 25
 mx: "7.1"
 devicetype: A
+info: Applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices. 
 parm:
   pivotal: No
   name: AutoPowerControl
@@ -12,7 +13,7 @@ parm:
 
 ---
 
-Indicates whether automatic power controls will be configured. When enabled (value=1), settings configured in Auto-power parameters will be used. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**.
+Indicates whether automatic power controls will be configured. When enabled (value=1), settings configured in Auto-power parameters will be used.
 
 **Parm value input rules**: 
 

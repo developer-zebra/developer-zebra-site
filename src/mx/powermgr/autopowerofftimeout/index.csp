@@ -5,15 +5,16 @@ type: parm
 order: 40
 mx: "7.1"
 devicetype: A
+info: Applies only to the VC8x vehicle-mounted computer and similarly equipped Zebra devices. 
 parm:
-  presentif:  The Auto Power Control is "Checked" and Auto Power-off Action is "When Ignition Turned Off"
+  presentif: The Auto Power Control is "Checked" and Auto Power-off Action is "When Ignition Turned Off"
   pivotal: No
   name: AutoPowerOffTimeout
   type: string
 
 ---
 
-Used to enter the time (in minutes) before the device will shut down after vehicle-mounted computer and similarly equipped Zebra devices ignition is turned off. Default value is 30 minutes. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to enter the time (in minutes) before the device will shut down after vehicle-mounted computer and similarly equipped Zebra devices ignition is turned off. Default value is 30 minutes. 
 
 **Parm value input rules**: 
 

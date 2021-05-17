@@ -15,7 +15,7 @@ parm:
       mx: "7.1"
       devicetype: A
       name: Do Nothing
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
@@ -33,4 +33,4 @@ parm:
       description: Enables temperature thresholds to be set for the selected heater.  
 ---
 
-This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters.
+This is the On/Off switch for the ability to perform Actions on the selected device heater(s) or to set temperature thresholds using the relevant Threshold parameters.

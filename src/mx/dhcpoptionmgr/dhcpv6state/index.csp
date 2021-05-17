@@ -27,7 +27,7 @@ parm:
       description: Enables the DHCPv6 client on the device. 
     - code: 2
       devicetype: A
-      info: After staging to disable DHCPv6, the device must disconnect/reconnect to the WLAN before an acquired IPv6 address is no longer active.
+      info: After staging to disable DHCPv6, the device must disconnect/reconnect to the WLAN before a previously acquired IPv6 address is no longer active.
       name: Disable
       mx: "10.3"
       apilevel: "26"

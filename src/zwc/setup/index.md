@@ -150,3 +150,27 @@ Wallpaper
 Currently the recommended maximum wallpaper resolution is 1024x600 and the image has to be <3MB to set as wallpaper for secondary screen. This issue will be fixed in next release.  
 
 Admin configuration of desktop wallpaper is currently not available.  
+
+-----
+
+### StageNow Steps
+
+Steps to create a StageNow profile/Barcodes 
+
+Download StageNow: https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html 
+
+Login to StageNow with admin credentials 
+
+From Home page, click on “Create new profile” option 
+
+Now, select appropriate MX version from wizards pop up window 
+
+Select “Xpert Mode” from the wizard list and click continue 
+
+Enter Profile name and start 
+
+From settings list, choose the appropriate setting and click to add 
+
+Complete the profile and create a barcode as required 
+
+Scan the barcode using StageNow Client on the device to stage the device 

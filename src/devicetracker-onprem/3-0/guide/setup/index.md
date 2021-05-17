@@ -91,7 +91,7 @@ Requirements for Device Tracker On-Prem client:
 See supported devices on <a href="https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html">Zebra support portal</a>.
 
 ##Server Install & Setup
-Contact your Zebra sales representative for the server download. <!--Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). -->Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Contact Zebra at <a href="mailto: devicetracker-onprem@zebra.com">devicetracker-onprem@zebra.com</a> for the server download. <!--Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker-on-prem.html). -->Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ### Server Prerequisites
 

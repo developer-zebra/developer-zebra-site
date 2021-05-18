@@ -47,7 +47,6 @@ _Figure 2. Device & Access Point Management section from Settings tab_
 
     **Important**:
     * Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file.
-    * The .csv file cannot be UTF-8 encoded, otherwise an error can occur; it can be saved in any other format.
     * When uploading a .csv file using Microsoft Internet Explorer, a "Wrong File Format" error message may appear indicating that only .csv files are accepted. Continue with selecting the file to successfully upload the Device or AP information.
 
 

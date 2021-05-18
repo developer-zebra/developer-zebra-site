@@ -7,14 +7,14 @@ productversion: "2.5"
 
 ## Overview
 
-Device Diagnostic Tool (DDT) can be remotely configured through Managed Configurations, specifications developed by Google and the Android community to configure installed applications and deploy these configurations through an EMM (Enterprise Mobility Management). A schema defines the DDT features available for consumption by the EMM, providing the information necessary to present to the EMM's corresponding data-driven UI. This mechanism integrates DDT remote configuration within the EMM for seamless operation and allows Zebra to release a new schema as soon as new features are available for use. DDT and the Zebra schema are available from the Google Play Store and must be used together to configure Zebra Android devices. 
+Device Diagnostic Tool (DDT) can be remotely configured through Managed Configurations, specifications developed by Google and the Android community to configure installed applications and deploy these configurations through an EMM (Enterprise Mobility Management). A schema defines the DDT features available for consumption by the EMM, providing the information necessary to present to the EMM's corresponding data-driven UI. This mechanism integrates DDT remote configuration within the EMM for seamless operation and allows Zebra to release a new schema as soon as new features are available for use. DDT and the Zebra schema are available from the Google Play Store and must be used together to leverage DDT with its managed configurations to perform diagnostic operations. 
 
 ## Requirements
 
 Requirements for use of Managed Configurations with DDT:
 * Zebra device with Android 10 or Android 11
 * DDT with the Zebra schema downloaded from the Google Play Store
-* DDT installed on the device and _launched at least once_
+* DDT is installed on the device and _must be launched at least once_
 * An EMM for device deployment
 
 ## Use Managed Configurations
@@ -22,10 +22,10 @@ Requirements for use of Managed Configurations with DDT:
 This section provides general instructions to use Managed Configurations through an EMM. The UI layout may vary depending on the EMM. In the EMM, after adding DDT to the device app catalog for app installation, the corresponding schema is automatically retrieved and presented to the EMM managed configuration UI based on the data defined. Through this UI, the administrator can select the desired Managed Configurations. Prior to pushing the Managed Configurations to the device(s), DDT must be launched at least once in order to accept these configurations. Instructions include how DDT can be launched remotely with [OEMConfig](/oemconfig).
 
 General instructions to use Managed Configurations:
-1. **Add Device Diagnostic Tool to the application catalog.** In the EMM, browse or search for Device Diagnostic Tool 2.5 or higher from the Google Play Store and add it to the app catalog. This automatically retrieves the corresponding schema for the app.
+1. **Add Device Diagnostic Tool to the application catalog.** In the EMM, browse or search for Device Diagnostic Tool 2.5 or higher from the Google Play Store and add it to the app catalog. This automatically retrieves the corresponding schema for the app and makes the app available for deployment to the device(s) through the EMM.
 2. **Configure app restrictions using Managed Configurations** as described in the schema. See [App Restrictions](#apprestrictions) section that follows, which describes the available options.
-3. **Push the managed configurations to the device(s).**
-4. **Launch DDT remotely using OEMConfig:**
+3. **Push a policy that deploys the DDT app and the created Managed Configurations to the device(s).**
+4. **Launch DDT remotely using OEMConfig - _DDT must be installed from step 3 prior to executing this step_:**
     * Install [OEMConfig](/oemconfig/setup) on the device, if not previously installed.
     * In OEMConfig, open Device Administration Configuration.
     * Select **Action** > **Submit XML.**
@@ -38,7 +38,7 @@ General instructions to use Managed Configurations:
             </characteristic>
             </wap-provisioningdoc>
 
-    * Apply OEMConfig configuration to the device. _Make sure DDT is installed from step 1 prior to executing this step._
+    * Apply OEMConfig configuration to the device.
 
 
 ## App Restrictions

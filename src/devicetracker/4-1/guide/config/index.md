@@ -28,7 +28,6 @@ This section discusses configuration of Device Tracker:
 * **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 * Generate user barcodes for check-out, if needed.
 
-<!-- -->
 -----
 
 ## Site, Access Point and Device Data
@@ -158,7 +157,6 @@ Deleting a device removes device data from the Device Tracker solution after uni
 6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
 7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
 
-<!-- -->
 -----
 
 ## Secondary BLE
@@ -170,7 +168,6 @@ For devices with secondary BLE beaconing capability, Device Tracker can locate t
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 
 
-<!-- -->
 -----
 
 ## Web Portal
@@ -256,7 +253,7 @@ The password can be reset through the web portal or the client app if the admini
 
 _License Summary in Device Tracker web portal_
 
-<!-- -->
+
 -----
 
 ## Device Check-out
@@ -291,7 +288,7 @@ To set the barcode prefix:
    <br>
    Only barcodes that begin with the specified prefix can initiate the checkout.
 
-<!-- -->
+
 -----
 
 ## Diagnostics
@@ -341,7 +338,7 @@ To use EMM to capture logging, refer to the following XML content:
 Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
 <br><br>
 
-<!-- -->
+
 -----
 
 ## See Also

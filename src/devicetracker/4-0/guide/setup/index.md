@@ -17,23 +17,20 @@ This section discusses installation and configuration of Device Tracker. The cli
 4. **Launch the app.** 
 5. **Deploy server settings** to communicate with the cloud server.
 
-<br>
 <p>Steps 1 to 4 can be accomplished by creating a <a href="#createstagenowinstallationprofile">StageNow installation profile</a> and step 5 by creating a <a href="#createstagenowconfigurationprofile">StageNow configuration profile.</a></p>
 
-<p><b>Configuration of the Device Tracker solution:</b><p>
+<b>Configuration of the Device Tracker solution:</b>
 
 * **[Create/Manage admin and manager logins](#webportal) –** Administrators use the web portal to:
-        * Add/Delete administrators
-        * Add/Delete site managers
-        * Reset passwords
+    * Add/Delete administrators
+    * Add/Delete site managers
+    * Reset passwords
 * **[Configure access points](#siteaccesspointanddevicedata) -** Register access point location to identify which AP the device is connected to and aid in locating the device.
-        * Assign friendly name to access point based on the AP physical location on site
-        * Assign site location – to identify which site the AP belongs
+    * Assign friendly name to access point based on the AP physical location on site
+    * Assign site location – to identify which site the AP belongs
 * **[Configure devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices.
-        * Assign friendly name
-        * Assign a site location
-
-<br>
+    * Assign friendly name
+    * Assign a site location
 
 <p><b>Configure the Check-out feature <i>(optional)</i>:</b></p>
 
@@ -41,14 +38,14 @@ This section discusses installation and configuration of Device Tracker. The cli
 * **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 * Generate user barcodes for check-out, if needed.
 
-<!-- -->
+
 -----
 
 ## Requirements
 
 See [Requirements](../about/#requirements).
 
-<!-- -->
+
 -----
 
 ## Create StageNow Profiles
@@ -123,15 +120,16 @@ _StageNow Config 6_ – Add a delay for the app to be ready to accept configurat
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Suppress the error message:** enable<br>
     This sets the condition such that if the battery level is not 0, it retries 5 times with an interval of 1 second for each retry. The end result is a 5 second delay.
 19. Click **Complete Profiles.** Profile creation is complete.
-<br>
-<p>Perform <b>one</b> of the following steps based on the staging method. Ensure devices are connected to the network during the staging process:</p>
 
-* **StageNow:** Generate the barcode. Open StageNow on the device and scan the barcode to deploy the app.<br>
+Perform **one** of the following steps based on the staging method. Ensure devices are connected to the network during the staging process:
+
+* **StageNow:** Generate the barcode. Open StageNow on the device and scan the barcode to deploy the app.
 * **EMM:** Click on **Export the XML for MDM.** Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app and grant all required permissions.
 <!--
 - Device Owner mode – use [OEMConfig](/oemconfig) to configure the app
 - Device Administrator mode – use [MX](/mx/overview/) to configure the app -->
-  <br>
+
+<br>
 
 #### Extract Client App Certificate
 
@@ -141,10 +139,9 @@ This section is a pre-requisite to create the StageNow installation profile. Pri
 
 1.  Download SigTools.jar from [Zebra’s App Signature Tools](https://techdocs.zebra.com/emdk-for-android/latest/samples/sigtools/).
 2.  Follow the instructions provided from the link to extract the certificate from Device Tracker’s APK file using command:<br>
-
-`java -jar SigTools.jar GetCert -INFORM APK -OUTFORM DER -IN [filename.apk] -OUTFILE [filename.crt]`
-<br>
+`java -jar SigTools.jar GetCert -INFORM APK -OUTFORM DER -IN [filename.apk] -OUTFILE [filename.crt]`<br>
 where _[filename.apk]_ is the full path and file name of the Device Tracker APK install file and _[filename.crt]_ is the designated certificate file name. The file extensions should be preserved in both file names. 
+
 3. The certificate file is extracted as the CRT file.
 The certificate file is needed to create the StageNow Installation Profile.
 <br><br>
@@ -172,14 +169,12 @@ Create a StageNow configuration profile to apply server settings in the app clie
 7. Click **Continue.**
 8. Click **Complete Profiles.**  
 
-<p>Perform <b>one</b> of the following based on the staging method. Ensure devices are connected to the network during the staging process:</p>
-
+Perform **one** of the following based on the staging method. Ensure devices are connected to the network during the staging process:
 * **StageNow:** Generate the barcode. Open StageNow on the device and scan the barcode to deploy the app.
 * **EMM:** Click on **Export the XML for MDM.** Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app and grant all required permissions.
-<br>
-<p><b>Note:</b> If an enterprise reset is performed on the device, the server settings must be re-applied for communication with the server.</p>
 
-<!-- -->
+**Note:** If an enterprise reset is performed on the device, the server settings must be re-applied for communication with the server.
+
 -----
 
 ## Device Deployment
@@ -191,7 +186,6 @@ The device must be connected to the network during deployment. After creating th
 <br>
 <p>When installation and configuration is complete, reboot the device. Once the app is started on Android O or higher devices, a Device Tracker notification message is displayed in the device notification drawer. This notification cannot be dismissed, indicating that Device Tracker is running in the background.</p>
 
-<!-- -->
 -----
 
 ## Site, Access Point and Device Data
@@ -321,7 +315,7 @@ Deleting a device removes device data from the Device Tracker solution after uni
 6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
 7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
 
-<!-- -->
+
 -----
 
 ## Web Portal
@@ -392,14 +386,13 @@ The password can be reset through the web portal or the client app if the admini
 
 1. From the web portal, tap **License Summary** in the left menu.
 2. The following information is provided based on unexpired licenses:
-        * **Total licenses -** quantity of licenses that have been purchased
-            * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
-            * **Total licenses consumed -** quantity of licenses allocated to devices
-        * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
-        * **Sync Licenses** button to refresh license data on-demand. The license information is updated once each day.
-        * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
+    * **Total licenses -** quantity of licenses that have been purchased
+        * **Total licenses available -** quantity of licenses that are available and can be allocated to devices
+        * **Total licenses consumed -** quantity of licenses allocated to devices
+    * **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
+    * **Sync Licenses** button to refresh license data on-demand. The license information is updated once each day.
+    * **Time stamp** of the last occurrence when the license information was synchronized with the license server.
 
-<!-- -->
 -----
 
 ## Device Check-out
@@ -434,7 +427,7 @@ To set the barcode prefix:
    <br>
    Only barcodes that begin with the specified prefix can initiate the checkout.
 
-<!-- -->
+
 -----
 
 ## Diagnostics
@@ -463,31 +456,26 @@ To use EMM to capture logging, refer to the following XML content:
 
 * To enable logging:
 
-<pre class="prettify">
-    <code>
+
         <wap-provisioningdoc>
         <characteristic version="1.0" type="com.zebra.devicetracker">
             <parm name="EnableLog" value="1" />
         </characteristic>
         </wap-provisioningdoc>
-    </code>
-</pre>
+
 
 * To disable logging:
 
-<pre class="prettify">
-    <code>
         <wap-provisioningdoc>
         <characteristic version="1.0" type="com.zebra.devicetracker">
             <parm name="EnableLog" value="0" />
         </characteristic>
         </wap-provisioningdoc>
-    </code>
-</pre>
+
 Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
 <br><br>
 
-<!-- -->
+
 -----
 
 ## See Also

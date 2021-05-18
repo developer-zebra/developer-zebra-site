@@ -105,7 +105,7 @@ It is recommended to perform device reboot with device undocked from workstation
 
 Multiple BT headsets are not supported at this time for Audio routing. 
 
-First time when application is moved from Terminal to secondary screen , app is restored to full screen [ appears to be full screen] . Instead of hitting "restore" button, user can drag the window and manually change the size of the window .Now if same app is moved to Terminal to secondary screen again then previously chosen window size will be retained .  
+First time when application is moved from Terminal to secondary screen , app is restored to full screen [ appears to be full screen] . Instead of hitting "restore" button, user can drag the window and manually change the size of the window. Now if same app is moved to Terminal to secondary screen again then previously chosen window size will be retained .  
 
  
 
@@ -113,9 +113,7 @@ Zebra Workstation Connect (ZWC):
 
 When an app is launched from ZWC, the bottom part of that app window will be covered by the ZWC’s taskbar. 
 
-The following pop-up must be accepted from Terminal side once per Enterprise Reset / Factory reset when changing volume while Audio is routed of one of these headset : USB /3.5 mm audio jack / BT . 
-
- 
+The following pop-up must be accepted from Terminal side once per Enterprise Reset / Factory reset when changing volume while Audio is routed of one of these headset : USB /3.5 mm audio jack / BT. 
 
 Sometimes “unknown ssid” is shown for mouse over of Wifi Icon. Terminal screen show the correct wifi profile. 
 
@@ -123,7 +121,7 @@ Clicking on Android setup notifications from ZWC reports a crash. undock - dock 
 
 Desktop background becomes black when tried to maximize the zoom/teams/WFW apps - auto recovers. 
 
-User may perceive Audio delay [ ~3-4 sec] and automatically resumes - only with Wired USB Plantronics headsets. 
+User may perceive Audio delay [3-4 sec] and automatically resumes - only with Wired USB Plantronics headsets. 
 
 Sometimes ZWC Crash is seen when switching the audio outs from volume control. Click on Cancel it resumes the functionality. 
 

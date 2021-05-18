@@ -17,6 +17,9 @@ Refer to [DX30 Quick Start Guide](https://www.zebra.com/us/en/support-downloads/
 
 ## Supported Devices
 
+See [Zebra Support Portal](https://www.zebra.com/us/en/support-downloads/software/utilities/dx30.html) for supported devices.
+
+<!-- 
 Supported devices (GMS and non-GMS):
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
@@ -83,7 +86,7 @@ Supported devices (GMS and non-GMS):
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
-  <!--
+
   <tr>
     <td>TC70/TC75</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -92,7 +95,7 @@ Supported devices (GMS and non-GMS):
     <td></td>
     <td></td>
   </tr>
-  -->
+
   <tr>
     <td>TC70X/TC75X</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -108,7 +111,7 @@ Supported devices (GMS and non-GMS):
     <td></td>
   </tr>
 </table>
-
+-->
 
 ## Usage Notes
 1. When a user attempts to pair a new DX30 with a mobile computer, the Scan & Pair application removes any existing pairings i.e. at any point in time there will only be one DX30 paired with a mobile computer.

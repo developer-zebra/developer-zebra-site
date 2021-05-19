@@ -143,27 +143,29 @@ Network requirements for communication between the device client app and the clo
 
 * Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
 
-* The following URLs must be allowed through the firewall or proxy:
-    * URLs accessed by device:<br>
+* The following hostnames must be allowed through the firewall or proxy:
+    * Hostnames accessed by device:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.google.com`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.googleapis.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`http://connectivitycheck.gstatic.com`  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required by Google for Android to connect to a wireless network)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://[ProjectID].firebaseio.com`  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(URL accessed by the client app, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`https://us-central1-[projectID].cloudfunctions.net`  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process)
-        * URL accessed by the admin on a PC:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.firebaseio.com`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`connectivitycheck.gstatic.com` &nbsp;&nbsp;(Required by Google for Android to connect to a wireless network.)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`us-central1-[projectID].cloudfunctions.net` &nbsp;&nbsp;(Required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process.)
+
+    * Hostname accessed by the admin on a PC:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;Web portal URL - supplied by Zebra during the cloud setup process
 <br>
 
 <p>If the firewall or proxy does not support wildcards, add the following URLs to the allow list:</p>
 
-* `https://www.googleapis.com`
-* `https://firestore.googleapis.com`
-* `https://cloudfunctions.googleapis.com`
-* `https://firebaseinstallations.googleapis.com`
-* `https://play.googleapis.com`
-* `https://www.google.com`
+* `www.googleapis.com`
+* `firestore.googleapis.com`
+* `cloudfunctions.googleapis.com`
+* `firebaseinstallations.googleapis.com`
+* `play.googleapis.com`
+* `www.google.com`
+* `[ProjectID].firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `[ProjectID]-default-rtdb.firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `s-usc1c-nss-*.firebaseio.com`  (Hostname accessed by the client app, which routes to the Firebase database server. _Since the hostname can change over time, the firewall needs to allow any hostname with this pattern for the app to function._)
 
 <!-- * https://android.googleapis.com
 * https://update.googleapis.com

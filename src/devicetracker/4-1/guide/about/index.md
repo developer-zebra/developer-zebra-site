@@ -107,8 +107,8 @@ Network requirements for communication between the device client app and the clo
 
     * `*.google.com`
     * `*.googleapis.com`
-    * `connectivitycheck.gstatic.com` (required by Google for Android to connect to a wireless network)
-    * Hostnames related to the new project - supplied by Zebra during the cloud setup process.
+    * `*.firebaseio.com` 
+    * `connectivitycheck.gstatic.com` (Required by Google for Android to connect to a wireless network.)
     <br>
 
     Hostname accessed by the admin on a PC: 
@@ -123,7 +123,10 @@ Network requirements for communication between the device client app and the clo
 * `firebaseinstallations.googleapis.com`
 * `play.googleapis.com`
 * `www.google.com`
-* `*.firebaseio.com` 
+* `[ProjectID].firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `[ProjectID]-default-rtdb.firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `s-usc1c-nss-*.firebaseio.com`  (Hostname accessed by the client app, which routes to the Firebase database server. _Since the hostname can change over time, the firewall needs to allow any hostname with this pattern for the app to function._)
+
 
 <!-- * https://android.googleapis.com
 * https://update.googleapis.com

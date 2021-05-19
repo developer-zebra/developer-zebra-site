@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter a keyboard name to add or replace a keyboard layout on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added**.
+Used to enter a keyboard name to add or replace a keyboard layout (language) on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added. Layout names are <u>NOT</u> case sensitive**.
 
 **Parm value input rules**: 
 

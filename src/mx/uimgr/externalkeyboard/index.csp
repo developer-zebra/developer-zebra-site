@@ -40,3 +40,7 @@ parm:
 
 Used to select an Action to perform on the keyboard layout specified in the External Keyboard Name or External Optional Keyboard Name parameter.
 
+**Notes**:
+* To view the name of a connected external keyboard, go to: **Settings > System > Languages & Input > Physical Keyboard > Keyboard Layout**.
+* **Keyboard and layout names are <u>NOT</u> case sensitive**.
+* A Keyboard Name is optional. If no Keyboard Name is entered, any selected layout is applied to all keyboards connected to the device.

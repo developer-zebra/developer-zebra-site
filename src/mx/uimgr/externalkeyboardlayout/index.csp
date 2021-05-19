@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: External Keyboard Language
+title: External Keyboard Layout
 type: parm
 order: 17
 mx: "10.5"
@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the name of an external keyboard to which to apply language configuration settings. **Note: External keyboard MUST be connected when applying this parameter**. 
+Used to enter the name of a <u>connected external keyboard</u> on which to apply layout mapping actions. **Note: External keyboard MUST be connected when applying this parameter**. 
 
 **Parm value input rules**: 
 

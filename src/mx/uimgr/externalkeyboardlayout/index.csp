@@ -6,7 +6,7 @@ order: 17
 mx: "10.5"
 apilevel: "30"
 devicetype: A
-info: External keyboard MUST be connected when applying this parameter.
+info: External keyboard MUST be connected when applying this parameter. If multiple StageNow Profiles containing different layout names are created, the layout in the last applied Profile becomes the default.
 parm:
   presentif: External Keyboard Action is "Add/Replace Keyboard Layout Mapping"
   pivotal: No
@@ -14,7 +14,14 @@ parm:
   type: string
 ---
 
-Used to enter the name of a <u>connected external keyboard</u> on which to apply layout mapping actions. **Note: External keyboard MUST be connected when applying this parameter**. 
+Used to enter the name of the keyboard layout being configured. **This is a required field and must contain the name of a layout listed in the "Keyboard layouts" panel on the device. **Keyboard and layout names are <u>case sensitive</u>**.
+
+**To view a list of Keyboard Layouts**: 
+
+1. Go to the **Android Settings panel**. 
+2. Select **System > Languages & input > Physical keyboard**. 
+3. Tap the name of the connected external keyboard. The name of the currently selected layout is displayed. 
+4. Tap "SET UP KEYBOARD LAYOUTS" to display a list of alternalive layouts (languages).
 
 **Parm value input rules**: 
 

@@ -18,3 +18,8 @@ Used to enter a keyboard name to add or replace a keyboard layout (language) on 
 **Parm value input rules**: 
 
 * String of at least one alphanumeric character
+
+**Notes**:
+* To view the name of the connected external keyboard, go to the **Android Settings panel** and select **System > Languages & input > Physical keyboard > Keyboard layout**.
+* **Keyboard and layout names are <u>NOT</u> case sensitive**.
+* A Keyboard Name is optional. If no Keyboard Name is entered, any selected layout is applied to all keyboards connected to the device.

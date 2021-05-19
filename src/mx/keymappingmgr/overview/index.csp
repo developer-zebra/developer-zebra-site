@@ -67,6 +67,12 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 
 -----
 
+### Queries
+
+> `DISCONTINUATION NOTICE:` Query functions are no longer available in Zebra devices running Android 11. 
+
+-----
+
 ### Alert Button
 
 Zebra devices offer the ability to designate a key as a "panic button" that when long-pressed executes an intent to perform a customized task such as dialing an emergency phone number, summoning medical equipment or launching any custom app.

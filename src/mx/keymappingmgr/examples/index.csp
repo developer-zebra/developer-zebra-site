@@ -89,6 +89,8 @@ The first feature of the following Request XML document is used to first reset t
 
 ## Queries
 
+>`DISCONTINUATION NOTICE:` Query functions are no longer available in Zebra devices running Android 11. 
+
 ###Version Query
 
 #### Input

@@ -79,6 +79,7 @@ parm:
     - code: NAV_OK
       mx: "10.4"
       devicetype: A
+      info: Applies only to MC20 and similarly equipped devices.
       name: NAV_OK
       description: Button in center of four-way navigational arrow keys on some devices
     - code: ESC
@@ -104,6 +105,7 @@ parm:
     - code: CLR
       mx: "4.4"
       devicetype: A
+      info: Applies only to MC20 and similarly equipped devices.
       name: Clear
       description: The "Clear" key
     - code: FIELD_EXIT
@@ -144,6 +146,7 @@ parm:
     - code: FN
       mx: "10.4"
       devicetype: A
+      info: Applies only to MC20 and similarly equipped devices.
       name: FN
       description: The key marked with "FN" on some devices
     - code: BLUE
@@ -443,8 +446,12 @@ parm:
 
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, enter the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.
 
-**Not all devices have Keys for every Key Identifier in the table**. Attempts to add an Override Mapping for a Key that is not present on a device will produce an error in the Result XML. For a list of supported Keys on a specific device, query the KeyMappingMgr for Key Identifiers (see Queries, below) or refer to the device documentation. For known deviations from these standards, **see the [Standards and Deviations section](#standardsanddeviations)** of the Overview at the top of this page. 
+> **Not all devices have Keys for every Key Identifier in the table**. Attempts to add an Override Mapping for a Key that is not present on a device will produce an error in the Result XML. For a list of supported Keys on a specific device, query&#42; the KeyMappingMgr for Key Identifiers (see Queries, below) or refer to the device documentation. For known deviations from these standards, **see the [Standards and Deviations section](#standardsanddeviations)** of the Overview at the top of this page. 
+
+&#42;_Query functions are no longer available in Zebra devices running Android 11_. 
 
 <!-- 2/10/21 removed from NAV_OK, CL, FN at req. of PDM
-info: Applies to MC20 devices only. -->
+info: Applies to MC20 devices only. 
+5/19/21- returned modified statement: info: Applies only to MC20 and similarly equipped devices.
+-->
 

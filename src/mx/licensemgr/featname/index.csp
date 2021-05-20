@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter the feature name for Action by the Zebra License Action parameter. 
+Used to enter the Feature Name (in place of an Activation ID) on which to perform an Action selected in the Zebra License Action parameter. 
 
 **Parm value input rules**: 
 

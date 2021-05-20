@@ -101,21 +101,22 @@ Network requirements for communication between the device client app and the clo
 
 * Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
 
-* The following hostnames must be allowed through the firewall or proxy. <br>
+* The following domains must be allowed through the firewall or proxy. <br>
 
-    Hostnames accessed by device:
+    Domain names accessed by device:
 
     * `*.google.com`
     * `*.googleapis.com`
     * `*.firebaseio.com` 
     * `connectivitycheck.gstatic.com` (Required by Google for Android to connect to a wireless network.)
+    * `us-central1-[projectID].cloudfunctions.net` (Required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process.)
     <br>
 
-    Hostname accessed by the admin on a PC: 
-    * Web portal URL - supplied by Zebra during the cloud setup process
+    Domain name accessed by the admin on a PC: 
+    * Web portal - supplied by Zebra during the cloud setup process.
 <br>
 
-<p>If the firewall or proxy does not support wildcards, add the following hostnames to the allow list:</p>
+<p>If the firewall or proxy does not support wildcards, add the following domains to the allow list:</p>
 
 * `www.googleapis.com`
 * `firestore.googleapis.com`
@@ -123,9 +124,9 @@ Network requirements for communication between the device client app and the clo
 * `firebaseinstallations.googleapis.com`
 * `play.googleapis.com`
 * `www.google.com`
-* `[ProjectID].firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
-* `[ProjectID]-default-rtdb.firebaseio.com`  (Hostname accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
-* `s-usc1c-nss-*.firebaseio.com`  (Hostname accessed by the client app, which routes to the Firebase database server. _Since the hostname can change over time, the firewall needs to allow any hostname with this pattern for the app to function._)
+* `[ProjectID].firebaseio.com`  (Acessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `[ProjectID]-default-rtdb.firebaseio.com`  (Accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
+* `s-usc1c-nss-*.firebaseio.com`  (Accessed by the client app to route to the Firebase database server, where "&#42;" represents multiple characters. _Since "&#42;" can change over time, the firewall needs to allow any domain with this pattern for the app to function._)
 
 
 <!-- * https://android.googleapis.com

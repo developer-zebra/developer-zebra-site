@@ -14,7 +14,7 @@ The License Manager (LicenseMgr) CSP administers the software licenses on a devi
 
 * Perform licensing actions using Zebra or (legacy) Symbol methods
 * Activate / Return / Return All / Refresh Software License(s) by Activation ID
-* Activate / Return / Refresh Licensed apps by feature name and version
+* Activate / Return / Refresh Licensed apps by "feature" name and/or version
 * Select license source:
  * Cloud
  * Cloud proxy

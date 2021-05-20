@@ -1,0 +1,72 @@
+---
+decoder: i2of5
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: Sets the lower limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 4.
+      param: decoder_i2of5_length1
+      paramvalue: Integer from 0–55
+    - name: Length2
+      description: Sets the upper limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 12.
+      param: decoder_i2of5_length2
+      paramvalue: Integer from 0–55
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: decoder_i2of5_redundancy
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Report Check Digit
+      description: Transmits Interleaved 2 of 5 data with the check digit when enabled.
+      param: decoder_code11_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Convert to EAN13
+      description: Converts 14-character Interleaved 2 of 5 barcodes to EAN-13 and transmits as EAN-13. The Interleaved 2 of 5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit.
+      param: decoder_itf14_convert_to_ean13
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Reduced Quiet Zone
+      description: Enable marginless decode
+      param: i20f5_enable_marginless_decode
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Febraban
+      description: When enabled, inserts special check characters into the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 characters and meet specific Febraban criteria.
+      param: decoder_i2of5_enable_febraban
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Check Digit
+      description: Checks the integrity of all I2of5 barcodes to verify that the data complies with either the specified Uniform Symbology Specification (USS) or the Optical Product Code Council (OPCC) check digit algorithm.
+      param: decoder_i2of5_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Security Level
+      description: The scanner offers four levels of decode security for I2of5 barcodes. As the quality of barcodes decreases, implementing an increased level of security compensates and helps improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends to carefully choose the level of security necessary for any given application.
+      param: decoder_i2of5_security_level
+      paramvalue: 
+        list:
+            - value: 0 - Security Level 0
+            - value: 1 - Security Level 1
+            - value: 2 - Security Level 2
+            - value: 3 - Security Level 3
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+
+
+
+

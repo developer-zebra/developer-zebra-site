@@ -1,0 +1,43 @@
+---
+decoder: code11
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: Sets the lower limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 4.
+      param: decoder_code11_length1
+      paramvalue: Integer from 0–55
+    - name: Length2
+      description: Sets the upper limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 12.
+      param: decoder_code11_length2
+      paramvalue: Integer from 0–55
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: decoder_code11_redundancy
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Verify Check Digit
+      description: Checks the integrity of all Code 11 barcodes to verify that the data complies with the specified check digit algorithm. 
+      param: decoder_code11_verify_check_digit
+      paramvalue: 
+        list:
+            - value: 0 - No Check Digit
+            - value: 1 - 1 Check Digit
+            - value: 2 - 2 Check Digits
+    - name: Report Check Digit
+      description: Transmits Code 11 data with the check digit. 
+      param: decoder_code11_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+
+
+
+

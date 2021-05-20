@@ -1,0 +1,15 @@
+---
+decoder: hanxin
+type: parm
+parm:
+  type: list
+  list: 
+    - name: HAN XIN Inverse
+      description: Checks the inverse of the HanXin decoder.
+      param: decoder_hanxin_inverse
+      paramvalue: 
+        list:
+            - value: 0 - Disable
+            - value: 1 - Enable
+            - value: 2 - Auto
+---

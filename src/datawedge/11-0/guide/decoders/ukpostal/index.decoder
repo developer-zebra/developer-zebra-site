@@ -1,0 +1,15 @@
+---
+decoder: ukpostal
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: The check digit is the last character of the barcode used to verify the integrity of the data. Configure the scanner whether to transmit data with or without the check digit.
+      param: decoder_uk_postal_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

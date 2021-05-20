@@ -1,0 +1,50 @@
+---
+decoder: msi
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Length1
+      description: Sets the lower limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 4.
+      param: decoder_msi_length1
+      paramvalue: Integer from 0–55
+    - name: Length2
+      description: Sets the upper limit when decoding a barcode with a specific length range. For example, to decode a barcode containing between 4 and 12 characters, set this value to 12.
+      param: decoder_msi_length2
+      paramvalue: Integer from 0–55
+    - name: Redundancy
+      description: Sets the reader to read the barcode twice before accepting data.
+      param: decoder_msi_redundancy
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+    - name: Check Digit 
+      description: With MSI barcodes, one check digit is required and is always verified by the reader. The second check digit is optional.
+      param: decoder_msi_check_digit
+      paramvalue: 
+        list:
+            - value: 0 - 1 Check Digit
+            - value: 1 - 2 Check Digits
+    - name: Check Digit Scheme 
+      description: Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
+      param: decoder_msi_check_digit_scheme
+      paramvalue: 
+        list:
+            - value: Mod-11-10 - First check digit is MOD 11; the second check digit is MOD 10.
+            - value:
+            - value: Mod-10-10 - Both check digits are MOD 10.
+    - name: Report Check Digit
+      description: When enabled, transmits MSI data with the check digit.
+      param: decoder_msi_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+
+Note: For <b>Length1</b> and <b>Length2</b>, see <a href="./#decodelengths">Decode Lengths</a> section below.
+
+
+
+

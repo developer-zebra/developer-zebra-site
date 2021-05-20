@@ -1,0 +1,19 @@
+---
+decoder: ocra
+type: parm
+parm:
+  type: list
+  list: 
+    - name: OCR A Variant
+      description: Font variants supported.
+      param: ocr_a_variant
+      paramvalue: 
+        list:
+            - value: FULL_ASCII (0) (default)
+            - value: RESERVED_1 (1)
+            - value: RESERVED_2 (2)
+            - value: BANKING(3)
+---
+
+OCR A is typically used for financial documents.
+

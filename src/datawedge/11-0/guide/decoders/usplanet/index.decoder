@@ -1,0 +1,15 @@
+---
+decoder: usplanet
+type: parm
+parm:
+  type: list
+  list: 
+    - name: Report Check Digit
+      description: When enabled, transmits USPlanet data with the check digit. 
+      param: decoder_usplanet_report_check_digit
+      paramvalue: 
+        list:
+            - value: true
+            - value: false
+---
+

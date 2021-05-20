@@ -1,0 +1,25 @@
+---
+decoder: compositeab
+type: parm
+parm:
+  type: list
+  list: 
+    - name: UCC Link Mode 
+      description: Select an option for linking UPC barcodes with a 2D barcode during transmission as if they were one barcode -
+      descriptionlist:
+        - value: • UPC Never Linked -  Transmit UPC barcodes regardless of whether a 2D barcode is detected.
+        - value: • UPC Always Linked - Transmit UPC barcodes and the 2D portion. If 2D is not present, do not transmit the barcode.
+        - value: • Autodiscriminate UPC Composites - The scanner determines if there is a 2D portion, then transmits the UPC, as well as the 2D portion if present.
+      param: decoder_composite_ab_ucc_link_mode
+      paramvalue: 
+        list:
+            - value: 0 - Link Flag Ignored
+            - value: 1 - Always Linked
+            - value: 2 - Auto Discriminate
+---
+
+
+
+
+
+

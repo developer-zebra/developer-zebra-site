@@ -26,29 +26,31 @@ products:
         label: '3.0'
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
-    url: /datawedge/8-2/guide/about
+    url: /datawedge/11-0/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/8-2/guide/about
+        url: /datawedge/11-0/guide/about
       - title: Get Started
-        url: /datawedge/8-2/guide/gettingstarted
+        url: /datawedge/11-0/guide/gettingstarted
       - title: Profiles
-        url: /datawedge/8-2/guide/profiles
+        url: /datawedge/11-0/guide/profiles
       - title: Feature Matrix
-        url: /datawedge/8-2/guide/matrix
+        url: /datawedge/11-0/guide/matrix
       - title: Settings
-        url: /datawedge/8-2/guide/settings
+        url: /datawedge/11-0/guide/settings
       - title: APIs
-        url: /datawedge/8-2/guide/api
+        url: /datawedge/11-0/guide/api
       - title: Guides
-        url: /datawedge/8-2/guide/programmers-guides
+        url: /datawedge/11-0/guide/programmers-guides
       - title: Samples
-        url: /datawedge/8-2/guide/samples
+        url: /datawedge/11-0guide/samples
       - title: FAQ
-        url: /datawedge/8-2/guide/faq
+        url: /datawedge/11-0/guide/faq
     versions:
+      - url: datawedge/11-0/guide/about
+        label: '11.0' 
       - url: datawedge/8-2/guide/about
         label: '8.2' 
       - url: datawedge/8-1/guide/about

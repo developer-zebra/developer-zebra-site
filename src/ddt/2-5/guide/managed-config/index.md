@@ -16,6 +16,8 @@ Requirements for use of Managed Configurations with DDT:
 * DDT with the Zebra schema downloaded from the Google Play Store
 * DDT is installed on the device and _must be launched at least once_
 * An EMM for device deployment
+* FTP Server to upload DDT test data<br>
+_Recommended: To minimize security risks from disclosure of login credentials, Zebra recommends uploading test data to a dedicated server._ 
 
 ## Use Managed Configurations
 
@@ -38,7 +40,7 @@ General instructions to use Managed Configurations:
             </characteristic>
             </wap-provisioningdoc>
 
-    * Apply OEMConfig configuration to the device.
+    * Apply OEMConfig configuration to the device(s).
 
 
 ## App Restrictions

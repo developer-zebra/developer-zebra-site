@@ -28,12 +28,13 @@ Hardware features tested:
 ## New in 2.5
 
 - New [SD Card Test](../usage/#devicetests) to check for SD card presence, total/free space and read/write status.
-- DDT is now localized in 7 different languages (French, Italian, German, Spanish, Portuguese, Chinese and Japanese) based on the language of the Android system.
+- DDT is now localized in 7 different languages (French, Italian, German, Spanish, Portuguese, Simplified Chinese and Japanese) based on the language of the Android system.
 - New automated remote test scheduling and remote log file export with [Managed Configuration](../managed-config).
 - Resolved issue: Test result is not logged properly when test is cancelled.
-- Android 11 limitations due to security restrictions: 
+<!-- - Android 11 limitations due to security restrictions: 
     - In the WWAN test details screen, "Device ID" is not visible. 
     - In the History.log file, "Device ID" and "Device Serial#" is not visible.
+-->
 
 ## Version History
 

@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter a Keyboard Name to add or replace a Keyboard Layout (language) on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added**. Keyboard Names are <u>NOT</u> case sensitive.
+Used to enter a Keyboard Name to add or replace a Keyboard Layout (language) on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added**. Keyboard Names are **NOT case sensitive**.
 
 **Parm value input rules**: 
 
@@ -21,4 +21,4 @@ Used to enter a Keyboard Name to add or replace a Keyboard Layout (language) on 
 
 **Notes**:
 * To view the name of the connected external keyboard, go to the **Android Settings panel** and select **System > Languages & input > Physical keyboard**.
-* This field is optional. If no Keyboard Name is entered, selected layouts are applied to all keyboards connected to the device.
+* If no Keyboard Name is entered, selected layouts are applied to all keyboards connected to the device.

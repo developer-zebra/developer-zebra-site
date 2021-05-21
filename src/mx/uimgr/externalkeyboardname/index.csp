@@ -15,10 +15,9 @@ parm:
 
 Used to enter a Keyboard Name to add or replace a Keyboard Layout (language) on the device. **Note: If a layout exists on the device with the same name as one being added, the existing layout is replaced by the layout being added**. Keyboard Names are **NOT case sensitive**.
 
+**To view the name of the connected external keyboard**, go to the **Android Settings panel** and select **System > Languages & input > Physical keyboard**.
+
 **Parm value input rules**: 
 
 * String of at least one alphanumeric character
-
-**Notes**:
-* To view the name of the connected external keyboard, go to the **Android Settings panel** and select **System > Languages & input > Physical keyboard**.
-* If no Keyboard Name is entered, selected layouts are applied to all keyboards connected to the device.
+* If no Keyboard Name is entered, selected layouts are applied to all keyboards connected to the device

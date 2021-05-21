@@ -23,19 +23,19 @@ parm:
       name: Add/Replace Keyboard Layout Mapping 
       mx: "10.5"
       apilevel: "30"
-      description: Adds a keyboard layout to the device or replaces one of the same name.    
+      description: Adds a Keyboard Layout (language) to the device or replaces one of the same name.    
     - code: 2
       devicetype: A
       name: Remove Keyboard Layout Mapping
       mx: "10.5"
       apilevel: "30"
-      description: Removes a keyboard layout from the device.
+      description: Removes a Keyboard Layout (language) from the device.
     - code: 3
       devicetype: A
       name: Remove All Keyboard Layout Mappings
       mx: "10.5"
       apilevel: "30"
-      description: Removes all keyboard layouts from the device.
+      description: Removes all Keyboard Layouts (languages) from the device.
 ---
 
-Used to select an Action to perform on a connected external keyboard specified in the External Keyboard Name parameter. 
+Used to select an Action to perform on the **connected** external keyboard specified in the External Keyboard Name parameter. 

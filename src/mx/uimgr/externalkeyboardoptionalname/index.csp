@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to enter a keyboard layout name to remove from the device. Layout name must be among those listed in the Input Settings panel on the device. These names are **NOT case sensitive**.
+Used to enter a Keyboard Name from which to remove a Keyboard Layout (language). The Keyboard  Name entered must be among those listed in the Input Settings panel on the device. These names are **NOT case sensitive**.
 
 **Parm value input rules**: 
 

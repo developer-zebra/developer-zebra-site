@@ -34,12 +34,19 @@ General instructions to use Managed Configurations:
     * In the input field for **Submit XML**, enter the text below to launch DDT:
 
             <wap-provisioningdoc>
-            <characteristic type="AppMgr">
-            <parm name="Action" value="LaunchApplication" />
-            <parm name="ApplicationName" value="Diagnostic Tool" />
+            <characteristic type="Intent">
+            <parm name="Action" value="StartActivity"/>
+            <parm name="ActionName" value="android.intent.action.MAIN"/>
+            <parm name="Package" value="com.symbol.selfdiagnostics"/>
+            <parm name="Class" value="com.symbol.selfdiagnostics.activities.MainActivity"/>
+            <characteristic type="Extra">
+            <parm name="ExtraType" value="string"/>
+            <parm name="ExtraName" value="LAUNCH_DDT"/>
+            <parm name="ExtraValue" value="1"/>
+            </characteristic>
             </characteristic>
             </wap-provisioningdoc>
-
+    Note: Line breaks should be removed.
     * Apply OEMConfig configuration to the device(s).
 
 

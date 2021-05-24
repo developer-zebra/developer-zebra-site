@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the name of the Keyboard Layout being configured. **This is a required field and must contain the name of a layout listed in the "Keyboard layouts" panel on the device. <u>NOTE: Layout Names are case sensitive</u>**. 
+Used to enter the name of the Keyboard Layout being configured. **This is a required field and must contain the name of a layout listed in the "Keyboard layouts" panel on the device. NOTE: Layout Names **ARE case sensitive**. 
 
 **To view a list of Keyboard Layouts**: 
 

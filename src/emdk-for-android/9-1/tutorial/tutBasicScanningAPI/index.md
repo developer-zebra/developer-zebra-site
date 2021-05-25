@@ -226,7 +226,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 			}
 		}
 
-12. Use the `onOpened()` method to get a reference to the `EMDKManager`. The `EMDKListener` interface triggers this event when EMDK is ready to be used. The `EMDKListener` interface must be implemented to get a reference to EMDKManager APIs. This event passes the `EMDKManager` instance and assigns it to the global variable `emdkManager` created in earlier steps. Use that instance to get an instance of the [Barcode Manager API](../,,/api) to enable scanning.
+12. Use the `onOpened()` method to get a reference to the `EMDKManager`. The `EMDKListener` interface triggers this event when EMDK is ready to be used. The `EMDKListener` interface must be implemented to get a reference to EMDKManager APIs. This event passes the `EMDKManager` instance and assigns it to the global variable `emdkManager` created in earlier steps. Use that instance to get an instance of the [Barcode Manager API](../../api) to enable scanning.
 
 		:::java
 		// Get a reference to EMDKManager

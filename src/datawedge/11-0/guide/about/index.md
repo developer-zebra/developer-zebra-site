@@ -121,6 +121,14 @@ For more information about approved languages or to download a localized operati
 
 ## New in DataWedge 11.0
 
+- New [Managed Configurations](../managed-config) to remotely configure DataWedge through an EMM (Enterprise Mobility Management) system.
+
+---
+
+## Version History
+
+### Added in DataWedge 8.2
+
 - [Multiple scanner support](../input/barcode/#scannerselection) added for different scanners to be used interchangeably without the need for manual configuration.
 - New DataWedge intent APIs:
   - [Notify](../api/notify) - play notification sound(s) on connected Bluetooth scanners with RSM (Remote Scanner Management).
@@ -131,10 +139,6 @@ For more information about approved languages or to download a localized operati
   - [Document Capture](../input/barcode/#documentselectiondocumentcapture) via Camera scanner for better quality images. Support for this feature depends on the hardware and operating system version. Refer to the [Feature Matrix](../matrix) table for more information.
 - New **[DataWedge keyboard options](../output/keystroke)** in Keystroke Output to display a DataWedge "keyboard" (DataWedge icon that displaces the default keyboard) when dispatching keystroke data.
 - Use of unlicensed features is reported when [importing configurations](../licensing/#importingdatawedgeconfigurations).
-
----
-
-## Version History
 
 ### Added in DataWedge 8.1
 

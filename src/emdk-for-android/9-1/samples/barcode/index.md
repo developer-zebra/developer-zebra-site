@@ -27,9 +27,9 @@ productversion: '9.1'
 ##Overview
 EMDK for Android can be used handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/7-3/api). These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-3/mx/data-capture/barcode).  
 
->**Notes**:<br>
-* As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
-* This sample cannot control the Decoder Type when RS5100 is the enumerated scanner.
+## Notes
+* **The decoder type cannot be controlled** when an RS5100 is the enumerated scanner.
+* **DataWedge cannot be configured for data capture through Profile Manager** with EMDK 6.8 or later. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
 <!-- The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) are:
   

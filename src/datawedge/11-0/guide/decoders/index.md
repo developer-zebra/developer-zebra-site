@@ -9,22 +9,20 @@ menu:
   items:
     - title: About
       url: /datawedge/11-0/guide/about
-    - title: Get Started
-      url: /datawedge/11-0/guide/gettingstarted
+    - title: Guides
+      url: /datawedge/11-0/guide/programmers-guides
     - title: Profiles
       url: /datawedge/11-0/guide/profiles
+    - title: Feature Matrix
+      url: /datawedge/11-0/guide/matrix
+    - title: Decoders
+      url: /datawedge/11-0/guide/decoders
     - title: Settings
       url: /datawedge/11-0/guide/settings
     - title: APIs
       url: /datawedge/11-0/guide/api
-    - title: Guides
-      url: /datawedge/11-0/guide/programmers-guides
     - title: Samples
       url: /datawedge/11-0/guide/samples
-    - title: Remote Admin
-      url: /datawedge/11-0/guide/admin
-    - title: Licensing
-      url: /datawedge/11-0/guide/licensing
     - title: FAQ
       url: /datawedge/11-0/guide/faq
     - icon: fa fa-graduation-cap

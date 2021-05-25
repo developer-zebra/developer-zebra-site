@@ -40,7 +40,12 @@ content-items:
     url: /datawedge/11-0/guide/programmers-guides/secure-intent-apis
   - type: section
     level: 4
-    title: Remote Administration
+    title: Managed Configurations for Remote Configuration
+    text: Learn how to remotely configure DataWedge with Managed Configurations through an EMM.
+    url: /datawedge/11-0/guide/managed-config
+  - type: section
+    level: 4
+    title: Remote Administration with DataWedge Manager CSP
     text: Learn how to mass deploy DataWedge configurations using DataWedge Manager CSP.
     url: /datawedge/11-0/guide/admin
   - type: section

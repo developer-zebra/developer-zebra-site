@@ -75,12 +75,12 @@ Long pressing on the scanner category in the **Scanner Selection** screen displa
 <table>
  <tr>
   <td>
-    <img style="height:350px" src="scanner_category_menu.png"/>
+    <img style="height:350px" src="scanner_category_menu.jpg"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
   <td>
-    <img style="height:350px" src="select_trigger.png"/>
+    <img style="height:350px" src="select_trigger.jpg"/>
   </td>
  </tr>
 </table>
@@ -488,6 +488,8 @@ Many input methods include parameters that are configurable according to the exp
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and provides details for those with configurable parameters.
 
+**See [Decoders](../../decoders) for supported decoders and decoder parameters.**
+
 ### Default Decoders
 
 DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles (indicated by an \*). **To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile**.
@@ -517,27 +519,27 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Chinese 2of5</p></td>
-<td align="left" valign="top"><p class="table"><a href="#codabar">Codabar</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#code11">Code 11</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#codabar">Codabar</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#code11">Code 11</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Code 32<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#code39">Code 39</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#code93">Code 93</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#code39">Code 39</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#code93">Code 93</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#code128">Code 128</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#compositeab">Composite AB</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#compositec">Composite C</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#code128">Code 128</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#compositeab">Composite AB</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#compositec">Composite C</a><sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#decodersignature">Decoder Signature</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#discrete2of5">Discrete 2of5</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#decodersignature">Decoder Signature</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#discrete2of5">Discrete 2of5</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#dutchpostal">Dutch Postal</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#dotcode">DotCode</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#dutchpostal">Dutch Postal</a></p></td>
 <td align="left" valign="top"><p class="table">EAN-8</a><sup>*</sup></p></td>
 </tr>
 <tr>
@@ -546,58 +548,58 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#gridmatrix">Grid Matrix</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#gridmatrix">Grid Matrix</a></p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#gs1datamatrix">GS1 Datamatrix</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#gs1qrcode">GS1 QR Code</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#hanxin">HAN XIN</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2 of 5</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#interleaved2of5">Interleaved 2 of 5</a></p></td>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
-<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#korean3of5">Korean 3of5</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MAILMARK</p></td>
-<td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#matrix2of5">Matrix 2of5</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MICR E13B</p></td>
-<td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#micropdf">MicroPDF</a><sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
 <td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#msi">MSI</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#ocra">OCR A</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#ocrb">OCR B</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#ocra">OCR A</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#ocrb">OCR B</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#trioptic39">Trioptic 39</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">US Currency</p></td>
-<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#uspostnet">USPostnet</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#usplanet">US Planet</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
 <td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#upce0">UPC-E0</a><sup>*</sup></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="../../decoders/#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 </tr>
 </tbody>
@@ -643,597 +645,14 @@ If a decoder has no parameters, a checkbox is displayed to enable/disable the de
 
 Editable parameters of individual Decoders are explained below. **Note: Decoders lacking configurable parameters do not appear in the Decoder Parameters section below**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" guide.
 
+**See [Decoders](../../decoders) for supported decoders and decoder parameters.**
+
 ### Reduced Quiet Zone
 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When marginless decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table:
 <img style="height:350px" src="Marginless_C128_param_table.png"/>
 _**Descriptions of the 1D Quiet Zone Levels** shown above are in the [Reader Params](#readerparams) section along with important warnings_.
 <br>
-
----
-
-### UPCE0
-
-**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
-
-**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE0 preamble:
-
-**Preamble Sys Char -** Transmit System Character only.
-
-**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
-
-**Preamble None -** Transmit no preamble.
-
-Select the appropriate option to match the host system.
-
-**Convert UPCE0 To UPCA -** Enable to convert UPCE0 (zero suppressed) decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable to transmit UPCE0 decoded data as UPCE0 data, without conversion (default - disabled).
-
----
-
-### UPCE1
-
-**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
-
-**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCE1 preamble:
-
-**Preamble Sys Char -** Transmit System Character only.
-
-**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
-
-**Preamble None -** Transmit no preamble.
-
-Select the appropriate option to match the host system.
-
-**Convert UPCE1 To UPCA -** Enable this to convert UPCE1 decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable this to transmit UPCE1 decoded data as UPCE1 data, without conversion.
-
----
-
-### UPCA
-
-**Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
-
-**Preamble -** Preamble characters are part of the UPC symbol consisting of Country Code and System Character. There are three options for transmitting a UPCA preamble:
-
-**Preamble Sys Char -** Transmit System Character only.
-
-**Preamble Country and Sys Char -** Transmit System Character and Country Code ("0" for USA).
-
-**Preamble None -** Transmit no preamble.
-
-Select the appropriate option to match the host system.
-
----
-
-### MSI
-
-**Length1\* -** To decode an MSI symbol with a specific length range, set this value to the lower limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode an MSI symbol with a specific length range, set this value to the upper limit. For example, to decode MSI symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Check Digit -** With MSI symbols, one check digit is required, and is always verified by the reader. The second check digit is optional.
-
-- **One Check Digit -** Verify one check digit.
-- **Two Check Digits -** Verify two check digits.
-
-**Check Digit Scheme -** Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit:
-
-- **Mod-11-10 -** First check digit is MOD 11; the second check digit is MOD 10.
-- **Mod-10-10 -** Both check digits are MOD 10.
-
-**Report Check Digit -** Transmit MSI data with or without the check digit. A check in this checkbox will send MSI data with a check digit.
-
-## <!--
-
-### EAN8
-
-**Convert EAN8 To EAN13 -** Converts EAN8 data to EAN 13 format. A check in the checkbox enables this conversion.
-// Remove per TUT-47148 -->
-
----
-
-### Codabar
-
-**Length1\* -** To decode a Codabar symbol with a specific length range, set this value to the lower limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 8.
-
-**Length2\* -** To decode a Codabar symbol with a specific length range, set this value to the upper limit. For example, to decode Codabar symbols containing between 8 and 24 characters, this value would be set to 24.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Clsi Editing -** Enable this parameter to strip the start and stop characters and insert a space after the first, fifth, and tenth characters of a 14-character Codabar symbol. Enable this feature if the host system requires this data format.
-
-**Notis Editing -** Enable this parameter to strip the start and stop characters from a decoded Codabar symbol. Enable this feature if the host system requires this data format.
-
----
-
-### Code39
-
-**Length1\* -** To decode a Code 39 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 8.
-
-**Length2\* -** To decode a Code 39 symbol with a specific length range set this value to the upper limit. For example, to decode Code 39 symbols containing between 8 and 24 characters, this value would be set to 24.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Verify Check Digit -** Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.
-
-**Report Check Digit -** Transmit Code 39 data with or without the check digit. A check in the checkbox will send Code 39 data with a check digit.
-
-**Full ASCII -** Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set. Check this checkbox to enable Code 39 Full ASCII.
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Convert Code39 To Code32 -** Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry.
-
-**Report Code32 Prefix -** Enables the addition of the prefix character "A" to all Code 32 barcodes.
-
-**Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
-
----
-
-### Discrete 2of5
-
-**Length1\* -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
----
-
-### DotCode
-
-**Inverse -** To specify the reflectance for decoding DotCode barcodes, set the option:
-
-- **Disabled (0) -** To decode DotCode barcodes with normal reflectance only.
-- **Enabled (1) -** To decode DotCode barcodes with inverse reflectance only.
-- **Auto (2) -** To decode both normal and inverse reflectance DotCode barcodes (default).
-
-**Mirror -** To specify whether mirrored DotCode barcodes are decoded, set an option:
-
-- **Disabled (0) -** To decode non-mirrored DotCode barcodes only.
-- **Enabled (1) -** To decode mirrored DotCode barcodes only.
-- **Auto (2) -** To decode both mirrored and non-mirrored DotCode barcodes (default).
-
-**Erasures -** To increase the decoding speed of Dotcode barcodes. The higher the value, the faster it can decode with a higher risk of misdecodes. Value range is 4 to 20; default value is 10.
-
----
-
-### Dutch Postal
-
-**Dutch Postal 3S -** To enable/disable decoding of KIX 3S barcodes of type Dutch Postal.
-
----
-
-### Interleaved 2 of 5
-
-**Length1\* -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Febraban -** Enable or disable insertion of special check characters into the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 characters and meet specific Febraban criteria.
-
----
-
-### Check Digit
-
-**No Check Digit -** A check digit is not used.
-
-**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
-
-**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
-
-**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox sends Interleaved 2 of 5 data with check digit.
-
-**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit.
-
----
-
-### Code11
-
-**Length1\* -** To decode a Code 11 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode a Code 11 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 11 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Verify Check Digit -** Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 barcode.
-
-**No Check Digit -** Do not verify check digit.
-
-**One Check Digit -** Barcode contains one check digit.
-
-**Two Check Digits -** Barcode contains two check digits.
-
-**Report Check Digit -** Transmit Code 11 data with or without the check digit. A check in the checkbox sends Code 11 data with a check digit.
-
----
-
-### Code93
-
-**Length1\* -** To decode a Code 93 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode a Code 93 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 93 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
----
-
-### Code128
-
-**Length1\* -** To decode a Code 128 symbol with a specific length range, set this value to the lower limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode a Code 128 symbol with a specific length range, set this value to the upper limit. For example, to decode Code 128 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
-**Enable GS1-128 -** Set the GS1-128 subtype. A check in the checkbox indicates that the option is enabled for this label type.
-
-**Enable ISBT128 -** Set the ISBT128 subtype. A check in the checkbox indicates that the option is enabled.
-
-**Enable Plain Code128 -** Enables other (non-EAN or ISBT) Code 128 subtypes.
-
-**ISBT128 Concat Mode -** Select an option for concatenating pairs of ISBT code types:
-
-- **Concat Mode Never -** Do not concatenate pairs of ISBT codes encountered.
-
-- **Concat Mode Always -** There must be two ISBT codes in order to decode and perform concatenation. Does not decode single ISBT symbols.
-
-- **Concat Mode Auto -** Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
-
-**Check ISBT Table -** The ISBT specification includes a table that lists several types of ISBT barcodes that are commonly used in pairs. If ISBT128 Concat Mode is set, enable "Check ISBT Table" to concatenate only those pairs found in this table. Other types of ISBT codes are not concatenated.
-
-**Security Level -** The scanner offers four levels of decode security for Code 128 barcodes. As the quality of barcodes decreases, implementing an increased level of security will compensate and help improve decoding success. There is an inverse relationship between scanner aggressiveness and security. Zebra recommends choosing carefully the level of security necessary for any given application:
-
-- **Security Level 0 -** This setting allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most "in-spec" barcodes.
-
-- **Security Level 1 -** This setting eliminates most decode failures.
-
-- **Security Level 2 -** Select this option if Security level 1 fails to eliminate decode failures.
-
-- **Security Level 3 -** If Security Level 2 is selected and decode failures still occur, select this security level. Be advised, selecting this option is an extreme measure against mis-decoding severely out-of-spec barcodes. Selecting this security level significantly impairs the decoding ability of the scanner. If this level of security is required, try to improve the quality of the barcodes.
-
----
-
-### Grid Matrix
-
-**Inverse -** To specify the reflectance for decoding Grid Matrix barcodes, set the option:
-
-- **Disabled (0) -** To decode Grid Matrix barcodes with normal reflectance only (default).
-- **Enabled (1) -** To decode Grid Matrix barcodes with inverse reflectance only.
-- **Auto (2) -** To decode both normal and inverse reflectance Grid Matrix barcodes.
-
-**Mirror -** To specify whether mirrored Grid Matrix barcodes are decoded, set an option:
-
-- **Disabled (0) -** To decode non-mirrored Grid Matrix barcodes only (default).
-- **Enabled (1) -** To decode mirrored Grid Matrix barcodes only.
-- **Auto (2) -** To decode both mirrored and non-mirrored Grid Matrix barcodes.
-
----
-
-### GS1 Datamatrix
-
-The following table depicts the decode behavior between Datamatrix and GS1 Datamatrix:
-
-<table style="width:100%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th rowspan="2"><center>Datamatrix</center></th>
-    <th rowspan="2"><center>GS1 Datamatrix</center></th>
-    <th colspan="2"><center>Regular Datamatrix Barcode</center></th>
-    <th colspan="2"><center>GS1 Datamatrix Barcode</center></th>
-  </tr>
-  <tr align="center">
-    <td><b>Can Decode</b></td>
-    <td><b>Type</b></td>
-    <td><b>Can Decode</b></td>
-    <td><b>Type</b></td>
-  </tr>
-  <tr align="center">
-    <td>Enabled</td>
-    <td>Enabled</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-DATAMATRIX</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-GS1-DATAMATRIX</td>
-  </tr>
-  <tr bgcolor="#cce6ff" align="center">
-    <td>Enabled</td>
-    <td>Disabled</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-DATAMATRIX</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-DATAMATRIX</td>
-  </tr>
-  <tr align="center">
-    <td>Disabled</td>
-    <td>Enabled</td>
-    <td>No</td>
-    <td>[none]</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-GS1-DATAMATRIX</td>
-  </tr>
-  <tr align="center">
-    <td>Disabled</td>
-    <td>Disabled</td>
-    <td>No</td>
-    <td>[none]</td>
-    <td>No</td>
-    <td>[none]</td>
-  </tr>
-</table>
-
-Notes:
-
-- The blue shaded row indicates a successful decode for label types reported as Datamatrix although GS1 Datamatrix is disabled.
-<!-- * "●" indicates enabled.  "o" indicates disabled. -->
-
----
-
-### GS1 QR Code
-
-The following table depicts the decode behavior between QR Code and GS1 QR Code:
-
-<table style="width:100%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th rowspan="2"><center>QR Code</center></th>
-    <th rowspan="2"><center>GS1 QR Code</center></th>
-    <th colspan="2"><center>Regular QR Code Barcode</center></th>
-    <th colspan="2"><center>GS1 QR Code Barcode</center></th>
-  </tr>
-  <tr align="center">
-    <td><b>Can Decode</b></td>
-    <td><b>Type</b></td>
-    <td><b>Can Decode</b></td>
-    <td><b>Type</b></td>
-  </tr>
-  <tr align="center">
-    <td>Enabled</td>
-    <td>Enabled</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-QRCODE</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-GS1-QRCODE</td>
-  </tr>
-  <tr bgcolor="#cce6ff" align="center">
-    <td>Enabled</td>
-    <td>Disabled</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-QRCODE</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-QRCODE</td>
-  </tr>
-  <tr align="center">
-    <td>Disabled</td>
-    <td>Enabled</td>
-    <td>No</td>
-    <td>[none]</td>
-    <td>Yes</td>
-    <td>LABEL-TYPE-GS1-QRCODE</td>
-  </tr>
-  <tr align="center">
-    <td>Disabled</td>
-    <td>Disabled</td>
-    <td>No</td>
-    <td>[none]</td>
-    <td>No</td>
-    <td>[none]</td>
-  </tr>
-</table>
-
-Notes:
-
-- The blue shaded row indicates a successful decode for label types reported as QR Code although GS1 QR Code is disabled.
-
----
-
-### Trioptic39
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
----
-
-### HAN XIN
-
-**HAN XIN Inverse -** Checks the inverse of the HanXin decoder.
-
----
-
-### Matrix 2of5
-
-**Length1\* -** Used to set decode length.
-
-**Length2\* -** Used to set decode length.
-
-**Redundancy -** Sets the reader to read the bar code twice before accepting data.
-
-**Report Check Digit -** Transmit Matrix 2of5 data with or without the check digit.
-
-**Verify Check Digit -** Enable this feature to check the integrity of all Matrix 2of5 symbols to verify that the data complies with a specified check digit algorithm.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
----
-
-### MicroPDF
-
-**Code 128 Emulation -** Enable this option to transmit data from certain MicroPDF417 symbols as Code 128. **This option requires that the AIM Code ID Character be enabled**.
-
-**Enable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
-
-- **]C1** if the first codeword is 903, 904 or 905
-
-- **]C2** if the first codeword is 908 or 909
-
-- **]C0** if the first codeword is 910 or 911
-
-**Disable Code 128 Emulation** to transmit these MicroPDF417 symbols with one of the following prefixes:
-
-- **]L3** if the first codeword is 903, 904 or 905
-
-- **]L4** if the first codeword is 908 or 909
-
-- **]L5** if the first codeword is 910 or 911.
-
----
-
-### Composite AB
-
-**UCC Link Mode:**
-
-- Link Flag ignored
-
-- Always Linked
-
-- Auto Discriminate
-
-**MultiPacket Mode:**
-
-- Multi-Part, Single-Packet
-
-- Mutli Independent Reads
-
-**Use UPC Preamble Check Digit -** Use the UPC rules specified in the UPC-EAN parameters when reporting composite decode data.
-
----
-
-### Composite C
-
-**MultiPacket Mode:**
-
-- Multi-Part, Single-Packet
-
-- Mutli Independent Reads
-
----
-
-### Korean 3of5
-
-**Length1\* -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
-
-**Length2\* -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
-
-_\* See **[Decode Lengths section](#decodelengths)**, below_
-
-**Redundancy -** Sets the reader to read the barcode twice before accepting data.
-
----
-
-### Decoder Signature
-
-Decoder Signature, also known as Signature Capture, is a special barcode format that allows to capture an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example:
-
-<img src="DecoderSignature-sample.jpg"/>
-<br>
-For help creating a Signature Capture barcode like the one above, refer to the [Decoder Signature Guide (pdf)](Decoder_Signature.pdf)
-
-**Format -** Specify the desired output image format: JPEG, BMP, TIFF.
-
-**Width -** Specify the desired output image width in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
-
-**Height -** Specify the desired output image height in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
-
-**JPEG Quality -** An integer value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized for image size.
-
-**Bits per pixel -** Specify the color depth of the output image. This is not applicable to JPEG image formats. Possible values:
-
-- 0 - 1 BPP (2 levels)
-- 1 - 4 BPP (16 levels)
-- 2 - 8 BPP (256 levels)
-
-Note: **Handling large image data -** Since the data size of a single image (which can be 1280 x 800 bytes = 1000 kb) can exceed the size limit of a single intent, DataWedge supports image data delivery via Android FileProvider API. For Decoder Signature type decodes, all image data are delivered using this approach.
-
-- It is expected that the user application copy the image files from the given URI (Uniform Resource Identifier) as soon as possible since DataWedge only keeps a maximum of 2 sets of decoded images before deleting them to create new images in the internal memory.
-
-- Refer to the [Signature Capture](../../samples/signaturecapture) sample application for a code sample on handling image data from an Android client app.
-
----
-
-### OCR A
-
-OCR A is typically used for financial documents.
-
-**OCR A Variant -** Font variants supported:
-
-- **Full ASCII -** !"#$()\*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ\^
-- **Reserved 1 -** $\*+-./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
-- **Reserved 2 -** $\*+-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ
-- **Banking -** -0123456789<>
-
----
-
-### OCR B
-
-OCR B is typically used for government issued documents, such as financial and travel documents, like driver licenses and passports.
-
-**OCR B Variant -** Font variants supported:
-
-- **Full ASCII -** !#$%()\*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ^|Ñ
-- **Banking -** #+-0123456789<>JNP|
-- **Limited -** +,-./0123456789<>ACENPSTVX
-- **ISBN 1 -** 10-Digit Book Numbers (-0123456789>BCEINPSXz)
-- **ISBN 2 -** 10 or 13-Digit Book Numbers (-0123456789>BCEINPSXz)
-- **Travel Document 1 -** Travel Document Version 1 (TD1) 3-Line ID Cards (-0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ)
-- **Travel Document 2 -** Travel Document Version 2 (TD2) 2-Line ID Cards (-0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ)
-- **Travel Document 3 -** Travel Document 2 or 3-Line ID Cards Auto-Detect (!#$%()\*+,-./0123456789<>ABCDEFGHIJKLMNOPQRSTUVWXYZ^|Ñ)
-- **Passport -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZÑ
-- **Visa Type A -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZ
-- **Visa Type B -** 0123456789<ABCDEFGHIJKLMNOPQRSTUVWXYZÑ
-- **ICAO Travel Documents -** This allows reading either TD1, TD2, Passport, Visa Type A, or Visa Type B without switching between these options. It automatically recognizes the travel document read.
-
----
-
-### UK Postal
-
-**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox sends UK Postal data with a check digit.
-
----
-
-### USPlanet
-
-**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox sends USPlanet data with a check digit.
-
----
-
-### USPostnet
-
-**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox sends USPostnet data with a check digit.
-
----
-
-### Webcode
-
-**Webcode Subtype -** Enables decoding of the GT Webcode subtype. A check in the checkbox enables this option.
-
----
-
-## Decode Lengths
-
-The allowable decode lengths are specified by **Length1** and **Length2** as follows:
-
-- **Variable length -** Decode symbols containing any number of characters:
-  - Set both Length1 and Length2 to "0" (zero)
-- **Range -** Decode a symbol with a specific length range from a-b:
-  - Set Length1 to "a" (the lower bound) and set Length2 to "b" (the upper bound)
-- **Two Discrete Lengths -** Decode only symbols containing either of two specific lengths:
-  - Set Length2 as the _**shorter**_ length and Length1 as the _**longer**_ one
-- **One Discrete Length -** Decode only symbols containing a specific length:
-  - Set both Length1 and Length2 to the desired (non-zero) length
 
 ---
 

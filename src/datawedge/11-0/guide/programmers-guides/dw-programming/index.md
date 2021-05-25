@@ -20,10 +20,10 @@ A query is made to the DataWedge API by sending a broadcast intent and a reply i
 Basic DataWedge API usage:
 
 - **Create profile / update existing profile / configure multiple plugins with a single intent action:** Customize data capture with a DataWedge profile using [Set Config API](../../api/setconfig) to create a profile, update a profile, or configure multiple plugins (input, processing, output, utilities) with a single intent. Sample use cases:
-- Modify the active profile to only enable certain decoders within particular screens in your application workflow to improve scan performance.
-- Update a profile based on user preferences when the application is running in the foreground.
-- Use pre-configured profiles to capture data depending on the app running in the foreground.
-- Modify scanner parameters to perform certain actions, such as emit a continuous scan beam with a single trigger press.
+    - Modify the active profile to only enable certain decoders within particular screens in your application workflow to improve scan performance.
+    - Update a profile based on user preferences when the application is running in the foreground.
+    - Use pre-configured profiles to capture data depending on the app running in the foreground.
+    - Modify scanner parameters to perform certain actions, such as emit a continuous scan beam with a single trigger press.
 - **Enable/Disable data capture:** Enable/disable DataWedge scanner and foreground activity monitoring with [Enable DataWedge API](../../api/enabledatawedge). This can be used to allow other application, such as Enterprise Browser, to use the device scanner exclusively.
 - **Support multiple scanner types across different Zebra devices:** To retrieve the available scanner types on the device (such as internal imager, internal camera, connected Bluetooth, etc.), use [Enumerate Scanners API](../../api/enumeratescanners). This is useful if the application is used across different Zebra devices that support different types of scanner hardware.
 - **Initiate barcode scanning in the app UI:** Trigger barcode scanning with a button tap in the app by using [Soft Scan Trigger API](../../api/softscantrigger). Refer to [barcode sample app](../samples/barcode1).
@@ -53,13 +53,13 @@ The following information provides guidance and best practices for DataWedge app
 - **Temporarily suspend or de-activate scanning in app:** Use Scanner Input Plugin API with SUSPEND_PLUGIN/RESUME_PLUGIN parameters.
 - For situations that require **rapid changes between suspend/resume status,** use Scanner Input Plugin and register for SCANNER_STATUS notifications. When the scanner is activated (for example from a profile configuration or from RESUME_PLUGIN or ENABLE_PLUGIN intent API), SCANNER_STATUS broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place. For the app to suspend scanning, act only when in the SCANNING and WAITING states - when these states are broadcasted, use SUSPEND_PLUGIN parameter to remain in the suspended state and keep the scanner unusable. Once scanning is suspended, SCANNER_STATUS broadcasts the IDLE state. Use RESUME_PLUGIN to re-activate the scanner.
 - **Capture data and photos in a single app:** It is possible to take pictures and capture barcode data using the same application if the application was designed with this in mind.
-  1.  Add separate Activities in the app: one for barcode scanning and another for picture taking.
-  2.  Create a DataWedge Profile with the following settings:
-      - Associate the Profile with the picture-taking Activity
-      - Disable scanning in the Profile
-  3.  Use the standard Android SDK APIs to control the camera
-  4.  When the app is used for scanning, the default DataWedge profile will come into effect.
-  5.  For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
+    1.  Add separate Activities in the app: one for barcode scanning and another for picture taking.
+    2.  Create a DataWedge Profile with the following settings:
+        - Associate the Profile with the picture-taking Activity
+        - Disable scanning in the Profile
+    3.  Use the standard Android SDK APIs to control the camera
+    4.  When the app is used for scanning, the default DataWedge profile will come into effect.
+    5.  For accessing specific decoders, processing rules or other special scanning needs, a second DataWedge Profile can be created and associated with the barcode scanning activity of the app.
 - **Data dispatched too quickly:** If data is being dispatched too quickly for the application to accept, such as when using terminal emulation apps, this can be addressed by adding a delay between each character sent to the app with the use of `keystroke_character_delay` in [Set Config](../../api/setconfig). Refer to Keystroke Output Parameters section and example code provided in section “Configure an inter-character delay”. This parameter should be used with caution as it can negatively affect application performance.
 - When using [DataWedge intent APIs](../../api/overview) to **query DataWedge for information** (such as Get Active Profile), the app must register to receive the result with a filter that identifies the action and category of the result intent.
 

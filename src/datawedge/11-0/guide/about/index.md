@@ -119,7 +119,7 @@ For more information about approved languages or to download a localized operati
 
 ---
 
-## New in DataWedge 8.2
+## New in DataWedge 11.0
 
 - [Multiple scanner support](../input/barcode/#scannerselection) added for different scanners to be used interchangeably without the need for manual configuration.
 - New DataWedge intent APIs:

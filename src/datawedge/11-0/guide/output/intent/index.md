@@ -478,10 +478,9 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 **Name**: "com.symbol.datawedge.decode_data"<br>
 **Contents**: Decoded data returned as a list of byte arrays.<br>
 
-**Note**: In most cases there will be one byte array per decode. <!-- REMOVED 10/5/17 PER ENG. EMAIL 10/4/17 2:06 pm << For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index.
--->
+**Note**: In most cases there will be one byte array per decode. <!-- REMOVED 10/5/17 PER ENG. EMAIL 10/4/17 2:06 pm << For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index. -->
 
-## <!--
+<!--
 
 **SEE ALSO**:
 

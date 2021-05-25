@@ -25,6 +25,8 @@ menu:
       url: /datawedge/11-0/guide/profiles
     - title: Feature Matrix
       url: /datawedge/11-0/guide/matrix
+    - title: Decoders
+      url: /datawedge/11-0/guide/decoders
     - title: Settings
       url: /datawedge/11-0/guide/settings
     - title: APIs

@@ -18,7 +18,7 @@ productversion: '9.1'
 
 ## Overview
 
-This guide provides a walk-through of the steps for creating an application that uses [Barcode/Scanning APIs](../../guide/api) to perform Scanning operations on a Zebra Android device without using Profile Wizard. The API uses [Barcode Manager](../../guide/barcode_scanning_guide/), which is the primary object for accessing barcode scanning features. 
+This guide provides a walk-through of the steps for creating an application that uses [Barcode/Scanning APIs](../../api) to perform Scanning operations on a Zebra Android device without using Profile Wizard. The API uses [Barcode Manager](../../guide/barcode_scanning_guide/), which is the primary object for accessing barcode scanning features. 
 
 > Note: **The demo app in this guide is intended for tutorial purposes only** and should not be used in production environments. 
 
@@ -448,4 +448,4 @@ Once the barcode is enabled, the `read` method is called on the scanner and the 
 -----
 
 ## What's Next
-After completing this basic tutorial, the next logical step might be to explore the [Barcode/Scanning APIs](../api) in depth, and use them to perform advanced scanning operations.
+After completing this basic tutorial, the next logical step might be to explore the [Barcode/Scanning APIs](../../api) in depth, and use them to perform advanced scanning operations.

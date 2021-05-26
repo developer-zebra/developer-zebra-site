@@ -75,12 +75,12 @@ Long pressing on the scanner category in the **Scanner Selection** screen displa
 <table>
  <tr>
   <td>
-    <img style="height:350px" src="scanner_category_menu.jpg"/>
+    <img style="height:350px" src="scanner_category_menu.png"/>
   </td>
   <td> &nbsp; &nbsp; &nbsp; &nbsp;
   </td>
   <td>
-    <img style="height:350px" src="select_trigger.jpg"/>
+    <img style="height:350px" src="select_trigger.png"/>
   </td>
  </tr>
 </table>

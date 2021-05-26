@@ -62,7 +62,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
   - **[Number of barcodes per scan](../input/barcode#multibarcodeparams) -** set a fixed quantity of barcodes to scan.
   - **[Instant Reporting](../input/barcode#multibarcodeparams) -** instantaneously report unique barcodes within a scanning session.
   - **[Report decoded barcodes](../input/barcode#multibarcodeparams) -** report decoded barcodes in a single scan session.
-- **Document Capture -** retrieve barcode data from documents, or capture partial or entire images of documents based on a [Document Capture/NextGen SimulScan template](../input/barcode/#documentselectiondocumentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.
+- **Document Capture -** retrieve barcode data from documents, and/or capture partial or entire images of documents based on a [Document Capture/NextGen SimulScan template](../input/barcode/#documentselectiondocumentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.
 - **OCR -** OCR was not migrated from legacy SimulScan and is not supported in NextGen SimulScan. However, [OCR A/B](../input/barcode/#decoderselection), the feature that captures travel documents, is supported.
 
 **See [SimulScan Migration Alert](/simulscan/1-1/guide/alert) for more information on the legacy SimulScan features that have been migrated to the scanner framework used by DataWedge.**

@@ -12,7 +12,7 @@ productversion: '7.0'
 > **Zebra strongly recommends using these APIs in favor of the [ScannerConfig class](../../api), which is deprecated and scheduled to be discontinued in 2022**. Zebra will continue to add to the parameters supported by the new APIs.
 
 **NOTE: This guide requires a basic knowledge of the use of EMDK-X scanning APIs**. If necessary, please become familiar with the guides below before proceeding. 
-* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/tutBasicScanningAPI/)**
+* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/barcodeapitutorial/)**
 * **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-xamarin/latest/guide/barcode_scanning_guide/)**
 
 -----
@@ -81,7 +81,7 @@ This is in line with previous scanner configuration APIs. It needs to get the ob
 The following code segment shows how to set the value of the `remote_trigger_status` parameter using the scanner parameter configuration APIs. 
 
 
-#### `JAVA CODE TO BE REPLACED WITH C#:` 
+#### --- >>>>>>> `JAVA CODE TO BE REPLACED WITH C#:` 
 
         :::java
         try {
@@ -109,7 +109,7 @@ Newly connected scanners are sometimes unavailable for selection using device id
 
 Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received `ScannerInfo` objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
 
-#### `JAVA CODE TO BE REPLACED WITH C#:` 
+#### --- >>>>>>> `JAVA CODE TO BE REPLACED WITH C#:` 
 
         :::java
         List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
@@ -127,11 +127,11 @@ Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one o
 
 
 ### Notes:
-* **If a scanner is connected to a device but does not appear when using an EMDK library**, it can be accessed using the device enumeration APIs. Refer to the [EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-xamarin/latest/guide/barcode_scanning_guide/) and [EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/tutBasicScanningAPI/) for help enumerating available scanners.
+* **If a scanner is connected to a device but does not appear when using an EMDK library**, it can be accessed using the device enumeration APIs. Refer to the [EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-xamarin/latest/guide/barcode_scanning_guide/) and [EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/barcodeapitutorial/) for help enumerating available scanners.
 * **If the required scanner is not available under device identifier**, try filtering by friendly name or class and scanner type. Alternatively, the device index also can be passed to the `getDevice` method to get the scanner.
 
 -----
 
 ### Also See:
-* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/tutBasicScanningAPI/)**
+* **[EMDK Basic Scanning Tutorial](https://techdocs.zebra.com/emdk-for-xamarin/latest/tutorial/barcodeapitutorial/)**
 * **[EMDK Barcode Scanning API Programmer's Guide](https://techdocs.zebra.com/emdk-for-xamarin/latest/guide/barcode_scanning_guide/)**

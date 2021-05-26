@@ -94,7 +94,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
  * Allow/Disallow individual app upgrades 
 * **New [Bluetooth Manager](../../mx/bluetoothmgr) feature**: 
  * Erase all data about paired peripherals on device
-* **New [DHCP Option Manager](../../mx/dhcpoptionmgr) feature**: 
+* **New [DHCP Option Manager](../../mx/dhcp) feature**: 
  * Select between DHCPv4 and DHCPv6 clients on device (or use both)
 * **New [NFC Manager](../../mx/nfcmgr) feature**: 
  * Enable/Disable logging of NFC events on device

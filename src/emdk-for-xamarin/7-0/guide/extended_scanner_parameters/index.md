@@ -81,7 +81,7 @@ This is in line with previous scanner configuration APIs. It needs to get the ob
 The following code segment shows how to set the value of the `remote_trigger_status` parameter using the scanner parameter configuration APIs. 
 
 
-#### --- >>>>>>> `JAVA CODE TO BE REPLACED WITH C#:` 
+#### ---> `JAVA CODE TO BE REPLACED WITH C#:` 
 
         :::java
         try {
@@ -109,7 +109,7 @@ Newly connected scanners are sometimes unavailable for selection using device id
 
 Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received `ScannerInfo` objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
 
-#### --- >>>>>>> `JAVA CODE TO BE REPLACED WITH C#:` 
+#### ---> `JAVA CODE TO BE REPLACED WITH C#:` 
 
         :::java
         List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();

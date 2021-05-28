@@ -13,6 +13,18 @@ The MX Management System (MXMS) is an XML-based communication framework that pro
 
 The following section lists the major features and enhancements added to the MX versions indicated. 
 
+### Added in MX 10.5
+
+**MX 10.5 adds the following major features and enhancements**: 
+
+* **[Display Manager](/mx/displaymgr) adds ability to**: 
+ * Set a [Secondary Display Mode](/mx/displaymgr/#secondary-display-mode) for an external monitor
+ * Force [Resizable Windows](/mx/displaymgr/#resizable-windows-onoff) for an app, overriding the manifest
+ * Force [Resizable Activities](/mx/displaymgr/#activity-resizability) for an activity, overriding the manifest
+* **[UI Manager](/mx/uimgr) adds ability to**: 
+ * Set [External Keyboard Layout](/mx/uimgr/#external-keyboard-action) (language) preference
+ * [Add or replace a Keyboard Layout](/mx/uimgr/#external-keyboard-name) (language) for an external keyboard
+
 ### Added in MX 10.4
 
 **MX 10.4 adds the following major features and enhancements**: 
@@ -23,7 +35,7 @@ The following section lists the major features and enhancements added to the MX 
 * **[Battery Manager](/mx/batterymgr) adds ability to**: 
  * Set [Charging Mode](/mx/batterymgr/#charging-mode) to optimize for device runtime or overall battery life (limited device support)
 * **[Key Mapping Manager](/mx/keymappingmgr) adds**: 
- * [Key identifiers](/mx/keymappingmgr/#key-identifier) for "OK" "CL" and "FN" keys found on some devices
+ * [Key Identifiers](/mx/keymappingmgr/#key-identifier) for "OK" "CL" and "FN" keys found on some devices
 * **[Touch Manager](/mx/touchmgr) adds**: 
  * Support for EC50, EC55, MC2200, MC2700, MC33ax, MC3300x, TC26, TC52ax, TC57x
 * **[USB Manager](/mx/usbmgr) adds**: 

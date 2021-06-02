@@ -48,9 +48,9 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ## New in v9.1
 
-**New** `Scanner.setParameter()` **and** `Scanner.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in the future.
+**New** `Scanner.setParams()` **and** `Scanner.getParams()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy.
 
-**A new [Scanner Parameter Config API Guide](../extended_scanner_parameters)** explians the use of the new pass-through APIs that can be used to set and get scanner parameter configurations in scanning applications. 
+**A new [Scanner Parameter Config API Guide](../extended_scanner_parameters)** explains the use of the new pass-through APIs that can be used to set and get scanner parameter configurations in scanning applications. 
 
 **Supports MX 10.3, adding the following major features and enhancements**:
 * **New [App Manager](../../mx/appmgr) feature**: 

@@ -39,7 +39,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 - **DataWedge 7.3.22 -** Added new RFID Input feature.
 - **DataWedge 7.4.44 -** New Enterprise Keyboard Configuration feature.
 - **DataWedge 7.5 -** Added DPM support. Increased the maximum number of barcodes supported by MultiBarcode. Added new voice input parameters. Deprecated voice_enter_command and voice_tab_command voice input parameters. Added new RFID input parameters.
-- **DataWedge 7.6 -** Added new Dutch Postal 3S parameter.
+- **DataWedge 7.6 -** Added new Dutch Postal 3S parameter. Support for SimulScan API is deprecated; SimulScan support will be removed beginning with Android 10 devices.
 - **DataWedge 8.0 -** New secure intent delivery with intent_component_info, new unlicensed error code.
 - **DataWedge 8.2 -** New scanner input parameter scanner_trigger_resource, new multiple scanner support.
 
@@ -84,7 +84,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
     - **MSR** (Magnetic Stripe Reader) input
     - **RFID** (Radio-frequency Identification) input
     - **SERIAL** input
-    - **SIMULSCAN** input
+    <!-- - **SIMULSCAN** input -->
     - **VOICE** input
     - **BDF** (Basic Data Formatting) processing
     - **ADF** (Advanced Data Formatting) processing
@@ -115,19 +115,17 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 - **MSR -** Accepts values from the [MSR Input Parameters](#msrinputparameters) table below.
 - **RFID -** Accepts values from the [RFID Input Parameters](#rfidinputparameters) table below.
 - **SERIAL -** Accepts values from the [Serial Input Parameters](#serialinputparameters) table below.
-- **SIMULSCAN -** Accepts values from the [Simulscan Input Parameters](#simulscaninputparameters) table below.
 - **VOICE -** Accepts values from the [Voice Input Parameters](#voiceinputparameters) table below.
 - **DCP -** Accepts values from the [DCP (Data Capture Plus) Utilities Parameters](#dcputilitiesparameters) table below.
 - **EKB -** Accepts values from the [Enterprise Keyboard Configuration Parameters](#enterprisekeyboardconfigurationparameters) table below.
 - **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Accepts values from the [BDF Processing Parameters](#bdfprocessingparameters) table below.
-- **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below.
+- **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below. See **Important for ADF** section below.
 - **TOKENS -** Applicable for UDI or multibarcodes; accepts values from the [Token Parameters](#tokenparameters) table below.
 - **INTENT -** Accepts values from the [Intent Output Parameters](#intentoutputparameters) table below.
 - **KEYSTROKE -** Accepts values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
 - **IP** (Internet Protocol) - Accepts values from the [IP Output Parameters](#ipoutputparameters) table below.
 
-**IMPORTANT**:
-
+**IMPORTANT FOR ADF**:
 - **If a Profile is created without at least one Rule**, DataWedge creates a "Rule0" with a single action to "SEND_REMAINING" data without modification.
 - **If values in one or more newly created Rules are missing or invalid**, DataWedge uses default values.
 - **To update one or more Actions in an existing Profile** using an intent, all Actions in the Profile must be included in the intent.
@@ -294,7 +292,7 @@ For more information, see [Barcode Input](../../input/barcode#scanningmodes).
 
   <tr>
    	<td>scanning_mode</td>
-	<td>3 - MultiBarcode<br>5 - SimulScan, or Document Capture for DataWedge v8.1.45 or higher</td>
+	<td>3 - MultiBarcode<br>5 - Document Capture</td>
   </tr>
 
   <tr>
@@ -899,7 +897,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 </table>
 
 ---
-
+<!-- 
 ## Simulscan Input Parameters
 
 > All parameters are case sensitive.
@@ -944,7 +942,7 @@ For more information, see [Barcode Input](../../input/barcode#ocrparams).
 </table>
 
 ---
-
+-->
 ## Voice Input Parameters
 
 > All parameters are case sensitive.
@@ -1198,17 +1196,17 @@ See [DCP Input](../../input/dcp).
 	</tr>
 	<tr>
 		<td>DEVICES</td>
-		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - Name of the input source: BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; enabled [string] - Accept data from specified device ID: true/false (default=true)<br>&nbsp; &#8226; alldecoders [string] - Allow all barcode symbologies: true/false (default=true)<br>&nbsp; &#8226; all_label_ids [string] - Allow all UDI label IDs: true/false (default=true)
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - Name of the input source: BARCODE, MSR, RFID, SERIAL or VOICE<br>&nbsp; &#8226; enabled [string] - Accept data from specified device ID: true/false (default=true)<br>&nbsp; &#8226; alldecoders [string] - Allow all barcode symbologies: true/false (default=true)<br>&nbsp; &#8226; all_label_ids [string] - Allow all UDI label IDs: true/false (default=true)
 		</td>
 	</tr>
 	<tr>
 		<td>DECODERS</td>
-		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; decoder [string] - (i.e. "Australian Postal")<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL or VOICE<br>&nbsp; &#8226; decoder [string] - (i.e. "Australian Postal")<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
 		</td>
 	</tr>
 	<tr>
 		<td>LABEL_IDS</td>
-		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; label_id [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL or VOICE<br>&nbsp; &#8226; label_id [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
 		</td>
 	</tr>
 </table>
@@ -1834,7 +1832,7 @@ Create/update a profile with OCR parameters:
     i.putExtra("COMMAND_IDENTIFIER", "DW_SERIAL_COMMAND");
 
     this.sendBroadcast(i);
-
+<!--
 ### Set Simulscan input configuration
 
     // SetConfig [Start]
@@ -1876,8 +1874,9 @@ Create/update a profile with OCR parameters:
     // SetConfig [End]
 
     this.sendBroadcast(iSetConfig);
+-->
 
-###Set DCP input configuration
+### Set DCP input configuration
 
     //SetConfig [Start]
     Bundle bMain = new Bundle();
@@ -2779,7 +2778,6 @@ Support started with DataWedge 7.1. Previous DataWedge versions required multipl
     		* Setting configuration for:
     		* Intent Output Plugin
     		* Barcode Input Plugin
-    		* SimulScan Input Plugin
     		* MSR input Plugin
     		* IP Output Plugin
     		* Tokens for IP Output Plugin

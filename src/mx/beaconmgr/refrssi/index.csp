@@ -2,7 +2,7 @@
 csp: beaconmgr
 title: Reference RSSI
 type: parm
-order: 35
+order: 50
 mx: "10.5"
 apilevel: "29"
 devicetype: A

@@ -7,7 +7,7 @@ mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 
+  presentif: Scan Feature Type is "Coverage View" and Use Coverage Action is "Start" 
   name: CoverageSSID
   type: string
 ---

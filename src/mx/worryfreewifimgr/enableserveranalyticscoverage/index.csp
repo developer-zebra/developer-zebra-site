@@ -7,7 +7,7 @@ mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  presentif: Scan Feature Type is "Coverage View" and Use Coverage Action is "[option 5]" 
   name: EnableServerAnalyticsCoverage
   type: list
   list:
@@ -30,4 +30,4 @@ parm:
 
 Controls whether server analytics for Coverage View tests are performed for the analysis session on the device. **See Coverage View for more information**. 
 
-<!-- 3/25/21 - parm removed per eng; not yet implemented --> 
+<!-- 3/25/21 - parm removed per eng; not yet implemented. Fictional Option 5 inserted so this parm is never revealed--> 

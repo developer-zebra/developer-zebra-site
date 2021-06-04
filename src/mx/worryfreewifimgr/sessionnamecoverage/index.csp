@@ -7,7 +7,7 @@ mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  presentif: Scan Feature Type is "Coverage View" and Use Coverage Action is "Start" 
   name: SessionNameCoverage
   type: string
 ---

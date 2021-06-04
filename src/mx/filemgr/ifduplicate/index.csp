@@ -7,6 +7,7 @@ mx: "10.1"
 devicetype: A,B
 info: Supported only on devices running Android 8.x Oreo and Android 10 or later.
 parm:
+  presentif: File Action is "Upload File(s)" and Target Access Method is "File in Device File System"
   pivotal: Yes
   name: IfDuplicate
   type: list
@@ -28,4 +29,4 @@ parm:
       description: Leaves source file and duplicate file at destination unchanged.
 ---
 
-Used to control File Manager behavior when moving or copying files and a duplicate file name exists at the destination.
+Used to control File Manager behavior when moving or copying files when a duplicate file name exists at the destination.

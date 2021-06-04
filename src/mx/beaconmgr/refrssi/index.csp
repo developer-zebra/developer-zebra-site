@@ -1,0 +1,20 @@
+---
+csp: beaconmgr
+title: Reference RSSI
+type: parm
+order: 35
+mx: "10.5"
+apilevel: "29"
+devicetype: A
+parm:
+  presentif: Beacon Type is "AltBeacon"
+  pivotal: No
+  name: RefRSSI
+  type: string
+---
+
+Used to enter the Reference Received Signal Strength Indicator (RSSI) value, which can be helpful for extrapolating the relative distance to a device beacon based on its signal strength. **Default value of** `00` **is used if this parameter is missing or left blank**. 
+
+**Input value rules**: 
+
+* String of exactly two (2) hexadecimal characters

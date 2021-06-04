@@ -25,5 +25,7 @@ One solution that leverages beaconing technology is [Zebra Device Tracker](https
  * AltBeacon UUID 
  * AltBeacon ID1, ID2
  * Custom beacon data
+ * Manufacturer Byte value
+ * Received Signal Strength Indicator (RSSI) value
 
 -----

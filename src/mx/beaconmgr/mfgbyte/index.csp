@@ -1,0 +1,20 @@
+---
+csp: beaconmgr
+title: Manufacturer Byte 
+type: parm
+order: 45
+mx: "10.5"
+apilevel: "29"
+devicetype: A
+parm:
+  presentif: Beacon Type is "AltBeacon"
+  pivotal: No
+  name: MfgByte
+  type: string
+---
+
+Used to enter the Manufacturer Byte value. **Default value of** `00` **is used if this parameter is missing or left blank**. 
+
+**Input value rules**: 
+
+* String of exactly two (2) hexadecimal characters

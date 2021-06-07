@@ -26,7 +26,34 @@ The following software is required to use EMDK for Android:
 
 -----
 
-### Install EMDK-for-Android Plugin
+### Enable EMDK SDK
+
+1. a. **Go to the app module** in the Android project in which to to use EMDK.<br>
+   b. **Navigate to the** `build.gradle` **file**:<br>
+   <img alt="image" style="height:350px" src="gradle_01.png"/>
+_Click to enlarge; ESC to exit_.<br>
+   c. **Add the following line to the dependencies section**:<br>
+
+        :::java
+            dependencies {
+            compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
+                ...
+            }
+5. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
+ **NOTE**: Eliminate this step by checking the Preference box shown below:  
+   <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
+_Click to enlarge; ESC to exit_.<br>
+
+##### EMDK APIs are now ready to use. 
+
+#### Notes:
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
+* **See the full list of [EMDK for Android Plugin versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.
+* The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
+
+-----
+
+### Install EMDK Plug-in
 
 The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. 
 

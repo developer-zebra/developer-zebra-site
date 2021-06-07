@@ -30,12 +30,12 @@ The following section lists the major features and enhancements added to the MX 
 **MX 10.4 adds the following major features and enhancements**: 
 
 * **[Access Manager](/mx/accessmgr) adds ability to**: 
- * Grant installed apps [permission to access](/mx/accessmgr/#permission-access-permission-name) to USB and/or SD card storage
+ * Grant installed apps [permission to access](/mx/accessmgr/#permission-access-permission-name) USB and/or SD card storage
  * "Pre-grant" or "pre-deny" USB/SD card storage permission to apps yet to be installed
 * **[Battery Manager](/mx/batterymgr) adds ability to**: 
  * Set [Charging Mode](/mx/batterymgr/#charging-mode) to optimize for device runtime or overall battery life (limited device support)
 * **[Key Mapping Manager](/mx/keymappingmgr) adds**: 
- * [Key Identifiers](/mx/keymappingmgr/#key-identifier) for "OK" "CL" and "FN" keys found on some devices
+ * [Key Identifiers](/mx/keymappingmgr/#key-identifier) for "CL" and "FN" and "NAV_OK" keys found on some devices
 * **[Touch Manager](/mx/touchmgr) adds**: 
  * Support for EC50, EC55, MC2200, MC2700, MC33ax, MC3300x, TC26, TC52ax, TC57x
 * **[USB Manager](/mx/usbmgr) adds**: 

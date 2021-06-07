@@ -169,19 +169,6 @@ Intent API Access Control allows access to DataWedge intent APIs only to approve
   </tr>
 
   <tr>
-    <td rowspan="2">Notification APIs</td>
-    <td style="text-align:center">1</td>
-	<td>Uncontrolled (default) - Allow use by all applications</td>
-    <td>Allow any application to access DataWedge Notification intent APIs. </td>
-  </tr>
-  
-  <tr>
-    <td style="text-align:center">2</td>
-    <td>Controlled - Allow use only by AllowListed Applications</td>
-    <td>Allow only whitelisted applications to access DataWedge Notification intent APIs. </td>
-  </tr>
-
-  <tr>
     <td rowspan="2">Runtime APIs </td>
     <td style="text-align:center">1</td>
 	<td>Uncontrolled (default) - Allow use by all applications</td>

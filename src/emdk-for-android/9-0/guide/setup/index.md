@@ -43,11 +43,11 @@ _Click to enlarge; ESC to exit_.<br>
             compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
                 ...
             }
-2. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
- **NOTE**: Eliminate this step by checking the Preference box shown below:  
+2. From the menu bar, go to **Android Studio > Preferences > Build, Execution, Deployment > Compiler**. 
+3. **Check the "Sync project with Gradle...**" box shown below: 
    <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
 _Click to enlarge; ESC to exit_.<br>
-3. **Enable Android permissions** by modifying the application's `Manifest.xml` file: 
+4. **Enable Android permissions** by modifying the application's `Manifest.xml` file: 
 
          :::xml
          <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.symbol.basicscansample1">

@@ -9,7 +9,7 @@ productversion: "11.0"
 
 Introduced in DataWedge 6.6.
 
-Used to configure reporting options, which are optionally generated after importing databases and Profiles. More [about import Reporting](../../settings/#reporting).
+Used to configure reporting options, which are optionally generated after importing databases and Profiles. More [about import Reporting](../../settings/#reportingdeprecated).
 
 ### Function Prototype
 
@@ -27,15 +27,15 @@ Used to configure reporting options, which are optionally generated after import
 **Reporting Options Bundle**:
 
 - **reporting_enabled -** controls whether to enable reports, generated following import operations.
-    - true
-    - false (default)
+  - true
+  - false (default)
 - **reporting_generate_option -** controls whether reporting is generated for manual imports, auto imports, or both.
-    - manual
-    - auto
-    - both (default)
+  - manual
+  - auto
+  - both (default)
 - **reporting_show_for_manual_import -** controls whether to displays a generated report (for manual imports only) using the default browser on the device.
-    - true
-    - false (default)
+  - true
+  - false (default)
 
 ### Return Values
 

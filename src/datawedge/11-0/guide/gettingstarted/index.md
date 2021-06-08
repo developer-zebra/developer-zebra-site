@@ -54,7 +54,7 @@ DataWedge provides the following primary functions and options (feature availabi
 - Remotely configure and [mass-deploy settings](../settings/#massdeployment) via MDM
 - [Restore settings](../settings/#restoredefaults) to factory defaults
 - [Apply changes remotely](../settings/#autoimport) to update devices in the field
-- [Generate reports](../settings/#reporting)
+- [Generate reports](../settings/#reportingdeprecated)
 
 **Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device).
 
@@ -81,24 +81,27 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 **[DataWedge Plugins](../profiles)** are specified in profiles and determine how the data is captured (input), processed (formatted) and delivered to the app (output). Furthermore, optional profile specific configuration settings are categorized as _Utilities_, which can be associated with apps or controlled at runtime.
 
 - **Input plugins -** specify how the data is captured:
-    - **[Barcode](../input/barcode) –** specify the device scanning hardware, decoders, decoder parameters, reader parameters, and scan parameters applied on the captured data prior to sending the data for processing. The supported hardware can include the integrated built-in devices (such as 1D scanner, 2D scanner, and camera), or externally connected devices (such as barcode scanner, Bluetooth scanner, and USB SSI Scanner).
-    - **[MSR (magnetic stripe reader)](../input/msr) -** acquire data from an MSR card, such as a credit or debit card, on supported hardware.
-    - **[RFID (radio-frequency identification)](../input/rfid/) -** acquire data from an RFID tag with the integrated RFID reader built-in some Zebra mobile computers.
-    - **[Serial port](../input/serial) -** acquire data from a peripheral device connected via serial port.
-    - **[Voice](../input/voice/)-** acquire data via speech recognition. Configurations include: define a start/end phrase, send a tab/enter command, limit data to alpha or numeric characters, spoken data validation, and working offline.
+
+  - **[Barcode](../input/barcode) –** specify the device scanning hardware, decoders, decoder parameters, reader parameters, and scan parameters applied on the captured data prior to sending the data for processing. The supported hardware can include the integrated built-in devices (such as 1D scanner, 2D scanner, and camera), or externally connected devices (such as barcode scanner, Bluetooth scanner, and USB SSI Scanner).
+  - **[MSR (magnetic stripe reader)](../input/msr) -** acquire data from an MSR card, such as a credit or debit card, on supported hardware.
+  - **[RFID (radio-frequency identification)](../input/rfid/) -** acquire data from an RFID tag with the integrated RFID reader built-in some Zebra mobile computers.
+  - **[Serial port](../input/serial) -** acquire data from a peripheral device connected via serial port.
+  - **[Voice](../input/voice/)-** acquire data via speech recognition. Configurations include: define a start/end phrase, send a tab/enter command, limit data to alpha or numeric characters, spoken data validation, and working offline.
 
 - **Processing plugins -** specify how to format the captured data prior to passing it to the output plugin:
-    - **[Basic Data Formatting (BDF)](../process/bdf) -** format data with basic pre-defined options prior to passing it to the output plug-in. Options available: add data prefix, add data suffix, send data to foreground app, send data in hex format, append TAB key, and append ENTER key. This can be useful when scanning data to automatically move to the next text field by appending a TAB key.
-    - **[Advanced Data Formatting (ADF)](../process/adf) -** format data based on custom rules with specific criteria prior to passing it to the output plugin. This can be useful in cases such as triggering an action to pad data with zeros only if the middle 3 digits of an acquired 9 digit Code-128 barcode matches the same 3 digits specified in the rule.
+
+  - **[Basic Data Formatting (BDF)](../process/bdf) -** format data with basic pre-defined options prior to passing it to the output plug-in. Options available: add data prefix, add data suffix, send data to foreground app, send data in hex format, append TAB key, and append ENTER key. This can be useful when scanning data to automatically move to the next text field by appending a TAB key.
+  - **[Advanced Data Formatting (ADF)](../process/adf) -** format data based on custom rules with specific criteria prior to passing it to the output plugin. This can be useful in cases such as triggering an action to pad data with zeros only if the middle 3 digits of an acquired 9 digit Code-128 barcode matches the same 3 digits specified in the rule.
 
 - **Output plugins –** specify how data is delivered:
-    - **[Keystroke](../output/keystroke) –** acquired data is sent to the associated application as a series of keystrokes into an editable field. It can be used to add scanning capabilities to an app without adding any code, furthermore it is also fully configurable via the DataWedge Intent API.
-    - **[Intent](../output/intent/) –** data acquired is programmatically sent to the associated foreground app/activity using the Android intent mechanism. This is useful when data simply needs to be sent to the app screen without allowing the user to edit it. Register for the DataWedge intent to receive the captured data.
-    - **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments.
+
+  - **[Keystroke](../output/keystroke) –** acquired data is sent to the associated application as a series of keystrokes into an editable field. It can be used to add scanning capabilities to an app without adding any code, furthermore it is also fully configurable via the DataWedge Intent API.
+  - **[Intent](../output/intent/) –** data acquired is programmatically sent to the associated foreground app/activity using the Android intent mechanism. This is useful when data simply needs to be sent to the app screen without allowing the user to edit it. Register for the DataWedge intent to receive the captured data.
+  - **[Internet Protocol (IP)](../output/ip) –** acquired data is sent through a network to a host via specified IP address and port using TCP or UDP. This can be useful to scan data to a PC such as in healthcare environments.
 
 - **Utilities -** optional tools to use:
-    - **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen.
-        - **[Enterprise Keyboard Configuration](../utilities/ekb) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, [Enterprise Keyboard Designer](/ekd), to generate the Enterprise Keyboard layout.
+  - **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen.
+    - **[Enterprise Keyboard Configuration](../utilities/ekb) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, [Enterprise Keyboard Designer](/ekd), to generate the Enterprise Keyboard layout.
 
 **[DataWedge Settings](../settings) -** provide configurations to general, non-profile related DataWedge options. It includes actions such as ignore disabled profiles, disabled app list, import/export profile, and reporting.
 

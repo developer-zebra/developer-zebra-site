@@ -22,7 +22,7 @@ See the [Programmer's guide](../programmers-guides/dw-programming) on for guidan
 
 See [Usage Notes and Behavior](../programmers-guides/usage-notes) for information on DataWedge use and behavior.
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important:</b> Some DataWedge features are being deprecated, including Reporting and some Voice Input options. See <a href="#importantinformation">Important Information</a> section below for more details.
+<div class="alert alert-danger alert-dismissible fade in" role="alert"><b>Important:</b> Some DataWedge features are deprecated, including Reporting and some Voice Input options. See <a href="#importantinformation">Important Information</a> section below for more details.
 </div>
 
 <!--
@@ -60,7 +60,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 - **MultiBarcode -** acquire multiple, unique barcodes in a single scan session and deliver scanned data either immediately or after the specified number of barcodes per scan is reached. Options currently available:
   - **[Number of barcodes per scan](../input/barcode#multibarcodeparams) -** set a fixed quantity of barcodes to scan.
-  - **[Instant Reporting](../input/barcode#multibarcodeparams) -** instantaneously report unique barcodes within a scanning session.
+  - **[Instant Reporting](../input/barcode#multibarcodeparams) -** instantaneously report unique barcodes within a scanning session. (Must not be confused with DataWedge [Reporting](../settings/#reportingdeprecated) that is deprecated.)
   - **[Report decoded barcodes](../input/barcode#multibarcodeparams) -** report decoded barcodes in a single scan session.
 - **Document Capture -** scan a document based on a [Document Capture/NextGen SimulScan template](../input/barcode#documentcapture). Contact your local Zebra sales representative for assistance to create a Document Capture/NextGen SimulScan template.
 
@@ -68,7 +68,7 @@ See [Simulscan Migration Alert](/simulscan/1-1/guide/alert) for more information
 
 ### Voice Input Options Deprecated
 
-The following [Voice Input](../input/voice) features are being deprecated and will be discontinued in a future release:
+The following [Voice Input](../input/voice) features are deprecated and will be discontinued in a future release:
 
 - Data capture start option - Start phrase
 - Data capture start phrase
@@ -78,7 +78,7 @@ As an alternative, Zebra recommends using the PTT button to trigger voice captur
 
 ### Reporting Deprecated
 
-DataWedge [Reporting](../settings/#reporting) is being deprecated and will be discontinued on Zebra devices running Android 12, expected to be released in early 2022. As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
+DataWedge [Reporting](../settings/#reportingdeprecated) is deprecated and will be discontinued on Zebra devices running Android 12, expected to be released in early 2022. (Must not be confused with [Instant Reporting](../input/barcode#multibarcodeparams) from MultiBarcode.) As an alternative, Zebra recommends using the following DataWedge intent APIs to identify the supported scanners and parameters:
 
 - **[Enumerate Scanners](../api/enumeratescanners) -** generates an index of scanners available on the device.
 - **[Get Config](../api/getconfig) -** retrieves the `PARAM_LIST` settings, or the supported parameters, from the specified Profile; returned as a set of value pairs or a Plug-in config bundle. See [Get Barcode Parameters](../api/getconfig/#getbarcodeparameters) for sample code.
@@ -184,7 +184,7 @@ For more information about approved languages or to download a localized operati
 ### Added in DataWedge 7.4
 
 - **New [Enterprise Keyboard Configuration](../utilities/ekb) feature introduced in DataWedge 7.4.44.**
-- **DataWedge 7.5 and later versions only support Android Oreo (v8.0) and later.**
+- **DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.**
 - Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/voice).
 - Added new **[DPM support](../input/barcode#readerparams)** for barcode reader and [SetConfig](../api/setconfig) API.
 - **Enterprise Keyboard** option visible in the DataWedge profile screen is an upcoming feature for future use.

@@ -1,22 +1,22 @@
 ---
-title: Set Reporting Options 
+title: Set Reporting Options
 layout: guide.html
 product: DataWedge
-productversion: '8.2'
+productversion: "8.2"
 ---
 
 ## SET_REPORTING_OPTIONS
 
 Introduced in DataWedge 6.6.
 
-Used to configure reporting options, which are optionally generated after importing databases and Profiles. More [about import Reporting](../../settings/#reporting).
+Used to configure reporting options, which are optionally generated after importing databases and Profiles. More [about import Reporting](../../settings/#reportingdeprecated).
 
 ### Function Prototype
 
-	:::java
-	Intent i = new Intent();
-	i.setAction(ACTION);
-	i.putExtra("com.symbol.datawedge.api.SET_REPORTING_OPTIONS", bReporting);
+    :::java
+    Intent i = new Intent();
+    i.setAction(ACTION);
+    i.putExtra("com.symbol.datawedge.api.SET_REPORTING_OPTIONS", bReporting);
 
 ### Parameters
 
@@ -25,88 +25,88 @@ Used to configure reporting options, which are optionally generated after import
 **EXTRA_DATA** [bundle]: `com.symbol.datawedge.api.SET_REPORTING_OPTIONS`
 
 **Reporting Options Bundle**:
-* **reporting_enabled -** controls whether to enable reports, generated following import operations. 
- * true
- * false (default)
-* **reporting_generate_option -** controls whether reporting is generated for manual imports, auto imports, or both.
- * manual
- * auto
- * both (default)
-* **reporting_show_for_manual_import -** controls whether to displays a generated report (for manual imports only) using the default browser on the device. 
- * true
- * false (default)
+
+- **reporting_enabled -** controls whether to enable reports, generated following import operations.
+- true
+- false (default)
+- **reporting_generate_option -** controls whether reporting is generated for manual imports, auto imports, or both.
+- manual
+- auto
+- both (default)
+- **reporting_show_for_manual_import -** controls whether to displays a generated report (for manual imports only) using the default browser on the device.
+- true
+- false (default)
 
 ### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
-	:::term
-	$ adb logcat -s DWAPI
+    :::term
+    $ adb logcat -s DWAPI
 
 Error messages are logged for invalid actions and parameters.
 
 ### Result Codes
- 
+
 DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
 
-* **BUNDLE_EMPTY -** FAILURE
-* **FAILURE –** FAILURE
-* **SUCCESS -** SUCCESS
+- **BUNDLE_EMPTY -** FAILURE
+- **FAILURE –** FAILURE
+- **SUCCESS -** SUCCESS
 
-Also see the [Result Codes guide](../resultinfo) for more information. 
+Also see the [Result Codes guide](../resultinfo) for more information.
 
 ## Example Code
 
 ### Enable Reporting
 
-The code below enables reporting on the device, enables reports for manual and automatic imports, and enables manual-import reports to be displayed: 
+The code below enables reporting on the device, enables reports for manual and automatic imports, and enables manual-import reports to be displayed:
 
-	:::java
-	private BroadcastReceiver resultsReceiver = new BroadcastReceiver() {
-	    @Override
-	    public void onReceive(Context context, Intent intent) {
-	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
-	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
-	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
+    :::java
+    private BroadcastReceiver resultsReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
+            String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
+            String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
 
-	        Bundle bundle;
-	        String resultInfo = "";
-	        if (intent.hasExtra("RESULT_INFO")) {
-	            bundle = intent.getBundleExtra("RESULT_INFO");
-	            Set<String> keys = bundle.keySet();
-	            for (String key : keys) {
-	                resultInfo += key + ": " + bundle.getString(key) + "\n";
-	            }
-	        }
-	        String text ="\n" + "Command:      " + command + "\n" +
-	                "Result:       " + result + "\n" +
-	                "Result Info:  " + resultInfo + "\n" +
-	                "CID:          " + commandIdentifier;
-	        Log.d("TAG",text);
-	    }
-	};
+            Bundle bundle;
+            String resultInfo = "";
+            if (intent.hasExtra("RESULT_INFO")) {
+                bundle = intent.getBundleExtra("RESULT_INFO");
+                Set<String> keys = bundle.keySet();
+                for (String key : keys) {
+                    resultInfo += key + ": " + bundle.getString(key) + "\n";
+                }
+            }
+            String text ="\n" + "Command:      " + command + "\n" +
+                    "Result:       " + result + "\n" +
+                    "Result Info:  " + resultInfo + "\n" +
+                    "CID:          " + commandIdentifier;
+            Log.d("TAG",text);
+        }
+    };
 
-	public void setReportingOptions() {
-	    Intent i = new Intent();
-	    i.setAction("com.symbol.datawedge.api.ACTION");
-	    Bundle bReporting = new Bundle();
-	    bReporting.putString("reporting_enabled", "true"); //true, false
-	    bReporting.putString("reporting_generate_option", "manual"); //manual, auto, both
-	    bReporting.putString("reporting_show_for_manual_import", "false"); //true, false
+    public void setReportingOptions() {
+        Intent i = new Intent();
+        i.setAction("com.symbol.datawedge.api.ACTION");
+        Bundle bReporting = new Bundle();
+        bReporting.putString("reporting_enabled", "true"); //true, false
+        bReporting.putString("reporting_generate_option", "manual"); //manual, auto, both
+        bReporting.putString("reporting_show_for_manual_import", "false"); //true, false
 
-	    i.putExtra("com.symbol.datawedge.api.SET_REPORTING_OPTIONS", bReporting);
-	    i.putExtra("SEND_RESULT","true");
-	    i.putExtra("COMMAND_IDENTIFIER", "123456789");
-	    this.sendBroadcast(i);
-	}
-	 
-	private void registerReceivers() {
-	    IntentFilter filter = new IntentFilter();
-	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
-	    filter.addCategory("android.intent.category.DEFAULT");
-	    registerReceiver(resultsReceiver, filter);
-	}
+        i.putExtra("com.symbol.datawedge.api.SET_REPORTING_OPTIONS", bReporting);
+        i.putExtra("SEND_RESULT","true");
+        i.putExtra("COMMAND_IDENTIFIER", "123456789");
+        this.sendBroadcast(i);
+    }
 
+    private void registerReceivers() {
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+        filter.addCategory("android.intent.category.DEFAULT");
+        registerReceiver(resultsReceiver, filter);
+    }
 
 <!-- PRIOR EXAMPLE GIVEN BY ENGINEERING (replaced by above 12/15/17)
 	:::java
@@ -125,9 +125,7 @@ The code below enables reporting on the device, enables reports for manual and a
 
  -->
 
-
-
------
+---
 
 **SEE ALSO**:
 

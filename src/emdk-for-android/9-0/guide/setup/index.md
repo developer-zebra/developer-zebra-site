@@ -67,7 +67,7 @@ _Click to enlarge; ESC to exit_.<br>
       </application>
 <br>
 
-#### [EMDK APIs](../api) are now ready to use. 
+#### [EMDK APIs](../../api) are now ready to use. 
 
 #### Notes:
 * In the build.gradle, a plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.

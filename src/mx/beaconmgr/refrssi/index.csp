@@ -13,8 +13,9 @@ parm:
   type: string
 ---
 
-Used to enter the Reference Received Signal Strength Indicator (RSSI) value, which can be helpful for extrapolating the relative distance to a device beacon based on its signal strength. **Default value of** `00` **is used if this parameter is missing or left blank**. 
+Used to enter the Reference Received Signal Strength Indicator (RSSI) value, which can be helpful for extrapolating the relative distance to a device beacon based on its signal strength. **If this parameter is missing or left blank**, a calculated value is inserted that is the RSSI value received at one (1) meter distance from device emitting the beacon at its selected TX Power Level. **NOTE**: Calculated value varies by device.
 
 **Input value rules**: 
 
 * String of exactly two (2) hexadecimal characters
+

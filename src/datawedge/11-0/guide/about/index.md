@@ -184,7 +184,7 @@ For more information about approved languages or to download a localized operati
 ### Added in DataWedge 7.4
 
 - **New [Enterprise Keyboard Configuration](../utilities/ekb) feature introduced in DataWedge 7.4.44.**
-- **DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.**
+- **DataWedge 7.5 and later versions only support Android Oreo (v8.0) and later.**
 - Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/voice).
 - Added new **[DPM support](../input/barcode#readerparams)** for barcode reader and [SetConfig](../api/setconfig) API.
 - **Enterprise Keyboard** option visible in the DataWedge profile screen is an upcoming feature for future use.

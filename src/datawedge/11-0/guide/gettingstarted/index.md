@@ -101,7 +101,7 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 
 - **Utilities -** optional tools to use:
   - **[Data Capture Plus (DCP)](../input/dcp) –** enables specified areas of the device screen to behave as a virtual scan trigger when tapped, simulating a hardware trigger press. It can be configured in full-screen mode or as a floating scan button placed on the right, left, or both sides of the screen.
-    - **[Enterprise Keyboard Configuration](../utilities/ekb) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, [Enterprise Keyboard Designer](/ekd), to generate the Enterprise Keyboard layout.
+        - **[Enterprise Keyboard Configuration](../utilities/ekb) –** enables the use of custom Enterprise Keyboard layouts within an associated app without modifying the app. Uses a desktop tool, [Enterprise Keyboard Designer](/ekd), to generate the Enterprise Keyboard layout.
 
 **[DataWedge Settings](../settings) -** provide configurations to general, non-profile related DataWedge options. It includes actions such as ignore disabled profiles, disabled app list, import/export profile, and reporting.
 

@@ -26,9 +26,13 @@ The following software is required to use EMDK for Android:
 
 -----
 
+> **[Install Android Studio](https://developer.android.com/studio/) before proceeding**. 
+
 ### Enable EMDK SDK
 
-1. a. **Go to the app module** in the Android project in which to to use EMDK.<br>
+This section includes the minumum steps for enabling EMDK to build productivity apps targeting Zebra devices running Android. To add the capability to also configure device settings from a new or existing app, complete this section ***and*** the [EMDK Plug-in section](#installemdkplugin). 
+
+1. a. In Android Studio, **go to the app module** in the Android project in which to use EMDK.<br>
    b. **Navigate to the** `build.gradle` **file**:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
 _Click to enlarge; ESC to exit_.<br>
@@ -39,25 +43,46 @@ _Click to enlarge; ESC to exit_.<br>
             compileOnly 'com.symbol:emdk:x.x.x' //  e.g. ‘com.symbol:emdk:7.6.10’
                 ...
             }
-5. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
+2. **Sync Gradle** (File -> Sync Project with Gradle Files).<br>
  **NOTE**: Eliminate this step by checking the Preference box shown below:  
    <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
 _Click to enlarge; ESC to exit_.<br>
+3. Enable Android permissions for an existing app by modifying the application's `Manifest.xml` file to use the EMDK library and to set the required permissions.<br>
+**Enable permissions for** `com.symbol.emdk.permission.EMDK`: 
+
+         :::xml
+         <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.symbol.basicscansample1">
+         <uses-permission android:name="com.symbol.emdk.permission.EMDK" />    
+            <application>
+         ...    
+            </application>
+         </manifest>
+<br>
+4. Then enable the EMDK library in the application node:  
+      
+        :::xml
+        <application>
+         <uses-library android:name="com.symbol.emdk"/>    
+         <activity>
+         ...    
+         </activity>
+      </application>
+
 
 ##### EMDK APIs are now ready to use. 
 
 #### Notes:
 * A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
-* **See the full list of [EMDK for Android Plugin versions](https://bintray.com/zebratechnologies/EMDKAndroid/com.symbol.emdk)**.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----
 
 ### Install EMDK Plug-in
 
-The following instructions apply to Android Studio, which is required to use EMDK for Android and must be installed to complete the steps below. 
+OPTIONAL
 
-**[Install Android Studio](https://developer.android.com/studio/)** before proceeding. 
+The EMDK Plug-in adds Profile Manager, a graphical UI for accessing Zebra's MX device-configuration layer. 
+
 
 > **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions vary slightly. 
 

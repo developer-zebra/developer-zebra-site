@@ -30,7 +30,7 @@ One solution that leverages beaconing technology is Zebra Device Tracker, an And
  * Reference Received Signal Strength Indicator (RSSI) value
 
 ### Battery-based BLE Behavior
-**The BLE radio of some devices is located in the battery**. Such devices are subject to the behaviors listed below. 
+**The BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 
 
 * Configuration settings are stored in the battery and applied only when the mobile device is powered on.
 * When BLE beaconing is enabled and device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.

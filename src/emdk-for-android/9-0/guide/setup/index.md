@@ -47,8 +47,7 @@ _Click to enlarge; ESC to exit_.<br>
  **NOTE**: Eliminate this step by checking the Preference box shown below:  
    <img alt="image" style="height:350px" src="emdk-a_sync.png"/>
 _Click to enlarge; ESC to exit_.<br>
-3. Enable Android permissions for an existing app by modifying the application's `Manifest.xml` file to use the EMDK library and to set the required permissions.<br>
-**Enable permissions for** `com.symbol.emdk.permission.EMDK`: 
+3. **Enable Android permissions** by modifying the application's `Manifest.xml` file: 
 
          :::xml
          <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.symbol.basicscansample1">
@@ -58,7 +57,7 @@ _Click to enlarge; ESC to exit_.<br>
             </application>
          </manifest>
 <br>
-4. Then enable the EMDK library in the application node:  
+4. **Enable the EMDK library** in the application node of the manifest:  
       
         :::xml
         <application>
@@ -72,21 +71,18 @@ _Click to enlarge; ESC to exit_.<br>
 ##### EMDK APIs are now ready to use. 
 
 #### Notes:
-* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
+* In the build.gradle, a plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.6+` uses SDK versions 7.6 and newer.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----
 
 ### Install EMDK Plug-in
 
-OPTIONAL
-
-The EMDK Plug-in adds Profile Manager, a graphical UI for accessing Zebra's MX device-configuration layer. 
-
-
-> **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions vary slightly. 
+The optional EMDK Plug-in adds Profile Manager, a graphical UI for accessing the Zebra MX device-configuration layer built into every device. **Zebra strongly recommends using the EMDK Plug-in if the app is intended to alter settings on the device**. 
 
 #### Set up EMDK for Android:
+
+> **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions might vary slightly. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Select a Project SDK**:<br>

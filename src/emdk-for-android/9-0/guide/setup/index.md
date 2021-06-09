@@ -107,7 +107,7 @@ _Click to enlarge; ESC to exit_.<br>
 <img alt="image" style="height:350px" src="emdk_plugins_03.png"/>
 _Click to enlarge; ESC to exit_.<br>
 
-The EMDK Plugin adds a menu in the menubar: 
+**The EMDK Plugin adds an "EMDK" menu** in the Android Studio menu bar: 
    <img alt="image" style="height:350px" src="emdk_menu.png"/>
 _Click to enlarge; ESC to exit_.<br>
 

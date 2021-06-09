@@ -1999,6 +1999,10 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'enterprise-keyboard/1-4/'
     }))
 
+    .use(foldermenu({
+        folder: 'ssm/1-0/'
+    }))
+
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal transmitted by the **<u>secondary</u> Bluetooth Low Energy (BLE) radio** of <u>[supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)</u> when powered off. 
+Beacon Manager (BeaconMgr) controls the signal emitted by the **secondary Bluetooth Low Energy (BLE) radio** of <u>[supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)</u> when powered off. 
 
 > To configure the ***primary*** BLE radio, please see the [Android BLE APIs](https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview) and [Bluetooth LE classes](https://developer.android.com/reference/android/bluetooth/le/package-summary).  
 
@@ -23,8 +23,8 @@ The BLE beacon emitted from a device can be detected by an app running on anothe
 * **Turn On/Off**: 
  * Beacon emission from secondary BLE radio when device is powered off 
  * Beacon emission when device is in "Airplane mode"
-* Set the beacon emission power level  
-* Set the emission interval
+* Set the beacon transmission power level  
+* Set the transmission interval
 * **Set beacon parameters for**: 
  * Beacon type
  * AltBeacon UUID 

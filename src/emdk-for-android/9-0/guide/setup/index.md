@@ -32,6 +32,8 @@ The following software is required to use EMDK for Android:
 
 This section includes the minumum steps for enabling EMDK to build productivity apps targeting Zebra devices running Android. To add the capability to also configure device settings from a new or existing app, complete this section ***and*** the [EMDK Plugin section](#installemdkplugin). 
 
+**To enable the EMDK SDK in Android Studio**:
+
 1. a. In Android Studio, **go to the app module** in the Android project in which to use EMDK.<br>
    b. **Navigate to the** `build.gradle` **file**:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
@@ -79,9 +81,9 @@ _Click to enlarge; ESC to exit_.<br>
 
 The optional EMDK Plugin adds Profile Manager, a graphical UI for accessing the Zebra MX device-configuration layer built into every device. **Zebra strongly recommends using the EMDK Plugin if the app is intended to alter settings on the device**. 
 
-#### Set up EMDK for Android:
+> **NOTE**: Dialog boxes of Android Studio for macOS and Windows versions might vary slightly. 
 
-> **NOTE**: Dialog boxes of macOS, Windows and Android Studio versions might vary slightly. 
+**To set up the EMDK Plugin**:
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Select a Project SDK**:<br>

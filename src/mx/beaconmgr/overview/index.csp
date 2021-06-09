@@ -6,13 +6,13 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal transmitted by the **secondary Bluetooth Low Energy (BLE) radio of <u>[supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)</u>** when powered off. 
+Beacon Manager (BeaconMgr) controls the signal transmitted by the **<u>secondary</u> Bluetooth Low Energy (BLE) radio** of <u>[supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)</u> when powered off. 
 
 > To configure the ***primary*** BLE radio, please see the [Android BLE APIs](https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview) and [Bluetooth LE classes](https://developer.android.com/reference/android/bluetooth/le/package-summary).  
 
-The secondary beacon can be detected by an app on a device and used as a means of locating other devices. **Beacon Manager facilitates administrative control over beacon contents and settings**, such as transmission power and interval, which can help balance battery consumption with detectable range. 
+The BLE beacon emitted from a device can be detected by an app running on another device and used for a variety of purposes. **Beacon Manager facilitates administrative control over beacon contents and settings** such as emission power and interval, which can help balance battery consumption with detectable range. 
 
-One solution that leverages BLE beaconing is Zebra Device Tracker, which can help locate misplaced devices by honing in on their BLE beacons. See [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker) for more information.
+**One solution that leverages BLE beaconing is Zebra Device Tracker**, which can help locate misplaced devices by honing in on their BLE beacons. See [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker) for more information.
 
 ### Supported Devices
 * Supported on select GMS devices running Android 8.x Oreo and Android 10 (or later) 
@@ -41,9 +41,8 @@ One solution that leverages BLE beaconing is Zebra Device Tracker, which can hel
 * If beaconing is enabled and the battery is removed from a device, beaconing stops. 
 * A beaconing-enabled battery removed from a device continues to consume a small amount of power to periodically detect whether it has been inserted into a device and should resume beaconing.
 * When a BLE-configured and enabled battery is placed into a device, beaconing resumes within about 30 seconds according to the following: 
- * If the battery was configured in that device, the battery's last-saved values are used.
- * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on. 
- * If the battery is placed in a **powered-on** device other than the one in which it was configured, the battery receives and applies the BLE settings stored on the device.
- * If the battery is placed in a device that contains no Beacon Manager configuration information, the battery behaves according to its last preconfigured values.
+ * If the battery is reinserted into the device on which it was configured, the battery's last-saved values are used.
+ * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on, at which time the battery receives and applies the BLE settings stored on the device. 
+ * If the battery is placed in a device that contains no Beacon Manager configuration values, the battery behaves according to its last preconfigured values.
 
 -----

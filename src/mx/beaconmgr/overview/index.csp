@@ -34,15 +34,16 @@ One solution that leverages BLE beaconing is Zebra Device Tracker, which can hel
  * Reference Received Signal Strength Indicator (RSSI) value
 
 ### Battery-based BLE Behavior
-**The BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 
+**The secondary BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 
 
-* Configuration settings are stored in the battery and applied only when the mobile device is powered on.
-* When BLE beaconing is enabled and device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.
-* The BLE radio does NOT emit a beacon if the battery is removed from the device. 
-* If beaconing is enabled and the battery is removed from a device, the battery consumes a small amount of power to periodically detect whether it's in a powered-off device. 
-* If a BLE-enabled and configured battery is placed into a device when the device is powered off, beaconing resumes within about 30 seconds according to the following: 
+* Configuration settings are initially stored in the device. Settings are pushed to the battery and applied only when the device is powered on.
+* When BLE beaconing is enabled and the device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.
+* If beaconing is enabled and the battery is removed from a device, beaconing stops. 
+* A beaconing-enabled battery removed from a device continues to consume a small amount of power to periodically detect whether it has been inserted into a device and should resume beaconing.
+* When a BLE-configured and enabled battery is placed into a device, beaconing resumes within about 30 seconds according to the following: 
  * If the battery was configured in that device, the battery's last-saved values are used.
- * If the battery is placed in a device other than the one in which it was configured, the BLE settings of the new device are applied to the newly inserted battery.
+ * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on. 
+ * If the battery is placed in a **powered-on** device other than the one in which it was configured, the battery receives and applies the BLE settings stored on the device.
  * If the battery is placed in a device that contains no Beacon Manager configuration information, the battery behaves according to its last preconfigured values.
 
 -----

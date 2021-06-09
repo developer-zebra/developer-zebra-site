@@ -34,7 +34,7 @@ parm:
     - code: 3
       devicetype: A,B
       name: Upgrade
-      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. If the requested app cannot be found or upgraded, an error is returned in the Result XML. To install an application that is not already installed on the device, use the "Install" action (option 1). Note- When an application is upgraded, the data for that application is maintained. Note- In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. In devices running Android KitKat or higher, an Upgrade can replace only apps with a numerically greater version number.
+      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. If the requested app cannot be found, the selected app is installed on the device. When an application is upgraded, the data for that application is maintained. In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. In devices running Android KitKat or later, an Upgrade can replace only apps with a numerically greater version number.
       mx: "4.1"
       osx: "1.0"
       info: Apps must be targeted at Android API level 23 (or newer) to be silently granted runtime permission on devices running Android 10+. 

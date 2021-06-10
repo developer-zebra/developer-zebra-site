@@ -6,9 +6,7 @@ devicetype: A
 order: 0
 ---
 
-Beacon Manager (BeaconMgr) controls the signal emitted by the **secondary Bluetooth Low Energy (BLE) radio** of <u>[supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)</u> when powered off. 
-
-> To configure the ***primary*** BLE radio, please see the [Android BLE APIs](https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview) and [Bluetooth LE classes](https://developer.android.com/reference/android/bluetooth/le/package-summary).  
+Beacon Manager (BeaconMgr) controls the signal emitted by the **secondary Bluetooth Low Energy (BLE) radio** of supported devices (see below) when powered off. To configure the **_primary_ BLE radio**, please see the [Android BLE APIs](https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview) and [Bluetooth LE classes](https://developer.android.com/reference/android/bluetooth/le/package-summary).  
 
 The BLE beacon emitted from a device can be detected by an app running on another device and used for a variety of purposes. **Beacon Manager facilitates administrative control over beacon contents and settings** such as emission power and interval, which can help balance battery consumption with detectable range. 
 
@@ -43,8 +41,7 @@ Note: In this document, the terms *emission* and *transmission* are used interch
 * If beaconing is enabled and the battery is removed from a device, beaconing stops. 
 * A beaconing-enabled battery removed from a device continues to consume a small amount of power to periodically detect whether it has been inserted into a device and should resume beaconing.
 * When a BLE-configured and enabled battery is placed into a device, beaconing resumes within about 30 seconds according to the following: 
- * If the battery is reinserted into the device on which it was configured, the battery's last-saved values are used.
+ * If the battery is reinserted into the device on which it was configured or that contains no Beacon Manager configuration values, the battery's last-saved values are used.
  * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on, at which time the battery receives and applies the BLE settings stored on the device. 
- * If the battery is placed in a device that contains no Beacon Manager configuration values, the battery behaves according to its last preconfigured values.
-
+ 
 -----

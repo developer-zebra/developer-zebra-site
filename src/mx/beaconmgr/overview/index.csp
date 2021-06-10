@@ -16,8 +16,7 @@ The BLE beacon emitted from a device can be detected by an app running on anothe
 
 ### Supported Devices
 Beacon Manager is supported on select GMS devices **that contain a secondary BLE radio** and are running Android 8.x Oreo and Android 10 (or later). That list currently includes: 
-* **EC50**
-* **EC55**
+* **[EC50, EC55](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec50-ec55.html)**
 
 ### Main Functionality
 

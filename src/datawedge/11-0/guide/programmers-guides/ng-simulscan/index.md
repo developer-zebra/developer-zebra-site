@@ -15,7 +15,7 @@ productversion: "11.0"
 
 - See supported devices for Document Capture in the [Feature Matrtix](../../matrix).
 - Camera or supported 2D imager
-- DataWedge v8.0.28 or higher configured to access [NG SimulScan](../../input/barcode/#nextgensimulscanconfiguration)
+- DataWedge v8.0.37 or higher configured to access [NG SimulScan](../../input/barcode/#nextgensimulscanconfiguration)
 - Device with [Mobility DNA license](/licensing), required for NG SimulScan's Document Capture feature
 
 ---

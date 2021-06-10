@@ -86,6 +86,8 @@ Specifies the full path and file name to import the configuration file (`datawed
 - Config file is always named `datawedge.db`
 - Profile naming convention: `dwprofile_<profilename>.db`<br>
 
+With the introduction of scoped storage restriction on Android 11 devices, EMM (Enterprise Mobile Management) systems cannot copy files to DataWedge folders on internal or external storage (e.g. `/storage/emulated/x/Android/data/com.symbol.datawedge/file`, where "x" is a digit). Instead, Zebra recommends to use either of the following folders by updating the file paths in the deployment configuration (such as OEMConfig, Managed Configurations or StageNow configuration): `/enterprise/device/settings/datawedge` or `/data/temp/public` 
+
 ---
 
 ## Import NextGen SimulScan templates

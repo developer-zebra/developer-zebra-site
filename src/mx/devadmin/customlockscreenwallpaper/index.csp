@@ -1,0 +1,20 @@
+---
+csp: devadmin
+title: Device Admin Package Name
+type: parm
+order: 25
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: Lock Screen Wallpaper is "Custom"
+  name: CustomLockscreenWallpaper
+  type: string
+---
+
+Used to enter the file name and path on the device of an image file (`.jpg` or `.png`) to display when the lock screen is shown on the device.
+
+**Parm value input rules**: 
+
+* String of at least one (1) character
+* Supports `.jpg` or `.png` file formats

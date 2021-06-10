@@ -1,0 +1,30 @@
+---
+csp: devadmin
+title: Lock Screen Wallpaper
+type: parm
+order: 20
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: SetLockScreenWallpaper
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) makes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Restore to default
+      mx: "10.5"
+      description: Restores the lock screen wallpaper to its factory-default setting.
+    - code: 2
+      devicetype: A,B
+      name: Custom
+      mx: "10.5"
+      description: Allows a custom wallpaper image to be selected for display on the lock screen.
+---
+
+Used to determine the wallpaper displayed on the Lock screen. When Option 2 is used, identify the wallpaper file on the device using the Custom Lock Screen Wallpaper parameter.

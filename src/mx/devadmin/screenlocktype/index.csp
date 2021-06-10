@@ -2,7 +2,7 @@
 csp: devadmin
 title: Screen Lock Type
 type: parm
-order: 10
+order: 35
 mx: "6.0"
 osx: "6.0"
 devicetype: A,B

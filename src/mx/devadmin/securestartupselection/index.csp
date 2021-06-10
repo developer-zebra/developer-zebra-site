@@ -2,7 +2,7 @@
 csp: devadmin
 title: Secure Start-up Selection
 type: parm
-order: 15
+order: 45
 mx: "10.0"
 osx: "6.2"
 apilevel: "26"

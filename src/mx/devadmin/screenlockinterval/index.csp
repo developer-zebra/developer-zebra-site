@@ -2,7 +2,7 @@
 csp: devadmin
 title: Screen-Lock Timeout Interval
 type: parm
-order: 12
+order: 40
 mx: "4.3"
 osx: "1.3"
 devicetype: A

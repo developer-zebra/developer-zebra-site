@@ -1,0 +1,35 @@
+---
+csp: devadmin
+title: Lock Screen Notifications
+type: parm
+order: 30
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: NotificationOnLockScreen
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) makes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Show all content
+      mx: "10.5"
+      description: Allows all nofitications sent to the device or its user to be shown on the lock screen.
+    - code: 2
+      devicetype: A,B
+      name: Show only non-sensitive content
+      mx: "10.5"
+      description: Allows all notifications except those deemed 'sensitive' to be displayed on the lock screen.
+    - code: 3
+      devicetype: A,B
+      name: Hide notifications
+      mx: "10.5"
+      description: Allows a custom wallpaper image to be selected for display on the lock screen.
+---
+
+Used to select the type of notification content to be shown on the Lock screen, if any. 

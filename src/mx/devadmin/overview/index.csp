@@ -18,8 +18,11 @@ The DevAdmin provides direct access to certain device administration tasks and a
 
 * Set Screen-Lock Timeout Interval
 * Set Screen Lock Type (or none) 
+* Set lock screen notification type
+* Set lock screen wallpaper 
 * **Enable/Disable**: 
  * Installation of applications from Unknown sources
  * Device Administrator approval for an application
  * Secure Start-up Selection
+
 

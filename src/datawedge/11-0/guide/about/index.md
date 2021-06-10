@@ -122,6 +122,7 @@ For more information about approved languages or to download a localized operati
 ## New in DataWedge 11.0
 
 - New [Managed Configurations](../managed-config) to remotely configure DataWedge through an EMM (Enterprise Mobility Management) system.
+- Renamed the Auto Group Identification option (part of [Document Capture](../input/barcode/#documentselectiondocumentcapture) with MultiBarcode) from **Group of Common barcodes dynamic quantity** to **User-defined Barcode Quantity**.
 
 ---
 

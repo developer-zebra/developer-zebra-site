@@ -22,11 +22,11 @@ The following software is required to use EMDK for Android:
 * [Android Studio](https://developer.android.com/studio/) 2.2 or later
 * A Java Development Kit (JDK)<br>
 
->**`IMPORTANT:`** Be sure to read and understand the licensing agreement(s) of any selected JDK or SDK to be used.
+>**`IMPORTANT:`** Be sure to read and understand the licensing agreement(s) of any selected JDK or SDK.
 
 -----
 
-> **[Install Android Studio](https://developer.android.com/studio/) before proceeding**. 
+> **Please [install Android Studio](https://developer.android.com/studio/) before proceeding**. 
 
 ### Enable EMDK SDK
 

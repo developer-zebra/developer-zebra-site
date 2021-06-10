@@ -12,17 +12,18 @@ Beacon Manager (BeaconMgr) controls the signal emitted by the **secondary Blueto
 
 The BLE beacon emitted from a device can be detected by an app running on another device and used for a variety of purposes. **Beacon Manager facilitates administrative control over beacon contents and settings** such as emission power and interval, which can help balance battery consumption with detectable range. 
 
-**One solution that leverages BLE beaconing is Zebra Device Tracker**, which can help locate misplaced devices by honing in on their BLE beacons. See [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker) for more information.
+**One solution that leverages BLE beaconing is Zebra Device Tracker**, which can help locate misplaced devices by honing in on their BLE beacons. See [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker) for more information and a [list of supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).
 
 ### Supported Devices
-* Supported on select GMS devices running Android 8.x Oreo and Android 10 (or later) 
-* See Zebra Support Portal for [list of supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html)  
+Beacon Manager is supported on select GMS devices **that contain a secondary BLE radio** and are running Android 8.x Oreo and Android 10 (or later). That list currently includes: 
+* **EC50**
+* **EC55**
 
 ### Main Functionality
 
 * **Turn On/Off**: 
- * Beacon emission from secondary BLE radio when device is powered off 
- * Beacon emission when device is in "Airplane mode"
+ * Beaconing from secondary BLE radio when device is powered off 
+ * Beaconing when device was in "Airplane mode" before being powered off
 * Set the beacon transmission power level  
 * Set the transmission interval
 * **Set beacon parameters for**: 
@@ -32,6 +33,8 @@ The BLE beacon emitted from a device can be detected by an app running on anothe
  * Custom beacon data
  * Manufacturer Byte value
  * Reference Received Signal Strength Indicator (RSSI) value
+
+Note: In this document, the terms *emission* and *transmission* are used interchangeably. 
 
 ### Battery-based BLE Behavior
 **The secondary BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 

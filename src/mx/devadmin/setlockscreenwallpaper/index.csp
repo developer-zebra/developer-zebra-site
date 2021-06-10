@@ -1,6 +1,6 @@
 ---
 csp: devadmin
-title: Lock Screen Wallpaper
+title: Set Lock Screen Wallpaper
 type: parm
 order: 20
 mx: "10.5"
@@ -19,12 +19,12 @@ parm:
       devicetype: A,B
       name: Restore to default
       mx: "10.5"
-      description: Restores the lock screen wallpaper to its factory-default setting.
+      description: Restores the Lock Screen wallpaper to its factory-default setting.
     - code: 2
       devicetype: A,B
       name: Custom
       mx: "10.5"
-      description: Allows a custom wallpaper image to be selected for display on the lock screen.
+      description: Allows a custom wallpaper image to be selected for display on the Lock Screen.
 ---
 
 Used to determine the wallpaper displayed on the Lock screen. When Option 2 is used, identify the wallpaper file on the device using the Custom Lock Screen Wallpaper parameter.

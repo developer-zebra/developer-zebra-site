@@ -1,6 +1,6 @@
 ---
 csp: devadmin
-title: Device Admin Package Name
+title: Custom Wallpaper File
 type: parm
 order: 25
 mx: "10.5"
@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter the file name and path on the device of an image file (`.jpg` or `.png`) to display when the lock screen is shown on the device.
+Used to enter the file name and path on the device of an image file (`.jpg` or `.png`) to display when the Lock Screen is shown on the device.
 
 **Parm value input rules**: 
 

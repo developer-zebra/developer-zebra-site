@@ -23,32 +23,32 @@ parm:
       name: Swipe
       mx: "6.0"
       osx: "6.0"
-      description: Causes the Swipe screen-lock to be displayed whenever the lock screen is invoked.
+      description: Causes the Swipe screen-lock to be displayed whenever the Lock Screen is invoked.
     - code: 2
       devicetype: A,B
       name: Pattern
       mx: "6.0"
       osx: "6.0"
-      description: Causes the Pattern screen-lock to be displayed whenever the lock screen is invoked.
+      description: Causes the Pattern screen-lock to be displayed whenever the Lock Screen is invoked.
     - code: 3
       devicetype: A,B
       name: Pin
       mx: "6.0"
       osx: "6.0"
-      description: Causes the numerical "Pin" screen-lock to be displayed whenever the lock screen is invoked.
+      description: Causes the numerical "Pin" screen-lock to be displayed whenever the Lock Screen is invoked.
     - code: 4
       devicetype: A,B
       name: Password
       mx: "6.0"
       osx: "6.0"
-      description: Causes the Password screen-lock to be displayed whenever the lock screen is invoked.
+      description: Causes the Password screen-lock to be displayed whenever the Lock Screen is invoked.
     - code: 5
       devicetype: A,B
       name: None
       mx: "6.0"
       osx: "6.0"
-      description: Prevents the display of any lock screen at any time.
+      description: Prevents the display of any Lock Screen at any time.
 ---
-Controls whether a screen lock will be invoked when the device powers up or user inactivity exceeds the Screen-Lock Timeout Interval parameter, and which Android lock screen will be displayed. 
+Controls whether a screen lock will be invoked when the device powers up or user inactivity exceeds the Screen-Lock Timeout Interval parameter, and which Android Lock Screen will be displayed. 
 
 `ENTERPRISE HOME SCREEN NOTE:` Installation of [Zebra EHS](/ehs) by default disables the Android Settings panel on devices, which causes any execution of this parameter to fail. To use this parameter on devices intended to run EHS, **Zebra recommends setting the ScreenLockType *<u>before</u>* EHS is installed on target device(s)**. To set the ScreenLockType on devices already running EHS, enable EHS [Privileged Settings](https://techdocs.zebra.com/ehs/latest/guide/features/#privilegedsettings) on the device(s) to temporarily activate the Settings app, set the ScreenLockType as desired, then disable Privileged Settings to re-secure the device. 

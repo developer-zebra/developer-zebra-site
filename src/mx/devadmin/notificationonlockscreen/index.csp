@@ -19,17 +19,17 @@ parm:
       devicetype: A,B
       name: Show all content
       mx: "10.5"
-      description: Allows all nofitications sent to the device or its user to be shown on the lock screen.
+      description: Allows all notifications sent to the device or its user to be shown on the Lock Screen.
     - code: 2
       devicetype: A,B
       name: Show only non-sensitive content
       mx: "10.5"
-      description: Allows all notifications except those deemed 'sensitive' to be displayed on the lock screen.
+      description: Allows all notifications except those deemed 'sensitive' to be displayed on the Lock Screen.
     - code: 3
       devicetype: A,B
       name: Hide notifications
       mx: "10.5"
-      description: Allows a custom wallpaper image to be selected for display on the lock screen.
+      description: Blocks all notificationsfrom being shown on the Lock Screen.
 ---
 
-Used to select the type of notification content to be shown on the Lock screen, if any. 
+Used to select the type of notification content to be shown on the Lock Screen, if any. 

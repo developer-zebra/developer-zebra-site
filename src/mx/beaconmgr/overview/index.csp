@@ -31,7 +31,7 @@ Beacon Manager is supported on select GMS devices **that contain a secondary BLE
  * Manufacturer Byte value
  * Reference Received Signal Strength Indicator (RSSI) value
 
-_Note: In this document, the terms **emission** and **transmission** are used interchangeably_. 
+_**Note**: In this document, the terms **emission** and **transmission** are used interchangeably_. 
 
 ### Battery-based BLE Behavior
 **The secondary BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 

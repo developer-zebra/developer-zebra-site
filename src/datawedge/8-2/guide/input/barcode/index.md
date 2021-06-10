@@ -373,7 +373,7 @@ When using this option, the quantity of barcodes must be specified by using **_o
     * Starts with "Q" or "q"
     * Length is 3 digits or less
 * **User/System Defined -** Set the quantity of barcodes (value range: 1 to 100; default value: 5) to scan based on:
-    * **DataWedge UI -** use option **User-defined Barcode Quantity** under **Template params** from **NG SimulScan configuration**, as shown below. 
+    * **DataWedge UI -** use option **Group of common barcodes dynamic quantity** under **Template params** from **NG SimulScan configuration**, as shown below. 
     * **DataWedge intent API -** use [SetConfig](../../api/setconfig/#nextgensimulscanparameters) to set `common_barcode_dynamic_quantity` to the desired quantity.
 
 <table>

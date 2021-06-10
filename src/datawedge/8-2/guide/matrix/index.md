@@ -16,6 +16,11 @@ _Note: Smartsheet features, including filtering, are not intended for use._
 
 ## History
 
+### New in June 2021
+
+* New Dotcode parameter added, Erasures, used to increase the decoding speed for Dotcode barcodes.
+* Document Capture via camera now supported resulting to better quality images.
+
 ### New in April 2021
 
 Added the following features to the matrix:

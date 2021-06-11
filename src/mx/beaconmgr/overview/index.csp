@@ -13,8 +13,12 @@ The BLE beacon emitted from a device can be detected by an app running on anothe
 **One solution that leverages BLE beaconing is Zebra Device Tracker**, which can help locate misplaced devices by honing in on their BLE beacons. See [Zebra Device Tracker](https://techdocs.zebra.com/devicetracker) for more information and a [list of supported devices](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).
 
 ### Supported Devices
-Beacon Manager is supported on select GMS devices **that contain a secondary BLE radio** and are running Android 8.x Oreo and Android 10 (or later). That list currently includes: 
+ 
 * **[EC50, EC55](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec50-ec55.html)**
+
+<!--
+Beacon Manager is supported on select GMS devices **that contain a secondary BLE radio** and are running Android 8.x Oreo and Android 10 (or later). That list currently includes:
+-->
 
 ### Main Functionality
 
@@ -36,12 +40,13 @@ _**Note**: In this document, the terms **emission** and **transmission** are use
 ### Battery-based BLE Behavior
 **The secondary BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 
 
-* Beacon Manager configuration settings are stored in the device ***and* in device batteries*** equipped with a secondary BLE radio. 
-* Settings are stored in the battery and applied only when the device is powered on. 
+* Beacon Manager configuration settings are stored in the device ***and* in device batteries equipped with a secondary BLE radio**. 
+* **Settings are stored in the battery** and applied only **when the device is powered on**. 
 * When BLE beaconing is enabled and the device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.
 * If beaconing is enabled and the battery is removed from a device, beaconing stops. 
-* A beaconing-enabled battery removed from a device continues to consume a small amount of power to periodically detect whether it has been inserted into a device and should resume beaconing.
-* When a BLE-configured and enabled battery is placed into a device, beaconing resumes within about 30 seconds according to the following: 
+* **A beaconing-enabled battery removed from a device consumes a small amount of power** to periodically detect whether it has been inserted into a device and should resume beaconing. 
+* **If beaconing is disabled** on a BLE-equipped battery, **it draws no power** when removed from the device.   
+* **When a BLE-configured and enabled battery is placed into a device**, beaconing resumes within about 30 seconds according to the following: 
  * If the battery is reinserted into the device on which it was configured or that contains no Beacon Manager configuration values, the battery's last-saved values are used.
  * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on, at which time the battery receives and applies the BLE settings stored on the device. 
  

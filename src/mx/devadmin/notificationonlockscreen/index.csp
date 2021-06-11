@@ -24,7 +24,7 @@ parm:
       devicetype: A,B
       name: Show only non-sensitive content
       mx: "10.5"
-      description: Allows all notifications except those deemed 'sensitive' to be displayed on the Lock Screen.
+      description: Allows all notifications except those deemed 'sensitive' by Android to be displayed on the Lock Screen.
     - code: 3
       devicetype: A,B
       name: Hide notifications

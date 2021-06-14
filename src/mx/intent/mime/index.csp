@@ -2,7 +2,7 @@
 csp: 
 title: MIME Type
 type: parm
-order: 25
+order: 75
 mx: "4.1"
 apilevel: "1"
 devicetype: A,B

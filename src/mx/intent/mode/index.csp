@@ -2,7 +2,7 @@
 csp: intent
 title: Mode
 type: parm
-order: 6
+order: 80
 mx: "10.2"
 devicetype: A
 parm:

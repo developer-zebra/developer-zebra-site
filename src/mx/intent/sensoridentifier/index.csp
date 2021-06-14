@@ -2,7 +2,7 @@
 csp: intent
 title: Sensor Identifier
 type: parm
-order: 1
+order: 85
 mx: "10.5"
 info: Supported only on TC21 and TC26 devices.
 parm:

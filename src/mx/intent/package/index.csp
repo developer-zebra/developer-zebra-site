@@ -2,9 +2,9 @@
 csp: intent
 title: Package
 type: parm
+order: 30
 mx: "4.1"
 apilevel: "1"
-order: 11
 devicetype: A,B
 parm:
   presentif: The Mode is NOT "Cancel"

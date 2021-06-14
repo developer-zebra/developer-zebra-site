@@ -2,7 +2,7 @@
 csp: intent
 title: URI
 type: parm
-order: 15
+order: 35
 mx: "4.1"
 apilevel: "1"
 devicetype: A,B

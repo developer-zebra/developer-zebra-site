@@ -2,7 +2,7 @@
 csp: intent
 title: JSON Data Selector
 type: parm
-order: 21
+order: 45
 mx: "8.3"
 osx: "6.5"
 apilevel: "23"

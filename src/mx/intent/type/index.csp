@@ -2,9 +2,9 @@
 csp: intent
 title: Type
 type: parm
+order: 15
 mx: "4.1"
 apilevel: "1"
-order: 3
 devicetype: A,B
 parm:
   presentif: The Mode is NOT "Cancel" and Action is NOT "Enroll Device Owner"

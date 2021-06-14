@@ -2,10 +2,10 @@
 csp: intent
 title: Device Owner JSON File
 type: parm
+order: 50
 mx: "8.0"
 osx: "6.5"
 apilevel: "23"
-order: 22
 devicetype: A,B
 parm:
   presentif: The Mode is NOT "Cancel" and Action is "Enroll Device Owner" and DO JsonData is "JsonFile"

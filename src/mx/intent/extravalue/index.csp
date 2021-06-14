@@ -2,7 +2,7 @@
 csp: intent
 title: Extra Value
 type: parm
-order: 50
+order: 70
 mx: "4.1"
 apilevel: "1"
 devicetype: A,B

@@ -2,7 +2,7 @@
 csp: intent
 title: Keep Device Awake (checkbox)
 type: parm
-order: 9
+order: 100
 mx: "10.2"
 devicetype: A
 parm:

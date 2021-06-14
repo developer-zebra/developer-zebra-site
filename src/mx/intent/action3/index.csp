@@ -6,6 +6,7 @@ order: 95
 mx: "10.2"
 devicetype: A
 parm:
+  presentif: The Mode is "Schedule" or "Sensor Send" 
   pivotal: Yes
   name: Action3
   type: list

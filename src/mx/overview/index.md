@@ -17,13 +17,23 @@ The following section lists the major features and enhancements added to the MX 
 
 **MX 10.5 adds the following major features and enhancements**: 
 
+
+Beacon
+
+DevAdmin
+
 * **[Display Manager](/mx/displaymgr) adds ability to**: 
  * Set a [Secondary Display Mode](/mx/displaymgr/#secondary-display-mode) for an external monitor
  * Force [Resizable Windows](/mx/displaymgr/#resizable-windows-onoff) for an app, overriding the manifest
  * Force [Resizable Activities](/mx/displaymgr/#activity-resizability) for an activity, overriding the manifest
+
+Intent
+
 * **[UI Manager](/mx/uimgr) adds ability to**: 
  * Set [External Keyboard Layout](/mx/uimgr/#external-keyboard-action) (language) preference
  * [Add or replace a Keyboard Layout](/mx/uimgr/#external-keyboard-name) (language) for an external keyboard
+
+WorryFree
 
 ### Added in MX 10.4
 

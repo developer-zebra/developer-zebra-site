@@ -40,8 +40,8 @@ _**Note**: In this document, the terms **emission** and **transmission** are use
 ### Battery-based BLE Behavior
 **The secondary BLE radio of some devices is located in the battery. Such devices are subject to the following behaviors**: 
 
-* Beacon Manager configuration settings are stored in the device ***and* in device batteries equipped with a secondary BLE radio**. 
-* **Settings are stored in the battery** and applied only **when the device is powered on**. 
+* **Beacon Manager configuration settings are stored in the device *and* its BLE-equipped battery**, if present. 
+* **Settings** stored in the device **are replicated in the battery only when the device is powered on**. 
 * When BLE beaconing is enabled and the device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.
 * If beaconing is enabled and the battery is removed from a device, beaconing stops. 
 * **When a BLE-configured and enabled battery is placed into a device, beaconing resumes** within about 30 seconds **according to the following**: 

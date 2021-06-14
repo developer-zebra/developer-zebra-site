@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: sdcardmgr
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 ---
 
 

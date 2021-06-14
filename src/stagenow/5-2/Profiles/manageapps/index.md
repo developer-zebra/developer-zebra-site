@@ -2,7 +2,7 @@
 title: Manage Applications
 layout: guide.html
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 ---
 Use this Wizard to manage applications on a device. This downloads, installs, uninstalls and launches any applications. This Wizard  also allows you to connect to a staging and/or production network, install licenses, configure simulScan, download data files, and reboot the device. 
 

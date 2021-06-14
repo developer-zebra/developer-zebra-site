@@ -2,7 +2,7 @@
 title: Getting Started
 layout: guide.html
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 ---
 
 ## Introduction

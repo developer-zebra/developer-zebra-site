@@ -127,5 +127,5 @@ automenu:
         - title: UI Manager
           url: /stagenow/5-1/csp/ui
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 ---

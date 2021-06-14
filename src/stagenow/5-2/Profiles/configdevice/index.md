@@ -2,7 +2,7 @@
 title: Configure a Device
 layout: guide.html
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 ---
 Use this Wizard to configure the most common device settings such as locale, security options, applications, MDM enrollment, and production network settings.  This Wizard also allows you to connect to a staging and/or production network, reboot the device, or update the OS. 
 

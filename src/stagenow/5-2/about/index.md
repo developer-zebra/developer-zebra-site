@@ -2,7 +2,7 @@
 title: About StageNow
 layout: guide.html
 product: StageNow
-productversion: '5.1'
+productversion: '5.2'
 languages:
   - lang: 'ch'
 	label: 'Chinese'

@@ -1,11 +1,29 @@
 ---
-title: DataWedge Remote Administration
+title: Remote Configuration & Mass Deployment
 layout: guide.html
 product: DataWedge
 productversion: "11.0"
 ---
 
 ## Overview
+
+DataWedge configurations can be remotely configured and deployed through 3 distinct methods:
+
+1. **[DataWedge Files](#datawedgefiles) -** After DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using an EMM (Enterprise Mobility Management) system.
+2. **[DataWedge Manager CSP](#datawedgemanagercsp) -** Securely mass deploy DataWedge configuration with the underlying MX framework.
+3. **[Managed Configurations](#managedconfigurations) -** Use Android's Managed Configurations framework to configure and deploy DataWedge through an EMM.
+
+Each method is described in detail in the sections that follow.
+
+---
+
+## DataWedge Files
+
+Instructions to deploy DataWedge profile and config files are located in the [Mass Deployment](https://techdocs.zebra.com/datawedge/8-2/guide/settings/#massdeployment) section.
+
+---
+
+## DataWedge Manager CSP
 
 **DataWedge Manager** CSP (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [StageNow](/stagenow) to create profiles specific to configuring DataWedge. Features that can be configured include:
 
@@ -15,7 +33,7 @@ productversion: "11.0"
 - Enable/Disable auto import of configuration file
 - Import configuration file from specified path
 - Import NextGen SimulScan Templates
-  <br>
+<br>
 
 See [DataWedge Manager](/mx/datawedgemgr/) for more information.
 <br>
@@ -30,30 +48,30 @@ See [DataWedge Manager](/mx/datawedgemgr/) for more information.
 
 ---
 
-## Control Access to Intent APIs
+### Control Access to Intent APIs
 
 Controls whether DataWedge APIs are accessible from all apps or only whitelisted apps. Affected DataWedge APIs are categorized to four groups: Configuration, Notification, Query, and Runtime. Refer to the [programmers guide](../programmers-guides/secure-intent-apis) for more details.<br>
 **Note:** Supported only on devices with DataWedge 8.1 or later.<br>
 
-### Configuration APIs
+#### Configuration APIs
 
 Intent APIs related to retrieving, setting or removing DataWedge configuration (e.g. SetConfig, GetConfig, etc.). <br>
 **Parm Name:** Configuration APIs<br>
 **Supported values:** 1 – Uncontrolled, 2 – Controlled, 86 – Unchanged.
 
-### Notification APIs
+#### Notification APIs
 
 Intent APIs related to retrieving status for the DataWedge scanner, profile or configuration (e.g. Scanner Status, Configuration Change, etc.).<br>
 **Parm Name:** Notification APIs<br>
 **Supported values:** 1 – Uncontrolled, 2 – Controlled, 86 – Unchanged.
 
-### Query APIs
+#### Query APIs
 
 Intent APIs related to retrieving DataWedge information or enumerating scanners (e.g. Enumerate Scanners, Get Active Profile, etc.). <br>
 **Parm Name:** Query APIs<br>
 **Supported values:** 1 – Uncontrolled, 2 – Controlled, 86 – Unchanged.
 
-### Runtime APIs
+#### Runtime APIs
 
 Intent APIs related to DataWedge runtime configuration changes (e.g. Switch To Profile, Switch Scanner Params, etc.). <br>
 **Parm Name:** Runtime APIs<br>
@@ -61,25 +79,25 @@ Intent APIs related to DataWedge runtime configuration changes (e.g. Switch To P
 
 ---
 
-## Enable/Disable DataWedge UI
+### Enable/Disable DataWedge UI
 
 Controls whether the DataWedge user interface is accessible to the device user, determining the ability to change DataWedge configuration settings on the device. If disabled, DWDemo profile settings can still be modified for demonstration purposes.
 
 ---
 
-## Enable/Disable configuration file import via intent API
+### Enable/Disable configuration file import via intent API
 
 Controls whether configuration files can be imported by apps via DataWedge [Import Config](../api/importconfig) intent API.
 
 ---
 
-## Enable/Disable auto import of configuration file
+### Enable/Disable auto import of configuration file
 
 Controls whether DataWedge configuration files are [auto-imported](../settings#autoimport) when located in the `/enterprise/device/settings/datawedge/autoimport` folder on the device.
 
 ---
 
-## Import configuration file from specified path
+### Import configuration file from specified path
 
 Specifies the full path and file name to import the configuration file (`datawedge.db`) or profile (by default, `dwprofile_<profilename>.db`). Can be used instead of the default Auto-Import (`/enterprise/device/settings/datawedge/autoimport`) folder. The file name must adhere to the existing DataWedge file naming convention:
 
@@ -90,7 +108,7 @@ With the introduction of scoped storage restriction on Android 11 devices, EMM (
 
 ---
 
-## Import NextGen SimulScan templates
+### Import NextGen SimulScan templates
 
 Import NextGen SimulScan Templates for document capture by using [StageNow](/stagenow). After importing the template, it populates [Document Selection](../input/barcode/#documentselectiondocumentcapture) under NextGen SimulScan Configuration. Contact your local Zebra Sales Representative for assistance in creating the template. Refer to [NextGen SimulScan Template](/mx/datawedgemgr/#simulscan-template-action) in DataWedge Manager CSP for more information.
 
@@ -119,9 +137,218 @@ Video demonstrating how to deploy and import a Document Capture/NextGen SimulSca
 
 ---
 
+## Managed Configurations
+
+DataWedge can be remotely configured through Managed Configurations, specifications developed by Google and the Android community to configure installed applications and deploy these configurations through an EMM (Enterprise Mobility Management). A schema defines the DataWedge features available for consumption by the EMM, providing the information necessary to present to the EMM's corresponding data-driven UI. This mechanism integrates DataWedge remote configuration within the EMM for seamless operation and allows Zebra to release a new schema as soon as new features are available for use. DataWedge and the Zebra schema are available from the Google Play Store and must be used together to leverage DataWedge with its managed configurations to perform data capture.
+
+<!-- 
+DataWedge Managed Configurations allow administrators to remotely manage Zebra Android mobile devices by configuring settings, adding restrictions and enforcing policies, such as:
+
+- Mass deployment of the same DataWedge configurations across all devices in an organization
+- Prevent user access of DataWedge UI to avoid unexpected DataWedge configuration changes
+- Restrict application use of the following types of [DataWedge intent APIs](../api):
+  - Configuration
+  - Notification
+  - Query
+  - Runtime
+-->
+DataWedge Managed Configuration is based on Android's Managed Configuration architecture introduced in Android 11. Prior to Android 11, these configurations are supported in [DataWedge Manager CSP](/mx/datawedgemgr). Moving forward, Zebra recommends administrators to transition to Managed Configuration, which will replace DataWedge Manager CSP.
+
+---
+
+### Requirements
+
+Requirements for use of Managed Configurations with DataWedge:
+* Zebra device with Android 11 or higher
+* DataWedge schema downloaded from the Google Play Store
+* An EMM for device deployment
+
+---
+
+### Use Managed Configurations
+
+This section provides general instructions to use Managed Configurations through an EMM. The UI layout may vary depending on the EMM. In the EMM, after adding DataWedge to the device app catalog for app installation, the corresponding schema is automatically retrieved and presented to the EMM managed configuration UI based on the data defined. Through this UI, the administrator can select the desired Managed Configurations. 
+
+General instructions to use Managed Configurations:
+1. **Add DataWedge to the application catalog.** In the EMM, browse or search for DataWedge 11.0 or higher from the Google Play Store and add it to the app catalog. This automatically retrieves the corresponding schema for the app and makes the app available for deployment to the device(s) through the EMM.
+2. **Configure app restrictions using Managed Configurations** as described in the schema. See [App Restrictions](#apprestrictions) section that follows, which describes the available options.
+3. **Push a policy that deploys the created Managed Configurations to the device(s).**
+
+---
+
+### App Restrictions
+
+DataWedge restrictions are divided into 3 separate categories listed below with the corresponding bundle names:
+
+1. **Secure DataWedge Configuration -** Controls access to DataWedge UI to prevent unexpected configuration changes. Use [Configuration Security](#configurationsecurity) bundle.
+2. **Control access to DataWedge intent APIs -** Restricts application use of different types of DataWedge intent APIs. Use [Intent API Access Control](#intentapiaccesscontrol) bundle.
+3. **Secure mass deployment -** Securely mass deploy DataWedge configuration files across all devices in an organization. Use [Configuration Settings](#configurationsettings) bundle.
+
+<!--
+DataWedge restrictions are categorized into 3 different configuration bundles:
+
+1. **Configuration Security -** This bundle contains restrictions which control the security of DataWedge configurations.
+2. **Intent API Access Control -** This bundle contains restrictions which control access to DataWedge intent APIs.
+3. **Configuration Settings -** This bundle contains configuration options related to mass deployment of configuration files and NextGen SimulScan template.
+-->
+### App Restriction Options
+
+The following sections provide the options available for each of the configuration bundles.
+
+#### Configuration Security
+
+Configuration Security controls the ability to lock the DataWedge configuration on the device once the configuration is deployed preventing undesired configuration changes by device users.
+
+<table class="facelift" align="center" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Restriction Name</th>
+    <th>Value</th>
+    <th>Display Name</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Automatic database import</td>
+    <td style="text-align:center">0</td>
+	<td>Off</td>
+    <td>Turn off auto import feature. This helps prevent undesired DataWedge configuration updates after the final configuration is deployed. </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">1</td>
+    <td>On</td>
+    <td>Turn on auto import feature. This automatically imports the DataWedge configuration file when present. </td>
+  </tr>
+
+<tr>
+    <td rowspan="2">Manual configuration</td>
+    <td style="text-align:center">1</td>
+	<td>Allow</td>
+    <td>Allow DataWedge UI to be launched and manually configured.</td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Disallow</td>
+    <td>Disallow DataWedge UI from being launched, preventing users from manually changing the DataWedge configuration. </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Programmatic import </td>
+    <td style="text-align:center">1</td>
+	<td>Allow</td>
+    <td>Allow applications to import a configuration database file (profile or full configuration) by calling the DataWedge intent API.</td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Disallow</td>
+    <td>Disallow applications to import a configuration database file (profile or full configuration) by calling the DataWedge intent API. </td>
+  </tr>
+  
+</table>
+
+#### Intent API Access Control
+
+Intent API Access Control allows access to DataWedge intent APIs only to approved applications, preventing undesired retrieval of configuration or changes in configuration.
+
+<table class="facelift" align="center" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Restriction Name</th>
+    <th>Value</th>
+    <th>Display Name</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Configuration APIs</td>
+    <td style="text-align:center">1</td>
+	<td>Uncontrolled (default) - Allow use by all applications</td>
+    <td>Allow any application to access DataWedge Configuration intent API.  </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Controlled - Allow use only by AllowListed applications</td>
+    <td>Allow only applications listed in the AllowList to access DataWedge Configuration intent API. </td>
+  </tr>
+
+<tr>
+    <td rowspan="2">Notification APIs</td>
+    <td style="text-align:center">1</td>
+	<td>Uncontrolled (default) - Allow use by all applications</td>
+    <td>Allow any application to access DataWedge Notification intent APIs. </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Controlled - Allow use only by AllowListed applications</td>
+    <td>Allow only whitelisted applications to access DataWedge Notification intent APIs. </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Query APIs </td>
+    <td style="text-align:center">1</td>
+	<td>Uncontrolled (default) - Allow use by all applications</td>
+    <td>Allow any application to access DataWedge Query intent APIs. </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Controlled - Allow use only by AllowListed applications</td>
+    <td>Allow only whitelisted applications to access DataWedge Query intent APIs. </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Runtime APIs </td>
+    <td style="text-align:center">1</td>
+	<td>Uncontrolled (default) - Allow use by all applications</td>
+    <td>Allow any application to access DataWedge Runtime Intent APIs.  </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align:center">2</td>
+    <td>Controlled - Allow use only by AllowListed applications</td>
+    <td>Allow only whitelisted applications to access DataWedge Runtime Intent APIs. </td>
+  </tr>
+  
+</table>
+
+See [DataWedge APIs](../api) for more information.
+
+#### Configuration Settings
+
+Configuration Settings sets the file path for files, such as configuration or template file, for mass deployment through the EMM.
+
+<table class="facelift" align="center" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Restriction Name</th>
+    <th>Value</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>Configuration File</td>
+    <td>File path of the configuration file</td>
+	<td>String from 0–255 characters containing file path and name of configuration file on the device.<br><br>DataWedge supports importing config files (datawedge.db) and profiles (dwprofile_profilename.db) to devices delivered through an EMM. The configuration file must be copied to the DataWedge sandbox folder or download folder on the device before sending the managed configuration. </td>
+  </tr>
+  
+  <tr>
+    <td>NG SimulScan Template file</td>
+    <td>File path of the template file</td>
+    <td>String from 0–255 characters containing file path and file name of template file on the device.<br><br>Template files (.xml file) can be copied to a folder through an EMM before sending the managed configuration. </td>
+  </tr>
+  
+</table>
+
+---
+
 **Related Guides**:
 
 - **[DataWedge Manager CSP](/mx/datawedgemgr) -** describes DataWedge Manager CSP usage
 - **[MX Management System](/mx) -** explains MXMS framework
 - **[Profile Architecture Overview](../overview) -** explains how DataWedge uses Profiles and Plug-ins
 - **[Control Access to DataWedge APIs](../programmers-guides/secure-intent-apis) -** explains how to control access to DataWedge intent APIs to prevent unauthorized use
+- **[DataWedge profile](../createprofile) -** discusses DataWedge profile architecture
+    - [Profile Overview](../overview)
+    - [Profiles/Plug-Ins listing](../profiles)

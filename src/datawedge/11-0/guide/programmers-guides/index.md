@@ -25,6 +25,11 @@ content-items:
     url: /datawedge/11-0/guide/programmers-guides/articles
   - type: section
     level: 4
+    title: Remote Configuration and Mass Deployment
+    text: Learn how to remotely configure DataWedge and mass deploy DataWedge configurations.
+    url: /datawedge/11-0/guide/admin
+  - type: section
+    level: 4
     title: Document Capture Programmer's Guide
     text: This guide provides information on how to use Document Capture to retrieve and process data from a scanned form based on a template.
     url: /datawedge/11-0/guide/programmers-guides/ng-simulscan
@@ -38,16 +43,6 @@ content-items:
     title: Control Access to DataWedge Intent APIs
     text: Learn how to control access to DataWedge Intent APIs to prevent unauthorized use of the APIs.
     url: /datawedge/11-0/guide/programmers-guides/secure-intent-apis
-  - type: section
-    level: 4
-    title: Managed Configurations for Remote Configuration
-    text: Learn how to remotely configure DataWedge with Managed Configurations through an EMM.
-    url: /datawedge/11-0/guide/managed-config
-  - type: section
-    level: 4
-    title: Remote Administration with DataWedge Manager CSP
-    text: Learn how to mass deploy DataWedge configurations using DataWedge Manager CSP.
-    url: /datawedge/11-0/guide/admin
   - type: section
     level: 4
     title: Licensing

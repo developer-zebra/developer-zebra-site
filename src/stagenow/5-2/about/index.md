@@ -52,7 +52,7 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v5.1
+## What's New in v5.2
 
 **Supports MX 10.4, which adds the following major features and enhancements**: 
 

@@ -382,8 +382,8 @@ StageNow 5.0.2 added the option of selecting the following network options for c
 * **Enhancements to [GMS Manager](../csp/gmsmgr)** provide two Google Mobile Services configuration modes:  
  * **Full mode** allows all GMS features and apps to be enabled as desired
  * **Restricted mode** allows operation of a fixed set of GMS apps, blocking all others
-* **A new [WorryFreeWiFi](../csp/worryfreewifi)** manager simplifies mobile device management with traffic analysis and reporting for customer/partner applications.
-* **A new [NFC Manager](../csp/nfc)** controls the behavior and options for NFC communications on the device. 
+* **A new [WorryFreeWiFi](../csp/worryfreewifimgr)** manager simplifies mobile device management with traffic analysis and reporting for customer/partner applications.
+* **A new [NFC Manager](../csp/nfcmgr)** controls the behavior and options for NFC communications on the device. 
 * **Enhanced [UI Manager](../csp/ui)** provides ability enable and disable usage of the on-screen power button on the PS20 device.
 * **Enhanced [Access Manager](../csp/access)** can emulate device user interactions, allowing key events and touch events to be "injected" into the system by an otherwise unprivileged application. Other enhancements include service actions that can: 
  * Allow or prevent bindings to a service

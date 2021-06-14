@@ -38,7 +38,7 @@ If an Intent does not enter a Package Name and Class Name, it is considered an I
 
 ### Main Functionality
 
-* Select how the Intent will be sent:
+* Select how an Intent is sent:
 	* StartActivity
 	* BroadcastIntent
 	* StartService
@@ -58,3 +58,7 @@ If an Intent does not enter a Package Name and Class Name, it is considered an I
 	* Single Byte Integer
 * Set Intent to listen and launch on a key-press 
 * Identify a key to launch an Intent
+* Select a device sensor to trigger or cancel an intent
+* Enter the name of an extra to send in an intent to get sensor status
+
+-----

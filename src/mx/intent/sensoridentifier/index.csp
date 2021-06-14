@@ -1,0 +1,20 @@
+---
+csp: intent
+title: Sensor Identifier
+type: parm
+order: 1
+mx: "10.5"
+info: Supported only on TC21 and TC26 devices.
+parm:
+  presentif: The Mode is "Sensor Send" or "Sensor Cancel"
+  pivotal: Yes
+  name: SensorIdentifier
+  type: list
+  list:
+    - code: 1
+      mx: "10.5"
+      name: Free Fall Detection
+      description: Sends an Intent when device free-fall is detected.
+---
+
+Used to select the type of sensor on the device that triggers an intent or cancels a previously created intent. 

@@ -25,6 +25,16 @@ parm:
       devicetype: A
       name: Cancel
       description: Cancels the intent and stops watching for the assigned key-press.
+    - code: 4
+      mx: "10.5"
+      devicetype: A
+      name: sensorSend
+      description: Schedules the sending of an intent whenever the selected sensor is triggered.
+    - code: 5
+      mx: "10.5"
+      devicetype: A
+      name: sensorCancel
+      description: Cancels the sending of an intent for the selected sensor trigger.
 ---
 
-Used to control whether the Intent is sent immediately upon execution of a profile, delayed until an assigned key is pressed, or canceled. 
+Used to control whether the Intent is sent immediately upon execution of a profile, delayed until an assigned key or sensor is pressed or triggered, or canceled. 

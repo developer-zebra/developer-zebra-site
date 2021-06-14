@@ -37,15 +37,6 @@ Used to configure reporting options, which are optionally generated after import
   - true
   - false (default)
 
-### Return Values
-
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ### Result Codes
 
 DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.

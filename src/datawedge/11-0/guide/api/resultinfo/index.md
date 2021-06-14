@@ -72,15 +72,6 @@ Result codes are accessed using the `RESULT_INFO` intent mechanism, which return
 - **SCANNER_ENABLE_FAILED -** An exception occurred while enabling the scanner
 - **UNKNOWN -** An unidentified error occurred
 
-### Return Values
-
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ## Example Code
 
     //SENDING THE INTENT

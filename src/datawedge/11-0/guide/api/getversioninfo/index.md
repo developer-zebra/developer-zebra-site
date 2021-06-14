@@ -45,13 +45,6 @@ Returns a bundle with the version numbers of DataWedge, SimulScan, the Scanner F
 - DECODER_LIBRARY, IMGKIT_XXXXX
 - SIMULSCAN, 1.6.13
 
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ## Example Code
 
     :::java

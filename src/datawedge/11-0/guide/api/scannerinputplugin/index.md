@@ -53,15 +53,6 @@ DataWedge returns the following error codes if the app includes the intent extra
 
 Also see the [Result Codes guide](../resultinfo) for more information.
 
-### Return Values
-
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ## Example Code
 
 Send suspend and resume intents:

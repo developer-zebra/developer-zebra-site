@@ -51,13 +51,6 @@ The enumerated list of scanners is returned via the broadcast intent `com.symbol
 - **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
 - **USB_SSI_DS3608** - DS3608 pluggable USB scanner
 
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ## Example Code
 
 ### Enumerate scanners

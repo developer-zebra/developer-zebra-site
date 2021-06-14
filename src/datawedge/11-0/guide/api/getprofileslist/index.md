@@ -31,13 +31,6 @@ Returns a String array of Datawedge Profiles
 
 **EXTRA TYPE** [String]: [ ]
 
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
-
-    :::term
-    $ adb logcat -s DWAPI
-
-Error messages are logged for invalid actions and parameters.
-
 ## Example Code
 
     //SENDING THE INTENT

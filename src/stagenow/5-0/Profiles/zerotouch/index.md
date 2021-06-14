@@ -55,5 +55,6 @@ Use this Wizard to configure the network settings of a "factory fresh" or factor
 8. **Select Export method** as needed.  
 
 #### The Profile is now ready for deployment. 
+ 
 
-> `IMPORTANT NOTE:` If a Zero Touch Profile is saved and imported onto the same or a different host workstation, it no longer functions for Zero Touch enrollment.
+> `IMPORTANT NOTES:`<br> • **The Zero Touch Wizard does NOT prevent the Android Setup Wizard from running** on a new device when first booted, or when rebooting immediately after a Factory or Enterprise reset.<br>**How to manually [bypass the Android Setup Wizard](../wipedevice/#setupwizardmanualbypass)**. <br> • **A Zero Touch Profile no longer functions for Zero Touch enrollment** if saved and imported onto the same or a different host workstation. 

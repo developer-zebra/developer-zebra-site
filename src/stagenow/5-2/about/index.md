@@ -11,9 +11,9 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 5.1 User Guide, Revision A; <!-- StageNow MN-003401; --> Jan., 2021
+StageNow 5.2 User Guide, Revision A; <!-- StageNow MN-003401; --> Jan., 2021
 
-#### Covers StageNow 5.1
+#### Covers StageNow 5.2
 
 ## Overview
 
@@ -54,6 +54,28 @@ The following software must be installed on the staging workstation prior to usi
 
 ## What's New in v5.1
 
+**Supports MX 10.4, which adds the following major features and enhancements**: 
+
+* **[Access Manager](../csp/access) adds ability to**: 
+ * Grant installed apps [permission to access](../csp/access/#permission-access-permission-name) USB and/or SD card storage
+ * "Pre-grant" or "pre-deny" USB/SD card storage permission to apps yet to be installed
+* **[Battery Manager](../csp/battery) adds ability to**: 
+ * Set [Charging Mode](../csp/battery/#charging-mode) to optimize for device runtime or overall battery life (limited device support)
+* **[Key Mapping Manager](../csp/keymap) adds**: 
+ * [Key Identifiers](../csp/keymap/#key-identifier) for "CL" and "FN" and "NAV_OK" keys found on some devices
+* **[Touch Manager](../csp/touch) adds**: 
+ * Support for EC50, EC55, MC2200, MC2700, MC33ax, MC3300x, TC26, TC52ax, TC57x
+* **[USB Manager](../csp/usb) adds**: 
+ * Control of [Default Client Mode](../csp/usb/#usb-client-mode-default) of the USB port when connecting with a host PC
+* **[Wireless Manager](../csp/wireless) adds**: 
+ * Control of the [state of Bluetooth scanning](../csp/wireless/#bluetooth-scanning-onoff), [Wi-Fi scanning](../csp/wireless/#wi-fi-scanning-onoff) and the [Location Service](../csp/wireless/#location-service-onoff)
+
+-----
+
+## Version History
+
+### Added in v5.1
+
 **Supports MX 10.3, which adds the following major features and enhancements**: 
 
 * **New [App Manager](../csp/app) feature**: 
@@ -66,10 +88,6 @@ The following software must be installed on the staging workstation prior to usi
  * Enable/Disable logging of NFC events on device
 * **New [WorryFree Wi-Fi Manager](../csp/worryfreewifimgr) feature**: 
  * Minimum password and temporary password length increased to eight (8) characters
-
------
-
-## Version History
 
 ### Added in v5.0.2
 

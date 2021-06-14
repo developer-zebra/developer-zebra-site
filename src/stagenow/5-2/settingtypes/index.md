@@ -7,125 +7,125 @@ automenu:
     - title: Application Management
       items:
         - title: App Manager
-          url: /stagenow/5-1/csp/app
+          url: /stagenow/5-2/csp/app
         - title: AppGallery Manager
-          url: /stagenow/5-1/csp/appgallery
+          url: /stagenow/5-2/csp/appgallery
         - title: Browser Manager
-          url: /stagenow/5-1/csp/browser
+          url: /stagenow/5-2/csp/browser
         - title: Bug Report Manager
-          url: /stagenow/5-1/csp/bugreportmgr
+          url: /stagenow/5-2/csp/bugreportmgr
         - title: DataWedge Manager
-          url: /stagenow/5-1/csp/datawedgemgr
+          url: /stagenow/5-2/csp/datawedgemgr
         - title: File Manager
-          url: /stagenow/5-1/csp/file
+          url: /stagenow/5-2/csp/file
         - title: Intent
-          url: /stagenow/5-1/csp/intent
+          url: /stagenow/5-2/csp/intent
         - title: License Manager
-          url: /stagenow/5-1/csp/license
+          url: /stagenow/5-2/csp/license
         - title: Persist Manager
-          url: /stagenow/5-1/csp/persistence
+          url: /stagenow/5-2/csp/persistence
         - title: Scan Mode Manager
-          url: /stagenow/5-1/csp/scanmode
+          url: /stagenow/5-2/csp/scanmode
         - title: Status Manager
-          url: /stagenow/5-1/csp/status
+          url: /stagenow/5-2/csp/status
         - title: XML Manager
-          url: /stagenow/5-1/csp/xml
+          url: /stagenow/5-2/csp/xml
     - title: Device Configuration
       items:
         - title: Analytics Manager
-          url: /stagenow/5-1/csp/analyticsmgr
+          url: /stagenow/5-2/csp/analyticsmgr
         - title: Audio Manager
-          url: /stagenow/5-1/csp/audiomgr
+          url: /stagenow/5-2/csp/audiomgr
         - title: AudioVolUI Manager
-          url: /stagenow/5-1/csp/audio
+          url: /stagenow/5-2/csp/audio
         - title: Auto Trigger Manager
-          url: /stagenow/5-1/csp/autotriggermgr
+          url: /stagenow/5-2/csp/autotriggermgr
         - title: Batch Manager
-          url: /stagenow/5-1/csp/batch
+          url: /stagenow/5-2/csp/batch
         - title: Battery Manager
-          url: /stagenow/5-1/csp/battery
+          url: /stagenow/5-2/csp/battery
         - title: Beacon Manager
-          url: /stagenow/5-1/csp/beaconmgr
+          url: /stagenow/5-2/csp/beaconmgr
         - title: Clock
-          url: /stagenow/5-1/csp/clock
+          url: /stagenow/5-2/csp/clock
         - title: Component Manager
-          url: /stagenow/5-1/csp/component
+          url: /stagenow/5-2/csp/component
         - title: Condition Manager
-          url: /stagenow/5-1/csp/condition
+          url: /stagenow/5-2/csp/condition
         - title: Display Manager
-          url: /stagenow/5-1/csp/display
+          url: /stagenow/5-2/csp/display
         - title: FOTA Manager
-          url: /stagenow/5-1/csp/fotamgr
+          url: /stagenow/5-2/csp/fotamgr
         - title: GMS Manager
-          url: /stagenow/5-1/csp/gmsmgr
+          url: /stagenow/5-2/csp/gmsmgr
         - title: NFC Manager
-          url: /stagenow/5-1/csp/nfcmgr
+          url: /stagenow/5-2/csp/nfcmgr
         - title: Power Manager
-          url: /stagenow/5-1/csp/power
+          url: /stagenow/5-2/csp/power
         - title: Touch Manager
-          url: /stagenow/5-1/csp/touch
+          url: /stagenow/5-2/csp/touch
         - title: Remote Scanner Manager
-          url: /stagenow/5-1/csp/rsm
+          url: /stagenow/5-2/csp/rsm
     - title: Networking and Wireless
       items:
         - title: Bluetooth Manager
-          url: /stagenow/5-1/csp/bluetoothmgr
+          url: /stagenow/5-2/csp/bluetoothmgr
         - title: Cellular Manager
-          url: /stagenow/5-1/csp/cellular
+          url: /stagenow/5-2/csp/cellular
         - title: DHCP Option Manager
-          url: /stagenow/5-1/csp/dhcp
+          url: /stagenow/5-2/csp/dhcp
         - title: Ethernet Manager
-          url: /stagenow/5-1/csp/ethernetmgr
+          url: /stagenow/5-2/csp/ethernetmgr
         - title: GPRS Manager
-          url: /stagenow/5-1/csp/gprs
+          url: /stagenow/5-2/csp/gprs
         - title: Hosts Manager
-          url: /stagenow/5-1/csp/hostsmgr
+          url: /stagenow/5-2/csp/hostsmgr
         - title: Network.WLAN.Android
-          url: /stagenow/5-1/csp/networkwlanandroid
+          url: /stagenow/5-2/csp/networkwlanandroid
         - title: Network.WLAN.Android.FusionOptions
-          url: /stagenow/5-1/csp/networkwlanandroidfusion
+          url: /stagenow/5-2/csp/networkwlanandroidfusion
         - title: Network.WWAN.GPRS
-          url: /stagenow/5-1/csp/networkwwangprs
+          url: /stagenow/5-2/csp/networkwwangprs
         - title: Wi-Fi
-          url: /stagenow/5-1/csp/wifi
+          url: /stagenow/5-2/csp/wifi
         - title: Wireless Manager
-          url: /stagenow/5-1/csp/wireless
+          url: /stagenow/5-2/csp/wireless
         - title: Worry Free Wi-Fi
-          url: /stagenow/5-1/csp/worryfreewifimgr
+          url: /stagenow/5-2/csp/worryfreewifimgr
     - title: Security
       items:
         - title: Access Manager
-          url: /stagenow/5-1/csp/access
+          url: /stagenow/5-2/csp/access
         - title: Camera Manager
-          url: /stagenow/5-1/csp/camera
+          url: /stagenow/5-2/csp/camera
         - title: Certificate Manager
-          url: /stagenow/5-1/csp/cert
+          url: /stagenow/5-2/csp/cert
         - title: DevAdmin
-          url: /stagenow/5-1/csp/devadmin
+          url: /stagenow/5-2/csp/devadmin
         - title: Encrypt Manager
-          url: /stagenow/5-1/csp/encrypt
+          url: /stagenow/5-2/csp/encrypt
         - title: SD Card Manager
-          url: /stagenow/5-1/csp/sdcard
+          url: /stagenow/5-2/csp/sdcard
         - title: Threat Manager
-          url: /stagenow/5-1/csp/threat
+          url: /stagenow/5-2/csp/threat
         - title: USB Manager
-          url: /stagenow/5-1/csp/usb
+          url: /stagenow/5-2/csp/usb
     - title: UI Management
       items:
         - title: DeviceCentral Manager
-          url: /stagenow/5-1/csp/devicecentralmgr
+          url: /stagenow/5-2/csp/devicecentralmgr
         - title: Enterprise Keyboard
-          url: /stagenow/5-1/csp/enterprisekeyboard
+          url: /stagenow/5-2/csp/enterprisekeyboard
         - title: KeyMapping Manager
-          url: /stagenow/5-1/csp/keymap
+          url: /stagenow/5-2/csp/keymap
         - title: Personal Dictionary
-          url: /stagenow/5-1/csp/personaldictionary
+          url: /stagenow/5-2/csp/personaldictionary
         - title: PowerKey Manager
-          url: /stagenow/5-1/csp/powerkey
+          url: /stagenow/5-2/csp/powerkey
         - title: Settings Manager
-          url: /stagenow/5-1/csp/settingsmgr
+          url: /stagenow/5-2/csp/settingsmgr
         - title: UI Manager
-          url: /stagenow/5-1/csp/ui
+          url: /stagenow/5-2/csp/ui
 product: StageNow
 productversion: '5.2'
 ---

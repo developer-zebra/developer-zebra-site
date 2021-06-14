@@ -69,7 +69,7 @@ The steps for creating an Alert Button are listed below, and **<u>must be execut
 19. **In the Intent "Android Action Name"** section, **enter the desired action** for the use case.<br>
 For example, `android.intent.action.CALL` summons the Android native dialer.
 20. **Enter data for any additional required fields** for the desired use case.<br>
-For example, entering "`tel:+18885551212`" in the Intent "URI" field places a call to 1-888-555-1212.
+For example, entering "`tel:+18885551212`" in the Intent "URI" field places a call to 1-888-555-2212.
 21. When finished entering data, **click Continue**.
 22. **Generate a barcode** (or `.bin` file for deploying via NFC tag or SD card).
 23. **Scan the barcode** (or deploy the `.bin` file) to configure the target device.

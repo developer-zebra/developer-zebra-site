@@ -17,46 +17,46 @@ menu:
       label: JP - 日本語
   versions:
     - versionto: 2-2
-      versionfrom: 5-1
+      versionfrom: 5-2
       default: /stagenow/2-2/about
       label: '2.2'
     - versionto: 2-3
-      versionfrom: 5-1
+      versionfrom: 5-2
       default: /stagenow/2-3/about
       label: '2.3'
     - versionto: 2-4
-      versionfrom: 5-1
+      versionfrom: 5-2
       default: /stagenow/2-4/about
       label: '2.4'
     - versionto: 2-5
-      versionfrom: 5-1
+      versionfrom: 5-2
       default: /stagenow/2-5/about
       label: '2.5'
   items:
     - title: About
-      url: /stagenow/5-1/about
+      url: /stagenow/5-2/about
     - title: Start-up
-      url: /stagenow/5-1/gettingstarted
+      url: /stagenow/5-2/gettingstarted
     - title: Profiles
-      url: /stagenow/5-1/stagingprofiles
+      url: /stagenow/5-2/stagingprofiles
     - title: Wizards
-      url: /stagenow/5-1/ProfileWizards
+      url: /stagenow/5-2/ProfileWizards
     - title: Settings
-      url: /stagenow/5-1/settingconfig
+      url: /stagenow/5-2/settingconfig
     - title: Setting Types
-      url: /stagenow/5-1/settingtypes
+      url: /stagenow/5-2/settingtypes
     - title: Guides
-      url: /stagenow/5-1/stagingguides
+      url: /stagenow/5-2/stagingguides
     - title: Help
-      url: /stagenow/5-1/troubleshooting
+      url: /stagenow/5-2/troubleshooting
     - icon: fa fa-youtube-play
       url: https://www.youtube.com/playlist?list=PLce6-npz5dKfmQcDERMFNiOeZrVAEJtXH    
     - icon: fa fa-download
-      url: /stagenow/5-1/download    
+      url: /stagenow/5-2/download    
     - icon: fa fa-graduation-cap
       url: https://supportcommunity.zebra.com/s/global-search/stagenow?language=en_US
     - icon: fa fa-search
-      url: /stagenow/5-1/search
+      url: /stagenow/5-2/search
 product: StageNow
 productversion: '5.2'
 ---
@@ -66,6 +66,6 @@ productversion: '5.2'
   2. removed the "Install" tab (and added a link to install in Start page 
 
       - title: Install
-      url: /stagenow/5-1/installing
+      url: /stagenow/5-2/installing
 
  -->

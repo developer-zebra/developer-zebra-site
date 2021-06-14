@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Mode is NOT "Cancel"
+  presentif: The Mode is NOT "Cancel" or "Sensor Cancel"
   pivotal: No
   name: Type
   type: string

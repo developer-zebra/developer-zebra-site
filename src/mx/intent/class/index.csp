@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Mode is NOT "Cancel" and Action is NOT "Enroll Device Owner"
+  presentif: The Mode is NOT "Cancel" or "Sensor Cancel" and Action is NOT "Enroll Device Owner"
   pivotal: No
   name: Type
   type: string

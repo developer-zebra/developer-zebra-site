@@ -148,7 +148,7 @@ Network requirements for communication between the device client app and the clo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.google.com`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.googleapis.com`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.firebaseio.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`connectivitycheck.gstatic.com` &nbsp;&nbsp;(Required by Google for Android to connect to a wireless network.)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`connectivitycheck.gstatic.com` &nbsp;&nbsp;(Required by Android to check internet connectivity.)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`us-central1-[projectID].cloudfunctions.net` &nbsp;&nbsp;(Required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process.)
 
     * Domain name accessed by the admin on a PC:<br>

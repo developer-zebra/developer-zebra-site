@@ -108,7 +108,7 @@ Network requirements for communication between the device client app and the clo
     * `*.google.com`
     * `*.googleapis.com`
     * `*.firebaseio.com` 
-    * `connectivitycheck.gstatic.com` (Required by Google for Android to connect to a wireless network.)
+    * `connectivitycheck.gstatic.com` (Required by Android to check internet connectivity.)
     * `us-central1-[projectID].cloudfunctions.net` (Required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process.)
     <br>
 

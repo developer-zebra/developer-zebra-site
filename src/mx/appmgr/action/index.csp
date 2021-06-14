@@ -34,10 +34,10 @@ parm:
     - code: 3
       devicetype: A,B
       name: Upgrade
-      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. When an app is upgraded, data associated with that app is maintained. If the requested app cannot be found, the selected app is installed on devices running Android 8.x Oreo or later. In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. In devices running Android KitKat or later, an Upgrade can replace only apps with a numerically greater version number.
+      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. When an app is upgraded, data associated with that app is maintained. If the requested app cannot be found, the selected app is installed on devices running Android 8.x Oreo or later. In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. In devices running Android 4.x KitKat or later, an Upgrade can replace only apps with a numerically greater version number.
       mx: "4.1"
       osx: "1.0"
-      info: Apps must be targeted at Android API level 23 (or newer) to be silently granted runtime permission on devices running Android 10+. 
+      info: Apps must be targeted at Android API level 23 (or later) to be silently granted runtime permission on devices running Android 10+. 
     - code: 4
       devicetype: A,B
       name: SetDefaultLauncher
@@ -72,7 +72,7 @@ parm:
     - code: 9
       devicetype: A,B
       name: BatteryOptimization
-      description: On devices running Nougat (and higher), all apps by default allow the device to enter Doze Mode to maximize battery life. The "BatteryOptimization" parameter allows one or more apps to be added to (or if previously added, removed from) the "Doze Mode exemption" list, which determines whether the device can enter a power saving mode while the app is running. 
+      description: On devices running Android Nougat 7.x (and later), all apps by default allow the device to enter Doze Mode to maximize battery life. The "BatteryOptimization" parameter allows one or more apps to be added to (or if previously added, removed from) the Battery Optimization "exemption whitelist, which determines whether the device can enter a power saving mode while the app is running. 
       mx: "7.0"
       apilevel: "23"
     - code: 10

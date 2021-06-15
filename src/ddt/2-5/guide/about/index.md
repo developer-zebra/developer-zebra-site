@@ -16,7 +16,7 @@ Hardware features tested:
 - **Touch Screen Test** – checks for operation of the device touch display
 - **Bluetooth Tests** – checks whether the Bluetooth radio is operable and returns Bluetooth related information: Bluetooth name, radio power cycle result, radio functional/non-functional, and discoverable/connectable.
 - **WiFi Tests** – checks for operation of the WiFi radio and returns WiFi related information: MAC address, network test results from specified address, signal strength, IP address, BSSID, and speed
-- **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, decommission status, voltage, current, temperature, battery level and current capacity
+- **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, battery health, voltage, current, temperature, battery level and current capacity
 - **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 - **Audio Test** – checks for operation of the device microphone and speaker
 - **SD Card Test** - checks for presence/absence of SD card, read/write status and total/free space on SD card.
@@ -42,7 +42,7 @@ Hardware features tested:
 
 - New feature to [upload logs](../usage/#uploadlogs) to FTP server.
 - New feature to [schedule jobs](../usage/#schedulejobs) for device tests.
-- New [battery threshold value](../configuration/#configuretests) to set the maximum charge cycle count of the battery that triggers "Need to replace battery" in the **Decommission Status.**
+- New [battery threshold value](../configuration/#configuretests) to set the maximum charge cycle count of the battery that triggers "Need to replace battery" in **Battery Health.**
 - Fixed issue: On devices with large screens, such as tablets (e.g. ET51/ET56, L10) and vehicle mounted computers (e.g. VC80x, VC8300), both portrait and landscape modes are now supported.
 - Due to a new policy in the Google Play Store, location can no longer be used in the background. This led to the removal of Location permission from Device Diagnostic Tool. As a result, ESSID can no longer be retrieved since it relies on the location service.
 
@@ -82,7 +82,7 @@ Hardware features tested:
 - Added and removed device support. See **Supported Devices** table below.
 - Known Issues: 
     - On TC20 and TC25 Android Oreo, when performing the Button test the scan trigger press fails. 
-    - On TC20 and TC25 Android Nougat, when performing the Battery test the Decommission status may return incorrect information. 
+    - On TC20 and TC25 Android Nougat, when performing the Battery test the Battery Health may return incorrect information. 
     - On TC25 Android Nougat, when performing the Button test the Time Remaining value for the parameter timeout does not take into effect for PTT or scan buttons. 
     - On TC75x Android Marshmallow, Data State in WWAN test may display “Data Disconnected” even though mobile data is enabled on the device. 
     - When the app is running and the EMM command is executed to run the test remotely, if the user tries to launch the app manually after the test completes, the app may encounter unexpected behavior. In this case the user must manually restart Device Diagnostic Tool to recover.

@@ -115,7 +115,7 @@ Checks the battery status and returns battery related information. Results:
 - **Part number –** displays the part number
 - **Serial number –** displays the serial number
 - **Manufacture date –** displays the battery date of manufacture
-- **Decommission status –** displays the health of the battery as: 
+- **Battery Health –** displays the health of the battery as: 
     - **Good –** the battery is in a healthy state 
     - **Need to replace battery –** the charge cycle count of the battery has reached the [Battery Threshold](../configuration/#configuretests) value set, indicating that the battery should be replaced with a new one soon. 
     - **Unknown –** indicates a problem retrieving the battery health information

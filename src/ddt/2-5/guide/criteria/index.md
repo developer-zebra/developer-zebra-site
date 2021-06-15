@@ -59,7 +59,7 @@ Device Diagnostic Tool tests for the operation of device hardware features based
   <tr>
     <td style="text-align:center">Battery</td>
     <td style="text-align:center">No</td>
-    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Part number<br>&nbsp;&nbsp;- Serial number<br>&nbsp;&nbsp;- Manufacture date<br>&nbsp;&nbsp;- Decommission status<br>&nbsp;&nbsp;- Voltage (i)<br>&nbsp;&nbsp;- Current (i)<br>&nbsp;&nbsp;- Temperature (i)<br>&nbsp;&nbsp;- Level (i)<br>&nbsp;&nbsp;- Current Capacity (i)</td>
+    <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- Part number<br>&nbsp;&nbsp;- Serial number<br>&nbsp;&nbsp;- Manufacture date<br>&nbsp;&nbsp;- Battery Health<br>&nbsp;&nbsp;- Voltage (i)<br>&nbsp;&nbsp;- Current (i)<br>&nbsp;&nbsp;- Temperature (i)<br>&nbsp;&nbsp;- Level (i)<br>&nbsp;&nbsp;- Current Capacity (i)</td>
     <td style="text-align:left">Passes if the battery health is good and the battery information is retrieved successfully.<br> <b>Note: </b>Current Capacity only applies to PowerPrecision+ batteries.</td>
   </tr>
   <tr>

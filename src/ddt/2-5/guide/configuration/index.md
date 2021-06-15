@@ -105,8 +105,8 @@ Configuration parameters:
     - **Part Number –** returns the battery part number 
     - **Serial Number –** returns the battery serial number 
     - **Manufacture Date –** returns the battery date of manufacture 
-    - **Decommission Status –** returns the health of the battery, whether it needs to be decommissioned 
-    - **Battery Threshold Value -** sets the maximum charge cycle count of the battery to change the **Decommission Status**. If this value is less than the actual charge cycle count of the battery, **Decommission Status** is changed to "Need to replace battery." This applies only to [PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) batteries. The default value is 400.
+    - **Battery Health –** returns the health of the battery, whether it needs to be decommissioned 
+    - **Battery Threshold Value -** sets the maximum charge cycle count of the battery to change the **Battery Health**. If this value is less than the actual charge cycle count of the battery, **Battery Health** is changed to "Need to replace battery." This applies only to [PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html) batteries. The default value is 400.
 - **WWAN Test –** tests operation of the WWAN radio and returns related WWAN information 
     - **Sim State –** checks whether the sim card is present 
     - **Voice State –** checks the voice state of the sim card 

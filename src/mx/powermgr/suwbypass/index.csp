@@ -15,21 +15,25 @@ parm:
       mx: "7.1"
       devicetype: A
       name: Do Nothing
-      description: This value (or the absence of this parm from the XML) causes no action on the device; the default value is used.
+      description: This value (or the absence of this parm from the XML) causes no action on the device; the default or previously configured value remains in effect.
     - code: 1
       devicetype: A
       name: True
       mx: "7.1"
-      description: Causes the Android and Zebra device setup wizards to be skipped following an Enterprise Reset initiated through PowerMgr.  
+      description: Causes the Android setup wizard to be skipped following an Enterprise Reset.  
     - code: 2
       devicetype: A
       name: False
       mx: "7.1"
-      description: Allows Android and Zebra setup wizards to be performed following an Enterprise Reset initiated through PowerMgr (default). 
+      description: Allows the Android setup wizard to be performed following an Enterprise Reset (default). 
 ---
 
-Controls whether to bypass the "Android device setup wizard" (also known as the "Welcome Screen") and the Zebra Setup Wizard (with Analytics data collection agent opt-out) following an Enterprise Reset initiated through PowerMgr. **Applies only on devices with Google Mobile Services (GMS) and <u>only when Enterprise Reset is initiated by PowerMgr</u>**. 
+Controls whether to bypass the "Android device setup wizard" (also known as the "Welcome Screen") following any Enterprise Reset. **Applies only on devices with Google Mobile Services (GMS)**. 
 
-**Important: The bypass setting does not persist on the device following an Enterprise Reset**. If SUW bypass is desired following an Enterprise Reset, this parameter must be included and set to "true" in the same Profile that is used to initiate the Enterprise Reset. The bypass flag was intended to be available as an option ONLY when Enterprise Reset is selected. However, **MX 7.1 and 7.2 allow SUW bypass to be configurable regardless of the Enterprise Reset parameter setting**. Once pushed to such devices, a bypass flag value of "true" will persist until an Enterprise Reset is executed or the flag is changed to "false" by a subsequent profile.
+**Important: The bypass setting persists on the device following any number of Enterprise Resets until it is explicitly changed using PowerMgr or cleared by initiating a Factory Reset**. 
+
+<!-- 6/15/21- removed per eng.
+If SUW bypass is desired following an Enterprise Reset, this parameter must be included and set to "true" in the same Profile that is used to initiate the Enterprise Reset. The bypass flag was intended to be available as an option ONLY when Enterprise Reset is selected. However, **MX 7.1 and 7.2 allow SUW bypass to be configurable regardless of the Enterprise Reset parameter setting**. Once pushed to such devices, a bypass flag value of "true" will persist until an Enterprise Reset is executed or the flag is changed to "false" by a subsequent profile.
+-->
 
 **Note**: Once running, the setup wizard can be exited **on some devices** by scanning a barcode. [More info](/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass). 

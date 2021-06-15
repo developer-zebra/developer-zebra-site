@@ -6,6 +6,7 @@ order: 42
 mx: "4.4"
 osx: "4.4"
 devicetype: A
+info: On some devices running Android 8.x Oreo and earlier, a setting of 0 (sound off) is supported.
 parm:
   presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No

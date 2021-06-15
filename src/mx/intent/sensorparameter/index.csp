@@ -7,7 +7,7 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Mode is NOT "Sensor Send" and Action is NOT "Enroll Device Owner" and Sensor Identifier is "Free Fall Detection"
+  presentif: The Mode is "Sensor Send" and Action is NOT "Enroll Device Owner" and Sensor Identifier is "Free Fall Detection"
   pivotal: No
   name: SensorParameter
   type: string

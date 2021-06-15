@@ -7,7 +7,12 @@ productversion: "11.0"
 
 ## Overview
 
-DataWedge can be remotely configured through Managed Configurations, specifications developed by Google and the Android community to configure installed applications and deploy these configurations through an EMM (Enterprise Mobility Management). A schema defines the DataWedge features available for consumption by the EMM, providing the information necessary to present to the EMM's corresponding data-driven UI. This mechanism integrates DataWedge remote configuration within the EMM for seamless operation and allows Zebra to release a new schema as soon as new features are available for use. DataWedge and the Zebra schema are available from the Google Play Store and must be used together to leverage DataWedge with its managed configurations to perform data capture.
+Managed Configurations are specifications developed by Google and the Android community to remotely configure installed applications, apply application restrictions and deploy these configurations through an EMM (Enterprise Mobility Management). This enables DataWedge administrators to remotely specify settings and enforce policies, such as:
+* **Securely mass deploy** the same data capture configurations for DataWedge across all devices.
+* **Lock the DataWedge configuration** to prevent unexpected changes.
+* **Restrict access to DataWedge APIs** by limiting access only to approved applications.
+
+A schema defines the DataWedge features available for consumption by the EMM, providing the information necessary to present to the EMM's corresponding data-driven UI. This mechanism integrates DataWedge remote configuration within the EMM for seamless operation and allows Zebra to release a new schema as soon as new features are available for use. DataWedge and the Zebra schema are available from the Google Play Store and must be used together to leverage DataWedge with its managed configurations to perform data capture.
 
 <!-- 
 DataWedge Managed Configurations allow administrators to remotely manage Zebra Android mobile devices by configuring settings, adding restrictions and enforcing policies, such as:
@@ -28,20 +33,27 @@ DataWedge Managed Configuration is based on Android's Managed Configuration arch
 
 Requirements for use of Managed Configurations with DataWedge:
 * Zebra device with Android 11 or higher
-* DataWedge installed on the device
-* DataWedge schema downloaded from the Google Play Store
+* DataWedge schema, included with built-in DataWedge app on Zebra Android devices
 * An EMM for device deployment
 
 ---
 
 ## Use Managed Configurations
 
-This section provides general instructions to use Managed Configurations through an EMM. The UI layout may vary depending on the EMM. In the EMM, after adding DDT to the device app catalog for app installation, the corresponding schema is automatically retrieved and presented to the EMM managed configuration UI based on the data defined. Through this UI, the administrator can select the desired Managed Configurations. 
+This section provides general instructions to use Managed Configurations through an EMM. The EMM typically uses the Managed Configuration schema to generate a UI console for administrators to remotely configure DataWedge. The UI layout may vary depending on the EMM. Through this UI, the administrator can select the desired Managed Configurations. 
 
 General instructions to use Managed Configurations:
-1. **Add DataWedge to the application catalog.** In the EMM, browse or search for DataWedge 11.0 or higher from the Google Play Store and add it to the app catalog. This automatically retrieves the corresponding schema for the app and makes the app available for deployment to the device(s) through the EMM.
+1. **Declare the Managed Configuration in the your manifest.** To define your app's Managed Configuration options, place the following element within your manifest's `<application>` element:
+
+        <meta-data 
+            android:name="android.content.APP_RESTRICTIONS" 
+            android:resource="@xml/app_restrictions" />
+
+2. **Define Managed Configuration file.** Create a file named `app_restrictions.xml` in your app's `res/xml` directory. The structure of that file is described in the reference for [Restrictions Manager](https://developer.android.com/reference/android/content/RestrictionsManager). The file has a single top-level `<restrictions>` element, which contains one `<restriction>` child element for every configuration option the
+app has.
+This automatically retrieves the corresponding schema for the app and makes the app available for deployment to the device(s) through the EMM.
 2. **Configure app restrictions using Managed Configurations** as described in the schema. See [App Restrictions](#apprestrictions) section that follows, which describes the available options.
-3. **Push a policy that deploys the DataWedge app and the created Managed Configurations to the device(s).**
+3. **Push a policy that deploys the created Managed Configurations to the device(s).**
 
 ---
 

@@ -1,0 +1,30 @@
+---
+csp: uimgr
+title: Home Screen Wallpaper
+type: parm
+order: 142
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: SetHomeScreenWallpaper
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no changes device settings; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A,B
+      name: Restore to default 
+      mx: "10.5"
+      description: Returns the home-screen wallpaper to the default for Android devices.    
+    - code: 2
+      devicetype: A,B
+      name: Custom
+      mx: "10.5"
+      description: Allows selection of a user-defined image (.jpg or .png) file to be displayed on the device device Home screen.
+---
+
+Used to select the wallpaper image to be displayed on the device Home screen. If selecting a custom image, enter the file name and on-device path of the image using the Custom Home Wallpaper parameter. 

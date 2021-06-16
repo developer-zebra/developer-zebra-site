@@ -1,0 +1,19 @@
+---
+csp: uimgr
+title: Custom Home Screen Wallpaper
+type: parm
+order: 143
+mx: "10.5"
+devicetype: A,B
+parm:
+  presentif: Set Home Screen Wallpaper is "Custom"
+  pivotal: No
+  name: CustomHomeWallpaper
+  type: string
+---
+
+Used to enter a the name and on-device path of an image file to be displayed on the device Home screen. **Suports** `.jpg` **and** `.png` **file formats**. 
+
+**Parm value input rules**: 
+
+* String of at least one alphanumeric character

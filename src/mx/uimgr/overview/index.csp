@@ -36,7 +36,7 @@ Android devices contain a variety of System applications that access UI elements
   * Set the Current Locale for a desired language and region
   * Set the Default Input Method to enhance entry of localized data
   * Manage layouts (languages) for external physical keyboard(s)
-  * Select lock-screen wallpaper
+  * Select Home screen wallpaper
   * Select the preferred assistant app  
 * Clear the Clipboard, which discards any prior data that might have been copied
 * Add, Replace, external keyboards and keyboard mappings

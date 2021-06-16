@@ -3,21 +3,21 @@ publish: false
 title: Zebra TechDocs
 layout: list-products.html
 products: 
-  - title: ActiveEdge
-    description: A service for Zebra Android devices that can be customized to display scan buttons or an app drawer at the left and right edges of the screen.
-    url: /activeedge
-    image: /images/products/ActiveEdge.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: /activeedge/2-5/guide/about
-      - title: Setup & Configuration
-        url: /activeedge/2-5/guide/setup
-      - title: Using ActiveEdge
-        url: /activeedge/2-5/guide/usage
-    versions:
-      - url: /activeedge/2-5/guide/about
-        label: '2.5'
+#  - title: ActiveEdge
+#    description: A service for Zebra Android devices that can be customized to display scan buttons or an app drawer at the left and right edges of the screen.
+#    url: /activeedge
+#    image: /images/products/ActiveEdge.png
+#    btn-text: Latest Docs
+#    sections:
+#      - title: About
+#        url: /activeedge/2-5/guide/about
+#      - title: Setup & Configuration
+#        url: /activeedge/2-5/guide/setup
+#      - title: Using ActiveEdge
+#        url: /activeedge/2-5/guide/usage
+#    versions:
+#      - url: /activeedge/2-5/guide/about
+#        label: '2.5'
  # - title: AppGallery
  #   description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
  #   url: https://developer.zebra.com/docs/DOC-3040

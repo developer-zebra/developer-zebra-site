@@ -28,7 +28,7 @@ parm:
       name: Turn OFF
       mx: "10.2"
       apilevel: "29"
-      description: Disables beacon transmission when device is powered off. 
+      description: Disables beacon transmission when device is powered off (default). 
 ---
 
-Controls whether a beacon is transmitted by a device when the device is powered OFF. **Disabled by default**.
+Controls whether a beacon is transmitted by a device when the device is powered OFF. **Off by default**.

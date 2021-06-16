@@ -22,9 +22,10 @@ Beacon Manager is supported on select GMS devices **that contain a secondary BLE
 
 ### Main Functionality
 
-* **Turn On/Off**: 
- * Beaconing from secondary BLE radio when device is powered off 
- * Beaconing when device was in "Airplane mode" before being powered off
+* **Turn On/Off Beaconing...**: 
+ * From secondary BLE radio when device is powered off 
+ * If device was in "Airplane mode" before being powered off
+ * After battery is reinserterd
 * Set the beacon transmission power level  
 * Set the transmission interval
 * **Set beacon parameters for**: 
@@ -44,7 +45,7 @@ _**Note**: In this document, the terms **emission** and **transmission** are use
 * **Settings** stored in the device **are replicated in the battery only when the device is powered on**. 
 * When BLE beaconing is enabled and the device is powered off, the battery emits a beacon using the preconfigured values as long as the battery remains in the device.
 * If beaconing is enabled and the battery is removed from a device, beaconing stops. 
-* **When a BLE-configured and enabled battery is placed into a device, beaconing resumes** within about 30 seconds **according to the following**: 
+* **When a BLE-configured and enabled battery is placed in a device, beaconing resumes** within about 30 seconds **according to the following**: 
  * If the battery is reinserted into the device on which it was configured or that contains no Beacon Manager configuration values, the battery's last-saved values are used.
  * If the battery is placed in a **powered-off** device other than the one in which it was configured, the battery behaves according to its last preconfigured values until the device is powered on, at which time the battery receives and applies the BLE settings stored on the device. 
 * **A beaconing-enabled battery removed from a device consumes a small amount of power** to periodically detect whether it has been inserted into a device and should resume beaconing. 

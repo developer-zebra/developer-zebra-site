@@ -1,0 +1,30 @@
+---
+csp: beaconmgr
+title: Beaconing on Battery Reinsertion
+type: parm
+order: 3
+mx: "10.5"
+devicetype: A
+parm:
+  pivotal: No
+  name: Beaconing
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn ON
+      mx: "10.5"
+      description: Allows beaconing to resume when the battery is reinserted into a powered-off device (default). 
+    - code: 2
+      devicetype: A
+      name: Turn OFF
+      mx: "10.5"
+      description: Prevents beaconing from resuming when the battery is reinserted into a powered-off device. 
+---
+
+Controls whether beaconing by a BLE-enabled battery resumes when the battery is reinserted into a powered-off device. **Enabled by default**.

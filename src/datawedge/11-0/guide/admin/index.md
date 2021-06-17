@@ -7,31 +7,34 @@ productversion: "11.0"
 
 ## Overview
 
-DataWedge configurations can be deployed through the following distinct methods:
+DataWedge configuration can be deployed through the following distinct methods:
 
-1. **[File Distribution](#filedistribution) -** After DataWedge is configured as desired on a device, export the configurations to file(s) and manually distribute them to other devices.
-2. **StageNow -** This is a Zebra staging tool to create profiles for configuring Zebra devices. There are 2 methods of deployment with the use of [DataWedge Manager CSP](#datawedgemanagercsp):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan a staging barcode or tap on an NFC tag<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Export to an EMM (Enterprise Mobility Management)
+1. **Manual File Copy -** After DataWedge is configured as desired on a device, [export the DataWedge configuration file(s)](../settings/#massdeployment) and manually copy them to other devices. 
+2. **StageNow -** A Zebra staging tool to create profiles for configuring Zebra devices. There are 2 methods of deployment with the use of [DataWedge Manager CSP](#datawedgemanagercsp):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan a staging barcode or tap on an NFC tag.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Export to an EMM (Enterprise Mobility Management).
 3. **EMM -** Deployment via an EMM can be performed using one of the following methods:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Push [DataWedge files](#filedistribution) to devices<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use StageNow with [DataWedge Manager CSP](#datawedgemanagercsp) to export the profile to an EMM<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Use [Managed Configurations](#managedconfigurations)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Push [DataWedge configuration files](../settings/#massdeployment) to devices.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use StageNow with [DataWedge Manager CSP](#datawedgemanagercsp) to export a profile to an EMM.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Use [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) with [OEMConfig](/oemconfig).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Use [Managed Configurations](#managedconfigurations).
 
 <!-- 
 1. **[DataWedge Files](#datawedgefiles) -** After DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or by using an EMM (Enterprise Mobility Management) system.
 2. **[Managed Configurations](#managedconfigurations) -** Use Android's Managed Configurations framework to remotely configure and deploy DataWedge configurations through an EMM.
 3. **StageNow or EMM with [DataWedge Manager CSP](#datawedgemanagercsp) -** Securely mass deploy DataWedge configuration with the underlying MX framework using StageNow or an EMM.
 -->
-Each method is described in detail in the sections that follow.
+More information on DataWedge Manager CSP and Managed Configurations is provided in the following sections.
 
 **Note:** DataWedge Managed Configurations is based on Android's Managed Configurations architecture introduced in Android 11. Prior to Android 11, these configurations are supported in [DataWedge Manager CSP](/mx/datawedgemgr). Moving forward, Zebra recommends administrators to transition to Managed Configurations, which will replace DataWedge Manager CSP.
 
+<!--
 ---
 
 ## File Distribution
 
 After configuring DataWedge on a device, the settings and profiles can be exported to files, then distributed to other devices either manually or using an EMM. Instructions to deploy DataWedge profile and config files are located in the [Mass Deployment](https://techdocs.zebra.com/datawedge/8-2/guide/settings/#massdeployment) section.
+-->
 
 ---
 
@@ -183,7 +186,7 @@ The process to setup an EMM console to use Managed Configurations varies dependi
 ### Use Managed Configurations Programmatically
 
 Instructions to use Managed Configurations through your app:
-1. **Declare the Managed Configurations schema in the your manifest.** To define your app's Managed Configuration options, place the following element within your manifest's `<application>` element:
+1. **Declare the Managed Configurations schema in your manifest.** To define your app's Managed Configuration options, place the following element within your manifest's `<application>` element:
 
         <meta-data 
             android:name="android.content.APP_RESTRICTIONS" 

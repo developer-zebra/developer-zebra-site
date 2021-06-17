@@ -113,8 +113,8 @@ Configuration parameters:
     - **Data State –** checks the data state of the sim card
 - **Audio Test –** tests operation of the device microphone and speaker     
     * **Test Timeout –** specifies the time in seconds to wait for user input
-- **SD Card Test -** tests for presence/absence of SD card and ability to read/write. The SD card must be mounted in order to be detected.
-    * **SD Card -** checks for presence/absence of SD card
+- **SD Card Test -** tests for presence/absence of external SD card and ability to read/write. The SD card must be mounted as portable storage in order to be detected.
+    * **SD Card -** checks for presence/absence of external SD card
     * **Read -** checks if can read SD card
     * **Write -** checks if can write to SD card 
 <br>

@@ -19,7 +19,7 @@ Hardware features tested:
 - **Battery Tests** – checks the battery status and returns battery related information: part number, serial number, manufacture date, battery health, voltage, current, temperature, battery level and current capacity
 - **WWAN Tests** – checks for operation of the WWAN radio and returns related WWAN information: SIM state, voice state, data state, WAN type, signal strength, phone number, and device ID
 - **Audio Test** – checks for operation of the device microphone and speaker
-- **SD Card Test** - checks for presence/absence of SD card, read/write status and total/free space on SD card.
+- **SD Card Test** - checks for presence/absence of external SD card, read/write status and total/free space on SD card.
 
 <p>For more information on each test, refer to <a href="../criteria">Test Criteria.</a></p>
 
@@ -27,7 +27,7 @@ Hardware features tested:
 
 ## New in 2.5
 
-- New [SD Card Test](../usage/#devicetests) to check for SD card presence, total/free space and read/write status.
+- New [SD Card Test](../usage/#devicetests) to check for external SD card presence, total/free space and read/write status.
 - DDT is now localized in 7 different languages (French, Italian, German, Spanish, Portuguese, Simplified Chinese and Japanese) based on the language of the Android system.
 - New automated remote test scheduling and remote log file export with [Managed Configuration](../managed-config).
 - Resolved issue: Test result is not logged properly when test is cancelled.

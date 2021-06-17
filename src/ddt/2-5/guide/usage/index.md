@@ -163,7 +163,7 @@ Checks for operation of the device microphone and speaker. Results:
 
 ### SD Card Test
 
-Checks SD card status and information. The SD card must be mounted in order to be detected. Results:
+Checks external SD card status and information. The SD card must be mounted as portable storage in order to be detected. If the SD card is mounted as internal storage, DDT does not detect it. This applies similarly when formatting SD cards - only SD cards formatted as portable storage are detected by DDT. Results:
 
 - **SD Card -** _present_ or _absent_
 - **Read -** _passed_ or _not applicable_

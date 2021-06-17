@@ -72,7 +72,7 @@ Device Diagnostic Tool tests for the operation of device hardware features based
     <td style="text-align:center">SD Card</td>
     <td style="text-align:center">No</td>
     <td style="text-align:left">Information returned:<br>&nbsp;&nbsp;- SD Card presence<br>&nbsp;&nbsp;- Read<br>&nbsp;&nbsp;- Write<br>&nbsp;&nbsp;- Total space (i)<br>&nbsp;&nbsp;- Free space (i)</td>
-    <td style="text-align:left">Passes if the SD card is present and both read and write passes. A warning results if the SD card is not present, or either read or write fails.</td>
+    <td style="text-align:left">Passes if the external SD card is present and both read and write passes. A warning results if the SD card is not present, or either read or write fails.</td>
   </tr>
 </table>
 

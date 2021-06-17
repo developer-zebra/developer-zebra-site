@@ -117,7 +117,7 @@ Checks the battery status and returns battery related information. Results:
 - **Manufacture date –** displays the battery date of manufacture
 - **Battery Health –** displays the health of the battery as: 
     - **Good –** the battery is in a healthy state 
-    - **Need to replace battery –** the charge cycle count of the battery has reached the [Battery Threshold](../configuration/#configuretests) value set, indicating that the battery should be replaced with a new one soon. 
+    - **Need to replace battery –** the charge cycle count (for [PowerPrecision batteries](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html)) or the setting retrieved from the internal Zebra framework (for [PowerPrecision+ batteries](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html)) has reached the [Battery Threshold](../configuration/#configuretests) value, indicating that the battery should be replaced with a new one soon. 
     - **Unknown –** indicates a problem retrieving the battery health information
 - **Voltage –** displays the voltage
 - **Current –** displays the current

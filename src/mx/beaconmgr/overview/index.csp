@@ -22,10 +22,10 @@ Beacon Manager is supported on select GMS devices **that contain a secondary BLE
 
 ### Main Functionality
 
-* **Turn On/Off Beaconing...**: 
+* **Turn On/Off Beaconing...** 
  * From secondary BLE radio when device is powered off 
  * If device was in "Airplane mode" before being powered off
- * After battery is reinserterd
+ * After battery is reinserterd in powered-off device
 * Set the beacon transmission power level  
 * Set the transmission interval
 * **Set beacon parameters for**: 

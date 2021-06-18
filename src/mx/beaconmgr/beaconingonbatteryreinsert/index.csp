@@ -4,6 +4,7 @@ title: Beaconing on Reinsertion On/Off
 type: parm
 order: 3
 mx: "10.5"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
@@ -12,18 +13,21 @@ parm:
   list:
     - code: 0
       mx: "10.5"
+      apilevel: "26"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
+      mx: "10.5"
+      apilevel: "26"
       devicetype: A
       name: Turn ON
-      mx: "10.5"
       description: Allows beaconing to resume when a battery is reinserted into a powered-off device (default). 
     - code: 2
+      mx: "10.5"
+      apilevel: "26"
       devicetype: A
       name: Turn OFF
-      mx: "10.5"
       description: Prevents beaconing from resuming when the battery is reinserted into a powered-off device. 
 ---
 

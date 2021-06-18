@@ -1,6 +1,6 @@
 ---
 publish: true
-title: App Signature Tools
+title: App Signature Tool
 description: Used to extract the signature file from APK or DER file(s)
 downloads:
   - title: ZebraSigTools.zip

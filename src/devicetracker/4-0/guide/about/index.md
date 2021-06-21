@@ -141,37 +141,39 @@ Requirements for Device Tracker client:
 
 Network requirements for communication between the device client app and the cloud server:
 
-* Network port 443 must be enabled to reach the Google Cloud Firebase platform. The client application sends device status and events to the server over HTTPS.
+* Device Tracker client uses HTTPS to communicate with Device Tracker cloud server.  All HTTPS communication normally uses port 443 by default, but this may vary based on network configuration. This port designated for HTTPS communication must be open.
+* The following domains must be allowed through the firewall or proxy. <br>
 
-* The following domains must be allowed through the firewall or proxy:
-    * Domain names accessed by device:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.google.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.googleapis.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`*.firebaseio.com`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`connectivitycheck.gstatic.com` &nbsp;&nbsp;(Required by Android to check internet connectivity.)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;`us-central1-[projectID].cloudfunctions.net` &nbsp;&nbsp;(Required for the execution of Cloud Functions for Firebase, where <i>[ProjectID]</i> is supplied by Zebra during the cloud setup process.)
+    Domain names accessed by device:
 
-    * Domain name accessed by the admin on a PC:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∙&nbsp;Web portal - supplied by Zebra during the cloud setup process.
+    * `*.google.com` (Required for Android to check internet connectivity.)
+    * `connectivitycheck.gstatic.com` (Required for Android to check internet connectivity.)
+    * `*.googleapis.com` (Required for Device Tracker to authenticate device communication and connect with the cloud server.)
+    * `*.firebaseio.com` (Required for Device Tracker to access the cloud database.)
+    * `*.cloudfunctions.net` (Required for Device Tracker to access the cloud server.)
+    * `[ProjectID].firebaseapp.com` (Required for accessing password reset link, where `[ProjectID]` is supplied by Zebra during onboarding.)
+<br>
+
+
+    Domain name accessed by the admin on a PC: 
+    * Web portal - supplied by Zebra during onboarding.
 <br>
 
 <p>If the firewall or proxy does not support wildcards, add the following domains to the allow list:</p>
 
-* `www.googleapis.com`
-* `firestore.googleapis.com`
-* `cloudfunctions.googleapis.com`
-* `firebaseinstallations.googleapis.com`
-* `play.googleapis.com`
-* `www.google.com`
-* `[ProjectID].firebaseio.com`  (Accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
-* `[ProjectID]-default-rtdb.firebaseio.com`  (Accessed by the client app, where [ProjectID] is supplied by Zebra during the cloud setup process.)
-* `s-usc1c-nss-*.firebaseio.com`  (Accessed by the client app to route to the Firebase database server, where "&#42;" represents multiple characters. _Since "&#42;" can change over time, the firewall needs to allow any domain with this pattern for the app to function._)
+* `www.google.com` (Required for Android to check internet connectivity.)
+* `connectivitycheck.gstatic.com` (Required for Android to check internet connectivity.)
+* `www.googleapis.com` (Required for Device Tracker to authenticate device communication with the cloud server.)
+* `firestore.googleapis.com` (Required for Device Tracker to access the cloud database.)
+* `cloudfunctions.googleapis.com` (Required for Device Tracker to connect with the cloud server.)
+* `us-central1-[ProjectID].cloudfunctions.net` (Required for Device Tracker to connect with the cloud server, where `[ProjectID]` is supplied by Zebra during onboarding.)
+* `[ProjectID].firebaseio.com` (Required for Device Tracker to access the cloud database, where `[ProjectID]` is supplied by Zebra during onboarding.)
+* `[ProjectID]-default-rtdb.firebaseio.com` (Required for Device Tracker to access the cloud database, where `[ProjectID]` is supplied by Zebra during onboarding.)
+* `s-usc1c-nss-*.firebaseio.com` (Required for Device Tracker to access the cloud database, where `*` represents multiple characters. Since `*` can change over time, the firewall needs to allow any domain with this pattern for the app to function.)
+* `[ProjectID].firebaseapp.com` (Required for accessing password reset link, where `[ProjectID]` is supplied by Zebra during onboarding.)
+<br>
 
-<!-- * https://android.googleapis.com
-* https://update.googleapis.com
-* https://growth-pa.googleapis.com
-* https://android.clients.google.com -->
-
+If the password is reset, an email is sent from `zdtrksupport@zebra.com`.
 
 <!-- -->
 -----

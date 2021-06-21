@@ -6,7 +6,7 @@ order: 3
 mx: "4.1"
 apilevel: "16"
 devicetype: A,B
-info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK
+info: Update package list (.upl) files are not supported on TC70/TC75 devices running Android 4.x KitKat.
 parm:
   presentif: The Reset Action is "OS Update" or "OS Upgrade" or "OS Downgrade"
   pivotal: No

@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 devicetype: A,B
-info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android 4.x KitKat.
+info: Update package list (.upl) files are not supported on TC70/TC75 devices running Android 4.x KitKat.
 parm:
   pivotal: Yes
   name: ResetAction

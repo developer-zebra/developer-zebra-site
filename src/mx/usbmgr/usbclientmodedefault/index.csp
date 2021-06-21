@@ -6,6 +6,7 @@ order: 2
 mx: "10.4"
 apilevel: "29"
 devicetype: A
+info: This parameter is not applicable to devices connected through the Zebra Workstation Connect cradle, and previously configured device settings are ignored while the device is docked.
 parm:
   presentif: USB All Access Device Storage Usage is NOT "Disable"
   pivotal: No

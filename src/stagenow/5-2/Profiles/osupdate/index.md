@@ -92,8 +92,6 @@ The incremental update is used to perform OS updates on multiple devices based o
 
    * The devices I wish to provision are already connected to a network that will be used for staging. 
 
-   * I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card:
-
    ![img](../../images/profiles/OSUpdate_6_NetworkType.jpg)
 
    **If selecting the second or third option, skip to Step 7**. 

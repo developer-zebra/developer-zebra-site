@@ -67,7 +67,7 @@ If published profiles are available, the Staging Operator home screen appears.
 
 ![img](../images/Homescreen_operator.jpg)
 
-The Operator home screen lists the latest profiles available. The top of the screen shows the [IP Address](../gettingstarted?Current%20IP%20Address) currently used (if any), useful for when you need to connect to the Staging Server. The top of the screen also includes a [Wi-Fi Hotspot](../gettingstarted?Wi-Fi%20Hotspot) option, which allows the desktop computer to act as WiFi hotspot for staging devices.
+The Operator home screen lists the latest profiles available. The top of the screen shows the [IP Address](../gettingstarted?Current%20IP%20Address) currently used (if any), useful for when you need to connect to the Staging Server.<!-- 6/21/21- StageNow no longer supports Wi-Fi Hotspot staging**.  The top of the screen also includes a [Wi-Fi Hotspot](../gettingstarted?Wi-Fi%20Hotspot) option, which allows the desktop computer to act as WiFi hotspot for staging devices. -->
 
 The main sections of this window include the following fields:
 
@@ -112,6 +112,8 @@ If more than one IP address is available and neither is selected, the Current IP
 
 Select the IP, then select Set as Current. This IP address is retained in future operations, including after re-launch and system reboot. 
 
+<!-- 6/21/21- **NOTE: StageNow no longer supports Wi-Fi Hotspot staging**. 
+
 ### Wi-Fi Hotspot
 The StageNow tool allows a desktop computer equipped with a wireless network interface card to act as a Wi-Fi hotspot for staging devices. This allows staging without requiring an external Wi-Fi network and reduces the number of barcodes to one with default security, or more than one with optional double security selected by the administrator.
 It also eliminates the need for reprinting the barcodes even if there is a profile change.
@@ -128,7 +130,7 @@ If the Wi-Fi hotspot is disabled upon launching the StageNow Tool, turning in it
 ![img](../images/wifi_controlwindow.jpg)
 
 Select Yes to start the Wi-Fi hotspot service, or No to cancel the operation.
-
+ -->
 ### Change Password
 The top right corner of the screen offers an option to change the Administrator password.
 
@@ -327,6 +329,8 @@ Turn this setting on to terminate the staging process upon first error. If left 
 #### Check for software updates on startup
 Turn this setting on to display a message below the menu bar indicating when there is a new StageNow version available. 
 
+<!-- 6/21/21/- **NOTE: StageNow no longer supports Wi-Fi Hotspot staging**. 
+
 #### Always turn WiFi Hotspot on at startup
 The StageNow tool allows the desktop computer to act as WiFi hotspot for staging devices.
 
@@ -340,7 +344,7 @@ If your workstation doesn't support the Wi-Fi Hotspot feature, the message below
 
 ![img](../images/wifi_notsupported.jpg)
 
-
+ -->
 ### Help
 This launches the StageNow user guide in the default browser. 
 

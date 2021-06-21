@@ -207,14 +207,14 @@ After completing the StageNow Config and RD Config sections of the Wizard, proce
 
 ### MX Selection
 
-Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If selecting MX 6.X for the applicable Wizards, the first Wizard window displays a prompt for selecting one of the following options from the drop-down menu:
+<!-- Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards.  -->If selecting MX 6.X for the applicable Wizards, the first Wizard window displays a prompt for selecting one of the following options from the drop-down menu:
 
 * "The devices I wish to provision are currently not connected to a network. I will define a network with this Profile that will be used for staging."
 
 * "The devices I wish to provision are already connected to a network that will be used for staging." 
 
-* "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
-
+<!-- * "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
+ -->
 <img alt="image" style="height:350px" src="../images/profiles/configdevice_wifi.jpg"/>
 _Click image to enlarge; ESC to cancel_.
 <br>
@@ -299,9 +299,8 @@ To stage a barcode Profile:
     _Click image to enlarge; ESC to cancel_.
 <br>
 
-
-2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a Profile change.
-
+<!-- 2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a Profile change.
+ -->
 3. To stage devices from content stored on a server, check the "Host the Deployment Package Outside of StageNow FTP Server" and enter the server address and fully qualified file name (including path, see image above) of server-based content using the Source URI syntax. For more information and examples of this syntax, see the [Source URI](../csp/file/#source-uri) and [Examples](../csp/file/#examples) sections of the [File Manager guide](../csp/file). This feature supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials (Devices with MX 4.4+ support FTP only; **HTTP/HTTPS requires MX 7.0 or higher on device**; FTPS requires MX 7.1 or higher). 
 
 4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all barcode types.
@@ -385,8 +384,8 @@ To unpublish a Profile to remove operator access, select Unpublish.
     _Click image to enlarge; ESC to cancel_.
     <br>
 
-2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
-
+<!-- 2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox.
+ -->
 3. Select Test to test the functionality of the Profile before publishing. This saves the NFC tag as a `.bin` file for testing. While this step is optional, it is important to determine whether the Profile functions as intended before making it available to the operator(s) for staging devices.
 
 4. If the staging material functions properly, select Publish to publish the material for operator use. 

@@ -31,4 +31,4 @@ parm:
       description: Prevents beaconing from resuming when the battery is reinserted into a powered-off device. 
 ---
 
-Controls whether beaconing by a BLE-enabled battery resumes when the battery is reinserted into a supported, powered-off device. **On by default**.
+Controls whether beaconing by a BLE-enabled battery resumes when the battery is reinserted into any supported, powered-off device. **On by default**. 

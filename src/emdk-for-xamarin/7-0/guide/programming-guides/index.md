@@ -15,8 +15,8 @@ content-items:
     url: /emdk-for-xamarin/7-0/guide/programming_practices
   - type: section
     level: 4
-    title: Extended Scanner Parameters
-    text: A guide for setting and getting scanning parameters not yet implemented with the class hierarchy or those being added in future.
+    title: Scanner Parameter Config API Guide
+    text: A guide for pass-through APIs that can be used to set and get scanner parameter configurations in scanning applications.
     url: /emdk-for-xamarin/7-0/guide/extended_scanner_parameters
 product: EMDK For Xamarin
 productversion: '7.0'

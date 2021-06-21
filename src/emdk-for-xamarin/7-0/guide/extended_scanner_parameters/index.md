@@ -80,24 +80,24 @@ This is in line with previous scanner configuration APIs. It needs to get the ob
 
 The following code segment shows how to set the value of the `remote_trigger_status` parameter using the scanner parameter configuration APIs. 
 
+        :::c#
+            try
+            {
+                // Get scanner config
+                Bundle requiredParams = new Bundle();
+                requiredParams.PutString("remote_trigger_status", "");
+                Bundle paramsBundle = scanner.GetParams(requiredParams);
 
-#### ---> `JAVA CODE TO BE REPLACED WITH C#:` 
-
-        :::java
-        try {
-            // Get scanner config
-            Bundle requiredParams = new Bundle();
-            requiredParams.putString("remote_trigger_status","");
-            Bundle params = scanner.getParams(requiredParams);
-            
-            if(params.containsKey("remote_trigger_status")) {
-                params.putString("remote_trigger_status", "0");
+                if (paramsBundle.ContainsKey("remote_trigger_status")) {
+                    paramsBundle.PutString("remote_trigger_status", "0");
+                }
+                scanner.SetParams(paramsBundle);
             }
-            
-            scanner.setParams(params);
-        } catch (ScannerException e) {
-            updateStatus(e.getMessage());
-        }
+            catch (ScannerException ex)
+            {
+               //Check exception
+            }
+
 
 > Note: Parameter names should match those from the supported param list. 
 
@@ -109,18 +109,14 @@ Newly connected scanners are sometimes unavailable for selection using device id
 
 Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received `ScannerInfo` objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)` as follows:
 
-#### ---> `JAVA CODE TO BE REPLACED WITH C#:` 
-
-        :::java
-        List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
+        :::c#
+        IList<ScannerInfo> supportedDevList = barcodeManager.SupportedDevicesInfo;
         Scanner scanner = null;
-
-        Iterator<ScannerInfo> it = deviceList.iterator();
-        while(it.hasNext()) {
-            ScannerInfo scnInfo = it.next();
-            if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000)
-            {        
-                scanner = barcodeManager.getDevice(scnInfo);
+        foreach (var scnInfo in supportedDevList)
+        {     
+            if (scnInfo.FriendlyName.ToUpper().Contains("RS6000"))
+            {
+                scanner = barcodeManager.GetDevice(scnInfo);
                 break;
             }
         }

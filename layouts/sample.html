@@ -65,8 +65,10 @@
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
 	                    <div class="service-box wow fadeInRight">
 	                        <div class="">
-	                            <h2 class="media-heading">Product</h2>
-	                            <p>{{ product }} - {{ productversion }}</p>
+                                {{#if product}}
+	                                <h2 class="media-heading">Product</h2>
+	                                <p>{{ product }} - {{ productversion }}</p>
+                                {{/if}}
 	                        </div>
 	                    </div>
 	                    <div class="service-box wow fadeInRight">

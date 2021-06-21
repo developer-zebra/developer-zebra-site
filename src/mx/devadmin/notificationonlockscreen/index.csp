@@ -33,3 +33,5 @@ parm:
 ---
 
 Used to select the type of notification content to be shown on the Lock Screen, if any. 
+
+>WARNING: Displaying notificaitons of any kind on the lock screen might be considered a security risk. 

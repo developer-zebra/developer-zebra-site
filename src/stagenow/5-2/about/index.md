@@ -28,7 +28,7 @@ The following software must be installed on the staging workstation prior to usi
  * Google Chrome 35 or higher 
  * Internet Explorer 9 or higher
 
-> **NOTE: StageNow no longer supports Wi-Fi Hotspot staging**. 
+> **NOTE: StageNow no longer supports Wi-Fi hotspot staging**. 
 
 -----
 

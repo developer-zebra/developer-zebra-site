@@ -1,0 +1,39 @@
+---
+csp: displaymgr
+title: Locked Orientation Positions
+type: parm
+order: 7
+mx: "10.5"
+devicetype: A
+parm:
+  pivotal: No
+  name: LockedOrientation
+  type: list
+  list:
+    - code: 86
+      mx: "10.5"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
+    - code: 0
+      devicetype: A
+      name: Portrait (No rotation)
+      mx: "10.5"
+      description: Lock screen orientation in Portrait mode.
+    - code: 1
+      devicetype: A
+      name: Landscape left (90 degrees)
+      mx: "10.5"
+      description: Lock screen orientation in Landscape mode.
+    - code: 2
+      devicetype: A
+      name: Portrait inverted (180 degrees)
+      mx: "10.5"
+      description: Lock screen orientation in inverted-Portrait mode.
+    - code: 3
+      devicetype: A
+      name: Landscape right (270 degrees)
+      mx: "10.5"
+      description: Lock screen orientation in inverted-Landscape mode.
+---
+
+Used to select the orientation to lock in when auto-rotation is not used.

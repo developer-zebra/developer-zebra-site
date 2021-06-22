@@ -1,0 +1,29 @@
+---
+csp: displaymgr
+title: Allowed Orientations
+type: parm
+order: 6
+mx: "10.5"
+devicetype: A
+parm:
+  pivotal: No
+  name: AllowedOrientations
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: All (0, 90, 180, 270 degrees)
+      mx: "10.5"
+      description: Allows any screen orientation to be used when auto-rotation is enabled.
+    - code: 2
+      devicetype: A
+      name: All except portrait inverted (180 degrees)
+      mx: "10.5"
+      description: Prevents the screen from using the "upside-down portrait" orientation.
+---
+
+Used to select which screen orientation(s) to allow when auto-rotation is enabled on the device. Selecting "All except portrait inverted (180 degrees)" (option 2) prevents the screen from flipping when momentarily pointing the device downward, for example, to scan a barcode below waist level. 

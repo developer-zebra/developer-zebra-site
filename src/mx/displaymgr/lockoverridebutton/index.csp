@@ -1,0 +1,30 @@
+---
+csp: displaymgr
+title: Lock Override Button Enable/Disable
+type: parm
+order: 8
+mx: "10.5"
+devicetype: A
+parm:
+  pivotal: No
+  name: LockOverrideButton
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      apilevel: "27"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "10.5"
+      description: Allows the Lock Override button to be shown on the device screen.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "10.5"
+      description: Prevents the Lock Override button from being shown on the device screen.
+---
+
+This is the On/Off switch for the on-screen Lock Override button, which (when enabled) allows the device user to override the screen orientation locked by the administrator or an app. 

@@ -1,13 +1,13 @@
 ---
 csp: devadmin
-title: Set Lock Screen Wallpaper
+title: Lock Screen Wallpaper
 type: parm
 order: 20
 mx: "10.5"
 devicetype: A,B
 parm:
   pivotal: Yes
-  name: SetLockScreenWallpaper
+  name: LockScreenWallpaper
   type: list
   list:
     - code: 0

@@ -1,0 +1,30 @@
+---
+csp: devadmin
+title: Silent App Install
+type: parm
+order: 2
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: SilentAppInstall
+  type: list
+  list:
+    - code: 0
+      mx: "10.5"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Show
+      mx: "10.5"
+      description: Allows notifications to be displayed on the device when the DO installs, uninstalls or upgrades an app. 
+    - code: 2
+      devicetype: A,B
+      name: Hide
+      mx: "10.5"
+      description: Prevents notifications from being displayed on the device when the DO installs, uninstalls or upgrades an app.
+---
+
+Used to select whether the device user receives notifications when the Device Owner installs, uninstalls or upgrades apps.

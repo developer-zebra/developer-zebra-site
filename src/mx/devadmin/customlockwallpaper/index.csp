@@ -8,7 +8,7 @@ devicetype: A,B
 parm:
   pivotal: No
   presentif: Lock Screen Wallpaper is "Custom"
-  name: CustomLockscreenWallpaper
+  name: CustomLockWallpaper
   type: string
 ---
 

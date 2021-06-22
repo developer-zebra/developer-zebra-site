@@ -4,7 +4,9 @@ title: Silent App Install
 type: parm
 order: 48
 mx: "10.5"
-devicetype: A,B
+osx: "11.5"
+apilevel: "30"
+devicetype: A
 parm:
   pivotal: Yes
   name: SilentAppInstall
@@ -12,18 +14,24 @@ parm:
   list:
     - code: 0
       mx: "10.5"
-      devicetype: A,B
+      osx: "11.5"
+      apilevel: "30"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Show
       mx: "10.5"
+      osx: "11.5"
+      apilevel: "30"
       description: Allows notifications to be displayed on the device when the DO installs, uninstalls or upgrades an app. 
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Hide
       mx: "10.5"
+      osx: "11.5"
+      apilevel: "30"
       description: Prevents notifications from being displayed on the device when the DO installs, uninstalls or upgrades an app.
 ---
 

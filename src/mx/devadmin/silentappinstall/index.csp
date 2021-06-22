@@ -2,7 +2,7 @@
 csp: devadmin
 title: Silent App Install
 type: parm
-order: 2
+order: 48
 mx: "10.5"
 devicetype: A,B
 parm:

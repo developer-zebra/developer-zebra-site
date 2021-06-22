@@ -12,7 +12,8 @@ The Display Manager (DisplayMgr) provides control of certain display-screen feat
 
 * Enable/disable: 
  * Screen blanking
- * Secondary display
+ * Secondary display (external monitor)
+ * Display of on-screen Lock Override button
  * Resizable and moveable app windows
  * Resizable activity windows
  * Stay Awake mode 
@@ -26,4 +27,14 @@ The Display Manager (DisplayMgr) provides control of certain display-screen feat
 * Set the screen blanking: 
  * Signal port
  * Signal polarity
- * Sebounce delay
+ * Debounce delay
+* When auto-rotation is not used, lock orientation to: 
+ * Portrait (No rotation)
+ * Landscape left (90 degrees)
+ * Portrait inverted (180 degrees)
+ * Landscape right (270 degrees)
+* When auto-rotation is used, allow orientations: 
+ * All (0, 90, 180, 270 degrees)
+ * All except portrait inverted (180 degrees)
+
+-----

@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "8.3"
 devicetype: A
-info: Supported only on MC93, TC52, TC57, TC72, TC77 and TC8380 devices.
+info: This feature is deprecated and will be discontinued in a future MX version. Supported only on MC93, TC52, TC57, TC72, TC77 and TC8380 devices.
 parm:
   pivotal: No
   name: skipNdef
@@ -20,7 +20,7 @@ parm:
       devicetype: A
       name: use
       mx: "8.3"
-      description: Enables the device to exchange data using NDEF.
+      description: (DEPRECATED) Enables the device to exchange data using NDEF.
     - code: 0
       devicetype: A
       name: don't use

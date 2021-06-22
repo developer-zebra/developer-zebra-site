@@ -17,6 +17,7 @@ Android devices contain a variety of System applications that access UI elements
 * **Enable/Disable**:
   * Quick Settings controls for user access to Wi-Fi, Bluetooth and other settings
   * Clipboard 
+  * Clipboard sharing
   * AutoCorrect function
   * HOME Key function
   * The Bluetooth Pairing pop-up
@@ -40,4 +41,5 @@ Android devices contain a variety of System applications that access UI elements
   * Select the preferred assistant app  
 * Clear the Clipboard, which discards any prior data that might have been copied
 * Add, Replace, external keyboards and keyboard mappings
-* Remove individual or all  external keyboards and keyboard mappings
+* Remove individual or all external keyboards and keyboard mappings
+* Select a preferred pre-installed or custom Assistant app for the device 

@@ -41,7 +41,8 @@ _Keystroke Output options_
 
 **Key event options -** sends keystrokes as key events, sends certain key events as string, and controls key event delays. _Supported only on SDM660 products (including PS20, TC52, TC57, TC72, and TC77)._ Options:
 
-- **Key event delay -** set the delay (in ms) prior to the key event being sent
+- **Key event delay -** set a delay (in ms) prior to the key event being sent. Used for dispatching control characters as keystrokes to the foreground application. This parameter is useful when sending data containing text as well as key events, where key events are sent asynchronously causing data to be delivered in the incorrect order. In this circumstance, it is recommended to add a key event delay to correct the order of data delivery.
+
 - **Send Characters as Events -** set to send ASCII code 32 to 126 as key events
 - **Send Enter as string -** set to send ENTER key stroke output as a string. By default, this is disabled and ENTER is sent as a key event.
 - **Send Tab as string -** set to send TAB key stroke output as a string. By default, this is disabled and TAB is sent as a key event.
@@ -60,7 +61,7 @@ DataWedge keyboard options:
   **Note:** Enabling/Disabling this option will not change the configurations in Android system Language and Input settings.
 - **Keyboard display timeout -** used to set the amount of time (in seconds) the keyboard should remain visible after a scan. Default value is 10 seconds. This timeout applies only when **Display DataWedge keyboard** is enabled. Users can tap on the keyboard UI if required to switch back to the previous keyboard before the timeout elapses. Setting the timeout value to 0 results to an infinite timeout. The keyboard does not switch to the previous keyboard unless the user taps on the DataWedge keyboard UI or there is a profile switch.
 
-**Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application. This parameter is useful when sending data containing text as well as key events, where key events are sent asynchronously causing data to be delivered in the incorrect order. In this circumstance, it is recommended to add a key event delay to correct the order of data delivery.
+ 
 
 ---
 

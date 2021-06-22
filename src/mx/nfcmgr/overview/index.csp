@@ -21,7 +21,7 @@ The NFC Manager (NfcMgr) controls near field communications options on the devic
 
 * Enable/Disable 
  * NFC radio and its ability to communicate
- * NFC Data Exchange Format
+ * NFC Data Exchange Format (DEPRECATED)
  * Peer-to-Peer mode
  * Polling mode
  * CPU boost mode

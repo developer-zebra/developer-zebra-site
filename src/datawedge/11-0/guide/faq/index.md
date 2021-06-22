@@ -45,7 +45,7 @@ A: Once DataWedge is set up and configured as desired on a device, settings can 
 
 1. **Config** – contains DataWedge settings, including all profiles and related configurations, and saves them to ‘datawedge.db’.
 2. **Profile** – contains individual profile settings, including how to capture, process, and output data acquired, and sames them to ‘dwprofile\_[profileName].db’, where [profileName] is the name of the profile.
-   See [Mass Deployment](../settings#massdeployment) for more information.
+   See [Mass Deployment](../admin) for more information.
 
 ## Q: How can I determine which features are supported with the specific DataWedge version on my device?
 

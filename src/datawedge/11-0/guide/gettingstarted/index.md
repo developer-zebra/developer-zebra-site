@@ -51,7 +51,7 @@ DataWedge provides the following primary functions and options (feature availabi
 #### Deployment
 
 - [Import and export settings](../settings)
-- Remotely configure and [mass-deploy settings](../settings/#massdeployment) via MDM
+- Remotely configure and [mass-deploy settings](../admin) via MDM
 - [Restore settings](../settings/#restoredefaults) to factory defaults
 - [Apply changes remotely](../settings/#autoimport) to update devices in the field
 - [Generate reports](../settings/#reportingdeprecated)
@@ -107,7 +107,7 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 
 **[Auto Import](../settings/#autoimport) –** provides the ability to automatically load pre-configured profiles or configuration files in DataWedge. This can be used for device remote deployment using tools such as third-party Enterprise Mobility Management (EMM) systems. DataWedge monitors a particular folder for the profile or configuration file. If a profile or configuration file is found, it imports the file to replace any existing configuration or profile.
 
-**[Mass Deployment](../settings/#massdeployment) -** DataWedge profiles and settings can be deployed to multiple devices either manually or with an EMM (Enterprise Mobility Management) software. The exported config file or profile can be automatically imported when placed in the `/enterprise/device/settings/datawedge/autoimport` directory.
+**[Mass Deployment](../admin) -** DataWedge profiles and settings can be deployed to multiple devices either manually or with an EMM (Enterprise Mobility Management) software. The exported config file or profile can be automatically imported when placed in the `/enterprise/device/settings/datawedge/autoimport` directory.
 
 **[Create a Profile and Associate App with Profile](../createprofile) -** By associating an app with the profile, the app calls on DataWedge to acquire data. Data capture input, processing, and output can be controlled through the profile.
 

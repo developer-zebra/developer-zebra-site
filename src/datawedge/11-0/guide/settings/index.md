@@ -107,11 +107,11 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 
 ---
 
-## Mass Deployment
+## Deployment
 
 Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a EMM (Enterprise Mobility Management) system. DataWedge 6.5 introduced improvements to the compatibility of exported Profiles. Profiles created with DataWedge 6.5 (or higher) will work on any Zebra device model running DataWedge 6.5 or higher. See [Export a Profile](#exportaprofile) for more information.
 
-For other methods of deployment, using StageNow and EMM, see the main [Mass Deployment](../admin) guide.
+For other methods of deployment, using StageNow and EMM, see the [Mass Deployment](../admin) guide.
 
 ---
 

@@ -7,17 +7,20 @@ productversion: "11.0"
 
 ## Overview
 
-DataWedge configuration can be deployed through the following distinct methods:
+After configuring DataWedge on a device, the DataWedge configuration can be exported to files (`datawedge.db` for settings, `dwprofile_<profilename>.db` for profile), then distributed to other devices using one of the following methods:
 
-1. **Manual File Copy -** After DataWedge is configured as desired on a device, [export the DataWedge configuration file(s)](../settings/#massdeployment) and manually copy them to other devices. 
-2. **StageNow -** A Zebra staging tool to create profiles for configuring Zebra devices. There are 2 methods of deployment with the use of [DataWedge Manager CSP](#datawedgemanagercsp):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan a staging barcode or tap on an NFC tag.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Export to an EMM (Enterprise Mobility Management).
-3. **EMM -** Deployment via an EMM can be performed using one of the following methods:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Push [DataWedge configuration files](../settings/#massdeployment) to devices.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use StageNow with [DataWedge Manager CSP](#datawedgemanagercsp) to export a profile to an EMM.<br>
+1. **Manual File Copy -** After DataWedge is configured as desired on a device, perform one of the following:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <b>[Export/Import DataWedge Files](../settings/#deployment) -</b> Export the DataWedge configuration file(s), copy the file(s) to another device, then import the file(s) on that device.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <b>[Auto Import](../settings/#autoimport) -</b> Export the DataWedge configuration file(s) and copy it to the `/enterprise/device/settings/datawedge/autoimport` folder. DataWedge automatically imports the file(s).<br>
+2. **StageNow -** With the exported DataWedge configuration file(s), use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to import the configuration file(s) from a specified path, or auto import the configuration file(s). Optionally, auto import can be disabled to prevent unauthorized changes. 
+3. **EMM -** DataWedge configuration files can be securely deployed via an EMM (Enterprise Mobility Management) using one of the following methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Push [DataWedge configuration files](../settings/#deployment) to devices.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Use [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) through [Zebra OEMConfig](/oemconfig).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Use [DataWedge Managed Configurations](#managedconfigurations).
+<!--create staging profiles. Then based on the staging profile created, securely deploy DataWedge using one of the following methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan a staging barcode or tap on an NFC tag.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Export to an EMM (Enterprise Mobility Management) via XML.-->
 
 **Zebra Managed Configurations** provides a single interface to configure Zebra Android device hardware and software. 
 **DataWedge Managed Configurations** are Managed Configurations specific for DataWedge and is a subset of **Zebra Managed Configurations**. 
@@ -27,17 +30,9 @@ DataWedge configuration can be deployed through the following distinct methods:
 2. **[Managed Configurations](#managedconfigurations) -** Use Android's Managed Configurations framework to remotely configure and deploy DataWedge configurations through an EMM.
 3. **StageNow or EMM with [DataWedge Manager CSP](#datawedgemanagercsp) -** Securely mass deploy DataWedge configuration with the underlying MX framework using StageNow or an EMM.
 -->
-More information on DataWedge Manager CSP and Managed Configurations is provided in the following sections.
+More information on [DataWedge Manager CSP](#datawedgemanagercsp) and [Managed Configurations](#managedconfigurations), see the sections that follow.
 
 **Note:** DataWedge Managed Configurations is based on Android's Managed Configurations architecture introduced in Android 11. Prior to Android 11, these configurations are supported in [DataWedge Manager CSP](/mx/datawedgemgr). Moving forward, Zebra recommends administrators to transition to Managed Configurations, which will replace DataWedge Manager CSP.
-
-<!--
----
-
-## File Distribution
-
-After configuring DataWedge on a device, the settings and profiles can be exported to files, then distributed to other devices either manually or using an EMM. Instructions to deploy DataWedge profile and config files are located in the [Mass Deployment](https://techdocs.zebra.com/datawedge/8-2/guide/settings/#massdeployment) section.
--->
 
 ---
 
@@ -150,7 +145,7 @@ Video demonstrating how to deploy and import a Document Capture/NextGen SimulSca
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yrtEHadshGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
-<!-- <p>See <a href="../settings#massdeployment">Mass Deployment</a> for more information.</p>
+<!-- <p>See <a href="../admin">Mass Deployment</a> for more information.</p>
 -->
 
 ---

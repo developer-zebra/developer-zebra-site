@@ -87,7 +87,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 **New** `Scanner.setParameter()` **and** `Scanner.getParameter()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy or those being added in the future.
 
-**A new [Extended Scanner Parameter guide](../extended_scanner_parameters)** explains the use of the new pass-through APIs. 
+**A new [Scanner Parameter Config API Guide](../extended_scanner_parameters)** explains the use of the new pass-through APIs. 
 
 **Supports MX 10.3, adding the following major features and enhancements**:
 * **New [App Manager](../../mx/appmgr) feature**: 

@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "8.3"
 devicetype: A
-info: This feature is deprecated and will be discontinued in a future MX version. Supported only on MC93, TC52, TC57, TC72, TC77 and TC8380 devices.
+info: DEPRECATED; This feature will be discontinued in a future MX version. Supported only on MC93, TC52, TC57, TC72, TC77 and TC8380 devices.
 parm:
   pivotal: No
   name: skipNdef

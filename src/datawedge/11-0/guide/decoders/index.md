@@ -320,11 +320,11 @@ decoders:
     decoderparm: decoder_us4state_fics
     decoderstate: true, false
   - type: section
-    title: Decode Lengths
+    title: Decode Lengths (for reference)
     decoder: decodelengths
     decoderexception: true
   - type: section
-    title: See Also
+    title: See Also (for reference)
     decoder: seealso
     decoderexception: true
 ---

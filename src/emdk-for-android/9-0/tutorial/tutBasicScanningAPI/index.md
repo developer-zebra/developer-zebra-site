@@ -166,7 +166,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 9. Write a method `initBarcodeManager()` to initialize the Barcode Manager object. 
 
 		:::java
-		private voidinitBarcodeManager() {
+		private void initBarcodeManager() {
 			// Get the feature object such as BarcodeManager object for accessing the feature.
 			barcodeManager =  (BarcodeManager)emdkManager.getInstance(EMDKManager.FEATURE_TYPE.BARCODE);
 			// Add external scanner connection listener.
@@ -179,7 +179,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 10. Write a method `initializeScanner()` to initialize and enable the scanner and its listeners by using the Barcode Manager object. The `enable()` method enables the scanner hardware. This method does not turn on the laser to start scanning, but makes the scanner available to the application. If the same scanner is enabled by another application, calling the `enable()` method results in a `ScannerException`. 
 
 		:::java
-		private voidinitScanner() {
+		private void initScanner() {
 			if (scanner == null) {
 				// Get default scanner defined on the device
 				scanner = barcodeManager.getDevice(BarcodeManager.DeviceIdentifier.DEFAULT);
@@ -246,14 +246,15 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 		if ((scanDataCollection != null) &&   (scanDataCollection.getResult() == ScannerResults.SUCCESS)) {
 			ArrayList<ScanData> scanData =  scanDataCollection.getScanData();
 			// Iterate through scanned data and prepare the data. 
-			Strfor (ScanData data :  scanData) {
-				// Get the scanned dataString barcodeData =  data.getData();
+			for (ScanData data :  scanData) {
+				// Get the scanned data
+				String barcodeData =  data.getData();
 				// Get the type of label being scanned
 				ScanDataCollection.LabelType labelType = data.getLabelType();
 				// Concatenate barcode data and label type
 				dataStr =  barcodeData + "  " +  labelType;
 			}
-				// Updates EditText with scanned data and type of label on UI thread.
+				// Update EditText with scanned data and type of label on UI thread.
 				updateData(dataStr);
 		}
 
@@ -262,7 +263,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 			:::java
 			// Variable to hold scan data length
 			private int dataLength=  0;
-			private voidupdateData(finalString result) {
+			private void updateData(finalString result) {
 				runOnUiThread(newRunnable() {
 					@Overridepublic voidrun() {
 					// Update the dataView EditText on UI thread with barcode data and its label type.
@@ -322,10 +323,10 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 16. The following helper function displays the status string on UI from status callbacks and exceptions.
 
 		:::java
-			private voidupdateStatus(final String status) {
+			private void updateStatus(final String status) {
 				runOnUiThread(newRunnable() {
 					@Override
-					public voidrun() {
+					public void run() {
 						// Update the status text view on UI thread with current scanner state
 						statusTextView.setText(""+  status);
 					}
@@ -335,7 +336,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 17. Scanner configuration changes should be done while the scanner is in IDLE state and according to get-modify-set approach. Also, Zebra recommends using the `ScannerConfig.isParamSupported(String param)` API to check whether the parameter is supported on the device dynamically prior to set.
 
 			:::java
-			private voidsetConfig() {
+			private void setConfig() {
 				if (scanner != null) {try {
 					// Get scanner config
 						ScannerConfig config = scanner.getConfig();
@@ -438,6 +439,37 @@ Make the following required changes in the application's build.gradle file:
 
 			:::xml
 			compileOnly ’com.symbol:emdk:+’
+
+
+	>* Include jcenter() in two (2) places so the build script knows where to get EMDK:
+
+	buildscript {
+	    
+	    repositories {
+	        google()
+	        jcenter()
+	        
+	    }
+	    dependencies {
+	        classpath 'com.android.tools.build:gradle:3.1.2'
+
+	        // NOTE: Do not place your application dependencies here; they belong
+	        // in the individual module build.gradle files
+	    }
+	}
+
+	allprojects {
+	    repositories {
+	        google()
+	        jcenter()
+	        
+	    }
+	}
+
+	task clean(type: Delete) {
+	    delete rootProject.buildDir
+	}
+
 
 ### Content Backup
 

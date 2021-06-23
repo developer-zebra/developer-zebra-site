@@ -440,6 +440,37 @@ Make the following required changes in the application's build.gradle file:
 			:::xml
 			compileOnly ’com.symbol:emdk:+’
 
+
+	>* Include jcenter() in two (2) places so the build script knows where to get EMDK:
+
+	buildscript {
+	    
+	    repositories {
+	        google()
+	        jcenter()
+	        
+	    }
+	    dependencies {
+	        classpath 'com.android.tools.build:gradle:3.1.2'
+
+	        // NOTE: Do not place your application dependencies here; they belong
+	        // in the individual module build.gradle files
+	    }
+	}
+
+	allprojects {
+	    repositories {
+	        google()
+	        jcenter()
+	        
+	    }
+	}
+
+	task clean(type: Delete) {
+	    delete rootProject.buildDir
+	}
+
+
 ### Content Backup
 
 Once the barcode is enabled, the `read` method is called on the scanner and the scanning API starts an asynchronous scan. The method puts the scanner in a state in which it can be turned ON either automatically or by pressing a hardware trigger as determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the scan data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call fails. Therefore, **Zebra recommends checking whether a read is pending by calling** `isReadPending()` before submitting a `read()`. A `read()` also can be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.

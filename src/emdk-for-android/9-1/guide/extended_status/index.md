@@ -6,7 +6,7 @@ productversion: '9.1'
 ---
 
 ##Introduction 
-The [EMDKResults](/emdk-for-android/9-1/api/EMDKResults) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
+The [EMDKResults](/emdk-for-android/9-1/api) class exposes an Enum ( EXTENDED_STATUS_CODE ). Inspecting that Enum after a profile has been processed could provide detailed error information that may have occured while being processed. 
 
 
 ### Section of EMDKConfig.xml

@@ -140,7 +140,7 @@ Profile Manager enhances Android IDE with a GUI-based tool for generating all th
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
 
 ##Using the Profile Manager API
-Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/9-1/api/core). These profiles will NOT be applied on the device until it is processed using these APIs.
+Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-android/9-1/api). These profiles will NOT be applied on the device until it is processed using these APIs.
 
 ## Multiple Ways to Access
 In the ProfileManager API, you will see three methods for `processProfile`. Essentially the last parameter, `extraData`, is one of three types:

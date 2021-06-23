@@ -1,0 +1,30 @@
+---
+csp: uimgr
+title: Clipboard Share Enable/Disable
+type: parm
+order: 165
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: ClipboardShare
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      name: Do not change
+      mx: "10.5"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Enable
+      mx: "10.5"
+      description: Allows contents of the clipboard to be shared among apps on other devices. 
+    - code: 2
+      devicetype: A,B
+      name: Disable
+      mx: "10.5"
+      description: Prevents contents of the clipboard from being shared among apps on other devices. 
+---
+
+Controls whether a device user has access to the Clipboard Sharing feature, which allows clipboard contents to be shared among apps on other devices. **Disabling this feature does NOT prevent pasting clipboard data from one app to another on the device**. 

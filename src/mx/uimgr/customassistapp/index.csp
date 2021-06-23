@@ -1,0 +1,22 @@
+---
+csp: uimgr
+title: Custom Assistant App Package Name
+type: parm
+order: 175
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: The Assistant App is "Custom" 
+  name: CustomizeAssistApp
+  type: string
+---
+
+Used to enter the Android Package Name of a user-defined digital assistant app as the default when an assistant app is used on the device. **Package Name must match that of an app already installed on the device**.
+
+**Parm value input rules**: 
+
+* String containing a valid Package Name of an app installed on the device
+
+Example: `com.google.android.apps.assistant`
+

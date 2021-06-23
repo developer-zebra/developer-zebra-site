@@ -1,0 +1,35 @@
+---
+csp: uimgr
+title: Assistant App
+type: parm
+order: 170
+mx: "10.5"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: AssistApp
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      name: Do not change
+      mx: "10.5"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Google Digital Assistant 
+      mx: "10.5"
+      description: Selects the Google Digital Assistant app as the default when such an app is used.
+    - code: 2
+      devicetype: A,B
+      name: Custom assistant app 
+      mx: "10.5"
+      description: Allows a custom digital assistant app to be selected as the default when such an app is used.
+    - code: 3
+      devicetype: A,B
+      name: None 
+      mx: "10.5"
+      description: Disables digital assistant app functionality.
+---
+
+Used to select a digital assistant app as the default when an assistant app is used on the device. 

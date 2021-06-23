@@ -17,23 +17,29 @@ The following section lists the major features and enhancements added to the MX 
 
 **MX 10.5 adds the following major features and enhancements**: 
 
-
-Beacon
-
-DevAdmin
-
+* **[BeaconMgr](/mx/beaconmgr) adds the ability to**: 
+ * Enable/Disable [Beaconing upon battery reinsertion](/mx/beaconmgr/#beaconing-on-reinsertion-onoff) into a device
+ * [Enter a Manufacturer Byte](/mx/beaconmgr/#manufacturer-byte) or custom value in the beacon advertising packet
+* **[DevAdmin](/mx/devadmin) adds the ability to: 
+ * Choose the [Lock Screen Wallpaper](/mx/devadmin/#lock-screen-wallpaper)
+ * Enable or limit [Lock Screen Notifications](/mx/devadmin/#lock-screen-notifications) from display
+ * Select whether the device user receives [notifications when apps are installed](/mx/devadmin/#silent-app-install), uninstalled or upgraded
 * **[Display Manager](/mx/displaymgr) adds ability to**: 
  * Set a [Secondary Display Mode](/mx/displaymgr/#secondary-display-mode) for an external monitor
+ * Select [Allowed Orientations](/mx/displaymgr/#allowed-orientations) for a device
+ * Select [Locked Orientation positions](/mx/displaymgr/#locked-orientation-positions) for a device
+ * Show/Hide a [Lock Override button](/mx/displaymgr/#lock-override-button-enabledisable) on a device
  * Force [Resizable Windows](/mx/displaymgr/#resizable-windows-onoff) for an app, overriding the manifest
  * Force [Resizable Activities](/mx/displaymgr/#activity-resizability) for an activity, overriding the manifest
-
-Intent
-
+* **[Intent](/mx/intent) adds the ability to**:
+ * [Enable a device sensor](/mx/intent/#mode) to trigger or cancel an intent
+ * [Select the device sensor](/mx/intent/#sensor-identifier) that triggers an intent
 * **[UI Manager](/mx/uimgr) adds ability to**: 
  * Set [External Keyboard Layout](/mx/uimgr/#external-keyboard-action) (language) preference
  * [Add or replace a Keyboard Layout](/mx/uimgr/#external-keyboard-name) (language) for an external keyboard
-
-WorryFree
+ * Enable/Disable [Clipboard Sharing](/mx/uimgr/#clipboard-share-enabledisable)
+ * [Select digital assistant app](/mx/uimgr/#assistant-app) to use on the device
+ * Specify a [custom digital assistant app](/mx/uimgr/#custom-assistant-app-package-name) to use on the device
 
 ### Added in MX 10.4
 

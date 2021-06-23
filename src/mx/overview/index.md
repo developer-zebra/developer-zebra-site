@@ -20,7 +20,7 @@ The following section lists the major features and enhancements added to the MX 
 * **[BeaconMgr](/mx/beaconmgr) adds the ability to**: 
  * Enable/Disable [Beaconing upon battery reinsertion](/mx/beaconmgr/#beaconing-on-reinsertion-onoff) into a device
  * [Enter a Manufacturer Byte](/mx/beaconmgr/#manufacturer-byte) or custom value in the beacon advertising packet
-* **[DevAdmin](/mx/devadmin) adds the ability to: 
+* **[DevAdmin](/mx/devadmin) adds the ability to**: 
  * Choose the [Lock Screen Wallpaper](/mx/devadmin/#lock-screen-wallpaper)
  * Enable or limit [Lock Screen Notifications](/mx/devadmin/#lock-screen-notifications) from display
  * Select whether the device user receives [notifications when apps are installed](/mx/devadmin/#silent-app-install), uninstalled or upgraded

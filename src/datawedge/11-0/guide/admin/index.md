@@ -1,5 +1,5 @@
 ---
-title: Mass Deployment
+title: Deployment
 layout: guide.html
 product: DataWedge
 productversion: "11.0"
@@ -7,38 +7,68 @@ productversion: "11.0"
 
 ## Overview
 
-After configuring DataWedge on a device, the DataWedge configuration can be exported to files (`datawedge.db` for settings, `dwprofile_<profilename>.db` for profile), then distributed to other devices using one of the following methods:
+DataWedge configurations can be deployed to devices either manually or via mass deployment. There are 2 methods for secure mass deployment: StageNow or EMM (Enterprise Management Mobility).
 
-1. **Manual File Copy -** After DataWedge is configured as desired on a device, perform one of the following:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <b>[Export/Import DataWedge Files](../settings/#deployment) -</b> Export the DataWedge configuration file(s), copy the file(s) to another device, then import the file(s) on that device.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <b>[Auto Import](../settings/#autoimport) -</b> Export the DataWedge configuration file(s) and copy it to the `/enterprise/device/settings/datawedge/autoimport` folder. DataWedge automatically imports the file(s).<br>
-2. **StageNow -** With the exported DataWedge configuration file(s), use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to import the configuration file(s) from a specified path, or auto import the configuration file(s). Optionally, auto import can be disabled to prevent unauthorized changes. 
-3. **EMM -** DataWedge configuration files can be securely deployed via an EMM (Enterprise Mobility Management) using one of the following methods:<br>
+### Prerequisites
+
+Generate DataWedge configuration file(s) as follows:
+1. Configure DataWedge as desired on a device.
+2. [Create a DataWedge profile](../createprofile), specifying how to acquire, process, and output data.
+3. To distribute DataWedge configurations including multiple profiles and settings, [export the config file](../settings/#exportaconfig) (`datawedge.db`).
+4. To distribute a single DataWedge profile, [export the profile](../settings/#exportaprofile) (`dwprofile_[profilename].db`, where [profilename] is the name of the profile).
+
+---
+
+## Deployment Methods
+
+After fulfilling the prerequisites to generate DataWedge configuration file(s), select one of the following methods of deployment.
+
+### Manual Deployment
+
+To deploy the DataWedge configuration file manually:
+1. Copy the DataWedge configuration file to the target device, e.g. the SD card folder.
+2. [Import the file](../settings/#deployment) by browsing to the folder location and selecting the file.
+
+### Mass Deployment
+
+There are 2 methods for mass deployment:
+* **Using StageNow - follow the steps below:**
+    1. Host the DataWedge configuration file on an FTP or HTTP server.
+    2. Create a [StageNow](/stagenow) profile to:<br>
+        A. Copy the configuration file from the host server to the device using [File Manager CSP](/mx/filemgr). If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.<br> 
+        B. Specify the location of the configuration file on the device using [DataWedge Manager CSP](#datawedgemanagercsp). <br>
+        C. Generate the staging barcode.
+    3. Scan the generated barcode using StageNow client on the device.
+* **Using EMM - select one of the following methods:**
+    * Push the DataWedge configuration file to the [auto import](../settings/#autoimport) file path `/enterprise/device/settings/datawedge/autoimport` on the device to automatically import the configuration.
+    * Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM:
+        1. Copy the DataWedge configuration file to a specific folder on the device using EMM. If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.
+        2. Create a StageNow profile specifying the location of the file using [DataWedge Manager CSP](#datawedgemanagercsp). Export the .XML for EMM.
+        3. Push the .XML generated to devices using EMM.
+    * Use [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) through [Zebra OEMConfig](/oemconfig).
+    * Use [DataWedge Managed Configurations](#managedconfigurations).
+
+<!-- 
+1. **Manual File Copy -** Perform one of the following:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <b>[Export/Import DataWedge Files](../settings/#deployment) -</b> Manually export the DataWedge configuration file(s), copy the file(s) to another device, then import the file(s) onto that device.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <b>[Auto Import](../settings/#autoimport) -</b> Export the DataWedge configuration file(s) and copy it to the auto import folder: `/enterprise/device/settings/datawedge/autoimport`. DataWedge then automatically imports the configuration file(s).<br>
+2. **StageNow -** [Export the DataWedge configuration file(s)](../settings/#deployment), then use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to [import the file(s) from a specified path](#importconfigurationfilefromspecifiedpath), or [auto import the file(s)](#enabledisableautoimportofconfigurationfile). Optionally, auto import can be disabled to prevent unauthorized changes. 
+3. **EMM -** [Export the DataWedge configuration file(s)](../settings/#deployment), then securely deploy them via an EMM (Enterprise Mobility Management) using one of the following methods:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Push [DataWedge configuration files](../settings/#deployment) to devices.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export the .XML for EMM.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Use [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) through [Zebra OEMConfig](/oemconfig).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Use [DataWedge Managed Configurations](#managedconfigurations).
-<!--create staging profiles. Then based on the staging profile created, securely deploy DataWedge using one of the following methods:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Scan a staging barcode or tap on an NFC tag.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Export to an EMM (Enterprise Mobility Management) via XML.-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Use [DataWedge Managed Configurations](#managedconfigurations).-->
+**Note:** 
+* [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) provides a single interface to configure Zebra Android device hardware and software. [DataWedge Managed Configurations](#managedconfigurations) are Managed Configurations specific for DataWedge and is a subset of **Zebra Managed Configurations**. 
+* [DataWedge Managed Configurations](#managedconfigurations) is based on Android's Managed Configurations architecture introduced in Android 11. Prior to Android 11, these configurations are supported in [DataWedge Manager CSP](/mx/datawedgemgr). Moving forward, Zebra recommends administrators to transition to Managed Configurations, which will replace DataWedge Manager CSP.
 
-**Zebra Managed Configurations** provides a single interface to configure Zebra Android device hardware and software. 
-**DataWedge Managed Configurations** are Managed Configurations specific for DataWedge and is a subset of **Zebra Managed Configurations**. 
-
-<!--
-1. **[DataWedge Files](#datawedgefiles) -** After DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or by using an EMM (Enterprise Mobility Management) system.
-2. **[Managed Configurations](#managedconfigurations) -** Use Android's Managed Configurations framework to remotely configure and deploy DataWedge configurations through an EMM.
-3. **StageNow or EMM with [DataWedge Manager CSP](#datawedgemanagercsp) -** Securely mass deploy DataWedge configuration with the underlying MX framework using StageNow or an EMM.
--->
-More information on [DataWedge Manager CSP](#datawedgemanagercsp) and [Managed Configurations](#managedconfigurations), see the sections that follow.
-
-**Note:** DataWedge Managed Configurations is based on Android's Managed Configurations architecture introduced in Android 11. Prior to Android 11, these configurations are supported in [DataWedge Manager CSP](/mx/datawedgemgr). Moving forward, Zebra recommends administrators to transition to Managed Configurations, which will replace DataWedge Manager CSP.
+For more information on [DataWedge Manager CSP](#datawedgemanagercsp) and [Managed Configurations](#managedconfigurations), see the sections that follow.
 
 ---
 
 ## DataWedge Manager CSP
 
-**DataWedge Manager** CSP (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [StageNow](/stagenow) to create profiles specific to configuring DataWedge and deploy through StageNow or an EMM. Features that can be configured include:
+**DataWedge Manager CSP** (Configuration Service Provider) securely enables mass configuration deployment with the underlying [MX](/mx/overview) framework, an XML-based communications platform that serves as a common interface for managing capabilities and behaviors of Zebra Android devices. The CSP is an MX plug-in that can set or query a particular configuration, allowing DataWedge to receive and process XML files. This lets device administrators utilize [StageNow](/stagenow) to create profiles specific to configuring DataWedge and deploy through StageNow or an EMM. Features that can be configured include:
 
 - Control access to intent APIs
 - Enable/Disable DataWedge UI
@@ -174,49 +204,9 @@ Requirements for use of Managed Configurations with DataWedge:
 
 The process to setup an EMM console to use Managed Configurations varies depending on the EMM in use. The general steps follow:
 
-1. Point EMM console to DataWedge schema to display data-driven UI.
-2. Create _Transaction(s)_ using Managed Configurations described in schema.
-3. Push _Transaction(s)_ to device(s) for consumption by DataWedge.
-
-
----
-
-### Use Managed Configurations Programmatically
-
-Instructions to use Managed Configurations through your app:
-1. **Declare the Managed Configurations schema in your manifest.** To define your app's Managed Configuration options, place the following element within your manifest's `<application>` element:
-
-        <meta-data 
-            android:name="android.content.APP_RESTRICTIONS" 
-            android:resource="@xml/app_restrictions" />
-
-2. **Define Managed Configurations schema.** Create a file named `app_restrictions.xml` in your app's `res/xml` directory. The structure of that file is described in the reference for [Restrictions Manager](https://developer.android.com/reference/android/content/RestrictionsManager). The file has a single top-level `<restrictions>` element, which contains one `<restriction>` child element for every configuration option in the
-app. 
-       
-        <?xml version="1.0" encoding="utf-8"?>
-        
-        <restrictions xmlns:android="http://schemas.android.com/apk/res/android">
-        <restriction
-        android:key="dataWedgeStep"
-        android:title="@string/dataWedgeStep_title"
-        android:restrictionType="bundle"
-        android:description="@string/dataWedgeStep_description" >
-        <restriction
-        android:key="dataWedgeManualConfiguration"
-        android:title="@string/dataWedgeManualConfiguration_title"
-        android:restrictionType="choice"
-        android:entries="@array/dataWedgeManualConfiguration_entries"
-        android:entryValues="@array/dataWedgeManualConfiguration_values"
-        android:description="@string/dataWedgeManualConfiguration_description"
-        />
-        <restriction
-        ...
-        />
-        </restriction>
-        </restrictions>
-Configure app restrictions using Managed Configurations as described in the schema. See [App Restrictions](#apprestrictions) section that follows, which describes the available options.
-3. Other instructions,...
-4. **Push a policy that deploys the created Managed Configurations to the device(s).**
+1. Point EMM console to the DataWedge schema based on the package name `com.symbol.datawedge` to display the data-driven UI.
+2. Create or update Managed Configurations described in the schema.
+3. Push the updated Managed Configurations to the device to be consumed by DataWedge.
 
 ---
 
@@ -384,12 +374,6 @@ Configuration Settings sets the file path for files, such as configuration or te
   </tr>
   
 </table>
-
----
-
-
-
-
 
 ---
 

@@ -25,8 +25,8 @@ content-items:
     url: /datawedge/11-0/guide/programmers-guides/articles
   - type: section
     level: 4
-    title: Mass Deployment
-    text: Learn how to mass deploy DataWedge configurations.
+    title: Deployment
+    text: Learn how to deploy DataWedge configurations.
     url: /datawedge/11-0/guide/admin
   - type: section
     level: 4

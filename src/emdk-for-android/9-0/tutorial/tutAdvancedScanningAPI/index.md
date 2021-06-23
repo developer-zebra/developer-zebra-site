@@ -1,5 +1,5 @@
 ---
-title: Advanced with using Barcode API
+title: Advanced Barcode API Usage
 layout: guide.html
 product: EMDK For Android
 productversion: '9.0'

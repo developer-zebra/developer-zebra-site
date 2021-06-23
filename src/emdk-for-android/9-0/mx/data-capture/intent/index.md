@@ -48,7 +48,7 @@ and the Intent category must be:
 ## EMDK Intent Output
 Allows configuration of the Intent Feature for the profile. The Intent Output Feature allows the captured data to be sent to an application in the form of an implicit Intent. Refer to the Android Developer web site for more information, http://developer.android.com.
 
-* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-0/guide/profile-manager) for more information.
+* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-0/api) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-0/guide/profile-manager) for more information.
 * Enabled - Enables or disables this feature. 
 * Intent action - Enter the Intent Action name (required). The Intent Filter action must match this.
 * Intent category - Enter the Intent Category name (required). The Intent Filter category must match this.
@@ -60,7 +60,7 @@ Allows configuration of the Intent Feature for the profile. The Intent Output Fe
 
 > Note: Most scanning applications might want the user to be able to decode data and for that decode data to be sent to the *current* activity but not necessarily displayed. If this is the case, then the activity needs to be marked as ‘singleTop’ in its AndroidManifest.xml file. If your activity is not defined as singleTop, then on every decode, the system will create another copy of your Activity and send the decode data to this second copy.
 
-> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead. 
+> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api) instead. 
 
 ## Basic Data Formatting
 Allows configuration of any data formatting. When disabled, any data is passed on without modification.

@@ -13,7 +13,7 @@ This tutorial will walk you through adding [Intent Output](/emdk-for-android/9-0
 
 The tutorial uses EMDK V 2.1 that has organized existing features as well as got some new features that would be discussed later in the tutorial.
 
->**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
+>**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api) instead.
 
 ###Prerequisites
 * Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/9-0/tutorial/tutdatacaptureprofile)

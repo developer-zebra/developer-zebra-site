@@ -24,14 +24,14 @@ The `Intent`, `Keystroke` or `IP` feature in the Profile Manager is used to defi
 ## IP Output
 Use to configure the Keystroke Output Feature for the profile.
 
-* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-0/api/ProfileManager) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-0/guide/profile-manager) for more information.
+* Name - The name field is used by the EMDK to identify this particular feature parameter set when you want to manage just part of the profile programmatically using the EMDK [ProfileManager](/emdk-for-android/9-0/api) API. This can be useful if you have multiple types of the same feature and want to update only one of them without having to update the whole profile. See [EMDK Profiles Overview](/emdk-for-android/9-0/guide/profile-manager) for more information.
 * Enabled - Enables or disables this feature. 
 * Remote Wedge - Enable or disable the Remote Wedge option (default - enabled). Remote Wedge is used with the IPWedge application.
 * Protocol - Select the protocol used by the remote application. Options: TCP (default) or UDP.
 * IP address - Enter the IP address used by the remote application (default - 0.0.0.0).
 * Port - Enter the port number used by the remote application (default - 58627).
 
-> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead. 
+> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api) instead. 
 
 ## Basic Data Formatting 
 Allows the configuration of any data formatting. When disabled, any data is passed on without modification.

@@ -27,4 +27,4 @@ parm:
       description: Prevents contents of the clipboard from being shared among apps on other devices. 
 ---
 
-Controls whether a device user has access to the Clipboard Sharing feature, which allows clipboard contents to be shared among apps on other devices. **Disabling this feature does NOT prevent pasting clipboard data from one app to another on the device**. 
+Controls whether a device user has access to Clipboard Share, an Android feature that automates Clipboard data sharing among apps on and off the device. **Disabling Clipboard Share does NOT prevent a user from manually pasting Clipboard data from one app to another on the device. To prevent this action, see [Clipboard Usage](#clipboardusage)**. 

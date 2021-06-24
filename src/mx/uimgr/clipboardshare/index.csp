@@ -2,7 +2,7 @@
 csp: uimgr
 title: Clipboard Share Enable/Disable
 type: parm
-order: 165
+order: 7
 mx: "10.5"
 devicetype: A,B
 parm:
@@ -27,4 +27,4 @@ parm:
       description: Prevents contents of the clipboard from being shared among apps on other devices. 
 ---
 
-Controls whether a device user has access to Clipboard Share, an Android feature that automates Clipboard data sharing among apps on and off the device. **Disabling Clipboard Share does NOT prevent a user from manually pasting Clipboard data from one app to another on the device. To prevent this action, see [Clipboard Usage](#clipboardusage)**. 
+Controls whether a device user has access to Clipboard Share, an Android feature that automates Clipboard data sharing among apps on and off the device. **Disabling Clipboard Share does NOT prevent a user from manually pasting Clipboard data from one app to another on the device. To prevent this action, see [Clipboard Usage](/mx/uimgr/#clipboardusage)**. 

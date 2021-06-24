@@ -16,13 +16,13 @@ parm:
       osx: "4.2"
       devicetype: A
       name: True
-      description: Clears the clipboard, erasing any content that was previously copied and preventing such content from being pasted.
+      description: Clears the Clipboard, erasing any content that was previously copied and preventing such content from being pasted elsewhere.
     - code: false
       devicetype: A
       name: False 
       mx: "4.2"
       osx: "4.2"
-      description: Causes no change to the contents of the clipboard.
+      description: Causes no change to the contents of the Clipboard.
 ---
 
-Used to immediately clear the contents of the clipboard, preventing data that was stored there from being pasted at any time thereafter. If use of the Clipboard function is allowed by an application, it might be advisable to use this parm to clear sensitive information from clipboard upon exiting. This would ensure that such information could not later be pasted into another application.
+Used to immediately clear the contents of the Clipboard, preventing data that was stored there from being pasted at any time thereafter. If Clipboard functions are allowed by an app that handles sensitive data, **Zebra recommends using this parameter to clear sensitive data from Clipboard upon exiting the app to prevent the data from later being pasted elsewhere**.

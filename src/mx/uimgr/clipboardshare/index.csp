@@ -19,12 +19,12 @@ parm:
       devicetype: A,B
       name: Enable
       mx: "10.5"
-      description: Allows contents of the clipboard to be shared among apps on other devices. 
+      description: Allows use of Android Clipboard Share functions when using the on-device Clipboard, potentially allowing Clipboard contents to be shared among apps on and off the device. 
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "10.5"
-      description: Prevents contents of the clipboard from being shared among apps on other devices. 
+      description: Blocks Android Clipboard Share functions when using the on-device Clipboard. 
 ---
 
-Controls whether a device user has access to Clipboard Share, an Android feature that automates Clipboard data sharing among apps on and off the device. **Disabling Clipboard Share does NOT prevent a user from manually pasting Clipboard data from one app to another on the device. To prevent this action, see [Clipboard Usage](/mx/uimgr/#clipboard-usage)**. 
+Controls whether a device user has access to Android Clipboard Share, features that automate Clipboard data sharing among apps on and off the device. **Disabling Clipboard Share does NOT prevent a user from manually pasting Clipboard data from one app to another on the device. To prevent this action, see [Clipboard Usage](/mx/uimgr/#clipboard-usage)**. 

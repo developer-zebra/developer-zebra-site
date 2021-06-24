@@ -4,26 +4,34 @@ title: Lock Override Button Enable/Disable
 type: parm
 order: 8
 mx: "10.5"
+osx: "10.11"
+apilevel: "29"
 devicetype: A
 parm:
+  presentif: Auto Rotate is set to "Turn Off"
   pivotal: No
   name: LockOverrideButton
   type: list
   list:
     - code: 0
       mx: "10.5"
-      apilevel: "27"
+      osx: "10.11"
+      apilevel: "29"
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "10.5"
+      osx: "10.11"
+      apilevel: "29"
       description: Allows the Lock Override button to be shown on the device screen.
     - code: 2
       devicetype: A
       name: Disable
       mx: "10.5"
+      osx: "10.11"
+      apilevel: "29"
       description: Prevents the Lock Override button from being shown on the device screen.
 ---
 

@@ -20,6 +20,7 @@ The following section lists the major features and enhancements added to the MX 
 * **[BeaconMgr](/mx/beaconmgr) adds the ability to**: 
  * Enable/Disable [Beaconing upon battery reinsertion](/mx/beaconmgr/#beaconing-on-reinsertion-onoff) into a device
  * [Enter a Manufacturer Byte](/mx/beaconmgr/#manufacturer-byte) or custom value in the beacon advertising packet
+ * [Enter a Reference RSSI](/mx/beaconmgr/#reference-rssi) for extrapolating the relative distance to a device beacon
 * **[DevAdmin](/mx/devadmin) adds the ability to**: 
  * Choose the [Lock Screen Wallpaper](/mx/devadmin/#lock-screen-wallpaper)
  * Enable or limit [Lock Screen Notifications](/mx/devadmin/#lock-screen-notifications) from display
@@ -40,6 +41,7 @@ The following section lists the major features and enhancements added to the MX 
  * Enable/Disable [Clipboard Sharing](/mx/uimgr/#clipboard-share-enabledisable)
  * [Select digital assistant app](/mx/uimgr/#assistant-app) to use on the device
  * Specify a [custom digital assistant app](/mx/uimgr/#custom-assistant-app-package-name) to use on the device
+ * Select a [Home Screen Wallpaper](/mx/uimgr/#home-screen-wallpaper) 
 
 ### Added in MX 10.4
 

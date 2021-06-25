@@ -31,25 +31,33 @@ To deploy the DataWedge configuration file manually:
 
 ### Mass Deployment
 
-There are 2 methods for mass deployment of the DataWedge configuration file:
-* **Using StageNow -** follow the steps below to create a StageNow profile and generate the barcode to scan and deploy the configuration:
+There are 2 methods for mass deployment of DataWedge configurations:
+* **Using StageNow -** create a StageNow profile and generate the barcode to scan and deploy the configuration:
     1. **Host the DataWedge configuration file** on an FTP or HTTP server.
-    2. Create a [StageNow](/stagenow) profile to:<br>
+    2. **Create a [StageNow](/stagenow) profile** to:<br>
         A. Select **one** of the following:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) **Copy the configuration file from the host server to the device to auto import:** Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Specify the target file path, using the [Auto Import](../settings/#autoimport) feature: `/enterprise/device/settings/datawedge/autoimport`.<br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) **Copy the configuration file from a specific location accessible by DataWedge:** Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Using [DataWedge Manager CSP](/mx/datawedgemgr), [import the configuration file from a specified path](#importconfigurationfilefromspecifiedpath). <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) If using **auto import,** copy the configuration file from the host server to the auto import folder on the device as follows: Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Specify the target file path, using the [Auto Import](../settings/#autoimport) feature: `/enterprise/device/settings/datawedge/autoimport`.<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) If using a **specific folder location**, copy the configuration file from a specific location accessible by DataWedge as follows: Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Using [DataWedge Manager CSP](/mx/datawedgemgr), [import the configuration file from a specified path](#importconfigurationfilefromspecifiedpath). <br>
         B. **Generate the staging barcode.**
-    3. **Scan the generated barcode** using StageNow client on the device to copy the configuration file and deploy it to the device.
-* **Using EMM - select one of the following methods:**
-    * Push the **DataWedge configuration file to the [auto import](../settings/#autoimport) file path `/enterprise/device/settings/datawedge/autoimport` on the device to automatically import the configuration.
-    * Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM:
-        1. Copy the DataWedge configuration file to a specific folder on the device using EMM. If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.
-        2. Create a StageNow profile specifying the location of the file using [DataWedge Manager CSP](#datawedgemanagercsp). Export the .XML for EMM.
+    3. **Scan the generated barcode** with StageNow client on the device.
+* **Using EMM -** select one of the following methods:
+    * Push the DataWedge configuration file to the [auto import](../settings/#autoimport) file path `/enterprise/device/settings/datawedge/autoimport` on the device to automatically import the configuration.
+    * Use [StageNow](/stagenow) to export for EMM:
+        1. Select **one** of the following:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. If using **auto import,** copy the configuration file from the host server to the auto import folder on the device as follows: Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Specify the target file path, using the [Auto Import](../settings/#autoimport) feature: `/enterprise/device/settings/datawedge/autoimport`.<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. If using a **specific folder location**, copy the configuration file from a specific location accessible by DataWedge as follows: Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Using [DataWedge Manager CSP](/mx/datawedgemgr), [import the configuration file from a specified path](#importconfigurationfilefromspecifiedpath). <br>
+        2. Export the .XML for EMM.
         3. Push the .XML generated to devices using EMM.
     * Use [Zebra Managed Configurations](/oemconfig/mc/#datawedgeconfiguration-1) through [Zebra OEMConfig](/oemconfig).
     * Use [DataWedge Managed Configurations](#managedconfigurations).
 
 <!-- 
+    * Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM:
+        1. Copy the DataWedge configuration file to a specific folder on the device using EMM. If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.
+        2. Create a StageNow profile using [DataWedge Manager CSP](/mx/datawedgemgr) to[import the configuration file from a specified path](#importconfigurationfilefromspecifiedpath). Export the .XML for EMM.
+        3. Push the .XML generated to devices using EMM.
+
+
 1. **Manual File Copy -** Perform one of the following:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <b>[Export/Import DataWedge Files](../settings/#deployment) -</b> Manually export the DataWedge configuration file(s), copy the file(s) to another device, then import the file(s) onto that device.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <b>[Auto Import](../settings/#autoimport) -</b> Export the DataWedge configuration file(s) and copy it to the auto import folder: `/enterprise/device/settings/datawedge/autoimport`. DataWedge then automatically imports the configuration file(s).<br>
@@ -94,9 +102,17 @@ See [DataWedge Manager CSP](/mx/datawedgemgr/) for more information.
 
 ### Control Access to Intent APIs
 
-Controls whether DataWedge APIs are accessible from all apps or only whitelisted apps. Affected DataWedge APIs are categorized to four groups: Configuration, Notification, Query, and Runtime. Refer to the [programmers guide](../programmers-guides/secure-intent-apis) for more details.<br>
-**Note:** Supported only on devices with DataWedge 8.1 or later.<br>
+Restrict app access to DataWedge, preventing unauthorized configuration changes, by controlling whether DataWedge APIs are accessible from all apps or only whitelisted apps. DataWedge APIs are categorized as follows:
 
+* **Configuration APIs -** Intent APIs related to retrieving, setting or removing DataWedge configuration (e.g. SetConfig, GetConfig, etc.). 
+* **Notification APIs -** Intent APIs related to retrieving status for the DataWedge scanner, profile or configuration (e.g. Scanner Status, Configuration Change, etc.).
+* **Query APIs -** Intent APIs related to retrieving DataWedge information or enumerating scanners (e.g. Enumerate Scanners, Get Active Profile, etc.). 
+* **Runtime APIs -** Intent APIs related to DataWedge runtime configuration changes (e.g. Switch To Profile, Switch Scanner Params, etc.). 
+
+Refer to the [Control Access to Intent APIs guide](../programmers-guides/secure-intent-apis) for more details.<br>
+**Note:** Supported only on devices with DataWedge 8.1 or later.
+
+<!-- 
 #### Configuration APIs
 
 Intent APIs related to retrieving, setting or removing DataWedge configuration (e.g. SetConfig, GetConfig, etc.). <br>
@@ -120,6 +136,7 @@ Intent APIs related to retrieving DataWedge information or enumerating scanners 
 Intent APIs related to DataWedge runtime configuration changes (e.g. Switch To Profile, Switch Scanner Params, etc.). <br>
 **Parm Name:** Runtime APIs<br>
 **Supported values:** 1 – Uncontrolled, 2 – Controlled, 86 – Unchanged.
+-->
 
 ---
 

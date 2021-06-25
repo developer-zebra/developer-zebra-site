@@ -38,7 +38,7 @@ The following section lists the major features and enhancements added to the MX 
 * **[UI Manager](/mx/uimgr) adds ability to**: 
  * Set [External Keyboard Layout](/mx/uimgr/#external-keyboard-action) (language) preference
  * [Add or replace a Keyboard Layout](/mx/uimgr/#external-keyboard-name) (language) for an external keyboard
- * Enable/Disable [Clipboard Sharing](/mx/uimgr/#clipboard-share-enabledisable)
+ * Enable/Disable [Clipboard Share](/mx/uimgr/#clipboard-share) to control off-device data sharing
  * [Select digital assistant app](/mx/uimgr/#assistant-app) to use on the device
  * Specify a [custom digital assistant app](/mx/uimgr/#custom-assistant-app-package-name) to use on the device
  * Select a [Home Screen Wallpaper](/mx/uimgr/#home-screen-wallpaper) 

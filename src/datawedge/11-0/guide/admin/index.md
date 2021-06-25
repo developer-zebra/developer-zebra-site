@@ -21,7 +21,7 @@ Generate DataWedge configuration file(s) as follows:
 
 ## Deployment Methods
 
-After fulfilling the prerequisites to generate DataWedge configuration file(s), select one of the following methods of deployment.
+After fulfilling the prerequisites to generate the DataWedge configuration file(s), select one of the following methods of deployment.
 
 ### Manual Deployment
 
@@ -31,16 +31,17 @@ To deploy the DataWedge configuration file manually:
 
 ### Mass Deployment
 
-There are 2 methods for mass deployment:
-* **Using StageNow - follow the steps below:**
-    1. Host the DataWedge configuration file on an FTP or HTTP server.
+There are 2 methods for mass deployment of the DataWedge configuration file:
+* **Using StageNow -** follow the steps below to create a StageNow profile and generate the barcode to scan and deploy the configuration:
+    1. **Host the DataWedge configuration file** on an FTP or HTTP server.
     2. Create a [StageNow](/stagenow) profile to:<br>
-        A. Copy the configuration file from the host server to the device using [File Manager CSP](/mx/filemgr). If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.<br> 
-        B. Specify the location of the configuration file on the device using [DataWedge Manager CSP](#datawedgemanagercsp). <br>
-        C. Generate the staging barcode.
-    3. Scan the generated barcode using StageNow client on the device.
+        A. Select **one** of the following:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) **Copy the configuration file from the host server to the device to auto import:** Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Specify the target file path, using the [Auto Import](../settings/#autoimport) feature: `/enterprise/device/settings/datawedge/autoimport`.<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) **Copy the configuration file from a specific location accessible by DataWedge:** Using [File Manager CSP](/mx/filemgr), specify the source file path, the path of the configuration file on the host server. Using [DataWedge Manager CSP](/mx/datawedgemgr), [import the configuration file from a specified path](#importconfigurationfilefromspecifiedpath). <br>
+        B. **Generate the staging barcode.**
+    3. **Scan the generated barcode** using StageNow client on the device to copy the configuration file and deploy it to the device.
 * **Using EMM - select one of the following methods:**
-    * Push the DataWedge configuration file to the [auto import](../settings/#autoimport) file path `/enterprise/device/settings/datawedge/autoimport` on the device to automatically import the configuration.
+    * Push the **DataWedge configuration file to the [auto import](../settings/#autoimport) file path `/enterprise/device/settings/datawedge/autoimport` on the device to automatically import the configuration.
     * Use [StageNow](/stagenow) with [DataWedge Manager CSP](#datawedgemanagercsp) to export for EMM:
         1. Copy the DataWedge configuration file to a specific folder on the device using EMM. If using the [Auto Import](../settings/#autoimport) feature, copy the file to the auto import file path: `/enterprise/device/settings/datawedge/autoimport`.
         2. Create a StageNow profile specifying the location of the file using [DataWedge Manager CSP](#datawedgemanagercsp). Export the .XML for EMM.
@@ -78,7 +79,7 @@ For more information on [DataWedge Manager CSP](#datawedgemanagercsp) and [Manag
 - Import NextGen SimulScan Templates
 <br>
 
-See [DataWedge Manager](/mx/datawedgemgr/) for more information.
+See [DataWedge Manager CSP](/mx/datawedgemgr/) for more information.
 <br>
 
 **Note:** When StageNow profiles are used to configure DataWedge Manager CSP, profiles created with MX 10.1 can result to a failure in some devices running DataWedge 8.1 and 8.2. Instead, select MX 10.0 when creating the StageNow profile with DataWedge Manager CSP. This is resolved with DataWedge 8.2.62 or higher. Until DataWedge is updated to 8.2.62, features specific to DataWedge Manager CSP with MX 10.1 may not be functional.

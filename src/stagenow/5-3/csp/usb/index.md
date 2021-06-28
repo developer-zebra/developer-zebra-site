@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: usbmgr
 product: StageNow
-productversion: '5.2'
+productversion: '5.3'
 ---
 
 

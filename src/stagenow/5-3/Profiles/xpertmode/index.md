@@ -2,7 +2,7 @@
 title: Xpert Mode
 layout: guide.html
 product: StageNow
-productversion: '5.2'
+productversion: '5.3'
 ---
 Xpert Mode allows enhanced control of the options and processes offered through the Profile Wizards and Setting Types in order to build custom profiles.
 

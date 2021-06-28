@@ -34,7 +34,7 @@ content-items:
     text: Automates configuration of a device's network settings to enable new or refreshed devices to access Google Zero Touch servers for Device-Owner EMM Enrollment with no user interaction.
     url: /stagenow/5-2/Profiles/zerotouch
 product: StageNow
-productversion: '5.2'
+productversion: '5.3'
 ---
  
 

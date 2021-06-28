@@ -3,7 +3,7 @@ title: Hosts Manager
 layout: csp-detail.html
 csp: hostsmgr
 product: StageNow
-productversion: '5.2'
+productversion: '5.3'
 ---
 
 

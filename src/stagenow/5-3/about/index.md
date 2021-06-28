@@ -11,9 +11,9 @@ languages:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX4jmpAOOQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-StageNow 5.2 User Guide, Revision A; <!-- StageNow MN-003401; --> Jan., 2021
+StageNow 5.3 User Guide, Revision A; <!-- StageNow MN-003401; --> Jan., 2021
 
-#### Covers StageNow 5.2
+#### Covers StageNow 5.3
 
 ## Overview
 
@@ -28,7 +28,6 @@ The following software must be installed on the staging workstation prior to usi
  * Google Chrome 35 or higher 
  * Internet Explorer 9 or higher
 
-> **NOTE: StageNow no longer supports Wi-Fi hotspot staging**. 
 
 -----
 
@@ -52,7 +51,47 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## What's New in v5.2
+## What's New in v5.3
+
+> **NOTE: StageNow no longer supports Wi-Fi hotspot staging**. 
+
+**Supports localization for Japanese** (desktop and client tools)
+
+**Supports MX 10.5, which adds the following major features and enhancements**: 
+
+* **[BeaconMgr](../csp/beaconmgr) adds the ability to**: 
+ * Enable/Disable [Beaconing upon battery reinsertion](../csp/beaconmgr/#beaconing-on-reinsertion-onoff) into a device
+ * [Enter a Manufacturer Byte](../csp/beaconmgr/#manufacturer-byte) or custom value in the beacon advertising packet
+ * [Enter a Reference RSSI](../csp/beaconmgr/#reference-rssi) for extrapolating the relative distance to a device beacon
+* **[DevAdmin](../csp/devadmin) adds the ability to**: 
+ * Choose the [Lock Screen Wallpaper](../csp/devadmin/#lock-screen-wallpaper)
+ * Enable or limit [Lock Screen Notifications](../csp/devadmin/#lock-screen-notifications) from display
+ * Select whether the device user receives [notifications when apps are installed](../csp/devadmin/#silent-app-install), uninstalled or upgraded
+* **[Display Manager](../csp/display) adds ability to**: 
+ * Set a [Secondary Display Mode](../csp/display/#secondary-display-mode) for an external monitor
+ * Select [Allowed Orientations](../csp/display/#allowed-orientations) for a device
+ * Select [Locked Orientation positions](../csp/display/#locked-orientation-positions) for a device
+ * Show/Hide a [Lock Override button](../csp/display/#lock-override-button-enabledisable) on a device
+ * Force [Resizable Windows](../csp/display/#resizable-windows-onoff) for an app, overriding the manifest
+ * Force [Resizable Activities](../csp/display/#activity-resizability) for an activity, overriding the manifest
+* **[Intent](../csp/intent) adds the ability to**:
+ * [Enable a device sensor](../csp/intent/#mode) to trigger or cancel an intent
+ * [Select Free-fall Detection](../csp/intent/#sensor-identifier) to trigger an intent
+* **[UI Manager](../csp/ui) adds ability to**: 
+ * Set [External Keyboard Layout](../csp/ui/#external-keyboard-action) (language) preference
+ * [Add or replace a Keyboard Layout](../csp/ui/#external-keyboard-name) (language) for an external keyboard
+ * Enable/Disable [Clipboard Share](../csp/ui/#clipboard-share) to control off-device data sharing
+ * [Select digital assistant app](../csp/ui/#assistant-app) to use on the device
+ * Specify a [custom digital assistant app](../csp/ui/#custom-assistant-app-package-name) to use on the device
+ * Select a [Home Screen Wallpaper](../csp/ui/#home-screen-wallpaper) 
+
+**Supports configuration of [Zebra Workstation Connect](https://youtu.be/NTwPPSHiRRI) devices**  
+
+-----
+
+## Version History
+
+### Added in v5.3
 
 **Supports MX 10.4, which adds the following major features and enhancements**: 
 
@@ -71,8 +110,6 @@ The following software must be installed on the staging workstation prior to usi
  * Control of the [state of Bluetooth scanning](../csp/wireless/#bluetooth-scanning-onoff), [Wi-Fi scanning](../csp/wireless/#wi-fi-scanning-onoff) and the [Location Service](../csp/wireless/#location-service-onoff)
 
 -----
-
-## Version History
 
 ### Added in v5.1
 

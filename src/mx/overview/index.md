@@ -34,7 +34,7 @@ The following section lists the major features and enhancements added to the MX 
  * Force [Resizable Activities](/mx/displaymgr/#activity-resizability) for an activity, overriding the manifest
 * **[Intent](/mx/intent) adds the ability to**:
  * [Enable a device sensor](/mx/intent/#mode) to trigger or cancel an intent
- * [Select the device sensor](/mx/intent/#sensor-identifier) that triggers an intent
+ * [Select Free-fall Detection](/mx/intent/#sensor-identifier) to trigger an intent
 * **[UI Manager](/mx/uimgr) adds ability to**: 
  * Set [External Keyboard Layout](/mx/uimgr/#external-keyboard-action) (language) preference
  * [Add or replace a Keyboard Layout](/mx/uimgr/#external-keyboard-name) (language) for an external keyboard

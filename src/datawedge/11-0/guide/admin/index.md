@@ -222,9 +222,10 @@ Requirements for use of Managed Configurations with DataWedge:
 
 The process to setup an EMM console to use Managed Configurations varies depending on the EMM in use. The general steps follow:
 
-1. Point EMM console to the DataWedge schema based on the package name `com.symbol.datawedge` to display the data-driven UI.
-2. Create or update Managed Configurations described in the schema.
-3. Push the updated Managed Configurations to the device to be consumed by DataWedge.
+1. **Add DataWedge to the application catalog.** In the EMM, browse or search DataWedge from the Google Play Store and add it to the app catalog. This automatically retrieves the corresponding schema for the app and makes the app available for deployment to the device(s) through the EMM.
+2. **Configure app restrictions using Managed Configurations** as described in the schema. See [App Restrictions](#apprestrictions) section that follows, which describes the available options.
+Create or update Managed Configurations described in the schema.
+3. **Push a policy that deploys DataWedge and the created Managed Configurations** to the device(s).
 
 ---
 

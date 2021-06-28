@@ -12,8 +12,10 @@ parm:
   type: string
 ---
 
-Used to enter a the name and on-device path of an image file to be displayed on the device Home screen. **Suports** `.jpg` **and** `.png` **file formats**. 
+Used to enter the file name and path on the device of an image file (`.jpg` or `.png`, 126 MB max.) for display on the device Home screen. 
 
 **Parm value input rules**: 
 
 * String of at least one alphanumeric character
+* Supports `.jpg` or `.png` file formats
+* 126 MB maximum file size

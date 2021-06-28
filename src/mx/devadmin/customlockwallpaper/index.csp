@@ -12,9 +12,10 @@ parm:
   type: string
 ---
 
-Used to enter the file name and path on the device of an image file (`.jpg` or `.png`) to display when the Lock Screen is shown on the device.
+Used to enter the file name and path on the device of an image file (`.jpg` or `.png`, 126 MB max.) for display when the Lock Screen is shown on the device.
 
 **Parm value input rules**: 
 
 * String of at least one (1) character
 * Supports `.jpg` or `.png` file formats
+* 126 MB maximum file size

@@ -22,11 +22,11 @@ This guide provides the staging administrator with instructions for using StageN
 ### Prerequisites
 The following software must be installed on the staging workstation prior to using StageNow:
 
-* **Windows 7, 10 Pro** (English or Chinese)
+* **Windows 7, 10 Pro** (English, Chinese or Japanese)
 * **A supported web browser**:
- * Firefox 29 or higher
- * Google Chrome 35 or higher 
- * Internet Explorer 9 or higher
+ * Firefox 29 or later
+ * Google Chrome 35 or later 
+ * Internet Explorer 9 or later
 
 
 -----
@@ -91,9 +91,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ## Version History
 
-### Added in v5.3
+### Added in v5.2
 
-**Supports MX 10.4, which adds the following major features and enhancements**: 
+**Support for MX 10.4, which adds the following major features and enhancements**: 
 
 * **[Access Manager](../csp/access) adds ability to**: 
  * Grant installed apps [permission to access](../csp/access/#permission-access-permission-name) USB and/or SD card storage
@@ -113,7 +113,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ### Added in v5.1
 
-**Supports MX 10.3, which adds the following major features and enhancements**: 
+**Support for MX 10.3, which adds the following major features and enhancements**: 
 
 * **New [App Manager](../csp/app) feature**: 
  * Allow/Disallow individual app upgrades 
@@ -146,7 +146,7 @@ StageNow 5.0.2 added the option of selecting the following network options for c
 
 **StageNow 5.0 introduces [Smart Profiles](../smartprofile)**, which automatically calculate all required [Setting Types (CSPs)](../settingtypes) and create all necessary Profile steps for upgrading (or downgrading) the OS on device(s) to any other version. **Target devices must be running MX 8.1 or later**. [Learn more](../smartprofile). 
 
-**Supports MX 10.2**, which adds the following major features and enhancements: 
+**Support for MX 10.2**, which adds the following major features and enhancements: 
 
 * **New [Access Manager](../csp/access) features**: 
  * Enter the Token received from a caller 
@@ -190,7 +190,7 @@ StageNow 5.0.2 added the option of selecting the following network options for c
 
 #### New Features
 
-**Supports MX 10.1**, which adds the following major features and enhancements: 
+**Support for MX 10.1**, which adds the following major features and enhancements: 
 
 * **Enhanced [Display Manager](../csp/display)** now allows a Profile to:
  * Control device-screen orientation (automatic rotation on/off)

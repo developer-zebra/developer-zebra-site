@@ -27,7 +27,7 @@ features:
  - image-location: left
    anchor_id: ng-simulscan
    title: NextGen SimulScan Now Supports Camera Input
-   subtitle: Coming to DataWedge in Mid-2021
+   subtitle: New With the Latest OS Update
    description: With SimulScan features now embedded in DataWedge as NextGen SimulScan, Zebra engineers have added the ability to use the device camera to scan barcodes and capture images with greater clarity than was previously possible. Now on par with the imager, the camera can capture full or partial forms and signatures and optionally decode one or more barcodes from captured forms. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselectiondocumentcapture
    video: jHXfCap7Raw
@@ -38,7 +38,7 @@ features:
    title: Pre-grant App Permissions; Control Location Services, Bluetooth, Wi-Fi Scanning  
    subtitle: New in Zebra MX 10.4 
    description: With MX 10.4, device administrators can now grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
-   url: https://techdocs.zebra.com/mx/overview/#versionhistory
+   url: https://techdocs.zebra.com/mx/overview/#addedinmx104
    video: HduN12nASNM
    video_type: youtube
    button_text: See All That's New in MX 10.4 

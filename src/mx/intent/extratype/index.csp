@@ -53,6 +53,7 @@ parm:
       name: Boolean
       mx: "4.1"
       apilevel: "1"
+      info: Devices running Android 11 or later also support values of "true" and "false" in this field. 
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Boolean. The value provided must therefore be an integer of 1 (true) or 0 (false).
     - code: char
       devicetype: A,B

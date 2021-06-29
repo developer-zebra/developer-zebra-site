@@ -95,7 +95,7 @@ DataWedge provides the following primary functions and options (feature availabi
 
 ### Supported Devices
 
-Supported scanners and imagers:
+Supported external scanners and imagers:
 
 * DS2278
 * DS3608

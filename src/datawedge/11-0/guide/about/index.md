@@ -87,7 +87,7 @@ DataWedge [Reporting](../settings/#reportingdeprecated) is deprecated and will b
 
 ## Supported Devices
 
-Supported scanners and imagers:
+Supported external scanners and imagers:
 
 - DS2278
 - DS3608

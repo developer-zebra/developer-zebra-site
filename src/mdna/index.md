@@ -19,7 +19,7 @@ features:
    anchor_id: specific-barcodes
    title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
    subtitle: New With the Latest OS Update 
-   description: The latest LifeGuard device update adds features that allow DataWedge to capture specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
+   description: The latest LifeGuard device update allows DataWedge to capture specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
    url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselectiondocumentcapture
    video: 5Kr8h-Cke6k
    video_type: youtube

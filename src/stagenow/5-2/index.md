@@ -10,11 +10,6 @@ menu:
       urlFrom: stagenow
       urlTo: stagenow/sn-cn
       label: CN - 普通话
-    - lang: jp,
-      img: /images/flags/img-flag-japan.png
-      urlFrom: stagenow
-      urlTo: stagenow/sn-jp
-      label: JP - 日本語
   versions:
     - versionto: 2-2
       versionfrom: 5-2

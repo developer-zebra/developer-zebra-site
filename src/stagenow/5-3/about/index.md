@@ -55,7 +55,7 @@ The following software must be installed on the staging workstation prior to usi
 
 > **NOTE: StageNow no longer supports Wi-Fi hotspot staging**. 
 
-**Supports localization for Japanese** (desktop and client tools)
+**Supports localization for Japanese** desktop and client tools
 
 **Supports MX 10.5, which adds the following major features and enhancements**: 
 

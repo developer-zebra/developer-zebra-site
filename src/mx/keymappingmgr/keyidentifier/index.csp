@@ -438,7 +438,7 @@ parm:
       name: Page Down
       description: The key that moves the cursor down one page
     - code: TAB
-      mx: "9.2"
+      mx: "10.2"
       devicetype: A
       name: Tab
       description: The key that inputs a tab character

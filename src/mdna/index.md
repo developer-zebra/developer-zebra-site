@@ -15,6 +15,33 @@ productversion:
 main-heading: More New Mobility DNA Features
 features-heading: Latest Mobility DNA Features
 features:
+ - image-location: right
+   anchor_id: specific-barcodes
+   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
+   subtitle: New With the Latest OS Update 
+   description: The latest LifeGuard device update adds features that allow DataWedge to capture specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselectiondocumentcapture
+   video: 5Kr8h-Cke6k
+   video_type: youtube
+   button_text: More About DataWedge Document Capture 
+ - image-location: left
+   anchor_id: ng-simulscan
+   title: NextGen SimulScan Now Supports Camera Input
+   subtitle: Coming to DataWedge in Mid-2021
+   description: With SimulScan features now embedded in DataWedge as NextGen SimulScan, Zebra engineers have added the ability to use the device camera to scan barcodes and capture images with greater clarity than was previously possible. Now on par with the imager, the camera can capture full or partial forms and signatures and optionally decode one or more barcodes from captured forms. 
+   url: https://techdocs.zebra.com/datawedge/latest/guide/input/barcode/#documentselectiondocumentcapture
+   video: jHXfCap7Raw
+   video_type: youtube
+   button_text: More About DataWedge Document Capture
+ - image-location: right
+   anchor_id: specific-barcodes
+   title: Pre-grant App Permissions; Control Location Services, Bluetooth, Wi-Fi Scanning  
+   subtitle: New in Zebra MX 10.4 
+   description: With MX 10.4, device administrators can now grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
+   url: https://techdocs.zebra.com/mx/overview/#versionhistory
+   video: HduN12nASNM
+   video_type: youtube
+   button_text: See All That's New in MX 10.4 
  - image-location: left
    anchor_id: touch-mode
    title: New Touch Mode Panel Quickly Adapts to Change
@@ -170,33 +197,6 @@ features:
    button_text: Learn more about EB's WebView API
 comingsoon-heading: MDNA Features Coming Soon
 comingsoon:
- - image-location: right
-   anchor_id: specific-barcodes
-   title: Pre-grant App Permissions; Control Location Services, Bluetooth, Wi-Fi Scanning  
-   subtitle: Coming in Early 2021 With Zebra MX 10.4 
-   description: With MX 10.4, device administrators will be able to grant permission to use device storage for apps before they're installed, control access to location services and scanning with Bluetooth and Wi-Fi peripherals, and set the default usage mode when a device is connected to a PC via USB. 
-   url: https://techdocs.zebra.com/mx/overview/#versionhistory
-   video: HduN12nASNM
-   video_type: youtube
-   button_text: Learn more about MX 10.4 
- - image-location: left
-   anchor_id: specific-barcodes
-   title: Read Only Specific Barcodes from MultiBarcode Form, Ignore Others 
-   subtitle: Coming to DataWedge in Early 2021 
-   description: An upcoming version of Zebra DataWedge will allow capture of specific barcodes from a document or label based on a predefined pattern or barcode criteria. Only barcodes matching the specified pattern or criteria are scanned; all others are ignored. 
-   url: https://techdocs.zebra.com/datawedge
-   video: 5Kr8h-Cke6k
-   video_type: youtube
-   button_text: Learn More About DataWedge 
- - image-location: right
-   anchor_id: ng-simulscan
-   title: NextGen SimulScan to Support Camera Input
-   subtitle: Coming to DataWedge in Mid-2021
-   description: With SimulScan features now embedded in DataWedge as NextGen SimulScan, Zebra engineers are adding the ability to use the device camera to scan barcodes and capture images with more clarity than was previously possible. Soon to be on par with the imager, the camera will capture full or partial forms and signatures and optionally decode one or more barcodes from captured forms. 
-   url: https://techdocs.zebra.com/datawedge
-   video: jHXfCap7Raw
-   video_type: youtube
-   button_text: Learn More About DataWedge
 ---
 <!--  WHEN NO ITEMS ARE "COMING SOON"
   add "-none" to the lines as follows:

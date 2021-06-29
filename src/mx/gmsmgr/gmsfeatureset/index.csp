@@ -4,8 +4,9 @@ title: GMS Feature Set
 type: parm
 order: 2
 mx: "8.3"
+apilevel: "29"
 devicetype: A
-info: Supported on SDM660-platform devices only. Zebra recommends a device Restart following this action.
+info: Supported only on SDM660-platform devices running Android 10 or later. Zebra recommends a device Restart following this action.
 parm:
   pivotal: No
   name: GMSFeatureSet
@@ -13,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "8.3"
+      apilevel: "29"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -20,16 +22,19 @@ parm:
       devicetype: A
       name: All
       mx: "8.3"
+      apilevel: "29"
       description: Enables all GMS features on the device.  
     - code: 2
       devicetype: A
       name: Restricted
       mx: "8.3"
+      apilevel: "29"
       description: Enables a fixed, minimal set of GMS features on the device.
     - code: 3
       devicetype: A
       name: GMSProfile
       mx: "8.3"
+      apilevel: "29"
       description: Enables a specific GMS app to be enabled on the device.
 ---
 

@@ -102,20 +102,22 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker/4-1/guide/about
+        url: /devicetracker/4-2/guide/about
       - title: User Roles
-        url: /devicetracker/4-1/guide/roles
+        url: /devicetracker/4-2/guide/roles
       - title: Install & Setup
-        url: /devicetracker/4-1/guide/setup
+        url: /devicetracker/4-2/guide/setup
       - title: Configuration
-        url: /devicetracker/4-1/guide/config
+        url: /devicetracker/4-2/guide/config
       - title: License
-        url: /devicetracker/4-1/guide/license
+        url: /devicetracker/4-2/guide/license
       - title: Device Management
-        url: /devicetracker/4-1/guide/mgmt
+        url: /devicetracker/4-2/guide/mgmt
       - title: Device Tracking
-        url: /devicetracker/4-1/guide/use
+        url: /devicetracker/4-2/guide/use
     versions:
+      - url: /devicetracker/4-2/guide/about
+        label: '4.2'  
       - url: /devicetracker/4-1/guide/about
         label: '4.1'  
       - url: /devicetracker/4-0/guide/about

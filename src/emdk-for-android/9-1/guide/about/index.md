@@ -46,6 +46,8 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 -----
 
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes in devices running Android 10 requires** <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
 ## New in v9.1
 
 **New** `Scanner.setParams()` **and** `Scanner.getParams()` **pass-through APIs** allow the setting and retrieval of scanning parameters not yet implemented within the class hierarchy.
@@ -74,7 +76,8 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 ### Added in v8.0
 
-* **Support for Unique Device Identifier (UDI) barcodes has been restored to Zebra devices running Android 10**.<br>&nbsp;UDI support requires <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes in devices running Android 10 requires** <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
 * **A Mobility DNA Enterprise license is now required** for use of multi-barcode scanning and image/document capture features on [Zebra Professional-series devices](/licensing/about/#professional). 
 * **A new [MDNA Licensing Guide](../licensing)** describes the scenarios under which apps behave when attempting to access licensing features without a license and how to remedy. 
 
@@ -193,10 +196,6 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 
 **Enhanced Notification Manager API now includes**: 
 * New `NotificationManager.DeviceIdentifier` enum allows selection of the RS5100 Bluetooth scanner 
-
-#### Deprecations
-
-**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
 
 
 -----

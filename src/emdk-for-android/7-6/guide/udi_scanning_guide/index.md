@@ -5,7 +5,7 @@ product: EMDK For Android
 productversion: '7.6'
 ---
 
-> **`IMPORTANT:`** Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated. **UDI support will end when EMDK targets devices running Android 10 Q**.
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes in devices running Android 10 requires** <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
 
 ##UDI Label Scanning Feature
 

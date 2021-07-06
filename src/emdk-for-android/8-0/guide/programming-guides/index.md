@@ -81,7 +81,7 @@ content-items:
   - type: section
     level: 4
     title: UDI Label Scanning Programmer's Guide
-    text: The EMDK Barcode API exposes a (deprecated) UDI barcode scanning feature that provides applications with the ability to read UDI Labels from from three issuing agencies, GS1, HIBCC and ICCBBA.
+    text: The EMDK Barcode API exposes a UDI barcode scanning feature that provides applications with the ability to read UDI Labels from from three issuing agencies, GS1, HIBCC and ICCBBA.
     url: /emdk-for-android/8-0/guide/udi_scanning_guide
 product: EMDK For Android
 productversion: '8.0'

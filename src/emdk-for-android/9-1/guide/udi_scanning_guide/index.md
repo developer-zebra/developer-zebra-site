@@ -5,6 +5,8 @@ product: EMDK For Android
 productversion: '9.1'
 ---
 
+> **`UDI NOTE:` Support for Unique Device Identifier (UDI) barcodes in devices running Android 10 requires** <u>[BSP 10.12.13 "Update 17"](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html)</u> (or later). 
+
 > **`IMPORTANT:`** Support for SimulScan features has been removed from EMDK for Android 8.0 (and later) for devices running Android 10 (and later).
 
 ##UDI Label Scanning Feature

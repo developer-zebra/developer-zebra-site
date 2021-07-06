@@ -58,7 +58,7 @@ _Click to enlarge; ESC to exit_.<br>
          ...    
             </application>
          </manifest>
-5. **For apps targeting devices running Android 11** or later, add the following line in the &lt;queries&gt; note of the app's `Manifest.xml` file:
+5. **For apps targeting devices running Android 11** (API 30) or later, add the following line in the &lt;queries&gt; note of the app's `Manifest.xml` file:
 
          :::xml
          <queries>

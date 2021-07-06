@@ -24,7 +24,7 @@ parm:
       description: Enables Google Maps on the device.  
     - code: 3
       devicetype: A
-      name: FMS
+      name: FCM
       mx: "9.0"
       description: Enables the Firebase Cloud Messaging (FCM) service on the device.
     - code: 4

@@ -1,0 +1,39 @@
+---
+csp: displaymgr
+title: Remote Control  
+type: parm
+order: 6
+mx: "10.5"
+osx: "10.11"
+apilevel: "29"
+devicetype: A
+parm:
+  presentif: Auto Rotate is set to "Turn On"
+  pivotal: No
+  name: AllowedOrientations
+  type: list
+  list:
+    - code: 86
+      mx: "10.5"
+      osx: "10.11"
+      apilevel: "29"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
+    - code: 0
+      devicetype: A
+      name: Primary (Mobile) Display
+      mx: "10.5"
+      osx: "10.11"
+      apilevel: "29"
+      description: Uses the built-in device screen for Media Projection and Key and Touch Injection operations.
+    - code: 1
+      devicetype: A
+      name: Secondary (Desktop) Display
+      mx: "10.5"
+      osx: "10.11"
+      apilevel: "29"
+      description: Uses the external display for Media Projection and Key and Touch Injection operations.
+---
+
+Used to select which display to use for Media Projection and Key and Touch Injection operations when running an app to remotely control the device or perform similar activities. 
+

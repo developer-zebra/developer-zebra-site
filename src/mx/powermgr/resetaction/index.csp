@@ -89,6 +89,13 @@ parm:
       mx: "10.1"
       apilevel: "29"
       description: Launches a full-package OS Downgrade via streaming server. See Overview for more information.
+    - code: 14
+      devicetype: A
+      info: Requires Android 11 or later. 
+      name: Cancel any ongoing OS Upgrade/Downgrade (if possible)
+      mx: "11.1"
+      apilevel: "30"
+      description: Aborts any OS image download or stream currently in progress on the device.
 ---
 
 Used to invoke an OS- or power-related action on the device. 

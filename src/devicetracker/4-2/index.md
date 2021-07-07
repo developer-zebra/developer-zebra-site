@@ -7,17 +7,13 @@ menu:
   items:
     - title: About
       url: /devicetracker/4-2/guide/about
-    - title: User Roles
-      url: /devicetracker/4-2/guide/roles
-    - title: Install & Setup
+    - title: Install
       url: /devicetracker/4-2/guide/setup
-    - title: Configuration
+    - title: Setup
       url: /devicetracker/4-2/guide/config
-    - title: License
-      url: /devicetracker/4-2/guide/license
-    - title: Device Management
+    - title: Administration
       url: /devicetracker/4-2/guide/mgmt
-    - title: Device Tracking
+    - title: Track Devices
       url: /devicetracker/4-2/guide/use
     - icon: fa fa-search
       url: /devicetracker/4-2/search

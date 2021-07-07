@@ -1,5 +1,5 @@
 ---
-title: Device Management
+title: Administration
 layout: guide.html
 product: Device Tracker
 productversion: "4.2"
@@ -7,9 +7,77 @@ productversion: "4.2"
 
 ## Overview
 
-Device Tracker is a role-based solution in which administrators and managers possess additional features and functionality.
+Device Tracker is a role-based solution. Features and functionality depend on the role of the user logged in: associate, manager, or administrator. This section discusses the different roles, how each role can monitor devices and the actions that can be taken based on the role. There are 3 distinct user roles: associate, manager, and administrator.
 
-## <!-- -->
+### Administrator Role
+
+Administrators track devices across multiple sites. The Administrator role encompasses both the Manager and Associate roles.<br>
+
+Features and functions of administrators:
+
+- Configuration:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../license">Monitor and take action on device licenses</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#webportal">Create/Manage administrator and manager user logins</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
+
+- View:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard to view corporate-level data across all sites</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../use/#devicecheckout">Use device check-out/check-in _(optional)_</a><br>
+
+- Includes all Manager and Associate actions
+  <br><br>
+
+### Manager Role
+
+Managers track devices within a single site or location. The Manager role encompasses the Associate role.
+<br>
+Features and functions of managers:
+
+- View:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard on device to view site-level data</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">View list of misplaced or at-risk devices for retrieval</a>
+  <br>
+
+- Actions:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Set To Find](../use/#markadevicetobefound) –** marks the device to be found; initiates the finding process<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Recommission](../use/#decommissionrecommissiondevice) –** marks the device **In Service** to place into the active device pool, the collection of devices with active server communication<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Decommission](../use/#decommissionrecommissiondevice) –** removes the device from the active device pool<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[View Details](../mgmt/#deviceinformation) –** provides device data: friendly name, device model, serial number, last connected AP, battery level, battery status, device state, site name, last reported, display on, note<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditanote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
+  <br>
+
+- Includes all Associate actions<br><br>
+
+### Associate Role
+
+Associates have the capability to find misplaced devices.
+<br>
+Features and functions of associates:<br>
+
+- No login required
+- [Actions:](../use) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ View list of devices to find (**To Be Found** device list)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Locate a device using last connected AP location, visual Bluetooth proximity indicator and play sound<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Mark device as **Found** or **Cannot Find**<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Use device check-out/check-in _(optional)_
+
+---
+
+## Licenses
+
+Licenses are shared among devices from a pool of licenses. After a license expires or when a device is [recommissioned](../use/#recommissionadevice), it is automatically allocated a license if available. Administrators can perform the following:
+
+- Monitor licenses.
+- Transfer a license from one device to another.
+- Remove a license.
+
+See the [License](../license) section for more information.
+
+---
 
 ## Administrator/Manager Login
 
@@ -24,14 +92,15 @@ To login as administrator or manager:
 5. Perform the required tasks.
 6. Logout when complete. Tap the options menu at the top right and select **Admin/Manager Logout.**
 
-<p>After logging in as <i>administrator</i> on the device, tap on the top right option menu and select one of the following:</p>
+After logging in as <i>administrator</i> on the device, tap on the top right option menu and select one of the following:
 
 - **Admin/Manager Logout –** logs out the administrator or manager.
 - **Settings –** displays information and options:
-  _ **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../config/#siteaccesspointanddevicedata).
-  _ **Device Friendly Name –** displays the friendly name assigned to the device. \* **Site Name –** displays the friendly name assigned to the site location.
+  - **Import Access Points/Sites/Devices -** import access point, site and device data to aid in locating devices. See [Site, Access Point, and Device Data](../config/#siteaccesspointanddevicedata).
+  - **Device Friendly Name –** displays the friendly name assigned to the device.
+  - **Site Name –** displays the friendly name assigned to the site location.
 
-## <!-- -->
+---
 
 ## Reset Password
 
@@ -46,18 +115,18 @@ Passwords can be reset through the web portal or the client app.
 5. Enter in the new password in the password reset page.
 6. The password is reset with the new password.
 
-## <!-- -->
+---
 
-## Administration
+## Device Information
 
 Administrators and managers have additional capability to view data:
 
 - **Site List –** administrator access only; lists the sites in the organization
 - **Dashboard –** administrator and manager access; lists a summary showing metrics based on device tracker and device status
-- **Device List –** administrator and manager access; lists devices with capability to view device details<br>
-  <!-- -->
-  Administrator or manager login is required to access the data.
-  <br>
+
+* **Device List –** administrator and manager access; lists devices with capability to view device details<br>
+
+Administrator or manager login is required to access the data.
 
 ### Site List
 
@@ -66,13 +135,11 @@ After administrator login, a site listing is visible for site selection:
 - **All Devices –** when selected, displays the dashboard of all devices (whether assigned or not assigned to a site) across all sites
 - **Unassigned Devices –** when selected, displays the dashboard of devices that are not assigned to a site.
 - **Sites -** lists all the sites across the entire organization. Select an individual site to display the dashboard for the particular site.
-<br>
-<!-- -->
+  <br>
 
 <img style="height:350px" src="sitelist.png" />
 <i>Site list</i>
 <br>
-<!-- -->
 
 ### Dashboard
 
@@ -81,7 +148,6 @@ The dashboard is accessible to administrators and managers, displaying device ca
 <p>Dashboard categories:</p>
 
 - **Total Devices –** displays the total number of devices being tracked within the particular site. If **All Devices** is selected instead of a particular site, the total number of devices reflects the devices across all sites. If **Unassigned Devices** is selected, the total number of devices reflects the devices that are not assigned to any site. <br>
-  <!-- -->
 
 Device status:
 
@@ -108,12 +174,10 @@ Device status:
 <p>If <a href="../config/#devicecheckout">Device Check-out</a> is enabled:</p>
 
 - **Checked Out –** filters devices that are checked-out by users after scanning their user barcode, associating the user to the device.
-<!-- -->
 
 <img style="height:350px" src="dashboard.png" />
 <i>Dashboard</i>
 <br>
-<!-- -->
 
 **Note:** In split-screen mode, when the dashboard is displayed in Device Tracker and the app is not in focus, the app displays a blank screen. When Device Tracker is back in focus, the dashboard is displayed as expected.
 <br>
@@ -128,21 +192,20 @@ Each individual device is displayed as a “device card” that shows informatio
 - Device model and serial number
 - AP friendly name (if available) or BSSID - **Never Connected** is displayed if device has never connected to the server. The icon indicates the connectivity state to the access point. A WiFi icon with a slash indicates the device is not connected to the AP.
 - Device status:
-  _ **In Service –** device is part of the active device pool and not in any of the other device states
-  _ **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
-  _ **Finding –** the device search is initiated by another user
-  _ **Found –** the device is located after conducting the search
-  _ **Cannot Find –** the device could not be found after the search was conducted
-  _ **Decommissioned –** device is removed from the active device pool \* **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
+  - **In Service –** device is part of the active device pool and not in any of the other device states
+  - **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+  - **Finding –** the device search is initiated by another user
+  - **Found –** the device is located after conducting the search
+  - **Cannot Find –** the device could not be found after the search was conducted
+  - **Decommissioned –** device is removed from the active device pool
+  - **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 
 * Top right icon indicates device battery level or charging state.
-<br>
-<!-- -->
+  <br>
 
 <img style="height:350px" src="devicelist.png" />
 <i>Device list from <b>All Devices</b></i>
 <br>
-<!-- -->
 Tap and hold on any device card to display the available device actions:
 
 - **View Details –** displays the Device Details screen, see below.
@@ -150,47 +213,62 @@ Tap and hold on any device card to display the available device actions:
 - **Start Finding –** begins the device search process. Refer to [Find a Device](../use/#findadevice). This is visible only if the device is marked "To Be Found".
 - **Recommission –** places a device from the decommissioned state back to the **In Service** state as part of the active device pool.
 - **Decommission –** removes the device from the active device pool and places it out-of-service. This can be used when a device is undergoing repair or is deprecated and no longer in use.
-<!-- -->
 
 <img style="height:350px" src="device-action-menu.png" />
-<i>Device action menu</i><!-- -->
-<br><br>
+<i>Device action menu</i>
+<br>
 
 #### Device Details
 
 Tap on any device card to display the **Device Details** screen:
 
 - **Device Status:**
-  _ **In Service –** device is part of the active device pool and not in any of the other device states
-  _ **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
-  _ **Finding –** the device search is initiated by another user
-  _ **Found –** the device is located after conducting the search
-  _ **Cannot Find –** the device could not be found after the search was conducted
-  _ **Decommissioned –** the device is removed from the active device pool \* **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
+  - **In Service –** device is part of the active device pool and not in any of the other device states
+  - **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
+  - **Finding –** the device search is initiated by another user
+  - **Found –** the device is located after conducting the search
+  - **Cannot Find –** the device could not be found after the search was conducted
+  - **Decommissioned –** the device is removed from the active device pool
+  - **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 - **Friendly name –** the assigned friendly device name as registered by the administrator
 - **Device Model –** the model of the device
 - **Serial Number –** the serial number of the device
+
 - **License State:**
-  _ **Licensed -** device is allocated with a license
-  _ **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
+
+  - **Licensed -** device is allocated with a license
+  - **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
+
 - **Site Name –** displays the assigned friendly name for the site as registered by the administrator. If no value assigned, it is blank.
 - **Last Connected AP –** displays the AP the device was last connected to, which aids in identifying the device location
 - **Last Reported –** displays the time stamp of the last time the device reported to the server
+
 - **Connection State:**
-  _ **Never connected –** the device has never connected to the server
-  _ **Connected –** the device is connected to the server \* **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
+
+  - **Never connected –** the device has never connected to the server
+  - **Connected –** the device is connected to the server
+  - **Disconnected –** the device previously connected to the server and is now disconnected due to no communication with the server for approximately 12 minutes.
+
 - **Secondary BLE:** identifies the state of the [secondary BLE beacon](../config/#secondaryble):
-  _ **Enabled -** the device has a secondary BLE beacon and beaconing is enabled. When the device loses power, the secondary BLE continues to transmit beacons to aid in locating the device.
-  _ **Disabled -** the device has a secondary BLE beacon and beaconing is disabled \* **Not Available -** the device does not have a secondary BLE beacon
+
+  - **Enabled -** the device has a secondary BLE beacon and beaconing is enabled. When the device loses power, the secondary BLE continues to transmit beacons to aid in locating the device.
+  - **Disabled -** the device has a secondary BLE beacon and beaconing is disabled
+  - **Not Available -** the device does not have a secondary BLE beacon
+
 - **Battery Level –** displays the battery level (high, medium, or low) along with the percent (%) of battery remaining:
-  _ **High –** indicates the remaining battery is greater than 66%
-  _ **Medium –** indicates the remaining battery is within the range 15% to 66% \* **Low –** indicates the remaining battery is less than or equal to 15%
+
+  - **High –** indicates the remaining battery is greater than 66%
+  - **Medium –** indicates the remaining battery is within the range 15% to 66%
+  - **Low –** indicates the remaining battery is less than or equal to 15%
+
 - **Battery Status:**
-  _ **Charging –** the device is charging while plugged to a power source
-  _ **Not Charging –** device is not plugged to a power source
+
+  - **Charging –** the device is charging while plugged to a power source
+  - **Not Charging –** device is not plugged to a power source
 
 - **Display On –** displays “true” or “false”. If true, it indicates the device display is on and the device may be in active use. If false, it indicates the device display is off, indicating the device is not in active use.
 - **Note –** text entered by an administrator or manager capturing information specific to the device.
+
 <table>
   <tr>
    <td>
@@ -205,8 +283,6 @@ Tap on any device card to display the **Device Details** screen:
 </table>
 <i>Device details information</i>
 
-## <!-- -->
-
 ## Device/Site Search
 
 Two types of searches can be performed:
@@ -218,8 +294,6 @@ Two types of searches can be performed:
 
 A site search performs a partial search for the characters entered in the search field. The search results display matches that include the characters being searched for within the site name.<br>
 To perform a site search:
-
-<!-- -->
 
 1. From the main site list, tap the search icon at the top.
    <img style="height:350px" src="site-search.png"/><i>Site list with search</i>
@@ -243,9 +317,7 @@ To perform a device search:
 3. Tap Search.
 4. The search results return matches that begin with the text entered in the search field corresponding with the type of search conducted.
 
-<br><br>
-
-## <!-- -->
+---
 
 ## See Also
 

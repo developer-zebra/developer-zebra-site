@@ -1,5 +1,5 @@
 ---
-title: Configuration
+title: Setup
 layout: guide.html
 product: Device Tracker
 productversion: "4.2"
@@ -7,7 +7,7 @@ productversion: "4.2"
 
 ## Overview
 
-This section discusses configuration of Device Tracker:
+For initial setup, the administrator must register device, access point and site information as well as configure Device Tracker. This section discusses setup of Device Tracker as follows:
 
 - **[Create/Manage admin and manager logins](#webportal) –** Administrators use the web portal to:
   - Add/Delete administrators
@@ -25,8 +25,7 @@ This section discusses configuration of Device Tracker:
 <p><b>Configure the Check-out feature <i>(optional)</i>:</b></p>
 
 - **[Enable/Disable check-out](#devicecheckout) –** Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning of their work shift to check-out their device. This associates the device to the particular user.
-- **[Add/Modify barcode prefix](#devicecheckout)** for the barcode used during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
-- Generate user barcodes for check-out, if needed.
+- **[Add/Modify barcode prefix](#devicecheckout) -** Specify a prefix for the barcode scanned during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 
 ---
 
@@ -163,7 +162,7 @@ Deleting a device removes device data from the Device Tracker solution after uni
 
 For devices with secondary BLE beaconing capability, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off. Locationing is based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
 
-<p>See <a href="../setup/#bleprofile">BLE Profile</a> to enable the secondary BLE beacon.</p>
+<p>See <a href="../setup/#secondarybleprofile">Secondary BLE Profile</a> to enable the secondary BLE beacon.</p>
 
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 

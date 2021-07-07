@@ -33,7 +33,7 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 - Locate a device even when that device is powered off (for a limited time) if it has secondary BLE (Bluetooth low energy) beaconing capability.
 - Check-out/Check-in feature to associate users to devices for accountability. (Optional)
 
-## <!-- -->
+---
 
 ## New in Device Tracker 4.1
 
@@ -46,11 +46,13 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
   - When there are multiple pools of licenses with different expiration dates, an incorrect license count is reported after the licenses expire.
 - Known Issue: When installing the application on a mobile device using an EMM, some EMMs may not have implemented the Zebra value-added features for seamless deployment. Alternatively, an XML file can be generated from the StageNow profile and consumed by the EMM for seamless deployment. Refer to the [Install & Setup guide](../setup).
 
-## <!-- -->
+<!-- 
 
 ## Supported Devices
 
 See the supported devices table on [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).
+
+-->
 
 <!--
 Supported devices require GMS (Google Mobile Services):
@@ -80,6 +82,7 @@ Supported devices require GMS (Google Mobile Services):
 
 -->
 
+<!-- 
 ---
 
 ## Requirements
@@ -131,8 +134,9 @@ Network requirements for communication between the device client app and the clo
   <br>
 
 If the password is reset, an email is sent from `zdtrksupport@zebra.com`.
+-->
 
-## <!-- -->
+---
 
 ## Device Tracker Comparison
 
@@ -190,7 +194,7 @@ Comparison of **[Device Tracker On-Prem](/devicetracker-onprem/latest/guide/abou
   </tr>
 </table>
 
-## <!-- -->
+---
 
 ## See Also
 

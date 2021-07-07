@@ -2,7 +2,7 @@
 csp: displaymgr
 title: Remote Control  
 type: parm
-order: 6
+order: 21
 mx: "10.5"
 osx: "10.11"
 apilevel: "29"

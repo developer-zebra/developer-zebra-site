@@ -56,16 +56,15 @@ Bluetooth scanners are supported according to the following rules:
 * **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode after pressing the scan trigger of any supported scanner**.
 
 ### USB SSI Scanners
-DataWedge supports the following Zebra USB SSI scanners: 
+DataWedge supports the following Zebra USB SSI scanner: 
 
 * **DS3608** USB SSI Scanner
 
 Support notes: 
 
-* The DS3608 scanner is supported only on VC80, ET50 and ET55 devices running Windows 
-* Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
-* SNAPI drivers are included with supported devices
-* The scanner connects via USB port and cable
+* The DS3608 scanner is supported only on VC80 devices running Android.
+* Scanners must be configured using SSI over USB CDC.
+* The scanner connects via USB port and cable.
 
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 

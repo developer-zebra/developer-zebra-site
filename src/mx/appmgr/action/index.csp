@@ -138,7 +138,7 @@ parm:
 
 Used to enter the Action to perform on an app or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below).   
 
-#### Notes
+**<u>NOTES</u>**:
 * **<u>IMPORTANT</u>: See [Overview section](#overview) regarding changes to Android 10 permissions**.
 * **Virtual keyboards (aka soft input panels) are enabled and disabled in the same way as apps**, by referenceing their package name with the desired AppMgr Action. Disabled keyboards do not appear for selection in the Android Settings panel. See the Overview section for a [list of virtual keyboards](#virtualkeyboards).
 * On some older devices, **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
@@ -159,7 +159,7 @@ Used to enter the Action to perform on an app or app-related setting or action. 
  * Perform "Restricted" GMS Manager Action.
  * **Zebra recommends Zebra recommends restarting the device following any Action that enables GMS restrictions**.
  * If desired, use Persist Manager to safeguard the XML on the device.<br>
-**<u>NOTE</u>: It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
+**<u>NOTE</u>: It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode using a single XML profile**.
 
  > **See [GMS Manager](/mx/gmsmgr) for more information about GMS Restricted**. 
 

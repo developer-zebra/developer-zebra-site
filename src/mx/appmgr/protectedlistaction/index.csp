@@ -41,7 +41,7 @@ parm:
 
 Used to add or remove apps from the Protected List, which allows apps to be exempted from certain constraints. 
 
->**Note**: On some devices, protected apps remain on the Recent Apps list after it has been cleared using the "ClearRecentApps" Action. 
+>**<u>NOTE</u>**: On some devices, protected apps remain on the Recent Apps list after it has been cleared using the "ClearRecentApps" Action. 
 
 An app with its Package Name on the Protected List is allowed to:
 * Launch when no device user is logged in

@@ -32,7 +32,6 @@ parm:
       name: Chrome+Maps+FCM
       mx: "9.0"
       osx: "9.4.36"
-      apilevel: "28"
       description: Enables Google Chrome, Google Maps and the Firebase Cloud Messaging (FCM) service on the device.
 ---
 

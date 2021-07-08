@@ -19,7 +19,7 @@ Optional parameter used to enter the name of a certificate alias to be used to v
 * String from 0&ndash;64 characters
 
 
-**Notes**:
+**<u>NOTES</u>**:
 * When Security Mode is "Enterprise," the device must authenticate to an Authentication Server using the defined Authentication type. This involves sending potentially sensitive authentication credentials to the Authentication Server. **Zebra recommends against this** unless the authenticity of the Authentication Server can be verified, for example to ensure that it is not attempting to carry out a "man in the middle" attack.
 
 * The device contacts and challenges the Authentication Server to assert and prove its Identity through the use of a server certificate. The device must be able to establish the validity of that certificate and must trust the chain of authority of the issuer of that certificate. This would all occur whether or not a Server Certificate Name is specified.

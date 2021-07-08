@@ -18,5 +18,5 @@ Optional parameter that allows the name of a client certificate alias to be used
 
 * String from 0&ndash;64 characters
 
-**Note**: Entering an empty (length of zero) value (or the absence of this parm from the XML) will fail to set an Optional Server Certificate.
+**<u>NOTE</u>**: Entering an empty (length of zero) value (or the absence of this parm from the XML) will fail to set an Optional Server Certificate.
 

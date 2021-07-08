@@ -14,7 +14,7 @@ parm:
 
 Used to set a custom icon that the ZVC displays to identify the stream used for keypad feedback. If specified, the value must be the full path and file name of an icon file in `.PNG` format that resides in the device file system. **Zebra recommends an icon size of 48x48 pixels**. 
 
->**Note:** If the value of this parameter is empty (a length of 0), or if the value provided does not reference an icon file, ZVC displays the default icon defined for the stream.
+>**<u>NOTE</u>:** If the value of this parameter is empty (a length of 0), or if the value provided does not reference an icon file, ZVC displays the default icon defined for the stream.
 
 **Parm value input rules**: 
 

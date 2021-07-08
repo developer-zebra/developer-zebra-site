@@ -14,7 +14,7 @@ parm:
 
 Used to enter the Name of the application for the selected Action.
 
->**Note:** To perform the above listed Actions on an application, the Name of that application can be specified instead of the Package Name. The Name is defined as the name that accompanies the application icon in the Android Launcher, App Drawer or Application Manager. This name also is specified in the `app_name` field of the `strings.xml` file. 
+>**<u>NOTE</u>:** To perform the above listed Actions on an application, the Name of that application can be specified instead of the Package Name. The Name is defined as the name that accompanies the application icon in the Android Launcher, App Drawer or Application Manager. This name also is specified in the `app_name` field of the `strings.xml` file. 
 
 **Input value rules**: 
 

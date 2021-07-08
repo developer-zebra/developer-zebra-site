@@ -32,6 +32,6 @@ BatteryMgr allows configuration of the thresholds used to determine when a batte
 * Percent Decommission Threshold
 	* A battery is considered to be decommissioned if the Health percentage of the battery is less than or equal to Percent Decommission Threshold.
 	* Percent Decommission Threshold is applicable for Gifted Batteries.
-	* **Note:** Health percentage is the ratio of "present_capacity" to "design_capacity" at a discharge rate of "design_capacity".
+	* **<u>NOTE</u>:** Health percentage is the ratio of "present_capacity" to "design_capacity" at a discharge rate of "design_capacity".
 
 The threshold values configured using BatteryMgr are stored in `batteryusage_decommission_threshold` or `percent_decommission_threshold` files, which persist on the device following any subsequent reboot or Enterprise Reset. A Factory Reset erases all such user data. Attempts to set a decommission threshold on a battery other than Smart or Gifted battery will return an error in the Result XML document.

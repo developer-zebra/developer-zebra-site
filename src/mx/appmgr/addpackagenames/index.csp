@@ -20,5 +20,5 @@ Used to enter one or more apps (by Package Name) to be added to the Battery Opti
 
 * String containing one or more Package Names. For example: `com.mycompany.mypackage`
 * Separate multiple names with commas
-> `Important:` If a name is specified incorrectly in a list, all names following that name are ignored. 
+> <u>Important</u>: If a name is specified incorrectly in a list, all names following that name are ignored. 
 

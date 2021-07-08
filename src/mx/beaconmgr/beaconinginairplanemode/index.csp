@@ -33,8 +33,7 @@ parm:
 
 Controls whether a beacon is transmitted by a device when powered OFF while in Airplane Mode. **Disabled by default**. Airplane Mode can be administered on the device using [Settings Manager](/mx/settingsmgr).
 
-#### `IMPORTANT:`
-When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the **Beaconing in Airplane Mode** parameter comes into play. 
+**<u>IMPORTANT</u>**: When a device is placed in Airplane Mode, all device radios are switched off, including the device's beacon emitter. If a device is powered off while in Airplane Mode, the setting contained in the **Beaconing in Airplane Mode** parameter comes into play. 
 
 **Device behavior for this mode is as follows**: 
 * **If "Turn On" is selected**, a beacon is emitted if the device is turned off while in Airplane Mode until the device battery runs out or the device is powered on again. **<u>This setting allows BLE radio transmissions from a powered-off device</u>, which could be undesired in some situations**.

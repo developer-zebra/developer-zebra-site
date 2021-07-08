@@ -496,7 +496,7 @@ Device "Reset" commands are supported for use within a `.upl` file **<u>only on 
 </div>
 <br>
 
-**Note**: Zebra devices running Android Lollipop and Marshmallow might support update-file locations other than the location recommended in the table above. Other supported locations might include: 
+**<u>NOTE</u>**: Zebra devices running Android Lollipop and Marshmallow might support update-file locations other than the location recommended in the table above. Other supported locations might include: 
 
 * `/storage/sdcard0` (internal)
 * `/storage/sdcard1` (external)

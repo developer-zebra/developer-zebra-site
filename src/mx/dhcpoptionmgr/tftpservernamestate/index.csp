@@ -26,4 +26,4 @@ parm:
       mx: "4.4"
       description: This value will cause this DHCPv4 Option to be turned off and hence will prevent the TFTP Server Name from being requested by the DHCP Client in the DHCP Request.
 ---
->**NOTE:** The TFTP**<u>Ser</u>**NameState parameter is deprecated. Zebra recommends using the TFTP**<u>Server</u>**NameState parameter (below).
+>**<u>NOTE</u>**: The TFTP**<u>Ser</u>**NameState parameter is deprecated. Zebra recommends using the TFTP**<u>Server</u>**NameState parameter (below).

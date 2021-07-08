@@ -30,7 +30,7 @@ parm:
 
 Control the ALT Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the corresponding Key State Mapping Table. 
 
-**Note**: If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier will be sent to the Current Key State but it makes no change to the Key Mapping Table.
+**<u>NOTE</u>**: If an attempt is made to set a Key State Modifier that is not supported on a given device, no error will be returned in the Result XML because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier will be sent to the Current Key State but it makes no change to the Key Mapping Table.
 
 **Parm names**:
 

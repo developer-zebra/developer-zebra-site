@@ -2,7 +2,7 @@
 csp: keymapmgr
 title:  Send Intent
 type: parm
-order: 13
+order: 14
 mx: "4.4"
 devicetype: A
 parm:

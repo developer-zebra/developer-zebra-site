@@ -27,7 +27,7 @@ DataWedge supports the importation of Config files (`datawedge.db`) and Profiles
 3. Delete the imported files
 4. Put new settings immediately into effect
 
-##### Important Notes:
+**<u>IMPORTANT NOTES</u>**:
 * For the best user experience, **Zebra strongly recommends that device users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
 * **Zebra recommends applying explicit file permissions to all `.db` files** so that DataWedge file procedures are not impeded.
 

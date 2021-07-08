@@ -169,4 +169,4 @@ DHCP Options are variable-length strings identified by DHCP Option Numbers that 
 </table>
 </div>	
 
->**Note:** DHCP Options that are shown in the table above as "not configurable" are supported on Zebra Android devices but are always enabled and their operation cannot be altered using DhcpOptionMgr.
+>**<u>NOTE</u>**: DHCP Options that are shown in the table above as "not configurable" are supported on Zebra Android devices but are always enabled and their operation cannot be altered using DhcpOptionMgr.

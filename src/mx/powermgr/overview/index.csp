@@ -51,7 +51,7 @@ On Android devices, Sleep mode turns off the device display screen and places so
 
 Rebooting an Android device generally causes only volatile information such as application state and transient data to be lost. Non-volatile data such as device settings and stored apps and data are preserved. A Reboot is sometimes referred to as a "Reset" or "Normal Reset," but is not to be confused with an Enterprise Reset or Factory Reset (explained below).
 
-**Note: The Reboot Action causes the device to immediately restart, preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
+**<u>IMPORTANT</u>**: The Reboot Action causes the device to immediately restart, which **prevents any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
 ### Enterprise Reset
 
@@ -80,7 +80,7 @@ A Factory Reset **<u>will NOT erase</u> a storage card if**:
 ### Full Device Wipe
 The Full Device Wipe is intended to return the device to its condition as it would have shipped from the factory **with its current OS <u>plus any subsequent OS update(s)</u>**. On Zebra Android devices, a Full Device Wipe is the same as a Factory Reset **plus the unconditional erasure of all storage cards**. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" Action if a suitable OS Update .zip file was used.
 
-**Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
+**<u>Note</u>**: This Action causes the device to Reboot (into Recovery Mode), which **prevents any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
 ### OS Update
 
@@ -89,7 +89,7 @@ The OS Update allows the device operating system to be replaced or patched using
 > **Devices running Android 7.x Nougat and below** support OS Update only.
 > **Devices with Android 8.x Oreo and later** support Upgrade and Downgrade Actions and the Supress Reboot parameter. 
 
-####Notes: 
+####<u>NOTES</u>: 
 * **The OS Update Action causes the device to Reboot (into Recovery Mode), <u>which prevents execution of any subsequent Actions</u>**, including the submission of a Result XML to the application sending the original request. 
 * **OS Update can be used to upgrade or downgrade Android 7.x Nougat and older**. 
 * **On devices running Android 8.x Oreo or later**, the OS Update Action can only **<u>upgrade</u>**. 
@@ -98,7 +98,7 @@ The OS Update allows the device operating system to be replaced or patched using
 
 #### OS Upgrade (Oreo+)
 
-Use the following basic steps to perform an OS Upgrade on devices running Oreo and higher. Steps might vary slightly depending on the device(s), the environment or other factors. 
+Use the following basic steps to perform an OS Upgrade on devices running Oreo and later. Steps might vary slightly depending on the device(s), the environment or other factors. 
 
 **To perform an OS Upgrade**:
 

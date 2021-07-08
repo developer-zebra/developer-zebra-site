@@ -25,4 +25,4 @@ parm:
 
 Used to apply or remove a Software License on a legacy Symbol device. **For Zebra-branded devices, use the License Action Zebra parameter**. 
 
-Applying a Software License on a device makes the specific capabilities of that Software Component usable on that device. Removing a license makes the controlled capability unusable or limits its features. **Note: The license removal action deletes the licence only from the private license store; the license _file_ still exists on the device and must be deleted separately**.
+Applying a Software License on a device makes the specific capabilities of that Software Component usable on that device. Removing a license makes the controlled capability unusable or limits its features. **<u>NOTE</u>**: The license removal action deletes the licence **only from the private license <u>store</u>**; the license *file* still exists on the device and must be deleted separately.

@@ -7,7 +7,15 @@ productversion: "4.2"
 
 ## Overview
 
-Installation of Device Tracker can be performed manually or automated through either Zebra's [StageNow](/stagenow) tool or an Enterprise Mobility Management (EMM) system. Contact Zebra services for access to Device Tracker cloud and licenses prior to installation.
+Device Tracker can be installed as follows:
+* **[Manual Installation](#manualinstallation) -** manually install the client app on the device, accept all permissions when granted and configure the server connection.
+* **Automated Installation -** create profiles that remotely install the client app on the device, automatically grant all permissions during install, configure the server connection and enable secondary BLE (optional); can be employed for mass deployment to multiple devices. Use one of the following methods:
+    * **Zebra's [StageNow](#stagenow)**
+    * **[Enterprise Mobility Management (EMM)](#emm) system**
+
+[Device](#devicerequirements) and [network](#networkrequirements) requirements must be met prior to installation. If needed, contact Zebra services for access to Device Tracker cloud and licenses prior to installation.
+
+After installation is complete, proceed to the [Setup](../config) section to setup and configure Device Tracker for initial use.
 
 ---
 
@@ -21,7 +29,7 @@ See the supported devices table on [Zebra support portal](https://www.zebra.com/
 
 ### Device Requirements
 
-Requirements for Device Tracker client:
+Requirements for Device Tracker client on the device:
 
 - **Operating System -** Only supported on select Android Oreo and Android 10 GMS devices. See [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html) for compatible devices.
 - **Bluetooth** must be enabled to find devices using the visual proximity indicator. Zebra provides a tool, [StageNow](/stagenow), for EMMs to configure the device remotely to enable Bluetooth.
@@ -32,7 +40,7 @@ Requirements for Device Tracker client:
 
 ### Network Requirements
 
-Network requirements for communication between the device client app and the cloud server:
+The network requirements for communication between the device client app and the cloud server are:
 
 - **Open HTTPS port for communication** between the Device Tracker client and Device Tracker cloud. Port 443 is normally used for all HTTPS communication by default, but this may vary based on network configuration. 
 - The following **domains must be allowed through the firewall or proxy.**<br />
@@ -69,6 +77,8 @@ If the password is reset, an email is sent from `zdtrksupport@zebra.com`.
 
 ## Manual Installation 
 
+The prerequisites must be met prior to proceeding with the manual installation procedure.
+
 ### Prerequisites
 
 Prerequisites for manual installation:
@@ -91,22 +101,22 @@ Manual installation steps to be performed on the device:
 
 ## Automated Installation
 
-There are 2 methods for automated installation: StageNow or EMM.
+Automated installation allows for installation and configuration on devices without manual intervention. This enables administrators to mass deploy an app and configurations across multiple devices unattended. There are 2 methods for automated installation: StageNow or EMM.
 
 ### StageNow
 
-For automated installation using Zebra's [StageNow](/stagenow/latest/about) tool,  generate barcodes and scan the barcodes with the StageNow client app on the device per the instructions below.  
+For automated installation using Zebra's [StageNow](/stagenow/latest/about) tool,  generate barcodes and scan the barcodes with the StageNow client app on the device per the instructions below. This installs the client app on the device, automatically grants all permissions during install, configures the server connection and enables secondary BLE (optional). 
 
 #### Prerequisites
 
 Prerequisites for automated installation using StageNow:
 
 1. **Download the latest .APK file** from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html).
-2. **Download the app certificate,** (add link with download) needed to create the install & setup profile in step 4.
+2. **Download the app certificate,** (add link with download) needed to create the install profile in step 4.
 3. **Download the server connectivity settings barcode** provided by Zebra during the onboarding process. If not supplied, perform the following:
     * **Download the server connectivity settings XML** file provided by Zebra during the onboarding process. 
     * Create a **server connectivity settings barcode** using StageNow. Follow steps in StageNow [Server Connectivity Profile](#serverconnectivityprofile).
-4. Create a **barcode to install and setup Device Tracker.** Follow steps in [Install & Setup Profile](#installsetupprofile) to:
+4. Create a **barcode to install and setup Device Tracker.** Follow steps in [Install Profile](#installprofile) to:
     * Grant permission for the app to run in the background and track devices.
     * _Optional:_ Grant permission to display the [Device Check-out](../use/#devicecheckout) screen to prevent users from accessing the device prior to scanning their user barcode.
     * Launch app to start tracking.
@@ -126,18 +136,18 @@ Steps to install and configure Device Tracker on the device using StageNow:
 
 ### EMM
 
-Device Tracker can be remotely installed to devices without manual intervention through an EMM. XML is exported from StageNow to be consumed by the EMM to install and configure Device Tracker.
+Device Tracker can be remotely installed to devices without manual intervention through an EMM. XML is exported from StageNow profiles to be consumed by the EMM to install the client app on the device, automatically grant all permissions during install, configure the server connection and enable secondary BLE (optional). 
 
 #### Prerequisites
 
 Prerequisites for installation using EMM:
 
 1. **Download the latest .APK file** from the [Zebra support portal](https://www.zebra.com/us/en/products/software/mobile-computers/device-tracker.html).
-2. **Download the app certificate,** (add link with download) needed to create the install & setup profile in step 4.
+2. **Download the app certificate,** (add link with download) needed to create the install profile in step 4.
 3. **Download the server connectivity settings barcode** provided by Zebra during the onboarding process. If not supplied, perform the following:
     * **Download the server connectivity settings XML** file provided by Zebra during the onboarding process. 
     * **Export XML for server connectivity settings** using StageNow. Follow steps in StageNow [Server Connectivity Profile](#serverconnectivityprofile).
-4. **Export XML to install and setup Device Tracker.** Follow steps in [Install & Setup Profile](#installsetupprofile) to:
+4. **Export XML to install and setup Device Tracker.** Follow steps in [Install Profile](#installprofile) to:
     * Grant permission for the app to run in the background and track devices.
     * _Optional:_ Grant permission to display the [Device Check-out](../use/#devicecheckout) screen to prevent users from accessing the device prior to scanning their user barcode.
     * Launch app to start tracking.
@@ -175,14 +185,14 @@ Execute step 6 by creating a <a href="#secondarybleprofile">StageNow Secondary B
 -->
 ---
 
-## Configure Devices
+## Remote Install Profiles
 
-This section provides instructions to create three separate profiles for deployment using Zebra's [StageNow](/stagenow/latest/about) tool: 
-1. Install & setup
+Use Zebra's [StageNow](/stagenow/latest/about) tool to create 3 separate profiles to remotely install and setup Device Tracker on the devices: 
+1. Install
 2. Server connectivity 
 3. Secondary BLE
 
-Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM are used for automated installations. 
+Once created, these profiles are consumed by Zebra’s [StageNow](/stagenow/latest/about) tool or an EMM for automated installations. The prerequisites must be met prior to proceeding to create these profiles. Instructions to create each profile follows in the subsections below. 
 
 ### Prerequisites
 
@@ -191,7 +201,7 @@ Prerequisites to create StageNow profiles:
 * If using the optional [Device Check-out](../config/#devicecheck-out) feature, StageNow version 4.2 or higher is required to automatically bypass the overlay permission. 
 * Download server connectivity settings XML file provided by Zebra to create the [Server Connectivity Profile](#serverconnectivityprofile).
 
-### Install & Setup Profile
+### Install Profile
 
 Create a StageNow install and setup profile to:
 * Copy the .APK file to the device 
@@ -201,7 +211,7 @@ Create a StageNow install and setup profile to:
 * Start Device Tracker service to begin tracking.
 If using the [Device Check-out](../use/#devicecheckout) feature, before proceeding follow [Extract Client App Certificate](./#extractclientappcertificate), a prerequisite to automatically allow the overlay permission.
 
-Instructions to create a StageNow install & setup profile (must fulfill the StageNow Prerequisites):
+Instructions to create a StageNow install profile (must fulfill the prerequisites to create StageNow profiles):
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
 2. In the StageNow home screen, click **Create New Profile** from the left menu.
@@ -261,7 +271,7 @@ Instructions to create a StageNow install & setup profile (must fulfill the Stag
 19. Click **Complete Profiles.** Profile creation is complete.
 20. Select one of the following based on the deployment method:
 * **StageNow:** Generate the barcode from the StageNow profile. Open StageNow client on the device and scan the barcode(s) generated.
-* **EMM:** Export XML from the StageNow profile. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx) to configure the app and grant all required permissions. The install & setup profile and server connectivity profile XML files must be used separately.
+* **EMM:** Export XML from the StageNow profile. Do not edit the XML file - it can cause unexpected behavior. Send the XML using either [OEMConfig](/oemconfig) or [MX](/mx) to configure the app and grant all required permissions. The install profile and server connectivity profile XML files must be used separately.
 
 <br />
 <!--
@@ -288,7 +298,7 @@ The certificate file is needed to create the StageNow Installation Profile.
 
 Create a StageNow server connectivity profile to apply server settings in the app client for it to communicate with the server. The server configuration XML file is required, supplied by Zebra.
 
-<p>Steps to create a StageNow server connectivity profile (must fulfill the StageNow Prerequisites):</p>
+<p>Steps to create a StageNow server connectivity profile (must fulfill the prerequisites to create StageNow profiles):</p>
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
 2. In the StageNow home screen, click **Create New Profile** from the left menu.
@@ -318,7 +328,7 @@ After deploying the installation and server connectivity profiles, reboot the de
 
 Create a StageNow profile to enable the secondary BLE beacon, if supported by the device, so the device can be located when powered off.
 
-<p>To create the BLE profile (must fulfill the StageNow Prerequisites):</p>
+<p>To create the BLE profile (must fulfill the prerequisites to create StageNow profiles):</p>
 
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a host computer.
 2. In the StageNow home screen, click **Create New Profile** from the left menu.

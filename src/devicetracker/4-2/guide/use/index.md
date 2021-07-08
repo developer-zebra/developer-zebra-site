@@ -8,16 +8,17 @@ productversion: "4.2"
 ## Overview
 
 This section discusses the actions that can be taken to track devices:
-* **[Device Check-out](#devicecheckout) -** an optional feature enforcing users to scan their user barcode to gain access to the device and associate the user to the device for accountability.
-* **[Find Devices](#finddevices) -** discusses the process to find a device, even if the device has lost power (for devices with secondary BLE).
-* **[Decommission/Recommission Device](#decommissionrecommissiondevice) -** remove or reinstate a device from the active pool of devices. Easily track devices that need to be removed from the pool due to repair or decommission.
-* **[Add/Edit a Note](#addeditanote) -** add device-specific comments, e.g. to identify device issues
+
+- **[Device Check-out](#devicecheckout) -** an optional feature enforcing users to scan their user barcode to gain access to the device and associate the user to the device for accountability.
+- **[Find Devices](#finddevices) -** provides the procedure to find a device, even if the device has lost power (for devices with secondary BLE).
+- **[Decommission/Recommission Device](#decommissionrecommissiondevice) -** remove or reinstate a device from the active pool of devices. Easily track devices that need to be removed from the pool due to repair or decommission.
+- **[Add/Edit a Note](#addeditanote) -** add device-specific comments, e.g. to identify device issues.
 
 ---
 
 ## Device Check-out
 
-[Device Check-out](../config/#devicecheckout) is an optional feature that can be enabled by the administrator. If enabled, the user is required to scan their barcode at the start of their work shift to check-out the device, then logout at the end of their work shift to check-in the device. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. When a device is checked-out, the user is associated with the particular device until the user checks in the device.
+[Device Check-out](../settings/#devicecheckout) is an optional feature that can be enabled by the administrator. If enabled, the user is required to scan their barcode at the start of their work shift to check-out the device, then logout at the end of their work shift to check-in the device. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed. When a device is checked-out, the user is associated with the particular device until the user checks in the device.
 
 ### Check-out
 
@@ -87,7 +88,6 @@ Managers and administrators can alternatively mark a device <b>To Be Found</b> a
    <img style="height:350px" src="device-details-1.png" />
    <i>Manager/admin view to mark a device "To Be Found"</i>
 
-
 ### Find a Device
 
 The target device must be set **To Be Found** to proceed with the device search. A search is initiated from the **To Be Found** device list. For an associate, the **To Be Found** device list is displayed after starting the client app. For an administrator or manager, the **To Be Found** device list is accessible via the dashboard.
@@ -100,6 +100,7 @@ Perform _one_ of the following in the **To Be Found** device list:<br>Tap and ho
  <img style="height:350px" src="find-device.png" /><i>Device action menu</i> <br>
 _Or,_<br>
 Tap on the device card for the target device to open the <b>Device Details</b> screen. Tap <b>Start Finding.</b>
+
 <table style="margin-left:40px">
   <tr>
    <td>
@@ -156,7 +157,7 @@ After a device is found, recommission the device to place it back into the activ
 
 ### Decommission a Device
 
-When a device is no longer in use or needs to be taken out of the active device pool, it can be set as **Decommissioned.** This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed. 
+When a device is no longer in use or needs to be taken out of the active device pool, it can be set as **Decommissioned.** This prevents any further device reporting to the server and applies to situations when the device is being sent for repair, the device is being replaced, or the device is deprecated and needs to be removed.
 
 When a device is decommissioned, the license is automatically deallocated from the device and returned to the license pool so it can be reallocated to another device.
 
@@ -172,7 +173,7 @@ When a device is decommissioned, the license is automatically deallocated from t
 
 ### Recommission a Device
 
-Recommission a device after it is found, or it is previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server. 
+Recommission a device after it is found, or it is previously **Decommissioned** and needs to be placed back into the active device pool (e.g. returned from repair). Recommissioning a device restarts the device status reporting to the server.
 
 When recommissioning a device, if a license is available it is automatically allocated to the device. If no license is available, the device remains in the decommissioned state and a <a href="./#addeditanote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.
 

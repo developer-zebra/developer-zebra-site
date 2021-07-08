@@ -7,7 +7,7 @@ productversion: "4.2"
 
 ## Overview
 
-Upon initial setup of Device Tracker, the administrator must register device, access point (AP) and site information. Setup and configuration of Device Tracker can be performed as follows:
+For initial setup, the administrator must register device, access point (AP) and site information, and configure Device Tracker. Alternatively, after initial setup additional devices and APs can be registered. Setup and configuration of Device Tracker can be performed as follows:
 
 - **[Register access points](#siteaccesspointanddevicedata) -** Register the access point location to identify which AP the device is connected to and to aid in locating the device.
   - **Assign a friendly name to the access point -** helps users identify the physical location of the AP in the site
@@ -16,10 +16,16 @@ Upon initial setup of Device Tracker, the administrator must register device, ac
   - **Assign a device friendly name -** helps users identify the device
   - **Assign a site location -** identifies the physical location of the device
 - **[Enable/Disable secondary BLE beacon](#secondaryble) -** Allow devices with a secondary BLE beacon to be located when the device loses power.
-- **Enable/Disable device check-out –** _Optional:_ Administrators toggle the check-out feature in the [web portal](../settings/#devicecheckout), enforcing users to scan their user barcode at the beginning of their work shift to check-out their device. This associates the device to the particular user. 
-    - **Set check-out barcode prefix -** From the [web portal](../settings/#setcheck-outbarcodeprefix) Specify a prefix for the barcode scanned during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
+- **[Enable/Disable device check-out](#devicecheckout) –** _Optional:_ Administrators toggle the check-out feature in the web portal, enforcing users to scan their user barcode at the beginning of their work shift to check-out their device. This associates the device to the particular user.
+    - **[Add/Modify barcode prefix](#devicecheckout) -** Specify a prefix for the barcode scanned during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
 
-See the [Settings](../settings) section for more information on the web portal and how to manage users and view licenses.
+Administrators have access to the [web portal](#webportal) to:
+  - Add/Delete administrators
+  - Add/Delete site managers
+  - Reset passwords
+  - Enable/Disable check-out
+
+For the convenience of administrators, logging can be captured for diagnostic purposes, as detailed in the [Diagnostics](#diagnostics) section.
 
 ---
 
@@ -103,6 +109,7 @@ Sample Delete Device .CSV file content:
         TC51,17009522509813
     </code>
 </pre>
+<br>
 
 ### Import Site and AP Data
 
@@ -159,7 +166,6 @@ For devices with secondary BLE beaconing capability, Device Tracker can locate t
 
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 
-<!-- 
 ---
 
 ## Web Portal
@@ -335,7 +341,7 @@ To use EMM to capture logging, refer to the following XML content:
 
 Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
 <br><br>
--->
+
 ---
 
 ## See Also

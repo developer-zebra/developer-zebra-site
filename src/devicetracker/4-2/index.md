@@ -11,6 +11,8 @@ menu:
       url: /devicetracker/4-2/guide/setup
     - title: Setup
       url: /devicetracker/4-2/guide/config
+    - title: Settings
+      url: /devicetracker/4-2/guide/settings
     - title: Administration
       url: /devicetracker/4-2/guide/mgmt
     - title: Track Devices

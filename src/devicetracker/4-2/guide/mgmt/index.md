@@ -7,7 +7,9 @@ productversion: "4.2"
 
 ## Overview
 
-Device Tracker is a role-based solution. Features and functionality depend on the role of the user logged in: associate, manager, or administrator. This section discusses the different roles, how each role can monitor devices and the actions that can be taken based on the role. There are 3 distinct user roles: associate, manager, and administrator.
+Device Tracker is a role-based solution. Features and functionality depend on the role of the user logged in: associate, manager, or administrator. This section discusses the different roles, how each role can monitor devices and the actions that can be taken based on the role.
+
+Administrators and Managers have the added capability to oversee devices within their site or organization by accessing the [site list, dashboard or device list](#deviceinformation).
 
 ### Administrator Role
 
@@ -17,19 +19,18 @@ Features and functions of administrators:
 
 - Configuration:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../license">Monitor and take action on device licenses</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#webportal">Create/Manage administrator and manager user logins</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#webportal">Create/Manage administrator and manager user logins</a><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
 
 - View:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard to view corporate-level data across all sites</a><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../use/#devicecheckout">Use device check-out/check-in _(optional)_</a><br>
 
 - Includes all Manager and Associate actions
-  <br><br>
 
 ### Manager Role
 
@@ -50,7 +51,7 @@ Features and functions of managers:
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditanote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
   <br>
 
-- Includes all Associate actions<br><br>
+- Includes all Associate actions
 
 ### Associate Role
 
@@ -64,18 +65,6 @@ Features and functions of associates:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Locate a device using last connected AP location, visual Bluetooth proximity indicator and play sound<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Mark device as **Found** or **Cannot Find**<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Use device check-out/check-in _(optional)_
-
----
-
-## Licenses
-
-Licenses are shared among devices from a pool of licenses. After a license expires or when a device is [recommissioned](../use/#recommissionadevice), it is automatically allocated a license if available. Administrators can perform the following:
-
-- Monitor licenses.
-- Transfer a license from one device to another.
-- Remove a license.
-
-See the [License](../license) section for more information.
 
 ---
 
@@ -102,21 +91,6 @@ After logging in as <i>administrator</i> on the device, tap on the top right opt
 
 ---
 
-## Reset Password
-
-Passwords can be reset through the web portal or the client app.
-
-<p>Steps to reset the password in the client app:</p>
-
-1. In the Admin/Manager Login screen, tap **Forgot your password.**
-2. When prompted, enter your email address then click **Reset Password.**
-3. A message appears indicating a password reset email is sent.
-4. Open the email and click on the link.
-5. Enter in the new password in the password reset page.
-6. The password is reset with the new password.
-
----
-
 ## Device Information
 
 Administrators and managers have additional capability to view data:
@@ -139,7 +113,6 @@ After administrator login, a site listing is visible for site selection:
 
 <img style="height:350px" src="sitelist.png" />
 <i>Site list</i>
-<br>
 
 ### Dashboard
 
@@ -171,7 +144,7 @@ Device status:
 - **Disconnected –** filters devices that have connected to the server but are no longer connected due to no communication with the server for approximately 12 minutes.
   <br>
 
-<p>If <a href="../config/#devicecheckout">Device Check-out</a> is enabled:</p>
+<p>If <a href="../settings/#devicecheckout">Device Check-out</a> is enabled:</p>
 
 - **Checked Out –** filters devices that are checked-out by users after scanning their user barcode, associating the user to the device.
 
@@ -184,7 +157,7 @@ Device status:
 
 ### Device List
 
-The device list displays all devices corresponding to the selected category in the dashboard. In the dashboard screen, select a category in the list to view the corresponding list of devices. The search result is limited to display 100 records. If this limit is exceeded, a message is displayed below the device list indicating that there are additional records and the search should be refined to avoid exceeding the limit. <br>
+The device list displays all devices corresponding to the selected category in the dashboard. In the dashboard screen, select a category in the list to view the corresponding list of devices. The search result is limited to display 100 records. If this limit is exceeded, a message is displayed below the device list indicating that there are additional records and the search should be refined to avoid exceeding the limit.
 
 Each individual device is displayed as a “device card” that shows information pertaining to that particular device:
 
@@ -201,7 +174,6 @@ Each individual device is displayed as a “device card” that shows informatio
   - **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
 
 * Top right icon indicates device battery level or charging state.
-  <br>
 
 <img style="height:350px" src="devicelist.png" />
 <i>Device list from <b>All Devices</b></i>
@@ -223,6 +195,7 @@ Tap and hold on any device card to display the available device actions:
 Tap on any device card to display the **Device Details** screen:
 
 - **Device Status:**
+
   - **In Service –** device is part of the active device pool and not in any of the other device states
   - **To Be Found –** the administrator or manager tagged the device, waiting for a user to take action to find the device
   - **Finding –** the device search is initiated by another user
@@ -230,6 +203,7 @@ Tap on any device card to display the **Device Details** screen:
   - **Cannot Find –** the device could not be found after the search was conducted
   - **Decommissioned –** the device is removed from the active device pool
   - **Unlicensed -** the device is not allocated with a license, therefore the app will not operate.
+
 - **Friendly name –** the assigned friendly device name as registered by the administrator
 - **Device Model –** the model of the device
 - **Serial Number –** the serial number of the device
@@ -316,6 +290,33 @@ To perform a device search:
 
 3. Tap Search.
 4. The search results return matches that begin with the text entered in the search field corresponding with the type of search conducted.
+
+---
+
+## Licenses
+
+Licenses are shared among devices from a pool of licenses. After a license expires or when a device is [recommissioned](../use/#recommissionadevice), it is automatically allocated a license if available. Administrators can perform the following:
+
+- Monitor licenses.
+- Transfer a license from one device to another.
+- Remove a license.
+
+See the [License](../license) section for more information.
+
+---
+
+## Reset Password
+
+Passwords can be reset through the web portal or the client app.
+
+<p>Steps to reset the password in the client app:</p>
+
+1. In the Admin/Manager Login screen, tap **Forgot your password.**
+2. When prompted, enter your email address then click **Reset Password.**
+3. A message appears indicating a password reset email is sent.
+4. Open the email and click on the link.
+5. Enter in the new password in the password reset page.
+6. The password is reset with the new password.
 
 ---
 

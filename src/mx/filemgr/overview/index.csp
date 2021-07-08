@@ -26,6 +26,6 @@ The File Manager (FileMgr) allows an application to manage files on the device. 
 * Specify a naming pattern for uploaded files 
 * Delete file after uploading
 
-> **`IMPORTANT:`** File Manager does <u>NOT</u> support anonymous FTP.
+> **<u>IMPORTANT</u>**: File Manager does <u>NOT</u> support anonymous FTP.
 
 -----

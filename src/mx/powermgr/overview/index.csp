@@ -59,7 +59,7 @@ Enterprise Reset is intended to return the device to an enterprise-defined defau
 
 **Note: The Enterprise Reset Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
-**`BEST PRACTICE:` Enterprise Reset should be triggered <u>only</u> through Power Manager and <u>only</u> with the Setup Wizard Bypass flag set to "true."** Manually triggering Enterprise Reset without setting the bypass flag could leave the device in an unexpected state.
+**<u>BEST PRACTICE</u>**: Enterprise Reset should be triggered <u>only</u> through Power Manager and <u>only</u> with the Setup Wizard Bypass flag set to "true." Manually triggering Enterprise Reset without setting the bypass flag could leave the device in an unexpected state.
 
 ### Factory Reset
 

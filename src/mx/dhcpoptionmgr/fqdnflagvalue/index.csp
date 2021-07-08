@@ -15,7 +15,7 @@ parm:
 Used to enter a value for the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. The FQDN Flag value is used to overcome issues related to a hostname prefixed with a special character. 
 
 * **0001 = "S" -** Indicates whether the server should perform FQDN-to-address DNS updates. A "0" value indicates that the server **SHOULD NOT** perform updates (**recommended**).
-* **0010 = "O" –** Indicates whether the server has overridden the value stored in the "S" bit. **`NOTE:` Client must always set a "0" value here**. 
+* **0010 = "O" –** Indicates whether the server has overridden the value stored in the "S" bit. **<u>NOTE</u>**: Client must always set a "0" value here**. 
 * **0100 = "E" –** Indicates the encoding used on the Domain Name field. When this bit contains a "1" value, FQDN is binary-encoded (**recommended**). All DNS servers should have the capability to handle this encoding.
 * **1000 = "N" –** Indicates whether the SHOULD (value = 1) or SHOULD NOT (value = 0) perform any DNS updates. **The S bit must contain a "0" value if the N bit contains a "1" value**. 
 

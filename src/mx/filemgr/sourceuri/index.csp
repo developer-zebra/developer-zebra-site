@@ -15,7 +15,7 @@ parm:
 
 Used to enter the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
 
-**`IMPORTANT:` File Manager does <u>NOT</u> support anonymous FTP**.
+**<u>IMPORTANT</u>**: File Manager does <u>NOT</u> support anonymous FTP.
 
 **Parm value input rules**:
 

@@ -40,4 +40,4 @@ parm:
 
 Controls the GMS applications and services allowed to run on the device. 
 
-**`IMPORTANT:` If GMS apps were previously disabled using the "DisableGMSApps" App Manager Action, they must be re-enabled using the "EnableGMSApps" App Manager Action <u>prior to upgrading the device for the purpose of enabling GMS Manager</u>**. Failure to do so can result in unpredictable behavior. **NOTE:** It is NOT possible to transition a device to a new OS _<u>and</u>_ to implement GMS Restricted mode with a single XML profile.
+**<u>IMPORTANT</u>**: If GMS apps were previously disabled using the "DisableGMSApps" App Manager Action, the **apps must be re-enabled using the "EnableGMSApps" App Manager Action <u>prior to upgrading the device for the purpose of enabling GMS Manager</u>**. Failure to do so can result in unpredictable behavior. **NOTE:** It is NOT possible to transition a device to a new OS _<u>and</u>_ to implement GMS Restricted mode with a single XML profile.

@@ -63,13 +63,13 @@ For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmod
 	* Do nothing
 * Reset all Key mappings to factory default values
 
-> **`NOTE:` Remapping the Power key is *NOT* supported on *any* device**.
+> **<u>NOTE</u>**: Remapping the Power key is *NOT* supported on *any* device**.
 
 -----
 
 ### Query Notice
 
-> `IMPORTANT:` **Query functions have been discontinued in Zebra devices running Android 11 and later**. 
+> **<u>IMPORTANT</u>**: Query functions have been discontinued in Zebra devices running Android 11 and later. 
 
 -----
 

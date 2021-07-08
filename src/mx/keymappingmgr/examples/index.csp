@@ -89,7 +89,7 @@ The first feature of the following Request XML document is used to first reset t
 
 ## Queries
 
-> `IMPORTANT:` **Query functions have been discontinued in Zebra devices running Android 11 and later**. 
+> **<u>IMPORTANT</u>**: Query functions have been discontinued in Zebra devices running Android 11 and later. 
 
 ###Version Query
 

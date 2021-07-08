@@ -25,4 +25,4 @@ parm:
 
 Controls whether the device administrator (DA) has access to configuration of Dual-SIM Dual Standby features. 
 
-> **`IMPORTANT:`** The DSDS Usage parameter **MUST be enabled (and device rebooted) <u><i>before</u></i> the DSDS Features box is checked and DSDS features are configured**. 
+> **<u>IMPORTANT</u>**: The DSDS Usage parameter **MUST be enabled (and device rebooted) <u><i>before</u></i> the DSDS Features box is checked and DSDS features are configured**. 

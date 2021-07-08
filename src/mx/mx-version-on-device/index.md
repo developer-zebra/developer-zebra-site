@@ -74,7 +74,7 @@ _This panel shows **OSX 4.2** running Android Jelly Bean (kernel 3.4.0)_
 
 ### Using EMDK For Android
 
-Version numbers can be obtained programmatically through the `VersionManager` Android API in EMDK using the following Java code:
+Version numbers can be obtained programmatically through the **VersionManager** Android API in EMDK using the following Java code:
 
     :::java
     // Get an instance of VersionManager
@@ -86,7 +86,7 @@ Version numbers can be obtained programmatically through the `VersionManager` An
 -----
 
 ### Submitting XML
-System Administrators can obtain version numbers through Zebra's StageNow tools or a compatible mobile device management system by submitting the following XML to the `MX` CSP: 
+System Administrators can obtain version numbers through Zebra's StageNow tools or a compatible mobile device management system by submitting the following XML to the **MX** CSP: 
 
     :::xml
 	<wap-provisioningdoc>
@@ -95,7 +95,7 @@ System Administrators can obtain version numbers through Zebra's StageNow tools 
 		</characteristic>
 	</wap-provisioningdoc>
     
- The result contains the MX version (which in this case is "4.4") returned in the `MXMFVersion` parameter shown below: 
+ The result contains the MX version (which in this case is "4.4") returned in the **MXMFVersion** parameter shown below: 
  
  	:::XML
 	<wap-provisioningdoc>
@@ -111,7 +111,7 @@ The MX version can be obtained from a PC or Mac by querying a USB-connected devi
 
     $ adb shell getprop
     
-The output must be filtered using `grep` or a similar tool. For Zebra-branded devices, use the string `ro.symbol.osx.version` in the grep argument, as shown below with the result:
+The output must be filtered using **grep** or a similar tool. For Zebra-branded devices, use the string `ro.symbol.osx.version` in the grep argument, as shown below with the result:
 
     $ adb shell getprop | grep ro.symbol.osx.version
     [ro.symbol.osx.version]: [QC_OSX_4.4-3]

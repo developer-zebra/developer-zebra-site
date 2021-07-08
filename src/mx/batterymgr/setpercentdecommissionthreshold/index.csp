@@ -17,7 +17,7 @@ Used to set the Battery Percentage Decommission Threshold on devices that suppor
 
 Gifted Batteries can determine their "Actual Capacity" under specific discharge conditions. Based on this, Gifted Batteries can estimate their Battery Health as the percentage the Actual Capacity is of the "Rated Capacity." Over time, the Actual Capacity and the Battery Health will diminish, and it's reasonable to expect that a battery with a lower Battery Health has a shorter remaining useful lifetime than a device with greater Battery Health.
 
->**Note:** This parameter can be used on Zebra Android devices that support Gifted Batteries regardless of whether a Gifted Battery is currently installed in the device. This allows administrators to configure the decommission threshold for devices currently using Smart Batteries in advance of installing Gifted ones. If this parameter is used on a device that does not support Gifted Batteries, an error will be returned in the Result XML document.
+>**<u>NOTE</u>**: This parameter can be used on Zebra Android devices that support Gifted Batteries regardless of whether a Gifted Battery is currently installed in the device. This allows administrators to configure the decommission threshold for devices currently using Smart Batteries in advance of installing Gifted ones. If this parameter is used on a device that does not support Gifted Batteries, an error will be returned in the Result XML document.
 
 **Parm value input rules**: 
 

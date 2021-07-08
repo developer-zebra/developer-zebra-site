@@ -16,7 +16,7 @@ parm:
 
 Used to set a customized icon that the ZVC will display to visually identify the audio stream that is typically used by system sounds. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
 
->**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the audio stream. This will cause ZVC to display the default icon defined for the audio stream.
+>**<u>NOTE</u>**: If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the audio stream. This will cause ZVC to display the default icon defined for the audio stream.
 
 **Parm value input rules**: 
 

@@ -100,4 +100,4 @@ parm:
 
 Used to invoke an OS- or power-related Action on the device. 
 
-> **`WARNING:`** Read [Overview section](#overview) carefully for important information and device restrictions related to the use of Reset, OS Update, OS Upgrade and OS Downgrade Actions. 
+> **<u>WARNING</u>**: Read [Overview section](#overview) carefully for important information and device restrictions related to the use of Reset, OS Update, OS Upgrade and OS Downgrade Actions. 

@@ -29,4 +29,4 @@ parm:
 
 This is the On/Off switch for logging WLAN module events, which is sometimes helpful for troubleshooting. Logs from all Wi-Fi modules are stored in the `/fusionlogs` folder on the device. **Caution**: Logging might cause performance delays. 
 
-**Important: Attempts to use this parameter on a device that doesn't support it returns a value of "0" or "99" (depending on the MX version) in the relevant section of the Result XML file**.
+**<u>IMPORTANT</u>**: Attempts to use this parameter on a device that doesn't support it returns a value of "0" or "99" (depending on the MX version) in the relevant section of the Result XML file.

@@ -24,7 +24,7 @@ When a device supports physically removable storage, it is sometimes necessary t
 for allowing apps to access each of the supported storage cards within a device. Paths such as `/storage/sdcard0` and `/storage/sdcard1` are supported when multiple storage cards are present. 
 * **Logical Link -** an internally implemented path that links directly to a storage card. For example, the path `/sdcard0` links to `/storage/sdcard0`.
 
-**Note**: While the term "card" might imply a removable medium, the primary (and secondary) "storage card(s)" in most Zebra devices are simulated using flash memory that's built into the device and cannot be removed. On devices that support a physically removable medium such a Micro SD Card, such storage will be identified and accessed using similar terminologies. 
+**<u>Note</u>**: While the term "card" might imply a removable medium, the primary (and secondary) "storage card(s)" in most Zebra devices are simulated using flash memory that's built into the device and cannot be removed. On devices that support a physically removable medium such a Micro SD Card, such storage will be identified and accessed using similar terminologies. 
 
 ### Variations
 * **The number and type of supported storage cards and their access paths vary by device**. 

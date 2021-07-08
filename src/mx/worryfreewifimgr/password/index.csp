@@ -15,7 +15,7 @@ parm:
 
 Used to enter the password for access by the device user to WorryFree Wi-Fi configuration settings. 
 
-**`IMPORTANT NOTE:` If a barcode is created with [Zebra StageNow](/stagenow) using MX 10.2 or older**, a password with fewer than eight (8) characters is permitted. However, an **"invalid password" error results** if that barcode is scanned with a device containing a `com.symbol.mxmf.csp.worryfreewifimgr` CSP version greater than 9.3.1. **To display the version of any CSP on a device, enable "Show System" in Settings -> Apps**.
+**<u>IMPORTANT NOTE</u>**: If a barcode is created with [Zebra StageNow](/stagenow) using MX 10.2 or older, a password with fewer than eight (8) characters is permitted. However, an **"invalid password" error results** if that barcode is scanned with a device containing a `com.symbol.mxmf.csp.worryfreewifimgr` CSP version greater than 9.3.1. **To display the version of any CSP on a device, enable "Show System" in Settings -> Apps**.
 
 **Parm value input rules**: 
 

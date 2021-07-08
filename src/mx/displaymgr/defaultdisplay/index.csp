@@ -28,8 +28,9 @@ parm:
       name: Secondary (Desktop) Display
       mx: "10.5"
       apilevel: "30"
-      description: Uses the external display for Media Projection and Key and Touch Injection operations.
+      description: Uses the external display for Media Projection and Key and Touch Injection operations. When this option is selected, attempts to perform Media Projection and KTI operations when the device is NOT connected to an external monitor result in an error. 
 ---
 
-Used to select which display to use for Media Projection and Key and Touch Injection operations when running an app to remotely control the device or perform similar activities. 
+Used to select which display to use for Media Projection and Key and Touch Injection operations when running an app to remotely control the device or perform similar activities.
+
 

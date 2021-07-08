@@ -14,6 +14,6 @@ parm:
 ---
 Used to enable/disable 802.1x Pre-Authentication. 
 
-**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
+**<u>IMPORTANT</u>: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
 
 

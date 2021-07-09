@@ -170,7 +170,7 @@ For more information about approved languages or to download a localized operati
 - **RFID input is disabled in [Profile0](../overview#profile0),** DataWedge's default generic profile. Previously it was enabled by default.
 - Improved look and feel of user interface. Refer to [Settings](../settings) and [DWDemo](../samples/dwdemo).
 - **Image Capture Mode** option from **Reader Params** is removed due to changes in the scanner framework.
-- **Support for SimulScan API is deprecated -** SimulScan support will be removed from DataWedge beginning with Android 10 Q device support.
+- **Support for SimulScan API is deprecated -** SimulScan support will be removed from DataWedge beginning with Android 10 device support.
 
 ### Added in DataWedge 7.5
 

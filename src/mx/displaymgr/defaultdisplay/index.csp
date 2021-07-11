@@ -7,7 +7,6 @@ mx: "10.5"
 apilevel: "30"
 devicetype: A
 parm:
-  presentif: Auto Rotate is set to "Turn On"
   pivotal: No
   name: AllowedOrientations
   type: list

@@ -1,3 +1,79 @@
+
+## Fix the "Anchor link problem"
+
+Because the TechDocs-page header (aka "menu bar") always remains when scrolling up or down, content of anchor links is partially obscured by the header. The following fixes that by causing the header to adhere to the top of the page, scrolling away upward as the page is scrolled downward. 
+
+**Add this to any branch in which you want to see the new behavior**: 
+
+Changes the main.css:
+
+1. In Header section insert the following (approx. line 178) causing menu bar to remain at top of scrolling page:
+
+	    #main-menu {
+	    position:relative;
+	    }
+
+2. In Typography section (approx. line 12) comment the following to remove extra padding no longer needed:
+
+	    /* padding-top: 100px; */
+
+-----
+
+## Add "Back to Top" Button
+After fixing the Anchor link problem (above), we added a "back to top" button to make it easier to bring the header back into view:  
+
+Add to main.css:
+
+    #back-to-top-btn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    #back-to-top-btn:hover {
+        background-color: #555;
+    }
+
+Add to Main.js:
+
+    //Get the Back-to-top button
+    var html='<button id="back-to-top-btn" title="Go to top">Back to Top</button>';
+
+    $("body").append(html);
+
+    var buttonToTop = document.getElementById("back-to-top-btn");
+
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        buttonToTop.style.display = "block";
+      } else {
+        buttonToTop.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    $("#back-to-top-btn").click(function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        });
+
+
+
+----
+
 ## Document a NEW PRODUCT
 (example: Enterprise Browser 1.6)
 

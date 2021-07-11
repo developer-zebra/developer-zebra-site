@@ -228,7 +228,7 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b
 
 &#52;. <b>Tap the Uninstall button</b>:
 <img alt="" style="height:350px" src="ehs_uninstall.png"/>
-**`NOTE:`**: If the Uninstall button is grey, first [remove EHS as the default launcher](#changethedefaultlauncher). 
+**<u>NOTE</u>**:**: If the Uninstall button is grey, first [remove EHS as the default launcher](#changethedefaultlauncher). 
 <br>
 
 &#53;. <b>Click OK</b> to confirm:
@@ -255,7 +255,7 @@ The steps above do not remove the `enterprisehomescreen.xml` configuration file 
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own EMM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/latest/guide/about) or [StageNow](/stagenow/latest/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
->**`IMPORTANT`**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Display and Sound settings, and the "About phone" panel only), disabling apps and recent apps button and so on, DO NOT revert to their former state when EHS is uninstalled. <u>To restore a device to its former state, **all such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
+>**<u>IMPORTANT</u>**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Display and Sound settings, and the "About phone" panel only), disabling apps and recent apps button and so on, DO NOT revert to their former state when EHS is uninstalled. <u>To restore a device to its former state, **all such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
 
 <!-- 7/30/19- also removed (though not per eng) b/c of ET50/55 support drop
 > **`CRASH WARNING`**: <u>On ET50 and ET55 devices with GMS, a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via EMM) while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 

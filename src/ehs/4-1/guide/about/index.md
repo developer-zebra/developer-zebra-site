@@ -44,8 +44,7 @@ Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us
 
 * **New [Screen Blanking feature](../features/#screenblanking)** disables touch input when the device is in motion, adding a measure of safety when EHS is used in vehicle applications. 
 * **Now available from the [Google Play store](https://play.google.com/store/search?q=enterprise%20home%20screen%20zebra&c=apps&hl=en_US&gl=US)**.
-
-
+* **Supports devices running Android 11**.
 
 ### Supported Devices
 

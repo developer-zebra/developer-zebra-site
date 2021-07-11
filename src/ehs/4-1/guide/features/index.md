@@ -21,12 +21,16 @@ EHS 4.1 (and later) supports screen blanking, which can automatically place a bl
 
 ### Requirements
 * **Supported only on GMS devices** with the Google Play service
-* **GPS must be enabled** and functional on the device
+* **The Global Positioning System (GPS) must be enabled** and functional on the device
+<!-- 7/11/21- now set automatically, per eng. TUT-53927
 * **"Display over other apps" must be enabled for EHS on device** (see image below)
 
 <img alt="" style="height:280px" src="ehs41_screen_blanking_panel_00.png"/>
 _Click image to enlarge; ESC to exit_. 
 <br>
+ -->
+
+> <b><u>Important</u></b>: EHS Display Blanking uses GPS to determine vehicle motion. On initial use, **a significant delay in Screen Blanking can be seen while the device locates satellites** and begins acquiring location data. Obstructions such as buildings and tunnels can interrupt GPS signals and cause Display Blanking to disengage while the vehicle is moving. During normal use, **EHS is designed to automatically disengage Screen Blanking if the GPS signal is interrupted** for longer than five (5) minutes. Screen Blanking is automatically re-engaged when the GPS signal is restored.
 
 ### Notes
 * **All touch input is blocked** when overlay is displayed.

@@ -344,7 +344,7 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
 In the example above, the package and activity attributes are used to launch the URL in the Mozilla Mobile browser. If the specified app (as defined in the package and activity parameters) is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
 
 <!-- Per TUT-30507, file URIs are now supported on Oreo
-**`OREO NOTE:`** EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer). 
+**<u>OREO NOTE</u>**: EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer). 
  -->
 #### Link Removal
 To remove a web link from the User Mode screen: 
@@ -988,7 +988,7 @@ Controls whether full or limited settings are available when the device is in Ad
 ### Recent Apps Access 
 Controls whether a User's recently launched apps can be seen by that User. Applies to User Mode only. **Disabled by default** (recent apps are not shown). Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
-`IMPORTANT NOTES:` 
+**<u>IMPORTANT NOTES</u>**: 
 * **[Recent Apps Button](#recentappsbuttondisabled) feature must be** ***ENABLED*** (option 0) to use this feature. 
 * Enable this feature **<u>to preserve an application’s state</u> when returning it to the foreground**.   
 * If launched in Admin Mode, **Google's Quick Search and Play Store apps** (`com.google.android.googlequicksearchbox` and `com.android.vending`) **appear to users in the Recent Apps list unless manually cleared** by the admin. 
@@ -1013,7 +1013,7 @@ Controls whether a User's recently launched apps can be seen by that User. Appli
 **Applies only to devices running Android Oreo and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Oreo (and later) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >**This setting persists** after EHS is removed.<br>
->`IMPORTANT:` Enable this feature (option 0) to use Recent Apps Access feature. 
+>**<u>IMPORTANT</u>**: Enable this feature (option 0) to use Recent Apps Access feature. 
 
 <img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
 

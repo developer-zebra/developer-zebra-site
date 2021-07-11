@@ -17,7 +17,7 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Screen Blanking
 
-EHS 4.1 (and later) supports screen blanking, which can automatically place a black or transparent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen blanking is intended as a safety measure when EHS is used in vehicle applications. 
+EHS 4.1 (and later) supports Screen Blanking, which can automatically place a black or transparent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen Blanking is intended as a safety measure when EHS is used in vehicle applications. 
 
 ### Requirements
 * **Supported only on GMS devices** with the Google Play service
@@ -30,7 +30,7 @@ _Click image to enlarge; ESC to exit_.
 <br>
  -->
 
-> <b><u>Important</u></b>: EHS Display Blanking uses GPS to determine vehicle motion. On initial use, **a significant delay in Screen Blanking can be seen while the device locates satellites** and begins acquiring location data. Obstructions such as buildings and tunnels can interrupt GPS signals and cause Display Blanking to disengage while the vehicle is moving. During normal use, **EHS is designed to automatically disengage Screen Blanking if the GPS signal is interrupted** for longer than five (5) minutes. Screen Blanking is automatically re-engaged when the GPS signal is restored.
+> <b><u>Important</u></b>: EHS Screen Blanking uses GPS to determine vehicle motion. On initial use, **a significant delay in Screen Blanking can be seen while the device locates satellites** and begins acquiring location data. Obstructions such as buildings and tunnels can interrupt GPS signals and cause Screen Blanking to disengage while the vehicle is moving. During normal use, **EHS is designed to automatically disengage Screen Blanking if the GPS signal is interrupted** for longer than five (5) minutes. Screen Blanking is automatically re-engaged when the GPS signal is restored.
 
 ### Notes
 * **All touch input is blocked** when overlay is displayed.
@@ -39,13 +39,13 @@ _Click image to enlarge; ESC to exit_.
 * **The transparent overlay allows display of Maps** or other apps but no user interaction.
 * **Blanking becomes inactive when**: 
  * **Vehicle speed drops and remains below the configured speed threshold** for 10 seconds.
- * **GPS data is lost for a period of five (5) minutes**. The service checks for a GPS signal every five (5) minutes; blanking is restored automatically when GPS service resumes.  
-* **The screen blanking feature takes about 15 seconds to initialize** following a device reboot. 
+ * **GPS data is lost for a period of five (5) minutes**. The service checks for a GPS signal every five (5) minutes; blanking is re-engaged automatically when the GPS signal is restored.  
+* **Screen Blanking can require several minutes to initialize** following a device reboot. 
 
 -----
 
 ### Enable Screen Blanking
-Screen blanking is enabled by a device administrator using the EHS Preferences panel on the device or through a setting in the `enterprisehomescreen.xml` config file. For more information about this file, see the [Working with the Config File](../settings/#workingwiththeconfigfile) section of the Advanced Settings guide. 
+Screen Blanking is enabled by a device administrator using the EHS Preferences panel on the device or through a setting in the `enterprisehomescreen.xml` config file. For more information about this file, see the [Working with the Config File](../settings/#workingwiththeconfigfile) section of the Advanced Settings guide. 
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_01b.png"/>
 _Click image to enlarge; ESC to exit_. 
@@ -62,7 +62,7 @@ _Click image to enlarge; ESC to exit_.
 * 1 - Enabled (touch input disabled according to configured speed threshold)
 
 ### Speed Threshold
-Used to set the vehicle speed (in miles per hour) at which screen blanking is enabled and touch input is disabled **(default = 10 MPH)**. **The minimum value is 5 MPH**. If a value of less than 5 is entered, the default value of 10 is used.  
+Used to set the vehicle speed (in miles per hour) at which Screen Blanking is enabled and touch input is disabled **(default = 10 MPH)**. **The minimum value is 5 MPH**. If a value of less than 5 is entered, the default value of 10 is used.  
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_02.png"/>
 _Click image to enlarge; ESC to exit_. 
@@ -79,9 +79,9 @@ _Click image to enlarge; ESC to exit_.
 
 ### Blanking Mode
 
-Used to select the screen blanking mode; both of which disable touch input. Option 1 overlays the screen with black; no data is visible. Option 2 places a transparent covering over the current app, allowing data (such as Google Maps) to be visible. 
+Used to select the Screen Blanking mode; both of which disable touch input. Option 1 overlays the screen with black; no data is visible. Option 2 places a transparent covering over the current app, allowing data (such as Google Maps) to be visible. 
 
-**NOTE: Mode changes take effect after the user visits the EHS Home Screen**.
+**Note**: Mode changes take effect after the user visits the EHS Home Screen.
 
 <img alt="" style="height:350px" src="ehs41_screen_blanking_panel_03.png"/>
 _Click image to enlarge; ESC to exit_. 

@@ -104,7 +104,8 @@ See the **full list of [supported mobile devices](https://www.zebra.com/us/en/su
 * New `ScannerConfig.MultiBarcodeParams` parameter supports:  
  * `reportDecodedBarcodes` with the ability to enable or disable reporting decoded barcode data in a single scan session regardless of the configured barcode count.
 
-<!-- ### Deprecations
+<!-- 7/11/21- removed at eng request
+### Deprecations
 
 **Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API. UDI support will be removed from the Barcode API when EMDK begins supporting devices running Android 10 Q.
  -->
@@ -222,16 +223,13 @@ The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile 
  * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
  * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
 
-#### Deprecations
 
-**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued with Android 10 Q.
-
-
+<!-- 
 ### Added in 7.3
 
 * **EMDK for Android 7.3 (and later) has been certified to support [Android Studio 3.4](https://developer.android.com/studio/)**, which was released to the stable channel on Apr. 17.
 * **[Android Intent APIs](../../intents) are now available**. 
-
+ -->
 #### Supported Devices
 No new device support added in this version. 
 

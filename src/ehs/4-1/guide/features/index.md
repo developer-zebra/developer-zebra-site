@@ -17,7 +17,7 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Screen Blanking
 
-EHS 4.1 (and later) supports Screen Blanking, which can automatically place a black or transparent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen Blanking is intended as a safety measure when EHS is used in vehicle applications. 
+EHS 4.1 (and later) supports Screen Blanking, which can automatically place a black or transparent overlay atop the device screen when the GPS system detects movement, disabling touch input. Screen Blanking is intended as a safety measure when EHS is used in vehicle applications. **Zebra assumes no responsibility for damage or loss due to distracted driving**.
 
 ### Requirements
 * **Supported only on GMS devices** with the Google Play service
@@ -30,7 +30,11 @@ _Click image to enlarge; ESC to exit_.
 <br>
  -->
 
-> <b><u>Important</u></b>: EHS Screen Blanking uses GPS to determine vehicle motion. On initial use, **a significant delay in Screen Blanking can be seen while the device locates satellites** and begins acquiring location data. Obstructions such as buildings and tunnels can interrupt GPS signals and cause Screen Blanking to disengage while the vehicle is moving. During normal use, **EHS is designed to automatically disengage Screen Blanking if the GPS signal is interrupted** for longer than five (5) minutes. Screen Blanking is automatically re-engaged when the GPS signal is restored.
+> <b><u>IMPORTANT</u></b>: 
+<br>EHS Screen Blanking uses GPS to determine vehicle motion. On initial use, **a significant delay in Screen Blanking can be seen while the device locates satellites** and begins acquiring location data. Obstructions such as buildings and tunnels can interrupt GPS signals and cause Screen Blanking to disengage while the vehicle is moving. During normal use, **EHS is designed to automatically disengage Screen Blanking if the GPS signal is interrupted** for longer than five (5) minutes. Screen Blanking is automatically re-engaged when the GPS signal is restored.
+<br>
+<br> **<u>DOT WARNING</u>**:<br>
+The EHS Display Blanking feature was NOT developed in accordance with any transportation department rules or regulations. **Zebra assumes no responsibility for damage or loss due to distracted driving**.
 
 ### Notes
 * **All touch input is blocked** when overlay is displayed.

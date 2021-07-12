@@ -20,9 +20,15 @@ menu:
 Zebra Workstation Connect is a hardware and software solution for Zebra devices running Android that allows a mobile device to provide a desktop-like experience. The solution centers on the Zebra Workstation Docking Cradle, which provides four USB 3.0 ports for connections to keyboard and mouse, plus gigabit Ethernet and for a full-sized monitor via HDMI. 
 
 
-<img alt="image" style="height:250px" src="zwc_3.png"/>
-_Click images to enlarge._
+<img alt="image" style="height:250px" src="zwc_4.png"/>
+_Click images to enlarge; ESC to exit._
 
+
+<!-- 
+<img alt="image" style="height:250px" src="zwc_3.png"/>
+_Click images to enlarge; ESC to exit._
+
+ -->
 
 ZWC leverages Android Desktop Mode to present the user with a “desktop-like” interface when connecting a mobile device to an external monitor via a workstation cradle. This guide describes the necessary steps to enable Desktop Mode and the features included.  
 

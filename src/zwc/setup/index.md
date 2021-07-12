@@ -1,7 +1,8 @@
 ---
-title: Zebra Workstation Connect Setup
+title: Setup and Usage
 layout: guide.html
-product: ZWC
+product: Zebra Workstation Connect
+productversion: '1.0'
 menu:
   items:
     - title: About

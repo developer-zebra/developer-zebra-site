@@ -1,7 +1,8 @@
 ---
-title: EMM Support
+title: Enterprise Mobility Management Usage
 layout: guide.html
-product: ZWC
+product: Zebra Workstation Connect
+productversion: '1.0'
 menu:
   items:
     - title: About
@@ -17,6 +18,8 @@ menu:
     - icon: fa fa-search
       url: /zwc/search
 ---
+
+The Zebra Workstation Connect solution supports setup and configuration through a company's own enterprise mobility management (EMM) solution. This works through the use of Android Managed Configurations. 
 
 EMM support for remote configuration of ZWC via Android Managed Configurations: 
 

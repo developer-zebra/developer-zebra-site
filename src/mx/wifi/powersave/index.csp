@@ -42,6 +42,9 @@ parm:
       mx: "4.4"
       devicetype: A,B
       name: PS-POLL
+    - code: 7
+      mx: "10.6"
+      name: TWT
     - code: 99
       mx: "6.2"
       devicetype: A,B

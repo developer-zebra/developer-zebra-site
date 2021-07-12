@@ -38,6 +38,36 @@ Is there a change?
 
 -----
 
+7/12/21- copied from PMB: 
+
+###Q: Is software needed to enable TC5X devices to be used in a desktop-like environment through the TC5X Workstation Docking Cradle?
+
+**A. Yes, all supported TC5X devices require specific ZWC software components to be installed on all devices intended to use the ZWC cradle**: 
+
+* Displaylink Presenter driver (from [Google Play](https://play.google.com/store/apps/details?id=com.displaylink.presenter&hl=en_US))
+
+
+FIXXXXXXXXXXX
+
+Once installed and an HDMI monitor is attached to the cradle, the TC5X display will be presented on the HDMI monitor in the same mode (i.e. Portrait, Landscape) as the device setting.
+
+In addition, for the TC52 and TC57, we recommend our Android Oreo BSP Version: 01.21.18.00, which includes support for the Ethernet driver and an auto-rotation feature. For the TC51 and TC56, BSP Version: 02.13.15 LifeGuard Patch Version: U16 will also include these features. These downloads are available on the Zebra support site @ https://www.zebra.com/support (Search “TC5”)
+
+-----
+
+###Q: What does the ZWC software do and why is it required? 
+
+
+additional software to enable the use of an HDMI monitor and to utilize an autorotation feature to display in landscape mode. 
+
+----- 
+
+###Q: Are all four (4) USB ports on the TC5X Workstation Docking Cradle the same?
+
+**A. No. Three are standard 0.5-AMP USB ports suitble for connecting a keyboard, mouse and other peripherals. The remaining port delivers 1.5 AMPs, which could be used for charging another device**.
+
+-----
+
 6/2/21 - COPIED FROM Usage Guide
 
 

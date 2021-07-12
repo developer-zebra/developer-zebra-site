@@ -27,6 +27,22 @@ BSP Wave 2
 install ZWC (launcher) app
 
 
+
+
+Displaylink Presenter driver: 
+https://play.google.com/store/apps/details?id=com.displaylink.presenter&hl=en_US
+
+
+CRD-TC5X-1SWS-01: TC5X Workstation Docking Cradle Kit with Std Cup, HDMI, Ethernet and multiple USB Ports. Kit includes Cradle (CRD-TC5X-1SWS1-01), power supply (i.e. PWR- BGA12V50W0WW) and DC cable (i.e. CBL-DC-388A1-01). Country specific AC line cord sold separately.
+
+Default Mirror Mode: 
+
+After installing the RC1 Android OS (11-11-03.00-RG-U00-PRD-HEL-04), the device will use “Mirror Mode” as default when the device is docked in a workstation cradle and connected to a HDMI monitor; if “Mirror Mode” is the required view mode for this set-up, no further actions are required. To evaluate “Desktop Mode”, follow the steps on the section below.  
+
+OemConfig support isn’t so much “for ZWC” as for the system environment in which ZWC runs.  In order for ZWC to run, it must be deployed to the device.  ZWC has its own managed configurations that can be used to configure its behavior, but that behavior will only occur when the device docks and the secondary display is created for which ZWC is the secondary launcher.  Before that can ever happen, OemConfig must be used to change the device from mirror mode to desktop mode.  Further, there may be other system level configurations that OemConfig might be used to set, such as USB external storage, keyboard layouts, etc.  OemConfig doesn’t configure ZWC, but it CAN be used to configure things that effect the system environment and hence will have an impact on ZWC when it runs.  Since getting a new version of OemConfig that has these features into the Play Store is problematic for Beta, and since those things can be done via StageNow (which configuring ZWC cannot), we have decided to focus on getting ZWC into the Play Store and accessible to EMMs and defer dealing with OemConfig until later.
+
+
+
 At the heart of the ZWC solution is the Zebra Workstation Connect app, which runs automatically whenever a device containing the app is placed in the ZWC dock. The app implements a special Android launcher that handles all communications through the dock, presents the preferred desktop on the external monitor, and stores the display mode, app shortcuts and other user preferences.   
 
 Upon first installation, the device is forced into landscape mode and its content is mirrored on the external monitor by default. 

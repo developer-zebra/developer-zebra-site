@@ -21,11 +21,13 @@ parm:
       mx: "4.2"
     - code: 2
       devicetype: A,B
-      name: Fast Power Save (Deprecated)
+      info: DEPRECATED; this feature will be removed from a future release. 
+      name: Fast Power Save (DEPRECATED)
       mx: "4.2"
     - code: 3
       devicetype: A,B
-      name: Max Power Save (Deprecated)
+      info: DEPRECATED; this feature will be removed from a future release. 
+      name: Max Power Save (DEPRECATED)
       mx: "4.2"
     - code: 4
       devicetype: A,B

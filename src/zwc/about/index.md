@@ -10,6 +10,8 @@ menu:
       url: /zwc/setup
     - title: EMM Support
       url: /zwc/emm
+    - title: APIs
+      url: /zwc/api
     - title: FAQ
       url: /zwc/faq
     - icon: fa fa-search

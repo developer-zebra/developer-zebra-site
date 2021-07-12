@@ -73,7 +73,7 @@ After reaching the expiration date, the license is automatically deallocated fro
 
 ## Recommission Devices
 
-<p>For devices being <a href="../use/#recommissionadevice">recommissioned</a> to place back into service as an active device, if a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device and the allocated license is reflected in the <a href="../settings/#webportal">Device Tracker web portal</a>. If a license is not available, the device remains in the decommissioned state and a <a  href="../use/#addeditanote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.</p>
+<p>For devices being <a href="../use/#recommissionadevice">recommissioned</a> to place back into service as an active device, if a license is available, the server allocates a license to the device. After the device is licensed, Device Tracker is operational on the device and the allocated license is reflected in the <a href="../settings/#webportal">Device Tracker web portal</a>. If a license is not available, the device remains in the decommissioned state and a <a  href="../use/#addeditnote">note</a> is automatically added indicating there is no license available. This note overwrites any pre-existing note. When a license is available, the admin or manager must recommission the device to allocate the license and manually delete the note.</p>
 
 ---
 

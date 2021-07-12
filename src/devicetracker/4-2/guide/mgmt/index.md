@@ -48,7 +48,7 @@ Features and functions of managers:
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Recommission](../use/#decommissionrecommissiondevice) –** marks the device **In Service** to place into the active device pool, the collection of devices with active server communication<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Decommission](../use/#decommissionrecommissiondevice) –** removes the device from the active device pool<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[View Details](../mgmt/#deviceinformation) –** provides device data: friendly name, device model, serial number, last connected AP, battery level, battery status, device state, site name, last reported, display on, note<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditanote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditnote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
   <br>
 
 - Includes all Associate actions
@@ -295,13 +295,30 @@ To perform a device search:
 
 ## Licenses
 
-Licenses are shared among devices from a pool of licenses. After a license expires or when a device is [recommissioned](../use/#recommissionadevice), it is automatically allocated a license if available. Administrators can perform the following:
+[Licenses](../license) are required for Device Tracker operation on devices. Licenses are shared from a single pool of licenses, regardless of expiration date. When a device registers to the Device Tracker server, if a license available, it is allocated to the device from the license pool.
+
+After a license expires or when a device is [recommissioned](../use/#recommissionadevice), it is automatically allocated a license if available. Administrators can perform the following:
 
 - Monitor licenses.
 - Transfer a license from one device to another.
 - Remove a license.
 
 See the [License](../license) section for more information.
+
+<p>To view license information:</p>
+
+1. From the web portal, tap **License Summary** in the left menu.
+2. The following information is provided based on unexpired licenses:
+   - **Total licenses -** quantity of licenses that have been purchased
+     - **Total licenses available -** quantity of licenses that are available and can be allocated to devices
+     - **Total licenses consumed -** quantity of licenses allocated to devices
+   - **List of licenses purchased** with corresponding quantity and expiration date. This data is static and removed from the list after the expiration date is surpassed.
+   - **Sync Licenses** button to refresh license data on-demand and synchronize with the Zebra Enterprise Software Licensing system. The license information is updated once each day.
+   - **Time stamp** of the last occurrence when the license information was synchronized with the license server.
+
+<img style="height:250px" src="license.png"/>
+
+_License Summary in Device Tracker web portal_
 
 ---
 

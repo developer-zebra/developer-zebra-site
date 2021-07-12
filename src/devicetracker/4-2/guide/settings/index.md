@@ -135,7 +135,7 @@ The password can be reset through the web portal or the client app if the admini
     * Any combination of letters, numbers and symbols (ASCII-standard characters) are accepted.
 6. The password is reset with the new password.
    <br>
-
+<!--
 ### View License Information
 
 [Licenses](../license) are required for Device Tracker operation on devices. Licenses are combined into a single license pool regardless of expiration date. When a device registers to the Device Tracker server, if a license available, it is allocated to the device from the license pool.
@@ -154,7 +154,7 @@ The password can be reset through the web portal or the client app if the admini
 <img style="height:250px" src="license.png"/>
 
 _License Summary in Device Tracker web portal_
-
+-->
 ---
 
 ## Diagnostics

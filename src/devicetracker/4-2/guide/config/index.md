@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: Configuration
 layout: guide.html
 product: Device Tracker
 productversion: "4.2"
@@ -7,25 +7,214 @@ productversion: "4.2"
 
 ## Overview
 
-Upon initial setup of Device Tracker, the administrator must register device, access point (AP) and site information. Setup and configuration of Device Tracker can be performed as follows:
+After Device Tracker installation, the administrator must register device, access point (AP) and site information and configure application behavior. Setup and configuration of Device Tracker is discussed in this section.
 
-- **[Register access points](#siteaccesspointanddevicedata) -** Register the access point location to identify which AP the device is connected to and to aid in locating the device.
-  - **Assign a friendly name to the access point -** helps users identify the physical location of the AP in the site
-  - **Assign site location –** helps users identify which site the AP belongs in
-- **[Register devices](#siteaccesspointanddevicedata) -** Register device information to identify the devices.
+<!--
+can be performed as follows:
+
+- **[Manage Users](#manageusers) -** Administrator and manager user accounts are managed as follows (no accounts are required for associates - see [User Roles](../use/#userrolesandresponsibilities)) :
+    * [Add user](#adduser)
+    * [Delete user](#deleteuser)
+    * [Search for user](#searchforuser)
+    * [Reset Password](#resetpassword)
+- **[Configure Device Check-out](#configuredevicecheckout) –** _Optional:_ Administrators enable the check-out feature through the web portal to enforce users to scan their user barcode to gain access to the device, associating the device to that particular user. 
+    - **Set check-out barcode prefix -** From the [web portal](../settings/#setcheck-outbarcodeprefix), specify a prefix for the barcode scanned during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
+- **[Register devices](#registerdevices) -** Register device information to identify the devices.
   - **Assign a device friendly name -** helps users identify the device
   - **Assign a site location -** identifies the physical location of the device
-- **[Enable/Disable secondary BLE beacon](#secondaryble) -** Allow devices with a secondary BLE beacon to be located when the device loses power.
-- **Enable/Disable device check-out –** _Optional:_ Administrators toggle the check-out feature in the [web portal](../settings/#devicecheckout), enforcing users to scan their user barcode at the beginning of their work shift to check-out their device. This associates the device to the particular user. 
-    - **Set check-out barcode prefix -** From the [web portal](../settings/#setcheck-outbarcodeprefix) Specify a prefix for the barcode scanned during check-out. This adds the restriction to only accept scanned barcodes that begin with the specified prefix.
-
-See the [Settings](../settings) section for more information on the web portal and how to manage users and view licenses.
+- **[Register access points and sites](#registeraccesspointssites) -** Register the access point location to identify which AP the device is connected, which aids in locating the device.
+  - **Assign a friendly name to the access point -** helps users identify the physical location of the AP in the site
+  - **Assign site location –** helps users identify which site the AP belongs in
+- **[Diagnostics](#diagnostics)) -** Enable/disable logging for diagnostic purposes.
+-->
 
 ---
 
-## Site, Access Point and Device Data
+## Manage Users
 
-Administrators register site names, access points, and device information with friendly names to aid in identifying, tracking and locating devices. Sample AP and device CSV files are supplied by Zebra for the administrator to populate with the appropriate data. Copy the populated CSV files to the mobile device for the data to be imported through the client app. Importing data either modifies or adds entries to the existing database, unless deleting a device. The data fields are:
+Administrators use the web portal to manage admin and manager user accounts. Access the web portal by entering the URL provided by Zebra in a [supported browser](../setup/#webportalrequirements).
+
+
+<img style="height:250px" src="web-portal.png"/>
+
+_Device Tracker web portal_
+
+### Add User
+
+To add an admin or manager user account:
+
+1. From the web portal, tap **Manage Users** in the left menu.
+2. Select the role of the new user: Admin or Manager
+3. Enter the information prompted, including the email and password based on the following guidelines:
+    * **Login ID guidelines:** 
+        * Must be a valid email
+        * Maximum length: 255 characters
+        * Special characters allowed prior to '@': `! ~ # $ % ^ & * - _ + = {} | ' / ?`
+        * Characters allowed after '@': `. -`
+        * Spaces are not allowed
+        * '@' character is only allowed once
+        * '.' is only allowed in the middle of alphanumeric characters before and after '@'.
+    * **Password guidelines:**
+        * Minimum length: 6 characters
+        * Any combination of letters, numbers and symbols (ASCII-standard characters) are accepted
+4. Tap **Add User.**
+5. The new user is added to the **All Users** list.
+<br>
+
+### Delete User
+
+To delete an admin or manager user account:
+
+1. From the web portal, tap **Manage Users** in the left menu.
+2. From the list of users, locate the user to delete and click on the _delete icon_ next to the user.
+3. Click **OK** in the confirmation message.
+<br>
+
+### Search for User
+
+Admins or manager user accounts can be searched by email address. The entire email address must be entered. Action can be taken on the user after the search is performed, e.g. delete user.
+
+<p>To search for a user:</p>
+
+1. From the web portal, tap **Manager Users** in the left menu.
+2. Enter the email address to search for in the search field located below the **Add User** button from the top right of the page. Press the enter key.
+3. The search results are displayed.
+<br>
+
+### Reset Password
+
+The password can be reset through the web portal or the client app if the administrator or manager forgot the password.
+
+<p>Steps to reset the password in the web portal:</p>
+
+1. From the web portal login page, click **Forgot your password.**
+2. Enter your email address then click **Reset Password.**
+3. A message appears indicating a password reset email is sent.
+4. Open the email and click on the link.
+5. Enter in the new password based on the following guidelines:
+    * Minimum length: 6 characters
+    * Any combination of letters, numbers and symbols (ASCII-standard characters) are accepted.
+6. The password is reset with the new password.
+
+---
+
+## Configure Device Check-out
+
+Device check-out is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift in order to gain access to the device. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed.
+
+- **Check-out:** At the start of a work shift, the user checks-out the device by scanning their unique barcode. This associates the user with the device, as seen in the device card and device details screen.
+- **Check-in:** At the end of a work shift, the user checks-in the device by placing it on a powered cradle or logging out through the top-right menu from the main device screen. After check-in, the user is no longer associated with the device.
+
+The check-out/check-in feature displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application.
+
+**Enable device check-out:**
+
+1. From the web portal, tap **Settings** in the left menu.
+2. Toggle **Checkin/Checkout** to enable the feature.
+<p>If enabled, Checkout appears as a device state in the administrator and manager dashboard listing the devices that are checked-out.</p>
+
+### Set Check-out Barcode Prefix
+
+When check-out is enabled, by default no prefix is defined allowing all barcodes to be accepted. The administrator can configure a prefix in the form of a character string, adding a restriction to accept only barcodes that begin with the specified prefix. If a barcode scanned does not contain the prefix, check-out is not successful.
+<br>
+When generating a barcode with the prefix, the specified prefix is followed by the username identifier. The following is a sample barcode containing prefix “NGDTRK-” and username “JohnDoe”:
+<img style="height:80px" src="barcode-prefix.png"/>
+_Sample barcode with prefix and username: "NGDTRK-JohnDoe"_
+<br>
+
+**To set the barcode prefix:**
+
+1. **Enable Checkin/Checkout the web portal.** This exposes the Prefix field in the Application Configuration screen.
+2. **Enter the desired text for the prefix.** If all barcodes should be accepted with no prefix, keep the entry blank.
+   <br>
+   Only barcodes that begin with the specified prefix can initiate the checkout.
+
+---
+
+## Register Devices
+
+Administrators register device information with friendly names to aid in identifying, tracking and locating devices. A sample device CSV file is supplied by Zebra for the administrator to populate with the appropriate data. Copy the populated CSV files to the mobile device for the data to be imported through the client app. Importing data either modifies or adds entries to the existing database, unless deleting a device. The data fields are:
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="text-align:center">CSV File</th>
+    <th style="text-align:center">Data</th>
+    <th style="text-align:center">Description</th>
+    <th style="text-align:center">Required</th>
+  </tr>
+  <tr>
+    <td style="text-align:center" rowspan="4">Device</td>
+    <td style="text-align:center">ModelNumber</td>
+    <td style="text-align:left">Device model</td>
+    <td style="text-align:left">Yes</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">SerialNumber</td>
+    <td style="text-align:left">Device serial number</td>
+    <td style="text-align:left">Yes</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">DeviceFriendlyName</td>
+    <td style="text-align:left">Name used to identify device</td>
+    <td style="text-align:left">Optional</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">SiteName</td>
+    <td style="text-align:left">Site name or location where the device is assigned, useful when finding a device</td>
+    <td style="text-align:left">Optional</td>
+  </tr>
+</table>
+
+The device data fields are required in the device .CSV file whether adding or deleting devices. When modifying the .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. Special characters, such as '.', '#', '$', '[', or ']', are not supported. The .CSV file cannot be UTF-8 encoded, otherwise an error can occur; it must be saved in a normal comma separated values format.<br>
+
+Sample Delete Device .CSV file content:
+<pre class="prettify">
+    <code>
+        ModelNumber,SerialNumber
+        TC51,17009522509812
+        TC51,17009522509813
+    </code>
+</pre>
+<br>
+
+
+### Import Device Data
+
+Import device data to register the device information along with a friendly name to aid in device identification. A maximum of 20,000 rcords can be imported at one time.
+
+<p>To add/modify device data, import the device .CSV file:</p>
+
+1. Copy the CSV file from the PC to the device root `\Internal shared storage` folder.
+2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
+3. Tap the top right options menu and select **Settings,** which is now visible.
+4. Tap **Import Access Points/Sites/Devices.**
+5. Under the section **Import Device CSV File,** tap **Browse File.** Browse and select the appropriate .CSV file.
+6. Under the section **Import Device CSV File,** tap **Upload CSV.**
+7. The device data import is complete. Results are displayed in the **Status** section at the bottom of the screen.  
+<p>New devices imported are initially in the <b>Never Connected</b> state until the Device Tracker app is installed on the devices, configured and communicating with the server.</p>
+
+### Delete Device
+
+Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool. A maximum of 5,000 records can be removed at one time.
+
+<p><b>Prerequisite:</b> Prior to deleting a device, uninstall the Device Tracker application on the device.</p>
+
+<p>To delete a device, import the device .CSV file containing the specific data to delete:</p>
+
+1. Copy the .CSV file from the PC to the device root `\Internal shared storage` folder.
+2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
+3. Tap the top right options menu and select **Settings,** which is now visible.
+4. Tap **Import Access Points/Sites/Devices.**
+5. Under the section **Import Delete Device CSV File,** tap **Browse File.** Browse and select the appropriate .CSV file.
+6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
+7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
+<br>
+
+---
+
+## Register Access Points & Sites
+
+Similar to registering devices, administrators register site names and access points with friendly names to aid in identifying, tracking and locating devices. A sample AP file is supplied by Zebra for the administrator to populate with the appropriate data. Copy the populated .CSV file to the mobile device for the data to be imported through the client app. Importing data either modifies or adds entries to the existing database. The data fields are:
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -55,31 +244,9 @@ Administrators register site names, access points, and device information with f
     <td style="text-align:left">Access point location friendly name, useful to identify general device location</td>
     <td style="text-align:left">Optional</td>
   </tr>
-
-  <tr>
-    <td style="text-align:center" rowspan="4">Device</td>
-    <td style="text-align:center">ModelNumber</td>
-    <td style="text-align:left">Device model</td>
-    <td style="text-align:left">Yes</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">SerialNumber</td>
-    <td style="text-align:left">Device serial number</td>
-    <td style="text-align:left">Yes</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">DeviceFriendlyName</td>
-    <td style="text-align:left">Name used to identify device</td>
-    <td style="text-align:left">Optional</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">SiteName</td>
-    <td style="text-align:left">Site name or location where the device is assigned, useful when finding a device</td>
-    <td style="text-align:left">Optional</td>
-  </tr>
 </table>
 <br>
-The device data fields are required in the device .CSV file whether adding or deleting devices. In each .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. It is particularly important for the AP location friendly name to be easily understood for users to determine the location within the facility when finding a device. Special characters, such as '.', '#', '$', '[', or ']', are not supported. The .CSV file cannot be UTF-8 encoded, otherwise an error can occur; it must be saved in a normal comma separated values format.<br><br>
+When modifying the .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. It is particularly important for the AP location friendly name to be easily understood for users to determine the location within the facility when finding a device. Special characters, such as '.', '#', '$', '[', or ']', are not supported. The .CSV file cannot be UTF-8 encoded, otherwise an error can occur; it must be saved in a normal comma separated values format.<br><br>
 Sample Import AP .CSV file content:
 <pre class="prettify">
     <code>
@@ -87,26 +254,10 @@ Sample Import AP .CSV file content:
         New York,14:a7:2b:24:cc:a5,,First Floor Reception Area
     </code>
 </pre>
-Sample Import Device .CSV file content:
-<pre class="prettify">
-    <code>
-        ModelNumber,SerialNumber,DeviceFriendlyName,SiteName
-        TC51,17009522509812,Inventory1,Chicago
-        TC51,17009522509813,Inventory2,Los Angeles
-    </code>
-</pre>
-Sample Delete Device .CSV file content:
-<pre class="prettify">
-    <code>
-        ModelNumber,SerialNumber
-        TC51,17009522509812
-        TC51,17009522509813
-    </code>
-</pre>
 
 ### Import Site and AP Data
 
-Import site and AP data to register the information with the server. When adding or modifying site and AP data, it is particularly important for the AP friendly name to be easily understood by users to aid in finding the location where the device is connected. A maximum of 20,000 records can be imported at one time.
+Import site and AP data to register the information with the server. When adding or modifying site and AP data, it is important for the AP friendly name to be easily understood by users to aid in finding the location where the device is connected. A maximum of 20,000 records can be imported at one time.
 
 <p>To import site/AP data from the AP .CSV file:</p>
 
@@ -118,39 +269,8 @@ Import site and AP data to register the information with the server. When adding
 6. Under the section **Import Access Point CSV File,** tap **Upload CSV.**
 7. The AP data import is complete. Results are displayed in the **Status** section at the bottom of the screen. <br>
 
-### Import Device Data
-
-Import device data to register the device information along with a friendly name to aid in device identification. A maximum of 20,000 rcords can be imported at one time.
-
-<p>To add/modify device data, import the device .CSV file:</p>
-
-1. Copy the CSV file from the PC to the device root `\Internal shared storage` folder.
-2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
-3. Tap the top right options menu and select **Settings,** which is now visible.
-4. Tap **Import Access Points/Sites/Devices.**
-5. Under the section **Import Device CSV File,** tap **Browse File.** Browse and select the appropriate .CSV file.
-6. Under the section **Import Device CSV File,** tap **Upload CSV.**
-7. The device data import is complete. Results are displayed in the **Status** section at the bottom of the screen.
-<p>New devices imported are initially in the <b>Never Connected</b> state until the Device Tracker app is installed on the devices, configured and communicating with the server.</p>
-
-### Delete Device
-
-Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool. A maximum of 5,000 records can be removed at one time.
-
-<p><b>Prerequisite:</b> Prior to deleting a device, uninstall the Device Tracker application on the device.</p>
-
-<p>To delete a device, import the device .CSV file containing the specific data to delete:</p>
-
-1. Copy the .CSV file from the PC to the device root `\Internal shared storage` folder.
-2. In the client app, login as the admin. In the main screen, tap on the options menu at the top right and select **Admin/Manager Login.** Enter the Administrator credentials and tap **Login.**
-3. Tap the top right options menu and select **Settings,** which is now visible.
-4. Tap **Import Access Points/Sites/Devices.**
-5. Under the section **Import Delete Device CSV File,** tap **Browse File.** Browse and select the appropriate .CSV file.
-6. Under the section **Import Delete Device CSV File,** tap **Upload CSV.**
-7. The specified device data is removed from the system. Results are displayed in the **Status** section at the bottom of the screen.
-
 ---
-
+<!-- 
 ## Secondary BLE
 
 For devices with secondary BLE beaconing capability, Device Tracker can locate the device if it loses power due to critically low battery or is manually powered off. Locationing is based on signals transmitted from the secondary BLE beacon. Attempts to locate the device must occur soon after the device loses power, prior to loss of power of the secondary BLE beacon. In this circumstance, the **Play Sound** feature is disabled during device search since it cannot function due to the loss of device power.
@@ -159,7 +279,7 @@ For devices with secondary BLE beaconing capability, Device Tracker can locate t
 
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 
-<!-- 
+
 ---
 
 ## Web Portal
@@ -338,6 +458,50 @@ Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or 
 -->
 ---
 
+## Diagnostics
+
+For diagnostic purposes, logging can be enabled in Device Tracker to capture application and system information to Android logcat. [RxLogger](/rxlogger) is a built-in tool on Zebra Android devices that collects data and event logs from logcat and stores them in a single location. If issues are encountered, a Zebra representative may request for the log files to be collected and supplied. <br<br>
+There are 2 methods to capture logging: StageNow or EMM.
+
+### Using StageNow
+
+To use StageNow to capture logging:
+
+1. Open StageNow on the device.
+2. Scan the barcode to enable Device Tracker logging and start RxLogger log capture:
+   <img style="height:150px" src="start-rxlogger.png"/>
+
+3. Reproduce the issue.
+4. Scan the barcode to disable Device Tracker logging and stop RxLogger log capture:
+   <img style="height:150px" src="stop-rxlogger.png"/>
+
+<p>Logs are located in the RxLogger folder (default location: /sdcard/RxLogger).</p>
+<br>
+
+### Using EMM
+
+To use EMM to capture logging, refer to the following XML content:
+
+* To enable logging:
+        <wap-provisioningdoc>
+            <characteristic version="1.0" type="com.zebra.devicetracker">
+                <parm name="EnableLog" value="1" />
+            </characteristic>
+        </wap-provisioningdoc>
+
+
+* To disable logging:
+        <wap-provisioningdoc>
+            <characteristic version="1.0" type="com.zebra.devicetracker">
+                <parm name="EnableLog" value="0" />
+            </characteristic>
+        </wap-provisioningdoc>
+
+
+Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or [MX](/mx/overview) to configure the app.
+<br><br>
+
+---
 ## See Also
 
 - [User Roles](../roles)

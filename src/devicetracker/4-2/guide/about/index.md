@@ -18,8 +18,11 @@ Device Tracker is a cloud-based scalable solution that easily tracks Zebra Andro
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MzCWdLUhEPY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <i>Video: Overview of Device Tracker</i>
 
-<p><b>Main features:</b></p>
+--- 
 
+## Main Features
+
+Main features of Device Tracker:
 - Cloud-based scalable solution hosted and maintained by Zebra with support for up to 100K devices in multiple locations up to 5K sites.
 - Support for central administrator, site manager, and site associate roles.
   - Device dashboard for administrator to centrally track devices across multiple sites with ability to view at site-level.

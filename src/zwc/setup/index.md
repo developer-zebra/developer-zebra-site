@@ -1,5 +1,5 @@
 ---
-title: Setup and Usage
+title: ZWC Setup
 layout: guide.html
 product: Zebra Workstation Connect
 productversion: '1.0'
@@ -7,9 +7,9 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Setup & Usage
+    - title: Set Up
       url: /zwc/setup
-    - title: EMM Support
+    - title: Deploy
       url: /zwc/emm
     - title: APIs
       url: /zwc/api

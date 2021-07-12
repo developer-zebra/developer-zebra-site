@@ -1,5 +1,5 @@
 ---
-title: About Zebra Workstation Connect
+title: About ZWC
 layout: guide.html
 product: Zebra Workstation Connect
 productversion: '1.0'
@@ -7,9 +7,9 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Setup & Usage
+    - title: Set Up
       url: /zwc/setup
-    - title: EMM Support
+    - title: Deploy
       url: /zwc/emm
     - title: APIs
       url: /zwc/api
@@ -26,14 +26,18 @@ menu:
 _Click images to enlarge; ESC to exit._
 <br>
 
-**Key applications for ZWC** include retail, healthcare, warehousing, transportation and many others. ZWC software leverages Android Desktop Mode either to mirror the device screen on an external monitor or to present a different set of apps and content. **This guide describes ZWC features and the steps to control them through an app running on the device**.  
+**Key applications for ZWC** include retail, healthcare, warehousing, transportation and many others. ZWC software leverages Android Desktop Mode either to mirror the device screen on an external monitor or to present a different set of apps and content. **The pages in this guide describe Zebra Workstation Connect features and how to**: 
+* **Set up a device to use ZWC**
+* **Mass-deploy ZWC software and configuration settings** 
+* **Control ZWC settings through an app running on the device**
+* **Troubleshoot using the frequently asked questions page**
 
 ### Supported Devices
 
-* TC51
-* TC52
-* TC56
-* TC57
+* **TC51**
+* **TC52**
+* **TC56**
+* **TC57**
 
 -----
 

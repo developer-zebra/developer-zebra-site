@@ -29,7 +29,7 @@ _Click images to enlarge; ESC to exit._
 
  -->
 
-ZWC leverages Android Desktop Mode to present the user with a “desktop-like” interface when connecting a mobile device to an external monitor via a workstation cradle. This guide describes the necessary steps to enable Desktop Mode and the features included.  
+ZWC leverages Android Desktop Mode to mirror the device screen on the monitor or present a different set of apps and content. This guide describes Zera Workstation Connect features the necessary steps to enable them through an app running on the device.  
 
 <!-- 
 <img alt="image" style="height:250px" src="zwc_exec.jpg"/>

@@ -7,7 +7,7 @@ productversion: "4.2"
 
 ## Overview
 
-After Device Tracker installation, the administrator must register device, access point (AP) and site information and configure application behavior. Setup and configuration of Device Tracker is discussed in this section.
+After Device Tracker installation, the administrator must configure application behavior and register device, access point (AP) and site information. Different roles exist that determine the functions and capabilities of each user: associate, manager, or administrator. 
 
 <!--
 can be performed as follows:
@@ -28,12 +28,95 @@ can be performed as follows:
 - **[Diagnostics](#diagnostics)) -** Enable/disable logging for diagnostic purposes.
 -->
 
+### Administrator Role
+
+Administrator functions and capabilties:
+
+* Admin login
+* Web portal:
+    * Manage Users
+    * Configure Device Check-out (optional)
+    * Configure Barcode Prefix (optional)
+    * Monitor Licenses
+* Import Devices - assign friendly name and assign to site
+* Import Sites & APs - assign friendly names
+* Delete Devices - remove device from database
+* Monitor devices at the corporate-level and site-level
+* All Manager and Associate capabilities.
+<!--
+- Configuration:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../license">Monitor and take action on device licenses</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#webportal">Create/Manage administrator and manager user logins</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
+
+- View:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard to view corporate-level data across all sites</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../use/#devicecheckout">Use device check-out/check-in _(optional)_</a><br>
+
+- Includes all Manager and Associate actions
+-->
+### Manager Role
+
+Manager functions and capabilities:
+
+* Manager login
+* Monitor devices at the site-level
+* Mark a device for retrieval (To Be Found)
+* Mark a device out of service (decommission) with a note (e.g. WiFi issue or display broken)
+* Clear a retrieval request
+* Search for devices - using the search field
+* All Associate capabilities
+
+<!-- 
+Managers track devices within a single site or location. The Manager role encompasses the Associate role.
+<br>
+Features and functions of managers:
+
+- View:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard on device to view site-level data</a><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">View list of misplaced or at-risk devices for retrieval</a>
+  <br>
+
+- Actions:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Set To Find](../use/#markadevicetobefound) –** marks the device to be found; initiates the finding process<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Recommission](../use/#decommissionrecommissiondevice) –** marks the device **In Service** to place into the active device pool, the collection of devices with active server communication<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Decommission](../use/#decommissionrecommissiondevice) –** removes the device from the active device pool<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[View Details](../mgmt/#deviceinformation) –** provides device data: friendly name, device model, serial number, last connected AP, battery level, battery status, device state, site name, last reported, display on, note<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditnote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
+  <br>
+
+- Includes all Associate actions
+-->
+### Associate Role
+
+Associate functions and capabilties:
+
+* Device Check-out/Check-in
+* View marked devices list (for retrieval)
+* Find devices - retrieve the missing device using the BLE proximity meter and audio chirp
+* Mark devices as found or cannot be found
+
+<!--
+Associates have the capability to find misplaced devices.
+<br>
+Features and functions of associates:<br>
+
+- No login required
+- [Actions:](../use) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ View list of devices to find (**To Be Found** device list)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Locate a device using last connected AP location, visual Bluetooth proximity indicator and play sound<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Mark device as **Found** or **Cannot Find**<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Use device check-out/check-in _(optional)_
+-->
 ---
 
 ## Manage Users
 
-Administrators use the web portal to manage admin and manager user accounts. Access the web portal by entering the URL provided by Zebra in a [supported browser](../setup/#webportalrequirements).
-
+Administrator and manager user accounts are created and managed through the web portal by an administrator. Access the web portal by entering the URL provided by Zebra in a [supported browser](../setup/#webportalrequirements).
 
 <img style="height:250px" src="web-portal.png"/>
 
@@ -43,9 +126,10 @@ _Device Tracker web portal_
 
 To add an admin or manager user account:
 
-1. From the web portal, tap **Manage Users** in the left menu.
-2. Select the role of the new user: Admin or Manager
-3. Enter the information prompted, including the email and password based on the following guidelines:
+1. Login to the web portal as an administrator
+2. In the web portal, tap **Manage Users** in the left menu.
+3. Select the role of the new user: Admin or Manager
+4. Enter the information prompted, including the email and password based on the following guidelines:
     * **Login ID guidelines:** 
         * Must be a valid email
         * Maximum length: 255 characters
@@ -57,17 +141,18 @@ To add an admin or manager user account:
     * **Password guidelines:**
         * Minimum length: 6 characters
         * Any combination of letters, numbers and symbols (ASCII-standard characters) are accepted
-4. Tap **Add User.**
-5. The new user is added to the **All Users** list.
+5. Tap **Add User.**
+6. The new user is added to the **All Users** list.
 <br>
 
 ### Delete User
 
-To delete an admin or manager user account:
+To delete an admin or manager user account (administrators only):
 
-1. From the web portal, tap **Manage Users** in the left menu.
-2. From the list of users, locate the user to delete and click on the _delete icon_ next to the user.
-3. Click **OK** in the confirmation message.
+1. Login to the web portal as an administrator.
+2. From the web portal, tap **Manage Users** in the left menu.
+3. From the list of users, locate the user to delete and click on the _delete icon_ next to the user.
+4. Click **OK** in the confirmation message.
 <br>
 
 ### Search for User
@@ -76,9 +161,10 @@ Admins or manager user accounts can be searched by email address. The entire ema
 
 <p>To search for a user:</p>
 
-1. From the web portal, tap **Manager Users** in the left menu.
-2. Enter the email address to search for in the search field located below the **Add User** button from the top right of the page. Press the enter key.
-3. The search results are displayed.
+1. Login to the web portal as an administrator or manager.
+2. From the web portal, tap **Manager Users** in the left menu.
+3. Enter the email address to search for in the search field located below the **Add User** button from the top right of the page. Press the enter key.
+4. The search results are displayed.
 <br>
 
 ### Reset Password
@@ -100,18 +186,19 @@ The password can be reset through the web portal or the client app if the admini
 
 ## Configure Device Check-out
 
-Device check-out is an _optional_ feature that maintains user accountability and traces device use. When enabled, a unique barcode is required for each user to scan at the start of their work shift in order to gain access to the device. User operation in the check-out screen is limited to only scanning barcodes. The check-out screen is in kiosk mode, preventing the user from accessing the device until check-out is performed.
+Device check-out is an _optional_ feature that displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device.  When enabled, user operation in the check-out screen is limited to only scanning barcodes, preventing device access until the barcode is scanned. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application.
 
+Check-out/Check-in scenarios:
 - **Check-out:** At the start of a work shift, the user checks-out the device by scanning their unique barcode. This associates the user with the device, as seen in the device card and device details screen.
-- **Check-in:** At the end of a work shift, the user checks-in the device by placing it on a powered cradle or logging out through the top-right menu from the main device screen. After check-in, the user is no longer associated with the device.
-
-The check-out/check-in feature displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application.
+- **Check-in:** At the end of a work shift, the user checks-in the device by placing it on a powered cradle or logging out from the top-right menu of the main device screen. After check-in, the user is no longer associated with the device.
 
 **Enable device check-out:**
+Access the web portal by entering the URL provided by Zebra in a [supported browser](../setup/#webportalrequirements).
+1. Login to the web portal as an administrator.
+2. Tap **Settings** in the left menu.
+3. Enable **Checkin/Checkout**.
 
-1. From the web portal, tap **Settings** in the left menu.
-2. Toggle **Checkin/Checkout** to enable the feature.
-<p>If enabled, Checkout appears as a device state in the administrator and manager dashboard listing the devices that are checked-out.</p>
+When enabled, checked-out devices appear in the [dashboard](../use/#monitordevices) monitored by administrators and managers.
 
 ### Set Check-out Barcode Prefix
 
@@ -123,11 +210,11 @@ _Sample barcode with prefix and username: "NGDTRK-JohnDoe"_
 <br>
 
 **To set the barcode prefix:**
-
-1. **Enable Checkin/Checkout the web portal.** This exposes the Prefix field in the Application Configuration screen.
-2. **Enter the desired text for the prefix.** If all barcodes should be accepted with no prefix, keep the entry blank.
-   <br>
-   Only barcodes that begin with the specified prefix can initiate the checkout.
+Access the web portal by entering the URL provided by Zebra in a [supported browser](../setup/#webportalrequirements).
+1. Login to the web portal as an administrator.
+2. Tap **Settings** in the left menu.
+3. Enable **Checkin/Checkout**. This exposes the **Prefix** field in the Application Configuration screen.
+4. **Enter the desired text for the prefix.** Only barcodes that begin with the specified prefix can grant access to the device. If all barcodes should be accepted with no prefix, keep the entry blank. 
 
 ---
 

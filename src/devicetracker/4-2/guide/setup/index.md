@@ -70,7 +70,7 @@ If the password is reset, an email is sent from `zdtrksupport@zebra.com`.
 
 ### Web Portal Requirements
 
-The web portal allows adminstrators to configure application behavior, manage users and manage licenses. To access the web portal, in a supported browser enter the URL provided by Zebra. For first-time use, login with the super administrator (SuperAdmin) credentials provided.
+The web portal allows adminstrators to configure application behavior, manage users and view licenses. To access the web portal, in a supported browser enter the URL provided by Zebra. For first-time use, login with the super administrator (SuperAdmin) credentials provided.
 
 The supported browsers are:
 

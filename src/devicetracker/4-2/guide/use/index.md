@@ -7,64 +7,17 @@ productversion: "4.2"
 
 ## Overview
 
-Device Tracker is a role-based solution. Features and functionality depend on the role of the user logged in: associate, manager, or administrator. This section discusses the different roles, the actions that can be taken based on the role as part of the device tracking process.
+If the Check-out feature is enabled, users must scan their barcode to access the device and associate the user to the device for accountability.
 
-## Roles and Responsibilities
+Administrators and managers monitor devices to check for devices at-risk of losing battery power or devices that need to be found.
 
-### Administrator Role
+When initiating the process to find a device with Device Tracker, the target device must first be marked for retrieval by the administrator or manager. The “seeking” device, or the device performing the search, is used to determine the distance the user is located in relation to the “target” device, or the device to be found. 
 
-Administrators track devices across multiple sites. The Administrator role encompasses both the Manager and Associate roles.<br>
+When a device is found, recommission the device to place it back into the active device pool. Alternatively, decommission the device if it needs to be removed from the active device pool.
 
-Features and functions of administrators:
+A note can be added at any time to capture comments specific to the device to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers.
 
-- Configuration:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../license">Monitor and take action on device licenses</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#webportal">Create/Manage administrator and manager user logins</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import Site and AP data with friendly name (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Import device data with friendly name and site assignment (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../config/#siteaccesspointanddevicedata">Delete device data (via .CSV)</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Enable check-out/check-in feature to associate users to devices for accountability _(optional)_</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../settings/#devicecheckout">Configure prefix for check-out barcode _(optional)_</a><br>
-
-- View:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard to view corporate-level data across all sites</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../use/#devicecheckout">Use device check-out/check-in _(optional)_</a><br>
-
-- Includes all Manager and Associate actions
-
-### Manager Role
-
-Managers track devices within a single site or location. The Manager role encompasses the Associate role.
-<br>
-Features and functions of managers:
-
-- View:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">Dashboard on device to view site-level data</a><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ <a href="../mgmt/#deviceinformation">View list of misplaced or at-risk devices for retrieval</a>
-  <br>
-
-- Actions:<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Set To Find](../use/#markadevicetobefound) –** marks the device to be found; initiates the finding process<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Recommission](../use/#decommissionrecommissiondevice) –** marks the device **In Service** to place into the active device pool, the collection of devices with active server communication<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Decommission](../use/#decommissionrecommissiondevice) –** removes the device from the active device pool<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[View Details](../mgmt/#deviceinformation) –** provides device data: friendly name, device model, serial number, last connected AP, battery level, battery status, device state, site name, last reported, display on, note<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ **[Add/Edit a note](../use/#addeditnote) -** add text to capture the reason for decommissioning a device, for example: “device screen damaged”.
-  <br>
-
-- Includes all Associate actions
-
-### Associate Role
-
-Associates have the capability to find misplaced devices.
-<br>
-Features and functions of associates:<br>
-
-- No login required
-- [Actions:](../use) <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ View list of devices to find (**To Be Found** device list)<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Locate a device using last connected AP location, visual Bluetooth proximity indicator and play sound<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Mark device as **Found** or **Cannot Find**<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◦ Use device check-out/check-in _(optional)_
+The [Requirements](../setup/#requirements) must be met to find a device.
 
 ---
 

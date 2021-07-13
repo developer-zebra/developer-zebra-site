@@ -27,6 +27,7 @@ parm:
       description: Allows a custom digital assistant app to be selected as the default when such an app is used.
     - code: 3
       devicetype: A,B
+      info: This option cannot be made persistent. 
       name: None 
       mx: "10.5"
       description: Disables digital assistant app functionality.

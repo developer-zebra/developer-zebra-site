@@ -46,7 +46,7 @@ parm:
       devicetype: A,B
       mx: "11.1"
       apilevel: "30"
-      name: TWT
+      name: TWT for Wi-Fi6
     - code: 99
       devicetype: A,B
       mx: "6.2"

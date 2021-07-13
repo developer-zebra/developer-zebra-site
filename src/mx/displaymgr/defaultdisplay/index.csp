@@ -3,7 +3,7 @@ csp: displaymgr
 title: Remote Control  
 type: parm
 order: 21
-mx: "10.5"
+mx: "11.1"
 apilevel: "30"
 devicetype: A
 parm:
@@ -12,20 +12,20 @@ parm:
   type: list
   list:
     - code: 86
-      mx: "10.5"
+      mx: "11.1"
       apilevel: "30"
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to current device behavior; any previously selected setting is retained.
     - code: 0
       devicetype: A
       name: Primary (Mobile) Display
-      mx: "10.5"
+      mx: "11.1"
       apilevel: "30"
       description: Uses the built-in device screen for Media Projection and Key and Touch Injection operations.
     - code: 1
       devicetype: A
       name: Secondary (Desktop) Display
-      mx: "10.5"
+      mx: "11.1"
       apilevel: "30"
       description: Uses the external display for Media Projection and Key and Touch Injection operations. When this option is selected, attempts to perform Media Projection and KTI operations when the device is NOT connected to an external monitor result in an error. 
 ---

@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Set Up
+    - title: Setup
       url: /zwc/setup
     - title: Deploy
       url: /zwc/emm

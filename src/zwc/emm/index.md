@@ -1,5 +1,5 @@
 ---
-title: Enterprise Mobility Management Usage
+title: ZWC Deployment
 layout: guide.html
 product: Zebra Workstation Connect
 productversion: '1.0'
@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Set Up
+    - title: Setup
       url: /zwc/setup
     - title: Deploy
       url: /zwc/emm

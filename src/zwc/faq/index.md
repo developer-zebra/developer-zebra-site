@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /zwc/about
-    - title: Set Up
+    - title: Setup
       url: /zwc/setup
     - title: Deploy
       url: /zwc/emm
@@ -19,7 +19,7 @@ menu:
       url: /zwc/search
 ---
 
-###Q: What is the minimum BSP required on the device for ZWC?
+###Q: What is the minimum board support package (BSP) required on the device for ZWC?
 
 **A: ZWC requires the following BSP**:
 
@@ -43,7 +43,7 @@ Is there a change?
 
 7/12/21- copied from PMB: 
 
-###Q: Is software needed to enable TC5X devices to be used in a desktop-like environment through the TC5X Workstation Docking Cradle?
+###Q: Is software needed to enable TC5X devices to be used in the TC5X Workstation Docking Cradle?
 
 **A. Yes, all supported TC5X devices require specific ZWC software components to be installed on all devices intended to use the ZWC cradle**: 
 
@@ -67,7 +67,7 @@ additional software to enable the use of an HDMI monitor and to utilize an autor
 
 ###Q: Are all four (4) USB ports on the TC5X Workstation Docking Cradle the same?
 
-**A. No. Three are standard 0.5-AMP USB ports suitble for connecting a keyboard, mouse and other peripherals. The remaining port delivers 1.5 AMPs, which could be used for charging another device**.
+**A. No. Three are standard 0.5-AMP USB ports suitble for connecting a keyboard, mouse and other peripherals. The remaining port (left side, toward front) delivers 1.5 AMPs, which is best suited for charging**.
 
 -----
 

@@ -35,10 +35,11 @@ _Click image to enlarge; ESC to exit_.
 <br>
 <br> **<u>DOT WARNING</u>**:<br>
 The EHS Display Blanking feature was NOT developed in accordance with any transportation department rules or regulations. **Zebra assumes no responsibility for damage or loss due to distracted driving**.
-
+Enable Google location Accuracy and Keep the Wi-Fi Switch ON to achieve better accuracy for Screen blanking
 ### Notes
 * **All touch input is blocked** when overlay is displayed.
-* **Vehicle speed calculation is based on Google GPS** location API output.   
+* **Vehicle speed calculation is based on Google GPS** location API output.
+* **Keep Wi-Fi and Google Location Accuracy enabled on the device** for the most precise locationing. 
 * **Incoming phone calls cannot be accepted** when blanking is active.
 * **The transparent overlay allows display of Maps** or other apps but no user interaction.
 * **Blanking becomes inactive when**: 

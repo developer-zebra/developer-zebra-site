@@ -32,5 +32,5 @@ This is the On/Off switch for automatic importation of DataWedge configuration f
 
 > **<u>SECURITY WARNING</u>**: Automatic importation of configuration settings can cause unwanted changes to device settings that result from pushing an unauthorized file to the device. **Select "Turn Off" (option 0) to prevent unauthorized changes to the DataWedge configuration**.
 
-> **On devices running Android 11**: Files intended for auto-import **CANNOT** be copied via EMM to the internal (`/enterprise/device/settings/datawedge/autoimport`) folder or folders on removable device media due to Android Scope Storage Restrictions. As an alternative, Zebra recommends using `/enterprise/device/settings/datawedge` or `/data/temp/public` folders and updating deployment paths accordingly.
+> **Android 11 Note**: Due to Android Scoped Storage Restrictions, files **CANNOT** be deployed using an EMM system to the internal (`/enterprise/device/settings/datawedge/autoimport`) folder or to removable device media. Zebra recommends using `/enterprise/device/settings/datawedge` or `/data/temp/public` device folders and updating deployment paths accordingly.
 

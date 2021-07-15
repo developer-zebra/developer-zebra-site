@@ -389,8 +389,7 @@ Instructions to uninstall Device Tracker:
 
 ## See Also
 
-- [User Roles](../roles)
+- [About Device Tracker](../about)
 - [Configuration](../config)
+- [Track Devices](../use)
 - [License](../license)
-- [Device Management](../mgmt)
-- [Device Tracking](../use)

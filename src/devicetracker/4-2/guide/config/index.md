@@ -601,7 +601,7 @@ Send the desired XML content to the EMM using either [OEMConfig](/oemconfig) or 
 ---
 ## See Also
 
-- [User Roles](../roles)
-- [Install](../setup)
-- [Device Management](../mgmt)
-- [Device Tracking](../use)
+- [About Device Tracker](../about)
+- [Installation](../setup)
+- [Track Devices](../use)
+- [License](../license)

@@ -201,9 +201,7 @@ Comparison of **[Device Tracker On-Prem](/devicetracker-onprem/latest/guide/abou
 
 ## See Also
 
-- [User Roles](../roles)
-- [Install](../setup)
+- [Installation](../setup)
 - [Configuration](../config)
+- [Track Devices](../use)
 - [License](../license)
-- [Device Management](../mgmt)
-- [Device Tracking](../use)

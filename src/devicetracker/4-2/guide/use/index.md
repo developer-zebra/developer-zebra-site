@@ -471,7 +471,7 @@ _License Summary in Device Tracker web portal_
 
 ## See Also
 
-- [User Roles](../roles)
-- [Install](../setup)
+- [About Device Tracker](../about)
+- [Installation](../setup)
 - [Configuration](../config)
-- [Device Management](../mgmt)
+- [License](../license)

@@ -31,3 +31,6 @@ parm:
 This is the On/Off switch for automatic importation of DataWedge configuration files when they're pushed to the `/enterprise/device/settings/datawedge/autoimport` folder on the device. When enabled (option 1), settings contained in a Configuration file take effect as soon as the file is pushed to the device if DataWedge is running when the file is received. If DataWedge is not running when a config file is pushed, settings take effect the next time DataWedge is launched. 
 
 > **<u>SECURITY WARNING</u>**: Automatic importation of configuration settings can cause unwanted changes to device settings that result from pushing an unauthorized file to the device. **Select "Turn Off" (option 0) to prevent unauthorized changes to the DataWedge configuration**.
+
+> **On devices running Android 11**: Files intended for auto-import **CANNOT** be copied via EMM to the internal (`/enterprise/device/settings/datawedge/autoimport`) folder or folders on removable device media due to Android Scope Storage Restrictions. As an alternative, Zebra recommends using `/enterprise/device/settings/datawedge` or `/data/temp/public` folders and updating deployment paths accordingly.
+

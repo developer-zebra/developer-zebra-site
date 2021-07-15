@@ -31,6 +31,9 @@ DataWedge supports the importation of Config files (`datawedge.db`) and Profiles
 * For the best user experience, **Zebra strongly recommends that device users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
 * **Zebra recommends applying explicit file permissions to all `.db` files** so that DataWedge file procedures are not impeded.
 
+> **On devices running Android 11**: Files intended for auto-import **CANNOT** be copied via EMM to the internal (`/enterprise/device/settings/datawedge/autoimport`) folder or folders on removable device media due to Android Scope Storage Restrictions. As an alternative, Zebra recommends using `/enterprise/device/settings/datawedge` or `/data/temp/public` folders and updating deployment paths accordingly.
+
+
 <!-- 10/8/19- removed; this CSP requires Android 7.6 
 * **On devices running Android KitKat or later**, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, or with a staging client app or EMM. 
 

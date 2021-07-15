@@ -7,15 +7,13 @@ productversion: "4.2"
 
 ## Overview
 
-If the Check-out feature is enabled, users must scan their barcode to access the device and associate the user to the device for accountability.
+When using Device Tracker, the end user is initially presented with the [Check-out](#devicecheckout) screen if the [Check-out feature](../config/#configuredevicecheckout) is enabled. Once an administrator or manager logs in after check-out, they gain access to [monitor devices](#monitordevices) across their organization (administrator) or site (manager) to identify devices at-risk. 
 
-Administrators and managers monitor devices to check for devices at-risk of losing battery power or devices that need to be found.
+To initiate the process to find a device, the target device must be [marked for retrieval](#markdevicetofind) by the administrator or manager. To [find a device](#finddevice), the “seeking” device (the device performing the search) is used to determine the distance the user is located in relation to the “target” device (the device to be found) using the visual proximity meter. Once a device is found, [recommission the device](#decommissionrecommissiondevice) to place it back into the active device pool. Alternatively, [decommission the device](#decommissionrecommissiondevice) if it needs to be removed from the active device pool.
 
-When initiating the process to find a device with Device Tracker, the target device must first be marked for retrieval by the administrator or manager. The “seeking” device, or the device performing the search, is used to determine the distance the user is located in relation to the “target” device, or the device to be found. 
+A [note](#addeditnote) can be added at any time to capture comments specific to the device (e.g. device screen damaged) to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers.
 
-When a device is found, recommission the device to place it back into the active device pool. Alternatively, decommission the device if it needs to be removed from the active device pool.
-
-A note can be added at any time to capture comments specific to the device to aid in tracking or identifying problems with the device. This feature is available only for administrators and managers.
+For operation, device [licenses](#licenses) are required.
 
 The [Requirements](../setup/#requirements) must be met to find a device.
 

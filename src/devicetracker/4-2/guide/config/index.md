@@ -32,16 +32,16 @@ can be performed as follows:
 
 Administrator functions and capabilties:
 
-* Admin login
+* [Administrator login](../use/#administratormanagerlogin)
 * Web portal:
-    * Manage Users
-    * Configure Device Check-out (optional)
-    * Configure Barcode Prefix (optional)
-    * Monitor Licenses
-* Import Devices - assign friendly name and assign to site
-* Import Sites & APs - assign friendly names
-* Delete Devices - remove device from database
-* Monitor devices at the corporate-level and site-level
+    * [Manage Users](../config/#manageusers)
+    * [Configure Device Check-out](#configuredevicecheckout) (optional)
+    * [Set Barcode Prefix](#setbarcodeprefix) (optional)
+    * [Monitor Licenses](../use/#licenses)
+* [Import Devices](#registerdevices) 
+* [Import Sites & APs](../config/#registeraccesspointssites) 
+* [Delete Devices](#deletedevices) 
+* [Monitor devices](../use/#monitordevices) at the corporate-level and site-level
 * All Manager and Associate capabilities.
 <!--
 - Configuration:<br>
@@ -63,12 +63,12 @@ Administrator functions and capabilties:
 
 Manager functions and capabilities:
 
-* Manager login
-* Monitor devices at the site-level
-* Mark a device for retrieval (To Be Found)
-* Mark a device out of service (decommission) with a note (e.g. WiFi issue or display broken)
-* Clear a retrieval request
-* Search for devices - using the search field
+* [Manager login](../use/#administratormanagerlogin)
+* [Monitor devices](../use/#monitordevices) at the site-level
+* [Mark a device for retrieval](../use/#markdevicetofind) (To Be Found)
+* [Mark a device out of service](../use/#decommissionrecommissiondevice) (decommission) with a [note](../use/#addeditnote) (e.g. WiFi issue or display broken)
+* [Clear a retrieval request](../use/#disablefinding)
+* [Device or Site Search](../use/#devicesitesearch) 
 * All Associate capabilities
 
 <!-- 
@@ -95,10 +95,10 @@ Features and functions of managers:
 
 Associate functions and capabilties:
 
-* Device Check-out/Check-in
-* View marked devices list (for retrieval)
-* Find devices - retrieve the missing device using the BLE proximity meter and audio chirp
-* Mark devices as found or cannot be found
+* [Device Check-out/Check-in](../use/#devicecheckout)
+* [View marked devices list](../use/#finddevice) (for retrieval)
+* [Find devices](../use/#finddevice) using the BLE proximity meter and audio chirp
+* [Mark devices as found or cannot be found](../use/#finddevice)
 
 <!--
 Associates have the capability to find misplaced devices.
@@ -186,7 +186,7 @@ The password can be reset through the web portal or the client app if the admini
 
 ## Configure Device Check-out
 
-Device check-out is an _optional_ feature that displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device.  When enabled, user operation in the check-out screen is limited to only scanning barcodes, preventing device access until the barcode is scanned. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application. By default, no barcode prefix is defined allowing all barcodes to be accepted. Set a [barcode prefix](../config/#setcheckoutbarcodeprefix) to only allow check-out if the barcode scanned begins with the specified prefix.
+Device check-out is an _optional_ feature that displays an overlay on top of the screen to enforce the user to scan their unique barcode, maintaining user accountability of the device.  When enabled, user operation in the check-out screen is limited to only scanning barcodes, preventing device access until the barcode is scanned. If any other app also uses a screen overlay, the check-out/check-in feature may conflict with the other app. For example, this feature cannot be used with Zebra’s MotionWorks Proximity application. By default, no barcode prefix is defined allowing all barcodes to be accepted. Set a [barcode prefix](../config/#setbarcodeprefix) to only allow check-out if the barcode scanned begins with the specified prefix.
 
 Check-out/Check-in scenarios:
 - **Check-out:** At the start of a work shift, the user checks-out the device by scanning their unique barcode. This associates the user with the device, as seen in the device card and device details screen.
@@ -200,7 +200,7 @@ Access the web portal by entering the URL provided by Zebra in a [supported brow
 
 When enabled, checked-out devices appear in the [dashboard](../use/#monitordevices) monitored by administrators and managers.
 
-### Set Check-out Barcode Prefix
+### Set Barcode Prefix
 
 The administrator can configure a prefix to restrict check-out to occur only when barcodes are scanned that begin with the specified prefix in the form of a character string. If a barcode scanned does not contain the prefix, check-out is not successful.
 <br>
@@ -263,7 +263,7 @@ Sample Import Device .CSV file content:
 
 When modifying the .CSV file, keep the header information intact and replace the sample data with the appropriate data desired. Special characters, such as '.', '#', '$', '[', or ']', are not supported. The .CSV file cannot be UTF-8 encoded, otherwise an error can occur; it must be saved in a normal comma separated values format.
 
-### Import Device Data
+### Import Devices
 
 Import device data to register the device information from the populated .CSV file. A maximum of 20,000 rcords can be imported at one time.
 
@@ -278,7 +278,7 @@ Import device data to register the device information from the populated .CSV fi
 7. The device data import is complete. Results are displayed in the **Status** section at the bottom of the screen.  
 <p>New devices imported are initially in the <b>Never Connected</b> state until the Device Tracker app is installed on the devices, configured and communicating with the server.</p>
 
-### Delete Device
+### Delete Devices
 
 Deleting a device removes device data from the Device Tracker solution after uninstalling the client app.<!--and places it under **Unassigned Devices** in the device dashboard--> When a device is deleted, the license is deallocated and released to the license pool. A maximum of 5,000 records can be removed at one time.
 

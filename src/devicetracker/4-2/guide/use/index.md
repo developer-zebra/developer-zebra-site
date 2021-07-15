@@ -67,13 +67,6 @@ Choose one of the following options to Check-In a device:
 1. Reboot the device.
 2. The check-out screen appears prompting to scan a barcode.
 
-<p><b>Option 4:</b></p>
-
-1. Perform a battery swap.
-2. The check-out screen appears prompting to scan a barcode.
-
-<br>
-
 ---
 
 ## Monitor Devices
@@ -376,7 +369,7 @@ For devices with secondary BLE beaconing capability, Device Tracker can locate t
 
 The <a href="../mgmt/#devicedetails">Secondary BLE state</a> is viewed from the **Device Details** screen.
 
-### Disable Finding
+## Disable Finding
 
 After a device is marked **To Be Found**, if the device search needs to be terminated follow these steps (applies to only managers and administrators):
 
